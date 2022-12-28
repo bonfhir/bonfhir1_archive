@@ -3,6 +3,7 @@ import Listr from "listr";
 import { Argv } from "yargs";
 import { Config, Context } from "./context";
 import { LoadDefinitionsTask } from "./load-definitions";
+import { PostProcessingTask } from "./post-processing";
 import { ProcessTemplatesTask } from "./process-templates";
 import { ScanTemplatesTask } from "./scan-templates";
 
@@ -20,19 +21,29 @@ export const builder = (yargs: Argv) => {
       type: "string",
       demandOption: true,
       describe: "Template files path (glob pattern)",
+    })
+    .options("post-processing", {
+      type: "array",
+      describe:
+        "Command(s) to run for each file after generation. Use the token %file% to reference the file, or %files% to reference all files.",
     });
 };
 
 export const handler = async (config: Config) => {
   try {
     await new Listr<Context>(
-      [LoadDefinitionsTask, ScanTemplatesTask, ProcessTemplatesTask],
+      [
+        LoadDefinitionsTask,
+        ScanTemplatesTask,
+        ProcessTemplatesTask,
+        PostProcessingTask,
+      ],
       {
         exitOnError: true,
       }
     ).run({
       config,
-      definitions: new Map(),
+      definitions: {},
       templates: [],
       writtenFiles: [],
     });

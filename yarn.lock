@@ -73,6 +73,7 @@ __metadata:
     "@bonfhir/typescript-config": "*"
     "@swc/cli": ^0.1.59
     "@swc/core": ^1.3.24
+    "@types/fhir": ^0.0.35
     "@types/node": ^18.11.18
     "@types/rimraf": ^3
     eslint: ^8.30.0
@@ -1624,6 +1625,13 @@ __metadata:
   version: 1.0.0
   resolution: "@types/estree@npm:1.0.0"
   checksum: 910d97fb7092c6738d30a7430ae4786a38542023c6302b95d46f49420b797f21619cdde11fa92b338366268795884111c2eb10356e4bd2c8ad5b92941e9e6443
+  languageName: node
+  linkType: hard
+
+"@types/fhir@npm:^0.0.35":
+  version: 0.0.35
+  resolution: "@types/fhir@npm:0.0.35"
+  checksum: 9454b1838b99d876f89d0cc25961faa488fce89166b30406b248ad08f94de55a83440e5e977fd45785b37379a229e69a5eb166f859466905a9e5018b90f7d802
   languageName: node
   linkType: hard
 

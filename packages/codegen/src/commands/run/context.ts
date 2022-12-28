@@ -1,6 +1,7 @@
 export interface Config {
   definitions: string;
   templates: string;
+  postProcessing: string[];
 }
 
 export interface Context {

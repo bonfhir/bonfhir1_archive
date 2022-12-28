@@ -1,4 +1,5 @@
 import { evaluate as evaluateFhirPath } from "fhirpath";
+import { writeFileSync } from "fs";
 import { readFile, writeFile } from "fs/promises";
 import hb from "handlebars";
 import handlebarsHelpers from "handlebars-helpers";
@@ -37,17 +38,39 @@ function CreateTemplateProcessTask(templatePath: string): ListrTask<Context> {
             const evaluated = evaluateFhirPath(fnCtx, path);
             return evaluated.map((x) => options.fn(x)).join("");
           },
+          fhirPathFiles: (
+            fnCtx: Context,
+            path: string,
+            filenameTemplate: string,
+            options: hb.HelperOptions
+          ) => {
+            const evaluated = evaluateFhirPath(fnCtx, path);
+
+            for (const entry of evaluated) {
+              const fileContent = options.fn(entry);
+              const fileName = hb.compile(filenameTemplate, { noEscape: true })(
+                entry
+              );
+              const targetFile = pathJoin(templateParsedPath.dir, fileName);
+              writeFileSync(targetFile, fileContent, { encoding: "utf8" });
+              ctx.writtenFiles.push(targetFile);
+            }
+
+            return "";
+          },
         },
       });
 
-      const targetFile = pathJoin(
-        templateParsedPath.dir,
-        templateParsedPath.name
-      );
+      if (result.trim()) {
+        const targetFile = pathJoin(
+          templateParsedPath.dir,
+          templateParsedPath.name
+        );
 
-      await writeFile(targetFile, result, { encoding: "utf8" });
+        await writeFile(targetFile, result, { encoding: "utf8" });
 
-      ctx.writtenFiles.push(targetFile);
+        ctx.writtenFiles.push(targetFile);
+      }
     },
   };
 }
