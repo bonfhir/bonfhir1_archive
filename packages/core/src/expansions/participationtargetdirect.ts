@@ -1,0 +1,16 @@
+/**
+ * Target that is substantially present in the service and which is directly affected by the service action (includes consumed material, devices, etc.).
+ * http://terminology.hl7.org/ValueSet/v3-ParticipationTargetDirect
+ */
+export const ParticipationTargetDirectCode = {
+  /**
+   * direct target
+   */
+  DIR: "DIR",
+} as const;
+
+/**
+ * https://hl7.org/fhir/valueset-address-type.html
+ */
+export type ParticipationTargetDirectCode =
+  typeof ParticipationTargetDirectCode[keyof typeof ParticipationTargetDirectCode];
