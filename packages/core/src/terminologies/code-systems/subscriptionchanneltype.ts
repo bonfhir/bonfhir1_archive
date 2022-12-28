@@ -1,4 +1,8 @@
-export const SubscriptionChannelType = {
+/**
+ * The type of method used to execute a subscription.
+ * http://hl7.org/fhir/subscription-channel-type
+ */
+export const SubscriptionChannelTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "subscription-channel-type",
   meta: {

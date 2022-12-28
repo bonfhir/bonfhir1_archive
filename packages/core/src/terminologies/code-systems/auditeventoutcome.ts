@@ -1,4 +1,8 @@
-export const AuditEventOutcome = {
+/**
+ * Indicates whether the event succeeded or failed.
+ * http://hl7.org/fhir/audit-event-outcome
+ */
+export const AuditEventOutcomeCodeSystem = {
   resourceType: "CodeSystem",
   id: "audit-event-outcome",
   meta: {

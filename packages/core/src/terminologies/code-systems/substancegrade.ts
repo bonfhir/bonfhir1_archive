@@ -1,4 +1,8 @@
-export const SubstanceGrade = {
+/**
+ *
+ * http://hl7.org/fhir/substance-grade
+ */
+export const SubstanceGradeCodeSystem = {
   resourceType: "CodeSystem",
   id: "substance-grade",
   meta: {

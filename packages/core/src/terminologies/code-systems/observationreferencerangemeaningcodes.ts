@@ -1,4 +1,8 @@
-export const ObservationReferenceRangeMeaningCodes = {
+/**
+ * This value set defines a set of codes that can be used to indicate the meaning/use of a reference range.
+ * http://terminology.hl7.org/CodeSystem/referencerange-meaning
+ */
+export const ObservationReferenceRangeMeaningCodesCodeSystem = {
   resourceType: "CodeSystem",
   id: "referencerange-meaning",
   meta: {

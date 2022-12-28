@@ -1,4 +1,8 @@
-export const BiologicallyDerivedProductStatus = {
+/**
+ * Biologically Derived Product Status.
+ * http://hl7.org/fhir/product-status
+ */
+export const BiologicallyDerivedProductStatusCodeSystem = {
   resourceType: "CodeSystem",
   id: "product-status",
   meta: {

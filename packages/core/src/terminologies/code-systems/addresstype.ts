@@ -1,4 +1,8 @@
-export const AddressType = {
+/**
+ * The type of an address (physical / postal).
+ * http://hl7.org/fhir/address-type
+ */
+export const AddressTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "address-type",
   meta: { lastUpdated: "2022-05-28T12:47:40.239+10:00" },

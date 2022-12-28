@@ -1,4 +1,8 @@
-export const AdverseEventOutcome = {
+/**
+ * TODO (and should this be required?).
+ * http://terminology.hl7.org/CodeSystem/adverse-event-outcome
+ */
+export const AdverseEventOutcomeCodeSystem = {
   resourceType: "CodeSystem",
   id: "adverse-event-outcome",
   meta: {

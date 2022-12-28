@@ -1,4 +1,8 @@
-export const NetworkTypeCodes = {
+/**
+ * This value set includes a smattering of Network type codes.
+ * http://terminology.hl7.org/CodeSystem/benefit-network
+ */
+export const NetworkTypeCodesCodeSystem = {
   resourceType: "CodeSystem",
   id: "benefit-network",
   meta: {

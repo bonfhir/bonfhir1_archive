@@ -1,4 +1,8 @@
-export const ConsentActionCodes = {
+/**
+ * This value set includes example Consent Action codes.
+ * http://terminology.hl7.org/CodeSystem/consentaction
+ */
+export const ConsentActionCodesCodeSystem = {
   resourceType: "CodeSystem",
   id: "consent-action",
   meta: {

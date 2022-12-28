@@ -1,4 +1,8 @@
-export const EvidenceDirectness = {
+/**
+ * The quality of how direct the match is.
+ * http://terminology.hl7.org/CodeSystem/directness
+ */
+export const EvidenceDirectnessCodeSystem = {
   resourceType: "CodeSystem",
   id: "directness",
   meta: {

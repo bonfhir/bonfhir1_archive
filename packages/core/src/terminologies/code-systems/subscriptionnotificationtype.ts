@@ -1,4 +1,8 @@
-export const SubscriptionNotificationType = {
+/**
+ * The type of notification represented by the status message.
+ * http://hl7.org/fhir/subscription-notification-type
+ */
+export const SubscriptionNotificationTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "subscription-notification-type",
   meta: {

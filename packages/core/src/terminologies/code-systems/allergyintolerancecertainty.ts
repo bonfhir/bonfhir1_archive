@@ -1,4 +1,8 @@
-export const AllergyIntoleranceCertainty = {
+/**
+ * Statement about the degree of clinical certainty that a specific substance was the cause    of the manifestation in a reaction event.
+ * http://hl7.org/fhir/reaction-event-certainty
+ */
+export const AllergyIntoleranceCertaintyCodeSystem = {
   resourceType: "CodeSystem",
   id: "reaction-event-certainty",
   meta: {

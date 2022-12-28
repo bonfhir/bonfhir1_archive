@@ -1,4 +1,8 @@
-export const ExampleVisionPrescriptionProductCodes = {
+/**
+ * This value set includes a smattering of Prescription Product codes.
+ * http://terminology.hl7.org/CodeSystem/ex-visionprescriptionproduct
+ */
+export const ExampleVisionPrescriptionProductCodesCodeSystem = {
   resourceType: "CodeSystem",
   id: "vision-product",
   meta: {

@@ -1,4 +1,8 @@
-export const LinkType = {
+/**
+ * The type of link between this patient resource and another patient resource.
+ * http://hl7.org/fhir/link-type
+ */
+export const LinkTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "link-type",
   meta: {

@@ -1,4 +1,8 @@
-export const MessageSignificanceCategory = {
+/**
+ * The impact of the content of a message.
+ * http://hl7.org/fhir/message-significance-category
+ */
+export const MessageSignificanceCategoryCodeSystem = {
   resourceType: "CodeSystem",
   id: "message-significance-category",
   meta: {

@@ -1,4 +1,8 @@
-export const ContractTypeCodes = {
+/**
+ * This value set includes sample Contract Type codes.
+ * http://hl7.org/fhir/contract-type
+ */
+export const ContractTypeCodesCodeSystem = {
   resourceType: "CodeSystem",
   id: "contract-type",
   meta: {

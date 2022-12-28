@@ -1,4 +1,8 @@
-export const MedicinalProductType = {
+/**
+ * Overall defining type of this Medicinal Product.
+ * http://hl7.org/fhir/medicinal-product-type
+ */
+export const MedicinalProductTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "medicinal-product-type",
   meta: {

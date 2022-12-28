@@ -1,4 +1,8 @@
-export const ExpressionLanguage = {
+/**
+ * The media type of the expression language.
+ * http://hl7.org/fhir/expression-language
+ */
+export const ExpressionLanguageCodeSystem = {
   resourceType: "CodeSystem",
   id: "expression-language",
   meta: { lastUpdated: "2022-05-28T12:47:40.239+10:00" },

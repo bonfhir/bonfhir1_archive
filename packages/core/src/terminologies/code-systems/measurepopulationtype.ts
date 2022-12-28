@@ -1,4 +1,8 @@
-export const MeasurePopulationType = {
+/**
+ * The type of population.
+ * http://terminology.hl7.org/CodeSystem/measure-population
+ */
+export const MeasurePopulationTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "measure-population",
   meta: {

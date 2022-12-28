@@ -1,4 +1,8 @@
-export const MissingToothReasonCodes = {
+/**
+ * This value set includes sample Missing Tooth Reason codes.
+ * http://terminology.hl7.org/CodeSystem/missingtoothreason
+ */
+export const MissingToothReasonCodesCodeSystem = {
   resourceType: "CodeSystem",
   id: "missing-tooth-reason",
   meta: {

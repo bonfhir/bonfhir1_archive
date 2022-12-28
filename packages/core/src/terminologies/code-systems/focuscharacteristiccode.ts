@@ -1,4 +1,8 @@
-export const FocusCharacteristicCode = {
+/**
+ * Evidence focus characteristic code.
+ * http://terminology.hl7.org/CodeSystem/focus-characteristic-code
+ */
+export const FocusCharacteristicCodeCodeSystem = {
   resourceType: "CodeSystem",
   id: "focus-characteristic-code",
   meta: {

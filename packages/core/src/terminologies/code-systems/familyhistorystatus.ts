@@ -1,4 +1,8 @@
-export const FamilyHistoryStatus = {
+/**
+ * A code that identifies the status of the family history record.
+ * http://hl7.org/fhir/history-status
+ */
+export const FamilyHistoryStatusCodeSystem = {
   resourceType: "CodeSystem",
   id: "history-status",
   meta: {

@@ -1,4 +1,8 @@
-export const StructureMapTransform = {
+/**
+ * How data is copied/created.
+ * http://hl7.org/fhir/map-transform
+ */
+export const StructureMapTransformCodeSystem = {
   resourceType: "CodeSystem",
   id: "map-transform",
   meta: {

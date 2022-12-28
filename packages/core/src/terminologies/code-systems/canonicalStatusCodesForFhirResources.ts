@@ -1,4 +1,8 @@
-export const CanonicalStatusCodesforFHIRResources = {
+/**
+ * The master set of status codes used throughout FHIR. All status codes are mapped to one of these codes.
+ * http://hl7.org/fhir/resource-status
+ */
+export const CanonicalStatusCodesforFHIRResourcesCodeSystem = {
   resourceType: "CodeSystem",
   id: "resource-status",
   meta: { lastUpdated: "2022-05-28T12:47:40.239+10:00" },

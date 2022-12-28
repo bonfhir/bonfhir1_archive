@@ -1,4 +1,8 @@
-export const NoteType = {
+/**
+ * The presentation types of notes.
+ * http://hl7.org/fhir/note-type
+ */
+export const NoteTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "note-type",
   meta: { lastUpdated: "2022-05-28T12:47:40.239+10:00" },

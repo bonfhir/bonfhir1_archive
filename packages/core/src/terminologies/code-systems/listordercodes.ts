@@ -1,4 +1,8 @@
-export const ListOrderCodes = {
+/**
+ * Base values for the order of the items in a list resource.
+ * http://terminology.hl7.org/CodeSystem/list-order
+ */
+export const ListOrderCodesCodeSystem = {
   resourceType: "CodeSystem",
   id: "list-order",
   meta: {

@@ -1,4 +1,8 @@
-export const ExampleCoverageFinancialExceptionsCode = {
+/**
+ * This codeset includes Example Coverage Financial Exceptions Code.
+ * http://terminology.hl7.org/CodeSystem/ex-coverage-financial-exception
+ */
+export const ExampleCoverageFinancialExceptionsCodeCodeSystem = {
   resourceType: "CodeSystem",
   id: "coverage-financial-exception",
   meta: {

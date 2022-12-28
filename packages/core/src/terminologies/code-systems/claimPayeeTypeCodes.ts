@@ -1,4 +1,8 @@
-export const ClaimPayeeTypeCodes = {
+/**
+ * This value set includes sample Payee Type codes.
+ * http://terminology.hl7.org/CodeSystem/payeetype
+ */
+export const ClaimPayeeTypeCodesCodeSystem = {
   resourceType: "CodeSystem",
   id: "payeetype",
   meta: {

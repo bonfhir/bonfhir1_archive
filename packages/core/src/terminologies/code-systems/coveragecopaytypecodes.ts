@@ -1,4 +1,8 @@
-export const CoverageCoPayTypeCodes = {
+/**
+ * This codeset includes Coverage Copayment Type codes.
+ * http://terminology.hl7.org/CodeSystem/coverage-copay-type
+ */
+export const CoverageCoPayTypeCodesCodeSystem = {
   resourceType: "CodeSystem",
   id: "coverage-copay-type",
   meta: {

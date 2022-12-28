@@ -1,4 +1,8 @@
-export const CoverageEligibilityResponseAuthSupportCodes = {
+/**
+ * This value set includes CoverageEligibilityResponse Auth Support codes.
+ * http://terminology.hl7.org/CodeSystem/coverageeligibilityresponse-ex-auth-support
+ */
+export const CoverageEligibilityResponseAuthSupportCodesCodeSystem = {
   resourceType: "CodeSystem",
   id: "coverageeligibilityresponse-ex-auth-support",
   meta: {

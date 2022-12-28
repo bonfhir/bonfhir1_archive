@@ -1,4 +1,8 @@
-export const MessageEvent = {
+/**
+ * One of the message events defined as part of this version of FHIR.
+ * http://hl7.org/fhir/message-events
+ */
+export const MessageEventCodeSystem = {
   resourceType: "CodeSystem",
   id: "message-events",
   meta: { lastUpdated: "2022-05-28T12:47:40.239+10:00" },

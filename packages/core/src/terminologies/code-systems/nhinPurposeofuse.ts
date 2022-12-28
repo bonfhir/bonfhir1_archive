@@ -1,4 +1,8 @@
-export const NHINPurposeOfUse = {
+/**
+ * This value set is suitable for use with the provenance resource. It is derived from, but not compatible with, the HL7 v3 Purpose of use Code system.
+ * http://healthit.gov/nhin/purposeofuse
+ */
+export const NHINPurposeOfUseCodeSystem = {
   resourceType: "CodeSystem",
   id: "nhin-purposeofuse",
   meta: { lastUpdated: "2022-05-28T12:47:40.239+10:00" },

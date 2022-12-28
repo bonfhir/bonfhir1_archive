@@ -1,4 +1,8 @@
-export const StatisticModelCode = {
+/**
+ * The role that the assertion variable plays.
+ * http://terminology.hl7.org/CodeSystem/statistic-model-code
+ */
+export const StatisticModelCodeCodeSystem = {
   resourceType: "CodeSystem",
   id: "statistic-model-code",
   meta: {

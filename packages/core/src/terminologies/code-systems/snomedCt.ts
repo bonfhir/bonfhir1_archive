@@ -1,4 +1,8 @@
-export const SNOMED_CT = {
+/**
+ * SNOMED CT is the most comprehensive and precise clinical health terminology product in the world, owned and distributed around the world by The International Health Terminology Standards Development Organisation (IHTSDO).
+ * http://snomed.info/sct
+ */
+export const SNOMED_CTCodeSystem = {
   resourceType: "CodeSystem",
   id: "snomedct",
   meta: { lastUpdated: "2022-05-28T12:47:40.239+10:00" },

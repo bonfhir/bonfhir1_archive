@@ -1,4 +1,8 @@
-export const UnitTypeCodes = {
+/**
+ * This value set includes a smattering of Unit type codes.
+ * http://terminology.hl7.org/CodeSystem/benefit-unit
+ */
+export const UnitTypeCodesCodeSystem = {
   resourceType: "CodeSystem",
   id: "benefit-unit",
   meta: {

@@ -1,4 +1,8 @@
-export const AllergyIntoleranceCategory = {
+/**
+ * Category of an identified substance associated with allergies or intolerances.
+ * http://hl7.org/fhir/allergy-intolerance-category
+ */
+export const AllergyIntoleranceCategoryCodeSystem = {
   resourceType: "CodeSystem",
   id: "allergy-intolerance-category",
   meta: {

@@ -1,4 +1,8 @@
-export const LinkageType = {
+/**
+ * Used to distinguish different roles a resource can play within a set of linked resources.
+ * http://hl7.org/fhir/linkage-type
+ */
+export const LinkageTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "linkage-type",
   meta: {

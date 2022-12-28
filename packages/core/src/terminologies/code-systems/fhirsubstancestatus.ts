@@ -1,4 +1,8 @@
-export const FHIRSubstanceStatus = {
+/**
+ * A code to indicate if the substance is actively used.
+ * http://hl7.org/fhir/substance-status
+ */
+export const FHIRSubstanceStatusCodeSystem = {
   resourceType: "CodeSystem",
   id: "substance-status",
   meta: {

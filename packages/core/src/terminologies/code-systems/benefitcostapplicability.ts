@@ -1,4 +1,8 @@
-export const BenefitCostApplicability = {
+/**
+ * Whether the cost applies to in-network or out-of-network providers.
+ * http://hl7.org/fhir/insuranceplan-applicability
+ */
+export const BenefitCostApplicabilityCodeSystem = {
   resourceType: "CodeSystem",
   id: "insuranceplan-applicability",
   meta: {

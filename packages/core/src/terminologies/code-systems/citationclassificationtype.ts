@@ -1,4 +1,8 @@
-export const CitationClassificationType = {
+/**
+ * Citation classification type
+ * http://terminology.hl7.org/CodeSystem/citation-classification-type
+ */
+export const CitationClassificationTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "citation-classification-type",
   meta: {

@@ -1,4 +1,8 @@
-export const MedicationStatementCategoryCodes = {
+/**
+ *
+ * http://terminology.hl7.org/CodeSystem/medication-statement-category
+ */
+export const MedicationStatementCategoryCodesCodeSystem = {
   resourceType: "CodeSystem",
   id: "medication-statement-category",
   meta: {

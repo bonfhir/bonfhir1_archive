@@ -1,4 +1,8 @@
-export const PatientMedicineChangeTypes = {
+/**
+ * Example Item Flags for the List Resource. In this case, these are the kind of flags that would be used on a medication list at the end of a consultation.
+ * urn:oid:1.2.36.1.2001.1001.101.104.16592
+ */
+export const PatientMedicineChangeTypesCodeSystem = {
   resourceType: "CodeSystem",
   id: "list-item-flag",
   meta: {

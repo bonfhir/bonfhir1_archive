@@ -1,4 +1,8 @@
-export const OralSiteCodes = {
+/**
+ * This value set includes a smattering of FDI oral site codes.
+ * http://terminology.hl7.org/CodeSystem/ex-tooth
+ */
+export const OralSiteCodesCodeSystem = {
   resourceType: "CodeSystem",
   id: "tooth",
   meta: {

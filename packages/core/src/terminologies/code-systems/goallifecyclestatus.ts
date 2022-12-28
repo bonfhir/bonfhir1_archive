@@ -1,4 +1,8 @@
-export const GoalLifecycleStatus = {
+/**
+ * Codes that reflect the current state of a goal and whether the goal is still being targeted.
+ * http://hl7.org/fhir/goal-status
+ */
+export const GoalLifecycleStatusCodeSystem = {
   resourceType: "CodeSystem",
   id: "goal-status",
   meta: {

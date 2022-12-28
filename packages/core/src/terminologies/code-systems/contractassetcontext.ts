@@ -1,4 +1,8 @@
-export const ContractAssetContext = {
+/**
+ * This CodeSystem contains FHIR-defined contract asset context types.
+ * http://hl7.org/fhir/contract-assetcontext
+ */
+export const ContractAssetContextCodeSystem = {
   resourceType: "CodeSystem",
   id: "contract-assetcontext",
   meta: {

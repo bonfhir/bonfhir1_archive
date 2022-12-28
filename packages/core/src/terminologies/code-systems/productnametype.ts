@@ -1,4 +1,8 @@
-export const ProductNameType = {
+/**
+ * Type of a name for a Medicinal Product.
+ * http://hl7.org/fhir/medicinal-product-name-type
+ */
+export const ProductNameTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "medicinal-product-name-type",
   meta: {

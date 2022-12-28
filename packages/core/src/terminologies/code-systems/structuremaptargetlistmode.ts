@@ -1,4 +1,8 @@
-export const StructureMapTargetListMode = {
+/**
+ * If field is a list, how to manage the production.
+ * http://hl7.org/fhir/map-target-list-mode
+ */
+export const StructureMapTargetListModeCodeSystem = {
   resourceType: "CodeSystem",
   id: "map-target-list-mode",
   meta: {

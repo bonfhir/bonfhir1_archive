@@ -1,4 +1,8 @@
-export const DICOMAuditMessageRecordLifecycleEvents = {
+/**
+ * Attached is vocabulary for the record lifecycle events, as per DICOM Audit Message,
+ * http://terminology.hl7.org/CodeSystem/dicom-audit-lifecycle
+ */
+export const DICOMAuditMessageRecordLifecycleEventsCodeSystem = {
   resourceType: "CodeSystem",
   id: "dicom-audit-lifecycle",
   meta: { lastUpdated: "2022-05-28T12:47:40.239+10:00" },

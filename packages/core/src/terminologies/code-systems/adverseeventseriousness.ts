@@ -1,4 +1,8 @@
-export const AdverseEventSeriousness = {
+/**
+ * Overall seriousness of this event for the patient.
+ * http://terminology.hl7.org/CodeSystem/adverse-event-seriousness
+ */
+export const AdverseEventSeriousnessCodeSystem = {
   resourceType: "CodeSystem",
   id: "adverse-event-seriousness",
   meta: {

@@ -1,4 +1,8 @@
-export const pushtypeavailable = {
+/**
+ * Type of alerts/updates the primary source can send
+ * http://hl7.org/fhir/verificationresult-push-type-available
+ */
+export const pushtypeavailableCodeSystem = {
   resourceType: "CodeSystem",
   id: "verificationresult-push-type-available",
   meta: {

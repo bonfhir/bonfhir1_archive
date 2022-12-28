@@ -1,4 +1,8 @@
-export const EndpointStatus = {
+/**
+ * The status of the endpoint.
+ * http://hl7.org/fhir/endpoint-status
+ */
+export const EndpointStatusCodeSystem = {
   resourceType: "CodeSystem",
   id: "endpoint-status",
   meta: {

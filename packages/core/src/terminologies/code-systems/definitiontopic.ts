@@ -1,4 +1,8 @@
-export const DefinitionTopic = {
+/**
+ * High-level categorization of the definition, used for searching, sorting, and filtering.
+ * http://terminology.hl7.org/CodeSystem/definition-topic
+ */
+export const DefinitionTopicCodeSystem = {
   resourceType: "CodeSystem",
   id: "definition-topic",
   meta: {

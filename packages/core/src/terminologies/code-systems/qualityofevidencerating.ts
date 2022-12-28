@@ -1,4 +1,8 @@
-export const QualityOfEvidenceRating = {
+/**
+ * A rating system that describes the quality of evidence such as the GRADE, DynaMed, or Oxford CEBM systems.
+ * http://terminology.hl7.org/CodeSystem/evidence-quality
+ */
+export const QualityOfEvidenceRatingCodeSystem = {
   resourceType: "CodeSystem",
   id: "evidence-quality",
   meta: { lastUpdated: "2022-05-28T12:47:40.239+10:00" },

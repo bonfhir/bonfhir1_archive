@@ -1,4 +1,8 @@
-export const QuestionnaireItemUIControlCodes = {
+/**
+ * Starter set of user interface control/display mechanisms that might be used when rendering an item in a questionnaire.
+ * http://hl7.org/fhir/questionnaire-item-control
+ */
+export const QuestionnaireItemUIControlCodesCodeSystem = {
   resourceType: "CodeSystem",
   id: "questionnaire-item-control",
   meta: {

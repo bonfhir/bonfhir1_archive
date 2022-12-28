@@ -1,4 +1,8 @@
-export const AdverseEventCategory = {
+/**
+ * Overall categorization of the event, e.g. product-related or situational.
+ * http://terminology.hl7.org/CodeSystem/adverse-event-category
+ */
+export const AdverseEventCategoryCodeSystem = {
   resourceType: "CodeSystem",
   id: "adverse-event-category",
   meta: {

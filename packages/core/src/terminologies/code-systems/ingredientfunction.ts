@@ -1,4 +1,8 @@
-export const IngredientFunction = {
+/**
+ * A classification of the ingredient identifying its precise purpose(s) in the drug product (beyond e.g. active/inactive).
+ * http://hl7.org/fhir/ingredient-function
+ */
+export const IngredientFunctionCodeSystem = {
   resourceType: "CodeSystem",
   id: "ingredient-function",
   meta: {

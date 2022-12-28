@@ -1,4 +1,8 @@
-export const AllergyIntoleranceType = {
+/**
+ * Identification of the underlying physiological mechanism for a Reaction Risk.
+ * http://hl7.org/fhir/allergy-intolerance-type
+ */
+export const AllergyIntoleranceTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "allergy-intolerance-type",
   meta: {

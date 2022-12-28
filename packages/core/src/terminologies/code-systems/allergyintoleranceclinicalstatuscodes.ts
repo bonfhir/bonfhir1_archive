@@ -1,4 +1,8 @@
-export const AllergyIntoleranceClinicalStatusCodes = {
+/**
+ * Preferred value set for AllergyIntolerance Clinical Status.
+ * http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical
+ */
+export const AllergyIntoleranceClinicalStatusCodesCodeSystem = {
   resourceType: "CodeSystem",
   id: "allergyintolerance-clinical",
   meta: {

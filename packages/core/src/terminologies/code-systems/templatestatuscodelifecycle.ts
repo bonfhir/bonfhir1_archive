@@ -1,4 +1,8 @@
-export const TemplateStatusCodeLifeCycle = {
+/**
+ * Life cycle of the Status Code of a Template Design (Version)
+ * urn:oid:2.16.840.1.113883.3.1937.98.5.8
+ */
+export const TemplateStatusCodeLifeCycleCodeSystem = {
   resourceType: "CodeSystem",
   id: "template-status-code",
   meta: {

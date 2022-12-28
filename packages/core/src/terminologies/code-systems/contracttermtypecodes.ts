@@ -1,4 +1,8 @@
-export const ContractTermTypeCodes = {
+/**
+ * This value set includes sample Contract Term Type codes.
+ * http://hl7.org/fhir/contract-term-type
+ */
+export const ContractTermTypeCodesCodeSystem = {
   resourceType: "CodeSystem",
   id: "contract-term-type",
   meta: {

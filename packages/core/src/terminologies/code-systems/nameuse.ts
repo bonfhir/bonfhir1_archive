@@ -1,4 +1,8 @@
-export const NameUse = {
+/**
+ * The use of a human name.
+ * http://hl7.org/fhir/name-use
+ */
+export const NameUseCodeSystem = {
   resourceType: "CodeSystem",
   id: "name-use",
   meta: { lastUpdated: "2022-05-28T12:47:40.239+10:00" },

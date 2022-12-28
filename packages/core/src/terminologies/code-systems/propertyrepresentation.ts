@@ -1,4 +1,8 @@
-export const PropertyRepresentation = {
+/**
+ * How a property is represented when serialized.
+ * http://hl7.org/fhir/property-representation
+ */
+export const PropertyRepresentationCodeSystem = {
   resourceType: "CodeSystem",
   id: "property-representation",
   meta: { lastUpdated: "2022-05-28T12:47:40.239+10:00" },

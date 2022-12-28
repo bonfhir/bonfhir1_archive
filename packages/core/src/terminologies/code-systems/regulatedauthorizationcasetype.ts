@@ -1,4 +1,8 @@
-export const RegulatedAuthorizationCaseType = {
+/**
+ *
+ * http://hl7.org/fhir/regulated-authorization-case-type
+ */
+export const RegulatedAuthorizationCaseTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "regulated-authorization-case-type",
   meta: {

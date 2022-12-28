@@ -1,4 +1,8 @@
-export const VisionBase = {
+/**
+ * A coded concept listing the base codes.
+ * http://hl7.org/fhir/vision-base-codes
+ */
+export const VisionBaseCodeSystem = {
   resourceType: "CodeSystem",
   id: "vision-base-codes",
   meta: {

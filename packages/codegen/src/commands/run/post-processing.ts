@@ -13,7 +13,13 @@ export const PostProcessingTask: ListrTask<Context> = {
     );
     for (const globalPostProcessingTask of globalPostProcessingTasks) {
       await execAsync(
-        globalPostProcessingTask.replace(/%files%/g, ctx.writtenFiles.join(" "))
+        globalPostProcessingTask.replace(
+          /%files%/g,
+          ctx.writtenFiles.join(" ")
+        ),
+        {
+          maxBuffer: 1024 * 1000 * 10,
+        }
       );
     }
 
@@ -33,7 +39,9 @@ function CreatePostProcessingAFileTask(filePath: string): ListrTask<Context> {
       for (const command of ctx.config.postProcessing.filter((x) =>
         x.includes("%file%")
       )) {
-        await execAsync(command.replace(/%file%/g, filePath));
+        await execAsync(command.replace(/%file%/g, filePath), {
+          maxBuffer: 1024 * 1000 * 10,
+        });
       }
     },
   };

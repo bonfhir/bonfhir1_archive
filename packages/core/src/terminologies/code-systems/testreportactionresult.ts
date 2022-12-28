@@ -1,4 +1,8 @@
-export const TestReportActionResult = {
+/**
+ * The results of executing an action.
+ * http://hl7.org/fhir/report-action-result-codes
+ */
+export const TestReportActionResultCodeSystem = {
   resourceType: "CodeSystem",
   id: "report-action-result-codes",
   meta: {

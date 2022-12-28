@@ -1,4 +1,8 @@
-export const messageheaderresponserequest = {
+/**
+ * HL7-defined table of codes which identify conditions under which acknowledgments are required to be returned in response to a message.
+ * http://hl7.org/fhir/messageheader-response-request
+ */
+export const messageheaderresponserequestCodeSystem = {
   resourceType: "CodeSystem",
   id: "messageheader-response-request",
   meta: {

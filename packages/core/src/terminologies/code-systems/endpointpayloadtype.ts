@@ -1,4 +1,8 @@
-export const EndpointPayloadType = {
+/**
+ * This is an example codesystem defined by the FHIR project, it represents global concepts for no content, or any unrestricted content.
+ * http://terminology.hl7.org/CodeSystem/endpoint-payload-type
+ */
+export const EndpointPayloadTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "endpoint-payload-type",
   meta: {

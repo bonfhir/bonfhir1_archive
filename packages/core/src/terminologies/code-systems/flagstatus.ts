@@ -1,4 +1,8 @@
-export const FlagStatus = {
+/**
+ * Indicates whether this flag is active and needs to be displayed to a user, or whether it is no longer needed or was entered in error.
+ * http://hl7.org/fhir/flag-status
+ */
+export const FlagStatusCodeSystem = {
   resourceType: "CodeSystem",
   id: "flag-status",
   meta: {

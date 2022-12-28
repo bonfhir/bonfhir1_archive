@@ -1,4 +1,8 @@
-export const BeneficiaryRelationshipCodes = {
+/**
+ * This value set includes the Patient to subscriber relationship codes.
+ * http://hl7.org/fhir/relationship
+ */
+export const BeneficiaryRelationshipCodesCodeSystem = {
   resourceType: "CodeSystem",
   id: "relationship",
   meta: {

@@ -1,4 +1,8 @@
-export const GuideParameterCode = {
+/**
+ * Code of parameter that is input to the guide.
+ * http://hl7.org/fhir/guide-parameter-code
+ */
+export const GuideParameterCodeCodeSystem = {
   resourceType: "CodeSystem",
   id: "guide-parameter-code",
   meta: {

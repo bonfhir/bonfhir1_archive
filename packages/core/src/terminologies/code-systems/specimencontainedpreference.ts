@@ -1,4 +1,8 @@
-export const SpecimenContainedPreference = {
+/**
+ * Degree of preference of a type of conditioned specimen.
+ * http://hl7.org/fhir/specimen-contained-preference
+ */
+export const SpecimenContainedPreferenceCodeSystem = {
   resourceType: "CodeSystem",
   id: "specimen-contained-preference",
   meta: {

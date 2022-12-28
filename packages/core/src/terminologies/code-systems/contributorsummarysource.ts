@@ -1,4 +1,8 @@
-export const ContributorSummarySource = {
+/**
+ * Used to code the producer or rule for creating the display string.
+ * http://terminology.hl7.org/CodeSystem/contributor-summary-source
+ */
+export const ContributorSummarySourceCodeSystem = {
   resourceType: "CodeSystem",
   id: "contributor-summary-source",
   meta: {

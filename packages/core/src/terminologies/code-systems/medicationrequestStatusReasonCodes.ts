@@ -1,4 +1,8 @@
-export const MedicationRequestStatusReasonCodes = {
+/**
+ *
+ * http://terminology.hl7.org/CodeSystem/medicationrequest-status-reason
+ */
+export const MedicationRequestStatusReasonCodesCodeSystem = {
   resourceType: "CodeSystem",
   id: "medicationrequest-status-reason",
   meta: {

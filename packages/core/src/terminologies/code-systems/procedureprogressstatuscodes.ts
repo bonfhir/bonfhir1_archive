@@ -1,4 +1,8 @@
-export const ProcedureProgressStatusCodes = {
+/**
+ * This value set is provided as an exemplar. The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support the procedure performance process.
+ * http://hl7.org/fhir/procedure-progress-status-code
+ */
+export const ProcedureProgressStatusCodesCodeSystem = {
   resourceType: "CodeSystem",
   id: "procedure-progress-status-codes",
   meta: {

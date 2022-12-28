@@ -1,4 +1,8 @@
-export const PaymentAdjustmentReasonCodes = {
+/**
+ * This value set includes smattering of Payment Adjustment Reason codes.
+ * http://terminology.hl7.org/CodeSystem/payment-adjustment-reason
+ */
+export const PaymentAdjustmentReasonCodesCodeSystem = {
   resourceType: "CodeSystem",
   id: "payment-adjustment-reason",
   meta: {

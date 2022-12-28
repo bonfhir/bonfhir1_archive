@@ -1,4 +1,8 @@
-export const DocumentMode = {
+/**
+ * Whether the application produces or consumes documents.
+ * http://hl7.org/fhir/document-mode
+ */
+export const DocumentModeCodeSystem = {
   resourceType: "CodeSystem",
   id: "document-mode",
   meta: {

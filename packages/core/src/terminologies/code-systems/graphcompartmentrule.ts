@@ -1,4 +1,8 @@
-export const GraphCompartmentRule = {
+/**
+ * How a compartment must be linked.
+ * http://hl7.org/fhir/graph-compartment-rule
+ */
+export const GraphCompartmentRuleCodeSystem = {
   resourceType: "CodeSystem",
   id: "graph-compartment-rule",
   meta: {

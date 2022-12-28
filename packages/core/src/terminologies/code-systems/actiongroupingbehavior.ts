@@ -1,4 +1,8 @@
-export const ActionGroupingBehavior = {
+/**
+ * Defines organization behavior of a group.
+ * http://hl7.org/fhir/action-grouping-behavior
+ */
+export const ActionGroupingBehaviorCodeSystem = {
   resourceType: "CodeSystem",
   id: "action-grouping-behavior",
   meta: {

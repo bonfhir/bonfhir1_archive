@@ -1,4 +1,8 @@
-export const ManufacturedDoseForm = {
+/**
+ * Dose form for a medication, as manufactured (and before any mixing etc.), not necessarily ready for administration to the patient.
+ * http://hl7.org/fhir/manufactured-dose-form
+ */
+export const ManufacturedDoseFormCodeSystem = {
   resourceType: "CodeSystem",
   id: "manufactured-dose-form",
   meta: {

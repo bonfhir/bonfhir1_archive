@@ -1,4 +1,8 @@
-export const AllergyIntoleranceSeverity = {
+/**
+ * Clinical assessment of the severity of a reaction event as a whole, potentially considering multiple different manifestations.
+ * http://hl7.org/fhir/reaction-event-severity
+ */
+export const AllergyIntoleranceSeverityCodeSystem = {
   resourceType: "CodeSystem",
   id: "reaction-event-severity",
   meta: {

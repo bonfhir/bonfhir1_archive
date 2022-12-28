@@ -1,4 +1,8 @@
-export const ExampleServicePlaceCodes = {
+/**
+ * This value set includes a smattering of Service Place codes.
+ * http://terminology.hl7.org/CodeSystem/ex-serviceplace
+ */
+export const ExampleServicePlaceCodesCodeSystem = {
   resourceType: "CodeSystem",
   id: "service-place",
   meta: {

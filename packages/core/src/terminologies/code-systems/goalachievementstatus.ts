@@ -1,4 +1,8 @@
-export const GoalAchievementStatus = {
+/**
+ * Describes the progression, or lack thereof, towards the goal against the target.
+ * http://terminology.hl7.org/CodeSystem/goal-achievement
+ */
+export const GoalAchievementStatusCodeSystem = {
   resourceType: "CodeSystem",
   id: "goal-achievement",
   meta: {

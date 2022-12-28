@@ -1,4 +1,8 @@
-export const LocationMode = {
+/**
+ * Indicates whether a resource instance represents a specific location or a class of locations.
+ * http://hl7.org/fhir/location-mode
+ */
+export const LocationModeCodeSystem = {
   resourceType: "CodeSystem",
   id: "location-mode",
   meta: {

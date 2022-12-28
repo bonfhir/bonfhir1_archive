@@ -1,4 +1,8 @@
-export const EpisodeOfCareType = {
+/**
+ * This incomplete example codesystem defines a set of codes that can be used to express the usage type of an EpisodeOfCare record.
+ * http://terminology.hl7.org/CodeSystem/episodeofcare-type
+ */
+export const EpisodeOfCareTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "episodeofcare-type",
   meta: {

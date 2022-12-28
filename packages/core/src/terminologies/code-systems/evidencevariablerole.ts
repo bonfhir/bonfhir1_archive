@@ -1,4 +1,8 @@
-export const EvidenceVariableRole = {
+/**
+ * The role that the assertion variable plays.
+ * http://terminology.hl7.org/CodeSystem/variable-role
+ */
+export const EvidenceVariableRoleCodeSystem = {
   resourceType: "CodeSystem",
   id: "variable-role",
   meta: {

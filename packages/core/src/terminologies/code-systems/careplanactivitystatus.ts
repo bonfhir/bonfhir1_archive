@@ -1,4 +1,8 @@
-export const CarePlanActivityStatus = {
+/**
+ * Codes that reflect the current state of a care plan activity within its overall life cycle.
+ * http://hl7.org/fhir/care-plan-activity-status
+ */
+export const CarePlanActivityStatusCodeSystem = {
   resourceType: "CodeSystem",
   id: "care-plan-activity-status",
   meta: {

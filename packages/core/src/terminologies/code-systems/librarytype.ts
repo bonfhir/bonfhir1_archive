@@ -1,4 +1,8 @@
-export const LibraryType = {
+/**
+ * The type of knowledge asset this library contains.
+ * http://terminology.hl7.org/CodeSystem/library-type
+ */
+export const LibraryTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "library-type",
   meta: {

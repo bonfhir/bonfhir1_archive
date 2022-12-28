@@ -1,4 +1,8 @@
-export const FHIRRestfulInteractions = {
+/**
+ * The set of interactions defined by the RESTful part of the FHIR specification.
+ * http://hl7.org/fhir/restful-interaction
+ */
+export const FHIRRestfulInteractionsCodeSystem = {
   resourceType: "CodeSystem",
   id: "restful-interaction",
   meta: { lastUpdated: "2022-05-28T13:47:40.239+11:00" },

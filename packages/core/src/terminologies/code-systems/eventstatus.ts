@@ -1,4 +1,8 @@
-export const EventStatus = {
+/**
+ * Codes identifying the lifecycle stage of an event.
+ * http://hl7.org/fhir/event-status
+ */
+export const EventStatusCodeSystem = {
   resourceType: "CodeSystem",
   id: "event-status",
   meta: { lastUpdated: "2022-05-28T12:47:40.239+10:00" },

@@ -1,4 +1,8 @@
-export const ContactEntityType = {
+/**
+ * This example value set defines a set of codes that can be used to indicate the purpose for which you would contact a contact party.
+ * http://terminology.hl7.org/CodeSystem/contactentity-type
+ */
+export const ContactEntityTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "contactentity-type",
   meta: {

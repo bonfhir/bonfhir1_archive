@@ -1,4 +1,8 @@
-export const ActionConditionKind = {
+/**
+ * Defines the kinds of conditions that can appear on actions.
+ * http://hl7.org/fhir/action-condition-kind
+ */
+export const ActionConditionKindCodeSystem = {
   resourceType: "CodeSystem",
   id: "action-condition-kind",
   meta: {

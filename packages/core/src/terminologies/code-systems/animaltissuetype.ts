@@ -1,4 +1,8 @@
-export const AnimalTissueType = {
+/**
+ * A tissue type of an animal.
+ * http://hl7.org/fhir/animal-tissue-type
+ */
+export const AnimalTissueTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "animal-tissue-type",
   meta: {

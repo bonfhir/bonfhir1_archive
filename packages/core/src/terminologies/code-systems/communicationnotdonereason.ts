@@ -1,4 +1,8 @@
-export const CommunicationNotDoneReason = {
+/**
+ * Codes for the reason why a communication did not happen.
+ * http://terminology.hl7.org/CodeSystem/communication-not-done-reason
+ */
+export const CommunicationNotDoneReasonCodeSystem = {
   resourceType: "CodeSystem",
   id: "communication-not-done-reason",
   meta: {

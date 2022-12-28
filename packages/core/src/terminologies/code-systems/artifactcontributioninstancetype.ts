@@ -1,4 +1,8 @@
-export const ArtifactContributionInstanceType = {
+/**
+ * Artifact Contribution Instance Type
+ * http://terminology.hl7.org/CodeSystem/artifact-contribution-instance-type
+ */
+export const ArtifactContributionInstanceTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "artifact-contribution-instance-type",
   meta: {

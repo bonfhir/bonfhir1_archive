@@ -1,4 +1,8 @@
-export const CommunicationTopic = {
+/**
+ * Codes describing the purpose or content of the communication.
+ * http://terminology.hl7.org/CodeSystem/communication-topic
+ */
+export const CommunicationTopicCodeSystem = {
   resourceType: "CodeSystem",
   id: "communication-topic",
   meta: {

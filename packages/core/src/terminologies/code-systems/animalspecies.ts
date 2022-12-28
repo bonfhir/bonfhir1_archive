@@ -1,4 +1,8 @@
-export const AnimalSpecies = {
+/**
+ * This example value set defines a set of codes that can be used to indicate species of animal patients.
+ * http://hl7.org/fhir/animal-species
+ */
+export const AnimalSpeciesCodeSystem = {
   resourceType: "CodeSystem",
   id: "animal-species",
   meta: {

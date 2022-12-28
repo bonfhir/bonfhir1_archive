@@ -1,4 +1,8 @@
-export const EncounterType = {
+/**
+ * This example codesystem defines a set of codes that can be used to indicate the type of encounter: a specific code indicating type of service provided.
+ * http://terminology.hl7.org/CodeSystem/encounter-type
+ */
+export const EncounterTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "encounter-type",
   meta: {

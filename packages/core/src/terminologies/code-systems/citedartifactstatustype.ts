@@ -1,4 +1,8 @@
-export const CitedArtifactStatusType = {
+/**
+ * Cited Artifact Status Type
+ * http://terminology.hl7.org/CodeSystem/cited-artifact-status-type
+ */
+export const CitedArtifactStatusTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "cited-artifact-status-type",
   meta: {

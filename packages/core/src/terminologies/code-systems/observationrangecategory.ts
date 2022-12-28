@@ -1,4 +1,8 @@
-export const ObservationRangeCategory = {
+/**
+ * Codes identifying the category of observation range.
+ * http://hl7.org/fhir/observation-range-category
+ */
+export const ObservationRangeCategoryCodeSystem = {
   resourceType: "CodeSystem",
   id: "observation-range-category",
   meta: {

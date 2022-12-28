@@ -1,4 +1,8 @@
-export const RequestPriority = {
+/**
+ * Identifies the level of importance to be assigned to actioning the request.
+ * http://hl7.org/fhir/request-priority
+ */
+export const RequestPriorityCodeSystem = {
   resourceType: "CodeSystem",
   id: "request-priority",
   meta: { lastUpdated: "2022-05-28T12:47:40.239+10:00" },

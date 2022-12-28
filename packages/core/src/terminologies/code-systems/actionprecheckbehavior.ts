@@ -1,4 +1,8 @@
-export const ActionPrecheckBehavior = {
+/**
+ * Defines selection frequency behavior for an action or group.
+ * http://hl7.org/fhir/action-precheck-behavior
+ */
+export const ActionPrecheckBehaviorCodeSystem = {
   resourceType: "CodeSystem",
   id: "action-precheck-behavior",
   meta: {

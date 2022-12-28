@@ -1,4 +1,8 @@
-export const Diet = {
+/**
+ * This codesystem defines a set of codes that can be used to indicate dietary preferences or restrictions a patient may have.
+ * http://terminology.hl7.org/CodeSystem/diet
+ */
+export const DietCodeSystem = {
   resourceType: "CodeSystem",
   id: "encounter-diet",
   meta: {

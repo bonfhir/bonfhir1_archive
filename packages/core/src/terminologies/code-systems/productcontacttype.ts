@@ -1,4 +1,8 @@
-export const ProductContactType = {
+/**
+ * Contact type for a Medicinal Product.
+ * http://hl7.org/fhir/medicinal-product-contact-type
+ */
+export const ProductContactTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "medicinal-product-contact-type",
   meta: {

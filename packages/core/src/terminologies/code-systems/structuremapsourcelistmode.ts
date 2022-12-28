@@ -1,4 +1,8 @@
-export const StructureMapSourceListMode = {
+/**
+ * If field is a list, how to manage the source.
+ * http://hl7.org/fhir/map-source-list-mode
+ */
+export const StructureMapSourceListModeCodeSystem = {
   resourceType: "CodeSystem",
   id: "map-source-list-mode",
   meta: {

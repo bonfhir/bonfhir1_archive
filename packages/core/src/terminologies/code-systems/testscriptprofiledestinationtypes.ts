@@ -1,4 +1,8 @@
-export const TestScriptProfileDestinationTypes = {
+/**
+ * This value set defines a set of codes that are used to indicate the profile type of a test system when acting as the destination within a TestScript.
+ * http://terminology.hl7.org/CodeSystem/testscript-profile-destination-types
+ */
+export const TestScriptProfileDestinationTypesCodeSystem = {
   resourceType: "CodeSystem",
   id: "testscript-profile-destination-types",
   meta: {

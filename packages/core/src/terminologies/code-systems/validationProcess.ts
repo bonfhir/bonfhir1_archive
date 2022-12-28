@@ -1,4 +1,8 @@
-export const validationprocess = {
+/**
+ * The primary process by which the target is validated
+ * http://hl7.org/fhir/verificationresult-validation-process
+ */
+export const validationprocessCodeSystem = {
   resourceType: "CodeSystem",
   id: "verificationresult-validation-process",
   meta: {

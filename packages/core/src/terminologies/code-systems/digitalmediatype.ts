@@ -1,4 +1,8 @@
-export const DigitalMediaType = {
+/**
+ * Codes for high level media types - whether the media is an image, video, or audio.
+ * http://terminology.hl7.org/CodeSystem/media-type
+ */
+export const DigitalMediaTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "media-type",
   meta: {

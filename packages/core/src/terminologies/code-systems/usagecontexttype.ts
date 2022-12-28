@@ -1,4 +1,8 @@
-export const UsageContextType = {
+/**
+ * A code that specifies a type of context being specified by a usage context.
+ * http://terminology.hl7.org/CodeSystem/usage-context-type
+ */
+export const UsageContextTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "usage-context-type",
   meta: { lastUpdated: "2022-05-28T12:47:40.239+10:00" },

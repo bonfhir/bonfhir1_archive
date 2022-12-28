@@ -1,4 +1,8 @@
-export const ResearchStudyStatus = {
+/**
+ * Codes that convey the current status of the research study.
+ * http://hl7.org/fhir/research-study-status
+ */
+export const ResearchStudyStatusCodeSystem = {
   resourceType: "CodeSystem",
   id: "research-study-status",
   meta: {

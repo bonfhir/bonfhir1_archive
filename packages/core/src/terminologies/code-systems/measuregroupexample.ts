@@ -1,4 +1,8 @@
-export const MeasureGroupExample = {
+/**
+ * Example Measure Groups for the Measure Resource.
+ * http://terminology.hl7.org/CodeSystem/measure-group-example
+ */
+export const MeasureGroupExampleCodeSystem = {
   resourceType: "CodeSystem",
   id: "measure-group-example",
   meta: {

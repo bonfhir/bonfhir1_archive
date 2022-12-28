@@ -1,4 +1,8 @@
-export const ConsentDataMeaning = {
+/**
+ * How a resource reference is interpreted when testing consent restrictions.
+ * http://hl7.org/fhir/consent-data-meaning
+ */
+export const ConsentDataMeaningCodeSystem = {
   resourceType: "CodeSystem",
   id: "consent-data-meaning",
   meta: {

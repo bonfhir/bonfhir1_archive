@@ -1,4 +1,8 @@
-export const ContractScope = {
+/**
+ * This CodeSystem contains FHIR-defined contract Expiration types.
+ * http://hl7.org/fhir/contract-scope
+ */
+export const ContractScopeCodeSystem = {
   resourceType: "CodeSystem",
   id: "contract-scope",
   meta: {

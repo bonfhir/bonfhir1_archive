@@ -1,4 +1,8 @@
-export const ContactPointSystem = {
+/**
+ * Telecommunications form for contact point.
+ * http://hl7.org/fhir/contact-point-system
+ */
+export const ContactPointSystemCodeSystem = {
   resourceType: "CodeSystem",
   id: "contact-point-system",
   meta: { lastUpdated: "2022-05-28T12:47:40.239+10:00" },

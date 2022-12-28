@@ -5,5 +5,9 @@ export * from "./{{camelcase name}}";
 {{#fhirPathFiles definitions.valuesets "Bundle.entry.select(resource).ofType(CodeSystem)" "{{camelcase name}}.ts"}}
 import { CodeSystem } from "fhir/r4";
 
-export const {{remove (remove name " ") "-"}} = {{JSONstringify .}};
+/**
+ * {{ description }}
+ * {{ url }}
+ */
+export const {{safeNameAsVar name}}CodeSystem = {{JSONstringify .}};
 {{/fhirPathFiles}}

@@ -1,4 +1,8 @@
-export const ConsentState = {
+/**
+ * Indicates the state of the consent.
+ * http://hl7.org/fhir/consent-state-codes
+ */
+export const ConsentStateCodeSystem = {
   resourceType: "CodeSystem",
   id: "consent-state-codes",
   meta: {

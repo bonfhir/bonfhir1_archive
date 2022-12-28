@@ -1,4 +1,8 @@
-export const MeasureImprovementNotation = {
+/**
+ * Observation values that indicate what change in a measurement value or score is indicative of an improvement in the measured item or scored issue.
+ * http://terminology.hl7.org/CodeSystem/measure-improvement-notation
+ */
+export const MeasureImprovementNotationCodeSystem = {
   resourceType: "CodeSystem",
   id: "measure-improvement-notation",
   meta: {

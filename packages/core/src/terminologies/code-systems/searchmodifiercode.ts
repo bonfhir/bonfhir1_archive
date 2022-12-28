@@ -1,4 +1,8 @@
-export const SearchModifierCode = {
+/**
+ * A supported modifier for a search parameter.
+ * http://hl7.org/fhir/search-modifier-code
+ */
+export const SearchModifierCodeCodeSystem = {
   resourceType: "CodeSystem",
   id: "search-modifier-code",
   meta: {

@@ -1,4 +1,8 @@
-export const MeasureReportStratifierValueExample = {
+/**
+ * Example Region Value Measure Groups for the Measure Resource.
+ * http://terminology.hl7.org/CodeSystem/measurereport-stratifier-value-example
+ */
+export const MeasureReportStratifierValueExampleCodeSystem = {
   resourceType: "CodeSystem",
   id: "measurereport-stratifier-value-example",
   meta: {

@@ -1,4 +1,8 @@
-export const ConditionalReadStatus = {
+/**
+ * A code that indicates how the server supports conditional read.
+ * http://hl7.org/fhir/conditional-read-status
+ */
+export const ConditionalReadStatusCodeSystem = {
   resourceType: "CodeSystem",
   id: "conditional-read-status",
   meta: {

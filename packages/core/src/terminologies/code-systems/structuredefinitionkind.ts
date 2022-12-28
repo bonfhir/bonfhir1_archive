@@ -1,4 +1,8 @@
-export const StructureDefinitionKind = {
+/**
+ * Defines the type of structure that a definition is describing.
+ * http://hl7.org/fhir/structure-definition-kind
+ */
+export const StructureDefinitionKindCodeSystem = {
   resourceType: "CodeSystem",
   id: "structure-definition-kind",
   meta: {

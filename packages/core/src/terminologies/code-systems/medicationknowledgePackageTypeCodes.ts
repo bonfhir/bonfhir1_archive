@@ -1,4 +1,8 @@
-export const MedicationKnowledgePackageTypeCodes = {
+/**
+ *
+ * http://terminology.hl7.org/CodeSystem/medicationknowledge-package-type
+ */
+export const MedicationKnowledgePackageTypeCodesCodeSystem = {
   resourceType: "CodeSystem",
   id: "medicationknowledge-package-type",
   meta: {

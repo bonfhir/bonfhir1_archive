@@ -1,4 +1,8 @@
-export const ContributorRole = {
+/**
+ * Used to code the format of the display string.
+ * http://terminology.hl7.org/CodeSystem/contributor-role
+ */
+export const ContributorRoleCodeSystem = {
   resourceType: "CodeSystem",
   id: "contributor-role",
   meta: {

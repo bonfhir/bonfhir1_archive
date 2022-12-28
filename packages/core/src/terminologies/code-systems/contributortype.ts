@@ -1,4 +1,8 @@
-export const ContributorType = {
+/**
+ * The type of contributor.
+ * http://hl7.org/fhir/contributor-type
+ */
+export const ContributorTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "contributor-type",
   meta: { lastUpdated: "2022-05-28T12:47:40.239+10:00" },

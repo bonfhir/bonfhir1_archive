@@ -1,4 +1,8 @@
-export const AdjudicationReasonCodes = {
+/**
+ * This value set includes smattering of Adjudication Reason codes.
+ * http://terminology.hl7.org/CodeSystem/adjudication-reason
+ */
+export const AdjudicationReasonCodesCodeSystem = {
   resourceType: "CodeSystem",
   id: "adjudication-reason",
   meta: {

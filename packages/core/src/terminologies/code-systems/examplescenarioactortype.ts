@@ -1,4 +1,8 @@
-export const ExampleScenarioActorType = {
+/**
+ * The type of actor - system or human.
+ * http://hl7.org/fhir/examplescenario-actor-type
+ */
+export const ExampleScenarioActorTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "examplescenario-actor-type",
   meta: {

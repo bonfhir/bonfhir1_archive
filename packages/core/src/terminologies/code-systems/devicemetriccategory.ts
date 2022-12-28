@@ -1,4 +1,8 @@
-export const DeviceMetricCategory = {
+/**
+ * Describes the category of the metric.
+ * http://hl7.org/fhir/metric-category
+ */
+export const DeviceMetricCategoryCodeSystem = {
   resourceType: "CodeSystem",
   id: "metric-category",
   meta: {

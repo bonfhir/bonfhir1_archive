@@ -1,4 +1,8 @@
-export const DocumentRelationshipType = {
+/**
+ * The type of relationship between documents.
+ * http://hl7.org/fhir/document-relationship-type
+ */
+export const DocumentRelationshipTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "document-relationship-type",
   meta: {

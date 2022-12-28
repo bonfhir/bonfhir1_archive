@@ -1,4 +1,8 @@
-export const PriorityCodes = {
+/**
+ * This value set includes the financial processing priority codes.
+ * http://terminology.hl7.org/CodeSystem/processpriority
+ */
+export const PriorityCodesCodeSystem = {
   resourceType: "CodeSystem",
   id: "process-priority",
   meta: {

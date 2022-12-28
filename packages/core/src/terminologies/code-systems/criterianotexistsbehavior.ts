@@ -1,4 +1,8 @@
-export const CriteriaNotExistsBehavior = {
+/**
+ * Behavior a server can exhibit when a criteria state does not exist (e.g., state prior to a create or after a delete).
+ * http://hl7.org/fhir/subscriptiontopic-cr-behavior
+ */
+export const CriteriaNotExistsBehaviorCodeSystem = {
   resourceType: "CodeSystem",
   id: "subscriptiontopic-cr-behavior",
   meta: {

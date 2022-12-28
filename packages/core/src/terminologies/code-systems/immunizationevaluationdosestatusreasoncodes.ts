@@ -1,4 +1,8 @@
-export const ImmunizationEvaluationDoseStatusReasonCodes = {
+/**
+ * This code system supports describing the reason why an administered dose has been assigned a particular status. Often, this reason describes why a dose is considered invalid.
+ * http://terminology.hl7.org/CodeSystem/immunization-evaluation-dose-status-reason
+ */
+export const ImmunizationEvaluationDoseStatusReasonCodesCodeSystem = {
   resourceType: "CodeSystem",
   id: "immunization-evaluation-dose-status-reason",
   meta: {

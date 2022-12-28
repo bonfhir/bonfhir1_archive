@@ -1,4 +1,8 @@
-export const NarrativeStatus = {
+/**
+ * The status of a resource narrative.
+ * http://hl7.org/fhir/narrative-status
+ */
+export const NarrativeStatusCodeSystem = {
   resourceType: "CodeSystem",
   id: "narrative-status",
   meta: { lastUpdated: "2022-05-28T12:47:40.239+10:00" },

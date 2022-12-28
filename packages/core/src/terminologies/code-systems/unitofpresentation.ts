@@ -1,4 +1,8 @@
-export const UnitOfPresentation = {
+/**
+ * The presentation type in which an administrable medicinal product is given to a patient.
+ * http://hl7.org/fhir/unit-of-presentation
+ */
+export const UnitOfPresentationCodeSystem = {
   resourceType: "CodeSystem",
   id: "unit-of-presentation",
   meta: {

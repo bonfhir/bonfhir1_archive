@@ -1,4 +1,8 @@
-export const canpushupdates = {
+/**
+ * Ability of the primary source to push updates/alerts
+ * http://hl7.org/fhir/verificationresult-can-push-updates
+ */
+export const canpushupdatesCodeSystem = {
   resourceType: "CodeSystem",
   id: "verificationresult-can-push-updates",
   meta: {

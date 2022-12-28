@@ -1,4 +1,8 @@
-export const SlotStatus = {
+/**
+ * The free/busy status of the slot.
+ * http://hl7.org/fhir/slotstatus
+ */
+export const SlotStatusCodeSystem = {
   resourceType: "CodeSystem",
   id: "slotstatus",
   meta: {

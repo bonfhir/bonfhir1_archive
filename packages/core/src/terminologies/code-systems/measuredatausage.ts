@@ -1,4 +1,8 @@
-export const MeasureDataUsage = {
+/**
+ * The intended usage for supplemental data elements in the measure.
+ * http://terminology.hl7.org/CodeSystem/measure-data-usage
+ */
+export const MeasureDataUsageCodeSystem = {
   resourceType: "CodeSystem",
   id: "measure-data-usage",
   meta: {

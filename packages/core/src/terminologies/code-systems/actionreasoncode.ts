@@ -1,4 +1,8 @@
-export const ActionReasonCode = {
+/**
+ * Provides examples of reasons for actions to be performed.
+ * http://terminology.hl7.org/CodeSystem/action-reason-code
+ */
+export const ActionReasonCodeCodeSystem = {
   resourceType: "CodeSystem",
   id: "action-reason-code",
   meta: {

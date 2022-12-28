@@ -1,4 +1,8 @@
-export const AssertionOperatorType = {
+/**
+ * The type of operator to use for assertion.
+ * http://hl7.org/fhir/assert-operator-codes
+ */
+export const AssertionOperatorTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "assert-operator-codes",
   meta: {

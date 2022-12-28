@@ -1,4 +1,8 @@
-export const ReasonMedicationNotGivenCodes = {
+/**
+ * This value set is provided as an example. The value set to instantiate this attribute should be drawn from a robust terminology code system that consists of or contains concepts to support the medication process.
+ * http://hl7.org/fhir/reason-medication-not-given
+ */
+export const ReasonMedicationNotGivenCodesCodeSystem = {
   resourceType: "CodeSystem",
   id: "reason-medication-not-given-codes",
   meta: {

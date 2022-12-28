@@ -1,4 +1,8 @@
-export const ClaimInformationCategoryCodes = {
+/**
+ * This value set includes sample Information Category codes.
+ * http://terminology.hl7.org/CodeSystem/claiminformationcategory
+ */
+export const ClaimInformationCategoryCodesCodeSystem = {
   resourceType: "CodeSystem",
   id: "claim-informationcategory",
   meta: {

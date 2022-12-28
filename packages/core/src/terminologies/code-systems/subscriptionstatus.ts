@@ -1,4 +1,8 @@
-export const SubscriptionStatus = {
+/**
+ * The status of a subscription.
+ * http://hl7.org/fhir/subscription-status
+ */
+export const SubscriptionStatusCodeSystem = {
   resourceType: "CodeSystem",
   id: "subscription-status",
   meta: {

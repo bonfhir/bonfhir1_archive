@@ -1,4 +1,8 @@
-export const AllergyIntoleranceVerificationStatusCodes = {
+/**
+ * Preferred value set for AllergyIntolerance Verification Status.
+ * http://terminology.hl7.org/CodeSystem/allergyintolerance-verification
+ */
+export const AllergyIntoleranceVerificationStatusCodesCodeSystem = {
   resourceType: "CodeSystem",
   id: "allergyintolerance-verification",
   meta: {

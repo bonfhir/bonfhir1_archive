@@ -1,4 +1,8 @@
-export const ConceptSubsumptionOutcome = {
+/**
+ * Codes indicating the results of a subsumption check between codes
+ * http://hl7.org/fhir/concept-subsumption-outcome
+ */
+export const ConceptSubsumptionOutcomeCodeSystem = {
   resourceType: "CodeSystem",
   id: "concept-subsumption-outcome",
   meta: {

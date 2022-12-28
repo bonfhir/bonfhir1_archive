@@ -1,4 +1,8 @@
-export const ContributorSummaryStyle = {
+/**
+ * Used to code the format of the display string.
+ * http://terminology.hl7.org/CodeSystem/contributor-summary-style
+ */
+export const ContributorSummaryStyleCodeSystem = {
   resourceType: "CodeSystem",
   id: "contributor-summary-style",
   meta: {

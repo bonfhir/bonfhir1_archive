@@ -1,4 +1,8 @@
-export const ContributorSummaryType = {
+/**
+ * Used to code author list statement, contributorship statement, and such.
+ * http://terminology.hl7.org/CodeSystem/contributor-summary-type
+ */
+export const ContributorSummaryTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "contributor-summary-type",
   meta: {

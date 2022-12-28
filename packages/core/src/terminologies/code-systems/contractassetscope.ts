@@ -1,4 +1,8 @@
-export const ContractAssetScope = {
+/**
+ * This CodeSystem contains FHIR-defined contract asset scope types.
+ * http://hl7.org/fhir/contract-assetscope
+ */
+export const ContractAssetScopeCodeSystem = {
   resourceType: "CodeSystem",
   id: "contract-assetscope",
   meta: {

@@ -1,4 +1,8 @@
-export const CharacteristicMethod = {
+/**
+ * The method used to determine the characteristic(s) of the variable.
+ * http://terminology.hl7.org/CodeSystem/characteristic-method
+ */
+export const CharacteristicMethodCodeSystem = {
   resourceType: "CodeSystem",
   id: "characteristic-method",
   meta: {

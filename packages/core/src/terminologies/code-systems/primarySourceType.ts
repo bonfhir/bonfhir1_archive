@@ -1,4 +1,8 @@
-export const primarysourcetype = {
+/**
+ * Type of the validation primary source
+ * http://hl7.org/fhir/verificationresult-primary-source-type
+ */
+export const primarysourcetypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "verificationresult-primary-source-type",
   meta: {

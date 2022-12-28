@@ -1,4 +1,8 @@
-export const RegulatedAuthorizationBasis = {
+/**
+ *
+ * http://hl7.org/fhir/regulated-authorization-basis
+ */
+export const RegulatedAuthorizationBasisCodeSystem = {
   resourceType: "CodeSystem",
   id: "regulated-authorization-basis",
   meta: {

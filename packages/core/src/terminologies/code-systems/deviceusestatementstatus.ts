@@ -1,4 +1,8 @@
-export const DeviceUseStatementStatus = {
+/**
+ * A coded concept indicating the current status of the Device Usage.
+ * http://hl7.org/fhir/device-statement-status
+ */
+export const DeviceUseStatementStatusCodeSystem = {
   resourceType: "CodeSystem",
   id: "device-statement-status",
   meta: {

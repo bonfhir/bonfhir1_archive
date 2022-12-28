@@ -1,4 +1,8 @@
-export const W3cProvenanceActivityType = {
+/**
+ * This value set includes W3C PROV Data Model Activity concepts, which are treated as codes in this valueset.  Some adaptations were made to make these concepts suitable values for the Provenance.activity element. Coded concepts are from PROV-DM and the display names are their counterparts in PROV-N (human readable notation syntax specification).[code system OID: http://www.w3.org/TR/2013/REC-prov-dm-20130430/ and http://www.w3.org/TR/2013/REC-prov-n-20130430/]
+ * http://hl7.org/fhir/w3c-provenance-activity-type
+ */
+export const W3cProvenanceActivityTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "w3c-provenance-activity-type",
   meta: {

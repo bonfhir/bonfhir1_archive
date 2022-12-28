@@ -1,4 +1,8 @@
-export const CitationArtifactClassifier = {
+/**
+ * Citation artifact classifier
+ * http://terminology.hl7.org/CodeSystem/citation-artifact-classifier
+ */
+export const CitationArtifactClassifierCodeSystem = {
   resourceType: "CodeSystem",
   id: "citation-artifact-classifier",
   meta: {

@@ -1,4 +1,8 @@
-export const FHIRDeviceStatus = {
+/**
+ * The availability status of the device.
+ * http://hl7.org/fhir/device-status
+ */
+export const FHIRDeviceStatusCodeSystem = {
   resourceType: "CodeSystem",
   id: "device-status",
   meta: {

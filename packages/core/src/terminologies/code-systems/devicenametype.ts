@@ -1,4 +1,8 @@
-export const DeviceNameType = {
+/**
+ * The type of name the device is referred by.
+ * http://hl7.org/fhir/device-nametype
+ */
+export const DeviceNameTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "device-nametype",
   meta: {

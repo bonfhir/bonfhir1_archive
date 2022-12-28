@@ -1,4 +1,8 @@
-export const CompositeMeasureScoring = {
+/**
+ * The composite scoring method of the measure.
+ * http://terminology.hl7.org/CodeSystem/composite-measure-scoring
+ */
+export const CompositeMeasureScoringCodeSystem = {
   resourceType: "CodeSystem",
   id: "composite-measure-scoring",
   meta: {

@@ -1,4 +1,8 @@
-export const LanguagePreferenceType = {
+/**
+ * This code system defines a defines the set of codes for describing the type or mode of the patient's preferred language.
+ * http://hl7.org/fhir/language-preference-type
+ */
+export const LanguagePreferenceTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "language-preference-type",
   meta: {

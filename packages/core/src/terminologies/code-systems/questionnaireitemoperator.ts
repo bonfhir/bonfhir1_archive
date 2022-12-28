@@ -1,4 +1,8 @@
-export const QuestionnaireItemOperator = {
+/**
+ * The criteria by which a question is enabled.
+ * http://hl7.org/fhir/questionnaire-enable-operator
+ */
+export const QuestionnaireItemOperatorCodeSystem = {
   resourceType: "CodeSystem",
   id: "questionnaire-enable-operator",
   meta: {

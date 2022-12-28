@@ -1,4 +1,8 @@
-export const InvoiceStatus = {
+/**
+ * Codes identifying the lifecycle stage of an Invoice.
+ * http://hl7.org/fhir/invoice-status
+ */
+export const InvoiceStatusCodeSystem = {
   resourceType: "CodeSystem",
   id: "invoice-status",
   meta: {

@@ -1,4 +1,8 @@
-export const MessageTransport = {
+/**
+ * The protocol used for message transport.
+ * http://terminology.hl7.org/CodeSystem/message-transport
+ */
+export const MessageTransportCodeSystem = {
   resourceType: "CodeSystem",
   id: "message-transport",
   meta: {

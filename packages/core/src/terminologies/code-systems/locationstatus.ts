@@ -1,4 +1,8 @@
-export const LocationStatus = {
+/**
+ * Indicates whether the location is still in use.
+ * http://hl7.org/fhir/location-status
+ */
+export const LocationStatusCodeSystem = {
   resourceType: "CodeSystem",
   id: "location-status",
   meta: {

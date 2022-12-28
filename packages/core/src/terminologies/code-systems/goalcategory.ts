@@ -1,4 +1,8 @@
-export const GoalCategory = {
+/**
+ * Example codes for grouping goals to use for filtering or presentation.
+ * http://terminology.hl7.org/CodeSystem/goal-category
+ */
+export const GoalCategoryCodeSystem = {
   resourceType: "CodeSystem",
   id: "goal-category",
   meta: {

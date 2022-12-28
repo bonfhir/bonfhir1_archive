@@ -1,4 +1,8 @@
-export const BindingStrength = {
+/**
+ * Indication of the degree of conformance expectations associated with a binding.
+ * http://hl7.org/fhir/binding-strength
+ */
+export const BindingStrengthCodeSystem = {
   resourceType: "CodeSystem",
   id: "binding-strength",
   meta: { lastUpdated: "2022-05-28T12:47:40.239+10:00" },

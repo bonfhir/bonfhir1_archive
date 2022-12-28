@@ -1,4 +1,8 @@
-export const chromosomehuman = {
+/**
+ * Chromosome number for human.
+ * http://terminology.hl7.org/CodeSystem/chromosome-human
+ */
+export const chromosomehumanCodeSystem = {
   resourceType: "CodeSystem",
   id: "chromosome-human",
   meta: {

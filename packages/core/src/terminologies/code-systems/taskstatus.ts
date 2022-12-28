@@ -1,4 +1,8 @@
-export const TaskStatus = {
+/**
+ * The current status of the task.
+ * http://hl7.org/fhir/task-status
+ */
+export const TaskStatusCodeSystem = {
   resourceType: "CodeSystem",
   id: "task-status",
   meta: {

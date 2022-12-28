@@ -1,4 +1,8 @@
-export const CitationSummaryStyle = {
+/**
+ * The format for display of the citation.
+ * http://terminology.hl7.org/CodeSystem/citation-summary-style
+ */
+export const CitationSummaryStyleCodeSystem = {
   resourceType: "CodeSystem",
   id: "citation-summary-style",
   meta: {

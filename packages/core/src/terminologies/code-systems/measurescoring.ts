@@ -1,4 +1,8 @@
-export const MeasureScoring = {
+/**
+ * The scoring type of the measure.
+ * http://terminology.hl7.org/CodeSystem/measure-scoring
+ */
+export const MeasureScoringCodeSystem = {
   resourceType: "CodeSystem",
   id: "measure-scoring",
   meta: {

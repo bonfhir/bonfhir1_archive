@@ -1,4 +1,8 @@
-export const StandardsStatus = {
+/**
+ * Status codes indicating the 'standards' level of an artifact
+ * http://hl7.org/fhir/standards-status
+ */
+export const StandardsStatusCodeSystem = {
   resourceType: "CodeSystem",
   id: "standards-status",
   meta: {

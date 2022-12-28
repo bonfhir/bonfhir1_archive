@@ -1,4 +1,8 @@
-export const AggregationMode = {
+/**
+ * How resource references can be aggregated.
+ * http://hl7.org/fhir/resource-aggregation-mode
+ */
+export const AggregationModeCodeSystem = {
   resourceType: "CodeSystem",
   id: "resource-aggregation-mode",
   meta: { lastUpdated: "2022-05-28T12:47:40.239+10:00" },

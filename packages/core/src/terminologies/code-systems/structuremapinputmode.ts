@@ -1,4 +1,8 @@
-export const StructureMapInputMode = {
+/**
+ * Mode for this instance of data.
+ * http://hl7.org/fhir/map-input-mode
+ */
+export const StructureMapInputModeCodeSystem = {
   resourceType: "CodeSystem",
   id: "map-input-mode",
   meta: {

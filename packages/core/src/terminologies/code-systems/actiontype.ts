@@ -1,4 +1,8 @@
-export const ActionType = {
+/**
+ * The type of action to be performed.
+ * http://terminology.hl7.org/CodeSystem/action-type
+ */
+export const ActionTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "action-type",
   meta: {

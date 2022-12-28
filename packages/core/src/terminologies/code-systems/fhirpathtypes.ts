@@ -1,4 +1,8 @@
-export const FHIRPathTypes = {
+/**
+ * All FHIRPath data types
+ * http://hl7.org/fhir/CodeSystem/fhirpath-types
+ */
+export const FHIRPathTypesCodeSystem = {
   resourceType: "CodeSystem",
   id: "fhirpath-types",
   meta: {

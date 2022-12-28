@@ -1,4 +1,8 @@
-export const CitedArtifactPartType = {
+/**
+ * To describe the reason for the variant citation, such as version number or subpart specification.
+ * http://terminology.hl7.org/CodeSystem/cited-artifact-part-type
+ */
+export const CitedArtifactPartTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "cited-artifact-part-type",
   meta: {

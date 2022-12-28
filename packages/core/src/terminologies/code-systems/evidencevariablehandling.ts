@@ -1,4 +1,8 @@
-export const EvidenceVariableHandling = {
+/**
+ * The handling of the variable in statistical analysis for exposures or outcomes (E.g. Dichotomous, Continuous, Descriptive).
+ * http://hl7.org/fhir/variable-handling
+ */
+export const EvidenceVariableHandlingCodeSystem = {
   resourceType: "CodeSystem",
   id: "variable-handling",
   meta: {

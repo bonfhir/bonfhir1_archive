@@ -1,4 +1,8 @@
-export const MedicinalProductDomain = {
+/**
+ * Applicable domain for this product (e.g. human, veterinary).
+ * http://hl7.org/fhir/medicinal-product-domain
+ */
+export const MedicinalProductDomainCodeSystem = {
   resourceType: "CodeSystem",
   id: "medicinal-product-domain",
   meta: {

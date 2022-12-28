@@ -1,4 +1,8 @@
-export const ContractDecisionMode = {
+/**
+ * This CodeSystem contains FHIR-defined contract decision mode types.
+ * http://hl7.org/fhir/contract-decision-mode
+ */
+export const ContractDecisionModeCodeSystem = {
   resourceType: "CodeSystem",
   id: "contract-decision-mode",
   meta: {

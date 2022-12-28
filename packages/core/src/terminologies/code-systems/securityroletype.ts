@@ -1,4 +1,8 @@
-export const SecurityRoleType = {
+/**
+ * This CodeSystem contains Additional FHIR-defined Security Role types not defined elsewhere
+ * http://terminology.hl7.org/CodeSystem/extra-security-role-type
+ */
+export const SecurityRoleTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "extra-security-role-type",
   meta: {

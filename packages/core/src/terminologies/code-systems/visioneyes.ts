@@ -1,4 +1,8 @@
-export const VisionEyes = {
+/**
+ * A coded concept listing the eye codes.
+ * http://hl7.org/fhir/vision-eye-codes
+ */
+export const VisionEyesCodeSystem = {
   resourceType: "CodeSystem",
   id: "vision-eye-codes",
   meta: {

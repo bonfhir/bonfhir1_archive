@@ -1,4 +1,8 @@
-export const CompartmentType = {
+/**
+ * Which type a compartment definition describes.
+ * http://hl7.org/fhir/compartment-type
+ */
+export const CompartmentTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "compartment-type",
   meta: {

@@ -1,4 +1,8 @@
-export const EvidenceCertaintyRating = {
+/**
+ * The assessment of quality, confidence, or certainty.
+ * http://terminology.hl7.org/CodeSystem/certainty-rating
+ */
+export const EvidenceCertaintyRatingCodeSystem = {
   resourceType: "CodeSystem",
   id: "certainty-rating",
   meta: {

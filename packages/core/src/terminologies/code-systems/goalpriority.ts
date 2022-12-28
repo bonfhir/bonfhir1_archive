@@ -1,4 +1,8 @@
-export const GoalPriority = {
+/**
+ * Indicates the level of importance associated with reaching or sustaining a goal.
+ * http://terminology.hl7.org/CodeSystem/goal-priority
+ */
+export const GoalPriorityCodeSystem = {
   resourceType: "CodeSystem",
   id: "goal-priority",
   meta: {

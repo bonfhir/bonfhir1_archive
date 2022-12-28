@@ -1,4 +1,8 @@
-export const ReportRelationshipType = {
+/**
+ * The type of relationship between reports.
+ * http://hl7.org/fhir/report-relation-type
+ */
+export const ReportRelationshipTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "report-relation-type",
   meta: {

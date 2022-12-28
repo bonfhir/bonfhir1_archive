@@ -1,4 +1,8 @@
-export const EventCapabilityMode = {
+/**
+ * The mode of a message capability statement.
+ * http://hl7.org/fhir/event-capability-mode
+ */
+export const EventCapabilityModeCodeSystem = {
   resourceType: "CodeSystem",
   id: "event-capability-mode",
   meta: {

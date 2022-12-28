@@ -1,4 +1,8 @@
-export const ActionSelectionBehavior = {
+/**
+ * Defines selection behavior of a group.
+ * http://hl7.org/fhir/action-selection-behavior
+ */
+export const ActionSelectionBehaviorCodeSystem = {
   resourceType: "CodeSystem",
   id: "action-selection-behavior",
   meta: {

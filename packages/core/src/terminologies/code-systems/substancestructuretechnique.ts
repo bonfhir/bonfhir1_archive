@@ -1,4 +1,8 @@
-export const SubstanceStructureTechnique = {
+/**
+ *
+ * http://hl7.org/fhir/substance-structure-technique
+ */
+export const SubstanceStructureTechniqueCodeSystem = {
   resourceType: "CodeSystem",
   id: "substance-structure-technique",
   meta: {

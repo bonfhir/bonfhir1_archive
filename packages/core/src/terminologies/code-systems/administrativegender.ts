@@ -1,4 +1,8 @@
-export const AdministrativeGender = {
+/**
+ * The gender of a person used for administrative purposes.
+ * http://hl7.org/fhir/administrative-gender
+ */
+export const AdministrativeGenderCodeSystem = {
   resourceType: "CodeSystem",
   id: "administrative-gender",
   meta: { lastUpdated: "2022-05-28T12:47:40.239+10:00" },

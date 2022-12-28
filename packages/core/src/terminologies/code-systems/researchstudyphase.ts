@@ -1,4 +1,8 @@
-export const ResearchStudyPhase = {
+/**
+ * Codes for the stage in the progression of a therapy from initial experimental use in humans in clinical trials to post-market evaluation.
+ * http://terminology.hl7.org/CodeSystem/research-study-phase
+ */
+export const ResearchStudyPhaseCodeSystem = {
   resourceType: "CodeSystem",
   id: "research-study-phase",
   meta: {

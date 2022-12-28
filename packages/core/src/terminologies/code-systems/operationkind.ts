@@ -1,4 +1,8 @@
-export const OperationKind = {
+/**
+ * Whether an operation is a normal operation or a query.
+ * http://hl7.org/fhir/operation-kind
+ */
+export const OperationKindCodeSystem = {
   resourceType: "CodeSystem",
   id: "operation-kind",
   meta: {

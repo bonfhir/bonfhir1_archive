@@ -1,4 +1,8 @@
-export const CombinedDoseForm = {
+/**
+ * Dose forms for a product as a whole, considering all individual parts, but before any mixing
+ * http://hl7.org/fhir/combined-dose-form
+ */
+export const CombinedDoseFormCodeSystem = {
   resourceType: "CodeSystem",
   id: "combined-dose-form",
   meta: {

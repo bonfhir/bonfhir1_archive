@@ -1,4 +1,8 @@
-export const TitleType = {
+/**
+ * Used to express the reason and specific aspect for the variant title, such as language and specific language.
+ * http://terminology.hl7.org/CodeSystem/title-type
+ */
+export const TitleTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "title-type",
   meta: {

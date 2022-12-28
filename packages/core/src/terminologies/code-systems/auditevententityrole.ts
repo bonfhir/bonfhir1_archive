@@ -1,4 +1,8 @@
-export const AuditEventEntityRole = {
+/**
+ * Code representing the role the entity played in the audit event.
+ * http://terminology.hl7.org/CodeSystem/object-role
+ */
+export const AuditEventEntityRoleCodeSystem = {
   resourceType: "CodeSystem",
   id: "object-role",
   meta: {

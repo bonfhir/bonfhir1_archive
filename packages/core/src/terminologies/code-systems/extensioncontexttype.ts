@@ -1,4 +1,8 @@
-export const ExtensionContextType = {
+/**
+ * How an extension context is interpreted.
+ * http://hl7.org/fhir/extension-context-type
+ */
+export const ExtensionContextTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "extension-context-type",
   meta: {

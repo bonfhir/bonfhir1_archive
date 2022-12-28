@@ -1,4 +1,8 @@
-export const CompositionAttestationMode = {
+/**
+ * The way in which a person authenticated a composition.
+ * http://hl7.org/fhir/composition-attestation-mode
+ */
+export const CompositionAttestationModeCodeSystem = {
   resourceType: "CodeSystem",
   id: "composition-attestation-mode",
   meta: {

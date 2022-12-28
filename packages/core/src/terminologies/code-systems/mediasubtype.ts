@@ -1,4 +1,8 @@
-export const MediaSubType = {
+/**
+ * Detailed information about the type of the image - its kind, purpose, or the kind of equipment used to generate it.
+ * http://terminology.hl7.org/CodeSystem/media-modality
+ */
+export const MediaSubTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "media-modality",
   meta: {

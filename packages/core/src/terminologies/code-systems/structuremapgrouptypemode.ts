@@ -1,4 +1,8 @@
-export const StructureMapGroupTypeMode = {
+/**
+ * If this is the default rule set to apply for the source type, or this combination of types.
+ * http://hl7.org/fhir/map-group-type-mode
+ */
+export const StructureMapGroupTypeModeCodeSystem = {
   resourceType: "CodeSystem",
   id: "map-group-type-mode",
   meta: {

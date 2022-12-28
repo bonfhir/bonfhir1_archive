@@ -1,4 +1,8 @@
-export const DiagnosticReportStatus = {
+/**
+ * The status of the diagnostic report.
+ * http://hl7.org/fhir/diagnostic-report-status
+ */
+export const DiagnosticReportStatusCodeSystem = {
   resourceType: "CodeSystem",
   id: "diagnostic-report-status",
   meta: {

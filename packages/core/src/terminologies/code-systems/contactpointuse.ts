@@ -1,4 +1,8 @@
-export const ContactPointUse = {
+/**
+ * Use of contact point.
+ * http://hl7.org/fhir/contact-point-use
+ */
+export const ContactPointUseCodeSystem = {
   resourceType: "CodeSystem",
   id: "contact-point-use",
   meta: { lastUpdated: "2022-05-28T12:47:40.239+10:00" },

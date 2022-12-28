@@ -1,4 +1,8 @@
-export const AssertionDirectionType = {
+/**
+ * The type of direction to use for assertion.
+ * http://hl7.org/fhir/assert-direction-codes
+ */
+export const AssertionDirectionTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "assert-direction-codes",
   meta: {

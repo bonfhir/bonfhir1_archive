@@ -1,4 +1,8 @@
-export const PropertyType = {
+/**
+ * The type of a property value.
+ * http://hl7.org/fhir/concept-property-type
+ */
+export const PropertyTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "concept-property-type",
   meta: {

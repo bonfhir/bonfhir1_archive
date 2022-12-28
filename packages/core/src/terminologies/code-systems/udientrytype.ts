@@ -1,4 +1,8 @@
-export const UDIEntryType = {
+/**
+ * Codes to identify how UDI data was entered.
+ * http://hl7.org/fhir/udi-entry-type
+ */
+export const UDIEntryTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "udi-entry-type",
   meta: {

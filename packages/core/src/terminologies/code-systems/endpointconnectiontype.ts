@@ -1,4 +1,8 @@
-export const EndpointConnectionType = {
+/**
+ * This is an example codesystem defined by the FHIR project, that could be used to represent possible connection type profile values.
+ * http://terminology.hl7.org/CodeSystem/endpoint-connection-type
+ */
+export const EndpointConnectionTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "endpoint-connection-type",
   meta: {

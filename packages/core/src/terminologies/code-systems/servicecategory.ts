@@ -1,4 +1,8 @@
-export const ServiceCategory = {
+/**
+ * This value set defines an example set of codes that can be used to classify groupings of service-types/specialties.
+ * http://terminology.hl7.org/CodeSystem/service-category
+ */
+export const ServiceCategoryCodeSystem = {
   resourceType: "CodeSystem",
   id: "service-category",
   meta: {

@@ -1,4 +1,8 @@
-export const IdentifierUse = {
+/**
+ * Identifies the purpose for this identifier, if known .
+ * http://hl7.org/fhir/identifier-use
+ */
+export const IdentifierUseCodeSystem = {
   resourceType: "CodeSystem",
   id: "identifier-use",
   meta: { lastUpdated: "2022-05-28T12:47:40.239+10:00" },

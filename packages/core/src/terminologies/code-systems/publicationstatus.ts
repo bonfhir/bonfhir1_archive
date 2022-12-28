@@ -1,4 +1,8 @@
-export const PublicationStatus = {
+/**
+ * The lifecycle status of an artifact.
+ * http://hl7.org/fhir/publication-status
+ */
+export const PublicationStatusCodeSystem = {
   resourceType: "CodeSystem",
   id: "publication-status",
   meta: { lastUpdated: "2022-05-28T12:47:40.239+10:00" },

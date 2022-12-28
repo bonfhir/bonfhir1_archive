@@ -1,4 +1,8 @@
-export const ExampleDiagnosisTypeCodes = {
+/**
+ * This value set includes example Diagnosis Type codes.
+ * http://terminology.hl7.org/CodeSystem/ex-diagnosistype
+ */
+export const ExampleDiagnosisTypeCodesCodeSystem = {
   resourceType: "CodeSystem",
   id: "ex-diagnosistype",
   meta: {

@@ -1,4 +1,8 @@
-export const CodesystemsummaryexampleforACMEbodysites = {
+/**
+ * This is an example code system summary for the ACME codes for body site.
+ * http://hl7.org/fhir/CodeSystem/summary
+ */
+export const CodesystemsummaryexampleforACMEbodysitesCodeSystem = {
   resourceType: "CodeSystem",
   id: "summary",
   meta: { lastUpdated: "2022-05-28T12:47:40.239+10:00" },

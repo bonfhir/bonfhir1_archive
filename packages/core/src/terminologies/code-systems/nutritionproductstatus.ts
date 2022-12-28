@@ -1,4 +1,8 @@
-export const NutritionProductStatus = {
+/**
+ * Codes identifying the lifecycle stage of a product.
+ * http://hl7.org/fhir/nutritionproduct-status
+ */
+export const NutritionProductStatusCodeSystem = {
   resourceType: "CodeSystem",
   id: "nutritionproduct-status",
   meta: {

@@ -1,4 +1,8 @@
-export const FamilyHistoryAbsentReason = {
+/**
+ * Codes describing the reason why a family member's history is not available.
+ * http://terminology.hl7.org/CodeSystem/history-absent-reason
+ */
+export const FamilyHistoryAbsentReasonCodeSystem = {
   resourceType: "CodeSystem",
   id: "history-absent-reason",
   meta: {

@@ -1,4 +1,8 @@
-export const EnteralFormulaAdditiveTypeCode = {
+/**
+ * EnteralFormulaAdditiveType: Codes for the type of modular component such as protein, carbohydrate or fiber to be provided in addition to or mixed with the base formula. This value set is provided as a suggestive example.
+ * http://terminology.hl7.org/CodeSystem/entformula-additive
+ */
+export const EnteralFormulaAdditiveTypeCodeCodeSystem = {
   resourceType: "CodeSystem",
   id: "entformula-additive",
   meta: {

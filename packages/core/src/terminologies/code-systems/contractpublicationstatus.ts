@@ -1,4 +1,8 @@
-export const ContractPublicationStatus = {
+/**
+ * This CodeSystem contains FHIR-defined contract publication status types. Each definition includes usage notes explaining the precedence order in contract publication lifecycle - i.e., while only some stages are required, the order in which they may occur is deterministic.
+ * http://hl7.org/fhir/contract-publicationstatus
+ */
+export const ContractPublicationStatusCodeSystem = {
   resourceType: "CodeSystem",
   id: "contract-publicationstatus",
   meta: {

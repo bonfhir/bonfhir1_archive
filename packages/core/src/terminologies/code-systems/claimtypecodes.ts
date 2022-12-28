@@ -1,4 +1,8 @@
-export const ClaimTypeCodes = {
+/**
+ * This value set includes Claim Type codes.
+ * http://terminology.hl7.org/CodeSystem/claim-type
+ */
+export const ClaimTypeCodesCodeSystem = {
   resourceType: "CodeSystem",
   id: "claim-type",
   meta: {

@@ -1,4 +1,8 @@
-export const RequestStatus = {
+/**
+ * Codes identifying the lifecycle stage of a request.
+ * http://hl7.org/fhir/request-status
+ */
+export const RequestStatusCodeSystem = {
   resourceType: "CodeSystem",
   id: "request-status",
   meta: { lastUpdated: "2022-05-28T12:47:40.239+10:00" },

@@ -1,4 +1,8 @@
-export const FHIRDefinedConceptProperties = {
+/**
+ * A set of common concept properties for use on coded systems throughout the FHIR eco-system.
+ * http://hl7.org/fhir/concept-properties
+ */
+export const FHIRDefinedConceptPropertiesCodeSystem = {
   resourceType: "CodeSystem",
   id: "concept-properties",
   meta: { lastUpdated: "2022-05-28T12:47:40.239+10:00" },

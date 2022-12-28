@@ -1,4 +1,8 @@
-export const NamingSystemType = {
+/**
+ * Identifies the purpose of the naming system.
+ * http://hl7.org/fhir/namingsystem-type
+ */
+export const NamingSystemTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "namingsystem-type",
   meta: {

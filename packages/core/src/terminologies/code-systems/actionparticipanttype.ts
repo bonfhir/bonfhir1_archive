@@ -1,4 +1,8 @@
-export const ActionParticipantType = {
+/**
+ * The type of participant for the action.
+ * http://hl7.org/fhir/action-participant-type
+ */
+export const ActionParticipantTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "action-participant-type",
   meta: {

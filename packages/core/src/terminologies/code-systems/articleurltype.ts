@@ -1,4 +1,8 @@
-export const ArticleUrlType = {
+/**
+ * Code the reason for different URLs, eg abstract and full-text.
+ * http://terminology.hl7.org/CodeSystem/article-url-type
+ */
+export const ArticleUrlTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "article-url-type",
   meta: {

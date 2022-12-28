@@ -1,4 +1,8 @@
-export const ExampleProcedureTypeCodes = {
+/**
+ * This value set includes example Procedure Type codes.
+ * http://terminology.hl7.org/CodeSystem/ex-procedure-type
+ */
+export const ExampleProcedureTypeCodesCodeSystem = {
   resourceType: "CodeSystem",
   id: "ex-procedure-type",
   meta: {

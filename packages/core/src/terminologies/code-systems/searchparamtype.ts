@@ -1,4 +1,8 @@
-export const SearchParamType = {
+/**
+ * Data types allowed to be used for search parameters.
+ * http://hl7.org/fhir/search-param-type
+ */
+export const SearchParamTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "search-param-type",
   meta: { lastUpdated: "2022-05-28T12:47:40.239+10:00" },

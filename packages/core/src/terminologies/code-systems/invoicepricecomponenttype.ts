@@ -1,4 +1,8 @@
-export const InvoicePriceComponentType = {
+/**
+ * Codes indicating the kind of the price component.
+ * http://hl7.org/fhir/invoice-priceComponentType
+ */
+export const InvoicePriceComponentTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "invoice-priceComponentType",
   meta: {

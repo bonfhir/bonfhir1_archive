@@ -1,4 +1,8 @@
-export const DiagnosisRole = {
+/**
+ * This value set defines a set of codes that can be used to express the role of a diagnosis on the Encounter or EpisodeOfCare record.
+ * http://terminology.hl7.org/CodeSystem/diagnosis-role
+ */
+export const DiagnosisRoleCodeSystem = {
   resourceType: "CodeSystem",
   id: "diagnosis-role",
   meta: {

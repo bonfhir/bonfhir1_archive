@@ -1,4 +1,8 @@
-export const ImmunizationEventOrigin = {
+/**
+ * This code system supports describing the source of the data when the report of the immunization event is not based on information from the person, entity or organization who administered the vaccine.
+ * http://terminology.hl7.org/CodeSystem/immunization-origin
+ */
+export const ImmunizationEventOriginCodeSystem = {
   resourceType: "CodeSystem",
   id: "immunization-origin",
   meta: {

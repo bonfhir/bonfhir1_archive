@@ -1,4 +1,8 @@
-export const PublishedInType = {
+/**
+ * The type of publication such as book, database, or journal.
+ * http://terminology.hl7.org/CodeSystem/published-in-type
+ */
+export const PublishedInTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "published-in-type",
   meta: {

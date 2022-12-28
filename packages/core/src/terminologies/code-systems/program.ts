@@ -1,4 +1,8 @@
-export const Program = {
+/**
+ * This value set defines an example set of codes for health program names that could exist for various jurisdictions.
+ * http://terminology.hl7.org/CodeSystem/program
+ */
+export const ProgramCodeSystem = {
   resourceType: "CodeSystem",
   id: "program",
   meta: {

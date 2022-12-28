@@ -1,4 +1,8 @@
-export const IngredientManufacturerRole = {
+/**
+ * The way in which this manufacturer is associated with the ingredient. For example whether it is a possible one (others allowed), or an exclusive authorized one for this ingredient. Note that this is not the manufacturing process role
+ * http://hl7.org/fhir/ingredient-manufacturer-role
+ */
+export const IngredientManufacturerRoleCodeSystem = {
   resourceType: "CodeSystem",
   id: "ingredient-manufacturer-role",
   meta: {

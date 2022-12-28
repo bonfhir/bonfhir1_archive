@@ -1,4 +1,8 @@
-export const ReferenceHandlingPolicy = {
+/**
+ * A set of flags that defines how references are supported.
+ * http://hl7.org/fhir/reference-handling-policy
+ */
+export const ReferenceHandlingPolicyCodeSystem = {
   resourceType: "CodeSystem",
   id: "reference-handling-policy",
   meta: {

@@ -1,4 +1,8 @@
-export const GenderStatus = {
+/**
+ * This example value set defines a set of codes that can be used to indicate the current state of the animal's reproductive organs.
+ * http://hl7.org/fhir/animal-genderstatus
+ */
+export const GenderStatusCodeSystem = {
   resourceType: "CodeSystem",
   id: "animal-genderstatus",
   meta: {

@@ -1,4 +1,8 @@
-export const ContractSecurityClassification = {
+/**
+ * This CodeSystem contains FHIR-defined contract security classification types.
+ * http://hl7.org/fhir/contract-security-classification
+ */
+export const ContractSecurityClassificationCodeSystem = {
   resourceType: "CodeSystem",
   id: "contract-security-classification",
   meta: {

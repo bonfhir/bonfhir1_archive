@@ -1,4 +1,8 @@
-export const ContractAssetAvailability = {
+/**
+ * This CodeSystem contains FHIR-defined contract asset availability types.
+ * http://hl7.org/fhir/asset-availability
+ */
+export const ContractAssetAvailabilityCodeSystem = {
   resourceType: "CodeSystem",
   id: "asset-availability",
   meta: {

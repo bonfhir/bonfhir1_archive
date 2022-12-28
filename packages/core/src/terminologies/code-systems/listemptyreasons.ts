@@ -1,4 +1,8 @@
-export const ListEmptyReasons = {
+/**
+ * General reasons for a list to be empty. Reasons are either related to a summary list (i.e. problem or medication list) or to a workflow related list (i.e. consultation list).
+ * http://terminology.hl7.org/CodeSystem/list-empty-reason
+ */
+export const ListEmptyReasonsCodeSystem = {
   resourceType: "CodeSystem",
   id: "list-empty-reason",
   meta: {

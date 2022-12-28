@@ -1,4 +1,8 @@
-export const TypeDerivationRule = {
+/**
+ * How a type relates to its baseDefinition.
+ * http://hl7.org/fhir/type-derivation-rule
+ */
+export const TypeDerivationRuleCodeSystem = {
   resourceType: "CodeSystem",
   id: "type-derivation-rule",
   meta: {

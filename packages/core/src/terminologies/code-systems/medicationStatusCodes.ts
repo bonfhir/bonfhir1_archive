@@ -1,4 +1,8 @@
-export const MedicationStatusCodes = {
+/**
+ *
+ * http://hl7.org/fhir/CodeSystem/medication-status
+ */
+export const MedicationStatusCodesCodeSystem = {
   resourceType: "CodeSystem",
   id: "medication-status",
   meta: {

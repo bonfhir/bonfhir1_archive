@@ -1,4 +1,8 @@
-export const ICD10ProcedureCodes = {
+/**
+ * This value set includes sample ICD-10 Procedure codes.
+ * http://hl7.org/fhir/sid/ex-icd-10-procedures
+ */
+export const ICD10ProcedureCodesCodeSystem = {
   resourceType: "CodeSystem",
   id: "icd-10-procedures",
   meta: {

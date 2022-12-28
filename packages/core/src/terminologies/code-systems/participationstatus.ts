@@ -1,4 +1,8 @@
-export const ParticipationStatus = {
+/**
+ * The Participation status of an appointment.
+ * http://hl7.org/fhir/participationstatus
+ */
+export const ParticipationStatusCodeSystem = {
   resourceType: "CodeSystem",
   id: "participationstatus",
   meta: {

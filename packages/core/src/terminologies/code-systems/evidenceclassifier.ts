@@ -1,4 +1,8 @@
-export const EvidenceClassifier = {
+/**
+ * Commonly used classifiers for evidence sets.
+ * http://terminology.hl7.org/CodeSystem/evidence-classifier-code
+ */
+export const EvidenceClassifierCodeSystem = {
   resourceType: "CodeSystem",
   id: "evidence-classifier-code",
   meta: {

@@ -1,4 +1,8 @@
-export const ProcedureDeviceActionCodes = {
+/**
+ * Example value set for Procedure Device Action code (what happened to a device during a procedure.
+ * http://hl7.org/fhir/device-action
+ */
+export const ProcedureDeviceActionCodesCodeSystem = {
   resourceType: "CodeSystem",
   id: "device-action",
   meta: {

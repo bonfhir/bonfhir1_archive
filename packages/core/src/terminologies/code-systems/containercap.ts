@@ -1,4 +1,8 @@
-export const ContainerCap = {
+/**
+ * Color of the container cap.
+ * http://terminology.hl7.org/CodeSystem/container-cap
+ */
+export const ContainerCapCodeSystem = {
   resourceType: "CodeSystem",
   id: "container-cap",
   meta: {

@@ -1,4 +1,8 @@
-export const MedicationAdministrationStatusCodes = {
+/**
+ *
+ * http://terminology.hl7.org/CodeSystem/medication-admin-status
+ */
+export const MedicationAdministrationStatusCodesCodeSystem = {
   resourceType: "CodeSystem",
   id: "medication-admin-status",
   meta: {

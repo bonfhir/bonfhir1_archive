@@ -1,4 +1,8 @@
-export const AuditEventAction = {
+/**
+ * Indicator for type of action performed during the event that generated the event.
+ * http://hl7.org/fhir/audit-event-action
+ */
+export const AuditEventActionCodeSystem = {
   resourceType: "CodeSystem",
   id: "audit-event-action",
   meta: {

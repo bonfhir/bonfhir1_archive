@@ -1,4 +1,8 @@
-export const HumanNameAssemblyOrder = {
+/**
+ * A code that represents the preferred display order of the components of a human name.
+ * http://terminology.hl7.org/CodeSystem/name-assembly-order
+ */
+export const HumanNameAssemblyOrderCodeSystem = {
   resourceType: "CodeSystem",
   id: "name-assembly-order",
   meta: { lastUpdated: "2022-05-28T12:47:40.239+10:00" },

@@ -1,4 +1,8 @@
-export const ProvenanceEntityRole = {
+/**
+ * How an entity was used in an activity.
+ * http://hl7.org/fhir/provenance-entity-role
+ */
+export const ProvenanceEntityRoleCodeSystem = {
   resourceType: "CodeSystem",
   id: "provenance-entity-role",
   meta: {

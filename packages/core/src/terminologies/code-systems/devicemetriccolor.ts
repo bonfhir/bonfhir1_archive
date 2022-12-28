@@ -1,4 +1,8 @@
-export const DeviceMetricColor = {
+/**
+ * Describes the typical color of representation.
+ * http://hl7.org/fhir/metric-color
+ */
+export const DeviceMetricColorCodeSystem = {
   resourceType: "CodeSystem",
   id: "metric-color",
   meta: {

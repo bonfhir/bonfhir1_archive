@@ -1,4 +1,8 @@
-export const qualityType = {
+/**
+ * Type for quality report.
+ * http://hl7.org/fhir/quality-type
+ */
+export const qualityTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "quality-type",
   meta: {

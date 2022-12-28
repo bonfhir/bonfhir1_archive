@@ -1,4 +1,8 @@
-export const ContractExpirationType = {
+/**
+ * This CodeSystem contains FHIR-defined contract Expiration types.
+ * http://hl7.org/fhir/contract-expiration-type
+ */
+export const ContractExpirationTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "contract-expiration-type",
   meta: {

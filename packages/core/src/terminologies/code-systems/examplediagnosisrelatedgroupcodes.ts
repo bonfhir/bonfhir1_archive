@@ -1,4 +1,8 @@
-export const ExampleDiagnosisRelatedGroupCodes = {
+/**
+ * This value set includes sample Diagnosis Related Group codes.
+ * http://terminology.hl7.org/CodeSystem/ex-diagnosisrelatedgroup
+ */
+export const ExampleDiagnosisRelatedGroupCodesCodeSystem = {
   resourceType: "CodeSystem",
   id: "ex-diagnosisrelatedgroup",
   meta: {

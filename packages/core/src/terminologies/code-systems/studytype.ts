@@ -1,4 +1,8 @@
-export const StudyType = {
+/**
+ * The type of study the evidence was derived from.
+ * http://terminology.hl7.org/CodeSystem/study-type
+ */
+export const StudyTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "study-type",
   meta: {

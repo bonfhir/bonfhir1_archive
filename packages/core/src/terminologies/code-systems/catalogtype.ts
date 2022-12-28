@@ -1,4 +1,8 @@
-export const CatalogType = {
+/**
+ *
+ * http://hl7.org/fhir/catalogType
+ */
+export const CatalogTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "catalogType",
   meta: {

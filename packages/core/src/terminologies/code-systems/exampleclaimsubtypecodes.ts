@@ -1,4 +1,8 @@
-export const ExampleClaimSubTypeCodes = {
+/**
+ * This value set includes sample Claim SubType codes.
+ * http://terminology.hl7.org/CodeSystem/ex-claimsubtype
+ */
+export const ExampleClaimSubTypeCodesCodeSystem = {
   resourceType: "CodeSystem",
   id: "claim-subtype",
   meta: {

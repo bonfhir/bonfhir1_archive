@@ -1,4 +1,8 @@
-export const ConditionVerificationStatus = {
+/**
+ * The verification status to support or decline the clinical status of the condition or diagnosis.
+ * http://terminology.hl7.org/CodeSystem/condition-ver-status
+ */
+export const ConditionVerificationStatusCodeSystem = {
   resourceType: "CodeSystem",
   id: "condition-ver-status",
   meta: {

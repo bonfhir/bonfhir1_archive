@@ -1,4 +1,8 @@
-export const SpecialArrangements = {
+/**
+ * This codesystem defines a set of codes that can be used to indicate the kinds of special arrangements in place for a patient's visit.
+ * http://terminology.hl7.org/CodeSystem/encounter-special-arrangements
+ */
+export const SpecialArrangementsCodeSystem = {
   resourceType: "CodeSystem",
   id: "encounter-special-arrangements",
   meta: {

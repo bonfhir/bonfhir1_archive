@@ -1,4 +1,8 @@
-export const AdverseEventSeverity = {
+/**
+ * The severity of the adverse event itself, in direct relation to the subject.
+ * http://terminology.hl7.org/CodeSystem/adverse-event-severity
+ */
+export const AdverseEventSeverityCodeSystem = {
   resourceType: "CodeSystem",
   id: "adverse-event-severity",
   meta: {

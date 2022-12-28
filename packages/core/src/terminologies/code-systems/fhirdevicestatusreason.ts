@@ -1,4 +1,8 @@
-export const FHIRDeviceStatusReason = {
+/**
+ * The availability status reason of the device.
+ * http://terminology.hl7.org/CodeSystem/device-status-reason
+ */
+export const FHIRDeviceStatusReasonCodeSystem = {
   resourceType: "CodeSystem",
   id: "device-status-reason",
   meta: {

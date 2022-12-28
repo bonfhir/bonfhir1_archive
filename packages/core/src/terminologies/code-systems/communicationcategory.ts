@@ -1,4 +1,8 @@
-export const CommunicationCategory = {
+/**
+ * Codes for general categories of communications such as alerts, instructions, etc.
+ * http://terminology.hl7.org/CodeSystem/communication-category
+ */
+export const CommunicationCategoryCodeSystem = {
   resourceType: "CodeSystem",
   id: "communication-category",
   meta: {

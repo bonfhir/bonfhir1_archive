@@ -1,4 +1,8 @@
-export const ResponseType = {
+/**
+ * The kind of response to a message.
+ * http://hl7.org/fhir/response-code
+ */
+export const ResponseTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "response-code",
   meta: {

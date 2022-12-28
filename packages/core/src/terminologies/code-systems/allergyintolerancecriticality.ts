@@ -1,4 +1,8 @@
-export const AllergyIntoleranceCriticality = {
+/**
+ * Estimate of the potential clinical harm, or seriousness, of a reaction to an identified substance.
+ * http://hl7.org/fhir/allergy-intolerance-criticality
+ */
+export const AllergyIntoleranceCriticalityCodeSystem = {
   resourceType: "CodeSystem",
   id: "allergy-intolerance-criticality",
   meta: {

@@ -1,4 +1,8 @@
-export const QuestionnaireTextCategories = {
+/**
+ * Codes defining the purpose of a Questionnaire item of type 'text'.
+ * http://hl7.org/fhir/questionnaire-display-category
+ */
+export const QuestionnaireTextCategoriesCodeSystem = {
   resourceType: "CodeSystem",
   id: "questionnaire-display-category",
   meta: {

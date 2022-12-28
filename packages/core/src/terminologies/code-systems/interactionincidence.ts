@@ -1,4 +1,8 @@
-export const InteractionIncidence = {
+/**
+ * A categorisation for a frequency of occurence of an undesirable effect.
+ * http://hl7.org/fhir/interaction-incidence
+ */
+export const InteractionIncidenceCodeSystem = {
   resourceType: "CodeSystem",
   id: "interaction-incidence",
   meta: {

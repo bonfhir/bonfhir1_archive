@@ -1,4 +1,8 @@
-export const MedicationRequestCourseofTherapyCodes = {
+/**
+ *
+ * http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy
+ */
+export const MedicationRequestCourseofTherapyCodesCodeSystem = {
   resourceType: "CodeSystem",
   id: "medicationrequest-course-of-therapy",
   meta: {

@@ -1,4 +1,8 @@
-export const ClaimCareTeamRoleCodes = {
+/**
+ * This value set includes sample Claim Care Team Role codes.
+ * http://terminology.hl7.org/CodeSystem/claimcareteamrole
+ */
+export const ClaimCareTeamRoleCodesCodeSystem = {
   resourceType: "CodeSystem",
   id: "claim-careteamrole",
   meta: {

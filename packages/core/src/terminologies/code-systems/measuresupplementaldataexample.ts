@@ -1,4 +1,8 @@
-export const MeasureSupplementalDataExample = {
+/**
+ * Identifier supplemental data in a population for measuring purposes.
+ * http://terminology.hl7.org/CodeSystem/measure-supplemental-data-example
+ */
+export const MeasureSupplementalDataExampleCodeSystem = {
   resourceType: "CodeSystem",
   id: "measure-supplemental-data-example",
   meta: {

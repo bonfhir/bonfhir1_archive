@@ -1,4 +1,8 @@
-export const FlagCategory = {
+/**
+ * Example list of detail codes for flagged issues. (Not complete or necessarily appropriate.)
+ * http://terminology.hl7.org/CodeSystem/flag-category
+ */
+export const FlagCategoryCodeSystem = {
   resourceType: "CodeSystem",
   id: "flag-category",
   meta: {

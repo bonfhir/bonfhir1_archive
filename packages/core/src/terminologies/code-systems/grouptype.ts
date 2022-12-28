@@ -1,4 +1,8 @@
-export const GroupType = {
+/**
+ * Types of resources that are part of group.
+ * http://hl7.org/fhir/group-type
+ */
+export const GroupTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "group-type",
   meta: {

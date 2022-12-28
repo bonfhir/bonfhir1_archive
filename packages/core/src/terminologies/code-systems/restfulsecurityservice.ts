@@ -1,4 +1,8 @@
-export const RestfulSecurityService = {
+/**
+ * Types of security services used with FHIR.
+ * http://terminology.hl7.org/CodeSystem/restful-security-service
+ */
+export const RestfulSecurityServiceCodeSystem = {
   resourceType: "CodeSystem",
   id: "restful-security-service",
   meta: {

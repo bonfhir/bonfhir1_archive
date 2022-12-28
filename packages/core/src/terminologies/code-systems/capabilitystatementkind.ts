@@ -1,4 +1,8 @@
-export const CapabilityStatementKind = {
+/**
+ * How a capability statement is intended to be used.
+ * http://hl7.org/fhir/capability-statement-kind
+ */
+export const CapabilityStatementKindCodeSystem = {
   resourceType: "CodeSystem",
   id: "capability-statement-kind",
   meta: {

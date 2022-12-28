@@ -1,4 +1,8 @@
-export const MeasureReportType = {
+/**
+ * The type of the measure report.
+ * http://hl7.org/fhir/measure-report-type
+ */
+export const MeasureReportTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "measure-report-type",
   meta: {

@@ -1,4 +1,8 @@
-export const SubstanceSourceMaterialType = {
+/**
+ *
+ * http://hl7.org/fhir/substance-source-material-type
+ */
+export const SubstanceSourceMaterialTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "substance-source-material-type",
   meta: {

@@ -1,4 +1,8 @@
-export const CodeSearchSupport = {
+/**
+ * The degree to which the server supports the code search parameter on ValueSet, if it is supported.
+ * http://hl7.org/fhir/code-search-support
+ */
+export const CodeSearchSupportCodeSystem = {
   resourceType: "CodeSystem",
   id: "code-search-support",
   meta: {

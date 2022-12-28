@@ -1,4 +1,8 @@
-export const WarningType = {
+/**
+ * Classification of warning type.
+ * http://hl7.org/fhir/warning-type
+ */
+export const WarningTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "warning-type",
   meta: {

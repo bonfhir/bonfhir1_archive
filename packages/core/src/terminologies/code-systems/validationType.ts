@@ -1,4 +1,8 @@
-export const validationtype = {
+/**
+ * What the target is validated against
+ * http://hl7.org/fhir/verificationresult-validation-type
+ */
+export const validationtypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "verificationresult-validation-type",
   meta: {

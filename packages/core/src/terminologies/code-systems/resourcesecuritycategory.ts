@@ -1,4 +1,8 @@
-export const ResourceSecurityCategory = {
+/**
+ * Codes indicating how resources behave from a security perspective
+ * http://hl7.org/fhir/resource-security-category
+ */
+export const ResourceSecurityCategoryCodeSystem = {
   resourceType: "CodeSystem",
   id: "resource-security-category",
   meta: {

@@ -1,4 +1,8 @@
-export const HandlingConditionSet = {
+/**
+ * Set of handling instructions prior testing of the specimen.
+ * http://terminology.hl7.org/CodeSystem/handling-condition
+ */
+export const HandlingConditionSetCodeSystem = {
   resourceType: "CodeSystem",
   id: "handling-condition",
   meta: {

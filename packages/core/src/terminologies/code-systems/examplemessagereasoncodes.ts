@@ -1,4 +1,8 @@
-export const ExampleMessageReasonCodes = {
+/**
+ * Example Message Reasons. These are the set of codes that might be used an updating an encounter using admin-update.
+ * http://terminology.hl7.org/CodeSystem/message-reasons-encounter
+ */
+export const ExampleMessageReasonCodesCodeSystem = {
   resourceType: "CodeSystem",
   id: "message-reason-encounter",
   meta: {

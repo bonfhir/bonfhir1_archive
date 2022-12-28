@@ -1,4 +1,8 @@
-export const SupplyDeliveryStatus = {
+/**
+ * Status of the supply delivery.
+ * http://hl7.org/fhir/supplydelivery-status
+ */
+export const SupplyDeliveryStatusCodeSystem = {
   resourceType: "CodeSystem",
   id: "supplydelivery-status",
   meta: {

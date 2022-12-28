@@ -1,4 +1,8 @@
-export const TherapyRelationshipType = {
+/**
+ * Classification of relationship between a therapy and a contraindication or an indication.
+ * http://hl7.org/fhir/therapy-relationship-type
+ */
+export const TherapyRelationshipTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "therapy-relationship-type",
   meta: {

@@ -1,4 +1,8 @@
-export const GeneticObservationSecondaryFindings = {
+/**
+ * Codes to denote a guideline or policy statement.when a genetic test result is being shared as a secondary finding.
+ * http://hl7.org/fhir/secondary-finding
+ */
+export const GeneticObservationSecondaryFindingsCodeSystem = {
   resourceType: "CodeSystem",
   id: "secondary-finding",
   meta: {

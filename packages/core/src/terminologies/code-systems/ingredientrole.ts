@@ -1,4 +1,8 @@
-export const IngredientRole = {
+/**
+ * A classification of the ingredient identifying its purpose within the product, e.g. active, inactive.
+ * http://hl7.org/fhir/ingredient-role
+ */
+export const IngredientRoleCodeSystem = {
   resourceType: "CodeSystem",
   id: "ingredient-role",
   meta: {

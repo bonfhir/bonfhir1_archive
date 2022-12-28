@@ -1,4 +1,8 @@
-export const ReferenceVersionRules = {
+/**
+ * Whether a reference needs to be version specific or version independent, or whether either can be used.
+ * http://hl7.org/fhir/reference-version-rules
+ */
+export const ReferenceVersionRulesCodeSystem = {
   resourceType: "CodeSystem",
   id: "reference-version-rules",
   meta: { lastUpdated: "2022-05-28T12:47:40.239+10:00" },

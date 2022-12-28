@@ -1,4 +1,8 @@
-export const PackageMaterial = {
+/**
+ * A material used in the construction of packages and their components.
+ * http://hl7.org/fhir/package-material
+ */
+export const PackageMaterialCodeSystem = {
   resourceType: "CodeSystem",
   id: "package-material",
   meta: {

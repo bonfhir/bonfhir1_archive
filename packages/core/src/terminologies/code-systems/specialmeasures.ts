@@ -1,4 +1,8 @@
-export const SpecialMeasures = {
+/**
+ * Extra measures defined for a Medicinal Product, such as requirement to conduct post-authorisation studies.
+ * http://hl7.org/fhir/medicinal-product-special-measures
+ */
+export const SpecialMeasuresCodeSystem = {
   resourceType: "CodeSystem",
   id: "medicinal-product-special-measures",
   meta: {

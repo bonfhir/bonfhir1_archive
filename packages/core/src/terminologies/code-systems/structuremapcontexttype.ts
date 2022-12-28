@@ -1,4 +1,8 @@
-export const StructureMapContextType = {
+/**
+ * How to interpret the context.
+ * http://hl7.org/fhir/map-context-type
+ */
+export const StructureMapContextTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "map-context-type",
   meta: {

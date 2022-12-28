@@ -1,4 +1,8 @@
-export const ContractActionStatus = {
+/**
+ * This CodeSystem contains FHIR-defined contract action status types.
+ * http://hl7.org/fhir/contract-actionstatus
+ */
+export const ContractActionStatusCodeSystem = {
   resourceType: "CodeSystem",
   id: "contract-actionstatus",
   meta: {

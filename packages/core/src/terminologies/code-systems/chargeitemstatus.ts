@@ -1,4 +1,8 @@
-export const ChargeItemStatus = {
+/**
+ * Codes identifying the lifecycle stage of a ChargeItem.
+ * http://hl7.org/fhir/chargeitem-status
+ */
+export const ChargeItemStatusCodeSystem = {
   resourceType: "CodeSystem",
   id: "chargeitem-status",
   meta: {

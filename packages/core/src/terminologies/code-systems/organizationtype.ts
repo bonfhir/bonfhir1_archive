@@ -1,4 +1,8 @@
-export const OrganizationType = {
+/**
+ * This example value set defines a set of codes that can be used to indicate a type of organization.
+ * http://terminology.hl7.org/CodeSystem/organization-type
+ */
+export const OrganizationTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "organization-type",
   meta: {

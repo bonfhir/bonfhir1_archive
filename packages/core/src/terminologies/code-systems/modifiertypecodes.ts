@@ -1,4 +1,8 @@
-export const ModifierTypeCodes = {
+/**
+ * This value set includes sample Modifier type codes.
+ * http://terminology.hl7.org/CodeSystem/modifiers
+ */
+export const ModifierTypeCodesCodeSystem = {
   resourceType: "CodeSystem",
   id: "claim-modifiers",
   meta: {

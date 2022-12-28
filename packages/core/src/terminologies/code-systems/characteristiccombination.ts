@@ -1,4 +1,8 @@
-export const CharacteristicCombination = {
+/**
+ * Logical grouping of characteristics.
+ * http://hl7.org/fhir/characteristic-combination
+ */
+export const CharacteristicCombinationCodeSystem = {
   resourceType: "CodeSystem",
   id: "characteristic-combination",
   meta: {

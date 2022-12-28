@@ -1,4 +1,8 @@
-export const OrganizationAffiliationRole = {
+/**
+ * This example value set defines a set of codes that can be used to indicate the role of one Organization in relation to its affiliation with another.
+ * http://hl7.org/fhir/organization-role
+ */
+export const OrganizationAffiliationRoleCodeSystem = {
   resourceType: "CodeSystem",
   id: "organization-role",
   meta: {

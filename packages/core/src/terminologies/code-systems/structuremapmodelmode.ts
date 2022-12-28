@@ -1,4 +1,8 @@
-export const StructureMapModelMode = {
+/**
+ * How the referenced structure is used in this mapping.
+ * http://hl7.org/fhir/map-model-mode
+ */
+export const StructureMapModelModeCodeSystem = {
   resourceType: "CodeSystem",
   id: "map-model-mode",
   meta: {

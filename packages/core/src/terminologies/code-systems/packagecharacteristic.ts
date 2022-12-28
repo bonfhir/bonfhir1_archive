@@ -1,4 +1,8 @@
-export const PackageCharacteristic = {
+/**
+ * A characteristic of a package.
+ * http://hl7.org/fhir/package-characteristic
+ */
+export const PackageCharacteristicCodeSystem = {
   resourceType: "CodeSystem",
   id: "package-characteristic",
   meta: {

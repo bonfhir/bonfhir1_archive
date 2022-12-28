@@ -1,4 +1,8 @@
-export const OperationParameterUse = {
+/**
+ * Whether an operation parameter is an input or an output parameter.
+ * http://hl7.org/fhir/operation-parameter-use
+ */
+export const OperationParameterUseCodeSystem = {
   resourceType: "CodeSystem",
   id: "operation-parameter-use",
   meta: {

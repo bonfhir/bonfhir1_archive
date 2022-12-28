@@ -1,4 +1,8 @@
-export const QuestionnaireItemType = {
+/**
+ * Distinguishes groups from questions and display text and indicates data type for questions.
+ * http://hl7.org/fhir/item-type
+ */
+export const QuestionnaireItemTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "item-type",
   meta: {

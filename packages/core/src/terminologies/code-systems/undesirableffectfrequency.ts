@@ -1,4 +1,8 @@
-export const UndesirablEffectFrequency = {
+/**
+ * A categorisation for a frequency of occurence of an undesirable effect.
+ * http://hl7.org/fhir/undesirable-effect-frequency
+ */
+export const UndesirablEffectFrequencyCodeSystem = {
   resourceType: "CodeSystem",
   id: "undesirable-effect-frequency",
   meta: {

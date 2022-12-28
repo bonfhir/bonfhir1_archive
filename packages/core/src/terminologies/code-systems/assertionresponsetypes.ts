@@ -1,4 +1,8 @@
-export const AssertionResponseTypes = {
+/**
+ * The type of response code to use for assertion.
+ * http://hl7.org/fhir/assert-response-code-types
+ */
+export const AssertionResponseTypesCodeSystem = {
   resourceType: "CodeSystem",
   id: "assert-response-code-types",
   meta: {

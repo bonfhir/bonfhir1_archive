@@ -1,4 +1,8 @@
-export const GroupMeasure = {
+/**
+ * Possible group measure aggregates (E.g. Mean, Median).
+ * http://hl7.org/fhir/group-measure
+ */
+export const GroupMeasureCodeSystem = {
   resourceType: "CodeSystem",
   id: "group-measure",
   meta: {

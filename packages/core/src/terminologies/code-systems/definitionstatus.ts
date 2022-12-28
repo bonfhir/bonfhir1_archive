@@ -1,4 +1,8 @@
-export const DefinitionStatus = {
+/**
+ * Codes identifying the lifecycle stage of a definition.
+ * http://terminology.hl7.org/CodeSystem/definition-status
+ */
+export const DefinitionStatusCodeSystem = {
   resourceType: "CodeSystem",
   id: "definition-status",
   meta: { lastUpdated: "2022-05-28T12:47:40.239+10:00" },

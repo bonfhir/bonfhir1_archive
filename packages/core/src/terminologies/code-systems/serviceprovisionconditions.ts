@@ -1,4 +1,8 @@
-export const ServiceProvisionConditions = {
+/**
+ * The code(s) that detail the conditions under which the healthcare service is available/offered.
+ * http://terminology.hl7.org/CodeSystem/service-provision-conditions
+ */
+export const ServiceProvisionConditionsCodeSystem = {
   resourceType: "CodeSystem",
   id: "service-provision-conditions",
   meta: {

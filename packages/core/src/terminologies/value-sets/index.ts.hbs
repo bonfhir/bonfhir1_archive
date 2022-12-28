@@ -1,0 +1,16 @@
+{{#fhirPath definitions.valuesets "Bundle.entry.select(resource).ofType(ValueSet)"}}
+export * from "./{{camelcase name}}";
+{{/fhirPath}}
+
+{{#fhirPathFiles definitions.valuesets "Bundle.entry.select(resource).ofType(ValueSet)" "{{camelcase name}}.ts"}}
+/**
+ * {{ description }}
+ * {{ url }}
+ */
+export const {{safeNameAsVar name}}Code = {} as const;
+
+/**
+ * https://hl7.org/fhir/valueset-address-type.html
+ */
+export type {{safeNameAsVar name}}Code = typeof {{safeNameAsVar name}}Code[keyof typeof {{safeNameAsVar name}}Code];
+{{/fhirPathFiles}}

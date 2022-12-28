@@ -1,4 +1,8 @@
-export const ActionRelationshipType = {
+/**
+ * Defines the types of relationships between actions.
+ * http://hl7.org/fhir/action-relationship-type
+ */
+export const ActionRelationshipTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "action-relationship-type",
   meta: {

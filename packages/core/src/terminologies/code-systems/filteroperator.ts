@@ -1,4 +1,8 @@
-export const FilterOperator = {
+/**
+ * The kind of operation to perform as a part of a property based filter.
+ * http://hl7.org/fhir/filter-operator
+ */
+export const FilterOperatorCodeSystem = {
   resourceType: "CodeSystem",
   id: "filter-operator",
   meta: {

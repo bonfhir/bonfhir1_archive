@@ -1,4 +1,8 @@
-export const ResearchSubjectStatus = {
+/**
+ * Indicates the progression of a study subject through a study.
+ * http://hl7.org/fhir/research-subject-status
+ */
+export const ResearchSubjectStatusCodeSystem = {
   resourceType: "CodeSystem",
   id: "research-subject-status",
   meta: {

@@ -1,4 +1,8 @@
-export const SubstanceNameDomain = {
+/**
+ *
+ * http://hl7.org/fhir/substance-name-domain
+ */
+export const SubstanceNameDomainCodeSystem = {
   resourceType: "CodeSystem",
   id: "substance-name-domain",
   meta: {

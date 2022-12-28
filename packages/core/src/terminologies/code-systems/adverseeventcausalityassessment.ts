@@ -1,4 +1,8 @@
-export const AdverseEventCausalityAssessment = {
+/**
+ * Codes for the assessment of whether the entity caused the event.
+ * http://terminology.hl7.org/CodeSystem/adverse-event-causality-assess
+ */
+export const AdverseEventCausalityAssessmentCodeSystem = {
   resourceType: "CodeSystem",
   id: "adverse-event-causality-assess",
   meta: {

@@ -1,4 +1,8 @@
-export const AdverseEventCausalityMethod = {
+/**
+ * TODO.
+ * http://terminology.hl7.org/CodeSystem/adverse-event-causality-method
+ */
+export const AdverseEventCausalityMethodCodeSystem = {
   resourceType: "CodeSystem",
   id: "adverse-event-causality-method",
   meta: {

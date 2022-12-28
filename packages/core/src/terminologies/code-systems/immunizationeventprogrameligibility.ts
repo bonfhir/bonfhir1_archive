@@ -1,4 +1,8 @@
-export const ImmunizationEventProgramEligibility = {
+/**
+ * This code system supports describing the source of the patient's eligibility for a vaccination program.
+ * http://terminology.hl7.org/CodeSystem/immunization-program-eligibility
+ */
+export const ImmunizationEventProgramEligibilityCodeSystem = {
   resourceType: "CodeSystem",
   id: "immunization-program-eligibility",
   meta: {

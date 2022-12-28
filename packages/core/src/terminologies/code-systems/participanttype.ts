@@ -1,4 +1,8 @@
-export const ParticipantType = {
+/**
+ * This codesystem defines a set of codes that can be used to indicate how an individual participates in an encounter.
+ * http://terminology.hl7.org/CodeSystem/participant-type
+ */
+export const ParticipantTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "encounter-participant-type",
   meta: {

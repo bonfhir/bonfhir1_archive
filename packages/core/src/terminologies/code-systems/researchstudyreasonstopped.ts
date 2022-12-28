@@ -1,4 +1,8 @@
-export const ResearchStudyReasonStopped = {
+/**
+ * Codes for why the study ended prematurely.
+ * http://terminology.hl7.org/CodeSystem/research-study-reason-stopped
+ */
+export const ResearchStudyReasonStoppedCodeSystem = {
   resourceType: "CodeSystem",
   id: "research-study-reason-stopped",
   meta: {

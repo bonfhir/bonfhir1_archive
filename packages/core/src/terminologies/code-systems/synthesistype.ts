@@ -1,4 +1,8 @@
-export const SynthesisType = {
+/**
+ * Types of combining results from a body of evidence (eg. summary data meta-analysis).
+ * http://terminology.hl7.org/CodeSystem/synthesis-type
+ */
+export const SynthesisTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "synthesis-type",
   meta: {

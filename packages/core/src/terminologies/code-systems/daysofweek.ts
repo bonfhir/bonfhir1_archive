@@ -1,4 +1,8 @@
-export const DaysOfWeek = {
+/**
+ * The days of the week.
+ * http://hl7.org/fhir/days-of-week
+ */
+export const DaysOfWeekCodeSystem = {
   resourceType: "CodeSystem",
   id: "days-of-week",
   meta: {

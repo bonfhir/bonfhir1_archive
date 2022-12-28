@@ -1,4 +1,8 @@
-export const DocumentReferenceStatus = {
+/**
+ * The status of the document reference.
+ * http://hl7.org/fhir/document-reference-status
+ */
+export const DocumentReferenceStatusCodeSystem = {
   resourceType: "CodeSystem",
   id: "document-reference-status",
   meta: { lastUpdated: "2022-05-28T12:47:40.239+10:00" },

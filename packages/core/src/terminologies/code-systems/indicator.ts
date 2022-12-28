@@ -1,4 +1,8 @@
-export const Indicator = {
+/**
+ * This value set captures the set of indicator codes defined by the CDS Hooks specification.
+ * http://cds-hooks.hl7.org/CodeSystem/indicator
+ */
+export const IndicatorCodeSystem = {
   resourceType: "CodeSystem",
   id: "cdshooks-indicator",
   meta: {

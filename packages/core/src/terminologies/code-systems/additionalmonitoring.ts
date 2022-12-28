@@ -1,4 +1,8 @@
-export const AdditionalMonitoring = {
+/**
+ * Extra monitoring defined for a Medicinal Product.
+ * http://hl7.org/fhir/medicinal-product-additional-monitoring
+ */
+export const AdditionalMonitoringCodeSystem = {
   resourceType: "CodeSystem",
   id: "medicinal-product-additional-monitoring",
   meta: {

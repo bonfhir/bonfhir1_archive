@@ -1,4 +1,8 @@
-export const AuditEventID = {
+/**
+ * Event Types for Audit Events - defined by DICOM with some FHIR specific additions.
+ * http://terminology.hl7.org/CodeSystem/audit-event-type
+ */
+export const AuditEventIDCodeSystem = {
   resourceType: "CodeSystem",
   id: "audit-event-type",
   meta: {

@@ -1,4 +1,8 @@
-export const MeasureStratifierExample = {
+/**
+ * Identifier subgroups in a population for measuring purposes.
+ * http://terminology.hl7.org/CodeSystem/measure-stratifier-example
+ */
+export const MeasureStratifierExampleCodeSystem = {
   resourceType: "CodeSystem",
   id: "measure-stratifier-example",
   meta: {

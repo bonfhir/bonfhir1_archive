@@ -1,4 +1,8 @@
-export const PackagingType = {
+/**
+ * A type of packaging.
+ * http://hl7.org/fhir/packaging-type
+ */
+export const PackagingTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "packaging-type",
   meta: {

@@ -1,4 +1,8 @@
-export const PediatricUse = {
+/**
+ * Suitability for age groups, in particular children.
+ * http://hl7.org/fhir/medicinal-product-pediatric-use
+ */
+export const PediatricUseCodeSystem = {
   resourceType: "CodeSystem",
   id: "medicinal-product-pediatric-use",
   meta: {

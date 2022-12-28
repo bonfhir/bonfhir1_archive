@@ -1,4 +1,8 @@
-export const BiologicallyDerivedProductStorageScale = {
+/**
+ * BiologicallyDerived Product Storage Scale.
+ * http://hl7.org/fhir/product-storage-scale
+ */
+export const BiologicallyDerivedProductStorageScaleCodeSystem = {
   resourceType: "CodeSystem",
   id: "product-storage-scale",
   meta: {

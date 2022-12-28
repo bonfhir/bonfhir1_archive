@@ -1,4 +1,8 @@
-export const ConditionalDeleteStatus = {
+/**
+ * A code that indicates how the server supports conditional delete.
+ * http://hl7.org/fhir/conditional-delete-status
+ */
+export const ConditionalDeleteStatusCodeSystem = {
   resourceType: "CodeSystem",
   id: "conditional-delete-status",
   meta: {

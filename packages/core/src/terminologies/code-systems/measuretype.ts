@@ -1,4 +1,8 @@
-export const MeasureType = {
+/**
+ * The type of measure (includes codes from 2.16.840.1.113883.1.11.20368).
+ * http://terminology.hl7.org/CodeSystem/measure-type
+ */
+export const MeasureTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "measure-type",
   meta: {

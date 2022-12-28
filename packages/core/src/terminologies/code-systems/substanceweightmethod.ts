@@ -1,4 +1,8 @@
-export const SubstanceWeightMethod = {
+/**
+ *
+ * http://hl7.org/fhir/substance-weight-method
+ */
+export const SubstanceWeightMethodCodeSystem = {
   resourceType: "CodeSystem",
   id: "substance-weight-method",
   meta: {

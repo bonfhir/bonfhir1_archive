@@ -1,4 +1,8 @@
-export const ExplanationOfBenefitStatus = {
+/**
+ * A code specifying the state of the resource instance.
+ * http://hl7.org/fhir/explanationofbenefit-status
+ */
+export const ExplanationOfBenefitStatusCodeSystem = {
   resourceType: "CodeSystem",
   id: "explanationofbenefit-status",
   meta: {

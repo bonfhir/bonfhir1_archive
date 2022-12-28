@@ -1,4 +1,8 @@
-export const DataAbsentReason = {
+/**
+ * Used to specify why the normally expected content of the data element is missing.
+ * http://terminology.hl7.org/CodeSystem/data-absent-reason
+ */
+export const DataAbsentReasonCodeSystem = {
   resourceType: "CodeSystem",
   id: "data-absent-reason",
   meta: { lastUpdated: "2022-05-28T12:47:40.239+10:00" },

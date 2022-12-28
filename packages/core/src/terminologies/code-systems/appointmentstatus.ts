@@ -1,4 +1,8 @@
-export const AppointmentStatus = {
+/**
+ * The free/busy status of an appointment.
+ * http://hl7.org/fhir/appointmentstatus
+ */
+export const AppointmentStatusCodeSystem = {
   resourceType: "CodeSystem",
   id: "appointmentstatus",
   meta: {

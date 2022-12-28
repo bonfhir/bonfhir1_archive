@@ -1,4 +1,8 @@
-export const strandType = {
+/**
+ * Type for strand.
+ * http://hl7.org/fhir/strand-type
+ */
+export const strandTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "strand-type",
   meta: {

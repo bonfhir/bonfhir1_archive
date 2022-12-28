@@ -1,4 +1,8 @@
-export const ListMode = {
+/**
+ * The processing mode that applies to this list.
+ * http://hl7.org/fhir/list-mode
+ */
+export const ListModeCodeSystem = {
   resourceType: "CodeSystem",
   id: "list-mode",
   meta: {

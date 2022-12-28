@@ -1,4 +1,8 @@
-export const TestReportParticipantType = {
+/**
+ * The type of participant.
+ * http://hl7.org/fhir/report-participant-type
+ */
+export const TestReportParticipantTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "report-participant-type",
   meta: {

@@ -1,4 +1,8 @@
-export const DoseAndRateType = {
+/**
+ * The kind of dose or rate specified.
+ * http://terminology.hl7.org/CodeSystem/dose-rate-type
+ */
+export const DoseAndRateTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "dose-rate-type",
   meta: { lastUpdated: "2022-05-28T12:47:40.239+10:00" },

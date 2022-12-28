@@ -1,4 +1,8 @@
-export const EvidenceCertaintyType = {
+/**
+ * The aspect of quality, confidence, or certainty.
+ * http://terminology.hl7.org/CodeSystem/certainty-type
+ */
+export const EvidenceCertaintyTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "certainty-type",
   meta: {

@@ -1,4 +1,8 @@
-export const ProductConfidentiality = {
+/**
+ * Confidentiality rating, e.g. commercial sensitivity for a Medicinal Product.
+ * http://hl7.org/fhir/medicinal-product-confidentiality
+ */
+export const ProductConfidentialityCodeSystem = {
   resourceType: "CodeSystem",
   id: "medicinal-product-confidentiality",
   meta: {

@@ -1,4 +1,8 @@
-export const ContractDefinitionSubtype = {
+/**
+ * This CodeSystem contains FHIR-defined contract definition subtypes.
+ * http://hl7.org/fhir/contract-definition-subtype
+ */
+export const ContractDefinitionSubtypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "contract-definition-subtype",
   meta: {

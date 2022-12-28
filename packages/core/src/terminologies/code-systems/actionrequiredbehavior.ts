@@ -1,4 +1,8 @@
-export const ActionRequiredBehavior = {
+/**
+ * Defines expectations around whether an action or action group is required.
+ * http://hl7.org/fhir/action-required-behavior
+ */
+export const ActionRequiredBehaviorCodeSystem = {
   resourceType: "CodeSystem",
   id: "action-required-behavior",
   meta: {

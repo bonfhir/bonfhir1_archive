@@ -1,4 +1,8 @@
-export const ConceptMapGroupUnmappedMode = {
+/**
+ * Defines which action to take if there is no match in the group.
+ * http://hl7.org/fhir/conceptmap-unmapped-mode
+ */
+export const ConceptMapGroupUnmappedModeCodeSystem = {
   resourceType: "CodeSystem",
   id: "conceptmap-unmapped-mode",
   meta: {

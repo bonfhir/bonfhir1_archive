@@ -1,4 +1,8 @@
-export const HTTPVerb = {
+/**
+ * HTTP verbs (in the HTTP command line). See [HTTP rfc](https://tools.ietf.org/html/rfc7231) for details.
+ * http://hl7.org/fhir/http-verb
+ */
+export const HTTPVerbCodeSystem = {
   resourceType: "CodeSystem",
   id: "http-verb",
   meta: {

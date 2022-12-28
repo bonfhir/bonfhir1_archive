@@ -1,4 +1,8 @@
-export const EncounterLocationStatus = {
+/**
+ * The status of the location.
+ * http://hl7.org/fhir/encounter-location-status
+ */
+export const EncounterLocationStatusCodeSystem = {
   resourceType: "CodeSystem",
   id: "encounter-location-status",
   meta: {

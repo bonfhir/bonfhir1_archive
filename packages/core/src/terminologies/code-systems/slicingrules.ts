@@ -1,4 +1,8 @@
-export const SlicingRules = {
+/**
+ * How slices are interpreted when evaluating an instance.
+ * http://hl7.org/fhir/resource-slicing-rules
+ */
+export const SlicingRulesCodeSystem = {
   resourceType: "CodeSystem",
   id: "resource-slicing-rules",
   meta: { lastUpdated: "2022-05-28T12:47:40.239+10:00" },

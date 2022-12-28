@@ -1,4 +1,8 @@
-export const ContractPartyRole = {
+/**
+ * This CodeSystem contains FHIR-defined contract party role types.
+ * http://hl7.org/fhir/contract-party-role
+ */
+export const ContractPartyRoleCodeSystem = {
   resourceType: "CodeSystem",
   id: "contract-party-role",
   meta: {

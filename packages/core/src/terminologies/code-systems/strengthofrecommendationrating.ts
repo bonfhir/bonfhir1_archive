@@ -1,4 +1,8 @@
-export const StrengthOfRecommendationRating = {
+/**
+ * A rating system that describes the strength of the recommendation, such as the GRADE, DynaMed, or HGPS systems.
+ * http://terminology.hl7.org/CodeSystem/recommendation-strength
+ */
+export const StrengthOfRecommendationRatingCodeSystem = {
   resourceType: "CodeSystem",
   id: "recommendation-strength",
   meta: { lastUpdated: "2022-05-28T12:47:40.239+10:00" },

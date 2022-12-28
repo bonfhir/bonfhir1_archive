@@ -1,4 +1,8 @@
-export const ImmunizationEvaluationDoseStatusCodes = {
+/**
+ * This code system supports describing the validity of a dose relative to a particular recommended schedule.
+ * http://terminology.hl7.org/CodeSystem/immunization-evaluation-dose-status
+ */
+export const ImmunizationEvaluationDoseStatusCodesCodeSystem = {
   resourceType: "CodeSystem",
   id: "immunization-evaluation-dose-status",
   meta: {

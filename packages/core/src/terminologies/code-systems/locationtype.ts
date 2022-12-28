@@ -1,4 +1,8 @@
-export const LocationType = {
+/**
+ * This example code system defines a set of reasons for the cancellation of an appointment.
+ * http://terminology.hl7.org/CodeSystem/appointment-cancellation-reason
+ */
+export const LocationTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "appointment-cancellation-reason",
   meta: {

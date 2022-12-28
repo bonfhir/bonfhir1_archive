@@ -1,4 +1,8 @@
-export const TaskCode = {
+/**
+ * Codes indicating the type of action that is expected to be performed
+ * http://hl7.org/fhir/CodeSystem/task-code
+ */
+export const TaskCodeCodeSystem = {
   resourceType: "CodeSystem",
   id: "task-code",
   meta: {

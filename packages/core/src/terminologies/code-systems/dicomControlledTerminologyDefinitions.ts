@@ -1,4 +1,8 @@
-export const DICOMControlledTerminologyDefinitions = {
+/**
+ * DICOM Code Definitions (Coding Scheme Designator "DCM" Coding Scheme Version "01")
+ * http://dicom.nema.org/resources/ontology/DCM
+ */
+export const DICOMControlledTerminologyDefinitionsCodeSystem = {
   resourceType: "CodeSystem",
   id: "dicom-dcim",
   meta: { lastUpdated: "2022-05-28T12:47:40.239+10:00" },

@@ -1,4 +1,8 @@
-export const ChargeItemCode = {
+/**
+ * Example set of codes that can be used for billing purposes.
+ * http://terminology.hl7.org/CodeSystem/chargeitem-billingcodes
+ */
+export const ChargeItemCodeCodeSystem = {
   resourceType: "CodeSystem",
   id: "chargeitem-billingcodes",
   meta: {

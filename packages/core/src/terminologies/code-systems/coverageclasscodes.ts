@@ -1,4 +1,8 @@
-export const CoverageClassCodes = {
+/**
+ * This value set includes Coverage Class codes.
+ * http://terminology.hl7.org/CodeSystem/coverage-class
+ */
+export const CoverageClassCodesCodeSystem = {
   resourceType: "CodeSystem",
   id: "coverage-class",
   meta: {

@@ -1,4 +1,8 @@
-export const ConditionClinicalStatusCodes = {
+/**
+ * Preferred value set for Condition Clinical Status.
+ * http://terminology.hl7.org/CodeSystem/condition-clinical
+ */
+export const ConditionClinicalStatusCodesCodeSystem = {
   resourceType: "CodeSystem",
   id: "condition-clinical",
   meta: {

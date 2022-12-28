@@ -1,4 +1,8 @@
-export const FeedingDeviceCodes = {
+/**
+ * Materials used or needed to feed the patient. These values are provided as a suggestive example.
+ * http://hl7.org/fhir/feeding-device
+ */
+export const FeedingDeviceCodesCodeSystem = {
   resourceType: "CodeSystem",
   id: "feeding-device",
   meta: {

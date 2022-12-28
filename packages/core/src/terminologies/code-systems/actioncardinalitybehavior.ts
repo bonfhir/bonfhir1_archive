@@ -1,4 +1,8 @@
-export const ActionCardinalityBehavior = {
+/**
+ * Defines behavior for an action or a group for how many times that item may be repeated.
+ * http://hl7.org/fhir/action-cardinality-behavior
+ */
+export const ActionCardinalityBehaviorCodeSystem = {
   resourceType: "CodeSystem",
   id: "action-cardinality-behavior",
   meta: {

@@ -1,4 +1,8 @@
-export const ProductCrossReferenceType = {
+/**
+ * Relationship to another Medicinal Product.
+ * http://hl7.org/fhir/medicinal-product-cross-reference-type
+ */
+export const ProductCrossReferenceTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "medicinal-product-cross-reference-type",
   meta: {

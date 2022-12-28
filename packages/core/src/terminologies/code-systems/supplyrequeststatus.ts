@@ -1,4 +1,8 @@
-export const SupplyRequestStatus = {
+/**
+ * Status of the supply request.
+ * http://hl7.org/fhir/supplyrequest-status
+ */
+export const SupplyRequestStatusCodeSystem = {
   resourceType: "CodeSystem",
   id: "supplyrequest-status",
   meta: {

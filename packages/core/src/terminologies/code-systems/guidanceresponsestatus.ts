@@ -1,4 +1,8 @@
-export const GuidanceResponseStatus = {
+/**
+ * The status of a guidance response.
+ * http://hl7.org/fhir/guidance-response-status
+ */
+export const GuidanceResponseStatusCodeSystem = {
   resourceType: "CodeSystem",
   id: "guidance-response-status",
   meta: {

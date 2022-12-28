@@ -1,4 +1,8 @@
-export const FormCodes = {
+/**
+ * This value set includes a sample set of Forms codes.
+ * http://terminology.hl7.org/CodeSystem/forms-codes
+ */
+export const FormCodesCodeSystem = {
   resourceType: "CodeSystem",
   id: "forms",
   meta: {

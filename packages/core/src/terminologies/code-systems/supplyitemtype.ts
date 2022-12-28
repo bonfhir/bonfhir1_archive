@@ -1,4 +1,8 @@
-export const SupplyItemType = {
+/**
+ * This value sets refers to a specific supply item.
+ * http://terminology.hl7.org/CodeSystem/supply-item-type
+ */
+export const SupplyItemTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "supplydelivery-type",
   meta: {

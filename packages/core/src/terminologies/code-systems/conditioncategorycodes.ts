@@ -1,4 +1,8 @@
-export const ConditionCategoryCodes = {
+/**
+ * Example value set for Condition Categories.
+ * http://terminology.hl7.org/CodeSystem/condition-category
+ */
+export const ConditionCategoryCodesCodeSystem = {
   resourceType: "CodeSystem",
   id: "condition-category",
   meta: {

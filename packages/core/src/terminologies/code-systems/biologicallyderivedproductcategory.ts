@@ -1,4 +1,8 @@
-export const BiologicallyDerivedProductCategory = {
+/**
+ * Biologically Derived Product Category.
+ * http://hl7.org/fhir/product-category
+ */
+export const BiologicallyDerivedProductCategoryCodeSystem = {
   resourceType: "CodeSystem",
   id: "product-category",
   meta: {

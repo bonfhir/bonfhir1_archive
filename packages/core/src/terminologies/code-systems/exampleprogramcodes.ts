@@ -1,4 +1,8 @@
-export const ExampleProgramCodes = {
+/**
+ * This value set includes sample Program reason codes.
+ * http://terminology.hl7.org/CodeSystem/ex-programcode
+ */
+export const ExampleProgramCodesCodeSystem = {
   resourceType: "CodeSystem",
   id: "ex-program-code",
   meta: {

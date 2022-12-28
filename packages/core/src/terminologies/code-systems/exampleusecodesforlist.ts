@@ -1,4 +1,8 @@
-export const ExampleUseCodesForList = {
+/**
+ * Example use codes for the List resource - typical kinds of use.
+ * http://terminology.hl7.org/CodeSystem/list-example-use-codes
+ */
+export const ExampleUseCodesForListCodeSystem = {
   resourceType: "CodeSystem",
   id: "list-example-codes",
   meta: {

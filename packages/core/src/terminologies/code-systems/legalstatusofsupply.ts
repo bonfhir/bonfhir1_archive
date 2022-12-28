@@ -1,4 +1,8 @@
-export const LegalStatusOfSupply = {
+/**
+ * The prescription supply types appropriate to a medicinal product
+ * http://hl7.org/fhir/legal-status-of-supply
+ */
+export const LegalStatusOfSupplyCodeSystem = {
   resourceType: "CodeSystem",
   id: "legal-status-of-supply",
   meta: {

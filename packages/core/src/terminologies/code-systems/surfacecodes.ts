@@ -1,4 +1,8 @@
-export const SurfaceCodes = {
+/**
+ * This value set includes a smattering of FDI tooth surface codes.
+ * http://terminology.hl7.org/CodeSystem/FDI-surface
+ */
+export const SurfaceCodesCodeSystem = {
   resourceType: "CodeSystem",
   id: "surface",
   meta: {

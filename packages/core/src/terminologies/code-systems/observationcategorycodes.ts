@@ -1,4 +1,8 @@
-export const ObservationCategoryCodes = {
+/**
+ * Observation Category codes.
+ * http://terminology.hl7.org/CodeSystem/observation-category
+ */
+export const ObservationCategoryCodesCodeSystem = {
   resourceType: "CodeSystem",
   id: "observation-category",
   meta: {

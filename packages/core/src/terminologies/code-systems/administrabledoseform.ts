@@ -1,4 +1,8 @@
-export const AdministrableDoseForm = {
+/**
+ * Dose form for a medication, in the form suitable for administering to the patient, after mixing, where necessary.
+ * http://hl7.org/fhir/administrable-dose-form
+ */
+export const AdministrableDoseFormCodeSystem = {
   resourceType: "CodeSystem",
   id: "administrable-dose-form",
   meta: {

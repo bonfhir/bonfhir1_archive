@@ -1,4 +1,8 @@
-export const PolicyCodes = {
+/**
+ * FHIR Specific Example codes for Consent Policy
+ * http://terminology.hl7.org/CodeSystem/consentpolicycodes
+ */
+export const PolicyCodesCodeSystem = {
   resourceType: "CodeSystem",
   id: "consent-policy",
   meta: {

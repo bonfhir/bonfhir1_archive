@@ -1,4 +1,8 @@
-export const TestScriptProfileOriginTypes = {
+/**
+ * This value set defines a set of codes that are used to indicate the profile type of a test system when acting as the origin within a TestScript.
+ * http://terminology.hl7.org/CodeSystem/testscript-profile-origin-types
+ */
+export const TestScriptProfileOriginTypesCodeSystem = {
   resourceType: "CodeSystem",
   id: "testscript-profile-origin-types",
   meta: {

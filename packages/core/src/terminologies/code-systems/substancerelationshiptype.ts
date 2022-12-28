@@ -1,4 +1,8 @@
-export const SubstanceRelationshipType = {
+/**
+ * The relationship between two substance types.
+ * http://hl7.org/fhir/substance-relationship-type
+ */
+export const SubstanceRelationshipTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "substance-relationship-type",
   meta: {

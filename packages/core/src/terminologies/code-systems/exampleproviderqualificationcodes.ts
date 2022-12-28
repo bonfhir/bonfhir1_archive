@@ -1,4 +1,8 @@
-export const ExampleProviderQualificationCodes = {
+/**
+ * This value set includes sample Provider Qualification codes.
+ * http://terminology.hl7.org/CodeSystem/ex-providerqualification
+ */
+export const ExampleProviderQualificationCodesCodeSystem = {
   resourceType: "CodeSystem",
   id: "provider-qualification",
   meta: {

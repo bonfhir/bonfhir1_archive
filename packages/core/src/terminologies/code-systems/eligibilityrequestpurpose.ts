@@ -1,4 +1,8 @@
-export const EligibilityRequestPurpose = {
+/**
+ * A code specifying the types of information being requested.
+ * http://hl7.org/fhir/eligibilityrequest-purpose
+ */
+export const EligibilityRequestPurposeCodeSystem = {
   resourceType: "CodeSystem",
   id: "eligibilityrequest-purpose",
   meta: {

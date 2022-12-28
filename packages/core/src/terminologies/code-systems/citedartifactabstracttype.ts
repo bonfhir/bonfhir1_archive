@@ -1,4 +1,8 @@
-export const CitedArtifactAbstractType = {
+/**
+ * Used to express the reason and specific aspect for the variant abstract, such as language and specific language
+ * http://terminology.hl7.org/CodeSystem/cited-artifact-abstract-type
+ */
+export const CitedArtifactAbstractTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "cited-artifact-abstract-type",
   meta: {

@@ -1,4 +1,8 @@
-export const CompositionStatus = {
+/**
+ * The workflow/clinical status of the composition.
+ * http://hl7.org/fhir/composition-status
+ */
+export const CompositionStatusCodeSystem = {
   resourceType: "CodeSystem",
   id: "composition-status",
   meta: {

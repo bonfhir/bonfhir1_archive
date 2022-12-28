@@ -1,4 +1,8 @@
-export const SignatureTypeCodes = {
+/**
+ * The Digital Signature Purposes, an indication of the reason an entity signs a document. This is included in the signed information and can be used when determining accountability for various actions concerning the document. Examples include: author, transcriptionist/recorder, and witness.
+ * urn:iso-astm:E1762-95:2013
+ */
+export const SignatureTypeCodesCodeSystem = {
   resourceType: "CodeSystem",
   id: "signature-type",
   meta: {

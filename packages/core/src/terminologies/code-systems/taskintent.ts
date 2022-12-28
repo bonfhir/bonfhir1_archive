@@ -1,4 +1,8 @@
-export const TaskIntent = {
+/**
+ * Distinguishes whether the task is a proposal, plan or full order.
+ * http://hl7.org/fhir/task-intent
+ */
+export const TaskIntentCodeSystem = {
   resourceType: "CodeSystem",
   id: "task-intent",
   meta: {

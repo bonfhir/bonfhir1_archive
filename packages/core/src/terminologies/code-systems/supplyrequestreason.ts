@@ -1,4 +1,8 @@
-export const SupplyRequestReason = {
+/**
+ * The reason why the supply item was requested.
+ * http://terminology.hl7.org/CodeSystem/supplyrequest-reason
+ */
+export const SupplyRequestReasonCodeSystem = {
   resourceType: "CodeSystem",
   id: "supplyrequest-reason",
   meta: {

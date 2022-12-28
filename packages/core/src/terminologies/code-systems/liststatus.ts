@@ -1,4 +1,8 @@
-export const ListStatus = {
+/**
+ * The current state of the list.
+ * http://hl7.org/fhir/list-status
+ */
+export const ListStatusCodeSystem = {
   resourceType: "CodeSystem",
   id: "list-status",
   meta: {

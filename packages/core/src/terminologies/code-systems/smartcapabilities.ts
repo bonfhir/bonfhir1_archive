@@ -1,4 +1,8 @@
-export const SmartCapabilities = {
+/**
+ * Codes that define what the server is capable of.
+ * http://terminology.hl7.org/CodeSystem/smart-capabilities
+ */
+export const SmartCapabilitiesCodeSystem = {
   resourceType: "CodeSystem",
   id: "smart-capabilities",
   meta: { lastUpdated: "2022-05-28T12:47:40.239+10:00" },

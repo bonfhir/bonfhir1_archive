@@ -1,4 +1,8 @@
-export const AuditEventEntityType = {
+/**
+ * Code for the entity type involved in the audit event (derived from ATNA).
+ * http://terminology.hl7.org/CodeSystem/audit-entity-type
+ */
+export const AuditEventEntityTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "audit-entity-type",
   meta: {

@@ -1,4 +1,8 @@
-export const DeviceMetricCalibrationState = {
+/**
+ * Describes the state of a metric calibration.
+ * http://hl7.org/fhir/metric-calibration-state
+ */
+export const DeviceMetricCalibrationStateCodeSystem = {
   resourceType: "CodeSystem",
   id: "metric-calibration-state",
   meta: {

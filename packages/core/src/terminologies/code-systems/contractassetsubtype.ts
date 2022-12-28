@@ -1,4 +1,8 @@
-export const ContractAssetSubtype = {
+/**
+ * This CodeSystem contains FHIR-defined contract asset type sub-types.
+ * http://hl7.org/fhir/contract-assetsubtype
+ */
+export const ContractAssetSubtypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "contract-assetsubtype",
   meta: {

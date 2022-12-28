@@ -1,4 +1,8 @@
-export const ResearchStudyPrimaryPurposeType = {
+/**
+ * Codes for the main intent of the study.
+ * http://terminology.hl7.org/CodeSystem/research-study-prim-purp-type
+ */
+export const ResearchStudyPrimaryPurposeTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "research-study-prim-purp-type",
   meta: {

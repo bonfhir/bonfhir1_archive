@@ -1,4 +1,8 @@
-export const MeasureReportStatus = {
+/**
+ * The status of the measure report.
+ * http://hl7.org/fhir/measure-report-status
+ */
+export const MeasureReportStatusCodeSystem = {
   resourceType: "CodeSystem",
   id: "measure-report-status",
   meta: {

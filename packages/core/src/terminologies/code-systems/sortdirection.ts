@@ -1,4 +1,8 @@
-export const SortDirection = {
+/**
+ * The possible sort directions, ascending or descending.
+ * http://hl7.org/fhir/sort-direction
+ */
+export const SortDirectionCodeSystem = {
   resourceType: "CodeSystem",
   id: "sort-direction",
   meta: { lastUpdated: "2022-05-28T12:47:40.239+10:00" },

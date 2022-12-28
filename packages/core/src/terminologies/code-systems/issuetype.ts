@@ -1,4 +1,8 @@
-export const IssueType = {
+/**
+ * A code that describes the type of issue.
+ * http://hl7.org/fhir/issue-type
+ */
+export const IssueTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "issue-type",
   meta: {

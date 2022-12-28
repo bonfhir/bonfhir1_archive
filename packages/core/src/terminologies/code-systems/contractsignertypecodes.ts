@@ -1,4 +1,8 @@
-export const ContractSignerTypeCodes = {
+/**
+ * This value set includes sample Contract Signer Type codes.
+ * http://hl7.org/fhir/contract-signer-type
+ */
+export const ContractSignerTypeCodesCodeSystem = {
   resourceType: "CodeSystem",
   id: "contract-signer-type",
   meta: {

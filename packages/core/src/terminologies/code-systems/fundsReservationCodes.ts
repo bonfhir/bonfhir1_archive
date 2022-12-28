@@ -1,4 +1,8 @@
-export const FundsReservationCodes = {
+/**
+ * This value set includes sample funds reservation type codes.
+ * http://terminology.hl7.org/CodeSystem/fundsreserve
+ */
+export const FundsReservationCodesCodeSystem = {
   resourceType: "CodeSystem",
   id: "fundsreserve",
   meta: {

@@ -1,4 +1,8 @@
-export const TargetSpecies = {
+/**
+ * A species for which a medicinal product is intended.
+ * http://hl7.org/fhir/target-species
+ */
+export const TargetSpeciesCodeSystem = {
   resourceType: "CodeSystem",
   id: "target-species",
   meta: {

@@ -1,4 +1,8 @@
-export const IssueSeverity = {
+/**
+ * How the issue affects the success of the action.
+ * http://hl7.org/fhir/issue-severity
+ */
+export const IssueSeverityCodeSystem = {
   resourceType: "CodeSystem",
   id: "issue-severity",
   meta: {

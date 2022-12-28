@@ -1,4 +1,8 @@
-export const SubstanceStereochemistry = {
+/**
+ * The stereochemistry type of a substance.
+ * http://hl7.org/fhir/substance-stereochemistry
+ */
+export const SubstanceStereochemistryCodeSystem = {
   resourceType: "CodeSystem",
   id: "substance-stereochemistry",
   meta: {

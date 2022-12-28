@@ -1,4 +1,8 @@
-export const DefinitionResourceType = {
+/**
+ * A list of all the definition resource types defined in this version of the FHIR specification.
+ * http://hl7.org/fhir/definition-resource-types
+ */
+export const DefinitionResourceTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "definition-resource-types",
   meta: { lastUpdated: "2022-05-28T12:47:40.239+10:00" },

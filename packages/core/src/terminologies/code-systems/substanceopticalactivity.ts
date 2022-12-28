@@ -1,4 +1,8 @@
-export const SubstanceOpticalActivity = {
+/**
+ * The optical rotation type of a substance.
+ * http://hl7.org/fhir/substance-optical-activity
+ */
+export const SubstanceOpticalActivityCodeSystem = {
   resourceType: "CodeSystem",
   id: "substance-optical-activity",
   meta: {

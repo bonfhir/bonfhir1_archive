@@ -1,4 +1,8 @@
-export const ArtifactRelationshipType = {
+/**
+ * Artifact Relationship Type
+ * http://terminology.hl7.org/CodeSystem/artifact-relationship-type
+ */
+export const ArtifactRelationshipTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "artifact-relationship-type",
   meta: {

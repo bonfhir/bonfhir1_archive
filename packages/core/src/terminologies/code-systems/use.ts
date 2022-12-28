@@ -1,4 +1,8 @@
-export const Use = {
+/**
+ * The purpose of the Claim: predetermination, preauthorization, claim.
+ * http://hl7.org/fhir/claim-use
+ */
+export const UseCodeSystem = {
   resourceType: "CodeSystem",
   id: "claim-use",
   meta: {

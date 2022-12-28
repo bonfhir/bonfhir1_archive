@@ -1,4 +1,8 @@
-export const StatisticType = {
+/**
+ * The role that the assertion variable plays.
+ * http://terminology.hl7.org/CodeSystem/statistic-type
+ */
+export const StatisticTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "statistic-type",
   meta: {

@@ -1,4 +1,8 @@
-export const CodeSystemHierarchyMeaning = {
+/**
+ * The meaning of the hierarchy of concepts in a code system.
+ * http://hl7.org/fhir/codesystem-hierarchy-meaning
+ */
+export const CodeSystemHierarchyMeaningCodeSystem = {
   resourceType: "CodeSystem",
   id: "codesystem-hierarchy-meaning",
   meta: {

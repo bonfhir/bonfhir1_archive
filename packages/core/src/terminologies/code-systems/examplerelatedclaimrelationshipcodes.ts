@@ -1,4 +1,8 @@
-export const ExampleRelatedClaimRelationshipCodes = {
+/**
+ * This value set includes sample Related Claim Relationship codes.
+ * http://terminology.hl7.org/CodeSystem/ex-relatedclaimrelationship
+ */
+export const ExampleRelatedClaimRelationshipCodesCodeSystem = {
   resourceType: "CodeSystem",
   id: "related-claim-relationship",
   meta: {

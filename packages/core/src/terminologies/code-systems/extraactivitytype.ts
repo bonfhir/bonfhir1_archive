@@ -1,4 +1,8 @@
-export const ExtraActivityType = {
+/**
+ * This value set includes coded concepts not well covered in any of the included valuesets.
+ * http://hl7.org/fhir/extra-activity-type
+ */
+export const ExtraActivityTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "extra-activity-type",
   meta: { lastUpdated: "2022-05-28T12:47:40.239+10:00" },

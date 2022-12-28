@@ -1,4 +1,8 @@
-export const RelatedArtifactType = {
+/**
+ * The type of relationship to the related artifact.
+ * http://hl7.org/fhir/related-artifact-type
+ */
+export const RelatedArtifactTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "related-artifact-type",
   meta: { lastUpdated: "2022-05-28T12:47:40.239+10:00" },

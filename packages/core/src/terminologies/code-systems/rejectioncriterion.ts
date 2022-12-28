@@ -1,4 +1,8 @@
-export const RejectionCriterion = {
+/**
+ * Criterion for rejection of the specimen by laboratory.
+ * http://terminology.hl7.org/CodeSystem/rejection-criteria
+ */
+export const RejectionCriterionCodeSystem = {
   resourceType: "CodeSystem",
   id: "rejection-criteria",
   meta: {

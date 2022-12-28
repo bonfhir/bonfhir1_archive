@@ -1,4 +1,8 @@
-export const CatalogEntryRelationType = {
+/**
+ * The type of relations between entries.
+ * http://hl7.org/fhir/relation-type
+ */
+export const CatalogEntryRelationTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "relation-type",
   meta: {

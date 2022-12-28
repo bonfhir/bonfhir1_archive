@@ -1,4 +1,8 @@
-export const EventTiming = {
+/**
+ * Real world event relating to the schedule.
+ * http://hl7.org/fhir/event-timing
+ */
+export const EventTimingCodeSystem = {
   resourceType: "CodeSystem",
   id: "event-timing",
   meta: { lastUpdated: "2022-05-28T12:47:40.239+10:00" },

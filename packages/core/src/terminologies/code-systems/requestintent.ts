@@ -1,4 +1,8 @@
-export const RequestIntent = {
+/**
+ * Codes indicating the degree of authority/intentionality associated with a request.
+ * http://hl7.org/fhir/request-intent
+ */
+export const RequestIntentCodeSystem = {
   resourceType: "CodeSystem",
   id: "request-intent",
   meta: { lastUpdated: "2022-05-28T12:47:40.239+10:00" },

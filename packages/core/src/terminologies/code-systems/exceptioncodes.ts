@@ -1,4 +1,8 @@
-export const ExceptionCodes = {
+/**
+ * This value set includes sample Exception codes.
+ * http://terminology.hl7.org/CodeSystem/claim-exception
+ */
+export const ExceptionCodesCodeSystem = {
   resourceType: "CodeSystem",
   id: "claim-exception",
   meta: {

@@ -1,4 +1,8 @@
-export const RestfulCapabilityMode = {
+/**
+ * The mode of a RESTful capability statement.
+ * http://hl7.org/fhir/restful-capability-mode
+ */
+export const RestfulCapabilityModeCodeSystem = {
   resourceType: "CodeSystem",
   id: "restful-capability-mode",
   meta: {

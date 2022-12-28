@@ -1,4 +1,8 @@
-export const MedicationDispensePerformerFunctionCodes = {
+/**
+ *
+ * http://terminology.hl7.org/CodeSystem/medicationdispense-performer-function
+ */
+export const MedicationDispensePerformerFunctionCodesCodeSystem = {
   resourceType: "CodeSystem",
   id: "medicationdispense-performer-function",
   meta: {

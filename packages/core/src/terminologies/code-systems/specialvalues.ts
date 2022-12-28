@@ -1,4 +1,8 @@
-export const SpecialValues = {
+/**
+ * A set of generally useful codes defined so they can be included in value sets.
+ * http://terminology.hl7.org/CodeSystem/special-values
+ */
+export const SpecialValuesCodeSystem = {
   resourceType: "CodeSystem",
   id: "special-values",
   meta: { lastUpdated: "2022-05-28T12:47:40.239+10:00" },

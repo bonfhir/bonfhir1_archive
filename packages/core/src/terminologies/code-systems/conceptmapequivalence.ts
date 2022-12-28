@@ -1,4 +1,8 @@
-export const ConceptMapEquivalence = {
+/**
+ * The degree of equivalence between concepts.
+ * http://hl7.org/fhir/concept-map-equivalence
+ */
+export const ConceptMapEquivalenceCodeSystem = {
   resourceType: "CodeSystem",
   id: "concept-map-equivalence",
   meta: { lastUpdated: "2022-05-28T12:47:40.239+10:00" },

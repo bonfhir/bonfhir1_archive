@@ -1,4 +1,8 @@
-export const FinancialResourceStatusCodes = {
+/**
+ * This value set includes Status codes.
+ * http://hl7.org/fhir/fm-status
+ */
+export const FinancialResourceStatusCodesCodeSystem = {
   resourceType: "CodeSystem",
   id: "fm-status",
   meta: {

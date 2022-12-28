@@ -1,4 +1,8 @@
-export const ContractSecurityControl = {
+/**
+ * This CodeSystem contains FHIR-defined contract security control types.
+ * http://hl7.org/fhir/contract-security-control
+ */
+export const ContractSecurityControlCodeSystem = {
   resourceType: "CodeSystem",
   id: "contract-security-control",
   meta: {

@@ -1,4 +1,8 @@
-export const ArtifactContributionType = {
+/**
+ * Citation contribution.
+ * http://terminology.hl7.org/CodeSystem/artifact-contribution-type
+ */
+export const ArtifactContributionTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "artifact-contribution-type",
   meta: {

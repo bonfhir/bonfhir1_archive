@@ -1,4 +1,8 @@
-export const ConsentProvisionType = {
+/**
+ * How a rule statement is applied, such as adding additional consent or removing consent.
+ * http://hl7.org/fhir/consent-provision-type
+ */
+export const ConsentProvisionTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "consent-provision-type",
   meta: {

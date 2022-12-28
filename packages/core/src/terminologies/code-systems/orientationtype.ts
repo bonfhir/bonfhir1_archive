@@ -1,4 +1,8 @@
-export const orientationType = {
+/**
+ * Type for orientation.
+ * http://hl7.org/fhir/orientation-type
+ */
+export const orientationTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "orientation-type",
   meta: {

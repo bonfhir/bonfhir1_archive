@@ -1,4 +1,8 @@
-export const ObservationStatus = {
+/**
+ * Codes providing the status of an observation.
+ * http://hl7.org/fhir/observation-status
+ */
+export const ObservationStatusCodeSystem = {
   resourceType: "CodeSystem",
   id: "observation-status",
   meta: {

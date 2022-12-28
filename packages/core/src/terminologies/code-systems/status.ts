@@ -1,4 +1,8 @@
-export const status = {
+/**
+ * The validation status of the target
+ * http://hl7.org/fhir/verificationresult-status
+ */
+export const statusCodeSystem = {
   resourceType: "CodeSystem",
   id: "verificationresult-status",
   meta: {

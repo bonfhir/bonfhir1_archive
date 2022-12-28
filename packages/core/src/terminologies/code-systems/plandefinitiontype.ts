@@ -1,4 +1,8 @@
-export const PlanDefinitionType = {
+/**
+ * The type of PlanDefinition.
+ * http://terminology.hl7.org/CodeSystem/plan-definition-type
+ */
+export const PlanDefinitionTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "plan-definition-type",
   meta: {

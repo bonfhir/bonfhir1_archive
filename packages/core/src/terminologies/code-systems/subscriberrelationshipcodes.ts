@@ -1,4 +1,8 @@
-export const SubscriberRelationshipCodes = {
+/**
+ * This value set includes codes for the relationship between the Subscriber and the Beneficiary (insured/covered party/patient).
+ * http://terminology.hl7.org/CodeSystem/subscriber-relationship
+ */
+export const SubscriberRelationshipCodesCodeSystem = {
   resourceType: "CodeSystem",
   id: "subscriber-relationship",
   meta: {

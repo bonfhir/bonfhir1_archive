@@ -1,4 +1,8 @@
-export const ImmunizationRecommendationStatusCodes = {
+/**
+ * The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support describing the status of the patient relative to a recommended dose. This value set is provided as a suggestive example.
+ * http://terminology.hl7.org/CodeSystem/immunization-recommendation-status
+ */
+export const ImmunizationRecommendationStatusCodesCodeSystem = {
   resourceType: "CodeSystem",
   id: "immunization-recommendation-status",
   meta: {

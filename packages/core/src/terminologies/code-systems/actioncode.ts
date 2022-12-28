@@ -1,4 +1,8 @@
-export const ActionCode = {
+/**
+ * Provides examples of actions to be performed.
+ * http://terminology.hl7.org/CodeSystem/action-code
+ */
+export const ActionCodeCodeSystem = {
   resourceType: "CodeSystem",
   id: "action-code",
   meta: {

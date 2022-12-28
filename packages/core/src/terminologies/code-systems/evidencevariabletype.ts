@@ -1,4 +1,8 @@
-export const EvidenceVariableType = {
+/**
+ * The possible types of variables for exposures or outcomes (E.g. Dichotomous, Continuous, Descriptive).
+ * http://hl7.org/fhir/variable-type
+ */
+export const EvidenceVariableTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "variable-type",
   meta: {

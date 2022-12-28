@@ -1,4 +1,8 @@
-export const USCLSCodes = {
+/**
+ * This value set includes a smattering of USCLS codes.
+ * http://terminology.hl7.org/CodeSystem/ex-USCLS
+ */
+export const USCLSCodesCodeSystem = {
   resourceType: "CodeSystem",
   id: "service-uscls",
   meta: {

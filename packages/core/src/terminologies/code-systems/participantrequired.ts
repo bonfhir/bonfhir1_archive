@@ -1,4 +1,8 @@
-export const ParticipantRequired = {
+/**
+ * Is the Participant required to attend the appointment.
+ * http://hl7.org/fhir/participantrequired
+ */
+export const ParticipantRequiredCodeSystem = {
   resourceType: "CodeSystem",
   id: "participantrequired",
   meta: {

@@ -1,4 +1,8 @@
-export const ConsentScopeCodes = {
+/**
+ * This value set includes the current scopes for the Consent resources.
+ * http://terminology.hl7.org/CodeSystem/consentscope
+ */
+export const ConsentScopeCodesCodeSystem = {
   resourceType: "CodeSystem",
   id: "consent-scope",
   meta: {

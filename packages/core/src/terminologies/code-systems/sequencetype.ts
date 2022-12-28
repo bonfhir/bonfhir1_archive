@@ -1,4 +1,8 @@
-export const sequenceType = {
+/**
+ * Type if a sequence -- DNA, RNA, or amino acid sequence.
+ * http://hl7.org/fhir/sequence-type
+ */
+export const sequenceTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "sequence-type",
   meta: {

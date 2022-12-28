@@ -1,4 +1,8 @@
-export const ReportSectionType = {
+/**
+ * Evidence Report Section Type.
+ * http://terminology.hl7.org/CodeSystem/evidence-report-section
+ */
+export const ReportSectionTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "evidence-report-section",
   meta: {

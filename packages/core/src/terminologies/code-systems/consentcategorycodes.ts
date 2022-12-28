@@ -1,4 +1,8 @@
-export const ConsentCategoryCodes = {
+/**
+ * FHIR Specific Example codes for Consent Category
+ * http://terminology.hl7.org/CodeSystem/consentcategorycodes
+ */
+export const ConsentCategoryCodesCodeSystem = {
   resourceType: "CodeSystem",
   id: "consent-category",
   meta: {

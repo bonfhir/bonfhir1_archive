@@ -1,4 +1,8 @@
-export const ContractActorRoleCodes = {
+/**
+ * This value set includes sample Contract Actor Role codes.
+ * http://hl7.org/fhir/contract-actorrole
+ */
+export const ContractActorRoleCodesCodeSystem = {
   resourceType: "CodeSystem",
   id: "contract-actorrole",
   meta: {

@@ -1,4 +1,8 @@
-export const EpisodeOfCareStatus = {
+/**
+ * The status of the episode of care.
+ * http://hl7.org/fhir/episode-of-care-status
+ */
+export const EpisodeOfCareStatusCodeSystem = {
   resourceType: "CodeSystem",
   id: "episode-of-care-status",
   meta: {

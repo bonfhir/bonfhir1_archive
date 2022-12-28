@@ -1,4 +1,8 @@
-export const CareTeamStatus = {
+/**
+ * Indicates the status of the care team.
+ * http://hl7.org/fhir/care-team-status
+ */
+export const CareTeamStatusCodeSystem = {
   resourceType: "CodeSystem",
   id: "care-team-status",
   meta: {

@@ -1,4 +1,8 @@
-export const ExampleRevenueCenterCodes = {
+/**
+ * This value set includes sample Revenue Center codes.
+ * http://terminology.hl7.org/CodeSystem/ex-revenue-center
+ */
+export const ExampleRevenueCenterCodesCodeSystem = {
   resourceType: "CodeSystem",
   id: "ex-revenue-center",
   meta: {

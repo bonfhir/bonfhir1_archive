@@ -1,4 +1,8 @@
-export const ResearchStudyObjectiveType = {
+/**
+ * Codes for the kind of study objective.
+ * http://terminology.hl7.org/CodeSystem/research-study-objective-type
+ */
+export const ResearchStudyObjectiveTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "research-study-objective-type",
   meta: {

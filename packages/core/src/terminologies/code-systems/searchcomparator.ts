@@ -1,4 +1,8 @@
-export const SearchComparator = {
+/**
+ * What Search Comparator Codes are supported in search.
+ * http://hl7.org/fhir/search-comparator
+ */
+export const SearchComparatorCodeSystem = {
   resourceType: "CodeSystem",
   id: "search-comparator",
   meta: {

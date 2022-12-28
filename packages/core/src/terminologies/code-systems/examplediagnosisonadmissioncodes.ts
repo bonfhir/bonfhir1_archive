@@ -1,4 +1,8 @@
-export const ExampleDiagnosisOnAdmissionCodes = {
+/**
+ * This value set includes example Diagnosis on admission codes.
+ * http://terminology.hl7.org/CodeSystem/ex-diagnosis-on-admission
+ */
+export const ExampleDiagnosisOnAdmissionCodesCodeSystem = {
   resourceType: "CodeSystem",
   id: "ex-diagnosis-on-admission",
   meta: {

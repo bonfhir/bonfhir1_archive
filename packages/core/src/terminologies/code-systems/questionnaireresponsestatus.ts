@@ -1,4 +1,8 @@
-export const QuestionnaireResponseStatus = {
+/**
+ * Lifecycle status of the questionnaire response.
+ * http://hl7.org/fhir/questionnaire-answers-status
+ */
+export const QuestionnaireResponseStatusCodeSystem = {
   resourceType: "CodeSystem",
   id: "questionnaire-answers-status",
   meta: {

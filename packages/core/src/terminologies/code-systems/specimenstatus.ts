@@ -1,4 +1,8 @@
-export const SpecimenStatus = {
+/**
+ * Codes providing the status/availability of a specimen.
+ * http://hl7.org/fhir/specimen-status
+ */
+export const SpecimenStatusCodeSystem = {
   resourceType: "CodeSystem",
   id: "specimen-status",
   meta: {

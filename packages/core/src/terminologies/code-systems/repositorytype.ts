@@ -1,4 +1,8 @@
-export const repositoryType = {
+/**
+ * Type for access of external URI.
+ * http://hl7.org/fhir/repository-type
+ */
+export const repositoryTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "repository-type",
   meta: {

@@ -1,4 +1,8 @@
-export const StatisticsCode = {
+/**
+ *
+ * http://hl7.org/fhir/observation-statistics
+ */
+export const StatisticsCodeCodeSystem = {
   resourceType: "CodeSystem",
   id: "observation-statistics",
   meta: {

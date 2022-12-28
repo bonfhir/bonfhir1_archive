@@ -1,4 +1,8 @@
-export const ACMECholCodesBlood = {
+/**
+ * This is an example code system that includes all the ACME codes for serum/plasma cholesterol from v2.36.
+ * http://hl7.org/fhir/CodeSystem/example
+ */
+export const ACMECholCodesBloodCodeSystem = {
   resourceType: "CodeSystem",
   id: "example",
   meta: {

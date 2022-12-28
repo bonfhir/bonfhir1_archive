@@ -1,4 +1,8 @@
-export const InteractionType = {
+/**
+ * A categorisation for an interaction between two substances.
+ * http://hl7.org/fhir/interaction-type
+ */
+export const InteractionTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "interaction-type",
   meta: {

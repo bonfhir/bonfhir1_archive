@@ -1,4 +1,8 @@
-export const ReferralMethod = {
+/**
+ * The methods of referral can be used when referring to a specific HealthCareService resource.
+ * http://terminology.hl7.org/CodeSystem/service-referral-method
+ */
+export const ReferralMethodCodeSystem = {
   resourceType: "CodeSystem",
   id: "service-referral-method",
   meta: {

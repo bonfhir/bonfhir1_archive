@@ -1,4 +1,8 @@
-export const GraphCompartmentUse = {
+/**
+ * Defines how a compartment rule is used.
+ * http://hl7.org/fhir/graph-compartment-use
+ */
+export const GraphCompartmentUseCodeSystem = {
   resourceType: "CodeSystem",
   id: "graph-compartment-use",
   meta: {

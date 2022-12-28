@@ -1,4 +1,8 @@
-export const CholCodeLegacyStatus = {
+/**
+ *
+ * http://hl7.org/fhir/CodeSystem/example-supplement
+ */
+export const CholCodeLegacyStatusCodeSystem = {
   resourceType: "CodeSystem",
   id: "example-supplement",
   meta: { lastUpdated: "2022-05-28T12:47:40.239+10:00" },

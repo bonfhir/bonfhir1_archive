@@ -1,4 +1,8 @@
-export const DetectedIssueSeverity = {
+/**
+ * Indicates the potential degree of impact of the identified issue on the patient.
+ * http://hl7.org/fhir/detectedissue-severity
+ */
+export const DetectedIssueSeverityCodeSystem = {
   resourceType: "CodeSystem",
   id: "detectedissue-severity",
   meta: {

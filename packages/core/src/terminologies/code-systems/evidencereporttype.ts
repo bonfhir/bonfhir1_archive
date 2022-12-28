@@ -1,4 +1,8 @@
-export const EvidenceReportType = {
+/**
+ * The kind of report, such as grouping of classifiers, search results, or human-compiled expression.
+ * http://terminology.hl7.org/CodeSystem/evidence-report-type
+ */
+export const EvidenceReportTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "evidence-report-type",
   meta: {

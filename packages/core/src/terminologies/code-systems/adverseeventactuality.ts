@@ -1,4 +1,8 @@
-export const AdverseEventActuality = {
+/**
+ * Overall nature of the adverse event, e.g. real or potential.
+ * http://hl7.org/fhir/adverse-event-actuality
+ */
+export const AdverseEventActualityCodeSystem = {
   resourceType: "CodeSystem",
   id: "adverse-event-actuality",
   meta: {

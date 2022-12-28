@@ -1,4 +1,8 @@
-export const InsurancePlanType = {
+/**
+ * This example value set defines a set of codes that can be used to indicate a type of product plan.
+ * http://hl7.org/fhir/insuranceplan-type
+ */
+export const InsurancePlanTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "insuranceplan-type",
   meta: {

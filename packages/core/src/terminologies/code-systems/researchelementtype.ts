@@ -1,4 +1,8 @@
-export const ResearchElementType = {
+/**
+ * The possible types of research elements (E.g. Population, Exposure, Outcome).
+ * http://hl7.org/fhir/research-element-type
+ */
+export const ResearchElementTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "research-element-type",
   meta: {

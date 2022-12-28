@@ -1,4 +1,8 @@
-export const BundleType = {
+/**
+ * Indicates the purpose of a bundle - how it is intended to be used.
+ * http://hl7.org/fhir/bundle-type
+ */
+export const BundleTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "bundle-type",
   meta: {

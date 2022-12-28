@@ -1,4 +1,8 @@
-export const TestScriptRequestMethodCode = {
+/**
+ * The allowable request method or HTTP operation codes.
+ * http://hl7.org/fhir/http-operations
+ */
+export const TestScriptRequestMethodCodeCodeSystem = {
   resourceType: "CodeSystem",
   id: "http-operations",
   meta: {

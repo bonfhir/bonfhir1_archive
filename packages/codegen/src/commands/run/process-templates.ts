@@ -31,7 +31,7 @@ function CreateTemplateProcessTask(templatePath: string): ListrTask<Context> {
         helpers: {
           ...handlebarsHelpers(),
           fhirPath: (
-            fnCtx: Context,
+            fnCtx: unknown,
             path: string,
             options: hb.HelperOptions
           ) => {
@@ -39,7 +39,7 @@ function CreateTemplateProcessTask(templatePath: string): ListrTask<Context> {
             return evaluated.map((x) => options.fn(x)).join("");
           },
           fhirPathFiles: (
-            fnCtx: Context,
+            fnCtx: unknown,
             path: string,
             filenameTemplate: string,
             options: hb.HelperOptions
@@ -57,6 +57,9 @@ function CreateTemplateProcessTask(templatePath: string): ListrTask<Context> {
             }
 
             return "";
+          },
+          safeNameAsVar: (value: string) => {
+            return value?.replace(/[^\w]/g, "");
           },
         },
       });

@@ -1,4 +1,8 @@
-export const ImmunizationEventSubpotentReason = {
+/**
+ * This code system supports describing the reason why a dose is considered to be subpotent.
+ * http://terminology.hl7.org/CodeSystem/immunization-subpotent-reason
+ */
+export const ImmunizationEventSubpotentReasonCodeSystem = {
   resourceType: "CodeSystem",
   id: "immunization-subpotent-reason",
   meta: {

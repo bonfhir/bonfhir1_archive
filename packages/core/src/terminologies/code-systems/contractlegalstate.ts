@@ -1,4 +1,8 @@
-export const ContractLegalState = {
+/**
+ * This CodeSystem contains FHIR-defined contract status types. Each definition includes usage notes explaining the precedence order in contract lifecycle - i.e., while only some stages are required, the order in which they may occur is deterministic; and a map to comparable FHIR and v.3 status codes. It follows guidance about use of status codes in FHIR at http://build.fhir.org/sc.html.
+ * http://hl7.org/fhir/contract-legalstate
+ */
+export const ContractLegalStateCodeSystem = {
   resourceType: "CodeSystem",
   id: "contract-legalstate",
   meta: {

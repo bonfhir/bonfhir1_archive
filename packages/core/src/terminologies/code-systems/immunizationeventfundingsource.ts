@@ -1,4 +1,8 @@
-export const ImmunizationEventFundingSource = {
+/**
+ * This code system supports describing the source of the vaccine actually administered. This may be different than the patient eligbility (e.g. the patient may be eligibile for a publically purchased vaccine but due to inventory issues, vaccine purchased with private funds was actually administered).
+ * http://terminology.hl7.org/CodeSystem/immunization-funding-source
+ */
+export const ImmunizationEventFundingSourceCodeSystem = {
   resourceType: "CodeSystem",
   id: "immunization-funding-source",
   meta: {

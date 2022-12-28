@@ -1,4 +1,8 @@
-export const AuditEventSourceType = {
+/**
+ * The type of process where the audit event originated from.
+ * http://terminology.hl7.org/CodeSystem/security-source-type
+ */
+export const AuditEventSourceTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "audit-source-type",
   meta: {

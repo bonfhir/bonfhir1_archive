@@ -1,4 +1,8 @@
-export const MedicationAdministrationPerformerFunctionCodes = {
+/**
+ *
+ * http://terminology.hl7.org/CodeSystem/med-admin-perform-function
+ */
+export const MedicationAdministrationPerformerFunctionCodesCodeSystem = {
   resourceType: "CodeSystem",
   id: "med-admin-perform-function",
   meta: {

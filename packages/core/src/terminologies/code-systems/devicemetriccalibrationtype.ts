@@ -1,4 +1,8 @@
-export const DeviceMetricCalibrationType = {
+/**
+ * Describes the type of a metric calibration.
+ * http://hl7.org/fhir/metric-calibration-type
+ */
+export const DeviceMetricCalibrationTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "metric-calibration-type",
   meta: {

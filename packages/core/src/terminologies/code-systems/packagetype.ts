@@ -1,4 +1,8 @@
-export const PackageType = {
+/**
+ * A high level categorisation of a package.
+ * http://hl7.org/fhir/package-type
+ */
+export const PackageTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "package-type",
   meta: {

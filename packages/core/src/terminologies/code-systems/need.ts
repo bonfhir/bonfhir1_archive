@@ -1,4 +1,8 @@
-export const need = {
+/**
+ * The frequency with which the target must be validated
+ * http://hl7.org/fhir/verificationresult-need
+ */
+export const needCodeSystem = {
   resourceType: "CodeSystem",
   id: "verificationresult-need",
   meta: {

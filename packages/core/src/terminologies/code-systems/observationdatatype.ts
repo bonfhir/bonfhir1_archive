@@ -1,4 +1,8 @@
-export const ObservationDataType = {
+/**
+ * Permitted data type for observation value.
+ * http://hl7.org/fhir/permitted-data-type
+ */
+export const ObservationDataTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "permitted-data-type",
   meta: {

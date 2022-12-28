@@ -1,4 +1,8 @@
-export const ResourceValidationMode = {
+/**
+ *
+ * http://hl7.org/fhir/resource-validation-mode
+ */
+export const ResourceValidationModeCodeSystem = {
   resourceType: "CodeSystem",
   id: "resource-validation-mode",
   meta: {

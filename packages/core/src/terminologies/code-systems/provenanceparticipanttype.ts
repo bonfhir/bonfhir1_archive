@@ -1,4 +1,8 @@
-export const ProvenanceParticipantType = {
+/**
+ * The type of participation that a provenance agent (participant) played
+ * http://terminology.hl7.org/CodeSystem/provenance-participant-type
+ */
+export const ProvenanceParticipantTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "provenance-agent-type",
   meta: {

@@ -1,4 +1,8 @@
-export const DeviceMetricOperationalStatus = {
+/**
+ * Describes the operational status of the DeviceMetric.
+ * http://hl7.org/fhir/metric-operational-status
+ */
+export const DeviceMetricOperationalStatusCodeSystem = {
   resourceType: "CodeSystem",
   id: "metric-operational-status",
   meta: {

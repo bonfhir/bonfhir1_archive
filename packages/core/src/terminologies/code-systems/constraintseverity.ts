@@ -1,4 +1,8 @@
-export const ConstraintSeverity = {
+/**
+ * SHALL applications comply with this constraint?
+ * http://hl7.org/fhir/constraint-severity
+ */
+export const ConstraintSeverityCodeSystem = {
   resourceType: "CodeSystem",
   id: "constraint-severity",
   meta: { lastUpdated: "2022-05-28T12:47:40.239+10:00" },

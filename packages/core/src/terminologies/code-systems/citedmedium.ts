@@ -1,4 +1,8 @@
-export const CitedMedium = {
+/**
+ * NLM codes Internet or Print.
+ * http://terminology.hl7.org/CodeSystem/cited-medium
+ */
+export const CitedMediumCodeSystem = {
   resourceType: "CodeSystem",
   id: "cited-medium",
   meta: {

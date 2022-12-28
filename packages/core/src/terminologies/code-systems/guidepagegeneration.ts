@@ -1,4 +1,8 @@
-export const GuidePageGeneration = {
+/**
+ * A code that indicates how the page is generated.
+ * http://hl7.org/fhir/guide-page-generation
+ */
+export const GuidePageGenerationCodeSystem = {
   resourceType: "CodeSystem",
   id: "guide-page-generation",
   meta: {

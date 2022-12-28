@@ -1,4 +1,8 @@
-export const BenefitTermCodes = {
+/**
+ * This value set includes a smattering of Benefit Term codes.
+ * http://terminology.hl7.org/CodeSystem/benefit-term
+ */
+export const BenefitTermCodesCodeSystem = {
   resourceType: "CodeSystem",
   id: "benefit-term",
   meta: {

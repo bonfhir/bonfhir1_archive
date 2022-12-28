@@ -1,4 +1,8 @@
-export const verificationresultcommunicationmethod = {
+/**
+ * This code system defines the methods by which entities participating in a validation process share information (e.g. submission/retrieval of attested information, or exchange of validated information).
+ * http://hl7.org/fhir/verificationresult-communication-method
+ */
+export const verificationresultcommunicationmethodCodeSystem = {
   resourceType: "CodeSystem",
   id: "verificationresult-communication-method",
   meta: {

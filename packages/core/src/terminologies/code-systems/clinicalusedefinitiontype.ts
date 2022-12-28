@@ -1,4 +1,8 @@
-export const ClinicalUseDefinitionType = {
+/**
+ * Overall defining type of this clinical use definition.
+ * http://hl7.org/fhir/clinical-use-definition-type
+ */
+export const ClinicalUseDefinitionTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "clinical-use-definition-type",
   meta: {

@@ -1,4 +1,8 @@
-export const GenderIdentity = {
+/**
+ * This example code System defines a set of codes that can be used to indicate a patient's gender identity.
+ * http://hl7.org/fhir/gender-identity
+ */
+export const GenderIdentityCodeSystem = {
   resourceType: "CodeSystem",
   id: "gender-identity",
   meta: {

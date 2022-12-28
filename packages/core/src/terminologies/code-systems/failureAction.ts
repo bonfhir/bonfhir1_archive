@@ -1,4 +1,8 @@
-export const failureaction = {
+/**
+ * The result if validation fails
+ * http://hl7.org/fhir/verificationresult-failure-action
+ */
+export const failureactionCodeSystem = {
   resourceType: "CodeSystem",
   id: "verificationresult-failure-action",
   meta: {

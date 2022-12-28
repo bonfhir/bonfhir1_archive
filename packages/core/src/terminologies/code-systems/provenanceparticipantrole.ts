@@ -1,4 +1,8 @@
-export const ProvenanceParticipantRole = {
+/**
+ * The role that a provenance participant played
+ * http://hl7.org/fhir/provenance-participant-role
+ */
+export const ProvenanceParticipantRoleCodeSystem = {
   resourceType: "CodeSystem",
   id: "provenance-participant-role",
   meta: {

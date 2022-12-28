@@ -1,4 +1,8 @@
-export const ImagingStudyStatus = {
+/**
+ * The status of the ImagingStudy.
+ * http://hl7.org/fhir/imagingstudy-status
+ */
+export const ImagingStudyStatusCodeSystem = {
   resourceType: "CodeSystem",
   id: "imagingstudy-status",
   meta: {

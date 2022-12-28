@@ -1,4 +1,8 @@
-export const AuditEventAgentNetworkType = {
+/**
+ * The type of network access point of this agent in the audit event.
+ * http://hl7.org/fhir/network-type
+ */
+export const AuditEventAgentNetworkTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "network-type",
   meta: {

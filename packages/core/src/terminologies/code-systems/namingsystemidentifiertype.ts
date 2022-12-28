@@ -1,4 +1,8 @@
-export const NamingSystemIdentifierType = {
+/**
+ * Identifies the style of unique identifier used to identify a namespace.
+ * http://hl7.org/fhir/namingsystem-identifier-type
+ */
+export const NamingSystemIdentifierTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "namingsystem-identifier-type",
   meta: {

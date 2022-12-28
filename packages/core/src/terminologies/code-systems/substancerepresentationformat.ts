@@ -1,4 +1,8 @@
-export const SubstanceRepresentationFormat = {
+/**
+ *
+ * http://hl7.org/fhir/substance-representation-format
+ */
+export const SubstanceRepresentationFormatCodeSystem = {
   resourceType: "CodeSystem",
   id: "substance-representation-format",
   meta: {

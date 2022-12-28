@@ -1,4 +1,8 @@
-export const CodeSystemContentMode = {
+/**
+ * The extent of the content of the code system (the concepts and codes it defines) are represented in a code system resource.
+ * http://hl7.org/fhir/codesystem-content-mode
+ */
+export const CodeSystemContentModeCodeSystem = {
   resourceType: "CodeSystem",
   id: "codesystem-content-mode",
   meta: {

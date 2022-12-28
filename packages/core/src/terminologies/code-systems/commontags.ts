@@ -1,4 +1,8 @@
-export const CommonTags = {
+/**
+ * Common Tag Codes defined by FHIR project
+ * http://terminology.hl7.org/CodeSystem/common-tags
+ */
+export const CommonTagsCodeSystem = {
   resourceType: "CodeSystem",
   id: "common-tags",
   meta: {

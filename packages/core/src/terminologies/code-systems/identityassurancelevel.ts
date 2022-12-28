@@ -1,4 +1,8 @@
-export const IdentityAssuranceLevel = {
+/**
+ * The level of confidence that this link represents the same actual person, based on NIST Authentication Levels.
+ * http://hl7.org/fhir/identity-assuranceLevel
+ */
+export const IdentityAssuranceLevelCodeSystem = {
   resourceType: "CodeSystem",
   id: "identity-assuranceLevel",
   meta: {

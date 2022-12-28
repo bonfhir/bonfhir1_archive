@@ -1,4 +1,8 @@
-export const AttributeEstimateType = {
+/**
+ * A statistic about a statistic, e.g.  Confidence interval or p-value
+ * http://terminology.hl7.org/CodeSystem/attribute-estimate-type
+ */
+export const AttributeEstimateTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "attribute-estimate-type",
   meta: {

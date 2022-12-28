@@ -1,4 +1,8 @@
-export const AdmitSource = {
+/**
+ * This codesystem defines a set of codes that can be used to indicate from where the patient came in.
+ * http://terminology.hl7.org/CodeSystem/admit-source
+ */
+export const AdmitSourceCodeSystem = {
   resourceType: "CodeSystem",
   id: "encounter-admit-source",
   meta: {

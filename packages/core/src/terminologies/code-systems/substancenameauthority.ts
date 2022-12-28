@@ -1,4 +1,8 @@
-export const SubstanceNameAuthority = {
+/**
+ *
+ * http://hl7.org/fhir/substance-name-authority
+ */
+export const SubstanceNameAuthorityCodeSystem = {
   resourceType: "CodeSystem",
   id: "substance-name-authority",
   meta: {

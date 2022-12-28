@@ -1,4 +1,8 @@
-export const ISO210892017HealthRecordLifecycleEvents = {
+/**
+ * Attached is vocabulary for the 27 record lifecycle events, as per ISO TS 21089-2017, Health Informatics - Trusted End-to-End Information Flows, Section 3, Terms and Definitions (2017, at ISO Central Secretariat, passed ballot and ready for publication).  This will also be included in the FHIR EHR Record Lifecycle Event Implementation Guide, balloted and (to be) published with FHIR STU-3.
+ * http://terminology.hl7.org/CodeSystem/iso-21089-lifecycle
+ */
+export const ISO210892017HealthRecordLifecycleEventsCodeSystem = {
   resourceType: "CodeSystem",
   id: "iso-21089-lifecycle",
   meta: { lastUpdated: "2022-05-28T12:47:40.239+10:00" },

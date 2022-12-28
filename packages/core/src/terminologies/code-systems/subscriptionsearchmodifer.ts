@@ -1,4 +1,8 @@
-export const SubscriptionSearchModifer = {
+/**
+ * This codesystem defines a set of codes that can be used to filter Subscription triggers.
+ * http://terminology.hl7.org/CodeSystem/subscription-search-modifier
+ */
+export const SubscriptionSearchModiferCodeSystem = {
   resourceType: "CodeSystem",
   id: "subscription-search-modifier",
   meta: {

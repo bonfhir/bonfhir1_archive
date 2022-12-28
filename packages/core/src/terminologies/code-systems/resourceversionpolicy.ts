@@ -1,4 +1,8 @@
-export const ResourceVersionPolicy = {
+/**
+ * How the system supports versioning for a resource.
+ * http://hl7.org/fhir/versioning-policy
+ */
+export const ResourceVersionPolicyCodeSystem = {
   resourceType: "CodeSystem",
   id: "versioning-policy",
   meta: {

@@ -1,4 +1,8 @@
-export const ProductIntendedUse = {
+/**
+ *
+ * http://hl7.org/fhir/product-intended-use
+ */
+export const ProductIntendedUseCodeSystem = {
   resourceType: "CodeSystem",
   id: "product-intended-use",
   meta: {

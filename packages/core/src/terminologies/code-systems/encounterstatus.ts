@@ -1,4 +1,8 @@
-export const EncounterStatus = {
+/**
+ * Current state of the encounter.
+ * http://hl7.org/fhir/encounter-status
+ */
+export const EncounterStatusCodeSystem = {
   resourceType: "CodeSystem",
   id: "encounter-status",
   meta: {

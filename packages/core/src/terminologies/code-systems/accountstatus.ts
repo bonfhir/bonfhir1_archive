@@ -1,4 +1,8 @@
-export const AccountStatus = {
+/**
+ * Indicates whether the account is available to be used.
+ * http://hl7.org/fhir/account-status
+ */
+export const AccountStatusCodeSystem = {
   resourceType: "CodeSystem",
   id: "account-status",
   meta: {

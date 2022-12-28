@@ -1,4 +1,8 @@
-export const RiskProbability = {
+/**
+ * Codes representing the likelihood of a particular outcome in a risk assessment.
+ * http://terminology.hl7.org/CodeSystem/risk-probability
+ */
+export const RiskProbabilityCodeSystem = {
   resourceType: "CodeSystem",
   id: "risk-probability",
   meta: {

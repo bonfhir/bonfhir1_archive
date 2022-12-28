@@ -1,4 +1,8 @@
-export const MedicationRequestIntentCodes = {
+/**
+ *
+ * http://hl7.org/fhir/CodeSystem/medicationrequest-intent
+ */
+export const MedicationRequestIntentCodesCodeSystem = {
   resourceType: "CodeSystem",
   id: "medicationrequest-intent",
   meta: {

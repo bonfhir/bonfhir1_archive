@@ -1,4 +1,8 @@
-export const DischargeDisposition = {
+/**
+ * This codesystem defines a set of codes that can be used to where the patient left the hospital.
+ * http://terminology.hl7.org/CodeSystem/discharge-disposition
+ */
+export const DischargeDispositionCodeSystem = {
   resourceType: "CodeSystem",
   id: "encounter-discharge-disposition",
   meta: {

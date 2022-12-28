@@ -1,4 +1,8 @@
-export const PaymentTypeCodes = {
+/**
+ * This value set includes sample Payment Type codes.
+ * http://terminology.hl7.org/CodeSystem/payment-type
+ */
+export const PaymentTypeCodesCodeSystem = {
   resourceType: "CodeSystem",
   id: "payment-type",
   meta: {

@@ -1,4 +1,8 @@
-export const XPathUsageType = {
+/**
+ * How a search parameter relates to the set of elements returned by evaluating its xpath query.
+ * http://hl7.org/fhir/search-xpath-usage
+ */
+export const XPathUsageTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "search-xpath-usage",
   meta: {

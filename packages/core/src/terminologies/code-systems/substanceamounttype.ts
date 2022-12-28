@@ -1,4 +1,8 @@
-export const SubstanceAmountType = {
+/**
+ * The type of a numeric quantity measurement.
+ * http://hl7.org/fhir/substance-amount-type
+ */
+export const SubstanceAmountTypeCodeSystem = {
   resourceType: "CodeSystem",
   id: "substance-amount-type",
   meta: {

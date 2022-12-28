@@ -1,4 +1,8 @@
-export const DefinitionUseCodes = {
+/**
+ * Structure Definition Use Codes / Keywords
+ * http://terminology.hl7.org/CodeSystem/definition-use
+ */
+export const DefinitionUseCodesCodeSystem = {
   resourceType: "CodeSystem",
   id: "definition-use",
   meta: {
