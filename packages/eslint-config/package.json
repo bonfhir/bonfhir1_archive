@@ -1,0 +1,22 @@
+{
+  "name": "@bonfhir/eslint-config",
+  "description": "Shared ESLint configuration for Bonfhir packages.",
+  "version": "0.0.0",
+  "repository": "https://github.com/bonfhir/bonfhir.git",
+  "license": "APACHE-2.0",
+  "packageManager": "yarn@3.3.1",
+  "main": "eslint.cjs",
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.47.1",
+    "@typescript-eslint/parser": "^5.47.1",
+    "eslint": "^8.30.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1"
+  },
+  "devDependencies": {
+    "@types/eslint": "^8"
+  },
+  "peerDependencies": {
+    "prettier": "^2.8.1"
+  }
+}
