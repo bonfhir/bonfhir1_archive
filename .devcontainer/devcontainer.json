@@ -76,7 +76,8 @@
           "*.jsx": "${basename}.spec.${extname}, ${basename}.stories.${extname}, ${basename}.test.${extname}",
           "*.mjs": "${basename}.spec.${extname}, ${basename}.stories.${extname}, ${basename}.test.${extname}",
           "*.ts": "${basename}.spec.${extname}, ${basename}.stories.${extname}, ${basename}.test.${extname}",
-          "*.tsx": "${basename}.spec.${extname}, ${basename}.stories.${extname}, ${basename}.test.${extname}"
+          "*.tsx": "${basename}.spec.${extname}, ${basename}.stories.${extname}, ${basename}.test.${extname}",
+          "*.ts.hbs": "${basename}.ts"
         },
         "files.associations": {
           "*.snap": "javascript"

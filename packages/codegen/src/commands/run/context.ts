@@ -1,5 +1,3 @@
-import { Bundle } from "fhir/r4";
-
 export interface Config {
   definitions: string;
   templates: string;
@@ -7,7 +5,7 @@ export interface Config {
 
 export interface Context {
   config: Config;
-  definitions: Map<string, Bundle>;
+  definitions: Record<string, unknown>;
   templates: string[];
   writtenFiles: string[];
 }

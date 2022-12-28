@@ -35,7 +35,7 @@ function CreateTemplateProcessTask(templatePath: string): ListrTask<Context> {
             options: hb.HelperOptions
           ) => {
             const evaluated = evaluateFhirPath(fnCtx, path);
-            return evaluated.map((x) => options.fn(x));
+            return evaluated.map((x) => options.fn(x)).join("");
           },
         },
       });

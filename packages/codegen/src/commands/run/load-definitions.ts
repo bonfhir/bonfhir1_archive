@@ -11,9 +11,7 @@ export const LoadDefinitionsTask: ListrTask<Context> = {
     for (const entry of allDefinitionFiles) {
       const filenameWithoutExtension = pathParse(entry).name;
       const fileContent = JSON.parse(await readFile(entry, "utf8"));
-      if (fileContent["resourceType"] === "Bundle") {
-        ctx.definitions.set(filenameWithoutExtension, fileContent);
-      }
+      ctx.definitions[filenameWithoutExtension] = fileContent;
     }
 
     task.title += `: ${ctx.definitions.size} bundle(s) loaded.`;
