@@ -1,11 +1,12 @@
-import { evaluate as evaluateFhirPath } from "fhirpath";
-import { writeFileSync } from "fs";
 import { readFile, writeFile } from "fs/promises";
 import hb from "handlebars";
 import handlebarsHelpers from "handlebars-helpers";
 import Listr, { ListrTask } from "listr";
 import { join as pathJoin, parse as pathParse } from "node:path";
 import { Context } from "./context";
+import { fhirPath } from "./helpers/fhirPath";
+import { buildFhirPathFiles } from "./helpers/fhirPathFiles";
+import { safeNameAsVar } from "./helpers/safeNameAsVar";
 
 export const ProcessTemplatesTask: ListrTask<Context> = {
   title: "Process templates",
@@ -30,37 +31,9 @@ function CreateTemplateProcessTask(templatePath: string): ListrTask<Context> {
       const result = compiledTemplate(ctx, {
         helpers: {
           ...handlebarsHelpers(),
-          fhirPath: (
-            fnCtx: unknown,
-            path: string,
-            options: hb.HelperOptions
-          ) => {
-            const evaluated = evaluateFhirPath(fnCtx, path);
-            return evaluated.map((x) => options.fn(x)).join("");
-          },
-          fhirPathFiles: (
-            fnCtx: unknown,
-            path: string,
-            filenameTemplate: string,
-            options: hb.HelperOptions
-          ) => {
-            const evaluated = evaluateFhirPath(fnCtx, path);
-
-            for (const entry of evaluated) {
-              const fileContent = options.fn(entry);
-              const fileName = hb.compile(filenameTemplate, { noEscape: true })(
-                entry
-              );
-              const targetFile = pathJoin(templateParsedPath.dir, fileName);
-              writeFileSync(targetFile, fileContent, { encoding: "utf8" });
-              ctx.writtenFiles.push(targetFile);
-            }
-
-            return "";
-          },
-          safeNameAsVar: (value: string) => {
-            return value?.replace(/[^\w]/g, "");
-          },
+          fhirPath,
+          fhirPathFiles: buildFhirPathFiles(ctx, templateParsedPath.dir),
+          safeNameAsVar,
         },
       });
 

@@ -1,4 +1,5 @@
 import Listr, { ListrTask } from "listr";
+import _ from "lodash";
 import { exec } from "node:child_process";
 import { promisify } from "node:util";
 import { Context } from "./context";
@@ -12,22 +13,24 @@ export const PostProcessingTask: ListrTask<Context> = {
       (x) => !x.includes("%file%")
     );
     for (const globalPostProcessingTask of globalPostProcessingTasks) {
-      await execAsync(
-        globalPostProcessingTask.replace(
-          /%files%/g,
-          ctx.writtenFiles.join(" ")
-        ),
-        {
-          maxBuffer: 1024 * 1000 * 10,
-        }
-      );
+      const fileChunks = _.chunk(ctx.writtenFiles, 100);
+      for (const fileChunk of fileChunks) {
+        await execAsync(
+          globalPostProcessingTask.replace(/%files%/g, fileChunk.join(" ")),
+          {
+            maxBuffer: 1024 * 1000 * 10,
+          }
+        );
+      }
     }
 
-    return new Listr<Context>(
-      ctx.writtenFiles
-        .filter((x) => x.includes("%file%"))
-        .map(CreatePostProcessingAFileTask)
-    );
+    if (ctx.config.postProcessing.some((x) => x.includes("%file%"))) {
+      return new Listr<Context>(
+        ctx.writtenFiles
+          .filter((x) => x.includes("%file%"))
+          .map(CreatePostProcessingAFileTask)
+      );
+    }
   },
   skip: (ctx) => !ctx.config.postProcessing?.length,
 };
