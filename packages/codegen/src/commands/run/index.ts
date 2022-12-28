@@ -1,5 +1,8 @@
 import chalk from "chalk";
+import Listr from "listr";
 import { Argv } from "yargs";
+import { Config, Context } from "./context";
+import { LoadDefinitionsTask } from "./load-definitions";
 
 export const command = "run";
 export const describe = "Run code generation";
@@ -12,13 +15,12 @@ export const builder = (yargs: Argv) => {
   });
 };
 
-interface CommandOptions {
-  definitions: string;
-}
-
-export const handler = async (yargs: CommandOptions) => {
+export const handler = async (config: Config) => {
   try {
-    console.log(yargs.definitions);
+    await new Listr<Context>([LoadDefinitionsTask]).run({
+      config,
+      definitions: new Map(),
+    });
   } catch (error) {
     console.error(chalk.red(error));
     console.error();
