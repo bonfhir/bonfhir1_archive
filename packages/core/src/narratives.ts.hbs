@@ -63,6 +63,24 @@ export function renderNarrativeComponentValue(
     }
 
     switch (component.type?.code) {
+      {{#fhirPath data.[profiles-types] "Bundle.entry.select(resource).ofType(StructureDefinition).where(baseDefinition='http://hl7.org/fhir/StructureDefinition/Element' and kind='complex-type')"}}
+        {{#if (notIn type "BackboneElement,Narrative")}}
+        case "{{type}}":
+          if (component.max === "*") {
+            if (!Array.isArray(component.value) || !component.value.length) {
+              return undefined;
+            }
+
+            return `<li><span class="fhir-attr">${
+            component.attr
+          }</span>: <span class="fhir-value">${component.value.map(x => narrativeTextFor{{type}}(x)).join(
+            ", "
+          )}</span></li>`;
+          }
+
+          return `<li><span class="fhir-attr">${component.attr}</span>: <span class="fhir-value">narrativeTextFor{{type}}(component.value)</span></li>`;
+        {{/if}}
+      {{/fhirPath}}
       default:
         if (component.max === "*") {
           if (!Array.isArray(component.value) || !component.value.length) {
@@ -76,11 +94,11 @@ export function renderNarrativeComponentValue(
           )}</span></li>`;
         }
 
-        if (!component.value.trim()) {
+        if (! component.value.toString().trim() ||  component.value.toString().trim() === "[object Object]") {
           return undefined;
         }
 
-        return `<li><span class="fhir-attr">${component.attr}</span>: <span class="fhir-value">${component.value}</span></li>`;
+        return `<li><span class="fhir-attr">${component.attr}</span>: <span class="fhir-value">${ component.value}</span></li>`;
     }
   } catch {
     return undefined;

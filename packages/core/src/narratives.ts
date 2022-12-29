@@ -13482,6 +13482,398 @@ export function renderNarrativeComponentValue(
     }
 
     switch (component.type?.code) {
+      case "Address":
+        if (component.max === "*") {
+          if (!Array.isArray(component.value) || !component.value.length) {
+            return undefined;
+          }
+
+          return `<li><span class="fhir-attr">${
+            component.attr
+          }</span>: <span class="fhir-value">${component.value
+            .map((x) => narrativeTextForAddress(x))
+            .join(", ")}</span></li>`;
+        }
+
+        return `<li><span class="fhir-attr">${component.attr}</span>: <span class="fhir-value">narrativeTextForAddress(component.value)</span></li>`;
+      case "Annotation":
+        if (component.max === "*") {
+          if (!Array.isArray(component.value) || !component.value.length) {
+            return undefined;
+          }
+
+          return `<li><span class="fhir-attr">${
+            component.attr
+          }</span>: <span class="fhir-value">${component.value
+            .map((x) => narrativeTextForAnnotation(x))
+            .join(", ")}</span></li>`;
+        }
+
+        return `<li><span class="fhir-attr">${component.attr}</span>: <span class="fhir-value">narrativeTextForAnnotation(component.value)</span></li>`;
+      case "Attachment":
+        if (component.max === "*") {
+          if (!Array.isArray(component.value) || !component.value.length) {
+            return undefined;
+          }
+
+          return `<li><span class="fhir-attr">${
+            component.attr
+          }</span>: <span class="fhir-value">${component.value
+            .map((x) => narrativeTextForAttachment(x))
+            .join(", ")}</span></li>`;
+        }
+
+        return `<li><span class="fhir-attr">${component.attr}</span>: <span class="fhir-value">narrativeTextForAttachment(component.value)</span></li>`;
+      case "CodeableConcept":
+        if (component.max === "*") {
+          if (!Array.isArray(component.value) || !component.value.length) {
+            return undefined;
+          }
+
+          return `<li><span class="fhir-attr">${
+            component.attr
+          }</span>: <span class="fhir-value">${component.value
+            .map((x) => narrativeTextForCodeableConcept(x))
+            .join(", ")}</span></li>`;
+        }
+
+        return `<li><span class="fhir-attr">${component.attr}</span>: <span class="fhir-value">narrativeTextForCodeableConcept(component.value)</span></li>`;
+      case "CodeableReference":
+        if (component.max === "*") {
+          if (!Array.isArray(component.value) || !component.value.length) {
+            return undefined;
+          }
+
+          return `<li><span class="fhir-attr">${
+            component.attr
+          }</span>: <span class="fhir-value">${component.value
+            .map((x) => narrativeTextForCodeableReference(x))
+            .join(", ")}</span></li>`;
+        }
+
+        return `<li><span class="fhir-attr">${component.attr}</span>: <span class="fhir-value">narrativeTextForCodeableReference(component.value)</span></li>`;
+      case "Coding":
+        if (component.max === "*") {
+          if (!Array.isArray(component.value) || !component.value.length) {
+            return undefined;
+          }
+
+          return `<li><span class="fhir-attr">${
+            component.attr
+          }</span>: <span class="fhir-value">${component.value
+            .map((x) => narrativeTextForCoding(x))
+            .join(", ")}</span></li>`;
+        }
+
+        return `<li><span class="fhir-attr">${component.attr}</span>: <span class="fhir-value">narrativeTextForCoding(component.value)</span></li>`;
+      case "ContactDetail":
+        if (component.max === "*") {
+          if (!Array.isArray(component.value) || !component.value.length) {
+            return undefined;
+          }
+
+          return `<li><span class="fhir-attr">${
+            component.attr
+          }</span>: <span class="fhir-value">${component.value
+            .map((x) => narrativeTextForContactDetail(x))
+            .join(", ")}</span></li>`;
+        }
+
+        return `<li><span class="fhir-attr">${component.attr}</span>: <span class="fhir-value">narrativeTextForContactDetail(component.value)</span></li>`;
+      case "ContactPoint":
+        if (component.max === "*") {
+          if (!Array.isArray(component.value) || !component.value.length) {
+            return undefined;
+          }
+
+          return `<li><span class="fhir-attr">${
+            component.attr
+          }</span>: <span class="fhir-value">${component.value
+            .map((x) => narrativeTextForContactPoint(x))
+            .join(", ")}</span></li>`;
+        }
+
+        return `<li><span class="fhir-attr">${component.attr}</span>: <span class="fhir-value">narrativeTextForContactPoint(component.value)</span></li>`;
+      case "Contributor":
+        if (component.max === "*") {
+          if (!Array.isArray(component.value) || !component.value.length) {
+            return undefined;
+          }
+
+          return `<li><span class="fhir-attr">${
+            component.attr
+          }</span>: <span class="fhir-value">${component.value
+            .map((x) => narrativeTextForContributor(x))
+            .join(", ")}</span></li>`;
+        }
+
+        return `<li><span class="fhir-attr">${component.attr}</span>: <span class="fhir-value">narrativeTextForContributor(component.value)</span></li>`;
+      case "DataRequirement":
+        if (component.max === "*") {
+          if (!Array.isArray(component.value) || !component.value.length) {
+            return undefined;
+          }
+
+          return `<li><span class="fhir-attr">${
+            component.attr
+          }</span>: <span class="fhir-value">${component.value
+            .map((x) => narrativeTextForDataRequirement(x))
+            .join(", ")}</span></li>`;
+        }
+
+        return `<li><span class="fhir-attr">${component.attr}</span>: <span class="fhir-value">narrativeTextForDataRequirement(component.value)</span></li>`;
+      case "Expression":
+        if (component.max === "*") {
+          if (!Array.isArray(component.value) || !component.value.length) {
+            return undefined;
+          }
+
+          return `<li><span class="fhir-attr">${
+            component.attr
+          }</span>: <span class="fhir-value">${component.value
+            .map((x) => narrativeTextForExpression(x))
+            .join(", ")}</span></li>`;
+        }
+
+        return `<li><span class="fhir-attr">${component.attr}</span>: <span class="fhir-value">narrativeTextForExpression(component.value)</span></li>`;
+      case "Extension":
+        if (component.max === "*") {
+          if (!Array.isArray(component.value) || !component.value.length) {
+            return undefined;
+          }
+
+          return `<li><span class="fhir-attr">${
+            component.attr
+          }</span>: <span class="fhir-value">${component.value
+            .map((x) => narrativeTextForExtension(x))
+            .join(", ")}</span></li>`;
+        }
+
+        return `<li><span class="fhir-attr">${component.attr}</span>: <span class="fhir-value">narrativeTextForExtension(component.value)</span></li>`;
+      case "HumanName":
+        if (component.max === "*") {
+          if (!Array.isArray(component.value) || !component.value.length) {
+            return undefined;
+          }
+
+          return `<li><span class="fhir-attr">${
+            component.attr
+          }</span>: <span class="fhir-value">${component.value
+            .map((x) => narrativeTextForHumanName(x))
+            .join(", ")}</span></li>`;
+        }
+
+        return `<li><span class="fhir-attr">${component.attr}</span>: <span class="fhir-value">narrativeTextForHumanName(component.value)</span></li>`;
+      case "Identifier":
+        if (component.max === "*") {
+          if (!Array.isArray(component.value) || !component.value.length) {
+            return undefined;
+          }
+
+          return `<li><span class="fhir-attr">${
+            component.attr
+          }</span>: <span class="fhir-value">${component.value
+            .map((x) => narrativeTextForIdentifier(x))
+            .join(", ")}</span></li>`;
+        }
+
+        return `<li><span class="fhir-attr">${component.attr}</span>: <span class="fhir-value">narrativeTextForIdentifier(component.value)</span></li>`;
+      case "Meta":
+        if (component.max === "*") {
+          if (!Array.isArray(component.value) || !component.value.length) {
+            return undefined;
+          }
+
+          return `<li><span class="fhir-attr">${
+            component.attr
+          }</span>: <span class="fhir-value">${component.value
+            .map((x) => narrativeTextForMeta(x))
+            .join(", ")}</span></li>`;
+        }
+
+        return `<li><span class="fhir-attr">${component.attr}</span>: <span class="fhir-value">narrativeTextForMeta(component.value)</span></li>`;
+      case "Money":
+        if (component.max === "*") {
+          if (!Array.isArray(component.value) || !component.value.length) {
+            return undefined;
+          }
+
+          return `<li><span class="fhir-attr">${
+            component.attr
+          }</span>: <span class="fhir-value">${component.value
+            .map((x) => narrativeTextForMoney(x))
+            .join(", ")}</span></li>`;
+        }
+
+        return `<li><span class="fhir-attr">${component.attr}</span>: <span class="fhir-value">narrativeTextForMoney(component.value)</span></li>`;
+      case "ParameterDefinition":
+        if (component.max === "*") {
+          if (!Array.isArray(component.value) || !component.value.length) {
+            return undefined;
+          }
+
+          return `<li><span class="fhir-attr">${
+            component.attr
+          }</span>: <span class="fhir-value">${component.value
+            .map((x) => narrativeTextForParameterDefinition(x))
+            .join(", ")}</span></li>`;
+        }
+
+        return `<li><span class="fhir-attr">${component.attr}</span>: <span class="fhir-value">narrativeTextForParameterDefinition(component.value)</span></li>`;
+      case "Period":
+        if (component.max === "*") {
+          if (!Array.isArray(component.value) || !component.value.length) {
+            return undefined;
+          }
+
+          return `<li><span class="fhir-attr">${
+            component.attr
+          }</span>: <span class="fhir-value">${component.value
+            .map((x) => narrativeTextForPeriod(x))
+            .join(", ")}</span></li>`;
+        }
+
+        return `<li><span class="fhir-attr">${component.attr}</span>: <span class="fhir-value">narrativeTextForPeriod(component.value)</span></li>`;
+      case "Quantity":
+        if (component.max === "*") {
+          if (!Array.isArray(component.value) || !component.value.length) {
+            return undefined;
+          }
+
+          return `<li><span class="fhir-attr">${
+            component.attr
+          }</span>: <span class="fhir-value">${component.value
+            .map((x) => narrativeTextForQuantity(x))
+            .join(", ")}</span></li>`;
+        }
+
+        return `<li><span class="fhir-attr">${component.attr}</span>: <span class="fhir-value">narrativeTextForQuantity(component.value)</span></li>`;
+      case "Range":
+        if (component.max === "*") {
+          if (!Array.isArray(component.value) || !component.value.length) {
+            return undefined;
+          }
+
+          return `<li><span class="fhir-attr">${
+            component.attr
+          }</span>: <span class="fhir-value">${component.value
+            .map((x) => narrativeTextForRange(x))
+            .join(", ")}</span></li>`;
+        }
+
+        return `<li><span class="fhir-attr">${component.attr}</span>: <span class="fhir-value">narrativeTextForRange(component.value)</span></li>`;
+      case "Ratio":
+        if (component.max === "*") {
+          if (!Array.isArray(component.value) || !component.value.length) {
+            return undefined;
+          }
+
+          return `<li><span class="fhir-attr">${
+            component.attr
+          }</span>: <span class="fhir-value">${component.value
+            .map((x) => narrativeTextForRatio(x))
+            .join(", ")}</span></li>`;
+        }
+
+        return `<li><span class="fhir-attr">${component.attr}</span>: <span class="fhir-value">narrativeTextForRatio(component.value)</span></li>`;
+      case "RatioRange":
+        if (component.max === "*") {
+          if (!Array.isArray(component.value) || !component.value.length) {
+            return undefined;
+          }
+
+          return `<li><span class="fhir-attr">${
+            component.attr
+          }</span>: <span class="fhir-value">${component.value
+            .map((x) => narrativeTextForRatioRange(x))
+            .join(", ")}</span></li>`;
+        }
+
+        return `<li><span class="fhir-attr">${component.attr}</span>: <span class="fhir-value">narrativeTextForRatioRange(component.value)</span></li>`;
+      case "Reference":
+        if (component.max === "*") {
+          if (!Array.isArray(component.value) || !component.value.length) {
+            return undefined;
+          }
+
+          return `<li><span class="fhir-attr">${
+            component.attr
+          }</span>: <span class="fhir-value">${component.value
+            .map((x) => narrativeTextForReference(x))
+            .join(", ")}</span></li>`;
+        }
+
+        return `<li><span class="fhir-attr">${component.attr}</span>: <span class="fhir-value">narrativeTextForReference(component.value)</span></li>`;
+      case "RelatedArtifact":
+        if (component.max === "*") {
+          if (!Array.isArray(component.value) || !component.value.length) {
+            return undefined;
+          }
+
+          return `<li><span class="fhir-attr">${
+            component.attr
+          }</span>: <span class="fhir-value">${component.value
+            .map((x) => narrativeTextForRelatedArtifact(x))
+            .join(", ")}</span></li>`;
+        }
+
+        return `<li><span class="fhir-attr">${component.attr}</span>: <span class="fhir-value">narrativeTextForRelatedArtifact(component.value)</span></li>`;
+      case "SampledData":
+        if (component.max === "*") {
+          if (!Array.isArray(component.value) || !component.value.length) {
+            return undefined;
+          }
+
+          return `<li><span class="fhir-attr">${
+            component.attr
+          }</span>: <span class="fhir-value">${component.value
+            .map((x) => narrativeTextForSampledData(x))
+            .join(", ")}</span></li>`;
+        }
+
+        return `<li><span class="fhir-attr">${component.attr}</span>: <span class="fhir-value">narrativeTextForSampledData(component.value)</span></li>`;
+      case "Signature":
+        if (component.max === "*") {
+          if (!Array.isArray(component.value) || !component.value.length) {
+            return undefined;
+          }
+
+          return `<li><span class="fhir-attr">${
+            component.attr
+          }</span>: <span class="fhir-value">${component.value
+            .map((x) => narrativeTextForSignature(x))
+            .join(", ")}</span></li>`;
+        }
+
+        return `<li><span class="fhir-attr">${component.attr}</span>: <span class="fhir-value">narrativeTextForSignature(component.value)</span></li>`;
+      case "TriggerDefinition":
+        if (component.max === "*") {
+          if (!Array.isArray(component.value) || !component.value.length) {
+            return undefined;
+          }
+
+          return `<li><span class="fhir-attr">${
+            component.attr
+          }</span>: <span class="fhir-value">${component.value
+            .map((x) => narrativeTextForTriggerDefinition(x))
+            .join(", ")}</span></li>`;
+        }
+
+        return `<li><span class="fhir-attr">${component.attr}</span>: <span class="fhir-value">narrativeTextForTriggerDefinition(component.value)</span></li>`;
+      case "UsageContext":
+        if (component.max === "*") {
+          if (!Array.isArray(component.value) || !component.value.length) {
+            return undefined;
+          }
+
+          return `<li><span class="fhir-attr">${
+            component.attr
+          }</span>: <span class="fhir-value">${component.value
+            .map((x) => narrativeTextForUsageContext(x))
+            .join(", ")}</span></li>`;
+        }
+
+        return `<li><span class="fhir-attr">${component.attr}</span>: <span class="fhir-value">narrativeTextForUsageContext(component.value)</span></li>`;
       default:
         if (component.max === "*") {
           if (!Array.isArray(component.value) || !component.value.length) {
@@ -13495,7 +13887,10 @@ export function renderNarrativeComponentValue(
           )}</span></li>`;
         }
 
-        if (!component.value.trim()) {
+        if (
+          !component.value.toString().trim() ||
+          component.value.toString().trim() === "[object Object]"
+        ) {
           return undefined;
         }
 
