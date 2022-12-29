@@ -1,0 +1,32 @@
+import { build, ExtractResource, ResourceType } from "@bonfhir/core";
+{{#fhirPath data.[profiles-types] "Bundle/ComplexElements"}}
+import type { {{type}} } from "fhir/r4";
+{{/fhirPath}}
+{{#fhirPath data.[profiles-resources] "Bundle/DomainResources"}}
+import type { {{type}} } from "fhir/r4";
+{{/fhirPath}}
+
+/**
+ * Create a fake FHIR resource.
+ * This is NOT synthetic data. Every value is randomized.
+ */
+export function fake<TResource extends ResourceType>(
+  resourceType: TResource,
+  override: Partial<Omit<ExtractResource<TResource>, "resourceType">> | null | undefined
+): ExtractResource<TResource> {
+
+  switch(resourceType) {
+    {{#fhirPath data.[profiles-resources] "Bundle/DomainResources"}}
+    case "{{type}}":
+      return build(resourceType, {...fake{{type}}(),...override} as unknown as Omit<ExtractResource<TResource>, "resourceType">);
+    {{/fhirPath}}
+    default:
+      throw new Error(`Unsupported fake for resource type ${resourceType}`);
+  }
+}
+
+{{#fhirPath data.[profiles-resources] "Bundle/DomainResources"}}
+function fake{{type}}(): {{type}} {
+  throw new Error();
+}
+{{/fhirPath}}

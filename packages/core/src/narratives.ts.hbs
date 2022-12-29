@@ -1,3 +1,4 @@
+import { encode } from "html-entities"
 import type { ElementDefinitionType, FhirResource } from "fhir/r4";
 {{#fhirPath data.[profiles-resources] "Bundle/DomainResources"}}
 import type { {{type}} } from "fhir/r4";
@@ -86,9 +87,9 @@ export function narrativeElementByType({attr, value, max, type}: NarrativeElemen
           return undefined;
         }
 
-        return `<li><span class="fhir-attr">${attr}: </span><span class="fhir-value">${value.join(", ")}</span></li>`
+        return `<li><span class="fhir-attr">${attr}: </span><span class="fhir-value">${value.map(x => encode(x?.toString())).join(", ")}</span></li>`
       }
-      return `<li><span class="fhir-attr">${attr}: </span><span class="fhir-value">${value}</span></li>`;
+      return `<li><span class="fhir-attr">${attr}: </span><span class="fhir-value">${encode(value?.toString())}</span></li>`;
     {{#fhirPath data.[profiles-types] "Bundle/ComplexElements"}}
     case "{{type}}":
       if (max === "*") {
