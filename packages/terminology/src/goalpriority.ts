@@ -1,0 +1,26 @@
+/**
+ * Indicates the level of importance associated with reaching or sustaining a goal.
+ * http://terminology.hl7.org/ValueSet/goal-priority
+ */
+export const GoalPriorityCode = {
+  /**
+   * High Priority
+   */
+  HighPriority: "high-priority",
+
+  /**
+   * Medium Priority
+   */
+  MediumPriority: "medium-priority",
+
+  /**
+   * Low Priority
+   */
+  LowPriority: "low-priority",
+} as const;
+
+/**
+ * https://hl7.org/fhir/valueset-address-type.html
+ */
+export type GoalPriorityCode =
+  typeof GoalPriorityCode[keyof typeof GoalPriorityCode];

@@ -1,0 +1,41 @@
+/**
+ * ***No description***
+ * http://terminology.hl7.org/ValueSet/v3-ActRelationshipEndsAfterEndOf
+ */
+export const ActRelationshipEndsAfterEndOfCode = {
+  /**
+   * ends after end of
+   */
+  endsafterendof: "EAE",
+
+  /**
+   * starts after start of, ends after end of
+   */
+  startsafterstartofendsafterendof: "SASEAE",
+
+  /**
+   * contains end of
+   */
+  containsendof: "SBEEAE",
+
+  /**
+   * start after start of, contains end of
+   */
+  startafterstartofcontainsendof: "SASSBEEAS",
+
+  /**
+   * contains time of
+   */
+  containstimeof: "SBSEAE",
+
+  /**
+   * starts with, ends after end of
+   */
+  startswithendsafterendof: "SCWSEAE",
+} as const;
+
+/**
+ * https://hl7.org/fhir/valueset-address-type.html
+ */
+export type ActRelationshipEndsAfterEndOfCode =
+  typeof ActRelationshipEndsAfterEndOfCode[keyof typeof ActRelationshipEndsAfterEndOfCode];

@@ -1,0 +1,26 @@
+/**
+ * This value set includes sample Payment Type codes.
+ * http://terminology.hl7.org/ValueSet/payment-type
+ */
+export const PaymentTypeCodesCode = {
+  /**
+   * Payment
+   */
+  Payment: "payment",
+
+  /**
+   * Adjustment
+   */
+  Adjustment: "adjustment",
+
+  /**
+   * Advance
+   */
+  Advance: "advance",
+} as const;
+
+/**
+ * https://hl7.org/fhir/valueset-address-type.html
+ */
+export type PaymentTypeCodesCode =
+  typeof PaymentTypeCodesCode[keyof typeof PaymentTypeCodesCode];

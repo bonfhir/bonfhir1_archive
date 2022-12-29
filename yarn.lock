@@ -113,6 +113,26 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@bonfhir/terminology@workspace:packages/terminology":
+  version: 0.0.0-use.local
+  resolution: "@bonfhir/terminology@workspace:packages/terminology"
+  dependencies:
+    "@bonfhir/codegen": "*"
+    "@bonfhir/eslint-config": "*"
+    "@bonfhir/prettier-config": "*"
+    "@bonfhir/typescript-config": "*"
+    "@swc/cli": ^0.1.59
+    "@swc/core": ^1.3.24
+    "@types/fhir": ^0.0.35
+    "@types/node": ^18.11.18
+    "@types/rimraf": ^3
+    eslint: ^8.30.0
+    prettier: ^2.8.1
+    rimraf: ^3.0.2
+    typescript: ^4.9.4
+  languageName: unknown
+  linkType: soft
+
 "@bonfhir/typescript-config@*, @bonfhir/typescript-config@workspace:packages/typescript-config":
   version: 0.0.0-use.local
   resolution: "@bonfhir/typescript-config@workspace:packages/typescript-config"
@@ -2720,7 +2740,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "bonfhir@workspace:."
   dependencies:
+    "@types/lodash": ^4
     lerna: ^6.3.0
+    lodash: ^4.17.21
   languageName: unknown
   linkType: soft
 

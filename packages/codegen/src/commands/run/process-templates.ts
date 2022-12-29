@@ -5,8 +5,9 @@ import Listr, { ListrTask } from "listr";
 import { join as pathJoin, parse as pathParse } from "node:path";
 import { Context } from "./context";
 import { fhirPath } from "./helpers/fhirPath";
-import { buildFhirPathFiles } from "./helpers/fhirPathFiles";
+import { eachRecursiveFlatten } from "./helpers/recursiveFlatten";
 import { safeNameAsVar } from "./helpers/safeNameAsVar";
+import { buildWriteFiles } from "./helpers/writeFiles";
 
 export const ProcessTemplatesTask: ListrTask<Context> = {
   title: "Process templates",
@@ -32,8 +33,9 @@ function CreateTemplateProcessTask(templatePath: string): ListrTask<Context> {
         helpers: {
           ...handlebarsHelpers(),
           fhirPath,
-          fhirPathFiles: buildFhirPathFiles(ctx, templateParsedPath.dir),
+          writeFiles: buildWriteFiles(ctx, templateParsedPath.dir),
           safeNameAsVar,
+          eachRecursiveFlatten,
         },
       });
 

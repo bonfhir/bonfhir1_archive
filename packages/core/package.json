@@ -9,7 +9,7 @@
     "build": "yarn clean && swc ./src -d dist -q -s true",
     "check-all": "prettier --check . '!**/*.hbs' && eslint . && tsc --noEmit",
     "clean": "rimraf dist/",
-    "codegen": "yarn workspace @bonfhir/codegen run dev run --definitions '/workspace/fhir/**/*.json' --templates '/workspace/packages/core/**/*.hbs' --post-processing 'prettier --write %files%'"
+    "codegen": "yarn workspace @bonfhir/codegen run dev run -d '/workspace/fhir/**/*.json' --t '/workspace/packages/core/**/*.hbs' -p 'prettier --write %files%'"
   },
   "devDependencies": {
     "@bonfhir/codegen": "*",

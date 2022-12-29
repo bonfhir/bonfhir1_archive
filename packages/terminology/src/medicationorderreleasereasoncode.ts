@@ -1,0 +1,26 @@
+/**
+ * **Definition:**A collection of concepts that indicate why the prescription should be released from suspended state.
+ * http://terminology.hl7.org/ValueSet/v3-MedicationOrderReleaseReasonCode
+ */
+export const MedicationOrderReleaseReasonCodeCode = {
+  /**
+   * medication order release reason
+   */
+  medicationorderreleasereason: "_MedicationOrderReleaseReasonCode",
+
+  /**
+   * suspend reason no longer applies
+   */
+  suspendreasonnolongerapplies: "HOLDDONE",
+
+  /**
+   * suspend reason inappropriate
+   */
+  suspendreasoninappropriate: "HOLDINAP",
+} as const;
+
+/**
+ * https://hl7.org/fhir/valueset-address-type.html
+ */
+export type MedicationOrderReleaseReasonCodeCode =
+  typeof MedicationOrderReleaseReasonCodeCode[keyof typeof MedicationOrderReleaseReasonCodeCode];

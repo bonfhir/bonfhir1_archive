@@ -1,0 +1,23 @@
+{{#fhirPath data.expansions "Bundle.entry.select(resource).ofType(ValueSet)"}}
+export * from "./{{camelcase name}}";
+{{#writeFiles "{{camelcase name}}.ts"}}
+/**
+ * {{ description }}
+ * {{ url }}
+ */
+export const {{safeNameAsVar name}}Code = {
+  {{#eachRecursiveFlatten expansion.contains "contains"}}
+    /**
+     * {{display}}
+     */
+    {{#if (safeNameAsVar display)}}{{safeNameAsVar display}}{{else}}"{{code}}"{{/if}}: "{{code}}",
+    
+  {{/eachRecursiveFlatten}}
+} as const;
+
+/**
+ * https://hl7.org/fhir/valueset-address-type.html
+ */
+export type {{safeNameAsVar name}}Code = typeof {{safeNameAsVar name}}Code[keyof typeof {{safeNameAsVar name}}Code];
+{{/writeFiles}}
+{{/fhirPath}}

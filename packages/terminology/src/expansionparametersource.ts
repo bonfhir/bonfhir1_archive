@@ -1,0 +1,26 @@
+/**
+ * Declares what the source of a parameter is.
+ * http://terminology.hl7.org/ValueSet/expansion-parameter-source
+ */
+export const ExpansionParameterSourceCode = {
+  /**
+   * Client Input
+   */
+  ClientInput: "input",
+
+  /**
+   * Server Engine
+   */
+  ServerEngine: "server",
+
+  /**
+   * Code System
+   */
+  CodeSystem: "codesystem",
+} as const;
+
+/**
+ * https://hl7.org/fhir/valueset-address-type.html
+ */
+export type ExpansionParameterSourceCode =
+  typeof ExpansionParameterSourceCode[keyof typeof ExpansionParameterSourceCode];

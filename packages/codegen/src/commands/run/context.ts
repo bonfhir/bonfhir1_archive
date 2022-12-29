@@ -1,12 +1,12 @@
 export interface Config {
-  definitions: string;
+  dataJson: string;
   templates: string;
   postProcessing: string[];
 }
 
 export interface Context {
   config: Config;
-  definitions: Record<string, unknown>;
+  data: Record<string, unknown>;
   templates: string[];
   writtenFiles: string[];
 }
