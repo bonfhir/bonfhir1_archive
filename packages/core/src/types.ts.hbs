@@ -1,4 +1,7 @@
 import type { DomainResource, FhirResource, Resource } from "fhir/r4";
+{{#fhirPath data.[profiles-types] "Bundle/ComplexElements"}}
+import type { {{type}} } from "fhir/r4";
+{{/fhirPath}}
 
 /**
  * All the possible resource types.
@@ -17,13 +20,28 @@ export type ExtractResource<TResourceType extends ResourceType> = Extract<
  * All the resources types for DomainResource only.
  */
 export const DomainResourceTypes: string[] = [
-{{#fhirPath data.[profiles-resources] "Bundle.entry.select(resource).ofType(StructureDefinition).where(baseDefinition='http://hl7.org/fhir/StructureDefinition/DomainResource')"}}
+{{#fhirPath data.[profiles-resources] "Bundle/DomainResources"}}
 "{{type}}",
 {{/fhirPath}}
 ];
 
+/**
+ * Return true if `resource` is a `DomainResource`.
+ */
 export function isDomainResource(
   resource: Resource
 ): resource is DomainResource {
   return DomainResourceTypes.includes(resource.resourceType);
 }
+
+export type AnnotatedComplexElement =
+{{#fhirPath data.[profiles-types] "Bundle/ComplexElements"}}| ({{type}} & { readonly elementType: "{{type}}" }){{/fhirPath}};
+
+export type ComplexElementType = AnnotatedComplexElement["elementType"];
+
+/**
+ * Allow referencing a resource type from its string ResourceType representation.
+ */
+export type ExtractComplexElement<TComplexElement extends ComplexElementType> = Omit<Extract<AnnotatedComplexElement, { elementType: TComplexElement }>, "elementType">;
+
+export type PrimitiveElementType = {{#fhirPath data.[profiles-types] "Bundle/PrimitiveElements"}}| "{{type}}"{{/fhirPath}};

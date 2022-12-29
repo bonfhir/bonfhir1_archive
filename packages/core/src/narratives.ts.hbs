@@ -1,17 +1,113 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
-import type { ElementDefinitionType, FhirResource, Narrative } from "fhir/r4";
-import { ResourceType } from "./types";
-import _ from "lodash";
-{{#fhirPath data.[profiles-resources] "Bundle.entry.select(resource).ofType(StructureDefinition).where(baseDefinition='http://hl7.org/fhir/StructureDefinition/DomainResource')"}}
+import type { ElementDefinitionType, FhirResource } from "fhir/r4";
+{{#fhirPath data.[profiles-resources] "Bundle/DomainResources"}}
 import type { {{type}} } from "fhir/r4";
 {{/fhirPath}}
-{{#fhirPath data.[profiles-types] "Bundle.entry.select(resource).ofType(StructureDefinition).where(baseDefinition='http://hl7.org/fhir/StructureDefinition/Element' and kind='complex-type')"}}
+{{#fhirPath data.[profiles-types] "Bundle/ComplexElements"}}
 import type { {{type}} } from "fhir/r4";
 {{/fhirPath}}
+import type { ComplexElementType, ExtractComplexElement } from "./types";
+
+export interface NarrativeElement {
+  attr: string;
+  value: unknown;
+  type: ElementDefinitionType;
+  max: "1" | "*";
+}
+
+/**
+ * Generate a `Narrative`-compatible XHTML representation for complex-types.
+ */
+export function narrativeElement<TComplexElement extends ComplexElementType>(
+  elementType: TComplexElement,
+  element: ExtractComplexElement<TComplexElement> | null | undefined
+): string | undefined {
+  if (!element) {
+    return undefined;
+  }
+
+  switch(elementType) {
+  {{#fhirPath data.[profiles-types] "Bundle/ComplexElements"}}
+    case "{{type}}":
+      return narrativeElement{{type}}(element as unknown as {{type}});
+  {{/fhirPath}}
+    default:
+      return undefined;
+  }
+}
+
+{{#fhirPath data.[profiles-types] "Bundle/ComplexElements"}}
+function narrativeElement{{type}}(element: {{type}} | null | undefined): string | undefined {
+  if (!element) {
+    return undefined;
+  }
+
+  const components: Array<string | undefined> = [
+    {{#fhirPath this "StructureDefinition/SummaryElements"}}
+      {{#if (elementImmediatePath path)}}
+        narrativeElementByType({
+          attr: "{{startCase (elementImmediatePath path)}}",
+          value: element.{{elementImmediatePath path}},
+          max: "{{max}}",
+          type: {{JSONstringify type.[0]}}
+        }),
+      {{/if}}
+    {{/fhirPath}}
+  ];
+
+  if(!components.length) {
+    return undefined;
+  }
+
+  return `<ul>${components.filter(x => x?.trim()).join("")}</ul>`;
+}
+{{/fhirPath}}
+
+export function narrativeElementByType({attr, value, max, type}: NarrativeElement): string | undefined {
+  if(!value) {
+    return undefined;
+  }
+
+  switch(type.code) {
+    case "base64Binary":
+    case "boolean":
+    case "date":
+    case "dateTime":
+    case "decimal":
+    case "instant":
+    case "integer":
+    case "string":
+    case "http://hl7.org/fhirpath/System.String":
+    case "time":
+    case "uri":
+    case "url":
+    case "xhtml":
+      if (max === "*") {
+        if (!Array.isArray(value)) {
+          return undefined;
+        }
+
+        return `<li><span class="fhir-attr">${attr}: </span><span class="fhir-value">${value.join(", ")}</span></li>`
+      }
+      return `<li><span class="fhir-attr">${attr}: </span><span class="fhir-value">${value}</span></li>`;
+    {{#fhirPath data.[profiles-types] "Bundle/ComplexElements"}}
+    case "{{type}}":
+      if (max === "*") {
+        if (!Array.isArray(value)) {
+          return undefined;
+        }
+        return `<li><span class="fhir-attr">${attr}: </span><ul>${value.map(x => `<li>${narrativeElement{{type}}(x as unknown as {{type}})}</li>`).join("")}</ul></li>`;
+      }
+
+      return `<li><span class="fhir-attr">${attr}: </span>${narrativeElement{{type}}(value as unknown as {{type}})}</li>`;
+    {{/fhirPath}}
+    default:
+      return undefined;
+  }
+}
 
 export function narrative<TResourceType extends FhirResource>(resource: TResourceType): Narrative {
   switch(resource.resourceType) {
-    {{#fhirPath data.[profiles-resources] "Bundle.entry.select(resource).ofType(StructureDefinition).where(baseDefinition='http://hl7.org/fhir/StructureDefinition/DomainResource')"}}
+    {{#fhirPath data.[profiles-resources] "Bundle/DomainResources"}}
     case "{{type}}":
       return narrative{{type}}(resource);
     {{/fhirPath}}
@@ -20,10 +116,10 @@ export function narrative<TResourceType extends FhirResource>(resource: TResourc
   }
 }
 
-{{#fhirPath data.[profiles-resources] "Bundle.entry.select(resource).ofType(StructureDefinition).where(baseDefinition='http://hl7.org/fhir/StructureDefinition/DomainResource')"}}
+{{#fhirPath data.[profiles-resources] "Bundle/DomainResources"}}
 function narrative{{type}}(resource: {{type}}): Narrative {
   return buildNarrative([
-    {{#fhirPath this "StructureDefinition.snapshot.element.where(isSummary=true)"}}
+    {{#fhirPath this "StructureDefinition/SummaryElements"}}
       {{#if (notIn (elementImmediatePath path) "meta,implicitRules,language,text,contained,extensions,modifierExtensions")}}
         {
             attr: "{{startCase (elementImmediatePath path)}}",
@@ -38,93 +134,11 @@ function narrative{{type}}(resource: {{type}}): Narrative {
 
 {{/fhirPath}}
 
-export interface NarrativeComponent {
-  attr: string;
-  value: any;
-  max: "1" | "*";
-  type: ElementDefinitionType;
-}
-
-export function buildNarrative(components: NarrativeComponent[]): Narrative {
+export function buildNarrative(components: NarrativeElement[]): Narrative {
   return {
     status: "generated",
     div: `<div xmlns="http://www.w3.org/1999/xhtml" class="fhir-narrative"><ul>${components
-      .map(renderNarrativeComponentValue)
-      .filter((x) => !!x)}</ul></div>`,
+      .map(narrativeElementByType)
+      .filter((x) => !!x).join("")}</ul></div>`,
   };
 }
-
-export function renderNarrativeComponentValue(
-  component: NarrativeComponent
-): string | undefined {
-  try {
-    if (!component.value) {
-      return undefined;
-    }
-
-    switch (component.type?.code) {
-      {{#fhirPath data.[profiles-types] "Bundle.entry.select(resource).ofType(StructureDefinition).where(baseDefinition='http://hl7.org/fhir/StructureDefinition/Element' and kind='complex-type')"}}
-        {{#if (notIn type "BackboneElement,Narrative")}}
-        case "{{type}}":
-          if (component.max === "*") {
-            if (!Array.isArray(component.value) || !component.value.length) {
-              return undefined;
-            }
-
-            return `<li><span class="fhir-attr">${
-            component.attr
-          }</span>: <span class="fhir-value">${component.value.map(x => narrativeTextFor{{type}}(x)).join(
-            ", "
-          )}</span></li>`;
-          }
-
-          return `<li><span class="fhir-attr">${component.attr}</span>: <span class="fhir-value">narrativeTextFor{{type}}(component.value)</span></li>`;
-        {{/if}}
-      {{/fhirPath}}
-      default:
-        if (component.max === "*") {
-          if (!Array.isArray(component.value) || !component.value.length) {
-            return undefined;
-          }
-
-          return `<li><span class="fhir-attr">${
-            component.attr
-          }</span>: <span class="fhir-value">${component.value.join(
-            ", "
-          )}</span></li>`;
-        }
-
-        if (! component.value.toString().trim() ||  component.value.toString().trim() === "[object Object]") {
-          return undefined;
-        }
-
-        return `<li><span class="fhir-attr">${component.attr}</span>: <span class="fhir-value">${ component.value}</span></li>`;
-    }
-  } catch {
-    return undefined;
-  }
-}
-
-{{#fhirPath data.[profiles-types] "Bundle.entry.select(resource).ofType(StructureDefinition).where(baseDefinition='http://hl7.org/fhir/StructureDefinition/Element' and kind='complex-type')"}}
-{{#if (notIn type "BackboneElement,Narrative")}}
-/**
- * Return a text representation for an element
- */
-export function narrativeTextFor{{type}}(element: {{type}} | null | undefined): string | undefined {
-  if (!element) {
-    return undefined;
-  }
-
-  return [
-    {{#fhirPath this "StructureDefinition.snapshot.element.where(isSummary=true)"}}
-        {{#if (elementImmediatePath path)}}
-          ["{{startCase (elementImmediatePath path)}}", element.{{elementImmediatePath path}}],
-        {{/if}}
-      {{/fhirPath}}
-  ]
-  .filter(x => !!`${x[1] || ""}`.trim())
-  .map(x => `<span class="fhir-element-attr">${x[0]}</span>: <span class="fhir-element-attr">${x[1]}</span>`)
-  .join(" ")
-}
-{{/if}}
-{{/fhirPath}}

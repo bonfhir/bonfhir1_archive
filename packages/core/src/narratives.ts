@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import type {
   Account,
   ActivityDefinition,
@@ -170,6 +169,1858 @@ import type {
   VerificationResult,
   VisionPrescription,
 } from "fhir/r4";
+import type { ComplexElementType, ExtractComplexElement } from "./types";
+
+export interface NarrativeElement {
+  attr: string;
+  value: unknown;
+  type: ElementDefinitionType;
+  max: "1" | "*";
+}
+
+/**
+ * Generate a `Narrative`-compatible XHTML representation for complex-types.
+ */
+export function narrativeElement<TComplexElement extends ComplexElementType>(
+  elementType: TComplexElement,
+  element: ExtractComplexElement<TComplexElement> | null | undefined
+): string | undefined {
+  if (!element) {
+    return undefined;
+  }
+
+  switch (elementType) {
+    case "Address":
+      return narrativeElementAddress(element as unknown as Address);
+    case "Annotation":
+      return narrativeElementAnnotation(element as unknown as Annotation);
+    case "Attachment":
+      return narrativeElementAttachment(element as unknown as Attachment);
+    case "CodeableConcept":
+      return narrativeElementCodeableConcept(
+        element as unknown as CodeableConcept
+      );
+    case "CodeableReference":
+      return narrativeElementCodeableReference(
+        element as unknown as CodeableReference
+      );
+    case "Coding":
+      return narrativeElementCoding(element as unknown as Coding);
+    case "ContactDetail":
+      return narrativeElementContactDetail(element as unknown as ContactDetail);
+    case "ContactPoint":
+      return narrativeElementContactPoint(element as unknown as ContactPoint);
+    case "Contributor":
+      return narrativeElementContributor(element as unknown as Contributor);
+    case "DataRequirement":
+      return narrativeElementDataRequirement(
+        element as unknown as DataRequirement
+      );
+    case "Expression":
+      return narrativeElementExpression(element as unknown as Expression);
+    case "Extension":
+      return narrativeElementExtension(element as unknown as Extension);
+    case "HumanName":
+      return narrativeElementHumanName(element as unknown as HumanName);
+    case "Identifier":
+      return narrativeElementIdentifier(element as unknown as Identifier);
+    case "Meta":
+      return narrativeElementMeta(element as unknown as Meta);
+    case "Money":
+      return narrativeElementMoney(element as unknown as Money);
+    case "Narrative":
+      return narrativeElementNarrative(element as unknown as Narrative);
+    case "ParameterDefinition":
+      return narrativeElementParameterDefinition(
+        element as unknown as ParameterDefinition
+      );
+    case "Period":
+      return narrativeElementPeriod(element as unknown as Period);
+    case "Quantity":
+      return narrativeElementQuantity(element as unknown as Quantity);
+    case "Range":
+      return narrativeElementRange(element as unknown as Range);
+    case "Ratio":
+      return narrativeElementRatio(element as unknown as Ratio);
+    case "RatioRange":
+      return narrativeElementRatioRange(element as unknown as RatioRange);
+    case "Reference":
+      return narrativeElementReference(element as unknown as Reference);
+    case "RelatedArtifact":
+      return narrativeElementRelatedArtifact(
+        element as unknown as RelatedArtifact
+      );
+    case "SampledData":
+      return narrativeElementSampledData(element as unknown as SampledData);
+    case "Signature":
+      return narrativeElementSignature(element as unknown as Signature);
+    case "TriggerDefinition":
+      return narrativeElementTriggerDefinition(
+        element as unknown as TriggerDefinition
+      );
+    case "UsageContext":
+      return narrativeElementUsageContext(element as unknown as UsageContext);
+    default:
+      return undefined;
+  }
+}
+
+function narrativeElementAddress(
+  element: Address | null | undefined
+): string | undefined {
+  if (!element) {
+    return undefined;
+  }
+
+  const components: Array<string | undefined> = [
+    narrativeElementByType({
+      attr: "Use",
+      value: element.use,
+      max: "1",
+      type: { code: "code" },
+    }),
+    narrativeElementByType({
+      attr: "Type",
+      value: element.type,
+      max: "1",
+      type: { code: "code" },
+    }),
+    narrativeElementByType({
+      attr: "Text",
+      value: element.text,
+      max: "1",
+      type: { code: "string" },
+    }),
+    narrativeElementByType({
+      attr: "Line",
+      value: element.line,
+      max: "*",
+      type: { code: "string" },
+    }),
+    narrativeElementByType({
+      attr: "City",
+      value: element.city,
+      max: "1",
+      type: { code: "string" },
+    }),
+    narrativeElementByType({
+      attr: "District",
+      value: element.district,
+      max: "1",
+      type: { code: "string" },
+    }),
+    narrativeElementByType({
+      attr: "State",
+      value: element.state,
+      max: "1",
+      type: { code: "string" },
+    }),
+    narrativeElementByType({
+      attr: "Postal Code",
+      value: element.postalCode,
+      max: "1",
+      type: { code: "string" },
+    }),
+    narrativeElementByType({
+      attr: "Country",
+      value: element.country,
+      max: "1",
+      type: { code: "string" },
+    }),
+    narrativeElementByType({
+      attr: "Period",
+      value: element.period,
+      max: "1",
+      type: { code: "Period" },
+    }),
+  ];
+
+  if (!components.length) {
+    return undefined;
+  }
+
+  return `<ul>${components.filter((x) => x?.trim()).join("")}</ul>`;
+}
+function narrativeElementAnnotation(
+  element: Annotation | null | undefined
+): string | undefined {
+  if (!element) {
+    return undefined;
+  }
+
+  const components: Array<string | undefined> = [
+    narrativeElementByType({
+      attr: "Time",
+      value: element.time,
+      max: "1",
+      type: { code: "dateTime" },
+    }),
+    narrativeElementByType({
+      attr: "Text",
+      value: element.text,
+      max: "1",
+      type: { code: "markdown" },
+    }),
+  ];
+
+  if (!components.length) {
+    return undefined;
+  }
+
+  return `<ul>${components.filter((x) => x?.trim()).join("")}</ul>`;
+}
+function narrativeElementAttachment(
+  element: Attachment | null | undefined
+): string | undefined {
+  if (!element) {
+    return undefined;
+  }
+
+  const components: Array<string | undefined> = [
+    narrativeElementByType({
+      attr: "Content Type",
+      value: element.contentType,
+      max: "1",
+      type: { code: "code" },
+    }),
+    narrativeElementByType({
+      attr: "Language",
+      value: element.language,
+      max: "1",
+      type: { code: "code" },
+    }),
+    narrativeElementByType({
+      attr: "Url",
+      value: element.url,
+      max: "1",
+      type: { code: "url" },
+    }),
+    narrativeElementByType({
+      attr: "Size",
+      value: element.size,
+      max: "1",
+      type: { code: "unsignedInt" },
+    }),
+    narrativeElementByType({
+      attr: "Hash",
+      value: element.hash,
+      max: "1",
+      type: { code: "base64Binary" },
+    }),
+    narrativeElementByType({
+      attr: "Title",
+      value: element.title,
+      max: "1",
+      type: { code: "string" },
+    }),
+    narrativeElementByType({
+      attr: "Creation",
+      value: element.creation,
+      max: "1",
+      type: { code: "dateTime" },
+    }),
+  ];
+
+  if (!components.length) {
+    return undefined;
+  }
+
+  return `<ul>${components.filter((x) => x?.trim()).join("")}</ul>`;
+}
+function narrativeElementCodeableConcept(
+  element: CodeableConcept | null | undefined
+): string | undefined {
+  if (!element) {
+    return undefined;
+  }
+
+  const components: Array<string | undefined> = [
+    narrativeElementByType({
+      attr: "Coding",
+      value: element.coding,
+      max: "*",
+      type: { code: "Coding" },
+    }),
+    narrativeElementByType({
+      attr: "Text",
+      value: element.text,
+      max: "1",
+      type: { code: "string" },
+    }),
+  ];
+
+  if (!components.length) {
+    return undefined;
+  }
+
+  return `<ul>${components.filter((x) => x?.trim()).join("")}</ul>`;
+}
+function narrativeElementCodeableReference(
+  element: CodeableReference | null | undefined
+): string | undefined {
+  if (!element) {
+    return undefined;
+  }
+
+  const components: Array<string | undefined> = [
+    narrativeElementByType({
+      attr: "Concept",
+      value: element.concept,
+      max: "1",
+      type: { code: "CodeableConcept" },
+    }),
+    narrativeElementByType({
+      attr: "Reference",
+      value: element.reference,
+      max: "1",
+      type: { code: "Reference" },
+    }),
+  ];
+
+  if (!components.length) {
+    return undefined;
+  }
+
+  return `<ul>${components.filter((x) => x?.trim()).join("")}</ul>`;
+}
+function narrativeElementCoding(
+  element: Coding | null | undefined
+): string | undefined {
+  if (!element) {
+    return undefined;
+  }
+
+  const components: Array<string | undefined> = [
+    narrativeElementByType({
+      attr: "System",
+      value: element.system,
+      max: "1",
+      type: { code: "uri" },
+    }),
+    narrativeElementByType({
+      attr: "Version",
+      value: element.version,
+      max: "1",
+      type: { code: "string" },
+    }),
+    narrativeElementByType({
+      attr: "Code",
+      value: element.code,
+      max: "1",
+      type: { code: "code" },
+    }),
+    narrativeElementByType({
+      attr: "Display",
+      value: element.display,
+      max: "1",
+      type: { code: "string" },
+    }),
+    narrativeElementByType({
+      attr: "User Selected",
+      value: element.userSelected,
+      max: "1",
+      type: { code: "boolean" },
+    }),
+  ];
+
+  if (!components.length) {
+    return undefined;
+  }
+
+  return `<ul>${components.filter((x) => x?.trim()).join("")}</ul>`;
+}
+function narrativeElementContactDetail(
+  element: ContactDetail | null | undefined
+): string | undefined {
+  if (!element) {
+    return undefined;
+  }
+
+  const components: Array<string | undefined> = [
+    narrativeElementByType({
+      attr: "Name",
+      value: element.name,
+      max: "1",
+      type: { code: "string" },
+    }),
+    narrativeElementByType({
+      attr: "Telecom",
+      value: element.telecom,
+      max: "*",
+      type: { code: "ContactPoint" },
+    }),
+  ];
+
+  if (!components.length) {
+    return undefined;
+  }
+
+  return `<ul>${components.filter((x) => x?.trim()).join("")}</ul>`;
+}
+function narrativeElementContactPoint(
+  element: ContactPoint | null | undefined
+): string | undefined {
+  if (!element) {
+    return undefined;
+  }
+
+  const components: Array<string | undefined> = [
+    narrativeElementByType({
+      attr: "System",
+      value: element.system,
+      max: "1",
+      type: { code: "code" },
+    }),
+    narrativeElementByType({
+      attr: "Value",
+      value: element.value,
+      max: "1",
+      type: { code: "string" },
+    }),
+    narrativeElementByType({
+      attr: "Use",
+      value: element.use,
+      max: "1",
+      type: { code: "code" },
+    }),
+    narrativeElementByType({
+      attr: "Rank",
+      value: element.rank,
+      max: "1",
+      type: { code: "positiveInt" },
+    }),
+    narrativeElementByType({
+      attr: "Period",
+      value: element.period,
+      max: "1",
+      type: { code: "Period" },
+    }),
+  ];
+
+  if (!components.length) {
+    return undefined;
+  }
+
+  return `<ul>${components.filter((x) => x?.trim()).join("")}</ul>`;
+}
+function narrativeElementContributor(
+  element: Contributor | null | undefined
+): string | undefined {
+  if (!element) {
+    return undefined;
+  }
+
+  const components: Array<string | undefined> = [
+    narrativeElementByType({
+      attr: "Type",
+      value: element.type,
+      max: "1",
+      type: { code: "code" },
+    }),
+    narrativeElementByType({
+      attr: "Name",
+      value: element.name,
+      max: "1",
+      type: { code: "string" },
+    }),
+    narrativeElementByType({
+      attr: "Contact",
+      value: element.contact,
+      max: "*",
+      type: { code: "ContactDetail" },
+    }),
+  ];
+
+  if (!components.length) {
+    return undefined;
+  }
+
+  return `<ul>${components.filter((x) => x?.trim()).join("")}</ul>`;
+}
+function narrativeElementDataRequirement(
+  element: DataRequirement | null | undefined
+): string | undefined {
+  if (!element) {
+    return undefined;
+  }
+
+  const components: Array<string | undefined> = [
+    narrativeElementByType({
+      attr: "Type",
+      value: element.type,
+      max: "1",
+      type: { code: "code" },
+    }),
+    narrativeElementByType({
+      attr: "Profile",
+      value: element.profile,
+      max: "*",
+      type: {
+        code: "canonical",
+        targetProfile: [
+          "http://hl7.org/fhir/StructureDefinition/StructureDefinition",
+        ],
+      },
+    }),
+    narrativeElementByType({
+      attr: "Must Support",
+      value: element.mustSupport,
+      max: "*",
+      type: { code: "string" },
+    }),
+    narrativeElementByType({
+      attr: "Code Filter",
+      value: element.codeFilter,
+      max: "*",
+      type: { code: "Element" },
+    }),
+    narrativeElementByType({
+      attr: "Date Filter",
+      value: element.dateFilter,
+      max: "*",
+      type: { code: "Element" },
+    }),
+    narrativeElementByType({
+      attr: "Limit",
+      value: element.limit,
+      max: "1",
+      type: { code: "positiveInt" },
+    }),
+    narrativeElementByType({
+      attr: "Sort",
+      value: element.sort,
+      max: "*",
+      type: { code: "Element" },
+    }),
+  ];
+
+  if (!components.length) {
+    return undefined;
+  }
+
+  return `<ul>${components.filter((x) => x?.trim()).join("")}</ul>`;
+}
+function narrativeElementExpression(
+  element: Expression | null | undefined
+): string | undefined {
+  if (!element) {
+    return undefined;
+  }
+
+  const components: Array<string | undefined> = [
+    narrativeElementByType({
+      attr: "Description",
+      value: element.description,
+      max: "1",
+      type: { code: "string" },
+    }),
+    narrativeElementByType({
+      attr: "Name",
+      value: element.name,
+      max: "1",
+      type: { code: "id" },
+    }),
+    narrativeElementByType({
+      attr: "Language",
+      value: element.language,
+      max: "1",
+      type: { code: "code" },
+    }),
+    narrativeElementByType({
+      attr: "Expression",
+      value: element.expression,
+      max: "1",
+      type: { code: "string" },
+    }),
+    narrativeElementByType({
+      attr: "Reference",
+      value: element.reference,
+      max: "1",
+      type: { code: "uri" },
+    }),
+  ];
+
+  if (!components.length) {
+    return undefined;
+  }
+
+  return `<ul>${components.filter((x) => x?.trim()).join("")}</ul>`;
+}
+function narrativeElementExtension(
+  element: Extension | null | undefined
+): string | undefined {
+  if (!element) {
+    return undefined;
+  }
+
+  const components: Array<string | undefined> = [];
+
+  if (!components.length) {
+    return undefined;
+  }
+
+  return `<ul>${components.filter((x) => x?.trim()).join("")}</ul>`;
+}
+function narrativeElementHumanName(
+  element: HumanName | null | undefined
+): string | undefined {
+  if (!element) {
+    return undefined;
+  }
+
+  const components: Array<string | undefined> = [
+    narrativeElementByType({
+      attr: "Use",
+      value: element.use,
+      max: "1",
+      type: { code: "code" },
+    }),
+    narrativeElementByType({
+      attr: "Text",
+      value: element.text,
+      max: "1",
+      type: { code: "string" },
+    }),
+    narrativeElementByType({
+      attr: "Family",
+      value: element.family,
+      max: "1",
+      type: { code: "string" },
+    }),
+    narrativeElementByType({
+      attr: "Given",
+      value: element.given,
+      max: "*",
+      type: { code: "string" },
+    }),
+    narrativeElementByType({
+      attr: "Prefix",
+      value: element.prefix,
+      max: "*",
+      type: { code: "string" },
+    }),
+    narrativeElementByType({
+      attr: "Suffix",
+      value: element.suffix,
+      max: "*",
+      type: { code: "string" },
+    }),
+    narrativeElementByType({
+      attr: "Period",
+      value: element.period,
+      max: "1",
+      type: { code: "Period" },
+    }),
+  ];
+
+  if (!components.length) {
+    return undefined;
+  }
+
+  return `<ul>${components.filter((x) => x?.trim()).join("")}</ul>`;
+}
+function narrativeElementIdentifier(
+  element: Identifier | null | undefined
+): string | undefined {
+  if (!element) {
+    return undefined;
+  }
+
+  const components: Array<string | undefined> = [
+    narrativeElementByType({
+      attr: "Use",
+      value: element.use,
+      max: "1",
+      type: { code: "code" },
+    }),
+    narrativeElementByType({
+      attr: "Type",
+      value: element.type,
+      max: "1",
+      type: { code: "CodeableConcept" },
+    }),
+    narrativeElementByType({
+      attr: "System",
+      value: element.system,
+      max: "1",
+      type: { code: "uri" },
+    }),
+    narrativeElementByType({
+      attr: "Value",
+      value: element.value,
+      max: "1",
+      type: { code: "string" },
+    }),
+    narrativeElementByType({
+      attr: "Period",
+      value: element.period,
+      max: "1",
+      type: { code: "Period" },
+    }),
+    narrativeElementByType({
+      attr: "Assigner",
+      value: element.assigner,
+      max: "1",
+      type: {
+        code: "Reference",
+        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Organization"],
+      },
+    }),
+  ];
+
+  if (!components.length) {
+    return undefined;
+  }
+
+  return `<ul>${components.filter((x) => x?.trim()).join("")}</ul>`;
+}
+function narrativeElementMeta(
+  element: Meta | null | undefined
+): string | undefined {
+  if (!element) {
+    return undefined;
+  }
+
+  const components: Array<string | undefined> = [
+    narrativeElementByType({
+      attr: "Version Id",
+      value: element.versionId,
+      max: "1",
+      type: { code: "id" },
+    }),
+    narrativeElementByType({
+      attr: "Last Updated",
+      value: element.lastUpdated,
+      max: "1",
+      type: { code: "instant" },
+    }),
+    narrativeElementByType({
+      attr: "Source",
+      value: element.source,
+      max: "1",
+      type: { code: "uri" },
+    }),
+    narrativeElementByType({
+      attr: "Profile",
+      value: element.profile,
+      max: "*",
+      type: {
+        code: "canonical",
+        targetProfile: [
+          "http://hl7.org/fhir/StructureDefinition/StructureDefinition",
+        ],
+      },
+    }),
+    narrativeElementByType({
+      attr: "Security",
+      value: element.security,
+      max: "*",
+      type: { code: "Coding" },
+    }),
+    narrativeElementByType({
+      attr: "Tag",
+      value: element.tag,
+      max: "*",
+      type: { code: "Coding" },
+    }),
+  ];
+
+  if (!components.length) {
+    return undefined;
+  }
+
+  return `<ul>${components.filter((x) => x?.trim()).join("")}</ul>`;
+}
+function narrativeElementMoney(
+  element: Money | null | undefined
+): string | undefined {
+  if (!element) {
+    return undefined;
+  }
+
+  const components: Array<string | undefined> = [
+    narrativeElementByType({
+      attr: "Value",
+      value: element.value,
+      max: "1",
+      type: { code: "decimal" },
+    }),
+    narrativeElementByType({
+      attr: "Currency",
+      value: element.currency,
+      max: "1",
+      type: { code: "code" },
+    }),
+  ];
+
+  if (!components.length) {
+    return undefined;
+  }
+
+  return `<ul>${components.filter((x) => x?.trim()).join("")}</ul>`;
+}
+function narrativeElementNarrative(
+  element: Narrative | null | undefined
+): string | undefined {
+  if (!element) {
+    return undefined;
+  }
+
+  const components: Array<string | undefined> = [];
+
+  if (!components.length) {
+    return undefined;
+  }
+
+  return `<ul>${components.filter((x) => x?.trim()).join("")}</ul>`;
+}
+function narrativeElementParameterDefinition(
+  element: ParameterDefinition | null | undefined
+): string | undefined {
+  if (!element) {
+    return undefined;
+  }
+
+  const components: Array<string | undefined> = [
+    narrativeElementByType({
+      attr: "Name",
+      value: element.name,
+      max: "1",
+      type: { code: "code" },
+    }),
+    narrativeElementByType({
+      attr: "Use",
+      value: element.use,
+      max: "1",
+      type: { code: "code" },
+    }),
+    narrativeElementByType({
+      attr: "Min",
+      value: element.min,
+      max: "1",
+      type: { code: "integer" },
+    }),
+    narrativeElementByType({
+      attr: "Max",
+      value: element.max,
+      max: "1",
+      type: { code: "string" },
+    }),
+    narrativeElementByType({
+      attr: "Documentation",
+      value: element.documentation,
+      max: "1",
+      type: { code: "string" },
+    }),
+    narrativeElementByType({
+      attr: "Type",
+      value: element.type,
+      max: "1",
+      type: { code: "code" },
+    }),
+    narrativeElementByType({
+      attr: "Profile",
+      value: element.profile,
+      max: "1",
+      type: {
+        code: "canonical",
+        targetProfile: [
+          "http://hl7.org/fhir/StructureDefinition/StructureDefinition",
+        ],
+      },
+    }),
+  ];
+
+  if (!components.length) {
+    return undefined;
+  }
+
+  return `<ul>${components.filter((x) => x?.trim()).join("")}</ul>`;
+}
+function narrativeElementPeriod(
+  element: Period | null | undefined
+): string | undefined {
+  if (!element) {
+    return undefined;
+  }
+
+  const components: Array<string | undefined> = [
+    narrativeElementByType({
+      attr: "Start",
+      value: element.start,
+      max: "1",
+      type: { code: "dateTime" },
+    }),
+    narrativeElementByType({
+      attr: "End",
+      value: element.end,
+      max: "1",
+      type: { code: "dateTime" },
+    }),
+  ];
+
+  if (!components.length) {
+    return undefined;
+  }
+
+  return `<ul>${components.filter((x) => x?.trim()).join("")}</ul>`;
+}
+function narrativeElementQuantity(
+  element: Quantity | null | undefined
+): string | undefined {
+  if (!element) {
+    return undefined;
+  }
+
+  const components: Array<string | undefined> = [
+    narrativeElementByType({
+      attr: "Value",
+      value: element.value,
+      max: "1",
+      type: { code: "decimal" },
+    }),
+    narrativeElementByType({
+      attr: "Comparator",
+      value: element.comparator,
+      max: "1",
+      type: { code: "code" },
+    }),
+    narrativeElementByType({
+      attr: "Unit",
+      value: element.unit,
+      max: "1",
+      type: { code: "string" },
+    }),
+    narrativeElementByType({
+      attr: "System",
+      value: element.system,
+      max: "1",
+      type: { code: "uri" },
+    }),
+    narrativeElementByType({
+      attr: "Code",
+      value: element.code,
+      max: "1",
+      type: { code: "code" },
+    }),
+  ];
+
+  if (!components.length) {
+    return undefined;
+  }
+
+  return `<ul>${components.filter((x) => x?.trim()).join("")}</ul>`;
+}
+function narrativeElementRange(
+  element: Range | null | undefined
+): string | undefined {
+  if (!element) {
+    return undefined;
+  }
+
+  const components: Array<string | undefined> = [
+    narrativeElementByType({
+      attr: "Low",
+      value: element.low,
+      max: "1",
+      type: {
+        code: "Quantity",
+        profile: ["http://hl7.org/fhir/StructureDefinition/SimpleQuantity"],
+      },
+    }),
+    narrativeElementByType({
+      attr: "High",
+      value: element.high,
+      max: "1",
+      type: {
+        code: "Quantity",
+        profile: ["http://hl7.org/fhir/StructureDefinition/SimpleQuantity"],
+      },
+    }),
+  ];
+
+  if (!components.length) {
+    return undefined;
+  }
+
+  return `<ul>${components.filter((x) => x?.trim()).join("")}</ul>`;
+}
+function narrativeElementRatio(
+  element: Ratio | null | undefined
+): string | undefined {
+  if (!element) {
+    return undefined;
+  }
+
+  const components: Array<string | undefined> = [
+    narrativeElementByType({
+      attr: "Numerator",
+      value: element.numerator,
+      max: "1",
+      type: { code: "Quantity" },
+    }),
+    narrativeElementByType({
+      attr: "Denominator",
+      value: element.denominator,
+      max: "1",
+      type: { code: "Quantity" },
+    }),
+  ];
+
+  if (!components.length) {
+    return undefined;
+  }
+
+  return `<ul>${components.filter((x) => x?.trim()).join("")}</ul>`;
+}
+function narrativeElementRatioRange(
+  element: RatioRange | null | undefined
+): string | undefined {
+  if (!element) {
+    return undefined;
+  }
+
+  const components: Array<string | undefined> = [
+    narrativeElementByType({
+      attr: "Low Numerator",
+      value: element.lowNumerator,
+      max: "1",
+      type: {
+        code: "Quantity",
+        profile: ["http://hl7.org/fhir/StructureDefinition/SimpleQuantity"],
+      },
+    }),
+    narrativeElementByType({
+      attr: "High Numerator",
+      value: element.highNumerator,
+      max: "1",
+      type: {
+        code: "Quantity",
+        profile: ["http://hl7.org/fhir/StructureDefinition/SimpleQuantity"],
+      },
+    }),
+    narrativeElementByType({
+      attr: "Denominator",
+      value: element.denominator,
+      max: "1",
+      type: {
+        code: "Quantity",
+        profile: ["http://hl7.org/fhir/StructureDefinition/SimpleQuantity"],
+      },
+    }),
+  ];
+
+  if (!components.length) {
+    return undefined;
+  }
+
+  return `<ul>${components.filter((x) => x?.trim()).join("")}</ul>`;
+}
+function narrativeElementReference(
+  element: Reference | null | undefined
+): string | undefined {
+  if (!element) {
+    return undefined;
+  }
+
+  const components: Array<string | undefined> = [
+    narrativeElementByType({
+      attr: "Reference",
+      value: element.reference,
+      max: "1",
+      type: { code: "string" },
+    }),
+    narrativeElementByType({
+      attr: "Type",
+      value: element.type,
+      max: "1",
+      type: { code: "uri" },
+    }),
+    narrativeElementByType({
+      attr: "Identifier",
+      value: element.identifier,
+      max: "1",
+      type: { code: "Identifier" },
+    }),
+    narrativeElementByType({
+      attr: "Display",
+      value: element.display,
+      max: "1",
+      type: { code: "string" },
+    }),
+  ];
+
+  if (!components.length) {
+    return undefined;
+  }
+
+  return `<ul>${components.filter((x) => x?.trim()).join("")}</ul>`;
+}
+function narrativeElementRelatedArtifact(
+  element: RelatedArtifact | null | undefined
+): string | undefined {
+  if (!element) {
+    return undefined;
+  }
+
+  const components: Array<string | undefined> = [
+    narrativeElementByType({
+      attr: "Type",
+      value: element.type,
+      max: "1",
+      type: { code: "code" },
+    }),
+    narrativeElementByType({
+      attr: "Label",
+      value: element.label,
+      max: "1",
+      type: { code: "string" },
+    }),
+    narrativeElementByType({
+      attr: "Display",
+      value: element.display,
+      max: "1",
+      type: { code: "string" },
+    }),
+    narrativeElementByType({
+      attr: "Citation",
+      value: element.citation,
+      max: "1",
+      type: { code: "markdown" },
+    }),
+    narrativeElementByType({
+      attr: "Url",
+      value: element.url,
+      max: "1",
+      type: { code: "url" },
+    }),
+    narrativeElementByType({
+      attr: "Document",
+      value: element.document,
+      max: "1",
+      type: { code: "Attachment" },
+    }),
+    narrativeElementByType({
+      attr: "Resource",
+      value: element.resource,
+      max: "1",
+      type: {
+        code: "canonical",
+        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Resource"],
+      },
+    }),
+  ];
+
+  if (!components.length) {
+    return undefined;
+  }
+
+  return `<ul>${components.filter((x) => x?.trim()).join("")}</ul>`;
+}
+function narrativeElementSampledData(
+  element: SampledData | null | undefined
+): string | undefined {
+  if (!element) {
+    return undefined;
+  }
+
+  const components: Array<string | undefined> = [
+    narrativeElementByType({
+      attr: "Origin",
+      value: element.origin,
+      max: "1",
+      type: {
+        code: "Quantity",
+        profile: ["http://hl7.org/fhir/StructureDefinition/SimpleQuantity"],
+      },
+    }),
+    narrativeElementByType({
+      attr: "Period",
+      value: element.period,
+      max: "1",
+      type: { code: "decimal" },
+    }),
+    narrativeElementByType({
+      attr: "Factor",
+      value: element.factor,
+      max: "1",
+      type: { code: "decimal" },
+    }),
+    narrativeElementByType({
+      attr: "Lower Limit",
+      value: element.lowerLimit,
+      max: "1",
+      type: { code: "decimal" },
+    }),
+    narrativeElementByType({
+      attr: "Upper Limit",
+      value: element.upperLimit,
+      max: "1",
+      type: { code: "decimal" },
+    }),
+    narrativeElementByType({
+      attr: "Dimensions",
+      value: element.dimensions,
+      max: "1",
+      type: { code: "positiveInt" },
+    }),
+  ];
+
+  if (!components.length) {
+    return undefined;
+  }
+
+  return `<ul>${components.filter((x) => x?.trim()).join("")}</ul>`;
+}
+function narrativeElementSignature(
+  element: Signature | null | undefined
+): string | undefined {
+  if (!element) {
+    return undefined;
+  }
+
+  const components: Array<string | undefined> = [
+    narrativeElementByType({
+      attr: "Type",
+      value: element.type,
+      max: "*",
+      type: { code: "Coding" },
+    }),
+    narrativeElementByType({
+      attr: "When",
+      value: element.when,
+      max: "1",
+      type: { code: "instant" },
+    }),
+    narrativeElementByType({
+      attr: "Who",
+      value: element.who,
+      max: "1",
+      type: {
+        code: "Reference",
+        targetProfile: [
+          "http://hl7.org/fhir/StructureDefinition/Practitioner",
+          "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
+          "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
+          "http://hl7.org/fhir/StructureDefinition/Patient",
+          "http://hl7.org/fhir/StructureDefinition/Device",
+          "http://hl7.org/fhir/StructureDefinition/Organization",
+        ],
+      },
+    }),
+    narrativeElementByType({
+      attr: "On Behalf Of",
+      value: element.onBehalfOf,
+      max: "1",
+      type: {
+        code: "Reference",
+        targetProfile: [
+          "http://hl7.org/fhir/StructureDefinition/Practitioner",
+          "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
+          "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
+          "http://hl7.org/fhir/StructureDefinition/Patient",
+          "http://hl7.org/fhir/StructureDefinition/Device",
+          "http://hl7.org/fhir/StructureDefinition/Organization",
+        ],
+      },
+    }),
+  ];
+
+  if (!components.length) {
+    return undefined;
+  }
+
+  return `<ul>${components.filter((x) => x?.trim()).join("")}</ul>`;
+}
+function narrativeElementTriggerDefinition(
+  element: TriggerDefinition | null | undefined
+): string | undefined {
+  if (!element) {
+    return undefined;
+  }
+
+  const components: Array<string | undefined> = [
+    narrativeElementByType({
+      attr: "Type",
+      value: element.type,
+      max: "1",
+      type: { code: "code" },
+    }),
+    narrativeElementByType({
+      attr: "Name",
+      value: element.name,
+      max: "1",
+      type: { code: "string" },
+    }),
+    narrativeElementByType({
+      attr: "Data",
+      value: element.data,
+      max: "*",
+      type: { code: "DataRequirement" },
+    }),
+    narrativeElementByType({
+      attr: "Condition",
+      value: element.condition,
+      max: "1",
+      type: { code: "Expression" },
+    }),
+  ];
+
+  if (!components.length) {
+    return undefined;
+  }
+
+  return `<ul>${components.filter((x) => x?.trim()).join("")}</ul>`;
+}
+function narrativeElementUsageContext(
+  element: UsageContext | null | undefined
+): string | undefined {
+  if (!element) {
+    return undefined;
+  }
+
+  const components: Array<string | undefined> = [
+    narrativeElementByType({
+      attr: "Code",
+      value: element.code,
+      max: "1",
+      type: { code: "Coding" },
+    }),
+  ];
+
+  if (!components.length) {
+    return undefined;
+  }
+
+  return `<ul>${components.filter((x) => x?.trim()).join("")}</ul>`;
+}
+
+export function narrativeElementByType({
+  attr,
+  value,
+  max,
+  type,
+}: NarrativeElement): string | undefined {
+  if (!value) {
+    return undefined;
+  }
+
+  switch (type.code) {
+    case "base64Binary":
+    case "boolean":
+    case "date":
+    case "dateTime":
+    case "decimal":
+    case "instant":
+    case "integer":
+    case "string":
+    case "http://hl7.org/fhirpath/System.String":
+    case "time":
+    case "uri":
+    case "url":
+    case "xhtml":
+      if (max === "*") {
+        if (!Array.isArray(value)) {
+          return undefined;
+        }
+
+        return `<li><span class="fhir-attr">${attr}: </span><span class="fhir-value">${value.join(
+          ", "
+        )}</span></li>`;
+      }
+      return `<li><span class="fhir-attr">${attr}: </span><span class="fhir-value">${value}</span></li>`;
+    case "Address":
+      if (max === "*") {
+        if (!Array.isArray(value)) {
+          return undefined;
+        }
+        return `<li><span class="fhir-attr">${attr}: </span><ul>${value
+          .map(
+            (x) =>
+              `<li>${narrativeElementAddress(x as unknown as Address)}</li>`
+          )
+          .join("")}</ul></li>`;
+      }
+
+      return `<li><span class="fhir-attr">${attr}: </span>${narrativeElementAddress(
+        value as unknown as Address
+      )}</li>`;
+    case "Annotation":
+      if (max === "*") {
+        if (!Array.isArray(value)) {
+          return undefined;
+        }
+        return `<li><span class="fhir-attr">${attr}: </span><ul>${value
+          .map(
+            (x) =>
+              `<li>${narrativeElementAnnotation(
+                x as unknown as Annotation
+              )}</li>`
+          )
+          .join("")}</ul></li>`;
+      }
+
+      return `<li><span class="fhir-attr">${attr}: </span>${narrativeElementAnnotation(
+        value as unknown as Annotation
+      )}</li>`;
+    case "Attachment":
+      if (max === "*") {
+        if (!Array.isArray(value)) {
+          return undefined;
+        }
+        return `<li><span class="fhir-attr">${attr}: </span><ul>${value
+          .map(
+            (x) =>
+              `<li>${narrativeElementAttachment(
+                x as unknown as Attachment
+              )}</li>`
+          )
+          .join("")}</ul></li>`;
+      }
+
+      return `<li><span class="fhir-attr">${attr}: </span>${narrativeElementAttachment(
+        value as unknown as Attachment
+      )}</li>`;
+    case "CodeableConcept":
+      if (max === "*") {
+        if (!Array.isArray(value)) {
+          return undefined;
+        }
+        return `<li><span class="fhir-attr">${attr}: </span><ul>${value
+          .map(
+            (x) =>
+              `<li>${narrativeElementCodeableConcept(
+                x as unknown as CodeableConcept
+              )}</li>`
+          )
+          .join("")}</ul></li>`;
+      }
+
+      return `<li><span class="fhir-attr">${attr}: </span>${narrativeElementCodeableConcept(
+        value as unknown as CodeableConcept
+      )}</li>`;
+    case "CodeableReference":
+      if (max === "*") {
+        if (!Array.isArray(value)) {
+          return undefined;
+        }
+        return `<li><span class="fhir-attr">${attr}: </span><ul>${value
+          .map(
+            (x) =>
+              `<li>${narrativeElementCodeableReference(
+                x as unknown as CodeableReference
+              )}</li>`
+          )
+          .join("")}</ul></li>`;
+      }
+
+      return `<li><span class="fhir-attr">${attr}: </span>${narrativeElementCodeableReference(
+        value as unknown as CodeableReference
+      )}</li>`;
+    case "Coding":
+      if (max === "*") {
+        if (!Array.isArray(value)) {
+          return undefined;
+        }
+        return `<li><span class="fhir-attr">${attr}: </span><ul>${value
+          .map(
+            (x) => `<li>${narrativeElementCoding(x as unknown as Coding)}</li>`
+          )
+          .join("")}</ul></li>`;
+      }
+
+      return `<li><span class="fhir-attr">${attr}: </span>${narrativeElementCoding(
+        value as unknown as Coding
+      )}</li>`;
+    case "ContactDetail":
+      if (max === "*") {
+        if (!Array.isArray(value)) {
+          return undefined;
+        }
+        return `<li><span class="fhir-attr">${attr}: </span><ul>${value
+          .map(
+            (x) =>
+              `<li>${narrativeElementContactDetail(
+                x as unknown as ContactDetail
+              )}</li>`
+          )
+          .join("")}</ul></li>`;
+      }
+
+      return `<li><span class="fhir-attr">${attr}: </span>${narrativeElementContactDetail(
+        value as unknown as ContactDetail
+      )}</li>`;
+    case "ContactPoint":
+      if (max === "*") {
+        if (!Array.isArray(value)) {
+          return undefined;
+        }
+        return `<li><span class="fhir-attr">${attr}: </span><ul>${value
+          .map(
+            (x) =>
+              `<li>${narrativeElementContactPoint(
+                x as unknown as ContactPoint
+              )}</li>`
+          )
+          .join("")}</ul></li>`;
+      }
+
+      return `<li><span class="fhir-attr">${attr}: </span>${narrativeElementContactPoint(
+        value as unknown as ContactPoint
+      )}</li>`;
+    case "Contributor":
+      if (max === "*") {
+        if (!Array.isArray(value)) {
+          return undefined;
+        }
+        return `<li><span class="fhir-attr">${attr}: </span><ul>${value
+          .map(
+            (x) =>
+              `<li>${narrativeElementContributor(
+                x as unknown as Contributor
+              )}</li>`
+          )
+          .join("")}</ul></li>`;
+      }
+
+      return `<li><span class="fhir-attr">${attr}: </span>${narrativeElementContributor(
+        value as unknown as Contributor
+      )}</li>`;
+    case "DataRequirement":
+      if (max === "*") {
+        if (!Array.isArray(value)) {
+          return undefined;
+        }
+        return `<li><span class="fhir-attr">${attr}: </span><ul>${value
+          .map(
+            (x) =>
+              `<li>${narrativeElementDataRequirement(
+                x as unknown as DataRequirement
+              )}</li>`
+          )
+          .join("")}</ul></li>`;
+      }
+
+      return `<li><span class="fhir-attr">${attr}: </span>${narrativeElementDataRequirement(
+        value as unknown as DataRequirement
+      )}</li>`;
+    case "Expression":
+      if (max === "*") {
+        if (!Array.isArray(value)) {
+          return undefined;
+        }
+        return `<li><span class="fhir-attr">${attr}: </span><ul>${value
+          .map(
+            (x) =>
+              `<li>${narrativeElementExpression(
+                x as unknown as Expression
+              )}</li>`
+          )
+          .join("")}</ul></li>`;
+      }
+
+      return `<li><span class="fhir-attr">${attr}: </span>${narrativeElementExpression(
+        value as unknown as Expression
+      )}</li>`;
+    case "Extension":
+      if (max === "*") {
+        if (!Array.isArray(value)) {
+          return undefined;
+        }
+        return `<li><span class="fhir-attr">${attr}: </span><ul>${value
+          .map(
+            (x) =>
+              `<li>${narrativeElementExtension(x as unknown as Extension)}</li>`
+          )
+          .join("")}</ul></li>`;
+      }
+
+      return `<li><span class="fhir-attr">${attr}: </span>${narrativeElementExtension(
+        value as unknown as Extension
+      )}</li>`;
+    case "HumanName":
+      if (max === "*") {
+        if (!Array.isArray(value)) {
+          return undefined;
+        }
+        return `<li><span class="fhir-attr">${attr}: </span><ul>${value
+          .map(
+            (x) =>
+              `<li>${narrativeElementHumanName(x as unknown as HumanName)}</li>`
+          )
+          .join("")}</ul></li>`;
+      }
+
+      return `<li><span class="fhir-attr">${attr}: </span>${narrativeElementHumanName(
+        value as unknown as HumanName
+      )}</li>`;
+    case "Identifier":
+      if (max === "*") {
+        if (!Array.isArray(value)) {
+          return undefined;
+        }
+        return `<li><span class="fhir-attr">${attr}: </span><ul>${value
+          .map(
+            (x) =>
+              `<li>${narrativeElementIdentifier(
+                x as unknown as Identifier
+              )}</li>`
+          )
+          .join("")}</ul></li>`;
+      }
+
+      return `<li><span class="fhir-attr">${attr}: </span>${narrativeElementIdentifier(
+        value as unknown as Identifier
+      )}</li>`;
+    case "Meta":
+      if (max === "*") {
+        if (!Array.isArray(value)) {
+          return undefined;
+        }
+        return `<li><span class="fhir-attr">${attr}: </span><ul>${value
+          .map((x) => `<li>${narrativeElementMeta(x as unknown as Meta)}</li>`)
+          .join("")}</ul></li>`;
+      }
+
+      return `<li><span class="fhir-attr">${attr}: </span>${narrativeElementMeta(
+        value as unknown as Meta
+      )}</li>`;
+    case "Money":
+      if (max === "*") {
+        if (!Array.isArray(value)) {
+          return undefined;
+        }
+        return `<li><span class="fhir-attr">${attr}: </span><ul>${value
+          .map(
+            (x) => `<li>${narrativeElementMoney(x as unknown as Money)}</li>`
+          )
+          .join("")}</ul></li>`;
+      }
+
+      return `<li><span class="fhir-attr">${attr}: </span>${narrativeElementMoney(
+        value as unknown as Money
+      )}</li>`;
+    case "Narrative":
+      if (max === "*") {
+        if (!Array.isArray(value)) {
+          return undefined;
+        }
+        return `<li><span class="fhir-attr">${attr}: </span><ul>${value
+          .map(
+            (x) =>
+              `<li>${narrativeElementNarrative(x as unknown as Narrative)}</li>`
+          )
+          .join("")}</ul></li>`;
+      }
+
+      return `<li><span class="fhir-attr">${attr}: </span>${narrativeElementNarrative(
+        value as unknown as Narrative
+      )}</li>`;
+    case "ParameterDefinition":
+      if (max === "*") {
+        if (!Array.isArray(value)) {
+          return undefined;
+        }
+        return `<li><span class="fhir-attr">${attr}: </span><ul>${value
+          .map(
+            (x) =>
+              `<li>${narrativeElementParameterDefinition(
+                x as unknown as ParameterDefinition
+              )}</li>`
+          )
+          .join("")}</ul></li>`;
+      }
+
+      return `<li><span class="fhir-attr">${attr}: </span>${narrativeElementParameterDefinition(
+        value as unknown as ParameterDefinition
+      )}</li>`;
+    case "Period":
+      if (max === "*") {
+        if (!Array.isArray(value)) {
+          return undefined;
+        }
+        return `<li><span class="fhir-attr">${attr}: </span><ul>${value
+          .map(
+            (x) => `<li>${narrativeElementPeriod(x as unknown as Period)}</li>`
+          )
+          .join("")}</ul></li>`;
+      }
+
+      return `<li><span class="fhir-attr">${attr}: </span>${narrativeElementPeriod(
+        value as unknown as Period
+      )}</li>`;
+    case "Quantity":
+      if (max === "*") {
+        if (!Array.isArray(value)) {
+          return undefined;
+        }
+        return `<li><span class="fhir-attr">${attr}: </span><ul>${value
+          .map(
+            (x) =>
+              `<li>${narrativeElementQuantity(x as unknown as Quantity)}</li>`
+          )
+          .join("")}</ul></li>`;
+      }
+
+      return `<li><span class="fhir-attr">${attr}: </span>${narrativeElementQuantity(
+        value as unknown as Quantity
+      )}</li>`;
+    case "Range":
+      if (max === "*") {
+        if (!Array.isArray(value)) {
+          return undefined;
+        }
+        return `<li><span class="fhir-attr">${attr}: </span><ul>${value
+          .map(
+            (x) => `<li>${narrativeElementRange(x as unknown as Range)}</li>`
+          )
+          .join("")}</ul></li>`;
+      }
+
+      return `<li><span class="fhir-attr">${attr}: </span>${narrativeElementRange(
+        value as unknown as Range
+      )}</li>`;
+    case "Ratio":
+      if (max === "*") {
+        if (!Array.isArray(value)) {
+          return undefined;
+        }
+        return `<li><span class="fhir-attr">${attr}: </span><ul>${value
+          .map(
+            (x) => `<li>${narrativeElementRatio(x as unknown as Ratio)}</li>`
+          )
+          .join("")}</ul></li>`;
+      }
+
+      return `<li><span class="fhir-attr">${attr}: </span>${narrativeElementRatio(
+        value as unknown as Ratio
+      )}</li>`;
+    case "RatioRange":
+      if (max === "*") {
+        if (!Array.isArray(value)) {
+          return undefined;
+        }
+        return `<li><span class="fhir-attr">${attr}: </span><ul>${value
+          .map(
+            (x) =>
+              `<li>${narrativeElementRatioRange(
+                x as unknown as RatioRange
+              )}</li>`
+          )
+          .join("")}</ul></li>`;
+      }
+
+      return `<li><span class="fhir-attr">${attr}: </span>${narrativeElementRatioRange(
+        value as unknown as RatioRange
+      )}</li>`;
+    case "Reference":
+      if (max === "*") {
+        if (!Array.isArray(value)) {
+          return undefined;
+        }
+        return `<li><span class="fhir-attr">${attr}: </span><ul>${value
+          .map(
+            (x) =>
+              `<li>${narrativeElementReference(x as unknown as Reference)}</li>`
+          )
+          .join("")}</ul></li>`;
+      }
+
+      return `<li><span class="fhir-attr">${attr}: </span>${narrativeElementReference(
+        value as unknown as Reference
+      )}</li>`;
+    case "RelatedArtifact":
+      if (max === "*") {
+        if (!Array.isArray(value)) {
+          return undefined;
+        }
+        return `<li><span class="fhir-attr">${attr}: </span><ul>${value
+          .map(
+            (x) =>
+              `<li>${narrativeElementRelatedArtifact(
+                x as unknown as RelatedArtifact
+              )}</li>`
+          )
+          .join("")}</ul></li>`;
+      }
+
+      return `<li><span class="fhir-attr">${attr}: </span>${narrativeElementRelatedArtifact(
+        value as unknown as RelatedArtifact
+      )}</li>`;
+    case "SampledData":
+      if (max === "*") {
+        if (!Array.isArray(value)) {
+          return undefined;
+        }
+        return `<li><span class="fhir-attr">${attr}: </span><ul>${value
+          .map(
+            (x) =>
+              `<li>${narrativeElementSampledData(
+                x as unknown as SampledData
+              )}</li>`
+          )
+          .join("")}</ul></li>`;
+      }
+
+      return `<li><span class="fhir-attr">${attr}: </span>${narrativeElementSampledData(
+        value as unknown as SampledData
+      )}</li>`;
+    case "Signature":
+      if (max === "*") {
+        if (!Array.isArray(value)) {
+          return undefined;
+        }
+        return `<li><span class="fhir-attr">${attr}: </span><ul>${value
+          .map(
+            (x) =>
+              `<li>${narrativeElementSignature(x as unknown as Signature)}</li>`
+          )
+          .join("")}</ul></li>`;
+      }
+
+      return `<li><span class="fhir-attr">${attr}: </span>${narrativeElementSignature(
+        value as unknown as Signature
+      )}</li>`;
+    case "TriggerDefinition":
+      if (max === "*") {
+        if (!Array.isArray(value)) {
+          return undefined;
+        }
+        return `<li><span class="fhir-attr">${attr}: </span><ul>${value
+          .map(
+            (x) =>
+              `<li>${narrativeElementTriggerDefinition(
+                x as unknown as TriggerDefinition
+              )}</li>`
+          )
+          .join("")}</ul></li>`;
+      }
+
+      return `<li><span class="fhir-attr">${attr}: </span>${narrativeElementTriggerDefinition(
+        value as unknown as TriggerDefinition
+      )}</li>`;
+    case "UsageContext":
+      if (max === "*") {
+        if (!Array.isArray(value)) {
+          return undefined;
+        }
+        return `<li><span class="fhir-attr">${attr}: </span><ul>${value
+          .map(
+            (x) =>
+              `<li>${narrativeElementUsageContext(
+                x as unknown as UsageContext
+              )}</li>`
+          )
+          .join("")}</ul></li>`;
+      }
+
+      return `<li><span class="fhir-attr">${attr}: </span>${narrativeElementUsageContext(
+        value as unknown as UsageContext
+      )}</li>`;
+    default:
+      return undefined;
+  }
+}
 
 export function narrative<TResourceType extends FhirResource>(
   resource: TResourceType
@@ -13457,1094 +15308,12 @@ function narrativeVisionPrescription(resource: VisionPrescription): Narrative {
   ]);
 }
 
-export interface NarrativeComponent {
-  attr: string;
-  value: any;
-  max: "1" | "*";
-  type: ElementDefinitionType;
-}
-
-export function buildNarrative(components: NarrativeComponent[]): Narrative {
+export function buildNarrative(components: NarrativeElement[]): Narrative {
   return {
     status: "generated",
     div: `<div xmlns="http://www.w3.org/1999/xhtml" class="fhir-narrative"><ul>${components
-      .map(renderNarrativeComponentValue)
-      .filter((x) => !!x)}</ul></div>`,
+      .map(narrativeElementByType)
+      .filter((x) => !!x)
+      .join("")}</ul></div>`,
   };
-}
-
-export function renderNarrativeComponentValue(
-  component: NarrativeComponent
-): string | undefined {
-  try {
-    if (!component.value) {
-      return undefined;
-    }
-
-    switch (component.type?.code) {
-      case "Address":
-        if (component.max === "*") {
-          if (!Array.isArray(component.value) || !component.value.length) {
-            return undefined;
-          }
-
-          return `<li><span class="fhir-attr">${
-            component.attr
-          }</span>: <span class="fhir-value">${component.value
-            .map((x) => narrativeTextForAddress(x))
-            .join(", ")}</span></li>`;
-        }
-
-        return `<li><span class="fhir-attr">${component.attr}</span>: <span class="fhir-value">narrativeTextForAddress(component.value)</span></li>`;
-      case "Annotation":
-        if (component.max === "*") {
-          if (!Array.isArray(component.value) || !component.value.length) {
-            return undefined;
-          }
-
-          return `<li><span class="fhir-attr">${
-            component.attr
-          }</span>: <span class="fhir-value">${component.value
-            .map((x) => narrativeTextForAnnotation(x))
-            .join(", ")}</span></li>`;
-        }
-
-        return `<li><span class="fhir-attr">${component.attr}</span>: <span class="fhir-value">narrativeTextForAnnotation(component.value)</span></li>`;
-      case "Attachment":
-        if (component.max === "*") {
-          if (!Array.isArray(component.value) || !component.value.length) {
-            return undefined;
-          }
-
-          return `<li><span class="fhir-attr">${
-            component.attr
-          }</span>: <span class="fhir-value">${component.value
-            .map((x) => narrativeTextForAttachment(x))
-            .join(", ")}</span></li>`;
-        }
-
-        return `<li><span class="fhir-attr">${component.attr}</span>: <span class="fhir-value">narrativeTextForAttachment(component.value)</span></li>`;
-      case "CodeableConcept":
-        if (component.max === "*") {
-          if (!Array.isArray(component.value) || !component.value.length) {
-            return undefined;
-          }
-
-          return `<li><span class="fhir-attr">${
-            component.attr
-          }</span>: <span class="fhir-value">${component.value
-            .map((x) => narrativeTextForCodeableConcept(x))
-            .join(", ")}</span></li>`;
-        }
-
-        return `<li><span class="fhir-attr">${component.attr}</span>: <span class="fhir-value">narrativeTextForCodeableConcept(component.value)</span></li>`;
-      case "CodeableReference":
-        if (component.max === "*") {
-          if (!Array.isArray(component.value) || !component.value.length) {
-            return undefined;
-          }
-
-          return `<li><span class="fhir-attr">${
-            component.attr
-          }</span>: <span class="fhir-value">${component.value
-            .map((x) => narrativeTextForCodeableReference(x))
-            .join(", ")}</span></li>`;
-        }
-
-        return `<li><span class="fhir-attr">${component.attr}</span>: <span class="fhir-value">narrativeTextForCodeableReference(component.value)</span></li>`;
-      case "Coding":
-        if (component.max === "*") {
-          if (!Array.isArray(component.value) || !component.value.length) {
-            return undefined;
-          }
-
-          return `<li><span class="fhir-attr">${
-            component.attr
-          }</span>: <span class="fhir-value">${component.value
-            .map((x) => narrativeTextForCoding(x))
-            .join(", ")}</span></li>`;
-        }
-
-        return `<li><span class="fhir-attr">${component.attr}</span>: <span class="fhir-value">narrativeTextForCoding(component.value)</span></li>`;
-      case "ContactDetail":
-        if (component.max === "*") {
-          if (!Array.isArray(component.value) || !component.value.length) {
-            return undefined;
-          }
-
-          return `<li><span class="fhir-attr">${
-            component.attr
-          }</span>: <span class="fhir-value">${component.value
-            .map((x) => narrativeTextForContactDetail(x))
-            .join(", ")}</span></li>`;
-        }
-
-        return `<li><span class="fhir-attr">${component.attr}</span>: <span class="fhir-value">narrativeTextForContactDetail(component.value)</span></li>`;
-      case "ContactPoint":
-        if (component.max === "*") {
-          if (!Array.isArray(component.value) || !component.value.length) {
-            return undefined;
-          }
-
-          return `<li><span class="fhir-attr">${
-            component.attr
-          }</span>: <span class="fhir-value">${component.value
-            .map((x) => narrativeTextForContactPoint(x))
-            .join(", ")}</span></li>`;
-        }
-
-        return `<li><span class="fhir-attr">${component.attr}</span>: <span class="fhir-value">narrativeTextForContactPoint(component.value)</span></li>`;
-      case "Contributor":
-        if (component.max === "*") {
-          if (!Array.isArray(component.value) || !component.value.length) {
-            return undefined;
-          }
-
-          return `<li><span class="fhir-attr">${
-            component.attr
-          }</span>: <span class="fhir-value">${component.value
-            .map((x) => narrativeTextForContributor(x))
-            .join(", ")}</span></li>`;
-        }
-
-        return `<li><span class="fhir-attr">${component.attr}</span>: <span class="fhir-value">narrativeTextForContributor(component.value)</span></li>`;
-      case "DataRequirement":
-        if (component.max === "*") {
-          if (!Array.isArray(component.value) || !component.value.length) {
-            return undefined;
-          }
-
-          return `<li><span class="fhir-attr">${
-            component.attr
-          }</span>: <span class="fhir-value">${component.value
-            .map((x) => narrativeTextForDataRequirement(x))
-            .join(", ")}</span></li>`;
-        }
-
-        return `<li><span class="fhir-attr">${component.attr}</span>: <span class="fhir-value">narrativeTextForDataRequirement(component.value)</span></li>`;
-      case "Expression":
-        if (component.max === "*") {
-          if (!Array.isArray(component.value) || !component.value.length) {
-            return undefined;
-          }
-
-          return `<li><span class="fhir-attr">${
-            component.attr
-          }</span>: <span class="fhir-value">${component.value
-            .map((x) => narrativeTextForExpression(x))
-            .join(", ")}</span></li>`;
-        }
-
-        return `<li><span class="fhir-attr">${component.attr}</span>: <span class="fhir-value">narrativeTextForExpression(component.value)</span></li>`;
-      case "Extension":
-        if (component.max === "*") {
-          if (!Array.isArray(component.value) || !component.value.length) {
-            return undefined;
-          }
-
-          return `<li><span class="fhir-attr">${
-            component.attr
-          }</span>: <span class="fhir-value">${component.value
-            .map((x) => narrativeTextForExtension(x))
-            .join(", ")}</span></li>`;
-        }
-
-        return `<li><span class="fhir-attr">${component.attr}</span>: <span class="fhir-value">narrativeTextForExtension(component.value)</span></li>`;
-      case "HumanName":
-        if (component.max === "*") {
-          if (!Array.isArray(component.value) || !component.value.length) {
-            return undefined;
-          }
-
-          return `<li><span class="fhir-attr">${
-            component.attr
-          }</span>: <span class="fhir-value">${component.value
-            .map((x) => narrativeTextForHumanName(x))
-            .join(", ")}</span></li>`;
-        }
-
-        return `<li><span class="fhir-attr">${component.attr}</span>: <span class="fhir-value">narrativeTextForHumanName(component.value)</span></li>`;
-      case "Identifier":
-        if (component.max === "*") {
-          if (!Array.isArray(component.value) || !component.value.length) {
-            return undefined;
-          }
-
-          return `<li><span class="fhir-attr">${
-            component.attr
-          }</span>: <span class="fhir-value">${component.value
-            .map((x) => narrativeTextForIdentifier(x))
-            .join(", ")}</span></li>`;
-        }
-
-        return `<li><span class="fhir-attr">${component.attr}</span>: <span class="fhir-value">narrativeTextForIdentifier(component.value)</span></li>`;
-      case "Meta":
-        if (component.max === "*") {
-          if (!Array.isArray(component.value) || !component.value.length) {
-            return undefined;
-          }
-
-          return `<li><span class="fhir-attr">${
-            component.attr
-          }</span>: <span class="fhir-value">${component.value
-            .map((x) => narrativeTextForMeta(x))
-            .join(", ")}</span></li>`;
-        }
-
-        return `<li><span class="fhir-attr">${component.attr}</span>: <span class="fhir-value">narrativeTextForMeta(component.value)</span></li>`;
-      case "Money":
-        if (component.max === "*") {
-          if (!Array.isArray(component.value) || !component.value.length) {
-            return undefined;
-          }
-
-          return `<li><span class="fhir-attr">${
-            component.attr
-          }</span>: <span class="fhir-value">${component.value
-            .map((x) => narrativeTextForMoney(x))
-            .join(", ")}</span></li>`;
-        }
-
-        return `<li><span class="fhir-attr">${component.attr}</span>: <span class="fhir-value">narrativeTextForMoney(component.value)</span></li>`;
-      case "ParameterDefinition":
-        if (component.max === "*") {
-          if (!Array.isArray(component.value) || !component.value.length) {
-            return undefined;
-          }
-
-          return `<li><span class="fhir-attr">${
-            component.attr
-          }</span>: <span class="fhir-value">${component.value
-            .map((x) => narrativeTextForParameterDefinition(x))
-            .join(", ")}</span></li>`;
-        }
-
-        return `<li><span class="fhir-attr">${component.attr}</span>: <span class="fhir-value">narrativeTextForParameterDefinition(component.value)</span></li>`;
-      case "Period":
-        if (component.max === "*") {
-          if (!Array.isArray(component.value) || !component.value.length) {
-            return undefined;
-          }
-
-          return `<li><span class="fhir-attr">${
-            component.attr
-          }</span>: <span class="fhir-value">${component.value
-            .map((x) => narrativeTextForPeriod(x))
-            .join(", ")}</span></li>`;
-        }
-
-        return `<li><span class="fhir-attr">${component.attr}</span>: <span class="fhir-value">narrativeTextForPeriod(component.value)</span></li>`;
-      case "Quantity":
-        if (component.max === "*") {
-          if (!Array.isArray(component.value) || !component.value.length) {
-            return undefined;
-          }
-
-          return `<li><span class="fhir-attr">${
-            component.attr
-          }</span>: <span class="fhir-value">${component.value
-            .map((x) => narrativeTextForQuantity(x))
-            .join(", ")}</span></li>`;
-        }
-
-        return `<li><span class="fhir-attr">${component.attr}</span>: <span class="fhir-value">narrativeTextForQuantity(component.value)</span></li>`;
-      case "Range":
-        if (component.max === "*") {
-          if (!Array.isArray(component.value) || !component.value.length) {
-            return undefined;
-          }
-
-          return `<li><span class="fhir-attr">${
-            component.attr
-          }</span>: <span class="fhir-value">${component.value
-            .map((x) => narrativeTextForRange(x))
-            .join(", ")}</span></li>`;
-        }
-
-        return `<li><span class="fhir-attr">${component.attr}</span>: <span class="fhir-value">narrativeTextForRange(component.value)</span></li>`;
-      case "Ratio":
-        if (component.max === "*") {
-          if (!Array.isArray(component.value) || !component.value.length) {
-            return undefined;
-          }
-
-          return `<li><span class="fhir-attr">${
-            component.attr
-          }</span>: <span class="fhir-value">${component.value
-            .map((x) => narrativeTextForRatio(x))
-            .join(", ")}</span></li>`;
-        }
-
-        return `<li><span class="fhir-attr">${component.attr}</span>: <span class="fhir-value">narrativeTextForRatio(component.value)</span></li>`;
-      case "RatioRange":
-        if (component.max === "*") {
-          if (!Array.isArray(component.value) || !component.value.length) {
-            return undefined;
-          }
-
-          return `<li><span class="fhir-attr">${
-            component.attr
-          }</span>: <span class="fhir-value">${component.value
-            .map((x) => narrativeTextForRatioRange(x))
-            .join(", ")}</span></li>`;
-        }
-
-        return `<li><span class="fhir-attr">${component.attr}</span>: <span class="fhir-value">narrativeTextForRatioRange(component.value)</span></li>`;
-      case "Reference":
-        if (component.max === "*") {
-          if (!Array.isArray(component.value) || !component.value.length) {
-            return undefined;
-          }
-
-          return `<li><span class="fhir-attr">${
-            component.attr
-          }</span>: <span class="fhir-value">${component.value
-            .map((x) => narrativeTextForReference(x))
-            .join(", ")}</span></li>`;
-        }
-
-        return `<li><span class="fhir-attr">${component.attr}</span>: <span class="fhir-value">narrativeTextForReference(component.value)</span></li>`;
-      case "RelatedArtifact":
-        if (component.max === "*") {
-          if (!Array.isArray(component.value) || !component.value.length) {
-            return undefined;
-          }
-
-          return `<li><span class="fhir-attr">${
-            component.attr
-          }</span>: <span class="fhir-value">${component.value
-            .map((x) => narrativeTextForRelatedArtifact(x))
-            .join(", ")}</span></li>`;
-        }
-
-        return `<li><span class="fhir-attr">${component.attr}</span>: <span class="fhir-value">narrativeTextForRelatedArtifact(component.value)</span></li>`;
-      case "SampledData":
-        if (component.max === "*") {
-          if (!Array.isArray(component.value) || !component.value.length) {
-            return undefined;
-          }
-
-          return `<li><span class="fhir-attr">${
-            component.attr
-          }</span>: <span class="fhir-value">${component.value
-            .map((x) => narrativeTextForSampledData(x))
-            .join(", ")}</span></li>`;
-        }
-
-        return `<li><span class="fhir-attr">${component.attr}</span>: <span class="fhir-value">narrativeTextForSampledData(component.value)</span></li>`;
-      case "Signature":
-        if (component.max === "*") {
-          if (!Array.isArray(component.value) || !component.value.length) {
-            return undefined;
-          }
-
-          return `<li><span class="fhir-attr">${
-            component.attr
-          }</span>: <span class="fhir-value">${component.value
-            .map((x) => narrativeTextForSignature(x))
-            .join(", ")}</span></li>`;
-        }
-
-        return `<li><span class="fhir-attr">${component.attr}</span>: <span class="fhir-value">narrativeTextForSignature(component.value)</span></li>`;
-      case "TriggerDefinition":
-        if (component.max === "*") {
-          if (!Array.isArray(component.value) || !component.value.length) {
-            return undefined;
-          }
-
-          return `<li><span class="fhir-attr">${
-            component.attr
-          }</span>: <span class="fhir-value">${component.value
-            .map((x) => narrativeTextForTriggerDefinition(x))
-            .join(", ")}</span></li>`;
-        }
-
-        return `<li><span class="fhir-attr">${component.attr}</span>: <span class="fhir-value">narrativeTextForTriggerDefinition(component.value)</span></li>`;
-      case "UsageContext":
-        if (component.max === "*") {
-          if (!Array.isArray(component.value) || !component.value.length) {
-            return undefined;
-          }
-
-          return `<li><span class="fhir-attr">${
-            component.attr
-          }</span>: <span class="fhir-value">${component.value
-            .map((x) => narrativeTextForUsageContext(x))
-            .join(", ")}</span></li>`;
-        }
-
-        return `<li><span class="fhir-attr">${component.attr}</span>: <span class="fhir-value">narrativeTextForUsageContext(component.value)</span></li>`;
-      default:
-        if (component.max === "*") {
-          if (!Array.isArray(component.value) || !component.value.length) {
-            return undefined;
-          }
-
-          return `<li><span class="fhir-attr">${
-            component.attr
-          }</span>: <span class="fhir-value">${component.value.join(
-            ", "
-          )}</span></li>`;
-        }
-
-        if (
-          !component.value.toString().trim() ||
-          component.value.toString().trim() === "[object Object]"
-        ) {
-          return undefined;
-        }
-
-        return `<li><span class="fhir-attr">${component.attr}</span>: <span class="fhir-value">${component.value}</span></li>`;
-    }
-  } catch {
-    return undefined;
-  }
-}
-
-/**
- * Return a text representation for an element
- */
-export function narrativeTextForAddress(
-  element: Address | null | undefined
-): string | undefined {
-  if (!element) {
-    return undefined;
-  }
-
-  return [
-    ["Use", element.use],
-    ["Type", element.type],
-    ["Text", element.text],
-    ["Line", element.line],
-    ["City", element.city],
-    ["District", element.district],
-    ["State", element.state],
-    ["Postal Code", element.postalCode],
-    ["Country", element.country],
-    ["Period", element.period],
-  ]
-    .filter((x) => !!`${x[1] || ""}`.trim())
-    .map(
-      (x) =>
-        `<span class="fhir-element-attr">${x[0]}</span>: <span class="fhir-element-attr">${x[1]}</span>`
-    )
-    .join(" ");
-}
-/**
- * Return a text representation for an element
- */
-export function narrativeTextForAnnotation(
-  element: Annotation | null | undefined
-): string | undefined {
-  if (!element) {
-    return undefined;
-  }
-
-  return [
-    ["Time", element.time],
-    ["Text", element.text],
-  ]
-    .filter((x) => !!`${x[1] || ""}`.trim())
-    .map(
-      (x) =>
-        `<span class="fhir-element-attr">${x[0]}</span>: <span class="fhir-element-attr">${x[1]}</span>`
-    )
-    .join(" ");
-}
-/**
- * Return a text representation for an element
- */
-export function narrativeTextForAttachment(
-  element: Attachment | null | undefined
-): string | undefined {
-  if (!element) {
-    return undefined;
-  }
-
-  return [
-    ["Content Type", element.contentType],
-    ["Language", element.language],
-    ["Url", element.url],
-    ["Size", element.size],
-    ["Hash", element.hash],
-    ["Title", element.title],
-    ["Creation", element.creation],
-  ]
-    .filter((x) => !!`${x[1] || ""}`.trim())
-    .map(
-      (x) =>
-        `<span class="fhir-element-attr">${x[0]}</span>: <span class="fhir-element-attr">${x[1]}</span>`
-    )
-    .join(" ");
-}
-/**
- * Return a text representation for an element
- */
-export function narrativeTextForCodeableConcept(
-  element: CodeableConcept | null | undefined
-): string | undefined {
-  if (!element) {
-    return undefined;
-  }
-
-  return [
-    ["Coding", element.coding],
-    ["Text", element.text],
-  ]
-    .filter((x) => !!`${x[1] || ""}`.trim())
-    .map(
-      (x) =>
-        `<span class="fhir-element-attr">${x[0]}</span>: <span class="fhir-element-attr">${x[1]}</span>`
-    )
-    .join(" ");
-}
-/**
- * Return a text representation for an element
- */
-export function narrativeTextForCodeableReference(
-  element: CodeableReference | null | undefined
-): string | undefined {
-  if (!element) {
-    return undefined;
-  }
-
-  return [
-    ["Concept", element.concept],
-    ["Reference", element.reference],
-  ]
-    .filter((x) => !!`${x[1] || ""}`.trim())
-    .map(
-      (x) =>
-        `<span class="fhir-element-attr">${x[0]}</span>: <span class="fhir-element-attr">${x[1]}</span>`
-    )
-    .join(" ");
-}
-/**
- * Return a text representation for an element
- */
-export function narrativeTextForCoding(
-  element: Coding | null | undefined
-): string | undefined {
-  if (!element) {
-    return undefined;
-  }
-
-  return [
-    ["System", element.system],
-    ["Version", element.version],
-    ["Code", element.code],
-    ["Display", element.display],
-    ["User Selected", element.userSelected],
-  ]
-    .filter((x) => !!`${x[1] || ""}`.trim())
-    .map(
-      (x) =>
-        `<span class="fhir-element-attr">${x[0]}</span>: <span class="fhir-element-attr">${x[1]}</span>`
-    )
-    .join(" ");
-}
-/**
- * Return a text representation for an element
- */
-export function narrativeTextForContactDetail(
-  element: ContactDetail | null | undefined
-): string | undefined {
-  if (!element) {
-    return undefined;
-  }
-
-  return [
-    ["Name", element.name],
-    ["Telecom", element.telecom],
-  ]
-    .filter((x) => !!`${x[1] || ""}`.trim())
-    .map(
-      (x) =>
-        `<span class="fhir-element-attr">${x[0]}</span>: <span class="fhir-element-attr">${x[1]}</span>`
-    )
-    .join(" ");
-}
-/**
- * Return a text representation for an element
- */
-export function narrativeTextForContactPoint(
-  element: ContactPoint | null | undefined
-): string | undefined {
-  if (!element) {
-    return undefined;
-  }
-
-  return [
-    ["System", element.system],
-    ["Value", element.value],
-    ["Use", element.use],
-    ["Rank", element.rank],
-    ["Period", element.period],
-  ]
-    .filter((x) => !!`${x[1] || ""}`.trim())
-    .map(
-      (x) =>
-        `<span class="fhir-element-attr">${x[0]}</span>: <span class="fhir-element-attr">${x[1]}</span>`
-    )
-    .join(" ");
-}
-/**
- * Return a text representation for an element
- */
-export function narrativeTextForContributor(
-  element: Contributor | null | undefined
-): string | undefined {
-  if (!element) {
-    return undefined;
-  }
-
-  return [
-    ["Type", element.type],
-    ["Name", element.name],
-    ["Contact", element.contact],
-  ]
-    .filter((x) => !!`${x[1] || ""}`.trim())
-    .map(
-      (x) =>
-        `<span class="fhir-element-attr">${x[0]}</span>: <span class="fhir-element-attr">${x[1]}</span>`
-    )
-    .join(" ");
-}
-/**
- * Return a text representation for an element
- */
-export function narrativeTextForDataRequirement(
-  element: DataRequirement | null | undefined
-): string | undefined {
-  if (!element) {
-    return undefined;
-  }
-
-  return [
-    ["Type", element.type],
-    ["Profile", element.profile],
-    ["Must Support", element.mustSupport],
-    ["Code Filter", element.codeFilter],
-    ["Date Filter", element.dateFilter],
-    ["Limit", element.limit],
-    ["Sort", element.sort],
-  ]
-    .filter((x) => !!`${x[1] || ""}`.trim())
-    .map(
-      (x) =>
-        `<span class="fhir-element-attr">${x[0]}</span>: <span class="fhir-element-attr">${x[1]}</span>`
-    )
-    .join(" ");
-}
-/**
- * Return a text representation for an element
- */
-export function narrativeTextForExpression(
-  element: Expression | null | undefined
-): string | undefined {
-  if (!element) {
-    return undefined;
-  }
-
-  return [
-    ["Description", element.description],
-    ["Name", element.name],
-    ["Language", element.language],
-    ["Expression", element.expression],
-    ["Reference", element.reference],
-  ]
-    .filter((x) => !!`${x[1] || ""}`.trim())
-    .map(
-      (x) =>
-        `<span class="fhir-element-attr">${x[0]}</span>: <span class="fhir-element-attr">${x[1]}</span>`
-    )
-    .join(" ");
-}
-/**
- * Return a text representation for an element
- */
-export function narrativeTextForExtension(
-  element: Extension | null | undefined
-): string | undefined {
-  if (!element) {
-    return undefined;
-  }
-
-  return []
-    .filter((x) => !!`${x[1] || ""}`.trim())
-    .map(
-      (x) =>
-        `<span class="fhir-element-attr">${x[0]}</span>: <span class="fhir-element-attr">${x[1]}</span>`
-    )
-    .join(" ");
-}
-/**
- * Return a text representation for an element
- */
-export function narrativeTextForHumanName(
-  element: HumanName | null | undefined
-): string | undefined {
-  if (!element) {
-    return undefined;
-  }
-
-  return [
-    ["Use", element.use],
-    ["Text", element.text],
-    ["Family", element.family],
-    ["Given", element.given],
-    ["Prefix", element.prefix],
-    ["Suffix", element.suffix],
-    ["Period", element.period],
-  ]
-    .filter((x) => !!`${x[1] || ""}`.trim())
-    .map(
-      (x) =>
-        `<span class="fhir-element-attr">${x[0]}</span>: <span class="fhir-element-attr">${x[1]}</span>`
-    )
-    .join(" ");
-}
-/**
- * Return a text representation for an element
- */
-export function narrativeTextForIdentifier(
-  element: Identifier | null | undefined
-): string | undefined {
-  if (!element) {
-    return undefined;
-  }
-
-  return [
-    ["Use", element.use],
-    ["Type", element.type],
-    ["System", element.system],
-    ["Value", element.value],
-    ["Period", element.period],
-    ["Assigner", element.assigner],
-  ]
-    .filter((x) => !!`${x[1] || ""}`.trim())
-    .map(
-      (x) =>
-        `<span class="fhir-element-attr">${x[0]}</span>: <span class="fhir-element-attr">${x[1]}</span>`
-    )
-    .join(" ");
-}
-/**
- * Return a text representation for an element
- */
-export function narrativeTextForMeta(
-  element: Meta | null | undefined
-): string | undefined {
-  if (!element) {
-    return undefined;
-  }
-
-  return [
-    ["Version Id", element.versionId],
-    ["Last Updated", element.lastUpdated],
-    ["Source", element.source],
-    ["Profile", element.profile],
-    ["Security", element.security],
-    ["Tag", element.tag],
-  ]
-    .filter((x) => !!`${x[1] || ""}`.trim())
-    .map(
-      (x) =>
-        `<span class="fhir-element-attr">${x[0]}</span>: <span class="fhir-element-attr">${x[1]}</span>`
-    )
-    .join(" ");
-}
-/**
- * Return a text representation for an element
- */
-export function narrativeTextForMoney(
-  element: Money | null | undefined
-): string | undefined {
-  if (!element) {
-    return undefined;
-  }
-
-  return [
-    ["Value", element.value],
-    ["Currency", element.currency],
-  ]
-    .filter((x) => !!`${x[1] || ""}`.trim())
-    .map(
-      (x) =>
-        `<span class="fhir-element-attr">${x[0]}</span>: <span class="fhir-element-attr">${x[1]}</span>`
-    )
-    .join(" ");
-}
-/**
- * Return a text representation for an element
- */
-export function narrativeTextForParameterDefinition(
-  element: ParameterDefinition | null | undefined
-): string | undefined {
-  if (!element) {
-    return undefined;
-  }
-
-  return [
-    ["Name", element.name],
-    ["Use", element.use],
-    ["Min", element.min],
-    ["Max", element.max],
-    ["Documentation", element.documentation],
-    ["Type", element.type],
-    ["Profile", element.profile],
-  ]
-    .filter((x) => !!`${x[1] || ""}`.trim())
-    .map(
-      (x) =>
-        `<span class="fhir-element-attr">${x[0]}</span>: <span class="fhir-element-attr">${x[1]}</span>`
-    )
-    .join(" ");
-}
-/**
- * Return a text representation for an element
- */
-export function narrativeTextForPeriod(
-  element: Period | null | undefined
-): string | undefined {
-  if (!element) {
-    return undefined;
-  }
-
-  return [
-    ["Start", element.start],
-    ["End", element.end],
-  ]
-    .filter((x) => !!`${x[1] || ""}`.trim())
-    .map(
-      (x) =>
-        `<span class="fhir-element-attr">${x[0]}</span>: <span class="fhir-element-attr">${x[1]}</span>`
-    )
-    .join(" ");
-}
-/**
- * Return a text representation for an element
- */
-export function narrativeTextForQuantity(
-  element: Quantity | null | undefined
-): string | undefined {
-  if (!element) {
-    return undefined;
-  }
-
-  return [
-    ["Value", element.value],
-    ["Comparator", element.comparator],
-    ["Unit", element.unit],
-    ["System", element.system],
-    ["Code", element.code],
-  ]
-    .filter((x) => !!`${x[1] || ""}`.trim())
-    .map(
-      (x) =>
-        `<span class="fhir-element-attr">${x[0]}</span>: <span class="fhir-element-attr">${x[1]}</span>`
-    )
-    .join(" ");
-}
-/**
- * Return a text representation for an element
- */
-export function narrativeTextForRange(
-  element: Range | null | undefined
-): string | undefined {
-  if (!element) {
-    return undefined;
-  }
-
-  return [
-    ["Low", element.low],
-    ["High", element.high],
-  ]
-    .filter((x) => !!`${x[1] || ""}`.trim())
-    .map(
-      (x) =>
-        `<span class="fhir-element-attr">${x[0]}</span>: <span class="fhir-element-attr">${x[1]}</span>`
-    )
-    .join(" ");
-}
-/**
- * Return a text representation for an element
- */
-export function narrativeTextForRatio(
-  element: Ratio | null | undefined
-): string | undefined {
-  if (!element) {
-    return undefined;
-  }
-
-  return [
-    ["Numerator", element.numerator],
-    ["Denominator", element.denominator],
-  ]
-    .filter((x) => !!`${x[1] || ""}`.trim())
-    .map(
-      (x) =>
-        `<span class="fhir-element-attr">${x[0]}</span>: <span class="fhir-element-attr">${x[1]}</span>`
-    )
-    .join(" ");
-}
-/**
- * Return a text representation for an element
- */
-export function narrativeTextForRatioRange(
-  element: RatioRange | null | undefined
-): string | undefined {
-  if (!element) {
-    return undefined;
-  }
-
-  return [
-    ["Low Numerator", element.lowNumerator],
-    ["High Numerator", element.highNumerator],
-    ["Denominator", element.denominator],
-  ]
-    .filter((x) => !!`${x[1] || ""}`.trim())
-    .map(
-      (x) =>
-        `<span class="fhir-element-attr">${x[0]}</span>: <span class="fhir-element-attr">${x[1]}</span>`
-    )
-    .join(" ");
-}
-/**
- * Return a text representation for an element
- */
-export function narrativeTextForReference(
-  element: Reference | null | undefined
-): string | undefined {
-  if (!element) {
-    return undefined;
-  }
-
-  return [
-    ["Reference", element.reference],
-    ["Type", element.type],
-    ["Identifier", element.identifier],
-    ["Display", element.display],
-  ]
-    .filter((x) => !!`${x[1] || ""}`.trim())
-    .map(
-      (x) =>
-        `<span class="fhir-element-attr">${x[0]}</span>: <span class="fhir-element-attr">${x[1]}</span>`
-    )
-    .join(" ");
-}
-/**
- * Return a text representation for an element
- */
-export function narrativeTextForRelatedArtifact(
-  element: RelatedArtifact | null | undefined
-): string | undefined {
-  if (!element) {
-    return undefined;
-  }
-
-  return [
-    ["Type", element.type],
-    ["Label", element.label],
-    ["Display", element.display],
-    ["Citation", element.citation],
-    ["Url", element.url],
-    ["Document", element.document],
-    ["Resource", element.resource],
-  ]
-    .filter((x) => !!`${x[1] || ""}`.trim())
-    .map(
-      (x) =>
-        `<span class="fhir-element-attr">${x[0]}</span>: <span class="fhir-element-attr">${x[1]}</span>`
-    )
-    .join(" ");
-}
-/**
- * Return a text representation for an element
- */
-export function narrativeTextForSampledData(
-  element: SampledData | null | undefined
-): string | undefined {
-  if (!element) {
-    return undefined;
-  }
-
-  return [
-    ["Origin", element.origin],
-    ["Period", element.period],
-    ["Factor", element.factor],
-    ["Lower Limit", element.lowerLimit],
-    ["Upper Limit", element.upperLimit],
-    ["Dimensions", element.dimensions],
-  ]
-    .filter((x) => !!`${x[1] || ""}`.trim())
-    .map(
-      (x) =>
-        `<span class="fhir-element-attr">${x[0]}</span>: <span class="fhir-element-attr">${x[1]}</span>`
-    )
-    .join(" ");
-}
-/**
- * Return a text representation for an element
- */
-export function narrativeTextForSignature(
-  element: Signature | null | undefined
-): string | undefined {
-  if (!element) {
-    return undefined;
-  }
-
-  return [
-    ["Type", element.type],
-    ["When", element.when],
-    ["Who", element.who],
-    ["On Behalf Of", element.onBehalfOf],
-  ]
-    .filter((x) => !!`${x[1] || ""}`.trim())
-    .map(
-      (x) =>
-        `<span class="fhir-element-attr">${x[0]}</span>: <span class="fhir-element-attr">${x[1]}</span>`
-    )
-    .join(" ");
-}
-/**
- * Return a text representation for an element
- */
-export function narrativeTextForTriggerDefinition(
-  element: TriggerDefinition | null | undefined
-): string | undefined {
-  if (!element) {
-    return undefined;
-  }
-
-  return [
-    ["Type", element.type],
-    ["Name", element.name],
-    ["Data", element.data],
-    ["Condition", element.condition],
-  ]
-    .filter((x) => !!`${x[1] || ""}`.trim())
-    .map(
-      (x) =>
-        `<span class="fhir-element-attr">${x[0]}</span>: <span class="fhir-element-attr">${x[1]}</span>`
-    )
-    .join(" ");
-}
-/**
- * Return a text representation for an element
- */
-export function narrativeTextForUsageContext(
-  element: UsageContext | null | undefined
-): string | undefined {
-  if (!element) {
-    return undefined;
-  }
-
-  return [["Code", element.code]]
-    .filter((x) => !!`${x[1] || ""}`.trim())
-    .map(
-      (x) =>
-        `<span class="fhir-element-attr">${x[0]}</span>: <span class="fhir-element-attr">${x[1]}</span>`
-    )
-    .join(" ");
 }

@@ -1,4 +1,37 @@
-import type { DomainResource, FhirResource, Resource } from "fhir/r4";
+import type {
+  Address,
+  Annotation,
+  Attachment,
+  CodeableConcept,
+  CodeableReference,
+  Coding,
+  ContactDetail,
+  ContactPoint,
+  Contributor,
+  DataRequirement,
+  DomainResource,
+  Expression,
+  Extension,
+  FhirResource,
+  HumanName,
+  Identifier,
+  Meta,
+  Money,
+  Narrative,
+  ParameterDefinition,
+  Period,
+  Quantity,
+  Range,
+  Ratio,
+  RatioRange,
+  Reference,
+  RelatedArtifact,
+  Resource,
+  SampledData,
+  Signature,
+  TriggerDefinition,
+  UsageContext,
+} from "fhir/r4";
 
 /**
  * All the possible resource types.
@@ -157,8 +190,66 @@ export const DomainResourceTypes: string[] = [
   "VisionPrescription",
 ];
 
+/**
+ * Return true if `resource` is a `DomainResource`.
+ */
 export function isDomainResource(
   resource: Resource
 ): resource is DomainResource {
   return DomainResourceTypes.includes(resource.resourceType);
 }
+
+export type AnnotatedComplexElement =
+  | (Address & { readonly elementType: "Address" })
+  | (Annotation & { readonly elementType: "Annotation" })
+  | (Attachment & { readonly elementType: "Attachment" })
+  | (CodeableConcept & { readonly elementType: "CodeableConcept" })
+  | (CodeableReference & { readonly elementType: "CodeableReference" })
+  | (Coding & { readonly elementType: "Coding" })
+  | (ContactDetail & { readonly elementType: "ContactDetail" })
+  | (ContactPoint & { readonly elementType: "ContactPoint" })
+  | (Contributor & { readonly elementType: "Contributor" })
+  | (DataRequirement & { readonly elementType: "DataRequirement" })
+  | (Expression & { readonly elementType: "Expression" })
+  | (Extension & { readonly elementType: "Extension" })
+  | (HumanName & { readonly elementType: "HumanName" })
+  | (Identifier & { readonly elementType: "Identifier" })
+  | (Meta & { readonly elementType: "Meta" })
+  | (Money & { readonly elementType: "Money" })
+  | (Narrative & { readonly elementType: "Narrative" })
+  | (ParameterDefinition & { readonly elementType: "ParameterDefinition" })
+  | (Period & { readonly elementType: "Period" })
+  | (Quantity & { readonly elementType: "Quantity" })
+  | (Range & { readonly elementType: "Range" })
+  | (Ratio & { readonly elementType: "Ratio" })
+  | (RatioRange & { readonly elementType: "RatioRange" })
+  | (Reference & { readonly elementType: "Reference" })
+  | (RelatedArtifact & { readonly elementType: "RelatedArtifact" })
+  | (SampledData & { readonly elementType: "SampledData" })
+  | (Signature & { readonly elementType: "Signature" })
+  | (TriggerDefinition & { readonly elementType: "TriggerDefinition" })
+  | (UsageContext & { readonly elementType: "UsageContext" });
+
+export type ComplexElementType = AnnotatedComplexElement["elementType"];
+
+/**
+ * Allow referencing a resource type from its string ResourceType representation.
+ */
+export type ExtractComplexElement<TComplexElement extends ComplexElementType> =
+  Omit<
+    Extract<AnnotatedComplexElement, { elementType: TComplexElement }>,
+    "elementType"
+  >;
+
+export type PrimitiveElementType =
+  | "base64Binary"
+  | "boolean"
+  | "date"
+  | "dateTime"
+  | "decimal"
+  | "instant"
+  | "integer"
+  | "string"
+  | "time"
+  | "uri"
+  | "xhtml";
