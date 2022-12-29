@@ -1,0 +1,29 @@
+import type { DomainResource, FhirResource, Resource } from "fhir/r4";
+
+/**
+ * All the possible resource types.
+ */
+export type ResourceType = FhirResource["resourceType"];
+
+/**
+ * Allow referencing a resource type from its string ResourceType representation.
+ */
+export type ExtractResource<TResourceType extends ResourceType> = Extract<
+  FhirResource,
+  { resourceType: TResourceType }
+>;
+
+/**
+ * All the resources types for DomainResource only.
+ */
+export const DomainResourceTypes: string[] = [
+{{#fhirPath data.[profiles-resources] "Bundle.entry.select(resource).ofType(StructureDefinition).where(baseDefinition='http://hl7.org/fhir/StructureDefinition/DomainResource')"}}
+"{{type}}",
+{{/fhirPath}}
+];
+
+export function isDomainResource(
+  resource: Resource
+): resource is DomainResource {
+  return DomainResourceTypes.includes(resource.resourceType);
+}
