@@ -6,298 +6,297 @@ export const OutpatientFacilityPracticeSettingCode = {
   /**
    * Outpatient facility
    */
-  Outpatientfacility: "OF",
+  OF: "OF",
 
   /**
    * Allergy clinic
    */
-  Allergyclinic: "ALL",
+  ALL: "ALL",
 
   /**
    * Amputee clinic
    */
-  Amputeeclinic: "AMPUT",
+  AMPUT: "AMPUT",
 
   /**
    * Bone marrow transplant clinic
    */
-  Bonemarrowtransplantclinic: "BMTC",
+  BMTC: "BMTC",
 
   /**
    * Breast clinic
    */
-  Breastclinic: "BREAST",
+  BREAST: "BREAST",
 
   /**
    * Child and adolescent neurology clinic
    */
-  Childandadolescentneurologyclinic: "CANC",
+  CANC: "CANC",
 
   /**
    * Child and adolescent psychiatry clinic
    */
-  Childandadolescentpsychiatryclinic: "CAPC",
+  CAPC: "CAPC",
 
   /**
    * Ambulatory Health Care Facilities; Clinic/Center; Rehabilitation: Cardiac Facilities
    */
-  AmbulatoryHealthCareFacilitiesClinicCenterRehabilitationCardiacFacilities:
-    "CARD",
+  CARD: "CARD",
 
   /**
    * Pediatric cardiology clinic
    */
-  Pediatriccardiologyclinic: "PEDCARD",
+  PEDCARD: "PEDCARD",
 
   /**
    * Coagulation clinic
    */
-  Coagulationclinic: "COAG",
+  COAG: "COAG",
 
   /**
    * Colon and rectal surgery clinic
    */
-  Colonandrectalsurgeryclinic: "CRS",
+  CRS: "CRS",
 
   /**
    * Dermatology clinic
    */
-  Dermatologyclinic: "DERM",
+  DERM: "DERM",
 
   /**
    * Endocrinology clinic
    */
-  Endocrinologyclinic: "ENDO",
+  ENDO: "ENDO",
 
   /**
    * Pediatric endocrinology clinic
    */
-  Pediatricendocrinologyclinic: "PEDE",
+  PEDE: "PEDE",
 
   /**
    * Otorhinolaryngology clinic
    */
-  Otorhinolaryngologyclinic: "ENT",
+  ENT: "ENT",
 
   /**
    * Family medicine clinic
    */
-  Familymedicineclinic: "FMC",
+  FMC: "FMC",
 
   /**
    * Gastroenterology clinic
    */
-  Gastroenterologyclinic: "GI",
+  GI: "GI",
 
   /**
    * Pediatric gastroenterology clinic
    */
-  Pediatricgastroenterologyclinic: "PEDGI",
+  PEDGI: "PEDGI",
 
   /**
    * General internal medicine clinic
    */
-  Generalinternalmedicineclinic: "GIM",
+  GIM: "GIM",
 
   /**
    * Gynecology clinic
    */
-  Gynecologyclinic: "GYN",
+  GYN: "GYN",
 
   /**
    * Hematology clinic
    */
-  Hematologyclinic: "HEM",
+  HEM: "HEM",
 
   /**
    * Pediatric hematology clinic
    */
-  Pediatrichematologyclinic: "PEDHEM",
+  PEDHEM: "PEDHEM",
 
   /**
    * Hypertension clinic
    */
-  Hypertensionclinic: "HTN",
+  HTN: "HTN",
 
   /**
    * Impairment evaluation center
    */
-  Impairmentevaluationcenter: "IEC",
+  IEC: "IEC",
 
   /**
    * Infectious disease clinic
    */
-  Infectiousdiseaseclinic: "INFD",
+  INFD: "INFD",
 
   /**
    * Pediatric infectious disease clinic
    */
-  Pediatricinfectiousdiseaseclinic: "PEDID",
+  PEDID: "PEDID",
 
   /**
    * Infertility clinic
    */
-  Infertilityclinic: "INV",
+  INV: "INV",
 
   /**
    * Lympedema clinic
    */
-  Lympedemaclinic: "LYMPH",
+  LYMPH: "LYMPH",
 
   /**
    * Medical genetics clinic
    */
-  Medicalgeneticsclinic: "MGEN",
+  MGEN: "MGEN",
 
   /**
    * Nephrology clinic
    */
-  Nephrologyclinic: "NEPH",
+  NEPH: "NEPH",
 
   /**
    * Pediatric nephrology clinic
    */
-  Pediatricnephrologyclinic: "PEDNEPH",
+  PEDNEPH: "PEDNEPH",
 
   /**
    * Neurology clinic
    */
-  Neurologyclinic: "NEUR",
+  NEUR: "NEUR",
 
   /**
    * Obstetrics clinic
    */
-  Obstetricsclinic: "OB",
+  OB: "OB",
 
   /**
    * Oral and maxillofacial surgery clinic
    */
-  Oralandmaxillofacialsurgeryclinic: "OMS",
+  OMS: "OMS",
 
   /**
    * Medical oncology clinic
    */
-  Medicaloncologyclinic: "ONCL",
+  ONCL: "ONCL",
 
   /**
    * Pediatric oncology clinic
    */
-  Pediatriconcologyclinic: "PEDHO",
+  PEDHO: "PEDHO",
 
   /**
    * Opthalmology clinic
    */
-  Opthalmologyclinic: "OPH",
+  OPH: "OPH",
 
   /**
    * optometry clinic
    */
-  optometryclinic: "OPTC",
+  OPTC: "OPTC",
 
   /**
    * Orthopedics clinic
    */
-  Orthopedicsclinic: "ORTHO",
+  ORTHO: "ORTHO",
 
   /**
    * Hand clinic
    */
-  Handclinic: "HAND",
+  HAND: "HAND",
 
   /**
    * Pain clinic
    */
-  Painclinic: "PAINCL",
+  PAINCL: "PAINCL",
 
   /**
    * Primary care clinic
    */
-  Primarycareclinic: "PC",
+  PC: "PC",
 
   /**
    * Pediatrics clinic
    */
-  Pediatricsclinic: "PEDC",
+  PEDC: "PEDC",
 
   /**
    * Pediatric rheumatology clinic
    */
-  Pediatricrheumatologyclinic: "PEDRHEUM",
+  PEDRHEUM: "PEDRHEUM",
 
   /**
    * Podiatry clinic
    */
-  Podiatryclinic: "POD",
+  POD: "POD",
 
   /**
    * Preventive medicine clinic
    */
-  Preventivemedicineclinic: "PREV",
+  PREV: "PREV",
 
   /**
    * Proctology clinic
    */
-  Proctologyclinic: "PROCTO",
+  PROCTO: "PROCTO",
 
   /**
    * Provider's Office
    */
-  ProvidersOffice: "PROFF",
+  PROFF: "PROFF",
 
   /**
    * Prosthodontics clinic
    */
-  Prosthodonticsclinic: "PROS",
+  PROS: "PROS",
 
   /**
    * Psychology clinic
    */
-  Psychologyclinic: "PSI",
+  PSI: "PSI",
 
   /**
    * Psychiatry clinic
    */
-  Psychiatryclinic: "PSY",
+  PSY: "PSY",
 
   /**
    * Rheumatology clinic
    */
-  Rheumatologyclinic: "RHEUM",
+  RHEUM: "RHEUM",
 
   /**
    * Sports medicine clinic
    */
-  Sportsmedicineclinic: "SPMED",
+  SPMED: "SPMED",
 
   /**
    * Surgery clinic
    */
-  Surgeryclinic: "SU",
+  SU: "SU",
 
   /**
    * Plastic surgery clinic
    */
-  Plasticsurgeryclinic: "PLS",
+  PLS: "PLS",
 
   /**
    * Urology clinic
    */
-  Urologyclinic: "URO",
+  URO: "URO",
 
   /**
    * Transplant clinic
    */
-  Transplantclinic: "TR",
+  TR: "TR",
 
   /**
    * Travel and geographic medicine clinic
    */
-  Travelandgeographicmedicineclinic: "TRAVEL",
+  TRAVEL: "TRAVEL",
 
   /**
    * Wound clinic
    */
-  Woundclinic: "WND",
+  WND: "WND",
 } as const;
 
 /**

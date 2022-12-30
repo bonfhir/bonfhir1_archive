@@ -6,27 +6,27 @@ export const PomoanCode = {
   /**
    * Kashaya
    */
-  Kashaya: "x-KJU",
+  "x-KJU": "x-KJU",
 
   /**
    * Northeastern Pomo
    */
-  NortheasternPomo: "x-PEF",
+  "x-PEF": "x-PEF",
 
   /**
    * Southeastern Pomo
    */
-  SoutheasternPomo: "x-PEO",
+  "x-PEO": "x-PEO",
 
   /**
    * Southern Pomo
    */
-  SouthernPomo: "x-PEQ",
+  "x-PEQ": "x-PEQ",
 
   /**
    * Central Pomo
    */
-  CentralPomo: "x-POO",
+  "x-POO": "x-POO",
 } as const;
 
 /**

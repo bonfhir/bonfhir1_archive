@@ -6,22 +6,22 @@ export const ActInvoiceElementModifierCode = {
   /**
    * Electronic Form To Follow
    */
-  ElectronicFormToFollow: "EFORM",
+  EFORM: "EFORM",
 
   /**
    * Fax To Follow
    */
-  FaxToFollow: "FAX",
+  FAX: "FAX",
 
   /**
    * Last Invoice
    */
-  LastInvoice: "LINV",
+  LINV: "LINV",
 
   /**
    * Paper Documentation To Follow
    */
-  PaperDocumentationToFollow: "PAPER",
+  PAPER: "PAPER",
 } as const;
 
 /**

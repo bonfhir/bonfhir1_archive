@@ -6,12 +6,12 @@ export const AskedButUnknownCode = {
   /**
    * asked but unknown
    */
-  askedbutunknown: "ASKU",
+  ASKU: "ASKU",
 
   /**
    * temporarily unavailable
    */
-  temporarilyunavailable: "NAV",
+  NAV: "NAV",
 } as const;
 
 /**

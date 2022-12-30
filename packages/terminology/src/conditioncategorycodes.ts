@@ -6,12 +6,12 @@ export const ConditionCategoryCodesCode = {
   /**
    * Problem List Item
    */
-  ProblemListItem: "problem-list-item",
+  "problem-list-item": "problem-list-item",
 
   /**
    * Encounter Diagnosis
    */
-  EncounterDiagnosis: "encounter-diagnosis",
+  "encounter-diagnosis": "encounter-diagnosis",
 } as const;
 
 /**

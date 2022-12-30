@@ -8,7 +8,7 @@ export const ActRelationshipHasTriggerCode = {
   /**
    * has trigger
    */
-  hastrigger: "TRIG",
+  TRIG: "TRIG",
 } as const;
 
 /**

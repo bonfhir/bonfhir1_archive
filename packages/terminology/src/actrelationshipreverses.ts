@@ -10,7 +10,7 @@ export const ActRelationshipReversesCode = {
   /**
    * reverses
    */
-  reverses: "REV",
+  REV: "REV",
 } as const;
 
 /**

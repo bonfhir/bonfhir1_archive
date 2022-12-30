@@ -6,277 +6,277 @@ export const PHVSManufacturersOfVaccinesMVXCDCNIPCode = {
   /**
    * Abbott Laboratories
    */
-  AbbottLaboratories: "AB",
+  AB: "AB",
 
   /**
    * Adams Laboratories, Inc.
    */
-  AdamsLaboratoriesInc: "AD",
+  AD: "AD",
 
   /**
    * Alpha Therapeutic Corporation
    */
-  AlphaTherapeuticCorporation: "ALP",
+  ALP: "ALP",
 
   /**
    * Armour
    */
-  Armour: "AR",
+  AR: "AR",
 
   /**
    * Aventis Behring L.L.C.
    */
-  AventisBehringLLC: "AVB",
+  AVB: "AVB",
 
   /**
    * Aviron
    */
-  Aviron: "AVI",
+  AVI: "AVI",
 
   /**
    * Baxter Healthcare Corporation
    */
-  BaxterHealthcareCorporation: "BA",
+  BA: "BA",
 
   /**
    * Baxter Healthcare Corporation
    */
-  BaxterHealthcareCorporation: "BAH",
+  BAH: "BAH",
 
   /**
    * Bayer Corporation
    */
-  BayerCorporation: "BAY",
+  BAY: "BAY",
 
   /**
    * Berna Products
    */
-  BernaProducts: "BP",
+  BP: "BP",
 
   /**
    * Berna Products Corporation
    */
-  BernaProductsCorporation: "BPC",
+  BPC: "BPC",
 
   /**
    * Bioport Corporation
    */
-  BioportCorporation: "MIP",
+  MIP: "MIP",
 
   /**
    * Cangene Corporation
    */
-  CangeneCorporation: "CNJ",
+  CNJ: "CNJ",
 
   /**
    * Celltech Medeva Pharmaceuticals
    */
-  CelltechMedevaPharmaceuticals: "CMP",
+  CMP: "CMP",
 
   /**
    * Centeon L.L.C.
    */
-  CenteonLLC: "CEN",
+  CEN: "CEN",
 
   /**
    * Chiron Corporation
    */
-  ChironCorporation: "CHI",
+  CHI: "CHI",
 
   /**
    * Connaught
    */
-  Connaught: "CON",
+  CON: "CON",
 
   /**
    * DynPort Vaccine Company, LLC
    */
-  DynPortVaccineCompanyLLC: "DVC",
+  DVC: "DVC",
 
   /**
    * Evans Medical Limited
    */
-  EvansMedicalLimited: "EVN",
+  EVN: "EVN",
 
   /**
    * GeoVax Labs, Inc.
    */
-  GeoVaxLabsInc: "GEO",
+  GEO: "GEO",
 
   /**
    * GlaxoSmithKline
    */
-  GlaxoSmithKline: "SKB",
+  SKB: "SKB",
 
   /**
    * Greer Laboratories, Inc.
    */
-  GreerLaboratoriesInc: "GRE",
+  GRE: "GRE",
 
   /**
    * Immuno International AG
    */
-  ImmunoInternationalAG: "IAG",
+  IAG: "IAG",
 
   /**
    * Immuno-U.S., Inc.
    */
-  ImmunoUSInc: "IUS",
+  IUS: "IUS",
 
   /**
    * Korea Green Cross Corporation
    */
-  KoreaGreenCrossCorporation: "KGC",
+  KGC: "KGC",
 
   /**
    * Lederle
    */
-  Lederle: "LED",
+  LED: "LED",
 
   /**
    * Massachusetts Biologic Laboratories
    */
-  MassachusettsBiologicLaboratories: "MBL",
+  MBL: "MBL",
 
   /**
    * Massachusetts Public Health Biologic Laboratories
    */
-  MassachusettsPublicHealthBiologicLaboratories: "MA",
+  MA: "MA",
 
   /**
    * MedImmune, Inc.
    */
-  MedImmuneInc: "MED",
+  MED: "MED",
 
   /**
    * Merck & Co., Inc.
    */
-  MerckCoInc: "MSD",
+  MSD: "MSD",
 
   /**
    * Merieux
    */
-  Merieux: "IM",
+  IM: "IM",
 
   /**
    * Miles
    */
-  Miles: "MIL",
+  MIL: "MIL",
 
   /**
    * NABI
    */
-  NABI: "NAB",
+  NAB: "NAB",
 
   /**
    * New York Blood Center
    */
-  NewYorkBloodCenter: "NYB",
+  NYB: "NYB",
 
   /**
    * North American Vaccine, Inc.
    */
-  NorthAmericanVaccineInc: "NAV",
+  NAV: "NAV",
 
   /**
    * Novartis Pharmaceutical Corporation
    */
-  NovartisPharmaceuticalCorporation: "NOV",
+  NOV: "NOV",
 
   /**
    * Novavax, Inc.
    */
-  NovavaxInc: "NVX",
+  NVX: "NVX",
 
   /**
    * Organon Teknika Corporation
    */
-  OrganonTeknikaCorporation: "OTC",
+  OTC: "OTC",
 
   /**
    * Ortho-Clinical Diagnostics
    */
-  OrthoClinicalDiagnostics: "ORT",
+  ORT: "ORT",
 
   /**
    * Parkedale Pharmaceuticals
    */
-  ParkedalePharmaceuticals: "PD",
+  PD: "PD",
 
   /**
    * PowderJect Pharmaceuticals
    */
-  PowderJectPharmaceuticals: "PWJ",
+  PWJ: "PWJ",
 
   /**
    * Praxis Biologics
    */
-  PraxisBiologics: "PRX",
+  PRX: "PRX",
 
   /**
    * sanofi pasteur
    */
-  sanofipasteur: "PMC",
+  PMC: "PMC",
 
   /**
    * The Research Foundation for Microbial Diseases of Osaka University
    */
-  TheResearchFoundationforMicrobialDiseasesofOsakaUniversity: "JPN",
+  JPN: "JPN",
 
   /**
    * Sclavo, Inc.
    */
-  SclavoInc: "SCL",
+  SCL: "SCL",
 
   /**
    * Solvay Pharmaceuticals
    */
-  SolvayPharmaceuticals: "SOL",
+  SOL: "SOL",
 
   /**
    * Swiss Serum and Vaccine Inst.
    */
-  SwissSerumandVaccineInst: "SI",
+  SI: "SI",
 
   /**
    * Talecris Biotherapeutics
    */
-  TalecrisBiotherapeutics: "TAL",
+  TAL: "TAL",
 
   /**
    * United States Army Medical Research and Material Command
    */
-  UnitedStatesArmyMedicalResearchandMaterialCommand: "USA",
+  USA: "USA",
 
   /**
    * VaxGen
    */
-  VaxGen: "VXG",
+  VXG: "VXG",
 
   /**
    * Wyeth-Ayerst
    */
-  WyethAyerst: "WA",
+  WA: "WA",
 
   /**
    * Wyeth-Ayerst
    */
-  WyethAyerst: "WAL",
+  WAL: "WAL",
 
   /**
    * ZLB Behring
    */
-  ZLBBehring: "ZLB",
+  ZLB: "ZLB",
 
   /**
    * Other manufacturer
    */
-  Othermanufacturer: "OTH",
+  OTH: "OTH",
 
   /**
    * Unknown manufacturer
    */
-  Unknownmanufacturer: "UNK",
+  UNK: "UNK",
 } as const;
 
 /**

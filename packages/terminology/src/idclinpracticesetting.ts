@@ -6,12 +6,12 @@ export const IDClinPracticeSettingCode = {
   /**
    * Infectious disease clinic
    */
-  Infectiousdiseaseclinic: "INFD",
+  INFD: "INFD",
 
   /**
    * Pediatric infectious disease clinic
    */
-  Pediatricinfectiousdiseaseclinic: "PEDID",
+  PEDID: "PEDID",
 } as const;
 
 /**

@@ -6,12 +6,12 @@ export const RoleClassPartCode = {
   /**
    * part
    */
-  part: "PART",
+  PART: "PART",
 
   /**
    * active moiety
    */
-  activemoiety: "ACTM",
+  ACTM: "ACTM",
 } as const;
 
 /**

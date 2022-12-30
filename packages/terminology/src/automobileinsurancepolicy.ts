@@ -6,17 +6,17 @@ export const AutomobileInsurancePolicyCode = {
   /**
    * automobile
    */
-  automobile: "AUTOPOL",
+  AUTOPOL: "AUTOPOL",
 
   /**
    * collision coverage policy
    */
-  collisioncoveragepolicy: "COL",
+  COL: "COL",
 
   /**
    * uninsured motorist policy
    */
-  uninsuredmotoristpolicy: "UNINSMOT",
+  UNINSMOT: "UNINSMOT",
 } as const;
 
 /**

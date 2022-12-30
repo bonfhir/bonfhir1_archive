@@ -6,22 +6,22 @@ export const FHIRdeviceStatusCode = {
   /**
    * Active
    */
-  Active: "active",
+  active: "active",
 
   /**
    * Inactive
    */
-  Inactive: "inactive",
+  inactive: "inactive",
 
   /**
    * Entered in Error
    */
-  EnteredinError: "entered-in-error",
+  "entered-in-error": "entered-in-error",
 
   /**
    * Unknown
    */
-  Unknown: "unknown",
+  unknown: "unknown",
 } as const;
 
 /**

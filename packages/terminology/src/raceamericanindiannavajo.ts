@@ -6,22 +6,22 @@ export const RaceAmericanIndianNavajoCode = {
   /**
    * Navajo
    */
-  Navajo: "1382-1",
+  "1382-1": "1382-1",
 
   /**
    * Alamo Navajo
    */
-  AlamoNavajo: "1383-9",
+  "1383-9": "1383-9",
 
   /**
    * Canoncito Navajo
    */
-  CanoncitoNavajo: "1384-7",
+  "1384-7": "1384-7",
 
   /**
    * Ramah Navajo
    */
-  RamahNavajo: "1385-4",
+  "1385-4": "1385-4",
 } as const;
 
 /**

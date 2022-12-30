@@ -10,7 +10,7 @@ export const ActRelationshipHasCostCode = {
   /**
    * has cost
    */
-  hascost: "COST",
+  COST: "COST",
 } as const;
 
 /**

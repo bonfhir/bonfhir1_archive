@@ -6,22 +6,22 @@ export const Hl7VSAdjustmentCategoryCodeCode = {
   /**
    * Edit/Adjudication Response
    */
-  EditAdjudicationResponse: "EA",
+  EA: "EA",
 
   /**
    * Information
    */
-  Information: "IN",
+  IN: "IN",
 
   /**
    * Provider Adjustment
    */
-  ProviderAdjustment: "PA",
+  PA: "PA",
 
   /**
    * Processing Result
    */
-  ProcessingResult: "PR",
+  PR: "PR",
 } as const;
 
 /**

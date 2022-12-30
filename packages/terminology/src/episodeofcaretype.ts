@@ -6,27 +6,27 @@ export const EpisodeOfCareTypeCode = {
   /**
    * Home and Community Care
    */
-  HomeandCommunityCare: "hacc",
+  hacc: "hacc",
 
   /**
    * Post Acute Care
    */
-  PostAcuteCare: "pac",
+  pac: "pac",
 
   /**
    * Post coordinated diabetes program
    */
-  Postcoordinateddiabetesprogram: "diab",
+  diab: "diab",
 
   /**
    * Drug and alcohol rehabilitation
    */
-  Drugandalcoholrehabilitation: "da",
+  da: "da",
 
   /**
    * Community-based aged care
    */
-  Communitybasedagedcare: "cacp",
+  cacp: "cacp",
 } as const;
 
 /**

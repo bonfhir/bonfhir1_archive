@@ -6,67 +6,67 @@ export const Hl7VSIntendedProcedureTypeCode = {
   /**
    * Whole Blood
    */
-  WholeBlood: "WBL",
+  WBL: "WBL",
 
   /**
    * Double Red Cells
    */
-  DoubleRedCells: "2RC",
+  "2RC": "2RC",
 
   /**
    * Plasma
    */
-  Plasma: "PLS",
+  PLS: "PLS",
 
   /**
    * Platelets
    */
-  Platelets: "PLT",
+  PLT: "PLT",
 
   /**
    * Platelets and Plasma
    */
-  PlateletsandPlasma: "PNP",
+  PNP: "PNP",
 
   /**
    * Platelets and Red Cells
    */
-  PlateletsandRedCells: "PNR",
+  PNR: "PNR",
 
   /**
    * Platelets, Plasma, and Red Cells
    */
-  PlateletsPlasmaandRedCells: "PPR",
+  PPR: "PPR",
 
   /**
    * Granulocytes
    */
-  Granulocytes: "GRN",
+  GRN: "GRN",
 
   /**
    * Hemachromatosis
    */
-  Hemachromatosis: "HEM",
+  HEM: "HEM",
 
   /**
    * Hematopoietic Progenitor Cells
    */
-  HematopoieticProgenitorCells: "HPC",
+  HPC: "HPC",
 
   /**
    * Lymphocytes
    */
-  Lymphocytes: "LYM",
+  LYM: "LYM",
 
   /**
    * Therapeutic Apheresis
    */
-  TherapeuticApheresis: "THA",
+  THA: "THA",
 
   /**
    * Therapeutic Whole Blood
    */
-  TherapeuticWholeBlood: "THW",
+  THW: "THW",
 } as const;
 
 /**

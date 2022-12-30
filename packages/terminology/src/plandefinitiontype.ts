@@ -6,22 +6,22 @@ export const PlanDefinitionTypeCode = {
   /**
    * Order Set
    */
-  OrderSet: "order-set",
+  "order-set": "order-set",
 
   /**
    * Clinical Protocol
    */
-  ClinicalProtocol: "clinical-protocol",
+  "clinical-protocol": "clinical-protocol",
 
   /**
    * ECA Rule
    */
-  ECARule: "eca-rule",
+  "eca-rule": "eca-rule",
 
   /**
    * Workflow Definition
    */
-  WorkflowDefinition: "workflow-definition",
+  "workflow-definition": "workflow-definition",
 } as const;
 
 /**

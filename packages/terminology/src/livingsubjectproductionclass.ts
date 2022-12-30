@@ -6,87 +6,87 @@ export const LivingSubjectProductionClassCode = {
   /**
    * Beef
    */
-  Beef: "BF",
+  BF: "BF",
 
   /**
    * Broiler
    */
-  Broiler: "BL",
+  BL: "BL",
 
   /**
    * Breeder
    */
-  Breeder: "BR",
+  BR: "BR",
 
   /**
    * Companion
    */
-  Companion: "CO",
+  CO: "CO",
 
   /**
    * Dairy
    */
-  Dairy: "DA",
+  DA: "DA",
 
   /**
    * Draft
    */
-  Draft: "DR",
+  DR: "DR",
 
   /**
    * Dual
    */
-  Dual: "DU",
+  DU: "DU",
 
   /**
    * Fiber
    */
-  Fiber: "FI",
+  FI: "FI",
 
   /**
    * Layer
    */
-  Layer: "LY",
+  LY: "LY",
 
   /**
    * Meat
    */
-  Meat: "MT",
+  MT: "MT",
 
   /**
    * Multiplier
    */
-  Multiplier: "MU",
+  MU: "MU",
 
   /**
    * Pleasure
    */
-  Pleasure: "PL",
+  PL: "PL",
 
   /**
    * Racing
    */
-  Racing: "RC",
+  RC: "RC",
 
   /**
    * Show
    */
-  Show: "SH",
+  SH: "SH",
 
   /**
    * Veal
    */
-  Veal: "VL",
+  VL: "VL",
 
   /**
    * Wool
    */
-  Wool: "WL",
+  WL: "WL",
 
   /**
    * Working
    */
-  Working: "WO",
+  WO: "WO",
 } as const;
 
 /**

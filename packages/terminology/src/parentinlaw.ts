@@ -6,22 +6,22 @@ export const ParentInLawCode = {
   /**
    * parent in-law
    */
-  parentinlaw: "PRNINLAW",
+  PRNINLAW: "PRNINLAW",
 
   /**
    * father-in-law
    */
-  fatherinlaw: "FTHINLAW",
+  FTHINLAW: "FTHINLAW",
 
   /**
    * mother-in-law
    */
-  motherinlaw: "MTHINLAW",
+  MTHINLAW: "MTHINLAW",
 
   /**
    * mother-in-law
    */
-  motherinlaw: "MTHINLOAW",
+  MTHINLOAW: "MTHINLOAW",
 } as const;
 
 /**

@@ -12,22 +12,22 @@ export const ActRelationshipSplitCode = {
   /**
    * exclusive try once
    */
-  exclusivetryonce: "E1",
+  E1: "E1",
 
   /**
    * exclusive wait
    */
-  exclusivewait: "EW",
+  EW: "EW",
 
   /**
    * inclusive try once
    */
-  inclusivetryonce: "I1",
+  I1: "I1",
 
   /**
    * inclusive wait
    */
-  inclusivewait: "IW",
+  IW: "IW",
 } as const;
 
 /**

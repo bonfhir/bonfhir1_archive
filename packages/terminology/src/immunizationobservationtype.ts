@@ -6,17 +6,17 @@ export const ImmunizationObservationTypeCode = {
   /**
    * ImmunizationObservationType
    */
-  ImmunizationObservationType: "_ImmunizationObservationType",
+  _ImmunizationObservationType: "_ImmunizationObservationType",
 
   /**
    * antigen count
    */
-  antigencount: "OBSANTC",
+  OBSANTC: "OBSANTC",
 
   /**
    * antigen validity
    */
-  antigenvalidity: "OBSANTV",
+  OBSANTV: "OBSANTV",
 } as const;
 
 /**

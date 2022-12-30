@@ -6,52 +6,52 @@ export const StyleTypeCode = {
   /**
    * Bold Font
    */
-  BoldFont: "bold",
+  bold: "bold",
 
   /**
    * Emphasised Font
    */
-  EmphasisedFont: "emphasis",
+  emphasis: "emphasis",
 
   /**
    * Italics Font
    */
-  ItalicsFont: "italics",
+  italics: "italics",
 
   /**
    * Underline Font
    */
-  UnderlineFont: "underline",
+  underline: "underline",
 
   /**
    * Bottom Rule
    */
-  BottomRule: "Botrule",
+  Botrule: "Botrule",
 
   /**
    * Left-sided rule
    */
-  Leftsidedrule: "Lrule",
+  Lrule: "Lrule",
 
   /**
    * Right-sided rule
    */
-  Rightsidedrule: "Rrule",
+  Rrule: "Rrule",
 
   /**
    * Top Rule
    */
-  TopRule: "Toprule",
+  Toprule: "Toprule",
 
   /**
    * Top Rule
    */
-  TopRule: "TORULE",
+  TORULE: "TORULE",
 
   /**
    * Ordered List Style
    */
-  OrderedListStyle: "_OrderedListStyle",
+  _OrderedListStyle: "_OrderedListStyle",
 
   /**
    * Arabic
@@ -66,7 +66,7 @@ export const StyleTypeCode = {
   /**
    * Big Alpha
    */
-  BigAlpha: "BIG.ALPHA",
+  "BIG.ALPHA": "BIG.ALPHA",
 
   /**
    * Big Roman
@@ -76,7 +76,7 @@ export const StyleTypeCode = {
   /**
    * Big Roman
    */
-  BigRoman: "BIG.ROMAN",
+  "BIG.ROMAN": "BIG.ROMAN",
 
   /**
    * Little Alpha
@@ -86,7 +86,7 @@ export const StyleTypeCode = {
   /**
    * Little Alpha
    */
-  LittleAlpha: "LITTLE.ALPHA",
+  "LITTLE.ALPHA": "LITTLE.ALPHA",
 
   /**
    * Little Roman
@@ -96,12 +96,12 @@ export const StyleTypeCode = {
   /**
    * Little Roman
    */
-  LittleRoman: "LITTLE.ROMAN",
+  "LITTLE.ROMAN": "LITTLE.ROMAN",
 
   /**
    * Unordered List Style
    */
-  UnorderedListStyle: "_UnorderedListStyle",
+  _UnorderedListStyle: "_UnorderedListStyle",
 
   /**
    * Circle

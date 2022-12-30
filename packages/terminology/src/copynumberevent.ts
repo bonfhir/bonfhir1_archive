@@ -6,17 +6,17 @@ export const CopyNumberEventCode = {
   /**
    * amplification
    */
-  amplification: "amp",
+  amp: "amp",
 
   /**
    * deletion
    */
-  deletion: "del",
+  del: "del",
 
   /**
    * loss of function
    */
-  lossoffunction: "lof",
+  lof: "lof",
 } as const;
 
 /**

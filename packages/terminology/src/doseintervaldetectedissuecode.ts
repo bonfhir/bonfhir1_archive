@@ -6,12 +6,12 @@ export const DoseIntervalDetectedIssueCodeCode = {
   /**
    * Dose-Interval Alert
    */
-  DoseIntervalAlert: "DOSEIVL",
+  DOSEIVL: "DOSEIVL",
 
   /**
    * Dose-Interval for Indication Alert
    */
-  DoseIntervalforIndicationAlert: "DOSEIVLIND",
+  DOSEIVLIND: "DOSEIVLIND",
 } as const;
 
 /**

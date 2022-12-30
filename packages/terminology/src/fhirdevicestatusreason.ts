@@ -6,42 +6,42 @@ export const FHIRDeviceStatusReasonCode = {
   /**
    * Online
    */
-  Online: "online",
+  online: "online",
 
   /**
    * Paused
    */
-  Paused: "paused",
+  paused: "paused",
 
   /**
    * Standby
    */
-  Standby: "standby",
+  standby: "standby",
 
   /**
    * Offline
    */
-  Offline: "offline",
+  offline: "offline",
 
   /**
    * Not Ready
    */
-  NotReady: "not-ready",
+  "not-ready": "not-ready",
 
   /**
    * Transducer Disconnected
    */
-  TransducerDisconnected: "transduc-discon",
+  "transduc-discon": "transduc-discon",
 
   /**
    * Hardware Disconnected
    */
-  HardwareDisconnected: "hw-discon",
+  "hw-discon": "hw-discon",
 
   /**
    * Off
    */
-  Off: "off",
+  off: "off",
 } as const;
 
 /**

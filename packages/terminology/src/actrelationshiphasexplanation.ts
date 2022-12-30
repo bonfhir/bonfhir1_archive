@@ -6,7 +6,7 @@ export const ActRelationshipHasExplanationCode = {
   /**
    * has explanation
    */
-  hasexplanation: "EXPL",
+  EXPL: "EXPL",
 } as const;
 
 /**

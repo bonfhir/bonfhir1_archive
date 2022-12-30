@@ -6,12 +6,12 @@ export const CreeMontagnaisCode = {
   /**
    * Cree
    */
-  Cree: "_Cree",
+  _Cree: "_Cree",
 
   /**
    * Western Cree
    */
-  WesternCree: "x-CRP",
+  "x-CRP": "x-CRP",
 } as const;
 
 /**

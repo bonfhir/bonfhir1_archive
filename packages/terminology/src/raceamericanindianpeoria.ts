@@ -6,12 +6,12 @@ export const RaceAmericanIndianPeoriaCode = {
   /**
    * Peoria
    */
-  Peoria: "1450-6",
+  "1450-6": "1450-6",
 
   /**
    * Oklahoma Peoria
    */
-  OklahomaPeoria: "1451-4",
+  "1451-4": "1451-4",
 } as const;
 
 /**

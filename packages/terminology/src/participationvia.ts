@@ -6,7 +6,7 @@ export const ParticipationViaCode = {
   /**
    * via
    */
-  via: "VIA",
+  VIA: "VIA",
 } as const;
 
 /**

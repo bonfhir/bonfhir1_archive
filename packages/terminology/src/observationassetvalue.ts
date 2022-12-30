@@ -6,27 +6,27 @@ export const ObservationAssetValueCode = {
   /**
    * asset
    */
-  asset: "ASSET",
+  ASSET: "ASSET",
 
   /**
    * annuity
    */
-  annuity: "ANNUITY",
+  ANNUITY: "ANNUITY",
 
   /**
    * real property
    */
-  realproperty: "PROP",
+  PROP: "PROP",
 
   /**
    * retirement investment account
    */
-  retirementinvestmentaccount: "RETACCT",
+  RETACCT: "RETACCT",
 
   /**
    * trust
    */
-  trust: "TRUST",
+  TRUST: "TRUST",
 } as const;
 
 /**

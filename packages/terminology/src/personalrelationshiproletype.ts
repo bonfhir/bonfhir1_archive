@@ -8,557 +8,557 @@ export const PersonalRelationshipRoleTypeCode = {
   /**
    * family member
    */
-  familymember: "FAMMEMB",
+  FAMMEMB: "FAMMEMB",
 
   /**
    * child
    */
-  child: "CHILD",
+  CHILD: "CHILD",
 
   /**
    * adopted child
    */
-  adoptedchild: "CHLDADOPT",
+  CHLDADOPT: "CHLDADOPT",
 
   /**
    * adopted daughter
    */
-  adopteddaughter: "DAUADOPT",
+  DAUADOPT: "DAUADOPT",
 
   /**
    * adopted son
    */
-  adoptedson: "SONADOPT",
+  SONADOPT: "SONADOPT",
 
   /**
    * foster child
    */
-  fosterchild: "CHLDFOST",
+  CHLDFOST: "CHLDFOST",
 
   /**
    * foster daughter
    */
-  fosterdaughter: "DAUFOST",
+  DAUFOST: "DAUFOST",
 
   /**
    * foster son
    */
-  fosterson: "SONFOST",
+  SONFOST: "SONFOST",
 
   /**
    * daughter
    */
-  daughter: "DAUC",
+  DAUC: "DAUC",
 
   /**
    * natural daughter
    */
-  naturaldaughter: "DAU",
+  DAU: "DAU",
 
   /**
    * stepdaughter
    */
-  stepdaughter: "STPDAU",
+  STPDAU: "STPDAU",
 
   /**
    * natural child
    */
-  naturalchild: "NCHILD",
+  NCHILD: "NCHILD",
 
   /**
    * natural son
    */
-  naturalson: "SON",
+  SON: "SON",
 
   /**
    * son
    */
-  son: "SONC",
+  SONC: "SONC",
 
   /**
    * stepson
    */
-  stepson: "STPSON",
+  STPSON: "STPSON",
 
   /**
    * step child
    */
-  stepchild: "STPCHLD",
+  STPCHLD: "STPCHLD",
 
   /**
    * extended family member
    */
-  extendedfamilymember: "EXT",
+  EXT: "EXT",
 
   /**
    * aunt
    */
-  aunt: "AUNT",
+  AUNT: "AUNT",
 
   /**
    * maternal aunt
    */
-  maternalaunt: "MAUNT",
+  MAUNT: "MAUNT",
 
   /**
    * paternal aunt
    */
-  paternalaunt: "PAUNT",
+  PAUNT: "PAUNT",
 
   /**
    * cousin
    */
-  cousin: "COUSN",
+  COUSN: "COUSN",
 
   /**
    * maternal cousin
    */
-  maternalcousin: "MCOUSN",
+  MCOUSN: "MCOUSN",
 
   /**
    * paternal cousin
    */
-  paternalcousin: "PCOUSN",
+  PCOUSN: "PCOUSN",
 
   /**
    * great grandparent
    */
-  greatgrandparent: "GGRPRN",
+  GGRPRN: "GGRPRN",
 
   /**
    * great grandfather
    */
-  greatgrandfather: "GGRFTH",
+  GGRFTH: "GGRFTH",
 
   /**
    * maternal great-grandfather
    */
-  maternalgreatgrandfather: "MGGRFTH",
+  MGGRFTH: "MGGRFTH",
 
   /**
    * paternal great-grandfather
    */
-  paternalgreatgrandfather: "PGGRFTH",
+  PGGRFTH: "PGGRFTH",
 
   /**
    * great grandmother
    */
-  greatgrandmother: "GGRMTH",
+  GGRMTH: "GGRMTH",
 
   /**
    * maternal great-grandmother
    */
-  maternalgreatgrandmother: "MGGRMTH",
+  MGGRMTH: "MGGRMTH",
 
   /**
    * paternal great-grandmother
    */
-  paternalgreatgrandmother: "PGGRMTH",
+  PGGRMTH: "PGGRMTH",
 
   /**
    * maternal great-grandparent
    */
-  maternalgreatgrandparent: "MGGRPRN",
+  MGGRPRN: "MGGRPRN",
 
   /**
    * paternal great-grandparent
    */
-  paternalgreatgrandparent: "PGGRPRN",
+  PGGRPRN: "PGGRPRN",
 
   /**
    * grandchild
    */
-  grandchild: "GRNDCHILD",
+  GRNDCHILD: "GRNDCHILD",
 
   /**
    * granddaughter
    */
-  granddaughter: "GRNDDAU",
+  GRNDDAU: "GRNDDAU",
 
   /**
    * grandson
    */
-  grandson: "GRNDSON",
+  GRNDSON: "GRNDSON",
 
   /**
    * grandparent
    */
-  grandparent: "GRPRN",
+  GRPRN: "GRPRN",
 
   /**
    * grandfather
    */
-  grandfather: "GRFTH",
+  GRFTH: "GRFTH",
 
   /**
    * maternal grandfather
    */
-  maternalgrandfather: "MGRFTH",
+  MGRFTH: "MGRFTH",
 
   /**
    * paternal grandfather
    */
-  paternalgrandfather: "PGRFTH",
+  PGRFTH: "PGRFTH",
 
   /**
    * grandmother
    */
-  grandmother: "GRMTH",
+  GRMTH: "GRMTH",
 
   /**
    * maternal grandmother
    */
-  maternalgrandmother: "MGRMTH",
+  MGRMTH: "MGRMTH",
 
   /**
    * paternal grandmother
    */
-  paternalgrandmother: "PGRMTH",
+  PGRMTH: "PGRMTH",
 
   /**
    * maternal grandparent
    */
-  maternalgrandparent: "MGRPRN",
+  MGRPRN: "MGRPRN",
 
   /**
    * paternal grandparent
    */
-  paternalgrandparent: "PGRPRN",
+  PGRPRN: "PGRPRN",
 
   /**
    * inlaw
    */
-  inlaw: "INLAW",
+  INLAW: "INLAW",
 
   /**
    * child-in-law
    */
-  childinlaw: "CHLDINLAW",
+  CHLDINLAW: "CHLDINLAW",
 
   /**
    * daughter in-law
    */
-  daughterinlaw: "DAUINLAW",
+  DAUINLAW: "DAUINLAW",
 
   /**
    * son in-law
    */
-  soninlaw: "SONINLAW",
+  SONINLAW: "SONINLAW",
 
   /**
    * parent in-law
    */
-  parentinlaw: "PRNINLAW",
+  PRNINLAW: "PRNINLAW",
 
   /**
    * father-in-law
    */
-  fatherinlaw: "FTHINLAW",
+  FTHINLAW: "FTHINLAW",
 
   /**
    * mother-in-law
    */
-  motherinlaw: "MTHINLAW",
+  MTHINLAW: "MTHINLAW",
 
   /**
    * mother-in-law
    */
-  motherinlaw: "MTHINLOAW",
+  MTHINLOAW: "MTHINLOAW",
 
   /**
    * sibling in-law
    */
-  siblinginlaw: "SIBINLAW",
+  SIBINLAW: "SIBINLAW",
 
   /**
    * brother-in-law
    */
-  brotherinlaw: "BROINLAW",
+  BROINLAW: "BROINLAW",
 
   /**
    * sister-in-law
    */
-  sisterinlaw: "SISINLAW",
+  SISINLAW: "SISINLAW",
 
   /**
    * sister-in-law
    */
-  sisterinlaw: "SISLINLAW",
+  SISLINLAW: "SISLINLAW",
 
   /**
    * niece/nephew
    */
-  niecenephew: "NIENEPH",
+  NIENEPH: "NIENEPH",
 
   /**
    * nephew
    */
-  nephew: "NEPHEW",
+  NEPHEW: "NEPHEW",
 
   /**
    * niece
    */
-  niece: "NIECE",
+  NIECE: "NIECE",
 
   /**
    * uncle
    */
-  uncle: "UNCLE",
+  UNCLE: "UNCLE",
 
   /**
    * maternal uncle
    */
-  maternaluncle: "MUNCLE",
+  MUNCLE: "MUNCLE",
 
   /**
    * paternal uncle
    */
-  paternaluncle: "PUNCLE",
+  PUNCLE: "PUNCLE",
 
   /**
    * parent
    */
-  parent: "PRN",
+  PRN: "PRN",
 
   /**
    * adoptive parent
    */
-  adoptiveparent: "ADOPTP",
+  ADOPTP: "ADOPTP",
 
   /**
    * adoptive father
    */
-  adoptivefather: "ADOPTF",
+  ADOPTF: "ADOPTF",
 
   /**
    * adoptive mother
    */
-  adoptivemother: "ADOPTM",
+  ADOPTM: "ADOPTM",
 
   /**
    * father
    */
-  father: "FTH",
+  FTH: "FTH",
 
   /**
    * foster father
    */
-  fosterfather: "FTHFOST",
+  FTHFOST: "FTHFOST",
 
   /**
    * natural father
    */
-  naturalfather: "NFTH",
+  NFTH: "NFTH",
 
   /**
    * natural father of fetus
    */
-  naturalfatheroffetus: "NFTHF",
+  NFTHF: "NFTHF",
 
   /**
    * stepfather
    */
-  stepfather: "STPFTH",
+  STPFTH: "STPFTH",
 
   /**
    * mother
    */
-  mother: "MTH",
+  MTH: "MTH",
 
   /**
    * gestational mother
    */
-  gestationalmother: "GESTM",
+  GESTM: "GESTM",
 
   /**
    * foster mother
    */
-  fostermother: "MTHFOST",
+  MTHFOST: "MTHFOST",
 
   /**
    * natural mother
    */
-  naturalmother: "NMTH",
+  NMTH: "NMTH",
 
   /**
    * natural mother of fetus
    */
-  naturalmotheroffetus: "NMTHF",
+  NMTHF: "NMTHF",
 
   /**
    * stepmother
    */
-  stepmother: "STPMTH",
+  STPMTH: "STPMTH",
 
   /**
    * natural parent
    */
-  naturalparent: "NPRN",
+  NPRN: "NPRN",
 
   /**
    * foster parent
    */
-  fosterparent: "PRNFOST",
+  PRNFOST: "PRNFOST",
 
   /**
    * step parent
    */
-  stepparent: "STPPRN",
+  STPPRN: "STPPRN",
 
   /**
    * sibling
    */
-  sibling: "SIB",
+  SIB: "SIB",
 
   /**
    * brother
    */
-  brother: "BRO",
+  BRO: "BRO",
 
   /**
    * half-brother
    */
-  halfbrother: "HBRO",
+  HBRO: "HBRO",
 
   /**
    * natural brother
    */
-  naturalbrother: "NBRO",
+  NBRO: "NBRO",
 
   /**
    * twin brother
    */
-  twinbrother: "TWINBRO",
+  TWINBRO: "TWINBRO",
 
   /**
    * fraternal twin brother
    */
-  fraternaltwinbrother: "FTWINBRO",
+  FTWINBRO: "FTWINBRO",
 
   /**
    * identical twin brother
    */
-  identicaltwinbrother: "ITWINBRO",
+  ITWINBRO: "ITWINBRO",
 
   /**
    * stepbrother
    */
-  stepbrother: "STPBRO",
+  STPBRO: "STPBRO",
 
   /**
    * half-sibling
    */
-  halfsibling: "HSIB",
+  HSIB: "HSIB",
 
   /**
    * half-sister
    */
-  halfsister: "HSIS",
+  HSIS: "HSIS",
 
   /**
    * natural sibling
    */
-  naturalsibling: "NSIB",
+  NSIB: "NSIB",
 
   /**
    * natural sister
    */
-  naturalsister: "NSIS",
+  NSIS: "NSIS",
 
   /**
    * twin sister
    */
-  twinsister: "TWINSIS",
+  TWINSIS: "TWINSIS",
 
   /**
    * fraternal twin sister
    */
-  fraternaltwinsister: "FTWINSIS",
+  FTWINSIS: "FTWINSIS",
 
   /**
    * identical twin sister
    */
-  identicaltwinsister: "ITWINSIS",
+  ITWINSIS: "ITWINSIS",
 
   /**
    * twin
    */
-  twin: "TWIN",
+  TWIN: "TWIN",
 
   /**
    * fraternal twin
    */
-  fraternaltwin: "FTWIN",
+  FTWIN: "FTWIN",
 
   /**
    * identical twin
    */
-  identicaltwin: "ITWIN",
+  ITWIN: "ITWIN",
 
   /**
    * sister
    */
-  sister: "SIS",
+  SIS: "SIS",
 
   /**
    * stepsister
    */
-  stepsister: "STPSIS",
+  STPSIS: "STPSIS",
 
   /**
    * step sibling
    */
-  stepsibling: "STPSIB",
+  STPSIB: "STPSIB",
 
   /**
    * significant other
    */
-  significantother: "SIGOTHR",
+  SIGOTHR: "SIGOTHR",
 
   /**
    * domestic partner
    */
-  domesticpartner: "DOMPART",
+  DOMPART: "DOMPART",
 
   /**
    * former spouse
    */
-  formerspouse: "FMRSPS",
+  FMRSPS: "FMRSPS",
 
   /**
    * spouse
    */
-  spouse: "SPS",
+  SPS: "SPS",
 
   /**
    * husband
    */
-  husband: "HUSB",
+  HUSB: "HUSB",
 
   /**
    * wife
    */
-  wife: "WIFE",
+  WIFE: "WIFE",
 
   /**
    * unrelated friend
    */
-  unrelatedfriend: "FRND",
+  FRND: "FRND",
 
   /**
    * neighbor
    */
-  neighbor: "NBOR",
+  NBOR: "NBOR",
 
   /**
    * self
    */
-  self: "ONESELF",
+  ONESELF: "ONESELF",
 
   /**
    * Roommate
    */
-  Roommate: "ROOM",
+  ROOM: "ROOM",
 } as const;
 
 /**

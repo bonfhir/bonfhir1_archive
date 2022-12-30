@@ -6,37 +6,37 @@ export const Hl7VSOrganizationUnitTypeCode = {
   /**
    * Home
    */
-  Home: "H",
+  H: "H",
 
   /**
    * Office
    */
-  Office: "O",
+  O: "O",
 
   /**
    * Hospital
    */
-  Hospital: "1",
+  "1": "1",
 
   /**
    * Physician Clinic
    */
-  PhysicianClinic: "2",
+  "2": "2",
 
   /**
    * Long Term Care
    */
-  LongTermCare: "3",
+  "3": "3",
 
   /**
    * Acute Care
    */
-  AcuteCare: "4",
+  "4": "4",
 
   /**
    * Other
    */
-  Other: "5",
+  "5": "5",
 } as const;
 
 /**

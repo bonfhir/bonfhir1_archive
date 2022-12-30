@@ -6,7 +6,7 @@ export const ActClassActionCode = {
   /**
    * action
    */
-  action: "ACTN",
+  ACTN: "ACTN",
 } as const;
 
 /**

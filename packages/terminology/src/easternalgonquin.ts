@@ -6,37 +6,37 @@ export const EasternAlgonquinCode = {
   /**
    * Abenakian
    */
-  Abenakian: "_Abenakian",
+  _Abenakian: "_Abenakian",
 
   /**
    * Eastern Abenaki
    */
-  EasternAbenaki: "x-AAQ",
+  "x-AAQ": "x-AAQ",
 
   /**
    * Western Abenaki
    */
-  WesternAbenaki: "x-ABE",
+  "x-ABE": "x-ABE",
 
   /**
    * Maliseet-Passamaquoddy
    */
-  MaliseetPassamaquoddy: "x-MAC",
+  "x-MAC": "x-MAC",
 
   /**
    * Delawaran
    */
-  Delawaran: "_Delawaran",
+  _Delawaran: "_Delawaran",
 
   /**
    * Unami Delaware
    */
-  UnamiDelaware: "x-DEL",
+  "x-DEL": "x-DEL",
 
   /**
    * Micmac
    */
-  Micmac: "x-MIC",
+  "x-MIC": "x-MIC",
 } as const;
 
 /**

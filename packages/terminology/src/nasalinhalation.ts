@@ -6,17 +6,17 @@ export const NasalInhalationCode = {
   /**
    * Inhalation, nasal
    */
-  Inhalationnasal: "NASINHL",
+  NASINHL: "NASINHL",
 
   /**
    * Inhalation, nasal cannula
    */
-  Inhalationnasalcannula: "NASINHLC",
+  NASINHLC: "NASINHLC",
 
   /**
    * Inhalation, nasal cannula
    */
-  Inhalationnasalcannula: "NP",
+  NP: "NP",
 } as const;
 
 /**

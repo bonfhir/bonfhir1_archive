@@ -6,72 +6,72 @@ export const Hl7VSUniversalIdTypeCode = {
   /**
    * College of American Pathologist Accreditation Number
    */
-  CollegeofAmericanPathologistAccreditationNumber: "CAP",
+  CAP: "CAP",
 
   /**
    * Clinical Laboratory Improvement Amendments
    */
-  ClinicalLaboratoryImprovementAmendments: "CLIA",
+  CLIA: "CLIA",
 
   /**
    * Clinical laboratory Improvement Program
    */
-  ClinicallaboratoryImprovementProgram: "CLIP",
+  CLIP: "CLIP",
 
   /**
    * Domain Name System
    */
-  DomainNameSystem: "DNS",
+  DNS: "DNS",
 
   /**
    * IEEE 64-bit Extended Unique Identifier
    */
-  IEEE64bitExtendedUniqueIdentifier: "EUI64",
+  EUI64: "EUI64",
 
   /**
    * globally unique identifier
    */
-  globallyuniqueidentifier: "GUID",
+  GUID: "GUID",
 
   /**
    * CEN Healthcare Coding Identifier
    */
-  CENHealthcareCodingIdentifier: "HCD",
+  HCD: "HCD",
 
   /**
    * HL7 registration schemes
    */
-  HL7registrationschemes: "HL7",
+  HL7: "HL7",
 
   /**
    * ISO Object Identifier
    */
-  ISOObjectIdentifier: "ISO",
+  ISO: "ISO",
 
   /**
    * Local
    */
-  Local: "L",
+  L: "L",
 
   /**
    * Local
    */
-  Local: "L,M,N",
+  "L,M,N": "L,M,N",
 
   /**
    * Local
    */
-  Local: "M",
+  M: "M",
 
   /**
    * Local
    */
-  Local: "N",
+  N: "N",
 
   /**
    * US National Provider Identifier
    */
-  USNationalProviderIdentifier: "NPI",
+  NPI: "NPI",
 
   /**
    * Random
@@ -81,22 +81,22 @@ export const Hl7VSUniversalIdTypeCode = {
   /**
    * Uniform Resource Identifier
    */
-  UniformResourceIdentifier: "URI",
+  URI: "URI",
 
   /**
    * Universal Unique Identifier
    */
-  UniversalUniqueIdentifier: "UUID",
+  UUID: "UUID",
 
   /**
    * X.400 MHS identifier
    */
-  X400MHSidentifier: "x400",
+  x400: "x400",
 
   /**
    * X500 directory Name
    */
-  X500directoryName: "x500",
+  x500: "x500",
 } as const;
 
 /**

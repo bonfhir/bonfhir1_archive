@@ -6,17 +6,17 @@ export const Hl7VSMessageWaitingPriorityCode = {
   /**
    * High
    */
-  High: "H",
+  H: "H",
 
   /**
    * Medium
    */
-  Medium: "M",
+  M: "M",
 
   /**
    * Low
    */
-  Low: "L",
+  L: "L",
 } as const;
 
 /**

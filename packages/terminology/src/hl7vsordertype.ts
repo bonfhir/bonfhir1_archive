@@ -6,12 +6,12 @@ export const Hl7VSOrderTypeCode = {
   /**
    * Inpatient Order
    */
-  InpatientOrder: "I",
+  I: "I",
 
   /**
    * Outpatient Order
    */
-  OutpatientOrder: "O",
+  O: "O",
 } as const;
 
 /**

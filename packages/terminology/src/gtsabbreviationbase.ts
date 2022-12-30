@@ -26,7 +26,7 @@ export const GTSAbbreviationBaseCode = {
   /**
    * GTSAbbreviationHolidays
    */
-  GTSAbbreviationHolidays: "JH",
+  JH: "JH",
 
   /**
    * PM

@@ -6,162 +6,162 @@ export const InvoiceElementPaidCode = {
   /**
    * paid nullified prior-period electronic amount
    */
-  paidnullifiedpriorperiodelectronicamount: "PDNFPPELAT",
+  PDNFPPELAT: "PDNFPPELAT",
 
   /**
    * paid nullified prior-period electronic amount
    */
-  paidnullifiedpriorperiodelectronicamount: "PDCNPPELAT",
+  PDCNPPELAT: "PDCNPPELAT",
 
   /**
    * paid nullified prior-period electronic count
    */
-  paidnullifiedpriorperiodelectroniccount: "PDNFPPELCT",
+  PDNFPPELCT: "PDNFPPELCT",
 
   /**
    * paid nullified prior-period electronic count
    */
-  paidnullifiedpriorperiodelectroniccount: "PDCNPPELCT",
+  PDCNPPELCT: "PDCNPPELCT",
 
   /**
    * paid nullified prior-period manual amount
    */
-  paidnullifiedpriorperiodmanualamount: "PDNFPPMNAT",
+  PDNFPPMNAT: "PDNFPPMNAT",
 
   /**
    * paid nullified prior-period manual amount
    */
-  paidnullifiedpriorperiodmanualamount: "PDCNPPMNAT",
+  PDCNPPMNAT: "PDCNPPMNAT",
 
   /**
    * paid nullified prior-period manual count
    */
-  paidnullifiedpriorperiodmanualcount: "PDNFPPMNCT",
+  PDNFPPMNCT: "PDNFPPMNCT",
 
   /**
    * paid nullified prior-period manual count
    */
-  paidnullifiedpriorperiodmanualcount: "PDCNPPMNCT",
+  PDCNPPMNCT: "PDCNPPMNCT",
 
   /**
    * paid nullified same-period electronic amount
    */
-  paidnullifiedsameperiodelectronicamount: "PDNFSPELAT",
+  PDNFSPELAT: "PDNFSPELAT",
 
   /**
    * paid nullified same-period electronic amount
    */
-  paidnullifiedsameperiodelectronicamount: "PDCNSPELAT",
+  PDCNSPELAT: "PDCNSPELAT",
 
   /**
    * paid nullified same-period electronic count
    */
-  paidnullifiedsameperiodelectroniccount: "PDNFSPELCT",
+  PDNFSPELCT: "PDNFSPELCT",
 
   /**
    * paid nullified same-period electronic count
    */
-  paidnullifiedsameperiodelectroniccount: "PDCNSPELCT",
+  PDCNSPELCT: "PDCNSPELCT",
 
   /**
    * paid nullified same-period manual amount
    */
-  paidnullifiedsameperiodmanualamount: "PDNFSPMNAT",
+  PDNFSPMNAT: "PDNFSPMNAT",
 
   /**
    * paid nullified same-period manual amount
    */
-  paidnullifiedsameperiodmanualamount: "PDCNSPMNAT",
+  PDCNSPMNAT: "PDCNSPMNAT",
 
   /**
    * paid nullified same-period manual count
    */
-  paidnullifiedsameperiodmanualcount: "PDNFSPMNCT",
+  PDNFSPMNCT: "PDNFSPMNCT",
 
   /**
    * paid nullified same-period manual count
    */
-  paidnullifiedsameperiodmanualcount: "PDCNSPMNCT",
+  PDCNSPMNCT: "PDCNSPMNCT",
 
   /**
    * paid non-payee payable prior-period electronic amount
    */
-  paidnonpayeepayablepriorperiodelectronicamount: "PDNPPPELAT",
+  PDNPPPELAT: "PDNPPPELAT",
 
   /**
    * paid non-payee payable prior-period electronic count
    */
-  paidnonpayeepayablepriorperiodelectroniccount: "PDNPPPELCT",
+  PDNPPPELCT: "PDNPPPELCT",
 
   /**
    * paid non-payee payable prior-period manual amount
    */
-  paidnonpayeepayablepriorperiodmanualamount: "PDNPPPMNAT",
+  PDNPPPMNAT: "PDNPPPMNAT",
 
   /**
    * paid non-payee payable prior-period manual count
    */
-  paidnonpayeepayablepriorperiodmanualcount: "PDNPPPMNCT",
+  PDNPPPMNCT: "PDNPPPMNCT",
 
   /**
    * paid non-payee payable same-period electronic amount
    */
-  paidnonpayeepayablesameperiodelectronicamount: "PDNPSPELAT",
+  PDNPSPELAT: "PDNPSPELAT",
 
   /**
    * paid non-payee payable same-period electronic count
    */
-  paidnonpayeepayablesameperiodelectroniccount: "PDNPSPELCT",
+  PDNPSPELCT: "PDNPSPELCT",
 
   /**
    * paid non-payee payable same-period manual amount
    */
-  paidnonpayeepayablesameperiodmanualamount: "PDNPSPMNAT",
+  PDNPSPMNAT: "PDNPSPMNAT",
 
   /**
    * paid non-payee payable same-period manual count
    */
-  paidnonpayeepayablesameperiodmanualcount: "PDNPSPMNCT",
+  PDNPSPMNCT: "PDNPSPMNCT",
 
   /**
    * paid payee payable prior-period electronic amount
    */
-  paidpayeepayablepriorperiodelectronicamount: "PDPPPPELAT",
+  PDPPPPELAT: "PDPPPPELAT",
 
   /**
    * paid payee payable prior-period electronic count
    */
-  paidpayeepayablepriorperiodelectroniccount: "PDPPPPELCT",
+  PDPPPPELCT: "PDPPPPELCT",
 
   /**
    * paid payee payable prior-period manual amount
    */
-  paidpayeepayablepriorperiodmanualamount: "PDPPPPMNAT",
+  PDPPPPMNAT: "PDPPPPMNAT",
 
   /**
    * paid payee payable prior-period manual count
    */
-  paidpayeepayablepriorperiodmanualcount: "PDPPPPMNCT",
+  PDPPPPMNCT: "PDPPPPMNCT",
 
   /**
    * paid payee payable same-period electronic amount
    */
-  paidpayeepayablesameperiodelectronicamount: "PDPPSPELAT",
+  PDPPSPELAT: "PDPPSPELAT",
 
   /**
    * paid payee payable same-period electronic count
    */
-  paidpayeepayablesameperiodelectroniccount: "PDPPSPELCT",
+  PDPPSPELCT: "PDPPSPELCT",
 
   /**
    * paid payee payable same-period manual amount
    */
-  paidpayeepayablesameperiodmanualamount: "PDPPSPMNAT",
+  PDPPSPMNAT: "PDPPSPMNAT",
 
   /**
    * paid payee payable same-period manual count
    */
-  paidpayeepayablesameperiodmanualcount: "PDPPSPMNCT",
+  PDPPSPMNCT: "PDPPSPMNCT",
 } as const;
 
 /**

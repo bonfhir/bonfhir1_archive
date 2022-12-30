@@ -6,77 +6,77 @@ export const Hl7VSAdministrationMethodCode = {
   /**
    * Chew
    */
-  Chew: "CH",
+  CH: "CH",
 
   /**
    * Dissolve
    */
-  Dissolve: "DI",
+  DI: "DI",
 
   /**
    * Dust
    */
-  Dust: "DU",
+  DU: "DU",
 
   /**
    * Infiltrate
    */
-  Infiltrate: "IF",
+  IF: "IF",
 
   /**
    * Insert
    */
-  Insert: "IS",
+  IS: "IS",
 
   /**
    * Irrigate
    */
-  Irrigate: "IR",
+  IR: "IR",
 
   /**
    * IV Piggyback
    */
-  IVPiggyback: "IVPB",
+  IVPB: "IVPB",
 
   /**
    * IV Push
    */
-  IVPush: "IVP",
+  IVP: "IVP",
 
   /**
    * Nebulized
    */
-  Nebulized: "NB",
+  NB: "NB",
 
   /**
    * Paint
    */
-  Paint: "PT",
+  PT: "PT",
 
   /**
    * Perfuse
    */
-  Perfuse: "PF",
+  PF: "PF",
 
   /**
    * Shampoo
    */
-  Shampoo: "SH",
+  SH: "SH",
 
   /**
    * Soak
    */
-  Soak: "SO",
+  SO: "SO",
 
   /**
    * Wash
    */
-  Wash: "WA",
+  WA: "WA",
 
   /**
    * Wipe
    */
-  Wipe: "WI",
+  WI: "WI",
 } as const;
 
 /**

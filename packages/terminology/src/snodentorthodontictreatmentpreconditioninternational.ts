@@ -12,22 +12,22 @@ export const SnodentOrthodonticTreatmentPreconditionInternationalCode = {
   /**
    * Defective dental restoration
    */
-  Defectivedentalrestoration: "138900D",
+  "138900D": "138900D",
 
   /**
    * Poor oral hygiene
    */
-  Poororalhygiene: "140234D",
+  "140234D": "140234D",
 
   /**
    * Temporomandibular joint disorder
    */
-  Temporomandibularjointdisorder: "143353D",
+  "143353D": "143353D",
 
   /**
    * Active dental caries
    */
-  Activedentalcaries: "210116D",
+  "210116D": "210116D",
 } as const;
 
 /**

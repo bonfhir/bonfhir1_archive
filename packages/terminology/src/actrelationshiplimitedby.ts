@@ -6,7 +6,7 @@ export const ActRelationshipLimitedByCode = {
   /**
    * limited by
    */
-  limitedby: "LIMIT",
+  LIMIT: "LIMIT",
 } as const;
 
 /**

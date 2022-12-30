@@ -6,7 +6,7 @@ export const RoleClassIsolateCode = {
   /**
    * isolate
    */
-  isolate: "ISLT",
+  ISLT: "ISLT",
 } as const;
 
 /**

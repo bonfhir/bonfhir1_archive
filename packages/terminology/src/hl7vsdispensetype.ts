@@ -6,47 +6,47 @@ export const Hl7VSDispenseTypeCode = {
   /**
    * Trial Quantity Balance
    */
-  TrialQuantityBalance: "B",
+  B: "B",
 
   /**
    * Compassionate Fill
    */
-  CompassionateFill: "C",
+  C: "C",
 
   /**
    * New/Renew - Full Fill
    */
-  NewRenewFullFill: "N",
+  N: "N",
 
   /**
    * New/Renew - Part Fill
    */
-  NewRenewPartFill: "P",
+  P: "P",
 
   /**
    * Refill - Part Fill
    */
-  RefillPartFill: "Q",
+  Q: "Q",
 
   /**
    * Refill - Full Fill
    */
-  RefillFullFill: "R",
+  R: "R",
 
   /**
    * Manufacturer Sample
    */
-  ManufacturerSample: "S",
+  S: "S",
 
   /**
    * Trial Quantity
    */
-  TrialQuantity: "T",
+  T: "T",
 
   /**
    * Non-Prescription Fill
    */
-  NonPrescriptionFill: "Z",
+  Z: "Z",
 } as const;
 
 /**

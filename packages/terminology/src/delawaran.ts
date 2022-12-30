@@ -6,7 +6,7 @@ export const DelawaranCode = {
   /**
    * Unami Delaware
    */
-  UnamiDelaware: "x-DEL",
+  "x-DEL": "x-DEL",
 } as const;
 
 /**

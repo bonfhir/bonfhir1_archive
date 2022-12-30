@@ -6,7 +6,7 @@ export const RoleLinkHasContactCode = {
   /**
    * has contact
    */
-  hascontact: "CONT",
+  CONT: "CONT",
 } as const;
 
 /**

@@ -8,17 +8,17 @@ export const AllergyStatusCode = {
   /**
    * Problem resolved (finding)
    */
-  Problemresolvedfinding: "413322009",
+  "413322009": "413322009",
 
   /**
    * Active
    */
-  Active: "55561003",
+  "55561003": "55561003",
 
   /**
    * Inactive
    */
-  Inactive: "73425007",
+  "73425007": "73425007",
 } as const;
 
 /**

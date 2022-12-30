@@ -6,17 +6,17 @@ export const NeedCode = {
   /**
    * None
    */
-  None: "none",
+  none: "none",
 
   /**
    * Initial
    */
-  Initial: "initial",
+  initial: "initial",
 
   /**
    * Periodic
    */
-  Periodic: "periodic",
+  periodic: "periodic",
 } as const;
 
 /**

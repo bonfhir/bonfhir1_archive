@@ -6,7 +6,7 @@ export const UrinaryTractRouteCode = {
   /**
    * Instillation, urinary catheter
    */
-  Instillationurinarycatheter: "BLADINSTL",
+  BLADINSTL: "BLADINSTL",
 } as const;
 
 /**

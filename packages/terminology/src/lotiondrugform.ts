@@ -6,12 +6,12 @@ export const LotionDrugFormCode = {
   /**
    * Lotion
    */
-  Lotion: "LTN",
+  LTN: "LTN",
 
   /**
    * Topical Lotion
    */
-  TopicalLotion: "TOPLTN",
+  TOPLTN: "TOPLTN",
 } as const;
 
 /**

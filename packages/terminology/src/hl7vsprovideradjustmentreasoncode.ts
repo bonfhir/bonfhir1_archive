@@ -6,27 +6,27 @@ export const Hl7VSProviderAdjustmentReasonCodeCode = {
   /**
    * Provincial Sales Tax
    */
-  ProvincialSalesTax: "PST",
+  PST: "PST",
 
   /**
    * Goods and Services Tax
    */
-  GoodsandServicesTax: "GST",
+  GST: "GST",
 
   /**
    * Harmonized Sales Tax
    */
-  HarmonizedSalesTax: "HST",
+  HST: "HST",
 
   /**
    * Dispensing Fee
    */
-  DispensingFee: "DISP",
+  DISP: "DISP",
 
   /**
    * Mark up Fee
    */
-  MarkupFee: "MKUP",
+  MKUP: "MKUP",
 } as const;
 
 /**

@@ -6,42 +6,42 @@ export const ApacheanCode = {
   /**
    * EasternApachean
    */
-  EasternApachean: "_EasternApachean",
+  _EasternApachean: "_EasternApachean",
 
   /**
    * Jicarilla
    */
-  Jicarilla: "x-APJ",
+  "x-APJ": "x-APJ",
 
   /**
    * Lipan
    */
-  Lipan: "x-APL",
+  "x-APL": "x-APL",
 
   /**
    * WesternApachean
    */
-  WesternApachean: "_WesternApachean",
+  _WesternApachean: "_WesternApachean",
 
   /**
    * Mescalero-Chiricahua
    */
-  MescaleroChiricahua: "x-APM",
+  "x-APM": "x-APM",
 
   /**
    * Western Apache
    */
-  WesternApache: "x-APW",
+  "x-APW": "x-APW",
 
   /**
    * Dine
    */
-  Dine: "x-NAV",
+  "x-NAV": "x-NAV",
 
   /**
    * Kiowa Apache
    */
-  KiowaApache: "x-APK",
+  "x-APK": "x-APK",
 } as const;
 
 /**

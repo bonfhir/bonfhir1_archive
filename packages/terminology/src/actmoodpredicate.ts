@@ -6,57 +6,57 @@ export const ActMoodPredicateCode = {
   /**
    * criterion
    */
-  criterion: "CRT",
+  CRT: "CRT",
 
   /**
    * event criterion
    */
-  eventcriterion: "EVN.CRT",
+  "EVN.CRT": "EVN.CRT",
 
   /**
    * goal criterion
    */
-  goalcriterion: "GOL.CRT",
+  "GOL.CRT": "GOL.CRT",
 
   /**
    * intent criterion
    */
-  intentcriterion: "INT.CRT",
+  "INT.CRT": "INT.CRT",
 
   /**
    * promise criterion
    */
-  promisecriterion: "PRMS.CRT",
+  "PRMS.CRT": "PRMS.CRT",
 
   /**
    * request criterion
    */
-  requestcriterion: "RQO.CRT",
+  "RQO.CRT": "RQO.CRT",
 
   /**
    * risk criterion
    */
-  riskcriterion: "RSK.CRT",
+  "RSK.CRT": "RSK.CRT",
 
   /**
    * expectation
    */
-  expectation: "EXPEC",
+  EXPEC: "EXPEC",
 
   /**
    * Goal
    */
-  Goal: "GOL",
+  GOL: "GOL",
 
   /**
    * risk
    */
-  risk: "RSK",
+  RSK: "RSK",
 
   /**
    * option
    */
-  option: "OPT",
+  OPT: "OPT",
 } as const;
 
 /**

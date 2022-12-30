@@ -6,7 +6,7 @@ export const RoleClassPersonalRelationshipCode = {
   /**
    * personal relationship
    */
-  personalrelationship: "PRS",
+  PRS: "PRS",
 } as const;
 
 /**

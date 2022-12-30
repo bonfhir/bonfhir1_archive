@@ -6,72 +6,72 @@ export const Hl7VSSpecimenRejectReasonCode = {
   /**
    * Expired
    */
-  Expired: "EX",
+  EX: "EX",
 
   /**
    * Quantity not sufficient
    */
-  Quantitynotsufficient: "QS",
+  QS: "QS",
 
   /**
    * Broken container
    */
-  Brokencontainer: "RB",
+  RB: "RB",
 
   /**
    * Clotting
    */
-  Clotting: "RC",
+  RC: "RC",
 
   /**
    * Missing collection date
    */
-  Missingcollectiondate: "RD",
+  RD: "RD",
 
   /**
    * Missing patient ID number
    */
-  MissingpatientIDnumber: "RA",
+  RA: "RA",
 
   /**
    * Missing patient name
    */
-  Missingpatientname: "RE",
+  RE: "RE",
 
   /**
    * Hemolysis
    */
-  Hemolysis: "RH",
+  RH: "RH",
 
   /**
    * Identification problem
    */
-  Identificationproblem: "RI",
+  RI: "RI",
 
   /**
    * Labeling
    */
-  Labeling: "RM",
+  RM: "RM",
 
   /**
    * Contamination
    */
-  Contamination: "RN",
+  RN: "RN",
 
   /**
    * Missing phlebotomist ID
    */
-  MissingphlebotomistID: "RP",
+  RP: "RP",
 
   /**
    * Improper storage
    */
-  Improperstorage: "RR",
+  RR: "RR",
 
   /**
    * Name misspelling
    */
-  Namemisspelling: "RS",
+  RS: "RS",
 } as const;
 
 /**

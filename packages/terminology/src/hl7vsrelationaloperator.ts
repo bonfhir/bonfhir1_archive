@@ -6,42 +6,42 @@ export const Hl7VSRelationalOperatorCode = {
   /**
    * Equal
    */
-  Equal: "EQ",
+  EQ: "EQ",
 
   /**
    * Not Equal
    */
-  NotEqual: "NE",
+  NE: "NE",
 
   /**
    * Less than
    */
-  Lessthan: "LT",
+  LT: "LT",
 
   /**
    * Greater than
    */
-  Greaterthan: "GT",
+  GT: "GT",
 
   /**
    * Less than or equal
    */
-  Lessthanorequal: "LE",
+  LE: "LE",
 
   /**
    * Greater than or equal
    */
-  Greaterthanorequal: "GE",
+  GE: "GE",
 
   /**
    * Contains
    */
-  Contains: "CT",
+  CT: "CT",
 
   /**
    * Generic
    */
-  Generic: "GN",
+  GN: "GN",
 } as const;
 
 /**

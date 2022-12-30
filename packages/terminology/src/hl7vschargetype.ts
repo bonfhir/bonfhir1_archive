@@ -6,42 +6,42 @@ export const Hl7VSChargeTypeCode = {
   /**
    * Charge
    */
-  Charge: "CH",
+  CH: "CH",
 
   /**
    * Contract
    */
-  Contract: "CO",
+  CO: "CO",
 
   /**
    * Credit
    */
-  Credit: "CR",
+  CR: "CR",
 
   /**
    * Department
    */
-  Department: "DP",
+  DP: "DP",
 
   /**
    * Grant
    */
-  Grant: "GR",
+  GR: "GR",
 
   /**
    * No Charge
    */
-  NoCharge: "NC",
+  NC: "NC",
 
   /**
    * Professional
    */
-  Professional: "PC",
+  PC: "PC",
 
   /**
    * Research
    */
-  Research: "RS",
+  RS: "RS",
 } as const;
 
 /**

@@ -6,62 +6,62 @@ export const Hl7VSContactRole2Code = {
   /**
    * Billing contact person
    */
-  Billingcontactperson: "BP",
+  BP: "BP",
 
   /**
    * Contact person
    */
-  Contactperson: "CP",
+  CP: "CP",
 
   /**
    * Emergency contact person
    */
-  Emergencycontactperson: "EP",
+  EP: "EP",
 
   /**
    * Person preparing referral
    */
-  Personpreparingreferral: "PR",
+  PR: "PR",
 
   /**
    * Employer
    */
-  Employer: "E",
+  E: "E",
 
   /**
    * Emergency Contact
    */
-  EmergencyContact: "C",
+  C: "C",
 
   /**
    * Federal Agency
    */
-  FederalAgency: "F",
+  F: "F",
 
   /**
    * Insurance Company
    */
-  InsuranceCompany: "I",
+  I: "I",
 
   /**
    * Next-of-Kin
    */
-  NextofKin: "N",
+  N: "N",
 
   /**
    * State Agency
    */
-  StateAgency: "S",
+  S: "S",
 
   /**
    * Other
    */
-  Other: "O",
+  O: "O",
 
   /**
    * Unknown
    */
-  Unknown: "U",
+  U: "U",
 } as const;
 
 /**

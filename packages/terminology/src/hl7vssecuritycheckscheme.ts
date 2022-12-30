@@ -6,17 +6,17 @@ export const Hl7VSSecurityCheckSchemeCode = {
   /**
    * Bank Card Validation Number
    */
-  BankCardValidationNumber: "BCV",
+  BCV: "BCV",
 
   /**
    * Credit Card Security code
    */
-  CreditCardSecuritycode: "CCS",
+  CCS: "CCS",
 
   /**
    * Version ID
    */
-  VersionID: "VID",
+  VID: "VID",
 } as const;
 
 /**

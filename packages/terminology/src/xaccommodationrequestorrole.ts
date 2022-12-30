@@ -6,22 +6,22 @@ export const XAccommodationRequestorRoleCode = {
   /**
    * agent
    */
-  agent: "AGNT",
+  AGNT: "AGNT",
 
   /**
    * patient
    */
-  patient: "PAT",
+  PAT: "PAT",
 
   /**
    * healthcare provider
    */
-  healthcareprovider: "PROV",
+  PROV: "PROV",
 
   /**
    * personal relationship
    */
-  personalrelationship: "PRS",
+  PRS: "PRS",
 } as const;
 
 /**

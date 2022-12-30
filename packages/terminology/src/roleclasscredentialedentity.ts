@@ -6,7 +6,7 @@ export const RoleClassCredentialedEntityCode = {
   /**
    * credentialed entity
    */
-  credentialedentity: "CRED",
+  CRED: "CRED",
 } as const;
 
 /**

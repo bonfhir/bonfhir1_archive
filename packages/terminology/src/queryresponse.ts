@@ -6,22 +6,22 @@ export const QueryResponseCode = {
   /**
    * ApplicationError
    */
-  ApplicationError: "AE",
+  AE: "AE",
 
   /**
    * No data found
    */
-  Nodatafound: "NF",
+  NF: "NF",
 
   /**
    * Data found
    */
-  Datafound: "OK",
+  OK: "OK",
 
   /**
    * QueryParameterError
    */
-  QueryParameterError: "QE",
+  QE: "QE",
 } as const;
 
 /**

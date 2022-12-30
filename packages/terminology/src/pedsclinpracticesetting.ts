@@ -6,47 +6,47 @@ export const PedsClinPracticeSettingCode = {
   /**
    * Pediatrics clinic
    */
-  Pediatricsclinic: "PEDC",
+  PEDC: "PEDC",
 
   /**
    * Pediatric cardiology clinic
    */
-  Pediatriccardiologyclinic: "PEDCARD",
+  PEDCARD: "PEDCARD",
 
   /**
    * Pediatric endocrinology clinic
    */
-  Pediatricendocrinologyclinic: "PEDE",
+  PEDE: "PEDE",
 
   /**
    * Pediatric gastroenterology clinic
    */
-  Pediatricgastroenterologyclinic: "PEDGI",
+  PEDGI: "PEDGI",
 
   /**
    * Pediatric hematology clinic
    */
-  Pediatrichematologyclinic: "PEDHEM",
+  PEDHEM: "PEDHEM",
 
   /**
    * Pediatric infectious disease clinic
    */
-  Pediatricinfectiousdiseaseclinic: "PEDID",
+  PEDID: "PEDID",
 
   /**
    * Pediatric nephrology clinic
    */
-  Pediatricnephrologyclinic: "PEDNEPH",
+  PEDNEPH: "PEDNEPH",
 
   /**
    * Pediatric oncology clinic
    */
-  Pediatriconcologyclinic: "PEDHO",
+  PEDHO: "PEDHO",
 
   /**
    * Pediatric rheumatology clinic
    */
-  Pediatricrheumatologyclinic: "PEDRHEUM",
+  PEDRHEUM: "PEDRHEUM",
 } as const;
 
 /**

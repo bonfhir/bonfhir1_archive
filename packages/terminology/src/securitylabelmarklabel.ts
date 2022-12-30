@@ -6,32 +6,32 @@ export const SecurityLabelMarkLabelCode = {
   /**
    * confidential mark
    */
-  confidentialmark: "ConfidentialMark",
+  ConfidentialMark: "ConfidentialMark",
 
   /**
    * copy of original mark
    */
-  copyoforiginalmark: "COPYMark",
+  COPYMark: "COPYMark",
 
   /**
    * deliver only to addressee mark
    */
-  deliveronlytoaddresseemark: "DeliverToAddresseeOnlyMark",
+  DeliverToAddresseeOnlyMark: "DeliverToAddresseeOnlyMark",
 
   /**
    * prohibition against redisclosure mark
    */
-  prohibitionagainstredisclosuremark: "RedisclosureProhibitionMark",
+  RedisclosureProhibitionMark: "RedisclosureProhibitionMark",
 
   /**
    * restricted confidentiality mark
    */
-  restrictedconfidentialitymark: "RestrictedConfidentialityMark",
+  RestrictedConfidentialityMark: "RestrictedConfidentialityMark",
 
   /**
    * Draft Mark
    */
-  DraftMark: "DRAFTMark",
+  DRAFTMark: "DRAFTMark",
 } as const;
 
 /**

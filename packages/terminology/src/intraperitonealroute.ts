@@ -6,22 +6,22 @@ export const IntraperitonealRouteCode = {
   /**
    * Injection, intraperitoneal
    */
-  Injectionintraperitoneal: "IPERINJ",
+  IPERINJ: "IPERINJ",
 
   /**
    * Injection, peritoneal dialysis port
    */
-  Injectionperitonealdialysisport: "PDPINJ",
+  PDPINJ: "PDPINJ",
 
   /**
    * Instillation, continuous ambulatory peritoneal dialysis port
    */
-  Instillationcontinuousambulatoryperitonealdialysisport: "CAPDINSTL",
+  CAPDINSTL: "CAPDINSTL",
 
   /**
    * Instillation, peritoneal dialysis port
    */
-  Instillationperitonealdialysisport: "PDPINSTL",
+  PDPINSTL: "PDPINSTL",
 } as const;
 
 /**

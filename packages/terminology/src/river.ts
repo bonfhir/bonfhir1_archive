@@ -6,17 +6,17 @@ export const RiverCode = {
   /**
    * Mohave
    */
-  Mohave: "x-MOV",
+  "x-MOV": "x-MOV",
 
   /**
    * Maricopa
    */
-  Maricopa: "x-MRC",
+  "x-MRC": "x-MRC",
 
   /**
    * Quechan
    */
-  Quechan: "x-YUM",
+  "x-YUM": "x-YUM",
 } as const;
 
 /**

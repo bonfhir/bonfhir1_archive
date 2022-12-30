@@ -6,32 +6,32 @@ export const Hl7VSAlertLevelCode = {
   /**
    * Normal
    */
-  Normal: "N",
+  N: "N",
 
   /**
    * Warning
    */
-  Warning: "W",
+  W: "W",
 
   /**
    * Serious
    */
-  Serious: "S",
+  S: "S",
 
   /**
    * Critical
    */
-  Critical: "C",
+  C: "C",
 
   /**
    * (null) No level change
    */
-  nullNolevelchange: "...",
+  "...": "...",
 
   /**
    * (null) No level change
    */
-  nullNolevelchange: "…",
+  "…": "…",
 } as const;
 
 /**

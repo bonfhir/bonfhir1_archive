@@ -6,22 +6,22 @@ export const MissingToothReasonCodesCode = {
   /**
    * E
    */
-  E: "e",
+  e: "e",
 
   /**
    * C
    */
-  C: "c",
+  c: "c",
 
   /**
    * U
    */
-  U: "u",
+  u: "u",
 
   /**
    * O
    */
-  O: "o",
+  o: "o",
 } as const;
 
 /**

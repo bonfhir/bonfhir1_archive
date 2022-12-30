@@ -6,12 +6,12 @@ export const Hl7VSChargeOnIndicatorCode = {
   /**
    * Charge on Order
    */
-  ChargeonOrder: "O",
+  O: "O",
 
   /**
    * Charge on Result
    */
-  ChargeonResult: "R",
+  R: "R",
 } as const;
 
 /**

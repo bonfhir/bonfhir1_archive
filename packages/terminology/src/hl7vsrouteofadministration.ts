@@ -6,237 +6,237 @@ export const Hl7VSRouteOfAdministrationCode = {
   /**
    * Apply Externally
    */
-  ApplyExternally: "AP",
+  AP: "AP",
 
   /**
    * Buccal
    */
-  Buccal: "B",
+  B: "B",
 
   /**
    * Dental
    */
-  Dental: "DT",
+  DT: "DT",
 
   /**
    * Epidural
    */
-  Epidural: "EP",
+  EP: "EP",
 
   /**
    * Endotrachial Tube
    */
-  EndotrachialTube: "ET",
+  ET: "ET",
 
   /**
    * Gastrostomy Tube
    */
-  GastrostomyTube: "GTT",
+  GTT: "GTT",
 
   /**
    * GU Irrigant
    */
-  GUIrrigant: "GU",
+  GU: "GU",
 
   /**
    * Immerse (Soak) Body Part
    */
-  ImmerseSoakBodyPart: "IMR",
+  IMR: "IMR",
 
   /**
    * Intra-arterial
    */
-  Intraarterial: "IA",
+  IA: "IA",
 
   /**
    * Intrabursal
    */
-  Intrabursal: "IB",
+  IB: "IB",
 
   /**
    * Intracardiac
    */
-  Intracardiac: "IC",
+  IC: "IC",
 
   /**
    * Intracervical (uterus)
    */
-  Intracervicaluterus: "ICV",
+  ICV: "ICV",
 
   /**
    * Intradermal
    */
-  Intradermal: "ID",
+  ID: "ID",
 
   /**
    * Inhalation
    */
-  Inhalation: "IH",
+  IH: "IH",
 
   /**
    * Intrahepatic Artery
    */
-  IntrahepaticArtery: "IHA",
+  IHA: "IHA",
 
   /**
    * Intramuscular
    */
-  Intramuscular: "IM",
+  IM: "IM",
 
   /**
    * Intranasal
    */
-  Intranasal: "IN",
+  IN: "IN",
 
   /**
    * Intraocular
    */
-  Intraocular: "IO",
+  IO: "IO",
 
   /**
    * Intraperitoneal
    */
-  Intraperitoneal: "IP",
+  IP: "IP",
 
   /**
    * Intrasynovial
    */
-  Intrasynovial: "IS",
+  IS: "IS",
 
   /**
    * Intrathecal
    */
-  Intrathecal: "IT",
+  IT: "IT",
 
   /**
    * Intrauterine
    */
-  Intrauterine: "IU",
+  IU: "IU",
 
   /**
    * Intravenous
    */
-  Intravenous: "IV",
+  IV: "IV",
 
   /**
    * Mouth/Throat
    */
-  MouthThroat: "MTH",
+  MTH: "MTH",
 
   /**
    * Mucous Membrane
    */
-  MucousMembrane: "MM",
+  MM: "MM",
 
   /**
    * Nasal
    */
-  Nasal: "NS",
+  NS: "NS",
 
   /**
    * Nasogastric
    */
-  Nasogastric: "NG",
+  NG: "NG",
 
   /**
    * Nasal Prongs
    */
-  NasalProngs: "NP",
+  NP: "NP",
 
   /**
    * Nasotrachial Tube
    */
-  NasotrachialTube: "NT",
+  NT: "NT",
 
   /**
    * Ophthalmic
    */
-  Ophthalmic: "OP",
+  OP: "OP",
 
   /**
    * Otic
    */
-  Otic: "OT",
+  OT: "OT",
 
   /**
    * Other/Miscellaneous
    */
-  OtherMiscellaneous: "OTH",
+  OTH: "OTH",
 
   /**
    * Perfusion
    */
-  Perfusion: "PF",
+  PF: "PF",
 
   /**
    * Oral
    */
-  Oral: "PO",
+  PO: "PO",
 
   /**
    * Rectal
    */
-  Rectal: "PR",
+  PR: "PR",
 
   /**
    * Rebreather Mask
    */
-  RebreatherMask: "RM",
+  RM: "RM",
 
   /**
    * Soaked Dressing
    */
-  SoakedDressing: "SD",
+  SD: "SD",
 
   /**
    * Subcutaneous
    */
-  Subcutaneous: "SC",
+  SC: "SC",
 
   /**
    * Sublingual
    */
-  Sublingual: "SL",
+  SL: "SL",
 
   /**
    * Topical
    */
-  Topical: "TP",
+  TP: "TP",
 
   /**
    * Tracheostomy
    */
-  Tracheostomy: "TRA",
+  TRA: "TRA",
 
   /**
    * Transdermal
    */
-  Transdermal: "TD",
+  TD: "TD",
 
   /**
    * Translingual
    */
-  Translingual: "TL",
+  TL: "TL",
 
   /**
    * Urethral
    */
-  Urethral: "UR",
+  UR: "UR",
 
   /**
    * Vaginal
    */
-  Vaginal: "VG",
+  VG: "VG",
 
   /**
    * Ventimask
    */
-  Ventimask: "VM",
+  VM: "VM",
 
   /**
    * Wound
    */
-  Wound: "WND",
+  WND: "WND",
 } as const;
 
 /**

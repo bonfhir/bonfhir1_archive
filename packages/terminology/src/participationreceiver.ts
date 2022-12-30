@@ -6,7 +6,7 @@ export const ParticipationReceiverCode = {
   /**
    * receiver
    */
-  receiver: "RCV",
+  RCV: "RCV",
 } as const;
 
 /**

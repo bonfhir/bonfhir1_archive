@@ -6,32 +6,32 @@ export const TransdermalPatchCode = {
   /**
    * Transdermal Patch
    */
-  TransdermalPatch: "TPATCH",
+  TPATCH: "TPATCH",
 
   /**
    * 16 Hour Transdermal Patch
    */
-  SixteenHourTransdermalPatch: "TPATH16",
+  TPATH16: "TPATH16",
 
   /**
    * 24 Hour Transdermal Patch
    */
-  TwentyFourHourTransdermalPatch: "TPATH24",
+  TPATH24: "TPATH24",
 
   /**
    * Biweekly Transdermal Patch
    */
-  BiweeklyTransdermalPatch: "TPATH2WK",
+  TPATH2WK: "TPATH2WK",
 
   /**
    * 72 Hour Transdermal Patch
    */
-  SeventyTwoHourTransdermalPatch: "TPATH72",
+  TPATH72: "TPATH72",
 
   /**
    * Weekly Transdermal Patch
    */
-  WeeklyTransdermalPatch: "TPATHWK",
+  TPATHWK: "TPATHWK",
 } as const;
 
 /**

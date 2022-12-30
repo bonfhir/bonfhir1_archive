@@ -6,7 +6,7 @@ export const RoleClassPlaceOfDeathCode = {
   /**
    * place of death
    */
-  placeofdeath: "DEATHPLC",
+  DEATHPLC: "DEATHPLC",
 } as const;
 
 /**

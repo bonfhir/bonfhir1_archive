@@ -6,7 +6,7 @@ export const ParticipationReferrerCode = {
   /**
    * referrer
    */
-  referrer: "REF",
+  REF: "REF",
 } as const;
 
 /**

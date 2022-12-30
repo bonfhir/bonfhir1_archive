@@ -6,62 +6,62 @@ export const RefillPharmacySupplyTypeCode = {
   /**
    * Refill
    */
-  Refill: "RF",
+  RF: "RF",
 
   /**
    * Daily Fill
    */
-  DailyFill: "DF",
+  DF: "DF",
 
   /**
    * Unit Dose
    */
-  UnitDose: "UD",
+  UD: "UD",
 
   /**
    * Refill - Complete
    */
-  RefillComplete: "RFC",
+  RFC: "RFC",
 
   /**
    * refill complete partial strength
    */
-  refillcompletepartialstrength: "RFCS",
+  RFCS: "RFCS",
 
   /**
    * Refill (First fill this facility)
    */
-  RefillFirstfillthisfacility: "RFF",
+  RFF: "RFF",
 
   /**
    * refill partial strength (first fill this facility)
    */
-  refillpartialstrengthfirstfillthisfacility: "RFFS",
+  RFFS: "RFFS",
 
   /**
    * Refill - Part Fill
    */
-  RefillPartFill: "RFP",
+  RFP: "RFP",
 
   /**
    * refill part fill partial strength
    */
-  refillpartfillpartialstrength: "RFPS",
+  RFPS: "RFPS",
 
   /**
    * refill partial strength
    */
-  refillpartialstrength: "RFS",
+  RFS: "RFS",
 
   /**
    * Trial Balance
    */
-  TrialBalance: "TB",
+  TB: "TB",
 
   /**
    * trial balance partial strength
    */
-  trialbalancepartialstrength: "TBS",
+  TBS: "TBS",
 } as const;
 
 /**

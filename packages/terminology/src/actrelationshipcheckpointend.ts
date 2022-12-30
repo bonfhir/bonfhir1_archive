@@ -6,7 +6,7 @@ export const ActRelationshipCheckpointEndCode = {
   /**
    * end
    */
-  end: "E",
+  E: "E",
 } as const;
 
 /**

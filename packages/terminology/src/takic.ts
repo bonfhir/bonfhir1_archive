@@ -6,32 +6,32 @@ export const TakicCode = {
   /**
    * Cupan
    */
-  Cupan: "_Cupan",
+  _Cupan: "_Cupan",
 
   /**
    * Cahuilla
    */
-  Cahuilla: "x-CHL",
+  "x-CHL": "x-CHL",
 
   /**
    * Cupeno
    */
-  Cupeno: "x-CUP",
+  "x-CUP": "x-CUP",
 
   /**
    * Luiseno
    */
-  Luiseno: "x-LUI",
+  "x-LUI": "x-LUI",
 
   /**
    * SerranoGabrielino
    */
-  SerranoGabrielino: "_SerranoGabrielino",
+  _SerranoGabrielino: "_SerranoGabrielino",
 
   /**
    * Serrano
    */
-  Serrano: "x-SER",
+  "x-SER": "x-SER",
 } as const;
 
 /**

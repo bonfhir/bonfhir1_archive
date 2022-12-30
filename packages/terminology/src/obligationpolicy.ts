@@ -12,142 +12,142 @@ export const ObligationPolicyCode = {
   /**
    * obligation policy
    */
-  obligationpolicy: "ObligationPolicy",
+  ObligationPolicy: "ObligationPolicy",
 
   /**
    * anonymize
    */
-  anonymize: "ANONY",
+  ANONY: "ANONY",
 
   /**
    * accounting of disclosure
    */
-  accountingofdisclosure: "AOD",
+  AOD: "AOD",
 
   /**
    * audit
    */
-  audit: "AUDIT",
+  AUDIT: "AUDIT",
 
   /**
    * audit trail
    */
-  audittrail: "AUDTR",
+  AUDTR: "AUDTR",
 
   /**
    * comply with policy
    */
-  complywithpolicy: "CPLYPOL",
+  CPLYPOL: "CPLYPOL",
 
   /**
    * comply with confidentiality code
    */
-  complywithconfidentialitycode: "CPLYCC",
+  CPLYCC: "CPLYCC",
 
   /**
    * comply with consent directive
    */
-  complywithconsentdirective: "CPLYCD",
+  CPLYCD: "CPLYCD",
 
   /**
    * comply with controlled unclassified information policy
    */
-  complywithcontrolledunclassifiedinformationpolicy: "CPLYCUI",
+  CPLYCUI: "CPLYCUI",
 
   /**
    * comply with jurisdictional privacy policy
    */
-  complywithjurisdictionalprivacypolicy: "CPLYJPP",
+  CPLYJPP: "CPLYJPP",
 
   /**
    * comply with jurisdictional security policy
    */
-  complywithjurisdictionalsecuritypolicy: "CPLYJSP",
+  CPLYJSP: "CPLYJSP",
 
   /**
    * comply with organizational privacy policy
    */
-  complywithorganizationalprivacypolicy: "CPLYOPP",
+  CPLYOPP: "CPLYOPP",
 
   /**
    * comply with organizational security policy
    */
-  complywithorganizationalsecuritypolicy: "CPLYOSP",
+  CPLYOSP: "CPLYOSP",
 
   /**
    * declassify security label
    */
-  declassifysecuritylabel: "DECLASSIFYLABEL",
+  DECLASSIFYLABEL: "DECLASSIFYLABEL",
 
   /**
    * deidentify
    */
-  deidentify: "DEID",
+  DEID: "DEID",
 
   /**
    * delete after use
    */
-  deleteafteruse: "DELAU",
+  DELAU: "DELAU",
 
   /**
    * downgrade security label
    */
-  downgradesecuritylabel: "DOWNGRDLABEL",
+  DOWNGRDLABEL: "DOWNGRDLABEL",
 
   /**
    * derive security label
    */
-  derivesecuritylabel: "DRIVLABEL",
+  DRIVLABEL: "DRIVLABEL",
 
   /**
    * encrypt
    */
-  encrypt: "ENCRYPT",
+  ENCRYPT: "ENCRYPT",
 
   /**
    * encrypt at rest
    */
-  encryptatrest: "ENCRYPTR",
+  ENCRYPTR: "ENCRYPTR",
 
   /**
    * encrypt in transit
    */
-  encryptintransit: "ENCRYPTT",
+  ENCRYPTT: "ENCRYPTT",
 
   /**
    * encrypt in use
    */
-  encryptinuse: "ENCRYPTU",
+  ENCRYPTU: "ENCRYPTU",
 
   /**
    * human approval
    */
-  humanapproval: "HUAPRV",
+  HUAPRV: "HUAPRV",
 
   /**
    * assign security label
    */
-  assignsecuritylabel: "LABEL",
+  LABEL: "LABEL",
 
   /**
    * mask
    */
-  mask: "MASK",
+  MASK: "MASK",
 
   /**
    * minimum necessary
    */
-  minimumnecessary: "MINEC",
+  MINEC: "MINEC",
 
   /**
    * persist security label
    */
-  persistsecuritylabel: "PERSISTLABEL",
+  PERSISTLABEL: "PERSISTLABEL",
 
   /**
    * privacy mark
    */
-  privacymark: "PRIVMARK",
+  PRIVMARK: "PRIVMARK",
 
   /**
    * CUI Mark
@@ -157,17 +157,17 @@ export const ObligationPolicyCode = {
   /**
    * pseudonymize
    */
-  pseudonymize: "PSEUD",
+  PSEUD: "PSEUD",
 
   /**
    * redact
    */
-  redact: "REDACT",
+  REDACT: "REDACT",
 
   /**
    * upgrade security label
    */
-  upgradesecuritylabel: "UPGRDLABEL",
+  UPGRDLABEL: "UPGRDLABEL",
 } as const;
 
 /**

@@ -6,47 +6,47 @@ export const UsageContextTypeCode = {
   /**
    * Gender
    */
-  Gender: "gender",
+  gender: "gender",
 
   /**
    * Age Range
    */
-  AgeRange: "age",
+  age: "age",
 
   /**
    * Clinical Focus
    */
-  ClinicalFocus: "focus",
+  focus: "focus",
 
   /**
    * User Type
    */
-  UserType: "user",
+  user: "user",
 
   /**
    * Workflow Setting
    */
-  WorkflowSetting: "workflow",
+  workflow: "workflow",
 
   /**
    * Workflow Task
    */
-  WorkflowTask: "task",
+  task: "task",
 
   /**
    * Clinical Venue
    */
-  ClinicalVenue: "venue",
+  venue: "venue",
 
   /**
    * Species
    */
-  Species: "species",
+  species: "species",
 
   /**
    * Program
    */
-  Program: "program",
+  program: "program",
 } as const;
 
 /**

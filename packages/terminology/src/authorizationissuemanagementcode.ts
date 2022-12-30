@@ -6,17 +6,17 @@ export const AuthorizationIssueManagementCodeCode = {
   /**
    * Authorization Issue Management Code
    */
-  AuthorizationIssueManagementCode: "_AuthorizationIssueManagementCode",
+  _AuthorizationIssueManagementCode: "_AuthorizationIssueManagementCode",
 
   /**
    * emergency authorization override
    */
-  emergencyauthorizationoverride: "EMAUTH",
+  EMAUTH: "EMAUTH",
 
   /**
    * authorization confirmed
    */
-  authorizationconfirmed: "21",
+  "21": "21",
 } as const;
 
 /**

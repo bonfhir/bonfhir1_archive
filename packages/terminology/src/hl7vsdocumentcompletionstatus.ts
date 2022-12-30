@@ -6,37 +6,37 @@ export const Hl7VSDocumentCompletionStatusCode = {
   /**
    * Dictated
    */
-  Dictated: "DI",
+  DI: "DI",
 
   /**
    * Documented
    */
-  Documented: "DO",
+  DO: "DO",
 
   /**
    * In Progress
    */
-  InProgress: "IP",
+  IP: "IP",
 
   /**
    * Incomplete
    */
-  Incomplete: "IN",
+  IN: "IN",
 
   /**
    * Pre-authenticated
    */
-  Preauthenticated: "PA",
+  PA: "PA",
 
   /**
    * Authenticated
    */
-  Authenticated: "AU",
+  AU: "AU",
 
   /**
    * Legally authenticated
    */
-  Legallyauthenticated: "LA",
+  LA: "LA",
 } as const;
 
 /**

@@ -6,27 +6,27 @@ export const XPersonNamePartTypeCode = {
   /**
    * delimiter
    */
-  delimiter: "DEL",
+  DEL: "DEL",
 
   /**
    * family
    */
-  family: "FAM",
+  FAM: "FAM",
 
   /**
    * given
    */
-  given: "GIV",
+  GIV: "GIV",
 
   /**
    * prefix
    */
-  prefix: "PFX",
+  PFX: "PFX",
 
   /**
    * suffix
    */
-  suffix: "SFX",
+  SFX: "SFX",
 } as const;
 
 /**

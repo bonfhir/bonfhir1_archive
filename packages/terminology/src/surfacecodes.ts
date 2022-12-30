@@ -6,57 +6,57 @@ export const SurfaceCodesCode = {
   /**
    * Mesial
    */
-  Mesial: "M",
+  M: "M",
 
   /**
    * Occlusal
    */
-  Occlusal: "O",
+  O: "O",
 
   /**
    * Incisal
    */
-  Incisal: "I",
+  I: "I",
 
   /**
    * Distal
    */
-  Distal: "D",
+  D: "D",
 
   /**
    * Buccal
    */
-  Buccal: "B",
+  B: "B",
 
   /**
    * Ventral
    */
-  Ventral: "V",
+  V: "V",
 
   /**
    * Lingual
    */
-  Lingual: "L",
+  L: "L",
 
   /**
    * Mesioclusal
    */
-  Mesioclusal: "MO",
+  MO: "MO",
 
   /**
    * Distoclusal
    */
-  Distoclusal: "DO",
+  DO: "DO",
 
   /**
    * Distoincisal
    */
-  Distoincisal: "DI",
+  DI: "DI",
 
   /**
    * Mesioclusodistal
    */
-  Mesioclusodistal: "MOD",
+  MOD: "MOD",
 } as const;
 
 /**

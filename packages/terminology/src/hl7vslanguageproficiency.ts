@@ -6,32 +6,32 @@ export const Hl7VSLanguageProficiencyCode = {
   /**
    * Excellent
    */
-  Excellent: "1",
+  "1": "1",
 
   /**
    * Good
    */
-  Good: "2",
+  "2": "2",
 
   /**
    * Fair
    */
-  Fair: "3",
+  "3": "3",
 
   /**
    * Poor
    */
-  Poor: "4",
+  "4": "4",
 
   /**
    * Some (level unknown)
    */
-  Somelevelunknown: "5",
+  "5": "5",
 
   /**
    * None
    */
-  None: "6",
+  "6": "6",
 } as const;
 
 /**

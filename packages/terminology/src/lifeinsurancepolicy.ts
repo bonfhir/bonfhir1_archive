@@ -8,22 +8,22 @@ export const LifeInsurancePolicyCode = {
   /**
    * life insurance policy
    */
-  lifeinsurancepolicy: "LIFE",
+  LIFE: "LIFE",
 
   /**
    * annuity policy
    */
-  annuitypolicy: "ANNU",
+  ANNU: "ANNU",
 
   /**
    * term life insurance policy
    */
-  termlifeinsurancepolicy: "TLIFE",
+  TLIFE: "TLIFE",
 
   /**
    * universal life insurance policy
    */
-  universallifeinsurancepolicy: "ULIFE",
+  ULIFE: "ULIFE",
 } as const;
 
 /**

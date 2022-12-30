@@ -6,57 +6,57 @@ export const ActRelationshipEndsAfterStartOfCode = {
   /**
    * ends after start of
    */
-  endsafterstartof: "EAS",
+  EAS: "EAS",
 
   /**
    * ends after end of
    */
-  endsafterendof: "EAE",
+  EAE: "EAE",
 
   /**
    * starts after start of, ends after end of
    */
-  startsafterstartofendsafterendof: "SASEAE",
+  SASEAE: "SASEAE",
 
   /**
    * contains end of
    */
-  containsendof: "SBEEAE",
+  SBEEAE: "SBEEAE",
 
   /**
    * start after start of, contains end of
    */
-  startafterstartofcontainsendof: "SASSBEEAS",
+  SASSBEEAS: "SASSBEEAS",
 
   /**
    * contains time of
    */
-  containstimeof: "SBSEAE",
+  SBSEAE: "SBSEAE",
 
   /**
    * starts with, ends after end of
    */
-  startswithendsafterendof: "SCWSEAE",
+  SCWSEAE: "SCWSEAE",
 
   /**
    * starts after start of
    */
-  startsafterstartof: "SAS",
+  SAS: "SAS",
 
   /**
    * starts after end of
    */
-  startsafterendof: "SAE",
+  SAE: "SAE",
 
   /**
    * occurs during
    */
-  occursduring: "DURING",
+  DURING: "DURING",
 
   /**
    * starts after start of, ends with
    */
-  startsafterstartofendswith: "SASECWE",
+  SASECWE: "SASECWE",
 } as const;
 
 /**

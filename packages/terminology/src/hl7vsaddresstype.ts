@@ -6,93 +6,92 @@ export const Hl7VSAddressTypeCode = {
   /**
    * Bad address
    */
-  Badaddress: "BA",
+  BA: "BA",
 
   /**
    * Billing Address
    */
-  BillingAddress: "BI",
+  BI: "BI",
 
   /**
    * Birth (nee)  (birth address, not otherwise specified)
    */
-  Birthneebirthaddressnototherwisespecified: "N",
+  N: "N",
 
   /**
    * Birth delivery location  (address where birth occurred)
    */
-  Birthdeliverylocationaddresswherebirthoccurred: "BDL",
+  BDL: "BDL",
 
   /**
    * Country Of Origin
    */
-  CountryOfOrigin: "F",
+  F: "F",
 
   /**
    * Current Or Temporary
    */
-  CurrentOrTemporary: "C",
+  C: "C",
 
   /**
    * Firm/Business
    */
-  FirmBusiness: "B",
+  B: "B",
 
   /**
    * Home
    */
-  Home: "H",
+  H: "H",
 
   /**
    * Legal Address
    */
-  LegalAddress: "L",
+  L: "L",
 
   /**
    * Mailing
    */
-  Mailing: "M",
+  M: "M",
 
   /**
    * Office/Business
    */
-  OfficeBusiness: "O",
+  O: "O",
 
   /**
    * Permanent
    */
-  Permanent: "P",
+  P: "P",
 
   /**
    * Registry home. Refers to the information system, typically managed by a public health agency, that stores patient information such as immunization histories or cancer data, regardless of where the patient obtains services.
    */
-  RegistryhomeReferstotheinformationsystemtypicallymanagedbyapublichealthagencythatstorespatientinformationsuchasimmunizationhistoriesorcancerdataregardlessofwherethepatientobtainsservices:
-    "RH",
+  RH: "RH",
 
   /**
    * Residence at birth (home address at time of birth)
    */
-  Residenceatbirthhomeaddressattimeofbirth: "BR",
+  BR: "BR",
 
   /**
    * Service Location
    */
-  ServiceLocation: "S",
+  S: "S",
 
   /**
    * Shipping Address
    */
-  ShippingAddress: "SH",
+  SH: "SH",
 
   /**
    * Tube Address
    */
-  TubeAddress: "TM",
+  TM: "TM",
 
   /**
    * Vacation
    */
-  Vacation: "V",
+  V: "V",
 } as const;
 
 /**

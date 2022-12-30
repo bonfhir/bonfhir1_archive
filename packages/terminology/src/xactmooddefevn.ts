@@ -6,12 +6,12 @@ export const XActMoodDefEvnCode = {
   /**
    * definition
    */
-  definition: "DEF",
+  DEF: "DEF",
 
   /**
    * event (occurrence)
    */
-  eventoccurrence: "EVN",
+  EVN: "EVN",
 } as const;
 
 /**

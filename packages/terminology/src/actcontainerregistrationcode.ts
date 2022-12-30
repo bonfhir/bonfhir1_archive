@@ -6,37 +6,37 @@ export const ActContainerRegistrationCodeCode = {
   /**
    * Identified
    */
-  Identified: "ID",
+  ID: "ID",
 
   /**
    * In Position
    */
-  InPosition: "IP",
+  IP: "IP",
 
   /**
    * Left Equipment
    */
-  LeftEquipment: "L",
+  L: "L",
 
   /**
    * Missing
    */
-  Missing: "M",
+  M: "M",
 
   /**
    * In Process
    */
-  InProcess: "O",
+  O: "O",
 
   /**
    * Process Completed
    */
-  ProcessCompleted: "R",
+  R: "R",
 
   /**
    * Container Unavailable
    */
-  ContainerUnavailable: "X",
+  X: "X",
 } as const;
 
 /**

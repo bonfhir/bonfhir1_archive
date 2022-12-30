@@ -6,27 +6,27 @@ export const ActNonObservationIndicationCodeCode = {
   /**
    * imaging study requiring contrast
    */
-  imagingstudyrequiringcontrast: "IND01",
+  IND01: "IND01",
 
   /**
    * colonoscopy prep
    */
-  colonoscopyprep: "IND02",
+  IND02: "IND02",
 
   /**
    * prophylaxis
    */
-  prophylaxis: "IND03",
+  IND03: "IND03",
 
   /**
    * surgical prophylaxis
    */
-  surgicalprophylaxis: "IND04",
+  IND04: "IND04",
 
   /**
    * pregnancy prophylaxis
    */
-  pregnancyprophylaxis: "IND05",
+  IND05: "IND05",
 } as const;
 
 /**

@@ -6,52 +6,52 @@ export const Hl7VSConfidentialityCodeCode = {
   /**
    * Very restricted
    */
-  Veryrestricted: "V",
+  V: "V",
 
   /**
    * Restricted
    */
-  Restricted: "R",
+  R: "R",
 
   /**
    * Usual control
    */
-  Usualcontrol: "U",
+  U: "U",
 
   /**
    * Employee
    */
-  Employee: "EMP",
+  EMP: "EMP",
 
   /**
    * Unwed mother
    */
-  Unwedmother: "UWM",
+  UWM: "UWM",
 
   /**
    * Very important person or celebrity
    */
-  Veryimportantpersonorcelebrity: "VIP",
+  VIP: "VIP",
 
   /**
    * Psychiatric patient
    */
-  Psychiatricpatient: "PSY",
+  PSY: "PSY",
 
   /**
    * AIDS patient
    */
-  AIDSpatient: "AID",
+  AID: "AID",
 
   /**
    * HIV(+) patient
    */
-  HIVpatient: "HIV",
+  HIV: "HIV",
 
   /**
    * Alcohol/drug treatment patient
    */
-  Alcoholdrugtreatmentpatient: "ETH",
+  ETH: "ETH",
 } as const;
 
 /**

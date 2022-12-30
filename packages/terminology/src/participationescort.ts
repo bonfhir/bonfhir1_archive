@@ -6,7 +6,7 @@ export const ParticipationEscortCode = {
   /**
    * escort
    */
-  escort: "ESC",
+  ESC: "ESC",
 } as const;
 
 /**

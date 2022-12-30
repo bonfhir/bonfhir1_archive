@@ -6,17 +6,17 @@ export const Hl7VSAdjustmentActionCode = {
   /**
    * Print on EOB
    */
-  PrintonEOB: "EOB",
+  EOB: "EOB",
 
   /**
    * Inform Patient
    */
-  InformPatient: "PAT",
+  PAT: "PAT",
 
   /**
    * Inform Provider
    */
-  InformProvider: "PRO",
+  PRO: "PRO",
 } as const;
 
 /**

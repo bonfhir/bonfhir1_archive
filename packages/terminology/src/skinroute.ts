@@ -6,12 +6,12 @@ export const SkinRouteCode = {
   /**
    * Occlusive dressing technique
    */
-  Occlusivedressingtechnique: "OCDRESTA",
+  OCDRESTA: "OCDRESTA",
 
   /**
    * Topical application, skin
    */
-  Topicalapplicationskin: "SKIN",
+  SKIN: "SKIN",
 } as const;
 
 /**

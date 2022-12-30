@@ -6,12 +6,12 @@ export const HemClinPracticeSettingCode = {
   /**
    * Hematology clinic
    */
-  Hematologyclinic: "HEM",
+  HEM: "HEM",
 
   /**
    * Pediatric hematology clinic
    */
-  Pediatrichematologyclinic: "PEDHEM",
+  PEDHEM: "PEDHEM",
 } as const;
 
 /**

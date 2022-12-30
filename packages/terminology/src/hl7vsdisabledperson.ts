@@ -6,22 +6,22 @@ export const Hl7VSDisabledPersonCode = {
   /**
    * Patient
    */
-  Patient: "PT",
+  PT: "PT",
 
   /**
    * Guarantor
    */
-  Guarantor: "GT",
+  GT: "GT",
 
   /**
    * Insured
    */
-  Insured: "IN",
+  IN: "IN",
 
   /**
    * Associated party
    */
-  Associatedparty: "AP",
+  AP: "AP",
 } as const;
 
 /**

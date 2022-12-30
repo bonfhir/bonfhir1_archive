@@ -6,32 +6,32 @@ export const ActSubstanceAdministrationCodeCode = {
   /**
    * ActSubstanceAdministrationCode
    */
-  ActSubstanceAdministrationCode: "_ActSubstanceAdministrationCode",
+  _ActSubstanceAdministrationCode: "_ActSubstanceAdministrationCode",
 
   /**
    * Drug therapy
    */
-  Drugtherapy: "DRUG",
+  DRUG: "DRUG",
 
   /**
    * food
    */
-  food: "FD",
+  FD: "FD",
 
   /**
    * Immunization
    */
-  Immunization: "IMMUNIZ",
+  IMMUNIZ: "IMMUNIZ",
 
   /**
    * Booster Immunization
    */
-  BoosterImmunization: "BOOSTER",
+  BOOSTER: "BOOSTER",
 
   /**
    * Initial Immunization
    */
-  InitialImmunization: "INITIMMUNIZ",
+  INITIMMUNIZ: "INITIMMUNIZ",
 } as const;
 
 /**

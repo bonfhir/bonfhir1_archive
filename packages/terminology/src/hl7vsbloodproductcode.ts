@@ -6,77 +6,77 @@ export const Hl7VSBloodProductCodeCode = {
   /**
    * Cryoprecipitated AHF
    */
-  CryoprecipitatedAHF: "CRYO",
+  CRYO: "CRYO",
 
   /**
    * Pooled Cryoprecipitate
    */
-  PooledCryoprecipitate: "CRYOP",
+  CRYOP: "CRYOP",
 
   /**
    * Fresh Frozen Plasma
    */
-  FreshFrozenPlasma: "FFP",
+  FFP: "FFP",
 
   /**
    * Fresh Frozen Plasma - Thawed
    */
-  FreshFrozenPlasmaThawed: "FFPTH",
+  FFPTH: "FFPTH",
 
   /**
    * Packed Cells
    */
-  PackedCells: "PC",
+  PC: "PC",
 
   /**
    * Autologous Packed Cells
    */
-  AutologousPackedCells: "PCA",
+  PCA: "PCA",
 
   /**
    * Packed Cells - Neonatal
    */
-  PackedCellsNeonatal: "PCNEO",
+  PCNEO: "PCNEO",
 
   /**
    * Washed Packed Cells
    */
-  WashedPackedCells: "PCW",
+  PCW: "PCW",
 
   /**
    * Platelet Concentrate
    */
-  PlateletConcentrate: "PLT",
+  PLT: "PLT",
 
   /**
    * Reduced Volume Platelets
    */
-  ReducedVolumePlatelets: "PLTNEO",
+  PLTNEO: "PLTNEO",
 
   /**
    * Pooled Platelets
    */
-  PooledPlatelets: "PLTP",
+  PLTP: "PLTP",
 
   /**
    * Platelet Pheresis
    */
-  PlateletPheresis: "PLTPH",
+  PLTPH: "PLTPH",
 
   /**
    * Leukoreduced Platelet Pheresis
    */
-  LeukoreducedPlateletPheresis: "PLTPHLR",
+  PLTPHLR: "PLTPHLR",
 
   /**
    * Reconstituted Whole Blood
    */
-  ReconstitutedWholeBlood: "RWB",
+  RWB: "RWB",
 
   /**
    * Autologous Whole Blood
    */
-  AutologousWholeBlood: "WBA",
+  WBA: "WBA",
 } as const;
 
 /**

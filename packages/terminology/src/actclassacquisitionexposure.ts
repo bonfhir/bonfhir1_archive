@@ -10,7 +10,7 @@ export const ActClassAcquisitionExposureCode = {
   /**
    * acquisition exposure
    */
-  acquisitionexposure: "AEXPOS",
+  AEXPOS: "AEXPOS",
 } as const;
 
 /**

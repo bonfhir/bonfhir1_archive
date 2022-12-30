@@ -6,102 +6,102 @@ export const PrimaryDentitionCode = {
   /**
    * A
    */
-  A: "TIDA",
+  TIDA: "TIDA",
 
   /**
    * B
    */
-  B: "TIDB",
+  TIDB: "TIDB",
 
   /**
    * C
    */
-  C: "TIDC",
+  TIDC: "TIDC",
 
   /**
    * D
    */
-  D: "TIDD",
+  TIDD: "TIDD",
 
   /**
    * E
    */
-  E: "TIDE",
+  TIDE: "TIDE",
 
   /**
    * F
    */
-  F: "TIDF",
+  TIDF: "TIDF",
 
   /**
    * G
    */
-  G: "TIDG",
+  TIDG: "TIDG",
 
   /**
    * H
    */
-  H: "TIDH",
+  TIDH: "TIDH",
 
   /**
    * I
    */
-  I: "TIDI",
+  TIDI: "TIDI",
 
   /**
    * J
    */
-  J: "TIDJ",
+  TIDJ: "TIDJ",
 
   /**
    * K
    */
-  K: "TIDK",
+  TIDK: "TIDK",
 
   /**
    * L
    */
-  L: "TIDL",
+  TIDL: "TIDL",
 
   /**
    * M
    */
-  M: "TIDM",
+  TIDM: "TIDM",
 
   /**
    * N
    */
-  N: "TIDN",
+  TIDN: "TIDN",
 
   /**
    * O
    */
-  O: "TIDO",
+  TIDO: "TIDO",
 
   /**
    * P
    */
-  P: "TIDP",
+  TIDP: "TIDP",
 
   /**
    * Q
    */
-  Q: "TIDQ",
+  TIDQ: "TIDQ",
 
   /**
    * R
    */
-  R: "TIDR",
+  TIDR: "TIDR",
 
   /**
    * S
    */
-  S: "TIDS",
+  TIDS: "TIDS",
 
   /**
    * T
    */
-  T: "TIDT",
+  TIDT: "TIDT",
 } as const;
 
 /**

@@ -8,127 +8,127 @@ export const ActProgramTypeCodeCode = {
   /**
    * ActProgramTypeCode
    */
-  ActProgramTypeCode: "_ActProgramTypeCode",
+  _ActProgramTypeCode: "_ActProgramTypeCode",
 
   /**
    * public healthcare
    */
-  publichealthcare: "PUBLICPOL",
+  PUBLICPOL: "PUBLICPOL",
 
   /**
    * dental program
    */
-  dentalprogram: "DENTPRG",
+  DENTPRG: "DENTPRG",
 
   /**
    * public health program
    */
-  publichealthprogram: "DISEASEPRG",
+  DISEASEPRG: "DISEASEPRG",
 
   /**
    * women's cancer detection program
    */
-  womenscancerdetectionprogram: "CANPRG",
+  CANPRG: "CANPRG",
 
   /**
    * end renal program
    */
-  endrenalprogram: "ENDRENAL",
+  ENDRENAL: "ENDRENAL",
 
   /**
    * HIV-AIDS program
    */
-  HIVAIDSprogram: "HIVAIDS",
+  HIVAIDS: "HIVAIDS",
 
   /**
    * mandatory health program
    */
-  mandatoryhealthprogram: "MANDPOL",
+  MANDPOL: "MANDPOL",
 
   /**
    * mental health program
    */
-  mentalhealthprogram: "MENTPRG",
+  MENTPRG: "MENTPRG",
 
   /**
    * safety net clinic program
    */
-  safetynetclinicprogram: "SAFNET",
+  SAFNET: "SAFNET",
 
   /**
    * substance use program
    */
-  substanceuseprogram: "SUBPRG",
+  SUBPRG: "SUBPRG",
 
   /**
    * subsidized health program
    */
-  subsidizedhealthprogram: "SUBSIDIZ",
+  SUBSIDIZ: "SUBSIDIZ",
 
   /**
    * subsidized managed care program
    */
-  subsidizedmanagedcareprogram: "SUBSIDMC",
+  SUBSIDMC: "SUBSIDMC",
 
   /**
    * subsidized supplemental health program
    */
-  subsidizedsupplementalhealthprogram: "SUBSUPP",
+  SUBSUPP: "SUBSUPP",
 
   /**
    * worker's compensation
    */
-  workerscompensation: "WCBPOL",
+  WCBPOL: "WCBPOL",
 
   /**
    * charity program
    */
-  charityprogram: "CHAR",
+  CHAR: "CHAR",
 
   /**
    * crime victim program
    */
-  crimevictimprogram: "CRIME",
+  CRIME: "CRIME",
 
   /**
    * employee assistance program
    */
-  employeeassistanceprogram: "EAP",
+  EAP: "EAP",
 
   /**
    * government employee health program
    */
-  governmentemployeehealthprogram: "GOVEMP",
+  GOVEMP: "GOVEMP",
 
   /**
    * high risk pool program
    */
-  highriskpoolprogram: "HIRISK",
+  HIRISK: "HIRISK",
 
   /**
    * indigenous peoples health program
    */
-  indigenouspeopleshealthprogram: "IND",
+  IND: "IND",
 
   /**
    * military health program
    */
-  militaryhealthprogram: "MILITARY",
+  MILITARY: "MILITARY",
 
   /**
    * retiree health program
    */
-  retireehealthprogram: "RETIRE",
+  RETIRE: "RETIRE",
 
   /**
    * social service program
    */
-  socialserviceprogram: "SOCIAL",
+  SOCIAL: "SOCIAL",
 
   /**
    * veteran health program
    */
-  veteranhealthprogram: "VET",
+  VET: "VET",
 } as const;
 
 /**

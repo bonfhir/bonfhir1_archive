@@ -6,12 +6,12 @@ export const Hl7VSVSCollectionEventCode = {
   /**
    * Placing the order
    */
-  Placingtheorder: "ORD",
+  ORD: "ORD",
 
   /**
    * Collecting the specimen
    */
-  Collectingthespecimen: "DRW",
+  DRW: "DRW",
 } as const;
 
 /**

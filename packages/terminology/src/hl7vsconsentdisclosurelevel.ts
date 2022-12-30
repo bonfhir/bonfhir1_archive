@@ -6,17 +6,17 @@ export const Hl7VSConsentDisclosureLevelCode = {
   /**
    * Full Disclosure
    */
-  FullDisclosure: "F",
+  F: "F",
 
   /**
    * Partial Disclosure
    */
-  PartialDisclosure: "P",
+  P: "P",
 
   /**
    * No Disclosure
    */
-  NoDisclosure: "N",
+  N: "N",
 } as const;
 
 /**

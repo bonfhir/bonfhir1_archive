@@ -6,12 +6,12 @@ export const SubscriptionTagCode = {
   /**
    * Queued
    */
-  Queued: "queued",
+  queued: "queued",
 
   /**
    * Delivered
    */
-  Delivered: "delivered",
+  delivered: "delivered",
 } as const;
 
 /**

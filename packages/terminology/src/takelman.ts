@@ -6,12 +6,12 @@ export const TakelmanCode = {
   /**
    * Kalapuyan
    */
-  Kalapuyan: "_Kalapuyan",
+  _Kalapuyan: "_Kalapuyan",
 
   /**
    * Central Kalapuyan
    */
-  CentralKalapuyan: "x-KAL",
+  "x-KAL": "x-KAL",
 } as const;
 
 /**

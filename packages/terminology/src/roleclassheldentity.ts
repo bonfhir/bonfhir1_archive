@@ -6,7 +6,7 @@ export const RoleClassHeldEntityCode = {
   /**
    * held entity
    */
-  heldentity: "HLD",
+  HLD: "HLD",
 } as const;
 
 /**

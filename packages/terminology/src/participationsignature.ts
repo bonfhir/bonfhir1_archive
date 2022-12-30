@@ -8,17 +8,17 @@ export const ParticipationSignatureCode = {
   /**
    * intended
    */
-  intended: "I",
+  I: "I",
 
   /**
    * signed
    */
-  signed: "S",
+  S: "S",
 
   /**
    * required
    */
-  required: "X",
+  X: "X",
 } as const;
 
 /**

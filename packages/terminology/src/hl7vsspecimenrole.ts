@@ -6,62 +6,62 @@ export const Hl7VSSpecimenRoleCode = {
   /**
    * Blind Sample
    */
-  BlindSample: "B",
+  B: "B",
 
   /**
    * Calibrator
    */
-  Calibrator: "C",
+  C: "C",
 
   /**
    * Electronic QC
    */
-  ElectronicQC: "E",
+  E: "E",
 
   /**
    * Filler Organization Proficiency
    */
-  FillerOrganizationProficiency: "F",
+  F: "F",
 
   /**
    * Group
    */
-  Group: "G",
+  G: "G",
 
   /**
    * Historical Specimen
    */
-  HistoricalSpecimen: "H",
+  H: "H",
 
   /**
    * Pool
    */
-  Pool: "L",
+  L: "L",
 
   /**
    * Operator Proficiency
    */
-  OperatorProficiency: "O",
+  O: "O",
 
   /**
    * Patient
    */
-  Patient: "P",
+  P: "P",
 
   /**
    * Control specimen
    */
-  Controlspecimen: "Q",
+  Q: "Q",
 
   /**
    * Replicate (of patient sample as a control)
    */
-  Replicateofpatientsampleasacontrol: "R",
+  R: "R",
 
   /**
    * Verifying Calibrator
    */
-  VerifyingCalibrator: "V",
+  V: "V",
 } as const;
 
 /**

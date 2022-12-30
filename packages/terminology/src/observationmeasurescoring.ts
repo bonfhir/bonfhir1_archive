@@ -6,27 +6,27 @@ export const ObservationMeasureScoringCode = {
   /**
    * ObservationMeasureScoring
    */
-  ObservationMeasureScoring: "_ObservationMeasureScoring",
+  _ObservationMeasureScoring: "_ObservationMeasureScoring",
 
   /**
    * cohort measure scoring
    */
-  cohortmeasurescoring: "COHORT",
+  COHORT: "COHORT",
 
   /**
    * continuous variable measure scoring
    */
-  continuousvariablemeasurescoring: "CONTVAR",
+  CONTVAR: "CONTVAR",
 
   /**
    * proportion measure scoring
    */
-  proportionmeasurescoring: "PROPOR",
+  PROPOR: "PROPOR",
 
   /**
    * ratio measure scoring
    */
-  ratiomeasurescoring: "RATIO",
+  RATIO: "RATIO",
 } as const;
 
 /**

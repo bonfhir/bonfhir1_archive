@@ -6,27 +6,27 @@ export const Hl7VSIndirectExposureMechanismCode = {
   /**
    * Breast milk
    */
-  Breastmilk: "B",
+  B: "B",
 
   /**
    * Transplacental
    */
-  Transplacental: "P",
+  P: "P",
 
   /**
    * Father
    */
-  Father: "F",
+  F: "F",
 
   /**
    * Blood product
    */
-  Bloodproduct: "X",
+  X: "X",
 
   /**
    * Other
    */
-  Other: "O",
+  O: "O",
 } as const;
 
 /**

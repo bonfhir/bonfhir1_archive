@@ -6,7 +6,7 @@ export const RoleLinkStatusActiveCode = {
   /**
    * active
    */
-  active: "ACTIVE",
+  ACTIVE: "ACTIVE",
 } as const;
 
 /**

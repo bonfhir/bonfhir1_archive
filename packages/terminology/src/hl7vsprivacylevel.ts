@@ -6,32 +6,32 @@ export const Hl7VSPrivacyLevelCode = {
   /**
    * Isolation
    */
-  Isolation: "F",
+  F: "F",
 
   /**
    * Private room
    */
-  Privateroom: "P",
+  P: "P",
 
   /**
    * Private room - medically justified
    */
-  Privateroommedicallyjustified: "J",
+  J: "J",
 
   /**
    * Private room - due to overflow
    */
-  Privateroomduetooverflow: "Q",
+  Q: "Q",
 
   /**
    * Semi-private room
    */
-  Semiprivateroom: "S",
+  S: "S",
 
   /**
    * Ward
    */
-  Ward: "W",
+  W: "W",
 } as const;
 
 /**

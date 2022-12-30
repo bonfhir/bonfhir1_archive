@@ -6,52 +6,52 @@ export const AdmitSourceCode = {
   /**
    * Transferred from other hospital
    */
-  Transferredfromotherhospital: "hosp-trans",
+  "hosp-trans": "hosp-trans",
 
   /**
    * From accident/emergency department
    */
-  Fromaccidentemergencydepartment: "emd",
+  emd: "emd",
 
   /**
    * From outpatient department
    */
-  Fromoutpatientdepartment: "outp",
+  outp: "outp",
 
   /**
    * Born in hospital
    */
-  Borninhospital: "born",
+  born: "born",
 
   /**
    * General Practitioner referral
    */
-  GeneralPractitionerreferral: "gp",
+  gp: "gp",
 
   /**
    * Medical Practitioner/physician referral
    */
-  MedicalPractitionerphysicianreferral: "mp",
+  mp: "mp",
 
   /**
    * From nursing home
    */
-  Fromnursinghome: "nursing",
+  nursing: "nursing",
 
   /**
    * From psychiatric hospital
    */
-  Frompsychiatrichospital: "psych",
+  psych: "psych",
 
   /**
    * From rehabilitation facility
    */
-  Fromrehabilitationfacility: "rehab",
+  rehab: "rehab",
 
   /**
    * Other
    */
-  Other: "other",
+  other: "other",
 } as const;
 
 /**

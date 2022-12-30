@@ -6,42 +6,42 @@ export const ResearchStudyPrimaryPurposeTypeCode = {
   /**
    * Treatment
    */
-  Treatment: "treatment",
+  treatment: "treatment",
 
   /**
    * Prevention
    */
-  Prevention: "prevention",
+  prevention: "prevention",
 
   /**
    * Diagnostic
    */
-  Diagnostic: "diagnostic",
+  diagnostic: "diagnostic",
 
   /**
    * Supportive Care
    */
-  SupportiveCare: "supportive-care",
+  "supportive-care": "supportive-care",
 
   /**
    * Screening
    */
-  Screening: "screening",
+  screening: "screening",
 
   /**
    * Health Services Research
    */
-  HealthServicesResearch: "health-services-research",
+  "health-services-research": "health-services-research",
 
   /**
    * Basic Science
    */
-  BasicScience: "basic-science",
+  "basic-science": "basic-science",
 
   /**
    * Device Feasibility
    */
-  DeviceFeasibility: "device-feasibility",
+  "device-feasibility": "device-feasibility",
 } as const;
 
 /**

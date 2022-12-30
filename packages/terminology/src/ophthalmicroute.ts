@@ -6,7 +6,7 @@ export const OphthalmicRouteCode = {
   /**
    * Topical application, ophthalmic
    */
-  Topicalapplicationophthalmic: "OPTHALTA",
+  OPTHALTA: "OPTHALTA",
 } as const;
 
 /**

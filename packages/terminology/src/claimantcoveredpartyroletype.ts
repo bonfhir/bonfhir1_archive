@@ -6,22 +6,22 @@ export const ClaimantCoveredPartyRoleTypeCode = {
   /**
    * injured plaintiff
    */
-  injuredplaintiff: "INJ",
+  INJ: "INJ",
 
   /**
    * ClaimantCoveredPartyRoleType
    */
-  ClaimantCoveredPartyRoleType: "_ClaimantCoveredPartyRoleType",
+  _ClaimantCoveredPartyRoleType: "_ClaimantCoveredPartyRoleType",
 
   /**
    * crime victim
    */
-  crimevictim: "CRIMEVIC",
+  CRIMEVIC: "CRIMEVIC",
 
   /**
    * injured worker
    */
-  injuredworker: "INJWKR",
+  INJWKR: "INJWKR",
 } as const;
 
 /**

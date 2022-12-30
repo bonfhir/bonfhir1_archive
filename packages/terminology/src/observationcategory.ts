@@ -8,42 +8,42 @@ export const ObservationCategoryCode = {
   /**
    * Exam
    */
-  Exam: "exam",
+  exam: "exam",
 
   /**
    * Imaging
    */
-  Imaging: "imaging",
+  imaging: "imaging",
 
   /**
    * Laboratory
    */
-  Laboratory: "laboratory",
+  laboratory: "laboratory",
 
   /**
    * Procedure
    */
-  Procedure: "procedure",
+  procedure: "procedure",
 
   /**
    * Social History
    */
-  SocialHistory: "social-history",
+  "social-history": "social-history",
 
   /**
    * Survey
    */
-  Survey: "survey",
+  survey: "survey",
 
   /**
    * Therapy
    */
-  Therapy: "therapy",
+  therapy: "therapy",
 
   /**
    * Vital Signs
    */
-  VitalSigns: "vital-signs",
+  "vital-signs": "vital-signs",
 } as const;
 
 /**

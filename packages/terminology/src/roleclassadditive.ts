@@ -6,7 +6,7 @@ export const RoleClassAdditiveCode = {
   /**
    * additive
    */
-  additive: "ADTV",
+  ADTV: "ADTV",
 } as const;
 
 /**

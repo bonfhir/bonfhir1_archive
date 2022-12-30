@@ -6,27 +6,27 @@ export const EncounterSubjectStatusCode = {
   /**
    * Arrived
    */
-  Arrived: "arrived",
+  arrived: "arrived",
 
   /**
    * Triaged
    */
-  Triaged: "triaged",
+  triaged: "triaged",
 
   /**
    * Receiving Care
    */
-  ReceivingCare: "receiving-care",
+  "receiving-care": "receiving-care",
 
   /**
    * On Leave
    */
-  OnLeave: "on-leave",
+  "on-leave": "on-leave",
 
   /**
    * Departed
    */
-  Departed: "departed",
+  departed: "departed",
 } as const;
 
 /**

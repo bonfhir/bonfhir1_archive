@@ -6,27 +6,27 @@ export const Hl7VSProcessingIdCode = {
   /**
    * Debugging
    */
-  Debugging: "D",
+  D: "D",
 
   /**
    * Production
    */
-  Production: "P",
+  P: "P",
 
   /**
    * Training
    */
-  Training: "T",
+  T: "T",
 
   /**
    * Non-Production Testing
    */
-  NonProductionTesting: "N",
+  N: "N",
 
   /**
    * Validation
    */
-  Validation: "V",
+  V: "V",
 } as const;
 
 /**

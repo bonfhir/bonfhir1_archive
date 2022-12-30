@@ -6,22 +6,22 @@ export const IrrigationSolutionCode = {
   /**
    * Irrigation Solution
    */
-  IrrigationSolution: "IRSOL",
+  IRSOL: "IRSOL",
 
   /**
    * Douche
    */
-  Douche: "DOUCHE",
+  DOUCHE: "DOUCHE",
 
   /**
    * Enema
    */
-  Enema: "ENEMA",
+  ENEMA: "ENEMA",
 
   /**
    * Ophthalmic Irrigation Solution
    */
-  OphthalmicIrrigationSolution: "OPIRSOL",
+  OPIRSOL: "OPIRSOL",
 } as const;
 
 /**

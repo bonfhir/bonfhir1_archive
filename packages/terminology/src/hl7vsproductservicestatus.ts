@@ -6,17 +6,17 @@ export const Hl7VSProductServiceStatusCode = {
   /**
    * Processed
    */
-  Processed: "P",
+  P: "P",
 
   /**
    * Denied
    */
-  Denied: "D",
+  D: "D",
 
   /**
    * Rejected
    */
-  Rejected: "R",
+  R: "R",
 } as const;
 
 /**

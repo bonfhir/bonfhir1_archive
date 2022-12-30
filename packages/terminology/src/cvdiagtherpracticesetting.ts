@@ -6,17 +6,17 @@ export const CVDiagTherPracticeSettingCode = {
   /**
    * Cardiovascular diagnostics or therapeutics unit
    */
-  Cardiovasculardiagnosticsortherapeuticsunit: "CVDX",
+  CVDX: "CVDX",
 
   /**
    * Cardiac catheterization lab
    */
-  Cardiaccatheterizationlab: "CATH",
+  CATH: "CATH",
 
   /**
    * Echocardiography lab
    */
-  Echocardiographylab: "ECHO",
+  ECHO: "ECHO",
 } as const;
 
 /**

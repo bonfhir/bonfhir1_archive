@@ -6,12 +6,12 @@ export const ActClassROICode = {
   /**
    * bounded ROI
    */
-  boundedROI: "ROIBND",
+  ROIBND: "ROIBND",
 
   /**
    * overlay ROI
    */
-  overlayROI: "ROIOVL",
+  ROIOVL: "ROIOVL",
 } as const;
 
 /**

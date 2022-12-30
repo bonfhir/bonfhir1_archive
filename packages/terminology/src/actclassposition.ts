@@ -6,17 +6,17 @@ export const ActClassPositionCode = {
   /**
    * position
    */
-  position: "POS",
+  POS: "POS",
 
   /**
    * position accuracy
    */
-  positionaccuracy: "POSACC",
+  POSACC: "POSACC",
 
   /**
    * position coordinate
    */
-  positioncoordinate: "POSCOORD",
+  POSCOORD: "POSCOORD",
 } as const;
 
 /**

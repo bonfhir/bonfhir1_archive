@@ -6,7 +6,7 @@ export const ActRelationshipHasDebitCode = {
   /**
    * has debit
    */
-  hasdebit: "DEBIT",
+  DEBIT: "DEBIT",
 } as const;
 
 /**

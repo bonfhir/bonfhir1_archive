@@ -6,12 +6,12 @@ export const Hl7VSOutlierTypeCode = {
   /**
    * Outlier days
    */
-  Outlierdays: "D",
+  D: "D",
 
   /**
    * Outlier cost
    */
-  Outliercost: "C",
+  C: "C",
 } as const;
 
 /**

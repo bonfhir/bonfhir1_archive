@@ -6,42 +6,42 @@ export const ObservationSocioEconomicStatusValueCode = {
   /**
    * socio economic status
    */
-  socioeconomicstatus: "SOECSTAT",
+  SOECSTAT: "SOECSTAT",
 
   /**
    * abuse victim
    */
-  abusevictim: "ABUSE",
+  ABUSE: "ABUSE",
 
   /**
    * homeless
    */
-  homeless: "HMLESS",
+  HMLESS: "HMLESS",
 
   /**
    * illegal immigrant
    */
-  illegalimmigrant: "ILGIM",
+  ILGIM: "ILGIM",
 
   /**
    * incarcerated
    */
-  incarcerated: "INCAR",
+  INCAR: "INCAR",
 
   /**
    * probation
    */
-  probation: "PROB",
+  PROB: "PROB",
 
   /**
    * refugee
    */
-  refugee: "REFUG",
+  REFUG: "REFUG",
 
   /**
    * unemployed
    */
-  unemployed: "UNEMPL",
+  UNEMPL: "UNEMPL",
 } as const;
 
 /**

@@ -6,22 +6,22 @@ export const RoleClassEventLocationCode = {
   /**
    * event location
    */
-  eventlocation: "EXLOC",
+  EXLOC: "EXLOC",
 
   /**
    * service delivery location
    */
-  servicedeliverylocation: "SDLOC",
+  SDLOC: "SDLOC",
 
   /**
    * dedicated service delivery location
    */
-  dedicatedservicedeliverylocation: "DSDLOC",
+  DSDLOC: "DSDLOC",
 
   /**
    * incidental service delivery location
    */
-  incidentalservicedeliverylocation: "ISDLOC",
+  ISDLOC: "ISDLOC",
 } as const;
 
 /**

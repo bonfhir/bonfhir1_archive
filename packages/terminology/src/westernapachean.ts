@@ -6,17 +6,17 @@ export const WesternApacheanCode = {
   /**
    * Mescalero-Chiricahua
    */
-  MescaleroChiricahua: "x-APM",
+  "x-APM": "x-APM",
 
   /**
    * Western Apache
    */
-  WesternApache: "x-APW",
+  "x-APW": "x-APW",
 
   /**
    * Dine
    */
-  Dine: "x-NAV",
+  "x-NAV": "x-NAV",
 } as const;
 
 /**

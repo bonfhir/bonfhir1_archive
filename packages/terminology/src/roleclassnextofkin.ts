@@ -6,7 +6,7 @@ export const RoleClassNextOfKinCode = {
   /**
    * next of kin
    */
-  nextofkin: "NOK",
+  NOK: "NOK",
 } as const;
 
 /**

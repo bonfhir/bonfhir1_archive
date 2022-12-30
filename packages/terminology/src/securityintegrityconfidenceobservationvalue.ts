@@ -6,22 +6,22 @@ export const SecurityIntegrityConfidenceObservationValueCode = {
   /**
    * highly reliable
    */
-  highlyreliable: "HRELIABLE",
+  HRELIABLE: "HRELIABLE",
 
   /**
    * reliable
    */
-  reliable: "RELIABLE",
+  RELIABLE: "RELIABLE",
 
   /**
    * uncertain reliability
    */
-  uncertainreliability: "UNCERTREL",
+  UNCERTREL: "UNCERTREL",
 
   /**
    * unreliable
    */
-  unreliable: "UNRELIABLE",
+  UNRELIABLE: "UNRELIABLE",
 } as const;
 
 /**

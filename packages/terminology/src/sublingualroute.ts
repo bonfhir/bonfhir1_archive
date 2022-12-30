@@ -6,7 +6,7 @@ export const SublingualRouteCode = {
   /**
    * Dissolve, sublingual
    */
-  Dissolvesublingual: "SL",
+  SL: "SL",
 } as const;
 
 /**

@@ -6,7 +6,7 @@ export const RoleClassActiveIngredientReferenceBasisCode = {
   /**
    * active ingredient - reference substance is basis of strength
    */
-  activeingredientreferencesubstanceisbasisofstrength: "ACTIR",
+  ACTIR: "ACTIR",
 } as const;
 
 /**

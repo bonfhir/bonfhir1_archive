@@ -6,264 +6,262 @@ export const Hl7VSParticipationCode = {
   /**
    * Alert Acknowledging Provider
    */
-  AlertAcknowledgingProvider: "AAP",
+  AAP: "AAP",
 
   /**
    * Administration Cosigner
    */
-  AdministrationCosigner: "AC",
+  AC: "AC",
 
   /**
    * Admitting Provider
    */
-  AdmittingProvider: "AD",
+  AD: "AD",
 
   /**
    * Authorized Performing Health Professional
    */
-  AuthorizedPerformingHealthProfessional: "AHP",
+  AHP: "AHP",
 
   /**
    * Assistant/Alternate Interpreter
    */
-  AssistantAlternateInterpreter: "AI",
+  AI: "AI",
 
   /**
    * Administering Provider
    */
-  AdministeringProvider: "AP",
+  AP: "AP",
 
   /**
    * Authorized Performing Provider Organization
    */
-  AuthorizedPerformingProviderOrganization: "APO",
+  APO: "APO",
 
   /**
    * Assistant Result Interpreter
    */
-  AssistantResultInterpreter: "ARI",
+  ARI: "ARI",
 
   /**
    * Attending Provider
    */
-  AttendingProvider: "AT",
+  AT: "AT",
 
   /**
    * Author/Event Initiator
    */
-  AuthorEventInitiator: "AUT",
+  AUT: "AUT",
 
   /**
    * Collecting Provider Organization
    */
-  CollectingProviderOrganization: "CLPO",
+  CLPO: "CLPO",
 
   /**
    * Consulting Provider
    */
-  ConsultingProvider: "CP",
+  CP: "CP",
 
   /**
    * De-Identification Entity
    */
-  DeIdentificationEntity: "DIE",
+  DIE: "DIE",
 
   /**
    * Dispensing Provider
    */
-  DispensingProvider: "DP",
+  DP: "DP",
 
   /**
    * Expected Assistant Result Interpreter
    */
-  ExpectedAssistantResultInterpreter: "EARI",
+  EARI: "EARI",
 
   /**
    * Entering Device
    */
-  EnteringDevice: "ED",
+  ED: "ED",
 
   /**
    * Entering Organization
    */
-  EnteringOrganization: "EO",
+  EO: "EO",
 
   /**
    * Entering Person
    */
-  EnteringPerson: "EP",
+  EP: "EP",
 
   /**
    * Expected Principal Result Interpreter
    */
-  ExpectedPrincipalResultInterpreter: "EPRI",
+  EPRI: "EPRI",
 
   /**
    * Equipment
    */
-  Equipment: "EQUIP",
+  EQUIP: "EQUIP",
 
   /**
    * Family Health Care Professional
    */
-  FamilyHealthCareProfessional: "FHCP",
+  FHCP: "FHCP",
 
   /**
    * From Location
    */
-  FromLocation: "FL",
+  FL: "FL",
 
   /**
    * Medical Director
    */
-  MedicalDirector: "MDIR",
+  MDIR: "MDIR",
 
   /**
    * Ordering Facility
    */
-  OrderingFacility: "OF",
+  OF: "OF",
 
   /**
    * Ordering Provider
    */
-  OrderingProvider: "OP",
+  OP: "OP",
 
   /**
    * Ordering Provider Organization
    */
-  OrderingProviderOrganization: "OPO",
+  OPO: "OPO",
 
   /**
    * Outside Site(s) Where Observation May Be Performed
    */
-  OutsideSitesWhereObservationMayBePerformed: "OS",
+  OS: "OS",
 
   /**
    * Packed by
    */
-  Packedby: "PB",
+  PB: "PB",
 
   /**
    * Pharmacist
    */
-  Pharmacist: "PH",
+  PH: "PH",
 
   /**
    * Primary Interpreter
    */
-  PrimaryInterpreter: "PI",
+  PI: "PI",
 
   /**
    * Performing Organization
    */
-  PerformingOrganization: "PO",
+  PO: "PO",
 
   /**
    * Performing Organization Medical Director
    */
-  PerformingOrganizationMedicalDirector: "POMD",
+  POMD: "POMD",
 
   /**
    * Primary Care Provider
    */
-  PrimaryCareProvider: "PP",
+  PP: "PP",
 
   /**
    * Patient Preferred Pharmacy
    */
-  PatientPreferredPharmacy: "PPH",
+  PPH: "PPH",
 
   /**
    * Principal Result Interpreter
    */
-  PrincipalResultInterpreter: "PRI",
+  PRI: "PRI",
 
   /**
    * Results Copies To
    */
-  ResultsCopiesTo: "RCT",
+  RCT: "RCT",
 
   /**
    * Referring Health Professional
    */
-  ReferringHealthProfessional: "RHP",
+  RHP: "RHP",
 
   /**
    * Re-Identification Entity
    */
-  ReIdentificationEntity: "RIE",
+  RIE: "RIE",
 
   /**
    * Responsible Observer
    */
-  ResponsibleObserver: "RO",
+  RO: "RO",
 
   /**
    * Referring Provider
    */
-  ReferringProvider: "RP",
+  RP: "RP",
 
   /**
    * Referring Provider Organization
    */
-  ReferringProviderOrganization: "RPO",
+  RPO: "RPO",
 
   /**
    * Referred to Provider
    */
-  ReferredtoProvider: "RT",
+  RT: "RT",
 
   /**
    * Send by
    */
-  Sendby: "SB",
+  SB: "SB",
 
   /**
    * Specimen Collector
    */
-  SpecimenCollector: "SC",
+  SC: "SC",
 
   /**
    * To Location
    */
-  ToLocation: "TL",
+  TL: "TL",
 
   /**
    * Technician
    */
-  Technician: "TN",
+  TN: "TN",
 
   /**
    * Transcriptionist
    */
-  Transcriptionist: "TR",
+  TR: "TR",
 
   /**
    * Verifier (Verifying Person)
    */
-  VerifierVerifyingPerson: "VP",
+  VP: "VP",
 
   /**
    * Verifying Pharmaceutical Supplier   (not sure how to dissect Pharmacist/Treatment Supplier's Verifier ID)
    */
-  VerifyingPharmaceuticalSuppliernotsurehowtodissectPharmacistTreatmentSuppliersVerifierID:
-    "VPS",
+  VPS: "VPS",
 
   /**
    * Verifying Treatment Supplier   (not sure how to dissect Pharmacist/Treatment Supplier's Verifier ID)
    */
-  VerifyingTreatmentSuppliernotsurehowtodissectPharmacistTreatmentSuppliersVerifierID:
-    "VTS",
+  VTS: "VTS",
 
   /**
    * Waypoint
    */
-  Waypoint: "WAY",
+  WAY: "WAY",
 
   /**
    * Waypoint Recipient
    */
-  WaypointRecipient: "WAYR",
+  WAYR: "WAYR",
 } as const;
 
 /**

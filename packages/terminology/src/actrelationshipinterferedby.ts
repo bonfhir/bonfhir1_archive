@@ -6,7 +6,7 @@ export const ActRelationshipInterferedByCode = {
   /**
    * interfered by
    */
-  interferedby: "INTF",
+  INTF: "INTF",
 } as const;
 
 /**

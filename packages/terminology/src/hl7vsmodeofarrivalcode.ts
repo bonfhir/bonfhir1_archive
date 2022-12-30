@@ -6,37 +6,37 @@ export const Hl7VSModeOfArrivalCodeCode = {
   /**
    * Ambulance
    */
-  Ambulance: "A",
+  A: "A",
 
   /**
    * Car
    */
-  Car: "C",
+  C: "C",
 
   /**
    * On foot
    */
-  Onfoot: "F",
+  F: "F",
 
   /**
    * Helicopter
    */
-  Helicopter: "H",
+  H: "H",
 
   /**
    * Public Transport
    */
-  PublicTransport: "P",
+  P: "P",
 
   /**
    * Other
    */
-  Other: "O",
+  O: "O",
 
   /**
    * Unknown
    */
-  Unknown: "U",
+  U: "U",
 } as const;
 
 /**

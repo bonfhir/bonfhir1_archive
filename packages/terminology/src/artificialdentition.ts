@@ -6,922 +6,922 @@ export const ArtificialDentitionCode = {
   /**
    * 10a
    */
-  Tena: "TID10a",
+  TID10a: "TID10a",
 
   /**
    * 10i
    */
-  Teni: "TID10i",
+  TID10i: "TID10i",
 
   /**
    * 10p
    */
-  Tenp: "TID10p",
+  TID10p: "TID10p",
 
   /**
    * 10pd
    */
-  Tenpd: "TID10pd",
+  TID10pd: "TID10pd",
 
   /**
    * 10pm
    */
-  Tenpm: "TID10pm",
+  TID10pm: "TID10pm",
 
   /**
    * 11a
    */
-  Elevena: "TID11a",
+  TID11a: "TID11a",
 
   /**
    * 11i
    */
-  Eleveni: "TID11i",
+  TID11i: "TID11i",
 
   /**
    * 11p
    */
-  Elevenp: "TID11p",
+  TID11p: "TID11p",
 
   /**
    * 11pd
    */
-  Elevenpd: "TID11pd",
+  TID11pd: "TID11pd",
 
   /**
    * 11pm
    */
-  Elevenpm: "TID11pm",
+  TID11pm: "TID11pm",
 
   /**
    * 12a
    */
-  Twelvea: "TID12a",
+  TID12a: "TID12a",
 
   /**
    * 12i
    */
-  Twelvei: "TID12i",
+  TID12i: "TID12i",
 
   /**
    * 12p
    */
-  Twelvep: "TID12p",
+  TID12p: "TID12p",
 
   /**
    * 12pd
    */
-  Twelvepd: "TID12pd",
+  TID12pd: "TID12pd",
 
   /**
    * 12pm
    */
-  Twelvepm: "TID12pm",
+  TID12pm: "TID12pm",
 
   /**
    * 13a
    */
-  Thirteena: "TID13a",
+  TID13a: "TID13a",
 
   /**
    * 13i
    */
-  Thirteeni: "TID13i",
+  TID13i: "TID13i",
 
   /**
    * 13p
    */
-  Thirteenp: "TID13p",
+  TID13p: "TID13p",
 
   /**
    * 13pd
    */
-  Thirteenpd: "TID13pd",
+  TID13pd: "TID13pd",
 
   /**
    * 13pm
    */
-  Thirteenpm: "TID13pm",
+  TID13pm: "TID13pm",
 
   /**
    * 14a
    */
-  Fourteena: "TID14a",
+  TID14a: "TID14a",
 
   /**
    * 14i
    */
-  Fourteeni: "TID14i",
+  TID14i: "TID14i",
 
   /**
    * 14p
    */
-  Fourteenp: "TID14p",
+  TID14p: "TID14p",
 
   /**
    * 14pd
    */
-  Fourteenpd: "TID14pd",
+  TID14pd: "TID14pd",
 
   /**
    * 14pm
    */
-  Fourteenpm: "TID14pm",
+  TID14pm: "TID14pm",
 
   /**
    * 15a
    */
-  Fifteena: "TID15a",
+  TID15a: "TID15a",
 
   /**
    * 15i
    */
-  Fifteeni: "TID15i",
+  TID15i: "TID15i",
 
   /**
    * 15p
    */
-  Fifteenp: "TID15p",
+  TID15p: "TID15p",
 
   /**
    * 15pd
    */
-  Fifteenpd: "TID15pd",
+  TID15pd: "TID15pd",
 
   /**
    * 15pm
    */
-  Fifteenpm: "TID15pm",
+  TID15pm: "TID15pm",
 
   /**
    * 16a
    */
-  Sixteena: "TID16a",
+  TID16a: "TID16a",
 
   /**
    * 16i
    */
-  Sixteeni: "TID16i",
+  TID16i: "TID16i",
 
   /**
    * 16p
    */
-  Sixteenp: "TID16p",
+  TID16p: "TID16p",
 
   /**
    * 16pd
    */
-  Sixteenpd: "TID16pd",
+  TID16pd: "TID16pd",
 
   /**
    * 16pm
    */
-  Sixteenpm: "TID16pm",
+  TID16pm: "TID16pm",
 
   /**
    * 17a
    */
-  Seventeena: "TID17a",
+  TID17a: "TID17a",
 
   /**
    * 17ad
    */
-  Seventeenad: "TID17ad",
+  TID17ad: "TID17ad",
 
   /**
    * 17am
    */
-  Seventeenam: "TID17am",
+  TID17am: "TID17am",
 
   /**
    * 17i
    */
-  Seventeeni: "TID17i",
+  TID17i: "TID17i",
 
   /**
    * 17id
    */
-  Seventeenid: "TID17id",
+  TID17id: "TID17id",
 
   /**
    * 17im
    */
-  Seventeenim: "TID17im",
+  TID17im: "TID17im",
 
   /**
    * 17p
    */
-  Seventeenp: "TID17p",
+  TID17p: "TID17p",
 
   /**
    * 17pd
    */
-  Seventeenpd: "TID17pd",
+  TID17pd: "TID17pd",
 
   /**
    * 17pm
    */
-  Seventeenpm: "TID17pm",
+  TID17pm: "TID17pm",
 
   /**
    * 18a
    */
-  Eighteena: "TID18a",
+  TID18a: "TID18a",
 
   /**
    * 18ad
    */
-  Eighteenad: "TID18ad",
+  TID18ad: "TID18ad",
 
   /**
    * 18am
    */
-  Eighteenam: "TID18am",
+  TID18am: "TID18am",
 
   /**
    * 18i
    */
-  Eighteeni: "TID18i",
+  TID18i: "TID18i",
 
   /**
    * 18id
    */
-  Eighteenid: "TID18id",
+  TID18id: "TID18id",
 
   /**
    * 18im
    */
-  Eighteenim: "TID18im",
+  TID18im: "TID18im",
 
   /**
    * 18p
    */
-  Eighteenp: "TID18p",
+  TID18p: "TID18p",
 
   /**
    * 18pd
    */
-  Eighteenpd: "TID18pd",
+  TID18pd: "TID18pd",
 
   /**
    * 18pm
    */
-  Eighteenpm: "TID18pm",
+  TID18pm: "TID18pm",
 
   /**
    * 19a
    */
-  Nineteena: "TID19a",
+  TID19a: "TID19a",
 
   /**
    * 19ad
    */
-  Nineteenad: "TID19ad",
+  TID19ad: "TID19ad",
 
   /**
    * 19am
    */
-  Nineteenam: "TID19am",
+  TID19am: "TID19am",
 
   /**
    * 19i
    */
-  Nineteeni: "TID19i",
+  TID19i: "TID19i",
 
   /**
    * 19id
    */
-  Nineteenid: "TID19id",
+  TID19id: "TID19id",
 
   /**
    * 19im
    */
-  Nineteenim: "TID19im",
+  TID19im: "TID19im",
 
   /**
    * 19p
    */
-  Nineteenp: "TID19p",
+  TID19p: "TID19p",
 
   /**
    * 19pd
    */
-  Nineteenpd: "TID19pd",
+  TID19pd: "TID19pd",
 
   /**
    * 19pm
    */
-  Nineteenpm: "TID19pm",
+  TID19pm: "TID19pm",
 
   /**
    * 1a
    */
-  Onea: "TID1a",
+  TID1a: "TID1a",
 
   /**
    * 1i
    */
-  Onei: "TID1i",
+  TID1i: "TID1i",
 
   /**
    * 1p
    */
-  Onep: "TID1p",
+  TID1p: "TID1p",
 
   /**
    * 1pd
    */
-  Onepd: "TID1pd",
+  TID1pd: "TID1pd",
 
   /**
    * 1pm
    */
-  Onepm: "TID1pm",
+  TID1pm: "TID1pm",
 
   /**
    * 20a
    */
-  Twentya: "TID20a",
+  TID20a: "TID20a",
 
   /**
    * 20i
    */
-  Twentyi: "TID20i",
+  TID20i: "TID20i",
 
   /**
    * 20p
    */
-  Twentyp: "TID20p",
+  TID20p: "TID20p",
 
   /**
    * 20pd
    */
-  Twentypd: "TID20pd",
+  TID20pd: "TID20pd",
 
   /**
    * 20pm
    */
-  Twentypm: "TID20pm",
+  TID20pm: "TID20pm",
 
   /**
    * 21a
    */
-  TwentyOnea: "TID21a",
+  TID21a: "TID21a",
 
   /**
    * 21i
    */
-  TwentyOnei: "TID21i",
+  TID21i: "TID21i",
 
   /**
    * 21p
    */
-  TwentyOnep: "TID21p",
+  TID21p: "TID21p",
 
   /**
    * 21pd
    */
-  TwentyOnepd: "TID21pd",
+  TID21pd: "TID21pd",
 
   /**
    * 21pm
    */
-  TwentyOnepm: "TID21pm",
+  TID21pm: "TID21pm",
 
   /**
    * 22a
    */
-  TwentyTwoa: "TID22a",
+  TID22a: "TID22a",
 
   /**
    * 22i
    */
-  TwentyTwoi: "TID22i",
+  TID22i: "TID22i",
 
   /**
    * 22p
    */
-  TwentyTwop: "TID22p",
+  TID22p: "TID22p",
 
   /**
    * 22pd
    */
-  TwentyTwopd: "TID22pd",
+  TID22pd: "TID22pd",
 
   /**
    * 22pm
    */
-  TwentyTwopm: "TID22pm",
+  TID22pm: "TID22pm",
 
   /**
    * 23a
    */
-  TwentyThreea: "TID23a",
+  TID23a: "TID23a",
 
   /**
    * 23i
    */
-  TwentyThreei: "TID23i",
+  TID23i: "TID23i",
 
   /**
    * 23p
    */
-  TwentyThreep: "TID23p",
+  TID23p: "TID23p",
 
   /**
    * 23pd
    */
-  TwentyThreepd: "TID23pd",
+  TID23pd: "TID23pd",
 
   /**
    * 23pm
    */
-  TwentyThreepm: "TID23pm",
+  TID23pm: "TID23pm",
 
   /**
    * 24a
    */
-  TwentyFoura: "TID24a",
+  TID24a: "TID24a",
 
   /**
    * 24i
    */
-  TwentyFouri: "TID24i",
+  TID24i: "TID24i",
 
   /**
    * 24p
    */
-  TwentyFourp: "TID24p",
+  TID24p: "TID24p",
 
   /**
    * 24pd
    */
-  TwentyFourpd: "TID24pd",
+  TID24pd: "TID24pd",
 
   /**
    * 24pm
    */
-  TwentyFourpm: "TID24pm",
+  TID24pm: "TID24pm",
 
   /**
    * 25a
    */
-  TwentyFivea: "TID25a",
+  TID25a: "TID25a",
 
   /**
    * 25i
    */
-  TwentyFivei: "TID25i",
+  TID25i: "TID25i",
 
   /**
    * 25p
    */
-  TwentyFivep: "TID25p",
+  TID25p: "TID25p",
 
   /**
    * 25pd
    */
-  TwentyFivepd: "TID25pd",
+  TID25pd: "TID25pd",
 
   /**
    * 25pm
    */
-  TwentyFivepm: "TID25pm",
+  TID25pm: "TID25pm",
 
   /**
    * 26a
    */
-  TwentySixa: "TID26a",
+  TID26a: "TID26a",
 
   /**
    * 26i
    */
-  TwentySixi: "TID26i",
+  TID26i: "TID26i",
 
   /**
    * 26p
    */
-  TwentySixp: "TID26p",
+  TID26p: "TID26p",
 
   /**
    * 26pd
    */
-  TwentySixpd: "TID26pd",
+  TID26pd: "TID26pd",
 
   /**
    * 26pm
    */
-  TwentySixpm: "TID26pm",
+  TID26pm: "TID26pm",
 
   /**
    * 27a
    */
-  TwentySevena: "TID27a",
+  TID27a: "TID27a",
 
   /**
    * 27i
    */
-  TwentySeveni: "TID27i",
+  TID27i: "TID27i",
 
   /**
    * 27p
    */
-  TwentySevenp: "TID27p",
+  TID27p: "TID27p",
 
   /**
    * 27pd
    */
-  TwentySevenpd: "TID27pd",
+  TID27pd: "TID27pd",
 
   /**
    * 27pm
    */
-  TwentySevenpm: "TID27pm",
+  TID27pm: "TID27pm",
 
   /**
    * 28a
    */
-  TwentyEighta: "TID28a",
+  TID28a: "TID28a",
 
   /**
    * 28i
    */
-  TwentyEighti: "TID28i",
+  TID28i: "TID28i",
 
   /**
    * 28p
    */
-  TwentyEightp: "TID28p",
+  TID28p: "TID28p",
 
   /**
    * 28pd
    */
-  TwentyEightpd: "TID28pd",
+  TID28pd: "TID28pd",
 
   /**
    * 28pm
    */
-  TwentyEightpm: "TID28pm",
+  TID28pm: "TID28pm",
 
   /**
    * 29a
    */
-  TwentyNinea: "TID29a",
+  TID29a: "TID29a",
 
   /**
    * 29i
    */
-  TwentyNinei: "TID29i",
+  TID29i: "TID29i",
 
   /**
    * 29p
    */
-  TwentyNinep: "TID29p",
+  TID29p: "TID29p",
 
   /**
    * 29pd
    */
-  TwentyNinepd: "TID29pd",
+  TID29pd: "TID29pd",
 
   /**
    * 29pm
    */
-  TwentyNinepm: "TID29pm",
+  TID29pm: "TID29pm",
 
   /**
    * 2a
    */
-  Twoa: "TID2a",
+  TID2a: "TID2a",
 
   /**
    * 2i
    */
-  Twoi: "TID2i",
+  TID2i: "TID2i",
 
   /**
    * 2p
    */
-  Twop: "TID2p",
+  TID2p: "TID2p",
 
   /**
    * 2pd
    */
-  Twopd: "TID2pd",
+  TID2pd: "TID2pd",
 
   /**
    * 2pm
    */
-  Twopm: "TID2pm",
+  TID2pm: "TID2pm",
 
   /**
    * 30a
    */
-  Thirtya: "TID30a",
+  TID30a: "TID30a",
 
   /**
    * 30ad
    */
-  Thirtyad: "TID30ad",
+  TID30ad: "TID30ad",
 
   /**
    * 30am
    */
-  Thirtyam: "TID30am",
+  TID30am: "TID30am",
 
   /**
    * 30i
    */
-  Thirtyi: "TID30i",
+  TID30i: "TID30i",
 
   /**
    * 30id
    */
-  Thirtyid: "TID30id",
+  TID30id: "TID30id",
 
   /**
    * 30im
    */
-  Thirtyim: "TID30im",
+  TID30im: "TID30im",
 
   /**
    * 30p
    */
-  Thirtyp: "TID30p",
+  TID30p: "TID30p",
 
   /**
    * 30pd
    */
-  Thirtypd: "TID30pd",
+  TID30pd: "TID30pd",
 
   /**
    * 30pm
    */
-  Thirtypm: "TID30pm",
+  TID30pm: "TID30pm",
 
   /**
    * 31a
    */
-  ThirtyOnea: "TID31a",
+  TID31a: "TID31a",
 
   /**
    * 31ad
    */
-  ThirtyOnead: "TID31ad",
+  TID31ad: "TID31ad",
 
   /**
    * 31am
    */
-  ThirtyOneam: "TID31am",
+  TID31am: "TID31am",
 
   /**
    * 31i
    */
-  ThirtyOnei: "TID31i",
+  TID31i: "TID31i",
 
   /**
    * 31id
    */
-  ThirtyOneid: "TID31id",
+  TID31id: "TID31id",
 
   /**
    * 31im
    */
-  ThirtyOneim: "TID31im",
+  TID31im: "TID31im",
 
   /**
    * 31p
    */
-  ThirtyOnep: "TID31p",
+  TID31p: "TID31p",
 
   /**
    * 31pd
    */
-  ThirtyOnepd: "TID31pd",
+  TID31pd: "TID31pd",
 
   /**
    * 31pm
    */
-  ThirtyOnepm: "TID31pm",
+  TID31pm: "TID31pm",
 
   /**
    * 32a
    */
-  ThirtyTwoa: "TID32a",
+  TID32a: "TID32a",
 
   /**
    * 32ad
    */
-  ThirtyTwoad: "TID32ad",
+  TID32ad: "TID32ad",
 
   /**
    * 32am
    */
-  ThirtyTwoam: "TID32am",
+  TID32am: "TID32am",
 
   /**
    * 32i
    */
-  ThirtyTwoi: "TID32i",
+  TID32i: "TID32i",
 
   /**
    * 32id
    */
-  ThirtyTwoid: "TID32id",
+  TID32id: "TID32id",
 
   /**
    * 32im
    */
-  ThirtyTwoim: "TID32im",
+  TID32im: "TID32im",
 
   /**
    * 32p
    */
-  ThirtyTwop: "TID32p",
+  TID32p: "TID32p",
 
   /**
    * 32pd
    */
-  ThirtyTwopd: "TID32pd",
+  TID32pd: "TID32pd",
 
   /**
    * 32pm
    */
-  ThirtyTwopm: "TID32pm",
+  TID32pm: "TID32pm",
 
   /**
    * 3a
    */
-  Threea: "TID3a",
+  TID3a: "TID3a",
 
   /**
    * 3i
    */
-  Threei: "TID3i",
+  TID3i: "TID3i",
 
   /**
    * 3p
    */
-  Threep: "TID3p",
+  TID3p: "TID3p",
 
   /**
    * 3pd
    */
-  Threepd: "TID3pd",
+  TID3pd: "TID3pd",
 
   /**
    * 3pm
    */
-  Threepm: "TID3pm",
+  TID3pm: "TID3pm",
 
   /**
    * 4a
    */
-  Foura: "TID4a",
+  TID4a: "TID4a",
 
   /**
    * 4i
    */
-  Fouri: "TID4i",
+  TID4i: "TID4i",
 
   /**
    * 4p
    */
-  Fourp: "TID4p",
+  TID4p: "TID4p",
 
   /**
    * 4pd
    */
-  Fourpd: "TID4pd",
+  TID4pd: "TID4pd",
 
   /**
    * 4pm
    */
-  Fourpm: "TID4pm",
+  TID4pm: "TID4pm",
 
   /**
    * 5a
    */
-  Fivea: "TID5a",
+  TID5a: "TID5a",
 
   /**
    * 5i
    */
-  Fivei: "TID5i",
+  TID5i: "TID5i",
 
   /**
    * 5p
    */
-  Fivep: "TID5p",
+  TID5p: "TID5p",
 
   /**
    * 5pd
    */
-  Fivepd: "TID5pd",
+  TID5pd: "TID5pd",
 
   /**
    * 5pm
    */
-  Fivepm: "TID5pm",
+  TID5pm: "TID5pm",
 
   /**
    * 6a
    */
-  Sixa: "TID6a",
+  TID6a: "TID6a",
 
   /**
    * 6i
    */
-  Sixi: "TID6i",
+  TID6i: "TID6i",
 
   /**
    * 6p
    */
-  Sixp: "TID6p",
+  TID6p: "TID6p",
 
   /**
    * 6pd
    */
-  Sixpd: "TID6pd",
+  TID6pd: "TID6pd",
 
   /**
    * 6pm
    */
-  Sixpm: "TID6pm",
+  TID6pm: "TID6pm",
 
   /**
    * 7a
    */
-  Sevena: "TID7a",
+  TID7a: "TID7a",
 
   /**
    * 7i
    */
-  Seveni: "TID7i",
+  TID7i: "TID7i",
 
   /**
    * 7p
    */
-  Sevenp: "TID7p",
+  TID7p: "TID7p",
 
   /**
    * 7pd
    */
-  Sevenpd: "TID7pd",
+  TID7pd: "TID7pd",
 
   /**
    * 7pm
    */
-  Sevenpm: "TID7pm",
+  TID7pm: "TID7pm",
 
   /**
    * 8a
    */
-  Eighta: "TID8a",
+  TID8a: "TID8a",
 
   /**
    * 8i
    */
-  Eighti: "TID8i",
+  TID8i: "TID8i",
 
   /**
    * 8p
    */
-  Eightp: "TID8p",
+  TID8p: "TID8p",
 
   /**
    * 8pd
    */
-  Eightpd: "TID8pd",
+  TID8pd: "TID8pd",
 
   /**
    * 8pm
    */
-  Eightpm: "TID8pm",
+  TID8pm: "TID8pm",
 
   /**
    * 9a
    */
-  Ninea: "TID9a",
+  TID9a: "TID9a",
 
   /**
    * 9i
    */
-  Ninei: "TID9i",
+  TID9i: "TID9i",
 
   /**
    * 9p
    */
-  Ninep: "TID9p",
+  TID9p: "TID9p",
 
   /**
    * 9pd
    */
-  Ninepd: "TID9pd",
+  TID9pd: "TID9pd",
 
   /**
    * 9pm
    */
-  Ninepm: "TID9pm",
+  TID9pm: "TID9pm",
 } as const;
 
 /**

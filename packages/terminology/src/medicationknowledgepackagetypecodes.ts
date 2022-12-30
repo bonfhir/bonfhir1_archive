@@ -6,112 +6,112 @@ export const MedicationKnowledgePackageTypeCodesCode = {
   /**
    * Ampule
    */
-  Ampule: "amp",
+  amp: "amp",
 
   /**
    * Bag
    */
-  Bag: "bag",
+  bag: "bag",
 
   /**
    * Blister Pack
    */
-  BlisterPack: "blstrpk",
+  blstrpk: "blstrpk",
 
   /**
    * Bottle
    */
-  Bottle: "bot",
+  bot: "bot",
 
   /**
    * Box
    */
-  Box: "box",
+  box: "box",
 
   /**
    * Can
    */
-  Can: "can",
+  can: "can",
 
   /**
    * Cartridge
    */
-  Cartridge: "cart",
+  cart: "cart",
 
   /**
    * Disk
    */
-  Disk: "disk",
+  disk: "disk",
 
   /**
    * Dosette
    */
-  Dosette: "doset",
+  doset: "doset",
 
   /**
    * Jar
    */
-  Jar: "jar",
+  jar: "jar",
 
   /**
    * Jug
    */
-  Jug: "jug",
+  jug: "jug",
 
   /**
    * Minim
    */
-  Minim: "minim",
+  minim: "minim",
 
   /**
    * Nebule Amp
    */
-  NebuleAmp: "nebamp",
+  nebamp: "nebamp",
 
   /**
    * Ovule
    */
-  Ovule: "ovul",
+  ovul: "ovul",
 
   /**
    * Pouch
    */
-  Pouch: "pch",
+  pch: "pch",
 
   /**
    * Packet
    */
-  Packet: "pkt",
+  pkt: "pkt",
 
   /**
    * Sashet
    */
-  Sashet: "sash",
+  sash: "sash",
 
   /**
    * Strip
    */
-  Strip: "strip",
+  strip: "strip",
 
   /**
    * Tin
    */
-  Tin: "tin",
+  tin: "tin",
 
   /**
    * Tub
    */
-  Tub: "tub",
+  tub: "tub",
 
   /**
    * Tube
    */
-  Tube: "tube",
+  tube: "tube",
 
   /**
    * Vial
    */
-  Vial: "vial",
+  vial: "vial",
 } as const;
 
 /**

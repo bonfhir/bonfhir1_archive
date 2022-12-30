@@ -6,7 +6,7 @@ export const ParticipationEntryLocationCode = {
   /**
    * entry location
    */
-  entrylocation: "ELOC",
+  ELOC: "ELOC",
 } as const;
 
 /**

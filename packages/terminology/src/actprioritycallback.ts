@@ -6,17 +6,17 @@ export const ActPriorityCallbackCode = {
   /**
    * callback for scheduling
    */
-  callbackforscheduling: "CS",
+  CS: "CS",
 
   /**
    * callback placer for scheduling
    */
-  callbackplacerforscheduling: "CSP",
+  CSP: "CSP",
 
   /**
    * contact recipient for scheduling
    */
-  contactrecipientforscheduling: "CSR",
+  CSR: "CSR",
 } as const;
 
 /**

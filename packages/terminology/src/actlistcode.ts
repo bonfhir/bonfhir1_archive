@@ -6,93 +6,93 @@ export const ActListCodeCode = {
   /**
    * ActObservationList
    */
-  ActObservationList: "_ActObservationList",
+  _ActObservationList: "_ActObservationList",
 
   /**
    * care plan
    */
-  careplan: "CARELIST",
+  CARELIST: "CARELIST",
 
   /**
    * condition list
    */
-  conditionlist: "CONDLIST",
+  CONDLIST: "CONDLIST",
 
   /**
    * intolerance list
    */
-  intolerancelist: "INTOLIST",
+  INTOLIST: "INTOLIST",
 
   /**
    * problem list
    */
-  problemlist: "PROBLIST",
+  PROBLIST: "PROBLIST",
 
   /**
    * risk factors
    */
-  riskfactors: "RISKLIST",
+  RISKLIST: "RISKLIST",
 
   /**
    * goal list
    */
-  goallist: "GOALLIST",
+  GOALLIST: "GOALLIST",
 
   /**
    * ActTherapyDurationWorkingListCode
    */
-  ActTherapyDurationWorkingListCode: "_ActTherapyDurationWorkingListCode",
+  _ActTherapyDurationWorkingListCode: "_ActTherapyDurationWorkingListCode",
 
   /**
    * act medication therapy duration working list
    */
-  actmedicationtherapydurationworkinglist:
+  _ActMedicationTherapyDurationWorkingListCode:
     "_ActMedicationTherapyDurationWorkingListCode",
 
   /**
    * short term/acute
    */
-  shorttermacute: "ACU",
+  ACU: "ACU",
 
   /**
    * continuous/chronic
    */
-  continuouschronic: "CHRON",
+  CHRON: "CHRON",
 
   /**
    * one time
    */
-  onetime: "ONET",
+  ONET: "ONET",
 
   /**
    * as needed
    */
-  asneeded: "PRN",
+  PRN: "PRN",
 
   /**
    * medication list
    */
-  medicationlist: "MEDLIST",
+  MEDLIST: "MEDLIST",
 
   /**
    * current medication list
    */
-  currentmedicationlist: "CURMEDLIST",
+  CURMEDLIST: "CURMEDLIST",
 
   /**
    * discharge medication list
    */
-  dischargemedicationlist: "DISCMEDLIST",
+  DISCMEDLIST: "DISCMEDLIST",
 
   /**
    * medication history
    */
-  medicationhistory: "HISTMEDLIST",
+  HISTMEDLIST: "HISTMEDLIST",
 
   /**
    * ActProcedureCategoryList
    */
-  ActProcedureCategoryList: "_ActProcedureCategoryList",
+  _ActProcedureCategoryList: "_ActProcedureCategoryList",
 } as const;
 
 /**

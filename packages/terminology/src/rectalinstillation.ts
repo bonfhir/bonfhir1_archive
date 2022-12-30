@@ -6,12 +6,12 @@ export const RectalInstillationCode = {
   /**
    * Instillation, rectal
    */
-  Instillationrectal: "RECINSTL",
+  RECINSTL: "RECINSTL",
 
   /**
    * Instillation, rectal tube
    */
-  Instillationrectaltube: "RECTINSTL",
+  RECTINSTL: "RECTINSTL",
 } as const;
 
 /**

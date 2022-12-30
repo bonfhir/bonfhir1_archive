@@ -6,17 +6,17 @@ export const CoverageSponsorRoleTypeCode = {
   /**
    * CoverageSponsorRoleType
    */
-  CoverageSponsorRoleType: "_CoverageSponsorRoleType",
+  _CoverageSponsorRoleType: "_CoverageSponsorRoleType",
 
   /**
    * Fully insured coverage sponsor
    */
-  Fullyinsuredcoveragesponsor: "FULLINS",
+  FULLINS: "FULLINS",
 
   /**
    * Self insured coverage sponsor
    */
-  Selfinsuredcoveragesponsor: "SELFINS",
+  SELFINS: "SELFINS",
 } as const;
 
 /**

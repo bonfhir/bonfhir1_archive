@@ -6,37 +6,37 @@ export const Hl7VSProductServicesClarificationCode = {
   /**
    * Data Center Number
    */
-  DataCenterNumber: "DTCTR",
+  DTCTR: "DTCTR",
 
   /**
    * Sequence Number
    */
-  SequenceNumber: "SEQ",
+  SEQ: "SEQ",
 
   /**
    * Diagnostic Approval Number
    */
-  DiagnosticApprovalNumber: "DGAPP",
+  DGAPP: "DGAPP",
 
   /**
    * Claim Center
    */
-  ClaimCenter: "CLCTR",
+  CLCTR: "CLCTR",
 
   /**
    * Encounter Number
    */
-  EncounterNumber: "ENC",
+  ENC: "ENC",
 
   /**
    * Out of Province Indicator
    */
-  OutofProvinceIndicator: "OOP",
+  OOP: "OOP",
 
   /**
    * Good Faith Indicator
    */
-  GoodFaithIndicator: "GFTH",
+  GFTH: "GFTH",
 } as const;
 
 /**

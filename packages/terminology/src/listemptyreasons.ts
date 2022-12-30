@@ -6,32 +6,32 @@ export const ListEmptyReasonsCode = {
   /**
    * Nil Known
    */
-  NilKnown: "nilknown",
+  nilknown: "nilknown",
 
   /**
    * Not Asked
    */
-  NotAsked: "notasked",
+  notasked: "notasked",
 
   /**
    * Information Withheld
    */
-  InformationWithheld: "withheld",
+  withheld: "withheld",
 
   /**
    * Unavailable
    */
-  Unavailable: "unavailable",
+  unavailable: "unavailable",
 
   /**
    * Not Started
    */
-  NotStarted: "notstarted",
+  notstarted: "notstarted",
 
   /**
    * Closed
    */
-  Closed: "closed",
+  closed: "closed",
 } as const;
 
 /**

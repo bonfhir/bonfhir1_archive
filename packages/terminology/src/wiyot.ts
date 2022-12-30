@@ -6,12 +6,12 @@ export const WiyotCode = {
   /**
    * Wiyot
    */
-  Wiyot: "1704-6",
+  "1704-6": "1704-6",
 
   /**
    * Table Bluff
    */
-  TableBluff: "1705-3",
+  "1705-3": "1705-3",
 } as const;
 
 /**

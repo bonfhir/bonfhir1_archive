@@ -6,315 +6,312 @@ export const Hl7VSAccessRestrictionValueCode = {
   /**
    * personal de-identified information policy
    */
-  personaldeidentifiedinformationpolicy: "PersDEID",
+  PersDEID: "PersDEID",
 
   /**
    * All
    */
-  All: "ALL",
+  ALL: "ALL",
 
   /**
    * All demographic data
    */
-  Alldemographicdata: "DEM",
+  DEM: "DEM",
 
   /**
    * Patient Location
    */
-  PatientLocation: "LOC",
+  LOC: "LOC",
 
   /**
    * Date of Birth
    */
-  DateofBirth: "PID-7",
+  "PID-7": "PID-7",
 
   /**
    * Religion
    */
-  Religion: "PID-17",
+  "PID-17": "PID-17",
 
   /**
    * HIV status and results
    */
-  HIVstatusandresults: "HIV",
+  HIV: "HIV",
 
   /**
    * Sexually transmitted diseases
    */
-  Sexuallytransmitteddiseases: "STD",
+  STD: "STD",
 
   /**
    * Psychiatric Mental health
    */
-  PsychiatricMentalhealth: "PSY",
+  PSY: "PSY",
 
   /**
    * Drug
    */
-  Drug: "DRG",
+  DRG: "DRG",
 
   /**
    * Sensitive medical data
    */
-  Sensitivemedicaldata: "SMD",
+  SMD: "SMD",
 
   /**
    * None
    */
-  None: "NO",
+  NO: "NO",
 
   /**
    * Opt out all registries (HIPAA)
    */
-  OptoutallregistriesHIPAA: "OO",
+  OO: "OO",
 
   /**
    * Opt in all registries (HIPAA)
    */
-  OptinallregistriesHIPAA: "OI",
+  OI: "OI",
 
   /**
    * jurisdictional information policy
    */
-  jurisdictionalinformationpolicy: "JurisIP",
+  JurisIP: "JurisIP",
 
   /**
    * jurisdictional controlled unclassified information policy
    */
-  jurisdictionalcontrolledunclassifiedinformationpolicy: "JurisCUI",
+  JurisCUI: "JurisCUI",
 
   /**
    * jurisdictional de-identified information policy
    */
-  jurisdictionaldeidentifiedinformationpolicy: "JurisDEID",
+  JurisDEID: "JurisDEID",
 
   /**
    * jurisdictional limited data set
    */
-  jurisdictionallimiteddataset: "JurisLDS",
+  JurisLDS: "JurisLDS",
 
   /**
    * jurisdictional non-sensitive information policy
    */
-  jurisdictionalnonsensitiveinformationpolicy: "JurisNSI",
+  JurisNSI: "JurisNSI",
 
   /**
    * jurisdictional public information policy
    */
-  jurisdictionalpublicinformationpolicy: "JurisPI",
+  JurisPI: "JurisPI",
 
   /**
    * jurisdictional specified controlled unclassified information policy
    */
-  jurisdictionalspecifiedcontrolledunclassifiedinformationpolicy: "JurisSP-CUI",
+  "JurisSP-CUI": "JurisSP-CUI",
 
   /**
    * jurisdictional uncontrolled unclassified information policy
    */
-  jurisdictionaluncontrolledunclassifiedinformationpolicy: "JurisUUI",
+  JurisUUI: "JurisUUI",
 
   /**
    * organizational information policy
    */
-  organizationalinformationpolicy: "OrgIP",
+  OrgIP: "OrgIP",
 
   /**
    * organizational basic controlled unclassified information policy
    */
-  organizationalbasiccontrolledunclassifiedinformationpolicy: "OrgCUI",
+  OrgCUI: "OrgCUI",
 
   /**
    * organizational de-identified information policy
    */
-  organizationaldeidentifiedinformationpolicy: "OrgDEID",
+  OrgDEID: "OrgDEID",
 
   /**
    * organizational limited data set information policy
    */
-  organizationallimiteddatasetinformationpolicy: "OrgLDS",
+  OrgLDS: "OrgLDS",
 
   /**
    * organizational non-sensitive information policy
    */
-  organizationalnonsensitiveinformationpolicy: "OrgNSI",
+  OrgNSI: "OrgNSI",
 
   /**
    * organizational public information policy
    */
-  organizationalpublicinformationpolicy: "OrgPI",
+  OrgPI: "OrgPI",
 
   /**
    * organizational specified controlled unclassified information policy
    */
-  organizationalspecifiedcontrolledunclassifiedinformationpolicy: "OrgSP-CUI",
+  "OrgSP-CUI": "OrgSP-CUI",
 
   /**
    * organizational uncontrolled unclassified information policy
    */
-  organizationaluncontrolledunclassifiedinformationpolicy: "OrgUUI",
+  OrgUUI: "OrgUUI",
 
   /**
    * personal information policy
    */
-  personalinformationpolicy: "PersIP",
+  PersIP: "PersIP",
 
   /**
    * personal non-sensitive information policy
    */
-  personalnonsensitiveinformationpolicy: "PersNSI",
+  PersNSI: "PersNSI",
 
   /**
    * personal limited data set information policy
    */
-  personallimiteddatasetinformationpolicy: "PersLDS",
+  PersLDS: "PersLDS",
 
   /**
    * personal public information policy
    */
-  personalpublicinformationpolicy: "PersPI",
+  PersPI: "PersPI",
 
   /**
    * grantor choice
    */
-  grantorchoice: "GRANTORCHOICE",
+  GRANTORCHOICE: "GRANTORCHOICE",
 
   /**
    * implied consent
    */
-  impliedconsent: "IMPLIED",
+  IMPLIED: "IMPLIED",
 
   /**
    * implied consent with opportunity to dissent
    */
-  impliedconsentwithopportunitytodissent: "IMPLIEDD",
+  IMPLIEDD: "IMPLIEDD",
 
   /**
    * no consent
    */
-  noconsent: "NOCONSENT",
+  NOCONSENT: "NOCONSENT",
 
   /**
    * opt-in
    */
-  optin: "OPTIN",
+  OPTIN: "OPTIN",
 
   /**
    * opt-in with restrictions
    */
-  optinwithrestrictions: "OPTINR",
+  OPTINR: "OPTINR",
 
   /**
    * opt-out
    */
-  optout: "OPTOUT",
+  OPTOUT: "OPTOUT",
 
   /**
    * opt-out with exceptions
    */
-  optoutwithexceptions: "OPTOUTE",
+  OPTOUTE: "OPTOUTE",
 
   /**
    * opt-in emergency only
    */
-  optinemergencyonly: "EMRGONLY",
+  EMRGONLY: "EMRGONLY",
 
   /**
    * notice of privacy practices
    */
-  noticeofprivacypractices: "NOPP",
+  NOPP: "NOPP",
 
   /**
    * opt-out of personal information or effect collection in a registry or repository
    */
-  optoutofpersonalinformationoreffectcollectioninaregistryorrepository: "OOC",
+  OOC: "OOC",
 
   /**
    * opt-out of personal information or effect sharing via a registry or repository
    */
-  optoutofpersonalinformationoreffectsharingviaaregistryorrepository: "OOS",
+  OOS: "OOS",
 
   /**
    * opt-in to personal information or effect collection in a registry or repository
    */
-  optintopersonalinformationoreffectcollectioninaregistryorrepository: "OIC",
+  OIC: "OIC",
 
   /**
    * opt-in to personal information or effect sharing via a registry or repository
    */
-  optintopersonalinformationoreffectsharingviaaregistryorrepository: "OIS",
+  OIS: "OIS",
 
   /**
    * 42 CFR Part 2 consent directive
    */
-  FortyTwoCFRPart2consentdirective: "42CFRPart2CD",
+  "42CFRPart2CD": "42CFRPart2CD",
 
   /**
    * HIPAA Authorization Consent Directive
    */
-  HIPAAAuthorizationConsentDirective: "HIPAAAuthCD",
+  HIPAAAuthCD: "HIPAAAuthCD",
 
   /**
    * HIPAA Consent Directive
    */
-  HIPAAConsentDirective: "HIPAAConsentCD",
+  HIPAAConsentCD: "HIPAAConsentCD",
 
   /**
    * HIPAA Right of Access Consent Directive
    */
-  HIPAARightofAccessConsentDirective: "HIPAAROACD",
+  HIPAAROACD: "HIPAAROACD",
 
   /**
    * HIPAA Authorization for Disclosure for Research Consent Directive
    */
-  HIPAAAuthorizationforDisclosureforResearchConsentDirective:
-    "HIPAAResearchAuthCD",
+  HIPAAResearchAuthCD: "HIPAAResearchAuthCD",
 
   /**
    * Compound HIPAA Research Authorization and Informed Consent for Research
    */
-  CompoundHIPAAResearchAuthorizationandInformedConsentforResearch:
-    "CompoundResearchCD",
+  CompoundResearchCD: "CompoundResearchCD",
 
   /**
    * Michigan Consent to Share Behavioral Health Information for Care Coordination Purposes
    */
-  MichiganConsenttoShareBehavioralHealthInformationforCareCoordinationPurposes:
-    "MDHHS-5515",
+  "MDHHS-5515": "MDHHS-5515",
 
   /**
    * GDPR Consent Directive
    */
-  GDPRConsentDirective: "GDPRCD",
+  GDPRCD: "GDPRCD",
 
   /**
    * GDPR Research Consent Directive
    */
-  GDPRResearchConsentDirective: "GDPRResearchCD",
+  GDPRResearchCD: "GDPRResearchCD",
 
   /**
    * 42 CFR Part 2)
    */
-  FortyTwoCFRPart2: "42CFRPart2",
+  "42CFRPart2": "42CFRPart2",
 
   /**
    * Common Rule
    */
-  CommonRule: "COMMONRULE",
+  COMMONRULE: "COMMONRULE",
 
   /**
    * HIPAA notice of privacy practices
    */
-  HIPAAnoticeofprivacypractices: "HIPAANOPP",
+  HIPAANOPP: "HIPAANOPP",
 
   /**
    * HIPAA psychotherapy notes
    */
-  HIPAApsychotherapynotes: "HIPAAPsyNotes",
+  HIPAAPsyNotes: "HIPAAPsyNotes",
 
   /**
    * HIPAA self-pay
    */
-  HIPAAselfpay: "HIPAASelfPay",
+  HIPAASelfPay: "HIPAASelfPay",
 
   /**
    * Title 38 Section 7332
@@ -329,62 +326,62 @@ export const Hl7VSAccessRestrictionValueCode = {
   /**
    * HIPAA Authorization for Disclosure
    */
-  HIPAAAuthorizationforDisclosure: "HIPAAAuth",
+  HIPAAAuth: "HIPAAAuth",
 
   /**
    * HIPAA Right of Access
    */
-  HIPAARightofAccess: "HIPAAROA",
+  HIPAAROA: "HIPAAROA",
 
   /**
    * GDPR Consent
    */
-  GDPRConsent: "GDPRCONSENT",
+  GDPRCONSENT: "GDPRCONSENT",
 
   /**
    * GDPR contract
    */
-  GDPRcontract: "GDPRCONTRACT",
+  GDPRCONTRACT: "GDPRCONTRACT",
 
   /**
    * GDPR health or social system management
    */
-  GDPRhealthorsocialsystemmanagement: "GDPRHLTHSOCSY",
+  GDPRHLTHSOCSY: "GDPRHLTHSOCSY",
 
   /**
    * GDPR legal claim
    */
-  GDPRlegalclaim: "GDPRLEGALCLAIM",
+  GDPRLEGALCLAIM: "GDPRLEGALCLAIM",
 
   /**
    * GDPR legal obligation
    */
-  GDPRlegalobligation: "GDPRLEGALOBL",
+  GDPRLEGALOBL: "GDPRLEGALOBL",
 
   /**
    * GDPR legitimate interest
    */
-  GDPRlegitimateinterest: "GDPRLEGITINTEREST",
+  GDPRLEGITINTEREST: "GDPRLEGITINTEREST",
 
   /**
    * GDPR public health
    */
-  GDPRpublichealth: "GDPRPUBLICHEALTH",
+  GDPRPUBLICHEALTH: "GDPRPUBLICHEALTH",
 
   /**
    * GDPR public interest
    */
-  GDPRpublicinterest: "GDPRPUBLICINTEREST",
+  GDPRPUBLICINTEREST: "GDPRPUBLICINTEREST",
 
   /**
    * GDPR research
    */
-  GDPRresearch: "GDPRRESEARCH",
+  GDPRRESEARCH: "GDPRRESEARCH",
 
   /**
    * GDPR vital interest
    */
-  GDPRvitalinterest: "GDPRVITALINTEREST",
+  GDPRVITALINTEREST: "GDPRVITALINTEREST",
 } as const;
 
 /**

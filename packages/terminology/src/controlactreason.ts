@@ -6,528 +6,528 @@ export const ControlActReasonCode = {
   /**
    * ControlActReason
    */
-  ControlActReason: "_ControlActReason",
+  _ControlActReason: "_ControlActReason",
 
   /**
    * product discontinued
    */
-  productdiscontinued: "DISCONT",
+  DISCONT: "DISCONT",
 
   /**
    * ineffective
    */
-  ineffective: "INEFFECT",
+  INEFFECT: "INEFFECT",
 
   /**
    * response to monitoring
    */
-  responsetomonitoring: "MONIT",
+  MONIT: "MONIT",
 
   /**
    * no longer required for treatment
    */
-  nolongerrequiredfortreatment: "NOREQ",
+  NOREQ: "NOREQ",
 
   /**
    * not covered
    */
-  notcovered: "NOTCOVER",
+  NOTCOVER: "NOTCOVER",
 
   /**
    * patient refuse
    */
-  patientrefuse: "PREFUS",
+  PREFUS: "PREFUS",
 
   /**
    * product recalled
    */
-  productrecalled: "RECALL",
+  RECALL: "RECALL",
 
   /**
    * change in order
    */
-  changeinorder: "REPLACE",
+  REPLACE: "REPLACE",
 
   /**
    * change in medication/dose
    */
-  changeinmedicationdose: "DOSECHG",
+  DOSECHG: "DOSECHG",
 
   /**
    * error in order
    */
-  errorinorder: "REPLACEFIX",
+  REPLACEFIX: "REPLACEFIX",
 
   /**
    * unable to use
    */
-  unabletouse: "UNABLE",
+  UNABLE: "UNABLE",
 
   /**
    * suspend reason no longer applies
    */
-  suspendreasonnolongerapplies: "HOLDDONE",
+  HOLDDONE: "HOLDDONE",
 
   /**
    * suspend reason inappropriate
    */
-  suspendreasoninappropriate: "HOLDINAP",
+  HOLDINAP: "HOLDINAP",
 
   /**
    * ModifyPrescriptionReasonType
    */
-  ModifyPrescriptionReasonType: "_ModifyPrescriptionReasonType",
+  _ModifyPrescriptionReasonType: "_ModifyPrescriptionReasonType",
 
   /**
    * administrative error in order
    */
-  administrativeerrorinorder: "ADMINERROR",
+  ADMINERROR: "ADMINERROR",
 
   /**
    * clinical modification
    */
-  clinicalmodification: "CLINMOD",
+  CLINMOD: "CLINMOD",
 
   /**
    * PharmacySupplyEventAbortReason
    */
-  PharmacySupplyEventAbortReason: "_PharmacySupplyEventAbortReason",
+  _PharmacySupplyEventAbortReason: "_PharmacySupplyEventAbortReason",
 
   /**
    * contraindication
    */
-  contraindication: "CONTRA",
+  CONTRA: "CONTRA",
 
   /**
    * order aborted
    */
-  orderaborted: "FOABORT",
+  FOABORT: "FOABORT",
 
   /**
    * order suspended
    */
-  ordersuspended: "FOSUSP",
+  FOSUSP: "FOSUSP",
 
   /**
    * not picked up
    */
-  notpickedup: "NOPICK",
+  NOPICK: "NOPICK",
 
   /**
    * patient changed mind
    */
-  patientchangedmind: "PATDEC",
+  PATDEC: "PATDEC",
 
   /**
    * change supply quantity
    */
-  changesupplyquantity: "QUANTCHG",
+  QUANTCHG: "QUANTCHG",
 
   /**
    * pharmacy supply event stock reason
    */
-  pharmacysupplyeventstockreason: "_PharmacySupplyEventStockReasonCode",
+  _PharmacySupplyEventStockReasonCode: "_PharmacySupplyEventStockReasonCode",
 
   /**
    * floor stock
    */
-  floorstock: "FLRSTCK",
+  FLRSTCK: "FLRSTCK",
 
   /**
    * long term care use
    */
-  longtermcareuse: "LTC",
+  LTC: "LTC",
 
   /**
    * office use
    */
-  officeuse: "OFFICE",
+  OFFICE: "OFFICE",
 
   /**
    * pharmacy transfer
    */
-  pharmacytransfer: "PHARM",
+  PHARM: "PHARM",
 
   /**
    * program use
    */
-  programuse: "PROG",
+  PROG: "PROG",
 
   /**
    * new prescription exists
    */
-  newprescriptionexists: "ALREADYRX",
+  ALREADYRX: "ALREADYRX",
 
   /**
    * family physician must authorize further fills
    */
-  familyphysicianmustauthorizefurtherfills: "FAMPHYS",
+  FAMPHYS: "FAMPHYS",
 
   /**
    * modified prescription exists
    */
-  modifiedprescriptionexists: "MODIFY",
+  MODIFY: "MODIFY",
 
   /**
    * patient must make appointment
    */
-  patientmustmakeappointment: "NEEDAPMT",
+  NEEDAPMT: "NEEDAPMT",
 
   /**
    * prescriber not available
    */
-  prescribernotavailable: "NOTAVAIL",
+  NOTAVAIL: "NOTAVAIL",
 
   /**
    * patient no longer in this practice
    */
-  patientnolongerinthispractice: "NOTPAT",
+  NOTPAT: "NOTPAT",
 
   /**
    * medication on hold
    */
-  medicationonhold: "ONHOLD",
+  ONHOLD: "ONHOLD",
 
   /**
    * product not available
    */
-  productnotavailable: "PRNA",
+  PRNA: "PRNA",
 
   /**
    * prescriber stopped medication for patient
    */
-  prescriberstoppedmedicationforpatient: "STOPMED",
+  STOPMED: "STOPMED",
 
   /**
    * too early
    */
-  tooearly: "TOOEARLY",
+  TOOEARLY: "TOOEARLY",
 
   /**
    * condition improved
    */
-  conditionimproved: "IMPROV",
+  IMPROV: "IMPROV",
 
   /**
    * intolerance
    */
-  intolerance: "INTOL",
+  INTOL: "INTOL",
 
   /**
    * new strength
    */
-  newstrength: "NEWSTR",
+  NEWSTR: "NEWSTR",
 
   /**
    * new therapy
    */
-  newtherapy: "NEWTHER",
+  NEWTHER: "NEWTHER",
 
   /**
    * ControlActReasonConditionNullify
    */
-  ControlActReasonConditionNullify: "_ControlActReasonConditionNullify",
+  _ControlActReasonConditionNullify: "_ControlActReasonConditionNullify",
 
   /**
    * information change
    */
-  informationchange: "CHGDATA",
+  CHGDATA: "CHGDATA",
 
   /**
    * error correction
    */
-  errorcorrection: "FIXDATA",
+  FIXDATA: "FIXDATA",
 
   /**
    * merge data
    */
-  mergedata: "MDATA",
+  MDATA: "MDATA",
 
   /**
    * new information
    */
-  newinformation: "NEWDATA",
+  NEWDATA: "NEWDATA",
 
   /**
    * unmerge data
    */
-  unmergedata: "UMDATA",
+  UMDATA: "UMDATA",
 
   /**
    * try another treatment first
    */
-  tryanothertreatmentfirst: "ALTCHOICE",
+  ALTCHOICE: "ALTCHOICE",
 
   /**
    * prescription requires clarification
    */
-  prescriptionrequiresclarification: "CLARIF",
+  CLARIF: "CLARIF",
 
   /**
    * drug level too high
    */
-  drugleveltoohigh: "DRUGHIGH",
+  DRUGHIGH: "DRUGHIGH",
 
   /**
    * admission to hospital
    */
-  admissiontohospital: "HOSPADM",
+  HOSPADM: "HOSPADM",
 
   /**
    * lab interference issues
    */
-  labinterferenceissues: "LABINT",
+  LABINT: "LABINT",
 
   /**
    * patient not-available
    */
-  patientnotavailable: "NON-AVAIL",
+  "NON-AVAIL": "NON-AVAIL",
 
   /**
    * parent is pregnant/breast feeding
    */
-  parentispregnantbreastfeeding: "PREG",
+  PREG: "PREG",
 
   /**
    * allergy
    */
-  allergy: "SALG",
+  SALG: "SALG",
 
   /**
    * drug interacts with another drug
    */
-  druginteractswithanotherdrug: "SDDI",
+  SDDI: "SDDI",
 
   /**
    * duplicate therapy
    */
-  duplicatetherapy: "SDUPTHER",
+  SDUPTHER: "SDUPTHER",
 
   /**
    * suspected intolerance
    */
-  suspectedintolerance: "SINTOL",
+  SINTOL: "SINTOL",
 
   /**
    * patient scheduled for surgery
    */
-  patientscheduledforsurgery: "SURG",
+  SURG: "SURG",
 
   /**
    * waiting for old drug to wash out
    */
-  waitingforolddrugtowashout: "WASHOUT",
+  WASHOUT: "WASHOUT",
 
   /**
    * detected issue
    */
-  detectedissue: "ISSUE",
+  ISSUE: "ISSUE",
 
   /**
    * ActAdministrativeDetectedIssueCode
    */
-  ActAdministrativeDetectedIssueCode: "_ActAdministrativeDetectedIssueCode",
+  _ActAdministrativeDetectedIssueCode: "_ActAdministrativeDetectedIssueCode",
 
   /**
    * ActAdministrativeAuthorizationDetectedIssueCode
    */
-  ActAdministrativeAuthorizationDetectedIssueCode:
+  _ActAdministrativeAuthorizationDetectedIssueCode:
     "_ActAdministrativeAuthorizationDetectedIssueCode",
 
   /**
    * Insufficient authorization
    */
-  Insufficientauthorization: "NAT",
+  NAT: "NAT",
 
   /**
    * record suppressed
    */
-  recordsuppressed: "SUPPRESSED",
+  SUPPRESSED: "SUPPRESSED",
 
   /**
    * validation issue
    */
-  validationissue: "VALIDAT",
+  VALIDAT: "VALIDAT",
 
   /**
    * Unknown key identifier
    */
-  Unknownkeyidentifier: "KEY204",
+  KEY204: "KEY204",
 
   /**
    * Duplicate key identifier
    */
-  Duplicatekeyidentifier: "KEY205",
+  KEY205: "KEY205",
 
   /**
    * Compliance Alert
    */
-  ComplianceAlert: "COMPLY",
+  COMPLY: "COMPLY",
 
   /**
    * Duplicate Therapy Alert
    */
-  DuplicateTherapyAlert: "DUPTHPY",
+  DUPTHPY: "DUPTHPY",
 
   /**
    * duplicate therapeutic alass alert
    */
-  duplicatetherapeuticalassalert: "DUPTHPCLS",
+  DUPTHPCLS: "DUPTHPCLS",
 
   /**
    * duplicate generic alert
    */
-  duplicategenericalert: "DUPTHPGEN",
+  DUPTHPGEN: "DUPTHPGEN",
 
   /**
    * commonly abused/misused alert
    */
-  commonlyabusedmisusedalert: "ABUSE",
+  ABUSE: "ABUSE",
 
   /**
    * potential fraud
    */
-  potentialfraud: "FRAUD",
+  FRAUD: "FRAUD",
 
   /**
    * Poly-orderer Alert
    */
-  PolyordererAlert: "PLYDOC",
+  PLYDOC: "PLYDOC",
 
   /**
    * Poly-supplier Alert
    */
-  PolysupplierAlert: "PLYPHRM",
+  PLYPHRM: "PLYPHRM",
 
   /**
    * Dosage problem
    */
-  Dosageproblem: "DOSE",
+  DOSE: "DOSE",
 
   /**
    * dosage-condition alert
    */
-  dosageconditionalert: "DOSECOND",
+  DOSECOND: "DOSECOND",
 
   /**
    * Dose-Duration Alert
    */
-  DoseDurationAlert: "DOSEDUR",
+  DOSEDUR: "DOSEDUR",
 
   /**
    * Dose-Duration High Alert
    */
-  DoseDurationHighAlert: "DOSEDURH",
+  DOSEDURH: "DOSEDURH",
 
   /**
    * Dose-Duration High for Indication Alert
    */
-  DoseDurationHighforIndicationAlert: "DOSEDURHIND",
+  DOSEDURHIND: "DOSEDURHIND",
 
   /**
    * Dose-Duration Low Alert
    */
-  DoseDurationLowAlert: "DOSEDURL",
+  DOSEDURL: "DOSEDURL",
 
   /**
    * Dose-Duration Low for Indication Alert
    */
-  DoseDurationLowforIndicationAlert: "DOSEDURLIND",
+  DOSEDURLIND: "DOSEDURLIND",
 
   /**
    * High Dose Alert
    */
-  HighDoseAlert: "DOSEH",
+  DOSEH: "DOSEH",
 
   /**
    * High Dose for Age Alert
    */
-  HighDoseforAgeAlert: "DOSEHINDA",
+  DOSEHINDA: "DOSEHINDA",
 
   /**
    * High Dose for Indication Alert
    */
-  HighDoseforIndicationAlert: "DOSEHIND",
+  DOSEHIND: "DOSEHIND",
 
   /**
    * High Dose for Height/Surface Area Alert
    */
-  HighDoseforHeightSurfaceAreaAlert: "DOSEHINDSA",
+  DOSEHINDSA: "DOSEHINDSA",
 
   /**
    * High Dose for Weight Alert
    */
-  HighDoseforWeightAlert: "DOSEHINDW",
+  DOSEHINDW: "DOSEHINDW",
 
   /**
    * Dose-Interval Alert
    */
-  DoseIntervalAlert: "DOSEIVL",
+  DOSEIVL: "DOSEIVL",
 
   /**
    * Dose-Interval for Indication Alert
    */
-  DoseIntervalforIndicationAlert: "DOSEIVLIND",
+  DOSEIVLIND: "DOSEIVLIND",
 
   /**
    * Low Dose Alert
    */
-  LowDoseAlert: "DOSEL",
+  DOSEL: "DOSEL",
 
   /**
    * Low Dose for Age Alert
    */
-  LowDoseforAgeAlert: "DOSELINDA",
+  DOSELINDA: "DOSELINDA",
 
   /**
    * Low Dose for Indication Alert
    */
-  LowDoseforIndicationAlert: "DOSELIND",
+  DOSELIND: "DOSELIND",
 
   /**
    * Low Dose for Height/Surface Area Alert
    */
-  LowDoseforHeightSurfaceAreaAlert: "DOSELINDSA",
+  DOSELINDSA: "DOSELINDSA",
 
   /**
    * Low Dose for Weight Alert
    */
-  LowDoseforWeightAlert: "DOSELINDW",
+  DOSELINDW: "DOSELINDW",
 
   /**
    * maximum dosage reached
    */
-  maximumdosagereached: "MDOSE",
+  MDOSE: "MDOSE",
 
   /**
    * Observation Alert
    */
-  ObservationAlert: "OBSA",
+  OBSA: "OBSA",
 
   /**
    * Age Alert
    */
-  AgeAlert: "AGE",
+  AGE: "AGE",
 
   /**
    * adult alert
    */
-  adultalert: "ADALRT",
+  ADALRT: "ADALRT",
 
   /**
    * geriatric alert
    */
-  geriatricalert: "GEALRT",
+  GEALRT: "GEALRT",
 
   /**
    * pediatric alert
    */
-  pediatricalert: "PEALRT",
+  PEALRT: "PEALRT",
 
   /**
    * Condition Alert
    */
-  ConditionAlert: "COND",
+  COND: "COND",
 
   /**
    *
@@ -537,12 +537,7 @@ export const ControlActReasonCode = {
   /**
    * Lactation Alert
    */
-  LactationAlert: "LACT",
-
-  /**
-   * Pregnancy Alert
-   */
-  PregnancyAlert: "PREG",
+  LACT: "LACT",
 
   /**
    *
@@ -552,413 +547,413 @@ export const ControlActReasonCode = {
   /**
    * common reaction alert
    */
-  commonreactionalert: "CREACT",
+  CREACT: "CREACT",
 
   /**
    * Genetic Alert
    */
-  GeneticAlert: "GEN",
+  GEN: "GEN",
 
   /**
    * Gender Alert
    */
-  GenderAlert: "GEND",
+  GEND: "GEND",
 
   /**
    * Lab Alert
    */
-  LabAlert: "LAB",
+  LAB: "LAB",
 
   /**
    * Reaction Alert
    */
-  ReactionAlert: "REACT",
+  REACT: "REACT",
 
   /**
    * Allergy Alert
    */
-  AllergyAlert: "ALGY",
+  ALGY: "ALGY",
 
   /**
    * Intolerance Alert
    */
-  IntoleranceAlert: "INT",
+  INT: "INT",
 
   /**
    * Related Reaction Alert
    */
-  RelatedReactionAlert: "RREACT",
+  RREACT: "RREACT",
 
   /**
    * Related Allergy Alert
    */
-  RelatedAllergyAlert: "RALG",
+  RALG: "RALG",
 
   /**
    * Related Prior Reaction Alert
    */
-  RelatedPriorReactionAlert: "RAR",
+  RAR: "RAR",
 
   /**
    * Related Intolerance Alert
    */
-  RelatedIntoleranceAlert: "RINT",
+  RINT: "RINT",
 
   /**
    * business constraint violation
    */
-  businessconstraintviolation: "BUS",
+  BUS: "BUS",
 
   /**
    * code is not valid
    */
-  codeisnotvalid: "CODE_INVAL",
+  CODE_INVAL: "CODE_INVAL",
 
   /**
    * code has been deprecated
    */
-  codehasbeendeprecated: "CODE_DEPREC",
+  CODE_DEPREC: "CODE_DEPREC",
 
   /**
    * invalid format
    */
-  invalidformat: "FORMAT",
+  FORMAT: "FORMAT",
 
   /**
    * illegal
    */
-  illegal: "ILLEGAL",
+  ILLEGAL: "ILLEGAL",
 
   /**
    * length out of range
    */
-  lengthoutofrange: "LEN_RANGE",
+  LEN_RANGE: "LEN_RANGE",
 
   /**
    * length is too long
    */
-  lengthistoolong: "LEN_LONG",
+  LEN_LONG: "LEN_LONG",
 
   /**
    * length is too short
    */
-  lengthistooshort: "LEN_SHORT",
+  LEN_SHORT: "LEN_SHORT",
 
   /**
    * conditional element missing
    */
-  conditionalelementmissing: "MISSCOND",
+  MISSCOND: "MISSCOND",
 
   /**
    * mandatory element missing
    */
-  mandatoryelementmissing: "MISSMAND",
+  MISSMAND: "MISSMAND",
 
   /**
    * duplicate values are not permitted
    */
-  duplicatevaluesarenotpermitted: "NODUPS",
+  NODUPS: "NODUPS",
 
   /**
    * element will not be persisted
    */
-  elementwillnotbepersisted: "NOPERSIST",
+  NOPERSIST: "NOPERSIST",
 
   /**
    * repetitions out of range
    */
-  repetitionsoutofrange: "REP_RANGE",
+  REP_RANGE: "REP_RANGE",
 
   /**
    * repetitions above maximum
    */
-  repetitionsabovemaximum: "MAXOCCURS",
+  MAXOCCURS: "MAXOCCURS",
 
   /**
    * repetitions below minimum
    */
-  repetitionsbelowminimum: "MINOCCURS",
+  MINOCCURS: "MINOCCURS",
 
   /**
    * ActAdministrativeRuleDetectedIssueCode
    */
-  ActAdministrativeRuleDetectedIssueCode:
+  _ActAdministrativeRuleDetectedIssueCode:
     "_ActAdministrativeRuleDetectedIssueCode",
 
   /**
    * non-matching identification
    */
-  nonmatchingidentification: "KEY206",
+  KEY206: "KEY206",
 
   /**
    * obsolete record returned
    */
-  obsoleterecordreturned: "OBSOLETE",
+  OBSOLETE: "OBSOLETE",
 
   /**
    * ActSuppliedItemDetectedIssueCode
    */
-  ActSuppliedItemDetectedIssueCode: "_ActSuppliedItemDetectedIssueCode",
+  _ActSuppliedItemDetectedIssueCode: "_ActSuppliedItemDetectedIssueCode",
 
   /**
    * AdministrationDetectedIssueCode
    */
-  AdministrationDetectedIssueCode: "_AdministrationDetectedIssueCode",
+  _AdministrationDetectedIssueCode: "_AdministrationDetectedIssueCode",
 
   /**
    * AppropriatenessDetectedIssueCode
    */
-  AppropriatenessDetectedIssueCode: "_AppropriatenessDetectedIssueCode",
+  _AppropriatenessDetectedIssueCode: "_AppropriatenessDetectedIssueCode",
 
   /**
    * InteractionDetectedIssueCode
    */
-  InteractionDetectedIssueCode: "_InteractionDetectedIssueCode",
+  _InteractionDetectedIssueCode: "_InteractionDetectedIssueCode",
 
   /**
    * Food Interaction Alert
    */
-  FoodInteractionAlert: "FOOD",
+  FOOD: "FOOD",
 
   /**
    * Therapeutic Product Alert
    */
-  TherapeuticProductAlert: "TPROD",
+  TPROD: "TPROD",
 
   /**
    * Drug Interaction Alert
    */
-  DrugInteractionAlert: "DRG",
+  DRG: "DRG",
 
   /**
    * Natural Health Product Alert
    */
-  NaturalHealthProductAlert: "NHP",
+  NHP: "NHP",
 
   /**
    * Non-Prescription Interaction Alert
    */
-  NonPrescriptionInteractionAlert: "NONRX",
+  NONRX: "NONRX",
 
   /**
    * previously ineffective
    */
-  previouslyineffective: "PREVINEF",
+  PREVINEF: "PREVINEF",
 
   /**
    * drug action detected issue
    */
-  drugactiondetectedissue: "DACT",
+  DACT: "DACT",
 
   /**
    * timing detected issue
    */
-  timingdetectedissue: "TIME",
+  TIME: "TIME",
 
   /**
    * end too late alert
    */
-  endtoolatealert: "ALRTENDLATE",
+  ALRTENDLATE: "ALRTENDLATE",
 
   /**
    * start too late alert
    */
-  starttoolatealert: "ALRTSTRTLATE",
+  ALRTSTRTLATE: "ALRTSTRTLATE",
 
   /**
    * DrugActionDetectedIssueCode
    */
-  DrugActionDetectedIssueCode: "_DrugActionDetectedIssueCode",
+  _DrugActionDetectedIssueCode: "_DrugActionDetectedIssueCode",
 
   /**
    * TimingDetectedIssueCode
    */
-  TimingDetectedIssueCode: "_TimingDetectedIssueCode",
+  _TimingDetectedIssueCode: "_TimingDetectedIssueCode",
 
   /**
    * End Too Late Alert
    */
-  EndTooLateAlert: "ENDLATE",
+  ENDLATE: "ENDLATE",
 
   /**
    * Start Too Late Alert
    */
-  StartTooLateAlert: "STRTLATE",
+  STRTLATE: "STRTLATE",
 
   /**
    * SupplyDetectedIssueCode
    */
-  SupplyDetectedIssueCode: "_SupplyDetectedIssueCode",
+  _SupplyDetectedIssueCode: "_SupplyDetectedIssueCode",
 
   /**
    * already performed
    */
-  alreadyperformed: "ALLDONE",
+  ALLDONE: "ALLDONE",
 
   /**
    * fulfillment alert
    */
-  fulfillmentalert: "FULFIL",
+  FULFIL: "FULFIL",
 
   /**
    * no longer actionable
    */
-  nolongeractionable: "NOTACTN",
+  NOTACTN: "NOTACTN",
 
   /**
    * not equivalent alert
    */
-  notequivalentalert: "NOTEQUIV",
+  NOTEQUIV: "NOTEQUIV",
 
   /**
    * not generically equivalent alert
    */
-  notgenericallyequivalentalert: "NOTEQUIVGEN",
+  NOTEQUIVGEN: "NOTEQUIVGEN",
 
   /**
    * not therapeutically equivalent alert
    */
-  nottherapeuticallyequivalentalert: "NOTEQUIVTHER",
+  NOTEQUIVTHER: "NOTEQUIVTHER",
 
   /**
    * event timing incorrect alert
    */
-  eventtimingincorrectalert: "TIMING",
+  TIMING: "TIMING",
 
   /**
    * outside requested time
    */
-  outsiderequestedtime: "INTERVAL",
+  INTERVAL: "INTERVAL",
 
   /**
    * too soon within frequency based on the usage
    */
-  toosoonwithinfrequencybasedontheusage: "MINFREQ",
+  MINFREQ: "MINFREQ",
 
   /**
    * held/suspended alert
    */
-  heldsuspendedalert: "HELD",
+  HELD: "HELD",
 
   /**
    * Refill Too Late Alert
    */
-  RefillTooLateAlert: "TOOLATE",
+  TOOLATE: "TOOLATE",
 
   /**
    * Refill Too Soon Alert
    */
-  RefillTooSoonAlert: "TOOSOON",
+  TOOSOON: "TOOSOON",
 
   /**
    * record recorded as historical
    */
-  recordrecordedashistorical: "HISTORIC",
+  HISTORIC: "HISTORIC",
 
   /**
    * violates stated preferences
    */
-  violatesstatedpreferences: "PATPREF",
+  PATPREF: "PATPREF",
 
   /**
    * violates stated preferences, alternate available
    */
-  violatesstatedpreferencesalternateavailable: "PATPREFALT",
+  PATPREFALT: "PATPREFALT",
 
   /**
    * ActFinancialDetectedIssueCode
    */
-  ActFinancialDetectedIssueCode: "_ActFinancialDetectedIssueCode",
+  _ActFinancialDetectedIssueCode: "_ActFinancialDetectedIssueCode",
 
   /**
    * ClinicalActionDetectedIssueCode
    */
-  ClinicalActionDetectedIssueCode: "_ClinicalActionDetectedIssueCode",
+  _ClinicalActionDetectedIssueCode: "_ClinicalActionDetectedIssueCode",
 
   /**
    * Caregap
    */
-  Caregap: "CAREGAP",
+  CAREGAP: "CAREGAP",
 
   /**
    * Codinggap
    */
-  Codinggap: "CODINGGAP",
+  CODINGGAP: "CODINGGAP",
 
   /**
    * administrative review
    */
-  administrativereview: "ADMREV",
+  ADMREV: "ADMREV",
 
   /**
    * subpoena
    */
-  subpoena: "LEGAL",
+  LEGAL: "LEGAL",
 
   /**
    * patient care
    */
-  patientcare: "PATCAR",
+  PATCAR: "PATCAR",
 
   /**
    * patient request query
    */
-  patientrequestquery: "PATREQ",
+  PATREQ: "PATREQ",
 
   /**
    * practice review
    */
-  practicereview: "PRCREV",
+  PRCREV: "PRCREV",
 
   /**
    * regulatory review
    */
-  regulatoryreview: "REGUL",
+  REGUL: "REGUL",
 
   /**
    * research
    */
-  research: "RSRCH",
+  RSRCH: "RSRCH",
 
   /**
    * validation review
    */
-  validationreview: "VALIDATION",
+  VALIDATION: "VALIDATION",
 
   /**
    * altered decision
    */
-  altereddecision: "ALTD",
+  ALTD: "ALTD",
 
   /**
    * entered in error
    */
-  enteredinerror: "EIE",
+  EIE: "EIE",
 
   /**
    * StatusRevisionRefusalReasonCode
    */
-  StatusRevisionRefusalReasonCode: "_StatusRevisionRefusalReasonCode",
+  _StatusRevisionRefusalReasonCode: "_StatusRevisionRefusalReasonCode",
 
   /**
    * no record match
    */
-  norecordmatch: "NORECMTCH",
+  NORECMTCH: "NORECMTCH",
 
   /**
    * in requested state
    */
-  inrequestedstate: "INRQSTATE",
+  INRQSTATE: "INRQSTATE",
 
   /**
    * no user permission
    */
-  nouserpermission: "NOUSERPERM",
+  NOUSERPERM: "NOUSERPERM",
 
   /**
    * fully filled
    */
-  fullyfilled: "FILLED",
+  FILLED: "FILLED",
 } as const;
 
 /**

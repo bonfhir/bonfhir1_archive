@@ -6,12 +6,12 @@ export const PaymentStatusCodesCode = {
   /**
    * Paid
    */
-  Paid: "paid",
+  paid: "paid",
 
   /**
    * Cleared
    */
-  Cleared: "cleared",
+  cleared: "cleared",
 } as const;
 
 /**

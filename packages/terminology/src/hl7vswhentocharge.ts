@@ -6,27 +6,27 @@ export const Hl7VSWhenToChargeCode = {
   /**
    * On discharge
    */
-  Ondischarge: "D",
+  D: "D",
 
   /**
    * On receipt of order
    */
-  Onreceiptoforder: "O",
+  O: "O",
 
   /**
    * At time service is completed
    */
-  Attimeserviceiscompleted: "R",
+  R: "R",
 
   /**
    * At time service is started
    */
-  Attimeserviceisstarted: "S",
+  S: "S",
 
   /**
    * At a designated date/time
    */
-  Atadesignateddatetime: "T",
+  T: "T",
 } as const;
 
 /**

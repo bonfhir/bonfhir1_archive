@@ -6,12 +6,12 @@ export const IntraduodenalRouteCode = {
   /**
    * Instillation, intraduodenal
    */
-  Instillationintraduodenal: "IDUODINSTIL",
+  IDUODINSTIL: "IDUODINSTIL",
 
   /**
    * Mucosal absorption, intraduodenal
    */
-  Mucosalabsorptionintraduodenal: "IDOUDMAB",
+  IDOUDMAB: "IDOUDMAB",
 } as const;
 
 /**

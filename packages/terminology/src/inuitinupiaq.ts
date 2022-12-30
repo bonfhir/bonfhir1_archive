@@ -6,12 +6,12 @@ export const InuitInupiaqCode = {
   /**
    * North Alaskan Inuktitut
    */
-  NorthAlaskanInuktitut: "x-ESI",
+  "x-ESI": "x-ESI",
 
   /**
    * Northwest Alaska Inuktitut
    */
-  NorthwestAlaskaInuktitut: "x-ESK",
+  "x-ESK": "x-ESK",
 } as const;
 
 /**

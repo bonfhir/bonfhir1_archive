@@ -6,27 +6,27 @@ export const Hl7VSMailClaimPartyCode = {
   /**
    * Employer
    */
-  Employer: "E",
+  E: "E",
 
   /**
    * Guarantor
    */
-  Guarantor: "G",
+  G: "G",
 
   /**
    * Insurance company
    */
-  Insurancecompany: "I",
+  I: "I",
 
   /**
    * Other
    */
-  Other: "O",
+  O: "O",
 
   /**
    * Patient
    */
-  Patient: "P",
+  P: "P",
 } as const;
 
 /**

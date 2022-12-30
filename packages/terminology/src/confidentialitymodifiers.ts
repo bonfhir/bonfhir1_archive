@@ -11,17 +11,17 @@ export const ConfidentialityModifiersCode = {
   /**
    * celebrity
    */
-  celebrity: "C",
+  C: "C",
 
   /**
    * sensitive
    */
-  sensitive: "S",
+  S: "S",
 
   /**
    * taboo
    */
-  taboo: "T",
+  T: "T",
 } as const;
 
 /**

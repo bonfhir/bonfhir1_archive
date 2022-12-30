@@ -6,12 +6,12 @@ export const IntraluminalRouteCode = {
   /**
    * Injection, intraluminal
    */
-  Injectionintraluminal: "ILUMINJ",
+  ILUMINJ: "ILUMINJ",
 
   /**
    * Topical application, intraluminal
    */
-  Topicalapplicationintraluminal: "ILUMTA",
+  ILUMTA: "ILUMTA",
 } as const;
 
 /**

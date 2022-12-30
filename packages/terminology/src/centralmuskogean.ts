@@ -6,17 +6,17 @@ export const CentralMuskogeanCode = {
   /**
    * Alabama
    */
-  Alabama: "x-AKZ",
+  "x-AKZ": "x-AKZ",
 
   /**
    * Koasati
    */
-  Koasati: "x-CKU",
+  "x-CKU": "x-CKU",
 
   /**
    * Mikasuki
    */
-  Mikasuki: "x-MIK",
+  "x-MIK": "x-MIK",
 } as const;
 
 /**

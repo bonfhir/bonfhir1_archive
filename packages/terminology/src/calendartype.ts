@@ -6,7 +6,7 @@ export const CalendarTypeCode = {
   /**
    * Gregorian
    */
-  Gregorian: "GREG",
+  GREG: "GREG",
 } as const;
 
 /**

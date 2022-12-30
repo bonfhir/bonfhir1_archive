@@ -6,37 +6,37 @@ export const CompliancePackageEntityTypeCode = {
   /**
    * Compliance Package
    */
-  CompliancePackage: "COMPPKG",
+  COMPPKG: "COMPPKG",
 
   /**
    * Blister Pack
    */
-  BlisterPack: "BLSTRPK",
+  BLSTRPK: "BLSTRPK",
 
   /**
    * Card
    */
-  Card: "CARD",
+  CARD: "CARD",
 
   /**
    * Dial Pack
    */
-  DialPack: "DIALPK",
+  DIALPK: "DIALPK",
 
   /**
    * Disk
    */
-  Disk: "DISK",
+  DISK: "DISK",
 
   /**
    * Dosette
    */
-  Dosette: "DOSET",
+  DOSET: "DOSET",
 
   /**
    * Strip
    */
-  Strip: "STRIP",
+  STRIP: "STRIP",
 } as const;
 
 /**

@@ -6,32 +6,32 @@ export const Hl7VSControlledSubstanceScheduleCode = {
   /**
    * Schedule I
    */
-  ScheduleI: "I",
+  I: "I",
 
   /**
    * Schedule II
    */
-  ScheduleII: "II",
+  II: "II",
 
   /**
    * Schedule III
    */
-  ScheduleIII: "III",
+  III: "III",
 
   /**
    * Schedule IV
    */
-  ScheduleIV: "IV",
+  IV: "IV",
 
   /**
    * Schedule V
    */
-  ScheduleV: "V",
+  V: "V",
 
   /**
    * Schedule VI
    */
-  ScheduleVI: "VI",
+  VI: "VI",
 } as const;
 
 /**

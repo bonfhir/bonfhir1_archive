@@ -6,77 +6,77 @@ export const ActInvoiceOverrideCodeCode = {
   /**
    * coverage problem
    */
-  coverageproblem: "COVGE",
+  COVGE: "COVGE",
 
   /**
    * electronic form to follow
    */
-  electronicformtofollow: "EFORM",
+  EFORM: "EFORM",
 
   /**
    * fax to follow
    */
-  faxtofollow: "FAX",
+  FAX: "FAX",
 
   /**
    * good faith indicator
    */
-  goodfaithindicator: "GFTH",
+  GFTH: "GFTH",
 
   /**
    * late invoice
    */
-  lateinvoice: "LATE",
+  LATE: "LATE",
 
   /**
    * manual review
    */
-  manualreview: "MANUAL",
+  MANUAL: "MANUAL",
 
   /**
    * out of jurisdiction
    */
-  outofjurisdiction: "OOJ",
+  OOJ: "OOJ",
 
   /**
    * orthodontic service
    */
-  orthodonticservice: "ORTHO",
+  ORTHO: "ORTHO",
 
   /**
    * paper documentation to follow
    */
-  paperdocumentationtofollow: "PAPER",
+  PAPER: "PAPER",
 
   /**
    * public insurance exhausted
    */
-  publicinsuranceexhausted: "PIE",
+  PIE: "PIE",
 
   /**
    * delayed by a previous payor
    */
-  delayedbyapreviouspayor: "PYRDELAY",
+  PYRDELAY: "PYRDELAY",
 
   /**
    * referral not required
    */
-  referralnotrequired: "REFNR",
+  REFNR: "REFNR",
 
   /**
    * repeated service
    */
-  repeatedservice: "REPSERV",
+  REPSERV: "REPSERV",
 
   /**
    * unrelated service
    */
-  unrelatedservice: "UNRELAT",
+  UNRELAT: "UNRELAT",
 
   /**
    * verbal authorization
    */
-  verbalauthorization: "VERBAUTH",
+  VERBAUTH: "VERBAUTH",
 } as const;
 
 /**

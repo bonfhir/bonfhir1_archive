@@ -11,52 +11,52 @@ export const GeneralAddressUseCode = {
   /**
    * bad address
    */
-  badaddress: "BAD",
+  BAD: "BAD",
 
   /**
    * confidential address
    */
-  confidentialaddress: "CONF",
+  CONF: "CONF",
 
   /**
    * home address
    */
-  homeaddress: "H",
+  H: "H",
 
   /**
    * primary home
    */
-  primaryhome: "HP",
+  HP: "HP",
 
   /**
    * vacation home
    */
-  vacationhome: "HV",
+  HV: "HV",
 
   /**
    * no longer in use
    */
-  nolongerinuse: "OLD",
+  OLD: "OLD",
 
   /**
    * temporary address
    */
-  temporaryaddress: "TMP",
+  TMP: "TMP",
 
   /**
    * work place
    */
-  workplace: "WP",
+  WP: "WP",
 
   /**
    * direct
    */
-  direct: "DIR",
+  DIR: "DIR",
 
   /**
    * public
    */
-  public: "PUB",
+  PUB: "PUB",
 } as const;
 
 /**

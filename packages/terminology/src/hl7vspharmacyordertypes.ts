@@ -6,17 +6,17 @@ export const Hl7VSPharmacyOrderTypesCode = {
   /**
    * Medication
    */
-  Medication: "M",
+  M: "M",
 
   /**
    * IV Large Volume Solutions
    */
-  IVLargeVolumeSolutions: "S",
+  S: "S",
 
   /**
    * Other solution as medication orders
    */
-  Othersolutionasmedicationorders: "O",
+  O: "O",
 } as const;
 
 /**

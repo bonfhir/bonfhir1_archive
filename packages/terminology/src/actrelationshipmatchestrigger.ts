@@ -6,7 +6,7 @@ export const ActRelationshipMatchesTriggerCode = {
   /**
    * matches (trigger)
    */
-  matchestrigger: "MTCH",
+  MTCH: "MTCH",
 } as const;
 
 /**

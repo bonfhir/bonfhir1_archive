@@ -6,113 +6,113 @@ export const ObservationIssueTriggerCodedObservationTypeCode = {
   /**
    * ObservationIssueTriggerCodedObservationType
    */
-  ObservationIssueTriggerCodedObservationType:
+  _ObservationIssueTriggerCodedObservationType:
     "_ObservationIssueTriggerCodedObservationType",
 
   /**
    * case transmission mode
    */
-  casetransmissionmode: "_CaseTransmissionMode",
+  _CaseTransmissionMode: "_CaseTransmissionMode",
 
   /**
    * airborne transmission
    */
-  airbornetransmission: "AIRTRNS",
+  AIRTRNS: "AIRTRNS",
 
   /**
    * animal to animal transmission
    */
-  animaltoanimaltransmission: "ANANTRNS",
+  ANANTRNS: "ANANTRNS",
 
   /**
    * animal to human transmission
    */
-  animaltohumantransmission: "ANHUMTRNS",
+  ANHUMTRNS: "ANHUMTRNS",
 
   /**
    * body fluid contact transmission
    */
-  bodyfluidcontacttransmission: "BDYFLDTRNS",
+  BDYFLDTRNS: "BDYFLDTRNS",
 
   /**
    * blood borne transmission
    */
-  bloodbornetransmission: "BLDTRNS",
+  BLDTRNS: "BLDTRNS",
 
   /**
    * transdermal transmission
    */
-  transdermaltransmission: "DERMTRNS",
+  DERMTRNS: "DERMTRNS",
 
   /**
    * environmental exposure transmission
    */
-  environmentalexposuretransmission: "ENVTRNS",
+  ENVTRNS: "ENVTRNS",
 
   /**
    * fecal-oral transmission
    */
-  fecaloraltransmission: "FECTRNS",
+  FECTRNS: "FECTRNS",
 
   /**
    * fomite transmission
    */
-  fomitetransmission: "FOMTRNS",
+  FOMTRNS: "FOMTRNS",
 
   /**
    * food-borne transmission
    */
-  foodbornetransmission: "FOODTRNS",
+  FOODTRNS: "FOODTRNS",
 
   /**
    * human to human transmission
    */
-  humantohumantransmission: "HUMHUMTRNS",
+  HUMHUMTRNS: "HUMHUMTRNS",
 
   /**
    * indeterminate disease transmission mode
    */
-  indeterminatediseasetransmissionmode: "INDTRNS",
+  INDTRNS: "INDTRNS",
 
   /**
    * lactation transmission
    */
-  lactationtransmission: "LACTTRNS",
+  LACTTRNS: "LACTTRNS",
 
   /**
    * nosocomial transmission
    */
-  nosocomialtransmission: "NOSTRNS",
+  NOSTRNS: "NOSTRNS",
 
   /**
    * parenteral transmission
    */
-  parenteraltransmission: "PARTRNS",
+  PARTRNS: "PARTRNS",
 
   /**
    * transplacental transmission
    */
-  transplacentaltransmission: "PLACTRNS",
+  PLACTRNS: "PLACTRNS",
 
   /**
    * sexual transmission
    */
-  sexualtransmission: "SEXTRNS",
+  SEXTRNS: "SEXTRNS",
 
   /**
    * transfusion transmission
    */
-  transfusiontransmission: "TRNSFTRNS",
+  TRNSFTRNS: "TRNSFTRNS",
 
   /**
    * vector-borne transmission
    */
-  vectorbornetransmission: "VECTRNS",
+  VECTRNS: "VECTRNS",
 
   /**
    * water-borne transmission
    */
-  waterbornetransmission: "WATTRNS",
+  WATTRNS: "WATTRNS",
 } as const;
 
 /**

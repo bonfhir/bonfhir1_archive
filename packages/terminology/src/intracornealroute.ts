@@ -6,7 +6,7 @@ export const IntracornealRouteCode = {
   /**
    * Topical application, intracorneal
    */
-  Topicalapplicationintracorneal: "ICORNTA",
+  ICORNTA: "ICORNTA",
 } as const;
 
 /**

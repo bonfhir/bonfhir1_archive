@@ -6,77 +6,77 @@ export const AdministrationDetectedIssueCodeCode = {
   /**
    * AppropriatenessDetectedIssueCode
    */
-  AppropriatenessDetectedIssueCode: "_AppropriatenessDetectedIssueCode",
+  _AppropriatenessDetectedIssueCode: "_AppropriatenessDetectedIssueCode",
 
   /**
    * InteractionDetectedIssueCode
    */
-  InteractionDetectedIssueCode: "_InteractionDetectedIssueCode",
+  _InteractionDetectedIssueCode: "_InteractionDetectedIssueCode",
 
   /**
    * Food Interaction Alert
    */
-  FoodInteractionAlert: "FOOD",
+  FOOD: "FOOD",
 
   /**
    * Therapeutic Product Alert
    */
-  TherapeuticProductAlert: "TPROD",
+  TPROD: "TPROD",
 
   /**
    * Drug Interaction Alert
    */
-  DrugInteractionAlert: "DRG",
+  DRG: "DRG",
 
   /**
    * Natural Health Product Alert
    */
-  NaturalHealthProductAlert: "NHP",
+  NHP: "NHP",
 
   /**
    * Non-Prescription Interaction Alert
    */
-  NonPrescriptionInteractionAlert: "NONRX",
+  NONRX: "NONRX",
 
   /**
    * Observation Alert
    */
-  ObservationAlert: "OBSA",
+  OBSA: "OBSA",
 
   /**
    * Age Alert
    */
-  AgeAlert: "AGE",
+  AGE: "AGE",
 
   /**
    * adult alert
    */
-  adultalert: "ADALRT",
+  ADALRT: "ADALRT",
 
   /**
    * High Dose for Age Alert
    */
-  HighDoseforAgeAlert: "DOSEHINDA",
+  DOSEHINDA: "DOSEHINDA",
 
   /**
    * Low Dose for Age Alert
    */
-  LowDoseforAgeAlert: "DOSELINDA",
+  DOSELINDA: "DOSELINDA",
 
   /**
    * geriatric alert
    */
-  geriatricalert: "GEALRT",
+  GEALRT: "GEALRT",
 
   /**
    * pediatric alert
    */
-  pediatricalert: "PEALRT",
+  PEALRT: "PEALRT",
 
   /**
    * Condition Alert
    */
-  ConditionAlert: "COND",
+  COND: "COND",
 
   /**
    *
@@ -86,12 +86,12 @@ export const AdministrationDetectedIssueCodeCode = {
   /**
    * Lactation Alert
    */
-  LactationAlert: "LACT",
+  LACT: "LACT",
 
   /**
    * Pregnancy Alert
    */
-  PregnancyAlert: "PREG",
+  PREG: "PREG",
 
   /**
    *
@@ -101,232 +101,232 @@ export const AdministrationDetectedIssueCodeCode = {
   /**
    * common reaction alert
    */
-  commonreactionalert: "CREACT",
+  CREACT: "CREACT",
 
   /**
    * Genetic Alert
    */
-  GeneticAlert: "GEN",
+  GEN: "GEN",
 
   /**
    * Gender Alert
    */
-  GenderAlert: "GEND",
+  GEND: "GEND",
 
   /**
    * Lab Alert
    */
-  LabAlert: "LAB",
+  LAB: "LAB",
 
   /**
    * Reaction Alert
    */
-  ReactionAlert: "REACT",
+  REACT: "REACT",
 
   /**
    * Allergy Alert
    */
-  AllergyAlert: "ALGY",
+  ALGY: "ALGY",
 
   /**
    * Intolerance Alert
    */
-  IntoleranceAlert: "INT",
+  INT: "INT",
 
   /**
    * Related Reaction Alert
    */
-  RelatedReactionAlert: "RREACT",
+  RREACT: "RREACT",
 
   /**
    * Related Allergy Alert
    */
-  RelatedAllergyAlert: "RALG",
+  RALG: "RALG",
 
   /**
    * Related Prior Reaction Alert
    */
-  RelatedPriorReactionAlert: "RAR",
+  RAR: "RAR",
 
   /**
    * Related Intolerance Alert
    */
-  RelatedIntoleranceAlert: "RINT",
+  RINT: "RINT",
 
   /**
    * previously ineffective
    */
-  previouslyineffective: "PREVINEF",
+  PREVINEF: "PREVINEF",
 
   /**
    * Compliance Alert
    */
-  ComplianceAlert: "COMPLY",
+  COMPLY: "COMPLY",
 
   /**
    * Duplicate Therapy Alert
    */
-  DuplicateTherapyAlert: "DUPTHPY",
+  DUPTHPY: "DUPTHPY",
 
   /**
    * duplicate therapeutic alass alert
    */
-  duplicatetherapeuticalassalert: "DUPTHPCLS",
+  DUPTHPCLS: "DUPTHPCLS",
 
   /**
    * duplicate generic alert
    */
-  duplicategenericalert: "DUPTHPGEN",
+  DUPTHPGEN: "DUPTHPGEN",
 
   /**
    * commonly abused/misused alert
    */
-  commonlyabusedmisusedalert: "ABUSE",
+  ABUSE: "ABUSE",
 
   /**
    * potential fraud
    */
-  potentialfraud: "FRAUD",
+  FRAUD: "FRAUD",
 
   /**
    * Poly-orderer Alert
    */
-  PolyordererAlert: "PLYDOC",
+  PLYDOC: "PLYDOC",
 
   /**
    * Poly-supplier Alert
    */
-  PolysupplierAlert: "PLYPHRM",
+  PLYPHRM: "PLYPHRM",
 
   /**
    * drug action detected issue
    */
-  drugactiondetectedissue: "DACT",
+  DACT: "DACT",
 
   /**
    * Dosage problem
    */
-  Dosageproblem: "DOSE",
+  DOSE: "DOSE",
 
   /**
    * dosage-condition alert
    */
-  dosageconditionalert: "DOSECOND",
+  DOSECOND: "DOSECOND",
 
   /**
    * Dose-Duration Alert
    */
-  DoseDurationAlert: "DOSEDUR",
+  DOSEDUR: "DOSEDUR",
 
   /**
    * Dose-Duration High Alert
    */
-  DoseDurationHighAlert: "DOSEDURH",
+  DOSEDURH: "DOSEDURH",
 
   /**
    * Dose-Duration High for Indication Alert
    */
-  DoseDurationHighforIndicationAlert: "DOSEDURHIND",
+  DOSEDURHIND: "DOSEDURHIND",
 
   /**
    * Dose-Duration Low Alert
    */
-  DoseDurationLowAlert: "DOSEDURL",
+  DOSEDURL: "DOSEDURL",
 
   /**
    * Dose-Duration Low for Indication Alert
    */
-  DoseDurationLowforIndicationAlert: "DOSEDURLIND",
+  DOSEDURLIND: "DOSEDURLIND",
 
   /**
    * High Dose Alert
    */
-  HighDoseAlert: "DOSEH",
+  DOSEH: "DOSEH",
 
   /**
    * High Dose for Indication Alert
    */
-  HighDoseforIndicationAlert: "DOSEHIND",
+  DOSEHIND: "DOSEHIND",
 
   /**
    * High Dose for Height/Surface Area Alert
    */
-  HighDoseforHeightSurfaceAreaAlert: "DOSEHINDSA",
+  DOSEHINDSA: "DOSEHINDSA",
 
   /**
    * High Dose for Weight Alert
    */
-  HighDoseforWeightAlert: "DOSEHINDW",
+  DOSEHINDW: "DOSEHINDW",
 
   /**
    * Dose-Interval Alert
    */
-  DoseIntervalAlert: "DOSEIVL",
+  DOSEIVL: "DOSEIVL",
 
   /**
    * Dose-Interval for Indication Alert
    */
-  DoseIntervalforIndicationAlert: "DOSEIVLIND",
+  DOSEIVLIND: "DOSEIVLIND",
 
   /**
    * Low Dose Alert
    */
-  LowDoseAlert: "DOSEL",
+  DOSEL: "DOSEL",
 
   /**
    * Low Dose for Indication Alert
    */
-  LowDoseforIndicationAlert: "DOSELIND",
+  DOSELIND: "DOSELIND",
 
   /**
    * Low Dose for Height/Surface Area Alert
    */
-  LowDoseforHeightSurfaceAreaAlert: "DOSELINDSA",
+  DOSELINDSA: "DOSELINDSA",
 
   /**
    * Low Dose for Weight Alert
    */
-  LowDoseforWeightAlert: "DOSELINDW",
+  DOSELINDW: "DOSELINDW",
 
   /**
    * maximum dosage reached
    */
-  maximumdosagereached: "MDOSE",
+  MDOSE: "MDOSE",
 
   /**
    * timing detected issue
    */
-  timingdetectedissue: "TIME",
+  TIME: "TIME",
 
   /**
    * end too late alert
    */
-  endtoolatealert: "ALRTENDLATE",
+  ALRTENDLATE: "ALRTENDLATE",
 
   /**
    * start too late alert
    */
-  starttoolatealert: "ALRTSTRTLATE",
+  ALRTSTRTLATE: "ALRTSTRTLATE",
 
   /**
    * DrugActionDetectedIssueCode
    */
-  DrugActionDetectedIssueCode: "_DrugActionDetectedIssueCode",
+  _DrugActionDetectedIssueCode: "_DrugActionDetectedIssueCode",
 
   /**
    * TimingDetectedIssueCode
    */
-  TimingDetectedIssueCode: "_TimingDetectedIssueCode",
+  _TimingDetectedIssueCode: "_TimingDetectedIssueCode",
 
   /**
    * End Too Late Alert
    */
-  EndTooLateAlert: "ENDLATE",
+  ENDLATE: "ENDLATE",
 
   /**
    * Start Too Late Alert
    */
-  StartTooLateAlert: "STRTLATE",
+  STRTLATE: "STRTLATE",
 } as const;
 
 /**

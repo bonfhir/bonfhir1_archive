@@ -6,37 +6,37 @@ export const StatisticSynthesisTypeCode = {
   /**
    * summary data meta-analysis
    */
-  summarydatametaanalysis: "std-MA",
+  "std-MA": "std-MA",
 
   /**
    * individual patient data meta-analysis
    */
-  individualpatientdatametaanalysis: "IPD-MA",
+  "IPD-MA": "IPD-MA",
 
   /**
    * indirect network meta-analysis
    */
-  indirectnetworkmetaanalysis: "indirect-NMA",
+  "indirect-NMA": "indirect-NMA",
 
   /**
    * combined direct plus indirect network meta-analysis
    */
-  combineddirectplusindirectnetworkmetaanalysis: "combined-NMA",
+  "combined-NMA": "combined-NMA",
 
   /**
    * range of results
    */
-  rangeofresults: "range",
+  range: "range",
 
   /**
    * classifcation of results
    */
-  classifcationofresults: "classification",
+  classification: "classification",
 
   /**
    * pooled rates
    */
-  pooledrates: "pooled",
+  pooled: "pooled",
 } as const;
 
 /**

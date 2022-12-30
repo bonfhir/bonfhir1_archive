@@ -6,32 +6,32 @@ export const ActInvoiceDetailGenericAdjudicatorCodeCode = {
   /**
    * coinsurance
    */
-  coinsurance: "COIN",
+  COIN: "COIN",
 
   /**
    * patient co-pay
    */
-  patientcopay: "COPAYMENT",
+  COPAYMENT: "COPAYMENT",
 
   /**
    * deductible
    */
-  deductible: "DEDUCTIBLE",
+  DEDUCTIBLE: "DEDUCTIBLE",
 
   /**
    * payment
    */
-  payment: "PAY",
+  PAY: "PAY",
 
   /**
    * spend down
    */
-  spenddown: "SPEND",
+  SPEND: "SPEND",
 
   /**
    * co-insurance
    */
-  coinsurance: "COINS",
+  COINS: "COINS",
 } as const;
 
 /**

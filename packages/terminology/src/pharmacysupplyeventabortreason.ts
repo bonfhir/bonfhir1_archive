@@ -6,37 +6,37 @@ export const PharmacySupplyEventAbortReasonCode = {
   /**
    * PharmacySupplyEventAbortReason
    */
-  PharmacySupplyEventAbortReason: "_PharmacySupplyEventAbortReason",
+  _PharmacySupplyEventAbortReason: "_PharmacySupplyEventAbortReason",
 
   /**
    * contraindication
    */
-  contraindication: "CONTRA",
+  CONTRA: "CONTRA",
 
   /**
    * order aborted
    */
-  orderaborted: "FOABORT",
+  FOABORT: "FOABORT",
 
   /**
    * order suspended
    */
-  ordersuspended: "FOSUSP",
+  FOSUSP: "FOSUSP",
 
   /**
    * not picked up
    */
-  notpickedup: "NOPICK",
+  NOPICK: "NOPICK",
 
   /**
    * patient changed mind
    */
-  patientchangedmind: "PATDEC",
+  PATDEC: "PATDEC",
 
   /**
    * change supply quantity
    */
-  changesupplyquantity: "QUANTCHG",
+  QUANTCHG: "QUANTCHG",
 } as const;
 
 /**

@@ -6,17 +6,17 @@ export const Hl7VSDeviceTypeCode = {
   /**
    * EO Gas Sterilizer
    */
-  EOGasSterilizer: "1",
+  "1": "1",
 
   /**
    * Steam Sterilizer
    */
-  SteamSterilizer: "2",
+  "2": "2",
 
   /**
    * Peracetic Acid
    */
-  PeraceticAcid: "3",
+  "3": "3",
 } as const;
 
 /**

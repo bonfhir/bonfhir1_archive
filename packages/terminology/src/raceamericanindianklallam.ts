@@ -6,22 +6,22 @@ export const RaceAmericanIndianKlallamCode = {
   /**
    * Klallam
    */
-  Klallam: "1312-8",
+  "1312-8": "1312-8",
 
   /**
    * Jamestown
    */
-  Jamestown: "1313-6",
+  "1313-6": "1313-6",
 
   /**
    * Lower Elwha
    */
-  LowerElwha: "1314-4",
+  "1314-4": "1314-4",
 
   /**
    * Port Gamble Klallam
    */
-  PortGambleKlallam: "1315-1",
+  "1315-1": "1315-1",
 } as const;
 
 /**

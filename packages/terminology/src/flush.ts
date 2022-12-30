@@ -6,7 +6,7 @@ export const FlushCode = {
   /**
    * Flush, intravenous catheter
    */
-  Flushintravenouscatheter: "IVFLUSH",
+  IVFLUSH: "IVFLUSH",
 } as const;
 
 /**

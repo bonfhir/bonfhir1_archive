@@ -6,52 +6,52 @@ export const ProvenanceParticipantTypeCode = {
   /**
    * Enterer
    */
-  Enterer: "enterer",
+  enterer: "enterer",
 
   /**
    * Performer
    */
-  Performer: "performer",
+  performer: "performer",
 
   /**
    * Author
    */
-  Author: "author",
+  author: "author",
 
   /**
    * Verifier
    */
-  Verifier: "verifier",
+  verifier: "verifier",
 
   /**
    * Legal Authenticator
    */
-  LegalAuthenticator: "legal",
+  legal: "legal",
 
   /**
    * Attester
    */
-  Attester: "attester",
+  attester: "attester",
 
   /**
    * Informant
    */
-  Informant: "informant",
+  informant: "informant",
 
   /**
    * Custodian
    */
-  Custodian: "custodian",
+  custodian: "custodian",
 
   /**
    * Assembler
    */
-  Assembler: "assembler",
+  assembler: "assembler",
 
   /**
    * Composer
    */
-  Composer: "composer",
+  composer: "composer",
 } as const;
 
 /**

@@ -8,27 +8,27 @@ export const ActRelationshipDocumentProvenanceCode = {
   /**
    * is appendage
    */
-  isappendage: "APND",
+  APND: "APND",
 
   /**
    * has component
    */
-  hascomponent: "COMP",
+  COMP: "COMP",
 
   /**
    * replaces
    */
-  replaces: "RPLC",
+  RPLC: "RPLC",
 
   /**
    * Excerpts
    */
-  Excerpts: "XCRPT",
+  XCRPT: "XCRPT",
 
   /**
    * transformation
    */
-  transformation: "XFRM",
+  XFRM: "XFRM",
 } as const;
 
 /**

@@ -6,12 +6,12 @@ export const ExtracorporealCirculationRouteCode = {
   /**
    * Diffusion, extracorporeal
    */
-  Diffusionextracorporeal: "EXTCORPDIF",
+  EXTCORPDIF: "EXTCORPDIF",
 
   /**
    * Injection, extracorporeal
    */
-  Injectionextracorporeal: "EXTCORPINJ",
+  EXTCORPINJ: "EXTCORPINJ",
 } as const;
 
 /**

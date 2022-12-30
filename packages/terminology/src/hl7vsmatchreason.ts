@@ -6,22 +6,22 @@ export const Hl7VSMatchReasonCode = {
   /**
    * Match on Date of Birth
    */
-  MatchonDateofBirth: "DB",
+  DB: "DB",
 
   /**
    * Match on Name (Alpha Match)
    */
-  MatchonNameAlphaMatch: "NA",
+  NA: "NA",
 
   /**
    * Match on Name (Phonetic Match)
    */
-  MatchonNamePhoneticMatch: "NP",
+  NP: "NP",
 
   /**
    * Match on Social Security Number
    */
-  MatchonSocialSecurityNumber: "SS",
+  SS: "SS",
 } as const;
 
 /**

@@ -6,42 +6,42 @@ export const Hl7VSLivingDependencyCode = {
   /**
    * Spouse dependent
    */
-  Spousedependent: "D",
+  D: "D",
 
   /**
    * Spouse Dependent
    */
-  SpouseDependent: "S",
+  S: "S",
 
   /**
    * Medical Supervision Required
    */
-  MedicalSupervisionRequired: "M",
+  M: "M",
 
   /**
    * Small Children Dependent
    */
-  SmallChildrenDependent: "C",
+  C: "C",
 
   /**
    * Walk up
    */
-  Walkup: "WU",
+  WU: "WU",
 
   /**
    * Other
    */
-  Other: "O",
+  O: "O",
 
   /**
    * Common Bath
    */
-  CommonBath: "CB",
+  CB: "CB",
 
   /**
    * Unknown
    */
-  Unknown: "U",
+  U: "U",
 } as const;
 
 /**

@@ -6,82 +6,82 @@ export const Hl7VSMessageErrorConditionCodesCode = {
   /**
    * Message accepted
    */
-  Messageaccepted: "0",
+  "0": "0",
 
   /**
    * Segment sequence error
    */
-  Segmentsequenceerror: "100",
+  "100": "100",
 
   /**
    * Required field missing
    */
-  Requiredfieldmissing: "101",
+  "101": "101",
 
   /**
    * Data type error
    */
-  Datatypeerror: "102",
+  "102": "102",
 
   /**
    * Table value not found
    */
-  Tablevaluenotfound: "103",
+  "103": "103",
 
   /**
    * Value too long
    */
-  Valuetoolong: "104",
+  "104": "104",
 
   /**
    * Non-Conformant Cardinality
    */
-  NonConformantCardinality: "198",
+  "198": "198",
 
   /**
    * Other HL7 Error
    */
-  OtherHL7Error: "199",
+  "199": "199",
 
   /**
    * Unsupported message type
    */
-  Unsupportedmessagetype: "200",
+  "200": "200",
 
   /**
    * Unsupported event code
    */
-  Unsupportedeventcode: "201",
+  "201": "201",
 
   /**
    * Unsupported processing id
    */
-  Unsupportedprocessingid: "202",
+  "202": "202",
 
   /**
    * Unsupported version id
    */
-  Unsupportedversionid: "203",
+  "203": "203",
 
   /**
    * Unknown key identifier
    */
-  Unknownkeyidentifier: "204",
+  "204": "204",
 
   /**
    * Duplicate key identifier
    */
-  Duplicatekeyidentifier: "205",
+  "205": "205",
 
   /**
    * Application record locked
    */
-  Applicationrecordlocked: "206",
+  "206": "206",
 
   /**
    * Application error
    */
-  Applicationerror: "207",
+  "207": "207",
 } as const;
 
 /**

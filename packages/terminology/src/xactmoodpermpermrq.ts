@@ -6,12 +6,12 @@ export const XActMoodPermPermrqCode = {
   /**
    * permission
    */
-  permission: "PERM",
+  PERM: "PERM",
 
   /**
    * permission request
    */
-  permissionrequest: "PERMRQ",
+  PERMRQ: "PERMRQ",
 } as const;
 
 /**

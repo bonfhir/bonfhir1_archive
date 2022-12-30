@@ -6,7 +6,7 @@ export const ActRelationshipHasBoundedSupportCode = {
   /**
    * has bounded support
    */
-  hasboundedsupport: "SPRTBND",
+  SPRTBND: "SPRTBND",
 } as const;
 
 /**

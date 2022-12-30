@@ -6,27 +6,27 @@ export const FontStyleCode = {
   /**
    * Font Style
    */
-  FontStyle: "_FontStyle",
+  _FontStyle: "_FontStyle",
 
   /**
    * Bold Font
    */
-  BoldFont: "bold",
+  bold: "bold",
 
   /**
    * Emphasised Font
    */
-  EmphasisedFont: "emphasis",
+  emphasis: "emphasis",
 
   /**
    * Italics Font
    */
-  ItalicsFont: "italics",
+  italics: "italics",
 
   /**
    * Underline Font
    */
-  UnderlineFont: "underline",
+  underline: "underline",
 } as const;
 
 /**

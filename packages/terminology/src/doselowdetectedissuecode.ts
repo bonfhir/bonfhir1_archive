@@ -6,27 +6,27 @@ export const DoseLowDetectedIssueCodeCode = {
   /**
    * Low Dose Alert
    */
-  LowDoseAlert: "DOSEL",
+  DOSEL: "DOSEL",
 
   /**
    * Low Dose for Age Alert
    */
-  LowDoseforAgeAlert: "DOSELINDA",
+  DOSELINDA: "DOSELINDA",
 
   /**
    * Low Dose for Indication Alert
    */
-  LowDoseforIndicationAlert: "DOSELIND",
+  DOSELIND: "DOSELIND",
 
   /**
    * Low Dose for Height/Surface Area Alert
    */
-  LowDoseforHeightSurfaceAreaAlert: "DOSELINDSA",
+  DOSELINDSA: "DOSELINDSA",
 
   /**
    * Low Dose for Weight Alert
    */
-  LowDoseforWeightAlert: "DOSELINDW",
+  DOSELINDW: "DOSELINDW",
 } as const;
 
 /**

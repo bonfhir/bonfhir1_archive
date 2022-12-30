@@ -6,437 +6,437 @@ export const ActInvoiceElementSummaryCodeCode = {
   /**
    * InvoiceElementAdjudicated
    */
-  InvoiceElementAdjudicated: "_InvoiceElementAdjudicated",
+  _InvoiceElementAdjudicated: "_InvoiceElementAdjudicated",
 
   /**
    * adjud. nullified prior-period electronic amount
    */
-  adjudnullifiedpriorperiodelectronicamount: "ADNFPPELAT",
+  ADNFPPELAT: "ADNFPPELAT",
 
   /**
    * adjud. nullified prior-period electronic amount
    */
-  adjudnullifiedpriorperiodelectronicamount: "ADCNPPELAT",
+  ADCNPPELAT: "ADCNPPELAT",
 
   /**
    * adjud. nullified prior-period electronic count
    */
-  adjudnullifiedpriorperiodelectroniccount: "ADNFPPELCT",
+  ADNFPPELCT: "ADNFPPELCT",
 
   /**
    * adjud. nullified prior-period electronic count
    */
-  adjudnullifiedpriorperiodelectroniccount: "ADCNPPELCT",
+  ADCNPPELCT: "ADCNPPELCT",
 
   /**
    * adjud. nullified prior-period manual amount
    */
-  adjudnullifiedpriorperiodmanualamount: "ADNFPPMNAT",
+  ADNFPPMNAT: "ADNFPPMNAT",
 
   /**
    * adjud. nullified prior-period manual amount
    */
-  adjudnullifiedpriorperiodmanualamount: "ADCNPPMNAT",
+  ADCNPPMNAT: "ADCNPPMNAT",
 
   /**
    * adjud. nullified prior-period manual count
    */
-  adjudnullifiedpriorperiodmanualcount: "ADNFPPMNCT",
+  ADNFPPMNCT: "ADNFPPMNCT",
 
   /**
    * adjud. nullified prior-period manual count
    */
-  adjudnullifiedpriorperiodmanualcount: "ADCNPPMNCT",
+  ADCNPPMNCT: "ADCNPPMNCT",
 
   /**
    * adjud. nullified same-period electronic amount
    */
-  adjudnullifiedsameperiodelectronicamount: "ADNFSPELAT",
+  ADNFSPELAT: "ADNFSPELAT",
 
   /**
    * adjud. nullified same-period electronic amount
    */
-  adjudnullifiedsameperiodelectronicamount: "ADCNSPELAT",
+  ADCNSPELAT: "ADCNSPELAT",
 
   /**
    * adjud. nullified same-period electronic count
    */
-  adjudnullifiedsameperiodelectroniccount: "ADNFSPELCT",
+  ADNFSPELCT: "ADNFSPELCT",
 
   /**
    * adjud. nullified same-period electronic count
    */
-  adjudnullifiedsameperiodelectroniccount: "ADCNSPELCT",
+  ADCNSPELCT: "ADCNSPELCT",
 
   /**
    * adjud. nullified same-period manual amount
    */
-  adjudnullifiedsameperiodmanualamount: "ADNFSPMNAT",
+  ADNFSPMNAT: "ADNFSPMNAT",
 
   /**
    * adjud. nullified same-period manual amount
    */
-  adjudnullifiedsameperiodmanualamount: "ADCNSPMNAT",
+  ADCNSPMNAT: "ADCNSPMNAT",
 
   /**
    * adjud. nullified same-period manual count
    */
-  adjudnullifiedsameperiodmanualcount: "ADNFSPMNCT",
+  ADNFSPMNCT: "ADNFSPMNCT",
 
   /**
    * adjud. nullified same-period manual count
    */
-  adjudnullifiedsameperiodmanualcount: "ADCNSPMNCT",
+  ADCNSPMNCT: "ADCNSPMNCT",
 
   /**
    * adjud. non-payee payable prior-period electronic amount
    */
-  adjudnonpayeepayablepriorperiodelectronicamount: "ADNPPPELAT",
+  ADNPPPELAT: "ADNPPPELAT",
 
   /**
    * adjud. non-payee payable prior-period electronic count
    */
-  adjudnonpayeepayablepriorperiodelectroniccount: "ADNPPPELCT",
+  ADNPPPELCT: "ADNPPPELCT",
 
   /**
    * adjud. non-payee payable prior-period manual amount
    */
-  adjudnonpayeepayablepriorperiodmanualamount: "ADNPPPMNAT",
+  ADNPPPMNAT: "ADNPPPMNAT",
 
   /**
    * adjud. non-payee payable prior-period manual count
    */
-  adjudnonpayeepayablepriorperiodmanualcount: "ADNPPPMNCT",
+  ADNPPPMNCT: "ADNPPPMNCT",
 
   /**
    * adjud. non-payee payable same-period electronic amount
    */
-  adjudnonpayeepayablesameperiodelectronicamount: "ADNPSPELAT",
+  ADNPSPELAT: "ADNPSPELAT",
 
   /**
    * adjud. non-payee payable same-period electronic count
    */
-  adjudnonpayeepayablesameperiodelectroniccount: "ADNPSPELCT",
+  ADNPSPELCT: "ADNPSPELCT",
 
   /**
    * adjud. non-payee payable same-period manual amount
    */
-  adjudnonpayeepayablesameperiodmanualamount: "ADNPSPMNAT",
+  ADNPSPMNAT: "ADNPSPMNAT",
 
   /**
    * adjud. non-payee payable same-period manual count
    */
-  adjudnonpayeepayablesameperiodmanualcount: "ADNPSPMNCT",
+  ADNPSPMNCT: "ADNPSPMNCT",
 
   /**
    * adjud. payee payable prior-period electronic amount
    */
-  adjudpayeepayablepriorperiodelectronicamount: "ADPPPPELAT",
+  ADPPPPELAT: "ADPPPPELAT",
 
   /**
    * adjud. payee payable prior-period electronic count
    */
-  adjudpayeepayablepriorperiodelectroniccount: "ADPPPPELCT",
+  ADPPPPELCT: "ADPPPPELCT",
 
   /**
    * adjud. payee payable prior-period manual amout
    */
-  adjudpayeepayablepriorperiodmanualamout: "ADPPPPMNAT",
+  ADPPPPMNAT: "ADPPPPMNAT",
 
   /**
    * adjud. payee payable prior-period manual count
    */
-  adjudpayeepayablepriorperiodmanualcount: "ADPPPPMNCT",
+  ADPPPPMNCT: "ADPPPPMNCT",
 
   /**
    * adjud. payee payable same-period electronic amount
    */
-  adjudpayeepayablesameperiodelectronicamount: "ADPPSPELAT",
+  ADPPSPELAT: "ADPPSPELAT",
 
   /**
    * adjud. payee payable same-period electronic count
    */
-  adjudpayeepayablesameperiodelectroniccount: "ADPPSPELCT",
+  ADPPSPELCT: "ADPPSPELCT",
 
   /**
    * adjud. payee payable same-period manual amount
    */
-  adjudpayeepayablesameperiodmanualamount: "ADPPSPMNAT",
+  ADPPSPMNAT: "ADPPSPMNAT",
 
   /**
    * adjud. payee payable same-period manual count
    */
-  adjudpayeepayablesameperiodmanualcount: "ADPPSPMNCT",
+  ADPPSPMNCT: "ADPPSPMNCT",
 
   /**
    * adjud. refused prior-period electronic amount
    */
-  adjudrefusedpriorperiodelectronicamount: "ADRFPPELAT",
+  ADRFPPELAT: "ADRFPPELAT",
 
   /**
    * adjud. refused prior-period electronic count
    */
-  adjudrefusedpriorperiodelectroniccount: "ADRFPPELCT",
+  ADRFPPELCT: "ADRFPPELCT",
 
   /**
    * adjud. refused prior-period manual amount
    */
-  adjudrefusedpriorperiodmanualamount: "ADRFPPMNAT",
+  ADRFPPMNAT: "ADRFPPMNAT",
 
   /**
    * adjud. refused prior-period manual count
    */
-  adjudrefusedpriorperiodmanualcount: "ADRFPPMNCT",
+  ADRFPPMNCT: "ADRFPPMNCT",
 
   /**
    * adjud. refused same-period electronic amount
    */
-  adjudrefusedsameperiodelectronicamount: "ADRFSPELAT",
+  ADRFSPELAT: "ADRFSPELAT",
 
   /**
    * adjud. refused same-period electronic count
    */
-  adjudrefusedsameperiodelectroniccount: "ADRFSPELCT",
+  ADRFSPELCT: "ADRFSPELCT",
 
   /**
    * adjud. refused same-period manual amount
    */
-  adjudrefusedsameperiodmanualamount: "ADRFSPMNAT",
+  ADRFSPMNAT: "ADRFSPMNAT",
 
   /**
    * adjud. refused same-period manual count
    */
-  adjudrefusedsameperiodmanualcount: "ADRFSPMNCT",
+  ADRFSPMNCT: "ADRFSPMNCT",
 
   /**
    * InvoiceElementPaid
    */
-  InvoiceElementPaid: "_InvoiceElementPaid",
+  _InvoiceElementPaid: "_InvoiceElementPaid",
 
   /**
    * paid nullified prior-period electronic amount
    */
-  paidnullifiedpriorperiodelectronicamount: "PDNFPPELAT",
+  PDNFPPELAT: "PDNFPPELAT",
 
   /**
    * paid nullified prior-period electronic amount
    */
-  paidnullifiedpriorperiodelectronicamount: "PDCNPPELAT",
+  PDCNPPELAT: "PDCNPPELAT",
 
   /**
    * paid nullified prior-period electronic count
    */
-  paidnullifiedpriorperiodelectroniccount: "PDNFPPELCT",
+  PDNFPPELCT: "PDNFPPELCT",
 
   /**
    * paid nullified prior-period electronic count
    */
-  paidnullifiedpriorperiodelectroniccount: "PDCNPPELCT",
+  PDCNPPELCT: "PDCNPPELCT",
 
   /**
    * paid nullified prior-period manual amount
    */
-  paidnullifiedpriorperiodmanualamount: "PDNFPPMNAT",
+  PDNFPPMNAT: "PDNFPPMNAT",
 
   /**
    * paid nullified prior-period manual amount
    */
-  paidnullifiedpriorperiodmanualamount: "PDCNPPMNAT",
+  PDCNPPMNAT: "PDCNPPMNAT",
 
   /**
    * paid nullified prior-period manual count
    */
-  paidnullifiedpriorperiodmanualcount: "PDNFPPMNCT",
+  PDNFPPMNCT: "PDNFPPMNCT",
 
   /**
    * paid nullified prior-period manual count
    */
-  paidnullifiedpriorperiodmanualcount: "PDCNPPMNCT",
+  PDCNPPMNCT: "PDCNPPMNCT",
 
   /**
    * paid nullified same-period electronic amount
    */
-  paidnullifiedsameperiodelectronicamount: "PDNFSPELAT",
+  PDNFSPELAT: "PDNFSPELAT",
 
   /**
    * paid nullified same-period electronic amount
    */
-  paidnullifiedsameperiodelectronicamount: "PDCNSPELAT",
+  PDCNSPELAT: "PDCNSPELAT",
 
   /**
    * paid nullified same-period electronic count
    */
-  paidnullifiedsameperiodelectroniccount: "PDNFSPELCT",
+  PDNFSPELCT: "PDNFSPELCT",
 
   /**
    * paid nullified same-period electronic count
    */
-  paidnullifiedsameperiodelectroniccount: "PDCNSPELCT",
+  PDCNSPELCT: "PDCNSPELCT",
 
   /**
    * paid nullified same-period manual amount
    */
-  paidnullifiedsameperiodmanualamount: "PDNFSPMNAT",
+  PDNFSPMNAT: "PDNFSPMNAT",
 
   /**
    * paid nullified same-period manual amount
    */
-  paidnullifiedsameperiodmanualamount: "PDCNSPMNAT",
+  PDCNSPMNAT: "PDCNSPMNAT",
 
   /**
    * paid nullified same-period manual count
    */
-  paidnullifiedsameperiodmanualcount: "PDNFSPMNCT",
+  PDNFSPMNCT: "PDNFSPMNCT",
 
   /**
    * paid nullified same-period manual count
    */
-  paidnullifiedsameperiodmanualcount: "PDCNSPMNCT",
+  PDCNSPMNCT: "PDCNSPMNCT",
 
   /**
    * paid non-payee payable prior-period electronic amount
    */
-  paidnonpayeepayablepriorperiodelectronicamount: "PDNPPPELAT",
+  PDNPPPELAT: "PDNPPPELAT",
 
   /**
    * paid non-payee payable prior-period electronic count
    */
-  paidnonpayeepayablepriorperiodelectroniccount: "PDNPPPELCT",
+  PDNPPPELCT: "PDNPPPELCT",
 
   /**
    * paid non-payee payable prior-period manual amount
    */
-  paidnonpayeepayablepriorperiodmanualamount: "PDNPPPMNAT",
+  PDNPPPMNAT: "PDNPPPMNAT",
 
   /**
    * paid non-payee payable prior-period manual count
    */
-  paidnonpayeepayablepriorperiodmanualcount: "PDNPPPMNCT",
+  PDNPPPMNCT: "PDNPPPMNCT",
 
   /**
    * paid non-payee payable same-period electronic amount
    */
-  paidnonpayeepayablesameperiodelectronicamount: "PDNPSPELAT",
+  PDNPSPELAT: "PDNPSPELAT",
 
   /**
    * paid non-payee payable same-period electronic count
    */
-  paidnonpayeepayablesameperiodelectroniccount: "PDNPSPELCT",
+  PDNPSPELCT: "PDNPSPELCT",
 
   /**
    * paid non-payee payable same-period manual amount
    */
-  paidnonpayeepayablesameperiodmanualamount: "PDNPSPMNAT",
+  PDNPSPMNAT: "PDNPSPMNAT",
 
   /**
    * paid non-payee payable same-period manual count
    */
-  paidnonpayeepayablesameperiodmanualcount: "PDNPSPMNCT",
+  PDNPSPMNCT: "PDNPSPMNCT",
 
   /**
    * paid payee payable prior-period electronic amount
    */
-  paidpayeepayablepriorperiodelectronicamount: "PDPPPPELAT",
+  PDPPPPELAT: "PDPPPPELAT",
 
   /**
    * paid payee payable prior-period electronic count
    */
-  paidpayeepayablepriorperiodelectroniccount: "PDPPPPELCT",
+  PDPPPPELCT: "PDPPPPELCT",
 
   /**
    * paid payee payable prior-period manual amount
    */
-  paidpayeepayablepriorperiodmanualamount: "PDPPPPMNAT",
+  PDPPPPMNAT: "PDPPPPMNAT",
 
   /**
    * paid payee payable prior-period manual count
    */
-  paidpayeepayablepriorperiodmanualcount: "PDPPPPMNCT",
+  PDPPPPMNCT: "PDPPPPMNCT",
 
   /**
    * paid payee payable same-period electronic amount
    */
-  paidpayeepayablesameperiodelectronicamount: "PDPPSPELAT",
+  PDPPSPELAT: "PDPPSPELAT",
 
   /**
    * paid payee payable same-period electronic count
    */
-  paidpayeepayablesameperiodelectroniccount: "PDPPSPELCT",
+  PDPPSPELCT: "PDPPSPELCT",
 
   /**
    * paid payee payable same-period manual amount
    */
-  paidpayeepayablesameperiodmanualamount: "PDPPSPMNAT",
+  PDPPSPMNAT: "PDPPSPMNAT",
 
   /**
    * paid payee payable same-period manual count
    */
-  paidpayeepayablesameperiodmanualcount: "PDPPSPMNCT",
+  PDPPSPMNCT: "PDPPSPMNCT",
 
   /**
    * InvoiceElementSubmitted
    */
-  InvoiceElementSubmitted: "_InvoiceElementSubmitted",
+  _InvoiceElementSubmitted: "_InvoiceElementSubmitted",
 
   /**
    * submitted billed electronic amount
    */
-  submittedbilledelectronicamount: "SBBLELAT",
+  SBBLELAT: "SBBLELAT",
 
   /**
    * submitted billed electronic amount
    */
-  submittedbilledelectronicamount: "SBBLAT",
+  SBBLAT: "SBBLAT",
 
   /**
    * submitted billed electronic count
    */
-  submittedbilledelectroniccount: "SBBLELCT",
+  SBBLELCT: "SBBLELCT",
 
   /**
    * submitted billed electronic count
    */
-  submittedbilledelectroniccount: "SBBLCT",
+  SBBLCT: "SBBLCT",
 
   /**
    * submitted nullified electronic amount
    */
-  submittednullifiedelectronicamount: "SBNFELAT",
+  SBNFELAT: "SBNFELAT",
 
   /**
    * submitted nullified electronic amount
    */
-  submittednullifiedelectronicamount: "SBCNAT",
+  SBCNAT: "SBCNAT",
 
   /**
    * submitted cancelled electronic count
    */
-  submittedcancelledelectroniccount: "SBNFELCT",
+  SBNFELCT: "SBNFELCT",
 
   /**
    * submitted cancelled electronic count
    */
-  submittedcancelledelectroniccount: "SBCNCT",
+  SBCNCT: "SBCNCT",
 
   /**
    * submitted pending electronic amount
    */
-  submittedpendingelectronicamount: "SBPDELAT",
+  SBPDELAT: "SBPDELAT",
 
   /**
    * submitted pending electronic amount
    */
-  submittedpendingelectronicamount: "SBPDAT",
+  SBPDAT: "SBPDAT",
 
   /**
    * submitted pending electronic count
    */
-  submittedpendingelectroniccount: "SBPDELCT",
+  SBPDELCT: "SBPDELCT",
 
   /**
    * submitted pending electronic count
    */
-  submittedpendingelectroniccount: "SBPDCT",
+  SBPDCT: "SBPDCT",
 } as const;
 
 /**

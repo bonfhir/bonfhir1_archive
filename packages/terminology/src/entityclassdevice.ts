@@ -8,17 +8,17 @@ export const EntityClassDeviceCode = {
   /**
    * device
    */
-  device: "DEV",
+  DEV: "DEV",
 
   /**
    * certificate representation
    */
-  certificaterepresentation: "CER",
+  CER: "CER",
 
   /**
    * imaging modality
    */
-  imagingmodality: "MODDV",
+  MODDV: "MODDV",
 } as const;
 
 /**

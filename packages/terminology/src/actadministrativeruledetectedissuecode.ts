@@ -6,28 +6,28 @@ export const ActAdministrativeRuleDetectedIssueCodeCode = {
   /**
    * ActAdministrativeRuleDetectedIssueCode
    */
-  ActAdministrativeRuleDetectedIssueCode:
+  _ActAdministrativeRuleDetectedIssueCode:
     "_ActAdministrativeRuleDetectedIssueCode",
 
   /**
    * Unknown key identifier
    */
-  Unknownkeyidentifier: "KEY204",
+  KEY204: "KEY204",
 
   /**
    * Duplicate key identifier
    */
-  Duplicatekeyidentifier: "KEY205",
+  KEY205: "KEY205",
 
   /**
    * non-matching identification
    */
-  nonmatchingidentification: "KEY206",
+  KEY206: "KEY206",
 
   /**
    * obsolete record returned
    */
-  obsoleterecordreturned: "OBSOLETE",
+  OBSOLETE: "OBSOLETE",
 } as const;
 
 /**

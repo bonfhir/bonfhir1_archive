@@ -10,52 +10,52 @@ export const CompartmentCode = {
   /**
    * compartment
    */
-  compartment: "COMPT",
+  COMPT: "COMPT",
 
   /**
    * accountable care organization compartment
    */
-  accountablecareorganizationcompartment: "ACOCOMPT",
+  ACOCOMPT: "ACOCOMPT",
 
   /**
    * CDS system compartment
    */
-  CDSsystemcompartment: "CDSSCOMPT",
+  CDSSCOMPT: "CDSSCOMPT",
 
   /**
    * care team compartment
    */
-  careteamcompartment: "CTCOMPT",
+  CTCOMPT: "CTCOMPT",
 
   /**
    * financial management compartment
    */
-  financialmanagementcompartment: "FMCOMPT",
+  FMCOMPT: "FMCOMPT",
 
   /**
    * human resource compartment
    */
-  humanresourcecompartment: "HRCOMPT",
+  HRCOMPT: "HRCOMPT",
 
   /**
    * legitimate relationship compartment
    */
-  legitimaterelationshipcompartment: "LRCOMPT",
+  LRCOMPT: "LRCOMPT",
 
   /**
    * patient administration compartment
    */
-  patientadministrationcompartment: "PACOMPT",
+  PACOMPT: "PACOMPT",
 
   /**
    * research project compartment
    */
-  researchprojectcompartment: "RESCOMPT",
+  RESCOMPT: "RESCOMPT",
 
   /**
    * records management compartment
    */
-  recordsmanagementcompartment: "RMGTCOMPT",
+  RMGTCOMPT: "RMGTCOMPT",
 } as const;
 
 /**

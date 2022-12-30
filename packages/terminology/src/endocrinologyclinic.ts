@@ -6,12 +6,12 @@ export const EndocrinologyClinicCode = {
   /**
    * Endocrinology clinic
    */
-  Endocrinologyclinic: "ENDO",
+  ENDO: "ENDO",
 
   /**
    * Pediatric endocrinology clinic
    */
-  Pediatricendocrinologyclinic: "PEDE",
+  PEDE: "PEDE",
 } as const;
 
 /**

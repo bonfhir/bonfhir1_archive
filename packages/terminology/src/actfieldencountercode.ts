@@ -6,7 +6,7 @@ export const ActFieldEncounterCodeCode = {
   /**
    * field
    */
-  field: "FLD",
+  FLD: "FLD",
 } as const;
 
 /**

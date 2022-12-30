@@ -6,7 +6,7 @@ export const Validation_processCode = {
   /**
    * edit check
    */
-  editcheck: "edit-check",
+  "edit-check": "edit-check",
 
   /**
    * value set
@@ -16,12 +16,12 @@ export const Validation_processCode = {
   /**
    * primary source
    */
-  primarysource: "primary",
+  primary: "primary",
 
   /**
    * multiple sources
    */
-  multiplesources: "multi",
+  multi: "multi",
 
   /**
    * standalone
@@ -31,7 +31,7 @@ export const Validation_processCode = {
   /**
    * in context
    */
-  incontext: "in-context",
+  "in-context": "in-context",
 } as const;
 
 /**

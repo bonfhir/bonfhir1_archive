@@ -6,12 +6,12 @@ export const ContractTermTypeCodesCode = {
   /**
    * Statutory
    */
-  Statutory: "statutory",
+  statutory: "statutory",
 
   /**
    * Subject To
    */
-  SubjectTo: "subject-to",
+  "subject-to": "subject-to",
 } as const;
 
 /**

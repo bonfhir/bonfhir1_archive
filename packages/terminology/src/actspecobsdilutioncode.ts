@@ -6,27 +6,27 @@ export const ActSpecObsDilutionCodeCode = {
   /**
    * ActSpecObsDilutionCode
    */
-  ActSpecObsDilutionCode: "DILUTION",
+  DILUTION: "DILUTION",
 
   /**
    * Auto-High Dilution
    */
-  AutoHighDilution: "AUTO-HIGH",
+  "AUTO-HIGH": "AUTO-HIGH",
 
   /**
    * Auto-Low Dilution
    */
-  AutoLowDilution: "AUTO-LOW",
+  "AUTO-LOW": "AUTO-LOW",
 
   /**
    * Pre-Dilution
    */
-  PreDilution: "PRE",
+  PRE: "PRE",
 
   /**
    * Rerun Dilution
    */
-  RerunDilution: "RERUN",
+  RERUN: "RERUN",
 } as const;
 
 /**

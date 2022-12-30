@@ -6,127 +6,127 @@ export const HospitalUnitPracticeSettingCode = {
   /**
    * Hospital unit
    */
-  Hospitalunit: "HU",
+  HU: "HU",
 
   /**
    * Bone marrow transplant unit
    */
-  Bonemarrowtransplantunit: "BMTU",
+  BMTU: "BMTU",
 
   /**
    * Coronary care unit
    */
-  Coronarycareunit: "CCU",
+  CCU: "CCU",
 
   /**
    * Chest unit
    */
-  Chestunit: "CHEST",
+  CHEST: "CHEST",
 
   /**
    * Epilepsy unit
    */
-  Epilepsyunit: "EPIL",
+  EPIL: "EPIL",
 
   /**
    * Emergency room
    */
-  Emergencyroom: "ER",
+  ER: "ER",
 
   /**
    * Emergency trauma unit
    */
-  Emergencytraumaunit: "ETU",
+  ETU: "ETU",
 
   /**
    * Hemodialysis unit
    */
-  Hemodialysisunit: "HD",
+  HD: "HD",
 
   /**
    * hospital laboratory
    */
-  hospitallaboratory: "HLAB",
+  HLAB: "HLAB",
 
   /**
    * inpatient laboratory
    */
-  inpatientlaboratory: "INLAB",
+  INLAB: "INLAB",
 
   /**
    * outpatient laboratory
    */
-  outpatientlaboratory: "OUTLAB",
+  OUTLAB: "OUTLAB",
 
   /**
    * radiology unit
    */
-  radiologyunit: "HRAD",
+  HRAD: "HRAD",
 
   /**
    * specimen collection site
    */
-  specimencollectionsite: "HUSCS",
+  HUSCS: "HUSCS",
 
   /**
    * Intensive care unit
    */
-  Intensivecareunit: "ICU",
+  ICU: "ICU",
 
   /**
    * Pediatric intensive care unit
    */
-  Pediatricintensivecareunit: "PEDICU",
+  PEDICU: "PEDICU",
 
   /**
    * Pediatric neonatal intensive care unit
    */
-  Pediatricneonatalintensivecareunit: "PEDNICU",
+  PEDNICU: "PEDNICU",
 
   /**
    * inpatient pharmacy
    */
-  inpatientpharmacy: "INPHARM",
+  INPHARM: "INPHARM",
 
   /**
    * medical laboratory
    */
-  medicallaboratory: "MBL",
+  MBL: "MBL",
 
   /**
    * Neurology critical care and stroke unit
    */
-  Neurologycriticalcareandstrokeunit: "NCCS",
+  NCCS: "NCCS",
 
   /**
    * Neurosurgery unit
    */
-  Neurosurgeryunit: "NS",
+  NS: "NS",
 
   /**
    * outpatient pharmacy
    */
-  outpatientpharmacy: "OUTPHARM",
+  OUTPHARM: "OUTPHARM",
 
   /**
    * Pediatric unit
    */
-  Pediatricunit: "PEDU",
+  PEDU: "PEDU",
 
   /**
    * Psychiatric hospital unit
    */
-  Psychiatrichospitalunit: "PHU",
+  PHU: "PHU",
 
   /**
    * Rehabilitation hospital unit
    */
-  Rehabilitationhospitalunit: "RHU",
+  RHU: "RHU",
 
   /**
    * Sleep disorders unit
    */
-  Sleepdisordersunit: "SLEEP",
+  SLEEP: "SLEEP",
 } as const;
 
 /**

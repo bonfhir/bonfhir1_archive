@@ -6,42 +6,42 @@ export const PatientProfileQueryReasonCodeCode = {
   /**
    * administrative review
    */
-  administrativereview: "ADMREV",
+  ADMREV: "ADMREV",
 
   /**
    * subpoena
    */
-  subpoena: "LEGAL",
+  LEGAL: "LEGAL",
 
   /**
    * patient care
    */
-  patientcare: "PATCAR",
+  PATCAR: "PATCAR",
 
   /**
    * patient request query
    */
-  patientrequestquery: "PATREQ",
+  PATREQ: "PATREQ",
 
   /**
    * practice review
    */
-  practicereview: "PRCREV",
+  PRCREV: "PRCREV",
 
   /**
    * regulatory review
    */
-  regulatoryreview: "REGUL",
+  REGUL: "REGUL",
 
   /**
    * research
    */
-  research: "RSRCH",
+  RSRCH: "RSRCH",
 
   /**
    * validation review
    */
-  validationreview: "VALIDATION",
+  VALIDATION: "VALIDATION",
 } as const;
 
 /**

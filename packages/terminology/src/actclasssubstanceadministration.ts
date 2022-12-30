@@ -10,7 +10,7 @@ export const ActClassSubstanceAdministrationCode = {
   /**
    * substance administration
    */
-  substanceadministration: "SBADM",
+  SBADM: "SBADM",
 } as const;
 
 /**

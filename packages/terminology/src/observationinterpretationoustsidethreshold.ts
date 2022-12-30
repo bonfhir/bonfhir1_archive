@@ -10,17 +10,17 @@ export const ObservationInterpretationOustsideThresholdCode = {
   /**
    * outside threshold
    */
-  outsidethreshold: "EX",
+  EX: "EX",
 
   /**
    * above high threshold
    */
-  abovehighthreshold: "HX",
+  HX: "HX",
 
   /**
    * below low threshold
    */
-  belowlowthreshold: "LX",
+  LX: "LX",
 } as const;
 
 /**

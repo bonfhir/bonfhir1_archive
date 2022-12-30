@@ -6,37 +6,37 @@ export const SubscriberCoveredPartyRoleTypeCode = {
   /**
    * SubscriberCoveredPartyRoleType
    */
-  SubscriberCoveredPartyRoleType: "_SubscriberCoveredPartyRoleType",
+  _SubscriberCoveredPartyRoleType: "_SubscriberCoveredPartyRoleType",
 
   /**
    * continuity of coverage beneficiary
    */
-  continuityofcoveragebeneficiary: "COCBEN",
+  COCBEN: "COCBEN",
 
   /**
    * retiree
    */
-  retiree: "RETIREE",
+  RETIREE: "RETIREE",
 
   /**
    * military
    */
-  military: "MIL",
+  MIL: "MIL",
 
   /**
    * active duty military
    */
-  activedutymilitary: "ACTMIL",
+  ACTMIL: "ACTMIL",
 
   /**
    * retired military
    */
-  retiredmilitary: "RETMIL",
+  RETMIL: "RETMIL",
 
   /**
    * veteran
    */
-  veteran: "VET",
+  VET: "VET",
 } as const;
 
 /**

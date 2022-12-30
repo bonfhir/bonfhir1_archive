@@ -6,127 +6,127 @@ export const Hl7VSAdditivePreservativeCode = {
   /**
    * 10% Formalin
    */
-  TenFormalin: "F10",
+  F10: "F10",
 
   /**
    * 3.2%  Citrate
    */
-  ThirtyTwoCitrate: "C32",
+  C32: "C32",
 
   /**
    * 3.8% Citrate
    */
-  ThirtyEightCitrate: "C38",
+  C38: "C38",
 
   /**
    * 6N HCL
    */
-  SixNHCL: "HCL6",
+  HCL6: "HCL6",
 
   /**
    * ACD Solution A
    */
-  ACDSolutionA: "ACDA",
+  ACDA: "ACDA",
 
   /**
    * ACD Solution B
    */
-  ACDSolutionB: "ACDB",
+  ACDB: "ACDB",
 
   /**
    * Acetic Acid
    */
-  AceticAcid: "ACET",
+  ACET: "ACET",
 
   /**
    * Amies transport medium
    */
-  Amiestransportmedium: "AMIES",
+  AMIES: "AMIES",
 
   /**
    * Ammonium heparin
    */
-  Ammoniumheparin: "HEPA",
+  HEPA: "HEPA",
 
   /**
    * Bacterial Transport medium
    */
-  BacterialTransportmedium: "BACTM",
+  BACTM: "BACTM",
 
   /**
    * Borate Boric Acid
    */
-  BorateBoricAcid: "BOR",
+  BOR: "BOR",
 
   /**
    * Bouin's solution
    */
-  Bouinssolution: "BOUIN",
+  BOUIN: "BOUIN",
 
   /**
    * Buffered 10% formalin
    */
-  Buffered10formalin: "BF10",
+  BF10: "BF10",
 
   /**
    * Buffered Citrate (Westergren Sedimentation Rate)
    */
-  BufferedCitrateWestergrenSedimentationRate: "WEST",
+  WEST: "WEST",
 
   /**
    * Buffered skim milk
    */
-  Bufferedskimmilk: "BSKM",
+  BSKM: "BSKM",
 
   /**
    * Carson's Modified 10% formalin
    */
-  CarsonsModified10formalin: "CARS",
+  CARS: "CARS",
 
   /**
    * Cary Blair Medium
    */
-  CaryBlairMedium: "CARY",
+  CARY: "CARY",
 
   /**
    * Chlamydia transport medium
    */
-  Chlamydiatransportmedium: "CHLTM",
+  CHLTM: "CHLTM",
 
   /**
    * CTAD (this should be spelled out if not universally understood)
    */
-  CTADthisshouldbespelledoutifnotuniversallyunderstood: "CTAD",
+  CTAD: "CTAD",
 
   /**
    * Enteric bacteria transport medium
    */
-  Entericbacteriatransportmedium: "ENT",
+  ENT: "ENT",
 
   /**
    * Enteric plus
    */
-  Entericplus: "ENT+",
+  "ENT+": "ENT+",
 
   /**
    * Jones Kendrick Medium
    */
-  JonesKendrickMedium: "JKM",
+  JKM: "JKM",
 
   /**
    * Karnovsky's fixative
    */
-  Karnovskysfixative: "KARN",
+  KARN: "KARN",
 
   /**
    * Lithium iodoacetate
    */
-  Lithiumiodoacetate: "LIA",
+  LIA: "LIA",
 
   /**
    * Lithium/Li  Heparin
    */
-  LithiumLiHeparin: "HEPL",
+  HEPL: "HEPL",
 
   /**
    * M4
@@ -146,147 +146,147 @@ export const Hl7VSAdditivePreservativeCode = {
   /**
    * Michel's transport medium
    */
-  Michelstransportmedium: "MICHTM",
+  MICHTM: "MICHTM",
 
   /**
    * MMD transport medium
    */
-  MMDtransportmedium: "MMDTM",
+  MMDTM: "MMDTM",
 
   /**
    * Nitric Acid
    */
-  NitricAcid: "HNO3",
+  HNO3: "HNO3",
 
   /**
    * None
    */
-  None: "NONE",
+  NONE: "NONE",
 
   /**
    * Pages's Saline
    */
-  PagessSaline: "PAGE",
+  PAGE: "PAGE",
 
   /**
    * Phenol
    */
-  Phenol: "PHENOL",
+  PHENOL: "PHENOL",
 
   /**
    * Potassium Oxalate
    */
-  PotassiumOxalate: "KOX",
+  KOX: "KOX",
 
   /**
    * Potassium/K EDTA
    */
-  PotassiumKEDTA: "EDTK",
+  EDTK: "EDTK",
 
   /**
    * Potassium/K EDTA 15%
    */
-  PotassiumKEDTA15: "EDTK15",
+  EDTK15: "EDTK15",
 
   /**
    * Potassium/K EDTA 7.5%
    */
-  PotassiumKEDTA75: "EDTK75",
+  EDTK75: "EDTK75",
 
   /**
    * PVA (polyvinylalcohol)
    */
-  PVApolyvinylalcohol: "PVA",
+  PVA: "PVA",
 
   /**
    * Reagan Lowe Medium
    */
-  ReaganLoweMedium: "RLM",
+  RLM: "RLM",
 
   /**
    * Serum Separator Tube (Polymer Gel)
    */
-  SerumSeparatorTubePolymerGel: "SST",
+  SST: "SST",
 
   /**
    * Siliceous earth, 12 mg
    */
-  Siliceousearth12mg: "SILICA",
+  SILICA: "SILICA",
 
   /**
    * Sodium Fluoride
    */
-  SodiumFluoride: "NAF",
+  NAF: "NAF",
 
   /**
    * Sodium Fluoride, 100mg
    */
-  SodiumFluoride100mg: "FL100",
+  FL100: "FL100",
 
   /**
    * Sodium Fluoride, 10mg
    */
-  SodiumFluoride10mg: "FL10",
+  FL10: "FL10",
 
   /**
    * Sodium polyanethol sulfonate 0.35% in 0.85% sodium chloride
    */
-  Sodiumpolyanetholsulfonate035in085sodiumchloride: "NAPS",
+  NAPS: "NAPS",
 
   /**
    * Sodium/Na  Heparin
    */
-  SodiumNaHeparin: "HEPN",
+  HEPN: "HEPN",
 
   /**
    * Sodium/Na EDTA
    */
-  SodiumNaEDTA: "EDTN",
+  EDTN: "EDTN",
 
   /**
    * SPS(this should be spelled out if not universally understood)
    */
-  SPSthisshouldbespelledoutifnotuniversallyunderstood: "SPS",
+  SPS: "SPS",
 
   /**
    * Stuart transport medium
    */
-  Stuarttransportmedium: "STUTM",
+  STUTM: "STUTM",
 
   /**
    * Thrombin
    */
-  Thrombin: "THROM",
+  THROM: "THROM",
 
   /**
    * Thrombin NIH; soybean trypsin inhibitor (Fibrin Degradation Products)
    */
-  ThrombinNIHsoybeantrypsininhibitorFibrinDegradationProducts: "FDP",
+  FDP: "FDP",
 
   /**
    * Thymol
    */
-  Thymol: "THYMOL",
+  THYMOL: "THYMOL",
 
   /**
    * Thyoglycollate broth
    */
-  Thyoglycollatebroth: "THYO",
+  THYO: "THYO",
 
   /**
    * Toluene
    */
-  Toluene: "TOLU",
+  TOLU: "TOLU",
 
   /**
    * Ureaplasma transport medium
    */
-  Ureaplasmatransportmedium: "URETM",
+  URETM: "URETM",
 
   /**
    * Viral Transport medium
    */
-  ViralTransportmedium: "VIRTM",
+  VIRTM: "VIRTM",
 } as const;
 
 /**

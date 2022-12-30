@@ -6,12 +6,12 @@ export const AdjudicationReasonCodesCode = {
   /**
    * Not covered
    */
-  Notcovered: "ar001",
+  ar001: "ar001",
 
   /**
    * Plan Limit Reached
    */
-  PlanLimitReached: "ar002",
+  ar002: "ar002",
 } as const;
 
 /**

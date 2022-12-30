@@ -6,17 +6,17 @@ export const HomelessCode = {
   /**
    * homeless
    */
-  homeless: "HL",
+  HL: "HL",
 
   /**
    * Nomadic
    */
-  Nomadic: "M",
+  M: "M",
 
   /**
    * Transient
    */
-  Transient: "T",
+  T: "T",
 } as const;
 
 /**

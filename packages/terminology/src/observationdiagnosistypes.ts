@@ -6,22 +6,22 @@ export const ObservationDiagnosisTypesCode = {
   /**
    * admitting diagnosis
    */
-  admittingdiagnosis: "ADMDX",
+  ADMDX: "ADMDX",
 
   /**
    * discharge diagnosis
    */
-  dischargediagnosis: "DISDX",
+  DISDX: "DISDX",
 
   /**
    * intermediate diagnosis
    */
-  intermediatediagnosis: "INTDX",
+  INTDX: "INTDX",
 
   /**
    * nature of injury
    */
-  natureofinjury: "NOI",
+  NOI: "NOI",
 } as const;
 
 /**

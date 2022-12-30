@@ -6,7 +6,7 @@ export const RoleClassAdjuvantCode = {
   /**
    * adjuvant
    */
-  adjuvant: "ADJV",
+  ADJV: "ADJV",
 } as const;
 
 /**

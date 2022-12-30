@@ -6,12 +6,12 @@ export const MeasureDataUsageCode = {
   /**
    * Supplemental Data
    */
-  SupplementalData: "supplemental-data",
+  "supplemental-data": "supplemental-data",
 
   /**
    * Risk Adjustment Factor
    */
-  RiskAdjustmentFactor: "risk-adjustment-factor",
+  "risk-adjustment-factor": "risk-adjustment-factor",
 } as const;
 
 /**

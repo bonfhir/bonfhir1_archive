@@ -10,98 +10,97 @@ export const RefrainPolicyCode = {
   /**
    * refrain policy
    */
-  refrainpolicy: "RefrainPolicy",
+  RefrainPolicy: "RefrainPolicy",
 
   /**
    * no disclosure without subject authorization
    */
-  nodisclosurewithoutsubjectauthorization: "NOAUTH",
+  NOAUTH: "NOAUTH",
 
   /**
    * no collection
    */
-  nocollection: "NOCOLLECT",
+  NOCOLLECT: "NOCOLLECT",
 
   /**
    * no disclosure without consent directive
    */
-  nodisclosurewithoutconsentdirective: "NODSCLCD",
+  NODSCLCD: "NODSCLCD",
 
   /**
    * no disclosure without information subject's consent directive
    */
-  nodisclosurewithoutinformationsubjectsconsentdirective: "NODSCLCDS",
+  NODSCLCDS: "NODSCLCDS",
 
   /**
    * no integration
    */
-  nointegration: "NOINTEGRATE",
+  NOINTEGRATE: "NOINTEGRATE",
 
   /**
    * no unlisted entity disclosure
    */
-  nounlistedentitydisclosure: "NOLIST",
+  NOLIST: "NOLIST",
 
   /**
    * no disclosure without MOU
    */
-  nodisclosurewithoutMOU: "NOMOU",
+  NOMOU: "NOMOU",
 
   /**
    * no disclosure without organizational authorization
    */
-  nodisclosurewithoutorganizationalauthorization: "NOORGPOL",
+  NOORGPOL: "NOORGPOL",
 
   /**
    * no disclosure to patient, family or caregivers without attending provider's authorization
    */
-  nodisclosuretopatientfamilyorcaregiverswithoutattendingprovidersauthorization:
-    "NOPAT",
+  NOPAT: "NOPAT",
 
   /**
    * no collection beyond purpose of use
    */
-  nocollectionbeyondpurposeofuse: "NOPERSISTP",
+  NOPERSISTP: "NOPERSISTP",
 
   /**
    * no redisclosure without consent directive
    */
-  noredisclosurewithoutconsentdirective: "NORDSCLCD",
+  NORDSCLCD: "NORDSCLCD",
 
   /**
    * no redisclosure without consent directive
    */
-  noredisclosurewithoutconsentdirective: "NORDSLCD",
+  NORDSLCD: "NORDSLCD",
 
   /**
    * no redisclosure without information subject's consent directive
    */
-  noredisclosurewithoutinformationsubjectsconsentdirective: "NORDSCLCDS",
+  NORDSCLCDS: "NORDSCLCDS",
 
   /**
    * no disclosure without jurisdictional authorization
    */
-  nodisclosurewithoutjurisdictionalauthorization: "NORDSCLW",
+  NORDSCLW: "NORDSCLW",
 
   /**
    * no relinking
    */
-  norelinking: "NORELINK",
+  NORELINK: "NORELINK",
 
   /**
    * no reuse beyond purpose of use
    */
-  noreusebeyondpurposeofuse: "NOREUSE",
+  NOREUSE: "NOREUSE",
 
   /**
    * no unauthorized VIP disclosure
    */
-  nounauthorizedVIPdisclosure: "NOVIP",
+  NOVIP: "NOVIP",
 
   /**
    * no disclosure without originator authorization
    */
-  nodisclosurewithoutoriginatorauthorization: "ORCON",
+  ORCON: "ORCON",
 } as const;
 
 /**

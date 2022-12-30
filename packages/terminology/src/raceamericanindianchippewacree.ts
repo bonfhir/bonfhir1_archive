@@ -6,12 +6,12 @@ export const RaceAmericanIndianChippewaCreeCode = {
   /**
    * Chippewa Cree
    */
-  ChippewaCree: "1150-2",
+  "1150-2": "1150-2",
 
   /**
    * Rocky Boy's Chippewa Cree
    */
-  RockyBoysChippewaCree: "1151-0",
+  "1151-0": "1151-0",
 } as const;
 
 /**

@@ -6,17 +6,17 @@ export const WorkPlaceCode = {
   /**
    * work place
    */
-  workplace: "WP",
+  WP: "WP",
 
   /**
    * direct
    */
-  direct: "DIR",
+  DIR: "DIR",
 
   /**
    * public
    */
-  public: "PUB",
+  PUB: "PUB",
 } as const;
 
 /**

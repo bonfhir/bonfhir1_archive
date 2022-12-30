@@ -6,42 +6,42 @@ export const ListOrderCodesCode = {
   /**
    * Sorted by User
    */
-  SortedbyUser: "user",
+  user: "user",
 
   /**
    * Sorted by System
    */
-  SortedbySystem: "system",
+  system: "system",
 
   /**
    * Sorted by Event Date
    */
-  SortedbyEventDate: "event-date",
+  "event-date": "event-date",
 
   /**
    * Sorted by Item Date
    */
-  SortedbyItemDate: "entry-date",
+  "entry-date": "entry-date",
 
   /**
    * Sorted by Priority
    */
-  SortedbyPriority: "priority",
+  priority: "priority",
 
   /**
    * Sorted Alphabetically
    */
-  SortedAlphabetically: "alphabetic",
+  alphabetic: "alphabetic",
 
   /**
    * Sorted by Category
    */
-  SortedbyCategory: "category",
+  category: "category",
 
   /**
    * Sorted by Patient
    */
-  SortedbyPatient: "patient",
+  patient: "patient",
 } as const;
 
 /**

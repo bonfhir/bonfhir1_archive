@@ -6,17 +6,17 @@ export const SecurityIntegrityProvenanceObservationTypeCode = {
   /**
    * security integrity provenance observation
    */
-  securityintegrityprovenanceobservation: "SECINTPRVOBS",
+  SECINTPRVOBS: "SECINTPRVOBS",
 
   /**
    * security integrity provenance asserted by observation
    */
-  securityintegrityprovenanceassertedbyobservation: "SECINTPRVABOBS",
+  SECINTPRVABOBS: "SECINTPRVABOBS",
 
   /**
    * security integrity provenance reported by observation
    */
-  securityintegrityprovenancereportedbyobservation: "SECINTPRVRBOBS",
+  SECINTPRVRBOBS: "SECINTPRVRBOBS",
 } as const;
 
 /**

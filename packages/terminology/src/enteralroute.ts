@@ -6,12 +6,12 @@ export const EnteralRouteCode = {
   /**
    * Instillation, enteral feeding tube
    */
-  Instillationenteralfeedingtube: "EFT",
+  EFT: "EFT",
 
   /**
    * Instillation, enteral
    */
-  Instillationenteral: "ENTINSTL",
+  ENTINSTL: "ENTINSTL",
 } as const;
 
 /**

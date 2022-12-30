@@ -6,37 +6,37 @@ export const Hl7VSDaysOfTheWeekCode = {
   /**
    * Saturday
    */
-  Saturday: "SAT",
+  SAT: "SAT",
 
   /**
    * Sunday
    */
-  Sunday: "SUN",
+  SUN: "SUN",
 
   /**
    * Monday
    */
-  Monday: "MON",
+  MON: "MON",
 
   /**
    * Tuesday
    */
-  Tuesday: "TUE",
+  TUE: "TUE",
 
   /**
    * Wednesday
    */
-  Wednesday: "WED",
+  WED: "WED",
 
   /**
    * Thursday
    */
-  Thursday: "THU",
+  THU: "THU",
 
   /**
    * Friday
    */
-  Friday: "FRI",
+  FRI: "FRI",
 } as const;
 
 /**

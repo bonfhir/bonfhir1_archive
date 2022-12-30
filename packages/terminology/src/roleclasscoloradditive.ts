@@ -6,7 +6,7 @@ export const RoleClassColorAdditiveCode = {
   /**
    * color additive
    */
-  coloradditive: "COLR",
+  COLR: "COLR",
 } as const;
 
 /**

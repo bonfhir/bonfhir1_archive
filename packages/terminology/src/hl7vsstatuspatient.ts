@@ -6,17 +6,17 @@ export const Hl7VSStatusPatientCode = {
   /**
    * Normal length of stay
    */
-  Normallengthofstay: "1",
+  "1": "1",
 
   /**
    * Short length of stay
    */
-  Shortlengthofstay: "2",
+  "2": "2",
 
   /**
    * Long length of stay
    */
-  Longlengthofstay: "3",
+  "3": "3",
 } as const;
 
 /**

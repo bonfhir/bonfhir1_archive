@@ -6,38 +6,37 @@ export const Hl7VSSignatorySRelationshipToSubjectCode = {
   /**
    * Self
    */
-  Self: "1",
+  "1": "1",
 
   /**
    * Parent
    */
-  Parent: "2",
+  "2": "2",
 
   /**
    * Next of Kin
    */
-  NextofKin: "3",
+  "3": "3",
 
   /**
    * Durable Power of Attorney in Healthcare Affairs
    */
-  DurablePowerofAttorneyinHealthcareAffairs: "4",
+  "4": "4",
 
   /**
    * Conservator
    */
-  Conservator: "5",
+  "5": "5",
 
   /**
    * Emergent Practitioner (practitioner judging case as emergency requiring care without a consent)
    */
-  EmergentPractitionerpractitionerjudgingcaseasemergencyrequiringcarewithoutaconsent:
-    "6",
+  "6": "6",
 
   /**
    * Non-Emergent Practitioner (i.e. medical ethics committee)
    */
-  NonEmergentPractitioneriemedicalethicscommittee: "7",
+  "7": "7",
 } as const;
 
 /**

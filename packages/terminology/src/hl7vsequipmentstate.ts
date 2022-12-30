@@ -6,102 +6,102 @@ export const Hl7VSEquipmentStateCode = {
   /**
    * Initializing
    */
-  Initializing: "IN",
+  IN: "IN",
 
   /**
    * Configuring
    */
-  Configuring: "CO",
+  CO: "CO",
 
   /**
    * Powered Up
    */
-  PoweredUp: "PU",
+  PU: "PU",
 
   /**
    * Ready to start
    */
-  Readytostart: "RS",
+  RS: "RS",
 
   /**
    * Idle
    */
-  Idle: "ID",
+  ID: "ID",
 
   /**
    * Normal Operation
    */
-  NormalOperation: "OP",
+  OP: "OP",
 
   /**
    * Clearing
    */
-  Clearing: "CL",
+  CL: "CL",
 
   /**
    * Pausing
    */
-  Pausing: "PA",
+  PA: "PA",
 
   /**
    * Paused
    */
-  Paused: "PD",
+  PD: "PD",
 
   /**
    * E-stopped
    */
-  Estopped: "ES",
+  ES: "ES",
 
   /**
    * (null) No state change
    */
-  nullNostatechange: "…",
+  "…": "…",
 
   /**
    * Transport stopped
    */
-  Transportstopped: "TS",
+  TS: "TS",
 
   /**
    * Sampling stopped
    */
-  Samplingstopped: "SS",
+  SS: "SS",
 
   /**
    * Shutting down
    */
-  Shuttingdown: "SD",
+  SD: "SD",
 
   /**
    * Diagnose
    */
-  Diagnose: "DI",
+  DI: "DI",
 
   /**
    * (null) No state change
    */
-  nullNostatechange: "...",
+  "...": "...",
 
   /**
    * Maintenance
    */
-  Maintenance: "MA",
+  MA: "MA",
 
   /**
    * Failure
    */
-  Failure: "FL",
+  FL: "FL",
 
   /**
    * Unknown
    */
-  Unknown: "UNK",
+  UNK: "UNK",
 
   /**
    * Limited test menu
    */
-  Limitedtestmenu: "LT",
+  LT: "LT",
 } as const;
 
 /**

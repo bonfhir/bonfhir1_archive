@@ -6,7 +6,7 @@ export const ActClassStorageCode = {
   /**
    * storage
    */
-  storage: "STORE",
+  STORE: "STORE",
 } as const;
 
 /**

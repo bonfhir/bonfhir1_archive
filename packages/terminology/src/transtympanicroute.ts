@@ -6,12 +6,12 @@ export const TranstympanicRouteCode = {
   /**
    * Instillation, transtympanic
    */
-  Instillationtranstympanic: "TRTYMPINSTIL",
+  TRTYMPINSTIL: "TRTYMPINSTIL",
 
   /**
    * Topical absorption, transtympanic
    */
-  Topicalabsorptiontranstympanic: "TTYMPTABSORP",
+  TTYMPTABSORP: "TTYMPTABSORP",
 } as const;
 
 /**

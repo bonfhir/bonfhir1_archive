@@ -6,22 +6,22 @@ export const AuditEventOutcomeCode = {
   /**
    * Success
    */
-  Success: "0",
+  "0": "0",
 
   /**
    * Minor failure
    */
-  Minorfailure: "4",
+  "4": "4",
 
   /**
    * Serious failure
    */
-  Seriousfailure: "8",
+  "8": "8",
 
   /**
    * Major failure
    */
-  Majorfailure: "12",
+  "12": "12",
 } as const;
 
 /**

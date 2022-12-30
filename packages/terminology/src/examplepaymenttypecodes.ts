@@ -6,12 +6,12 @@ export const ExamplePaymentTypeCodesCode = {
   /**
    * Complete
    */
-  Complete: "complete",
+  complete: "complete",
 
   /**
    * Partial
    */
-  Partial: "partial",
+  partial: "partial",
 } as const;
 
 /**

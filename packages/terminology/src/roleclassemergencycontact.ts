@@ -6,7 +6,7 @@ export const RoleClassEmergencyContactCode = {
   /**
    * emergency contact
    */
-  emergencycontact: "ECON",
+  ECON: "ECON",
 } as const;
 
 /**

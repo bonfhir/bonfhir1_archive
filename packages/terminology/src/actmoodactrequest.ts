@@ -6,27 +6,27 @@ export const ActMoodActRequestCode = {
   /**
    * act request
    */
-  actrequest: "_ActMoodActRequest",
+  _ActMoodActRequest: "_ActMoodActRequest",
 
   /**
    * appointment request
    */
-  appointmentrequest: "ARQ",
+  ARQ: "ARQ",
 
   /**
    * permission request
    */
-  permissionrequest: "PERMRQ",
+  PERMRQ: "PERMRQ",
 
   /**
    * request
    */
-  request: "RQO",
+  RQO: "RQO",
 
   /**
    * request
    */
-  request: "ORD",
+  ORD: "ORD",
 } as const;
 
 /**

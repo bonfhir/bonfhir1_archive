@@ -6,7 +6,7 @@ export const ActRelationshipHasContraIndicationCode = {
   /**
    * has contra-indication
    */
-  hascontraindication: "CIND",
+  CIND: "CIND",
 } as const;
 
 /**

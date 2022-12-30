@@ -6,7 +6,7 @@ export const UpperChinookCode = {
   /**
    * Kiksht
    */
-  Kiksht: "x-WAC",
+  "x-WAC": "x-WAC",
 } as const;
 
 /**

@@ -6,7 +6,7 @@ export const RoleClassHealthcareProviderCode = {
   /**
    * healthcare provider
    */
-  healthcareprovider: "PROV",
+  PROV: "PROV",
 } as const;
 
 /**

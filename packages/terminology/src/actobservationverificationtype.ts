@@ -17,17 +17,17 @@ export const ActObservationVerificationTypeCode = {
   /**
    * act observation verification
    */
-  actobservationverification: "_ActObservationVerificationType",
+  _ActObservationVerificationType: "_ActObservationVerificationType",
 
   /**
    * verify paper
    */
-  verifypaper: "VFPAPER",
+  VFPAPER: "VFPAPER",
 
   /**
    * verify paper
    */
-  verifypaper: "VRFPAPER",
+  VRFPAPER: "VRFPAPER",
 } as const;
 
 /**

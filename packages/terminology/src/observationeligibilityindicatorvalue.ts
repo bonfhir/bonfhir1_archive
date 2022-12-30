@@ -6,57 +6,57 @@ export const ObservationEligibilityIndicatorValueCode = {
   /**
    * eligibility indicator
    */
-  eligibilityindicator: "ELSTAT",
+  ELSTAT: "ELSTAT",
 
   /**
    * adoption document
    */
-  adoptiondocument: "ADOPT",
+  ADOPT: "ADOPT",
 
   /**
    * birth certificate
    */
-  birthcertificate: "BTHCERT",
+  BTHCERT: "BTHCERT",
 
   /**
    * creditable coverage document
    */
-  creditablecoveragedocument: "CCOC",
+  CCOC: "CCOC",
 
   /**
    * driver license
    */
-  driverlicense: "DRLIC",
+  DRLIC: "DRLIC",
 
   /**
    * foster child document
    */
-  fosterchilddocument: "FOSTER",
+  FOSTER: "FOSTER",
 
   /**
    * program or policy member
    */
-  programorpolicymember: "MEMBER",
+  MEMBER: "MEMBER",
 
   /**
    * military identification
    */
-  militaryidentification: "MIL",
+  MIL: "MIL",
 
   /**
    * marriage certificate
    */
-  marriagecertificate: "MRGCERT",
+  MRGCERT: "MRGCERT",
 
   /**
    * passport
    */
-  passport: "PASSPORT",
+  PASSPORT: "PASSPORT",
 
   /**
    * student enrollment
    */
-  studentenrollment: "STUDENRL",
+  STUDENRL: "STUDENRL",
 } as const;
 
 /**

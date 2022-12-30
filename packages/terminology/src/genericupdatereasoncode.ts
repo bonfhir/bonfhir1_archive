@@ -6,27 +6,27 @@ export const GenericUpdateReasonCodeCode = {
   /**
    * information change
    */
-  informationchange: "CHGDATA",
+  CHGDATA: "CHGDATA",
 
   /**
    * error correction
    */
-  errorcorrection: "FIXDATA",
+  FIXDATA: "FIXDATA",
 
   /**
    * merge data
    */
-  mergedata: "MDATA",
+  MDATA: "MDATA",
 
   /**
    * new information
    */
-  newinformation: "NEWDATA",
+  NEWDATA: "NEWDATA",
 
   /**
    * unmerge data
    */
-  unmergedata: "UMDATA",
+  UMDATA: "UMDATA",
 } as const;
 
 /**

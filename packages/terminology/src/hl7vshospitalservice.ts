@@ -6,27 +6,27 @@ export const Hl7VSHospitalServiceCode = {
   /**
    * Medical Service
    */
-  MedicalService: "MED",
+  MED: "MED",
 
   /**
    * Surgical Service
    */
-  SurgicalService: "SUR",
+  SUR: "SUR",
 
   /**
    * Urology Service
    */
-  UrologyService: "URO",
+  URO: "URO",
 
   /**
    * Pulmonary Service
    */
-  PulmonaryService: "PUL",
+  PUL: "PUL",
 
   /**
    * Cardiac Service
    */
-  CardiacService: "CAR",
+  CAR: "CAR",
 } as const;
 
 /**

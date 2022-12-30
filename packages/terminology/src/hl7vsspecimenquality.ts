@@ -6,22 +6,22 @@ export const Hl7VSSpecimenQualityCode = {
   /**
    * Excellent
    */
-  Excellent: "E",
+  E: "E",
 
   /**
    * Good
    */
-  Good: "G",
+  G: "G",
 
   /**
    * Fair
    */
-  Fair: "F",
+  F: "F",
 
   /**
    * Poor
    */
-  Poor: "P",
+  P: "P",
 } as const;
 
 /**

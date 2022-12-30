@@ -6,32 +6,32 @@ export const SetOperatorCode = {
   /**
    * ValueSetOperator
    */
-  ValueSetOperator: "_ValueSetOperator",
+  _ValueSetOperator: "_ValueSetOperator",
 
   /**
    * exclude
    */
-  exclude: "E",
+  E: "E",
 
   /**
    * include
    */
-  include: "I",
+  I: "I",
 
   /**
    * intersect
    */
-  intersect: "A",
+  A: "A",
 
   /**
    * convex hull
    */
-  convexhull: "H",
+  H: "H",
 
   /**
    * periodic hull
    */
-  periodichull: "P",
+  P: "P",
 } as const;
 
 /**

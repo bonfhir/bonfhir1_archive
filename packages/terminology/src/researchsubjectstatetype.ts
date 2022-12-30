@@ -6,12 +6,12 @@ export const ResearchSubjectStateTypeCode = {
   /**
    * Milestone status
    */
-  Milestonestatus: "Milestone",
+  Milestone: "Milestone",
 
   /**
    * Enrollment status
    */
-  Enrollmentstatus: "Enrollment",
+  Enrollment: "Enrollment",
 } as const;
 
 /**

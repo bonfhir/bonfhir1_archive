@@ -6,27 +6,27 @@ export const MedicationDispensePerformerFunctionCodesCode = {
   /**
    * Data Enterer
    */
-  DataEnterer: "dataenterer",
+  dataenterer: "dataenterer",
 
   /**
    * Packager
    */
-  Packager: "packager",
+  packager: "packager",
 
   /**
    * Checker
    */
-  Checker: "checker",
+  checker: "checker",
 
   /**
    * Final Checker
    */
-  FinalChecker: "finalchecker",
+  finalchecker: "finalchecker",
 
   /**
    * Counsellor
    */
-  Counsellor: "counsellor",
+  counsellor: "counsellor",
 } as const;
 
 /**

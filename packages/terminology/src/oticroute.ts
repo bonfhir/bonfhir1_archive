@@ -6,7 +6,7 @@ export const OticRouteCode = {
   /**
    * Instillation, otic
    */
-  Instillationotic: "OT",
+  OT: "OT",
 } as const;
 
 /**

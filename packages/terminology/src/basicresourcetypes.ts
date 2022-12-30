@@ -6,82 +6,82 @@ export const BasicResourceTypesCode = {
   /**
    * Consent
    */
-  Consent: "consent",
+  consent: "consent",
 
   /**
    * Referral
    */
-  Referral: "referral",
+  referral: "referral",
 
   /**
    * Adverse Event
    */
-  AdverseEvent: "advevent",
+  advevent: "advevent",
 
   /**
    * Appointment Request
    */
-  AppointmentRequest: "aptmtreq",
+  aptmtreq: "aptmtreq",
 
   /**
    * Transfer
    */
-  Transfer: "transfer",
+  transfer: "transfer",
 
   /**
    * Diet
    */
-  Diet: "diet",
+  diet: "diet",
 
   /**
    * Administrative Activity
    */
-  AdministrativeActivity: "adminact",
+  adminact: "adminact",
 
   /**
    * Exposure
    */
-  Exposure: "exposure",
+  exposure: "exposure",
 
   /**
    * Investigation
    */
-  Investigation: "investigation",
+  investigation: "investigation",
 
   /**
    * Account
    */
-  Account: "account",
+  account: "account",
 
   /**
    * Invoice
    */
-  Invoice: "invoice",
+  invoice: "invoice",
 
   /**
    * Invoice Adjudication
    */
-  InvoiceAdjudication: "adjudicat",
+  adjudicat: "adjudicat",
 
   /**
    * Pre-determination Request
    */
-  PredeterminationRequest: "predetreq",
+  predetreq: "predetreq",
 
   /**
    * Predetermination
    */
-  Predetermination: "predetermine",
+  predetermine: "predetermine",
 
   /**
    * Study
    */
-  Study: "study",
+  study: "study",
 
   /**
    * Protocol
    */
-  Protocol: "protocol",
+  protocol: "protocol",
 } as const;
 
 /**

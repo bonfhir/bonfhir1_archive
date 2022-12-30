@@ -8,17 +8,17 @@ export const XBasicConfidentialityKindCode = {
   /**
    * normal
    */
-  normal: "N",
+  N: "N",
 
   /**
    * restricted
    */
-  restricted: "R",
+  R: "R",
 
   /**
    * very restricted
    */
-  veryrestricted: "V",
+  V: "V",
 } as const;
 
 /**

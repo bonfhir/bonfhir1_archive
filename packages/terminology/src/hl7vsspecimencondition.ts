@@ -6,52 +6,52 @@ export const Hl7VSSpecimenConditionCode = {
   /**
    * Autolyzed
    */
-  Autolyzed: "AUT",
+  AUT: "AUT",
 
   /**
    * Clotted
    */
-  Clotted: "CLOT",
+  CLOT: "CLOT",
 
   /**
    * Contaminated
    */
-  Contaminated: "CON",
+  CON: "CON",
 
   /**
    * Cool
    */
-  Cool: "COOL",
+  COOL: "COOL",
 
   /**
    * Frozen
    */
-  Frozen: "FROZ",
+  FROZ: "FROZ",
 
   /**
    * Hemolyzed
    */
-  Hemolyzed: "HEM",
+  HEM: "HEM",
 
   /**
    * Live
    */
-  Live: "LIVE",
+  LIVE: "LIVE",
 
   /**
    * Room temperature
    */
-  Roomtemperature: "ROOM",
+  ROOM: "ROOM",
 
   /**
    * Sample not received
    */
-  Samplenotreceived: "SNR",
+  SNR: "SNR",
 
   /**
    * Centrifuged
    */
-  Centrifuged: "CFU",
+  CFU: "CFU",
 } as const;
 
 /**

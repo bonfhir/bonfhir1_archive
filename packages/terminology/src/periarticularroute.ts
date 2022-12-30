@@ -6,7 +6,7 @@ export const PeriarticularRouteCode = {
   /**
    * Injection, periarticular
    */
-  Injectionperiarticular: "PAINJ",
+  PAINJ: "PAINJ",
 } as const;
 
 /**

@@ -6,797 +6,797 @@ export const Hl7VSMessageTypeCode = {
   /**
    * General acknowledgment message
    */
-  Generalacknowledgmentmessage: "ACK",
+  ACK: "ACK",
 
   /**
    * ADT response
    */
-  ADTresponse: "ADR",
+  ADR: "ADR",
 
   /**
    * Ancillary RPT (display) (for backward compatibility only)
    */
-  AncillaryRPTdisplayforbackwardcompatibilityonly: "ARD",
+  ARD: "ARD",
 
   /**
    * ADT message
    */
-  ADTmessage: "ADT",
+  ADT: "ADT",
 
   /**
    * Add/change billing account
    */
-  Addchangebillingaccount: "BAR",
+  BAR: "BAR",
 
   /**
    * Blood product dispense status message
    */
-  Bloodproductdispensestatusmessage: "BPS",
+  BPS: "BPS",
 
   /**
    * Cancel query
    */
-  Cancelquery: "CNQ",
+  CNQ: "CNQ",
 
   /**
    * Blood product dispense status acknowledgement message
    */
-  Bloodproductdispensestatusacknowledgementmessage: "BRP",
+  BRP: "BRP",
 
   /**
    * Blood product transfusion/disposition acknowledgement message
    */
-  Bloodproducttransfusiondispositionacknowledgementmessage: "BRT",
+  BRT: "BRT",
 
   /**
    * Blood product transfusion/disposition message
    */
-  Bloodproducttransfusiondispositionmessage: "BTS",
+  BTS: "BTS",
 
   /**
    * Collaborative Care Fetch
    */
-  CollaborativeCareFetch: "CCF",
+  CCF: "CCF",
 
   /**
    * Collaborative Care Information
    */
-  CollaborativeCareInformation: "CCI",
+  CCI: "CCI",
 
   /**
    * Collaborative Care Message
    */
-  CollaborativeCareMessage: "CCM",
+  CCM: "CCM",
 
   /**
    * Collaborative Care Referral
    */
-  CollaborativeCareReferral: "CCQ",
+  CCQ: "CCQ",
 
   /**
    * Event replay query
    */
-  Eventreplayquery: "ERQ",
+  ERQ: "ERQ",
 
   /**
    * Collaborative Care Referral
    */
-  CollaborativeCareReferral: "CCU",
+  CCU: "CCU",
 
   /**
    * Collaborative Care Referral
    */
-  CollaborativeCareReferral: "CQU",
+  CQU: "CQU",
 
   /**
    * Clinical study registration message
    */
-  Clinicalstudyregistrationmessage: "CRM",
+  CRM: "CRM",
 
   /**
    * Unsolicited study data message
    */
-  Unsolicitedstudydatamessage: "CSU",
+  CSU: "CSU",
 
   /**
    * Enhanced display response
    */
-  Enhanceddisplayresponse: "EDR",
+  EDR: "EDR",
 
   /**
    * Create Donor Record
    */
-  CreateDonorRecord: "DBC",
+  DBC: "DBC",
 
   /**
    * Embedded query language query
    */
-  Embeddedquerylanguagequery: "EQQ",
+  EQQ: "EQQ",
 
   /**
    * Update Donor Record
    */
-  UpdateDonorRecord: "DBU",
+  DBU: "DBU",
 
   /**
    * Event replay response
    */
-  Eventreplayresponse: "ERP",
+  ERP: "ERP",
 
   /**
    * Donor Eligibility
    */
-  DonorEligibility: "DEL",
+  DEL: "DEL",
 
   /**
    * Donor Eligibility Observation
    */
-  DonorEligibilityObservation: "DEO",
+  DEO: "DEO",
 
   /**
    * Donor Eligibility Request
    */
-  DonorEligibilityRequest: "DER",
+  DER: "DER",
 
   /**
    * Detail financial transactions
    */
-  Detailfinancialtransactions: "DFT",
+  DFT: "DFT",
 
   /**
    * Document response
    */
-  Documentresponse: "DOC",
+  DOC: "DOC",
 
   /**
    * Donation Procedure
    */
-  DonationProcedure: "DPR",
+  DPR: "DPR",
 
   /**
    * Donor Request to Collect
    */
-  DonorRequesttoCollect: "DRC",
+  DRC: "DRC",
 
   /**
    * Display response
    */
-  Displayresponse: "DSR",
+  DSR: "DSR",
 
   /**
    * Delayed Acknowledgment (Retained for backward compatibility only)
    */
-  DelayedAcknowledgmentRetainedforbackwardcompatibilityonly: "MCF",
+  MCF: "MCF",
 
   /**
    * Automated equipment command message
    */
-  Automatedequipmentcommandmessage: "EAC",
+  EAC: "EAC",
 
   /**
    * Automated equipment notification message
    */
-  Automatedequipmentnotificationmessage: "EAN",
+  EAN: "EAN",
 
   /**
    * Automated equipment response message
    */
-  Automatedequipmentresponsemessage: "EAR",
+  EAR: "EAR",
 
   /**
    * Health Care Invoice
    */
-  HealthCareInvoice: "EHC",
+  EHC: "EHC",
 
   /**
    * Automated equipment status update acknowledgment message
    */
-  Automatedequipmentstatusupdateacknowledgmentmessage: "ESR",
+  ESR: "ESR",
 
   /**
    * Automated equipment status update message
    */
-  Automatedequipmentstatusupdatemessage: "ESU",
+  ESU: "ESU",
 
   /**
    * Automated equipment inventory request message
    */
-  Automatedequipmentinventoryrequestmessage: "INR",
+  INR: "INR",
 
   /**
    * Automated equipment inventory update message
    */
-  Automatedequipmentinventoryupdatemessage: "INU",
+  INU: "INU",
 
   /**
    * Automated equipment log/service request message
    */
-  Automatedequipmentlogservicerequestmessage: "LSR",
+  LSR: "LSR",
 
   /**
    * Automated equipment log/service update message
    */
-  Automatedequipmentlogserviceupdatemessage: "LSU",
+  LSU: "LSU",
 
   /**
    * Medical document management
    */
-  Medicaldocumentmanagement: "MDM",
+  MDM: "MDM",
 
   /**
    * Master files delayed application acknowledgment
    */
-  Masterfilesdelayedapplicationacknowledgment: "MFD",
+  MFD: "MFD",
 
   /**
    * Master files application acknowledgment
    */
-  Masterfilesapplicationacknowledgment: "MFK",
+  MFK: "MFK",
 
   /**
    * Master files notification
    */
-  Masterfilesnotification: "MFN",
+  MFN: "MFN",
 
   /**
    * Master files query
    */
-  Masterfilesquery: "MFQ",
+  MFQ: "MFQ",
 
   /**
    * Master files response
    */
-  Masterfilesresponse: "MFR",
+  MFR: "MFR",
 
   /**
    * Application management data message
    */
-  Applicationmanagementdatamessage: "NMD",
+  NMD: "NMD",
 
   /**
    * Application management query message
    */
-  Applicationmanagementquerymessage: "NMQ",
+  NMQ: "NMQ",
 
   /**
    * Application management response message
    */
-  Applicationmanagementresponsemessage: "NMR",
+  NMR: "NMR",
 
   /**
    * Blood product order message
    */
-  Bloodproductordermessage: "OMB",
+  OMB: "OMB",
 
   /**
    * Dietary order
    */
-  Dietaryorder: "OMD",
+  OMD: "OMD",
 
   /**
    * General clinical order message
    */
-  Generalclinicalordermessage: "OMG",
+  OMG: "OMG",
 
   /**
    * Imaging order
    */
-  Imagingorder: "OMI",
+  OMI: "OMI",
 
   /**
    * Request clinical information
    */
-  Requestclinicalinformation: "ROC",
+  ROC: "ROC",
 
   /**
    * Request pateint demographics
    */
-  Requestpateintdemographics: "ROD",
+  ROD: "ROD",
 
   /**
    * Laboratory order message
    */
-  Laboratoryordermessage: "OML",
+  OML: "OML",
 
   /**
    * Non-stock requisition order message
    */
-  Nonstockrequisitionordermessage: "OMN",
+  OMN: "OMN",
 
   /**
    * Pharmacy/treatment order message
    */
-  Pharmacytreatmentordermessage: "OMP",
+  OMP: "OMP",
 
   /**
    * General order message with document payload
    */
-  Generalordermessagewithdocumentpayload: "OMQ",
+  OMQ: "OMQ",
 
   /**
    * Stock requisition order message
    */
-  Stockrequisitionordermessage: "OMS",
+  OMS: "OMS",
 
   /**
    * Population/Location-Based Laboratory Order Message
    */
-  PopulationLocationBasedLaboratoryOrderMessage: "OPL",
+  OPL: "OPL",
 
   /**
    * Population/Location-Based Laboratory Order Acknowledgment Message
    */
-  PopulationLocationBasedLaboratoryOrderAcknowledgmentMessage: "OPR",
+  OPR: "OPR",
 
   /**
    * Unsolicited Population/Location-Based Laboratory Observation Message
    */
-  UnsolicitedPopulationLocationBasedLaboratoryObservationMessage: "OPU",
+  OPU: "OPU",
 
   /**
    * Observation Report Acknowledgment
    */
-  ObservationReportAcknowledgment: "ORA",
+  ORA: "ORA",
 
   /**
    * Blood product order acknowledgement message
    */
-  Bloodproductorderacknowledgementmessage: "ORB",
+  ORB: "ORB",
 
   /**
    * Dietary order acknowledgment message
    */
-  Dietaryorderacknowledgmentmessage: "ORD",
+  ORD: "ORD",
 
   /**
    * Query for results of observation
    */
-  Queryforresultsofobservation: "ORF",
+  ORF: "ORF",
 
   /**
    * General clinical order acknowledgment message
    */
-  Generalclinicalorderacknowledgmentmessage: "ORG",
+  ORG: "ORG",
 
   /**
    * Imaging order acknowledgement message
    */
-  Imagingorderacknowledgementmessage: "ORI",
+  ORI: "ORI",
 
   /**
    * Laboratory acknowledgment message (unsolicited)
    */
-  Laboratoryacknowledgmentmessageunsolicited: "ORL",
+  ORL: "ORL",
 
   /**
    * Pharmacy/treatment order message
    */
-  Pharmacytreatmentordermessage: "ORM",
+  ORM: "ORM",
 
   /**
    * Non-stock requisition - General order acknowledgment message
    */
-  NonstockrequisitionGeneralorderacknowledgmentmessage: "ORN",
+  ORN: "ORN",
 
   /**
    * Pharmacy/treatment order acknowledgment message
    */
-  Pharmacytreatmentorderacknowledgmentmessage: "ORP",
+  ORP: "ORP",
 
   /**
    * General order response message response to any ORM
    */
-  GeneralorderresponsemessageresponsetoanyORM: "ORR",
+  ORR: "ORR",
 
   /**
    * Stock requisition - Order acknowledgment message
    */
-  StockrequisitionOrderacknowledgmentmessage: "ORS",
+  ORS: "ORS",
 
   /**
    * Unsolicited transmission of an observation message
    */
-  Unsolicitedtransmissionofanobservationmessage: "ORU",
+  ORU: "ORU",
 
   /**
    * General Order Message with Document Payload Acknowledgement
    */
-  GeneralOrderMessagewithDocumentPayloadAcknowledgement: "ORX",
+  ORX: "ORX",
 
   /**
    * Specimen Shipment Message
    */
-  SpecimenShipmentMessage: "OSM",
+  OSM: "OSM",
 
   /**
    * Query response for order status
    */
-  Queryresponsefororderstatus: "OSQ",
+  OSQ: "OSQ",
 
   /**
    * Query response for order status
    */
-  Queryresponsefororderstatus: "OSR",
+  OSR: "OSR",
 
   /**
    * Order status update
    */
-  Orderstatusupdate: "OSU",
+  OSU: "OSU",
 
   /**
    * Unsolicited laboratory observation message
    */
-  Unsolicitedlaboratoryobservationmessage: "OUL",
+  OUL: "OUL",
 
   /**
    * Product experience message
    */
-  Productexperiencemessage: "PEX",
+  PEX: "PEX",
 
   /**
    * Patient goal message
    */
-  Patientgoalmessage: "PGL",
+  PGL: "PGL",
 
   /**
    * Patient insurance information
    */
-  Patientinsuranceinformation: "PIN",
+  PIN: "PIN",
 
   /**
    * Add personnel record
    */
-  Addpersonnelrecord: "PMU",
+  PMU: "PMU",
 
   /**
    * Patient pathway message (goal-oriented)
    */
-  Patientpathwaymessagegoaloriented: "PPG",
+  PPG: "PPG",
 
   /**
    * Patient pathway message (problem-oriented)
    */
-  Patientpathwaymessageproblemoriented: "PPP",
+  PPP: "PPP",
 
   /**
    * Patient problem message
    */
-  Patientproblemmessage: "PPR",
+  PPR: "PPR",
 
   /**
    * Patient pathway goal-oriented response
    */
-  Patientpathwaygoalorientedresponse: "PPT",
+  PPT: "PPT",
 
   /**
    * Patient goal response
    */
-  Patientgoalresponse: "PPV",
+  PPV: "PPV",
 
   /**
    * Patient problem response
    */
-  Patientproblemresponse: "PRR",
+  PRR: "PRR",
 
   /**
    * Patient pathway problem-oriented response
    */
-  Patientpathwayproblemorientedresponse: "PTR",
+  PTR: "PTR",
 
   /**
    * Query by parameter
    */
-  Querybyparameter: "QBP",
+  QBP: "QBP",
 
   /**
    * Query general acknowledgment
    */
-  Querygeneralacknowledgment: "QCK",
+  QCK: "QCK",
 
   /**
    * Cancel query
    */
-  Cancelquery: "QCN",
+  QCN: "QCN",
 
   /**
    * Query, original mode
    */
-  Queryoriginalmode: "QRY",
+  QRY: "QRY",
 
   /**
    * Create subscription
    */
-  Createsubscription: "QSB",
+  QSB: "QSB",
 
   /**
    * Cancel subscription/acknowledge message
    */
-  Cancelsubscriptionacknowledgemessage: "QSX",
+  QSX: "QSX",
 
   /**
    * Query for previous events
    */
-  Queryforpreviousevents: "QVR",
+  QVR: "QVR",
 
   /**
    * Pharmacy/treatment administration information
    */
-  Pharmacytreatmentadministrationinformation: "RAR",
+  RAR: "RAR",
 
   /**
    * Pharmacy/treatment administration message
    */
-  Pharmacytreatmentadministrationmessage: "RAS",
+  RAS: "RAS",
 
   /**
    * Return clinical information
    */
-  Returnclinicalinformation: "RCI",
+  RCI: "RCI",
 
   /**
    * Return clinical list
    */
-  Returnclinicallist: "RCL",
+  RCL: "RCL",
 
   /**
    * Event replay query
    */
-  Eventreplayquery: "RQQ",
+  RQQ: "RQQ",
 
   /**
    * Pharmacy/treatment encoded order message
    */
-  Pharmacytreatmentencodedordermessage: "RDE",
+  RDE: "RDE",
 
   /**
    * Pharmacy/treatment dispense information
    */
-  Pharmacytreatmentdispenseinformation: "RDR",
+  RDR: "RDR",
 
   /**
    * Pharmacy/treatment dispense message
    */
-  Pharmacytreatmentdispensemessage: "RDS",
+  RDS: "RDS",
 
   /**
    * Display based response
    */
-  Displaybasedresponse: "RDY",
+  RDY: "RDY",
 
   /**
    * Patient referral
    */
-  Patientreferral: "REF",
+  REF: "REF",
 
   /**
    * Pharmacy/treatment encoded order information
    */
-  Pharmacytreatmentencodedorderinformation: "RER",
+  RER: "RER",
 
   /**
    * Pharmacy/treatment dose information
    */
-  Pharmacytreatmentdoseinformation: "RGR",
+  RGR: "RGR",
 
   /**
    * Pharmacy/treatment give message
    */
-  Pharmacytreatmentgivemessage: "RGV",
+  RGV: "RGV",
 
   /**
    * Pharmacy/treatment order response
    */
-  Pharmacytreatmentorderresponse: "ROR",
+  ROR: "ROR",
 
   /**
    * Stored procedure request
    */
-  Storedprocedurerequest: "SPQ",
+  SPQ: "SPQ",
 
   /**
    * Return patient authorization
    */
-  Returnpatientauthorization: "RPA",
+  RPA: "RPA",
 
   /**
    * Return patient information
    */
-  Returnpatientinformation: "RPI",
+  RPI: "RPI",
 
   /**
    * Return patient display list
    */
-  Returnpatientdisplaylist: "RPL",
+  RPL: "RPL",
 
   /**
    * Return patient list
    */
-  Returnpatientlist: "RPR",
+  RPR: "RPR",
 
   /**
    * Request patient authorization
    */
-  Requestpatientauthorization: "RQA",
+  RQA: "RQA",
 
   /**
    * Request clinical information
    */
-  Requestclinicalinformation: "RQC",
+  RQC: "RQC",
 
   /**
    * Request patient information
    */
-  Requestpatientinformation: "RQI",
+  RQI: "RQI",
 
   /**
    * Request patient demographics
    */
-  Requestpatientdemographics: "RQP",
+  RQP: "RQP",
 
   /**
    * Pharmacy/treatment administration acknowledgment message
    */
-  Pharmacytreatmentadministrationacknowledgmentmessage: "RRA",
+  RRA: "RRA",
 
   /**
    * Pharmacy/treatment dispense acknowledgment message
    */
-  Pharmacytreatmentdispenseacknowledgmentmessage: "RRD",
+  RRD: "RRD",
 
   /**
    * Pharmacy/treatment encoded order acknowledgment message
    */
-  Pharmacytreatmentencodedorderacknowledgmentmessage: "RRE",
+  RRE: "RRE",
 
   /**
    * Pharmacy/treatment give acknowledgment message
    */
-  Pharmacytreatmentgiveacknowledgmentmessage: "RRG",
+  RRG: "RRG",
 
   /**
    * Virtual table query
    */
-  Virtualtablequery: "VQQ",
+  VQQ: "VQQ",
 
   /**
    * Return referral information
    */
-  Returnreferralinformation: "RRI",
+  RRI: "RRI",
 
   /**
    * Segment pattern response
    */
-  Segmentpatternresponse: "RSP",
+  RSP: "RSP",
 
   /**
    * Tabular response
    */
-  Tabularresponse: "RTB",
+  RTB: "RTB",
 
   /**
    * Notification of Anti-Microbial Device Cycle Data
    */
-  NotificationofAntiMicrobialDeviceCycleData: "SCN",
+  SCN: "SCN",
 
   /**
    * Notification of Anti-Microbial Device Data
    */
-  NotificationofAntiMicrobialDeviceData: "SDN",
+  SDN: "SDN",
 
   /**
    * Sterilization anti-microbial device data request
    */
-  Sterilizationantimicrobialdevicedatarequest: "SDR",
+  SDR: "SDR",
 
   /**
    * Specimen Event Tracking
    */
-  SpecimenEventTracking: "SET",
+  SET: "SET",
 
   /**
    * Schedule information unsolicited
    */
-  Scheduleinformationunsolicited: "SIU",
+  SIU: "SIU",
 
   /**
    * Notification of New Sterilization Lot
    */
-  NotificationofNewSterilizationLot: "SLN",
+  SLN: "SLN",
 
   /**
    * Sterilization lot request
    */
-  Sterilizationlotrequest: "SLR",
+  SLR: "SLR",
 
   /**
    * Sterilization anti-microbial device cycle data request
    */
-  Sterilizationantimicrobialdevicecycledatarequest: "SMD",
+  SMD: "SMD",
 
   /**
    * Schedule query message
    */
-  Schedulequerymessage: "SQM",
+  SQM: "SQM",
 
   /**
    * Schedule query response
    */
-  Schedulequeryresponse: "SQR",
+  SQR: "SQR",
 
   /**
    * Schedule request message
    */
-  Schedulerequestmessage: "SRM",
+  SRM: "SRM",
 
   /**
    * Scheduled request response
    */
-  Scheduledrequestresponse: "SRR",
+  SRR: "SRR",
 
   /**
    * Specimen status request message
    */
-  Specimenstatusrequestmessage: "SSR",
+  SSR: "SSR",
 
   /**
    * Specimen status update message
    */
-  Specimenstatusupdatemessage: "SSU",
+  SSU: "SSU",
 
   /**
    * Notification of Sterilization Configuration
    */
-  NotificationofSterilizationConfiguration: "STC",
+  STC: "STC",
 
   /**
    * Sterilization item request
    */
-  Sterilizationitemrequest: "STI",
+  STI: "STI",
 
   /**
    * Summary product experience report
    */
-  Summaryproductexperiencereport: "SUR",
+  SUR: "SUR",
 
   /**
    * Tabular data response
    */
-  Tabulardataresponse: "TBR",
+  TBR: "TBR",
 
   /**
    * Automated equipment test code settings request message
    */
-  Automatedequipmenttestcodesettingsrequestmessage: "TCR",
+  TCR: "TCR",
 
   /**
    * Automated equipment test code settings update message
    */
-  Automatedequipmenttestcodesettingsupdatemessage: "TCU",
+  TCU: "TCU",
 
   /**
    * Unsolicited display update message
    */
-  Unsoliciteddisplayupdatemessage: "UDM",
+  UDM: "UDM",
 
   /**
    * Query for vaccination record
    */
-  Queryforvaccinationrecord: "VXQ",
+  VXQ: "VXQ",
 
   /**
    * Vaccination record response
    */
-  Vaccinationrecordresponse: "VXR",
+  VXR: "VXR",
 
   /**
    * Unsolicited vaccination record update
    */
-  Unsolicitedvaccinationrecordupdate: "VXU",
+  VXU: "VXU",
 
   /**
    * Response for vaccination query with multiple PID matches
    */
-  ResponseforvaccinationquerywithmultiplePIDmatches: "VXX",
+  VXX: "VXX",
 } as const;
 
 /**

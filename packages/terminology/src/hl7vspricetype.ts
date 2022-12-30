@@ -6,37 +6,37 @@ export const Hl7VSPriceTypeCode = {
   /**
    * administrative price or handling fee
    */
-  administrativepriceorhandlingfee: "AP",
+  AP: "AP",
 
   /**
    * direct unit cost
    */
-  directunitcost: "DC",
+  DC: "DC",
 
   /**
    * indirect unit cost
    */
-  indirectunitcost: "IC",
+  IC: "IC",
 
   /**
    * professional fee for performing provider
    */
-  professionalfeeforperformingprovider: "PF",
+  PF: "PF",
 
   /**
    * technology fee for use of equipment
    */
-  technologyfeeforuseofequipment: "TF",
+  TF: "TF",
 
   /**
    * total price
    */
-  totalprice: "TP",
+  TP: "TP",
 
   /**
    * unit price, may be based on length of procedure or service
    */
-  unitpricemaybebasedonlengthofprocedureorservice: "UP",
+  UP: "UP",
 } as const;
 
 /**

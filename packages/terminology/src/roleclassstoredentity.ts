@@ -6,7 +6,7 @@ export const RoleClassStoredEntityCode = {
   /**
    * stored entity
    */
-  storedentity: "STOR",
+  STOR: "STOR",
 } as const;
 
 /**

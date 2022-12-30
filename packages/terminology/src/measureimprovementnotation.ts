@@ -6,12 +6,12 @@ export const MeasureImprovementNotationCode = {
   /**
    * Increased score indicates improvement
    */
-  Increasedscoreindicatesimprovement: "increase",
+  increase: "increase",
 
   /**
    * Decreased score indicates improvement
    */
-  Decreasedscoreindicatesimprovement: "decrease",
+  decrease: "decrease",
 } as const;
 
 /**

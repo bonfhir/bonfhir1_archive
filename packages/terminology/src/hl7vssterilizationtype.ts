@@ -6,17 +6,17 @@ export const Hl7VSSterilizationTypeCode = {
   /**
    * Ethylene Oxide Gas
    */
-  EthyleneOxideGas: "EOG",
+  EOG: "EOG",
 
   /**
    * Peracetic acid
    */
-  Peraceticacid: "PCA",
+  PCA: "PCA",
 
   /**
    * Steam
    */
-  Steam: "STM",
+  STM: "STM",
 } as const;
 
 /**

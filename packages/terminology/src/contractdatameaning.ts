@@ -6,22 +6,22 @@ export const ContractDataMeaningCode = {
   /**
    * Instance
    */
-  Instance: "instance",
+  instance: "instance",
 
   /**
    * Related
    */
-  Related: "related",
+  related: "related",
 
   /**
    * Dependents
    */
-  Dependents: "dependents",
+  dependents: "dependents",
 
   /**
    * AuthoredBy
    */
-  AuthoredBy: "authoredby",
+  authoredby: "authoredby",
 } as const;
 
 /**

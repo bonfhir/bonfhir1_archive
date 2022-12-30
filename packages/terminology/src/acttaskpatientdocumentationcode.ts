@@ -6,67 +6,67 @@ export const ActTaskPatientDocumentationCodeCode = {
   /**
    * patient documentation task
    */
-  patientdocumentationtask: "PATDOC",
+  PATDOC: "PATDOC",
 
   /**
    * allergy list review
    */
-  allergylistreview: "ALLERLREV",
+  ALLERLREV: "ALLERLREV",
 
   /**
    * clinical note entry task
    */
-  clinicalnoteentrytask: "CLINNOTEE",
+  CLINNOTEE: "CLINNOTEE",
 
   /**
    * diagnosis list entry task
    */
-  diagnosislistentrytask: "DIAGLISTE",
+  DIAGLISTE: "DIAGLISTE",
 
   /**
    * discharge instruction entry
    */
-  dischargeinstructionentry: "DISCHINSTE",
+  DISCHINSTE: "DISCHINSTE",
 
   /**
    * discharge summary entry task
    */
-  dischargesummaryentrytask: "DISCHSUME",
+  DISCHSUME: "DISCHSUME",
 
   /**
    * patient education entry
    */
-  patienteducationentry: "PATEDUE",
+  PATEDUE: "PATEDUE",
 
   /**
    * pathology report entry task
    */
-  pathologyreportentrytask: "PATREPE",
+  PATREPE: "PATREPE",
 
   /**
    * problem list entry task
    */
-  problemlistentrytask: "PROBLISTE",
+  PROBLISTE: "PROBLISTE",
 
   /**
    * radiology report entry task
    */
-  radiologyreportentrytask: "RADREPE",
+  RADREPE: "RADREPE",
 
   /**
    * immunization list review
    */
-  immunizationlistreview: "IMMLREV",
+  IMMLREV: "IMMLREV",
 
   /**
    * reminder list review
    */
-  reminderlistreview: "REMLREV",
+  REMLREV: "REMLREV",
 
   /**
    * wellness reminder list review
    */
-  wellnessreminderlistreview: "WELLREMLREV",
+  WELLREMLREV: "WELLREMLREV",
 } as const;
 
 /**

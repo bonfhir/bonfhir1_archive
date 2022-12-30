@@ -6,7 +6,7 @@ export const ActMoodRecommendationCode = {
   /**
    * recommendation
    */
-  recommendation: "RMD",
+  RMD: "RMD",
 } as const;
 
 /**

@@ -6,7 +6,7 @@ export const WintuanCode = {
   /**
    * Wintu-Nomlaki
    */
-  WintuNomlaki: "x-WIT",
+  "x-WIT": "x-WIT",
 } as const;
 
 /**

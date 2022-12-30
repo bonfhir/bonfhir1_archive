@@ -6,7 +6,7 @@ export const RoleClassNotaryPublicCode = {
   /**
    * notary public
    */
-  notarypublic: "NOT",
+  NOT: "NOT",
 } as const;
 
 /**

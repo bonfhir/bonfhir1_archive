@@ -6,7 +6,7 @@ export const ActRelationshipRelievedByCode = {
   /**
    * relieved by
    */
-  relievedby: "RELVBY",
+  RELVBY: "RELVBY",
 } as const;
 
 /**

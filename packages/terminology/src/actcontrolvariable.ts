@@ -8,22 +8,22 @@ export const ActControlVariableCode = {
   /**
    * auto-repeat permission
    */
-  autorepeatpermission: "AUTO",
+  AUTO: "AUTO",
 
   /**
    * endogenous content
    */
-  endogenouscontent: "ENDC",
+  ENDC: "ENDC",
 
   /**
    * reflex permission
    */
-  reflexpermission: "REFLEX",
+  REFLEX: "REFLEX",
 
   /**
    * ECGControlVariable
    */
-  ECGControlVariable: "_ECGControlVariable",
+  _ECGControlVariable: "_ECGControlVariable",
 } as const;
 
 /**

@@ -6,22 +6,22 @@ export const ExampleProgramReasonCodesCode = {
   /**
    * Child Asthma
    */
-  ChildAsthma: "as",
+  as: "as",
 
   /**
    * Hemodialysis
    */
-  Hemodialysis: "hd",
+  hd: "hd",
 
   /**
    * Autism Screening
    */
-  AutismScreening: "auscr",
+  auscr: "auscr",
 
   /**
    * None
    */
-  None: "none",
+  none: "none",
 } as const;
 
 /**

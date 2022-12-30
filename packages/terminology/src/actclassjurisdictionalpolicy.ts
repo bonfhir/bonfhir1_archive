@@ -12,7 +12,7 @@ export const ActClassJurisdictionalPolicyCode = {
   /**
    * jurisdictional policy
    */
-  jurisdictionalpolicy: "JURISPOL",
+  JURISPOL: "JURISPOL",
 } as const;
 
 /**

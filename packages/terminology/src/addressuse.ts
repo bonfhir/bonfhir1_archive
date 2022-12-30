@@ -11,52 +11,52 @@ export const AddressUseCode = {
   /**
    * bad address
    */
-  badaddress: "BAD",
+  BAD: "BAD",
 
   /**
    * confidential address
    */
-  confidentialaddress: "CONF",
+  CONF: "CONF",
 
   /**
    * home address
    */
-  homeaddress: "H",
+  H: "H",
 
   /**
    * primary home
    */
-  primaryhome: "HP",
+  HP: "HP",
 
   /**
    * vacation home
    */
-  vacationhome: "HV",
+  HV: "HV",
 
   /**
    * no longer in use
    */
-  nolongerinuse: "OLD",
+  OLD: "OLD",
 
   /**
    * temporary address
    */
-  temporaryaddress: "TMP",
+  TMP: "TMP",
 
   /**
    * work place
    */
-  workplace: "WP",
+  WP: "WP",
 
   /**
    * direct
    */
-  direct: "DIR",
+  DIR: "DIR",
 
   /**
    * public
    */
-  public: "PUB",
+  PUB: "PUB",
 
   /**
    * _PostalAddressUse
@@ -66,12 +66,12 @@ export const AddressUseCode = {
   /**
    * physical visit address
    */
-  physicalvisitaddress: "PHYS",
+  PHYS: "PHYS",
 
   /**
    * postal address
    */
-  postaladdress: "PST",
+  PST: "PST",
 
   /**
    * _TelecommunicationAddressUse
@@ -81,22 +81,22 @@ export const AddressUseCode = {
   /**
    * answering service
    */
-  answeringservice: "AS",
+  AS: "AS",
 
   /**
    * emergency contact
    */
-  emergencycontact: "EC",
+  EC: "EC",
 
   /**
    * mobile contact)
    */
-  mobilecontact: "MC",
+  MC: "MC",
 
   /**
    * pager
    */
-  pager: "PG",
+  PG: "PG",
 } as const;
 
 /**

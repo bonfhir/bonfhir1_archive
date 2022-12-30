@@ -12,62 +12,62 @@ export const SnodentCraniofacialAnomalyInternationalCode = {
   /**
    * Cleft palate with cleft lip
    */
-  Cleftpalatewithcleftlip: "115902D",
+  "115902D": "115902D",
 
   /**
    * Juvenile rheumatoid arthritis
    */
-  Juvenilerheumatoidarthritis: "117349D",
+  "117349D": "117349D",
 
   /**
    * Hemifacial microsomia
    */
-  Hemifacialmicrosomia: "122924D",
+  "122924D": "122924D",
 
   /**
    * Cleft palate
    */
-  Cleftpalate: "132578D",
+  "132578D": "132578D",
 
   /**
    * Cleidocranial dysostosis
    */
-  Cleidocranialdysostosis: "133572D",
+  "133572D": "133572D",
 
   /**
    * Treacher Collins syndrome
    */
-  TreacherCollinssyndrome: "146718D",
+  "146718D": "146718D",
 
   /**
    * Cleft lip
    */
-  Cleftlip: "149694D",
+  "149694D": "149694D",
 
   /**
    * Complete trisomy 21 syndrome
    */
-  Completetrisomy21syndrome: "198545D",
+  "198545D": "198545D",
 
   /**
    * Marfan syndrome
    */
-  Marfansyndrome: "199380D",
+  "199380D": "199380D",
 
   /**
    * Cleft lip & alveolus
    */
-  Cleftlipalveolus: "210958D",
+  "210958D": "210958D",
 
   /**
    * Craniosynostosis syndrome
    */
-  Craniosynostosissyndrome: "210959D",
+  "210959D": "210959D",
 
   /**
    * Arthrogryposis
    */
-  Arthrogryposis: "210960D",
+  "210960D": "210960D",
 } as const;
 
 /**

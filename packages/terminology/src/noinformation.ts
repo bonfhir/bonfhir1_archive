@@ -6,82 +6,82 @@ export const NoInformationCode = {
   /**
    * NoInformation
    */
-  NoInformation: "NI",
+  NI: "NI",
 
   /**
    * invalid
    */
-  invalid: "INV",
+  INV: "INV",
 
   /**
    * derived
    */
-  derived: "DER",
+  DER: "DER",
 
   /**
    * other
    */
-  other: "OTH",
+  OTH: "OTH",
 
   /**
    * negative infinity
    */
-  negativeinfinity: "NINF",
+  NINF: "NINF",
 
   /**
    * positive infinity
    */
-  positiveinfinity: "PINF",
+  PINF: "PINF",
 
   /**
    * un-encoded
    */
-  unencoded: "UNC",
+  UNC: "UNC",
 
   /**
    * masked
    */
-  masked: "MSK",
+  MSK: "MSK",
 
   /**
    * not applicable
    */
-  notapplicable: "NA",
+  NA: "NA",
 
   /**
    * unknown
    */
-  unknown: "UNK",
+  UNK: "UNK",
 
   /**
    * asked but unknown
    */
-  askedbutunknown: "ASKU",
+  ASKU: "ASKU",
 
   /**
    * temporarily unavailable
    */
-  temporarilyunavailable: "NAV",
+  NAV: "NAV",
 
   /**
    * not asked
    */
-  notasked: "NASK",
+  NASK: "NASK",
 
   /**
    * Not available
    */
-  Notavailable: "NAVU",
+  NAVU: "NAVU",
 
   /**
    * Sufficient Quantity
    */
-  SufficientQuantity: "QS",
+  QS: "QS",
 
   /**
    * trace
    */
-  trace: "TRC",
+  TRC: "TRC",
 } as const;
 
 /**

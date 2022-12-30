@@ -6,57 +6,57 @@ export const ObservationLivingExpenseValueCode = {
   /**
    * living expense
    */
-  livingexpense: "LIVEXP",
+  LIVEXP: "LIVEXP",
 
   /**
    * clothing expense
    */
-  clothingexpense: "CLOTH",
+  CLOTH: "CLOTH",
 
   /**
    * food expense
    */
-  foodexpense: "FOOD",
+  FOOD: "FOOD",
 
   /**
    * health expense
    */
-  healthexpense: "HEALTH",
+  HEALTH: "HEALTH",
 
   /**
    * household expense
    */
-  householdexpense: "HOUSE",
+  HOUSE: "HOUSE",
 
   /**
    * legal expense
    */
-  legalexpense: "LEGAL",
+  LEGAL: "LEGAL",
 
   /**
    * mortgage
    */
-  mortgage: "MORTG",
+  MORTG: "MORTG",
 
   /**
    * rent
    */
-  rent: "RENT",
+  RENT: "RENT",
 
   /**
    * sundry expense
    */
-  sundryexpense: "SUNDRY",
+  SUNDRY: "SUNDRY",
 
   /**
    * transportation expense
    */
-  transportationexpense: "TRANS",
+  TRANS: "TRANS",
 
   /**
    * utility expense
    */
-  utilityexpense: "UTIL",
+  UTIL: "UTIL",
 } as const;
 
 /**

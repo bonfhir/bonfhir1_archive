@@ -6,27 +6,27 @@ export const GoalCategoryCode = {
   /**
    * Dietary
    */
-  Dietary: "dietary",
+  dietary: "dietary",
 
   /**
    * Safety
    */
-  Safety: "safety",
+  safety: "safety",
 
   /**
    * Behavioral
    */
-  Behavioral: "behavioral",
+  behavioral: "behavioral",
 
   /**
    * Nursing
    */
-  Nursing: "nursing",
+  nursing: "nursing",
 
   /**
    * Physiotherapy
    */
-  Physiotherapy: "physiotherapy",
+  physiotherapy: "physiotherapy",
 } as const;
 
 /**

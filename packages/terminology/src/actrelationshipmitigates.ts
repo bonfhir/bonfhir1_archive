@@ -6,12 +6,12 @@ export const ActRelationshipMitigatesCode = {
   /**
    * mitigates
    */
-  mitigates: "MITGT",
+  MITGT: "MITGT",
 
   /**
    * recovers
    */
-  recovers: "RCVY",
+  RCVY: "RCVY",
 } as const;
 
 /**

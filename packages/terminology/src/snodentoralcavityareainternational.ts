@@ -12,22 +12,22 @@ export const SnodentOralCavityAreaInternationalCode = {
   /**
    * Anterior segment of maxilla
    */
-  Anteriorsegmentofmaxilla: "210963D",
+  "210963D": "210963D",
 
   /**
    * Posterior segment of maxilla
    */
-  Posteriorsegmentofmaxilla: "210964D",
+  "210964D": "210964D",
 
   /**
    * Anterior part of lower alveolar ridge
    */
-  Anteriorpartofloweralveolarridge: "210965D",
+  "210965D": "210965D",
 
   /**
    * Posterior part of lower alveolar ridge
    */
-  Posteriorpartofloweralveolarridge: "210966D",
+  "210966D": "210966D",
 } as const;
 
 /**

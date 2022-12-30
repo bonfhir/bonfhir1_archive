@@ -6,62 +6,62 @@ export const ExampleDiagnosisTypeCodesCode = {
   /**
    * Admitting Diagnosis
    */
-  AdmittingDiagnosis: "admitting",
+  admitting: "admitting",
 
   /**
    * Clinical Diagnosis
    */
-  ClinicalDiagnosis: "clinical",
+  clinical: "clinical",
 
   /**
    * Differential Diagnosis
    */
-  DifferentialDiagnosis: "differential",
+  differential: "differential",
 
   /**
    * Discharge Diagnosis
    */
-  DischargeDiagnosis: "discharge",
+  discharge: "discharge",
 
   /**
    * Laboratory Diagnosis
    */
-  LaboratoryDiagnosis: "laboratory",
+  laboratory: "laboratory",
 
   /**
    * Nursing Diagnosis
    */
-  NursingDiagnosis: "nursing",
+  nursing: "nursing",
 
   /**
    * Prenatal Diagnosis
    */
-  PrenatalDiagnosis: "prenatal",
+  prenatal: "prenatal",
 
   /**
    * Principal Diagnosis
    */
-  PrincipalDiagnosis: "principal",
+  principal: "principal",
 
   /**
    * Radiology Diagnosis
    */
-  RadiologyDiagnosis: "radiology",
+  radiology: "radiology",
 
   /**
    * Remote Diagnosis
    */
-  RemoteDiagnosis: "remote",
+  remote: "remote",
 
   /**
    * Retrospective Diagnosis
    */
-  RetrospectiveDiagnosis: "retrospective",
+  retrospective: "retrospective",
 
   /**
    * Self Diagnosis
    */
-  SelfDiagnosis: "self",
+  self: "self",
 } as const;
 
 /**

@@ -10,7 +10,7 @@ export const RoleClassPolicyHolderCode = {
   /**
    * policy holder
    */
-  policyholder: "POLHOLD",
+  POLHOLD: "POLHOLD",
 } as const;
 
 /**

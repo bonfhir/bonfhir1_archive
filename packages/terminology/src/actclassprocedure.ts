@@ -8,22 +8,22 @@ export const ActClassProcedureCode = {
   /**
    * procedure
    */
-  procedure: "PROC",
+  PROC: "PROC",
 
   /**
    * substance administration
    */
-  substanceadministration: "SBADM",
+  SBADM: "SBADM",
 
   /**
    * Substance Extraction
    */
-  SubstanceExtraction: "SBEXT",
+  SBEXT: "SBEXT",
 
   /**
    * Specimen Collection
    */
-  SpecimenCollection: "SPECCOLLECT",
+  SPECCOLLECT: "SPECCOLLECT",
 } as const;
 
 /**

@@ -6,132 +6,132 @@ export const ActFinancialStatusObservationValueCode = {
   /**
    * ActFinancialStatusObservationValue
    */
-  ActFinancialStatusObservationValue: "_ActFinancialStatusObservationValue",
+  _ActFinancialStatusObservationValue: "_ActFinancialStatusObservationValue",
 
   /**
    * asset
    */
-  asset: "ASSET",
+  ASSET: "ASSET",
 
   /**
    * annuity
    */
-  annuity: "ANNUITY",
+  ANNUITY: "ANNUITY",
 
   /**
    * real property
    */
-  realproperty: "PROP",
+  PROP: "PROP",
 
   /**
    * retirement investment account
    */
-  retirementinvestmentaccount: "RETACCT",
+  RETACCT: "RETACCT",
 
   /**
    * trust
    */
-  trust: "TRUST",
+  TRUST: "TRUST",
 
   /**
    * income
    */
-  income: "INCOME",
+  INCOME: "INCOME",
 
   /**
    * child support
    */
-  childsupport: "CHILD",
+  CHILD: "CHILD",
 
   /**
    * disability pay
    */
-  disabilitypay: "DISABL",
+  DISABL: "DISABL",
 
   /**
    * investment income
    */
-  investmentincome: "INVEST",
+  INVEST: "INVEST",
 
   /**
    * paid employment
    */
-  paidemployment: "PAY",
+  PAY: "PAY",
 
   /**
    * retirement pay
    */
-  retirementpay: "RETIRE",
+  RETIRE: "RETIRE",
 
   /**
    * spousal or partner support
    */
-  spousalorpartnersupport: "SPOUSAL",
+  SPOUSAL: "SPOUSAL",
 
   /**
    * income supplement
    */
-  incomesupplement: "SUPPLE",
+  SUPPLE: "SUPPLE",
 
   /**
    * tax obligation
    */
-  taxobligation: "TAX",
+  TAX: "TAX",
 
   /**
    * living expense
    */
-  livingexpense: "LIVEXP",
+  LIVEXP: "LIVEXP",
 
   /**
    * clothing expense
    */
-  clothingexpense: "CLOTH",
+  CLOTH: "CLOTH",
 
   /**
    * food expense
    */
-  foodexpense: "FOOD",
+  FOOD: "FOOD",
 
   /**
    * health expense
    */
-  healthexpense: "HEALTH",
+  HEALTH: "HEALTH",
 
   /**
    * household expense
    */
-  householdexpense: "HOUSE",
+  HOUSE: "HOUSE",
 
   /**
    * legal expense
    */
-  legalexpense: "LEGAL",
+  LEGAL: "LEGAL",
 
   /**
    * mortgage
    */
-  mortgage: "MORTG",
+  MORTG: "MORTG",
 
   /**
    * rent
    */
-  rent: "RENT",
+  RENT: "RENT",
 
   /**
    * sundry expense
    */
-  sundryexpense: "SUNDRY",
+  SUNDRY: "SUNDRY",
 
   /**
    * transportation expense
    */
-  transportationexpense: "TRANS",
+  TRANS: "TRANS",
 
   /**
    * utility expense
    */
-  utilityexpense: "UTIL",
+  UTIL: "UTIL",
 } as const;
 
 /**

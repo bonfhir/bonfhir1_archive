@@ -6,12 +6,12 @@ export const ActRelationshipRefersToCode = {
   /**
    * refers to
    */
-  refersto: "REFR",
+  REFR: "REFR",
 
   /**
    * uses
    */
-  uses: "USE",
+  USE: "USE",
 } as const;
 
 /**

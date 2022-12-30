@@ -6,12 +6,12 @@ export const RaceAmericanIndianCaddoCode = {
   /**
    * Caddo
    */
-  Caddo: "1041-3",
+  "1041-3": "1041-3",
 
   /**
    * Oklahoma Cado
    */
-  OklahomaCado: "1042-1",
+  "1042-1": "1042-1",
 } as const;
 
 /**

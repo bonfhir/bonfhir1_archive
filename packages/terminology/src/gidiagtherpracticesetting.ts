@@ -6,12 +6,12 @@ export const GIDiagTherPracticeSettingCode = {
   /**
    * Gastroenterology diagnostics or therapeutics lab
    */
-  Gastroenterologydiagnosticsortherapeuticslab: "GIDX",
+  GIDX: "GIDX",
 
   /**
    * Endoscopy lab
    */
-  Endoscopylab: "ENDOS",
+  ENDOS: "ENDOS",
 } as const;
 
 /**

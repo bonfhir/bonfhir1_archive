@@ -6,12 +6,12 @@ export const ActInvoiceDetailDrugProductCodeCode = {
   /**
    * Global Trade Item Number
    */
-  GlobalTradeItemNumber: "GTIN",
+  GTIN: "GTIN",
 
   /**
    * Universal Product Code
    */
-  UniversalProductCode: "UPC",
+  UPC: "UPC",
 } as const;
 
 /**

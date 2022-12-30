@@ -6,87 +6,87 @@ export const ActSpecObsCodeCode = {
   /**
    * ActSpecObsArtBldCode
    */
-  ActSpecObsArtBldCode: "ARTBLD",
+  ARTBLD: "ARTBLD",
 
   /**
    * ActSpecObsDilutionCode
    */
-  ActSpecObsDilutionCode: "DILUTION",
+  DILUTION: "DILUTION",
 
   /**
    * Auto-High Dilution
    */
-  AutoHighDilution: "AUTO-HIGH",
+  "AUTO-HIGH": "AUTO-HIGH",
 
   /**
    * Auto-Low Dilution
    */
-  AutoLowDilution: "AUTO-LOW",
+  "AUTO-LOW": "AUTO-LOW",
 
   /**
    * Pre-Dilution
    */
-  PreDilution: "PRE",
+  PRE: "PRE",
 
   /**
    * Rerun Dilution
    */
-  RerunDilution: "RERUN",
+  RERUN: "RERUN",
 
   /**
    * ActSpecObsEvntfctsCode
    */
-  ActSpecObsEvntfctsCode: "EVNFCTS",
+  EVNFCTS: "EVNFCTS",
 
   /**
    * ActSpecObsInterferenceCode
    */
-  ActSpecObsInterferenceCode: "INTFR",
+  INTFR: "INTFR",
 
   /**
    * Fibrin
    */
-  Fibrin: "FIBRIN",
+  FIBRIN: "FIBRIN",
 
   /**
    * Hemolysis
    */
-  Hemolysis: "HEMOLYSIS",
+  HEMOLYSIS: "HEMOLYSIS",
 
   /**
    * Icterus
    */
-  Icterus: "ICTERUS",
+  ICTERUS: "ICTERUS",
 
   /**
    * Lipemia
    */
-  Lipemia: "LIPEMIA",
+  LIPEMIA: "LIPEMIA",
 
   /**
    * ActSpecObsVolumeCode
    */
-  ActSpecObsVolumeCode: "VOLUME",
+  VOLUME: "VOLUME",
 
   /**
    * Available Volume
    */
-  AvailableVolume: "AVAILABLE",
+  AVAILABLE: "AVAILABLE",
 
   /**
    * Consumption Volume
    */
-  ConsumptionVolume: "CONSUMPTION",
+  CONSUMPTION: "CONSUMPTION",
 
   /**
    * Current Volume
    */
-  CurrentVolume: "CURRENT",
+  CURRENT: "CURRENT",
 
   /**
    * Initial Volume
    */
-  InitialVolume: "INITIAL",
+  INITIAL: "INITIAL",
 } as const;
 
 /**

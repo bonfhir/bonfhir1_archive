@@ -6,12 +6,12 @@ export const PaymentAdjustmentReasonCodesCode = {
   /**
    * Prior Payment Reversal
    */
-  PriorPaymentReversal: "a001",
+  a001: "a001",
 
   /**
    * Prior Overpayment
    */
-  PriorOverpayment: "a002",
+  a002: "a002",
 } as const;
 
 /**

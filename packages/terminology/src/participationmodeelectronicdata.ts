@@ -6,7 +6,7 @@ export const ParticipationModeElectronicDataCode = {
   /**
    * electronic data
    */
-  electronicdata: "ELECTRONIC",
+  ELECTRONIC: "ELECTRONIC",
 } as const;
 
 /**

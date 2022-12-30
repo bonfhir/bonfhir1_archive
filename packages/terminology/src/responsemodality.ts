@@ -6,17 +6,17 @@ export const ResponseModalityCode = {
   /**
    * Batch
    */
-  Batch: "B",
+  B: "B",
 
   /**
    * Real Time
    */
-  RealTime: "R",
+  R: "R",
 
   /**
    * Bolus
    */
-  Bolus: "T",
+  T: "T",
 } as const;
 
 /**

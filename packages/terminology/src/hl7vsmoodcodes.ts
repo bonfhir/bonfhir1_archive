@@ -6,47 +6,47 @@ export const Hl7VSMoodCodesCode = {
   /**
    * intent
    */
-  intent: "INT",
+  INT: "INT",
 
   /**
    * appointment
    */
-  appointment: "APT",
+  APT: "APT",
 
   /**
    * appointment request
    */
-  appointmentrequest: "ARQ",
+  ARQ: "ARQ",
 
   /**
    * promise
    */
-  promise: "PRMS",
+  PRMS: "PRMS",
 
   /**
    * proposal
    */
-  proposal: "PRP",
+  PRP: "PRP",
 
   /**
    * request
    */
-  request: "RQO",
+  RQO: "RQO",
 
   /**
    * event (occurrence)
    */
-  eventoccurrence: "EVN",
+  EVN: "EVN",
 
   /**
    * event criterion
    */
-  eventcriterion: "EVN.CRT",
+  "EVN.CRT": "EVN.CRT",
 
   /**
    * expectation
    */
-  expectation: "EXPEC",
+  EXPEC: "EXPEC",
 } as const;
 
 /**

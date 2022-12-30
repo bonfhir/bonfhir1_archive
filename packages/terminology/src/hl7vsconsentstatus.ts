@@ -6,32 +6,32 @@ export const Hl7VSConsentStatusCode = {
   /**
    * Active - Consent has been granted
    */
-  ActiveConsenthasbeengranted: "A",
+  A: "A",
 
   /**
    * Limited - Consent has been granted with limitations
    */
-  LimitedConsenthasbeengrantedwithlimitations: "L",
+  L: "L",
 
   /**
    * Refused - Consent has been refused
    */
-  RefusedConsenthasbeenrefused: "R",
+  R: "R",
 
   /**
    * Pending - Consent has not yet been sought
    */
-  PendingConsenthasnotyetbeensought: "P",
+  P: "P",
 
   /**
    * Rescinded - Consent was initially granted, but was subsequently revoked or ended.
    */
-  RescindedConsentwasinitiallygrantedbutwassubsequentlyrevokedorended: "X",
+  X: "X",
 
   /**
    * Bypassed (Consent not sought)
    */
-  BypassedConsentnotsought: "B",
+  B: "B",
 } as const;
 
 /**

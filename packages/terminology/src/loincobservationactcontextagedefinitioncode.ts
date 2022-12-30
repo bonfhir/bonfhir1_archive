@@ -6,7 +6,7 @@ export const LOINCObservationActContextAgeDefinitionCodeCode = {
   /**
    * Age
    */
-  Age: "30525-0",
+  "30525-0": "30525-0",
 } as const;
 
 /**

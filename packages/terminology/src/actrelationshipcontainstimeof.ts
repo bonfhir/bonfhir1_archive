@@ -6,7 +6,7 @@ export const ActRelationshipContainsTimeOfCode = {
   /**
    * contains time of
    */
-  containstimeof: "SBSEAE",
+  SBSEAE: "SBSEAE",
 } as const;
 
 /**

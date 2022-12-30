@@ -6,17 +6,17 @@ export const Validation_typeCode = {
   /**
    * Nothing
    */
-  Nothing: "nothing",
+  nothing: "nothing",
 
   /**
    * Primary Source
    */
-  PrimarySource: "primary",
+  primary: "primary",
 
   /**
    * Multiple Sources
    */
-  MultipleSources: "multiple",
+  multiple: "multiple",
 } as const;
 
 /**

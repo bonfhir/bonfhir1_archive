@@ -6,17 +6,17 @@ export const MedicationRequestCourseOfTherapyCodesCode = {
   /**
    * Continuous long term therapy
    */
-  Continuouslongtermtherapy: "continuous",
+  continuous: "continuous",
 
   /**
    * Short course (acute) therapy
    */
-  Shortcourseacutetherapy: "acute",
+  acute: "acute",
 
   /**
    * Seasonal
    */
-  Seasonal: "seasonal",
+  seasonal: "seasonal",
 } as const;
 
 /**

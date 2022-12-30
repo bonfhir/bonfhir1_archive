@@ -6,87 +6,87 @@ export const Hl7VSSpecialHandlingConsiderationsCode = {
   /**
    * Body temperature
    */
-  Bodytemperature: "C37",
+  C37: "C37",
 
   /**
    * Ambient temperature
    */
-  Ambienttemperature: "AMB",
+  AMB: "AMB",
 
   /**
    * Critical ambient temperature
    */
-  Criticalambienttemperature: "CAMB",
+  CAMB: "CAMB",
 
   /**
    * Refrigerated temperature
    */
-  Refrigeratedtemperature: "REF",
+  REF: "REF",
 
   /**
    * Critical refrigerated temperature
    */
-  Criticalrefrigeratedtemperature: "CREF",
+  CREF: "CREF",
 
   /**
    * Frozen temperature
    */
-  Frozentemperature: "FRZ",
+  FRZ: "FRZ",
 
   /**
    * Critical frozen temperature
    */
-  Criticalfrozentemperature: "CFRZ",
+  CFRZ: "CFRZ",
 
   /**
    * Deep frozen
    */
-  Deepfrozen: "DFRZ",
+  DFRZ: "DFRZ",
 
   /**
    * Ultra frozen
    */
-  Ultrafrozen: "UFRZ",
+  UFRZ: "UFRZ",
 
   /**
    * Liquid nitrogen
    */
-  Liquidnitrogen: "NTR",
+  NTR: "NTR",
 
   /**
    * Protect from light
    */
-  Protectfromlight: "PRTL",
+  PRTL: "PRTL",
 
   /**
    * Protect from air
    */
-  Protectfromair: "CATM",
+  CATM: "CATM",
 
   /**
    * Dry
    */
-  Dry: "DRY",
+  DRY: "DRY",
 
   /**
    * No shock
    */
-  Noshock: "PSO",
+  PSO: "PSO",
 
   /**
    * Do not shake
    */
-  Donotshake: "PSA",
+  PSA: "PSA",
 
   /**
    * Upright
    */
-  Upright: "UPR",
+  UPR: "UPR",
 
   /**
    * Metal Free
    */
-  MetalFree: "MTLF",
+  MTLF: "MTLF",
 } as const;
 
 /**

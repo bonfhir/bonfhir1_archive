@@ -6,142 +6,142 @@ export const Hl7VSRouteCode = {
   /**
    * Apply externally
    */
-  Applyexternally: "AP",
+  AP: "AP",
 
   /**
    * Chew
    */
-  Chew: "CH",
+  CH: "CH",
 
   /**
    * Dust
    */
-  Dust: "DU",
+  DU: "DU",
 
   /**
    * Ear
    */
-  Ear: "EA",
+  EA: "EA",
 
   /**
    * Eye
    */
-  Eye: "EY",
+  EY: "EY",
 
   /**
    * Intro-arterial
    */
-  Introarterial: "IA",
+  IA: "IA",
 
   /**
    * Intra-dermal
    */
-  Intradermal: "ID",
+  ID: "ID",
 
   /**
    * Infiltrate
    */
-  Infiltrate: "IF",
+  IF: "IF",
 
   /**
    * Inhalation
    */
-  Inhalation: "IH",
+  IH: "IH",
 
   /**
    * Intra-muscular
    */
-  Intramuscular: "IM",
+  IM: "IM",
 
   /**
    * Intra-nasal
    */
-  Intranasal: "IN",
+  IN: "IN",
 
   /**
    * Irrigate
    */
-  Irrigate: "IR",
+  IR: "IR",
 
   /**
    * Inserted
    */
-  Inserted: "IS",
+  IS: "IS",
 
   /**
    * Intrathecal
    */
-  Intrathecal: "IT",
+  IT: "IT",
 
   /**
    * Intravenous
    */
-  Intravenous: "IV",
+  IV: "IV",
 
   /**
    * Nebulized
    */
-  Nebulized: "NB",
+  NB: "NB",
 
   /**
    * Nathogasic
    */
-  Nathogasic: "NG",
+  NG: "NG",
 
   /**
    * Peri-anally
    */
-  Perianally: "PA",
+  PA: "PA",
 
   /**
    * Paint
    */
-  Paint: "PT",
+  PT: "PT",
 
   /**
    * IV push
    */
-  IVpush: "PU",
+  PU: "PU",
 
   /**
    * Rectally
    */
-  Rectally: "RC",
+  RC: "RC",
 
   /**
    * Shampoo
    */
-  Shampoo: "SH",
+  SH: "SH",
 
   /**
    * Sublingual
    */
-  Sublingual: "SL",
+  SL: "SL",
 
   /**
    * Soak
    */
-  Soak: "SO",
+  SO: "SO",
 
   /**
    * IV soluset
    */
-  IVsoluset: "SS",
+  SS: "SS",
 
   /**
    * Topically
    */
-  Topically: "TP",
+  TP: "TP",
 
   /**
    * Wash
    */
-  Wash: "WA",
+  WA: "WA",
 
   /**
    * Wipe
    */
-  Wipe: "WI",
+  WI: "WI",
 } as const;
 
 /**

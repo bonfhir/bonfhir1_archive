@@ -6,7 +6,7 @@ export const ActClassSpecimenObservationCode = {
   /**
    * specimen observation
    */
-  specimenobservation: "SPCOBS",
+  SPCOBS: "SPCOBS",
 } as const;
 
 /**

@@ -6,32 +6,32 @@ export const ActRelationshipDocumentHQMFCode = {
   /**
    * has component
    */
-  hascomponent: "COMP",
+  COMP: "COMP",
 
   /**
    * is derived from
    */
-  isderivedfrom: "DRIV",
+  DRIV: "DRIV",
 
   /**
    * replaces
    */
-  replaces: "RPLC",
+  RPLC: "RPLC",
 
   /**
    * uses
    */
-  uses: "USE",
+  USE: "USE",
 
   /**
    * Excerpts
    */
-  Excerpts: "XCRPT",
+  XCRPT: "XCRPT",
 
   /**
    * transformation
    */
-  transformation: "XFRM",
+  XFRM: "XFRM",
 } as const;
 
 /**

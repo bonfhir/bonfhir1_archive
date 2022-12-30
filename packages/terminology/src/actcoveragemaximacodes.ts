@@ -6,17 +6,17 @@ export const ActCoverageMaximaCodesCode = {
   /**
    * coverage maximum
    */
-  coveragemaximum: "COVMX",
+  COVMX: "COVMX",
 
   /**
    * life time maximum
    */
-  lifetimemaximum: "LFEMX",
+  LFEMX: "LFEMX",
 
   /**
    * period maximum
    */
-  periodmaximum: "PRDMX",
+  PRDMX: "PRDMX",
 } as const;
 
 /**

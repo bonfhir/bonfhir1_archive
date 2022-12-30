@@ -6,12 +6,12 @@ export const RaceAmericanIndianChumashCode = {
   /**
    * Chumash
    */
-  Chumash: "1162-7",
+  "1162-7": "1162-7",
 
   /**
    * Santa Ynez
    */
-  SantaYnez: "1163-5",
+  "1163-5": "1163-5",
 } as const;
 
 /**

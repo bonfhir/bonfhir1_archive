@@ -6,67 +6,67 @@ export const ActAdjudicationCodeCode = {
   /**
    * ActAdjudicationGroupCode
    */
-  ActAdjudicationGroupCode: "_ActAdjudicationGroupCode",
+  _ActAdjudicationGroupCode: "_ActAdjudicationGroupCode",
 
   /**
    * contract
    */
-  contract: "CONT",
+  CONT: "CONT",
 
   /**
    * day
    */
-  day: "DAY",
+  DAY: "DAY",
 
   /**
    * location
    */
-  location: "LOC",
+  LOC: "LOC",
 
   /**
    * month
    */
-  month: "MONTH",
+  MONTH: "MONTH",
 
   /**
    * period
    */
-  period: "PERIOD",
+  PERIOD: "PERIOD",
 
   /**
    * provider
    */
-  provider: "PROV",
+  PROV: "PROV",
 
   /**
    * week
    */
-  week: "WEEK",
+  WEEK: "WEEK",
 
   /**
    * year
    */
-  year: "YEAR",
+  YEAR: "YEAR",
 
   /**
    * adjudicated with adjustments
    */
-  adjudicatedwithadjustments: "AA",
+  AA: "AA",
 
   /**
    * adjudicated with adjustments and no financial impact
    */
-  adjudicatedwithadjustmentsandnofinancialimpact: "ANF",
+  ANF: "ANF",
 
   /**
    * adjudicated as refused
    */
-  adjudicatedasrefused: "AR",
+  AR: "AR",
 
   /**
    * adjudicated as submitted
    */
-  adjudicatedassubmitted: "AS",
+  AS: "AS",
 } as const;
 
 /**

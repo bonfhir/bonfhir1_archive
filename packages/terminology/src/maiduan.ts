@@ -6,17 +6,17 @@ export const MaiduanCode = {
   /**
    * Northwest Maidu
    */
-  NorthwestMaidu: "x-MAI",
+  "x-MAI": "x-MAI",
 
   /**
    * Northeast Maidu
    */
-  NortheastMaidu: "x-NMU",
+  "x-NMU": "x-NMU",
 
   /**
    * Nisenan
    */
-  Nisenan: "x-NSZ",
+  "x-NSZ": "x-NSZ",
 } as const;
 
 /**

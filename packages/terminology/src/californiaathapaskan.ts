@@ -6,12 +6,12 @@ export const CaliforniaAthapaskanCode = {
   /**
    * Hupa
    */
-  Hupa: "x-HUP",
+  "x-HUP": "x-HUP",
 
   /**
    * Cahto
    */
-  Cahto: "x-KTW",
+  "x-KTW": "x-KTW",
 } as const;
 
 /**

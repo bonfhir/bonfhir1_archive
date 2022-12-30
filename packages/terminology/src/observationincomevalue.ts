@@ -6,47 +6,47 @@ export const ObservationIncomeValueCode = {
   /**
    * income
    */
-  income: "INCOME",
+  INCOME: "INCOME",
 
   /**
    * child support
    */
-  childsupport: "CHILD",
+  CHILD: "CHILD",
 
   /**
    * disability pay
    */
-  disabilitypay: "DISABL",
+  DISABL: "DISABL",
 
   /**
    * investment income
    */
-  investmentincome: "INVEST",
+  INVEST: "INVEST",
 
   /**
    * paid employment
    */
-  paidemployment: "PAY",
+  PAY: "PAY",
 
   /**
    * retirement pay
    */
-  retirementpay: "RETIRE",
+  RETIRE: "RETIRE",
 
   /**
    * spousal or partner support
    */
-  spousalorpartnersupport: "SPOUSAL",
+  SPOUSAL: "SPOUSAL",
 
   /**
    * income supplement
    */
-  incomesupplement: "SUPPLE",
+  SUPPLE: "SUPPLE",
 
   /**
    * tax obligation
    */
-  taxobligation: "TAX",
+  TAX: "TAX",
 } as const;
 
 /**

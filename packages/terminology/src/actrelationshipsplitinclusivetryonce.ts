@@ -6,7 +6,7 @@ export const ActRelationshipSplitInclusiveTryOnceCode = {
   /**
    * inclusive try once
    */
-  inclusivetryonce: "I1",
+  I1: "I1",
 } as const;
 
 /**

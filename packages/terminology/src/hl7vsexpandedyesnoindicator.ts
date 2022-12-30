@@ -6,47 +6,47 @@ export const Hl7VSExpandedYesNoIndicatorCode = {
   /**
    * Yes
    */
-  Yes: "Y",
+  Y: "Y",
 
   /**
    * No
    */
-  No: "N",
+  N: "N",
 
   /**
    * No Information
    */
-  NoInformation: "NI",
+  NI: "NI",
 
   /**
    * not applicable
    */
-  notapplicable: "NA",
+  NA: "NA",
 
   /**
    * unknown
    */
-  unknown: "UNK",
+  UNK: "UNK",
 
   /**
    * not asked
    */
-  notasked: "NASK",
+  NASK: "NASK",
 
   /**
    * asked but unknown
    */
-  askedbutunknown: "ASKU",
+  ASKU: "ASKU",
 
   /**
    * temporarily unavailable
    */
-  temporarilyunavailable: "NAV",
+  NAV: "NAV",
 
   /**
    * not present
    */
-  notpresent: "NP",
+  NP: "NP",
 } as const;
 
 /**

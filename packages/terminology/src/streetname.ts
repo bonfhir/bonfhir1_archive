@@ -6,7 +6,7 @@ export const StreetNameCode = {
   /**
    * street name
    */
-  streetname: "STR",
+  STR: "STR",
 } as const;
 
 /**

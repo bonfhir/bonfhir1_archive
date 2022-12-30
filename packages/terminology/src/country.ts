@@ -6,1247 +6,1247 @@ export const CountryCode = {
   /**
    * Aruba
    */
-  Aruba: "ABW",
+  ABW: "ABW",
 
   /**
    * Afghanistan
    */
-  Afghanistan: "AFG",
+  AFG: "AFG",
 
   /**
    * Angola
    */
-  Angola: "AGO",
+  AGO: "AGO",
 
   /**
    * Anguilla
    */
-  Anguilla: "AIA",
+  AIA: "AIA",
 
   /**
    * Eland Islands
    */
-  ElandIslands: "ALA",
+  ALA: "ALA",
 
   /**
    * Albania
    */
-  Albania: "ALB",
+  ALB: "ALB",
 
   /**
    * Andorra
    */
-  Andorra: "AND",
+  AND: "AND",
 
   /**
    * United Arab Emirates
    */
-  UnitedArabEmirates: "ARE",
+  ARE: "ARE",
 
   /**
    * Argentina
    */
-  Argentina: "ARG",
+  ARG: "ARG",
 
   /**
    * Armenia
    */
-  Armenia: "ARM",
+  ARM: "ARM",
 
   /**
    * American Samoa
    */
-  AmericanSamoa: "ASM",
+  ASM: "ASM",
 
   /**
    * Antarctica
    */
-  Antarctica: "ATA",
+  ATA: "ATA",
 
   /**
    * French Southern Territories
    */
-  FrenchSouthernTerritories: "ATF",
+  ATF: "ATF",
 
   /**
    * Antigua and Barbuda
    */
-  AntiguaandBarbuda: "ATG",
+  ATG: "ATG",
 
   /**
    * Australia
    */
-  Australia: "AUS",
+  AUS: "AUS",
 
   /**
    * Austria
    */
-  Austria: "AUT",
+  AUT: "AUT",
 
   /**
    * Azerbaijan
    */
-  Azerbaijan: "AZE",
+  AZE: "AZE",
 
   /**
    * Burundi
    */
-  Burundi: "BDI",
+  BDI: "BDI",
 
   /**
    * Belgium
    */
-  Belgium: "BEL",
+  BEL: "BEL",
 
   /**
    * Benin
    */
-  Benin: "BEN",
+  BEN: "BEN",
 
   /**
    * Bonaire, Sint Eustatius and Saba
    */
-  BonaireSintEustatiusandSaba: "BES",
+  BES: "BES",
 
   /**
    * Burkina Faso
    */
-  BurkinaFaso: "BFA",
+  BFA: "BFA",
 
   /**
    * Bangladesh
    */
-  Bangladesh: "BGD",
+  BGD: "BGD",
 
   /**
    * Bulgaria
    */
-  Bulgaria: "BGR",
+  BGR: "BGR",
 
   /**
    * Bahrain
    */
-  Bahrain: "BHR",
+  BHR: "BHR",
 
   /**
    * Bahamas
    */
-  Bahamas: "BHS",
+  BHS: "BHS",
 
   /**
    * Bosnia and Herzegovina
    */
-  BosniaandHerzegovina: "BIH",
+  BIH: "BIH",
 
   /**
    * Saint Barthilemy
    */
-  SaintBarthilemy: "BLM",
+  BLM: "BLM",
 
   /**
    * Belarus
    */
-  Belarus: "BLR",
+  BLR: "BLR",
 
   /**
    * Belize
    */
-  Belize: "BLZ",
+  BLZ: "BLZ",
 
   /**
    * Bermuda
    */
-  Bermuda: "BMU",
+  BMU: "BMU",
 
   /**
    * Bolivia, Plurinational State of
    */
-  BoliviaPlurinationalStateof: "BOL",
+  BOL: "BOL",
 
   /**
    * Brazil
    */
-  Brazil: "BRA",
+  BRA: "BRA",
 
   /**
    * Barbados
    */
-  Barbados: "BRB",
+  BRB: "BRB",
 
   /**
    * Brunei Darussalam
    */
-  BruneiDarussalam: "BRN",
+  BRN: "BRN",
 
   /**
    * Bhutan
    */
-  Bhutan: "BTN",
+  BTN: "BTN",
 
   /**
    * Bouvet Island
    */
-  BouvetIsland: "BVT",
+  BVT: "BVT",
 
   /**
    * Botswana
    */
-  Botswana: "BWA",
+  BWA: "BWA",
 
   /**
    * Central African Republic
    */
-  CentralAfricanRepublic: "CAF",
+  CAF: "CAF",
 
   /**
    * Canada
    */
-  Canada: "CAN",
+  CAN: "CAN",
 
   /**
    * Cocos (Keeling) Islands
    */
-  CocosKeelingIslands: "CCK",
+  CCK: "CCK",
 
   /**
    * Switzerland
    */
-  Switzerland: "CHE",
+  CHE: "CHE",
 
   /**
    * Chile
    */
-  Chile: "CHL",
+  CHL: "CHL",
 
   /**
    * China
    */
-  China: "CHN",
+  CHN: "CHN",
 
   /**
    * Ctte d'Ivoire
    */
-  CttedIvoire: "CIV",
+  CIV: "CIV",
 
   /**
    * Cameroon
    */
-  Cameroon: "CMR",
+  CMR: "CMR",
 
   /**
    * Congo, the Democratic Republic of the
    */
-  CongotheDemocraticRepublicofthe: "COD",
+  COD: "COD",
 
   /**
    * Congo
    */
-  Congo: "COG",
+  COG: "COG",
 
   /**
    * Cook Islands
    */
-  CookIslands: "COK",
+  COK: "COK",
 
   /**
    * Colombia
    */
-  Colombia: "COL",
+  COL: "COL",
 
   /**
    * Comoros
    */
-  Comoros: "COM",
+  COM: "COM",
 
   /**
    * Cabo Verde
    */
-  CaboVerde: "CPV",
+  CPV: "CPV",
 
   /**
    * Costa Rica
    */
-  CostaRica: "CRI",
+  CRI: "CRI",
 
   /**
    * Cuba
    */
-  Cuba: "CUB",
+  CUB: "CUB",
 
   /**
    * Curagao
    */
-  Curagao: "CUW",
+  CUW: "CUW",
 
   /**
    * Christmas Island
    */
-  ChristmasIsland: "CXR",
+  CXR: "CXR",
 
   /**
    * Cayman Islands
    */
-  CaymanIslands: "CYM",
+  CYM: "CYM",
 
   /**
    * Cyprus
    */
-  Cyprus: "CYP",
+  CYP: "CYP",
 
   /**
    * Czechia
    */
-  Czechia: "CZE",
+  CZE: "CZE",
 
   /**
    * Germany
    */
-  Germany: "DEU",
+  DEU: "DEU",
 
   /**
    * Djibouti
    */
-  Djibouti: "DJI",
+  DJI: "DJI",
 
   /**
    * Dominica
    */
-  Dominica: "DMA",
+  DMA: "DMA",
 
   /**
    * Denmark
    */
-  Denmark: "DNK",
+  DNK: "DNK",
 
   /**
    * Dominican Republic
    */
-  DominicanRepublic: "DOM",
+  DOM: "DOM",
 
   /**
    * Algeria
    */
-  Algeria: "DZA",
+  DZA: "DZA",
 
   /**
    * Ecuador
    */
-  Ecuador: "ECU",
+  ECU: "ECU",
 
   /**
    * Egypt
    */
-  Egypt: "EGY",
+  EGY: "EGY",
 
   /**
    * Eritrea
    */
-  Eritrea: "ERI",
+  ERI: "ERI",
 
   /**
    * Western Sahara
    */
-  WesternSahara: "ESH",
+  ESH: "ESH",
 
   /**
    * Spain
    */
-  Spain: "ESP",
+  ESP: "ESP",
 
   /**
    * Estonia
    */
-  Estonia: "EST",
+  EST: "EST",
 
   /**
    * Ethiopia
    */
-  Ethiopia: "ETH",
+  ETH: "ETH",
 
   /**
    * Finland
    */
-  Finland: "FIN",
+  FIN: "FIN",
 
   /**
    * Fiji
    */
-  Fiji: "FJI",
+  FJI: "FJI",
 
   /**
    * Falkland Islands (Malvinas)
    */
-  FalklandIslandsMalvinas: "FLK",
+  FLK: "FLK",
 
   /**
    * France
    */
-  France: "FRA",
+  FRA: "FRA",
 
   /**
    * Faroe Islands
    */
-  FaroeIslands: "FRO",
+  FRO: "FRO",
 
   /**
    * Micronesia, Federated States of
    */
-  MicronesiaFederatedStatesof: "FSM",
+  FSM: "FSM",
 
   /**
    * Gabon
    */
-  Gabon: "GAB",
+  GAB: "GAB",
 
   /**
    * United Kingdom
    */
-  UnitedKingdom: "GBR",
+  GBR: "GBR",
 
   /**
    * Georgia
    */
-  Georgia: "GEO",
+  GEO: "GEO",
 
   /**
    * Guernsey
    */
-  Guernsey: "GGY",
+  GGY: "GGY",
 
   /**
    * Ghana
    */
-  Ghana: "GHA",
+  GHA: "GHA",
 
   /**
    * Gibraltar
    */
-  Gibraltar: "GIB",
+  GIB: "GIB",
 
   /**
    * Guinea
    */
-  Guinea: "GIN",
+  GIN: "GIN",
 
   /**
    * Guadeloupe
    */
-  Guadeloupe: "GLP",
+  GLP: "GLP",
 
   /**
    * Gambia
    */
-  Gambia: "GMB",
+  GMB: "GMB",
 
   /**
    * Guinea-Bissau
    */
-  GuineaBissau: "GNB",
+  GNB: "GNB",
 
   /**
    * Equatorial Guinea
    */
-  EquatorialGuinea: "GNQ",
+  GNQ: "GNQ",
 
   /**
    * Greece
    */
-  Greece: "GRC",
+  GRC: "GRC",
 
   /**
    * Grenada
    */
-  Grenada: "GRD",
+  GRD: "GRD",
 
   /**
    * Greenland
    */
-  Greenland: "GRL",
+  GRL: "GRL",
 
   /**
    * Guatemala
    */
-  Guatemala: "GTM",
+  GTM: "GTM",
 
   /**
    * French Guiana
    */
-  FrenchGuiana: "GUF",
+  GUF: "GUF",
 
   /**
    * Guam
    */
-  Guam: "GUM",
+  GUM: "GUM",
 
   /**
    * Guyana
    */
-  Guyana: "GUY",
+  GUY: "GUY",
 
   /**
    * Hong Kong
    */
-  HongKong: "HKG",
+  HKG: "HKG",
 
   /**
    * Heard Island and McDonald Islands
    */
-  HeardIslandandMcDonaldIslands: "HMD",
+  HMD: "HMD",
 
   /**
    * Honduras
    */
-  Honduras: "HND",
+  HND: "HND",
 
   /**
    * Croatia
    */
-  Croatia: "HRV",
+  HRV: "HRV",
 
   /**
    * Haiti
    */
-  Haiti: "HTI",
+  HTI: "HTI",
 
   /**
    * Hungary
    */
-  Hungary: "HUN",
+  HUN: "HUN",
 
   /**
    * Indonesia
    */
-  Indonesia: "IDN",
+  IDN: "IDN",
 
   /**
    * Isle of Man
    */
-  IsleofMan: "IMN",
+  IMN: "IMN",
 
   /**
    * India
    */
-  India: "IND",
+  IND: "IND",
 
   /**
    * British Indian Ocean Territory
    */
-  BritishIndianOceanTerritory: "IOT",
+  IOT: "IOT",
 
   /**
    * Ireland
    */
-  Ireland: "IRL",
+  IRL: "IRL",
 
   /**
    * Iran, Islamic Republic of
    */
-  IranIslamicRepublicof: "IRN",
+  IRN: "IRN",
 
   /**
    * Iraq
    */
-  Iraq: "IRQ",
+  IRQ: "IRQ",
 
   /**
    * Iceland
    */
-  Iceland: "ISL",
+  ISL: "ISL",
 
   /**
    * Israel
    */
-  Israel: "ISR",
+  ISR: "ISR",
 
   /**
    * Italy
    */
-  Italy: "ITA",
+  ITA: "ITA",
 
   /**
    * Jamaica
    */
-  Jamaica: "JAM",
+  JAM: "JAM",
 
   /**
    * Jersey
    */
-  Jersey: "JEY",
+  JEY: "JEY",
 
   /**
    * Jordan
    */
-  Jordan: "JOR",
+  JOR: "JOR",
 
   /**
    * Japan
    */
-  Japan: "JPN",
+  JPN: "JPN",
 
   /**
    * Kazakhstan
    */
-  Kazakhstan: "KAZ",
+  KAZ: "KAZ",
 
   /**
    * Kenya
    */
-  Kenya: "KEN",
+  KEN: "KEN",
 
   /**
    * Kyrgyzstan
    */
-  Kyrgyzstan: "KGZ",
+  KGZ: "KGZ",
 
   /**
    * Cambodia
    */
-  Cambodia: "KHM",
+  KHM: "KHM",
 
   /**
    * Kiribati
    */
-  Kiribati: "KIR",
+  KIR: "KIR",
 
   /**
    * Saint Kitts and Nevis
    */
-  SaintKittsandNevis: "KNA",
+  KNA: "KNA",
 
   /**
    * Korea, Republic of
    */
-  KoreaRepublicof: "KOR",
+  KOR: "KOR",
 
   /**
    * Kuwait
    */
-  Kuwait: "KWT",
+  KWT: "KWT",
 
   /**
    * Lao People's Democratic Republic
    */
-  LaoPeoplesDemocraticRepublic: "LAO",
+  LAO: "LAO",
 
   /**
    * Lebanon
    */
-  Lebanon: "LBN",
+  LBN: "LBN",
 
   /**
    * Liberia
    */
-  Liberia: "LBR",
+  LBR: "LBR",
 
   /**
    * Libya
    */
-  Libya: "LBY",
+  LBY: "LBY",
 
   /**
    * Saint Lucia
    */
-  SaintLucia: "LCA",
+  LCA: "LCA",
 
   /**
    * Liechtenstein
    */
-  Liechtenstein: "LIE",
+  LIE: "LIE",
 
   /**
    * Sri Lanka
    */
-  SriLanka: "LKA",
+  LKA: "LKA",
 
   /**
    * Lesotho
    */
-  Lesotho: "LSO",
+  LSO: "LSO",
 
   /**
    * Lithuania
    */
-  Lithuania: "LTU",
+  LTU: "LTU",
 
   /**
    * Luxembourg
    */
-  Luxembourg: "LUX",
+  LUX: "LUX",
 
   /**
    * Latvia
    */
-  Latvia: "LVA",
+  LVA: "LVA",
 
   /**
    * Macao
    */
-  Macao: "MAC",
+  MAC: "MAC",
 
   /**
    * Saint Martin (French part)
    */
-  SaintMartinFrenchpart: "MAF",
+  MAF: "MAF",
 
   /**
    * Morocco
    */
-  Morocco: "MAR",
+  MAR: "MAR",
 
   /**
    * Monaco
    */
-  Monaco: "MCO",
+  MCO: "MCO",
 
   /**
    * Moldova, Republic of
    */
-  MoldovaRepublicof: "MDA",
+  MDA: "MDA",
 
   /**
    * Madagascar
    */
-  Madagascar: "MDG",
+  MDG: "MDG",
 
   /**
    * Maldives
    */
-  Maldives: "MDV",
+  MDV: "MDV",
 
   /**
    * Mexico
    */
-  Mexico: "MEX",
+  MEX: "MEX",
 
   /**
    * Marshall Islands
    */
-  MarshallIslands: "MHL",
+  MHL: "MHL",
 
   /**
    * Macedonia, the former Yugoslav Republic of
    */
-  MacedoniatheformerYugoslavRepublicof: "MKD",
+  MKD: "MKD",
 
   /**
    * Mali
    */
-  Mali: "MLI",
+  MLI: "MLI",
 
   /**
    * Malta
    */
-  Malta: "MLT",
+  MLT: "MLT",
 
   /**
    * Myanmar
    */
-  Myanmar: "MMR",
+  MMR: "MMR",
 
   /**
    * Montenegro
    */
-  Montenegro: "MNE",
+  MNE: "MNE",
 
   /**
    * Mongolia
    */
-  Mongolia: "MNG",
+  MNG: "MNG",
 
   /**
    * Northern Mariana Islands
    */
-  NorthernMarianaIslands: "MNP",
+  MNP: "MNP",
 
   /**
    * Mozambique
    */
-  Mozambique: "MOZ",
+  MOZ: "MOZ",
 
   /**
    * Mauritania
    */
-  Mauritania: "MRT",
+  MRT: "MRT",
 
   /**
    * Montserrat
    */
-  Montserrat: "MSR",
+  MSR: "MSR",
 
   /**
    * Martinique
    */
-  Martinique: "MTQ",
+  MTQ: "MTQ",
 
   /**
    * Mauritius
    */
-  Mauritius: "MUS",
+  MUS: "MUS",
 
   /**
    * Malawi
    */
-  Malawi: "MWI",
+  MWI: "MWI",
 
   /**
    * Malaysia
    */
-  Malaysia: "MYS",
+  MYS: "MYS",
 
   /**
    * Mayotte
    */
-  Mayotte: "MYT",
+  MYT: "MYT",
 
   /**
    * Namibia
    */
-  Namibia: "NAM",
+  NAM: "NAM",
 
   /**
    * New Caledonia
    */
-  NewCaledonia: "NCL",
+  NCL: "NCL",
 
   /**
    * Niger
    */
-  Niger: "NER",
+  NER: "NER",
 
   /**
    * Norfolk Island
    */
-  NorfolkIsland: "NFK",
+  NFK: "NFK",
 
   /**
    * Nigeria
    */
-  Nigeria: "NGA",
+  NGA: "NGA",
 
   /**
    * Nicaragua
    */
-  Nicaragua: "NIC",
+  NIC: "NIC",
 
   /**
    * Niue
    */
-  Niue: "NIU",
+  NIU: "NIU",
 
   /**
    * Netherlands
    */
-  Netherlands: "NLD",
+  NLD: "NLD",
 
   /**
    * Norway
    */
-  Norway: "NOR",
+  NOR: "NOR",
 
   /**
    * Nepal
    */
-  Nepal: "NPL",
+  NPL: "NPL",
 
   /**
    * Nauru
    */
-  Nauru: "NRU",
+  NRU: "NRU",
 
   /**
    * New Zealand
    */
-  NewZealand: "NZL",
+  NZL: "NZL",
 
   /**
    * Oman
    */
-  Oman: "OMN",
+  OMN: "OMN",
 
   /**
    * Pakistan
    */
-  Pakistan: "PAK",
+  PAK: "PAK",
 
   /**
    * Panama
    */
-  Panama: "PAN",
+  PAN: "PAN",
 
   /**
    * Pitcairn
    */
-  Pitcairn: "PCN",
+  PCN: "PCN",
 
   /**
    * Peru
    */
-  Peru: "PER",
+  PER: "PER",
 
   /**
    * Philippines
    */
-  Philippines: "PHL",
+  PHL: "PHL",
 
   /**
    * Palau
    */
-  Palau: "PLW",
+  PLW: "PLW",
 
   /**
    * Papua New Guinea
    */
-  PapuaNewGuinea: "PNG",
+  PNG: "PNG",
 
   /**
    * Poland
    */
-  Poland: "POL",
+  POL: "POL",
 
   /**
    * Puerto Rico
    */
-  PuertoRico: "PRI",
+  PRI: "PRI",
 
   /**
    * Korea, Democratic People's Republic of
    */
-  KoreaDemocraticPeoplesRepublicof: "PRK",
+  PRK: "PRK",
 
   /**
    * Portugal
    */
-  Portugal: "PRT",
+  PRT: "PRT",
 
   /**
    * Paraguay
    */
-  Paraguay: "PRY",
+  PRY: "PRY",
 
   /**
    * Palestine, State of
    */
-  PalestineStateof: "PSE",
+  PSE: "PSE",
 
   /**
    * French Polynesia
    */
-  FrenchPolynesia: "PYF",
+  PYF: "PYF",
 
   /**
    * Qatar
    */
-  Qatar: "QAT",
+  QAT: "QAT",
 
   /**
    * Riunion
    */
-  Riunion: "REU",
+  REU: "REU",
 
   /**
    * Romania
    */
-  Romania: "ROU",
+  ROU: "ROU",
 
   /**
    * Russian Federation
    */
-  RussianFederation: "RUS",
+  RUS: "RUS",
 
   /**
    * Rwanda
    */
-  Rwanda: "RWA",
+  RWA: "RWA",
 
   /**
    * Saudi Arabia
    */
-  SaudiArabia: "SAU",
+  SAU: "SAU",
 
   /**
    * Sudan
    */
-  Sudan: "SDN",
+  SDN: "SDN",
 
   /**
    * Senegal
    */
-  Senegal: "SEN",
+  SEN: "SEN",
 
   /**
    * Singapore
    */
-  Singapore: "SGP",
+  SGP: "SGP",
 
   /**
    * South Georgia and the South Sandwich Islands
    */
-  SouthGeorgiaandtheSouthSandwichIslands: "SGS",
+  SGS: "SGS",
 
   /**
    * Saint Helena, Ascension and Tristan da Cunha
    */
-  SaintHelenaAscensionandTristandaCunha: "SHN",
+  SHN: "SHN",
 
   /**
    * Svalbard and Jan Mayen
    */
-  SvalbardandJanMayen: "SJM",
+  SJM: "SJM",
 
   /**
    * Solomon Islands
    */
-  SolomonIslands: "SLB",
+  SLB: "SLB",
 
   /**
    * Sierra Leone
    */
-  SierraLeone: "SLE",
+  SLE: "SLE",
 
   /**
    * El Salvador
    */
-  ElSalvador: "SLV",
+  SLV: "SLV",
 
   /**
    * San Marino
    */
-  SanMarino: "SMR",
+  SMR: "SMR",
 
   /**
    * Somalia
    */
-  Somalia: "SOM",
+  SOM: "SOM",
 
   /**
    * Saint Pierre and Miquelon
    */
-  SaintPierreandMiquelon: "SPM",
+  SPM: "SPM",
 
   /**
    * Serbia
    */
-  Serbia: "SRB",
+  SRB: "SRB",
 
   /**
    * South Sudan
    */
-  SouthSudan: "SSD",
+  SSD: "SSD",
 
   /**
    * Sao Tome and Principe
    */
-  SaoTomeandPrincipe: "STP",
+  STP: "STP",
 
   /**
    * Suriname
    */
-  Suriname: "SUR",
+  SUR: "SUR",
 
   /**
    * Slovakia
    */
-  Slovakia: "SVK",
+  SVK: "SVK",
 
   /**
    * Slovenia
    */
-  Slovenia: "SVN",
+  SVN: "SVN",
 
   /**
    * Sweden
    */
-  Sweden: "SWE",
+  SWE: "SWE",
 
   /**
    * Swaziland
    */
-  Swaziland: "SWZ",
+  SWZ: "SWZ",
 
   /**
    * Sint Maarten (Dutch part)
    */
-  SintMaartenDutchpart: "SXM",
+  SXM: "SXM",
 
   /**
    * Seychelles
    */
-  Seychelles: "SYC",
+  SYC: "SYC",
 
   /**
    * Syrian Arab Republic
    */
-  SyrianArabRepublic: "SYR",
+  SYR: "SYR",
 
   /**
    * Turks and Caicos Islands
    */
-  TurksandCaicosIslands: "TCA",
+  TCA: "TCA",
 
   /**
    * Chad
    */
-  Chad: "TCD",
+  TCD: "TCD",
 
   /**
    * Togo
    */
-  Togo: "TGO",
+  TGO: "TGO",
 
   /**
    * Thailand
    */
-  Thailand: "THA",
+  THA: "THA",
 
   /**
    * Tajikistan
    */
-  Tajikistan: "TJK",
+  TJK: "TJK",
 
   /**
    * Tokelau
    */
-  Tokelau: "TKL",
+  TKL: "TKL",
 
   /**
    * Turkmenistan
    */
-  Turkmenistan: "TKM",
+  TKM: "TKM",
 
   /**
    * Timor-Leste
    */
-  TimorLeste: "TLS",
+  TLS: "TLS",
 
   /**
    * Tonga
    */
-  Tonga: "TON",
+  TON: "TON",
 
   /**
    * Trinidad and Tobago
    */
-  TrinidadandTobago: "TTO",
+  TTO: "TTO",
 
   /**
    * Tunisia
    */
-  Tunisia: "TUN",
+  TUN: "TUN",
 
   /**
    * Turkey
    */
-  Turkey: "TUR",
+  TUR: "TUR",
 
   /**
    * Tuvalu
    */
-  Tuvalu: "TUV",
+  TUV: "TUV",
 
   /**
    * Taiwan, Province of China
    */
-  TaiwanProvinceofChina: "TWN",
+  TWN: "TWN",
 
   /**
    * Tanzania, United Republic of
    */
-  TanzaniaUnitedRepublicof: "TZA",
+  TZA: "TZA",
 
   /**
    * Uganda
    */
-  Uganda: "UGA",
+  UGA: "UGA",
 
   /**
    * Ukraine
    */
-  Ukraine: "UKR",
+  UKR: "UKR",
 
   /**
    * United States Minor Outlying Islands
    */
-  UnitedStatesMinorOutlyingIslands: "UMI",
+  UMI: "UMI",
 
   /**
    * Uruguay
    */
-  Uruguay: "URY",
+  URY: "URY",
 
   /**
    * United States of America
    */
-  UnitedStatesofAmerica: "USA",
+  USA: "USA",
 
   /**
    * Uzbekistan
    */
-  Uzbekistan: "UZB",
+  UZB: "UZB",
 
   /**
    * Holy See
    */
-  HolySee: "VAT",
+  VAT: "VAT",
 
   /**
    * Saint Vincent and the Grenadines
    */
-  SaintVincentandtheGrenadines: "VCT",
+  VCT: "VCT",
 
   /**
    * Venezuela, Bolivarian Republic of
    */
-  VenezuelaBolivarianRepublicof: "VEN",
+  VEN: "VEN",
 
   /**
    * Virgin Islands, British
    */
-  VirginIslandsBritish: "VGB",
+  VGB: "VGB",
 
   /**
    * Virgin Islands, U.S.
    */
-  VirginIslandsUS: "VIR",
+  VIR: "VIR",
 
   /**
    * Viet Nam
    */
-  VietNam: "VNM",
+  VNM: "VNM",
 
   /**
    * Vanuatu
    */
-  Vanuatu: "VUT",
+  VUT: "VUT",
 
   /**
    * Wallis and Futuna
    */
-  WallisandFutuna: "WLF",
+  WLF: "WLF",
 
   /**
    * Samoa
    */
-  Samoa: "WSM",
+  WSM: "WSM",
 
   /**
    * Yemen
    */
-  Yemen: "YEM",
+  YEM: "YEM",
 
   /**
    * South Africa
    */
-  SouthAfrica: "ZAF",
+  ZAF: "ZAF",
 
   /**
    * Zambia
    */
-  Zambia: "ZMB",
+  ZMB: "ZMB",
 
   /**
    * Zimbabwe
    */
-  Zimbabwe: "ZWE",
+  ZWE: "ZWE",
 } as const;
 
 /**

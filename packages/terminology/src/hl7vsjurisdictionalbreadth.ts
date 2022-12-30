@@ -6,17 +6,17 @@ export const Hl7VSJurisdictionalBreadthCode = {
   /**
    * County/Parish
    */
-  CountyParish: "C",
+  C: "C",
 
   /**
    * State/Province
    */
-  StateProvince: "S",
+  S: "S",
 
   /**
    * Country
    */
-  Country: "N",
+  N: "N",
 } as const;
 
 /**

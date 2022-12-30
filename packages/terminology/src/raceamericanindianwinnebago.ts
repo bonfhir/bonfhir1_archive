@@ -6,17 +6,17 @@ export const RaceAmericanIndianWinnebagoCode = {
   /**
    * Winnebago
    */
-  Winnebago: "1696-4",
+  "1696-4": "1696-4",
 
   /**
    * Ho-chunk
    */
-  Hochunk: "1697-2",
+  "1697-2": "1697-2",
 
   /**
    * Nebraska Winnebago
    */
-  NebraskaWinnebago: "1698-0",
+  "1698-0": "1698-0",
 } as const;
 
 /**

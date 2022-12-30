@@ -6,7 +6,7 @@ export const ActRelationshipCoveredByCode = {
   /**
    * covered by
    */
-  coveredby: "COVBY",
+  COVBY: "COVBY",
 } as const;
 
 /**

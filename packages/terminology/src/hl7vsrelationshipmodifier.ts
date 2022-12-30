@@ -6,22 +6,22 @@ export const Hl7VSRelationshipModifierCode = {
   /**
    * Control
    */
-  Control: "CONTROL",
+  CONTROL: "CONTROL",
 
   /**
    * Patient
    */
-  Patient: "PATIENT",
+  PATIENT: "PATIENT",
 
   /**
    * Donor
    */
-  Donor: "DONOR",
+  DONOR: "DONOR",
 
   /**
    * Blood product unit
    */
-  Bloodproductunit: "BPU",
+  BPU: "BPU",
 } as const;
 
 /**

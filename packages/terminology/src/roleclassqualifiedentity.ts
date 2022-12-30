@@ -6,7 +6,7 @@ export const RoleClassQualifiedEntityCode = {
   /**
    * qualified entity
    */
-  qualifiedentity: "QUAL",
+  QUAL: "QUAL",
 } as const;
 
 /**

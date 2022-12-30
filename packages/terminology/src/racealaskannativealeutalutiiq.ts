@@ -6,17 +6,17 @@ export const RaceAlaskanNativeAleutAlutiiqCode = {
   /**
    * Alutiiq Aleut
    */
-  AlutiiqAleut: "1968-7",
+  "1968-7": "1968-7",
 
   /**
    * Tatitlek
    */
-  Tatitlek: "1969-5",
+  "1969-5": "1969-5",
 
   /**
    * Ugashik
    */
-  Ugashik: "1970-3",
+  "1970-3": "1970-3",
 } as const;
 
 /**

@@ -6,32 +6,32 @@ export const ContactEntityTypeCode = {
   /**
    * Billing
    */
-  Billing: "BILL",
+  BILL: "BILL",
 
   /**
    * Administrative
    */
-  Administrative: "ADMIN",
+  ADMIN: "ADMIN",
 
   /**
    * Human Resource
    */
-  HumanResource: "HR",
+  HR: "HR",
 
   /**
    * Payor
    */
-  Payor: "PAYOR",
+  PAYOR: "PAYOR",
 
   /**
    * Patient
    */
-  Patient: "PATINF",
+  PATINF: "PATINF",
 
   /**
    * Press
    */
-  Press: "PRESS",
+  PRESS: "PRESS",
 } as const;
 
 /**

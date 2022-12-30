@@ -6,27 +6,27 @@ export const SupplyOrderAbortReasonCodeCode = {
   /**
    * supply order abort reason
    */
-  supplyorderabortreason: "_SupplyOrderAbortReasonCode",
+  _SupplyOrderAbortReasonCode: "_SupplyOrderAbortReasonCode",
 
   /**
    * condition improved
    */
-  conditionimproved: "IMPROV",
+  IMPROV: "IMPROV",
 
   /**
    * intolerance
    */
-  intolerance: "INTOL",
+  INTOL: "INTOL",
 
   /**
    * new strength
    */
-  newstrength: "NEWSTR",
+  NEWSTR: "NEWSTR",
 
   /**
    * new therapy
    */
-  newtherapy: "NEWTHER",
+  NEWTHER: "NEWTHER",
 } as const;
 
 /**

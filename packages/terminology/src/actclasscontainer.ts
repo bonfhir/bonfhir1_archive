@@ -8,27 +8,27 @@ export const ActClassContainerCode = {
   /**
    * record container
    */
-  recordcontainer: "CONTAINER",
+  CONTAINER: "CONTAINER",
 
   /**
    * category
    */
-  category: "CATEGORY",
+  CATEGORY: "CATEGORY",
 
   /**
    * document body
    */
-  documentbody: "DOCBODY",
+  DOCBODY: "DOCBODY",
 
   /**
    * document section
    */
-  documentsection: "DOCSECT",
+  DOCSECT: "DOCSECT",
 
   /**
    * topic
    */
-  topic: "TOPIC",
+  TOPIC: "TOPIC",
 } as const;
 
 /**

@@ -6,22 +6,22 @@ export const MatchGradeCode = {
   /**
    * Certain Match
    */
-  CertainMatch: "certain",
+  certain: "certain",
 
   /**
    * Probable Match
    */
-  ProbableMatch: "probable",
+  probable: "probable",
 
   /**
    * Possible Match
    */
-  PossibleMatch: "possible",
+  possible: "possible",
 
   /**
    * Certainly Not a Match
    */
-  CertainlyNotaMatch: "certainly-not",
+  "certainly-not": "certainly-not",
 } as const;
 
 /**

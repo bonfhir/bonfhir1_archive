@@ -6,22 +6,22 @@ export const BarDrugFormCode = {
   /**
    * Bar
    */
-  Bar: "BAR",
+  BAR: "BAR",
 
   /**
    * Bar Soap
    */
-  BarSoap: "BARSOAP",
+  BARSOAP: "BARSOAP",
 
   /**
    * Medicated Bar Soap
    */
-  MedicatedBarSoap: "MEDBAR",
+  MEDBAR: "MEDBAR",
 
   /**
    * Chewable Bar
    */
-  ChewableBar: "CHEWBAR",
+  CHEWBAR: "CHEWBAR",
 } as const;
 
 /**

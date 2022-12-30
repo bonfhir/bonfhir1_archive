@@ -6,7 +6,7 @@ export const ParticipationHolderCode = {
   /**
    * holder
    */
-  holder: "HLD",
+  HLD: "HLD",
 } as const;
 
 /**

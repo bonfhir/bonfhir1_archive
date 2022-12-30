@@ -6,37 +6,37 @@ export const FinancialTaskInputTypeCodesCode = {
   /**
    * Include
    */
-  Include: "include",
+  include: "include",
 
   /**
    * Exclude
    */
-  Exclude: "exclude",
+  exclude: "exclude",
 
   /**
    * Original Response
    */
-  OriginalResponse: "origresponse",
+  origresponse: "origresponse",
 
   /**
    * Reference Number
    */
-  ReferenceNumber: "reference",
+  reference: "reference",
 
   /**
    * Item Number
    */
-  ItemNumber: "item",
+  item: "item",
 
   /**
    * Period
    */
-  Period: "period",
+  period: "period",
 
   /**
    * Status code
    */
-  Statuscode: "status",
+  status: "status",
 } as const;
 
 /**

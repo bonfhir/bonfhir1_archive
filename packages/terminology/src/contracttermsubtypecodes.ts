@@ -6,17 +6,17 @@ export const ContractTermSubtypeCodesCode = {
   /**
    * Condition
    */
-  Condition: "condition",
+  condition: "condition",
 
   /**
    * Warranty
    */
-  Warranty: "warranty",
+  warranty: "warranty",
 
   /**
    * Innominate
    */
-  Innominate: "innominate",
+  innominate: "innominate",
 } as const;
 
 /**

@@ -6,22 +6,22 @@ export const Hl7VSOnlineVerificationResultErrorCodesCode = {
   /**
    * Update technically not possible
    */
-  Updatetechnicallynotpossible: "1",
+  "1": "1",
 
   /**
    * Invalid Authentification certificate
    */
-  InvalidAuthentificationcertificate: "2",
+  "2": "2",
 
   /**
    * Online verification technically not possible
    */
-  Onlineverificationtechnicallynotpossible: "3",
+  "3": "3",
 
   /**
    * Update technically not possible due to offline time exceeded
    */
-  Updatetechnicallynotpossibleduetoofflinetimeexceeded: "4",
+  "4": "4",
 } as const;
 
 /**

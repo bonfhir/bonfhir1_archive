@@ -6,47 +6,47 @@ export const Hl7VSFillerStatusCodesCode = {
   /**
    * Blocked
    */
-  Blocked: "BLOCKED",
+  BLOCKED: "BLOCKED",
 
   /**
    * Booked
    */
-  Booked: "BOOKED",
+  BOOKED: "BOOKED",
 
   /**
    * Cancelled
    */
-  Cancelled: "CANCELLED",
+  CANCELLED: "CANCELLED",
 
   /**
    * Complete
    */
-  Complete: "COMPLETE",
+  COMPLETE: "COMPLETE",
 
   /**
    * Deleted
    */
-  Deleted: "DELETED",
+  DELETED: "DELETED",
 
   /**
    * Overbook
    */
-  Overbook: "OVERBOOK",
+  OVERBOOK: "OVERBOOK",
 
   /**
    * Pending
    */
-  Pending: "PENDING",
+  PENDING: "PENDING",
 
   /**
    * Started
    */
-  Started: "STARTED",
+  STARTED: "STARTED",
 
   /**
    * Waitlist
    */
-  Waitlist: "WAITLIST",
+  WAITLIST: "WAITLIST",
 
   /**
    * Pending
@@ -81,7 +81,7 @@ export const Hl7VSFillerStatusCodesCode = {
   /**
    * Discontinued
    */
-  Discontinued: "DC",
+  DC: "DC",
 
   /**
    * Discontinued

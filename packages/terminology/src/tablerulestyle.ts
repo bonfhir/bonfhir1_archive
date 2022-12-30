@@ -6,32 +6,32 @@ export const TableRuleStyleCode = {
   /**
    * Table Rule Style
    */
-  TableRuleStyle: "_TableRuleStyle",
+  _TableRuleStyle: "_TableRuleStyle",
 
   /**
    * Bottom Rule
    */
-  BottomRule: "Botrule",
+  Botrule: "Botrule",
 
   /**
    * Left-sided rule
    */
-  Leftsidedrule: "Lrule",
+  Lrule: "Lrule",
 
   /**
    * Right-sided rule
    */
-  Rightsidedrule: "Rrule",
+  Rrule: "Rrule",
 
   /**
    * Top Rule
    */
-  TopRule: "Toprule",
+  Toprule: "Toprule",
 
   /**
    * Top Rule
    */
-  TopRule: "TORULE",
+  TORULE: "TORULE",
 } as const;
 
 /**

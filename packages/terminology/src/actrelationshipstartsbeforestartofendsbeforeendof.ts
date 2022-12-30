@@ -6,27 +6,27 @@ export const ActRelationshipStartsBeforeStartOfEndsBeforeEndOfCode = {
   /**
    * starts before start of, ends before end of
    */
-  startsbeforestartofendsbeforeendof: "SBSEBE",
+  SBSEBE: "SBSEBE",
 
   /**
    * contains start of, ends before end of
    */
-  containsstartofendsbeforeendof: "SBSEASEBE",
+  SBSEASEBE: "SBSEASEBE",
 
   /**
    * ends before or concurrent with start of
    */
-  endsbeforeorconcurrentwithstartof: "EBSORECWS",
+  EBSORECWS: "EBSORECWS",
 
   /**
    * ends concurrent with start of
    */
-  endsconcurrentwithstartof: "ECWS",
+  ECWS: "ECWS",
 
   /**
    * ends before start of
    */
-  endsbeforestartof: "EBS",
+  EBS: "EBS",
 } as const;
 
 /**

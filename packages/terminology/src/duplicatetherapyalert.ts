@@ -6,17 +6,17 @@ export const DuplicateTherapyAlertCode = {
   /**
    * Duplicate Therapy Alert
    */
-  DuplicateTherapyAlert: "DUPTHPY",
+  DUPTHPY: "DUPTHPY",
 
   /**
    * duplicate therapeutic alass alert
    */
-  duplicatetherapeuticalassalert: "DUPTHPCLS",
+  DUPTHPCLS: "DUPTHPCLS",
 
   /**
    * duplicate generic alert
    */
-  duplicategenericalert: "DUPTHPGEN",
+  DUPTHPGEN: "DUPTHPGEN",
 } as const;
 
 /**

@@ -6,12 +6,12 @@ export const TransferActReasonCode = {
   /**
    * Error
    */
-  Error: "ER",
+  ER: "ER",
 
   /**
    * Request
    */
-  Request: "RQ",
+  RQ: "RQ",
 } as const;
 
 /**

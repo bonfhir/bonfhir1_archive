@@ -10,7 +10,7 @@ export const ActMoodGoalCode = {
   /**
    * Goal
    */
-  Goal: "GOL",
+  GOL: "GOL",
 } as const;
 
 /**

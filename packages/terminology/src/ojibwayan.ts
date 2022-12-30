@@ -6,12 +6,12 @@ export const OjibwayanCode = {
   /**
    * Southern Ojibwa
    */
-  SouthernOjibwa: "x-OJB",
+  "x-OJB": "x-OJB",
 
   /**
    * Potawatami
    */
-  Potawatami: "x-POT",
+  "x-POT": "x-POT",
 } as const;
 
 /**

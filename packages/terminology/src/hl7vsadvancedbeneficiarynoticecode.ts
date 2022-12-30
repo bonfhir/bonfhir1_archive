@@ -6,22 +6,22 @@ export const Hl7VSAdvancedBeneficiaryNoticeCodeCode = {
   /**
    * Service is subject to medical necessity procedures
    */
-  Serviceissubjecttomedicalnecessityprocedures: "1",
+  "1": "1",
 
   /**
    * Patient has been informed of responsibility, and agrees to pay for service
    */
-  Patienthasbeeninformedofresponsibilityandagreestopayforservice: "2",
+  "2": "2",
 
   /**
    * Patient has been informed of responsibility, and asks that the payer be billed
    */
-  Patienthasbeeninformedofresponsibilityandasksthatthepayerbebilled: "3",
+  "3": "3",
 
   /**
    * Advanced Beneficiary Notice has not been signed
    */
-  AdvancedBeneficiaryNoticehasnotbeensigned: "4",
+  "4": "4",
 } as const;
 
 /**

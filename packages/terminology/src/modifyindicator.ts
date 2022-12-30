@@ -6,12 +6,12 @@ export const ModifyIndicatorCode = {
   /**
    * Modified subscription
    */
-  Modifiedsubscription: "M",
+  M: "M",
 
   /**
    * New subscription
    */
-  Newsubscription: "N",
+  N: "N",
 } as const;
 
 /**

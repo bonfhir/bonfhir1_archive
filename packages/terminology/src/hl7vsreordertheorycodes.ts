@@ -6,17 +6,17 @@ export const Hl7VSReorderTheoryCodesCode = {
   /**
    * DOP/DOQ
    */
-  DOPDOQ: "D",
+  D: "D",
 
   /**
    * MIN/MAX
    */
-  MINMAX: "M",
+  M: "M",
 
   /**
    * Override
    */
-  Override: "O",
+  O: "O",
 } as const;
 
 /**

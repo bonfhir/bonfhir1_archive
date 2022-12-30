@@ -6,57 +6,57 @@ export const ObservationInterpretationSusceptibilityCode = {
   /**
    * Insufficient evidence
    */
-  Insufficientevidence: "IE",
+  IE: "IE",
 
   /**
    * Intermediate
    */
-  Intermediate: "I",
+  I: "I",
 
   /**
    * moderately susceptible
    */
-  moderatelysusceptible: "MS",
+  MS: "MS",
 
   /**
    * No CLSI defined breakpoint
    */
-  NoCLSIdefinedbreakpoint: "NCL",
+  NCL: "NCL",
 
   /**
    * Non-susceptible
    */
-  Nonsusceptible: "NS",
+  NS: "NS",
 
   /**
    * Resistant
    */
-  Resistant: "R",
+  R: "R",
 
   /**
    * Synergy - resistant
    */
-  Synergyresistant: "SYN-R",
+  "SYN-R": "SYN-R",
 
   /**
    * Susceptible
    */
-  Susceptible: "S",
+  S: "S",
 
   /**
    * Susceptible-dose dependent
    */
-  Susceptibledosedependent: "SDD",
+  SDD: "SDD",
 
   /**
    * Synergy - susceptible
    */
-  Synergysusceptible: "SYN-S",
+  "SYN-S": "SYN-S",
 
   /**
    * very susceptible
    */
-  verysusceptible: "VS",
+  VS: "VS",
 } as const;
 
 /**

@@ -6,17 +6,17 @@ export const IndividualCaseSafetyReportTypeCode = {
   /**
    * Individual Case Safety Report Type
    */
-  IndividualCaseSafetyReportType: "_IndividualCaseSafetyReportType",
+  _IndividualCaseSafetyReportType: "_IndividualCaseSafetyReportType",
 
   /**
    * patient adverse event
    */
-  patientadverseevent: "PAT_ADV_EVNT",
+  PAT_ADV_EVNT: "PAT_ADV_EVNT",
 
   /**
    * vaccine product problem
    */
-  vaccineproductproblem: "VAC_PROBLEM",
+  VAC_PROBLEM: "VAC_PROBLEM",
 } as const;
 
 /**

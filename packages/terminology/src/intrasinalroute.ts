@@ -6,7 +6,7 @@ export const IntrasinalRouteCode = {
   /**
    * Instillation, intrasinal
    */
-  Instillationintrasinal: "ISININSTIL",
+  ISININSTIL: "ISININSTIL",
 } as const;
 
 /**

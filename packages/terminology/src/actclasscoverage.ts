@@ -12,7 +12,7 @@ export const ActClassCoverageCode = {
   /**
    * coverage
    */
-  coverage: "COV",
+  COV: "COV",
 } as const;
 
 /**

@@ -6,12 +6,12 @@ export const Hl7VSReportingPriorityCode = {
   /**
    * Call back results
    */
-  Callbackresults: "C",
+  C: "C",
 
   /**
    * Rush reporting
    */
-  Rushreporting: "R",
+  R: "R",
 } as const;
 
 /**

@@ -6,7 +6,7 @@ export const HL7StandardVersionCodeCode = {
   /**
    * Ballot 2008 January
    */
-  Ballot2008January: "Ballot2008Jan",
+  Ballot2008Jan: "Ballot2008Jan",
 
   /**
    * Ballot 2008 May
@@ -16,12 +16,12 @@ export const HL7StandardVersionCodeCode = {
   /**
    * Ballot 2008 September
    */
-  Ballot2008September: "Ballot2008Sep",
+  Ballot2008Sep: "Ballot2008Sep",
 
   /**
    * Ballot 2009 January
    */
-  Ballot2009January: "Ballot2009Jan",
+  Ballot2009Jan: "Ballot2009Jan",
 
   /**
    * Ballot 2009 May
@@ -31,7 +31,7 @@ export const HL7StandardVersionCodeCode = {
   /**
    * Ballot 2009 September
    */
-  Ballot2009September: "Ballot2009Sep",
+  Ballot2009Sep: "Ballot2009Sep",
 
   /**
    * Ballot 2010 Jan
@@ -81,52 +81,52 @@ export const HL7StandardVersionCodeCode = {
   /**
    * HL7 Version V3-2003-12
    */
-  HL7VersionV3200312: "V3-2003-12",
+  "V3-2003-12": "V3-2003-12",
 
   /**
    * 2005 Normative Edition
    */
-  TwoThousandFiveNormativeEdition: "V3-2005N",
+  "V3-2005N": "V3-2005N",
 
   /**
    * 2006 Normative Edition
    */
-  TwoThousandSixNormativeEdition: "V3-2006N",
+  "V3-2006N": "V3-2006N",
 
   /**
    * 2008 Normative Edition
    */
-  TwoThousandEightNormativeEdition: "V3-2008N",
+  "V3-2008N": "V3-2008N",
 
   /**
    * 2009 Normative Edition
    */
-  TwoThousandNineNormativeEdition: "V3-2009N",
+  "V3-2009N": "V3-2009N",
 
   /**
    * 2010 Normative Edition
    */
-  TwoThousandTenNormativeEdition: "V3-2010N",
+  "V3-2010N": "V3-2010N",
 
   /**
    * 2011 Normative Edition
    */
-  TwoThousandElevenNormativeEdition: "V3-2011N",
+  "V3-2011N": "V3-2011N",
 
   /**
    * 2012 Normative Edition
    */
-  TwoThousandTwelveNormativeEdition: "V3-2012N",
+  "V3-2012N": "V3-2012N",
 
   /**
    * Version3 Pre-release #1
    */
-  Version3Prerelease1: "V3PR1",
+  V3PR1: "V3PR1",
 
   /**
    * 2007 Normative Edition
    */
-  TwoThousandSevenNormativeEdition: "V3-2007N",
+  "V3-2007N": "V3-2007N",
 } as const;
 
 /**

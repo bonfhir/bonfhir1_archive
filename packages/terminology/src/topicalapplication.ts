@@ -6,172 +6,172 @@ export const TopicalApplicationCode = {
   /**
    * Topical application, soaked dressing
    */
-  Topicalapplicationsoakeddressing: "DRESS",
+  DRESS: "DRESS",
 
   /**
    * Topical application, iontophoresis
    */
-  Topicalapplicationiontophoresis: "IONTO",
+  IONTO: "IONTO",
 
   /**
    * Topical application, swab
    */
-  Topicalapplicationswab: "SWAB",
+  SWAB: "SWAB",
 
   /**
    * Topical
    */
-  Topical: "TOPICAL",
+  TOPICAL: "TOPICAL",
 
   /**
    * Topical application, buccal
    */
-  Topicalapplicationbuccal: "BUC",
+  BUC: "BUC",
 
   /**
    * Topical application, cervical
    */
-  Topicalapplicationcervical: "CERV",
+  CERV: "CERV",
 
   /**
    * Topical application, dental
    */
-  Topicalapplicationdental: "DEN",
+  DEN: "DEN",
 
   /**
    * Topical application, gingival
    */
-  Topicalapplicationgingival: "GIN",
+  GIN: "GIN",
 
   /**
    * Topical application, hair
    */
-  Topicalapplicationhair: "HAIR",
+  HAIR: "HAIR",
 
   /**
    * Topical application, intracorneal
    */
-  Topicalapplicationintracorneal: "ICORNTA",
+  ICORNTA: "ICORNTA",
 
   /**
    * Topical application, intracoronal (dental)
    */
-  Topicalapplicationintracoronaldental: "ICORONTA",
+  ICORONTA: "ICORONTA",
 
   /**
    * Topical application, intraesophageal
    */
-  Topicalapplicationintraesophageal: "IESOPHTA",
+  IESOPHTA: "IESOPHTA",
 
   /**
    * Topical application, intraileal
    */
-  Topicalapplicationintraileal: "IILEALTA",
+  IILEALTA: "IILEALTA",
 
   /**
    * Topical application, intralesional
    */
-  Topicalapplicationintralesional: "ILTOP",
+  ILTOP: "ILTOP",
 
   /**
    * Topical application, intraluminal
    */
-  Topicalapplicationintraluminal: "ILUMTA",
+  ILUMTA: "ILUMTA",
 
   /**
    * Topical application, intraocular
    */
-  Topicalapplicationintraocular: "IOTOP",
+  IOTOP: "IOTOP",
 
   /**
    * Topical application, laryngeal
    */
-  Topicalapplicationlaryngeal: "LARYNGTA",
+  LARYNGTA: "LARYNGTA",
 
   /**
    * Topical application, mucous membrane
    */
-  Topicalapplicationmucousmembrane: "MUC",
+  MUC: "MUC",
 
   /**
    * Topical application, nail
    */
-  Topicalapplicationnail: "NAIL",
+  NAIL: "NAIL",
 
   /**
    * Topical application, nasal
    */
-  Topicalapplicationnasal: "NASAL",
+  NASAL: "NASAL",
 
   /**
    * Topical application, ophthalmic
    */
-  Topicalapplicationophthalmic: "OPTHALTA",
+  OPTHALTA: "OPTHALTA",
 
   /**
    * Topical application, oral
    */
-  Topicalapplicationoral: "ORALTA",
+  ORALTA: "ORALTA",
 
   /**
    * Topical application, oromucosal
    */
-  Topicalapplicationoromucosal: "ORMUC",
+  ORMUC: "ORMUC",
 
   /**
    * Topical application, oropharyngeal
    */
-  Topicalapplicationoropharyngeal: "OROPHARTA",
+  OROPHARTA: "OROPHARTA",
 
   /**
    * Topical application, perianal
    */
-  Topicalapplicationperianal: "PERIANAL",
+  PERIANAL: "PERIANAL",
 
   /**
    * Topical application, perineal
    */
-  Topicalapplicationperineal: "PERINEAL",
+  PERINEAL: "PERINEAL",
 
   /**
    * Topical application, periodontal
    */
-  Topicalapplicationperiodontal: "PDONTTA",
+  PDONTTA: "PDONTTA",
 
   /**
    * Topical application, rectal
    */
-  Topicalapplicationrectal: "RECTAL",
+  RECTAL: "RECTAL",
 
   /**
    * Topical application, scalp
    */
-  Topicalapplicationscalp: "SCALP",
+  SCALP: "SCALP",
 
   /**
    * Occlusive dressing technique
    */
-  Occlusivedressingtechnique: "OCDRESTA",
+  OCDRESTA: "OCDRESTA",
 
   /**
    * Topical application, skin
    */
-  Topicalapplicationskin: "SKIN",
+  SKIN: "SKIN",
 
   /**
    * Subconjunctival
    */
-  Subconjunctival: "SUBCONJTA",
+  SUBCONJTA: "SUBCONJTA",
 
   /**
    * Topical application, transmucosal
    */
-  Topicalapplicationtransmucosal: "TMUCTA",
+  TMUCTA: "TMUCTA",
 
   /**
    * Topical application, vaginal
    */
-  Topicalapplicationvaginal: "VAGINS",
+  VAGINS: "VAGINS",
 } as const;
 
 /**

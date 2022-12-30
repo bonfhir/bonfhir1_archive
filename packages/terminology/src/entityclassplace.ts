@@ -6,27 +6,27 @@ export const EntityClassPlaceCode = {
   /**
    * place
    */
-  place: "PLC",
+  PLC: "PLC",
 
   /**
    * city or town
    */
-  cityortown: "CITY",
+  CITY: "CITY",
 
   /**
    * country
    */
-  country: "COUNTRY",
+  COUNTRY: "COUNTRY",
 
   /**
    * county or parish
    */
-  countyorparish: "COUNTY",
+  COUNTY: "COUNTY",
 
   /**
    * state or province
    */
-  stateorprovince: "PROVINCE",
+  PROVINCE: "PROVINCE",
 } as const;
 
 /**

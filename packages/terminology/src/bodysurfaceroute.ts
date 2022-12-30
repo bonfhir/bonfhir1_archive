@@ -6,32 +6,32 @@ export const BodySurfaceRouteCode = {
   /**
    * Topical application, soaked dressing
    */
-  Topicalapplicationsoakeddressing: "DRESS",
+  DRESS: "DRESS",
 
   /**
    * Electro-osmosis
    */
-  Electroosmosis: "ELECTOSMOS",
+  ELECTOSMOS: "ELECTOSMOS",
 
   /**
    * Topical application, iontophoresis
    */
-  Topicalapplicationiontophoresis: "IONTO",
+  IONTO: "IONTO",
 
   /**
    * Immersion (soak)
    */
-  Immersionsoak: "SOAK",
+  SOAK: "SOAK",
 
   /**
    * Topical application, swab
    */
-  Topicalapplicationswab: "SWAB",
+  SWAB: "SWAB",
 
   /**
    * Topical
    */
-  Topical: "TOPICAL",
+  TOPICAL: "TOPICAL",
 } as const;
 
 /**

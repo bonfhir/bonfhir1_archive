@@ -6,107 +6,107 @@ export const ActTaskPatientInformationReviewCodeCode = {
   /**
    * patient information review task
    */
-  patientinformationreviewtask: "PATINFO",
+  PATINFO: "PATINFO",
 
   /**
    * allergy list entry
    */
-  allergylistentry: "ALLERLE",
+  ALLERLE: "ALLERLE",
 
   /**
    * clinical decision support intervention review
    */
-  clinicaldecisionsupportinterventionreview: "CDSREV",
+  CDSREV: "CDSREV",
 
   /**
    * clinical note review task
    */
-  clinicalnotereviewtask: "CLINNOTEREV",
+  CLINNOTEREV: "CLINNOTEREV",
 
   /**
    * discharge summary review task
    */
-  dischargesummaryreviewtask: "DISCHSUMREV",
+  DISCHSUMREV: "DISCHSUMREV",
 
   /**
    * diagnosis list review task
    */
-  diagnosislistreviewtask: "DIAGLISTREV",
+  DIAGLISTREV: "DIAGLISTREV",
 
   /**
    * immunization list entry
    */
-  immunizationlistentry: "IMMLE",
+  IMMLE: "IMMLE",
 
   /**
    * laboratory results review task
    */
-  laboratoryresultsreviewtask: "LABRREV",
+  LABRREV: "LABRREV",
 
   /**
    * microbiology results review task
    */
-  microbiologyresultsreviewtask: "MICRORREV",
+  MICRORREV: "MICRORREV",
 
   /**
    * microbiology organisms results review task
    */
-  microbiologyorganismsresultsreviewtask: "MICROORGRREV",
+  MICROORGRREV: "MICROORGRREV",
 
   /**
    * microbiology sensitivity test results review task
    */
-  microbiologysensitivitytestresultsreviewtask: "MICROSENSRREV",
+  MICROSENSRREV: "MICROSENSRREV",
 
   /**
    * medication list review task
    */
-  medicationlistreviewtask: "MLREV",
+  MLREV: "MLREV",
 
   /**
    * medication administration record work list review task
    */
-  medicationadministrationrecordworklistreviewtask: "MARWLREV",
+  MARWLREV: "MARWLREV",
 
   /**
    * orders review task
    */
-  ordersreviewtask: "OREV",
+  OREV: "OREV",
 
   /**
    * pathology report review task
    */
-  pathologyreportreviewtask: "PATREPREV",
+  PATREPREV: "PATREPREV",
 
   /**
    * problem list review task
    */
-  problemlistreviewtask: "PROBLISTREV",
+  PROBLISTREV: "PROBLISTREV",
 
   /**
    * radiology report review task
    */
-  radiologyreportreviewtask: "RADREPREV",
+  RADREPREV: "RADREPREV",
 
   /**
    * reminder list entry
    */
-  reminderlistentry: "REMLE",
+  REMLE: "REMLE",
 
   /**
    * wellness reminder list entry
    */
-  wellnessreminderlistentry: "WELLREMLE",
+  WELLREMLE: "WELLREMLE",
 
   /**
    * risk assessment instrument task
    */
-  riskassessmentinstrumenttask: "RISKASSESS",
+  RISKASSESS: "RISKASSESS",
 
   /**
    * falls risk assessment instrument task
    */
-  fallsriskassessmentinstrumenttask: "FALLRISK",
+  FALLRISK: "FALLRISK",
 } as const;
 
 /**

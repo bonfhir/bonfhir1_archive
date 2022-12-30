@@ -6,7 +6,7 @@ export const ParticipationReferredToCode = {
   /**
    * Referred to
    */
-  Referredto: "REFT",
+  REFT: "REFT",
 } as const;
 
 /**

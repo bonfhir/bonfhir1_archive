@@ -6,17 +6,17 @@ export const Hl7VSOnlineVerificationResultCode = {
   /**
    * Update performed
    */
-  Updateperformed: "1",
+  "1": "1",
 
   /**
    * update not necessary
    */
-  updatenotnecessary: "2",
+  "2": "2",
 
   /**
    * Error
    */
-  Error: "3",
+  "3": "3",
 } as const;
 
 /**

@@ -6,12 +6,12 @@ export const ControlledSubstanceMonitoringProtocolCode = {
   /**
    * Controlled Substance
    */
-  ControlledSubstance: "CTLSUB",
+  CTLSUB: "CTLSUB",
 
   /**
    * DEADrugSchedule
    */
-  DEADrugSchedule: "_DEADrugSchedule",
+  _DEADrugSchedule: "_DEADrugSchedule",
 } as const;
 
 /**

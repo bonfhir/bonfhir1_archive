@@ -6,7 +6,7 @@ export const ParticipationTrackerCode = {
   /**
    * tracker
    */
-  tracker: "TRC",
+  TRC: "TRC",
 } as const;
 
 /**

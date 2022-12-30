@@ -6,22 +6,22 @@ export const Hl7VSOrderControlCodeReasonCode = {
   /**
    * Cost
    */
-  Cost: "CO",
+  CO: "CO",
 
   /**
    * Specimen Type
    */
-  SpecimenType: "ST",
+  ST: "ST",
 
   /**
    * Specimen Volume
    */
-  SpecimenVolume: "SV",
+  SV: "SV",
 
   /**
    * Unavailable test
    */
-  Unavailabletest: "UN",
+  UN: "UN",
 } as const;
 
 /**

@@ -6,12 +6,12 @@ export const RaceAlaskanIndianAthabascanCode = {
   /**
    * Alaskan Athabascan
    */
-  AlaskanAthabascan: "1739-2",
+  "1739-2": "1739-2",
 
   /**
    * Ahtna
    */
-  Ahtna: "1740-0",
+  "1740-0": "1740-0",
 } as const;
 
 /**

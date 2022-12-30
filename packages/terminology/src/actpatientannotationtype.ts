@@ -6,32 +6,32 @@ export const ActPatientAnnotationTypeCode = {
   /**
    * ActPatientAnnotationType
    */
-  ActPatientAnnotationType: "_ActPatientAnnotationType",
+  _ActPatientAnnotationType: "_ActPatientAnnotationType",
 
   /**
    * diagnostic image note
    */
-  diagnosticimagenote: "ANNDI",
+  ANNDI: "ANNDI",
 
   /**
    * general note
    */
-  generalnote: "ANNGEN",
+  ANNGEN: "ANNGEN",
 
   /**
    * immunization note
    */
-  immunizationnote: "ANNIMM",
+  ANNIMM: "ANNIMM",
 
   /**
    * laboratory note
    */
-  laboratorynote: "ANNLAB",
+  ANNLAB: "ANNLAB",
 
   /**
    * medication note
    */
-  medicationnote: "ANNMED",
+  ANNMED: "ANNMED",
 } as const;
 
 /**

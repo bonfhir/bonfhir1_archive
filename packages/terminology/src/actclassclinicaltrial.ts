@@ -6,7 +6,7 @@ export const ActClassClinicalTrialCode = {
   /**
    * clinical trial
    */
-  clinicaltrial: "CLNTRL",
+  CLNTRL: "CLNTRL",
 } as const;
 
 /**

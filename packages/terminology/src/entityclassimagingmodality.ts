@@ -6,7 +6,7 @@ export const EntityClassImagingModalityCode = {
   /**
    * imaging modality
    */
-  imagingmodality: "MODDV",
+  MODDV: "MODDV",
 } as const;
 
 /**

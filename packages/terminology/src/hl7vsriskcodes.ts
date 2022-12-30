@@ -6,57 +6,57 @@ export const Hl7VSRiskCodesCode = {
   /**
    * Biological
    */
-  Biological: "BIO",
+  BIO: "BIO",
 
   /**
    * Corrosive
    */
-  Corrosive: "COR",
+  COR: "COR",
 
   /**
    * Escape Risk
    */
-  EscapeRisk: "ESC",
+  ESC: "ESC",
 
   /**
    * Aggressive
    */
-  Aggressive: "AGG",
+  AGG: "AGG",
 
   /**
    * MaterialDangerInflammable
    */
-  MaterialDangerInflammable: "IFL",
+  IFL: "IFL",
 
   /**
    * Explosive
    */
-  Explosive: "EXP",
+  EXP: "EXP",
 
   /**
    * MaterialDangerInfectious
    */
-  MaterialDangerInfectious: "INF",
+  INF: "INF",
 
   /**
    * Biohazard
    */
-  Biohazard: "BHZ",
+  BHZ: "BHZ",
 
   /**
    * Injury Hazard
    */
-  InjuryHazard: "INJ",
+  INJ: "INJ",
 
   /**
    * Poison
    */
-  Poison: "POI",
+  POI: "POI",
 
   /**
    * Radioactive
    */
-  Radioactive: "RAD",
+  RAD: "RAD",
 } as const;
 
 /**

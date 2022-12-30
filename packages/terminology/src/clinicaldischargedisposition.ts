@@ -6,52 +6,52 @@ export const ClinicalDischargeDispositionCode = {
   /**
    * Home
    */
-  Home: "home",
+  home: "home",
 
   /**
    * Alternative home
    */
-  Alternativehome: "alt-home",
+  "alt-home": "alt-home",
 
   /**
    * Other healthcare facility
    */
-  Otherhealthcarefacility: "other-hcf",
+  "other-hcf": "other-hcf",
 
   /**
    * Hospice
    */
-  Hospice: "hosp",
+  hosp: "hosp",
 
   /**
    * Long-term care
    */
-  Longtermcare: "long",
+  long: "long",
 
   /**
    * Left against advice
    */
-  Leftagainstadvice: "aadvice",
+  aadvice: "aadvice",
 
   /**
    * Expired
    */
-  Expired: "exp",
+  exp: "exp",
 
   /**
    * Psychiatric hospital
    */
-  Psychiatrichospital: "psy",
+  psy: "psy",
 
   /**
    * Rehabilitation
    */
-  Rehabilitation: "rehab",
+  rehab: "rehab",
 
   /**
    * Skilled nursing facility
    */
-  Skillednursingfacility: "snf",
+  snf: "snf",
 } as const;
 
 /**

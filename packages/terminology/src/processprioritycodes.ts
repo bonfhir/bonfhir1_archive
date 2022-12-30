@@ -6,17 +6,17 @@ export const ProcessPriorityCodesCode = {
   /**
    * Immediate
    */
-  Immediate: "stat",
+  stat: "stat",
 
   /**
    * Normal
    */
-  Normal: "normal",
+  normal: "normal",
 
   /**
    * Deferred
    */
-  Deferred: "deferred",
+  deferred: "deferred",
 } as const;
 
 /**

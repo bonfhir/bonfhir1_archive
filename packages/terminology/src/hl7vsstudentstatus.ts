@@ -6,17 +6,17 @@ export const Hl7VSStudentStatusCode = {
   /**
    * Full-time student
    */
-  Fulltimestudent: "F",
+  F: "F",
 
   /**
    * Part-time student
    */
-  Parttimestudent: "P",
+  P: "P",
 
   /**
    * Not a student
    */
-  Notastudent: "N",
+  N: "N",
 } as const;
 
 /**

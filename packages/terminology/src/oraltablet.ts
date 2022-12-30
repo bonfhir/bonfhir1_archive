@@ -6,77 +6,77 @@ export const OralTabletCode = {
   /**
    * Oral Tablet
    */
-  OralTablet: "ORTAB",
+  ORTAB: "ORTAB",
 
   /**
    * Buccal Tablet
    */
-  BuccalTablet: "BUCTAB",
+  BUCTAB: "BUCTAB",
 
   /**
    * Sustained Release Buccal Tablet
    */
-  SustainedReleaseBuccalTablet: "SRBUCTAB",
+  SRBUCTAB: "SRBUCTAB",
 
   /**
    * Caplet
    */
-  Caplet: "CAPLET",
+  CAPLET: "CAPLET",
 
   /**
    * Chewable Tablet
    */
-  ChewableTablet: "CHEWTAB",
+  CHEWTAB: "CHEWTAB",
 
   /**
    * Coated Particles Tablet
    */
-  CoatedParticlesTablet: "CPTAB",
+  CPTAB: "CPTAB",
 
   /**
    * Disintegrating Tablet
    */
-  DisintegratingTablet: "DISINTAB",
+  DISINTAB: "DISINTAB",
 
   /**
    * Delayed Release Tablet
    */
-  DelayedReleaseTablet: "DRTAB",
+  DRTAB: "DRTAB",
 
   /**
    * Enteric Coated Tablet
    */
-  EntericCoatedTablet: "ECTAB",
+  ECTAB: "ECTAB",
 
   /**
    * Extended Release Enteric Coated Tablet
    */
-  ExtendedReleaseEntericCoatedTablet: "ERECTAB",
+  ERECTAB: "ERECTAB",
 
   /**
    * Extended Release Tablet
    */
-  ExtendedReleaseTablet: "ERTAB",
+  ERTAB: "ERTAB",
 
   /**
    * 12 Hour Extended Release Tablet
    */
-  TwelveHourExtendedReleaseTablet: "ERTAB12",
+  ERTAB12: "ERTAB12",
 
   /**
    * 24 Hour Extended Release Tablet
    */
-  TwentyFourHourExtendedReleaseTablet: "ERTAB24",
+  ERTAB24: "ERTAB24",
 
   /**
    * Lozenge/Oral Troche
    */
-  LozengeOralTroche: "ORTROCHE",
+  ORTROCHE: "ORTROCHE",
 
   /**
    * Sublingual Tablet
    */
-  SublingualTablet: "SLTAB",
+  SLTAB: "SLTAB",
 } as const;
 
 /**

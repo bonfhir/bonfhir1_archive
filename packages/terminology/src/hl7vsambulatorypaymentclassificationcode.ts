@@ -6,22 +6,22 @@ export const Hl7VSAmbulatoryPaymentClassificationCodeCode = {
   /**
    * Dental procedures
    */
-  Dentalprocedures: "031",
+  "031": "031",
 
   /**
    * Excision/biopsy
    */
-  Excisionbiopsy: "163",
+  "163": "163",
 
   /**
    * Level 1 skin repair.
    */
-  Level1skinrepair: "181",
+  "181": "181",
 
   /**
    * No suggested values defined
    */
-  Nosuggestedvaluesdefined: "...",
+  "...": "...",
 } as const;
 
 /**

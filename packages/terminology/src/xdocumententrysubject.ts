@@ -6,17 +6,17 @@ export const XDocumentEntrySubjectCode = {
   /**
    * patient
    */
-  patient: "PAT",
+  PAT: "PAT",
 
   /**
    * personal relationship
    */
-  personalrelationship: "PRS",
+  PRS: "PRS",
 
   /**
    * specimen
    */
-  specimen: "SPEC",
+  SPEC: "SPEC",
 } as const;
 
 /**

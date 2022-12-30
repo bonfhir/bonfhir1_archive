@@ -6,12 +6,12 @@ export const Hl7VSComputationTypeCode = {
   /**
    * Indicates a percent change
    */
-  Indicatesapercentchange: "%",
+  "%": "%",
 
   /**
    * Absolute Change
    */
-  AbsoluteChange: "a",
+  a: "a",
 } as const;
 
 /**

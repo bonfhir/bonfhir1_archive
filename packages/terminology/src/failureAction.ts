@@ -6,22 +6,22 @@ export const Failure_actionCode = {
   /**
    * Fatal
    */
-  Fatal: "fatal",
+  fatal: "fatal",
 
   /**
    * Warning
    */
-  Warning: "warn",
+  warn: "warn",
 
   /**
    * Record only
    */
-  Recordonly: "rec-only",
+  "rec-only": "rec-only",
 
   /**
    * None
    */
-  None: "none",
+  none: "none",
 } as const;
 
 /**

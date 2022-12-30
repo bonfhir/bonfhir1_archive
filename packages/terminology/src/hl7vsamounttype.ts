@@ -6,27 +6,27 @@ export const Hl7VSAmountTypeCode = {
   /**
    * Differential
    */
-  Differential: "DF",
+  DF: "DF",
 
   /**
    * Limit
    */
-  Limit: "LM",
+  LM: "LM",
 
   /**
    * Percentage
    */
-  Percentage: "PC",
+  PC: "PC",
 
   /**
    * Rate
    */
-  Rate: "RT",
+  RT: "RT",
 
   /**
    * Unlimited
    */
-  Unlimited: "UL",
+  UL: "UL",
 } as const;
 
 /**

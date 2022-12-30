@@ -6,22 +6,22 @@ export const Hl7VSAllergySeverityCode = {
   /**
    * Severe
    */
-  Severe: "SV",
+  SV: "SV",
 
   /**
    * Moderate
    */
-  Moderate: "MO",
+  MO: "MO",
 
   /**
    * Mild
    */
-  Mild: "MI",
+  MI: "MI",
 
   /**
    * Unknown
    */
-  Unknown: "U",
+  U: "U",
 } as const;
 
 /**

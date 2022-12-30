@@ -6,27 +6,27 @@ export const Hl7VSObservationResultHandlingCode = {
   /**
    * Film-with-patient
    */
-  Filmwithpatient: "F",
+  F: "F",
 
   /**
    * Notify provider when ready
    */
-  Notifyproviderwhenready: "N",
+  N: "N",
 
   /**
    * Alert provider when abnormal
    */
-  Alertproviderwhenabnormal: "A",
+  A: "A",
 
   /**
    * Copies requested
    */
-  Copiesrequested: "CC",
+  CC: "CC",
 
   /**
    * Blind copy
    */
-  Blindcopy: "BCC",
+  BCC: "BCC",
 } as const;
 
 /**

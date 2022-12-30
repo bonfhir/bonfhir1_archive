@@ -6,212 +6,212 @@ export const Hl7VSSpecimenCollectionMethodCode = {
   /**
    * Aspiration, Fine Needle
    */
-  AspirationFineNeedle: "FNA",
+  FNA: "FNA",
 
   /**
    * Arterial puncture
    */
-  Arterialpuncture: "PNA",
+  PNA: "PNA",
 
   /**
    * Biopsy
    */
-  Biopsy: "BIO",
+  BIO: "BIO",
 
   /**
    * Blood Culture, Aerobic Bottle
    */
-  BloodCultureAerobicBottle: "BCAE",
+  BCAE: "BCAE",
 
   /**
    * Blood Culture, Anaerobic Bottle
    */
-  BloodCultureAnaerobicBottle: "BCAN",
+  BCAN: "BCAN",
 
   /**
    * Blood Culture, Pediatric Bottle
    */
-  BloodCulturePediatricBottle: "BCPD",
+  BCPD: "BCPD",
 
   /**
    * Capillary Specimen
    */
-  CapillarySpecimen: "CAP",
+  CAP: "CAP",
 
   /**
    * Catheterized
    */
-  Catheterized: "CATH",
+  CATH: "CATH",
 
   /**
    * Environmental, Plate
    */
-  EnvironmentalPlate: "EPLA",
+  EPLA: "EPLA",
 
   /**
    * Environmental, Swab
    */
-  EnvironmentalSwab: "ESWA",
+  ESWA: "ESWA",
 
   /**
    * Line, Arterial
    */
-  LineArterial: "LNA",
+  LNA: "LNA",
 
   /**
    * Line, CVP
    */
-  LineCVP: "CVP",
+  CVP: "CVP",
 
   /**
    * Line, Venous
    */
-  LineVenous: "LNV",
+  LNV: "LNV",
 
   /**
    * Martin-Lewis Agar
    */
-  MartinLewisAgar: "MARTL",
+  MARTL: "MARTL",
 
   /**
    * Mod. Martin-Lewis Agar
    */
-  ModMartinLewisAgar: "ML11",
+  ML11: "ML11",
 
   /**
    * Pace, Gen-Probe
    */
-  PaceGenProbe: "PACE",
+  PACE: "PACE",
 
   /**
    * Pinworm Prep
    */
-  PinwormPrep: "PIN",
+  PIN: "PIN",
 
   /**
    * Plate, Cough
    */
-  PlateCough: "KOFFP",
+  KOFFP: "KOFFP",
 
   /**
    * Plate, Martin-Lewis
    */
-  PlateMartinLewis: "MLP",
+  MLP: "MLP",
 
   /**
    * Plate, New York City
    */
-  PlateNewYorkCity: "NYP",
+  NYP: "NYP",
 
   /**
    * Plate, Thayer-Martin
    */
-  PlateThayerMartin: "TMP",
+  TMP: "TMP",
 
   /**
    * Plates, Anaerobic
    */
-  PlatesAnaerobic: "ANP",
+  ANP: "ANP",
 
   /**
    * Plates, Blood Agar
    */
-  PlatesBloodAgar: "BAP",
+  BAP: "BAP",
 
   /**
    * Pump Prime
    */
-  PumpPrime: "PRIME",
+  PRIME: "PRIME",
 
   /**
    * Pump Specimen
    */
-  PumpSpecimen: "PUMP",
+  PUMP: "PUMP",
 
   /**
    * Quality Control For Micro
    */
-  QualityControlForMicro: "QC5",
+  QC5: "QC5",
 
   /**
    * Scalp, Fetal Vein
    */
-  ScalpFetalVein: "SCLP",
+  SCLP: "SCLP",
 
   /**
    * Scrapings
    */
-  Scrapings: "SCRAPS",
+  SCRAPS: "SCRAPS",
 
   /**
    * Shaving
    */
-  Shaving: "SHA",
+  SHA: "SHA",
 
   /**
    * Swab
    */
-  Swab: "SWA",
+  SWA: "SWA",
 
   /**
    * Swab, Dacron tipped
    */
-  SwabDacrontipped: "SWD",
+  SWD: "SWD",
 
   /**
    * Swab, Wooden Shaft
    */
-  SwabWoodenShaft: "WOOD",
+  WOOD: "WOOD",
 
   /**
    * Transport Media,
    */
-  TransportMedia: "TMOT",
+  TMOT: "TMOT",
 
   /**
    * Transport Media, Anaerobic
    */
-  TransportMediaAnaerobic: "TMAN",
+  TMAN: "TMAN",
 
   /**
    * Transport Media, Chalamydia
    */
-  TransportMediaChalamydia: "TMCH",
+  TMCH: "TMCH",
 
   /**
    * Transport Media, M4
    */
-  TransportMediaM4: "TMM4",
+  TMM4: "TMM4",
 
   /**
    * Transport Media, Mycoplasma
    */
-  TransportMediaMycoplasma: "TMMY",
+  TMMY: "TMMY",
 
   /**
    * Transport Media, PVA
    */
-  TransportMediaPVA: "TMPV",
+  TMPV: "TMPV",
 
   /**
    * Transport Media, Stool Culture
    */
-  TransportMediaStoolCulture: "TMSC",
+  TMSC: "TMSC",
 
   /**
    * Transport Media, Ureaplasma
    */
-  TransportMediaUreaplasma: "TMUP",
+  TMUP: "TMUP",
 
   /**
    * Transport Media, Viral
    */
-  TransportMediaViral: "TMVI",
+  TMVI: "TMVI",
 
   /**
    * Venipuncture
    */
-  Venipuncture: "VENIP",
+  VENIP: "VENIP",
 } as const;
 
 /**

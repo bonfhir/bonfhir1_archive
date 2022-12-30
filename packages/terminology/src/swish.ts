@@ -6,12 +6,12 @@ export const SwishCode = {
   /**
    * Swish and spit out, oromucosal
    */
-  Swishandspitoutoromucosal: "SWISHSPIT",
+  SWISHSPIT: "SWISHSPIT",
 
   /**
    * Swish and swallow, oromucosal
    */
-  Swishandswalloworomucosal: "SWISHSWAL",
+  SWISHSWAL: "SWISHSWAL",
 } as const;
 
 /**

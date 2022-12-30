@@ -6,7 +6,7 @@ export const ActRelationshipEvaluatesGoalCode = {
   /**
    * evaluates (goal)
    */
-  evaluatesgoal: "GEVL",
+  GEVL: "GEVL",
 } as const;
 
 /**

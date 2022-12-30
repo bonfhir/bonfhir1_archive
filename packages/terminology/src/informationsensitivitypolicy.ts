@@ -8,247 +8,247 @@ export const InformationSensitivityPolicyCode = {
   /**
    * InformationSensitivityPolicy
    */
-  InformationSensitivityPolicy: "_InformationSensitivityPolicy",
+  _InformationSensitivityPolicy: "_InformationSensitivityPolicy",
 
   /**
    * ActInformationSensitivityPolicy
    */
-  ActInformationSensitivityPolicy: "_ActInformationSensitivityPolicy",
+  _ActInformationSensitivityPolicy: "_ActInformationSensitivityPolicy",
 
   /**
    * substance abuse information sensitivity
    */
-  substanceabuseinformationsensitivity: "ETH",
+  ETH: "ETH",
 
   /**
    * genetic disease information sensitivity
    */
-  geneticdiseaseinformationsensitivity: "GDIS",
+  GDIS: "GDIS",
 
   /**
    * HIV/AIDS information sensitivity
    */
-  HIVAIDSinformationsensitivity: "HIV",
+  HIV: "HIV",
 
   /**
    * military sexual trauma information sensitivity
    */
-  militarysexualtraumainformationsensitivity: "MST",
+  MST: "MST",
 
   /**
    * pregnancy information sensitivity
    */
-  pregnancyinformationsensitivity: "PREGNANT",
+  PREGNANT: "PREGNANT",
 
   /**
    * sickle cell anemia information sensitivity
    */
-  sicklecellanemiainformationsensitivity: "SCA",
+  SCA: "SCA",
 
   /**
    * sexual assault, abuse, or domestic violence information sensitivity
    */
-  sexualassaultabuseordomesticviolenceinformationsensitivity: "SDV",
+  SDV: "SDV",
 
   /**
    * sexuality and reproductive health information sensitivity
    */
-  sexualityandreproductivehealthinformationsensitivity: "SEX",
+  SEX: "SEX",
 
   /**
    * specially protected information sensitivity
    */
-  speciallyprotectedinformationsensitivity: "SPI",
+  SPI: "SPI",
 
   /**
    * behavioral health information sensitivity
    */
-  behavioralhealthinformationsensitivity: "BH",
+  BH: "BH",
 
   /**
    * cognitive disability information sensitivity
    */
-  cognitivedisabilityinformationsensitivity: "COGN",
+  COGN: "COGN",
 
   /**
    * developmental disability information sensitivity
    */
-  developmentaldisabilityinformationsensitivity: "DVD",
+  DVD: "DVD",
 
   /**
    * emotional disturbance information sensitivity
    */
-  emotionaldisturbanceinformationsensitivity: "EMOTDIS",
+  EMOTDIS: "EMOTDIS",
 
   /**
    * mental health information sensitivity
    */
-  mentalhealthinformationsensitivity: "MH",
+  MH: "MH",
 
   /**
    * psychiatry disorder information sensitivity
    */
-  psychiatrydisorderinformationsensitivity: "PSY",
+  PSY: "PSY",
 
   /**
    * psychotherapy note information sensitivity
    */
-  psychotherapynoteinformationsensitivity: "PSYTHPN",
+  PSYTHPN: "PSYTHPN",
 
   /**
    * substance use disorder information sensitivity
    */
-  substanceusedisorderinformationsensitivity: "SUD",
+  SUD: "SUD",
 
   /**
    * alcohol use disorder information sensitivity
    */
-  alcoholusedisorderinformationsensitivity: "ETHUD",
+  ETHUD: "ETHUD",
 
   /**
    * opioid use disorder information sensitivity
    */
-  opioidusedisorderinformationsensitivity: "OPIOIDUD",
+  OPIOIDUD: "OPIOIDUD",
 
   /**
    * sexually transmitted disease information sensitivity
    */
-  sexuallytransmitteddiseaseinformationsensitivity: "STD",
+  STD: "STD",
 
   /**
    * taboo
    */
-  taboo: "TBOO",
+  TBOO: "TBOO",
 
   /**
    * violence information sensitivity
    */
-  violenceinformationsensitivity: "VIO",
+  VIO: "VIO",
 
   /**
    * Identifier Sensitivity
    */
-  IdentifierSensitivity: "IDS",
+  IDS: "IDS",
 
   /**
    * sickle cell
    */
-  sicklecell: "SICKLE",
+  SICKLE: "SICKLE",
 
   /**
    * EntityInformationSensitivityPolicy
    */
-  EntityInformationSensitivityPolicy: "_EntitySensitivityPolicyType",
+  _EntitySensitivityPolicyType: "_EntitySensitivityPolicyType",
 
   /**
    * all demographic information sensitivity
    */
-  alldemographicinformationsensitivity: "DEMO",
+  DEMO: "DEMO",
 
   /**
    * date of birth information sensitivity
    */
-  dateofbirthinformationsensitivity: "DOB",
+  DOB: "DOB",
 
   /**
    * gender and sexual orientation information sensitivity
    */
-  genderandsexualorientationinformationsensitivity: "GENDER",
+  GENDER: "GENDER",
 
   /**
    * living arrangement information sensitivity
    */
-  livingarrangementinformationsensitivity: "LIVARG",
+  LIVARG: "LIVARG",
 
   /**
    * marital status information sensitivity
    */
-  maritalstatusinformationsensitivity: "MARST",
+  MARST: "MARST",
 
   /**
    * patient location
    */
-  patientlocation: "PATLOC",
+  PATLOC: "PATLOC",
 
   /**
    * race information sensitivity
    */
-  raceinformationsensitivity: "RACE",
+  RACE: "RACE",
 
   /**
    * religion information sensitivity
    */
-  religioninformationsensitivity: "REL",
+  REL: "REL",
 
   /**
    * RoleInformationSensitivityPolicy
    */
-  RoleInformationSensitivityPolicy: "_RoleInformationSensitivityPolicy",
+  _RoleInformationSensitivityPolicy: "_RoleInformationSensitivityPolicy",
 
   /**
    * business information sensitivity
    */
-  businessinformationsensitivity: "B",
+  B: "B",
 
   /**
    * employer information sensitivity
    */
-  employerinformationsensitivity: "EMPL",
+  EMPL: "EMPL",
 
   /**
    * location information sensitivity
    */
-  locationinformationsensitivity: "LOCIS",
+  LOCIS: "LOCIS",
 
   /**
    * sensitive service provider information sensitivity
    */
-  sensitiveserviceproviderinformationsensitivity: "SSP",
+  SSP: "SSP",
 
   /**
    * adolescent information sensitivity
    */
-  adolescentinformationsensitivity: "ADOL",
+  ADOL: "ADOL",
 
   /**
    * celebrity information sensitivity
    */
-  celebrityinformationsensitivity: "CEL",
+  CEL: "CEL",
 
   /**
    * celebrity information sensitivity
    */
-  celebrityinformationsensitivity: "VIP",
+  VIP: "VIP",
 
   /**
    * diagnosis information sensitivity
    */
-  diagnosisinformationsensitivity: "DIA",
+  DIA: "DIA",
 
   /**
    * drug information sensitivity
    */
-  druginformationsensitivity: "DRGIS",
+  DRGIS: "DRGIS",
 
   /**
    * employee information sensitivity
    */
-  employeeinformationsensitivity: "EMP",
+  EMP: "EMP",
 
   /**
    * patient default information sensitivity
    */
-  patientdefaultinformationsensitivity: "PDS",
+  PDS: "PDS",
 
   /**
    * physician requested information sensitivity
    */
-  physicianrequestedinformationsensitivity: "PHY",
+  PHY: "PHY",
 
   /**
    * patient requested information sensitivity
    */
-  patientrequestedinformationsensitivity: "PRS",
+  PRS: "PRS",
 } as const;
 
 /**

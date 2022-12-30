@@ -6,22 +6,22 @@ export const IntraarterialRouteCode = {
   /**
    * Infusion, intraarterial catheter
    */
-  Infusionintraarterialcatheter: "IA",
+  IA: "IA",
 
   /**
    * Injection, intraarterial
    */
-  Injectionintraarterial: "IAINJ",
+  IAINJ: "IAINJ",
 
   /**
    * Injection, intraarterial, push
    */
-  Injectionintraarterialpush: "IAINJP",
+  IAINJP: "IAINJP",
 
   /**
    * Injection, intraarterial, slow push
    */
-  Injectionintraarterialslowpush: "IAINJSP",
+  IAINJSP: "IAINJSP",
 } as const;
 
 /**

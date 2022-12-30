@@ -6,7 +6,7 @@ export const ActRelationshipUsesCode = {
   /**
    * uses
    */
-  uses: "USE",
+  USE: "USE",
 } as const;
 
 /**

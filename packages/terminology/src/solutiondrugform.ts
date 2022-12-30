@@ -6,107 +6,107 @@ export const SolutionDrugFormCode = {
   /**
    * Solution
    */
-  Solution: "SOL",
+  SOL: "SOL",
 
   /**
    * Drops
    */
-  Drops: "DROP",
+  DROP: "DROP",
 
   /**
    * Nasal Drops
    */
-  NasalDrops: "NDROP",
+  NDROP: "NDROP",
 
   /**
    * Ophthalmic Drops
    */
-  OphthalmicDrops: "OPDROP",
+  OPDROP: "OPDROP",
 
   /**
    * Oral Drops
    */
-  OralDrops: "ORDROP",
+  ORDROP: "ORDROP",
 
   /**
    * Otic Drops
    */
-  OticDrops: "OTDROP",
+  OTDROP: "OTDROP",
 
   /**
    * Intraperitoneal Solution
    */
-  IntraperitonealSolution: "IPSOL",
+  IPSOL: "IPSOL",
 
   /**
    * Irrigation Solution
    */
-  IrrigationSolution: "IRSOL",
+  IRSOL: "IRSOL",
 
   /**
    * Douche
    */
-  Douche: "DOUCHE",
+  DOUCHE: "DOUCHE",
 
   /**
    * Enema
    */
-  Enema: "ENEMA",
+  ENEMA: "ENEMA",
 
   /**
    * Ophthalmic Irrigation Solution
    */
-  OphthalmicIrrigationSolution: "OPIRSOL",
+  OPIRSOL: "OPIRSOL",
 
   /**
    * Intravenous Solution
    */
-  IntravenousSolution: "IVSOL",
+  IVSOL: "IVSOL",
 
   /**
    * Oral Solution
    */
-  OralSolution: "ORALSOL",
+  ORALSOL: "ORALSOL",
 
   /**
    * Elixir
    */
-  Elixir: "ELIXIR",
+  ELIXIR: "ELIXIR",
 
   /**
    * Mouthwash/Rinse
    */
-  MouthwashRinse: "RINSE",
+  RINSE: "RINSE",
 
   /**
    * Syrup
    */
-  Syrup: "SYRUP",
+  SYRUP: "SYRUP",
 
   /**
    * Rectal Solution
    */
-  RectalSolution: "RECSOL",
+  RECSOL: "RECSOL",
 
   /**
    * Topical Solution
    */
-  TopicalSolution: "TOPSOL",
+  TOPSOL: "TOPSOL",
 
   /**
    * Liniment
    */
-  Liniment: "LIN",
+  LIN: "LIN",
 
   /**
    * Mucous Membrane Topical Solution
    */
-  MucousMembraneTopicalSolution: "MUCTOPSOL",
+  MUCTOPSOL: "MUCTOPSOL",
 
   /**
    * Tincture
    */
-  Tincture: "TINC",
+  TINC: "TINC",
 } as const;
 
 /**

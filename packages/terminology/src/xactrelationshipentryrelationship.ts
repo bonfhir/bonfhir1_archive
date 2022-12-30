@@ -6,52 +6,52 @@ export const XActRelationshipEntryRelationshipCode = {
   /**
    * is etiology for
    */
-  isetiologyfor: "CAUS",
+  CAUS: "CAUS",
 
   /**
    * has component
    */
-  hascomponent: "COMP",
+  COMP: "COMP",
 
   /**
    * evaluates (goal)
    */
-  evaluatesgoal: "GEVL",
+  GEVL: "GEVL",
 
   /**
    * is manifestation of
    */
-  ismanifestationof: "MFST",
+  MFST: "MFST",
 
   /**
    * refers to
    */
-  refersto: "REFR",
+  REFR: "REFR",
 
   /**
    * has reason
    */
-  hasreason: "RSON",
+  RSON: "RSON",
 
   /**
    * starts after start of
    */
-  startsafterstartof: "SAS",
+  SAS: "SAS",
 
   /**
    * has support
    */
-  hassupport: "SPRT",
+  SPRT: "SPRT",
 
   /**
    * has subject
    */
-  hassubject: "SUBJ",
+  SUBJ: "SUBJ",
 
   /**
    * Excerpts
    */
-  Excerpts: "XCRPT",
+  XCRPT: "XCRPT",
 } as const;
 
 /**

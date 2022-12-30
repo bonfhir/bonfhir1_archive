@@ -6,12 +6,12 @@ export const PeriodontalRouteCode = {
   /**
    * Injection, periodontal
    */
-  Injectionperiodontal: "PDONTINJ",
+  PDONTINJ: "PDONTINJ",
 
   /**
    * Topical application, periodontal
    */
-  Topicalapplicationperiodontal: "PDONTTA",
+  PDONTTA: "PDONTTA",
 } as const;
 
 /**

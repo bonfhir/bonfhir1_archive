@@ -6,7 +6,7 @@ export const ParticipationRecordTargetCode = {
   /**
    * record target
    */
-  recordtarget: "RCT",
+  RCT: "RCT",
 } as const;
 
 /**

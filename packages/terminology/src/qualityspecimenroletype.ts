@@ -6,32 +6,32 @@ export const QualitySpecimenRoleTypeCode = {
   /**
    * Quality Control
    */
-  QualityControl: "Q",
+  Q: "Q",
 
   /**
    * Blind
    */
-  Blind: "B",
+  B: "B",
 
   /**
    * Electronic QC
    */
-  ElectronicQC: "E",
+  E: "E",
 
   /**
    * Filler Proficiency
    */
-  FillerProficiency: "F",
+  F: "F",
 
   /**
    * Operator Proficiency
    */
-  OperatorProficiency: "O",
+  O: "O",
 
   /**
    * Verifying
    */
-  Verifying: "V",
+  V: "V",
 } as const;
 
 /**

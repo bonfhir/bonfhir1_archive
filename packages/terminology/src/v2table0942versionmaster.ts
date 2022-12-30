@@ -6,27 +6,27 @@ export const V2Table0942VersionMasterCode = {
   /**
    * Emergency input buffer current capacity
    */
-  Emergencyinputbuffercurrentcapacity: "EB",
+  EB: "EB",
 
   /**
    * Input buffer current capacity
    */
-  Inputbuffercurrentcapacity: "IB",
+  IB: "IB",
 
   /**
    * Instrument current processing capacity
    */
-  Instrumentcurrentprocessingcapacity: "IC",
+  IC: "IC",
 
   /**
    * Output buffer current capacity
    */
-  Outputbuffercurrentcapacity: "OB",
+  OB: "OB",
 
   /**
    * Current test availability
    */
-  Currenttestavailability: "TA",
+  TA: "TA",
 } as const;
 
 /**

@@ -10,17 +10,17 @@ export const MessageWaitingPriorityCode = {
   /**
    * High
    */
-  High: "H",
+  H: "H",
 
   /**
    * Low
    */
-  Low: "L",
+  L: "L",
 
   /**
    * Medium
    */
-  Medium: "M",
+  M: "M",
 } as const;
 
 /**

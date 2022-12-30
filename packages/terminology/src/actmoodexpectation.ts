@@ -10,17 +10,17 @@ export const ActMoodExpectationCode = {
   /**
    * expectation
    */
-  expectation: "EXPEC",
+  EXPEC: "EXPEC",
 
   /**
    * Goal
    */
-  Goal: "GOL",
+  GOL: "GOL",
 
   /**
    * risk
    */
-  risk: "RSK",
+  RSK: "RSK",
 } as const;
 
 /**

@@ -6,32 +6,32 @@ export const EntityClassLivingSubjectCode = {
   /**
    * living subject
    */
-  livingsubject: "LIV",
+  LIV: "LIV",
 
   /**
    * non-person living subject
    */
-  nonpersonlivingsubject: "NLIV",
+  NLIV: "NLIV",
 
   /**
    * animal
    */
-  animal: "ANM",
+  ANM: "ANM",
 
   /**
    * microorganism
    */
-  microorganism: "MIC",
+  MIC: "MIC",
 
   /**
    * plant
    */
-  plant: "PLNT",
+  PLNT: "PLNT",
 
   /**
    * person
    */
-  person: "PSN",
+  PSN: "PSN",
 } as const;
 
 /**

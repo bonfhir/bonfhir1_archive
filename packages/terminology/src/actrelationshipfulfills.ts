@@ -6,22 +6,22 @@ export const ActRelationshipFulfillsCode = {
   /**
    * fulfills
    */
-  fulfills: "FLFS",
+  FLFS: "FLFS",
 
   /**
    * occurrence
    */
-  occurrence: "OCCR",
+  OCCR: "OCCR",
 
   /**
    * references order
    */
-  referencesorder: "OREF",
+  OREF: "OREF",
 
   /**
    * schedules request
    */
-  schedulesrequest: "SCH",
+  SCH: "SCH",
 } as const;
 
 /**

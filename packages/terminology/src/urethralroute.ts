@@ -6,22 +6,22 @@ export const UrethralRouteCode = {
   /**
    * Injection, urethral
    */
-  Injectionurethral: "URETHINJ",
+  URETHINJ: "URETHINJ",
 
   /**
    * Insertion, urethral
    */
-  Insertionurethral: "URETHINS",
+  URETHINS: "URETHINS",
 
   /**
    * instillation, urethral
    */
-  instillationurethral: "URETHINSTL",
+  URETHINSTL: "URETHINSTL",
 
   /**
    * Suppository, urethral
    */
-  Suppositoryurethral: "URETHSUP",
+  URETHSUP: "URETHSUP",
 } as const;
 
 /**

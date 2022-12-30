@@ -6,12 +6,12 @@ export const Hl7VSSupplierTypeCode = {
   /**
    * Distributor
    */
-  Distributor: "D",
+  D: "D",
 
   /**
    * Manufacturer
    */
-  Manufacturer: "M",
+  M: "M",
 } as const;
 
 /**

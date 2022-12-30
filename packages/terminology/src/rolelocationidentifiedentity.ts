@@ -6,22 +6,22 @@ export const RoleLocationIdentifiedEntityCode = {
   /**
    * LocationIdentifiedEntityRoleCode
    */
-  LocationIdentifiedEntityRoleCode: "_LocationIdentifiedEntityRoleCode",
+  _LocationIdentifiedEntityRoleCode: "_LocationIdentifiedEntityRoleCode",
 
   /**
    * accreditation location identifier
    */
-  accreditationlocationidentifier: "ACHFID",
+  ACHFID: "ACHFID",
 
   /**
    * jurisdiction location identifier
    */
-  jurisdictionlocationidentifier: "JURID",
+  JURID: "JURID",
 
   /**
    * local location identifier
    */
-  locallocationidentifier: "LOCHFID",
+  LOCHFID: "LOCHFID",
 } as const;
 
 /**

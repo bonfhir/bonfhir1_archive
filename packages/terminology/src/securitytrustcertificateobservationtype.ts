@@ -6,7 +6,7 @@ export const SecurityTrustCertificateObservationTypeCode = {
   /**
    * trust certificate observation
    */
-  trustcertificateobservation: "TRSTCERTOBS",
+  TRSTCERTOBS: "TRSTCERTOBS",
 } as const;
 
 /**

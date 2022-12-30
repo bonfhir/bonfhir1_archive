@@ -6,22 +6,22 @@ export const ObservationInterpretationNormalityHighCode = {
   /**
    * High
    */
-  High: "H",
+  H: "H",
 
   /**
    * Significantly high
    */
-  Significantlyhigh: "H>",
+  "H>": "H>",
 
   /**
    * Critical high
    */
-  Criticalhigh: "HH",
+  HH: "HH",
 
   /**
    * Significantly high
    */
-  Significantlyhigh: "HU",
+  HU: "HU",
 } as const;
 
 /**

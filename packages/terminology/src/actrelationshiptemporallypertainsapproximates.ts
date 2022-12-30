@@ -6,68 +6,68 @@ export const ActRelationshipTemporallyPertainsApproximatesCode = {
   /**
    * ActRelationshipTemporallyPertainsApproximates
    */
-  ActRelationshipTemporallyPertainsApproximates:
+  _ActRelationshipTemporallyPertainsApproximates:
     "_ActRelationshipTemporallyPertainsApproximates",
 
   /**
    * ends near end
    */
-  endsnearend: "ENE",
+  ENE: "ENE",
 
   /**
    * ends concurrent with
    */
-  endsconcurrentwith: "ECW",
+  ECW: "ECW",
 
   /**
    * concurrent with
    */
-  concurrentwith: "CONCURRENT",
+  CONCURRENT: "CONCURRENT",
 
   /**
    * starts before start of, ends with
    */
-  startsbeforestartofendswith: "SBSECWE",
+  SBSECWE: "SBSECWE",
 
   /**
    * ends near start
    */
-  endsnearstart: "ENS",
+  ENS: "ENS",
 
   /**
    * ends concurrent with start of
    */
-  endsconcurrentwithstartof: "ECWS",
+  ECWS: "ECWS",
 
   /**
    * starts near end
    */
-  startsnearend: "SNE",
+  SNE: "SNE",
 
   /**
    * starts concurrent with end of
    */
-  startsconcurrentwithendof: "SCWE",
+  SCWE: "SCWE",
 
   /**
    * starts near start
    */
-  startsnearstart: "SNS",
+  SNS: "SNS",
 
   /**
    * starts concurrent with
    */
-  startsconcurrentwith: "SCW",
+  SCW: "SCW",
 
   /**
    * starts with. ends before end of
    */
-  startswithendsbeforeendof: "SCWSEBE",
+  SCWSEBE: "SCWSEBE",
 
   /**
    * starts with, ends after end of
    */
-  startswithendsafterendof: "SCWSEAE",
+  SCWSEAE: "SCWSEAE",
 } as const;
 
 /**

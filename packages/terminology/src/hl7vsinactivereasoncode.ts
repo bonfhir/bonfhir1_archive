@@ -6,17 +6,17 @@ export const Hl7VSInactiveReasonCodeCode = {
   /**
    * Leave of Absence
    */
-  LeaveofAbsence: "L",
+  L: "L",
 
   /**
    * Termination
    */
-  Termination: "T",
+  T: "T",
 
   /**
    * Retired
    */
-  Retired: "R",
+  R: "R",
 } as const;
 
 /**

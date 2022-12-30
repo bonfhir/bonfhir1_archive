@@ -6,32 +6,32 @@ export const Hl7VSActionTakenInResponseToTheEventCode = {
   /**
    * Product withdrawn permanently
    */
-  Productwithdrawnpermanently: "WP",
+  WP: "WP",
 
   /**
    * Product withdrawn temporarily
    */
-  Productwithdrawntemporarily: "WT",
+  WT: "WT",
 
   /**
    * Product dose or frequency of use reduced
    */
-  Productdoseorfrequencyofusereduced: "DR",
+  DR: "DR",
 
   /**
    * Product dose or frequency of use increased
    */
-  Productdoseorfrequencyofuseincreased: "DI",
+  DI: "DI",
 
   /**
    * Other
    */
-  Other: "OT",
+  OT: "OT",
 
   /**
    * None
    */
-  None: "N",
+  N: "N",
 } as const;
 
 /**

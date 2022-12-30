@@ -6,57 +6,57 @@ export const ActEncounterCodeCode = {
   /**
    * ambulatory
    */
-  ambulatory: "AMB",
+  AMB: "AMB",
 
   /**
    * emergency
    */
-  emergency: "EMER",
+  EMER: "EMER",
 
   /**
    * field
    */
-  field: "FLD",
+  FLD: "FLD",
 
   /**
    * home health
    */
-  homehealth: "HH",
+  HH: "HH",
 
   /**
    * inpatient encounter
    */
-  inpatientencounter: "IMP",
+  IMP: "IMP",
 
   /**
    * inpatient acute
    */
-  inpatientacute: "ACUTE",
+  ACUTE: "ACUTE",
 
   /**
    * inpatient non-acute
    */
-  inpatientnonacute: "NONAC",
+  NONAC: "NONAC",
 
   /**
    * observation encounter
    */
-  observationencounter: "OBSENC",
+  OBSENC: "OBSENC",
 
   /**
    * pre-admission
    */
-  preadmission: "PRENC",
+  PRENC: "PRENC",
 
   /**
    * short stay
    */
-  shortstay: "SS",
+  SS: "SS",
 
   /**
    * virtual
    */
-  virtual: "VR",
+  VR: "VR",
 } as const;
 
 /**

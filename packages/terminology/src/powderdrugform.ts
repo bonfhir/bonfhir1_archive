@@ -6,22 +6,22 @@ export const PowderDrugFormCode = {
   /**
    * Powder
    */
-  Powder: "POWD",
+  POWD: "POWD",
 
   /**
    * Topical Powder
    */
-  TopicalPowder: "TOPPWD",
+  TOPPWD: "TOPPWD",
 
   /**
    * Rectal Powder
    */
-  RectalPowder: "RECPWD",
+  RECPWD: "RECPWD",
 
   /**
    * Vaginal Powder
    */
-  VaginalPowder: "VAGPWD",
+  VAGPWD: "VAGPWD",
 } as const;
 
 /**

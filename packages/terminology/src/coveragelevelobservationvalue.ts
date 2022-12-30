@@ -6,47 +6,47 @@ export const CoverageLevelObservationValueCode = {
   /**
    * CoverageLevelObservationValue
    */
-  CoverageLevelObservationValue: "_CoverageLevelObservationValue",
+  _CoverageLevelObservationValue: "_CoverageLevelObservationValue",
 
   /**
    * adult child
    */
-  adultchild: "ADC",
+  ADC: "ADC",
 
   /**
    * child
    */
-  child: "CHD",
+  CHD: "CHD",
 
   /**
    * dependent
    */
-  dependent: "DEP",
+  DEP: "DEP",
 
   /**
    * domestic partner
    */
-  domesticpartner: "DP",
+  DP: "DP",
 
   /**
    * employee
    */
-  employee: "ECH",
+  ECH: "ECH",
 
   /**
    * family coverage
    */
-  familycoverage: "FLY",
+  FLY: "FLY",
 
   /**
    * individual
    */
-  individual: "IND",
+  IND: "IND",
 
   /**
    * same sex partner
    */
-  samesexpartner: "SSP",
+  SSP: "SSP",
 } as const;
 
 /**

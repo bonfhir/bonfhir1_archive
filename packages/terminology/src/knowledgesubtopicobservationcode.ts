@@ -6,7 +6,7 @@ export const KnowledgeSubtopicObservationCodeCode = {
   /**
    * knowledge subtopic
    */
-  knowledgesubtopic: "KSUBT",
+  KSUBT: "KSUBT",
 } as const;
 
 /**

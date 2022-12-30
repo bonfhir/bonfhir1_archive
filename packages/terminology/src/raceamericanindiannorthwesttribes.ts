@@ -6,57 +6,57 @@ export const RaceAmericanIndianNorthwestTribesCode = {
   /**
    * Northwest Tribes
    */
-  NorthwestTribes: "1391-2",
+  "1391-2": "1391-2",
 
   /**
    * Alsea
    */
-  Alsea: "1392-0",
+  "1392-0": "1392-0",
 
   /**
    * Celilo
    */
-  Celilo: "1393-8",
+  "1393-8": "1393-8",
 
   /**
    * Columbia
    */
-  Columbia: "1394-6",
+  "1394-6": "1394-6",
 
   /**
    * Kalapuya
    */
-  Kalapuya: "1395-3",
+  "1395-3": "1395-3",
 
   /**
    * Molala
    */
-  Molala: "1396-1",
+  "1396-1": "1396-1",
 
   /**
    * Talakamish
    */
-  Talakamish: "1397-9",
+  "1397-9": "1397-9",
 
   /**
    * Tenino
    */
-  Tenino: "1398-7",
+  "1398-7": "1398-7",
 
   /**
    * Tillamook
    */
-  Tillamook: "1399-5",
+  "1399-5": "1399-5",
 
   /**
    * Wenatchee
    */
-  Wenatchee: "1400-1",
+  "1400-1": "1400-1",
 
   /**
    * Yahooskin
    */
-  Yahooskin: "1401-9",
+  "1401-9": "1401-9",
 } as const;
 
 /**

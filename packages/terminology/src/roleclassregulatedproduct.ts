@@ -8,7 +8,7 @@ export const RoleClassRegulatedProductCode = {
   /**
    * regulated product
    */
-  regulatedproduct: "RGPR",
+  RGPR: "RGPR",
 } as const;
 
 /**

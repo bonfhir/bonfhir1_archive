@@ -6,32 +6,32 @@ export const ExampleMessageReasonCodesCode = {
   /**
    * Admit
    */
-  Admit: "admit",
+  admit: "admit",
 
   /**
    * Discharge
    */
-  Discharge: "discharge",
+  discharge: "discharge",
 
   /**
    * Absent
    */
-  Absent: "absent",
+  absent: "absent",
 
   /**
    * Returned
    */
-  Returned: "return",
+  return: "return",
 
   /**
    * Moved
    */
-  Moved: "moved",
+  moved: "moved",
 
   /**
    * Edit
    */
-  Edit: "edit",
+  edit: "edit",
 } as const;
 
 /**

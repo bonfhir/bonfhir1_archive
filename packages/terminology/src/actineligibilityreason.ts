@@ -8,17 +8,17 @@ export const ActIneligibilityReasonCode = {
   /**
    * coverage suspended
    */
-  coveragesuspended: "COVSUS",
+  COVSUS: "COVSUS",
 
   /**
    * deceased
    */
-  deceased: "DECSD",
+  DECSD: "DECSD",
 
   /**
    * registered in error
    */
-  registeredinerror: "REGERR",
+  REGERR: "REGERR",
 } as const;
 
 /**

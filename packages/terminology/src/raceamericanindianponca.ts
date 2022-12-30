@@ -6,17 +6,17 @@ export const RaceAmericanIndianPoncaCode = {
   /**
    * Ponca
    */
-  Ponca: "1474-6",
+  "1474-6": "1474-6",
 
   /**
    * Nebraska Ponca
    */
-  NebraskaPonca: "1475-3",
+  "1475-3": "1475-3",
 
   /**
    * Oklahoma Ponca
    */
-  OklahomaPonca: "1476-1",
+  "1476-1": "1476-1",
 } as const;
 
 /**

@@ -6,227 +6,227 @@ export const Hl7VSDiagnosticServiceSectionIdCode = {
   /**
    * Audiology
    */
-  Audiology: "AU",
+  AU: "AU",
 
   /**
    * Blood Gases
    */
-  BloodGases: "BG",
+  BG: "BG",
 
   /**
    * Blood Bank
    */
-  BloodBank: "BLB",
+  BLB: "BLB",
 
   /**
    * Cytogenetics
    */
-  Cytogenetics: "CG",
+  CG: "CG",
 
   /**
    * Cardiac Ultrasound
    */
-  CardiacUltrasound: "CUS",
+  CUS: "CUS",
 
   /**
    * Cardiac Catheterization
    */
-  CardiacCatheterization: "CTH",
+  CTH: "CTH",
 
   /**
    * CAT Scan
    */
-  CATScan: "CT",
+  CT: "CT",
 
   /**
    * Chemistry
    */
-  Chemistry: "CH",
+  CH: "CH",
 
   /**
    * Cytopathology
    */
-  Cytopathology: "CP",
+  CP: "CP",
 
   /**
    * Electrocardiac (e.g., EKG,  EEC, Holter)
    */
-  ElectrocardiacegEKGEECHolter: "EC",
+  EC: "EC",
 
   /**
    * Electroneuro (EEG, EMG,EP,PSG)
    */
-  ElectroneuroEEGEMGEPPSG: "EN",
+  EN: "EN",
 
   /**
    * Genetics
    */
-  Genetics: "GE",
+  GE: "GE",
 
   /**
    * Hematology
    */
-  Hematology: "HM",
+  HM: "HM",
 
   /**
    * Diagnostic Imaging
    */
-  DiagnosticImaging: "IMG",
+  IMG: "IMG",
 
   /**
    * Bedside ICU Monitoring
    */
-  BedsideICUMonitoring: "ICU",
+  ICU: "ICU",
 
   /**
    * Immunology
    */
-  Immunology: "IMM",
+  IMM: "IMM",
 
   /**
    * Laboratory
    */
-  Laboratory: "LAB",
+  LAB: "LAB",
 
   /**
    * Microbiology
    */
-  Microbiology: "MB",
+  MB: "MB",
 
   /**
    * Mycobacteriology
    */
-  Mycobacteriology: "MCB",
+  MCB: "MCB",
 
   /**
    * Mycology
    */
-  Mycology: "MYC",
+  MYC: "MYC",
 
   /**
    * Nuclear Medicine Scan
    */
-  NuclearMedicineScan: "NMS",
+  NMS: "NMS",
 
   /**
    * Nuclear Magnetic Resonance
    */
-  NuclearMagneticResonance: "NMR",
+  NMR: "NMR",
 
   /**
    * Nursing Service Measures
    */
-  NursingServiceMeasures: "NRS",
+  NRS: "NRS",
 
   /**
    * OB Ultrasound
    */
-  OBUltrasound: "OUS",
+  OUS: "OUS",
 
   /**
    * Occupational Therapy
    */
-  OccupationalTherapy: "OT",
+  OT: "OT",
 
   /**
    * Other
    */
-  Other: "OTH",
+  OTH: "OTH",
 
   /**
    * Outside Lab
    */
-  OutsideLab: "OSL",
+  OSL: "OSL",
 
   /**
    * Parasitology
    */
-  Parasitology: "PAR",
+  PAR: "PAR",
 
   /**
    * Pharmacy
    */
-  Pharmacy: "PHR",
+  PHR: "PHR",
 
   /**
    * Pathology (gross & histopath, not surgical)
    */
-  Pathologygrosshistopathnotsurgical: "PAT",
+  PAT: "PAT",
 
   /**
    * Physical Therapy
    */
-  PhysicalTherapy: "PT",
+  PT: "PT",
 
   /**
    * Physician (Hx. Dx, admission note, etc.)
    */
-  PhysicianHxDxadmissionnoteetc: "PHY",
+  PHY: "PHY",
 
   /**
    * Pulmonary Function
    */
-  PulmonaryFunction: "PF",
+  PF: "PF",
 
   /**
    * Radiology
    */
-  Radiology: "RAD",
+  RAD: "RAD",
 
   /**
    * Radiograph
    */
-  Radiograph: "RX",
+  RX: "RX",
 
   /**
    * Radiology Ultrasound
    */
-  RadiologyUltrasound: "RUS",
+  RUS: "RUS",
 
   /**
    * Respiratory Care (therapy)
    */
-  RespiratoryCaretherapy: "RC",
+  RC: "RC",
 
   /**
    * Radiation Therapy
    */
-  RadiationTherapy: "RT",
+  RT: "RT",
 
   /**
    * Serology
    */
-  Serology: "SR",
+  SR: "SR",
 
   /**
    * Surgical Pathology
    */
-  SurgicalPathology: "SP",
+  SP: "SP",
 
   /**
    * Toxicology
    */
-  Toxicology: "TX",
+  TX: "TX",
 
   /**
    * Vascular Ultrasound
    */
-  VascularUltrasound: "VUS",
+  VUS: "VUS",
 
   /**
    * Virology
    */
-  Virology: "VR",
+  VR: "VR",
 
   /**
    * Urinalysis
    */
-  Urinalysis: "URN",
+  URN: "URN",
 
   /**
    * Cineradiograph
    */
-  Cineradiograph: "XRC",
+  XRC: "XRC",
 } as const;
 
 /**

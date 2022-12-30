@@ -6,32 +6,32 @@ export const Hl7VSProcessingConsiderationCodesCode = {
   /**
    * Paper documentation to follow
    */
-  Paperdocumentationtofollow: "PAPER",
+  PAPER: "PAPER",
 
   /**
    * Electronic form to follow
    */
-  Electronicformtofollow: "EFORM",
+  EFORM: "EFORM",
 
   /**
    * Fax to follow
    */
-  Faxtofollow: "FAX",
+  FAX: "FAX",
 
   /**
    * Real Time Adjudication Processing
    */
-  RealTimeAdjudicationProcessing: "RTADJ",
+  RTADJ: "RTADJ",
 
   /**
    * Deferred Adjudication Processing
    */
-  DeferredAdjudicationProcessing: "DFADJ",
+  DFADJ: "DFADJ",
 
   /**
    * Delayed by a Previous Payer
    */
-  DelayedbyaPreviousPayer: "PYRDELAY",
+  PYRDELAY: "PYRDELAY",
 } as const;
 
 /**

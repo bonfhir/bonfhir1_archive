@@ -6,82 +6,82 @@ export const Hl7VSBodySiteModifierCode = {
   /**
    * Anterior
    */
-  Anterior: "ANT",
+  ANT: "ANT",
 
   /**
    * Bilateral
    */
-  Bilateral: "BIL",
+  BIL: "BIL",
 
   /**
    * Distal
    */
-  Distal: "DIS",
+  DIS: "DIS",
 
   /**
    * External
    */
-  External: "EXT",
+  EXT: "EXT",
 
   /**
    * Lateral
    */
-  Lateral: "LAT",
+  LAT: "LAT",
 
   /**
    * Left
    */
-  Left: "L",
+  L: "L",
 
   /**
    * Lower
    */
-  Lower: "LOW",
+  LOW: "LOW",
 
   /**
    * Medial
    */
-  Medial: "MED",
+  MED: "MED",
 
   /**
    * Posterior
    */
-  Posterior: "POS",
+  POS: "POS",
 
   /**
    * Proximal
    */
-  Proximal: "PRO",
+  PRO: "PRO",
 
   /**
    * Quadrant, Left Lower
    */
-  QuadrantLeftLower: "LLQ",
+  LLQ: "LLQ",
 
   /**
    * Quadrant, Left Upper
    */
-  QuadrantLeftUpper: "LUQ",
+  LUQ: "LUQ",
 
   /**
    * Quadrant, Right Lower
    */
-  QuadrantRightLower: "RLQ",
+  RLQ: "RLQ",
 
   /**
    * Quadrant, Right Upper
    */
-  QuadrantRightUpper: "RUQ",
+  RUQ: "RUQ",
 
   /**
    * Right
    */
-  Right: "R",
+  R: "R",
 
   /**
    * Upper
    */
-  Upper: "UPP",
+  UPP: "UPP",
 } as const;
 
 /**

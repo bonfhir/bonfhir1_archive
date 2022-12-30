@@ -6,12 +6,12 @@ export const ActRelationshipHasSupportCode = {
   /**
    * has support
    */
-  hassupport: "SPRT",
+  SPRT: "SPRT",
 
   /**
    * has bounded support
    */
-  hasboundedsupport: "SPRTBND",
+  SPRTBND: "SPRTBND",
 } as const;
 
 /**

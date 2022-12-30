@@ -6,32 +6,32 @@ export const ContainerCapCode = {
   /**
    * Film
    */
-  Film: "FILM",
+  FILM: "FILM",
 
   /**
    * Foil
    */
-  Foil: "FOIL",
+  FOIL: "FOIL",
 
   /**
    * Push Cap
    */
-  PushCap: "PUSH",
+  PUSH: "PUSH",
 
   /**
    * Screw Cap
    */
-  ScrewCap: "SCR",
+  SCR: "SCR",
 
   /**
    * ChildProof
    */
-  ChildProof: "CHILD",
+  CHILD: "CHILD",
 
   /**
    * EasyOpen
    */
-  EasyOpen: "EASY",
+  EASY: "EASY",
 } as const;
 
 /**

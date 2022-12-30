@@ -6,17 +6,17 @@ export const BiotherapeuticNonPersonLivingSubjectRoleTypeCode = {
   /**
    * Biotherapeutic non-person living subject
    */
-  Biotherapeuticnonpersonlivingsubject: "BIOTH",
+  BIOTH: "BIOTH",
 
   /**
    * Antibiotic
    */
-  Antibiotic: "ANTIBIOT",
+  ANTIBIOT: "ANTIBIOT",
 
   /**
    * Debridement
    */
-  Debridement: "DEBR",
+  DEBR: "DEBR",
 } as const;
 
 /**

@@ -12,17 +12,17 @@ export const SnodentDentitionStateInternationalCode = {
   /**
    * Primary Dentition
    */
-  PrimaryDentition: "121288D",
+  "121288D": "121288D",
 
   /**
    * Permanent Dentition
    */
-  PermanentDentition: "139017D",
+  "139017D": "139017D",
 
   /**
    * Mixed Dentition
    */
-  MixedDentition: "210962D",
+  "210962D": "210962D",
 } as const;
 
 /**

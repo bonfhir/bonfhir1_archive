@@ -6,7 +6,7 @@ export const ActRelationshipAdjunctiveTreatmentCode = {
   /**
    * adjunctive treatment
    */
-  adjunctivetreatment: "ADJUNCT",
+  ADJUNCT: "ADJUNCT",
 } as const;
 
 /**

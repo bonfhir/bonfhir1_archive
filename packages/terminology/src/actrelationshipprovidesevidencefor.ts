@@ -8,7 +8,7 @@ export const ActRelationshipProvidesEvidenceForCode = {
   /**
    * provides evidence for
    */
-  providesevidencefor: "EVID",
+  EVID: "EVID",
 } as const;
 
 /**

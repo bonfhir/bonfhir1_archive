@@ -6,17 +6,17 @@ export const RoleClassExposureAgentCarrierCode = {
   /**
    * exposure agent carrier
    */
-  exposureagentcarrier: "EXPAGTCAR",
+  EXPAGTCAR: "EXPAGTCAR",
 
   /**
    * exposure vector
    */
-  exposurevector: "EXPVECTOR",
+  EXPVECTOR: "EXPVECTOR",
 
   /**
    * fomite
    */
-  fomite: "FOMITE",
+  FOMITE: "FOMITE",
 } as const;
 
 /**

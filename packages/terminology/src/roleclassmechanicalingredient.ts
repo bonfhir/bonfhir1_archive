@@ -6,7 +6,7 @@ export const RoleClassMechanicalIngredientCode = {
   /**
    * mechanical ingredient
    */
-  mechanicalingredient: "MECH",
+  MECH: "MECH",
 } as const;
 
 /**

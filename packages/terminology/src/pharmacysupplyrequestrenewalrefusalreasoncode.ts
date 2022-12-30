@@ -6,63 +6,63 @@ export const PharmacySupplyRequestRenewalRefusalReasonCodeCode = {
   /**
    * pharmacy supply request renewal refusal reason
    */
-  pharmacysupplyrequestrenewalrefusalreason:
+  _PharmacySupplyRequestRenewalRefusalReasonCode:
     "_PharmacySupplyRequestRenewalRefusalReasonCode",
 
   /**
    * product discontinued
    */
-  productdiscontinued: "DISCONT",
+  DISCONT: "DISCONT",
 
   /**
    * new prescription exists
    */
-  newprescriptionexists: "ALREADYRX",
+  ALREADYRX: "ALREADYRX",
 
   /**
    * family physician must authorize further fills
    */
-  familyphysicianmustauthorizefurtherfills: "FAMPHYS",
+  FAMPHYS: "FAMPHYS",
 
   /**
    * modified prescription exists
    */
-  modifiedprescriptionexists: "MODIFY",
+  MODIFY: "MODIFY",
 
   /**
    * patient must make appointment
    */
-  patientmustmakeappointment: "NEEDAPMT",
+  NEEDAPMT: "NEEDAPMT",
 
   /**
    * prescriber not available
    */
-  prescribernotavailable: "NOTAVAIL",
+  NOTAVAIL: "NOTAVAIL",
 
   /**
    * patient no longer in this practice
    */
-  patientnolongerinthispractice: "NOTPAT",
+  NOTPAT: "NOTPAT",
 
   /**
    * medication on hold
    */
-  medicationonhold: "ONHOLD",
+  ONHOLD: "ONHOLD",
 
   /**
    * product not available
    */
-  productnotavailable: "PRNA",
+  PRNA: "PRNA",
 
   /**
    * prescriber stopped medication for patient
    */
-  prescriberstoppedmedicationforpatient: "STOPMED",
+  STOPMED: "STOPMED",
 
   /**
    * too early
    */
-  tooearly: "TOOEARLY",
+  TOOEARLY: "TOOEARLY",
 } as const;
 
 /**

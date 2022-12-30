@@ -6,17 +6,17 @@ export const RepetitionsOutOfRangeCode = {
   /**
    * repetitions out of range
    */
-  repetitionsoutofrange: "REP_RANGE",
+  REP_RANGE: "REP_RANGE",
 
   /**
    * repetitions above maximum
    */
-  repetitionsabovemaximum: "MAXOCCURS",
+  MAXOCCURS: "MAXOCCURS",
 
   /**
    * repetitions below minimum
    */
-  repetitionsbelowminimum: "MINOCCURS",
+  MINOCCURS: "MINOCCURS",
 } as const;
 
 /**

@@ -6,27 +6,27 @@ export const InteractionDetectedIssueCodeCode = {
   /**
    * Food Interaction Alert
    */
-  FoodInteractionAlert: "FOOD",
+  FOOD: "FOOD",
 
   /**
    * Therapeutic Product Alert
    */
-  TherapeuticProductAlert: "TPROD",
+  TPROD: "TPROD",
 
   /**
    * Drug Interaction Alert
    */
-  DrugInteractionAlert: "DRG",
+  DRG: "DRG",
 
   /**
    * Natural Health Product Alert
    */
-  NaturalHealthProductAlert: "NHP",
+  NHP: "NHP",
 
   /**
    * Non-Prescription Interaction Alert
    */
-  NonPrescriptionInteractionAlert: "NONRX",
+  NONRX: "NONRX",
 } as const;
 
 /**

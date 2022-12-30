@@ -6,7 +6,7 @@ export const GasDrugFormCode = {
   /**
    * Gas for Inhalation
    */
-  GasforInhalation: "GASINHL",
+  GASINHL: "GASINHL",
 } as const;
 
 /**

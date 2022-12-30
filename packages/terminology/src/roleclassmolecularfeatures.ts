@@ -6,12 +6,12 @@ export const RoleClassMolecularFeaturesCode = {
   /**
    * molecular bond
    */
-  molecularbond: "BOND",
+  BOND: "BOND",
 
   /**
    * part
    */
-  part: "PART",
+  PART: "PART",
 } as const;
 
 /**

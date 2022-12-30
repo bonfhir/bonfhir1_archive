@@ -6,12 +6,12 @@ export const PalaihnihanCode = {
   /**
    * Achumawi
    */
-  Achumawi: "x-ACH",
+  "x-ACH": "x-ACH",
 
   /**
    * Atsugewi
    */
-  Atsugewi: "x-ATW",
+  "x-ATW": "x-ATW",
 } as const;
 
 /**

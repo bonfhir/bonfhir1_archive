@@ -6,7 +6,7 @@ export const ActClassVerificationCode = {
   /**
    * Verification
    */
-  Verification: "VERIF",
+  VERIF: "VERIF",
 } as const;
 
 /**

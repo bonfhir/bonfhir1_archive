@@ -6,7 +6,7 @@ export const StatisticCertaintySubcomponentTypeCode = {
   /**
    * Risk of bias
    */
-  Riskofbias: "RiskOfBias",
+  RiskOfBias: "RiskOfBias",
 
   /**
    * Inconsistency
@@ -26,22 +26,22 @@ export const StatisticCertaintySubcomponentTypeCode = {
   /**
    * Publication bias
    */
-  Publicationbias: "PublicationBias",
+  PublicationBias: "PublicationBias",
 
   /**
    * Dose response gradient
    */
-  Doseresponsegradient: "DoseResponseGradient",
+  DoseResponseGradient: "DoseResponseGradient",
 
   /**
    * Plausible confounding
    */
-  Plausibleconfounding: "PlausibleConfounding",
+  PlausibleConfounding: "PlausibleConfounding",
 
   /**
    * Large effect
    */
-  Largeeffect: "LargeEffect",
+  LargeEffect: "LargeEffect",
 } as const;
 
 /**

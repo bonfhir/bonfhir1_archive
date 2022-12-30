@@ -6,7 +6,7 @@ export const ActClassDocumentSectionCode = {
   /**
    * document section
    */
-  documentsection: "DOCSECT",
+  DOCSECT: "DOCSECT",
 } as const;
 
 /**

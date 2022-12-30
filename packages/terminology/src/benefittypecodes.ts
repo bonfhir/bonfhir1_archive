@@ -6,62 +6,62 @@ export const BenefitTypeCodesCode = {
   /**
    * Benefit
    */
-  Benefit: "benefit",
+  benefit: "benefit",
 
   /**
    * Deductible
    */
-  Deductible: "deductible",
+  deductible: "deductible",
 
   /**
    * Visit
    */
-  Visit: "visit",
+  visit: "visit",
 
   /**
    * Room
    */
-  Room: "room",
+  room: "room",
 
   /**
    * Copayment per service
    */
-  Copaymentperservice: "copay",
+  copay: "copay",
 
   /**
    * Copayment Percent per service
    */
-  CopaymentPercentperservice: "copay-percent",
+  "copay-percent": "copay-percent",
 
   /**
    * Copayment maximum per service
    */
-  Copaymentmaximumperservice: "copay-maximum",
+  "copay-maximum": "copay-maximum",
 
   /**
    * Vision Exam
    */
-  VisionExam: "vision-exam",
+  "vision-exam": "vision-exam",
 
   /**
    * Vision Glasses
    */
-  VisionGlasses: "vision-glasses",
+  "vision-glasses": "vision-glasses",
 
   /**
    * Vision Contacts Coverage
    */
-  VisionContactsCoverage: "vision-contacts",
+  "vision-contacts": "vision-contacts",
 
   /**
    * Medical Primary Health Coverage
    */
-  MedicalPrimaryHealthCoverage: "medical-primarycare",
+  "medical-primarycare": "medical-primarycare",
 
   /**
    * Pharmacy Dispense Coverage
    */
-  PharmacyDispenseCoverage: "pharmacy-dispense",
+  "pharmacy-dispense": "pharmacy-dispense",
 } as const;
 
 /**

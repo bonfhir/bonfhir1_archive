@@ -6,7 +6,7 @@ export const ActClassProcessStepCode = {
   /**
    * transportation
    */
-  transportation: "TRNS",
+  TRNS: "TRNS",
 } as const;
 
 /**

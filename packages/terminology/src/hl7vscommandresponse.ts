@@ -6,27 +6,27 @@ export const Hl7VSCommandResponseCode = {
   /**
    * Command completed successfully
    */
-  Commandcompletedsuccessfully: "OK",
+  OK: "OK",
 
   /**
    * Command cannot be completed within requested completion time
    */
-  Commandcannotbecompletedwithinrequestedcompletiontime: "TI",
+  TI: "TI",
 
   /**
    * Command cannot be completed because of error condition
    */
-  Commandcannotbecompletedbecauseoferrorcondition: "ER",
+  ER: "ER",
 
   /**
    * Command cannot be completed because of the status of the requested equipment
    */
-  Commandcannotbecompletedbecauseofthestatusoftherequestedequipment: "ST",
+  ST: "ST",
 
   /**
    * Command cannot be completed for unknown reasons
    */
-  Commandcannotbecompletedforunknownreasons: "UN",
+  UN: "UN",
 } as const;
 
 /**

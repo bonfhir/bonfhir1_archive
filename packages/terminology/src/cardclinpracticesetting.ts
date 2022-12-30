@@ -6,13 +6,12 @@ export const CardClinPracticeSettingCode = {
   /**
    * Ambulatory Health Care Facilities; Clinic/Center; Rehabilitation: Cardiac Facilities
    */
-  AmbulatoryHealthCareFacilitiesClinicCenterRehabilitationCardiacFacilities:
-    "CARD",
+  CARD: "CARD",
 
   /**
    * Pediatric cardiology clinic
    */
-  Pediatriccardiologyclinic: "PEDCARD",
+  PEDCARD: "PEDCARD",
 } as const;
 
 /**

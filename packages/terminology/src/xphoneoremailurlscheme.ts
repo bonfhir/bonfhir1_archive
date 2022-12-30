@@ -6,17 +6,17 @@ export const XPhoneOrEmailURLSchemeCode = {
   /**
    * Fax
    */
-  Fax: "fax",
+  fax: "fax",
 
   /**
    * Mailto
    */
-  Mailto: "mailto",
+  mailto: "mailto",
 
   /**
    * Telephone
    */
-  Telephone: "tel",
+  tel: "tel",
 } as const;
 
 /**

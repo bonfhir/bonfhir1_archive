@@ -6,62 +6,62 @@ export const OrganizationTypeCode = {
   /**
    * Healthcare Provider
    */
-  HealthcareProvider: "prov",
+  prov: "prov",
 
   /**
    * Hospital Department
    */
-  HospitalDepartment: "dept",
+  dept: "dept",
 
   /**
    * Organizational team
    */
-  Organizationalteam: "team",
+  team: "team",
 
   /**
    * Government
    */
-  Government: "govt",
+  govt: "govt",
 
   /**
    * Insurance Company
    */
-  InsuranceCompany: "ins",
+  ins: "ins",
 
   /**
    * Payer
    */
-  Payer: "pay",
+  pay: "pay",
 
   /**
    * Educational Institute
    */
-  EducationalInstitute: "edu",
+  edu: "edu",
 
   /**
    * Religious Institution
    */
-  ReligiousInstitution: "reli",
+  reli: "reli",
 
   /**
    * Clinical Research Sponsor
    */
-  ClinicalResearchSponsor: "crs",
+  crs: "crs",
 
   /**
    * Community Group
    */
-  CommunityGroup: "cg",
+  cg: "cg",
 
   /**
    * Non-Healthcare Business or Corporation
    */
-  NonHealthcareBusinessorCorporation: "bus",
+  bus: "bus",
 
   /**
    * Other
    */
-  Other: "other",
+  other: "other",
 } as const;
 
 /**

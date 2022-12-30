@@ -6,67 +6,67 @@ export const MississippiValleyCode = {
   /**
    * ChiwereWinnebago
    */
-  ChiwereWinnebago: "_ChiwereWinnebago",
+  _ChiwereWinnebago: "_ChiwereWinnebago",
 
   /**
    * Chiwere
    */
-  Chiwere: "x-IOW",
+  "x-IOW": "x-IOW",
 
   /**
    * Hocak
    */
-  Hocak: "x-WIN",
+  "x-WIN": "x-WIN",
 
   /**
    * Dakotan
    */
-  Dakotan: "_Dakotan",
+  _Dakotan: "_Dakotan",
 
   /**
    * Assiniboine
    */
-  Assiniboine: "x-ASB",
+  "x-ASB": "x-ASB",
 
   /**
    * Dakota
    */
-  Dakota: "x-DHG",
+  "x-DHG": "x-DHG",
 
   /**
    * Lakota
    */
-  Lakota: "x-LKT",
+  "x-LKT": "x-LKT",
 
   /**
    * Nakota
    */
-  Nakota: "x-NKT",
+  "x-NKT": "x-NKT",
 
   /**
    * Dhegiha
    */
-  Dhegiha: "_Dhegiha",
+  _Dhegiha: "_Dhegiha",
 
   /**
    * Kansa
    */
-  Kansa: "x-KAA",
+  "x-KAA": "x-KAA",
 
   /**
    * Omaha-Ponca
    */
-  OmahaPonca: "x-OMA",
+  "x-OMA": "x-OMA",
 
   /**
    * Osage
    */
-  Osage: "x-OSA",
+  "x-OSA": "x-OSA",
 
   /**
    * Quapaw
    */
-  Quapaw: "x-QUA",
+  "x-QUA": "x-QUA",
 } as const;
 
 /**

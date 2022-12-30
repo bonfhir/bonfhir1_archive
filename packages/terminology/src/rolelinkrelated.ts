@@ -8,42 +8,42 @@ export const RoleLinkRelatedCode = {
   /**
    * related
    */
-  related: "REL",
+  REL: "REL",
 
   /**
    * is backup for
    */
-  isbackupfor: "BACKUP",
+  BACKUP: "BACKUP",
 
   /**
    * has contact
    */
-  hascontact: "CONT",
+  CONT: "CONT",
 
   /**
    * has direct authority over
    */
-  hasdirectauthorityover: "DIRAUTH",
+  DIRAUTH: "DIRAUTH",
 
   /**
    * Identification
    */
-  Identification: "IDENT",
+  IDENT: "IDENT",
 
   /**
    * has indirect authority over
    */
-  hasindirectauthorityover: "INDAUTH",
+  INDAUTH: "INDAUTH",
 
   /**
    * has part
    */
-  haspart: "PART",
+  PART: "PART",
 
   /**
    * replaces
    */
-  replaces: "REPL",
+  REPL: "REPL",
 } as const;
 
 /**

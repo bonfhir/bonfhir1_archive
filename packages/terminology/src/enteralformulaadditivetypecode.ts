@@ -6,27 +6,27 @@ export const EnteralFormulaAdditiveTypeCodeCode = {
   /**
    * Lipid
    */
-  Lipid: "lipid",
+  lipid: "lipid",
 
   /**
    * Protein
    */
-  Protein: "protein",
+  protein: "protein",
 
   /**
    * Carbohydrate
    */
-  Carbohydrate: "carbohydrate",
+  carbohydrate: "carbohydrate",
 
   /**
    * Fiber
    */
-  Fiber: "fiber",
+  fiber: "fiber",
 
   /**
    * Water
    */
-  Water: "water",
+  water: "water",
 } as const;
 
 /**

@@ -6,37 +6,37 @@ export const Hl7VSOrganDonorCode = {
   /**
    * Yes, patient is a documented donor and documentation is on file
    */
-  Yespatientisadocumenteddonoranddocumentationisonfile: "Y",
+  Y: "Y",
 
   /**
    * Yes, patient is a documented donor, but documentation is not on file
    */
-  Yespatientisadocumenteddonorbutdocumentationisnotonfile: "F",
+  F: "F",
 
   /**
    * No, patient has not agreed to be a donor
    */
-  Nopatienthasnotagreedtobeadonor: "N",
+  N: "N",
 
   /**
    * No, patient is not a documented donor, but information was provided
    */
-  Nopatientisnotadocumenteddonorbutinformationwasprovided: "I",
+  I: "I",
 
   /**
    * Patient leaves organ donation decision to relatives
    */
-  Patientleavesorgandonationdecisiontorelatives: "R",
+  R: "R",
 
   /**
    * Patient leaves organ donation decision to a specific person
    */
-  Patientleavesorgandonationdecisiontoaspecificperson: "P",
+  P: "P",
 
   /**
    * Unknown
    */
-  Unknown: "U",
+  U: "U",
 } as const;
 
 /**

@@ -6,12 +6,12 @@ export const Hl7VSCoordinationOfBenefitsCode = {
   /**
    * Coordination
    */
-  Coordination: "CO",
+  CO: "CO",
 
   /**
    * Independent
    */
-  Independent: "IN",
+  IN: "IN",
 } as const;
 
 /**

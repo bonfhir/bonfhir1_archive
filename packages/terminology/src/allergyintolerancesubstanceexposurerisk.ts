@@ -6,12 +6,12 @@ export const AllergyIntoleranceSubstanceExposureRiskCode = {
   /**
    * Known Reaction Risk
    */
-  KnownReactionRisk: "known-reaction-risk",
+  "known-reaction-risk": "known-reaction-risk",
 
   /**
    * No Known Reaction Risk
    */
-  NoKnownReactionRisk: "no-known-reaction-risk",
+  "no-known-reaction-risk": "no-known-reaction-risk",
 } as const;
 
 /**

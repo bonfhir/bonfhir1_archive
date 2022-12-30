@@ -6,17 +6,17 @@ export const ApplicationMediaTypeCode = {
   /**
    * DICOM
    */
-  DICOM: "application/dicom",
+  "application/dicom": "application/dicom",
 
   /**
    * MSWORD
    */
-  MSWORD: "application/msword",
+  "application/msword": "application/msword",
 
   /**
    * PDF
    */
-  PDF: "application/pdf",
+  "application/pdf": "application/pdf",
 } as const;
 
 /**

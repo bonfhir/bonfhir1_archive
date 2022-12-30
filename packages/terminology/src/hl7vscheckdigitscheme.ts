@@ -6,27 +6,27 @@ export const Hl7VSCheckDigitSchemeCode = {
   /**
    * Bank Card Validation Number
    */
-  BankCardValidationNumber: "BCV",
+  BCV: "BCV",
 
   /**
    * Check digit algorithm in the US National Provider Identifier
    */
-  CheckdigitalgorithmintheUSNationalProviderIdentifier: "NPI",
+  NPI: "NPI",
 
   /**
    * ISO 7064: 1983
    */
-  ISO70641983: "ISO",
+  ISO: "ISO",
 
   /**
    * Mod 10 algorithm
    */
-  Mod10algorithm: "M10",
+  M10: "M10",
 
   /**
    * Mod 11 algorithm
    */
-  Mod11algorithm: "M11",
+  M11: "M11",
 } as const;
 
 /**

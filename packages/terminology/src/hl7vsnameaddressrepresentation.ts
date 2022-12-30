@@ -6,17 +6,17 @@ export const Hl7VSNameAddressRepresentationCode = {
   /**
    * Ideographic (i.e., Kanji)
    */
-  IdeographicieKanji: "I",
+  I: "I",
 
   /**
    * Alphabetic (i.e., Default or some single-byte)
    */
-  AlphabeticieDefaultorsomesinglebyte: "A",
+  A: "A",
 
   /**
    * Phonetic (i.e., ASCII, Katakana, Hiragana, etc.)
    */
-  PhoneticieASCIIKatakanaHiraganaetc: "P",
+  P: "P",
 } as const;
 
 /**

@@ -6,27 +6,27 @@ export const ConsentActionCodesCode = {
   /**
    * Collect
    */
-  Collect: "collect",
+  collect: "collect",
 
   /**
    * Access
    */
-  Access: "access",
+  access: "access",
 
   /**
    * Use
    */
-  Use: "use",
+  use: "use",
 
   /**
    * Disclose
    */
-  Disclose: "disclose",
+  disclose: "disclose",
 
   /**
    * Access and Correct
    */
-  AccessandCorrect: "correct",
+  correct: "correct",
 } as const;
 
 /**

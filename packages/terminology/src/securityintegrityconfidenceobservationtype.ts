@@ -6,7 +6,7 @@ export const SecurityIntegrityConfidenceObservationTypeCode = {
   /**
    * security integrity confidence observation
    */
-  securityintegrityconfidenceobservation: "SECINTCONOBS",
+  SECINTCONOBS: "SECINTCONOBS",
 } as const;
 
 /**

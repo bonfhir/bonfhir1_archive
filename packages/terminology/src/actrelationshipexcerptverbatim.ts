@@ -6,7 +6,7 @@ export const ActRelationshipExcerptVerbatimCode = {
   /**
    * Excerpt verbatim
    */
-  Excerptverbatim: "VRXCRPT",
+  VRXCRPT: "VRXCRPT",
 } as const;
 
 /**

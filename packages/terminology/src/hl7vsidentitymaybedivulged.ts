@@ -6,17 +6,17 @@ export const Hl7VSIdentityMayBeDivulgedCode = {
   /**
    * Yes
    */
-  Yes: "Y",
+  Y: "Y",
 
   /**
    * No
    */
-  No: "N",
+  N: "N",
 
   /**
    * Not applicable
    */
-  Notapplicable: "NA",
+  NA: "NA",
 } as const;
 
 /**

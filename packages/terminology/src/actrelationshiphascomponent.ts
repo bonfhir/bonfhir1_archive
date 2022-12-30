@@ -6,37 +6,37 @@ export const ActRelationshipHasComponentCode = {
   /**
    * has component
    */
-  hascomponent: "COMP",
+  COMP: "COMP",
 
   /**
    * has control variable
    */
-  hascontrolvariable: "CTRLV",
+  CTRLV: "CTRLV",
 
   /**
    * has member
    */
-  hasmember: "MBR",
+  MBR: "MBR",
 
   /**
    * has step
    */
-  hasstep: "STEP",
+  STEP: "STEP",
 
   /**
    * arrival
    */
-  arrival: "ARR",
+  ARR: "ARR",
 
   /**
    * departure
    */
-  departure: "DEP",
+  DEP: "DEP",
 
   /**
    * has part
    */
-  haspart: "PART",
+  PART: "PART",
 } as const;
 
 /**

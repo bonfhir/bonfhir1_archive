@@ -6,42 +6,42 @@ export const ObservationAlertCode = {
   /**
    * Observation Alert
    */
-  ObservationAlert: "OBSA",
+  OBSA: "OBSA",
 
   /**
    * Age Alert
    */
-  AgeAlert: "AGE",
+  AGE: "AGE",
 
   /**
    * adult alert
    */
-  adultalert: "ADALRT",
+  ADALRT: "ADALRT",
 
   /**
    * High Dose for Age Alert
    */
-  HighDoseforAgeAlert: "DOSEHINDA",
+  DOSEHINDA: "DOSEHINDA",
 
   /**
    * Low Dose for Age Alert
    */
-  LowDoseforAgeAlert: "DOSELINDA",
+  DOSELINDA: "DOSELINDA",
 
   /**
    * geriatric alert
    */
-  geriatricalert: "GEALRT",
+  GEALRT: "GEALRT",
 
   /**
    * pediatric alert
    */
-  pediatricalert: "PEALRT",
+  PEALRT: "PEALRT",
 
   /**
    * Condition Alert
    */
-  ConditionAlert: "COND",
+  COND: "COND",
 
   /**
    *
@@ -51,12 +51,12 @@ export const ObservationAlertCode = {
   /**
    * Lactation Alert
    */
-  LactationAlert: "LACT",
+  LACT: "LACT",
 
   /**
    * Pregnancy Alert
    */
-  PregnancyAlert: "PREG",
+  PREG: "PREG",
 
   /**
    *
@@ -66,57 +66,57 @@ export const ObservationAlertCode = {
   /**
    * common reaction alert
    */
-  commonreactionalert: "CREACT",
+  CREACT: "CREACT",
 
   /**
    * Genetic Alert
    */
-  GeneticAlert: "GEN",
+  GEN: "GEN",
 
   /**
    * Gender Alert
    */
-  GenderAlert: "GEND",
+  GEND: "GEND",
 
   /**
    * Lab Alert
    */
-  LabAlert: "LAB",
+  LAB: "LAB",
 
   /**
    * Reaction Alert
    */
-  ReactionAlert: "REACT",
+  REACT: "REACT",
 
   /**
    * Allergy Alert
    */
-  AllergyAlert: "ALGY",
+  ALGY: "ALGY",
 
   /**
    * Intolerance Alert
    */
-  IntoleranceAlert: "INT",
+  INT: "INT",
 
   /**
    * Related Reaction Alert
    */
-  RelatedReactionAlert: "RREACT",
+  RREACT: "RREACT",
 
   /**
    * Related Allergy Alert
    */
-  RelatedAllergyAlert: "RALG",
+  RALG: "RALG",
 
   /**
    * Related Prior Reaction Alert
    */
-  RelatedPriorReactionAlert: "RAR",
+  RAR: "RAR",
 
   /**
    * Related Intolerance Alert
    */
-  RelatedIntoleranceAlert: "RINT",
+  RINT: "RINT",
 } as const;
 
 /**

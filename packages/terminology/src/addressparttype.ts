@@ -6,152 +6,152 @@ export const AddressPartTypeCode = {
   /**
    * additional locator
    */
-  additionallocator: "ADL",
+  ADL: "ADL",
 
   /**
    * address line
    */
-  addressline: "AL",
+  AL: "AL",
 
   /**
    * delivery address line
    */
-  deliveryaddressline: "DAL",
+  DAL: "DAL",
 
   /**
    * street address line
    */
-  streetaddressline: "SAL",
+  SAL: "SAL",
 
   /**
    * building number numeric
    */
-  buildingnumbernumeric: "BNN",
+  BNN: "BNN",
 
   /**
    * building number
    */
-  buildingnumber: "BNR",
+  BNR: "BNR",
 
   /**
    * building number suffix
    */
-  buildingnumbersuffix: "BNS",
+  BNS: "BNS",
 
   /**
    * care of
    */
-  careof: "CAR",
+  CAR: "CAR",
 
   /**
    * census tract
    */
-  censustract: "CEN",
+  CEN: "CEN",
 
   /**
    * country
    */
-  country: "CNT",
+  CNT: "CNT",
 
   /**
    * county or parish
    */
-  countyorparish: "CPA",
+  CPA: "CPA",
 
   /**
    * municipality
    */
-  municipality: "CTY",
+  CTY: "CTY",
 
   /**
    * delimiter
    */
-  delimiter: "DEL",
+  DEL: "DEL",
 
   /**
    * delivery installation type
    */
-  deliveryinstallationtype: "DINST",
+  DINST: "DINST",
 
   /**
    * delivery installation area
    */
-  deliveryinstallationarea: "DINSTA",
+  DINSTA: "DINSTA",
 
   /**
    * delivery installation qualifier
    */
-  deliveryinstallationqualifier: "DINSTQ",
+  DINSTQ: "DINSTQ",
 
   /**
    * direction
    */
-  direction: "DIR",
+  DIR: "DIR",
 
   /**
    * delivery mode
    */
-  deliverymode: "DMOD",
+  DMOD: "DMOD",
 
   /**
    * delivery mode identifier
    */
-  deliverymodeidentifier: "DMODID",
+  DMODID: "DMODID",
 
   /**
    * delivery point identifier
    */
-  deliverypointidentifier: "DPID",
+  DPID: "DPID",
 
   /**
    * intersection
    */
-  intersection: "INT",
+  INT: "INT",
 
   /**
    * post box
    */
-  postbox: "POB",
+  POB: "POB",
 
   /**
    * precinct
    */
-  precinct: "PRE",
+  PRE: "PRE",
 
   /**
    * state or province
    */
-  stateorprovince: "STA",
+  STA: "STA",
 
   /**
    * street name base
    */
-  streetnamebase: "STB",
+  STB: "STB",
 
   /**
    * street name
    */
-  streetname: "STR",
+  STR: "STR",
 
   /**
    * street type
    */
-  streettype: "STTYP",
+  STTYP: "STTYP",
 
   /**
    * unit identifier
    */
-  unitidentifier: "UNID",
+  UNID: "UNID",
 
   /**
    * unit designator
    */
-  unitdesignator: "UNIT",
+  UNIT: "UNIT",
 
   /**
    * postal code
    */
-  postalcode: "ZIP",
+  ZIP: "ZIP",
 } as const;
 
 /**

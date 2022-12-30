@@ -8,22 +8,22 @@ export const DiseaseProgramCode = {
   /**
    * public health program
    */
-  publichealthprogram: "DISEASEPRG",
+  DISEASEPRG: "DISEASEPRG",
 
   /**
    * women's cancer detection program
    */
-  womenscancerdetectionprogram: "CANPRG",
+  CANPRG: "CANPRG",
 
   /**
    * end renal program
    */
-  endrenalprogram: "ENDRENAL",
+  ENDRENAL: "ENDRENAL",
 
   /**
    * HIV-AIDS program
    */
-  HIVAIDSprogram: "HIVAIDS",
+  HIVAIDS: "HIVAIDS",
 } as const;
 
 /**

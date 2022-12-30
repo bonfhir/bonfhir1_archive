@@ -6,1577 +6,1577 @@ export const Hl7VSSpecimenTypeCode = {
   /**
    * Abscess
    */
-  Abscess: "ABS",
+  ABS: "ABS",
 
   /**
    * No suggested values
    */
-  Nosuggestedvalues: "...",
+  "...": "...",
 
   /**
    * Tissue, Acne
    */
-  TissueAcne: "ACNE",
+  ACNE: "ACNE",
 
   /**
    * Fluid, Acne
    */
-  FluidAcne: "ACNFLD",
+  ACNFLD: "ACNFLD",
 
   /**
    * Air Sample
    */
-  AirSample: "AIRS",
+  AIRS: "AIRS",
 
   /**
    * Allograft
    */
-  Allograft: "ALL",
+  ALL: "ALL",
 
   /**
    * Amniotic fluid
    */
-  Amnioticfluid: "AMN",
+  AMN: "AMN",
 
   /**
    * Amputation
    */
-  Amputation: "AMP",
+  AMP: "AMP",
 
   /**
    * Catheter Tip, Angio
    */
-  CatheterTipAngio: "ANGI",
+  ANGI: "ANGI",
 
   /**
    * Catheter Tip, Arterial
    */
-  CatheterTipArterial: "ARTC",
+  ARTC: "ARTC",
 
   /**
    * Serum, Acute
    */
-  SerumAcute: "ASERU",
+  ASERU: "ASERU",
 
   /**
    * Aspirate
    */
-  Aspirate: "ASP",
+  ASP: "ASP",
 
   /**
    * Environment, Attest
    */
-  EnvironmentAttest: "ATTE",
+  ATTE: "ATTE",
 
   /**
    * Environmental, Autoclave Ampule
    */
-  EnvironmentalAutoclaveAmpule: "AUTOA",
+  AUTOA: "AUTOA",
 
   /**
    * Environmental, Autoclave Capsule
    */
-  EnvironmentalAutoclaveCapsule: "AUTOC",
+  AUTOC: "AUTOC",
 
   /**
    * Autopsy
    */
-  Autopsy: "AUTP",
+  AUTP: "AUTP",
 
   /**
    * Blood bag
    */
-  Bloodbag: "BBL",
+  BBL: "BBL",
 
   /**
    * Cyst, Baker's
    */
-  CystBakers: "BCYST",
+  BCYST: "BCYST",
 
   /**
    * Whole body
    */
-  Wholebody: "BDY",
+  BDY: "BDY",
 
   /**
    * Bile Fluid
    */
-  BileFluid: "BIFL",
+  BIFL: "BIFL",
 
   /**
    * Bite
    */
-  Bite: "BITE",
+  BITE: "BITE",
 
   /**
    * Whole blood
    */
-  Wholeblood: "BLD",
+  BLD: "BLD",
 
   /**
    * Blood arterial
    */
-  Bloodarterial: "BLDA",
+  BLDA: "BLDA",
 
   /**
    * Cord blood
    */
-  Cordblood: "BLDCO",
+  BLDCO: "BLDCO",
 
   /**
    * Blood venous
    */
-  Bloodvenous: "BLDV",
+  BLDV: "BLDV",
 
   /**
    * Bleb
    */
-  Bleb: "BLEB",
+  BLEB: "BLEB",
 
   /**
    * Blister
    */
-  Blister: "BLIST",
+  BLIST: "BLIST",
 
   /**
    * Boil
    */
-  Boil: "BOIL",
+  BOIL: "BOIL",
 
   /**
    * Bone
    */
-  Bone: "BON",
+  BON: "BON",
 
   /**
    * Bowel contents
    */
-  Bowelcontents: "BOWL",
+  BOWL: "BOWL",
 
   /**
    * Basophils
    */
-  Basophils: "BPH",
+  BPH: "BPH",
 
   /**
    * Blood product unit
    */
-  Bloodproductunit: "BPU",
+  BPU: "BPU",
 
   /**
    * Burn
    */
-  Burn: "BRN",
+  BRN: "BRN",
 
   /**
    * Brush
    */
-  Brush: "BRSH",
+  BRSH: "BRSH",
 
   /**
    * Breath (use EXHLD)
    */
-  BreathuseEXHLD: "BRTH",
+  BRTH: "BRTH",
 
   /**
    * Brushing
    */
-  Brushing: "BRUS",
+  BRUS: "BRUS",
 
   /**
    * Bubo
    */
-  Bubo: "BUB",
+  BUB: "BUB",
 
   /**
    * Bulla/Bullae
    */
-  BullaBullae: "BULLA",
+  BULLA: "BULLA",
 
   /**
    * Biopsy
    */
-  Biopsy: "BX",
+  BX: "BX",
 
   /**
    * Calculus (=Stone)
    */
-  CalculusStone: "CALC",
+  CALC: "CALC",
 
   /**
    * Bone
    */
-  Bone: "BONE",
+  BONE: "BONE",
 
   /**
    * Carbuncle
    */
-  Carbuncle: "CARBU",
+  CARBU: "CARBU",
 
   /**
    * Catheter
    */
-  Catheter: "CAT",
+  CAT: "CAT",
 
   /**
    * Bite, Cat
    */
-  BiteCat: "CBITE",
+  CBITE: "CBITE",
 
   /**
    * Cardiac muscle
    */
-  Cardiacmuscle: "CDM",
+  CDM: "CDM",
 
   /**
    * Clippings
    */
-  Clippings: "CLIPP",
+  CLIPP: "CLIPP",
 
   /**
    * Conjunctiva
    */
-  Conjunctiva: "CNJT",
+  CNJT: "CNJT",
 
   /**
    * Cannula
    */
-  Cannula: "CNL",
+  CNL: "CNL",
 
   /**
    * Colostrum
    */
-  Colostrum: "COL",
+  COL: "COL",
 
   /**
    * Biospy, Cone
    */
-  BiospyCone: "CONE",
+  CONE: "CONE",
 
   /**
    * Scratch, Cat
    */
-  ScratchCat: "CSCR",
+  CSCR: "CSCR",
 
   /**
    * Serum, Convalescent
    */
-  SerumConvalescent: "CSERU",
+  CSERU: "CSERU",
 
   /**
    * Cerebral spinal fluid
    */
-  Cerebralspinalfluid: "CSF",
+  CSF: "CSF",
 
   /**
    * Catheter Insertion Site
    */
-  CatheterInsertionSite: "CSITE",
+  CSITE: "CSITE",
 
   /**
    * Fluid,  Cystostomy Tube
    */
-  FluidCystostomyTube: "CSMY",
+  CSMY: "CSMY",
 
   /**
    * Fluid, Cyst
    */
-  FluidCyst: "CST",
+  CST: "CST",
 
   /**
    * Blood, Cell Saver
    */
-  BloodCellSaver: "CSVR",
+  CSVR: "CSVR",
 
   /**
    * Catheter tip
    */
-  Cathetertip: "CTP",
+  CTP: "CTP",
 
   /**
    * Curretage
    */
-  Curretage: "CUR",
+  CUR: "CUR",
 
   /**
    * Cervical Mucus
    */
-  CervicalMucus: "CVM",
+  CVM: "CVM",
 
   /**
    * Site, CVP
    */
-  SiteCVP: "CVPS",
+  CVPS: "CVPS",
 
   /**
    * Catheter Tip, CVP
    */
-  CatheterTipCVP: "CVPT",
+  CVPT: "CVPT",
 
   /**
    * Nodule, Cystic
    */
-  NoduleCystic: "CYN",
+  CYN: "CYN",
 
   /**
    * Cyst
    */
-  Cyst: "CYST",
+  CYST: "CYST",
 
   /**
    * Bite, Dog
    */
-  BiteDog: "DBITE",
+  DBITE: "DBITE",
 
   /**
    * Sputum, Deep Cough
    */
-  SputumDeepCough: "DCS",
+  DCS: "DCS",
 
   /**
    * Ulcer, Decubitus
    */
-  UlcerDecubitus: "DEC",
+  DEC: "DEC",
 
   /**
    * Environmental, Water  (Deionized)
    */
-  EnvironmentalWaterDeionized: "DEION",
+  DEION: "DEION",
 
   /**
    * Dialysate
    */
-  Dialysate: "DIA",
+  DIA: "DIA",
 
   /**
    * Dialysis Fluid
    */
-  DialysisFluid: "DIAF",
+  DIAF: "DIAF",
 
   /**
    * Discharge
    */
-  Discharge: "DISCHG",
+  DISCHG: "DISCHG",
 
   /**
    * Diverticulum
    */
-  Diverticulum: "DIV",
+  DIV: "DIV",
 
   /**
    * Drain
    */
-  Drain: "DRN",
+  DRN: "DRN",
 
   /**
    * Drainage, Tube
    */
-  DrainageTube: "DRNG",
+  DRNG: "DRNG",
 
   /**
    * Drainage, Penrose
    */
-  DrainagePenrose: "DRNGP",
+  DRNGP: "DRNGP",
 
   /**
    * Duodenal fluid
    */
-  Duodenalfluid: "DUFL",
+  DUFL: "DUFL",
 
   /**
    * Ear wax (cerumen)
    */
-  Earwaxcerumen: "EARW",
+  EARW: "EARW",
 
   /**
    * Brush, Esophageal
    */
-  BrushEsophageal: "EBRUSH",
+  EBRUSH: "EBRUSH",
 
   /**
    * Environmental, Eye Wash
    */
-  EnvironmentalEyeWash: "EEYE",
+  EEYE: "EEYE",
 
   /**
    * Environmental, Effluent
    */
-  EnvironmentalEffluent: "EFF",
+  EFF: "EFF",
 
   /**
    * Effusion
    */
-  Effusion: "EFFUS",
+  EFFUS: "EFFUS",
 
   /**
    * Environmental, Food
    */
-  EnvironmentalFood: "EFOD",
+  EFOD: "EFOD",
 
   /**
    * Environmental, Isolette
    */
-  EnvironmentalIsolette: "EISO",
+  EISO: "EISO",
 
   /**
    * Electrode
    */
-  Electrode: "ELT",
+  ELT: "ELT",
 
   /**
    * Environmental, Unidentified Substance
    */
-  EnvironmentalUnidentifiedSubstance: "ENVIR",
+  ENVIR: "ENVIR",
 
   /**
    * Eosinophils
    */
-  Eosinophils: "EOS",
+  EOS: "EOS",
 
   /**
    * Environmental, Other Substance
    */
-  EnvironmentalOtherSubstance: "EOTH",
+  EOTH: "EOTH",
 
   /**
    * Environmental, Soil
    */
-  EnvironmentalSoil: "ESOI",
+  ESOI: "ESOI",
 
   /**
    * Environmental, Solution (Sterile)
    */
-  EnvironmentalSolutionSterile: "ESOS",
+  ESOS: "ESOS",
 
   /**
    * Aspirate,  Endotrach
    */
-  AspirateEndotrach: "ETA",
+  ETA: "ETA",
 
   /**
    * Catheter Tip, Endotracheal
    */
-  CatheterTipEndotracheal: "ETTP",
+  ETTP: "ETTP",
 
   /**
    * Tube, Endotracheal
    */
-  TubeEndotracheal: "ETTUB",
+  ETTUB: "ETTUB",
 
   /**
    * Environmental, Whirlpool
    */
-  EnvironmentalWhirlpool: "EWHI",
+  EWHI: "EWHI",
 
   /**
    * Gas, exhaled (=breath)
    */
-  Gasexhaledbreath: "EXG",
+  EXG: "EXG",
 
   /**
    * Shunt, External
    */
-  ShuntExternal: "EXS",
+  EXS: "EXS",
 
   /**
    * Exudate
    */
-  Exudate: "EXUDTE",
+  EXUDTE: "EXUDTE",
 
   /**
    * Environmental, Water  (Well)
    */
-  EnvironmentalWaterWell: "FAW",
+  FAW: "FAW",
 
   /**
    * Blood, Fetal
    */
-  BloodFetal: "FBLOOD",
+  FBLOOD: "FBLOOD",
 
   /**
    * Fluid,  Abdomen
    */
-  FluidAbdomen: "FGA",
+  FGA: "FGA",
 
   /**
    * Fibroblasts
    */
-  Fibroblasts: "FIB",
+  FIB: "FIB",
 
   /**
    * Fistula
    */
-  Fistula: "FIST",
+  FIST: "FIST",
 
   /**
    * Fluid, Other
    */
-  FluidOther: "FLD",
+  FLD: "FLD",
 
   /**
    * Filter
    */
-  Filter: "FLT",
+  FLT: "FLT",
 
   /**
    * Fluid, Body unsp
    */
-  FluidBodyunsp: "FLU",
+  FLU: "FLU",
 
   /**
    * Fluid
    */
-  Fluid: "FLUID",
+  FLUID: "FLUID",
 
   /**
    * Catheter Tip, Foley
    */
-  CatheterTipFoley: "FOLEY",
+  FOLEY: "FOLEY",
 
   /**
    * Fluid, Respiratory
    */
-  FluidRespiratory: "FRS",
+  FRS: "FRS",
 
   /**
    * Scalp, Fetal
    */
-  ScalpFetal: "FSCLP",
+  FSCLP: "FSCLP",
 
   /**
    * Furuncle
    */
-  Furuncle: "FUR",
+  FUR: "FUR",
 
   /**
    * Gas
    */
-  Gas: "GAS",
+  GAS: "GAS",
 
   /**
    * Aspirate, Gastric
    */
-  AspirateGastric: "GASA",
+  GASA: "GASA",
 
   /**
    * Antrum, Gastric
    */
-  AntrumGastric: "GASAN",
+  GASAN: "GASAN",
 
   /**
    * Brushing, Gastric
    */
-  BrushingGastric: "GASBR",
+  GASBR: "GASBR",
 
   /**
    * Drainage, Gastric
    */
-  DrainageGastric: "GASD",
+  GASD: "GASD",
 
   /**
    * Fluid/contents, Gastric
    */
-  FluidcontentsGastric: "GAST",
+  GAST: "GAST",
 
   /**
    * Genital lochia
    */
-  Genitallochia: "GENL",
+  GENL: "GENL",
 
   /**
    * Genital vaginal
    */
-  Genitalvaginal: "GENV",
+  GENV: "GENV",
 
   /**
    * Graft
    */
-  Graft: "GRAFT",
+  GRAFT: "GRAFT",
 
   /**
    * Graft Site
    */
-  GraftSite: "GRAFTS",
+  GRAFTS: "GRAFTS",
 
   /**
    * Granuloma
    */
-  Granuloma: "GRANU",
+  GRANU: "GRANU",
 
   /**
    * Catheter, Groshong
    */
-  CatheterGroshong: "GROSH",
+  GROSH: "GROSH",
 
   /**
    * Solution, Gastrostomy
    */
-  SolutionGastrostomy: "GSOL",
+  GSOL: "GSOL",
 
   /**
    * Biopsy, Gastric
    */
-  BiopsyGastric: "GSPEC",
+  GSPEC: "GSPEC",
 
   /**
    * Tube, Gastric
    */
-  TubeGastric: "GT",
+  GT: "GT",
 
   /**
    * Drainage Tube, Drainage (Gastrostomy)
    */
-  DrainageTubeDrainageGastrostomy: "GTUBE",
+  GTUBE: "GTUBE",
 
   /**
    * Hair
    */
-  Hair: "HAR",
+  HAR: "HAR",
 
   /**
    * Bite, Human
    */
-  BiteHuman: "HBITE",
+  HBITE: "HBITE",
 
   /**
    * Blood, Autopsy
    */
-  BloodAutopsy: "HBLUD",
+  HBLUD: "HBLUD",
 
   /**
    * Catheter Tip, Hemaquit
    */
-  CatheterTipHemaquit: "HEMAQ",
+  HEMAQ: "HEMAQ",
 
   /**
    * Catheter Tip, Hemovac
    */
-  CatheterTipHemovac: "HEMO",
+  HEMO: "HEMO",
 
   /**
    * Tissue, Herniated
    */
-  TissueHerniated: "HERNI",
+  HERNI: "HERNI",
 
   /**
    * Drain, Hemovac
    */
-  DrainHemovac: "HEV",
+  HEV: "HEV",
 
   /**
    * Catheter, Hickman
    */
-  CatheterHickman: "HIC",
+  HIC: "HIC",
 
   /**
    * Fluid, Hydrocele
    */
-  FluidHydrocele: "HYDC",
+  HYDC: "HYDC",
 
   /**
    * Bite, Insect
    */
-  BiteInsect: "IBITE",
+  IBITE: "IBITE",
 
   /**
    * Cyst, Inclusion
    */
-  CystInclusion: "ICYST",
+  ICYST: "ICYST",
 
   /**
    * Catheter Tip, Indwelling
    */
-  CatheterTipIndwelling: "IDC",
+  IDC: "IDC",
 
   /**
    * Gas, Inhaled
    */
-  GasInhaled: "IHG",
+  IHG: "IHG",
 
   /**
    * Drainage, Ileostomy
    */
-  DrainageIleostomy: "ILEO",
+  ILEO: "ILEO",
 
   /**
    * Source of Specimen Is Illegible
    */
-  SourceofSpecimenIsIllegible: "ILLEG",
+  ILLEG: "ILLEG",
 
   /**
    * Implant
    */
-  Implant: "IMP",
+  IMP: "IMP",
 
   /**
    * Site, Incision/Surgical
    */
-  SiteIncisionSurgical: "INCI",
+  INCI: "INCI",
 
   /**
    * Infiltrate
    */
-  Infiltrate: "INFIL",
+  INFIL: "INFIL",
 
   /**
    * Insect
    */
-  Insect: "INS",
+  INS: "INS",
 
   /**
    * Catheter Tip, Introducer
    */
-  CatheterTipIntroducer: "INTRD",
+  INTRD: "INTRD",
 
   /**
    * Isolate
    */
-  Isolate: "ISLT",
+  ISLT: "ISLT",
 
   /**
    * Intubation tube
    */
-  Intubationtube: "IT",
+  IT: "IT",
 
   /**
    * Intrauterine Device
    */
-  IntrauterineDevice: "IUD",
+  IUD: "IUD",
 
   /**
    * Catheter Tip, IV
    */
-  CatheterTipIV: "IVCAT",
+  IVCAT: "IVCAT",
 
   /**
    * Fluid, IV
    */
-  FluidIV: "IVFLD",
+  IVFLD: "IVFLD",
 
   /**
    * Tubing Tip, IV
    */
-  TubingTipIV: "IVTIP",
+  IVTIP: "IVTIP",
 
   /**
    * Drainage, Jejunal
    */
-  DrainageJejunal: "JEJU",
+  JEJU: "JEJU",
 
   /**
    * Fluid, Joint
    */
-  FluidJoint: "JNTFLD",
+  JNTFLD: "JNTFLD",
 
   /**
    * Drainage, Jackson Pratt
    */
-  DrainageJacksonPratt: "JP",
+  JP: "JP",
 
   /**
    * Lavage
    */
-  Lavage: "KELOI",
+  KELOI: "KELOI",
 
   /**
    * Fluid, Kidney
    */
-  FluidKidney: "KIDFLD",
+  KIDFLD: "KIDFLD",
 
   /**
    * Lavage, Bronhial
    */
-  LavageBronhial: "LAVG",
+  LAVG: "LAVG",
 
   /**
    * Lavage, Gastric
    */
-  LavageGastric: "LAVGG",
+  LAVGG: "LAVGG",
 
   /**
    * Lavage, Peritoneal
    */
-  LavagePeritoneal: "LAVGP",
+  LAVGP: "LAVGP",
 
   /**
    * Lavage, Pre-Bronch
    */
-  LavagePreBronch: "LAVPG",
+  LAVPG: "LAVPG",
 
   /**
    * Contact Lens
    */
-  ContactLens: "LENS1",
+  LENS1: "LENS1",
 
   /**
    * Contact Lens Case
    */
-  ContactLensCase: "LENS2",
+  LENS2: "LENS2",
 
   /**
    * Lesion
    */
-  Lesion: "LESN",
+  LESN: "LESN",
 
   /**
    * Liquid, Unspecified
    */
-  LiquidUnspecified: "LIQ",
+  LIQ: "LIQ",
 
   /**
    * Liquid, Other
    */
-  LiquidOther: "LIQO",
+  LIQO: "LIQO",
 
   /**
    * Line arterial
    */
-  Linearterial: "LNA",
+  LNA: "LNA",
 
   /**
    * Line venous
    */
-  Linevenous: "LNV",
+  LNV: "LNV",
 
   /**
    * Fluid, Lumbar Sac
    */
-  FluidLumbarSac: "LSAC",
+  LSAC: "LSAC",
 
   /**
    * Lymphocytes
    */
-  Lymphocytes: "LYM",
+  LYM: "LYM",
 
   /**
    * Macrophages
    */
-  Macrophages: "MAC",
+  MAC: "MAC",
 
   /**
    * Catheter Tip, Makurkour
    */
-  CatheterTipMakurkour: "MAHUR",
+  MAHUR: "MAHUR",
 
   /**
    * Marrow
    */
-  Marrow: "MAR",
+  MAR: "MAR",
 
   /**
    * Mass
    */
-  Mass: "MASS",
+  MASS: "MASS",
 
   /**
    * Blood, Menstrual
    */
-  BloodMenstrual: "MBLD",
+  MBLD: "MBLD",
 
   /**
    * Meconium
    */
-  Meconium: "MEC",
+  MEC: "MEC",
 
   /**
    * Breast milk
    */
-  Breastmilk: "MILK",
+  MILK: "MILK",
 
   /**
    * Milk
    */
-  Milk: "MLK",
+  MLK: "MLK",
 
   /**
    * Mucosa
    */
-  Mucosa: "MUCOS",
+  MUCOS: "MUCOS",
 
   /**
    * Mucus
    */
-  Mucus: "MUCUS",
+  MUCUS: "MUCUS",
 
   /**
    * Nail
    */
-  Nail: "NAIL",
+  NAIL: "NAIL",
 
   /**
    * Drainage, Nasal
    */
-  DrainageNasal: "NASDR",
+  NASDR: "NASDR",
 
   /**
    * Needle
    */
-  Needle: "NEDL",
+  NEDL: "NEDL",
 
   /**
    * Site, Nephrostomy
    */
-  SiteNephrostomy: "NEPH",
+  NEPH: "NEPH",
 
   /**
    * Aspirate, Nasogastric
    */
-  AspirateNasogastric: "NGASP",
+  NGASP: "NGASP",
 
   /**
    * Drainage, Nasogastric
    */
-  DrainageNasogastric: "NGAST",
+  NGAST: "NGAST",
 
   /**
    * Site, Naso/Gastric
    */
-  SiteNasoGastric: "NGS",
+  NGS: "NGS",
 
   /**
    * Nodule(s)
    */
-  Nodules: "NODUL",
+  NODUL: "NODUL",
 
   /**
    * Secretion, Nasal
    */
-  SecretionNasal: "NSECR",
+  NSECR: "NSECR",
 
   /**
    * Other
    */
-  Other: "ORH",
+  ORH: "ORH",
 
   /**
    * Lesion, Oral
    */
-  LesionOral: "ORL",
+  ORL: "ORL",
 
   /**
    * Source, Other
    */
-  SourceOther: "OTH",
+  OTH: "OTH",
 
   /**
    * Pacemaker
    */
-  Pacemaker: "PACEM",
+  PACEM: "PACEM",
 
   /**
    * Pancreatic fluid
    */
-  Pancreaticfluid: "PAFL",
+  PAFL: "PAFL",
 
   /**
    * Fluid, Pericardial
    */
-  FluidPericardial: "PCFL",
+  PCFL: "PCFL",
 
   /**
    * Site, Peritoneal Dialysis
    */
-  SitePeritonealDialysis: "PDSIT",
+  PDSIT: "PDSIT",
 
   /**
    * Site, Peritoneal Dialysis Tunnel
    */
-  SitePeritonealDialysisTunnel: "PDTS",
+  PDTS: "PDTS",
 
   /**
    * Abscess, Pelvic
    */
-  AbscessPelvic: "PELVA",
+  PELVA: "PELVA",
 
   /**
    * Lesion, Penile
    */
-  LesionPenile: "PENIL",
+  PENIL: "PENIL",
 
   /**
    * Abscess, Perianal
    */
-  AbscessPerianal: "PERIA",
+  PERIA: "PERIA",
 
   /**
    * Cyst, Pilonidal
    */
-  CystPilonidal: "PILOC",
+  PILOC: "PILOC",
 
   /**
    * Site, Pin
    */
-  SitePin: "PINS",
+  PINS: "PINS",
 
   /**
    * Site, Pacemaker Insetion
    */
-  SitePacemakerInsetion: "PIS",
+  PIS: "PIS",
 
   /**
    * Plant Material
    */
-  PlantMaterial: "PLAN",
+  PLAN: "PLAN",
 
   /**
    * Plasma
    */
-  Plasma: "PLAS",
+  PLAS: "PLAS",
 
   /**
    * Plasma bag
    */
-  Plasmabag: "PLB",
+  PLB: "PLB",
 
   /**
    * Placenta
    */
-  Placenta: "PLC",
+  PLC: "PLC",
 
   /**
    * Serum, Peak Level
    */
-  SerumPeakLevel: "PLEVS",
+  PLEVS: "PLEVS",
 
   /**
    * Pleural fluid (thoracentesis fluid)
    */
-  Pleuralfluidthoracentesisfluid: "PLR",
+  PLR: "PLR",
 
   /**
    * Polymorphonuclear neutrophils
    */
-  Polymorphonuclearneutrophils: "PMN",
+  PMN: "PMN",
 
   /**
    * Drainage, Penile
    */
-  DrainagePenile: "PND",
+  PND: "PND",
 
   /**
    * Polyps
    */
-  Polyps: "POL",
+  POL: "POL",
 
   /**
    * Graft Site, Popliteal
    */
-  GraftSitePopliteal: "POPGS",
+  POPGS: "POPGS",
 
   /**
    * Graft, Popliteal
    */
-  GraftPopliteal: "POPLG",
+  POPLG: "POPLG",
 
   /**
    * Site, Popliteal Vein
    */
-  SitePoplitealVein: "POPLV",
+  POPLV: "POPLV",
 
   /**
    * Catheter, Porta
    */
-  CatheterPorta: "PORTA",
+  PORTA: "PORTA",
 
   /**
    * Plasma, Platelet poor
    */
-  PlasmaPlateletpoor: "PPP",
+  PPP: "PPP",
 
   /**
    * Prosthetic Device
    */
-  ProstheticDevice: "PROST",
+  PROST: "PROST",
 
   /**
    * Plasma, Platelet rich
    */
-  PlasmaPlateletrich: "PRP",
+  PRP: "PRP",
 
   /**
    * Pseudocyst
    */
-  Pseudocyst: "PSC",
+  PSC: "PSC",
 
   /**
    * Wound, Puncture
    */
-  WoundPuncture: "PUNCT",
+  PUNCT: "PUNCT",
 
   /**
    * Pus
    */
-  Pus: "PUS",
+  PUS: "PUS",
 
   /**
    * Pustule
    */
-  Pustule: "PUSFR",
+  PUSFR: "PUSFR",
 
   /**
    * Pus
    */
-  Pus: "PUST",
+  PUST: "PUST",
 
   /**
    * Quality Control
    */
-  QualityControl: "QC3",
+  QC3: "QC3",
 
   /**
    * Urine, Random
    */
-  UrineRandom: "RANDU",
+  RANDU: "RANDU",
 
   /**
    * Erythrocytes
    */
-  Erythrocytes: "RBC",
+  RBC: "RBC",
 
   /**
    * Bite, Reptile
    */
-  BiteReptile: "RBITE",
+  RBITE: "RBITE",
 
   /**
    * Drainage, Rectal
    */
-  DrainageRectal: "RECT",
+  RECT: "RECT",
 
   /**
    * Abscess, Rectal
    */
-  AbscessRectal: "RECTA",
+  RECTA: "RECTA",
 
   /**
    * Cyst, Renal
    */
-  CystRenal: "RENALC",
+  RENALC: "RENALC",
 
   /**
    * Fluid, Renal Cyst
    */
-  FluidRenalCyst: "RENC",
+  RENC: "RENC",
 
   /**
    * Respiratory
    */
-  Respiratory: "RES",
+  RES: "RES",
 
   /**
    * Saliva
    */
-  Saliva: "SAL",
+  SAL: "SAL",
 
   /**
    * Tissue, Keloid (Scar)
    */
-  TissueKeloidScar: "SCAR",
+  SCAR: "SCAR",
 
   /**
    * Catheter Tip, Subclavian
    */
-  CatheterTipSubclavian: "SCLV",
+  SCLV: "SCLV",
 
   /**
    * Abscess, Scrotal
    */
-  AbscessScrotal: "SCROA",
+  SCROA: "SCROA",
 
   /**
    * Secretion(s)
    */
-  Secretions: "SECRE",
+  SECRE: "SECRE",
 
   /**
    * Serum
    */
-  Serum: "SER",
+  SER: "SER",
 
   /**
    * Site, Shunt
    */
-  SiteShunt: "SHU",
+  SHU: "SHU",
 
   /**
    * Fluid, Shunt
    */
-  FluidShunt: "SHUNF",
+  SHUNF: "SHUNF",
 
   /**
    * Shunt
    */
-  Shunt: "SHUNT",
+  SHUNT: "SHUNT",
 
   /**
    * Site
    */
-  Site: "SITE",
+  SITE: "SITE",
 
   /**
    * Biopsy, Skin
    */
-  BiopsySkin: "SKBP",
+  SKBP: "SKBP",
 
   /**
    * Skin
    */
-  Skin: "SKN",
+  SKN: "SKN",
 
   /**
    * Mass, Sub-Mandibular
    */
-  MassSubMandibular: "SMM",
+  SMM: "SMM",
 
   /**
    * Seminal fluid
    */
-  Seminalfluid: "SMN",
+  SMN: "SMN",
 
   /**
    * Fluid, synovial (Joint fluid)
    */
-  FluidsynovialJointfluid: "SNV",
+  SNV: "SNV",
 
   /**
    * Spermatozoa
    */
-  Spermatozoa: "SPRM",
+  SPRM: "SPRM",
 
   /**
    * Catheter Tip, Suprapubic
    */
-  CatheterTipSuprapubic: "SPRP",
+  SPRP: "SPRP",
 
   /**
    * Cathether Tip, Suprapubic
    */
-  CathetherTipSuprapubic: "SPRPB",
+  SPRPB: "SPRPB",
 
   /**
    * Environmental, Spore Strip
    */
-  EnvironmentalSporeStrip: "SPS",
+  SPS: "SPS",
 
   /**
    * Sputum
    */
-  Sputum: "SPT",
+  SPT: "SPT",
 
   /**
    * Sputum - coughed
    */
-  Sputumcoughed: "SPTC",
+  SPTC: "SPTC",
 
   /**
    * Sputum - tracheal aspirate
    */
-  Sputumtrachealaspirate: "SPTT",
+  SPTT: "SPTT",
 
   /**
    * Sputum, Simulated
    */
-  SputumSimulated: "SPUT1",
+  SPUT1: "SPUT1",
 
   /**
    * Sputum, Inducted
    */
-  SputumInducted: "SPUTIN",
+  SPUTIN: "SPUTIN",
 
   /**
    * Sputum, Spontaneous
    */
-  SputumSpontaneous: "SPUTSP",
+  SPUTSP: "SPUTSP",
 
   /**
    * Environmental, Sterrad
    */
-  EnvironmentalSterrad: "STER",
+  STER: "STER",
 
   /**
    * Stool = Fecal
    */
-  StoolFecal: "STL",
+  STL: "STL",
 
   /**
    * Stone, Kidney
    */
-  StoneKidney: "STONE",
+  STONE: "STONE",
 
   /**
    * Abscess, Submandibular
    */
-  AbscessSubmandibular: "SUBMA",
+  SUBMA: "SUBMA",
 
   /**
    * Abscess, Submaxillary
    */
-  AbscessSubmaxillary: "SUBMX",
+  SUBMX: "SUBMX",
 
   /**
    * Drainage, Sump
    */
-  DrainageSump: "SUMP",
+  SUMP: "SUMP",
 
   /**
    * Suprapubic Tap
    */
-  SuprapubicTap: "SUP",
+  SUP: "SUP",
 
   /**
    * Suture
    */
-  Suture: "SUTUR",
+  SUTUR: "SUTUR",
 
   /**
    * Catheter Tip, Swan Gantz
    */
-  CatheterTipSwanGantz: "SWGZ",
+  SWGZ: "SWGZ",
 
   /**
    * Sweat
    */
-  Sweat: "SWT",
+  SWT: "SWT",
 
   /**
    * Aspirate, Tracheal
    */
-  AspirateTracheal: "TASP",
+  TASP: "TASP",
 
   /**
    * Tears
    */
-  Tears: "TEAR",
+  TEAR: "TEAR",
 
   /**
    * Thrombocyte (platelet)
    */
-  Thrombocyteplatelet: "THRB",
+  THRB: "THRB",
 
   /**
    * Tissue
    */
-  Tissue: "TISS",
+  TISS: "TISS",
 
   /**
    * Tissue ulcer
    */
-  Tissueulcer: "TISU",
+  TISU: "TISU",
 
   /**
    * Cathether Tip, Triple Lumen
    */
-  CathetherTipTripleLumen: "TLC",
+  TLC: "TLC",
 
   /**
    * Site, Tracheostomy
    */
-  SiteTracheostomy: "TRAC",
+  TRAC: "TRAC",
 
   /**
    * Transudate
    */
-  Transudate: "TRANS",
+  TRANS: "TRANS",
 
   /**
    * Serum, Trough
    */
-  SerumTrough: "TSERU",
+  TSERU: "TSERU",
 
   /**
    * Abscess, Testicular
    */
-  AbscessTesticular: "TSTES",
+  TSTES: "TSTES",
 
   /**
    * Aspirate, Transtracheal
    */
-  AspirateTranstracheal: "TTRA",
+  TTRA: "TTRA",
 
   /**
    * Tubes
    */
-  Tubes: "TUBES",
+  TUBES: "TUBES",
 
   /**
    * Tumor
    */
-  Tumor: "TUMOR",
+  TUMOR: "TUMOR",
 
   /**
    * Smear, Tzanck
    */
-  SmearTzanck: "TZANC",
+  TZANC: "TZANC",
 
   /**
    * Source, Unidentified
    */
-  SourceUnidentified: "UDENT",
+  UDENT: "UDENT",
 
   /**
    * Unknown Medicine
    */
-  UnknownMedicine: "UMED",
+  UMED: "UMED",
 
   /**
    * Urine
    */
-  Urine: "UR",
+  UR: "UR",
 
   /**
    * Urine clean catch
    */
-  Urinecleancatch: "URC",
+  URC: "URC",
 
   /**
    * Urine, Bladder Washings
    */
-  UrineBladderWashings: "URINB",
+  URINB: "URINB",
 
   /**
    * Urine, Catheterized
    */
-  UrineCatheterized: "URINC",
+  URINC: "URINC",
 
   /**
    * Urine, Midstream
    */
-  UrineMidstream: "URINM",
+  URINM: "URINM",
 
   /**
    * Urine, Nephrostomy
    */
-  UrineNephrostomy: "URINN",
+  URINN: "URINN",
 
   /**
    * Urine, Pedibag
    */
-  UrinePedibag: "URINP",
+  URINP: "URINP",
 
   /**
    * Urine sediment
    */
-  Urinesediment: "URNS",
+  URNS: "URNS",
 
   /**
    * Urine catheter
    */
-  Urinecatheter: "URT",
+  URT: "URT",
 
   /**
    * Urine, Cystoscopy
    */
-  UrineCystoscopy: "USCOP",
+  USCOP: "USCOP",
 
   /**
    * Source, Unspecified
    */
-  SourceUnspecified: "USPEC",
+  USPEC: "USPEC",
 
   /**
    * Unkown substance
    */
-  Unkownsubstance: "USUB",
+  USUB: "USUB",
 
   /**
    * Catheter Tip, Vas
    */
-  CatheterTipVas: "VASTIP",
+  VASTIP: "VASTIP",
 
   /**
    * Catheter Tip, Ventricular
    */
-  CatheterTipVentricular: "VENT",
+  VENT: "VENT",
 
   /**
    * Vitreous Fluid
    */
-  VitreousFluid: "VITF",
+  VITF: "VITF",
 
   /**
    * Vomitus
    */
-  Vomitus: "VOM",
+  VOM: "VOM",
 
   /**
    * Wash
    */
-  Wash: "WASH",
+  WASH: "WASH",
 
   /**
    * Washing, e.g. bronchial washing
    */
-  Washingegbronchialwashing: "WASI",
+  WASI: "WASI",
 
   /**
    * Water
    */
-  Water: "WAT",
+  WAT: "WAT",
 
   /**
    * Blood, Whole
    */
-  BloodWhole: "WB",
+  WB: "WB",
 
   /**
    * Leukocytes
    */
-  Leukocytes: "WBC",
+  WBC: "WBC",
 
   /**
    * Wen
    */
-  Wen: "WEN",
+  WEN: "WEN",
 
   /**
    * Wick
    */
-  Wick: "WICK",
+  WICK: "WICK",
 
   /**
    * Wound
    */
-  Wound: "WND",
+  WND: "WND",
 
   /**
    * Wound abscess
    */
-  Woundabscess: "WNDA",
+  WNDA: "WNDA",
 
   /**
    * Wound drainage
    */
-  Wounddrainage: "WNDD",
+  WNDD: "WNDD",
 
   /**
    * Wound exudate
    */
-  Woundexudate: "WNDE",
+  WNDE: "WNDE",
 
   /**
    * Worm
    */
-  Worm: "WORM",
+  WORM: "WORM",
 
   /**
    * Wart
    */
-  Wart: "WRT",
+  WRT: "WRT",
 
   /**
    * Environmental, Water
    */
-  EnvironmentalWater: "WWA",
+  WWA: "WWA",
 
   /**
    * Environmental, Water (Ocean)
    */
-  EnvironmentalWaterOcean: "WWO",
+  WWO: "WWO",
 
   /**
    * Environmental, Water  (Tap)
    */
-  EnvironmentalWaterTap: "WWT",
+  WWT: "WWT",
 } as const;
 
 /**

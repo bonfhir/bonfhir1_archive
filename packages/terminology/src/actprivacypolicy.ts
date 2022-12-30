@@ -6,77 +6,77 @@ export const ActPrivacyPolicyCode = {
   /**
    * ActPrivacyPolicy
    */
-  ActPrivacyPolicy: "_ActPrivacyPolicy",
+  _ActPrivacyPolicy: "_ActPrivacyPolicy",
 
   /**
    * ActConsentDirective
    */
-  ActConsentDirective: "_ActConsentDirective",
+  _ActConsentDirective: "_ActConsentDirective",
 
   /**
    * emergency only
    */
-  emergencyonly: "EMRGONLY",
+  EMRGONLY: "EMRGONLY",
 
   /**
    * grantor choice
    */
-  grantorchoice: "GRANTORCHOICE",
+  GRANTORCHOICE: "GRANTORCHOICE",
 
   /**
    * implied consent
    */
-  impliedconsent: "IMPLIED",
+  IMPLIED: "IMPLIED",
 
   /**
    * implied consent with opportunity to dissent
    */
-  impliedconsentwithopportunitytodissent: "IMPLIEDD",
+  IMPLIEDD: "IMPLIEDD",
 
   /**
    * no consent
    */
-  noconsent: "NOCONSENT",
+  NOCONSENT: "NOCONSENT",
 
   /**
    * notice of privacy practices
    */
-  noticeofprivacypractices: "NOPP",
+  NOPP: "NOPP",
 
   /**
    * opt-in
    */
-  optin: "OPTIN",
+  OPTIN: "OPTIN",
 
   /**
    * opt-in with restrictions
    */
-  optinwithrestrictions: "OPTINR",
+  OPTINR: "OPTINR",
 
   /**
    * op-out
    */
-  opout: "OPTOUT",
+  OPTOUT: "OPTOUT",
 
   /**
    * opt-out with exceptions
    */
-  optoutwithexceptions: "OPTOUTE",
+  OPTOUTE: "OPTOUTE",
 
   /**
    * ActPrivacyLaw
    */
-  ActPrivacyLaw: "_ActPrivacyLaw",
+  _ActPrivacyLaw: "_ActPrivacyLaw",
 
   /**
    * General Data Protection Regulation
    */
-  GeneralDataProtectionRegulation: "_ActGDPRPrivacyLaw",
+  _ActGDPRPrivacyLaw: "_ActGDPRPrivacyLaw",
 
   /**
    * GDPR Consent
    */
-  GDPRConsent: "GDPRCONSENT",
+  GDPRCONSENT: "GDPRCONSENT",
 
   /**
    * _ActUSPrivacyLaw
@@ -86,7 +86,7 @@ export const ActPrivacyPolicyCode = {
   /**
    * 42 CFR Part2
    */
-  FortyTwoCFRPart2: "42CFRPart2",
+  "42CFRPart2": "42CFRPart2",
 
   /**
    * Common Rule
@@ -96,7 +96,7 @@ export const ActPrivacyPolicyCode = {
   /**
    * HIPAA Authorization for Disclosure
    */
-  HIPAAAuthorizationforDisclosure: "HIPAAAuth",
+  HIPAAAuth: "HIPAAAuth",
 
   /**
    * HIPAA Consent
@@ -106,22 +106,22 @@ export const ActPrivacyPolicyCode = {
   /**
    * HIPAA notice of privacy practices
    */
-  HIPAAnoticeofprivacypractices: "HIPAANOPP",
+  HIPAANOPP: "HIPAANOPP",
 
   /**
    * HIPAA psychotherapy notes
    */
-  HIPAApsychotherapynotes: "HIPAAPsyNotes",
+  HIPAAPsyNotes: "HIPAAPsyNotes",
 
   /**
    * HIPAA Right of Access
    */
-  HIPAARightofAccess: "HIPAAROA",
+  HIPAAROA: "HIPAAROA",
 
   /**
    * HIPAA self-pay
    */
-  HIPAAselfpay: "HIPAASelfPay",
+  HIPAASelfPay: "HIPAASelfPay",
 
   /**
    * Title 38 Section 7332
@@ -131,302 +131,302 @@ export const ActPrivacyPolicyCode = {
   /**
    * HIPAA Consent
    */
-  HIPAAConsent: "a) HIPAAConsent",
+  "a) HIPAAConsent": "a) HIPAAConsent",
 
   /**
    * InformationSensitivityPolicy
    */
-  InformationSensitivityPolicy: "_InformationSensitivityPolicy",
+  _InformationSensitivityPolicy: "_InformationSensitivityPolicy",
 
   /**
    * ActInformationSensitivityPolicy
    */
-  ActInformationSensitivityPolicy: "_ActInformationSensitivityPolicy",
+  _ActInformationSensitivityPolicy: "_ActInformationSensitivityPolicy",
 
   /**
    * substance abuse information sensitivity
    */
-  substanceabuseinformationsensitivity: "ETH",
+  ETH: "ETH",
 
   /**
    * genetic disease information sensitivity
    */
-  geneticdiseaseinformationsensitivity: "GDIS",
+  GDIS: "GDIS",
 
   /**
    * HIV/AIDS information sensitivity
    */
-  HIVAIDSinformationsensitivity: "HIV",
+  HIV: "HIV",
 
   /**
    * military sexual trauma information sensitivity
    */
-  militarysexualtraumainformationsensitivity: "MST",
+  MST: "MST",
 
   /**
    * pregnancy information sensitivity
    */
-  pregnancyinformationsensitivity: "PREGNANT",
+  PREGNANT: "PREGNANT",
 
   /**
    * sickle cell anemia information sensitivity
    */
-  sicklecellanemiainformationsensitivity: "SCA",
+  SCA: "SCA",
 
   /**
    * sexual assault, abuse, or domestic violence information sensitivity
    */
-  sexualassaultabuseordomesticviolenceinformationsensitivity: "SDV",
+  SDV: "SDV",
 
   /**
    * sexuality and reproductive health information sensitivity
    */
-  sexualityandreproductivehealthinformationsensitivity: "SEX",
+  SEX: "SEX",
 
   /**
    * specially protected information sensitivity
    */
-  speciallyprotectedinformationsensitivity: "SPI",
+  SPI: "SPI",
 
   /**
    * behavioral health information sensitivity
    */
-  behavioralhealthinformationsensitivity: "BH",
+  BH: "BH",
 
   /**
    * cognitive disability information sensitivity
    */
-  cognitivedisabilityinformationsensitivity: "COGN",
+  COGN: "COGN",
 
   /**
    * developmental disability information sensitivity
    */
-  developmentaldisabilityinformationsensitivity: "DVD",
+  DVD: "DVD",
 
   /**
    * emotional disturbance information sensitivity
    */
-  emotionaldisturbanceinformationsensitivity: "EMOTDIS",
+  EMOTDIS: "EMOTDIS",
 
   /**
    * mental health information sensitivity
    */
-  mentalhealthinformationsensitivity: "MH",
+  MH: "MH",
 
   /**
    * psychiatry disorder information sensitivity
    */
-  psychiatrydisorderinformationsensitivity: "PSY",
+  PSY: "PSY",
 
   /**
    * psychotherapy note information sensitivity
    */
-  psychotherapynoteinformationsensitivity: "PSYTHPN",
+  PSYTHPN: "PSYTHPN",
 
   /**
    * substance use disorder information sensitivity
    */
-  substanceusedisorderinformationsensitivity: "SUD",
+  SUD: "SUD",
 
   /**
    * alcohol use disorder information sensitivity
    */
-  alcoholusedisorderinformationsensitivity: "ETHUD",
+  ETHUD: "ETHUD",
 
   /**
    * opioid use disorder information sensitivity
    */
-  opioidusedisorderinformationsensitivity: "OPIOIDUD",
+  OPIOIDUD: "OPIOIDUD",
 
   /**
    * sexually transmitted disease information sensitivity
    */
-  sexuallytransmitteddiseaseinformationsensitivity: "STD",
+  STD: "STD",
 
   /**
    * taboo
    */
-  taboo: "TBOO",
+  TBOO: "TBOO",
 
   /**
    * violence information sensitivity
    */
-  violenceinformationsensitivity: "VIO",
+  VIO: "VIO",
 
   /**
    * Identifier Sensitivity
    */
-  IdentifierSensitivity: "IDS",
+  IDS: "IDS",
 
   /**
    * sickle cell
    */
-  sicklecell: "SICKLE",
+  SICKLE: "SICKLE",
 
   /**
    * EntityInformationSensitivityPolicy
    */
-  EntityInformationSensitivityPolicy: "_EntitySensitivityPolicyType",
+  _EntitySensitivityPolicyType: "_EntitySensitivityPolicyType",
 
   /**
    * all demographic information sensitivity
    */
-  alldemographicinformationsensitivity: "DEMO",
+  DEMO: "DEMO",
 
   /**
    * date of birth information sensitivity
    */
-  dateofbirthinformationsensitivity: "DOB",
+  DOB: "DOB",
 
   /**
    * gender and sexual orientation information sensitivity
    */
-  genderandsexualorientationinformationsensitivity: "GENDER",
+  GENDER: "GENDER",
 
   /**
    * living arrangement information sensitivity
    */
-  livingarrangementinformationsensitivity: "LIVARG",
+  LIVARG: "LIVARG",
 
   /**
    * marital status information sensitivity
    */
-  maritalstatusinformationsensitivity: "MARST",
+  MARST: "MARST",
 
   /**
    * patient location
    */
-  patientlocation: "PATLOC",
+  PATLOC: "PATLOC",
 
   /**
    * race information sensitivity
    */
-  raceinformationsensitivity: "RACE",
+  RACE: "RACE",
 
   /**
    * religion information sensitivity
    */
-  religioninformationsensitivity: "REL",
+  REL: "REL",
 
   /**
    * RoleInformationSensitivityPolicy
    */
-  RoleInformationSensitivityPolicy: "_RoleInformationSensitivityPolicy",
+  _RoleInformationSensitivityPolicy: "_RoleInformationSensitivityPolicy",
 
   /**
    * business information sensitivity
    */
-  businessinformationsensitivity: "B",
+  B: "B",
 
   /**
    * employer information sensitivity
    */
-  employerinformationsensitivity: "EMPL",
+  EMPL: "EMPL",
 
   /**
    * location information sensitivity
    */
-  locationinformationsensitivity: "LOCIS",
+  LOCIS: "LOCIS",
 
   /**
    * sensitive service provider information sensitivity
    */
-  sensitiveserviceproviderinformationsensitivity: "SSP",
+  SSP: "SSP",
 
   /**
    * adolescent information sensitivity
    */
-  adolescentinformationsensitivity: "ADOL",
+  ADOL: "ADOL",
 
   /**
    * celebrity information sensitivity
    */
-  celebrityinformationsensitivity: "CEL",
+  CEL: "CEL",
 
   /**
    * celebrity information sensitivity
    */
-  celebrityinformationsensitivity: "VIP",
+  VIP: "VIP",
 
   /**
    * diagnosis information sensitivity
    */
-  diagnosisinformationsensitivity: "DIA",
+  DIA: "DIA",
 
   /**
    * drug information sensitivity
    */
-  druginformationsensitivity: "DRGIS",
+  DRGIS: "DRGIS",
 
   /**
    * employee information sensitivity
    */
-  employeeinformationsensitivity: "EMP",
+  EMP: "EMP",
 
   /**
    * patient default information sensitivity
    */
-  patientdefaultinformationsensitivity: "PDS",
+  PDS: "PDS",
 
   /**
    * physician requested information sensitivity
    */
-  physicianrequestedinformationsensitivity: "PHY",
+  PHY: "PHY",
 
   /**
    * patient requested information sensitivity
    */
-  patientrequestedinformationsensitivity: "PRS",
+  PRS: "PRS",
 
   /**
    * compartment
    */
-  compartment: "COMPT",
+  COMPT: "COMPT",
 
   /**
    * accountable care organization compartment
    */
-  accountablecareorganizationcompartment: "ACOCOMPT",
+  ACOCOMPT: "ACOCOMPT",
 
   /**
    * CDS system compartment
    */
-  CDSsystemcompartment: "CDSSCOMPT",
+  CDSSCOMPT: "CDSSCOMPT",
 
   /**
    * care team compartment
    */
-  careteamcompartment: "CTCOMPT",
+  CTCOMPT: "CTCOMPT",
 
   /**
    * financial management compartment
    */
-  financialmanagementcompartment: "FMCOMPT",
+  FMCOMPT: "FMCOMPT",
 
   /**
    * human resource compartment
    */
-  humanresourcecompartment: "HRCOMPT",
+  HRCOMPT: "HRCOMPT",
 
   /**
    * legitimate relationship compartment
    */
-  legitimaterelationshipcompartment: "LRCOMPT",
+  LRCOMPT: "LRCOMPT",
 
   /**
    * patient administration compartment
    */
-  patientadministrationcompartment: "PACOMPT",
+  PACOMPT: "PACOMPT",
 
   /**
    * research project compartment
    */
-  researchprojectcompartment: "RESCOMPT",
+  RESCOMPT: "RESCOMPT",
 
   /**
    * records management compartment
    */
-  recordsmanagementcompartment: "RMGTCOMPT",
+  RMGTCOMPT: "RMGTCOMPT",
 } as const;
 
 /**

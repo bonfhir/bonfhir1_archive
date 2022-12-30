@@ -6,17 +6,17 @@ export const RaceAmericanIndianPassamaquoddyCode = {
   /**
    * Passamaquoddy
    */
-  Passamaquoddy: "1441-5",
+  "1441-5": "1441-5",
 
   /**
    * Indian Township
    */
-  IndianTownship: "1442-3",
+  "1442-3": "1442-3",
 
   /**
    * Pleasant Point Passamaquoddy
    */
-  PleasantPointPassamaquoddy: "1443-1",
+  "1443-1": "1443-1",
 } as const;
 
 /**

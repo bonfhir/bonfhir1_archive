@@ -6,72 +6,72 @@ export const URLSchemeCode = {
   /**
    * Content ID
    */
-  ContentID: "cid",
+  cid: "cid",
 
   /**
    * File
    */
-  File: "file",
+  file: "file",
 
   /**
    * FTP
    */
-  FTP: "ftp",
+  ftp: "ftp",
 
   /**
    * HL7 Attachment
    */
-  HL7Attachment: "hl7-att",
+  "hl7-att": "hl7-att",
 
   /**
    * HTTP
    */
-  HTTP: "http",
+  http: "http",
 
   /**
    * Mailto
    */
-  Mailto: "mailto",
+  mailto: "mailto",
 
   /**
    * MLLP
    */
-  MLLP: "mllp",
+  mllp: "mllp",
 
   /**
    * NFS
    */
-  NFS: "nfs",
+  nfs: "nfs",
 
   /**
    * Telephone
    */
-  Telephone: "tel",
+  tel: "tel",
 
   /**
    * Telnet
    */
-  Telnet: "telnet",
+  telnet: "telnet",
 
   /**
    * Fax
    */
-  Fax: "fax",
+  fax: "fax",
 
   /**
    * Modem
    */
-  Modem: "modem",
+  modem: "modem",
 
   /**
    * Fax
    */
-  Fax: "x-text-fax",
+  "x-text-fax": "x-text-fax",
 
   /**
    * Text Telephone
    */
-  TextTelephone: "x-text-tel",
+  "x-text-tel": "x-text-tel",
 } as const;
 
 /**

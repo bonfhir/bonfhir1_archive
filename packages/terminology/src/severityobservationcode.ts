@@ -6,7 +6,7 @@ export const SeverityObservationCodeCode = {
   /**
    * Severity Observation
    */
-  SeverityObservation: "SEV",
+  SEV: "SEV",
 } as const;
 
 /**

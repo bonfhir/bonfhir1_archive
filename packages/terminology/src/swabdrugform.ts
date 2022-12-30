@@ -6,12 +6,12 @@ export const SwabDrugFormCode = {
   /**
    * Swab
    */
-  Swab: "SWAB",
+  SWAB: "SWAB",
 
   /**
    * Medicated swab
    */
-  Medicatedswab: "MEDSWAB",
+  MEDSWAB: "MEDSWAB",
 } as const;
 
 /**

@@ -6,12 +6,12 @@ export const ContractActionCodesCode = {
   /**
    * Action A
    */
-  ActionA: "action-a",
+  "action-a": "action-a",
 
   /**
    * Action B
    */
-  ActionB: "action-b",
+  "action-b": "action-b",
 } as const;
 
 /**

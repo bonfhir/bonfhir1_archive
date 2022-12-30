@@ -6,22 +6,22 @@ export const AcknowledgementConditionCode = {
   /**
    * Always
    */
-  Always: "AL",
+  AL: "AL",
 
   /**
    * Error/reject only
    */
-  Errorrejectonly: "ER",
+  ER: "ER",
 
   /**
    * Never
    */
-  Never: "NE",
+  NE: "NE",
 
   /**
    * Successful only
    */
-  Successfulonly: "SU",
+  SU: "SU",
 } as const;
 
 /**

@@ -6,22 +6,22 @@ export const Hl7VSLocationServiceCodeCode = {
   /**
    * Diagnostic
    */
-  Diagnostic: "D",
+  D: "D",
 
   /**
    * Therapeutic
    */
-  Therapeutic: "T",
+  T: "T",
 
   /**
    * Primary Care
    */
-  PrimaryCare: "P",
+  P: "P",
 
   /**
    * Emergency Room Casualty
    */
-  EmergencyRoomCasualty: "E",
+  E: "E",
 } as const;
 
 /**

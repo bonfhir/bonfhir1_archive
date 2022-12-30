@@ -6,17 +6,17 @@ export const ParticipationVerifierCode = {
   /**
    * verifier
    */
-  verifier: "VRF",
+  VRF: "VRF",
 
   /**
    * authenticator
    */
-  authenticator: "AUTHEN",
+  AUTHEN: "AUTHEN",
 
   /**
    * legal authenticator
    */
-  legalauthenticator: "LA",
+  LA: "LA",
 } as const;
 
 /**

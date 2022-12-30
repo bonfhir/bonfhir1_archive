@@ -6,22 +6,22 @@ export const Hl7VSDrgGroupingStatusCode = {
   /**
    * Valid code; not used for grouping
    */
-  Validcodenotusedforgrouping: "0",
+  "0": "0",
 
   /**
    * Valid code; used for grouping
    */
-  Validcodeusedforgrouping: "1",
+  "1": "1",
 
   /**
    * Invalid code; not used for grouping
    */
-  Invalidcodenotusedforgrouping: "2",
+  "2": "2",
 
   /**
    * Invalid code; code is relevant for grouping
    */
-  Invalidcodecodeisrelevantforgrouping: "3",
+  "3": "3",
 } as const;
 
 /**

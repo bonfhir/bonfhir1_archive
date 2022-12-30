@@ -6,22 +6,22 @@ export const Hl7VSAnalyteRepeatStatusCode = {
   /**
    * Original, first run
    */
-  Originalfirstrun: "O",
+  O: "O",
 
   /**
    * Repeated without dilution
    */
-  Repeatedwithoutdilution: "R",
+  R: "R",
 
   /**
    * Repeated with dilution
    */
-  Repeatedwithdilution: "D",
+  D: "D",
 
   /**
    * Reflex test
    */
-  Reflextest: "F",
+  F: "F",
 } as const;
 
 /**

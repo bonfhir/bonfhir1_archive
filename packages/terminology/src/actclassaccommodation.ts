@@ -6,7 +6,7 @@ export const ActClassAccommodationCode = {
   /**
    * accommodation
    */
-  accommodation: "ACCM",
+  ACCM: "ACCM",
 } as const;
 
 /**

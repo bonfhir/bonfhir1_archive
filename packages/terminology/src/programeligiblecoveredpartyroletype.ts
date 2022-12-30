@@ -6,52 +6,52 @@ export const ProgramEligibleCoveredPartyRoleTypeCode = {
   /**
    * ProgramEligiblePartyRoleType
    */
-  ProgramEligiblePartyRoleType: "_ProgramEligiblePartyRoleType",
+  _ProgramEligiblePartyRoleType: "_ProgramEligiblePartyRoleType",
 
   /**
    * crime victim
    */
-  crimevictim: "CRIMEVIC",
+  CRIMEVIC: "CRIMEVIC",
 
   /**
    * injured worker
    */
-  injuredworker: "INJWKR",
+  INJWKR: "INJWKR",
 
   /**
    * differently abled
    */
-  differentlyabled: "DIFFABL",
+  DIFFABL: "DIFFABL",
 
   /**
    * ward
    */
-  ward: "WARD",
+  WARD: "WARD",
 
   /**
    * member of an indigenous people
    */
-  memberofanindigenouspeople: "INDIG",
+  INDIG: "INDIG",
 
   /**
    * military
    */
-  military: "MIL",
+  MIL: "MIL",
 
   /**
    * active duty military
    */
-  activedutymilitary: "ACTMIL",
+  ACTMIL: "ACTMIL",
 
   /**
    * retired military
    */
-  retiredmilitary: "RETMIL",
+  RETMIL: "RETMIL",
 
   /**
    * veteran
    */
-  veteran: "VET",
+  VET: "VET",
 } as const;
 
 /**

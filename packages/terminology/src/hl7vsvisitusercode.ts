@@ -6,22 +6,22 @@ export const Hl7VSVisitUserCodeCode = {
   /**
    * Teaching
    */
-  Teaching: "TE",
+  TE: "TE",
 
   /**
    * Home
    */
-  Home: "HO",
+  HO: "HO",
 
   /**
    * Mobile Unit
    */
-  MobileUnit: "MO",
+  MO: "MO",
 
   /**
    * Phone
    */
-  Phone: "PH",
+  PH: "PH",
 } as const;
 
 /**

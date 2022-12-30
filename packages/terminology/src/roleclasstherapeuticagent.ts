@@ -6,7 +6,7 @@ export const RoleClassTherapeuticAgentCode = {
   /**
    * therapeutic agent
    */
-  therapeuticagent: "THER",
+  THER: "THER",
 } as const;
 
 /**

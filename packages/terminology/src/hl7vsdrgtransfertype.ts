@@ -6,12 +6,12 @@ export const Hl7VSDrgTransferTypeCode = {
   /**
    * DRG Non Exempt
    */
-  DRGNonExempt: "N",
+  N: "N",
 
   /**
    * DRG Exempt
    */
-  DRGExempt: "E",
+  E: "E",
 } as const;
 
 /**

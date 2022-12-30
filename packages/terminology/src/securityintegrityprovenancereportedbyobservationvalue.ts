@@ -6,42 +6,42 @@ export const SecurityIntegrityProvenanceReportedByObservationValueCode = {
   /**
    * clinician reported
    */
-  clinicianreported: "CLINRPT",
+  CLINRPT: "CLINRPT",
 
   /**
    * device reported
    */
-  devicereported: "DEVRPT",
+  DEVRPT: "DEVRPT",
 
   /**
    * healthcare professional reported
    */
-  healthcareprofessionalreported: "HCPRPT",
+  HCPRPT: "HCPRPT",
 
   /**
    * patient acquaintance reported
    */
-  patientacquaintancereported: "PACQRPT",
+  PACQRPT: "PACQRPT",
 
   /**
    * patient reported
    */
-  patientreported: "PATRPT",
+  PATRPT: "PATRPT",
 
   /**
    * payer reported
    */
-  payerreported: "PAYRPT",
+  PAYRPT: "PAYRPT",
 
   /**
    * professional reported
    */
-  professionalreported: "PRORPT",
+  PRORPT: "PRORPT",
 
   /**
    * substitute decision maker reported
    */
-  substitutedecisionmakerreported: "SDMRPT",
+  SDMRPT: "SDMRPT",
 } as const;
 
 /**

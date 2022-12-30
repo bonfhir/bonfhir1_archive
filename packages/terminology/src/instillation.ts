@@ -6,182 +6,182 @@ export const InstillationCode = {
   /**
    * Instillation, cecostomy
    */
-  Instillationcecostomy: "CECINSTL",
+  CECINSTL: "CECINSTL",
 
   /**
    * Instillation, enteral feeding tube
    */
-  Instillationenteralfeedingtube: "EFT",
+  EFT: "EFT",
 
   /**
    * Instillation, enteral
    */
-  Instillationenteral: "ENTINSTL",
+  ENTINSTL: "ENTINSTL",
 
   /**
    * Instillation, gastrostomy tube
    */
-  Instillationgastrostomytube: "GT",
+  GT: "GT",
 
   /**
    * Instillation, nasogastric tube
    */
-  Instillationnasogastrictube: "NGT",
+  NGT: "NGT",
 
   /**
    * Instillation, orogastric tube
    */
-  Instillationorogastrictube: "OGT",
+  OGT: "OGT",
 
   /**
    * Instillation, urinary catheter
    */
-  Instillationurinarycatheter: "BLADINSTL",
+  BLADINSTL: "BLADINSTL",
 
   /**
    * Instillation, continuous ambulatory peritoneal dialysis port
    */
-  Instillationcontinuousambulatoryperitonealdialysisport: "CAPDINSTL",
+  CAPDINSTL: "CAPDINSTL",
 
   /**
    * Instillation, chest tube
    */
-  Instillationchesttube: "CTINSTL",
+  CTINSTL: "CTINSTL",
 
   /**
    * Instillation, endotracheal tube
    */
-  Instillationendotrachealtube: "ETINSTL",
+  ETINSTL: "ETINSTL",
 
   /**
    * Instillation, gastro-jejunostomy tube
    */
-  Instillationgastrojejunostomytube: "GJT",
+  GJT: "GJT",
 
   /**
    * Instillation, intrabronchial
    */
-  Instillationintrabronchial: "IBRONCHINSTIL",
+  IBRONCHINSTIL: "IBRONCHINSTIL",
 
   /**
    * Instillation, intraduodenal
    */
-  Instillationintraduodenal: "IDUODINSTIL",
+  IDUODINSTIL: "IDUODINSTIL",
 
   /**
    * Instillation, intraesophageal
    */
-  Instillationintraesophageal: "IESOPHINSTIL",
+  IESOPHINSTIL: "IESOPHINSTIL",
 
   /**
    * Instillation, intragastric
    */
-  Instillationintragastric: "IGASTINSTIL",
+  IGASTINSTIL: "IGASTINSTIL",
 
   /**
    * Instillation, intraileal
    */
-  Instillationintraileal: "IILEALINJ",
+  IILEALINJ: "IILEALINJ",
 
   /**
    * Instillation, intraocular
    */
-  Instillationintraocular: "IOINSTL",
+  IOINSTL: "IOINSTL",
 
   /**
    * Instillation, intrasinal
    */
-  Instillationintrasinal: "ISININSTIL",
+  ISININSTIL: "ISININSTIL",
 
   /**
    * Instillation, intratracheal
    */
-  Instillationintratracheal: "ITRACHINSTIL",
+  ITRACHINSTIL: "ITRACHINSTIL",
 
   /**
    * Instillation, intrauterine
    */
-  Instillationintrauterine: "IUINSTL",
+  IUINSTL: "IUINSTL",
 
   /**
    * Instillation, jejunostomy tube
    */
-  Instillationjejunostomytube: "JJTINSTL",
+  JJTINSTL: "JJTINSTL",
 
   /**
    * Instillation, laryngeal
    */
-  Instillationlaryngeal: "LARYNGINSTIL",
+  LARYNGINSTIL: "LARYNGINSTIL",
 
   /**
    * Instillation, nasal
    */
-  Instillationnasal: "NASALINSTIL",
+  NASALINSTIL: "NASALINSTIL",
 
   /**
    * Instillation, nasogastric
    */
-  Instillationnasogastric: "NASOGASINSTIL",
+  NASOGASINSTIL: "NASOGASINSTIL",
 
   /**
    * Instillation, nasotracheal tube
    */
-  Instillationnasotrachealtube: "NTT",
+  NTT: "NTT",
 
   /**
    * Instillation, orojejunum tube
    */
-  Instillationorojejunumtube: "OJJ",
+  OJJ: "OJJ",
 
   /**
    * Instillation, otic
    */
-  Instillationotic: "OT",
+  OT: "OT",
 
   /**
    * Instillation, peritoneal dialysis port
    */
-  Instillationperitonealdialysisport: "PDPINSTL",
+  PDPINSTL: "PDPINSTL",
 
   /**
    * Instillation, paranasal sinuses
    */
-  Instillationparanasalsinuses: "PNSINSTL",
+  PNSINSTL: "PNSINSTL",
 
   /**
    * Instillation, rectal
    */
-  Instillationrectal: "RECINSTL",
+  RECINSTL: "RECINSTL",
 
   /**
    * Instillation, rectal tube
    */
-  Instillationrectaltube: "RECTINSTL",
+  RECTINSTL: "RECTINSTL",
 
   /**
    * Instillation, sinus, unspecified
    */
-  Instillationsinusunspecified: "SININSTIL",
+  SININSTIL: "SININSTIL",
 
   /**
    * Instillation, soft tissue
    */
-  Instillationsofttissue: "SOFTISINSTIL",
+  SOFTISINSTIL: "SOFTISINSTIL",
 
   /**
    * Instillation, tracheostomy
    */
-  Instillationtracheostomy: "TRACHINSTL",
+  TRACHINSTL: "TRACHINSTL",
 
   /**
    * Instillation, transtympanic
    */
-  Instillationtranstympanic: "TRTYMPINSTIL",
+  TRTYMPINSTIL: "TRTYMPINSTIL",
 
   /**
    * instillation, urethral
    */
-  instillationurethral: "URETHINSTL",
+  URETHINSTL: "URETHINSTL",
 } as const;
 
 /**

@@ -6,12 +6,12 @@ export const RaceSoutheastAlaskanIndianTsimshianCode = {
   /**
    * Tsimshian
    */
-  Tsimshian: "1837-4",
+  "1837-4": "1837-4",
 
   /**
    * Metlakatla
    */
-  Metlakatla: "1838-2",
+  "1838-2": "1838-2",
 } as const;
 
 /**

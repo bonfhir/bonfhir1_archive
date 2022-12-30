@@ -6,17 +6,17 @@ export const ActInpatientEncounterCodeCode = {
   /**
    * inpatient encounter
    */
-  inpatientencounter: "IMP",
+  IMP: "IMP",
 
   /**
    * inpatient acute
    */
-  inpatientacute: "ACUTE",
+  ACUTE: "ACUTE",
 
   /**
    * inpatient non-acute
    */
-  inpatientnonacute: "NONAC",
+  NONAC: "NONAC",
 } as const;
 
 /**

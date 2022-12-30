@@ -6,1957 +6,1957 @@ export const RouteOfAdministrationCode = {
   /**
    * Immersion (soak)
    */
-  Immersionsoak: "SOAK",
+  SOAK: "SOAK",
 
   /**
    * Shampoo
    */
-  Shampoo: "SHAMPOO",
+  SHAMPOO: "SHAMPOO",
 
   /**
    * Translingual
    */
-  Translingual: "TRNSLING",
+  TRNSLING: "TRNSLING",
 
   /**
    * Swallow, oral
    */
-  Swalloworal: "PO",
+  PO: "PO",
 
   /**
    * Gargle
    */
-  Gargle: "GARGLE",
+  GARGLE: "GARGLE",
 
   /**
    * Suck, oromucosal
    */
-  Suckoromucosal: "SUCK",
+  SUCK: "SUCK",
 
   /**
    * Chew
    */
-  Chew: "_Chew",
+  _Chew: "_Chew",
 
   /**
    * Chew, oral
    */
-  Cheworal: "CHEW",
+  CHEW: "CHEW",
 
   /**
    * Diffusion
    */
-  Diffusion: "_Diffusion",
+  _Diffusion: "_Diffusion",
 
   /**
    * Diffusion, extracorporeal
    */
-  Diffusionextracorporeal: "EXTCORPDIF",
+  EXTCORPDIF: "EXTCORPDIF",
 
   /**
    * Diffusion, hemodialysis
    */
-  Diffusionhemodialysis: "HEMODIFF",
+  HEMODIFF: "HEMODIFF",
 
   /**
    * Diffusion, transdermal
    */
-  Diffusiontransdermal: "TRNSDERMD",
+  TRNSDERMD: "TRNSDERMD",
 
   /**
    * Dissolve
    */
-  Dissolve: "_Dissolve",
+  _Dissolve: "_Dissolve",
 
   /**
    * Dissolve, oral
    */
-  Dissolveoral: "DISSOLVE",
+  DISSOLVE: "DISSOLVE",
 
   /**
    * Dissolve, sublingual
    */
-  Dissolvesublingual: "SL",
+  SL: "SL",
 
   /**
    * Douche
    */
-  Douche: "_Douche",
+  _Douche: "_Douche",
 
   /**
    * Douche, vaginal
    */
-  Douchevaginal: "DOUCHE",
+  DOUCHE: "DOUCHE",
 
   /**
    * ElectroOsmosisRoute
    */
-  ElectroOsmosisRoute: "_ElectroOsmosisRoute",
+  _ElectroOsmosisRoute: "_ElectroOsmosisRoute",
 
   /**
    * Electro-osmosis
    */
-  Electroosmosis: "ELECTOSMOS",
+  ELECTOSMOS: "ELECTOSMOS",
 
   /**
    * Enema
    */
-  Enema: "_Enema",
+  _Enema: "_Enema",
 
   /**
    * Enema, rectal
    */
-  Enemarectal: "ENEMA",
+  ENEMA: "ENEMA",
 
   /**
    * Enema, rectal retention
    */
-  Enemarectalretention: "RETENEMA",
+  RETENEMA: "RETENEMA",
 
   /**
    * Flush
    */
-  Flush: "_Flush",
+  _Flush: "_Flush",
 
   /**
    * Flush, intravenous catheter
    */
-  Flushintravenouscatheter: "IVFLUSH",
+  IVFLUSH: "IVFLUSH",
 
   /**
    * Implantation
    */
-  Implantation: "_Implantation",
+  _Implantation: "_Implantation",
 
   /**
    * Implantation, intradermal
    */
-  Implantationintradermal: "IDIMPLNT",
+  IDIMPLNT: "IDIMPLNT",
 
   /**
    * Implantation, intravitreal
    */
-  Implantationintravitreal: "IVITIMPLNT",
+  IVITIMPLNT: "IVITIMPLNT",
 
   /**
    * Implantation, subcutaneous
    */
-  Implantationsubcutaneous: "SQIMPLNT",
+  SQIMPLNT: "SQIMPLNT",
 
   /**
    * Infusion
    */
-  Infusion: "_Infusion",
+  _Infusion: "_Infusion",
 
   /**
    * Infusion, epidural
    */
-  Infusionepidural: "EPI",
+  EPI: "EPI",
 
   /**
    * Infusion, intraarterial catheter
    */
-  Infusionintraarterialcatheter: "IA",
+  IA: "IA",
 
   /**
    * Infusion, intracardiac
    */
-  Infusionintracardiac: "IC",
+  IC: "IC",
 
   /**
    * Infusion, intracoronary
    */
-  Infusionintracoronary: "ICOR",
+  ICOR: "ICOR",
 
   /**
    * Infusion, intraosseous, continuous
    */
-  Infusionintraosseouscontinuous: "IOSSC",
+  IOSSC: "IOSSC",
 
   /**
    * Infusion, intrathecal
    */
-  Infusionintrathecal: "IT",
+  IT: "IT",
 
   /**
    * Infusion, intravenous
    */
-  Infusionintravenous: "IV",
+  IV: "IV",
 
   /**
    * Infusion, intravenous catheter
    */
-  Infusionintravenouscatheter: "IVC",
+  IVC: "IVC",
 
   /**
    * Infusion, intravenous catheter, continuous
    */
-  Infusionintravenouscathetercontinuous: "IVCC",
+  IVCC: "IVCC",
 
   /**
    * Infusion, intravenous catheter, intermittent
    */
-  Infusionintravenouscatheterintermittent: "IVCI",
+  IVCI: "IVCI",
 
   /**
    * Infusion, intravenous catheter, pca pump
    */
-  Infusionintravenouscatheterpcapump: "PCA",
+  PCA: "PCA",
 
   /**
    * Infusion, intravascular
    */
-  Infusionintravascular: "IVASCINFUS",
+  IVASCINFUS: "IVASCINFUS",
 
   /**
    * Infusion, subcutaneous
    */
-  Infusionsubcutaneous: "SQINFUS",
+  SQINFUS: "SQINFUS",
 
   /**
    * Inhalation
    */
-  Inhalation: "_Inhalation",
+  _Inhalation: "_Inhalation",
 
   /**
    * Inhalation, respiratory
    */
-  Inhalationrespiratory: "IPINHL",
+  IPINHL: "IPINHL",
 
   /**
    * Inhalation, oral intermittent flow
    */
-  Inhalationoralintermittentflow: "ORIFINHL",
+  ORIFINHL: "ORIFINHL",
 
   /**
    * Inhalation, oral rebreather mask
    */
-  Inhalationoralrebreathermask: "REBREATH",
+  REBREATH: "REBREATH",
 
   /**
    * Inhalation, respiratory
    */
-  Inhalationrespiratory: "ORINHL",
+  ORINHL: "ORINHL",
 
   /**
    * Inhalation, respiratory
    */
-  Inhalationrespiratory: "RESPINHL",
+  RESPINHL: "RESPINHL",
 
   /**
    * Inhalation, intermittent positive pressure breathing (ippb)
    */
-  Inhalationintermittentpositivepressurebreathingippb: "IPPB",
+  IPPB: "IPPB",
 
   /**
    * Inhalation, nasal
    */
-  Inhalationnasal: "NASINHL",
+  NASINHL: "NASINHL",
 
   /**
    * Inhalation, nasal cannula
    */
-  Inhalationnasalcannula: "NASINHLC",
+  NASINHLC: "NASINHLC",
 
   /**
    * Inhalation, nasal cannula
    */
-  Inhalationnasalcannula: "NP",
+  NP: "NP",
 
   /**
    * Inhalation, nebulization
    */
-  Inhalationnebulization: "NEB",
+  NEB: "NEB",
 
   /**
    * Inhalation, nebulization, nasal
    */
-  Inhalationnebulizationnasal: "NASNEB",
+  NASNEB: "NASNEB",
 
   /**
    * Inhalation, nebulization, oral
    */
-  Inhalationnebulizationoral: "ORNEB",
+  ORNEB: "ORNEB",
 
   /**
    * Inhalation, tracheostomy
    */
-  Inhalationtracheostomy: "TRACH",
+  TRACH: "TRACH",
 
   /**
    * Inhalation, ventilator
    */
-  Inhalationventilator: "VENT",
+  VENT: "VENT",
 
   /**
    * Inhalation, ventimask
    */
-  Inhalationventimask: "VENTMASK",
+  VENTMASK: "VENTMASK",
 
   /**
    * Injection
    */
-  Injection: "_Injection",
+  _Injection: "_Injection",
 
   /**
    * Injection, amniotic fluid
    */
-  Injectionamnioticfluid: "AMNINJ",
+  AMNINJ: "AMNINJ",
 
   /**
    * Injection, biliary tract
    */
-  Injectionbiliarytract: "BILINJ",
+  BILINJ: "BILINJ",
 
   /**
    * Injection, for cholangiography
    */
-  Injectionforcholangiography: "CHOLINJ",
+  CHOLINJ: "CHOLINJ",
 
   /**
    * Injection, cervical
    */
-  Injectioncervical: "CERVINJ",
+  CERVINJ: "CERVINJ",
 
   /**
    * Injection, epidural
    */
-  Injectionepidural: "EPIDURINJ",
+  EPIDURINJ: "EPIDURINJ",
 
   /**
    * Injection, epidural, push
    */
-  Injectionepiduralpush: "EPIINJ",
+  EPIINJ: "EPIINJ",
 
   /**
    * Injection, epidural, slow push
    */
-  Injectionepiduralslowpush: "EPINJSP",
+  EPINJSP: "EPINJSP",
 
   /**
    * Injection, extra-amniotic
    */
-  Injectionextraamniotic: "EXTRAMNINJ",
+  EXTRAMNINJ: "EXTRAMNINJ",
 
   /**
    * Injection, extracorporeal
    */
-  Injectionextracorporeal: "EXTCORPINJ",
+  EXTCORPINJ: "EXTCORPINJ",
 
   /**
    * Injection, gastric button
    */
-  Injectiongastricbutton: "GBINJ",
+  GBINJ: "GBINJ",
 
   /**
    * Injection, gingival
    */
-  Injectiongingival: "GINGINJ",
+  GINGINJ: "GINGINJ",
 
   /**
    * Injection, urinary bladder
    */
-  Injectionurinarybladder: "BLADINJ",
+  BLADINJ: "BLADINJ",
 
   /**
    * Injection, endosinusial
    */
-  Injectionendosinusial: "ENDOSININJ",
+  ENDOSININJ: "ENDOSININJ",
 
   /**
    * Injection, hemodialysis port
    */
-  Injectionhemodialysisport: "HEMOPORT",
+  HEMOPORT: "HEMOPORT",
 
   /**
    * Injection, intra-abdominal
    */
-  Injectionintraabdominal: "IABDINJ",
+  IABDINJ: "IABDINJ",
 
   /**
    * Injection, intraarterial
    */
-  Injectionintraarterial: "IAINJ",
+  IAINJ: "IAINJ",
 
   /**
    * Injection, intraarterial, push
    */
-  Injectionintraarterialpush: "IAINJP",
+  IAINJP: "IAINJP",
 
   /**
    * Injection, intraarterial, slow push
    */
-  Injectionintraarterialslowpush: "IAINJSP",
+  IAINJSP: "IAINJSP",
 
   /**
    * Injection, intraarticular
    */
-  Injectionintraarticular: "IARTINJ",
+  IARTINJ: "IARTINJ",
 
   /**
    * Injection, intrabursal
    */
-  Injectionintrabursal: "IBURSINJ",
+  IBURSINJ: "IBURSINJ",
 
   /**
    * Injection, intracardiac
    */
-  Injectionintracardiac: "ICARDINJ",
+  ICARDINJ: "ICARDINJ",
 
   /**
    * Injection, intracardiac, rapid push
    */
-  Injectionintracardiacrapidpush: "ICARDINJRP",
+  ICARDINJRP: "ICARDINJRP",
 
   /**
    * Injection, intracardiac, slow push
    */
-  Injectionintracardiacslowpush: "ICARDINJSP",
+  ICARDINJSP: "ICARDINJSP",
 
   /**
    * Injection, intracardiac, push
    */
-  Injectionintracardiacpush: "ICARINJP",
+  ICARINJP: "ICARINJP",
 
   /**
    * Injection, intracartilaginous
    */
-  Injectionintracartilaginous: "ICARTINJ",
+  ICARTINJ: "ICARTINJ",
 
   /**
    * Injection, intracaudal
    */
-  Injectionintracaudal: "ICAUDINJ",
+  ICAUDINJ: "ICAUDINJ",
 
   /**
    * Injection, intracavernous
    */
-  Injectionintracavernous: "ICAVINJ",
+  ICAVINJ: "ICAVINJ",
 
   /**
    * Injection, intracavitary
    */
-  Injectionintracavitary: "ICAVITINJ",
+  ICAVITINJ: "ICAVITINJ",
 
   /**
    * Injection, intracerebral
    */
-  Injectionintracerebral: "ICEREBINJ",
+  ICEREBINJ: "ICEREBINJ",
 
   /**
    * Injection, intracisternal
    */
-  Injectionintracisternal: "ICISTERNINJ",
+  ICISTERNINJ: "ICISTERNINJ",
 
   /**
    * Injection, intracoronary
    */
-  Injectionintracoronary: "ICORONINJ",
+  ICORONINJ: "ICORONINJ",
 
   /**
    * Injection, intracoronary, push
    */
-  Injectionintracoronarypush: "ICORONINJP",
+  ICORONINJP: "ICORONINJP",
 
   /**
    * Injection, intracorpus cavernosum
    */
-  Injectionintracorpuscavernosum: "ICORPCAVINJ",
+  ICORPCAVINJ: "ICORPCAVINJ",
 
   /**
    * Injection, intradermal
    */
-  Injectionintradermal: "IDINJ",
+  IDINJ: "IDINJ",
 
   /**
    * Injection, intradiscal
    */
-  Injectionintradiscal: "IDISCINJ",
+  IDISCINJ: "IDISCINJ",
 
   /**
    * Injection, intraductal
    */
-  Injectionintraductal: "IDUCTINJ",
+  IDUCTINJ: "IDUCTINJ",
 
   /**
    * Injection, intradural
    */
-  Injectionintradural: "IDURINJ",
+  IDURINJ: "IDURINJ",
 
   /**
    * Injection, intraepidermal
    */
-  Injectionintraepidermal: "IEPIDINJ",
+  IEPIDINJ: "IEPIDINJ",
 
   /**
    * Injection, intraepithelial
    */
-  Injectionintraepithelial: "IEPITHINJ",
+  IEPITHINJ: "IEPITHINJ",
 
   /**
    * Injection, intralesional
    */
-  Injectionintralesional: "ILESINJ",
+  ILESINJ: "ILESINJ",
 
   /**
    * Injection, intraluminal
    */
-  Injectionintraluminal: "ILUMINJ",
+  ILUMINJ: "ILUMINJ",
 
   /**
    * Injection, intralymphatic
    */
-  Injectionintralymphatic: "ILYMPJINJ",
+  ILYMPJINJ: "ILYMPJINJ",
 
   /**
    * Injection, intramuscular
    */
-  Injectionintramuscular: "IM",
+  IM: "IM",
 
   /**
    * Injection, intramuscular, deep
    */
-  Injectionintramusculardeep: "IMD",
+  IMD: "IMD",
 
   /**
    * Injection, intramuscular, z track
    */
-  Injectionintramuscularztrack: "IMZ",
+  IMZ: "IMZ",
 
   /**
    * Injection, intramedullary
    */
-  Injectionintramedullary: "IMEDULINJ",
+  IMEDULINJ: "IMEDULINJ",
 
   /**
    * Injection, interameningeal
    */
-  Injectioninterameningeal: "INTERMENINJ",
+  INTERMENINJ: "INTERMENINJ",
 
   /**
    * Injection, interstitial
    */
-  Injectioninterstitial: "INTERSTITINJ",
+  INTERSTITINJ: "INTERSTITINJ",
 
   /**
    * Injection, intraocular
    */
-  Injectionintraocular: "IOINJ",
+  IOINJ: "IOINJ",
 
   /**
    * Injection, intraosseous
    */
-  Injectionintraosseous: "IOSSINJ",
+  IOSSINJ: "IOSSINJ",
 
   /**
    * Injection, intraovarian
    */
-  Injectionintraovarian: "IOVARINJ",
+  IOVARINJ: "IOVARINJ",
 
   /**
    * Injection, intrapericardial
    */
-  Injectionintrapericardial: "IPCARDINJ",
+  IPCARDINJ: "IPCARDINJ",
 
   /**
    * Injection, intraperitoneal
    */
-  Injectionintraperitoneal: "IPERINJ",
+  IPERINJ: "IPERINJ",
 
   /**
    * Injection, intrapulmonary
    */
-  Injectionintrapulmonary: "IPINJ",
+  IPINJ: "IPINJ",
 
   /**
    * Injection, intrapleural
    */
-  Injectionintrapleural: "IPLRINJ",
+  IPLRINJ: "IPLRINJ",
 
   /**
    * Injection, intraprostatic
    */
-  Injectionintraprostatic: "IPROSTINJ",
+  IPROSTINJ: "IPROSTINJ",
 
   /**
    * Injection, insulin pump
    */
-  Injectioninsulinpump: "IPUMPINJ",
+  IPUMPINJ: "IPUMPINJ",
 
   /**
    * Injection, intraspinal
    */
-  Injectionintraspinal: "ISINJ",
+  ISINJ: "ISINJ",
 
   /**
    * Injection, intrasternal
    */
-  Injectionintrasternal: "ISTERINJ",
+  ISTERINJ: "ISTERINJ",
 
   /**
    * Injection, intrasynovial
    */
-  Injectionintrasynovial: "ISYNINJ",
+  ISYNINJ: "ISYNINJ",
 
   /**
    * Injection, intratendinous
    */
-  Injectionintratendinous: "ITENDINJ",
+  ITENDINJ: "ITENDINJ",
 
   /**
    * Injection, intratesticular
    */
-  Injectionintratesticular: "ITESTINJ",
+  ITESTINJ: "ITESTINJ",
 
   /**
    * Injection, intrathoracic
    */
-  Injectionintrathoracic: "ITHORINJ",
+  ITHORINJ: "ITHORINJ",
 
   /**
    * Injection, intrathecal
    */
-  Injectionintrathecal: "ITINJ",
+  ITINJ: "ITINJ",
 
   /**
    * Injection, intratubular
    */
-  Injectionintratubular: "ITUBINJ",
+  ITUBINJ: "ITUBINJ",
 
   /**
    * Injection, intratumor
    */
-  Injectionintratumor: "ITUMINJ",
+  ITUMINJ: "ITUMINJ",
 
   /**
    * Injection, intratympanic
    */
-  Injectionintratympanic: "ITYMPINJ",
+  ITYMPINJ: "ITYMPINJ",
 
   /**
    * Injection, intrauterine
    */
-  Injectionintrauterine: "IUINJ",
+  IUINJ: "IUINJ",
 
   /**
    * Injection, intracervical (uterus)
    */
-  Injectionintracervicaluterus: "IUINJC",
+  IUINJC: "IUINJC",
 
   /**
    * Injection, intraureteral, retrograde
    */
-  Injectionintraureteralretrograde: "IURETINJ",
+  IURETINJ: "IURETINJ",
 
   /**
    * Injection, intravascular
    */
-  Injectionintravascular: "IVASCINJ",
+  IVASCINJ: "IVASCINJ",
 
   /**
    * Injection, intraventricular (heart)
    */
-  Injectionintraventricularheart: "IVENTINJ",
+  IVENTINJ: "IVENTINJ",
 
   /**
    * Injection, intravesicle
    */
-  Injectionintravesicle: "IVESINJ",
+  IVESINJ: "IVESINJ",
 
   /**
    * Injection, intravenous
    */
-  Injectionintravenous: "IVINJ",
+  IVINJ: "IVINJ",
 
   /**
    * Injection, intravenous, bolus
    */
-  Injectionintravenousbolus: "IVINJBOL",
+  IVINJBOL: "IVINJBOL",
 
   /**
    * Injection, intravenous, push
    */
-  Injectionintravenouspush: "IVPUSH",
+  IVPUSH: "IVPUSH",
 
   /**
    * Injection, intravenous, rapid push
    */
-  Injectionintravenousrapidpush: "IVRPUSH",
+  IVRPUSH: "IVRPUSH",
 
   /**
    * Injection, intravenous, slow push
    */
-  Injectionintravenousslowpush: "IVSPUSH",
+  IVSPUSH: "IVSPUSH",
 
   /**
    * Injection, intravitreal
    */
-  Injectionintravitreal: "IVITINJ",
+  IVITINJ: "IVITINJ",
 
   /**
    * Injection, periarticular
    */
-  Injectionperiarticular: "PAINJ",
+  PAINJ: "PAINJ",
 
   /**
    * Injection, parenteral
    */
-  Injectionparenteral: "PARENTINJ",
+  PARENTINJ: "PARENTINJ",
 
   /**
    * Injection, periodontal
    */
-  Injectionperiodontal: "PDONTINJ",
+  PDONTINJ: "PDONTINJ",
 
   /**
    * Injection, peritoneal dialysis port
    */
-  Injectionperitonealdialysisport: "PDPINJ",
+  PDPINJ: "PDPINJ",
 
   /**
    * Injection, peridural
    */
-  Injectionperidural: "PDURINJ",
+  PDURINJ: "PDURINJ",
 
   /**
    * Injection, perineural
    */
-  Injectionperineural: "PNINJ",
+  PNINJ: "PNINJ",
 
   /**
    * Injection, paranasal sinuses
    */
-  Injectionparanasalsinuses: "PNSINJ",
+  PNSINJ: "PNSINJ",
 
   /**
    * Injection, retrobulbar
    */
-  Injectionretrobulbar: "RBINJ",
+  RBINJ: "RBINJ",
 
   /**
    * Injection, subconjunctival
    */
-  Injectionsubconjunctival: "SCINJ",
+  SCINJ: "SCINJ",
 
   /**
    * Injection, sublesional
    */
-  Injectionsublesional: "SLESINJ",
+  SLESINJ: "SLESINJ",
 
   /**
    * Injection, soft tissue
    */
-  Injectionsofttissue: "SOFTISINJ",
+  SOFTISINJ: "SOFTISINJ",
 
   /**
    * Injection, subcutaneous
    */
-  Injectionsubcutaneous: "SQ",
+  SQ: "SQ",
 
   /**
    * Injection, subarachnoid
    */
-  Injectionsubarachnoid: "SUBARACHINJ",
+  SUBARACHINJ: "SUBARACHINJ",
 
   /**
    * Injection, submucosal
    */
-  Injectionsubmucosal: "SUBMUCINJ",
+  SUBMUCINJ: "SUBMUCINJ",
 
   /**
    * Injection, transplacental
    */
-  Injectiontransplacental: "TRPLACINJ",
+  TRPLACINJ: "TRPLACINJ",
 
   /**
    * Injection, transtracheal
    */
-  Injectiontranstracheal: "TRTRACHINJ",
+  TRTRACHINJ: "TRTRACHINJ",
 
   /**
    * Injection, urethral
    */
-  Injectionurethral: "URETHINJ",
+  URETHINJ: "URETHINJ",
 
   /**
    * Injection, ureteral
    */
-  Injectionureteral: "URETINJ",
+  URETINJ: "URETINJ",
 
   /**
    * Insertion
    */
-  Insertion: "_Insertion",
+  _Insertion: "_Insertion",
 
   /**
    * Insertion, cervical (uterine)
    */
-  Insertioncervicaluterine: "CERVINS",
+  CERVINS: "CERVINS",
 
   /**
    * Insertion, intraocular, surgical
    */
-  Insertionintraocularsurgical: "IOSURGINS",
+  IOSURGINS: "IOSURGINS",
 
   /**
    * Insertion, intrauterine
    */
-  Insertionintrauterine: "IU",
+  IU: "IU",
 
   /**
    * Insertion, lacrimal puncta
    */
-  Insertionlacrimalpuncta: "LPINS",
+  LPINS: "LPINS",
 
   /**
    * Insertion, rectal
    */
-  Insertionrectal: "PR",
+  PR: "PR",
 
   /**
    * Insertion, subcutaneous, surgical
    */
-  Insertionsubcutaneoussurgical: "SQSURGINS",
+  SQSURGINS: "SQSURGINS",
 
   /**
    * Insertion, urethral
    */
-  Insertionurethral: "URETHINS",
+  URETHINS: "URETHINS",
 
   /**
    * Insertion, vaginal
    */
-  Insertionvaginal: "VAGINSI",
+  VAGINSI: "VAGINSI",
 
   /**
    * Instillation
    */
-  Instillation: "_Instillation",
+  _Instillation: "_Instillation",
 
   /**
    * Instillation, cecostomy
    */
-  Instillationcecostomy: "CECINSTL",
+  CECINSTL: "CECINSTL",
 
   /**
    * Instillation, enteral feeding tube
    */
-  Instillationenteralfeedingtube: "EFT",
+  EFT: "EFT",
 
   /**
    * Instillation, enteral
    */
-  Instillationenteral: "ENTINSTL",
+  ENTINSTL: "ENTINSTL",
 
   /**
    * Instillation, gastrostomy tube
    */
-  Instillationgastrostomytube: "GT",
+  GT: "GT",
 
   /**
    * Instillation, nasogastric tube
    */
-  Instillationnasogastrictube: "NGT",
+  NGT: "NGT",
 
   /**
    * Instillation, orogastric tube
    */
-  Instillationorogastrictube: "OGT",
+  OGT: "OGT",
 
   /**
    * Instillation, urinary catheter
    */
-  Instillationurinarycatheter: "BLADINSTL",
+  BLADINSTL: "BLADINSTL",
 
   /**
    * Instillation, continuous ambulatory peritoneal dialysis port
    */
-  Instillationcontinuousambulatoryperitonealdialysisport: "CAPDINSTL",
+  CAPDINSTL: "CAPDINSTL",
 
   /**
    * Instillation, chest tube
    */
-  Instillationchesttube: "CTINSTL",
+  CTINSTL: "CTINSTL",
 
   /**
    * Instillation, endotracheal tube
    */
-  Instillationendotrachealtube: "ETINSTL",
+  ETINSTL: "ETINSTL",
 
   /**
    * Instillation, gastro-jejunostomy tube
    */
-  Instillationgastrojejunostomytube: "GJT",
+  GJT: "GJT",
 
   /**
    * Instillation, intrabronchial
    */
-  Instillationintrabronchial: "IBRONCHINSTIL",
+  IBRONCHINSTIL: "IBRONCHINSTIL",
 
   /**
    * Instillation, intraduodenal
    */
-  Instillationintraduodenal: "IDUODINSTIL",
+  IDUODINSTIL: "IDUODINSTIL",
 
   /**
    * Instillation, intraesophageal
    */
-  Instillationintraesophageal: "IESOPHINSTIL",
+  IESOPHINSTIL: "IESOPHINSTIL",
 
   /**
    * Instillation, intragastric
    */
-  Instillationintragastric: "IGASTINSTIL",
+  IGASTINSTIL: "IGASTINSTIL",
 
   /**
    * Instillation, intraileal
    */
-  Instillationintraileal: "IILEALINJ",
+  IILEALINJ: "IILEALINJ",
 
   /**
    * Instillation, intraocular
    */
-  Instillationintraocular: "IOINSTL",
+  IOINSTL: "IOINSTL",
 
   /**
    * Instillation, intrasinal
    */
-  Instillationintrasinal: "ISININSTIL",
+  ISININSTIL: "ISININSTIL",
 
   /**
    * Instillation, intratracheal
    */
-  Instillationintratracheal: "ITRACHINSTIL",
+  ITRACHINSTIL: "ITRACHINSTIL",
 
   /**
    * Instillation, intrauterine
    */
-  Instillationintrauterine: "IUINSTL",
+  IUINSTL: "IUINSTL",
 
   /**
    * Instillation, jejunostomy tube
    */
-  Instillationjejunostomytube: "JJTINSTL",
+  JJTINSTL: "JJTINSTL",
 
   /**
    * Instillation, laryngeal
    */
-  Instillationlaryngeal: "LARYNGINSTIL",
+  LARYNGINSTIL: "LARYNGINSTIL",
 
   /**
    * Instillation, nasal
    */
-  Instillationnasal: "NASALINSTIL",
+  NASALINSTIL: "NASALINSTIL",
 
   /**
    * Instillation, nasogastric
    */
-  Instillationnasogastric: "NASOGASINSTIL",
+  NASOGASINSTIL: "NASOGASINSTIL",
 
   /**
    * Instillation, nasotracheal tube
    */
-  Instillationnasotrachealtube: "NTT",
+  NTT: "NTT",
 
   /**
    * Instillation, orojejunum tube
    */
-  Instillationorojejunumtube: "OJJ",
+  OJJ: "OJJ",
 
   /**
    * Instillation, otic
    */
-  Instillationotic: "OT",
+  OT: "OT",
 
   /**
    * Instillation, peritoneal dialysis port
    */
-  Instillationperitonealdialysisport: "PDPINSTL",
+  PDPINSTL: "PDPINSTL",
 
   /**
    * Instillation, paranasal sinuses
    */
-  Instillationparanasalsinuses: "PNSINSTL",
+  PNSINSTL: "PNSINSTL",
 
   /**
    * Instillation, rectal
    */
-  Instillationrectal: "RECINSTL",
+  RECINSTL: "RECINSTL",
 
   /**
    * Instillation, rectal tube
    */
-  Instillationrectaltube: "RECTINSTL",
+  RECTINSTL: "RECTINSTL",
 
   /**
    * Instillation, sinus, unspecified
    */
-  Instillationsinusunspecified: "SININSTIL",
+  SININSTIL: "SININSTIL",
 
   /**
    * Instillation, soft tissue
    */
-  Instillationsofttissue: "SOFTISINSTIL",
+  SOFTISINSTIL: "SOFTISINSTIL",
 
   /**
    * Instillation, tracheostomy
    */
-  Instillationtracheostomy: "TRACHINSTL",
+  TRACHINSTL: "TRACHINSTL",
 
   /**
    * Instillation, transtympanic
    */
-  Instillationtranstympanic: "TRTYMPINSTIL",
+  TRTYMPINSTIL: "TRTYMPINSTIL",
 
   /**
    * instillation, urethral
    */
-  instillationurethral: "URETHINSTL",
+  URETHINSTL: "URETHINSTL",
 
   /**
    * IontophoresisRoute
    */
-  IontophoresisRoute: "_IontophoresisRoute",
+  _IontophoresisRoute: "_IontophoresisRoute",
 
   /**
    * Topical application, iontophoresis
    */
-  Topicalapplicationiontophoresis: "IONTO",
+  IONTO: "IONTO",
 
   /**
    * Irrigation
    */
-  Irrigation: "_Irrigation",
+  _Irrigation: "_Irrigation",
 
   /**
    * Irrigation, genitourinary
    */
-  Irrigationgenitourinary: "GUIRR",
+  GUIRR: "GUIRR",
 
   /**
    * Irrigation, intragastric
    */
-  Irrigationintragastric: "IGASTIRR",
+  IGASTIRR: "IGASTIRR",
 
   /**
    * Irrigation, intralesional
    */
-  Irrigationintralesional: "ILESIRR",
+  ILESIRR: "ILESIRR",
 
   /**
    * Irrigation, intraocular
    */
-  Irrigationintraocular: "IOIRR",
+  IOIRR: "IOIRR",
 
   /**
    * Irrigation, urinary bladder
    */
-  Irrigationurinarybladder: "BLADIRR",
+  BLADIRR: "BLADIRR",
 
   /**
    * Irrigation, urinary bladder, continuous
    */
-  Irrigationurinarybladdercontinuous: "BLADIRRC",
+  BLADIRRC: "BLADIRRC",
 
   /**
    * Irrigation, urinary bladder, tidal
    */
-  Irrigationurinarybladdertidal: "BLADIRRT",
+  BLADIRRT: "BLADIRRT",
 
   /**
    * Irrigation, rectal
    */
-  Irrigationrectal: "RECIRR",
+  RECIRR: "RECIRR",
 
   /**
    * LavageRoute
    */
-  LavageRoute: "_LavageRoute",
+  _LavageRoute: "_LavageRoute",
 
   /**
    * Lavage, intragastric
    */
-  Lavageintragastric: "IGASTLAV",
+  IGASTLAV: "IGASTLAV",
 
   /**
    * MucosalAbsorptionRoute
    */
-  MucosalAbsorptionRoute: "_MucosalAbsorptionRoute",
+  _MucosalAbsorptionRoute: "_MucosalAbsorptionRoute",
 
   /**
    * Mucosal absorption, intraduodenal
    */
-  Mucosalabsorptionintraduodenal: "IDOUDMAB",
+  IDOUDMAB: "IDOUDMAB",
 
   /**
    * Mucosal absorption, intratracheal
    */
-  Mucosalabsorptionintratracheal: "ITRACHMAB",
+  ITRACHMAB: "ITRACHMAB",
 
   /**
    * Mucosal absorption, submucosal
    */
-  Mucosalabsorptionsubmucosal: "SMUCMAB",
+  SMUCMAB: "SMUCMAB",
 
   /**
    * Nebulization
    */
-  Nebulization: "_Nebulization",
+  _Nebulization: "_Nebulization",
 
   /**
    * Nebulization, endotracheal tube
    */
-  Nebulizationendotrachealtube: "ETNEB",
+  ETNEB: "ETNEB",
 
   /**
    * Rinse
    */
-  Rinse: "_Rinse",
+  _Rinse: "_Rinse",
 
   /**
    * Rinse, dental
    */
-  Rinsedental: "DENRINSE",
+  DENRINSE: "DENRINSE",
 
   /**
    * Rinse, oral
    */
-  Rinseoral: "ORRINSE",
+  ORRINSE: "ORRINSE",
 
   /**
    * SuppositoryRoute
    */
-  SuppositoryRoute: "_SuppositoryRoute",
+  _SuppositoryRoute: "_SuppositoryRoute",
 
   /**
    * Suppository, urethral
    */
-  Suppositoryurethral: "URETHSUP",
+  URETHSUP: "URETHSUP",
 
   /**
    * Swish
    */
-  Swish: "_Swish",
+  _Swish: "_Swish",
 
   /**
    * Swish and spit out, oromucosal
    */
-  Swishandspitoutoromucosal: "SWISHSPIT",
+  SWISHSPIT: "SWISHSPIT",
 
   /**
    * Swish and swallow, oromucosal
    */
-  Swishandswalloworomucosal: "SWISHSWAL",
+  SWISHSWAL: "SWISHSWAL",
 
   /**
    * TopicalAbsorptionRoute
    */
-  TopicalAbsorptionRoute: "_TopicalAbsorptionRoute",
+  _TopicalAbsorptionRoute: "_TopicalAbsorptionRoute",
 
   /**
    * Topical absorption, transtympanic
    */
-  Topicalabsorptiontranstympanic: "TTYMPTABSORP",
+  TTYMPTABSORP: "TTYMPTABSORP",
 
   /**
    * TopicalApplication
    */
-  TopicalApplication: "_TopicalApplication",
+  _TopicalApplication: "_TopicalApplication",
 
   /**
    * Topical application, soaked dressing
    */
-  Topicalapplicationsoakeddressing: "DRESS",
+  DRESS: "DRESS",
 
   /**
    * Topical application, swab
    */
-  Topicalapplicationswab: "SWAB",
+  SWAB: "SWAB",
 
   /**
    * Topical
    */
-  Topical: "TOPICAL",
+  TOPICAL: "TOPICAL",
 
   /**
    * Topical application, buccal
    */
-  Topicalapplicationbuccal: "BUC",
+  BUC: "BUC",
 
   /**
    * Topical application, cervical
    */
-  Topicalapplicationcervical: "CERV",
+  CERV: "CERV",
 
   /**
    * Topical application, dental
    */
-  Topicalapplicationdental: "DEN",
+  DEN: "DEN",
 
   /**
    * Topical application, gingival
    */
-  Topicalapplicationgingival: "GIN",
+  GIN: "GIN",
 
   /**
    * Topical application, hair
    */
-  Topicalapplicationhair: "HAIR",
+  HAIR: "HAIR",
 
   /**
    * Topical application, intracorneal
    */
-  Topicalapplicationintracorneal: "ICORNTA",
+  ICORNTA: "ICORNTA",
 
   /**
    * Topical application, intracoronal (dental)
    */
-  Topicalapplicationintracoronaldental: "ICORONTA",
+  ICORONTA: "ICORONTA",
 
   /**
    * Topical application, intraesophageal
    */
-  Topicalapplicationintraesophageal: "IESOPHTA",
+  IESOPHTA: "IESOPHTA",
 
   /**
    * Topical application, intraileal
    */
-  Topicalapplicationintraileal: "IILEALTA",
+  IILEALTA: "IILEALTA",
 
   /**
    * Topical application, intralesional
    */
-  Topicalapplicationintralesional: "ILTOP",
+  ILTOP: "ILTOP",
 
   /**
    * Topical application, intraluminal
    */
-  Topicalapplicationintraluminal: "ILUMTA",
+  ILUMTA: "ILUMTA",
 
   /**
    * Topical application, intraocular
    */
-  Topicalapplicationintraocular: "IOTOP",
+  IOTOP: "IOTOP",
 
   /**
    * Topical application, laryngeal
    */
-  Topicalapplicationlaryngeal: "LARYNGTA",
+  LARYNGTA: "LARYNGTA",
 
   /**
    * Topical application, mucous membrane
    */
-  Topicalapplicationmucousmembrane: "MUC",
+  MUC: "MUC",
 
   /**
    * Topical application, nail
    */
-  Topicalapplicationnail: "NAIL",
+  NAIL: "NAIL",
 
   /**
    * Topical application, nasal
    */
-  Topicalapplicationnasal: "NASAL",
+  NASAL: "NASAL",
 
   /**
    * Topical application, ophthalmic
    */
-  Topicalapplicationophthalmic: "OPTHALTA",
+  OPTHALTA: "OPTHALTA",
 
   /**
    * Topical application, oral
    */
-  Topicalapplicationoral: "ORALTA",
+  ORALTA: "ORALTA",
 
   /**
    * Topical application, oromucosal
    */
-  Topicalapplicationoromucosal: "ORMUC",
+  ORMUC: "ORMUC",
 
   /**
    * Topical application, oropharyngeal
    */
-  Topicalapplicationoropharyngeal: "OROPHARTA",
+  OROPHARTA: "OROPHARTA",
 
   /**
    * Topical application, perianal
    */
-  Topicalapplicationperianal: "PERIANAL",
+  PERIANAL: "PERIANAL",
 
   /**
    * Topical application, perineal
    */
-  Topicalapplicationperineal: "PERINEAL",
+  PERINEAL: "PERINEAL",
 
   /**
    * Topical application, periodontal
    */
-  Topicalapplicationperiodontal: "PDONTTA",
+  PDONTTA: "PDONTTA",
 
   /**
    * Topical application, rectal
    */
-  Topicalapplicationrectal: "RECTAL",
+  RECTAL: "RECTAL",
 
   /**
    * Topical application, scalp
    */
-  Topicalapplicationscalp: "SCALP",
+  SCALP: "SCALP",
 
   /**
    * Occlusive dressing technique
    */
-  Occlusivedressingtechnique: "OCDRESTA",
+  OCDRESTA: "OCDRESTA",
 
   /**
    * Topical application, skin
    */
-  Topicalapplicationskin: "SKIN",
+  SKIN: "SKIN",
 
   /**
    * Subconjunctival
    */
-  Subconjunctival: "SUBCONJTA",
+  SUBCONJTA: "SUBCONJTA",
 
   /**
    * Topical application, transmucosal
    */
-  Topicalapplicationtransmucosal: "TMUCTA",
+  TMUCTA: "TMUCTA",
 
   /**
    * Topical application, vaginal
    */
-  Topicalapplicationvaginal: "VAGINS",
+  VAGINS: "VAGINS",
 
   /**
    * Insufflation
    */
-  Insufflation: "INSUF",
+  INSUF: "INSUF",
 
   /**
    * Transdermal
    */
-  Transdermal: "TRNSDERM",
+  TRNSDERM: "TRNSDERM",
 
   /**
    * InfiltrationRoute
    */
-  InfiltrationRoute: "_InfiltrationRoute",
+  _InfiltrationRoute: "_InfiltrationRoute",
 
   /**
    * AmnioticFluidSacRoute
    */
-  AmnioticFluidSacRoute: "_AmnioticFluidSacRoute",
+  _AmnioticFluidSacRoute: "_AmnioticFluidSacRoute",
 
   /**
    * BiliaryRoute
    */
-  BiliaryRoute: "_BiliaryRoute",
+  _BiliaryRoute: "_BiliaryRoute",
 
   /**
    * BodySurfaceRoute
    */
-  BodySurfaceRoute: "_BodySurfaceRoute",
+  _BodySurfaceRoute: "_BodySurfaceRoute",
 
   /**
    * BuccalMucosaRoute
    */
-  BuccalMucosaRoute: "_BuccalMucosaRoute",
+  _BuccalMucosaRoute: "_BuccalMucosaRoute",
 
   /**
    * CecostomyRoute
    */
-  CecostomyRoute: "_CecostomyRoute",
+  _CecostomyRoute: "_CecostomyRoute",
 
   /**
    * CervicalRoute
    */
-  CervicalRoute: "_CervicalRoute",
+  _CervicalRoute: "_CervicalRoute",
 
   /**
    * EndocervicalRoute
    */
-  EndocervicalRoute: "_EndocervicalRoute",
+  _EndocervicalRoute: "_EndocervicalRoute",
 
   /**
    * EnteralRoute
    */
-  EnteralRoute: "_EnteralRoute",
+  _EnteralRoute: "_EnteralRoute",
 
   /**
    * EpiduralRoute
    */
-  EpiduralRoute: "_EpiduralRoute",
+  _EpiduralRoute: "_EpiduralRoute",
 
   /**
    * ExtraAmnioticRoute
    */
-  ExtraAmnioticRoute: "_ExtraAmnioticRoute",
+  _ExtraAmnioticRoute: "_ExtraAmnioticRoute",
 
   /**
    * ExtracorporealCirculationRoute
    */
-  ExtracorporealCirculationRoute: "_ExtracorporealCirculationRoute",
+  _ExtracorporealCirculationRoute: "_ExtracorporealCirculationRoute",
 
   /**
    * GastricRoute
    */
-  GastricRoute: "_GastricRoute",
+  _GastricRoute: "_GastricRoute",
 
   /**
    * GenitourinaryRoute
    */
-  GenitourinaryRoute: "_GenitourinaryRoute",
+  _GenitourinaryRoute: "_GenitourinaryRoute",
 
   /**
    * GingivalRoute
    */
-  GingivalRoute: "_GingivalRoute",
+  _GingivalRoute: "_GingivalRoute",
 
   /**
    * HairRoute
    */
-  HairRoute: "_HairRoute",
+  _HairRoute: "_HairRoute",
 
   /**
    * InterameningealRoute
    */
-  InterameningealRoute: "_InterameningealRoute",
+  _InterameningealRoute: "_InterameningealRoute",
 
   /**
    * InterstitialRoute
    */
-  InterstitialRoute: "_InterstitialRoute",
+  _InterstitialRoute: "_InterstitialRoute",
 
   /**
    * IntraabdominalRoute
    */
-  IntraabdominalRoute: "_IntraabdominalRoute",
+  _IntraabdominalRoute: "_IntraabdominalRoute",
 
   /**
    * IntraarterialRoute
    */
-  IntraarterialRoute: "_IntraarterialRoute",
+  _IntraarterialRoute: "_IntraarterialRoute",
 
   /**
    * IntraarticularRoute
    */
-  IntraarticularRoute: "_IntraarticularRoute",
+  _IntraarticularRoute: "_IntraarticularRoute",
 
   /**
    * IntrabronchialRoute
    */
-  IntrabronchialRoute: "_IntrabronchialRoute",
+  _IntrabronchialRoute: "_IntrabronchialRoute",
 
   /**
    * IntrabursalRoute
    */
-  IntrabursalRoute: "_IntrabursalRoute",
+  _IntrabursalRoute: "_IntrabursalRoute",
 
   /**
    * IntracardiacRoute
    */
-  IntracardiacRoute: "_IntracardiacRoute",
+  _IntracardiacRoute: "_IntracardiacRoute",
 
   /**
    * IntracartilaginousRoute
    */
-  IntracartilaginousRoute: "_IntracartilaginousRoute",
+  _IntracartilaginousRoute: "_IntracartilaginousRoute",
 
   /**
    * IntracaudalRoute
    */
-  IntracaudalRoute: "_IntracaudalRoute",
+  _IntracaudalRoute: "_IntracaudalRoute",
 
   /**
    * IntracavernosalRoute
    */
-  IntracavernosalRoute: "_IntracavernosalRoute",
+  _IntracavernosalRoute: "_IntracavernosalRoute",
 
   /**
    * IntracavitaryRoute
    */
-  IntracavitaryRoute: "_IntracavitaryRoute",
+  _IntracavitaryRoute: "_IntracavitaryRoute",
 
   /**
    * IntracerebralRoute
    */
-  IntracerebralRoute: "_IntracerebralRoute",
+  _IntracerebralRoute: "_IntracerebralRoute",
 
   /**
    * IntracervicalRoute
    */
-  IntracervicalRoute: "_IntracervicalRoute",
+  _IntracervicalRoute: "_IntracervicalRoute",
 
   /**
    * IntracisternalRoute
    */
-  IntracisternalRoute: "_IntracisternalRoute",
+  _IntracisternalRoute: "_IntracisternalRoute",
 
   /**
    * IntracornealRoute
    */
-  IntracornealRoute: "_IntracornealRoute",
+  _IntracornealRoute: "_IntracornealRoute",
 
   /**
    * IntracoronalRoute
    */
-  IntracoronalRoute: "_IntracoronalRoute",
+  _IntracoronalRoute: "_IntracoronalRoute",
 
   /**
    * IntracoronaryRoute
    */
-  IntracoronaryRoute: "_IntracoronaryRoute",
+  _IntracoronaryRoute: "_IntracoronaryRoute",
 
   /**
    * IntracorpusCavernosumRoute
    */
-  IntracorpusCavernosumRoute: "_IntracorpusCavernosumRoute",
+  _IntracorpusCavernosumRoute: "_IntracorpusCavernosumRoute",
 
   /**
    * IntradermalRoute
    */
-  IntradermalRoute: "_IntradermalRoute",
+  _IntradermalRoute: "_IntradermalRoute",
 
   /**
    * IntradiscalRoute
    */
-  IntradiscalRoute: "_IntradiscalRoute",
+  _IntradiscalRoute: "_IntradiscalRoute",
 
   /**
    * IntraductalRoute
    */
-  IntraductalRoute: "_IntraductalRoute",
+  _IntraductalRoute: "_IntraductalRoute",
 
   /**
    * IntraduodenalRoute
    */
-  IntraduodenalRoute: "_IntraduodenalRoute",
+  _IntraduodenalRoute: "_IntraduodenalRoute",
 
   /**
    * IntraduralRoute
    */
-  IntraduralRoute: "_IntraduralRoute",
+  _IntraduralRoute: "_IntraduralRoute",
 
   /**
    * IntraepidermalRoute
    */
-  IntraepidermalRoute: "_IntraepidermalRoute",
+  _IntraepidermalRoute: "_IntraepidermalRoute",
 
   /**
    * IntraepithelialRoute
    */
-  IntraepithelialRoute: "_IntraepithelialRoute",
+  _IntraepithelialRoute: "_IntraepithelialRoute",
 
   /**
    * IntraesophagealRoute
    */
-  IntraesophagealRoute: "_IntraesophagealRoute",
+  _IntraesophagealRoute: "_IntraesophagealRoute",
 
   /**
    * IntragastricRoute
    */
-  IntragastricRoute: "_IntragastricRoute",
+  _IntragastricRoute: "_IntragastricRoute",
 
   /**
    * IntrailealRoute
    */
-  IntrailealRoute: "_IntrailealRoute",
+  _IntrailealRoute: "_IntrailealRoute",
 
   /**
    * IntralesionalRoute
    */
-  IntralesionalRoute: "_IntralesionalRoute",
+  _IntralesionalRoute: "_IntralesionalRoute",
 
   /**
    * IntraluminalRoute
    */
-  IntraluminalRoute: "_IntraluminalRoute",
+  _IntraluminalRoute: "_IntraluminalRoute",
 
   /**
    * IntralymphaticRoute
    */
-  IntralymphaticRoute: "_IntralymphaticRoute",
+  _IntralymphaticRoute: "_IntralymphaticRoute",
 
   /**
    * IntramedullaryRoute
    */
-  IntramedullaryRoute: "_IntramedullaryRoute",
+  _IntramedullaryRoute: "_IntramedullaryRoute",
 
   /**
    * IntramuscularRoute
    */
-  IntramuscularRoute: "_IntramuscularRoute",
+  _IntramuscularRoute: "_IntramuscularRoute",
 
   /**
    * IntraocularRoute
    */
-  IntraocularRoute: "_IntraocularRoute",
+  _IntraocularRoute: "_IntraocularRoute",
 
   /**
    * IntraosseousRoute
    */
-  IntraosseousRoute: "_IntraosseousRoute",
+  _IntraosseousRoute: "_IntraosseousRoute",
 
   /**
    * IntraovarianRoute
    */
-  IntraovarianRoute: "_IntraovarianRoute",
+  _IntraovarianRoute: "_IntraovarianRoute",
 
   /**
    * IntrapericardialRoute
    */
-  IntrapericardialRoute: "_IntrapericardialRoute",
+  _IntrapericardialRoute: "_IntrapericardialRoute",
 
   /**
    * IntraperitonealRoute
    */
-  IntraperitonealRoute: "_IntraperitonealRoute",
+  _IntraperitonealRoute: "_IntraperitonealRoute",
 
   /**
    * IntrapleuralRoute
    */
-  IntrapleuralRoute: "_IntrapleuralRoute",
+  _IntrapleuralRoute: "_IntrapleuralRoute",
 
   /**
    * IntraprostaticRoute
    */
-  IntraprostaticRoute: "_IntraprostaticRoute",
+  _IntraprostaticRoute: "_IntraprostaticRoute",
 
   /**
    * IntrapulmonaryRoute
    */
-  IntrapulmonaryRoute: "_IntrapulmonaryRoute",
+  _IntrapulmonaryRoute: "_IntrapulmonaryRoute",
 
   /**
    * IntrasinalRoute
    */
-  IntrasinalRoute: "_IntrasinalRoute",
+  _IntrasinalRoute: "_IntrasinalRoute",
 
   /**
    * IntraspinalRoute
    */
-  IntraspinalRoute: "_IntraspinalRoute",
+  _IntraspinalRoute: "_IntraspinalRoute",
 
   /**
    * IntrasternalRoute
    */
-  IntrasternalRoute: "_IntrasternalRoute",
+  _IntrasternalRoute: "_IntrasternalRoute",
 
   /**
    * IntrasynovialRoute
    */
-  IntrasynovialRoute: "_IntrasynovialRoute",
+  _IntrasynovialRoute: "_IntrasynovialRoute",
 
   /**
    * IntratendinousRoute
    */
-  IntratendinousRoute: "_IntratendinousRoute",
+  _IntratendinousRoute: "_IntratendinousRoute",
 
   /**
    * IntratesticularRoute
    */
-  IntratesticularRoute: "_IntratesticularRoute",
+  _IntratesticularRoute: "_IntratesticularRoute",
 
   /**
    * IntrathecalRoute
    */
-  IntrathecalRoute: "_IntrathecalRoute",
+  _IntrathecalRoute: "_IntrathecalRoute",
 
   /**
    * IntrathoracicRoute
    */
-  IntrathoracicRoute: "_IntrathoracicRoute",
+  _IntrathoracicRoute: "_IntrathoracicRoute",
 
   /**
    * IntratrachealRoute
    */
-  IntratrachealRoute: "_IntratrachealRoute",
+  _IntratrachealRoute: "_IntratrachealRoute",
 
   /**
    * IntratubularRoute
    */
-  IntratubularRoute: "_IntratubularRoute",
+  _IntratubularRoute: "_IntratubularRoute",
 
   /**
    * IntratumorRoute
    */
-  IntratumorRoute: "_IntratumorRoute",
+  _IntratumorRoute: "_IntratumorRoute",
 
   /**
    * IntratympanicRoute
    */
-  IntratympanicRoute: "_IntratympanicRoute",
+  _IntratympanicRoute: "_IntratympanicRoute",
 
   /**
    * IntrauterineRoute
    */
-  IntrauterineRoute: "_IntrauterineRoute",
+  _IntrauterineRoute: "_IntrauterineRoute",
 
   /**
    * IntravascularRoute
    */
-  IntravascularRoute: "_IntravascularRoute",
+  _IntravascularRoute: "_IntravascularRoute",
 
   /**
    * IntravenousRoute
    */
-  IntravenousRoute: "_IntravenousRoute",
+  _IntravenousRoute: "_IntravenousRoute",
 
   /**
    * IntraventricularRoute
    */
-  IntraventricularRoute: "_IntraventricularRoute",
+  _IntraventricularRoute: "_IntraventricularRoute",
 
   /**
    * IntravesicleRoute
    */
-  IntravesicleRoute: "_IntravesicleRoute",
+  _IntravesicleRoute: "_IntravesicleRoute",
 
   /**
    * IntravitrealRoute
    */
-  IntravitrealRoute: "_IntravitrealRoute",
+  _IntravitrealRoute: "_IntravitrealRoute",
 
   /**
    * JejunumRoute
    */
-  JejunumRoute: "_JejunumRoute",
+  _JejunumRoute: "_JejunumRoute",
 
   /**
    * LacrimalPunctaRoute
    */
-  LacrimalPunctaRoute: "_LacrimalPunctaRoute",
+  _LacrimalPunctaRoute: "_LacrimalPunctaRoute",
 
   /**
    * LaryngealRoute
    */
-  LaryngealRoute: "_LaryngealRoute",
+  _LaryngealRoute: "_LaryngealRoute",
 
   /**
    * LingualRoute
    */
-  LingualRoute: "_LingualRoute",
+  _LingualRoute: "_LingualRoute",
 
   /**
    * MucousMembraneRoute
    */
-  MucousMembraneRoute: "_MucousMembraneRoute",
+  _MucousMembraneRoute: "_MucousMembraneRoute",
 
   /**
    * NailRoute
    */
-  NailRoute: "_NailRoute",
+  _NailRoute: "_NailRoute",
 
   /**
    * NasalRoute
    */
-  NasalRoute: "_NasalRoute",
+  _NasalRoute: "_NasalRoute",
 
   /**
    * OphthalmicRoute
    */
-  OphthalmicRoute: "_OphthalmicRoute",
+  _OphthalmicRoute: "_OphthalmicRoute",
 
   /**
    * OralRoute
    */
-  OralRoute: "_OralRoute",
+  _OralRoute: "_OralRoute",
 
   /**
    * OromucosalRoute
    */
-  OromucosalRoute: "_OromucosalRoute",
+  _OromucosalRoute: "_OromucosalRoute",
 
   /**
    * OropharyngealRoute
    */
-  OropharyngealRoute: "_OropharyngealRoute",
+  _OropharyngealRoute: "_OropharyngealRoute",
 
   /**
    * OticRoute
    */
-  OticRoute: "_OticRoute",
+  _OticRoute: "_OticRoute",
 
   /**
    * ParanasalSinusesRoute
    */
-  ParanasalSinusesRoute: "_ParanasalSinusesRoute",
+  _ParanasalSinusesRoute: "_ParanasalSinusesRoute",
 
   /**
    * ParenteralRoute
    */
-  ParenteralRoute: "_ParenteralRoute",
+  _ParenteralRoute: "_ParenteralRoute",
 
   /**
    * PerianalRoute
    */
-  PerianalRoute: "_PerianalRoute",
+  _PerianalRoute: "_PerianalRoute",
 
   /**
    * PeriarticularRoute
    */
-  PeriarticularRoute: "_PeriarticularRoute",
+  _PeriarticularRoute: "_PeriarticularRoute",
 
   /**
    * PeriduralRoute
    */
-  PeriduralRoute: "_PeriduralRoute",
+  _PeriduralRoute: "_PeriduralRoute",
 
   /**
    * PerinealRoute
    */
-  PerinealRoute: "_PerinealRoute",
+  _PerinealRoute: "_PerinealRoute",
 
   /**
    * PerineuralRoute
    */
-  PerineuralRoute: "_PerineuralRoute",
+  _PerineuralRoute: "_PerineuralRoute",
 
   /**
    * PeriodontalRoute
    */
-  PeriodontalRoute: "_PeriodontalRoute",
+  _PeriodontalRoute: "_PeriodontalRoute",
 
   /**
    * PulmonaryRoute
    */
-  PulmonaryRoute: "_PulmonaryRoute",
+  _PulmonaryRoute: "_PulmonaryRoute",
 
   /**
    * RectalRoute
    */
-  RectalRoute: "_RectalRoute",
+  _RectalRoute: "_RectalRoute",
 
   /**
    * RespiratoryTractRoute
    */
-  RespiratoryTractRoute: "_RespiratoryTractRoute",
+  _RespiratoryTractRoute: "_RespiratoryTractRoute",
 
   /**
    * RetrobulbarRoute
    */
-  RetrobulbarRoute: "_RetrobulbarRoute",
+  _RetrobulbarRoute: "_RetrobulbarRoute",
 
   /**
    * ScalpRoute
    */
-  ScalpRoute: "_ScalpRoute",
+  _ScalpRoute: "_ScalpRoute",
 
   /**
    * SinusUnspecifiedRoute
    */
-  SinusUnspecifiedRoute: "_SinusUnspecifiedRoute",
+  _SinusUnspecifiedRoute: "_SinusUnspecifiedRoute",
 
   /**
    * SkinRoute
    */
-  SkinRoute: "_SkinRoute",
+  _SkinRoute: "_SkinRoute",
 
   /**
    * SoftTissueRoute
    */
-  SoftTissueRoute: "_SoftTissueRoute",
+  _SoftTissueRoute: "_SoftTissueRoute",
 
   /**
    * SubarachnoidRoute
    */
-  SubarachnoidRoute: "_SubarachnoidRoute",
+  _SubarachnoidRoute: "_SubarachnoidRoute",
 
   /**
    * SubconjunctivalRoute
    */
-  SubconjunctivalRoute: "_SubconjunctivalRoute",
+  _SubconjunctivalRoute: "_SubconjunctivalRoute",
 
   /**
    * SubcutaneousRoute
    */
-  SubcutaneousRoute: "_SubcutaneousRoute",
+  _SubcutaneousRoute: "_SubcutaneousRoute",
 
   /**
    * SublesionalRoute
    */
-  SublesionalRoute: "_SublesionalRoute",
+  _SublesionalRoute: "_SublesionalRoute",
 
   /**
    * SublingualRoute
    */
-  SublingualRoute: "_SublingualRoute",
+  _SublingualRoute: "_SublingualRoute",
 
   /**
    * SubmucosalRoute
    */
-  SubmucosalRoute: "_SubmucosalRoute",
+  _SubmucosalRoute: "_SubmucosalRoute",
 
   /**
    * TracheostomyRoute
    */
-  TracheostomyRoute: "_TracheostomyRoute",
+  _TracheostomyRoute: "_TracheostomyRoute",
 
   /**
    * TransmucosalRoute
    */
-  TransmucosalRoute: "_TransmucosalRoute",
+  _TransmucosalRoute: "_TransmucosalRoute",
 
   /**
    * TransplacentalRoute
    */
-  TransplacentalRoute: "_TransplacentalRoute",
+  _TransplacentalRoute: "_TransplacentalRoute",
 
   /**
    * TranstrachealRoute
    */
-  TranstrachealRoute: "_TranstrachealRoute",
+  _TranstrachealRoute: "_TranstrachealRoute",
 
   /**
    * TranstympanicRoute
    */
-  TranstympanicRoute: "_TranstympanicRoute",
+  _TranstympanicRoute: "_TranstympanicRoute",
 
   /**
    * UreteralRoute
    */
-  UreteralRoute: "_UreteralRoute",
+  _UreteralRoute: "_UreteralRoute",
 
   /**
    * UrethralRoute
    */
-  UrethralRoute: "_UrethralRoute",
+  _UrethralRoute: "_UrethralRoute",
 
   /**
    * UrinaryBladderRoute
    */
-  UrinaryBladderRoute: "_UrinaryBladderRoute",
+  _UrinaryBladderRoute: "_UrinaryBladderRoute",
 
   /**
    * UrinaryTractRoute
    */
-  UrinaryTractRoute: "_UrinaryTractRoute",
+  _UrinaryTractRoute: "_UrinaryTractRoute",
 
   /**
    * VaginalRoute
    */
-  VaginalRoute: "_VaginalRoute",
+  _VaginalRoute: "_VaginalRoute",
 
   /**
    * VitreousHumourRoute
    */
-  VitreousHumourRoute: "_VitreousHumourRoute",
+  _VitreousHumourRoute: "_VitreousHumourRoute",
 
   /**
    * DentalRoute
    */
-  DentalRoute: "_DentalRoute",
+  _DentalRoute: "_DentalRoute",
 
   /**
    * RouteByMethod
    */
-  RouteByMethod: "_RouteByMethod",
+  _RouteByMethod: "_RouteByMethod",
 
   /**
    * RouteBySite
    */
-  RouteBySite: "_RouteBySite",
+  _RouteBySite: "_RouteBySite",
 } as const;
 
 /**

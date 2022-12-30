@@ -6,237 +6,237 @@ export const SecurityTrustObservationValueCode = {
   /**
    * security trust observation
    */
-  securitytrustobservation: "SECTRSTOBV",
+  SECTRSTOBV: "SECTRSTOBV",
 
   /**
    * trust accreditation observation
    */
-  trustaccreditationobservation: "TRSTACCRDOBV",
+  TRSTACCRDOBV: "TRSTACCRDOBV",
 
   /**
    * trust agreement observation
    */
-  trustagreementobservation: "TRSTAGREOBV",
+  TRSTAGREOBV: "TRSTAGREOBV",
 
   /**
    * trust certificate observation
    */
-  trustcertificateobservation: "TRSTCERTOBV",
+  TRSTCERTOBV: "TRSTCERTOBV",
 
   /**
    * none supplied 5
    */
-  nonesupplied5: "TRSTFWKOBV",
+  TRSTFWKOBV: "TRSTFWKOBV",
 
   /**
    * trust assurance observation
    */
-  trustassuranceobservation: "TRSTLOAOBV",
+  TRSTLOAOBV: "TRSTLOAOBV",
 
   /**
    * authentication level of assurance value
    */
-  authenticationlevelofassurancevalue: "LOAAN",
+  LOAAN: "LOAAN",
 
   /**
    * low authentication level of assurance
    */
-  lowauthenticationlevelofassurance: "LOAAN1",
+  LOAAN1: "LOAAN1",
 
   /**
    * basic authentication level of assurance
    */
-  basicauthenticationlevelofassurance: "LOAAN2",
+  LOAAN2: "LOAAN2",
 
   /**
    * medium authentication level of assurance
    */
-  mediumauthenticationlevelofassurance: "LOAAN3",
+  LOAAN3: "LOAAN3",
 
   /**
    * high authentication level of assurance
    */
-  highauthenticationlevelofassurance: "LOAAN4",
+  LOAAN4: "LOAAN4",
 
   /**
    * authentication process level of assurance value
    */
-  authenticationprocesslevelofassurancevalue: "LOAAP",
+  LOAAP: "LOAAP",
 
   /**
    * low authentication process level of assurance
    */
-  lowauthenticationprocesslevelofassurance: "LOAAP1",
+  LOAAP1: "LOAAP1",
 
   /**
    * basic authentication process level of assurance
    */
-  basicauthenticationprocesslevelofassurance: "LOAAP2",
+  LOAAP2: "LOAAP2",
 
   /**
    * medium authentication process level of assurance
    */
-  mediumauthenticationprocesslevelofassurance: "LOAAP3",
+  LOAAP3: "LOAAP3",
 
   /**
    * high authentication process level of assurance
    */
-  highauthenticationprocesslevelofassurance: "LOAAP4",
+  LOAAP4: "LOAAP4",
 
   /**
    * assertion level of assurance value
    */
-  assertionlevelofassurancevalue: "LOAAS",
+  LOAAS: "LOAAS",
 
   /**
    * low assertion level of assurance
    */
-  lowassertionlevelofassurance: "LOAAS1",
+  LOAAS1: "LOAAS1",
 
   /**
    * basic assertion level of assurance
    */
-  basicassertionlevelofassurance: "LOAAS2",
+  LOAAS2: "LOAAS2",
 
   /**
    * medium assertion level of assurance
    */
-  mediumassertionlevelofassurance: "LOAAS3",
+  LOAAS3: "LOAAS3",
 
   /**
    * high assertion level of assurance
    */
-  highassertionlevelofassurance: "LOAAS4",
+  LOAAS4: "LOAAS4",
 
   /**
    * token and credential management level of assurance value)
    */
-  tokenandcredentialmanagementlevelofassurancevalue: "LOACM",
+  LOACM: "LOACM",
 
   /**
    * low token and credential management level of assurance
    */
-  lowtokenandcredentialmanagementlevelofassurance: "LOACM1",
+  LOACM1: "LOACM1",
 
   /**
    * basic token and credential management level of assurance
    */
-  basictokenandcredentialmanagementlevelofassurance: "LOACM2",
+  LOACM2: "LOACM2",
 
   /**
    * medium token and credential management level of assurance
    */
-  mediumtokenandcredentialmanagementlevelofassurance: "LOACM3",
+  LOACM3: "LOACM3",
 
   /**
    * high token and credential management level of assurance
    */
-  hightokenandcredentialmanagementlevelofassurance: "LOACM4",
+  LOACM4: "LOACM4",
 
   /**
    * identity proofing level of assurance
    */
-  identityproofinglevelofassurance: "LOAID",
+  LOAID: "LOAID",
 
   /**
    * low identity proofing level of assurance
    */
-  lowidentityproofinglevelofassurance: "LOAID1",
+  LOAID1: "LOAID1",
 
   /**
    * basic identity proofing level of assurance
    */
-  basicidentityproofinglevelofassurance: "LOAID2",
+  LOAID2: "LOAID2",
 
   /**
    * medium identity proofing level of assurance
    */
-  mediumidentityproofinglevelofassurance: "LOAID3",
+  LOAID3: "LOAID3",
 
   /**
    * high identity proofing level of assurance
    */
-  highidentityproofinglevelofassurance: "LOAID4",
+  LOAID4: "LOAID4",
 
   /**
    * non-repudiation level of assurance value
    */
-  nonrepudiationlevelofassurancevalue: "LOANR",
+  LOANR: "LOANR",
 
   /**
    * low non-repudiation level of assurance
    */
-  lownonrepudiationlevelofassurance: "LOANR1",
+  LOANR1: "LOANR1",
 
   /**
    * basic non-repudiation level of assurance
    */
-  basicnonrepudiationlevelofassurance: "LOANR2",
+  LOANR2: "LOANR2",
 
   /**
    * medium non-repudiation level of assurance
    */
-  mediumnonrepudiationlevelofassurance: "LOANR3",
+  LOANR3: "LOANR3",
 
   /**
    * high non-repudiation level of assurance
    */
-  highnonrepudiationlevelofassurance: "LOANR4",
+  LOANR4: "LOANR4",
 
   /**
    * remote access level of assurance value
    */
-  remoteaccesslevelofassurancevalue: "LOARA",
+  LOARA: "LOARA",
 
   /**
    * low remote access level of assurance
    */
-  lowremoteaccesslevelofassurance: "LOARA1",
+  LOARA1: "LOARA1",
 
   /**
    * basic remote access level of assurance
    */
-  basicremoteaccesslevelofassurance: "LOARA2",
+  LOARA2: "LOARA2",
 
   /**
    * medium remote access level of assurance
    */
-  mediumremoteaccesslevelofassurance: "LOARA3",
+  LOARA3: "LOARA3",
 
   /**
    * high remote access level of assurance
    */
-  highremoteaccesslevelofassurance: "LOARA4",
+  LOARA4: "LOARA4",
 
   /**
    * token level of assurance value
    */
-  tokenlevelofassurancevalue: "LOATK",
+  LOATK: "LOATK",
 
   /**
    * low token level of assurance
    */
-  lowtokenlevelofassurance: "LOATK1",
+  LOATK1: "LOATK1",
 
   /**
    * basic token level of assurance
    */
-  basictokenlevelofassurance: "LOATK2",
+  LOATK2: "LOATK2",
 
   /**
    * medium token level of assurance
    */
-  mediumtokenlevelofassurance: "LOATK3",
+  LOATK3: "LOATK3",
 
   /**
    * high token level of assurance
    */
-  hightokenlevelofassurance: "LOATK4",
+  LOATK4: "LOATK4",
 
   /**
    * none supplied 6
    */
-  nonesupplied6: "TRSTMECOBV",
+  TRSTMECOBV: "TRSTMECOBV",
 } as const;
 
 /**

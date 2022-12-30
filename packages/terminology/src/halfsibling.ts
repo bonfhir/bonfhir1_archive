@@ -6,17 +6,17 @@ export const HalfSiblingCode = {
   /**
    * half-sibling
    */
-  halfsibling: "HSIB",
+  HSIB: "HSIB",
 
   /**
    * half-brother
    */
-  halfbrother: "HBRO",
+  HBRO: "HBRO",
 
   /**
    * half-sister
    */
-  halfsister: "HSIS",
+  HSIS: "HSIS",
 } as const;
 
 /**

@@ -6,27 +6,27 @@ export const XRoleClassPayeePolicyRelationshipCode = {
   /**
    * covered party
    */
-  coveredparty: "COVPTY",
+  COVPTY: "COVPTY",
 
   /**
    * guarantor
    */
-  guarantor: "GUAR",
+  GUAR: "GUAR",
 
   /**
    * policy holder
    */
-  policyholder: "POLHOLD",
+  POLHOLD: "POLHOLD",
 
   /**
    * healthcare provider
    */
-  healthcareprovider: "PROV",
+  PROV: "PROV",
 
   /**
    * personal relationship
    */
-  personalrelationship: "PRS",
+  PRS: "PRS",
 } as const;
 
 /**

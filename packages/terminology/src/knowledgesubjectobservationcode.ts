@@ -6,7 +6,7 @@ export const KnowledgeSubjectObservationCodeCode = {
   /**
    * knowledge subject
    */
-  knowledgesubject: "KSUBJ",
+  KSUBJ: "KSUBJ",
 } as const;
 
 /**

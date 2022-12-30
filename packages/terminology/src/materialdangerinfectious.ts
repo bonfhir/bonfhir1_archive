@@ -6,12 +6,12 @@ export const MaterialDangerInfectiousCode = {
   /**
    * infectious
    */
-  infectious: "INF",
+  INF: "INF",
 
   /**
    * biohazard
    */
-  biohazard: "BHZ",
+  BHZ: "BHZ",
 } as const;
 
 /**

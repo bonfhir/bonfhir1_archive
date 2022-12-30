@@ -6,307 +6,307 @@ export const ParticipationTypeCode = {
   /**
    * Participation
    */
-  Participation: "PART",
+  PART: "PART",
 
   /**
    * ParticipationAncillary
    */
-  ParticipationAncillary: "_ParticipationAncillary",
+  _ParticipationAncillary: "_ParticipationAncillary",
 
   /**
    * admitter
    */
-  admitter: "ADM",
+  ADM: "ADM",
 
   /**
    * attender
    */
-  attender: "ATND",
+  ATND: "ATND",
 
   /**
    * callback contact
    */
-  callbackcontact: "CALLBCK",
+  CALLBCK: "CALLBCK",
 
   /**
    * consultant
    */
-  consultant: "CON",
+  CON: "CON",
 
   /**
    * discharger
    */
-  discharger: "DIS",
+  DIS: "DIS",
 
   /**
    * escort
    */
-  escort: "ESC",
+  ESC: "ESC",
 
   /**
    * referrer
    */
-  referrer: "REF",
+  REF: "REF",
 
   /**
    * ParticipationInformationGenerator
    */
-  ParticipationInformationGenerator: "_ParticipationInformationGenerator",
+  _ParticipationInformationGenerator: "_ParticipationInformationGenerator",
 
   /**
    * author (originator)
    */
-  authororiginator: "AUT",
+  AUT: "AUT",
 
   /**
    * informant
    */
-  informant: "INF",
+  INF: "INF",
 
   /**
    * Transcriber
    */
-  Transcriber: "TRANS",
+  TRANS: "TRANS",
 
   /**
    * data entry person
    */
-  dataentryperson: "ENT",
+  ENT: "ENT",
 
   /**
    * witness
    */
-  witness: "WIT",
+  WIT: "WIT",
 
   /**
    * custodian
    */
-  custodian: "CST",
+  CST: "CST",
 
   /**
    * direct target
    */
-  directtarget: "DIR",
+  DIR: "DIR",
 
   /**
    * analyte
    */
-  analyte: "ALY",
+  ALY: "ALY",
 
   /**
    * baby
    */
-  baby: "BBY",
+  BBY: "BBY",
 
   /**
    * catalyst
    */
-  catalyst: "CAT",
+  CAT: "CAT",
 
   /**
    * consumable
    */
-  consumable: "CSM",
+  CSM: "CSM",
 
   /**
    * therapeutic agent
    */
-  therapeuticagent: "TPA",
+  TPA: "TPA",
 
   /**
    * device
    */
-  device: "DEV",
+  DEV: "DEV",
 
   /**
    * non-reuseable device
    */
-  nonreuseabledevice: "NRD",
+  NRD: "NRD",
 
   /**
    * reusable device
    */
-  reusabledevice: "RDV",
+  RDV: "RDV",
 
   /**
    * donor
    */
-  donor: "DON",
+  DON: "DON",
 
   /**
    * ExposureAgent
    */
-  ExposureAgent: "EXPAGNT",
+  EXPAGNT: "EXPAGNT",
 
   /**
    * ExposureParticipation
    */
-  ExposureParticipation: "EXPART",
+  EXPART: "EXPART",
 
   /**
    * ExposureTarget
    */
-  ExposureTarget: "EXPTRGT",
+  EXPTRGT: "EXPTRGT",
 
   /**
    * ExposureSource
    */
-  ExposureSource: "EXSRC",
+  EXSRC: "EXSRC",
 
   /**
    * product
    */
-  product: "PRD",
+  PRD: "PRD",
 
   /**
    * subject
    */
-  subject: "SBJ",
+  SBJ: "SBJ",
 
   /**
    * specimen
    */
-  specimen: "SPC",
+  SPC: "SPC",
 
   /**
    * indirect target
    */
-  indirecttarget: "IND",
+  IND: "IND",
 
   /**
    * beneficiary
    */
-  beneficiary: "BEN",
+  BEN: "BEN",
 
   /**
    * causative agent
    */
-  causativeagent: "CAGNT",
+  CAGNT: "CAGNT",
 
   /**
    * coverage target
    */
-  coveragetarget: "COV",
+  COV: "COV",
 
   /**
    * guarantor party
    */
-  guarantorparty: "GUAR",
+  GUAR: "GUAR",
 
   /**
    * holder
    */
-  holder: "HLD",
+  HLD: "HLD",
 
   /**
    * record target
    */
-  recordtarget: "RCT",
+  RCT: "RCT",
 
   /**
    * receiver
    */
-  receiver: "RCV",
+  RCV: "RCV",
 
   /**
    * information recipient
    */
-  informationrecipient: "IRCP",
+  IRCP: "IRCP",
 
   /**
    * ugent notification contact
    */
-  ugentnotificationcontact: "NOT",
+  NOT: "NOT",
 
   /**
    * primary information recipient
    */
-  primaryinformationrecipient: "PRCP",
+  PRCP: "PRCP",
 
   /**
    * Referred By
    */
-  ReferredBy: "REFB",
+  REFB: "REFB",
 
   /**
    * Referred to
    */
-  Referredto: "REFT",
+  REFT: "REFT",
 
   /**
    * tracker
    */
-  tracker: "TRC",
+  TRC: "TRC",
 
   /**
    * location
    */
-  location: "LOC",
+  LOC: "LOC",
 
   /**
    * destination
    */
-  destination: "DST",
+  DST: "DST",
 
   /**
    * entry location
    */
-  entrylocation: "ELOC",
+  ELOC: "ELOC",
 
   /**
    * origin
    */
-  origin: "ORG",
+  ORG: "ORG",
 
   /**
    * remote
    */
-  remote: "RML",
+  RML: "RML",
 
   /**
    * via
    */
-  via: "VIA",
+  VIA: "VIA",
 
   /**
    * performer
    */
-  performer: "PRF",
+  PRF: "PRF",
 
   /**
    * distributor
    */
-  distributor: "DIST",
+  DIST: "DIST",
 
   /**
    * primary performer
    */
-  primaryperformer: "PPRF",
+  PPRF: "PPRF",
 
   /**
    * secondary performer
    */
-  secondaryperformer: "SPRF",
+  SPRF: "SPRF",
 
   /**
    * responsible party
    */
-  responsibleparty: "RESP",
+  RESP: "RESP",
 
   /**
    * verifier
    */
-  verifier: "VRF",
+  VRF: "VRF",
 
   /**
    * authenticator
    */
-  authenticator: "AUTHEN",
+  AUTHEN: "AUTHEN",
 
   /**
    * legal authenticator
    */
-  legalauthenticator: "LA",
+  LA: "LA",
 } as const;
 
 /**

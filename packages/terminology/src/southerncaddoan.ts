@@ -6,7 +6,7 @@ export const SouthernCaddoanCode = {
   /**
    * Caddo
    */
-  Caddo: "x-CAD",
+  "x-CAD": "x-CAD",
 } as const;
 
 /**

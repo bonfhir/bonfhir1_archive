@@ -6,62 +6,62 @@ export const TelecommunicationAddressUseCode = {
   /**
    * answering service
    */
-  answeringservice: "AS",
+  AS: "AS",
 
   /**
    * bad address
    */
-  badaddress: "BAD",
+  BAD: "BAD",
 
   /**
    * direct
    */
-  direct: "DIR",
+  DIR: "DIR",
 
   /**
    * emergency contact
    */
-  emergencycontact: "EC",
+  EC: "EC",
 
   /**
    * home address
    */
-  homeaddress: "H",
+  H: "H",
 
   /**
    * primary home
    */
-  primaryhome: "HP",
+  HP: "HP",
 
   /**
    * vacation home
    */
-  vacationhome: "HV",
+  HV: "HV",
 
   /**
    * mobile contact)
    */
-  mobilecontact: "MC",
+  MC: "MC",
 
   /**
    * pager
    */
-  pager: "PG",
+  PG: "PG",
 
   /**
    * public
    */
-  public: "PUB",
+  PUB: "PUB",
 
   /**
    * temporary address
    */
-  temporaryaddress: "TMP",
+  TMP: "TMP",
 
   /**
    * work place
    */
-  workplace: "WP",
+  WP: "WP",
 } as const;
 
 /**

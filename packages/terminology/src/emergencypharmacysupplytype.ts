@@ -6,12 +6,12 @@ export const EmergencyPharmacySupplyTypeCode = {
   /**
    * Emergency Supply
    */
-  EmergencySupply: "EM",
+  EM: "EM",
 
   /**
    * Script Owing
    */
-  ScriptOwing: "SO",
+  SO: "SO",
 } as const;
 
 /**

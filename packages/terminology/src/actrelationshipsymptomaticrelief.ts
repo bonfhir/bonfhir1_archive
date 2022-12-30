@@ -6,7 +6,7 @@ export const ActRelationshipSymptomaticReliefCode = {
   /**
    * symptomatic relief
    */
-  symptomaticrelief: "SYMP",
+  SYMP: "SYMP",
 } as const;
 
 /**

@@ -6,12 +6,12 @@ export const ChoiceListOrientationCode = {
   /**
    * Horizontal
    */
-  Horizontal: "horizontal",
+  horizontal: "horizontal",
 
   /**
    * Vertical
    */
-  Vertical: "vertical",
+  vertical: "vertical",
 } as const;
 
 /**

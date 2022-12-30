@@ -6,17 +6,17 @@ export const ParticipationTargetDeviceCode = {
   /**
    * device
    */
-  device: "DEV",
+  DEV: "DEV",
 
   /**
    * non-reuseable device
    */
-  nonreuseabledevice: "NRD",
+  NRD: "NRD",
 
   /**
    * reusable device
    */
-  reusabledevice: "RDV",
+  RDV: "RDV",
 } as const;
 
 /**

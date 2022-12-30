@@ -8,7 +8,7 @@ export const ActMoodDefinitionCode = {
   /**
    * definition
    */
-  definition: "DEF",
+  DEF: "DEF",
 } as const;
 
 /**

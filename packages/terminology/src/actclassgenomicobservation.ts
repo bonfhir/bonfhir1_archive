@@ -6,42 +6,42 @@ export const ActClassGenomicObservationCode = {
   /**
    * genomic observation
    */
-  genomicobservation: "GEN",
+  GEN: "GEN",
 
   /**
    * determinant peptide
    */
-  determinantpeptide: "DETPOL",
+  DETPOL: "DETPOL",
 
   /**
    * expression level
    */
-  expressionlevel: "EXP",
+  EXP: "EXP",
 
   /**
    * locus
    */
-  locus: "LOC",
+  LOC: "LOC",
 
   /**
    * phenotype
    */
-  phenotype: "PHN",
+  PHN: "PHN",
 
   /**
    * polypeptide
    */
-  polypeptide: "POL",
+  POL: "POL",
 
   /**
    * bio sequence
    */
-  biosequence: "SEQ",
+  SEQ: "SEQ",
 
   /**
    * bio sequence variation
    */
-  biosequencevariation: "SEQVAR",
+  SEQVAR: "SEQVAR",
 } as const;
 
 /**

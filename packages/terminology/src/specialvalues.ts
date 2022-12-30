@@ -16,22 +16,22 @@ export const SpecialValuesCode = {
   /**
    * Trace Amount Detected
    */
-  TraceAmountDetected: "trace",
+  trace: "trace",
 
   /**
    * Sufficient Quantity
    */
-  SufficientQuantity: "sufficient",
+  sufficient: "sufficient",
 
   /**
    * Value Withdrawn
    */
-  ValueWithdrawn: "withdrawn",
+  withdrawn: "withdrawn",
 
   /**
    * Nil Known
    */
-  NilKnown: "nil-known",
+  "nil-known": "nil-known",
 } as const;
 
 /**

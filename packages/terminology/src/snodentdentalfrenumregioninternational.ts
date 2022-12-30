@@ -12,22 +12,22 @@ export const SnodentDentalFrenumRegionInternationalCode = {
   /**
    * Lower labial frenum
    */
-  Lowerlabialfrenum: "209615D",
+  "209615D": "209615D",
 
   /**
    * Upper labial frenum
    */
-  Upperlabialfrenum: "209620D",
+  "209620D": "209620D",
 
   /**
    * Upper buccal frenum
    */
-  Upperbuccalfrenum: "209631D",
+  "209631D": "209631D",
 
   /**
    * Lower buccal frenum
    */
-  Lowerbuccalfrenum: "209645D",
+  "209645D": "209645D",
 } as const;
 
 /**

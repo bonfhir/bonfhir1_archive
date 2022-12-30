@@ -6,7 +6,7 @@ export const ChewCode = {
   /**
    * Chew, oral
    */
-  Cheworal: "CHEW",
+  CHEW: "CHEW",
 } as const;
 
 /**

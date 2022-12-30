@@ -6,12 +6,12 @@ export const RaceAmericanIndianCupenoCode = {
   /**
    * Cupeno
    */
-  Cupeno: "1211-2",
+  "1211-2": "1211-2",
 
   /**
    * Agua Caliente
    */
-  AguaCaliente: "1212-0",
+  "1212-0": "1212-0",
 } as const;
 
 /**

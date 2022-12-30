@@ -6,12 +6,12 @@ export const SupplyRequestReasonCode = {
   /**
    * Patient Care
    */
-  PatientCare: "patient-care",
+  "patient-care": "patient-care",
 
   /**
    * Ward Stock
    */
-  WardStock: "ward-stock",
+  "ward-stock": "ward-stock",
 } as const;
 
 /**

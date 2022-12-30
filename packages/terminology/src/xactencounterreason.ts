@@ -8,12 +8,12 @@ export const XActEncounterReasonCode = {
   /**
    * Medical Necessity
    */
-  MedicalNecessity: "MEDNEC",
+  MEDNEC: "MEDNEC",
 
   /**
    * Patient request
    */
-  Patientrequest: "PAT",
+  PAT: "PAT",
 } as const;
 
 /**

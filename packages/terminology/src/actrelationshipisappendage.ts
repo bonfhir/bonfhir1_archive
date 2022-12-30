@@ -6,7 +6,7 @@ export const ActRelationshipIsAppendageCode = {
   /**
    * is appendage
    */
-  isappendage: "APND",
+  APND: "APND",
 } as const;
 
 /**

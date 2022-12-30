@@ -6,12 +6,12 @@ export const Hl7VSProcessingTypeCode = {
   /**
    * Regular Production
    */
-  RegularProduction: "P",
+  P: "P",
 
   /**
    * Evaluation
    */
-  Evaluation: "E",
+  E: "E",
 } as const;
 
 /**

@@ -6,17 +6,17 @@ export const ObservationEnvironmentalIntoleranceTypeCode = {
   /**
    * Environmental Intolerance
    */
-  EnvironmentalIntolerance: "EINT",
+  EINT: "EINT",
 
   /**
    * Environmental Allergy
    */
-  EnvironmentalAllergy: "EALG",
+  EALG: "EALG",
 
   /**
    * Environmental Non-Allergy Intolerance
    */
-  EnvironmentalNonAllergyIntolerance: "ENAINT",
+  ENAINT: "ENAINT",
 } as const;
 
 /**

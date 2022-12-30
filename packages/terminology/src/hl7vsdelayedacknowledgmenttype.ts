@@ -6,12 +6,12 @@ export const Hl7VSDelayedAcknowledgmentTypeCode = {
   /**
    * Message received, stored for later processing
    */
-  Messagereceivedstoredforlaterprocessing: "D",
+  D: "D",
 
   /**
    * acknowledgment after processing
    */
-  acknowledgmentafterprocessing: "F",
+  F: "F",
 } as const;
 
 /**

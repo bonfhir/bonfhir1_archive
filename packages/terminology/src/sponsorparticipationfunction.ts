@@ -6,17 +6,17 @@ export const SponsorParticipationFunctionCode = {
   /**
    * SponsorParticipationFunction
    */
-  SponsorParticipationFunction: "_SponsorParticipationFunction",
+  _SponsorParticipationFunction: "_SponsorParticipationFunction",
 
   /**
    * fully insured
    */
-  fullyinsured: "FULINRD",
+  FULINRD: "FULINRD",
 
   /**
    * self insured
    */
-  selfinsured: "SELFINRD",
+  SELFINRD: "SELFINRD",
 } as const;
 
 /**

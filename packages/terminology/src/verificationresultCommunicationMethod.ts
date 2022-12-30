@@ -6,22 +6,22 @@ export const VerificationResult_communication_methodCode = {
   /**
    * Manual
    */
-  Manual: "manual",
+  manual: "manual",
 
   /**
    * Portal
    */
-  Portal: "portal",
+  portal: "portal",
 
   /**
    * Pull
    */
-  Pull: "pull",
+  pull: "pull",
 
   /**
    * Push
    */
-  Push: "push",
+  push: "push",
 } as const;
 
 /**

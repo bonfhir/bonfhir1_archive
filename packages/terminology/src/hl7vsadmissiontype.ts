@@ -6,37 +6,37 @@ export const Hl7VSAdmissionTypeCode = {
   /**
    * Accident
    */
-  Accident: "A",
+  A: "A",
 
   /**
    * Emergency
    */
-  Emergency: "E",
+  E: "E",
 
   /**
    * Labor and Delivery
    */
-  LaborandDelivery: "L",
+  L: "L",
 
   /**
    * Routine
    */
-  Routine: "R",
+  R: "R",
 
   /**
    * Newborn (Birth in healthcare facility)
    */
-  NewbornBirthinhealthcarefacility: "N",
+  N: "N",
 
   /**
    * Urgent
    */
-  Urgent: "U",
+  U: "U",
 
   /**
    * Elective
    */
-  Elective: "C",
+  C: "C",
 } as const;
 
 /**

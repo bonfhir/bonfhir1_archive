@@ -6,12 +6,12 @@ export const KitEntityTypeCode = {
   /**
    * Kit
    */
-  Kit: "KIT",
+  KIT: "KIT",
 
   /**
    * System
    */
-  System: "SYSTM",
+  SYSTM: "SYSTM",
 } as const;
 
 /**

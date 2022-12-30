@@ -6,7 +6,7 @@ export const EntityClassPersonCode = {
   /**
    * person
    */
-  person: "PSN",
+  PSN: "PSN",
 } as const;
 
 /**

@@ -6,17 +6,17 @@ export const Hl7VSDrgProcedureRelevanceCode = {
   /**
    * Neither operation relevant nor non-operation relevant procedure
    */
-  Neitheroperationrelevantnornonoperationrelevantprocedure: "0",
+  "0": "0",
 
   /**
    * Operation relevant procedure
    */
-  Operationrelevantprocedure: "1",
+  "1": "1",
 
   /**
    * Non-operation relevant procedure
    */
-  Nonoperationrelevantprocedure: "2",
+  "2": "2",
 } as const;
 
 /**

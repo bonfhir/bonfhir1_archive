@@ -6,52 +6,52 @@ export const CoverageCopayTypeCodesCode = {
   /**
    * GP Office Visit
    */
-  GPOfficeVisit: "gpvisit",
+  gpvisit: "gpvisit",
 
   /**
    * Specialist Office Visit
    */
-  SpecialistOfficeVisit: "spvisit",
+  spvisit: "spvisit",
 
   /**
    * Emergency
    */
-  Emergency: "emergency",
+  emergency: "emergency",
 
   /**
    * Inpatient Hospital
    */
-  InpatientHospital: "inpthosp",
+  inpthosp: "inpthosp",
 
   /**
    * Tele-visit
    */
-  Televisit: "televisit",
+  televisit: "televisit",
 
   /**
    * Urgent Care
    */
-  UrgentCare: "urgentcare",
+  urgentcare: "urgentcare",
 
   /**
    * Copay Percentage
    */
-  CopayPercentage: "copaypct",
+  copaypct: "copaypct",
 
   /**
    * Copay Amount
    */
-  CopayAmount: "copay",
+  copay: "copay",
 
   /**
    * Deductible
    */
-  Deductible: "deductible",
+  deductible: "deductible",
 
   /**
    * Maximum out of pocket
    */
-  Maximumoutofpocket: "maxoutofpocket",
+  maxoutofpocket: "maxoutofpocket",
 } as const;
 
 /**

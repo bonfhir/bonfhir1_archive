@@ -6,12 +6,12 @@ export const XSubstitutionConditionNoneOrUnconditionalCode = {
   /**
    * No substitution
    */
-  Nosubstitution: "NOSUB",
+  NOSUB: "NOSUB",
 
   /**
    * Unconditional
    */
-  Unconditional: "UNCOND",
+  UNCOND: "UNCOND",
 } as const;
 
 /**

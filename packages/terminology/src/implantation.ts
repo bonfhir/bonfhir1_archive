@@ -6,17 +6,17 @@ export const ImplantationCode = {
   /**
    * Implantation, intradermal
    */
-  Implantationintradermal: "IDIMPLNT",
+  IDIMPLNT: "IDIMPLNT",
 
   /**
    * Implantation, intravitreal
    */
-  Implantationintravitreal: "IVITIMPLNT",
+  IVITIMPLNT: "IVITIMPLNT",
 
   /**
    * Implantation, subcutaneous
    */
-  Implantationsubcutaneous: "SQIMPLNT",
+  SQIMPLNT: "SQIMPLNT",
 } as const;
 
 /**

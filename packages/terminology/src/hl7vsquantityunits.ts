@@ -6,27 +6,27 @@ export const Hl7VSQuantityUnitsCode = {
   /**
    * Units
    */
-  Units: "FL",
+  FL: "FL",
 
   /**
    * Days
    */
-  Days: "DY",
+  DY: "DY",
 
   /**
    * Hours
    */
-  Hours: "HS",
+  HS: "HS",
 
   /**
    * Month
    */
-  Month: "MN",
+  MN: "MN",
 
   /**
    * Years
    */
-  Years: "YY",
+  YY: "YY",
 } as const;
 
 /**

@@ -6,117 +6,118 @@ export const ActCoverageReasonCode = {
   /**
    * ActCoverageReason
    */
-  ActCoverageReason: "_ActCoverageReason",
+  _ActCoverageReason: "_ActCoverageReason",
 
   /**
    * EligibilityActReasonCode
    */
-  EligibilityActReasonCode: "_EligibilityActReasonCode",
+  _EligibilityActReasonCode: "_EligibilityActReasonCode",
 
   /**
    * ActIneligibilityReason
    */
-  ActIneligibilityReason: "_ActIneligibilityReason",
+  _ActIneligibilityReason: "_ActIneligibilityReason",
 
   /**
    * coverage suspended
    */
-  coveragesuspended: "COVSUS",
+  COVSUS: "COVSUS",
 
   /**
    * deceased
    */
-  deceased: "DECSD",
+  DECSD: "DECSD",
 
   /**
    * registered in error
    */
-  registeredinerror: "REGERR",
+  REGERR: "REGERR",
 
   /**
    * CoverageEligibilityReason
    */
-  CoverageEligibilityReason: "_CoverageEligibilityReason",
+  _CoverageEligibilityReason: "_CoverageEligibilityReason",
 
   /**
    * age eligibility
    */
-  ageeligibility: "AGE",
+  AGE: "AGE",
 
   /**
    * crime victim
    */
-  crimevictim: "CRIME",
+  CRIME: "CRIME",
 
   /**
    * disability
    */
-  disability: "DIS",
+  DIS: "DIS",
 
   /**
    * employment benefit
    */
-  employmentbenefit: "EMPLOY",
+  EMPLOY: "EMPLOY",
 
   /**
    * financial eligibility
    */
-  financialeligibility: "FINAN",
+  FINAN: "FINAN",
 
   /**
    * health status
    */
-  healthstatus: "HEALTH",
+  HEALTH: "HEALTH",
 
   /**
    * multiple criteria eligibility
    */
-  multiplecriteriaeligibility: "MULTI",
+  MULTI: "MULTI",
 
   /**
    * property and casualty condition
    */
-  propertyandcasualtycondition: "PNC",
+  PNC: "PNC",
 
   /**
    * statutory eligibility
    */
-  statutoryeligibility: "STATUTORY",
+  STATUTORY: "STATUTORY",
 
   /**
    * motor vehicle accident victim
    */
-  motorvehicleaccidentvictim: "VEHIC",
+  VEHIC: "VEHIC",
 
   /**
    * work related
    */
-  workrelated: "WORK",
+  WORK: "WORK",
 
   /**
    * ActCoverageProviderReason
    */
-  ActCoverageProviderReason: "_ActCoverageProviderReason",
+  _ActCoverageProviderReason: "_ActCoverageProviderReason",
 
   /**
    * ActCoverageServiceReason
    */
-  ActCoverageServiceReason: "_ActCoverageServiceReason",
+  _ActCoverageServiceReason: "_ActCoverageServiceReason",
 
   /**
    * CoverageExclusionReason
    */
-  CoverageExclusionReason: "_CoverageExclusionReason",
+  _CoverageExclusionReason: "_CoverageExclusionReason",
 
   /**
    * CoverageFinancialParticipationReason
    */
-  CoverageFinancialParticipationReason: "_CoverageFinancialParticipationReason",
+  _CoverageFinancialParticipationReason:
+    "_CoverageFinancialParticipationReason",
 
   /**
    * CoverageLimitationReason
    */
-  CoverageLimitationReason: "_CoverageLimitationReason",
+  _CoverageLimitationReason: "_CoverageLimitationReason",
 } as const;
 
 /**

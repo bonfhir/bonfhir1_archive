@@ -6,7 +6,7 @@ export const PerineuralRouteCode = {
   /**
    * Injection, perineural
    */
-  Injectionperineural: "PNINJ",
+  PNINJ: "PNINJ",
 } as const;
 
 /**

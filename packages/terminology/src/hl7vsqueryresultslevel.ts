@@ -6,22 +6,22 @@ export const Hl7VSQueryResultsLevelCode = {
   /**
    * Order plus order status
    */
-  Orderplusorderstatus: "O",
+  O: "O",
 
   /**
    * Results without bulk text
    */
-  Resultswithoutbulktext: "R",
+  R: "R",
 
   /**
    * Status only
    */
-  Statusonly: "S",
+  S: "S",
 
   /**
    * Full results
    */
-  Fullresults: "T",
+  T: "T",
 } as const;
 
 /**

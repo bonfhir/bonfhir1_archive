@@ -6,12 +6,12 @@ export const Hl7VSRxComponentTypeCode = {
   /**
    * Base
    */
-  Base: "B",
+  B: "B",
 
   /**
    * Additive
    */
-  Additive: "A",
+  A: "A",
 } as const;
 
 /**

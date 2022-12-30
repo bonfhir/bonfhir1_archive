@@ -6,62 +6,62 @@ export const Hl7VSProductionClassCodeCode = {
   /**
    * Breeding/genetic stock
    */
-  Breedinggeneticstock: "BR",
+  BR: "BR",
 
   /**
    * Dairy
    */
-  Dairy: "DA",
+  DA: "DA",
 
   /**
    * Draft
    */
-  Draft: "DR",
+  DR: "DR",
 
   /**
    * Dual Purpose
    */
-  DualPurpose: "DU",
+  DU: "DU",
 
   /**
    * Layer, Includes Multiplier flocks
    */
-  LayerIncludesMultiplierflocks: "LY",
+  LY: "LY",
 
   /**
    * Meat
    */
-  Meat: "MT",
+  MT: "MT",
 
   /**
    * Other
    */
-  Other: "OT",
+  OT: "OT",
 
   /**
    * Pleasure
    */
-  Pleasure: "PL",
+  PL: "PL",
 
   /**
    * Racing
    */
-  Racing: "RA",
+  RA: "RA",
 
   /**
    * Show
    */
-  Show: "SH",
+  SH: "SH",
 
   /**
    * Not Applicable
    */
-  NotApplicable: "NA",
+  NA: "NA",
 
   /**
    * Unknown
    */
-  Unknown: "U",
+  U: "U",
 } as const;
 
 /**

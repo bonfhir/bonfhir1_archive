@@ -6,32 +6,32 @@ export const Hl7VSQueryResponseStatusCode = {
   /**
    * Data found, no errors (this is the default)
    */
-  Datafoundnoerrorsthisisthedefault: "OK",
+  OK: "OK",
 
   /**
    * No data found, no errors
    */
-  Nodatafoundnoerrors: "NF",
+  NF: "NF",
 
   /**
    * Application error
    */
-  Applicationerror: "AE",
+  AE: "AE",
 
   /**
    * Application reject
    */
-  Applicationreject: "AR",
+  AR: "AR",
 
   /**
    * Too much data found
    */
-  Toomuchdatafound: "TM",
+  TM: "TM",
 
   /**
    * Protected data
    */
-  Protecteddata: "PD",
+  PD: "PD",
 } as const;
 
 /**

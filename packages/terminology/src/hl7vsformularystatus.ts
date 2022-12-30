@@ -6,22 +6,22 @@ export const Hl7VSFormularyStatusCode = {
   /**
    * Pharmaceutical substance is in the formulary
    */
-  Pharmaceuticalsubstanceisintheformulary: "Y",
+  Y: "Y",
 
   /**
    * Pharmaceutical substance is NOT in the formulary
    */
-  PharmaceuticalsubstanceisNOTintheformulary: "N",
+  N: "N",
 
   /**
    * Pharmaceutical substance is in the formulary, but restrictions apply
    */
-  Pharmaceuticalsubstanceisintheformularybutrestrictionsapply: "R",
+  R: "R",
 
   /**
    * Pharmaceutical substance is in the formulary, but guidelines apply
    */
-  Pharmaceuticalsubstanceisintheformularybutguidelinesapply: "G",
+  G: "G",
 } as const;
 
 /**

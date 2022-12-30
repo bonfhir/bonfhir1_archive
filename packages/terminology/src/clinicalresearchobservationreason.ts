@@ -8,17 +8,17 @@ export const ClinicalResearchObservationReasonCode = {
   /**
    * non-protocol
    */
-  nonprotocol: "NPT",
+  NPT: "NPT",
 
   /**
    * per protocol
    */
-  perprotocol: "PPT",
+  PPT: "PPT",
 
   /**
    * per definition
    */
-  perdefinition: "UPT",
+  UPT: "UPT",
 } as const;
 
 /**

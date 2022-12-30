@@ -6,97 +6,97 @@ export const ActDietCodeCode = {
   /**
    * Diet
    */
-  Diet: "DIET",
+  DIET: "DIET",
 
   /**
    * breikost (GE)
    */
-  breikostGE: "BR",
+  BR: "BR",
 
   /**
    * diabetes mellitus diet
    */
-  diabetesmellitusdiet: "DM",
+  DM: "DM",
 
   /**
    * fasting
    */
-  fasting: "FAST",
+  FAST: "FAST",
 
   /**
    * formula diet
    */
-  formuladiet: "FORMULA",
+  FORMULA: "FORMULA",
 
   /**
    * gluten free
    */
-  glutenfree: "GF",
+  GF: "GF",
 
   /**
    * low fat
    */
-  lowfat: "LF",
+  LF: "LF",
 
   /**
    * low protein
    */
-  lowprotein: "LP",
+  LP: "LP",
 
   /**
    * liquid
    */
-  liquid: "LQ",
+  LQ: "LQ",
 
   /**
    * low sodium
    */
-  lowsodium: "LS",
+  LS: "LS",
 
   /**
    * normal diet
    */
-  normaldiet: "N",
+  N: "N",
 
   /**
    * no fat
    */
-  nofat: "NF",
+  NF: "NF",
 
   /**
    * phenylalanine free
    */
-  phenylalaninefree: "PAF",
+  PAF: "PAF",
 
   /**
    * parenteral
    */
-  parenteral: "PAR",
+  PAR: "PAR",
 
   /**
    * reduction diet
    */
-  reductiondiet: "RD",
+  RD: "RD",
 
   /**
    * schonkost (GE)
    */
-  schonkostGE: "SCH",
+  SCH: "SCH",
 
   /**
    * nutritional supplement
    */
-  nutritionalsupplement: "SUPPLEMENT",
+  SUPPLEMENT: "SUPPLEMENT",
 
   /**
    * tea only
    */
-  teaonly: "T",
+  T: "T",
 
   /**
    * low valin, leucin, isoleucin
    */
-  lowvalinleucinisoleucin: "VLI",
+  VLI: "VLI",
 } as const;
 
 /**

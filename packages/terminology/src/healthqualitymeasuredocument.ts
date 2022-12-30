@@ -6,7 +6,7 @@ export const HealthQualityMeasureDocumentCode = {
   /**
    * Health Quality Measure document
    */
-  HealthQualityMeasuredocument: "57024-2",
+  "57024-2": "57024-2",
 } as const;
 
 /**

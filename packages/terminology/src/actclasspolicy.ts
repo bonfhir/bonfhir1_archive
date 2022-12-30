@@ -10,27 +10,27 @@ export const ActClassPolicyCode = {
   /**
    * policy
    */
-  policy: "POLICY",
+  POLICY: "POLICY",
 
   /**
    * jurisdictional policy
    */
-  jurisdictionalpolicy: "JURISPOL",
+  JURISPOL: "JURISPOL",
 
   /**
    * organizational policy
    */
-  organizationalpolicy: "ORGPOL",
+  ORGPOL: "ORGPOL",
 
   /**
    * scope of practice policy
    */
-  scopeofpracticepolicy: "SCOPOL",
+  SCOPOL: "SCOPOL",
 
   /**
    * standard of practice policy
    */
-  standardofpracticepolicy: "STDPOL",
+  STDPOL: "STDPOL",
 } as const;
 
 /**

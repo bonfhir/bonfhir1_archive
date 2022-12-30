@@ -6,32 +6,32 @@ export const InhalantDrugFormCode = {
   /**
    * Inhalant
    */
-  Inhalant: "INHL",
+  INHL: "INHL",
 
   /**
    * Breath Activated Powder Inhaler
    */
-  BreathActivatedPowderInhaler: "BAINHLPWD",
+  BAINHLPWD: "BAINHLPWD",
 
   /**
    * Inhalant Powder
    */
-  InhalantPowder: "INHLPWD",
+  INHLPWD: "INHLPWD",
 
   /**
    * Metered Dose Powder Inhaler
    */
-  MeteredDosePowderInhaler: "MDINHLPWD",
+  MDINHLPWD: "MDINHLPWD",
 
   /**
    * Nasal Inhalant
    */
-  NasalInhalant: "NASINHL",
+  NASINHL: "NASINHL",
 
   /**
    * Oral Inhalant
    */
-  OralInhalant: "ORINHL",
+  ORINHL: "ORINHL",
 } as const;
 
 /**

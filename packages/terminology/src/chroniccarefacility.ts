@@ -6,7 +6,7 @@ export const ChronicCareFacilityCode = {
   /**
    * Chronic Care Facility
    */
-  ChronicCareFacility: "CHR",
+  CHR: "CHR",
 } as const;
 
 /**

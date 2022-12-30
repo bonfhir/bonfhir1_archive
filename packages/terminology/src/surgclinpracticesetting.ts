@@ -6,17 +6,17 @@ export const SurgClinPracticeSettingCode = {
   /**
    * Surgery clinic
    */
-  Surgeryclinic: "SU",
+  SU: "SU",
 
   /**
    * Plastic surgery clinic
    */
-  Plasticsurgeryclinic: "PLS",
+  PLS: "PLS",
 
   /**
    * Urology clinic
    */
-  Urologyclinic: "URO",
+  URO: "URO",
 } as const;
 
 /**

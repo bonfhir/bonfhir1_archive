@@ -6,7 +6,7 @@ export const ActClassReviewCode = {
   /**
    * review
    */
-  review: "REV",
+  REV: "REV",
 } as const;
 
 /**

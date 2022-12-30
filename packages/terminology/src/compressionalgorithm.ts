@@ -6,22 +6,22 @@ export const CompressionAlgorithmCode = {
   /**
    * bzip
    */
-  bzip: "BZ",
+  BZ: "BZ",
 
   /**
    * deflate
    */
-  deflate: "DF",
+  DF: "DF",
 
   /**
    * gzip
    */
-  gzip: "GZ",
+  GZ: "GZ",
 
   /**
    * compress
    */
-  compress: "Z",
+  Z: "Z",
 
   /**
    * Z7
@@ -31,7 +31,7 @@ export const CompressionAlgorithmCode = {
   /**
    * zlib
    */
-  zlib: "ZL",
+  ZL: "ZL",
 } as const;
 
 /**

@@ -6,22 +6,22 @@ export const RaceAlaskanNativeSiberianEskimoCode = {
   /**
    * Siberian Eskimo
    */
-  SiberianEskimo: "1891-1",
+  "1891-1": "1891-1",
 
   /**
    * Gambell
    */
-  Gambell: "1892-9",
+  "1892-9": "1892-9",
 
   /**
    * Savoonga
    */
-  Savoonga: "1893-7",
+  "1893-7": "1893-7",
 
   /**
    * Siberian Yupik
    */
-  SiberianYupik: "1894-5",
+  "1894-5": "1894-5",
 } as const;
 
 /**

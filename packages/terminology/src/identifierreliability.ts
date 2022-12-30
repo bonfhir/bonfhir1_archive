@@ -6,22 +6,22 @@ export const IdentifierReliabilityCode = {
   /**
    * Issued by System
    */
-  IssuedbySystem: "ISS",
+  ISS: "ISS",
 
   /**
    * Unverified by system
    */
-  Unverifiedbysystem: "UNV",
+  UNV: "UNV",
 
   /**
    * Verified by system
    */
-  Verifiedbysystem: "VRF",
+  VRF: "VRF",
 
   /**
    * Verified by system
    */
-  Verifiedbysystem: "VER",
+  VER: "VER",
 } as const;
 
 /**

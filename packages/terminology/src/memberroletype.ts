@@ -6,7 +6,7 @@ export const MemberRoleTypeCode = {
   /**
    * Tribal Member
    */
-  TribalMember: "TRB",
+  TRB: "TRB",
 } as const;
 
 /**

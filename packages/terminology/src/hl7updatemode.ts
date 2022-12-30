@@ -6,82 +6,82 @@ export const HL7UpdateModeCode = {
   /**
    * Add
    */
-  Add: "A",
+  A: "A",
 
   /**
    * Add or Replace
    */
-  AddorReplace: "AR",
+  AR: "AR",
 
   /**
    * Remove
    */
-  Remove: "D",
+  D: "D",
 
   /**
    * Key
    */
-  Key: "K",
+  K: "K",
 
   /**
    * No Change
    */
-  NoChange: "N",
+  N: "N",
 
   /**
    * Replace
    */
-  Replace: "R",
+  R: "R",
 
   /**
    * Reference
    */
-  Reference: "REF",
+  REF: "REF",
 
   /**
    * Unknown
    */
-  Unknown: "U",
+  U: "U",
 
   /**
    * SetUpdateMode
    */
-  SetUpdateMode: "_SetUpdateMode",
+  _SetUpdateMode: "_SetUpdateMode",
 
   /**
    * Set Add
    */
-  SetAdd: "ESA",
+  ESA: "ESA",
 
   /**
    * Set Add or Change
    */
-  SetAddorChange: "ESAC",
+  ESAC: "ESAC",
 
   /**
    * Set Change
    */
-  SetChange: "ESC",
+  ESC: "ESC",
 
   /**
    * Set Delete
    */
-  SetDelete: "ESD",
+  ESD: "ESD",
 
   /**
    * Add or Update
    */
-  AddorUpdate: "AU",
+  AU: "AU",
 
   /**
    * Ignore
    */
-  Ignore: "I",
+  I: "I",
 
   /**
    * Verify
    */
-  Verify: "V",
+  V: "V",
 } as const;
 
 /**

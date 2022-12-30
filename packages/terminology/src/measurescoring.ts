@@ -6,27 +6,27 @@ export const MeasureScoringCode = {
   /**
    * Proportion
    */
-  Proportion: "proportion",
+  proportion: "proportion",
 
   /**
    * Ratio
    */
-  Ratio: "ratio",
+  ratio: "ratio",
 
   /**
    * Continuous Variable
    */
-  ContinuousVariable: "continuous-variable",
+  "continuous-variable": "continuous-variable",
 
   /**
    * Cohort
    */
-  Cohort: "cohort",
+  cohort: "cohort",
 
   /**
    * Composite
    */
-  Composite: "composite",
+  composite: "composite",
 } as const;
 
 /**

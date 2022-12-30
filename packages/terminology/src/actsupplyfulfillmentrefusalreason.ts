@@ -8,37 +8,37 @@ export const ActSupplyFulfillmentRefusalReasonCode = {
   /**
    * ActSupplyFulfillmentRefusalReason
    */
-  ActSupplyFulfillmentRefusalReason: "_ActSupplyFulfillmentRefusalReason",
+  _ActSupplyFulfillmentRefusalReason: "_ActSupplyFulfillmentRefusalReason",
 
   /**
    * order stopped
    */
-  orderstopped: "FRR01",
+  FRR01: "FRR01",
 
   /**
    * stale-dated order
    */
-  staledatedorder: "FRR02",
+  FRR02: "FRR02",
 
   /**
    * incomplete data
    */
-  incompletedata: "FRR03",
+  FRR03: "FRR03",
 
   /**
    * product unavailable
    */
-  productunavailable: "FRR04",
+  FRR04: "FRR04",
 
   /**
    * ethical/religious
    */
-  ethicalreligious: "FRR05",
+  FRR05: "FRR05",
 
   /**
    * unable to provide care
    */
-  unabletoprovidecare: "FRR06",
+  FRR06: "FRR06",
 } as const;
 
 /**

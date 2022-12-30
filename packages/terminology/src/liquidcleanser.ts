@@ -6,17 +6,17 @@ export const LiquidCleanserCode = {
   /**
    * Liquid Cleanser
    */
-  LiquidCleanser: "LIQCLN",
+  LIQCLN: "LIQCLN",
 
   /**
    * Medicated Liquid Soap
    */
-  MedicatedLiquidSoap: "LIQSOAP",
+  LIQSOAP: "LIQSOAP",
 
   /**
    * Shampoo
    */
-  Shampoo: "SHMP",
+  SHMP: "SHMP",
 } as const;
 
 /**

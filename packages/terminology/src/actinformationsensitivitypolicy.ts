@@ -6,127 +6,127 @@ export const ActInformationSensitivityPolicyCode = {
   /**
    * ActInformationSensitivityPolicy
    */
-  ActInformationSensitivityPolicy: "_ActInformationSensitivityPolicy",
+  _ActInformationSensitivityPolicy: "_ActInformationSensitivityPolicy",
 
   /**
    * substance abuse information sensitivity
    */
-  substanceabuseinformationsensitivity: "ETH",
+  ETH: "ETH",
 
   /**
    * genetic disease information sensitivity
    */
-  geneticdiseaseinformationsensitivity: "GDIS",
+  GDIS: "GDIS",
 
   /**
    * HIV/AIDS information sensitivity
    */
-  HIVAIDSinformationsensitivity: "HIV",
+  HIV: "HIV",
 
   /**
    * military sexual trauma information sensitivity
    */
-  militarysexualtraumainformationsensitivity: "MST",
+  MST: "MST",
 
   /**
    * pregnancy information sensitivity
    */
-  pregnancyinformationsensitivity: "PREGNANT",
+  PREGNANT: "PREGNANT",
 
   /**
    * sickle cell anemia information sensitivity
    */
-  sicklecellanemiainformationsensitivity: "SCA",
+  SCA: "SCA",
 
   /**
    * sexual assault, abuse, or domestic violence information sensitivity
    */
-  sexualassaultabuseordomesticviolenceinformationsensitivity: "SDV",
+  SDV: "SDV",
 
   /**
    * sexuality and reproductive health information sensitivity
    */
-  sexualityandreproductivehealthinformationsensitivity: "SEX",
+  SEX: "SEX",
 
   /**
    * specially protected information sensitivity
    */
-  speciallyprotectedinformationsensitivity: "SPI",
+  SPI: "SPI",
 
   /**
    * behavioral health information sensitivity
    */
-  behavioralhealthinformationsensitivity: "BH",
+  BH: "BH",
 
   /**
    * cognitive disability information sensitivity
    */
-  cognitivedisabilityinformationsensitivity: "COGN",
+  COGN: "COGN",
 
   /**
    * developmental disability information sensitivity
    */
-  developmentaldisabilityinformationsensitivity: "DVD",
+  DVD: "DVD",
 
   /**
    * emotional disturbance information sensitivity
    */
-  emotionaldisturbanceinformationsensitivity: "EMOTDIS",
+  EMOTDIS: "EMOTDIS",
 
   /**
    * mental health information sensitivity
    */
-  mentalhealthinformationsensitivity: "MH",
+  MH: "MH",
 
   /**
    * psychiatry disorder information sensitivity
    */
-  psychiatrydisorderinformationsensitivity: "PSY",
+  PSY: "PSY",
 
   /**
    * psychotherapy note information sensitivity
    */
-  psychotherapynoteinformationsensitivity: "PSYTHPN",
+  PSYTHPN: "PSYTHPN",
 
   /**
    * substance use disorder information sensitivity
    */
-  substanceusedisorderinformationsensitivity: "SUD",
+  SUD: "SUD",
 
   /**
    * alcohol use disorder information sensitivity
    */
-  alcoholusedisorderinformationsensitivity: "ETHUD",
+  ETHUD: "ETHUD",
 
   /**
    * opioid use disorder information sensitivity
    */
-  opioidusedisorderinformationsensitivity: "OPIOIDUD",
+  OPIOIDUD: "OPIOIDUD",
 
   /**
    * sexually transmitted disease information sensitivity
    */
-  sexuallytransmitteddiseaseinformationsensitivity: "STD",
+  STD: "STD",
 
   /**
    * taboo
    */
-  taboo: "TBOO",
+  TBOO: "TBOO",
 
   /**
    * violence information sensitivity
    */
-  violenceinformationsensitivity: "VIO",
+  VIO: "VIO",
 
   /**
    * Identifier Sensitivity
    */
-  IdentifierSensitivity: "IDS",
+  IDS: "IDS",
 
   /**
    * sickle cell
    */
-  sicklecell: "SICKLE",
+  SICKLE: "SICKLE",
 } as const;
 
 /**

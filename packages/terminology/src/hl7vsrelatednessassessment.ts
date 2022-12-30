@@ -6,27 +6,27 @@ export const Hl7VSRelatednessAssessmentCode = {
   /**
    * Highly probable
    */
-  Highlyprobable: "H",
+  H: "H",
 
   /**
    * Moderately probable
    */
-  Moderatelyprobable: "M",
+  M: "M",
 
   /**
    * Somewhat probable
    */
-  Somewhatprobable: "S",
+  S: "S",
 
   /**
    * Improbable
    */
-  Improbable: "I",
+  I: "I",
 
   /**
    * Not related
    */
-  Notrelated: "N",
+  N: "N",
 } as const;
 
 /**

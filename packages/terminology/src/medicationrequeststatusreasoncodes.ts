@@ -6,67 +6,67 @@ export const MedicationRequestStatusReasonCodesCode = {
   /**
    * Try another treatment first
    */
-  Tryanothertreatmentfirst: "altchoice",
+  altchoice: "altchoice",
 
   /**
    * Prescription requires clarification
    */
-  Prescriptionrequiresclarification: "clarif",
+  clarif: "clarif",
 
   /**
    * Drug level too high
    */
-  Drugleveltoohigh: "drughigh",
+  drughigh: "drughigh",
 
   /**
    * Admission to hospital
    */
-  Admissiontohospital: "hospadm",
+  hospadm: "hospadm",
 
   /**
    * Lab interference issues
    */
-  Labinterferenceissues: "labint",
+  labint: "labint",
 
   /**
    * Patient not available
    */
-  Patientnotavailable: "non-avail",
+  "non-avail": "non-avail",
 
   /**
    * Parent is pregnant/breast feeding
    */
-  Parentispregnantbreastfeeding: "preg",
+  preg: "preg",
 
   /**
    * Allergy
    */
-  Allergy: "salg",
+  salg: "salg",
 
   /**
    * Drug interacts with another drug
    */
-  Druginteractswithanotherdrug: "sddi",
+  sddi: "sddi",
 
   /**
    * Duplicate therapy
    */
-  Duplicatetherapy: "sdupther",
+  sdupther: "sdupther",
 
   /**
    * Suspected intolerance
    */
-  Suspectedintolerance: "sintol",
+  sintol: "sintol",
 
   /**
    * Patient scheduled for surgery.
    */
-  Patientscheduledforsurgery: "surg",
+  surg: "surg",
 
   /**
    * Waiting for old drug to wash out
    */
-  Waitingforolddrugtowashout: "washout",
+  washout: "washout",
 } as const;
 
 /**

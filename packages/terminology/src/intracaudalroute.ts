@@ -6,7 +6,7 @@ export const IntracaudalRouteCode = {
   /**
    * Injection, intracaudal
    */
-  Injectionintracaudal: "ICAUDINJ",
+  ICAUDINJ: "ICAUDINJ",
 } as const;
 
 /**

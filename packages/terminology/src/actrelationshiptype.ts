@@ -18,699 +18,700 @@ export const ActRelationshipTypeCode = {
   /**
    * act relationship type
    */
-  actrelationshiptype: "ART",
+  ART: "ART",
 
   /**
    * ActClassTemporallyPertains
    */
-  ActClassTemporallyPertains: "_ActClassTemporallyPertains",
+  _ActClassTemporallyPertains: "_ActClassTemporallyPertains",
 
   /**
    * ActRelationshipTemporallyPertainsEnd
    */
-  ActRelationshipTemporallyPertainsEnd: "_ActRelationshipTemporallyPertainsEnd",
+  _ActRelationshipTemporallyPertainsEnd:
+    "_ActRelationshipTemporallyPertainsEnd",
 
   /**
    * ActRelationshipTemporallyPertainsStart
    */
-  ActRelationshipTemporallyPertainsStart:
+  _ActRelationshipTemporallyPertainsStart:
     "_ActRelationshipTemporallyPertainsStart",
 
   /**
    * ActClassTemporallyPertains
    */
-  ActClassTemporallyPertains: "TemporallyPertains",
+  TemporallyPertains: "TemporallyPertains",
 
   /**
    * ActRelationshipAccounting
    */
-  ActRelationshipAccounting: "_ActRelationshipAccounting",
+  _ActRelationshipAccounting: "_ActRelationshipAccounting",
 
   /**
    * ActRelationshipCostTracking
    */
-  ActRelationshipCostTracking: "_ActRelationshipCostTracking",
+  _ActRelationshipCostTracking: "_ActRelationshipCostTracking",
 
   /**
    * has charge
    */
-  hascharge: "CHRG",
+  CHRG: "CHRG",
 
   /**
    * has cost
    */
-  hascost: "COST",
+  COST: "COST",
 
   /**
    * ActRelationshipPosting
    */
-  ActRelationshipPosting: "_ActRelationshipPosting",
+  _ActRelationshipPosting: "_ActRelationshipPosting",
 
   /**
    * has credit
    */
-  hascredit: "CREDIT",
+  CREDIT: "CREDIT",
 
   /**
    * has debit
    */
-  hasdebit: "DEBIT",
+  DEBIT: "DEBIT",
 
   /**
    * ActRelationshipAccounting
    */
-  ActRelationshipAccounting: "_ActRelationshipPosts",
+  _ActRelationshipPosts: "_ActRelationshipPosts",
 
   /**
    * ActRelationshipConditional
    */
-  ActRelationshipConditional: "_ActRelationshipConditional",
+  _ActRelationshipConditional: "_ActRelationshipConditional",
 
   /**
    * has contra-indication
    */
-  hascontraindication: "CIND",
+  CIND: "CIND",
 
   /**
    * has pre-condition
    */
-  hasprecondition: "PRCN",
+  PRCN: "PRCN",
 
   /**
    * has reason
    */
-  hasreason: "RSON",
+  RSON: "RSON",
 
   /**
    * blocks
    */
-  blocks: "BLOCK",
+  BLOCK: "BLOCK",
 
   /**
    * diagnoses
    */
-  diagnoses: "DIAG",
+  DIAG: "DIAG",
 
   /**
    * immunization against
    */
-  immunizationagainst: "IMM",
+  IMM: "IMM",
 
   /**
    * active immunization against
    */
-  activeimmunizationagainst: "ACTIMM",
+  ACTIMM: "ACTIMM",
 
   /**
    * passive immunization against
    */
-  passiveimmunizationagainst: "PASSIMM",
+  PASSIMM: "PASSIMM",
 
   /**
    * mitigates
    */
-  mitigates: "MITGT",
+  MITGT: "MITGT",
 
   /**
    * recovers
    */
-  recovers: "RCVY",
+  RCVY: "RCVY",
 
   /**
    * prophylaxis of
    */
-  prophylaxisof: "PRYLX",
+  PRYLX: "PRYLX",
 
   /**
    * treats
    */
-  treats: "TREAT",
+  TREAT: "TREAT",
 
   /**
    * adjunctive treatment
    */
-  adjunctivetreatment: "ADJUNCT",
+  ADJUNCT: "ADJUNCT",
 
   /**
    * maintenance treatment
    */
-  maintenancetreatment: "MTREAT",
+  MTREAT: "MTREAT",
 
   /**
    * palliates
    */
-  palliates: "PALLTREAT",
+  PALLTREAT: "PALLTREAT",
 
   /**
    * symptomatic relief
    */
-  symptomaticrelief: "SYMP",
+  SYMP: "SYMP",
 
   /**
    * has trigger
    */
-  hastrigger: "TRIG",
+  TRIG: "TRIG",
 
   /**
    * ActRelationshipTemporallyPertains
    */
-  ActRelationshipTemporallyPertains: "_ActRelationshipTemporallyPertains",
+  _ActRelationshipTemporallyPertains: "_ActRelationshipTemporallyPertains",
 
   /**
    * ActRelationshipTemporallyPertainsApproximates
    */
-  ActRelationshipTemporallyPertainsApproximates:
+  _ActRelationshipTemporallyPertainsApproximates:
     "_ActRelationshipTemporallyPertainsApproximates",
 
   /**
    * ends near end
    */
-  endsnearend: "ENE",
+  ENE: "ENE",
 
   /**
    * ends concurrent with
    */
-  endsconcurrentwith: "ECW",
+  ECW: "ECW",
 
   /**
    * concurrent with
    */
-  concurrentwith: "CONCURRENT",
+  CONCURRENT: "CONCURRENT",
 
   /**
    * starts before start of, ends with
    */
-  startsbeforestartofendswith: "SBSECWE",
+  SBSECWE: "SBSECWE",
 
   /**
    * ends near start
    */
-  endsnearstart: "ENS",
+  ENS: "ENS",
 
   /**
    * ends concurrent with start of
    */
-  endsconcurrentwithstartof: "ECWS",
+  ECWS: "ECWS",
 
   /**
    * starts near end
    */
-  startsnearend: "SNE",
+  SNE: "SNE",
 
   /**
    * starts concurrent with end of
    */
-  startsconcurrentwithendof: "SCWE",
+  SCWE: "SCWE",
 
   /**
    * starts near start
    */
-  startsnearstart: "SNS",
+  SNS: "SNS",
 
   /**
    * starts concurrent with
    */
-  startsconcurrentwith: "SCW",
+  SCW: "SCW",
 
   /**
    * starts with. ends before end of
    */
-  startswithendsbeforeendof: "SCWSEBE",
+  SCWSEBE: "SCWSEBE",
 
   /**
    * starts with, ends after end of
    */
-  startswithendsafterendof: "SCWSEAE",
+  SCWSEAE: "SCWSEAE",
 
   /**
    * ends after start of
    */
-  endsafterstartof: "EAS",
+  EAS: "EAS",
 
   /**
    * ends after end of
    */
-  endsafterendof: "EAE",
+  EAE: "EAE",
 
   /**
    * starts after start of, ends after end of
    */
-  startsafterstartofendsafterendof: "SASEAE",
+  SASEAE: "SASEAE",
 
   /**
    * contains end of
    */
-  containsendof: "SBEEAE",
+  SBEEAE: "SBEEAE",
 
   /**
    * start after start of, contains end of
    */
-  startafterstartofcontainsendof: "SASSBEEAS",
+  SASSBEEAS: "SASSBEEAS",
 
   /**
    * contains time of
    */
-  containstimeof: "SBSEAE",
+  SBSEAE: "SBSEAE",
 
   /**
    * starts after start of
    */
-  startsafterstartof: "SAS",
+  SAS: "SAS",
 
   /**
    * starts after end of
    */
-  startsafterendof: "SAE",
+  SAE: "SAE",
 
   /**
    * occurs during
    */
-  occursduring: "DURING",
+  DURING: "DURING",
 
   /**
    * starts after start of, ends with
    */
-  startsafterstartofendswith: "SASECWE",
+  SASECWE: "SASECWE",
 
   /**
    * ends after or concurrent with start of
    */
-  endsafterorconcurrentwithstartof: "EASORECWS",
+  EASORECWS: "EASORECWS",
 
   /**
    * ends after or concurrent with end of
    */
-  endsafterorconcurrentwithendof: "EAEORECW",
+  EAEORECW: "EAEORECW",
 
   /**
    * independent of time of
    */
-  independentoftimeof: "INDEPENDENT",
+  INDEPENDENT: "INDEPENDENT",
 
   /**
    * starts after or concurrent with end of
    */
-  startsafterorconcurrentwithendof: "SAEORSCWE",
+  SAEORSCWE: "SAEORSCWE",
 
   /**
    * starts after or concurrent with start of
    */
-  startsafterorconcurrentwithstartof: "SASORSCW",
+  SASORSCW: "SASORSCW",
 
   /**
    * starts before or concurrent with end of
    */
-  startsbeforeorconcurrentwithendof: "SBEORSCWE",
+  SBEORSCWE: "SBEORSCWE",
 
   /**
    * overlaps with
    */
-  overlapswith: "OVERLAP",
+  OVERLAP: "OVERLAP",
 
   /**
    * ends during
    */
-  endsduring: "EDU",
+  EDU: "EDU",
 
   /**
    * contains start of, ends before end of
    */
-  containsstartofendsbeforeendof: "SBSEASEBE",
+  SBSEASEBE: "SBSEASEBE",
 
   /**
    * contains start of
    */
-  containsstartof: "SBSEAS",
+  SBSEAS: "SBSEAS",
 
   /**
    * starts during
    */
-  startsduring: "SDU",
+  SDU: "SDU",
 
   /**
    * starts before end of
    */
-  startsbeforeendof: "SBE",
+  SBE: "SBE",
 
   /**
    * ends before end of
    */
-  endsbeforeendof: "EBE",
+  EBE: "EBE",
 
   /**
    * starts before start of, ends before end of
    */
-  startsbeforestartofendsbeforeendof: "SBSEBE",
+  SBSEBE: "SBSEBE",
 
   /**
    * ends before or concurrent with start of
    */
-  endsbeforeorconcurrentwithstartof: "EBSORECWS",
+  EBSORECWS: "EBSORECWS",
 
   /**
    * ends before start of
    */
-  endsbeforestartof: "EBS",
+  EBS: "EBS",
 
   /**
    * ends before or concurrent with end of
    */
-  endsbeforeorconcurrentwithendof: "EBEORECW",
+  EBEORECW: "EBEORECW",
 
   /**
    * starts before or concurrent with start of
    */
-  startsbeforeorconcurrentwithstartof: "SBSORSCW",
+  SBSORSCW: "SBSORSCW",
 
   /**
    * starts before start of
    */
-  startsbeforestartof: "SBS",
+  SBS: "SBS",
 
   /**
    * authorized by
    */
-  authorizedby: "AUTH",
+  AUTH: "AUTH",
 
   /**
    * is etiology for
    */
-  isetiologyfor: "CAUS",
+  CAUS: "CAUS",
 
   /**
    * has component
    */
-  hascomponent: "COMP",
+  COMP: "COMP",
 
   /**
    * has control variable
    */
-  hascontrolvariable: "CTRLV",
+  CTRLV: "CTRLV",
 
   /**
    * has member
    */
-  hasmember: "MBR",
+  MBR: "MBR",
 
   /**
    * has step
    */
-  hasstep: "STEP",
+  STEP: "STEP",
 
   /**
    * arrival
    */
-  arrival: "ARR",
+  ARR: "ARR",
 
   /**
    * departure
    */
-  departure: "DEP",
+  DEP: "DEP",
 
   /**
    * has part
    */
-  haspart: "PART",
+  PART: "PART",
 
   /**
    * covered by
    */
-  coveredby: "COVBY",
+  COVBY: "COVBY",
 
   /**
    * is derived from
    */
-  isderivedfrom: "DRIV",
+  DRIV: "DRIV",
 
   /**
    * episodeLink
    */
-  episodeLink: "ELNK",
+  ELNK: "ELNK",
 
   /**
    * provides evidence for
    */
-  providesevidencefor: "EVID",
+  EVID: "EVID",
 
   /**
    * exacerbated by
    */
-  exacerbatedby: "EXACBY",
+  EXACBY: "EXACBY",
 
   /**
    * has explanation
    */
-  hasexplanation: "EXPL",
+  EXPL: "EXPL",
 
   /**
    * interfered by
    */
-  interferedby: "INTF",
+  INTF: "INTF",
 
   /**
    * items located
    */
-  itemslocated: "ITEMSLOC",
+  ITEMSLOC: "ITEMSLOC",
 
   /**
    * limited by
    */
-  limitedby: "LIMIT",
+  LIMIT: "LIMIT",
 
   /**
    * has metadata
    */
-  hasmetadata: "META",
+  META: "META",
 
   /**
    * is manifestation of
    */
-  ismanifestationof: "MFST",
+  MFST: "MFST",
 
   /**
    * assigns name
    */
-  assignsname: "NAME",
+  NAME: "NAME",
 
   /**
    * has outcome
    */
-  hasoutcome: "OUTC",
+  OUTC: "OUTC",
 
   /**
    * Act Relationsip Objective
    */
-  ActRelationsipObjective: "_ActRelationsipObjective",
+  _ActRelationsipObjective: "_ActRelationsipObjective",
 
   /**
    * has continuing objective
    */
-  hascontinuingobjective: "OBJC",
+  OBJC: "OBJC",
 
   /**
    * has final objective
    */
-  hasfinalobjective: "OBJF",
+  OBJF: "OBJF",
 
   /**
    * has goal
    */
-  hasgoal: "GOAL",
+  GOAL: "GOAL",
 
   /**
    * has risk
    */
-  hasrisk: "RISK",
+  RISK: "RISK",
 
   /**
    * has pertinent information
    */
-  haspertinentinformation: "PERT",
+  PERT: "PERT",
 
   /**
    * has previous instance
    */
-  haspreviousinstance: "PREV",
+  PREV: "PREV",
 
   /**
    * refers to
    */
-  refersto: "REFR",
+  REFR: "REFR",
 
   /**
    * uses
    */
-  uses: "USE",
+  USE: "USE",
 
   /**
    * has reference values
    */
-  hasreferencevalues: "REFV",
+  REFV: "REFV",
 
   /**
    * relieved by
    */
-  relievedby: "RELVBY",
+  RELVBY: "RELVBY",
 
   /**
    * is sequel
    */
-  issequel: "SEQL",
+  SEQL: "SEQL",
 
   /**
    * is appendage
    */
-  isappendage: "APND",
+  APND: "APND",
 
   /**
    * has baseline
    */
-  hasbaseline: "BSLN",
+  BSLN: "BSLN",
 
   /**
    * complies with
    */
-  complieswith: "COMPLY",
+  COMPLY: "COMPLY",
 
   /**
    * documents
    */
-  documents: "DOC",
+  DOC: "DOC",
 
   /**
    * fulfills
    */
-  fulfills: "FLFS",
+  FLFS: "FLFS",
 
   /**
    * occurrence
    */
-  occurrence: "OCCR",
+  OCCR: "OCCR",
 
   /**
    * references order
    */
-  referencesorder: "OREF",
+  OREF: "OREF",
 
   /**
    * schedules request
    */
-  schedulesrequest: "SCH",
+  SCH: "SCH",
 
   /**
    * has generalization
    */
-  hasgeneralization: "GEN",
+  GEN: "GEN",
 
   /**
    * evaluates (goal)
    */
-  evaluatesgoal: "GEVL",
+  GEVL: "GEVL",
 
   /**
    * instantiates (master)
    */
-  instantiatesmaster: "INST",
+  INST: "INST",
 
   /**
    * modifies
    */
-  modifies: "MOD",
+  MOD: "MOD",
 
   /**
    * matches (trigger)
    */
-  matchestrigger: "MTCH",
+  MTCH: "MTCH",
 
   /**
    * has option
    */
-  hasoption: "OPTN",
+  OPTN: "OPTN",
 
   /**
    * re-challenge
    */
-  rechallenge: "RCHAL",
+  RCHAL: "RCHAL",
 
   /**
    * reverses
    */
-  reverses: "REV",
+  REV: "REV",
 
   /**
    * replaces
    */
-  replaces: "RPLC",
+  RPLC: "RPLC",
 
   /**
    * succeeds
    */
-  succeeds: "SUCC",
+  SUCC: "SUCC",
 
   /**
    * updates (condition)
    */
-  updatescondition: "UPDT",
+  UPDT: "UPDT",
 
   /**
    * Excerpts
    */
-  Excerpts: "XCRPT",
+  XCRPT: "XCRPT",
 
   /**
    * Excerpt verbatim
    */
-  Excerptverbatim: "VRXCRPT",
+  VRXCRPT: "VRXCRPT",
 
   /**
    * transformation
    */
-  transformation: "XFRM",
+  XFRM: "XFRM",
 
   /**
    * has support
    */
-  hassupport: "SPRT",
+  SPRT: "SPRT",
 
   /**
    * has bounded support
    */
-  hasboundedsupport: "SPRTBND",
+  SPRTBND: "SPRTBND",
 
   /**
    * has subject
    */
-  hassubject: "SUBJ",
+  SUBJ: "SUBJ",
 
   /**
    * has qualifier
    */
-  hasqualifier: "QUALF",
+  QUALF: "QUALF",
 
   /**
    * summarized by
    */
-  summarizedby: "SUMM",
+  SUMM: "SUMM",
 
   /**
    * has value
    */
-  hasvalue: "VALUE",
+  VALUE: "VALUE",
 
   /**
    * curative indication
    */
-  curativeindication: "CURE",
+  CURE: "CURE",
 
   /**
    * adjunct curative indication
    */
-  adjunctcurativeindication: "CURE.ADJ",
+  "CURE.ADJ": "CURE.ADJ",
 
   /**
    * adjunct mitigation
    */
-  adjunctmitigation: "MTGT.ADJ",
+  "MTGT.ADJ": "MTGT.ADJ",
 
   /**
    *

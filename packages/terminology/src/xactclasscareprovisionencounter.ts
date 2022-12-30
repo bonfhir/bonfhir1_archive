@@ -6,12 +6,12 @@ export const XActClassCareProvisionEncounterCode = {
   /**
    * encounter
    */
-  encounter: "ENC",
+  ENC: "ENC",
 
   /**
    * care provision
    */
-  careprovision: "PCPR",
+  PCPR: "PCPR",
 } as const;
 
 /**

@@ -10,37 +10,37 @@ export const TrustPolicyCode = {
   /**
    * trust policy
    */
-  trustpolicy: "ActTrustPolicyType",
+  ActTrustPolicyType: "ActTrustPolicyType",
 
   /**
    * trust accreditation
    */
-  trustaccreditation: "TRSTACCRD",
+  TRSTACCRD: "TRSTACCRD",
 
   /**
    * trust agreement
    */
-  trustagreement: "TRSTAGRE",
+  TRSTAGRE: "TRSTAGRE",
 
   /**
    * trust assurance
    */
-  trustassurance: "TRSTASSUR",
+  TRSTASSUR: "TRSTASSUR",
 
   /**
    * trust certificate
    */
-  trustcertificate: "TRSTCERT",
+  TRSTCERT: "TRSTCERT",
 
   /**
    * trust framework
    */
-  trustframework: "TRSTFWK",
+  TRSTFWK: "TRSTFWK",
 
   /**
    * trust mechanism
    */
-  trustmechanism: "TRSTMEC",
+  TRSTMEC: "TRSTMEC",
 } as const;
 
 /**

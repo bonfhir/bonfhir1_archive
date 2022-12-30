@@ -6,11 +6,11 @@ export * from "./{{camelcase name}}";
  * {{ url }}
  */
 export const {{safeNameAsVar name}}Code = {
-  {{#each (recursiveFlatten expansion.contains "contains")}}
+  {{#each (uniqBy (recursiveFlatten expansion.contains "contains") "code")}}
     /**
      * {{display}}
      */
-    {{#if (safeNameAsVar display)}}{{safeNameAsVar display}}{{else}}"{{code}}"{{/if}}: "{{code}}",
+    "{{code}}": "{{code}}",
     
   {{/each}}
 } as const;

@@ -10,7 +10,7 @@ export const ActClassTransmissionExposureCode = {
   /**
    * transmission exposure
    */
-  transmissionexposure: "TEXPOS",
+  TEXPOS: "TEXPOS",
 } as const;
 
 /**

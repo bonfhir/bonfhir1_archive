@@ -6,67 +6,67 @@ export const Hl7VSResultStatusObrCode = {
   /**
    * Order received; specimen not yet received
    */
-  Orderreceivedspecimennotyetreceived: "O",
+  O: "O",
 
   /**
    * No results available; specimen received, procedure incomplete
    */
-  Noresultsavailablespecimenreceivedprocedureincomplete: "I",
+  I: "I",
 
   /**
    * No results available; procedure scheduled, but not done
    */
-  Noresultsavailableprocedurescheduledbutnotdone: "S",
+  S: "S",
 
   /**
    * Some, but not all, results available
    */
-  Somebutnotallresultsavailable: "A",
+  A: "A",
 
   /**
    * Preliminary
    */
-  Preliminary: "P",
+  P: "P",
 
   /**
    * Corrected, final
    */
-  Correctedfinal: "C",
+  C: "C",
 
   /**
    * Results stored; not yet verified
    */
-  Resultsstorednotyetverified: "R",
+  R: "R",
 
   /**
    * Final results
    */
-  Finalresults: "F",
+  F: "F",
 
   /**
    * No results available; Order canceled
    */
-  NoresultsavailableOrdercanceled: "X",
+  X: "X",
 
   /**
    * No order on record for this test
    */
-  Noorderonrecordforthistest: "Y",
+  Y: "Y",
 
   /**
    * No record of this patient
    */
-  Norecordofthispatient: "Z",
+  Z: "Z",
 
   /**
    * Corrected, not final
    */
-  Correctednotfinal: "M",
+  M: "M",
 
   /**
    * Procedure completed, results pending
    */
-  Procedurecompletedresultspending: "N",
+  N: "N",
 } as const;
 
 /**

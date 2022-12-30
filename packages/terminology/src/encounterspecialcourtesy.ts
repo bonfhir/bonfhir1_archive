@@ -6,27 +6,27 @@ export const EncounterSpecialCourtesyCode = {
   /**
    * extended courtesy
    */
-  extendedcourtesy: "EXT",
+  EXT: "EXT",
 
   /**
    * normal courtesy
    */
-  normalcourtesy: "NRM",
+  NRM: "NRM",
 
   /**
    * professional courtesy
    */
-  professionalcourtesy: "PRF",
+  PRF: "PRF",
 
   /**
    * staff
    */
-  staff: "STF",
+  STF: "STF",
 
   /**
    * very important person
    */
-  veryimportantperson: "VIP",
+  VIP: "VIP",
 } as const;
 
 /**

@@ -6,22 +6,22 @@ export const IntracardiacInjectionCode = {
   /**
    * Injection, intracardiac
    */
-  Injectionintracardiac: "ICARDINJ",
+  ICARDINJ: "ICARDINJ",
 
   /**
    * Injection, intracardiac, rapid push
    */
-  Injectionintracardiacrapidpush: "ICARDINJRP",
+  ICARDINJRP: "ICARDINJRP",
 
   /**
    * Injection, intracardiac, slow push
    */
-  Injectionintracardiacslowpush: "ICARDINJSP",
+  ICARDINJSP: "ICARDINJSP",
 
   /**
    * Injection, intracardiac, push
    */
-  Injectionintracardiacpush: "ICARINJP",
+  ICARINJP: "ICARINJP",
 } as const;
 
 /**

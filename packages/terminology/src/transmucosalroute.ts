@@ -6,7 +6,7 @@ export const TransmucosalRouteCode = {
   /**
    * Topical application, transmucosal
    */
-  Topicalapplicationtransmucosal: "TMUCTA",
+  TMUCTA: "TMUCTA",
 } as const;
 
 /**

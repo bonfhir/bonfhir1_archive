@@ -6,22 +6,22 @@ export const PayeeResourceTypeCode = {
   /**
    * Organization
    */
-  Organization: "organization",
+  organization: "organization",
 
   /**
    * Patient
    */
-  Patient: "patient",
+  patient: "patient",
 
   /**
    * Practitioner
    */
-  Practitioner: "practitioner",
+  practitioner: "practitioner",
 
   /**
    * RelatedPerson
    */
-  RelatedPerson: "relatedperson",
+  relatedperson: "relatedperson",
 } as const;
 
 /**

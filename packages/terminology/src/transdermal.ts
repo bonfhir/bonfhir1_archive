@@ -6,12 +6,12 @@ export const TransdermalCode = {
   /**
    * Transdermal
    */
-  Transdermal: "TRNSDERM",
+  TRNSDERM: "TRNSDERM",
 
   /**
    * Diffusion, transdermal
    */
-  Diffusiontransdermal: "TRNSDERMD",
+  TRNSDERMD: "TRNSDERMD",
 } as const;
 
 /**

@@ -6,7 +6,7 @@ export const ActRelationshipConcurrentWithCode = {
   /**
    * concurrent with
    */
-  concurrentwith: "CONCURRENT",
+  CONCURRENT: "CONCURRENT",
 } as const;
 
 /**

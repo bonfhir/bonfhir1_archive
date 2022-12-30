@@ -6,12 +6,12 @@ export const ContextControlNonPropagatingCode = {
   /**
    * additive, non-propagating
    */
-  additivenonpropagating: "AN",
+  AN: "AN",
 
   /**
    * overriding, non-propagating
    */
-  overridingnonpropagating: "ON",
+  ON: "ON",
 } as const;
 
 /**

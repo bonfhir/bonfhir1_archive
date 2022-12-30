@@ -6,17 +6,17 @@ export const Hl7VSAssignmentOfBenefitsCode = {
   /**
    * Yes
    */
-  Yes: "Y",
+  Y: "Y",
 
   /**
    * No
    */
-  No: "N",
+  N: "N",
 
   /**
    * Modified assignment
    */
-  Modifiedassignment: "M",
+  M: "M",
 } as const;
 
 /**

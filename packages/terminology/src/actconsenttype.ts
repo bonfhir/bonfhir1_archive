@@ -6,52 +6,52 @@ export const ActConsentTypeCode = {
   /**
    * ActConsentType
    */
-  ActConsentType: "_ActConsentType",
+  _ActConsentType: "_ActConsentType",
 
   /**
    * information collection
    */
-  informationcollection: "ICOL",
+  ICOL: "ICOL",
 
   /**
    * information disclosure
    */
-  informationdisclosure: "IDSCL",
+  IDSCL: "IDSCL",
 
   /**
    * information access
    */
-  informationaccess: "INFA",
+  INFA: "INFA",
 
   /**
    * access only
    */
-  accessonly: "INFAO",
+  INFAO: "INFAO",
 
   /**
    * access and save only
    */
-  accessandsaveonly: "INFASO",
+  INFASO: "INFASO",
 
   /**
    * information redisclosure
    */
-  informationredisclosure: "IRDSCL",
+  IRDSCL: "IRDSCL",
 
   /**
    * research information access
    */
-  researchinformationaccess: "RESEARCH",
+  RESEARCH: "RESEARCH",
 
   /**
    * de-identified information access
    */
-  deidentifiedinformationaccess: "RSDID",
+  RSDID: "RSDID",
 
   /**
    * re-identifiable information access
    */
-  reidentifiableinformationaccess: "RSREID",
+  RSREID: "RSREID",
 } as const;
 
 /**

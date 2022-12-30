@@ -6,32 +6,32 @@ export const ConditionVerificationStatusCode = {
   /**
    * Unconfirmed
    */
-  Unconfirmed: "unconfirmed",
+  unconfirmed: "unconfirmed",
 
   /**
    * Provisional
    */
-  Provisional: "provisional",
+  provisional: "provisional",
 
   /**
    * Differential
    */
-  Differential: "differential",
+  differential: "differential",
 
   /**
    * Confirmed
    */
-  Confirmed: "confirmed",
+  confirmed: "confirmed",
 
   /**
    * Refuted
    */
-  Refuted: "refuted",
+  refuted: "refuted",
 
   /**
    * Entered in Error
    */
-  EnteredinError: "entered-in-error",
+  "entered-in-error": "entered-in-error",
 } as const;
 
 /**

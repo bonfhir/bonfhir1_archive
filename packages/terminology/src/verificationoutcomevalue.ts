@@ -8,42 +8,42 @@ export const VerificationOutcomeValueCode = {
   /**
    * verification outcome
    */
-  verificationoutcome: "_VerificationOutcomeValue",
+  _VerificationOutcomeValue: "_VerificationOutcomeValue",
 
   /**
    * active coverage
    */
-  activecoverage: "ACT",
+  ACT: "ACT",
 
   /**
    * active - pending investigation
    */
-  activependinginvestigation: "ACTPEND",
+  ACTPEND: "ACTPEND",
 
   /**
    * eligible
    */
-  eligible: "ELG",
+  ELG: "ELG",
 
   /**
    * inactive
    */
-  inactive: "INACT",
+  INACT: "INACT",
 
   /**
    * inactive - pending investigation
    */
-  inactivependinginvestigation: "INPNDINV",
+  INPNDINV: "INPNDINV",
 
   /**
    * inactive - pending eligibility update
    */
-  inactivependingeligibilityupdate: "INPNDUPD",
+  INPNDUPD: "INPNDUPD",
 
   /**
    * not eligible
    */
-  noteligible: "NELG",
+  NELG: "NELG",
 } as const;
 
 /**

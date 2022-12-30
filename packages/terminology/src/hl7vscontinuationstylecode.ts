@@ -6,12 +6,12 @@ export const Hl7VSContinuationStyleCodeCode = {
   /**
    * Fragmentation
    */
-  Fragmentation: "F",
+  F: "F",
 
   /**
    * Interactive Continuation
    */
-  InteractiveContinuation: "I",
+  I: "I",
 } as const;
 
 /**

@@ -6,12 +6,12 @@ export const MobileUnitCode = {
   /**
    * Mobile Unit
    */
-  MobileUnit: "MOBL",
+  MOBL: "MOBL",
 
   /**
    * Ambulance
    */
-  Ambulance: "AMB",
+  AMB: "AMB",
 } as const;
 
 /**

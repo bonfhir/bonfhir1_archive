@@ -6,57 +6,57 @@ export const ObservationInterpretationNormalityCode = {
   /**
    * Abnormal
    */
-  Abnormal: "A",
+  A: "A",
 
   /**
    * Critical abnormal
    */
-  Criticalabnormal: "AA",
+  AA: "AA",
 
   /**
    * Critical high
    */
-  Criticalhigh: "HH",
+  HH: "HH",
 
   /**
    * Critical low
    */
-  Criticallow: "LL",
+  LL: "LL",
 
   /**
    * High
    */
-  High: "H",
+  H: "H",
 
   /**
    * Significantly high
    */
-  Significantlyhigh: "H>",
+  "H>": "H>",
 
   /**
    * Significantly high
    */
-  Significantlyhigh: "HU",
+  HU: "HU",
 
   /**
    * Low
    */
-  Low: "L",
+  L: "L",
 
   /**
    * Significantly low
    */
-  Significantlylow: "L<",
+  "L<": "L<",
 
   /**
    * Significantly low
    */
-  Significantlylow: "LU",
+  LU: "LU",
 
   /**
    * Normal
    */
-  Normal: "N",
+  N: "N",
 } as const;
 
 /**

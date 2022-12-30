@@ -8,7 +8,7 @@ export const ActClassInformCode = {
   /**
    * inform
    */
-  inform: "INFRM",
+  INFRM: "INFRM",
 } as const;
 
 /**

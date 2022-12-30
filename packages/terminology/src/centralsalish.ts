@@ -6,17 +6,17 @@ export const CentralSalishCode = {
   /**
    * Clallam
    */
-  Clallam: "x-CLM",
+  "x-CLM": "x-CLM",
 
   /**
    * Lushootseed
    */
-  Lushootseed: "x-LUT",
+  "x-LUT": "x-LUT",
 
   /**
    * Northern Straits
    */
-  NorthernStraits: "x-STR",
+  "x-STR": "x-STR",
 } as const;
 
 /**

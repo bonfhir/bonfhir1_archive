@@ -10,7 +10,7 @@ export const ActClassCategoryCode = {
   /**
    * category
    */
-  category: "CATEGORY",
+  CATEGORY: "CATEGORY",
 } as const;
 
 /**

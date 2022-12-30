@@ -6,22 +6,22 @@ export const Hl7VSSchoolTypeCode = {
   /**
    * Dental
    */
-  Dental: "D",
+  D: "D",
 
   /**
    * Graduate
    */
-  Graduate: "G",
+  G: "G",
 
   /**
    * Medical
    */
-  Medical: "M",
+  M: "M",
 
   /**
    * Undergraduate
    */
-  Undergraduate: "U",
+  U: "U",
 } as const;
 
 /**

@@ -6,37 +6,37 @@ export const AmbulanceCode = {
   /**
    * ambulance transport
    */
-  ambulancetransport: "AMBT",
+  AMBT: "AMBT",
 
   /**
    * fixed-wing ambulance transport
    */
-  fixedwingambulancetransport: "AMBAIR",
+  AMBAIR: "AMBAIR",
 
   /**
    * fixed-wing ambulance transport
    */
-  fixedwingambulancetransport: "Fixed-wingAmbulance",
+  "Fixed-wingAmbulance": "Fixed-wingAmbulance",
 
   /**
    * ground ambulance transport
    */
-  groundambulancetransport: "AMBGRND",
+  AMBGRND: "AMBGRND",
 
   /**
    * ground ambulance transport
    */
-  groundambulancetransport: "GroundAmbulance",
+  GroundAmbulance: "GroundAmbulance",
 
   /**
    * helicopter ambulance transport
    */
-  helicopterambulancetransport: "AMBHELO",
+  AMBHELO: "AMBHELO",
 
   /**
    * helicopter ambulance transport
    */
-  helicopterambulancetransport: "HelicopterAmbulance",
+  HelicopterAmbulance: "HelicopterAmbulance",
 } as const;
 
 /**

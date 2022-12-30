@@ -6,17 +6,17 @@ export const ActRelationshipStartsAfterOrConcurrentWithEndOfCode = {
   /**
    * starts after or concurrent with end of
    */
-  startsafterorconcurrentwithendof: "SAEORSCWE",
+  SAEORSCWE: "SAEORSCWE",
 
   /**
    * starts concurrent with end of
    */
-  startsconcurrentwithendof: "SCWE",
+  SCWE: "SCWE",
 
   /**
    * starts after end of
    */
-  startsafterendof: "SAE",
+  SAE: "SAE",
 } as const;
 
 /**

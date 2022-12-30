@@ -6,22 +6,22 @@ export const XActMoodEvnOrdPrmsPrpCode = {
   /**
    * event (occurrence)
    */
-  eventoccurrence: "EVN",
+  EVN: "EVN",
 
   /**
    * promise
    */
-  promise: "PRMS",
+  PRMS: "PRMS",
 
   /**
    * proposal
    */
-  proposal: "PRP",
+  PRP: "PRP",
 
   /**
    * request
    */
-  request: "RQO",
+  RQO: "RQO",
 } as const;
 
 /**

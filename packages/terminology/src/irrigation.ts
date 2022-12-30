@@ -6,42 +6,42 @@ export const IrrigationCode = {
   /**
    * Irrigation, genitourinary
    */
-  Irrigationgenitourinary: "GUIRR",
+  GUIRR: "GUIRR",
 
   /**
    * Irrigation, intragastric
    */
-  Irrigationintragastric: "IGASTIRR",
+  IGASTIRR: "IGASTIRR",
 
   /**
    * Irrigation, intralesional
    */
-  Irrigationintralesional: "ILESIRR",
+  ILESIRR: "ILESIRR",
 
   /**
    * Irrigation, intraocular
    */
-  Irrigationintraocular: "IOIRR",
+  IOIRR: "IOIRR",
 
   /**
    * Irrigation, urinary bladder
    */
-  Irrigationurinarybladder: "BLADIRR",
+  BLADIRR: "BLADIRR",
 
   /**
    * Irrigation, urinary bladder, continuous
    */
-  Irrigationurinarybladdercontinuous: "BLADIRRC",
+  BLADIRRC: "BLADIRRC",
 
   /**
    * Irrigation, urinary bladder, tidal
    */
-  Irrigationurinarybladdertidal: "BLADIRRT",
+  BLADIRRT: "BLADIRRT",
 
   /**
    * Irrigation, rectal
    */
-  Irrigationrectal: "RECIRR",
+  RECIRR: "RECIRR",
 } as const;
 
 /**

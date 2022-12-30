@@ -6,22 +6,22 @@ export const OralSuspensionCode = {
   /**
    * Oral Suspension
    */
-  OralSuspension: "ORSUSP",
+  ORSUSP: "ORSUSP",
 
   /**
    * Extended-Release Suspension
    */
-  ExtendedReleaseSuspension: "ERSUSP",
+  ERSUSP: "ERSUSP",
 
   /**
    * 12 Hour Extended-Release Suspension
    */
-  TwelveHourExtendedReleaseSuspension: "ERSUSP12",
+  ERSUSP12: "ERSUSP12",
 
   /**
    * 24 Hour Extended Release Suspension
    */
-  TwentyFourHourExtendedReleaseSuspension: "ERSUSP24",
+  ERSUSP24: "ERSUSP24",
 } as const;
 
 /**

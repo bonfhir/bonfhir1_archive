@@ -6,22 +6,22 @@ export const SubscriptionStatusAtEventCode = {
   /**
    * Requested
    */
-  Requested: "requested",
+  requested: "requested",
 
   /**
    * Active
    */
-  Active: "active",
+  active: "active",
 
   /**
    * Error
    */
-  Error: "error",
+  error: "error",
 
   /**
    * Off
    */
-  Off: "off",
+  off: "off",
 } as const;
 
 /**

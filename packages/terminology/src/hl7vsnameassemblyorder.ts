@@ -6,12 +6,12 @@ export const Hl7VSNameAssemblyOrderCode = {
   /**
    * Prefix Given Middle Family Suffix
    */
-  PrefixGivenMiddleFamilySuffix: "G",
+  G: "G",
 
   /**
    * Prefix Family Middle Given Suffix
    */
-  PrefixFamilyMiddleGivenSuffix: "F",
+  F: "F",
 } as const;
 
 /**

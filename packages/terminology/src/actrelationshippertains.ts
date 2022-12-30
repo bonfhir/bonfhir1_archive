@@ -6,7 +6,7 @@ export const ActRelationshipPertainsCode = {
   /**
    * has pertinent information
    */
-  haspertinentinformation: "PERT",
+  PERT: "PERT",
 } as const;
 
 /**

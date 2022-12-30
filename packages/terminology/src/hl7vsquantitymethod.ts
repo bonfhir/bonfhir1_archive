@@ -6,12 +6,12 @@ export const Hl7VSQuantityMethodCode = {
   /**
    * Actual count
    */
-  Actualcount: "A",
+  A: "A",
 
   /**
    * Estimated (see comment)
    */
-  Estimatedseecomment: "E",
+  E: "E",
 } as const;
 
 /**

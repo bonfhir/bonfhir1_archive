@@ -6,22 +6,22 @@ export const Hl7VSDocumentAvailabilityStatusCode = {
   /**
    * Available for patient care
    */
-  Availableforpatientcare: "AV",
+  AV: "AV",
 
   /**
    * Deleted
    */
-  Deleted: "CA",
+  CA: "CA",
 
   /**
    * Obsolete
    */
-  Obsolete: "OB",
+  OB: "OB",
 
   /**
    * Unavailable for patient care
    */
-  Unavailableforpatientcare: "UN",
+  UN: "UN",
 } as const;
 
 /**

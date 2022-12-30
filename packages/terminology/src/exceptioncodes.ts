@@ -6,12 +6,12 @@ export const ExceptionCodesCode = {
   /**
    * Student (Fulltime)
    */
-  StudentFulltime: "student",
+  student: "student",
 
   /**
    * Disabled
    */
-  Disabled: "disabled",
+  disabled: "disabled",
 } as const;
 
 /**

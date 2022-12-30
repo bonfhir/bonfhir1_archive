@@ -6,7 +6,7 @@ export const GenitourinaryRouteCode = {
   /**
    * Irrigation, genitourinary
    */
-  Irrigationgenitourinary: "GUIRR",
+  GUIRR: "GUIRR",
 } as const;
 
 /**

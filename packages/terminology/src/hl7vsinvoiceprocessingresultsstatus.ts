@@ -6,42 +6,42 @@ export const Hl7VSInvoiceProcessingResultsStatusCode = {
   /**
    * Acknowledge
    */
-  Acknowledge: "ACK",
+  ACK: "ACK",
 
   /**
    * Reject
    */
-  Reject: "REJECT",
+  REJECT: "REJECT",
 
   /**
    * Pending
    */
-  Pending: "PEND",
+  PEND: "PEND",
 
   /**
    * Adjudicated to Zero
    */
-  AdjudicatedtoZero: "ADJZER",
+  ADJZER: "ADJZER",
 
   /**
    * Adjudicated as Submitted
    */
-  AdjudicatedasSubmitted: "ADJSUB",
+  ADJSUB: "ADJSUB",
 
   /**
    * Adjudicated with Adjustments
    */
-  AdjudicatedwithAdjustments: "ADJ",
+  ADJ: "ADJ",
 
   /**
    * Paid
    */
-  Paid: "PAID",
+  PAID: "PAID",
 
   /**
    * Pre-Determination
    */
-  PreDetermination: "PRED",
+  PRED: "PRED",
 } as const;
 
 /**

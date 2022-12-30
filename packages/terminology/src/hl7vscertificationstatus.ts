@@ -6,12 +6,12 @@ export const Hl7VSCertificationStatusCode = {
   /**
    * Certified
    */
-  Certified: "C",
+  C: "C",
 
   /**
    * Eligible
    */
-  Eligible: "E",
+  E: "E",
 } as const;
 
 /**

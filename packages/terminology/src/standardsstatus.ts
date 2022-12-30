@@ -6,32 +6,32 @@ export const StandardsStatusCode = {
   /**
    * Draft
    */
-  Draft: "draft",
+  draft: "draft",
 
   /**
    * Normative
    */
-  Normative: "normative",
+  normative: "normative",
 
   /**
    * Trial-Use
    */
-  TrialUse: "trial-use",
+  "trial-use": "trial-use",
 
   /**
    * Informative
    */
-  Informative: "informative",
+  informative: "informative",
 
   /**
    * Deprecated
    */
-  Deprecated: "deprecated",
+  deprecated: "deprecated",
 
   /**
    * External
    */
-  External: "external",
+  external: "external",
 } as const;
 
 /**

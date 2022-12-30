@@ -6,27 +6,27 @@ export const Hl7VSLotControlCode = {
   /**
    * OR Mode Without Operator
    */
-  ORModeWithoutOperator: "1",
+  "1": "1",
 
   /**
    * OR Mode with Operator
    */
-  ORModewithOperator: "2",
+  "2": "2",
 
   /**
    * CPD Mode Without Operator
    */
-  CPDModeWithoutOperator: "3",
+  "3": "3",
 
   /**
    * CPD Mode With Operator
    */
-  CPDModeWithOperator: "4",
+  "4": "4",
 
   /**
    * Offline Mode
    */
-  OfflineMode: "5",
+  "5": "5",
 } as const;
 
 /**

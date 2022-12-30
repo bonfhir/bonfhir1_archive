@@ -6,27 +6,27 @@ export const AerosolDrugFormCode = {
   /**
    * Aerosol
    */
-  Aerosol: "AER",
+  AER: "AER",
 
   /**
    * Breath Activated Inhaler
    */
-  BreathActivatedInhaler: "BAINHL",
+  BAINHL: "BAINHL",
 
   /**
    * Inhalant Solution
    */
-  InhalantSolution: "INHLSOL",
+  INHLSOL: "INHLSOL",
 
   /**
    * Metered Dose Inhaler
    */
-  MeteredDoseInhaler: "MDINHL",
+  MDINHL: "MDINHL",
 
   /**
    * Nasal Spray
    */
-  NasalSpray: "NASSPRY",
+  NASSPRY: "NASSPRY",
 } as const;
 
 /**

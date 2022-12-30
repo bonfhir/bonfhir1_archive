@@ -6,32 +6,32 @@ export const DefinitionUseCodesCode = {
   /**
    * FHIR Structure
    */
-  FHIRStructure: "fhir-structure",
+  "fhir-structure": "fhir-structure",
 
   /**
    * Custom Resource
    */
-  CustomResource: "custom-resource",
+  "custom-resource": "custom-resource",
 
   /**
    * Domain Analysis Model
    */
-  DomainAnalysisModel: "dam",
+  dam: "dam",
 
   /**
    * Wire Format
    */
-  WireFormat: "wire-format",
+  "wire-format": "wire-format",
 
   /**
    * Domain Analysis Model
    */
-  DomainAnalysisModel: "archetype",
+  archetype: "archetype",
 
   /**
    * Template
    */
-  Template: "template",
+  template: "template",
 } as const;
 
 /**

@@ -6,19 +6,17 @@ export const Hl7VSEncodingCode = {
   /**
    * No encoding - data are displayable ASCII characters.
    */
-  NoencodingdataaredisplayableASCIIcharacters: "A",
+  A: "A",
 
   /**
    * Hexadecimal encoding - consecutive pairs of hexadecimal digits represent consecutive single octets.
    */
-  Hexadecimalencodingconsecutivepairsofhexadecimaldigitsrepresentconsecutivesingleoctets:
-    "Hex",
+  Hex: "Hex",
 
   /**
    * Encoding as defined by MIME (Multipurpose Internet Mail Extensions) standard RFC 1521. Four consecutive ASCII characters represent three consecutive octets of binary data. Base64 utilizes a 65-character subset of US-ASCII, consisting of both the upper and
    */
-  EncodingasdefinedbyMIMEMultipurposeInternetMailExtensionsstandardRFC1521FourconsecutiveASCIIcharactersrepresentthreeconsecutiveoctetsofbinarydataBase64utilizesa65charactersubsetofUSASCIIconsistingofboththeupperand:
-    "Base64",
+  Base64: "Base64",
 } as const;
 
 /**

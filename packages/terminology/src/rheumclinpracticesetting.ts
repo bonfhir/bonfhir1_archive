@@ -6,12 +6,12 @@ export const RheumClinPracticeSettingCode = {
   /**
    * Rheumatology clinic
    */
-  Rheumatologyclinic: "RHEUM",
+  RHEUM: "RHEUM",
 
   /**
    * Pediatric rheumatology clinic
    */
-  Pediatricrheumatologyclinic: "PEDRHEUM",
+  PEDRHEUM: "PEDRHEUM",
 } as const;
 
 /**

@@ -6,7 +6,7 @@ export const NailRouteCode = {
   /**
    * Topical application, nail
    */
-  Topicalapplicationnail: "NAIL",
+  NAIL: "NAIL",
 } as const;
 
 /**

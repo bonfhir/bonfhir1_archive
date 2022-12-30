@@ -13,42 +13,42 @@ export const SnodentSalzmannInterarchDeviationMaxillaryToothInternationalCode =
     /**
      * Permanent upper right canine tooth
      */
-    Permanentupperrightcaninetooth: "160840D",
+    "160840D": "160840D",
 
     /**
      * Permanent upper left canine tooth
      */
-    Permanentupperleftcaninetooth: "160957D",
+    "160957D": "160957D",
 
     /**
      * Permanent upper right first molar tooth
      */
-    Permanentupperrightfirstmolartooth: "161010D",
+    "161010D": "161010D",
 
     /**
      * Permanent upper left first molar tooth
      */
-    Permanentupperleftfirstmolartooth: "161132D",
+    "161132D": "161132D",
 
     /**
      * Permanent upper left second premolar tooth
      */
-    Permanentupperleftsecondpremolartooth: "161178D",
+    "161178D": "161178D",
 
     /**
      * Permanent upper left first premolar tooth
      */
-    Permanentupperleftfirstpremolartooth: "161329D",
+    "161329D": "161329D",
 
     /**
      * Permanent upper right second premolar tooth
      */
-    Permanentupperrightsecondpremolartooth: "161546D",
+    "161546D": "161546D",
 
     /**
      * Permanent upper right first premolar tooth
      */
-    Permanentupperrightfirstpremolartooth: "161607D",
+    "161607D": "161607D",
   } as const;
 
 /**

@@ -6,12 +6,12 @@ export const SupplyItemTypeCode = {
   /**
    * Medication
    */
-  Medication: "medication",
+  medication: "medication",
 
   /**
    * Device
    */
-  Device: "device",
+  device: "device",
 } as const;
 
 /**

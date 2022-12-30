@@ -6,22 +6,22 @@ export const CommunicationCategoryCode = {
   /**
    * Alert
    */
-  Alert: "alert",
+  alert: "alert",
 
   /**
    * Notification
    */
-  Notification: "notification",
+  notification: "notification",
 
   /**
    * Reminder
    */
-  Reminder: "reminder",
+  reminder: "reminder",
 
   /**
    * Instruction
    */
-  Instruction: "instruction",
+  instruction: "instruction",
 } as const;
 
 /**

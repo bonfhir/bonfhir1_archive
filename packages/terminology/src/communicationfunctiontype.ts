@@ -6,17 +6,17 @@ export const CommunicationFunctionTypeCode = {
   /**
    * receiver
    */
-  receiver: "RCV",
+  RCV: "RCV",
 
   /**
    * respond to
    */
-  respondto: "RSP",
+  RSP: "RSP",
 
   /**
    * sender
    */
-  sender: "SND",
+  SND: "SND",
 } as const;
 
 /**

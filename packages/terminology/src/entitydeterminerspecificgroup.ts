@@ -6,7 +6,7 @@ export const EntityDeterminerSpecificGroupCode = {
   /**
    * specific group
    */
-  specificgroup: "GROUP",
+  GROUP: "GROUP",
 } as const;
 
 /**

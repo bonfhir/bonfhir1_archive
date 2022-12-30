@@ -6,122 +6,122 @@ export const RigidContainerEntityTypeCode = {
   /**
    * IndividualPackageEntityType
    */
-  IndividualPackageEntityType: "_IndividualPackageEntityType",
+  _IndividualPackageEntityType: "_IndividualPackageEntityType",
 
   /**
    * Ampule
    */
-  Ampule: "AMP",
+  AMP: "AMP",
 
   /**
    * Minim
    */
-  Minim: "MINIM",
+  MINIM: "MINIM",
 
   /**
    * Nebuamp
    */
-  Nebuamp: "NEBAMP",
+  NEBAMP: "NEBAMP",
 
   /**
    * Ovule
    */
-  Ovule: "OVUL",
+  OVUL: "OVUL",
 
   /**
    * MultiUseContainerEntityType
    */
-  MultiUseContainerEntityType: "_MultiUseContainerEntityType",
+  _MultiUseContainerEntityType: "_MultiUseContainerEntityType",
 
   /**
    * Bottle
    */
-  Bottle: "BOT",
+  BOT: "BOT",
 
   /**
    * Amber Bottle
    */
-  AmberBottle: "BOTA",
+  BOTA: "BOTA",
 
   /**
    * Dropper Bottle
    */
-  DropperBottle: "BOTD",
+  BOTD: "BOTD",
 
   /**
    * Glass Bottle
    */
-  GlassBottle: "BOTG",
+  BOTG: "BOTG",
 
   /**
    * Plastic Bottle
    */
-  PlasticBottle: "BOTP",
+  BOTP: "BOTP",
 
   /**
    * Polyethylene Bottle
    */
-  PolyethyleneBottle: "BOTPLY",
+  BOTPLY: "BOTPLY",
 
   /**
    * Box
    */
-  Box: "BOX",
+  BOX: "BOX",
 
   /**
    * Can
    */
-  Can: "CAN",
+  CAN: "CAN",
 
   /**
    * Cartridge
    */
-  Cartridge: "CART",
+  CART: "CART",
 
   /**
    * Canister
    */
-  Canister: "CNSTR",
+  CNSTR: "CNSTR",
 
   /**
    * Jar
    */
-  Jar: "JAR",
+  JAR: "JAR",
 
   /**
    * Jug
    */
-  Jug: "JUG",
+  JUG: "JUG",
 
   /**
    * Tin
    */
-  Tin: "TIN",
+  TIN: "TIN",
 
   /**
    * Tub
    */
-  Tub: "TUB",
+  TUB: "TUB",
 
   /**
    * Tube
    */
-  Tube: "TUBE",
+  TUBE: "TUBE",
 
   /**
    * Vial
    */
-  Vial: "VIAL",
+  VIAL: "VIAL",
 
   /**
    * Blister Pack
    */
-  BlisterPack: "BLSTRPK",
+  BLSTRPK: "BLSTRPK",
 
   /**
    * Card
    */
-  Card: "CARD",
+  CARD: "CARD",
 } as const;
 
 /**

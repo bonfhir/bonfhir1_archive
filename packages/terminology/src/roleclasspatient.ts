@@ -6,7 +6,7 @@ export const RoleClassPatientCode = {
   /**
    * patient
    */
-  patient: "PAT",
+  PAT: "PAT",
 } as const;
 
 /**

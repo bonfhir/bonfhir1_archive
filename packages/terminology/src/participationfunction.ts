@@ -6,248 +6,248 @@ export const ParticipationFunctionCode = {
   /**
    * AuthorizedParticipationFunction
    */
-  AuthorizedParticipationFunction: "_AuthorizedParticipationFunction",
+  _AuthorizedParticipationFunction: "_AuthorizedParticipationFunction",
 
   /**
    * AuthorizedReceiverParticipationFunction
    */
-  AuthorizedReceiverParticipationFunction:
+  _AuthorizedReceiverParticipationFunction:
     "_AuthorizedReceiverParticipationFunction",
 
   /**
    * caregiver information receiver
    */
-  caregiverinformationreceiver: "AUCG",
+  AUCG: "AUCG",
 
   /**
    * legitimate relationship information receiver
    */
-  legitimaterelationshipinformationreceiver: "AULR",
+  AULR: "AULR",
 
   /**
    * care team information receiver
    */
-  careteaminformationreceiver: "AUTM",
+  AUTM: "AUTM",
 
   /**
    * work area information receiver
    */
-  workareainformationreceiver: "AUWA",
+  AUWA: "AUWA",
 
   /**
    * ConsenterParticipationFunction
    */
-  ConsenterParticipationFunction: "_ConsenterParticipationFunction",
+  _ConsenterParticipationFunction: "_ConsenterParticipationFunction",
 
   /**
    * legal guardian consent author
    */
-  legalguardianconsentauthor: "GRDCON",
+  GRDCON: "GRDCON",
 
   /**
    * healthcare power of attorney consent author
    */
-  healthcarepowerofattorneyconsentauthor: "POACON",
+  POACON: "POACON",
 
   /**
    * personal representative consent author
    */
-  personalrepresentativeconsentauthor: "PRCON",
+  PRCON: "PRCON",
 
   /**
    * authorized provider masking author
    */
-  authorizedprovidermaskingauthor: "PROMSK",
+  PROMSK: "PROMSK",
 
   /**
    * subject of consent author
    */
-  subjectofconsentauthor: "SUBCON",
+  SUBCON: "SUBCON",
 
   /**
    * OverriderParticipationFunction
    */
-  OverriderParticipationFunction: "_OverriderParticipationFunction",
+  _OverriderParticipationFunction: "_OverriderParticipationFunction",
 
   /**
    * consent overrider
    */
-  consentoverrider: "AUCOV",
+  AUCOV: "AUCOV",
 
   /**
    * emergency overrider
    */
-  emergencyoverrider: "AUEMROV",
+  AUEMROV: "AUEMROV",
 
   /**
    * CoverageParticipationFunction
    */
-  CoverageParticipationFunction: "_CoverageParticipationFunction",
+  _CoverageParticipationFunction: "_CoverageParticipationFunction",
 
   /**
    * PayorParticipationFunction
    */
-  PayorParticipationFunction: "_PayorParticipationFunction",
+  _PayorParticipationFunction: "_PayorParticipationFunction",
 
   /**
    * claims adjudication
    */
-  claimsadjudication: "CLMADJ",
+  CLMADJ: "CLMADJ",
 
   /**
    * enrollment broker
    */
-  enrollmentbroker: "ENROLL",
+  ENROLL: "ENROLL",
 
   /**
    * ffs management
    */
-  ffsmanagement: "FFSMGT",
+  FFSMGT: "FFSMGT",
 
   /**
    * managed care management
    */
-  managedcaremanagement: "MCMGT",
+  MCMGT: "MCMGT",
 
   /**
    * provider management
    */
-  providermanagement: "PROVMGT",
+  PROVMGT: "PROVMGT",
 
   /**
    * utilization management
    */
-  utilizationmanagement: "UMGT",
+  UMGT: "UMGT",
 
   /**
    * SponsorParticipationFunction
    */
-  SponsorParticipationFunction: "_SponsorParticipationFunction",
+  _SponsorParticipationFunction: "_SponsorParticipationFunction",
 
   /**
    * fully insured
    */
-  fullyinsured: "FULINRD",
+  FULINRD: "FULINRD",
 
   /**
    * self insured
    */
-  selfinsured: "SELFINRD",
+  SELFINRD: "SELFINRD",
 
   /**
    * UnderwriterParticipationFunction
    */
-  UnderwriterParticipationFunction: "_UnderwriterParticipationFunction",
+  _UnderwriterParticipationFunction: "_UnderwriterParticipationFunction",
 
   /**
    * payor contracting
    */
-  payorcontracting: "PAYORCNTR",
+  PAYORCNTR: "PAYORCNTR",
 
   /**
    * reinsures
    */
-  reinsures: "REINS",
+  REINS: "REINS",
 
   /**
    * retrocessionaires
    */
-  retrocessionaires: "RETROCES",
+  RETROCES: "RETROCES",
 
   /**
    * subcontracting risk
    */
-  subcontractingrisk: "SUBCTRT",
+  SUBCTRT: "SUBCTRT",
 
   /**
    * underwriting
    */
-  underwriting: "UNDERWRTNG",
+  UNDERWRTNG: "UNDERWRTNG",
 
   /**
    * admitting physician
    */
-  admittingphysician: "ADMPHYS",
+  ADMPHYS: "ADMPHYS",
 
   /**
    * anesthesist
    */
-  anesthesist: "ANEST",
+  ANEST: "ANEST",
 
   /**
    * anesthesia nurse
    */
-  anesthesianurse: "ANRS",
+  ANRS: "ANRS",
 
   /**
    * assembly software
    */
-  assemblysoftware: "ASSEMBLER",
+  ASSEMBLER: "ASSEMBLER",
 
   /**
    * attending physician
    */
-  attendingphysician: "ATTPHYS",
+  ATTPHYS: "ATTPHYS",
 
   /**
    * composer software
    */
-  composersoftware: "COMPOSER",
+  COMPOSER: "COMPOSER",
 
   /**
    * discharging physician
    */
-  dischargingphysician: "DISPHYS",
+  DISPHYS: "DISPHYS",
 
   /**
    * first assistant surgeon
    */
-  firstassistantsurgeon: "FASST",
+  FASST: "FASST",
 
   /**
    * midwife
    */
-  midwife: "MDWF",
+  MDWF: "MDWF",
 
   /**
    * nurse assistant
    */
-  nurseassistant: "NASST",
+  NASST: "NASST",
 
   /**
    * primary care physician
    */
-  primarycarephysician: "PCP",
+  PCP: "PCP",
 
   /**
    * primary surgeon
    */
-  primarysurgeon: "PRISURG",
+  PRISURG: "PRISURG",
 
   /**
    * reviewer
    */
-  reviewer: "REVIEWER",
+  REVIEWER: "REVIEWER",
 
   /**
    * rounding physician
    */
-  roundingphysician: "RNDPHYS",
+  RNDPHYS: "RNDPHYS",
 
   /**
    * second assistant surgeon
    */
-  secondassistantsurgeon: "SASST",
+  SASST: "SASST",
 
   /**
    * scrub nurse
    */
-  scrubnurse: "SNRS",
+  SNRS: "SNRS",
 
   /**
    * third assistant
    */
-  thirdassistant: "TASST",
+  TASST: "TASST",
 } as const;
 
 /**

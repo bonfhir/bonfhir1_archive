@@ -6,32 +6,32 @@ export const Hl7VSCumulativeDosageLimitUomCode = {
   /**
    * Annual
    */
-  Annual: "A",
+  A: "A",
 
   /**
    * Per Day
    */
-  PerDay: "D",
+  D: "D",
 
   /**
    * Per Month
    */
-  PerMonth: "M",
+  M: "M",
 
   /**
    * Duration of the Order
    */
-  DurationoftheOrder: "O",
+  O: "O",
 
   /**
    * Patients Lifetime
    */
-  PatientsLifetime: "PL",
+  PL: "PL",
 
   /**
    * Per Week
    */
-  PerWeek: "WK",
+  WK: "WK",
 } as const;
 
 /**

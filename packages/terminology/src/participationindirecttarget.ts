@@ -6,42 +6,42 @@ export const ParticipationIndirectTargetCode = {
   /**
    * indirect target
    */
-  indirecttarget: "IND",
+  IND: "IND",
 
   /**
    * beneficiary
    */
-  beneficiary: "BEN",
+  BEN: "BEN",
 
   /**
    * causative agent
    */
-  causativeagent: "CAGNT",
+  CAGNT: "CAGNT",
 
   /**
    * coverage target
    */
-  coveragetarget: "COV",
+  COV: "COV",
 
   /**
    * guarantor party
    */
-  guarantorparty: "GUAR",
+  GUAR: "GUAR",
 
   /**
    * holder
    */
-  holder: "HLD",
+  HLD: "HLD",
 
   /**
    * record target
    */
-  recordtarget: "RCT",
+  RCT: "RCT",
 
   /**
    * receiver
    */
-  receiver: "RCV",
+  RCV: "RCV",
 } as const;
 
 /**

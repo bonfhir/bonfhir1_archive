@@ -6,17 +6,17 @@ export const Hl7VSCertificationTypeCodeCode = {
   /**
    * Admitting
    */
-  Admitting: "ADM",
+  ADM: "ADM",
 
   /**
    * Service
    */
-  Service: "SERV",
+  SERV: "SERV",
 
   /**
    * Procedure
    */
-  Procedure: "PROC",
+  PROC: "PROC",
 } as const;
 
 /**

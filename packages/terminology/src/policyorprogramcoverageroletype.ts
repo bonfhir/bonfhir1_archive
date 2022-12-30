@@ -16,177 +16,177 @@ export const PolicyOrProgramCoverageRoleTypeCode = {
   /**
    * PolicyOrProgramCoverageRoleType
    */
-  PolicyOrProgramCoverageRoleType: "_PolicyOrProgramCoverageRoleType",
+  _PolicyOrProgramCoverageRoleType: "_PolicyOrProgramCoverageRoleType",
 
   /**
    * CoverageRoleType
    */
-  CoverageRoleType: "_CoverageRoleType",
+  _CoverageRoleType: "_CoverageRoleType",
 
   /**
    * family dependent
    */
-  familydependent: "FAMDEP",
+  FAMDEP: "FAMDEP",
 
   /**
    * handicapped dependent
    */
-  handicappeddependent: "HANDIC",
+  HANDIC: "HANDIC",
 
   /**
    * injured plaintiff
    */
-  injuredplaintiff: "INJ",
+  INJ: "INJ",
 
   /**
    * self
    */
-  self: "SELF",
+  SELF: "SELF",
 
   /**
    * sponsored dependent
    */
-  sponsoreddependent: "SPON",
+  SPON: "SPON",
 
   /**
    * student
    */
-  student: "STUD",
+  STUD: "STUD",
 
   /**
    * full-time student
    */
-  fulltimestudent: "FSTUD",
+  FSTUD: "FSTUD",
 
   /**
    * part-time student
    */
-  parttimestudent: "PSTUD",
+  PSTUD: "PSTUD",
 
   /**
    * adopted child
    */
-  adoptedchild: "ADOPT",
+  ADOPT: "ADOPT",
 
   /**
    * grandchild
    */
-  grandchild: "GCHILD",
+  GCHILD: "GCHILD",
 
   /**
    * grandparent
    */
-  grandparent: "GPARNT",
+  GPARNT: "GPARNT",
 
   /**
    * natural child
    */
-  naturalchild: "NAT",
+  NAT: "NAT",
 
   /**
    * niece/nephew
    */
-  niecenephew: "NIENE",
+  NIENE: "NIENE",
 
   /**
    * parent
    */
-  parent: "PARNT",
+  PARNT: "PARNT",
 
   /**
    * spouse
    */
-  spouse: "SPSE",
+  SPSE: "SPSE",
 
   /**
    * step child
    */
-  stepchild: "STEP",
+  STEP: "STEP",
 
   /**
    * covered party role type
    */
-  coveredpartyroletype: "_CoveredPartyRoleType",
+  _CoveredPartyRoleType: "_CoveredPartyRoleType",
 
   /**
    * ClaimantCoveredPartyRoleType
    */
-  ClaimantCoveredPartyRoleType: "_ClaimantCoveredPartyRoleType",
+  _ClaimantCoveredPartyRoleType: "_ClaimantCoveredPartyRoleType",
 
   /**
    * crime victim
    */
-  crimevictim: "CRIMEVIC",
+  CRIMEVIC: "CRIMEVIC",
 
   /**
    * injured worker
    */
-  injuredworker: "INJWKR",
+  INJWKR: "INJWKR",
 
   /**
    * DependentCoveredPartyRoleType
    */
-  DependentCoveredPartyRoleType: "_DependentCoveredPartyRoleType",
+  _DependentCoveredPartyRoleType: "_DependentCoveredPartyRoleType",
 
   /**
    * continuity of coverage beneficiary
    */
-  continuityofcoveragebeneficiary: "COCBEN",
+  COCBEN: "COCBEN",
 
   /**
    * differently abled
    */
-  differentlyabled: "DIFFABL",
+  DIFFABL: "DIFFABL",
 
   /**
    * ward
    */
-  ward: "WARD",
+  WARD: "WARD",
 
   /**
    * IndividualInsuredPartyRoleType
    */
-  IndividualInsuredPartyRoleType: "_IndividualInsuredPartyRoleType",
+  _IndividualInsuredPartyRoleType: "_IndividualInsuredPartyRoleType",
 
   /**
    * retiree
    */
-  retiree: "RETIREE",
+  RETIREE: "RETIREE",
 
   /**
    * ProgramEligiblePartyRoleType
    */
-  ProgramEligiblePartyRoleType: "_ProgramEligiblePartyRoleType",
+  _ProgramEligiblePartyRoleType: "_ProgramEligiblePartyRoleType",
 
   /**
    * member of an indigenous people
    */
-  memberofanindigenouspeople: "INDIG",
+  INDIG: "INDIG",
 
   /**
    * military
    */
-  military: "MIL",
+  MIL: "MIL",
 
   /**
    * active duty military
    */
-  activedutymilitary: "ACTMIL",
+  ACTMIL: "ACTMIL",
 
   /**
    * retired military
    */
-  retiredmilitary: "RETMIL",
+  RETMIL: "RETMIL",
 
   /**
    * veteran
    */
-  veteran: "VET",
+  VET: "VET",
 
   /**
    * SubscriberCoveredPartyRoleType
    */
-  SubscriberCoveredPartyRoleType: "_SubscriberCoveredPartyRoleType",
+  _SubscriberCoveredPartyRoleType: "_SubscriberCoveredPartyRoleType",
 } as const;
 
 /**

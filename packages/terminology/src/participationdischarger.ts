@@ -6,7 +6,7 @@ export const ParticipationDischargerCode = {
   /**
    * discharger
    */
-  discharger: "DIS",
+  DIS: "DIS",
 } as const;
 
 /**

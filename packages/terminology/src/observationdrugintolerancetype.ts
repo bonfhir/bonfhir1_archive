@@ -6,17 +6,17 @@ export const ObservationDrugIntoleranceTypeCode = {
   /**
    * Drug Intolerance
    */
-  DrugIntolerance: "DINT",
+  DINT: "DINT",
 
   /**
    * Drug Allergy
    */
-  DrugAllergy: "DALG",
+  DALG: "DALG",
 
   /**
    * Drug Non-Allergy Intolerance
    */
-  DrugNonAllergyIntolerance: "DNAINT",
+  DNAINT: "DNAINT",
 } as const;
 
 /**

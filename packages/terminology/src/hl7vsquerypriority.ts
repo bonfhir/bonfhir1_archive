@@ -6,12 +6,12 @@ export const Hl7VSQueryPriorityCode = {
   /**
    * Deferred
    */
-  Deferred: "D",
+  D: "D",
 
   /**
    * Immediate
    */
-  Immediate: "I",
+  I: "I",
 } as const;
 
 /**

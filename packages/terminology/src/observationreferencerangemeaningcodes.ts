@@ -6,67 +6,67 @@ export const ObservationReferenceRangeMeaningCodesCode = {
   /**
    * Type
    */
-  Type: "type",
+  type: "type",
 
   /**
    * Normal Range
    */
-  NormalRange: "normal",
+  normal: "normal",
 
   /**
    * Recommended Range
    */
-  RecommendedRange: "recommended",
+  recommended: "recommended",
 
   /**
    * Treatment Range
    */
-  TreatmentRange: "treatment",
+  treatment: "treatment",
 
   /**
    * Therapeutic Desired Level
    */
-  TherapeuticDesiredLevel: "therapeutic",
+  therapeutic: "therapeutic",
 
   /**
    * Pre Therapeutic Desired Level
    */
-  PreTherapeuticDesiredLevel: "pre",
+  pre: "pre",
 
   /**
    * Post Therapeutic Desired Level
    */
-  PostTherapeuticDesiredLevel: "post",
+  post: "post",
 
   /**
    * Endocrine
    */
-  Endocrine: "endocrine",
+  endocrine: "endocrine",
 
   /**
    * Pre-Puberty
    */
-  PrePuberty: "pre-puberty",
+  "pre-puberty": "pre-puberty",
 
   /**
    * Follicular Stage
    */
-  FollicularStage: "follicular",
+  follicular: "follicular",
 
   /**
    * MidCycle
    */
-  MidCycle: "midcycle",
+  midcycle: "midcycle",
 
   /**
    * Luteal
    */
-  Luteal: "luteal",
+  luteal: "luteal",
 
   /**
    * Post-Menopause
    */
-  PostMenopause: "postmenopausal",
+  postmenopausal: "postmenopausal",
 } as const;
 
 /**

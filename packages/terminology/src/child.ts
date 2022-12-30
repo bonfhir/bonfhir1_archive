@@ -6,77 +6,77 @@ export const ChildCode = {
   /**
    * child
    */
-  child: "CHILD",
+  CHILD: "CHILD",
 
   /**
    * adopted child
    */
-  adoptedchild: "CHLDADOPT",
+  CHLDADOPT: "CHLDADOPT",
 
   /**
    * adopted daughter
    */
-  adopteddaughter: "DAUADOPT",
+  DAUADOPT: "DAUADOPT",
 
   /**
    * adopted son
    */
-  adoptedson: "SONADOPT",
+  SONADOPT: "SONADOPT",
 
   /**
    * foster child
    */
-  fosterchild: "CHLDFOST",
+  CHLDFOST: "CHLDFOST",
 
   /**
    * foster daughter
    */
-  fosterdaughter: "DAUFOST",
+  DAUFOST: "DAUFOST",
 
   /**
    * foster son
    */
-  fosterson: "SONFOST",
+  SONFOST: "SONFOST",
 
   /**
    * daughter
    */
-  daughter: "DAUC",
+  DAUC: "DAUC",
 
   /**
    * natural daughter
    */
-  naturaldaughter: "DAU",
+  DAU: "DAU",
 
   /**
    * stepdaughter
    */
-  stepdaughter: "STPDAU",
+  STPDAU: "STPDAU",
 
   /**
    * natural child
    */
-  naturalchild: "NCHILD",
+  NCHILD: "NCHILD",
 
   /**
    * natural son
    */
-  naturalson: "SON",
+  SON: "SON",
 
   /**
    * son
    */
-  son: "SONC",
+  SONC: "SONC",
 
   /**
    * stepson
    */
-  stepson: "STPSON",
+  STPSON: "STPSON",
 
   /**
    * step child
    */
-  stepchild: "STPCHLD",
+  STPCHLD: "STPCHLD",
 } as const;
 
 /**

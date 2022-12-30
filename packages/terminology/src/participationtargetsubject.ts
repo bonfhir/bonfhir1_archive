@@ -6,12 +6,12 @@ export const ParticipationTargetSubjectCode = {
   /**
    * subject
    */
-  subject: "SBJ",
+  SBJ: "SBJ",
 
   /**
    * specimen
    */
-  specimen: "SPC",
+  SPC: "SPC",
 } as const;
 
 /**

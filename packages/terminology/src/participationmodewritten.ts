@@ -6,57 +6,57 @@ export const ParticipationModeWrittenCode = {
   /**
    * written
    */
-  written: "WRITTEN",
+  WRITTEN: "WRITTEN",
 
   /**
    * telefax
    */
-  telefax: "FAXWRIT",
+  FAXWRIT: "FAXWRIT",
 
   /**
    * handwritten
    */
-  handwritten: "HANDWRIT",
+  HANDWRIT: "HANDWRIT",
 
   /**
    * mail
    */
-  mail: "MAILWRIT",
+  MAILWRIT: "MAILWRIT",
 
   /**
    * online written
    */
-  onlinewritten: "ONLINEWRIT",
+  ONLINEWRIT: "ONLINEWRIT",
 
   /**
    * email
    */
-  email: "EMAILWRIT",
+  EMAILWRIT: "EMAILWRIT",
 
   /**
    * typewritten
    */
-  typewritten: "TYPEWRIT",
+  TYPEWRIT: "TYPEWRIT",
 
   /**
    * messaging
    */
-  messaging: "MSGWRIT",
+  MSGWRIT: "MSGWRIT",
 
   /**
    * SMS message
    */
-  SMSmessage: "SMSWRIT",
+  SMSWRIT: "SMSWRIT",
 
   /**
    * MMS message
    */
-  MMSmessage: "MMSWRIT",
+  MMSWRIT: "MMSWRIT",
 
   /**
    * messaging app
    */
-  messagingapp: "APPWRIT",
+  APPWRIT: "APPWRIT",
 } as const;
 
 /**

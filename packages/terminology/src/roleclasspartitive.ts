@@ -6,137 +6,137 @@ export const RoleClassPartitiveCode = {
   /**
    * content
    */
-  content: "CONT",
+  CONT: "CONT",
 
   /**
    * exposure agent carrier
    */
-  exposureagentcarrier: "EXPAGTCAR",
+  EXPAGTCAR: "EXPAGTCAR",
 
   /**
    * exposure vector
    */
-  exposurevector: "EXPVECTOR",
+  EXPVECTOR: "EXPVECTOR",
 
   /**
    * fomite
    */
-  fomite: "FOMITE",
+  FOMITE: "FOMITE",
 
   /**
    * ingredient
    */
-  ingredient: "INGR",
+  INGR: "INGR",
 
   /**
    * active ingredient
    */
-  activeingredient: "ACTI",
+  ACTI: "ACTI",
 
   /**
    * active ingredient - basis of strength
    */
-  activeingredientbasisofstrength: "ACTIB",
+  ACTIB: "ACTIB",
 
   /**
    * active ingredient - moiety is basis of strength
    */
-  activeingredientmoietyisbasisofstrength: "ACTIM",
+  ACTIM: "ACTIM",
 
   /**
    * active ingredient - reference substance is basis of strength
    */
-  activeingredientreferencesubstanceisbasisofstrength: "ACTIR",
+  ACTIR: "ACTIR",
 
   /**
    * adjuvant
    */
-  adjuvant: "ADJV",
+  ADJV: "ADJV",
 
   /**
    * additive
    */
-  additive: "ADTV",
+  ADTV: "ADTV",
 
   /**
    * base
    */
-  base: "BASE",
+  BASE: "BASE",
 
   /**
    * contaminant ingredient
    */
-  contaminantingredient: "CNTM",
+  CNTM: "CNTM",
 
   /**
    * inactive ingredient
    */
-  inactiveingredient: "IACT",
+  IACT: "IACT",
 
   /**
    * color additive
    */
-  coloradditive: "COLR",
+  COLR: "COLR",
 
   /**
    * flavor additive
    */
-  flavoradditive: "FLVR",
+  FLVR: "FLVR",
 
   /**
    * preservative
    */
-  preservative: "PRSV",
+  PRSV: "PRSV",
 
   /**
    * stabilizer
    */
-  stabilizer: "STBL",
+  STBL: "STBL",
 
   /**
    * mechanical ingredient
    */
-  mechanicalingredient: "MECH",
+  MECH: "MECH",
 
   /**
    * located entity
    */
-  locatedentity: "LOCE",
+  LOCE: "LOCE",
 
   /**
    * stored entity
    */
-  storedentity: "STOR",
+  STOR: "STOR",
 
   /**
    * member
    */
-  member: "MBR",
+  MBR: "MBR",
 
   /**
    * part
    */
-  part: "PART",
+  PART: "PART",
 
   /**
    * active moiety
    */
-  activemoiety: "ACTM",
+  ACTM: "ACTM",
 
   /**
    * specimen
    */
-  specimen: "SPEC",
+  SPEC: "SPEC",
 
   /**
    * aliquot
    */
-  aliquot: "ALQT",
+  ALQT: "ALQT",
 
   /**
    * isolate
    */
-  isolate: "ISLT",
+  ISLT: "ISLT",
 } as const;
 
 /**

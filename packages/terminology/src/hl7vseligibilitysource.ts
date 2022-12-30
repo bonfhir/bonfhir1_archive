@@ -6,37 +6,37 @@ export const Hl7VSEligibilitySourceCode = {
   /**
    * Insurance company
    */
-  Insurancecompany: "1",
+  "1": "1",
 
   /**
    * Employer
    */
-  Employer: "2",
+  "2": "2",
 
   /**
    * Insured presented policy
    */
-  Insuredpresentedpolicy: "3",
+  "3": "3",
 
   /**
    * Insured presented card
    */
-  Insuredpresentedcard: "4",
+  "4": "4",
 
   /**
    * Signed statement on file
    */
-  Signedstatementonfile: "5",
+  "5": "5",
 
   /**
    * Verbal information
    */
-  Verbalinformation: "6",
+  "6": "6",
 
   /**
    * None
    */
-  None: "7",
+  "7": "7",
 } as const;
 
 /**

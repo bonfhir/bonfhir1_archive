@@ -6,27 +6,27 @@ export const IntraocularRouteCode = {
   /**
    * Injection, intraocular
    */
-  Injectionintraocular: "IOINJ",
+  IOINJ: "IOINJ",
 
   /**
    * Insertion, intraocular, surgical
    */
-  Insertionintraocularsurgical: "IOSURGINS",
+  IOSURGINS: "IOSURGINS",
 
   /**
    * Instillation, intraocular
    */
-  Instillationintraocular: "IOINSTL",
+  IOINSTL: "IOINSTL",
 
   /**
    * Irrigation, intraocular
    */
-  Irrigationintraocular: "IOIRR",
+  IOIRR: "IOIRR",
 
   /**
    * Topical application, intraocular
    */
-  Topicalapplicationintraocular: "IOTOP",
+  IOTOP: "IOTOP",
 } as const;
 
 /**

@@ -6,37 +6,37 @@ export const ParticipationAncillaryCode = {
   /**
    * admitter
    */
-  admitter: "ADM",
+  ADM: "ADM",
 
   /**
    * attender
    */
-  attender: "ATND",
+  ATND: "ATND",
 
   /**
    * callback contact
    */
-  callbackcontact: "CALLBCK",
+  CALLBCK: "CALLBCK",
 
   /**
    * consultant
    */
-  consultant: "CON",
+  CON: "CON",
 
   /**
    * discharger
    */
-  discharger: "DIS",
+  DIS: "DIS",
 
   /**
    * escort
    */
-  escort: "ESC",
+  ESC: "ESC",
 
   /**
    * referrer
    */
-  referrer: "REF",
+  REF: "REF",
 } as const;
 
 /**

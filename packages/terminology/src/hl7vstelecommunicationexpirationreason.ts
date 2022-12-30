@@ -6,27 +6,27 @@ export const Hl7VSTelecommunicationExpirationReasonCode = {
   /**
    * Moved
    */
-  Moved: "M",
+  M: "M",
 
   /**
    * Added in error
    */
-  Addedinerror: "E",
+  E: "E",
 
   /**
    * On request
    */
-  Onrequest: "R",
+  R: "R",
 
   /**
    * Corrected
    */
-  Corrected: "C",
+  C: "C",
 
   /**
    * No longer in service
    */
-  Nolongerinservice: "N",
+  N: "N",
 } as const;
 
 /**

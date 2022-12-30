@@ -6,72 +6,72 @@ export const Hl7VSRiskManagementIncidentCodeCode = {
   /**
    * Body fluid exposure
    */
-  Bodyfluidexposure: "B",
+  B: "B",
 
   /**
    * Contaminated Substance
    */
-  ContaminatedSubstance: "C",
+  C: "C",
 
   /**
    * Diet Errors
    */
-  DietErrors: "D",
+  D: "D",
 
   /**
    * Equipment problem
    */
-  Equipmentproblem: "E",
+  E: "E",
 
   /**
    * Patient fell (not from bed)
    */
-  Patientfellnotfrombed: "F",
+  F: "F",
 
   /**
    * Patient fell from bed
    */
-  Patientfellfrombed: "H",
+  H: "H",
 
   /**
    * Infusion error
    */
-  Infusionerror: "I",
+  I: "I",
 
   /**
    * Foreign object left during surgery
    */
-  Foreignobjectleftduringsurgery: "J",
+  J: "J",
 
   /**
    * Sterile precaution violated
    */
-  Sterileprecautionviolated: "K",
+  K: "K",
 
   /**
    * Procedure error
    */
-  Procedureerror: "P",
+  P: "P",
 
   /**
    * Pharmaceutical error
    */
-  Pharmaceuticalerror: "R",
+  R: "R",
 
   /**
    * Suicide Attempt
    */
-  SuicideAttempt: "S",
+  S: "S",
 
   /**
    * Transfusion error
    */
-  Transfusionerror: "T",
+  T: "T",
 
   /**
    * Other
    */
-  Other: "O",
+  O: "O",
 } as const;
 
 /**

@@ -6,27 +6,27 @@ export const ImageMediaTypeCode = {
   /**
    * G3Fax Image
    */
-  G3FaxImage: "image/g3fax",
+  "image/g3fax": "image/g3fax",
 
   /**
    * GIF Image
    */
-  GIFImage: "image/gif",
+  "image/gif": "image/gif",
 
   /**
    * JPEG Image
    */
-  JPEGImage: "image/jpeg",
+  "image/jpeg": "image/jpeg",
 
   /**
    * PNG Image
    */
-  PNGImage: "image/png",
+  "image/png": "image/png",
 
   /**
    * TIFF Image
    */
-  TIFFImage: "image/tiff",
+  "image/tiff": "image/tiff",
 } as const;
 
 /**

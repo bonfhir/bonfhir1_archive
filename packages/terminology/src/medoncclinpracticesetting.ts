@@ -6,12 +6,12 @@ export const MedOncClinPracticeSettingCode = {
   /**
    * Medical oncology clinic
    */
-  Medicaloncologyclinic: "ONCL",
+  ONCL: "ONCL",
 
   /**
    * Pediatric oncology clinic
    */
-  Pediatriconcologyclinic: "PEDHO",
+  PEDHO: "PEDHO",
 } as const;
 
 /**

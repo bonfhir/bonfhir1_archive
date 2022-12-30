@@ -6,32 +6,32 @@ export const Hl7VSProcessingModeCode = {
   /**
    * Archive
    */
-  Archive: "A",
+  A: "A",
 
   /**
    * Restore from archive
    */
-  Restorefromarchive: "R",
+  R: "R",
 
   /**
    * Initial load
    */
-  Initialload: "I",
+  I: "I",
 
   /**
    * Current processing, transmitted at intervals (scheduled or on demand)
    */
-  Currentprocessingtransmittedatintervalsscheduledorondemand: "T",
+  T: "T",
 
   /**
    * Not present (the default, meaning current  processing)
    */
-  Notpresentthedefaultmeaningcurrentprocessing: "Not present",
+  "Not present": "Not present",
 
   /**
    * Not present (the default, meaning current  processing)
    */
-  Notpresentthedefaultmeaningcurrentprocessing: "not present",
+  "not present": "not present",
 } as const;
 
 /**

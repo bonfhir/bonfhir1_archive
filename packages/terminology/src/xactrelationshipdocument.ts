@@ -6,17 +6,17 @@ export const XActRelationshipDocumentCode = {
   /**
    * is appendage
    */
-  isappendage: "APND",
+  APND: "APND",
 
   /**
    * replaces
    */
-  replaces: "RPLC",
+  RPLC: "RPLC",
 
   /**
    * transformation
    */
-  transformation: "XFRM",
+  XFRM: "XFRM",
 } as const;
 
 /**

@@ -6,7 +6,7 @@ export const RoleClassTerritoryOfAuthorityCode = {
   /**
    * territory of authority
    */
-  territoryofauthority: "TERR",
+  TERR: "TERR",
 } as const;
 
 /**

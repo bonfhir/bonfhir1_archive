@@ -6,22 +6,22 @@ export const ClinicalResearchEventReasonCode = {
   /**
    * retest
    */
-  retest: "RET",
+  RET: "RET",
 
   /**
    * scheduled
    */
-  scheduled: "SCH",
+  SCH: "SCH",
 
   /**
    * termination
    */
-  termination: "TRM",
+  TRM: "TRM",
 
   /**
    * unscheduled
    */
-  unscheduled: "UNS",
+  UNS: "UNS",
 } as const;
 
 /**

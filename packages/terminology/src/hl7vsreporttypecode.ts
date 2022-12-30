@@ -6,72 +6,72 @@ export const Hl7VSReportTypeCodeCode = {
   /**
    * Autopsy report
    */
-  Autopsyreport: "AR",
+  AR: "AR",
 
   /**
    * Cardiodiagnostics
    */
-  Cardiodiagnostics: "CD",
+  CD: "CD",
 
   /**
    * Consultation
    */
-  Consultation: "CN",
+  CN: "CN",
 
   /**
    * Diagnostic imaging
    */
-  Diagnosticimaging: "DI",
+  DI: "DI",
 
   /**
    * Discharge summary
    */
-  Dischargesummary: "DS",
+  DS: "DS",
 
   /**
    * Emergency department report
    */
-  Emergencydepartmentreport: "ED",
+  ED: "ED",
 
   /**
    * History and physical examination
    */
-  Historyandphysicalexamination: "HP",
+  HP: "HP",
 
   /**
    * Operative report
    */
-  Operativereport: "OP",
+  OP: "OP",
 
   /**
    * Psychiatric consultation
    */
-  Psychiatricconsultation: "PC",
+  PC: "PC",
 
   /**
    * Psychiatric history and physical examination
    */
-  Psychiatrichistoryandphysicalexamination: "PH",
+  PH: "PH",
 
   /**
    * Procedure note
    */
-  Procedurenote: "PN",
+  PN: "PN",
 
   /**
    * Progress note
    */
-  Progressnote: "PR",
+  PR: "PR",
 
   /**
    * Surgical pathology
    */
-  Surgicalpathology: "SP",
+  SP: "SP",
 
   /**
    * Transfer summary
    */
-  Transfersummary: "TS",
+  TS: "TS",
 } as const;
 
 /**

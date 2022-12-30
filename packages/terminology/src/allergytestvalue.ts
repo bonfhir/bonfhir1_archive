@@ -6,32 +6,32 @@ export const AllergyTestValueCode = {
   /**
    * AllergyTestValue
    */
-  AllergyTestValue: "_AllergyTestValue",
+  _AllergyTestValue: "_AllergyTestValue",
 
   /**
    * no reaction
    */
-  noreaction: "A0",
+  A0: "A0",
 
   /**
    * minimal reaction
    */
-  minimalreaction: "A1",
+  A1: "A1",
 
   /**
    * mild reaction
    */
-  mildreaction: "A2",
+  A2: "A2",
 
   /**
    * moderate reaction
    */
-  moderatereaction: "A3",
+  A3: "A3",
 
   /**
    * severe reaction
    */
-  severereaction: "A4",
+  A4: "A4",
 } as const;
 
 /**

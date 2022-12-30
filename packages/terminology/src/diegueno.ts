@@ -6,7 +6,7 @@ export const DieguenoCode = {
   /**
    * Kumeyaay
    */
-  Kumeyaay: "x-DIH",
+  "x-DIH": "x-DIH",
 } as const;
 
 /**

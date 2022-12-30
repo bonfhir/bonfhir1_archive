@@ -6,67 +6,67 @@ export const GasLiquidMixtureCode = {
   /**
    * Aerosol
    */
-  Aerosol: "AER",
+  AER: "AER",
 
   /**
    * Breath Activated Inhaler
    */
-  BreathActivatedInhaler: "BAINHL",
+  BAINHL: "BAINHL",
 
   /**
    * Inhalant Solution
    */
-  InhalantSolution: "INHLSOL",
+  INHLSOL: "INHLSOL",
 
   /**
    * Metered Dose Inhaler
    */
-  MeteredDoseInhaler: "MDINHL",
+  MDINHL: "MDINHL",
 
   /**
    * Nasal Spray
    */
-  NasalSpray: "NASSPRY",
+  NASSPRY: "NASSPRY",
 
   /**
    * Dermal Spray
    */
-  DermalSpray: "DERMSPRY",
+  DERMSPRY: "DERMSPRY",
 
   /**
    * Foam
    */
-  Foam: "FOAM",
+  FOAM: "FOAM",
 
   /**
    * Foam with Applicator
    */
-  FoamwithApplicator: "FOAMAPL",
+  FOAMAPL: "FOAMAPL",
 
   /**
    * Rectal foam
    */
-  Rectalfoam: "RECFORM",
+  RECFORM: "RECFORM",
 
   /**
    * Vaginal foam
    */
-  Vaginalfoam: "VAGFOAM",
+  VAGFOAM: "VAGFOAM",
 
   /**
    * Vaginal foam with applicator
    */
-  Vaginalfoamwithapplicator: "VAGFOAMAPL",
+  VAGFOAMAPL: "VAGFOAMAPL",
 
   /**
    * Rectal Spray
    */
-  RectalSpray: "RECSPRY",
+  RECSPRY: "RECSPRY",
 
   /**
    * Vaginal Spray
    */
-  VaginalSpray: "VAGSPRY",
+  VAGSPRY: "VAGSPRY",
 } as const;
 
 /**

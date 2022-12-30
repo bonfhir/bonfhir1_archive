@@ -6,27 +6,27 @@ export const Hl7VSAnnotationsCode = {
   /**
    * Pace spike
    */
-  Pacespike: "9900",
+  "9900": "9900",
 
   /**
    * SAS marker
    */
-  SASmarker: "9901",
+  "9901": "9901",
 
   /**
    * Sense marker
    */
-  Sensemarker: "9902",
+  "9902": "9902",
 
   /**
    * Beat marker
    */
-  Beatmarker: "9903",
+  "9903": "9903",
 
   /**
    * etc.
    */
-  etc: "9904",
+  "9904": "9904",
 } as const;
 
 /**

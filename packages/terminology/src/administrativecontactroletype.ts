@@ -6,17 +6,17 @@ export const AdministrativeContactRoleTypeCode = {
   /**
    * Billing Contact
    */
-  BillingContact: "BILL",
+  BILL: "BILL",
 
   /**
    * organizational contact
    */
-  organizationalcontact: "ORG",
+  ORG: "ORG",
 
   /**
    * Payor Contact
    */
-  PayorContact: "PAYOR",
+  PAYOR: "PAYOR",
 } as const;
 
 /**

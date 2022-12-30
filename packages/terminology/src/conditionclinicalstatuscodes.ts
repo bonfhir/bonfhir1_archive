@@ -6,37 +6,37 @@ export const ConditionClinicalStatusCodesCode = {
   /**
    * Active
    */
-  Active: "active",
+  active: "active",
 
   /**
    * Recurrence
    */
-  Recurrence: "recurrence",
+  recurrence: "recurrence",
 
   /**
    * Relapse
    */
-  Relapse: "relapse",
+  relapse: "relapse",
 
   /**
    * Inactive
    */
-  Inactive: "inactive",
+  inactive: "inactive",
 
   /**
    * Remission
    */
-  Remission: "remission",
+  remission: "remission",
 
   /**
    * Resolved
    */
-  Resolved: "resolved",
+  resolved: "resolved",
 
   /**
    * Unknown
    */
-  Unknown: "unknown",
+  unknown: "unknown",
 } as const;
 
 /**

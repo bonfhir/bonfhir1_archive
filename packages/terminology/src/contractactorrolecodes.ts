@@ -6,12 +6,12 @@ export const ContractActorRoleCodesCode = {
   /**
    * Practitioner
    */
-  Practitioner: "practitioner",
+  practitioner: "practitioner",
 
   /**
    * Patient
    */
-  Patient: "patient",
+  patient: "patient",
 } as const;
 
 /**

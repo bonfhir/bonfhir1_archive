@@ -6,17 +6,17 @@ export const XActMoodDefEvnRqoCode = {
   /**
    * definition
    */
-  definition: "DEF",
+  DEF: "DEF",
 
   /**
    * event (occurrence)
    */
-  eventoccurrence: "EVN",
+  EVN: "EVN",
 
   /**
    * request
    */
-  request: "RQO",
+  RQO: "RQO",
 } as const;
 
 /**

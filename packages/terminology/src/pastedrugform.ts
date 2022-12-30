@@ -6,17 +6,17 @@ export const PasteDrugFormCode = {
   /**
    * Paste
    */
-  Paste: "PASTE",
+  PASTE: "PASTE",
 
   /**
    * Pudding
    */
-  Pudding: "PUD",
+  PUD: "PUD",
 
   /**
    * Toothpaste
    */
-  Toothpaste: "TPASTE",
+  TPASTE: "TPASTE",
 } as const;
 
 /**

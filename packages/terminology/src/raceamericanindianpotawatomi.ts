@@ -6,42 +6,42 @@ export const RaceAmericanIndianPotawatomiCode = {
   /**
    * Potawatomi
    */
-  Potawatomi: "1478-7",
+  "1478-7": "1478-7",
 
   /**
    * Citizen Band Potawatomi
    */
-  CitizenBandPotawatomi: "1479-5",
+  "1479-5": "1479-5",
 
   /**
    * Forest County
    */
-  ForestCounty: "1480-3",
+  "1480-3": "1480-3",
 
   /**
    * Hannahville
    */
-  Hannahville: "1481-1",
+  "1481-1": "1481-1",
 
   /**
    * Huron Potawatomi
    */
-  HuronPotawatomi: "1482-9",
+  "1482-9": "1482-9",
 
   /**
    * Pokagon Potawatomi
    */
-  PokagonPotawatomi: "1483-7",
+  "1483-7": "1483-7",
 
   /**
    * Prairie Band
    */
-  PrairieBand: "1484-5",
+  "1484-5": "1484-5",
 
   /**
    * Wisconsin Potawatomi
    */
-  WisconsinPotawatomi: "1485-2",
+  "1485-2": "1485-2",
 } as const;
 
 /**

@@ -6,12 +6,12 @@ export const EndocervicalRouteCode = {
   /**
    * Injection, amniotic fluid
    */
-  Injectionamnioticfluid: "AMNINJ",
+  AMNINJ: "AMNINJ",
 
   /**
    * Injection, biliary tract
    */
-  Injectionbiliarytract: "BILINJ",
+  BILINJ: "BILINJ",
 } as const;
 
 /**

@@ -6,87 +6,87 @@ export const ActInformationAccessCodeCode = {
   /**
    * ActInformationAccessCode
    */
-  ActInformationAccessCode: "_ActInformationAccessCode",
+  _ActInformationAccessCode: "_ActInformationAccessCode",
 
   /**
    * adverse drug reaction access
    */
-  adversedrugreactionaccess: "ACADR",
+  ACADR: "ACADR",
 
   /**
    * all access
    */
-  allaccess: "ACALL",
+  ACALL: "ACALL",
 
   /**
    * allergy access
    */
-  allergyaccess: "ACALLG",
+  ACALLG: "ACALLG",
 
   /**
    * informational consent access
    */
-  informationalconsentaccess: "ACCONS",
+  ACCONS: "ACCONS",
 
   /**
    * demographics access
    */
-  demographicsaccess: "ACDEMO",
+  ACDEMO: "ACDEMO",
 
   /**
    * diagnostic imaging access
    */
-  diagnosticimagingaccess: "ACDI",
+  ACDI: "ACDI",
 
   /**
    * immunization access
    */
-  immunizationaccess: "ACIMMUN",
+  ACIMMUN: "ACIMMUN",
 
   /**
    * lab test result access
    */
-  labtestresultaccess: "ACLAB",
+  ACLAB: "ACLAB",
 
   /**
    * medication access
    */
-  medicationaccess: "ACMED",
+  ACMED: "ACMED",
 
   /**
    * medical condition access
    */
-  medicalconditionaccess: "ACMEDC",
+  ACMEDC: "ACMEDC",
 
   /**
    * mental health access
    */
-  mentalhealthaccess: "ACMEN",
+  ACMEN: "ACMEN",
 
   /**
    * common observations access
    */
-  commonobservationsaccess: "ACOBS",
+  ACOBS: "ACOBS",
 
   /**
    * policy or program information access
    */
-  policyorprograminformationaccess: "ACPOLPRG",
+  ACPOLPRG: "ACPOLPRG",
 
   /**
    * provider information access
    */
-  providerinformationaccess: "ACPROV",
+  ACPROV: "ACPROV",
 
   /**
    * professional service access
    */
-  professionalserviceaccess: "ACPSERV",
+  ACPSERV: "ACPSERV",
 
   /**
    * substance abuse access
    */
-  substanceabuseaccess: "ACSUBSTAB",
+  ACSUBSTAB: "ACSUBSTAB",
 } as const;
 
 /**

@@ -6,12 +6,12 @@ export const XActRelationshipEntryCode = {
   /**
    * has component
    */
-  hascomponent: "COMP",
+  COMP: "COMP",
 
   /**
    * is derived from
    */
-  isderivedfrom: "DRIV",
+  DRIV: "DRIV",
 } as const;
 
 /**

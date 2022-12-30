@@ -6,7 +6,7 @@ export const UnorderedListStyleCode = {
   /**
    * Unordered List Style
    */
-  UnorderedListStyle: "_UnorderedListStyle",
+  _UnorderedListStyle: "_UnorderedListStyle",
 
   /**
    * Circle

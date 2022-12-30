@@ -6,32 +6,32 @@ export const ConsenterParticipationFunctionCode = {
   /**
    * ConsenterParticipationFunction
    */
-  ConsenterParticipationFunction: "_ConsenterParticipationFunction",
+  _ConsenterParticipationFunction: "_ConsenterParticipationFunction",
 
   /**
    * legal guardian consent author
    */
-  legalguardianconsentauthor: "GRDCON",
+  GRDCON: "GRDCON",
 
   /**
    * healthcare power of attorney consent author
    */
-  healthcarepowerofattorneyconsentauthor: "POACON",
+  POACON: "POACON",
 
   /**
    * personal representative consent author
    */
-  personalrepresentativeconsentauthor: "PRCON",
+  PRCON: "PRCON",
 
   /**
    * authorized provider masking author
    */
-  authorizedprovidermaskingauthor: "PROMSK",
+  PROMSK: "PROMSK",
 
   /**
    * subject of consent author
    */
-  subjectofconsentauthor: "SUBCON",
+  SUBCON: "SUBCON",
 } as const;
 
 /**

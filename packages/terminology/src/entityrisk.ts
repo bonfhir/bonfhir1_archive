@@ -6,57 +6,57 @@ export const EntityRiskCode = {
   /**
    * aggressive
    */
-  aggressive: "AGG",
+  AGG: "AGG",
 
   /**
    * Biological
    */
-  Biological: "BIO",
+  BIO: "BIO",
 
   /**
    * Corrosive
    */
-  Corrosive: "COR",
+  COR: "COR",
 
   /**
    * Escape Risk
    */
-  EscapeRisk: "ESC",
+  ESC: "ESC",
 
   /**
    * injury hazard
    */
-  injuryhazard: "INJ",
+  INJ: "INJ",
 
   /**
    * poison
    */
-  poison: "POI",
+  POI: "POI",
 
   /**
    * radioactive
    */
-  radioactive: "RAD",
+  RAD: "RAD",
 
   /**
    * infectious
    */
-  infectious: "INF",
+  INF: "INF",
 
   /**
    * biohazard
    */
-  biohazard: "BHZ",
+  BHZ: "BHZ",
 
   /**
    * inflammable
    */
-  inflammable: "IFL",
+  IFL: "IFL",
 
   /**
    * explosive
    */
-  explosive: "EXP",
+  EXP: "EXP",
 } as const;
 
 /**

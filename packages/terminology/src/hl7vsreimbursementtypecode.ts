@@ -6,52 +6,52 @@ export const Hl7VSReimbursementTypeCodeCode = {
   /**
    * Outpatient Prospective Payment System
    */
-  OutpatientProspectivePaymentSystem: "OPPS",
+  OPPS: "OPPS",
 
   /**
    * Packaged APC
    */
-  PackagedAPC: "Pckg",
+  Pckg: "Pckg",
 
   /**
    * Clinical Laboratory APC
    */
-  ClinicalLaboratoryAPC: "Lab",
+  Lab: "Lab",
 
   /**
    * Therapy APC
    */
-  TherapyAPC: "Thrpy",
+  Thrpy: "Thrpy",
 
   /**
    * Durable Medical Equipment
    */
-  DurableMedicalEquipment: "DME",
+  DME: "DME",
 
   /**
    * Epotein
    */
-  Epotein: "EPO",
+  EPO: "EPO",
 
   /**
    * Screening Mammography APC
    */
-  ScreeningMammographyAPC: "Mamm",
+  Mamm: "Mamm",
 
   /**
    * Partial Hospitalization APC
    */
-  PartialHospitalizationAPC: "PartH",
+  PartH: "PartH",
 
   /**
    * Corneal Tissue APC
    */
-  CornealTissueAPC: "Crnl",
+  Crnl: "Crnl",
 
   /**
    * This APC is not paid
    */
-  ThisAPCisnotpaid: "NoPay",
+  NoPay: "NoPay",
 } as const;
 
 /**

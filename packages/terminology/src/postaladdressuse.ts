@@ -6,82 +6,82 @@ export const PostalAddressUseCode = {
   /**
    * bad address
    */
-  badaddress: "BAD",
+  BAD: "BAD",
 
   /**
    * direct
    */
-  direct: "DIR",
+  DIR: "DIR",
 
   /**
    * home address
    */
-  homeaddress: "H",
+  H: "H",
 
   /**
    * primary home
    */
-  primaryhome: "HP",
+  HP: "HP",
 
   /**
    * vacation home
    */
-  vacationhome: "HV",
+  HV: "HV",
 
   /**
    * physical visit address
    */
-  physicalvisitaddress: "PHYS",
+  PHYS: "PHYS",
 
   /**
    * postal address
    */
-  postaladdress: "PST",
+  PST: "PST",
 
   /**
    * public
    */
-  public: "PUB",
+  PUB: "PUB",
 
   /**
    * temporary address
    */
-  temporaryaddress: "TMP",
+  TMP: "TMP",
 
   /**
    * work place
    */
-  workplace: "WP",
+  WP: "WP",
 
   /**
    * Alphabetic
    */
-  Alphabetic: "ABC",
+  ABC: "ABC",
 
   /**
    * Ideographic
    */
-  Ideographic: "IDE",
+  IDE: "IDE",
 
   /**
    * Syllabic
    */
-  Syllabic: "SYL",
+  SYL: "SYL",
 
   /**
    * search
    */
-  search: "SRCH",
+  SRCH: "SRCH",
 
   /**
    * phonetic
    */
-  phonetic: "PHON",
+  PHON: "PHON",
 
   /**
    * Soundex
    */
-  Soundex: "SNDX",
+  SNDX: "SNDX",
 } as const;
 
 /**

@@ -6,22 +6,22 @@ export const Hl7VSAutoDilutionTypeCode = {
   /**
    * Dilution factor 2
    */
-  Dilutionfactor2: "X2",
+  X2: "X2",
 
   /**
    * Dilution factor 5
    */
-  Dilutionfactor5: "X5",
+  X5: "X5",
 
   /**
    * Dilution factor 1.23
    */
-  Dilutionfactor123: "D1",
+  D1: "D1",
 
   /**
    * Dilution factor 1.45
    */
-  Dilutionfactor145: "D2",
+  D2: "D2",
 } as const;
 
 /**

@@ -6,12 +6,12 @@ export const ObservationInterpretationExpectationCode = {
   /**
    * Expected
    */
-  Expected: "EXP",
+  EXP: "EXP",
 
   /**
    * Unexpected
    */
-  Unexpected: "UNE",
+  UNE: "UNE",
 } as const;
 
 /**

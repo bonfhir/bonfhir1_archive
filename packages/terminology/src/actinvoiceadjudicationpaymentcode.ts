@@ -6,144 +6,144 @@ export const ActInvoiceAdjudicationPaymentCodeCode = {
   /**
    * ActInvoiceAdjudicationPaymentGroupCode
    */
-  ActInvoiceAdjudicationPaymentGroupCode:
+  _ActInvoiceAdjudicationPaymentGroupCode:
     "_ActInvoiceAdjudicationPaymentGroupCode",
 
   /**
    * alternate electronic
    */
-  alternateelectronic: "ALEC",
+  ALEC: "ALEC",
 
   /**
    * bonus
    */
-  bonus: "BONUS",
+  BONUS: "BONUS",
 
   /**
    * carry forward adjusment
    */
-  carryforwardadjusment: "CFWD",
+  CFWD: "CFWD",
 
   /**
    * education fees
    */
-  educationfees: "EDU",
+  EDU: "EDU",
 
   /**
    * early payment fee
    */
-  earlypaymentfee: "EPYMT",
+  EPYMT: "EPYMT",
 
   /**
    * garnishee
    */
-  garnishee: "GARN",
+  GARN: "GARN",
 
   /**
    * submitted invoice
    */
-  submittedinvoice: "INVOICE",
+  INVOICE: "INVOICE",
 
   /**
    * paper invoice
    */
-  paperinvoice: "PINV",
+  PINV: "PINV",
 
   /**
    * prior period adjustment
    */
-  priorperiodadjustment: "PPRD",
+  PPRD: "PPRD",
 
   /**
    * professional association deduction
    */
-  professionalassociationdeduction: "PROA",
+  PROA: "PROA",
 
   /**
    * recovery
    */
-  recovery: "RECOV",
+  RECOV: "RECOV",
 
   /**
    * retro adjustment
    */
-  retroadjustment: "RETRO",
+  RETRO: "RETRO",
 
   /**
    * transaction fee
    */
-  transactionfee: "TRAN",
+  TRAN: "TRAN",
 
   /**
    * ActInvoiceAdjudicationPaymentGroupCode
    */
-  ActInvoiceAdjudicationPaymentGroupCode: "_ActInvoicePaymentCode",
+  _ActInvoicePaymentCode: "_ActInvoicePaymentCode",
 
   /**
    * ActInvoiceAdjudicationPaymentSummaryCode
    */
-  ActInvoiceAdjudicationPaymentSummaryCode:
+  _ActInvoiceAdjudicationPaymentSummaryCode:
     "_ActInvoiceAdjudicationPaymentSummaryCode",
 
   /**
    * contract
    */
-  contract: "CONT",
+  CONT: "CONT",
 
   /**
    * day
    */
-  day: "DAY",
+  DAY: "DAY",
 
   /**
    * location
    */
-  location: "LOC",
+  LOC: "LOC",
 
   /**
    * month
    */
-  month: "MONTH",
+  MONTH: "MONTH",
 
   /**
    * period
    */
-  period: "PERIOD",
+  PERIOD: "PERIOD",
 
   /**
    * provider
    */
-  provider: "PROV",
+  PROV: "PROV",
 
   /**
    * week
    */
-  week: "WEEK",
+  WEEK: "WEEK",
 
   /**
    * year
    */
-  year: "YEAR",
+  YEAR: "YEAR",
 
   /**
    * invoice type
    */
-  invoicetype: "INVTYPE",
+  INVTYPE: "INVTYPE",
 
   /**
    * payee
    */
-  payee: "PAYEE",
+  PAYEE: "PAYEE",
 
   /**
    * payor
    */
-  payor: "PAYOR",
+  PAYOR: "PAYOR",
 
   /**
    * sending application
    */
-  sendingapplication: "SENDAPP",
+  SENDAPP: "SENDAPP",
 } as const;
 
 /**

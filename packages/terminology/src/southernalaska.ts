@@ -6,12 +6,12 @@ export const SouthernAlaskaCode = {
   /**
    * Ahtna
    */
-  Ahtna: "x-AHT",
+  "x-AHT": "x-AHT",
 
   /**
    * Tanaina
    */
-  Tanaina: "x-TFN",
+  "x-TFN": "x-TFN",
 } as const;
 
 /**

@@ -6,32 +6,32 @@ export const IntravenousRouteCode = {
   /**
    * Flush, intravenous catheter
    */
-  Flushintravenouscatheter: "IVFLUSH",
+  IVFLUSH: "IVFLUSH",
 
   /**
    * Injection, intravenous
    */
-  Injectionintravenous: "IVINJ",
+  IVINJ: "IVINJ",
 
   /**
    * Injection, intravenous, bolus
    */
-  Injectionintravenousbolus: "IVINJBOL",
+  IVINJBOL: "IVINJBOL",
 
   /**
    * Injection, intravenous, push
    */
-  Injectionintravenouspush: "IVPUSH",
+  IVPUSH: "IVPUSH",
 
   /**
    * Injection, intravenous, rapid push
    */
-  Injectionintravenousrapidpush: "IVRPUSH",
+  IVRPUSH: "IVRPUSH",
 
   /**
    * Injection, intravenous, slow push
    */
-  Injectionintravenousslowpush: "IVSPUSH",
+  IVSPUSH: "IVSPUSH",
 } as const;
 
 /**

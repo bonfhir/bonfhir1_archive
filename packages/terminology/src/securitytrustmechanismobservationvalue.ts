@@ -6,7 +6,7 @@ export const SecurityTrustMechanismObservationValueCode = {
   /**
    * none supplied 6
    */
-  nonesupplied6: "TRSTMECOBV",
+  TRSTMECOBV: "TRSTMECOBV",
 } as const;
 
 /**

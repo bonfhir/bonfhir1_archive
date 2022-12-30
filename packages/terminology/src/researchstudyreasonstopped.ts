@@ -6,22 +6,23 @@ export const ResearchStudyReasonStoppedCode = {
   /**
    * Accrual Goal Met
    */
-  AccrualGoalMet: "accrual-goal-met",
+  "accrual-goal-met": "accrual-goal-met",
 
   /**
    * Closed due to toxicity
    */
-  Closedduetotoxicity: "closed-due-to-toxicity",
+  "closed-due-to-toxicity": "closed-due-to-toxicity",
 
   /**
    * Closed due to lack of study progress
    */
-  Closedduetolackofstudyprogress: "closed-due-to-lack-of-study-progress",
+  "closed-due-to-lack-of-study-progress":
+    "closed-due-to-lack-of-study-progress",
 
   /**
    * Temporarily closed per study design
    */
-  Temporarilyclosedperstudydesign: "temporarily-closed-per-study-design",
+  "temporarily-closed-per-study-design": "temporarily-closed-per-study-design",
 } as const;
 
 /**

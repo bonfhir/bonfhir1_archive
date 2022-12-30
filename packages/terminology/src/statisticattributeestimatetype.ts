@@ -6,57 +6,57 @@ export const StatisticAttributeEstimateTypeCode = {
   /**
    * Cochran's Q statistic
    */
-  CochransQstatistic: "0000419",
+  "0000419": "0000419",
 
   /**
    * Confidence interval
    */
-  Confidenceinterval: "C53324",
+  C53324: "C53324",
 
   /**
    * Credible interval
    */
-  Credibleinterval: "0000455",
+  "0000455": "0000455",
 
   /**
    * I-squared
    */
-  Isquared: "0000420",
+  "0000420": "0000420",
 
   /**
    * Interquartile range
    */
-  Interquartilerange: "C53245",
+  C53245: "C53245",
 
   /**
    * P-value
    */
-  Pvalue: "C44185",
+  C44185: "C44185",
 
   /**
    * Range
    */
-  Range: "C38013",
+  C38013: "C38013",
 
   /**
    * Standard deviation
    */
-  Standarddeviation: "C53322",
+  C53322: "C53322",
 
   /**
    * Standard error of the mean
    */
-  Standarderrorofthemean: "0000037",
+  "0000037": "0000037",
 
   /**
    * Tau squared
    */
-  Tausquared: "0000421",
+  "0000421": "0000421",
 
   /**
    * Variance
    */
-  Variance: "C48918",
+  C48918: "C48918",
 } as const;
 
 /**

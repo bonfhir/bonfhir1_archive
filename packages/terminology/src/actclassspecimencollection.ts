@@ -6,7 +6,7 @@ export const ActClassSpecimenCollectionCode = {
   /**
    * Specimen Collection
    */
-  SpecimenCollection: "SPECCOLLECT",
+  SPECCOLLECT: "SPECCOLLECT",
 } as const;
 
 /**

@@ -6,12 +6,12 @@ export const TestScriptProfileOriginTypeCode = {
   /**
    * FHIR Client
    */
-  FHIRClient: "FHIR-Client",
+  "FHIR-Client": "FHIR-Client",
 
   /**
    * FHIR SDC FormFiller
    */
-  FHIRSDCFormFiller: "FHIR-SDC-FormFiller",
+  "FHIR-SDC-FormFiller": "FHIR-SDC-FormFiller",
 } as const;
 
 /**

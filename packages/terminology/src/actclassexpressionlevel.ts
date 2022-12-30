@@ -6,7 +6,7 @@ export const ActClassExpressionLevelCode = {
   /**
    * expression level
    */
-  expressionlevel: "EXP",
+  EXP: "EXP",
 } as const;
 
 /**

@@ -6,22 +6,22 @@ export const Hl7VSCompletionStatusCode = {
   /**
    * Complete
    */
-  Complete: "CP",
+  CP: "CP",
 
   /**
    * Refused
    */
-  Refused: "RE",
+  RE: "RE",
 
   /**
    * Not Administered
    */
-  NotAdministered: "NA",
+  NA: "NA",
 
   /**
    * Partially Administered
    */
-  PartiallyAdministered: "PA",
+  PA: "PA",
 } as const;
 
 /**

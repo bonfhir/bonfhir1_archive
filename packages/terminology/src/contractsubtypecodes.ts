@@ -6,12 +6,12 @@ export const ContractSubtypeCodesCode = {
   /**
    * Disclosure-CA
    */
-  DisclosureCA: "disclosure-ca",
+  "disclosure-ca": "disclosure-ca",
 
   /**
    * Disclosure-US
    */
-  DisclosureUS: "disclosure-us",
+  "disclosure-us": "disclosure-us",
 } as const;
 
 /**

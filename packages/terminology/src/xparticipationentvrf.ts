@@ -6,12 +6,12 @@ export const XParticipationEntVrfCode = {
   /**
    * data entry person
    */
-  dataentryperson: "ENT",
+  ENT: "ENT",
 
   /**
    * verifier
    */
-  verifier: "VRF",
+  VRF: "VRF",
 } as const;
 
 /**

@@ -6,12 +6,12 @@ export const RaceAmericanIndianKiowaCode = {
   /**
    * Kiowa
    */
-  Kiowa: "1309-4",
+  "1309-4": "1309-4",
 
   /**
    * Oklahoma Kiowa
    */
-  OklahomaKiowa: "1310-2",
+  "1310-2": "1310-2",
 } as const;
 
 /**

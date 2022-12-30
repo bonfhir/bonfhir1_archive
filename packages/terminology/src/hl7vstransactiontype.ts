@@ -6,27 +6,27 @@ export const Hl7VSTransactionTypeCode = {
   /**
    * Charge
    */
-  Charge: "CG",
+  CG: "CG",
 
   /**
    * Credit
    */
-  Credit: "CD",
+  CD: "CD",
 
   /**
    * Payment
    */
-  Payment: "PY",
+  PY: "PY",
 
   /**
    * Adjustment
    */
-  Adjustment: "AJ",
+  AJ: "AJ",
 
   /**
    * Co-payment
    */
-  Copayment: "CO",
+  CO: "CO",
 } as const;
 
 /**

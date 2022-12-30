@@ -6,12 +6,12 @@ export const ActRelationshipObjectiveCode = {
   /**
    * has continuing objective
    */
-  hascontinuingobjective: "OBJC",
+  OBJC: "OBJC",
 
   /**
    * has final objective
    */
-  hasfinalobjective: "OBJF",
+  OBJF: "OBJF",
 } as const;
 
 /**

@@ -23,12 +23,12 @@ export const CUILabelCode = {
   /**
    * (CUI//HLTH)
    */
-  CUIHLTH: "CUIHLTHP",
+  CUIHLTHP: "CUIHLTHP",
 
   /**
    * (CUI)
    */
-  CUI: "CUIP",
+  CUIP: "CUIP",
 
   /**
    * CUI//PRVCY
@@ -38,32 +38,32 @@ export const CUILabelCode = {
   /**
    * (CUI//PRVCY)
    */
-  CUIPRVCY: "CUIPRVCYP",
+  CUIPRVCYP: "CUIPRVCYP",
 
   /**
    * CUI//SP-HLTH
    */
-  CUISPHLTH: "CUISP-HLTH",
+  "CUISP-HLTH": "CUISP-HLTH",
 
   /**
    * (CUI//SP-HLTH)
    */
-  CUISPHLTH: "CUISP-HLTHP",
+  "CUISP-HLTHP": "CUISP-HLTHP",
 
   /**
    * CUI//SP-PRVCY
    */
-  CUISPPRVCY: "CUISP-PRVCY",
+  "CUISP-PRVCY": "CUISP-PRVCY",
 
   /**
    * (CUI//SP-PRVCY)
    */
-  CUISPPRVCY: "CUISP-PRVCYP",
+  "CUISP-PRVCYP": "CUISP-PRVCYP",
 
   /**
    * (U)
    */
-  U: "UUI",
+  UUI: "UUI",
 } as const;
 
 /**

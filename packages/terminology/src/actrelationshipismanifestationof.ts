@@ -6,7 +6,7 @@ export const ActRelationshipIsManifestationOfCode = {
   /**
    * is manifestation of
    */
-  ismanifestationof: "MFST",
+  MFST: "MFST",
 } as const;
 
 /**

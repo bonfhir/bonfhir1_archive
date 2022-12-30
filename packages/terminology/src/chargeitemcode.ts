@@ -6,17 +6,17 @@ export const ChargeItemCodeCode = {
   /**
    * Unvorhergesehene Inanspruchnahme
    */
-  UnvorhergeseheneInanspruchnahme: "1100",
+  "1100": "1100",
 
   /**
    * Notfallpauschale
    */
-  Notfallpauschale: "1210",
+  "1210": "1210",
 
   /**
    * Grundpauschale
    */
-  Grundpauschale: "1320",
+  "1320": "1320",
 } as const;
 
 /**

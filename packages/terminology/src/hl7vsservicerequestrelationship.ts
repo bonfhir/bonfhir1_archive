@@ -6,27 +6,27 @@ export const Hl7VSServiceRequestRelationshipCode = {
   /**
    * Nurse prerogative
    */
-  Nurseprerogative: "N",
+  N: "N",
 
   /**
    * Compound
    */
-  Compound: "C",
+  C: "C",
 
   /**
    * Tapering
    */
-  Tapering: "T",
+  T: "T",
 
   /**
    * Exclusive
    */
-  Exclusive: "E",
+  E: "E",
 
   /**
    * Simultaneous
    */
-  Simultaneous: "S",
+  S: "S",
 } as const;
 
 /**

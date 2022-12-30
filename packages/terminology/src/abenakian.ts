@@ -6,17 +6,17 @@ export const AbenakianCode = {
   /**
    * Eastern Abenaki
    */
-  EasternAbenaki: "x-AAQ",
+  "x-AAQ": "x-AAQ",
 
   /**
    * Western Abenaki
    */
-  WesternAbenaki: "x-ABE",
+  "x-ABE": "x-ABE",
 
   /**
    * Maliseet-Passamaquoddy
    */
-  MaliseetPassamaquoddy: "x-MAC",
+  "x-MAC": "x-MAC",
 } as const;
 
 /**

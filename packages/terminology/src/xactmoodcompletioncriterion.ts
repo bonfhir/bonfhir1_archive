@@ -6,32 +6,32 @@ export const XActMoodCompletionCriterionCode = {
   /**
    * criterion
    */
-  criterion: "CRT",
+  CRT: "CRT",
 
   /**
    * definition
    */
-  definition: "DEF",
+  DEF: "DEF",
 
   /**
    * event (occurrence)
    */
-  eventoccurrence: "EVN",
+  EVN: "EVN",
 
   /**
    * event criterion
    */
-  eventcriterion: "EVN.CRT",
+  "EVN.CRT": "EVN.CRT",
 
   /**
    * intent
    */
-  intent: "INT",
+  INT: "INT",
 
   /**
    * request
    */
-  request: "RQO",
+  RQO: "RQO",
 } as const;
 
 /**

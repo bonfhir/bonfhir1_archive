@@ -6,32 +6,32 @@ export const IndividualInsuredCoveredPartyRoleTypeCode = {
   /**
    * IndividualInsuredPartyRoleType
    */
-  IndividualInsuredPartyRoleType: "_IndividualInsuredPartyRoleType",
+  _IndividualInsuredPartyRoleType: "_IndividualInsuredPartyRoleType",
 
   /**
    * continuity of coverage beneficiary
    */
-  continuityofcoveragebeneficiary: "COCBEN",
+  COCBEN: "COCBEN",
 
   /**
    * retiree
    */
-  retiree: "RETIREE",
+  RETIREE: "RETIREE",
 
   /**
    * student
    */
-  student: "STUD",
+  STUD: "STUD",
 
   /**
    * full-time student
    */
-  fulltimestudent: "FSTUD",
+  FSTUD: "FSTUD",
 
   /**
    * part-time student
    */
-  parttimestudent: "PSTUD",
+  PSTUD: "PSTUD",
 } as const;
 
 /**

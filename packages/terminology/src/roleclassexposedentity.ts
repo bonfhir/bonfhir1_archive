@@ -8,7 +8,7 @@ export const RoleClassExposedEntityCode = {
   /**
    * exposed entity
    */
-  exposedentity: "EXPR",
+  EXPR: "EXPR",
 } as const;
 
 /**

@@ -6,32 +6,32 @@ export const KiowaTanoanCode = {
   /**
    * Tiwa
    */
-  Tiwa: "_Tiwa",
+  _Tiwa: "_Tiwa",
 
   /**
    * Northern Tiwa
    */
-  NorthernTiwa: "x-TAO",
+  "x-TAO": "x-TAO",
 
   /**
    * Southern Tiwa
    */
-  SouthernTiwa: "x-TIX",
+  "x-TIX": "x-TIX",
 
   /**
    * Kiowa
    */
-  Kiowa: "x-KIO",
+  "x-KIO": "x-KIO",
 
   /**
    * Tewa
    */
-  Tewa: "x-TEW",
+  "x-TEW": "x-TEW",
 
   /**
    * Jemez
    */
-  Jemez: "x-TOW",
+  "x-TOW": "x-TOW",
 } as const;
 
 /**

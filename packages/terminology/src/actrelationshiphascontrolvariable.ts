@@ -6,7 +6,7 @@ export const ActRelationshipHasControlVariableCode = {
   /**
    * has control variable
    */
-  hascontrolvariable: "CTRLV",
+  CTRLV: "CTRLV",
 } as const;
 
 /**

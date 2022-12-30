@@ -6,27 +6,27 @@ export const SubcutaneousRouteCode = {
   /**
    * Implantation, subcutaneous
    */
-  Implantationsubcutaneous: "SQIMPLNT",
+  SQIMPLNT: "SQIMPLNT",
 
   /**
    * Infusion, subcutaneous
    */
-  Infusionsubcutaneous: "SQINFUS",
+  SQINFUS: "SQINFUS",
 
   /**
    * Injection, insulin pump
    */
-  Injectioninsulinpump: "IPUMPINJ",
+  IPUMPINJ: "IPUMPINJ",
 
   /**
    * Injection, subcutaneous
    */
-  Injectionsubcutaneous: "SQ",
+  SQ: "SQ",
 
   /**
    * Insertion, subcutaneous, surgical
    */
-  Insertionsubcutaneoussurgical: "SQSURGINS",
+  SQSURGINS: "SQSURGINS",
 } as const;
 
 /**

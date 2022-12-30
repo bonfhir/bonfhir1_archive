@@ -6,7 +6,7 @@ export const ActClassContainerRegistrationCode = {
   /**
    * container registration
    */
-  containerregistration: "CONTREG",
+  CONTREG: "CONTREG",
 } as const;
 
 /**

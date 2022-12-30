@@ -14,7 +14,7 @@ export const RoleClassCoverageSponsorCode = {
   /**
    * coverage sponsor
    */
-  coveragesponsor: "SPNSR",
+  SPNSR: "SPNSR",
 } as const;
 
 /**

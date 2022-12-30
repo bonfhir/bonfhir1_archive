@@ -6,62 +6,62 @@ export const Hl7VSReferralTypeCode = {
   /**
    * Home Care
    */
-  HomeCare: "HOM",
+  HOM: "HOM",
 
   /**
    * Laboratory
    */
-  Laboratory: "LAB",
+  LAB: "LAB",
 
   /**
    * Medical
    */
-  Medical: "MED",
+  MED: "MED",
 
   /**
    * Psychiatric
    */
-  Psychiatric: "PSY",
+  PSY: "PSY",
 
   /**
    * Radiology
    */
-  Radiology: "RAD",
+  RAD: "RAD",
 
   /**
    * Skilled Nursing
    */
-  SkilledNursing: "SKN",
+  SKN: "SKN",
 
   /**
    * Laboratory
    */
-  Laboratory: "Lab",
+  Lab: "Lab",
 
   /**
    * Radiology
    */
-  Radiology: "Rad",
+  Rad: "Rad",
 
   /**
    * Medical
    */
-  Medical: "Med",
+  Med: "Med",
 
   /**
    * Skilled Nursing
    */
-  SkilledNursing: "Skn",
+  Skn: "Skn",
 
   /**
    * Psychiatric
    */
-  Psychiatric: "Psy",
+  Psy: "Psy",
 
   /**
    * Home Care
    */
-  HomeCare: "Hom",
+  Hom: "Hom",
 } as const;
 
 /**

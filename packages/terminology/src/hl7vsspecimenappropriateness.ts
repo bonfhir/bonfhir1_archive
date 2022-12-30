@@ -6,22 +6,22 @@ export const Hl7VSSpecimenAppropriatenessCode = {
   /**
    * Preferred
    */
-  Preferred: "P",
+  P: "P",
 
   /**
    * Appropriate
    */
-  Appropriate: "A",
+  A: "A",
 
   /**
    * Inappropriate
    */
-  Inappropriate: "I",
+  I: "I",
 
   /**
    * Inappropriate due to ...
    */
-  Inappropriatedueto: "??",
+  "??": "??",
 } as const;
 
 /**

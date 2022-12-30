@@ -6,22 +6,22 @@ export const ContractContentDerivationCodesCode = {
   /**
    * Content Registration
    */
-  ContentRegistration: "registration",
+  registration: "registration",
 
   /**
    * Content Retrieval
    */
-  ContentRetrieval: "retrieval",
+  retrieval: "retrieval",
 
   /**
    * Content Statement
    */
-  ContentStatement: "statement",
+  statement: "statement",
 
   /**
    * Shareable Content
    */
-  ShareableContent: "shareable",
+  shareable: "shareable",
 } as const;
 
 /**

@@ -6,7 +6,7 @@ export const ActClassDeterminantPeptideCode = {
   /**
    * determinant peptide
    */
-  determinantpeptide: "DETPOL",
+  DETPOL: "DETPOL",
 } as const;
 
 /**

@@ -6,7 +6,7 @@ export const RoleLinkHasPartCode = {
   /**
    * has part
    */
-  haspart: "PART",
+  PART: "PART",
 } as const;
 
 /**

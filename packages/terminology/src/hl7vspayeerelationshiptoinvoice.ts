@@ -6,22 +6,22 @@ export const Hl7VSPayeeRelationshipToInvoiceCode = {
   /**
    * Patient
    */
-  Patient: "PT",
+  PT: "PT",
 
   /**
    * Family Member
    */
-  FamilyMember: "FM",
+  FM: "FM",
 
   /**
    * Subscriber
    */
-  Subscriber: "SB",
+  SB: "SB",
 
   /**
    * Guarantor
    */
-  Guarantor: "GT",
+  GT: "GT",
 } as const;
 
 /**

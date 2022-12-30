@@ -6,37 +6,37 @@ export const ClassNullFlavorCode = {
   /**
    * asked but unknown
    */
-  askedbutunknown: "ASKU",
+  ASKU: "ASKU",
 
   /**
    * masked
    */
-  masked: "MSK",
+  MSK: "MSK",
 
   /**
    * not applicable
    */
-  notapplicable: "NA",
+  NA: "NA",
 
   /**
    * not asked
    */
-  notasked: "NASK",
+  NASK: "NASK",
 
   /**
    * temporarily unavailable
    */
-  temporarilyunavailable: "NAV",
+  NAV: "NAV",
 
   /**
    * NoInformation
    */
-  NoInformation: "NI",
+  NI: "NI",
 
   /**
    * unknown
    */
-  unknown: "UNK",
+  UNK: "UNK",
 } as const;
 
 /**

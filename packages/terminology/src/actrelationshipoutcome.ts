@@ -6,32 +6,32 @@ export const ActRelationshipOutcomeCode = {
   /**
    * has outcome
    */
-  hasoutcome: "OUTC",
+  OUTC: "OUTC",
 
   /**
    * Act Relationsip Objective
    */
-  ActRelationsipObjective: "_ActRelationsipObjective",
+  _ActRelationsipObjective: "_ActRelationsipObjective",
 
   /**
    * has continuing objective
    */
-  hascontinuingobjective: "OBJC",
+  OBJC: "OBJC",
 
   /**
    * has final objective
    */
-  hasfinalobjective: "OBJF",
+  OBJF: "OBJF",
 
   /**
    * has goal
    */
-  hasgoal: "GOAL",
+  GOAL: "GOAL",
 
   /**
    * has risk
    */
-  hasrisk: "RISK",
+  RISK: "RISK",
 } as const;
 
 /**

@@ -6,32 +6,32 @@ export const Hl7VSTriageCodeCode = {
   /**
    * Non-acute
    */
-  Nonacute: "1",
+  "1": "1",
 
   /**
    * Acute
    */
-  Acute: "2",
+  "2": "2",
 
   /**
    * Urgent
    */
-  Urgent: "3",
+  "3": "3",
 
   /**
    * Severe
    */
-  Severe: "4",
+  "4": "4",
 
   /**
    * Dead on Arrival (DOA)
    */
-  DeadonArrivalDOA: "5",
+  "5": "5",
 
   /**
    * Other
    */
-  Other: "99",
+  "99": "99",
 } as const;
 
 /**

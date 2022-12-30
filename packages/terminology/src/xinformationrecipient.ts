@@ -6,12 +6,12 @@ export const XInformationRecipientCode = {
   /**
    * primary information recipient
    */
-  primaryinformationrecipient: "PRCP",
+  PRCP: "PRCP",
 
   /**
    * tracker
    */
-  tracker: "TRC",
+  TRC: "TRC",
 } as const;
 
 /**

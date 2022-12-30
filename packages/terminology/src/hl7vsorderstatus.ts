@@ -6,47 +6,47 @@ export const Hl7VSOrderStatusCode = {
   /**
    * Some, but not all, results available
    */
-  Somebutnotallresultsavailable: "A",
+  A: "A",
 
   /**
    * Order was canceled
    */
-  Orderwascanceled: "CA",
+  CA: "CA",
 
   /**
    * Order is completed
    */
-  Orderiscompleted: "CM",
+  CM: "CM",
 
   /**
    * Order was discontinued
    */
-  Orderwasdiscontinued: "DC",
+  DC: "DC",
 
   /**
    * Error, order not found
    */
-  Errorordernotfound: "ER",
+  ER: "ER",
 
   /**
    * Order is on hold
    */
-  Orderisonhold: "HD",
+  HD: "HD",
 
   /**
    * In process, unspecified
    */
-  Inprocessunspecified: "IP",
+  IP: "IP",
 
   /**
    * Order has been replaced
    */
-  Orderhasbeenreplaced: "RP",
+  RP: "RP",
 
   /**
    * In process, scheduled
    */
-  Inprocessscheduled: "SC",
+  SC: "SC",
 } as const;
 
 /**

@@ -6,37 +6,37 @@ export const Hl7VSWhichDateTimeQualifierCode = {
   /**
    * Cancellation date/time
    */
-  Cancellationdatetime: "CAN",
+  CAN: "CAN",
 
   /**
    * Any date/time within a range
    */
-  Anydatetimewithinarange: "ANY",
+  ANY: "ANY",
 
   /**
    * Collection date/time, equivalent to film or sample collection date/time
    */
-  Collectiondatetimeequivalenttofilmorsamplecollectiondatetime: "COL",
+  COL: "COL",
 
   /**
    * Order date/time
    */
-  Orderdatetime: "ORD",
+  ORD: "ORD",
 
   /**
    * Specimen receipt date/time, receipt of specimen in filling ancillary (Lab)
    */
-  SpecimenreceiptdatetimereceiptofspecimeninfillingancillaryLab: "RCT",
+  RCT: "RCT",
 
   /**
    * Report date/time, report date/time at filling ancillary (i.e., Lab)
    */
-  ReportdatetimereportdatetimeatfillingancillaryieLab: "REP",
+  REP: "REP",
 
   /**
    * Schedule date/time
    */
-  Scheduledatetime: "SCHED",
+  SCHED: "SCHED",
 } as const;
 
 /**

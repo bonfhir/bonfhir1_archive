@@ -6,2982 +6,2982 @@ export const ServiceTypeCode = {
   /**
    * Adoption/Permanent Care Info/Support
    */
-  AdoptionPermanentCareInfoSupport: "1",
+  "1": "1",
 
   /**
    * Aged Care Assessment
    */
-  AgedCareAssessment: "2",
+  "2": "2",
 
   /**
    * Aged Care Information/Referral
    */
-  AgedCareInformationReferral: "3",
+  "3": "3",
 
   /**
    * Aged Residential Care
    */
-  AgedResidentialCare: "4",
+  "4": "4",
 
   /**
    * Case Management for Older Persons
    */
-  CaseManagementforOlderPersons: "5",
+  "5": "5",
 
   /**
    * Delivered Meals (Meals On Wheels)
    */
-  DeliveredMealsMealsOnWheels: "6",
+  "6": "6",
 
   /**
    * Friendly Visiting
    */
-  FriendlyVisiting: "7",
+  "7": "7",
 
   /**
    * Home Care/Housekeeping Assistance
    */
-  HomeCareHousekeepingAssistance: "8",
+  "8": "8",
 
   /**
    * Home Maintenance and Repair
    */
-  HomeMaintenanceandRepair: "9",
+  "9": "9",
 
   /**
    * Personal Alarms/Alerts
    */
-  PersonalAlarmsAlerts: "10",
+  "10": "10",
 
   /**
    * Personal Care for Older Persons
    */
-  PersonalCareforOlderPersons: "11",
+  "11": "11",
 
   /**
    * Planned Activity Groups
    */
-  PlannedActivityGroups: "12",
+  "12": "12",
 
   /**
    * Acupuncture
    */
-  Acupuncture: "13",
+  "13": "13",
 
   /**
    * Alexander Technique Therapy
    */
-  AlexanderTechniqueTherapy: "14",
+  "14": "14",
 
   /**
    * Aromatherapy
    */
-  Aromatherapy: "15",
+  "15": "15",
 
   /**
    * Biorhythm Services
    */
-  BiorhythmServices: "16",
+  "16": "16",
 
   /**
    * Bowen Therapy
    */
-  BowenTherapy: "17",
+  "17": "17",
 
   /**
    * Chinese Herbal Medicine
    */
-  ChineseHerbalMedicine: "18",
+  "18": "18",
 
   /**
    * Feldenkrais
    */
-  Feldenkrais: "19",
+  "19": "19",
 
   /**
    * Homoeopathy
    */
-  Homoeopathy: "20",
+  "20": "20",
 
   /**
    * Hydrotherapy
    */
-  Hydrotherapy: "21",
+  "21": "21",
 
   /**
    * Hypnotherapy
    */
-  Hypnotherapy: "22",
+  "22": "22",
 
   /**
    * Kinesiology
    */
-  Kinesiology: "23",
+  "23": "23",
 
   /**
    * Magnetic Therapy
    */
-  MagneticTherapy: "24",
+  "24": "24",
 
   /**
    * Massage Therapy
    */
-  MassageTherapy: "25",
+  "25": "25",
 
   /**
    * Meditation
    */
-  Meditation: "26",
+  "26": "26",
 
   /**
    * Myotherapy
    */
-  Myotherapy: "27",
+  "27": "27",
 
   /**
    * Naturopathy
    */
-  Naturopathy: "28",
+  "28": "28",
 
   /**
    * Reflexology
    */
-  Reflexology: "29",
+  "29": "29",
 
   /**
    * Reiki
    */
-  Reiki: "30",
+  "30": "30",
 
   /**
    * Relaxation Therapy
    */
-  RelaxationTherapy: "31",
+  "31": "31",
 
   /**
    * Shiatsu
    */
-  Shiatsu: "32",
+  "32": "32",
 
   /**
    * Western Herbal Medicine
    */
-  WesternHerbalMedicine: "33",
+  "33": "33",
 
   /**
    * Family Day care
    */
-  FamilyDaycare: "34",
+  "34": "34",
 
   /**
    * Holiday Programs
    */
-  HolidayPrograms: "35",
+  "35": "35",
 
   /**
    * Kindergarten Inclusion Support
    */
-  KindergartenInclusionSupport: "36",
+  "36": "36",
 
   /**
    * Kindergarten/Preschool
    */
-  KindergartenPreschool: "37",
+  "37": "37",
 
   /**
    * Long Day Child Care
    */
-  LongDayChildCare: "38",
+  "38": "38",
 
   /**
    * Occasional Child Care
    */
-  OccasionalChildCare: "39",
+  "39": "39",
 
   /**
    * Outside School Hours Care
    */
-  OutsideSchoolHoursCare: "40",
+  "40": "40",
 
   /**
    * Children's Play Programs
    */
-  ChildrensPlayPrograms: "41",
+  "41": "41",
 
   /**
    * Parenting/Family Support/Education
    */
-  ParentingFamilySupportEducation: "42",
+  "42": "42",
 
   /**
    * Playgroup
    */
-  Playgroup: "43",
+  "43": "43",
 
   /**
    * School Nursing
    */
-  SchoolNursing: "44",
+  "44": "44",
 
   /**
    * Toy Library
    */
-  ToyLibrary: "45",
+  "45": "45",
 
   /**
    * Child Protection/Child Abuse Report
    */
-  ChildProtectionChildAbuseReport: "46",
+  "46": "46",
 
   /**
    * Foster Care
    */
-  FosterCare: "47",
+  "47": "47",
 
   /**
    * Residential/Out-of-Home Care
    */
-  ResidentialOutofHomeCare: "48",
+  "48": "48",
 
   /**
    * Support - Young People Leaving Care
    */
-  SupportYoungPeopleLeavingCare: "49",
+  "49": "49",
 
   /**
    * Audiology
    */
-  Audiology: "50",
+  "50": "50",
 
   /**
    * Blood Donation
    */
-  BloodDonation: "51",
+  "51": "51",
 
   /**
    * Chiropractic
    */
-  Chiropractic: "52",
+  "52": "52",
 
   /**
    * Dietetics
    */
-  Dietetics: "53",
+  "53": "53",
 
   /**
    * Family Planning
    */
-  FamilyPlanning: "54",
+  "54": "54",
 
   /**
    * Health Advocacy/Liaison Service
    */
-  HealthAdvocacyLiaisonService: "55",
+  "55": "55",
 
   /**
    * Health Information/Referral
    */
-  HealthInformationReferral: "56",
+  "56": "56",
 
   /**
    * Immunization
    */
-  Immunization: "57",
+  "57": "57",
 
   /**
    * Maternal & Child Health
    */
-  MaternalChildHealth: "58",
+  "58": "58",
 
   /**
    * Nursing
    */
-  Nursing: "59",
+  "59": "59",
 
   /**
    * Nutrition
    */
-  Nutrition: "60",
+  "60": "60",
 
   /**
    * Occupational Therapy
    */
-  OccupationalTherapy: "61",
+  "61": "61",
 
   /**
    * Optometry
    */
-  Optometry: "62",
+  "62": "62",
 
   /**
    * Osteopathy
    */
-  Osteopathy: "63",
+  "63": "63",
 
   /**
    * Pharmacy
    */
-  Pharmacy: "64",
+  "64": "64",
 
   /**
    * Physiotherapy
    */
-  Physiotherapy: "65",
+  "65": "65",
 
   /**
    * Podiatry
    */
-  Podiatry: "66",
+  "66": "66",
 
   /**
    * Sexual Health
    */
-  SexualHealth: "67",
+  "67": "67",
 
   /**
    * Speech Pathology/Therapy
    */
-  SpeechPathologyTherapy: "68",
+  "68": "68",
 
   /**
    * Bereavement Counselling
    */
-  BereavementCounselling: "69",
+  "69": "69",
 
   /**
    * Crisis Counselling
    */
-  CrisisCounselling: "70",
+  "70": "70",
 
   /**
    * Family Counselling/Therapy
    */
-  FamilyCounsellingTherapy: "71",
+  "71": "71",
 
   /**
    * Family Violence Counselling
    */
-  FamilyViolenceCounselling: "72",
+  "72": "72",
 
   /**
    * Financial Counselling
    */
-  FinancialCounselling: "73",
+  "73": "73",
 
   /**
    * Generalist Counselling
    */
-  GeneralistCounselling: "74",
+  "74": "74",
 
   /**
    * Genetic Counselling
    */
-  GeneticCounselling: "75",
+  "75": "75",
 
   /**
    * Health Counselling
    */
-  HealthCounselling: "76",
+  "76": "76",
 
   /**
    * Mediation
    */
-  Mediation: "77",
+  "77": "77",
 
   /**
    * Problem Gambling Counselling
    */
-  ProblemGamblingCounselling: "78",
+  "78": "78",
 
   /**
    * Relationship Counselling
    */
-  RelationshipCounselling: "79",
+  "79": "79",
 
   /**
    * Sexual Assault Counselling
    */
-  SexualAssaultCounselling: "80",
+  "80": "80",
 
   /**
    * Trauma Counselling
    */
-  TraumaCounselling: "81",
+  "81": "81",
 
   /**
    * Victims of Crime Counselling
    */
-  VictimsofCrimeCounselling: "82",
+  "82": "82",
 
   /**
    * Cemetery Operation
    */
-  CemeteryOperation: "83",
+  "83": "83",
 
   /**
    * Cremation
    */
-  Cremation: "84",
+  "84": "84",
 
   /**
    * Death Service Information
    */
-  DeathServiceInformation: "85",
+  "85": "85",
 
   /**
    * Funeral Services
    */
-  FuneralServices: "86",
+  "86": "86",
 
   /**
    * Endodontic
    */
-  Endodontic: "87",
+  "87": "87",
 
   /**
    * General Dental
    */
-  GeneralDental: "88",
+  "88": "88",
 
   /**
    * Oral Medicine
    */
-  OralMedicine: "89",
+  "89": "89",
 
   /**
    * Oral Surgery
    */
-  OralSurgery: "90",
+  "90": "90",
 
   /**
    * Orthodontic
    */
-  Orthodontic: "91",
+  "91": "91",
 
   /**
    * Paediatric Dentistry
    */
-  PaediatricDentistry: "92",
+  "92": "92",
 
   /**
    * Periodontic
    */
-  Periodontic: "93",
+  "93": "93",
 
   /**
    * Prosthodontic
    */
-  Prosthodontic: "94",
+  "94": "94",
 
   /**
    * Acquired Brain Injury Info/Referral
    */
-  AcquiredBrainInjuryInfoReferral: "95",
+  "95": "95",
 
   /**
    * Disability Advocacy
    */
-  DisabilityAdvocacy: "96",
+  "96": "96",
 
   /**
    * Disability Aids & Equipment
    */
-  DisabilityAidsEquipment: "97",
+  "97": "97",
 
   /**
    * Disability Case Management
    */
-  DisabilityCaseManagement: "98",
+  "98": "98",
 
   /**
    * Disability Day Programs/Activities
    */
-  DisabilityDayProgramsActivities: "99",
+  "99": "99",
 
   /**
    * Disability Information/Referral
    */
-  DisabilityInformationReferral: "100",
+  "100": "100",
 
   /**
    * Disability Support Packages
    */
-  DisabilitySupportPackages: "101",
+  "101": "101",
 
   /**
    * Disability Supported Accommodation
    */
-  DisabilitySupportedAccommodation: "102",
+  "102": "102",
 
   /**
    * Early Childhood Intervention
    */
-  EarlyChildhoodIntervention: "103",
+  "103": "103",
 
   /**
    * Hearing Aids & Equipment
    */
-  HearingAidsEquipment: "104",
+  "104": "104",
 
   /**
    * Drug and/or Alcohol Counselling
    */
-  DrugandorAlcoholCounselling: "105",
+  "105": "105",
 
   /**
    * Drug/Alcohol Information/Referral
    */
-  DrugAlcoholInformationReferral: "106",
+  "106": "106",
 
   /**
    * Needle & Syringe Exchange
    */
-  NeedleSyringeExchange: "107",
+  "107": "107",
 
   /**
    * Non-resid. Alcohol/Drug Treatment
    */
-  NonresidAlcoholDrugTreatment: "108",
+  "108": "108",
 
   /**
    * Pharmacotherapy
    */
-  Pharmacotherapy: "109",
+  "109": "109",
 
   /**
    * Quit Program
    */
-  QuitProgram: "110",
+  "110": "110",
 
   /**
    * Residential Alcohol/Drug Treatment
    */
-  ResidentialAlcoholDrugTreatment: "111",
+  "111": "111",
 
   /**
    * Adult/Community Education
    */
-  AdultCommunityEducation: "112",
+  "112": "112",
 
   /**
    * Higher Education
    */
-  HigherEducation: "113",
+  "113": "113",
 
   /**
    * Primary Education
    */
-  PrimaryEducation: "114",
+  "114": "114",
 
   /**
    * Secondary Education
    */
-  SecondaryEducation: "115",
+  "115": "115",
 
   /**
    * Training & Vocational Education
    */
-  TrainingVocationalEducation: "116",
+  "116": "116",
 
   /**
    * Emergency Medical
    */
-  EmergencyMedical: "117",
+  "117": "117",
 
   /**
    * Employment Placement and/or Support
    */
-  EmploymentPlacementandorSupport: "118",
+  "118": "118",
 
   /**
    * Vocational Rehabilitation
    */
-  VocationalRehabilitation: "119",
+  "119": "119",
 
   /**
    * Work Safety/Accident Prevention
    */
-  WorkSafetyAccidentPrevention: "120",
+  "120": "120",
 
   /**
    * Financial Assistance
    */
-  FinancialAssistance: "121",
+  "121": "121",
 
   /**
    * Financial Information/Advice
    */
-  FinancialInformationAdvice: "122",
+  "122": "122",
 
   /**
    * Material Aid
    */
-  MaterialAid: "123",
+  "123": "123",
 
   /**
    * General Practice
    */
-  GeneralPractice: "124",
+  "124": "124",
 
   /**
    * Accommodation Placement/Support
    */
-  AccommodationPlacementSupport: "125",
+  "125": "125",
 
   /**
    * Crisis/Emergency Accommodation
    */
-  CrisisEmergencyAccommodation: "126",
+  "126": "126",
 
   /**
    * Homelessness Support
    */
-  HomelessnessSupport: "127",
+  "127": "127",
 
   /**
    * Housing Information/Referral
    */
-  HousingInformationReferral: "128",
+  "128": "128",
 
   /**
    * Public Rental Housing
    */
-  PublicRentalHousing: "129",
+  "129": "129",
 
   /**
    * Interpreting/Multilingual Service
    */
-  InterpretingMultilingualService: "130",
+  "130": "130",
 
   /**
    * Juvenile Justice
    */
-  JuvenileJustice: "131",
+  "131": "131",
 
   /**
    * Legal Advocacy
    */
-  LegalAdvocacy: "132",
+  "132": "132",
 
   /**
    * Legal Information/Advice/Referral
    */
-  LegalInformationAdviceReferral: "133",
+  "133": "133",
 
   /**
    * Mental Health Advocacy
    */
-  MentalHealthAdvocacy: "134",
+  "134": "134",
 
   /**
    * Mental Health Assess/Triage/Crisis Response
    */
-  MentalHealthAssessTriageCrisisResponse: "135",
+  "135": "135",
 
   /**
    * Mental Health Case Management
    */
-  MentalHealthCaseManagement: "136",
+  "136": "136",
 
   /**
    * Mental Health Information/Referral
    */
-  MentalHealthInformationReferral: "137",
+  "137": "137",
 
   /**
    * Mental Health Inpatient Services
    */
-  MentalHealthInpatientServices: "138",
+  "138": "138",
 
   /**
    * Mental Health Non-residential Rehab
    */
-  MentalHealthNonresidentialRehab: "139",
+  "139": "139",
 
   /**
    * Mental Health Residential Rehab/CCU
    */
-  MentalHealthResidentialRehabCCU: "140",
+  "140": "140",
 
   /**
    * Psychiatry (Requires Referral)
    */
-  PsychiatryRequiresReferral: "141",
+  "141": "141",
 
   /**
    * Psychology
    */
-  Psychology: "142",
+  "142": "142",
 
   /**
    * Martial Arts
    */
-  MartialArts: "143",
+  "143": "143",
 
   /**
    * Personal Fitness Training
    */
-  PersonalFitnessTraining: "144",
+  "144": "144",
 
   /**
    * Physical Activity Group
    */
-  PhysicalActivityGroup: "145",
+  "145": "145",
 
   /**
    * Physical Activity Programs
    */
-  PhysicalActivityPrograms: "146",
+  "146": "146",
 
   /**
    * Physical Fitness Testing
    */
-  PhysicalFitnessTesting: "147",
+  "147": "147",
 
   /**
    * Pilates
    */
-  Pilates: "148",
+  "148": "148",
 
   /**
    * Self-Defence
    */
-  SelfDefence: "149",
+  "149": "149",
 
   /**
    * Sporting Club
    */
-  SportingClub: "150",
+  "150": "150",
 
   /**
    * Yoga
    */
-  Yoga: "151",
+  "151": "151",
 
   /**
    * Food Safety
    */
-  FoodSafety: "152",
+  "152": "152",
 
   /**
    * Health Regulatory /Inspection /Cert.
    */
-  HealthRegulatoryInspectionCert: "153",
+  "153": "153",
 
   /**
    * Work Health/Safety Inspection/Cert.
    */
-  WorkHealthSafetyInspectionCert: "154",
+  "154": "154",
 
   /**
    * Carer Support
    */
-  CarerSupport: "155",
+  "155": "155",
 
   /**
    * Respite Care
    */
-  RespiteCare: "156",
+  "156": "156",
 
   /**
    * Anatomical Pathology
    */
-  AnatomicalPathology: "157",
+  "157": "157",
 
   /**
    * Pathology - Clinical Chemistry
    */
-  PathologyClinicalChemistry: "158",
+  "158": "158",
 
   /**
    * Pathology - General
    */
-  PathologyGeneral: "159",
+  "159": "159",
 
   /**
    * Pathology - Genetics
    */
-  PathologyGenetics: "160",
+  "160": "160",
 
   /**
    * Pathology - Haematology
    */
-  PathologyHaematology: "161",
+  "161": "161",
 
   /**
    * Pathology - Immunology
    */
-  PathologyImmunology: "162",
+  "162": "162",
 
   /**
    * Pathology - Microbiology
    */
-  PathologyMicrobiology: "163",
+  "163": "163",
 
   /**
    * Anaesthesiology - Pain Medicine
    */
-  AnaesthesiologyPainMedicine: "164",
+  "164": "164",
 
   /**
    * Cardiology
    */
-  Cardiology: "165",
+  "165": "165",
 
   /**
    * Clinical Genetics
    */
-  ClinicalGenetics: "166",
+  "166": "166",
 
   /**
    * Clinical Pharmacology
    */
-  ClinicalPharmacology: "167",
+  "167": "167",
 
   /**
    * Dermatology
    */
-  Dermatology: "168",
+  "168": "168",
 
   /**
    * Endocrinology
    */
-  Endocrinology: "169",
+  "169": "169",
 
   /**
    * Gastroenterology & Hepatology
    */
-  GastroenterologyHepatology: "170",
+  "170": "170",
 
   /**
    * Geriatric Medicine
    */
-  GeriatricMedicine: "171",
+  "171": "171",
 
   /**
    * Immunology & Allergy
    */
-  ImmunologyAllergy: "172",
+  "172": "172",
 
   /**
    * Infectious Diseases
    */
-  InfectiousDiseases: "173",
+  "173": "173",
 
   /**
    * Intensive Care Medicine
    */
-  IntensiveCareMedicine: "174",
+  "174": "174",
 
   /**
    * Medical Oncology
    */
-  MedicalOncology: "175",
+  "175": "175",
 
   /**
    * Nephrology
    */
-  Nephrology: "176",
+  "176": "176",
 
   /**
    * Neurology
    */
-  Neurology: "177",
+  "177": "177",
 
   /**
    * Occupational Medicine
    */
-  OccupationalMedicine: "178",
+  "178": "178",
 
   /**
    * Palliative Medicine
    */
-  PalliativeMedicine: "179",
+  "179": "179",
 
   /**
    * Public Health Medicine
    */
-  PublicHealthMedicine: "180",
+  "180": "180",
 
   /**
    * Rehabilitation Medicine
    */
-  RehabilitationMedicine: "181",
+  "181": "181",
 
   /**
    * Rheumatology
    */
-  Rheumatology: "182",
+  "182": "182",
 
   /**
    * Sleep Medicine
    */
-  SleepMedicine: "183",
+  "183": "183",
 
   /**
    * Thoracic Medicine
    */
-  ThoracicMedicine: "184",
+  "184": "184",
 
   /**
    * Gynaecological Oncology
    */
-  GynaecologicalOncology: "185",
+  "185": "185",
 
   /**
    * Obstetrics & Gynaecology
    */
-  ObstetricsGynaecology: "186",
+  "186": "186",
 
   /**
    * Reproductive Endocrinology/Infertility
    */
-  ReproductiveEndocrinologyInfertility: "187",
+  "187": "187",
 
   /**
    * Urogynaecology
    */
-  Urogynaecology: "188",
+  "188": "188",
 
   /**
    * Neonatology & Perinatology
    */
-  NeonatologyPerinatology: "189",
+  "189": "189",
 
   /**
    * Paediatric Cardiology
    */
-  PaediatricCardiology: "190",
+  "190": "190",
 
   /**
    * Paediatric Clinical Genetics
    */
-  PaediatricClinicalGenetics: "191",
+  "191": "191",
 
   /**
    * Paediatric Clinical Pharmacology
    */
-  PaediatricClinicalPharmacology: "192",
+  "192": "192",
 
   /**
    * Paediatric Endocrinology
    */
-  PaediatricEndocrinology: "193",
+  "193": "193",
 
   /**
    * Paed. Gastroenterology/Hepatology
    */
-  PaedGastroenterologyHepatology: "194",
+  "194": "194",
 
   /**
    * Paediatric Haematology
    */
-  PaediatricHaematology: "195",
+  "195": "195",
 
   /**
    * Paediatric Immunology & Allergy
    */
-  PaediatricImmunologyAllergy: "196",
+  "196": "196",
 
   /**
    * Paediatric Infectious Diseases
    */
-  PaediatricInfectiousDiseases: "197",
+  "197": "197",
 
   /**
    * Paediatric Intensive Care Medicine
    */
-  PaediatricIntensiveCareMedicine: "198",
+  "198": "198",
 
   /**
    * Paediatric Medical Oncology
    */
-  PaediatricMedicalOncology: "199",
+  "199": "199",
 
   /**
    * Paediatric Medicine
    */
-  PaediatricMedicine: "200",
+  "200": "200",
 
   /**
    * Paediatric Nephrology
    */
-  PaediatricNephrology: "201",
+  "201": "201",
 
   /**
    * Paediatric Neurology
    */
-  PaediatricNeurology: "202",
+  "202": "202",
 
   /**
    * Paediatric Nuclear Medicine
    */
-  PaediatricNuclearMedicine: "203",
+  "203": "203",
 
   /**
    * Paediatric Rehabilitation Medicine
    */
-  PaediatricRehabilitationMedicine: "204",
+  "204": "204",
 
   /**
    * Paediatric Rheumatology
    */
-  PaediatricRheumatology: "205",
+  "205": "205",
 
   /**
    * Paediatric Sleep Medicine
    */
-  PaediatricSleepMedicine: "206",
+  "206": "206",
 
   /**
    * Paediatric Surgery
    */
-  PaediatricSurgery: "207",
+  "207": "207",
 
   /**
    * Paediatric Thoracic Medicine
    */
-  PaediatricThoracicMedicine: "208",
+  "208": "208",
 
   /**
    * Diag. Radiology /Xray /CT /Fluoroscopy
    */
-  DiagRadiologyXrayCTFluoroscopy: "209",
+  "209": "209",
 
   /**
    * Diagnostic Ultrasound
    */
-  DiagnosticUltrasound: "210",
+  "210": "210",
 
   /**
    * Magnetic Resonance Imaging (MRI)
    */
-  MagneticResonanceImagingMRI: "211",
+  "211": "211",
 
   /**
    * Nuclear Medicine
    */
-  NuclearMedicine: "212",
+  "212": "212",
 
   /**
    * Obstetric/Gynaecological Ultrasound
    */
-  ObstetricGynaecologicalUltrasound: "213",
+  "213": "213",
 
   /**
    * Radiation Oncology
    */
-  RadiationOncology: "214",
+  "214": "214",
 
   /**
    * Cardiothoracic Surgery
    */
-  CardiothoracicSurgery: "215",
+  "215": "215",
 
   /**
    * Neurosurgery
    */
-  Neurosurgery: "216",
+  "216": "216",
 
   /**
    * Ophthalmology
    */
-  Ophthalmology: "217",
+  "217": "217",
 
   /**
    * Orthopaedic Surgery
    */
-  OrthopaedicSurgery: "218",
+  "218": "218",
 
   /**
    * Otolaryngology/Head & Neck Surgery
    */
-  OtolaryngologyHeadNeckSurgery: "219",
+  "219": "219",
 
   /**
    * Plastic & Reconstructive Surgery
    */
-  PlasticReconstructiveSurgery: "220",
+  "220": "220",
 
   /**
    * Surgery - General
    */
-  SurgeryGeneral: "221",
+  "221": "221",
 
   /**
    * Urology
    */
-  Urology: "222",
+  "222": "222",
 
   /**
    * Vascular Surgery
    */
-  VascularSurgery: "223",
+  "223": "223",
 
   /**
    * Support Groups
    */
-  SupportGroups: "224",
+  "224": "224",
 
   /**
    * Air ambulance
    */
-  Airambulance: "225",
+  "225": "225",
 
   /**
    * Ambulance
    */
-  Ambulance: "226",
+  "226": "226",
 
   /**
    * Blood Transport
    */
-  BloodTransport: "227",
+  "227": "227",
 
   /**
    * Community Bus
    */
-  CommunityBus: "228",
+  "228": "228",
 
   /**
    * Flying Doctor Service
    */
-  FlyingDoctorService: "229",
+  "229": "229",
 
   /**
    * Patient Transport
    */
-  PatientTransport: "230",
+  "230": "230",
 
   /**
    * A&E
    */
-  AE: "231",
+  "231": "231",
 
   /**
    * A&EP
    */
-  AEP: "232",
+  "232": "232",
 
   /**
    * Abuse
    */
-  Abuse: "233",
+  "233": "233",
 
   /**
    * ACAS
    */
-  ACAS: "234",
+  "234": "234",
 
   /**
    * Access
    */
-  Access: "235",
+  "235": "235",
 
   /**
    * Accident
    */
-  Accident: "236",
+  "236": "236",
 
   /**
    * Acute Inpatient Serv
    */
-  AcuteInpatientServ: "237",
+  "237": "237",
 
   /**
    * Adult Day Programs
    */
-  AdultDayPrograms: "238",
+  "238": "238",
 
   /**
    * Adult Mental Health Services
    */
-  AdultMentalHealthServices: "239",
+  "239": "239",
 
   /**
    * Advice
    */
-  Advice: "240",
+  "240": "240",
 
   /**
    * Advocacy
    */
-  Advocacy: "241",
+  "241": "241",
 
   /**
    * Aged Persons Mental
    */
-  AgedPersonsMental: "242",
+  "242": "242",
 
   /**
    * Aged Persons Mental
    */
-  AgedPersonsMental: "243",
+  "243": "243",
 
   /**
    * Aged Persons Mental
    */
-  AgedPersonsMental: "244",
+  "244": "244",
 
   /**
    * Aids
    */
-  Aids: "245",
+  "245": "245",
 
   /**
    * Al-Anon
    */
-  AlAnon: "246",
+  "246": "246",
 
   /**
    * Alcohol
    */
-  Alcohol: "247",
+  "247": "247",
 
   /**
    * Al-Teen
    */
-  AlTeen: "248",
+  "248": "248",
 
   /**
    * Antenatal
    */
-  Antenatal: "249",
+  "249": "249",
 
   /**
    * Anxiety
    */
-  Anxiety: "250",
+  "250": "250",
 
   /**
    * Arthritis
    */
-  Arthritis: "251",
+  "251": "251",
 
   /**
    * Assessment
    */
-  Assessment: "252",
+  "252": "252",
 
   /**
    * Assistance
    */
-  Assistance: "253",
+  "253": "253",
 
   /**
    * Asthma
    */
-  Asthma: "254",
+  "254": "254",
 
   /**
    * ATSS
    */
-  ATSS: "255",
+  "255": "255",
 
   /**
    * Attendant Care
    */
-  AttendantCare: "256",
+  "256": "256",
 
   /**
    * Babies
    */
-  Babies: "257",
+  "257": "257",
 
   /**
    * Bathroom Modificatio
    */
-  BathroomModificatio: "258",
+  "258": "258",
 
   /**
    * Behavior
    */
-  Behavior: "259",
+  "259": "259",
 
   /**
    * Behavior Interventi
    */
-  BehaviorInterventi: "260",
+  "260": "260",
 
   /**
    * Bereavement
    */
-  Bereavement: "261",
+  "261": "261",
 
   /**
    * Bipolar
    */
-  Bipolar: "262",
+  "262": "262",
 
   /**
    * Birth
    */
-  Birth: "263",
+  "263": "263",
 
   /**
    * Birth Control
    */
-  BirthControl: "264",
+  "264": "264",
 
   /**
    * Birthing Options
    */
-  BirthingOptions: "265",
+  "265": "265",
 
   /**
    * BIST
    */
-  BIST: "266",
+  "266": "266",
 
   /**
    * Blood
    */
-  Blood: "267",
+  "267": "267",
 
   /**
    * Bone
    */
-  Bone: "268",
+  "268": "268",
 
   /**
    * Bowel
    */
-  Bowel: "269",
+  "269": "269",
 
   /**
    * Brain
    */
-  Brain: "270",
+  "270": "270",
 
   /**
    * Breast Feeding
    */
-  BreastFeeding: "271",
+  "271": "271",
 
   /**
    * Breast Screen
    */
-  BreastScreen: "272",
+  "272": "272",
 
   /**
    * Brokerage
    */
-  Brokerage: "273",
+  "273": "273",
 
   /**
    * Cancer
    */
-  Cancer: "274",
+  "274": "274",
 
   /**
    * Cancer Support
    */
-  CancerSupport: "275",
+  "275": "275",
 
   /**
    * Cardiovascular Disea
    */
-  CardiovascularDisea: "276",
+  "276": "276",
 
   /**
    * Care Packages
    */
-  CarePackages: "277",
+  "277": "277",
 
   /**
    * Carer
    */
-  Carer: "278",
+  "278": "278",
 
   /**
    * Case Management
    */
-  CaseManagement: "279",
+  "279": "279",
 
   /**
    * Casualty
    */
-  Casualty: "280",
+  "280": "280",
 
   /**
    * Centrelink
    */
-  Centrelink: "281",
+  "281": "281",
 
   /**
    * Chemists
    */
-  Chemists: "282",
+  "282": "282",
 
   /**
    * Child And Adolescent
    */
-  ChildAndAdolescent: "283",
+  "283": "283",
 
   /**
    * Child Care
    */
-  ChildCare: "284",
+  "284": "284",
 
   /**
    * Child Services
    */
-  ChildServices: "285",
+  "285": "285",
 
   /**
    * Children
    */
-  Children: "286",
+  "286": "286",
 
   /**
    * Children's Services
    */
-  ChildrensServices: "287",
+  "287": "287",
 
   /**
    * Cholesterol
    */
-  Cholesterol: "288",
+  "288": "288",
 
   /**
    * Clothing
    */
-  Clothing: "289",
+  "289": "289",
 
   /**
    * Community Based Acco
    */
-  CommunityBasedAcco: "290",
+  "290": "290",
 
   /**
    * Community Care Unit
    */
-  CommunityCareUnit: "291",
+  "291": "291",
 
   /**
    * Community Child And
    */
-  CommunityChildAnd: "292",
+  "292": "292",
 
   /**
    * Community Health
    */
-  CommunityHealth: "293",
+  "293": "293",
 
   /**
    * Community Residentia
    */
-  CommunityResidentia: "294",
+  "294": "294",
 
   /**
    * Community Transport
    */
-  CommunityTransport: "295",
+  "295": "295",
 
   /**
    * Companion Visiting
    */
-  CompanionVisiting: "296",
+  "296": "296",
 
   /**
    * Companionship
    */
-  Companionship: "297",
+  "297": "297",
 
   /**
    * Consumer Advice
    */
-  ConsumerAdvice: "298",
+  "298": "298",
 
   /**
    * Consumer Issues
    */
-  ConsumerIssues: "299",
+  "299": "299",
 
   /**
    * Continuing Care Serv
    */
-  ContinuingCareServ: "300",
+  "300": "300",
 
   /**
    * Contraception Inform
    */
-  ContraceptionInform: "301",
+  "301": "301",
 
   /**
    * Coordinating Bodies
    */
-  CoordinatingBodies: "302",
+  "302": "302",
 
   /**
    * Correctional Service
    */
-  CorrectionalService: "303",
+  "303": "303",
 
   /**
    * Council Environmenta
    */
-  CouncilEnvironmenta: "304",
+  "304": "304",
 
   /**
    * Counselling
    */
-  Counselling: "305",
+  "305": "305",
 
   /**
    * Criminal
    */
-  Criminal: "306",
+  "306": "306",
 
   /**
    * Crises
    */
-  Crises: "307",
+  "307": "307",
 
   /**
    * Crisis Assessment An
    */
-  CrisisAssessmentAn: "308",
+  "308": "308",
 
   /**
    * Crisis Assistance
    */
-  CrisisAssistance: "309",
+  "309": "309",
 
   /**
    * Crisis Refuge
    */
-  CrisisRefuge: "310",
+  "310": "310",
 
   /**
    * Day Program
    */
-  DayProgram: "311",
+  "311": "311",
 
   /**
    * Deaf
    */
-  Deaf: "312",
+  "312": "312",
 
   /**
    * Dental Hygiene
    */
-  DentalHygiene: "313",
+  "313": "313",
 
   /**
    * Dentistry
    */
-  Dentistry: "314",
+  "314": "314",
 
   /**
    * Dentures
    */
-  Dentures: "315",
+  "315": "315",
 
   /**
    * Depression
    */
-  Depression: "316",
+  "316": "316",
 
   /**
    * Detoxification
    */
-  Detoxification: "317",
+  "317": "317",
 
   /**
    * Diabetes
    */
-  Diabetes: "318",
+  "318": "318",
 
   /**
    * Diaphragm Fitting
    */
-  DiaphragmFitting: "319",
+  "319": "319",
 
   /**
    * Dieticians
    */
-  Dieticians: "320",
+  "320": "320",
 
   /**
    * Disabled Parking
    */
-  DisabledParking: "321",
+  "321": "321",
 
   /**
    * District Nursing
    */
-  DistrictNursing: "322",
+  "322": "322",
 
   /**
    * Divorce
    */
-  Divorce: "323",
+  "323": "323",
 
   /**
    * Doctors
    */
-  Doctors: "324",
+  "324": "324",
 
   /**
    * Drink-Drive
    */
-  DrinkDrive: "325",
+  "325": "325",
 
   /**
    * Dual Diagnosis Servi
    */
-  DualDiagnosisServi: "326",
+  "326": "326",
 
   /**
    * Early Choice
    */
-  EarlyChoice: "327",
+  "327": "327",
 
   /**
    * Eating Disorder
    */
-  EatingDisorder: "328",
+  "328": "328",
 
   /**
    * Emergency Relief
    */
-  EmergencyRelief: "330",
+  "330": "330",
 
   /**
    * Employment And Train
    */
-  EmploymentAndTrain: "331",
+  "331": "331",
 
   /**
    * Environment
    */
-  Environment: "332",
+  "332": "332",
 
   /**
    * Equipment
    */
-  Equipment: "333",
+  "333": "333",
 
   /**
    * Exercise
    */
-  Exercise: "334",
+  "334": "334",
 
   /**
    * Facility
    */
-  Facility: "335",
+  "335": "335",
 
   /**
    * Family Choice
    */
-  FamilyChoice: "336",
+  "336": "336",
 
   /**
    * Family Law
    */
-  FamilyLaw: "337",
+  "337": "337",
 
   /**
    * Family Options
    */
-  FamilyOptions: "338",
+  "338": "338",
 
   /**
    * Family Services
    */
-  FamilyServices: "339",
+  "339": "339",
 
   /**
    * FFYA
    */
-  FFYA: "340",
+  "340": "340",
 
   /**
    * Financial Aid
    */
-  FinancialAid: "341",
+  "341": "341",
 
   /**
    * Fitness
    */
-  Fitness: "342",
+  "342": "342",
 
   /**
    * Flexible Care Packag
    */
-  FlexibleCarePackag: "343",
+  "343": "343",
 
   /**
    * Food
    */
-  Food: "344",
+  "344": "344",
 
   /**
    * Food Vouchers
    */
-  FoodVouchers: "345",
+  "345": "345",
 
   /**
    * Forensic Mental Heal
    */
-  ForensicMentalHeal: "346",
+  "346": "346",
 
   /**
    * Futures
    */
-  Futures: "347",
+  "347": "347",
 
   /**
    * Futures For Young Ad
    */
-  FuturesForYoungAd: "348",
+  "348": "348",
 
   /**
    * General Practitioner
    */
-  GeneralPractitioner: "349",
+  "349": "349",
 
   /**
    * Grants
    */
-  Grants: "350",
+  "350": "350",
 
   /**
    * Grief
    */
-  Grief: "351",
+  "351": "351",
 
   /**
    * Grief Counselling
    */
-  GriefCounselling: "352",
+  "352": "352",
 
   /**
    * HACC
    */
-  HACC: "353",
+  "353": "353",
 
   /**
    * Heart Disease
    */
-  HeartDisease: "354",
+  "354": "354",
 
   /**
    * Help
    */
-  Help: "355",
+  "355": "355",
 
   /**
    * High Blood Pressure
    */
-  HighBloodPressure: "356",
+  "356": "356",
 
   /**
    * Home Help
    */
-  HomeHelp: "357",
+  "357": "357",
 
   /**
    * Home Nursing
    */
-  HomeNursing: "358",
+  "358": "358",
 
   /**
    * Homefirst
    */
-  Homefirst: "359",
+  "359": "359",
 
   /**
    * Hospice Care
    */
-  HospiceCare: "360",
+  "360": "360",
 
   /**
    * Hospital Services
    */
-  HospitalServices: "361",
+  "361": "361",
 
   /**
    * Hospital To Home
    */
-  HospitalToHome: "362",
+  "362": "362",
 
   /**
    * Hostel
    */
-  Hostel: "364",
+  "364": "364",
 
   /**
    * Hostel Accommodation
    */
-  HostelAccommodation: "365",
+  "365": "365",
 
   /**
    * Household Items
    */
-  HouseholdItems: "366",
+  "366": "366",
 
   /**
    * Hypertension
    */
-  Hypertension: "367",
+  "367": "367",
 
   /**
    * Illness
    */
-  Illness: "368",
+  "368": "368",
 
   /**
    * Independent Living
    */
-  IndependentLiving: "369",
+  "369": "369",
 
   /**
    * Information
    */
-  Information: "370",
+  "370": "370",
 
   /**
    * Injury
    */
-  Injury: "371",
+  "371": "371",
 
   /**
    * Intake
    */
-  Intake: "372",
+  "372": "372",
 
   /**
    * Intensive Mobile You
    */
-  IntensiveMobileYou: "373",
+  "373": "373",
 
   /**
    * Intervention
    */
-  Intervention: "374",
+  "374": "374",
 
   /**
    * Job Searching
    */
-  JobSearching: "375",
+  "375": "375",
 
   /**
    * Justice
    */
-  Justice: "376",
+  "376": "376",
 
   /**
    * Leisure
    */
-  Leisure: "377",
+  "377": "377",
 
   /**
    * Loans
    */
-  Loans: "378",
+  "378": "378",
 
   /**
    * Low Income Earners
    */
-  LowIncomeEarners: "379",
+  "379": "379",
 
   /**
    * Lung
    */
-  Lung: "380",
+  "380": "380",
 
   /**
    * Making A Difference
    */
-  MakingADifference: "381",
+  "381": "381",
 
   /**
    * Medical Services
    */
-  MedicalServices: "382",
+  "382": "382",
 
   /**
    * Medical Specialists
    */
-  MedicalSpecialists: "383",
+  "383": "383",
 
   /**
    * Medication Administr
    */
-  MedicationAdministr: "384",
+  "384": "384",
 
   /**
    * Menstrual Informatio
    */
-  MenstrualInformatio: "385",
+  "385": "385",
 
   /**
    * Methadone
    */
-  Methadone: "386",
+  "386": "386",
 
   /**
    * Mobile Support And T
    */
-  MobileSupportAndT: "387",
+  "387": "387",
 
   /**
    * Motor Neurone
    */
-  MotorNeurone: "388",
+  "388": "388",
 
   /**
    * Multiple Sclerosis
    */
-  MultipleSclerosis: "389",
+  "389": "389",
 
   /**
    * Neighbourhood House
    */
-  NeighbourhoodHouse: "390",
+  "390": "390",
 
   /**
    * Nursing Home
    */
-  NursingHome: "391",
+  "391": "391",
 
   /**
    * Nursing Mothers
    */
-  NursingMothers: "392",
+  "392": "392",
 
   /**
    * Obesity
    */
-  Obesity: "393",
+  "393": "393",
 
   /**
    * Occupational Health
    */
-  OccupationalHealth: "394",
+  "394": "394",
 
   /**
    * Optometrist
    */
-  Optometrist: "395",
+  "395": "395",
 
   /**
    * Oral Hygiene
    */
-  OralHygiene: "396",
+  "396": "396",
 
   /**
    * Outpatients
    */
-  Outpatients: "397",
+  "397": "397",
 
   /**
    * Outreach Service
    */
-  OutreachService: "398",
+  "398": "398",
 
   /**
    * PADP
    */
-  PADP: "399",
+  "399": "399",
 
   /**
    * Pain
    */
-  Pain: "400",
+  "400": "400",
 
   /**
    * Pap Smear
    */
-  PapSmear: "401",
+  "401": "401",
 
   /**
    * Parenting
    */
-  Parenting: "402",
+  "402": "402",
 
   /**
    * Peak Organizations
    */
-  PeakOrganizations: "403",
+  "403": "403",
 
   /**
    * Personal Care
    */
-  PersonalCare: "404",
+  "404": "404",
 
   /**
    * Pharmacies
    */
-  Pharmacies: "405",
+  "405": "405",
 
   /**
    * Phobias
    */
-  Phobias: "406",
+  "406": "406",
 
   /**
    * Physical
    */
-  Physical: "407",
+  "407": "407",
 
   /**
    * Physical Activity
    */
-  PhysicalActivity: "408",
+  "408": "408",
 
   /**
    * Postnatal
    */
-  Postnatal: "409",
+  "409": "409",
 
   /**
    * Pregnancy
    */
-  Pregnancy: "410",
+  "410": "410",
 
   /**
    * Pregnancy Tests
    */
-  PregnancyTests: "411",
+  "411": "411",
 
   /**
    * Preschool
    */
-  Preschool: "412",
+  "412": "412",
 
   /**
    * Prescriptions
    */
-  Prescriptions: "413",
+  "413": "413",
 
   /**
    * Primary Mental Healt
    */
-  PrimaryMentalHealt: "414",
+  "414": "414",
 
   /**
    * Property Maintenance
    */
-  PropertyMaintenance: "415",
+  "415": "415",
 
   /**
    * Prostate
    */
-  Prostate: "416",
+  "416": "416",
 
   /**
    * Psychiatric
    */
-  Psychiatric: "417",
+  "417": "417",
 
   /**
    * Psychiatric Disabili
    */
-  PsychiatricDisabili: "418",
+  "418": "418",
 
   /**
    * Psychiatric Disabili
    */
-  PsychiatricDisabili: "419",
+  "419": "419",
 
   /**
    * Psychiatric Disabili
    */
-  PsychiatricDisabili: "420",
+  "420": "420",
 
   /**
    * Psychiatric Disabili
    */
-  PsychiatricDisabili: "421",
+  "421": "421",
 
   /**
    * Psychiatric Disabili
    */
-  PsychiatricDisabili: "422",
+  "422": "422",
 
   /**
    * Psychiatric Support
    */
-  PsychiatricSupport: "423",
+  "423": "423",
 
   /**
    * Recreation
    */
-  Recreation: "424",
+  "424": "424",
 
   /**
    * Referral
    */
-  Referral: "425",
+  "425": "425",
 
   /**
    * Refuge
    */
-  Refuge: "426",
+  "426": "426",
 
   /**
    * Rent Assistance
    */
-  RentAssistance: "427",
+  "427": "427",
 
   /**
    * Residential Faciliti
    */
-  ResidentialFaciliti: "428",
+  "428": "428",
 
   /**
    * Residential Respite
    */
-  ResidentialRespite: "429",
+  "429": "429",
 
   /**
    * Respiratory
    */
-  Respiratory: "430",
+  "430": "430",
 
   /**
    * Response
    */
-  Response: "431",
+  "431": "431",
 
   /**
    * Rooming Houses
    */
-  RoomingHouses: "432",
+  "432": "432",
 
   /**
    * Safe Sex
    */
-  SafeSex: "433",
+  "433": "433",
 
   /**
    * Secure Extended Care
    */
-  SecureExtendedCare: "434",
+  "434": "434",
 
   /**
    * Self Help
    */
-  SelfHelp: "435",
+  "435": "435",
 
   /**
    * Separation
    */
-  Separation: "436",
+  "436": "436",
 
   /**
    * Services
    */
-  Services: "437",
+  "437": "437",
 
   /**
    * Sex Education
    */
-  SexEducation: "438",
+  "438": "438",
 
   /**
    * Sexual Abuse
    */
-  SexualAbuse: "439",
+  "439": "439",
 
   /**
    * Sexual Issues
    */
-  SexualIssues: "440",
+  "440": "440",
 
   /**
    * Sexually Transmitted
    */
-  SexuallyTransmitted: "441",
+  "441": "441",
 
   /**
    * SIDS
    */
-  SIDS: "442",
+  "442": "442",
 
   /**
    * Social Support
    */
-  SocialSupport: "443",
+  "443": "443",
 
   /**
    * Socialisation
    */
-  Socialisation: "444",
+  "444": "444",
 
   /**
    * Special Needs
    */
-  SpecialNeeds: "445",
+  "445": "445",
 
   /**
    * Speech Therapist
    */
-  SpeechTherapist: "446",
+  "446": "446",
 
   /**
    * Splinting
    */
-  Splinting: "447",
+  "447": "447",
 
   /**
    * Sport
    */
-  Sport: "448",
+  "448": "448",
 
   /**
    * Statewide And Specia
    */
-  StatewideAndSpecia: "449",
+  "449": "449",
 
   /**
    * STD
    */
-  STD: "450",
+  "450": "450",
 
   /**
    * STI
    */
-  STI: "451",
+  "451": "451",
 
   /**
    * Stillbirth
    */
-  Stillbirth: "452",
+  "452": "452",
 
   /**
    * Stomal Care
    */
-  StomalCare: "453",
+  "453": "453",
 
   /**
    * Stroke
    */
-  Stroke: "454",
+  "454": "454",
 
   /**
    * Substance Abuse
    */
-  SubstanceAbuse: "455",
+  "455": "455",
 
   /**
    * Support
    */
-  Support: "456",
+  "456": "456",
 
   /**
    * Syringes
    */
-  Syringes: "457",
+  "457": "457",
 
   /**
    * Teeth
    */
-  Teeth: "458",
+  "458": "458",
 
   /**
    * Tenancy Advice
    */
-  TenancyAdvice: "459",
+  "459": "459",
 
   /**
    * Terminal Illness
    */
-  TerminalIllness: "460",
+  "460": "460",
 
   /**
    * Therapy
    */
-  Therapy: "461",
+  "461": "461",
 
   /**
    * Transcription
    */
-  Transcription: "462",
+  "462": "462",
 
   /**
    * Translating Services
    */
-  TranslatingServices: "463",
+  "463": "463",
 
   /**
    * Translator
    */
-  Translator: "464",
+  "464": "464",
 
   /**
    * Transport
    */
-  Transport: "465",
+  "465": "465",
 
   /**
    * Vertebrae
    */
-  Vertebrae: "466",
+  "466": "466",
 
   /**
    * Violence
    */
-  Violence: "467",
+  "467": "467",
 
   /**
    * Vocational Guidance
    */
-  VocationalGuidance: "468",
+  "468": "468",
 
   /**
    * Weight
    */
-  Weight: "469",
+  "469": "469",
 
   /**
    * Welfare Assistance
    */
-  WelfareAssistance: "470",
+  "470": "470",
 
   /**
    * Welfare Counselling
    */
-  WelfareCounselling: "471",
+  "471": "471",
 
   /**
    * Wheelchairs
    */
-  Wheelchairs: "472",
+  "472": "472",
 
   /**
    * Wound Management
    */
-  WoundManagement: "473",
+  "473": "473",
 
   /**
    * Young People At Risk
    */
-  YoungPeopleAtRisk: "474",
+  "474": "474",
 
   /**
    * Further Desc. - Community Health Care
    */
-  FurtherDescCommunityHealthCare: "475",
+  "475": "475",
 
   /**
    * Library
    */
-  Library: "476",
+  "476": "476",
 
   /**
    * Community Hours
    */
-  CommunityHours: "477",
+  "477": "477",
 
   /**
    * Further Desc. - Specialist Medical
    */
-  FurtherDescSpecialistMedical: "478",
+  "478": "478",
 
   /**
    * Hepatology
    */
-  Hepatology: "479",
+  "479": "479",
 
   /**
    * Gastroenterology
    */
-  Gastroenterology: "480",
+  "480": "480",
 
   /**
    * Gynaecology
    */
-  Gynaecology: "481",
+  "481": "481",
 
   /**
    * Obstetrics
    */
-  Obstetrics: "482",
+  "482": "482",
 
   /**
    * Further Desc. - Specialist Surgical
    */
-  FurtherDescSpecialistSurgical: "483",
+  "483": "483",
 
   /**
    * Placement Protection
    */
-  PlacementProtection: "484",
+  "484": "484",
 
   /**
    * Family Violence
    */
-  FamilyViolence: "485",
+  "485": "485",
 
   /**
    * Integrated Family Services
    */
-  IntegratedFamilyServices: "486",
+  "486": "486",
 
   /**
    * Diabetes Educator
    */
-  DiabetesEducator: "488",
+  "488": "488",
 
   /**
    * Kinship Care
    */
-  KinshipCare: "489",
+  "489": "489",
 
   /**
    * General Mental Health Services
    */
-  GeneralMentalHealthServices: "490",
+  "490": "490",
 
   /**
    * Exercise Physiology
    */
-  ExercisePhysiology: "491",
+  "491": "491",
 
   /**
    * Medical Research
    */
-  MedicalResearch: "492",
+  "492": "492",
 
   /**
    * Youth
    */
-  Youth: "493",
+  "493": "493",
 
   /**
    * Youth Services
    */
-  YouthServices: "494",
+  "494": "494",
 
   /**
    * Youth Health
    */
-  YouthHealth: "495",
+  "495": "495",
 
   /**
    * Child and Family Ser
    */
-  ChildandFamilySer: "496",
+  "496": "496",
 
   /**
    * Home Visits
    */
-  HomeVisits: "497",
+  "497": "497",
 
   /**
    * Mobile Services
    */
-  MobileServices: "498",
+  "498": "498",
 
   /**
    * Before and/or After
    */
-  BeforeandorAfter: "500",
+  "500": "500",
 
   /**
    * Cancer Services
    */
-  CancerServices: "501",
+  "501": "501",
 
   /**
    * Integrated Cancer Se
    */
-  IntegratedCancerSe: "502",
+  "502": "502",
 
   /**
    * Multidisciplinary Se
    */
-  MultidisciplinarySe: "503",
+  "503": "503",
 
   /**
    * Multidisciplinary Ca
    */
-  MultidisciplinaryCa: "504",
+  "504": "504",
 
   /**
    * Meetings
    */
-  Meetings: "505",
+  "505": "505",
 
   /**
    * Blood pressure monit
    */
-  Bloodpressuremonit: "506",
+  "506": "506",
 
   /**
    * Dose administration
    */
-  Doseadministration: "507",
+  "507": "507",
 
   /**
    * Medical Equipment Hi
    */
-  MedicalEquipmentHi: "508",
+  "508": "508",
 
   /**
    * Parenting/Family Support/Education
    */
-  ParentingFamilySupportEducation: "509",
+  "509": "509",
 
   /**
    * Deputising Service
    */
-  DeputisingService: "510",
+  "510": "510",
 
   /**
    * Cancer Support Groups
    */
-  CancerSupportGroups: "513",
+  "513": "513",
 
   /**
    * Community Cancer Services
    */
-  CommunityCancerServices: "514",
+  "514": "514",
 
   /**
    * Disability Care Transport
    */
-  DisabilityCareTransport: "530",
+  "530": "530",
 
   /**
    * Aged Care Transport
    */
-  AgedCareTransport: "531",
+  "531": "531",
 
   /**
    * Diabetes Education s
    */
-  DiabetesEducations: "532",
+  "532": "532",
 
   /**
    * Cardiac Rehabilitati
    */
-  CardiacRehabilitati: "533",
+  "533": "533",
 
   /**
    * Young Adult Diabetes
    */
-  YoungAdultDiabetes: "534",
+  "534": "534",
 
   /**
    * Pulmonary Rehabilita
    */
-  PulmonaryRehabilita: "535",
+  "535": "535",
 
   /**
    * Art therapy
    */
-  Arttherapy: "536",
+  "536": "536",
 
   /**
    * Medication Reviews
    */
-  MedicationReviews: "537",
+  "537": "537",
 
   /**
    * Telephone Counselling
    */
-  TelephoneCounselling: "538",
+  "538": "538",
 
   /**
    * Telephone Help Line
    */
-  TelephoneHelpLine: "539",
+  "539": "539",
 
   /**
    * Online Service
    */
-  OnlineService: "540",
+  "540": "540",
 
   /**
    * Crisis - Mental Health
    */
-  CrisisMentalHealth: "541",
+  "541": "541",
 
   /**
    * Youth Crisis
    */
-  YouthCrisis: "542",
+  "542": "542",
 
   /**
    * Sexual Assault
    */
-  SexualAssault: "543",
+  "543": "543",
 
   /**
    * GPAH Other
    */
-  GPAHOther: "544",
+  "544": "544",
 
   /**
    * Paediatric Dermatology
    */
-  PaediatricDermatology: "545",
+  "545": "545",
 
   /**
    * Veterans Services
    */
-  VeteransServices: "546",
+  "546": "546",
 
   /**
    * Veterans
    */
-  Veterans: "547",
+  "547": "547",
 
   /**
    * Food Relief/Food/Meals
    */
-  FoodReliefFoodMeals: "548",
+  "548": "548",
 
   /**
    * Dementia Care
    */
-  DementiaCare: "550",
+  "550": "550",
 
   /**
    * Alzheimer
    */
-  Alzheimer: "551",
+  "551": "551",
 
   /**
    * Drug and/or Alcohol Support Groups
    */
-  DrugandorAlcoholSupportGroups: "552",
+  "552": "552",
 
   /**
    * 1-on-1 Support /Mentoring /Coaching
    */
-  Oneon1SupportMentoringCoaching: "553",
+  "553": "553",
 
   /**
    * Chronic Disease Management
    */
-  ChronicDiseaseManagement: "554",
+  "554": "554",
 
   /**
    * Liaison Services
    */
-  LiaisonServices: "555",
+  "555": "555",
 
   /**
    * Walk-in Centre /Non-Emergency
    */
-  WalkinCentreNonEmergency: "556",
+  "556": "556",
 
   /**
    * Inpatients
    */
-  Inpatients: "557",
+  "557": "557",
 
   /**
    * Spiritual Counselling
    */
-  SpiritualCounselling: "558",
+  "558": "558",
 
   /**
    * Women's Health
    */
-  WomensHealth: "559",
+  "559": "559",
 
   /**
    * Men's Health
    */
-  MensHealth: "560",
+  "560": "560",
 
   /**
    * Health Education/Awareness Program
    */
-  HealthEducationAwarenessProgram: "561",
+  "561": "561",
 
   /**
    * Test Message
    */
-  TestMessage: "562",
+  "562": "562",
 
   /**
    * Remedial Massage
    */
-  RemedialMassage: "563",
+  "563": "563",
 
   /**
    * Adolescent Mental Health Services
    */
-  AdolescentMentalHealthServices: "564",
+  "564": "564",
 
   /**
    * Youth Drop In/Assistance/Support
    */
-  YouthDropInAssistanceSupport: "565",
+  "565": "565",
 
   /**
    * Aboriginal Health Worker
    */
-  AboriginalHealthWorker: "566",
+  "566": "566",
 
   /**
    * Women's Health Clinic
    */
-  WomensHealthClinic: "567",
+  "567": "567",
 
   /**
    * Men's Health Clinic
    */
-  MensHealthClinic: "568",
+  "568": "568",
 
   /**
    * Migrant Health Clinic
    */
-  MigrantHealthClinic: "569",
+  "569": "569",
 
   /**
    * Refugee Health Clinic
    */
-  RefugeeHealthClinic: "570",
+  "570": "570",
 
   /**
    * Aboriginal Health Clinic
    */
-  AboriginalHealthClinic: "571",
+  "571": "571",
 
   /**
    * Nurse Practitioner Lead Clinic/s
    */
-  NursePractitionerLeadClinics: "572",
+  "572": "572",
 
   /**
    * Nurse Lead Clinic/s
    */
-  NurseLeadClinics: "573",
+  "573": "573",
 
   /**
    * Culturally Tailored Support Groups
    */
-  CulturallyTailoredSupportGroups: "574",
+  "574": "574",
 
   /**
    * Culturally Tailored Health Promotion
    */
-  CulturallyTailoredHealthPromotion: "575",
+  "575": "575",
 
   /**
    * Rehabilitation
    */
-  Rehabilitation: "576",
+  "576": "576",
 
   /**
    * Education Information/Referral
    */
-  EducationInformationReferral: "577",
+  "577": "577",
 
   /**
    * Social Work
    */
-  SocialWork: "580",
+  "580": "580",
 
   /**
    * Haematology
    */
-  Haematology: "581",
+  "581": "581",
 
   /**
    * Maternity Shared Car
    */
-  MaternitySharedCar: "582",
+  "582": "582",
 
   /**
    * Rehabilitation Servi
    */
-  RehabilitationServi: "583",
+  "583": "583",
 
   /**
    * Cranio-sacral Therapy
    */
-  CraniosacralTherapy: "584",
+  "584": "584",
 
   /**
    * Prosthetics & Orthotics
    */
-  ProstheticsOrthotics: "585",
+  "585": "585",
 
   /**
    * Home Medicine Review
    */
-  HomeMedicineReview: "589",
+  "589": "589",
 
   /**
    * GPAH - Medical
    */
-  GPAHMedical: "590",
+  "590": "590",
 
   /**
    * Music Therapy
    */
-  MusicTherapy: "591",
+  "591": "591",
 
   /**
    * Falls Prevention
    */
-  FallsPrevention: "593",
+  "593": "593",
 
   /**
    * Accommodation/Tenancy
    */
-  AccommodationTenancy: "599",
+  "599": "599",
 
   /**
    * Assess-Skill, Ability, Needs
    */
-  AssessSkillAbilityNeeds: "600",
+  "600": "600",
 
   /**
    * Assist Access/Maintain Employ
    */
-  AssistAccessMaintainEmploy: "601",
+  "601": "601",
 
   /**
    * Assist Prod-Pers Care/Safety
    */
-  AssistProdPersCareSafety: "602",
+  "602": "602",
 
   /**
    * Assist-Integrate School/Ed
    */
-  AssistIntegrateSchoolEd: "603",
+  "603": "603",
 
   /**
    * Assist-Life Stage, Transition
    */
-  AssistLifeStageTransition: "604",
+  "604": "604",
 
   /**
    * Assist-Personal Activities
    */
-  AssistPersonalActivities: "605",
+  "605": "605",
 
   /**
    * Assist-Travel/Transport
    */
-  AssistTravelTransport: "606",
+  "606": "606",
 
   /**
    * Assistive Equip-General Tasks
    */
-  AssistiveEquipGeneralTasks: "607",
+  "607": "607",
 
   /**
    * Assistive Equip-Recreation
    */
-  AssistiveEquipRecreation: "608",
+  "608": "608",
 
   /**
    * Assistive Prod-Household Task
    */
-  AssistiveProdHouseholdTask: "609",
+  "609": "609",
 
   /**
    * Behavior Support
    */
-  BehaviorSupport: "610",
+  "610": "610",
 
   /**
    * Comms & Info Equipment
    */
-  CommsInfoEquipment: "611",
+  "611": "611",
 
   /**
    * Community Nursing Care
    */
-  CommunityNursingCare: "612",
+  "612": "612",
 
   /**
    * Daily Tasks/Shared Living
    */
-  DailyTasksSharedLiving: "613",
+  "613": "613",
 
   /**
    * Development-Life Skills
    */
-  DevelopmentLifeSkills: "614",
+  "614": "614",
 
   /**
    * Early Childhood Supports
    */
-  EarlyChildhoodSupports: "615",
+  "615": "615",
 
   /**
    * Equipment Special Assess Setup
    */
-  EquipmentSpecialAssessSetup: "616",
+  "616": "616",
 
   /**
    * Hearing Equipment
    */
-  HearingEquipment: "617",
+  "617": "617",
 
   /**
    * Home Modification
    */
-  HomeModification: "618",
+  "618": "618",
 
   /**
    * Household Tasks
    */
-  HouseholdTasks: "619",
+  "619": "619",
 
   /**
    * Interpret/Translate
    */
-  InterpretTranslate: "620",
+  "620": "620",
 
   /**
    * Other Innovative Supports
    */
-  OtherInnovativeSupports: "621",
+  "621": "621",
 
   /**
    * Participate Community
    */
-  ParticipateCommunity: "622",
+  "622": "622",
 
   /**
    * Personal Mobility Equipment
    */
-  PersonalMobilityEquipment: "623",
+  "623": "623",
 
   /**
    * Physical Wellbeing
    */
-  PhysicalWellbeing: "624",
+  "624": "624",
 
   /**
    * Plan Management
    */
-  PlanManagement: "625",
+  "625": "625",
 
   /**
    * Therapeutic Supports
    */
-  TherapeuticSupports: "626",
+  "626": "626",
 
   /**
    * Training-Travel Independence
    */
-  TrainingTravelIndependence: "627",
+  "627": "627",
 
   /**
    * Vehicle modifications
    */
-  Vehiclemodifications: "628",
+  "628": "628",
 
   /**
    * Vision Equipment
    */
-  VisionEquipment: "629",
+  "629": "629",
 } as const;
 
 /**

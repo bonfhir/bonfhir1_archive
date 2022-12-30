@@ -6,7 +6,7 @@ export const RoleClassCaregiverCode = {
   /**
    * caregiver
    */
-  caregiver: "CAREGIVER",
+  CAREGIVER: "CAREGIVER",
 } as const;
 
 /**

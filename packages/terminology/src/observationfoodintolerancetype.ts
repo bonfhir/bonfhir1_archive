@@ -6,17 +6,17 @@ export const ObservationFoodIntoleranceTypeCode = {
   /**
    * Food Intolerance
    */
-  FoodIntolerance: "FINT",
+  FINT: "FINT",
 
   /**
    * Food Allergy
    */
-  FoodAllergy: "FALG",
+  FALG: "FALG",
 
   /**
    * Food Non-Allergy Intolerance
    */
-  FoodNonAllergyIntolerance: "FNAINT",
+  FNAINT: "FNAINT",
 } as const;
 
 /**

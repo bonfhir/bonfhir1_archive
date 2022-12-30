@@ -10,77 +10,77 @@ export const ActInvoiceRootGroupCodeCode = {
   /**
    * clinical product invoice
    */
-  clinicalproductinvoice: "CPINV",
+  CPINV: "CPINV",
 
   /**
    * clinical product invoice
    */
-  clinicalproductinvoice: "CP",
+  CP: "CP",
 
   /**
    * clinical service invoice
    */
-  clinicalserviceinvoice: "CSINV",
+  CSINV: "CSINV",
 
   /**
    * clinical service invoice
    */
-  clinicalserviceinvoice: "CS",
+  CS: "CS",
 
   /**
    * clinical service and product
    */
-  clinicalserviceandproduct: "CSPINV",
+  CSPINV: "CSPINV",
 
   /**
    * financial invoice
    */
-  financialinvoice: "FININV",
+  FININV: "FININV",
 
   /**
    * oral health service
    */
-  oralhealthservice: "OHSINV",
+  OHSINV: "OHSINV",
 
   /**
    * preferred accommodation invoice
    */
-  preferredaccommodationinvoice: "PAINV",
+  PAINV: "PAINV",
 
   /**
    * preferred accommodation invoice
    */
-  preferredaccommodationinvoice: "PA",
+  PA: "PA",
 
   /**
    * Rx compound invoice
    */
-  Rxcompoundinvoice: "RXCINV",
+  RXCINV: "RXCINV",
 
   /**
    * Rx compound invoice
    */
-  Rxcompoundinvoice: "RXC",
+  RXC: "RXC",
 
   /**
    * Rx dispense invoice
    */
-  Rxdispenseinvoice: "RXDINV",
+  RXDINV: "RXDINV",
 
   /**
    * Rx dispense invoice
    */
-  Rxdispenseinvoice: "RXD",
+  RXD: "RXD",
 
   /**
    * sessional or block fee invoice
    */
-  sessionalorblockfeeinvoice: "SBFINV",
+  SBFINV: "SBFINV",
 
   /**
    * vision dispense invoice
    */
-  visiondispenseinvoice: "VRXINV",
+  VRXINV: "VRXINV",
 } as const;
 
 /**

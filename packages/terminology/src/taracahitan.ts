@@ -6,12 +6,12 @@ export const TaracahitanCode = {
   /**
    * Cahitan
    */
-  Cahitan: "_Cahitan",
+  _Cahitan: "_Cahitan",
 
   /**
    * Yaqui
    */
-  Yaqui: "x-YAQ",
+  "x-YAQ": "x-YAQ",
 } as const;
 
 /**

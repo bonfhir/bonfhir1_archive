@@ -6,7 +6,7 @@ export const ActClassOverlayRoiCode = {
   /**
    * overlay ROI
    */
-  overlayROI: "ROIOVL",
+  ROIOVL: "ROIOVL",
 } as const;
 
 /**

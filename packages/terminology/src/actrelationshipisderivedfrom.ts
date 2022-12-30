@@ -6,7 +6,7 @@ export const ActRelationshipIsDerivedFromCode = {
   /**
    * is derived from
    */
-  isderivedfrom: "DRIV",
+  DRIV: "DRIV",
 } as const;
 
 /**

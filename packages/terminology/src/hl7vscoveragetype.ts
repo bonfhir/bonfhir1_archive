@@ -6,22 +6,22 @@ export const Hl7VSCoverageTypeCode = {
   /**
    * Hospital/institutional
    */
-  Hospitalinstitutional: "H",
+  H: "H",
 
   /**
    * Physician/professional
    */
-  Physicianprofessional: "P",
+  P: "P",
 
   /**
    * Both hospital and physician
    */
-  Bothhospitalandphysician: "B",
+  B: "B",
 
   /**
    * Pharmacy
    */
-  Pharmacy: "RX",
+  RX: "RX",
 } as const;
 
 /**

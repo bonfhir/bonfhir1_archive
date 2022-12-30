@@ -6,32 +6,32 @@ export const EntityClassManufacturedMaterialCode = {
   /**
    * manufactured material
    */
-  manufacturedmaterial: "MMAT",
+  MMAT: "MMAT",
 
   /**
    * container
    */
-  container: "CONT",
+  CONT: "CONT",
 
   /**
    * holder
    */
-  holder: "HOLD",
+  HOLD: "HOLD",
 
   /**
    * device
    */
-  device: "DEV",
+  DEV: "DEV",
 
   /**
    * certificate representation
    */
-  certificaterepresentation: "CER",
+  CER: "CER",
 
   /**
    * imaging modality
    */
-  imagingmodality: "MODDV",
+  MODDV: "MODDV",
 } as const;
 
 /**

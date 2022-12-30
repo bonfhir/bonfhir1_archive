@@ -25,12 +25,12 @@ export const ActClassCareProvisionCode = {
   /**
    * care provision
    */
-  careprovision: "PCPR",
+  PCPR: "PCPR",
 
   /**
    * encounter
    */
-  encounter: "ENC",
+  ENC: "ENC",
 } as const;
 
 /**

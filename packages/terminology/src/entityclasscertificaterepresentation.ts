@@ -6,7 +6,7 @@ export const EntityClassCertificateRepresentationCode = {
   /**
    * certificate representation
    */
-  certificaterepresentation: "CER",
+  CER: "CER",
 } as const;
 
 /**

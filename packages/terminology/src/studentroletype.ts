@@ -6,17 +6,17 @@ export const StudentRoleTypeCode = {
   /**
    * student
    */
-  student: "STUD",
+  STUD: "STUD",
 
   /**
    * full-time student
    */
-  fulltimestudent: "FSTUD",
+  FSTUD: "FSTUD",
 
   /**
    * part-time student
    */
-  parttimestudent: "PSTUD",
+  PSTUD: "PSTUD",
 } as const;
 
 /**

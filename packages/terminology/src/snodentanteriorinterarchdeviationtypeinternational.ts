@@ -12,22 +12,22 @@ export const SnodentAnteriorInterarchDeviationTypeInternationalCode = {
   /**
    * Anterior open bite
    */
-  Anterioropenbite: "121344D",
+  "121344D": "121344D",
 
   /**
    * Anterior crossbite
    */
-  Anteriorcrossbite: "137027D",
+  "137027D": "137027D",
 
   /**
    * Overjet
    */
-  Overjet: "197703D",
+  "197703D": "197703D",
 
   /**
    * Overbite
    */
-  Overbite: "210967D",
+  "210967D": "210967D",
 } as const;
 
 /**

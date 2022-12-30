@@ -6,12 +6,12 @@ export const Hl7VSMatchAlgorithmsCode = {
   /**
    * Proprietary algorithm for LinkSoft v2.01
    */
-  ProprietaryalgorithmforLinkSoftv201: "LINKSOFT_2.01",
+  "LINKSOFT_2.01": "LINKSOFT_2.01",
 
   /**
    * Proprietary algorithm for MatchWare v1.2
    */
-  ProprietaryalgorithmforMatchWarev12: "MATCHWARE_1.2",
+  "MATCHWARE_1.2": "MATCHWARE_1.2",
 } as const;
 
 /**

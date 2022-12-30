@@ -6,92 +6,92 @@ export const ActExposureCodeCode = {
   /**
    * ActExposureCode
    */
-  ActExposureCode: "_ActExposureCode",
+  _ActExposureCode: "_ActExposureCode",
 
   /**
    * Day care - Child care Interaction
    */
-  DaycareChildcareInteraction: "CHLDCARE",
+  CHLDCARE: "CHLDCARE",
 
   /**
    * Common Conveyance Interaction
    */
-  CommonConveyanceInteraction: "CONVEYNC",
+  CONVEYNC: "CONVEYNC",
 
   /**
    * Health Care Interaction - Not Patient Care
    */
-  HealthCareInteractionNotPatientCare: "HLTHCARE",
+  HLTHCARE: "HLTHCARE",
 
   /**
    * Care Giver Interaction
    */
-  CareGiverInteraction: "HOMECARE",
+  HOMECARE: "HOMECARE",
 
   /**
    * Hospital Patient Interaction
    */
-  HospitalPatientInteraction: "HOSPPTNT",
+  HOSPPTNT: "HOSPPTNT",
 
   /**
    * Hospital Visitor Interaction
    */
-  HospitalVisitorInteraction: "HOSPVSTR",
+  HOSPVSTR: "HOSPVSTR",
 
   /**
    * Household Interaction
    */
-  HouseholdInteraction: "HOUSEHLD",
+  HOUSEHLD: "HOUSEHLD",
 
   /**
    * Inmate Interaction
    */
-  InmateInteraction: "INMATE",
+  INMATE: "INMATE",
 
   /**
    * Intimate Interaction
    */
-  IntimateInteraction: "INTIMATE",
+  INTIMATE: "INTIMATE",
 
   /**
    * Long Term Care Facility Interaction
    */
-  LongTermCareFacilityInteraction: "LTRMCARE",
+  LTRMCARE: "LTRMCARE",
 
   /**
    * Common Space Interaction
    */
-  CommonSpaceInteraction: "PLACE",
+  PLACE: "PLACE",
 
   /**
    * Health Care Interaction - Patient Care
    */
-  HealthCareInteractionPatientCare: "PTNTCARE",
+  PTNTCARE: "PTNTCARE",
 
   /**
    * School Interaction
    */
-  SchoolInteraction: "SCHOOL2",
+  SCHOOL2: "SCHOOL2",
 
   /**
    * Social/Extended Family Interaction
    */
-  SocialExtendedFamilyInteraction: "SOCIAL2",
+  SOCIAL2: "SOCIAL2",
 
   /**
    * Common Substance Interaction
    */
-  CommonSubstanceInteraction: "SUBSTNCE",
+  SUBSTNCE: "SUBSTNCE",
 
   /**
    * Common Travel Interaction
    */
-  CommonTravelInteraction: "TRAVINT",
+  TRAVINT: "TRAVINT",
 
   /**
    * Work Interaction
    */
-  WorkInteraction: "WORK2",
+  WORK2: "WORK2",
 } as const;
 
 /**

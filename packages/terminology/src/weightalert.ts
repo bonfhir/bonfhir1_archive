@@ -6,12 +6,12 @@ export const WeightAlertCode = {
   /**
    * High Dose for Weight Alert
    */
-  HighDoseforWeightAlert: "DOSEHINDW",
+  DOSEHINDW: "DOSEHINDW",
 
   /**
    * Low Dose for Weight Alert
    */
-  LowDoseforWeightAlert: "DOSELINDW",
+  DOSELINDW: "DOSELINDW",
 } as const;
 
 /**

@@ -6,27 +6,27 @@ export const ActRelationshipTreatsCode = {
   /**
    * treats
    */
-  treats: "TREAT",
+  TREAT: "TREAT",
 
   /**
    * adjunctive treatment
    */
-  adjunctivetreatment: "ADJUNCT",
+  ADJUNCT: "ADJUNCT",
 
   /**
    * maintenance treatment
    */
-  maintenancetreatment: "MTREAT",
+  MTREAT: "MTREAT",
 
   /**
    * palliates
    */
-  palliates: "PALLTREAT",
+  PALLTREAT: "PALLTREAT",
 
   /**
    * symptomatic relief
    */
-  symptomaticrelief: "SYMP",
+  SYMP: "SYMP",
 } as const;
 
 /**

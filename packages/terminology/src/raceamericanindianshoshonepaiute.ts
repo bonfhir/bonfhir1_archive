@@ -6,22 +6,22 @@ export const RaceAmericanIndianShoshonePaiuteCode = {
   /**
    * Shoshone Paiute
    */
-  ShoshonePaiute: "1602-2",
+  "1602-2": "1602-2",
 
   /**
    * Duck Valley
    */
-  DuckValley: "1603-0",
+  "1603-0": "1603-0",
 
   /**
    * Fallon
    */
-  Fallon: "1604-8",
+  "1604-8": "1604-8",
 
   /**
    * Fort McDermitt
    */
-  FortMcDermitt: "1605-5",
+  "1605-5": "1605-5",
 } as const;
 
 /**

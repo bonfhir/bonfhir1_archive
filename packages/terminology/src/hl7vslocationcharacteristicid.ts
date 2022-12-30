@@ -6,62 +6,62 @@ export const Hl7VSLocationCharacteristicIdCode = {
   /**
    * Smoking
    */
-  Smoking: "SMK",
+  SMK: "SMK",
 
   /**
    * Licensed
    */
-  Licensed: "LIC",
+  LIC: "LIC",
 
   /**
    * Implant: can be used for radiation implant patients
    */
-  Implantcanbeusedforradiationimplantpatients: "IMP",
+  IMP: "IMP",
 
   /**
    * Shadow: a temporary holding location that does not physically exist
    */
-  Shadowatemporaryholdinglocationthatdoesnotphysicallyexist: "SHA",
+  SHA: "SHA",
 
   /**
    * Infectious disease: this location can be used for isolation
    */
-  Infectiousdiseasethislocationcanbeusedforisolation: "INF",
+  INF: "INF",
 
   /**
    * Privacy level: indicating the level of private versus non-private room
    */
-  Privacylevelindicatingthelevelofprivateversusnonprivateroom: "PRL",
+  PRL: "PRL",
 
   /**
    * Level of care
    */
-  Levelofcare: "LCR",
+  LCR: "LCR",
 
   /**
    * Overflow
    */
-  Overflow: "OVR",
+  OVR: "OVR",
 
   /**
    * Bed is staffed
    */
-  Bedisstaffed: "STF",
+  STF: "STF",
 
   /**
    * Bed is set up
    */
-  Bedissetup: "SET",
+  SET: "SET",
 
   /**
    * Gender of patient(s)
    */
-  Genderofpatients: "GEN",
+  GEN: "GEN",
 
   /**
    * Teaching location
    */
-  Teachinglocation: "TEA",
+  TEA: "TEA",
 } as const;
 
 /**

@@ -6,12 +6,12 @@ export const NephClinPracticeSettingCode = {
   /**
    * Nephrology clinic
    */
-  Nephrologyclinic: "NEPH",
+  NEPH: "NEPH",
 
   /**
    * Pediatric nephrology clinic
    */
-  Pediatricnephrologyclinic: "PEDNEPH",
+  PEDNEPH: "PEDNEPH",
 } as const;
 
 /**

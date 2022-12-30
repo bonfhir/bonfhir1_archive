@@ -6,12 +6,12 @@ export const XActMoodRequestEventCode = {
   /**
    * event (occurrence)
    */
-  eventoccurrence: "EVN",
+  EVN: "EVN",
 
   /**
    * request
    */
-  request: "RQO",
+  RQO: "RQO",
 } as const;
 
 /**

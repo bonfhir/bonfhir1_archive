@@ -8,7 +8,7 @@ export const ParticipationBeneficiaryCode = {
   /**
    * beneficiary
    */
-  beneficiary: "BEN",
+  BEN: "BEN",
 } as const;
 
 /**

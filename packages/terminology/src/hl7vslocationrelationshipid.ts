@@ -6,37 +6,37 @@ export const Hl7VSLocationRelationshipIdCode = {
   /**
    * Nearest  pharmacy
    */
-  Nearestpharmacy: "RX",
+  RX: "RX",
 
   /**
    * Second nearest pharmacy
    */
-  Secondnearestpharmacy: "RX2",
+  RX2: "RX2",
 
   /**
    * Nearest  lab
    */
-  Nearestlab: "LAB",
+  LAB: "LAB",
 
   /**
    * Second nearest lab
    */
-  Secondnearestlab: "LB2",
+  LB2: "LB2",
 
   /**
    * Nearest  dietary location
    */
-  Nearestdietarylocation: "DTY",
+  DTY: "DTY",
 
   /**
    * Location Alias(es)
    */
-  LocationAliases: "ALI",
+  ALI: "ALI",
 
   /**
    * Parent location
    */
-  Parentlocation: "PAR",
+  PAR: "PAR",
 } as const;
 
 /**

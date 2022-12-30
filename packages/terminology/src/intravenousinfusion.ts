@@ -6,27 +6,27 @@ export const IntravenousInfusionCode = {
   /**
    * Infusion, intravenous
    */
-  Infusionintravenous: "IV",
+  IV: "IV",
 
   /**
    * Infusion, intravenous catheter
    */
-  Infusionintravenouscatheter: "IVC",
+  IVC: "IVC",
 
   /**
    * Infusion, intravenous catheter, continuous
    */
-  Infusionintravenouscathetercontinuous: "IVCC",
+  IVCC: "IVCC",
 
   /**
    * Infusion, intravenous catheter, intermittent
    */
-  Infusionintravenouscatheterintermittent: "IVCI",
+  IVCI: "IVCI",
 
   /**
    * Infusion, intravenous catheter, pca pump
    */
-  Infusionintravenouscatheterpcapump: "PCA",
+  PCA: "PCA",
 } as const;
 
 /**

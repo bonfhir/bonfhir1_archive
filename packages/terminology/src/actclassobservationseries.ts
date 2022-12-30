@@ -6,12 +6,12 @@ export const ActClassObservationSeriesCode = {
   /**
    * observation series
    */
-  observationseries: "OBSSER",
+  OBSSER: "OBSSER",
 
   /**
    * correlated observation sequences
    */
-  correlatedobservationsequences: "OBSCOR",
+  OBSCOR: "OBSCOR",
 } as const;
 
 /**

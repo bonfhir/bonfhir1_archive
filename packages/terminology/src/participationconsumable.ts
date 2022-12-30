@@ -6,12 +6,12 @@ export const ParticipationConsumableCode = {
   /**
    * consumable
    */
-  consumable: "CSM",
+  CSM: "CSM",
 
   /**
    * therapeutic agent
    */
-  therapeuticagent: "TPA",
+  TPA: "TPA",
 } as const;
 
 /**

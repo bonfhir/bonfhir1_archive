@@ -6,138 +6,138 @@ export const ActDetectedIssueManagementCodeCode = {
   /**
    * ActAdministrativeDetectedIssueManagementCode
    */
-  ActAdministrativeDetectedIssueManagementCode:
+  _ActAdministrativeDetectedIssueManagementCode:
     "_ActAdministrativeDetectedIssueManagementCode",
 
   /**
    * Authorization Issue Management Code
    */
-  AuthorizationIssueManagementCode: "_AuthorizationIssueManagementCode",
+  _AuthorizationIssueManagementCode: "_AuthorizationIssueManagementCode",
 
   /**
    * emergency authorization override
    */
-  emergencyauthorizationoverride: "EMAUTH",
+  EMAUTH: "EMAUTH",
 
   /**
    * authorization confirmed
    */
-  authorizationconfirmed: "21",
+  "21": "21",
 
   /**
    * Therapy Appropriate
    */
-  TherapyAppropriate: "1",
+  "1": "1",
 
   /**
    * Consulted Supplier
    */
-  ConsultedSupplier: "19",
+  "19": "19",
 
   /**
    * Assessed Patient
    */
-  AssessedPatient: "2",
+  "2": "2",
 
   /**
    * appropriate indication or diagnosis
    */
-  appropriateindicationordiagnosis: "22",
+  "22": "22",
 
   /**
    * prior therapy documented
    */
-  priortherapydocumented: "23",
+  "23": "23",
 
   /**
    * Patient Explanation
    */
-  PatientExplanation: "3",
+  "3": "3",
 
   /**
    * Consulted Other Source
    */
-  ConsultedOtherSource: "4",
+  "4": "4",
 
   /**
    * Consulted Prescriber
    */
-  ConsultedPrescriber: "5",
+  "5": "5",
 
   /**
    * Prescriber Declined Change
    */
-  PrescriberDeclinedChange: "6",
+  "6": "6",
 
   /**
    * Interacting Therapy No Longer Active/Planned
    */
-  InteractingTherapyNoLongerActivePlanned: "7",
+  "7": "7",
 
   /**
    * Supply Appropriate
    */
-  SupplyAppropriate: "14",
+  "14": "14",
 
   /**
    * Replacement
    */
-  Replacement: "15",
+  "15": "15",
 
   /**
    * Vacation Supply
    */
-  VacationSupply: "16",
+  "16": "16",
 
   /**
    * Weekend Supply
    */
-  WeekendSupply: "17",
+  "17": "17",
 
   /**
    * Leave of Absence
    */
-  LeaveofAbsence: "18",
+  "18": "18",
 
   /**
    * additional quantity on separate dispense
    */
-  additionalquantityonseparatedispense: "20",
+  "20": "20",
 
   /**
    * Other Action Taken
    */
-  OtherActionTaken: "8",
+  "8": "8",
 
   /**
    * Provided Patient Education
    */
-  ProvidedPatientEducation: "10",
+  "10": "10",
 
   /**
    * Added Concurrent Therapy
    */
-  AddedConcurrentTherapy: "11",
+  "11": "11",
 
   /**
    * Temporarily Suspended Concurrent Therapy
    */
-  TemporarilySuspendedConcurrentTherapy: "12",
+  "12": "12",
 
   /**
    * Stopped Concurrent Therapy
    */
-  StoppedConcurrentTherapy: "13",
+  "13": "13",
 
   /**
    * Instituted Ongoing Monitoring Program
    */
-  InstitutedOngoingMonitoringProgram: "9",
+  "9": "9",
 
   /**
    * ActFinancialDetectedIssueManagementCode
    */
-  ActFinancialDetectedIssueManagementCode:
+  _ActFinancialDetectedIssueManagementCode:
     "_ActFinancialDetectedIssueManagementCode",
 } as const;
 

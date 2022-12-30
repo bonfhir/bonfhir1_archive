@@ -6,47 +6,47 @@ export const ObservationCategoryCodesCode = {
   /**
    * Social History
    */
-  SocialHistory: "social-history",
+  "social-history": "social-history",
 
   /**
    * Vital Signs
    */
-  VitalSigns: "vital-signs",
+  "vital-signs": "vital-signs",
 
   /**
    * Imaging
    */
-  Imaging: "imaging",
+  imaging: "imaging",
 
   /**
    * Laboratory
    */
-  Laboratory: "laboratory",
+  laboratory: "laboratory",
 
   /**
    * Procedure
    */
-  Procedure: "procedure",
+  procedure: "procedure",
 
   /**
    * Survey
    */
-  Survey: "survey",
+  survey: "survey",
 
   /**
    * Exam
    */
-  Exam: "exam",
+  exam: "exam",
 
   /**
    * Therapy
    */
-  Therapy: "therapy",
+  therapy: "therapy",
 
   /**
    * Activity
    */
-  Activity: "activity",
+  activity: "activity",
 } as const;
 
 /**

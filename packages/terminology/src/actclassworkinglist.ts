@@ -6,7 +6,7 @@ export const ActClassWorkingListCode = {
   /**
    * working list
    */
-  workinglist: "LIST",
+  LIST: "LIST",
 } as const;
 
 /**

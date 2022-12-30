@@ -6,22 +6,22 @@ export const Hl7VSIdentityReliabilityCodeCode = {
   /**
    * Unknown/Default Social Security Number
    */
-  UnknownDefaultSocialSecurityNumber: "US",
+  US: "US",
 
   /**
    * Unknown/Default Date of Birth
    */
-  UnknownDefaultDateofBirth: "UD",
+  UD: "UD",
 
   /**
    * Unknown/Default Address
    */
-  UnknownDefaultAddress: "UA",
+  UA: "UA",
 
   /**
    * Patient/Person Name is an Alias
    */
-  PatientPersonNameisanAlias: "AL",
+  AL: "AL",
 } as const;
 
 /**

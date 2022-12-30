@@ -6,32 +6,32 @@ export const DedicatedNonClinicalLocationRoleTypeCode = {
   /**
    * Delivery Address
    */
-  DeliveryAddress: "DADDR",
+  DADDR: "DADDR",
 
   /**
    * Mobile Unit
    */
-  MobileUnit: "MOBL",
+  MOBL: "MOBL",
 
   /**
    * Ambulance
    */
-  Ambulance: "AMB",
+  AMB: "AMB",
 
   /**
    * Pharmacy
    */
-  Pharmacy: "PHARM",
+  PHARM: "PHARM",
 
   /**
    * inpatient pharmacy
    */
-  inpatientpharmacy: "INPHARM",
+  INPHARM: "INPHARM",
 
   /**
    * outpatient pharmacy
    */
-  outpatientpharmacy: "OUTPHARM",
+  OUTPHARM: "OUTPHARM",
 } as const;
 
 /**

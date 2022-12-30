@@ -6,7 +6,7 @@ export const ParticipationPrimaryInformationRecipientCode = {
   /**
    * primary information recipient
    */
-  primaryinformationrecipient: "PRCP",
+  PRCP: "PRCP",
 } as const;
 
 /**

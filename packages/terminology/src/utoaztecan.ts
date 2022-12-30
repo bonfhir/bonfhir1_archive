@@ -6,127 +6,127 @@ export const UtoAztecanCode = {
   /**
    * Numic
    */
-  Numic: "_Numic",
+  _Numic: "_Numic",
 
   /**
    * CentralNumic
    */
-  CentralNumic: "_CentralNumic",
+  _CentralNumic: "_CentralNumic",
 
   /**
    * Comanche
    */
-  Comanche: "x-COM",
+  "x-COM": "x-COM",
 
   /**
    * Panamint
    */
-  Panamint: "x-PAR",
+  "x-PAR": "x-PAR",
 
   /**
    * Shoshone
    */
-  Shoshone: "x-SHH",
+  "x-SHH": "x-SHH",
 
   /**
    * SouthernNumic
    */
-  SouthernNumic: "_SouthernNumic",
+  _SouthernNumic: "_SouthernNumic",
 
   /**
    * Kawaiisu
    */
-  Kawaiisu: "x-KAW",
+  "x-KAW": "x-KAW",
 
   /**
    * Ute-Southern Paiute
    */
-  UteSouthernPaiute: "x-UTE",
+  "x-UTE": "x-UTE",
 
   /**
    * WesternNumic
    */
-  WesternNumic: "_WesternNumic",
+  _WesternNumic: "_WesternNumic",
 
   /**
    * Mono
    */
-  Mono: "x-MON",
+  "x-MON": "x-MON",
 
   /**
    * Northern Paiute-Bannock
    */
-  NorthernPaiuteBannock: "x-PAO",
+  "x-PAO": "x-PAO",
 
   /**
    * Takic
    */
-  Takic: "_Takic",
+  _Takic: "_Takic",
 
   /**
    * Cupan
    */
-  Cupan: "_Cupan",
+  _Cupan: "_Cupan",
 
   /**
    * Cahuilla
    */
-  Cahuilla: "x-CHL",
+  "x-CHL": "x-CHL",
 
   /**
    * Cupeno
    */
-  Cupeno: "x-CUP",
+  "x-CUP": "x-CUP",
 
   /**
    * Luiseno
    */
-  Luiseno: "x-LUI",
+  "x-LUI": "x-LUI",
 
   /**
    * SerranoGabrielino
    */
-  SerranoGabrielino: "_SerranoGabrielino",
+  _SerranoGabrielino: "_SerranoGabrielino",
 
   /**
    * Serrano
    */
-  Serrano: "x-SER",
+  "x-SER": "x-SER",
 
   /**
    * Taracahitan
    */
-  Taracahitan: "_Taracahitan",
+  _Taracahitan: "_Taracahitan",
 
   /**
    * Cahitan
    */
-  Cahitan: "_Cahitan",
+  _Cahitan: "_Cahitan",
 
   /**
    * Yaqui
    */
-  Yaqui: "x-YAQ",
+  "x-YAQ": "x-YAQ",
 
   /**
    * Tepiman
    */
-  Tepiman: "_Tepiman",
+  _Tepiman: "_Tepiman",
 
   /**
    * Papago-Pima
    */
-  PapagoPima: "x-PAP",
+  "x-PAP": "x-PAP",
 
   /**
    * Hopi
    */
-  Hopi: "x-HOP",
+  "x-HOP": "x-HOP",
 
   /**
    * Tubatululabal
    */
-  Tubatululabal: "x-TUB",
+  "x-TUB": "x-TUB",
 } as const;
 
 /**

@@ -6,107 +6,107 @@ export const XActClassDocumentEntryActCode = {
   /**
    * accommodation
    */
-  accommodation: "ACCM",
+  ACCM: "ACCM",
 
   /**
    * accession
    */
-  accession: "ACSN",
+  ACSN: "ACSN",
 
   /**
    * act
    */
-  act: "ACT",
+  ACT: "ACT",
 
   /**
    * acquisition exposure
    */
-  acquisitionexposure: "AEXPOS",
+  AEXPOS: "AEXPOS",
 
   /**
    * consent
    */
-  consent: "CONS",
+  CONS: "CONS",
 
   /**
    * container registration
    */
-  containerregistration: "CONTREG",
+  CONTREG: "CONTREG",
 
   /**
    * clinical trial timepoint event
    */
-  clinicaltrialtimepointevent: "CTTEVENT",
+  CTTEVENT: "CTTEVENT",
 
   /**
    * disciplinary action
    */
-  disciplinaryaction: "DISPACT",
+  DISPACT: "DISPACT",
 
   /**
    * exposure
    */
-  exposure: "EXPOS",
+  EXPOS: "EXPOS",
 
   /**
    * incident
    */
-  incident: "INC",
+  INC: "INC",
 
   /**
    * inform
    */
-  inform: "INFRM",
+  INFRM: "INFRM",
 
   /**
    * working list
    */
-  workinglist: "LIST",
+  LIST: "LIST",
 
   /**
    * monitoring program
    */
-  monitoringprogram: "MPROT",
+  MPROT: "MPROT",
 
   /**
    * care provision
    */
-  careprovision: "PCPR",
+  PCPR: "PCPR",
 
   /**
    * registration
    */
-  registration: "REG",
+  REG: "REG",
 
   /**
    * review
    */
-  review: "REV",
+  REV: "REV",
 
   /**
    * specimen treatment
    */
-  specimentreatment: "SPCTRT",
+  SPCTRT: "SPCTRT",
 
   /**
    * storage
    */
-  storage: "STORE",
+  STORE: "STORE",
 
   /**
    * transmission exposure
    */
-  transmissionexposure: "TEXPOS",
+  TEXPOS: "TEXPOS",
 
   /**
    * transfer
    */
-  transfer: "TRFR",
+  TRFR: "TRFR",
 
   /**
    * transportation
    */
-  transportation: "TRNS",
+  TRNS: "TRNS",
 } as const;
 
 /**

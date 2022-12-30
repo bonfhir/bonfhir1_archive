@@ -6,27 +6,27 @@ export const OralSolutionCode = {
   /**
    * Oral Solution
    */
-  OralSolution: "ORALSOL",
+  ORALSOL: "ORALSOL",
 
   /**
    * Oral Drops
    */
-  OralDrops: "ORDROP",
+  ORDROP: "ORDROP",
 
   /**
    * Elixir
    */
-  Elixir: "ELIXIR",
+  ELIXIR: "ELIXIR",
 
   /**
    * Mouthwash/Rinse
    */
-  MouthwashRinse: "RINSE",
+  RINSE: "RINSE",
 
   /**
    * Syrup
    */
-  Syrup: "SYRUP",
+  SYRUP: "SYRUP",
 } as const;
 
 /**

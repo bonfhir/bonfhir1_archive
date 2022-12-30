@@ -6,12 +6,12 @@ export const RoleClassEmployeeCode = {
   /**
    * employee
    */
-  employee: "EMP",
+  EMP: "EMP",
 
   /**
    * military person
    */
-  militaryperson: "MIL",
+  MIL: "MIL",
 } as const;
 
 /**

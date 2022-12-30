@@ -6,23 +6,23 @@ export const PharmacySupplyRequestFulfillerRevisionRefusalReasonCodeCode = {
   /**
    * PharmacySupplyRequestFulfillerRevisionRefusalReasonCode
    */
-  PharmacySupplyRequestFulfillerRevisionRefusalReasonCode:
+  _PharmacySupplyRequestFulfillerRevisionRefusalReasonCode:
     "_PharmacySupplyRequestFulfillerRevisionRefusalReasonCode",
 
   /**
    * locked
    */
-  locked: "LOCKED",
+  LOCKED: "LOCKED",
 
   /**
    * no user permission
    */
-  nouserpermission: "NOUSERPERM",
+  NOUSERPERM: "NOUSERPERM",
 
   /**
    * unknown target
    */
-  unknowntarget: "UNKWNTARGET",
+  UNKWNTARGET: "UNKWNTARGET",
 } as const;
 
 /**

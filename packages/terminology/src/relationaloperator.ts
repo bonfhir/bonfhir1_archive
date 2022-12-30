@@ -6,42 +6,42 @@ export const RelationalOperatorCode = {
   /**
    * Contains
    */
-  Contains: "CT",
+  CT: "CT",
 
   /**
    * Equal
    */
-  Equal: "EQ",
+  EQ: "EQ",
 
   /**
    * Greater than or equal
    */
-  Greaterthanorequal: "GE",
+  GE: "GE",
 
   /**
    * Generic
    */
-  Generic: "GN",
+  GN: "GN",
 
   /**
    * Greater than
    */
-  Greaterthan: "GT",
+  GT: "GT",
 
   /**
    * Less than or equal
    */
-  Lessthanorequal: "LE",
+  LE: "LE",
 
   /**
    * Less than
    */
-  Lessthan: "LT",
+  LT: "LT",
 
   /**
    * Not Equal
    */
-  NotEqual: "NE",
+  NE: "NE",
 } as const;
 
 /**

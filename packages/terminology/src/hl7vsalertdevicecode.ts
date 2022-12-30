@@ -6,17 +6,17 @@ export const Hl7VSAlertDeviceCodeCode = {
   /**
    * Bracelet
    */
-  Bracelet: "B",
+  B: "B",
 
   /**
    * Necklace
    */
-  Necklace: "N",
+  N: "N",
 
   /**
    * Wallet Card
    */
-  WalletCard: "W",
+  W: "W",
 } as const;
 
 /**

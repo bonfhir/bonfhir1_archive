@@ -6,102 +6,102 @@ export const SecurityClassificationObservationValueCode = {
   /**
    * low
    */
-  low: "L",
+  L: "L",
 
   /**
    * moderate
    */
-  moderate: "M",
+  M: "M",
 
   /**
    * normal
    */
-  normal: "N",
+  N: "N",
 
   /**
    * restricted
    */
-  restricted: "R",
+  R: "R",
 
   /**
    * unrestricted
    */
-  unrestricted: "U",
+  U: "U",
 
   /**
    * very restricted
    */
-  veryrestricted: "V",
+  V: "V",
 
   /**
    * Confidentiality
    */
-  Confidentiality: "_Confidentiality",
+  _Confidentiality: "_Confidentiality",
 
   /**
    * ConfidentialityByAccessKind
    */
-  ConfidentialityByAccessKind: "_ConfidentialityByAccessKind",
+  _ConfidentialityByAccessKind: "_ConfidentialityByAccessKind",
 
   /**
    * business
    */
-  business: "B",
+  B: "B",
 
   /**
    * clinician
    */
-  clinician: "D",
+  D: "D",
 
   /**
    * individual
    */
-  individual: "I",
+  I: "I",
 
   /**
    * ConfidentialityByInfoType
    */
-  ConfidentialityByInfoType: "_ConfidentialityByInfoType",
+  _ConfidentialityByInfoType: "_ConfidentialityByInfoType",
 
   /**
    * substance abuse related
    */
-  substanceabuserelated: "ETH",
+  ETH: "ETH",
 
   /**
    * HIV related
    */
-  HIVrelated: "HIV",
+  HIV: "HIV",
 
   /**
    * psychiatry relate
    */
-  psychiatryrelate: "PSY",
+  PSY: "PSY",
 
   /**
    * sexual and domestic violence related
    */
-  sexualanddomesticviolencerelated: "SDV",
+  SDV: "SDV",
 
   /**
    * ConfidentialityModifiers
    */
-  ConfidentialityModifiers: "_ConfidentialityModifiers",
+  _ConfidentialityModifiers: "_ConfidentialityModifiers",
 
   /**
    * celebrity
    */
-  celebrity: "C",
+  C: "C",
 
   /**
    * sensitive
    */
-  sensitive: "S",
+  S: "S",
 
   /**
    * taboo
    */
-  taboo: "T",
+  T: "T",
 } as const;
 
 /**

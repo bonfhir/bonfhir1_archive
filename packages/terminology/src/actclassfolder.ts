@@ -6,7 +6,7 @@ export const ActClassFolderCode = {
   /**
    * folder
    */
-  folder: "FOLDER",
+  FOLDER: "FOLDER",
 } as const;
 
 /**

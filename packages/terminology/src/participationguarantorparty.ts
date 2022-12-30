@@ -8,7 +8,7 @@ export const ParticipationGuarantorPartyCode = {
   /**
    * guarantor party
    */
-  guarantorparty: "GUAR",
+  GUAR: "GUAR",
 } as const;
 
 /**

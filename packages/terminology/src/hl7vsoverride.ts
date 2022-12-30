@@ -6,17 +6,17 @@ export const Hl7VSOverrideCode = {
   /**
    * Override not allowed
    */
-  Overridenotallowed: "X",
+  X: "X",
 
   /**
    * Override allowed
    */
-  Overrideallowed: "A",
+  A: "A",
 
   /**
    * Override required
    */
-  Overriderequired: "R",
+  R: "R",
 } as const;
 
 /**

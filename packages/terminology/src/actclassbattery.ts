@@ -8,7 +8,7 @@ export const ActClassBatteryCode = {
   /**
    * battery
    */
-  battery: "BATTERY",
+  BATTERY: "BATTERY",
 } as const;
 
 /**

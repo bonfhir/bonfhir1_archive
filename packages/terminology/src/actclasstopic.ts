@@ -8,7 +8,7 @@ export const ActClassTopicCode = {
   /**
    * topic
    */
-  topic: "TOPIC",
+  TOPIC: "TOPIC",
 } as const;
 
 /**

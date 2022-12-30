@@ -6,17 +6,17 @@ export const ActClassConcernCode = {
   /**
    * concern
    */
-  concern: "CONC",
+  CONC: "CONC",
 
   /**
    * public health case
    */
-  publichealthcase: "HCASE",
+  HCASE: "HCASE",
 
   /**
    * outbreak
    */
-  outbreak: "OUTBR",
+  OUTBR: "OUTBR",
 } as const;
 
 /**

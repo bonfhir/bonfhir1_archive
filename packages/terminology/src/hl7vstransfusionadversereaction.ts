@@ -6,97 +6,97 @@ export const Hl7VSTransfusionAdverseReactionCode = {
   /**
    * ABO Incompatible Transfusion Reaction
    */
-  ABOIncompatibleTransfusionReaction: "ABOINC",
+  ABOINC: "ABOINC",
 
   /**
    * Acute Hemolytic Transfusion Reaction
    */
-  AcuteHemolyticTransfusionReaction: "ACUTHEHTR",
+  ACUTHEHTR: "ACUTHEHTR",
 
   /**
    * Allergic Reaction - First
    */
-  AllergicReactionFirst: "ALLERGIC1",
+  ALLERGIC1: "ALLERGIC1",
 
   /**
    * Allergic Reaction - Recurrent
    */
-  AllergicReactionRecurrent: "ALLERGIC2",
+  ALLERGIC2: "ALLERGIC2",
 
   /**
    * Allergic Reaction - Repeating
    */
-  AllergicReactionRepeating: "ALLERGICR",
+  ALLERGICR: "ALLERGICR",
 
   /**
    * Anaphylactic Reaction
    */
-  AnaphylacticReaction: "ANAPHYLAC",
+  ANAPHYLAC: "ANAPHYLAC",
 
   /**
    * Reaction to Bacterial Contamination
    */
-  ReactiontoBacterialContamination: "BACTCONTAM",
+  BACTCONTAM: "BACTCONTAM",
 
   /**
    * Delayed Hemolytic Transfusion Reaction
    */
-  DelayedHemolyticTransfusionReaction: "DELAYEDHTR",
+  DELAYEDHTR: "DELAYEDHTR",
 
   /**
    * Delayed Serological Transfusion Reaction
    */
-  DelayedSerologicalTransfusionReaction: "DELAYEDSTR",
+  DELAYEDSTR: "DELAYEDSTR",
 
   /**
    * Graft vs Host Disease - Transfusion - Associated
    */
-  GraftvsHostDiseaseTransfusionAssociated: "GVHD",
+  GVHD: "GVHD",
 
   /**
    * Non-hemolytic Hypotensive Reaction
    */
-  NonhemolyticHypotensiveReaction: "HYPOTENS",
+  HYPOTENS: "HYPOTENS",
 
   /**
    * Non-Hemolytic Fever Chill Transfusion Reaction - First
    */
-  NonHemolyticFeverChillTransfusionReactionFirst: "NONHTR1",
+  NONHTR1: "NONHTR1",
 
   /**
    * Non-Hemolytic Fever Chill Transfusion Reaction - Recurrent
    */
-  NonHemolyticFeverChillTransfusionReactionRecurrent: "NONHTR2",
+  NONHTR2: "NONHTR2",
 
   /**
    * Non-Hemolytic Fever Chill Transfusion Reaction - Repeating
    */
-  NonHemolyticFeverChillTransfusionReactionRepeating: "NONHTRREC",
+  NONHTRREC: "NONHTRREC",
 
   /**
    * Non-Immune Hemolysis
    */
-  NonImmuneHemolysis: "NONIMMUNE",
+  NONIMMUNE: "NONIMMUNE",
 
   /**
    * Non-Specific, Non-Hemolytic Transfusion Reaction
    */
-  NonSpecificNonHemolyticTransfusionReaction: "NONSPEC",
+  NONSPEC: "NONSPEC",
 
   /**
    * No Evidence of Transfusion Reaction
    */
-  NoEvidenceofTransfusionReaction: "NORXN",
+  NORXN: "NORXN",
 
   /**
    * Posttransfusion Purpura
    */
-  PosttransfusionPurpura: "PTP",
+  PTP: "PTP",
 
   /**
    * Symptoms most likely due to volume overload
    */
-  Symptomsmostlikelyduetovolumeoverload: "VOLOVER",
+  VOLOVER: "VOLOVER",
 } as const;
 
 /**

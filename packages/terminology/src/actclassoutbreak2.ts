@@ -6,7 +6,7 @@ export const ActClassOutbreak2Code = {
   /**
    * outbreak
    */
-  outbreak: "OUTBR",
+  OUTBR: "OUTBR",
 } as const;
 
 /**

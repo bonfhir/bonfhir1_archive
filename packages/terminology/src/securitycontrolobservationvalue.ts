@@ -6,162 +6,162 @@ export const SecurityControlObservationValueCode = {
   /**
    * security policy
    */
-  securitypolicy: "SecurityPolicy",
+  SecurityPolicy: "SecurityPolicy",
 
   /**
    * authorization policy
    */
-  authorizationpolicy: "AUTHPOL",
+  AUTHPOL: "AUTHPOL",
 
   /**
    * access control scheme
    */
-  accesscontrolscheme: "ACCESSCONSCHEME",
+  ACCESSCONSCHEME: "ACCESSCONSCHEME",
 
   /**
    * delegation policy
    */
-  delegationpolicy: "DELEPOL",
+  DELEPOL: "DELEPOL",
 
   /**
    * obligation policy
    */
-  obligationpolicy: "ObligationPolicy",
+  ObligationPolicy: "ObligationPolicy",
 
   /**
    * anonymize
    */
-  anonymize: "ANONY",
+  ANONY: "ANONY",
 
   /**
    * accounting of disclosure
    */
-  accountingofdisclosure: "AOD",
+  AOD: "AOD",
 
   /**
    * audit
    */
-  audit: "AUDIT",
+  AUDIT: "AUDIT",
 
   /**
    * audit trail
    */
-  audittrail: "AUDTR",
+  AUDTR: "AUDTR",
 
   /**
    * comply with policy
    */
-  complywithpolicy: "CPLYPOL",
+  CPLYPOL: "CPLYPOL",
 
   /**
    * comply with confidentiality code
    */
-  complywithconfidentialitycode: "CPLYCC",
+  CPLYCC: "CPLYCC",
 
   /**
    * comply with consent directive
    */
-  complywithconsentdirective: "CPLYCD",
+  CPLYCD: "CPLYCD",
 
   /**
    * comply with controlled unclassified information policy
    */
-  complywithcontrolledunclassifiedinformationpolicy: "CPLYCUI",
+  CPLYCUI: "CPLYCUI",
 
   /**
    * comply with jurisdictional privacy policy
    */
-  complywithjurisdictionalprivacypolicy: "CPLYJPP",
+  CPLYJPP: "CPLYJPP",
 
   /**
    * comply with jurisdictional security policy
    */
-  complywithjurisdictionalsecuritypolicy: "CPLYJSP",
+  CPLYJSP: "CPLYJSP",
 
   /**
    * comply with organizational privacy policy
    */
-  complywithorganizationalprivacypolicy: "CPLYOPP",
+  CPLYOPP: "CPLYOPP",
 
   /**
    * comply with organizational security policy
    */
-  complywithorganizationalsecuritypolicy: "CPLYOSP",
+  CPLYOSP: "CPLYOSP",
 
   /**
    * declassify security label
    */
-  declassifysecuritylabel: "DECLASSIFYLABEL",
+  DECLASSIFYLABEL: "DECLASSIFYLABEL",
 
   /**
    * deidentify
    */
-  deidentify: "DEID",
+  DEID: "DEID",
 
   /**
    * delete after use
    */
-  deleteafteruse: "DELAU",
+  DELAU: "DELAU",
 
   /**
    * downgrade security label
    */
-  downgradesecuritylabel: "DOWNGRDLABEL",
+  DOWNGRDLABEL: "DOWNGRDLABEL",
 
   /**
    * derive security label
    */
-  derivesecuritylabel: "DRIVLABEL",
+  DRIVLABEL: "DRIVLABEL",
 
   /**
    * encrypt
    */
-  encrypt: "ENCRYPT",
+  ENCRYPT: "ENCRYPT",
 
   /**
    * encrypt at rest
    */
-  encryptatrest: "ENCRYPTR",
+  ENCRYPTR: "ENCRYPTR",
 
   /**
    * encrypt in transit
    */
-  encryptintransit: "ENCRYPTT",
+  ENCRYPTT: "ENCRYPTT",
 
   /**
    * encrypt in use
    */
-  encryptinuse: "ENCRYPTU",
+  ENCRYPTU: "ENCRYPTU",
 
   /**
    * human approval
    */
-  humanapproval: "HUAPRV",
+  HUAPRV: "HUAPRV",
 
   /**
    * assign security label
    */
-  assignsecuritylabel: "LABEL",
+  LABEL: "LABEL",
 
   /**
    * mask
    */
-  mask: "MASK",
+  MASK: "MASK",
 
   /**
    * minimum necessary
    */
-  minimumnecessary: "MINEC",
+  MINEC: "MINEC",
 
   /**
    * persist security label
    */
-  persistsecuritylabel: "PERSISTLABEL",
+  PERSISTLABEL: "PERSISTLABEL",
 
   /**
    * privacy mark
    */
-  privacymark: "PRIVMARK",
+  PRIVMARK: "PRIVMARK",
 
   /**
    * CUI Mark
@@ -171,22 +171,22 @@ export const SecurityControlObservationValueCode = {
   /**
    * pseudonymize
    */
-  pseudonymize: "PSEUD",
+  PSEUD: "PSEUD",
 
   /**
    * redact
    */
-  redact: "REDACT",
+  REDACT: "REDACT",
 
   /**
    * upgrade security label
    */
-  upgradesecuritylabel: "UPGRDLABEL",
+  UPGRDLABEL: "UPGRDLABEL",
 
   /**
    * privacy mark
    */
-  privacymark: "PrivacyMark",
+  PrivacyMark: "PrivacyMark",
 
   /**
    * ControlledUnclassifiedInformation
@@ -211,12 +211,12 @@ export const SecurityControlObservationValueCode = {
   /**
    * (CUI//HLTH)
    */
-  CUIHLTH: "CUIHLTHP",
+  CUIHLTHP: "CUIHLTHP",
 
   /**
    * (CUI)
    */
-  CUI: "CUIP",
+  CUIP: "CUIP",
 
   /**
    * CUI//PRVCY
@@ -226,32 +226,32 @@ export const SecurityControlObservationValueCode = {
   /**
    * (CUI//PRVCY)
    */
-  CUIPRVCY: "CUIPRVCYP",
+  CUIPRVCYP: "CUIPRVCYP",
 
   /**
    * CUI//SP-HLTH
    */
-  CUISPHLTH: "CUISP-HLTH",
+  "CUISP-HLTH": "CUISP-HLTH",
 
   /**
    * (CUI//SP-HLTH)
    */
-  CUISPHLTH: "CUISP-HLTHP",
+  "CUISP-HLTHP": "CUISP-HLTHP",
 
   /**
    * CUI//SP-PRVCY
    */
-  CUISPPRVCY: "CUISP-PRVCY",
+  "CUISP-PRVCY": "CUISP-PRVCY",
 
   /**
    * (CUI//SP-PRVCY)
    */
-  CUISPPRVCY: "CUISP-PRVCYP",
+  "CUISP-PRVCYP": "CUISP-PRVCYP",
 
   /**
    * (U)
    */
-  U: "UUI",
+  UUI: "UUI",
 
   /**
    * Security Label Mark
@@ -261,880 +261,879 @@ export const SecurityControlObservationValueCode = {
   /**
    * confidential mark
    */
-  confidentialmark: "ConfidentialMark",
+  ConfidentialMark: "ConfidentialMark",
 
   /**
    * copy of original mark
    */
-  copyoforiginalmark: "COPYMark",
+  COPYMark: "COPYMark",
 
   /**
    * deliver only to addressee mark
    */
-  deliveronlytoaddresseemark: "DeliverToAddresseeOnlyMark",
+  DeliverToAddresseeOnlyMark: "DeliverToAddresseeOnlyMark",
 
   /**
    * prohibition against redisclosure mark
    */
-  prohibitionagainstredisclosuremark: "RedisclosureProhibitionMark",
+  RedisclosureProhibitionMark: "RedisclosureProhibitionMark",
 
   /**
    * restricted confidentiality mark
    */
-  restrictedconfidentialitymark: "RestrictedConfidentialityMark",
+  RestrictedConfidentialityMark: "RestrictedConfidentialityMark",
 
   /**
    * Draft Mark
    */
-  DraftMark: "DRAFTMark",
+  DRAFTMark: "DRAFTMark",
 
   /**
    * refrain policy
    */
-  refrainpolicy: "RefrainPolicy",
+  RefrainPolicy: "RefrainPolicy",
 
   /**
    * no disclosure without subject authorization
    */
-  nodisclosurewithoutsubjectauthorization: "NOAUTH",
+  NOAUTH: "NOAUTH",
 
   /**
    * no collection
    */
-  nocollection: "NOCOLLECT",
+  NOCOLLECT: "NOCOLLECT",
 
   /**
    * no disclosure without consent directive
    */
-  nodisclosurewithoutconsentdirective: "NODSCLCD",
+  NODSCLCD: "NODSCLCD",
 
   /**
    * no disclosure without information subject's consent directive
    */
-  nodisclosurewithoutinformationsubjectsconsentdirective: "NODSCLCDS",
+  NODSCLCDS: "NODSCLCDS",
 
   /**
    * no integration
    */
-  nointegration: "NOINTEGRATE",
+  NOINTEGRATE: "NOINTEGRATE",
 
   /**
    * no unlisted entity disclosure
    */
-  nounlistedentitydisclosure: "NOLIST",
+  NOLIST: "NOLIST",
 
   /**
    * no disclosure without MOU
    */
-  nodisclosurewithoutMOU: "NOMOU",
+  NOMOU: "NOMOU",
 
   /**
    * no disclosure without organizational authorization
    */
-  nodisclosurewithoutorganizationalauthorization: "NOORGPOL",
+  NOORGPOL: "NOORGPOL",
 
   /**
    * no disclosure to patient, family or caregivers without attending provider's authorization
    */
-  nodisclosuretopatientfamilyorcaregiverswithoutattendingprovidersauthorization:
-    "NOPAT",
+  NOPAT: "NOPAT",
 
   /**
    * no collection beyond purpose of use
    */
-  nocollectionbeyondpurposeofuse: "NOPERSISTP",
+  NOPERSISTP: "NOPERSISTP",
 
   /**
    * no redisclosure without consent directive
    */
-  noredisclosurewithoutconsentdirective: "NORDSCLCD",
+  NORDSCLCD: "NORDSCLCD",
 
   /**
    * no redisclosure without consent directive
    */
-  noredisclosurewithoutconsentdirective: "NORDSLCD",
+  NORDSLCD: "NORDSLCD",
 
   /**
    * no redisclosure without information subject's consent directive
    */
-  noredisclosurewithoutinformationsubjectsconsentdirective: "NORDSCLCDS",
+  NORDSCLCDS: "NORDSCLCDS",
 
   /**
    * no disclosure without jurisdictional authorization
    */
-  nodisclosurewithoutjurisdictionalauthorization: "NORDSCLW",
+  NORDSCLW: "NORDSCLW",
 
   /**
    * no relinking
    */
-  norelinking: "NORELINK",
+  NORELINK: "NORELINK",
 
   /**
    * no reuse beyond purpose of use
    */
-  noreusebeyondpurposeofuse: "NOREUSE",
+  NOREUSE: "NOREUSE",
 
   /**
    * no unauthorized VIP disclosure
    */
-  nounauthorizedVIPdisclosure: "NOVIP",
+  NOVIP: "NOVIP",
 
   /**
    * no disclosure without originator authorization
    */
-  nodisclosurewithoutoriginatorauthorization: "ORCON",
+  ORCON: "ORCON",
 
   /**
    * healthcare marketing
    */
-  healthcaremarketing: "HMARKT",
+  HMARKT: "HMARKT",
 
   /**
    * healthcare operations
    */
-  healthcareoperations: "HOPERAT",
+  HOPERAT: "HOPERAT",
 
   /**
    * care management
    */
-  caremanagement: "CAREMGT",
+  CAREMGT: "CAREMGT",
 
   /**
    * donation
    */
-  donation: "DONAT",
+  DONAT: "DONAT",
 
   /**
    * fraud
    */
-  fraud: "FRAUD",
+  FRAUD: "FRAUD",
 
   /**
    * government
    */
-  government: "GOV",
+  GOV: "GOV",
 
   /**
    * health accreditation
    */
-  healthaccreditation: "HACCRED",
+  HACCRED: "HACCRED",
 
   /**
    * health compliance
    */
-  healthcompliance: "HCOMPL",
+  HCOMPL: "HCOMPL",
 
   /**
    * decedent
    */
-  decedent: "HDECD",
+  HDECD: "HDECD",
 
   /**
    * directory
    */
-  directory: "HDIRECT",
+  HDIRECT: "HDIRECT",
 
   /**
    * healthcare delivery management
    */
-  healthcaredeliverymanagement: "HDM",
+  HDM: "HDM",
 
   /**
    * legal
    */
-  legal: "HLEGAL",
+  HLEGAL: "HLEGAL",
 
   /**
    * health outcome measure
    */
-  healthoutcomemeasure: "HOUTCOMS",
+  HOUTCOMS: "HOUTCOMS",
 
   /**
    * health program reporting
    */
-  healthprogramreporting: "HPRGRP",
+  HPRGRP: "HPRGRP",
 
   /**
    * health quality improvement
    */
-  healthqualityimprovement: "HQUALIMP",
+  HQUALIMP: "HQUALIMP",
 
   /**
    * health system administration
    */
-  healthsystemadministration: "HSYSADMIN",
+  HSYSADMIN: "HSYSADMIN",
 
   /**
    * labeling
    */
-  labeling: "LABELING",
+  LABELING: "LABELING",
 
   /**
    * metadata management
    */
-  metadatamanagement: "METAMGT",
+  METAMGT: "METAMGT",
 
   /**
    * member administration
    */
-  memberadministration: "MEMADMIN",
+  MEMADMIN: "MEMADMIN",
 
   /**
    * military command
    */
-  militarycommand: "MILCDM",
+  MILCDM: "MILCDM",
 
   /**
    * patient administration
    */
-  patientadministration: "PATADMIN",
+  PATADMIN: "PATADMIN",
 
   /**
    * patient safety
    */
-  patientsafety: "PATSFTY",
+  PATSFTY: "PATSFTY",
 
   /**
    * performance measure
    */
-  performancemeasure: "PERFMSR",
+  PERFMSR: "PERFMSR",
 
   /**
    * records management
    */
-  recordsmanagement: "RECORDMGT",
+  RECORDMGT: "RECORDMGT",
 
   /**
    * system development
    */
-  systemdevelopment: "SYSDEV",
+  SYSDEV: "SYSDEV",
 
   /**
    * test health data
    */
-  testhealthdata: "HTEST",
+  HTEST: "HTEST",
 
   /**
    * training
    */
-  training: "TRAIN",
+  TRAIN: "TRAIN",
 
   /**
    * healthcare payment
    */
-  healthcarepayment: "HPAYMT",
+  HPAYMT: "HPAYMT",
 
   /**
    * claim attachment
    */
-  claimattachment: "CLMATTCH",
+  CLMATTCH: "CLMATTCH",
 
   /**
    * coverage authorization
    */
-  coverageauthorization: "COVAUTH",
+  COVAUTH: "COVAUTH",
 
   /**
    * coverage under policy or program
    */
-  coverageunderpolicyorprogram: "COVERAGE",
+  COVERAGE: "COVERAGE",
 
   /**
    * eligibility determination
    */
-  eligibilitydetermination: "ELIGDTRM",
+  ELIGDTRM: "ELIGDTRM",
 
   /**
    * eligibility verification
    */
-  eligibilityverification: "ELIGVER",
+  ELIGVER: "ELIGVER",
 
   /**
    * enrollment
    */
-  enrollment: "ENROLLM",
+  ENROLLM: "ENROLLM",
 
   /**
    * military discharge
    */
-  militarydischarge: "MILDCRG",
+  MILDCRG: "MILDCRG",
 
   /**
    * remittance advice
    */
-  remittanceadvice: "REMITADV",
+  REMITADV: "REMITADV",
 
   /**
    * healthcare research
    */
-  healthcareresearch: "HRESCH",
+  HRESCH: "HRESCH",
 
   /**
    * biomedical research
    */
-  biomedicalresearch: "BIORCH",
+  BIORCH: "BIORCH",
 
   /**
    * clinical trial research
    */
-  clinicaltrialresearch: "CLINTRCH",
+  CLINTRCH: "CLINTRCH",
 
   /**
    * clinical trial research without patient care
    */
-  clinicaltrialresearchwithoutpatientcare: "CLINTRCHNPC",
+  CLINTRCHNPC: "CLINTRCHNPC",
 
   /**
    * clinical trial research with patient care
    */
-  clinicaltrialresearchwithpatientcare: "CLINTRCHPC",
+  CLINTRCHPC: "CLINTRCHPC",
 
   /**
    * preclinical trial research
    */
-  preclinicaltrialresearch: "PRECLINTRCH",
+  PRECLINTRCH: "PRECLINTRCH",
 
   /**
    * disease specific healthcare research
    */
-  diseasespecifichealthcareresearch: "DSRCH",
+  DSRCH: "DSRCH",
 
   /**
    * population origins or ancestry healthcare research
    */
-  populationoriginsorancestryhealthcareresearch: "POARCH",
+  POARCH: "POARCH",
 
   /**
    * translational healthcare research
    */
-  translationalhealthcareresearch: "TRANSRCH",
+  TRANSRCH: "TRANSRCH",
 
   /**
    * patient requested
    */
-  patientrequested: "PATRQT",
+  PATRQT: "PATRQT",
 
   /**
    * family requested
    */
-  familyrequested: "FAMRQT",
+  FAMRQT: "FAMRQT",
 
   /**
    * power of attorney
    */
-  powerofattorney: "PWATRNY",
+  PWATRNY: "PWATRNY",
 
   /**
    * support network
    */
-  supportnetwork: "SUPNWK",
+  SUPNWK: "SUPNWK",
 
   /**
    * public health
    */
-  publichealth: "PUBHLTH",
+  PUBHLTH: "PUBHLTH",
 
   /**
    * disaster
    */
-  disaster: "DISASTER",
+  DISASTER: "DISASTER",
 
   /**
    * threat
    */
-  threat: "THREAT",
+  THREAT: "THREAT",
 
   /**
    * treatment
    */
-  treatment: "TREAT",
+  TREAT: "TREAT",
 
   /**
    * clinical trial
    */
-  clinicaltrial: "CLINTRL",
+  CLINTRL: "CLINTRL",
 
   /**
    * coordination of care
    */
-  coordinationofcare: "COC",
+  COC: "COC",
 
   /**
    * Emergency Treatment
    */
-  EmergencyTreatment: "ETREAT",
+  ETREAT: "ETREAT",
 
   /**
    * break the glass
    */
-  breaktheglass: "BTG",
+  BTG: "BTG",
 
   /**
    * emergency room treatment
    */
-  emergencyroomtreatment: "ERTREAT",
+  ERTREAT: "ERTREAT",
 
   /**
    * population health
    */
-  populationhealth: "POPHLTH",
+  POPHLTH: "POPHLTH",
 
   /**
    * ActCoverageAssessmentObservationValue
    */
-  ActCoverageAssessmentObservationValue:
+  _ActCoverageAssessmentObservationValue:
     "_ActCoverageAssessmentObservationValue",
 
   /**
    * ActFinancialStatusObservationValue
    */
-  ActFinancialStatusObservationValue: "_ActFinancialStatusObservationValue",
+  _ActFinancialStatusObservationValue: "_ActFinancialStatusObservationValue",
 
   /**
    * asset
    */
-  asset: "ASSET",
+  ASSET: "ASSET",
 
   /**
    * annuity
    */
-  annuity: "ANNUITY",
+  ANNUITY: "ANNUITY",
 
   /**
    * real property
    */
-  realproperty: "PROP",
+  PROP: "PROP",
 
   /**
    * retirement investment account
    */
-  retirementinvestmentaccount: "RETACCT",
+  RETACCT: "RETACCT",
 
   /**
    * trust
    */
-  trust: "TRUST",
+  TRUST: "TRUST",
 
   /**
    * income
    */
-  income: "INCOME",
+  INCOME: "INCOME",
 
   /**
    * child support
    */
-  childsupport: "CHILD",
+  CHILD: "CHILD",
 
   /**
    * disability pay
    */
-  disabilitypay: "DISABL",
+  DISABL: "DISABL",
 
   /**
    * investment income
    */
-  investmentincome: "INVEST",
+  INVEST: "INVEST",
 
   /**
    * paid employment
    */
-  paidemployment: "PAY",
+  PAY: "PAY",
 
   /**
    * retirement pay
    */
-  retirementpay: "RETIRE",
+  RETIRE: "RETIRE",
 
   /**
    * spousal or partner support
    */
-  spousalorpartnersupport: "SPOUSAL",
+  SPOUSAL: "SPOUSAL",
 
   /**
    * income supplement
    */
-  incomesupplement: "SUPPLE",
+  SUPPLE: "SUPPLE",
 
   /**
    * tax obligation
    */
-  taxobligation: "TAX",
+  TAX: "TAX",
 
   /**
    * living expense
    */
-  livingexpense: "LIVEXP",
+  LIVEXP: "LIVEXP",
 
   /**
    * clothing expense
    */
-  clothingexpense: "CLOTH",
+  CLOTH: "CLOTH",
 
   /**
    * food expense
    */
-  foodexpense: "FOOD",
+  FOOD: "FOOD",
 
   /**
    * health expense
    */
-  healthexpense: "HEALTH",
+  HEALTH: "HEALTH",
 
   /**
    * household expense
    */
-  householdexpense: "HOUSE",
+  HOUSE: "HOUSE",
 
   /**
    * legal expense
    */
-  legalexpense: "LEGAL",
+  LEGAL: "LEGAL",
 
   /**
    * mortgage
    */
-  mortgage: "MORTG",
+  MORTG: "MORTG",
 
   /**
    * rent
    */
-  rent: "RENT",
+  RENT: "RENT",
 
   /**
    * sundry expense
    */
-  sundryexpense: "SUNDRY",
+  SUNDRY: "SUNDRY",
 
   /**
    * transportation expense
    */
-  transportationexpense: "TRANS",
+  TRANS: "TRANS",
 
   /**
    * utility expense
    */
-  utilityexpense: "UTIL",
+  UTIL: "UTIL",
 
   /**
    * eligibility indicator
    */
-  eligibilityindicator: "ELSTAT",
+  ELSTAT: "ELSTAT",
 
   /**
    * adoption document
    */
-  adoptiondocument: "ADOPT",
+  ADOPT: "ADOPT",
 
   /**
    * birth certificate
    */
-  birthcertificate: "BTHCERT",
+  BTHCERT: "BTHCERT",
 
   /**
    * creditable coverage document
    */
-  creditablecoveragedocument: "CCOC",
+  CCOC: "CCOC",
 
   /**
    * driver license
    */
-  driverlicense: "DRLIC",
+  DRLIC: "DRLIC",
 
   /**
    * foster child document
    */
-  fosterchilddocument: "FOSTER",
+  FOSTER: "FOSTER",
 
   /**
    * program or policy member
    */
-  programorpolicymember: "MEMBER",
+  MEMBER: "MEMBER",
 
   /**
    * military identification
    */
-  militaryidentification: "MIL",
+  MIL: "MIL",
 
   /**
    * marriage certificate
    */
-  marriagecertificate: "MRGCERT",
+  MRGCERT: "MRGCERT",
 
   /**
    * passport
    */
-  passport: "PASSPORT",
+  PASSPORT: "PASSPORT",
 
   /**
    * student enrollment
    */
-  studentenrollment: "STUDENRL",
+  STUDENRL: "STUDENRL",
 
   /**
    * health status
    */
-  healthstatus: "HLSTAT",
+  HLSTAT: "HLSTAT",
 
   /**
    * disabled
    */
-  disabled: "DISABLE",
+  DISABLE: "DISABLE",
 
   /**
    * drug use
    */
-  druguse: "DRUG",
+  DRUG: "DRUG",
 
   /**
    * IV drug use
    */
-  IVdruguse: "IVDRG",
+  IVDRG: "IVDRG",
 
   /**
    * pregnant
    */
-  pregnant: "PGNT",
+  PGNT: "PGNT",
 
   /**
    * living dependency
    */
-  livingdependency: "LIVDEP",
+  LIVDEP: "LIVDEP",
 
   /**
    * relative dependent
    */
-  relativedependent: "RELDEP",
+  RELDEP: "RELDEP",
 
   /**
    * spouse dependent
    */
-  spousedependent: "SPSDEP",
+  SPSDEP: "SPSDEP",
 
   /**
    * unrelated person dependent
    */
-  unrelatedpersondependent: "URELDEP",
+  URELDEP: "URELDEP",
 
   /**
    * living situation
    */
-  livingsituation: "LIVSIT",
+  LIVSIT: "LIVSIT",
 
   /**
    * alone
    */
-  alone: "ALONE",
+  ALONE: "ALONE",
 
   /**
    * dependent children
    */
-  dependentchildren: "DEPCHD",
+  DEPCHD: "DEPCHD",
 
   /**
    * dependent spouse
    */
-  dependentspouse: "DEPSPS",
+  DEPSPS: "DEPSPS",
 
   /**
    * dependent young children
    */
-  dependentyoungchildren: "DEPYGCHD",
+  DEPYGCHD: "DEPYGCHD",
 
   /**
    * live with family
    */
-  livewithfamily: "FAM",
+  FAM: "FAM",
 
   /**
    * relative
    */
-  relative: "RELAT",
+  RELAT: "RELAT",
 
   /**
    * spouse only
    */
-  spouseonly: "SPS",
+  SPS: "SPS",
 
   /**
    * unrelated person
    */
-  unrelatedperson: "UNREL",
+  UNREL: "UNREL",
 
   /**
    * socio economic status
    */
-  socioeconomicstatus: "SOECSTAT",
+  SOECSTAT: "SOECSTAT",
 
   /**
    * abuse victim
    */
-  abusevictim: "ABUSE",
+  ABUSE: "ABUSE",
 
   /**
    * homeless
    */
-  homeless: "HMLESS",
+  HMLESS: "HMLESS",
 
   /**
    * illegal immigrant
    */
-  illegalimmigrant: "ILGIM",
+  ILGIM: "ILGIM",
 
   /**
    * incarcerated
    */
-  incarcerated: "INCAR",
+  INCAR: "INCAR",
 
   /**
    * probation
    */
-  probation: "PROB",
+  PROB: "PROB",
 
   /**
    * refugee
    */
-  refugee: "REFUG",
+  REFUG: "REFUG",
 
   /**
    * unemployed
    */
-  unemployed: "UNEMPL",
+  UNEMPL: "UNEMPL",
 
   /**
    * AllergyTestValue
    */
-  AllergyTestValue: "_AllergyTestValue",
+  _AllergyTestValue: "_AllergyTestValue",
 
   /**
    * no reaction
    */
-  noreaction: "A0",
+  A0: "A0",
 
   /**
    * minimal reaction
    */
-  minimalreaction: "A1",
+  A1: "A1",
 
   /**
    * mild reaction
    */
-  mildreaction: "A2",
+  A2: "A2",
 
   /**
    * moderate reaction
    */
-  moderatereaction: "A3",
+  A3: "A3",
 
   /**
    * severe reaction
    */
-  severereaction: "A4",
+  A4: "A4",
 
   /**
    * CompositeMeasureScoring
    */
-  CompositeMeasureScoring: "_CompositeMeasureScoring",
+  _CompositeMeasureScoring: "_CompositeMeasureScoring",
 
   /**
    * All-or-nothing Scoring
    */
-  AllornothingScoring: "ALLORNONESCR",
+  ALLORNONESCR: "ALLORNONESCR",
 
   /**
    * Linear Scoring
    */
-  LinearScoring: "LINEARSCR",
+  LINEARSCR: "LINEARSCR",
 
   /**
    * Opportunity Scoring
    */
-  OpportunityScoring: "OPPORSCR",
+  OPPORSCR: "OPPORSCR",
 
   /**
    * Weighted Scoring
    */
-  WeightedScoring: "WEIGHTSCR",
+  WEIGHTSCR: "WEIGHTSCR",
 
   /**
    * CoverageLimitObservationValue
    */
-  CoverageLimitObservationValue: "_CoverageLimitObservationValue",
+  _CoverageLimitObservationValue: "_CoverageLimitObservationValue",
 
   /**
    * CoverageLevelObservationValue
    */
-  CoverageLevelObservationValue: "_CoverageLevelObservationValue",
+  _CoverageLevelObservationValue: "_CoverageLevelObservationValue",
 
   /**
    * adult child
    */
-  adultchild: "ADC",
+  ADC: "ADC",
 
   /**
    * child
    */
-  child: "CHD",
+  CHD: "CHD",
 
   /**
    * dependent
    */
-  dependent: "DEP",
+  DEP: "DEP",
 
   /**
    * domestic partner
    */
-  domesticpartner: "DP",
+  DP: "DP",
 
   /**
    * employee
    */
-  employee: "ECH",
+  ECH: "ECH",
 
   /**
    * family coverage
    */
-  familycoverage: "FLY",
+  FLY: "FLY",
 
   /**
    * individual
    */
-  individual: "IND",
+  IND: "IND",
 
   /**
    * same sex partner
    */
-  samesexpartner: "SSP",
+  SSP: "SSP",
 
   /**
    * CoverageItemLimitObservationValue
    */
-  CoverageItemLimitObservationValue: "_CoverageItemLimitObservationValue",
+  _CoverageItemLimitObservationValue: "_CoverageItemLimitObservationValue",
 
   /**
    * CoverageLocationLimitObservationValue
    */
-  CoverageLocationLimitObservationValue:
+  _CoverageLocationLimitObservationValue:
     "_CoverageLocationLimitObservationValue",
 
   /**
    * CriticalityObservationValue
    */
-  CriticalityObservationValue: "_CriticalityObservationValue",
+  _CriticalityObservationValue: "_CriticalityObservationValue",
 
   /**
    * high criticality
    */
-  highcriticality: "CRITH",
+  CRITH: "CRITH",
 
   /**
    * low criticality
    */
-  lowcriticality: "CRITL",
+  CRITL: "CRITL",
 
   /**
    * unable to assess criticality
    */
-  unabletoassesscriticality: "CRITU",
+  CRITU: "CRITU",
 
   /**
    * _EmploymentStatus
@@ -1159,667 +1158,667 @@ export const SecurityControlObservationValueCode = {
   /**
    * GeneticObservationValue
    */
-  GeneticObservationValue: "_GeneticObservationValue",
+  _GeneticObservationValue: "_GeneticObservationValue",
 
   /**
    * HOMO
    */
-  HOMO: "Homozygote",
+  Homozygote: "Homozygote",
 
   /**
    * Measurement Improvement Notation
    */
-  MeasurementImprovementNotation: "_MeasurementImprovementNotation",
+  _MeasurementImprovementNotation: "_MeasurementImprovementNotation",
 
   /**
    * Decreased score indicates improvement
    */
-  Decreasedscoreindicatesimprovement: "DecrIsImp",
+  DecrIsImp: "DecrIsImp",
 
   /**
    * Increased score indicates improvement
    */
-  Increasedscoreindicatesimprovement: "IncrIsImp",
+  IncrIsImp: "IncrIsImp",
 
   /**
    * ObservationMeasureScoring
    */
-  ObservationMeasureScoring: "_ObservationMeasureScoring",
+  _ObservationMeasureScoring: "_ObservationMeasureScoring",
 
   /**
    * cohort measure scoring
    */
-  cohortmeasurescoring: "COHORT",
+  COHORT: "COHORT",
 
   /**
    * continuous variable measure scoring
    */
-  continuousvariablemeasurescoring: "CONTVAR",
+  CONTVAR: "CONTVAR",
 
   /**
    * proportion measure scoring
    */
-  proportionmeasurescoring: "PROPOR",
+  PROPOR: "PROPOR",
 
   /**
    * ratio measure scoring
    */
-  ratiomeasurescoring: "RATIO",
+  RATIO: "RATIO",
 
   /**
    * ObservationMeasureType
    */
-  ObservationMeasureType: "_ObservationMeasureType",
+  _ObservationMeasureType: "_ObservationMeasureType",
 
   /**
    * composite measure type
    */
-  compositemeasuretype: "COMPOSITE",
+  COMPOSITE: "COMPOSITE",
 
   /**
    * efficiency measure type
    */
-  efficiencymeasuretype: "EFFICIENCY",
+  EFFICIENCY: "EFFICIENCY",
 
   /**
    * experience measure type
    */
-  experiencemeasuretype: "EXPERIENCE",
+  EXPERIENCE: "EXPERIENCE",
 
   /**
    * outcome measure type
    */
-  outcomemeasuretype: "OUTCOME",
+  OUTCOME: "OUTCOME",
 
   /**
    * intermediate clinical outcome measure
    */
-  intermediateclinicaloutcomemeasure: "INTERM-OM",
+  "INTERM-OM": "INTERM-OM",
 
   /**
    * patient reported outcome performance measure
    */
-  patientreportedoutcomeperformancemeasure: "PRO-PM",
+  "PRO-PM": "PRO-PM",
 
   /**
    * process measure type
    */
-  processmeasuretype: "PROCESS",
+  PROCESS: "PROCESS",
 
   /**
    * appropriate use process measure
    */
-  appropriateuseprocessmeasure: "APPROPRIATE",
+  APPROPRIATE: "APPROPRIATE",
 
   /**
    * resource use measure type
    */
-  resourceusemeasuretype: "RESOURCE",
+  RESOURCE: "RESOURCE",
 
   /**
    * structure measure type
    */
-  structuremeasuretype: "STRUCTURE",
+  STRUCTURE: "STRUCTURE",
 
   /**
    * ObservationPopulationInclusion
    */
-  ObservationPopulationInclusion: "_ObservationPopulationInclusion",
+  _ObservationPopulationInclusion: "_ObservationPopulationInclusion",
 
   /**
    * denominator exclusions
    */
-  denominatorexclusions: "DENEX",
+  DENEX: "DENEX",
 
   /**
    * denominator exceptions
    */
-  denominatorexceptions: "DENEXCEP",
+  DENEXCEP: "DENEXCEP",
 
   /**
    * denominator
    */
-  denominator: "DENOM",
+  DENOM: "DENOM",
 
   /**
    * initial population
    */
-  initialpopulation: "IP",
+  IP: "IP",
 
   /**
    * initial patient population
    */
-  initialpatientpopulation: "IPP",
+  IPP: "IPP",
 
   /**
    * measure population
    */
-  measurepopulation: "MSRPOPL",
+  MSRPOPL: "MSRPOPL",
 
   /**
    * numerator
    */
-  numerator: "NUMER",
+  NUMER: "NUMER",
 
   /**
    * numerator exclusions
    */
-  numeratorexclusions: "NUMEX",
+  NUMEX: "NUMEX",
 
   /**
    * PartialCompletionScale
    */
-  PartialCompletionScale: "_PartialCompletionScale",
+  _PartialCompletionScale: "_PartialCompletionScale",
 
   /**
    * Great extent
    */
-  Greatextent: "G",
+  G: "G",
 
   /**
    * Large extent
    */
-  Largeextent: "LE",
+  LE: "LE",
 
   /**
    * Medium extent
    */
-  Mediumextent: "ME",
+  ME: "ME",
 
   /**
    * Minimal extent
    */
-  Minimalextent: "MI",
+  MI: "MI",
 
   /**
    * None
    */
-  None: "N",
+  N: "N",
 
   /**
    * Some extent
    */
-  Someextent: "S",
+  S: "S",
 
   /**
    * SecurityObservationValue
    */
-  SecurityObservationValue: "_SecurityObservationValue",
+  _SecurityObservationValue: "_SecurityObservationValue",
 
   /**
    * security category
    */
-  securitycategory: "_SECCATOBV",
+  _SECCATOBV: "_SECCATOBV",
 
   /**
    * security classification
    */
-  securityclassification: "_SECCLASSOBV",
+  _SECCLASSOBV: "_SECCLASSOBV",
 
   /**
    * security control
    */
-  securitycontrol: "_SECCONOBV",
+  _SECCONOBV: "_SECCONOBV",
 
   /**
    * security integrity
    */
-  securityintegrity: "_SECINTOBV",
+  _SECINTOBV: "_SECINTOBV",
 
   /**
    * alteration integrity
    */
-  alterationintegrity: "_SECALTINTOBV",
+  _SECALTINTOBV: "_SECALTINTOBV",
 
   /**
    * abstracted
    */
-  abstracted: "ABSTRED",
+  ABSTRED: "ABSTRED",
 
   /**
    * aggregated
    */
-  aggregated: "AGGRED",
+  AGGRED: "AGGRED",
 
   /**
    * anonymized
    */
-  anonymized: "ANONYED",
+  ANONYED: "ANONYED",
 
   /**
    * mapped
    */
-  mapped: "MAPPED",
+  MAPPED: "MAPPED",
 
   /**
    * masked
    */
-  masked: "MASKED",
+  MASKED: "MASKED",
 
   /**
    * pseudonymized
    */
-  pseudonymized: "PSEUDED",
+  PSEUDED: "PSEUDED",
 
   /**
    * redacted
    */
-  redacted: "REDACTED",
+  REDACTED: "REDACTED",
 
   /**
    * subsetted
    */
-  subsetted: "SUBSETTED",
+  SUBSETTED: "SUBSETTED",
 
   /**
    * syntactic transform
    */
-  syntactictransform: "SYNTAC",
+  SYNTAC: "SYNTAC",
 
   /**
    * translated
    */
-  translated: "TRSLT",
+  TRSLT: "TRSLT",
 
   /**
    * versioned
    */
-  versioned: "VERSIONED",
+  VERSIONED: "VERSIONED",
 
   /**
    * data integrity
    */
-  dataintegrity: "_SECDATINTOBV",
+  _SECDATINTOBV: "_SECDATINTOBV",
 
   /**
    * cryptographic hash function
    */
-  cryptographichashfunction: "CRYTOHASH",
+  CRYTOHASH: "CRYTOHASH",
 
   /**
    * digital signature
    */
-  digitalsignature: "DIGSIG",
+  DIGSIG: "DIGSIG",
 
   /**
    * integrity confidence
    */
-  integrityconfidence: "_SECINTCONOBV",
+  _SECINTCONOBV: "_SECINTCONOBV",
 
   /**
    * highly reliable
    */
-  highlyreliable: "HRELIABLE",
+  HRELIABLE: "HRELIABLE",
 
   /**
    * reliable
    */
-  reliable: "RELIABLE",
+  RELIABLE: "RELIABLE",
 
   /**
    * uncertain reliability
    */
-  uncertainreliability: "UNCERTREL",
+  UNCERTREL: "UNCERTREL",
 
   /**
    * unreliable
    */
-  unreliable: "UNRELIABLE",
+  UNRELIABLE: "UNRELIABLE",
 
   /**
    * provenance
    */
-  provenance: "_SECINTPRVOBV",
+  _SECINTPRVOBV: "_SECINTPRVOBV",
 
   /**
    * provenance asserted by
    */
-  provenanceassertedby: "_SECINTPRVABOBV",
+  _SECINTPRVABOBV: "_SECINTPRVABOBV",
 
   /**
    * clinician asserted
    */
-  clinicianasserted: "CLINAST",
+  CLINAST: "CLINAST",
 
   /**
    * device asserted
    */
-  deviceasserted: "DEVAST",
+  DEVAST: "DEVAST",
 
   /**
    * healthcare professional asserted
    */
-  healthcareprofessionalasserted: "HCPAST",
+  HCPAST: "HCPAST",
 
   /**
    * patient acquaintance asserted
    */
-  patientacquaintanceasserted: "PACQAST",
+  PACQAST: "PACQAST",
 
   /**
    * patient asserted
    */
-  patientasserted: "PATAST",
+  PATAST: "PATAST",
 
   /**
    * payer asserted
    */
-  payerasserted: "PAYAST",
+  PAYAST: "PAYAST",
 
   /**
    * professional asserted
    */
-  professionalasserted: "PROAST",
+  PROAST: "PROAST",
 
   /**
    * substitute decision maker asserted
    */
-  substitutedecisionmakerasserted: "SDMAST",
+  SDMAST: "SDMAST",
 
   /**
    * provenance reported by
    */
-  provenancereportedby: "_SECINTPRVRBOBV",
+  _SECINTPRVRBOBV: "_SECINTPRVRBOBV",
 
   /**
    * clinician reported
    */
-  clinicianreported: "CLINRPT",
+  CLINRPT: "CLINRPT",
 
   /**
    * device reported
    */
-  devicereported: "DEVRPT",
+  DEVRPT: "DEVRPT",
 
   /**
    * healthcare professional reported
    */
-  healthcareprofessionalreported: "HCPRPT",
+  HCPRPT: "HCPRPT",
 
   /**
    * patient acquaintance reported
    */
-  patientacquaintancereported: "PACQRPT",
+  PACQRPT: "PACQRPT",
 
   /**
    * patient reported
    */
-  patientreported: "PATRPT",
+  PATRPT: "PATRPT",
 
   /**
    * payer reported
    */
-  payerreported: "PAYRPT",
+  PAYRPT: "PAYRPT",
 
   /**
    * professional reported
    */
-  professionalreported: "PRORPT",
+  PRORPT: "PRORPT",
 
   /**
    * substitute decision maker reported
    */
-  substitutedecisionmakerreported: "SDMRPT",
+  SDMRPT: "SDMRPT",
 
   /**
    * integrity status
    */
-  integritystatus: "_SECINTSTOBV",
+  _SECINTSTOBV: "_SECINTSTOBV",
 
   /**
    * security trust observation
    */
-  securitytrustobservation: "SECTRSTOBV",
+  SECTRSTOBV: "SECTRSTOBV",
 
   /**
    * trust accreditation observation
    */
-  trustaccreditationobservation: "TRSTACCRDOBV",
+  TRSTACCRDOBV: "TRSTACCRDOBV",
 
   /**
    * trust agreement observation
    */
-  trustagreementobservation: "TRSTAGREOBV",
+  TRSTAGREOBV: "TRSTAGREOBV",
 
   /**
    * trust certificate observation
    */
-  trustcertificateobservation: "TRSTCERTOBV",
+  TRSTCERTOBV: "TRSTCERTOBV",
 
   /**
    * none supplied 5
    */
-  nonesupplied5: "TRSTFWKOBV",
+  TRSTFWKOBV: "TRSTFWKOBV",
 
   /**
    * trust assurance observation
    */
-  trustassuranceobservation: "TRSTLOAOBV",
+  TRSTLOAOBV: "TRSTLOAOBV",
 
   /**
    * authentication level of assurance value
    */
-  authenticationlevelofassurancevalue: "LOAAN",
+  LOAAN: "LOAAN",
 
   /**
    * low authentication level of assurance
    */
-  lowauthenticationlevelofassurance: "LOAAN1",
+  LOAAN1: "LOAAN1",
 
   /**
    * basic authentication level of assurance
    */
-  basicauthenticationlevelofassurance: "LOAAN2",
+  LOAAN2: "LOAAN2",
 
   /**
    * medium authentication level of assurance
    */
-  mediumauthenticationlevelofassurance: "LOAAN3",
+  LOAAN3: "LOAAN3",
 
   /**
    * high authentication level of assurance
    */
-  highauthenticationlevelofassurance: "LOAAN4",
+  LOAAN4: "LOAAN4",
 
   /**
    * authentication process level of assurance value
    */
-  authenticationprocesslevelofassurancevalue: "LOAAP",
+  LOAAP: "LOAAP",
 
   /**
    * low authentication process level of assurance
    */
-  lowauthenticationprocesslevelofassurance: "LOAAP1",
+  LOAAP1: "LOAAP1",
 
   /**
    * basic authentication process level of assurance
    */
-  basicauthenticationprocesslevelofassurance: "LOAAP2",
+  LOAAP2: "LOAAP2",
 
   /**
    * medium authentication process level of assurance
    */
-  mediumauthenticationprocesslevelofassurance: "LOAAP3",
+  LOAAP3: "LOAAP3",
 
   /**
    * high authentication process level of assurance
    */
-  highauthenticationprocesslevelofassurance: "LOAAP4",
+  LOAAP4: "LOAAP4",
 
   /**
    * assertion level of assurance value
    */
-  assertionlevelofassurancevalue: "LOAAS",
+  LOAAS: "LOAAS",
 
   /**
    * low assertion level of assurance
    */
-  lowassertionlevelofassurance: "LOAAS1",
+  LOAAS1: "LOAAS1",
 
   /**
    * basic assertion level of assurance
    */
-  basicassertionlevelofassurance: "LOAAS2",
+  LOAAS2: "LOAAS2",
 
   /**
    * medium assertion level of assurance
    */
-  mediumassertionlevelofassurance: "LOAAS3",
+  LOAAS3: "LOAAS3",
 
   /**
    * high assertion level of assurance
    */
-  highassertionlevelofassurance: "LOAAS4",
+  LOAAS4: "LOAAS4",
 
   /**
    * token and credential management level of assurance value)
    */
-  tokenandcredentialmanagementlevelofassurancevalue: "LOACM",
+  LOACM: "LOACM",
 
   /**
    * low token and credential management level of assurance
    */
-  lowtokenandcredentialmanagementlevelofassurance: "LOACM1",
+  LOACM1: "LOACM1",
 
   /**
    * basic token and credential management level of assurance
    */
-  basictokenandcredentialmanagementlevelofassurance: "LOACM2",
+  LOACM2: "LOACM2",
 
   /**
    * medium token and credential management level of assurance
    */
-  mediumtokenandcredentialmanagementlevelofassurance: "LOACM3",
+  LOACM3: "LOACM3",
 
   /**
    * high token and credential management level of assurance
    */
-  hightokenandcredentialmanagementlevelofassurance: "LOACM4",
+  LOACM4: "LOACM4",
 
   /**
    * identity proofing level of assurance
    */
-  identityproofinglevelofassurance: "LOAID",
+  LOAID: "LOAID",
 
   /**
    * low identity proofing level of assurance
    */
-  lowidentityproofinglevelofassurance: "LOAID1",
+  LOAID1: "LOAID1",
 
   /**
    * basic identity proofing level of assurance
    */
-  basicidentityproofinglevelofassurance: "LOAID2",
+  LOAID2: "LOAID2",
 
   /**
    * medium identity proofing level of assurance
    */
-  mediumidentityproofinglevelofassurance: "LOAID3",
+  LOAID3: "LOAID3",
 
   /**
    * high identity proofing level of assurance
    */
-  highidentityproofinglevelofassurance: "LOAID4",
+  LOAID4: "LOAID4",
 
   /**
    * non-repudiation level of assurance value
    */
-  nonrepudiationlevelofassurancevalue: "LOANR",
+  LOANR: "LOANR",
 
   /**
    * low non-repudiation level of assurance
    */
-  lownonrepudiationlevelofassurance: "LOANR1",
+  LOANR1: "LOANR1",
 
   /**
    * basic non-repudiation level of assurance
    */
-  basicnonrepudiationlevelofassurance: "LOANR2",
+  LOANR2: "LOANR2",
 
   /**
    * medium non-repudiation level of assurance
    */
-  mediumnonrepudiationlevelofassurance: "LOANR3",
+  LOANR3: "LOANR3",
 
   /**
    * high non-repudiation level of assurance
    */
-  highnonrepudiationlevelofassurance: "LOANR4",
+  LOANR4: "LOANR4",
 
   /**
    * remote access level of assurance value
    */
-  remoteaccesslevelofassurancevalue: "LOARA",
+  LOARA: "LOARA",
 
   /**
    * low remote access level of assurance
    */
-  lowremoteaccesslevelofassurance: "LOARA1",
+  LOARA1: "LOARA1",
 
   /**
    * basic remote access level of assurance
    */
-  basicremoteaccesslevelofassurance: "LOARA2",
+  LOARA2: "LOARA2",
 
   /**
    * medium remote access level of assurance
    */
-  mediumremoteaccesslevelofassurance: "LOARA3",
+  LOARA3: "LOARA3",
 
   /**
    * high remote access level of assurance
    */
-  highremoteaccesslevelofassurance: "LOARA4",
+  LOARA4: "LOARA4",
 
   /**
    * token level of assurance value
    */
-  tokenlevelofassurancevalue: "LOATK",
+  LOATK: "LOATK",
 
   /**
    * low token level of assurance
    */
-  lowtokenlevelofassurance: "LOATK1",
+  LOATK1: "LOATK1",
 
   /**
    * basic token level of assurance
    */
-  basictokenlevelofassurance: "LOATK2",
+  LOATK2: "LOATK2",
 
   /**
    * medium token level of assurance
    */
-  mediumtokenlevelofassurance: "LOATK3",
+  LOATK3: "LOATK3",
 
   /**
    * high token level of assurance
    */
-  hightokenlevelofassurance: "LOATK4",
+  LOATK4: "LOATK4",
 
   /**
    * none supplied 6
    */
-  nonesupplied6: "TRSTMECOBV",
+  TRSTMECOBV: "TRSTMECOBV",
 
   /**
    * SeverityObservation
    */
-  SeverityObservation: "_SeverityObservation",
+  _SeverityObservation: "_SeverityObservation",
 
   /**
    * High
    */
-  High: "H",
+  H: "H",
 
   /**
    * Low
    */
-  Low: "L",
+  L: "L",
 
   /**
    * Moderate
    */
-  Moderate: "M",
+  M: "M",
 
   /**
    * _SubjectBodyPosition
@@ -1829,87 +1828,87 @@ export const SecurityControlObservationValueCode = {
   /**
    * left lateral decubitus
    */
-  leftlateraldecubitus: "LLD",
+  LLD: "LLD",
 
   /**
    * prone
    */
-  prone: "PRN",
+  PRN: "PRN",
 
   /**
    * right lateral decubitus
    */
-  rightlateraldecubitus: "RLD",
+  RLD: "RLD",
 
   /**
    * Semi-Fowler's
    */
-  SemiFowlers: "SFWL",
+  SFWL: "SFWL",
 
   /**
    * sitting
    */
-  sitting: "SIT",
+  SIT: "SIT",
 
   /**
    * standing
    */
-  standing: "STN",
+  STN: "STN",
 
   /**
    * supine
    */
-  supine: "SUP",
+  SUP: "SUP",
 
   /**
    * reverse trendelenburg
    */
-  reversetrendelenburg: "RTRD",
+  RTRD: "RTRD",
 
   /**
    * trendelenburg
    */
-  trendelenburg: "TRD",
+  TRD: "TRD",
 
   /**
    * verification outcome
    */
-  verificationoutcome: "_VerificationOutcomeValue",
+  _VerificationOutcomeValue: "_VerificationOutcomeValue",
 
   /**
    * active coverage
    */
-  activecoverage: "ACT",
+  ACT: "ACT",
 
   /**
    * active - pending investigation
    */
-  activependinginvestigation: "ACTPEND",
+  ACTPEND: "ACTPEND",
 
   /**
    * eligible
    */
-  eligible: "ELG",
+  ELG: "ELG",
 
   /**
    * inactive
    */
-  inactive: "INACT",
+  INACT: "INACT",
 
   /**
    * inactive - pending investigation
    */
-  inactivependinginvestigation: "INPNDINV",
+  INPNDINV: "INPNDINV",
 
   /**
    * inactive - pending eligibility update
    */
-  inactivependingeligibilityupdate: "INPNDUPD",
+  INPNDUPD: "INPNDUPD",
 
   /**
    * not eligible
    */
-  noteligible: "NELG",
+  NELG: "NELG",
 
   /**
    * _WorkSchedule
@@ -1919,170 +1918,171 @@ export const SecurityControlObservationValueCode = {
   /**
    * daytime shift
    */
-  daytimeshift: "DS",
+  DS: "DS",
 
   /**
    * early morning shift
    */
-  earlymorningshift: "EMS",
+  EMS: "EMS",
 
   /**
    * evening shift
    */
-  eveningshift: "ES",
+  ES: "ES",
 
   /**
    * night shift
    */
-  nightshift: "NS",
+  NS: "NS",
 
   /**
    * rotating shift with nights
    */
-  rotatingshiftwithnights: "RSWN",
+  RSWN: "RSWN",
 
   /**
    * rotating shift without nights
    */
-  rotatingshiftwithoutnights: "RSWON",
+  RSWON: "RSWON",
 
   /**
    * split shift
    */
-  splitshift: "SS",
+  SS: "SS",
 
   /**
    * very long shift
    */
-  verylongshift: "VLS",
+  VLS: "VLS",
 
   /**
    * variable shift
    */
-  variableshift: "VS",
+  VS: "VS",
 
   /**
    * AnnotationValue
    */
-  AnnotationValue: "_AnnotationValue",
+  _AnnotationValue: "_AnnotationValue",
 
   /**
    * ECGAnnotationValue
    */
-  ECGAnnotationValue: "_ECGAnnotationValue",
+  _ECGAnnotationValue: "_ECGAnnotationValue",
 
   /**
    * common clinical observation
    */
-  commonclinicalobservation: "_CommonClinicalObservationValue",
+  _CommonClinicalObservationValue: "_CommonClinicalObservationValue",
 
   /**
    * CommonClinicalObservationAssertionValue
    */
-  CommonClinicalObservationAssertionValue:
+  _CommonClinicalObservationAssertionValue:
     "_CommonClinicalObservationAssertionValue",
 
   /**
    * CommonClinicalObservationResultValue
    */
-  CommonClinicalObservationResultValue: "_CommonClinicalObservationResultValue",
+  _CommonClinicalObservationResultValue:
+    "_CommonClinicalObservationResultValue",
 
   /**
    * CoverageChemicalDependencyValue
    */
-  CoverageChemicalDependencyValue: "_CoverageChemicalDependencyValue",
+  _CoverageChemicalDependencyValue: "_CoverageChemicalDependencyValue",
 
   /**
    * Individual Case Safety Report Value Domains
    */
-  IndividualCaseSafetyReportValueDomains:
+  _IndividualCaseSafetyReportValueDomains:
     "_IndividualCaseSafetyReportValueDomains",
 
   /**
    * CaseSeriousnessCriteria
    */
-  CaseSeriousnessCriteria: "_CaseSeriousnessCriteria",
+  _CaseSeriousnessCriteria: "_CaseSeriousnessCriteria",
 
   /**
    * DeviceManufacturerEvaluationInterpretation
    */
-  DeviceManufacturerEvaluationInterpretation:
+  _DeviceManufacturerEvaluationInterpretation:
     "_DeviceManufacturerEvaluationInterpretation",
 
   /**
    * DeviceManufacturerEvaluationMethod
    */
-  DeviceManufacturerEvaluationMethod: "_DeviceManufacturerEvaluationMethod",
+  _DeviceManufacturerEvaluationMethod: "_DeviceManufacturerEvaluationMethod",
 
   /**
    * DeviceManufacturerEvaluationResult
    */
-  DeviceManufacturerEvaluationResult: "_DeviceManufacturerEvaluationResult",
+  _DeviceManufacturerEvaluationResult: "_DeviceManufacturerEvaluationResult",
 
   /**
    * Pertinent Reaction Relatedness
    */
-  PertinentReactionRelatedness: "_PertinentReactionRelatedness",
+  _PertinentReactionRelatedness: "_PertinentReactionRelatedness",
 
   /**
    * Product Characterization
    */
-  ProductCharacterization: "_ProductCharacterization",
+  _ProductCharacterization: "_ProductCharacterization",
 
   /**
    * ReactionActionTaken
    */
-  ReactionActionTaken: "_ReactionActionTaken",
+  _ReactionActionTaken: "_ReactionActionTaken",
 
   /**
    * Subject Reaction
    */
-  SubjectReaction: "_SubjectReaction",
+  _SubjectReaction: "_SubjectReaction",
 
   /**
    * SubjectReactionEmphasis
    */
-  SubjectReactionEmphasis: "_SubjectReactionEmphasis",
+  _SubjectReactionEmphasis: "_SubjectReactionEmphasis",
 
   /**
    * SubjectReactionOutcome
    */
-  SubjectReactionOutcome: "_SubjectReactionOutcome",
+  _SubjectReactionOutcome: "_SubjectReactionOutcome",
 
   /**
    * InjuryObservationValue
    */
-  InjuryObservationValue: "_InjuryObservationValue",
+  _InjuryObservationValue: "_InjuryObservationValue",
 
   /**
    * IntoleranceValue
    */
-  IntoleranceValue: "_IntoleranceValue",
+  _IntoleranceValue: "_IntoleranceValue",
 
   /**
    * IssueTriggerObservationValue
    */
-  IssueTriggerObservationValue: "_IssueTriggerObservationValue",
+  _IssueTriggerObservationValue: "_IssueTriggerObservationValue",
 
   /**
    * OtherIndicationValue
    */
-  OtherIndicationValue: "_OtherIndicationValue",
+  _OtherIndicationValue: "_OtherIndicationValue",
 
   /**
    * IndicationValue
    */
-  IndicationValue: "_IndicationValue",
+  _IndicationValue: "_IndicationValue",
 
   /**
    * DiagnosisValue
    */
-  DiagnosisValue: "_DiagnosisValue",
+  _DiagnosisValue: "_DiagnosisValue",
 
   /**
    * SymptomValue
    */
-  SymptomValue: "_SymptomValue",
+  _SymptomValue: "_SymptomValue",
 } as const;
 
 /**

@@ -6,107 +6,107 @@ export const Hl7VSVSCommunicationLocationCode = {
   /**
    * OBX segment following an OBR segment
    */
-  OBXsegmentfollowinganOBRsegment: "OBR-OBX",
+  "OBR-OBX": "OBR-OBX",
 
   /**
    * OBX segment following an SPM segment
    */
-  OBXsegmentfollowinganSPMsegment: "SPM-OBX",
+  "SPM-OBX": "SPM-OBX",
 
   /**
    * Diagnosis Code
    */
-  DiagnosisCode: "DG1-3",
+  "DG1-3": "DG1-3",
 
   /**
    * Next of Kin / Associated Parties Job Code/Class
    */
-  NextofKinAssociatedPartiesJobCodeClass: "NK1-11",
+  "NK1-11": "NK1-11",
 
   /**
    * Organization Name - NK1
    */
-  OrganizationNameNK1: "NK1-13",
+  "NK1-13": "NK1-13",
 
   /**
    * Ethnic Group
    */
-  EthnicGroup: "NK1-28",
+  "NK1-28": "NK1-28",
 
   /**
    * Race
    */
-  Race: "NK1-35",
+  "NK1-35": "NK1-35",
 
   /**
    * Ordering Provider
    */
-  OrderingProvider: "OBR-16",
+  "OBR-16": "OBR-16",
 
   /**
    * Relevant Clinical Information
    */
-  RelevantClinicalInformation: "OBR-13",
+  "OBR-13": "OBR-13",
 
   /**
    * Result Handling
    */
-  ResultHandling: "OBR-49",
+  "OBR-49": "OBR-49",
 
   /**
    * Patient Address
    */
-  PatientAddress: "PID-11",
+  "PID-11": "PID-11",
 
   /**
    * Patient Identifier List
    */
-  PatientIdentifierList: "PID-3",
+  "PID-3": "PID-3",
 
   /**
    * Patient Name
    */
-  PatientName: "PID-5",
+  "PID-5": "PID-5",
 
   /**
    * Mother's Maiden Name
    */
-  MothersMaidenName: "PID-6",
+  "PID-6": "PID-6",
 
   /**
    * Date/Time of Birth
    */
-  DateTimeofBirth: "PID-7",
+  "PID-7": "PID-7",
 
   /**
    * Phone Number - Home
    */
-  PhoneNumberHome: "PID-13",
+  "PID-13": "PID-13",
 
   /**
    * Phone Number - Business
    */
-  PhoneNumberBusiness: "PID-14",
+  "PID-14": "PID-14",
 
   /**
    * Phone Number
    */
-  PhoneNumber: "PID-40",
+  "PID-40": "PID-40",
 
   /**
    * Participation Person
    */
-  ParticipationPerson: "PRT-5",
+  "PRT-5": "PRT-5",
 
   /**
    * Specimen Type
    */
-  SpecimenType: "SPM-4",
+  "SPM-4": "SPM-4",
 
   /**
    * Specimen Source Site
    */
-  SpecimenSourceSite: "SPM-8",
+  "SPM-8": "SPM-8",
 } as const;
 
 /**

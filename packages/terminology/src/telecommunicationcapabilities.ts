@@ -21,7 +21,7 @@ export const TelecommunicationCapabilitiesCode = {
   /**
    * text
    */
-  text: "tty",
+  tty: "tty",
 
   /**
    * voice

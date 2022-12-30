@@ -6,12 +6,12 @@ export const SubconjunctivalRouteCode = {
   /**
    * Injection, subconjunctival
    */
-  Injectionsubconjunctival: "SCINJ",
+  SCINJ: "SCINJ",
 
   /**
    * Subconjunctival
    */
-  Subconjunctival: "SUBCONJTA",
+  SUBCONJTA: "SUBCONJTA",
 } as const;
 
 /**

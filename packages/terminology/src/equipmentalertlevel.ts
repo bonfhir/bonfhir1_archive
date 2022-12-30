@@ -6,22 +6,22 @@ export const EquipmentAlertLevelCode = {
   /**
    * Critical
    */
-  Critical: "C",
+  C: "C",
 
   /**
    * Normal
    */
-  Normal: "N",
+  N: "N",
 
   /**
    * Serious
    */
-  Serious: "S",
+  S: "S",
 
   /**
    * Warning
    */
-  Warning: "W",
+  W: "W",
 } as const;
 
 /**

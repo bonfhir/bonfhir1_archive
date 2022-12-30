@@ -6,7 +6,7 @@ export const ActRelationshipDocumentsCode = {
   /**
    * documents
    */
-  documents: "DOC",
+  DOC: "DOC",
 } as const;
 
 /**

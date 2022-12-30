@@ -6,7 +6,7 @@ export const CoverageSelfPayCodesCode = {
   /**
    * Pay
    */
-  Pay: "pay",
+  pay: "pay",
 } as const;
 
 /**

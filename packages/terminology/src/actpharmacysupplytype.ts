@@ -6,132 +6,132 @@ export const ActPharmacySupplyTypeCode = {
   /**
    * Daily Fill
    */
-  DailyFill: "DF",
+  DF: "DF",
 
   /**
    * Emergency Supply
    */
-  EmergencySupply: "EM",
+  EM: "EM",
 
   /**
    * Script Owing
    */
-  ScriptOwing: "SO",
+  SO: "SO",
 
   /**
    * First Fill
    */
-  FirstFill: "FF",
+  FF: "FF",
 
   /**
    * fee for service
    */
-  feeforservice: "FFS",
+  FFS: "FFS",
 
   /**
    * first fill, part fill, partial strength
    */
-  firstfillpartfillpartialstrength: "FFPS",
+  FFPS: "FFPS",
 
   /**
    * first fill complete, partial strength
    */
-  firstfillcompletepartialstrength: "FFCS",
+  FFCS: "FFCS",
 
   /**
    * trial fill partial strength
    */
-  trialfillpartialstrength: "TFS",
+  TFS: "TFS",
 
   /**
    * First Fill - Complete
    */
-  FirstFillComplete: "FFC",
+  FFC: "FFC",
 
   /**
    * First Fill - Part Fill
    */
-  FirstFillPartFill: "FFP",
+  FFP: "FFP",
 
   /**
    * first fill, partial strength
    */
-  firstfillpartialstrength: "FFSS",
+  FFSS: "FFSS",
 
   /**
    * Trial Fill
    */
-  TrialFill: "TF",
+  TF: "TF",
 
   /**
    * Floor stock
    */
-  Floorstock: "FS",
+  FS: "FS",
 
   /**
    * Manufacturer Sample
    */
-  ManufacturerSample: "MS",
+  MS: "MS",
 
   /**
    * Refill
    */
-  Refill: "RF",
+  RF: "RF",
 
   /**
    * Unit Dose
    */
-  UnitDose: "UD",
+  UD: "UD",
 
   /**
    * Refill - Complete
    */
-  RefillComplete: "RFC",
+  RFC: "RFC",
 
   /**
    * refill complete partial strength
    */
-  refillcompletepartialstrength: "RFCS",
+  RFCS: "RFCS",
 
   /**
    * Refill (First fill this facility)
    */
-  RefillFirstfillthisfacility: "RFF",
+  RFF: "RFF",
 
   /**
    * refill partial strength (first fill this facility)
    */
-  refillpartialstrengthfirstfillthisfacility: "RFFS",
+  RFFS: "RFFS",
 
   /**
    * Refill - Part Fill
    */
-  RefillPartFill: "RFP",
+  RFP: "RFP",
 
   /**
    * refill part fill partial strength
    */
-  refillpartfillpartialstrength: "RFPS",
+  RFPS: "RFPS",
 
   /**
    * refill partial strength
    */
-  refillpartialstrength: "RFS",
+  RFS: "RFS",
 
   /**
    * Trial Balance
    */
-  TrialBalance: "TB",
+  TB: "TB",
 
   /**
    * trial balance partial strength
    */
-  trialbalancepartialstrength: "TBS",
+  TBS: "TBS",
 
   /**
    * unit dose equivalent
    */
-  unitdoseequivalent: "UDE",
+  UDE: "UDE",
 } as const;
 
 /**

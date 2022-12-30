@@ -6,7 +6,7 @@ export const ActRelationshipInstantiatesMasterCode = {
   /**
    * instantiates (master)
    */
-  instantiatesmaster: "INST",
+  INST: "INST",
 } as const;
 
 /**

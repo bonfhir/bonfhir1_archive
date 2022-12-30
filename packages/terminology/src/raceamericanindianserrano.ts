@@ -6,12 +6,12 @@ export const RaceAmericanIndianSerranoCode = {
   /**
    * Serrano
    */
-  Serrano: "1573-5",
+  "1573-5": "1573-5",
 
   /**
    * San Manual
    */
-  SanManual: "1574-3",
+  "1574-3": "1574-3",
 } as const;
 
 /**

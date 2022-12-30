@@ -6,42 +6,42 @@ export const RaceAmericanIndianCahuillaCode = {
   /**
    * Cahuilla
    */
-  Cahuilla: "1044-7",
+  "1044-7": "1044-7",
 
   /**
    * Agua Caliente Cahuilla
    */
-  AguaCalienteCahuilla: "1045-4",
+  "1045-4": "1045-4",
 
   /**
    * Augustine
    */
-  Augustine: "1046-2",
+  "1046-2": "1046-2",
 
   /**
    * Cabazon
    */
-  Cabazon: "1047-0",
+  "1047-0": "1047-0",
 
   /**
    * Los Coyotes
    */
-  LosCoyotes: "1048-8",
+  "1048-8": "1048-8",
 
   /**
    * Morongo
    */
-  Morongo: "1049-6",
+  "1049-6": "1049-6",
 
   /**
    * Santa Rosa Cahuilla
    */
-  SantaRosaCahuilla: "1050-4",
+  "1050-4": "1050-4",
 
   /**
    * Torres-Martinez
    */
-  TorresMartinez: "1051-2",
+  "1051-2": "1051-2",
 } as const;
 
 /**

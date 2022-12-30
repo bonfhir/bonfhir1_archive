@@ -6,102 +6,102 @@ export const DosageProblemCode = {
   /**
    * Dosage problem
    */
-  Dosageproblem: "DOSE",
+  DOSE: "DOSE",
 
   /**
    * dosage-condition alert
    */
-  dosageconditionalert: "DOSECOND",
+  DOSECOND: "DOSECOND",
 
   /**
    * Dose-Duration Alert
    */
-  DoseDurationAlert: "DOSEDUR",
+  DOSEDUR: "DOSEDUR",
 
   /**
    * Dose-Duration High Alert
    */
-  DoseDurationHighAlert: "DOSEDURH",
+  DOSEDURH: "DOSEDURH",
 
   /**
    * Dose-Duration High for Indication Alert
    */
-  DoseDurationHighforIndicationAlert: "DOSEDURHIND",
+  DOSEDURHIND: "DOSEDURHIND",
 
   /**
    * Dose-Duration Low Alert
    */
-  DoseDurationLowAlert: "DOSEDURL",
+  DOSEDURL: "DOSEDURL",
 
   /**
    * Dose-Duration Low for Indication Alert
    */
-  DoseDurationLowforIndicationAlert: "DOSEDURLIND",
+  DOSEDURLIND: "DOSEDURLIND",
 
   /**
    * High Dose Alert
    */
-  HighDoseAlert: "DOSEH",
+  DOSEH: "DOSEH",
 
   /**
    * High Dose for Age Alert
    */
-  HighDoseforAgeAlert: "DOSEHINDA",
+  DOSEHINDA: "DOSEHINDA",
 
   /**
    * High Dose for Indication Alert
    */
-  HighDoseforIndicationAlert: "DOSEHIND",
+  DOSEHIND: "DOSEHIND",
 
   /**
    * High Dose for Height/Surface Area Alert
    */
-  HighDoseforHeightSurfaceAreaAlert: "DOSEHINDSA",
+  DOSEHINDSA: "DOSEHINDSA",
 
   /**
    * High Dose for Weight Alert
    */
-  HighDoseforWeightAlert: "DOSEHINDW",
+  DOSEHINDW: "DOSEHINDW",
 
   /**
    * Dose-Interval Alert
    */
-  DoseIntervalAlert: "DOSEIVL",
+  DOSEIVL: "DOSEIVL",
 
   /**
    * Dose-Interval for Indication Alert
    */
-  DoseIntervalforIndicationAlert: "DOSEIVLIND",
+  DOSEIVLIND: "DOSEIVLIND",
 
   /**
    * Low Dose Alert
    */
-  LowDoseAlert: "DOSEL",
+  DOSEL: "DOSEL",
 
   /**
    * Low Dose for Age Alert
    */
-  LowDoseforAgeAlert: "DOSELINDA",
+  DOSELINDA: "DOSELINDA",
 
   /**
    * Low Dose for Indication Alert
    */
-  LowDoseforIndicationAlert: "DOSELIND",
+  DOSELIND: "DOSELIND",
 
   /**
    * Low Dose for Height/Surface Area Alert
    */
-  LowDoseforHeightSurfaceAreaAlert: "DOSELINDSA",
+  DOSELINDSA: "DOSELINDSA",
 
   /**
    * Low Dose for Weight Alert
    */
-  LowDoseforWeightAlert: "DOSELINDW",
+  DOSELINDW: "DOSELINDW",
 
   /**
    * maximum dosage reached
    */
-  maximumdosagereached: "MDOSE",
+  MDOSE: "MDOSE",
 } as const;
 
 /**

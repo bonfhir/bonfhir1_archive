@@ -6,42 +6,42 @@ export const Hl7VSPatientLocationTypeCode = {
   /**
    * Nursing Unit
    */
-  NursingUnit: "N",
+  N: "N",
 
   /**
    * Room
    */
-  Room: "R",
+  R: "R",
 
   /**
    * Bed
    */
-  Bed: "B",
+  B: "B",
 
   /**
    * Exam Room
    */
-  ExamRoom: "E",
+  E: "E",
 
   /**
    * Operating Room
    */
-  OperatingRoom: "O",
+  O: "O",
 
   /**
    * Clinic
    */
-  Clinic: "C",
+  C: "C",
 
   /**
    * Department
    */
-  Department: "D",
+  D: "D",
 
   /**
    * Other Location
    */
-  OtherLocation: "L",
+  L: "L",
 } as const;
 
 /**

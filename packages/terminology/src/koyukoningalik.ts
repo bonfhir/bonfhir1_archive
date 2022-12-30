@@ -6,17 +6,17 @@ export const KoyukonIngalikCode = {
   /**
    * Holikachuk
    */
-  Holikachuk: "x-HOI",
+  "x-HOI": "x-HOI",
 
   /**
    * Degexit'an
    */
-  Degexitan: "x-ING",
+  "x-ING": "x-ING",
 
   /**
    * Koyukon
    */
-  Koyukon: "x-KOY",
+  "x-KOY": "x-KOY",
 } as const;
 
 /**

@@ -6,12 +6,12 @@ export const GingivalRouteCode = {
   /**
    * Topical application, gingival
    */
-  Topicalapplicationgingival: "GIN",
+  GIN: "GIN",
 
   /**
    * Injection, gingival
    */
-  Injectiongingival: "GINGINJ",
+  GINGINJ: "GINGINJ",
 } as const;
 
 /**

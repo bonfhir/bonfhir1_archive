@@ -6,87 +6,87 @@ export const ExampleServicePlaceCodesCode = {
   /**
    * Pharmacy
    */
-  Pharmacy: "01",
+  "01": "01",
 
   /**
    * School
    */
-  School: "03",
+  "03": "03",
 
   /**
    * Homeless Shelter
    */
-  HomelessShelter: "04",
+  "04": "04",
 
   /**
    * Indian Health Service Free-standing Facility
    */
-  IndianHealthServiceFreestandingFacility: "05",
+  "05": "05",
 
   /**
    * Indian Health Service Provider-based Facility
    */
-  IndianHealthServiceProviderbasedFacility: "06",
+  "06": "06",
 
   /**
    * Tribal 638 Free-Standing Facility
    */
-  Tribal638FreeStandingFacility: "07",
+  "07": "07",
 
   /**
    * Tribal 638 Provider-Based Facility
    */
-  Tribal638ProviderBasedFacility: "08",
+  "08": "08",
 
   /**
    * Prison/Correctional Facility
    */
-  PrisonCorrectionalFacility: "09",
+  "09": "09",
 
   /**
    * Office
    */
-  Office: "11",
+  "11": "11",
 
   /**
    * Home
    */
-  Home: "12",
+  "12": "12",
 
   /**
    * Assisted Living Fa
    */
-  AssistedLivingFa: "13",
+  "13": "13",
 
   /**
    * Group Home
    */
-  GroupHome: "14",
+  "14": "14",
 
   /**
    * Mobile Unit
    */
-  MobileUnit: "15",
+  "15": "15",
 
   /**
    * Off Campus-Outpatient Hospital
    */
-  OffCampusOutpatientHospital: "19",
+  "19": "19",
 
   /**
    * Urgent Care Facility
    */
-  UrgentCareFacility: "20",
+  "20": "20",
 
   /**
    * Inpatient Hospital
    */
-  InpatientHospital: "21",
+  "21": "21",
 
   /**
    * Ambulance—Land
    */
-  AmbulanceLand: "41",
+  "41": "41",
 } as const;
 
 /**

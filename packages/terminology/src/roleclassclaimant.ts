@@ -14,7 +14,7 @@ export const RoleClassClaimantCode = {
   /**
    * claimant
    */
-  claimant: "CLAIM",
+  CLAIM: "CLAIM",
 } as const;
 
 /**

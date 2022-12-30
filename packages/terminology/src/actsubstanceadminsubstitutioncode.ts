@@ -6,47 +6,47 @@ export const ActSubstanceAdminSubstitutionCodeCode = {
   /**
    * equivalent
    */
-  equivalent: "E",
+  E: "E",
 
   /**
    * equivalent composition
    */
-  equivalentcomposition: "EC",
+  EC: "EC",
 
   /**
    * brand composition
    */
-  brandcomposition: "BC",
+  BC: "BC",
 
   /**
    * generic composition
    */
-  genericcomposition: "G",
+  G: "G",
 
   /**
    * therapeutic alternative
    */
-  therapeuticalternative: "TE",
+  TE: "TE",
 
   /**
    * therapeutic brand
    */
-  therapeuticbrand: "TB",
+  TB: "TB",
 
   /**
    * therapeutic generic
    */
-  therapeuticgeneric: "TG",
+  TG: "TG",
 
   /**
    * formulary
    */
-  formulary: "F",
+  F: "F",
 
   /**
    * none
    */
-  none: "N",
+  N: "N",
 } as const;
 
 /**

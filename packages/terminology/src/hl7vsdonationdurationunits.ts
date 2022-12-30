@@ -6,12 +6,12 @@ export const Hl7VSDonationDurationUnitsCode = {
   /**
    * Minutes
    */
-  Minutes: "min",
+  min: "min",
 
   /**
    * Seconds
    */
-  Seconds: "s",
+  s: "s",
 } as const;
 
 /**

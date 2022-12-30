@@ -10,32 +10,32 @@ export const TargetAwarenessCode = {
   /**
    * denying
    */
-  denying: "D",
+  D: "D",
 
   /**
    * full awareness
    */
-  fullawareness: "F",
+  F: "F",
 
   /**
    * incapable
    */
-  incapable: "I",
+  I: "I",
 
   /**
    * marginal
    */
-  marginal: "M",
+  M: "M",
 
   /**
    * partial
    */
-  partial: "P",
+  P: "P",
 
   /**
    * uninformed
    */
-  uninformed: "U",
+  U: "U",
 } as const;
 
 /**

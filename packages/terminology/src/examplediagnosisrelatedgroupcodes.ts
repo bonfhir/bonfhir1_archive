@@ -6,22 +6,22 @@ export const ExampleDiagnosisRelatedGroupCodesCode = {
   /**
    * Normal Vaginal Delivery
    */
-  NormalVaginalDelivery: "100",
+  "100": "100",
 
   /**
    * Appendectomy - uncomplicated
    */
-  Appendectomyuncomplicated: "101",
+  "101": "101",
 
   /**
    * Tooth abscess
    */
-  Toothabscess: "300",
+  "300": "300",
 
   /**
    * Head trauma - concussion
    */
-  Headtraumaconcussion: "400",
+  "400": "400",
 } as const;
 
 /**

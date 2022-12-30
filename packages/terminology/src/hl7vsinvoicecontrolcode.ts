@@ -6,87 +6,87 @@ export const Hl7VSInvoiceControlCodeCode = {
   /**
    * Original Invoice
    */
-  OriginalInvoice: "OR",
+  OR: "OR",
 
   /**
    * Cancel Invoice
    */
-  CancelInvoice: "CN",
+  CN: "CN",
 
   /**
    * Cancel Invoice Product/Service Group
    */
-  CancelInvoiceProductServiceGroup: "CG",
+  CG: "CG",
 
   /**
    * Cancel Invoice Product/Service Line Item
    */
-  CancelInvoiceProductServiceLineItem: "CL",
+  CL: "CL",
 
   /**
    * Pre-Determination Invoice
    */
-  PreDeterminationInvoice: "PD",
+  PD: "PD",
 
   /**
    * Re-Assessment
    */
-  ReAssessment: "RA",
+  RA: "RA",
 
   /**
    * Original Authorization
    */
-  OriginalAuthorization: "OA",
+  OA: "OA",
 
   /**
    * Special Authorization
    */
-  SpecialAuthorization: "SA",
+  SA: "SA",
 
   /**
    * Combined Authorization and Adjudication request
    */
-  CombinedAuthorizationandAdjudicationrequest: "AI",
+  AI: "AI",
 
   /**
    * Pre-Authorization
    */
-  PreAuthorization: "PA",
+  PA: "PA",
 
   /**
    * Authorization request for inpatient admission
    */
-  Authorizationrequestforinpatientadmission: "AA",
+  AA: "AA",
 
   /**
    * Authorization request for inpatient stay extension
    */
-  Authorizationrequestforinpatientstayextension: "EA",
+  EA: "EA",
 
   /**
    * Referral Pre-Authorization
    */
-  ReferralPreAuthorization: "RC",
+  RC: "RC",
 
   /**
    * Cancel Authorization request
    */
-  CancelAuthorizationrequest: "CA",
+  CA: "CA",
 
   /**
    * Copy of Invoice
    */
-  CopyofInvoice: "CP",
+  CP: "CP",
 
   /**
    * Coverage Register Query
    */
-  CoverageRegisterQuery: "CQ",
+  CQ: "CQ",
 
   /**
    * Referral authorization
    */
-  Referralauthorization: "RU",
+  RU: "RU",
 } as const;
 
 /**

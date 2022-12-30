@@ -6,12 +6,12 @@ export const PedsICUPracticeSettingCode = {
   /**
    * Pediatric intensive care unit
    */
-  Pediatricintensivecareunit: "PEDICU",
+  PEDICU: "PEDICU",
 
   /**
    * Pediatric neonatal intensive care unit
    */
-  Pediatricneonatalintensivecareunit: "PEDNICU",
+  PEDNICU: "PEDNICU",
 } as const;
 
 /**

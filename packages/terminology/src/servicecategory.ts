@@ -6,192 +6,192 @@ export const ServiceCategoryCode = {
   /**
    * Adoption
    */
-  Adoption: "1",
+  "1": "1",
 
   /**
    * Aged Care
    */
-  AgedCare: "2",
+  "2": "2",
 
   /**
    * Allied Health
    */
-  AlliedHealth: "34",
+  "34": "34",
 
   /**
    * Alternative/Complementary Therapies
    */
-  AlternativeComplementaryTherapies: "3",
+  "3": "3",
 
   /**
    * Child Care /Kindergarten
    */
-  ChildCareKindergarten: "4",
+  "4": "4",
 
   /**
    * Child Development
    */
-  ChildDevelopment: "5",
+  "5": "5",
 
   /**
    * Child Protection & Family Services
    */
-  ChildProtectionFamilyServices: "6",
+  "6": "6",
 
   /**
    * Community Health Care
    */
-  CommunityHealthCare: "7",
+  "7": "7",
 
   /**
    * Counselling
    */
-  Counselling: "8",
+  "8": "8",
 
   /**
    * Crisis Line (GPAH use only)
    */
-  CrisisLineGPAHuseonly: "36",
+  "36": "36",
 
   /**
    * Death Services
    */
-  DeathServices: "9",
+  "9": "9",
 
   /**
    * Dental
    */
-  Dental: "10",
+  "10": "10",
 
   /**
    * Disability Support
    */
-  DisabilitySupport: "11",
+  "11": "11",
 
   /**
    * Drug/Alcohol
    */
-  DrugAlcohol: "12",
+  "12": "12",
 
   /**
    * Education & Learning
    */
-  EducationLearning: "13",
+  "13": "13",
 
   /**
    * Emergency Department
    */
-  EmergencyDepartment: "14",
+  "14": "14",
 
   /**
    * Employment
    */
-  Employment: "15",
+  "15": "15",
 
   /**
    * Financial & Material Aid
    */
-  FinancialMaterialAid: "16",
+  "16": "16",
 
   /**
    * General Practice
    */
-  GeneralPractice: "17",
+  "17": "17",
 
   /**
    * Hospital
    */
-  Hospital: "35",
+  "35": "35",
 
   /**
    * Housing/Homelessness
    */
-  HousingHomelessness: "18",
+  "18": "18",
 
   /**
    * Interpreting
    */
-  Interpreting: "19",
+  "19": "19",
 
   /**
    * Justice
    */
-  Justice: "20",
+  "20": "20",
 
   /**
    * Legal
    */
-  Legal: "21",
+  "21": "21",
 
   /**
    * Mental Health
    */
-  MentalHealth: "22",
+  "22": "22",
 
   /**
    * NDIA
    */
-  NDIA: "38",
+  "38": "38",
 
   /**
    * Physical Activity & Recreation
    */
-  PhysicalActivityRecreation: "23",
+  "23": "23",
 
   /**
    * Regulation
    */
-  Regulation: "24",
+  "24": "24",
 
   /**
    * Respite/Carer Support
    */
-  RespiteCarerSupport: "25",
+  "25": "25",
 
   /**
    * Specialist Clinical Pathology
    */
-  SpecialistClinicalPathology: "26",
+  "26": "26",
 
   /**
    * Specialist Medical
    */
-  SpecialistMedical: "27",
+  "27": "27",
 
   /**
    * Specialist Obstetrics & Gynecology
    */
-  SpecialistObstetricsGynecology: "28",
+  "28": "28",
 
   /**
    * Specialist Paediatric
    */
-  SpecialistPaediatric: "29",
+  "29": "29",
 
   /**
    * Specialist Radiology/Imaging
    */
-  SpecialistRadiologyImaging: "30",
+  "30": "30",
 
   /**
    * Specialist Surgical
    */
-  SpecialistSurgical: "31",
+  "31": "31",
 
   /**
    * Support Group/s
    */
-  SupportGroups: "32",
+  "32": "32",
 
   /**
    * Test Message (HSD admin)
    */
-  TestMessageHSDadmin: "37",
+  "37": "37",
 
   /**
    * Transport
    */
-  Transport: "33",
+  "33": "33",
 } as const;
 
 /**

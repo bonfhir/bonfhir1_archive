@@ -6,37 +6,37 @@ export const Hl7VSProcessingPriorityCode = {
   /**
    * Stat (do immediately)
    */
-  Statdoimmediately: "S",
+  S: "S",
 
   /**
    * As soon as possible (a priority lower than stat)
    */
-  Assoonaspossibleaprioritylowerthanstat: "A",
+  A: "A",
 
   /**
    * Routine
    */
-  Routine: "R",
+  R: "R",
 
   /**
    * Preoperative (to be done prior to surgery)
    */
-  Preoperativetobedonepriortosurgery: "P",
+  P: "P",
 
   /**
    * Timing critical (do as near as possible to requested time)
    */
-  Timingcriticaldoasnearaspossibletorequestedtime: "T",
+  T: "T",
 
   /**
    * Measure continuously (e.g., arterial line blood pressure)
    */
-  Measurecontinuouslyegarteriallinebloodpressure: "C",
+  C: "C",
 
   /**
    * Do at bedside or portable (may be used with other codes)
    */
-  Doatbedsideorportablemaybeusedwithothercodes: "B",
+  B: "B",
 } as const;
 
 /**

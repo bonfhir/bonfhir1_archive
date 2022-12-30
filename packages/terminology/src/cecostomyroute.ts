@@ -6,7 +6,7 @@ export const CecostomyRouteCode = {
   /**
    * Instillation, cecostomy
    */
-  Instillationcecostomy: "CECINSTL",
+  CECINSTL: "CECINSTL",
 } as const;
 
 /**

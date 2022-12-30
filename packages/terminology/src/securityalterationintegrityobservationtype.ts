@@ -6,7 +6,7 @@ export const SecurityAlterationIntegrityObservationTypeCode = {
   /**
    * security alteration integrity observation
    */
-  securityalterationintegrityobservation: "SECALTINTOBS",
+  SECALTINTOBS: "SECALTINTOBS",
 } as const;
 
 /**

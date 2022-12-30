@@ -6,7 +6,7 @@ export const ParticipationCoverageTargetCode = {
   /**
    * coverage target
    */
-  coveragetarget: "COV",
+  COV: "COV",
 } as const;
 
 /**

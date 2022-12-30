@@ -6,42 +6,42 @@ export const ResearchStudyPhaseCode = {
   /**
    * N/A
    */
-  NA: "n-a",
+  "n-a": "n-a",
 
   /**
    * Early Phase 1
    */
-  EarlyPhase1: "early-phase-1",
+  "early-phase-1": "early-phase-1",
 
   /**
    * Phase 1
    */
-  Phase1: "phase-1",
+  "phase-1": "phase-1",
 
   /**
    * Phase 1/Phase 2
    */
-  Phase1Phase2: "phase-1-phase-2",
+  "phase-1-phase-2": "phase-1-phase-2",
 
   /**
    * Phase 2
    */
-  Phase2: "phase-2",
+  "phase-2": "phase-2",
 
   /**
    * Phase 2/Phase 3
    */
-  Phase2Phase3: "phase-2-phase-3",
+  "phase-2-phase-3": "phase-2-phase-3",
 
   /**
    * Phase 3
    */
-  Phase3: "phase-3",
+  "phase-3": "phase-3",
 
   /**
    * Phase 4
    */
-  Phase4: "phase-4",
+  "phase-4": "phase-4",
 } as const;
 
 /**

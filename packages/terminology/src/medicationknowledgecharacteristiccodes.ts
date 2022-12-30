@@ -6,42 +6,42 @@ export const MedicationKnowledgeCharacteristicCodesCode = {
   /**
    * Imprint Code
    */
-  ImprintCode: "imprintcd",
+  imprintcd: "imprintcd",
 
   /**
    * Size
    */
-  Size: "size",
+  size: "size",
 
   /**
    * Shape
    */
-  Shape: "shape",
+  shape: "shape",
 
   /**
    * Color
    */
-  Color: "color",
+  color: "color",
 
   /**
    * Coating
    */
-  Coating: "coating",
+  coating: "coating",
 
   /**
    * Scoring
    */
-  Scoring: "scoring",
+  scoring: "scoring",
 
   /**
    * Logo
    */
-  Logo: "logo",
+  logo: "logo",
 
   /**
    * Image
    */
-  Image: "image",
+  image: "image",
 } as const;
 
 /**

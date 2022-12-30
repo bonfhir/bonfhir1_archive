@@ -6,7 +6,7 @@ export const RoleLinkHasIndirectAuthorityOverCode = {
   /**
    * has indirect authority over
    */
-  hasindirectauthorityover: "INDAUTH",
+  INDAUTH: "INDAUTH",
 } as const;
 
 /**

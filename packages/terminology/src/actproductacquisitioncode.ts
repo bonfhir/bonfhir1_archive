@@ -6,22 +6,22 @@ export const ActProductAcquisitionCodeCode = {
   /**
    * Loan
    */
-  Loan: "LOAN",
+  LOAN: "LOAN",
 
   /**
    * Rent
    */
-  Rent: "RENT",
+  RENT: "RENT",
 
   /**
    * Transfer
    */
-  Transfer: "TRANSFER",
+  TRANSFER: "TRANSFER",
 
   /**
    * Sale
    */
-  Sale: "SALE",
+  SALE: "SALE",
 } as const;
 
 /**

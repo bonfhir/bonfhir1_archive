@@ -6,7 +6,7 @@ export const ActRelationshipSplitInclusiveWaitCode = {
   /**
    * inclusive wait
    */
-  inclusivewait: "IW",
+  IW: "IW",
 } as const;
 
 /**

@@ -6,32 +6,32 @@ export const XDocumentSubstanceMoodCode = {
   /**
    * definition
    */
-  definition: "DEF",
+  DEF: "DEF",
 
   /**
    * event (occurrence)
    */
-  eventoccurrence: "EVN",
+  EVN: "EVN",
 
   /**
    * intent
    */
-  intent: "INT",
+  INT: "INT",
 
   /**
    * promise
    */
-  promise: "PRMS",
+  PRMS: "PRMS",
 
   /**
    * proposal
    */
-  proposal: "PRP",
+  PRP: "PRP",
 
   /**
    * request
    */
-  request: "RQO",
+  RQO: "RQO",
 } as const;
 
 /**

@@ -6,47 +6,47 @@ export const Hl7VSEventConsequenceCode = {
   /**
    * Death
    */
-  Death: "D",
+  D: "D",
 
   /**
    * Life threatening
    */
-  Lifethreatening: "L",
+  L: "L",
 
   /**
    * Caused hospitalized
    */
-  Causedhospitalized: "H",
+  H: "H",
 
   /**
    * Prolonged hospitalization
    */
-  Prolongedhospitalization: "P",
+  P: "P",
 
   /**
    * Congenital anomaly/birth defect
    */
-  Congenitalanomalybirthdefect: "C",
+  C: "C",
 
   /**
    * Incapacity which is significant, persistent or permanent
    */
-  Incapacitywhichissignificantpersistentorpermanent: "I",
+  I: "I",
 
   /**
    * Disability which is significant, persistent or permanent
    */
-  Disabilitywhichissignificantpersistentorpermanent: "J",
+  J: "J",
 
   /**
    * Required intervention to prevent permanent impairment/damage
    */
-  Requiredinterventiontopreventpermanentimpairmentdamage: "R",
+  R: "R",
 
   /**
    * Other
    */
-  Other: "O",
+  O: "O",
 } as const;
 
 /**

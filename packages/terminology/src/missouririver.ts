@@ -6,12 +6,12 @@ export const MissouriRiverCode = {
   /**
    * Crow
    */
-  Crow: "x-CRO",
+  "x-CRO": "x-CRO",
 
   /**
    * Hidatsa
    */
-  Hidatsa: "x-HID",
+  "x-HID": "x-HID",
 } as const;
 
 /**

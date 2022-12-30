@@ -6,67 +6,67 @@ export const CombinedPharmacyOrderSuspendReasonCodeCode = {
   /**
    * try another treatment first
    */
-  tryanothertreatmentfirst: "ALTCHOICE",
+  ALTCHOICE: "ALTCHOICE",
 
   /**
    * prescription requires clarification
    */
-  prescriptionrequiresclarification: "CLARIF",
+  CLARIF: "CLARIF",
 
   /**
    * drug level too high
    */
-  drugleveltoohigh: "DRUGHIGH",
+  DRUGHIGH: "DRUGHIGH",
 
   /**
    * admission to hospital
    */
-  admissiontohospital: "HOSPADM",
+  HOSPADM: "HOSPADM",
 
   /**
    * lab interference issues
    */
-  labinterferenceissues: "LABINT",
+  LABINT: "LABINT",
 
   /**
    * patient not-available
    */
-  patientnotavailable: "NON-AVAIL",
+  "NON-AVAIL": "NON-AVAIL",
 
   /**
    * parent is pregnant/breast feeding
    */
-  parentispregnantbreastfeeding: "PREG",
+  PREG: "PREG",
 
   /**
    * allergy
    */
-  allergy: "SALG",
+  SALG: "SALG",
 
   /**
    * drug interacts with another drug
    */
-  druginteractswithanotherdrug: "SDDI",
+  SDDI: "SDDI",
 
   /**
    * duplicate therapy
    */
-  duplicatetherapy: "SDUPTHER",
+  SDUPTHER: "SDUPTHER",
 
   /**
    * suspected intolerance
    */
-  suspectedintolerance: "SINTOL",
+  SINTOL: "SINTOL",
 
   /**
    * patient scheduled for surgery
    */
-  patientscheduledforsurgery: "SURG",
+  SURG: "SURG",
 
   /**
    * waiting for old drug to wash out
    */
-  waitingforolddrugtowashout: "WASHOUT",
+  WASHOUT: "WASHOUT",
 } as const;
 
 /**

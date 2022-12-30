@@ -6,17 +6,17 @@ export const Hl7VSInsuranceCompanyContactReasonCode = {
   /**
    * Medicare claim status
    */
-  Medicareclaimstatus: "01",
+  "01": "01",
 
   /**
    * Medicaid claim status
    */
-  Medicaidclaimstatus: "02",
+  "02": "02",
 
   /**
    * Name/address change
    */
-  Nameaddresschange: "03",
+  "03": "03",
 } as const;
 
 /**

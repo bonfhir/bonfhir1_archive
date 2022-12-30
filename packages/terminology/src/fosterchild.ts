@@ -6,17 +6,17 @@ export const FosterChildCode = {
   /**
    * foster child
    */
-  fosterchild: "CHLDFOST",
+  CHLDFOST: "CHLDFOST",
 
   /**
    * foster daughter
    */
-  fosterdaughter: "DAUFOST",
+  DAUFOST: "DAUFOST",
 
   /**
    * foster son
    */
-  fosterson: "SONFOST",
+  SONFOST: "SONFOST",
 } as const;
 
 /**

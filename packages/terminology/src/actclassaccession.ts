@@ -6,7 +6,7 @@ export const ActClassAccessionCode = {
   /**
    * accession
    */
-  accession: "ACSN",
+  ACSN: "ACSN",
 } as const;
 
 /**

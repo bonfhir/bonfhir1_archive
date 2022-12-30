@@ -6,12 +6,12 @@ export const UnitTypeCodesCode = {
   /**
    * Individual
    */
-  Individual: "individual",
+  individual: "individual",
 
   /**
    * Family
    */
-  Family: "family",
+  family: "family",
 } as const;
 
 /**

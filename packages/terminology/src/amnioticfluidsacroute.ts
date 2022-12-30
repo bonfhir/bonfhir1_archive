@@ -6,7 +6,7 @@ export const AmnioticFluidSacRouteCode = {
   /**
    * Injection, amniotic fluid
    */
-  Injectionamnioticfluid: "AMNINJ",
+  AMNINJ: "AMNINJ",
 } as const;
 
 /**

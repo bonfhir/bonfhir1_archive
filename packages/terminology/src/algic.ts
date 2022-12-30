@@ -6,142 +6,142 @@ export const AlgicCode = {
   /**
    * Algonquian
    */
-  Algonquian: "_Algonquian",
+  _Algonquian: "_Algonquian",
 
   /**
    * Arapahoan
    */
-  Arapahoan: "_Arapahoan",
+  _Arapahoan: "_Arapahoan",
 
   /**
    * ArapahoGrosVentre
    */
-  ArapahoGrosVentre: "_ArapahoGrosVentre",
+  _ArapahoGrosVentre: "_ArapahoGrosVentre",
 
   /**
    * Arapaho
    */
-  Arapaho: "x-ARP",
+  "x-ARP": "x-ARP",
 
   /**
    * Gros Ventre
    */
-  GrosVentre: "x-ATS",
+  "x-ATS": "x-ATS",
 
   /**
    * CreeMontagnais
    */
-  CreeMontagnais: "_CreeMontagnais",
+  _CreeMontagnais: "_CreeMontagnais",
 
   /**
    * Cree
    */
-  Cree: "_Cree",
+  _Cree: "_Cree",
 
   /**
    * Western Cree
    */
-  WesternCree: "x-CRP",
+  "x-CRP": "x-CRP",
 
   /**
    * EasternAlgonquin
    */
-  EasternAlgonquin: "_EasternAlgonquin",
+  _EasternAlgonquin: "_EasternAlgonquin",
 
   /**
    * Abenakian
    */
-  Abenakian: "_Abenakian",
+  _Abenakian: "_Abenakian",
 
   /**
    * Eastern Abenaki
    */
-  EasternAbenaki: "x-AAQ",
+  "x-AAQ": "x-AAQ",
 
   /**
    * Western Abenaki
    */
-  WesternAbenaki: "x-ABE",
+  "x-ABE": "x-ABE",
 
   /**
    * Maliseet-Passamaquoddy
    */
-  MaliseetPassamaquoddy: "x-MAC",
+  "x-MAC": "x-MAC",
 
   /**
    * Delawaran
    */
-  Delawaran: "_Delawaran",
+  _Delawaran: "_Delawaran",
 
   /**
    * Unami Delaware
    */
-  UnamiDelaware: "x-DEL",
+  "x-DEL": "x-DEL",
 
   /**
    * Micmac
    */
-  Micmac: "x-MIC",
+  "x-MIC": "x-MIC",
 
   /**
    * Ojibwayan
    */
-  Ojibwayan: "_Ojibwayan",
+  _Ojibwayan: "_Ojibwayan",
 
   /**
    * Southern Ojibwa
    */
-  SouthernOjibwa: "x-OJB",
+  "x-OJB": "x-OJB",
 
   /**
    * Potawatami
    */
-  Potawatami: "x-POT",
+  "x-POT": "x-POT",
 
   /**
    * SaukFoxKickapoo
    */
-  SaukFoxKickapoo: "_SaukFoxKickapoo",
+  _SaukFoxKickapoo: "_SaukFoxKickapoo",
 
   /**
    * Kickapoo
    */
-  Kickapoo: "x-KIC",
+  "x-KIC": "x-KIC",
 
   /**
    * Mesquakie
    */
-  Mesquakie: "x-SAC",
+  "x-SAC": "x-SAC",
 
   /**
    * Shawnee
    */
-  Shawnee: "x-SJW",
+  "x-SJW": "x-SJW",
 
   /**
    * Blackfoot
    */
-  Blackfoot: "x-BLC",
+  "x-BLC": "x-BLC",
 
   /**
    * Cheyenne
    */
-  Cheyenne: "x-CHY",
+  "x-CHY": "x-CHY",
 
   /**
    * Menominee
    */
-  Menominee: "x-MEZ",
+  "x-MEZ": "x-MEZ",
 
   /**
    * Ritwan
    */
-  Ritwan: "_Ritwan",
+  _Ritwan: "_Ritwan",
 
   /**
    * Yurok
    */
-  Yurok: "x-YUR",
+  "x-YUR": "x-YUR",
 } as const;
 
 /**

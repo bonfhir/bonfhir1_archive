@@ -6,7 +6,7 @@ export const RoleClassStabilizerCode = {
   /**
    * stabilizer
    */
-  stabilizer: "STBL",
+  STBL: "STBL",
 } as const;
 
 /**

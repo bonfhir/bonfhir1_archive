@@ -6,17 +6,17 @@ export const Hl7VSEventSeriousnessCode = {
   /**
    * Yes
    */
-  Yes: "Y",
+  Y: "Y",
 
   /**
    * Significant
    */
-  Significant: "S",
+  S: "S",
 
   /**
    * No
    */
-  No: "N",
+  N: "N",
 } as const;
 
 /**

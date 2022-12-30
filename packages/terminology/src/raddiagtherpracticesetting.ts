@@ -6,17 +6,17 @@ export const RadDiagTherPracticeSettingCode = {
   /**
    * Radiology diagnostics or therapeutics unit
    */
-  Radiologydiagnosticsortherapeuticsunit: "RADDX",
+  RADDX: "RADDX",
 
   /**
    * Radiation oncology unit
    */
-  Radiationoncologyunit: "RADO",
+  RADO: "RADO",
 
   /**
    * Neuroradiology unit
    */
-  Neuroradiologyunit: "RNEU",
+  RNEU: "RNEU",
 } as const;
 
 /**

@@ -6,27 +6,27 @@ export const DoseDurationDetectedIssueCodeCode = {
   /**
    * Dose-Duration Alert
    */
-  DoseDurationAlert: "DOSEDUR",
+  DOSEDUR: "DOSEDUR",
 
   /**
    * Dose-Duration High Alert
    */
-  DoseDurationHighAlert: "DOSEDURH",
+  DOSEDURH: "DOSEDURH",
 
   /**
    * Dose-Duration High for Indication Alert
    */
-  DoseDurationHighforIndicationAlert: "DOSEDURHIND",
+  DOSEDURHIND: "DOSEDURHIND",
 
   /**
    * Dose-Duration Low Alert
    */
-  DoseDurationLowAlert: "DOSEDURL",
+  DOSEDURL: "DOSEDURL",
 
   /**
    * Dose-Duration Low for Indication Alert
    */
-  DoseDurationLowforIndicationAlert: "DOSEDURLIND",
+  DOSEDURLIND: "DOSEDURLIND",
 } as const;
 
 /**

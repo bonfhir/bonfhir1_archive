@@ -6,85 +6,77 @@ export const Hl7VSActpriorityCode = {
   /**
    * ASAP - As soon as possible, next highest priority after stat
    */
-  ASAPAssoonaspossiblenexthighestpriorityafterstat: "A",
+  A: "A",
 
   /**
    * Callback results - filler should contact the placer as soon as results are available, even for preliminary results
    */
-  Callbackresultsfillershouldcontacttheplacerassoonasresultsareavailableevenforpreliminaryresults:
-    "CR",
+  CR: "CR",
 
   /**
    * Callback for scheduling - Filler should contact the placer (or target) to schedule the service.
    */
-  CallbackforschedulingFillershouldcontacttheplacerortargettoscheduletheservice:
-    "CS",
+  CS: "CS",
 
   /**
    * Callback placer for scheduling - filler should contact the placer to schedule the service
    */
-  Callbackplacerforschedulingfillershouldcontacttheplacertoscheduletheservice:
-    "CSP",
+  CSP: "CSP",
 
   /**
    * Contact recipient for scheduling - Filler should contact the service recipient (target) to schedule the service
    */
-  ContactrecipientforschedulingFillershouldcontacttheservicerecipienttargettoscheduletheservice:
-    "CSR",
+  CSR: "CSR",
 
   /**
    * Elective - Beneficial to the patient but not essential for survival.
    */
-  ElectiveBeneficialtothepatientbutnotessentialforsurvival: "EL",
+  EL: "EL",
 
   /**
    * Emergency - An unforeseen combination of circumstances or the resulting state that calls for immediate action
    */
-  EmergencyAnunforeseencombinationofcircumstancesortheresultingstatethatcallsforimmediateaction:
-    "EM",
+  EM: "EM",
 
   /**
    * Preop - Used to indicate that a service is to be performed prior to a scheduled surgery.  When ordering a service and using the pre-op priority, a check is done to see the amount of time that must be allowed for performance of the service.  When the order
    */
-  PreopUsedtoindicatethataserviceistobeperformedpriortoascheduledsurgeryWhenorderingaserviceandusingthepreoppriorityacheckisdonetoseetheamountoftimethatmustbeallowedforperformanceoftheserviceWhentheorder:
-    "P",
+  P: "P",
 
   /**
    * As needed - An "as needed" order should be accompanied by a description of what constitutes a need.  This description is represented by an observation service predicate as a precondition.
    */
-  AsneededAnasneededordershouldbeaccompaniedbyadescriptionofwhatconstitutesaneedThisdescriptionisrepresentedbyanobservationservicepredicateasaprecondition:
-    "PRN",
+  PRN: "PRN",
 
   /**
    * Routine - Routine service, do at usual work hours
    */
-  RoutineRoutineservicedoatusualworkhours: "R",
+  R: "R",
 
   /**
    * Rush reporting - A report should be prepared and sent as quickly as possible
    */
-  RushreportingAreportshouldbepreparedandsentasquicklyaspossible: "RR",
+  RR: "RR",
 
   /**
    * Stat - With highest priority (e.g. emergency).
    */
-  StatWithhighestpriorityegemergency: "S",
+  S: "S",
 
   /**
    * Timing critical - It is critical to come as close as possible to the requested time (e.g. for a through antimicrobial level).
    */
-  TimingcriticalItiscriticaltocomeascloseaspossibletotherequestedtimeegforathroughantimicrobiallevel:
-    "T",
+  T: "T",
 
   /**
    * Use as directed - Drug is to be used as directed by the prescriber.
    */
-  UseasdirectedDrugistobeusedasdirectedbytheprescriber: "UD",
+  UD: "UD",
 
   /**
    * Urgent - Calls for prompt action
    */
-  UrgentCallsforpromptaction: "UR",
+  UR: "UR",
 } as const;
 
 /**

@@ -6,12 +6,12 @@ export const XActClassCareProvisionObservationCode = {
   /**
    * observation
    */
-  observation: "OBS",
+  OBS: "OBS",
 
   /**
    * care provision
    */
-  careprovision: "PCPR",
+  PCPR: "PCPR",
 } as const;
 
 /**

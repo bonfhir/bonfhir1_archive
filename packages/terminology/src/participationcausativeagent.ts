@@ -8,7 +8,7 @@ export const ParticipationCausativeAgentCode = {
   /**
    * causative agent
    */
-  causativeagent: "CAGNT",
+  CAGNT: "CAGNT",
 } as const;
 
 /**

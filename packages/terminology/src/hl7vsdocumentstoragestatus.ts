@@ -6,22 +6,22 @@ export const Hl7VSDocumentStorageStatusCode = {
   /**
    * Active
    */
-  Active: "AC",
+  AC: "AC",
 
   /**
    * Active and archived
    */
-  Activeandarchived: "AA",
+  AA: "AA",
 
   /**
    * Archived (not active)
    */
-  Archivednotactive: "AR",
+  AR: "AR",
 
   /**
    * Purged
    */
-  Purged: "PU",
+  PU: "PU",
 } as const;
 
 /**

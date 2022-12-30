@@ -6,1148 +6,1147 @@ export const NativeEntityAlaskaCode = {
   /**
    * Native Village of Afognak
    */
-  NativeVillageofAfognak: "338",
+  "338": "338",
 
   /**
    * Agdaagux Tribe of King Cove
    */
-  AgdaaguxTribeofKingCove: "339",
+  "339": "339",
 
   /**
    * Native Village of Akhiok
    */
-  NativeVillageofAkhiok: "340",
+  "340": "340",
 
   /**
    * Akiachak Native Community
    */
-  AkiachakNativeCommunity: "341",
+  "341": "341",
 
   /**
    * Akiak Native Community
    */
-  AkiakNativeCommunity: "342",
+  "342": "342",
 
   /**
    * Native Village of Akutan
    */
-  NativeVillageofAkutan: "343",
+  "343": "343",
 
   /**
    * Village of Alakanuk
    */
-  VillageofAlakanuk: "344",
+  "344": "344",
 
   /**
    * Alatna Village
    */
-  AlatnaVillage: "345",
+  "345": "345",
 
   /**
    * Native Village of Aleknagik
    */
-  NativeVillageofAleknagik: "346",
+  "346": "346",
 
   /**
    * Algaaciq Native Village (St. Mary's)
    */
-  AlgaaciqNativeVillageStMarys: "347",
+  "347": "347",
 
   /**
    * Allakaket Village
    */
-  AllakaketVillage: "348",
+  "348": "348",
 
   /**
    * Native Village of Ambler
    */
-  NativeVillageofAmbler: "349",
+  "349": "349",
 
   /**
    * Village of Anaktuvuk Pass
    */
-  VillageofAnaktuvukPass: "350",
+  "350": "350",
 
   /**
    * Yupiit of Andreafski
    */
-  YupiitofAndreafski: "351",
+  "351": "351",
 
   /**
    * Angoon Community Association
    */
-  AngoonCommunityAssociation: "352",
+  "352": "352",
 
   /**
    * Village of Aniak
    */
-  VillageofAniak: "353",
+  "353": "353",
 
   /**
    * Anvik Village
    */
-  AnvikVillage: "354",
+  "354": "354",
 
   /**
    * Arctic Village
    */
-  ArcticVillage: "355",
+  "355": "355",
 
   /**
    * Asa'carsarmiut Tribe
    */
-  AsacarsarmiutTribe: "356",
+  "356": "356",
 
   /**
    * Native Village of Atka
    */
-  NativeVillageofAtka: "357",
+  "357": "357",
 
   /**
    * Village of Atmautluak
    */
-  VillageofAtmautluak: "358",
+  "358": "358",
 
   /**
    * Native Village of Atqasuk
    */
-  NativeVillageofAtqasuk: "359",
+  "359": "359",
 
   /**
    * Native Village of Barrow Inupiat Traditional Government
    */
-  NativeVillageofBarrowInupiatTraditionalGovernment: "360",
+  "360": "360",
 
   /**
    * Beaver Village
    */
-  BeaverVillage: "361",
+  "361": "361",
 
   /**
    * Native Village of Belkofski
    */
-  NativeVillageofBelkofski: "362",
+  "362": "362",
 
   /**
    * Village of Bill Moore's Slough
    */
-  VillageofBillMooresSlough: "363",
+  "363": "363",
 
   /**
    * Birch Creek Tribe
    */
-  BirchCreekTribe: "364",
+  "364": "364",
 
   /**
    * Native Village of Brevig Mission
    */
-  NativeVillageofBrevigMission: "365",
+  "365": "365",
 
   /**
    * Native Village of Buckland
    */
-  NativeVillageofBuckland: "366",
+  "366": "366",
 
   /**
    * Native Village of Cantwell
    */
-  NativeVillageofCantwell: "367",
+  "367": "367",
 
   /**
    * Native Village of Chenega (aka Chanega)
    */
-  NativeVillageofChenegaakaChanega: "368",
+  "368": "368",
 
   /**
    * Chalkyitsik Village
    */
-  ChalkyitsikVillage: "369",
+  "369": "369",
 
   /**
    * Village of Chefornak
    */
-  VillageofChefornak: "370",
+  "370": "370",
 
   /**
    * Chevak Native Village
    */
-  ChevakNativeVillage: "371",
+  "371": "371",
 
   /**
    * Chickaloon Native Village
    */
-  ChickaloonNativeVillage: "372",
+  "372": "372",
 
   /**
    * Chignik Bay Tribal Council
    */
-  ChignikBayTribalCouncil: "373",
+  "373": "373",
 
   /**
    * Native Village of Chignik Lagoon
    */
-  NativeVillageofChignikLagoon: "374",
+  "374": "374",
 
   /**
    * Chignik Lake Village
    */
-  ChignikLakeVillage: "375",
+  "375": "375",
 
   /**
    * Chilkat Indian Village (Klukwan)
    */
-  ChilkatIndianVillageKlukwan: "376",
+  "376": "376",
 
   /**
    * Chilkoot Indian Association (Haines)
    */
-  ChilkootIndianAssociationHaines: "377",
+  "377": "377",
 
   /**
    * Chinik Eskimo Community (Golovin)
    */
-  ChinikEskimoCommunityGolovin: "378",
+  "378": "378",
 
   /**
    * Cheesh-Na Tribe
    */
-  CheeshNaTribe: "379",
+  "379": "379",
 
   /**
    * Native Village of Chitina
    */
-  NativeVillageofChitina: "380",
+  "380": "380",
 
   /**
    * Native Village of Chuathbaluk (Russian Mission, Kuskokwim)
    */
-  NativeVillageofChuathbalukRussianMissionKuskokwim: "381",
+  "381": "381",
 
   /**
    * Chuloonawick Native Village
    */
-  ChuloonawickNativeVillage: "382",
+  "382": "382",
 
   /**
    * Circle Native Community
    */
-  CircleNativeCommunity: "383",
+  "383": "383",
 
   /**
    * Village of Clarks Point
    */
-  VillageofClarksPoint: "384",
+  "384": "384",
 
   /**
    * Native Village of Council
    */
-  NativeVillageofCouncil: "385",
+  "385": "385",
 
   /**
    * Craig Tribal Association
    */
-  CraigTribalAssociation: "386",
+  "386": "386",
 
   /**
    * Village of Crooked Creek
    */
-  VillageofCrookedCreek: "387",
+  "387": "387",
 
   /**
    * Curyung Tribal Council
    */
-  CuryungTribalCouncil: "388",
+  "388": "388",
 
   /**
    * Native Village of Deering
    */
-  NativeVillageofDeering: "389",
+  "389": "389",
 
   /**
    * Native Village of Diomede (aka Inalik)
    */
-  NativeVillageofDiomedeakaInalik: "390",
+  "390": "390",
 
   /**
    * Village of Dot Lake
    */
-  VillageofDotLake: "391",
+  "391": "391",
 
   /**
    * Douglas Indian Association
    */
-  DouglasIndianAssociation: "392",
+  "392": "392",
 
   /**
    * Native Village of Eagle
    */
-  NativeVillageofEagle: "393",
+  "393": "393",
 
   /**
    * Native Village of Eek
    */
-  NativeVillageofEek: "394",
+  "394": "394",
 
   /**
    * Egegik Village
    */
-  EgegikVillage: "395",
+  "395": "395",
 
   /**
    * Eklutna Native Village
    */
-  EklutnaNativeVillage: "396",
+  "396": "396",
 
   /**
    * Native Village of Ekuk
    */
-  NativeVillageofEkuk: "397",
+  "397": "397",
 
   /**
    * Native Village of Ekwok
    */
-  NativeVillageofEkwok: "398",
+  "398": "398",
 
   /**
    * Native Village of Elim
    */
-  NativeVillageofElim: "399",
+  "399": "399",
 
   /**
    * Emmonak Village
    */
-  EmmonakVillage: "400",
+  "400": "400",
 
   /**
    * Evansville Village (aka Bettles Field)
    */
-  EvansvilleVillageakaBettlesField: "401",
+  "401": "401",
 
   /**
    * Native Village of Eyak (Cordova)
    */
-  NativeVillageofEyakCordova: "402",
+  "402": "402",
 
   /**
    * Native Village of False Pass
    */
-  NativeVillageofFalsePass: "403",
+  "403": "403",
 
   /**
    * Native Village of Fort Yukon
    */
-  NativeVillageofFortYukon: "404",
+  "404": "404",
 
   /**
    * Native Village of Gakona
    */
-  NativeVillageofGakona: "405",
+  "405": "405",
 
   /**
    * Galena Village (aka Louden Village)
    */
-  GalenaVillageakaLoudenVillage: "406",
+  "406": "406",
 
   /**
    * Native Village of Gambell
    */
-  NativeVillageofGambell: "407",
+  "407": "407",
 
   /**
    * Native Village of Georgetown
    */
-  NativeVillageofGeorgetown: "408",
+  "408": "408",
 
   /**
    * Native Village of Goodnews Bay
    */
-  NativeVillageofGoodnewsBay: "409",
+  "409": "409",
 
   /**
    * Organized Village of Grayling (aka Holikachuk)
    */
-  OrganizedVillageofGraylingakaHolikachuk: "410",
+  "410": "410",
 
   /**
    * Gulkana Village Council
    */
-  GulkanaVillageCouncil: "411",
+  "411": "411",
 
   /**
    * Native Village of Hamilton
    */
-  NativeVillageofHamilton: "412",
+  "412": "412",
 
   /**
    * Healy Lake Village
    */
-  HealyLakeVillage: "413",
+  "413": "413",
 
   /**
    * Holy Cross Tribe
    */
-  HolyCrossTribe: "414",
+  "414": "414",
 
   /**
    * Hoonah Indian Association
    */
-  HoonahIndianAssociation: "415",
+  "415": "415",
 
   /**
    * Native Village of Hooper Bay
    */
-  NativeVillageofHooperBay: "416",
+  "416": "416",
 
   /**
    * Hughes Village
    */
-  HughesVillage: "417",
+  "417": "417",
 
   /**
    * Huslia Village
    */
-  HusliaVillage: "418",
+  "418": "418",
 
   /**
    * Hydaburg Cooperative Association
    */
-  HydaburgCooperativeAssociation: "419",
+  "419": "419",
 
   /**
    * Igiugig Village
    */
-  IgiugigVillage: "420",
+  "420": "420",
 
   /**
    * Village of Iliamna
    */
-  VillageofIliamna: "421",
+  "421": "421",
 
   /**
    * Inupiat Community of the Arctic Slope
    */
-  InupiatCommunityoftheArcticSlope: "422",
+  "422": "422",
 
   /**
    * Iqugmiut Traditional Council
    */
-  IqugmiutTraditionalCouncil: "423",
+  "423": "423",
 
   /**
    * Ivanof Bay Tribe
    */
-  IvanofBayTribe: "424",
+  "424": "424",
 
   /**
    * Kaguyak Village
    */
-  KaguyakVillage: "425",
+  "425": "425",
 
   /**
    * Organized Village of Kake
    */
-  OrganizedVillageofKake: "426",
+  "426": "426",
 
   /**
    * Kaktovik Village (aka Barter Island)
    */
-  KaktovikVillageakaBarterIsland: "427",
+  "427": "427",
 
   /**
    * Village of Kalskag
    */
-  VillageofKalskag: "428",
+  "428": "428",
 
   /**
    * Village of Kaltag
    */
-  VillageofKaltag: "429",
+  "429": "429",
 
   /**
    * Native Village of Kanatak
    */
-  NativeVillageofKanatak: "430",
+  "430": "430",
 
   /**
    * Native Village of Karluk
    */
-  NativeVillageofKarluk: "431",
+  "431": "431",
 
   /**
    * Organized Village of Kasaan
    */
-  OrganizedVillageofKasaan: "432",
+  "432": "432",
 
   /**
    * Kasigluk Traditional Elders Council
    */
-  KasiglukTraditionalEldersCouncil: "433",
+  "433": "433",
 
   /**
    * Kenaitze Indian Tribe
    */
-  KenaitzeIndianTribe: "434",
+  "434": "434",
 
   /**
    * Ketchikan Indian Community
    */
-  KetchikanIndianCommunity: "435",
+  "435": "435",
 
   /**
    * Native Village of Kiana
    */
-  NativeVillageofKiana: "436",
+  "436": "436",
 
   /**
    * King Island Native Community
    */
-  KingIslandNativeCommunity: "437",
+  "437": "437",
 
   /**
    * King Salmon Tribe
    */
-  KingSalmonTribe: "438",
+  "438": "438",
 
   /**
    * Native Village of Kipnuk
    */
-  NativeVillageofKipnuk: "439",
+  "439": "439",
 
   /**
    * Native Village of Kivalina
    */
-  NativeVillageofKivalina: "440",
+  "440": "440",
 
   /**
    * Klawock Cooperative Association
    */
-  KlawockCooperativeAssociation: "441",
+  "441": "441",
 
   /**
    * Native Village of Kluti Kaah (aka Copper Center)
    */
-  NativeVillageofKlutiKaahakaCopperCenter: "442",
+  "442": "442",
 
   /**
    * Knik Tribe
    */
-  KnikTribe: "443",
+  "443": "443",
 
   /**
    * Native Village of Kobuk
    */
-  NativeVillageofKobuk: "444",
+  "444": "444",
 
   /**
    * Kokhanok Village
    */
-  KokhanokVillage: "445",
+  "445": "445",
 
   /**
    * Native Village of Kongiganak
    */
-  NativeVillageofKongiganak: "446",
+  "446": "446",
 
   /**
    * Village of Kotlik
    */
-  VillageofKotlik: "447",
+  "447": "447",
 
   /**
    * Native Village of Kotzebue
    */
-  NativeVillageofKotzebue: "448",
+  "448": "448",
 
   /**
    * Native Village of Koyuk
    */
-  NativeVillageofKoyuk: "449",
+  "449": "449",
 
   /**
    * Koyukuk Native Village
    */
-  KoyukukNativeVillage: "450",
+  "450": "450",
 
   /**
    * Organized Village of Kwethluk
    */
-  OrganizedVillageofKwethluk: "451",
+  "451": "451",
 
   /**
    * Native Village of Kwigillingok
    */
-  NativeVillageofKwigillingok: "452",
+  "452": "452",
 
   /**
    * Native Village of Kwinhagak (aka Quinhagak)
    */
-  NativeVillageofKwinhagakakaQuinhagak: "453",
+  "453": "453",
 
   /**
    * Native Village of Larsen Bay
    */
-  NativeVillageofLarsenBay: "454",
+  "454": "454",
 
   /**
    * Levelock Village
    */
-  LevelockVillage: "455",
+  "455": "455",
 
   /**
    * Tangirnaq Native Village
    */
-  TangirnaqNativeVillage: "456",
+  "456": "456",
 
   /**
    * Lime Village
    */
-  LimeVillage: "457",
+  "457": "457",
 
   /**
    * Village of Lower Kalskag
    */
-  VillageofLowerKalskag: "458",
+  "458": "458",
 
   /**
    * Manley Hot Springs Village
    */
-  ManleyHotSpringsVillage: "459",
+  "459": "459",
 
   /**
    * Manokotak Village
    */
-  ManokotakVillage: "460",
+  "460": "460",
 
   /**
    * Native Village of Marshall (aka Fortuna Ledge)
    */
-  NativeVillageofMarshallakaFortunaLedge: "461",
+  "461": "461",
 
   /**
    * Native Village of Mary's Igloo
    */
-  NativeVillageofMarysIgloo: "462",
+  "462": "462",
 
   /**
    * McGrath Native Village
    */
-  McGrathNativeVillage: "463",
+  "463": "463",
 
   /**
    * Native Village of Mekoryuk
    */
-  NativeVillageofMekoryuk: "464",
+  "464": "464",
 
   /**
    * Mentasta Traditional Council
    */
-  MentastaTraditionalCouncil: "465",
+  "465": "465",
 
   /**
    * Metlakatla Indian Community, Annette Island Reserve
    */
-  MetlakatlaIndianCommunityAnnetteIslandReserve: "466",
+  "466": "466",
 
   /**
    * Native Village of Minto
    */
-  NativeVillageofMinto: "467",
+  "467": "467",
 
   /**
    * Naknek Native Village
    */
-  NaknekNativeVillage: "468",
+  "468": "468",
 
   /**
    * Native Village of Nanwalek (aka English Bay)
    */
-  NativeVillageofNanwalekakaEnglishBay: "469",
+  "469": "469",
 
   /**
    * Native Village of Napaimute
    */
-  NativeVillageofNapaimute: "470",
+  "470": "470",
 
   /**
    * Native Village of Napakiak
    */
-  NativeVillageofNapakiak: "471",
+  "471": "471",
 
   /**
    * Native Village of Napaskiak
    */
-  NativeVillageofNapaskiak: "472",
+  "472": "472",
 
   /**
    * Native Village of Nelson Lagoon
    */
-  NativeVillageofNelsonLagoon: "473",
+  "473": "473",
 
   /**
    * Nenana Native Association
    */
-  NenanaNativeAssociation: "474",
+  "474": "474",
 
   /**
    * New Koliganek Village Council
    */
-  NewKoliganekVillageCouncil: "475",
+  "475": "475",
 
   /**
    * New Stuyahok Village
    */
-  NewStuyahokVillage: "476",
+  "476": "476",
 
   /**
    * Newhalen Village
    */
-  NewhalenVillage: "477",
+  "477": "477",
 
   /**
    * Newtok Village
    */
-  NewtokVillage: "478",
+  "478": "478",
 
   /**
    * Native Village of Nightmute
    */
-  NativeVillageofNightmute: "479",
+  "479": "479",
 
   /**
    * Nikolai Village
    */
-  NikolaiVillage: "480",
+  "480": "480",
 
   /**
    * Native Village of Nikolski
    */
-  NativeVillageofNikolski: "481",
+  "481": "481",
 
   /**
    * Ninilchik Village
    */
-  NinilchikVillage: "482",
+  "482": "482",
 
   /**
    * Native Village of Noatak
    */
-  NativeVillageofNoatak: "483",
+  "483": "483",
 
   /**
    * Nome Eskimo Community
    */
-  NomeEskimoCommunity: "484",
+  "484": "484",
 
   /**
    * Nondalton Village
    */
-  NondaltonVillage: "485",
+  "485": "485",
 
   /**
    * Noorvik Native Community
    */
-  NoorvikNativeCommunity: "486",
+  "486": "486",
 
   /**
    * Northway Village
    */
-  NorthwayVillage: "487",
+  "487": "487",
 
   /**
    * Native Village of Nuiqsut (aka Nooiksut)
    */
-  NativeVillageofNuiqsutakaNooiksut: "488",
+  "488": "488",
 
   /**
    * Nulato Village
    */
-  NulatoVillage: "489",
+  "489": "489",
 
   /**
    * Nunakauyarmiut Tribe
    */
-  NunakauyarmiutTribe: "490",
+  "490": "490",
 
   /**
    * Native Village of Nunapitchuk
    */
-  NativeVillageofNunapitchuk: "491",
+  "491": "491",
 
   /**
    * Village of Ohogamiut
    */
-  VillageofOhogamiut: "492",
+  "492": "492",
 
   /**
    * Alutiiq Tribe of Old Harbor
    */
-  AlutiiqTribeofOldHarbor: "493",
+  "493": "493",
 
   /**
    * Orutsararmiut Traditional Native Council
    */
-  OrutsararmiutTraditionalNativeCouncil: "494",
+  "494": "494",
 
   /**
    * Oscarville Traditional Village
    */
-  OscarvilleTraditionalVillage: "495",
+  "495": "495",
 
   /**
    * Native Village of Ouzinkie
    */
-  NativeVillageofOuzinkie: "496",
+  "496": "496",
 
   /**
    * Native Village of Paimiut
    */
-  NativeVillageofPaimiut: "497",
+  "497": "497",
 
   /**
    * Pauloff Harbor Village
    */
-  PauloffHarborVillage: "498",
+  "498": "498",
 
   /**
    * Pedro Bay Village
    */
-  PedroBayVillage: "499",
+  "499": "499",
 
   /**
    * Native Village of Perryville
    */
-  NativeVillageofPerryville: "500",
+  "500": "500",
 
   /**
    * Petersburg Indian Association
    */
-  PetersburgIndianAssociation: "501",
+  "501": "501",
 
   /**
    * Native Village of Pilot Point
    */
-  NativeVillageofPilotPoint: "502",
+  "502": "502",
 
   /**
    * Pilot Station Traditional Village
    */
-  PilotStationTraditionalVillage: "503",
+  "503": "503",
 
   /**
    * Pitka's Point Traditional Council
    */
-  PitkasPointTraditionalCouncil: "504",
+  "504": "504",
 
   /**
    * Platinum Traditional Village
    */
-  PlatinumTraditionalVillage: "505",
+  "505": "505",
 
   /**
    * Native Village of Point Hope
    */
-  NativeVillageofPointHope: "506",
+  "506": "506",
 
   /**
    * Native Village of Point Lay
    */
-  NativeVillageofPointLay: "507",
+  "507": "507",
 
   /**
    * Native Village of Port Graham
    */
-  NativeVillageofPortGraham: "508",
+  "508": "508",
 
   /**
    * Native Village of Port Heiden
    */
-  NativeVillageofPortHeiden: "509",
+  "509": "509",
 
   /**
    * Native Village of Port Lions
    */
-  NativeVillageofPortLions: "510",
+  "510": "510",
 
   /**
    * Portage Creek Village (aka Ohgsenakale)
    */
-  PortageCreekVillageakaOhgsenakale: "511",
+  "511": "511",
 
   /**
    * Pribilof Islands Aleut Communities of St. Paul & St. George Islands (Saint George Island and Saint Paul Island)
    */
-  PribilofIslandsAleutCommunitiesofStPaulStGeorgeIslandsSaintGeorgeIslandandSaintPaulIsland:
-    "512",
+  "512": "512",
 
   /**
    * Qagan Tayagungin Tribe of Sand Point
    */
-  QaganTayagunginTribeofSandPoint: "513",
+  "513": "513",
 
   /**
    * Qawalangin Tribe of Unalaska
    */
-  QawalanginTribeofUnalaska: "514",
+  "514": "514",
 
   /**
    * Rampart Village
    */
-  RampartVillage: "515",
+  "515": "515",
 
   /**
    * Village of Red Devil
    */
-  VillageofRedDevil: "516",
+  "516": "516",
 
   /**
    * Native Village of Ruby
    */
-  NativeVillageofRuby: "517",
+  "517": "517",
 
   /**
    * Saint George Island
    */
-  SaintGeorgeIsland: "518",
+  "518": "518",
 
   /**
    * Native Village of Saint Michael
    */
-  NativeVillageofSaintMichael: "519",
+  "519": "519",
 
   /**
    * Saint Paul Island
    */
-  SaintPaulIsland: "520",
+  "520": "520",
 
   /**
    * Salamatof Tribe
    */
-  SalamatofTribe: "521",
+  "521": "521",
 
   /**
    * Native Village of Savoonga
    */
-  NativeVillageofSavoonga: "522",
+  "522": "522",
 
   /**
    * Organized Village of Saxman
    */
-  OrganizedVillageofSaxman: "523",
+  "523": "523",
 
   /**
    * Native Village of Scammon Bay
    */
-  NativeVillageofScammonBay: "524",
+  "524": "524",
 
   /**
    * Native Village of Selawik
    */
-  NativeVillageofSelawik: "525",
+  "525": "525",
 
   /**
    * Seldovia Village Tribe
    */
-  SeldoviaVillageTribe: "526",
+  "526": "526",
 
   /**
    * Shageluk Native Village
    */
-  ShagelukNativeVillage: "527",
+  "527": "527",
 
   /**
    * Native Village of Shaktoolik
    */
-  NativeVillageofShaktoolik: "528",
+  "528": "528",
 
   /**
    * Native Village of Nunam Iqua
    */
-  NativeVillageofNunamIqua: "529",
+  "529": "529",
 
   /**
    * Native Village of Shishmaref
    */
-  NativeVillageofShishmaref: "530",
+  "530": "530",
 
   /**
    * Sun'aq Tribe of Kodiak
    */
-  SunaqTribeofKodiak: "531",
+  "531": "531",
 
   /**
    * Native Village of Shungnak
    */
-  NativeVillageofShungnak: "532",
+  "532": "532",
 
   /**
    * Sitka Tribe of Alaska
    */
-  SitkaTribeofAlaska: "533",
+  "533": "533",
 
   /**
    * Skagway Village
    */
-  SkagwayVillage: "534",
+  "534": "534",
 
   /**
    * Village of Sleetmute
    */
-  VillageofSleetmute: "535",
+  "535": "535",
 
   /**
    * Village of Solomon
    */
-  VillageofSolomon: "536",
+  "536": "536",
 
   /**
    * South Naknek Village
    */
-  SouthNaknekVillage: "537",
+  "537": "537",
 
   /**
    * Stebbins Community Association
    */
-  StebbinsCommunityAssociation: "538",
+  "538": "538",
 
   /**
    * Native Village of Stevens
    */
-  NativeVillageofStevens: "539",
+  "539": "539",
 
   /**
    * Village of Stony River
    */
-  VillageofStonyRiver: "540",
+  "540": "540",
 
   /**
    * Takotna Village
    */
-  TakotnaVillage: "541",
+  "541": "541",
 
   /**
    * Native Village of Tanacross
    */
-  NativeVillageofTanacross: "542",
+  "542": "542",
 
   /**
    * Native Village of Tanana
    */
-  NativeVillageofTanana: "543",
+  "543": "543",
 
   /**
    * Native Village of Tatitlek
    */
-  NativeVillageofTatitlek: "544",
+  "544": "544",
 
   /**
    * Native Village of Tazlina
    */
-  NativeVillageofTazlina: "545",
+  "545": "545",
 
   /**
    * Telida Village
    */
-  TelidaVillage: "546",
+  "546": "546",
 
   /**
    * Native Village of Teller
    */
-  NativeVillageofTeller: "547",
+  "547": "547",
 
   /**
    * Native Village of Tetlin
    */
-  NativeVillageofTetlin: "548",
+  "548": "548",
 
   /**
    * Central Council of the Tlingit & Haida Indian Tribes
    */
-  CentralCounciloftheTlingitHaidaIndianTribes: "549",
+  "549": "549",
 
   /**
    * Traditional Village of Togiak
    */
-  TraditionalVillageofTogiak: "550",
+  "550": "550",
 
   /**
    * Tuluksak Native Community
    */
-  TuluksakNativeCommunity: "551",
+  "551": "551",
 
   /**
    * Native Village of Tuntutuliak
    */
-  NativeVillageofTuntutuliak: "552",
+  "552": "552",
 
   /**
    * Native Village of Tununak
    */
-  NativeVillageofTununak: "553",
+  "553": "553",
 
   /**
    * Twin Hills Village
    */
-  TwinHillsVillage: "554",
+  "554": "554",
 
   /**
    * Native Village of Tyonek
    */
-  NativeVillageofTyonek: "555",
+  "555": "555",
 
   /**
    * Ugashik Village
    */
-  UgashikVillage: "556",
+  "556": "556",
 
   /**
    * Umkumiut Native Village
    */
-  UmkumiutNativeVillage: "557",
+  "557": "557",
 
   /**
    * Native Village of Unalakleet
    */
-  NativeVillageofUnalakleet: "558",
+  "558": "558",
 
   /**
    * Native Village of Unga
    */
-  NativeVillageofUnga: "559",
+  "559": "559",
 
   /**
    * Village of Venetie
    */
-  VillageofVenetie: "560",
+  "560": "560",
 
   /**
    * Native Village of Venetie Tribal Government (Arctic Village and Village of Venetie)
    */
-  NativeVillageofVenetieTribalGovernmentArcticVillageandVillageofVenetie: "561",
+  "561": "561",
 
   /**
    * Village of Wainwright
    */
-  VillageofWainwright: "562",
+  "562": "562",
 
   /**
    * Native Village of Wales
    */
-  NativeVillageofWales: "563",
+  "563": "563",
 
   /**
    * Native Village of White Mountain
    */
-  NativeVillageofWhiteMountain: "564",
+  "564": "564",
 
   /**
    * Wrangell Cooperative Association
    */
-  WrangellCooperativeAssociation: "565",
+  "565": "565",
 
   /**
    * Yakutat Tlingit Tribe
    */
-  YakutatTlingitTribe: "566",
+  "566": "566",
 } as const;
 
 /**

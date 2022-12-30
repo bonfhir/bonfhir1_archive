@@ -6,410 +6,408 @@ export const Hl7VSCodingSystemCode = {
   /**
    * Active
    */
-  Active: "General code",
+  "General code": "General code",
 
   /**
    * German Alpha-ID v2013
    */
-  GermanAlphaIDv2013: "ALPHAID2012",
+  ALPHAID2012: "ALPHAID2012",
 
   /**
    * German Alpha-ID v2013
    */
-  GermanAlphaIDv2013: "ALPHAID2013",
+  ALPHAID2013: "ALPHAID2013",
 
   /**
    * German Alpha-ID v2014
    */
-  GermanAlphaIDv2014: "ALPHAID2014",
+  ALPHAID2014: "ALPHAID2014",
 
   /**
    * German Alpha-ID v2015
    */
-  GermanAlphaIDv2015: "ALPHAID2015",
+  ALPHAID2015: "ALPHAID2015",
 
   /**
    * German Alpha-ID v2016
    */
-  GermanAlphaIDv2016: "ALPHAID2016",
+  ALPHAID2016: "ALPHAID2016",
 
   /**
    * ICD 10 Germany v2012
    */
-  ICD10Germanyv2012: "ICD10GM2012",
+  ICD10GM2012: "ICD10GM2012",
 
   /**
    * ICD 10 Germany v2013
    */
-  ICD10Germanyv2013: "ICD10GM2013",
+  ICD10GM2013: "ICD10GM2013",
 
   /**
    * ICD 10 Germany v2014
    */
-  ICD10Germanyv2014: "ICD10GM2014",
+  ICD10GM2014: "ICD10GM2014",
 
   /**
    * ICD 10 Germany v2015
    */
-  ICD10Germanyv2015: "ICD10GM2015",
+  ICD10GM2015: "ICD10GM2015",
 
   /**
    * ICD 10 Germany v2016
    */
-  ICD10Germanyv2016: "ICD10GM2016",
+  ICD10GM2016: "ICD10GM2016",
 
   /**
    * OPS Germany v2012
    */
-  OPSGermanyv2012: "OPS2012",
+  OPS2012: "OPS2012",
 
   /**
    * OPS Germany v2013
    */
-  OPSGermanyv2013: "OPS2013",
+  OPS2013: "OPS2013",
 
   /**
    * OPS Germany v2014
    */
-  OPSGermanyv2014: "OPS2014",
+  OPS2014: "OPS2014",
 
   /**
    * OPS Germany v2015
    */
-  OPSGermanyv2015: "OPS2015",
+  OPS2015: "OPS2015",
 
   /**
    * OPS Germany v2016
    */
-  OPSGermanyv2016: "OPS2016",
+  OPS2016: "OPS2016",
 
   /**
    * Local general code (where z is an alphanumeric character)
    */
-  Localgeneralcodewherezisanalphanumericcharacter: "99zzz or L",
+  "99zzz or L": "99zzz or L",
 
   /**
    * Local general code for a site-defined code system used for a specific set of trading partners.  The 'zzz' SHALL be any printable ASCII string.  Length of the name SHALL not exceed field width, and is subject to local implementation.
    */
-  LocalgeneralcodeforasitedefinedcodesystemusedforaspecificsetoftradingpartnersThezzzSHALLbeanyprintableASCIIstringLengthofthenameSHALLnotexceedfieldwidthandissubjecttolocalimplementation:
-    "99zzz",
+  "99zzz": "99zzz",
 
   /**
    * American College of Radiology finding codes
    */
-  AmericanCollegeofRadiologyfindingcodes: "ACR",
+  ACR: "ACR",
 
   /**
    * Table of HL7 Version 3 ActCode values
    */
-  TableofHL7Version3ActCodevalues: "ACTCODE",
+  ACTCODE: "ACTCODE",
 
   /**
      * Used to indicate that the target of the relationship will be a filtered subset of the total related set of targets.
 Used when there is a need to limit the number of components to the first, the last, the next, the total, the average or some other filtere
      */
-  UsedtoindicatethatthetargetoftherelationshipwillbeafilteredsubsetofthetotalrelatedsetoftargetsUsedwhenthereisaneedtolimitthenumberofcomponentstothefirstthelastthenextthetotaltheaverageorsomeotherfiltere:
-    "ACTRELSS",
+  ACTRELSS: "ACTRELSS",
 
   /**
    * German Alpha-ID v2006
    */
-  GermanAlphaIDv2006: "ALPHAID2006",
+  ALPHAID2006: "ALPHAID2006",
 
   /**
    * German Alpha-ID v2007
    */
-  GermanAlphaIDv2007: "ALPHAID2007",
+  ALPHAID2007: "ALPHAID2007",
 
   /**
    * German Alpha-ID v2008
    */
-  GermanAlphaIDv2008: "ALPHAID2008",
+  ALPHAID2008: "ALPHAID2008",
 
   /**
    * German Alpha-ID v2009
    */
-  GermanAlphaIDv2009: "ALPHAID2009",
+  ALPHAID2009: "ALPHAID2009",
 
   /**
    * German Alpha-ID v2010
    */
-  GermanAlphaIDv2010: "ALPHAID2010",
+  ALPHAID2010: "ALPHAID2010",
 
   /**
    * German Alpha-ID v2011
    */
-  GermanAlphaIDv2011: "ALPHAID2011",
+  ALPHAID2011: "ALPHAID2011",
 
   /**
    * Australian Medicines Terminology (v2)
    */
-  AustralianMedicinesTerminologyv2: "AMTv2",
+  AMTv2: "AMTv2",
 
   /**
    * HL7 set of units of measure
    */
-  HL7setofunitsofmeasure: "ANS+",
+  "ANS+": "ANS+",
 
   /**
    * WHO Adverse Reaction Terms
    */
-  WHOAdverseReactionTerms: "ART",
+  ART: "ART",
 
   /**
    * ASTM E1238/ E1467 Universal
    */
-  ASTME1238E1467Universal: "AS4",
+  AS4: "AS4",
 
   /**
    * AS4 Neurophysiology Codes
    */
-  AS4NeurophysiologyCodes: "AS4E",
+  AS4E: "AS4E",
 
   /**
    * American Type Culture Collection
    */
-  AmericanTypeCultureCollection: "ATC",
+  ATC: "ATC",
 
   /**
    * CPT-4
    */
-  CPT4: "C4",
+  C4: "C4",
 
   /**
    * CPT-5
    */
-  CPT5: "C5",
+  C5: "C5",
 
   /**
    * College of American Pathologists Electronic Cancer Checklist
    */
-  CollegeofAmericanPathologistsElectronicCancerChecklist: "CAPECC",
+  CAPECC: "CAPECC",
 
   /**
    * Chemical abstract codes
    */
-  Chemicalabstractcodes: "CAS",
+  CAS: "CAS",
 
   /**
    * DICOM Class Label
    */
-  DICOMClassLabel: "DCL",
+  DCL: "DCL",
 
   /**
    * Clinical Care Classification system
    */
-  ClinicalCareClassificationsystem: "CCC",
+  CCC: "CCC",
 
   /**
    * CDT-2 Codes
    */
-  CDT2Codes: "CD2",
+  CD2: "CD2",
 
   /**
    * CDC Analyte Codes
    */
-  CDCAnalyteCodes: "CDCA",
+  CDCA: "CDCA",
 
   /**
    * DICOM Query Label
    */
-  DICOMQueryLabel: "DQL",
+  DQL: "DQL",
 
   /**
    * CDC Emergency Department Acuity
    */
-  CDCEmergencyDepartmentAcuity: "CDCEDACUITY",
+  CDCEDACUITY: "CDCEDACUITY",
 
   /**
    * VIS Bar Codes (IIS)
    */
-  VISBarCodesIIS: "cdcgs1vis",
+  cdcgs1vis: "cdcgs1vis",
 
   /**
    * Industry CDC Census 2010
    */
-  IndustryCDCCensus2010: "CDCINDUSTRY2010",
+  CDCINDUSTRY2010: "CDCINDUSTRY2010",
 
   /**
    * CDC Methods/Instruments Codes
    */
-  CDCMethodsInstrumentsCodes: "CDCM",
+  CDCM: "CDCM",
 
   /**
    * CDC National Healthcare Safety Network Codes
    */
-  CDCNationalHealthcareSafetyNetworkCodes: "CDCNHSN",
+  CDCNHSN: "CDCNHSN",
 
   /**
    * CEN ECG diagnostic codes
    */
-  CENECGdiagnosticcodes: "CE (obsolete)",
+  "CE (obsolete)": "CE (obsolete)",
 
   /**
    * CDC BioSense RT observations (Census) - CDC
    */
-  CDCBioSenseRTobservationsCensusCDC: "CDCOBS",
+  CDCOBS: "CDCOBS",
 
   /**
    * Occupation CDC Census 2010
    */
-  OccupationCDCCensus2010: "CDCOCCUPATION2010",
+  CDCOCCUPATION2010: "CDCOCCUPATION2010",
 
   /**
    * Occupational Data for Health (ODH)
    */
-  OccupationalDataforHealthODH: "CDCODH",
+  CDCODH: "CDCODH",
 
   /**
    * CDC PHIN Vocabulary Coding System
    */
-  CDCPHINVocabularyCodingSystem: "CDCPHINVS",
+  CDCPHINVS: "CDCPHINVS",
 
   /**
    * Race & Ethnicity - CDC
    */
-  RaceEthnicityCDC: "CDCREC",
+  CDCREC: "CDCREC",
 
   /**
    * CDC Surveillance
    */
-  CDCSurveillance: "CDS",
+  CDS: "CDS",
 
   /**
    * CEN ECG diagnostic codes
    */
-  CENECGdiagnosticcodes: "CE",
+  CE: "CE",
 
   /**
    * Cytogenetic (chromosome) location
    */
-  Cytogeneticchromosomelocation: "Chrom-Loc",
+  "Chrom-Loc": "Chrom-Loc",
 
   /**
    * ClinVar Variant ID
    */
-  ClinVarVariantID: "CLINVAR-V",
+  "CLINVAR-V": "CLINVAR-V",
 
   /**
    * CLIP
    */
-  CLIP: "CLP",
+  CLP: "CLP",
 
   /**
    * OCE Edit Code
    */
-  OCEEditCode: "CMSOEC",
+  CMSOEC: "CMSOEC",
 
   /**
    * OCE Modifier Code
    */
-  OCEModifierCode: "CMSOMC",
+  CMSOMC: "CMSOMC",
 
   /**
    * FDA Unique Device Identifier
    */
-  FDAUniqueDeviceIdentifier: "FDAUDI",
+  FDAUDI: "FDAUDI",
 
   /**
    * COSMIC – Simple variants
    */
-  COSMICSimplevariants: "COSMIC-Smpl",
+  "COSMIC-Smpl": "COSMIC-Smpl",
 
   /**
    * COSMIC-Structural variants
    */
-  COSMICStructuralvariants: "COSMIC-Strc",
+  "COSMIC-Strc": "COSMIC-Strc",
 
   /**
    * CPT Modifier Code
    */
-  CPTModifierCode: "CPTM",
+  CPTM: "CPTM",
 
   /**
    * COSTART
    */
-  COSTART: "CST",
+  CST: "CST",
 
   /**
    * CDC Vaccine Codes
    */
-  CDCVaccineCodes: "CVX",
+  CVX: "CVX",
 
   /**
    * dbVar-Germline
    */
-  dbVarGermline: "dbVar-GL",
+  "dbVar-GL": "dbVar-GL",
 
   /**
    * dbVar-Somatic
    */
-  dbVarSomatic: "dbVar-som",
+  "dbVar-som": "dbVar-som",
 
   /**
    * DICOM Controlled Terminology
    */
-  DICOMControlledTerminology: "DCM",
+  DCM: "DCM",
 
   /**
    * EUCLIDES
    */
-  EUCLIDES: "E",
+  E: "E",
 
   /**
    * Euclides  quantity codes
    */
-  Euclidesquantitycodes: "E5",
+  E5: "E5",
 
   /**
    * Euclides Lab method codes
    */
-  EuclidesLabmethodcodes: "E6",
+  E6: "E6",
 
   /**
    * Euclides Lab equipment codes
    */
-  EuclidesLabequipmentcodes: "E7",
+  E7: "E7",
 
   /**
    * Education Level
    */
-  EducationLevel: "EDLEVEL",
+  EDLEVEL: "EDLEVEL",
 
   /**
    * Ensembl genomic reference sequence
    */
-  Ensemblgenomicreferencesequence: "ensembl-G",
+  "ensembl-G": "ensembl-G",
 
   /**
    * Ensembl protein reference sequence
    */
-  Ensemblproteinreferencesequence: "Ensembl-P",
+  "Ensembl-P": "Ensembl-P",
 
   /**
    * Ensembl transcript reference sequence
    */
-  Ensembltranscriptreferencesequence: "ensembl-T",
+  "ensembl-T": "ensembl-T",
 
   /**
    * Entity Code
    */
-  EntityCode: "ENTITYCODE",
+  ENTITYCODE: "ENTITYCODE",
 
   /**
    * Entity Handling Code
    */
-  EntityHandlingCode: "ENTITYHDLG",
+  ENTITYHDLG: "ENTITYHDLG",
 
   /**
    * Enzyme Codes
    */
-  EnzymeCodes: "ENZC",
+  ENZC: "ENZC",
 
   /**
    * German Major Diagnostic Codes v2009
    */
-  GermanMajorDiagnosticCodesv2009: "GMDC2009",
+  GMDC2009: "GMDC2009",
 
   /**
    * EPA SRS
@@ -419,805 +417,797 @@ Used when there is a need to limit the number of components to the first, the la
   /**
    * GS1 Unique Device Identifier
    */
-  GS1UniqueDeviceIdentifier: "GS1UDI",
+  GS1UDI: "GS1UDI",
 
   /**
    * Unique Ingredient Identifier (UNII)
    */
-  UniqueIngredientIdentifierUNII: "FDAUNII",
+  FDAUNII: "FDAUNII",
 
   /**
    * First DataBank Drug Codes
    */
-  FirstDataBankDrugCodes: "FDDC",
+  FDDC: "FDDC",
 
   /**
    * First DataBank Diagnostic Codes
    */
-  FirstDataBankDiagnosticCodes: "FDDX",
+  FDDX: "FDDX",
 
   /**
    * FDA K10
    */
-  FDAK10: "FDK",
+  FDK: "FDK",
 
   /**
    * FIPS 5-2 (State)
    */
-  FIPS52State: "FIPS5_2",
+  FIPS5_2: "FIPS5_2",
 
   /**
    * HIBCC Unique Device Identifier
    */
-  HIBCCUniqueDeviceIdentifier: "HIBUDI",
+  HIBUDI: "HIBUDI",
 
   /**
    * Populated Places (FIPS 55-3)
    */
-  PopulatedPlacesFIPS553: "FIPS55_3",
+  FIPS55_3: "FIPS55_3",
 
   /**
    * FIPS 6-4 (County)
    */
-  FIPS64County: "FIPS6_4",
+  FIPS6_4: "FIPS6_4",
 
   /**
    * G-DRG German DRG Codes v 2004
    */
-  GDRGGermanDRGCodesv2004: "GDRG2004",
+  GDRG2004: "GDRG2004",
 
   /**
    * G-DRG German DRG Codes v 2005
    */
-  GDRGGermanDRGCodesv2005: "GDRG2005",
+  GDRG2005: "GDRG2005",
 
   /**
    * G-DRG German DRG Codes v 2006
    */
-  GDRGGermanDRGCodesv2006: "GDRG2006",
+  GDRG2006: "GDRG2006",
 
   /**
    * G-DRG German DRG Codes v2007
    */
-  GDRGGermanDRGCodesv2007: "GDRG2007",
+  GDRG2007: "GDRG2007",
 
   /**
    * G-DRG German DRG Codes v2008
    */
-  GDRGGermanDRGCodesv2008: "GDRG2008",
+  GDRG2008: "GDRG2008",
 
   /**
    * G-DRG German DRG Codes v2008
    */
-  GDRGGermanDRGCodesv2008: "GDRG2009",
+  GDRG2009: "GDRG2009",
 
   /**
    * German Major Diagnostic Codes v 1004
    */
-  GermanMajorDiagnosticCodesv1004: "GMDC2004",
+  GMDC2004: "GMDC2004",
 
   /**
    * German Major Diagnostic Codes v2005
    */
-  GermanMajorDiagnosticCodesv2005: "GMDC2005",
+  GMDC2005: "GMDC2005",
 
   /**
    * German Major v2006 Diagnostic Codes
    */
-  GermanMajorv2006DiagnosticCodes: "GMDC2006",
+  GMDC2006: "GMDC2006",
 
   /**
    * German Major Diagnostic Codes v2007
    */
-  GermanMajorDiagnosticCodesv2007: "GMDC2007",
+  GMDC2007: "GMDC2007",
 
   /**
    * German Major Diagnostic Codes v2008
    */
-  GermanMajorDiagnosticCodesv2008: "GMDC2008",
+  GMDC2008: "GMDC2008",
 
   /**
    * HIBCC
    */
-  HIBCC: "HB",
+  HB: "HB",
 
   /**
    * CMS (formerly HCFA)  Common Procedure Coding System
    */
-  CMSformerlyHCFACommonProcedureCodingSystem: "HCPCS",
+  HCPCS: "HCPCS",
 
   /**
    * ISBT 128 codes where nnnn  specifies a specific table within ISBT 128.
    */
-  ISBT128codeswherennnnspecifiesaspecifictablewithinISBT128: "IBTnnnn",
+  IBTnnnn: "IBTnnnn",
 
   /**
    * Health Care Provider Taxonomy
    */
-  HealthCareProviderTaxonomy: "HCPT",
+  HCPT: "HCPT",
 
   /**
    * ICCBBA Unique Device Identifier
    */
-  ICCBBAUniqueDeviceIdentifier: "ICCUDI",
+  ICCUDI: "ICCUDI",
 
   /**
    * HGNC-symb
    */
-  HGNCsymb: "HGNC-Symb",
+  "HGNC-Symb": "HGNC-Symb",
 
   /**
    * HGVS- Transcript syntax
    */
-  HGVSTranscriptsyntax: "HGVS.c",
+  "HGVS.c": "HGVS.c",
 
   /**
    * HGVS- Genomic syntax
    */
-  HGVSGenomicsyntax: "HGVS.g",
+  "HGVS.g": "HGVS.g",
 
   /**
    * HGVS-Protein syntax
    */
-  HGVSProteinsyntax: "HGVS.p",
+  "HGVS.p": "HGVS.p",
 
   /**
    * Home Health Care
    */
-  HomeHealthCare: "HHC",
+  HHC: "HHC",
 
   /**
    * ICD 10 Germany v2010
    */
-  ICD10Germanyv2010: "ICD10GM2010",
+  ICD10GM2010: "ICD10GM2010",
 
   /**
    * Health Outcomes
    */
-  HealthOutcomes: "HI",
+  HI: "HI",
 
   /**
    * ICD 10 Germany v2011
    */
-  ICD10Germanyv2011: "ICD10GM2011",
+  ICD10GM2011: "ICD10GM2011",
 
   /**
    * Health Level Seven defined table of codes, where nnnn is the HL7 table number.  The number is four numeric digits as published in HL7 Version 2 chapter 2C.  For example, HL70001.
    */
-  HealthLevelSevendefinedtableofcodeswherennnnistheHL7tablenumberThenumberisfournumericdigitsaspublishedinHL7Version2chapter2CForexampleHL70001:
-    "HL7nnnn",
+  HL7nnnn: "HL7nnnn",
 
   /**
    * Japanese Nationwide Medicine Code
    */
-  JapaneseNationwideMedicineCode: "HOT",
+  HOT: "HOT",
 
   /**
    * CMS (formerly HCFA )Procedure Codes (HCPCS)
    */
-  CMSformerlyHCFAProcedureCodesHCPCS: "HPC",
+  HPC: "HPC",
 
   /**
    * Healthcare Service Location
    */
-  HealthcareServiceLocation: "HSLOC",
+  HSLOC: "HSLOC",
 
   /**
    * ICD-10
    */
-  ICD10: "I10",
+  I10: "I10",
 
   /**
    * International Classification of Diseases, 10th  Revision, Clinical Modification (ICD-10-CM)
    */
-  InternationalClassificationofDiseases10thRevisionClinicalModificationICD10CM:
-    "I10C",
+  I10C: "I10C",
 
   /**
    * ICD 10 Germany 2004
    */
-  ICD10Germany2004: "I10G2004",
+  I10G2004: "I10G2004",
 
   /**
    * ICD 10 Germany 2005
    */
-  ICD10Germany2005: "I10G2005",
+  I10G2005: "I10G2005",
 
   /**
    * ISO Defined Codes where nnnn is the ISO table number
    */
-  ISODefinedCodeswherennnnistheISOtablenumber: "ISOnnnn (deprecated)",
+  "ISOnnnn (deprecated)": "ISOnnnn (deprecated)",
 
   /**
    * ICD 10 Germany 2006
    */
-  ICD10Germany2006: "I10G2006",
+  I10G2006: "I10G2006",
 
   /**
    * ISO 2955.83 (units of measure) with HL7 extensions
    */
-  ISO295583unitsofmeasurewithHL7extensions: "ISO",
+  ISO: "ISO",
 
   /**
    * International Classification of Diseases, 10th  Revision, Procedure Coding System (ICD-10-PCS)
    */
-  InternationalClassificationofDiseases10thRevisionProcedureCodingSystemICD10PCS:
-    "I10P",
+  I10P: "I10P",
 
   /**
    * ICD-10 Place of Occurrence
    */
-  ICD10PlaceofOccurrence: "I10P0",
+  I10P0: "I10P0",
 
   /**
    * ICD9
    */
-  ICD9: "I9",
+  I9: "I9",
 
   /**
    * International Classification of Diseases, 9th  Revision, Clinical Modification (ICD-9-CM)
    */
-  InternationalClassificationofDiseases9thRevisionClinicalModificationICD9CM:
-    "I9C",
+  I9C: "I9C",
 
   /**
    * ICD-9CM Diagnosis codes
    */
-  ICD9CMDiagnosiscodes: "I9CDX",
+  I9CDX: "I9CDX",
 
   /**
    * ICD-9CM Procedure codes
    */
-  ICD9CMProcedurecodes: "I9CP",
+  I9CP: "I9CP",
 
   /**
    * ISBT
    */
-  ISBT: "IBT",
+  IBT: "IBT",
 
   /**
    * ISBT 128 Standard transfusion/transplantation data items
    */
-  ISBT128Standardtransfusiontransplantationdataitems: "IBT0001",
+  IBT0001: "IBT0001",
 
   /**
    * ICHPPC-2
    */
-  ICHPPC2: "IC2",
+  IC2: "IC2",
 
   /**
    * ICD-10 Australian modification
    */
-  ICD10Australianmodification: "ICD10AM",
+  ICD10AM: "ICD10AM",
 
   /**
    * ICD-10 Canada
    */
-  ICD10Canada: "ICD10CA",
+  ICD10CA: "ICD10CA",
 
   /**
    * ICD 10 Germany v2007
    */
-  ICD10Germanyv2007: "ICD10GM2007",
+  ICD10GM2007: "ICD10GM2007",
 
   /**
    * ICD 10 Germany v2008
    */
-  ICD10Germanyv2008: "ICD10GM2008",
+  ICD10GM2008: "ICD10GM2008",
 
   /**
    * ICD 10 Germany v2009
    */
-  ICD10Germanyv2009: "ICD10GM2009",
+  ICD10GM2009: "ICD10GM2009",
 
   /**
    * International Classification of Diseases for Oncology
    */
-  InternationalClassificationofDiseasesforOncology: "ICDO",
+  ICDO: "ICDO",
 
   /**
    * International Classification of Disease for Oncology Second Edition
    */
-  InternationalClassificationofDiseaseforOncologySecondEdition: "ICDO2",
+  ICDO2: "ICDO2",
 
   /**
    * International Classification of Disease for Oncology Third Edition
    */
-  InternationalClassificationofDiseaseforOncologyThirdEdition: "ICDO3",
+  ICDO3: "ICDO3",
 
   /**
    * International Classification of Functioning, Disability and Health (ICF)
    */
-  InternationalClassificationofFunctioningDisabilityandHealthICF: "ICF",
+  ICF: "ICF",
 
   /**
    * ICCS
    */
-  ICCS: "ICS",
+  ICS: "ICS",
 
   /**
    * International Classification of Sleep Disorders
    */
-  InternationalClassificationofSleepDisorders: "ICSD",
+  ICSD: "ICSD",
 
   /**
    * IHE Laboratory Analytical Workflow (LAW) Profile Codes.
    */
-  IHELaboratoryAnalyticalWorkflowLAWProfileCodes: "IHELAW",
+  IHELAW: "IHELAW",
 
   /**
    * International System for Human Cytogenetic Nomenclature (ISCN)
    */
-  InternationalSystemforHumanCytogeneticNomenclatureISCN: "ISCN",
+  ISCN: "ISCN",
 
   /**
    * ISO 2955.83 (units of measure) with HL7 extensions
    */
-  ISO295583unitsofmeasurewithHL7extensions: "ISO+",
+  "ISO+": "ISO+",
 
   /**
    * ISO 3166-1 Country Codes
    */
-  ISO31661CountryCodes: "ISO3166_1",
+  ISO3166_1: "ISO3166_1",
 
   /**
    * ISO 3166-2 Country subdivisions
    */
-  ISO31662Countrysubdivisions: "ISO3166_2",
+  ISO3166_2: "ISO3166_2",
 
   /**
    * ISO4217 Currency Codes
    */
-  ISO4217CurrencyCodes: "ISO4217",
+  ISO4217: "ISO4217",
 
   /**
    * ISO 639 Language
    */
-  ISO639Language: "ISO639",
+  ISO639: "ISO639",
 
   /**
    * ISO Defined Codes where nnnn is the ISO table number. (deprecated)
    */
-  ISODefinedCodeswherennnnistheISOtablenumberdeprecated: "ISOnnnn",
+  ISOnnnn: "ISOnnnn",
 
   /**
    * Integrated Taxonomic Information System
    */
-  IntegratedTaxonomicInformationSystem: "ITIS",
+  ITIS: "ITIS",
 
   /**
    * IUPAC/IFCC Component Codes
    */
-  IUPACIFCCComponentCodes: "IUPC",
+  IUPC: "IUPC",
 
   /**
    * IUPAC/IFCC Property Codes
    */
-  IUPACIFCCPropertyCodes: "IUPP",
+  IUPP: "IUPP",
 
   /**
    * JLAC/JSLM, nationwide laboratory code
    */
-  JLACJSLMnationwidelaboratorycode: "JC10",
+  JC10: "JC10",
 
   /**
    * Japanese Chemistry
    */
-  JapaneseChemistry: "JC8",
+  JC8: "JC8",
 
   /**
    * Japanese Image Examination Cache
    */
-  JapaneseImageExaminationCache: "JJ1017",
+  JJ1017: "JJ1017",
 
   /**
    * Local general code for a site-defined code system used for a specific set of trading partners.  The 'zzz' SHALL be any printable ASCII string.  Length of the name SHALL not exceed field width, and is subject to local implementation.
    */
-  LocalgeneralcodeforasitedefinedcodesystemusedforaspecificsetoftradingpartnersThezzzSHALLbeanyprintableASCIIstringLengthofthenameSHALLnotexceedfieldwidthandissubjecttolocalimplementation:
-    "L",
+  L: "L",
 
   /**
    * LanguaL
    */
-  LanguaL: "LANGUAL",
+  LANGUAL: "LANGUAL",
 
   /**
    * Local billing code
    */
-  Localbillingcode: "LB",
+  LB: "LB",
 
   /**
    * Logical Observation Identifier Names and Codes (LOINC®)
    */
-  LogicalObservationIdentifierNamesandCodesLOINC: "LN",
+  LN: "LN",
 
   /**
    * Locus Reference Genomic (LRG)
    */
-  LocusReferenceGenomicLRG: "LRG-RefSeq",
+  "LRG-RefSeq": "LRG-RefSeq",
 
   /**
    * Medicaid
    */
-  Medicaid: "MCD",
+  MCD: "MCD",
 
   /**
    * Medicare
    */
-  Medicare: "MCR",
+  MCR: "MCR",
 
   /**
    * Medical Device Communication
    */
-  MedicalDeviceCommunication: "MDC",
+  MDC: "MDC",
 
   /**
    * Medispan Diagnostic Codes
    */
-  MedispanDiagnosticCodes: "MDDX",
+  MDDX: "MDDX",
 
   /**
    * Medical Economics Drug Codes
    */
-  MedicalEconomicsDrugCodes: "MEDC",
+  MEDC: "MEDC",
 
   /**
    * NCBI MedGen disease subset
    */
-  NCBIMedGendiseasesubset: "Medgen-Dis",
+  "Medgen-Dis": "Medgen-Dis",
 
   /**
    * MIME Media Type IANA
    */
-  MIMEMediaTypeIANA: "MEDIATYPE",
+  MEDIATYPE: "MEDIATYPE",
 
   /**
    * Medical Dictionary for Drug Regulatory Affairs (MEDDRA)
    */
-  MedicalDictionaryforDrugRegulatoryAffairsMEDDRA: "MEDR",
+  MEDR: "MEDR",
 
   /**
    * OPS Germany v2010
    */
-  OPSGermanyv2010: "OPS2010",
+  OPS2010: "OPS2010",
 
   /**
    * Medical Economics Diagnostic Codes
    */
-  MedicalEconomicsDiagnosticCodes: "MEDX",
+  MEDX: "MEDX",
 
   /**
    * OPS Germany v2011
    */
-  OPSGermanyv2011: "OPS2011",
+  OPS2011: "OPS2011",
 
   /**
    * Medispan GPI
    */
-  MedispanGPI: "MGPI",
+  MGPI: "MGPI",
 
   /**
    * CDC Vaccine Manufacturer Codes
    */
-  CDCVaccineManufacturerCodes: "MVX",
+  MVX: "MVX",
 
   /**
    * Industry (NAICS)
    */
-  IndustryNAICS: "NAICS",
+  NAICS: "NAICS",
 
   /**
    * NCPDP code list for data element nnnn [as used in segment sss]
    */
-  NCPDPcodelistfordataelementnnnnasusedinsegmentsss: "NCPDPnnnnsss",
+  NCPDPnnnnsss: "NCPDPnnnnsss",
 
   /**
    * NANDA
    */
-  NANDA: "NDA",
+  NDA: "NDA",
 
   /**
    * National drug codes
    */
-  Nationaldrugcodes: "NDC",
+  NDC: "NDC",
 
   /**
    * NDF-RT (Drug Classification)
    */
-  NDFRTDrugClassification: "NDFRT",
+  NDFRT: "NDFRT",
 
   /**
    * Nursing Interventions Classification
    */
-  NursingInterventionsClassification: "NIC",
+  NIC: "NIC",
 
   /**
    * Source of Information (Immunization)
    */
-  SourceofInformationImmunization: "NIP001",
+  NIP001: "NIP001",
 
   /**
    * Substance refusal reason
    */
-  Substancerefusalreason: "NIP002",
+  NIP002: "NIP002",
 
   /**
    * Vaccination - Contraindications, Precautions, and Immunities
    */
-  VaccinationContraindicationsPrecautionsandImmunities: "NIP004",
+  NIP004: "NIP004",
 
   /**
    * Vaccinated at location (facility)
    */
-  Vaccinatedatlocationfacility: "NIP007",
+  NIP007: "NIP007",
 
   /**
    * Vaccine purchased with (Type of funding)
    */
-  VaccinepurchasedwithTypeoffunding: "NIP008",
+  NIP008: "NIP008",
 
   /**
    * Reported adverse event previously
    */
-  Reportedadverseeventpreviously: "NIP009",
+  NIP009: "NIP009",
 
   /**
    * VAERS Report type
    */
-  VAERSReporttype: "NIP010",
+  NIP010: "NIP010",
 
   /**
    * Notifiable Event (Disease/Condition) Code List
    */
-  NotifiableEventDiseaseConditionCodeList: "NND",
+  NND: "NND",
 
   /**
    * National Provider Identifier
    */
-  NationalProviderIdentifier: "NPI",
+  NPI: "NPI",
 
   /**
    * National Uniform Billing Committee Code
    */
-  NationalUniformBillingCommitteeCode: "NUBC",
+  NUBC: "NUBC",
 
   /**
    * Flavors of NULL
    */
-  FlavorsofNULL: "NULLFL",
+  NULLFL: "NULLFL",
 
   /**
    * German Procedure Codes
    */
-  GermanProcedureCodes: "O301",
+  O301: "O301",
 
   /**
    * OPS Germany 2004
    */
-  OPSGermany2004: "O3012004",
+  O3012004: "O3012004",
 
   /**
    * OPS Germany 2005
    */
-  OPSGermany2005: "O3012005",
+  O3012005: "O3012005",
 
   /**
    * Ops Germany 2006
    */
-  OpsGermany2006: "O3012006",
+  O3012006: "O3012006",
 
   /**
    * Observation Method Code
    */
-  ObservationMethodCode: "OBSMETHOD",
+  OBSMETHOD: "OBSMETHOD",
 
   /**
    * Omaha System
    */
-  OmahaSystem: "OHA",
+  OHA: "OHA",
 
   /**
    * OPS Germany v2007
    */
-  OPSGermanyv2007: "OPS2007",
+  OPS2007: "OPS2007",
 
   /**
    * OPS Germany v2008
    */
-  OPSGermanyv2008: "OPS2008",
+  OPS2008: "OPS2008",
 
   /**
    * OPS Germany v2008
    */
-  OPSGermanyv2008: "OPS2009",
+  OPS2009: "OPS2009",
 
   /**
    * Source of Payment Typology
    */
-  SourceofPaymentTypology: "PHDSCSOPT",
+  PHDSCSOPT: "PHDSCSOPT",
 
   /**
    * CDC Public Health Information Network (PHIN) Question
    */
-  CDCPublicHealthInformationNetworkPHINQuestion: "PHINQUESTION",
+  PHINQUESTION: "PHINQUESTION",
 
   /**
    * CDC PHLIP Lab result codes that are not covered in SNOMED at the time of this implementation
    */
-  CDCPHLIPLabresultcodesthatarenotcoveredinSNOMEDatthetimeofthisimplementation:
-    "PLR",
+  PLR: "PLR",
 
   /**
    * CDC PHLIP Lab test codes, where LOINC concept is too broad or not yet available, especially as needed for ordering and or lab to lab reporting )
    */
-  CDCPHLIPLabtestcodeswhereLOINCconceptistoobroadornotyetavailableespeciallyasneededfororderingandorlabtolabreporting:
-    "PLT",
+  PLT: "PLT",
 
   /**
    * ASC X12 Code List nnnn
    */
-  ASCX12CodeListnnnn: "X12Dennnn",
+  X12Dennnn: "X12Dennnn",
 
   /**
    * POS Codes
    */
-  POSCodes: "POS",
+  POS: "POS",
 
   /**
    * Paticipation Mode Code
    */
-  PaticipationModeCode: "PRTCPTNMODE",
+  PRTCPTNMODE: "PRTCPTNMODE",
 
   /**
    * Read Classification
    */
-  ReadClassification: "RC",
+  RC: "RC",
 
   /**
    * NCBI - genomic and chromosome reference sequences
    */
-  NCBIgenomicandchromosomereferencesequences: "refSeq-G",
+  "refSeq-G": "refSeq-G",
 
   /**
    * NCBI - protein reference sequence
    */
-  NCBIproteinreferencesequence: "RefSeq-P",
+  "RefSeq-P": "RefSeq-P",
 
   /**
    * NCBI-transcript reference sequences (RefSeq)
    */
-  NCBItranscriptreferencesequencesRefSeq: "refSeq-T",
+  "refSeq-T": "refSeq-T",
 
   /**
    * Used initially for contact roles.
    */
-  Usedinitiallyforcontactroles: "ROLECLASS",
+  ROLECLASS: "ROLECLASS",
 
   /**
    * Participation Mode
    */
-  ParticipationMode: "ROLECODE",
+  ROLECODE: "ROLECODE",
 
   /**
    * Specifies the mode, immediate versus deferred or queued, by which a receiver should communicate its receiver responsibilities.
    */
-  Specifiesthemodeimmediateversusdeferredorqueuedbywhichareceivershouldcommunicateitsreceiverresponsibilities:
-    "RSPMODE",
+  RSPMODE: "RSPMODE",
 
   /**
    * RxNorm
    */
-  RxNorm: "RXNORM",
+  RXNORM: "RXNORM",
 
   /**
    * RxTerms-Ingredients Subset
    */
-  RxTermsIngredientsSubset: "RxT-Ingrd",
+  "RxT-Ingrd": "RxT-Ingrd",
 
   /**
    * SNOMED Clinical Terms
    */
-  SNOMEDClinicalTerms: "SCT",
+  SCT: "SCT",
 
   /**
    * SNOMED Clinical Terms alphanumeric codes
    */
-  SNOMEDClinicalTermsalphanumericcodes: "SCT2",
+  SCT2: "SCT2",
 
   /**
    * SNOMED- DICOM Microglossary
    */
-  SNOMEDDICOMMicroglossary: "SDM",
+  SDM: "SDM",
 
   /**
    * Industry (SIC)
    */
-  IndustrySIC: "SIC",
+  SIC: "SIC",
 
   /**
    * Systemized Nomenclature of Medicine (SNOMED)
    */
-  SystemizedNomenclatureofMedicineSNOMED: "SNM",
+  SNM: "SNM",
 
   /**
    * SNOMED International
    */
-  SNOMEDInternational: "SNM3",
+  SNM3: "SNM3",
 
   /**
    * SNOMED topology codes (anatomic sites)
    */
-  SNOMEDtopologycodesanatomicsites: "SNT",
+  SNT: "SNT",
 
   /**
    * Occupation (SOC 2000)
    */
-  OccupationSOC2000: "SOC",
+  SOC: "SOC",
 
   /**
    * Priority (Type) of Visit
    */
-  PriorityTypeofVisit: "UB04FL14",
+  UB04FL14: "UB04FL14",
 
   /**
    * Point of Origin
    */
-  PointofOrigin: "UB04FL15",
+  UB04FL15: "UB04FL15",
 
   /**
    * Patient Discharge Status
    */
-  PatientDischargeStatus: "UB04FL17",
+  UB04FL17: "UB04FL17",
 
   /**
    * Occurrence Code
    */
-  OccurrenceCode: "UB04FL31",
+  UB04FL31: "UB04FL31",
 
   /**
    * Occurrence Span
    */
-  OccurrenceSpan: "UB04FL35",
+  UB04FL35: "UB04FL35",
 
   /**
    * Value Code
    */
-  ValueCode: "UB04FL39",
+  UB04FL39: "UB04FL39",
 
   /**
    * Revenue Code
    */
-  RevenueCode: "UB04FL42",
+  UB04FL42: "UB04FL42",
 
   /**
    * Present on Admission
    */
-  PresentonAdmission: "UB04FL67",
+  UB04FL67: "UB04FL67",
 
   /**
    * UCDS
    */
-  UCDS: "UC",
+  UC: "UC",
 
   /**
    * UCUM code set for units of measure(from Regenstrief)
    */
-  UCUMcodesetforunitsofmeasurefromRegenstrief: "UCUM",
+  UCUM: "UCUM",
 
   /**
    * MDNS
    */
-  MDNS: "UMD",
+  UMD: "UMD",
 
   /**
    * Unified Medical Language
    */
-  UnifiedMedicalLanguage: "UML",
+  UML: "UML",
 
   /**
    * Universal Product Code
    */
-  UniversalProductCode: "UPC",
+  UPC: "UPC",
 
   /**
    * UPIN
@@ -1227,43 +1217,42 @@ Used when there is a need to limit the number of components to the first, the la
   /**
    * U.S. Board on Geographic Names (USGS - GNIS)
    */
-  USBoardonGeographicNamesUSGSGNIS: "USGSGNIS",
+  USGSGNIS: "USGSGNIS",
 
   /**
    * United States Postal Service
    */
-  UnitedStatesPostalService: "USPS",
+  USPS: "USPS",
 
   /**
    * Clinicians are required to track the Vaccine Information Sheet (VIS) that was shared with the recipient of a vaccination.  This code system contains codes that  identify the document type and the owner of the document.
    */
-  CliniciansarerequiredtotracktheVaccineInformationSheetVISthatwassharedwiththerecipientofavaccinationThiscodesystemcontainscodesthatidentifythedocumenttypeandtheownerofthedocument:
-    "VIS",
+  VIS: "VIS",
 
   /**
    * WHO record # drug codes (6 digit)
    */
-  WHOrecorddrugcodes6digit: "W1",
+  W1: "W1",
 
   /**
    * WHO record # drug codes (8 digit)
    */
-  WHOrecorddrugcodes8digit: "W2",
+  W2: "W2",
 
   /**
    * WHO record # code with ASTM extension
    */
-  WHOrecordcodewithASTMextension: "W4",
+  W4: "W4",
 
   /**
    * WHO ATC
    */
-  WHOATC: "WC",
+  WC: "WC",
 
   /**
    * ASC X12 Code List nnnn
    */
-  ASCX12CodeListnnnn: "X12DEnnnn",
+  X12DEnnnn: "X12DEnnnn",
 } as const;
 
 /**

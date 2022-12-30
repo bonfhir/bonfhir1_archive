@@ -6,17 +6,17 @@ export const NebulizationInhalationCode = {
   /**
    * Inhalation, nebulization
    */
-  Inhalationnebulization: "NEB",
+  NEB: "NEB",
 
   /**
    * Inhalation, nebulization, nasal
    */
-  Inhalationnebulizationnasal: "NASNEB",
+  NASNEB: "NASNEB",
 
   /**
    * Inhalation, nebulization, oral
    */
-  Inhalationnebulizationoral: "ORNEB",
+  ORNEB: "ORNEB",
 } as const;
 
 /**

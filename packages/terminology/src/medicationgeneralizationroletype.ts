@@ -8,37 +8,37 @@ export const MedicationGeneralizationRoleTypeCode = {
   /**
    * MedicationGeneralizationRoleType
    */
-  MedicationGeneralizationRoleType: "_MedicationGeneralizationRoleType",
+  _MedicationGeneralizationRoleType: "_MedicationGeneralizationRoleType",
 
   /**
    * therapeutic class
    */
-  therapeuticclass: "DC",
+  DC: "DC",
 
   /**
    * generic drug
    */
-  genericdrug: "GD",
+  GD: "GD",
 
   /**
    * generic drug form
    */
-  genericdrugform: "GDF",
+  GDF: "GDF",
 
   /**
    * generic drug strength
    */
-  genericdrugstrength: "GDS",
+  GDS: "GDS",
 
   /**
    * generic drug strength form
    */
-  genericdrugstrengthform: "GDSF",
+  GDSF: "GDSF",
 
   /**
    * manufactured drug strength form
    */
-  manufactureddrugstrengthform: "MGDSF",
+  MGDSF: "MGDSF",
 } as const;
 
 /**

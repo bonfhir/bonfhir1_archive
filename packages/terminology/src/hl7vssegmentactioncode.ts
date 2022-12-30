@@ -6,27 +6,27 @@ export const Hl7VSSegmentActionCodeCode = {
   /**
    * Add/Insert
    */
-  AddInsert: "A",
+  A: "A",
 
   /**
    * Delete
    */
-  Delete: "D",
+  D: "D",
 
   /**
    * Used in Snapshot mode
    */
-  UsedinSnapshotmode: "S",
+  S: "S",
 
   /**
    * Update
    */
-  Update: "U",
+  U: "U",
 
   /**
    * No Change
    */
-  NoChange: "X",
+  X: "X",
 } as const;
 
 /**

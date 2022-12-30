@@ -6,7 +6,7 @@ export const UPCCode = {
   /**
    * Universal Product Code
    */
-  UniversalProductCode: "UPC",
+  UPC: "UPC",
 } as const;
 
 /**

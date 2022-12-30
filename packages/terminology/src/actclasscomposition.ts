@@ -12,22 +12,22 @@ export const ActClassCompositionCode = {
   /**
    * composition
    */
-  composition: "COMPOSITION",
+  COMPOSITION: "COMPOSITION",
 
   /**
    * document
    */
-  document: "DOC",
+  DOC: "DOC",
 
   /**
    * clinical document
    */
-  clinicaldocument: "DOCCLIN",
+  DOCCLIN: "DOCCLIN",
 
   /**
    * CDA Level One clinical document
    */
-  CDALevelOneclinicaldocument: "CDALVLONE",
+  CDALVLONE: "CDALVLONE",
 } as const;
 
 /**

@@ -6,37 +6,37 @@ export const Hl7VSPatientOutcomeCode = {
   /**
    * Died
    */
-  Died: "D",
+  D: "D",
 
   /**
    * Recovering
    */
-  Recovering: "R",
+  R: "R",
 
   /**
    * Not recovering/unchanged
    */
-  Notrecoveringunchanged: "N",
+  N: "N",
 
   /**
    * Worsening
    */
-  Worsening: "W",
+  W: "W",
 
   /**
    * Sequelae
    */
-  Sequelae: "S",
+  S: "S",
 
   /**
    * Fully recovered
    */
-  Fullyrecovered: "F",
+  F: "F",
 
   /**
    * Unknown
    */
-  Unknown: "U",
+  U: "U",
 } as const;
 
 /**

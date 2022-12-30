@@ -6,12 +6,12 @@ export const DoseAndRateTypeCode = {
   /**
    * Calculated
    */
-  Calculated: "calculated",
+  calculated: "calculated",
 
   /**
    * Ordered
    */
-  Ordered: "ordered",
+  ordered: "ordered",
 } as const;
 
 /**

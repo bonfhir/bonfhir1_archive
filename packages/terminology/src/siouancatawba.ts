@@ -6,97 +6,97 @@ export const SiouanCatawbaCode = {
   /**
    * Siouan
    */
-  Siouan: "_Siouan",
+  _Siouan: "_Siouan",
 
   /**
    * MississippiValley
    */
-  MississippiValley: "_MississippiValley",
+  _MississippiValley: "_MississippiValley",
 
   /**
    * ChiwereWinnebago
    */
-  ChiwereWinnebago: "_ChiwereWinnebago",
+  _ChiwereWinnebago: "_ChiwereWinnebago",
 
   /**
    * Chiwere
    */
-  Chiwere: "x-IOW",
+  "x-IOW": "x-IOW",
 
   /**
    * Hocak
    */
-  Hocak: "x-WIN",
+  "x-WIN": "x-WIN",
 
   /**
    * Dakotan
    */
-  Dakotan: "_Dakotan",
+  _Dakotan: "_Dakotan",
 
   /**
    * Assiniboine
    */
-  Assiniboine: "x-ASB",
+  "x-ASB": "x-ASB",
 
   /**
    * Dakota
    */
-  Dakota: "x-DHG",
+  "x-DHG": "x-DHG",
 
   /**
    * Lakota
    */
-  Lakota: "x-LKT",
+  "x-LKT": "x-LKT",
 
   /**
    * Nakota
    */
-  Nakota: "x-NKT",
+  "x-NKT": "x-NKT",
 
   /**
    * Dhegiha
    */
-  Dhegiha: "_Dhegiha",
+  _Dhegiha: "_Dhegiha",
 
   /**
    * Kansa
    */
-  Kansa: "x-KAA",
+  "x-KAA": "x-KAA",
 
   /**
    * Omaha-Ponca
    */
-  OmahaPonca: "x-OMA",
+  "x-OMA": "x-OMA",
 
   /**
    * Osage
    */
-  Osage: "x-OSA",
+  "x-OSA": "x-OSA",
 
   /**
    * Quapaw
    */
-  Quapaw: "x-QUA",
+  "x-QUA": "x-QUA",
 
   /**
    * MissouriRiver
    */
-  MissouriRiver: "_MissouriRiver",
+  _MissouriRiver: "_MissouriRiver",
 
   /**
    * Crow
    */
-  Crow: "x-CRO",
+  "x-CRO": "x-CRO",
 
   /**
    * Hidatsa
    */
-  Hidatsa: "x-HID",
+  "x-HID": "x-HID",
 
   /**
    * Mandan
    */
-  Mandan: "x-MHQ",
+  "x-MHQ": "x-MHQ",
 } as const;
 
 /**

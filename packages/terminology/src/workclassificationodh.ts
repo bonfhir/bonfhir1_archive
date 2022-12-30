@@ -6,52 +6,52 @@ export const WorkClassificationODHCode = {
   /**
    * Paid work, Armed Forces
    */
-  PaidworkArmedForces: "PWAF",
+  PWAF: "PWAF",
 
   /**
    * Paid work, national government, not armed forces
    */
-  Paidworknationalgovernmentnotarmedforces: "PWFG",
+  PWFG: "PWFG",
 
   /**
    * Paid work, local government, not armed forces
    */
-  Paidworklocalgovernmentnotarmedforces: "PWLG",
+  PWLG: "PWLG",
 
   /**
    * Paid non-governmental work, not self-employed
    */
-  Paidnongovernmentalworknotselfemployed: "PWNSE",
+  PWNSE: "PWNSE",
 
   /**
    * Paid work, self-employed
    */
-  Paidworkselfemployed: "PWSE",
+  PWSE: "PWSE",
 
   /**
    * Paid work, state government, not armed forces
    */
-  Paidworkstategovernmentnotarmedforces: "PWSG",
+  PWSG: "PWSG",
 
   /**
    * Unpaid non-governmental work, not self-employed
    */
-  Unpaidnongovernmentalworknotselfemployed: "UWNSE",
+  UWNSE: "UWNSE",
 
   /**
    * Unpaid work, self-employed
    */
-  Unpaidworkselfemployed: "UWSE",
+  UWSE: "UWSE",
 
   /**
    * Volunteer work (20 or more hours/week and not Disaster Response/ First Responder)
    */
-  Volunteerwork20ormorehoursweekandnotDisasterResponseFirstResponder: "VW",
+  VW: "VW",
 
   /**
    * Voluntary Disaster Response/First Responder
    */
-  VoluntaryDisasterResponseFirstResponder: "VWDR",
+  VWDR: "VWDR",
 } as const;
 
 /**

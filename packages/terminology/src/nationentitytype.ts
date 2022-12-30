@@ -8,7 +8,7 @@ export const NationEntityTypeCode = {
   /**
    * NationEntityType
    */
-  NationEntityType: "NAT",
+  NAT: "NAT",
 } as const;
 
 /**

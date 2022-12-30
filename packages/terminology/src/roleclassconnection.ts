@@ -6,17 +6,17 @@ export const RoleClassConnectionCode = {
   /**
    * connection
    */
-  connection: "CONC",
+  CONC: "CONC",
 
   /**
    * molecular bond
    */
-  molecularbond: "BOND",
+  BOND: "BOND",
 
   /**
    * continuity
    */
-  continuity: "CONY",
+  CONY: "CONY",
 } as const;
 
 /**

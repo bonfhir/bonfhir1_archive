@@ -6,1192 +6,1192 @@ export const AmericanIndianAlaskaNativeLanguagesCode = {
   /**
    * Haida
    */
-  Haida: "x-HAI",
+  "x-HAI": "x-HAI",
 
   /**
    * Kootenai
    */
-  Kootenai: "x-KUN",
+  "x-KUN": "x-KUN",
 
   /**
    * Plains Indian Sign Language
    */
-  PlainsIndianSignLanguage: "x-PSD",
+  "x-PSD": "x-PSD",
 
   /**
    * Yuchi
    */
-  Yuchi: "x-YUC",
+  "x-YUC": "x-YUC",
 
   /**
    * Zuni
    */
-  Zuni: "x-ZUN",
+  "x-ZUN": "x-ZUN",
 
   /**
    * Algonquian
    */
-  Algonquian: "_Algonquian",
+  _Algonquian: "_Algonquian",
 
   /**
    * Arapahoan
    */
-  Arapahoan: "_Arapahoan",
+  _Arapahoan: "_Arapahoan",
 
   /**
    * ArapahoGrosVentre
    */
-  ArapahoGrosVentre: "_ArapahoGrosVentre",
+  _ArapahoGrosVentre: "_ArapahoGrosVentre",
 
   /**
    * Arapaho
    */
-  Arapaho: "x-ARP",
+  "x-ARP": "x-ARP",
 
   /**
    * Gros Ventre
    */
-  GrosVentre: "x-ATS",
+  "x-ATS": "x-ATS",
 
   /**
    * CreeMontagnais
    */
-  CreeMontagnais: "_CreeMontagnais",
+  _CreeMontagnais: "_CreeMontagnais",
 
   /**
    * Cree
    */
-  Cree: "_Cree",
+  _Cree: "_Cree",
 
   /**
    * Western Cree
    */
-  WesternCree: "x-CRP",
+  "x-CRP": "x-CRP",
 
   /**
    * EasternAlgonquin
    */
-  EasternAlgonquin: "_EasternAlgonquin",
+  _EasternAlgonquin: "_EasternAlgonquin",
 
   /**
    * Abenakian
    */
-  Abenakian: "_Abenakian",
+  _Abenakian: "_Abenakian",
 
   /**
    * Eastern Abenaki
    */
-  EasternAbenaki: "x-AAQ",
+  "x-AAQ": "x-AAQ",
 
   /**
    * Western Abenaki
    */
-  WesternAbenaki: "x-ABE",
+  "x-ABE": "x-ABE",
 
   /**
    * Maliseet-Passamaquoddy
    */
-  MaliseetPassamaquoddy: "x-MAC",
+  "x-MAC": "x-MAC",
 
   /**
    * Delawaran
    */
-  Delawaran: "_Delawaran",
+  _Delawaran: "_Delawaran",
 
   /**
    * Unami Delaware
    */
-  UnamiDelaware: "x-DEL",
+  "x-DEL": "x-DEL",
 
   /**
    * Micmac
    */
-  Micmac: "x-MIC",
+  "x-MIC": "x-MIC",
 
   /**
    * Ojibwayan
    */
-  Ojibwayan: "_Ojibwayan",
+  _Ojibwayan: "_Ojibwayan",
 
   /**
    * Southern Ojibwa
    */
-  SouthernOjibwa: "x-OJB",
+  "x-OJB": "x-OJB",
 
   /**
    * Potawatami
    */
-  Potawatami: "x-POT",
+  "x-POT": "x-POT",
 
   /**
    * SaukFoxKickapoo
    */
-  SaukFoxKickapoo: "_SaukFoxKickapoo",
+  _SaukFoxKickapoo: "_SaukFoxKickapoo",
 
   /**
    * Kickapoo
    */
-  Kickapoo: "x-KIC",
+  "x-KIC": "x-KIC",
 
   /**
    * Mesquakie
    */
-  Mesquakie: "x-SAC",
+  "x-SAC": "x-SAC",
 
   /**
    * Shawnee
    */
-  Shawnee: "x-SJW",
+  "x-SJW": "x-SJW",
 
   /**
    * Blackfoot
    */
-  Blackfoot: "x-BLC",
+  "x-BLC": "x-BLC",
 
   /**
    * Cheyenne
    */
-  Cheyenne: "x-CHY",
+  "x-CHY": "x-CHY",
 
   /**
    * Menominee
    */
-  Menominee: "x-MEZ",
+  "x-MEZ": "x-MEZ",
 
   /**
    * Ritwan
    */
-  Ritwan: "_Ritwan",
+  _Ritwan: "_Ritwan",
 
   /**
    * Yurok
    */
-  Yurok: "x-YUR",
+  "x-YUR": "x-YUR",
 
   /**
    * Aleut
    */
-  Aleut: "_Aleut",
+  _Aleut: "_Aleut",
 
   /**
    * Aleut
    */
-  Aleut: "x-ALW",
+  "x-ALW": "x-ALW",
 
   /**
    * Eskimoan
    */
-  Eskimoan: "_Eskimoan",
+  _Eskimoan: "_Eskimoan",
 
   /**
    * InuitInupiaq
    */
-  InuitInupiaq: "_InuitInupiaq",
+  _InuitInupiaq: "_InuitInupiaq",
 
   /**
    * North Alaskan Inuktitut
    */
-  NorthAlaskanInuktitut: "x-ESI",
+  "x-ESI": "x-ESI",
 
   /**
    * Northwest Alaska Inuktitut
    */
-  NorthwestAlaskaInuktitut: "x-ESK",
+  "x-ESK": "x-ESK",
 
   /**
    * SirenikskiYupik
    */
-  SirenikskiYupik: "_SirenikskiYupik",
+  _SirenikskiYupik: "_SirenikskiYupik",
 
   /**
    * Pacific Yupik Gulf
    */
-  PacificYupikGulf: "x-EMS",
+  "x-EMS": "x-EMS",
 
   /**
    * Central Siberian Yupik
    */
-  CentralSiberianYupik: "x-ESS",
+  "x-ESS": "x-ESS",
 
   /**
    * Central Alaskan Yupik
    */
-  CentralAlaskanYupik: "x-ESU",
+  "x-ESU": "x-ESU",
 
   /**
    * NorthernCaddoan
    */
-  NorthernCaddoan: "_NorthernCaddoan",
+  _NorthernCaddoan: "_NorthernCaddoan",
 
   /**
    * Arikara
    */
-  Arikara: "x-ARI",
+  "x-ARI": "x-ARI",
 
   /**
    * Pawnee
    */
-  Pawnee: "x-PAW",
+  "x-PAW": "x-PAW",
 
   /**
    * Wichita
    */
-  Wichita: "x-WIC",
+  "x-WIC": "x-WIC",
 
   /**
    * SouthernCaddoan
    */
-  SouthernCaddoan: "_SouthernCaddoan",
+  _SouthernCaddoan: "_SouthernCaddoan",
 
   /**
    * Caddo
    */
-  Caddo: "x-CAD",
+  "x-CAD": "x-CAD",
 
   /**
    * Quileute
    */
-  Quileute: "x-QUI",
+  "x-QUI": "x-QUI",
 
   /**
    * CochimiYuman
    */
-  CochimiYuman: "_CochimiYuman",
+  _CochimiYuman: "_CochimiYuman",
 
   /**
    * Yuman
    */
-  Yuman: "_Yuman",
+  _Yuman: "_Yuman",
 
   /**
    * DeltaCalifornia
    */
-  DeltaCalifornia: "_DeltaCalifornia",
+  _DeltaCalifornia: "_DeltaCalifornia",
 
   /**
    * Diegueno
    */
-  Diegueno: "_Diegueno",
+  _Diegueno: "_Diegueno",
 
   /**
    * Kumeyaay
    */
-  Kumeyaay: "x-DIH",
+  "x-DIH": "x-DIH",
 
   /**
    * Cocopa
    */
-  Cocopa: "x-COC",
+  "x-COC": "x-COC",
 
   /**
    * Pai
    */
-  Pai: "_Pai",
+  _Pai: "_Pai",
 
   /**
    * Havasupai
    */
-  Havasupai: "x-YUF",
+  "x-YUF": "x-YUF",
 
   /**
    * River
    */
-  River: "_River",
+  _River: "_River",
 
   /**
    * Mohave
    */
-  Mohave: "x-MOV",
+  "x-MOV": "x-MOV",
 
   /**
    * Maricopa
    */
-  Maricopa: "x-MRC",
+  "x-MRC": "x-MRC",
 
   /**
    * Quechan
    */
-  Quechan: "x-YUM",
+  "x-YUM": "x-YUM",
 
   /**
    * Palaihnihan
    */
-  Palaihnihan: "_Palaihnihan",
+  _Palaihnihan: "_Palaihnihan",
 
   /**
    * Achumawi
    */
-  Achumawi: "x-ACH",
+  "x-ACH": "x-ACH",
 
   /**
    * Atsugewi
    */
-  Atsugewi: "x-ATW",
+  "x-ATW": "x-ATW",
 
   /**
    * Pomoan
    */
-  Pomoan: "_Pomoan",
+  _Pomoan: "_Pomoan",
 
   /**
    * Kashaya
    */
-  Kashaya: "x-KJU",
+  "x-KJU": "x-KJU",
 
   /**
    * Northeastern Pomo
    */
-  NortheasternPomo: "x-PEF",
+  "x-PEF": "x-PEF",
 
   /**
    * Southeastern Pomo
    */
-  SoutheasternPomo: "x-PEO",
+  "x-PEO": "x-PEO",
 
   /**
    * Southern Pomo
    */
-  SouthernPomo: "x-PEQ",
+  "x-PEQ": "x-PEQ",
 
   /**
    * Central Pomo
    */
-  CentralPomo: "x-POO",
+  "x-POO": "x-POO",
 
   /**
    * Shasta
    */
-  Shasta: "_Shasta",
+  _Shasta: "_Shasta",
 
   /**
    * Shasta
    */
-  Shasta: "x-SHT",
+  "x-SHT": "x-SHT",
 
   /**
    * Karok
    */
-  Karok: "x-KYH",
+  "x-KYH": "x-KYH",
 
   /**
    * Washoe
    */
-  Washoe: "x-WAS",
+  "x-WAS": "x-WAS",
 
   /**
    * NorthernIroquoian
    */
-  NorthernIroquoian: "_NorthernIroquoian",
+  _NorthernIroquoian: "_NorthernIroquoian",
 
   /**
    * Cayuga
    */
-  Cayuga: "x-CAY",
+  "x-CAY": "x-CAY",
 
   /**
    * Mohawk
    */
-  Mohawk: "x-MOH",
+  "x-MOH": "x-MOH",
 
   /**
    * Oneida
    */
-  Oneida: "x-ONE",
+  "x-ONE": "x-ONE",
 
   /**
    * Onondaga
    */
-  Onondaga: "x-ONO",
+  "x-ONO": "x-ONO",
 
   /**
    * Seneca
    */
-  Seneca: "x-SEE",
+  "x-SEE": "x-SEE",
 
   /**
    * Tuscarora
    */
-  Tuscarora: "x-TUS",
+  "x-TUS": "x-TUS",
 
   /**
    * Cherokee
    */
-  Cherokee: "x-CER",
+  "x-CER": "x-CER",
 
   /**
    * Rio Grande Keresan
    */
-  RioGrandeKeresan: "x-KEE",
+  "x-KEE": "x-KEE",
 
   /**
    * Acoma-Laguna
    */
-  AcomaLaguna: "x-KJQ",
+  "x-KJQ": "x-KJQ",
 
   /**
    * Tiwa
    */
-  Tiwa: "_Tiwa",
+  _Tiwa: "_Tiwa",
 
   /**
    * Northern Tiwa
    */
-  NorthernTiwa: "x-TAO",
+  "x-TAO": "x-TAO",
 
   /**
    * Southern Tiwa
    */
-  SouthernTiwa: "x-TIX",
+  "x-TIX": "x-TIX",
 
   /**
    * Kiowa
    */
-  Kiowa: "x-KIO",
+  "x-KIO": "x-KIO",
 
   /**
    * Tewa
    */
-  Tewa: "x-TEW",
+  "x-TEW": "x-TEW",
 
   /**
    * Jemez
    */
-  Jemez: "x-TOW",
+  "x-TOW": "x-TOW",
 
   /**
    * CentralMuskogean
    */
-  CentralMuskogean: "_CentralMuskogean",
+  _CentralMuskogean: "_CentralMuskogean",
 
   /**
    * Alabama
    */
-  Alabama: "x-AKZ",
+  "x-AKZ": "x-AKZ",
 
   /**
    * Koasati
    */
-  Koasati: "x-CKU",
+  "x-CKU": "x-CKU",
 
   /**
    * Mikasuki
    */
-  Mikasuki: "x-MIK",
+  "x-MIK": "x-MIK",
 
   /**
    * WesternMuskogean
    */
-  WesternMuskogean: "_WesternMuskogean",
+  _WesternMuskogean: "_WesternMuskogean",
 
   /**
    * Choctaw
    */
-  Choctaw: "x-CCT",
+  "x-CCT": "x-CCT",
 
   /**
    * Chickasaw
    */
-  Chickasaw: "x-CIC",
+  "x-CIC": "x-CIC",
 
   /**
    * Creek
    */
-  Creek: "x-CRK",
+  "x-CRK": "x-CRK",
 
   /**
    * AthapaskanEyak
    */
-  AthapaskanEyak: "_AthapaskanEyak",
+  _AthapaskanEyak: "_AthapaskanEyak",
 
   /**
    * Athapaskan
    */
-  Athapaskan: "_Athapaskan",
+  _Athapaskan: "_Athapaskan",
 
   /**
    * Apachean
    */
-  Apachean: "_Apachean",
+  _Apachean: "_Apachean",
 
   /**
    * EasternApachean
    */
-  EasternApachean: "_EasternApachean",
+  _EasternApachean: "_EasternApachean",
 
   /**
    * Jicarilla
    */
-  Jicarilla: "x-APJ",
+  "x-APJ": "x-APJ",
 
   /**
    * Lipan
    */
-  Lipan: "x-APL",
+  "x-APL": "x-APL",
 
   /**
    * WesternApachean
    */
-  WesternApachean: "_WesternApachean",
+  _WesternApachean: "_WesternApachean",
 
   /**
    * Mescalero-Chiricahua
    */
-  MescaleroChiricahua: "x-APM",
+  "x-APM": "x-APM",
 
   /**
    * Western Apache
    */
-  WesternApache: "x-APW",
+  "x-APW": "x-APW",
 
   /**
    * Dine
    */
-  Dine: "x-NAV",
+  "x-NAV": "x-NAV",
 
   /**
    * Kiowa Apache
    */
-  KiowaApache: "x-APK",
+  "x-APK": "x-APK",
 
   /**
    * CentralAlaskaYukon
    */
-  CentralAlaskaYukon: "_CentralAlaskaYukon",
+  _CentralAlaskaYukon: "_CentralAlaskaYukon",
 
   /**
    * KoyukonIngalik
    */
-  KoyukonIngalik: "_KoyukonIngalik",
+  _KoyukonIngalik: "_KoyukonIngalik",
 
   /**
    * Holikachuk
    */
-  Holikachuk: "x-HOI",
+  "x-HOI": "x-HOI",
 
   /**
    * Degexit'an
    */
-  Degexitan: "x-ING",
+  "x-ING": "x-ING",
 
   /**
    * Koyukon
    */
-  Koyukon: "x-KOY",
+  "x-KOY": "x-KOY",
 
   /**
    * KutchinHan
    */
-  KutchinHan: "_KutchinHan",
+  _KutchinHan: "_KutchinHan",
 
   /**
    * Han
    */
-  Han: "x-HAA",
+  "x-HAA": "x-HAA",
 
   /**
    * Kutchin
    */
-  Kutchin: "x-KUC",
+  "x-KUC": "x-KUC",
 
   /**
    * TananaTutchone
    */
-  TananaTutchone: "_TananaTutchone",
+  _TananaTutchone: "_TananaTutchone",
 
   /**
    * Tanana
    */
-  Tanana: "_Tanana",
+  _Tanana: "_Tanana",
 
   /**
    * Lower Tanana
    */
-  LowerTanana: "x-TAA",
+  "x-TAA": "x-TAA",
 
   /**
    * Upper Tanana
    */
-  UpperTanana: "x-TAU",
+  "x-TAU": "x-TAU",
 
   /**
    * Tanacross
    */
-  Tanacross: "x-TCB",
+  "x-TCB": "x-TCB",
 
   /**
    * Upper Kuskokwim
    */
-  UpperKuskokwim: "x-KUU",
+  "x-KUU": "x-KUU",
 
   /**
    * PacificCoastAthapaskan
    */
-  PacificCoastAthapaskan: "_PacificCoastAthapaskan",
+  _PacificCoastAthapaskan: "_PacificCoastAthapaskan",
 
   /**
    * CaliforniaAthapaskan
    */
-  CaliforniaAthapaskan: "_CaliforniaAthapaskan",
+  _CaliforniaAthapaskan: "_CaliforniaAthapaskan",
 
   /**
    * Hupa
    */
-  Hupa: "x-HUP",
+  "x-HUP": "x-HUP",
 
   /**
    * Cahto
    */
-  Cahto: "x-KTW",
+  "x-KTW": "x-KTW",
 
   /**
    * OregonAthapaskan
    */
-  OregonAthapaskan: "_OregonAthapaskan",
+  _OregonAthapaskan: "_OregonAthapaskan",
 
   /**
    * Tolowa
    */
-  Tolowa: "x-TOL",
+  "x-TOL": "x-TOL",
 
   /**
    * Tututni
    */
-  Tututni: "x-TUU",
+  "x-TUU": "x-TUU",
 
   /**
    * SouthernAlaska
    */
-  SouthernAlaska: "_SouthernAlaska",
+  _SouthernAlaska: "_SouthernAlaska",
 
   /**
    * Ahtna
    */
-  Ahtna: "x-AHT",
+  "x-AHT": "x-AHT",
 
   /**
    * Tanaina
    */
-  Tanaina: "x-TFN",
+  "x-TFN": "x-TFN",
 
   /**
    * Eyak
    */
-  Eyak: "x-EYA",
+  "x-EYA": "x-EYA",
 
   /**
    * Tlingit
    */
-  Tlingit: "x-TLI",
+  "x-TLI": "x-TLI",
 
   /**
    * Chinookan
    */
-  Chinookan: "_Chinookan",
+  _Chinookan: "_Chinookan",
 
   /**
    * UpperChinook
    */
-  UpperChinook: "_UpperChinook",
+  _UpperChinook: "_UpperChinook",
 
   /**
    * Kiksht
    */
-  Kiksht: "x-WAC",
+  "x-WAC": "x-WAC",
 
   /**
    * Coosan
    */
-  Coosan: "_Coosan",
+  _Coosan: "_Coosan",
 
   /**
    * Hanis
    */
-  Hanis: "x-COS",
+  "x-COS": "x-COS",
 
   /**
    * Maiduan
    */
-  Maiduan: "_Maiduan",
+  _Maiduan: "_Maiduan",
 
   /**
    * Northwest Maidu
    */
-  NorthwestMaidu: "x-MAI",
+  "x-MAI": "x-MAI",
 
   /**
    * Northeast Maidu
    */
-  NortheastMaidu: "x-NMU",
+  "x-NMU": "x-NMU",
 
   /**
    * Nisenan
    */
-  Nisenan: "x-NSZ",
+  "x-NSZ": "x-NSZ",
 
   /**
    * PlateauPenutian
    */
-  PlateauPenutian: "_PlateauPenutian",
+  _PlateauPenutian: "_PlateauPenutian",
 
   /**
    * Sahaptian
    */
-  Sahaptian: "_Sahaptian",
+  _Sahaptian: "_Sahaptian",
 
   /**
    * Umatilla
    */
-  Umatilla: "x-UMA",
+  "x-UMA": "x-UMA",
 
   /**
    * Walla Walla
    */
-  WallaWalla: "x-WAA",
+  "x-WAA": "x-WAA",
 
   /**
    * Tenino
    */
-  Tenino: "x-WAR",
+  "x-WAR": "x-WAR",
 
   /**
    * Yakima
    */
-  Yakima: "x-YAK",
+  "x-YAK": "x-YAK",
 
   /**
    * Klamath-Modoc
    */
-  KlamathModoc: "x-KLA",
+  "x-KLA": "x-KLA",
 
   /**
    * Nez Perce
    */
-  NezPerce: "x-NEZ",
+  "x-NEZ": "x-NEZ",
 
   /**
    * Takelman
    */
-  Takelman: "_Takelman",
+  _Takelman: "_Takelman",
 
   /**
    * Kalapuyan
    */
-  Kalapuyan: "_Kalapuyan",
+  _Kalapuyan: "_Kalapuyan",
 
   /**
    * Central Kalapuyan
    */
-  CentralKalapuyan: "x-KAL",
+  "x-KAL": "x-KAL",
 
   /**
    * Tsimshianic
    */
-  Tsimshianic: "_Tsimshianic",
+  _Tsimshianic: "_Tsimshianic",
 
   /**
    * Coast Tsimshain
    */
-  CoastTsimshain: "x-TSI",
+  "x-TSI": "x-TSI",
 
   /**
    * Utian
    */
-  Utian: "_Utian",
+  _Utian: "_Utian",
 
   /**
    * Miwokan
    */
-  Miwokan: "_Miwokan",
+  _Miwokan: "_Miwokan",
 
   /**
    * EasternMiwok
    */
-  EasternMiwok: "_EasternMiwok",
+  _EasternMiwok: "_EasternMiwok",
 
   /**
    * Central Sierra Miwok
    */
-  CentralSierraMiwok: "x-CSM",
+  "x-CSM": "x-CSM",
 
   /**
    * Northern Sierra Miwok
    */
-  NorthernSierraMiwok: "x-NSQ",
+  "x-NSQ": "x-NSQ",
 
   /**
    * Plains Miwok
    */
-  PlainsMiwok: "x-PMW",
+  "x-PMW": "x-PMW",
 
   /**
    * Southern Sierra Miwok
    */
-  SouthernSierraMiwok: "x-SKD",
+  "x-SKD": "x-SKD",
 
   /**
    * WesternMiwok
    */
-  WesternMiwok: "_WesternMiwok",
+  _WesternMiwok: "_WesternMiwok",
 
   /**
    * Coast Miwok
    */
-  CoastMiwok: "x-CSI",
+  "x-CSI": "x-CSI",
 
   /**
    * Lake Miwok
    */
-  LakeMiwok: "x-LMW",
+  "x-LMW": "x-LMW",
 
   /**
    * Wintuan
    */
-  Wintuan: "_Wintuan",
+  _Wintuan: "_Wintuan",
 
   /**
    * Wintu-Nomlaki
    */
-  WintuNomlaki: "x-WIT",
+  "x-WIT": "x-WIT",
 
   /**
    * Yokutsan
    */
-  Yokutsan: "_Yokutsan",
+  _Yokutsan: "_Yokutsan",
 
   /**
    * Kings River
    */
-  KingsRiver: "x-ENH",
+  "x-ENH": "x-ENH",
 
   /**
    * Gashowu
    */
-  Gashowu: "x-GSH",
+  "x-GSH": "x-GSH",
 
   /**
    * Poso Creek
    */
-  PosoCreek: "x-PYL",
+  "x-PYL": "x-PYL",
 
   /**
    * Tule-Kaweah
    */
-  TuleKaweah: "x-TKH",
+  "x-TKH": "x-TKH",
 
   /**
    * Chinook Wawa
    */
-  ChinookWawa: "x-CHH",
+  "x-CHH": "x-CHH",
 
   /**
    * CentralSalish
    */
-  CentralSalish: "_CentralSalish",
+  _CentralSalish: "_CentralSalish",
 
   /**
    * Clallam
    */
-  Clallam: "x-CLM",
+  "x-CLM": "x-CLM",
 
   /**
    * Lushootseed
    */
-  Lushootseed: "x-LUT",
+  "x-LUT": "x-LUT",
 
   /**
    * Northern Straits
    */
-  NorthernStraits: "x-STR",
+  "x-STR": "x-STR",
 
   /**
    * InteriorSalish
    */
-  InteriorSalish: "_InteriorSalish",
+  _InteriorSalish: "_InteriorSalish",
 
   /**
    * Columbian
    */
-  Columbian: "x-COL",
+  "x-COL": "x-COL",
 
   /**
    * Coeur D'alene
    */
-  CoeurDalene: "x-CRD",
+  "x-CRD": "x-CRD",
 
   /**
    * Kalispel
    */
-  Kalispel: "x-FLA",
+  "x-FLA": "x-FLA",
 
   /**
    * Okanagan
    */
-  Okanagan: "x-OKA",
+  "x-OKA": "x-OKA",
 
   /**
    * Tsamosan
    */
-  Tsamosan: "_Tsamosan",
+  _Tsamosan: "_Tsamosan",
 
   /**
    * Lower Chehalis
    */
-  LowerChehalis: "x-CEA",
+  "x-CEA": "x-CEA",
 
   /**
    * Upper Chehalis
    */
-  UpperChehalis: "x-CJH",
+  "x-CJH": "x-CJH",
 
   /**
    * Cowlitz
    */
-  Cowlitz: "x-COW",
+  "x-COW": "x-COW",
 
   /**
    * Quinault
    */
-  Quinault: "x-QUN",
+  "x-QUN": "x-QUN",
 
   /**
    * Siouan
    */
-  Siouan: "_Siouan",
+  _Siouan: "_Siouan",
 
   /**
    * MississippiValley
    */
-  MississippiValley: "_MississippiValley",
+  _MississippiValley: "_MississippiValley",
 
   /**
    * ChiwereWinnebago
    */
-  ChiwereWinnebago: "_ChiwereWinnebago",
+  _ChiwereWinnebago: "_ChiwereWinnebago",
 
   /**
    * Chiwere
    */
-  Chiwere: "x-IOW",
+  "x-IOW": "x-IOW",
 
   /**
    * Hocak
    */
-  Hocak: "x-WIN",
+  "x-WIN": "x-WIN",
 
   /**
    * Dakotan
    */
-  Dakotan: "_Dakotan",
+  _Dakotan: "_Dakotan",
 
   /**
    * Assiniboine
    */
-  Assiniboine: "x-ASB",
+  "x-ASB": "x-ASB",
 
   /**
    * Dakota
    */
-  Dakota: "x-DHG",
+  "x-DHG": "x-DHG",
 
   /**
    * Lakota
    */
-  Lakota: "x-LKT",
+  "x-LKT": "x-LKT",
 
   /**
    * Nakota
    */
-  Nakota: "x-NKT",
+  "x-NKT": "x-NKT",
 
   /**
    * Dhegiha
    */
-  Dhegiha: "_Dhegiha",
+  _Dhegiha: "_Dhegiha",
 
   /**
    * Kansa
    */
-  Kansa: "x-KAA",
+  "x-KAA": "x-KAA",
 
   /**
    * Omaha-Ponca
    */
-  OmahaPonca: "x-OMA",
+  "x-OMA": "x-OMA",
 
   /**
    * Osage
    */
-  Osage: "x-OSA",
+  "x-OSA": "x-OSA",
 
   /**
    * Quapaw
    */
-  Quapaw: "x-QUA",
+  "x-QUA": "x-QUA",
 
   /**
    * MissouriRiver
    */
-  MissouriRiver: "_MissouriRiver",
+  _MissouriRiver: "_MissouriRiver",
 
   /**
    * Crow
    */
-  Crow: "x-CRO",
+  "x-CRO": "x-CRO",
 
   /**
    * Hidatsa
    */
-  Hidatsa: "x-HID",
+  "x-HID": "x-HID",
 
   /**
    * Mandan
    */
-  Mandan: "x-MHQ",
+  "x-MHQ": "x-MHQ",
 
   /**
    * Numic
    */
-  Numic: "_Numic",
+  _Numic: "_Numic",
 
   /**
    * CentralNumic
    */
-  CentralNumic: "_CentralNumic",
+  _CentralNumic: "_CentralNumic",
 
   /**
    * Comanche
    */
-  Comanche: "x-COM",
+  "x-COM": "x-COM",
 
   /**
    * Panamint
    */
-  Panamint: "x-PAR",
+  "x-PAR": "x-PAR",
 
   /**
    * Shoshone
    */
-  Shoshone: "x-SHH",
+  "x-SHH": "x-SHH",
 
   /**
    * SouthernNumic
    */
-  SouthernNumic: "_SouthernNumic",
+  _SouthernNumic: "_SouthernNumic",
 
   /**
    * Kawaiisu
    */
-  Kawaiisu: "x-KAW",
+  "x-KAW": "x-KAW",
 
   /**
    * Ute-Southern Paiute
    */
-  UteSouthernPaiute: "x-UTE",
+  "x-UTE": "x-UTE",
 
   /**
    * WesternNumic
    */
-  WesternNumic: "_WesternNumic",
+  _WesternNumic: "_WesternNumic",
 
   /**
    * Mono
    */
-  Mono: "x-MON",
+  "x-MON": "x-MON",
 
   /**
    * Northern Paiute-Bannock
    */
-  NorthernPaiuteBannock: "x-PAO",
+  "x-PAO": "x-PAO",
 
   /**
    * Takic
    */
-  Takic: "_Takic",
+  _Takic: "_Takic",
 
   /**
    * Cupan
    */
-  Cupan: "_Cupan",
+  _Cupan: "_Cupan",
 
   /**
    * Cahuilla
    */
-  Cahuilla: "x-CHL",
+  "x-CHL": "x-CHL",
 
   /**
    * Cupeno
    */
-  Cupeno: "x-CUP",
+  "x-CUP": "x-CUP",
 
   /**
    * Luiseno
    */
-  Luiseno: "x-LUI",
+  "x-LUI": "x-LUI",
 
   /**
    * SerranoGabrielino
    */
-  SerranoGabrielino: "_SerranoGabrielino",
+  _SerranoGabrielino: "_SerranoGabrielino",
 
   /**
    * Serrano
    */
-  Serrano: "x-SER",
+  "x-SER": "x-SER",
 
   /**
    * Taracahitan
    */
-  Taracahitan: "_Taracahitan",
+  _Taracahitan: "_Taracahitan",
 
   /**
    * Cahitan
    */
-  Cahitan: "_Cahitan",
+  _Cahitan: "_Cahitan",
 
   /**
    * Yaqui
    */
-  Yaqui: "x-YAQ",
+  "x-YAQ": "x-YAQ",
 
   /**
    * Tepiman
    */
-  Tepiman: "_Tepiman",
+  _Tepiman: "_Tepiman",
 
   /**
    * Papago-Pima
    */
-  PapagoPima: "x-PAP",
+  "x-PAP": "x-PAP",
 
   /**
    * Hopi
    */
-  Hopi: "x-HOP",
+  "x-HOP": "x-HOP",
 
   /**
    * Tubatululabal
    */
-  Tubatululabal: "x-TUB",
+  "x-TUB": "x-TUB",
 
   /**
    * Nootkan
    */
-  Nootkan: "_Nootkan",
+  _Nootkan: "_Nootkan",
 
   /**
    * Makah
    */
-  Makah: "x-MYH",
+  "x-MYH": "x-MYH",
 
   /**
    * Wappo
    */
-  Wappo: "x-WAO",
+  "x-WAO": "x-WAO",
 
   /**
    * Yuki
    */
-  Yuki: "x-YUK",
+  "x-YUK": "x-YUK",
 } as const;
 
 /**

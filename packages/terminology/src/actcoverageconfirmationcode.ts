@@ -6,34 +6,34 @@ export const ActCoverageConfirmationCodeCode = {
   /**
    * ActCoverageAuthorizationConfirmationCode
    */
-  ActCoverageAuthorizationConfirmationCode:
+  _ActCoverageAuthorizationConfirmationCode:
     "_ActCoverageAuthorizationConfirmationCode",
 
   /**
    * Authorized
    */
-  Authorized: "AUTH",
+  AUTH: "AUTH",
 
   /**
    * Not Authorized
    */
-  NotAuthorized: "NAUTH",
+  NAUTH: "NAUTH",
 
   /**
    * ActCoverageEligibilityConfirmationCode
    */
-  ActCoverageEligibilityConfirmationCode:
+  _ActCoverageEligibilityConfirmationCode:
     "_ActCoverageEligibilityConfirmationCode",
 
   /**
    * Eligible
    */
-  Eligible: "ELG",
+  ELG: "ELG",
 
   /**
    * Not Eligible
    */
-  NotEligible: "NELG",
+  NELG: "NELG",
 } as const;
 
 /**

@@ -6,12 +6,12 @@ export const Hl7VSYesNoIndicatorCode = {
   /**
    * Yes
    */
-  Yes: "Y",
+  Y: "Y",
 
   /**
    * No
    */
-  No: "N",
+  N: "N",
 } as const;
 
 /**

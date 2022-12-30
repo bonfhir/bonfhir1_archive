@@ -6,47 +6,47 @@ export const OintmentDrugFormCode = {
   /**
    * Ointment
    */
-  Ointment: "OINT",
+  OINT: "OINT",
 
   /**
    * Nasal Ointment
    */
-  NasalOintment: "NASOINT",
+  NASOINT: "NASOINT",
 
   /**
    * Ointment with Applicator
    */
-  OintmentwithApplicator: "OINTAPL",
+  OINTAPL: "OINTAPL",
 
   /**
    * Ophthalmic Ointment
    */
-  OphthalmicOintment: "OPOINT",
+  OPOINT: "OPOINT",
 
   /**
    * Otic Ointment
    */
-  OticOintment: "OTOINT",
+  OTOINT: "OTOINT",
 
   /**
    * Rectal Ointment
    */
-  RectalOintment: "RECOINT",
+  RECOINT: "RECOINT",
 
   /**
    * Topical Ointment
    */
-  TopicalOintment: "TOPOINT",
+  TOPOINT: "TOPOINT",
 
   /**
    * Vaginal Ointment
    */
-  VaginalOintment: "VAGOINT",
+  VAGOINT: "VAGOINT",
 
   /**
    * Vaginal Ointment with Applicator
    */
-  VaginalOintmentwithApplicator: "VAGOINTAPL",
+  VAGOINTAPL: "VAGOINTAPL",
 } as const;
 
 /**

@@ -6,17 +6,17 @@ export const ExpansionProcessingRuleCode = {
   /**
    * All Codes
    */
-  AllCodes: "all-codes",
+  "all-codes": "all-codes",
 
   /**
    * Groups + Ungrouped codes
    */
-  GroupsUngroupedcodes: "ungrouped",
+  ungrouped: "ungrouped",
 
   /**
    * Groups Only
    */
-  GroupsOnly: "groups-only",
+  "groups-only": "groups-only",
 } as const;
 
 /**

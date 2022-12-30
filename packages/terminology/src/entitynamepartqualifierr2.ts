@@ -6,42 +6,42 @@ export const EntityNamePartQualifierR2Code = {
   /**
    * acquired
    */
-  acquired: "AD",
+  AD: "AD",
 
   /**
    * spouse
    */
-  spouse: "SP",
+  SP: "SP",
 
   /**
    * birth
    */
-  birth: "BR",
+  BR: "BR",
 
   /**
    * callme
    */
-  callme: "CL",
+  CL: "CL",
 
   /**
    * initial
    */
-  initial: "IN",
+  IN: "IN",
 
   /**
    * legal status
    */
-  legalstatus: "LS",
+  LS: "LS",
 
   /**
    * middle name
    */
-  middlename: "MID",
+  MID: "MID",
 
   /**
    * prefix
    */
-  prefix: "PFX",
+  PFX: "PFX",
 
   /**
    * PharmaceuticalEntityNamePartQualifiers
@@ -52,67 +52,67 @@ export const EntityNamePartQualifierR2Code = {
   /**
    * container name
    */
-  containername: "CON",
+  CON: "CON",
 
   /**
    * device name
    */
-  devicename: "DEV",
+  DEV: "DEV",
 
   /**
    * FlavorName
    */
-  FlavorName: "FLAV",
+  FLAV: "FLAV",
 
   /**
    * FormulationPartName
    */
-  FormulationPartName: "FORMUL",
+  FORMUL: "FORMUL",
 
   /**
    * form name
    */
-  formname: "FRM",
+  FRM: "FRM",
 
   /**
    * invented name
    */
-  inventedname: "INV",
+  INV: "INV",
 
   /**
    * TargetPopulationName
    */
-  TargetPopulationName: "POPUL",
+  POPUL: "POPUL",
 
   /**
    * scientific name
    */
-  scientificname: "SCI",
+  SCI: "SCI",
 
   /**
    * strength name
    */
-  strengthname: "STR",
+  STR: "STR",
 
   /**
    * TimeOrPeriodName
    */
-  TimeOrPeriodName: "TIME",
+  TIME: "TIME",
 
   /**
    * trademark name
    */
-  trademarkname: "TMK",
+  TMK: "TMK",
 
   /**
    * intended use name
    */
-  intendedusename: "USE",
+  USE: "USE",
 
   /**
    * suffix
    */
-  suffix: "SFX",
+  SFX: "SFX",
 
   /**
    * TitleStyles
@@ -122,27 +122,27 @@ export const EntityNamePartQualifierR2Code = {
   /**
    * academic
    */
-  academic: "AC",
+  AC: "AC",
 
   /**
    * honorific
    */
-  honorific: "HON",
+  HON: "HON",
 
   /**
    * honorific
    */
-  honorific: "HOM",
+  HOM: "HOM",
 
   /**
    * nobility
    */
-  nobility: "NB",
+  NB: "NB",
 
   /**
    * professional
    */
-  professional: "PR",
+  PR: "PR",
 } as const;
 
 /**

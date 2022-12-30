@@ -6,17 +6,17 @@ export const NaturalChildCode = {
   /**
    * natural child
    */
-  naturalchild: "NCHILD",
+  NCHILD: "NCHILD",
 
   /**
    * natural daughter
    */
-  naturaldaughter: "DAU",
+  DAU: "DAU",
 
   /**
    * natural son
    */
-  naturalson: "SON",
+  SON: "SON",
 } as const;
 
 /**

@@ -6,32 +6,32 @@ export const VideoMediaTypeCode = {
   /**
    * MP4 Video
    */
-  MP4Video: "video/mp4",
+  "video/mp4": "video/mp4",
 
   /**
    * MPEG Video
    */
-  MPEGVideo: "video/mpeg",
+  "video/mpeg": "video/mpeg",
 
   /**
    * QuickTime Video
    */
-  QuickTimeVideo: "video/quicktime",
+  "video/quicktime": "video/quicktime",
 
   /**
    * WebM Video
    */
-  WebMVideo: "video/webm",
+  "video/webm": "video/webm",
 
   /**
    * X-AVI Video
    */
-  XAVIVideo: "video/x-avi",
+  "video/x-avi": "video/x-avi",
 
   /**
    * Windows Media Video
    */
-  WindowsMediaVideo: "video/x-ms-wmv",
+  "video/x-ms-wmv": "video/x-ms-wmv",
 } as const;
 
 /**

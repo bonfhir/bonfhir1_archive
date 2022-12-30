@@ -6,17 +6,17 @@ export const ActClassContractCode = {
   /**
    * contract
    */
-  contract: "CNTRCT",
+  CNTRCT: "CNTRCT",
 
   /**
    * financial contract
    */
-  financialcontract: "FCNTRCT",
+  FCNTRCT: "FCNTRCT",
 
   /**
    * coverage
    */
-  coverage: "COV",
+  COV: "COV",
 } as const;
 
 /**

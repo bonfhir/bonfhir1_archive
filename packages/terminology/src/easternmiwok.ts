@@ -6,22 +6,22 @@ export const EasternMiwokCode = {
   /**
    * Central Sierra Miwok
    */
-  CentralSierraMiwok: "x-CSM",
+  "x-CSM": "x-CSM",
 
   /**
    * Northern Sierra Miwok
    */
-  NorthernSierraMiwok: "x-NSQ",
+  "x-NSQ": "x-NSQ",
 
   /**
    * Plains Miwok
    */
-  PlainsMiwok: "x-PMW",
+  "x-PMW": "x-PMW",
 
   /**
    * Southern Sierra Miwok
    */
-  SouthernSierraMiwok: "x-SKD",
+  "x-SKD": "x-SKD",
 } as const;
 
 /**

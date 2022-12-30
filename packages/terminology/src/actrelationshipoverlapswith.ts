@@ -6,77 +6,77 @@ export const ActRelationshipOverlapsWithCode = {
   /**
    * overlaps with
    */
-  overlapswith: "OVERLAP",
+  OVERLAP: "OVERLAP",
 
   /**
    * ends concurrent with
    */
-  endsconcurrentwith: "ECW",
+  ECW: "ECW",
 
   /**
    * concurrent with
    */
-  concurrentwith: "CONCURRENT",
+  CONCURRENT: "CONCURRENT",
 
   /**
    * starts before start of, ends with
    */
-  startsbeforestartofendswith: "SBSECWE",
+  SBSECWE: "SBSECWE",
 
   /**
    * ends during
    */
-  endsduring: "EDU",
+  EDU: "EDU",
 
   /**
    * contains start of, ends before end of
    */
-  containsstartofendsbeforeendof: "SBSEASEBE",
+  SBSEASEBE: "SBSEASEBE",
 
   /**
    * starts with. ends before end of
    */
-  startswithendsbeforeendof: "SCWSEBE",
+  SCWSEBE: "SCWSEBE",
 
   /**
    * contains end of
    */
-  containsendof: "SBEEAE",
+  SBEEAE: "SBEEAE",
 
   /**
    * start after start of, contains end of
    */
-  startafterstartofcontainsendof: "SASSBEEAS",
+  SASSBEEAS: "SASSBEEAS",
 
   /**
    * contains time of
    */
-  containstimeof: "SBSEAE",
+  SBSEAE: "SBSEAE",
 
   /**
    * starts with, ends after end of
    */
-  startswithendsafterendof: "SCWSEAE",
+  SCWSEAE: "SCWSEAE",
 
   /**
    * contains start of
    */
-  containsstartof: "SBSEAS",
+  SBSEAS: "SBSEAS",
 
   /**
    * starts concurrent with
    */
-  startsconcurrentwith: "SCW",
+  SCW: "SCW",
 
   /**
    * starts concurrent with end of
    */
-  startsconcurrentwithendof: "SCWE",
+  SCWE: "SCWE",
 
   /**
    * starts during
    */
-  startsduring: "SDU",
+  SDU: "SDU",
 } as const;
 
 /**

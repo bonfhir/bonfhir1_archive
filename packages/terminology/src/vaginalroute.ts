@@ -6,17 +6,17 @@ export const VaginalRouteCode = {
   /**
    * Douche, vaginal
    */
-  Douchevaginal: "DOUCHE",
+  DOUCHE: "DOUCHE",
 
   /**
    * Insertion, vaginal
    */
-  Insertionvaginal: "VAGINSI",
+  VAGINSI: "VAGINSI",
 
   /**
    * Topical application, vaginal
    */
-  Topicalapplicationvaginal: "VAGINS",
+  VAGINS: "VAGINS",
 } as const;
 
 /**

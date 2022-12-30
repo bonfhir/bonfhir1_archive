@@ -6,32 +6,32 @@ export const UnderwriterParticipationFunctionCode = {
   /**
    * UnderwriterParticipationFunction
    */
-  UnderwriterParticipationFunction: "_UnderwriterParticipationFunction",
+  _UnderwriterParticipationFunction: "_UnderwriterParticipationFunction",
 
   /**
    * payor contracting
    */
-  payorcontracting: "PAYORCNTR",
+  PAYORCNTR: "PAYORCNTR",
 
   /**
    * reinsures
    */
-  reinsures: "REINS",
+  REINS: "REINS",
 
   /**
    * retrocessionaires
    */
-  retrocessionaires: "RETROCES",
+  RETROCES: "RETROCES",
 
   /**
    * subcontracting risk
    */
-  subcontractingrisk: "SUBCTRT",
+  SUBCTRT: "SUBCTRT",
 
   /**
    * underwriting
    */
-  underwriting: "UNDERWRTNG",
+  UNDERWRTNG: "UNDERWRTNG",
 } as const;
 
 /**

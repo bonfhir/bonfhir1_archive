@@ -6,688 +6,687 @@ export const Hl7VSIdentifierTypeCode = {
   /**
    * Accreditation/Certification Identifier
    */
-  AccreditationCertificationIdentifier: "AC",
+  AC: "AC",
 
   /**
    * Accession ID
    */
-  AccessionID: "ACSN",
+  ACSN: "ACSN",
 
   /**
    * Animal Identification Number (US Official)
    */
-  AnimalIdentificationNumberUSOfficial: "AIN",
+  AIN: "AIN",
 
   /**
    * American Express
    */
-  AmericanExpress: "AM",
+  AM: "AM",
 
   /**
    * American Medical Association Number
    */
-  AmericanMedicalAssociationNumber: "AMA",
+  AMA: "AMA",
 
   /**
    * Account number
    */
-  Accountnumber: "AN",
+  AN: "AN",
 
   /**
    * Account number Creditor
    */
-  AccountnumberCreditor: "ANC",
+  ANC: "ANC",
 
   /**
    * Account number debitor
    */
-  Accountnumberdebitor: "AND",
+  AND: "AND",
 
   /**
    * Anonymous identifier
    */
-  Anonymousidentifier: "ANON",
+  ANON: "ANON",
 
   /**
    * Temporary Account Number
    */
-  TemporaryAccountNumber: "ANT",
+  ANT: "ANT",
 
   /**
    * Advanced Practice Registered Nurse number
    */
-  AdvancedPracticeRegisteredNursenumber: "APRN",
+  APRN: "APRN",
 
   /**
    * Ancestor Specimen ID
    */
-  AncestorSpecimenID: "ASID",
+  ASID: "ASID",
 
   /**
    * Bank Account Number
    */
-  BankAccountNumber: "BA",
+  BA: "BA",
 
   /**
    * Bank Card Number
    */
-  BankCardNumber: "BC",
+  BC: "BC",
 
   /**
    * Birth Certificate File Number
    */
-  BirthCertificateFileNumber: "BCFN",
+  BCFN: "BCFN",
 
   /**
    * Birth Certificate
    */
-  BirthCertificate: "BCT",
+  BCT: "BCT",
 
   /**
    * Birth registry number
    */
-  Birthregistrynumber: "BR",
+  BR: "BR",
 
   /**
    * Breed Registry Number
    */
-  BreedRegistryNumber: "BRN",
+  BRN: "BRN",
 
   /**
    * Primary physician office number
    */
-  Primaryphysicianofficenumber: "BSNR",
+  BSNR: "BSNR",
 
   /**
    * Consumer Application Account Identifier
    */
-  ConsumerApplicationAccountIdentifier: "CAAI",
+  CAAI: "CAAI",
 
   /**
    * Cost Center number
    */
-  CostCenternumber: "CC",
+  CC: "CC",
 
   /**
    * Change of Name Document
    */
-  ChangeofNameDocument: "CONM",
+  CONM: "CONM",
 
   /**
    * County number
    */
-  Countynumber: "CY",
+  CY: "CY",
 
   /**
    * Citizenship Card
    */
-  CitizenshipCard: "CZ",
+  CZ: "CZ",
 
   /**
    * Death Certificate ID
    */
-  DeathCertificateID: "DC",
+  DC: "DC",
 
   /**
    * Death Certificate File Number
    */
-  DeathCertificateFileNumber: "DCFN",
+  DCFN: "DCFN",
 
   /**
    * Dentist license number
    */
-  Dentistlicensenumber: "DDS",
+  DDS: "DDS",
 
   /**
    * Drug Enforcement Administration registration number
    */
-  DrugEnforcementAdministrationregistrationnumber: "DEA",
+  DEA: "DEA",
 
   /**
    * Drug Furnishing or prescriptive authority Number
    */
-  DrugFurnishingorprescriptiveauthorityNumber: "DFN",
+  DFN: "DFN",
 
   /**
    * Diner's Club card
    */
-  DinersClubcard: "DI",
+  DI: "DI",
 
   /**
    * Driver's license number
    */
-  Driverslicensenumber: "DL",
+  DL: "DL",
 
   /**
    * Doctor number
    */
-  Doctornumber: "DN",
+  DN: "DN",
 
   /**
    * Osteopathic License number
    */
-  OsteopathicLicensenumber: "DO",
+  DO: "DO",
 
   /**
    * Diplomatic Passport
    */
-  DiplomaticPassport: "DP",
+  DP: "DP",
 
   /**
    * Podiatrist license number
    */
-  Podiatristlicensenumber: "DPM",
+  DPM: "DPM",
 
   /**
    * Donor Registration Number
    */
-  DonorRegistrationNumber: "DR",
+  DR: "DR",
 
   /**
    * Discover Card
    */
-  DiscoverCard: "DS",
+  DS: "DS",
 
   /**
    * Diagnostic Study Group
    */
-  DiagnosticStudyGroup: "DSG",
+  DSG: "DSG",
 
   /**
    * Employee number
    */
-  Employeenumber: "EI",
+  EI: "EI",
 
   /**
    * Employer number
    */
-  Employernumber: "EN",
+  EN: "EN",
 
   /**
    * Staff Enterprise Number
    */
-  StaffEnterpriseNumber: "ESN",
+  ESN: "ESN",
 
   /**
    * Fetal Death Report ID
    */
-  FetalDeathReportID: "FDR",
+  FDR: "FDR",
 
   /**
    * Fetal Death Report File Number
    */
-  FetalDeathReportFileNumber: "FDRFN",
+  FDRFN: "FDRFN",
 
   /**
    * Filler Group Number
    */
-  FillerGroupNumber: "FGN",
+  FGN: "FGN",
 
   /**
    * Facility ID
    */
-  FacilityID: "FI",
+  FI: "FI",
 
   /**
    * Filler Identifier
    */
-  FillerIdentifier: "FILL",
+  FILL: "FILL",
 
   /**
    * Guarantor internal identifier
    */
-  Guarantorinternalidentifier: "GI",
+  GI: "GI",
 
   /**
    * Animal Group Identifier (US Official)
    */
-  AnimalGroupIdentifierUSOfficial: "GIN",
+  GIN: "GIN",
 
   /**
    * General ledger number
    */
-  Generalledgernumber: "GL",
+  GL: "GL",
 
   /**
    * Guarantor external  identifier
    */
-  Guarantorexternalidentifier: "GN",
+  GN: "GN",
 
   /**
    * Health Card Number
    */
-  HealthCardNumber: "HC",
+  HC: "HC",
 
   /**
    * Indigenous/Aboriginal
    */
-  IndigenousAboriginal: "IND",
+  IND: "IND",
 
   /**
    * Jurisdictional health number
    */
-  Jurisdictionalhealthnumber: "JHN",
+  JHN: "JHN",
 
   /**
    * Laboratory Accession ID
    */
-  LaboratoryAccessionID: "LACSN",
+  LACSN: "LACSN",
 
   /**
    * Lifelong physician number
    */
-  Lifelongphysiciannumber: "LANR",
+  LANR: "LANR",
 
   /**
    * Labor and industries number
    */
-  Laborandindustriesnumber: "LI",
+  LI: "LI",
 
   /**
    * Labor and industries number
    */
-  Laborandindustriesnumber: "L&I",
+  "L&I": "L&I",
 
   /**
    * License number
    */
-  Licensenumber: "LN",
+  LN: "LN",
 
   /**
    * Local Registry ID
    */
-  LocalRegistryID: "LR",
+  LR: "LR",
 
   /**
    * Patient Medicaid number
    */
-  PatientMedicaidnumber: "MA",
+  MA: "MA",
 
   /**
    * Member Number
    */
-  MemberNumber: "MB",
+  MB: "MB",
 
   /**
    * Patient's Medicare number
    */
-  PatientsMedicarenumber: "MC",
+  MC: "MC",
 
   /**
    * Practitioner Medicaid number
    */
-  PractitionerMedicaidnumber: "MCD",
+  MCD: "MCD",
 
   /**
    * Microchip Number
    */
-  MicrochipNumber: "MCN",
+  MCN: "MCN",
 
   /**
    * Practitioner Medicare number
    */
-  PractitionerMedicarenumber: "MCR",
+  MCR: "MCR",
 
   /**
    * Marriage Certificate
    */
-  MarriageCertificate: "MCT",
+  MCT: "MCT",
 
   /**
    * Medical License number
    */
-  MedicalLicensenumber: "MD",
+  MD: "MD",
 
   /**
    * Military ID number
    */
-  MilitaryIDnumber: "MI",
+  MI: "MI",
 
   /**
    * Medical record number
    */
-  Medicalrecordnumber: "MR",
+  MR: "MR",
 
   /**
    * Temporary Medical Record Number
    */
-  TemporaryMedicalRecordNumber: "MRT",
+  MRT: "MRT",
 
   /**
    * MasterCard
    */
-  MasterCard: "MS",
+  MS: "MS",
 
   /**
    * Secondary physician office number
    */
-  Secondaryphysicianofficenumber: "NBSNR",
+  NBSNR: "NBSNR",
 
   /**
    * Naturalization Certificate
    */
-  NaturalizationCertificate: "NCT",
+  NCT: "NCT",
 
   /**
    * National employer identifier
    */
-  Nationalemployeridentifier: "NE",
+  NE: "NE",
 
   /**
    * National Health Plan Identifier
    */
-  NationalHealthPlanIdentifier: "NH",
+  NH: "NH",
 
   /**
    * National unique individual identifier
    */
-  Nationaluniqueindividualidentifier: "NI",
+  NI: "NI",
 
   /**
    * National Insurance Organization Identifier
    */
-  NationalInsuranceOrganizationIdentifier: "NII",
+  NII: "NII",
 
   /**
    * National Insurance Payor Identifier (Payor)
    */
-  NationalInsurancePayorIdentifierPayor: "NIIP",
+  NIIP: "NIIP",
 
   /**
    * National Person Identifier where the xxx is the ISO table 3166 3-character (alphabetic) country code
    */
-  NationalPersonIdentifierwherethexxxistheISOtable31663characteralphabeticcountrycode:
-    "NNxxx",
+  NNxxx: "NNxxx",
 
   /**
    * Nurse practitioner number
    */
-  Nursepractitionernumber: "NP",
+  NP: "NP",
 
   /**
    * National provider identifier
    */
-  Nationalprovideridentifier: "NPI",
+  NPI: "NPI",
 
   /**
    * Observation Instance Identifier
    */
-  ObservationInstanceIdentifier: "OBI",
+  OBI: "OBI",
 
   /**
    * Optometrist license number
    */
-  Optometristlicensenumber: "OD",
+  OD: "OD",
 
   /**
    * Physician Assistant number
    */
-  PhysicianAssistantnumber: "PA",
+  PA: "PA",
 
   /**
    * Parole Card
    */
-  ParoleCard: "PC",
+  PC: "PC",
 
   /**
    * Penitentiary/correctional institution Number
    */
-  PenitentiarycorrectionalinstitutionNumber: "PCN",
+  PCN: "PCN",
 
   /**
    * Living Subject Enterprise Number
    */
-  LivingSubjectEnterpriseNumber: "PE",
+  PE: "PE",
 
   /**
    * Pension Number
    */
-  PensionNumber: "PEN",
+  PEN: "PEN",
 
   /**
    * Placer Group Number
    */
-  PlacerGroupNumber: "PGN",
+  PGN: "PGN",
 
   /**
    * Public Health Case Identifier
    */
-  PublicHealthCaseIdentifier: "PHC",
+  PHC: "PHC",
 
   /**
    * Public Health Event Identifier
    */
-  PublicHealthEventIdentifier: "PHE",
+  PHE: "PHE",
 
   /**
    * Public Health Official ID
    */
-  PublicHealthOfficialID: "PHO",
+  PHO: "PHO",
 
   /**
    * Patient internal identifier
    */
-  Patientinternalidentifier: "PI",
+  PI: "PI",
 
   /**
    * Premises Identifier Number (US Official)
    */
-  PremisesIdentifierNumberUSOfficial: "PIN",
+  PIN: "PIN",
 
   /**
    * Placer Identifier
    */
-  PlacerIdentifier: "PLAC",
+  PLAC: "PLAC",
 
   /**
    * Person number
    */
-  Personnumber: "PN",
+  PN: "PN",
 
   /**
    * Temporary Living Subject Number
    */
-  TemporaryLivingSubjectNumber: "PNT",
+  PNT: "PNT",
 
   /**
    * Medicare/CMS Performing Provider Identification Number
    */
-  MedicareCMSPerformingProviderIdentificationNumber: "PPIN",
+  PPIN: "PPIN",
 
   /**
    * Passport number
    */
-  Passportnumber: "PPN",
+  PPN: "PPN",
 
   /**
    * Permanent Resident Card Number
    */
-  PermanentResidentCardNumber: "PRC",
+  PRC: "PRC",
 
   /**
    * Provider number
    */
-  Providernumber: "PRN",
+  PRN: "PRN",
 
   /**
    * Patient external identifier
    */
-  Patientexternalidentifier: "PT",
+  PT: "PT",
 
   /**
    * QA number
    */
-  QAnumber: "QA",
+  QA: "QA",
 
   /**
    * Resource identifier
    */
-  Resourceidentifier: "RI",
+  RI: "RI",
 
   /**
    * Registered Nurse Number
    */
-  RegisteredNurseNumber: "RN",
+  RN: "RN",
 
   /**
    * Pharmacist license number
    */
-  Pharmacistlicensenumber: "RPH",
+  RPH: "RPH",
 
   /**
    * Railroad Retirement number
    */
-  RailroadRetirementnumber: "RR",
+  RR: "RR",
 
   /**
    * Regional registry ID
    */
-  RegionalregistryID: "RRI",
+  RRI: "RRI",
 
   /**
    * Railroad Retirement Provider
    */
-  RailroadRetirementProvider: "RRP",
+  RRP: "RRP",
 
   /**
    * SAMN# accession Number
    */
-  SAMNaccessionNumber: "SAMN",
+  SAMN: "SAMN",
 
   /**
    * Social Beneficiary Identifier
    */
-  SocialBeneficiaryIdentifier: "SB",
+  SB: "SB",
 
   /**
    * Specimen ID
    */
-  SpecimenID: "SID",
+  SID: "SID",
 
   /**
    * State license
    */
-  Statelicense: "SL",
+  SL: "SL",
 
   /**
    * Subscriber Number
    */
-  SubscriberNumber: "SN",
+  SN: "SN",
 
   /**
    * State assigned NDBS card Identifier
    */
-  StateassignedNDBScardIdentifier: "SNBSN",
+  SNBSN: "SNBSN",
 
   /**
    * Serial Number
    */
-  SerialNumber: "SNO",
+  SNO: "SNO",
 
   /**
    * Study Permit
    */
-  StudyPermit: "SP",
+  SP: "SP",
 
   /**
    * State registry ID
    */
-  StateregistryID: "SR",
+  SR: "SR",
 
   /**
    * SRA Accession number
    */
-  SRAAccessionnumber: "SRX",
+  SRX: "SRX",
 
   /**
    * Social Security number
    */
-  SocialSecuritynumber: "SS",
+  SS: "SS",
 
   /**
    * Shipment Tracking Number
    */
-  ShipmentTrackingNumber: "STN",
+  STN: "STN",
 
   /**
    * Tax ID number
    */
-  TaxIDnumber: "TAX",
+  TAX: "TAX",
 
   /**
    * Treaty Number/ (Canada)
    */
-  TreatyNumberCanada: "TN",
+  TN: "TN",
 
   /**
    * Temporary Permanent Resident (Canada)
    */
-  TemporaryPermanentResidentCanada: "TPR",
+  TPR: "TPR",
 
   /**
    * Training License Number
    */
-  TrainingLicenseNumber: "TRL",
+  TRL: "TRL",
 
   /**
    * Unspecified identifier
    */
-  Unspecifiedidentifier: "U",
+  U: "U",
 
   /**
    * Universal Device Identifier
    */
-  UniversalDeviceIdentifier: "UDI",
+  UDI: "UDI",
 
   /**
    * Medicare/CMS (formerly HCFA)'s Universal Physician Identification numbers
    */
-  MedicareCMSformerlyHCFAsUniversalPhysicianIdentificationnumbers: "UPIN",
+  UPIN: "UPIN",
 
   /**
    * Unique Specimen ID
    */
-  UniqueSpecimenID: "USID",
+  USID: "USID",
 
   /**
    * Visit number
    */
-  Visitnumber: "VN",
+  VN: "VN",
 
   /**
    * Visitor Permit
    */
-  VisitorPermit: "VP",
+  VP: "VP",
 
   /**
    * VISA
    */
-  VISA: "VS",
+  VS: "VS",
 
   /**
    * WIC identifier
    */
-  WICidentifier: "WC",
+  WC: "WC",
 
   /**
    * Workers' Comp Number
    */
-  WorkersCompNumber: "WCN",
+  WCN: "WCN",
 
   /**
    * Work Permit
    */
-  WorkPermit: "WP",
+  WP: "WP",
 
   /**
    * Health Plan Identifier
    */
-  HealthPlanIdentifier: "XV",
+  XV: "XV",
 
   /**
    * Organization identifier
    */
-  Organizationidentifier: "XX",
+  XX: "XX",
 } as const;
 
 /**

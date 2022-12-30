@@ -6,17 +6,17 @@ export const BenefitCostApplicabilityCode = {
   /**
    * In Network
    */
-  InNetwork: "in-network",
+  "in-network": "in-network",
 
   /**
    * Out of Network
    */
-  OutofNetwork: "out-of-network",
+  "out-of-network": "out-of-network",
 
   /**
    * Other
    */
-  Other: "other",
+  other: "other",
 } as const;
 
 /**

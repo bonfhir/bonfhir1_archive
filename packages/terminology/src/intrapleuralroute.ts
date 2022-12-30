@@ -6,12 +6,12 @@ export const IntrapleuralRouteCode = {
   /**
    * Injection, intrapleural
    */
-  Injectionintrapleural: "IPLRINJ",
+  IPLRINJ: "IPLRINJ",
 
   /**
    * Instillation, chest tube
    */
-  Instillationchesttube: "CTINSTL",
+  CTINSTL: "CTINSTL",
 } as const;
 
 /**

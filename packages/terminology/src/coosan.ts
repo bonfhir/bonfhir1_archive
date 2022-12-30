@@ -6,7 +6,7 @@ export const CoosanCode = {
   /**
    * Hanis
    */
-  Hanis: "x-COS",
+  "x-COS": "x-COS",
 } as const;
 
 /**

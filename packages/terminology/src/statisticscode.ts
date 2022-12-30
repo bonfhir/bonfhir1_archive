@@ -6,107 +6,107 @@ export const StatisticsCodeCode = {
   /**
    * Average
    */
-  Average: "average",
+  average: "average",
 
   /**
    * Maximum
    */
-  Maximum: "maximum",
+  maximum: "maximum",
 
   /**
    * Minimum
    */
-  Minimum: "minimum",
+  minimum: "minimum",
 
   /**
    * Count
    */
-  Count: "count",
+  count: "count",
 
   /**
    * Total Count
    */
-  TotalCount: "total-count",
+  "total-count": "total-count",
 
   /**
    * Median
    */
-  Median: "median",
+  median: "median",
 
   /**
    * Standard Deviation
    */
-  StandardDeviation: "std-dev",
+  "std-dev": "std-dev",
 
   /**
    * Sum
    */
-  Sum: "sum",
+  sum: "sum",
 
   /**
    * Variance
    */
-  Variance: "variance",
+  variance: "variance",
 
   /**
    * 20th Percentile
    */
-  TwentythPercentile: "20-percent",
+  "20-percent": "20-percent",
 
   /**
    * 80th Percentile
    */
-  EightythPercentile: "80-percent",
+  "80-percent": "80-percent",
 
   /**
    * Lower Quartile
    */
-  LowerQuartile: "4-lower",
+  "4-lower": "4-lower",
 
   /**
    * Upper Quartile
    */
-  UpperQuartile: "4-upper",
+  "4-upper": "4-upper",
 
   /**
    * Quartile Deviation
    */
-  QuartileDeviation: "4-dev",
+  "4-dev": "4-dev",
 
   /**
    * 1st Quintile
    */
-  OnestQuintile: "5-1",
+  "5-1": "5-1",
 
   /**
    * 2nd Quintile
    */
-  TwondQuintile: "5-2",
+  "5-2": "5-2",
 
   /**
    * 3rd Quintile
    */
-  ThreerdQuintile: "5-3",
+  "5-3": "5-3",
 
   /**
    * 4th Quintile
    */
-  FourthQuintile: "5-4",
+  "5-4": "5-4",
 
   /**
    * Skew
    */
-  Skew: "skew",
+  skew: "skew",
 
   /**
    * Kurtosis
    */
-  Kurtosis: "kurtosis",
+  kurtosis: "kurtosis",
 
   /**
    * Regression
    */
-  Regression: "regression",
+  regression: "regression",
 } as const;
 
 /**

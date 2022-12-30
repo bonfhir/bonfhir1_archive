@@ -6,22 +6,22 @@ export const ImmunizationForecastDateCode = {
   /**
    * Earliest date to give
    */
-  Earliestdatetogive: "30981-5",
+  "30981-5": "30981-5",
 
   /**
    * Date vaccine due
    */
-  Datevaccinedue: "30980-7",
+  "30980-7": "30980-7",
 
   /**
    * Latest date to give immunization
    */
-  Latestdatetogiveimmunization: "59777-3",
+  "59777-3": "59777-3",
 
   /**
    * Date when overdue for immunization
    */
-  Datewhenoverdueforimmunization: "59778-1",
+  "59778-1": "59778-1",
 } as const;
 
 /**

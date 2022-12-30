@@ -6,17 +6,17 @@ export const Hl7VSOverrideTypeCode = {
   /**
    * Extension Override
    */
-  ExtensionOverride: "EXTN",
+  EXTN: "EXTN",
 
   /**
    * Interval Override
    */
-  IntervalOverride: "INLV",
+  INLV: "INLV",
 
   /**
    * Equivalence Override
    */
-  EquivalenceOverride: "EQV",
+  EQV: "EQV",
 } as const;
 
 /**

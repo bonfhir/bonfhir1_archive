@@ -6,17 +6,17 @@ export const Hl7VSTqConjunctionIdCode = {
   /**
    * Synchronous
    */
-  Synchronous: "S",
+  S: "S",
 
   /**
    * Asynchronous
    */
-  Asynchronous: "A",
+  A: "A",
 
   /**
    * Actuation Time
    */
-  ActuationTime: "C",
+  C: "C",
 } as const;
 
 /**

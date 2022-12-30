@@ -6,22 +6,22 @@ export const EpiduralRouteCode = {
   /**
    * Infusion, epidural
    */
-  Infusionepidural: "EPI",
+  EPI: "EPI",
 
   /**
    * Injection, epidural
    */
-  Injectionepidural: "EPIDURINJ",
+  EPIDURINJ: "EPIDURINJ",
 
   /**
    * Injection, epidural, push
    */
-  Injectionepiduralpush: "EPIINJ",
+  EPIINJ: "EPIINJ",
 
   /**
    * Injection, epidural, slow push
    */
-  Injectionepiduralslowpush: "EPINJSP",
+  EPINJSP: "EPINJSP",
 } as const;
 
 /**

@@ -6,7 +6,7 @@ export const RoleClassClinicalResearchInvestigatorCode = {
   /**
    * clinical research investigator
    */
-  clinicalresearchinvestigator: "CRINV",
+  CRINV: "CRINV",
 } as const;
 
 /**

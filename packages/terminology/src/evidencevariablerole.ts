@@ -21,12 +21,12 @@ export const EvidenceVariableRoleCode = {
   /**
    * reference exposure
    */
-  referenceexposure: "referenceExposure",
+  referenceExposure: "referenceExposure",
 
   /**
    * measured variable
    */
-  measuredvariable: "measuredVariable",
+  measuredVariable: "measuredVariable",
 
   /**
    * confounder

@@ -6,12 +6,12 @@ export const ActRelationshipExcerptCode = {
   /**
    * Excerpts
    */
-  Excerpts: "XCRPT",
+  XCRPT: "XCRPT",
 
   /**
    * Excerpt verbatim
    */
-  Excerptverbatim: "VRXCRPT",
+  VRXCRPT: "VRXCRPT",
 } as const;
 
 /**

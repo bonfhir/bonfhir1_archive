@@ -6,62 +6,62 @@ export const SupplyDetectedIssueCodeCode = {
   /**
    * already performed
    */
-  alreadyperformed: "ALLDONE",
+  ALLDONE: "ALLDONE",
 
   /**
    * fulfillment alert
    */
-  fulfillmentalert: "FULFIL",
+  FULFIL: "FULFIL",
 
   /**
    * no longer actionable
    */
-  nolongeractionable: "NOTACTN",
+  NOTACTN: "NOTACTN",
 
   /**
    * not equivalent alert
    */
-  notequivalentalert: "NOTEQUIV",
+  NOTEQUIV: "NOTEQUIV",
 
   /**
    * not generically equivalent alert
    */
-  notgenericallyequivalentalert: "NOTEQUIVGEN",
+  NOTEQUIVGEN: "NOTEQUIVGEN",
 
   /**
    * not therapeutically equivalent alert
    */
-  nottherapeuticallyequivalentalert: "NOTEQUIVTHER",
+  NOTEQUIVTHER: "NOTEQUIVTHER",
 
   /**
    * event timing incorrect alert
    */
-  eventtimingincorrectalert: "TIMING",
+  TIMING: "TIMING",
 
   /**
    * outside requested time
    */
-  outsiderequestedtime: "INTERVAL",
+  INTERVAL: "INTERVAL",
 
   /**
    * too soon within frequency based on the usage
    */
-  toosoonwithinfrequencybasedontheusage: "MINFREQ",
+  MINFREQ: "MINFREQ",
 
   /**
    * held/suspended alert
    */
-  heldsuspendedalert: "HELD",
+  HELD: "HELD",
 
   /**
    * Refill Too Late Alert
    */
-  RefillTooLateAlert: "TOOLATE",
+  TOOLATE: "TOOLATE",
 
   /**
    * Refill Too Soon Alert
    */
-  RefillTooSoonAlert: "TOOSOON",
+  TOOSOON: "TOOSOON",
 } as const;
 
 /**

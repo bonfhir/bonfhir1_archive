@@ -6,14 +6,12 @@ export const Hl7VSFileLevelEventCodeCode = {
   /**
    * Replace current version of this master file with the version contained in this message
    */
-  Replacecurrentversionofthismasterfilewiththeversioncontainedinthismessage:
-    "REP",
+  REP: "REP",
 
   /**
    * Change file records as defined in the record-level event codes for each record that follows
    */
-  Changefilerecordsasdefinedintherecordleveleventcodesforeachrecordthatfollows:
-    "UPD",
+  UPD: "UPD",
 } as const;
 
 /**

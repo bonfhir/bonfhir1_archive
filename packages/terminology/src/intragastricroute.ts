@@ -6,17 +6,17 @@ export const IntragastricRouteCode = {
   /**
    * Instillation, intragastric
    */
-  Instillationintragastric: "IGASTINSTIL",
+  IGASTINSTIL: "IGASTINSTIL",
 
   /**
    * Irrigation, intragastric
    */
-  Irrigationintragastric: "IGASTIRR",
+  IGASTIRR: "IGASTIRR",
 
   /**
    * Lavage, intragastric
    */
-  Lavageintragastric: "IGASTLAV",
+  IGASTLAV: "IGASTLAV",
 } as const;
 
 /**

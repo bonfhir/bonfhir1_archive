@@ -6,27 +6,27 @@ export const Hl7VSTrayTypeCode = {
   /**
    * Early tray
    */
-  Earlytray: "EARLY",
+  EARLY: "EARLY",
 
   /**
    * Late tray
    */
-  Latetray: "LATE",
+  LATE: "LATE",
 
   /**
    * Guest tray
    */
-  Guesttray: "GUEST",
+  GUEST: "GUEST",
 
   /**
    * No tray
    */
-  Notray: "NO",
+  NO: "NO",
 
   /**
    * Tray message only
    */
-  Traymessageonly: "MSG",
+  MSG: "MSG",
 } as const;
 
 /**

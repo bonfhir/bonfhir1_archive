@@ -6,42 +6,42 @@ export const ContextControlCode = {
   /**
    * ContextControlAdditive
    */
-  ContextControlAdditive: "_ContextControlAdditive",
+  _ContextControlAdditive: "_ContextControlAdditive",
 
   /**
    * additive, non-propagating
    */
-  additivenonpropagating: "AN",
+  AN: "AN",
 
   /**
    * additive, propagating
    */
-  additivepropagating: "AP",
+  AP: "AP",
 
   /**
    * ContextControlNonPropagating
    */
-  ContextControlNonPropagating: "_ContextControlNonPropagating",
+  _ContextControlNonPropagating: "_ContextControlNonPropagating",
 
   /**
    * overriding, non-propagating
    */
-  overridingnonpropagating: "ON",
+  ON: "ON",
 
   /**
    * ContextControlOverriding
    */
-  ContextControlOverriding: "_ContextControlOverriding",
+  _ContextControlOverriding: "_ContextControlOverriding",
 
   /**
    * overriding, propagating
    */
-  overridingpropagating: "OP",
+  OP: "OP",
 
   /**
    * ContextControlPropagating
    */
-  ContextControlPropagating: "_ContextControlPropagating",
+  _ContextControlPropagating: "_ContextControlPropagating",
 } as const;
 
 /**

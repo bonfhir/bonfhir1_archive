@@ -6,23 +6,22 @@ export const Hl7VSDateTimeSelectionQualifierCode = {
   /**
    * First value within range
    */
-  Firstvaluewithinrange: "1ST",
+  "1ST": "1ST",
 
   /**
    * All values within the range
    */
-  Allvalueswithintherange: "ALL",
+  ALL: "ALL",
 
   /**
    * Last value within the range
    */
-  Lastvaluewithintherange: "LST",
+  LST: "LST",
 
   /**
    * All values within the range returned in reverse chronological order (This is the default if not otherwise specified.)
    */
-  AllvalueswithintherangereturnedinreversechronologicalorderThisisthedefaultifnototherwisespecified:
-    "REV",
+  REV: "REV",
 } as const;
 
 /**

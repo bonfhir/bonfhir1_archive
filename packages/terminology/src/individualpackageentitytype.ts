@@ -6,22 +6,22 @@ export const IndividualPackageEntityTypeCode = {
   /**
    * Ampule
    */
-  Ampule: "AMP",
+  AMP: "AMP",
 
   /**
    * Minim
    */
-  Minim: "MINIM",
+  MINIM: "MINIM",
 
   /**
    * Nebuamp
    */
-  Nebuamp: "NEBAMP",
+  NEBAMP: "NEBAMP",
 
   /**
    * Ovule
    */
-  Ovule: "OVUL",
+  OVUL: "OVUL",
 } as const;
 
 /**

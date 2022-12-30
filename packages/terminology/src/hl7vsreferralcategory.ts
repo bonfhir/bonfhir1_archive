@@ -6,22 +6,22 @@ export const Hl7VSReferralCategoryCode = {
   /**
    * Inpatient
    */
-  Inpatient: "I",
+  I: "I",
 
   /**
    * Outpatient
    */
-  Outpatient: "O",
+  O: "O",
 
   /**
    * Ambulatory
    */
-  Ambulatory: "A",
+  A: "A",
 
   /**
    * Emergency
    */
-  Emergency: "E",
+  E: "E",
 } as const;
 
 /**

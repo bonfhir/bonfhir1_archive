@@ -6,12 +6,12 @@ export const Hl7VSMfnRecodeLevelErrorReturnCode = {
   /**
    * Successful posting of the record defined by the MFE segment
    */
-  SuccessfulpostingoftherecorddefinedbytheMFEsegment: "S",
+  S: "S",
 
   /**
    * Unsuccessful posting of the record defined by the MFE segment
    */
-  UnsuccessfulpostingoftherecorddefinedbytheMFEsegment: "U",
+  U: "U",
 } as const;
 
 /**

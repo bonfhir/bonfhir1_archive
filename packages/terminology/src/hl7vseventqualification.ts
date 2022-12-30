@@ -6,42 +6,42 @@ export const Hl7VSEventQualificationCode = {
   /**
    * Interaction
    */
-  Interaction: "I",
+  I: "I",
 
   /**
    * Overdose
    */
-  Overdose: "O",
+  O: "O",
 
   /**
    * Abuse
    */
-  Abuse: "A",
+  A: "A",
 
   /**
    * Misuse
    */
-  Misuse: "M",
+  M: "M",
 
   /**
    * Dependency
    */
-  Dependency: "D",
+  D: "D",
 
   /**
    * Lack of expect therapeutic effect
    */
-  Lackofexpecttherapeuticeffect: "L",
+  L: "L",
 
   /**
    * Drug withdrawal
    */
-  Drugwithdrawal: "W",
+  W: "W",
 
   /**
    * Unexpected beneficial effect
    */
-  Unexpectedbeneficialeffect: "B",
+  B: "B",
 } as const;
 
 /**

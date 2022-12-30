@@ -6,17 +6,17 @@ export const Hl7VSApplicationChangeTypeCode = {
   /**
    * Start up
    */
-  Startup: "SU",
+  SU: "SU",
 
   /**
    * Shut down
    */
-  Shutdown: "SD",
+  SD: "SD",
 
   /**
    * Migrates to different CPU
    */
-  MigratestodifferentCPU: "M",
+  M: "M",
 } as const;
 
 /**

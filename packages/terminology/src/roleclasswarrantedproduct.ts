@@ -6,7 +6,7 @@ export const RoleClassWarrantedProductCode = {
   /**
    * warranted product
    */
-  warrantedproduct: "WRTE",
+  WRTE: "WRTE",
 } as const;
 
 /**

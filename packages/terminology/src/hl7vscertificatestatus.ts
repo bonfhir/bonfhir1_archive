@@ -6,27 +6,27 @@ export const Hl7VSCertificateStatusCode = {
   /**
    * Provisional
    */
-  Provisional: "P",
+  P: "P",
 
   /**
    * Revoked
    */
-  Revoked: "R",
+  R: "R",
 
   /**
    * Active/Valid
    */
-  ActiveValid: "V",
+  V: "V",
 
   /**
    * Expired
    */
-  Expired: "E",
+  E: "E",
 
   /**
    * Inactive
    */
-  Inactive: "I",
+  I: "I",
 } as const;
 
 /**

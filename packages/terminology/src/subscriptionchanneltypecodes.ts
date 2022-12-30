@@ -6,22 +6,22 @@ export const SubscriptionChannelTypeCodesCode = {
   /**
    * Rest Hook
    */
-  RestHook: "rest-hook",
+  "rest-hook": "rest-hook",
 
   /**
    * Websocket
    */
-  Websocket: "websocket",
+  websocket: "websocket",
 
   /**
    * Email
    */
-  Email: "email",
+  email: "email",
 
   /**
    * Message
    */
-  Message: "message",
+  message: "message",
 } as const;
 
 /**

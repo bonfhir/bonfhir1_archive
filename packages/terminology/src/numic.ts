@@ -6,52 +6,52 @@ export const NumicCode = {
   /**
    * CentralNumic
    */
-  CentralNumic: "_CentralNumic",
+  _CentralNumic: "_CentralNumic",
 
   /**
    * Comanche
    */
-  Comanche: "x-COM",
+  "x-COM": "x-COM",
 
   /**
    * Panamint
    */
-  Panamint: "x-PAR",
+  "x-PAR": "x-PAR",
 
   /**
    * Shoshone
    */
-  Shoshone: "x-SHH",
+  "x-SHH": "x-SHH",
 
   /**
    * SouthernNumic
    */
-  SouthernNumic: "_SouthernNumic",
+  _SouthernNumic: "_SouthernNumic",
 
   /**
    * Kawaiisu
    */
-  Kawaiisu: "x-KAW",
+  "x-KAW": "x-KAW",
 
   /**
    * Ute-Southern Paiute
    */
-  UteSouthernPaiute: "x-UTE",
+  "x-UTE": "x-UTE",
 
   /**
    * WesternNumic
    */
-  WesternNumic: "_WesternNumic",
+  _WesternNumic: "_WesternNumic",
 
   /**
    * Mono
    */
-  Mono: "x-MON",
+  "x-MON": "x-MON",
 
   /**
    * Northern Paiute-Bannock
    */
-  NorthernPaiuteBannock: "x-PAO",
+  "x-PAO": "x-PAO",
 } as const;
 
 /**

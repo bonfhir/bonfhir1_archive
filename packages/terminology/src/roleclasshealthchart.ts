@@ -6,7 +6,7 @@ export const RoleClassHealthChartCode = {
   /**
    * health chart
    */
-  healthchart: "HLTHCHRT",
+  HLTHCHRT: "HLTHCHRT",
 } as const;
 
 /**

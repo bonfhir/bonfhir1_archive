@@ -6,37 +6,37 @@ export const RoleClassOntologicalCode = {
   /**
    * equivalent entity
    */
-  equivalententity: "EQUIV",
+  EQUIV: "EQUIV",
 
   /**
    * same
    */
-  same: "SAME",
+  SAME: "SAME",
 
   /**
    * subsumed by
    */
-  subsumedby: "SUBY",
+  SUBY: "SUBY",
 
   /**
    * has generalization
    */
-  hasgeneralization: "GEN",
+  GEN: "GEN",
 
   /**
    * has generic
    */
-  hasgeneric: "GRIC",
+  GRIC: "GRIC",
 
   /**
    * instance
    */
-  instance: "INST",
+  INST: "INST",
 
   /**
    * subsumer
    */
-  subsumer: "SUBS",
+  SUBS: "SUBS",
 } as const;
 
 /**

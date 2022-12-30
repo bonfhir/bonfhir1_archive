@@ -6,12 +6,12 @@ export const IntrailealRouteCode = {
   /**
    * Instillation, intraileal
    */
-  Instillationintraileal: "IILEALINJ",
+  IILEALINJ: "IILEALINJ",
 
   /**
    * Topical application, intraileal
    */
-  Topicalapplicationintraileal: "IILEALTA",
+  IILEALTA: "IILEALTA",
 } as const;
 
 /**

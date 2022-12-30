@@ -6,42 +6,42 @@ export const ActTaskClinicalNoteEntryCodeCode = {
   /**
    * clinical note entry task
    */
-  clinicalnoteentrytask: "CLINNOTEE",
+  CLINNOTEE: "CLINNOTEE",
 
   /**
    * diagnosis list entry task
    */
-  diagnosislistentrytask: "DIAGLISTE",
+  DIAGLISTE: "DIAGLISTE",
 
   /**
    * discharge instruction entry
    */
-  dischargeinstructionentry: "DISCHINSTE",
+  DISCHINSTE: "DISCHINSTE",
 
   /**
    * discharge summary entry task
    */
-  dischargesummaryentrytask: "DISCHSUME",
+  DISCHSUME: "DISCHSUME",
 
   /**
    * patient education entry
    */
-  patienteducationentry: "PATEDUE",
+  PATEDUE: "PATEDUE",
 
   /**
    * pathology report entry task
    */
-  pathologyreportentrytask: "PATREPE",
+  PATREPE: "PATREPE",
 
   /**
    * problem list entry task
    */
-  problemlistentrytask: "PROBLISTE",
+  PROBLISTE: "PROBLISTE",
 
   /**
    * radiology report entry task
    */
-  radiologyreportentrytask: "RADREPE",
+  RADREPE: "RADREPE",
 } as const;
 
 /**

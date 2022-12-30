@@ -8,17 +8,17 @@ export const RelationshipConjunctionCode = {
   /**
    * and
    */
-  and: "AND",
+  AND: "AND",
 
   /**
    * or
    */
-  or: "OR",
+  OR: "OR",
 
   /**
    * exclusive or
    */
-  exclusiveor: "XOR",
+  XOR: "XOR",
 } as const;
 
 /**

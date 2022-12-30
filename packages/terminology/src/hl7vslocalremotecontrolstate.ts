@@ -6,22 +6,22 @@ export const Hl7VSLocalRemoteControlStateCode = {
   /**
    * Local
    */
-  Local: "L",
+  L: "L",
 
   /**
    * Remote
    */
-  Remote: "R",
+  R: "R",
 
   /**
    * (null) No state change
    */
-  nullNostatechange: "...",
+  "...": "...",
 
   /**
    * (null) No state change
    */
-  nullNostatechange: "…",
+  "…": "…",
 } as const;
 
 /**

@@ -6,22 +6,22 @@ export const Hl7VSPrecertificationPatientTypeCode = {
   /**
    * Emergency
    */
-  Emergency: "ER",
+  ER: "ER",
 
   /**
    * Inpatient elective
    */
-  Inpatientelective: "IPE",
+  IPE: "IPE",
 
   /**
    * Outpatient elective
    */
-  Outpatientelective: "OPE",
+  OPE: "OPE",
 
   /**
    * Urgent
    */
-  Urgent: "UR",
+  UR: "UR",
 } as const;
 
 /**

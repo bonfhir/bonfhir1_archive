@@ -6,17 +6,17 @@ export const ActResearchInformationAccessCode = {
   /**
    * research information access
    */
-  researchinformationaccess: "RESEARCH",
+  RESEARCH: "RESEARCH",
 
   /**
    * de-identified information access
    */
-  deidentifiedinformationaccess: "RSDID",
+  RSDID: "RSDID",
 
   /**
    * re-identifiable information access
    */
-  reidentifiableinformationaccess: "RSREID",
+  RSREID: "RSREID",
 } as const;
 
 /**

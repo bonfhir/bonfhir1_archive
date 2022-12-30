@@ -6,42 +6,42 @@ export const MiwokanCode = {
   /**
    * EasternMiwok
    */
-  EasternMiwok: "_EasternMiwok",
+  _EasternMiwok: "_EasternMiwok",
 
   /**
    * Central Sierra Miwok
    */
-  CentralSierraMiwok: "x-CSM",
+  "x-CSM": "x-CSM",
 
   /**
    * Northern Sierra Miwok
    */
-  NorthernSierraMiwok: "x-NSQ",
+  "x-NSQ": "x-NSQ",
 
   /**
    * Plains Miwok
    */
-  PlainsMiwok: "x-PMW",
+  "x-PMW": "x-PMW",
 
   /**
    * Southern Sierra Miwok
    */
-  SouthernSierraMiwok: "x-SKD",
+  "x-SKD": "x-SKD",
 
   /**
    * WesternMiwok
    */
-  WesternMiwok: "_WesternMiwok",
+  _WesternMiwok: "_WesternMiwok",
 
   /**
    * Coast Miwok
    */
-  CoastMiwok: "x-CSI",
+  "x-CSI": "x-CSI",
 
   /**
    * Lake Miwok
    */
-  LakeMiwok: "x-LMW",
+  "x-LMW": "x-LMW",
 } as const;
 
 /**

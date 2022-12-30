@@ -6,27 +6,27 @@ export const OromucosalRouteCode = {
   /**
    * Gargle
    */
-  Gargle: "GARGLE",
+  GARGLE: "GARGLE",
 
   /**
    * Topical application, oromucosal
    */
-  Topicalapplicationoromucosal: "ORMUC",
+  ORMUC: "ORMUC",
 
   /**
    * Suck, oromucosal
    */
-  Suckoromucosal: "SUCK",
+  SUCK: "SUCK",
 
   /**
    * Swish and spit out, oromucosal
    */
-  Swishandspitoutoromucosal: "SWISHSPIT",
+  SWISHSPIT: "SWISHSPIT",
 
   /**
    * Swish and swallow, oromucosal
    */
-  Swishandswalloworomucosal: "SWISHSWAL",
+  SWISHSWAL: "SWISHSWAL",
 } as const;
 
 /**

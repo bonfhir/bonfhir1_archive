@@ -6,22 +6,22 @@ export const IdentifierScopeCode = {
   /**
    * Business Identifier
    */
-  BusinessIdentifier: "BUSN",
+  BUSN: "BUSN",
 
   /**
    * Object Identifier
    */
-  ObjectIdentifier: "OBJ",
+  OBJ: "OBJ",
 
   /**
    * Version Identifier
    */
-  VersionIdentifier: "VER",
+  VER: "VER",
 
   /**
    * View Specific Identifier
    */
-  ViewSpecificIdentifier: "VW",
+  VW: "VW",
 } as const;
 
 /**

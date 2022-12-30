@@ -6,7 +6,7 @@ export const ActRelationshipPassiveImmunizationAgainstCode = {
   /**
    * passive immunization against
    */
-  passiveimmunizationagainst: "PASSIMM",
+  PASSIMM: "PASSIMM",
 } as const;
 
 /**

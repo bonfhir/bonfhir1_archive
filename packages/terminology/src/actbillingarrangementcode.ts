@@ -6,52 +6,52 @@ export const ActBillingArrangementCodeCode = {
   /**
    * block funding
    */
-  blockfunding: "BLK",
+  BLK: "BLK",
 
   /**
    * capitation funding
    */
-  capitationfunding: "CAP",
+  CAP: "CAP",
 
   /**
    * contract funding
    */
-  contractfunding: "CONTF",
+  CONTF: "CONTF",
 
   /**
    * financial
    */
-  financial: "FINBILL",
+  FINBILL: "FINBILL",
 
   /**
    * roster funding
    */
-  rosterfunding: "ROST",
+  ROST: "ROST",
 
   /**
    * sessional funding
    */
-  sessionalfunding: "SESS",
+  SESS: "SESS",
 
   /**
    * fee for service
    */
-  feeforservice: "FFS",
+  FFS: "FFS",
 
   /**
    * first fill, part fill, partial strength
    */
-  firstfillpartfillpartialstrength: "FFPS",
+  FFPS: "FFPS",
 
   /**
    * first fill complete, partial strength
    */
-  firstfillcompletepartialstrength: "FFCS",
+  FFCS: "FFCS",
 
   /**
    * trial fill partial strength
    */
-  trialfillpartialstrength: "TFS",
+  TFS: "TFS",
 } as const;
 
 /**

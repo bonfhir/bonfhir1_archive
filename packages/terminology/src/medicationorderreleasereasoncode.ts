@@ -6,17 +6,17 @@ export const MedicationOrderReleaseReasonCodeCode = {
   /**
    * medication order release reason
    */
-  medicationorderreleasereason: "_MedicationOrderReleaseReasonCode",
+  _MedicationOrderReleaseReasonCode: "_MedicationOrderReleaseReasonCode",
 
   /**
    * suspend reason no longer applies
    */
-  suspendreasonnolongerapplies: "HOLDDONE",
+  HOLDDONE: "HOLDDONE",
 
   /**
    * suspend reason inappropriate
    */
-  suspendreasoninappropriate: "HOLDINAP",
+  HOLDINAP: "HOLDINAP",
 } as const;
 
 /**

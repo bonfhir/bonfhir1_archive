@@ -6,27 +6,27 @@ export const ActSpecObsVolumeCodeCode = {
   /**
    * ActSpecObsVolumeCode
    */
-  ActSpecObsVolumeCode: "VOLUME",
+  VOLUME: "VOLUME",
 
   /**
    * Available Volume
    */
-  AvailableVolume: "AVAILABLE",
+  AVAILABLE: "AVAILABLE",
 
   /**
    * Consumption Volume
    */
-  ConsumptionVolume: "CONSUMPTION",
+  CONSUMPTION: "CONSUMPTION",
 
   /**
    * Current Volume
    */
-  CurrentVolume: "CURRENT",
+  CURRENT: "CURRENT",
 
   /**
    * Initial Volume
    */
-  InitialVolume: "INITIAL",
+  INITIAL: "INITIAL",
 } as const;
 
 /**

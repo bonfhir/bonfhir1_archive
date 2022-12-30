@@ -6,7 +6,7 @@ export const EntityClassPlantCode = {
   /**
    * plant
    */
-  plant: "PLNT",
+  PLNT: "PLNT",
 } as const;
 
 /**

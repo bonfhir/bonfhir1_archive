@@ -6,72 +6,72 @@ export const SpecimenAdditiveEntityCode = {
   /**
    * ACD Solution A
    */
-  ACDSolutionA: "ACDA",
+  ACDA: "ACDA",
 
   /**
    * ACD Solution B
    */
-  ACDSolutionB: "ACDB",
+  ACDB: "ACDB",
 
   /**
    * Acetic Acid
    */
-  AceticAcid: "ACET",
+  ACET: "ACET",
 
   /**
    * Amies transport medium
    */
-  Amiestransportmedium: "AMIES",
+  AMIES: "AMIES",
 
   /**
    * Bacterial Transport medium
    */
-  BacterialTransportmedium: "BACTM",
+  BACTM: "BACTM",
 
   /**
    * Buffered 10% formalin
    */
-  Buffered10formalin: "BF10",
+  BF10: "BF10",
 
   /**
    * Boric Acid
    */
-  BoricAcid: "BOR",
+  BOR: "BOR",
 
   /**
    * Bouin's solution
    */
-  Bouinssolution: "BOUIN",
+  BOUIN: "BOUIN",
 
   /**
    * Buffered skim milk
    */
-  Bufferedskimmilk: "BSKM",
+  BSKM: "BSKM",
 
   /**
    * 3.2% Citrate
    */
-  ThirtyTwoCitrate: "C32",
+  C32: "C32",
 
   /**
    * 3.8% Citrate
    */
-  ThirtyEightCitrate: "C38",
+  C38: "C38",
 
   /**
    * Carson's Modified 10% formalin
    */
-  CarsonsModified10formalin: "CARS",
+  CARS: "CARS",
 
   /**
    * Cary Blair Medium
    */
-  CaryBlairMedium: "CARY",
+  CARY: "CARY",
 
   /**
    * Chlamydia transport medium
    */
-  Chlamydiatransportmedium: "CHLTM",
+  CHLTM: "CHLTM",
 
   /**
    * CTAD
@@ -81,87 +81,87 @@ export const SpecimenAdditiveEntityCode = {
   /**
    * Potassium/K EDTA 15%
    */
-  PotassiumKEDTA15: "EDTK15",
+  EDTK15: "EDTK15",
 
   /**
    * Potassium/K EDTA 7.5%
    */
-  PotassiumKEDTA75: "EDTK75",
+  EDTK75: "EDTK75",
 
   /**
    * Sodium/Na EDTA
    */
-  SodiumNaEDTA: "EDTN",
+  EDTN: "EDTN",
 
   /**
    * Enteric bacteria transport medium
    */
-  Entericbacteriatransportmedium: "ENT",
+  ENT: "ENT",
 
   /**
    * 10% Formalin
    */
-  TenFormalin: "F10",
+  F10: "F10",
 
   /**
    * Thrombin NIH; soybean trypsin inhibitor
    */
-  ThrombinNIHsoybeantrypsininhibitor: "FDP",
+  FDP: "FDP",
 
   /**
    * Sodium Fluoride, 10mg
    */
-  SodiumFluoride10mg: "FL10",
+  FL10: "FL10",
 
   /**
    * Sodium Fluoride, 100mg
    */
-  SodiumFluoride100mg: "FL100",
+  FL100: "FL100",
 
   /**
    * 6N HCL
    */
-  SixNHCL: "HCL6",
+  HCL6: "HCL6",
 
   /**
    * Ammonium heparin
    */
-  Ammoniumheparin: "HEPA",
+  HEPA: "HEPA",
 
   /**
    * Lithium/Li Heparin
    */
-  LithiumLiHeparin: "HEPL",
+  HEPL: "HEPL",
 
   /**
    * Sodium/Na Heparin
    */
-  SodiumNaHeparin: "HEPN",
+  HEPN: "HEPN",
 
   /**
    * Nitric Acid
    */
-  NitricAcid: "HNO3",
+  HNO3: "HNO3",
 
   /**
    * Jones Kendrick Medium
    */
-  JonesKendrickMedium: "JKM",
+  JKM: "JKM",
 
   /**
    * Karnovsky's fixative
    */
-  Karnovskysfixative: "KARN",
+  KARN: "KARN",
 
   /**
    * Potassium Oxalate
    */
-  PotassiumOxalate: "KOX",
+  KOX: "KOX",
 
   /**
    * Lithium iodoacetate
    */
-  Lithiumiodoacetate: "LIA",
+  LIA: "LIA",
 
   /**
    * M4
@@ -181,97 +181,97 @@ export const SpecimenAdditiveEntityCode = {
   /**
    * Michel's transport medium
    */
-  Michelstransportmedium: "MICHTM",
+  MICHTM: "MICHTM",
 
   /**
    * MMD transport medium
    */
-  MMDtransportmedium: "MMDTM",
+  MMDTM: "MMDTM",
 
   /**
    * Sodium Fluoride
    */
-  SodiumFluoride: "NAF",
+  NAF: "NAF",
 
   /**
    * None
    */
-  None: "NONE",
+  NONE: "NONE",
 
   /**
    * Page's Saline
    */
-  PagesSaline: "PAGE",
+  PAGE: "PAGE",
 
   /**
    * Phenol
    */
-  Phenol: "PHENOL",
+  PHENOL: "PHENOL",
 
   /**
    * Polyvinylalcohol
    */
-  Polyvinylalcohol: "PVA",
+  PVA: "PVA",
 
   /**
    * Reagan Lowe Medium
    */
-  ReaganLoweMedium: "RLM",
+  RLM: "RLM",
 
   /**
    * Siliceous earth
    */
-  Siliceousearth: "SILICA",
+  SILICA: "SILICA",
 
   /**
    * Sodium polyanethol sulfonate 0.35% in 0.85% sodium chloride
    */
-  Sodiumpolyanetholsulfonate035in085sodiumchloride: "SPS",
+  SPS: "SPS",
 
   /**
    * Serum Separator Tube
    */
-  SerumSeparatorTube: "SST",
+  SST: "SST",
 
   /**
    * Stuart transport medium
    */
-  Stuarttransportmedium: "STUTM",
+  STUTM: "STUTM",
 
   /**
    * Thrombin
    */
-  Thrombin: "THROM",
+  THROM: "THROM",
 
   /**
    * Thymol
    */
-  Thymol: "THYMOL",
+  THYMOL: "THYMOL",
 
   /**
    * Thyoglycolate broth
    */
-  Thyoglycolatebroth: "THYO",
+  THYO: "THYO",
 
   /**
    * Toluene
    */
-  Toluene: "TOLU",
+  TOLU: "TOLU",
 
   /**
    * Ureaplasma transport medium
    */
-  Ureaplasmatransportmedium: "URETM",
+  URETM: "URETM",
 
   /**
    * Viral Transport medium
    */
-  ViralTransportmedium: "VIRTM",
+  VIRTM: "VIRTM",
 
   /**
    * Buffered Citrate
    */
-  BufferedCitrate: "WEST",
+  WEST: "WEST",
 } as const;
 
 /**

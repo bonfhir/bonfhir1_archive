@@ -6,27 +6,27 @@ export const SpecialArrangementsCode = {
   /**
    * Wheelchair
    */
-  Wheelchair: "wheel",
+  wheel: "wheel",
 
   /**
    * Additional bedding
    */
-  Additionalbedding: "add-bed",
+  "add-bed": "add-bed",
 
   /**
    * Interpreter
    */
-  Interpreter: "int",
+  int: "int",
 
   /**
    * Attendant
    */
-  Attendant: "att",
+  att: "att",
 
   /**
    * Guide dog
    */
-  Guidedog: "dog",
+  dog: "dog",
 } as const;
 
 /**

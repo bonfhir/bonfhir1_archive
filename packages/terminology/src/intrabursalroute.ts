@@ -6,7 +6,7 @@ export const IntrabursalRouteCode = {
   /**
    * Injection, intrabursal
    */
-  Injectionintrabursal: "IBURSINJ",
+  IBURSINJ: "IBURSINJ",
 } as const;
 
 /**

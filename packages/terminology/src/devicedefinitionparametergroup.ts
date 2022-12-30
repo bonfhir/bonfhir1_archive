@@ -6,47 +6,47 @@ export const DeviceDefinitionParameterGroupCode = {
   /**
    * Haemodynamic Parameter Group
    */
-  HaemodynamicParameterGroup: "haemodynamic",
+  haemodynamic: "haemodynamic",
 
   /**
    * ECG Parameter Group
    */
-  ECGParameterGroup: "ecg",
+  ecg: "ecg",
 
   /**
    * Respiratory Parameter Group
    */
-  RespiratoryParameterGroup: "respiratory",
+  respiratory: "respiratory",
 
   /**
    * Ventilation Parameter Group
    */
-  VentilationParameterGroup: "ventilation",
+  ventilation: "ventilation",
 
   /**
    * Neurological Parameter Group
    */
-  NeurologicalParameterGroup: "neurological",
+  neurological: "neurological",
 
   /**
    * Drug Delivery Parameter Group
    */
-  DrugDeliveryParameterGroup: "drug-delivery",
+  "drug-delivery": "drug-delivery",
 
   /**
    * Fluid Chemistry Parameter Group
    */
-  FluidChemistryParameterGroup: "fluid-chemistry",
+  "fluid-chemistry": "fluid-chemistry",
 
   /**
    * Blood Chemistry Parameter Group
    */
-  BloodChemistryParameterGroup: "blood-chemistry",
+  "blood-chemistry": "blood-chemistry",
 
   /**
    * Miscellaneous Parameter Group
    */
-  MiscellaneousParameterGroup: "miscellaneous",
+  miscellaneous: "miscellaneous",
 } as const;
 
 /**

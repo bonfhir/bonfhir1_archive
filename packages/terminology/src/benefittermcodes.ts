@@ -6,17 +6,17 @@ export const BenefitTermCodesCode = {
   /**
    * Annual
    */
-  Annual: "annual",
+  annual: "annual",
 
   /**
    * Day
    */
-  Day: "day",
+  day: "day",
 
   /**
    * Lifetime
    */
-  Lifetime: "lifetime",
+  lifetime: "lifetime",
 } as const;
 
 /**

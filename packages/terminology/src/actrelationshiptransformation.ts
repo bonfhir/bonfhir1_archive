@@ -6,7 +6,7 @@ export const ActRelationshipTransformationCode = {
   /**
    * transformation
    */
-  transformation: "XFRM",
+  XFRM: "XFRM",
 } as const;
 
 /**

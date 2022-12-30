@@ -6,17 +6,17 @@ export const SaukFoxKickapooCode = {
   /**
    * Kickapoo
    */
-  Kickapoo: "x-KIC",
+  "x-KIC": "x-KIC",
 
   /**
    * Mesquakie
    */
-  Mesquakie: "x-SAC",
+  "x-SAC": "x-SAC",
 
   /**
    * Shawnee
    */
-  Shawnee: "x-SJW",
+  "x-SJW": "x-SJW",
 } as const;
 
 /**

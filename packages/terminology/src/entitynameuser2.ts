@@ -11,42 +11,42 @@ export const EntityNameUseR2Code = {
   /**
    * business name
    */
-  businessname: "A",
+  A: "A",
 
   /**
    * Anonymous
    */
-  Anonymous: "ANON",
+  ANON: "ANON",
 
   /**
    * Indigenous/Tribal
    */
-  IndigenousTribal: "I",
+  I: "I",
 
   /**
    * Other/Pseudonym/Alias
    */
-  OtherPseudonymAlias: "P",
+  P: "P",
 
   /**
    * religious
    */
-  religious: "R",
+  R: "R",
 
   /**
    * customary
    */
-  customary: "C",
+  C: "C",
 
   /**
    * customary
    */
-  customary: "N",
+  N: "N",
 
   /**
    * maiden name
    */
-  maidenname: "M",
+  M: "M",
 
   /**
    * NameRepresentationUse
@@ -56,47 +56,47 @@ export const EntityNameUseR2Code = {
   /**
    * alphabetic
    */
-  alphabetic: "ABC",
+  ABC: "ABC",
 
   /**
    * ideographic
    */
-  ideographic: "IDE",
+  IDE: "IDE",
 
   /**
    * syllabic
    */
-  syllabic: "SYL",
+  SYL: "SYL",
 
   /**
    * no longer in use
    */
-  nolongerinuse: "OLD",
+  OLD: "OLD",
 
   /**
    * do not use
    */
-  donotuse: "DN",
+  DN: "DN",
 
   /**
    * official registry name
    */
-  officialregistryname: "OR",
+  OR: "OR",
 
   /**
    * phonetic
    */
-  phonetic: "PHON",
+  PHON: "PHON",
 
   /**
    * search
    */
-  search: "SRCH",
+  SRCH: "SRCH",
 
   /**
    * temporary
    */
-  temporary: "T",
+  T: "T",
 } as const;
 
 /**

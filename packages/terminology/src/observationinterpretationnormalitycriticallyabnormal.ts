@@ -6,17 +6,17 @@ export const ObservationInterpretationNormalityCriticallyAbnormalCode = {
   /**
    * Critical abnormal
    */
-  Criticalabnormal: "AA",
+  AA: "AA",
 
   /**
    * Critical high
    */
-  Criticalhigh: "HH",
+  HH: "HH",
 
   /**
    * Critical low
    */
-  Criticallow: "LL",
+  LL: "LL",
 } as const;
 
 /**

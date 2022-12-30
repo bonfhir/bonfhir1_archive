@@ -8,7 +8,7 @@ export const ActClassFinancialAdjudicationCode = {
   /**
    * financial adjudication
    */
-  financialadjudication: "ADJUD",
+  ADJUD: "ADJUD",
 } as const;
 
 /**

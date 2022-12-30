@@ -12,7 +12,7 @@ export const ActRelationshipHasOptionCode = {
   /**
    * has option
    */
-  hasoption: "OPTN",
+  OPTN: "OPTN",
 } as const;
 
 /**

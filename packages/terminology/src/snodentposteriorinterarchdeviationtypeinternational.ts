@@ -12,22 +12,22 @@ export const SnodentPosteriorInterarchDeviationTypeInternationalCode = {
   /**
    * Posterior crossbite
    */
-  Posteriorcrossbite: "127434D",
+  "127434D": "127434D",
 
   /**
    * Posterior open bite
    */
-  Posterioropenbite: "141881D",
+  "141881D": "141881D",
 
   /**
    * Anterior deviation of posterior interarch
    */
-  Anteriordeviationofposteriorinterarch: "210972D",
+  "210972D": "210972D",
 
   /**
    * Posterior deviation of posterior interarch
    */
-  Posteriordeviationofposteriorinterarch: "210974D",
+  "210974D": "210974D",
 } as const;
 
 /**

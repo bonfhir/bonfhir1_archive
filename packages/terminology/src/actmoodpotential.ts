@@ -6,22 +6,22 @@ export const ActMoodPotentialCode = {
   /**
    * potential
    */
-  potential: "_ActMoodPotential",
+  _ActMoodPotential: "_ActMoodPotential",
 
   /**
    * definition
    */
-  definition: "DEF",
+  DEF: "DEF",
 
   /**
    * permission
    */
-  permission: "PERM",
+  PERM: "PERM",
 
   /**
    * resource slot
    */
-  resourceslot: "SLOT",
+  SLOT: "SLOT",
 } as const;
 
 /**

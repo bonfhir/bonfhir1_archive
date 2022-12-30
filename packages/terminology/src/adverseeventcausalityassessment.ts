@@ -6,32 +6,32 @@ export const AdverseEventCausalityAssessmentCode = {
   /**
    * Certain
    */
-  Certain: "certain",
+  certain: "certain",
 
   /**
    * Probably/Likely
    */
-  ProbablyLikely: "probably-likely",
+  "probably-likely": "probably-likely",
 
   /**
    * Possible
    */
-  Possible: "possible",
+  possible: "possible",
 
   /**
    * Unlikely
    */
-  Unlikely: "unlikely",
+  unlikely: "unlikely",
 
   /**
    * Conditional/Classified
    */
-  ConditionalClassified: "conditional-classified",
+  "conditional-classified": "conditional-classified",
 
   /**
    * Unassessable/Unclassifiable
    */
-  UnassessableUnclassifiable: "unassessable-unclassifiable",
+  "unassessable-unclassifiable": "unassessable-unclassifiable",
 } as const;
 
 /**

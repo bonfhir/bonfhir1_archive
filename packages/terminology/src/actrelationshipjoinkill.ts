@@ -6,7 +6,7 @@ export const ActRelationshipJoinKillCode = {
   /**
    * kill
    */
-  kill: "K",
+  K: "K",
 } as const;
 
 /**

@@ -6,17 +6,17 @@ export const TananaCode = {
   /**
    * Lower Tanana
    */
-  LowerTanana: "x-TAA",
+  "x-TAA": "x-TAA",
 
   /**
    * Upper Tanana
    */
-  UpperTanana: "x-TAU",
+  "x-TAU": "x-TAU",
 
   /**
    * Tanacross
    */
-  Tanacross: "x-TCB",
+  "x-TCB": "x-TCB",
 } as const;
 
 /**

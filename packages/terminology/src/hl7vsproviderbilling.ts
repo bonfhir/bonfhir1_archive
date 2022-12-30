@@ -6,12 +6,12 @@ export const Hl7VSProviderBillingCode = {
   /**
    * Institution bills for provider
    */
-  Institutionbillsforprovider: "I",
+  I: "I",
 
   /**
    * Provider does own billing
    */
-  Providerdoesownbilling: "P",
+  P: "P",
 } as const;
 
 /**

@@ -6,7 +6,7 @@ export const ParticipationDestinationCode = {
   /**
    * destination
    */
-  destination: "DST",
+  DST: "DST",
 } as const;
 
 /**

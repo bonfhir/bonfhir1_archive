@@ -6,37 +6,37 @@ export const Hl7VSAllergyClinicalStatusCode = {
   /**
    * Unconfirmed
    */
-  Unconfirmed: "U",
+  U: "U",
 
   /**
    * Pending
    */
-  Pending: "P",
+  P: "P",
 
   /**
    * Suspect
    */
-  Suspect: "S",
+  S: "S",
 
   /**
    * Confirmed or verified
    */
-  Confirmedorverified: "C",
+  C: "C",
 
   /**
    * Confirmed but inactive
    */
-  Confirmedbutinactive: "I",
+  I: "I",
 
   /**
    * Erroneous
    */
-  Erroneous: "E",
+  E: "E",
 
   /**
    * Doubt raised
    */
-  Doubtraised: "D",
+  D: "D",
 } as const;
 
 /**

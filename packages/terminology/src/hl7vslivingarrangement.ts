@@ -6,32 +6,32 @@ export const Hl7VSLivingArrangementCode = {
   /**
    * Alone
    */
-  Alone: "A",
+  A: "A",
 
   /**
    * Family
    */
-  Family: "F",
+  F: "F",
 
   /**
    * Institution
    */
-  Institution: "I",
+  I: "I",
 
   /**
    * Relative
    */
-  Relative: "R",
+  R: "R",
 
   /**
    * Unknown
    */
-  Unknown: "U",
+  U: "U",
 
   /**
    * Spouse Only
    */
-  SpouseOnly: "S",
+  S: "S",
 } as const;
 
 /**

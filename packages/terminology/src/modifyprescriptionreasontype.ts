@@ -6,17 +6,17 @@ export const ModifyPrescriptionReasonTypeCode = {
   /**
    * ModifyPrescriptionReasonType
    */
-  ModifyPrescriptionReasonType: "_ModifyPrescriptionReasonType",
+  _ModifyPrescriptionReasonType: "_ModifyPrescriptionReasonType",
 
   /**
    * administrative error in order
    */
-  administrativeerrorinorder: "ADMINERROR",
+  ADMINERROR: "ADMINERROR",
 
   /**
    * clinical modification
    */
-  clinicalmodification: "CLINMOD",
+  CLINMOD: "CLINMOD",
 } as const;
 
 /**

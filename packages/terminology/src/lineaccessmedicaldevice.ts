@@ -6,17 +6,17 @@ export const LineAccessMedicalDeviceCode = {
   /**
    * Line
    */
-  Line: "LINE",
+  LINE: "LINE",
 
   /**
    * Intra-arterial Line
    */
-  IntraarterialLine: "IALINE",
+  IALINE: "IALINE",
 
   /**
    * Intraveneous Line
    */
-  IntraveneousLine: "IVLINE",
+  IVLINE: "IVLINE",
 } as const;
 
 /**

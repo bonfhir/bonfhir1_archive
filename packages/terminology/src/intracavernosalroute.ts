@@ -6,7 +6,7 @@ export const IntracavernosalRouteCode = {
   /**
    * Injection, intracavernous
    */
-  Injectionintracavernous: "ICAVINJ",
+  ICAVINJ: "ICAVINJ",
 } as const;
 
 /**

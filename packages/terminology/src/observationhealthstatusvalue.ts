@@ -6,27 +6,27 @@ export const ObservationHealthStatusValueCode = {
   /**
    * health status
    */
-  healthstatus: "HLSTAT",
+  HLSTAT: "HLSTAT",
 
   /**
    * disabled
    */
-  disabled: "DISABLE",
+  DISABLE: "DISABLE",
 
   /**
    * drug use
    */
-  druguse: "DRUG",
+  DRUG: "DRUG",
 
   /**
    * IV drug use
    */
-  IVdruguse: "IVDRG",
+  IVDRG: "IVDRG",
 
   /**
    * pregnant
    */
-  pregnant: "PGNT",
+  PGNT: "PGNT",
 } as const;
 
 /**

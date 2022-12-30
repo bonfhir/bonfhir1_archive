@@ -8,12 +8,12 @@ export const ControlActNullificationReasonCodeCode = {
   /**
    * altered decision
    */
-  altereddecision: "ALTD",
+  ALTD: "ALTD",
 
   /**
    * entered in error
    */
-  enteredinerror: "EIE",
+  EIE: "EIE",
 } as const;
 
 /**

@@ -6,7 +6,7 @@ export const SecurityTrustFrameworkObservationValueCode = {
   /**
    * none supplied 5
    */
-  nonesupplied5: "TRSTFWKOBV",
+  TRSTFWKOBV: "TRSTFWKOBV",
 } as const;
 
 /**

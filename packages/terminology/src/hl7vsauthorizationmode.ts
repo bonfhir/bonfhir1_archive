@@ -6,52 +6,52 @@ export const Hl7VSAuthorizationModeCode = {
   /**
    * Electronic
    */
-  Electronic: "EL",
+  EL: "EL",
 
   /**
    * E-mail
    */
-  Email: "EM",
+  EM: "EM",
 
   /**
    * Fax
    */
-  Fax: "FX",
+  FX: "FX",
 
   /**
    * In Person
    */
-  InPerson: "IP",
+  IP: "IP",
 
   /**
    * Mail
    */
-  Mail: "MA",
+  MA: "MA",
 
   /**
    * Paper
    */
-  Paper: "PA",
+  PA: "PA",
 
   /**
    * Phone
    */
-  Phone: "PH",
+  PH: "PH",
 
   /**
    * Reflexive (Automated system)
    */
-  ReflexiveAutomatedsystem: "RE",
+  RE: "RE",
 
   /**
    * Video-conference
    */
-  Videoconference: "VC",
+  VC: "VC",
 
   /**
    * Voice
    */
-  Voice: "VO",
+  VO: "VO",
 } as const;
 
 /**

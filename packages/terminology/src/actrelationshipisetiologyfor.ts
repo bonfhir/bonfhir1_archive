@@ -6,7 +6,7 @@ export const ActRelationshipIsEtiologyForCode = {
   /**
    * is etiology for
    */
-  isetiologyfor: "CAUS",
+  CAUS: "CAUS",
 } as const;
 
 /**

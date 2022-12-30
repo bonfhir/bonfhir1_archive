@@ -6,7 +6,7 @@ export const IntracorpusCavernosumRouteCode = {
   /**
    * Injection, intracorpus cavernosum
    */
-  Injectionintracorpuscavernosum: "ICORPCAVINJ",
+  ICORPCAVINJ: "ICORPCAVINJ",
 } as const;
 
 /**

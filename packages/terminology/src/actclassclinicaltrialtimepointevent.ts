@@ -6,7 +6,7 @@ export const ActClassClinicalTrialTimepointEventCode = {
   /**
    * clinical trial timepoint event
    */
-  clinicaltrialtimepointevent: "CTTEVENT",
+  CTTEVENT: "CTTEVENT",
 } as const;
 
 /**

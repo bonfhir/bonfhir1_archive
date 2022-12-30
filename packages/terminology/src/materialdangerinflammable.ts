@@ -6,12 +6,12 @@ export const MaterialDangerInflammableCode = {
   /**
    * inflammable
    */
-  inflammable: "IFL",
+  IFL: "IFL",
 
   /**
    * explosive
    */
-  explosive: "EXP",
+  EXP: "EXP",
 } as const;
 
 /**

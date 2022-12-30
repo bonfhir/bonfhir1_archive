@@ -6,17 +6,17 @@ export const ActBillableModifierCodeCode = {
   /**
    * ActBillableModifierCode
    */
-  ActBillableModifierCode: "_ActBillableModifierCode",
+  _ActBillableModifierCode: "_ActBillableModifierCode",
 
   /**
    * CPT modifier codes
    */
-  CPTmodifiercodes: "CPTM",
+  CPTM: "CPTM",
 
   /**
    * HCPCS Level II and Carrier-assigned
    */
-  HCPCSLevelIIandCarrierassigned: "HCPCSA",
+  HCPCSA: "HCPCSA",
 } as const;
 
 /**

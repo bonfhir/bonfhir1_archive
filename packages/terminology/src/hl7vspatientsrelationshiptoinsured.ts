@@ -6,97 +6,97 @@ export const Hl7VSPatientSRelationshipToInsuredCode = {
   /**
    * Patient is insured
    */
-  Patientisinsured: "01",
+  "01": "01",
 
   /**
    * Spouse
    */
-  Spouse: "02",
+  "02": "02",
 
   /**
    * Natural child/insured financial responsibility
    */
-  Naturalchildinsuredfinancialresponsibility: "03",
+  "03": "03",
 
   /**
    * Natural child/Insured does not have financial responsibility
    */
-  NaturalchildInsureddoesnothavefinancialresponsibility: "04",
+  "04": "04",
 
   /**
    * Step child
    */
-  Stepchild: "05",
+  "05": "05",
 
   /**
    * Foster child
    */
-  Fosterchild: "06",
+  "06": "06",
 
   /**
    * Ward of the court
    */
-  Wardofthecourt: "07",
+  "07": "07",
 
   /**
    * Employee
    */
-  Employee: "08",
+  "08": "08",
 
   /**
    * Unknown
    */
-  Unknown: "09",
+  "09": "09",
 
   /**
    * Handicapped dependent
    */
-  Handicappeddependent: "10",
+  "10": "10",
 
   /**
    * Organ donor
    */
-  Organdonor: "11",
+  "11": "11",
 
   /**
    * Cadaver donor
    */
-  Cadaverdonor: "12",
+  "12": "12",
 
   /**
    * Grandchild
    */
-  Grandchild: "13",
+  "13": "13",
 
   /**
    * Niece/nephew
    */
-  Niecenephew: "14",
+  "14": "14",
 
   /**
    * Injured plaintiff
    */
-  Injuredplaintiff: "15",
+  "15": "15",
 
   /**
    * Sponsored dependent
    */
-  Sponsoreddependent: "16",
+  "16": "16",
 
   /**
    * Minor dependent of a minor dependent
    */
-  Minordependentofaminordependent: "17",
+  "17": "17",
 
   /**
    * Parent
    */
-  Parent: "18",
+  "18": "18",
 
   /**
    * Grandparent
    */
-  Grandparent: "19",
+  "19": "19",
 } as const;
 
 /**

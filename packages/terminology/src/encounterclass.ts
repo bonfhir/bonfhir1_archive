@@ -6,32 +6,32 @@ export const EncounterClassCode = {
   /**
    * inpatient encounter
    */
-  inpatientencounter: "IMP",
+  IMP: "IMP",
 
   /**
    * ambulatory
    */
-  ambulatory: "AMB",
+  AMB: "AMB",
 
   /**
    * observation encounter
    */
-  observationencounter: "OBSENC",
+  OBSENC: "OBSENC",
 
   /**
    * emergency
    */
-  emergency: "EMER",
+  EMER: "EMER",
 
   /**
    * virtual
    */
-  virtual: "VR",
+  VR: "VR",
 
   /**
    * home health
    */
-  homehealth: "HH",
+  HH: "HH",
 } as const;
 
 /**

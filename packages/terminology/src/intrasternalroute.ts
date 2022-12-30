@@ -6,7 +6,7 @@ export const IntrasternalRouteCode = {
   /**
    * Injection, intrasternal
    */
-  Injectionintrasternal: "ISTERINJ",
+  ISTERINJ: "ISTERINJ",
 } as const;
 
 /**

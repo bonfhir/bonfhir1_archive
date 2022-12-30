@@ -6,52 +6,52 @@ export const Hl7VSInvoiceTypeCode = {
   /**
    * Fee for Service
    */
-  FeeforService: "FS",
+  FS: "FS",
 
   /**
    * By Session
    */
-  BySession: "SS",
+  SS: "SS",
 
   /**
    * Group
    */
-  Group: "GP",
+  GP: "GP",
 
   /**
    * Block
    */
-  Block: "BK",
+  BK: "BK",
 
   /**
    * Salary
    */
-  Salary: "SL",
+  SL: "SL",
 
   /**
    * Information Only
    */
-  InformationOnly: "IN",
+  IN: "IN",
 
   /**
    * Non Patient
    */
-  NonPatient: "NP",
+  NP: "NP",
 
   /**
    * Final
    */
-  Final: "FN",
+  FN: "FN",
 
   /**
    * Partial
    */
-  Partial: "PA",
+  PA: "PA",
 
   /**
    * Supplemental
    */
-  Supplemental: "SU",
+  SU: "SU",
 } as const;
 
 /**

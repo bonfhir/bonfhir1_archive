@@ -6,32 +6,32 @@ export const SignificantOtherRoleTypeCode = {
   /**
    * significant other
    */
-  significantother: "SIGOTHR",
+  SIGOTHR: "SIGOTHR",
 
   /**
    * domestic partner
    */
-  domesticpartner: "DOMPART",
+  DOMPART: "DOMPART",
 
   /**
    * former spouse
    */
-  formerspouse: "FMRSPS",
+  FMRSPS: "FMRSPS",
 
   /**
    * spouse
    */
-  spouse: "SPS",
+  SPS: "SPS",
 
   /**
    * husband
    */
-  husband: "HUSB",
+  HUSB: "HUSB",
 
   /**
    * wife
    */
-  wife: "WIFE",
+  WIFE: "WIFE",
 } as const;
 
 /**

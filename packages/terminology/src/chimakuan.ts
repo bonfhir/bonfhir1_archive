@@ -6,7 +6,7 @@ export const ChimakuanCode = {
   /**
    * Quileute
    */
-  Quileute: "x-QUI",
+  "x-QUI": "x-QUI",
 } as const;
 
 /**

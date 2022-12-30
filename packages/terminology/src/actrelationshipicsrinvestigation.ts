@@ -6,17 +6,17 @@ export const ActRelationshipICSRInvestigationCode = {
   /**
    * replaces
    */
-  replaces: "RPLC",
+  RPLC: "RPLC",
 
   /**
    * is sequel
    */
-  issequel: "SEQL",
+  SEQL: "SEQL",
 
   /**
    * has support
    */
-  hassupport: "SPRT",
+  SPRT: "SPRT",
 } as const;
 
 /**

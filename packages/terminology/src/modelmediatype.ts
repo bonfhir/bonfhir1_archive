@@ -6,7 +6,7 @@ export const ModelMediaTypeCode = {
   /**
    * VRML Model
    */
-  VRMLModel: "model/vrml",
+  "model/vrml": "model/vrml",
 } as const;
 
 /**

@@ -6,7 +6,7 @@ export const EntityClassHealthChartEntityCode = {
   /**
    * health chart entity
    */
-  healthchartentity: "HCE",
+  HCE: "HCE",
 } as const;
 
 /**

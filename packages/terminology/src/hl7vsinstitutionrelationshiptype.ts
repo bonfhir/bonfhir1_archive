@@ -6,22 +6,22 @@ export const Hl7VSInstitutionRelationshipTypeCode = {
   /**
    * Employee
    */
-  Employee: "EMP",
+  EMP: "EMP",
 
   /**
    * Volunteer
    */
-  Volunteer: "VOL",
+  VOL: "VOL",
 
   /**
    * Contractor
    */
-  Contractor: "CON",
+  CON: "CON",
 
   /**
    * Consultant
    */
-  Consultant: "CST",
+  CST: "CST",
 } as const;
 
 /**

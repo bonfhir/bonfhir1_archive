@@ -6,47 +6,47 @@ export const ActInformationCategoryCodeCode = {
   /**
    * allergy category
    */
-  allergycategory: "ALLGCAT",
+  ALLGCAT: "ALLGCAT",
 
   /**
    * common observation category
    */
-  commonobservationcategory: "COBSCAT",
+  COBSCAT: "COBSCAT",
 
   /**
    * demographics category
    */
-  demographicscategory: "DEMOCAT",
+  DEMOCAT: "DEMOCAT",
 
   /**
    * diagnostic image category
    */
-  diagnosticimagecategory: "DICAT",
+  DICAT: "DICAT",
 
   /**
    * immunization category
    */
-  immunizationcategory: "IMMUCAT",
+  IMMUCAT: "IMMUCAT",
 
   /**
    * lab test category
    */
-  labtestcategory: "LABCAT",
+  LABCAT: "LABCAT",
 
   /**
    * medical condition category
    */
-  medicalconditioncategory: "MEDCCAT",
+  MEDCCAT: "MEDCCAT",
 
   /**
    * professional service category
    */
-  professionalservicecategory: "PSVCCAT",
+  PSVCCAT: "PSVCCAT",
 
   /**
    * medication category
    */
-  medicationcategory: "RXCAT",
+  RXCAT: "RXCAT",
 } as const;
 
 /**

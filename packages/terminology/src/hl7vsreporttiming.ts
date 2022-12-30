@@ -6,52 +6,52 @@ export const Hl7VSReportTimingCode = {
   /**
    * Correction
    */
-  Correction: "CO",
+  CO: "CO",
 
   /**
    * Additional information
    */
-  Additionalinformation: "AD",
+  AD: "AD",
 
   /**
    * Requested information
    */
-  Requestedinformation: "RQ",
+  RQ: "RQ",
 
   /**
    * Device evaluation
    */
-  Deviceevaluation: "DE",
+  DE: "DE",
 
   /**
    * Periodic
    */
-  Periodic: "PD",
+  PD: "PD",
 
   /**
    * 3 day report
    */
-  Threedayreport: "3D",
+  "3D": "3D",
 
   /**
    * 7 day report
    */
-  Sevendayreport: "7D",
+  "7D": "7D",
 
   /**
    * 10 day report
    */
-  Tendayreport: "10D",
+  "10D": "10D",
 
   /**
    * 15 day report
    */
-  Fifteendayreport: "15D",
+  "15D": "15D",
 
   /**
    * 30 day report
    */
-  Thirtydayreport: "30D",
+  "30D": "30D",
 } as const;
 
 /**

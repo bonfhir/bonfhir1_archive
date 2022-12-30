@@ -6,47 +6,47 @@ export const Hl7VSDocumentConfidentialityStatusCode = {
   /**
    * ASTM Level 1
    */
-  ASTMLevel1: "1",
+  "1": "1",
 
   /**
    * ASTM Level 2
    */
-  ASTMLevel2: "2",
+  "2": "2",
 
   /**
    * ASTM Level 3
    */
-  ASTMLevel3: "3",
+  "3": "3",
 
   /**
    * Restricted
    */
-  Restricted: "RE",
+  RE: "RE",
 
   /**
    * Usual control
    */
-  Usualcontrol: "UC",
+  UC: "UC",
 
   /**
    * Very restricted
    */
-  Veryrestricted: "VR",
+  VR: "VR",
 
   /**
    * Very restricted
    */
-  Veryrestricted: "V",
+  V: "V",
 
   /**
    * Restricted
    */
-  Restricted: "R",
+  R: "R",
 
   /**
    * Usual control
    */
-  Usualcontrol: "U",
+  U: "U",
 } as const;
 
 /**

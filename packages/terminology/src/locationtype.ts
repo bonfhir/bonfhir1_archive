@@ -6,77 +6,77 @@ export const LocationTypeCode = {
   /**
    * Site
    */
-  Site: "si",
+  si: "si",
 
   /**
    * Building
    */
-  Building: "bu",
+  bu: "bu",
 
   /**
    * Wing
    */
-  Wing: "wi",
+  wi: "wi",
 
   /**
    * Ward
    */
-  Ward: "wa",
+  wa: "wa",
 
   /**
    * Level
    */
-  Level: "lvl",
+  lvl: "lvl",
 
   /**
    * Corridor
    */
-  Corridor: "co",
+  co: "co",
 
   /**
    * Room
    */
-  Room: "ro",
+  ro: "ro",
 
   /**
    * Bed
    */
-  Bed: "bd",
+  bd: "bd",
 
   /**
    * Vehicle
    */
-  Vehicle: "ve",
+  ve: "ve",
 
   /**
    * House
    */
-  House: "ho",
+  ho: "ho",
 
   /**
    * Cabinet
    */
-  Cabinet: "ca",
+  ca: "ca",
 
   /**
    * Road
    */
-  Road: "rd",
+  rd: "rd",
 
   /**
    * Area
    */
-  Area: "area",
+  area: "area",
 
   /**
    * Jurisdiction
    */
-  Jurisdiction: "jdn",
+  jdn: "jdn",
 
   /**
    * Virtual
    */
-  Virtual: "vi",
+  vi: "vi",
 } as const;
 
 /**

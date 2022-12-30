@@ -8,7 +8,7 @@ export const RoleClassMemberCode = {
   /**
    * member
    */
-  member: "MBR",
+  MBR: "MBR",
 } as const;
 
 /**

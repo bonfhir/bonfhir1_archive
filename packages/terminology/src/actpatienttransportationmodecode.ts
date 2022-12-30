@@ -8,87 +8,87 @@ export const ActPatientTransportationModeCodeCode = {
   /**
    * ActPatientTransportationModeCode
    */
-  ActPatientTransportationModeCode: "_ActPatientTransportationModeCode",
+  _ActPatientTransportationModeCode: "_ActPatientTransportationModeCode",
 
   /**
    * pedestrian transport
    */
-  pedestriantransport: "AFOOT",
+  AFOOT: "AFOOT",
 
   /**
    * pedestrian transport
    */
-  pedestriantransport: "OnFoot",
+  OnFoot: "OnFoot",
 
   /**
    * ambulance transport
    */
-  ambulancetransport: "AMBT",
+  AMBT: "AMBT",
 
   /**
    * fixed-wing ambulance transport
    */
-  fixedwingambulancetransport: "AMBAIR",
+  AMBAIR: "AMBAIR",
 
   /**
    * fixed-wing ambulance transport
    */
-  fixedwingambulancetransport: "Fixed-wingAmbulance",
+  "Fixed-wingAmbulance": "Fixed-wingAmbulance",
 
   /**
    * ground ambulance transport
    */
-  groundambulancetransport: "AMBGRND",
+  AMBGRND: "AMBGRND",
 
   /**
    * ground ambulance transport
    */
-  groundambulancetransport: "GroundAmbulance",
+  GroundAmbulance: "GroundAmbulance",
 
   /**
    * helicopter ambulance transport
    */
-  helicopterambulancetransport: "AMBHELO",
+  AMBHELO: "AMBHELO",
 
   /**
    * helicopter ambulance transport
    */
-  helicopterambulancetransport: "HelicopterAmbulance",
+  HelicopterAmbulance: "HelicopterAmbulance",
 
   /**
    * ambulance transport
    */
-  ambulancetransport: "Ambulance",
+  Ambulance: "Ambulance",
 
   /**
    * law enforcement transport
    */
-  lawenforcementtransport: "LAWENF",
+  LAWENF: "LAWENF",
 
   /**
    * law enforcement transport
    */
-  lawenforcementtransport: "LawEnforcementVehicle",
+  LawEnforcementVehicle: "LawEnforcementVehicle",
 
   /**
    * private transport
    */
-  privatetransport: "PRVTRN",
+  PRVTRN: "PRVTRN",
 
   /**
    * private transport
    */
-  privatetransport: "PrivateTransport",
+  PrivateTransport: "PrivateTransport",
 
   /**
    * public transport
    */
-  publictransport: "PUBTRN",
+  PUBTRN: "PUBTRN",
 
   /**
    * public transport
    */
-  publictransport: "PublicTransport",
+  PublicTransport: "PublicTransport",
 } as const;
 
 /**

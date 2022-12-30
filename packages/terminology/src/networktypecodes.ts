@@ -6,12 +6,12 @@ export const NetworkTypeCodesCode = {
   /**
    * In Network
    */
-  InNetwork: "in",
+  in: "in",
 
   /**
    * Out of Network
    */
-  OutofNetwork: "out",
+  out: "out",
 } as const;
 
 /**

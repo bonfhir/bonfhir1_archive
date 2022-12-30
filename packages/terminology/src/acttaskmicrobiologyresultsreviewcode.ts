@@ -6,17 +6,17 @@ export const ActTaskMicrobiologyResultsReviewCodeCode = {
   /**
    * microbiology results review task
    */
-  microbiologyresultsreviewtask: "MICRORREV",
+  MICRORREV: "MICRORREV",
 
   /**
    * microbiology organisms results review task
    */
-  microbiologyorganismsresultsreviewtask: "MICROORGRREV",
+  MICROORGRREV: "MICROORGRREV",
 
   /**
    * microbiology sensitivity test results review task
    */
-  microbiologysensitivitytestresultsreviewtask: "MICROSENSRREV",
+  MICROSENSRREV: "MICROSENSRREV",
 } as const;
 
 /**

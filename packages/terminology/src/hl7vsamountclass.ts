@@ -6,22 +6,22 @@ export const Hl7VSAmountClassCode = {
   /**
    * Amount
    */
-  Amount: "AT",
+  AT: "AT",
 
   /**
    * Limit
    */
-  Limit: "LM",
+  LM: "LM",
 
   /**
    * Percentage
    */
-  Percentage: "PC",
+  PC: "PC",
 
   /**
    * Unlimited
    */
-  Unlimited: "UL",
+  UL: "UL",
 } as const;
 
 /**

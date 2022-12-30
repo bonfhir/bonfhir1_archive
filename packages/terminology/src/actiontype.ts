@@ -6,22 +6,22 @@ export const ActionTypeCode = {
   /**
    * Create
    */
-  Create: "create",
+  create: "create",
 
   /**
    * Update
    */
-  Update: "update",
+  update: "update",
 
   /**
    * Remove
    */
-  Remove: "remove",
+  remove: "remove",
 
   /**
    * Fire Event
    */
-  FireEvent: "fire-event",
+  "fire-event": "fire-event",
 } as const;
 
 /**

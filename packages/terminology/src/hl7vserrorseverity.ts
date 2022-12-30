@@ -6,22 +6,22 @@ export const Hl7VSErrorSeverityCode = {
   /**
    * Warning
    */
-  Warning: "W",
+  W: "W",
 
   /**
    * Information
    */
-  Information: "I",
+  I: "I",
 
   /**
    * Error
    */
-  Error: "E",
+  E: "E",
 
   /**
    * Fatal Error
    */
-  FatalError: "F",
+  F: "F",
 } as const;
 
 /**

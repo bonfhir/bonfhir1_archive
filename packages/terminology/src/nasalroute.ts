@@ -6,32 +6,32 @@ export const NasalRouteCode = {
   /**
    * Inhalation, nasal
    */
-  Inhalationnasal: "NASINHL",
+  NASINHL: "NASINHL",
 
   /**
    * Inhalation, nasal cannula
    */
-  Inhalationnasalcannula: "NASINHLC",
+  NASINHLC: "NASINHLC",
 
   /**
    * Inhalation, nasal cannula
    */
-  Inhalationnasalcannula: "NP",
+  NP: "NP",
 
   /**
    * Instillation, nasal
    */
-  Instillationnasal: "NASALINSTIL",
+  NASALINSTIL: "NASALINSTIL",
 
   /**
    * Instillation, nasogastric
    */
-  Instillationnasogastric: "NASOGASINSTIL",
+  NASOGASINSTIL: "NASOGASINSTIL",
 
   /**
    * Topical application, nasal
    */
-  Topicalapplicationnasal: "NASAL",
+  NASAL: "NASAL",
 } as const;
 
 /**

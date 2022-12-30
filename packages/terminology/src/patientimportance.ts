@@ -6,47 +6,47 @@ export const PatientImportanceCode = {
   /**
    * Board Member
    */
-  BoardMember: "BM",
+  BM: "BM",
 
   /**
    * Physician Family Member
    */
-  PhysicianFamilyMember: "DFM",
+  DFM: "DFM",
 
   /**
    * Staff Physician
    */
-  StaffPhysician: "DR",
+  DR: "DR",
 
   /**
    * Financial Donor
    */
-  FinancialDonor: "FD",
+  FD: "FD",
 
   /**
    * Foreign Dignitary
    */
-  ForeignDignitary: "FOR",
+  FOR: "FOR",
 
   /**
    * Government Dignitary
    */
-  GovernmentDignitary: "GOVT",
+  GOVT: "GOVT",
 
   /**
    * Staff Family Member
    */
-  StaffFamilyMember: "SFM",
+  SFM: "SFM",
 
   /**
    * Staff Member
    */
-  StaffMember: "STF",
+  STF: "STF",
 
   /**
    * Very Important Person
    */
-  VeryImportantPerson: "VIP",
+  VIP: "VIP",
 } as const;
 
 /**

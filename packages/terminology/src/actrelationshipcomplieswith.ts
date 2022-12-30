@@ -6,7 +6,7 @@ export const ActRelationshipCompliesWithCode = {
   /**
    * complies with
    */
-  complieswith: "COMPLY",
+  COMPLY: "COMPLY",
 } as const;
 
 /**

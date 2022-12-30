@@ -6,17 +6,17 @@ export const XServiceEventPerformerCode = {
   /**
    * primary performer
    */
-  primaryperformer: "PPRF",
+  PPRF: "PPRF",
 
   /**
    * performer
    */
-  performer: "PRF",
+  PRF: "PRF",
 
   /**
    * secondary performer
    */
-  secondaryperformer: "SPRF",
+  SPRF: "SPRF",
 } as const;
 
 /**

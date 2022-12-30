@@ -6,12 +6,12 @@ export const ImmunizationEvaluationDoseStatusCodesCode = {
   /**
    * Valid
    */
-  Valid: "valid",
+  valid: "valid",
 
   /**
    * Not valid
    */
-  Notvalid: "notvalid",
+  notvalid: "notvalid",
 } as const;
 
 /**

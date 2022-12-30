@@ -6,7 +6,7 @@ export const RoleClassDedicatedServiceDeliveryLocationCode = {
   /**
    * dedicated service delivery location
    */
-  dedicatedservicedeliverylocation: "DSDLOC",
+  DSDLOC: "DSDLOC",
 } as const;
 
 /**

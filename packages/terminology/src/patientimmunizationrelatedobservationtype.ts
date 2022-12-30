@@ -6,33 +6,33 @@ export const PatientImmunizationRelatedObservationTypeCode = {
   /**
    * PatientImmunizationRelatedObservationType
    */
-  PatientImmunizationRelatedObservationType:
+  _PatientImmunizationRelatedObservationType:
     "_PatientImmunizationRelatedObservationType",
 
   /**
    * classroom
    */
-  classroom: "CLSSRM",
+  CLSSRM: "CLSSRM",
 
   /**
    * grade
    */
-  grade: "GRADE",
+  GRADE: "GRADE",
 
   /**
    * school
    */
-  school: "SCHL",
+  SCHL: "SCHL",
 
   /**
    * school division
    */
-  schooldivision: "SCHLDIV",
+  SCHLDIV: "SCHLDIV",
 
   /**
    * teacher
    */
-  teacher: "TEACHER",
+  TEACHER: "TEACHER",
 } as const;
 
 /**

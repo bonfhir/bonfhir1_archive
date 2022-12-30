@@ -6,12 +6,12 @@ export const XDeterminerInstanceKindCode = {
   /**
    * specific
    */
-  specific: "INSTANCE",
+  INSTANCE: "INSTANCE",
 
   /**
    * described
    */
-  described: "KIND",
+  KIND: "KIND",
 } as const;
 
 /**

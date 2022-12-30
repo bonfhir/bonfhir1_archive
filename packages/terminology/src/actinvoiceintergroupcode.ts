@@ -10,37 +10,37 @@ export const ActInvoiceInterGroupCodeCode = {
   /**
    * compound drug invoice group
    */
-  compounddruginvoicegroup: "CPNDDRGING",
+  CPNDDRGING: "CPNDDRGING",
 
   /**
    * compound ingredient invoice group
    */
-  compoundingredientinvoicegroup: "CPNDINDING",
+  CPNDINDING: "CPNDINDING",
 
   /**
    * compound supply invoice group
    */
-  compoundsupplyinvoicegroup: "CPNDSUPING",
+  CPNDSUPING: "CPNDSUPING",
 
   /**
    * drug invoice group
    */
-  druginvoicegroup: "DRUGING",
+  DRUGING: "DRUGING",
 
   /**
    * frame invoice group
    */
-  frameinvoicegroup: "FRAMEING",
+  FRAMEING: "FRAMEING",
 
   /**
    * lens invoice group
    */
-  lensinvoicegroup: "LENSING",
+  LENSING: "LENSING",
 
   /**
    * product invoice group
    */
-  productinvoicegroup: "PRDING",
+  PRDING: "PRDING",
 } as const;
 
 /**

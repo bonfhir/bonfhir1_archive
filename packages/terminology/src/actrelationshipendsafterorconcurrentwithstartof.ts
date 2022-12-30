@@ -6,87 +6,87 @@ export const ActRelationshipEndsAfterOrConcurrentWithStartOfCode = {
   /**
    * ends after or concurrent with start of
    */
-  endsafterorconcurrentwithstartof: "EASORECWS",
+  EASORECWS: "EASORECWS",
 
   /**
    * ends after start of
    */
-  endsafterstartof: "EAS",
+  EAS: "EAS",
 
   /**
    * ends after end of
    */
-  endsafterendof: "EAE",
+  EAE: "EAE",
 
   /**
    * starts after start of, ends after end of
    */
-  startsafterstartofendsafterendof: "SASEAE",
+  SASEAE: "SASEAE",
 
   /**
    * contains end of
    */
-  containsendof: "SBEEAE",
+  SBEEAE: "SBEEAE",
 
   /**
    * start after start of, contains end of
    */
-  startafterstartofcontainsendof: "SASSBEEAS",
+  SASSBEEAS: "SASSBEEAS",
 
   /**
    * contains time of
    */
-  containstimeof: "SBSEAE",
+  SBSEAE: "SBSEAE",
 
   /**
    * starts with, ends after end of
    */
-  startswithendsafterendof: "SCWSEAE",
+  SCWSEAE: "SCWSEAE",
 
   /**
    * starts after start of
    */
-  startsafterstartof: "SAS",
+  SAS: "SAS",
 
   /**
    * starts after end of
    */
-  startsafterendof: "SAE",
+  SAE: "SAE",
 
   /**
    * occurs during
    */
-  occursduring: "DURING",
+  DURING: "DURING",
 
   /**
    * starts after start of, ends with
    */
-  startsafterstartofendswith: "SASECWE",
+  SASECWE: "SASECWE",
 
   /**
    * ends after or concurrent with end of
    */
-  endsafterorconcurrentwithendof: "EAEORECW",
+  EAEORECW: "EAEORECW",
 
   /**
    * ends concurrent with
    */
-  endsconcurrentwith: "ECW",
+  ECW: "ECW",
 
   /**
    * concurrent with
    */
-  concurrentwith: "CONCURRENT",
+  CONCURRENT: "CONCURRENT",
 
   /**
    * starts before start of, ends with
    */
-  startsbeforestartofendswith: "SBSECWE",
+  SBSECWE: "SBSECWE",
 
   /**
    * ends concurrent with start of
    */
-  endsconcurrentwithstartof: "ECWS",
+  ECWS: "ECWS",
 } as const;
 
 /**

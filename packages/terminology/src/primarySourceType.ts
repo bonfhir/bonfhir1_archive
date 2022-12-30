@@ -6,47 +6,47 @@ export const Primary_source_typeCode = {
   /**
    * License Board
    */
-  LicenseBoard: "lic-board",
+  "lic-board": "lic-board",
 
   /**
    * Primary Education
    */
-  PrimaryEducation: "prim",
+  prim: "prim",
 
   /**
    * Continuing Education
    */
-  ContinuingEducation: "cont-ed",
+  "cont-ed": "cont-ed",
 
   /**
    * Postal Service
    */
-  PostalService: "post-serv",
+  "post-serv": "post-serv",
 
   /**
    * Relationship owner
    */
-  Relationshipowner: "rel-own",
+  "rel-own": "rel-own",
 
   /**
    * Registration Authority
    */
-  RegistrationAuthority: "reg-auth",
+  "reg-auth": "reg-auth",
 
   /**
    * Legal source
    */
-  Legalsource: "legal",
+  legal: "legal",
 
   /**
    * Issuing source
    */
-  Issuingsource: "issuer",
+  issuer: "issuer",
 
   /**
    * Authoritative source
    */
-  Authoritativesource: "auth-source",
+  "auth-source": "auth-source",
 } as const;
 
 /**

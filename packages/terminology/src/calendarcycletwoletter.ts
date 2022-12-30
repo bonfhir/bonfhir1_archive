@@ -6,82 +6,82 @@ export const CalendarCycleTwoLetterCode = {
   /**
    * day (continuous)
    */
-  daycontinuous: "CD",
+  CD: "CD",
 
   /**
    * hour (continuous)
    */
-  hourcontinuous: "CH",
+  CH: "CH",
 
   /**
    * month (continuous)
    */
-  monthcontinuous: "CM",
+  CM: "CM",
 
   /**
    * minute (continuous)
    */
-  minutecontinuous: "CN",
+  CN: "CN",
 
   /**
    * second (continuous)
    */
-  secondcontinuous: "CS",
+  CS: "CS",
 
   /**
    * week (continuous)
    */
-  weekcontinuous: "CW",
+  CW: "CW",
 
   /**
    * year
    */
-  year: "CY",
+  CY: "CY",
 
   /**
    * day of the month
    */
-  dayofthemonth: "DM",
+  DM: "DM",
 
   /**
    * day of the week (begins with Monday)
    */
-  dayoftheweekbeginswithMonday: "DW",
+  DW: "DW",
 
   /**
    * day of the year
    */
-  dayoftheyear: "DY",
+  DY: "DY",
 
   /**
    * hour of the day
    */
-  houroftheday: "HD",
+  HD: "HD",
 
   /**
    * month of the year
    */
-  monthoftheyear: "MY",
+  MY: "MY",
 
   /**
    * minute of the hour
    */
-  minuteofthehour: "NH",
+  NH: "NH",
 
   /**
    * second of the minute
    */
-  secondoftheminute: "SN",
+  SN: "SN",
 
   /**
    * week of the month
    */
-  weekofthemonth: "WM",
+  WM: "WM",
 
   /**
    * week of the year
    */
-  weekoftheyear: "WY",
+  WY: "WY",
 } as const;
 
 /**

@@ -6,82 +6,82 @@ export const Hl7VSSubtypeOfReferencedDataCode = {
   /**
    * ISDN PCM audio data
    */
-  ISDNPCMaudiodata: "BASIC",
+  BASIC: "BASIC",
 
   /**
    * Source RFC 2046
    */
-  SourceRFC2046: "…",
+  "…": "…",
 
   /**
    * Digital Imaging and Communications in Medicine
    */
-  DigitalImagingandCommunicationsinMedicine: "DICOM",
+  DICOM: "DICOM",
 
   /**
    * Facsimile data
    */
-  Facsimiledata: "FAX",
+  FAX: "FAX",
 
   /**
    * Graphics Interchange Format
    */
-  GraphicsInterchangeFormat: "GIF",
+  GIF: "GIF",
 
   /**
    * Hypertext Markup Language
    */
-  HypertextMarkupLanguage: "HTML",
+  HTML: "HTML",
 
   /**
    * Electronic ink data (Jot 1.0 standard)
    */
-  ElectronicinkdataJot10standard: "JOT",
+  JOT: "JOT",
 
   /**
    * Joint Photographic Experts Group
    */
-  JointPhotographicExpertsGroup: "JPEG",
+  JPEG: "JPEG",
 
   /**
    * Uninterpreted binary data
    */
-  Uninterpretedbinarydata: "Octet-stream",
+  "Octet-stream": "Octet-stream",
 
   /**
    * PICT format image data
    */
-  PICTformatimagedata: "PICT",
+  PICT: "PICT",
 
   /**
    * PostScript program
    */
-  PostScriptprogram: "PostScript",
+  PostScript: "PostScript",
 
   /**
    * Rich Text Format
    */
-  RichTextFormat: "RTF",
+  RTF: "RTF",
 
   /**
    * Standard Generalized Markup Language (HL7 V2.3.1 and later)
    */
-  StandardGeneralizedMarkupLanguageHL7V231andlater: "SGML",
+  SGML: "SGML",
 
   /**
    * TIFF image data
    */
-  TIFFimagedata: "TIFF",
+  TIFF: "TIFF",
 
   /**
    * Extensible Markup Language (HL7 V2.3.1 and later)
    */
-  ExtensibleMarkupLanguageHL7V231andlater: "XML",
+  XML: "XML",
 
   /**
    * HL7 Clinical Document Architecture Level One document
    */
-  HL7ClinicalDocumentArchitectureLevelOnedocument: "x-hl7-cda-level-one",
+  "x-hl7-cda-level-one": "x-hl7-cda-level-one",
 } as const;
 
 /**

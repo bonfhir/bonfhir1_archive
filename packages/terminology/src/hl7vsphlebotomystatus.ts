@@ -6,17 +6,17 @@ export const Hl7VSPhlebotomyStatusCode = {
   /**
    * Successful
    */
-  Successful: "SUC",
+  SUC: "SUC",
 
   /**
    * Not Drawn
    */
-  NotDrawn: "NDR",
+  NDR: "NDR",
 
   /**
    * Unsuccessful Less than 50 ml drawn
    */
-  UnsuccessfulLessthan50mldrawn: "UL5",
+  UL5: "UL5",
 } as const;
 
 /**

@@ -6,27 +6,28 @@ export const OrganizationEntityTypeCode = {
   /**
    * OrganizationEntityType
    */
-  OrganizationEntityType: "_OrganizationEntityType",
+  _OrganizationEntityType: "_OrganizationEntityType",
 
   /**
    * household
    */
-  household: "HHOLD",
+  HHOLD: "HHOLD",
 
   /**
    * NationEntityType
    */
-  NationEntityType: "NAT",
+  NAT: "NAT",
 
   /**
    * religious institution
    */
-  religiousinstitution: "RELIG",
+  RELIG: "RELIG",
 
   /**
    * Individual Case Safety Report Sender Type
    */
-  IndividualCaseSafetyReportSenderType: "_IndividualCaseSafetyReportSenderType",
+  _IndividualCaseSafetyReportSenderType:
+    "_IndividualCaseSafetyReportSenderType",
 } as const;
 
 /**

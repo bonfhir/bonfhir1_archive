@@ -6,17 +6,17 @@ export const QualityMeasureSectionTypeCode = {
   /**
    * Data criteria Narrative
    */
-  DatacriteriaNarrative: "57025-9",
+  "57025-9": "57025-9",
 
   /**
    * Population criteria Narrative
    */
-  PopulationcriteriaNarrative: "57026-7",
+  "57026-7": "57026-7",
 
   /**
    * Measure observations Narrative
    */
-  MeasureobservationsNarrative: "57027-5",
+  "57027-5": "57027-5",
 } as const;
 
 /**

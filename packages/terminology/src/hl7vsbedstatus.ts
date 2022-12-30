@@ -6,32 +6,32 @@ export const Hl7VSBedStatusCode = {
   /**
    * Closed
    */
-  Closed: "C",
+  C: "C",
 
   /**
    * Housekeeping
    */
-  Housekeeping: "H",
+  H: "H",
 
   /**
    * Occupied
    */
-  Occupied: "O",
+  O: "O",
 
   /**
    * Unoccupied
    */
-  Unoccupied: "U",
+  U: "U",
 
   /**
    * Contaminated
    */
-  Contaminated: "K",
+  K: "K",
 
   /**
    * Isolated
    */
-  Isolated: "I",
+  I: "I",
 } as const;
 
 /**

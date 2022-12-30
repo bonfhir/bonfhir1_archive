@@ -19,17 +19,17 @@ export const ActClassExposureCode = {
   /**
    * exposure
    */
-  exposure: "EXPOS",
+  EXPOS: "EXPOS",
 
   /**
    * acquisition exposure
    */
-  acquisitionexposure: "AEXPOS",
+  AEXPOS: "AEXPOS",
 
   /**
    * transmission exposure
    */
-  transmissionexposure: "TEXPOS",
+  TEXPOS: "TEXPOS",
 } as const;
 
 /**

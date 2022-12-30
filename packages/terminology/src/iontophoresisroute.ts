@@ -6,7 +6,7 @@ export const IontophoresisRouteCode = {
   /**
    * Topical application, iontophoresis
    */
-  Topicalapplicationiontophoresis: "IONTO",
+  IONTO: "IONTO",
 } as const;
 
 /**

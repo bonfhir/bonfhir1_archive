@@ -10,12 +10,12 @@ export const LocalRemoteControlStateCode = {
   /**
    * Local
    */
-  Local: "L",
+  L: "L",
 
   /**
    * Remote
    */
-  Remote: "R",
+  R: "R",
 } as const;
 
 /**

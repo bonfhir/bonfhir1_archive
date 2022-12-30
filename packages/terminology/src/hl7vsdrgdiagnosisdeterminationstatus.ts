@@ -6,27 +6,27 @@ export const Hl7VSDrgDiagnosisDeterminationStatusCode = {
   /**
    * Valid code
    */
-  Validcode: "0",
+  "0": "0",
 
   /**
    * Invalid code
    */
-  Invalidcode: "1",
+  "1": "1",
 
   /**
    * Two primary diagnosis codes
    */
-  Twoprimarydiagnosiscodes: "2",
+  "2": "2",
 
   /**
    * Invalid for this gender
    */
-  Invalidforthisgender: "3",
+  "3": "3",
 
   /**
    * Invalid for this age
    */
-  Invalidforthisage: "4",
+  "4": "4",
 } as const;
 
 /**

@@ -6,7 +6,7 @@ export const IntraspinalRouteCode = {
   /**
    * Injection, intraspinal
    */
-  Injectionintraspinal: "ISINJ",
+  ISINJ: "ISINJ",
 } as const;
 
 /**

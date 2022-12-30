@@ -22,537 +22,537 @@ export const ActClassRootCode = {
   /**
    * act
    */
-  act: "ACT",
+  ACT: "ACT",
 
   /**
    * record organizer
    */
-  recordorganizer: "_ActClassRecordOrganizer",
+  _ActClassRecordOrganizer: "_ActClassRecordOrganizer",
 
   /**
    * composition
    */
-  composition: "COMPOSITION",
+  COMPOSITION: "COMPOSITION",
 
   /**
    * document
    */
-  document: "DOC",
+  DOC: "DOC",
 
   /**
    * clinical document
    */
-  clinicaldocument: "DOCCLIN",
+  DOCCLIN: "DOCCLIN",
 
   /**
    * CDA Level One clinical document
    */
-  CDALevelOneclinicaldocument: "CDALVLONE",
+  CDALVLONE: "CDALVLONE",
 
   /**
    * record container
    */
-  recordcontainer: "CONTAINER",
+  CONTAINER: "CONTAINER",
 
   /**
    * category
    */
-  category: "CATEGORY",
+  CATEGORY: "CATEGORY",
 
   /**
    * document body
    */
-  documentbody: "DOCBODY",
+  DOCBODY: "DOCBODY",
 
   /**
    * document section
    */
-  documentsection: "DOCSECT",
+  DOCSECT: "DOCSECT",
 
   /**
    * topic
    */
-  topic: "TOPIC",
+  TOPIC: "TOPIC",
 
   /**
    * extract
    */
-  extract: "EXTRACT",
+  EXTRACT: "EXTRACT",
 
   /**
    * electronic health record
    */
-  electronichealthrecord: "EHR",
+  EHR: "EHR",
 
   /**
    * folder
    */
-  folder: "FOLDER",
+  FOLDER: "FOLDER",
 
   /**
    * grouper
    */
-  grouper: "GROUPER",
+  GROUPER: "GROUPER",
 
   /**
    * Cluster
    */
-  Cluster: "CLUSTER",
+  CLUSTER: "CLUSTER",
 
   /**
    * accommodation
    */
-  accommodation: "ACCM",
+  ACCM: "ACCM",
 
   /**
    * account
    */
-  account: "ACCT",
+  ACCT: "ACCT",
 
   /**
    * accession
    */
-  accession: "ACSN",
+  ACSN: "ACSN",
 
   /**
    * financial adjudication
    */
-  financialadjudication: "ADJUD",
+  ADJUD: "ADJUD",
 
   /**
    * control act
    */
-  controlact: "CACT",
+  CACT: "CACT",
 
   /**
    * action
    */
-  action: "ACTN",
+  ACTN: "ACTN",
 
   /**
    * information
    */
-  information: "INFO",
+  INFO: "INFO",
 
   /**
    * state transition control
    */
-  statetransitioncontrol: "STC",
+  STC: "STC",
 
   /**
    * contract
    */
-  contract: "CNTRCT",
+  CNTRCT: "CNTRCT",
 
   /**
    * financial contract
    */
-  financialcontract: "FCNTRCT",
+  FCNTRCT: "FCNTRCT",
 
   /**
    * coverage
    */
-  coverage: "COV",
+  COV: "COV",
 
   /**
    * concern
    */
-  concern: "CONC",
+  CONC: "CONC",
 
   /**
    * public health case
    */
-  publichealthcase: "HCASE",
+  HCASE: "HCASE",
 
   /**
    * outbreak
    */
-  outbreak: "OUTBR",
+  OUTBR: "OUTBR",
 
   /**
    * consent
    */
-  consent: "CONS",
+  CONS: "CONS",
 
   /**
    * container registration
    */
-  containerregistration: "CONTREG",
+  CONTREG: "CONTREG",
 
   /**
    * clinical trial timepoint event
    */
-  clinicaltrialtimepointevent: "CTTEVENT",
+  CTTEVENT: "CTTEVENT",
 
   /**
    * disciplinary action
    */
-  disciplinaryaction: "DISPACT",
+  DISPACT: "DISPACT",
 
   /**
    * exposure
    */
-  exposure: "EXPOS",
+  EXPOS: "EXPOS",
 
   /**
    * acquisition exposure
    */
-  acquisitionexposure: "AEXPOS",
+  AEXPOS: "AEXPOS",
 
   /**
    * transmission exposure
    */
-  transmissionexposure: "TEXPOS",
+  TEXPOS: "TEXPOS",
 
   /**
    * incident
    */
-  incident: "INC",
+  INC: "INC",
 
   /**
    * inform
    */
-  inform: "INFRM",
+  INFRM: "INFRM",
 
   /**
    * invoice element
    */
-  invoiceelement: "INVE",
+  INVE: "INVE",
 
   /**
    * working list
    */
-  workinglist: "LIST",
+  LIST: "LIST",
 
   /**
    * monitoring program
    */
-  monitoringprogram: "MPROT",
+  MPROT: "MPROT",
 
   /**
    * observation
    */
-  observation: "OBS",
+  OBS: "OBS",
 
   /**
    * ActClassROI
    */
-  ActClassROI: "_ActClassROI",
+  _ActClassROI: "_ActClassROI",
 
   /**
    * bounded ROI
    */
-  boundedROI: "ROIBND",
+  ROIBND: "ROIBND",
 
   /**
    * overlay ROI
    */
-  overlayROI: "ROIOVL",
+  ROIOVL: "ROIOVL",
 
   /**
    * subject physical position
    */
-  subjectphysicalposition: "_SubjectPhysicalPosition",
+  _SubjectPhysicalPosition: "_SubjectPhysicalPosition",
 
   /**
    * subject body position
    */
-  subjectbodyposition: "_SubjectBodyPosition",
+  _SubjectBodyPosition: "_SubjectBodyPosition",
 
   /**
    * left lateral decubitus
    */
-  leftlateraldecubitus: "LLD",
+  LLD: "LLD",
 
   /**
    * prone
    */
-  prone: "PRN",
+  PRN: "PRN",
 
   /**
    * right lateral decubitus
    */
-  rightlateraldecubitus: "RLD",
+  RLD: "RLD",
 
   /**
    * Semi-Fowler's
    */
-  SemiFowlers: "SFWL",
+  SFWL: "SFWL",
 
   /**
    * sitting
    */
-  sitting: "SIT",
+  SIT: "SIT",
 
   /**
    * standing
    */
-  standing: "STN",
+  STN: "STN",
 
   /**
    * supine
    */
-  supine: "SUP",
+  SUP: "SUP",
 
   /**
    * reverse trendelenburg
    */
-  reversetrendelenburg: "RTRD",
+  RTRD: "RTRD",
 
   /**
    * trendelenburg
    */
-  trendelenburg: "TRD",
+  TRD: "TRD",
 
   /**
    * imaging subject orientation
    */
-  imagingsubjectorientation: "_ImagingSubjectOrientation",
+  _ImagingSubjectOrientation: "_ImagingSubjectOrientation",
 
   /**
    * detected issue
    */
-  detectedissue: "ALRT",
+  ALRT: "ALRT",
 
   /**
    * battery
    */
-  battery: "BATTERY",
+  BATTERY: "BATTERY",
 
   /**
    * clinical trial
    */
-  clinicaltrial: "CLNTRL",
+  CLNTRL: "CLNTRL",
 
   /**
    * Condition Node
    */
-  ConditionNode: "CNOD",
+  CNOD: "CNOD",
 
   /**
    * Condition
    */
-  Condition: "COND",
+  COND: "COND",
 
   /**
    * public health case
    */
-  publichealthcase: "CASE",
+  CASE: "CASE",
 
   /**
    * outbreak
    */
-  outbreak: "OUTB",
+  OUTB: "OUTB",
 
   /**
    * diagnostic image
    */
-  diagnosticimage: "DGIMG",
+  DGIMG: "DGIMG",
 
   /**
    * genomic observation
    */
-  genomicobservation: "GEN",
+  GEN: "GEN",
 
   /**
    * determinant peptide
    */
-  determinantpeptide: "DETPOL",
+  DETPOL: "DETPOL",
 
   /**
    * expression level
    */
-  expressionlevel: "EXP",
+  EXP: "EXP",
 
   /**
    * locus
    */
-  locus: "LOC",
+  LOC: "LOC",
 
   /**
    * phenotype
    */
-  phenotype: "PHN",
+  PHN: "PHN",
 
   /**
    * polypeptide
    */
-  polypeptide: "POL",
+  POL: "POL",
 
   /**
    * bio sequence
    */
-  biosequence: "SEQ",
+  SEQ: "SEQ",
 
   /**
    * bio sequence variation
    */
-  biosequencevariation: "SEQVAR",
+  SEQVAR: "SEQVAR",
 
   /**
    * investigation
    */
-  investigation: "INVSTG",
+  INVSTG: "INVSTG",
 
   /**
    * observation series
    */
-  observationseries: "OBSSER",
+  OBSSER: "OBSSER",
 
   /**
    * correlated observation sequences
    */
-  correlatedobservationsequences: "OBSCOR",
+  OBSCOR: "OBSCOR",
 
   /**
    * position
    */
-  position: "POS",
+  POS: "POS",
 
   /**
    * position accuracy
    */
-  positionaccuracy: "POSACC",
+  POSACC: "POSACC",
 
   /**
    * position coordinate
    */
-  positioncoordinate: "POSCOORD",
+  POSCOORD: "POSCOORD",
 
   /**
    * specimen observation
    */
-  specimenobservation: "SPCOBS",
+  SPCOBS: "SPCOBS",
 
   /**
    * Verification
    */
-  Verification: "VERIF",
+  VERIF: "VERIF",
 
   /**
    * care provision
    */
-  careprovision: "PCPR",
+  PCPR: "PCPR",
 
   /**
    * encounter
    */
-  encounter: "ENC",
+  ENC: "ENC",
 
   /**
    * policy
    */
-  policy: "POLICY",
+  POLICY: "POLICY",
 
   /**
    * jurisdictional policy
    */
-  jurisdictionalpolicy: "JURISPOL",
+  JURISPOL: "JURISPOL",
 
   /**
    * organizational policy
    */
-  organizationalpolicy: "ORGPOL",
+  ORGPOL: "ORGPOL",
 
   /**
    * scope of practice policy
    */
-  scopeofpracticepolicy: "SCOPOL",
+  SCOPOL: "SCOPOL",
 
   /**
    * standard of practice policy
    */
-  standardofpracticepolicy: "STDPOL",
+  STDPOL: "STDPOL",
 
   /**
    * procedure
    */
-  procedure: "PROC",
+  PROC: "PROC",
 
   /**
    * substance administration
    */
-  substanceadministration: "SBADM",
+  SBADM: "SBADM",
 
   /**
    * Substance Extraction
    */
-  SubstanceExtraction: "SBEXT",
+  SBEXT: "SBEXT",
 
   /**
    * Specimen Collection
    */
-  SpecimenCollection: "SPECCOLLECT",
+  SPECCOLLECT: "SPECCOLLECT",
 
   /**
    * registration
    */
-  registration: "REG",
+  REG: "REG",
 
   /**
    * review
    */
-  review: "REV",
+  REV: "REV",
 
   /**
    * specimen treatment
    */
-  specimentreatment: "SPCTRT",
+  SPCTRT: "SPCTRT",
 
   /**
    * supply
    */
-  supply: "SPLY",
+  SPLY: "SPLY",
 
   /**
    * diet
    */
-  diet: "DIET",
+  DIET: "DIET",
 
   /**
    * storage
    */
-  storage: "STORE",
+  STORE: "STORE",
 
   /**
    * Substitution
    */
-  Substitution: "SUBST",
+  SUBST: "SUBST",
 
   /**
    * transfer
    */
-  transfer: "TRFR",
+  TRFR: "TRFR",
 
   /**
    * transportation
    */
-  transportation: "TRNS",
+  TRNS: "TRNS",
 
   /**
    * financial transaction
    */
-  financialtransaction: "XACT",
+  XACT: "XACT",
 
   /**
    * ActClassContainer
    */
-  ActClassContainer: "_ActClassContainer",
+  _ActClassContainer: "_ActClassContainer",
 
   /**
    * entry
    */
-  entry: "ENTRY",
+  ENTRY: "ENTRY",
 
   /**
    * organizer
    */
-  organizer: "ORGANIZER",
+  ORGANIZER: "ORGANIZER",
 
   /**
    * ActClassContainer
    */
-  ActClassContainer: "_ActContainer",
+  _ActContainer: "_ActContainer",
 } as const;
 
 /**

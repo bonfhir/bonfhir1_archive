@@ -6,27 +6,27 @@ export const VerificationMethodCode = {
   /**
    * VerificationMethod
    */
-  VerificationMethod: "_VerificationMethod",
+  _VerificationMethod: "_VerificationMethod",
 
   /**
    * document verification
    */
-  documentverification: "VDOC",
+  VDOC: "VDOC",
 
   /**
    * registry verification
    */
-  registryverification: "VREG",
+  VREG: "VREG",
 
   /**
    * electronic token verification
    */
-  electronictokenverification: "VTOKEN",
+  VTOKEN: "VTOKEN",
 
   /**
    * voice-based verification
    */
-  voicebasedverification: "VVOICE",
+  VVOICE: "VVOICE",
 } as const;
 
 /**

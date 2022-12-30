@@ -6,52 +6,52 @@ export const PersonDisabilityTypeCode = {
   /**
    * Vision impaired
    */
-  Visionimpaired: "1",
+  "1": "1",
 
   /**
    * Hearing impaired
    */
-  Hearingimpaired: "2",
+  "2": "2",
 
   /**
    * Speech impaired
    */
-  Speechimpaired: "3",
+  "3": "3",
 
   /**
    * Mentally impaired
    */
-  Mentallyimpaired: "4",
+  "4": "4",
 
   /**
    * Mobility impaired
    */
-  Mobilityimpaired: "5",
+  "5": "5",
 
   /**
    * Requires crib
    */
-  Requirescrib: "CB",
+  CB: "CB",
 
   /**
    * Requires crutches
    */
-  Requirescrutches: "CR",
+  CR: "CR",
 
   /**
    * Requires gurney
    */
-  Requiresgurney: "G",
+  G: "G",
 
   /**
    * Requires wheelchair
    */
-  Requireswheelchair: "WC",
+  WC: "WC",
 
   /**
    * Requires walker
    */
-  Requireswalker: "WK",
+  WK: "WK",
 } as const;
 
 /**

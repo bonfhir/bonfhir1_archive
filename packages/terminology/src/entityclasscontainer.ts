@@ -6,12 +6,12 @@ export const EntityClassContainerCode = {
   /**
    * container
    */
-  container: "CONT",
+  CONT: "CONT",
 
   /**
    * holder
    */
-  holder: "HOLD",
+  HOLD: "HOLD",
 } as const;
 
 /**

@@ -6,17 +6,17 @@ export const ReactionParticipantCode = {
   /**
    * catalyst
    */
-  catalyst: "CAT",
+  CAT: "CAT",
 
   /**
    * consumable
    */
-  consumable: "CSM",
+  CSM: "CSM",
 
   /**
    * product
    */
-  product: "PRD",
+  PRD: "PRD",
 } as const;
 
 /**

@@ -6,37 +6,37 @@ export const Hl7VSOrganizationUnitTypeOrgCode = {
   /**
    * Department
    */
-  Department: "D",
+  D: "D",
 
   /**
    * Facility
    */
-  Facility: "F",
+  F: "F",
 
   /**
    * Local market area
    */
-  Localmarketarea: "L",
+  L: "L",
 
   /**
    * Subdepartment
    */
-  Subdepartment: "U",
+  U: "U",
 
   /**
    * Medical Center Area
    */
-  MedicalCenterArea: "M",
+  M: "M",
 
   /**
    * Subdivision
    */
-  Subdivision: "S",
+  S: "S",
 
   /**
    * Division
    */
-  Division: "V",
+  V: "V",
 } as const;
 
 /**

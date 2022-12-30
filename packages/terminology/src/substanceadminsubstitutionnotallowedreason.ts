@@ -6,33 +6,33 @@ export const SubstanceAdminSubstitutionNotAllowedReasonCode = {
   /**
    * Patient request
    */
-  Patientrequest: "PAT",
+  PAT: "PAT",
 
   /**
    * SubstanceAdminSubstitutionNotAllowedReason
    */
-  SubstanceAdminSubstitutionNotAllowedReason:
+  _SubstanceAdminSubstitutionNotAllowedReason:
     "_SubstanceAdminSubstitutionNotAllowedReason",
 
   /**
    * allergy intolerance
    */
-  allergyintolerance: "ALGINT",
+  ALGINT: "ALGINT",
 
   /**
    * compliance concern
    */
-  complianceconcern: "COMPCON",
+  COMPCON: "COMPCON",
 
   /**
    * therapeutic characteristics
    */
-  therapeuticcharacteristics: "THERCHAR",
+  THERCHAR: "THERCHAR",
 
   /**
    * clinical trial drug
    */
-  clinicaltrialdrug: "TRIAL",
+  TRIAL: "TRIAL",
 } as const;
 
 /**

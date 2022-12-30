@@ -6,512 +6,512 @@ export const Hl7VSKindOfQuantityCode = {
   /**
    * Catalytic Activity
    */
-  CatalyticActivity: "CACT",
+  CACT: "CACT",
 
   /**
    * Catalytic Concentration
    */
-  CatalyticConcentration: "CNC",
+  CNC: "CNC",
 
   /**
    * Catalytic Concentration Ratio
    */
-  CatalyticConcentrationRatio: "CCRTO",
+  CCRTO: "CCRTO",
 
   /**
    * Catalytic Content
    */
-  CatalyticContent: "CCNT",
+  CCNT: "CCNT",
 
   /**
    * Catalytic Fraction
    */
-  CatalyticFraction: "CFR",
+  CFR: "CFR",
 
   /**
    * Catalytic Rate
    */
-  CatalyticRate: "CRAT",
+  CRAT: "CRAT",
 
   /**
    * Catalytic Ratio
    */
-  CatalyticRatio: "CRTO",
+  CRTO: "CRTO",
 
   /**
    * Entitic
    */
-  Entitic: "ENT",
+  ENT: "ENT",
 
   /**
    * Entitic Substance of Amount
    */
-  EntiticSubstanceofAmount: "ENTSUB",
+  ENTSUB: "ENTSUB",
 
   /**
    * Entitic Catalytic Activity
    */
-  EntiticCatalyticActivity: "ENTCAT",
+  ENTCAT: "ENTCAT",
 
   /**
    * Entitic Number
    */
-  EntiticNumber: "ENTNUM",
+  ENTNUM: "ENTNUM",
 
   /**
    * Entitic Volume
    */
-  EntiticVolume: "ENTVOL",
+  ENTVOL: "ENTVOL",
 
   /**
    * Mass
    */
-  Mass: "MASS",
+  MASS: "MASS",
 
   /**
    * Mass Concentration
    */
-  MassConcentration: "MCNC",
+  MCNC: "MCNC",
 
   /**
    * Mass Concentration Ratio
    */
-  MassConcentrationRatio: "MCRTO",
+  MCRTO: "MCRTO",
 
   /**
    * Mass Content
    */
-  MassContent: "MCNT",
+  MCNT: "MCNT",
 
   /**
    * Mass Fraction
    */
-  MassFraction: "MFR",
+  MFR: "MFR",
 
   /**
    * Mass Increment
    */
-  MassIncrement: "MINC",
+  MINC: "MINC",
 
   /**
    * Mass Rate
    */
-  MassRate: "MRAT",
+  MRAT: "MRAT",
 
   /**
    * Mass Ratio
    */
-  MassRatio: "MRTO",
+  MRTO: "MRTO",
 
   /**
    * Number
    */
-  Number: "NUM",
+  NUM: "NUM",
 
   /**
    * Number Concentration
    */
-  NumberConcentration: "NCNC",
+  NCNC: "NCNC",
 
   /**
    * Number Content
    */
-  NumberContent: "NCNT",
+  NCNT: "NCNT",
 
   /**
    * Number Fraction
    */
-  NumberFraction: "NFR",
+  NFR: "NFR",
 
   /**
    * Number Ratio
    */
-  NumberRatio: "NRTO",
+  NRTO: "NRTO",
 
   /**
    * Substance Amount
    */
-  SubstanceAmount: "SUB",
+  SUB: "SUB",
 
   /**
    * Substance Concentration
    */
-  SubstanceConcentration: "SCNC",
+  SCNC: "SCNC",
 
   /**
    * Substance Concentration Ratio
    */
-  SubstanceConcentrationRatio: "SCRTO",
+  SCRTO: "SCRTO",
 
   /**
    * Substance Content
    */
-  SubstanceContent: "SCNT",
+  SCNT: "SCNT",
 
   /**
    * Substance Content Rate
    */
-  SubstanceContentRate: "SCNTR",
+  SCNTR: "SCNTR",
 
   /**
    * Substance Fraction
    */
-  SubstanceFraction: "SFR",
+  SFR: "SFR",
 
   /**
    * Substance Concentration Increment
    */
-  SubstanceConcentrationIncrement: "SCNCIN",
+  SCNCIN: "SCNCIN",
 
   /**
    * Substance Rate
    */
-  SubstanceRate: "SRAT",
+  SRAT: "SRAT",
 
   /**
    * Substance Ratio
    */
-  SubstanceRatio: "SRTO",
+  SRTO: "SRTO",
 
   /**
    * Volume
    */
-  Volume: "VOL",
+  VOL: "VOL",
 
   /**
    * Volume Content
    */
-  VolumeContent: "VCNT",
+  VCNT: "VCNT",
 
   /**
    * Volume Fraction
    */
-  VolumeFraction: "VFR",
+  VFR: "VFR",
 
   /**
    * Volume Rate
    */
-  VolumeRate: "VRAT",
+  VRAT: "VRAT",
 
   /**
    * Volume Ratio
    */
-  VolumeRatio: "VRTO",
+  VRTO: "VRTO",
 
   /**
    * Concentration, Arbitrary Substance
    */
-  ConcentrationArbitrarySubstance: "ACNC",
+  ACNC: "ACNC",
 
   /**
    * Relative Mass Concentration
    */
-  RelativeMassConcentration: "RLMCNC",
+  RLMCNC: "RLMCNC",
 
   /**
    * Relative Substance Concentration
    */
-  RelativeSubstanceConcentration: "RLSCNC",
+  RLSCNC: "RLSCNC",
 
   /**
    * Threshold Mass Concentration
    */
-  ThresholdMassConcentration: "THRMCNC",
+  THRMCNC: "THRMCNC",
 
   /**
    * Threshold Substance Concentration
    */
-  ThresholdSubstanceConcentration: "THRSCNC",
+  THRSCNC: "THRSCNC",
 
   /**
    * Time (e.g. seconds)
    */
-  Timeegseconds: "TIME",
+  TIME: "TIME",
 
   /**
    * Time Difference
    */
-  TimeDifference: "TMDF",
+  TMDF: "TMDF",
 
   /**
    * Time Stamp-Date and Time
    */
-  TimeStampDateandTime: "TMSTP",
+  TMSTP: "TMSTP",
 
   /**
    * Time Ratio
    */
-  TimeRatio: "TRTO",
+  TRTO: "TRTO",
 
   /**
    * Reciprocal Relative Time
    */
-  ReciprocalRelativeTime: "RCRLTM",
+  RCRLTM: "RCRLTM",
 
   /**
    * Relative Time
    */
-  RelativeTime: "RLTM",
+  RLTM: "RLTM",
 
   /**
    * Absorbance
    */
-  Absorbance: "ABS",
+  ABS: "ABS",
 
   /**
    * Activity
    */
-  Activity: "ACT",
+  ACT: "ACT",
 
   /**
    * Appearance
    */
-  Appearance: "APER",
+  APER: "APER",
 
   /**
    * Arbitrary
    */
-  Arbitrary: "ARB",
+  ARB: "ARB",
 
   /**
    * Area
    */
-  Area: "AREA",
+  AREA: "AREA",
 
   /**
    * Aspect
    */
-  Aspect: "ASPECT",
+  ASPECT: "ASPECT",
 
   /**
    * Class
    */
-  Class: "CLAS",
+  CLAS: "CLAS",
 
   /**
    * Constant
    */
-  Constant: "CNST",
+  CNST: "CNST",
 
   /**
    * Coefficient
    */
-  Coefficient: "COEF",
+  COEF: "COEF",
 
   /**
    * Color
    */
-  Color: "COLOR",
+  COLOR: "COLOR",
 
   /**
    * Consistency
    */
-  Consistency: "CONS",
+  CONS: "CONS",
 
   /**
    * Density
    */
-  Density: "DEN",
+  DEN: "DEN",
 
   /**
    * Device
    */
-  Device: "DEV",
+  DEV: "DEV",
 
   /**
    * Difference
    */
-  Difference: "DIFF",
+  DIFF: "DIFF",
 
   /**
    * Elasticity
    */
-  Elasticity: "ELAS",
+  ELAS: "ELAS",
 
   /**
    * Electrical Potential (Voltage)
    */
-  ElectricalPotentialVoltage: "ELPOT",
+  ELPOT: "ELPOT",
 
   /**
    * Electrical current (amperage)
    */
-  Electricalcurrentamperage: "ELRAT",
+  ELRAT: "ELRAT",
 
   /**
    * Electrical Resistance
    */
-  ElectricalResistance: "ELRES",
+  ELRES: "ELRES",
 
   /**
    * Energy
    */
-  Energy: "ENGR",
+  ENGR: "ENGR",
 
   /**
    * Equilibrium
    */
-  Equilibrium: "EQL",
+  EQL: "EQL",
 
   /**
    * Mechanical force
    */
-  Mechanicalforce: "FORCE",
+  FORCE: "FORCE",
 
   /**
    * Frequency
    */
-  Frequency: "FREQ",
+  FREQ: "FREQ",
 
   /**
    * Impression/ interpretation of study
    */
-  Impressioninterpretationofstudy: "IMP",
+  IMP: "IMP",
 
   /**
    * Kinematic Viscosity
    */
-  KinematicViscosity: "KINV",
+  KINV: "KINV",
 
   /**
    * Length
    */
-  Length: "LEN",
+  LEN: "LEN",
 
   /**
    * Length Increment
    */
-  LengthIncrement: "LINC",
+  LINC: "LINC",
 
   /**
    * Liquefaction
    */
-  Liquefaction: "LIQ",
+  LIQ: "LIQ",
 
   /**
    * Magnetic flux
    */
-  Magneticflux: "MGFLUX",
+  MGFLUX: "MGFLUX",
 
   /**
    * Morphology
    */
-  Morphology: "MORPH",
+  MORPH: "MORPH",
 
   /**
    * Motility
    */
-  Motility: "MOTIL",
+  MOTIL: "MOTIL",
 
   /**
    * Optical density
    */
-  Opticaldensity: "OD",
+  OD: "OD",
 
   /**
    * Osmolality
    */
-  Osmolality: "OSMOL",
+  OSMOL: "OSMOL",
 
   /**
    * Presence/Identity/Existence
    */
-  PresenceIdentityExistence: "PRID",
+  PRID: "PRID",
 
   /**
    * Pressure (Partial)
    */
-  PressurePartial: "PRES",
+  PRES: "PRES",
 
   /**
    * Power (wattage)
    */
-  Powerwattage: "PWR",
+  PWR: "PWR",
 
   /**
    * Ranges
    */
-  Ranges: "RANGE",
+  RANGE: "RANGE",
 
   /**
    * Ratios
    */
-  Ratios: "RATIO",
+  RATIO: "RATIO",
 
   /**
    * Relative Density
    */
-  RelativeDensity: "RDEN",
+  RDEN: "RDEN",
 
   /**
    * Relative
    */
-  Relative: "REL",
+  REL: "REL",
 
   /**
    * Saturation Fraction
    */
-  SaturationFraction: "SATFR",
+  SATFR: "SATFR",
 
   /**
    * Shape
    */
-  Shape: "SHAPE",
+  SHAPE: "SHAPE",
 
   /**
    * Smell
    */
-  Smell: "SMELL",
+  SMELL: "SMELL",
 
   /**
    * Susceptibility
    */
-  Susceptibility: "SUSC",
+  SUSC: "SUSC",
 
   /**
    * Taste
    */
-  Taste: "TASTE",
+  TASTE: "TASTE",
 
   /**
    * Temperature
    */
-  Temperature: "TEMP",
+  TEMP: "TEMP",
 
   /**
    * Temperature Difference
    */
-  TemperatureDifference: "TEMPDF",
+  TEMPDF: "TEMPDF",
 
   /**
    * Temperature Increment
    */
-  TemperatureIncrement: "TEMPIN",
+  TEMPIN: "TEMPIN",
 
   /**
    * Dilution Factor (Titer)
    */
-  DilutionFactorTiter: "TITR",
+  TITR: "TITR",
 
   /**
    * Type
    */
-  Type: "TYPE",
+  TYPE: "TYPE",
 
   /**
    * Velocity
    */
-  Velocity: "VEL",
+  VEL: "VEL",
 
   /**
    * Velocity Ratio
    */
-  VelocityRatio: "VELRT",
+  VELRT: "VELRT",
 
   /**
    * Viscosity
    */
-  Viscosity: "VISC",
+  VISC: "VISC",
 } as const;
 
 /**

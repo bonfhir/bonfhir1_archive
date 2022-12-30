@@ -10,7 +10,7 @@ export const RoleClassDependentCode = {
   /**
    * dependent
    */
-  dependent: "DEPEN",
+  DEPEN: "DEPEN",
 } as const;
 
 /**

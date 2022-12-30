@@ -6,12 +6,12 @@ export const EntericCoatedCapsuleCode = {
   /**
    * Enteric Coated Capsule
    */
-  EntericCoatedCapsule: "ENTCAP",
+  ENTCAP: "ENTCAP",
 
   /**
    * Extended Release Enteric Coated Capsule
    */
-  ExtendedReleaseEntericCoatedCapsule: "ERENTCAP",
+  ERENTCAP: "ERENTCAP",
 } as const;
 
 /**

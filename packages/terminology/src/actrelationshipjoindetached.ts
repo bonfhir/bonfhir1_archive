@@ -6,7 +6,7 @@ export const ActRelationshipJoinDetachedCode = {
   /**
    * detached
    */
-  detached: "D",
+  D: "D",
 } as const;
 
 /**

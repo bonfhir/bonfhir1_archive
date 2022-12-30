@@ -6,27 +6,27 @@ export const ParticipationInformationGeneratorCode = {
   /**
    * author (originator)
    */
-  authororiginator: "AUT",
+  AUT: "AUT",
 
   /**
    * informant
    */
-  informant: "INF",
+  INF: "INF",
 
   /**
    * Transcriber
    */
-  Transcriber: "TRANS",
+  TRANS: "TRANS",
 
   /**
    * data entry person
    */
-  dataentryperson: "ENT",
+  ENT: "ENT",
 
   /**
    * witness
    */
-  witness: "WIT",
+  WIT: "WIT",
 } as const;
 
 /**

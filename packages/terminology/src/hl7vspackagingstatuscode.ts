@@ -6,18 +6,17 @@ export const Hl7VSPackagingStatusCodeCode = {
   /**
    * Not packaged
    */
-  Notpackaged: "0",
+  "0": "0",
 
   /**
    * Packaged service (status indicator N, or no HCPCS code and certain revenue codes)
    */
-  PackagedservicestatusindicatorNornoHCPCScodeandcertainrevenuecodes: "1",
+  "1": "1",
 
   /**
    * Packaged as part of partial hospitalization per diem or daily mental health service per diem
    */
-  Packagedaspartofpartialhospitalizationperdiemordailymentalhealthserviceperdiem:
-    "2",
+  "2": "2",
 } as const;
 
 /**

@@ -6,17 +6,17 @@ export const IntramuscularRouteCode = {
   /**
    * Injection, intramuscular
    */
-  Injectionintramuscular: "IM",
+  IM: "IM",
 
   /**
    * Injection, intramuscular, deep
    */
-  Injectionintramusculardeep: "IMD",
+  IMD: "IMD",
 
   /**
    * Injection, intramuscular, z track
    */
-  Injectionintramuscularztrack: "IMZ",
+  IMZ: "IMZ",
 } as const;
 
 /**

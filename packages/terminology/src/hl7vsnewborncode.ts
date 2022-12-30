@@ -6,27 +6,27 @@ export const Hl7VSNewbornCodeCode = {
   /**
    * Born at home
    */
-  Bornathome: "5",
+  "5": "5",
 
   /**
    * Born en route
    */
-  Bornenroute: "3",
+  "3": "3",
 
   /**
    * Born in facility
    */
-  Borninfacility: "1",
+  "1": "1",
 
   /**
    * Other
    */
-  Other: "4",
+  "4": "4",
 
   /**
    * Transfer in
    */
-  Transferin: "2",
+  "2": "2",
 } as const;
 
 /**

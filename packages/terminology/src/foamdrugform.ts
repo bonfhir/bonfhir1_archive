@@ -6,27 +6,27 @@ export const FoamDrugFormCode = {
   /**
    * Foam
    */
-  Foam: "FOAM",
+  FOAM: "FOAM",
 
   /**
    * Foam with Applicator
    */
-  FoamwithApplicator: "FOAMAPL",
+  FOAMAPL: "FOAMAPL",
 
   /**
    * Rectal foam
    */
-  Rectalfoam: "RECFORM",
+  RECFORM: "RECFORM",
 
   /**
    * Vaginal foam
    */
-  Vaginalfoam: "VAGFOAM",
+  VAGFOAM: "VAGFOAM",
 
   /**
    * Vaginal foam with applicator
    */
-  Vaginalfoamwithapplicator: "VAGFOAMAPL",
+  VAGFOAMAPL: "VAGFOAMAPL",
 } as const;
 
 /**

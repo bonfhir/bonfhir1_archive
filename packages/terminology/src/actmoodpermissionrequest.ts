@@ -8,7 +8,7 @@ export const ActMoodPermissionRequestCode = {
   /**
    * permission request
    */
-  permissionrequest: "PERMRQ",
+  PERMRQ: "PERMRQ",
 } as const;
 
 /**

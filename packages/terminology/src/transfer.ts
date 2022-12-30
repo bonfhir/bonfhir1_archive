@@ -6,12 +6,12 @@ export const TransferCode = {
   /**
    * Transfer
    */
-  Transfer: "TRANSFER",
+  TRANSFER: "TRANSFER",
 
   /**
    * Sale
    */
-  Sale: "SALE",
+  SALE: "SALE",
 } as const;
 
 /**

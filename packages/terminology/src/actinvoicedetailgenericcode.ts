@@ -6,148 +6,148 @@ export const ActInvoiceDetailGenericCodeCode = {
   /**
    * ActInvoiceDetailGenericAdjudicatorCode
    */
-  ActInvoiceDetailGenericAdjudicatorCode:
+  _ActInvoiceDetailGenericAdjudicatorCode:
     "_ActInvoiceDetailGenericAdjudicatorCode",
 
   /**
    * coinsurance
    */
-  coinsurance: "COIN",
+  COIN: "COIN",
 
   /**
    * patient co-pay
    */
-  patientcopay: "COPAYMENT",
+  COPAYMENT: "COPAYMENT",
 
   /**
    * deductible
    */
-  deductible: "DEDUCTIBLE",
+  DEDUCTIBLE: "DEDUCTIBLE",
 
   /**
    * payment
    */
-  payment: "PAY",
+  PAY: "PAY",
 
   /**
    * spend down
    */
-  spenddown: "SPEND",
+  SPEND: "SPEND",
 
   /**
    * co-insurance
    */
-  coinsurance: "COINS",
+  COINS: "COINS",
 
   /**
    * ActInvoiceDetailGenericModifierCode
    */
-  ActInvoiceDetailGenericModifierCode: "_ActInvoiceDetailGenericModifierCode",
+  _ActInvoiceDetailGenericModifierCode: "_ActInvoiceDetailGenericModifierCode",
 
   /**
    * non-normal hours
    */
-  nonnormalhours: "AFTHRS",
+  AFTHRS: "AFTHRS",
 
   /**
    * isolation allowance
    */
-  isolationallowance: "ISOL",
+  ISOL: "ISOL",
 
   /**
    * out of office
    */
-  outofoffice: "OOO",
+  OOO: "OOO",
 
   /**
    * ActInvoiceDetailGenericProviderCode
    */
-  ActInvoiceDetailGenericProviderCode: "_ActInvoiceDetailGenericProviderCode",
+  _ActInvoiceDetailGenericProviderCode: "_ActInvoiceDetailGenericProviderCode",
 
   /**
    * cancelled appointment
    */
-  cancelledappointment: "CANCAPT",
+  CANCAPT: "CANCAPT",
 
   /**
    * discount
    */
-  discount: "DSC",
+  DSC: "DSC",
 
   /**
    * extraordinary service assessment
    */
-  extraordinaryserviceassessment: "ESA",
+  ESA: "ESA",
 
   /**
    * fee for service top off
    */
-  feeforservicetopoff: "FFSTOP",
+  FFSTOP: "FFSTOP",
 
   /**
    * final fee
    */
-  finalfee: "FNLFEE",
+  FNLFEE: "FNLFEE",
 
   /**
    * first fee
    */
-  firstfee: "FRSTFEE",
+  FRSTFEE: "FRSTFEE",
 
   /**
    * markup or up-charge
    */
-  markuporupcharge: "MARKUP",
+  MARKUP: "MARKUP",
 
   /**
    * missed appointment
    */
-  missedappointment: "MISSAPT",
+  MISSAPT: "MISSAPT",
 
   /**
    * periodic fee
    */
-  periodicfee: "PERFEE",
+  PERFEE: "PERFEE",
 
   /**
    * performance bonus
    */
-  performancebonus: "PERMBNS",
+  PERMBNS: "PERMBNS",
 
   /**
    * restocking fee
    */
-  restockingfee: "RESTOCK",
+  RESTOCK: "RESTOCK",
 
   /**
    * travel
    */
-  travel: "TRAVEL",
+  TRAVEL: "TRAVEL",
 
   /**
    * urgent
    */
-  urgent: "URGENT",
+  URGENT: "URGENT",
 
   /**
    * ActInvoiceDetailTaxCode
    */
-  ActInvoiceDetailTaxCode: "_ActInvoiceDetailTaxCode",
+  _ActInvoiceDetailTaxCode: "_ActInvoiceDetailTaxCode",
 
   /**
    * federal sales tax
    */
-  federalsalestax: "FST",
+  FST: "FST",
 
   /**
    * harmonized sales Tax
    */
-  harmonizedsalesTax: "HST",
+  HST: "HST",
 
   /**
    * provincial/state sales tax
    */
-  provincialstatesalestax: "PST",
+  PST: "PST",
 } as const;
 
 /**

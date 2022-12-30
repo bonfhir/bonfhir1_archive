@@ -6,52 +6,52 @@ export const EthnicityHispanicSpaniardCode = {
   /**
    * Spaniard
    */
-  Spaniard: "2137-8",
+  "2137-8": "2137-8",
 
   /**
    * Andalusian
    */
-  Andalusian: "2138-6",
+  "2138-6": "2138-6",
 
   /**
    * Asturian
    */
-  Asturian: "2139-4",
+  "2139-4": "2139-4",
 
   /**
    * Castillian
    */
-  Castillian: "2140-2",
+  "2140-2": "2140-2",
 
   /**
    * Catalonian
    */
-  Catalonian: "2141-0",
+  "2141-0": "2141-0",
 
   /**
    * Belearic Islander
    */
-  BelearicIslander: "2142-8",
+  "2142-8": "2142-8",
 
   /**
    * Gallego
    */
-  Gallego: "2143-6",
+  "2143-6": "2143-6",
 
   /**
    * Valencian
    */
-  Valencian: "2144-4",
+  "2144-4": "2144-4",
 
   /**
    * Canarian
    */
-  Canarian: "2145-1",
+  "2145-1": "2145-1",
 
   /**
    * Spanish Basque
    */
-  SpanishBasque: "2146-9",
+  "2146-9": "2146-9",
 } as const;
 
 /**

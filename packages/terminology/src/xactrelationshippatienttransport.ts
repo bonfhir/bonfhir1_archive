@@ -6,12 +6,12 @@ export const XActRelationshipPatientTransportCode = {
   /**
    * arrival
    */
-  arrival: "ARR",
+  ARR: "ARR",
 
   /**
    * departure
    */
-  departure: "DEP",
+  DEP: "DEP",
 } as const;
 
 /**

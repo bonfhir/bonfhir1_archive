@@ -6,17 +6,17 @@ export const Hl7VSAdministrationDeviceCode = {
   /**
    * Applicator
    */
-  Applicator: "AP",
+  AP: "AP",
 
   /**
    * Buretrol
    */
-  Buretrol: "BT",
+  BT: "BT",
 
   /**
    * Heparin Lock
    */
-  HeparinLock: "HL",
+  HL: "HL",
 
   /**
    * IPPB
@@ -26,27 +26,27 @@ export const Hl7VSAdministrationDeviceCode = {
   /**
    * IV Pump
    */
-  IVPump: "IVP",
+  IVP: "IVP",
 
   /**
    * IV Soluset
    */
-  IVSoluset: "IVS",
+  IVS: "IVS",
 
   /**
    * Metered Inhaler
    */
-  MeteredInhaler: "MI",
+  MI: "MI",
 
   /**
    * Nebulizer
    */
-  Nebulizer: "NEB",
+  NEB: "NEB",
 
   /**
    * PCA Pump
    */
-  PCAPump: "PCA",
+  PCA: "PCA",
 } as const;
 
 /**

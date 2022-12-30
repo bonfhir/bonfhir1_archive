@@ -6,27 +6,27 @@ export const Hl7VSChargeTypeReasonCode = {
   /**
    * Allergy
    */
-  Allergy: "01",
+  "01": "01",
 
   /**
    * Intolerance
    */
-  Intolerance: "02",
+  "02": "02",
 
   /**
    * Treatment Failure
    */
-  TreatmentFailure: "03",
+  "03": "03",
 
   /**
    * Patient Request
    */
-  PatientRequest: "04",
+  "04": "04",
 
   /**
    * No Exception
    */
-  NoException: "05",
+  "05": "05",
 } as const;
 
 /**

@@ -6,17 +6,17 @@ export const OtherCode = {
   /**
    * other
    */
-  other: "OTH",
+  OTH: "OTH",
 
   /**
    * negative infinity
    */
-  negativeinfinity: "NINF",
+  NINF: "NINF",
 
   /**
    * positive infinity
    */
-  positiveinfinity: "PINF",
+  PINF: "PINF",
 } as const;
 
 /**

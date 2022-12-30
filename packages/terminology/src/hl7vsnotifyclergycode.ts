@@ -6,27 +6,27 @@ export const Hl7VSNotifyClergyCodeCode = {
   /**
    * Yes
    */
-  Yes: "Y",
+  Y: "Y",
 
   /**
    * No
    */
-  No: "N",
+  N: "N",
 
   /**
    * Last Rites only
    */
-  LastRitesonly: "L",
+  L: "L",
 
   /**
    * Other
    */
-  Other: "O",
+  O: "O",
 
   /**
    * Unknown
    */
-  Unknown: "U",
+  U: "U",
 } as const;
 
 /**

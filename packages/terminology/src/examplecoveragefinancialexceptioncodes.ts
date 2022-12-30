@@ -6,12 +6,12 @@ export const ExampleCoverageFinancialExceptionCodesCode = {
   /**
    * Retired
    */
-  Retired: "retired",
+  retired: "retired",
 
   /**
    * Foster child
    */
-  Fosterchild: "foster",
+  foster: "foster",
 } as const;
 
 /**

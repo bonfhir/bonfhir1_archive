@@ -6,17 +6,17 @@ export const Hl7VSProtectionCodeCode = {
   /**
    * Listed
    */
-  Listed: "LI",
+  LI: "LI",
 
   /**
    * Unlisted (Should not appear in directories)
    */
-  UnlistedShouldnotappearindirectories: "UL",
+  UL: "UL",
 
   /**
    * Unpublished
    */
-  Unpublished: "UP",
+  UP: "UP",
 } as const;
 
 /**

@@ -6,37 +6,37 @@ export const ActCoverageQuantityLimitCodeCode = {
   /**
    * coverage period
    */
-  coverageperiod: "COVPRD",
+  COVPRD: "COVPRD",
 
   /**
    * Net Amount
    */
-  NetAmount: "NETAMT",
+  NETAMT: "NETAMT",
 
   /**
    * Unit Price
    */
-  UnitPrice: "UNITPRICE",
+  UNITPRICE: "UNITPRICE",
 
   /**
    * Unit Quantity
    */
-  UnitQuantity: "UNITQTY",
+  UNITQTY: "UNITQTY",
 
   /**
    * ActCoverageQuantityLimitCode
    */
-  ActCoverageQuantityLimitCode: "_ActCoverageQuantityLimitCode",
+  _ActCoverageQuantityLimitCode: "_ActCoverageQuantityLimitCode",
 
   /**
    * life time maximum
    */
-  lifetimemaximum: "LFEMX",
+  LFEMX: "LFEMX",
 
   /**
    * period maximum
    */
-  periodmaximum: "PRDMX",
+  PRDMX: "PRDMX",
 } as const;
 
 /**

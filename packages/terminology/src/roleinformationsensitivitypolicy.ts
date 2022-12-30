@@ -6,27 +6,27 @@ export const RoleInformationSensitivityPolicyCode = {
   /**
    * RoleInformationSensitivityPolicy
    */
-  RoleInformationSensitivityPolicy: "_RoleInformationSensitivityPolicy",
+  _RoleInformationSensitivityPolicy: "_RoleInformationSensitivityPolicy",
 
   /**
    * business information sensitivity
    */
-  businessinformationsensitivity: "B",
+  B: "B",
 
   /**
    * employer information sensitivity
    */
-  employerinformationsensitivity: "EMPL",
+  EMPL: "EMPL",
 
   /**
    * location information sensitivity
    */
-  locationinformationsensitivity: "LOCIS",
+  LOCIS: "LOCIS",
 
   /**
    * sensitive service provider information sensitivity
    */
-  sensitiveserviceproviderinformationsensitivity: "SSP",
+  SSP: "SSP",
 } as const;
 
 /**

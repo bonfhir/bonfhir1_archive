@@ -6,7 +6,7 @@ export const KalapuyanCode = {
   /**
    * Central Kalapuyan
    */
-  CentralKalapuyan: "x-KAL",
+  "x-KAL": "x-KAL",
 } as const;
 
 /**

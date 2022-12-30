@@ -6,57 +6,57 @@ export const OrganizationNamePartQualifierCode = {
   /**
    * academic
    */
-  academic: "AC",
+  AC: "AC",
 
   /**
    * adopted
    */
-  adopted: "AD",
+  AD: "AD",
 
   /**
    * birth
    */
-  birth: "BR",
+  BR: "BR",
 
   /**
    * callme
    */
-  callme: "CL",
+  CL: "CL",
 
   /**
    * initial
    */
-  initial: "IN",
+  IN: "IN",
 
   /**
    * Legal status
    */
-  Legalstatus: "LS",
+  LS: "LS",
 
   /**
    * nobility
    */
-  nobility: "NB",
+  NB: "NB",
 
   /**
    * professional
    */
-  professional: "PR",
+  PR: "PR",
 
   /**
    * spouse
    */
-  spouse: "SP",
+  SP: "SP",
 
   /**
    * title
    */
-  title: "TITLE",
+  TITLE: "TITLE",
 
   /**
    * voorvoegsel
    */
-  voorvoegsel: "VV",
+  VV: "VV",
 } as const;
 
 /**

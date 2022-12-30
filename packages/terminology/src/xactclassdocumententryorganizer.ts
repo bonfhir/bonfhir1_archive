@@ -6,12 +6,12 @@ export const XActClassDocumentEntryOrganizerCode = {
   /**
    * battery
    */
-  battery: "BATTERY",
+  BATTERY: "BATTERY",
 
   /**
    * Cluster
    */
-  Cluster: "CLUSTER",
+  CLUSTER: "CLUSTER",
 } as const;
 
 /**

@@ -6,7 +6,7 @@ export const ActClassStateTransitionControlCode = {
   /**
    * state transition control
    */
-  statetransitioncontrol: "STC",
+  STC: "STC",
 } as const;
 
 /**

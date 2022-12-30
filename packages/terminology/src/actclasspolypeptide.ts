@@ -6,7 +6,7 @@ export const ActClassPolypeptideCode = {
   /**
    * polypeptide
    */
-  polypeptide: "POL",
+  POL: "POL",
 } as const;
 
 /**

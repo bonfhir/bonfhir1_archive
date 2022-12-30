@@ -6,27 +6,27 @@ export const ResourceSecurityCategoryCode = {
   /**
    * Anonymous READ Access Resource
    */
-  AnonymousREADAccessResource: "anonymous",
+  anonymous: "anonymous",
 
   /**
    * Business Sensitive Resource
    */
-  BusinessSensitiveResource: "business",
+  business: "business",
 
   /**
    * Individual Sensitive Resource
    */
-  IndividualSensitiveResource: "individual",
+  individual: "individual",
 
   /**
    * Patient Sensitive
    */
-  PatientSensitive: "patient",
+  patient: "patient",
 
   /**
    * Not classified
    */
-  Notclassified: "not-classified",
+  "not-classified": "not-classified",
 } as const;
 
 /**

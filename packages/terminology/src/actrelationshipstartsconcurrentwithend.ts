@@ -6,7 +6,7 @@ export const ActRelationshipStartsConcurrentWithEndCode = {
   /**
    * starts concurrent with end of
    */
-  startsconcurrentwithendof: "SCWE",
+  SCWE: "SCWE",
 } as const;
 
 /**

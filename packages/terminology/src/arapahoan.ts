@@ -6,17 +6,17 @@ export const ArapahoanCode = {
   /**
    * ArapahoGrosVentre
    */
-  ArapahoGrosVentre: "_ArapahoGrosVentre",
+  _ArapahoGrosVentre: "_ArapahoGrosVentre",
 
   /**
    * Arapaho
    */
-  Arapaho: "x-ARP",
+  "x-ARP": "x-ARP",
 
   /**
    * Gros Ventre
    */
-  GrosVentre: "x-ATS",
+  "x-ATS": "x-ATS",
 } as const;
 
 /**

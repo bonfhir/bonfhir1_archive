@@ -6,7 +6,7 @@ export const ActRelationshipCheckpointBeginningCode = {
   /**
    * beginning
    */
-  beginning: "B",
+  B: "B",
 } as const;
 
 /**

@@ -6,46 +6,42 @@ export const Hl7VSAllowSubstitutionCodesCode = {
   /**
    * Contact the Placer Contact Person prior to making any substitutions of this resource
    */
-  ContactthePlacerContactPersonpriortomakinganysubstitutionsofthisresource:
-    "CONFIRM",
+  CONFIRM: "CONFIRM",
 
   /**
    * Substitution of this resource is not allowed
    */
-  Substitutionofthisresourceisnotallowed: "NO",
+  NO: "NO",
 
   /**
    * Notify the Placer Contact Person, through normal institutional procedures, that a substitution of this resource has been made
    */
-  NotifythePlacerContactPersonthroughnormalinstitutionalproceduresthatasubstitutionofthisresourcehasbeenmade:
-    "NOTIFY",
+  NOTIFY: "NOTIFY",
 
   /**
    * Substitution of this resource is allowed
    */
-  Substitutionofthisresourceisallowed: "YES",
+  YES: "YES",
 
   /**
    * Substitution of this resource is not allowed
    */
-  Substitutionofthisresourceisnotallowed: "No",
+  No: "No",
 
   /**
    * Contact the Placer Contact Person prior to making any substitutions of this resource
    */
-  ContactthePlacerContactPersonpriortomakinganysubstitutionsofthisresource:
-    "Confirm",
+  Confirm: "Confirm",
 
   /**
    * Notify the Placer Contact Person, through normal institutional procedures, that a substitution of this resource has been made
    */
-  NotifythePlacerContactPersonthroughnormalinstitutionalproceduresthatasubstitutionofthisresourcehasbeenmade:
-    "Notify",
+  Notify: "Notify",
 
   /**
    * Substitution of this resource is allowed
    */
-  Substitutionofthisresourceisallowed: "Yes",
+  Yes: "Yes",
 } as const;
 
 /**

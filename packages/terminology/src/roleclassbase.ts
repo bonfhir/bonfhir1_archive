@@ -6,7 +6,7 @@ export const RoleClassBaseCode = {
   /**
    * base
    */
-  base: "BASE",
+  BASE: "BASE",
 } as const;
 
 /**

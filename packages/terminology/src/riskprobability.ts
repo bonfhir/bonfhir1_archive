@@ -6,27 +6,27 @@ export const RiskProbabilityCode = {
   /**
    * Negligible likelihood
    */
-  Negligiblelikelihood: "negligible",
+  negligible: "negligible",
 
   /**
    * Low likelihood
    */
-  Lowlikelihood: "low",
+  low: "low",
 
   /**
    * Moderate likelihood
    */
-  Moderatelikelihood: "moderate",
+  moderate: "moderate",
 
   /**
    * High likelihood
    */
-  Highlikelihood: "high",
+  high: "high",
 
   /**
    * Certain
    */
-  Certain: "certain",
+  certain: "certain",
 } as const;
 
 /**

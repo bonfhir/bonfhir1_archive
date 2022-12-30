@@ -6,27 +6,27 @@ export const Hl7VSLanguageAbilityCode = {
   /**
    * Read
    */
-  Read: "1",
+  "1": "1",
 
   /**
    * Write
    */
-  Write: "2",
+  "2": "2",
 
   /**
    * Speak
    */
-  Speak: "3",
+  "3": "3",
 
   /**
    * Understand
    */
-  Understand: "4",
+  "4": "4",
 
   /**
    * Sign
    */
-  Sign: "5",
+  "5": "5",
 } as const;
 
 /**

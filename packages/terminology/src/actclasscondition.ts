@@ -6,17 +6,17 @@ export const ActClassConditionCode = {
   /**
    * Condition
    */
-  Condition: "COND",
+  COND: "COND",
 
   /**
    * public health case
    */
-  publichealthcase: "CASE",
+  CASE: "CASE",
 
   /**
    * outbreak
    */
-  outbreak: "OUTB",
+  OUTB: "OUTB",
 } as const;
 
 /**

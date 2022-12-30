@@ -6,38 +6,38 @@ export const AcknowledgementDetailNotSupportedCodeCode = {
   /**
    * AcknowledgementDetailNotSupportedCode
    */
-  AcknowledgementDetailNotSupportedCode:
+  _AcknowledgementDetailNotSupportedCode:
     "_AcknowledgementDetailNotSupportedCode",
 
   /**
    * Unsupported interaction
    */
-  Unsupportedinteraction: "NS200",
+  NS200: "NS200",
 
   /**
    * Unsupported processing id
    */
-  Unsupportedprocessingid: "NS202",
+  NS202: "NS202",
 
   /**
    * Unsupported version id
    */
-  Unsupportedversionid: "NS203",
+  NS203: "NS203",
 
   /**
    * Unsupported processing Mode
    */
-  UnsupportedprocessingMode: "NS250",
+  NS250: "NS250",
 
   /**
    * Unknown sender
    */
-  Unknownsender: "NS260",
+  NS260: "NS260",
 
   /**
    * Unrecognized attentionline
    */
-  Unrecognizedattentionline: "NS261",
+  NS261: "NS261",
 } as const;
 
 /**

@@ -6,42 +6,42 @@ export const Hl7VSDiagnosisClassificationCode = {
   /**
    * Consultation
    */
-  Consultation: "C",
+  C: "C",
 
   /**
    * Diagnosis
    */
-  Diagnosis: "D",
+  D: "D",
 
   /**
    * Medication (antibiotic)
    */
-  Medicationantibiotic: "M",
+  M: "M",
 
   /**
    * Other
    */
-  Other: "O",
+  O: "O",
 
   /**
    * Radiological scheduling (not using ICDA codes)
    */
-  RadiologicalschedulingnotusingICDAcodes: "R",
+  R: "R",
 
   /**
    * Sign and symptom
    */
-  Signandsymptom: "S",
+  S: "S",
 
   /**
    * Tissue diagnosis
    */
-  Tissuediagnosis: "T",
+  T: "T",
 
   /**
    * Invasive procedure not classified elsewhere (I.V., catheter, etc.)
    */
-  InvasiveprocedurenotclassifiedelsewhereIVcatheteretc: "I",
+  I: "I",
 } as const;
 
 /**

@@ -6,12 +6,12 @@ export const DoseDurationLowDetectedIssueCodeCode = {
   /**
    * Dose-Duration Low Alert
    */
-  DoseDurationLowAlert: "DOSEDURL",
+  DOSEDURL: "DOSEDURL",
 
   /**
    * Dose-Duration Low for Indication Alert
    */
-  DoseDurationLowforIndicationAlert: "DOSEDURLIND",
+  DOSEDURLIND: "DOSEDURLIND",
 } as const;
 
 /**

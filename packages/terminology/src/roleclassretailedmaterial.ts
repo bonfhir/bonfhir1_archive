@@ -6,7 +6,7 @@ export const RoleClassRetailedMaterialCode = {
   /**
    * retailed material
    */
-  retailedmaterial: "RET",
+  RET: "RET",
 } as const;
 
 /**

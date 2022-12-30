@@ -6,7 +6,7 @@ export const RaceWhiteArabCode = {
   /**
    * Arab
    */
-  Arab: "2129-5",
+  "2129-5": "2129-5",
 } as const;
 
 /**

@@ -6,12 +6,12 @@ export const Hl7VSLaborCalculationTypeCode = {
   /**
    * Time
    */
-  Time: "TME",
+  TME: "TME",
 
   /**
    * Cost
    */
-  Cost: "CST",
+  CST: "CST",
 } as const;
 
 /**

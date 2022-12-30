@@ -6,7 +6,7 @@ export const RoleClassIncidentalServiceDeliveryLocationCode = {
   /**
    * incidental service delivery location
    */
-  incidentalservicedeliverylocation: "ISDLOC",
+  ISDLOC: "ISDLOC",
 } as const;
 
 /**

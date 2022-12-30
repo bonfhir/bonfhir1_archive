@@ -6,22 +6,22 @@ export const PrescriptionDispenseFilterCodeCode = {
   /**
    * Prescription Dispense Filter Code
    */
-  PrescriptionDispenseFilterCode: "_PrescriptionDispenseFilterCode",
+  _PrescriptionDispenseFilterCode: "_PrescriptionDispenseFilterCode",
 
   /**
    * Completely dispensed
    */
-  Completelydispensed: "C",
+  C: "C",
 
   /**
    * Never Dispensed
    */
-  NeverDispensed: "N",
+  N: "N",
 
   /**
    * Dispensed with remaining fills
    */
-  Dispensedwithremainingfills: "R",
+  R: "R",
 } as const;
 
 /**

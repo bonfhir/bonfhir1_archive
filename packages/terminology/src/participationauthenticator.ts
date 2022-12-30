@@ -6,7 +6,7 @@ export const ParticipationAuthenticatorCode = {
   /**
    * authenticator
    */
-  authenticator: "AUTHEN",
+  AUTHEN: "AUTHEN",
 } as const;
 
 /**

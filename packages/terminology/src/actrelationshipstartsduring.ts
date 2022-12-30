@@ -6,12 +6,12 @@ export const ActRelationshipStartsDuringCode = {
   /**
    * starts during
    */
-  startsduring: "SDU",
+  SDU: "SDU",
 
   /**
    * start after start of, contains end of
    */
-  startafterstartofcontainsendof: "SASSBEEAS",
+  SASSBEEAS: "SASSBEEAS",
 } as const;
 
 /**

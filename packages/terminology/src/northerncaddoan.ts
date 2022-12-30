@@ -6,17 +6,17 @@ export const NorthernCaddoanCode = {
   /**
    * Arikara
    */
-  Arikara: "x-ARI",
+  "x-ARI": "x-ARI",
 
   /**
    * Pawnee
    */
-  Pawnee: "x-PAW",
+  "x-PAW": "x-PAW",
 
   /**
    * Wichita
    */
-  Wichita: "x-WIC",
+  "x-WIC": "x-WIC",
 } as const;
 
 /**

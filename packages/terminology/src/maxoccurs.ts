@@ -6,7 +6,7 @@ export const MaxOccursCode = {
   /**
    * Repeating
    */
-  Repeating: "*",
+  "*": "*",
 } as const;
 
 /**

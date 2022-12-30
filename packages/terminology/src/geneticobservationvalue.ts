@@ -6,12 +6,12 @@ export const GeneticObservationValueCode = {
   /**
    * GeneticObservationValue
    */
-  GeneticObservationValue: "_GeneticObservationValue",
+  _GeneticObservationValue: "_GeneticObservationValue",
 
   /**
    * HOMO
    */
-  HOMO: "Homozygote",
+  Homozygote: "Homozygote",
 } as const;
 
 /**

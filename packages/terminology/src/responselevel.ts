@@ -6,37 +6,37 @@ export const ResponseLevelCode = {
   /**
    * completion
    */
-  completion: "C",
+  C: "C",
 
   /**
    * detail
    */
-  detail: "D",
+  D: "D",
 
   /**
    * exception
    */
-  exception: "E",
+  E: "E",
 
   /**
    * confirmation
    */
-  confirmation: "F",
+  F: "F",
 
   /**
    * message-control
    */
-  messagecontrol: "N",
+  N: "N",
 
   /**
    * modification
    */
-  modification: "R",
+  R: "R",
 
   /**
    * none
    */
-  none: "X",
+  X: "X",
 } as const;
 
 /**

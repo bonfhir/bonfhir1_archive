@@ -6,52 +6,52 @@ export const Hl7VSPaymentMethodCodeCode = {
   /**
    * Cash
    */
-  Cash: "CASH",
+  CASH: "CASH",
 
   /**
    * Credit Card
    */
-  CreditCard: "CCCA",
+  CCCA: "CCCA",
 
   /**
    * Cashier's Check
    */
-  CashiersCheck: "CCHK",
+  CCHK: "CCHK",
 
   /**
    * Credit/Debit Account
    */
-  CreditDebitAccount: "CDAC",
+  CDAC: "CDAC",
 
   /**
    * Check
    */
-  Check: "CHCK",
+  CHCK: "CHCK",
 
   /**
    * Direct Deposit
    */
-  DirectDeposit: "DDPO",
+  DDPO: "DDPO",
 
   /**
    * Debit Card
    */
-  DebitCard: "DEBC",
+  DEBC: "DEBC",
 
   /**
    * Society for Worldwide Interbank Financial Telecommunications (S.W.I.F.T.)
    */
-  SocietyforWorldwideInterbankFinancialTelecommunicationsSWIFT: "SWFT",
+  SWFT: "SWFT",
 
   /**
    * Traveler's Check
    */
-  TravelersCheck: "TRAC",
+  TRAC: "TRAC",
 
   /**
    * VISA Special Electronic Funds Transfer Network
    */
-  VISASpecialElectronicFundsTransferNetwork: "VISN",
+  VISN: "VISN",
 } as const;
 
 /**

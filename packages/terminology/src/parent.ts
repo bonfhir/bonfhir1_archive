@@ -6,92 +6,92 @@ export const ParentCode = {
   /**
    * parent
    */
-  parent: "PRN",
+  PRN: "PRN",
 
   /**
    * adoptive parent
    */
-  adoptiveparent: "ADOPTP",
+  ADOPTP: "ADOPTP",
 
   /**
    * adoptive father
    */
-  adoptivefather: "ADOPTF",
+  ADOPTF: "ADOPTF",
 
   /**
    * adoptive mother
    */
-  adoptivemother: "ADOPTM",
+  ADOPTM: "ADOPTM",
 
   /**
    * father
    */
-  father: "FTH",
+  FTH: "FTH",
 
   /**
    * foster father
    */
-  fosterfather: "FTHFOST",
+  FTHFOST: "FTHFOST",
 
   /**
    * natural father
    */
-  naturalfather: "NFTH",
+  NFTH: "NFTH",
 
   /**
    * natural father of fetus
    */
-  naturalfatheroffetus: "NFTHF",
+  NFTHF: "NFTHF",
 
   /**
    * stepfather
    */
-  stepfather: "STPFTH",
+  STPFTH: "STPFTH",
 
   /**
    * mother
    */
-  mother: "MTH",
+  MTH: "MTH",
 
   /**
    * gestational mother
    */
-  gestationalmother: "GESTM",
+  GESTM: "GESTM",
 
   /**
    * foster mother
    */
-  fostermother: "MTHFOST",
+  MTHFOST: "MTHFOST",
 
   /**
    * natural mother
    */
-  naturalmother: "NMTH",
+  NMTH: "NMTH",
 
   /**
    * natural mother of fetus
    */
-  naturalmotheroffetus: "NMTHF",
+  NMTHF: "NMTHF",
 
   /**
    * stepmother
    */
-  stepmother: "STPMTH",
+  STPMTH: "STPMTH",
 
   /**
    * natural parent
    */
-  naturalparent: "NPRN",
+  NPRN: "NPRN",
 
   /**
    * foster parent
    */
-  fosterparent: "PRNFOST",
+  PRNFOST: "PRNFOST",
 
   /**
    * step parent
    */
-  stepparent: "STPPRN",
+  STPPRN: "STPPRN",
 } as const;
 
 /**

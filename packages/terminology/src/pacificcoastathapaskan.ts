@@ -6,32 +6,32 @@ export const PacificCoastAthapaskanCode = {
   /**
    * CaliforniaAthapaskan
    */
-  CaliforniaAthapaskan: "_CaliforniaAthapaskan",
+  _CaliforniaAthapaskan: "_CaliforniaAthapaskan",
 
   /**
    * Hupa
    */
-  Hupa: "x-HUP",
+  "x-HUP": "x-HUP",
 
   /**
    * Cahto
    */
-  Cahto: "x-KTW",
+  "x-KTW": "x-KTW",
 
   /**
    * OregonAthapaskan
    */
-  OregonAthapaskan: "_OregonAthapaskan",
+  _OregonAthapaskan: "_OregonAthapaskan",
 
   /**
    * Tolowa
    */
-  Tolowa: "x-TOL",
+  "x-TOL": "x-TOL",
 
   /**
    * Tututni
    */
-  Tututni: "x-TUU",
+  "x-TUU": "x-TUU",
 } as const;
 
 /**

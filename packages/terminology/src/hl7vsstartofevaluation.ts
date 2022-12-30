@@ -6,62 +6,62 @@ export const Hl7VSStartOfEvaluationCode = {
   /**
    * Evaluation completed
    */
-  Evaluationcompleted: "Y",
+  Y: "Y",
 
   /**
    * Evaluation in progress
    */
-  Evaluationinprogress: "P",
+  P: "P",
 
   /**
    * Problem already known, no evaluation necessary
    */
-  Problemalreadyknownnoevaluationnecessary: "K",
+  K: "K",
 
   /**
    * Product not made by company
    */
-  Productnotmadebycompany: "X",
+  X: "X",
 
   /**
    * Evaluation anticipated, but not yet begun
    */
-  Evaluationanticipatedbutnotyetbegun: "A",
+  A: "A",
 
   /**
    * Product discarded -- unable to follow up
    */
-  Productdiscardedunabletofollowup: "D",
+  D: "D",
 
   /**
    * Product received in condition which made analysis impossible
    */
-  Productreceivedinconditionwhichmadeanalysisimpossible: "C",
+  C: "C",
 
   /**
    * Product remains implanted -- unable to follow up
    */
-  Productremainsimplantedunabletofollowup: "I",
+  I: "I",
 
   /**
    * Product unavailable for follow up investigation
    */
-  Productunavailableforfollowupinvestigation: "U",
+  U: "U",
 
   /**
    * Product under quarantine -- unable to follow up
    */
-  Productunderquarantineunabletofollowup: "Q",
+  Q: "Q",
 
   /**
    * Product under recall/corrective action
    */
-  Productunderrecallcorrectiveaction: "R",
+  R: "R",
 
   /**
    * Other
    */
-  Other: "O",
+  O: "O",
 } as const;
 
 /**

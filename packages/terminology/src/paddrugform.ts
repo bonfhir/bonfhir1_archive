@@ -6,12 +6,12 @@ export const PadDrugFormCode = {
   /**
    * Pad
    */
-  Pad: "PAD",
+  PAD: "PAD",
 
   /**
    * Medicated Pad
    */
-  MedicatedPad: "MEDPAD",
+  MEDPAD: "MEDPAD",
 } as const;
 
 /**

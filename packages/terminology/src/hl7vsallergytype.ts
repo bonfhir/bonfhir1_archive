@@ -6,42 +6,42 @@ export const Hl7VSAllergyTypeCode = {
   /**
    * Drug allergy
    */
-  Drugallergy: "DA",
+  DA: "DA",
 
   /**
    * Food allergy
    */
-  Foodallergy: "FA",
+  FA: "FA",
 
   /**
    * Miscellaneous allergy
    */
-  Miscellaneousallergy: "MA",
+  MA: "MA",
 
   /**
    * Miscellaneous contraindication
    */
-  Miscellaneouscontraindication: "MC",
+  MC: "MC",
 
   /**
    * Environmental Allergy
    */
-  EnvironmentalAllergy: "EA",
+  EA: "EA",
 
   /**
    * Animal Allergy
    */
-  AnimalAllergy: "AA",
+  AA: "AA",
 
   /**
    * Plant Allergy
    */
-  PlantAllergy: "PA",
+  PA: "PA",
 
   /**
    * Pollen Allergy
    */
-  PollenAllergy: "LA",
+  LA: "LA",
 } as const;
 
 /**

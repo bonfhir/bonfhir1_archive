@@ -6,17 +6,17 @@ export const CupanCode = {
   /**
    * Cahuilla
    */
-  Cahuilla: "x-CHL",
+  "x-CHL": "x-CHL",
 
   /**
    * Cupeno
    */
-  Cupeno: "x-CUP",
+  "x-CUP": "x-CUP",
 
   /**
    * Luiseno
    */
-  Luiseno: "x-LUI",
+  "x-LUI": "x-LUI",
 } as const;
 
 /**

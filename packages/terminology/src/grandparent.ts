@@ -6,47 +6,47 @@ export const GrandparentCode = {
   /**
    * grandparent
    */
-  grandparent: "GRPRN",
+  GRPRN: "GRPRN",
 
   /**
    * grandfather
    */
-  grandfather: "GRFTH",
+  GRFTH: "GRFTH",
 
   /**
    * maternal grandfather
    */
-  maternalgrandfather: "MGRFTH",
+  MGRFTH: "MGRFTH",
 
   /**
    * paternal grandfather
    */
-  paternalgrandfather: "PGRFTH",
+  PGRFTH: "PGRFTH",
 
   /**
    * grandmother
    */
-  grandmother: "GRMTH",
+  GRMTH: "GRMTH",
 
   /**
    * maternal grandmother
    */
-  maternalgrandmother: "MGRMTH",
+  MGRMTH: "MGRMTH",
 
   /**
    * paternal grandmother
    */
-  paternalgrandmother: "PGRMTH",
+  PGRMTH: "PGRMTH",
 
   /**
    * maternal grandparent
    */
-  maternalgrandparent: "MGRPRN",
+  MGRPRN: "MGRPRN",
 
   /**
    * paternal grandparent
    */
-  paternalgrandparent: "PGRPRN",
+  PGRPRN: "PGRPRN",
 } as const;
 
 /**

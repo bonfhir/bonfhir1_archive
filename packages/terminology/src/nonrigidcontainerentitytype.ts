@@ -6,22 +6,22 @@ export const NonRigidContainerEntityTypeCode = {
   /**
    * Bag
    */
-  Bag: "BAG",
+  BAG: "BAG",
 
   /**
    * Packet
    */
-  Packet: "PACKT",
+  PACKT: "PACKT",
 
   /**
    * Pouch
    */
-  Pouch: "PCH",
+  PCH: "PCH",
 
   /**
    * Sachet
    */
-  Sachet: "SACH",
+  SACH: "SACH",
 } as const;
 
 /**

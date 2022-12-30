@@ -6,17 +6,17 @@ export const ActivityDefinitionCategoryCode = {
   /**
    * Treatment
    */
-  Treatment: "treatment",
+  treatment: "treatment",
 
   /**
    * Education
    */
-  Education: "education",
+  education: "education",
 
   /**
    * Assessment
    */
-  Assessment: "assessment",
+  assessment: "assessment",
 } as const;
 
 /**

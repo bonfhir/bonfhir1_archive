@@ -6,142 +6,142 @@ export const BenefitCategoryCodesCode = {
   /**
    * Medical Care
    */
-  MedicalCare: "1",
+  "1": "1",
 
   /**
    * Surgical
    */
-  Surgical: "2",
+  "2": "2",
 
   /**
    * Consultation
    */
-  Consultation: "3",
+  "3": "3",
 
   /**
    * Diagnostic XRay
    */
-  DiagnosticXRay: "4",
+  "4": "4",
 
   /**
    * Diagnostic Lab
    */
-  DiagnosticLab: "5",
+  "5": "5",
 
   /**
    * Renal Supplies
    */
-  RenalSupplies: "14",
+  "14": "14",
 
   /**
    * Diagnostic Dental
    */
-  DiagnosticDental: "23",
+  "23": "23",
 
   /**
    * Periodontics
    */
-  Periodontics: "24",
+  "24": "24",
 
   /**
    * Restorative
    */
-  Restorative: "25",
+  "25": "25",
 
   /**
    * Endodontics
    */
-  Endodontics: "26",
+  "26": "26",
 
   /**
    * Maxillofacial Prosthetics
    */
-  MaxillofacialProsthetics: "27",
+  "27": "27",
 
   /**
    * Adjunctive Dental Services
    */
-  AdjunctiveDentalServices: "28",
+  "28": "28",
 
   /**
    * Health Benefit Plan Coverage
    */
-  HealthBenefitPlanCoverage: "30",
+  "30": "30",
 
   /**
    * Dental Care
    */
-  DentalCare: "35",
+  "35": "35",
 
   /**
    * Dental Crowns
    */
-  DentalCrowns: "36",
+  "36": "36",
 
   /**
    * Dental Accident
    */
-  DentalAccident: "37",
+  "37": "37",
 
   /**
    * Hospital Room and Board
    */
-  HospitalRoomandBoard: "49",
+  "49": "49",
 
   /**
    * Major Medical
    */
-  MajorMedical: "55",
+  "55": "55",
 
   /**
    * Medically Related Transportation
    */
-  MedicallyRelatedTransportation: "56",
+  "56": "56",
 
   /**
    * In-vitro Fertilization
    */
-  InvitroFertilization: "61",
+  "61": "61",
 
   /**
    * MRI Scan
    */
-  MRIScan: "62",
+  "62": "62",
 
   /**
    * Donor Procedures
    */
-  DonorProcedures: "63",
+  "63": "63",
 
   /**
    * Maternity
    */
-  Maternity: "69",
+  "69": "69",
 
   /**
    * Renal Dialysis
    */
-  RenalDialysis: "76",
+  "76": "76",
 
   /**
    * Medical Coverage
    */
-  MedicalCoverage: "F1",
+  F1: "F1",
 
   /**
    * Dental Coverage
    */
-  DentalCoverage: "F3",
+  F3: "F3",
 
   /**
    * Hearing Coverage
    */
-  HearingCoverage: "F4",
+  F4: "F4",
 
   /**
    * Vision Coverage
    */
-  VisionCoverage: "F6",
+  F6: "F6",
 } as const;
 
 /**

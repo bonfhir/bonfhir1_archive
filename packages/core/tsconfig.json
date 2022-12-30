@@ -1,7 +1,4 @@
 {
   "extends": "@bonfhir/typescript-config/tsconfig.json",
-  "include": ["src/**/*"],
-  "compilerOptions": {
-    "outDir": "dist"
-  }
+  "include": ["src/**/*"]
 }

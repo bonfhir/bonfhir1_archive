@@ -6,7 +6,7 @@ export const ParticipationProductCode = {
   /**
    * product
    */
-  product: "PRD",
+  PRD: "PRD",
 } as const;
 
 /**

@@ -6,27 +6,27 @@ export const DropsDrugFormCode = {
   /**
    * Drops
    */
-  Drops: "DROP",
+  DROP: "DROP",
 
   /**
    * Nasal Drops
    */
-  NasalDrops: "NDROP",
+  NDROP: "NDROP",
 
   /**
    * Ophthalmic Drops
    */
-  OphthalmicDrops: "OPDROP",
+  OPDROP: "OPDROP",
 
   /**
    * Oral Drops
    */
-  OralDrops: "ORDROP",
+  ORDROP: "ORDROP",
 
   /**
    * Otic Drops
    */
-  OticDrops: "OTDROP",
+  OTDROP: "OTDROP",
 } as const;
 
 /**

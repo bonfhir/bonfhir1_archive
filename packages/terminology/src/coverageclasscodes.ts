@@ -6,57 +6,57 @@ export const CoverageClassCodesCode = {
   /**
    * Group
    */
-  Group: "group",
+  group: "group",
 
   /**
    * SubGroup
    */
-  SubGroup: "subgroup",
+  subgroup: "subgroup",
 
   /**
    * Plan
    */
-  Plan: "plan",
+  plan: "plan",
 
   /**
    * SubPlan
    */
-  SubPlan: "subplan",
+  subplan: "subplan",
 
   /**
    * Class
    */
-  Class: "class",
+  class: "class",
 
   /**
    * SubClass
    */
-  SubClass: "subclass",
+  subclass: "subclass",
 
   /**
    * Sequence
    */
-  Sequence: "sequence",
+  sequence: "sequence",
 
   /**
    * RX BIN
    */
-  RXBIN: "rxbin",
+  rxbin: "rxbin",
 
   /**
    * RX PCN
    */
-  RXPCN: "rxpcn",
+  rxpcn: "rxpcn",
 
   /**
    * RX Id
    */
-  RXId: "rxid",
+  rxid: "rxid",
 
   /**
    * RX Group
    */
-  RXGroup: "rxgroup",
+  rxgroup: "rxgroup",
 } as const;
 
 /**

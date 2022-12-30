@@ -6,87 +6,87 @@ export const ParticipationTargetDirectCode = {
   /**
    * direct target
    */
-  directtarget: "DIR",
+  DIR: "DIR",
 
   /**
    * analyte
    */
-  analyte: "ALY",
+  ALY: "ALY",
 
   /**
    * baby
    */
-  baby: "BBY",
+  BBY: "BBY",
 
   /**
    * catalyst
    */
-  catalyst: "CAT",
+  CAT: "CAT",
 
   /**
    * consumable
    */
-  consumable: "CSM",
+  CSM: "CSM",
 
   /**
    * therapeutic agent
    */
-  therapeuticagent: "TPA",
+  TPA: "TPA",
 
   /**
    * device
    */
-  device: "DEV",
+  DEV: "DEV",
 
   /**
    * non-reuseable device
    */
-  nonreuseabledevice: "NRD",
+  NRD: "NRD",
 
   /**
    * reusable device
    */
-  reusabledevice: "RDV",
+  RDV: "RDV",
 
   /**
    * donor
    */
-  donor: "DON",
+  DON: "DON",
 
   /**
    * ExposureAgent
    */
-  ExposureAgent: "EXPAGNT",
+  EXPAGNT: "EXPAGNT",
 
   /**
    * ExposureParticipation
    */
-  ExposureParticipation: "EXPART",
+  EXPART: "EXPART",
 
   /**
    * ExposureTarget
    */
-  ExposureTarget: "EXPTRGT",
+  EXPTRGT: "EXPTRGT",
 
   /**
    * ExposureSource
    */
-  ExposureSource: "EXSRC",
+  EXSRC: "EXSRC",
 
   /**
    * product
    */
-  product: "PRD",
+  PRD: "PRD",
 
   /**
    * subject
    */
-  subject: "SBJ",
+  SBJ: "SBJ",
 
   /**
    * specimen
    */
-  specimen: "SPC",
+  SPC: "SPC",
 } as const;
 
 /**

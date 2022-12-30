@@ -6,62 +6,62 @@ export const XClinicalStatementObservationMoodCode = {
   /**
    * appointment
    */
-  appointment: "APT",
+  APT: "APT",
 
   /**
    * appointment request
    */
-  appointmentrequest: "ARQ",
+  ARQ: "ARQ",
 
   /**
    * criterion
    */
-  criterion: "CRT",
+  CRT: "CRT",
 
   /**
    * definition
    */
-  definition: "DEF",
+  DEF: "DEF",
 
   /**
    * event (occurrence)
    */
-  eventoccurrence: "EVN",
+  EVN: "EVN",
 
   /**
    * event criterion
    */
-  eventcriterion: "EVN.CRT",
+  "EVN.CRT": "EVN.CRT",
 
   /**
    * Goal
    */
-  Goal: "GOL",
+  GOL: "GOL",
 
   /**
    * intent
    */
-  intent: "INT",
+  INT: "INT",
 
   /**
    * promise
    */
-  promise: "PRMS",
+  PRMS: "PRMS",
 
   /**
    * proposal
    */
-  proposal: "PRP",
+  PRP: "PRP",
 
   /**
    * request
    */
-  request: "RQO",
+  RQO: "RQO",
 
   /**
    * risk
    */
-  risk: "RSK",
+  RSK: "RSK",
 } as const;
 
 /**

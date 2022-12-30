@@ -6,7 +6,7 @@ export const ConditionDetectedIssueCodeCode = {
   /**
    * Condition Alert
    */
-  ConditionAlert: "COND",
+  COND: "COND",
 
   /**
    *
@@ -16,12 +16,12 @@ export const ConditionDetectedIssueCodeCode = {
   /**
    * Lactation Alert
    */
-  LactationAlert: "LACT",
+  LACT: "LACT",
 
   /**
    * Pregnancy Alert
    */
-  PregnancyAlert: "PREG",
+  PREG: "PREG",
 
   /**
    *
@@ -31,22 +31,22 @@ export const ConditionDetectedIssueCodeCode = {
   /**
    * High Dose for Weight Alert
    */
-  HighDoseforWeightAlert: "DOSEHINDW",
+  DOSEHINDW: "DOSEHINDW",
 
   /**
    * Low Dose for Weight Alert
    */
-  LowDoseforWeightAlert: "DOSELINDW",
+  DOSELINDW: "DOSELINDW",
 
   /**
    * High Dose for Height/Surface Area Alert
    */
-  HighDoseforHeightSurfaceAreaAlert: "DOSEHINDSA",
+  DOSEHINDSA: "DOSEHINDSA",
 
   /**
    * Low Dose for Height/Surface Area Alert
    */
-  LowDoseforHeightSurfaceAreaAlert: "DOSELINDSA",
+  DOSELINDSA: "DOSELINDSA",
 } as const;
 
 /**

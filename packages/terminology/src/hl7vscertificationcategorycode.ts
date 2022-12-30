@@ -6,17 +6,17 @@ export const Hl7VSCertificationCategoryCodeCode = {
   /**
    * Initial Request
    */
-  InitialRequest: "IR",
+  IR: "IR",
 
   /**
    * Request for Appeal
    */
-  RequestforAppeal: "RA",
+  RA: "RA",
 
   /**
    * Request for Extension
    */
-  RequestforExtension: "RE",
+  RE: "RE",
 } as const;
 
 /**

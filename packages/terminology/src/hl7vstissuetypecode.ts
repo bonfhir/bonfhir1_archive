@@ -6,67 +6,67 @@ export const Hl7VSTissueTypeCodeCode = {
   /**
    * Insufficient Tissue
    */
-  InsufficientTissue: "1",
+  "1": "1",
 
   /**
    * Not abnormal
    */
-  Notabnormal: "2",
+  "2": "2",
 
   /**
    * Abnormal-not categorized
    */
-  Abnormalnotcategorized: "3",
+  "3": "3",
 
   /**
    * Mechanical abnormal
    */
-  Mechanicalabnormal: "4",
+  "4": "4",
 
   /**
    * Growth alteration
    */
-  Growthalteration: "5",
+  "5": "5",
 
   /**
    * Degeneration & necrosis
    */
-  Degenerationnecrosis: "6",
+  "6": "6",
 
   /**
    * Non-acute inflammation
    */
-  Nonacuteinflammation: "7",
+  "7": "7",
 
   /**
    * Non-malignant neoplasm
    */
-  Nonmalignantneoplasm: "8",
+  "8": "8",
 
   /**
    * Malignant neoplasm
    */
-  Malignantneoplasm: "9",
+  "9": "9",
 
   /**
    * No tissue expected
    */
-  Notissueexpected: "0",
+  "0": "0",
 
   /**
    * Basal cell carcinoma
    */
-  Basalcellcarcinoma: "B",
+  B: "B",
 
   /**
    * Carcinoma-unspecified type
    */
-  Carcinomaunspecifiedtype: "C",
+  C: "C",
 
   /**
    * Additional tissue required
    */
-  Additionaltissuerequired: "G",
+  G: "G",
 } as const;
 
 /**

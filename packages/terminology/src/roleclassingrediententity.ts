@@ -6,77 +6,77 @@ export const RoleClassIngredientEntityCode = {
   /**
    * ingredient
    */
-  ingredient: "INGR",
+  INGR: "INGR",
 
   /**
    * active ingredient
    */
-  activeingredient: "ACTI",
+  ACTI: "ACTI",
 
   /**
    * active ingredient - basis of strength
    */
-  activeingredientbasisofstrength: "ACTIB",
+  ACTIB: "ACTIB",
 
   /**
    * active ingredient - moiety is basis of strength
    */
-  activeingredientmoietyisbasisofstrength: "ACTIM",
+  ACTIM: "ACTIM",
 
   /**
    * active ingredient - reference substance is basis of strength
    */
-  activeingredientreferencesubstanceisbasisofstrength: "ACTIR",
+  ACTIR: "ACTIR",
 
   /**
    * adjuvant
    */
-  adjuvant: "ADJV",
+  ADJV: "ADJV",
 
   /**
    * additive
    */
-  additive: "ADTV",
+  ADTV: "ADTV",
 
   /**
    * base
    */
-  base: "BASE",
+  BASE: "BASE",
 
   /**
    * contaminant ingredient
    */
-  contaminantingredient: "CNTM",
+  CNTM: "CNTM",
 
   /**
    * inactive ingredient
    */
-  inactiveingredient: "IACT",
+  IACT: "IACT",
 
   /**
    * color additive
    */
-  coloradditive: "COLR",
+  COLR: "COLR",
 
   /**
    * flavor additive
    */
-  flavoradditive: "FLVR",
+  FLVR: "FLVR",
 
   /**
    * preservative
    */
-  preservative: "PRSV",
+  PRSV: "PRSV",
 
   /**
    * stabilizer
    */
-  stabilizer: "STBL",
+  STBL: "STBL",
 
   /**
    * mechanical ingredient
    */
-  mechanicalingredient: "MECH",
+  MECH: "MECH",
 } as const;
 
 /**

@@ -6,27 +6,27 @@ export const ActAntigenInvalidReasonCode = {
   /**
    * adverse storage condition
    */
-  adversestoragecondition: "ADVSTORAGE",
+  ADVSTORAGE: "ADVSTORAGE",
 
   /**
    * cold chain break
    */
-  coldchainbreak: "COLDCHNBRK",
+  COLDCHNBRK: "COLDCHNBRK",
 
   /**
    * expired lot
    */
-  expiredlot: "EXPLOT",
+  EXPLOT: "EXPLOT",
 
   /**
    * administered outside recommended schedule or practice
    */
-  administeredoutsiderecommendedscheduleorpractice: "OUTSIDESCHED",
+  OUTSIDESCHED: "OUTSIDESCHED",
 
   /**
    * product recall
    */
-  productrecall: "PRODRECALL",
+  PRODRECALL: "PRODRECALL",
 } as const;
 
 /**

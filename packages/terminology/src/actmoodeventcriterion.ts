@@ -6,7 +6,7 @@ export const ActMoodEventCriterionCode = {
   /**
    * event criterion
    */
-  eventcriterion: "EVN.CRT",
+  "EVN.CRT": "EVN.CRT",
 } as const;
 
 /**

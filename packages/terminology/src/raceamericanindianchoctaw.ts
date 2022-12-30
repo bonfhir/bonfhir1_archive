@@ -6,32 +6,32 @@ export const RaceAmericanIndianChoctawCode = {
   /**
    * Choctaw
    */
-  Choctaw: "1155-1",
+  "1155-1": "1155-1",
 
   /**
    * Clifton Choctaw
    */
-  CliftonChoctaw: "1156-9",
+  "1156-9": "1156-9",
 
   /**
    * Jena Choctaw
    */
-  JenaChoctaw: "1157-7",
+  "1157-7": "1157-7",
 
   /**
    * Mississippi Choctaw
    */
-  MississippiChoctaw: "1158-5",
+  "1158-5": "1158-5",
 
   /**
    * Mowa Band of Choctaw
    */
-  MowaBandofChoctaw: "1159-3",
+  "1159-3": "1159-3",
 
   /**
    * Oklahoma Choctaw
    */
-  OklahomaChoctaw: "1160-1",
+  "1160-1": "1160-1",
 } as const;
 
 /**

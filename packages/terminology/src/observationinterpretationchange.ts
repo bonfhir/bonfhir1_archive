@@ -6,22 +6,22 @@ export const ObservationInterpretationChangeCode = {
   /**
    * Better
    */
-  Better: "B",
+  B: "B",
 
   /**
    * Significant change down
    */
-  Significantchangedown: "D",
+  D: "D",
 
   /**
    * Significant change up
    */
-  Significantchangeup: "U",
+  U: "U",
 
   /**
    * Worse
    */
-  Worse: "W",
+  W: "W",
 } as const;
 
 /**

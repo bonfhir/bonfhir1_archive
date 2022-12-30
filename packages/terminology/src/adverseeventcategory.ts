@@ -6,37 +6,37 @@ export const AdverseEventCategoryCode = {
   /**
    * Wrong Patient
    */
-  WrongPatient: "wrong-patient",
+  "wrong-patient": "wrong-patient",
 
   /**
    * Procedure Mishap
    */
-  ProcedureMishap: "procedure-mishap",
+  "procedure-mishap": "procedure-mishap",
 
   /**
    * Medication Mishap
    */
-  MedicationMishap: "medication-mishap",
+  "medication-mishap": "medication-mishap",
 
   /**
    * Device
    */
-  Device: "device",
+  device: "device",
 
   /**
    * Unsafe Physical Environment
    */
-  UnsafePhysicalEnvironment: "unsafe-physical-environment",
+  "unsafe-physical-environment": "unsafe-physical-environment",
 
   /**
    * Hospital Acquired Infection
    */
-  HospitalAcquiredInfection: "hospital-aquired-infection",
+  "hospital-aquired-infection": "hospital-aquired-infection",
 
   /**
    * Wrong Body Site
    */
-  WrongBodySite: "wrong-body-site",
+  "wrong-body-site": "wrong-body-site",
 } as const;
 
 /**

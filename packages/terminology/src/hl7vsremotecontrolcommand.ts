@@ -6,107 +6,107 @@ export const Hl7VSRemoteControlCommandCode = {
   /**
    * Sampling
    */
-  Sampling: "SA",
+  SA: "SA",
 
   /**
    * Load
    */
-  Load: "LO",
+  LO: "LO",
 
   /**
    * Unload
    */
-  Unload: "UN",
+  UN: "UN",
 
   /**
    * Lock
    */
-  Lock: "LK",
+  LK: "LK",
 
   /**
    * Unlock
    */
-  Unlock: "UC",
+  UC: "UC",
 
   /**
    * Transport To
    */
-  TransportTo: "TT",
+  TT: "TT",
 
   /**
    * Clear Notification
    */
-  ClearNotification: "CN",
+  CN: "CN",
 
   /**
    * Initialize/Initiate
    */
-  InitializeInitiate: "IN",
+  IN: "IN",
 
   /**
    * Setup
    */
-  Setup: "SU",
+  SU: "SU",
 
   /**
    * Clear
    */
-  Clear: "CL",
+  CL: "CL",
 
   /**
    * Pause
    */
-  Pause: "PA",
+  PA: "PA",
 
   /**
    * Resume
    */
-  Resume: "RE",
+  RE: "RE",
 
   /**
    * Emergency -stop
    */
-  Emergencystop: "ES",
+  ES: "ES",
 
   /**
    * Local Control Request
    */
-  LocalControlRequest: "LC",
+  LC: "LC",
 
   /**
    * Remote Control Request
    */
-  RemoteControlRequest: "RC",
+  RC: "RC",
 
   /**
    * Abort
    */
-  Abort: "AB",
+  AB: "AB",
 
   /**
    * Enable Sending Events
    */
-  EnableSendingEvents: "EN",
+  EN: "EN",
 
   /**
    * Disable Sending Events
    */
-  DisableSendingEvents: "DI",
+  DI: "DI",
 
   /**
    * Execute (command specified in field Parameters (ST) 01394)
    */
-  ExecutecommandspecifiedinfieldParametersST01394: "EX",
+  EX: "EX",
 
   /**
    * Aliquot From container
    */
-  AliquotFromcontainer: "AF",
+  AF: "AF",
 
   /**
    * Aliquot To container
    */
-  AliquotTocontainer: "AT",
+  AT: "AT",
 } as const;
 
 /**

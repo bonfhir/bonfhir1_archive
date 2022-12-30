@@ -6,487 +6,487 @@ export const InjectionCode = {
   /**
    * Injection, amniotic fluid
    */
-  Injectionamnioticfluid: "AMNINJ",
+  AMNINJ: "AMNINJ",
 
   /**
    * Injection, biliary tract
    */
-  Injectionbiliarytract: "BILINJ",
+  BILINJ: "BILINJ",
 
   /**
    * Injection, for cholangiography
    */
-  Injectionforcholangiography: "CHOLINJ",
+  CHOLINJ: "CHOLINJ",
 
   /**
    * Injection, cervical
    */
-  Injectioncervical: "CERVINJ",
+  CERVINJ: "CERVINJ",
 
   /**
    * Injection, epidural
    */
-  Injectionepidural: "EPIDURINJ",
+  EPIDURINJ: "EPIDURINJ",
 
   /**
    * Injection, epidural, push
    */
-  Injectionepiduralpush: "EPIINJ",
+  EPIINJ: "EPIINJ",
 
   /**
    * Injection, epidural, slow push
    */
-  Injectionepiduralslowpush: "EPINJSP",
+  EPINJSP: "EPINJSP",
 
   /**
    * Injection, extra-amniotic
    */
-  Injectionextraamniotic: "EXTRAMNINJ",
+  EXTRAMNINJ: "EXTRAMNINJ",
 
   /**
    * Injection, extracorporeal
    */
-  Injectionextracorporeal: "EXTCORPINJ",
+  EXTCORPINJ: "EXTCORPINJ",
 
   /**
    * Injection, gastric button
    */
-  Injectiongastricbutton: "GBINJ",
+  GBINJ: "GBINJ",
 
   /**
    * Injection, gingival
    */
-  Injectiongingival: "GINGINJ",
+  GINGINJ: "GINGINJ",
 
   /**
    * Injection, urinary bladder
    */
-  Injectionurinarybladder: "BLADINJ",
+  BLADINJ: "BLADINJ",
 
   /**
    * Injection, endosinusial
    */
-  Injectionendosinusial: "ENDOSININJ",
+  ENDOSININJ: "ENDOSININJ",
 
   /**
    * Injection, hemodialysis port
    */
-  Injectionhemodialysisport: "HEMOPORT",
+  HEMOPORT: "HEMOPORT",
 
   /**
    * Injection, intra-abdominal
    */
-  Injectionintraabdominal: "IABDINJ",
+  IABDINJ: "IABDINJ",
 
   /**
    * Injection, intraarterial
    */
-  Injectionintraarterial: "IAINJ",
+  IAINJ: "IAINJ",
 
   /**
    * Injection, intraarterial, push
    */
-  Injectionintraarterialpush: "IAINJP",
+  IAINJP: "IAINJP",
 
   /**
    * Injection, intraarterial, slow push
    */
-  Injectionintraarterialslowpush: "IAINJSP",
+  IAINJSP: "IAINJSP",
 
   /**
    * Injection, intraarticular
    */
-  Injectionintraarticular: "IARTINJ",
+  IARTINJ: "IARTINJ",
 
   /**
    * Injection, intrabursal
    */
-  Injectionintrabursal: "IBURSINJ",
+  IBURSINJ: "IBURSINJ",
 
   /**
    * Injection, intracardiac
    */
-  Injectionintracardiac: "ICARDINJ",
+  ICARDINJ: "ICARDINJ",
 
   /**
    * Injection, intracardiac, rapid push
    */
-  Injectionintracardiacrapidpush: "ICARDINJRP",
+  ICARDINJRP: "ICARDINJRP",
 
   /**
    * Injection, intracardiac, slow push
    */
-  Injectionintracardiacslowpush: "ICARDINJSP",
+  ICARDINJSP: "ICARDINJSP",
 
   /**
    * Injection, intracardiac, push
    */
-  Injectionintracardiacpush: "ICARINJP",
+  ICARINJP: "ICARINJP",
 
   /**
    * Injection, intracartilaginous
    */
-  Injectionintracartilaginous: "ICARTINJ",
+  ICARTINJ: "ICARTINJ",
 
   /**
    * Injection, intracaudal
    */
-  Injectionintracaudal: "ICAUDINJ",
+  ICAUDINJ: "ICAUDINJ",
 
   /**
    * Injection, intracavernous
    */
-  Injectionintracavernous: "ICAVINJ",
+  ICAVINJ: "ICAVINJ",
 
   /**
    * Injection, intracavitary
    */
-  Injectionintracavitary: "ICAVITINJ",
+  ICAVITINJ: "ICAVITINJ",
 
   /**
    * Injection, intracerebral
    */
-  Injectionintracerebral: "ICEREBINJ",
+  ICEREBINJ: "ICEREBINJ",
 
   /**
    * Injection, intracisternal
    */
-  Injectionintracisternal: "ICISTERNINJ",
+  ICISTERNINJ: "ICISTERNINJ",
 
   /**
    * Injection, intracoronary
    */
-  Injectionintracoronary: "ICORONINJ",
+  ICORONINJ: "ICORONINJ",
 
   /**
    * Injection, intracoronary, push
    */
-  Injectionintracoronarypush: "ICORONINJP",
+  ICORONINJP: "ICORONINJP",
 
   /**
    * Injection, intracorpus cavernosum
    */
-  Injectionintracorpuscavernosum: "ICORPCAVINJ",
+  ICORPCAVINJ: "ICORPCAVINJ",
 
   /**
    * Injection, intradermal
    */
-  Injectionintradermal: "IDINJ",
+  IDINJ: "IDINJ",
 
   /**
    * Injection, intradiscal
    */
-  Injectionintradiscal: "IDISCINJ",
+  IDISCINJ: "IDISCINJ",
 
   /**
    * Injection, intraductal
    */
-  Injectionintraductal: "IDUCTINJ",
+  IDUCTINJ: "IDUCTINJ",
 
   /**
    * Injection, intradural
    */
-  Injectionintradural: "IDURINJ",
+  IDURINJ: "IDURINJ",
 
   /**
    * Injection, intraepidermal
    */
-  Injectionintraepidermal: "IEPIDINJ",
+  IEPIDINJ: "IEPIDINJ",
 
   /**
    * Injection, intraepithelial
    */
-  Injectionintraepithelial: "IEPITHINJ",
+  IEPITHINJ: "IEPITHINJ",
 
   /**
    * Injection, intralesional
    */
-  Injectionintralesional: "ILESINJ",
+  ILESINJ: "ILESINJ",
 
   /**
    * Injection, intraluminal
    */
-  Injectionintraluminal: "ILUMINJ",
+  ILUMINJ: "ILUMINJ",
 
   /**
    * Injection, intralymphatic
    */
-  Injectionintralymphatic: "ILYMPJINJ",
+  ILYMPJINJ: "ILYMPJINJ",
 
   /**
    * Injection, intramuscular
    */
-  Injectionintramuscular: "IM",
+  IM: "IM",
 
   /**
    * Injection, intramuscular, deep
    */
-  Injectionintramusculardeep: "IMD",
+  IMD: "IMD",
 
   /**
    * Injection, intramuscular, z track
    */
-  Injectionintramuscularztrack: "IMZ",
+  IMZ: "IMZ",
 
   /**
    * Injection, intramedullary
    */
-  Injectionintramedullary: "IMEDULINJ",
+  IMEDULINJ: "IMEDULINJ",
 
   /**
    * Injection, interameningeal
    */
-  Injectioninterameningeal: "INTERMENINJ",
+  INTERMENINJ: "INTERMENINJ",
 
   /**
    * Injection, interstitial
    */
-  Injectioninterstitial: "INTERSTITINJ",
+  INTERSTITINJ: "INTERSTITINJ",
 
   /**
    * Injection, intraocular
    */
-  Injectionintraocular: "IOINJ",
+  IOINJ: "IOINJ",
 
   /**
    * Injection, intraosseous
    */
-  Injectionintraosseous: "IOSSINJ",
+  IOSSINJ: "IOSSINJ",
 
   /**
    * Injection, intraovarian
    */
-  Injectionintraovarian: "IOVARINJ",
+  IOVARINJ: "IOVARINJ",
 
   /**
    * Injection, intrapericardial
    */
-  Injectionintrapericardial: "IPCARDINJ",
+  IPCARDINJ: "IPCARDINJ",
 
   /**
    * Injection, intraperitoneal
    */
-  Injectionintraperitoneal: "IPERINJ",
+  IPERINJ: "IPERINJ",
 
   /**
    * Injection, intrapulmonary
    */
-  Injectionintrapulmonary: "IPINJ",
+  IPINJ: "IPINJ",
 
   /**
    * Injection, intrapleural
    */
-  Injectionintrapleural: "IPLRINJ",
+  IPLRINJ: "IPLRINJ",
 
   /**
    * Injection, intraprostatic
    */
-  Injectionintraprostatic: "IPROSTINJ",
+  IPROSTINJ: "IPROSTINJ",
 
   /**
    * Injection, insulin pump
    */
-  Injectioninsulinpump: "IPUMPINJ",
+  IPUMPINJ: "IPUMPINJ",
 
   /**
    * Injection, intraspinal
    */
-  Injectionintraspinal: "ISINJ",
+  ISINJ: "ISINJ",
 
   /**
    * Injection, intrasternal
    */
-  Injectionintrasternal: "ISTERINJ",
+  ISTERINJ: "ISTERINJ",
 
   /**
    * Injection, intrasynovial
    */
-  Injectionintrasynovial: "ISYNINJ",
+  ISYNINJ: "ISYNINJ",
 
   /**
    * Injection, intratendinous
    */
-  Injectionintratendinous: "ITENDINJ",
+  ITENDINJ: "ITENDINJ",
 
   /**
    * Injection, intratesticular
    */
-  Injectionintratesticular: "ITESTINJ",
+  ITESTINJ: "ITESTINJ",
 
   /**
    * Injection, intrathoracic
    */
-  Injectionintrathoracic: "ITHORINJ",
+  ITHORINJ: "ITHORINJ",
 
   /**
    * Injection, intrathecal
    */
-  Injectionintrathecal: "ITINJ",
+  ITINJ: "ITINJ",
 
   /**
    * Injection, intratubular
    */
-  Injectionintratubular: "ITUBINJ",
+  ITUBINJ: "ITUBINJ",
 
   /**
    * Injection, intratumor
    */
-  Injectionintratumor: "ITUMINJ",
+  ITUMINJ: "ITUMINJ",
 
   /**
    * Injection, intratympanic
    */
-  Injectionintratympanic: "ITYMPINJ",
+  ITYMPINJ: "ITYMPINJ",
 
   /**
    * Injection, intrauterine
    */
-  Injectionintrauterine: "IUINJ",
+  IUINJ: "IUINJ",
 
   /**
    * Injection, intracervical (uterus)
    */
-  Injectionintracervicaluterus: "IUINJC",
+  IUINJC: "IUINJC",
 
   /**
    * Injection, intraureteral, retrograde
    */
-  Injectionintraureteralretrograde: "IURETINJ",
+  IURETINJ: "IURETINJ",
 
   /**
    * Injection, intravascular
    */
-  Injectionintravascular: "IVASCINJ",
+  IVASCINJ: "IVASCINJ",
 
   /**
    * Injection, intraventricular (heart)
    */
-  Injectionintraventricularheart: "IVENTINJ",
+  IVENTINJ: "IVENTINJ",
 
   /**
    * Injection, intravesicle
    */
-  Injectionintravesicle: "IVESINJ",
+  IVESINJ: "IVESINJ",
 
   /**
    * Injection, intravenous
    */
-  Injectionintravenous: "IVINJ",
+  IVINJ: "IVINJ",
 
   /**
    * Injection, intravenous, bolus
    */
-  Injectionintravenousbolus: "IVINJBOL",
+  IVINJBOL: "IVINJBOL",
 
   /**
    * Injection, intravenous, push
    */
-  Injectionintravenouspush: "IVPUSH",
+  IVPUSH: "IVPUSH",
 
   /**
    * Injection, intravenous, rapid push
    */
-  Injectionintravenousrapidpush: "IVRPUSH",
+  IVRPUSH: "IVRPUSH",
 
   /**
    * Injection, intravenous, slow push
    */
-  Injectionintravenousslowpush: "IVSPUSH",
+  IVSPUSH: "IVSPUSH",
 
   /**
    * Injection, intravitreal
    */
-  Injectionintravitreal: "IVITINJ",
+  IVITINJ: "IVITINJ",
 
   /**
    * Injection, periarticular
    */
-  Injectionperiarticular: "PAINJ",
+  PAINJ: "PAINJ",
 
   /**
    * Injection, parenteral
    */
-  Injectionparenteral: "PARENTINJ",
+  PARENTINJ: "PARENTINJ",
 
   /**
    * Injection, periodontal
    */
-  Injectionperiodontal: "PDONTINJ",
+  PDONTINJ: "PDONTINJ",
 
   /**
    * Injection, peritoneal dialysis port
    */
-  Injectionperitonealdialysisport: "PDPINJ",
+  PDPINJ: "PDPINJ",
 
   /**
    * Injection, peridural
    */
-  Injectionperidural: "PDURINJ",
+  PDURINJ: "PDURINJ",
 
   /**
    * Injection, perineural
    */
-  Injectionperineural: "PNINJ",
+  PNINJ: "PNINJ",
 
   /**
    * Injection, paranasal sinuses
    */
-  Injectionparanasalsinuses: "PNSINJ",
+  PNSINJ: "PNSINJ",
 
   /**
    * Injection, retrobulbar
    */
-  Injectionretrobulbar: "RBINJ",
+  RBINJ: "RBINJ",
 
   /**
    * Injection, subconjunctival
    */
-  Injectionsubconjunctival: "SCINJ",
+  SCINJ: "SCINJ",
 
   /**
    * Injection, sublesional
    */
-  Injectionsublesional: "SLESINJ",
+  SLESINJ: "SLESINJ",
 
   /**
    * Injection, soft tissue
    */
-  Injectionsofttissue: "SOFTISINJ",
+  SOFTISINJ: "SOFTISINJ",
 
   /**
    * Injection, subcutaneous
    */
-  Injectionsubcutaneous: "SQ",
+  SQ: "SQ",
 
   /**
    * Injection, subarachnoid
    */
-  Injectionsubarachnoid: "SUBARACHINJ",
+  SUBARACHINJ: "SUBARACHINJ",
 
   /**
    * Injection, submucosal
    */
-  Injectionsubmucosal: "SUBMUCINJ",
+  SUBMUCINJ: "SUBMUCINJ",
 
   /**
    * Injection, transplacental
    */
-  Injectiontransplacental: "TRPLACINJ",
+  TRPLACINJ: "TRPLACINJ",
 
   /**
    * Injection, transtracheal
    */
-  Injectiontranstracheal: "TRTRACHINJ",
+  TRTRACHINJ: "TRTRACHINJ",
 
   /**
    * Injection, urethral
    */
-  Injectionurethral: "URETHINJ",
+  URETHINJ: "URETHINJ",
 
   /**
    * Injection, ureteral
    */
-  Injectionureteral: "URETINJ",
+  URETINJ: "URETINJ",
 } as const;
 
 /**

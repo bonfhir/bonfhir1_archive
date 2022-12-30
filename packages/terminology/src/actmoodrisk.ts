@@ -10,7 +10,7 @@ export const ActMoodRiskCode = {
   /**
    * risk
    */
-  risk: "RSK",
+  RSK: "RSK",
 } as const;
 
 /**

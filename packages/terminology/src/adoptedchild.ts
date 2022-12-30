@@ -6,17 +6,17 @@ export const AdoptedChildCode = {
   /**
    * adopted child
    */
-  adoptedchild: "CHLDADOPT",
+  CHLDADOPT: "CHLDADOPT",
 
   /**
    * adopted daughter
    */
-  adopteddaughter: "DAUADOPT",
+  DAUADOPT: "DAUADOPT",
 
   /**
    * adopted son
    */
-  adoptedson: "SONADOPT",
+  SONADOPT: "SONADOPT",
 } as const;
 
 /**

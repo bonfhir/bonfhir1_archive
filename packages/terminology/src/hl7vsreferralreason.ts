@@ -6,22 +6,22 @@ export const Hl7VSReferralReasonCode = {
   /**
    * Second Opinion
    */
-  SecondOpinion: "S",
+  S: "S",
 
   /**
    * Patient Preference
    */
-  PatientPreference: "P",
+  P: "P",
 
   /**
    * Provider Ordered
    */
-  ProviderOrdered: "O",
+  O: "O",
 
   /**
    * Work Load
    */
-  WorkLoad: "W",
+  W: "W",
 } as const;
 
 /**

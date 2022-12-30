@@ -6,12 +6,12 @@ export const Hl7VSSiteAdministeredCode = {
   /**
    * Buttock
    */
-  Buttock: "B",
+  B: "B",
 
   /**
    * Left arm
    */
-  Leftarm: "L",
+  L: "L",
 } as const;
 
 /**

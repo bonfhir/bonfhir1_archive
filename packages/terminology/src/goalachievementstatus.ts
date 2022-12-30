@@ -6,47 +6,47 @@ export const GoalAchievementStatusCode = {
   /**
    * In Progress
    */
-  InProgress: "in-progress",
+  "in-progress": "in-progress",
 
   /**
    * Improving
    */
-  Improving: "improving",
+  improving: "improving",
 
   /**
    * Worsening
    */
-  Worsening: "worsening",
+  worsening: "worsening",
 
   /**
    * No Change
    */
-  NoChange: "no-change",
+  "no-change": "no-change",
 
   /**
    * Achieved
    */
-  Achieved: "achieved",
+  achieved: "achieved",
 
   /**
    * Sustaining
    */
-  Sustaining: "sustaining",
+  sustaining: "sustaining",
 
   /**
    * Not Achieved
    */
-  NotAchieved: "not-achieved",
+  "not-achieved": "not-achieved",
 
   /**
    * No Progress
    */
-  NoProgress: "no-progress",
+  "no-progress": "no-progress",
 
   /**
    * Not Attainable
    */
-  NotAttainable: "not-attainable",
+  "not-attainable": "not-attainable",
 } as const;
 
 /**

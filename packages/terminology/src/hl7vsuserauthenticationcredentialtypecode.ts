@@ -6,12 +6,12 @@ export const Hl7VSUserAuthenticationCredentialTypeCodeCode = {
   /**
    * Kerberos Service Ticket
    */
-  KerberosServiceTicket: "KERB",
+  KERB: "KERB",
 
   /**
    * Authenticated User Identity Assertion
    */
-  AuthenticatedUserIdentityAssertion: "SAML",
+  SAML: "SAML",
 } as const;
 
 /**

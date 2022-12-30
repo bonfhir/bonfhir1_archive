@@ -6,7 +6,7 @@ export const GeneralAcuteCareHospitalCode = {
   /**
    * Hospitals; General Acute Care Hospital
    */
-  HospitalsGeneralAcuteCareHospital: "GACH",
+  GACH: "GACH",
 } as const;
 
 /**

@@ -6,47 +6,47 @@ export const Hl7VSPatientClassCode = {
   /**
    * Emergency
    */
-  Emergency: "E",
+  E: "E",
 
   /**
    * Inpatient
    */
-  Inpatient: "I",
+  I: "I",
 
   /**
    * Outpatient
    */
-  Outpatient: "O",
+  O: "O",
 
   /**
    * Preadmit
    */
-  Preadmit: "P",
+  P: "P",
 
   /**
    * Recurring patient
    */
-  Recurringpatient: "R",
+  R: "R",
 
   /**
    * Obstetrics
    */
-  Obstetrics: "B",
+  B: "B",
 
   /**
    * Commercial Account
    */
-  CommercialAccount: "C",
+  C: "C",
 
   /**
    * Not Applicable
    */
-  NotApplicable: "N",
+  N: "N",
 
   /**
    * Unknown
    */
-  Unknown: "U",
+  U: "U",
 } as const;
 
 /**

@@ -6,7 +6,7 @@ export const ActRelationshipReChallengeCode = {
   /**
    * re-challenge
    */
-  rechallenge: "RCHAL",
+  RCHAL: "RCHAL",
 } as const;
 
 /**

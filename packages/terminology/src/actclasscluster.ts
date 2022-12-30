@@ -12,7 +12,7 @@ export const ActClassClusterCode = {
   /**
    * Cluster
    */
-  Cluster: "CLUSTER",
+  CLUSTER: "CLUSTER",
 } as const;
 
 /**

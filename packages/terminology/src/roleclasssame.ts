@@ -14,7 +14,7 @@ export const RoleClassSameCode = {
   /**
    * same
    */
-  same: "SAME",
+  SAME: "SAME",
 } as const;
 
 /**

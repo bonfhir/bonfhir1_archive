@@ -6,7 +6,7 @@ export const ActMoodAppointmentRequestCode = {
   /**
    * appointment request
    */
-  appointmentrequest: "ARQ",
+  ARQ: "ARQ",
 } as const;
 
 /**

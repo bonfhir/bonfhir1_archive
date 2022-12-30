@@ -6,12 +6,12 @@ export const SouthernNumicCode = {
   /**
    * Kawaiisu
    */
-  Kawaiisu: "x-KAW",
+  "x-KAW": "x-KAW",
 
   /**
    * Ute-Southern Paiute
    */
-  UteSouthernPaiute: "x-UTE",
+  "x-UTE": "x-UTE",
 } as const;
 
 /**

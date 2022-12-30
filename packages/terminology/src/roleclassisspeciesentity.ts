@@ -6,12 +6,12 @@ export const RoleClassIsSpeciesEntityCode = {
   /**
    * has generalization
    */
-  hasgeneralization: "GEN",
+  GEN: "GEN",
 
   /**
    * has generic
    */
-  hasgeneric: "GRIC",
+  GRIC: "GRIC",
 } as const;
 
 /**

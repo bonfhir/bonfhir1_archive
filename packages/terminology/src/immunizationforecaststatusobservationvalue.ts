@@ -6,17 +6,17 @@ export const ImmunizationForecastStatusObservationValueCode = {
   /**
    * Up-to-date with immunizations
    */
-  Uptodatewithimmunizations: "171258008",
+  "171258008": "171258008",
 
   /**
    * Immunization due
    */
-  Immunizationdue: "171279008",
+  "171279008": "171279008",
 
   /**
    * Not up to date with immunizations (finding)
    */
-  Notuptodatewithimmunizationsfinding: "171259000",
+  "171259000": "171259000",
 } as const;
 
 /**

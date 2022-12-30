@@ -6,7 +6,7 @@ export const RoleClassPreservativeCode = {
   /**
    * preservative
    */
-  preservative: "PRSV",
+  PRSV: "PRSV",
 } as const;
 
 /**

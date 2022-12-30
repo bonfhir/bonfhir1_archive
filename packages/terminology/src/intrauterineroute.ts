@@ -6,22 +6,22 @@ export const IntrauterineRouteCode = {
   /**
    * Injection, intrauterine
    */
-  Injectionintrauterine: "IUINJ",
+  IUINJ: "IUINJ",
 
   /**
    * Injection, intraureteral, retrograde
    */
-  Injectionintraureteralretrograde: "IURETINJ",
+  IURETINJ: "IURETINJ",
 
   /**
    * Insertion, intrauterine
    */
-  Insertionintrauterine: "IU",
+  IU: "IU",
 
   /**
    * Instillation, intrauterine
    */
-  Instillationintrauterine: "IUINSTL",
+  IUINSTL: "IUINSTL",
 } as const;
 
 /**

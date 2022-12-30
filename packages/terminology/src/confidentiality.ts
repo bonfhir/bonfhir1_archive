@@ -6,32 +6,32 @@ export const ConfidentialityCode = {
   /**
    * low
    */
-  low: "L",
+  L: "L",
 
   /**
    * moderate
    */
-  moderate: "M",
+  M: "M",
 
   /**
    * normal
    */
-  normal: "N",
+  N: "N",
 
   /**
    * restricted
    */
-  restricted: "R",
+  R: "R",
 
   /**
    * unrestricted
    */
-  unrestricted: "U",
+  U: "U",
 
   /**
    * very restricted
    */
-  veryrestricted: "V",
+  V: "V",
 } as const;
 
 /**

@@ -6,12 +6,12 @@ export const XActReplaceOrReviseCode = {
   /**
    * modifies
    */
-  modifies: "MOD",
+  MOD: "MOD",
 
   /**
    * replaces
    */
-  replaces: "RPLC",
+  RPLC: "RPLC",
 } as const;
 
 /**

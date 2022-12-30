@@ -6,22 +6,22 @@ export const AllergyIntoleranceCertaintyCode = {
   /**
    * Unlikely
    */
-  Unlikely: "unlikely",
+  unlikely: "unlikely",
 
   /**
    * Likely
    */
-  Likely: "likely",
+  likely: "likely",
 
   /**
    * Confirmed
    */
-  Confirmed: "confirmed",
+  confirmed: "confirmed",
 
   /**
    * Unknown
    */
-  Unknown: "unknown",
+  unknown: "unknown",
 } as const;
 
 /**

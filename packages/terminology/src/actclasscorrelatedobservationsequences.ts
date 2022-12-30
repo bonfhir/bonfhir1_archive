@@ -6,7 +6,7 @@ export const ActClassCorrelatedObservationSequencesCode = {
   /**
    * correlated observation sequences
    */
-  correlatedobservationsequences: "OBSCOR",
+  OBSCOR: "OBSCOR",
 } as const;
 
 /**

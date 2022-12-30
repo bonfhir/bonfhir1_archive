@@ -6,7 +6,7 @@ export const SecurityControlObservationTypeCode = {
   /**
    * security control observation
    */
-  securitycontrolobservation: "SECCONOBS",
+  SECCONOBS: "SECCONOBS",
 } as const;
 
 /**

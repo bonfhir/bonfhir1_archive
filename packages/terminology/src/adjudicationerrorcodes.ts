@@ -6,12 +6,12 @@ export const AdjudicationErrorCodesCode = {
   /**
    * Missing Identifier
    */
-  MissingIdentifier: "a001",
+  a001: "a001",
 
   /**
    * Missing Creation Date
    */
-  MissingCreationDate: "a002",
+  a002: "a002",
 } as const;
 
 /**

@@ -6,7 +6,7 @@ export const ActRelationshipOccurrenceCode = {
   /**
    * occurrence
    */
-  occurrence: "OCCR",
+  OCCR: "OCCR",
 } as const;
 
 /**

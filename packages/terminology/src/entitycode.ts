@@ -10,352 +10,352 @@ export const EntityCodeCode = {
   /**
    * ContainerEntityType
    */
-  ContainerEntityType: "_ContainerEntityType",
+  _ContainerEntityType: "_ContainerEntityType",
 
   /**
    * Package
    */
-  Package: "PKG",
+  PKG: "PKG",
 
   /**
    * NonRigidContainerEntityType
    */
-  NonRigidContainerEntityType: "_NonRigidContainerEntityType",
+  _NonRigidContainerEntityType: "_NonRigidContainerEntityType",
 
   /**
    * Bag
    */
-  Bag: "BAG",
+  BAG: "BAG",
 
   /**
    * Packet
    */
-  Packet: "PACKT",
+  PACKT: "PACKT",
 
   /**
    * Pouch
    */
-  Pouch: "PCH",
+  PCH: "PCH",
 
   /**
    * Sachet
    */
-  Sachet: "SACH",
+  SACH: "SACH",
 
   /**
    * RigidContainerEntityType
    */
-  RigidContainerEntityType: "_RigidContainerEntityType",
+  _RigidContainerEntityType: "_RigidContainerEntityType",
 
   /**
    * IndividualPackageEntityType
    */
-  IndividualPackageEntityType: "_IndividualPackageEntityType",
+  _IndividualPackageEntityType: "_IndividualPackageEntityType",
 
   /**
    * Ampule
    */
-  Ampule: "AMP",
+  AMP: "AMP",
 
   /**
    * Minim
    */
-  Minim: "MINIM",
+  MINIM: "MINIM",
 
   /**
    * Nebuamp
    */
-  Nebuamp: "NEBAMP",
+  NEBAMP: "NEBAMP",
 
   /**
    * Ovule
    */
-  Ovule: "OVUL",
+  OVUL: "OVUL",
 
   /**
    * MultiUseContainerEntityType
    */
-  MultiUseContainerEntityType: "_MultiUseContainerEntityType",
+  _MultiUseContainerEntityType: "_MultiUseContainerEntityType",
 
   /**
    * Bottle
    */
-  Bottle: "BOT",
+  BOT: "BOT",
 
   /**
    * Amber Bottle
    */
-  AmberBottle: "BOTA",
+  BOTA: "BOTA",
 
   /**
    * Dropper Bottle
    */
-  DropperBottle: "BOTD",
+  BOTD: "BOTD",
 
   /**
    * Glass Bottle
    */
-  GlassBottle: "BOTG",
+  BOTG: "BOTG",
 
   /**
    * Plastic Bottle
    */
-  PlasticBottle: "BOTP",
+  BOTP: "BOTP",
 
   /**
    * Polyethylene Bottle
    */
-  PolyethyleneBottle: "BOTPLY",
+  BOTPLY: "BOTPLY",
 
   /**
    * Box
    */
-  Box: "BOX",
+  BOX: "BOX",
 
   /**
    * Can
    */
-  Can: "CAN",
+  CAN: "CAN",
 
   /**
    * Cartridge
    */
-  Cartridge: "CART",
+  CART: "CART",
 
   /**
    * Canister
    */
-  Canister: "CNSTR",
+  CNSTR: "CNSTR",
 
   /**
    * Jar
    */
-  Jar: "JAR",
+  JAR: "JAR",
 
   /**
    * Jug
    */
-  Jug: "JUG",
+  JUG: "JUG",
 
   /**
    * Tin
    */
-  Tin: "TIN",
+  TIN: "TIN",
 
   /**
    * Tub
    */
-  Tub: "TUB",
+  TUB: "TUB",
 
   /**
    * Tube
    */
-  Tube: "TUBE",
+  TUBE: "TUBE",
 
   /**
    * Vial
    */
-  Vial: "VIAL",
+  VIAL: "VIAL",
 
   /**
    * Blister Pack
    */
-  BlisterPack: "BLSTRPK",
+  BLSTRPK: "BLSTRPK",
 
   /**
    * Card
    */
-  Card: "CARD",
+  CARD: "CARD",
 
   /**
    * Compliance Package
    */
-  CompliancePackage: "COMPPKG",
+  COMPPKG: "COMPPKG",
 
   /**
    * Dial Pack
    */
-  DialPack: "DIALPK",
+  DIALPK: "DIALPK",
 
   /**
    * Disk
    */
-  Disk: "DISK",
+  DISK: "DISK",
 
   /**
    * Dosette
    */
-  Dosette: "DOSET",
+  DOSET: "DOSET",
 
   /**
    * Strip
    */
-  Strip: "STRIP",
+  STRIP: "STRIP",
 
   /**
    * Kit
    */
-  Kit: "KIT",
+  KIT: "KIT",
 
   /**
    * System
    */
-  System: "SYSTM",
+  SYSTM: "SYSTM",
 
   /**
    * MedicalDevice
    */
-  MedicalDevice: "_MedicalDevice",
+  _MedicalDevice: "_MedicalDevice",
 
   /**
    * AccessMedicalDevice
    */
-  AccessMedicalDevice: "_AccessMedicalDevice",
+  _AccessMedicalDevice: "_AccessMedicalDevice",
 
   /**
    * Line
    */
-  Line: "LINE",
+  LINE: "LINE",
 
   /**
    * Intra-arterial Line
    */
-  IntraarterialLine: "IALINE",
+  IALINE: "IALINE",
 
   /**
    * Intraveneous Line
    */
-  IntraveneousLine: "IVLINE",
+  IVLINE: "IVLINE",
 
   /**
    * AdministrationMedicalDevice
    */
-  AdministrationMedicalDevice: "_AdministrationMedicalDevice",
+  _AdministrationMedicalDevice: "_AdministrationMedicalDevice",
 
   /**
    * InjectionMedicalDevice
    */
-  InjectionMedicalDevice: "_InjectionMedicalDevice",
+  _InjectionMedicalDevice: "_InjectionMedicalDevice",
 
   /**
    * AutoInjector
    */
-  AutoInjector: "AINJ",
+  AINJ: "AINJ",
 
   /**
    * Pen
    */
-  Pen: "PEN",
+  PEN: "PEN",
 
   /**
    * Syringe
    */
-  Syringe: "SYR",
+  SYR: "SYR",
 
   /**
    * Applicator
    */
-  Applicator: "APLCTR",
+  APLCTR: "APLCTR",
 
   /**
    * Inhaler
    */
-  Inhaler: "INH",
+  INH: "INH",
 
   /**
    * Diskus
    */
-  Diskus: "DSKS",
+  DSKS: "DSKS",
 
   /**
    * Diskhaler
    */
-  Diskhaler: "DSKUNH",
+  DSKUNH: "DSKUNH",
 
   /**
    * Turbuhaler
    */
-  Turbuhaler: "TRBINH",
+  TRBINH: "TRBINH",
 
   /**
    * Pump
    */
-  Pump: "PMP",
+  PMP: "PMP",
 
   /**
    * SpecimenAdditiveEntity
    */
-  SpecimenAdditiveEntity: "_SpecimenAdditiveEntity",
+  _SpecimenAdditiveEntity: "_SpecimenAdditiveEntity",
 
   /**
    * ACD Solution A
    */
-  ACDSolutionA: "ACDA",
+  ACDA: "ACDA",
 
   /**
    * ACD Solution B
    */
-  ACDSolutionB: "ACDB",
+  ACDB: "ACDB",
 
   /**
    * Acetic Acid
    */
-  AceticAcid: "ACET",
+  ACET: "ACET",
 
   /**
    * Amies transport medium
    */
-  Amiestransportmedium: "AMIES",
+  AMIES: "AMIES",
 
   /**
    * Bacterial Transport medium
    */
-  BacterialTransportmedium: "BACTM",
+  BACTM: "BACTM",
 
   /**
    * Buffered 10% formalin
    */
-  Buffered10formalin: "BF10",
+  BF10: "BF10",
 
   /**
    * Boric Acid
    */
-  BoricAcid: "BOR",
+  BOR: "BOR",
 
   /**
    * Bouin's solution
    */
-  Bouinssolution: "BOUIN",
+  BOUIN: "BOUIN",
 
   /**
    * Buffered skim milk
    */
-  Bufferedskimmilk: "BSKM",
+  BSKM: "BSKM",
 
   /**
    * 3.2% Citrate
    */
-  ThirtyTwoCitrate: "C32",
+  C32: "C32",
 
   /**
    * 3.8% Citrate
    */
-  ThirtyEightCitrate: "C38",
+  C38: "C38",
 
   /**
    * Carson's Modified 10% formalin
    */
-  CarsonsModified10formalin: "CARS",
+  CARS: "CARS",
 
   /**
    * Cary Blair Medium
    */
-  CaryBlairMedium: "CARY",
+  CARY: "CARY",
 
   /**
    * Chlamydia transport medium
    */
-  Chlamydiatransportmedium: "CHLTM",
+  CHLTM: "CHLTM",
 
   /**
    * CTAD
@@ -365,87 +365,87 @@ export const EntityCodeCode = {
   /**
    * Potassium/K EDTA 15%
    */
-  PotassiumKEDTA15: "EDTK15",
+  EDTK15: "EDTK15",
 
   /**
    * Potassium/K EDTA 7.5%
    */
-  PotassiumKEDTA75: "EDTK75",
+  EDTK75: "EDTK75",
 
   /**
    * Sodium/Na EDTA
    */
-  SodiumNaEDTA: "EDTN",
+  EDTN: "EDTN",
 
   /**
    * Enteric bacteria transport medium
    */
-  Entericbacteriatransportmedium: "ENT",
+  ENT: "ENT",
 
   /**
    * 10% Formalin
    */
-  TenFormalin: "F10",
+  F10: "F10",
 
   /**
    * Thrombin NIH; soybean trypsin inhibitor
    */
-  ThrombinNIHsoybeantrypsininhibitor: "FDP",
+  FDP: "FDP",
 
   /**
    * Sodium Fluoride, 10mg
    */
-  SodiumFluoride10mg: "FL10",
+  FL10: "FL10",
 
   /**
    * Sodium Fluoride, 100mg
    */
-  SodiumFluoride100mg: "FL100",
+  FL100: "FL100",
 
   /**
    * 6N HCL
    */
-  SixNHCL: "HCL6",
+  HCL6: "HCL6",
 
   /**
    * Ammonium heparin
    */
-  Ammoniumheparin: "HEPA",
+  HEPA: "HEPA",
 
   /**
    * Lithium/Li Heparin
    */
-  LithiumLiHeparin: "HEPL",
+  HEPL: "HEPL",
 
   /**
    * Sodium/Na Heparin
    */
-  SodiumNaHeparin: "HEPN",
+  HEPN: "HEPN",
 
   /**
    * Nitric Acid
    */
-  NitricAcid: "HNO3",
+  HNO3: "HNO3",
 
   /**
    * Jones Kendrick Medium
    */
-  JonesKendrickMedium: "JKM",
+  JKM: "JKM",
 
   /**
    * Karnovsky's fixative
    */
-  Karnovskysfixative: "KARN",
+  KARN: "KARN",
 
   /**
    * Potassium Oxalate
    */
-  PotassiumOxalate: "KOX",
+  KOX: "KOX",
 
   /**
    * Lithium iodoacetate
    */
-  Lithiumiodoacetate: "LIA",
+  LIA: "LIA",
 
   /**
    * M4
@@ -465,4552 +465,4508 @@ export const EntityCodeCode = {
   /**
    * Michel's transport medium
    */
-  Michelstransportmedium: "MICHTM",
+  MICHTM: "MICHTM",
 
   /**
    * MMD transport medium
    */
-  MMDtransportmedium: "MMDTM",
+  MMDTM: "MMDTM",
 
   /**
    * Sodium Fluoride
    */
-  SodiumFluoride: "NAF",
+  NAF: "NAF",
 
   /**
    * None
    */
-  None: "NONE",
+  NONE: "NONE",
 
   /**
    * Page's Saline
    */
-  PagesSaline: "PAGE",
+  PAGE: "PAGE",
 
   /**
    * Phenol
    */
-  Phenol: "PHENOL",
+  PHENOL: "PHENOL",
 
   /**
    * Polyvinylalcohol
    */
-  Polyvinylalcohol: "PVA",
+  PVA: "PVA",
 
   /**
    * Reagan Lowe Medium
    */
-  ReaganLoweMedium: "RLM",
+  RLM: "RLM",
 
   /**
    * Siliceous earth
    */
-  Siliceousearth: "SILICA",
+  SILICA: "SILICA",
 
   /**
    * Sodium polyanethol sulfonate 0.35% in 0.85% sodium chloride
    */
-  Sodiumpolyanetholsulfonate035in085sodiumchloride: "SPS",
+  SPS: "SPS",
 
   /**
    * Serum Separator Tube
    */
-  SerumSeparatorTube: "SST",
+  SST: "SST",
 
   /**
    * Stuart transport medium
    */
-  Stuarttransportmedium: "STUTM",
+  STUTM: "STUTM",
 
   /**
    * Thrombin
    */
-  Thrombin: "THROM",
+  THROM: "THROM",
 
   /**
    * Thymol
    */
-  Thymol: "THYMOL",
+  THYMOL: "THYMOL",
 
   /**
    * Thyoglycolate broth
    */
-  Thyoglycolatebroth: "THYO",
+  THYO: "THYO",
 
   /**
    * Toluene
    */
-  Toluene: "TOLU",
+  TOLU: "TOLU",
 
   /**
    * Ureaplasma transport medium
    */
-  Ureaplasmatransportmedium: "URETM",
+  URETM: "URETM",
 
   /**
    * Viral Transport medium
    */
-  ViralTransportmedium: "VIRTM",
+  VIRTM: "VIRTM",
 
   /**
    * Buffered Citrate
    */
-  BufferedCitrate: "WEST",
+  WEST: "WEST",
 
   /**
    * Blood Product
    */
-  BloodProduct: "BLDPRD",
+  BLDPRD: "BLDPRD",
 
   /**
    * Vaccine
    */
-  Vaccine: "VCCNE",
+  VCCNE: "VCCNE",
 
   /**
    * Device Generic Type
    */
-  DeviceGenericType: "_DeviceGenericType",
+  _DeviceGenericType: "_DeviceGenericType",
 
   /**
    * DrugEntity
    */
-  DrugEntity: "_DrugEntity",
+  _DrugEntity: "_DrugEntity",
 
   /**
    * ClinicalDrug
    */
-  ClinicalDrug: "_ClinicalDrug",
+  _ClinicalDrug: "_ClinicalDrug",
 
   /**
    * ActiveIngredientDrugEntityType
    */
-  ActiveIngredientDrugEntityType: "_ActiveIngredientDrugEntityType",
+  _ActiveIngredientDrugEntityType: "_ActiveIngredientDrugEntityType",
 
   /**
    * ManufacturedDrug
    */
-  ManufacturedDrug: "_ManufacturedDrug",
+  _ManufacturedDrug: "_ManufacturedDrug",
 
   /**
    * ExposureAgentEntityType
    */
-  ExposureAgentEntityType: "_ExposureAgentEntityType",
+  _ExposureAgentEntityType: "_ExposureAgentEntityType",
 
   /**
    * x_BillableProduct
    */
-  x_BillableProduct: "_x_BillableProduct",
+  _x_BillableProduct: "_x_BillableProduct",
 
   /**
    * Abcess
    */
-  Abcess: "ABS",
+  ABS: "ABS",
 
   /**
    * Amniotic fluid
    */
-  Amnioticfluid: "AMN",
+  AMN: "AMN",
 
   /**
    * Aspirate
    */
-  Aspirate: "ASP",
+  ASP: "ASP",
 
   /**
    * Blood bag
    */
-  Bloodbag: "BBL",
+  BBL: "BBL",
 
   /**
    * Whole body
    */
-  Wholebody: "BDY",
+  BDY: "BDY",
 
   /**
    * Bile fluid
    */
-  Bilefluid: "BIFL",
+  BIFL: "BIFL",
 
   /**
    * Whole blood
    */
-  Wholeblood: "BLD",
+  BLD: "BLD",
 
   /**
    * Blood arterial
    */
-  Bloodarterial: "BLDA",
+  BLDA: "BLDA",
 
   /**
    * Blood capillary
    */
-  Bloodcapillary: "BLDC",
+  BLDC: "BLDC",
 
   /**
    * Blood - cord
    */
-  Bloodcord: "BLDCO",
+  BLDCO: "BLDCO",
 
   /**
    * Blood venous
    */
-  Bloodvenous: "BLDV",
+  BLDV: "BLDV",
 
   /**
    * Bone
    */
-  Bone: "BON",
+  BON: "BON",
 
   /**
    * Basophils
    */
-  Basophils: "BPH",
+  BPH: "BPH",
 
   /**
    * Blood product unit
    */
-  Bloodproductunit: "BPU",
+  BPU: "BPU",
 
   /**
    * Burn
    */
-  Burn: "BRN",
+  BRN: "BRN",
 
   /**
    * Bronchial
    */
-  Bronchial: "BRO",
+  BRO: "BRO",
 
   /**
    * Exhaled gas (=breath)
    */
-  Exhaledgasbreath: "BRTH",
+  BRTH: "BRTH",
 
   /**
    * Exhaled gas (=breath)
    */
-  Exhaledgasbreath: "EXG",
+  EXG: "EXG",
 
   /**
    * Calculus (=Stone)
    */
-  CalculusStone: "CALC",
+  CALC: "CALC",
 
   /**
    * Calculus (=Stone)
    */
-  CalculusStone: "STON",
+  STON: "STON",
 
   /**
    * Cardiac muscle
    */
-  Cardiacmuscle: "CDM",
+  CDM: "CDM",
 
   /**
    * Conjunctiva
    */
-  Conjunctiva: "CNJT",
+  CNJT: "CNJT",
 
   /**
    * Cannula
    */
-  Cannula: "CNL",
+  CNL: "CNL",
 
   /**
    * Colostrum
    */
-  Colostrum: "COL",
+  COL: "COL",
 
   /**
    * Cornea
    */
-  Cornea: "CRN",
+  CRN: "CRN",
 
   /**
    * Cerebral spinal fluid
    */
-  Cerebralspinalfluid: "CSF",
+  CSF: "CSF",
 
   /**
    * Catheter tip
    */
-  Cathetertip: "CTP",
+  CTP: "CTP",
 
   /**
    * Curettage
    */
-  Curettage: "CUR",
+  CUR: "CUR",
 
   /**
    * Cervical mucus
    */
-  Cervicalmucus: "CVM",
+  CVM: "CVM",
 
   /**
    * Cervix
    */
-  Cervix: "CVX",
+  CVX: "CVX",
 
   /**
    * Cyst
    */
-  Cyst: "CYST",
+  CYST: "CYST",
 
   /**
    * Dialysis fluid
    */
-  Dialysisfluid: "DIAF",
+  DIAF: "DIAF",
 
   /**
    * Dose med or substance
    */
-  Dosemedorsubstance: "DOSE",
+  DOSE: "DOSE",
 
   /**
    * Drain
    */
-  Drain: "DRN",
+  DRN: "DRN",
 
   /**
    * Duodenal fluid
    */
-  Duodenalfluid: "DUFL",
+  DUFL: "DUFL",
 
   /**
    * Ear
    */
-  Ear: "EAR",
+  EAR: "EAR",
 
   /**
    * Ear wax (cerumen)
    */
-  Earwaxcerumen: "EARW",
+  EARW: "EARW",
 
   /**
    * Electrode
    */
-  Electrode: "ELT",
+  ELT: "ELT",
 
   /**
    * Endocardium
    */
-  Endocardium: "ENDC",
+  ENDC: "ENDC",
 
   /**
    * Endometrium
    */
-  Endometrium: "ENDM",
+  ENDM: "ENDM",
 
   /**
    * Eosinophils
    */
-  Eosinophils: "EOS",
+  EOS: "EOS",
 
   /**
    * Eye
    */
-  Eye: "EYE",
+  EYE: "EYE",
 
   /**
    * Fibroblasts
    */
-  Fibroblasts: "FIB",
+  FIB: "FIB",
 
   /**
    * Fistula
    */
-  Fistula: "FIST",
+  FIST: "FIST",
 
   /**
    * Filter
    */
-  Filter: "FLT",
+  FLT: "FLT",
 
   /**
    * Body fluid, unsp
    */
-  Bodyfluidunsp: "FLU",
+  FLU: "FLU",
 
   /**
    * Food sample
    */
-  Foodsample: "FOOD",
+  FOOD: "FOOD",
 
   /**
    * Gas
    */
-  Gas: "GAS",
+  GAS: "GAS",
 
   /**
    * Gastric fluid/contents
    */
-  Gastricfluidcontents: "GAST",
+  GAST: "GAST",
 
   /**
    * Genital
    */
-  Genital: "GEN",
+  GEN: "GEN",
 
   /**
    * Genital cervix
    */
-  Genitalcervix: "GENC",
+  GENC: "GENC",
 
   /**
    * Genital fluid
    */
-  Genitalfluid: "GENF",
+  GENF: "GENF",
 
   /**
    * Genital lochia
    */
-  Genitallochia: "GENL",
+  GENL: "GENL",
 
   /**
    * Genital vaginal
    */
-  Genitalvaginal: "GENV",
+  GENV: "GENV",
 
   /**
    * Hair
    */
-  Hair: "HAR",
+  HAR: "HAR",
 
   /**
    * Inhaled Gas
    */
-  InhaledGas: "IHG",
+  IHG: "IHG",
 
   /**
    * Isolate
    */
-  Isolate: "ISLT",
+  ISLT: "ISLT",
 
   /**
    * Intubation tube
    */
-  Intubationtube: "IT",
+  IT: "IT",
 
   /**
    * Lamella
    */
-  Lamella: "LAM",
+  LAM: "LAM",
 
   /**
    * Liquid NOS
    */
-  LiquidNOS: "LIQ",
+  LIQ: "LIQ",
 
   /**
    * Line
    */
-  Line: "LN",
+  LN: "LN",
 
   /**
    * Line arterial
    */
-  Linearterial: "LNA",
+  LNA: "LNA",
 
   /**
    * Line venous
    */
-  Linevenous: "LNV",
+  LNV: "LNV",
 
   /**
    * Lymphocytes
    */
-  Lymphocytes: "LYM",
+  LYM: "LYM",
 
   /**
    * Macrophages
    */
-  Macrophages: "MAC",
+  MAC: "MAC",
 
   /**
    * Marrow (bone)
    */
-  Marrowbone: "MAR",
+  MAR: "MAR",
 
   /**
    * Menstrual blood
    */
-  Menstrualblood: "MBLD",
+  MBLD: "MBLD",
 
   /**
    * Meconium
    */
-  Meconium: "MEC",
+  MEC: "MEC",
 
   /**
    * Breast milk
    */
-  Breastmilk: "MILK",
+  MILK: "MILK",
 
   /**
    * Milk
    */
-  Milk: "MLK",
+  MLK: "MLK",
 
   /**
    * Nail
    */
-  Nail: "NAIL",
+  NAIL: "NAIL",
 
   /**
    * Nose (nasal passage)
    */
-  Nosenasalpassage: "NOS",
+  NOS: "NOS",
 
   /**
    * Pancreatic fluid
    */
-  Pancreaticfluid: "PAFL",
+  PAFL: "PAFL",
 
   /**
    * Patient
    */
-  Patient: "PAT",
+  PAT: "PAT",
 
   /**
    * Plasma
    */
-  Plasma: "PLAS",
+  PLAS: "PLAS",
 
   /**
    * Plasma bag
    */
-  Plasmabag: "PLB",
+  PLB: "PLB",
 
   /**
    * Placenta
    */
-  Placenta: "PLC",
+  PLC: "PLC",
 
   /**
    * Pleural fluid (thoracentesis fld)
    */
-  Pleuralfluidthoracentesisfld: "PLR",
+  PLR: "PLR",
 
   /**
    * Polymorphonuclear neutrophils
    */
-  Polymorphonuclearneutrophils: "PMN",
+  PMN: "PMN",
 
   /**
    * Platelet poor plasma
    */
-  Plateletpoorplasma: "PPP",
+  PPP: "PPP",
 
   /**
    * Platelet rich plasma
    */
-  Plateletrichplasma: "PRP",
+  PRP: "PRP",
 
   /**
    * Peritoneal fluid /ascites
    */
-  Peritonealfluidascites: "PRT",
+  PRT: "PRT",
 
   /**
    * Pus
    */
-  Pus: "PUS",
+  PUS: "PUS",
 
   /**
    * Erythrocytes
    */
-  Erythrocytes: "RBC",
+  RBC: "RBC",
 
   /**
    * Saliva
    */
-  Saliva: "SAL",
+  SAL: "SAL",
 
   /**
    * Serum
    */
-  Serum: "SER",
+  SER: "SER",
 
   /**
    * Skeletal muscle
    */
-  Skeletalmuscle: "SKM",
+  SKM: "SKM",
 
   /**
    * Skin
    */
-  Skin: "SKN",
+  SKN: "SKN",
 
   /**
    * Seminal fluid
    */
-  Seminalfluid: "SMN",
+  SMN: "SMN",
 
   /**
    * Seminal plasma
    */
-  Seminalplasma: "SMPLS",
+  SMPLS: "SMPLS",
 
   /**
    * Synovial fluid (Joint fluid)
    */
-  SynovialfluidJointfluid: "SNV",
+  SNV: "SNV",
 
   /**
    * Spermatozoa
    */
-  Spermatozoa: "SPRM",
+  SPRM: "SPRM",
 
   /**
    * Sputum
    */
-  Sputum: "SPT",
+  SPT: "SPT",
 
   /**
    * Sputum - coughed
    */
-  Sputumcoughed: "SPTC",
+  SPTC: "SPTC",
 
   /**
    * Sputum - tracheal aspirate
    */
-  Sputumtrachealaspirate: "SPTT",
+  SPTT: "SPTT",
 
   /**
    * Stool = Fecal
    */
-  StoolFecal: "STL",
+  STL: "STL",
 
   /**
    * Sweat
    */
-  Sweat: "SWT",
+  SWT: "SWT",
 
   /**
    * Tears
    */
-  Tears: "TEAR",
+  TEAR: "TEAR",
 
   /**
    * Thrombocyte (platelet)
    */
-  Thrombocyteplatelet: "THRB",
+  THRB: "THRB",
 
   /**
    * Throat
    */
-  Throat: "THRT",
+  THRT: "THRT",
 
   /**
    * Tissue gall bladder
    */
-  Tissuegallbladder: "TISG",
+  TISG: "TISG",
 
   /**
    * Tissue placenta
    */
-  Tissueplacenta: "TISPL",
+  TISPL: "TISPL",
 
   /**
    * Tissue, unspecified
    */
-  Tissueunspecified: "TISS",
+  TISS: "TISS",
 
   /**
    * Tissue ulcer
    */
-  Tissueulcer: "TISU",
+  TISU: "TISU",
 
   /**
    * Tissue large intestine
    */
-  Tissuelargeintestine: "TLGI",
+  TLGI: "TLGI",
 
   /**
    * Tissue lung
    */
-  Tissuelung: "TLNG",
+  TLNG: "TLNG",
 
   /**
    * Tissue small intestine Tissue ulcer
    */
-  TissuesmallintestineTissueulcer: "TSMI",
-
-  /**
-   * Tube, unspecified
-   */
-  Tubeunspecified: "TUB",
+  TSMI: "TSMI",
 
   /**
    * Ulcer
    */
-  Ulcer: "ULC",
+  ULC: "ULC",
 
   /**
    * Umbilical blood
    */
-  Umbilicalblood: "UMB",
+  UMB: "UMB",
 
   /**
    * Unknown medicine
    */
-  Unknownmedicine: "UMED",
+  UMED: "UMED",
 
   /**
    * Urine
    */
-  Urine: "UR",
+  UR: "UR",
 
   /**
    * Urine clean catch
    */
-  Urinecleancatch: "URC",
+  URC: "URC",
 
   /**
    * Urine sediment
    */
-  Urinesediment: "URNS",
+  URNS: "URNS",
 
   /**
    * Urine catheter
    */
-  Urinecatheter: "URT",
+  URT: "URT",
 
   /**
    * Urethra
    */
-  Urethra: "URTH",
+  URTH: "URTH",
 
   /**
    * Unknown substance
    */
-  Unknownsubstance: "USUB",
+  USUB: "USUB",
 
   /**
    * Vomitus
    */
-  Vomitus: "VOM",
+  VOM: "VOM",
 
   /**
    * Water
    */
-  Water: "WAT",
+  WAT: "WAT",
 
   /**
    * Leukocytes
    */
-  Leukocytes: "WBC",
+  WBC: "WBC",
 
   /**
    * Wick
    */
-  Wick: "WICK",
+  WICK: "WICK",
 
   /**
    * Wound
    */
-  Wound: "WND",
+  WND: "WND",
 
   /**
    * Wound abscess
    */
-  Woundabscess: "WNDA",
+  WNDA: "WNDA",
 
   /**
    * Wound drainage
    */
-  Wounddrainage: "WNDD",
+  WNDD: "WNDD",
 
   /**
    * Wound exudate
    */
-  Woundexudate: "WNDE",
+  WNDE: "WNDE",
 
   /**
    * Bed Location
    */
-  BedLocation: "BED",
+  BED: "BED",
 
   /**
    * Building Location
    */
-  BuildingLocation: "BLDG",
+  BLDG: "BLDG",
 
   /**
    * Floor Location
    */
-  FloorLocation: "FLOOR",
+  FLOOR: "FLOOR",
 
   /**
    * Room Location
    */
-  RoomLocation: "ROOM",
+  ROOM: "ROOM",
 
   /**
    * Wing Location
    */
-  WingLocation: "WING",
+  WING: "WING",
 
   /**
    * Andorra
    */
-  Andorra: "AD",
+  AD: "AD",
 
   /**
    * United Arab Emirates
    */
-  UnitedArabEmirates: "AE",
+  AE: "AE",
 
   /**
    * Afghanistan
    */
-  Afghanistan: "AF",
+  AF: "AF",
 
   /**
    * Antigua and Barbuda
    */
-  AntiguaandBarbuda: "AG",
+  AG: "AG",
 
   /**
    * Anguilla
    */
-  Anguilla: "AI",
+  AI: "AI",
 
   /**
    * Albania
    */
-  Albania: "AL",
+  AL: "AL",
 
   /**
    * Armenia
    */
-  Armenia: "AM",
+  AM: "AM",
 
   /**
    * Angola
    */
-  Angola: "AO",
+  AO: "AO",
 
   /**
    * Antarctica
    */
-  Antarctica: "AQ",
+  AQ: "AQ",
 
   /**
    * Argentina
    */
-  Argentina: "AR",
+  AR: "AR",
 
   /**
    * American Samoa
    */
-  AmericanSamoa: "AS",
+  AS: "AS",
 
   /**
    * Austria
    */
-  Austria: "AT",
+  AT: "AT",
 
   /**
    * Australia
    */
-  Australia: "AU",
+  AU: "AU",
 
   /**
    * Aruba
    */
-  Aruba: "AW",
+  AW: "AW",
 
   /**
    * Eland Islands
    */
-  ElandIslands: "AX",
+  AX: "AX",
 
   /**
    * Azerbaijan
    */
-  Azerbaijan: "AZ",
+  AZ: "AZ",
 
   /**
    * Bosnia and Herzegovina
    */
-  BosniaandHerzegovina: "BA",
+  BA: "BA",
 
   /**
    * Barbados
    */
-  Barbados: "BB",
+  BB: "BB",
 
   /**
    * Bangladesh
    */
-  Bangladesh: "BD",
+  BD: "BD",
 
   /**
    * Belgium
    */
-  Belgium: "BE",
+  BE: "BE",
 
   /**
    * Burkina Faso
    */
-  BurkinaFaso: "BF",
+  BF: "BF",
 
   /**
    * Bulgaria
    */
-  Bulgaria: "BG",
+  BG: "BG",
 
   /**
    * Bahrain
    */
-  Bahrain: "BH",
+  BH: "BH",
 
   /**
    * Burundi
    */
-  Burundi: "BI",
+  BI: "BI",
 
   /**
    * Benin
    */
-  Benin: "BJ",
+  BJ: "BJ",
 
   /**
    * Saint Barthilemy
    */
-  SaintBarthilemy: "BL",
+  BL: "BL",
 
   /**
    * Bermuda
    */
-  Bermuda: "BM",
+  BM: "BM",
 
   /**
    * Brunei Darussalam
    */
-  BruneiDarussalam: "BN",
+  BN: "BN",
 
   /**
    * Bolivia, Plurinational State of
    */
-  BoliviaPlurinationalStateof: "BO",
+  BO: "BO",
 
   /**
    * Bonaire, Sint Eustatius and Saba
    */
-  BonaireSintEustatiusandSaba: "BQ",
+  BQ: "BQ",
 
   /**
    * Brazil
    */
-  Brazil: "BR",
+  BR: "BR",
 
   /**
    * Bahamas
    */
-  Bahamas: "BS",
+  BS: "BS",
 
   /**
    * Bhutan
    */
-  Bhutan: "BT",
+  BT: "BT",
 
   /**
    * Bouvet Island
    */
-  BouvetIsland: "BV",
+  BV: "BV",
 
   /**
    * Botswana
    */
-  Botswana: "BW",
+  BW: "BW",
 
   /**
    * Belarus
    */
-  Belarus: "BY",
+  BY: "BY",
 
   /**
    * Belize
    */
-  Belize: "BZ",
+  BZ: "BZ",
 
   /**
    * Canada
    */
-  Canada: "CA",
+  CA: "CA",
 
   /**
    * Cocos (Keeling) Islands
    */
-  CocosKeelingIslands: "CC",
+  CC: "CC",
 
   /**
    * Congo, the Democratic Republic of the
    */
-  CongotheDemocraticRepublicofthe: "CD",
+  CD: "CD",
 
   /**
    * Central African Republic
    */
-  CentralAfricanRepublic: "CF",
+  CF: "CF",
 
   /**
    * Congo
    */
-  Congo: "CG",
+  CG: "CG",
 
   /**
    * Switzerland
    */
-  Switzerland: "CH",
+  CH: "CH",
 
   /**
    * Ctte d'Ivoire
    */
-  CttedIvoire: "CI",
+  CI: "CI",
 
   /**
    * Cook Islands
    */
-  CookIslands: "CK",
+  CK: "CK",
 
   /**
    * Chile
    */
-  Chile: "CL",
+  CL: "CL",
 
   /**
    * Cameroon
    */
-  Cameroon: "CM",
+  CM: "CM",
 
   /**
    * China
    */
-  China: "CN",
+  CN: "CN",
 
   /**
    * Colombia
    */
-  Colombia: "CO",
+  CO: "CO",
 
   /**
    * Costa Rica
    */
-  CostaRica: "CR",
+  CR: "CR",
 
   /**
    * Cuba
    */
-  Cuba: "CU",
+  CU: "CU",
 
   /**
    * Cabo Verde
    */
-  CaboVerde: "CV",
+  CV: "CV",
 
   /**
    * Curagao
    */
-  Curagao: "CW",
+  CW: "CW",
 
   /**
    * Christmas Island
    */
-  ChristmasIsland: "CX",
+  CX: "CX",
 
   /**
    * Cyprus
    */
-  Cyprus: "CY",
+  CY: "CY",
 
   /**
    * Czechia
    */
-  Czechia: "CZ",
+  CZ: "CZ",
 
   /**
    * Germany
    */
-  Germany: "DE",
+  DE: "DE",
 
   /**
    * Djibouti
    */
-  Djibouti: "DJ",
+  DJ: "DJ",
 
   /**
    * Denmark
    */
-  Denmark: "DK",
+  DK: "DK",
 
   /**
    * Dominica
    */
-  Dominica: "DM",
+  DM: "DM",
 
   /**
    * Dominican Republic
    */
-  DominicanRepublic: "DO",
+  DO: "DO",
 
   /**
    * Algeria
    */
-  Algeria: "DZ",
+  DZ: "DZ",
 
   /**
    * Ecuador
    */
-  Ecuador: "EC",
+  EC: "EC",
 
   /**
    * Estonia
    */
-  Estonia: "EE",
+  EE: "EE",
 
   /**
    * Egypt
    */
-  Egypt: "EG",
+  EG: "EG",
 
   /**
    * Western Sahara
    */
-  WesternSahara: "EH",
+  EH: "EH",
 
   /**
    * Eritrea
    */
-  Eritrea: "ER",
+  ER: "ER",
 
   /**
    * Spain
    */
-  Spain: "ES",
+  ES: "ES",
 
   /**
    * Ethiopia
    */
-  Ethiopia: "ET",
+  ET: "ET",
 
   /**
    * Finland
    */
-  Finland: "FI",
+  FI: "FI",
 
   /**
    * Fiji
    */
-  Fiji: "FJ",
+  FJ: "FJ",
 
   /**
    * Falkland Islands (Malvinas)
    */
-  FalklandIslandsMalvinas: "FK",
+  FK: "FK",
 
   /**
    * Micronesia, Federated States of
    */
-  MicronesiaFederatedStatesof: "FM",
+  FM: "FM",
 
   /**
    * Faroe Islands
    */
-  FaroeIslands: "FO",
+  FO: "FO",
 
   /**
    * France
    */
-  France: "FR",
+  FR: "FR",
 
   /**
    * Gabon
    */
-  Gabon: "GA",
+  GA: "GA",
 
   /**
    * United Kingdom of Great Britain and Northern Ireland
    */
-  UnitedKingdomofGreatBritainandNorthernIreland: "GB",
+  GB: "GB",
 
   /**
    * Grenada
    */
-  Grenada: "GD",
+  GD: "GD",
 
   /**
    * Georgia
    */
-  Georgia: "GE",
+  GE: "GE",
 
   /**
    * French Guiana
    */
-  FrenchGuiana: "GF",
+  GF: "GF",
 
   /**
    * Guernsey
    */
-  Guernsey: "GG",
+  GG: "GG",
 
   /**
    * Ghana
    */
-  Ghana: "GH",
+  GH: "GH",
 
   /**
    * Gibraltar
    */
-  Gibraltar: "GI",
+  GI: "GI",
 
   /**
    * Greenland
    */
-  Greenland: "GL",
+  GL: "GL",
 
   /**
    * Gambia
    */
-  Gambia: "GM",
+  GM: "GM",
 
   /**
    * Guinea
    */
-  Guinea: "GN",
+  GN: "GN",
 
   /**
    * Guadeloupe
    */
-  Guadeloupe: "GP",
+  GP: "GP",
 
   /**
    * Equatorial Guinea
    */
-  EquatorialGuinea: "GQ",
+  GQ: "GQ",
 
   /**
    * Greece
    */
-  Greece: "GR",
+  GR: "GR",
 
   /**
    * South Georgia and the South Sandwich Islands
    */
-  SouthGeorgiaandtheSouthSandwichIslands: "GS",
+  GS: "GS",
 
   /**
    * Guatemala
    */
-  Guatemala: "GT",
+  GT: "GT",
 
   /**
    * Guam
    */
-  Guam: "GU",
+  GU: "GU",
 
   /**
    * Guinea-Bissau
    */
-  GuineaBissau: "GW",
+  GW: "GW",
 
   /**
    * Guyana
    */
-  Guyana: "GY",
+  GY: "GY",
 
   /**
    * Hong Kong
    */
-  HongKong: "HK",
+  HK: "HK",
 
   /**
    * Heard Island and McDonald Islands
    */
-  HeardIslandandMcDonaldIslands: "HM",
+  HM: "HM",
 
   /**
    * Honduras
    */
-  Honduras: "HN",
+  HN: "HN",
 
   /**
    * Croatia
    */
-  Croatia: "HR",
+  HR: "HR",
 
   /**
    * Haiti
    */
-  Haiti: "HT",
+  HT: "HT",
 
   /**
    * Hungary
    */
-  Hungary: "HU",
+  HU: "HU",
 
   /**
    * Indonesia
    */
-  Indonesia: "ID",
+  ID: "ID",
 
   /**
    * Ireland
    */
-  Ireland: "IE",
+  IE: "IE",
 
   /**
    * Israel
    */
-  Israel: "IL",
+  IL: "IL",
 
   /**
    * Isle of Man
    */
-  IsleofMan: "IM",
+  IM: "IM",
 
   /**
    * India
    */
-  India: "IN",
+  IN: "IN",
 
   /**
    * British Indian Ocean Territory
    */
-  BritishIndianOceanTerritory: "IO",
+  IO: "IO",
 
   /**
    * Iraq
    */
-  Iraq: "IQ",
+  IQ: "IQ",
 
   /**
    * Iran, Islamic Republic of
    */
-  IranIslamicRepublicof: "IR",
+  IR: "IR",
 
   /**
    * Iceland
    */
-  Iceland: "IS",
-
-  /**
-   * Italy
-   */
-  Italy: "IT",
+  IS: "IS",
 
   /**
    * Jersey
    */
-  Jersey: "JE",
+  JE: "JE",
 
   /**
    * Jamaica
    */
-  Jamaica: "JM",
+  JM: "JM",
 
   /**
    * Jordan
    */
-  Jordan: "JO",
+  JO: "JO",
 
   /**
    * Japan
    */
-  Japan: "JP",
+  JP: "JP",
 
   /**
    * Kenya
    */
-  Kenya: "KE",
+  KE: "KE",
 
   /**
    * Kyrgyzstan
    */
-  Kyrgyzstan: "KG",
+  KG: "KG",
 
   /**
    * Cambodia
    */
-  Cambodia: "KH",
+  KH: "KH",
 
   /**
    * Kiribati
    */
-  Kiribati: "KI",
+  KI: "KI",
 
   /**
    * Comoros
    */
-  Comoros: "KM",
+  KM: "KM",
 
   /**
    * Saint Kitts and Nevis
    */
-  SaintKittsandNevis: "KN",
+  KN: "KN",
 
   /**
    * Korea, Democratic People's Republic of
    */
-  KoreaDemocraticPeoplesRepublicof: "KP",
+  KP: "KP",
 
   /**
    * Korea, Republic of
    */
-  KoreaRepublicof: "KR",
+  KR: "KR",
 
   /**
    * Kuwait
    */
-  Kuwait: "KW",
+  KW: "KW",
 
   /**
    * Cayman Islands
    */
-  CaymanIslands: "KY",
+  KY: "KY",
 
   /**
    * Kazakhstan
    */
-  Kazakhstan: "KZ",
+  KZ: "KZ",
 
   /**
    * Lao People's Democratic Republic
    */
-  LaoPeoplesDemocraticRepublic: "LA",
+  LA: "LA",
 
   /**
    * Lebanon
    */
-  Lebanon: "LB",
+  LB: "LB",
 
   /**
    * Saint Lucia
    */
-  SaintLucia: "LC",
+  LC: "LC",
 
   /**
    * Liechtenstein
    */
-  Liechtenstein: "LI",
+  LI: "LI",
 
   /**
    * Sri Lanka
    */
-  SriLanka: "LK",
+  LK: "LK",
 
   /**
    * Liberia
    */
-  Liberia: "LR",
+  LR: "LR",
 
   /**
    * Lesotho
    */
-  Lesotho: "LS",
+  LS: "LS",
 
   /**
    * Lithuania
    */
-  Lithuania: "LT",
+  LT: "LT",
 
   /**
    * Luxembourg
    */
-  Luxembourg: "LU",
+  LU: "LU",
 
   /**
    * Latvia
    */
-  Latvia: "LV",
+  LV: "LV",
 
   /**
    * Libya
    */
-  Libya: "LY",
+  LY: "LY",
 
   /**
    * Morocco
    */
-  Morocco: "MA",
+  MA: "MA",
 
   /**
    * Monaco
    */
-  Monaco: "MC",
+  MC: "MC",
 
   /**
    * Moldova, Republic of
    */
-  MoldovaRepublicof: "MD",
+  MD: "MD",
 
   /**
    * Montenegro
    */
-  Montenegro: "ME",
+  ME: "ME",
 
   /**
    * Saint Martin (French part)
    */
-  SaintMartinFrenchpart: "MF",
+  MF: "MF",
 
   /**
    * Madagascar
    */
-  Madagascar: "MG",
+  MG: "MG",
 
   /**
    * Marshall Islands
    */
-  MarshallIslands: "MH",
+  MH: "MH",
 
   /**
    * Macedonia, the former Yugoslav Republic of
    */
-  MacedoniatheformerYugoslavRepublicof: "MK",
+  MK: "MK",
 
   /**
    * Mali
    */
-  Mali: "ML",
+  ML: "ML",
 
   /**
    * Myanmar
    */
-  Myanmar: "MM",
+  MM: "MM",
 
   /**
    * Mongolia
    */
-  Mongolia: "MN",
+  MN: "MN",
 
   /**
    * Macao
    */
-  Macao: "MO",
+  MO: "MO",
 
   /**
    * Northern Mariana Islands
    */
-  NorthernMarianaIslands: "MP",
+  MP: "MP",
 
   /**
    * Martinique
    */
-  Martinique: "MQ",
+  MQ: "MQ",
 
   /**
    * Mauritania
    */
-  Mauritania: "MR",
+  MR: "MR",
 
   /**
    * Montserrat
    */
-  Montserrat: "MS",
+  MS: "MS",
 
   /**
    * Malta
    */
-  Malta: "MT",
+  MT: "MT",
 
   /**
    * Mauritius
    */
-  Mauritius: "MU",
+  MU: "MU",
 
   /**
    * Maldives
    */
-  Maldives: "MV",
+  MV: "MV",
 
   /**
    * Malawi
    */
-  Malawi: "MW",
+  MW: "MW",
 
   /**
    * Mexico
    */
-  Mexico: "MX",
+  MX: "MX",
 
   /**
    * Malaysia
    */
-  Malaysia: "MY",
+  MY: "MY",
 
   /**
    * Mozambique
    */
-  Mozambique: "MZ",
+  MZ: "MZ",
 
   /**
    * Namibia
    */
-  Namibia: "NA",
+  NA: "NA",
 
   /**
    * New Caledonia
    */
-  NewCaledonia: "NC",
+  NC: "NC",
 
   /**
    * Niger
    */
-  Niger: "NE",
+  NE: "NE",
 
   /**
    * Norfolk Island
    */
-  NorfolkIsland: "NF",
+  NF: "NF",
 
   /**
    * Nigeria
    */
-  Nigeria: "NG",
+  NG: "NG",
 
   /**
    * Nicaragua
    */
-  Nicaragua: "NI",
+  NI: "NI",
 
   /**
    * Netherlands
    */
-  Netherlands: "NL",
+  NL: "NL",
 
   /**
    * Norway
    */
-  Norway: "NO",
+  NO: "NO",
 
   /**
    * Nepal
    */
-  Nepal: "NP",
+  NP: "NP",
 
   /**
    * Nauru
    */
-  Nauru: "NR",
+  NR: "NR",
 
   /**
    * Niue
    */
-  Niue: "NU",
+  NU: "NU",
 
   /**
    * New Zealand
    */
-  NewZealand: "NZ",
+  NZ: "NZ",
 
   /**
    * Oman
    */
-  Oman: "OM",
+  OM: "OM",
 
   /**
    * Panama
    */
-  Panama: "PA",
+  PA: "PA",
 
   /**
    * Peru
    */
-  Peru: "PE",
+  PE: "PE",
 
   /**
    * French Polynesia
    */
-  FrenchPolynesia: "PF",
+  PF: "PF",
 
   /**
    * Papua New Guinea
    */
-  PapuaNewGuinea: "PG",
+  PG: "PG",
 
   /**
    * Philippines
    */
-  Philippines: "PH",
+  PH: "PH",
 
   /**
    * Pakistan
    */
-  Pakistan: "PK",
+  PK: "PK",
 
   /**
    * Poland
    */
-  Poland: "PL",
+  PL: "PL",
 
   /**
    * Saint Pierre and Miquelon
    */
-  SaintPierreandMiquelon: "PM",
+  PM: "PM",
 
   /**
    * Pitcairn
    */
-  Pitcairn: "PN",
+  PN: "PN",
 
   /**
    * Puerto Rico
    */
-  PuertoRico: "PR",
+  PR: "PR",
 
   /**
    * Palestine, State of
    */
-  PalestineStateof: "PS",
+  PS: "PS",
 
   /**
    * Portugal
    */
-  Portugal: "PT",
+  PT: "PT",
 
   /**
    * Palau
    */
-  Palau: "PW",
+  PW: "PW",
 
   /**
    * Paraguay
    */
-  Paraguay: "PY",
+  PY: "PY",
 
   /**
    * Qatar
    */
-  Qatar: "QA",
+  QA: "QA",
 
   /**
    * Riunion
    */
-  Riunion: "RE",
+  RE: "RE",
 
   /**
    * Romania
    */
-  Romania: "RO",
+  RO: "RO",
 
   /**
    * Serbia
    */
-  Serbia: "RS",
+  RS: "RS",
 
   /**
    * Russian Federation
    */
-  RussianFederation: "RU",
+  RU: "RU",
 
   /**
    * Rwanda
    */
-  Rwanda: "RW",
+  RW: "RW",
 
   /**
    * Saudi Arabia
    */
-  SaudiArabia: "SA",
+  SA: "SA",
 
   /**
    * Solomon Islands
    */
-  SolomonIslands: "SB",
+  SB: "SB",
 
   /**
    * Seychelles
    */
-  Seychelles: "SC",
+  SC: "SC",
 
   /**
    * Sudan
    */
-  Sudan: "SD",
+  SD: "SD",
 
   /**
    * Sweden
    */
-  Sweden: "SE",
+  SE: "SE",
 
   /**
    * Singapore
    */
-  Singapore: "SG",
+  SG: "SG",
 
   /**
    * Saint Helena, Ascension and Tristan da Cunha
    */
-  SaintHelenaAscensionandTristandaCunha: "SH",
+  SH: "SH",
 
   /**
    * Slovenia
    */
-  Slovenia: "SI",
+  SI: "SI",
 
   /**
    * Svalbard and Jan Mayen
    */
-  SvalbardandJanMayen: "SJ",
+  SJ: "SJ",
 
   /**
    * Slovakia
    */
-  Slovakia: "SK",
+  SK: "SK",
 
   /**
    * Sierra Leone
    */
-  SierraLeone: "SL",
+  SL: "SL",
 
   /**
    * San Marino
    */
-  SanMarino: "SM",
+  SM: "SM",
 
   /**
    * Senegal
    */
-  Senegal: "SN",
+  SN: "SN",
 
   /**
    * Somalia
    */
-  Somalia: "SO",
+  SO: "SO",
 
   /**
    * Suriname
    */
-  Suriname: "SR",
+  SR: "SR",
 
   /**
    * South Sudan
    */
-  SouthSudan: "SS",
+  SS: "SS",
 
   /**
    * Sao Tome and Principe
    */
-  SaoTomeandPrincipe: "ST",
+  ST: "ST",
 
   /**
    * El Salvador
    */
-  ElSalvador: "SV",
+  SV: "SV",
 
   /**
    * Sint Maarten (Dutch part)
    */
-  SintMaartenDutchpart: "SX",
+  SX: "SX",
 
   /**
    * Syrian Arab Republic
    */
-  SyrianArabRepublic: "SY",
+  SY: "SY",
 
   /**
    * Swaziland
    */
-  Swaziland: "SZ",
+  SZ: "SZ",
 
   /**
    * Turks and Caicos Islands
    */
-  TurksandCaicosIslands: "TC",
+  TC: "TC",
 
   /**
    * Chad
    */
-  Chad: "TD",
+  TD: "TD",
 
   /**
    * French Southern Territories
    */
-  FrenchSouthernTerritories: "TF",
+  TF: "TF",
 
   /**
    * Togo
    */
-  Togo: "TG",
+  TG: "TG",
 
   /**
    * Thailand
    */
-  Thailand: "TH",
+  TH: "TH",
 
   /**
    * Tajikistan
    */
-  Tajikistan: "TJ",
+  TJ: "TJ",
 
   /**
    * Tokelau
    */
-  Tokelau: "TK",
+  TK: "TK",
 
   /**
    * Timor-Leste
    */
-  TimorLeste: "TL",
+  TL: "TL",
 
   /**
    * Turkmenistan
    */
-  Turkmenistan: "TM",
+  TM: "TM",
 
   /**
    * Tunisia
    */
-  Tunisia: "TN",
+  TN: "TN",
 
   /**
    * Tonga
    */
-  Tonga: "TO",
+  TO: "TO",
 
   /**
    * Turkey
    */
-  Turkey: "TR",
+  TR: "TR",
 
   /**
    * Trinidad and Tobago
    */
-  TrinidadandTobago: "TT",
+  TT: "TT",
 
   /**
    * Tuvalu
    */
-  Tuvalu: "TV",
+  TV: "TV",
 
   /**
    * Taiwan, Province of China
    */
-  TaiwanProvinceofChina: "TW",
+  TW: "TW",
 
   /**
    * Tanzania, United Republic of
    */
-  TanzaniaUnitedRepublicof: "TZ",
+  TZ: "TZ",
 
   /**
    * Ukraine
    */
-  Ukraine: "UA",
+  UA: "UA",
 
   /**
    * Uganda
    */
-  Uganda: "UG",
+  UG: "UG",
 
   /**
    * United States Minor Outlying Islands
    */
-  UnitedStatesMinorOutlyingIslands: "UM",
+  UM: "UM",
 
   /**
    * United States of America
    */
-  UnitedStatesofAmerica: "US",
+  US: "US",
 
   /**
    * Uruguay
    */
-  Uruguay: "UY",
+  UY: "UY",
 
   /**
    * Uzbekistan
    */
-  Uzbekistan: "UZ",
+  UZ: "UZ",
 
   /**
    * Holy See
    */
-  HolySee: "VA",
+  VA: "VA",
 
   /**
    * Saint Vincent and the Grenadines
    */
-  SaintVincentandtheGrenadines: "VC",
+  VC: "VC",
 
   /**
    * Venezuela, Bolivarian Republic of
    */
-  VenezuelaBolivarianRepublicof: "VE",
+  VE: "VE",
 
   /**
    * Virgin Islands, British
    */
-  VirginIslandsBritish: "VG",
+  VG: "VG",
 
   /**
    * Virgin Islands,
    */
-  VirginIslands: "VI",
+  VI: "VI",
 
   /**
    * Viet Nam
    */
-  VietNam: "VN",
+  VN: "VN",
 
   /**
    * Vanuatu
    */
-  Vanuatu: "VU",
+  VU: "VU",
 
   /**
    * Wallis and Futuna
    */
-  WallisandFutuna: "WF",
+  WF: "WF",
 
   /**
    * Samoa
    */
-  Samoa: "WS",
+  WS: "WS",
 
   /**
    * Yemen
    */
-  Yemen: "YE",
+  YE: "YE",
 
   /**
    * Mayotte
    */
-  Mayotte: "YT",
+  YT: "YT",
 
   /**
    * South Africa
    */
-  SouthAfrica: "ZA",
+  ZA: "ZA",
 
   /**
    * Zambia
    */
-  Zambia: "ZM",
+  ZM: "ZM",
 
   /**
    * Zimbabwe
    */
-  Zimbabwe: "ZW",
+  ZW: "ZW",
 
   /**
    * Aruba
    */
-  Aruba: "ABW",
+  ABW: "ABW",
 
   /**
    * Afghanistan
    */
-  Afghanistan: "AFG",
+  AFG: "AFG",
 
   /**
    * Angola
    */
-  Angola: "AGO",
+  AGO: "AGO",
 
   /**
    * Anguilla
    */
-  Anguilla: "AIA",
+  AIA: "AIA",
 
   /**
    * Eland Islands
    */
-  ElandIslands: "ALA",
+  ALA: "ALA",
 
   /**
    * Albania
    */
-  Albania: "ALB",
+  ALB: "ALB",
 
   /**
    * Andorra
    */
-  Andorra: "AND",
+  AND: "AND",
 
   /**
    * United Arab Emirates
    */
-  UnitedArabEmirates: "ARE",
+  ARE: "ARE",
 
   /**
    * Argentina
    */
-  Argentina: "ARG",
+  ARG: "ARG",
 
   /**
    * Armenia
    */
-  Armenia: "ARM",
+  ARM: "ARM",
 
   /**
    * American Samoa
    */
-  AmericanSamoa: "ASM",
+  ASM: "ASM",
 
   /**
    * Antarctica
    */
-  Antarctica: "ATA",
+  ATA: "ATA",
 
   /**
    * French Southern Territories
    */
-  FrenchSouthernTerritories: "ATF",
+  ATF: "ATF",
 
   /**
    * Antigua and Barbuda
    */
-  AntiguaandBarbuda: "ATG",
+  ATG: "ATG",
 
   /**
    * Australia
    */
-  Australia: "AUS",
+  AUS: "AUS",
 
   /**
    * Austria
    */
-  Austria: "AUT",
+  AUT: "AUT",
 
   /**
    * Azerbaijan
    */
-  Azerbaijan: "AZE",
+  AZE: "AZE",
 
   /**
    * Burundi
    */
-  Burundi: "BDI",
+  BDI: "BDI",
 
   /**
    * Belgium
    */
-  Belgium: "BEL",
+  BEL: "BEL",
 
   /**
    * Benin
    */
-  Benin: "BEN",
+  BEN: "BEN",
 
   /**
    * Bonaire, Sint Eustatius and Saba
    */
-  BonaireSintEustatiusandSaba: "BES",
+  BES: "BES",
 
   /**
    * Burkina Faso
    */
-  BurkinaFaso: "BFA",
+  BFA: "BFA",
 
   /**
    * Bangladesh
    */
-  Bangladesh: "BGD",
+  BGD: "BGD",
 
   /**
    * Bulgaria
    */
-  Bulgaria: "BGR",
+  BGR: "BGR",
 
   /**
    * Bahrain
    */
-  Bahrain: "BHR",
+  BHR: "BHR",
 
   /**
    * Bahamas
    */
-  Bahamas: "BHS",
+  BHS: "BHS",
 
   /**
    * Bosnia and Herzegovina
    */
-  BosniaandHerzegovina: "BIH",
+  BIH: "BIH",
 
   /**
    * Saint Barthilemy
    */
-  SaintBarthilemy: "BLM",
+  BLM: "BLM",
 
   /**
    * Belarus
    */
-  Belarus: "BLR",
+  BLR: "BLR",
 
   /**
    * Belize
    */
-  Belize: "BLZ",
+  BLZ: "BLZ",
 
   /**
    * Bermuda
    */
-  Bermuda: "BMU",
+  BMU: "BMU",
 
   /**
    * Bolivia, Plurinational State of
    */
-  BoliviaPlurinationalStateof: "BOL",
+  BOL: "BOL",
 
   /**
    * Brazil
    */
-  Brazil: "BRA",
+  BRA: "BRA",
 
   /**
    * Barbados
    */
-  Barbados: "BRB",
-
-  /**
-   * Brunei Darussalam
-   */
-  BruneiDarussalam: "BRN",
+  BRB: "BRB",
 
   /**
    * Bhutan
    */
-  Bhutan: "BTN",
+  BTN: "BTN",
 
   /**
    * Bouvet Island
    */
-  BouvetIsland: "BVT",
+  BVT: "BVT",
 
   /**
    * Botswana
    */
-  Botswana: "BWA",
+  BWA: "BWA",
 
   /**
    * Central African Republic
    */
-  CentralAfricanRepublic: "CAF",
-
-  /**
-   * Canada
-   */
-  Canada: "CAN",
+  CAF: "CAF",
 
   /**
    * Cocos (Keeling) Islands
    */
-  CocosKeelingIslands: "CCK",
+  CCK: "CCK",
 
   /**
    * Switzerland
    */
-  Switzerland: "CHE",
+  CHE: "CHE",
 
   /**
    * Chile
    */
-  Chile: "CHL",
+  CHL: "CHL",
 
   /**
    * China
    */
-  China: "CHN",
+  CHN: "CHN",
 
   /**
    * Ctte d'Ivoire
    */
-  CttedIvoire: "CIV",
+  CIV: "CIV",
 
   /**
    * Cameroon
    */
-  Cameroon: "CMR",
+  CMR: "CMR",
 
   /**
    * Congo, the Democratic Republic of the
    */
-  CongotheDemocraticRepublicofthe: "COD",
+  COD: "COD",
 
   /**
    * Congo
    */
-  Congo: "COG",
+  COG: "COG",
 
   /**
    * Cook Islands
    */
-  CookIslands: "COK",
-
-  /**
-   * Colombia
-   */
-  Colombia: "COL",
+  COK: "COK",
 
   /**
    * Comoros
    */
-  Comoros: "COM",
+  COM: "COM",
 
   /**
    * Cabo Verde
    */
-  CaboVerde: "CPV",
+  CPV: "CPV",
 
   /**
    * Costa Rica
    */
-  CostaRica: "CRI",
+  CRI: "CRI",
 
   /**
    * Cuba
    */
-  Cuba: "CUB",
+  CUB: "CUB",
 
   /**
    * Curagao
    */
-  Curagao: "CUW",
+  CUW: "CUW",
 
   /**
    * Christmas Island
    */
-  ChristmasIsland: "CXR",
+  CXR: "CXR",
 
   /**
    * Cayman Islands
    */
-  CaymanIslands: "CYM",
+  CYM: "CYM",
 
   /**
    * Cyprus
    */
-  Cyprus: "CYP",
+  CYP: "CYP",
 
   /**
    * Czechia
    */
-  Czechia: "CZE",
+  CZE: "CZE",
 
   /**
    * Germany
    */
-  Germany: "DEU",
+  DEU: "DEU",
 
   /**
    * Djibouti
    */
-  Djibouti: "DJI",
+  DJI: "DJI",
 
   /**
    * Dominica
    */
-  Dominica: "DMA",
+  DMA: "DMA",
 
   /**
    * Denmark
    */
-  Denmark: "DNK",
+  DNK: "DNK",
 
   /**
    * Dominican Republic
    */
-  DominicanRepublic: "DOM",
+  DOM: "DOM",
 
   /**
    * Algeria
    */
-  Algeria: "DZA",
+  DZA: "DZA",
 
   /**
    * Ecuador
    */
-  Ecuador: "ECU",
+  ECU: "ECU",
 
   /**
    * Egypt
    */
-  Egypt: "EGY",
+  EGY: "EGY",
 
   /**
    * Eritrea
    */
-  Eritrea: "ERI",
+  ERI: "ERI",
 
   /**
    * Western Sahara
    */
-  WesternSahara: "ESH",
+  ESH: "ESH",
 
   /**
    * Spain
    */
-  Spain: "ESP",
+  ESP: "ESP",
 
   /**
    * Estonia
    */
-  Estonia: "EST",
+  EST: "EST",
 
   /**
    * Ethiopia
    */
-  Ethiopia: "ETH",
+  ETH: "ETH",
 
   /**
    * Finland
    */
-  Finland: "FIN",
+  FIN: "FIN",
 
   /**
    * Fiji
    */
-  Fiji: "FJI",
+  FJI: "FJI",
 
   /**
    * Falkland Islands (Malvinas)
    */
-  FalklandIslandsMalvinas: "FLK",
+  FLK: "FLK",
 
   /**
    * France
    */
-  France: "FRA",
+  FRA: "FRA",
 
   /**
    * Faroe Islands
    */
-  FaroeIslands: "FRO",
+  FRO: "FRO",
 
   /**
    * Micronesia, Federated States of
    */
-  MicronesiaFederatedStatesof: "FSM",
+  FSM: "FSM",
 
   /**
    * Gabon
    */
-  Gabon: "GAB",
+  GAB: "GAB",
 
   /**
    * United Kingdom
    */
-  UnitedKingdom: "GBR",
+  GBR: "GBR",
 
   /**
    * Georgia
    */
-  Georgia: "GEO",
+  GEO: "GEO",
 
   /**
    * Guernsey
    */
-  Guernsey: "GGY",
+  GGY: "GGY",
 
   /**
    * Ghana
    */
-  Ghana: "GHA",
+  GHA: "GHA",
 
   /**
    * Gibraltar
    */
-  Gibraltar: "GIB",
+  GIB: "GIB",
 
   /**
    * Guinea
    */
-  Guinea: "GIN",
+  GIN: "GIN",
 
   /**
    * Guadeloupe
    */
-  Guadeloupe: "GLP",
+  GLP: "GLP",
 
   /**
    * Gambia
    */
-  Gambia: "GMB",
+  GMB: "GMB",
 
   /**
    * Guinea-Bissau
    */
-  GuineaBissau: "GNB",
+  GNB: "GNB",
 
   /**
    * Equatorial Guinea
    */
-  EquatorialGuinea: "GNQ",
+  GNQ: "GNQ",
 
   /**
    * Greece
    */
-  Greece: "GRC",
+  GRC: "GRC",
 
   /**
    * Grenada
    */
-  Grenada: "GRD",
+  GRD: "GRD",
 
   /**
    * Greenland
    */
-  Greenland: "GRL",
+  GRL: "GRL",
 
   /**
    * Guatemala
    */
-  Guatemala: "GTM",
+  GTM: "GTM",
 
   /**
    * French Guiana
    */
-  FrenchGuiana: "GUF",
+  GUF: "GUF",
 
   /**
    * Guam
    */
-  Guam: "GUM",
+  GUM: "GUM",
 
   /**
    * Guyana
    */
-  Guyana: "GUY",
+  GUY: "GUY",
 
   /**
    * Hong Kong
    */
-  HongKong: "HKG",
+  HKG: "HKG",
 
   /**
    * Heard Island and McDonald Islands
    */
-  HeardIslandandMcDonaldIslands: "HMD",
+  HMD: "HMD",
 
   /**
    * Honduras
    */
-  Honduras: "HND",
+  HND: "HND",
 
   /**
    * Croatia
    */
-  Croatia: "HRV",
+  HRV: "HRV",
 
   /**
    * Haiti
    */
-  Haiti: "HTI",
+  HTI: "HTI",
 
   /**
    * Hungary
    */
-  Hungary: "HUN",
+  HUN: "HUN",
 
   /**
    * Indonesia
    */
-  Indonesia: "IDN",
+  IDN: "IDN",
 
   /**
    * Isle of Man
    */
-  IsleofMan: "IMN",
+  IMN: "IMN",
 
   /**
    * India
    */
-  India: "IND",
+  IND: "IND",
 
   /**
    * British Indian Ocean Territory
    */
-  BritishIndianOceanTerritory: "IOT",
+  IOT: "IOT",
 
   /**
    * Ireland
    */
-  Ireland: "IRL",
+  IRL: "IRL",
 
   /**
    * Iran, Islamic Republic of
    */
-  IranIslamicRepublicof: "IRN",
+  IRN: "IRN",
 
   /**
    * Iraq
    */
-  Iraq: "IRQ",
+  IRQ: "IRQ",
 
   /**
    * Iceland
    */
-  Iceland: "ISL",
+  ISL: "ISL",
 
   /**
    * Israel
    */
-  Israel: "ISR",
+  ISR: "ISR",
 
   /**
    * Italy
    */
-  Italy: "ITA",
+  ITA: "ITA",
 
   /**
    * Jamaica
    */
-  Jamaica: "JAM",
+  JAM: "JAM",
 
   /**
    * Jersey
    */
-  Jersey: "JEY",
+  JEY: "JEY",
 
   /**
    * Jordan
    */
-  Jordan: "JOR",
+  JOR: "JOR",
 
   /**
    * Japan
    */
-  Japan: "JPN",
+  JPN: "JPN",
 
   /**
    * Kazakhstan
    */
-  Kazakhstan: "KAZ",
+  KAZ: "KAZ",
 
   /**
    * Kenya
    */
-  Kenya: "KEN",
+  KEN: "KEN",
 
   /**
    * Kyrgyzstan
    */
-  Kyrgyzstan: "KGZ",
+  KGZ: "KGZ",
 
   /**
    * Cambodia
    */
-  Cambodia: "KHM",
+  KHM: "KHM",
 
   /**
    * Kiribati
    */
-  Kiribati: "KIR",
+  KIR: "KIR",
 
   /**
    * Saint Kitts and Nevis
    */
-  SaintKittsandNevis: "KNA",
+  KNA: "KNA",
 
   /**
    * Korea, Republic of
    */
-  KoreaRepublicof: "KOR",
+  KOR: "KOR",
 
   /**
    * Kuwait
    */
-  Kuwait: "KWT",
+  KWT: "KWT",
 
   /**
    * Lao People's Democratic Republic
    */
-  LaoPeoplesDemocraticRepublic: "LAO",
+  LAO: "LAO",
 
   /**
    * Lebanon
    */
-  Lebanon: "LBN",
+  LBN: "LBN",
 
   /**
    * Liberia
    */
-  Liberia: "LBR",
+  LBR: "LBR",
 
   /**
    * Libya
    */
-  Libya: "LBY",
+  LBY: "LBY",
 
   /**
    * Saint Lucia
    */
-  SaintLucia: "LCA",
+  LCA: "LCA",
 
   /**
    * Liechtenstein
    */
-  Liechtenstein: "LIE",
+  LIE: "LIE",
 
   /**
    * Sri Lanka
    */
-  SriLanka: "LKA",
+  LKA: "LKA",
 
   /**
    * Lesotho
    */
-  Lesotho: "LSO",
+  LSO: "LSO",
 
   /**
    * Lithuania
    */
-  Lithuania: "LTU",
+  LTU: "LTU",
 
   /**
    * Luxembourg
    */
-  Luxembourg: "LUX",
+  LUX: "LUX",
 
   /**
    * Latvia
    */
-  Latvia: "LVA",
-
-  /**
-   * Macao
-   */
-  Macao: "MAC",
+  LVA: "LVA",
 
   /**
    * Saint Martin (French part)
    */
-  SaintMartinFrenchpart: "MAF",
-
-  /**
-   * Morocco
-   */
-  Morocco: "MAR",
+  MAF: "MAF",
 
   /**
    * Monaco
    */
-  Monaco: "MCO",
+  MCO: "MCO",
 
   /**
    * Moldova, Republic of
    */
-  MoldovaRepublicof: "MDA",
+  MDA: "MDA",
 
   /**
    * Madagascar
    */
-  Madagascar: "MDG",
+  MDG: "MDG",
 
   /**
    * Maldives
    */
-  Maldives: "MDV",
+  MDV: "MDV",
 
   /**
    * Mexico
    */
-  Mexico: "MEX",
+  MEX: "MEX",
 
   /**
    * Marshall Islands
    */
-  MarshallIslands: "MHL",
+  MHL: "MHL",
 
   /**
    * Macedonia, the former Yugoslav Republic of
    */
-  MacedoniatheformerYugoslavRepublicof: "MKD",
+  MKD: "MKD",
 
   /**
    * Mali
    */
-  Mali: "MLI",
+  MLI: "MLI",
 
   /**
    * Malta
    */
-  Malta: "MLT",
+  MLT: "MLT",
 
   /**
    * Myanmar
    */
-  Myanmar: "MMR",
+  MMR: "MMR",
 
   /**
    * Montenegro
    */
-  Montenegro: "MNE",
+  MNE: "MNE",
 
   /**
    * Mongolia
    */
-  Mongolia: "MNG",
+  MNG: "MNG",
 
   /**
    * Northern Mariana Islands
    */
-  NorthernMarianaIslands: "MNP",
+  MNP: "MNP",
 
   /**
    * Mozambique
    */
-  Mozambique: "MOZ",
+  MOZ: "MOZ",
 
   /**
    * Mauritania
    */
-  Mauritania: "MRT",
+  MRT: "MRT",
 
   /**
    * Montserrat
    */
-  Montserrat: "MSR",
+  MSR: "MSR",
 
   /**
    * Martinique
    */
-  Martinique: "MTQ",
+  MTQ: "MTQ",
 
   /**
    * Mauritius
    */
-  Mauritius: "MUS",
+  MUS: "MUS",
 
   /**
    * Malawi
    */
-  Malawi: "MWI",
+  MWI: "MWI",
 
   /**
    * Malaysia
    */
-  Malaysia: "MYS",
+  MYS: "MYS",
 
   /**
    * Mayotte
    */
-  Mayotte: "MYT",
+  MYT: "MYT",
 
   /**
    * Namibia
    */
-  Namibia: "NAM",
+  NAM: "NAM",
 
   /**
    * New Caledonia
    */
-  NewCaledonia: "NCL",
+  NCL: "NCL",
 
   /**
    * Niger
    */
-  Niger: "NER",
+  NER: "NER",
 
   /**
    * Norfolk Island
    */
-  NorfolkIsland: "NFK",
+  NFK: "NFK",
 
   /**
    * Nigeria
    */
-  Nigeria: "NGA",
+  NGA: "NGA",
 
   /**
    * Nicaragua
    */
-  Nicaragua: "NIC",
+  NIC: "NIC",
 
   /**
    * Niue
    */
-  Niue: "NIU",
+  NIU: "NIU",
 
   /**
    * Netherlands
    */
-  Netherlands: "NLD",
+  NLD: "NLD",
 
   /**
    * Norway
    */
-  Norway: "NOR",
+  NOR: "NOR",
 
   /**
    * Nepal
    */
-  Nepal: "NPL",
+  NPL: "NPL",
 
   /**
    * Nauru
    */
-  Nauru: "NRU",
+  NRU: "NRU",
 
   /**
    * New Zealand
    */
-  NewZealand: "NZL",
+  NZL: "NZL",
 
   /**
    * Oman
    */
-  Oman: "OMN",
+  OMN: "OMN",
 
   /**
    * Pakistan
    */
-  Pakistan: "PAK",
+  PAK: "PAK",
 
   /**
    * Panama
    */
-  Panama: "PAN",
+  PAN: "PAN",
 
   /**
    * Pitcairn
    */
-  Pitcairn: "PCN",
+  PCN: "PCN",
 
   /**
    * Peru
    */
-  Peru: "PER",
+  PER: "PER",
 
   /**
    * Philippines
    */
-  Philippines: "PHL",
+  PHL: "PHL",
 
   /**
    * Palau
    */
-  Palau: "PLW",
+  PLW: "PLW",
 
   /**
    * Papua New Guinea
    */
-  PapuaNewGuinea: "PNG",
+  PNG: "PNG",
 
   /**
    * Poland
    */
-  Poland: "POL",
+  POL: "POL",
 
   /**
    * Puerto Rico
    */
-  PuertoRico: "PRI",
+  PRI: "PRI",
 
   /**
    * Korea, Democratic People's Republic of
    */
-  KoreaDemocraticPeoplesRepublicof: "PRK",
-
-  /**
-   * Portugal
-   */
-  Portugal: "PRT",
+  PRK: "PRK",
 
   /**
    * Paraguay
    */
-  Paraguay: "PRY",
+  PRY: "PRY",
 
   /**
    * Palestine, State of
    */
-  PalestineStateof: "PSE",
+  PSE: "PSE",
 
   /**
    * French Polynesia
    */
-  FrenchPolynesia: "PYF",
+  PYF: "PYF",
 
   /**
    * Qatar
    */
-  Qatar: "QAT",
+  QAT: "QAT",
 
   /**
    * Riunion
    */
-  Riunion: "REU",
+  REU: "REU",
 
   /**
    * Romania
    */
-  Romania: "ROU",
+  ROU: "ROU",
 
   /**
    * Russian Federation
    */
-  RussianFederation: "RUS",
+  RUS: "RUS",
 
   /**
    * Rwanda
    */
-  Rwanda: "RWA",
+  RWA: "RWA",
 
   /**
    * Saudi Arabia
    */
-  SaudiArabia: "SAU",
+  SAU: "SAU",
 
   /**
    * Sudan
    */
-  Sudan: "SDN",
+  SDN: "SDN",
 
   /**
    * Senegal
    */
-  Senegal: "SEN",
+  SEN: "SEN",
 
   /**
    * Singapore
    */
-  Singapore: "SGP",
+  SGP: "SGP",
 
   /**
    * South Georgia and the South Sandwich Islands
    */
-  SouthGeorgiaandtheSouthSandwichIslands: "SGS",
+  SGS: "SGS",
 
   /**
    * Saint Helena, Ascension and Tristan da Cunha
    */
-  SaintHelenaAscensionandTristandaCunha: "SHN",
+  SHN: "SHN",
 
   /**
    * Svalbard and Jan Mayen
    */
-  SvalbardandJanMayen: "SJM",
+  SJM: "SJM",
 
   /**
    * Solomon Islands
    */
-  SolomonIslands: "SLB",
+  SLB: "SLB",
 
   /**
    * Sierra Leone
    */
-  SierraLeone: "SLE",
+  SLE: "SLE",
 
   /**
    * El Salvador
    */
-  ElSalvador: "SLV",
+  SLV: "SLV",
 
   /**
    * San Marino
    */
-  SanMarino: "SMR",
+  SMR: "SMR",
 
   /**
    * Somalia
    */
-  Somalia: "SOM",
+  SOM: "SOM",
 
   /**
    * Saint Pierre and Miquelon
    */
-  SaintPierreandMiquelon: "SPM",
+  SPM: "SPM",
 
   /**
    * Serbia
    */
-  Serbia: "SRB",
+  SRB: "SRB",
 
   /**
    * South Sudan
    */
-  SouthSudan: "SSD",
+  SSD: "SSD",
 
   /**
    * Sao Tome and Principe
    */
-  SaoTomeandPrincipe: "STP",
+  STP: "STP",
 
   /**
    * Suriname
    */
-  Suriname: "SUR",
+  SUR: "SUR",
 
   /**
    * Slovakia
    */
-  Slovakia: "SVK",
+  SVK: "SVK",
 
   /**
    * Slovenia
    */
-  Slovenia: "SVN",
+  SVN: "SVN",
 
   /**
    * Sweden
    */
-  Sweden: "SWE",
+  SWE: "SWE",
 
   /**
    * Swaziland
    */
-  Swaziland: "SWZ",
+  SWZ: "SWZ",
 
   /**
    * Sint Maarten (Dutch part)
    */
-  SintMaartenDutchpart: "SXM",
+  SXM: "SXM",
 
   /**
    * Seychelles
    */
-  Seychelles: "SYC",
-
-  /**
-   * Syrian Arab Republic
-   */
-  SyrianArabRepublic: "SYR",
+  SYC: "SYC",
 
   /**
    * Turks and Caicos Islands
    */
-  TurksandCaicosIslands: "TCA",
+  TCA: "TCA",
 
   /**
    * Chad
    */
-  Chad: "TCD",
+  TCD: "TCD",
 
   /**
    * Togo
    */
-  Togo: "TGO",
+  TGO: "TGO",
 
   /**
    * Thailand
    */
-  Thailand: "THA",
+  THA: "THA",
 
   /**
    * Tajikistan
    */
-  Tajikistan: "TJK",
+  TJK: "TJK",
 
   /**
    * Tokelau
    */
-  Tokelau: "TKL",
+  TKL: "TKL",
 
   /**
    * Turkmenistan
    */
-  Turkmenistan: "TKM",
+  TKM: "TKM",
 
   /**
    * Timor-Leste
    */
-  TimorLeste: "TLS",
+  TLS: "TLS",
 
   /**
    * Tonga
    */
-  Tonga: "TON",
+  TON: "TON",
 
   /**
    * Trinidad and Tobago
    */
-  TrinidadandTobago: "TTO",
+  TTO: "TTO",
 
   /**
    * Tunisia
    */
-  Tunisia: "TUN",
+  TUN: "TUN",
 
   /**
    * Turkey
    */
-  Turkey: "TUR",
+  TUR: "TUR",
 
   /**
    * Tuvalu
    */
-  Tuvalu: "TUV",
+  TUV: "TUV",
 
   /**
    * Taiwan, Province of China
    */
-  TaiwanProvinceofChina: "TWN",
+  TWN: "TWN",
 
   /**
    * Tanzania, United Republic of
    */
-  TanzaniaUnitedRepublicof: "TZA",
+  TZA: "TZA",
 
   /**
    * Uganda
    */
-  Uganda: "UGA",
+  UGA: "UGA",
 
   /**
    * Ukraine
    */
-  Ukraine: "UKR",
+  UKR: "UKR",
 
   /**
    * United States Minor Outlying Islands
    */
-  UnitedStatesMinorOutlyingIslands: "UMI",
+  UMI: "UMI",
 
   /**
    * Uruguay
    */
-  Uruguay: "URY",
+  URY: "URY",
 
   /**
    * United States of America
    */
-  UnitedStatesofAmerica: "USA",
+  USA: "USA",
 
   /**
    * Uzbekistan
    */
-  Uzbekistan: "UZB",
+  UZB: "UZB",
 
   /**
    * Holy See
    */
-  HolySee: "VAT",
+  VAT: "VAT",
 
   /**
    * Saint Vincent and the Grenadines
    */
-  SaintVincentandtheGrenadines: "VCT",
+  VCT: "VCT",
 
   /**
    * Venezuela, Bolivarian Republic of
    */
-  VenezuelaBolivarianRepublicof: "VEN",
+  VEN: "VEN",
 
   /**
    * Virgin Islands, British
    */
-  VirginIslandsBritish: "VGB",
+  VGB: "VGB",
 
   /**
    * Virgin Islands, U.S.
    */
-  VirginIslandsUS: "VIR",
+  VIR: "VIR",
 
   /**
    * Viet Nam
    */
-  VietNam: "VNM",
+  VNM: "VNM",
 
   /**
    * Vanuatu
    */
-  Vanuatu: "VUT",
+  VUT: "VUT",
 
   /**
    * Wallis and Futuna
    */
-  WallisandFutuna: "WLF",
+  WLF: "WLF",
 
   /**
    * Samoa
    */
-  Samoa: "WSM",
+  WSM: "WSM",
 
   /**
    * Yemen
    */
-  Yemen: "YEM",
+  YEM: "YEM",
 
   /**
    * South Africa
    */
-  SouthAfrica: "ZAF",
+  ZAF: "ZAF",
 
   /**
    * Zambia
    */
-  Zambia: "ZMB",
+  ZMB: "ZMB",
 
   /**
    * Zimbabwe
    */
-  Zimbabwe: "ZWE",
+  ZWE: "ZWE",
 
   /**
    * Afghanistan
    */
-  Afghanistan: "004",
+  "004": "004",
 
   /**
    * Albania
    */
-  Albania: "008",
+  "008": "008",
 
   /**
    * Antarctica
    */
-  Antarctica: "010",
+  "010": "010",
 
   /**
    * Algeria
    */
-  Algeria: "012",
+  "012": "012",
 
   /**
    * American Samoa
    */
-  AmericanSamoa: "016",
+  "016": "016",
 
   /**
    * Andorra
    */
-  Andorra: "020",
+  "020": "020",
 
   /**
    * Angola
    */
-  Angola: "024",
+  "024": "024",
 
   /**
    * Antigua and Barbuda
    */
-  AntiguaandBarbuda: "028",
+  "028": "028",
 
   /**
    * Azerbaijan
    */
-  Azerbaijan: "031",
+  "031": "031",
 
   /**
    * Argentina
    */
-  Argentina: "032",
+  "032": "032",
 
   /**
    * Australia
    */
-  Australia: "036",
+  "036": "036",
 
   /**
    * Austria
    */
-  Austria: "040",
+  "040": "040",
 
   /**
    * Bahamas
    */
-  Bahamas: "044",
+  "044": "044",
 
   /**
    * Bahrain
    */
-  Bahrain: "048",
+  "048": "048",
 
   /**
    * Bangladesh
    */
-  Bangladesh: "050",
+  "050": "050",
 
   /**
    * Armenia
    */
-  Armenia: "051",
+  "051": "051",
 
   /**
    * Barbados
    */
-  Barbados: "052",
+  "052": "052",
 
   /**
    * Belgium
    */
-  Belgium: "056",
+  "056": "056",
 
   /**
    * Bermuda
    */
-  Bermuda: "060",
+  "060": "060",
 
   /**
    * Bhutan
    */
-  Bhutan: "064",
+  "064": "064",
 
   /**
    * Bolivia, Plurinational State of
    */
-  BoliviaPlurinationalStateof: "068",
+  "068": "068",
 
   /**
    * Bosnia and Herzegovina
    */
-  BosniaandHerzegovina: "070",
+  "070": "070",
 
   /**
    * Botswana
    */
-  Botswana: "072",
+  "072": "072",
 
   /**
    * Bouvet Island
    */
-  BouvetIsland: "074",
+  "074": "074",
 
   /**
    * Brazil
    */
-  Brazil: "076",
+  "076": "076",
 
   /**
    * Belize
    */
-  Belize: "084",
+  "084": "084",
 
   /**
    * British Indian Ocean Territory
    */
-  BritishIndianOceanTerritory: "086",
+  "086": "086",
 
   /**
    * Solomon Islands
    */
-  SolomonIslands: "090",
+  "090": "090",
 
   /**
    * Virgin Islands, British
    */
-  VirginIslandsBritish: "092",
+  "092": "092",
 
   /**
    * Brunei Darussalam
    */
-  BruneiDarussalam: "096",
+  "096": "096",
 
   /**
    * Bulgaria
    */
-  Bulgaria: "100",
+  "100": "100",
 
   /**
    * Myanmar
    */
-  Myanmar: "104",
+  "104": "104",
 
   /**
    * Burundi
    */
-  Burundi: "108",
+  "108": "108",
 
   /**
    * Belarus
    */
-  Belarus: "112",
+  "112": "112",
 
   /**
    * Cambodia
    */
-  Cambodia: "116",
+  "116": "116",
 
   /**
    * Cameroon
    */
-  Cameroon: "120",
+  "120": "120",
 
   /**
    * Canada
    */
-  Canada: "124",
+  "124": "124",
 
   /**
    * Cabo Verde
    */
-  CaboVerde: "132",
+  "132": "132",
 
   /**
    * Cayman Islands
    */
-  CaymanIslands: "136",
+  "136": "136",
 
   /**
    * Central African Republic
    */
-  CentralAfricanRepublic: "140",
+  "140": "140",
 
   /**
    * Sri Lanka
    */
-  SriLanka: "144",
+  "144": "144",
 
   /**
    * Chad
    */
-  Chad: "148",
+  "148": "148",
 
   /**
    * Chile
    */
-  Chile: "152",
+  "152": "152",
 
   /**
    * China
    */
-  China: "156",
+  "156": "156",
 
   /**
    * Taiwan, Province of China
    */
-  TaiwanProvinceofChina: "158",
+  "158": "158",
 
   /**
    * Christmas Island
    */
-  ChristmasIsland: "162",
+  "162": "162",
 
   /**
    * Cocos (Keeling) Islands
    */
-  CocosKeelingIslands: "166",
+  "166": "166",
 
   /**
    * Colombia
    */
-  Colombia: "170",
+  "170": "170",
 
   /**
    * Comoros
    */
-  Comoros: "174",
+  "174": "174",
 
   /**
    * Mayotte
    */
-  Mayotte: "175",
+  "175": "175",
 
   /**
    * Congo
    */
-  Congo: "178",
+  "178": "178",
 
   /**
    * Congo, the Democratic Republic of the
    */
-  CongotheDemocraticRepublicofthe: "180",
+  "180": "180",
 
   /**
    * Cook Islands
    */
-  CookIslands: "184",
+  "184": "184",
 
   /**
    * Costa Rica
    */
-  CostaRica: "188",
+  "188": "188",
 
   /**
    * Croatia
    */
-  Croatia: "191",
+  "191": "191",
 
   /**
    * Cuba
    */
-  Cuba: "192",
+  "192": "192",
 
   /**
    * Cyprus
    */
-  Cyprus: "196",
+  "196": "196",
 
   /**
    * Czechia
    */
-  Czechia: "203",
+  "203": "203",
 
   /**
    * Benin
    */
-  Benin: "204",
+  "204": "204",
 
   /**
    * Denmark
    */
-  Denmark: "208",
+  "208": "208",
 
   /**
    * Dominica
    */
-  Dominica: "212",
+  "212": "212",
 
   /**
    * Dominican Republic
    */
-  DominicanRepublic: "214",
+  "214": "214",
 
   /**
    * Ecuador
    */
-  Ecuador: "218",
+  "218": "218",
 
   /**
    * El Salvador
    */
-  ElSalvador: "222",
+  "222": "222",
 
   /**
    * Equatorial Guinea
    */
-  EquatorialGuinea: "226",
+  "226": "226",
 
   /**
    * Ethiopia
    */
-  Ethiopia: "231",
+  "231": "231",
 
   /**
    * Eritrea
    */
-  Eritrea: "232",
+  "232": "232",
 
   /**
    * Estonia
    */
-  Estonia: "233",
+  "233": "233",
 
   /**
    * Faroe Islands
    */
-  FaroeIslands: "234",
+  "234": "234",
 
   /**
    * Falkland Islands (Malvinas)
    */
-  FalklandIslandsMalvinas: "238",
+  "238": "238",
 
   /**
    * South Georgia and the South Sandwich Islands
    */
-  SouthGeorgiaandtheSouthSandwichIslands: "239",
+  "239": "239",
 
   /**
    * Fiji
    */
-  Fiji: "242",
+  "242": "242",
 
   /**
    * Finland
    */
-  Finland: "246",
+  "246": "246",
 
   /**
    * Eland Islands
    */
-  ElandIslands: "248",
+  "248": "248",
 
   /**
    * France
    */
-  France: "250",
+  "250": "250",
 
   /**
    * French Guiana
    */
-  FrenchGuiana: "254",
+  "254": "254",
 
   /**
    * French Polynesia
    */
-  FrenchPolynesia: "258",
+  "258": "258",
 
   /**
    * French Southern Territories
    */
-  FrenchSouthernTerritories: "260",
+  "260": "260",
 
   /**
    * Djibouti
    */
-  Djibouti: "262",
+  "262": "262",
 
   /**
    * Gabon
    */
-  Gabon: "266",
+  "266": "266",
 
   /**
    * Georgia
    */
-  Georgia: "268",
+  "268": "268",
 
   /**
    * Gambia
    */
-  Gambia: "270",
+  "270": "270",
 
   /**
    * Palestine, State of
    */
-  PalestineStateof: "275",
+  "275": "275",
 
   /**
    * Germany
    */
-  Germany: "276",
+  "276": "276",
 
   /**
    * Ghana
    */
-  Ghana: "288",
+  "288": "288",
 
   /**
    * Gibraltar
    */
-  Gibraltar: "292",
+  "292": "292",
 
   /**
    * Kiribati
    */
-  Kiribati: "296",
+  "296": "296",
 
   /**
    * Greece
    */
-  Greece: "300",
+  "300": "300",
 
   /**
    * Greenland
    */
-  Greenland: "304",
+  "304": "304",
 
   /**
    * Grenada
    */
-  Grenada: "308",
+  "308": "308",
 
   /**
    * Guadeloupe
    */
-  Guadeloupe: "312",
+  "312": "312",
 
   /**
    * Guam
    */
-  Guam: "316",
+  "316": "316",
 
   /**
    * Guatemala
    */
-  Guatemala: "320",
+  "320": "320",
 
   /**
    * Guinea
    */
-  Guinea: "324",
+  "324": "324",
 
   /**
    * Guyana
    */
-  Guyana: "328",
+  "328": "328",
 
   /**
    * Haiti
    */
-  Haiti: "332",
+  "332": "332",
 
   /**
    * Heard Island and McDonald Islands
    */
-  HeardIslandandMcDonaldIslands: "334",
+  "334": "334",
 
   /**
    * Holy See
    */
-  HolySee: "336",
+  "336": "336",
 
   /**
    * Honduras
    */
-  Honduras: "340",
+  "340": "340",
 
   /**
    * Hong Kong
    */
-  HongKong: "344",
+  "344": "344",
 
   /**
    * Hungary
    */
-  Hungary: "348",
+  "348": "348",
 
   /**
    * Iceland
    */
-  Iceland: "352",
+  "352": "352",
 
   /**
    * India
    */
-  India: "356",
+  "356": "356",
 
   /**
    * Indonesia
    */
-  Indonesia: "360",
+  "360": "360",
 
   /**
    * Iran, Islamic Republic of
    */
-  IranIslamicRepublicof: "364",
+  "364": "364",
 
   /**
    * Iraq
    */
-  Iraq: "368",
+  "368": "368",
 
   /**
    * Ireland
    */
-  Ireland: "372",
+  "372": "372",
 
   /**
    * Israel
    */
-  Israel: "376",
+  "376": "376",
 
   /**
    * Italy
    */
-  Italy: "380",
+  "380": "380",
 
   /**
    * Ctte d'Ivoire
    */
-  CttedIvoire: "384",
+  "384": "384",
 
   /**
    * Jamaica
    */
-  Jamaica: "388",
+  "388": "388",
 
   /**
    * Japan
    */
-  Japan: "392",
+  "392": "392",
 
   /**
    * Kazakhstan
    */
-  Kazakhstan: "398",
+  "398": "398",
 
   /**
    * Jordan
    */
-  Jordan: "400",
+  "400": "400",
 
   /**
    * Kenya
    */
-  Kenya: "404",
+  "404": "404",
 
   /**
    * Korea, Democratic People's Republic of
    */
-  KoreaDemocraticPeoplesRepublicof: "408",
+  "408": "408",
 
   /**
    * Korea, Republic of
    */
-  KoreaRepublicof: "410",
+  "410": "410",
 
   /**
    * Kuwait
    */
-  Kuwait: "414",
+  "414": "414",
 
   /**
    * Kyrgyzstan
    */
-  Kyrgyzstan: "417",
+  "417": "417",
 
   /**
    * Lao People's Democratic Republic
    */
-  LaoPeoplesDemocraticRepublic: "418",
+  "418": "418",
 
   /**
    * Lebanon
    */
-  Lebanon: "422",
+  "422": "422",
 
   /**
    * Lesotho
    */
-  Lesotho: "426",
+  "426": "426",
 
   /**
    * Latvia
    */
-  Latvia: "428",
+  "428": "428",
 
   /**
    * Liberia
    */
-  Liberia: "430",
+  "430": "430",
 
   /**
    * Libya
    */
-  Libya: "434",
+  "434": "434",
 
   /**
    * Liechtenstein
    */
-  Liechtenstein: "438",
+  "438": "438",
 
   /**
    * Lithuania
    */
-  Lithuania: "440",
+  "440": "440",
 
   /**
    * Luxembourg
    */
-  Luxembourg: "442",
+  "442": "442",
 
   /**
    * Macao
    */
-  Macao: "446",
+  "446": "446",
 
   /**
    * Madagascar
    */
-  Madagascar: "450",
+  "450": "450",
 
   /**
    * Malawi
    */
-  Malawi: "454",
+  "454": "454",
 
   /**
    * Malaysia
    */
-  Malaysia: "458",
+  "458": "458",
 
   /**
    * Maldives
    */
-  Maldives: "462",
+  "462": "462",
 
   /**
    * Mali
    */
-  Mali: "466",
+  "466": "466",
 
   /**
    * Malta
    */
-  Malta: "470",
+  "470": "470",
 
   /**
    * Martinique
    */
-  Martinique: "474",
+  "474": "474",
 
   /**
    * Mauritania
    */
-  Mauritania: "478",
+  "478": "478",
 
   /**
    * Mauritius
    */
-  Mauritius: "480",
+  "480": "480",
 
   /**
    * Mexico
    */
-  Mexico: "484",
+  "484": "484",
 
   /**
    * Monaco
    */
-  Monaco: "492",
+  "492": "492",
 
   /**
    * Mongolia
    */
-  Mongolia: "496",
+  "496": "496",
 
   /**
    * Moldova, Republic of
    */
-  MoldovaRepublicof: "498",
+  "498": "498",
 
   /**
    * Montenegro
    */
-  Montenegro: "499",
+  "499": "499",
 
   /**
    * Montserrat
    */
-  Montserrat: "500",
+  "500": "500",
 
   /**
    * Morocco
    */
-  Morocco: "504",
+  "504": "504",
 
   /**
    * Mozambique
    */
-  Mozambique: "508",
+  "508": "508",
 
   /**
    * Oman
    */
-  Oman: "512",
+  "512": "512",
 
   /**
    * Namibia
    */
-  Namibia: "516",
+  "516": "516",
 
   /**
    * Nauru
    */
-  Nauru: "520",
+  "520": "520",
 
   /**
    * Nepal
    */
-  Nepal: "524",
+  "524": "524",
 
   /**
    * Netherlands
    */
-  Netherlands: "528",
+  "528": "528",
 
   /**
    * Curagao
    */
-  Curagao: "531",
+  "531": "531",
 
   /**
    * Aruba
    */
-  Aruba: "533",
+  "533": "533",
 
   /**
    * Sint Maarten (Dutch part)
    */
-  SintMaartenDutchpart: "534",
+  "534": "534",
 
   /**
    * Bonaire, Sint Eustatius and Saba
    */
-  BonaireSintEustatiusandSaba: "535",
+  "535": "535",
 
   /**
    * New Caledonia
    */
-  NewCaledonia: "540",
+  "540": "540",
 
   /**
    * Vanuatu
    */
-  Vanuatu: "548",
+  "548": "548",
 
   /**
    * New Zealand
    */
-  NewZealand: "554",
+  "554": "554",
 
   /**
    * Nicaragua
    */
-  Nicaragua: "558",
+  "558": "558",
 
   /**
    * Niger
    */
-  Niger: "562",
+  "562": "562",
 
   /**
    * Nigeria
    */
-  Nigeria: "566",
+  "566": "566",
 
   /**
    * Niue
    */
-  Niue: "570",
+  "570": "570",
 
   /**
    * Norfolk Island
    */
-  NorfolkIsland: "574",
+  "574": "574",
 
   /**
    * Norway
    */
-  Norway: "578",
+  "578": "578",
 
   /**
    * Northern Mariana Islands
    */
-  NorthernMarianaIslands: "580",
+  "580": "580",
 
   /**
    * United States Minor Outlying Islands
    */
-  UnitedStatesMinorOutlyingIslands: "581",
+  "581": "581",
 
   /**
    * Micronesia, Federated States of
    */
-  MicronesiaFederatedStatesof: "583",
+  "583": "583",
 
   /**
    * Marshall Islands
    */
-  MarshallIslands: "584",
+  "584": "584",
 
   /**
    * Palau
    */
-  Palau: "585",
+  "585": "585",
 
   /**
    * Pakistan
    */
-  Pakistan: "586",
+  "586": "586",
 
   /**
    * Panama
    */
-  Panama: "591",
+  "591": "591",
 
   /**
    * Papua New Guinea
    */
-  PapuaNewGuinea: "598",
+  "598": "598",
 
   /**
    * Paraguay
    */
-  Paraguay: "600",
+  "600": "600",
 
   /**
    * Peru
    */
-  Peru: "604",
+  "604": "604",
 
   /**
    * Philippines
    */
-  Philippines: "608",
+  "608": "608",
 
   /**
    * Pitcairn
    */
-  Pitcairn: "612",
+  "612": "612",
 
   /**
    * Poland
    */
-  Poland: "616",
+  "616": "616",
 
   /**
    * Portugal
    */
-  Portugal: "620",
+  "620": "620",
 
   /**
    * Guinea-Bissau
    */
-  GuineaBissau: "624",
+  "624": "624",
 
   /**
    * Timor-Leste
    */
-  TimorLeste: "626",
+  "626": "626",
 
   /**
    * Puerto Rico
    */
-  PuertoRico: "630",
+  "630": "630",
 
   /**
    * Qatar
    */
-  Qatar: "634",
+  "634": "634",
 
   /**
    * Riunion
    */
-  Riunion: "638",
+  "638": "638",
 
   /**
    * Romania
    */
-  Romania: "642",
+  "642": "642",
 
   /**
    * Russian Federation
    */
-  RussianFederation: "643",
+  "643": "643",
 
   /**
    * Rwanda
    */
-  Rwanda: "646",
+  "646": "646",
 
   /**
    * Saint Barthilemy
    */
-  SaintBarthilemy: "652",
+  "652": "652",
 
   /**
    * Saint Helena, Ascension and Tristan da Cunha
    */
-  SaintHelenaAscensionandTristandaCunha: "654",
+  "654": "654",
 
   /**
    * Saint Kitts and Nevis
    */
-  SaintKittsandNevis: "659",
+  "659": "659",
 
   /**
    * Anguilla
    */
-  Anguilla: "660",
+  "660": "660",
 
   /**
    * Saint Lucia
    */
-  SaintLucia: "662",
+  "662": "662",
 
   /**
    * Saint Martin (French part)
    */
-  SaintMartinFrenchpart: "663",
+  "663": "663",
 
   /**
    * Saint Pierre and Miquelon
    */
-  SaintPierreandMiquelon: "666",
+  "666": "666",
 
   /**
    * Saint Vincent and the Grenadines
    */
-  SaintVincentandtheGrenadines: "670",
+  "670": "670",
 
   /**
    * San Marino
    */
-  SanMarino: "674",
+  "674": "674",
 
   /**
    * Sao Tome and Principe
    */
-  SaoTomeandPrincipe: "678",
+  "678": "678",
 
   /**
    * Saudi Arabia
    */
-  SaudiArabia: "682",
+  "682": "682",
 
   /**
    * Senegal
    */
-  Senegal: "686",
+  "686": "686",
 
   /**
    * Serbia
    */
-  Serbia: "688",
+  "688": "688",
 
   /**
    * Seychelles
    */
-  Seychelles: "690",
+  "690": "690",
 
   /**
    * Sierra Leone
    */
-  SierraLeone: "694",
+  "694": "694",
 
   /**
    * Singapore
    */
-  Singapore: "702",
+  "702": "702",
 
   /**
    * Slovakia
    */
-  Slovakia: "703",
+  "703": "703",
 
   /**
    * Viet Nam
    */
-  VietNam: "704",
+  "704": "704",
 
   /**
    * Slovenia
    */
-  Slovenia: "705",
+  "705": "705",
 
   /**
    * Somalia
    */
-  Somalia: "706",
+  "706": "706",
 
   /**
    * South Africa
    */
-  SouthAfrica: "710",
+  "710": "710",
 
   /**
    * Zimbabwe
    */
-  Zimbabwe: "716",
+  "716": "716",
 
   /**
    * Spain
    */
-  Spain: "724",
+  "724": "724",
 
   /**
    * South Sudan
    */
-  SouthSudan: "728",
+  "728": "728",
 
   /**
    * Sudan
    */
-  Sudan: "729",
+  "729": "729",
 
   /**
    * Western Sahara
    */
-  WesternSahara: "732",
+  "732": "732",
 
   /**
    * Suriname
    */
-  Suriname: "740",
+  "740": "740",
 
   /**
    * Svalbard and Jan Mayen
    */
-  SvalbardandJanMayen: "744",
+  "744": "744",
 
   /**
    * Swaziland
    */
-  Swaziland: "748",
+  "748": "748",
 
   /**
    * Sweden
    */
-  Sweden: "752",
+  "752": "752",
 
   /**
    * Switzerland
    */
-  Switzerland: "756",
+  "756": "756",
 
   /**
    * Syrian Arab Republic
    */
-  SyrianArabRepublic: "760",
+  "760": "760",
 
   /**
    * Tajikistan
    */
-  Tajikistan: "762",
+  "762": "762",
 
   /**
    * Thailand
    */
-  Thailand: "764",
+  "764": "764",
 
   /**
    * Togo
    */
-  Togo: "768",
+  "768": "768",
 
   /**
    * Tokelau
    */
-  Tokelau: "772",
+  "772": "772",
 
   /**
    * Tonga
    */
-  Tonga: "776",
+  "776": "776",
 
   /**
    * Trinidad and Tobago
    */
-  TrinidadandTobago: "780",
+  "780": "780",
 
   /**
    * United Arab Emirates
    */
-  UnitedArabEmirates: "784",
+  "784": "784",
 
   /**
    * Tunisia
    */
-  Tunisia: "788",
+  "788": "788",
 
   /**
    * Turkey
    */
-  Turkey: "792",
+  "792": "792",
 
   /**
    * Turkmenistan
    */
-  Turkmenistan: "795",
+  "795": "795",
 
   /**
    * Turks and Caicos Islands
    */
-  TurksandCaicosIslands: "796",
+  "796": "796",
 
   /**
    * Tuvalu
    */
-  Tuvalu: "798",
+  "798": "798",
 
   /**
    * Uganda
    */
-  Uganda: "800",
+  "800": "800",
 
   /**
    * Ukraine
    */
-  Ukraine: "804",
+  "804": "804",
 
   /**
    * Macedonia, the former Yugoslav Republic of
    */
-  MacedoniatheformerYugoslavRepublicof: "807",
+  "807": "807",
 
   /**
    * Egypt
    */
-  Egypt: "818",
+  "818": "818",
 
   /**
    * United Kingdom
    */
-  UnitedKingdom: "826",
+  "826": "826",
 
   /**
    * Guernsey
    */
-  Guernsey: "831",
+  "831": "831",
 
   /**
    * Jersey
    */
-  Jersey: "832",
+  "832": "832",
 
   /**
    * Isle of Man
    */
-  IsleofMan: "833",
+  "833": "833",
 
   /**
    * Tanzania, United Republic of
    */
-  TanzaniaUnitedRepublicof: "834",
+  "834": "834",
 
   /**
    * United States of America
    */
-  UnitedStatesofAmerica: "840",
+  "840": "840",
 
   /**
    * Virgin Islands, U.S.
    */
-  VirginIslandsUS: "850",
+  "850": "850",
 
   /**
    * Burkina Faso
    */
-  BurkinaFaso: "854",
+  "854": "854",
 
   /**
    * Uruguay
    */
-  Uruguay: "858",
+  "858": "858",
 
   /**
    * Uzbekistan
    */
-  Uzbekistan: "860",
+  "860": "860",
 
   /**
    * Venezuela, Bolivarian Republic of
    */
-  VenezuelaBolivarianRepublicof: "862",
+  "862": "862",
 
   /**
    * Wallis and Futuna
    */
-  WallisandFutuna: "876",
+  "876": "876",
 
   /**
    * Samoa
    */
-  Samoa: "882",
+  "882": "882",
 
   /**
    * Yemen
    */
-  Yemen: "887",
+  "887": "887",
 
   /**
    * Zambia
    */
-  Zambia: "894",
+  "894": "894",
 
   /**
    * household
    */
-  household: "HHOLD",
+  HHOLD: "HHOLD",
 
   /**
    * NationEntityType
    */
-  NationEntityType: "NAT",
+  NAT: "NAT",
 
   /**
    * religious institution
    */
-  religiousinstitution: "RELIG",
+  RELIG: "RELIG",
 
   /**
    * Individual Case Safety Report Sender Type
    */
-  IndividualCaseSafetyReportSenderType: "_IndividualCaseSafetyReportSenderType",
+  _IndividualCaseSafetyReportSenderType:
+    "_IndividualCaseSafetyReportSenderType",
 
   /**
    * PractitionerGroup
    */
-  PractitionerGroup: "PRAC",
+  PRAC: "PRAC",
 } as const;
 
 /**

@@ -18,6 +18,8 @@ import { buildWriteFiles } from "./helpers/writeFiles";
  * Injects custom helpers as well:
  *  - all helpers from [handlebars-helpers](https://assemble.io/helpers/)
  *  - `startCase` from [lodash](https://lodash.com/docs/4.17.15#startCase)
+ *  - `uniq` from [lodash](https://lodash.com/docs/4.17.15#uniq)
+ *  - `uniqBy` from [lodash](https://lodash.com/docs/4.17.15#uniqBy)
  *  - helpers from the `helpers` directory
  */
 export const ProcessTemplatesTask: ListrTask<Context> = {
@@ -44,6 +46,8 @@ function CreateTemplateProcessTask(templatePath: string): ListrTask<Context> {
         helpers: {
           ...handlebarsHelpers(),
           startCase: _.startCase,
+          uniq: _.uniq,
+          uniqBy: _.uniqBy,
           fhirPath,
           writeFiles: buildWriteFiles(ctx, templateParsedPath.dir),
           safeNameAsVar,

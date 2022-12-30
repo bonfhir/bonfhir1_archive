@@ -6,22 +6,22 @@ export const ActRelationshipHasMemberCode = {
   /**
    * has member
    */
-  hasmember: "MBR",
+  MBR: "MBR",
 
   /**
    * has step
    */
-  hasstep: "STEP",
+  STEP: "STEP",
 
   /**
    * arrival
    */
-  arrival: "ARR",
+  ARR: "ARR",
 
   /**
    * departure
    */
-  departure: "DEP",
+  DEP: "DEP",
 } as const;
 
 /**

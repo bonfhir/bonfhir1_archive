@@ -6,17 +6,17 @@ export const GrandChildCode = {
   /**
    * grandchild
    */
-  grandchild: "GRNDCHILD",
+  GRNDCHILD: "GRNDCHILD",
 
   /**
    * granddaughter
    */
-  granddaughter: "GRNDDAU",
+  GRNDDAU: "GRNDDAU",
 
   /**
    * grandson
    */
-  grandson: "GRNDSON",
+  GRNDSON: "GRNDSON",
 } as const;
 
 /**

@@ -6,22 +6,22 @@ export const InteriorSalishCode = {
   /**
    * Columbian
    */
-  Columbian: "x-COL",
+  "x-COL": "x-COL",
 
   /**
    * Coeur D'alene
    */
-  CoeurDalene: "x-CRD",
+  "x-CRD": "x-CRD",
 
   /**
    * Kalispel
    */
-  Kalispel: "x-FLA",
+  "x-FLA": "x-FLA",
 
   /**
    * Okanagan
    */
-  Okanagan: "x-OKA",
+  "x-OKA": "x-OKA",
 } as const;
 
 /**

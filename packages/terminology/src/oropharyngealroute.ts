@@ -6,7 +6,7 @@ export const OropharyngealRouteCode = {
   /**
    * Topical application, oropharyngeal
    */
-  Topicalapplicationoropharyngeal: "OROPHARTA",
+  OROPHARTA: "OROPHARTA",
 } as const;
 
 /**

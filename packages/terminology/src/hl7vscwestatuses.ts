@@ -6,27 +6,27 @@ export const Hl7VSCweStatusesCode = {
   /**
    * Unknown
    */
-  Unknown: "U",
+  U: "U",
 
   /**
    * Asked but Unknown
    */
-  AskedbutUnknown: "UASK",
+  UASK: "UASK",
 
   /**
    * Not available
    */
-  Notavailable: "NAV",
+  NAV: "NAV",
 
   /**
    * Not applicable
    */
-  Notapplicable: "NA",
+  NA: "NA",
 
   /**
    * Not asked
    */
-  Notasked: "NASK",
+  NASK: "NASK",
 } as const;
 
 /**

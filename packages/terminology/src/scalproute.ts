@@ -6,7 +6,7 @@ export const ScalpRouteCode = {
   /**
    * Topical application, scalp
    */
-  Topicalapplicationscalp: "SCALP",
+  SCALP: "SCALP",
 } as const;
 
 /**

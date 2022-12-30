@@ -6,22 +6,22 @@ export const Hl7VSVSLimitationTypeCodeCode = {
   /**
    * Limited Coverage Policy
    */
-  LimitedCoveragePolicy: "LCP",
+  LCP: "LCP",
 
   /**
    * Non-FDA Approved Diagnositic Procedure
    */
-  NonFDAApprovedDiagnositicProcedure: "NFDA",
+  NFDA: "NFDA",
 
   /**
    * Frequency Limited Diagnostics Procedure
    */
-  FrequencyLimitedDiagnosticsProcedure: "FLDP",
+  FLDP: "FLDP",
 
   /**
    * New Test - Limited Diagnostic History
    */
-  NewTestLimitedDiagnosticHistory: "NT",
+  NT: "NT",
 } as const;
 
 /**

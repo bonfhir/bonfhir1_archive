@@ -6,22 +6,22 @@ export const TopicalSolutionCode = {
   /**
    * Topical Solution
    */
-  TopicalSolution: "TOPSOL",
+  TOPSOL: "TOPSOL",
 
   /**
    * Liniment
    */
-  Liniment: "LIN",
+  LIN: "LIN",
 
   /**
    * Mucous Membrane Topical Solution
    */
-  MucousMembraneTopicalSolution: "MUCTOPSOL",
+  MUCTOPSOL: "MUCTOPSOL",
 
   /**
    * Tincture
    */
-  Tincture: "TINC",
+  TINC: "TINC",
 } as const;
 
 /**

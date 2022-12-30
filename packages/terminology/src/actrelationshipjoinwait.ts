@@ -6,7 +6,7 @@ export const ActRelationshipJoinWaitCode = {
   /**
    * wait
    */
-  wait: "W",
+  W: "W",
 } as const;
 
 /**

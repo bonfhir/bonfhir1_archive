@@ -6,107 +6,107 @@ export const RaceAlaskanNativeAleutUnanganCode = {
   /**
    * Unangan Aleut
    */
-  UnanganAleut: "2006-5",
+  "2006-5": "2006-5",
 
   /**
    * Akutan
    */
-  Akutan: "2007-3",
+  "2007-3": "2007-3",
 
   /**
    * Aleut Corporation
    */
-  AleutCorporation: "2008-1",
+  "2008-1": "2008-1",
 
   /**
    * Aleutian
    */
-  Aleutian: "2009-9",
+  "2009-9": "2009-9",
 
   /**
    * Aleutian Islander
    */
-  AleutianIslander: "2010-7",
+  "2010-7": "2010-7",
 
   /**
    * Atka
    */
-  Atka: "2011-5",
+  "2011-5": "2011-5",
 
   /**
    * Belkofski
    */
-  Belkofski: "2012-3",
+  "2012-3": "2012-3",
 
   /**
    * Chignik Lagoon
    */
-  ChignikLagoon: "2013-1",
+  "2013-1": "2013-1",
 
   /**
    * King Cove
    */
-  KingCove: "2014-9",
+  "2014-9": "2014-9",
 
   /**
    * False Pass
    */
-  FalsePass: "2015-6",
+  "2015-6": "2015-6",
 
   /**
    * Nelson Lagoon
    */
-  NelsonLagoon: "2016-4",
+  "2016-4": "2016-4",
 
   /**
    * Nikolski
    */
-  Nikolski: "2017-2",
+  "2017-2": "2017-2",
 
   /**
    * Pauloff Harbor
    */
-  PauloffHarbor: "2018-0",
+  "2018-0": "2018-0",
 
   /**
    * Qagan Toyagungin
    */
-  QaganToyagungin: "2019-8",
+  "2019-8": "2019-8",
 
   /**
    * Qawalangin
    */
-  Qawalangin: "2020-6",
+  "2020-6": "2020-6",
 
   /**
    * St. George
    */
-  StGeorge: "2021-4",
+  "2021-4": "2021-4",
 
   /**
    * St. Paul
    */
-  StPaul: "2022-2",
+  "2022-2": "2022-2",
 
   /**
    * Sand Point
    */
-  SandPoint: "2023-0",
+  "2023-0": "2023-0",
 
   /**
    * South Naknek
    */
-  SouthNaknek: "2024-8",
+  "2024-8": "2024-8",
 
   /**
    * Unalaska
    */
-  Unalaska: "2025-5",
+  "2025-5": "2025-5",
 
   /**
    * Unga
    */
-  Unga: "2026-3",
+  "2026-3": "2026-3",
 } as const;
 
 /**

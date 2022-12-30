@@ -6,82 +6,82 @@ export const MultiUseContainerEntityTypeCode = {
   /**
    * Bottle
    */
-  Bottle: "BOT",
+  BOT: "BOT",
 
   /**
    * Amber Bottle
    */
-  AmberBottle: "BOTA",
+  BOTA: "BOTA",
 
   /**
    * Dropper Bottle
    */
-  DropperBottle: "BOTD",
+  BOTD: "BOTD",
 
   /**
    * Glass Bottle
    */
-  GlassBottle: "BOTG",
+  BOTG: "BOTG",
 
   /**
    * Plastic Bottle
    */
-  PlasticBottle: "BOTP",
+  BOTP: "BOTP",
 
   /**
    * Polyethylene Bottle
    */
-  PolyethyleneBottle: "BOTPLY",
+  BOTPLY: "BOTPLY",
 
   /**
    * Box
    */
-  Box: "BOX",
+  BOX: "BOX",
 
   /**
    * Can
    */
-  Can: "CAN",
+  CAN: "CAN",
 
   /**
    * Cartridge
    */
-  Cartridge: "CART",
+  CART: "CART",
 
   /**
    * Canister
    */
-  Canister: "CNSTR",
+  CNSTR: "CNSTR",
 
   /**
    * Jar
    */
-  Jar: "JAR",
+  JAR: "JAR",
 
   /**
    * Jug
    */
-  Jug: "JUG",
+  JUG: "JUG",
 
   /**
    * Tin
    */
-  Tin: "TIN",
+  TIN: "TIN",
 
   /**
    * Tub
    */
-  Tub: "TUB",
+  TUB: "TUB",
 
   /**
    * Tube
    */
-  Tube: "TUBE",
+  TUBE: "TUBE",
 
   /**
    * Vial
    */
-  Vial: "VIAL",
+  VIAL: "VIAL",
 } as const;
 
 /**

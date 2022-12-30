@@ -6,32 +6,32 @@ export const ImmunizationEvaluationDoseStatusReasonCodesCode = {
   /**
    * Partial Dose
    */
-  PartialDose: "partialdose",
+  partialdose: "partialdose",
 
   /**
    * Cold Chain Break
    */
-  ColdChainBreak: "coldchainbreak",
+  coldchainbreak: "coldchainbreak",
 
   /**
    * Manufacturer Recall
    */
-  ManufacturerRecall: "recall",
+  recall: "recall",
 
   /**
    * Adverse Storage
    */
-  AdverseStorage: "adversestorage",
+  adversestorage: "adversestorage",
 
   /**
    * Expired Product
    */
-  ExpiredProduct: "expired",
+  expired: "expired",
 
   /**
    * Outside Schedule
    */
-  OutsideSchedule: "outsideschedule",
+  outsideschedule: "outsideschedule",
 } as const;
 
 /**

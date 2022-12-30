@@ -6,7 +6,7 @@ export const ParticipationReusableDeviceCode = {
   /**
    * reusable device
    */
-  reusabledevice: "RDV",
+  RDV: "RDV",
 } as const;
 
 /**

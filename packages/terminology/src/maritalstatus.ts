@@ -8,57 +8,57 @@ export const MaritalStatusCode = {
   /**
    * Annulled
    */
-  Annulled: "A",
+  A: "A",
 
   /**
    * Divorced
    */
-  Divorced: "D",
+  D: "D",
 
   /**
    * Interlocutory
    */
-  Interlocutory: "I",
+  I: "I",
 
   /**
    * Legally Separated
    */
-  LegallySeparated: "L",
+  L: "L",
 
   /**
    * Married
    */
-  Married: "M",
+  M: "M",
 
   /**
    * Common Law
    */
-  CommonLaw: "C",
+  C: "C",
 
   /**
    * Polygamous
    */
-  Polygamous: "P",
+  P: "P",
 
   /**
    * Domestic partner
    */
-  Domesticpartner: "T",
+  T: "T",
 
   /**
    * unmarried
    */
-  unmarried: "U",
+  U: "U",
 
   /**
    * Never Married
    */
-  NeverMarried: "S",
+  S: "S",
 
   /**
    * Widowed
    */
-  Widowed: "W",
+  W: "W",
 } as const;
 
 /**

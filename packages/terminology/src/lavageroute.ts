@@ -6,7 +6,7 @@ export const LavageRouteCode = {
   /**
    * Lavage, intragastric
    */
-  Lavageintragastric: "IGASTLAV",
+  IGASTLAV: "IGASTLAV",
 } as const;
 
 /**

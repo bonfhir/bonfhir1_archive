@@ -6,7 +6,7 @@ export const ActRelationshipAdjunctMitigationCode = {
   /**
    * adjunct mitigation
    */
-  adjunctmitigation: "MTGT.ADJ",
+  "MTGT.ADJ": "MTGT.ADJ",
 } as const;
 
 /**

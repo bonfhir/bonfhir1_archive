@@ -6,72 +6,72 @@ export const Hl7VSVSObservationSubtypeCode = {
   /**
    * Ask at Order Entry
    */
-  AskatOrderEntry: "AOE",
+  AOE: "AOE",
 
   /**
    * Ask at Specimen Collection
    */
-  AskatSpecimenCollection: "ASC",
+  ASC: "ASC",
 
   /**
    * Micro Culture Status
    */
-  MicroCultureStatus: "MCS",
+  MCS: "MCS",
 
   /**
    * Micro Isolate Descriptor
    */
-  MicroIsolateDescriptor: "MID",
+  MID: "MID",
 
   /**
    * Micro Isolate Growth Quantity
    */
-  MicroIsolateGrowthQuantity: "MIG",
+  MIG: "MIG",
 
   /**
    * Micro Isolate Name
    */
-  MicroIsolateName: "MIN",
+  MIN: "MIN",
 
   /**
    * Micro Isolate Related
    */
-  MicroIsolateRelated: "MIR",
+  MIR: "MIR",
 
   /**
    * Micro Isolate Related Modifier
    */
-  MicroIsolateRelatedModifier: "MIRM",
+  MIRM: "MIRM",
 
   /**
    * Micro Non-Isolate Related
    */
-  MicroNonIsolateRelated: "MNIR",
+  MNIR: "MNIR",
 
   /**
    * Micro Other Descriptor
    */
-  MicroOtherDescriptor: "MOD",
+  MOD: "MOD",
 
   /**
    * Micro Sample Stain
    */
-  MicroSampleStain: "MSS",
+  MSS: "MSS",
 
   /**
    * Supplemental Result
    */
-  SupplementalResult: "SUP",
+  SUP: "SUP",
 
   /**
    * Susceptibility Related
    */
-  SusceptibilityRelated: "SUR",
+  SUR: "SUR",
 
   /**
    * Unspecified
    */
-  Unspecified: "UNSP",
+  UNSP: "UNSP",
 } as const;
 
 /**

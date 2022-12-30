@@ -6,640 +6,640 @@ export const ServiceDeliveryLocationRoleTypeCode = {
   /**
    * DedicatedServiceDeliveryLocationRoleType
    */
-  DedicatedServiceDeliveryLocationRoleType:
+  _DedicatedServiceDeliveryLocationRoleType:
     "_DedicatedServiceDeliveryLocationRoleType",
 
   /**
    * DedicatedClinicalLocationRoleType
    */
-  DedicatedClinicalLocationRoleType: "_DedicatedClinicalLocationRoleType",
+  _DedicatedClinicalLocationRoleType: "_DedicatedClinicalLocationRoleType",
 
   /**
    * Diagnostics or therapeutics unit
    */
-  Diagnosticsortherapeuticsunit: "DX",
+  DX: "DX",
 
   /**
    * Cardiovascular diagnostics or therapeutics unit
    */
-  Cardiovasculardiagnosticsortherapeuticsunit: "CVDX",
+  CVDX: "CVDX",
 
   /**
    * Cardiac catheterization lab
    */
-  Cardiaccatheterizationlab: "CATH",
+  CATH: "CATH",
 
   /**
    * Echocardiography lab
    */
-  Echocardiographylab: "ECHO",
+  ECHO: "ECHO",
 
   /**
    * Gastroenterology diagnostics or therapeutics lab
    */
-  Gastroenterologydiagnosticsortherapeuticslab: "GIDX",
+  GIDX: "GIDX",
 
   /**
    * Endoscopy lab
    */
-  Endoscopylab: "ENDOS",
+  ENDOS: "ENDOS",
 
   /**
    * Radiology diagnostics or therapeutics unit
    */
-  Radiologydiagnosticsortherapeuticsunit: "RADDX",
+  RADDX: "RADDX",
 
   /**
    * Radiation oncology unit
    */
-  Radiationoncologyunit: "RADO",
+  RADO: "RADO",
 
   /**
    * Neuroradiology unit
    */
-  Neuroradiologyunit: "RNEU",
+  RNEU: "RNEU",
 
   /**
    * Hospital
    */
-  Hospital: "HOSP",
+  HOSP: "HOSP",
 
   /**
    * Chronic Care Facility
    */
-  ChronicCareFacility: "CHR",
+  CHR: "CHR",
 
   /**
    * Hospitals; General Acute Care Hospital
    */
-  HospitalsGeneralAcuteCareHospital: "GACH",
+  GACH: "GACH",
 
   /**
    * Military Hospital
    */
-  MilitaryHospital: "MHSP",
+  MHSP: "MHSP",
 
   /**
    * Psychatric Care Facility
    */
-  PsychatricCareFacility: "PSYCHF",
+  PSYCHF: "PSYCHF",
 
   /**
    * Rehabilitation hospital
    */
-  Rehabilitationhospital: "RH",
+  RH: "RH",
 
   /**
    * addiction treatment center
    */
-  addictiontreatmentcenter: "RHAT",
+  RHAT: "RHAT",
 
   /**
    * intellectual impairment center
    */
-  intellectualimpairmentcenter: "RHII",
+  RHII: "RHII",
 
   /**
    * parents with adjustment difficulties center
    */
-  parentswithadjustmentdifficultiescenter: "RHMAD",
+  RHMAD: "RHMAD",
 
   /**
    * physical impairment center
    */
-  physicalimpairmentcenter: "RHPI",
+  RHPI: "RHPI",
 
   /**
    * physical impairment - hearing center
    */
-  physicalimpairmenthearingcenter: "RHPIH",
+  RHPIH: "RHPIH",
 
   /**
    * physical impairment - motor skills center
    */
-  physicalimpairmentmotorskillscenter: "RHPIMS",
+  RHPIMS: "RHPIMS",
 
   /**
    * physical impairment - visual skills center
    */
-  physicalimpairmentvisualskillscenter: "RHPIVS",
+  RHPIVS: "RHPIVS",
 
   /**
    * youths with adjustment difficulties center
    */
-  youthswithadjustmentdifficultiescenter: "RHYAD",
+  RHYAD: "RHYAD",
 
   /**
    * Hospital unit
    */
-  Hospitalunit: "HU",
+  HU: "HU",
 
   /**
    * Bone marrow transplant unit
    */
-  Bonemarrowtransplantunit: "BMTU",
+  BMTU: "BMTU",
 
   /**
    * Coronary care unit
    */
-  Coronarycareunit: "CCU",
+  CCU: "CCU",
 
   /**
    * Chest unit
    */
-  Chestunit: "CHEST",
+  CHEST: "CHEST",
 
   /**
    * Epilepsy unit
    */
-  Epilepsyunit: "EPIL",
+  EPIL: "EPIL",
 
   /**
    * Emergency room
    */
-  Emergencyroom: "ER",
+  ER: "ER",
 
   /**
    * Emergency trauma unit
    */
-  Emergencytraumaunit: "ETU",
+  ETU: "ETU",
 
   /**
    * Hemodialysis unit
    */
-  Hemodialysisunit: "HD",
+  HD: "HD",
 
   /**
    * hospital laboratory
    */
-  hospitallaboratory: "HLAB",
+  HLAB: "HLAB",
 
   /**
    * inpatient laboratory
    */
-  inpatientlaboratory: "INLAB",
+  INLAB: "INLAB",
 
   /**
    * outpatient laboratory
    */
-  outpatientlaboratory: "OUTLAB",
+  OUTLAB: "OUTLAB",
 
   /**
    * radiology unit
    */
-  radiologyunit: "HRAD",
+  HRAD: "HRAD",
 
   /**
    * specimen collection site
    */
-  specimencollectionsite: "HUSCS",
+  HUSCS: "HUSCS",
 
   /**
    * Intensive care unit
    */
-  Intensivecareunit: "ICU",
+  ICU: "ICU",
 
   /**
    * Pediatric intensive care unit
    */
-  Pediatricintensivecareunit: "PEDICU",
+  PEDICU: "PEDICU",
 
   /**
    * Pediatric neonatal intensive care unit
    */
-  Pediatricneonatalintensivecareunit: "PEDNICU",
+  PEDNICU: "PEDNICU",
 
   /**
    * inpatient pharmacy
    */
-  inpatientpharmacy: "INPHARM",
+  INPHARM: "INPHARM",
 
   /**
    * medical laboratory
    */
-  medicallaboratory: "MBL",
+  MBL: "MBL",
 
   /**
    * Neurology critical care and stroke unit
    */
-  Neurologycriticalcareandstrokeunit: "NCCS",
+  NCCS: "NCCS",
 
   /**
    * Neurosurgery unit
    */
-  Neurosurgeryunit: "NS",
+  NS: "NS",
 
   /**
    * outpatient pharmacy
    */
-  outpatientpharmacy: "OUTPHARM",
+  OUTPHARM: "OUTPHARM",
 
   /**
    * Pediatric unit
    */
-  Pediatricunit: "PEDU",
+  PEDU: "PEDU",
 
   /**
    * Psychiatric hospital unit
    */
-  Psychiatrichospitalunit: "PHU",
+  PHU: "PHU",
 
   /**
    * Rehabilitation hospital unit
    */
-  Rehabilitationhospitalunit: "RHU",
+  RHU: "RHU",
 
   /**
    * Sleep disorders unit
    */
-  Sleepdisordersunit: "SLEEP",
+  SLEEP: "SLEEP",
 
   /**
    * Nursing or custodial care facility
    */
-  Nursingorcustodialcarefacility: "NCCF",
+  NCCF: "NCCF",
 
   /**
    * Skilled nursing facility
    */
-  Skillednursingfacility: "SNF",
+  SNF: "SNF",
 
   /**
    * Outpatient facility
    */
-  Outpatientfacility: "OF",
+  OF: "OF",
 
   /**
    * Allergy clinic
    */
-  Allergyclinic: "ALL",
+  ALL: "ALL",
 
   /**
    * Amputee clinic
    */
-  Amputeeclinic: "AMPUT",
+  AMPUT: "AMPUT",
 
   /**
    * Bone marrow transplant clinic
    */
-  Bonemarrowtransplantclinic: "BMTC",
+  BMTC: "BMTC",
 
   /**
    * Breast clinic
    */
-  Breastclinic: "BREAST",
+  BREAST: "BREAST",
 
   /**
    * Child and adolescent neurology clinic
    */
-  Childandadolescentneurologyclinic: "CANC",
+  CANC: "CANC",
 
   /**
    * Child and adolescent psychiatry clinic
    */
-  Childandadolescentpsychiatryclinic: "CAPC",
+  CAPC: "CAPC",
 
   /**
    * Ambulatory Health Care Facilities; Clinic/Center; Rehabilitation: Cardiac Facilities
    */
-  AmbulatoryHealthCareFacilitiesClinicCenterRehabilitationCardiacFacilities:
-    "CARD",
+  CARD: "CARD",
 
   /**
    * Pediatric cardiology clinic
    */
-  Pediatriccardiologyclinic: "PEDCARD",
+  PEDCARD: "PEDCARD",
 
   /**
    * Coagulation clinic
    */
-  Coagulationclinic: "COAG",
+  COAG: "COAG",
 
   /**
    * Colon and rectal surgery clinic
    */
-  Colonandrectalsurgeryclinic: "CRS",
+  CRS: "CRS",
 
   /**
    * Dermatology clinic
    */
-  Dermatologyclinic: "DERM",
+  DERM: "DERM",
 
   /**
    * Endocrinology clinic
    */
-  Endocrinologyclinic: "ENDO",
+  ENDO: "ENDO",
 
   /**
    * Pediatric endocrinology clinic
    */
-  Pediatricendocrinologyclinic: "PEDE",
+  PEDE: "PEDE",
 
   /**
    * Otorhinolaryngology clinic
    */
-  Otorhinolaryngologyclinic: "ENT",
+  ENT: "ENT",
 
   /**
    * Family medicine clinic
    */
-  Familymedicineclinic: "FMC",
+  FMC: "FMC",
 
   /**
    * Gastroenterology clinic
    */
-  Gastroenterologyclinic: "GI",
+  GI: "GI",
 
   /**
    * Pediatric gastroenterology clinic
    */
-  Pediatricgastroenterologyclinic: "PEDGI",
+  PEDGI: "PEDGI",
 
   /**
    * General internal medicine clinic
    */
-  Generalinternalmedicineclinic: "GIM",
+  GIM: "GIM",
 
   /**
    * Gynecology clinic
    */
-  Gynecologyclinic: "GYN",
+  GYN: "GYN",
 
   /**
    * Hematology clinic
    */
-  Hematologyclinic: "HEM",
+  HEM: "HEM",
 
   /**
    * Pediatric hematology clinic
    */
-  Pediatrichematologyclinic: "PEDHEM",
+  PEDHEM: "PEDHEM",
 
   /**
    * Hypertension clinic
    */
-  Hypertensionclinic: "HTN",
+  HTN: "HTN",
 
   /**
    * Impairment evaluation center
    */
-  Impairmentevaluationcenter: "IEC",
+  IEC: "IEC",
 
   /**
    * Infectious disease clinic
    */
-  Infectiousdiseaseclinic: "INFD",
+  INFD: "INFD",
 
   /**
    * Pediatric infectious disease clinic
    */
-  Pediatricinfectiousdiseaseclinic: "PEDID",
+  PEDID: "PEDID",
 
   /**
    * Infertility clinic
    */
-  Infertilityclinic: "INV",
+  INV: "INV",
 
   /**
    * Lympedema clinic
    */
-  Lympedemaclinic: "LYMPH",
+  LYMPH: "LYMPH",
 
   /**
    * Medical genetics clinic
    */
-  Medicalgeneticsclinic: "MGEN",
+  MGEN: "MGEN",
 
   /**
    * Nephrology clinic
    */
-  Nephrologyclinic: "NEPH",
+  NEPH: "NEPH",
 
   /**
    * Pediatric nephrology clinic
    */
-  Pediatricnephrologyclinic: "PEDNEPH",
+  PEDNEPH: "PEDNEPH",
 
   /**
    * Neurology clinic
    */
-  Neurologyclinic: "NEUR",
+  NEUR: "NEUR",
 
   /**
    * Obstetrics clinic
    */
-  Obstetricsclinic: "OB",
+  OB: "OB",
 
   /**
    * Oral and maxillofacial surgery clinic
    */
-  Oralandmaxillofacialsurgeryclinic: "OMS",
+  OMS: "OMS",
 
   /**
    * Medical oncology clinic
    */
-  Medicaloncologyclinic: "ONCL",
+  ONCL: "ONCL",
 
   /**
    * Pediatric oncology clinic
    */
-  Pediatriconcologyclinic: "PEDHO",
+  PEDHO: "PEDHO",
 
   /**
    * Opthalmology clinic
    */
-  Opthalmologyclinic: "OPH",
+  OPH: "OPH",
 
   /**
    * optometry clinic
    */
-  optometryclinic: "OPTC",
+  OPTC: "OPTC",
 
   /**
    * Orthopedics clinic
    */
-  Orthopedicsclinic: "ORTHO",
+  ORTHO: "ORTHO",
 
   /**
    * Hand clinic
    */
-  Handclinic: "HAND",
+  HAND: "HAND",
 
   /**
    * Pain clinic
    */
-  Painclinic: "PAINCL",
+  PAINCL: "PAINCL",
 
   /**
    * Primary care clinic
    */
-  Primarycareclinic: "PC",
+  PC: "PC",
 
   /**
    * Pediatrics clinic
    */
-  Pediatricsclinic: "PEDC",
+  PEDC: "PEDC",
 
   /**
    * Pediatric rheumatology clinic
    */
-  Pediatricrheumatologyclinic: "PEDRHEUM",
+  PEDRHEUM: "PEDRHEUM",
 
   /**
    * Podiatry clinic
    */
-  Podiatryclinic: "POD",
+  POD: "POD",
 
   /**
    * Preventive medicine clinic
    */
-  Preventivemedicineclinic: "PREV",
+  PREV: "PREV",
 
   /**
    * Proctology clinic
    */
-  Proctologyclinic: "PROCTO",
+  PROCTO: "PROCTO",
 
   /**
    * Provider's Office
    */
-  ProvidersOffice: "PROFF",
+  PROFF: "PROFF",
 
   /**
    * Prosthodontics clinic
    */
-  Prosthodonticsclinic: "PROS",
+  PROS: "PROS",
 
   /**
    * Psychology clinic
    */
-  Psychologyclinic: "PSI",
+  PSI: "PSI",
 
   /**
    * Psychiatry clinic
    */
-  Psychiatryclinic: "PSY",
+  PSY: "PSY",
 
   /**
    * Rheumatology clinic
    */
-  Rheumatologyclinic: "RHEUM",
+  RHEUM: "RHEUM",
 
   /**
    * Sports medicine clinic
    */
-  Sportsmedicineclinic: "SPMED",
+  SPMED: "SPMED",
 
   /**
    * Surgery clinic
    */
-  Surgeryclinic: "SU",
+  SU: "SU",
 
   /**
    * Plastic surgery clinic
    */
-  Plasticsurgeryclinic: "PLS",
+  PLS: "PLS",
 
   /**
    * Urology clinic
    */
-  Urologyclinic: "URO",
+  URO: "URO",
 
   /**
    * Transplant clinic
    */
-  Transplantclinic: "TR",
+  TR: "TR",
 
   /**
    * Travel and geographic medicine clinic
    */
-  Travelandgeographicmedicineclinic: "TRAVEL",
+  TRAVEL: "TRAVEL",
 
   /**
    * Wound clinic
    */
-  Woundclinic: "WND",
+  WND: "WND",
 
   /**
    * Residential treatment facility
    */
-  Residentialtreatmentfacility: "RTF",
+  RTF: "RTF",
 
   /**
    * Pain rehabilitation center
    */
-  Painrehabilitationcenter: "PRC",
+  PRC: "PRC",
 
   /**
    * Substance use rehabilitation facility
    */
-  Substanceuserehabilitationfacility: "SURF",
+  SURF: "SURF",
 
   /**
    * DedicatedNonClinicalLocationRoleType
    */
-  DedicatedNonClinicalLocationRoleType: "_DedicatedNonClinicalLocationRoleType",
+  _DedicatedNonClinicalLocationRoleType:
+    "_DedicatedNonClinicalLocationRoleType",
 
   /**
    * Delivery Address
    */
-  DeliveryAddress: "DADDR",
+  DADDR: "DADDR",
 
   /**
    * Mobile Unit
    */
-  MobileUnit: "MOBL",
+  MOBL: "MOBL",
 
   /**
    * Ambulance
    */
-  Ambulance: "AMB",
+  AMB: "AMB",
 
   /**
    * Pharmacy
    */
-  Pharmacy: "PHARM",
+  PHARM: "PHARM",
 
   /**
    * IncidentalServiceDeliveryLocationRoleType
    */
-  IncidentalServiceDeliveryLocationRoleType:
+  _IncidentalServiceDeliveryLocationRoleType:
     "_IncidentalServiceDeliveryLocationRoleType",
 
   /**
    * accident site
    */
-  accidentsite: "ACC",
+  ACC: "ACC",
 
   /**
    * Community Location
    */
-  CommunityLocation: "COMM",
+  COMM: "COMM",
 
   /**
    * community service center
    */
-  communityservicecenter: "CSC",
+  CSC: "CSC",
 
   /**
    * Patient's Residence
    */
-  PatientsResidence: "PTRES",
+  PTRES: "PTRES",
 
   /**
    * school
    */
-  school: "SCHOOL",
+  SCHOOL: "SCHOOL",
 
   /**
    * underage protection center
    */
-  underageprotectioncenter: "UPC",
+  UPC: "UPC",
 
   /**
    * work site
    */
-  worksite: "WORK",
+  WORK: "WORK",
 } as const;
 
 /**

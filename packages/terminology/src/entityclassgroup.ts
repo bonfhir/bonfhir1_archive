@@ -6,7 +6,7 @@ export const EntityClassGroupCode = {
   /**
    * group
    */
-  group: "RGRP",
+  RGRP: "RGRP",
 } as const;
 
 /**

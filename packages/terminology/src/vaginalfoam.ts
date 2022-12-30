@@ -6,12 +6,12 @@ export const VaginalFoamCode = {
   /**
    * Vaginal foam
    */
-  Vaginalfoam: "VAGFOAM",
+  VAGFOAM: "VAGFOAM",
 
   /**
    * Vaginal foam with applicator
    */
-  Vaginalfoamwithapplicator: "VAGFOAMAPL",
+  VAGFOAMAPL: "VAGFOAMAPL",
 } as const;
 
 /**

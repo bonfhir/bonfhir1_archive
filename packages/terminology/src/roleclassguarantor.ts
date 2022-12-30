@@ -6,7 +6,7 @@ export const RoleClassGuarantorCode = {
   /**
    * guarantor
    */
-  guarantor: "GUAR",
+  GUAR: "GUAR",
 } as const;
 
 /**

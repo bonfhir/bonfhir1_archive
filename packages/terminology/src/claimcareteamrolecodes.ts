@@ -6,22 +6,22 @@ export const ClaimCareTeamRoleCodesCode = {
   /**
    * Primary provider
    */
-  Primaryprovider: "primary",
+  primary: "primary",
 
   /**
    * Assisting Provider
    */
-  AssistingProvider: "assist",
+  assist: "assist",
 
   /**
    * Supervising Provider
    */
-  SupervisingProvider: "supervisor",
+  supervisor: "supervisor",
 
   /**
    * Other
    */
-  Other: "other",
+  other: "other",
 } as const;
 
 /**

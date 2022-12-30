@@ -6,37 +6,37 @@ export const Hl7VSPersonLocationTypeCode = {
   /**
    * Clinic
    */
-  Clinic: "C",
+  C: "C",
 
   /**
    * Department
    */
-  Department: "D",
+  D: "D",
 
   /**
    * Home
    */
-  Home: "H",
+  H: "H",
 
   /**
    * Nursing Unit
    */
-  NursingUnit: "N",
+  N: "N",
 
   /**
    * Provider's Office
    */
-  ProvidersOffice: "O",
+  O: "O",
 
   /**
    * Phone
    */
-  Phone: "P",
+  P: "P",
 
   /**
    * SNF
    */
-  SNF: "S",
+  S: "S",
 } as const;
 
 /**

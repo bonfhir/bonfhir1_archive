@@ -6,12 +6,12 @@ export const ActClassGrouperCode = {
   /**
    * grouper
    */
-  grouper: "GROUPER",
+  GROUPER: "GROUPER",
 
   /**
    * Cluster
    */
-  Cluster: "CLUSTER",
+  CLUSTER: "CLUSTER",
 } as const;
 
 /**

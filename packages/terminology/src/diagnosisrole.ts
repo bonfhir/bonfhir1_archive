@@ -6,37 +6,37 @@ export const DiagnosisRoleCode = {
   /**
    * Admission diagnosis
    */
-  Admissiondiagnosis: "AD",
+  AD: "AD",
 
   /**
    * Discharge diagnosis
    */
-  Dischargediagnosis: "DD",
+  DD: "DD",
 
   /**
    * Chief complaint
    */
-  Chiefcomplaint: "CC",
+  CC: "CC",
 
   /**
    * Comorbidity diagnosis
    */
-  Comorbiditydiagnosis: "CM",
+  CM: "CM",
 
   /**
    * pre-op diagnosis
    */
-  preopdiagnosis: "pre-op",
+  "pre-op": "pre-op",
 
   /**
    * post-op diagnosis
    */
-  postopdiagnosis: "post-op",
+  "post-op": "post-op",
 
   /**
    * Billing
    */
-  Billing: "billing",
+  billing: "billing",
 } as const;
 
 /**

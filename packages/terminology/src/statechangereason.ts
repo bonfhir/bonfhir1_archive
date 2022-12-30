@@ -6,27 +6,27 @@ export const StateChangeReasonCode = {
   /**
    * adverse event
    */
-  adverseevent: "adverseEvent",
+  adverseEvent: "adverseEvent",
 
   /**
    * death (adverse event)
    */
-  deathadverseevent: "death",
+  death: "death",
 
   /**
    * did not meet eligibility criteria
    */
-  didnotmeeteligibilitycriteria: "notEligible",
+  notEligible: "notEligible",
 
   /**
    * eligible but unwilling or unable to participate
    */
-  eligiblebutunwillingorunabletoparticipate: "eligibleButNo",
+  eligibleButNo: "eligibleButNo",
 
   /**
    * enrolled or registered
    */
-  enrolledorregistered: "enrolled",
+  enrolled: "enrolled",
 
   /**
    * exclusion
@@ -36,7 +36,7 @@ export const StateChangeReasonCode = {
   /**
    * follow-up complete
    */
-  followupcomplete: "followUpComplete",
+  followUpComplete: "followUpComplete",
 
   /**
    * inclusion
@@ -46,57 +46,57 @@ export const StateChangeReasonCode = {
   /**
    * Informed consent signed
    */
-  Informedconsentsigned: "informedConsentSigned",
+  informedConsentSigned: "informedConsentSigned",
 
   /**
    * intervention or observation complete
    */
-  interventionorobservationcomplete: "intOrObsComplete",
+  intOrObsComplete: "intOrObsComplete",
 
   /**
    * non-compliance
    */
-  noncompliance: "nonCompliance",
+  nonCompliance: "nonCompliance",
 
   /**
    * pre-registered or slot reserved
    */
-  preregisteredorslotreserved: "preReg",
+  preReg: "preReg",
 
   /**
    * refuse consent
    */
-  refuseconsent: "refuseConsent",
+  refuseConsent: "refuseConsent",
 
   /**
    * screen failure
    */
-  screenfailure: "screenFailure",
+  screenFailure: "screenFailure",
 
   /**
    * study permanently closed to accrual
    */
-  studypermanentlyclosedtoaccrual: "studyClosed",
+  studyClosed: "studyClosed",
 
   /**
    * study terminated
    */
-  studyterminated: "studyTerminated",
+  studyTerminated: "studyTerminated",
 
   /**
    * subject refusal
    */
-  subjectrefusal: "subjectRefusal",
+  subjectRefusal: "subjectRefusal",
 
   /**
    * unwilling or unable to participate
    */
-  unwillingorunabletoparticipate: "unwillingOrUnable",
+  unwillingOrUnable: "unwillingOrUnable",
 
   /**
    * withdrawn consent
    */
-  withdrawnconsent: "withdrawnConsent",
+  withdrawnConsent: "withdrawnConsent",
 } as const;
 
 /**

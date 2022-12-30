@@ -10,7 +10,7 @@ export const RoleClassSubsumedByCode = {
   /**
    * subsumed by
    */
-  subsumedby: "SUBY",
+  SUBY: "SUBY",
 } as const;
 
 /**

@@ -6,33 +6,33 @@ export const ActConsentInformationAccessOverrideReasonCode = {
   /**
    * ActConsentInformationAccessOverrideReason
    */
-  ActConsentInformationAccessOverrideReason:
+  _ActConsentInformationAccessOverrideReason:
     "_ActConsentInformationAccessOverrideReason",
 
   /**
    * emergency treatment override
    */
-  emergencytreatmentoverride: "OVRER",
+  OVRER: "OVRER",
 
   /**
    * incompetency override
    */
-  incompetencyoverride: "OVRINCOMP",
+  OVRINCOMP: "OVRINCOMP",
 
   /**
    * professional judgment override
    */
-  professionaljudgmentoverride: "OVRPJ",
+  OVRPJ: "OVRPJ",
 
   /**
    * public safety override
    */
-  publicsafetyoverride: "OVRPS",
+  OVRPS: "OVRPS",
 
   /**
    * third party safety override
    */
-  thirdpartysafetyoverride: "OVRTPS",
+  OVRTPS: "OVRTPS",
 } as const;
 
 /**

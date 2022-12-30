@@ -6,197 +6,197 @@ export const PenutianCode = {
   /**
    * Chinookan
    */
-  Chinookan: "_Chinookan",
+  _Chinookan: "_Chinookan",
 
   /**
    * UpperChinook
    */
-  UpperChinook: "_UpperChinook",
+  _UpperChinook: "_UpperChinook",
 
   /**
    * Kiksht
    */
-  Kiksht: "x-WAC",
+  "x-WAC": "x-WAC",
 
   /**
    * Coosan
    */
-  Coosan: "_Coosan",
+  _Coosan: "_Coosan",
 
   /**
    * Hanis
    */
-  Hanis: "x-COS",
+  "x-COS": "x-COS",
 
   /**
    * Maiduan
    */
-  Maiduan: "_Maiduan",
+  _Maiduan: "_Maiduan",
 
   /**
    * Northwest Maidu
    */
-  NorthwestMaidu: "x-MAI",
+  "x-MAI": "x-MAI",
 
   /**
    * Northeast Maidu
    */
-  NortheastMaidu: "x-NMU",
+  "x-NMU": "x-NMU",
 
   /**
    * Nisenan
    */
-  Nisenan: "x-NSZ",
+  "x-NSZ": "x-NSZ",
 
   /**
    * PlateauPenutian
    */
-  PlateauPenutian: "_PlateauPenutian",
+  _PlateauPenutian: "_PlateauPenutian",
 
   /**
    * Sahaptian
    */
-  Sahaptian: "_Sahaptian",
+  _Sahaptian: "_Sahaptian",
 
   /**
    * Umatilla
    */
-  Umatilla: "x-UMA",
+  "x-UMA": "x-UMA",
 
   /**
    * Walla Walla
    */
-  WallaWalla: "x-WAA",
+  "x-WAA": "x-WAA",
 
   /**
    * Tenino
    */
-  Tenino: "x-WAR",
+  "x-WAR": "x-WAR",
 
   /**
    * Yakima
    */
-  Yakima: "x-YAK",
+  "x-YAK": "x-YAK",
 
   /**
    * Klamath-Modoc
    */
-  KlamathModoc: "x-KLA",
+  "x-KLA": "x-KLA",
 
   /**
    * Nez Perce
    */
-  NezPerce: "x-NEZ",
+  "x-NEZ": "x-NEZ",
 
   /**
    * Takelman
    */
-  Takelman: "_Takelman",
+  _Takelman: "_Takelman",
 
   /**
    * Kalapuyan
    */
-  Kalapuyan: "_Kalapuyan",
+  _Kalapuyan: "_Kalapuyan",
 
   /**
    * Central Kalapuyan
    */
-  CentralKalapuyan: "x-KAL",
+  "x-KAL": "x-KAL",
 
   /**
    * Tsimshianic
    */
-  Tsimshianic: "_Tsimshianic",
+  _Tsimshianic: "_Tsimshianic",
 
   /**
    * Coast Tsimshain
    */
-  CoastTsimshain: "x-TSI",
+  "x-TSI": "x-TSI",
 
   /**
    * Utian
    */
-  Utian: "_Utian",
+  _Utian: "_Utian",
 
   /**
    * Miwokan
    */
-  Miwokan: "_Miwokan",
+  _Miwokan: "_Miwokan",
 
   /**
    * EasternMiwok
    */
-  EasternMiwok: "_EasternMiwok",
+  _EasternMiwok: "_EasternMiwok",
 
   /**
    * Central Sierra Miwok
    */
-  CentralSierraMiwok: "x-CSM",
+  "x-CSM": "x-CSM",
 
   /**
    * Northern Sierra Miwok
    */
-  NorthernSierraMiwok: "x-NSQ",
+  "x-NSQ": "x-NSQ",
 
   /**
    * Plains Miwok
    */
-  PlainsMiwok: "x-PMW",
+  "x-PMW": "x-PMW",
 
   /**
    * Southern Sierra Miwok
    */
-  SouthernSierraMiwok: "x-SKD",
+  "x-SKD": "x-SKD",
 
   /**
    * WesternMiwok
    */
-  WesternMiwok: "_WesternMiwok",
+  _WesternMiwok: "_WesternMiwok",
 
   /**
    * Coast Miwok
    */
-  CoastMiwok: "x-CSI",
+  "x-CSI": "x-CSI",
 
   /**
    * Lake Miwok
    */
-  LakeMiwok: "x-LMW",
+  "x-LMW": "x-LMW",
 
   /**
    * Wintuan
    */
-  Wintuan: "_Wintuan",
+  _Wintuan: "_Wintuan",
 
   /**
    * Wintu-Nomlaki
    */
-  WintuNomlaki: "x-WIT",
+  "x-WIT": "x-WIT",
 
   /**
    * Yokutsan
    */
-  Yokutsan: "_Yokutsan",
+  _Yokutsan: "_Yokutsan",
 
   /**
    * Kings River
    */
-  KingsRiver: "x-ENH",
+  "x-ENH": "x-ENH",
 
   /**
    * Gashowu
    */
-  Gashowu: "x-GSH",
+  "x-GSH": "x-GSH",
 
   /**
    * Poso Creek
    */
-  PosoCreek: "x-PYL",
+  "x-PYL": "x-PYL",
 
   /**
    * Tule-Kaweah
    */
-  TuleKaweah: "x-TKH",
+  "x-TKH": "x-TKH",
 } as const;
 
 /**

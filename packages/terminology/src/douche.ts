@@ -6,7 +6,7 @@ export const DoucheCode = {
   /**
    * Douche, vaginal
    */
-  Douchevaginal: "DOUCHE",
+  DOUCHE: "DOUCHE",
 } as const;
 
 /**

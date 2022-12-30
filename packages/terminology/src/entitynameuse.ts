@@ -6,92 +6,92 @@ export const EntityNameUseCode = {
   /**
    * NameRepresentationUse
    */
-  NameRepresentationUse: "_NameRepresentationUse",
+  _NameRepresentationUse: "_NameRepresentationUse",
 
   /**
    * Alphabetic
    */
-  Alphabetic: "ABC",
+  ABC: "ABC",
 
   /**
    * Ideographic
    */
-  Ideographic: "IDE",
+  IDE: "IDE",
 
   /**
    * Syllabic
    */
-  Syllabic: "SYL",
+  SYL: "SYL",
 
   /**
    * assigned
    */
-  assigned: "ASGN",
+  ASGN: "ASGN",
 
   /**
    * License
    */
-  License: "C",
+  C: "C",
 
   /**
    * Indigenous/Tribal
    */
-  IndigenousTribal: "I",
+  I: "I",
 
   /**
    * Legal
    */
-  Legal: "L",
+  L: "L",
 
   /**
    * official registry
    */
-  officialregistry: "OR",
+  OR: "OR",
 
   /**
    * pseudonym
    */
-  pseudonym: "P",
+  P: "P",
 
   /**
    * Artist/Stage
    */
-  ArtistStage: "A",
+  A: "A",
 
   /**
    * Religious
    */
-  Religious: "R",
+  R: "R",
 
   /**
    * search
    */
-  search: "SRCH",
+  SRCH: "SRCH",
 
   /**
    * phonetic
    */
-  phonetic: "PHON",
+  PHON: "PHON",
 
   /**
    * Soundex
    */
-  Soundex: "SNDX",
+  SNDX: "SNDX",
 
   /**
    * EntityNameSearchUse
    */
-  EntityNameSearchUse: "_EntityNameSearchUse",
+  _EntityNameSearchUse: "_EntityNameSearchUse",
 
   /**
    * OrganizationNameUse
    */
-  OrganizationNameUse: "_OrganizationNameUse",
+  _OrganizationNameUse: "_OrganizationNameUse",
 
   /**
    * PersonNameUse
    */
-  PersonNameUse: "_PersonNameUse",
+  _PersonNameUse: "_PersonNameUse",
 } as const;
 
 /**

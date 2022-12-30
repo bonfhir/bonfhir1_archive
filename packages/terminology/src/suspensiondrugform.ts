@@ -6,47 +6,47 @@ export const SuspensionDrugFormCode = {
   /**
    * Suspension
    */
-  Suspension: "SUSP",
+  SUSP: "SUSP",
 
   /**
    * Intrathecal Suspension
    */
-  IntrathecalSuspension: "ITSUSP",
+  ITSUSP: "ITSUSP",
 
   /**
    * Ophthalmic Suspension
    */
-  OphthalmicSuspension: "OPSUSP",
+  OPSUSP: "OPSUSP",
 
   /**
    * Oral Suspension
    */
-  OralSuspension: "ORSUSP",
+  ORSUSP: "ORSUSP",
 
   /**
    * Extended-Release Suspension
    */
-  ExtendedReleaseSuspension: "ERSUSP",
+  ERSUSP: "ERSUSP",
 
   /**
    * 12 Hour Extended-Release Suspension
    */
-  TwelveHourExtendedReleaseSuspension: "ERSUSP12",
+  ERSUSP12: "ERSUSP12",
 
   /**
    * 24 Hour Extended Release Suspension
    */
-  TwentyFourHourExtendedReleaseSuspension: "ERSUSP24",
+  ERSUSP24: "ERSUSP24",
 
   /**
    * Otic Suspension
    */
-  OticSuspension: "OTSUSP",
+  OTSUSP: "OTSUSP",
 
   /**
    * Rectal Suspension
    */
-  RectalSuspension: "RECSUSP",
+  RECSUSP: "RECSUSP",
 } as const;
 
 /**

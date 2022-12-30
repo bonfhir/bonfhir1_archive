@@ -6,17 +6,17 @@ export const Hl7VSInvoiceReasonCodesCode = {
   /**
    * Late Invoice
    */
-  LateInvoice: "LATE",
+  LATE: "LATE",
 
   /**
    * Normal submission
    */
-  Normalsubmission: "NORM",
+  NORM: "NORM",
 
   /**
    * Subscriber coverage problem
    */
-  Subscribercoverageproblem: "SUB",
+  SUB: "SUB",
 } as const;
 
 /**

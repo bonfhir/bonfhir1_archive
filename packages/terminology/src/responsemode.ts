@@ -6,17 +6,17 @@ export const ResponseModeCode = {
   /**
    * deferred
    */
-  deferred: "D",
+  D: "D",
 
   /**
    * immediate
    */
-  immediate: "I",
+  I: "I",
 
   /**
    * queue
    */
-  queue: "Q",
+  Q: "Q",
 } as const;
 
 /**

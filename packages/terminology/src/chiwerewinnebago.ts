@@ -6,12 +6,12 @@ export const ChiwereWinnebagoCode = {
   /**
    * Chiwere
    */
-  Chiwere: "x-IOW",
+  "x-IOW": "x-IOW",
 
   /**
    * Hocak
    */
-  Hocak: "x-WIN",
+  "x-WIN": "x-WIN",
 } as const;
 
 /**

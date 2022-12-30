@@ -6,57 +6,57 @@ export const Hl7VSMilitaryServiceCode = {
   /**
    * US Army
    */
-  USArmy: "USA",
+  USA: "USA",
 
   /**
    * US Navy
    */
-  USNavy: "USN",
+  USN: "USN",
 
   /**
    * US Air Force
    */
-  USAirForce: "USAF",
+  USAF: "USAF",
 
   /**
    * US Marine Corps
    */
-  USMarineCorps: "USMC",
+  USMC: "USMC",
 
   /**
    * US Coast Guard
    */
-  USCoastGuard: "USCG",
+  USCG: "USCG",
 
   /**
    * US Public Health Service
    */
-  USPublicHealthService: "USPHS",
+  USPHS: "USPHS",
 
   /**
    * National Oceanic and Atmospheric Administration
    */
-  NationalOceanicandAtmosphericAdministration: "NOAA",
+  NOAA: "NOAA",
 
   /**
    * North Atlantic Treaty Organization
    */
-  NorthAtlanticTreatyOrganization: "NATO",
+  NATO: "NATO",
 
   /**
    * Australian Army
    */
-  AustralianArmy: "AUSA",
+  AUSA: "AUSA",
 
   /**
    * Australian Navy
    */
-  AustralianNavy: "AUSN",
+  AUSN: "AUSN",
 
   /**
    * Australian Air Force
    */
-  AustralianAirForce: "AUSAF",
+  AUSAF: "AUSAF",
 } as const;
 
 /**

@@ -6,12 +6,12 @@ export const Hl7VSConsentBypassReasonCode = {
   /**
    * Emergency
    */
-  Emergency: "E",
+  E: "E",
 
   /**
    * Professional Judgment
    */
-  ProfessionalJudgment: "PJ",
+  PJ: "PJ",
 } as const;
 
 /**

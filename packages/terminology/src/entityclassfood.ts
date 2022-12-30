@@ -6,7 +6,7 @@ export const EntityClassFoodCode = {
   /**
    * food
    */
-  food: "FOOD",
+  FOOD: "FOOD",
 } as const;
 
 /**

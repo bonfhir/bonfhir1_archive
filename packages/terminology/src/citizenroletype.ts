@@ -12,47 +12,47 @@ export const CitizenRoleTypeCode = {
   /**
    * CitizenRoleType
    */
-  CitizenRoleType: "_CitizenRoleType",
+  _CitizenRoleType: "_CitizenRoleType",
 
   /**
    * asylum seeker
    */
-  asylumseeker: "CAS",
+  CAS: "CAS",
 
   /**
    * single minor asylum seeker
    */
-  singleminorasylumseeker: "CASM",
+  CASM: "CASM",
 
   /**
    * national
    */
-  national: "CN",
+  CN: "CN",
 
   /**
    * non-country member without residence permit
    */
-  noncountrymemberwithoutresidencepermit: "CNRP",
+  CNRP: "CNRP",
 
   /**
    * non-country member minor without residence permit
    */
-  noncountrymemberminorwithoutresidencepermit: "CNRPM",
+  CNRPM: "CNRPM",
 
   /**
    * permit card applicant
    */
-  permitcardapplicant: "CPCA",
+  CPCA: "CPCA",
 
   /**
    * non-country member with residence permit
    */
-  noncountrymemberwithresidencepermit: "CRP",
+  CRP: "CRP",
 
   /**
    * non-country member minor with residence permit
    */
-  noncountrymemberminorwithresidencepermit: "CRPM",
+  CRPM: "CRPM",
 } as const;
 
 /**

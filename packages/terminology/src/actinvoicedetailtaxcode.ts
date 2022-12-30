@@ -6,17 +6,17 @@ export const ActInvoiceDetailTaxCodeCode = {
   /**
    * federal sales tax
    */
-  federalsalestax: "FST",
+  FST: "FST",
 
   /**
    * harmonized sales Tax
    */
-  harmonizedsalesTax: "HST",
+  HST: "HST",
 
   /**
    * provincial/state sales tax
    */
-  provincialstatesalestax: "PST",
+  PST: "PST",
 } as const;
 
 /**

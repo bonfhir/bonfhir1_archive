@@ -6,7 +6,7 @@ export const LingualRouteCode = {
   /**
    * Translingual
    */
-  Translingual: "TRNSLING",
+  TRNSLING: "TRNSLING",
 } as const;
 
 /**

@@ -6,172 +6,172 @@ export const MediaTypeCode = {
   /**
    * ApplicationMediaType
    */
-  ApplicationMediaType: "application",
+  application: "application",
 
   /**
    * DICOM
    */
-  DICOM: "application/dicom",
+  "application/dicom": "application/dicom",
 
   /**
    * MSWORD
    */
-  MSWORD: "application/msword",
+  "application/msword": "application/msword",
 
   /**
    * PDF
    */
-  PDF: "application/pdf",
+  "application/pdf": "application/pdf",
 
   /**
    * AudioMediaType
    */
-  AudioMediaType: "audio",
+  audio: "audio",
 
   /**
    * Basic Audio
    */
-  BasicAudio: "audio/basic",
+  "audio/basic": "audio/basic",
 
   /**
    * K32ADPCM Audio
    */
-  K32ADPCMAudio: "audio/k32adpcm",
+  "audio/k32adpcm": "audio/k32adpcm",
 
   /**
    * MPEG audio layer 3
    */
-  MPEGaudiolayer3: "audio/mpeg",
+  "audio/mpeg": "audio/mpeg",
 
   /**
    * ImageMediaType
    */
-  ImageMediaType: "image",
+  image: "image",
 
   /**
    * G3Fax Image
    */
-  G3FaxImage: "image/g3fax",
+  "image/g3fax": "image/g3fax",
 
   /**
    * GIF Image
    */
-  GIFImage: "image/gif",
+  "image/gif": "image/gif",
 
   /**
    * JPEG Image
    */
-  JPEGImage: "image/jpeg",
+  "image/jpeg": "image/jpeg",
 
   /**
    * PNG Image
    */
-  PNGImage: "image/png",
+  "image/png": "image/png",
 
   /**
    * TIFF Image
    */
-  TIFFImage: "image/tiff",
+  "image/tiff": "image/tiff",
 
   /**
    * ModelMediaType
    */
-  ModelMediaType: "model",
+  model: "model",
 
   /**
    * VRML Model
    */
-  VRMLModel: "model/vrml",
+  "model/vrml": "model/vrml",
 
   /**
    * MultipartMediaType
    */
-  MultipartMediaType: "multipart",
+  multipart: "multipart",
 
   /**
    * CDA Level 1 Multipart
    */
-  CDALevel1Multipart: "multipart/x-hl7-cda-level-one",
+  "multipart/x-hl7-cda-level-one": "multipart/x-hl7-cda-level-one",
 
   /**
    * CDA Level 1 Multipart
    */
-  CDALevel1Multipart: "multipart/x-hl7-cda-level1",
+  "multipart/x-hl7-cda-level1": "multipart/x-hl7-cda-level1",
 
   /**
    * TextMediaType
    */
-  TextMediaType: "text",
+  text: "text",
 
   /**
    * HTML Text
    */
-  HTMLText: "text/html",
+  "text/html": "text/html",
 
   /**
    * Plain Text
    */
-  PlainText: "text/plain",
+  "text/plain": "text/plain",
 
   /**
    * RTF Text
    */
-  RTFText: "text/rtf",
+  "text/rtf": "text/rtf",
 
   /**
    * SGML Text
    */
-  SGMLText: "text/sgml",
+  "text/sgml": "text/sgml",
 
   /**
    * HL7 Text
    */
-  HL7Text: "text/x-hl7-ft",
+  "text/x-hl7-ft": "text/x-hl7-ft",
 
   /**
    * HL7 Structured Narrative
    */
-  HL7StructuredNarrative: "text/x-hl7-text+xml",
+  "text/x-hl7-text+xml": "text/x-hl7-text+xml",
 
   /**
    * XML Text
    */
-  XMLText: "text/xml",
+  "text/xml": "text/xml",
 
   /**
    * VideoMediaType
    */
-  VideoMediaType: "video",
+  video: "video",
 
   /**
    * MP4 Video
    */
-  MP4Video: "video/mp4",
+  "video/mp4": "video/mp4",
 
   /**
    * MPEG Video
    */
-  MPEGVideo: "video/mpeg",
+  "video/mpeg": "video/mpeg",
 
   /**
    * QuickTime Video
    */
-  QuickTimeVideo: "video/quicktime",
+  "video/quicktime": "video/quicktime",
 
   /**
    * WebM Video
    */
-  WebMVideo: "video/webm",
+  "video/webm": "video/webm",
 
   /**
    * X-AVI Video
    */
-  XAVIVideo: "video/x-avi",
+  "video/x-avi": "video/x-avi",
 
   /**
    * Windows Media Video
    */
-  WindowsMediaVideo: "video/x-ms-wmv",
+  "video/x-ms-wmv": "video/x-ms-wmv",
 } as const;
 
 /**

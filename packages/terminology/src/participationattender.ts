@@ -6,7 +6,7 @@ export const ParticipationAttenderCode = {
   /**
    * attender
    */
-  attender: "ATND",
+  ATND: "ATND",
 } as const;
 
 /**

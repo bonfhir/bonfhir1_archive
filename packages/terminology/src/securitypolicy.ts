@@ -11,162 +11,162 @@ export const SecurityPolicyCode = {
   /**
    * security policy
    */
-  securitypolicy: "SecurityPolicy",
+  SecurityPolicy: "SecurityPolicy",
 
   /**
    * authorization policy
    */
-  authorizationpolicy: "AUTHPOL",
+  AUTHPOL: "AUTHPOL",
 
   /**
    * access control scheme
    */
-  accesscontrolscheme: "ACCESSCONSCHEME",
+  ACCESSCONSCHEME: "ACCESSCONSCHEME",
 
   /**
    * delegation policy
    */
-  delegationpolicy: "DELEPOL",
+  DELEPOL: "DELEPOL",
 
   /**
    * obligation policy
    */
-  obligationpolicy: "ObligationPolicy",
+  ObligationPolicy: "ObligationPolicy",
 
   /**
    * anonymize
    */
-  anonymize: "ANONY",
+  ANONY: "ANONY",
 
   /**
    * accounting of disclosure
    */
-  accountingofdisclosure: "AOD",
+  AOD: "AOD",
 
   /**
    * audit
    */
-  audit: "AUDIT",
+  AUDIT: "AUDIT",
 
   /**
    * audit trail
    */
-  audittrail: "AUDTR",
+  AUDTR: "AUDTR",
 
   /**
    * comply with policy
    */
-  complywithpolicy: "CPLYPOL",
+  CPLYPOL: "CPLYPOL",
 
   /**
    * comply with confidentiality code
    */
-  complywithconfidentialitycode: "CPLYCC",
+  CPLYCC: "CPLYCC",
 
   /**
    * comply with consent directive
    */
-  complywithconsentdirective: "CPLYCD",
+  CPLYCD: "CPLYCD",
 
   /**
    * comply with controlled unclassified information policy
    */
-  complywithcontrolledunclassifiedinformationpolicy: "CPLYCUI",
+  CPLYCUI: "CPLYCUI",
 
   /**
    * comply with jurisdictional privacy policy
    */
-  complywithjurisdictionalprivacypolicy: "CPLYJPP",
+  CPLYJPP: "CPLYJPP",
 
   /**
    * comply with jurisdictional security policy
    */
-  complywithjurisdictionalsecuritypolicy: "CPLYJSP",
+  CPLYJSP: "CPLYJSP",
 
   /**
    * comply with organizational privacy policy
    */
-  complywithorganizationalprivacypolicy: "CPLYOPP",
+  CPLYOPP: "CPLYOPP",
 
   /**
    * comply with organizational security policy
    */
-  complywithorganizationalsecuritypolicy: "CPLYOSP",
+  CPLYOSP: "CPLYOSP",
 
   /**
    * declassify security label
    */
-  declassifysecuritylabel: "DECLASSIFYLABEL",
+  DECLASSIFYLABEL: "DECLASSIFYLABEL",
 
   /**
    * deidentify
    */
-  deidentify: "DEID",
+  DEID: "DEID",
 
   /**
    * delete after use
    */
-  deleteafteruse: "DELAU",
+  DELAU: "DELAU",
 
   /**
    * downgrade security label
    */
-  downgradesecuritylabel: "DOWNGRDLABEL",
+  DOWNGRDLABEL: "DOWNGRDLABEL",
 
   /**
    * derive security label
    */
-  derivesecuritylabel: "DRIVLABEL",
+  DRIVLABEL: "DRIVLABEL",
 
   /**
    * encrypt
    */
-  encrypt: "ENCRYPT",
+  ENCRYPT: "ENCRYPT",
 
   /**
    * encrypt at rest
    */
-  encryptatrest: "ENCRYPTR",
+  ENCRYPTR: "ENCRYPTR",
 
   /**
    * encrypt in transit
    */
-  encryptintransit: "ENCRYPTT",
+  ENCRYPTT: "ENCRYPTT",
 
   /**
    * encrypt in use
    */
-  encryptinuse: "ENCRYPTU",
+  ENCRYPTU: "ENCRYPTU",
 
   /**
    * human approval
    */
-  humanapproval: "HUAPRV",
+  HUAPRV: "HUAPRV",
 
   /**
    * assign security label
    */
-  assignsecuritylabel: "LABEL",
+  LABEL: "LABEL",
 
   /**
    * mask
    */
-  mask: "MASK",
+  MASK: "MASK",
 
   /**
    * minimum necessary
    */
-  minimumnecessary: "MINEC",
+  MINEC: "MINEC",
 
   /**
    * persist security label
    */
-  persistsecuritylabel: "PERSISTLABEL",
+  PERSISTLABEL: "PERSISTLABEL",
 
   /**
    * privacy mark
    */
-  privacymark: "PRIVMARK",
+  PRIVMARK: "PRIVMARK",
 
   /**
    * CUI Mark
@@ -176,22 +176,22 @@ export const SecurityPolicyCode = {
   /**
    * pseudonymize
    */
-  pseudonymize: "PSEUD",
+  PSEUD: "PSEUD",
 
   /**
    * redact
    */
-  redact: "REDACT",
+  REDACT: "REDACT",
 
   /**
    * upgrade security label
    */
-  upgradesecuritylabel: "UPGRDLABEL",
+  UPGRDLABEL: "UPGRDLABEL",
 
   /**
    * privacy mark
    */
-  privacymark: "PrivacyMark",
+  PrivacyMark: "PrivacyMark",
 
   /**
    * ControlledUnclassifiedInformation
@@ -216,12 +216,12 @@ export const SecurityPolicyCode = {
   /**
    * (CUI//HLTH)
    */
-  CUIHLTH: "CUIHLTHP",
+  CUIHLTHP: "CUIHLTHP",
 
   /**
    * (CUI)
    */
-  CUI: "CUIP",
+  CUIP: "CUIP",
 
   /**
    * CUI//PRVCY
@@ -231,32 +231,32 @@ export const SecurityPolicyCode = {
   /**
    * (CUI//PRVCY)
    */
-  CUIPRVCY: "CUIPRVCYP",
+  CUIPRVCYP: "CUIPRVCYP",
 
   /**
    * CUI//SP-HLTH
    */
-  CUISPHLTH: "CUISP-HLTH",
+  "CUISP-HLTH": "CUISP-HLTH",
 
   /**
    * (CUI//SP-HLTH)
    */
-  CUISPHLTH: "CUISP-HLTHP",
+  "CUISP-HLTHP": "CUISP-HLTHP",
 
   /**
    * CUI//SP-PRVCY
    */
-  CUISPPRVCY: "CUISP-PRVCY",
+  "CUISP-PRVCY": "CUISP-PRVCY",
 
   /**
    * (CUI//SP-PRVCY)
    */
-  CUISPPRVCY: "CUISP-PRVCYP",
+  "CUISP-PRVCYP": "CUISP-PRVCYP",
 
   /**
    * (U)
    */
-  U: "UUI",
+  UUI: "UUI",
 
   /**
    * Security Label Mark
@@ -266,128 +266,127 @@ export const SecurityPolicyCode = {
   /**
    * confidential mark
    */
-  confidentialmark: "ConfidentialMark",
+  ConfidentialMark: "ConfidentialMark",
 
   /**
    * copy of original mark
    */
-  copyoforiginalmark: "COPYMark",
+  COPYMark: "COPYMark",
 
   /**
    * deliver only to addressee mark
    */
-  deliveronlytoaddresseemark: "DeliverToAddresseeOnlyMark",
+  DeliverToAddresseeOnlyMark: "DeliverToAddresseeOnlyMark",
 
   /**
    * prohibition against redisclosure mark
    */
-  prohibitionagainstredisclosuremark: "RedisclosureProhibitionMark",
+  RedisclosureProhibitionMark: "RedisclosureProhibitionMark",
 
   /**
    * restricted confidentiality mark
    */
-  restrictedconfidentialitymark: "RestrictedConfidentialityMark",
+  RestrictedConfidentialityMark: "RestrictedConfidentialityMark",
 
   /**
    * Draft Mark
    */
-  DraftMark: "DRAFTMark",
+  DRAFTMark: "DRAFTMark",
 
   /**
    * refrain policy
    */
-  refrainpolicy: "RefrainPolicy",
+  RefrainPolicy: "RefrainPolicy",
 
   /**
    * no disclosure without subject authorization
    */
-  nodisclosurewithoutsubjectauthorization: "NOAUTH",
+  NOAUTH: "NOAUTH",
 
   /**
    * no collection
    */
-  nocollection: "NOCOLLECT",
+  NOCOLLECT: "NOCOLLECT",
 
   /**
    * no disclosure without consent directive
    */
-  nodisclosurewithoutconsentdirective: "NODSCLCD",
+  NODSCLCD: "NODSCLCD",
 
   /**
    * no disclosure without information subject's consent directive
    */
-  nodisclosurewithoutinformationsubjectsconsentdirective: "NODSCLCDS",
+  NODSCLCDS: "NODSCLCDS",
 
   /**
    * no integration
    */
-  nointegration: "NOINTEGRATE",
+  NOINTEGRATE: "NOINTEGRATE",
 
   /**
    * no unlisted entity disclosure
    */
-  nounlistedentitydisclosure: "NOLIST",
+  NOLIST: "NOLIST",
 
   /**
    * no disclosure without MOU
    */
-  nodisclosurewithoutMOU: "NOMOU",
+  NOMOU: "NOMOU",
 
   /**
    * no disclosure without organizational authorization
    */
-  nodisclosurewithoutorganizationalauthorization: "NOORGPOL",
+  NOORGPOL: "NOORGPOL",
 
   /**
    * no disclosure to patient, family or caregivers without attending provider's authorization
    */
-  nodisclosuretopatientfamilyorcaregiverswithoutattendingprovidersauthorization:
-    "NOPAT",
+  NOPAT: "NOPAT",
 
   /**
    * no collection beyond purpose of use
    */
-  nocollectionbeyondpurposeofuse: "NOPERSISTP",
+  NOPERSISTP: "NOPERSISTP",
 
   /**
    * no redisclosure without consent directive
    */
-  noredisclosurewithoutconsentdirective: "NORDSCLCD",
+  NORDSCLCD: "NORDSCLCD",
 
   /**
    * no redisclosure without consent directive
    */
-  noredisclosurewithoutconsentdirective: "NORDSLCD",
+  NORDSLCD: "NORDSLCD",
 
   /**
    * no redisclosure without information subject's consent directive
    */
-  noredisclosurewithoutinformationsubjectsconsentdirective: "NORDSCLCDS",
+  NORDSCLCDS: "NORDSCLCDS",
 
   /**
    * no disclosure without jurisdictional authorization
    */
-  nodisclosurewithoutjurisdictionalauthorization: "NORDSCLW",
+  NORDSCLW: "NORDSCLW",
 
   /**
    * no relinking
    */
-  norelinking: "NORELINK",
+  NORELINK: "NORELINK",
 
   /**
    * no reuse beyond purpose of use
    */
-  noreusebeyondpurposeofuse: "NOREUSE",
+  NOREUSE: "NOREUSE",
 
   /**
    * no unauthorized VIP disclosure
    */
-  nounauthorizedVIPdisclosure: "NOVIP",
+  NOVIP: "NOVIP",
 
   /**
    * no disclosure without originator authorization
    */
-  nodisclosurewithoutoriginatorauthorization: "ORCON",
+  ORCON: "ORCON",
 } as const;
 
 /**

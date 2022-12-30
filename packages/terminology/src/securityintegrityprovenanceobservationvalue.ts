@@ -6,92 +6,92 @@ export const SecurityIntegrityProvenanceObservationValueCode = {
   /**
    * provenance asserted by
    */
-  provenanceassertedby: "_SECINTPRVABOBV",
+  _SECINTPRVABOBV: "_SECINTPRVABOBV",
 
   /**
    * clinician asserted
    */
-  clinicianasserted: "CLINAST",
+  CLINAST: "CLINAST",
 
   /**
    * device asserted
    */
-  deviceasserted: "DEVAST",
+  DEVAST: "DEVAST",
 
   /**
    * healthcare professional asserted
    */
-  healthcareprofessionalasserted: "HCPAST",
+  HCPAST: "HCPAST",
 
   /**
    * patient acquaintance asserted
    */
-  patientacquaintanceasserted: "PACQAST",
+  PACQAST: "PACQAST",
 
   /**
    * patient asserted
    */
-  patientasserted: "PATAST",
+  PATAST: "PATAST",
 
   /**
    * payer asserted
    */
-  payerasserted: "PAYAST",
+  PAYAST: "PAYAST",
 
   /**
    * professional asserted
    */
-  professionalasserted: "PROAST",
+  PROAST: "PROAST",
 
   /**
    * substitute decision maker asserted
    */
-  substitutedecisionmakerasserted: "SDMAST",
+  SDMAST: "SDMAST",
 
   /**
    * provenance reported by
    */
-  provenancereportedby: "_SECINTPRVRBOBV",
+  _SECINTPRVRBOBV: "_SECINTPRVRBOBV",
 
   /**
    * clinician reported
    */
-  clinicianreported: "CLINRPT",
+  CLINRPT: "CLINRPT",
 
   /**
    * device reported
    */
-  devicereported: "DEVRPT",
+  DEVRPT: "DEVRPT",
 
   /**
    * healthcare professional reported
    */
-  healthcareprofessionalreported: "HCPRPT",
+  HCPRPT: "HCPRPT",
 
   /**
    * patient acquaintance reported
    */
-  patientacquaintancereported: "PACQRPT",
+  PACQRPT: "PACQRPT",
 
   /**
    * patient reported
    */
-  patientreported: "PATRPT",
+  PATRPT: "PATRPT",
 
   /**
    * payer reported
    */
-  payerreported: "PAYRPT",
+  PAYRPT: "PAYRPT",
 
   /**
    * professional reported
    */
-  professionalreported: "PRORPT",
+  PRORPT: "PRORPT",
 
   /**
    * substitute decision maker reported
    */
-  substitutedecisionmakerreported: "SDMRPT",
+  SDMRPT: "SDMRPT",
 } as const;
 
 /**

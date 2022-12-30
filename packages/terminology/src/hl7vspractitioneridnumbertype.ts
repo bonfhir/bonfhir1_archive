@@ -6,62 +6,62 @@ export const Hl7VSPractitionerIdNumberTypeCode = {
   /**
    * County number
    */
-  Countynumber: "CY",
+  CY: "CY",
 
   /**
    * Drug Enforcement Administration registration number
    */
-  DrugEnforcementAdministrationregistrationnumber: "DEA",
+  DEA: "DEA",
 
   /**
    * General ledger number
    */
-  Generalledgernumber: "GL",
+  GL: "GL",
 
   /**
    * Labor and industries number
    */
-  Laborandindustriesnumber: "LI",
+  LI: "LI",
 
   /**
    * Labor and industries number
    */
-  Laborandindustriesnumber: "L&I",
+  "L&I": "L&I",
 
   /**
    * Practitioner Medicaid number
    */
-  PractitionerMedicaidnumber: "MCD",
+  MCD: "MCD",
 
   /**
    * Practitioner Medicare number
    */
-  PractitionerMedicarenumber: "MCR",
+  MCR: "MCR",
 
   /**
    * QA number
    */
-  QAnumber: "QA",
+  QA: "QA",
 
   /**
    * State license
    */
-  Statelicense: "SL",
+  SL: "SL",
 
   /**
    * Tax ID number
    */
-  TaxIDnumber: "TAX",
+  TAX: "TAX",
 
   /**
    * Training License Number
    */
-  TrainingLicenseNumber: "TRL",
+  TRL: "TRL",
 
   /**
    * Medicare/CMS (formerly HCFA)'s Universal Physician Identification numbers
    */
-  MedicareCMSformerlyHCFAsUniversalPhysicianIdentificationnumbers: "UPIN",
+  UPIN: "UPIN",
 } as const;
 
 /**

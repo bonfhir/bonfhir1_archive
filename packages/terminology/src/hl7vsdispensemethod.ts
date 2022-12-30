@@ -6,22 +6,22 @@ export const Hl7VSDispenseMethodCode = {
   /**
    * Traditional
    */
-  Traditional: "TR",
+  TR: "TR",
 
   /**
    * Unit Dose
    */
-  UnitDose: "UD",
+  UD: "UD",
 
   /**
    * Floor Stock
    */
-  FloorStock: "F",
+  F: "F",
 
   /**
    * Automatic Dispensing
    */
-  AutomaticDispensing: "AD",
+  AD: "AD",
 } as const;
 
 /**

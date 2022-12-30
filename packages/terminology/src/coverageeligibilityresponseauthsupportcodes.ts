@@ -6,42 +6,42 @@ export const CoverageEligibilityResponseAuthSupportCodesCode = {
   /**
    * Lab Order
    */
-  LabOrder: "laborder",
+  laborder: "laborder",
 
   /**
    * Lab Report
    */
-  LabReport: "labreport",
+  labreport: "labreport",
 
   /**
    * Diagnostic Image Order
    */
-  DiagnosticImageOrder: "diagnosticimageorder",
+  diagnosticimageorder: "diagnosticimageorder",
 
   /**
    * Diagnostic Image Report
    */
-  DiagnosticImageReport: "diagnosticimagereport",
+  diagnosticimagereport: "diagnosticimagereport",
 
   /**
    * Professional Report
    */
-  ProfessionalReport: "professionalreport",
+  professionalreport: "professionalreport",
 
   /**
    * Accident Report
    */
-  AccidentReport: "accidentreport",
+  accidentreport: "accidentreport",
 
   /**
    * Model
    */
-  Model: "model",
+  model: "model",
 
   /**
    * Picture
    */
-  Picture: "picture",
+  picture: "picture",
 } as const;
 
 /**

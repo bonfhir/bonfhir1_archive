@@ -6,22 +6,22 @@ export const DakotanCode = {
   /**
    * Assiniboine
    */
-  Assiniboine: "x-ASB",
+  "x-ASB": "x-ASB",
 
   /**
    * Dakota
    */
-  Dakota: "x-DHG",
+  "x-DHG": "x-DHG",
 
   /**
    * Lakota
    */
-  Lakota: "x-LKT",
+  "x-LKT": "x-LKT",
 
   /**
    * Nakota
    */
-  Nakota: "x-NKT",
+  "x-NKT": "x-NKT",
 } as const;
 
 /**

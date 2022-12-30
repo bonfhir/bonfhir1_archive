@@ -6,12 +6,12 @@ export const RoleClassManufacturedProductCode = {
   /**
    * manufactured product
    */
-  manufacturedproduct: "MANU",
+  MANU: "MANU",
 
   /**
    * therapeutic agent
    */
-  therapeuticagent: "THER",
+  THER: "THER",
 } as const;
 
 /**

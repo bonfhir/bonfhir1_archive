@@ -6,12 +6,12 @@ export const Hl7VSDeferredResponseTypeCode = {
   /**
    * Before the Date/Time specified
    */
-  BeforetheDateTimespecified: "B",
+  B: "B",
 
   /**
    * Later than the Date/Time specified
    */
-  LaterthantheDateTimespecified: "L",
+  L: "L",
 } as const;
 
 /**

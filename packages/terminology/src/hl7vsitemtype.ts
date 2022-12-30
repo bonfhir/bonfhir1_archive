@@ -6,27 +6,27 @@ export const Hl7VSItemTypeCode = {
   /**
    * Equipment
    */
-  Equipment: "EQP",
+  EQP: "EQP",
 
   /**
    * Supply
    */
-  Supply: "SUP",
+  SUP: "SUP",
 
   /**
    * Implant
    */
-  Implant: "IMP",
+  IMP: "IMP",
 
   /**
    * Medication
    */
-  Medication: "MED",
+  MED: "MED",
 
   /**
    * Tubes, Drains, and Catheters
    */
-  TubesDrainsandCatheters: "TDC",
+  TDC: "TDC",
 } as const;
 
 /**

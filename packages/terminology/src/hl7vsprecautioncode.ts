@@ -6,47 +6,47 @@ export const Hl7VSPrecautionCodeCode = {
   /**
    * Aggressive
    */
-  Aggressive: "A",
+  A: "A",
 
   /**
    * Blind
    */
-  Blind: "B",
+  B: "B",
 
   /**
    * Confused
    */
-  Confused: "C",
+  C: "C",
 
   /**
    * Deaf
    */
-  Deaf: "D",
+  D: "D",
 
   /**
    * On IV
    */
-  OnIV: "I",
+  I: "I",
 
   /**
    * Do not resuscitate
    */
-  Donotresuscitate: "N",
+  N: "N",
 
   /**
    * Paraplegic
    */
-  Paraplegic: "P",
+  P: "P",
 
   /**
    * Other
    */
-  Other: "O",
+  O: "O",
 
   /**
    * Unknown
    */
-  Unknown: "U",
+  U: "U",
 } as const;
 
 /**

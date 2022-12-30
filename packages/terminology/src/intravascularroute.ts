@@ -6,22 +6,22 @@ export const IntravascularRouteCode = {
   /**
    * Diffusion, hemodialysis
    */
-  Diffusionhemodialysis: "HEMODIFF",
+  HEMODIFF: "HEMODIFF",
 
   /**
    * Infusion, intravascular
    */
-  Infusionintravascular: "IVASCINFUS",
+  IVASCINFUS: "IVASCINFUS",
 
   /**
    * Injection, hemodialysis port
    */
-  Injectionhemodialysisport: "HEMOPORT",
+  HEMOPORT: "HEMOPORT",
 
   /**
    * Injection, intravascular
    */
-  Injectionintravascular: "IVASCINJ",
+  IVASCINJ: "IVASCINJ",
 } as const;
 
 /**

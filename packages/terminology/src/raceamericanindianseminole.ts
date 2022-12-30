@@ -6,32 +6,32 @@ export const RaceAmericanIndianSeminoleCode = {
   /**
    * Seminole
    */
-  Seminole: "1566-9",
+  "1566-9": "1566-9",
 
   /**
    * Big Cypress
    */
-  BigCypress: "1567-7",
+  "1567-7": "1567-7",
 
   /**
    * Brighton
    */
-  Brighton: "1568-5",
+  "1568-5": "1568-5",
 
   /**
    * Florida Seminole
    */
-  FloridaSeminole: "1569-3",
+  "1569-3": "1569-3",
 
   /**
    * Hollywood Seminole
    */
-  HollywoodSeminole: "1570-1",
+  "1570-1": "1570-1",
 
   /**
    * Oklahoma Seminole
    */
-  OklahomaSeminole: "1571-9",
+  "1571-9": "1571-9",
 } as const;
 
 /**

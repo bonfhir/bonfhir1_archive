@@ -6,12 +6,12 @@ export const RaceAmericanIndianPequotCode = {
   /**
    * Pequot
    */
-  Pequot: "1453-0",
+  "1453-0": "1453-0",
 
   /**
    * Marshantucket Pequot
    */
-  MarshantucketPequot: "1454-8",
+  "1454-8": "1454-8",
 } as const;
 
 /**

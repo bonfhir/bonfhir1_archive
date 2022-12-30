@@ -6,12 +6,12 @@ export const ConsultedPrescriberManagementCodeCode = {
   /**
    * Consulted Prescriber
    */
-  ConsultedPrescriber: "5",
+  "5": "5",
 
   /**
    * Prescriber Declined Change
    */
-  PrescriberDeclinedChange: "6",
+  "6": "6",
 } as const;
 
 /**

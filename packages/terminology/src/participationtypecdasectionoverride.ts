@@ -6,22 +6,22 @@ export const ParticipationTypeCDASectionOverrideCode = {
   /**
    * author (originator)
    */
-  authororiginator: "AUT",
+  AUT: "AUT",
 
   /**
    * authenticator
    */
-  authenticator: "AUTHEN",
+  AUTHEN: "AUTHEN",
 
   /**
    * informant
    */
-  informant: "INF",
+  INF: "INF",
 
   /**
    * subject
    */
-  subject: "SBJ",
+  SBJ: "SBJ",
 } as const;
 
 /**

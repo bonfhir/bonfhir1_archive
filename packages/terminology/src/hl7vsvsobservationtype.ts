@@ -6,17 +6,17 @@ export const Hl7VSVSObservationTypeCode = {
   /**
    * Question
    */
-  Question: "QST",
+  QST: "QST",
 
   /**
    * Result
    */
-  Result: "RSLT",
+  RSLT: "RSLT",
 
   /**
    * Supporting Clinical Information
    */
-  SupportingClinicalInformation: "SCI",
+  SCI: "SCI",
 } as const;
 
 /**

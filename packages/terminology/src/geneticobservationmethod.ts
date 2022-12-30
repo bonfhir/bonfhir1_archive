@@ -6,7 +6,7 @@ export const GeneticObservationMethodCode = {
   /**
    * GeneticObservationMethod
    */
-  GeneticObservationMethod: "_GeneticObservationMethod",
+  _GeneticObservationMethod: "_GeneticObservationMethod",
 
   /**
    * PCR

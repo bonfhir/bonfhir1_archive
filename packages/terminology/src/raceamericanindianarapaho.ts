@@ -6,22 +6,22 @@ export const RaceAmericanIndianArapahoCode = {
   /**
    * Arapaho
    */
-  Arapaho: "1021-5",
+  "1021-5": "1021-5",
 
   /**
    * Northern Arapaho
    */
-  NorthernArapaho: "1022-3",
+  "1022-3": "1022-3",
 
   /**
    * Southern Arapaho
    */
-  SouthernArapaho: "1023-1",
+  "1023-1": "1023-1",
 
   /**
    * Wind River Arapaho
    */
-  WindRiverArapaho: "1024-9",
+  "1024-9": "1024-9",
 } as const;
 
 /**

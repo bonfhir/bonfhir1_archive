@@ -6,7 +6,7 @@ export const IntracervicalRouteCode = {
   /**
    * Injection, intracervical (uterus)
    */
-  Injectionintracervicaluterus: "IUINJC",
+  IUINJC: "IUINJC",
 } as const;
 
 /**

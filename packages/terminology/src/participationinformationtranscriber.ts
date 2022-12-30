@@ -6,12 +6,12 @@ export const ParticipationInformationTranscriberCode = {
   /**
    * Transcriber
    */
-  Transcriber: "TRANS",
+  TRANS: "TRANS",
 
   /**
    * data entry person
    */
-  dataentryperson: "ENT",
+  ENT: "ENT",
 } as const;
 
 /**

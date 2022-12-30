@@ -6,7 +6,7 @@ export const ParticipationNonReuseableDeviceCode = {
   /**
    * non-reuseable device
    */
-  nonreuseabledevice: "NRD",
+  NRD: "NRD",
 } as const;
 
 /**

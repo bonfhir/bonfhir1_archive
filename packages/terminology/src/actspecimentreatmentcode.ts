@@ -6,42 +6,42 @@ export const ActSpecimenTreatmentCodeCode = {
   /**
    * Acidification
    */
-  Acidification: "ACID",
+  ACID: "ACID",
 
   /**
    * Alkalization
    */
-  Alkalization: "ALK",
+  ALK: "ALK",
 
   /**
    * Defibrination
    */
-  Defibrination: "DEFB",
+  DEFB: "DEFB",
 
   /**
    * Filtration
    */
-  Filtration: "FILT",
+  FILT: "FILT",
 
   /**
    * LDL Precipitation
    */
-  LDLPrecipitation: "LDLP",
+  LDLP: "LDLP",
 
   /**
    * Neutralization
    */
-  Neutralization: "NEUT",
+  NEUT: "NEUT",
 
   /**
    * Recalcification
    */
-  Recalcification: "RECA",
+  RECA: "RECA",
 
   /**
    * Ultrafiltration
    */
-  Ultrafiltration: "UFIL",
+  UFIL: "UFIL",
 } as const;
 
 /**

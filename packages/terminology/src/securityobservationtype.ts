@@ -10,62 +10,62 @@ export const SecurityObservationTypeCode = {
   /**
    * SecurityObservationType
    */
-  SecurityObservationType: "SECOBS",
+  SECOBS: "SECOBS",
 
   /**
    * security category observation
    */
-  securitycategoryobservation: "SECCATOBS",
+  SECCATOBS: "SECCATOBS",
 
   /**
    * security classification observation
    */
-  securityclassificationobservation: "SECCLASSOBS",
+  SECCLASSOBS: "SECCLASSOBS",
 
   /**
    * security control observation
    */
-  securitycontrolobservation: "SECCONOBS",
+  SECCONOBS: "SECCONOBS",
 
   /**
    * security integrity observation
    */
-  securityintegrityobservation: "SECINTOBS",
+  SECINTOBS: "SECINTOBS",
 
   /**
    * security alteration integrity observation
    */
-  securityalterationintegrityobservation: "SECALTINTOBS",
+  SECALTINTOBS: "SECALTINTOBS",
 
   /**
    * security data integrity observation
    */
-  securitydataintegrityobservation: "SECDATINTOBS",
+  SECDATINTOBS: "SECDATINTOBS",
 
   /**
    * security integrity confidence observation
    */
-  securityintegrityconfidenceobservation: "SECINTCONOBS",
+  SECINTCONOBS: "SECINTCONOBS",
 
   /**
    * security integrity provenance observation
    */
-  securityintegrityprovenanceobservation: "SECINTPRVOBS",
+  SECINTPRVOBS: "SECINTPRVOBS",
 
   /**
    * security integrity provenance asserted by observation
    */
-  securityintegrityprovenanceassertedbyobservation: "SECINTPRVABOBS",
+  SECINTPRVABOBS: "SECINTPRVABOBS",
 
   /**
    * security integrity provenance reported by observation
    */
-  securityintegrityprovenancereportedbyobservation: "SECINTPRVRBOBS",
+  SECINTPRVRBOBS: "SECINTPRVRBOBS",
 
   /**
    * security integrity status observation
    */
-  securityintegritystatusobservation: "SECINTSTOBS",
+  SECINTSTOBS: "SECINTSTOBS",
 
   /**
    * SECTRSTOBS
@@ -75,32 +75,32 @@ export const SecurityObservationTypeCode = {
   /**
    * trust accreditation observation
    */
-  trustaccreditationobservation: "TRSTACCRDOBS",
+  TRSTACCRDOBS: "TRSTACCRDOBS",
 
   /**
    * trust agreement observation
    */
-  trustagreementobservation: "TRSTAGREOBS",
+  TRSTAGREOBS: "TRSTAGREOBS",
 
   /**
    * trust certificate observation
    */
-  trustcertificateobservation: "TRSTCERTOBS",
+  TRSTCERTOBS: "TRSTCERTOBS",
 
   /**
    * trust framework observation
    */
-  trustframeworkobservation: "TRSTFWKOBS",
+  TRSTFWKOBS: "TRSTFWKOBS",
 
   /**
    * trust assurance observation
    */
-  trustassuranceobservation: "TRSTLOAOBS",
+  TRSTLOAOBS: "TRSTLOAOBS",
 
   /**
    * trust mechanism observation
    */
-  trustmechanismobservation: "TRSTMECOBS",
+  TRSTMECOBS: "TRSTMECOBS",
 } as const;
 
 /**

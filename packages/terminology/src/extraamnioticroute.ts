@@ -6,7 +6,7 @@ export const ExtraAmnioticRouteCode = {
   /**
    * Injection, extra-amniotic
    */
-  Injectionextraamniotic: "EXTRAMNINJ",
+  EXTRAMNINJ: "EXTRAMNINJ",
 } as const;
 
 /**

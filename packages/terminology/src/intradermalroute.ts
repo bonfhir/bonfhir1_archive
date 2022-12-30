@@ -6,12 +6,12 @@ export const IntradermalRouteCode = {
   /**
    * Implantation, intradermal
    */
-  Implantationintradermal: "IDIMPLNT",
+  IDIMPLNT: "IDIMPLNT",
 
   /**
    * Injection, intradermal
    */
-  Injectionintradermal: "IDINJ",
+  IDINJ: "IDINJ",
 } as const;
 
 /**

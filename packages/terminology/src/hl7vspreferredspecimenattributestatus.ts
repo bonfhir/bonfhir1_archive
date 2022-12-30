@@ -6,12 +6,12 @@ export const Hl7VSPreferredSpecimenAttributeStatusCode = {
   /**
    * Preferred
    */
-  Preferred: "P",
+  P: "P",
 
   /**
    * Alternate
    */
-  Alternate: "A",
+  A: "A",
 } as const;
 
 /**

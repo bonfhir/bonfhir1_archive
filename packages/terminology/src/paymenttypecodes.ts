@@ -6,17 +6,17 @@ export const PaymentTypeCodesCode = {
   /**
    * Payment
    */
-  Payment: "payment",
+  payment: "payment",
 
   /**
    * Adjustment
    */
-  Adjustment: "adjustment",
+  adjustment: "adjustment",
 
   /**
    * Advance
    */
-  Advance: "advance",
+  advance: "advance",
 } as const;
 
 /**

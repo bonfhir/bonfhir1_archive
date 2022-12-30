@@ -6,12 +6,12 @@ export const Hl7VSDeviceStatusCode = {
   /**
    * Ready
    */
-  Ready: "0",
+  "0": "0",
 
   /**
    * Not Ready
    */
-  NotReady: "1",
+  "1": "1",
 } as const;
 
 /**

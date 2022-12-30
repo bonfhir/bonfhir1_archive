@@ -6,7 +6,7 @@ export const ActRelationshipUpdatesConditionCode = {
   /**
    * updates (condition)
    */
-  updatescondition: "UPDT",
+  UPDT: "UPDT",
 } as const;
 
 /**

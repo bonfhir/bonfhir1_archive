@@ -6,7 +6,7 @@ export const ParticipationExposuretargetCode = {
   /**
    * ExposureTarget
    */
-  ExposureTarget: "EXPTRGT",
+  EXPTRGT: "EXPTRGT",
 } as const;
 
 /**

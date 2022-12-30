@@ -6,12 +6,12 @@ export const ParanasalSinusesRouteCode = {
   /**
    * Injection, paranasal sinuses
    */
-  Injectionparanasalsinuses: "PNSINJ",
+  PNSINJ: "PNSINJ",
 
   /**
    * Instillation, paranasal sinuses
    */
-  Instillationparanasalsinuses: "PNSINSTL",
+  PNSINSTL: "PNSINSTL",
 } as const;
 
 /**

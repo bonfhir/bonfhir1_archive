@@ -8,7 +8,7 @@ export const SecurityClassificationObservationTypeCode = {
   /**
    * security classification observation
    */
-  securityclassificationobservation: "SECCLASSOBS",
+  SECCLASSOBS: "SECCLASSOBS",
 } as const;
 
 /**

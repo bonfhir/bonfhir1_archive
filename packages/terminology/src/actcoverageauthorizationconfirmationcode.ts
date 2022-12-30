@@ -6,12 +6,12 @@ export const ActCoverageAuthorizationConfirmationCodeCode = {
   /**
    * Authorized
    */
-  Authorized: "AUTH",
+  AUTH: "AUTH",
 
   /**
    * Not Authorized
    */
-  NotAuthorized: "NAUTH",
+  NAUTH: "NAUTH",
 } as const;
 
 /**

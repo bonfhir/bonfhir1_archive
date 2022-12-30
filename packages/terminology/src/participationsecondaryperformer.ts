@@ -6,7 +6,7 @@ export const ParticipationSecondaryPerformerCode = {
   /**
    * secondary performer
    */
-  secondaryperformer: "SPRF",
+  SPRF: "SPRF",
 } as const;
 
 /**

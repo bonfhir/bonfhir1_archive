@@ -11,17 +11,17 @@ export const ReactivityObservationInterpretationCode = {
   /**
    * Non-reactive
    */
-  Nonreactive: "NR",
+  NR: "NR",
 
   /**
    * Reactive
    */
-  Reactive: "RR",
+  RR: "RR",
 
   /**
    * Weakly reactive
    */
-  Weaklyreactive: "WR",
+  WR: "WR",
 } as const;
 
 /**

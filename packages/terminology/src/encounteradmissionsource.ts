@@ -6,17 +6,17 @@ export const EncounterAdmissionSourceCode = {
   /**
    * emergency
    */
-  emergency: "E",
+  E: "E",
 
   /**
    * labor and delivery
    */
-  laboranddelivery: "LD",
+  LD: "LD",
 
   /**
    * newborn
    */
-  newborn: "NB",
+  NB: "NB",
 } as const;
 
 /**

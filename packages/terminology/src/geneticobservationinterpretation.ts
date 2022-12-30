@@ -6,12 +6,12 @@ export const GeneticObservationInterpretationCode = {
   /**
    * GeneticObservationInterpretation
    */
-  GeneticObservationInterpretation: "_GeneticObservationInterpretation",
+  _GeneticObservationInterpretation: "_GeneticObservationInterpretation",
 
   /**
    * Carrier
    */
-  Carrier: "CAR",
+  CAR: "CAR",
 
   /**
    * Carrier

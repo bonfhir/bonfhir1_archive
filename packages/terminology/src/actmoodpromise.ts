@@ -6,12 +6,12 @@ export const ActMoodPromiseCode = {
   /**
    * promise
    */
-  promise: "PRMS",
+  PRMS: "PRMS",
 
   /**
    * appointment
    */
-  appointment: "APT",
+  APT: "APT",
 } as const;
 
 /**

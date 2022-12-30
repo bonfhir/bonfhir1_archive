@@ -6,27 +6,27 @@ export const Hl7VSSensitivityToCausativeAgentCodeCode = {
   /**
    * Adverse Reaction (Not otherwise classified)
    */
-  AdverseReactionNototherwiseclassified: "AD",
+  AD: "AD",
 
   /**
    * Allergy
    */
-  Allergy: "AL",
+  AL: "AL",
 
   /**
    * Contraindication
    */
-  Contraindication: "CT",
+  CT: "CT",
 
   /**
    * Intolerance
    */
-  Intolerance: "IN",
+  IN: "IN",
 
   /**
    * Side Effect
    */
-  SideEffect: "SE",
+  SE: "SE",
 } as const;
 
 /**

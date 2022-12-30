@@ -6,52 +6,52 @@ export const Hl7VSReportSourceCode = {
   /**
    * Clinical trial
    */
-  Clinicaltrial: "C",
+  C: "C",
 
   /**
    * Literature
    */
-  Literature: "L",
+  L: "L",
 
   /**
    * Health professional
    */
-  Healthprofessional: "H",
+  H: "H",
 
   /**
    * Regulatory agency
    */
-  Regulatoryagency: "R",
+  R: "R",
 
   /**
    * Database/registry/poison control center
    */
-  Databaseregistrypoisoncontrolcenter: "D",
+  D: "D",
 
   /**
    * Non-healthcare professional
    */
-  Nonhealthcareprofessional: "N",
+  N: "N",
 
   /**
    * Patient
    */
-  Patient: "P",
+  P: "P",
 
   /**
    * Manufacturer/marketing authority holder
    */
-  Manufacturermarketingauthorityholder: "M",
+  M: "M",
 
   /**
    * Distributor
    */
-  Distributor: "E",
+  E: "E",
 
   /**
    * Other
    */
-  Other: "O",
+  O: "O",
 } as const;
 
 /**

@@ -6,12 +6,12 @@ export const SecurityDataIntegrityObservationValueCode = {
   /**
    * cryptographic hash function
    */
-  cryptographichashfunction: "CRYTOHASH",
+  CRYTOHASH: "CRYTOHASH",
 
   /**
    * digital signature
    */
-  digitalsignature: "DIGSIG",
+  DIGSIG: "DIGSIG",
 } as const;
 
 /**

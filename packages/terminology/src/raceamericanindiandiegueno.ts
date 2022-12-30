@@ -6,52 +6,52 @@ export const RaceAmericanIndianDieguenoCode = {
   /**
    * Diegueno
    */
-  Diegueno: "1222-9",
+  "1222-9": "1222-9",
 
   /**
    * Campo
    */
-  Campo: "1223-7",
+  "1223-7": "1223-7",
 
   /**
    * Capitan Grande
    */
-  CapitanGrande: "1224-5",
+  "1224-5": "1224-5",
 
   /**
    * Cuyapaipe
    */
-  Cuyapaipe: "1225-2",
+  "1225-2": "1225-2",
 
   /**
    * La Posta
    */
-  LaPosta: "1226-0",
+  "1226-0": "1226-0",
 
   /**
    * Manzanita
    */
-  Manzanita: "1227-8",
+  "1227-8": "1227-8",
 
   /**
    * Mesa Grande
    */
-  MesaGrande: "1228-6",
+  "1228-6": "1228-6",
 
   /**
    * San Pasqual
    */
-  SanPasqual: "1229-4",
+  "1229-4": "1229-4",
 
   /**
    * Santa Ysabel
    */
-  SantaYsabel: "1230-2",
+  "1230-2": "1230-2",
 
   /**
    * Sycuan
    */
-  Sycuan: "1231-0",
+  "1231-0": "1231-0",
 } as const;
 
 /**

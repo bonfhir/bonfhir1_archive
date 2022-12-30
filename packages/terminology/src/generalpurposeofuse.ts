@@ -6,47 +6,47 @@ export const GeneralPurposeOfUseCode = {
   /**
    * coverage under policy or program
    */
-  coverageunderpolicyorprogram: "COVERAGE",
+  COVERAGE: "COVERAGE",
 
   /**
    * Emergency Treatment
    */
-  EmergencyTreatment: "ETREAT",
+  ETREAT: "ETREAT",
 
   /**
    * healthcare marketing
    */
-  healthcaremarketing: "HMARKT",
+  HMARKT: "HMARKT",
 
   /**
    * healthcare operations
    */
-  healthcareoperations: "HOPERAT",
+  HOPERAT: "HOPERAT",
 
   /**
    * healthcare payment
    */
-  healthcarepayment: "HPAYMT",
+  HPAYMT: "HPAYMT",
 
   /**
    * healthcare research
    */
-  healthcareresearch: "HRESCH",
+  HRESCH: "HRESCH",
 
   /**
    * patient requested
    */
-  patientrequested: "PATRQT",
+  PATRQT: "PATRQT",
 
   /**
    * public health
    */
-  publichealth: "PUBHLTH",
+  PUBHLTH: "PUBHLTH",
 
   /**
    * treatment
    */
-  treatment: "TREAT",
+  TREAT: "TREAT",
 } as const;
 
 /**

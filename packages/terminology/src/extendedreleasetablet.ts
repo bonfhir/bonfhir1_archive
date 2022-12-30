@@ -6,22 +6,22 @@ export const ExtendedReleaseTabletCode = {
   /**
    * Extended Release Tablet
    */
-  ExtendedReleaseTablet: "ERTAB",
+  ERTAB: "ERTAB",
 
   /**
    * Extended Release Enteric Coated Tablet
    */
-  ExtendedReleaseEntericCoatedTablet: "ERECTAB",
+  ERECTAB: "ERECTAB",
 
   /**
    * 12 Hour Extended Release Tablet
    */
-  TwelveHourExtendedReleaseTablet: "ERTAB12",
+  ERTAB12: "ERTAB12",
 
   /**
    * 24 Hour Extended Release Tablet
    */
-  TwentyFourHourExtendedReleaseTablet: "ERTAB24",
+  ERTAB24: "ERTAB24",
 } as const;
 
 /**

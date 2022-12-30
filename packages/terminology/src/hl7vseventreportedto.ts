@@ -6,22 +6,22 @@ export const Hl7VSEventReportedToCode = {
   /**
    * Manufacturer
    */
-  Manufacturer: "M",
+  M: "M",
 
   /**
    * Local facility/user facility
    */
-  Localfacilityuserfacility: "L",
+  L: "L",
 
   /**
    * Regulatory agency
    */
-  Regulatoryagency: "R",
+  R: "R",
 
   /**
    * Distributor
    */
-  Distributor: "D",
+  D: "D",
 } as const;
 
 /**

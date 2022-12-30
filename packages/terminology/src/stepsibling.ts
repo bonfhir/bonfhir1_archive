@@ -6,17 +6,17 @@ export const StepSiblingCode = {
   /**
    * step sibling
    */
-  stepsibling: "STPSIB",
+  STPSIB: "STPSIB",
 
   /**
    * stepbrother
    */
-  stepbrother: "STPBRO",
+  STPBRO: "STPBRO",
 
   /**
    * stepsister
    */
-  stepsister: "STPSIS",
+  STPSIS: "STPSIS",
 } as const;
 
 /**

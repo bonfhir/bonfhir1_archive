@@ -6,32 +6,32 @@ export const ActRelationshipAccountingCode = {
   /**
    * ActRelationshipCostTracking
    */
-  ActRelationshipCostTracking: "_ActRelationshipCostTracking",
+  _ActRelationshipCostTracking: "_ActRelationshipCostTracking",
 
   /**
    * has charge
    */
-  hascharge: "CHRG",
+  CHRG: "CHRG",
 
   /**
    * has cost
    */
-  hascost: "COST",
+  COST: "COST",
 
   /**
    * ActRelationshipPosting
    */
-  ActRelationshipPosting: "_ActRelationshipPosting",
+  _ActRelationshipPosting: "_ActRelationshipPosting",
 
   /**
    * has credit
    */
-  hascredit: "CREDIT",
+  CREDIT: "CREDIT",
 
   /**
    * has debit
    */
-  hasdebit: "DEBIT",
+  DEBIT: "DEBIT",
 } as const;
 
 /**

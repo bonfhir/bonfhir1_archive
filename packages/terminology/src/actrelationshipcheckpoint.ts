@@ -18,27 +18,27 @@ export const ActRelationshipCheckpointCode = {
   /**
    * beginning
    */
-  beginning: "B",
+  B: "B",
 
   /**
    * end
    */
-  end: "E",
+  E: "E",
 
   /**
    * entry
    */
-  entry: "S",
+  S: "S",
 
   /**
    * through
    */
-  through: "T",
+  T: "T",
 
   /**
    * exit
    */
-  exit: "X",
+  X: "X",
 } as const;
 
 /**

@@ -6,7 +6,7 @@ export const IntracoronalRouteCode = {
   /**
    * Topical application, intracoronal (dental)
    */
-  Topicalapplicationintracoronaldental: "ICORONTA",
+  ICORONTA: "ICORONTA",
 } as const;
 
 /**

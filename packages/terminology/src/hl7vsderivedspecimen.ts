@@ -6,17 +6,17 @@ export const Hl7VSDerivedSpecimenCode = {
   /**
    * Parent Observation
    */
-  ParentObservation: "P",
+  P: "P",
 
   /**
    * Child Observation
    */
-  ChildObservation: "C",
+  C: "C",
 
   /**
    * Not Applicable
    */
-  NotApplicable: "N",
+  N: "N",
 } as const;
 
 /**

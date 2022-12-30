@@ -6,242 +6,242 @@ export const XActOrderableOrBillableCode = {
   /**
    * accommodation
    */
-  accommodation: "ACCM",
+  ACCM: "ACCM",
 
   /**
    * encounter
    */
-  encounter: "ENC",
+  ENC: "ENC",
 
   /**
    * care provision
    */
-  careprovision: "PCPR",
+  PCPR: "PCPR",
 
   /**
    * substance administration
    */
-  substanceadministration: "SBADM",
+  SBADM: "SBADM",
 
   /**
    * transportation
    */
-  transportation: "TRNS",
+  TRNS: "TRNS",
 
   /**
    * observation
    */
-  observation: "OBS",
+  OBS: "OBS",
 
   /**
    * ActClassROI
    */
-  ActClassROI: "_ActClassROI",
+  _ActClassROI: "_ActClassROI",
 
   /**
    * bounded ROI
    */
-  boundedROI: "ROIBND",
+  ROIBND: "ROIBND",
 
   /**
    * overlay ROI
    */
-  overlayROI: "ROIOVL",
+  ROIOVL: "ROIOVL",
 
   /**
    * subject physical position
    */
-  subjectphysicalposition: "_SubjectPhysicalPosition",
+  _SubjectPhysicalPosition: "_SubjectPhysicalPosition",
 
   /**
    * subject body position
    */
-  subjectbodyposition: "_SubjectBodyPosition",
+  _SubjectBodyPosition: "_SubjectBodyPosition",
 
   /**
    * left lateral decubitus
    */
-  leftlateraldecubitus: "LLD",
+  LLD: "LLD",
 
   /**
    * prone
    */
-  prone: "PRN",
+  PRN: "PRN",
 
   /**
    * right lateral decubitus
    */
-  rightlateraldecubitus: "RLD",
+  RLD: "RLD",
 
   /**
    * Semi-Fowler's
    */
-  SemiFowlers: "SFWL",
+  SFWL: "SFWL",
 
   /**
    * sitting
    */
-  sitting: "SIT",
+  SIT: "SIT",
 
   /**
    * standing
    */
-  standing: "STN",
+  STN: "STN",
 
   /**
    * supine
    */
-  supine: "SUP",
+  SUP: "SUP",
 
   /**
    * reverse trendelenburg
    */
-  reversetrendelenburg: "RTRD",
+  RTRD: "RTRD",
 
   /**
    * trendelenburg
    */
-  trendelenburg: "TRD",
+  TRD: "TRD",
 
   /**
    * imaging subject orientation
    */
-  imagingsubjectorientation: "_ImagingSubjectOrientation",
+  _ImagingSubjectOrientation: "_ImagingSubjectOrientation",
 
   /**
    * detected issue
    */
-  detectedissue: "ALRT",
+  ALRT: "ALRT",
 
   /**
    * battery
    */
-  battery: "BATTERY",
+  BATTERY: "BATTERY",
 
   /**
    * clinical trial
    */
-  clinicaltrial: "CLNTRL",
+  CLNTRL: "CLNTRL",
 
   /**
    * Condition Node
    */
-  ConditionNode: "CNOD",
+  CNOD: "CNOD",
 
   /**
    * Condition
    */
-  Condition: "COND",
+  COND: "COND",
 
   /**
    * public health case
    */
-  publichealthcase: "CASE",
+  CASE: "CASE",
 
   /**
    * outbreak
    */
-  outbreak: "OUTB",
+  OUTB: "OUTB",
 
   /**
    * diagnostic image
    */
-  diagnosticimage: "DGIMG",
+  DGIMG: "DGIMG",
 
   /**
    * genomic observation
    */
-  genomicobservation: "GEN",
+  GEN: "GEN",
 
   /**
    * determinant peptide
    */
-  determinantpeptide: "DETPOL",
+  DETPOL: "DETPOL",
 
   /**
    * expression level
    */
-  expressionlevel: "EXP",
+  EXP: "EXP",
 
   /**
    * locus
    */
-  locus: "LOC",
+  LOC: "LOC",
 
   /**
    * phenotype
    */
-  phenotype: "PHN",
+  PHN: "PHN",
 
   /**
    * polypeptide
    */
-  polypeptide: "POL",
+  POL: "POL",
 
   /**
    * bio sequence
    */
-  biosequence: "SEQ",
+  SEQ: "SEQ",
 
   /**
    * bio sequence variation
    */
-  biosequencevariation: "SEQVAR",
+  SEQVAR: "SEQVAR",
 
   /**
    * investigation
    */
-  investigation: "INVSTG",
+  INVSTG: "INVSTG",
 
   /**
    * observation series
    */
-  observationseries: "OBSSER",
+  OBSSER: "OBSSER",
 
   /**
    * correlated observation sequences
    */
-  correlatedobservationsequences: "OBSCOR",
+  OBSCOR: "OBSCOR",
 
   /**
    * position
    */
-  position: "POS",
+  POS: "POS",
 
   /**
    * position accuracy
    */
-  positionaccuracy: "POSACC",
+  POSACC: "POSACC",
 
   /**
    * position coordinate
    */
-  positioncoordinate: "POSCOORD",
+  POSCOORD: "POSCOORD",
 
   /**
    * specimen observation
    */
-  specimenobservation: "SPCOBS",
+  SPCOBS: "SPCOBS",
 
   /**
    * Verification
    */
-  Verification: "VERIF",
+  VERIF: "VERIF",
 
   /**
    * procedure
    */
-  procedure: "PROC",
+  PROC: "PROC",
 
   /**
    * Substance Extraction
    */
-  SubstanceExtraction: "SBEXT",
+  SBEXT: "SBEXT",
 
   /**
    * Specimen Collection
    */
-  SpecimenCollection: "SPECCOLLECT",
+  SPECCOLLECT: "SPECCOLLECT",
 } as const;
 
 /**

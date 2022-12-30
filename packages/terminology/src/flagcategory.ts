@@ -6,52 +6,52 @@ export const FlagCategoryCode = {
   /**
    * Diet
    */
-  Diet: "diet",
+  diet: "diet",
 
   /**
    * Drug
    */
-  Drug: "drug",
+  drug: "drug",
 
   /**
    * Lab
    */
-  Lab: "lab",
+  lab: "lab",
 
   /**
    * Administrative
    */
-  Administrative: "admin",
+  admin: "admin",
 
   /**
    * Subject Contact
    */
-  SubjectContact: "contact",
+  contact: "contact",
 
   /**
    * Clinical
    */
-  Clinical: "clinical",
+  clinical: "clinical",
 
   /**
    * Behavioral
    */
-  Behavioral: "behavioral",
+  behavioral: "behavioral",
 
   /**
    * Research
    */
-  Research: "research",
+  research: "research",
 
   /**
    * Advance Directive
    */
-  AdvanceDirective: "advance-directive",
+  "advance-directive": "advance-directive",
 
   /**
    * Safety
    */
-  Safety: "safety",
+  safety: "safety",
 } as const;
 
 /**

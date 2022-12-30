@@ -8,42 +8,42 @@ export const ActInformationAccessContextCodeCode = {
   /**
    * ActInformationAccessContextCode
    */
-  ActInformationAccessContextCode: "_ActInformationAccessContextCode",
+  _ActInformationAccessContextCode: "_ActInformationAccessContextCode",
 
   /**
    * authorized information transfer
    */
-  authorizedinformationtransfer: "INFAUT",
+  INFAUT: "INFAUT",
 
   /**
    * after explicit consent
    */
-  afterexplicitconsent: "INFCON",
+  INFCON: "INFCON",
 
   /**
    * only on court order
    */
-  onlyoncourtorder: "INFCRT",
+  INFCRT: "INFCRT",
 
   /**
    * only if danger to others
    */
-  onlyifdangertoothers: "INFDNG",
+  INFDNG: "INFDNG",
 
   /**
    * only in an emergency
    */
-  onlyinanemergency: "INFEMER",
+  INFEMER: "INFEMER",
 
   /**
    * only if public welfare risk
    */
-  onlyifpublicwelfarerisk: "INFPWR",
+  INFPWR: "INFPWR",
 
   /**
    * regulatory information transfer
    */
-  regulatoryinformationtransfer: "INFREG",
+  INFREG: "INFREG",
 } as const;
 
 /**

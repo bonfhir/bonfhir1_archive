@@ -11,7 +11,7 @@ export const Hl7VSVolumeUnitsCode = {
   /**
    * [pt_us]
    */
-  pt_us: "[pt_us]",
+  "[pt_us]": "[pt_us]",
 
   /**
    * ml

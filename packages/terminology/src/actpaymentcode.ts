@@ -8,22 +8,22 @@ export const ActPaymentCodeCode = {
   /**
    * Automated Clearing House
    */
-  AutomatedClearingHouse: "ACH",
+  ACH: "ACH",
 
   /**
    * Cheque
    */
-  Cheque: "CHK",
+  CHK: "CHK",
 
   /**
    * Direct Deposit
    */
-  DirectDeposit: "DDP",
+  DDP: "DDP",
 
   /**
    * Non-Payment Data
    */
-  NonPaymentData: "NON",
+  NON: "NON",
 } as const;
 
 /**

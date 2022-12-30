@@ -6,22 +6,22 @@ export const PastSubsetCode = {
   /**
    * previous
    */
-  previous: "PAST",
+  PAST: "PAST",
 
   /**
    * first known
    */
-  firstknown: "FIRST",
+  FIRST: "FIRST",
 
   /**
    * previous summary
    */
-  previoussummary: "PREVSUM",
+  PREVSUM: "PREVSUM",
 
   /**
    * most recent
    */
-  mostrecent: "RECENT",
+  RECENT: "RECENT",
 } as const;
 
 /**

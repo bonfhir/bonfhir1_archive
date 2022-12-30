@@ -6,22 +6,22 @@ export const ActRelationshipContainsStartOfCode = {
   /**
    * contains start of
    */
-  containsstartof: "SBSEAS",
+  SBSEAS: "SBSEAS",
 
   /**
    * starts before start of, ends with
    */
-  startsbeforestartofendswith: "SBSECWE",
+  SBSECWE: "SBSECWE",
 
   /**
    * contains start of, ends before end of
    */
-  containsstartofendsbeforeendof: "SBSEASEBE",
+  SBSEASEBE: "SBSEASEBE",
 
   /**
    * contains time of
    */
-  containstimeof: "SBSEAE",
+  SBSEAE: "SBSEAE",
 } as const;
 
 /**

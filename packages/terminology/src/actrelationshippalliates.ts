@@ -6,7 +6,7 @@ export const ActRelationshipPalliatesCode = {
   /**
    * palliates
    */
-  palliates: "PALLTREAT",
+  PALLTREAT: "PALLTREAT",
 } as const;
 
 /**

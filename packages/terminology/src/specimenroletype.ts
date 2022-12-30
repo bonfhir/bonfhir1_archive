@@ -6,57 +6,57 @@ export const SpecimenRoleTypeCode = {
   /**
    * Calibrator
    */
-  Calibrator: "C",
+  C: "C",
 
   /**
    * Group
    */
-  Group: "G",
+  G: "G",
 
   /**
    * Pool
    */
-  Pool: "L",
+  L: "L",
 
   /**
    * Patient
    */
-  Patient: "P",
+  P: "P",
 
   /**
    * Quality Control
    */
-  QualityControl: "Q",
+  Q: "Q",
 
   /**
    * Blind
    */
-  Blind: "B",
+  B: "B",
 
   /**
    * Electronic QC
    */
-  ElectronicQC: "E",
+  E: "E",
 
   /**
    * Filler Proficiency
    */
-  FillerProficiency: "F",
+  F: "F",
 
   /**
    * Operator Proficiency
    */
-  OperatorProficiency: "O",
+  O: "O",
 
   /**
    * Verifying
    */
-  Verifying: "V",
+  V: "V",
 
   /**
    * Replicate
    */
-  Replicate: "R",
+  R: "R",
 } as const;
 
 /**

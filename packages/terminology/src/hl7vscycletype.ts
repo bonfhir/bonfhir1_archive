@@ -6,162 +6,162 @@ export const Hl7VSCycleTypeCode = {
   /**
    * Flash
    */
-  Flash: "FLS",
+  FLS: "FLS",
 
   /**
    * Prevac
    */
-  Prevac: "PRV",
+  PRV: "PRV",
 
   /**
    * Gravity
    */
-  Gravity: "GRV",
+  GRV: "GRV",
 
   /**
    * Liquid
    */
-  Liquid: "LQD",
+  LQD: "LQD",
 
   /**
    * Express
    */
-  Express: "EXP",
+  EXP: "EXP",
 
   /**
    * Dart
    */
-  Dart: "DRT",
+  DRT: "DRT",
 
   /**
    * Dart Warm-up Cycle
    */
-  DartWarmupCycle: "DRW",
+  DRW: "DRW",
 
   /**
    * Thermal
    */
-  Thermal: "THR",
+  THR: "THR",
 
   /**
    * Isothermal
    */
-  Isothermal: "ISO",
+  ISO: "ISO",
 
   /**
    * Bowie-Dick Test
    */
-  BowieDickTest: "BWD",
+  BWD: "BWD",
 
   /**
    * Leak Test
    */
-  LeakTest: "LKT",
+  LKT: "LKT",
 
   /**
    * Wrap/Steam Flush Pressure Pulse (Wrap/SFPP)
    */
-  WrapSteamFlushPressurePulseWrapSFPP: "WFP",
+  WFP: "WFP",
 
   /**
    * Steam Flush Pressure Pulse
    */
-  SteamFlushPressurePulse: "SFP",
+  SFP: "SFP",
 
   /**
    * Chemical Wash
    */
-  ChemicalWash: "CMW",
+  CMW: "CMW",
 
   /**
    * Peracetic Acid
    */
-  PeraceticAcid: "PEA",
+  PEA: "PEA",
 
   /**
    * EO High Temperature
    */
-  EOHighTemperature: "EOH",
+  EOH: "EOH",
 
   /**
    * EO Low Temperature
    */
-  EOLowTemperature: "EOL",
+  EOL: "EOL",
 
   /**
    * Cart Wash
    */
-  CartWash: "CRT",
+  CRT: "CRT",
 
   /**
    * Utensil Wash
    */
-  UtensilWash: "UTL",
+  UTL: "UTL",
 
   /**
    * Instrument Wash
    */
-  InstrumentWash: "IST",
+  IST: "IST",
 
   /**
    * Glassware
    */
-  Glassware: "GLS",
+  GLS: "GLS",
 
   /**
    * Plastic Goods Wash
    */
-  PlasticGoodsWash: "PLA",
+  PLA: "PLA",
 
   /**
    * Anesthesia/Respiratory
    */
-  AnesthesiaRespiratory: "ANR",
+  ANR: "ANR",
 
   /**
    * Gentle
    */
-  Gentle: "GTL",
+  GTL: "GTL",
 
   /**
    * Optional Wash
    */
-  OptionalWash: "OPW",
+  OPW: "OPW",
 
   /**
    * Bedpans
    */
-  Bedpans: "BDP",
+  BDP: "BDP",
 
   /**
    * Tray/Basin
    */
-  TrayBasin: "TRB",
+  TRB: "TRB",
 
   /**
    * Gen. Purpose
    */
-  GenPurpose: "GNP",
+  GNP: "GNP",
 
   /**
    * Code
    */
-  Code: "COD",
+  COD: "COD",
 
   /**
    * Rinse
    */
-  Rinse: "RNS",
+  RNS: "RNS",
 
   /**
    * Second Rinse
    */
-  SecondRinse: "2RS",
+  "2RS": "2RS",
 
   /**
    * Decontamination
    */
-  Decontamination: "DEC",
+  DEC: "DEC",
 } as const;
 
 /**

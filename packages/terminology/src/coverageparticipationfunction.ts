@@ -6,87 +6,87 @@ export const CoverageParticipationFunctionCode = {
   /**
    * CoverageParticipationFunction
    */
-  CoverageParticipationFunction: "_CoverageParticipationFunction",
+  _CoverageParticipationFunction: "_CoverageParticipationFunction",
 
   /**
    * PayorParticipationFunction
    */
-  PayorParticipationFunction: "_PayorParticipationFunction",
+  _PayorParticipationFunction: "_PayorParticipationFunction",
 
   /**
    * claims adjudication
    */
-  claimsadjudication: "CLMADJ",
+  CLMADJ: "CLMADJ",
 
   /**
    * enrollment broker
    */
-  enrollmentbroker: "ENROLL",
+  ENROLL: "ENROLL",
 
   /**
    * ffs management
    */
-  ffsmanagement: "FFSMGT",
+  FFSMGT: "FFSMGT",
 
   /**
    * managed care management
    */
-  managedcaremanagement: "MCMGT",
+  MCMGT: "MCMGT",
 
   /**
    * provider management
    */
-  providermanagement: "PROVMGT",
+  PROVMGT: "PROVMGT",
 
   /**
    * utilization management
    */
-  utilizationmanagement: "UMGT",
+  UMGT: "UMGT",
 
   /**
    * SponsorParticipationFunction
    */
-  SponsorParticipationFunction: "_SponsorParticipationFunction",
+  _SponsorParticipationFunction: "_SponsorParticipationFunction",
 
   /**
    * fully insured
    */
-  fullyinsured: "FULINRD",
+  FULINRD: "FULINRD",
 
   /**
    * self insured
    */
-  selfinsured: "SELFINRD",
+  SELFINRD: "SELFINRD",
 
   /**
    * UnderwriterParticipationFunction
    */
-  UnderwriterParticipationFunction: "_UnderwriterParticipationFunction",
+  _UnderwriterParticipationFunction: "_UnderwriterParticipationFunction",
 
   /**
    * payor contracting
    */
-  payorcontracting: "PAYORCNTR",
+  PAYORCNTR: "PAYORCNTR",
 
   /**
    * reinsures
    */
-  reinsures: "REINS",
+  REINS: "REINS",
 
   /**
    * retrocessionaires
    */
-  retrocessionaires: "RETROCES",
+  RETROCES: "RETROCES",
 
   /**
    * subcontracting risk
    */
-  subcontractingrisk: "SUBCTRT",
+  SUBCTRT: "SUBCTRT",
 
   /**
    * underwriting
    */
-  underwriting: "UNDERWRTNG",
+  UNDERWRTNG: "UNDERWRTNG",
 } as const;
 
 /**

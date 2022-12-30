@@ -6,242 +6,242 @@ export const ContractSignerTypeCodesCode = {
   /**
    * Amender
    */
-  Amender: "AMENDER",
+  AMENDER: "AMENDER",
 
   /**
    * Authenticator
    */
-  Authenticator: "AUTHN",
+  AUTHN: "AUTHN",
 
   /**
    * Author
    */
-  Author: "AUT",
+  AUT: "AUT",
 
   /**
    * Affiliate
    */
-  Affiliate: "AFFL",
+  AFFL: "AFFL",
 
   /**
    * Agent
    */
-  Agent: "AGNT",
+  AGNT: "AGNT",
 
   /**
    * Assigned Entity
    */
-  AssignedEntity: "ASSIGNED",
+  ASSIGNED: "ASSIGNED",
 
   /**
    * Citizen
    */
-  Citizen: "CIT",
+  CIT: "CIT",
 
   /**
    * Claimant
    */
-  Claimant: "CLAIMANT",
+  CLAIMANT: "CLAIMANT",
 
   /**
    * Co-Author
    */
-  CoAuthor: "COAUTH",
+  COAUTH: "COAUTH",
 
   /**
    * Consenter
    */
-  Consenter: "CONSENTER",
+  CONSENTER: "CONSENTER",
 
   /**
    * Consent Witness
    */
-  ConsentWitness: "CONSWIT",
+  CONSWIT: "CONSWIT",
 
   /**
    * Contact
    */
-  Contact: "CONT",
+  CONT: "CONT",
 
   /**
    * Co-Participant
    */
-  CoParticipant: "COPART",
+  COPART: "COPART",
 
   /**
    * Covered Party
    */
-  CoveredParty: "COVPTY",
+  COVPTY: "COVPTY",
 
   /**
    * Delegatee
    */
-  Delegatee: "DELEGATEE",
+  DELEGATEE: "DELEGATEE",
 
   /**
    * Delegator
    */
-  Delegator: "delegator",
+  delegator: "delegator",
 
   /**
    * Dependent
    */
-  Dependent: "DEPEND",
+  DEPEND: "DEPEND",
 
   /**
    * Durable Power of Attorney
    */
-  DurablePowerofAttorney: "DPOWATT",
+  DPOWATT: "DPOWATT",
 
   /**
    * Emergency Contact
    */
-  EmergencyContact: "EMGCON",
+  EMGCON: "EMGCON",
 
   /**
    * Event Witness
    */
-  EventWitness: "EVTWIT",
+  EVTWIT: "EVTWIT",
 
   /**
    * Executor of Estate
    */
-  ExecutorofEstate: "EXCEST",
+  EXCEST: "EXCEST",
 
   /**
    * Grantee
    */
-  Grantee: "GRANTEE",
+  GRANTEE: "GRANTEE",
 
   /**
    * Grantor
    */
-  Grantor: "GRANTOR",
+  GRANTOR: "GRANTOR",
 
   /**
    * Guarantor
    */
-  Guarantor: "GUAR",
+  GUAR: "GUAR",
 
   /**
    * Guardian
    */
-  Guardian: "GUARD",
+  GUARD: "GUARD",
 
   /**
    * Guardian ad lidem
    */
-  Guardianadlidem: "GUADLTM",
+  GUADLTM: "GUADLTM",
 
   /**
    * Informant
    */
-  Informant: "INF",
+  INF: "INF",
 
   /**
    * Interpreter
    */
-  Interpreter: "INTPRT",
+  INTPRT: "INTPRT",
 
   /**
    * Investigation Subject
    */
-  InvestigationSubject: "INSBJ",
+  INSBJ: "INSBJ",
 
   /**
    * Healthcare Power of Attorney
    */
-  HealthcarePowerofAttorney: "HPOWATT",
+  HPOWATT: "HPOWATT",
 
   /**
    * Healthcare Provider
    */
-  HealthcareProvider: "HPROV",
+  HPROV: "HPROV",
 
   /**
    * Legal Authenticator
    */
-  LegalAuthenticator: "LEGAUTHN",
+  LEGAUTHN: "LEGAUTHN",
 
   /**
    * Named Insured
    */
-  NamedInsured: "NMDINS",
+  NMDINS: "NMDINS",
 
   /**
    * Next of Kin
    */
-  NextofKin: "NOK",
+  NOK: "NOK",
 
   /**
    * Notary
    */
-  Notary: "NOTARY",
+  NOTARY: "NOTARY",
 
   /**
    * Patient
    */
-  Patient: "PAT",
+  PAT: "PAT",
 
   /**
    * Power of Attorney
    */
-  PowerofAttorney: "POWATT",
+  POWATT: "POWATT",
 
   /**
    * Primary Author
    */
-  PrimaryAuthor: "PRIMAUTH",
+  PRIMAUTH: "PRIMAUTH",
 
   /**
    * Primary Responsible Party
    */
-  PrimaryResponsibleParty: "PRIRECIP",
+  PRIRECIP: "PRIRECIP",
 
   /**
    * Recipient
    */
-  Recipient: "RECIP",
+  RECIP: "RECIP",
 
   /**
    * Responsible Party
    */
-  ResponsibleParty: "RESPRSN",
+  RESPRSN: "RESPRSN",
 
   /**
    * Reviewer
    */
-  Reviewer: "REVIEWER",
+  REVIEWER: "REVIEWER",
 
   /**
    * Transcriber
    */
-  Transcriber: "TRANS",
+  TRANS: "TRANS",
 
   /**
    * Source
    */
-  Source: "SOURCE",
+  SOURCE: "SOURCE",
 
   /**
    * Special Power of Attorney
    */
-  SpecialPowerofAttorney: "SPOWATT",
+  SPOWATT: "SPOWATT",
 
   /**
    * Validator
    */
-  Validator: "VALID",
+  VALID: "VALID",
 
   /**
    * Verifier
    */
-  Verifier: "VERF",
+  VERF: "VERF",
 
   /**
    * Witness
    */
-  Witness: "WIT",
+  WIT: "WIT",
 } as const;
 
 /**

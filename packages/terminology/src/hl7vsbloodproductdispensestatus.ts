@@ -6,57 +6,57 @@ export const Hl7VSBloodProductDispenseStatusCode = {
   /**
    * Received into inventory (for specified patient)
    */
-  Receivedintoinventoryforspecifiedpatient: "RI",
+  RI: "RI",
 
   /**
    * Reserved and ready to dispense
    */
-  Reservedandreadytodispense: "RD",
+  RD: "RD",
 
   /**
    * Reserved (ordered and product allocated for the patient)
    */
-  Reservedorderedandproductallocatedforthepatient: "RS",
+  RS: "RS",
 
   /**
    * Released (no longer allocated for the patient)
    */
-  Releasednolongerallocatedforthepatient: "RE",
+  RE: "RE",
 
   /**
    * Dispensed to patient location
    */
-  Dispensedtopatientlocation: "DS",
+  DS: "DS",
 
   /**
    * Returned unused/no longer needed
    */
-  Returnedunusednolongerneeded: "RA",
+  RA: "RA",
 
   /**
    * Returned unused/keep linked to patient for possible use later
    */
-  Returnedunusedkeeplinkedtopatientforpossibleuselater: "RL",
+  RL: "RL",
 
   /**
    * Wasted (product no longer viable)
    */
-  Wastedproductnolongerviable: "WA",
+  WA: "WA",
 
   /**
    * Presumed transfused (dispensed and not returned)
    */
-  Presumedtransfuseddispensedandnotreturned: "PT",
+  PT: "PT",
 
   /**
    * Released into inventory for general availability
    */
-  Releasedintoinventoryforgeneralavailability: "CR",
+  CR: "CR",
 
   /**
    * Request to dispense blood product
    */
-  Requesttodispensebloodproduct: "RQ",
+  RQ: "RQ",
 } as const;
 
 /**

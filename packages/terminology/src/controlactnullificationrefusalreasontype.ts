@@ -6,63 +6,63 @@ export const ControlActNullificationRefusalReasonTypeCode = {
   /**
    * ControlActNullificationRefusalReasonType
    */
-  ControlActNullificationRefusalReasonType:
+  _ControlActNullificationRefusalReasonType:
     "_ControlActNullificationRefusalReasonType",
 
   /**
    * in requested state
    */
-  inrequestedstate: "INRQSTATE",
+  INRQSTATE: "INRQSTATE",
 
   /**
    * no match
    */
-  nomatch: "NOMATCH",
+  NOMATCH: "NOMATCH",
 
   /**
    * no record match
    */
-  norecordmatch: "NORECMTCH",
+  NORECMTCH: "NORECMTCH",
 
   /**
    * no product match
    */
-  noproductmatch: "NOPRODMTCH",
+  NOPRODMTCH: "NOPRODMTCH",
 
   /**
    * no service match
    */
-  noservicematch: "NOSERMTCH",
+  NOSERMTCH: "NOSERMTCH",
 
   /**
    * no version match
    */
-  noversionmatch: "NOVERMTCH",
+  NOVERMTCH: "NOVERMTCH",
 
   /**
    * no permission
    */
-  nopermission: "NOPERM",
+  NOPERM: "NOPERM",
 
   /**
    * no user permission
    */
-  nouserpermission: "NOUSERPERM",
+  NOUSERPERM: "NOUSERPERM",
 
   /**
    * no agent permission
    */
-  noagentpermission: "NOAGNTPERM",
+  NOAGNTPERM: "NOAGNTPERM",
 
   /**
    * no user permission
    */
-  nouserpermission: "NOUSRPERM",
+  NOUSRPERM: "NOUSRPERM",
 
   /**
    * wrong version
    */
-  wrongversion: "WRNGVER",
+  WRNGVER: "WRNGVER",
 } as const;
 
 /**

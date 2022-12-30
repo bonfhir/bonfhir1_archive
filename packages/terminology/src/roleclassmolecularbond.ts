@@ -6,7 +6,7 @@ export const RoleClassMolecularBondCode = {
   /**
    * molecular bond
    */
-  molecularbond: "BOND",
+  BOND: "BOND",
 } as const;
 
 /**

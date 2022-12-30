@@ -6,7 +6,7 @@ export const HandlingConditionSetCode = {
   /**
    * room temperature
    */
-  roomtemperature: "room",
+  room: "room",
 
   /**
    * refrigerated

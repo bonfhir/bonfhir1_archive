@@ -6,42 +6,42 @@ export const CalendarCycleOneLetterCode = {
   /**
    * day of the month
    */
-  dayofthemonth: "D",
+  D: "D",
 
   /**
    * hour of the day
    */
-  houroftheday: "H",
+  H: "H",
 
   /**
    * day of the week (begins with Monday)
    */
-  dayoftheweekbeginswithMonday: "J",
+  J: "J",
 
   /**
    * month of the year
    */
-  monthoftheyear: "M",
+  M: "M",
 
   /**
    * minute of the hour
    */
-  minuteofthehour: "N",
+  N: "N",
 
   /**
    * second of the minute
    */
-  secondoftheminute: "S",
+  S: "S",
 
   /**
    * week (continuous)
    */
-  weekcontinuous: "W",
+  W: "W",
 
   /**
    * year
    */
-  year: "Y",
+  Y: "Y",
 } as const;
 
 /**

@@ -6,7 +6,7 @@ export const RoleLinkStatusCompletedCode = {
   /**
    * completed
    */
-  completed: "COMPLETED",
+  COMPLETED: "COMPLETED",
 } as const;
 
 /**

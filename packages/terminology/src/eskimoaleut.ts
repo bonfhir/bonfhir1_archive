@@ -6,52 +6,52 @@ export const EskimoAleutCode = {
   /**
    * Aleut
    */
-  Aleut: "_Aleut",
+  _Aleut: "_Aleut",
 
   /**
    * Aleut
    */
-  Aleut: "x-ALW",
+  "x-ALW": "x-ALW",
 
   /**
    * Eskimoan
    */
-  Eskimoan: "_Eskimoan",
+  _Eskimoan: "_Eskimoan",
 
   /**
    * InuitInupiaq
    */
-  InuitInupiaq: "_InuitInupiaq",
+  _InuitInupiaq: "_InuitInupiaq",
 
   /**
    * North Alaskan Inuktitut
    */
-  NorthAlaskanInuktitut: "x-ESI",
+  "x-ESI": "x-ESI",
 
   /**
    * Northwest Alaska Inuktitut
    */
-  NorthwestAlaskaInuktitut: "x-ESK",
+  "x-ESK": "x-ESK",
 
   /**
    * SirenikskiYupik
    */
-  SirenikskiYupik: "_SirenikskiYupik",
+  _SirenikskiYupik: "_SirenikskiYupik",
 
   /**
    * Pacific Yupik Gulf
    */
-  PacificYupikGulf: "x-EMS",
+  "x-EMS": "x-EMS",
 
   /**
    * Central Siberian Yupik
    */
-  CentralSiberianYupik: "x-ESS",
+  "x-ESS": "x-ESS",
 
   /**
    * Central Alaskan Yupik
    */
-  CentralAlaskanYupik: "x-ESU",
+  "x-ESU": "x-ESU",
 } as const;
 
 /**

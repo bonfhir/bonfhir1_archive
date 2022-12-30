@@ -6,27 +6,27 @@ export const GoalRelationshipTypeCode = {
   /**
    * Predecessor
    */
-  Predecessor: "predecessor",
+  predecessor: "predecessor",
 
   /**
    * Successor
    */
-  Successor: "successor",
+  successor: "successor",
 
   /**
    * Replacement
    */
-  Replacement: "replacement",
+  replacement: "replacement",
 
   /**
    * Milestone
    */
-  Milestone: "milestone",
+  milestone: "milestone",
 
   /**
    * Other
    */
-  Other: "other",
+  other: "other",
 } as const;
 
 /**

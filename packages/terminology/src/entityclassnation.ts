@@ -6,7 +6,7 @@ export const EntityClassNationCode = {
   /**
    * Nation
    */
-  Nation: "NAT",
+  NAT: "NAT",
 } as const;
 
 /**

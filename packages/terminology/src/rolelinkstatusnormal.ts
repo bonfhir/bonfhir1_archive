@@ -6,27 +6,27 @@ export const RoleLinkStatusNormalCode = {
   /**
    * normal
    */
-  normal: "NORMAL",
+  NORMAL: "NORMAL",
 
   /**
    * active
    */
-  active: "ACTIVE",
+  ACTIVE: "ACTIVE",
 
   /**
    * cancelled
    */
-  cancelled: "CANCELLED",
+  CANCELLED: "CANCELLED",
 
   /**
    * completed
    */
-  completed: "COMPLETED",
+  COMPLETED: "COMPLETED",
 
   /**
    * pending
    */
-  pending: "PENDING",
+  PENDING: "PENDING",
 } as const;
 
 /**

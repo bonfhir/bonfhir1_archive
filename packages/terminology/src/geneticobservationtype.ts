@@ -6,12 +6,12 @@ export const GeneticObservationTypeCode = {
   /**
    * GeneticObservationType
    */
-  GeneticObservationType: "_GeneticObservationType",
+  _GeneticObservationType: "_GeneticObservationType",
 
   /**
    * gene
    */
-  gene: "GENE",
+  GENE: "GENE",
 } as const;
 
 /**

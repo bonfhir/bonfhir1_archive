@@ -6,87 +6,87 @@ export const ActRelationshipConditionalCode = {
   /**
    * has contra-indication
    */
-  hascontraindication: "CIND",
+  CIND: "CIND",
 
   /**
    * has pre-condition
    */
-  hasprecondition: "PRCN",
+  PRCN: "PRCN",
 
   /**
    * has reason
    */
-  hasreason: "RSON",
+  RSON: "RSON",
 
   /**
    * blocks
    */
-  blocks: "BLOCK",
+  BLOCK: "BLOCK",
 
   /**
    * diagnoses
    */
-  diagnoses: "DIAG",
+  DIAG: "DIAG",
 
   /**
    * immunization against
    */
-  immunizationagainst: "IMM",
+  IMM: "IMM",
 
   /**
    * active immunization against
    */
-  activeimmunizationagainst: "ACTIMM",
+  ACTIMM: "ACTIMM",
 
   /**
    * passive immunization against
    */
-  passiveimmunizationagainst: "PASSIMM",
+  PASSIMM: "PASSIMM",
 
   /**
    * mitigates
    */
-  mitigates: "MITGT",
+  MITGT: "MITGT",
 
   /**
    * recovers
    */
-  recovers: "RCVY",
+  RCVY: "RCVY",
 
   /**
    * prophylaxis of
    */
-  prophylaxisof: "PRYLX",
+  PRYLX: "PRYLX",
 
   /**
    * treats
    */
-  treats: "TREAT",
+  TREAT: "TREAT",
 
   /**
    * adjunctive treatment
    */
-  adjunctivetreatment: "ADJUNCT",
+  ADJUNCT: "ADJUNCT",
 
   /**
    * maintenance treatment
    */
-  maintenancetreatment: "MTREAT",
+  MTREAT: "MTREAT",
 
   /**
    * palliates
    */
-  palliates: "PALLTREAT",
+  PALLTREAT: "PALLTREAT",
 
   /**
    * symptomatic relief
    */
-  symptomaticrelief: "SYMP",
+  SYMP: "SYMP",
 
   /**
    * has trigger
    */
-  hastrigger: "TRIG",
+  TRIG: "TRIG",
 } as const;
 
 /**

@@ -6,27 +6,27 @@ export const AlternativeCodeKindCode = {
   /**
    * Alternate Code
    */
-  AlternateCode: "alternate",
+  alternate: "alternate",
 
   /**
    * Deprecated
    */
-  Deprecated: "deprecated",
+  deprecated: "deprecated",
 
   /**
    * Case Insensitive
    */
-  CaseInsensitive: "case-insensitive",
+  "case-insensitive": "case-insensitive",
 
   /**
    * Case Sensitive
    */
-  CaseSensitive: "case-sensitive",
+  "case-sensitive": "case-sensitive",
 
   /**
    * Expression
    */
-  Expression: "expression",
+  expression: "expression",
 } as const;
 
 /**

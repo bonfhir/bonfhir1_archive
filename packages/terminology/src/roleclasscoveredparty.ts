@@ -20,37 +20,37 @@ export const RoleClassCoveredPartyCode = {
   /**
    * covered party
    */
-  coveredparty: "COVPTY",
+  COVPTY: "COVPTY",
 
   /**
    * claimant
    */
-  claimant: "CLAIM",
+  CLAIM: "CLAIM",
 
   /**
    * named insured
    */
-  namedinsured: "NAMED",
+  NAMED: "NAMED",
 
   /**
    * dependent
    */
-  dependent: "DEPEN",
+  DEPEN: "DEPEN",
 
   /**
    * individual
    */
-  individual: "INDIV",
+  INDIV: "INDIV",
 
   /**
    * subscriber
    */
-  subscriber: "SUBSCR",
+  SUBSCR: "SUBSCR",
 
   /**
    * program eligible
    */
-  programeligible: "PROG",
+  PROG: "PROG",
 } as const;
 
 /**

@@ -6,7 +6,7 @@ export const ActVirtualEncounterCodeCode = {
   /**
    * virtual
    */
-  virtual: "VR",
+  VR: "VR",
 } as const;
 
 /**

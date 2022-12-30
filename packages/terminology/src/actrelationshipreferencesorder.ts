@@ -6,7 +6,7 @@ export const ActRelationshipReferencesOrderCode = {
   /**
    * references order
    */
-  referencesorder: "OREF",
+  OREF: "OREF",
 } as const;
 
 /**

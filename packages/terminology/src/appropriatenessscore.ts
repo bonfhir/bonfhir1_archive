@@ -6,47 +6,47 @@ export const AppropriatenessScoreCode = {
   /**
    * Extremely Inappropriate
    */
-  ExtremelyInappropriate: "extremely-inappropriate",
+  "extremely-inappropriate": "extremely-inappropriate",
 
   /**
    * Inappropriate
    */
-  Inappropriate: "inappropriate",
+  inappropriate: "inappropriate",
 
   /**
    * Probably Inappropriate
    */
-  ProbablyInappropriate: "probably-inappropriate",
+  "probably-inappropriate": "probably-inappropriate",
 
   /**
    * Uncertain Inappropriate
    */
-  UncertainInappropriate: "uncertain-inappropriate",
+  "uncertain-inappropriate": "uncertain-inappropriate",
 
   /**
    * Uncertain
    */
-  Uncertain: "uncertain",
+  uncertain: "uncertain",
 
   /**
    * Uncertain Appropriate
    */
-  UncertainAppropriate: "uncertain-appropriate",
+  "uncertain-appropriate": "uncertain-appropriate",
 
   /**
    * Probably Appropriate
    */
-  ProbablyAppropriate: "probably-appropriate",
+  "probably-appropriate": "probably-appropriate",
 
   /**
    * Appropriate
    */
-  Appropriate: "appropriate",
+  appropriate: "appropriate",
 
   /**
    * Extremely Appropriate
    */
-  ExtremelyAppropriate: "extremely-appropriate",
+  "extremely-appropriate": "extremely-appropriate",
 } as const;
 
 /**

@@ -6,22 +6,22 @@ export const ActClassControlActCode = {
   /**
    * control act
    */
-  controlact: "CACT",
+  CACT: "CACT",
 
   /**
    * action
    */
-  action: "ACTN",
+  ACTN: "ACTN",
 
   /**
    * information
    */
-  information: "INFO",
+  INFO: "INFO",
 
   /**
    * state transition control
    */
-  statetransitioncontrol: "STC",
+  STC: "STC",
 } as const;
 
 /**

@@ -6,82 +6,82 @@ export const AcknowledgementDetailSyntaxErrorCodeCode = {
   /**
    * Syntax error
    */
-  Syntaxerror: "SYN",
+  SYN: "SYN",
 
   /**
    * Data type error
    */
-  Datatypeerror: "SYN102",
+  SYN102: "SYN102",
 
   /**
    * Required element missing
    */
-  Requiredelementmissing: "SYN105",
+  SYN105: "SYN105",
 
   /**
    * Required association missing
    */
-  Requiredassociationmissing: "SYN100",
+  SYN100: "SYN100",
 
   /**
    * Required attribute missing
    */
-  Requiredattributemissing: "SYN101",
+  SYN101: "SYN101",
 
   /**
    * Insufficient repetitions
    */
-  Insufficientrepetitions: "SYN114",
+  SYN114: "SYN114",
 
   /**
    * Terminology error
    */
-  Terminologyerror: "SYN106",
+  SYN106: "SYN106",
 
   /**
    * Value not found in code system
    */
-  Valuenotfoundincodesystem: "SYN103",
+  SYN103: "SYN103",
 
   /**
    * Invalid code system in CNE
    */
-  InvalidcodesysteminCNE: "SYN104",
+  SYN104: "SYN104",
 
   /**
    * Deprecated code
    */
-  Deprecatedcode: "SYN107",
+  SYN107: "SYN107",
 
   /**
    * Number of repetitions exceeds limit
    */
-  Numberofrepetitionsexceedslimit: "SYN108",
+  SYN108: "SYN108",
 
   /**
    * Number of association repetitions exceeds limit
    */
-  Numberofassociationrepetitionsexceedslimit: "SYN110",
+  SYN110: "SYN110",
 
   /**
    * Number of attribute repetitions exceeds limit
    */
-  Numberofattributerepetitionsexceedslimit: "SYN112",
+  SYN112: "SYN112",
 
   /**
    * Mandatory element with null value
    */
-  Mandatoryelementwithnullvalue: "SYN109",
+  SYN109: "SYN109",
 
   /**
    * Value does not match fixed value
    */
-  Valuedoesnotmatchfixedvalue: "SYN111",
+  SYN111: "SYN111",
 
   /**
    * Formal constraint violation
    */
-  Formalconstraintviolation: "SYN113",
+  SYN113: "SYN113",
 } as const;
 
 /**

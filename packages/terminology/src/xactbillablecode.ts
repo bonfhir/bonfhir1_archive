@@ -6,728 +6,728 @@ export const XActBillableCodeCode = {
   /**
    * ambulatory
    */
-  ambulatory: "AMB",
+  AMB: "AMB",
 
   /**
    * emergency
    */
-  emergency: "EMER",
+  EMER: "EMER",
 
   /**
    * field
    */
-  field: "FLD",
+  FLD: "FLD",
 
   /**
    * home health
    */
-  homehealth: "HH",
+  HH: "HH",
 
   /**
    * inpatient encounter
    */
-  inpatientencounter: "IMP",
+  IMP: "IMP",
 
   /**
    * inpatient acute
    */
-  inpatientacute: "ACUTE",
+  ACUTE: "ACUTE",
 
   /**
    * inpatient non-acute
    */
-  inpatientnonacute: "NONAC",
+  NONAC: "NONAC",
 
   /**
    * observation encounter
    */
-  observationencounter: "OBSENC",
+  OBSENC: "OBSENC",
 
   /**
    * pre-admission
    */
-  preadmission: "PRENC",
+  PRENC: "PRENC",
 
   /**
    * short stay
    */
-  shortstay: "SS",
+  SS: "SS",
 
   /**
    * virtual
    */
-  virtual: "VR",
+  VR: "VR",
 
   /**
    * HL7AccommodationCode
    */
-  HL7AccommodationCode: "_HL7AccommodationCode",
+  _HL7AccommodationCode: "_HL7AccommodationCode",
 
   /**
    * Isolation
    */
-  Isolation: "I",
+  I: "I",
 
   /**
    * Private
    */
-  Private: "P",
+  P: "P",
 
   /**
    * Suite
    */
-  Suite: "S",
+  S: "S",
 
   /**
    * Semi-private
    */
-  Semiprivate: "SP",
+  SP: "SP",
 
   /**
    * Ward
    */
-  Ward: "W",
+  W: "W",
 
   /**
    * HCPCSAccommodationCode
    */
-  HCPCSAccommodationCode: "_HCPCSAccommodationCode",
+  _HCPCSAccommodationCode: "_HCPCSAccommodationCode",
 
   /**
    * ActSpecObsCode
    */
-  ActSpecObsCode: "_ActSpecObsCode",
+  _ActSpecObsCode: "_ActSpecObsCode",
 
   /**
    * ActSpecObsArtBldCode
    */
-  ActSpecObsArtBldCode: "ARTBLD",
+  ARTBLD: "ARTBLD",
 
   /**
    * ActSpecObsDilutionCode
    */
-  ActSpecObsDilutionCode: "DILUTION",
+  DILUTION: "DILUTION",
 
   /**
    * Auto-High Dilution
    */
-  AutoHighDilution: "AUTO-HIGH",
+  "AUTO-HIGH": "AUTO-HIGH",
 
   /**
    * Auto-Low Dilution
    */
-  AutoLowDilution: "AUTO-LOW",
+  "AUTO-LOW": "AUTO-LOW",
 
   /**
    * Pre-Dilution
    */
-  PreDilution: "PRE",
+  PRE: "PRE",
 
   /**
    * Rerun Dilution
    */
-  RerunDilution: "RERUN",
+  RERUN: "RERUN",
 
   /**
    * ActSpecObsEvntfctsCode
    */
-  ActSpecObsEvntfctsCode: "EVNFCTS",
+  EVNFCTS: "EVNFCTS",
 
   /**
    * ActSpecObsInterferenceCode
    */
-  ActSpecObsInterferenceCode: "INTFR",
+  INTFR: "INTFR",
 
   /**
    * Fibrin
    */
-  Fibrin: "FIBRIN",
+  FIBRIN: "FIBRIN",
 
   /**
    * Hemolysis
    */
-  Hemolysis: "HEMOLYSIS",
+  HEMOLYSIS: "HEMOLYSIS",
 
   /**
    * Icterus
    */
-  Icterus: "ICTERUS",
+  ICTERUS: "ICTERUS",
 
   /**
    * Lipemia
    */
-  Lipemia: "LIPEMIA",
+  LIPEMIA: "LIPEMIA",
 
   /**
    * ActSpecObsVolumeCode
    */
-  ActSpecObsVolumeCode: "VOLUME",
+  VOLUME: "VOLUME",
 
   /**
    * Available Volume
    */
-  AvailableVolume: "AVAILABLE",
+  AVAILABLE: "AVAILABLE",
 
   /**
    * Consumption Volume
    */
-  ConsumptionVolume: "CONSUMPTION",
+  CONSUMPTION: "CONSUMPTION",
 
   /**
    * Current Volume
    */
-  CurrentVolume: "CURRENT",
+  CURRENT: "CURRENT",
 
   /**
    * Initial Volume
    */
-  InitialVolume: "INITIAL",
+  INITIAL: "INITIAL",
 
   /**
    * AnnotationType
    */
-  AnnotationType: "_AnnotationType",
+  _AnnotationType: "_AnnotationType",
 
   /**
    * ActPatientAnnotationType
    */
-  ActPatientAnnotationType: "_ActPatientAnnotationType",
+  _ActPatientAnnotationType: "_ActPatientAnnotationType",
 
   /**
    * diagnostic image note
    */
-  diagnosticimagenote: "ANNDI",
+  ANNDI: "ANNDI",
 
   /**
    * general note
    */
-  generalnote: "ANNGEN",
+  ANNGEN: "ANNGEN",
 
   /**
    * immunization note
    */
-  immunizationnote: "ANNIMM",
+  ANNIMM: "ANNIMM",
 
   /**
    * laboratory note
    */
-  laboratorynote: "ANNLAB",
+  ANNLAB: "ANNLAB",
 
   /**
    * medication note
    */
-  medicationnote: "ANNMED",
+  ANNMED: "ANNMED",
 
   /**
    * ECGAnnotationType
    */
-  ECGAnnotationType: "_ECGAnnotationType",
+  _ECGAnnotationType: "_ECGAnnotationType",
 
   /**
    * gene
    */
-  gene: "GENE",
+  GENE: "GENE",
 
   /**
    * ImmunizationObservationType
    */
-  ImmunizationObservationType: "_ImmunizationObservationType",
+  _ImmunizationObservationType: "_ImmunizationObservationType",
 
   /**
    * antigen count
    */
-  antigencount: "OBSANTC",
+  OBSANTC: "OBSANTC",
 
   /**
    * antigen validity
    */
-  antigenvalidity: "OBSANTV",
+  OBSANTV: "OBSANTV",
 
   /**
    * Individual Case Safety Report Type
    */
-  IndividualCaseSafetyReportType: "_IndividualCaseSafetyReportType",
+  _IndividualCaseSafetyReportType: "_IndividualCaseSafetyReportType",
 
   /**
    * patient adverse event
    */
-  patientadverseevent: "PAT_ADV_EVNT",
+  PAT_ADV_EVNT: "PAT_ADV_EVNT",
 
   /**
    * vaccine product problem
    */
-  vaccineproductproblem: "VAC_PROBLEM",
+  VAC_PROBLEM: "VAC_PROBLEM",
 
   /**
    * LOINCObservationActContextAgeType
    */
-  LOINCObservationActContextAgeType: "_LOINCObservationActContextAgeType",
+  _LOINCObservationActContextAgeType: "_LOINCObservationActContextAgeType",
 
   /**
    * age patient qn est
    */
-  agepatientqnest: "21611-9",
+  "21611-9": "21611-9",
 
   /**
    * age patient qn reported
    */
-  agepatientqnreported: "21612-7",
+  "21612-7": "21612-7",
 
   /**
    * age patient qn calc
    */
-  agepatientqncalc: "29553-5",
+  "29553-5": "29553-5",
 
   /**
    * age patient qn definition
    */
-  agepatientqndefinition: "30525-0",
+  "30525-0": "30525-0",
 
   /**
    * age at onset of adverse event
    */
-  ageatonsetofadverseevent: "30972-4",
+  "30972-4": "30972-4",
 
   /**
    * MedicationObservationType
    */
-  MedicationObservationType: "_MedicationObservationType",
+  _MedicationObservationType: "_MedicationObservationType",
 
   /**
    * representative half-life
    */
-  representativehalflife: "REP_HALF_LIFE",
+  REP_HALF_LIFE: "REP_HALF_LIFE",
 
   /**
    * coating
    */
-  coating: "SPLCOATING",
+  SPLCOATING: "SPLCOATING",
 
   /**
    * color
    */
-  color: "SPLCOLOR",
+  SPLCOLOR: "SPLCOLOR",
 
   /**
    * image
    */
-  image: "SPLIMAGE",
+  SPLIMAGE: "SPLIMAGE",
 
   /**
    * imprint
    */
-  imprint: "SPLIMPRINT",
+  SPLIMPRINT: "SPLIMPRINT",
 
   /**
    * scoring
    */
-  scoring: "SPLSCORING",
+  SPLSCORING: "SPLSCORING",
 
   /**
    * shape
    */
-  shape: "SPLSHAPE",
+  SPLSHAPE: "SPLSHAPE",
 
   /**
    * size
    */
-  size: "SPLSIZE",
+  SPLSIZE: "SPLSIZE",
 
   /**
    * symbol
    */
-  symbol: "SPLSYMBOL",
+  SPLSYMBOL: "SPLSYMBOL",
 
   /**
    * case transmission mode
    */
-  casetransmissionmode: "_CaseTransmissionMode",
+  _CaseTransmissionMode: "_CaseTransmissionMode",
 
   /**
    * airborne transmission
    */
-  airbornetransmission: "AIRTRNS",
+  AIRTRNS: "AIRTRNS",
 
   /**
    * animal to animal transmission
    */
-  animaltoanimaltransmission: "ANANTRNS",
+  ANANTRNS: "ANANTRNS",
 
   /**
    * animal to human transmission
    */
-  animaltohumantransmission: "ANHUMTRNS",
+  ANHUMTRNS: "ANHUMTRNS",
 
   /**
    * body fluid contact transmission
    */
-  bodyfluidcontacttransmission: "BDYFLDTRNS",
+  BDYFLDTRNS: "BDYFLDTRNS",
 
   /**
    * blood borne transmission
    */
-  bloodbornetransmission: "BLDTRNS",
+  BLDTRNS: "BLDTRNS",
 
   /**
    * transdermal transmission
    */
-  transdermaltransmission: "DERMTRNS",
+  DERMTRNS: "DERMTRNS",
 
   /**
    * environmental exposure transmission
    */
-  environmentalexposuretransmission: "ENVTRNS",
+  ENVTRNS: "ENVTRNS",
 
   /**
    * fecal-oral transmission
    */
-  fecaloraltransmission: "FECTRNS",
+  FECTRNS: "FECTRNS",
 
   /**
    * fomite transmission
    */
-  fomitetransmission: "FOMTRNS",
+  FOMTRNS: "FOMTRNS",
 
   /**
    * food-borne transmission
    */
-  foodbornetransmission: "FOODTRNS",
+  FOODTRNS: "FOODTRNS",
 
   /**
    * human to human transmission
    */
-  humantohumantransmission: "HUMHUMTRNS",
+  HUMHUMTRNS: "HUMHUMTRNS",
 
   /**
    * indeterminate disease transmission mode
    */
-  indeterminatediseasetransmissionmode: "INDTRNS",
+  INDTRNS: "INDTRNS",
 
   /**
    * lactation transmission
    */
-  lactationtransmission: "LACTTRNS",
+  LACTTRNS: "LACTTRNS",
 
   /**
    * nosocomial transmission
    */
-  nosocomialtransmission: "NOSTRNS",
+  NOSTRNS: "NOSTRNS",
 
   /**
    * parenteral transmission
    */
-  parenteraltransmission: "PARTRNS",
+  PARTRNS: "PARTRNS",
 
   /**
    * transplacental transmission
    */
-  transplacentaltransmission: "PLACTRNS",
+  PLACTRNS: "PLACTRNS",
 
   /**
    * sexual transmission
    */
-  sexualtransmission: "SEXTRNS",
+  SEXTRNS: "SEXTRNS",
 
   /**
    * transfusion transmission
    */
-  transfusiontransmission: "TRNSFTRNS",
+  TRNSFTRNS: "TRNSFTRNS",
 
   /**
    * vector-borne transmission
    */
-  vectorbornetransmission: "VECTRNS",
+  VECTRNS: "VECTRNS",
 
   /**
    * water-borne transmission
    */
-  waterbornetransmission: "WATTRNS",
+  WATTRNS: "WATTRNS",
 
   /**
    * ObservationQualityMeasureAttribute
    */
-  ObservationQualityMeasureAttribute: "_ObservationQualityMeasureAttribute",
+  _ObservationQualityMeasureAttribute: "_ObservationQualityMeasureAttribute",
 
   /**
    * aggregate measure observation
    */
-  aggregatemeasureobservation: "AGGREGATE",
+  AGGREGATE: "AGGREGATE",
 
   /**
    * composite measure method
    */
-  compositemeasuremethod: "CMPMSRMTH",
+  CMPMSRMTH: "CMPMSRMTH",
 
   /**
    * component measure scoring weight
    */
-  componentmeasurescoringweight: "CMPMSRSCRWGHT",
+  CMPMSRSCRWGHT: "CMPMSRSCRWGHT",
 
   /**
    * copyright
    */
-  copyright: "COPY",
+  COPY: "COPY",
 
   /**
    * clinical recommendation statement
    */
-  clinicalrecommendationstatement: "CRS",
+  CRS: "CRS",
 
   /**
    * definition
    */
-  definition: "DEF",
+  DEF: "DEF",
 
   /**
    * disclaimer
    */
-  disclaimer: "DISC",
+  DISC: "DISC",
 
   /**
    * finalized date/time
    */
-  finalizeddatetime: "FINALDT",
+  FINALDT: "FINALDT",
 
   /**
    * guidance
    */
-  guidance: "GUIDE",
+  GUIDE: "GUIDE",
 
   /**
    * improvement notation
    */
-  improvementnotation: "IDUR",
+  IDUR: "IDUR",
 
   /**
    * items counted
    */
-  itemscounted: "ITMCNT",
+  ITMCNT: "ITMCNT",
 
   /**
    * keyword
    */
-  keyword: "KEY",
+  KEY: "KEY",
 
   /**
    * measurement end date
    */
-  measurementenddate: "MEDT",
+  MEDT: "MEDT",
 
   /**
    * measurement start date
    */
-  measurementstartdate: "MSD",
+  MSD: "MSD",
 
   /**
    * risk adjustment
    */
-  riskadjustment: "MSRADJ",
+  MSRADJ: "MSRADJ",
 
   /**
    * rate aggregation
    */
-  rateaggregation: "MSRAGG",
+  MSRAGG: "MSRAGG",
 
   /**
    * health quality measure improvement notation
    */
-  healthqualitymeasureimprovementnotation: "MSRIMPROV",
+  MSRIMPROV: "MSRIMPROV",
 
   /**
    * jurisdiction
    */
-  jurisdiction: "MSRJUR",
+  MSRJUR: "MSRJUR",
 
   /**
    * reporter type
    */
-  reportertype: "MSRRPTR",
+  MSRRPTR: "MSRRPTR",
 
   /**
    * timeframe for reporting
    */
-  timeframeforreporting: "MSRRPTTIME",
+  MSRRPTTIME: "MSRRPTTIME",
 
   /**
    * measure scoring
    */
-  measurescoring: "MSRSCORE",
+  MSRSCORE: "MSRSCORE",
 
   /**
    * health quality measure care setting
    */
-  healthqualitymeasurecaresetting: "MSRSET",
+  MSRSET: "MSRSET",
 
   /**
    * health quality measure topic type
    */
-  healthqualitymeasuretopictype: "MSRTOPIC",
+  MSRTOPIC: "MSRTOPIC",
 
   /**
    * measurement period
    */
-  measurementperiod: "MSRTP",
+  MSRTP: "MSRTP",
 
   /**
    * measure type
    */
-  measuretype: "MSRTYPE",
+  MSRTYPE: "MSRTYPE",
 
   /**
    * rationale
    */
-  rationale: "RAT",
+  RAT: "RAT",
 
   /**
    * reference
    */
-  reference: "REF",
+  REF: "REF",
 
   /**
    * supplemental data elements
    */
-  supplementaldataelements: "SDE",
+  SDE: "SDE",
 
   /**
    * stratification
    */
-  stratification: "STRAT",
+  STRAT: "STRAT",
 
   /**
    * transmission format
    */
-  transmissionformat: "TRANF",
+  TRANF: "TRANF",
 
   /**
    * notice of use
    */
-  noticeofuse: "USE",
+  USE: "USE",
 
   /**
    * ObservationSequenceType
    */
-  ObservationSequenceType: "_ObservationSequenceType",
+  _ObservationSequenceType: "_ObservationSequenceType",
 
   /**
    * absolute time sequence
    */
-  absolutetimesequence: "TIME_ABSOLUTE",
+  TIME_ABSOLUTE: "TIME_ABSOLUTE",
 
   /**
    * relative time sequence
    */
-  relativetimesequence: "TIME_RELATIVE",
+  TIME_RELATIVE: "TIME_RELATIVE",
 
   /**
    * ECGObservationSequenceType
    */
-  ECGObservationSequenceType: "_ECGObservationSequenceType",
+  _ECGObservationSequenceType: "_ECGObservationSequenceType",
 
   /**
    * ObservationSeriesType
    */
-  ObservationSeriesType: "_ObservationSeriesType",
+  _ObservationSeriesType: "_ObservationSeriesType",
 
   /**
    * ECGObservationSeriesType
    */
-  ECGObservationSeriesType: "_ECGObservationSeriesType",
+  _ECGObservationSeriesType: "_ECGObservationSeriesType",
 
   /**
    * ECG representative beat waveforms
    */
-  ECGrepresentativebeatwaveforms: "REPRESENTATIVE_BEAT",
+  REPRESENTATIVE_BEAT: "REPRESENTATIVE_BEAT",
 
   /**
    * ECG rhythm waveforms
    */
-  ECGrhythmwaveforms: "RHYTHM",
+  RHYTHM: "RHYTHM",
 
   /**
    * PatientImmunizationRelatedObservationType
    */
-  PatientImmunizationRelatedObservationType:
+  _PatientImmunizationRelatedObservationType:
     "_PatientImmunizationRelatedObservationType",
 
   /**
    * classroom
    */
-  classroom: "CLSSRM",
+  CLSSRM: "CLSSRM",
 
   /**
    * grade
    */
-  grade: "GRADE",
+  GRADE: "GRADE",
 
   /**
    * school
    */
-  school: "SCHL",
+  SCHL: "SCHL",
 
   /**
    * school division
    */
-  schooldivision: "SCHLDIV",
+  SCHLDIV: "SCHLDIV",
 
   /**
    * teacher
    */
-  teacher: "TEACHER",
+  TEACHER: "TEACHER",
 
   /**
    * PopulationInclusionObservationType
    */
-  PopulationInclusionObservationType: "_PopulationInclusionObservationType",
+  _PopulationInclusionObservationType: "_PopulationInclusionObservationType",
 
   /**
    * denominator exclusions
    */
-  denominatorexclusions: "DENEX",
+  DENEX: "DENEX",
 
   /**
    * denominator exceptions
    */
-  denominatorexceptions: "DENEXCEP",
+  DENEXCEP: "DENEXCEP",
 
   /**
    * denominator
    */
-  denominator: "DENOM",
+  DENOM: "DENOM",
 
   /**
    * initial population
    */
-  initialpopulation: "IPOP",
+  IPOP: "IPOP",
 
   /**
    * initial patient population
    */
-  initialpatientpopulation: "IPPOP",
+  IPPOP: "IPPOP",
 
   /**
    * measure observation
    */
-  measureobservation: "MSROBS",
+  MSROBS: "MSROBS",
 
   /**
    * measure population
    */
-  measurepopulation: "MSRPOPL",
+  MSRPOPL: "MSRPOPL",
 
   /**
    * measure population exclusions
    */
-  measurepopulationexclusions: "MSRPOPLEX",
+  MSRPOPLEX: "MSRPOPLEX",
 
   /**
    * numerator
    */
-  numerator: "NUMER",
+  NUMER: "NUMER",
 
   /**
    * numerator exclusions
    */
-  numeratorexclusions: "NUMEX",
+  NUMEX: "NUMEX",
 
   /**
    * _PreferenceObservationType
@@ -737,288 +737,288 @@ export const XActBillableCodeCode = {
   /**
    * preference strength
    */
-  preferencestrength: "PREFSTRENGTH",
+  PREFSTRENGTH: "PREFSTRENGTH",
 
   /**
    * Adverse Reaction
    */
-  AdverseReaction: "ADVERSE_REACTION",
+  ADVERSE_REACTION: "ADVERSE_REACTION",
 
   /**
    * Assertion
    */
-  Assertion: "ASSERTION",
+  ASSERTION: "ASSERTION",
 
   /**
    * case seriousness criteria
    */
-  caseseriousnesscriteria: "CASESER",
+  CASESER: "CASESER",
 
   /**
    * case disease imported observation
    */
-  casediseaseimportedobservation: "CDIO",
+  CDIO: "CDIO",
 
   /**
    * criticality
    */
-  criticality: "CRIT",
+  CRIT: "CRIT",
 
   /**
    * case transmission mode observation
    */
-  casetransmissionmodeobservation: "CTMO",
+  CTMO: "CTMO",
 
   /**
    * ObservationDiagnosisTypes
    */
-  ObservationDiagnosisTypes: "DX",
+  DX: "DX",
 
   /**
    * admitting diagnosis
    */
-  admittingdiagnosis: "ADMDX",
+  ADMDX: "ADMDX",
 
   /**
    * discharge diagnosis
    */
-  dischargediagnosis: "DISDX",
+  DISDX: "DISDX",
 
   /**
    * intermediate diagnosis
    */
-  intermediatediagnosis: "INTDX",
+  INTDX: "INTDX",
 
   /**
    * nature of injury
    */
-  natureofinjury: "NOI",
+  NOI: "NOI",
 
   /**
    * ObservationDiagnosisTypes
    */
-  ObservationDiagnosisTypes: "_ObservationDiagnosisTypes",
+  _ObservationDiagnosisTypes: "_ObservationDiagnosisTypes",
 
   /**
    * GIS tier
    */
-  GIStier: "GISTIER",
+  GISTIER: "GISTIER",
 
   /**
    * household situation observation
    */
-  householdsituationobservation: "HHOBS",
+  HHOBS: "HHOBS",
 
   /**
    * detected issue
    */
-  detectedissue: "ISSUE",
+  ISSUE: "ISSUE",
 
   /**
    * ActAdministrativeDetectedIssueCode
    */
-  ActAdministrativeDetectedIssueCode: "_ActAdministrativeDetectedIssueCode",
+  _ActAdministrativeDetectedIssueCode: "_ActAdministrativeDetectedIssueCode",
 
   /**
    * ActAdministrativeAuthorizationDetectedIssueCode
    */
-  ActAdministrativeAuthorizationDetectedIssueCode:
+  _ActAdministrativeAuthorizationDetectedIssueCode:
     "_ActAdministrativeAuthorizationDetectedIssueCode",
 
   /**
    * Insufficient authorization
    */
-  Insufficientauthorization: "NAT",
+  NAT: "NAT",
 
   /**
    * record suppressed
    */
-  recordsuppressed: "SUPPRESSED",
+  SUPPRESSED: "SUPPRESSED",
 
   /**
    * validation issue
    */
-  validationissue: "VALIDAT",
+  VALIDAT: "VALIDAT",
 
   /**
    * Unknown key identifier
    */
-  Unknownkeyidentifier: "KEY204",
+  KEY204: "KEY204",
 
   /**
    * Duplicate key identifier
    */
-  Duplicatekeyidentifier: "KEY205",
+  KEY205: "KEY205",
 
   /**
    * Compliance Alert
    */
-  ComplianceAlert: "COMPLY",
+  COMPLY: "COMPLY",
 
   /**
    * Duplicate Therapy Alert
    */
-  DuplicateTherapyAlert: "DUPTHPY",
+  DUPTHPY: "DUPTHPY",
 
   /**
    * duplicate therapeutic alass alert
    */
-  duplicatetherapeuticalassalert: "DUPTHPCLS",
+  DUPTHPCLS: "DUPTHPCLS",
 
   /**
    * duplicate generic alert
    */
-  duplicategenericalert: "DUPTHPGEN",
+  DUPTHPGEN: "DUPTHPGEN",
 
   /**
    * commonly abused/misused alert
    */
-  commonlyabusedmisusedalert: "ABUSE",
+  ABUSE: "ABUSE",
 
   /**
    * potential fraud
    */
-  potentialfraud: "FRAUD",
+  FRAUD: "FRAUD",
 
   /**
    * Poly-orderer Alert
    */
-  PolyordererAlert: "PLYDOC",
+  PLYDOC: "PLYDOC",
 
   /**
    * Poly-supplier Alert
    */
-  PolysupplierAlert: "PLYPHRM",
+  PLYPHRM: "PLYPHRM",
 
   /**
    * Dosage problem
    */
-  Dosageproblem: "DOSE",
+  DOSE: "DOSE",
 
   /**
    * dosage-condition alert
    */
-  dosageconditionalert: "DOSECOND",
+  DOSECOND: "DOSECOND",
 
   /**
    * Dose-Duration Alert
    */
-  DoseDurationAlert: "DOSEDUR",
+  DOSEDUR: "DOSEDUR",
 
   /**
    * Dose-Duration High Alert
    */
-  DoseDurationHighAlert: "DOSEDURH",
+  DOSEDURH: "DOSEDURH",
 
   /**
    * Dose-Duration High for Indication Alert
    */
-  DoseDurationHighforIndicationAlert: "DOSEDURHIND",
+  DOSEDURHIND: "DOSEDURHIND",
 
   /**
    * Dose-Duration Low Alert
    */
-  DoseDurationLowAlert: "DOSEDURL",
+  DOSEDURL: "DOSEDURL",
 
   /**
    * Dose-Duration Low for Indication Alert
    */
-  DoseDurationLowforIndicationAlert: "DOSEDURLIND",
+  DOSEDURLIND: "DOSEDURLIND",
 
   /**
    * High Dose Alert
    */
-  HighDoseAlert: "DOSEH",
+  DOSEH: "DOSEH",
 
   /**
    * High Dose for Age Alert
    */
-  HighDoseforAgeAlert: "DOSEHINDA",
+  DOSEHINDA: "DOSEHINDA",
 
   /**
    * High Dose for Indication Alert
    */
-  HighDoseforIndicationAlert: "DOSEHIND",
+  DOSEHIND: "DOSEHIND",
 
   /**
    * High Dose for Height/Surface Area Alert
    */
-  HighDoseforHeightSurfaceAreaAlert: "DOSEHINDSA",
+  DOSEHINDSA: "DOSEHINDSA",
 
   /**
    * High Dose for Weight Alert
    */
-  HighDoseforWeightAlert: "DOSEHINDW",
+  DOSEHINDW: "DOSEHINDW",
 
   /**
    * Dose-Interval Alert
    */
-  DoseIntervalAlert: "DOSEIVL",
+  DOSEIVL: "DOSEIVL",
 
   /**
    * Dose-Interval for Indication Alert
    */
-  DoseIntervalforIndicationAlert: "DOSEIVLIND",
+  DOSEIVLIND: "DOSEIVLIND",
 
   /**
    * Low Dose Alert
    */
-  LowDoseAlert: "DOSEL",
+  DOSEL: "DOSEL",
 
   /**
    * Low Dose for Age Alert
    */
-  LowDoseforAgeAlert: "DOSELINDA",
+  DOSELINDA: "DOSELINDA",
 
   /**
    * Low Dose for Indication Alert
    */
-  LowDoseforIndicationAlert: "DOSELIND",
+  DOSELIND: "DOSELIND",
 
   /**
    * Low Dose for Height/Surface Area Alert
    */
-  LowDoseforHeightSurfaceAreaAlert: "DOSELINDSA",
+  DOSELINDSA: "DOSELINDSA",
 
   /**
    * Low Dose for Weight Alert
    */
-  LowDoseforWeightAlert: "DOSELINDW",
+  DOSELINDW: "DOSELINDW",
 
   /**
    * maximum dosage reached
    */
-  maximumdosagereached: "MDOSE",
+  MDOSE: "MDOSE",
 
   /**
    * Observation Alert
    */
-  ObservationAlert: "OBSA",
+  OBSA: "OBSA",
 
   /**
    * Age Alert
    */
-  AgeAlert: "AGE",
+  AGE: "AGE",
 
   /**
    * adult alert
    */
-  adultalert: "ADALRT",
+  ADALRT: "ADALRT",
 
   /**
    * geriatric alert
    */
-  geriatricalert: "GEALRT",
+  GEALRT: "GEALRT",
 
   /**
    * pediatric alert
    */
-  pediatricalert: "PEALRT",
+  PEALRT: "PEALRT",
 
   /**
    * Condition Alert
    */
-  ConditionAlert: "COND",
+  COND: "COND",
 
   /**
    *
@@ -1028,12 +1028,12 @@ export const XActBillableCodeCode = {
   /**
    * Lactation Alert
    */
-  LactationAlert: "LACT",
+  LACT: "LACT",
 
   /**
    * Pregnancy Alert
    */
-  PregnancyAlert: "PREG",
+  PREG: "PREG",
 
   /**
    *
@@ -1043,8655 +1043,8560 @@ export const XActBillableCodeCode = {
   /**
    * common reaction alert
    */
-  commonreactionalert: "CREACT",
+  CREACT: "CREACT",
 
   /**
    * Genetic Alert
    */
-  GeneticAlert: "GEN",
+  GEN: "GEN",
 
   /**
    * Gender Alert
    */
-  GenderAlert: "GEND",
+  GEND: "GEND",
 
   /**
    * Lab Alert
    */
-  LabAlert: "LAB",
+  LAB: "LAB",
 
   /**
    * Reaction Alert
    */
-  ReactionAlert: "REACT",
+  REACT: "REACT",
 
   /**
    * Allergy Alert
    */
-  AllergyAlert: "ALGY",
+  ALGY: "ALGY",
 
   /**
    * Intolerance Alert
    */
-  IntoleranceAlert: "INT",
+  INT: "INT",
 
   /**
    * Related Reaction Alert
    */
-  RelatedReactionAlert: "RREACT",
+  RREACT: "RREACT",
 
   /**
    * Related Allergy Alert
    */
-  RelatedAllergyAlert: "RALG",
+  RALG: "RALG",
 
   /**
    * Related Prior Reaction Alert
    */
-  RelatedPriorReactionAlert: "RAR",
+  RAR: "RAR",
 
   /**
    * Related Intolerance Alert
    */
-  RelatedIntoleranceAlert: "RINT",
+  RINT: "RINT",
 
   /**
    * business constraint violation
    */
-  businessconstraintviolation: "BUS",
+  BUS: "BUS",
 
   /**
    * code is not valid
    */
-  codeisnotvalid: "CODE_INVAL",
+  CODE_INVAL: "CODE_INVAL",
 
   /**
    * code has been deprecated
    */
-  codehasbeendeprecated: "CODE_DEPREC",
+  CODE_DEPREC: "CODE_DEPREC",
 
   /**
    * invalid format
    */
-  invalidformat: "FORMAT",
+  FORMAT: "FORMAT",
 
   /**
    * illegal
    */
-  illegal: "ILLEGAL",
+  ILLEGAL: "ILLEGAL",
 
   /**
    * length out of range
    */
-  lengthoutofrange: "LEN_RANGE",
+  LEN_RANGE: "LEN_RANGE",
 
   /**
    * length is too long
    */
-  lengthistoolong: "LEN_LONG",
+  LEN_LONG: "LEN_LONG",
 
   /**
    * length is too short
    */
-  lengthistooshort: "LEN_SHORT",
+  LEN_SHORT: "LEN_SHORT",
 
   /**
    * conditional element missing
    */
-  conditionalelementmissing: "MISSCOND",
+  MISSCOND: "MISSCOND",
 
   /**
    * mandatory element missing
    */
-  mandatoryelementmissing: "MISSMAND",
+  MISSMAND: "MISSMAND",
 
   /**
    * duplicate values are not permitted
    */
-  duplicatevaluesarenotpermitted: "NODUPS",
+  NODUPS: "NODUPS",
 
   /**
    * element will not be persisted
    */
-  elementwillnotbepersisted: "NOPERSIST",
+  NOPERSIST: "NOPERSIST",
 
   /**
    * repetitions out of range
    */
-  repetitionsoutofrange: "REP_RANGE",
+  REP_RANGE: "REP_RANGE",
 
   /**
    * repetitions above maximum
    */
-  repetitionsabovemaximum: "MAXOCCURS",
+  MAXOCCURS: "MAXOCCURS",
 
   /**
    * repetitions below minimum
    */
-  repetitionsbelowminimum: "MINOCCURS",
+  MINOCCURS: "MINOCCURS",
 
   /**
    * ActAdministrativeRuleDetectedIssueCode
    */
-  ActAdministrativeRuleDetectedIssueCode:
+  _ActAdministrativeRuleDetectedIssueCode:
     "_ActAdministrativeRuleDetectedIssueCode",
 
   /**
    * non-matching identification
    */
-  nonmatchingidentification: "KEY206",
+  KEY206: "KEY206",
 
   /**
    * obsolete record returned
    */
-  obsoleterecordreturned: "OBSOLETE",
+  OBSOLETE: "OBSOLETE",
 
   /**
    * ActSuppliedItemDetectedIssueCode
    */
-  ActSuppliedItemDetectedIssueCode: "_ActSuppliedItemDetectedIssueCode",
+  _ActSuppliedItemDetectedIssueCode: "_ActSuppliedItemDetectedIssueCode",
 
   /**
    * AdministrationDetectedIssueCode
    */
-  AdministrationDetectedIssueCode: "_AdministrationDetectedIssueCode",
+  _AdministrationDetectedIssueCode: "_AdministrationDetectedIssueCode",
 
   /**
    * AppropriatenessDetectedIssueCode
    */
-  AppropriatenessDetectedIssueCode: "_AppropriatenessDetectedIssueCode",
+  _AppropriatenessDetectedIssueCode: "_AppropriatenessDetectedIssueCode",
 
   /**
    * InteractionDetectedIssueCode
    */
-  InteractionDetectedIssueCode: "_InteractionDetectedIssueCode",
+  _InteractionDetectedIssueCode: "_InteractionDetectedIssueCode",
 
   /**
    * Food Interaction Alert
    */
-  FoodInteractionAlert: "FOOD",
+  FOOD: "FOOD",
 
   /**
    * Therapeutic Product Alert
    */
-  TherapeuticProductAlert: "TPROD",
+  TPROD: "TPROD",
 
   /**
    * Drug Interaction Alert
    */
-  DrugInteractionAlert: "DRG",
+  DRG: "DRG",
 
   /**
    * Natural Health Product Alert
    */
-  NaturalHealthProductAlert: "NHP",
+  NHP: "NHP",
 
   /**
    * Non-Prescription Interaction Alert
    */
-  NonPrescriptionInteractionAlert: "NONRX",
+  NONRX: "NONRX",
 
   /**
    * previously ineffective
    */
-  previouslyineffective: "PREVINEF",
+  PREVINEF: "PREVINEF",
 
   /**
    * drug action detected issue
    */
-  drugactiondetectedissue: "DACT",
+  DACT: "DACT",
 
   /**
    * timing detected issue
    */
-  timingdetectedissue: "TIME",
+  TIME: "TIME",
 
   /**
    * end too late alert
    */
-  endtoolatealert: "ALRTENDLATE",
+  ALRTENDLATE: "ALRTENDLATE",
 
   /**
    * start too late alert
    */
-  starttoolatealert: "ALRTSTRTLATE",
+  ALRTSTRTLATE: "ALRTSTRTLATE",
 
   /**
    * DrugActionDetectedIssueCode
    */
-  DrugActionDetectedIssueCode: "_DrugActionDetectedIssueCode",
+  _DrugActionDetectedIssueCode: "_DrugActionDetectedIssueCode",
 
   /**
    * TimingDetectedIssueCode
    */
-  TimingDetectedIssueCode: "_TimingDetectedIssueCode",
+  _TimingDetectedIssueCode: "_TimingDetectedIssueCode",
 
   /**
    * End Too Late Alert
    */
-  EndTooLateAlert: "ENDLATE",
+  ENDLATE: "ENDLATE",
 
   /**
    * Start Too Late Alert
    */
-  StartTooLateAlert: "STRTLATE",
+  STRTLATE: "STRTLATE",
 
   /**
    * SupplyDetectedIssueCode
    */
-  SupplyDetectedIssueCode: "_SupplyDetectedIssueCode",
+  _SupplyDetectedIssueCode: "_SupplyDetectedIssueCode",
 
   /**
    * already performed
    */
-  alreadyperformed: "ALLDONE",
+  ALLDONE: "ALLDONE",
 
   /**
    * fulfillment alert
    */
-  fulfillmentalert: "FULFIL",
+  FULFIL: "FULFIL",
 
   /**
    * no longer actionable
    */
-  nolongeractionable: "NOTACTN",
+  NOTACTN: "NOTACTN",
 
   /**
    * not equivalent alert
    */
-  notequivalentalert: "NOTEQUIV",
+  NOTEQUIV: "NOTEQUIV",
 
   /**
    * not generically equivalent alert
    */
-  notgenericallyequivalentalert: "NOTEQUIVGEN",
+  NOTEQUIVGEN: "NOTEQUIVGEN",
 
   /**
    * not therapeutically equivalent alert
    */
-  nottherapeuticallyequivalentalert: "NOTEQUIVTHER",
+  NOTEQUIVTHER: "NOTEQUIVTHER",
 
   /**
    * event timing incorrect alert
    */
-  eventtimingincorrectalert: "TIMING",
+  TIMING: "TIMING",
 
   /**
    * outside requested time
    */
-  outsiderequestedtime: "INTERVAL",
+  INTERVAL: "INTERVAL",
 
   /**
    * too soon within frequency based on the usage
    */
-  toosoonwithinfrequencybasedontheusage: "MINFREQ",
+  MINFREQ: "MINFREQ",
 
   /**
    * held/suspended alert
    */
-  heldsuspendedalert: "HELD",
+  HELD: "HELD",
 
   /**
    * Refill Too Late Alert
    */
-  RefillTooLateAlert: "TOOLATE",
+  TOOLATE: "TOOLATE",
 
   /**
    * Refill Too Soon Alert
    */
-  RefillTooSoonAlert: "TOOSOON",
+  TOOSOON: "TOOSOON",
 
   /**
    * record recorded as historical
    */
-  recordrecordedashistorical: "HISTORIC",
+  HISTORIC: "HISTORIC",
 
   /**
    * violates stated preferences
    */
-  violatesstatedpreferences: "PATPREF",
+  PATPREF: "PATPREF",
 
   /**
    * violates stated preferences, alternate available
    */
-  violatesstatedpreferencesalternateavailable: "PATPREFALT",
+  PATPREFALT: "PATPREFALT",
 
   /**
    * ActFinancialDetectedIssueCode
    */
-  ActFinancialDetectedIssueCode: "_ActFinancialDetectedIssueCode",
+  _ActFinancialDetectedIssueCode: "_ActFinancialDetectedIssueCode",
 
   /**
    * ClinicalActionDetectedIssueCode
    */
-  ClinicalActionDetectedIssueCode: "_ClinicalActionDetectedIssueCode",
+  _ClinicalActionDetectedIssueCode: "_ClinicalActionDetectedIssueCode",
 
   /**
    * Caregap
    */
-  Caregap: "CAREGAP",
+  CAREGAP: "CAREGAP",
 
   /**
    * Codinggap
    */
-  Codinggap: "CODINGGAP",
+  CODINGGAP: "CODINGGAP",
 
   /**
    * knowledge subject
    */
-  knowledgesubject: "KSUBJ",
+  KSUBJ: "KSUBJ",
 
   /**
    * knowledge subtopic
    */
-  knowledgesubtopic: "KSUBT",
+  KSUBT: "KSUBT",
 
   /**
    * intolerance
    */
-  intolerance: "OINT",
+  OINT: "OINT",
 
   /**
    * Allergy
    */
-  Allergy: "ALG",
+  ALG: "ALG",
 
   /**
    * Drug Allergy
    */
-  DrugAllergy: "DALG",
+  DALG: "DALG",
 
   /**
    * Environmental Allergy
    */
-  EnvironmentalAllergy: "EALG",
+  EALG: "EALG",
 
   /**
    * Food Allergy
    */
-  FoodAllergy: "FALG",
+  FALG: "FALG",
 
   /**
    * Drug Intolerance
    */
-  DrugIntolerance: "DINT",
+  DINT: "DINT",
 
   /**
    * Drug Non-Allergy Intolerance
    */
-  DrugNonAllergyIntolerance: "DNAINT",
+  DNAINT: "DNAINT",
 
   /**
    * Environmental Intolerance
    */
-  EnvironmentalIntolerance: "EINT",
+  EINT: "EINT",
 
   /**
    * Environmental Non-Allergy Intolerance
    */
-  EnvironmentalNonAllergyIntolerance: "ENAINT",
+  ENAINT: "ENAINT",
 
   /**
    * Food Intolerance
    */
-  FoodIntolerance: "FINT",
+  FINT: "FINT",
 
   /**
    * Food Non-Allergy Intolerance
    */
-  FoodNonAllergyIntolerance: "FNAINT",
+  FNAINT: "FNAINT",
 
   /**
    * Non-Allergy Intolerance
    */
-  NonAllergyIntolerance: "NAINT",
+  NAINT: "NAINT",
 
   /**
    * Severity Observation
    */
-  SeverityObservation: "SEV",
+  SEV: "SEV",
 
   /**
    * ActPrivilegeCategorizationType
    */
-  ActPrivilegeCategorizationType: "_ActPrivilegeCategorizationType",
+  _ActPrivilegeCategorizationType: "_ActPrivilegeCategorizationType",
 
   /**
    * AdverseSubstanceAdministrationEventActionTakenType
    */
-  AdverseSubstanceAdministrationEventActionTakenType:
+  _AdverseSubstanceAdministrationEventActionTakenType:
     "_AdverseSubstanceAdministrationEventActionTakenType",
 
   /**
    * CommonClinicalObservationType
    */
-  CommonClinicalObservationType: "_CommonClinicalObservationType",
+  _CommonClinicalObservationType: "_CommonClinicalObservationType",
 
   /**
    * FDALabelData
    */
-  FDALabelData: "_FDALabelData",
+  _FDALabelData: "_FDALabelData",
 
   /**
    * coating
    */
-  coating: "FDACOATING",
+  FDACOATING: "FDACOATING",
 
   /**
    * color
    */
-  color: "FDACOLOR",
+  FDACOLOR: "FDACOLOR",
 
   /**
    * imprint code
    */
-  imprintcode: "FDAIMPRINTCD",
+  FDAIMPRINTCD: "FDAIMPRINTCD",
 
   /**
    * logo
    */
-  logo: "FDALOGO",
+  FDALOGO: "FDALOGO",
 
   /**
    * scoring
    */
-  scoring: "FDASCORING",
+  FDASCORING: "FDASCORING",
 
   /**
    * shape
    */
-  shape: "FDASHAPE",
+  FDASHAPE: "FDASHAPE",
 
   /**
    * size
    */
-  size: "FDASIZE",
+  FDASIZE: "FDASIZE",
 
   /**
    * observation allergy test
    */
-  observationallergytest: "_ObservationAllergyTestCode",
+  _ObservationAllergyTestCode: "_ObservationAllergyTestCode",
 
   /**
    * ObservationAllergyTestType
    */
-  ObservationAllergyTestType: "_ObservationAllergyTestType",
+  _ObservationAllergyTestType: "_ObservationAllergyTestType",
 
   /**
    * observation causality assessment
    */
-  observationcausalityassessment: "_ObservationCausalityAssessmentType",
+  _ObservationCausalityAssessmentType: "_ObservationCausalityAssessmentType",
 
   /**
    * observation dosage definition precondition type
    */
-  observationdosagedefinitionpreconditiontype:
+  _ObservationDosageDefinitionPreconditionType:
     "_ObservationDosageDefinitionPreconditionType",
 
   /**
    * ObservationGenomicFamilyHistoryType
    */
-  ObservationGenomicFamilyHistoryType: "_ObservationGenomicFamilyHistoryType",
+  _ObservationGenomicFamilyHistoryType: "_ObservationGenomicFamilyHistoryType",
 
   /**
    * ObservationIndicationType
    */
-  ObservationIndicationType: "_ObservationIndicationType",
+  _ObservationIndicationType: "_ObservationIndicationType",
 
   /**
    * ObservationIssueTriggerMeasuredObservationType
    */
-  ObservationIssueTriggerMeasuredObservationType:
+  _ObservationIssueTriggerMeasuredObservationType:
     "_ObservationIssueTriggerMeasuredObservationType",
 
   /**
    * ObservationQueryMatchType
    */
-  ObservationQueryMatchType: "_ObservationQueryMatchType",
+  _ObservationQueryMatchType: "_ObservationQueryMatchType",
 
   /**
    * ObservationVisionPrescriptionType
    */
-  ObservationVisionPrescriptionType: "_ObservationVisionPrescriptionType",
+  _ObservationVisionPrescriptionType: "_ObservationVisionPrescriptionType",
 
   /**
    * PatientCharacteristicObservationType
    */
-  PatientCharacteristicObservationType: "_PatientCharacteristicObservationType",
+  _PatientCharacteristicObservationType:
+    "_PatientCharacteristicObservationType",
 
   /**
    * SimpleMeasurableClinicalObservationType
    */
-  SimpleMeasurableClinicalObservationType:
+  _SimpleMeasurableClinicalObservationType:
     "_SimpleMeasurableClinicalObservationType",
 
   /**
    * Acyclovir [Susceptibility]
    */
-  AcyclovirSusceptibility: "1-8",
+  "1-8": "1-8",
 
   /**
    * Amdinocillin [Susceptibility] by Serum bactericidal titer
    */
-  AmdinocillinSusceptibilitybySerumbactericidaltiter: "10-9",
+  "10-9": "10-9",
 
   /**
    * Cefoperazone [Susceptibility] by Minimum inhibitory concentration (MIC)
    */
-  CefoperazoneSusceptibilitybyMinimuminhibitoryconcentrationMIC: "100-8",
+  "100-8": "100-8",
 
   /**
    * DBG Ab [Presence] in Serum or Plasma from Blood product unit
    */
-  DBGAbPresenceinSerumorPlasmafromBloodproductunit: "1000-9",
+  "1000-9": "1000-9",
 
   /**
    * R wave duration in lead AVR
    */
-  RwavedurationinleadAVR: "10000-8",
+  "10000-8": "10000-8",
 
   /**
    * Specimen care is maintained
    */
-  Specimencareismaintained: "100002-5",
+  "100002-5": "100002-5",
 
   /**
    * Team communication is maintained throughout care
    */
-  Teamcommunicationismaintainedthroughoutcare: "100003-3",
+  "100003-3": "100003-3",
 
   /**
    * Demonstrates knowledge of the expected psychosocial responses to the procedure
    */
-  Demonstratesknowledgeoftheexpectedpsychosocialresponsestotheprocedure:
-    "100004-1",
+  "100004-1": "100004-1",
 
   /**
    * Demonstrates knowledge of nutritional management related to the procedure
    */
-  Demonstratesknowledgeofnutritionalmanagementrelatedtotheprocedure: "100005-8",
+  "100005-8": "100005-8",
 
   /**
    * Demonstrates knowledge of medication management
    */
-  Demonstratesknowledgeofmedicationmanagement: "100006-6",
+  "100006-6": "100006-6",
 
   /**
    * Demonstrates knowledge of pain management
    */
-  Demonstratesknowledgeofpainmanagement: "100007-4",
+  "100007-4": "100007-4",
 
   /**
    * Demonstrates knowledge of wound management
    */
-  Demonstratesknowledgeofwoundmanagement: "100008-2",
+  "100008-2": "100008-2",
 
   /**
    * Demonstrates knowledge of the procedure and expected results
    */
-  Demonstratesknowledgeoftheprocedureandexpectedresults: "100009-0",
+  "100009-0": "100009-0",
 
   /**
    * R wave duration in lead I
    */
-  RwavedurationinleadI: "10001-6",
+  "10001-6": "10001-6",
 
   /**
    * No injury related to procedure equipment, medical supplies, or instrumentation
    */
-  Noinjuryrelatedtoprocedureequipmentmedicalsuppliesorinstrumentation:
-    "100010-8",
+  "100010-8": "100010-8",
 
   /**
    * No injury related to an electrical source
    */
-  Noinjuryrelatedtoanelectricalsource: "100011-6",
+  "100011-6": "100011-6",
 
   /**
    * Participates in decisions affecting the patient's plan of care
    */
-  Participatesindecisionsaffectingthepatientsplanofcare: "100012-4",
+  "100012-4": "100012-4",
 
   /**
    * Participates in the discharge process
    */
-  Participatesinthedischargeprocess: "100013-2",
+  "100013-2": "100013-2",
 
   /**
    * Psychosocial health is maintained at or improved from baseline
    */
-  Psychosocialhealthismaintainedatorimprovedfrombaseline: "100014-0",
+  "100014-0": "100014-0",
 
   /**
    * No injury related to positioning due to care or procedure
    */
-  Noinjuryrelatedtopositioningduetocareorprocedure: "100015-7",
+  "100015-7": "100015-7",
 
   /**
    * No injury related to a laser source
    */
-  Noinjuryrelatedtoalasersource: "100016-5",
+  "100016-5": "100016-5",
 
   /**
    * Perioperative nursing data set outcomes panel [PNDS]
    */
-  PerioperativenursingdatasetoutcomespanelPNDS: "100017-3",
+  "100017-3": "100017-3",
 
   /**
    * Hospice care Note
    */
-  HospicecareNote: "100018-1",
+  "100018-1": "100018-1",
 
   /**
    * ALK gene mutations found [Identifier] in Blood or Tissue by Molecular genetics method Nominal
    */
-  ALKgenemutationsfoundIdentifierinBloodorTissuebyMoleculargeneticsmethodNominal:
-    "100019-9",
+  "100019-9": "100019-9",
 
   /**
    * R wave duration in lead II
    */
-  RwavedurationinleadII: "10002-4",
+  "10002-4": "10002-4",
 
   /**
    * GNA11 gene mutations found [Identifier] in Blood or Tissue by Molecular genetics method Nominal
    */
-  GNA11genemutationsfoundIdentifierinBloodorTissuebyMoleculargeneticsmethodNominal:
-    "100020-7",
+  "100020-7": "100020-7",
 
   /**
    * GNAQ gene mutations found [Identifier] in Blood or Tissue by Molecular genetics method Nominal
    */
-  GNAQgenemutationsfoundIdentifierinBloodorTissuebyMoleculargeneticsmethodNominal:
-    "100021-5",
+  "100021-5": "100021-5",
 
   /**
    * IDH1 gene mutations found [Identifier] in Blood or Tissue by Molecular genetics method Nominal
    */
-  IDH1genemutationsfoundIdentifierinBloodorTissuebyMoleculargeneticsmethodNominal:
-    "100022-3",
+  "100022-3": "100022-3",
 
   /**
    * IDH2 gene mutations found [Identifier] in Blood or Tissue by Molecular genetics method Nominal
    */
-  IDH2genemutationsfoundIdentifierinBloodorTissuebyMoleculargeneticsmethodNominal:
-    "100023-1",
+  "100023-1": "100023-1",
 
   /**
    * SETBP1 gene mutations found [Identifier] in Blood or Tissue by Molecular genetics method Nominal
    */
-  SETBP1genemutationsfoundIdentifierinBloodorTissuebyMoleculargeneticsmethodNominal:
-    "100024-9",
+  "100024-9": "100024-9",
 
   /**
    * SRSF2 gene mutations found [Identifier] in Blood or Tissue by Molecular genetics method Nominal
    */
-  SRSF2genemutationsfoundIdentifierinBloodorTissuebyMoleculargeneticsmethodNominal:
-    "100025-6",
+  "100025-6": "100025-6",
 
   /**
    * MET gene mutations found [Identifier] in Blood or Tissue by Molecular genetics method Nominal
    */
-  METgenemutationsfoundIdentifierinBloodorTissuebyMoleculargeneticsmethodNominal:
-    "100026-4",
+  "100026-4": "100026-4",
 
   /**
    * SMAD4 gene mutations found [Identifier] in Blood or Tissue by Molecular genetics method Nominal
    */
-  SMAD4genemutationsfoundIdentifierinBloodorTissuebyMoleculargeneticsmethodNominal:
-    "100027-2",
+  "100027-2": "100027-2",
 
   /**
    * FBXW7 gene mutations found [Identifier] in Blood or Tissue by Molecular genetics method Nominal
    */
-  FBXW7genemutationsfoundIdentifierinBloodorTissuebyMoleculargeneticsmethodNominal:
-    "100028-0",
+  "100028-0": "100028-0",
 
   /**
    * Cancer related multigene analysis in Plasma cell-free DNA by Molecular genetics method
    */
-  CancerrelatedmultigeneanalysisinPlasmacellfreeDNAbyMoleculargeneticsmethod:
-    "100029-8",
+  "100029-8": "100029-8",
 
   /**
    * R wave duration in lead III
    */
-  RwavedurationinleadIII: "10003-2",
+  "10003-2": "10003-2",
 
   /**
    * Axis I: Temporal aspects score [Mainz Pain Staging System]
    */
-  AxisITemporalaspectsscoreMainzPainStagingSystem: "100030-6",
+  "100030-6": "100030-6",
 
   /**
    * Axis II: Spatial aspects score [Mainz Pain Staging System]
    */
-  AxisIISpatialaspectsscoreMainzPainStagingSystem: "100031-4",
+  "100031-4": "100031-4",
 
   /**
    * Axis III: Drug taking behavior score [Mainz Pain Staging System]
    */
-  AxisIIIDrugtakingbehaviorscoreMainzPainStagingSystem: "100032-2",
+  "100032-2": "100032-2",
 
   /**
    * Axis IV: Utilization of the health care system score [Mainz Pain Staging System]
    */
-  AxisIVUtilizationofthehealthcaresystemscoreMainzPainStagingSystem: "100033-0",
+  "100033-0": "100033-0",
 
   /**
    * Provider of automated external defibrillator use
    */
-  Providerofautomatedexternaldefibrillatoruse: "100034-8",
+  "100034-8": "100034-8",
 
   /**
    * Exam finding location of Chest
    */
-  ExamfindinglocationofChest: "100035-5",
+  "100035-5": "100035-5",
 
   /**
    * Exam finding location of Lung
    */
-  ExamfindinglocationofLung: "100036-3",
+  "100036-3": "100036-3",
 
   /**
    * Patient contact disposition EMS unit
    */
-  PatientcontactdispositionEMSunit: "100037-1",
+  "100037-1": "100037-1",
 
   /**
    * Patient evaluation disposition EMS unit
    */
-  PatientevaluationdispositionEMSunit: "100038-9",
+  "100038-9": "100038-9",
 
   /**
    * Crew disposition for patient care EMS unit
    */
-  CrewdispositionforpatientcareEMSunit: "100039-7",
+  "100039-7": "100039-7",
 
   /**
    * R wave duration in lead V1
    */
-  RwavedurationinleadV1: "10004-0",
+  "10004-0": "10004-0",
 
   /**
    * Patient transport disposition EMS unit
    */
-  PatienttransportdispositionEMSunit: "100040-5",
+  "100040-5": "100040-5",
 
   /**
    * Aminoglycoside [Susceptibility]
    */
-  AminoglycosideSusceptibility: "100041-3",
+  "100041-3": "100041-3",
 
   /**
    * Atovaquone [Susceptibility]
    */
-  AtovaquoneSusceptibility: "100042-1",
+  "100042-1": "100042-1",
 
   /**
    * Azithromycin+Ethambutol [Susceptibility]
    */
-  AzithromycinEthambutolSusceptibility: "100043-9",
+  "100043-9": "100043-9",
 
   /**
    * Cefcapene [Susceptibility]
    */
-  CefcapeneSusceptibility: "100044-7",
+  "100044-7": "100044-7",
 
   /**
    * Cefozopran [Susceptibility]
    */
-  CefozopranSusceptibility: "100045-4",
+  "100045-4": "100045-4",
 
   /**
    * Cefquinome [Susceptibility]
    */
-  CefquinomeSusceptibility: "100046-2",
+  "100046-2": "100046-2",
 
   /**
    * Cefteram [Susceptibility]
    */
-  CefteramSusceptibility: "100047-0",
+  "100047-0": "100047-0",
 
   /**
    * Clarithromycin+Ethambutol [Susceptibility]
    */
-  ClarithromycinEthambutolSusceptibility: "100048-8",
+  "100048-8": "100048-8",
 
   /**
    * Eravacycline [Susceptibility]
    */
-  EravacyclineSusceptibility: "100049-6",
+  "100049-6": "100049-6",
 
   /**
    * R wave duration in lead V2
    */
-  RwavedurationinleadV2: "10005-7",
+  "10005-7": "10005-7",
 
   /**
    * Erythromycin+Ethambutol [Susceptibility]
    */
-  ErythromycinEthambutolSusceptibility: "100050-4",
+  "100050-4": "100050-4",
 
   /**
    * Ethambutol+rifAMPin [Susceptibility]
    */
-  EthambutolrifAMPinSusceptibility: "100051-2",
+  "100051-2": "100051-2",
 
   /**
    * Flomoxef [Susceptibility]
    */
-  FlomoxefSusceptibility: "100052-0",
+  "100052-0": "100052-0",
 
   /**
    * Fluoroquinolone [Susceptibility]
    */
-  FluoroquinoloneSusceptibility: "100053-8",
+  "100053-8": "100053-8",
 
   /**
    * Gamithromycin [Susceptibility]
    */
-  GamithromycinSusceptibility: "100054-6",
+  "100054-6": "100054-6",
 
   /**
    * Optochin [Susceptibility]
    */
-  OptochinSusceptibility: "100055-3",
+  "100055-3": "100055-3",
 
   /**
    * Panipenem [Susceptibility]
    */
-  PanipenemSusceptibility: "100056-1",
+  "100056-1": "100056-1",
 
   /**
    * Prothionamide [Susceptibility]
    */
-  ProthionamideSusceptibility: "100057-9",
+  "100057-9": "100057-9",
 
   /**
    * Prulifloxacin [Susceptibility]
    */
-  PrulifloxacinSusceptibility: "100058-7",
+  "100058-7": "100058-7",
 
   /**
    * Rifapentine [Susceptibility]
    */
-  RifapentineSusceptibility: "100059-5",
+  "100059-5": "100059-5",
 
   /**
    * R wave duration in lead V3
    */
-  RwavedurationinleadV3: "10006-5",
+  "10006-5": "10006-5",
 
   /**
    * Tildipirosin [Susceptibility]
    */
-  TildipirosinSusceptibility: "100060-3",
+  "100060-3": "100060-3",
 
   /**
    * Tosufloxacin [Susceptibility]
    */
-  TosufloxacinSusceptibility: "100061-1",
+  "100061-1": "100061-1",
 
   /**
    * Standard Dermatology Outcome Measures panel
    */
-  StandardDermatologyOutcomeMeasurespanel: "100062-9",
+  "100062-9": "100062-9",
 
   /**
    * Primary skin concern
    */
-  Primaryskinconcern: "100063-7",
+  "100063-7": "100063-7",
 
   /**
    * Itch severity Reporting Period - Reported
    */
-  ItchseverityReportingPeriodReported: "100064-5",
+  "100064-5": "100064-5",
 
   /**
    * Satisfied with treatment
    */
-  Satisfiedwithtreatment: "100065-2",
+  "100065-2": "100065-2",
 
   /**
    * Specular microscopy panel
    */
-  Specularmicroscopypanel: "100066-0",
+  "100066-0": "100066-0",
 
   /**
    * Eye Image magnification
    */
-  EyeImagemagnification: "100067-8",
+  "100067-8": "100067-8",
 
   /**
    * Right eye Fixation point [Angle]
    */
-  RighteyeFixationpointAngle: "100068-6",
+  "100068-6": "100068-6",
 
   /**
    * Left eye Fixation point [Angle]
    */
-  LefteyeFixationpointAngle: "100069-4",
+  "100069-4": "100069-4",
 
   /**
    * R wave duration in lead V4
    */
-  RwavedurationinleadV4: "10007-3",
+  "10007-3": "10007-3",
 
   /**
    * Right cornea Cell density
    */
-  RightcorneaCelldensity: "100070-2",
+  "100070-2": "100070-2",
 
   /**
    * Left cornea Cell density
    */
-  LeftcorneaCelldensity: "100071-0",
+  "100071-0": "100071-0",
 
   /**
    * Right cornea Coefficient of variation
    */
-  RightcorneaCoefficientofvariation: "100072-8",
+  "100072-8": "100072-8",
 
   /**
    * Left cornea Coefficient of variation
    */
-  LeftcorneaCoefficientofvariation: "100073-6",
+  "100073-6": "100073-6",
 
   /**
    * Right cornea Hexagonality
    */
-  RightcorneaHexagonality: "100074-4",
+  "100074-4": "100074-4",
 
   /**
    * Left cornea Hexagonality
    */
-  LeftcorneaHexagonality: "100075-1",
+  "100075-1": "100075-1",
 
   /**
    * Right cornea Endothelial cells counted
    */
-  RightcorneaEndothelialcellscounted: "100076-9",
+  "100076-9": "100076-9",
 
   /**
    * Left cornea Endothelial cells counted
    */
-  LeftcorneaEndothelialcellscounted: "100077-7",
+  "100077-7": "100077-7",
 
   /**
    * Right cornea Endothelial cell area.min
    */
-  RightcorneaEndothelialcellareamin: "100078-5",
+  "100078-5": "100078-5",
 
   /**
    * Left cornea Endothelial cell area.min
    */
-  LeftcorneaEndothelialcellareamin: "100079-3",
+  "100079-3": "100079-3",
 
   /**
    * R wave duration in lead V5
    */
-  RwavedurationinleadV5: "10008-1",
+  "10008-1": "10008-1",
 
   /**
    * Right cornea Endothelial cell area.max
    */
-  RightcorneaEndothelialcellareamax: "100080-1",
+  "100080-1": "100080-1",
 
   /**
    * Left cornea Endothelial cell area.max
    */
-  LeftcorneaEndothelialcellareamax: "100081-9",
+  "100081-9": "100081-9",
 
   /**
    * Right cornea Endothelial cell area.mean
    */
-  RightcorneaEndothelialcellareamean: "100082-7",
+  "100082-7": "100082-7",
 
   /**
    * Left cornea Endothelial cell area.mean
    */
-  LeftcorneaEndothelialcellareamean: "100083-5",
+  "100083-5": "100083-5",
 
   /**
    * Right cornea Cell area.standard deviation
    */
-  RightcorneaCellareastandarddeviation: "100084-3",
+  "100084-3": "100084-3",
 
   /**
    * Left cornea Cell area.standard deviation
    */
-  LeftcorneaCellareastandarddeviation: "100085-0",
+  "100085-0": "100085-0",
 
   /**
    * Right cornea Type of Analysis method by Specular microscopy
    */
-  RightcorneaTypeofAnalysismethodbySpecularmicroscopy: "100086-8",
+  "100086-8": "100086-8",
 
   /**
    * Toxocara canis 24-35kD IgG Ab [Presence] in Serum by Immunoblot
    */
-  Toxocaracanis2435kDIgGAbPresenceinSerumbyImmunoblot: "100087-6",
+  "100087-6": "100087-6",
 
   /**
    * Taenia solium larva Ab bands panel - Serum by Immunoblot
    */
-  TaeniasoliumlarvaAbbandspanelSerumbyImmunoblot: "100088-4",
+  "100088-4": "100088-4",
 
   /**
    * Taenia solium larva 6-8kD Ab [Presence] in Serum by Immunoblot
    */
-  Taeniasoliumlarva68kDAbPresenceinSerumbyImmunoblot: "100089-2",
+  "100089-2": "100089-2",
 
   /**
    * R wave duration in lead V6
    */
-  RwavedurationinleadV6: "10009-9",
+  "10009-9": "10009-9",
 
   /**
    * Taenia solium larva 45kD Ab [Presence] in Serum by Immunoblot
    */
-  Taeniasoliumlarva45kDAbPresenceinSerumbyImmunoblot: "100090-0",
+  "100090-0": "100090-0",
 
   /**
    * Trypanosoma cruzi Ab [Units/volume] in Serum by Immunoassay
    */
-  TrypanosomacruziAbUnitsvolumeinSerumbyImmunoassay: "100091-8",
+  "100091-8": "100091-8",
 
   /**
    * Trypanosoma cruzi Ab bands panel - Serum by Immunoblot
    */
-  TrypanosomacruziAbbandspanelSerumbyImmunoblot: "100092-6",
+  "100092-6": "100092-6",
 
   /**
    * Trypanosoma cruzi 15-16kD IgG Ab [Presence] in Serum by Immunoblot
    */
-  Trypanosomacruzi1516kDIgGAbPresenceinSerumbyImmunoblot: "100093-4",
+  "100093-4": "100093-4",
 
   /**
    * Trypanosoma cruzi 21-22kD IgG Ab [Presence] in Serum by Immunoblot
    */
-  Trypanosomacruzi2122kDIgGAbPresenceinSerumbyImmunoblot: "100094-2",
+  "100094-2": "100094-2",
 
   /**
    * Trypanosoma cruzi 27-28kD IgG Ab [Presence] in Serum by Immunoblot
    */
-  Trypanosomacruzi2728kDIgGAbPresenceinSerumbyImmunoblot: "100095-9",
+  "100095-9": "100095-9",
 
   /**
    * Trypanosoma cruzi 42kD IgG Ab [Presence] in Serum by Immunoblot
    */
-  Trypanosomacruzi42kDIgGAbPresenceinSerumbyImmunoblot: "100096-7",
+  "100096-7": "100096-7",
 
   /**
    * Trypanosoma cruzi 45-47kD IgG Ab [Presence] in Serum by Immunoblot
    */
-  Trypanosomacruzi4547kDIgGAbPresenceinSerumbyImmunoblot: "100097-5",
+  "100097-5": "100097-5",
 
   /**
    * Trypanosoma cruzi 120-200kD IgG Ab [Presence] in Serum by Immunoblot
    */
-  Trypanosomacruzi120200kDIgGAbPresenceinSerumbyImmunoblot: "100098-3",
+  "100098-3": "100098-3",
 
   /**
    * Trypanosoma cruzi 160kD IgG Ab [Presence] in Serum by Immunoblot
    */
-  Trypanosomacruzi160kDIgGAbPresenceinSerumbyImmunoblot: "100099-1",
+  "100099-1": "100099-1",
 
   /**
    * DBG Ab [Presence] in Serum or Plasma from Donor
    */
-  DBGAbPresenceinSerumorPlasmafromDonor: "1001-7",
+  "1001-7": "1001-7",
 
   /**
    * R' wave amplitude in lead AVF
    */
-  RwaveamplitudeinleadAVF: "10010-7",
+  "10010-7": "10010-7",
 
   /**
    * Fasciola sp IgG Ab [Presence] in Serum by Immunoassay
    */
-  FasciolaspIgGAbPresenceinSerumbyImmunoassay: "100100-7",
+  "100100-7": "100100-7",
 
   /**
    * Fasciola sp 8-9kD IgG Ab [Presence] in Serum by Immunoblot
    */
-  Fasciolasp89kDIgGAbPresenceinSerumbyImmunoblot: "100101-5",
+  "100101-5": "100101-5",
 
   /**
    * Fasciola sp 27-28kD IgG Ab [Presence] in Serum by Immunoblot
    */
-  Fasciolasp2728kDIgGAbPresenceinSerumbyImmunoblot: "100102-3",
+  "100102-3": "100102-3",
 
   /**
    * Fasciola sp 60kD IgG Ab [Presence] in Serum by Immunoblot
    */
-  Fasciolasp60kDIgGAbPresenceinSerumbyImmunoblot: "100103-1",
+  "100103-1": "100103-1",
 
   /**
    * Fasciola sp 42kD IgG Ab [Presence] in Serum by Immunoblot
    */
-  Fasciolasp42kDIgGAbPresenceinSerumbyImmunoblot: "100104-9",
+  "100104-9": "100104-9",
 
   /**
    * Filaria IgG and IgM panel - Serum
    */
-  FilariaIgGandIgMpanelSerum: "100105-6",
+  "100105-6": "100105-6",
 
   /**
    * Filaria IgG Ab [Presence] in Serum by Immunoassay
    */
-  FilariaIgGAbPresenceinSerumbyImmunoassay: "100106-4",
+  "100106-4": "100106-4",
 
   /**
    * Leishmania sp IgG Ab [Presence] in Serum by Immunoassay
    */
-  LeishmaniaspIgGAbPresenceinSerumbyImmunoassay: "100107-2",
+  "100107-2": "100107-2",
 
   /**
    * Leishmania sp IgG Ab [Units/volume] in Serum by Immunoassay
    */
-  LeishmaniaspIgGAbUnitsvolumeinSerumbyImmunoassay: "100108-0",
+  "100108-0": "100108-0",
 
   /**
    * Leishmania sp Ab bands panel - Serum by Immunoblot
    */
-  LeishmaniaspAbbandspanelSerumbyImmunoblot: "100109-8",
+  "100109-8": "100109-8",
 
   /**
    * R' wave amplitude in lead AVL
    */
-  RwaveamplitudeinleadAVL: "10011-5",
+  "10011-5": "10011-5",
 
   /**
    * Leishmania sp 14kD IgG Ab [Presence] in Serum by Immunoblot
    */
-  Leishmaniasp14kDIgGAbPresenceinSerumbyImmunoblot: "100110-6",
+  "100110-6": "100110-6",
 
   /**
    * Leishmania sp 16kD IgG Ab [Presence] in Serum by Immunoblot
    */
-  Leishmaniasp16kDIgGAbPresenceinSerumbyImmunoblot: "100111-4",
+  "100111-4": "100111-4",
 
   /**
    * Fasciola sp Ab bands panel - Serum by Immunoblot
    */
-  FasciolaspAbbandspanelSerumbyImmunoblot: "100112-2",
+  "100112-2": "100112-2",
 
   /**
    * Helicobacter pylori Ab panel - Serum
    */
-  HelicobacterpyloriAbpanelSerum: "100113-0",
+  "100113-0": "100113-0",
 
   /**
    * Toxoplasma gondii 30kD Ab [Presence] in Serum by Immunoblot
    */
-  Toxoplasmagondii30kDAbPresenceinSerumbyImmunoblot: "100114-8",
+  "100114-8": "100114-8",
 
   /**
    * Toxoplasma gondii 31kD Ab [Presence] in Serum by Immunoblot
    */
-  Toxoplasmagondii31kDAbPresenceinSerumbyImmunoblot: "100115-5",
+  "100115-5": "100115-5",
 
   /**
    * Toxoplasma gondii 33kD Ab [Presence] in Serum by Immunoblot
    */
-  Toxoplasmagondii33kDAbPresenceinSerumbyImmunoblot: "100116-3",
+  "100116-3": "100116-3",
 
   /**
    * Toxoplasma gondii 40kD Ab [Presence] in Serum by Immunoblot
    */
-  Toxoplasmagondii40kDAbPresenceinSerumbyImmunoblot: "100117-1",
+  "100117-1": "100117-1",
 
   /**
    * Toxoplasma gondii 41kD Ab [Presence] in Serum by Immunoblot
    */
-  Toxoplasmagondii41kDAbPresenceinSerumbyImmunoblot: "100118-9",
+  "100118-9": "100118-9",
 
   /**
    * Toxoplasma gondii 45kD Ab [Presence] in Serum by Immunoblot
    */
-  Toxoplasmagondii45kDAbPresenceinSerumbyImmunoblot: "100119-7",
+  "100119-7": "100119-7",
 
   /**
    * R' wave amplitude in lead AVR
    */
-  RwaveamplitudeinleadAVR: "10012-3",
+  "10012-3": "10012-3",
 
   /**
    * Chlamydia trachomatis Ab panel - Serum
    */
-  ChlamydiatrachomatisAbpanelSerum: "100120-5",
+  "100120-5": "100120-5",
 
   /**
    * Chlamydia trachomatis IgA Ab [Presence] in Serum by Immunoassay
    */
-  ChlamydiatrachomatisIgAAbPresenceinSerumbyImmunoassay: "100121-3",
+  "100121-3": "100121-3",
 
   /**
    * Chlamydophila pneumoniae Ab panel - Serum
    */
-  ChlamydophilapneumoniaeAbpanelSerum: "100122-1",
+  "100122-1": "100122-1",
 
   /**
    * Chlamydophila pneumoniae IgA Ab [Presence] in Serum by Immunoassay
    */
-  ChlamydophilapneumoniaeIgAAbPresenceinSerumbyImmunoassay: "100123-9",
+  "100123-9": "100123-9",
 
   /**
    * Chlamydophila pneumoniae IgA Ab [Units/volume] in Serum by Immunoassay
    */
-  ChlamydophilapneumoniaeIgAAbUnitsvolumeinSerumbyImmunoassay: "100124-7",
+  "100124-7": "100124-7",
 
   /**
    * Chlamydophila psittaci Ab panel - Serum
    */
-  ChlamydophilapsittaciAbpanelSerum: "100125-4",
+  "100125-4": "100125-4",
 
   /**
    * Bordetella pertussis Ab.IgG panel - Serum
    */
-  BordetellapertussisAbIgGpanelSerum: "100126-2",
+  "100126-2": "100126-2",
 
   /**
    * Campylobacter sp Ab panel - Serum
    */
-  CampylobacterspAbpanelSerum: "100127-0",
+  "100127-0": "100127-0",
 
   /**
    * Cryptococcus sp Ag panel - Serum
    */
-  CryptococcusspAgpanelSerum: "100128-8",
+  "100128-8": "100128-8",
 
   /**
    * Schistosoma sp Ab [Titer] in Serum by Hemagglutination
    */
-  SchistosomaspAbTiterinSerumbyHemagglutination: "100129-6",
+  "100129-6": "100129-6",
 
   /**
    * R' wave amplitude in lead I
    */
-  RwaveamplitudeinleadI: "10013-1",
+  "10013-1": "10013-1",
 
   /**
    * Schistosoma mansoni Ab [Presence] in Serum by Immunoblot
    */
-  SchistosomamansoniAbPresenceinSerumbyImmunoblot: "100130-4",
+  "100130-4": "100130-4",
 
   /**
    * Schistosoma sp 8kD Ab [Presence] in Serum by Immunoblot
    */
-  Schistosomasp8kDAbPresenceinSerumbyImmunoblot: "100131-2",
+  "100131-2": "100131-2",
 
   /**
    * Schistosoma sp 9kD Ab [Presence] in Serum by Immunoblot
    */
-  Schistosomasp9kDAbPresenceinSerumbyImmunoblot: "100132-0",
+  "100132-0": "100132-0",
 
   /**
    * Schistosoma sp 10kD Ab [Presence] in Serum by Immunoblot
    */
-  Schistosomasp10kDAbPresenceinSerumbyImmunoblot: "100133-8",
+  "100133-8": "100133-8",
 
   /**
    * Schistosoma sp 11kD Ab [Presence] in Serum by Immunoblot
    */
-  Schistosomasp11kDAbPresenceinSerumbyImmunoblot: "100134-6",
+  "100134-6": "100134-6",
 
   /**
    * Schistosoma sp 12-13kD Ab [Presence] in Serum by Immunoblot
    */
-  Schistosomasp1213kDAbPresenceinSerumbyImmunoblot: "100135-3",
+  "100135-3": "100135-3",
 
   /**
    * Schistosoma sp 14-15kD Ab [Presence] in Serum by Immunoblot
    */
-  Schistosomasp1415kDAbPresenceinSerumbyImmunoblot: "100136-1",
+  "100136-1": "100136-1",
 
   /**
    * Schistosoma sp 15-16kD Ab [Presence] in Serum by Immunoblot
    */
-  Schistosomasp1516kDAbPresenceinSerumbyImmunoblot: "100137-9",
+  "100137-9": "100137-9",
 
   /**
    * Schistosoma sp 18-19kD Ab [Presence] in Serum by Immunoblot
    */
-  Schistosomasp1819kDAbPresenceinSerumbyImmunoblot: "100138-7",
+  "100138-7": "100138-7",
 
   /**
    * Schistosoma sp 22-24kD Ab [Presence] in Serum by Immunoblot
    */
-  Schistosomasp2224kDAbPresenceinSerumbyImmunoblot: "100139-5",
+  "100139-5": "100139-5",
 
   /**
    * R' wave amplitude in lead II
    */
-  RwaveamplitudeinleadII: "10014-9",
+  "10014-9": "10014-9",
 
   /**
    * Schistosoma sp 30-34kD Ab [Presence] in Serum by Immunoblot
    */
-  Schistosomasp3034kDAbPresenceinSerumbyImmunoblot: "100140-3",
+  "100140-3": "100140-3",
 
   /**
    * Schistosoma sp 65kD Ab [Presence] in Serum by Immunoblot
    */
-  Schistosomasp65kDAbPresenceinSerumbyImmunoblot: "100141-1",
+  "100141-1": "100141-1",
 
   /**
    * Schistosoma sp 70kD Ab [Presence] in Serum by Immunoblot
    */
-  Schistosomasp70kDAbPresenceinSerumbyImmunoblot: "100142-9",
+  "100142-9": "100142-9",
 
   /**
    * Schistosoma sp 80kD Ab [Presence] in Serum by Immunoblot
    */
-  Schistosomasp80kDAbPresenceinSerumbyImmunoblot: "100143-7",
+  "100143-7": "100143-7",
 
   /**
    * Schistosoma sp 95kD Ab [Presence] in Serum by Immunoblot
    */
-  Schistosomasp95kDAbPresenceinSerumbyImmunoblot: "100144-5",
+  "100144-5": "100144-5",
 
   /**
    * Schistosoma sp 110kD Ab [Presence] in Serum by Immunoblot
    */
-  Schistosomasp110kDAbPresenceinSerumbyImmunoblot: "100145-2",
+  "100145-2": "100145-2",
 
   /**
    * Schistosoma sp 120kD Ab [Presence] in Serum by Immunoblot
    */
-  Schistosomasp120kDAbPresenceinSerumbyImmunoblot: "100146-0",
+  "100146-0": "100146-0",
 
   /**
    * Toxoplasma gondii Ab bands panel - Serum by Immunoblot
    */
-  ToxoplasmagondiiAbbandspanelSerumbyImmunoblot: "100147-8",
+  "100147-8": "100147-8",
 
   /**
    * Schistosoma sp Ab bands panel - Serum by Immunoblot
    */
-  SchistosomaspAbbandspanelSerumbyImmunoblot: "100148-6",
+  "100148-6": "100148-6",
 
   /**
    * 6-oxo-piperidine-2-carboxylate and 6(R+S)-oxo-propylpiperidine-2-carboxylate panel - Urine and Serum or Plasma
    */
-  Sixoxopiperidine2carboxylateand6RSoxopropylpiperidine2carboxylatepanelUrineandSerumorPlasma:
-    "100149-4",
+  "100149-4": "100149-4",
 
   /**
    * R' wave amplitude in lead III
    */
-  RwaveamplitudeinleadIII: "10015-6",
+  "10015-6": "10015-6",
 
   /**
    * 6(R+S)-oxo-propylpiperidine-2-carboxylate [Moles/volume] in Plasma
    */
-  SixRSoxopropylpiperidine2carboxylateMolesvolumeinPlasma: "100150-2",
+  "100150-2": "100150-2",
 
   /**
    * 6-oxo-piperidine-2-carboxylate [Moles/volume] in Plasma
    */
-  Sixoxopiperidine2carboxylateMolesvolumeinPlasma: "100151-0",
+  "100151-0": "100151-0",
 
   /**
    * 6-oxo-piperidine-2-carboxylate/Creatinine [Molar ratio] in Urine
    */
-  Sixoxopiperidine2carboxylateCreatinineMolarratioinUrine: "100152-8",
+  "100152-8": "100152-8",
 
   /**
    * 6(R+S)-oxo-propylpiperidine-2-carboxylate/Creatinine [Molar ratio] in Urine
    */
-  SixRSoxopropylpiperidine2carboxylateCreatinineMolarratioinUrine: "100153-6",
+  "100153-6": "100153-6",
 
   /**
    * Specimen collection supervision level
    */
-  Specimencollectionsupervisionlevel: "100154-4",
+  "100154-4": "100154-4",
 
   /**
    * Left cornea Type of Analysis method by Specular microscopy
    */
-  LeftcorneaTypeofAnalysismethodbySpecularmicroscopy: "100155-1",
+  "100155-1": "100155-1",
 
   /**
    * SARS-CoV-2 (COVID-19) variant [Type] in Specimen by NAA with probe detection
    */
-  SARSCoV2COVID19variantTypeinSpecimenbyNAAwithprobedetection: "100156-9",
+  "100156-9": "100156-9",
 
   /**
    * SARS-CoV-2 (COVID-19) lineage [Type] in Specimen by Sequencing
    */
-  SARSCoV2COVID19lineageTypeinSpecimenbySequencing: "100157-7",
+  "100157-7": "100157-7",
 
   /**
    * Microalbumin [Mass/volume] in Urine collected for unspecified duration
    */
-  MicroalbuminMassvolumeinUrinecollectedforunspecifiedduration: "100158-5",
+  "100158-5": "100158-5",
 
   /**
    * Knee Society Score pre-op panel [Knee Society Score]
    */
-  KneeSocietyScorepreoppanelKneeSocietyScore: "100159-3",
+  "100159-3": "100159-3",
 
   /**
    * R' wave amplitude in lead V1
    */
-  RwaveamplitudeinleadV1: "10016-4",
+  "10016-4": "10016-4",
 
   /**
    * Knee replacement
    */
-  Kneereplacement: "100160-1",
+  "100160-1": "100160-1",
 
   /**
    * Charnley Functional Classification
    */
-  CharnleyFunctionalClassification: "100161-9",
+  "100161-9": "100161-9",
 
   /**
    * Knee alignment W standing X-ray measured
    */
-  KneealignmentWstandingXraymeasured: "100162-7",
+  "100162-7": "100162-7",
 
   /**
    * Knee medial AndOr lateral instability W full extension
    */
-  KneemedialAndOrlateralinstabilityWfullextension: "100163-5",
+  "100163-5": "100163-5",
 
   /**
    * Knee AP instability W 90 degree flexion
    */
-  KneeAPinstabilityW90degreeflexion: "100164-3",
+  "100164-3": "100164-3",
 
   /**
    * Knee range of motion
    */
-  Kneerangeofmotion: "100165-0",
+  "100165-0": "100165-0",
 
   /**
    * Flexion contracture range of Knee
    */
-  FlexioncontracturerangeofKnee: "100166-8",
+  "100166-8": "100166-8",
 
   /**
    * Extensor lag range of Knee
    */
-  ExtensorlagrangeofKnee: "100167-6",
+  "100167-6": "100167-6",
 
   /**
    * Knee pain severity with level walking
    */
-  Kneepainseveritywithlevelwalking: "100168-4",
+  "100168-4": "100168-4",
 
   /**
    * Knee pain severity with stairs or inclines
    */
-  Kneepainseveritywithstairsorinclines: "100169-2",
+  "100169-2": "100169-2",
 
   /**
    * R' wave amplitude in lead V2
    */
-  RwaveamplitudeinleadV2: "10017-2",
+  "10017-2": "10017-2",
 
   /**
    * Knee feels normal
    */
-  Kneefeelsnormal: "100170-0",
+  "100170-0": "100170-0",
 
   /**
    * Satisfaction with level of knee pain while sitting
    */
-  Satisfactionwithlevelofkneepainwhilesitting: "100171-8",
+  "100171-8": "100171-8",
 
   /**
    * Satisfaction with level of knee pain while lying in bed
    */
-  Satisfactionwithlevelofkneepainwhilelyinginbed: "100172-6",
+  "100172-6": "100172-6",
 
   /**
    * Satisfaction with knee function while getting out of bed
    */
-  Satisfactionwithkneefunctionwhilegettingoutofbed: "100173-4",
+  "100173-4": "100173-4",
 
   /**
    * Satisfaction with knee function while performing light household duties
    */
-  Satisfactionwithkneefunctionwhileperforminglighthouseholdduties: "100174-2",
+  "100174-2": "100174-2",
 
   /**
    * Satisfaction with knee function while performing recreational activities
    */
-  Satisfactionwithkneefunctionwhileperformingrecreationalactivities: "100175-9",
+  "100175-9": "100175-9",
 
   /**
    * Expect surgery to relieve pain
    */
-  Expectsurgerytorelievepain: "100176-7",
+  "100176-7": "100176-7",
 
   /**
    * Expect surgery will improve ability to perform activities of daily living
    */
-  Expectsurgerywillimproveabilitytoperformactivitiesofdailyliving: "100177-5",
+  "100177-5": "100177-5",
 
   /**
    * Expect surgery will improve ability to perform leisure, recreational, or sports activities
    */
-  Expectsurgerywillimproveabilitytoperformleisurerecreationalorsportsactivities:
-    "100178-3",
+  "100178-3": "100178-3",
 
   /**
    * Walk without assistive mobility devices
    */
-  Walkwithoutassistivemobilitydevices: "100179-1",
+  "100179-1": "100179-1",
 
   /**
    * R' wave amplitude in lead V3
    */
-  RwaveamplitudeinleadV3: "10018-0",
+  "10018-0": "10018-0",
 
   /**
    * Assistive mobility devices used
    */
-  Assistivemobilitydevicesused: "100180-9",
+  "100180-9": "100180-9",
 
   /**
    * Assistive mobility devices used due to health condition
    */
-  Assistivemobilitydevicesusedduetohealthcondition: "100181-7",
+  "100181-7": "100181-7",
 
   /**
    * Duration of standing before sitting due to knee discomfort
    */
-  Durationofstandingbeforesittingduetokneediscomfort: "100182-5",
+  "100182-5": "100182-5",
 
   /**
    * Duration of walking before stopping due to knee discomfort
    */
-  Durationofwalkingbeforestoppingduetokneediscomfort: "100183-3",
+  "100183-3": "100183-3",
 
   /**
    * How bothersome is knee when walking on an uneven surface
    */
-  Howbothersomeiskneewhenwalkingonanunevensurface: "100184-1",
+  "100184-1": "100184-1",
 
   /**
    * How bothersome is knee when turning or pivoting leg
    */
-  Howbothersomeiskneewhenturningorpivotingleg: "100185-8",
+  "100185-8": "100185-8",
 
   /**
    * How bothersome is knee when climbing up or down a flight of stairs
    */
-  Howbothersomeiskneewhenclimbingupordownaflightofstairs: "100186-6",
+  "100186-6": "100186-6",
 
   /**
    * How bothersome is knee when getting up from a low seat without armrests
    */
-  Howbothersomeiskneewhengettingupfromalowseatwithoutarmrests: "100187-4",
+  "100187-4": "100187-4",
 
   /**
    * How bothersome is knee when getting into or out of a car
    */
-  Howbothersomeiskneewhengettingintooroutofacar: "100188-2",
+  "100188-2": "100188-2",
 
   /**
    * How bothersome is knee when moving laterally
    */
-  Howbothersomeiskneewhenmovinglaterally: "100189-0",
+  "100189-0": "100189-0",
 
   /**
    * R' wave amplitude in lead V4
    */
-  RwaveamplitudeinleadV4: "10019-8",
+  "10019-8": "10019-8",
 
   /**
    * How bothersome is knee when climbing a ladder or step stool
    */
-  Howbothersomeiskneewhenclimbingaladderorstepstool: "100190-8",
+  "100190-8": "100190-8",
 
   /**
    * How bothersome is knee when carrying a bag for one block
    */
-  Howbothersomeiskneewhencarryingabagforoneblock: "100191-6",
+  "100191-6": "100191-6",
 
   /**
    * How bothersome is knee when squatting
    */
-  Howbothersomeiskneewhensquatting: "100192-4",
+  "100192-4": "100192-4",
 
   /**
    * How bothersome is knee when kneeling
    */
-  Howbothersomeiskneewhenkneeling: "100193-2",
+  "100193-2": "100193-2",
 
   /**
    * How bothersome is knee when running
    */
-  Howbothersomeiskneewhenrunning: "100194-0",
+  "100194-0": "100194-0",
 
   /**
    * Pain severity--during activity
    */
-  Painseverityduringactivity: "100195-7",
+  "100195-7": "100195-7",
 
   /**
    * Pre-op total score [Knee Society Score]
    */
-  PreoptotalscoreKneeSocietyScore: "100196-5",
+  "100196-5": "100196-5",
 
   /**
    * Exercise activity and pain severity panel
    */
-  Exerciseactivityandpainseveritypanel: "100197-3",
+  "100197-3": "100197-3",
 
   /**
    * Pre-op objective knee indicators score [Knee Society Score]
    */
-  PreopobjectivekneeindicatorsscoreKneeSocietyScore: "100198-1",
+  "100198-1": "100198-1",
 
   /**
    * Pre-op symptoms score [Knee Society Score]
    */
-  PreopsymptomsscoreKneeSocietyScore: "100199-9",
+  "100199-9": "100199-9",
 
   /**
    * DBG Ab [Presence] in Serum or Plasma
    */
-  DBGAbPresenceinSerumorPlasma: "1002-5",
+  "1002-5": "1002-5",
 
   /**
    * R' wave amplitude in lead V5
    */
-  RwaveamplitudeinleadV5: "10020-6",
+  "10020-6": "10020-6",
 
   /**
    * Pre-op patient expectations score [Knee Society Score]
    */
-  PreoppatientexpectationsscoreKneeSocietyScore: "100200-5",
+  "100200-5": "100200-5",
 
   /**
    * Pre-op functional activities score [Knee Society Score]
    */
-  PreopfunctionalactivitiesscoreKneeSocietyScore: "100201-3",
+  "100201-3": "100201-3",
 
   /**
    * Pre-op discretionary knee activities score [Knee Society Score]
    */
-  PreopdiscretionarykneeactivitiesscoreKneeSocietyScore: "100202-1",
+  "100202-1": "100202-1",
 
   /**
    * Knee Society Score post-op panel [Knee Society Score]
    */
-  KneeSocietyScorepostoppanelKneeSocietyScore: "100203-9",
+  "100203-9": "100203-9",
 
   /**
    * Accuracy of pre-surgery expectations of pain relief
    */
-  Accuracyofpresurgeryexpectationsofpainrelief: "100204-7",
+  "100204-7": "100204-7",
 
   /**
    * Accuracy of pre-surgery expectations to perform activities of daily living
    */
-  Accuracyofpresurgeryexpectationstoperformactivitiesofdailyliving: "100205-4",
+  "100205-4": "100205-4",
 
   /**
    * Accuracy of pre-surgery expectations to perform leisure, recreational, or sports activities
    */
-  Accuracyofpresurgeryexpectationstoperformleisurerecreationalorsportsactivities:
-    "100206-2",
+  "100206-2": "100206-2",
 
   /**
    * Post-op total score [Knee Society Score]
    */
-  PostoptotalscoreKneeSocietyScore: "100207-0",
+  "100207-0": "100207-0",
 
   /**
    * Post-op objective knee indicators score [Knee Society Score]
    */
-  PostopobjectivekneeindicatorsscoreKneeSocietyScore: "100208-8",
+  "100208-8": "100208-8",
 
   /**
    * Post-op symptoms score [Knee Society Score]
    */
-  PostopsymptomsscoreKneeSocietyScore: "100209-6",
+  "100209-6": "100209-6",
 
   /**
    * R' wave amplitude in lead V6
    */
-  RwaveamplitudeinleadV6: "10021-4",
+  "10021-4": "10021-4",
 
   /**
    * Post-op patient expectations score [Knee Society Score]
    */
-  PostoppatientexpectationsscoreKneeSocietyScore: "100210-4",
+  "100210-4": "100210-4",
 
   /**
    * Post-op functional activities score [Knee Society Score]
    */
-  PostopfunctionalactivitiesscoreKneeSocietyScore: "100211-2",
+  "100211-2": "100211-2",
 
   /**
    * Post-op discretionary knee activities score [Knee Society Score]
    */
-  PostopdiscretionarykneeactivitiesscoreKneeSocietyScore: "100212-0",
+  "100212-0": "100212-0",
 
   /**
    * Prostate cancer multigene analysis in Blood or Tissue by Molecular genetics method
    */
-  ProstatecancermultigeneanalysisinBloodorTissuebyMoleculargeneticsmethod:
-    "100213-8",
+  "100213-8": "100213-8",
 
   /**
    * Dental model prior authorization Document
    */
-  DentalmodelpriorauthorizationDocument: "100214-6",
+  "100214-6": "100214-6",
 
   /**
    * Episode of care medical records Document Transplant surgery
    */
-  EpisodeofcaremedicalrecordsDocumentTransplantsurgery: "100215-3",
+  "100215-3": "100215-3",
 
   /**
    * Surgical synoptic report
    */
-  Surgicalsynopticreport: "100216-1",
+  "100216-1": "100216-1",
 
   /**
    * Surgical oncology synoptic report
    */
-  Surgicaloncologysynopticreport: "100217-9",
+  "100217-9": "100217-9",
 
   /**
    * Surgical oncology of colon synoptic report
    */
-  Surgicaloncologyofcolonsynopticreport: "100218-7",
+  "100218-7": "100218-7",
 
   /**
    * Surgical oncology of melanoma synoptic report
    */
-  Surgicaloncologyofmelanomasynopticreport: "100219-5",
+  "100219-5": "100219-5",
 
   /**
    * R' wave duration in lead AVF
    */
-  RwavedurationinleadAVF: "10022-2",
+  "10022-2": "10022-2",
 
   /**
    * Surgical oncology of breast synoptic report
    */
-  Surgicaloncologyofbreastsynopticreport: "100220-3",
+  "100220-3": "100220-3",
 
   /**
    * Surgical oncology of thyroid synoptic report
    */
-  Surgicaloncologyofthyroidsynopticreport: "100221-1",
+  "100221-1": "100221-1",
 
   /**
    * Surgical oncology of pancreas synoptic report
    */
-  Surgicaloncologyofpancreassynopticreport: "100222-9",
+  "100222-9": "100222-9",
 
   /**
    * Physical findings of Retina Narrative
    */
-  PhysicalfindingsofRetinaNarrative: "100223-7",
+  "100223-7": "100223-7",
 
   /**
    * Cardiac left ventricular segmental wall motion by echo panel
    */
-  Cardiacleftventricularsegmentalwallmotionbyechopanel: "100224-5",
+  "100224-5": "100224-5",
 
   /**
    * Bone density quantitative ultrasound study
    */
-  Bonedensityquantitativeultrasoundstudy: "100225-2",
+  "100225-2": "100225-2",
 
   /**
    * Small bowel capsule endoscopy study Document
    */
-  SmallbowelcapsuleendoscopystudyDocument: "100226-0",
+  "100226-0": "100226-0",
 
   /**
    * Colon capsule endoscopy study Document
    */
-  ColoncapsuleendoscopystudyDocument: "100227-8",
+  "100227-8": "100227-8",
 
   /**
    * Upper gastrointestinal capsule endoscopy study Document
    */
-  UppergastrointestinalcapsuleendoscopystudyDocument: "100228-6",
+  "100228-6": "100228-6",
 
   /**
    * Endoscopic ultrasound study Document
    */
-  EndoscopicultrasoundstudyDocument: "100229-4",
+  "100229-4": "100229-4",
 
   /**
    * R' wave duration in lead AVL
    */
-  RwavedurationinleadAVL: "10023-0",
+  "10023-0": "10023-0",
 
   /**
    * Routine prenatal assessment panel
    */
-  Routineprenatalassessmentpanel: "100230-2",
+  "100230-2": "100230-2",
 
   /**
    * Endobronchial ultrasound study
    */
-  Endobronchialultrasoundstudy: "100231-0",
+  "100231-0": "100231-0",
 
   /**
    * Impacts of Events Scale-Revised panel
    */
-  ImpactsofEventsScaleRevisedpanel: "100232-8",
+  "100232-8": "100232-8",
 
   /**
    * Reminders brought back feelings about adverse event
    */
-  Remindersbroughtbackfeelingsaboutadverseevent: "100233-6",
+  "100233-6": "100233-6",
 
   /**
    * Trouble staying asleep
    */
-  Troublestayingasleep: "100234-4",
+  "100234-4": "100234-4",
 
   /**
    * Other things triggered persistent thoughts about adverse event
    */
-  Otherthingstriggeredpersistentthoughtsaboutadverseevent: "100235-1",
+  "100235-1": "100235-1",
 
   /**
    * Felt irritable AndOr angry
    */
-  FeltirritableAndOrangry: "100236-9",
+  "100236-9": "100236-9",
 
   /**
    * Avoided getting upset when unintentionally thought about adverse event
    */
-  Avoidedgettingupsetwhenunintentionallythoughtaboutadverseevent: "100237-7",
+  "100237-7": "100237-7",
 
   /**
    * Thought about adverse event unintentionally
    */
-  Thoughtaboutadverseeventunintentionally: "100238-5",
+  "100238-5": "100238-5",
 
   /**
    * Felt as if adverse event did not happen
    */
-  Feltasifadverseeventdidnothappen: "100239-3",
+  "100239-3": "100239-3",
 
   /**
    * R' wave duration in lead AVR
    */
-  RwavedurationinleadAVR: "10024-8",
+  "10024-8": "10024-8",
 
   /**
    * Avoided reminders of adverse event
    */
-  Avoidedremindersofadverseevent: "100240-1",
+  "100240-1": "100240-1",
 
   /**
    * Experienced mental images of adverse event
    */
-  Experiencedmentalimagesofadverseevent: "100241-9",
+  "100241-9": "100241-9",
 
   /**
    * Easily startled
    */
-  Easilystartled: "100242-7",
+  "100242-7": "100242-7",
 
   /**
    * Tried to not think of adverse event
    */
-  Triedtonotthinkofadverseevent: "100243-5",
+  "100243-5": "100243-5",
 
   /**
    * Aware of feelings about adverse event, but did not address them
    */
-  Awareoffeelingsaboutadverseeventbutdidnotaddressthem: "100244-3",
+  "100244-3": "100244-3",
 
   /**
    * Feelings about adverse event were numb
    */
-  Feelingsaboutadverseeventwerenumb: "100245-0",
+  "100245-0": "100245-0",
 
   /**
    * Acted or felt the same as during adverse event
    */
-  Actedorfeltthesameasduringadverseevent: "100246-8",
+  "100246-8": "100246-8",
 
   /**
    * Trouble falling asleep
    */
-  Troublefallingasleep: "100247-6",
+  "100247-6": "100247-6",
 
   /**
    * Waves of strong feelings about adverse event
    */
-  Wavesofstrongfeelingsaboutadverseevent: "100248-4",
+  "100248-4": "100248-4",
 
   /**
    * Tried to remove adverse event from memory
    */
-  Triedtoremoveadverseeventfrommemory: "100249-2",
+  "100249-2": "100249-2",
 
   /**
    * R' wave duration in lead I
    */
-  RwavedurationinleadI: "10025-5",
+  "10025-5": "10025-5",
 
   /**
    * Trouble concentrating
    */
-  Troubleconcentrating: "100250-0",
+  "100250-0": "100250-0",
 
   /**
    * Reminders of adverse event caused physical reactions
    */
-  Remindersofadverseeventcausedphysicalreactions: "100251-8",
+  "100251-8": "100251-8",
 
   /**
    * Had dreams about adverse event
    */
-  Haddreamsaboutadverseevent: "100252-6",
+  "100252-6": "100252-6",
 
   /**
    * Felt watchful and on-guard
    */
-  Feltwatchfulandonguard: "100253-4",
+  "100253-4": "100253-4",
 
   /**
    * Tried not to talk about adverse event
    */
-  Triednottotalkaboutadverseevent: "100254-2",
+  "100254-2": "100254-2",
 
   /**
    * Total score [Impact of Event Scale-Revised]
    */
-  TotalscoreImpactofEventScaleRevised: "100255-9",
+  "100255-9": "100255-9",
 
   /**
    * Fallen in last 6 months
    */
-  Falleninlast6months: "100256-7",
+  "100256-7": "100256-7",
 
   /**
    * Feel unsteady when standing or walking
    */
-  Feelunsteadywhenstandingorwalking: "100257-5",
+  "100257-5": "100257-5",
 
   /**
    * History of fall related injury
    */
-  Historyoffallrelatedinjury: "100258-3",
+  "100258-3": "100258-3",
 
   /**
    * Aware of tactile sensations
    */
-  Awareoftactilesensations: "100259-1",
+  "100259-1": "100259-1",
 
   /**
    * R' wave duration in lead II
    */
-  RwavedurationinleadII: "10026-3",
+  "10026-3": "10026-3",
 
   /**
    * Easy to describe thoughts AndOr feelings
    */
-  EasytodescribethoughtsAndOrfeelings: "100260-9",
+  "100260-9": "100260-9",
 
   /**
    * Critical of own thoughts AndOr feelings
    */
-  CriticalofownthoughtsAndOrfeelings: "100261-7",
+  "100261-7": "100261-7",
 
   /**
    * Able to notice distressing thoughts AndOr feelings without having to react
    */
-  AbletonoticedistressingthoughtsAndOrfeelingswithouthavingtoreact: "100262-5",
+  "100262-5": "100262-5",
 
   /**
    * Easily distracted
    */
-  Easilydistracted: "100263-3",
+  "100263-3": "100263-3",
 
   /**
    * Able to notice thoughts AndOr feelings without being overwhelmed
    */
-  AbletonoticethoughtsAndOrfeelingswithoutbeingoverwhelmed: "100264-1",
+  "100264-1": "100264-1",
 
   /**
    * Aware of dietary intake impact on self
    */
-  Awareofdietaryintakeimpactonself: "100265-8",
+  "100265-8": "100265-8",
 
   /**
    * Difficult to describe thoughts AndOr feelings
    */
-  DifficulttodescribethoughtsAndOrfeelings: "100266-6",
+  "100266-6": "100266-6",
 
   /**
    * Aware of auditory stimuli
    */
-  Awareofauditorystimuli: "100267-4",
+  "100267-4": "100267-4",
 
   /**
    * Able to avoid immediate reaction in difficult situations
    */
-  Abletoavoidimmediatereactionindifficultsituations: "100268-2",
+  "100268-2": "100268-2",
 
   /**
    * Do things without paying attention
    */
-  Dothingswithoutpayingattention: "100269-0",
+  "100269-0": "100269-0",
 
   /**
    * R' wave duration in lead III
    */
-  RwavedurationinleadIII: "10027-1",
+  "10027-1": "10027-1",
 
   /**
    * Recover quickly from distressing thoughts AndOr images
    */
-  RecoverquicklyfromdistressingthoughtsAndOrimages: "100270-8",
+  "100270-8": "100270-8",
 
   /**
    * Aware of olfactory stimuli
    */
-  Awareofolfactorystimuli: "100271-6",
+  "100271-6": "100271-6",
 
   /**
    * Aware of visual stimuli
    */
-  Awareofvisualstimuli: "100272-4",
+  "100272-4": "100272-4",
 
   /**
    * Aware of emotions affect on thoughts AndOr behavior
    */
-  AwareofemotionsaffectonthoughtsAndOrbehavior: "100273-2",
+  "100273-2": "100273-2",
 
   /**
    * Observing score [FFMQ]
    */
-  ObservingscoreFFMQ: "100274-0",
+  "100274-0": "100274-0",
 
   /**
    * Describing score [FFMQ]
    */
-  DescribingscoreFFMQ: "100275-7",
+  "100275-7": "100275-7",
 
   /**
    * Acting with awareness score [FFMQ]
    */
-  ActingwithawarenessscoreFFMQ: "100276-5",
+  "100276-5": "100276-5",
 
   /**
    * Nonjudging score [FFMQ]
    */
-  NonjudgingscoreFFMQ: "100277-3",
+  "100277-3": "100277-3",
 
   /**
    * Nonreactivity score [FFMQ]
    */
-  NonreactivityscoreFFMQ: "100278-1",
+  "100278-1": "100278-1",
 
   /**
    * Total score [FFMQ]
    */
-  TotalscoreFFMQ: "100279-9",
+  "100279-9": "100279-9",
 
   /**
    * R' wave duration in lead V1
    */
-  RwavedurationinleadV1: "10028-9",
+  "10028-9": "10028-9",
 
   /**
    * Five Facet Mindfulness Questionnaire panel [FFMQ]
    */
-  FiveFacetMindfulnessQuestionnairepanelFFMQ: "100280-7",
+  "100280-7": "100280-7",
 
   /**
    * D Ab [Units/volume] in Serum or Plasma
    */
-  DAbUnitsvolumeinSerumorPlasma: "100281-5",
+  "100281-5": "100281-5",
 
   /**
    * Vaccine exemption certificate
    */
-  Vaccineexemptioncertificate: "100282-3",
+  "100282-3": "100282-3",
 
   /**
    * Harris Hip Score panel [Harris Hip Score]
    */
-  HarrisHipScorepanelHarrisHipScore: "100283-1",
+  "100283-1": "100283-1",
 
   /**
    * Walking - functional ability
    */
-  Walkingfunctionalability: "100284-9",
+  "100284-9": "100284-9",
 
   /**
    * Comfortable seated position
    */
-  Comfortableseatedposition: "100285-6",
+  "100285-6": "100285-6",
 
   /**
    * Able to board public transportation
    */
-  Abletoboardpublictransportation: "100286-4",
+  "100286-4": "100286-4",
 
   /**
    * Put on shoes and socks
    */
-  Putonshoesandsocks: "100287-2",
+  "100287-2": "100287-2",
 
   /**
    * Absence of deformity score [Harris Hip Score]
    */
-  AbsenceofdeformityscoreHarrisHipScore: "100288-0",
+  "100288-0": "100288-0",
 
   /**
    * Absence of hip deformity measurements
    */
-  Absenceofhipdeformitymeasurements: "100289-8",
+  "100289-8": "100289-8",
 
   /**
    * R' wave duration in lead V2
    */
-  RwavedurationinleadV2: "10029-7",
+  "10029-7": "10029-7",
 
   /**
    * Range of motion score [Harris Hip Score]
    */
-  RangeofmotionscoreHarrisHipScore: "100290-6",
+  "100290-6": "100290-6",
 
   /**
    * Total score [Harris Hip Score]
    */
-  TotalscoreHarrisHipScore: "100291-4",
+  "100291-4": "100291-4",
 
   /**
    * Pre-op patient satisfaction score [Knee Society Score]
    */
-  PreoppatientsatisfactionscoreKneeSocietyScore: "100292-2",
+  "100292-2": "100292-2",
 
   /**
    * Hip Flexion range of motion
    */
-  HipFlexionrangeofmotion: "100293-0",
+  "100293-0": "100293-0",
 
   /**
    * Hip Abduction range of motion
    */
-  HipAbductionrangeofmotion: "100294-8",
+  "100294-8": "100294-8",
 
   /**
    * Hip Adduction range of motion
    */
-  HipAdductionrangeofmotion: "100295-5",
+  "100295-5": "100295-5",
 
   /**
    * Hip External rotation range of motion
    */
-  HipExternalrotationrangeofmotion: "100296-3",
+  "100296-3": "100296-3",
 
   /**
    * Hip Internal rotation range of motion
    */
-  HipInternalrotationrangeofmotion: "100297-1",
+  "100297-1": "100297-1",
 
   /**
    * Repetition count
    */
-  Repetitioncount: "100298-9",
+  "100298-9": "100298-9",
 
   /**
    * Post-op patient satisfaction score [Knee Society Score]
    */
-  PostoppatientsatisfactionscoreKneeSocietyScore: "100299-7",
+  "100299-7": "100299-7",
 
   /**
    * Indirect antiglobulin test.complement specific reagent [Presence] in Serum or Plasma
    */
-  IndirectantiglobulintestcomplementspecificreagentPresenceinSerumorPlasma:
-    "1003-3",
+  "1003-3": "1003-3",
 
   /**
    * R' wave duration in lead V3
    */
-  RwavedurationinleadV3: "10030-5",
+  "10030-5": "10030-5",
 
   /**
    * End time Unspecified body region
    */
-  EndtimeUnspecifiedbodyregion: "100300-3",
+  "100300-3": "100300-3",
 
   /**
    * Start time Unspecified body region
    */
-  StarttimeUnspecifiedbodyregion: "100301-1",
+  "100301-1": "100301-1",
 
   /**
    * Time period start and end panel Unspecified body region
    */
-  TimeperiodstartandendpanelUnspecifiedbodyregion: "100302-9",
+  "100302-9": "100302-9",
 
   /**
    * Condition certainty of presence
    */
-  Conditioncertaintyofpresence: "100303-7",
+  "100303-7": "100303-7",
 
   /**
    * Flights climbed [#] Reporting Period
    */
-  FlightsclimbedReportingPeriod: "100304-5",
+  "100304-5": "100304-5",
 
   /**
    * IDH1 gene exon 4 targeted mutation analysis [Presence] in Blood or Marrow by Molecular genetics method
    */
-  IDH1geneexon4targetedmutationanalysisPresenceinBloodorMarrowbyMoleculargeneticsmethod:
-    "100305-2",
+  "100305-2": "100305-2",
 
   /**
    * IDH2 gene exon 4 targeted mutation analysis [Presence] in Blood or Marrow by Molecular genetics method
    */
-  IDH2geneexon4targetedmutationanalysisPresenceinBloodorMarrowbyMoleculargeneticsmethod:
-    "100306-0",
+  "100306-0": "100306-0",
 
   /**
    * Behavioral screening elder mistreatment
    */
-  Behavioralscreeningeldermistreatment: "100307-8",
+  "100307-8": "100307-8",
 
   /**
    * Need help getting to essential places
    */
-  Needhelpgettingtoessentialplaces: "100308-6",
+  "100308-6": "100308-6",
 
   /**
    * Activity support person
    */
-  Activitysupportperson: "100309-4",
+  "100309-4": "100309-4",
 
   /**
    * R' wave duration in lead V4
    */
-  RwavedurationinleadV4: "10031-3",
+  "10031-3": "10031-3",
 
   /**
    * Reliability of support person
    */
-  Reliabilityofsupportperson: "100310-2",
+  "100310-2": "100310-2",
 
   /**
    * Need help to make sure there is enough food, medicines or any other things needed in house
    */
-  Needhelptomakesurethereisenoughfoodmedicinesoranyotherthingsneededinhouse:
-    "100311-0",
+  "100311-0": "100311-0",
 
   /**
    * Person or persons that makes sure there is enough food, medicines or any other things needed in house
    */
-  Personorpersonsthatmakessurethereisenoughfoodmedicinesoranyotherthingsneededinhouse:
-    "100312-8",
+  "100312-8": "100312-8",
 
   /**
    * Need help with household things such as cook meals, help feed, or provide correct medicines each day
    */
-  Needhelpwithhouseholdthingssuchascookmealshelpfeedorprovidecorrectmedicineseachday:
-    "100313-6",
+  "100313-6": "100313-6",
 
   /**
    * Need help with house cleaning or yard work
    */
-  Needhelpwithhousecleaningoryardwork: "100314-4",
+  "100314-4": "100314-4",
 
   /**
    * Need help getting out of bed, showered, or dressed
    */
-  Needhelpgettingoutofbedshoweredordressed: "100315-1",
+  "100315-1": "100315-1",
 
   /**
    * Need help to make sure bills get paid
    */
-  Needhelptomakesurebillsgetpaid: "100316-9",
+  "100316-9": "100316-9",
 
   /**
    * Relationship of usual support person for daily activities
    */
-  Relationshipofusualsupportpersonfordailyactivities: "100317-7",
+  "100317-7": "100317-7",
 
   /**
    * Have help with finances AndOr financial decisions
    */
-  HavehelpwithfinancesAndOrfinancialdecisions: "100318-5",
+  "100318-5": "100318-5",
 
   /**
    * Relationship of financial support person
    */
-  Relationshipoffinancialsupportperson: "100319-3",
+  "100319-3": "100319-3",
 
   /**
    * R' wave duration in lead V5
    */
-  RwavedurationinleadV5: "10032-1",
+  "10032-1": "10032-1",
 
   /**
    * Financial support person usually asks for permission before making decisions
    */
-  Financialsupportpersonusuallyasksforpermissionbeforemakingdecisions:
-    "100320-1",
+  "100320-1": "100320-1",
 
   /**
    * Financial support person usually makes good decisions about finances
    */
-  Financialsupportpersonusuallymakesgooddecisionsaboutfinances: "100321-9",
+  "100321-9": "100321-9",
 
   /**
    * Have access to paperwork for financial decisions made
    */
-  Haveaccesstopaperworkforfinancialdecisionsmade: "100322-7",
+  "100322-7": "100322-7",
 
   /**
    * Financial support person forged signature
    */
-  Financialsupportpersonforgedsignature: "100323-5",
+  "100323-5": "100323-5",
 
   /**
    * Coercion of financial support person for signing a document in order to get money or possessions
    */
-  Coercionoffinancialsupportpersonforsigningadocumentinordertogetmoneyorpossessions:
-    "100324-3",
+  "100324-3": "100324-3",
 
   /**
    * Experienced theft by support person
    */
-  Experiencedtheftbysupportperson: "100325-0",
+  "100325-0": "100325-0",
 
   /**
    * Money spent or property sold without permission
    */
-  Moneyspentorpropertysoldwithoutpermission: "100326-8",
+  "100326-8": "100326-8",
 
   /**
    * Stranger forged signature for financial gain
    */
-  Strangerforgedsignatureforfinancialgain: "100327-6",
+  "100327-6": "100327-6",
 
   /**
    * Stranger forced document signature for financial gain
    */
-  Strangerforceddocumentsignatureforfinancialgain: "100328-4",
+  "100328-4": "100328-4",
 
   /**
    * Feared for safety due to verbal attack
    */
-  Fearedforsafetyduetoverbalattack: "100329-2",
+  "100329-2": "100329-2",
 
   /**
    * R' wave duration in lead V6
    */
-  RwavedurationinleadV6: "10033-9",
+  "10033-9": "10033-9",
 
   /**
    * Felt humiliated due to ridicule
    */
-  Felthumiliatedduetoridicule: "100330-0",
+  "100330-0": "100330-0",
 
   /**
    * Coerced to do something
    */
-  Coercedtodosomething: "100331-8",
+  "100331-8": "100331-8",
 
   /**
    * Ignored by close friend or relative for extended period
    */
-  Ignoredbyclosefriendorrelativeforextendedperiod: "100332-6",
+  "100332-6": "100332-6",
 
   /**
    * Physically hit or threatened
    */
-  Physicallyhitorthreatened: "100333-4",
+  "100333-4": "100333-4",
 
   /**
    * Been physically hurt with some degree of injury
    */
-  Beenphysicallyhurtwithsomedegreeofinjury: "100334-2",
+  "100334-2": "100334-2",
 
   /**
    * Coerced sexual activity
    */
-  Coercedsexualactivity: "100335-9",
+  "100335-9": "100335-9",
 
   /**
    * Coerced touching of private body parts of self or others
    */
-  Coercedtouchingofprivatebodypartsofselforothers: "100336-7",
+  "100336-7": "100336-7",
 
   /**
    * Coerced to undress or expose private body area
    */
-  Coercedtoundressorexposeprivatebodyarea: "100337-5",
+  "100337-5": "100337-5",
 
   /**
    * Photographed in any degree of nudity without consent
    */
-  Photographedinanydegreeofnuditywithoutconsent: "100338-3",
+  "100338-3": "100338-3",
 
   /**
    * Experienced attempted physical restraint
    */
-  Experiencedattemptedphysicalrestraint: "100339-1",
+  "100339-1": "100339-1",
 
   /**
    * S wave amplitude in lead AVF
    */
-  SwaveamplitudeinleadAVF: "10034-7",
+  "10034-7": "10034-7",
 
   /**
    * Range of motion panel Hip
    */
-  RangeofmotionpanelHip: "100340-9",
+  "100340-9": "100340-9",
 
   /**
    * Rubella virus IgG Ab index [Units/volume] in Serum and CSF
    */
-  RubellavirusIgGAbindexUnitsvolumeinSerumandCSF: "100341-7",
+  "100341-7": "100341-7",
 
   /**
    * Volatile Organic Compounds associated with SARS-CoV-2 infection [Presence] in Exhaled gas by Gas chromatography-mass spectrometry
    */
-  VolatileOrganicCompoundsassociatedwithSARSCoV2infectionPresenceinExhaledgasbyGaschromatographymassspectrometry:
-    "100342-5",
+  "100342-5": "100342-5",
 
   /**
    * Influenza virus B RNA [Presence] in Saliva (oral fluid) by NAA with probe detection
    */
-  InfluenzavirusBRNAPresenceinSalivaoralfluidbyNAAwithprobedetection:
-    "100343-3",
+  "100343-3": "100343-3",
 
   /**
    * Influenza virus A RNA [Presence] in Saliva (oral fluid) by NAA with probe detection
    */
-  InfluenzavirusARNAPresenceinSalivaoralfluidbyNAAwithprobedetection:
-    "100344-1",
+  "100344-1": "100344-1",
 
   /**
    * Influenza virus A and B and SARS-CoV-2 (COVID-19) RNA panel - Specimen by NAA with probe detection
    */
-  InfluenzavirusAandBandSARSCoV2COVID19RNApanelSpecimenbyNAAwithprobedetection:
-    "100345-8",
+  "100345-8": "100345-8",
 
   /**
    * Clotting time.extrinsic coagulation system activated.platelets inhibited of Blood by Rotational TEG
    */
-  ClottingtimeextrinsiccoagulationsystemactivatedplateletsinhibitedofBloodbyRotationalTEG:
-    "100346-6",
+  "100346-6": "100346-6",
 
   /**
    * Clot formation.extrinsic coagulation system activated.platelets inhibited [Time] in Blood by Rotational TEG
    */
-  ClotformationextrinsiccoagulationsystemactivatedplateletsinhibitedTimeinBloodbyRotationalTEG:
-    "100347-4",
+  "100347-4": "100347-4",
 
   /**
    * Model for end-stage liver disease sodium score
    */
-  Modelforendstageliverdiseasesodiumscore: "100348-2",
+  "100348-2": "100348-2",
 
   /**
    * US.doppler Penis vessels W vasodilator IV
    */
-  USdopplerPenisvesselsWvasodilatorIV: "100349-0",
+  "100349-0": "100349-0",
 
   /**
    * S wave amplitude in lead AVL
    */
-  SwaveamplitudeinleadAVL: "10035-4",
+  "10035-4": "10035-4",
 
   /**
    * Sesamum indicum 1 IgE Ab [Units/volume] in Serum
    */
-  Sesamumindicum1IgEAbUnitsvolumeinSerum: "100350-8",
+  "100350-8": "100350-8",
 
   /**
    * Pioglitazone [Presence] in Serum or Plasma
    */
-  PioglitazonePresenceinSerumorPlasma: "100351-6",
+  "100351-6": "100351-6",
 
   /**
    * Rosiglitazone [Presence] in Serum or Plasma
    */
-  RosiglitazonePresenceinSerumorPlasma: "100352-4",
+  "100352-4": "100352-4",
 
   /**
    * Norwalk Community Health Center Screening Tool [NCHC]
    */
-  NorwalkCommunityHealthCenterScreeningToolNCHC: "100353-2",
+  "100353-2": "100353-2",
 
   /**
    * Frequency of participating in multi-modal communication without assistance
    */
-  Frequencyofparticipatinginmultimodalcommunicationwithoutassistance:
-    "100354-0",
+  "100354-0": "100354-0",
 
   /**
    * Frequency of participating in spoken language expression communication without assistance
    */
-  Frequencyofparticipatinginspokenlanguageexpressioncommunicationwithoutassistance:
-    "100355-7",
+  "100355-7": "100355-7",
 
   /**
    * Chlamydia trachomatis and Neisseria gonorrhoeae and Trichomonas vaginalis DNA [Identifier] in Specimen by NAA with probe detection
    */
-  ChlamydiatrachomatisandNeisseriagonorrhoeaeandTrichomonasvaginalisDNAIdentifierinSpecimenbyNAAwithprobedetection:
-    "100356-5",
+  "100356-5": "100356-5",
 
   /**
    * Naloxone [Presence] in Cord tissue by Screen method
    */
-  NaloxonePresenceinCordtissuebyScreenmethod: "100357-3",
+  "100357-3": "100357-3",
 
   /**
    * Phentermine [Presence] in Cord tissue by Screen method
    */
-  PhenterminePresenceinCordtissuebyScreenmethod: "100358-1",
+  "100358-1": "100358-1",
 
   /**
    * Gliadin 33 mer peptide [Mass/volume] in Stool by Immunoassay
    */
-  Gliadin33merpeptideMassvolumeinStoolbyImmunoassay: "100359-9",
+  "100359-9": "100359-9",
 
   /**
    * S wave amplitude in lead AVR
    */
-  SwaveamplitudeinleadAVR: "10036-2",
+  "10036-2": "10036-2",
 
   /**
    * Brief Resilience Scale panel [BRS]
    */
-  BriefResilienceScalepanelBRS: "100360-7",
+  "100360-7": "100360-7",
 
   /**
    * Quickly recover from bad events
    */
-  Quicklyrecoverfrombadevents: "100361-5",
+  "100361-5": "100361-5",
 
   /**
    * Difficulty making it through stressful events
    */
-  Difficultymakingitthroughstressfulevents: "100362-3",
+  "100362-3": "100362-3",
 
   /**
    * Easily recover from a stressful event
    */
-  Easilyrecoverfromastressfulevent: "100363-1",
+  "100363-1": "100363-1",
 
   /**
    * Difficulty recovering from bad events
    */
-  Difficultyrecoveringfrombadevents: "100364-9",
+  "100364-9": "100364-9",
 
   /**
    * Easily recover from difficulties
    */
-  Easilyrecoverfromdifficulties: "100365-6",
+  "100365-6": "100365-6",
 
   /**
    * Lengthy recovery from setbacks
    */
-  Lengthyrecoveryfromsetbacks: "100366-4",
+  "100366-4": "100366-4",
 
   /**
    * Total Score BRS
    */
-  TotalScoreBRS: "100367-2",
+  "100367-2": "100367-2",
 
   /**
    * Amino Acids Urea Cycle Panel - Serum or Plasma by LC/MS/MS
    */
-  AminoAcidsUreaCyclePanelSerumorPlasmabyLCMSMS: "100368-0",
+  "100368-0": "100368-0",
 
   /**
    * NM Thyroid gland Views W Tl-201 IV
    */
-  NMThyroidglandViewsWTl201IV: "100369-8",
+  "100369-8": "100369-8",
 
   /**
    * S wave amplitude in lead I
    */
-  SwaveamplitudeinleadI: "10037-0",
+  "10037-0": "10037-0",
 
   /**
    * Orthopoxvirus DNA [Identifier] in Specimen by NAA with probe detection
    */
-  OrthopoxvirusDNAIdentifierinSpecimenbyNAAwithprobedetection: "100370-6",
+  "100370-6": "100370-6",
 
   /**
    * Titin Ab [Units/volume] in Serum by Immunoassay
    */
-  TitinAbUnitsvolumeinSerumbyImmunoassay: "100371-4",
+  "100371-4": "100371-4",
 
   /**
    * Abiraterone [Mass/volume] in Serum or Plasma
    */
-  AbirateroneMassvolumeinSerumorPlasma: "100372-2",
+  "100372-2": "100372-2",
 
   /**
    * Eucheuma IgG Ab [Units/volume] in Serum
    */
-  EucheumaIgGAbUnitsvolumeinSerum: "100373-0",
+  "100373-0": "100373-0",
 
   /**
    * Aloe vera IgG Ab [Units/volume] in Serum
    */
-  AloeveraIgGAbUnitsvolumeinSerum: "100374-8",
+  "100374-8": "100374-8",
 
   /**
    * Anise IgG Ab [Units/volume] in Serum
    */
-  AniseIgGAbUnitsvolumeinSerum: "100375-5",
+  "100375-5": "100375-5",
 
   /**
    * Bambusa vulgaris IgG Ab [Units/volume] in Serum
    */
-  BambusavulgarisIgGAbUnitsvolumeinSerum: "100376-3",
+  "100376-3": "100376-3",
 
   /**
    * Goat cheese IgG Ab [Units/volume] in Serum
    */
-  GoatcheeseIgGAbUnitsvolumeinSerum: "100377-1",
+  "100377-1": "100377-1",
 
   /**
    * Sheep cheese IgG Ab [Units/volume] in Serum
    */
-  SheepcheeseIgGAbUnitsvolumeinSerum: "100378-9",
+  "100378-9": "100378-9",
 
   /**
    * Leeks IgG Ab [Units/volume] in Serum
    */
-  LeeksIgGAbUnitsvolumeinSerum: "100379-7",
+  "100379-7": "100379-7",
 
   /**
    * S wave amplitude in lead II
    */
-  SwaveamplitudeinleadII: "10038-8",
+  "10038-8": "10038-8",
 
   /**
    * Red cabbage IgG Ab [Units/volume] in Serum
    */
-  RedcabbageIgGAbUnitsvolumeinSerum: "100380-5",
+  "100380-5": "100380-5",
 
   /**
    * Mentha balsamea Wild IgG Ab [Units/volume] in Serum
    */
-  MenthabalsameaWildIgGAbUnitsvolumeinSerum: "100381-3",
+  "100381-3": "100381-3",
 
   /**
    * FDA package insert REMS addressed risk
    */
-  FDApackageinsertREMSaddressedrisk: "100382-1",
+  "100382-1": "100382-1",
 
   /**
    * Monkeypox virus DNA [Presence] in Specimen by NAA with probe detection
    */
-  MonkeypoxvirusDNAPresenceinSpecimenbyNAAwithprobedetection: "100383-9",
+  "100383-9": "100383-9",
 
   /**
    * Rapeseed IgG Ab [Units/volume] in Serum
    */
-  RapeseedIgGAbUnitsvolumeinSerum: "100384-7",
+  "100384-7": "100384-7",
 
   /**
    * Corn salad IgG Ab [Units/volume] in Serum
    */
-  CornsaladIgGAbUnitsvolumeinSerum: "100385-4",
+  "100385-4": "100385-4",
 
   /**
    * Rosemary IgG Ab [Units/volume] in Serum
    */
-  RosemaryIgGAbUnitsvolumeinSerum: "100386-2",
+  "100386-2": "100386-2",
 
   /**
    * Poppy Seed IgG Ab [Units/volume] in Serum
    */
-  PoppySeedIgGAbUnitsvolumeinSerum: "100387-0",
+  "100387-0": "100387-0",
 
   /**
    * Cocoa IgG Ab [Units/volume] in Serum
    */
-  CocoaIgGAbUnitsvolumeinSerum: "100388-8",
+  "100388-8": "100388-8",
 
   /**
    * Pistachio IgG Ab [Units/volume] in Serum
    */
-  PistachioIgGAbUnitsvolumeinSerum: "100389-6",
+  "100389-6": "100389-6",
 
   /**
    * S wave amplitude in lead III
    */
-  SwaveamplitudeinleadIII: "10039-6",
+  "10039-6": "10039-6",
 
   /**
    * Sunflower Seed IgG Ab [Units/volume] in Serum
    */
-  SunflowerSeedIgGAbUnitsvolumeinSerum: "100390-4",
+  "100390-4": "100390-4",
 
   /**
    * Dates IgG Ab [Units/volume] in Serum
    */
-  DatesIgGAbUnitsvolumeinSerum: "100391-2",
+  "100391-2": "100391-2",
 
   /**
    * Duck meat IgG Ab [Units/volume] in Serum
    */
-  DuckmeatIgGAbUnitsvolumeinSerum: "100392-0",
+  "100392-0": "100392-0",
 
   /**
    * Allergen Mushroom mix 2 (Xerocomus, Boletus) IgG Ab [Units/volume] in Serum
    */
-  AllergenMushroommix2XerocomusBoletusIgGAbUnitsvolumeinSerum: "100393-8",
+  "100393-8": "100393-8",
 
   /**
    * Astacoidea IgG Ab [Units/volume] in Serum
    */
-  AstacoideaIgGAbUnitsvolumeinSerum: "100394-6",
+  "100394-6": "100394-6",
 
   /**
    * Carob IgG Ab [Units/volume] in Serum
    */
-  CarobIgGAbUnitsvolumeinSerum: "100395-3",
+  "100395-3": "100395-3",
 
   /**
    * Brassica napus IgG Ab [Units/volume] in Serum
    */
-  BrassicanapusIgGAbUnitsvolumeinSerum: "100396-1",
+  "100396-1": "100396-1",
 
   /**
    * Goat Meat IgG Ab [Units/volume] in Serum
    */
-  GoatMeatIgGAbUnitsvolumeinSerum: "100397-9",
+  "100397-9": "100397-9",
 
   /**
    * Goose meat IgG Ab [Units/volume] in Serum
    */
-  GoosemeatIgGAbUnitsvolumeinSerum: "100398-7",
+  "100398-7": "100398-7",
 
   /**
    * Ostrich meat IgG Ab [Units/volume] in Serum
    */
-  OstrichmeatIgGAbUnitsvolumeinSerum: "100399-5",
+  "100399-5": "100399-5",
 
   /**
    * Direct antiglobulin test.complement specific reagent [Presence] on Red Blood Cells
    */
-  DirectantiglobulintestcomplementspecificreagentPresenceonRedBloodCells:
-    "1004-1",
+  "1004-1": "1004-1",
 
   /**
    * S wave amplitude in lead V1
    */
-  SwaveamplitudeinleadV1: "10040-4",
+  "10040-4": "10040-4",
 
   /**
    * Quail meat IgG Ab [Units/volume] in Serum
    */
-  QuailmeatIgGAbUnitsvolumeinSerum: "100400-1",
+  "100400-1": "100400-1",
 
   /**
    * Rabbit meat IgG Ab [Units/volume] in Serum
    */
-  RabbitmeatIgGAbUnitsvolumeinSerum: "100401-9",
+  "100401-9": "100401-9",
 
   /**
    * Venison meat IgG Ab [Units/volume] in Serum
    */
-  VenisonmeatIgGAbUnitsvolumeinSerum: "100402-7",
+  "100402-7": "100402-7",
 
   /**
    * Guineafowl IgG Ab [Units/volume] in Serum
    */
-  GuineafowlIgGAbUnitsvolumeinSerum: "100403-5",
+  "100403-5": "100403-5",
 
   /**
    * Horse meat IgG Ab [Units/volume] in Serum
    */
-  HorsemeatIgGAbUnitsvolumeinSerum: "100404-3",
+  "100404-3": "100404-3",
 
   /**
    * Kefir IgG Ab [Units/volume] in Serum
    */
-  KefirIgGAbUnitsvolumeinSerum: "100405-0",
+  "100405-0": "100405-0",
 
   /**
    * Butter IgG Ab [Units/volume] in Serum
    */
-  ButterIgGAbUnitsvolumeinSerum: "100406-8",
+  "100406-8": "100406-8",
 
   /**
    * Camembert cheese IgG Ab [Units/volume] in Serum
    */
-  CamembertcheeseIgGAbUnitsvolumeinSerum: "100407-6",
+  "100407-6": "100407-6",
 
   /**
    * Emmental cheese IgG Ab [Units/volume] in Serum
    */
-  EmmentalcheeseIgGAbUnitsvolumeinSerum: "100408-4",
+  "100408-4": "100408-4",
 
   /**
    * Processed cheese IgG Ab [Units/volume] in Serum
    */
-  ProcessedcheeseIgGAbUnitsvolumeinSerum: "100409-2",
+  "100409-2": "100409-2",
 
   /**
    * S wave amplitude in lead V2
    */
-  SwaveamplitudeinleadV2: "10041-2",
+  "10041-2": "10041-2",
 
   /**
    * Curd cheese IgG Ab [Units/volume] in Serum
    */
-  CurdcheeseIgGAbUnitsvolumeinSerum: "100410-0",
+  "100410-0": "100410-0",
 
   /**
    * Sugar Beet IgG Ab [Units/volume] in Serum
    */
-  SugarBeetIgGAbUnitsvolumeinSerum: "100411-8",
+  "100411-8": "100411-8",
 
   /**
    * Chinese cabbage IgG Ab [Units/volume] in Serum
    */
-  ChinesecabbageIgGAbUnitsvolumeinSerum: "100412-6",
+  "100412-6": "100412-6",
 
   /**
    * Fennel Fresh IgG Ab [Units/volume] in Serum
    */
-  FennelFreshIgGAbUnitsvolumeinSerum: "100413-4",
+  "100413-4": "100413-4",
 
   /**
    * Gourd IgG Ab [Units/volume] in Serum
    */
-  GourdIgGAbUnitsvolumeinSerum: "100414-2",
+  "100414-2": "100414-2",
 
   /**
    * Kale IgG Ab [Units/volume] in Serum
    */
-  KaleIgGAbUnitsvolumeinSerum: "100415-9",
+  "100415-9": "100415-9",
 
   /**
    * Savoy cabbage IgG Ab [Units/volume] in Serum
    */
-  SavoycabbageIgGAbUnitsvolumeinSerum: "100416-7",
+  "100416-7": "100416-7",
 
   /**
    * Vitis sp leaf IgG Ab [Units/volume] in Serum
    */
-  VitisspleafIgGAbUnitsvolumeinSerum: "100417-5",
+  "100417-5": "100417-5",
 
   /**
    * Liquorice IgG Ab [Units/volume] in Serum
    */
-  LiquoriceIgGAbUnitsvolumeinSerum: "100418-3",
+  "100418-3": "100418-3",
 
   /**
    * Snow pea IgG Ab [Units/volume] in Serum
    */
-  SnowpeaIgGAbUnitsvolumeinSerum: "100419-1",
+  "100419-1": "100419-1",
 
   /**
    * S wave amplitude in lead V3
    */
-  SwaveamplitudeinleadV3: "10042-0",
+  "10042-0": "10042-0",
 
   /**
    * Fava bean IgG Ab [Units/volume] in Serum
    */
-  FavabeanIgGAbUnitsvolumeinSerum: "100420-9",
+  "100420-9": "100420-9",
 
   /**
    * Chick Pea IgG Ab [Units/volume] in Serum
    */
-  ChickPeaIgGAbUnitsvolumeinSerum: "100421-7",
+  "100421-7": "100421-7",
 
   /**
    * Chicory IgG Ab [Units/volume] in Serum
    */
-  ChicoryIgGAbUnitsvolumeinSerum: "100422-5",
+  "100422-5": "100422-5",
 
   /**
    * Allergy Mushroom Mix 1 (Button + oyster + Shiitaki + chanterelle mushroom) IgG Ab [Units/volume] in Serum
    */
-  AllergyMushroomMix1ButtonoysterShiitakichanterellemushroomIgGAbUnitsvolumeinSerum:
-    "100423-3",
+  "100423-3": "100423-3",
 
   /**
    * 8(9)-Cholestenol [Mass/volume] in Serum or Plasma
    */
-  EightyNineCholestenolMassvolumeinSerumorPlasma: "100424-1",
+  "100424-1": "100424-1",
 
   /**
    * DiHydro T-Mas [Mass/volume] in Serum or Plasma
    */
-  DiHydroTMasMassvolumeinSerumorPlasma: "100425-8",
+  "100425-8": "100425-8",
 
   /**
    * Squalene [Mass/volume] in Serum or Plasma
    */
-  SqualeneMassvolumeinSerumorPlasma: "100426-6",
+  "100426-6": "100426-6",
 
   /**
    * Stigmasterol [Mass/volume] in Serum or Plasma
    */
-  StigmasterolMassvolumeinSerumorPlasma: "100427-4",
+  "100427-4": "100427-4",
 
   /**
    * Carnitine free and total and acylcarnitine panel - Urine
    */
-  CarnitinefreeandtotalandacylcarnitinepanelUrine: "100428-2",
+  "100428-2": "100428-2",
 
   /**
    * LRBA deficiency panel - Blood
    */
-  LRBAdeficiencypanelBlood: "100429-0",
+  "100429-0": "100429-0",
 
   /**
    * S wave amplitude in lead V4
    */
-  SwaveamplitudeinleadV4: "10043-8",
+  "10043-8": "10043-8",
 
   /**
    * Cells.LRBA+/100 Cells.CD3+CD14-CD45+ in Blood by Flow cytometry (FC)
    */
-  CellsLRBA100CellsCD3CD14CD45inBloodbyFlowcytometryFC: "100430-8",
+  "100430-8": "100430-8",
 
   /**
    * Cells.CD3+CD14-CD45+.LRBA mean fluorescence intensity in Blood by Flow cytometry (FC)
    */
-  CellsCD3CD14CD45LRBAmeanfluorescenceintensityinBloodbyFlowcytometryFC:
-    "100431-6",
+  "100431-6": "100431-6",
 
   /**
    * Cells.LRBA+/100 Cells.CD3-CD14-CD19+CD45+ in Blood by Flow cytometry (FC)
    */
-  CellsLRBA100CellsCD3CD14CD19CD45inBloodbyFlowcytometryFC: "100432-4",
+  "100432-4": "100432-4",
 
   /**
    * Cells.CD3-CD14-CD19+CD45+.LRBA mean fluorescence intensity in Blood by Flow cytometry (FC)
    */
-  CellsCD3CD14CD19CD45LRBAmeanfluorescenceintensityinBloodbyFlowcytometryFC:
-    "100433-2",
+  "100433-2": "100433-2",
 
   /**
    * Orthopoxvirus.non-variola DNA [Presence] in Specimen by NAA with probe detection
    */
-  OrthopoxvirusnonvariolaDNAPresenceinSpecimenbyNAAwithprobedetection:
-    "100434-0",
+  "100434-0": "100434-0",
 
   /**
    * Glial fibrillary acidic protein [Mass/volume] in Serum by Immunoassay
    */
-  GlialfibrillaryacidicproteinMassvolumeinSerumbyImmunoassay: "100435-7",
+  "100435-7": "100435-7",
 
   /**
    * Ubiquitin carboxyl-terminal hydrolase-L1 [Mass/volume] in Serum by Immunoassay
    */
-  UbiquitincarboxylterminalhydrolaseL1MassvolumeinSerumbyImmunoassay:
-    "100436-5",
+  "100436-5": "100436-5",
 
   /**
    * Norsufentanil [Mass/volume] in Urine by Confirmatory method
    */
-  NorsufentanilMassvolumeinUrinebyConfirmatorymethod: "100437-3",
+  "100437-3": "100437-3",
 
   /**
    * Adolescent medicine Outpatient Progress note
    */
-  AdolescentmedicineOutpatientProgressnote: "100438-1",
+  "100438-1": "100438-1",
 
   /**
    * Allergy and Immunology Outpatient Progress note
    */
-  AllergyandImmunologyOutpatientProgressnote: "100439-9",
+  "100439-9": "100439-9",
 
   /**
    * S wave amplitude in lead V5
    */
-  SwaveamplitudeinleadV5: "10044-6",
+  "10044-6": "10044-6",
 
   /**
    * Allergy Outpatient Progress note
    */
-  AllergyOutpatientProgressnote: "100440-7",
+  "100440-7": "100440-7",
 
   /**
    * Attending Outpatient Progress note
    */
-  AttendingOutpatientProgressnote: "100441-5",
+  "100441-5": "100441-5",
 
   /**
    * Audiology Outpatient Progress note
    */
-  AudiologyOutpatientProgressnote: "100442-3",
+  "100442-3": "100442-3",
 
   /**
    * Bariatric surgery Outpatient Progress note
    */
-  BariatricsurgeryOutpatientProgressnote: "100443-1",
+  "100443-1": "100443-1",
 
   /**
    * Blood banking and transfusion medicine Outpatient Progress note
    */
-  BloodbankingandtransfusionmedicineOutpatientProgressnote: "100444-9",
+  "100444-9": "100444-9",
 
   /**
    * Bone Marrow Transplant Outpatient Progress note
    */
-  BoneMarrowTransplantOutpatientProgressnote: "100445-6",
+  "100445-6": "100445-6",
 
   /**
    * Breastfeeding Outpatient Progress note
    */
-  BreastfeedingOutpatientProgressnote: "100446-4",
+  "100446-4": "100446-4",
 
   /**
    * Burn management Outpatient Progress note
    */
-  BurnmanagementOutpatientProgressnote: "100447-2",
+  "100447-2": "100447-2",
 
   /**
    * Cardiac surgery Outpatient Progress note
    */
-  CardiacsurgeryOutpatientProgressnote: "100448-0",
+  "100448-0": "100448-0",
 
   /**
    * Cardiopulmonary Outpatient Progress note
    */
-  CardiopulmonaryOutpatientProgressnote: "100449-8",
+  "100449-8": "100449-8",
 
   /**
    * S wave amplitude in lead V6
    */
-  SwaveamplitudeinleadV6: "10045-3",
+  "10045-3": "10045-3",
 
   /**
    * Child and adolescent psychiatry Outpatient Progress note
    */
-  ChildandadolescentpsychiatryOutpatientProgressnote: "100450-6",
+  "100450-6": "100450-6",
 
   /**
    * Chiropractic medicine Outpatient Progress note
    */
-  ChiropracticmedicineOutpatientProgressnote: "100451-4",
+  "100451-4": "100451-4",
 
   /**
    * Clinical cardiac electrophysiology Outpatient Progress note
    */
-  ClinicalcardiacelectrophysiologyOutpatientProgressnote: "100452-2",
+  "100452-2": "100452-2",
 
   /**
    * Clinical genetics Outpatient Progress note
    */
-  ClinicalgeneticsOutpatientProgressnote: "100453-0",
+  "100453-0": "100453-0",
 
   /**
    * Clinical neurophysiology Outpatient Progress note
    */
-  ClinicalneurophysiologyOutpatientProgressnote: "100454-8",
+  "100454-8": "100454-8",
 
   /**
    * Clinical pathology Outpatient Progress note
    */
-  ClinicalpathologyOutpatientProgressnote: "100455-5",
+  "100455-5": "100455-5",
 
   /**
    * Colon and rectal surgery Outpatient Progress note
    */
-  ColonandrectalsurgeryOutpatientProgressnote: "100456-3",
+  "100456-3": "100456-3",
 
   /**
    * Consultant Outpatient Progress note
    */
-  ConsultantOutpatientProgressnote: "100457-1",
+  "100457-1": "100457-1",
 
   /**
    * Outpatient COVID-19 Intubation Progress note
    */
-  OutpatientCOVID19IntubationProgressnote: "100458-9",
+  "100458-9": "100458-9",
 
   /**
    * Outpatient COVID-19 Progress note
    */
-  OutpatientCOVID19Progressnote: "100459-7",
+  "100459-7": "100459-7",
 
   /**
    * S wave duration in lead AVF
    */
-  SwavedurationinleadAVF: "10046-1",
+  "10046-1": "10046-1",
 
   /**
    * Dermatology Outpatient Progress note
    */
-  DermatologyOutpatientProgressnote: "100460-5",
+  "100460-5": "100460-5",
 
   /**
    * Developmental-behavioral pediatrics Outpatient Progress note
    */
-  DevelopmentalbehavioralpediatricsOutpatientProgressnote: "100461-3",
+  "100461-3": "100461-3",
 
   /**
    * Dialysis and Therapeutic apheresis Outpatient Progress note
    */
-  DialysisandTherapeuticapheresisOutpatientProgressnote: "100462-1",
+  "100462-1": "100462-1",
 
   /**
    * Eating disorders Outpatient Progress note
    */
-  EatingdisordersOutpatientProgressnote: "100463-9",
+  "100463-9": "100463-9",
 
   /**
    * Endocrinology Outpatient Progress note
    */
-  EndocrinologyOutpatientProgressnote: "100464-7",
+  "100464-7": "100464-7",
 
   /**
    * Family medicine Outpatient Progress note
    */
-  FamilymedicineOutpatientProgressnote: "100465-4",
+  "100465-4": "100465-4",
 
   /**
    * Gastroenterology Outpatient Progress note
    */
-  GastroenterologyOutpatientProgressnote: "100466-2",
+  "100466-2": "100466-2",
 
   /**
    * Geriatric medicine Outpatient Progress note
    */
-  GeriatricmedicineOutpatientProgressnote: "100467-0",
+  "100467-0": "100467-0",
 
   /**
    * Gynecologic oncology Outpatient Progress note
    */
-  GynecologiconcologyOutpatientProgressnote: "100468-8",
+  "100468-8": "100468-8",
 
   /**
    * Gynecology Outpatient Progress note
    */
-  GynecologyOutpatientProgressnote: "100469-6",
+  "100469-6": "100469-6",
 
   /**
    * S wave duration in lead AVL
    */
-  SwavedurationinleadAVL: "10047-9",
+  "10047-9": "10047-9",
 
   /**
    * Healthcare navigator Outpatient Progress note
    */
-  HealthcarenavigatorOutpatientProgressnote: "100470-4",
+  "100470-4": "100470-4",
 
   /**
    * Heart failure Outpatient Progress note
    */
-  HeartfailureOutpatientProgressnote: "100471-2",
+  "100471-2": "100471-2",
 
   /**
    * Heart failure+Transplant cardiology Outpatient Progress note
    */
-  HeartfailureTransplantcardiologyOutpatientProgressnote: "100472-0",
+  "100472-0": "100472-0",
 
   /**
    * Hematology Outpatient Progress note
    */
-  HematologyOutpatientProgressnote: "100473-8",
+  "100473-8": "100473-8",
 
   /**
    * Hematology+Medical oncology Outpatient Progress note
    */
-  HematologyMedicaloncologyOutpatientProgressnote: "100474-6",
+  "100474-6": "100474-6",
 
   /**
    * Hepatology Outpatient Progress note
    */
-  HepatologyOutpatientProgressnote: "100475-3",
+  "100475-3": "100475-3",
 
   /**
    * Immunology Outpatient Progress note
    */
-  ImmunologyOutpatientProgressnote: "100476-1",
+  "100476-1": "100476-1",
 
   /**
    * Infectious disease Outpatient Progress note
    */
-  InfectiousdiseaseOutpatientProgressnote: "100477-9",
+  "100477-9": "100477-9",
 
   /**
    * Internal medicine Outpatient Progress note
    */
-  InternalmedicineOutpatientProgressnote: "100478-7",
+  "100478-7": "100478-7",
 
   /**
    * Interventional cardiology Outpatient Progress note
    */
-  InterventionalcardiologyOutpatientProgressnote: "100479-5",
+  "100479-5": "100479-5",
 
   /**
    * S wave duration in lead AVR
    */
-  SwavedurationinleadAVR: "10048-7",
+  "10048-7": "10048-7",
 
   /**
    * Interventional radiology Outpatient Progress note
    */
-  InterventionalradiologyOutpatientProgressnote: "100480-3",
+  "100480-3": "100480-3",
 
   /**
    * Outpatient Mechanical circulatory support Progress note
    */
-  OutpatientMechanicalcirculatorysupportProgressnote: "100481-1",
+  "100481-1": "100481-1",
 
   /**
    * Medical Aid in Dying Outpatient Progress note
    */
-  MedicalAidinDyingOutpatientProgressnote: "100482-9",
+  "100482-9": "100482-9",
 
   /**
    * Mental health Outpatient Progress note
    */
-  MentalhealthOutpatientProgressnote: "100483-7",
+  "100483-7": "100483-7",
 
   /**
    * Multi-specialty program Outpatient Progress note
    */
-  MultispecialtyprogramOutpatientProgressnote: "100484-5",
+  "100484-5": "100484-5",
 
   /**
    * Neonatal perinatal medicine Outpatient Progress note
    */
-  NeonatalperinatalmedicineOutpatientProgressnote: "100485-2",
+  "100485-2": "100485-2",
 
   /**
    * Nephrology Outpatient Progress note
    */
-  NephrologyOutpatientProgressnote: "100486-0",
+  "100486-0": "100486-0",
 
   /**
    * Neurological surgery Outpatient Progress note
    */
-  NeurologicalsurgeryOutpatientProgressnote: "100487-8",
+  "100487-8": "100487-8",
 
   /**
    * Neurology Outpatient Progress note
    */
-  NeurologyOutpatientProgressnote: "100488-6",
+  "100488-6": "100488-6",
 
   /**
    * Neurology with special qualifications in child neurology Outpatient Progress note
    */
-  NeurologywithspecialqualificationsinchildneurologyOutpatientProgressnote:
-    "100489-4",
+  "100489-4": "100489-4",
 
   /**
    * S wave duration in lead I
    */
-  SwavedurationinleadI: "10049-5",
+  "10049-5": "10049-5",
 
   /**
    * Nurse practitioner Outpatient Progress note
    */
-  NursepractitionerOutpatientProgressnote: "100490-2",
+  "100490-2": "100490-2",
 
   /**
    * Nurse Outpatient Progress note
    */
-  NurseOutpatientProgressnote: "100491-0",
+  "100491-0": "100491-0",
 
   /**
    * Nutrition and dietetics Outpatient Progress note
    */
-  NutritionanddieteticsOutpatientProgressnote: "100492-8",
+  "100492-8": "100492-8",
 
   /**
    * Obstetrics and Gynecology Outpatient Progress note
    */
-  ObstetricsandGynecologyOutpatientProgressnote: "100493-6",
+  "100493-6": "100493-6",
 
   /**
    * Obstetrics Outpatient Progress note
    */
-  ObstetricsOutpatientProgressnote: "100494-4",
+  "100494-4": "100494-4",
 
   /**
    * Occupational therapy Outpatient Progress note
    */
-  OccupationaltherapyOutpatientProgressnote: "100495-1",
+  "100495-1": "100495-1",
 
   /**
    * Oncology Outpatient Progress note
    */
-  OncologyOutpatientProgressnote: "100496-9",
+  "100496-9": "100496-9",
 
   /**
    * Ophthalmology Outpatient Progress note
    */
-  OphthalmologyOutpatientProgressnote: "100497-7",
+  "100497-7": "100497-7",
 
   /**
    * Optometry Outpatient Progress note
    */
-  OptometryOutpatientProgressnote: "100498-5",
+  "100498-5": "100498-5",
 
   /**
    * Oral and Maxillofacial Surgery Outpatient Progress note
    */
-  OralandMaxillofacialSurgeryOutpatientProgressnote: "100499-3",
+  "100499-3": "100499-3",
 
   /**
    * Indirect antiglobulin test.IgG specific reagent [Presence] in Serum or Plasma
    */
-  IndirectantiglobulintestIgGspecificreagentPresenceinSerumorPlasma: "1005-8",
+  "1005-8": "1005-8",
 
   /**
    * S wave duration in lead II
    */
-  SwavedurationinleadII: "10050-3",
+  "10050-3": "10050-3",
 
   /**
    * Orthopaedic surgery Outpatient Progress note
    */
-  OrthopaedicsurgeryOutpatientProgressnote: "100500-8",
+  "100500-8": "100500-8",
 
   /**
    * Orthotics prosthetics Outpatient Progress note
    */
-  OrthoticsprostheticsOutpatientProgressnote: "100501-6",
+  "100501-6": "100501-6",
 
   /**
    * Otolaryngology Outpatient Progress note
    */
-  OtolaryngologyOutpatientProgressnote: "100502-4",
+  "100502-4": "100502-4",
 
   /**
    * Pain medicine Outpatient Progress note
    */
-  PainmedicineOutpatientProgressnote: "100503-2",
+  "100503-2": "100503-2",
 
   /**
    * Palliative care Outpatient Progress note
    */
-  PalliativecareOutpatientProgressnote: "100504-0",
+  "100504-0": "100504-0",
 
   /**
    * Pediatric cardiology Outpatient Progress note
    */
-  PediatriccardiologyOutpatientProgressnote: "100505-7",
+  "100505-7": "100505-7",
 
   /**
    * Pediatric dermatology Outpatient Progress note
    */
-  PediatricdermatologyOutpatientProgressnote: "100506-5",
+  "100506-5": "100506-5",
 
   /**
    * Pediatric endocrinology Outpatient Progress note
    */
-  PediatricendocrinologyOutpatientProgressnote: "100507-3",
+  "100507-3": "100507-3",
 
   /**
    * Pediatric gastroenterology Outpatient Progress note
    */
-  PediatricgastroenterologyOutpatientProgressnote: "100508-1",
+  "100508-1": "100508-1",
 
   /**
    * Pediatric hematology-oncology Outpatient Progress note
    */
-  PediatrichematologyoncologyOutpatientProgressnote: "100509-9",
+  "100509-9": "100509-9",
 
   /**
    * S wave duration in lead III
    */
-  SwavedurationinleadIII: "10051-1",
+  "10051-1": "10051-1",
 
   /**
    * Pediatric infectious diseases Outpatient Progress note
    */
-  PediatricinfectiousdiseasesOutpatientProgressnote: "100510-7",
+  "100510-7": "100510-7",
 
   /**
    * Pediatric otolaryngology Outpatient Progress note
    */
-  PediatricotolaryngologyOutpatientProgressnote: "100511-5",
+  "100511-5": "100511-5",
 
   /**
    * Pediatric pulmonology Outpatient Progress note
    */
-  PediatricpulmonologyOutpatientProgressnote: "100512-3",
+  "100512-3": "100512-3",
 
   /**
    * Pediatric rheumatology Outpatient Progress note
    */
-  PediatricrheumatologyOutpatientProgressnote: "100513-1",
+  "100513-1": "100513-1",
 
   /**
    * Pediatric surgery Outpatient Progress note
    */
-  PediatricsurgeryOutpatientProgressnote: "100514-9",
+  "100514-9": "100514-9",
 
   /**
    * Pediatric transplant hepatology Outpatient Progress note
    */
-  PediatrictransplanthepatologyOutpatientProgressnote: "100515-6",
+  "100515-6": "100515-6",
 
   /**
    * Pediatric urology Outpatient Progress note
    */
-  PediatricurologyOutpatientProgressnote: "100516-4",
+  "100516-4": "100516-4",
 
   /**
    * Pharmacogenomics Outpatient Progress note
    */
-  PharmacogenomicsOutpatientProgressnote: "100517-2",
+  "100517-2": "100517-2",
 
   /**
    * Physical medicine and rehab Outpatient Progress note
    */
-  PhysicalmedicineandrehabOutpatientProgressnote: "100518-0",
+  "100518-0": "100518-0",
 
   /**
    * Physical therapy Outpatient Progress note
    */
-  PhysicaltherapyOutpatientProgressnote: "100519-8",
+  "100519-8": "100519-8",
 
   /**
    * S wave duration in lead V1
    */
-  SwavedurationinleadV1: "10052-9",
+  "10052-9": "10052-9",
 
   /**
    * Plastic surgery Outpatient Progress note
    */
-  PlasticsurgeryOutpatientProgressnote: "100520-6",
+  "100520-6": "100520-6",
 
   /**
    * Podiatry Outpatient Progress note
    */
-  PodiatryOutpatientProgressnote: "100521-4",
+  "100521-4": "100521-4",
 
   /**
    * Psychiatry Hospital Progress note
    */
-  PsychiatryHospitalProgressnote: "100522-2",
+  "100522-2": "100522-2",
 
   /**
    * Psychology Outpatient Progress note
    */
-  PsychologyOutpatientProgressnote: "100523-0",
+  "100523-0": "100523-0",
 
   /**
    * Pulmonary Outpatient Progress note
    */
-  PulmonaryOutpatientProgressnote: "100524-8",
+  "100524-8": "100524-8",
 
   /**
    * Radiation oncology Outpatient Progress note
    */
-  RadiationoncologyOutpatientProgressnote: "100525-5",
+  "100525-5": "100525-5",
 
   /**
    * Radiology Outpatient Progress note
    */
-  RadiologyOutpatientProgressnote: "100526-3",
+  "100526-3": "100526-3",
 
   /**
    * Recreational therapy Outpatient Progress note
    */
-  RecreationaltherapyOutpatientProgressnote: "100527-1",
+  "100527-1": "100527-1",
 
   /**
    * Reproductive endocrinology and infertility Outpatient Progress note
    */
-  ReproductiveendocrinologyandinfertilityOutpatientProgressnote: "100528-9",
+  "100528-9": "100528-9",
 
   /**
    * Research Outpatient Progress note
    */
-  ResearchOutpatientProgressnote: "100529-7",
+  "100529-7": "100529-7",
 
   /**
    * S wave duration in lead V2
    */
-  SwavedurationinleadV2: "10053-7",
+  "10053-7": "10053-7",
 
   /**
    * Rheumatology Outpatient Progress note
    */
-  RheumatologyOutpatientProgressnote: "100530-5",
+  "100530-5": "100530-5",
 
   /**
    * Sleep medicine Outpatient Progress note
    */
-  SleepmedicineOutpatientProgressnote: "100531-3",
+  "100531-3": "100531-3",
 
   /**
    * Social worker Outpatient Progress note
    */
-  SocialworkerOutpatientProgressnote: "100532-1",
+  "100532-1": "100532-1",
 
   /**
    * Solid Organ Transplant Outpatient Progress note
    */
-  SolidOrganTransplantOutpatientProgressnote: "100533-9",
+  "100533-9": "100533-9",
 
   /**
    * Speech-language pathology Outpatient Progress note
    */
-  SpeechlanguagepathologyOutpatientProgressnote: "100534-7",
+  "100534-7": "100534-7",
 
   /**
    * Spinal surgery Outpatient Progress note
    */
-  SpinalsurgeryOutpatientProgressnote: "100535-4",
+  "100535-4": "100535-4",
 
   /**
    * Sports medicine Outpatient Progress note
    */
-  SportsmedicineOutpatientProgressnote: "100536-2",
+  "100536-2": "100536-2",
 
   /**
    * Surgery of the hand Outpatient Progress note
    */
-  SurgeryofthehandOutpatientProgressnote: "100537-0",
+  "100537-0": "100537-0",
 
   /**
    * Telehealth+Outpatient Progress note
    */
-  TelehealthOutpatientProgressnote: "100538-8",
+  "100538-8": "100538-8",
 
   /**
    * Thromboembolism Outpatient Progress note
    */
-  ThromboembolismOutpatientProgressnote: "100539-6",
+  "100539-6": "100539-6",
 
   /**
    * S wave duration in lead V3
    */
-  SwavedurationinleadV3: "10054-5",
+  "10054-5": "10054-5",
 
   /**
    * Transplant surgery Outpatient Progress note
    */
-  TransplantsurgeryOutpatientProgressnote: "100540-4",
+  "100540-4": "100540-4",
 
   /**
    * Trauma Outpatient Progress note
    */
-  TraumaOutpatientProgressnote: "100541-2",
+  "100541-2": "100541-2",
 
   /**
    * Urology Outpatient Progress note
    */
-  UrologyOutpatientProgressnote: "100542-0",
+  "100542-0": "100542-0",
 
   /**
    * Vascular neurology Outpatient Progress note
    */
-  VascularneurologyOutpatientProgressnote: "100543-8",
+  "100543-8": "100543-8",
 
   /**
    * Vascular surgery Outpatient Progress note
    */
-  VascularsurgeryOutpatientProgressnote: "100544-6",
+  "100544-6": "100544-6",
 
   /**
    * Wound care management Outpatient Progress note
    */
-  WoundcaremanagementOutpatientProgressnote: "100545-3",
+  "100545-3": "100545-3",
 
   /**
    * Wound, Ostomy, and Continence Care Outpatient Progress note
    */
-  WoundOstomyandContinenceCareOutpatientProgressnote: "100546-1",
+  "100546-1": "100546-1",
 
   /**
    * Adolescent medicine Hospital Progress note
    */
-  AdolescentmedicineHospitalProgressnote: "100547-9",
+  "100547-9": "100547-9",
 
   /**
    * Allergy and Immunology Hospital Progress note
    */
-  AllergyandImmunologyHospitalProgressnote: "100548-7",
+  "100548-7": "100548-7",
 
   /**
    * Allergy Hospital Progress note
    */
-  AllergyHospitalProgressnote: "100549-5",
+  "100549-5": "100549-5",
 
   /**
    * S wave duration in lead V4
    */
-  SwavedurationinleadV4: "10055-2",
+  "10055-2": "10055-2",
 
   /**
    * Attending Hospital Progress note
    */
-  AttendingHospitalProgressnote: "100550-3",
+  "100550-3": "100550-3",
 
   /**
    * Audiology Hospital Progress note
    */
-  AudiologyHospitalProgressnote: "100551-1",
+  "100551-1": "100551-1",
 
   /**
    * Bariatric surgery Hospital Progress note
    */
-  BariatricsurgeryHospitalProgressnote: "100552-9",
+  "100552-9": "100552-9",
 
   /**
    * Blood banking and transfusion medicine Hospital Progress note
    */
-  BloodbankingandtransfusionmedicineHospitalProgressnote: "100553-7",
+  "100553-7": "100553-7",
 
   /**
    * Bone Marrow Transplant Hospital Progress note
    */
-  BoneMarrowTransplantHospitalProgressnote: "100554-5",
+  "100554-5": "100554-5",
 
   /**
    * Breastfeeding Hospital Progress note
    */
-  BreastfeedingHospitalProgressnote: "100555-2",
+  "100555-2": "100555-2",
 
   /**
    * Burn management Hospital Progress note
    */
-  BurnmanagementHospitalProgressnote: "100556-0",
+  "100556-0": "100556-0",
 
   /**
    * Cardiac surgery Hospital Progress note
    */
-  CardiacsurgeryHospitalProgressnote: "100557-8",
+  "100557-8": "100557-8",
 
   /**
    * Cardiopulmonary Hospital Progress note
    */
-  CardiopulmonaryHospitalProgressnote: "100558-6",
+  "100558-6": "100558-6",
 
   /**
    * Child and adolescent psychiatry Hospital Progress note
    */
-  ChildandadolescentpsychiatryHospitalProgressnote: "100559-4",
+  "100559-4": "100559-4",
 
   /**
    * S wave duration in lead V5
    */
-  SwavedurationinleadV5: "10056-0",
+  "10056-0": "10056-0",
 
   /**
    * Clinical cardiac electrophysiology Hospital Progress note
    */
-  ClinicalcardiacelectrophysiologyHospitalProgressnote: "100560-2",
+  "100560-2": "100560-2",
 
   /**
    * Clinical genetics Hospital Progress note
    */
-  ClinicalgeneticsHospitalProgressnote: "100561-0",
+  "100561-0": "100561-0",
 
   /**
    * Clinical neurophysiology Hospital Progress note
    */
-  ClinicalneurophysiologyHospitalProgressnote: "100562-8",
+  "100562-8": "100562-8",
 
   /**
    * Clinical pathology Hospital Progress note
    */
-  ClinicalpathologyHospitalProgressnote: "100563-6",
+  "100563-6": "100563-6",
 
   /**
    * Colon and rectal surgery Hospital Progress note
    */
-  ColonandrectalsurgeryHospitalProgressnote: "100564-4",
+  "100564-4": "100564-4",
 
   /**
    * Consultant Hospital Progress note
    */
-  ConsultantHospitalProgressnote: "100565-1",
+  "100565-1": "100565-1",
 
   /**
    * Dentistry Hospital Progress note
    */
-  DentistryHospitalProgressnote: "100566-9",
+  "100566-9": "100566-9",
 
   /**
    * Dermatology Hospital Progress note
    */
-  DermatologyHospitalProgressnote: "100567-7",
+  "100567-7": "100567-7",
 
   /**
    * Developmental-behavioral pediatrics Hospital Progress note
    */
-  DevelopmentalbehavioralpediatricsHospitalProgressnote: "100568-5",
+  "100568-5": "100568-5",
 
   /**
    * Dialysis and Therapeutic apheresis Hospital Progress note
    */
-  DialysisandTherapeuticapheresisHospitalProgressnote: "100569-3",
+  "100569-3": "100569-3",
 
   /**
    * S wave duration in lead V6
    */
-  SwavedurationinleadV6: "10057-8",
+  "10057-8": "10057-8",
 
   /**
    * Eating disorders Hospital Progress note
    */
-  EatingdisordersHospitalProgressnote: "100570-1",
+  "100570-1": "100570-1",
 
   /**
    * Endocrinology Hospital Progress note
    */
-  EndocrinologyHospitalProgressnote: "100571-9",
+  "100571-9": "100571-9",
 
   /**
    * Family medicine Hospital Progress note
    */
-  FamilymedicineHospitalProgressnote: "100572-7",
+  "100572-7": "100572-7",
 
   /**
    * Gastroenterology Hospital Progress note
    */
-  GastroenterologyHospitalProgressnote: "100573-5",
+  "100573-5": "100573-5",
 
   /**
    * General medicine Hospital Progress note
    */
-  GeneralmedicineHospitalProgressnote: "100574-3",
+  "100574-3": "100574-3",
 
   /**
    * Geriatric medicine Hospital Progress note
    */
-  GeriatricmedicineHospitalProgressnote: "100575-0",
+  "100575-0": "100575-0",
 
   /**
    * Gynecologic oncology Hospital Progress note
    */
-  GynecologiconcologyHospitalProgressnote: "100576-8",
+  "100576-8": "100576-8",
 
   /**
    * Gynecology Hospital Progress note
    */
-  GynecologyHospitalProgressnote: "100577-6",
+  "100577-6": "100577-6",
 
   /**
    * Healthcare navigator Hospital Progress note
    */
-  HealthcarenavigatorHospitalProgressnote: "100578-4",
+  "100578-4": "100578-4",
 
   /**
    * Heart failure Hospital Progress note
    */
-  HeartfailureHospitalProgressnote: "100579-2",
+  "100579-2": "100579-2",
 
   /**
    * S' wave amplitude in lead AVF
    */
-  SwaveamplitudeinleadAVF: "10058-6",
+  "10058-6": "10058-6",
 
   /**
    * Heart failure+Transplant cardiology Hospital Progress note
    */
-  HeartfailureTransplantcardiologyHospitalProgressnote: "100580-0",
+  "100580-0": "100580-0",
 
   /**
    * Hematology Hospital Progress note
    */
-  HematologyHospitalProgressnote: "100581-8",
+  "100581-8": "100581-8",
 
   /**
    * Hematology+Medical oncology Hospital Progress note
    */
-  HematologyMedicaloncologyHospitalProgressnote: "100582-6",
+  "100582-6": "100582-6",
 
   /**
    * Hepatology Hospital Progress note
    */
-  HepatologyHospitalProgressnote: "100583-4",
+  "100583-4": "100583-4",
 
   /**
    * Immunology Hospital Progress note
    */
-  ImmunologyHospitalProgressnote: "100584-2",
+  "100584-2": "100584-2",
 
   /**
    * Infectious disease Hospital Progress note
    */
-  InfectiousdiseaseHospitalProgressnote: "100585-9",
+  "100585-9": "100585-9",
 
   /**
    * Internal medicine Hospital Progress note
    */
-  InternalmedicineHospitalProgressnote: "100586-7",
+  "100586-7": "100586-7",
 
   /**
    * Interventional cardiology Hospital Progress note
    */
-  InterventionalcardiologyHospitalProgressnote: "100587-5",
+  "100587-5": "100587-5",
 
   /**
    * Interventional radiology Hospital Progress note
    */
-  InterventionalradiologyHospitalProgressnote: "100588-3",
+  "100588-3": "100588-3",
 
   /**
    * Hospital Mechanical circulatory support Progress note
    */
-  HospitalMechanicalcirculatorysupportProgressnote: "100589-1",
+  "100589-1": "100589-1",
 
   /**
    * S' wave amplitude in lead AVL
    */
-  SwaveamplitudeinleadAVL: "10059-4",
+  "10059-4": "10059-4",
 
   /**
    * Medical Aid in Dying Hospital Progress note
    */
-  MedicalAidinDyingHospitalProgressnote: "100590-9",
+  "100590-9": "100590-9",
 
   /**
    * Mental health Hospital Progress note
    */
-  MentalhealthHospitalProgressnote: "100591-7",
+  "100591-7": "100591-7",
 
   /**
    * Multi-specialty program Hospital Progress note
    */
-  MultispecialtyprogramHospitalProgressnote: "100592-5",
+  "100592-5": "100592-5",
 
   /**
    * Neonatal perinatal medicine Hospital Progress note
    */
-  NeonatalperinatalmedicineHospitalProgressnote: "100593-3",
+  "100593-3": "100593-3",
 
   /**
    * Nephrology Hospital Progress note
    */
-  NephrologyHospitalProgressnote: "100594-1",
+  "100594-1": "100594-1",
 
   /**
    * Neurological surgery Hospital Progress note
    */
-  NeurologicalsurgeryHospitalProgressnote: "100595-8",
+  "100595-8": "100595-8",
 
   /**
    * Neurology Hospital Progress note
    */
-  NeurologyHospitalProgressnote: "100596-6",
+  "100596-6": "100596-6",
 
   /**
    * Neurology with special qualifications in child neurology Hospital Progress note
    */
-  NeurologywithspecialqualificationsinchildneurologyHospitalProgressnote:
-    "100597-4",
+  "100597-4": "100597-4",
 
   /**
    * Nurse practitioner Hospital Progress note
    */
-  NursepractitionerHospitalProgressnote: "100598-2",
+  "100598-2": "100598-2",
 
   /**
    * Nurse Hospital Progress note
    */
-  NurseHospitalProgressnote: "100599-0",
+  "100599-0": "100599-0",
 
   /**
    * Direct antiglobulin test.IgG specific reagent [Interpretation] on Red Blood Cells
    */
-  DirectantiglobulintestIgGspecificreagentInterpretationonRedBloodCells:
-    "1006-6",
+  "1006-6": "1006-6",
 
   /**
    * S' wave amplitude in lead AVR
    */
-  SwaveamplitudeinleadAVR: "10060-2",
+  "10060-2": "10060-2",
 
   /**
    * Nutrition and dietetics Hospital Progress note
    */
-  NutritionanddieteticsHospitalProgressnote: "100600-6",
+  "100600-6": "100600-6",
 
   /**
    * Obstetrics and Gynecology Hospital Progress note
    */
-  ObstetricsandGynecologyHospitalProgressnote: "100601-4",
+  "100601-4": "100601-4",
 
   /**
    * Obstetrics Hospital Progress note
    */
-  ObstetricsHospitalProgressnote: "100602-2",
+  "100602-2": "100602-2",
 
   /**
    * Occupational therapy Hospital Progress note
    */
-  OccupationaltherapyHospitalProgressnote: "100603-0",
+  "100603-0": "100603-0",
 
   /**
    * Oncology Hospital Progress note
    */
-  OncologyHospitalProgressnote: "100604-8",
+  "100604-8": "100604-8",
 
   /**
    * Ophthalmology Hospital Progress note
    */
-  OphthalmologyHospitalProgressnote: "100605-5",
+  "100605-5": "100605-5",
 
   /**
    * Oral and Maxillofacial Surgery Hospital Progress note
    */
-  OralandMaxillofacialSurgeryHospitalProgressnote: "100606-3",
+  "100606-3": "100606-3",
 
   /**
    * Orthopaedic surgery Hospital Progress note
    */
-  OrthopaedicsurgeryHospitalProgressnote: "100607-1",
+  "100607-1": "100607-1",
 
   /**
    * Orthotics prosthetics Hospital Progress note
    */
-  OrthoticsprostheticsHospitalProgressnote: "100608-9",
+  "100608-9": "100608-9",
 
   /**
    * Otolaryngology Hospital Progress note
    */
-  OtolaryngologyHospitalProgressnote: "100609-7",
+  "100609-7": "100609-7",
 
   /**
    * S' wave amplitude in lead I
    */
-  SwaveamplitudeinleadI: "10061-0",
+  "10061-0": "10061-0",
 
   /**
    * Pain medicine Hospital Progress note
    */
-  PainmedicineHospitalProgressnote: "100610-5",
+  "100610-5": "100610-5",
 
   /**
    * Palliative care Hospital Progress note
    */
-  PalliativecareHospitalProgressnote: "100611-3",
+  "100611-3": "100611-3",
 
   /**
    * Pastoral care Hospital Progress note
    */
-  PastoralcareHospitalProgressnote: "100612-1",
+  "100612-1": "100612-1",
 
   /**
    * Pediatric cardiology Hospital Progress note
    */
-  PediatriccardiologyHospitalProgressnote: "100613-9",
+  "100613-9": "100613-9",
 
   /**
    * Pediatric dermatology Hospital Progress note
    */
-  PediatricdermatologyHospitalProgressnote: "100614-7",
+  "100614-7": "100614-7",
 
   /**
    * Pediatric endocrinology Hospital Progress note
    */
-  PediatricendocrinologyHospitalProgressnote: "100615-4",
+  "100615-4": "100615-4",
 
   /**
    * Pediatric gastroenterology Hospital Progress note
    */
-  PediatricgastroenterologyHospitalProgressnote: "100616-2",
+  "100616-2": "100616-2",
 
   /**
    * Pediatric hematology-oncology Hospital Progress note
    */
-  PediatrichematologyoncologyHospitalProgressnote: "100617-0",
+  "100617-0": "100617-0",
 
   /**
    * Pediatric infectious diseases Hospital Progress note
    */
-  PediatricinfectiousdiseasesHospitalProgressnote: "100618-8",
+  "100618-8": "100618-8",
 
   /**
    * Pediatric otolaryngology Hospital Progress note
    */
-  PediatricotolaryngologyHospitalProgressnote: "100619-6",
+  "100619-6": "100619-6",
 
   /**
    * S' wave amplitude in lead II
    */
-  SwaveamplitudeinleadII: "10062-8",
+  "10062-8": "10062-8",
 
   /**
    * Pediatric pulmonology Hospital Progress note
    */
-  PediatricpulmonologyHospitalProgressnote: "100620-4",
+  "100620-4": "100620-4",
 
   /**
    * Pediatric rheumatology Hospital Progress note
    */
-  PediatricrheumatologyHospitalProgressnote: "100621-2",
+  "100621-2": "100621-2",
 
   /**
    * Pediatric surgery Hospital Progress note
    */
-  PediatricsurgeryHospitalProgressnote: "100622-0",
+  "100622-0": "100622-0",
 
   /**
    * Pediatric transplant hepatology Hospital Progress note
    */
-  PediatrictransplanthepatologyHospitalProgressnote: "100623-8",
+  "100623-8": "100623-8",
 
   /**
    * Pharmacogenomics Hospital Progress note
    */
-  PharmacogenomicsHospitalProgressnote: "100624-6",
+  "100624-6": "100624-6",
 
   /**
    * Pharmacology Hospital Progress note
    */
-  PharmacologyHospitalProgressnote: "100625-3",
+  "100625-3": "100625-3",
 
   /**
    * Physical medicine and rehab Hospital Progress note
    */
-  PhysicalmedicineandrehabHospitalProgressnote: "100626-1",
+  "100626-1": "100626-1",
 
   /**
    * Physical therapy Hospital Progress note
    */
-  PhysicaltherapyHospitalProgressnote: "100627-9",
+  "100627-9": "100627-9",
 
   /**
    * Plastic surgery Hospital Progress note
    */
-  PlasticsurgeryHospitalProgressnote: "100628-7",
+  "100628-7": "100628-7",
 
   /**
    * Podiatry Hospital Progress note
    */
-  PodiatryHospitalProgressnote: "100629-5",
+  "100629-5": "100629-5",
 
   /**
    * S' wave amplitude in lead III
    */
-  SwaveamplitudeinleadIII: "10063-6",
+  "10063-6": "10063-6",
 
   /**
    * Psychology Hospital Progress note
    */
-  PsychologyHospitalProgressnote: "100630-3",
+  "100630-3": "100630-3",
 
   /**
    * Radiation oncology Hospital Progress note
    */
-  RadiationoncologyHospitalProgressnote: "100631-1",
+  "100631-1": "100631-1",
 
   /**
    * Radiology Hospital Progress note
    */
-  RadiologyHospitalProgressnote: "100632-9",
+  "100632-9": "100632-9",
 
   /**
    * Rapid response team Hospital Progress note
    */
-  RapidresponseteamHospitalProgressnote: "100633-7",
+  "100633-7": "100633-7",
 
   /**
    * Recreational therapy Hospital Progress note
    */
-  RecreationaltherapyHospitalProgressnote: "100634-5",
+  "100634-5": "100634-5",
 
   /**
    * Reproductive endocrinology and infertility Hospital Progress note
    */
-  ReproductiveendocrinologyandinfertilityHospitalProgressnote: "100635-2",
+  "100635-2": "100635-2",
 
   /**
    * Research Hospital Progress note
    */
-  ResearchHospitalProgressnote: "100636-0",
+  "100636-0": "100636-0",
 
   /**
    * Rheumatology Hospital Progress note
    */
-  RheumatologyHospitalProgressnote: "100637-8",
+  "100637-8": "100637-8",
 
   /**
    * Sleep medicine Hospital Progress note
    */
-  SleepmedicineHospitalProgressnote: "100638-6",
+  "100638-6": "100638-6",
 
   /**
    * Social worker Hospital Progress note
    */
-  SocialworkerHospitalProgressnote: "100639-4",
+  "100639-4": "100639-4",
 
   /**
    * S' wave amplitude in lead V1
    */
-  SwaveamplitudeinleadV1: "10064-4",
+  "10064-4": "10064-4",
 
   /**
    * Solid Organ Transplant Hospital Progress note
    */
-  SolidOrganTransplantHospitalProgressnote: "100640-2",
+  "100640-2": "100640-2",
 
   /**
    * Speech-language pathology Hospital Progress note
    */
-  SpeechlanguagepathologyHospitalProgressnote: "100641-0",
+  "100641-0": "100641-0",
 
   /**
    * Spinal surgery Hospital Progress note
    */
-  SpinalsurgeryHospitalProgressnote: "100642-8",
+  "100642-8": "100642-8",
 
   /**
    * Surgery of the hand Hospital Progress note
    */
-  SurgeryofthehandHospitalProgressnote: "100643-6",
+  "100643-6": "100643-6",
 
   /**
    * Thromboembolism Hospital Progress note
    */
-  ThromboembolismHospitalProgressnote: "100644-4",
+  "100644-4": "100644-4",
 
   /**
    * Trauma Hospital Progress note
    */
-  TraumaHospitalProgressnote: "100645-1",
+  "100645-1": "100645-1",
 
   /**
    * Urology Hospital Progress note
    */
-  UrologyHospitalProgressnote: "100646-9",
+  "100646-9": "100646-9",
 
   /**
    * Vascular neurology Hospital Progress note
    */
-  VascularneurologyHospitalProgressnote: "100647-7",
+  "100647-7": "100647-7",
 
   /**
    * Vascular surgery Hospital Progress note
    */
-  VascularsurgeryHospitalProgressnote: "100648-5",
+  "100648-5": "100648-5",
 
   /**
    * Wound care management Hospital Progress note
    */
-  WoundcaremanagementHospitalProgressnote: "100649-3",
+  "100649-3": "100649-3",
 
   /**
    * S' wave amplitude in lead V2
    */
-  SwaveamplitudeinleadV2: "10065-1",
+  "10065-1": "10065-1",
 
   /**
    * Wound, Ostomy, and Continence Care Hospital Progress note
    */
-  WoundOstomyandContinenceCareHospitalProgressnote: "100650-1",
+  "100650-1": "100650-1",
 
   /**
    * Hospital COVID-19 Intubation Progress note
    */
-  HospitalCOVID19IntubationProgressnote: "100651-9",
+  "100651-9": "100651-9",
 
   /**
    * Pure tone bone conduction threshold audiometry panel
    */
-  Puretoneboneconductionthresholdaudiometrypanel: "100652-7",
+  "100652-7": "100652-7",
 
   /**
    * Pure tone air conduction threshold audiometry panel
    */
-  Puretoneairconductionthresholdaudiometrypanel: "100653-5",
+  "100653-5": "100653-5",
 
   /**
    * Pyruvate kinase M2 [Presence] in Stool
    */
-  PyruvatekinaseM2PresenceinStool: "100654-3",
+  "100654-3": "100654-3",
 
   /**
    * XR Sella turcica Lateral
    */
-  XRSellaturcicaLateral: "100655-0",
+  "100655-0": "100655-0",
 
   /**
    * Maternal and fetal medicine Outpatient Progress note
    */
-  MaternalandfetalmedicineOutpatientProgressnote: "100656-8",
+  "100656-8": "100656-8",
 
   /**
    * Maternal and fetal medicine Telephone encounter+Hospital Progress note
    */
-  MaternalandfetalmedicineTelephoneencounterHospitalProgressnote: "100657-6",
+  "100657-6": "100657-6",
 
   /**
    * Hospital COVID-19 Progress note
    */
-  HospitalCOVID19Progressnote: "100658-4",
+  "100658-4": "100658-4",
 
   /**
    * Maternal and fetal medicine Hospital Progress note
    */
-  MaternalandfetalmedicineHospitalProgressnote: "100659-2",
+  "100659-2": "100659-2",
 
   /**
    * S' wave amplitude in lead V3
    */
-  SwaveamplitudeinleadV3: "10066-9",
+  "10066-9": "10066-9",
 
   /**
    * Maternal and fetal medicine Telephone encounter+Outpatient Progress note
    */
-  MaternalandfetalmedicineTelephoneencounterOutpatientProgressnote: "100660-0",
+  "100660-0": "100660-0",
 
   /**
    * Psychiatry Outpatient Progress note
    */
-  PsychiatryOutpatientProgressnote: "100661-8",
+  "100661-8": "100661-8",
 
   /**
    * Cortisol free and total panel - Serum or Plasma
    */
-  CortisolfreeandtotalpanelSerumorPlasma: "100662-6",
+  "100662-6": "100662-6",
 
   /**
    * TPMT gene c.460G>A and c.719A>G [Presence] in Blood by Molecular genetics method
    */
-  TPMTgenec460GAandc719AGPresenceinBloodbyMoleculargeneticsmethod: "100663-4",
+  "100663-4": "100663-4",
 
   /**
    * NUDT15 gene c.50_55dup and c.415C>T [Presence] in Blood by Molecular genetics method
    */
-  NUDT15genec50_55dupandc415CTPresenceinBloodbyMoleculargeneticsmethod:
-    "100664-2",
+  "100664-2": "100664-2",
 
   /**
    * NUDT15 gene c.415C>T [Presence] in Blood by Molecular genetics method
    */
-  NUDT15genec415CTPresenceinBloodbyMoleculargeneticsmethod: "100665-9",
+  "100665-9": "100665-9",
 
   /**
    * NUDT15 gene c.416G>A [Presence] in Blood by Molecular genetics method
    */
-  NUDT15genec416GAPresenceinBloodbyMoleculargeneticsmethod: "100666-7",
+  "100666-7": "100666-7",
 
   /**
    * NUDT15 gene c.52G>A [Presence] in Blood by Molecular genetics method
    */
-  NUDT15genec52GAPresenceinBloodbyMoleculargeneticsmethod: "100667-5",
+  "100667-5": "100667-5",
 
   /**
    * NUDT15 gene c.50_55dup [Presence] in Blood by Molecular genetics method
    */
-  NUDT15genec50_55dupPresenceinBloodbyMoleculargeneticsmethod: "100668-3",
+  "100668-3": "100668-3",
 
   /**
    * NUDT15 gene c.50_55del [Presence] in Blood by Molecular genetics method
    */
-  NUDT15genec50_55delPresenceinBloodbyMoleculargeneticsmethod: "100669-1",
+  "100669-1": "100669-1",
 
   /**
    * S' wave amplitude in lead V4
    */
-  SwaveamplitudeinleadV4: "10067-7",
+  "10067-7": "10067-7",
 
   /**
    * RHD gene allele [Identifier] in Plasma cell-free DNA Nominal--fetus
    */
-  RHDgenealleleIdentifierinPlasmacellfreeDNANominalfetus: "100670-9",
+  "100670-9": "100670-9",
 
   /**
    * Aspergillus sp DNA [Presence] in Blood by NAA with probe detection
    */
-  AspergillusspDNAPresenceinBloodbyNAAwithprobedetection: "100671-7",
+  "100671-7": "100671-7",
 
   /**
    * Aspergillus fumigatus DNA [Presence] in Blood by NAA with probe detection
    */
-  AspergillusfumigatusDNAPresenceinBloodbyNAAwithprobedetection: "100672-5",
+  "100672-5": "100672-5",
 
   /**
    * Aspergillus terreus DNA [Presence] in Blood by NAA with probe detection
    */
-  AspergillusterreusDNAPresenceinBloodbyNAAwithprobedetection: "100673-3",
+  "100673-3": "100673-3",
 
   /**
    * BK virus DNA [Log #/volume] (viral load) in Blood by NAA with probe detection
    */
-  BKvirusDNALogvolumeviralloadinBloodbyNAAwithprobedetection: "100674-1",
+  "100674-1": "100674-1",
 
   /**
    * Cytomegalovirus DNA [Units/volume] (viral load) in Blood by NAA with probe detection
    */
-  CytomegalovirusDNAUnitsvolumeviralloadinBloodbyNAAwithprobedetection:
-    "100675-8",
+  "100675-8": "100675-8",
 
   /**
    * Cytomegalovirus DNA [log units/volume] (viral load) in Blood by NAA with probe detection
    */
-  CytomegalovirusDNAlogunitsvolumeviralloadinBloodbyNAAwithprobedetection:
-    "100676-6",
+  "100676-6": "100676-6",
 
   /**
    * Epstein Barr virus DNA [Log #/volume] (viral load) in Serum or Plasma by NAA with probe detection
    */
-  EpsteinBarrvirusDNALogvolumeviralloadinSerumorPlasmabyNAAwithprobedetection:
-    "100677-4",
+  "100677-4": "100677-4",
 
   /**
    * Epstein Barr virus DNA [Log #/volume] (viral load) in Blood by NAA with probe detection
    */
-  EpsteinBarrvirusDNALogvolumeviralloadinBloodbyNAAwithprobedetection:
-    "100678-2",
+  "100678-2": "100678-2",
 
   /**
    * Herpes virus 6 DNA [Log #/volume] (viral load) in Serum or Plasma by NAA with probe detection
    */
-  Herpesvirus6DNALogvolumeviralloadinSerumorPlasmabyNAAwithprobedetection:
-    "100679-0",
+  "100679-0": "100679-0",
 
   /**
    * S' wave amplitude in lead V5
    */
-  SwaveamplitudeinleadV5: "10068-5",
+  "10068-5": "10068-5",
 
   /**
    * Herpes virus 6 DNA [Log #/volume] (viral load) in Blood by NAA with probe detection
    */
-  Herpesvirus6DNALogvolumeviralloadinBloodbyNAAwithprobedetection: "100680-8",
+  "100680-8": "100680-8",
 
   /**
    * Herpes virus 7 DNA [Log #/volume] (viral load) in Serum or Plasma by NAA with probe detection
    */
-  Herpesvirus7DNALogvolumeviralloadinSerumorPlasmabyNAAwithprobedetection:
-    "100681-6",
+  "100681-6": "100681-6",
 
   /**
    * Herpes virus 7 DNA [Log #/volume] (viral load) in Blood by NAA with probe detection
    */
-  Herpesvirus7DNALogvolumeviralloadinBloodbyNAAwithprobedetection: "100682-4",
+  "100682-4": "100682-4",
 
   /**
    * Herpes virus 8 DNA [Log #/volume] (viral load) in Serum or Plasma by NAA with probe detection
    */
-  Herpesvirus8DNALogvolumeviralloadinSerumorPlasmabyNAAwithprobedetection:
-    "100683-2",
+  "100683-2": "100683-2",
 
   /**
    * Herpes virus 8 DNA [Log #/volume] (viral load) in Blood by NAA with probe detection
    */
-  Herpesvirus8DNALogvolumeviralloadinBloodbyNAAwithprobedetection: "100684-0",
+  "100684-0": "100684-0",
 
   /**
    * JC virus DNA [Log #/volume] (viral load) in Serum or Plasma by NAA with probe detection
    */
-  JCvirusDNALogvolumeviralloadinSerumorPlasmabyNAAwithprobedetection:
-    "100685-7",
+  "100685-7": "100685-7",
 
   /**
    * JC virus DNA [Log #/volume] (viral load) in Cerebral spinal fluid by NAA with probe detection
    */
-  JCvirusDNALogvolumeviralloadinCerebralspinalfluidbyNAAwithprobedetection:
-    "100686-5",
+  "100686-5": "100686-5",
 
   /**
    * JC virus DNA [Log #/volume] (viral load) in Urine by NAA with probe detection
    */
-  JCvirusDNALogvolumeviralloadinUrinebyNAAwithprobedetection: "100687-3",
+  "100687-3": "100687-3",
 
   /**
    * Parvovirus B19 DNA [Log #/volume] (viral load) in Blood by NAA with probe detection
    */
-  ParvovirusB19DNALogvolumeviralloadinBloodbyNAAwithprobedetection: "100688-1",
+  "100688-1": "100688-1",
 
   /**
    * Toxoplasma gondii DNA [Log #/volume] in Serum or Plasma by NAA with probe detection
    */
-  ToxoplasmagondiiDNALogvolumeinSerumorPlasmabyNAAwithprobedetection:
-    "100689-9",
+  "100689-9": "100689-9",
 
   /**
    * S' wave amplitude in lead V6
    */
-  SwaveamplitudeinleadV6: "10069-3",
+  "10069-3": "10069-3",
 
   /**
    * Toxoplasma gondii DNA [Log #/volume] in Cerebral spinal fluid by NAA with probe detection
    */
-  ToxoplasmagondiiDNALogvolumeinCerebralspinalfluidbyNAAwithprobedetection:
-    "100690-7",
+  "100690-7": "100690-7",
 
   /**
    * Varicella zoster virus DNA [Log #/volume] (viral load) in Blood by NAA with probe detection
    */
-  VaricellazostervirusDNALogvolumeviralloadinBloodbyNAAwithprobedetection:
-    "100691-5",
+  "100691-5": "100691-5",
 
   /**
    * Varicella zoster virus DNA [Log #/volume] (viral load) in Cerebral spinal fluid by NAA with probe detection
    */
-  VaricellazostervirusDNALogvolumeviralloadinCerebralspinalfluidbyNAAwithprobedetection:
-    "100692-3",
+  "100692-3": "100692-3",
 
   /**
    * Pneumocystis jiroveci DNA [Log #/volume] in Respiratory specimen by NAA with probe detection
    */
-  PneumocystisjiroveciDNALogvolumeinRespiratoryspecimenbyNAAwithprobedetection:
-    "100693-1",
+  "100693-1": "100693-1",
 
   /**
    * SMN1 gene silent carrier analysis [Presence] in Blood or Tissue by Molecular genetics method
    */
-  SMN1genesilentcarrieranalysisPresenceinBloodorTissuebyMoleculargeneticsmethod:
-    "100694-9",
+  "100694-9": "100694-9",
 
   /**
    * Genetic disease analysis overall carrier interpretation in Blood or Tissue by Molecular genetics method Narrative
    */
-  GeneticdiseaseanalysisoverallcarrierinterpretationinBloodorTissuebyMoleculargeneticsmethodNarrative:
-    "100695-6",
+  "100695-6": "100695-6",
 
   /**
    * CTNS related multigene analysis [Identifier] in Bodyfluid and Serum or Plasma by Molecular genetics method Nominal
    */
-  CTNSrelatedmultigeneanalysisIdentifierinBodyfluidandSerumorPlasmabyMoleculargeneticsmethodNominal:
-    "100696-4",
+  "100696-4": "100696-4",
 
   /**
    * Interventional radiology Outpatient Note
    */
-  InterventionalradiologyOutpatientNote: "100697-2",
+  "100697-2": "100697-2",
 
   /**
    * Social Determinants of Health screening report Document
    */
-  SocialDeterminantsofHealthscreeningreportDocument: "100698-0",
+  "100698-0": "100698-0",
 
   /**
    * Rifabutin+Ethambutol [Susceptibility]
    */
-  RifabutinEthambutolSusceptibility: "100699-8",
+  "100699-8": "100699-8",
 
   /**
    * Direct antiglobulin test.polyspecific reagent [Presence] on Red Blood Cells
    */
-  DirectantiglobulintestpolyspecificreagentPresenceonRedBloodCells: "1007-4",
+  "1007-4": "1007-4",
 
   /**
    * S' wave duration in lead AVF
    */
-  SwavedurationinleadAVF: "10070-1",
+  "10070-1": "10070-1",
 
   /**
    * Trichomonas vaginalis DNA [Presence] in Urethra by NAA with probe detection
    */
-  TrichomonasvaginalisDNAPresenceinUrethrabyNAAwithprobedetection: "100700-4",
+  "100700-4": "100700-4",
 
   /**
    * Trichomonas vaginalis rRNA [Presence] in Urethra by NAA with probe detection
    */
-  TrichomonasvaginalisrRNAPresenceinUrethrabyNAAwithprobedetection: "100701-2",
+  "100701-2": "100701-2",
 
   /**
    * Mycoplasma genitalium rRNA [Presence] in Urethra by NAA with probe detection
    */
-  MycoplasmagenitaliumrRNAPresenceinUrethrabyNAAwithprobedetection: "100702-0",
+  "100702-0": "100702-0",
 
   /**
    * Mycoplasma genitalium rRNA [Presence] in Urine by NAA with probe detection
    */
-  MycoplasmagenitaliumrRNAPresenceinUrinebyNAAwithprobedetection: "100703-8",
+  "100703-8": "100703-8",
 
   /**
    * Mycoplasma genitalium rRNA [Presence] in Cervix by NAA with probe detection
    */
-  MycoplasmagenitaliumrRNAPresenceinCervixbyNAAwithprobedetection: "100704-6",
+  "100704-6": "100704-6",
 
   /**
    * Mycoplasma genitalium rRNA [Presence] in Anorectal by NAA with probe detection
    */
-  MycoplasmagenitaliumrRNAPresenceinAnorectalbyNAAwithprobedetection:
-    "100705-3",
+  "100705-3": "100705-3",
 
   /**
    * Mycoplasma genitalium rRNA [Presence] in Specimen by NAA with probe detection
    */
-  MycoplasmagenitaliumrRNAPresenceinSpecimenbyNAAwithprobedetection: "100706-1",
+  "100706-1": "100706-1",
 
   /**
    * Polymorphonuclear cells [#/volume] in Peritoneal dialysis fluid by Automated count
    */
-  PolymorphonuclearcellsvolumeinPeritonealdialysisfluidbyAutomatedcount:
-    "100707-9",
+  "100707-9": "100707-9",
 
   /**
    * Plasma cells/100 leukocytes in Synovial fluid
    */
-  Plasmacells100leukocytesinSynovialfluid: "100708-7",
+  "100708-7": "100708-7",
 
   /**
    * Hepatocellular carcinoma risk [Score] by GAAD
    */
-  HepatocellularcarcinomariskScorebyGAAD: "100709-5",
+  "100709-5": "100709-5",
 
   /**
    * S' wave duration in lead AVL
    */
-  SwavedurationinleadAVL: "10071-9",
+  "10071-9": "10071-9",
 
   /**
    * Chlamydia trachomatis and Neisseria gonorrhoeae rRNA panel - Throat by NAA with probe detection
    */
-  ChlamydiatrachomatisandNeisseriagonorrhoeaerRNApanelThroatbyNAAwithprobedetection:
-    "100710-3",
+  "100710-3": "100710-3",
 
   /**
    * Borrelia burgdorferi.VlsE1+pepC10 Ab [Units/volume] in Serum by Immunoassay
    */
-  BorreliaburgdorferiVlsE1pepC10AbUnitsvolumeinSerumbyImmunoassay: "100711-1",
+  "100711-1": "100711-1",
 
   /**
    * Brexpiprazole [Mass/volume] in Serum or Plasma
    */
-  BrexpiprazoleMassvolumeinSerumorPlasma: "100712-9",
+  "100712-9": "100712-9",
 
   /**
    * Cariprazine [Mass/volume] in Serum or Plasma
    */
-  CariprazineMassvolumeinSerumorPlasma: "100713-7",
+  "100713-7": "100713-7",
 
   /**
    * Guanfacine [Mass/volume] in Serum or Plasma
    */
-  GuanfacineMassvolumeinSerumorPlasma: "100714-5",
+  "100714-5": "100714-5",
 
   /**
    * Prothipendyl [Mass/volume] in Serum or Plasma
    */
-  ProthipendylMassvolumeinSerumorPlasma: "100715-2",
+  "100715-2": "100715-2",
 
   /**
    * Prostate specific Ag [Mass/volume] in DBS
    */
-  ProstatespecificAgMassvolumeinDBS: "100716-0",
+  "100716-0": "100716-0",
 
   /**
    * FCGR3A gene.p.Phe176Val [Presence] in Blood or Tissue by Molecular genetics method
    */
-  FCGR3AgenepPhe176ValPresenceinBloodorTissuebyMoleculargeneticsmethod:
-    "100717-8",
+  "100717-8": "100717-8",
 
   /**
    * Undersea and hyperbaric medicine Discharge summary
    */
-  UnderseaandhyperbaricmedicineDischargesummary: "100718-6",
+  "100718-6": "100718-6",
 
   /**
    * Surgical oncology Discharge summary
    */
-  SurgicaloncologyDischargesummary: "100719-4",
+  "100719-4": "100719-4",
 
   /**
    * S' wave duration in lead AVR
    */
-  SwavedurationinleadAVR: "10072-7",
+  "10072-7": "10072-7",
 
   /**
    * Reproductive endocrinology and infertility Discharge summary
    */
-  ReproductiveendocrinologyandinfertilityDischargesummary: "100720-2",
+  "100720-2": "100720-2",
 
   /**
    * Community health care Discharge summary
    */
-  CommunityhealthcareDischargesummary: "100721-0",
+  "100721-0": "100721-0",
 
   /**
    * Integrative medicine Discharge summary
    */
-  IntegrativemedicineDischargesummary: "100722-8",
+  "100722-8": "100722-8",
 
   /**
    * Sports medicine Discharge summary
    */
-  SportsmedicineDischargesummary: "100723-6",
+  "100723-6": "100723-6",
 
   /**
    * Diabetology Discharge summary
    */
-  DiabetologyDischargesummary: "100724-4",
+  "100724-4": "100724-4",
 
   /**
    * Optometry Discharge summary
    */
-  OptometryDischargesummary: "100725-1",
+  "100725-1": "100725-1",
 
   /**
    * Podiatry Discharge summary
    */
-  PodiatryDischargesummary: "100726-9",
+  "100726-9": "100726-9",
 
   /**
    * Chiropractic medicine Discharge summary
    */
-  ChiropracticmedicineDischargesummary: "100727-7",
+  "100727-7": "100727-7",
 
   /**
    * Cardiac surgery Discharge summary
    */
-  CardiacsurgeryDischargesummary: "100728-5",
+  "100728-5": "100728-5",
 
   /**
    * Breastfeeding Discharge summary
    */
-  BreastfeedingDischargesummary: "100729-3",
+  "100729-3": "100729-3",
 
   /**
    * S' wave duration in lead I
    */
-  SwavedurationinleadI: "10073-5",
+  "10073-5": "10073-5",
 
   /**
    * Transplant surgery Discharge summary
    */
-  TransplantsurgeryDischargesummary: "100730-1",
+  "100730-1": "100730-1",
 
   /**
    * Urgent care center Discharge summary
    */
-  UrgentcarecenterDischargesummary: "100731-9",
+  "100731-9": "100731-9",
 
   /**
    * Cholesterol.in lipoprotein (little a) and Cholesterol.in LDL panel - Serum
    */
-  CholesterolinlipoproteinlittleaandCholesterolinLDLpanelSerum: "100732-7",
+  "100732-7": "100732-7",
 
   /**
    * Cholesterol in LDL [Mass/volume] in Serum by calculation --corrected for Cholesterol.in lipoprotein (little a)
    */
-  CholesterolinLDLMassvolumeinSerumbycalculationcorrectedforCholesterolinlipoproteinlittlea:
-    "100733-5",
+  "100733-5": "100733-5",
 
   /**
    * traMADol and Metabolites Panel - Urine by Confirmatory method
    */
-  traMADolandMetabolitesPanelUrinebyConfirmatorymethod: "100734-3",
+  "100734-3": "100734-3",
 
   /**
    * Mannose-6-phosphate isomerase and phosphomannomutase 1 panel - Leukocytes
    */
-  Mannose6phosphateisomeraseandphosphomannomutase1panelLeukocytes: "100735-0",
+  "100735-0": "100735-0",
 
   /**
    * Acylcarnitine Analysis Post Mortem in Specimen Document
    */
-  AcylcarnitineAnalysisPostMorteminSpecimenDocument: "100736-8",
+  "100736-8": "100736-8",
 
   /**
    * Alkaline phosphatase.macromolecular [Presence] in Serum or Plasma
    */
-  AlkalinephosphatasemacromolecularPresenceinSerumorPlasma: "100737-6",
+  "100737-6": "100737-6",
 
   /**
    * Alanine aminotransferase.macromolecular [Presence] in Serum or Plasma
    */
-  AlanineaminotransferasemacromolecularPresenceinSerumorPlasma: "100738-4",
+  "100738-4": "100738-4",
 
   /**
    * Aspartate aminotransferase.macromolecular [Presence] in Serum or Plasma
    */
-  AspartateaminotransferasemacromolecularPresenceinSerumorPlasma: "100739-2",
+  "100739-2": "100739-2",
 
   /**
    * S' wave duration in lead II
    */
-  SwavedurationinleadII: "10074-3",
+  "10074-3": "10074-3",
 
   /**
    * Amylase.macromolecular [Presence] in Serum or Plasma
    */
-  AmylasemacromolecularPresenceinSerumorPlasma: "100740-0",
+  "100740-0": "100740-0",
 
   /**
    * Gamma glutamyl transferase.macromolecular [Presence] in Serum or Plasma
    */
-  GammaglutamyltransferasemacromolecularPresenceinSerumorPlasma: "100741-8",
+  "100741-8": "100741-8",
 
   /**
    * Lactate dehydrogenase.macromolecular [Presence] in Serum or Plasma
    */
-  LactatedehydrogenasemacromolecularPresenceinSerumorPlasma: "100742-6",
+  "100742-6": "100742-6",
 
   /**
    * Lipase.macromolecular [Presence] in Serum or Plasma
    */
-  LipasemacromolecularPresenceinSerumorPlasma: "100743-4",
+  "100743-4": "100743-4",
 
   /**
    * Alpha-1-acid glycoprotein [Mass/volume] in Serum or Plasma by Electrophoresis
    */
-  Alpha1acidglycoproteinMassvolumeinSerumorPlasmabyElectrophoresis: "100744-2",
+  "100744-2": "100744-2",
 
   /**
    * Chloride [Moles/volume] in Mixed venous blood
    */
-  ChlorideMolesvolumeinMixedvenousblood: "100745-9",
+  "100745-9": "100745-9",
 
   /**
    * Glucose [Moles/volume] in Mixed venous blood
    */
-  GlucoseMolesvolumeinMixedvenousblood: "100746-7",
+  "100746-7": "100746-7",
 
   /**
    * Legionella serogroup panel - Specimen
    */
-  LegionellaserogrouppanelSpecimen: "100747-5",
+  "100747-5": "100747-5",
 
   /**
    * Legionella spp [Presence] in Specimen by NAA with probe detection
    */
-  LegionellasppPresenceinSpecimenbyNAAwithprobedetection: "100748-3",
+  "100748-3": "100748-3",
 
   /**
    * Legionella pneumophila serogroup 1 [Presence] in Specimen by NAA with probe detection
    */
-  Legionellapneumophilaserogroup1PresenceinSpecimenbyNAAwithprobedetection:
-    "100749-1",
+  "100749-1": "100749-1",
 
   /**
    * S' wave duration in lead III
    */
-  SwavedurationinleadIII: "10075-0",
+  "10075-0": "10075-0",
 
   /**
    * Legionella pneumophila non-serogroup 1 [Presence] in Specimen by NAA with probe detection
    */
-  Legionellapneumophilanonserogroup1PresenceinSpecimenbyNAAwithprobedetection:
-    "100750-9",
+  "100750-9": "100750-9",
 
   /**
    * Galactose-alpha-1,3-galactose (Alpha-Gal) panel - Serum or Plasma
    */
-  Galactosealpha13galactoseAlphaGalpanelSerumorPlasma: "100751-7",
+  "100751-7": "100751-7",
 
   /**
    * Exacerbating factors - Reported
    */
-  ExacerbatingfactorsReported: "100752-5",
+  "100752-5": "100752-5",
 
   /**
    * Alleviating factors - Reported
    */
-  AlleviatingfactorsReported: "100753-3",
+  "100753-3": "100753-3",
 
   /**
    * Platelet disorders multigene analysis in Blood or Tissue by Sequencing
    */
-  PlateletdisordersmultigeneanalysisinBloodorTissuebySequencing: "100754-1",
+  "100754-1": "100754-1",
 
   /**
    * Oligoclonal bands [#] in Serum or Plasma by Isoelectric focusing
    */
-  OligoclonalbandsinSerumorPlasmabyIsoelectricfocusing: "100755-8",
+  "100755-8": "100755-8",
 
   /**
    * Oligoclonal bands [Interpretation] in Cerebral spinal fluid by Isoelectric focusing
    */
-  OligoclonalbandsInterpretationinCerebralspinalfluidbyIsoelectricfocusing:
-    "100756-6",
+  "100756-6": "100756-6",
 
   /**
    * Protein fractions.oligoclonal bands panel - Serum and CSF by Isoelectric focusing
    */
-  ProteinfractionsoligoclonalbandspanelSerumandCSFbyIsoelectricfocusing:
-    "100757-4",
+  "100757-4": "100757-4",
 
   /**
    * Estimated lung age by based on clinical data
    */
-  Estimatedlungagebybasedonclinicaldata: "100758-2",
+  "100758-2": "100758-2",
 
   /**
    * Inspiratory reserve [Volume] Respiratory system by Spirometry
    */
-  InspiratoryreserveVolumeRespiratorysystembySpirometry: "100759-0",
+  "100759-0": "100759-0",
 
   /**
    * S' wave duration in lead V1
    */
-  SwavedurationinleadV1: "10076-8",
+  "10076-8": "10076-8",
 
   /**
    * XR Radius and Ulna - left Single view
    */
-  XRRadiusandUlnaleftSingleview: "100760-8",
+  "100760-8": "100760-8",
 
   /**
    * PALB2 gene targeted mutation analysis in Blood or Tissue by Molecular genetics method
    */
-  PALB2genetargetedmutationanalysisinBloodorTissuebyMoleculargeneticsmethod:
-    "100761-6",
+  "100761-6": "100761-6",
 
   /**
    * HBA2 gene.c.377T>C [Presence] in Blood by Molecular genetics method
    */
-  HBA2genec377TCPresenceinBloodbyMoleculargeneticsmethod: "100762-4",
+  "100762-4": "100762-4",
 
   /**
    * Mycobacterium sp comparative reaction interpretation Narrative
    */
-  MycobacteriumspcomparativereactioninterpretationNarrative: "100763-2",
+  "100763-2": "100763-2",
 
   /**
    * Mycobacterium bovis reaction wheal [Diameter] Qualitative --3 days post dose mammalian tuberculin intradermal
    */
-  MycobacteriumbovisreactionwhealDiameterQualitative3dayspostdosemammaliantuberculinintradermal:
-    "100764-0",
+  "100764-0": "100764-0",
 
   /**
    * Homocysteine and methylmalonate and methylcitrate panel - DBS
    */
-  HomocysteineandmethylmalonateandmethylcitratepanelDBS: "100765-7",
+  "100765-7": "100765-7",
 
   /**
    * Center for Epidemiologic Studies Depression Scale panel [CES-D]
    */
-  CenterforEpidemiologicStudiesDepressionScalepanelCESD: "100766-5",
+  "100766-5": "100766-5",
 
   /**
    * Bothered by things that are not usually bothersome
    */
-  Botheredbythingsthatarenotusuallybothersome: "100767-3",
+  "100767-3": "100767-3",
 
   /**
    * Poor appetite
    */
-  Poorappetite: "100768-1",
+  "100768-1": "100768-1",
 
   /**
    * Unhappy even with help from my family or friends
    */
-  Unhappyevenwithhelpfrommyfamilyorfriends: "100769-9",
+  "100769-9": "100769-9",
 
   /**
    * S' wave duration in lead V2
    */
-  SwavedurationinleadV2: "10077-6",
+  "10077-6": "10077-6",
 
   /**
    * Feeling just as good as others
    */
-  Feelingjustasgoodasothers: "100770-7",
+  "100770-7": "100770-7",
 
   /**
    * Trouble focusing
    */
-  Troublefocusing: "100771-5",
+  "100771-5": "100771-5",
 
   /**
    * Feeling depressed
    */
-  Feelingdepressed: "100772-3",
+  "100772-3": "100772-3",
 
   /**
    * Feeling everything is too much of an effort
    */
-  Feelingeverythingistoomuchofaneffort: "100773-1",
+  "100773-1": "100773-1",
 
   /**
    * Feeling hopeful about the future
    */
-  Feelinghopefulaboutthefuture: "100774-9",
+  "100774-9": "100774-9",
 
   /**
    * Feeling life had been a failure
    */
-  Feelinglifehadbeenafailure: "100775-6",
+  "100775-6": "100775-6",
 
   /**
    * Feeling fearful
    */
-  Feelingfearful: "100776-4",
+  "100776-4": "100776-4",
 
   /**
    * Restless sleep
    */
-  Restlesssleep: "100777-2",
+  "100777-2": "100777-2",
 
   /**
    * Feeling happy
    */
-  Feelinghappy: "100778-0",
+  "100778-0": "100778-0",
 
   /**
    * Quieter than usual
    */
-  Quieterthanusual: "100779-8",
+  "100779-8": "100779-8",
 
   /**
    * S' wave duration in lead V3
    */
-  SwavedurationinleadV3: "10078-4",
+  "10078-4": "10078-4",
 
   /**
    * Feeling lonely
    */
-  Feelinglonely: "100780-6",
+  "100780-6": "100780-6",
 
   /**
    * People were unfriendly
    */
-  Peoplewereunfriendly: "100781-4",
+  "100781-4": "100781-4",
 
   /**
    * Enjoying life
    */
-  Enjoyinglife: "100782-2",
+  "100782-2": "100782-2",
 
   /**
    * Crying spells
    */
-  Cryingspells: "100783-0",
+  "100783-0": "100783-0",
 
   /**
    * Feeling sad
    */
-  Feelingsad: "100784-8",
+  "100784-8": "100784-8",
 
   /**
    * Feeling people dislike me
    */
-  Feelingpeopledislikeme: "100785-5",
+  "100785-5": "100785-5",
 
   /**
    * Lack of energy
    */
-  Lackofenergy: "100786-3",
+  "100786-3": "100786-3",
 
   /**
    * Total Score CES-D
    */
-  TotalScoreCESD: "100787-1",
+  "100787-1": "100787-1",
 
   /**
    * Stemphylium botryosum IgG4 Ab [Mass/volume] in Serum
    */
-  StemphyliumbotryosumIgG4AbMassvolumeinSerum: "100788-9",
+  "100788-9": "100788-9",
 
   /**
    * Rhizopus nigricans IgG4 Ab [Mass/volume] in Serum
    */
-  RhizopusnigricansIgG4AbMassvolumeinSerum: "100789-7",
+  "100789-7": "100789-7",
 
   /**
    * S' wave duration in lead V4
    */
-  SwavedurationinleadV4: "10079-2",
+  "10079-2": "10079-2",
 
   /**
    * Lepidoglyphus destructor IgG Ab [Mass/volume] in Serum
    */
-  LepidoglyphusdestructorIgGAbMassvolumeinSerum: "100790-5",
+  "100790-5": "100790-5",
 
   /**
    * Hamster epithelium IgG Ab [Mass/volume] in Serum
    */
-  HamsterepitheliumIgGAbMassvolumeinSerum: "100791-3",
+  "100791-3": "100791-3",
 
   /**
    * Forsythia IgE Ab [Units/volume] in Serum
    */
-  ForsythiaIgEAbUnitsvolumeinSerum: "100792-1",
+  "100792-1": "100792-1",
 
   /**
    * Testosterone [Mass/volume] in Body fluid
    */
-  TestosteroneMassvolumeinBodyfluid: "100793-9",
+  "100793-9": "100793-9",
 
   /**
    * Follitropin [Units/volume] in Body fluid
    */
-  FollitropinUnitsvolumeinBodyfluid: "100794-7",
+  "100794-7": "100794-7",
 
   /**
    * S100 calcium binding protein B [Mass/volume] in Body fluid
    */
-  S100calciumbindingproteinBMassvolumeinBodyfluid: "100795-4",
+  "100795-4": "100795-4",
 
   /**
    * Thyroglobulin [Mass/volume] in Body fluid
    */
-  ThyroglobulinMassvolumeinBodyfluid: "100796-2",
+  "100796-2": "100796-2",
 
   /**
    * Testosterone Free [Mass/volume] in Serum --1st specimen post XXX challenge
    */
-  TestosteroneFreeMassvolumeinSerum1stspecimenpostXXXchallenge: "100797-0",
+  "100797-0": "100797-0",
 
   /**
    * Testosterone Free [Mass/volume] in Serum --2nd specimen post XXX challenge
    */
-  TestosteroneFreeMassvolumeinSerum2ndspecimenpostXXXchallenge: "100798-8",
+  "100798-8": "100798-8",
 
   /**
    * 21-Deoxycortisol [Mass/volume] in Serum --1st specimen post XXX challenge
    */
-  TwentyOneDeoxycortisolMassvolumeinSerum1stspecimenpostXXXchallenge:
-    "100799-6",
+  "100799-6": "100799-6",
 
   /**
    * Indirect antiglobulin test.polyspecific reagent [Presence] in Serum or Plasma
    */
-  IndirectantiglobulintestpolyspecificreagentPresenceinSerumorPlasma: "1008-2",
+  "1008-2": "1008-2",
 
   /**
    * S' wave duration in lead V5
    */
-  SwavedurationinleadV5: "10080-0",
+  "10080-0": "10080-0",
 
   /**
    * 21-Deoxycortisol [Mass/volume] in Serum --2nd specimen post XXX challenge
    */
-  TwentyOneDeoxycortisolMassvolumeinSerum2ndspecimenpostXXXchallenge:
-    "100800-2",
+  "100800-2": "100800-2",
 
   /**
    * 21-Deoxycortisol [Mass/volume] in Serum --3rd specimen post XXX challenge
    */
-  TwentyOneDeoxycortisolMassvolumeinSerum3rdspecimenpostXXXchallenge:
-    "100801-0",
+  "100801-0": "100801-0",
 
   /**
    * 21-Deoxycortisol [Mass/volume] in Serum --4th specimen post XXX challenge
    */
-  TwentyOneDeoxycortisolMassvolumeinSerum4thspecimenpostXXXchallenge:
-    "100802-8",
+  "100802-8": "100802-8",
 
   /**
    * 21-Deoxycortisol [Mass/volume] in Serum --5th specimen post XXX challenge
    */
-  TwentyOneDeoxycortisolMassvolumeinSerum5thspecimenpostXXXchallenge:
-    "100803-6",
+  "100803-6": "100803-6",
 
   /**
    * Vasopressin [Moles/volume] in Plasma --1st specimen post XXX challenge
    */
-  VasopressinMolesvolumeinPlasma1stspecimenpostXXXchallenge: "100804-4",
+  "100804-4": "100804-4",
 
   /**
    * Vasopressin [Moles/volume] in Plasma --2nd specimen post XXX challenge
    */
-  VasopressinMolesvolumeinPlasma2ndspecimenpostXXXchallenge: "100805-1",
+  "100805-1": "100805-1",
 
   /**
    * Vasopressin [Moles/volume] in Plasma --3rd specimen post XXX challenge
    */
-  VasopressinMolesvolumeinPlasma3rdspecimenpostXXXchallenge: "100806-9",
+  "100806-9": "100806-9",
 
   /**
    * Vasopressin [Moles/volume] in Plasma --4th specimen post XXX challenge
    */
-  VasopressinMolesvolumeinPlasma4thspecimenpostXXXchallenge: "100807-7",
+  "100807-7": "100807-7",
 
   /**
    * Vasopressin [Moles/volume] in Plasma --5th specimen post XXX challenge
    */
-  VasopressinMolesvolumeinPlasma5thspecimenpostXXXchallenge: "100808-5",
+  "100808-5": "100808-5",
 
   /**
    * Vasopressin [Moles/volume] in Plasma --6th specimen post XXX challenge
    */
-  VasopressinMolesvolumeinPlasma6thspecimenpostXXXchallenge: "100809-3",
+  "100809-3": "100809-3",
 
   /**
    * S' wave duration in lead V6
    */
-  SwavedurationinleadV6: "10081-8",
+  "10081-8": "10081-8",
 
   /**
    * Vasopressin [Moles/volume] in Plasma --7th specimen post XXX challenge
    */
-  VasopressinMolesvolumeinPlasma7thspecimenpostXXXchallenge: "100810-1",
+  "100810-1": "100810-1",
 
   /**
    * Vasopressin [Moles/volume] in Plasma --8th specimen post XXX challenge
    */
-  VasopressinMolesvolumeinPlasma8thspecimenpostXXXchallenge: "100811-9",
+  "100811-9": "100811-9",
 
   /**
    * Vasopressin [Moles/volume] in Plasma --9th specimen post XXX challenge
    */
-  VasopressinMolesvolumeinPlasma9thspecimenpostXXXchallenge: "100812-7",
+  "100812-7": "100812-7",
 
   /**
    * Vasopressin [Moles/volume] in Plasma --10th specimen post XXX challenge
    */
-  VasopressinMolesvolumeinPlasma10thspecimenpostXXXchallenge: "100813-5",
+  "100813-5": "100813-5",
 
   /**
    * Vasopressin [Moles/volume] in Plasma --11th specimen post XXX challenge
    */
-  VasopressinMolesvolumeinPlasma11thspecimenpostXXXchallenge: "100814-3",
+  "100814-3": "100814-3",
 
   /**
    * Vasopressin [Moles/volume] in Plasma --12th specimen post XXX challenge
    */
-  VasopressinMolesvolumeinPlasma12thspecimenpostXXXchallenge: "100815-0",
+  "100815-0": "100815-0",
 
   /**
    * Glucagon [Mass/volume] in Serum or Plasma --6th specimen post XXX challenge
    */
-  GlucagonMassvolumeinSerumorPlasma6thspecimenpostXXXchallenge: "100816-8",
+  "100816-8": "100816-8",
 
   /**
    * Glucagon [Mass/volume] in Serum or Plasma --7th specimen post XXX challenge
    */
-  GlucagonMassvolumeinSerumorPlasma7thspecimenpostXXXchallenge: "100817-6",
+  "100817-6": "100817-6",
 
   /**
    * Renin [Mass/volume] in Plasma --1st specimen post XXX challenge
    */
-  ReninMassvolumeinPlasma1stspecimenpostXXXchallenge: "100818-4",
+  "100818-4": "100818-4",
 
   /**
    * Renin [Mass/volume] in Plasma --2nd specimen post XXX challenge
    */
-  ReninMassvolumeinPlasma2ndspecimenpostXXXchallenge: "100819-2",
+  "100819-2": "100819-2",
 
   /**
    * ST initial amplitude 6 ms in lead AVF
    */
-  STinitialamplitude6msinleadAVF: "10082-6",
+  "10082-6": "10082-6",
 
   /**
    * Renin [Mass/volume] in Plasma --3rd specimen post XXX challenge
    */
-  ReninMassvolumeinPlasma3rdspecimenpostXXXchallenge: "100820-0",
+  "100820-0": "100820-0",
 
   /**
    * National POLST form: portable medical order panel
    */
-  NationalPOLSTformportablemedicalorderpanel: "100821-8",
+  "100821-8": "100821-8",
 
   /**
    * Cardiopulmonary resuscitation orders
    */
-  Cardiopulmonaryresuscitationorders: "100822-6",
+  "100822-6": "100822-6",
 
   /**
    * Initial portable medical treatment orders
    */
-  Initialportablemedicaltreatmentorders: "100823-4",
+  "100823-4": "100823-4",
 
   /**
    * Additional portable medical orders or instructions
    */
-  Additionalportablemedicalordersorinstructions: "100824-2",
+  "100824-2": "100824-2",
 
   /**
    * Medically assisted nutrition orders
    */
-  Medicallyassistednutritionorders: "100825-9",
+  "100825-9": "100825-9",
 
   /**
    * Portable medical order AndOr advance directive review
    */
-  PortablemedicalorderAndOradvancedirectivereview: "100826-7",
+  "100826-7": "100826-7",
 
   /**
    * Portable medical order discussion participants
    */
-  Portablemedicalorderdiscussionparticipants: "100827-5",
+  "100827-5": "100827-5",
 
   /**
    * Portable medical order administrative information
    */
-  Portablemedicalorderadministrativeinformation: "100828-3",
+  "100828-3": "100828-3",
 
   /**
    * Renin [Mass/volume] in Plasma --4th specimen post XXX challenge
    */
-  ReninMassvolumeinPlasma4thspecimenpostXXXchallenge: "100829-1",
+  "100829-1": "100829-1",
 
   /**
    * ST initial amplitude 6 ms in lead AVL
    */
-  STinitialamplitude6msinleadAVL: "10083-4",
+  "10083-4": "10083-4",
 
   /**
    * Alpha subunit free [Units/volume] in Serum or Plasma --1st specimen post XXX challenge
    */
-  AlphasubunitfreeUnitsvolumeinSerumorPlasma1stspecimenpostXXXchallenge:
-    "100830-9",
+  "100830-9": "100830-9",
 
   /**
    * Alpha subunit free [Units/volume] in Serum or Plasma --2nd specimen post XXX challenge
    */
-  AlphasubunitfreeUnitsvolumeinSerumorPlasma2ndspecimenpostXXXchallenge:
-    "100831-7",
+  "100831-7": "100831-7",
 
   /**
    * Alpha subunit free [Units/volume] in Serum or Plasma --3rd specimen post XXX challenge
    */
-  AlphasubunitfreeUnitsvolumeinSerumorPlasma3rdspecimenpostXXXchallenge:
-    "100832-5",
+  "100832-5": "100832-5",
 
   /**
    * Alpha subunit free [Units/volume] in Serum or Plasma --4th specimen post XXX challenge
    */
-  AlphasubunitfreeUnitsvolumeinSerumorPlasma4thspecimenpostXXXchallenge:
-    "100833-3",
+  "100833-3": "100833-3",
 
   /**
    * Alpha subunit free [Units/volume] in Serum or Plasma --5th specimen post XXX challenge
    */
-  AlphasubunitfreeUnitsvolumeinSerumorPlasma5thspecimenpostXXXchallenge:
-    "100834-1",
+  "100834-1": "100834-1",
 
   /**
    * Alpha subunit free [Units/volume] in Serum or Plasma --6th specimen post XXX challenge
    */
-  AlphasubunitfreeUnitsvolumeinSerumorPlasma6thspecimenpostXXXchallenge:
-    "100835-8",
+  "100835-8": "100835-8",
 
   /**
    * Alpha subunit free [Units/volume] in Serum or Plasma --7th specimen post XXX challenge
    */
-  AlphasubunitfreeUnitsvolumeinSerumorPlasma7thspecimenpostXXXchallenge:
-    "100836-6",
+  "100836-6": "100836-6",
 
   /**
    * Insulin-like growth factor-I [Mass/volume] in Serum or Plasma --9th specimen post XXX challenge
    */
-  InsulinlikegrowthfactorIMassvolumeinSerumorPlasma9thspecimenpostXXXchallenge:
-    "100837-4",
+  "100837-4": "100837-4",
 
   /**
    * Testosterone [Mass/volume] in Serum or Plasma --9th specimen post XXX challenge
    */
-  TestosteroneMassvolumeinSerumorPlasma9thspecimenpostXXXchallenge: "100838-2",
+  "100838-2": "100838-2",
 
   /**
    * Vitamin A/Retinol binding protein [Ratio] in Serum or Plasma
    */
-  VitaminARetinolbindingproteinRatioinSerumorPlasma: "100839-0",
+  "100839-0": "100839-0",
 
   /**
    * ST initial amplitude 6 ms in lead AVR
    */
-  STinitialamplitude6msinleadAVR: "10084-2",
+  "10084-2": "10084-2",
 
   /**
    * IgE [Units/volume] in Body fluid
    */
-  IgEUnitsvolumeinBodyfluid: "100840-8",
+  "100840-8": "100840-8",
 
   /**
    * Zinc finger protein of the cerebellum 4 Ab [Presence] in Cerebral spinal fluid by Line blot
    */
-  Zincfingerproteinofthecerebellum4AbPresenceinCerebralspinalfluidbyLineblot:
-    "100841-6",
+  "100841-6": "100841-6",
 
   /**
    * Nonalcoholic steatohepatitis score in Serum or Plasma Calculated by FAST
    */
-  NonalcoholicsteatohepatitisscoreinSerumorPlasmaCalculatedbyFAST: "100842-4",
+  "100842-4": "100842-4",
 
   /**
    * Liver fibrosis score in Serum or Plasma by Calculated.Agile3+
    */
-  LiverfibrosisscoreinSerumorPlasmabyCalculatedAgile3: "100843-2",
+  "100843-2": "100843-2",
 
   /**
    * Liver fibrosis score in Serum or Plasma by Calculated.Agile4
    */
-  LiverfibrosisscoreinSerumorPlasmabyCalculatedAgile4: "100844-0",
+  "100844-0": "100844-0",
 
   /**
    * Neurofascin155 IgG4 Ab [Presence] in Serum by Flow cytometry (FC)
    */
-  Neurofascin155IgG4AbPresenceinSerumbyFlowcytometryFC: "100845-7",
+  "100845-7": "100845-7",
 
   /**
    * Dengue virus 1+2+3+4 nsP1 IgG Ab [Presence] in Serum or Plasma by Immunoassay
    */
-  Denguevirus1234nsP1IgGAbPresenceinSerumorPlasmabyImmunoassay: "100846-5",
+  "100846-5": "100846-5",
 
   /**
    * Gas and ammonia panel - Arterial blood
    */
-  GasandammoniapanelArterialblood: "100847-3",
+  "100847-3": "100847-3",
 
   /**
    * Cell count and Differential panel - Amniotic fluid by Manual count
    */
-  CellcountandDifferentialpanelAmnioticfluidbyManualcount: "100848-1",
+  "100848-1": "100848-1",
 
   /**
    * Leukocytes [#/volume] in Amniotic fluid by Manual count
    */
-  LeukocytesvolumeinAmnioticfluidbyManualcount: "100849-9",
+  "100849-9": "100849-9",
 
   /**
    * ST initial amplitude 6 ms in lead I
    */
-  STinitialamplitude6msinleadI: "10085-9",
+  "10085-9": "10085-9",
 
   /**
    * Neutrophils [#/volume] in Amniotic fluid by Manual count
    */
-  NeutrophilsvolumeinAmnioticfluidbyManualcount: "100850-7",
+  "100850-7": "100850-7",
 
   /**
    * Other cells [#/volume] in Amniotic fluid by Manual count
    */
-  OthercellsvolumeinAmnioticfluidbyManualcount: "100851-5",
+  "100851-5": "100851-5",
 
   /**
    * NM Bones Views for metastasis W Sr-89 IV
    */
-  NMBonesViewsformetastasisWSr89IV: "100852-3",
+  "100852-3": "100852-3",
 
   /**
    * NM Pericardial space Pericardial effusion
    */
-  NMPericardialspacePericardialeffusion: "100853-1",
+  "100853-1": "100853-1",
 
   /**
    * Lymphocytes/100 cells in Blood mononuclear cells by Immunoassay
    */
-  Lymphocytes100cellsinBloodmononuclearcellsbyImmunoassay: "100854-9",
+  "100854-9": "100854-9",
 
   /**
    * CD3 cells/100 cells in Blood mononuclear cells
    */
-  CD3cells100cellsinBloodmononuclearcells: "100855-6",
+  "100855-6": "100855-6",
 
   /**
    * CD3+CD4+ (T4 helper) cells/100 cells in Blood mononuclear cells
    */
-  CD3CD4T4helpercells100cellsinBloodmononuclearcells: "100856-4",
+  "100856-4": "100856-4",
 
   /**
    * CD3+CD8+ (T8 suppressor) cells/100 cells in Blood mononuclear cells
    */
-  CD3CD8T8suppressorcells100cellsinBloodmononuclearcells: "100857-2",
+  "100857-2": "100857-2",
 
   /**
    * Cells.CD4+CD154+/CD4 cells in Blood --after stimulation with SARS-CoV-2 Spike peptide
    */
-  CellsCD4CD154CD4cellsinBloodafterstimulationwithSARSCoV2Spikepeptide:
-    "100858-0",
+  "100858-0": "100858-0",
 
   /**
    * Cells.CD4.Interferon gamma-expressing/CD4 cells in Blood --after stimulation with SARS-CoV-2 Spike peptide
    */
-  CellsCD4InterferongammaexpressingCD4cellsinBloodafterstimulationwithSARSCoV2Spikepeptide:
-    "100859-8",
+  "100859-8": "100859-8",
 
   /**
    * ST initial amplitude 6 ms in lead II
    */
-  STinitialamplitude6msinleadII: "10086-7",
+  "10086-7": "10086-7",
 
   /**
    * Cells.CD4.Tumor necrosis factor alfa-expressing/CD4 cells in Blood --after stimulation with SARS-CoV-2 Spike peptide
    */
-  CellsCD4TumornecrosisfactoralfaexpressingCD4cellsinBloodafterstimulationwithSARSCoV2Spikepeptide:
-    "100860-6",
+  "100860-6": "100860-6",
 
   /**
    * Cells.CD4+CD154+/CD4 cells in Blood --after stimulation with SARS-CoV-2 Nucleocapsid peptide
    */
-  CellsCD4CD154CD4cellsinBloodafterstimulationwithSARSCoV2Nucleocapsidpeptide:
-    "100861-4",
+  "100861-4": "100861-4",
 
   /**
    * Cells.CD4.Interferon gamma-expressing/CD4 cells in Blood --after stimulation with SARS-CoV-2 Nucleocapsid peptide
    */
-  CellsCD4InterferongammaexpressingCD4cellsinBloodafterstimulationwithSARSCoV2Nucleocapsidpeptide:
-    "100862-2",
+  "100862-2": "100862-2",
 
   /**
    * Cells.CD4.Tumor necrosis factor alfa-expressing/CD4 cells in Blood --after stimulation with SARS-CoV-2 Nucleocapsid peptide
    */
-  CellsCD4TumornecrosisfactoralfaexpressingCD4cellsinBloodafterstimulationwithSARSCoV2Nucleocapsidpeptide:
-    "100863-0",
+  "100863-0": "100863-0",
 
   /**
    * Giardia lamblia bg gene [Genotype] in Specimen by Molecular genetics method
    */
-  GiardialambliabggeneGenotypeinSpecimenbyMoleculargeneticsmethod: "100864-8",
+  "100864-8": "100864-8",
 
   /**
    * Avian schistosomes DNA [Presence] in Specimen by NAA with probe detection
    */
-  AvianschistosomesDNAPresenceinSpecimenbyNAAwithprobedetection: "100865-5",
+  "100865-5": "100865-5",
 
   /**
    * Febrile antibody profile in Serum
    */
-  FebrileantibodyprofileinSerum: "100866-3",
+  "100866-3": "100866-3",
 
   /**
    * Campylobacter jejuni+coli+lari+upsaliensis Ag [Presence] in Stool by Rapid immunoassay
    */
-  CampylobacterjejunicolilariupsaliensisAgPresenceinStoolbyRapidimmunoassay:
-    "100867-1",
+  "100867-1": "100867-1",
 
   /**
    * Cryptosporidium sp 18S-LC2 rRNA [Genotype] in Specimen by Molecular genetics method
    */
-  Cryptosporidiumsp18SLC2rRNAGenotypeinSpecimenbyMoleculargeneticsmethod:
-    "100868-9",
+  "100868-9": "100868-9",
 
   /**
    * Cryptosporidium gp60 gene [Type] in Specimen by Molecular genetics method
    */
-  Cryptosporidiumgp60geneTypeinSpecimenbyMoleculargeneticsmethod: "100869-7",
+  "100869-7": "100869-7",
 
   /**
    * ST initial amplitude 6 ms in lead III
    */
-  STinitialamplitude6msinleadIII: "10087-5",
+  "10087-5": "10087-5",
 
   /**
    * Cryptosporidium 18S rRNA [Genotype] in Specimen by Molecular genetics method
    */
-  Cryptosporidium18SrRNAGenotypeinSpecimenbyMoleculargeneticsmethod: "100870-5",
+  "100870-5": "100870-5",
 
   /**
    * Giardia lamblia gdh gene [Genotype] in Specimen by Molecular genetics method
    */
-  GiardialambliagdhgeneGenotypeinSpecimenbyMoleculargeneticsmethod: "100871-3",
+  "100871-3": "100871-3",
 
   /**
    * Bacteria producing polysaccharide from sucrose [Presence] in Isolate
    */
-  BacteriaproducingpolysaccharidefromsucrosePresenceinIsolate: "100872-1",
+  "100872-1": "100872-1",
 
   /**
    * Giardia lamblia tpi gene [Genotype] in Specimen by Molecular genetics method
    */
-  GiardialambliatpigeneGenotypeinSpecimenbyMoleculargeneticsmethod: "100873-9",
+  "100873-9": "100873-9",
 
   /**
    * Basidiobolus sp [Presence] in Specimen
    */
-  BasidiobolusspPresenceinSpecimen: "100874-7",
+  "100874-7": "100874-7",
 
   /**
    * Fetal Heart Document limited US
    */
-  FetalHeartDocumentlimitedUS: "100875-4",
+  "100875-4": "100875-4",
 
   /**
    * Fetal Heart Document US
    */
-  FetalHeartDocumentUS: "100876-2",
+  "100876-2": "100876-2",
 
   /**
    * US Heart Transesophageal during surgery
    */
-  USHeartTransesophagealduringsurgery: "100877-0",
+  "100877-0": "100877-0",
 
   /**
    * Endoscopic ultrasound study Upper GI tract Document
    */
-  EndoscopicultrasoundstudyUpperGItractDocument: "100878-8",
+  "100878-8": "100878-8",
 
   /**
    * US Guidance for cryoablation of Breast - right
    */
-  USGuidanceforcryoablationofBreastright: "100879-6",
+  "100879-6": "100879-6",
 
   /**
    * ST initial amplitude 6 ms in lead V1
    */
-  STinitialamplitude6msinleadV1: "10088-3",
+  "10088-3": "10088-3",
 
   /**
    * US Guidance for cryoablation of Breast - left
    */
-  USGuidanceforcryoablationofBreastleft: "100880-4",
+  "100880-4": "100880-4",
 
   /**
    * MR Guidance for cryoablation of Bone
    */
-  MRGuidanceforcryoablationofBone: "100881-2",
+  "100881-2": "100881-2",
 
   /**
    * MR Peritoneum W contrast percutaneous intraperitoneal
    */
-  MRPeritoneumWcontrastpercutaneousintraperitoneal: "100882-0",
+  "100882-0": "100882-0",
 
   /**
    * MR Guidance for biopsy of Kidney - left
    */
-  MRGuidanceforbiopsyofKidneyleft: "100883-8",
+  "100883-8": "100883-8",
 
   /**
    * MR Guidance for biopsy of Kidney - right
    */
-  MRGuidanceforbiopsyofKidneyright: "100884-6",
+  "100884-6": "100884-6",
 
   /**
    * Parapoxvirus DNA [Presence] in Specimen by NAA with probe detection
    */
-  ParapoxvirusDNAPresenceinSpecimenbyNAAwithprobedetection: "100885-3",
+  "100885-3": "100885-3",
 
   /**
    * Orf virus DNA [Presence] in Specimen by NAA with probe detection
    */
-  OrfvirusDNAPresenceinSpecimenbyNAAwithprobedetection: "100886-1",
+  "100886-1": "100886-1",
 
   /**
    * Pseudocowpox virus DNA [Presence] in Specimen by NAA with probe detection
    */
-  PseudocowpoxvirusDNAPresenceinSpecimenbyNAAwithprobedetection: "100887-9",
+  "100887-9": "100887-9",
 
   /**
    * West African monkeypox virus DNA [Presence] in Specimen by NAA with probe detection
    */
-  WestAfricanmonkeypoxvirusDNAPresenceinSpecimenbyNAAwithprobedetection:
-    "100888-7",
+  "100888-7": "100888-7",
 
   /**
    * Congo Basin monkeypox virus DNA [Presence] in Specimen by NAA with probe detection
    */
-  CongoBasinmonkeypoxvirusDNAPresenceinSpecimenbyNAAwithprobedetection:
-    "100889-5",
+  "100889-5": "100889-5",
 
   /**
    * ST initial amplitude 6 ms in lead V2
    */
-  STinitialamplitude6msinleadV2: "10089-1",
+  "10089-1": "10089-1",
 
   /**
    * Poxvirus DNA panel
    */
-  PoxvirusDNApanel: "100890-3",
+  "100890-3": "100890-3",
 
   /**
    * Orthopoxvirus IgG Ab [Presence] in Serum or Plasma by Immunoassay
    */
-  OrthopoxvirusIgGAbPresenceinSerumorPlasmabyImmunoassay: "100891-1",
+  "100891-1": "100891-1",
 
   /**
    * Orthopoxvirus IgM Ab [Presence] in Serum or Plasma by Immunoassay
    */
-  OrthopoxvirusIgMAbPresenceinSerumorPlasmabyImmunoassay: "100892-9",
+  "100892-9": "100892-9",
 
   /**
    * Orthopoxvirus IgG and IgM Ab panel - Serum or Plasma
    */
-  OrthopoxvirusIgGandIgMAbpanelSerumorPlasma: "100893-7",
+  "100893-7": "100893-7",
 
   /**
    * Recommended screening frequency Narrative
    */
-  RecommendedscreeningfrequencyNarrative: "100894-5",
+  "100894-5": "100894-5",
 
   /**
    * Rickettsia conorii IgG and IgM [Interpretation] in Serum
    */
-  RickettsiaconoriiIgGandIgMInterpretationinSerum: "100895-2",
+  "100895-2": "100895-2",
 
   /**
    * Vasopressin [Moles/volume] in Plasma --13th specimen post XXX challenge
    */
-  VasopressinMolesvolumeinPlasma13thspecimenpostXXXchallenge: "100896-0",
+  "100896-0": "100896-0",
 
   /**
    * Staphylococcus aureus [Presence] in Specimen by Organism specific culture
    */
-  StaphylococcusaureusPresenceinSpecimenbyOrganismspecificculture: "100897-8",
+  "100897-8": "100897-8",
 
   /**
    * Lipid panel - Serum or Plasma
    */
-  LipidpanelSerumorPlasma: "100898-6",
+  "100898-6": "100898-6",
 
   /**
    * Enterobacteriaceae.extended spectrum beta lactamase resistance phenotype [Identifier] in Specimen by Organism specific culture
    */
-  EnterobacteriaceaeextendedspectrumbetalactamaseresistancephenotypeIdentifierinSpecimenbyOrganismspecificculture:
-    "100899-4",
+  "100899-4": "100899-4",
 
   /**
    * ActAccountCode
    */
-  ActAccountCode: "_ActAccountCode",
+  _ActAccountCode: "_ActAccountCode",
 
   /**
    * account receivable
    */
-  accountreceivable: "ACCTRECEIVABLE",
+  ACCTRECEIVABLE: "ACCTRECEIVABLE",
 
   /**
    * Cash
    */
-  Cash: "CASH",
+  CASH: "CASH",
 
   /**
    * credit card
    */
-  creditcard: "CC",
+  CC: "CC",
 
   /**
    * American Express
    */
-  AmericanExpress: "AE",
+  AE: "AE",
 
   /**
    * Diner's Club
    */
-  DinersClub: "DN",
+  DN: "DN",
 
   /**
    * Discover Card
    */
-  DiscoverCard: "DV",
+  DV: "DV",
 
   /**
    * Master Card
    */
-  MasterCard: "MC",
+  MC: "MC",
 
   /**
    * Visa
    */
-  Visa: "V",
+  V: "V",
 
   /**
    * patient billing account
    */
-  patientbillingaccount: "PBILLACCT",
+  PBILLACCT: "PBILLACCT",
 
   /**
    * CreditCard
    */
-  CreditCard: "_CreditCard",
+  _CreditCard: "_CreditCard",
 
   /**
    * ActAdjudicationCode
    */
-  ActAdjudicationCode: "_ActAdjudicationCode",
+  _ActAdjudicationCode: "_ActAdjudicationCode",
 
   /**
    * ActAdjudicationGroupCode
    */
-  ActAdjudicationGroupCode: "_ActAdjudicationGroupCode",
+  _ActAdjudicationGroupCode: "_ActAdjudicationGroupCode",
 
   /**
    * contract
    */
-  contract: "CONT",
+  CONT: "CONT",
 
   /**
    * day
    */
-  day: "DAY",
+  DAY: "DAY",
 
   /**
    * location
    */
-  location: "LOC",
+  LOC: "LOC",
 
   /**
    * month
    */
-  month: "MONTH",
+  MONTH: "MONTH",
 
   /**
    * period
    */
-  period: "PERIOD",
+  PERIOD: "PERIOD",
 
   /**
    * provider
    */
-  provider: "PROV",
+  PROV: "PROV",
 
   /**
    * week
    */
-  week: "WEEK",
+  WEEK: "WEEK",
 
   /**
    * year
    */
-  year: "YEAR",
+  YEAR: "YEAR",
 
   /**
    * adjudicated with adjustments
    */
-  adjudicatedwithadjustments: "AA",
+  AA: "AA",
 
   /**
    * adjudicated with adjustments and no financial impact
    */
-  adjudicatedwithadjustmentsandnofinancialimpact: "ANF",
+  ANF: "ANF",
 
   /**
    * adjudicated as refused
    */
-  adjudicatedasrefused: "AR",
+  AR: "AR",
 
   /**
    * adjudicated as submitted
    */
-  adjudicatedassubmitted: "AS",
+  AS: "AS",
 
   /**
    * ActAdjudicationResultActionCode
    */
-  ActAdjudicationResultActionCode: "_ActAdjudicationResultActionCode",
+  _ActAdjudicationResultActionCode: "_ActAdjudicationResultActionCode",
 
   /**
    * Display
    */
-  Display: "DISPLAY",
+  DISPLAY: "DISPLAY",
 
   /**
    * Print on Form
    */
-  PrintonForm: "FORM",
+  FORM: "FORM",
 
   /**
    * ActBillableModifierCode
    */
-  ActBillableModifierCode: "_ActBillableModifierCode",
+  _ActBillableModifierCode: "_ActBillableModifierCode",
 
   /**
    * CPT modifier codes
    */
-  CPTmodifiercodes: "CPTM",
+  CPTM: "CPTM",
 
   /**
    * HCPCS Level II and Carrier-assigned
    */
-  HCPCSLevelIIandCarrierassigned: "HCPCSA",
+  HCPCSA: "HCPCSA",
 
   /**
    * ActBillingArrangementCode
    */
-  ActBillingArrangementCode: "_ActBillingArrangementCode",
+  _ActBillingArrangementCode: "_ActBillingArrangementCode",
 
   /**
    * block funding
    */
-  blockfunding: "BLK",
+  BLK: "BLK",
 
   /**
    * capitation funding
    */
-  capitationfunding: "CAP",
+  CAP: "CAP",
 
   /**
    * contract funding
    */
-  contractfunding: "CONTF",
+  CONTF: "CONTF",
 
   /**
    * financial
    */
-  financial: "FINBILL",
+  FINBILL: "FINBILL",
 
   /**
    * roster funding
    */
-  rosterfunding: "ROST",
+  ROST: "ROST",
 
   /**
    * sessional funding
    */
-  sessionalfunding: "SESS",
+  SESS: "SESS",
 
   /**
    * fee for service
    */
-  feeforservice: "FFS",
+  FFS: "FFS",
 
   /**
    * first fill, part fill, partial strength
    */
-  firstfillpartfillpartialstrength: "FFPS",
+  FFPS: "FFPS",
 
   /**
    * first fill complete, partial strength
    */
-  firstfillcompletepartialstrength: "FFCS",
+  FFCS: "FFCS",
 
   /**
    * trial fill partial strength
    */
-  trialfillpartialstrength: "TFS",
+  TFS: "TFS",
 
   /**
    * ActBoundedROICode
    */
-  ActBoundedROICode: "_ActBoundedROICode",
+  _ActBoundedROICode: "_ActBoundedROICode",
 
   /**
    * fully specified ROI
    */
-  fullyspecifiedROI: "ROIFS",
+  ROIFS: "ROIFS",
 
   /**
    * partially specified ROI
    */
-  partiallyspecifiedROI: "ROIPS",
+  ROIPS: "ROIPS",
 
   /**
    * act care provision
    */
-  actcareprovision: "_ActCareProvisionCode",
+  _ActCareProvisionCode: "_ActCareProvisionCode",
 
   /**
    * act credentialed care
    */
-  actcredentialedcare: "_ActCredentialedCareCode",
+  _ActCredentialedCareCode: "_ActCredentialedCareCode",
 
   /**
    * act credentialed care provision peron
    */
-  actcredentialedcareprovisionperon: "_ActCredentialedCareProvisionPersonCode",
+  _ActCredentialedCareProvisionPersonCode:
+    "_ActCredentialedCareProvisionPersonCode",
 
   /**
    * certified anatomic pathology and clinical pathology care
    */
-  certifiedanatomicpathologyandclinicalpathologycare: "CACC",
+  CACC: "CACC",
 
   /**
    * certified allergy and immunology care
    */
-  certifiedallergyandimmunologycare: "CAIC",
+  CAIC: "CAIC",
 
   /**
    * certified aerospace medicine care
    */
-  certifiedaerospacemedicinecare: "CAMC",
+  CAMC: "CAMC",
 
   /**
    * certified anesthesiology care
    */
-  certifiedanesthesiologycare: "CANC",
+  CANC: "CANC",
 
   /**
    * certified anatomic pathology care
    */
-  certifiedanatomicpathologycare: "CAPC",
+  CAPC: "CAPC",
 
   /**
    * certified clinical biochemical genetics care
    */
-  certifiedclinicalbiochemicalgeneticscare: "CBGC",
+  CBGC: "CBGC",
 
   /**
    * certified clinical cytogenetics care
    */
-  certifiedclinicalcytogeneticscare: "CCCC",
+  CCCC: "CCCC",
 
   /**
    * certified clinical genetics (M.D.) care
    */
-  certifiedclinicalgeneticsMDcare: "CCGC",
+  CCGC: "CCGC",
 
   /**
    * certified clinical pathology care
    */
-  certifiedclinicalpathologycare: "CCPC",
+  CCPC: "CCPC",
 
   /**
    * certified colon and rectal surgery care
    */
-  certifiedcolonandrectalsurgerycare: "CCSC",
+  CCSC: "CCSC",
 
   /**
    * certified dermatology care
    */
-  certifieddermatologycare: "CDEC",
+  CDEC: "CDEC",
 
   /**
    * certified diagnostic radiology care
    */
-  certifieddiagnosticradiologycare: "CDRC",
+  CDRC: "CDRC",
 
   /**
    * certified emergency medicine care
    */
-  certifiedemergencymedicinecare: "CEMC",
+  CEMC: "CEMC",
 
   /**
    * certified family practice care
    */
-  certifiedfamilypracticecare: "CFPC",
+  CFPC: "CFPC",
 
   /**
    * certified internal medicine care
    */
-  certifiedinternalmedicinecare: "CIMC",
+  CIMC: "CIMC",
 
   /**
    * certified clinical molecular genetics care
    */
-  certifiedclinicalmoleculargeneticscare: "CMGC",
+  CMGC: "CMGC",
 
   /**
    * certified neurology care
    */
-  certifiedneurologycare: "CNEC",
+  CNEC: "CNEC",
 
   /**
    * certified nuclear medicine care
    */
-  certifiednuclearmedicinecare: "CNMC",
+  CNMC: "CNMC",
 
   /**
    * certified neurology with special qualifications in child neurology care
    */
-  certifiedneurologywithspecialqualificationsinchildneurologycare: "CNQC",
+  CNQC: "CNQC",
 
   /**
    * certified neurological surgery care
    */
-  certifiedneurologicalsurgerycare: "CNSC",
+  CNSC: "CNSC",
 
   /**
    * certified obstetrics and gynecology care
    */
-  certifiedobstetricsandgynecologycare: "COGC",
+  COGC: "COGC",
 
   /**
    * certified occupational medicine care
    */
-  certifiedoccupationalmedicinecare: "COMC",
+  COMC: "COMC",
 
   /**
    * certified ophthalmology care
    */
-  certifiedophthalmologycare: "COPC",
+  COPC: "COPC",
 
   /**
    * certified orthopaedic surgery care
    */
-  certifiedorthopaedicsurgerycare: "COSC",
+  COSC: "COSC",
 
   /**
    * certified otolaryngology care
    */
-  certifiedotolaryngologycare: "COTC",
+  COTC: "COTC",
 
   /**
    * certified pediatrics care
    */
-  certifiedpediatricscare: "CPEC",
+  CPEC: "CPEC",
 
   /**
    * certified Ph.D. medical genetics care
    */
-  certifiedPhDmedicalgeneticscare: "CPGC",
+  CPGC: "CPGC",
 
   /**
    * certified public health and general preventive medicine care
    */
-  certifiedpublichealthandgeneralpreventivemedicinecare: "CPHC",
+  CPHC: "CPHC",
 
   /**
    * certified physical medicine and rehabilitation care
    */
-  certifiedphysicalmedicineandrehabilitationcare: "CPRC",
+  CPRC: "CPRC",
 
   /**
    * certified plastic surgery care
    */
-  certifiedplasticsurgerycare: "CPSC",
+  CPSC: "CPSC",
 
   /**
    * certified psychiatry care
    */
-  certifiedpsychiatrycare: "CPYC",
+  CPYC: "CPYC",
 
   /**
    * certified radiation oncology care
    */
-  certifiedradiationoncologycare: "CROC",
+  CROC: "CROC",
 
   /**
    * certified radiological physics care
    */
-  certifiedradiologicalphysicscare: "CRPC",
+  CRPC: "CRPC",
 
   /**
    * certified surgery care
    */
-  certifiedsurgerycare: "CSUC",
+  CSUC: "CSUC",
 
   /**
    * certified thoracic surgery care
    */
-  certifiedthoracicsurgerycare: "CTSC",
+  CTSC: "CTSC",
 
   /**
    * certified urology care
    */
-  certifiedurologycare: "CURC",
+  CURC: "CURC",
 
   /**
    * certified vascular surgery care
    */
-  certifiedvascularsurgerycare: "CVSC",
+  CVSC: "CVSC",
 
   /**
    * licensed general physician care
    */
-  licensedgeneralphysiciancare: "LGPC",
+  LGPC: "LGPC",
 
   /**
    * act credentialed care provision program
    */
-  actcredentialedcareprovisionprogram:
+  _ActCredentialedCareProvisionProgramCode:
     "_ActCredentialedCareProvisionProgramCode",
 
   /**
    * accredited assisted living care
    */
-  accreditedassistedlivingcare: "AALC",
+  AALC: "AALC",
 
   /**
    * accredited ambulatory care
    */
-  accreditedambulatorycare: "AAMC",
+  AAMC: "AAMC",
 
   /**
    * accredited behavioral health care
    */
-  accreditedbehavioralhealthcare: "ABHC",
+  ABHC: "ABHC",
 
   /**
    * accredited critical access hospital care
    */
-  accreditedcriticalaccesshospitalcare: "ACAC",
+  ACAC: "ACAC",
 
   /**
    * accredited hospital care
    */
-  accreditedhospitalcare: "ACHC",
+  ACHC: "ACHC",
 
   /**
    * accredited home care
    */
-  accreditedhomecare: "AHOC",
+  AHOC: "AHOC",
 
   /**
    * accredited long term care
    */
-  accreditedlongtermcare: "ALTC",
+  ALTC: "ALTC",
 
   /**
    * accredited office-based surgery care
    */
-  accreditedofficebasedsurgerycare: "AOSC",
+  AOSC: "AOSC",
 
   /**
    * certified acute coronary syndrome care
    */
-  certifiedacutecoronarysyndromecare: "CACS",
+  CACS: "CACS",
 
   /**
    * certified acute myocardial infarction care
    */
-  certifiedacutemyocardialinfarctioncare: "CAMI",
+  CAMI: "CAMI",
 
   /**
    * certified asthma care
    */
-  certifiedasthmacare: "CAST",
+  CAST: "CAST",
 
   /**
    * certified bariatric surgery care
    */
-  certifiedbariatricsurgerycare: "CBAR",
+  CBAR: "CBAR",
 
   /**
    * certified coronary artery disease care
    */
-  certifiedcoronaryarterydiseasecare: "CCAD",
+  CCAD: "CCAD",
 
   /**
    * certified cardiac care
    */
-  certifiedcardiaccare: "CCAR",
+  CCAR: "CCAR",
 
   /**
    * certified depression care
    */
-  certifieddepressioncare: "CDEP",
+  CDEP: "CDEP",
 
   /**
    * certified digestive/gastrointestinal disorders care
    */
-  certifieddigestivegastrointestinaldisorderscare: "CDGD",
+  CDGD: "CDGD",
 
   /**
    * certified diabetes care
    */
-  certifieddiabetescare: "CDIA",
+  CDIA: "CDIA",
 
   /**
    * certified epilepsy care
    */
-  certifiedepilepsycare: "CEPI",
+  CEPI: "CEPI",
 
   /**
    * certified frail elderly care
    */
-  certifiedfrailelderlycare: "CFEL",
+  CFEL: "CFEL",
 
   /**
    * certified heart failure care
    */
-  certifiedheartfailurecare: "CHFC",
+  CHFC: "CHFC",
 
   /**
    * certified high risk obstetrics care
    */
-  certifiedhighriskobstetricscare: "CHRO",
+  CHRO: "CHRO",
 
   /**
    * certified hyperlipidemia care
    */
-  certifiedhyperlipidemiacare: "CHYP",
+  CHYP: "CHYP",
 
   /**
    * certified migraine headache care
    */
-  certifiedmigraineheadachecare: "CMIH",
+  CMIH: "CMIH",
 
   /**
    * certified multiple sclerosis care
    */
-  certifiedmultiplesclerosiscare: "CMSC",
+  CMSC: "CMSC",
 
   /**
    * certified orthopedic joint replacement care
    */
-  certifiedorthopedicjointreplacementcare: "COJR",
+  COJR: "COJR",
 
   /**
    * certified oncology care
    */
-  certifiedoncologycare: "CONC",
+  CONC: "CONC",
 
   /**
    * certified chronic obstructive pulmonary disease care
    */
-  certifiedchronicobstructivepulmonarydiseasecare: "COPD",
+  COPD: "COPD",
 
   /**
    * certified organ transplant care
    */
-  certifiedorgantransplantcare: "CORT",
+  CORT: "CORT",
 
   /**
    * certified parkinsons disease care
    */
-  certifiedparkinsonsdiseasecare: "CPAD",
+  CPAD: "CPAD",
 
   /**
    * certified pneumonia disease care
    */
-  certifiedpneumoniadiseasecare: "CPND",
+  CPND: "CPND",
 
   /**
    * certified primary stroke center care
    */
-  certifiedprimarystrokecentercare: "CPST",
+  CPST: "CPST",
 
   /**
    * certified stroke disease management care
    */
-  certifiedstrokediseasemanagementcare: "CSDM",
+  CSDM: "CSDM",
 
   /**
    * certified sickle cell care
    */
-  certifiedsicklecellcare: "CSIC",
+  CSIC: "CSIC",
 
   /**
    * certified sleep disorders care
    */
-  certifiedsleepdisorderscare: "CSLD",
+  CSLD: "CSLD",
 
   /**
    * certified spine treatment care
    */
-  certifiedspinetreatmentcare: "CSPT",
+  CSPT: "CSPT",
 
   /**
    * certified trauma/burn center care
    */
-  certifiedtraumaburncentercare: "CTBU",
+  CTBU: "CTBU",
 
   /**
    * certified vascular diseases care
    */
-  certifiedvasculardiseasescare: "CVDC",
+  CVDC: "CVDC",
 
   /**
    * certified wound management care
    */
-  certifiedwoundmanagementcare: "CWMA",
+  CWMA: "CWMA",
 
   /**
    * certified women's health care
    */
-  certifiedwomenshealthcare: "CWOH",
+  CWOH: "CWOH",
 
   /**
    * ActEncounterCode
    */
-  ActEncounterCode: "_ActEncounterCode",
+  _ActEncounterCode: "_ActEncounterCode",
 
   /**
    * ActMedicalServiceCode
    */
-  ActMedicalServiceCode: "_ActMedicalServiceCode",
+  _ActMedicalServiceCode: "_ActMedicalServiceCode",
 
   /**
    * Alternative Level of Care
    */
-  AlternativeLevelofCare: "ALC",
+  ALC: "ALC",
 
   /**
    * Cardiology
    */
-  Cardiology: "CARD",
+  CARD: "CARD",
 
   /**
    * Chronic
    */
-  Chronic: "CHR",
+  CHR: "CHR",
 
   /**
    * Dental
    */
-  Dental: "DNTL",
+  DNTL: "DNTL",
 
   /**
    * Drug Rehab
    */
-  DrugRehab: "DRGRHB",
+  DRGRHB: "DRGRHB",
 
   /**
    * General
    */
-  General: "GENRL",
+  GENRL: "GENRL",
 
   /**
    * Medical
    */
-  Medical: "MED",
+  MED: "MED",
 
   /**
    * Obstetrics
    */
-  Obstetrics: "OBS",
+  OBS: "OBS",
 
   /**
    * Oncology
    */
-  Oncology: "ONC",
+  ONC: "ONC",
 
   /**
    * Palliative
    */
-  Palliative: "PALL",
+  PALL: "PALL",
 
   /**
    * Pediatrics
    */
-  Pediatrics: "PED",
+  PED: "PED",
 
   /**
    * Pharmaceutical
    */
-  Pharmaceutical: "PHAR",
+  PHAR: "PHAR",
 
   /**
    * Physical Rehab
    */
-  PhysicalRehab: "PHYRHB",
+  PHYRHB: "PHYRHB",
 
   /**
    * Psychiatric
    */
-  Psychiatric: "PSYCH",
+  PSYCH: "PSYCH",
 
   /**
    * Surgical
    */
-  Surgical: "SURG",
+  SURG: "SURG",
 
   /**
    * ActClaimAttachmentCategoryCode
    */
-  ActClaimAttachmentCategoryCode: "_ActClaimAttachmentCategoryCode",
+  _ActClaimAttachmentCategoryCode: "_ActClaimAttachmentCategoryCode",
 
   /**
    * auto attachment
    */
-  autoattachment: "AUTOATTCH",
+  AUTOATTCH: "AUTOATTCH",
 
   /**
    * document
    */
-  document: "DOCUMENT",
+  DOCUMENT: "DOCUMENT",
 
   /**
    * health record
    */
-  healthrecord: "HEALTHREC",
+  HEALTHREC: "HEALTHREC",
 
   /**
    * image attachment
    */
-  imageattachment: "IMG",
+  IMG: "IMG",
 
   /**
    * lab results
    */
-  labresults: "LABRESULTS",
+  LABRESULTS: "LABRESULTS",
 
   /**
    * model
    */
-  model: "MODEL",
+  MODEL: "MODEL",
 
   /**
    * work injury report attachment
    */
-  workinjuryreportattachment: "WIATTCH",
+  WIATTCH: "WIATTCH",
 
   /**
    * x-ray
    */
-  xray: "XRAY",
+  XRAY: "XRAY",
 
   /**
    * ActConsentType
    */
-  ActConsentType: "_ActConsentType",
+  _ActConsentType: "_ActConsentType",
 
   /**
    * information collection
    */
-  informationcollection: "ICOL",
+  ICOL: "ICOL",
 
   /**
    * information disclosure
    */
-  informationdisclosure: "IDSCL",
+  IDSCL: "IDSCL",
 
   /**
    * information access
    */
-  informationaccess: "INFA",
+  INFA: "INFA",
 
   /**
    * access only
    */
-  accessonly: "INFAO",
+  INFAO: "INFAO",
 
   /**
    * access and save only
    */
-  accessandsaveonly: "INFASO",
+  INFASO: "INFASO",
 
   /**
    * information redisclosure
    */
-  informationredisclosure: "IRDSCL",
+  IRDSCL: "IRDSCL",
 
   /**
    * research information access
    */
-  researchinformationaccess: "RESEARCH",
+  RESEARCH: "RESEARCH",
 
   /**
    * de-identified information access
    */
-  deidentifiedinformationaccess: "RSDID",
+  RSDID: "RSDID",
 
   /**
    * re-identifiable information access
    */
-  reidentifiableinformationaccess: "RSREID",
+  RSREID: "RSREID",
 
   /**
    * ActContainerRegistrationCode
    */
-  ActContainerRegistrationCode: "_ActContainerRegistrationCode",
+  _ActContainerRegistrationCode: "_ActContainerRegistrationCode",
 
   /**
    * Identified
    */
-  Identified: "ID",
+  ID: "ID",
 
   /**
    * In Position
    */
-  InPosition: "IP",
+  IP: "IP",
 
   /**
    * Left Equipment
    */
-  LeftEquipment: "L",
+  L: "L",
 
   /**
    * Missing
    */
-  Missing: "M",
+  M: "M",
 
   /**
    * In Process
    */
-  InProcess: "O",
+  O: "O",
 
   /**
    * Process Completed
    */
-  ProcessCompleted: "R",
+  R: "R",
 
   /**
    * Container Unavailable
    */
-  ContainerUnavailable: "X",
+  X: "X",
 
   /**
    * ActControlVariable
    */
-  ActControlVariable: "_ActControlVariable",
+  _ActControlVariable: "_ActControlVariable",
 
   /**
    * auto-repeat permission
    */
-  autorepeatpermission: "AUTO",
+  AUTO: "AUTO",
 
   /**
    * endogenous content
    */
-  endogenouscontent: "ENDC",
+  ENDC: "ENDC",
 
   /**
    * reflex permission
    */
-  reflexpermission: "REFLEX",
+  REFLEX: "REFLEX",
 
   /**
    * ECGControlVariable
    */
-  ECGControlVariable: "_ECGControlVariable",
+  _ECGControlVariable: "_ECGControlVariable",
 
   /**
    * ActCoverageConfirmationCode
    */
-  ActCoverageConfirmationCode: "_ActCoverageConfirmationCode",
+  _ActCoverageConfirmationCode: "_ActCoverageConfirmationCode",
 
   /**
    * ActCoverageAuthorizationConfirmationCode
    */
-  ActCoverageAuthorizationConfirmationCode:
+  _ActCoverageAuthorizationConfirmationCode:
     "_ActCoverageAuthorizationConfirmationCode",
 
   /**
    * Authorized
    */
-  Authorized: "AUTH",
+  AUTH: "AUTH",
 
   /**
    * Not Authorized
    */
-  NotAuthorized: "NAUTH",
+  NAUTH: "NAUTH",
 
   /**
    * ActCoverageEligibilityConfirmationCode
    */
-  ActCoverageEligibilityConfirmationCode:
+  _ActCoverageEligibilityConfirmationCode:
     "_ActCoverageEligibilityConfirmationCode",
 
   /**
    * Eligible
    */
-  Eligible: "ELG",
+  ELG: "ELG",
 
   /**
    * Not Eligible
    */
-  NotEligible: "NELG",
+  NELG: "NELG",
 
   /**
    * ActCoverageLimitCode
    */
-  ActCoverageLimitCode: "_ActCoverageLimitCode",
+  _ActCoverageLimitCode: "_ActCoverageLimitCode",
 
   /**
    * ActCoverageQuantityLimitCode
    */
-  ActCoverageQuantityLimitCode: "_ActCoverageQuantityLimitCode",
+  _ActCoverageQuantityLimitCode: "_ActCoverageQuantityLimitCode",
 
   /**
    * coverage period
    */
-  coverageperiod: "COVPRD",
+  COVPRD: "COVPRD",
 
   /**
    * life time maximum
    */
-  lifetimemaximum: "LFEMX",
+  LFEMX: "LFEMX",
 
   /**
    * Net Amount
    */
-  NetAmount: "NETAMT",
+  NETAMT: "NETAMT",
 
   /**
    * period maximum
    */
-  periodmaximum: "PRDMX",
+  PRDMX: "PRDMX",
 
   /**
    * Unit Price
    */
-  UnitPrice: "UNITPRICE",
+  UNITPRICE: "UNITPRICE",
 
   /**
    * Unit Quantity
    */
-  UnitQuantity: "UNITQTY",
+  UNITQTY: "UNITQTY",
 
   /**
    * coverage maximum
    */
-  coveragemaximum: "COVMX",
+  COVMX: "COVMX",
 
   /**
    * ActCoveredPartyLimitCode
    */
-  ActCoveredPartyLimitCode: "_ActCoveredPartyLimitCode",
+  _ActCoveredPartyLimitCode: "_ActCoveredPartyLimitCode",
 
   /**
    * ActCoveragePartyLimitGroupCode
    */
-  ActCoveragePartyLimitGroupCode: "_ActCoveragePartyLimitGroupCode",
+  _ActCoveragePartyLimitGroupCode: "_ActCoveragePartyLimitGroupCode",
 
   /**
    * ActCoverageTypeCode
    */
-  ActCoverageTypeCode: "_ActCoverageTypeCode",
+  _ActCoverageTypeCode: "_ActCoverageTypeCode",
 
   /**
    * ActInsurancePolicyCode
    */
-  ActInsurancePolicyCode: "_ActInsurancePolicyCode",
+  _ActInsurancePolicyCode: "_ActInsurancePolicyCode",
 
   /**
    * extended healthcare
    */
-  extendedhealthcare: "EHCPOL",
+  EHCPOL: "EHCPOL",
 
   /**
    * health spending account
    */
-  healthspendingaccount: "HSAPOL",
+  HSAPOL: "HSAPOL",
 
   /**
    * automobile
    */
-  automobile: "AUTOPOL",
+  AUTOPOL: "AUTOPOL",
 
   /**
    * collision coverage policy
    */
-  collisioncoveragepolicy: "COL",
+  COL: "COL",
 
   /**
    * uninsured motorist policy
    */
-  uninsuredmotoristpolicy: "UNINSMOT",
+  UNINSMOT: "UNINSMOT",
 
   /**
    * public healthcare
    */
-  publichealthcare: "PUBLICPOL",
+  PUBLICPOL: "PUBLICPOL",
 
   /**
    * dental program
    */
-  dentalprogram: "DENTPRG",
+  DENTPRG: "DENTPRG",
 
   /**
    * public health program
    */
-  publichealthprogram: "DISEASEPRG",
+  DISEASEPRG: "DISEASEPRG",
 
   /**
    * women's cancer detection program
    */
-  womenscancerdetectionprogram: "CANPRG",
+  CANPRG: "CANPRG",
 
   /**
    * end renal program
    */
-  endrenalprogram: "ENDRENAL",
+  ENDRENAL: "ENDRENAL",
 
   /**
    * HIV-AIDS program
    */
-  HIVAIDSprogram: "HIVAIDS",
+  HIVAIDS: "HIVAIDS",
 
   /**
    * mandatory health program
    */
-  mandatoryhealthprogram: "MANDPOL",
+  MANDPOL: "MANDPOL",
 
   /**
    * mental health program
    */
-  mentalhealthprogram: "MENTPRG",
+  MENTPRG: "MENTPRG",
 
   /**
    * safety net clinic program
    */
-  safetynetclinicprogram: "SAFNET",
+  SAFNET: "SAFNET",
 
   /**
    * substance use program
    */
-  substanceuseprogram: "SUBPRG",
+  SUBPRG: "SUBPRG",
 
   /**
    * subsidized health program
    */
-  subsidizedhealthprogram: "SUBSIDIZ",
+  SUBSIDIZ: "SUBSIDIZ",
 
   /**
    * subsidized managed care program
    */
-  subsidizedmanagedcareprogram: "SUBSIDMC",
+  SUBSIDMC: "SUBSIDMC",
 
   /**
    * subsidized supplemental health program
    */
-  subsidizedsupplementalhealthprogram: "SUBSUPP",
+  SUBSUPP: "SUBSUPP",
 
   /**
    * worker's compensation
    */
-  workerscompensation: "WCBPOL",
+  WCBPOL: "WCBPOL",
 
   /**
    * ActInsuranceTypeCode
    */
-  ActInsuranceTypeCode: "_ActInsuranceTypeCode",
+  _ActInsuranceTypeCode: "_ActInsuranceTypeCode",
 
   /**
    * ActHealthInsuranceTypeCode
    */
-  ActHealthInsuranceTypeCode: "_ActHealthInsuranceTypeCode",
+  _ActHealthInsuranceTypeCode: "_ActHealthInsuranceTypeCode",
 
   /**
    * dental care policy
    */
-  dentalcarepolicy: "DENTAL",
+  DENTAL: "DENTAL",
 
   /**
    * disease specific policy
    */
-  diseasespecificpolicy: "DISEASE",
+  DISEASE: "DISEASE",
 
   /**
    * drug policy
    */
-  drugpolicy: "DRUGPOL",
+  DRUGPOL: "DRUGPOL",
 
   /**
    * health insurance plan policy
    */
-  healthinsuranceplanpolicy: "HIP",
+  HIP: "HIP",
 
   /**
    * long term care policy
    */
-  longtermcarepolicy: "LTC",
+  LTC: "LTC",
 
   /**
    * managed care policy
    */
-  managedcarepolicy: "MCPOL",
+  MCPOL: "MCPOL",
 
   /**
    * point of service policy
    */
-  pointofservicepolicy: "POS",
+  POS: "POS",
 
   /**
    * health maintenance organization policy
    */
-  healthmaintenanceorganizationpolicy: "HMO",
+  HMO: "HMO",
 
   /**
    * preferred provider organization policy
    */
-  preferredproviderorganizationpolicy: "PPO",
+  PPO: "PPO",
 
   /**
    * mental health policy
    */
-  mentalhealthpolicy: "MENTPOL",
+  MENTPOL: "MENTPOL",
 
   /**
    * substance use policy
    */
-  substanceusepolicy: "SUBPOL",
+  SUBPOL: "SUBPOL",
 
   /**
    * vision care policy
    */
-  visioncarepolicy: "VISPOL",
+  VISPOL: "VISPOL",
 
   /**
    * disability insurance policy
    */
-  disabilityinsurancepolicy: "DIS",
+  DIS: "DIS",
 
   /**
    * employee welfare benefit plan policy
    */
-  employeewelfarebenefitplanpolicy: "EWB",
+  EWB: "EWB",
 
   /**
    * flexible benefit plan policy
    */
-  flexiblebenefitplanpolicy: "FLEXP",
+  FLEXP: "FLEXP",
 
   /**
    * life insurance policy
    */
-  lifeinsurancepolicy: "LIFE",
+  LIFE: "LIFE",
 
   /**
    * annuity policy
    */
-  annuitypolicy: "ANNU",
+  ANNU: "ANNU",
 
   /**
    * term life insurance policy
    */
-  termlifeinsurancepolicy: "TLIFE",
+  TLIFE: "TLIFE",
 
   /**
    * universal life insurance policy
    */
-  universallifeinsurancepolicy: "ULIFE",
+  ULIFE: "ULIFE",
 
   /**
    * property and casualty insurance policy
    */
-  propertyandcasualtyinsurancepolicy: "PNC",
+  PNC: "PNC",
 
   /**
    * reinsurance policy
    */
-  reinsurancepolicy: "REI",
+  REI: "REI",
 
   /**
    * surplus line insurance policy
    */
-  surpluslineinsurancepolicy: "SURPL",
+  SURPL: "SURPL",
 
   /**
    * umbrella liability insurance policy
    */
-  umbrellaliabilityinsurancepolicy: "UMBRL",
+  UMBRL: "UMBRL",
 
   /**
    * ActProgramTypeCode
    */
-  ActProgramTypeCode: "_ActProgramTypeCode",
+  _ActProgramTypeCode: "_ActProgramTypeCode",
 
   /**
    * charity program
    */
-  charityprogram: "CHAR",
+  CHAR: "CHAR",
 
   /**
    * crime victim program
    */
-  crimevictimprogram: "CRIME",
+  CRIME: "CRIME",
 
   /**
    * employee assistance program
    */
-  employeeassistanceprogram: "EAP",
+  EAP: "EAP",
 
   /**
    * government employee health program
    */
-  governmentemployeehealthprogram: "GOVEMP",
+  GOVEMP: "GOVEMP",
 
   /**
    * high risk pool program
    */
-  highriskpoolprogram: "HIRISK",
+  HIRISK: "HIRISK",
 
   /**
    * indigenous peoples health program
    */
-  indigenouspeopleshealthprogram: "IND",
+  IND: "IND",
 
   /**
    * military health program
    */
-  militaryhealthprogram: "MILITARY",
+  MILITARY: "MILITARY",
 
   /**
    * retiree health program
    */
-  retireehealthprogram: "RETIRE",
+  RETIRE: "RETIRE",
 
   /**
    * social service program
    */
-  socialserviceprogram: "SOCIAL",
+  SOCIAL: "SOCIAL",
 
   /**
    * veteran health program
    */
-  veteranhealthprogram: "VET",
+  VET: "VET",
 
   /**
    * ActDetectedIssueManagementCode
    */
-  ActDetectedIssueManagementCode: "_ActDetectedIssueManagementCode",
+  _ActDetectedIssueManagementCode: "_ActDetectedIssueManagementCode",
 
   /**
    * ActAdministrativeDetectedIssueManagementCode
    */
-  ActAdministrativeDetectedIssueManagementCode:
+  _ActAdministrativeDetectedIssueManagementCode:
     "_ActAdministrativeDetectedIssueManagementCode",
 
   /**
    * Authorization Issue Management Code
    */
-  AuthorizationIssueManagementCode: "_AuthorizationIssueManagementCode",
+  _AuthorizationIssueManagementCode: "_AuthorizationIssueManagementCode",
 
   /**
    * emergency authorization override
    */
-  emergencyauthorizationoverride: "EMAUTH",
+  EMAUTH: "EMAUTH",
 
   /**
    * authorization confirmed
    */
-  authorizationconfirmed: "21",
+  "21": "21",
 
   /**
    * Therapy Appropriate
    */
-  TherapyAppropriate: "1",
+  "1": "1",
 
   /**
    * Consulted Supplier
    */
-  ConsultedSupplier: "19",
+  "19": "19",
 
   /**
    * Assessed Patient
    */
-  AssessedPatient: "2",
+  "2": "2",
 
   /**
    * appropriate indication or diagnosis
    */
-  appropriateindicationordiagnosis: "22",
+  "22": "22",
 
   /**
    * prior therapy documented
    */
-  priortherapydocumented: "23",
+  "23": "23",
 
   /**
    * Patient Explanation
    */
-  PatientExplanation: "3",
+  "3": "3",
 
   /**
    * Consulted Other Source
    */
-  ConsultedOtherSource: "4",
+  "4": "4",
 
   /**
    * Consulted Prescriber
    */
-  ConsultedPrescriber: "5",
+  "5": "5",
 
   /**
    * Prescriber Declined Change
    */
-  PrescriberDeclinedChange: "6",
+  "6": "6",
 
   /**
    * Interacting Therapy No Longer Active/Planned
    */
-  InteractingTherapyNoLongerActivePlanned: "7",
+  "7": "7",
 
   /**
    * Supply Appropriate
    */
-  SupplyAppropriate: "14",
+  "14": "14",
 
   /**
    * Replacement
    */
-  Replacement: "15",
+  "15": "15",
 
   /**
    * Vacation Supply
    */
-  VacationSupply: "16",
+  "16": "16",
 
   /**
    * Weekend Supply
    */
-  WeekendSupply: "17",
+  "17": "17",
 
   /**
    * Leave of Absence
    */
-  LeaveofAbsence: "18",
+  "18": "18",
 
   /**
    * additional quantity on separate dispense
    */
-  additionalquantityonseparatedispense: "20",
+  "20": "20",
 
   /**
    * Other Action Taken
    */
-  OtherActionTaken: "8",
+  "8": "8",
 
   /**
    * Provided Patient Education
    */
-  ProvidedPatientEducation: "10",
+  "10": "10",
 
   /**
    * Added Concurrent Therapy
    */
-  AddedConcurrentTherapy: "11",
+  "11": "11",
 
   /**
    * Temporarily Suspended Concurrent Therapy
    */
-  TemporarilySuspendedConcurrentTherapy: "12",
+  "12": "12",
 
   /**
    * Stopped Concurrent Therapy
    */
-  StoppedConcurrentTherapy: "13",
+  "13": "13",
 
   /**
    * Instituted Ongoing Monitoring Program
    */
-  InstitutedOngoingMonitoringProgram: "9",
+  "9": "9",
 
   /**
    * ActFinancialDetectedIssueManagementCode
    */
-  ActFinancialDetectedIssueManagementCode:
+  _ActFinancialDetectedIssueManagementCode:
     "_ActFinancialDetectedIssueManagementCode",
 
   /**
    * ActExposureCode
    */
-  ActExposureCode: "_ActExposureCode",
+  _ActExposureCode: "_ActExposureCode",
 
   /**
    * Day care - Child care Interaction
    */
-  DaycareChildcareInteraction: "CHLDCARE",
+  CHLDCARE: "CHLDCARE",
 
   /**
    * Common Conveyance Interaction
    */
-  CommonConveyanceInteraction: "CONVEYNC",
+  CONVEYNC: "CONVEYNC",
 
   /**
    * Health Care Interaction - Not Patient Care
    */
-  HealthCareInteractionNotPatientCare: "HLTHCARE",
+  HLTHCARE: "HLTHCARE",
 
   /**
    * Care Giver Interaction
    */
-  CareGiverInteraction: "HOMECARE",
+  HOMECARE: "HOMECARE",
 
   /**
    * Hospital Patient Interaction
    */
-  HospitalPatientInteraction: "HOSPPTNT",
+  HOSPPTNT: "HOSPPTNT",
 
   /**
    * Hospital Visitor Interaction
    */
-  HospitalVisitorInteraction: "HOSPVSTR",
+  HOSPVSTR: "HOSPVSTR",
 
   /**
    * Household Interaction
    */
-  HouseholdInteraction: "HOUSEHLD",
+  HOUSEHLD: "HOUSEHLD",
 
   /**
    * Inmate Interaction
    */
-  InmateInteraction: "INMATE",
+  INMATE: "INMATE",
 
   /**
    * Intimate Interaction
    */
-  IntimateInteraction: "INTIMATE",
+  INTIMATE: "INTIMATE",
 
   /**
    * Long Term Care Facility Interaction
    */
-  LongTermCareFacilityInteraction: "LTRMCARE",
+  LTRMCARE: "LTRMCARE",
 
   /**
    * Common Space Interaction
    */
-  CommonSpaceInteraction: "PLACE",
+  PLACE: "PLACE",
 
   /**
    * Health Care Interaction - Patient Care
    */
-  HealthCareInteractionPatientCare: "PTNTCARE",
+  PTNTCARE: "PTNTCARE",
 
   /**
    * School Interaction
    */
-  SchoolInteraction: "SCHOOL2",
+  SCHOOL2: "SCHOOL2",
 
   /**
    * Social/Extended Family Interaction
    */
-  SocialExtendedFamilyInteraction: "SOCIAL2",
+  SOCIAL2: "SOCIAL2",
 
   /**
    * Common Substance Interaction
    */
-  CommonSubstanceInteraction: "SUBSTNCE",
+  SUBSTNCE: "SUBSTNCE",
 
   /**
    * Common Travel Interaction
    */
-  CommonTravelInteraction: "TRAVINT",
+  TRAVINT: "TRAVINT",
 
   /**
    * Work Interaction
    */
-  WorkInteraction: "WORK2",
+  WORK2: "WORK2",
 
   /**
    * ActFinancialTransactionCode
    */
-  ActFinancialTransactionCode: "_ActFinancialTransactionCode",
+  _ActFinancialTransactionCode: "_ActFinancialTransactionCode",
 
   /**
    * Standard Charge
    */
-  StandardCharge: "CHRG",
+  CHRG: "CHRG",
 
   /**
    * Standard Charge Reversal
    */
-  StandardChargeReversal: "REV",
+  REV: "REV",
 
   /**
    * ActIncidentCode
    */
-  ActIncidentCode: "_ActIncidentCode",
+  _ActIncidentCode: "_ActIncidentCode",
 
   /**
    * Motor vehicle accident
    */
-  Motorvehicleaccident: "MVA",
+  MVA: "MVA",
 
   /**
    * School Accident
    */
-  SchoolAccident: "SCHOOL",
+  SCHOOL: "SCHOOL",
 
   /**
    * Sporting Accident
    */
-  SportingAccident: "SPT",
+  SPT: "SPT",
 
   /**
    * Workplace accident
    */
-  Workplaceaccident: "WPA",
+  WPA: "WPA",
 
   /**
    * ActPatientSafetyIncidentCode
    */
-  ActPatientSafetyIncidentCode: "_ActPatientSafetyIncidentCode",
+  _ActPatientSafetyIncidentCode: "_ActPatientSafetyIncidentCode",
 
   /**
    * ActInformationAccessCode
    */
-  ActInformationAccessCode: "_ActInformationAccessCode",
+  _ActInformationAccessCode: "_ActInformationAccessCode",
 
   /**
    * adverse drug reaction access
    */
-  adversedrugreactionaccess: "ACADR",
+  ACADR: "ACADR",
 
   /**
    * all access
    */
-  allaccess: "ACALL",
+  ACALL: "ACALL",
 
   /**
    * allergy access
    */
-  allergyaccess: "ACALLG",
+  ACALLG: "ACALLG",
 
   /**
    * informational consent access
    */
-  informationalconsentaccess: "ACCONS",
+  ACCONS: "ACCONS",
 
   /**
    * demographics access
    */
-  demographicsaccess: "ACDEMO",
+  ACDEMO: "ACDEMO",
 
   /**
    * diagnostic imaging access
    */
-  diagnosticimagingaccess: "ACDI",
+  ACDI: "ACDI",
 
   /**
    * immunization access
    */
-  immunizationaccess: "ACIMMUN",
+  ACIMMUN: "ACIMMUN",
 
   /**
    * lab test result access
    */
-  labtestresultaccess: "ACLAB",
+  ACLAB: "ACLAB",
 
   /**
    * medication access
    */
-  medicationaccess: "ACMED",
+  ACMED: "ACMED",
 
   /**
    * medical condition access
    */
-  medicalconditionaccess: "ACMEDC",
+  ACMEDC: "ACMEDC",
 
   /**
    * mental health access
    */
-  mentalhealthaccess: "ACMEN",
+  ACMEN: "ACMEN",
 
   /**
    * common observations access
    */
-  commonobservationsaccess: "ACOBS",
+  ACOBS: "ACOBS",
 
   /**
    * policy or program information access
    */
-  policyorprograminformationaccess: "ACPOLPRG",
+  ACPOLPRG: "ACPOLPRG",
 
   /**
    * provider information access
    */
-  providerinformationaccess: "ACPROV",
+  ACPROV: "ACPROV",
 
   /**
    * professional service access
    */
-  professionalserviceaccess: "ACPSERV",
+  ACPSERV: "ACPSERV",
 
   /**
    * substance abuse access
    */
-  substanceabuseaccess: "ACSUBSTAB",
+  ACSUBSTAB: "ACSUBSTAB",
 
   /**
    * ActInformationAccessContextCode
    */
-  ActInformationAccessContextCode: "_ActInformationAccessContextCode",
+  _ActInformationAccessContextCode: "_ActInformationAccessContextCode",
 
   /**
    * authorized information transfer
    */
-  authorizedinformationtransfer: "INFAUT",
+  INFAUT: "INFAUT",
 
   /**
    * after explicit consent
    */
-  afterexplicitconsent: "INFCON",
+  INFCON: "INFCON",
 
   /**
    * only on court order
    */
-  onlyoncourtorder: "INFCRT",
+  INFCRT: "INFCRT",
 
   /**
    * only if danger to others
    */
-  onlyifdangertoothers: "INFDNG",
+  INFDNG: "INFDNG",
 
   /**
    * only in an emergency
    */
-  onlyinanemergency: "INFEMER",
+  INFEMER: "INFEMER",
 
   /**
    * only if public welfare risk
    */
-  onlyifpublicwelfarerisk: "INFPWR",
+  INFPWR: "INFPWR",
 
   /**
    * regulatory information transfer
    */
-  regulatoryinformationtransfer: "INFREG",
+  INFREG: "INFREG",
 
   /**
    * ActInformationCategoryCode
    */
-  ActInformationCategoryCode: "_ActInformationCategoryCode",
+  _ActInformationCategoryCode: "_ActInformationCategoryCode",
 
   /**
    * all categories
    */
-  allcategories: "ALLCAT",
+  ALLCAT: "ALLCAT",
 
   /**
    * allergy category
    */
-  allergycategory: "ALLGCAT",
+  ALLGCAT: "ALLGCAT",
 
   /**
    * adverse drug reaction category
    */
-  adversedrugreactioncategory: "ARCAT",
+  ARCAT: "ARCAT",
 
   /**
    * common observation category
    */
-  commonobservationcategory: "COBSCAT",
+  COBSCAT: "COBSCAT",
 
   /**
    * demographics category
    */
-  demographicscategory: "DEMOCAT",
+  DEMOCAT: "DEMOCAT",
 
   /**
    * diagnostic image category
    */
-  diagnosticimagecategory: "DICAT",
+  DICAT: "DICAT",
 
   /**
    * immunization category
    */
-  immunizationcategory: "IMMUCAT",
+  IMMUCAT: "IMMUCAT",
 
   /**
    * lab test category
    */
-  labtestcategory: "LABCAT",
+  LABCAT: "LABCAT",
 
   /**
    * medical condition category
    */
-  medicalconditioncategory: "MEDCCAT",
+  MEDCCAT: "MEDCCAT",
 
   /**
    * mental health category
    */
-  mentalhealthcategory: "MENCAT",
+  MENCAT: "MENCAT",
 
   /**
    * professional service category
    */
-  professionalservicecategory: "PSVCCAT",
+  PSVCCAT: "PSVCCAT",
 
   /**
    * medication category
    */
-  medicationcategory: "RXCAT",
+  RXCAT: "RXCAT",
 
   /**
    * ActInvoiceElementCode
    */
-  ActInvoiceElementCode: "_ActInvoiceElementCode",
+  _ActInvoiceElementCode: "_ActInvoiceElementCode",
 
   /**
    * ActInvoiceAdjudicationPaymentCode
    */
-  ActInvoiceAdjudicationPaymentCode: "_ActInvoiceAdjudicationPaymentCode",
+  _ActInvoiceAdjudicationPaymentCode: "_ActInvoiceAdjudicationPaymentCode",
 
   /**
    * ActInvoiceAdjudicationPaymentGroupCode
    */
-  ActInvoiceAdjudicationPaymentGroupCode:
+  _ActInvoiceAdjudicationPaymentGroupCode:
     "_ActInvoiceAdjudicationPaymentGroupCode",
 
   /**
    * alternate electronic
    */
-  alternateelectronic: "ALEC",
+  ALEC: "ALEC",
 
   /**
    * bonus
    */
-  bonus: "BONUS",
+  BONUS: "BONUS",
 
   /**
    * carry forward adjusment
    */
-  carryforwardadjusment: "CFWD",
+  CFWD: "CFWD",
 
   /**
    * education fees
    */
-  educationfees: "EDU",
+  EDU: "EDU",
 
   /**
    * early payment fee
    */
-  earlypaymentfee: "EPYMT",
+  EPYMT: "EPYMT",
 
   /**
    * garnishee
    */
-  garnishee: "GARN",
+  GARN: "GARN",
 
   /**
    * submitted invoice
    */
-  submittedinvoice: "INVOICE",
+  INVOICE: "INVOICE",
 
   /**
    * paper invoice
    */
-  paperinvoice: "PINV",
+  PINV: "PINV",
 
   /**
    * prior period adjustment
    */
-  priorperiodadjustment: "PPRD",
+  PPRD: "PPRD",
 
   /**
    * professional association deduction
    */
-  professionalassociationdeduction: "PROA",
+  PROA: "PROA",
 
   /**
    * recovery
    */
-  recovery: "RECOV",
+  RECOV: "RECOV",
 
   /**
    * retro adjustment
    */
-  retroadjustment: "RETRO",
+  RETRO: "RETRO",
 
   /**
    * transaction fee
    */
-  transactionfee: "TRAN",
+  TRAN: "TRAN",
 
   /**
    * ActInvoiceAdjudicationPaymentGroupCode
    */
-  ActInvoiceAdjudicationPaymentGroupCode: "_ActInvoicePaymentCode",
+  _ActInvoicePaymentCode: "_ActInvoicePaymentCode",
 
   /**
    * ActInvoiceAdjudicationPaymentSummaryCode
    */
-  ActInvoiceAdjudicationPaymentSummaryCode:
+  _ActInvoiceAdjudicationPaymentSummaryCode:
     "_ActInvoiceAdjudicationPaymentSummaryCode",
 
   /**
    * invoice type
    */
-  invoicetype: "INVTYPE",
+  INVTYPE: "INVTYPE",
 
   /**
    * payee
    */
-  payee: "PAYEE",
+  PAYEE: "PAYEE",
 
   /**
    * payor
    */
-  payor: "PAYOR",
+  PAYOR: "PAYOR",
 
   /**
    * sending application
    */
-  sendingapplication: "SENDAPP",
+  SENDAPP: "SENDAPP",
 
   /**
    * ActInvoiceDetailCode
    */
-  ActInvoiceDetailCode: "_ActInvoiceDetailCode",
+  _ActInvoiceDetailCode: "_ActInvoiceDetailCode",
 
   /**
    * ActInvoiceDetailClinicalProductCode
    */
-  ActInvoiceDetailClinicalProductCode: "_ActInvoiceDetailClinicalProductCode",
+  _ActInvoiceDetailClinicalProductCode: "_ActInvoiceDetailClinicalProductCode",
 
   /**
    * United Nations Standard Products and Services Classification
    */
-  UnitedNationsStandardProductsandServicesClassification: "UNSPSC",
+  UNSPSC: "UNSPSC",
 
   /**
    * ActInvoiceDetailDrugProductCode
    */
-  ActInvoiceDetailDrugProductCode: "_ActInvoiceDetailDrugProductCode",
+  _ActInvoiceDetailDrugProductCode: "_ActInvoiceDetailDrugProductCode",
 
   /**
    * Global Trade Item Number
    */
-  GlobalTradeItemNumber: "GTIN",
+  GTIN: "GTIN",
 
   /**
    * Universal Product Code
    */
-  UniversalProductCode: "UPC",
+  UPC: "UPC",
 
   /**
    * ActInvoiceDetailGenericCode
    */
-  ActInvoiceDetailGenericCode: "_ActInvoiceDetailGenericCode",
+  _ActInvoiceDetailGenericCode: "_ActInvoiceDetailGenericCode",
 
   /**
    * ActInvoiceDetailGenericAdjudicatorCode
    */
-  ActInvoiceDetailGenericAdjudicatorCode:
+  _ActInvoiceDetailGenericAdjudicatorCode:
     "_ActInvoiceDetailGenericAdjudicatorCode",
 
   /**
    * coinsurance
    */
-  coinsurance: "COIN",
+  COIN: "COIN",
 
   /**
    * patient co-pay
    */
-  patientcopay: "COPAYMENT",
+  COPAYMENT: "COPAYMENT",
 
   /**
    * deductible
    */
-  deductible: "DEDUCTIBLE",
+  DEDUCTIBLE: "DEDUCTIBLE",
 
   /**
    * payment
    */
-  payment: "PAY",
+  PAY: "PAY",
 
   /**
    * spend down
    */
-  spenddown: "SPEND",
+  SPEND: "SPEND",
 
   /**
    * co-insurance
    */
-  coinsurance: "COINS",
+  COINS: "COINS",
 
   /**
    * ActInvoiceDetailGenericModifierCode
    */
-  ActInvoiceDetailGenericModifierCode: "_ActInvoiceDetailGenericModifierCode",
+  _ActInvoiceDetailGenericModifierCode: "_ActInvoiceDetailGenericModifierCode",
 
   /**
    * non-normal hours
    */
-  nonnormalhours: "AFTHRS",
+  AFTHRS: "AFTHRS",
 
   /**
    * isolation allowance
    */
-  isolationallowance: "ISOL",
+  ISOL: "ISOL",
 
   /**
    * out of office
    */
-  outofoffice: "OOO",
+  OOO: "OOO",
 
   /**
    * ActInvoiceDetailGenericProviderCode
    */
-  ActInvoiceDetailGenericProviderCode: "_ActInvoiceDetailGenericProviderCode",
+  _ActInvoiceDetailGenericProviderCode: "_ActInvoiceDetailGenericProviderCode",
 
   /**
    * cancelled appointment
    */
-  cancelledappointment: "CANCAPT",
+  CANCAPT: "CANCAPT",
 
   /**
    * discount
    */
-  discount: "DSC",
+  DSC: "DSC",
 
   /**
    * extraordinary service assessment
    */
-  extraordinaryserviceassessment: "ESA",
+  ESA: "ESA",
 
   /**
    * fee for service top off
    */
-  feeforservicetopoff: "FFSTOP",
+  FFSTOP: "FFSTOP",
 
   /**
    * final fee
    */
-  finalfee: "FNLFEE",
+  FNLFEE: "FNLFEE",
 
   /**
    * first fee
    */
-  firstfee: "FRSTFEE",
+  FRSTFEE: "FRSTFEE",
 
   /**
    * markup or up-charge
    */
-  markuporupcharge: "MARKUP",
+  MARKUP: "MARKUP",
 
   /**
    * missed appointment
    */
-  missedappointment: "MISSAPT",
+  MISSAPT: "MISSAPT",
 
   /**
    * periodic fee
    */
-  periodicfee: "PERFEE",
+  PERFEE: "PERFEE",
 
   /**
    * performance bonus
    */
-  performancebonus: "PERMBNS",
+  PERMBNS: "PERMBNS",
 
   /**
    * restocking fee
    */
-  restockingfee: "RESTOCK",
+  RESTOCK: "RESTOCK",
 
   /**
    * travel
    */
-  travel: "TRAVEL",
+  TRAVEL: "TRAVEL",
 
   /**
    * urgent
    */
-  urgent: "URGENT",
+  URGENT: "URGENT",
 
   /**
    * ActInvoiceDetailTaxCode
    */
-  ActInvoiceDetailTaxCode: "_ActInvoiceDetailTaxCode",
+  _ActInvoiceDetailTaxCode: "_ActInvoiceDetailTaxCode",
 
   /**
    * federal sales tax
    */
-  federalsalestax: "FST",
+  FST: "FST",
 
   /**
    * harmonized sales Tax
    */
-  harmonizedsalesTax: "HST",
+  HST: "HST",
 
   /**
    * provincial/state sales tax
    */
-  provincialstatesalestax: "PST",
+  PST: "PST",
 
   /**
    * ActInvoiceDetailPreferredAccommodationCode
    */
-  ActInvoiceDetailPreferredAccommodationCode:
+  _ActInvoiceDetailPreferredAccommodationCode:
     "_ActInvoiceDetailPreferredAccommodationCode",
 
   /**
    * ActEncounterAccommodationCode
    */
-  ActEncounterAccommodationCode: "_ActEncounterAccommodationCode",
+  _ActEncounterAccommodationCode: "_ActEncounterAccommodationCode",
 
   /**
    * ActInvoiceDetailClinicalServiceCode
    */
-  ActInvoiceDetailClinicalServiceCode: "_ActInvoiceDetailClinicalServiceCode",
+  _ActInvoiceDetailClinicalServiceCode: "_ActInvoiceDetailClinicalServiceCode",
 
   /**
    * CPT5
    */
-  CPT5: "_CPT5",
+  _CPT5: "_CPT5",
 
   /**
    * HCPCS
    */
-  HCPCS: "_HCPCS",
+  _HCPCS: "_HCPCS",
 
   /**
    * ICD10PCS
    */
-  ICD10PCS: "_ICD10PCS",
+  _ICD10PCS: "_ICD10PCS",
 
   /**
    * ICD9PCS
    */
-  ICD9PCS: "_ICD9PCS",
+  _ICD9PCS: "_ICD9PCS",
 
   /**
    * ActInvoiceDetailOralHealthProcedureCode
    */
-  ActInvoiceDetailOralHealthProcedureCode:
+  _ActInvoiceDetailOralHealthProcedureCode:
     "_ActInvoiceDetailOralHealthProcedureCode",
 
   /**
    * ActInvoiceGroupCode
    */
-  ActInvoiceGroupCode: "_ActInvoiceGroupCode",
+  _ActInvoiceGroupCode: "_ActInvoiceGroupCode",
 
   /**
    * ActInvoiceInterGroupCode
    */
-  ActInvoiceInterGroupCode: "_ActInvoiceInterGroupCode",
+  _ActInvoiceInterGroupCode: "_ActInvoiceInterGroupCode",
 
   /**
    * compound drug invoice group
    */
-  compounddruginvoicegroup: "CPNDDRGING",
+  CPNDDRGING: "CPNDDRGING",
 
   /**
    * compound ingredient invoice group
    */
-  compoundingredientinvoicegroup: "CPNDINDING",
+  CPNDINDING: "CPNDINDING",
 
   /**
    * compound supply invoice group
    */
-  compoundsupplyinvoicegroup: "CPNDSUPING",
+  CPNDSUPING: "CPNDSUPING",
 
   /**
    * drug invoice group
    */
-  druginvoicegroup: "DRUGING",
+  DRUGING: "DRUGING",
 
   /**
    * frame invoice group
    */
-  frameinvoicegroup: "FRAMEING",
+  FRAMEING: "FRAMEING",
 
   /**
    * lens invoice group
    */
-  lensinvoicegroup: "LENSING",
+  LENSING: "LENSING",
 
   /**
    * product invoice group
    */
-  productinvoicegroup: "PRDING",
+  PRDING: "PRDING",
 
   /**
    * ActInvoiceRootGroupCode
    */
-  ActInvoiceRootGroupCode: "_ActInvoiceRootGroupCode",
+  _ActInvoiceRootGroupCode: "_ActInvoiceRootGroupCode",
 
   /**
    * clinical product invoice
    */
-  clinicalproductinvoice: "CPINV",
+  CPINV: "CPINV",
 
   /**
    * clinical product invoice
    */
-  clinicalproductinvoice: "CP",
+  CP: "CP",
 
   /**
    * clinical service invoice
    */
-  clinicalserviceinvoice: "CSINV",
+  CSINV: "CSINV",
 
   /**
    * clinical service invoice
    */
-  clinicalserviceinvoice: "CS",
+  CS: "CS",
 
   /**
    * clinical service and product
    */
-  clinicalserviceandproduct: "CSPINV",
+  CSPINV: "CSPINV",
 
   /**
    * financial invoice
    */
-  financialinvoice: "FININV",
+  FININV: "FININV",
 
   /**
    * oral health service
    */
-  oralhealthservice: "OHSINV",
+  OHSINV: "OHSINV",
 
   /**
    * preferred accommodation invoice
    */
-  preferredaccommodationinvoice: "PAINV",
+  PAINV: "PAINV",
 
   /**
    * preferred accommodation invoice
    */
-  preferredaccommodationinvoice: "PA",
+  PA: "PA",
 
   /**
    * Rx compound invoice
    */
-  Rxcompoundinvoice: "RXCINV",
+  RXCINV: "RXCINV",
 
   /**
    * Rx compound invoice
    */
-  Rxcompoundinvoice: "RXC",
+  RXC: "RXC",
 
   /**
    * Rx dispense invoice
    */
-  Rxdispenseinvoice: "RXDINV",
+  RXDINV: "RXDINV",
 
   /**
    * Rx dispense invoice
    */
-  Rxdispenseinvoice: "RXD",
+  RXD: "RXD",
 
   /**
    * sessional or block fee invoice
    */
-  sessionalorblockfeeinvoice: "SBFINV",
+  SBFINV: "SBFINV",
 
   /**
    * vision dispense invoice
    */
-  visiondispenseinvoice: "VRXINV",
+  VRXINV: "VRXINV",
 
   /**
    * ActInvoiceElementSummaryCode
    */
-  ActInvoiceElementSummaryCode: "_ActInvoiceElementSummaryCode",
+  _ActInvoiceElementSummaryCode: "_ActInvoiceElementSummaryCode",
 
   /**
    * InvoiceElementAdjudicated
    */
-  InvoiceElementAdjudicated: "_InvoiceElementAdjudicated",
+  _InvoiceElementAdjudicated: "_InvoiceElementAdjudicated",
 
   /**
    * adjud. nullified prior-period electronic amount
    */
-  adjudnullifiedpriorperiodelectronicamount: "ADNFPPELAT",
+  ADNFPPELAT: "ADNFPPELAT",
 
   /**
    * adjud. nullified prior-period electronic amount
    */
-  adjudnullifiedpriorperiodelectronicamount: "ADCNPPELAT",
+  ADCNPPELAT: "ADCNPPELAT",
 
   /**
    * adjud. nullified prior-period electronic count
    */
-  adjudnullifiedpriorperiodelectroniccount: "ADNFPPELCT",
+  ADNFPPELCT: "ADNFPPELCT",
 
   /**
    * adjud. nullified prior-period electronic count
    */
-  adjudnullifiedpriorperiodelectroniccount: "ADCNPPELCT",
+  ADCNPPELCT: "ADCNPPELCT",
 
   /**
    * adjud. nullified prior-period manual amount
    */
-  adjudnullifiedpriorperiodmanualamount: "ADNFPPMNAT",
+  ADNFPPMNAT: "ADNFPPMNAT",
 
   /**
    * adjud. nullified prior-period manual amount
    */
-  adjudnullifiedpriorperiodmanualamount: "ADCNPPMNAT",
+  ADCNPPMNAT: "ADCNPPMNAT",
 
   /**
    * adjud. nullified prior-period manual count
    */
-  adjudnullifiedpriorperiodmanualcount: "ADNFPPMNCT",
+  ADNFPPMNCT: "ADNFPPMNCT",
 
   /**
    * adjud. nullified prior-period manual count
    */
-  adjudnullifiedpriorperiodmanualcount: "ADCNPPMNCT",
+  ADCNPPMNCT: "ADCNPPMNCT",
 
   /**
    * adjud. nullified same-period electronic amount
    */
-  adjudnullifiedsameperiodelectronicamount: "ADNFSPELAT",
+  ADNFSPELAT: "ADNFSPELAT",
 
   /**
    * adjud. nullified same-period electronic amount
    */
-  adjudnullifiedsameperiodelectronicamount: "ADCNSPELAT",
+  ADCNSPELAT: "ADCNSPELAT",
 
   /**
    * adjud. nullified same-period electronic count
    */
-  adjudnullifiedsameperiodelectroniccount: "ADNFSPELCT",
+  ADNFSPELCT: "ADNFSPELCT",
 
   /**
    * adjud. nullified same-period electronic count
    */
-  adjudnullifiedsameperiodelectroniccount: "ADCNSPELCT",
+  ADCNSPELCT: "ADCNSPELCT",
 
   /**
    * adjud. nullified same-period manual amount
    */
-  adjudnullifiedsameperiodmanualamount: "ADNFSPMNAT",
+  ADNFSPMNAT: "ADNFSPMNAT",
 
   /**
    * adjud. nullified same-period manual amount
    */
-  adjudnullifiedsameperiodmanualamount: "ADCNSPMNAT",
+  ADCNSPMNAT: "ADCNSPMNAT",
 
   /**
    * adjud. nullified same-period manual count
    */
-  adjudnullifiedsameperiodmanualcount: "ADNFSPMNCT",
+  ADNFSPMNCT: "ADNFSPMNCT",
 
   /**
    * adjud. nullified same-period manual count
    */
-  adjudnullifiedsameperiodmanualcount: "ADCNSPMNCT",
+  ADCNSPMNCT: "ADCNSPMNCT",
 
   /**
    * adjud. non-payee payable prior-period electronic amount
    */
-  adjudnonpayeepayablepriorperiodelectronicamount: "ADNPPPELAT",
+  ADNPPPELAT: "ADNPPPELAT",
 
   /**
    * adjud. non-payee payable prior-period electronic count
    */
-  adjudnonpayeepayablepriorperiodelectroniccount: "ADNPPPELCT",
+  ADNPPPELCT: "ADNPPPELCT",
 
   /**
    * adjud. non-payee payable prior-period manual amount
    */
-  adjudnonpayeepayablepriorperiodmanualamount: "ADNPPPMNAT",
+  ADNPPPMNAT: "ADNPPPMNAT",
 
   /**
    * adjud. non-payee payable prior-period manual count
    */
-  adjudnonpayeepayablepriorperiodmanualcount: "ADNPPPMNCT",
+  ADNPPPMNCT: "ADNPPPMNCT",
 
   /**
    * adjud. non-payee payable same-period electronic amount
    */
-  adjudnonpayeepayablesameperiodelectronicamount: "ADNPSPELAT",
+  ADNPSPELAT: "ADNPSPELAT",
 
   /**
    * adjud. non-payee payable same-period electronic count
    */
-  adjudnonpayeepayablesameperiodelectroniccount: "ADNPSPELCT",
+  ADNPSPELCT: "ADNPSPELCT",
 
   /**
    * adjud. non-payee payable same-period manual amount
    */
-  adjudnonpayeepayablesameperiodmanualamount: "ADNPSPMNAT",
+  ADNPSPMNAT: "ADNPSPMNAT",
 
   /**
    * adjud. non-payee payable same-period manual count
    */
-  adjudnonpayeepayablesameperiodmanualcount: "ADNPSPMNCT",
+  ADNPSPMNCT: "ADNPSPMNCT",
 
   /**
    * adjud. payee payable prior-period electronic amount
    */
-  adjudpayeepayablepriorperiodelectronicamount: "ADPPPPELAT",
+  ADPPPPELAT: "ADPPPPELAT",
 
   /**
    * adjud. payee payable prior-period electronic count
    */
-  adjudpayeepayablepriorperiodelectroniccount: "ADPPPPELCT",
+  ADPPPPELCT: "ADPPPPELCT",
 
   /**
    * adjud. payee payable prior-period manual amout
    */
-  adjudpayeepayablepriorperiodmanualamout: "ADPPPPMNAT",
+  ADPPPPMNAT: "ADPPPPMNAT",
 
   /**
    * adjud. payee payable prior-period manual count
    */
-  adjudpayeepayablepriorperiodmanualcount: "ADPPPPMNCT",
+  ADPPPPMNCT: "ADPPPPMNCT",
 
   /**
    * adjud. payee payable same-period electronic amount
    */
-  adjudpayeepayablesameperiodelectronicamount: "ADPPSPELAT",
+  ADPPSPELAT: "ADPPSPELAT",
 
   /**
    * adjud. payee payable same-period electronic count
    */
-  adjudpayeepayablesameperiodelectroniccount: "ADPPSPELCT",
+  ADPPSPELCT: "ADPPSPELCT",
 
   /**
    * adjud. payee payable same-period manual amount
    */
-  adjudpayeepayablesameperiodmanualamount: "ADPPSPMNAT",
+  ADPPSPMNAT: "ADPPSPMNAT",
 
   /**
    * adjud. payee payable same-period manual count
    */
-  adjudpayeepayablesameperiodmanualcount: "ADPPSPMNCT",
+  ADPPSPMNCT: "ADPPSPMNCT",
 
   /**
    * adjud. refused prior-period electronic amount
    */
-  adjudrefusedpriorperiodelectronicamount: "ADRFPPELAT",
+  ADRFPPELAT: "ADRFPPELAT",
 
   /**
    * adjud. refused prior-period electronic count
    */
-  adjudrefusedpriorperiodelectroniccount: "ADRFPPELCT",
+  ADRFPPELCT: "ADRFPPELCT",
 
   /**
    * adjud. refused prior-period manual amount
    */
-  adjudrefusedpriorperiodmanualamount: "ADRFPPMNAT",
+  ADRFPPMNAT: "ADRFPPMNAT",
 
   /**
    * adjud. refused prior-period manual count
    */
-  adjudrefusedpriorperiodmanualcount: "ADRFPPMNCT",
+  ADRFPPMNCT: "ADRFPPMNCT",
 
   /**
    * adjud. refused same-period electronic amount
    */
-  adjudrefusedsameperiodelectronicamount: "ADRFSPELAT",
+  ADRFSPELAT: "ADRFSPELAT",
 
   /**
    * adjud. refused same-period electronic count
    */
-  adjudrefusedsameperiodelectroniccount: "ADRFSPELCT",
+  ADRFSPELCT: "ADRFSPELCT",
 
   /**
    * adjud. refused same-period manual amount
    */
-  adjudrefusedsameperiodmanualamount: "ADRFSPMNAT",
+  ADRFSPMNAT: "ADRFSPMNAT",
 
   /**
    * adjud. refused same-period manual count
    */
-  adjudrefusedsameperiodmanualcount: "ADRFSPMNCT",
+  ADRFSPMNCT: "ADRFSPMNCT",
 
   /**
    * InvoiceElementPaid
    */
-  InvoiceElementPaid: "_InvoiceElementPaid",
+  _InvoiceElementPaid: "_InvoiceElementPaid",
 
   /**
    * paid nullified prior-period electronic amount
    */
-  paidnullifiedpriorperiodelectronicamount: "PDNFPPELAT",
+  PDNFPPELAT: "PDNFPPELAT",
 
   /**
    * paid nullified prior-period electronic amount
    */
-  paidnullifiedpriorperiodelectronicamount: "PDCNPPELAT",
+  PDCNPPELAT: "PDCNPPELAT",
 
   /**
    * paid nullified prior-period electronic count
    */
-  paidnullifiedpriorperiodelectroniccount: "PDNFPPELCT",
+  PDNFPPELCT: "PDNFPPELCT",
 
   /**
    * paid nullified prior-period electronic count
    */
-  paidnullifiedpriorperiodelectroniccount: "PDCNPPELCT",
+  PDCNPPELCT: "PDCNPPELCT",
 
   /**
    * paid nullified prior-period manual amount
    */
-  paidnullifiedpriorperiodmanualamount: "PDNFPPMNAT",
+  PDNFPPMNAT: "PDNFPPMNAT",
 
   /**
    * paid nullified prior-period manual amount
    */
-  paidnullifiedpriorperiodmanualamount: "PDCNPPMNAT",
+  PDCNPPMNAT: "PDCNPPMNAT",
 
   /**
    * paid nullified prior-period manual count
    */
-  paidnullifiedpriorperiodmanualcount: "PDNFPPMNCT",
+  PDNFPPMNCT: "PDNFPPMNCT",
 
   /**
    * paid nullified prior-period manual count
    */
-  paidnullifiedpriorperiodmanualcount: "PDCNPPMNCT",
+  PDCNPPMNCT: "PDCNPPMNCT",
 
   /**
    * paid nullified same-period electronic amount
    */
-  paidnullifiedsameperiodelectronicamount: "PDNFSPELAT",
+  PDNFSPELAT: "PDNFSPELAT",
 
   /**
    * paid nullified same-period electronic amount
    */
-  paidnullifiedsameperiodelectronicamount: "PDCNSPELAT",
+  PDCNSPELAT: "PDCNSPELAT",
 
   /**
    * paid nullified same-period electronic count
    */
-  paidnullifiedsameperiodelectroniccount: "PDNFSPELCT",
+  PDNFSPELCT: "PDNFSPELCT",
 
   /**
    * paid nullified same-period electronic count
    */
-  paidnullifiedsameperiodelectroniccount: "PDCNSPELCT",
+  PDCNSPELCT: "PDCNSPELCT",
 
   /**
    * paid nullified same-period manual amount
    */
-  paidnullifiedsameperiodmanualamount: "PDNFSPMNAT",
+  PDNFSPMNAT: "PDNFSPMNAT",
 
   /**
    * paid nullified same-period manual amount
    */
-  paidnullifiedsameperiodmanualamount: "PDCNSPMNAT",
+  PDCNSPMNAT: "PDCNSPMNAT",
 
   /**
    * paid nullified same-period manual count
    */
-  paidnullifiedsameperiodmanualcount: "PDNFSPMNCT",
+  PDNFSPMNCT: "PDNFSPMNCT",
 
   /**
    * paid nullified same-period manual count
    */
-  paidnullifiedsameperiodmanualcount: "PDCNSPMNCT",
+  PDCNSPMNCT: "PDCNSPMNCT",
 
   /**
    * paid non-payee payable prior-period electronic amount
    */
-  paidnonpayeepayablepriorperiodelectronicamount: "PDNPPPELAT",
+  PDNPPPELAT: "PDNPPPELAT",
 
   /**
    * paid non-payee payable prior-period electronic count
    */
-  paidnonpayeepayablepriorperiodelectroniccount: "PDNPPPELCT",
+  PDNPPPELCT: "PDNPPPELCT",
 
   /**
    * paid non-payee payable prior-period manual amount
    */
-  paidnonpayeepayablepriorperiodmanualamount: "PDNPPPMNAT",
+  PDNPPPMNAT: "PDNPPPMNAT",
 
   /**
    * paid non-payee payable prior-period manual count
    */
-  paidnonpayeepayablepriorperiodmanualcount: "PDNPPPMNCT",
+  PDNPPPMNCT: "PDNPPPMNCT",
 
   /**
    * paid non-payee payable same-period electronic amount
    */
-  paidnonpayeepayablesameperiodelectronicamount: "PDNPSPELAT",
+  PDNPSPELAT: "PDNPSPELAT",
 
   /**
    * paid non-payee payable same-period electronic count
    */
-  paidnonpayeepayablesameperiodelectroniccount: "PDNPSPELCT",
+  PDNPSPELCT: "PDNPSPELCT",
 
   /**
    * paid non-payee payable same-period manual amount
    */
-  paidnonpayeepayablesameperiodmanualamount: "PDNPSPMNAT",
+  PDNPSPMNAT: "PDNPSPMNAT",
 
   /**
    * paid non-payee payable same-period manual count
    */
-  paidnonpayeepayablesameperiodmanualcount: "PDNPSPMNCT",
+  PDNPSPMNCT: "PDNPSPMNCT",
 
   /**
    * paid payee payable prior-period electronic amount
    */
-  paidpayeepayablepriorperiodelectronicamount: "PDPPPPELAT",
+  PDPPPPELAT: "PDPPPPELAT",
 
   /**
    * paid payee payable prior-period electronic count
    */
-  paidpayeepayablepriorperiodelectroniccount: "PDPPPPELCT",
+  PDPPPPELCT: "PDPPPPELCT",
 
   /**
    * paid payee payable prior-period manual amount
    */
-  paidpayeepayablepriorperiodmanualamount: "PDPPPPMNAT",
+  PDPPPPMNAT: "PDPPPPMNAT",
 
   /**
    * paid payee payable prior-period manual count
    */
-  paidpayeepayablepriorperiodmanualcount: "PDPPPPMNCT",
+  PDPPPPMNCT: "PDPPPPMNCT",
 
   /**
    * paid payee payable same-period electronic amount
    */
-  paidpayeepayablesameperiodelectronicamount: "PDPPSPELAT",
+  PDPPSPELAT: "PDPPSPELAT",
 
   /**
    * paid payee payable same-period electronic count
    */
-  paidpayeepayablesameperiodelectroniccount: "PDPPSPELCT",
+  PDPPSPELCT: "PDPPSPELCT",
 
   /**
    * paid payee payable same-period manual amount
    */
-  paidpayeepayablesameperiodmanualamount: "PDPPSPMNAT",
+  PDPPSPMNAT: "PDPPSPMNAT",
 
   /**
    * paid payee payable same-period manual count
    */
-  paidpayeepayablesameperiodmanualcount: "PDPPSPMNCT",
+  PDPPSPMNCT: "PDPPSPMNCT",
 
   /**
    * InvoiceElementSubmitted
    */
-  InvoiceElementSubmitted: "_InvoiceElementSubmitted",
+  _InvoiceElementSubmitted: "_InvoiceElementSubmitted",
 
   /**
    * submitted billed electronic amount
    */
-  submittedbilledelectronicamount: "SBBLELAT",
+  SBBLELAT: "SBBLELAT",
 
   /**
    * submitted billed electronic amount
    */
-  submittedbilledelectronicamount: "SBBLAT",
+  SBBLAT: "SBBLAT",
 
   /**
    * submitted billed electronic count
    */
-  submittedbilledelectroniccount: "SBBLELCT",
+  SBBLELCT: "SBBLELCT",
 
   /**
    * submitted billed electronic count
    */
-  submittedbilledelectroniccount: "SBBLCT",
+  SBBLCT: "SBBLCT",
 
   /**
    * submitted nullified electronic amount
    */
-  submittednullifiedelectronicamount: "SBNFELAT",
+  SBNFELAT: "SBNFELAT",
 
   /**
    * submitted nullified electronic amount
    */
-  submittednullifiedelectronicamount: "SBCNAT",
+  SBCNAT: "SBCNAT",
 
   /**
    * submitted cancelled electronic count
    */
-  submittedcancelledelectroniccount: "SBNFELCT",
+  SBNFELCT: "SBNFELCT",
 
   /**
    * submitted cancelled electronic count
    */
-  submittedcancelledelectroniccount: "SBCNCT",
+  SBCNCT: "SBCNCT",
 
   /**
    * submitted pending electronic amount
    */
-  submittedpendingelectronicamount: "SBPDELAT",
+  SBPDELAT: "SBPDELAT",
 
   /**
    * submitted pending electronic amount
    */
-  submittedpendingelectronicamount: "SBPDAT",
+  SBPDAT: "SBPDAT",
 
   /**
    * submitted pending electronic count
    */
-  submittedpendingelectroniccount: "SBPDELCT",
+  SBPDELCT: "SBPDELCT",
 
   /**
    * submitted pending electronic count
    */
-  submittedpendingelectroniccount: "SBPDCT",
+  SBPDCT: "SBPDCT",
 
   /**
    * ActInvoiceOverrideCode
    */
-  ActInvoiceOverrideCode: "_ActInvoiceOverrideCode",
+  _ActInvoiceOverrideCode: "_ActInvoiceOverrideCode",
 
   /**
    * coverage problem
    */
-  coverageproblem: "COVGE",
+  COVGE: "COVGE",
 
   /**
    * electronic form to follow
    */
-  electronicformtofollow: "EFORM",
+  EFORM: "EFORM",
 
   /**
    * fax to follow
    */
-  faxtofollow: "FAX",
+  FAX: "FAX",
 
   /**
    * good faith indicator
    */
-  goodfaithindicator: "GFTH",
+  GFTH: "GFTH",
 
   /**
    * late invoice
    */
-  lateinvoice: "LATE",
+  LATE: "LATE",
 
   /**
    * manual review
    */
-  manualreview: "MANUAL",
+  MANUAL: "MANUAL",
 
   /**
    * out of jurisdiction
    */
-  outofjurisdiction: "OOJ",
+  OOJ: "OOJ",
 
   /**
    * orthodontic service
    */
-  orthodonticservice: "ORTHO",
+  ORTHO: "ORTHO",
 
   /**
    * paper documentation to follow
    */
-  paperdocumentationtofollow: "PAPER",
+  PAPER: "PAPER",
 
   /**
    * public insurance exhausted
    */
-  publicinsuranceexhausted: "PIE",
+  PIE: "PIE",
 
   /**
    * delayed by a previous payor
    */
-  delayedbyapreviouspayor: "PYRDELAY",
+  PYRDELAY: "PYRDELAY",
 
   /**
    * referral not required
    */
-  referralnotrequired: "REFNR",
+  REFNR: "REFNR",
 
   /**
    * repeated service
    */
-  repeatedservice: "REPSERV",
+  REPSERV: "REPSERV",
 
   /**
    * unrelated service
    */
-  unrelatedservice: "UNRELAT",
+  UNRELAT: "UNRELAT",
 
   /**
    * verbal authorization
    */
-  verbalauthorization: "VERBAUTH",
+  VERBAUTH: "VERBAUTH",
 
   /**
    * ActListCode
    */
-  ActListCode: "_ActListCode",
+  _ActListCode: "_ActListCode",
 
   /**
    * ActObservationList
    */
-  ActObservationList: "_ActObservationList",
+  _ActObservationList: "_ActObservationList",
 
   /**
    * care plan
    */
-  careplan: "CARELIST",
+  CARELIST: "CARELIST",
 
   /**
    * condition list
    */
-  conditionlist: "CONDLIST",
+  CONDLIST: "CONDLIST",
 
   /**
    * intolerance list
    */
-  intolerancelist: "INTOLIST",
+  INTOLIST: "INTOLIST",
 
   /**
    * problem list
    */
-  problemlist: "PROBLIST",
+  PROBLIST: "PROBLIST",
 
   /**
    * risk factors
    */
-  riskfactors: "RISKLIST",
+  RISKLIST: "RISKLIST",
 
   /**
    * goal list
    */
-  goallist: "GOALLIST",
+  GOALLIST: "GOALLIST",
 
   /**
    * ActTherapyDurationWorkingListCode
    */
-  ActTherapyDurationWorkingListCode: "_ActTherapyDurationWorkingListCode",
+  _ActTherapyDurationWorkingListCode: "_ActTherapyDurationWorkingListCode",
 
   /**
    * act medication therapy duration working list
    */
-  actmedicationtherapydurationworkinglist:
+  _ActMedicationTherapyDurationWorkingListCode:
     "_ActMedicationTherapyDurationWorkingListCode",
 
   /**
    * short term/acute
    */
-  shorttermacute: "ACU",
+  ACU: "ACU",
 
   /**
    * continuous/chronic
    */
-  continuouschronic: "CHRON",
+  CHRON: "CHRON",
 
   /**
    * one time
    */
-  onetime: "ONET",
+  ONET: "ONET",
 
   /**
    * as needed
    */
-  asneeded: "PRN",
+  PRN: "PRN",
 
   /**
    * medication list
    */
-  medicationlist: "MEDLIST",
+  MEDLIST: "MEDLIST",
 
   /**
    * current medication list
    */
-  currentmedicationlist: "CURMEDLIST",
+  CURMEDLIST: "CURMEDLIST",
 
   /**
    * discharge medication list
    */
-  dischargemedicationlist: "DISCMEDLIST",
+  DISCMEDLIST: "DISCMEDLIST",
 
   /**
    * medication history
    */
-  medicationhistory: "HISTMEDLIST",
+  HISTMEDLIST: "HISTMEDLIST",
 
   /**
    * ActProcedureCategoryList
    */
-  ActProcedureCategoryList: "_ActProcedureCategoryList",
+  _ActProcedureCategoryList: "_ActProcedureCategoryList",
 
   /**
    * ActMonitoringProtocolCode
    */
-  ActMonitoringProtocolCode: "_ActMonitoringProtocolCode",
+  _ActMonitoringProtocolCode: "_ActMonitoringProtocolCode",
 
   /**
    * Controlled Substance
    */
-  ControlledSubstance: "CTLSUB",
+  CTLSUB: "CTLSUB",
 
   /**
    * DEADrugSchedule
    */
-  DEADrugSchedule: "_DEADrugSchedule",
+  _DEADrugSchedule: "_DEADrugSchedule",
 
   /**
    * investigational
    */
-  investigational: "INV",
+  INV: "INV",
 
   /**
    * limited use
    */
-  limiteduse: "LU",
+  LU: "LU",
 
   /**
    * non prescription medicine
    */
-  nonprescriptionmedicine: "OTC",
+  OTC: "OTC",
 
   /**
    * prescription only medicine
    */
-  prescriptiononlymedicine: "RX",
+  RX: "RX",
 
   /**
    * special authorization
    */
-  specialauthorization: "SA",
+  SA: "SA",
 
   /**
    * special access
    */
-  specialaccess: "SAC",
+  SAC: "SAC",
 
   /**
    * ActNonObservationIndicationCode
    */
-  ActNonObservationIndicationCode: "_ActNonObservationIndicationCode",
+  _ActNonObservationIndicationCode: "_ActNonObservationIndicationCode",
 
   /**
    * imaging study requiring contrast
    */
-  imagingstudyrequiringcontrast: "IND01",
+  IND01: "IND01",
 
   /**
    * colonoscopy prep
    */
-  colonoscopyprep: "IND02",
+  IND02: "IND02",
 
   /**
    * prophylaxis
    */
-  prophylaxis: "IND03",
+  IND03: "IND03",
 
   /**
    * surgical prophylaxis
    */
-  surgicalprophylaxis: "IND04",
+  IND04: "IND04",
 
   /**
    * pregnancy prophylaxis
    */
-  pregnancyprophylaxis: "IND05",
+  IND05: "IND05",
 
   /**
    * act observation verification
    */
-  actobservationverification: "_ActObservationVerificationType",
+  _ActObservationVerificationType: "_ActObservationVerificationType",
 
   /**
    * verify paper
    */
-  verifypaper: "VFPAPER",
+  VFPAPER: "VFPAPER",
 
   /**
    * verify paper
    */
-  verifypaper: "VRFPAPER",
+  VRFPAPER: "VRFPAPER",
 
   /**
    * ActPaymentCode
    */
-  ActPaymentCode: "_ActPaymentCode",
+  _ActPaymentCode: "_ActPaymentCode",
 
   /**
    * Automated Clearing House
    */
-  AutomatedClearingHouse: "ACH",
+  ACH: "ACH",
 
   /**
    * Cheque
    */
-  Cheque: "CHK",
+  CHK: "CHK",
 
   /**
    * Direct Deposit
    */
-  DirectDeposit: "DDP",
+  DDP: "DDP",
 
   /**
    * Non-Payment Data
    */
-  NonPaymentData: "NON",
+  NON: "NON",
 
   /**
    * ActPharmacySupplyType
    */
-  ActPharmacySupplyType: "_ActPharmacySupplyType",
+  _ActPharmacySupplyType: "_ActPharmacySupplyType",
 
   /**
    * Daily Fill
    */
-  DailyFill: "DF",
+  DF: "DF",
 
   /**
    * Emergency Supply
    */
-  EmergencySupply: "EM",
+  EM: "EM",
 
   /**
    * Script Owing
    */
-  ScriptOwing: "SO",
+  SO: "SO",
 
   /**
    * First Fill
    */
-  FirstFill: "FF",
+  FF: "FF",
 
   /**
    * First Fill - Complete
    */
-  FirstFillComplete: "FFC",
+  FFC: "FFC",
 
   /**
    * First Fill - Part Fill
    */
-  FirstFillPartFill: "FFP",
+  FFP: "FFP",
 
   /**
    * first fill, partial strength
    */
-  firstfillpartialstrength: "FFSS",
+  FFSS: "FFSS",
 
   /**
    * Trial Fill
    */
-  TrialFill: "TF",
+  TF: "TF",
 
   /**
    * Floor stock
    */
-  Floorstock: "FS",
+  FS: "FS",
 
   /**
    * Manufacturer Sample
    */
-  ManufacturerSample: "MS",
+  MS: "MS",
 
   /**
    * Refill
    */
-  Refill: "RF",
+  RF: "RF",
 
   /**
    * Unit Dose
    */
-  UnitDose: "UD",
+  UD: "UD",
 
   /**
    * Refill - Complete
    */
-  RefillComplete: "RFC",
+  RFC: "RFC",
 
   /**
    * refill complete partial strength
    */
-  refillcompletepartialstrength: "RFCS",
+  RFCS: "RFCS",
 
   /**
    * Refill (First fill this facility)
    */
-  RefillFirstfillthisfacility: "RFF",
+  RFF: "RFF",
 
   /**
    * refill partial strength (first fill this facility)
    */
-  refillpartialstrengthfirstfillthisfacility: "RFFS",
+  RFFS: "RFFS",
 
   /**
    * Refill - Part Fill
    */
-  RefillPartFill: "RFP",
+  RFP: "RFP",
 
   /**
    * refill part fill partial strength
    */
-  refillpartfillpartialstrength: "RFPS",
+  RFPS: "RFPS",
 
   /**
    * refill partial strength
    */
-  refillpartialstrength: "RFS",
+  RFS: "RFS",
 
   /**
    * Trial Balance
    */
-  TrialBalance: "TB",
+  TB: "TB",
 
   /**
    * trial balance partial strength
    */
-  trialbalancepartialstrength: "TBS",
+  TBS: "TBS",
 
   /**
    * unit dose equivalent
    */
-  unitdoseequivalent: "UDE",
+  UDE: "UDE",
 
   /**
    * ActPolicyType
    */
-  ActPolicyType: "_ActPolicyType",
+  _ActPolicyType: "_ActPolicyType",
 
   /**
    * _ActConsent
@@ -9706,42 +9611,42 @@ export const XActBillableCodeCode = {
   /**
    * grantor choice
    */
-  grantorchoice: "GRANTORCHOICE",
+  GRANTORCHOICE: "GRANTORCHOICE",
 
   /**
    * implied consent
    */
-  impliedconsent: "IMPLIED",
+  IMPLIED: "IMPLIED",
 
   /**
    * implied consent with opportunity to dissent
    */
-  impliedconsentwithopportunitytodissent: "IMPLIEDD",
+  IMPLIEDD: "IMPLIEDD",
 
   /**
    * no consent
    */
-  noconsent: "NOCONSENT",
+  NOCONSENT: "NOCONSENT",
 
   /**
    * opt-in
    */
-  optin: "OPTIN",
+  OPTIN: "OPTIN",
 
   /**
    * opt-in with restrictions
    */
-  optinwithrestrictions: "OPTINR",
+  OPTINR: "OPTINR",
 
   /**
    * op-out
    */
-  opout: "OPTOUT",
+  OPTOUT: "OPTOUT",
 
   /**
    * opt-out with exceptions
    */
-  optoutwithexceptions: "OPTOUTE",
+  OPTOUTE: "OPTOUTE",
 
   /**
    * _ActPrivacyConsentDirective
@@ -9756,12 +9661,12 @@ export const XActBillableCodeCode = {
   /**
    * GDPR Consent Directive
    */
-  GDPRConsentDirective: "GDPRCD",
+  GDPRCD: "GDPRCD",
 
   /**
    * GDPR Research Consent Directive
    */
-  GDPRResearchConsentDirective: "GDPRResearchCD",
+  GDPRResearchCD: "GDPRResearchCD",
 
   /**
    * _ActGenericConsentDirective
@@ -9771,22 +9676,22 @@ export const XActBillableCodeCode = {
   /**
    * opt-in to personal information or effect collection in a registry or repository
    */
-  optintopersonalinformationoreffectcollectioninaregistryorrepository: "OIC",
+  OIC: "OIC",
 
   /**
    * opt-in to personal information or effect sharing via a registry or repository
    */
-  optintopersonalinformationoreffectsharingviaaregistryorrepository: "OIS",
+  OIS: "OIS",
 
   /**
    * opt-out of personal information or effect collection in a registry or repository
    */
-  optoutofpersonalinformationoreffectcollectioninaregistryorrepository: "OOC",
+  OOC: "OOC",
 
   /**
    * opt-out of personal information or effect sharing via a registry or repository
    */
-  optoutofpersonalinformationoreffectsharingviaaregistryorrepository: "OOS",
+  OOS: "OOS",
 
   /**
    * _ActUSPrivacyConsentDirective
@@ -9796,67 +9701,62 @@ export const XActBillableCodeCode = {
   /**
    * 42 CFR Part 2 consent directive
    */
-  FortyTwoCFRPart2consentdirective: "42CFRPart2CD",
+  "42CFRPart2CD": "42CFRPart2CD",
 
   /**
    * Compound HIPAA Research Authorization and Informed Consent for Research
    */
-  CompoundHIPAAResearchAuthorizationandInformedConsentforResearch:
-    "CompoundResearchCD",
+  CompoundResearchCD: "CompoundResearchCD",
 
   /**
    * HIPAA Authorization Consent Directive
    */
-  HIPAAAuthorizationConsentDirective: "HIPAAAuthCD",
+  HIPAAAuthCD: "HIPAAAuthCD",
 
   /**
    * HIPAA Consent Directive
    */
-  HIPAAConsentDirective: "HIPAAConsentCD",
+  HIPAAConsentCD: "HIPAAConsentCD",
 
   /**
    * HIPAA Authorization for Disclosure for Research Consent Directive
    */
-  HIPAAAuthorizationforDisclosureforResearchConsentDirective:
-    "HIPAAResearchAuthCD",
+  HIPAAResearchAuthCD: "HIPAAResearchAuthCD",
 
   /**
    * HIPAA Right of Access Directive
    */
-  HIPAARightofAccessDirective: "HIPAAROAD",
+  HIPAAROAD: "HIPAAROAD",
 
   /**
    * Michigan Consent to Share Behavioral Health Information for Care Coordination Purposes
    */
-  MichiganConsenttoShareBehavioralHealthInformationforCareCoordinationPurposes:
-    "MDHHS-5515",
+  "MDHHS-5515": "MDHHS-5515",
 
   /**
    * Michigan Consent to Share Behavioral Health Information for Care Coordination Purposes-Michigan Mental Health Code
    */
-  MichiganConsenttoShareBehavioralHealthInformationforCareCoordinationPurposesMichiganMentalHealthCode:
-    "MDHHS-5515MMHC",
+  "MDHHS-5515MMHC": "MDHHS-5515MMHC",
 
   /**
    * Michigan Consent to Share Behavioral Health Information for Care Coordination Purposes-US 42 CFR Part 2
    */
-  MichiganConsenttoShareBehavioralHealthInformationforCareCoordinationPurposesUS42CFRPart2:
-    "MDHHS-5515Part2",
+  "MDHHS-5515Part2": "MDHHS-5515Part2",
 
   /**
    * Informed Assent for Research
    */
-  InformedAssentforResearch: "USResearchInformedAssent",
+  USResearchInformedAssent: "USResearchInformedAssent",
 
   /**
    * Informed Consent for Research
    */
-  InformedConsentforResearch: "USResearchInformedConsent",
+  USResearchInformedConsent: "USResearchInformedConsent",
 
   /**
    * Broad Consent for Research
    */
-  BroadConsentforResearch: "USBroadResearchConsent",
+  USBroadResearchConsent: "USBroadResearchConsent",
 
   /**
    * _ActInformationActionPolicy
@@ -9866,52 +9766,52 @@ export const XActBillableCodeCode = {
   /**
    * access information
    */
-  accessinformation: "INFOACCESS",
+  INFOACCESS: "INFOACCESS",
 
   /**
    * collect information
    */
-  collectinformation: "INFOCOLLECT",
+  INFOCOLLECT: "INFOCOLLECT",
 
   /**
    * deidentify information
    */
-  deidentifyinformation: "INFODEIDENTIFIY",
+  INFODEIDENTIFIY: "INFODEIDENTIFIY",
 
   /**
    * disclose information
    */
-  discloseinformation: "INFODISCLOSE",
+  INFODISCLOSE: "INFODISCLOSE",
 
   /**
    * mask information
    */
-  maskinformation: "INFOMASK",
+  INFOMASK: "INFOMASK",
 
   /**
    * read only information
    */
-  readonlyinformation: "INFOREADONLY",
+  INFOREADONLY: "INFOREADONLY",
 
   /**
    * redact information
    */
-  redactinformation: "INFOREDACT",
+  INFOREDACT: "INFOREDACT",
 
   /**
    * redisclose information
    */
-  rediscloseinformation: "INFOREDISCLOSE",
+  INFOREDISCLOSE: "INFOREDISCLOSE",
 
   /**
    * reidentify information
    */
-  reidentifyinformation: "INFOREIDENTIFY",
+  INFOREIDENTIFY: "INFOREIDENTIFY",
 
   /**
    * use information
    */
-  useinformation: "INFOUSE",
+  INFOUSE: "INFOUSE",
 
   /**
    * _ActInformationPolicy
@@ -9921,142 +9821,142 @@ export const XActBillableCodeCode = {
   /**
    * jurisdictional information policy
    */
-  jurisdictionalinformationpolicy: "JurisIP",
+  JurisIP: "JurisIP",
 
   /**
    * jurisdictional controlled unclassified information policy
    */
-  jurisdictionalcontrolledunclassifiedinformationpolicy: "JurisCUI",
+  JurisCUI: "JurisCUI",
 
   /**
    * jurisdictional de-identified information policy
    */
-  jurisdictionaldeidentifiedinformationpolicy: "JurisDEID",
+  JurisDEID: "JurisDEID",
 
   /**
    * jurisdictional limited data set
    */
-  jurisdictionallimiteddataset: "JurisLDS",
+  JurisLDS: "JurisLDS",
 
   /**
    * jurisdictional non-sensitive information policy
    */
-  jurisdictionalnonsensitiveinformationpolicy: "JurisNSI",
+  JurisNSI: "JurisNSI",
 
   /**
    * jurisdictional public information policy
    */
-  jurisdictionalpublicinformationpolicy: "JurisPI",
+  JurisPI: "JurisPI",
 
   /**
    * jurisdictional specified controlled unclassified information policy
    */
-  jurisdictionalspecifiedcontrolledunclassifiedinformationpolicy: "JurisSP-CUI",
+  "JurisSP-CUI": "JurisSP-CUI",
 
   /**
    * jurisdictional uncontrolled unclassified information policy
    */
-  jurisdictionaluncontrolledunclassifiedinformationpolicy: "JurisUUI",
+  JurisUUI: "JurisUUI",
 
   /**
    * organizational information policy
    */
-  organizationalinformationpolicy: "OrgIP",
+  OrgIP: "OrgIP",
 
   /**
    * organizational basic controlled unclassified information policy
    */
-  organizationalbasiccontrolledunclassifiedinformationpolicy: "OrgCUI",
+  OrgCUI: "OrgCUI",
 
   /**
    * organizational de-identified informati)on policy
    */
-  organizationaldeidentifiedinformationpolicy: "OrgDEID",
+  OrgDEID: "OrgDEID",
 
   /**
    * organizational limited data set information policy
    */
-  organizationallimiteddatasetinformationpolicy: "OrgLDS",
+  OrgLDS: "OrgLDS",
 
   /**
    * organizational non-sensitive information policy
    */
-  organizationalnonsensitiveinformationpolicy: "OrgNSI",
+  OrgNSI: "OrgNSI",
 
   /**
    * organizational public information policy
    */
-  organizationalpublicinformationpolicy: "OrgPI",
+  OrgPI: "OrgPI",
 
   /**
    * organizational specified controlled unclassified information policy
    */
-  organizationalspecifiedcontrolledunclassifiedinformationpolicy: "OrgSP-CUI",
+  "OrgSP-CUI": "OrgSP-CUI",
 
   /**
    * organizational uncontrolled unclassified information policy
    */
-  organizationaluncontrolledunclassifiedinformationpolicy: "OrgUUI",
+  OrgUUI: "OrgUUI",
 
   /**
    * personal information policy
    */
-  personalinformationpolicy: "PersIP",
+  PersIP: "PersIP",
 
   /**
    * personal de-identified information policy
    */
-  personaldeidentifiedinformationpolicy: "PersDEID",
+  PersDEID: "PersDEID",
 
   /**
    * personal limited data set information policy
    */
-  personallimiteddatasetinformationpolicy: "PersLDS",
+  PersLDS: "PersLDS",
 
   /**
    * personal non-sensitive information policy
    */
-  personalnonsensitiveinformationpolicy: "PersNSI",
+  PersNSI: "PersNSI",
 
   /**
    * personal public information policy
    */
-  personalpublicinformationpolicy: "PersPI",
+  PersPI: "PersPI",
 
   /**
    * ActPrivacyPolicy
    */
-  ActPrivacyPolicy: "_ActPrivacyPolicy",
+  _ActPrivacyPolicy: "_ActPrivacyPolicy",
 
   /**
    * ActConsentDirective
    */
-  ActConsentDirective: "_ActConsentDirective",
+  _ActConsentDirective: "_ActConsentDirective",
 
   /**
    * emergency only
    */
-  emergencyonly: "EMRGONLY",
+  EMRGONLY: "EMRGONLY",
 
   /**
    * notice of privacy practices
    */
-  noticeofprivacypractices: "NOPP",
+  NOPP: "NOPP",
 
   /**
    * ActPrivacyLaw
    */
-  ActPrivacyLaw: "_ActPrivacyLaw",
+  _ActPrivacyLaw: "_ActPrivacyLaw",
 
   /**
    * General Data Protection Regulation
    */
-  GeneralDataProtectionRegulation: "_ActGDPRPrivacyLaw",
+  _ActGDPRPrivacyLaw: "_ActGDPRPrivacyLaw",
 
   /**
    * GDPR Consent
    */
-  GDPRConsent: "GDPRCONSENT",
+  GDPRCONSENT: "GDPRCONSENT",
 
   /**
    * _ActUSPrivacyLaw
@@ -10066,7 +9966,7 @@ export const XActBillableCodeCode = {
   /**
    * 42 CFR Part2
    */
-  FortyTwoCFRPart2: "42CFRPart2",
+  "42CFRPart2": "42CFRPart2",
 
   /**
    * Common Rule
@@ -10076,7 +9976,7 @@ export const XActBillableCodeCode = {
   /**
    * HIPAA Authorization for Disclosure
    */
-  HIPAAAuthorizationforDisclosure: "HIPAAAuth",
+  HIPAAAuth: "HIPAAAuth",
 
   /**
    * HIPAA Consent
@@ -10086,22 +9986,22 @@ export const XActBillableCodeCode = {
   /**
    * HIPAA notice of privacy practices
    */
-  HIPAAnoticeofprivacypractices: "HIPAANOPP",
+  HIPAANOPP: "HIPAANOPP",
 
   /**
    * HIPAA psychotherapy notes
    */
-  HIPAApsychotherapynotes: "HIPAAPsyNotes",
+  HIPAAPsyNotes: "HIPAAPsyNotes",
 
   /**
    * HIPAA Right of Access
    */
-  HIPAARightofAccess: "HIPAAROA",
+  HIPAAROA: "HIPAAROA",
 
   /**
    * HIPAA self-pay
    */
-  HIPAAselfpay: "HIPAASelfPay",
+  HIPAASelfPay: "HIPAASelfPay",
 
   /**
    * Title 38 Section 7332
@@ -10111,502 +10011,502 @@ export const XActBillableCodeCode = {
   /**
    * HIPAA Consent
    */
-  HIPAAConsent: "a) HIPAAConsent",
+  "a) HIPAAConsent": "a) HIPAAConsent",
 
   /**
    * InformationSensitivityPolicy
    */
-  InformationSensitivityPolicy: "_InformationSensitivityPolicy",
+  _InformationSensitivityPolicy: "_InformationSensitivityPolicy",
 
   /**
    * ActInformationSensitivityPolicy
    */
-  ActInformationSensitivityPolicy: "_ActInformationSensitivityPolicy",
+  _ActInformationSensitivityPolicy: "_ActInformationSensitivityPolicy",
 
   /**
    * substance abuse information sensitivity
    */
-  substanceabuseinformationsensitivity: "ETH",
+  ETH: "ETH",
 
   /**
    * genetic disease information sensitivity
    */
-  geneticdiseaseinformationsensitivity: "GDIS",
+  GDIS: "GDIS",
 
   /**
    * HIV/AIDS information sensitivity
    */
-  HIVAIDSinformationsensitivity: "HIV",
+  HIV: "HIV",
 
   /**
    * military sexual trauma information sensitivity
    */
-  militarysexualtraumainformationsensitivity: "MST",
+  MST: "MST",
 
   /**
    * pregnancy information sensitivity
    */
-  pregnancyinformationsensitivity: "PREGNANT",
+  PREGNANT: "PREGNANT",
 
   /**
    * sickle cell anemia information sensitivity
    */
-  sicklecellanemiainformationsensitivity: "SCA",
+  SCA: "SCA",
 
   /**
    * sexual assault, abuse, or domestic violence information sensitivity
    */
-  sexualassaultabuseordomesticviolenceinformationsensitivity: "SDV",
+  SDV: "SDV",
 
   /**
    * sexuality and reproductive health information sensitivity
    */
-  sexualityandreproductivehealthinformationsensitivity: "SEX",
+  SEX: "SEX",
 
   /**
    * specially protected information sensitivity
    */
-  speciallyprotectedinformationsensitivity: "SPI",
+  SPI: "SPI",
 
   /**
    * behavioral health information sensitivity
    */
-  behavioralhealthinformationsensitivity: "BH",
+  BH: "BH",
 
   /**
    * cognitive disability information sensitivity
    */
-  cognitivedisabilityinformationsensitivity: "COGN",
+  COGN: "COGN",
 
   /**
    * developmental disability information sensitivity
    */
-  developmentaldisabilityinformationsensitivity: "DVD",
+  DVD: "DVD",
 
   /**
    * emotional disturbance information sensitivity
    */
-  emotionaldisturbanceinformationsensitivity: "EMOTDIS",
+  EMOTDIS: "EMOTDIS",
 
   /**
    * mental health information sensitivity
    */
-  mentalhealthinformationsensitivity: "MH",
+  MH: "MH",
 
   /**
    * psychiatry disorder information sensitivity
    */
-  psychiatrydisorderinformationsensitivity: "PSY",
+  PSY: "PSY",
 
   /**
    * psychotherapy note information sensitivity
    */
-  psychotherapynoteinformationsensitivity: "PSYTHPN",
+  PSYTHPN: "PSYTHPN",
 
   /**
    * substance use disorder information sensitivity
    */
-  substanceusedisorderinformationsensitivity: "SUD",
+  SUD: "SUD",
 
   /**
    * alcohol use disorder information sensitivity
    */
-  alcoholusedisorderinformationsensitivity: "ETHUD",
+  ETHUD: "ETHUD",
 
   /**
    * opioid use disorder information sensitivity
    */
-  opioidusedisorderinformationsensitivity: "OPIOIDUD",
+  OPIOIDUD: "OPIOIDUD",
 
   /**
    * sexually transmitted disease information sensitivity
    */
-  sexuallytransmitteddiseaseinformationsensitivity: "STD",
+  STD: "STD",
 
   /**
    * taboo
    */
-  taboo: "TBOO",
+  TBOO: "TBOO",
 
   /**
    * violence information sensitivity
    */
-  violenceinformationsensitivity: "VIO",
+  VIO: "VIO",
 
   /**
    * Identifier Sensitivity
    */
-  IdentifierSensitivity: "IDS",
+  IDS: "IDS",
 
   /**
    * sickle cell
    */
-  sicklecell: "SICKLE",
+  SICKLE: "SICKLE",
 
   /**
    * EntityInformationSensitivityPolicy
    */
-  EntityInformationSensitivityPolicy: "_EntitySensitivityPolicyType",
+  _EntitySensitivityPolicyType: "_EntitySensitivityPolicyType",
 
   /**
    * all demographic information sensitivity
    */
-  alldemographicinformationsensitivity: "DEMO",
+  DEMO: "DEMO",
 
   /**
    * date of birth information sensitivity
    */
-  dateofbirthinformationsensitivity: "DOB",
+  DOB: "DOB",
 
   /**
    * gender and sexual orientation information sensitivity
    */
-  genderandsexualorientationinformationsensitivity: "GENDER",
+  GENDER: "GENDER",
 
   /**
    * living arrangement information sensitivity
    */
-  livingarrangementinformationsensitivity: "LIVARG",
+  LIVARG: "LIVARG",
 
   /**
    * marital status information sensitivity
    */
-  maritalstatusinformationsensitivity: "MARST",
+  MARST: "MARST",
 
   /**
    * patient location
    */
-  patientlocation: "PATLOC",
+  PATLOC: "PATLOC",
 
   /**
    * race information sensitivity
    */
-  raceinformationsensitivity: "RACE",
+  RACE: "RACE",
 
   /**
    * religion information sensitivity
    */
-  religioninformationsensitivity: "REL",
+  REL: "REL",
 
   /**
    * RoleInformationSensitivityPolicy
    */
-  RoleInformationSensitivityPolicy: "_RoleInformationSensitivityPolicy",
+  _RoleInformationSensitivityPolicy: "_RoleInformationSensitivityPolicy",
 
   /**
    * business information sensitivity
    */
-  businessinformationsensitivity: "B",
+  B: "B",
 
   /**
    * employer information sensitivity
    */
-  employerinformationsensitivity: "EMPL",
+  EMPL: "EMPL",
 
   /**
    * location information sensitivity
    */
-  locationinformationsensitivity: "LOCIS",
+  LOCIS: "LOCIS",
 
   /**
    * sensitive service provider information sensitivity
    */
-  sensitiveserviceproviderinformationsensitivity: "SSP",
+  SSP: "SSP",
 
   /**
    * adolescent information sensitivity
    */
-  adolescentinformationsensitivity: "ADOL",
+  ADOL: "ADOL",
 
   /**
    * celebrity information sensitivity
    */
-  celebrityinformationsensitivity: "CEL",
+  CEL: "CEL",
 
   /**
    * celebrity information sensitivity
    */
-  celebrityinformationsensitivity: "VIP",
+  VIP: "VIP",
 
   /**
    * diagnosis information sensitivity
    */
-  diagnosisinformationsensitivity: "DIA",
+  DIA: "DIA",
 
   /**
    * drug information sensitivity
    */
-  druginformationsensitivity: "DRGIS",
+  DRGIS: "DRGIS",
 
   /**
    * employee information sensitivity
    */
-  employeeinformationsensitivity: "EMP",
+  EMP: "EMP",
 
   /**
    * patient default information sensitivity
    */
-  patientdefaultinformationsensitivity: "PDS",
+  PDS: "PDS",
 
   /**
    * physician requested information sensitivity
    */
-  physicianrequestedinformationsensitivity: "PHY",
+  PHY: "PHY",
 
   /**
    * patient requested information sensitivity
    */
-  patientrequestedinformationsensitivity: "PRS",
+  PRS: "PRS",
 
   /**
    * compartment
    */
-  compartment: "COMPT",
+  COMPT: "COMPT",
 
   /**
    * accountable care organization compartment
    */
-  accountablecareorganizationcompartment: "ACOCOMPT",
+  ACOCOMPT: "ACOCOMPT",
 
   /**
    * CDS system compartment
    */
-  CDSsystemcompartment: "CDSSCOMPT",
+  CDSSCOMPT: "CDSSCOMPT",
 
   /**
    * care team compartment
    */
-  careteamcompartment: "CTCOMPT",
+  CTCOMPT: "CTCOMPT",
 
   /**
    * financial management compartment
    */
-  financialmanagementcompartment: "FMCOMPT",
+  FMCOMPT: "FMCOMPT",
 
   /**
    * human resource compartment
    */
-  humanresourcecompartment: "HRCOMPT",
+  HRCOMPT: "HRCOMPT",
 
   /**
    * legitimate relationship compartment
    */
-  legitimaterelationshipcompartment: "LRCOMPT",
+  LRCOMPT: "LRCOMPT",
 
   /**
    * patient administration compartment
    */
-  patientadministrationcompartment: "PACOMPT",
+  PACOMPT: "PACOMPT",
 
   /**
    * research project compartment
    */
-  researchprojectcompartment: "RESCOMPT",
+  RESCOMPT: "RESCOMPT",
 
   /**
    * records management compartment
    */
-  recordsmanagementcompartment: "RMGTCOMPT",
+  RMGTCOMPT: "RMGTCOMPT",
 
   /**
    * trust policy
    */
-  trustpolicy: "ActTrustPolicyType",
+  ActTrustPolicyType: "ActTrustPolicyType",
 
   /**
    * trust accreditation
    */
-  trustaccreditation: "TRSTACCRD",
+  TRSTACCRD: "TRSTACCRD",
 
   /**
    * trust agreement
    */
-  trustagreement: "TRSTAGRE",
+  TRSTAGRE: "TRSTAGRE",
 
   /**
    * trust assurance
    */
-  trustassurance: "TRSTASSUR",
+  TRSTASSUR: "TRSTASSUR",
 
   /**
    * trust certificate
    */
-  trustcertificate: "TRSTCERT",
+  TRSTCERT: "TRSTCERT",
 
   /**
    * trust framework
    */
-  trustframework: "TRSTFWK",
+  TRSTFWK: "TRSTFWK",
 
   /**
    * trust mechanism
    */
-  trustmechanism: "TRSTMEC",
+  TRSTMEC: "TRSTMEC",
 
   /**
    * benefit policy
    */
-  benefitpolicy: "COVPOL",
+  COVPOL: "COVPOL",
 
   /**
    * security policy
    */
-  securitypolicy: "SecurityPolicy",
+  SecurityPolicy: "SecurityPolicy",
 
   /**
    * authorization policy
    */
-  authorizationpolicy: "AUTHPOL",
+  AUTHPOL: "AUTHPOL",
 
   /**
    * access control scheme
    */
-  accesscontrolscheme: "ACCESSCONSCHEME",
+  ACCESSCONSCHEME: "ACCESSCONSCHEME",
 
   /**
    * delegation policy
    */
-  delegationpolicy: "DELEPOL",
+  DELEPOL: "DELEPOL",
 
   /**
    * obligation policy
    */
-  obligationpolicy: "ObligationPolicy",
+  ObligationPolicy: "ObligationPolicy",
 
   /**
    * anonymize
    */
-  anonymize: "ANONY",
+  ANONY: "ANONY",
 
   /**
    * accounting of disclosure
    */
-  accountingofdisclosure: "AOD",
+  AOD: "AOD",
 
   /**
    * audit
    */
-  audit: "AUDIT",
+  AUDIT: "AUDIT",
 
   /**
    * audit trail
    */
-  audittrail: "AUDTR",
+  AUDTR: "AUDTR",
 
   /**
    * comply with policy
    */
-  complywithpolicy: "CPLYPOL",
+  CPLYPOL: "CPLYPOL",
 
   /**
    * comply with confidentiality code
    */
-  complywithconfidentialitycode: "CPLYCC",
+  CPLYCC: "CPLYCC",
 
   /**
    * comply with consent directive
    */
-  complywithconsentdirective: "CPLYCD",
+  CPLYCD: "CPLYCD",
 
   /**
    * comply with controlled unclassified information policy
    */
-  complywithcontrolledunclassifiedinformationpolicy: "CPLYCUI",
+  CPLYCUI: "CPLYCUI",
 
   /**
    * comply with jurisdictional privacy policy
    */
-  complywithjurisdictionalprivacypolicy: "CPLYJPP",
+  CPLYJPP: "CPLYJPP",
 
   /**
    * comply with jurisdictional security policy
    */
-  complywithjurisdictionalsecuritypolicy: "CPLYJSP",
+  CPLYJSP: "CPLYJSP",
 
   /**
    * comply with organizational privacy policy
    */
-  complywithorganizationalprivacypolicy: "CPLYOPP",
+  CPLYOPP: "CPLYOPP",
 
   /**
    * comply with organizational security policy
    */
-  complywithorganizationalsecuritypolicy: "CPLYOSP",
+  CPLYOSP: "CPLYOSP",
 
   /**
    * declassify security label
    */
-  declassifysecuritylabel: "DECLASSIFYLABEL",
+  DECLASSIFYLABEL: "DECLASSIFYLABEL",
 
   /**
    * deidentify
    */
-  deidentify: "DEID",
+  DEID: "DEID",
 
   /**
    * delete after use
    */
-  deleteafteruse: "DELAU",
+  DELAU: "DELAU",
 
   /**
    * downgrade security label
    */
-  downgradesecuritylabel: "DOWNGRDLABEL",
+  DOWNGRDLABEL: "DOWNGRDLABEL",
 
   /**
    * derive security label
    */
-  derivesecuritylabel: "DRIVLABEL",
+  DRIVLABEL: "DRIVLABEL",
 
   /**
    * encrypt
    */
-  encrypt: "ENCRYPT",
+  ENCRYPT: "ENCRYPT",
 
   /**
    * encrypt at rest
    */
-  encryptatrest: "ENCRYPTR",
+  ENCRYPTR: "ENCRYPTR",
 
   /**
    * encrypt in transit
    */
-  encryptintransit: "ENCRYPTT",
+  ENCRYPTT: "ENCRYPTT",
 
   /**
    * encrypt in use
    */
-  encryptinuse: "ENCRYPTU",
+  ENCRYPTU: "ENCRYPTU",
 
   /**
    * human approval
    */
-  humanapproval: "HUAPRV",
+  HUAPRV: "HUAPRV",
 
   /**
    * assign security label
    */
-  assignsecuritylabel: "LABEL",
+  LABEL: "LABEL",
 
   /**
    * mask
    */
-  mask: "MASK",
+  MASK: "MASK",
 
   /**
    * minimum necessary
    */
-  minimumnecessary: "MINEC",
+  MINEC: "MINEC",
 
   /**
    * persist security label
    */
-  persistsecuritylabel: "PERSISTLABEL",
+  PERSISTLABEL: "PERSISTLABEL",
 
   /**
    * privacy mark
    */
-  privacymark: "PRIVMARK",
+  PRIVMARK: "PRIVMARK",
 
   /**
    * CUI Mark
@@ -10616,22 +10516,22 @@ export const XActBillableCodeCode = {
   /**
    * pseudonymize
    */
-  pseudonymize: "PSEUD",
+  PSEUD: "PSEUD",
 
   /**
    * redact
    */
-  redact: "REDACT",
+  REDACT: "REDACT",
 
   /**
    * upgrade security label
    */
-  upgradesecuritylabel: "UPGRDLABEL",
+  UPGRDLABEL: "UPGRDLABEL",
 
   /**
    * privacy mark
    */
-  privacymark: "PrivacyMark",
+  PrivacyMark: "PrivacyMark",
 
   /**
    * ControlledUnclassifiedInformation
@@ -10656,12 +10556,12 @@ export const XActBillableCodeCode = {
   /**
    * (CUI//HLTH)
    */
-  CUIHLTH: "CUIHLTHP",
+  CUIHLTHP: "CUIHLTHP",
 
   /**
    * (CUI)
    */
-  CUI: "CUIP",
+  CUIP: "CUIP",
 
   /**
    * CUI//PRVCY
@@ -10671,32 +10571,32 @@ export const XActBillableCodeCode = {
   /**
    * (CUI//PRVCY)
    */
-  CUIPRVCY: "CUIPRVCYP",
+  CUIPRVCYP: "CUIPRVCYP",
 
   /**
    * CUI//SP-HLTH
    */
-  CUISPHLTH: "CUISP-HLTH",
+  "CUISP-HLTH": "CUISP-HLTH",
 
   /**
    * (CUI//SP-HLTH)
    */
-  CUISPHLTH: "CUISP-HLTHP",
+  "CUISP-HLTHP": "CUISP-HLTHP",
 
   /**
    * CUI//SP-PRVCY
    */
-  CUISPPRVCY: "CUISP-PRVCY",
+  "CUISP-PRVCY": "CUISP-PRVCY",
 
   /**
    * (CUI//SP-PRVCY)
    */
-  CUISPPRVCY: "CUISP-PRVCYP",
+  "CUISP-PRVCYP": "CUISP-PRVCYP",
 
   /**
    * (U)
    */
-  U: "UUI",
+  UUI: "UUI",
 
   /**
    * Security Label Mark
@@ -10706,723 +10606,722 @@ export const XActBillableCodeCode = {
   /**
    * confidential mark
    */
-  confidentialmark: "ConfidentialMark",
+  ConfidentialMark: "ConfidentialMark",
 
   /**
    * copy of original mark
    */
-  copyoforiginalmark: "COPYMark",
+  COPYMark: "COPYMark",
 
   /**
    * deliver only to addressee mark
    */
-  deliveronlytoaddresseemark: "DeliverToAddresseeOnlyMark",
+  DeliverToAddresseeOnlyMark: "DeliverToAddresseeOnlyMark",
 
   /**
    * prohibition against redisclosure mark
    */
-  prohibitionagainstredisclosuremark: "RedisclosureProhibitionMark",
+  RedisclosureProhibitionMark: "RedisclosureProhibitionMark",
 
   /**
    * restricted confidentiality mark
    */
-  restrictedconfidentialitymark: "RestrictedConfidentialityMark",
+  RestrictedConfidentialityMark: "RestrictedConfidentialityMark",
 
   /**
    * Draft Mark
    */
-  DraftMark: "DRAFTMark",
+  DRAFTMark: "DRAFTMark",
 
   /**
    * refrain policy
    */
-  refrainpolicy: "RefrainPolicy",
+  RefrainPolicy: "RefrainPolicy",
 
   /**
    * no disclosure without subject authorization
    */
-  nodisclosurewithoutsubjectauthorization: "NOAUTH",
+  NOAUTH: "NOAUTH",
 
   /**
    * no collection
    */
-  nocollection: "NOCOLLECT",
+  NOCOLLECT: "NOCOLLECT",
 
   /**
    * no disclosure without consent directive
    */
-  nodisclosurewithoutconsentdirective: "NODSCLCD",
+  NODSCLCD: "NODSCLCD",
 
   /**
    * no disclosure without information subject's consent directive
    */
-  nodisclosurewithoutinformationsubjectsconsentdirective: "NODSCLCDS",
+  NODSCLCDS: "NODSCLCDS",
 
   /**
    * no integration
    */
-  nointegration: "NOINTEGRATE",
+  NOINTEGRATE: "NOINTEGRATE",
 
   /**
    * no unlisted entity disclosure
    */
-  nounlistedentitydisclosure: "NOLIST",
+  NOLIST: "NOLIST",
 
   /**
    * no disclosure without MOU
    */
-  nodisclosurewithoutMOU: "NOMOU",
+  NOMOU: "NOMOU",
 
   /**
    * no disclosure without organizational authorization
    */
-  nodisclosurewithoutorganizationalauthorization: "NOORGPOL",
+  NOORGPOL: "NOORGPOL",
 
   /**
    * no disclosure to patient, family or caregivers without attending provider's authorization
    */
-  nodisclosuretopatientfamilyorcaregiverswithoutattendingprovidersauthorization:
-    "NOPAT",
+  NOPAT: "NOPAT",
 
   /**
    * no collection beyond purpose of use
    */
-  nocollectionbeyondpurposeofuse: "NOPERSISTP",
+  NOPERSISTP: "NOPERSISTP",
 
   /**
    * no redisclosure without consent directive
    */
-  noredisclosurewithoutconsentdirective: "NORDSCLCD",
+  NORDSCLCD: "NORDSCLCD",
 
   /**
    * no redisclosure without consent directive
    */
-  noredisclosurewithoutconsentdirective: "NORDSLCD",
+  NORDSLCD: "NORDSLCD",
 
   /**
    * no redisclosure without information subject's consent directive
    */
-  noredisclosurewithoutinformationsubjectsconsentdirective: "NORDSCLCDS",
+  NORDSCLCDS: "NORDSCLCDS",
 
   /**
    * no disclosure without jurisdictional authorization
    */
-  nodisclosurewithoutjurisdictionalauthorization: "NORDSCLW",
+  NORDSCLW: "NORDSCLW",
 
   /**
    * no relinking
    */
-  norelinking: "NORELINK",
+  NORELINK: "NORELINK",
 
   /**
    * no reuse beyond purpose of use
    */
-  noreusebeyondpurposeofuse: "NOREUSE",
+  NOREUSE: "NOREUSE",
 
   /**
    * no unauthorized VIP disclosure
    */
-  nounauthorizedVIPdisclosure: "NOVIP",
+  NOVIP: "NOVIP",
 
   /**
    * no disclosure without originator authorization
    */
-  nodisclosurewithoutoriginatorauthorization: "ORCON",
+  ORCON: "ORCON",
 
   /**
    * ActProductAcquisitionCode
    */
-  ActProductAcquisitionCode: "_ActProductAcquisitionCode",
+  _ActProductAcquisitionCode: "_ActProductAcquisitionCode",
 
   /**
    * Loan
    */
-  Loan: "LOAN",
+  LOAN: "LOAN",
 
   /**
    * Rent
    */
-  Rent: "RENT",
+  RENT: "RENT",
 
   /**
    * Transfer
    */
-  Transfer: "TRANSFER",
+  TRANSFER: "TRANSFER",
 
   /**
    * Sale
    */
-  Sale: "SALE",
+  SALE: "SALE",
 
   /**
    * ActSpecimenTransportCode
    */
-  ActSpecimenTransportCode: "_ActSpecimenTransportCode",
+  _ActSpecimenTransportCode: "_ActSpecimenTransportCode",
 
   /**
    * specimen received
    */
-  specimenreceived: "SREC",
+  SREC: "SREC",
 
   /**
    * specimen in storage
    */
-  specimeninstorage: "SSTOR",
+  SSTOR: "SSTOR",
 
   /**
    * specimen in transit
    */
-  specimenintransit: "STRAN",
+  STRAN: "STRAN",
 
   /**
    * ActSpecimenTreatmentCode
    */
-  ActSpecimenTreatmentCode: "_ActSpecimenTreatmentCode",
+  _ActSpecimenTreatmentCode: "_ActSpecimenTreatmentCode",
 
   /**
    * Acidification
    */
-  Acidification: "ACID",
+  ACID: "ACID",
 
   /**
    * Alkalization
    */
-  Alkalization: "ALK",
+  ALK: "ALK",
 
   /**
    * Defibrination
    */
-  Defibrination: "DEFB",
+  DEFB: "DEFB",
 
   /**
    * Filtration
    */
-  Filtration: "FILT",
+  FILT: "FILT",
 
   /**
    * LDL Precipitation
    */
-  LDLPrecipitation: "LDLP",
+  LDLP: "LDLP",
 
   /**
    * Neutralization
    */
-  Neutralization: "NEUT",
+  NEUT: "NEUT",
 
   /**
    * Recalcification
    */
-  Recalcification: "RECA",
+  RECA: "RECA",
 
   /**
    * Ultrafiltration
    */
-  Ultrafiltration: "UFIL",
+  UFIL: "UFIL",
 
   /**
    * ActSubstanceAdministrationCode
    */
-  ActSubstanceAdministrationCode: "_ActSubstanceAdministrationCode",
+  _ActSubstanceAdministrationCode: "_ActSubstanceAdministrationCode",
 
   /**
    * Drug therapy
    */
-  Drugtherapy: "DRUG",
+  DRUG: "DRUG",
 
   /**
    * food
    */
-  food: "FD",
+  FD: "FD",
 
   /**
    * Immunization
    */
-  Immunization: "IMMUNIZ",
+  IMMUNIZ: "IMMUNIZ",
 
   /**
    * Booster Immunization
    */
-  BoosterImmunization: "BOOSTER",
+  BOOSTER: "BOOSTER",
 
   /**
    * Initial Immunization
    */
-  InitialImmunization: "INITIMMUNIZ",
+  INITIMMUNIZ: "INITIMMUNIZ",
 
   /**
    * ActTaskCode
    */
-  ActTaskCode: "_ActTaskCode",
+  _ActTaskCode: "_ActTaskCode",
 
   /**
    * order entry task
    */
-  orderentrytask: "OE",
+  OE: "OE",
 
   /**
    * laboratory test order entry task
    */
-  laboratorytestorderentrytask: "LABOE",
+  LABOE: "LABOE",
 
   /**
    * medication order entry task
    */
-  medicationorderentrytask: "MEDOE",
+  MEDOE: "MEDOE",
 
   /**
    * patient documentation task
    */
-  patientdocumentationtask: "PATDOC",
+  PATDOC: "PATDOC",
 
   /**
    * allergy list review
    */
-  allergylistreview: "ALLERLREV",
+  ALLERLREV: "ALLERLREV",
 
   /**
    * clinical note entry task
    */
-  clinicalnoteentrytask: "CLINNOTEE",
+  CLINNOTEE: "CLINNOTEE",
 
   /**
    * diagnosis list entry task
    */
-  diagnosislistentrytask: "DIAGLISTE",
+  DIAGLISTE: "DIAGLISTE",
 
   /**
    * discharge instruction entry
    */
-  dischargeinstructionentry: "DISCHINSTE",
+  DISCHINSTE: "DISCHINSTE",
 
   /**
    * discharge summary entry task
    */
-  dischargesummaryentrytask: "DISCHSUME",
+  DISCHSUME: "DISCHSUME",
 
   /**
    * patient education entry
    */
-  patienteducationentry: "PATEDUE",
+  PATEDUE: "PATEDUE",
 
   /**
    * pathology report entry task
    */
-  pathologyreportentrytask: "PATREPE",
+  PATREPE: "PATREPE",
 
   /**
    * problem list entry task
    */
-  problemlistentrytask: "PROBLISTE",
+  PROBLISTE: "PROBLISTE",
 
   /**
    * radiology report entry task
    */
-  radiologyreportentrytask: "RADREPE",
+  RADREPE: "RADREPE",
 
   /**
    * immunization list review
    */
-  immunizationlistreview: "IMMLREV",
+  IMMLREV: "IMMLREV",
 
   /**
    * reminder list review
    */
-  reminderlistreview: "REMLREV",
+  REMLREV: "REMLREV",
 
   /**
    * wellness reminder list review
    */
-  wellnessreminderlistreview: "WELLREMLREV",
+  WELLREMLREV: "WELLREMLREV",
 
   /**
    * patient information review task
    */
-  patientinformationreviewtask: "PATINFO",
+  PATINFO: "PATINFO",
 
   /**
    * allergy list entry
    */
-  allergylistentry: "ALLERLE",
+  ALLERLE: "ALLERLE",
 
   /**
    * clinical decision support intervention review
    */
-  clinicaldecisionsupportinterventionreview: "CDSREV",
+  CDSREV: "CDSREV",
 
   /**
    * clinical note review task
    */
-  clinicalnotereviewtask: "CLINNOTEREV",
+  CLINNOTEREV: "CLINNOTEREV",
 
   /**
    * discharge summary review task
    */
-  dischargesummaryreviewtask: "DISCHSUMREV",
+  DISCHSUMREV: "DISCHSUMREV",
 
   /**
    * diagnosis list review task
    */
-  diagnosislistreviewtask: "DIAGLISTREV",
+  DIAGLISTREV: "DIAGLISTREV",
 
   /**
    * immunization list entry
    */
-  immunizationlistentry: "IMMLE",
+  IMMLE: "IMMLE",
 
   /**
    * laboratory results review task
    */
-  laboratoryresultsreviewtask: "LABRREV",
+  LABRREV: "LABRREV",
 
   /**
    * microbiology results review task
    */
-  microbiologyresultsreviewtask: "MICRORREV",
+  MICRORREV: "MICRORREV",
 
   /**
    * microbiology organisms results review task
    */
-  microbiologyorganismsresultsreviewtask: "MICROORGRREV",
+  MICROORGRREV: "MICROORGRREV",
 
   /**
    * microbiology sensitivity test results review task
    */
-  microbiologysensitivitytestresultsreviewtask: "MICROSENSRREV",
+  MICROSENSRREV: "MICROSENSRREV",
 
   /**
    * medication list review task
    */
-  medicationlistreviewtask: "MLREV",
+  MLREV: "MLREV",
 
   /**
    * medication administration record work list review task
    */
-  medicationadministrationrecordworklistreviewtask: "MARWLREV",
+  MARWLREV: "MARWLREV",
 
   /**
    * orders review task
    */
-  ordersreviewtask: "OREV",
+  OREV: "OREV",
 
   /**
    * pathology report review task
    */
-  pathologyreportreviewtask: "PATREPREV",
+  PATREPREV: "PATREPREV",
 
   /**
    * problem list review task
    */
-  problemlistreviewtask: "PROBLISTREV",
+  PROBLISTREV: "PROBLISTREV",
 
   /**
    * radiology report review task
    */
-  radiologyreportreviewtask: "RADREPREV",
+  RADREPREV: "RADREPREV",
 
   /**
    * reminder list entry
    */
-  reminderlistentry: "REMLE",
+  REMLE: "REMLE",
 
   /**
    * wellness reminder list entry
    */
-  wellnessreminderlistentry: "WELLREMLE",
+  WELLREMLE: "WELLREMLE",
 
   /**
    * risk assessment instrument task
    */
-  riskassessmentinstrumenttask: "RISKASSESS",
+  RISKASSESS: "RISKASSESS",
 
   /**
    * falls risk assessment instrument task
    */
-  fallsriskassessmentinstrumenttask: "FALLRISK",
+  FALLRISK: "FALLRISK",
 
   /**
    * ActPatientTransportationModeCode
    */
-  ActPatientTransportationModeCode: "_ActPatientTransportationModeCode",
+  _ActPatientTransportationModeCode: "_ActPatientTransportationModeCode",
 
   /**
    * pedestrian transport
    */
-  pedestriantransport: "AFOOT",
+  AFOOT: "AFOOT",
 
   /**
    * pedestrian transport
    */
-  pedestriantransport: "OnFoot",
+  OnFoot: "OnFoot",
 
   /**
    * ambulance transport
    */
-  ambulancetransport: "AMBT",
+  AMBT: "AMBT",
 
   /**
    * fixed-wing ambulance transport
    */
-  fixedwingambulancetransport: "AMBAIR",
+  AMBAIR: "AMBAIR",
 
   /**
    * fixed-wing ambulance transport
    */
-  fixedwingambulancetransport: "Fixed-wingAmbulance",
+  "Fixed-wingAmbulance": "Fixed-wingAmbulance",
 
   /**
    * ground ambulance transport
    */
-  groundambulancetransport: "AMBGRND",
+  AMBGRND: "AMBGRND",
 
   /**
    * ground ambulance transport
    */
-  groundambulancetransport: "GroundAmbulance",
+  GroundAmbulance: "GroundAmbulance",
 
   /**
    * helicopter ambulance transport
    */
-  helicopterambulancetransport: "AMBHELO",
+  AMBHELO: "AMBHELO",
 
   /**
    * helicopter ambulance transport
    */
-  helicopterambulancetransport: "HelicopterAmbulance",
+  HelicopterAmbulance: "HelicopterAmbulance",
 
   /**
    * ambulance transport
    */
-  ambulancetransport: "Ambulance",
+  Ambulance: "Ambulance",
 
   /**
    * law enforcement transport
    */
-  lawenforcementtransport: "LAWENF",
+  LAWENF: "LAWENF",
 
   /**
    * law enforcement transport
    */
-  lawenforcementtransport: "LawEnforcementVehicle",
+  LawEnforcementVehicle: "LawEnforcementVehicle",
 
   /**
    * private transport
    */
-  privatetransport: "PRVTRN",
+  PRVTRN: "PRVTRN",
 
   /**
    * private transport
    */
-  privatetransport: "PrivateTransport",
+  PrivateTransport: "PrivateTransport",
 
   /**
    * public transport
    */
-  publictransport: "PUBTRN",
+  PUBTRN: "PUBTRN",
 
   /**
    * public transport
    */
-  publictransport: "PublicTransport",
+  PublicTransport: "PublicTransport",
 
   /**
    * ROIOverlayShape
    */
-  ROIOverlayShape: "_ROIOverlayShape",
+  _ROIOverlayShape: "_ROIOverlayShape",
 
   /**
    * circle
    */
-  circle: "CIRCLE",
+  CIRCLE: "CIRCLE",
 
   /**
    * ellipse
    */
-  ellipse: "ELLIPSE",
+  ELLIPSE: "ELLIPSE",
 
   /**
    * point
    */
-  point: "POINT",
+  POINT: "POINT",
 
   /**
    * polyline
    */
-  polyline: "POLY",
+  POLY: "POLY",
 
   /**
    * corrected
    */
-  corrected: "C",
+  C: "C",
 
   /**
    * Diet
    */
-  Diet: "DIET",
+  DIET: "DIET",
 
   /**
    * breikost (GE)
    */
-  breikostGE: "BR",
+  BR: "BR",
 
   /**
    * diabetes mellitus diet
    */
-  diabetesmellitusdiet: "DM",
+  DM: "DM",
 
   /**
    * fasting
    */
-  fasting: "FAST",
+  FAST: "FAST",
 
   /**
    * formula diet
    */
-  formuladiet: "FORMULA",
+  FORMULA: "FORMULA",
 
   /**
    * gluten free
    */
-  glutenfree: "GF",
+  GF: "GF",
 
   /**
    * low fat
    */
-  lowfat: "LF",
+  LF: "LF",
 
   /**
    * low protein
    */
-  lowprotein: "LP",
+  LP: "LP",
 
   /**
    * liquid
    */
-  liquid: "LQ",
+  LQ: "LQ",
 
   /**
    * low sodium
    */
-  lowsodium: "LS",
+  LS: "LS",
 
   /**
    * normal diet
    */
-  normaldiet: "N",
+  N: "N",
 
   /**
    * no fat
    */
-  nofat: "NF",
+  NF: "NF",
 
   /**
    * phenylalanine free
    */
-  phenylalaninefree: "PAF",
+  PAF: "PAF",
 
   /**
    * parenteral
    */
-  parenteral: "PAR",
+  PAR: "PAR",
 
   /**
    * reduction diet
    */
-  reductiondiet: "RD",
+  RD: "RD",
 
   /**
    * schonkost (GE)
    */
-  schonkostGE: "SCH",
+  SCH: "SCH",
 
   /**
    * nutritional supplement
    */
-  nutritionalsupplement: "SUPPLEMENT",
+  SUPPLEMENT: "SUPPLEMENT",
 
   /**
    * tea only
    */
-  teaonly: "T",
+  T: "T",
 
   /**
    * low valin, leucin, isoleucin
    */
-  lowvalinleucinisoleucin: "VLI",
+  VLI: "VLI",
 
   /**
    * drug program
    */
-  drugprogram: "DRUGPRG",
+  DRUGPRG: "DRUGPRG",
 
   /**
    * final
    */
-  final: "F",
+  F: "F",
 
   /**
    * preliminary
    */
-  preliminary: "PRLMN",
+  PRLMN: "PRLMN",
 
   /**
    * SecurityObservationType
    */
-  SecurityObservationType: "SECOBS",
+  SECOBS: "SECOBS",
 
   /**
    * security category observation
    */
-  securitycategoryobservation: "SECCATOBS",
+  SECCATOBS: "SECCATOBS",
 
   /**
    * security classification observation
    */
-  securityclassificationobservation: "SECCLASSOBS",
+  SECCLASSOBS: "SECCLASSOBS",
 
   /**
    * security control observation
    */
-  securitycontrolobservation: "SECCONOBS",
+  SECCONOBS: "SECCONOBS",
 
   /**
    * security integrity observation
    */
-  securityintegrityobservation: "SECINTOBS",
+  SECINTOBS: "SECINTOBS",
 
   /**
    * security alteration integrity observation
    */
-  securityalterationintegrityobservation: "SECALTINTOBS",
+  SECALTINTOBS: "SECALTINTOBS",
 
   /**
    * security data integrity observation
    */
-  securitydataintegrityobservation: "SECDATINTOBS",
+  SECDATINTOBS: "SECDATINTOBS",
 
   /**
    * security integrity confidence observation
    */
-  securityintegrityconfidenceobservation: "SECINTCONOBS",
+  SECINTCONOBS: "SECINTCONOBS",
 
   /**
    * security integrity provenance observation
    */
-  securityintegrityprovenanceobservation: "SECINTPRVOBS",
+  SECINTPRVOBS: "SECINTPRVOBS",
 
   /**
    * security integrity provenance asserted by observation
    */
-  securityintegrityprovenanceassertedbyobservation: "SECINTPRVABOBS",
+  SECINTPRVABOBS: "SECINTPRVABOBS",
 
   /**
    * security integrity provenance reported by observation
    */
-  securityintegrityprovenancereportedbyobservation: "SECINTPRVRBOBS",
+  SECINTPRVRBOBS: "SECINTPRVRBOBS",
 
   /**
    * security integrity status observation
    */
-  securityintegritystatusobservation: "SECINTSTOBS",
+  SECINTSTOBS: "SECINTSTOBS",
 
   /**
    * SECTRSTOBS
@@ -11432,158 +11331,158 @@ export const XActBillableCodeCode = {
   /**
    * trust accreditation observation
    */
-  trustaccreditationobservation: "TRSTACCRDOBS",
+  TRSTACCRDOBS: "TRSTACCRDOBS",
 
   /**
    * trust agreement observation
    */
-  trustagreementobservation: "TRSTAGREOBS",
+  TRSTAGREOBS: "TRSTAGREOBS",
 
   /**
    * trust certificate observation
    */
-  trustcertificateobservation: "TRSTCERTOBS",
+  TRSTCERTOBS: "TRSTCERTOBS",
 
   /**
    * trust framework observation
    */
-  trustframeworkobservation: "TRSTFWKOBS",
+  TRSTFWKOBS: "TRSTFWKOBS",
 
   /**
    * trust assurance observation
    */
-  trustassuranceobservation: "TRSTLOAOBS",
+  TRSTLOAOBS: "TRSTLOAOBS",
 
   /**
    * trust mechanism observation
    */
-  trustmechanismobservation: "TRSTMECOBS",
+  TRSTMECOBS: "TRSTMECOBS",
 
   /**
    * subsidized fee for service program
    */
-  subsidizedfeeforserviceprogram: "SUBSIDFFS",
+  SUBSIDFFS: "SUBSIDFFS",
 
   /**
    * (workers compensation program
    */
-  workerscompensationprogram: "WRKCOMP",
+  WRKCOMP: "WRKCOMP",
 
   /**
    * ActAdjudicationInformationCode
    */
-  ActAdjudicationInformationCode: "_ActAdjudicationInformationCode",
+  _ActAdjudicationInformationCode: "_ActAdjudicationInformationCode",
 
   /**
    * ActBillableTreatmentPlanCode
    */
-  ActBillableTreatmentPlanCode: "_ActBillableTreatmentPlanCode",
+  _ActBillableTreatmentPlanCode: "_ActBillableTreatmentPlanCode",
 
   /**
    * ActCognitiveProfessionalServiceCode
    */
-  ActCognitiveProfessionalServiceCode: "_ActCognitiveProfessionalServiceCode",
+  _ActCognitiveProfessionalServiceCode: "_ActCognitiveProfessionalServiceCode",
 
   /**
    * ActIdentityDocumentCode
    */
-  ActIdentityDocumentCode: "_ActIdentityDocumentCode",
+  _ActIdentityDocumentCode: "_ActIdentityDocumentCode",
 
   /**
    * ActOrderCode
    */
-  ActOrderCode: "_ActOrderCode",
+  _ActOrderCode: "_ActOrderCode",
 
   /**
    * ActPrivilegeCategorization
    */
-  ActPrivilegeCategorization: "_ActPrivilegeCategorization",
+  _ActPrivilegeCategorization: "_ActPrivilegeCategorization",
 
   /**
    * ActProcedureCode
    */
-  ActProcedureCode: "_ActProcedureCode",
+  _ActProcedureCode: "_ActProcedureCode",
 
   /**
    * ActBillableServiceCode
    */
-  ActBillableServiceCode: "_ActBillableServiceCode",
+  _ActBillableServiceCode: "_ActBillableServiceCode",
 
   /**
    * ActMedicalBillableServiceCode
    */
-  ActMedicalBillableServiceCode: "_ActMedicalBillableServiceCode",
+  _ActMedicalBillableServiceCode: "_ActMedicalBillableServiceCode",
 
   /**
    * ActNonMedicalBillableServiceCode
    */
-  ActNonMedicalBillableServiceCode: "_ActNonMedicalBillableServiceCode",
+  _ActNonMedicalBillableServiceCode: "_ActNonMedicalBillableServiceCode",
 
   /**
    * ActOralHealthProcedureCode
    */
-  ActOralHealthProcedureCode: "_ActOralHealthProcedureCode",
+  _ActOralHealthProcedureCode: "_ActOralHealthProcedureCode",
 
   /**
    * ActRegistryCode
    */
-  ActRegistryCode: "_ActRegistryCode",
+  _ActRegistryCode: "_ActRegistryCode",
 
   /**
    * ActSecurityObjectCode
    */
-  ActSecurityObjectCode: "_ActSecurityObjectCode",
+  _ActSecurityObjectCode: "_ActSecurityObjectCode",
 
   /**
    * AdvanceBeneficiaryNoticeType
    */
-  AdvanceBeneficiaryNoticeType: "_AdvanceBeneficiaryNoticeType",
+  _AdvanceBeneficiaryNoticeType: "_AdvanceBeneficiaryNoticeType",
 
   /**
    * CPT4
    */
-  CPT4: "_CPT4",
+  _CPT4: "_CPT4",
 
   /**
    * ExternallyDefinedActCodes
    */
-  ExternallyDefinedActCodes: "_ExternallyDefinedActCodes",
+  _ExternallyDefinedActCodes: "_ExternallyDefinedActCodes",
 
   /**
    * HL7DefinedActCodes
    */
-  HL7DefinedActCodes: "_HL7DefinedActCodes",
+  _HL7DefinedActCodes: "_HL7DefinedActCodes",
 
   /**
    * ActDetectedIssueCode
    */
-  ActDetectedIssueCode: "_ActDetectedIssueCode",
+  _ActDetectedIssueCode: "_ActDetectedIssueCode",
 
   /**
    * HL7TriggerEventCode
    */
-  HL7TriggerEventCode: "_HL7TriggerEventCode",
+  _HL7TriggerEventCode: "_HL7TriggerEventCode",
 
   /**
    * SubstanceAdministrationActCode
    */
-  SubstanceAdministrationActCode: "_SubstanceAdministrationActCode",
+  _SubstanceAdministrationActCode: "_SubstanceAdministrationActCode",
 
   /**
    * IndividualCaseSafetyReportCriteria
    */
-  IndividualCaseSafetyReportCriteria: "_IndividualCaseSafetyReportCriteria",
+  _IndividualCaseSafetyReportCriteria: "_IndividualCaseSafetyReportCriteria",
 
   /**
    * IndividualCaseSafetyReportProductCharacteristic
    */
-  IndividualCaseSafetyReportProductCharacteristic:
+  _IndividualCaseSafetyReportProductCharacteristic:
     "_IndividualCaseSafetyReportProductCharacteristic",
 
   /**
    * ObservationActAgeGroupType
    */
-  ObservationActAgeGroupType: "_ObservationActAgeGroupType",
+  _ObservationActAgeGroupType: "_ObservationActAgeGroupType",
 
   /**
    *
@@ -11608,7 +11507,7 @@ export const XActBillableCodeCode = {
   /**
    * Storage
    */
-  Storage: "STORE",
+  STORE: "STORE",
 } as const;
 
 /**

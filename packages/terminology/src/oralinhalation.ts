@@ -6,17 +6,17 @@ export const OralInhalationCode = {
   /**
    * Inhalation, respiratory
    */
-  Inhalationrespiratory: "ORINHL",
+  ORINHL: "ORINHL",
 
   /**
    * Inhalation, oral intermittent flow
    */
-  Inhalationoralintermittentflow: "ORIFINHL",
+  ORIFINHL: "ORIFINHL",
 
   /**
    * Inhalation, oral rebreather mask
    */
-  Inhalationoralrebreathermask: "REBREATH",
+  REBREATH: "REBREATH",
 } as const;
 
 /**

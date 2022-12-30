@@ -6,22 +6,22 @@ export const SuppositoryDrugFormCode = {
   /**
    * Suppository
    */
-  Suppository: "SUPP",
+  SUPP: "SUPP",
 
   /**
    * Rectal Suppository
    */
-  RectalSuppository: "RECSUPP",
+  RECSUPP: "RECSUPP",
 
   /**
    * Urethral suppository
    */
-  Urethralsuppository: "URETHSUPP",
+  URETHSUPP: "URETHSUPP",
 
   /**
    * Vaginal Suppository
    */
-  VaginalSuppository: "VAGSUPP",
+  VAGSUPP: "VAGSUPP",
 } as const;
 
 /**

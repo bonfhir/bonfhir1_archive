@@ -6,12 +6,12 @@ export const IntrathecalRouteCode = {
   /**
    * Infusion, intrathecal
    */
-  Infusionintrathecal: "IT",
+  IT: "IT",
 
   /**
    * Injection, intrathecal
    */
-  Injectionintrathecal: "ITINJ",
+  ITINJ: "ITINJ",
 } as const;
 
 /**

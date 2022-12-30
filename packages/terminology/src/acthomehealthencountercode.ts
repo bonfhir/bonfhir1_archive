@@ -6,7 +6,7 @@ export const ActHomeHealthEncounterCodeCode = {
   /**
    * home health
    */
-  homehealth: "HH",
+  HH: "HH",
 } as const;
 
 /**

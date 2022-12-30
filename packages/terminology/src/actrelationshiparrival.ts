@@ -6,7 +6,7 @@ export const ActRelationshipArrivalCode = {
   /**
    * arrival
    */
-  arrival: "ARR",
+  ARR: "ARR",
 } as const;
 
 /**

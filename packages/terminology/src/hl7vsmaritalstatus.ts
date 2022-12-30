@@ -6,82 +6,82 @@ export const Hl7VSMaritalStatusCode = {
   /**
    * Separated
    */
-  Separated: "A",
+  A: "A",
 
   /**
    * Divorced
    */
-  Divorced: "D",
+  D: "D",
 
   /**
    * Married
    */
-  Married: "M",
+  M: "M",
 
   /**
    * Single
    */
-  Single: "S",
+  S: "S",
 
   /**
    * Widowed
    */
-  Widowed: "W",
+  W: "W",
 
   /**
    * Common law
    */
-  Commonlaw: "C",
+  C: "C",
 
   /**
    * Living together
    */
-  Livingtogether: "G",
+  G: "G",
 
   /**
    * Domestic partner
    */
-  Domesticpartner: "P",
+  P: "P",
 
   /**
    * Registered domestic partner
    */
-  Registereddomesticpartner: "R",
+  R: "R",
 
   /**
    * Legally Separated
    */
-  LegallySeparated: "E",
+  E: "E",
 
   /**
    * Annulled
    */
-  Annulled: "N",
+  N: "N",
 
   /**
    * Interlocutory
    */
-  Interlocutory: "I",
+  I: "I",
 
   /**
    * Unmarried
    */
-  Unmarried: "B",
+  B: "B",
 
   /**
    * Unknown
    */
-  Unknown: "U",
+  U: "U",
 
   /**
    * Other
    */
-  Other: "O",
+  O: "O",
 
   /**
    * Unreported
    */
-  Unreported: "T",
+  T: "T",
 } as const;
 
 /**

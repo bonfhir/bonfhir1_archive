@@ -6,42 +6,42 @@ export const ActMoodDesireCode = {
   /**
    * desire
    */
-  desire: "_ActMoodDesire",
+  _ActMoodDesire: "_ActMoodDesire",
 
   /**
    * act request
    */
-  actrequest: "_ActMoodActRequest",
+  _ActMoodActRequest: "_ActMoodActRequest",
 
   /**
    * appointment request
    */
-  appointmentrequest: "ARQ",
+  ARQ: "ARQ",
 
   /**
    * permission request
    */
-  permissionrequest: "PERMRQ",
+  PERMRQ: "PERMRQ",
 
   /**
    * request
    */
-  request: "RQO",
+  RQO: "RQO",
 
   /**
    * request
    */
-  request: "ORD",
+  ORD: "ORD",
 
   /**
    * proposal
    */
-  proposal: "PRP",
+  PRP: "PRP",
 
   /**
    * recommendation
    */
-  recommendation: "RMD",
+  RMD: "RMD",
 } as const;
 
 /**

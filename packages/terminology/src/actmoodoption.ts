@@ -8,7 +8,7 @@ export const ActMoodOptionCode = {
   /**
    * option
    */
-  option: "OPT",
+  OPT: "OPT",
 } as const;
 
 /**

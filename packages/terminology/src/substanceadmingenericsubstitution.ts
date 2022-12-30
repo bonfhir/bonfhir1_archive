@@ -6,7 +6,7 @@ export const SubstanceAdminGenericSubstitutionCode = {
   /**
    * generic composition
    */
-  genericcomposition: "G",
+  G: "G",
 } as const;
 
 /**

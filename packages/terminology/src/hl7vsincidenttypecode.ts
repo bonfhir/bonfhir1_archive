@@ -6,17 +6,17 @@ export const Hl7VSIncidentTypeCodeCode = {
   /**
    * Preventable
    */
-  Preventable: "P",
+  P: "P",
 
   /**
    * User Error
    */
-  UserError: "U",
+  U: "U",
 
   /**
    * Other
    */
-  Other: "O",
+  O: "O",
 } as const;
 
 /**

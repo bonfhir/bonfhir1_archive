@@ -6,17 +6,17 @@ export const ActSubstanceAdministrationImmunizationCodeCode = {
   /**
    * Immunization
    */
-  Immunization: "IMMUNIZ",
+  IMMUNIZ: "IMMUNIZ",
 
   /**
    * Booster Immunization
    */
-  BoosterImmunization: "BOOSTER",
+  BOOSTER: "BOOSTER",
 
   /**
    * Initial Immunization
    */
-  InitialImmunization: "INITIMMUNIZ",
+  INITIMMUNIZ: "INITIMMUNIZ",
 } as const;
 
 /**

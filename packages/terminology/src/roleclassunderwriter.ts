@@ -16,7 +16,7 @@ export const RoleClassUnderwriterCode = {
   /**
    * underwriter
    */
-  underwriter: "UNDWRT",
+  UNDWRT: "UNDWRT",
 } as const;
 
 /**

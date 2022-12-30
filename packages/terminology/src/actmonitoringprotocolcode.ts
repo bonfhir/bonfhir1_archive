@@ -6,42 +6,42 @@ export const ActMonitoringProtocolCodeCode = {
   /**
    * Controlled Substance
    */
-  ControlledSubstance: "CTLSUB",
+  CTLSUB: "CTLSUB",
 
   /**
    * DEADrugSchedule
    */
-  DEADrugSchedule: "_DEADrugSchedule",
+  _DEADrugSchedule: "_DEADrugSchedule",
 
   /**
    * investigational
    */
-  investigational: "INV",
+  INV: "INV",
 
   /**
    * limited use
    */
-  limiteduse: "LU",
+  LU: "LU",
 
   /**
    * non prescription medicine
    */
-  nonprescriptionmedicine: "OTC",
+  OTC: "OTC",
 
   /**
    * prescription only medicine
    */
-  prescriptiononlymedicine: "RX",
+  RX: "RX",
 
   /**
    * special authorization
    */
-  specialauthorization: "SA",
+  SA: "SA",
 
   /**
    * special access
    */
-  specialaccess: "SAC",
+  SAC: "SAC",
 } as const;
 
 /**

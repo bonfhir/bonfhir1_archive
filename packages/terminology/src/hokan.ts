@@ -6,127 +6,127 @@ export const HokanCode = {
   /**
    * CochimiYuman
    */
-  CochimiYuman: "_CochimiYuman",
+  _CochimiYuman: "_CochimiYuman",
 
   /**
    * Yuman
    */
-  Yuman: "_Yuman",
+  _Yuman: "_Yuman",
 
   /**
    * DeltaCalifornia
    */
-  DeltaCalifornia: "_DeltaCalifornia",
+  _DeltaCalifornia: "_DeltaCalifornia",
 
   /**
    * Diegueno
    */
-  Diegueno: "_Diegueno",
+  _Diegueno: "_Diegueno",
 
   /**
    * Kumeyaay
    */
-  Kumeyaay: "x-DIH",
+  "x-DIH": "x-DIH",
 
   /**
    * Cocopa
    */
-  Cocopa: "x-COC",
+  "x-COC": "x-COC",
 
   /**
    * Pai
    */
-  Pai: "_Pai",
+  _Pai: "_Pai",
 
   /**
    * Havasupai
    */
-  Havasupai: "x-YUF",
+  "x-YUF": "x-YUF",
 
   /**
    * River
    */
-  River: "_River",
+  _River: "_River",
 
   /**
    * Mohave
    */
-  Mohave: "x-MOV",
+  "x-MOV": "x-MOV",
 
   /**
    * Maricopa
    */
-  Maricopa: "x-MRC",
+  "x-MRC": "x-MRC",
 
   /**
    * Quechan
    */
-  Quechan: "x-YUM",
+  "x-YUM": "x-YUM",
 
   /**
    * Palaihnihan
    */
-  Palaihnihan: "_Palaihnihan",
+  _Palaihnihan: "_Palaihnihan",
 
   /**
    * Achumawi
    */
-  Achumawi: "x-ACH",
+  "x-ACH": "x-ACH",
 
   /**
    * Atsugewi
    */
-  Atsugewi: "x-ATW",
+  "x-ATW": "x-ATW",
 
   /**
    * Pomoan
    */
-  Pomoan: "_Pomoan",
+  _Pomoan: "_Pomoan",
 
   /**
    * Kashaya
    */
-  Kashaya: "x-KJU",
+  "x-KJU": "x-KJU",
 
   /**
    * Northeastern Pomo
    */
-  NortheasternPomo: "x-PEF",
+  "x-PEF": "x-PEF",
 
   /**
    * Southeastern Pomo
    */
-  SoutheasternPomo: "x-PEO",
+  "x-PEO": "x-PEO",
 
   /**
    * Southern Pomo
    */
-  SouthernPomo: "x-PEQ",
+  "x-PEQ": "x-PEQ",
 
   /**
    * Central Pomo
    */
-  CentralPomo: "x-POO",
+  "x-POO": "x-POO",
 
   /**
    * Shasta
    */
-  Shasta: "_Shasta",
+  _Shasta: "_Shasta",
 
   /**
    * Shasta
    */
-  Shasta: "x-SHT",
+  "x-SHT": "x-SHT",
 
   /**
    * Karok
    */
-  Karok: "x-KYH",
+  "x-KYH": "x-KYH",
 
   /**
    * Washoe
    */
-  Washoe: "x-WAS",
+  "x-WAS": "x-WAS",
 } as const;
 
 /**

@@ -6,27 +6,27 @@ export const ImmunizationRecommendationStatusCodesCode = {
   /**
    * Due
    */
-  Due: "due",
+  due: "due",
 
   /**
    * Overdue
    */
-  Overdue: "overdue",
+  overdue: "overdue",
 
   /**
    * Immune
    */
-  Immune: "immune",
+  immune: "immune",
 
   /**
    * Contraindicated
    */
-  Contraindicated: "contraindicated",
+  contraindicated: "contraindicated",
 
   /**
    * Complete
    */
-  Complete: "complete",
+  complete: "complete",
 } as const;
 
 /**

@@ -6,12 +6,12 @@ export const RaceAmericanIndianComancheCode = {
   /**
    * Comanche
    */
-  Comanche: "1175-9",
+  "1175-9": "1175-9",
 
   /**
    * Oklahoma Comanche
    */
-  OklahomaComanche: "1176-7",
+  "1176-7": "1176-7",
 } as const;
 
 /**

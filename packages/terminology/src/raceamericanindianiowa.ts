@@ -6,17 +6,17 @@ export const RaceAmericanIndianIowaCode = {
   /**
    * Iowa
    */
-  Iowa: "1281-5",
+  "1281-5": "1281-5",
 
   /**
    * Iowa of Kansas-Nebraska
    */
-  IowaofKansasNebraska: "1282-3",
+  "1282-3": "1282-3",
 
   /**
    * Iowa of Oklahoma
    */
-  IowaofOklahoma: "1283-1",
+  "1283-1": "1283-1",
 } as const;
 
 /**

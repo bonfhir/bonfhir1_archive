@@ -6,22 +6,22 @@ export const LibraryTypeCode = {
   /**
    * Logic Library
    */
-  LogicLibrary: "logic-library",
+  "logic-library": "logic-library",
 
   /**
    * Model Definition
    */
-  ModelDefinition: "model-definition",
+  "model-definition": "model-definition",
 
   /**
    * Asset Collection
    */
-  AssetCollection: "asset-collection",
+  "asset-collection": "asset-collection",
 
   /**
    * Module Definition
    */
-  ModuleDefinition: "module-definition",
+  "module-definition": "module-definition",
 } as const;
 
 /**

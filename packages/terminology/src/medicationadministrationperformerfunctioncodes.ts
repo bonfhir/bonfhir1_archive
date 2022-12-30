@@ -6,17 +6,17 @@ export const MedicationAdministrationPerformerFunctionCodesCode = {
   /**
    * Performer
    */
-  Performer: "performer",
+  performer: "performer",
 
   /**
    * Verifier
    */
-  Verifier: "verifier",
+  verifier: "verifier",
 
   /**
    * Witness
    */
-  Witness: "witness",
+  witness: "witness",
 } as const;
 
 /**

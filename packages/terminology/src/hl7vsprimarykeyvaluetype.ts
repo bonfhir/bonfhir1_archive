@@ -6,17 +6,17 @@ export const Hl7VSPrimaryKeyValueTypeCode = {
   /**
    * Person location
    */
-  Personlocation: "PL",
+  PL: "PL",
 
   /**
    * Coded element
    */
-  Codedelement: "CE",
+  CE: "CE",
 
   /**
    * Coded with Exceptions
    */
-  CodedwithExceptions: "CWE",
+  CWE: "CWE",
 } as const;
 
 /**

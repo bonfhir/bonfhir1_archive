@@ -6,7 +6,7 @@ export const EntityClassAnimalCode = {
   /**
    * animal
    */
-  animal: "ANM",
+  ANM: "ANM",
 } as const;
 
 /**

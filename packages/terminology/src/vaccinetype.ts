@@ -6,502 +6,502 @@ export const VaccineTypeCode = {
   /**
    * DTP
    */
-  DTP: "1",
+  "1": "1",
 
   /**
    * IPV
    */
-  IPV: "10",
+  "10": "10",
 
   /**
    * pneumococcal conjugate
    */
-  pneumococcalconjugate: "100",
+  "100": "100",
 
   /**
    * typhoid, ViCPs
    */
-  typhoidViCPs: "101",
+  "101": "101",
 
   /**
    * pertussis
    */
-  pertussis: "11",
+  "11": "11",
 
   /**
    * diphtheria antitoxin
    */
-  diphtheriaantitoxin: "12",
+  "12": "12",
 
   /**
    * TIG
    */
-  TIG: "13",
+  "13": "13",
 
   /**
    * IG, NOS
    */
-  IGNOS: "14",
+  "14": "14",
 
   /**
    * influenza, split (incl. purified surface antigen)
    */
-  influenzasplitinclpurifiedsurfaceantigen: "15",
+  "15": "15",
 
   /**
    * influenza, whole
    */
-  influenzawhole: "16",
+  "16": "16",
 
   /**
    * Hib, NOS
    */
-  HibNOS: "17",
+  "17": "17",
 
   /**
    * rabies, intramuscular injection
    */
-  rabiesintramuscularinjection: "18",
+  "18": "18",
 
   /**
    * BCG
    */
-  BCG: "19",
+  "19": "19",
 
   /**
    * OPV
    */
-  OPV: "2",
+  "2": "2",
 
   /**
    * DTaP
    */
-  DTaP: "20",
+  "20": "20",
 
   /**
    * varicella
    */
-  varicella: "21",
+  "21": "21",
 
   /**
    * DTP-Hib
    */
-  DTPHib: "22",
+  "22": "22",
 
   /**
    * plague
    */
-  plague: "23",
+  "23": "23",
 
   /**
    * Anthrax
    */
-  Anthrax: "24",
+  "24": "24",
 
   /**
    * typhoid, oral
    */
-  typhoidoral: "25",
+  "25": "25",
 
   /**
    * Cholera
    */
-  Cholera: "26",
+  "26": "26",
 
   /**
    * botulinum antitoxin
    */
-  botulinumantitoxin: "27",
+  "27": "27",
 
   /**
    * DT (pediatric)
    */
-  DTpediatric: "28",
+  "28": "28",
 
   /**
    * CMVIG
    */
-  CMVIG: "29",
+  "29": "29",
 
   /**
    * MMR
    */
-  MMR: "3",
+  "3": "3",
 
   /**
    * HBIG
    */
-  HBIG: "30",
+  "30": "30",
 
   /**
    * Hep A, pediatric, NOS
    */
-  HepApediatricNOS: "31",
+  "31": "31",
 
   /**
    * meningococcal
    */
-  meningococcal: "32",
+  "32": "32",
 
   /**
    * pneumococcal
    */
-  pneumococcal: "33",
+  "33": "33",
 
   /**
    * RIG
    */
-  RIG: "34",
+  "34": "34",
 
   /**
    * tetanus toxoid
    */
-  tetanustoxoid: "35",
+  "35": "35",
 
   /**
    * VZIG
    */
-  VZIG: "36",
+  "36": "36",
 
   /**
    * yellow fever
    */
-  yellowfever: "37",
+  "37": "37",
 
   /**
    * rubella/mumps
    */
-  rubellamumps: "38",
+  "38": "38",
 
   /**
    * Japanese encephalitis
    */
-  Japaneseencephalitis: "39",
+  "39": "39",
 
   /**
    * M/R
    */
-  MR: "4",
+  "4": "4",
 
   /**
    * rabies, intradermal injection
    */
-  rabiesintradermalinjection: "40",
+  "40": "40",
 
   /**
    * typhoid, parenteral
    */
-  typhoidparenteral: "41",
+  "41": "41",
 
   /**
    * Hep B, adolescent/high risk infant
    */
-  HepBadolescenthighriskinfant: "42",
+  "42": "42",
 
   /**
    * Hep B, adult
    */
-  HepBadult: "43",
+  "43": "43",
 
   /**
    * Hep B, dialysis
    */
-  HepBdialysis: "44",
+  "44": "44",
 
   /**
    * Hep B, NOS
    */
-  HepBNOS: "45",
+  "45": "45",
 
   /**
    * Hib (PRP-D)
    */
-  HibPRPD: "46",
+  "46": "46",
 
   /**
    * Hib (HbOC)
    */
-  HibHbOC: "47",
+  "47": "47",
 
   /**
    * Hib (PRP-T)
    */
-  HibPRPT: "48",
+  "48": "48",
 
   /**
    * Hib (PRP-OMP)
    */
-  HibPRPOMP: "49",
+  "49": "49",
 
   /**
    * measles
    */
-  measles: "5",
+  "5": "5",
 
   /**
    * DTaPHib
    */
-  DTaPHib: "50",
+  "50": "50",
 
   /**
    * Hib-Hep B
    */
-  HibHepB: "51",
+  "51": "51",
 
   /**
    * Hep A, adult
    */
-  HepAadult: "52",
+  "52": "52",
 
   /**
    * typhoid, parenteral, AKD (U.S. military)
    */
-  typhoidparenteralAKDUSmilitary: "53",
+  "53": "53",
 
   /**
    * adenovirus, type 4
    */
-  adenovirustype4: "54",
+  "54": "54",
 
   /**
    * adenovirus, type 7
    */
-  adenovirustype7: "55",
+  "55": "55",
 
   /**
    * dengue fever
    */
-  denguefever: "56",
+  "56": "56",
 
   /**
    * Hantavirus
    */
-  Hantavirus: "57",
+  "57": "57",
 
   /**
    * Hep C
    */
-  HepC: "58",
+  "58": "58",
 
   /**
    * Hep E
    */
-  HepE: "59",
+  "59": "59",
 
   /**
    * rubella
    */
-  rubella: "6",
+  "6": "6",
 
   /**
    * herpes simplex 2
    */
-  herpessimplex2: "60",
+  "60": "60",
 
   /**
    * HIV
    */
-  HIV: "61",
+  "61": "61",
 
   /**
    * HPV
    */
-  HPV: "62",
+  "62": "62",
 
   /**
    * Junin virus
    */
-  Juninvirus: "63",
+  "63": "63",
 
   /**
    * leishmaniasis
    */
-  leishmaniasis: "64",
+  "64": "64",
 
   /**
    * leprosy
    */
-  leprosy: "65",
+  "65": "65",
 
   /**
    * Lyme disease
    */
-  Lymedisease: "66",
+  "66": "66",
 
   /**
    * malaria
    */
-  malaria: "67",
+  "67": "67",
 
   /**
    * melanoma
    */
-  melanoma: "68",
+  "68": "68",
 
   /**
    * parainfluenza-3
    */
-  parainfluenza3: "69",
+  "69": "69",
 
   /**
    * mumps
    */
-  mumps: "7",
+  "7": "7",
 
   /**
    * Q fever
    */
-  Qfever: "70",
+  "70": "70",
 
   /**
    * RSV-IGIV
    */
-  RSVIGIV: "71",
+  "71": "71",
 
   /**
    * rheumatic fever
    */
-  rheumaticfever: "72",
+  "72": "72",
 
   /**
    * Rift Valley fever
    */
-  RiftValleyfever: "73",
+  "73": "73",
 
   /**
    * rotavirus
    */
-  rotavirus: "74",
+  "74": "74",
 
   /**
    * smallpox
    */
-  smallpox: "75",
+  "75": "75",
 
   /**
    * Staphylococcus bacterio lysate
    */
-  Staphylococcusbacteriolysate: "76",
+  "76": "76",
 
   /**
    * tick-borne encephalitis
    */
-  tickborneencephalitis: "77",
+  "77": "77",
 
   /**
    * tularemia vaccine
    */
-  tularemiavaccine: "78",
+  "78": "78",
 
   /**
    * vaccinia immune globulin
    */
-  vacciniaimmuneglobulin: "79",
+  "79": "79",
 
   /**
    * Hep B, adolescent or pediatric
    */
-  HepBadolescentorpediatric: "8",
+  "8": "8",
 
   /**
    * VEE, live
    */
-  VEElive: "80",
+  "80": "80",
 
   /**
    * VEE, inactivated
    */
-  VEEinactivated: "81",
+  "81": "81",
 
   /**
    * adenovirus, NOS
    */
-  adenovirusNOS: "82",
+  "82": "82",
 
   /**
    * Hep A, ped/adol, 2 dose
    */
-  HepApedadol2dose: "83",
+  "83": "83",
 
   /**
    * Hep A, ped/adol, 3 dose
    */
-  HepApedadol3dose: "84",
+  "84": "84",
 
   /**
    * Hep A, NOS
    */
-  HepANOS: "85",
+  "85": "85",
 
   /**
    * IG
    */
-  IG: "86",
+  "86": "86",
 
   /**
    * IGIV
    */
-  IGIV: "87",
+  "87": "87",
 
   /**
    * influenza, NOS
    */
-  influenzaNOS: "88",
+  "88": "88",
 
   /**
    * polio, NOS
    */
-  polioNOS: "89",
+  "89": "89",
 
   /**
    * Td (adult)
    */
-  Tdadult: "9",
+  "9": "9",
 
   /**
    * rabies, NOS
    */
-  rabiesNOS: "90",
+  "90": "90",
 
   /**
    * typhoid, NOS
    */
-  typhoidNOS: "91",
+  "91": "91",
 
   /**
    * VEE, NOS
    */
-  VEENOS: "92",
+  "92": "92",
 
   /**
    * RSV-Mab
    */
-  RSVMab: "93",
+  "93": "93",
 
   /**
    * MMRV
    */
-  MMRV: "94",
+  "94": "94",
 
   /**
    * TST-OT tine test
    */
-  TSTOTtinetest: "95",
+  "95": "95",
 
   /**
    * TST-PPD intradermal
    */
-  TSTPPDintradermal: "96",
+  "96": "96",
 
   /**
    * TST-PPD tine test
    */
-  TSTPPDtinetest: "97",
+  "97": "97",
 
   /**
    * TST, NOS
    */
-  TSTNOS: "98",
+  "98": "98",
 } as const;
 
 /**

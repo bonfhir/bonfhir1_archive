@@ -6,12 +6,12 @@ export const GenderStatusCode = {
   /**
    * Intact
    */
-  Intact: "I",
+  I: "I",
 
   /**
    * Neutered
    */
-  Neutered: "N",
+  N: "N",
 } as const;
 
 /**

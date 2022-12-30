@@ -6,12 +6,12 @@ export const Hl7VSDeviceDataStateCode = {
   /**
    * Real Time Values
    */
-  RealTimeValues: "0",
+  "0": "0",
 
   /**
    * Historic Values
    */
-  HistoricValues: "1",
+  "1": "1",
 } as const;
 
 /**

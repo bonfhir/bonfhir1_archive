@@ -6,17 +6,17 @@ export const ExpansionParameterSourceCode = {
   /**
    * Client Input
    */
-  ClientInput: "input",
+  input: "input",
 
   /**
    * Server Engine
    */
-  ServerEngine: "server",
+  server: "server",
 
   /**
    * Code System
    */
-  CodeSystem: "codesystem",
+  codesystem: "codesystem",
 } as const;
 
 /**

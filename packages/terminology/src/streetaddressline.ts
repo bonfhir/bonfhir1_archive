@@ -6,7 +6,7 @@ export const StreetAddressLineCode = {
   /**
    * street address line
    */
-  streetaddressline: "SAL",
+  SAL: "SAL",
 } as const;
 
 /**

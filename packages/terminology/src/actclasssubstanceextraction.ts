@@ -6,12 +6,12 @@ export const ActClassSubstanceExtractionCode = {
   /**
    * Substance Extraction
    */
-  SubstanceExtraction: "SBEXT",
+  SBEXT: "SBEXT",
 
   /**
    * Specimen Collection
    */
-  SpecimenCollection: "SPECCOLLECT",
+  SPECCOLLECT: "SPECCOLLECT",
 } as const;
 
 /**

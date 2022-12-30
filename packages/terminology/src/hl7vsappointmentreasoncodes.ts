@@ -6,27 +6,27 @@ export const Hl7VSAppointmentReasonCodesCode = {
   /**
    * Routine appointment - default if not valued
    */
-  Routineappointmentdefaultifnotvalued: "ROUTINE",
+  ROUTINE: "ROUTINE",
 
   /**
    * A previously unscheduled walk-in visit
    */
-  Apreviouslyunscheduledwalkinvisit: "WALKIN",
+  WALKIN: "WALKIN",
 
   /**
    * A routine check-up, such as an annual physical
    */
-  Aroutinecheckupsuchasanannualphysical: "CHECKUP",
+  CHECKUP: "CHECKUP",
 
   /**
    * A follow up visit from a previous appointment
    */
-  Afollowupvisitfromapreviousappointment: "FOLLOWUP",
+  FOLLOWUP: "FOLLOWUP",
 
   /**
    * Emergency appointment
    */
-  Emergencyappointment: "EMERGENCY",
+  EMERGENCY: "EMERGENCY",
 } as const;
 
 /**

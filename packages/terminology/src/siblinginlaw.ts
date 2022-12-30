@@ -6,22 +6,22 @@ export const SiblingInLawCode = {
   /**
    * sibling in-law
    */
-  siblinginlaw: "SIBINLAW",
+  SIBINLAW: "SIBINLAW",
 
   /**
    * brother-in-law
    */
-  brotherinlaw: "BROINLAW",
+  BROINLAW: "BROINLAW",
 
   /**
    * sister-in-law
    */
-  sisterinlaw: "SISINLAW",
+  SISINLAW: "SISINLAW",
 
   /**
    * sister-in-law
    */
-  sisterinlaw: "SISLINLAW",
+  SISLINLAW: "SISLINLAW",
 } as const;
 
 /**

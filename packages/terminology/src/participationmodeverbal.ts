@@ -6,27 +6,27 @@ export const ParticipationModeVerbalCode = {
   /**
    * verbal
    */
-  verbal: "VERBAL",
+  VERBAL: "VERBAL",
 
   /**
    * dictated
    */
-  dictated: "DICTATE",
+  DICTATE: "DICTATE",
 
   /**
    * face-to-face
    */
-  facetoface: "FACE",
+  FACE: "FACE",
 
   /**
    * telephone
    */
-  telephone: "PHONE",
+  PHONE: "PHONE",
 
   /**
    * videoconferencing
    */
-  videoconferencing: "VIDEOCONF",
+  VIDEOCONF: "VIDEOCONF",
 } as const;
 
 /**

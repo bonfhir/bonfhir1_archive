@@ -6,72 +6,72 @@ export const ActRelationshipStartsBeforeOrConcurrentWithStartOfCode = {
   /**
    * starts before or concurrent with start of
    */
-  startsbeforeorconcurrentwithstartof: "SBSORSCW",
+  SBSORSCW: "SBSORSCW",
 
   /**
    * starts concurrent with
    */
-  startsconcurrentwith: "SCW",
+  SCW: "SCW",
 
   /**
    * concurrent with
    */
-  concurrentwith: "CONCURRENT",
+  CONCURRENT: "CONCURRENT",
 
   /**
    * starts with. ends before end of
    */
-  startswithendsbeforeendof: "SCWSEBE",
+  SCWSEBE: "SCWSEBE",
 
   /**
    * starts with, ends after end of
    */
-  startswithendsafterendof: "SCWSEAE",
+  SCWSEAE: "SCWSEAE",
 
   /**
    * starts before start of
    */
-  startsbeforestartof: "SBS",
+  SBS: "SBS",
 
   /**
    * starts before start of, ends before end of
    */
-  startsbeforestartofendsbeforeendof: "SBSEBE",
+  SBSEBE: "SBSEBE",
 
   /**
    * contains start of, ends before end of
    */
-  containsstartofendsbeforeendof: "SBSEASEBE",
+  SBSEASEBE: "SBSEASEBE",
 
   /**
    * ends before or concurrent with start of
    */
-  endsbeforeorconcurrentwithstartof: "EBSORECWS",
+  EBSORECWS: "EBSORECWS",
 
   /**
    * ends concurrent with start of
    */
-  endsconcurrentwithstartof: "ECWS",
+  ECWS: "ECWS",
 
   /**
    * ends before start of
    */
-  endsbeforestartof: "EBS",
+  EBS: "EBS",
 
   /**
    * contains start of
    */
-  containsstartof: "SBSEAS",
+  SBSEAS: "SBSEAS",
 
   /**
    * starts before start of, ends with
    */
-  startsbeforestartofendswith: "SBSECWE",
+  SBSECWE: "SBSECWE",
 
   /**
    * contains time of
    */
-  containstimeof: "SBSEAE",
+  SBSEAE: "SBSEAE",
 } as const;
 
 /**

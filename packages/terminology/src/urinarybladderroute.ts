@@ -6,22 +6,22 @@ export const UrinaryBladderRouteCode = {
   /**
    * Injection, urinary bladder
    */
-  Injectionurinarybladder: "BLADINJ",
+  BLADINJ: "BLADINJ",
 
   /**
    * Irrigation, urinary bladder
    */
-  Irrigationurinarybladder: "BLADIRR",
+  BLADIRR: "BLADIRR",
 
   /**
    * Irrigation, urinary bladder, continuous
    */
-  Irrigationurinarybladdercontinuous: "BLADIRRC",
+  BLADIRRC: "BLADIRRC",
 
   /**
    * Irrigation, urinary bladder, tidal
    */
-  Irrigationurinarybladdertidal: "BLADIRRT",
+  BLADIRRT: "BLADIRRT",
 } as const;
 
 /**

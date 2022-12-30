@@ -8,27 +8,27 @@ export const ProvenanceEventCurrentStateDCCode = {
   /**
    * authenticated
    */
-  authenticated: "AU",
+  AU: "AU",
 
   /**
    * dictated
    */
-  dictated: "DI",
+  DI: "DI",
 
   /**
    * documented
    */
-  documented: "DO",
+  DO: "DO",
 
   /**
    * legally authenticated
    */
-  legallyauthenticated: "LA",
+  LA: "LA",
 
   /**
    * unsigned completed document
    */
-  unsignedcompleteddocument: "UC",
+  UC: "UC",
 } as const;
 
 /**

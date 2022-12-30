@@ -6,22 +6,22 @@ export const Hl7VSTransportationModeCode = {
   /**
    * Cart - patient travels on cart or gurney
    */
-  Cartpatienttravelsoncartorgurney: "CART",
+  CART: "CART",
 
   /**
    * The examining device goes to patient's location
    */
-  Theexaminingdevicegoestopatientslocation: "PORT",
+  PORT: "PORT",
 
   /**
    * Patient walks to diagnostic service
    */
-  Patientwalkstodiagnosticservice: "WALK",
+  WALK: "WALK",
 
   /**
    * Wheelchair
    */
-  Wheelchair: "WHLC",
+  WHLC: "WHLC",
 } as const;
 
 /**

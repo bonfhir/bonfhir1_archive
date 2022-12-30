@@ -6,17 +6,17 @@ export const ServiceProvisionConditionsCode = {
   /**
    * Free
    */
-  Free: "free",
+  free: "free",
 
   /**
    * Discounts Available
    */
-  DiscountsAvailable: "disc",
+  disc: "disc",
 
   /**
    * Fees apply
    */
-  Feesapply: "cost",
+  cost: "cost",
 } as const;
 
 /**

@@ -6,47 +6,47 @@ export const MedicationObservationTypeCode = {
   /**
    * representative half-life
    */
-  representativehalflife: "REP_HALF_LIFE",
+  REP_HALF_LIFE: "REP_HALF_LIFE",
 
   /**
    * coating
    */
-  coating: "SPLCOATING",
+  SPLCOATING: "SPLCOATING",
 
   /**
    * color
    */
-  color: "SPLCOLOR",
+  SPLCOLOR: "SPLCOLOR",
 
   /**
    * image
    */
-  image: "SPLIMAGE",
+  SPLIMAGE: "SPLIMAGE",
 
   /**
    * imprint
    */
-  imprint: "SPLIMPRINT",
+  SPLIMPRINT: "SPLIMPRINT",
 
   /**
    * scoring
    */
-  scoring: "SPLSCORING",
+  SPLSCORING: "SPLSCORING",
 
   /**
    * shape
    */
-  shape: "SPLSHAPE",
+  SPLSHAPE: "SPLSHAPE",
 
   /**
    * size
    */
-  size: "SPLSIZE",
+  SPLSIZE: "SPLSIZE",
 
   /**
    * symbol
    */
-  symbol: "SPLSYMBOL",
+  SPLSYMBOL: "SPLSYMBOL",
 } as const;
 
 /**

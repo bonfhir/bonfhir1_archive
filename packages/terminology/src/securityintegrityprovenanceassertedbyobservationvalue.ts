@@ -6,42 +6,42 @@ export const SecurityIntegrityProvenanceAssertedByObservationValueCode = {
   /**
    * clinician asserted
    */
-  clinicianasserted: "CLINAST",
+  CLINAST: "CLINAST",
 
   /**
    * device asserted
    */
-  deviceasserted: "DEVAST",
+  DEVAST: "DEVAST",
 
   /**
    * healthcare professional asserted
    */
-  healthcareprofessionalasserted: "HCPAST",
+  HCPAST: "HCPAST",
 
   /**
    * patient acquaintance asserted
    */
-  patientacquaintanceasserted: "PACQAST",
+  PACQAST: "PACQAST",
 
   /**
    * patient asserted
    */
-  patientasserted: "PATAST",
+  PATAST: "PATAST",
 
   /**
    * payer asserted
    */
-  payerasserted: "PAYAST",
+  PAYAST: "PAYAST",
 
   /**
    * professional asserted
    */
-  professionalasserted: "PROAST",
+  PROAST: "PROAST",
 
   /**
    * substitute decision maker asserted
    */
-  substitutedecisionmakerasserted: "SDMAST",
+  SDMAST: "SDMAST",
 } as const;
 
 /**

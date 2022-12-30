@@ -6,78 +6,78 @@ export const AuthorizedParticipationFunctionCode = {
   /**
    * AuthorizedParticipationFunction
    */
-  AuthorizedParticipationFunction: "_AuthorizedParticipationFunction",
+  _AuthorizedParticipationFunction: "_AuthorizedParticipationFunction",
 
   /**
    * AuthorizedReceiverParticipationFunction
    */
-  AuthorizedReceiverParticipationFunction:
+  _AuthorizedReceiverParticipationFunction:
     "_AuthorizedReceiverParticipationFunction",
 
   /**
    * caregiver information receiver
    */
-  caregiverinformationreceiver: "AUCG",
+  AUCG: "AUCG",
 
   /**
    * legitimate relationship information receiver
    */
-  legitimaterelationshipinformationreceiver: "AULR",
+  AULR: "AULR",
 
   /**
    * care team information receiver
    */
-  careteaminformationreceiver: "AUTM",
+  AUTM: "AUTM",
 
   /**
    * work area information receiver
    */
-  workareainformationreceiver: "AUWA",
+  AUWA: "AUWA",
 
   /**
    * ConsenterParticipationFunction
    */
-  ConsenterParticipationFunction: "_ConsenterParticipationFunction",
+  _ConsenterParticipationFunction: "_ConsenterParticipationFunction",
 
   /**
    * legal guardian consent author
    */
-  legalguardianconsentauthor: "GRDCON",
+  GRDCON: "GRDCON",
 
   /**
    * healthcare power of attorney consent author
    */
-  healthcarepowerofattorneyconsentauthor: "POACON",
+  POACON: "POACON",
 
   /**
    * personal representative consent author
    */
-  personalrepresentativeconsentauthor: "PRCON",
+  PRCON: "PRCON",
 
   /**
    * authorized provider masking author
    */
-  authorizedprovidermaskingauthor: "PROMSK",
+  PROMSK: "PROMSK",
 
   /**
    * subject of consent author
    */
-  subjectofconsentauthor: "SUBCON",
+  SUBCON: "SUBCON",
 
   /**
    * OverriderParticipationFunction
    */
-  OverriderParticipationFunction: "_OverriderParticipationFunction",
+  _OverriderParticipationFunction: "_OverriderParticipationFunction",
 
   /**
    * consent overrider
    */
-  consentoverrider: "AUCOV",
+  AUCOV: "AUCOV",
 
   /**
    * emergency overrider
    */
-  emergencyoverrider: "AUEMROV",
+  AUEMROV: "AUEMROV",
 } as const;
 
 /**

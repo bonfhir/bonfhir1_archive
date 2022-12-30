@@ -6,52 +6,52 @@ export const ActAccountCodeCode = {
   /**
    * account receivable
    */
-  accountreceivable: "ACCTRECEIVABLE",
+  ACCTRECEIVABLE: "ACCTRECEIVABLE",
 
   /**
    * Cash
    */
-  Cash: "CASH",
+  CASH: "CASH",
 
   /**
    * credit card
    */
-  creditcard: "CC",
+  CC: "CC",
 
   /**
    * American Express
    */
-  AmericanExpress: "AE",
+  AE: "AE",
 
   /**
    * Diner's Club
    */
-  DinersClub: "DN",
+  DN: "DN",
 
   /**
    * Discover Card
    */
-  DiscoverCard: "DV",
+  DV: "DV",
 
   /**
    * Master Card
    */
-  MasterCard: "MC",
+  MC: "MC",
 
   /**
    * Visa
    */
-  Visa: "V",
+  V: "V",
 
   /**
    * patient billing account
    */
-  patientbillingaccount: "PBILLACCT",
+  PBILLACCT: "PBILLACCT",
 
   /**
    * CreditCard
    */
-  CreditCard: "_CreditCard",
+  _CreditCard: "_CreditCard",
 } as const;
 
 /**

@@ -6,192 +6,192 @@ export const ActTaskCodeCode = {
   /**
    * ActTaskCode
    */
-  ActTaskCode: "_ActTaskCode",
+  _ActTaskCode: "_ActTaskCode",
 
   /**
    * order entry task
    */
-  orderentrytask: "OE",
+  OE: "OE",
 
   /**
    * laboratory test order entry task
    */
-  laboratorytestorderentrytask: "LABOE",
+  LABOE: "LABOE",
 
   /**
    * medication order entry task
    */
-  medicationorderentrytask: "MEDOE",
+  MEDOE: "MEDOE",
 
   /**
    * patient documentation task
    */
-  patientdocumentationtask: "PATDOC",
+  PATDOC: "PATDOC",
 
   /**
    * allergy list review
    */
-  allergylistreview: "ALLERLREV",
+  ALLERLREV: "ALLERLREV",
 
   /**
    * clinical note entry task
    */
-  clinicalnoteentrytask: "CLINNOTEE",
+  CLINNOTEE: "CLINNOTEE",
 
   /**
    * diagnosis list entry task
    */
-  diagnosislistentrytask: "DIAGLISTE",
+  DIAGLISTE: "DIAGLISTE",
 
   /**
    * discharge instruction entry
    */
-  dischargeinstructionentry: "DISCHINSTE",
+  DISCHINSTE: "DISCHINSTE",
 
   /**
    * discharge summary entry task
    */
-  dischargesummaryentrytask: "DISCHSUME",
+  DISCHSUME: "DISCHSUME",
 
   /**
    * patient education entry
    */
-  patienteducationentry: "PATEDUE",
+  PATEDUE: "PATEDUE",
 
   /**
    * pathology report entry task
    */
-  pathologyreportentrytask: "PATREPE",
+  PATREPE: "PATREPE",
 
   /**
    * problem list entry task
    */
-  problemlistentrytask: "PROBLISTE",
+  PROBLISTE: "PROBLISTE",
 
   /**
    * radiology report entry task
    */
-  radiologyreportentrytask: "RADREPE",
+  RADREPE: "RADREPE",
 
   /**
    * immunization list review
    */
-  immunizationlistreview: "IMMLREV",
+  IMMLREV: "IMMLREV",
 
   /**
    * reminder list review
    */
-  reminderlistreview: "REMLREV",
+  REMLREV: "REMLREV",
 
   /**
    * wellness reminder list review
    */
-  wellnessreminderlistreview: "WELLREMLREV",
+  WELLREMLREV: "WELLREMLREV",
 
   /**
    * patient information review task
    */
-  patientinformationreviewtask: "PATINFO",
+  PATINFO: "PATINFO",
 
   /**
    * allergy list entry
    */
-  allergylistentry: "ALLERLE",
+  ALLERLE: "ALLERLE",
 
   /**
    * clinical decision support intervention review
    */
-  clinicaldecisionsupportinterventionreview: "CDSREV",
+  CDSREV: "CDSREV",
 
   /**
    * clinical note review task
    */
-  clinicalnotereviewtask: "CLINNOTEREV",
+  CLINNOTEREV: "CLINNOTEREV",
 
   /**
    * discharge summary review task
    */
-  dischargesummaryreviewtask: "DISCHSUMREV",
+  DISCHSUMREV: "DISCHSUMREV",
 
   /**
    * diagnosis list review task
    */
-  diagnosislistreviewtask: "DIAGLISTREV",
+  DIAGLISTREV: "DIAGLISTREV",
 
   /**
    * immunization list entry
    */
-  immunizationlistentry: "IMMLE",
+  IMMLE: "IMMLE",
 
   /**
    * laboratory results review task
    */
-  laboratoryresultsreviewtask: "LABRREV",
+  LABRREV: "LABRREV",
 
   /**
    * microbiology results review task
    */
-  microbiologyresultsreviewtask: "MICRORREV",
+  MICRORREV: "MICRORREV",
 
   /**
    * microbiology organisms results review task
    */
-  microbiologyorganismsresultsreviewtask: "MICROORGRREV",
+  MICROORGRREV: "MICROORGRREV",
 
   /**
    * microbiology sensitivity test results review task
    */
-  microbiologysensitivitytestresultsreviewtask: "MICROSENSRREV",
+  MICROSENSRREV: "MICROSENSRREV",
 
   /**
    * medication list review task
    */
-  medicationlistreviewtask: "MLREV",
+  MLREV: "MLREV",
 
   /**
    * medication administration record work list review task
    */
-  medicationadministrationrecordworklistreviewtask: "MARWLREV",
+  MARWLREV: "MARWLREV",
 
   /**
    * orders review task
    */
-  ordersreviewtask: "OREV",
+  OREV: "OREV",
 
   /**
    * pathology report review task
    */
-  pathologyreportreviewtask: "PATREPREV",
+  PATREPREV: "PATREPREV",
 
   /**
    * problem list review task
    */
-  problemlistreviewtask: "PROBLISTREV",
+  PROBLISTREV: "PROBLISTREV",
 
   /**
    * radiology report review task
    */
-  radiologyreportreviewtask: "RADREPREV",
+  RADREPREV: "RADREPREV",
 
   /**
    * reminder list entry
    */
-  reminderlistentry: "REMLE",
+  REMLE: "REMLE",
 
   /**
    * wellness reminder list entry
    */
-  wellnessreminderlistentry: "WELLREMLE",
+  WELLREMLE: "WELLREMLE",
 
   /**
    * risk assessment instrument task
    */
-  riskassessmentinstrumenttask: "RISKASSESS",
+  RISKASSESS: "RISKASSESS",
 
   /**
    * falls risk assessment instrument task
    */
-  fallsriskassessmentinstrumenttask: "FALLRISK",
+  FALLRISK: "FALLRISK",
 } as const;
 
 /**

@@ -6,12 +6,12 @@ export const ContainerSeparatorCode = {
   /**
    * Gel
    */
-  Gel: "GEL",
+  GEL: "GEL",
 
   /**
    * None
    */
-  None: "NONE",
+  NONE: "NONE",
 } as const;
 
 /**

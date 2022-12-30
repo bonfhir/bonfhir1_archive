@@ -6,32 +6,32 @@ export const PharmacySupplyEventStockReasonCodeCode = {
   /**
    * pharmacy supply event stock reason
    */
-  pharmacysupplyeventstockreason: "_PharmacySupplyEventStockReasonCode",
+  _PharmacySupplyEventStockReasonCode: "_PharmacySupplyEventStockReasonCode",
 
   /**
    * floor stock
    */
-  floorstock: "FLRSTCK",
+  FLRSTCK: "FLRSTCK",
 
   /**
    * long term care use
    */
-  longtermcareuse: "LTC",
+  LTC: "LTC",
 
   /**
    * office use
    */
-  officeuse: "OFFICE",
+  OFFICE: "OFFICE",
 
   /**
    * pharmacy transfer
    */
-  pharmacytransfer: "PHARM",
+  PHARM: "PHARM",
 
   /**
    * program use
    */
-  programuse: "PROG",
+  PROG: "PROG",
 } as const;
 
 /**

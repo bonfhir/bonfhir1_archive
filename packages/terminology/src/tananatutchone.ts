@@ -6,27 +6,27 @@ export const TananaTutchoneCode = {
   /**
    * Tanana
    */
-  Tanana: "_Tanana",
+  _Tanana: "_Tanana",
 
   /**
    * Lower Tanana
    */
-  LowerTanana: "x-TAA",
+  "x-TAA": "x-TAA",
 
   /**
    * Upper Tanana
    */
-  UpperTanana: "x-TAU",
+  "x-TAU": "x-TAU",
 
   /**
    * Tanacross
    */
-  Tanacross: "x-TCB",
+  "x-TCB": "x-TCB",
 
   /**
    * Upper Kuskokwim
    */
-  UpperKuskokwim: "x-KUU",
+  "x-KUU": "x-KUU",
 } as const;
 
 /**

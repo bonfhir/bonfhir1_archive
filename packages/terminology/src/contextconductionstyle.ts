@@ -6,17 +6,17 @@ export const ContextConductionStyleCode = {
   /**
    * conduction-indicator-based
    */
-  conductionindicatorbased: "C",
+  C: "C",
 
   /**
    * inferred
    */
-  inferred: "I",
+  I: "I",
 
   /**
    * vocabulary-based
    */
-  vocabularybased: "V",
+  V: "V",
 } as const;
 
 /**

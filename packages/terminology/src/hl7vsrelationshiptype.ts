@@ -6,47 +6,47 @@ export const Hl7VSRelationshipTypeCode = {
   /**
    * Causes/caused
    */
-  Causescaused: "CAUS",
+  CAUS: "CAUS",
 
   /**
    * Component of
    */
-  Componentof: "COMP",
+  COMP: "COMP",
 
   /**
    * Concurrently
    */
-  Concurrently: "CONCR",
+  CONCR: "CONCR",
 
   /**
    * Evidence
    */
-  Evidence: "EVID",
+  EVID: "EVID",
 
   /**
    * Interferes / interfered
    */
-  Interferesinterfered: "INTF",
+  INTF: "INTF",
 
   /**
    * Limits/limited
    */
-  Limitslimited: "LIMIT",
+  LIMIT: "LIMIT",
 
   /**
    * Succeeds
    */
-  Succeeds: "SUCCD",
+  SUCCD: "SUCCD",
 
   /**
    * Service target
    */
-  Servicetarget: "SVTGT",
+  SVTGT: "SVTGT",
 
   /**
    * Triggers/triggered
    */
-  Triggerstriggered: "TRIG",
+  TRIG: "TRIG",
 } as const;
 
 /**

@@ -6,47 +6,47 @@ export const Hl7VSContainerStatusCode = {
   /**
    * Archived
    */
-  Archived: "A",
+  A: "A",
 
   /**
    * Identified
    */
-  Identified: "I",
+  I: "I",
 
   /**
    * Left Equipment
    */
-  LeftEquipment: "L",
+  L: "L",
 
   /**
    * Missing
    */
-  Missing: "M",
+  M: "M",
 
   /**
    * In Process
    */
-  InProcess: "O",
+  O: "O",
 
   /**
    * In Position
    */
-  InPosition: "P",
+  P: "P",
 
   /**
    * Process Completed
    */
-  ProcessCompleted: "R",
+  R: "R",
 
   /**
    * Unknown
    */
-  Unknown: "U",
+  U: "U",
 
   /**
    * Container Unavailable
    */
-  ContainerUnavailable: "X",
+  X: "X",
 } as const;
 
 /**

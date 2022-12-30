@@ -8,7 +8,7 @@ export const RoleClassSubsumerCode = {
   /**
    * subsumer
    */
-  subsumer: "SUBS",
+  SUBS: "SUBS",
 } as const;
 
 /**

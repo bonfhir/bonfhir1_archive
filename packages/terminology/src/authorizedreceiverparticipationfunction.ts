@@ -6,28 +6,28 @@ export const AuthorizedReceiverParticipationFunctionCode = {
   /**
    * AuthorizedReceiverParticipationFunction
    */
-  AuthorizedReceiverParticipationFunction:
+  _AuthorizedReceiverParticipationFunction:
     "_AuthorizedReceiverParticipationFunction",
 
   /**
    * caregiver information receiver
    */
-  caregiverinformationreceiver: "AUCG",
+  AUCG: "AUCG",
 
   /**
    * legitimate relationship information receiver
    */
-  legitimaterelationshipinformationreceiver: "AULR",
+  AULR: "AULR",
 
   /**
    * care team information receiver
    */
-  careteaminformationreceiver: "AUTM",
+  AUTM: "AUTM",
 
   /**
    * work area information receiver
    */
-  workareainformationreceiver: "AUWA",
+  AUWA: "AUWA",
 } as const;
 
 /**

@@ -6,37 +6,37 @@ export const SubscriberRelationshipCodesCode = {
   /**
    * Child
    */
-  Child: "child",
+  child: "child",
 
   /**
    * Parent
    */
-  Parent: "parent",
+  parent: "parent",
 
   /**
    * Spouse
    */
-  Spouse: "spouse",
+  spouse: "spouse",
 
   /**
    * Common Law Spouse
    */
-  CommonLawSpouse: "common",
+  common: "common",
 
   /**
    * Other
    */
-  Other: "other",
+  other: "other",
 
   /**
    * Self
    */
-  Self: "self",
+  self: "self",
 
   /**
    * Injured Party
    */
-  InjuredParty: "injured",
+  injured: "injured",
 } as const;
 
 /**

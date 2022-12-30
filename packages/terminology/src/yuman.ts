@@ -6,52 +6,52 @@ export const YumanCode = {
   /**
    * DeltaCalifornia
    */
-  DeltaCalifornia: "_DeltaCalifornia",
+  _DeltaCalifornia: "_DeltaCalifornia",
 
   /**
    * Diegueno
    */
-  Diegueno: "_Diegueno",
+  _Diegueno: "_Diegueno",
 
   /**
    * Kumeyaay
    */
-  Kumeyaay: "x-DIH",
+  "x-DIH": "x-DIH",
 
   /**
    * Cocopa
    */
-  Cocopa: "x-COC",
+  "x-COC": "x-COC",
 
   /**
    * Pai
    */
-  Pai: "_Pai",
+  _Pai: "_Pai",
 
   /**
    * Havasupai
    */
-  Havasupai: "x-YUF",
+  "x-YUF": "x-YUF",
 
   /**
    * River
    */
-  River: "_River",
+  _River: "_River",
 
   /**
    * Mohave
    */
-  Mohave: "x-MOV",
+  "x-MOV": "x-MOV",
 
   /**
    * Maricopa
    */
-  Maricopa: "x-MRC",
+  "x-MRC": "x-MRC",
 
   /**
    * Quechan
    */
-  Quechan: "x-YUM",
+  "x-YUM": "x-YUM",
 } as const;
 
 /**

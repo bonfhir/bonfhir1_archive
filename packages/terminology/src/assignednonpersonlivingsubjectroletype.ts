@@ -6,43 +6,43 @@ export const AssignedNonPersonLivingSubjectRoleTypeCode = {
   /**
    * AssignedNonPersonLivingSubjectRoleType
    */
-  AssignedNonPersonLivingSubjectRoleType:
+  _AssignedNonPersonLivingSubjectRoleType:
     "_AssignedNonPersonLivingSubjectRoleType",
 
   /**
    * Assistive non-person living subject
    */
-  Assistivenonpersonlivingsubject: "ASSIST",
+  ASSIST: "ASSIST",
 
   /**
    * Biotherapeutic non-person living subject
    */
-  Biotherapeuticnonpersonlivingsubject: "BIOTH",
+  BIOTH: "BIOTH",
 
   /**
    * Antibiotic
    */
-  Antibiotic: "ANTIBIOT",
+  ANTIBIOT: "ANTIBIOT",
 
   /**
    * Debridement
    */
-  Debridement: "DEBR",
+  DEBR: "DEBR",
 
   /**
    * Clinical Companion
    */
-  ClinicalCompanion: "CCO",
+  CCO: "CCO",
 
   /**
    * Seeing
    */
-  Seeing: "SEE",
+  SEE: "SEE",
 
   /**
    * Sniffing
    */
-  Sniffing: "SNIFF",
+  SNIFF: "SNIFF",
 } as const;
 
 /**

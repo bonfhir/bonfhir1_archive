@@ -6,17 +6,17 @@ export const OverriderParticipationFunctionCode = {
   /**
    * OverriderParticipationFunction
    */
-  OverriderParticipationFunction: "_OverriderParticipationFunction",
+  _OverriderParticipationFunction: "_OverriderParticipationFunction",
 
   /**
    * consent overrider
    */
-  consentoverrider: "AUCOV",
+  AUCOV: "AUCOV",
 
   /**
    * emergency overrider
    */
-  emergencyoverrider: "AUEMROV",
+  AUEMROV: "AUEMROV",
 } as const;
 
 /**

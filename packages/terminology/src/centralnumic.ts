@@ -6,17 +6,17 @@ export const CentralNumicCode = {
   /**
    * Comanche
    */
-  Comanche: "x-COM",
+  "x-COM": "x-COM",
 
   /**
    * Panamint
    */
-  Panamint: "x-PAR",
+  "x-PAR": "x-PAR",
 
   /**
    * Shoshone
    */
-  Shoshone: "x-SHH",
+  "x-SHH": "x-SHH",
 } as const;
 
 /**

@@ -6,7 +6,7 @@ export const RoleClassCitizenCode = {
   /**
    * citizen
    */
-  citizen: "CIT",
+  CIT: "CIT",
 } as const;
 
 /**

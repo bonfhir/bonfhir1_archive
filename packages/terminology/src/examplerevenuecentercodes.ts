@@ -6,17 +6,17 @@ export const ExampleRevenueCenterCodesCode = {
   /**
    * Vision Clinic
    */
-  VisionClinic: "0010",
+  "0010": "0010",
 
   /**
    * Dental Clinic
    */
-  DentalClinic: "0011",
+  "0011": "0011",
 
   /**
    * Emergency
    */
-  Emergency: "1001",
+  "1001": "1001",
 } as const;
 
 /**

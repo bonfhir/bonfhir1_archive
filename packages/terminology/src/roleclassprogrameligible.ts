@@ -14,7 +14,7 @@ export const RoleClassProgramEligibleCode = {
   /**
    * program eligible
    */
-  programeligible: "PROG",
+  PROG: "PROG",
 } as const;
 
 /**

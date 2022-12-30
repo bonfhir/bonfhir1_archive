@@ -6,12 +6,12 @@ export const CodeIsNotValidCode = {
   /**
    * code is not valid
    */
-  codeisnotvalid: "CODE_INVAL",
+  CODE_INVAL: "CODE_INVAL",
 
   /**
    * code has been deprecated
    */
-  codehasbeendeprecated: "CODE_DEPREC",
+  CODE_DEPREC: "CODE_DEPREC",
 } as const;
 
 /**

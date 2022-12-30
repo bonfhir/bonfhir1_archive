@@ -6,17 +6,17 @@ export const Can_push_updatesCode = {
   /**
    * Yes
    */
-  Yes: "yes",
+  yes: "yes",
 
   /**
    * No
    */
-  No: "no",
+  no: "no",
 
   /**
    * Undetermined
    */
-  Undetermined: "undetermined",
+  undetermined: "undetermined",
 } as const;
 
 /**

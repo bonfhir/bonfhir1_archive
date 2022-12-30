@@ -6,27 +6,27 @@ export const RoleClassInactiveIngredientCode = {
   /**
    * inactive ingredient
    */
-  inactiveingredient: "IACT",
+  IACT: "IACT",
 
   /**
    * color additive
    */
-  coloradditive: "COLR",
+  COLR: "COLR",
 
   /**
    * flavor additive
    */
-  flavoradditive: "FLVR",
+  FLVR: "FLVR",
 
   /**
    * preservative
    */
-  preservative: "PRSV",
+  PRSV: "PRSV",
 
   /**
    * stabilizer
    */
-  stabilizer: "STBL",
+  STBL: "STBL",
 } as const;
 
 /**

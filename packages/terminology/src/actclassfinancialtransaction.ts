@@ -10,7 +10,7 @@ export const ActClassFinancialTransactionCode = {
   /**
    * financial transaction
    */
-  financialtransaction: "XACT",
+  XACT: "XACT",
 } as const;
 
 /**

@@ -6,27 +6,27 @@ export const ActSpecObsInterferenceCodeCode = {
   /**
    * ActSpecObsInterferenceCode
    */
-  ActSpecObsInterferenceCode: "INTFR",
+  INTFR: "INTFR",
 
   /**
    * Fibrin
    */
-  Fibrin: "FIBRIN",
+  FIBRIN: "FIBRIN",
 
   /**
    * Hemolysis
    */
-  Hemolysis: "HEMOLYSIS",
+  HEMOLYSIS: "HEMOLYSIS",
 
   /**
    * Icterus
    */
-  Icterus: "ICTERUS",
+  ICTERUS: "ICTERUS",
 
   /**
    * Lipemia
    */
-  Lipemia: "LIPEMIA",
+  LIPEMIA: "LIPEMIA",
 } as const;
 
 /**

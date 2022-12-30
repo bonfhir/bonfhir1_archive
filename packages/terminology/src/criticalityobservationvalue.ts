@@ -10,17 +10,17 @@ export const CriticalityObservationValueCode = {
   /**
    * high criticality
    */
-  highcriticality: "CRITH",
+  CRITH: "CRITH",
 
   /**
    * low criticality
    */
-  lowcriticality: "CRITL",
+  CRITL: "CRITL",
 
   /**
    * unable to assess criticality
    */
-  unabletoassesscriticality: "CRITU",
+  CRITU: "CRITU",
 } as const;
 
 /**

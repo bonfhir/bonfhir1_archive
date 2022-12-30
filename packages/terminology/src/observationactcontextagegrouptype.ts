@@ -6,7 +6,7 @@ export const ObservationActContextAgeGroupTypeCode = {
   /**
    * Age group
    */
-  Agegroup: "46251-5",
+  "46251-5": "46251-5",
 } as const;
 
 /**

@@ -6,7 +6,7 @@ export const ActPolicyTypeCode = {
   /**
    * ActPolicyType
    */
-  ActPolicyType: "_ActPolicyType",
+  _ActPolicyType: "_ActPolicyType",
 
   /**
    * _ActConsent
@@ -21,42 +21,42 @@ export const ActPolicyTypeCode = {
   /**
    * grantor choice
    */
-  grantorchoice: "GRANTORCHOICE",
+  GRANTORCHOICE: "GRANTORCHOICE",
 
   /**
    * implied consent
    */
-  impliedconsent: "IMPLIED",
+  IMPLIED: "IMPLIED",
 
   /**
    * implied consent with opportunity to dissent
    */
-  impliedconsentwithopportunitytodissent: "IMPLIEDD",
+  IMPLIEDD: "IMPLIEDD",
 
   /**
    * no consent
    */
-  noconsent: "NOCONSENT",
+  NOCONSENT: "NOCONSENT",
 
   /**
    * opt-in
    */
-  optin: "OPTIN",
+  OPTIN: "OPTIN",
 
   /**
    * opt-in with restrictions
    */
-  optinwithrestrictions: "OPTINR",
+  OPTINR: "OPTINR",
 
   /**
    * op-out
    */
-  opout: "OPTOUT",
+  OPTOUT: "OPTOUT",
 
   /**
    * opt-out with exceptions
    */
-  optoutwithexceptions: "OPTOUTE",
+  OPTOUTE: "OPTOUTE",
 
   /**
    * _ActPrivacyConsentDirective
@@ -71,12 +71,12 @@ export const ActPolicyTypeCode = {
   /**
    * GDPR Consent Directive
    */
-  GDPRConsentDirective: "GDPRCD",
+  GDPRCD: "GDPRCD",
 
   /**
    * GDPR Research Consent Directive
    */
-  GDPRResearchConsentDirective: "GDPRResearchCD",
+  GDPRResearchCD: "GDPRResearchCD",
 
   /**
    * _ActGenericConsentDirective
@@ -86,22 +86,22 @@ export const ActPolicyTypeCode = {
   /**
    * opt-in to personal information or effect collection in a registry or repository
    */
-  optintopersonalinformationoreffectcollectioninaregistryorrepository: "OIC",
+  OIC: "OIC",
 
   /**
    * opt-in to personal information or effect sharing via a registry or repository
    */
-  optintopersonalinformationoreffectsharingviaaregistryorrepository: "OIS",
+  OIS: "OIS",
 
   /**
    * opt-out of personal information or effect collection in a registry or repository
    */
-  optoutofpersonalinformationoreffectcollectioninaregistryorrepository: "OOC",
+  OOC: "OOC",
 
   /**
    * opt-out of personal information or effect sharing via a registry or repository
    */
-  optoutofpersonalinformationoreffectsharingviaaregistryorrepository: "OOS",
+  OOS: "OOS",
 
   /**
    * _ActUSPrivacyConsentDirective
@@ -111,67 +111,62 @@ export const ActPolicyTypeCode = {
   /**
    * 42 CFR Part 2 consent directive
    */
-  FortyTwoCFRPart2consentdirective: "42CFRPart2CD",
+  "42CFRPart2CD": "42CFRPart2CD",
 
   /**
    * Compound HIPAA Research Authorization and Informed Consent for Research
    */
-  CompoundHIPAAResearchAuthorizationandInformedConsentforResearch:
-    "CompoundResearchCD",
+  CompoundResearchCD: "CompoundResearchCD",
 
   /**
    * HIPAA Authorization Consent Directive
    */
-  HIPAAAuthorizationConsentDirective: "HIPAAAuthCD",
+  HIPAAAuthCD: "HIPAAAuthCD",
 
   /**
    * HIPAA Consent Directive
    */
-  HIPAAConsentDirective: "HIPAAConsentCD",
+  HIPAAConsentCD: "HIPAAConsentCD",
 
   /**
    * HIPAA Authorization for Disclosure for Research Consent Directive
    */
-  HIPAAAuthorizationforDisclosureforResearchConsentDirective:
-    "HIPAAResearchAuthCD",
+  HIPAAResearchAuthCD: "HIPAAResearchAuthCD",
 
   /**
    * HIPAA Right of Access Directive
    */
-  HIPAARightofAccessDirective: "HIPAAROAD",
+  HIPAAROAD: "HIPAAROAD",
 
   /**
    * Michigan Consent to Share Behavioral Health Information for Care Coordination Purposes
    */
-  MichiganConsenttoShareBehavioralHealthInformationforCareCoordinationPurposes:
-    "MDHHS-5515",
+  "MDHHS-5515": "MDHHS-5515",
 
   /**
    * Michigan Consent to Share Behavioral Health Information for Care Coordination Purposes-Michigan Mental Health Code
    */
-  MichiganConsenttoShareBehavioralHealthInformationforCareCoordinationPurposesMichiganMentalHealthCode:
-    "MDHHS-5515MMHC",
+  "MDHHS-5515MMHC": "MDHHS-5515MMHC",
 
   /**
    * Michigan Consent to Share Behavioral Health Information for Care Coordination Purposes-US 42 CFR Part 2
    */
-  MichiganConsenttoShareBehavioralHealthInformationforCareCoordinationPurposesUS42CFRPart2:
-    "MDHHS-5515Part2",
+  "MDHHS-5515Part2": "MDHHS-5515Part2",
 
   /**
    * Informed Assent for Research
    */
-  InformedAssentforResearch: "USResearchInformedAssent",
+  USResearchInformedAssent: "USResearchInformedAssent",
 
   /**
    * Informed Consent for Research
    */
-  InformedConsentforResearch: "USResearchInformedConsent",
+  USResearchInformedConsent: "USResearchInformedConsent",
 
   /**
    * Broad Consent for Research
    */
-  BroadConsentforResearch: "USBroadResearchConsent",
+  USBroadResearchConsent: "USBroadResearchConsent",
 
   /**
    * _ActInformationActionPolicy
@@ -181,52 +176,52 @@ export const ActPolicyTypeCode = {
   /**
    * access information
    */
-  accessinformation: "INFOACCESS",
+  INFOACCESS: "INFOACCESS",
 
   /**
    * collect information
    */
-  collectinformation: "INFOCOLLECT",
+  INFOCOLLECT: "INFOCOLLECT",
 
   /**
    * deidentify information
    */
-  deidentifyinformation: "INFODEIDENTIFIY",
+  INFODEIDENTIFIY: "INFODEIDENTIFIY",
 
   /**
    * disclose information
    */
-  discloseinformation: "INFODISCLOSE",
+  INFODISCLOSE: "INFODISCLOSE",
 
   /**
    * mask information
    */
-  maskinformation: "INFOMASK",
+  INFOMASK: "INFOMASK",
 
   /**
    * read only information
    */
-  readonlyinformation: "INFOREADONLY",
+  INFOREADONLY: "INFOREADONLY",
 
   /**
    * redact information
    */
-  redactinformation: "INFOREDACT",
+  INFOREDACT: "INFOREDACT",
 
   /**
    * redisclose information
    */
-  rediscloseinformation: "INFOREDISCLOSE",
+  INFOREDISCLOSE: "INFOREDISCLOSE",
 
   /**
    * reidentify information
    */
-  reidentifyinformation: "INFOREIDENTIFY",
+  INFOREIDENTIFY: "INFOREIDENTIFY",
 
   /**
    * use information
    */
-  useinformation: "INFOUSE",
+  INFOUSE: "INFOUSE",
 
   /**
    * _ActInformationPolicy
@@ -236,142 +231,142 @@ export const ActPolicyTypeCode = {
   /**
    * jurisdictional information policy
    */
-  jurisdictionalinformationpolicy: "JurisIP",
+  JurisIP: "JurisIP",
 
   /**
    * jurisdictional controlled unclassified information policy
    */
-  jurisdictionalcontrolledunclassifiedinformationpolicy: "JurisCUI",
+  JurisCUI: "JurisCUI",
 
   /**
    * jurisdictional de-identified information policy
    */
-  jurisdictionaldeidentifiedinformationpolicy: "JurisDEID",
+  JurisDEID: "JurisDEID",
 
   /**
    * jurisdictional limited data set
    */
-  jurisdictionallimiteddataset: "JurisLDS",
+  JurisLDS: "JurisLDS",
 
   /**
    * jurisdictional non-sensitive information policy
    */
-  jurisdictionalnonsensitiveinformationpolicy: "JurisNSI",
+  JurisNSI: "JurisNSI",
 
   /**
    * jurisdictional public information policy
    */
-  jurisdictionalpublicinformationpolicy: "JurisPI",
+  JurisPI: "JurisPI",
 
   /**
    * jurisdictional specified controlled unclassified information policy
    */
-  jurisdictionalspecifiedcontrolledunclassifiedinformationpolicy: "JurisSP-CUI",
+  "JurisSP-CUI": "JurisSP-CUI",
 
   /**
    * jurisdictional uncontrolled unclassified information policy
    */
-  jurisdictionaluncontrolledunclassifiedinformationpolicy: "JurisUUI",
+  JurisUUI: "JurisUUI",
 
   /**
    * organizational information policy
    */
-  organizationalinformationpolicy: "OrgIP",
+  OrgIP: "OrgIP",
 
   /**
    * organizational basic controlled unclassified information policy
    */
-  organizationalbasiccontrolledunclassifiedinformationpolicy: "OrgCUI",
+  OrgCUI: "OrgCUI",
 
   /**
    * organizational de-identified informati)on policy
    */
-  organizationaldeidentifiedinformationpolicy: "OrgDEID",
+  OrgDEID: "OrgDEID",
 
   /**
    * organizational limited data set information policy
    */
-  organizationallimiteddatasetinformationpolicy: "OrgLDS",
+  OrgLDS: "OrgLDS",
 
   /**
    * organizational non-sensitive information policy
    */
-  organizationalnonsensitiveinformationpolicy: "OrgNSI",
+  OrgNSI: "OrgNSI",
 
   /**
    * organizational public information policy
    */
-  organizationalpublicinformationpolicy: "OrgPI",
+  OrgPI: "OrgPI",
 
   /**
    * organizational specified controlled unclassified information policy
    */
-  organizationalspecifiedcontrolledunclassifiedinformationpolicy: "OrgSP-CUI",
+  "OrgSP-CUI": "OrgSP-CUI",
 
   /**
    * organizational uncontrolled unclassified information policy
    */
-  organizationaluncontrolledunclassifiedinformationpolicy: "OrgUUI",
+  OrgUUI: "OrgUUI",
 
   /**
    * personal information policy
    */
-  personalinformationpolicy: "PersIP",
+  PersIP: "PersIP",
 
   /**
    * personal de-identified information policy
    */
-  personaldeidentifiedinformationpolicy: "PersDEID",
+  PersDEID: "PersDEID",
 
   /**
    * personal limited data set information policy
    */
-  personallimiteddatasetinformationpolicy: "PersLDS",
+  PersLDS: "PersLDS",
 
   /**
    * personal non-sensitive information policy
    */
-  personalnonsensitiveinformationpolicy: "PersNSI",
+  PersNSI: "PersNSI",
 
   /**
    * personal public information policy
    */
-  personalpublicinformationpolicy: "PersPI",
+  PersPI: "PersPI",
 
   /**
    * ActPrivacyPolicy
    */
-  ActPrivacyPolicy: "_ActPrivacyPolicy",
+  _ActPrivacyPolicy: "_ActPrivacyPolicy",
 
   /**
    * ActConsentDirective
    */
-  ActConsentDirective: "_ActConsentDirective",
+  _ActConsentDirective: "_ActConsentDirective",
 
   /**
    * emergency only
    */
-  emergencyonly: "EMRGONLY",
+  EMRGONLY: "EMRGONLY",
 
   /**
    * notice of privacy practices
    */
-  noticeofprivacypractices: "NOPP",
+  NOPP: "NOPP",
 
   /**
    * ActPrivacyLaw
    */
-  ActPrivacyLaw: "_ActPrivacyLaw",
+  _ActPrivacyLaw: "_ActPrivacyLaw",
 
   /**
    * General Data Protection Regulation
    */
-  GeneralDataProtectionRegulation: "_ActGDPRPrivacyLaw",
+  _ActGDPRPrivacyLaw: "_ActGDPRPrivacyLaw",
 
   /**
    * GDPR Consent
    */
-  GDPRConsent: "GDPRCONSENT",
+  GDPRCONSENT: "GDPRCONSENT",
 
   /**
    * _ActUSPrivacyLaw
@@ -381,7 +376,7 @@ export const ActPolicyTypeCode = {
   /**
    * 42 CFR Part2
    */
-  FortyTwoCFRPart2: "42CFRPart2",
+  "42CFRPart2": "42CFRPart2",
 
   /**
    * Common Rule
@@ -391,7 +386,7 @@ export const ActPolicyTypeCode = {
   /**
    * HIPAA Authorization for Disclosure
    */
-  HIPAAAuthorizationforDisclosure: "HIPAAAuth",
+  HIPAAAuth: "HIPAAAuth",
 
   /**
    * HIPAA Consent
@@ -401,22 +396,22 @@ export const ActPolicyTypeCode = {
   /**
    * HIPAA notice of privacy practices
    */
-  HIPAAnoticeofprivacypractices: "HIPAANOPP",
+  HIPAANOPP: "HIPAANOPP",
 
   /**
    * HIPAA psychotherapy notes
    */
-  HIPAApsychotherapynotes: "HIPAAPsyNotes",
+  HIPAAPsyNotes: "HIPAAPsyNotes",
 
   /**
    * HIPAA Right of Access
    */
-  HIPAARightofAccess: "HIPAAROA",
+  HIPAAROA: "HIPAAROA",
 
   /**
    * HIPAA self-pay
    */
-  HIPAAselfpay: "HIPAASelfPay",
+  HIPAASelfPay: "HIPAASelfPay",
 
   /**
    * Title 38 Section 7332
@@ -426,502 +421,502 @@ export const ActPolicyTypeCode = {
   /**
    * HIPAA Consent
    */
-  HIPAAConsent: "a) HIPAAConsent",
+  "a) HIPAAConsent": "a) HIPAAConsent",
 
   /**
    * InformationSensitivityPolicy
    */
-  InformationSensitivityPolicy: "_InformationSensitivityPolicy",
+  _InformationSensitivityPolicy: "_InformationSensitivityPolicy",
 
   /**
    * ActInformationSensitivityPolicy
    */
-  ActInformationSensitivityPolicy: "_ActInformationSensitivityPolicy",
+  _ActInformationSensitivityPolicy: "_ActInformationSensitivityPolicy",
 
   /**
    * substance abuse information sensitivity
    */
-  substanceabuseinformationsensitivity: "ETH",
+  ETH: "ETH",
 
   /**
    * genetic disease information sensitivity
    */
-  geneticdiseaseinformationsensitivity: "GDIS",
+  GDIS: "GDIS",
 
   /**
    * HIV/AIDS information sensitivity
    */
-  HIVAIDSinformationsensitivity: "HIV",
+  HIV: "HIV",
 
   /**
    * military sexual trauma information sensitivity
    */
-  militarysexualtraumainformationsensitivity: "MST",
+  MST: "MST",
 
   /**
    * pregnancy information sensitivity
    */
-  pregnancyinformationsensitivity: "PREGNANT",
+  PREGNANT: "PREGNANT",
 
   /**
    * sickle cell anemia information sensitivity
    */
-  sicklecellanemiainformationsensitivity: "SCA",
+  SCA: "SCA",
 
   /**
    * sexual assault, abuse, or domestic violence information sensitivity
    */
-  sexualassaultabuseordomesticviolenceinformationsensitivity: "SDV",
+  SDV: "SDV",
 
   /**
    * sexuality and reproductive health information sensitivity
    */
-  sexualityandreproductivehealthinformationsensitivity: "SEX",
+  SEX: "SEX",
 
   /**
    * specially protected information sensitivity
    */
-  speciallyprotectedinformationsensitivity: "SPI",
+  SPI: "SPI",
 
   /**
    * behavioral health information sensitivity
    */
-  behavioralhealthinformationsensitivity: "BH",
+  BH: "BH",
 
   /**
    * cognitive disability information sensitivity
    */
-  cognitivedisabilityinformationsensitivity: "COGN",
+  COGN: "COGN",
 
   /**
    * developmental disability information sensitivity
    */
-  developmentaldisabilityinformationsensitivity: "DVD",
+  DVD: "DVD",
 
   /**
    * emotional disturbance information sensitivity
    */
-  emotionaldisturbanceinformationsensitivity: "EMOTDIS",
+  EMOTDIS: "EMOTDIS",
 
   /**
    * mental health information sensitivity
    */
-  mentalhealthinformationsensitivity: "MH",
+  MH: "MH",
 
   /**
    * psychiatry disorder information sensitivity
    */
-  psychiatrydisorderinformationsensitivity: "PSY",
+  PSY: "PSY",
 
   /**
    * psychotherapy note information sensitivity
    */
-  psychotherapynoteinformationsensitivity: "PSYTHPN",
+  PSYTHPN: "PSYTHPN",
 
   /**
    * substance use disorder information sensitivity
    */
-  substanceusedisorderinformationsensitivity: "SUD",
+  SUD: "SUD",
 
   /**
    * alcohol use disorder information sensitivity
    */
-  alcoholusedisorderinformationsensitivity: "ETHUD",
+  ETHUD: "ETHUD",
 
   /**
    * opioid use disorder information sensitivity
    */
-  opioidusedisorderinformationsensitivity: "OPIOIDUD",
+  OPIOIDUD: "OPIOIDUD",
 
   /**
    * sexually transmitted disease information sensitivity
    */
-  sexuallytransmitteddiseaseinformationsensitivity: "STD",
+  STD: "STD",
 
   /**
    * taboo
    */
-  taboo: "TBOO",
+  TBOO: "TBOO",
 
   /**
    * violence information sensitivity
    */
-  violenceinformationsensitivity: "VIO",
+  VIO: "VIO",
 
   /**
    * Identifier Sensitivity
    */
-  IdentifierSensitivity: "IDS",
+  IDS: "IDS",
 
   /**
    * sickle cell
    */
-  sicklecell: "SICKLE",
+  SICKLE: "SICKLE",
 
   /**
    * EntityInformationSensitivityPolicy
    */
-  EntityInformationSensitivityPolicy: "_EntitySensitivityPolicyType",
+  _EntitySensitivityPolicyType: "_EntitySensitivityPolicyType",
 
   /**
    * all demographic information sensitivity
    */
-  alldemographicinformationsensitivity: "DEMO",
+  DEMO: "DEMO",
 
   /**
    * date of birth information sensitivity
    */
-  dateofbirthinformationsensitivity: "DOB",
+  DOB: "DOB",
 
   /**
    * gender and sexual orientation information sensitivity
    */
-  genderandsexualorientationinformationsensitivity: "GENDER",
+  GENDER: "GENDER",
 
   /**
    * living arrangement information sensitivity
    */
-  livingarrangementinformationsensitivity: "LIVARG",
+  LIVARG: "LIVARG",
 
   /**
    * marital status information sensitivity
    */
-  maritalstatusinformationsensitivity: "MARST",
+  MARST: "MARST",
 
   /**
    * patient location
    */
-  patientlocation: "PATLOC",
+  PATLOC: "PATLOC",
 
   /**
    * race information sensitivity
    */
-  raceinformationsensitivity: "RACE",
+  RACE: "RACE",
 
   /**
    * religion information sensitivity
    */
-  religioninformationsensitivity: "REL",
+  REL: "REL",
 
   /**
    * RoleInformationSensitivityPolicy
    */
-  RoleInformationSensitivityPolicy: "_RoleInformationSensitivityPolicy",
+  _RoleInformationSensitivityPolicy: "_RoleInformationSensitivityPolicy",
 
   /**
    * business information sensitivity
    */
-  businessinformationsensitivity: "B",
+  B: "B",
 
   /**
    * employer information sensitivity
    */
-  employerinformationsensitivity: "EMPL",
+  EMPL: "EMPL",
 
   /**
    * location information sensitivity
    */
-  locationinformationsensitivity: "LOCIS",
+  LOCIS: "LOCIS",
 
   /**
    * sensitive service provider information sensitivity
    */
-  sensitiveserviceproviderinformationsensitivity: "SSP",
+  SSP: "SSP",
 
   /**
    * adolescent information sensitivity
    */
-  adolescentinformationsensitivity: "ADOL",
+  ADOL: "ADOL",
 
   /**
    * celebrity information sensitivity
    */
-  celebrityinformationsensitivity: "CEL",
+  CEL: "CEL",
 
   /**
    * celebrity information sensitivity
    */
-  celebrityinformationsensitivity: "VIP",
+  VIP: "VIP",
 
   /**
    * diagnosis information sensitivity
    */
-  diagnosisinformationsensitivity: "DIA",
+  DIA: "DIA",
 
   /**
    * drug information sensitivity
    */
-  druginformationsensitivity: "DRGIS",
+  DRGIS: "DRGIS",
 
   /**
    * employee information sensitivity
    */
-  employeeinformationsensitivity: "EMP",
+  EMP: "EMP",
 
   /**
    * patient default information sensitivity
    */
-  patientdefaultinformationsensitivity: "PDS",
+  PDS: "PDS",
 
   /**
    * physician requested information sensitivity
    */
-  physicianrequestedinformationsensitivity: "PHY",
+  PHY: "PHY",
 
   /**
    * patient requested information sensitivity
    */
-  patientrequestedinformationsensitivity: "PRS",
+  PRS: "PRS",
 
   /**
    * compartment
    */
-  compartment: "COMPT",
+  COMPT: "COMPT",
 
   /**
    * accountable care organization compartment
    */
-  accountablecareorganizationcompartment: "ACOCOMPT",
+  ACOCOMPT: "ACOCOMPT",
 
   /**
    * CDS system compartment
    */
-  CDSsystemcompartment: "CDSSCOMPT",
+  CDSSCOMPT: "CDSSCOMPT",
 
   /**
    * care team compartment
    */
-  careteamcompartment: "CTCOMPT",
+  CTCOMPT: "CTCOMPT",
 
   /**
    * financial management compartment
    */
-  financialmanagementcompartment: "FMCOMPT",
+  FMCOMPT: "FMCOMPT",
 
   /**
    * human resource compartment
    */
-  humanresourcecompartment: "HRCOMPT",
+  HRCOMPT: "HRCOMPT",
 
   /**
    * legitimate relationship compartment
    */
-  legitimaterelationshipcompartment: "LRCOMPT",
+  LRCOMPT: "LRCOMPT",
 
   /**
    * patient administration compartment
    */
-  patientadministrationcompartment: "PACOMPT",
+  PACOMPT: "PACOMPT",
 
   /**
    * research project compartment
    */
-  researchprojectcompartment: "RESCOMPT",
+  RESCOMPT: "RESCOMPT",
 
   /**
    * records management compartment
    */
-  recordsmanagementcompartment: "RMGTCOMPT",
+  RMGTCOMPT: "RMGTCOMPT",
 
   /**
    * trust policy
    */
-  trustpolicy: "ActTrustPolicyType",
+  ActTrustPolicyType: "ActTrustPolicyType",
 
   /**
    * trust accreditation
    */
-  trustaccreditation: "TRSTACCRD",
+  TRSTACCRD: "TRSTACCRD",
 
   /**
    * trust agreement
    */
-  trustagreement: "TRSTAGRE",
+  TRSTAGRE: "TRSTAGRE",
 
   /**
    * trust assurance
    */
-  trustassurance: "TRSTASSUR",
+  TRSTASSUR: "TRSTASSUR",
 
   /**
    * trust certificate
    */
-  trustcertificate: "TRSTCERT",
+  TRSTCERT: "TRSTCERT",
 
   /**
    * trust framework
    */
-  trustframework: "TRSTFWK",
+  TRSTFWK: "TRSTFWK",
 
   /**
    * trust mechanism
    */
-  trustmechanism: "TRSTMEC",
+  TRSTMEC: "TRSTMEC",
 
   /**
    * benefit policy
    */
-  benefitpolicy: "COVPOL",
+  COVPOL: "COVPOL",
 
   /**
    * security policy
    */
-  securitypolicy: "SecurityPolicy",
+  SecurityPolicy: "SecurityPolicy",
 
   /**
    * authorization policy
    */
-  authorizationpolicy: "AUTHPOL",
+  AUTHPOL: "AUTHPOL",
 
   /**
    * access control scheme
    */
-  accesscontrolscheme: "ACCESSCONSCHEME",
+  ACCESSCONSCHEME: "ACCESSCONSCHEME",
 
   /**
    * delegation policy
    */
-  delegationpolicy: "DELEPOL",
+  DELEPOL: "DELEPOL",
 
   /**
    * obligation policy
    */
-  obligationpolicy: "ObligationPolicy",
+  ObligationPolicy: "ObligationPolicy",
 
   /**
    * anonymize
    */
-  anonymize: "ANONY",
+  ANONY: "ANONY",
 
   /**
    * accounting of disclosure
    */
-  accountingofdisclosure: "AOD",
+  AOD: "AOD",
 
   /**
    * audit
    */
-  audit: "AUDIT",
+  AUDIT: "AUDIT",
 
   /**
    * audit trail
    */
-  audittrail: "AUDTR",
+  AUDTR: "AUDTR",
 
   /**
    * comply with policy
    */
-  complywithpolicy: "CPLYPOL",
+  CPLYPOL: "CPLYPOL",
 
   /**
    * comply with confidentiality code
    */
-  complywithconfidentialitycode: "CPLYCC",
+  CPLYCC: "CPLYCC",
 
   /**
    * comply with consent directive
    */
-  complywithconsentdirective: "CPLYCD",
+  CPLYCD: "CPLYCD",
 
   /**
    * comply with controlled unclassified information policy
    */
-  complywithcontrolledunclassifiedinformationpolicy: "CPLYCUI",
+  CPLYCUI: "CPLYCUI",
 
   /**
    * comply with jurisdictional privacy policy
    */
-  complywithjurisdictionalprivacypolicy: "CPLYJPP",
+  CPLYJPP: "CPLYJPP",
 
   /**
    * comply with jurisdictional security policy
    */
-  complywithjurisdictionalsecuritypolicy: "CPLYJSP",
+  CPLYJSP: "CPLYJSP",
 
   /**
    * comply with organizational privacy policy
    */
-  complywithorganizationalprivacypolicy: "CPLYOPP",
+  CPLYOPP: "CPLYOPP",
 
   /**
    * comply with organizational security policy
    */
-  complywithorganizationalsecuritypolicy: "CPLYOSP",
+  CPLYOSP: "CPLYOSP",
 
   /**
    * declassify security label
    */
-  declassifysecuritylabel: "DECLASSIFYLABEL",
+  DECLASSIFYLABEL: "DECLASSIFYLABEL",
 
   /**
    * deidentify
    */
-  deidentify: "DEID",
+  DEID: "DEID",
 
   /**
    * delete after use
    */
-  deleteafteruse: "DELAU",
+  DELAU: "DELAU",
 
   /**
    * downgrade security label
    */
-  downgradesecuritylabel: "DOWNGRDLABEL",
+  DOWNGRDLABEL: "DOWNGRDLABEL",
 
   /**
    * derive security label
    */
-  derivesecuritylabel: "DRIVLABEL",
+  DRIVLABEL: "DRIVLABEL",
 
   /**
    * encrypt
    */
-  encrypt: "ENCRYPT",
+  ENCRYPT: "ENCRYPT",
 
   /**
    * encrypt at rest
    */
-  encryptatrest: "ENCRYPTR",
+  ENCRYPTR: "ENCRYPTR",
 
   /**
    * encrypt in transit
    */
-  encryptintransit: "ENCRYPTT",
+  ENCRYPTT: "ENCRYPTT",
 
   /**
    * encrypt in use
    */
-  encryptinuse: "ENCRYPTU",
+  ENCRYPTU: "ENCRYPTU",
 
   /**
    * human approval
    */
-  humanapproval: "HUAPRV",
+  HUAPRV: "HUAPRV",
 
   /**
    * assign security label
    */
-  assignsecuritylabel: "LABEL",
+  LABEL: "LABEL",
 
   /**
    * mask
    */
-  mask: "MASK",
+  MASK: "MASK",
 
   /**
    * minimum necessary
    */
-  minimumnecessary: "MINEC",
+  MINEC: "MINEC",
 
   /**
    * persist security label
    */
-  persistsecuritylabel: "PERSISTLABEL",
+  PERSISTLABEL: "PERSISTLABEL",
 
   /**
    * privacy mark
    */
-  privacymark: "PRIVMARK",
+  PRIVMARK: "PRIVMARK",
 
   /**
    * CUI Mark
@@ -931,22 +926,22 @@ export const ActPolicyTypeCode = {
   /**
    * pseudonymize
    */
-  pseudonymize: "PSEUD",
+  PSEUD: "PSEUD",
 
   /**
    * redact
    */
-  redact: "REDACT",
+  REDACT: "REDACT",
 
   /**
    * upgrade security label
    */
-  upgradesecuritylabel: "UPGRDLABEL",
+  UPGRDLABEL: "UPGRDLABEL",
 
   /**
    * privacy mark
    */
-  privacymark: "PrivacyMark",
+  PrivacyMark: "PrivacyMark",
 
   /**
    * ControlledUnclassifiedInformation
@@ -971,12 +966,12 @@ export const ActPolicyTypeCode = {
   /**
    * (CUI//HLTH)
    */
-  CUIHLTH: "CUIHLTHP",
+  CUIHLTHP: "CUIHLTHP",
 
   /**
    * (CUI)
    */
-  CUI: "CUIP",
+  CUIP: "CUIP",
 
   /**
    * CUI//PRVCY
@@ -986,32 +981,32 @@ export const ActPolicyTypeCode = {
   /**
    * (CUI//PRVCY)
    */
-  CUIPRVCY: "CUIPRVCYP",
+  CUIPRVCYP: "CUIPRVCYP",
 
   /**
    * CUI//SP-HLTH
    */
-  CUISPHLTH: "CUISP-HLTH",
+  "CUISP-HLTH": "CUISP-HLTH",
 
   /**
    * (CUI//SP-HLTH)
    */
-  CUISPHLTH: "CUISP-HLTHP",
+  "CUISP-HLTHP": "CUISP-HLTHP",
 
   /**
    * CUI//SP-PRVCY
    */
-  CUISPPRVCY: "CUISP-PRVCY",
+  "CUISP-PRVCY": "CUISP-PRVCY",
 
   /**
    * (CUI//SP-PRVCY)
    */
-  CUISPPRVCY: "CUISP-PRVCYP",
+  "CUISP-PRVCYP": "CUISP-PRVCYP",
 
   /**
    * (U)
    */
-  U: "UUI",
+  UUI: "UUI",
 
   /**
    * Security Label Mark
@@ -1021,128 +1016,127 @@ export const ActPolicyTypeCode = {
   /**
    * confidential mark
    */
-  confidentialmark: "ConfidentialMark",
+  ConfidentialMark: "ConfidentialMark",
 
   /**
    * copy of original mark
    */
-  copyoforiginalmark: "COPYMark",
+  COPYMark: "COPYMark",
 
   /**
    * deliver only to addressee mark
    */
-  deliveronlytoaddresseemark: "DeliverToAddresseeOnlyMark",
+  DeliverToAddresseeOnlyMark: "DeliverToAddresseeOnlyMark",
 
   /**
    * prohibition against redisclosure mark
    */
-  prohibitionagainstredisclosuremark: "RedisclosureProhibitionMark",
+  RedisclosureProhibitionMark: "RedisclosureProhibitionMark",
 
   /**
    * restricted confidentiality mark
    */
-  restrictedconfidentialitymark: "RestrictedConfidentialityMark",
+  RestrictedConfidentialityMark: "RestrictedConfidentialityMark",
 
   /**
    * Draft Mark
    */
-  DraftMark: "DRAFTMark",
+  DRAFTMark: "DRAFTMark",
 
   /**
    * refrain policy
    */
-  refrainpolicy: "RefrainPolicy",
+  RefrainPolicy: "RefrainPolicy",
 
   /**
    * no disclosure without subject authorization
    */
-  nodisclosurewithoutsubjectauthorization: "NOAUTH",
+  NOAUTH: "NOAUTH",
 
   /**
    * no collection
    */
-  nocollection: "NOCOLLECT",
+  NOCOLLECT: "NOCOLLECT",
 
   /**
    * no disclosure without consent directive
    */
-  nodisclosurewithoutconsentdirective: "NODSCLCD",
+  NODSCLCD: "NODSCLCD",
 
   /**
    * no disclosure without information subject's consent directive
    */
-  nodisclosurewithoutinformationsubjectsconsentdirective: "NODSCLCDS",
+  NODSCLCDS: "NODSCLCDS",
 
   /**
    * no integration
    */
-  nointegration: "NOINTEGRATE",
+  NOINTEGRATE: "NOINTEGRATE",
 
   /**
    * no unlisted entity disclosure
    */
-  nounlistedentitydisclosure: "NOLIST",
+  NOLIST: "NOLIST",
 
   /**
    * no disclosure without MOU
    */
-  nodisclosurewithoutMOU: "NOMOU",
+  NOMOU: "NOMOU",
 
   /**
    * no disclosure without organizational authorization
    */
-  nodisclosurewithoutorganizationalauthorization: "NOORGPOL",
+  NOORGPOL: "NOORGPOL",
 
   /**
    * no disclosure to patient, family or caregivers without attending provider's authorization
    */
-  nodisclosuretopatientfamilyorcaregiverswithoutattendingprovidersauthorization:
-    "NOPAT",
+  NOPAT: "NOPAT",
 
   /**
    * no collection beyond purpose of use
    */
-  nocollectionbeyondpurposeofuse: "NOPERSISTP",
+  NOPERSISTP: "NOPERSISTP",
 
   /**
    * no redisclosure without consent directive
    */
-  noredisclosurewithoutconsentdirective: "NORDSCLCD",
+  NORDSCLCD: "NORDSCLCD",
 
   /**
    * no redisclosure without consent directive
    */
-  noredisclosurewithoutconsentdirective: "NORDSLCD",
+  NORDSLCD: "NORDSLCD",
 
   /**
    * no redisclosure without information subject's consent directive
    */
-  noredisclosurewithoutinformationsubjectsconsentdirective: "NORDSCLCDS",
+  NORDSCLCDS: "NORDSCLCDS",
 
   /**
    * no disclosure without jurisdictional authorization
    */
-  nodisclosurewithoutjurisdictionalauthorization: "NORDSCLW",
+  NORDSCLW: "NORDSCLW",
 
   /**
    * no relinking
    */
-  norelinking: "NORELINK",
+  NORELINK: "NORELINK",
 
   /**
    * no reuse beyond purpose of use
    */
-  noreusebeyondpurposeofuse: "NOREUSE",
+  NOREUSE: "NOREUSE",
 
   /**
    * no unauthorized VIP disclosure
    */
-  nounauthorizedVIPdisclosure: "NOVIP",
+  NOVIP: "NOVIP",
 
   /**
    * no disclosure without originator authorization
    */
-  nodisclosurewithoutoriginatorauthorization: "ORCON",
+  ORCON: "ORCON",
 } as const;
 
 /**

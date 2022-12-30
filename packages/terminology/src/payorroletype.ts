@@ -8,22 +8,22 @@ export const PayorRoleTypeCode = {
   /**
    * PayorRoleType
    */
-  PayorRoleType: "_PayorRoleType",
+  _PayorRoleType: "_PayorRoleType",
 
   /**
    * Enrollment Broker
    */
-  EnrollmentBroker: "ENROLBKR",
+  ENROLBKR: "ENROLBKR",
 
   /**
    * Third party administrator
    */
-  Thirdpartyadministrator: "TPA",
+  TPA: "TPA",
 
   /**
    * Utilization management organization
    */
-  Utilizationmanagementorganization: "UMO",
+  UMO: "UMO",
 } as const;
 
 /**

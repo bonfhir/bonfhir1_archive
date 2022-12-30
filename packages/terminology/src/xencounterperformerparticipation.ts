@@ -6,17 +6,17 @@ export const XEncounterPerformerParticipationCode = {
   /**
    * consultant
    */
-  consultant: "CON",
+  CON: "CON",
 
   /**
    * performer
    */
-  performer: "PRF",
+  PRF: "PRF",
 
   /**
    * secondary performer
    */
-  secondaryperformer: "SPRF",
+  SPRF: "SPRF",
 } as const;
 
 /**

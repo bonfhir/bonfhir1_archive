@@ -6,12 +6,12 @@ export const WesternMuskogeanCode = {
   /**
    * Choctaw
    */
-  Choctaw: "x-CCT",
+  "x-CCT": "x-CCT",
 
   /**
    * Chickasaw
    */
-  Chickasaw: "x-CIC",
+  "x-CIC": "x-CIC",
 } as const;
 
 /**

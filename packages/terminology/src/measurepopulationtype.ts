@@ -6,47 +6,47 @@ export const MeasurePopulationTypeCode = {
   /**
    * Initial Population
    */
-  InitialPopulation: "initial-population",
+  "initial-population": "initial-population",
 
   /**
    * Numerator
    */
-  Numerator: "numerator",
+  numerator: "numerator",
 
   /**
    * Numerator Exclusion
    */
-  NumeratorExclusion: "numerator-exclusion",
+  "numerator-exclusion": "numerator-exclusion",
 
   /**
    * Denominator
    */
-  Denominator: "denominator",
+  denominator: "denominator",
 
   /**
    * Denominator Exclusion
    */
-  DenominatorExclusion: "denominator-exclusion",
+  "denominator-exclusion": "denominator-exclusion",
 
   /**
    * Denominator Exception
    */
-  DenominatorException: "denominator-exception",
+  "denominator-exception": "denominator-exception",
 
   /**
    * Measure Population
    */
-  MeasurePopulation: "measure-population",
+  "measure-population": "measure-population",
 
   /**
    * Measure Population Exclusion
    */
-  MeasurePopulationExclusion: "measure-population-exclusion",
+  "measure-population-exclusion": "measure-population-exclusion",
 
   /**
    * Measure Observation
    */
-  MeasureObservation: "measure-observation",
+  "measure-observation": "measure-observation",
 } as const;
 
 /**

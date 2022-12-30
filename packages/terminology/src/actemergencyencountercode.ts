@@ -6,7 +6,7 @@ export const ActEmergencyEncounterCodeCode = {
   /**
    * emergency
    */
-  emergency: "EMER",
+  EMER: "EMER",
 } as const;
 
 /**

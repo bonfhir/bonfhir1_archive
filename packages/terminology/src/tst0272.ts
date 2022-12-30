@@ -6,17 +6,17 @@ export const Tst0272Code = {
   /**
    * Minimum Inhibitory Concentration
    */
-  MinimumInhibitoryConcentration: "0272",
+  "0272": "0272",
 
   /**
    * Minimum Inhibitory Concentration, macrodilution
    */
-  MinimumInhibitoryConcentrationmacrodilution: "0245",
+  "0245": "0245",
 
   /**
    * Minimum Inhibitory Concentration, microdilution
    */
-  MinimumInhibitoryConcentrationmicrodilution: "0246",
+  "0246": "0246",
 } as const;
 
 /**

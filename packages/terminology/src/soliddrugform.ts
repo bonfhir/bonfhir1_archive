@@ -6,297 +6,297 @@ export const SolidDrugFormCode = {
   /**
    * Bar
    */
-  Bar: "BAR",
+  BAR: "BAR",
 
   /**
    * Bar Soap
    */
-  BarSoap: "BARSOAP",
+  BARSOAP: "BARSOAP",
 
   /**
    * Medicated Bar Soap
    */
-  MedicatedBarSoap: "MEDBAR",
+  MEDBAR: "MEDBAR",
 
   /**
    * Chewable Bar
    */
-  ChewableBar: "CHEWBAR",
+  CHEWBAR: "CHEWBAR",
 
   /**
    * Beads
    */
-  Beads: "BEAD",
+  BEAD: "BEAD",
 
   /**
    * Cake
    */
-  Cake: "CAKE",
+  CAKE: "CAKE",
 
   /**
    * Cement
    */
-  Cement: "CEMENT",
+  CEMENT: "CEMENT",
 
   /**
    * Crystals
    */
-  Crystals: "CRYS",
+  CRYS: "CRYS",
 
   /**
    * Disk
    */
-  Disk: "DISK",
+  DISK: "DISK",
 
   /**
    * Flakes
    */
-  Flakes: "FLAKE",
+  FLAKE: "FLAKE",
 
   /**
    * Granules
    */
-  Granules: "GRAN",
+  GRAN: "GRAN",
 
   /**
    * ChewingGum
    */
-  ChewingGum: "GUM",
+  GUM: "GUM",
 
   /**
    * Pad
    */
-  Pad: "PAD",
+  PAD: "PAD",
 
   /**
    * Medicated Pad
    */
-  MedicatedPad: "MEDPAD",
+  MEDPAD: "MEDPAD",
 
   /**
    * Patch
    */
-  Patch: "PATCH",
+  PATCH: "PATCH",
 
   /**
    * Transdermal Patch
    */
-  TransdermalPatch: "TPATCH",
+  TPATCH: "TPATCH",
 
   /**
    * 16 Hour Transdermal Patch
    */
-  SixteenHourTransdermalPatch: "TPATH16",
+  TPATH16: "TPATH16",
 
   /**
    * 24 Hour Transdermal Patch
    */
-  TwentyFourHourTransdermalPatch: "TPATH24",
+  TPATH24: "TPATH24",
 
   /**
    * Biweekly Transdermal Patch
    */
-  BiweeklyTransdermalPatch: "TPATH2WK",
+  TPATH2WK: "TPATH2WK",
 
   /**
    * 72 Hour Transdermal Patch
    */
-  SeventyTwoHourTransdermalPatch: "TPATH72",
+  TPATH72: "TPATH72",
 
   /**
    * Weekly Transdermal Patch
    */
-  WeeklyTransdermalPatch: "TPATHWK",
+  TPATHWK: "TPATHWK",
 
   /**
    * Pellet
    */
-  Pellet: "PELLET",
+  PELLET: "PELLET",
 
   /**
    * Pill
    */
-  Pill: "PILL",
+  PILL: "PILL",
 
   /**
    * Capsule
    */
-  Capsule: "CAP",
+  CAP: "CAP",
 
   /**
    * Oral Capsule
    */
-  OralCapsule: "ORCAP",
+  ORCAP: "ORCAP",
 
   /**
    * Enteric Coated Capsule
    */
-  EntericCoatedCapsule: "ENTCAP",
+  ENTCAP: "ENTCAP",
 
   /**
    * Extended Release Enteric Coated Capsule
    */
-  ExtendedReleaseEntericCoatedCapsule: "ERENTCAP",
+  ERENTCAP: "ERENTCAP",
 
   /**
    * Extended Release Capsule
    */
-  ExtendedReleaseCapsule: "ERCAP",
+  ERCAP: "ERCAP",
 
   /**
    * 12 Hour Extended Release Capsule
    */
-  TwelveHourExtendedReleaseCapsule: "ERCAP12",
+  ERCAP12: "ERCAP12",
 
   /**
    * 24 Hour Extended Release Capsule
    */
-  TwentyFourHourExtendedReleaseCapsule: "ERCAP24",
+  ERCAP24: "ERCAP24",
 
   /**
    * Extended Release Enteric Coated Capsule
    */
-  ExtendedReleaseEntericCoatedCapsule: "ERECCAP",
+  ERECCAP: "ERECCAP",
 
   /**
    * Tablet
    */
-  Tablet: "TAB",
+  TAB: "TAB",
 
   /**
    * Oral Tablet
    */
-  OralTablet: "ORTAB",
+  ORTAB: "ORTAB",
 
   /**
    * Buccal Tablet
    */
-  BuccalTablet: "BUCTAB",
+  BUCTAB: "BUCTAB",
 
   /**
    * Sustained Release Buccal Tablet
    */
-  SustainedReleaseBuccalTablet: "SRBUCTAB",
+  SRBUCTAB: "SRBUCTAB",
 
   /**
    * Caplet
    */
-  Caplet: "CAPLET",
+  CAPLET: "CAPLET",
 
   /**
    * Chewable Tablet
    */
-  ChewableTablet: "CHEWTAB",
+  CHEWTAB: "CHEWTAB",
 
   /**
    * Coated Particles Tablet
    */
-  CoatedParticlesTablet: "CPTAB",
+  CPTAB: "CPTAB",
 
   /**
    * Disintegrating Tablet
    */
-  DisintegratingTablet: "DISINTAB",
+  DISINTAB: "DISINTAB",
 
   /**
    * Delayed Release Tablet
    */
-  DelayedReleaseTablet: "DRTAB",
+  DRTAB: "DRTAB",
 
   /**
    * Enteric Coated Tablet
    */
-  EntericCoatedTablet: "ECTAB",
+  ECTAB: "ECTAB",
 
   /**
    * Extended Release Enteric Coated Tablet
    */
-  ExtendedReleaseEntericCoatedTablet: "ERECTAB",
+  ERECTAB: "ERECTAB",
 
   /**
    * Extended Release Tablet
    */
-  ExtendedReleaseTablet: "ERTAB",
+  ERTAB: "ERTAB",
 
   /**
    * 12 Hour Extended Release Tablet
    */
-  TwelveHourExtendedReleaseTablet: "ERTAB12",
+  ERTAB12: "ERTAB12",
 
   /**
    * 24 Hour Extended Release Tablet
    */
-  TwentyFourHourExtendedReleaseTablet: "ERTAB24",
+  ERTAB24: "ERTAB24",
 
   /**
    * Lozenge/Oral Troche
    */
-  LozengeOralTroche: "ORTROCHE",
+  ORTROCHE: "ORTROCHE",
 
   /**
    * Sublingual Tablet
    */
-  SublingualTablet: "SLTAB",
+  SLTAB: "SLTAB",
 
   /**
    * Vaginal Tablet
    */
-  VaginalTablet: "VAGTAB",
+  VAGTAB: "VAGTAB",
 
   /**
    * Powder
    */
-  Powder: "POWD",
+  POWD: "POWD",
 
   /**
    * Topical Powder
    */
-  TopicalPowder: "TOPPWD",
+  TOPPWD: "TOPPWD",
 
   /**
    * Rectal Powder
    */
-  RectalPowder: "RECPWD",
+  RECPWD: "RECPWD",
 
   /**
    * Vaginal Powder
    */
-  VaginalPowder: "VAGPWD",
+  VAGPWD: "VAGPWD",
 
   /**
    * Suppository
    */
-  Suppository: "SUPP",
+  SUPP: "SUPP",
 
   /**
    * Rectal Suppository
    */
-  RectalSuppository: "RECSUPP",
+  RECSUPP: "RECSUPP",
 
   /**
    * Urethral suppository
    */
-  Urethralsuppository: "URETHSUPP",
+  URETHSUPP: "URETHSUPP",
 
   /**
    * Vaginal Suppository
    */
-  VaginalSuppository: "VAGSUPP",
+  VAGSUPP: "VAGSUPP",
 
   /**
    * Swab
    */
-  Swab: "SWAB",
+  SWAB: "SWAB",
 
   /**
    * Medicated swab
    */
-  Medicatedswab: "MEDSWAB",
+  MEDSWAB: "MEDSWAB",
 
   /**
    * Wafer
    */
-  Wafer: "WAFER",
+  WAFER: "WAFER",
 } as const;
 
 /**

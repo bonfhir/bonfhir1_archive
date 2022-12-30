@@ -6,47 +6,47 @@ export const ObservationLivingSituationValueCode = {
   /**
    * living situation
    */
-  livingsituation: "LIVSIT",
+  LIVSIT: "LIVSIT",
 
   /**
    * alone
    */
-  alone: "ALONE",
+  ALONE: "ALONE",
 
   /**
    * dependent children
    */
-  dependentchildren: "DEPCHD",
+  DEPCHD: "DEPCHD",
 
   /**
    * dependent spouse
    */
-  dependentspouse: "DEPSPS",
+  DEPSPS: "DEPSPS",
 
   /**
    * dependent young children
    */
-  dependentyoungchildren: "DEPYGCHD",
+  DEPYGCHD: "DEPYGCHD",
 
   /**
    * live with family
    */
-  livewithfamily: "FAM",
+  FAM: "FAM",
 
   /**
    * relative
    */
-  relative: "RELAT",
+  RELAT: "RELAT",
 
   /**
    * spouse only
    */
-  spouseonly: "SPS",
+  SPS: "SPS",
 
   /**
    * unrelated person
    */
-  unrelatedperson: "UNREL",
+  UNREL: "UNREL",
 } as const;
 
 /**

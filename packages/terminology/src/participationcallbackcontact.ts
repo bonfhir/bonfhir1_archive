@@ -6,7 +6,7 @@ export const ParticipationCallbackContactCode = {
   /**
    * callback contact
    */
-  callbackcontact: "CALLBCK",
+  CALLBCK: "CALLBCK",
 } as const;
 
 /**

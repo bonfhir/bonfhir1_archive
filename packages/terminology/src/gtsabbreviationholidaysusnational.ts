@@ -6,7 +6,7 @@ export const GTSAbbreviationHolidaysUSNationalCode = {
   /**
    * GTSAbbreviationHolidaysUSNational
    */
-  GTSAbbreviationHolidaysUSNational: "JHNUS",
+  JHNUS: "JHNUS",
 
   /**
    * JHNUSCLM

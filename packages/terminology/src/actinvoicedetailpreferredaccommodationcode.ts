@@ -6,42 +6,42 @@ export const ActInvoiceDetailPreferredAccommodationCodeCode = {
   /**
    * ActEncounterAccommodationCode
    */
-  ActEncounterAccommodationCode: "_ActEncounterAccommodationCode",
+  _ActEncounterAccommodationCode: "_ActEncounterAccommodationCode",
 
   /**
    * HL7AccommodationCode
    */
-  HL7AccommodationCode: "_HL7AccommodationCode",
+  _HL7AccommodationCode: "_HL7AccommodationCode",
 
   /**
    * Isolation
    */
-  Isolation: "I",
+  I: "I",
 
   /**
    * Private
    */
-  Private: "P",
+  P: "P",
 
   /**
    * Suite
    */
-  Suite: "S",
+  S: "S",
 
   /**
    * Semi-private
    */
-  Semiprivate: "SP",
+  SP: "SP",
 
   /**
    * Ward
    */
-  Ward: "W",
+  W: "W",
 
   /**
    * HCPCSAccommodationCode
    */
-  HCPCSAccommodationCode: "_HCPCSAccommodationCode",
+  _HCPCSAccommodationCode: "_HCPCSAccommodationCode",
 } as const;
 
 /**

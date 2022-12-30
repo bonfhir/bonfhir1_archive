@@ -6,202 +6,202 @@ export const SecurityIntegrityObservationValueCode = {
   /**
    * alteration integrity
    */
-  alterationintegrity: "_SECALTINTOBV",
+  _SECALTINTOBV: "_SECALTINTOBV",
 
   /**
    * abstracted
    */
-  abstracted: "ABSTRED",
+  ABSTRED: "ABSTRED",
 
   /**
    * aggregated
    */
-  aggregated: "AGGRED",
+  AGGRED: "AGGRED",
 
   /**
    * anonymized
    */
-  anonymized: "ANONYED",
+  ANONYED: "ANONYED",
 
   /**
    * mapped
    */
-  mapped: "MAPPED",
+  MAPPED: "MAPPED",
 
   /**
    * masked
    */
-  masked: "MASKED",
+  MASKED: "MASKED",
 
   /**
    * pseudonymized
    */
-  pseudonymized: "PSEUDED",
+  PSEUDED: "PSEUDED",
 
   /**
    * redacted
    */
-  redacted: "REDACTED",
+  REDACTED: "REDACTED",
 
   /**
    * subsetted
    */
-  subsetted: "SUBSETTED",
+  SUBSETTED: "SUBSETTED",
 
   /**
    * syntactic transform
    */
-  syntactictransform: "SYNTAC",
+  SYNTAC: "SYNTAC",
 
   /**
    * translated
    */
-  translated: "TRSLT",
+  TRSLT: "TRSLT",
 
   /**
    * versioned
    */
-  versioned: "VERSIONED",
+  VERSIONED: "VERSIONED",
 
   /**
    * data integrity
    */
-  dataintegrity: "_SECDATINTOBV",
+  _SECDATINTOBV: "_SECDATINTOBV",
 
   /**
    * cryptographic hash function
    */
-  cryptographichashfunction: "CRYTOHASH",
+  CRYTOHASH: "CRYTOHASH",
 
   /**
    * digital signature
    */
-  digitalsignature: "DIGSIG",
+  DIGSIG: "DIGSIG",
 
   /**
    * integrity confidence
    */
-  integrityconfidence: "_SECINTCONOBV",
+  _SECINTCONOBV: "_SECINTCONOBV",
 
   /**
    * highly reliable
    */
-  highlyreliable: "HRELIABLE",
+  HRELIABLE: "HRELIABLE",
 
   /**
    * reliable
    */
-  reliable: "RELIABLE",
+  RELIABLE: "RELIABLE",
 
   /**
    * uncertain reliability
    */
-  uncertainreliability: "UNCERTREL",
+  UNCERTREL: "UNCERTREL",
 
   /**
    * unreliable
    */
-  unreliable: "UNRELIABLE",
+  UNRELIABLE: "UNRELIABLE",
 
   /**
    * provenance
    */
-  provenance: "_SECINTPRVOBV",
+  _SECINTPRVOBV: "_SECINTPRVOBV",
 
   /**
    * provenance asserted by
    */
-  provenanceassertedby: "_SECINTPRVABOBV",
+  _SECINTPRVABOBV: "_SECINTPRVABOBV",
 
   /**
    * clinician asserted
    */
-  clinicianasserted: "CLINAST",
+  CLINAST: "CLINAST",
 
   /**
    * device asserted
    */
-  deviceasserted: "DEVAST",
+  DEVAST: "DEVAST",
 
   /**
    * healthcare professional asserted
    */
-  healthcareprofessionalasserted: "HCPAST",
+  HCPAST: "HCPAST",
 
   /**
    * patient acquaintance asserted
    */
-  patientacquaintanceasserted: "PACQAST",
+  PACQAST: "PACQAST",
 
   /**
    * patient asserted
    */
-  patientasserted: "PATAST",
+  PATAST: "PATAST",
 
   /**
    * payer asserted
    */
-  payerasserted: "PAYAST",
+  PAYAST: "PAYAST",
 
   /**
    * professional asserted
    */
-  professionalasserted: "PROAST",
+  PROAST: "PROAST",
 
   /**
    * substitute decision maker asserted
    */
-  substitutedecisionmakerasserted: "SDMAST",
+  SDMAST: "SDMAST",
 
   /**
    * provenance reported by
    */
-  provenancereportedby: "_SECINTPRVRBOBV",
+  _SECINTPRVRBOBV: "_SECINTPRVRBOBV",
 
   /**
    * clinician reported
    */
-  clinicianreported: "CLINRPT",
+  CLINRPT: "CLINRPT",
 
   /**
    * device reported
    */
-  devicereported: "DEVRPT",
+  DEVRPT: "DEVRPT",
 
   /**
    * healthcare professional reported
    */
-  healthcareprofessionalreported: "HCPRPT",
+  HCPRPT: "HCPRPT",
 
   /**
    * patient acquaintance reported
    */
-  patientacquaintancereported: "PACQRPT",
+  PACQRPT: "PACQRPT",
 
   /**
    * patient reported
    */
-  patientreported: "PATRPT",
+  PATRPT: "PATRPT",
 
   /**
    * payer reported
    */
-  payerreported: "PAYRPT",
+  PAYRPT: "PAYRPT",
 
   /**
    * professional reported
    */
-  professionalreported: "PRORPT",
+  PRORPT: "PRORPT",
 
   /**
    * substitute decision maker reported
    */
-  substitutedecisionmakerreported: "SDMRPT",
+  SDMRPT: "SDMRPT",
 
   /**
    * integrity status
    */
-  integritystatus: "_SECINTSTOBV",
+  _SECINTSTOBV: "_SECINTSTOBV",
 } as const;
 
 /**

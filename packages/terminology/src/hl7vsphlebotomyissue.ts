@@ -6,68 +6,67 @@ export const Hl7VSPhlebotomyIssueCode = {
   /**
    * Infiltration
    */
-  Infiltration: "INF",
+  INF: "INF",
 
   /**
    * Vein Spasm
    */
-  VeinSpasm: "VSM",
+  VSM: "VSM",
 
   /**
    * Collapse
    */
-  Collapse: "COL",
+  COL: "COL",
 
   /**
    * Missed / in tissue
    */
-  Missedintissue: "MIS",
+  MIS: "MIS",
 
   /**
    * Needle adjustment (this may not end a procedure, if successful will impact component production)
    */
-  Needleadjustmentthismaynotendaprocedureifsuccessfulwillimpactcomponentproduction:
-    "NAD",
+  NAD: "NAD",
 
   /**
    * Poor flow
    */
-  Poorflow: "PFL",
+  PFL: "PFL",
 
   /**
    * Clotted
    */
-  Clotted: "CLT",
+  CLT: "CLT",
 
   /**
    * Defective Needle
    */
-  DefectiveNeedle: "DND",
+  DND: "DND",
 
   /**
    * Defective Bag
    */
-  DefectiveBag: "DBG",
+  DBG: "DBG",
 
   /**
    * Defective Apheresis Kit
    */
-  DefectiveApheresisKit: "DAK",
+  DAK: "DAK",
 
   /**
    * Defective Instrument
    */
-  DefectiveInstrument: "DMT",
+  DMT: "DMT",
 
   /**
    * Instrument Power Failure
    */
-  InstrumentPowerFailure: "IPF",
+  IPF: "IPF",
 
   /**
    * Air Contamination
    */
-  AirContamination: "ACN",
+  ACN: "ACN",
 } as const;
 
 /**

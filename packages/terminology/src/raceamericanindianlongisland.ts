@@ -6,27 +6,27 @@ export const RaceAmericanIndianLongIslandCode = {
   /**
    * Long Island
    */
-  LongIsland: "1325-0",
+  "1325-0": "1325-0",
 
   /**
    * Matinecock
    */
-  Matinecock: "1326-8",
+  "1326-8": "1326-8",
 
   /**
    * Montauk
    */
-  Montauk: "1327-6",
+  "1327-6": "1327-6",
 
   /**
    * Poospatuck
    */
-  Poospatuck: "1328-4",
+  "1328-4": "1328-4",
 
   /**
    * Setauket
    */
-  Setauket: "1329-2",
+  "1329-2": "1329-2",
 } as const;
 
 /**

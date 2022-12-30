@@ -6,7 +6,7 @@ export const ActRelationshipHasRiskCode = {
   /**
    * has risk
    */
-  hasrisk: "RISK",
+  RISK: "RISK",
 } as const;
 
 /**

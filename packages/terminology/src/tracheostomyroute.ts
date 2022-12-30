@@ -6,12 +6,12 @@ export const TracheostomyRouteCode = {
   /**
    * Inhalation, tracheostomy
    */
-  Inhalationtracheostomy: "TRACH",
+  TRACH: "TRACH",
 
   /**
    * Instillation, tracheostomy
    */
-  Instillationtracheostomy: "TRACHINSTL",
+  TRACHINSTL: "TRACHINSTL",
 } as const;
 
 /**

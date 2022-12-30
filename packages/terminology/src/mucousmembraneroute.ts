@@ -6,7 +6,7 @@ export const MucousMembraneRouteCode = {
   /**
    * Topical application, mucous membrane
    */
-  Topicalapplicationmucousmembrane: "MUC",
+  MUC: "MUC",
 } as const;
 
 /**

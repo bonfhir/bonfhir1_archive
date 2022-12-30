@@ -6,42 +6,42 @@ export const RoleClassAgentCode = {
   /**
    * agent
    */
-  agent: "AGNT",
+  AGNT: "AGNT",
 
   /**
    * assigned entity
    */
-  assignedentity: "ASSIGNED",
+  ASSIGNED: "ASSIGNED",
 
   /**
    * commissioning party
    */
-  commissioningparty: "COMPAR",
+  COMPAR: "COMPAR",
 
   /**
    * signing authority or officer
    */
-  signingauthorityorofficer: "SGNOFF",
+  SGNOFF: "SGNOFF",
 
   /**
    * contact
    */
-  contact: "CON",
+  CON: "CON",
 
   /**
    * emergency contact
    */
-  emergencycontact: "ECON",
+  ECON: "ECON",
 
   /**
    * next of kin
    */
-  nextofkin: "NOK",
+  NOK: "NOK",
 
   /**
    * guardian
    */
-  guardian: "GUARD",
+  GUARD: "GUARD",
 } as const;
 
 /**

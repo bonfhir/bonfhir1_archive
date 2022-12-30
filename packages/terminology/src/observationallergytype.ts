@@ -6,22 +6,22 @@ export const ObservationAllergyTypeCode = {
   /**
    * Allergy
    */
-  Allergy: "ALG",
+  ALG: "ALG",
 
   /**
    * Drug Allergy
    */
-  DrugAllergy: "DALG",
+  DALG: "DALG",
 
   /**
    * Environmental Allergy
    */
-  EnvironmentalAllergy: "EALG",
+  EALG: "EALG",
 
   /**
    * Food Allergy
    */
-  FoodAllergy: "FALG",
+  FALG: "FALG",
 } as const;
 
 /**

@@ -6,7 +6,7 @@ export const ElectroOsmosisRouteCode = {
   /**
    * Electro-osmosis
    */
-  Electroosmosis: "ELECTOSMOS",
+  ELECTOSMOS: "ELECTOSMOS",
 } as const;
 
 /**

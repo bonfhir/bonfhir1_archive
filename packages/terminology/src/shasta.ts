@@ -6,7 +6,7 @@ export const ShastaCode = {
   /**
    * Shasta
    */
-  Shasta: "x-SHT",
+  "x-SHT": "x-SHT",
 } as const;
 
 /**

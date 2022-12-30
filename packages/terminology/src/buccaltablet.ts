@@ -6,12 +6,12 @@ export const BuccalTabletCode = {
   /**
    * Buccal Tablet
    */
-  BuccalTablet: "BUCTAB",
+  BUCTAB: "BUCTAB",
 
   /**
    * Sustained Release Buccal Tablet
    */
-  SustainedReleaseBuccalTablet: "SRBUCTAB",
+  SRBUCTAB: "SRBUCTAB",
 } as const;
 
 /**

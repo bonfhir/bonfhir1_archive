@@ -21,7 +21,7 @@ export const ConformanceExpectationCode = {
   /**
    * SHOULD-NOT
    */
-  SHOULDNOT: "SHOULD-NOT",
+  "SHOULD-NOT": "SHOULD-NOT",
 } as const;
 
 /**

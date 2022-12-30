@@ -6,12 +6,12 @@ export const ResearchSubjectRoleBasisCode = {
   /**
    * enrollment
    */
-  enrollment: "ERL",
+  ERL: "ERL",
 
   /**
    * screening
    */
-  screening: "SCN",
+  SCN: "SCN",
 } as const;
 
 /**

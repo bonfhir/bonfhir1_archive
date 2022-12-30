@@ -6,107 +6,107 @@ export const LiquidSolidSuspensionCode = {
   /**
    * Gel
    */
-  Gel: "GEL",
+  GEL: "GEL",
 
   /**
    * Gel with Applicator
    */
-  GelwithApplicator: "GELAPL",
+  GELAPL: "GELAPL",
 
   /**
    * Nasal Gel
    */
-  NasalGel: "NASGEL",
+  NASGEL: "NASGEL",
 
   /**
    * Ophthalmic Gel
    */
-  OphthalmicGel: "OPGEL",
+  OPGEL: "OPGEL",
 
   /**
    * Otic Gel
    */
-  OticGel: "OTGEL",
+  OTGEL: "OTGEL",
 
   /**
    * Topical Gel
    */
-  TopicalGel: "TOPGEL",
+  TOPGEL: "TOPGEL",
 
   /**
    * Urethral Gel
    */
-  UrethralGel: "URETHGEL",
+  URETHGEL: "URETHGEL",
 
   /**
    * Vaginal Gel
    */
-  VaginalGel: "VAGGEL",
+  VAGGEL: "VAGGEL",
 
   /**
    * Vaginal Gel with Applicator
    */
-  VaginalGelwithApplicator: "VGELAPL",
+  VGELAPL: "VGELAPL",
 
   /**
    * Paste
    */
-  Paste: "PASTE",
+  PASTE: "PASTE",
 
   /**
    * Pudding
    */
-  Pudding: "PUD",
+  PUD: "PUD",
 
   /**
    * Toothpaste
    */
-  Toothpaste: "TPASTE",
+  TPASTE: "TPASTE",
 
   /**
    * Suspension
    */
-  Suspension: "SUSP",
+  SUSP: "SUSP",
 
   /**
    * Intrathecal Suspension
    */
-  IntrathecalSuspension: "ITSUSP",
+  ITSUSP: "ITSUSP",
 
   /**
    * Ophthalmic Suspension
    */
-  OphthalmicSuspension: "OPSUSP",
+  OPSUSP: "OPSUSP",
 
   /**
    * Oral Suspension
    */
-  OralSuspension: "ORSUSP",
+  ORSUSP: "ORSUSP",
 
   /**
    * Extended-Release Suspension
    */
-  ExtendedReleaseSuspension: "ERSUSP",
+  ERSUSP: "ERSUSP",
 
   /**
    * 12 Hour Extended-Release Suspension
    */
-  TwelveHourExtendedReleaseSuspension: "ERSUSP12",
+  ERSUSP12: "ERSUSP12",
 
   /**
    * 24 Hour Extended Release Suspension
    */
-  TwentyFourHourExtendedReleaseSuspension: "ERSUSP24",
+  ERSUSP24: "ERSUSP24",
 
   /**
    * Otic Suspension
    */
-  OticSuspension: "OTSUSP",
+  OTSUSP: "OTSUSP",
 
   /**
    * Rectal Suspension
    */
-  RectalSuspension: "RECSUSP",
+  RECSUSP: "RECSUSP",
 } as const;
 
 /**

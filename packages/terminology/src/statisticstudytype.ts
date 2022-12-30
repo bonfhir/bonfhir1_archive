@@ -6,42 +6,42 @@ export const StatisticStudyTypeCode = {
   /**
    * randomized trial
    */
-  randomizedtrial: "RCT",
+  RCT: "RCT",
 
   /**
    * controlled trial (non-randomized)
    */
-  controlledtrialnonrandomized: "CCT",
+  CCT: "CCT",
 
   /**
    * comparative cohort study
    */
-  comparativecohortstudy: "cohort",
+  cohort: "cohort",
 
   /**
    * case-control study
    */
-  casecontrolstudy: "case-control",
+  "case-control": "case-control",
 
   /**
    * uncontrolled case series
    */
-  uncontrolledcaseseries: "series",
+  series: "series",
 
   /**
    * case report
    */
-  casereport: "case-report",
+  "case-report": "case-report",
 
   /**
    * mixed RCT and cohort
    */
-  mixedRCTandcohort: "RCTandCohort",
+  RCTandCohort: "RCTandCohort",
 
   /**
    * cross sectional study
    */
-  crosssectionalstudy: "cross-section",
+  "cross-section": "cross-section",
 } as const;
 
 /**

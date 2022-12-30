@@ -6,7 +6,7 @@ export const TransmissionRelationshipTypeCodeCode = {
   /**
    * sequence
    */
-  sequence: "SEQL",
+  SEQL: "SEQL",
 } as const;
 
 /**

@@ -6,7 +6,7 @@ export const ActClassBioSequenceCode = {
   /**
    * bio sequence
    */
-  biosequence: "SEQ",
+  SEQ: "SEQ",
 } as const;
 
 /**

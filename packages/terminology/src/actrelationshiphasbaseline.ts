@@ -6,7 +6,7 @@ export const ActRelationshipHasBaselineCode = {
   /**
    * has baseline
    */
-  hasbaseline: "BSLN",
+  BSLN: "BSLN",
 } as const;
 
 /**

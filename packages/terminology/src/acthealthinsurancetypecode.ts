@@ -6,77 +6,77 @@ export const ActHealthInsuranceTypeCodeCode = {
   /**
    * extended healthcare
    */
-  extendedhealthcare: "EHCPOL",
+  EHCPOL: "EHCPOL",
 
   /**
    * health spending account
    */
-  healthspendingaccount: "HSAPOL",
+  HSAPOL: "HSAPOL",
 
   /**
    * ActHealthInsuranceTypeCode
    */
-  ActHealthInsuranceTypeCode: "_ActHealthInsuranceTypeCode",
+  _ActHealthInsuranceTypeCode: "_ActHealthInsuranceTypeCode",
 
   /**
    * dental care policy
    */
-  dentalcarepolicy: "DENTAL",
+  DENTAL: "DENTAL",
 
   /**
    * disease specific policy
    */
-  diseasespecificpolicy: "DISEASE",
+  DISEASE: "DISEASE",
 
   /**
    * drug policy
    */
-  drugpolicy: "DRUGPOL",
+  DRUGPOL: "DRUGPOL",
 
   /**
    * health insurance plan policy
    */
-  healthinsuranceplanpolicy: "HIP",
+  HIP: "HIP",
 
   /**
    * long term care policy
    */
-  longtermcarepolicy: "LTC",
+  LTC: "LTC",
 
   /**
    * managed care policy
    */
-  managedcarepolicy: "MCPOL",
+  MCPOL: "MCPOL",
 
   /**
    * point of service policy
    */
-  pointofservicepolicy: "POS",
+  POS: "POS",
 
   /**
    * health maintenance organization policy
    */
-  healthmaintenanceorganizationpolicy: "HMO",
+  HMO: "HMO",
 
   /**
    * preferred provider organization policy
    */
-  preferredproviderorganizationpolicy: "PPO",
+  PPO: "PPO",
 
   /**
    * mental health policy
    */
-  mentalhealthpolicy: "MENTPOL",
+  MENTPOL: "MENTPOL",
 
   /**
    * substance use policy
    */
-  substanceusepolicy: "SUBPOL",
+  SUBPOL: "SUBPOL",
 
   /**
    * vision care policy
    */
-  visioncarepolicy: "VISPOL",
+  VISPOL: "VISPOL",
 } as const;
 
 /**

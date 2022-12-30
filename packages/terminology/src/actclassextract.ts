@@ -12,12 +12,12 @@ export const ActClassExtractCode = {
   /**
    * extract
    */
-  extract: "EXTRACT",
+  EXTRACT: "EXTRACT",
 
   /**
    * electronic health record
    */
-  electronichealthrecord: "EHR",
+  EHR: "EHR",
 } as const;
 
 /**

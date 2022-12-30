@@ -6,42 +6,42 @@ export const Hl7VSDiagnosisPriorityCode = {
   /**
    * Not included in diagnosis ranking
    */
-  Notincludedindiagnosisranking: "0",
+  "0": "0",
 
   /**
    * The primary diagnosis
    */
-  Theprimarydiagnosis: "1",
+  "1": "1",
 
   /**
    * for ranked secondary diagnoses
    */
-  forrankedsecondarydiagnoses: "2 and higher",
+  "2 and higher": "2 and higher",
 
   /**
    * For ranked secondary diagnoses
    */
-  Forrankedsecondarydiagnoses: "2 ...",
+  "2 ...": "2 ...",
 
   /**
    * For  secondary diagnosis
    */
-  Forsecondarydiagnosis: "2",
+  "2": "2",
 
   /**
    * No suggested values defined
    */
-  Nosuggestedvaluesdefined: "...",
+  "...": "...",
 
   /**
    * For tertiary diagnosis
    */
-  Fortertiarydiagnosis: "3",
+  "3": "3",
 
   /**
    * For quaternary diagnosis
    */
-  Forquaternarydiagnosis: "4",
+  "4": "4",
 } as const;
 
 /**

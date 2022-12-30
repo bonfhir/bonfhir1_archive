@@ -6,32 +6,32 @@ export const BottleEntityTypeCode = {
   /**
    * Bottle
    */
-  Bottle: "BOT",
+  BOT: "BOT",
 
   /**
    * Amber Bottle
    */
-  AmberBottle: "BOTA",
+  BOTA: "BOTA",
 
   /**
    * Dropper Bottle
    */
-  DropperBottle: "BOTD",
+  BOTD: "BOTD",
 
   /**
    * Glass Bottle
    */
-  GlassBottle: "BOTG",
+  BOTG: "BOTG",
 
   /**
    * Plastic Bottle
    */
-  PlasticBottle: "BOTP",
+  BOTP: "BOTP",
 
   /**
    * Polyethylene Bottle
    */
-  PolyethyleneBottle: "BOTPLY",
+  BOTPLY: "BOTPLY",
 } as const;
 
 /**

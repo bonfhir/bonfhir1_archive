@@ -6,34 +6,32 @@ export const Hl7VSAcknowledgmentCodeCode = {
   /**
    * Original mode: Application Accept - Enhanced mode: Application acknowledgment: Accept
    */
-  OriginalmodeApplicationAcceptEnhancedmodeApplicationacknowledgmentAccept:
-    "AA",
+  AA: "AA",
 
   /**
    * Original mode: Application Error - Enhanced mode: Application acknowledgment: Error
    */
-  OriginalmodeApplicationErrorEnhancedmodeApplicationacknowledgmentError: "AE",
+  AE: "AE",
 
   /**
    * Original mode: Application Reject - Enhanced mode: Application acknowledgment: Reject
    */
-  OriginalmodeApplicationRejectEnhancedmodeApplicationacknowledgmentReject:
-    "AR",
+  AR: "AR",
 
   /**
    * Enhanced mode: Accept acknowledgment: Commit Accept
    */
-  EnhancedmodeAcceptacknowledgmentCommitAccept: "CA",
+  CA: "CA",
 
   /**
    * Enhanced mode: Accept acknowledgment: Commit Error
    */
-  EnhancedmodeAcceptacknowledgmentCommitError: "CE",
+  CE: "CE",
 
   /**
    * Enhanced mode: Accept acknowledgment: Commit Reject
    */
-  EnhancedmodeAcceptacknowledgmentCommitReject: "CR",
+  CR: "CR",
 } as const;
 
 /**

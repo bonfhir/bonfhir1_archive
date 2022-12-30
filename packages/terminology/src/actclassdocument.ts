@@ -6,17 +6,17 @@ export const ActClassDocumentCode = {
   /**
    * document
    */
-  document: "DOC",
+  DOC: "DOC",
 
   /**
    * clinical document
    */
-  clinicaldocument: "DOCCLIN",
+  DOCCLIN: "DOCCLIN",
 
   /**
    * CDA Level One clinical document
    */
-  CDALevelOneclinicaldocument: "CDALVLONE",
+  CDALVLONE: "CDALVLONE",
 } as const;
 
 /**

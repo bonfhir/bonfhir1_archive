@@ -6,17 +6,17 @@ export const RoleClassLicensedEntityCode = {
   /**
    * licensed entity
    */
-  licensedentity: "LIC",
+  LIC: "LIC",
 
   /**
    * notary public
    */
-  notarypublic: "NOT",
+  NOT: "NOT",
 
   /**
    * healthcare provider
    */
-  healthcareprovider: "PROV",
+  PROV: "PROV",
 } as const;
 
 /**

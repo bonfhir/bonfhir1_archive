@@ -6,27 +6,27 @@ export const ImmunizationSubpotentReasonCode = {
   /**
    * Partial Dose
    */
-  PartialDose: "partialdose",
+  partialdose: "partialdose",
 
   /**
    * Cold Chain Break
    */
-  ColdChainBreak: "coldchainbreak",
+  coldchainbreak: "coldchainbreak",
 
   /**
    * Manufacturer Recall
    */
-  ManufacturerRecall: "recall",
+  recall: "recall",
 
   /**
    * Adverse Storage
    */
-  AdverseStorage: "adversestorage",
+  adversestorage: "adversestorage",
 
   /**
    * Expired Product
    */
-  ExpiredProduct: "expired",
+  expired: "expired",
 } as const;
 
 /**

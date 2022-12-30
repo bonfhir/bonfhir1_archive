@@ -6,7 +6,7 @@ export const EntityClassStateOrProvinceCode = {
   /**
    * state or province
    */
-  stateorprovince: "PROVINCE",
+  PROVINCE: "PROVINCE",
 } as const;
 
 /**

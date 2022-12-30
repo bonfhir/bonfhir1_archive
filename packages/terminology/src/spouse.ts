@@ -6,17 +6,17 @@ export const SpouseCode = {
   /**
    * spouse
    */
-  spouse: "SPS",
+  SPS: "SPS",
 
   /**
    * husband
    */
-  husband: "HUSB",
+  HUSB: "HUSB",
 
   /**
    * wife
    */
-  wife: "WIFE",
+  WIFE: "WIFE",
 } as const;
 
 /**

@@ -6,37 +6,37 @@ export const Hl7VSSupplyRiskCodesCode = {
   /**
    * Corrosive
    */
-  Corrosive: "COR",
+  COR: "COR",
 
   /**
    * Flammable
    */
-  Flammable: "FLA",
+  FLA: "FLA",
 
   /**
    * Explosive
    */
-  Explosive: "EXP",
+  EXP: "EXP",
 
   /**
    * Injury Hazard
    */
-  InjuryHazard: "INJ",
+  INJ: "INJ",
 
   /**
    * Toxic
    */
-  Toxic: "TOX",
+  TOX: "TOX",
 
   /**
    * Radioactive
    */
-  Radioactive: "RAD",
+  RAD: "RAD",
 
   /**
    * Unknown
    */
-  Unknown: "UNK",
+  UNK: "UNK",
 } as const;
 
 /**

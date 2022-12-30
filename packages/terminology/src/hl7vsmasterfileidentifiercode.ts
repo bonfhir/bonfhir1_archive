@@ -6,132 +6,132 @@ export const Hl7VSMasterFileIdentifierCodeCode = {
   /**
    * Observation text master file segments (e.g., Lab)
    */
-  ObservationtextmasterfilesegmentsegLab: "OM1",
+  OM1: "OM1",
 
   /**
    * Observation text master file segments (e.g., Lab)
    */
-  ObservationtextmasterfilesegmentsegLab: "OM2",
+  OM2: "OM2",
 
   /**
    * Observation text master file segments (e.g., Lab)
    */
-  ObservationtextmasterfilesegmentsegLab: "OM3",
+  OM3: "OM3",
 
   /**
    * Observation text master file segments (e.g., Lab)
    */
-  ObservationtextmasterfilesegmentsegLab: "OM4",
+  OM4: "OM4",
 
   /**
    * Observation text master file segments (e.g., Lab)
    */
-  ObservationtextmasterfilesegmentsegLab: "OM5",
+  OM5: "OM5",
 
   /**
    * Observation text master file segments (e.g., Lab)
    */
-  ObservationtextmasterfilesegmentsegLab: "OM6",
+  OM6: "OM6",
 
   /**
    * Clinical study master
    */
-  Clinicalstudymaster: "CM0",
+  CM0: "CM0",
 
   /**
    * Clinical study phase master
    */
-  Clinicalstudyphasemaster: "CM1",
+  CM1: "CM1",
 
   /**
    * Clinical study Data Schedule Master
    */
-  ClinicalstudyDataScheduleMaster: "CM2",
+  CM2: "CM2",
 
   /**
    * Observation text master file segments (e.g., Lab)
    */
-  ObservationtextmasterfilesegmentsegLab: "OM1-OM6",
+  "OM1-OM6": "OM1-OM6",
 
   /**
    * Charge description master file
    */
-  Chargedescriptionmasterfile: "CDM",
+  CDM: "CDM",
 
   /**
    * Clinical study with phases and scheduled master file
    */
-  Clinicalstudywithphasesandscheduledmasterfile: "CMA",
+  CMA: "CMA",
 
   /**
    * Clinical study without phases but with scheduled master file
    */
-  Clinicalstudywithoutphasesbutwithscheduledmasterfile: "CMB",
+  CMB: "CMB",
 
   /**
    * Location master file
    */
-  Locationmasterfile: "LOC",
+  LOC: "LOC",
 
   /**
    * Numerical observation master file
    */
-  Numericalobservationmasterfile: "OMA",
+  OMA: "OMA",
 
   /**
    * Categorical observation master file
    */
-  Categoricalobservationmasterfile: "OMB",
+  OMB: "OMB",
 
   /**
    * Observation batteries master file
    */
-  Observationbatteriesmasterfile: "OMC",
+  OMC: "OMC",
 
   /**
    * Calculated observations master file
    */
-  Calculatedobservationsmasterfile: "OMD",
+  OMD: "OMD",
 
   /**
    * Mixed type observation master file
    */
-  Mixedtypeobservationmasterfile: "OMM",
+  OMM: "OMM",
 
   /**
    * Practitioner master file
    */
-  Practitionermasterfile: "PRA",
+  PRA: "PRA",
 
   /**
    * Staff master file
    */
-  Staffmasterfile: "STF",
+  STF: "STF",
 
   /**
    * Clinic master file
    */
-  Clinicmasterfile: "CLN",
+  CLN: "CLN",
 
   /**
    * Other Observation/Service Item master file
    */
-  OtherObservationServiceItemmasterfile: "OME",
+  OME: "OME",
 
   /**
    * Inventory master file
    */
-  Inventorymasterfile: "INV",
+  INV: "INV",
 
   /**
    * Medicare Limited Coverage Process
    */
-  MedicareLimitedCoverageProcess: "MLCP",
+  MLCP: "MLCP",
 
   /**
    * Medicare Approved Coverage Process
    */
-  MedicareApprovedCoverageProcess: "MACP",
+  MACP: "MACP",
 } as const;
 
 /**

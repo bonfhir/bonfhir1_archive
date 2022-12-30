@@ -6,22 +6,22 @@ export const ActRelationshipContainsEndOfCode = {
   /**
    * contains end of
    */
-  containsendof: "SBEEAE",
+  SBEEAE: "SBEEAE",
 
   /**
    * start after start of, contains end of
    */
-  startafterstartofcontainsendof: "SASSBEEAS",
+  SASSBEEAS: "SASSBEEAS",
 
   /**
    * contains time of
    */
-  containstimeof: "SBSEAE",
+  SBSEAE: "SBSEAE",
 
   /**
    * starts with, ends after end of
    */
-  startswithendsafterendof: "SCWSEAE",
+  SCWSEAE: "SCWSEAE",
 } as const;
 
 /**

@@ -6,17 +6,17 @@ export const RaceAmericanIndianShawneeCode = {
   /**
    * Shawnee
    */
-  Shawnee: "1578-4",
+  "1578-4": "1578-4",
 
   /**
    * Absentee Shawnee
    */
-  AbsenteeShawnee: "1579-2",
+  "1579-2": "1579-2",
 
   /**
    * Eastern Shawnee
    */
-  EasternShawnee: "1580-0",
+  "1580-0": "1580-0",
 } as const;
 
 /**

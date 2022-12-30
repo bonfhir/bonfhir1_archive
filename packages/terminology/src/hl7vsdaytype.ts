@@ -6,17 +6,17 @@ export const Hl7VSDayTypeCode = {
   /**
    * Approved
    */
-  Approved: "AP",
+  AP: "AP",
 
   /**
    * Denied
    */
-  Denied: "DE",
+  DE: "DE",
 
   /**
    * Pending
    */
-  Pending: "PE",
+  PE: "PE",
 } as const;
 
 /**

@@ -6,17 +6,17 @@ export const EmployeeJobClassCode = {
   /**
    * full-time
    */
-  fulltime: "FT",
+  FT: "FT",
 
   /**
    * part-time
    */
-  parttime: "PT",
+  PT: "PT",
 
   /**
    * EmployeeOccupationCode
    */
-  EmployeeOccupationCode: "_EmployeeOccupationCode",
+  _EmployeeOccupationCode: "_EmployeeOccupationCode",
 } as const;
 
 /**

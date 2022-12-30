@@ -6,72 +6,72 @@ export const TestScriptOperationCodeCode = {
   /**
    * Read
    */
-  Read: "read",
+  read: "read",
 
   /**
    * Version Read
    */
-  VersionRead: "vread",
+  vread: "vread",
 
   /**
    * Update
    */
-  Update: "update",
+  update: "update",
 
   /**
    * Create using Update
    */
-  CreateusingUpdate: "updateCreate",
+  updateCreate: "updateCreate",
 
   /**
    * Patch
    */
-  Patch: "patch",
+  patch: "patch",
 
   /**
    * Delete
    */
-  Delete: "delete",
+  delete: "delete",
 
   /**
    * Conditional Delete Single
    */
-  ConditionalDeleteSingle: "deleteCondSingle",
+  deleteCondSingle: "deleteCondSingle",
 
   /**
    * Conditional Delete Multiple
    */
-  ConditionalDeleteMultiple: "deleteCondMultiple",
+  deleteCondMultiple: "deleteCondMultiple",
 
   /**
    * History
    */
-  History: "history",
+  history: "history",
 
   /**
    * Create
    */
-  Create: "create",
+  create: "create",
 
   /**
    * Search
    */
-  Search: "search",
+  search: "search",
 
   /**
    * Batch
    */
-  Batch: "batch",
+  batch: "batch",
 
   /**
    * Transaction
    */
-  Transaction: "transaction",
+  transaction: "transaction",
 
   /**
    * Capabilities
    */
-  Capabilities: "capabilities",
+  capabilities: "capabilities",
 
   /**
    * $apply
@@ -86,7 +86,7 @@ export const TestScriptOperationCodeCode = {
   /**
    * $find-matches
    */
-  findmatches: "find-matches",
+  "find-matches": "find-matches",
 
   /**
    * $conforms
@@ -96,7 +96,7 @@ export const TestScriptOperationCodeCode = {
   /**
    * $data-requirements
    */
-  datarequirements: "data-requirements",
+  "data-requirements": "data-requirements",
 
   /**
    * $document
@@ -111,7 +111,7 @@ export const TestScriptOperationCodeCode = {
   /**
    * $evaluate-measure
    */
-  evaluatemeasure: "evaluate-measure",
+  "evaluate-measure": "evaluate-measure",
 
   /**
    * $everything
@@ -161,12 +161,12 @@ export const TestScriptOperationCodeCode = {
   /**
    * $meta-add
    */
-  metaadd: "meta-add",
+  "meta-add": "meta-add",
 
   /**
    * $meta-delete
    */
-  metadelete: "meta-delete",
+  "meta-delete": "meta-delete",
 
   /**
    * $populate
@@ -186,7 +186,7 @@ export const TestScriptOperationCodeCode = {
   /**
    * $process-message
    */
-  processmessage: "process-message",
+  "process-message": "process-message",
 
   /**
    * $questionnaire
@@ -226,7 +226,7 @@ export const TestScriptOperationCodeCode = {
   /**
    * $validate-code
    */
-  validatecode: "validate-code",
+  "validate-code": "validate-code",
 } as const;
 
 /**

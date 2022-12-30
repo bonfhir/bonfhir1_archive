@@ -6,12 +6,12 @@ export const VaginalOintmentCode = {
   /**
    * Vaginal Ointment
    */
-  VaginalOintment: "VAGOINT",
+  VAGOINT: "VAGOINT",
 
   /**
    * Vaginal Ointment with Applicator
    */
-  VaginalOintmentwithApplicator: "VAGOINTAPL",
+  VAGOINTAPL: "VAGOINTAPL",
 } as const;
 
 /**

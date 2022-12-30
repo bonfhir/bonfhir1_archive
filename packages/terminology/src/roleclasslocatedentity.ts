@@ -6,12 +6,12 @@ export const RoleClassLocatedEntityCode = {
   /**
    * located entity
    */
-  locatedentity: "LOCE",
+  LOCE: "LOCE",
 
   /**
    * stored entity
    */
-  storedentity: "STOR",
+  STOR: "STOR",
 } as const;
 
 /**

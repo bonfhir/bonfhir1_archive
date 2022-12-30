@@ -6,17 +6,17 @@ export const ConsentScopeCodesCode = {
   /**
    * Research
    */
-  Research: "research",
+  research: "research",
 
   /**
    * Privacy Consent
    */
-  PrivacyConsent: "patient-privacy",
+  "patient-privacy": "patient-privacy",
 
   /**
    * Treatment
    */
-  Treatment: "treatment",
+  treatment: "treatment",
 } as const;
 
 /**

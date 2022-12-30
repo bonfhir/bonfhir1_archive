@@ -6,12 +6,12 @@ export const Hl7VSOtherEnvironmentalFactorsCode = {
   /**
    * Opened container, atmosphere and duration unspecified
    */
-  Openedcontaineratmosphereanddurationunspecified: "ATM",
+  ATM: "ATM",
 
   /**
    * Opened container, indoor atmosphere, 60 minutes duration
    */
-  Openedcontainerindooratmosphere60minutesduration: "A60",
+  A60: "A60",
 } as const;
 
 /**

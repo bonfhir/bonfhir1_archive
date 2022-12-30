@@ -6,7 +6,7 @@ export const Hl7VSCaseCategoryCodeCode = {
   /**
    * Doctor's Office Closed
    */
-  DoctorsOfficeClosed: "D",
+  D: "D",
 } as const;
 
 /**

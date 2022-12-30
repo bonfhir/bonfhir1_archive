@@ -6,7 +6,7 @@ export const VaccineEntityTypeCode = {
   /**
    * Vaccine
    */
-  Vaccine: "VCCNE",
+  VCCNE: "VCCNE",
 } as const;
 
 /**

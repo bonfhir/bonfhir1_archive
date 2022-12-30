@@ -6,27 +6,27 @@ export const AllergyIntoleranceVerificationStatusCode = {
   /**
    * Unconfirmed
    */
-  Unconfirmed: "unconfirmed",
+  unconfirmed: "unconfirmed",
 
   /**
    * Presumed
    */
-  Presumed: "presumed",
+  presumed: "presumed",
 
   /**
    * Confirmed
    */
-  Confirmed: "confirmed",
+  confirmed: "confirmed",
 
   /**
    * Refuted
    */
-  Refuted: "refuted",
+  refuted: "refuted",
 
   /**
    * Entered in Error
    */
-  EnteredinError: "entered-in-error",
+  "entered-in-error": "entered-in-error",
 } as const;
 
 /**

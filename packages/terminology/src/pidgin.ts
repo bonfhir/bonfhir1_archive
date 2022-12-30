@@ -6,7 +6,7 @@ export const PidginCode = {
   /**
    * Chinook Wawa
    */
-  ChinookWawa: "x-CHH",
+  "x-CHH": "x-CHH",
 } as const;
 
 /**

@@ -6,42 +6,42 @@ export const ResponsiblePartyCode = {
   /**
    * responsible party
    */
-  responsibleparty: "RESPRSN",
+  RESPRSN: "RESPRSN",
 
   /**
    * executor of estate
    */
-  executorofestate: "EXCEST",
+  EXCEST: "EXCEST",
 
   /**
    * guardian ad lidem
    */
-  guardianadlidem: "GUADLTM",
+  GUADLTM: "GUADLTM",
 
   /**
    * guardian
    */
-  guardian: "GUARD",
+  GUARD: "GUARD",
 
   /**
    * power of attorney
    */
-  powerofattorney: "POWATT",
+  POWATT: "POWATT",
 
   /**
    * durable power of attorney
    */
-  durablepowerofattorney: "DPOWATT",
+  DPOWATT: "DPOWATT",
 
   /**
    * healthcare power of attorney
    */
-  healthcarepowerofattorney: "HPOWATT",
+  HPOWATT: "HPOWATT",
 
   /**
    * special power of attorney
    */
-  specialpowerofattorney: "SPOWATT",
+  SPOWATT: "SPOWATT",
 } as const;
 
 /**

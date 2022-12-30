@@ -6,12 +6,12 @@ export const QueryPriorityCode = {
   /**
    * Deferred
    */
-  Deferred: "D",
+  D: "D",
 
   /**
    * Immediate
    */
-  Immediate: "I",
+  I: "I",
 } as const;
 
 /**

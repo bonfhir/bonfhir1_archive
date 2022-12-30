@@ -6,62 +6,62 @@ export const ObservationIntoleranceTypeCode = {
   /**
    * intolerance
    */
-  intolerance: "OINT",
+  OINT: "OINT",
 
   /**
    * Allergy
    */
-  Allergy: "ALG",
+  ALG: "ALG",
 
   /**
    * Drug Allergy
    */
-  DrugAllergy: "DALG",
+  DALG: "DALG",
 
   /**
    * Environmental Allergy
    */
-  EnvironmentalAllergy: "EALG",
+  EALG: "EALG",
 
   /**
    * Food Allergy
    */
-  FoodAllergy: "FALG",
+  FALG: "FALG",
 
   /**
    * Drug Intolerance
    */
-  DrugIntolerance: "DINT",
+  DINT: "DINT",
 
   /**
    * Drug Non-Allergy Intolerance
    */
-  DrugNonAllergyIntolerance: "DNAINT",
+  DNAINT: "DNAINT",
 
   /**
    * Environmental Intolerance
    */
-  EnvironmentalIntolerance: "EINT",
+  EINT: "EINT",
 
   /**
    * Environmental Non-Allergy Intolerance
    */
-  EnvironmentalNonAllergyIntolerance: "ENAINT",
+  ENAINT: "ENAINT",
 
   /**
    * Food Intolerance
    */
-  FoodIntolerance: "FINT",
+  FINT: "FINT",
 
   /**
    * Food Non-Allergy Intolerance
    */
-  FoodNonAllergyIntolerance: "FNAINT",
+  FNAINT: "FNAINT",
 
   /**
    * Non-Allergy Intolerance
    */
-  NonAllergyIntolerance: "NAINT",
+  NAINT: "NAINT",
 } as const;
 
 /**

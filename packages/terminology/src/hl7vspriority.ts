@@ -6,27 +6,27 @@ export const Hl7VSPriorityCode = {
   /**
    * Stat (do immediately)
    */
-  Statdoimmediately: "S",
+  S: "S",
 
   /**
    * As soon as possible (a priority lower than stat)
    */
-  Assoonaspossibleaprioritylowerthanstat: "A",
+  A: "A",
 
   /**
    * Routine
    */
-  Routine: "R",
+  R: "R",
 
   /**
    * Preoperative (to be done prior to surgery)
    */
-  Preoperativetobedonepriortosurgery: "P",
+  P: "P",
 
   /**
    * Timing critical (do as near as possible to requested time)
    */
-  Timingcriticaldoasnearaspossibletorequestedtime: "T",
+  T: "T",
 } as const;
 
 /**

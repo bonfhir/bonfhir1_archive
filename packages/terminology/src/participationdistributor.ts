@@ -6,7 +6,7 @@ export const ParticipationDistributorCode = {
   /**
    * distributor
    */
-  distributor: "DIST",
+  DIST: "DIST",
 } as const;
 
 /**

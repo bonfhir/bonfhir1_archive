@@ -6,27 +6,27 @@ export const Hl7VSQuantityLimitedRequestCode = {
   /**
    * Characters
    */
-  Characters: "CH",
+  CH: "CH",
 
   /**
    * Lines
    */
-  Lines: "LI",
+  LI: "LI",
 
   /**
    * Pages
    */
-  Pages: "PG",
+  PG: "PG",
 
   /**
    * Records
    */
-  Records: "RD",
+  RD: "RD",
 
   /**
    * Locally defined
    */
-  Locallydefined: "ZO",
+  ZO: "ZO",
 } as const;
 
 /**

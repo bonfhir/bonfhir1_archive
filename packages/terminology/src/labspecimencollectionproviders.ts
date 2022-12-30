@@ -6,37 +6,37 @@ export const LabSpecimenCollectionProvidersCode = {
   /**
    * Community Laboratory
    */
-  CommunityLaboratory: "communityLaboratory",
+  communityLaboratory: "communityLaboratory",
 
   /**
    * Home Health
    */
-  HomeHealth: "homeHealth",
+  homeHealth: "homeHealth",
 
   /**
    * Laboratory
    */
-  Laboratory: "laboratory",
+  laboratory: "laboratory",
 
   /**
    * Pathologist
    */
-  Pathologist: "pathologist",
+  pathologist: "pathologist",
 
   /**
    * Phlebotomist
    */
-  Phlebotomist: "phlebotomist",
+  phlebotomist: "phlebotomist",
 
   /**
    * Self
    */
-  Self: "subject",
+  subject: "subject",
 
   /**
    * Third Party
    */
-  ThirdParty: "thirdParty",
+  thirdParty: "thirdParty",
 } as const;
 
 /**

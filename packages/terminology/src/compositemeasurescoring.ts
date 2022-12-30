@@ -8,27 +8,27 @@ export const CompositeMeasureScoringCode = {
   /**
    * CompositeMeasureScoring
    */
-  CompositeMeasureScoring: "_CompositeMeasureScoring",
+  _CompositeMeasureScoring: "_CompositeMeasureScoring",
 
   /**
    * All-or-nothing Scoring
    */
-  AllornothingScoring: "ALLORNONESCR",
+  ALLORNONESCR: "ALLORNONESCR",
 
   /**
    * Linear Scoring
    */
-  LinearScoring: "LINEARSCR",
+  LINEARSCR: "LINEARSCR",
 
   /**
    * Opportunity Scoring
    */
-  OpportunityScoring: "OPPORSCR",
+  OPPORSCR: "OPPORSCR",
 
   /**
    * Weighted Scoring
    */
-  WeightedScoring: "WEIGHTSCR",
+  WEIGHTSCR: "WEIGHTSCR",
 } as const;
 
 /**

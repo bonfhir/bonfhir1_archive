@@ -6,22 +6,22 @@ export const ExpectedSubsetCode = {
   /**
    * expected future
    */
-  expectedfuture: "FUTURE",
+  FUTURE: "FUTURE",
 
   /**
    * future summary
    */
-  futuresummary: "FUTSUM",
+  FUTSUM: "FUTSUM",
 
   /**
    * expected last
    */
-  expectedlast: "LAST",
+  LAST: "LAST",
 
   /**
    * expected next
    */
-  expectednext: "NEXT",
+  NEXT: "NEXT",
 } as const;
 
 /**

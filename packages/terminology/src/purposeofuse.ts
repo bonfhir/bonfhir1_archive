@@ -6,297 +6,297 @@ export const PurposeOfUseCode = {
   /**
    * healthcare marketing
    */
-  healthcaremarketing: "HMARKT",
+  HMARKT: "HMARKT",
 
   /**
    * healthcare operations
    */
-  healthcareoperations: "HOPERAT",
+  HOPERAT: "HOPERAT",
 
   /**
    * care management
    */
-  caremanagement: "CAREMGT",
+  CAREMGT: "CAREMGT",
 
   /**
    * donation
    */
-  donation: "DONAT",
+  DONAT: "DONAT",
 
   /**
    * fraud
    */
-  fraud: "FRAUD",
+  FRAUD: "FRAUD",
 
   /**
    * government
    */
-  government: "GOV",
+  GOV: "GOV",
 
   /**
    * health accreditation
    */
-  healthaccreditation: "HACCRED",
+  HACCRED: "HACCRED",
 
   /**
    * health compliance
    */
-  healthcompliance: "HCOMPL",
+  HCOMPL: "HCOMPL",
 
   /**
    * decedent
    */
-  decedent: "HDECD",
+  HDECD: "HDECD",
 
   /**
    * directory
    */
-  directory: "HDIRECT",
+  HDIRECT: "HDIRECT",
 
   /**
    * healthcare delivery management
    */
-  healthcaredeliverymanagement: "HDM",
+  HDM: "HDM",
 
   /**
    * legal
    */
-  legal: "HLEGAL",
+  HLEGAL: "HLEGAL",
 
   /**
    * health outcome measure
    */
-  healthoutcomemeasure: "HOUTCOMS",
+  HOUTCOMS: "HOUTCOMS",
 
   /**
    * health program reporting
    */
-  healthprogramreporting: "HPRGRP",
+  HPRGRP: "HPRGRP",
 
   /**
    * health quality improvement
    */
-  healthqualityimprovement: "HQUALIMP",
+  HQUALIMP: "HQUALIMP",
 
   /**
    * health system administration
    */
-  healthsystemadministration: "HSYSADMIN",
+  HSYSADMIN: "HSYSADMIN",
 
   /**
    * labeling
    */
-  labeling: "LABELING",
+  LABELING: "LABELING",
 
   /**
    * metadata management
    */
-  metadatamanagement: "METAMGT",
+  METAMGT: "METAMGT",
 
   /**
    * member administration
    */
-  memberadministration: "MEMADMIN",
+  MEMADMIN: "MEMADMIN",
 
   /**
    * military command
    */
-  militarycommand: "MILCDM",
+  MILCDM: "MILCDM",
 
   /**
    * patient administration
    */
-  patientadministration: "PATADMIN",
+  PATADMIN: "PATADMIN",
 
   /**
    * patient safety
    */
-  patientsafety: "PATSFTY",
+  PATSFTY: "PATSFTY",
 
   /**
    * performance measure
    */
-  performancemeasure: "PERFMSR",
+  PERFMSR: "PERFMSR",
 
   /**
    * records management
    */
-  recordsmanagement: "RECORDMGT",
+  RECORDMGT: "RECORDMGT",
 
   /**
    * system development
    */
-  systemdevelopment: "SYSDEV",
+  SYSDEV: "SYSDEV",
 
   /**
    * test health data
    */
-  testhealthdata: "HTEST",
+  HTEST: "HTEST",
 
   /**
    * training
    */
-  training: "TRAIN",
+  TRAIN: "TRAIN",
 
   /**
    * healthcare payment
    */
-  healthcarepayment: "HPAYMT",
+  HPAYMT: "HPAYMT",
 
   /**
    * claim attachment
    */
-  claimattachment: "CLMATTCH",
+  CLMATTCH: "CLMATTCH",
 
   /**
    * coverage authorization
    */
-  coverageauthorization: "COVAUTH",
+  COVAUTH: "COVAUTH",
 
   /**
    * coverage under policy or program
    */
-  coverageunderpolicyorprogram: "COVERAGE",
+  COVERAGE: "COVERAGE",
 
   /**
    * eligibility determination
    */
-  eligibilitydetermination: "ELIGDTRM",
+  ELIGDTRM: "ELIGDTRM",
 
   /**
    * eligibility verification
    */
-  eligibilityverification: "ELIGVER",
+  ELIGVER: "ELIGVER",
 
   /**
    * enrollment
    */
-  enrollment: "ENROLLM",
+  ENROLLM: "ENROLLM",
 
   /**
    * military discharge
    */
-  militarydischarge: "MILDCRG",
+  MILDCRG: "MILDCRG",
 
   /**
    * remittance advice
    */
-  remittanceadvice: "REMITADV",
+  REMITADV: "REMITADV",
 
   /**
    * healthcare research
    */
-  healthcareresearch: "HRESCH",
+  HRESCH: "HRESCH",
 
   /**
    * biomedical research
    */
-  biomedicalresearch: "BIORCH",
+  BIORCH: "BIORCH",
 
   /**
    * clinical trial research
    */
-  clinicaltrialresearch: "CLINTRCH",
+  CLINTRCH: "CLINTRCH",
 
   /**
    * clinical trial research without patient care
    */
-  clinicaltrialresearchwithoutpatientcare: "CLINTRCHNPC",
+  CLINTRCHNPC: "CLINTRCHNPC",
 
   /**
    * clinical trial research with patient care
    */
-  clinicaltrialresearchwithpatientcare: "CLINTRCHPC",
+  CLINTRCHPC: "CLINTRCHPC",
 
   /**
    * preclinical trial research
    */
-  preclinicaltrialresearch: "PRECLINTRCH",
+  PRECLINTRCH: "PRECLINTRCH",
 
   /**
    * disease specific healthcare research
    */
-  diseasespecifichealthcareresearch: "DSRCH",
+  DSRCH: "DSRCH",
 
   /**
    * population origins or ancestry healthcare research
    */
-  populationoriginsorancestryhealthcareresearch: "POARCH",
+  POARCH: "POARCH",
 
   /**
    * translational healthcare research
    */
-  translationalhealthcareresearch: "TRANSRCH",
+  TRANSRCH: "TRANSRCH",
 
   /**
    * patient requested
    */
-  patientrequested: "PATRQT",
+  PATRQT: "PATRQT",
 
   /**
    * family requested
    */
-  familyrequested: "FAMRQT",
+  FAMRQT: "FAMRQT",
 
   /**
    * power of attorney
    */
-  powerofattorney: "PWATRNY",
+  PWATRNY: "PWATRNY",
 
   /**
    * support network
    */
-  supportnetwork: "SUPNWK",
+  SUPNWK: "SUPNWK",
 
   /**
    * public health
    */
-  publichealth: "PUBHLTH",
+  PUBHLTH: "PUBHLTH",
 
   /**
    * disaster
    */
-  disaster: "DISASTER",
+  DISASTER: "DISASTER",
 
   /**
    * threat
    */
-  threat: "THREAT",
+  THREAT: "THREAT",
 
   /**
    * treatment
    */
-  treatment: "TREAT",
+  TREAT: "TREAT",
 
   /**
    * clinical trial
    */
-  clinicaltrial: "CLINTRL",
+  CLINTRL: "CLINTRL",
 
   /**
    * coordination of care
    */
-  coordinationofcare: "COC",
+  COC: "COC",
 
   /**
    * Emergency Treatment
    */
-  EmergencyTreatment: "ETREAT",
+  ETREAT: "ETREAT",
 
   /**
    * break the glass
    */
-  breaktheglass: "BTG",
+  BTG: "BTG",
 
   /**
    * emergency room treatment
    */
-  emergencyroomtreatment: "ERTREAT",
+  ERTREAT: "ERTREAT",
 
   /**
    * population health
    */
-  populationhealth: "POPHLTH",
+  POPHLTH: "POPHLTH",
 } as const;
 
 /**

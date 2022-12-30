@@ -6,482 +6,482 @@ export const Hl7VSValueTypeCode = {
   /**
    * Address
    */
-  Address: "AD",
+  AD: "AD",
 
   /**
    * Authorization information
    */
-  Authorizationinformation: "AUI",
+  AUI: "AUI",
 
   /**
    * Charge code and date
    */
-  Chargecodeanddate: "CCD",
+  CCD: "CCD",
 
   /**
    * Channel calibration parameters
    */
-  Channelcalibrationparameters: "CCP",
+  CCP: "CCP",
 
   /**
    * Channel definition
    */
-  Channeldefinition: "CD",
+  CD: "CD",
 
   /**
    * Coded element
    */
-  Codedelement: "CE",
+  CE: "CE",
 
   /**
    * Coded element with formatted values
    */
-  Codedelementwithformattedvalues: "CF",
+  CF: "CF",
 
   /**
    * Composite ID with check digit
    */
-  CompositeIDwithcheckdigit: "CK",
+  CK: "CK",
 
   /**
    * Composite
    */
-  Composite: "CM",
+  CM: "CM",
 
   /**
    * Composite ID number and name
    */
-  CompositeIDnumberandname: "CN",
+  CN: "CN",
 
   /**
    * Coded with no exceptions
    */
-  Codedwithnoexceptions: "CNE",
+  CNE: "CNE",
 
   /**
    * Composite ID number and name simplified
    */
-  CompositeIDnumberandnamesimplified: "CNS",
+  CNS: "CNS",
 
   /**
    * Composite ID number and name simplified
    */
-  CompositeIDnumberandnamesimplified: "CNN",
+  CNN: "CNN",
 
   /**
    * Composite price
    */
-  Compositeprice: "CP",
+  CP: "CP",
 
   /**
    * Composite quantity with units
    */
-  Compositequantitywithunits: "CQ",
+  CQ: "CQ",
 
   /**
    * Channel sensitivity and units
    */
-  Channelsensitivityandunits: "CSU",
+  CSU: "CSU",
 
   /**
    * Coded with exceptions
    */
-  Codedwithexceptions: "CWE",
+  CWE: "CWE",
 
   /**
    * Extended composite ID with check digit
    */
-  ExtendedcompositeIDwithcheckdigit: "CX",
+  CX: "CX",
 
   /**
    * Daily deductible information
    */
-  Dailydeductibleinformation: "DDI",
+  DDI: "DDI",
 
   /**
    * Date and institution name
    */
-  Dateandinstitutionname: "DIN",
+  DIN: "DIN",
 
   /**
    * Discharge to location and date
    */
-  Dischargetolocationanddate: "DLD",
+  DLD: "DLD",
 
   /**
    * Driver's license number
    */
-  Driverslicensenumber: "DLN",
+  DLN: "DLN",
 
   /**
    * Delta
    */
-  Delta: "DLT",
+  DLT: "DLT",
 
   /**
    * Date/time range
    */
-  Datetimerange: "DR",
+  DR: "DR",
 
   /**
    * Date
    */
-  Date: "DT",
+  DT: "DT",
 
   /**
    * Date/time
    */
-  Datetime: "DTM",
+  DTM: "DTM",
 
   /**
    * Day type and number
    */
-  Daytypeandnumber: "DTN",
+  DTN: "DTN",
 
   /**
    * Encapsulated data
    */
-  Encapsulateddata: "ED",
+  ED: "ED",
 
   /**
    * Entity identifier
    */
-  Entityidentifier: "EI",
+  EI: "EI",
 
   /**
    * Entity identifier pair
    */
-  Entityidentifierpair: "EIP",
+  EIP: "EIP",
 
   /**
    * Error location and description
    */
-  Errorlocationanddescription: "ELD",
+  ELD: "ELD",
 
   /**
    * Error location
    */
-  Errorlocation: "ERL",
+  ERL: "ERL",
 
   /**
    * Financial class
    */
-  Financialclass: "FC",
+  FC: "FC",
 
   /**
    * Family name
    */
-  Familyname: "FN",
+  FN: "FN",
 
   /**
    * Formatted text
    */
-  Formattedtext: "FT",
+  FT: "FT",
 
   /**
    * General timing specification
    */
-  Generaltimingspecification: "GTS",
+  GTS: "GTS",
 
   /**
    * Hierarchic designator
    */
-  Hierarchicdesignator: "HD",
+  HD: "HD",
 
   /**
    * Insurance certification definition
    */
-  Insurancecertificationdefinition: "ICD",
+  ICD: "ICD",
 
   /**
    * Coded values for HL7 tables
    */
-  CodedvaluesforHL7tables: "ID",
+  ID: "ID",
 
   /**
    * Coded value for user-defined tables
    */
-  Codedvalueforuserdefinedtables: "IS",
+  IS: "IS",
 
   /**
    * Job code/class
    */
-  Jobcodeclass: "JCC",
+  JCC: "JCC",
 
   /**
    * Location with address variation 1
    */
-  Locationwithaddressvariation1: "LA1",
+  LA1: "LA1",
 
   /**
    * Location with address variation 2
    */
-  Locationwithaddressvariation2: "LA2",
+  LA2: "LA2",
 
   /**
    * Multiplexed array
    */
-  Multiplexedarray: "MA",
+  MA: "MA",
 
   /**
    * Money
    */
-  Money: "MO",
+  MO: "MO",
 
   /**
    * Money and charge code
    */
-  Moneyandchargecode: "MOC",
+  MOC: "MOC",
 
   /**
    * Money or percentage
    */
-  Moneyorpercentage: "MOP",
+  MOP: "MOP",
 
   /**
    * Message type
    */
-  Messagetype: "MSG",
+  MSG: "MSG",
 
   /**
    * Numeric array
    */
-  Numericarray: "NA",
+  NA: "NA",
 
   /**
    * Name with date and location
    */
-  Namewithdateandlocation: "NDL",
+  NDL: "NDL",
 
   /**
    * Numeric
    */
-  Numeric: "NM",
+  NM: "NM",
 
   /**
    * Numeric range
    */
-  Numericrange: "NR",
+  NR: "NR",
 
   /**
    * Occurrence code and date
    */
-  Occurrencecodeanddate: "OCD",
+  OCD: "OCD",
 
   /**
    * Order sequence definition
    */
-  Ordersequencedefinition: "OSD",
+  OSD: "OSD",
 
   /**
    * Occurrence span code and date
    */
-  Occurrencespancodeanddate: "OSP",
+  OSP: "OSP",
 
   /**
    * Practitioner institutional privileges
    */
-  Practitionerinstitutionalprivileges: "PIP",
+  PIP: "PIP",
 
   /**
    * Person location
    */
-  Personlocation: "PL",
+  PL: "PL",
 
   /**
    * Practitioner license or other ID number
    */
-  PractitionerlicenseorotherIDnumber: "PLN",
+  PLN: "PLN",
 
   /**
    * Person name
    */
-  Personname: "PN",
+  PN: "PN",
 
   /**
    * Performing person time stamp
    */
-  Performingpersontimestamp: "PPN",
+  PPN: "PPN",
 
   /**
    * Parent result link
    */
-  Parentresultlink: "PRL",
+  PRL: "PRL",
 
   /**
    * Processing type
    */
-  Processingtype: "PT",
+  PT: "PT",
 
   /**
    * Policy type and amount
    */
-  Policytypeandamount: "PTA",
+  PTA: "PTA",
 
   /**
    * Query input parameter list
    */
-  Queryinputparameterlist: "QIP",
+  QIP: "QIP",
 
   /**
    * Query selection criteria
    */
-  Queryselectioncriteria: "QSC",
+  QSC: "QSC",
 
   /**
    * Row column definition
    */
-  Rowcolumndefinition: "RCD",
+  RCD: "RCD",
 
   /**
    * Reference range
    */
-  Referencerange: "RFR",
+  RFR: "RFR",
 
   /**
    * Repeat interval
    */
-  Repeatinterval: "RI",
+  RI: "RI",
 
   /**
    * Room coverage
    */
-  Roomcoverage: "RMC",
+  RMC: "RMC",
 
   /**
    * Reference pointer
    */
-  Referencepointer: "RP",
+  RP: "RP",
 
   /**
    * Repeat pattern
    */
-  Repeatpattern: "RPT",
+  RPT: "RPT",
 
   /**
    * Street Address
    */
-  StreetAddress: "SAD",
+  SAD: "SAD",
 
   /**
    * Scheduling class value pair
    */
-  Schedulingclassvaluepair: "SCV",
+  SCV: "SCV",
 
   /**
    * Sequence ID
    */
-  SequenceID: "SI",
+  SI: "SI",
 
   /**
    * Structured numeric
    */
-  Structurednumeric: "SN",
+  SN: "SN",
 
   /**
    * String of telephone number digits
    */
-  Stringoftelephonenumberdigits: "SNM",
+  SNM: "SNM",
 
   /**
    * Specialty description
    */
-  Specialtydescription: "SPD",
+  SPD: "SPD",
 
   /**
    * Specimen source
    */
-  Specimensource: "SPS",
+  SPS: "SPS",
 
   /**
    * Sort order
    */
-  Sortorder: "SRT",
+  SRT: "SRT",
 
   /**
    * String data
    */
-  Stringdata: "ST",
+  ST: "ST",
 
   /**
    * Time
    */
-  Time: "TM",
+  TM: "TM",
 
   /**
    * Telephone number
    */
-  Telephonenumber: "TN",
+  TN: "TN",
 
   /**
    * Timing/quantity
    */
-  Timingquantity: "TQ",
+  TQ: "TQ",
 
   /**
    * Time stamp
    */
-  Timestamp: "TS",
+  TS: "TS",
 
   /**
    * Text data
    */
-  Textdata: "TX",
+  TX: "TX",
 
   /**
    * UB value code and amount
    */
-  UBvaluecodeandamount: "UVC",
+  UVC: "UVC",
 
   /**
    * Visiting hours
    */
-  Visitinghours: "VH",
+  VH: "VH",
 
   /**
    * Version identifier
    */
-  Versionidentifier: "VID",
+  VID: "VID",
 
   /**
    * Value range
    */
-  Valuerange: "VR",
+  VR: "VR",
 
   /**
    * Channel Identifier
    */
-  ChannelIdentifier: "WVI",
+  WVI: "WVI",
 
   /**
    * Waveform source
    */
-  Waveformsource: "WVS",
+  WVS: "WVS",
 
   /**
    * Extended address
    */
-  Extendedaddress: "XAD",
+  XAD: "XAD",
 
   /**
    * Extended composite ID number and name for persons
    */
-  ExtendedcompositeIDnumberandnameforpersons: "XCN",
+  XCN: "XCN",
 
   /**
    * Extended composite name and ID number for organizations
    */
-  ExtendedcompositenameandIDnumberfororganizations: "XON",
+  XON: "XON",
 
   /**
    * Extended person name
    */
-  Extendedpersonname: "XPN",
+  XPN: "XPN",
 
   /**
    * Extended telecommunications number
    */
-  Extendedtelecommunicationsnumber: "XTN",
+  XTN: "XTN",
 } as const;
 
 /**

@@ -6,22 +6,22 @@ export const Hl7VSOrganizationalNameTypeCode = {
   /**
    * Alias name
    */
-  Aliasname: "A",
+  A: "A",
 
   /**
    * Legal name
    */
-  Legalname: "L",
+  L: "L",
 
   /**
    * Display name
    */
-  Displayname: "D",
+  D: "D",
 
   /**
    * Stock exchange listing name
    */
-  Stockexchangelistingname: "SL",
+  SL: "SL",
 } as const;
 
 /**

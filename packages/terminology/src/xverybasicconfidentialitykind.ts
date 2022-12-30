@@ -8,12 +8,12 @@ export const XVeryBasicConfidentialityKindCode = {
   /**
    * normal
    */
-  normal: "N",
+  N: "N",
 
   /**
    * restricted
    */
-  restricted: "R",
+  R: "R",
 } as const;
 
 /**

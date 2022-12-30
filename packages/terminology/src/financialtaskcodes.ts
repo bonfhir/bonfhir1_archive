@@ -6,27 +6,27 @@ export const FinancialTaskCodesCode = {
   /**
    * Cancel
    */
-  Cancel: "cancel",
+  cancel: "cancel",
 
   /**
    * Poll
    */
-  Poll: "poll",
+  poll: "poll",
 
   /**
    * Release
    */
-  Release: "release",
+  release: "release",
 
   /**
    * Reprocess
    */
-  Reprocess: "reprocess",
+  reprocess: "reprocess",
 
   /**
    * Status check
    */
-  Statuscheck: "status",
+  status: "status",
 } as const;
 
 /**

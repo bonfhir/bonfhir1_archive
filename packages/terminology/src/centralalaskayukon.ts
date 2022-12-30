@@ -6,67 +6,67 @@ export const CentralAlaskaYukonCode = {
   /**
    * KoyukonIngalik
    */
-  KoyukonIngalik: "_KoyukonIngalik",
+  _KoyukonIngalik: "_KoyukonIngalik",
 
   /**
    * Holikachuk
    */
-  Holikachuk: "x-HOI",
+  "x-HOI": "x-HOI",
 
   /**
    * Degexit'an
    */
-  Degexitan: "x-ING",
+  "x-ING": "x-ING",
 
   /**
    * Koyukon
    */
-  Koyukon: "x-KOY",
+  "x-KOY": "x-KOY",
 
   /**
    * KutchinHan
    */
-  KutchinHan: "_KutchinHan",
+  _KutchinHan: "_KutchinHan",
 
   /**
    * Han
    */
-  Han: "x-HAA",
+  "x-HAA": "x-HAA",
 
   /**
    * Kutchin
    */
-  Kutchin: "x-KUC",
+  "x-KUC": "x-KUC",
 
   /**
    * TananaTutchone
    */
-  TananaTutchone: "_TananaTutchone",
+  _TananaTutchone: "_TananaTutchone",
 
   /**
    * Tanana
    */
-  Tanana: "_Tanana",
+  _Tanana: "_Tanana",
 
   /**
    * Lower Tanana
    */
-  LowerTanana: "x-TAA",
+  "x-TAA": "x-TAA",
 
   /**
    * Upper Tanana
    */
-  UpperTanana: "x-TAU",
+  "x-TAU": "x-TAU",
 
   /**
    * Tanacross
    */
-  Tanacross: "x-TCB",
+  "x-TCB": "x-TCB",
 
   /**
    * Upper Kuskokwim
    */
-  UpperKuskokwim: "x-KUU",
+  "x-KUU": "x-KUU",
 } as const;
 
 /**

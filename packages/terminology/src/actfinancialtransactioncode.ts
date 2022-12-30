@@ -6,12 +6,12 @@ export const ActFinancialTransactionCodeCode = {
   /**
    * Standard Charge
    */
-  StandardCharge: "CHRG",
+  CHRG: "CHRG",
 
   /**
    * Standard Charge Reversal
    */
-  StandardChargeReversal: "REV",
+  REV: "REV",
 } as const;
 
 /**

@@ -6,17 +6,17 @@ export const SubscriptionErrorCodesCode = {
   /**
    * DNS resolution error
    */
-  DNSresolutionerror: "dns-resolution-error",
+  "dns-resolution-error": "dns-resolution-error",
 
   /**
    * No response
    */
-  Noresponse: "no-response",
+  "no-response": "no-response",
 
   /**
    * Error response
    */
-  Errorresponse: "error-response",
+  "error-response": "error-response",
 } as const;
 
 /**

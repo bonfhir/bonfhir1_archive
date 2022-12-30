@@ -6,12 +6,12 @@ export const SupplyTypeCode = {
   /**
    * Central Supply
    */
-  CentralSupply: "central",
+  central: "central",
 
   /**
    * Non-Stock
    */
-  NonStock: "nonstock",
+  nonstock: "nonstock",
 } as const;
 
 /**

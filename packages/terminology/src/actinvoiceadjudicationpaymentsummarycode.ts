@@ -6,62 +6,62 @@ export const ActInvoiceAdjudicationPaymentSummaryCodeCode = {
   /**
    * contract
    */
-  contract: "CONT",
+  CONT: "CONT",
 
   /**
    * day
    */
-  day: "DAY",
+  DAY: "DAY",
 
   /**
    * location
    */
-  location: "LOC",
+  LOC: "LOC",
 
   /**
    * month
    */
-  month: "MONTH",
+  MONTH: "MONTH",
 
   /**
    * period
    */
-  period: "PERIOD",
+  PERIOD: "PERIOD",
 
   /**
    * provider
    */
-  provider: "PROV",
+  PROV: "PROV",
 
   /**
    * week
    */
-  week: "WEEK",
+  WEEK: "WEEK",
 
   /**
    * year
    */
-  year: "YEAR",
+  YEAR: "YEAR",
 
   /**
    * invoice type
    */
-  invoicetype: "INVTYPE",
+  INVTYPE: "INVTYPE",
 
   /**
    * payee
    */
-  payee: "PAYEE",
+  PAYEE: "PAYEE",
 
   /**
    * payor
    */
-  payor: "PAYOR",
+  PAYOR: "PAYOR",
 
   /**
    * sending application
    */
-  sendingapplication: "SENDAPP",
+  SENDAPP: "SENDAPP",
 } as const;
 
 /**

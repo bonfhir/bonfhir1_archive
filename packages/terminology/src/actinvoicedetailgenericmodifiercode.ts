@@ -6,17 +6,17 @@ export const ActInvoiceDetailGenericModifierCodeCode = {
   /**
    * non-normal hours
    */
-  nonnormalhours: "AFTHRS",
+  AFTHRS: "AFTHRS",
 
   /**
    * isolation allowance
    */
-  isolationallowance: "ISOL",
+  ISOL: "ISOL",
 
   /**
    * out of office
    */
-  outofoffice: "OOO",
+  OOO: "OOO",
 } as const;
 
 /**

@@ -6,7 +6,7 @@ export const ActRelationshipHasQualifierCode = {
   /**
    * has qualifier
    */
-  hasqualifier: "QUALF",
+  QUALF: "QUALF",
 } as const;
 
 /**

@@ -6,12 +6,12 @@ export const LoanCode = {
   /**
    * Loan
    */
-  Loan: "LOAN",
+  LOAN: "LOAN",
 
   /**
    * Rent
    */
-  Rent: "RENT",
+  RENT: "RENT",
 } as const;
 
 /**

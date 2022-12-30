@@ -6,7 +6,7 @@ export const ActRelationshipEndsBeforeStartOfCode = {
   /**
    * ends before start of
    */
-  endsbeforestartof: "EBS",
+  EBS: "EBS",
 } as const;
 
 /**

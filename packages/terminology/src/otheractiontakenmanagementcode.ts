@@ -6,32 +6,32 @@ export const OtherActionTakenManagementCodeCode = {
   /**
    * Other Action Taken
    */
-  OtherActionTaken: "8",
+  "8": "8",
 
   /**
    * Provided Patient Education
    */
-  ProvidedPatientEducation: "10",
+  "10": "10",
 
   /**
    * Added Concurrent Therapy
    */
-  AddedConcurrentTherapy: "11",
+  "11": "11",
 
   /**
    * Temporarily Suspended Concurrent Therapy
    */
-  TemporarilySuspendedConcurrentTherapy: "12",
+  "12": "12",
 
   /**
    * Stopped Concurrent Therapy
    */
-  StoppedConcurrentTherapy: "13",
+  "13": "13",
 
   /**
    * Instituted Ongoing Monitoring Program
    */
-  InstitutedOngoingMonitoringProgram: "9",
+  "9": "9",
 } as const;
 
 /**

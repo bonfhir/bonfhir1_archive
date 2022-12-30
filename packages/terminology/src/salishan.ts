@@ -6,72 +6,72 @@ export const SalishanCode = {
   /**
    * CentralSalish
    */
-  CentralSalish: "_CentralSalish",
+  _CentralSalish: "_CentralSalish",
 
   /**
    * Clallam
    */
-  Clallam: "x-CLM",
+  "x-CLM": "x-CLM",
 
   /**
    * Lushootseed
    */
-  Lushootseed: "x-LUT",
+  "x-LUT": "x-LUT",
 
   /**
    * Northern Straits
    */
-  NorthernStraits: "x-STR",
+  "x-STR": "x-STR",
 
   /**
    * InteriorSalish
    */
-  InteriorSalish: "_InteriorSalish",
+  _InteriorSalish: "_InteriorSalish",
 
   /**
    * Columbian
    */
-  Columbian: "x-COL",
+  "x-COL": "x-COL",
 
   /**
    * Coeur D'alene
    */
-  CoeurDalene: "x-CRD",
+  "x-CRD": "x-CRD",
 
   /**
    * Kalispel
    */
-  Kalispel: "x-FLA",
+  "x-FLA": "x-FLA",
 
   /**
    * Okanagan
    */
-  Okanagan: "x-OKA",
+  "x-OKA": "x-OKA",
 
   /**
    * Tsamosan
    */
-  Tsamosan: "_Tsamosan",
+  _Tsamosan: "_Tsamosan",
 
   /**
    * Lower Chehalis
    */
-  LowerChehalis: "x-CEA",
+  "x-CEA": "x-CEA",
 
   /**
    * Upper Chehalis
    */
-  UpperChehalis: "x-CJH",
+  "x-CJH": "x-CJH",
 
   /**
    * Cowlitz
    */
-  Cowlitz: "x-COW",
+  "x-COW": "x-COW",
 
   /**
    * Quinault
    */
-  Quinault: "x-QUN",
+  "x-QUN": "x-QUN",
 } as const;
 
 /**

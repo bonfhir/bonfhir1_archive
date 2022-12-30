@@ -6,17 +6,17 @@ export const Validation_statusCode = {
   /**
    * Successful
    */
-  Successful: "successful",
+  successful: "successful",
 
   /**
    * Failed
    */
-  Failed: "failed",
+  failed: "failed",
 
   /**
    * Unknown
    */
-  Unknown: "unknown",
+  unknown: "unknown",
 } as const;
 
 /**

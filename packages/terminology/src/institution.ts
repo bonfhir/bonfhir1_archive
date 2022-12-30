@@ -6,27 +6,27 @@ export const InstitutionCode = {
   /**
    * Institution
    */
-  Institution: "I",
+  I: "I",
 
   /**
    * community shelter
    */
-  communityshelter: "CS",
+  CS: "CS",
 
   /**
    * Group Home
    */
-  GroupHome: "G",
+  G: "G",
 
   /**
    * Nursing Home
    */
-  NursingHome: "N",
+  N: "N",
 
   /**
    * Extended care facility
    */
-  Extendedcarefacility: "X",
+  X: "X",
 } as const;
 
 /**

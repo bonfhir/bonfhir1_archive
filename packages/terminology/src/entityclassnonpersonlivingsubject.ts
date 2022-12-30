@@ -6,22 +6,22 @@ export const EntityClassNonPersonLivingSubjectCode = {
   /**
    * non-person living subject
    */
-  nonpersonlivingsubject: "NLIV",
+  NLIV: "NLIV",
 
   /**
    * animal
    */
-  animal: "ANM",
+  ANM: "ANM",
 
   /**
    * microorganism
    */
-  microorganism: "MIC",
+  MIC: "MIC",
 
   /**
    * plant
    */
-  plant: "PLNT",
+  PLNT: "PLNT",
 } as const;
 
 /**

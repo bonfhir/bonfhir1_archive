@@ -12,27 +12,27 @@ export const ActRelationshipActProvenanceCode = {
   /**
    * has component
    */
-  hascomponent: "COMP",
+  COMP: "COMP",
 
   /**
    * has subject
    */
-  hassubject: "SUBJ",
+  SUBJ: "SUBJ",
 
   /**
    * succeeds
    */
-  succeeds: "SUCC",
+  SUCC: "SUCC",
 
   /**
    * updates (condition)
    */
-  updatescondition: "UPDT",
+  UPDT: "UPDT",
 
   /**
    * Excerpts
    */
-  Excerpts: "XCRPT",
+  XCRPT: "XCRPT",
 } as const;
 
 /**

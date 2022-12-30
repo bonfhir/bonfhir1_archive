@@ -10,27 +10,27 @@ export const ObservationInterpretationProtocolInclusionCode = {
   /**
    * outside threshold
    */
-  outsidethreshold: "EX",
+  EX: "EX",
 
   /**
    * above high threshold
    */
-  abovehighthreshold: "HX",
+  HX: "HX",
 
   /**
    * below low threshold
    */
-  belowlowthreshold: "LX",
+  LX: "LX",
 
   /**
    * GeneticObservationInterpretation
    */
-  GeneticObservationInterpretation: "_GeneticObservationInterpretation",
+  _GeneticObservationInterpretation: "_GeneticObservationInterpretation",
 
   /**
    * Carrier
    */
-  Carrier: "CAR",
+  CAR: "CAR",
 
   /**
    * Carrier
@@ -40,183 +40,183 @@ export const ObservationInterpretationProtocolInclusionCode = {
   /**
    * ObservationInterpretationChange
    */
-  ObservationInterpretationChange: "_ObservationInterpretationChange",
+  _ObservationInterpretationChange: "_ObservationInterpretationChange",
 
   /**
    * Better
    */
-  Better: "B",
+  B: "B",
 
   /**
    * Significant change down
    */
-  Significantchangedown: "D",
+  D: "D",
 
   /**
    * Significant change up
    */
-  Significantchangeup: "U",
+  U: "U",
 
   /**
    * Worse
    */
-  Worse: "W",
+  W: "W",
 
   /**
    * ObservationInterpretationExceptions
    */
-  ObservationInterpretationExceptions: "_ObservationInterpretationExceptions",
+  _ObservationInterpretationExceptions: "_ObservationInterpretationExceptions",
 
   /**
    * Off scale low
    */
-  Offscalelow: "<",
+  "<": "<",
 
   /**
    * Off scale high
    */
-  Offscalehigh: ">",
+  ">": ">",
 
   /**
    * Anti-complementary substances present
    */
-  Anticomplementarysubstancespresent: "AC",
+  AC: "AC",
 
   /**
    * Insufficient evidence
    */
-  Insufficientevidence: "IE",
+  IE: "IE",
 
   /**
    * Quality control failure
    */
-  Qualitycontrolfailure: "QCF",
+  QCF: "QCF",
 
   /**
    * Cytotoxic substance present
    */
-  Cytotoxicsubstancepresent: "TOX",
+  TOX: "TOX",
 
   /**
    * ObservationInterpretationNormality
    */
-  ObservationInterpretationNormality: "_ObservationInterpretationNormality",
+  _ObservationInterpretationNormality: "_ObservationInterpretationNormality",
 
   /**
    * Abnormal
    */
-  Abnormal: "A",
+  A: "A",
 
   /**
    * Critical abnormal
    */
-  Criticalabnormal: "AA",
+  AA: "AA",
 
   /**
    * Critical high
    */
-  Criticalhigh: "HH",
+  HH: "HH",
 
   /**
    * Critical low
    */
-  Criticallow: "LL",
+  LL: "LL",
 
   /**
    * High
    */
-  High: "H",
+  H: "H",
 
   /**
    * Significantly high
    */
-  Significantlyhigh: "H>",
+  "H>": "H>",
 
   /**
    * Significantly high
    */
-  Significantlyhigh: "HU",
+  HU: "HU",
 
   /**
    * Low
    */
-  Low: "L",
+  L: "L",
 
   /**
    * Significantly low
    */
-  Significantlylow: "L<",
+  "L<": "L<",
 
   /**
    * Significantly low
    */
-  Significantlylow: "LU",
+  LU: "LU",
 
   /**
    * Normal
    */
-  Normal: "N",
+  N: "N",
 
   /**
    * ObservationInterpretationSusceptibility
    */
-  ObservationInterpretationSusceptibility:
+  _ObservationInterpretationSusceptibility:
     "_ObservationInterpretationSusceptibility",
 
   /**
    * Intermediate
    */
-  Intermediate: "I",
+  I: "I",
 
   /**
    * moderately susceptible
    */
-  moderatelysusceptible: "MS",
+  MS: "MS",
 
   /**
    * No CLSI defined breakpoint
    */
-  NoCLSIdefinedbreakpoint: "NCL",
+  NCL: "NCL",
 
   /**
    * Non-susceptible
    */
-  Nonsusceptible: "NS",
+  NS: "NS",
 
   /**
    * Resistant
    */
-  Resistant: "R",
+  R: "R",
 
   /**
    * Synergy - resistant
    */
-  Synergyresistant: "SYN-R",
+  "SYN-R": "SYN-R",
 
   /**
    * Susceptible
    */
-  Susceptible: "S",
+  S: "S",
 
   /**
    * Susceptible-dose dependent
    */
-  Susceptibledosedependent: "SDD",
+  SDD: "SDD",
 
   /**
    * Synergy - susceptible
    */
-  Synergysusceptible: "SYN-S",
+  "SYN-S": "SYN-S",
 
   /**
    * very susceptible
    */
-  verysusceptible: "VS",
+  VS: "VS",
 
   /**
    * Hold for Medical Review
    */
-  HoldforMedicalReview: "HM",
+  HM: "HM",
 
   /**
    * ObservationInterpretationDetection
@@ -226,32 +226,32 @@ export const ObservationInterpretationProtocolInclusionCode = {
   /**
    * Indeterminate
    */
-  Indeterminate: "IND",
+  IND: "IND",
 
   /**
    * Equivocal
    */
-  Equivocal: "E",
+  E: "E",
 
   /**
    * Negative
    */
-  Negative: "NEG",
+  NEG: "NEG",
 
   /**
    * Not detected
    */
-  Notdetected: "ND",
+  ND: "ND",
 
   /**
    * Positive
    */
-  Positive: "POS",
+  POS: "POS",
 
   /**
    * Detected
    */
-  Detected: "DET",
+  DET: "DET",
 
   /**
    * ObservationInterpretationExpectation
@@ -261,17 +261,17 @@ export const ObservationInterpretationProtocolInclusionCode = {
   /**
    * Expected
    */
-  Expected: "EXP",
+  EXP: "EXP",
 
   /**
    * Unexpected
    */
-  Unexpected: "UNE",
+  UNE: "UNE",
 
   /**
    * Interpretation qualifiers in separate OBX segments
    */
-  InterpretationqualifiersinseparateOBXsegments: "OBX",
+  OBX: "OBX",
 
   /**
    * ReactivityObservationInterpretation
@@ -281,17 +281,17 @@ export const ObservationInterpretationProtocolInclusionCode = {
   /**
    * Non-reactive
    */
-  Nonreactive: "NR",
+  NR: "NR",
 
   /**
    * Reactive
    */
-  Reactive: "RR",
+  RR: "RR",
 
   /**
    * Weakly reactive
    */
-  Weaklyreactive: "WR",
+  WR: "WR",
 } as const;
 
 /**

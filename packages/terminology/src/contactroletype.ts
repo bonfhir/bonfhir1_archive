@@ -6,2047 +6,2037 @@ export const ContactRoleTypeCode = {
   /**
    * Billing Contact
    */
-  BillingContact: "BILL",
+  BILL: "BILL",
 
   /**
    * organizational contact
    */
-  organizationalcontact: "ORG",
+  ORG: "ORG",
 
   /**
    * Payor Contact
    */
-  PayorContact: "PAYOR",
+  PAYOR: "PAYOR",
 
   /**
    * emergency contact
    */
-  emergencycontact: "ECON",
+  ECON: "ECON",
 
   /**
    * next of kin
    */
-  nextofkin: "NOK",
+  NOK: "NOK",
 
   /**
    * AffiliationRoleType
    */
-  AffiliationRoleType: "_AffiliationRoleType",
+  _AffiliationRoleType: "_AffiliationRoleType",
 
   /**
    * AgentRoleType
    */
-  AgentRoleType: "_AgentRoleType",
+  _AgentRoleType: "_AgentRoleType",
 
   /**
    * amender
    */
-  amender: "AMENDER",
+  AMENDER: "AMENDER",
 
   /**
    * classifier
    */
-  classifier: "CLASSIFIER",
+  CLASSIFIER: "CLASSIFIER",
 
   /**
    * consenter
    */
-  consenter: "CONSENTER",
+  CONSENTER: "CONSENTER",
 
   /**
    * consent witness
    */
-  consentwitness: "CONSWIT",
+  CONSWIT: "CONSWIT",
 
   /**
    * co-participant
    */
-  coparticipant: "COPART",
+  COPART: "COPART",
 
   /**
    * declassifier
    */
-  declassifier: "DECLASSIFIER",
+  DECLASSIFIER: "DECLASSIFIER",
 
   /**
    * delegatee
    */
-  delegatee: "DELEGATEE",
+  DELEGATEE: "DELEGATEE",
 
   /**
    * delegator
    */
-  delegator: "DELEGATOR",
+  DELEGATOR: "DELEGATOR",
 
   /**
    * downgrader
    */
-  downgrader: "DOWNGRDER",
+  DOWNGRDER: "DOWNGRDER",
 
   /**
    * derivative classifier
    */
-  derivativeclassifier: "DRIVCLASSIFIER",
+  DRIVCLASSIFIER: "DRIVCLASSIFIER",
 
   /**
    * grantee
    */
-  grantee: "GRANTEE",
+  GRANTEE: "GRANTEE",
 
   /**
    * grantor
    */
-  grantor: "GRANTOR",
+  GRANTOR: "GRANTOR",
 
   /**
    * interpreter
    */
-  interpreter: "INTPRTER",
+  INTPRTER: "INTPRTER",
 
   /**
    * reviewer
    */
-  reviewer: "REVIEWER",
+  REVIEWER: "REVIEWER",
 
   /**
    * upgrader
    */
-  upgrader: "UPGRDER",
+  UPGRDER: "UPGRDER",
 
   /**
    * validator
    */
-  validator: "VALIDATOR",
+  VALIDATOR: "VALIDATOR",
 
   /**
    * CoverageSponsorRoleType
    */
-  CoverageSponsorRoleType: "_CoverageSponsorRoleType",
+  _CoverageSponsorRoleType: "_CoverageSponsorRoleType",
 
   /**
    * Fully insured coverage sponsor
    */
-  Fullyinsuredcoveragesponsor: "FULLINS",
+  FULLINS: "FULLINS",
 
   /**
    * Self insured coverage sponsor
    */
-  Selfinsuredcoveragesponsor: "SELFINS",
+  SELFINS: "SELFINS",
 
   /**
    * PayorRoleType
    */
-  PayorRoleType: "_PayorRoleType",
+  _PayorRoleType: "_PayorRoleType",
 
   /**
    * Enrollment Broker
    */
-  EnrollmentBroker: "ENROLBKR",
+  ENROLBKR: "ENROLBKR",
 
   /**
    * Third party administrator
    */
-  Thirdpartyadministrator: "TPA",
+  TPA: "TPA",
 
   /**
    * Utilization management organization
    */
-  Utilizationmanagementorganization: "UMO",
+  UMO: "UMO",
 
   /**
    * responsible party
    */
-  responsibleparty: "RESPRSN",
+  RESPRSN: "RESPRSN",
 
   /**
    * executor of estate
    */
-  executorofestate: "EXCEST",
+  EXCEST: "EXCEST",
 
   /**
    * guardian ad lidem
    */
-  guardianadlidem: "GUADLTM",
+  GUADLTM: "GUADLTM",
 
   /**
    * guardian
    */
-  guardian: "GUARD",
+  GUARD: "GUARD",
 
   /**
    * power of attorney
    */
-  powerofattorney: "POWATT",
+  POWATT: "POWATT",
 
   /**
    * durable power of attorney
    */
-  durablepowerofattorney: "DPOWATT",
+  DPOWATT: "DPOWATT",
 
   /**
    * healthcare power of attorney
    */
-  healthcarepowerofattorney: "HPOWATT",
+  HPOWATT: "HPOWATT",
 
   /**
    * special power of attorney
    */
-  specialpowerofattorney: "SPOWATT",
+  SPOWATT: "SPOWATT",
 
   /**
    * AssignedRoleType
    */
-  AssignedRoleType: "_AssignedRoleType",
+  _AssignedRoleType: "_AssignedRoleType",
 
   /**
    * AssignedNonPersonLivingSubjectRoleType
    */
-  AssignedNonPersonLivingSubjectRoleType:
+  _AssignedNonPersonLivingSubjectRoleType:
     "_AssignedNonPersonLivingSubjectRoleType",
 
   /**
    * Assistive non-person living subject
    */
-  Assistivenonpersonlivingsubject: "ASSIST",
+  ASSIST: "ASSIST",
 
   /**
    * Biotherapeutic non-person living subject
    */
-  Biotherapeuticnonpersonlivingsubject: "BIOTH",
+  BIOTH: "BIOTH",
 
   /**
    * Antibiotic
    */
-  Antibiotic: "ANTIBIOT",
+  ANTIBIOT: "ANTIBIOT",
 
   /**
    * Debridement
    */
-  Debridement: "DEBR",
+  DEBR: "DEBR",
 
   /**
    * Clinical Companion
    */
-  ClinicalCompanion: "CCO",
+  CCO: "CCO",
 
   /**
    * Seeing
    */
-  Seeing: "SEE",
+  SEE: "SEE",
 
   /**
    * Sniffing
    */
-  Sniffing: "SNIFF",
+  SNIFF: "SNIFF",
 
   /**
    * CertifiedEntityType
    */
-  CertifiedEntityType: "_CertifiedEntityType",
+  _CertifiedEntityType: "_CertifiedEntityType",
 
   /**
    * PractitionerCertifiedEntityType
    */
-  PractitionerCertifiedEntityType: "_PractitionerCertifiedEntityType",
+  _PractitionerCertifiedEntityType: "_PractitionerCertifiedEntityType",
 
   /**
    * CitizenRoleType
    */
-  CitizenRoleType: "_CitizenRoleType",
+  _CitizenRoleType: "_CitizenRoleType",
 
   /**
    * asylum seeker
    */
-  asylumseeker: "CAS",
+  CAS: "CAS",
 
   /**
    * single minor asylum seeker
    */
-  singleminorasylumseeker: "CASM",
+  CASM: "CASM",
 
   /**
    * national
    */
-  national: "CN",
+  CN: "CN",
 
   /**
    * non-country member without residence permit
    */
-  noncountrymemberwithoutresidencepermit: "CNRP",
+  CNRP: "CNRP",
 
   /**
    * non-country member minor without residence permit
    */
-  noncountrymemberminorwithoutresidencepermit: "CNRPM",
+  CNRPM: "CNRPM",
 
   /**
    * permit card applicant
    */
-  permitcardapplicant: "CPCA",
+  CPCA: "CPCA",
 
   /**
    * non-country member with residence permit
    */
-  noncountrymemberwithresidencepermit: "CRP",
+  CRP: "CRP",
 
   /**
    * non-country member minor with residence permit
    */
-  noncountrymemberminorwithresidencepermit: "CRPM",
+  CRPM: "CRPM",
 
   /**
    * ContactRoleType
    */
-  ContactRoleType: "_ContactRoleType",
+  _ContactRoleType: "_ContactRoleType",
 
   /**
    * AdministrativeContactRoleType
    */
-  AdministrativeContactRoleType: "_AdministrativeContactRoleType",
-
-  /**
-   * emergency contact
-   */
-  emergencycontact: "ECON",
-
-  /**
-   * next of kin
-   */
-  nextofkin: "NOK",
+  _AdministrativeContactRoleType: "_AdministrativeContactRoleType",
 
   /**
    * IdentifiedEntityType
    */
-  IdentifiedEntityType: "_IdentifiedEntityType",
+  _IdentifiedEntityType: "_IdentifiedEntityType",
 
   /**
    * LocationIdentifiedEntityRoleCode
    */
-  LocationIdentifiedEntityRoleCode: "_LocationIdentifiedEntityRoleCode",
+  _LocationIdentifiedEntityRoleCode: "_LocationIdentifiedEntityRoleCode",
 
   /**
    * accreditation location identifier
    */
-  accreditationlocationidentifier: "ACHFID",
+  ACHFID: "ACHFID",
 
   /**
    * jurisdiction location identifier
    */
-  jurisdictionlocationidentifier: "JURID",
+  JURID: "JURID",
 
   /**
    * local location identifier
    */
-  locallocationidentifier: "LOCHFID",
+  LOCHFID: "LOCHFID",
 
   /**
    * LivingSubjectProductionClass
    */
-  LivingSubjectProductionClass: "_LivingSubjectProductionClass",
+  _LivingSubjectProductionClass: "_LivingSubjectProductionClass",
 
   /**
    * Beef
    */
-  Beef: "BF",
+  BF: "BF",
 
   /**
    * Broiler
    */
-  Broiler: "BL",
+  BL: "BL",
 
   /**
    * Breeder
    */
-  Breeder: "BR",
+  BR: "BR",
 
   /**
    * Companion
    */
-  Companion: "CO",
+  CO: "CO",
 
   /**
    * Dairy
    */
-  Dairy: "DA",
+  DA: "DA",
 
   /**
    * Draft
    */
-  Draft: "DR",
+  DR: "DR",
 
   /**
    * Dual
    */
-  Dual: "DU",
+  DU: "DU",
 
   /**
    * Fiber
    */
-  Fiber: "FI",
+  FI: "FI",
 
   /**
    * Layer
    */
-  Layer: "LY",
+  LY: "LY",
 
   /**
    * Meat
    */
-  Meat: "MT",
+  MT: "MT",
 
   /**
    * Multiplier
    */
-  Multiplier: "MU",
+  MU: "MU",
 
   /**
    * Pleasure
    */
-  Pleasure: "PL",
+  PL: "PL",
 
   /**
    * Racing
    */
-  Racing: "RC",
+  RC: "RC",
 
   /**
    * Show
    */
-  Show: "SH",
+  SH: "SH",
 
   /**
    * Veal
    */
-  Veal: "VL",
+  VL: "VL",
 
   /**
    * Wool
    */
-  Wool: "WL",
+  WL: "WL",
 
   /**
    * Working
    */
-  Working: "WO",
+  WO: "WO",
 
   /**
    * MedicationGeneralizationRoleType
    */
-  MedicationGeneralizationRoleType: "_MedicationGeneralizationRoleType",
+  _MedicationGeneralizationRoleType: "_MedicationGeneralizationRoleType",
 
   /**
    * therapeutic class
    */
-  therapeuticclass: "DC",
+  DC: "DC",
 
   /**
    * generic drug
    */
-  genericdrug: "GD",
+  GD: "GD",
 
   /**
    * generic drug form
    */
-  genericdrugform: "GDF",
+  GDF: "GDF",
 
   /**
    * generic drug strength
    */
-  genericdrugstrength: "GDS",
+  GDS: "GDS",
 
   /**
    * generic drug strength form
    */
-  genericdrugstrengthform: "GDSF",
+  GDSF: "GDSF",
 
   /**
    * manufactured drug strength form
    */
-  manufactureddrugstrengthform: "MGDSF",
+  MGDSF: "MGDSF",
 
   /**
    * MemberRoleType
    */
-  MemberRoleType: "_MemberRoleType",
+  _MemberRoleType: "_MemberRoleType",
 
   /**
    * Tribal Member
    */
-  TribalMember: "TRB",
+  TRB: "TRB",
 
   /**
    * PersonalRelationshipRoleType
    */
-  PersonalRelationshipRoleType: "_PersonalRelationshipRoleType",
+  _PersonalRelationshipRoleType: "_PersonalRelationshipRoleType",
 
   /**
    * family member
    */
-  familymember: "FAMMEMB",
+  FAMMEMB: "FAMMEMB",
 
   /**
    * child
    */
-  child: "CHILD",
+  CHILD: "CHILD",
 
   /**
    * adopted child
    */
-  adoptedchild: "CHLDADOPT",
+  CHLDADOPT: "CHLDADOPT",
 
   /**
    * adopted daughter
    */
-  adopteddaughter: "DAUADOPT",
+  DAUADOPT: "DAUADOPT",
 
   /**
    * adopted son
    */
-  adoptedson: "SONADOPT",
+  SONADOPT: "SONADOPT",
 
   /**
    * foster child
    */
-  fosterchild: "CHLDFOST",
+  CHLDFOST: "CHLDFOST",
 
   /**
    * foster daughter
    */
-  fosterdaughter: "DAUFOST",
+  DAUFOST: "DAUFOST",
 
   /**
    * foster son
    */
-  fosterson: "SONFOST",
+  SONFOST: "SONFOST",
 
   /**
    * daughter
    */
-  daughter: "DAUC",
+  DAUC: "DAUC",
 
   /**
    * natural daughter
    */
-  naturaldaughter: "DAU",
+  DAU: "DAU",
 
   /**
    * stepdaughter
    */
-  stepdaughter: "STPDAU",
+  STPDAU: "STPDAU",
 
   /**
    * natural child
    */
-  naturalchild: "NCHILD",
+  NCHILD: "NCHILD",
 
   /**
    * natural son
    */
-  naturalson: "SON",
+  SON: "SON",
 
   /**
    * son
    */
-  son: "SONC",
+  SONC: "SONC",
 
   /**
    * stepson
    */
-  stepson: "STPSON",
+  STPSON: "STPSON",
 
   /**
    * step child
    */
-  stepchild: "STPCHLD",
+  STPCHLD: "STPCHLD",
 
   /**
    * extended family member
    */
-  extendedfamilymember: "EXT",
+  EXT: "EXT",
 
   /**
    * aunt
    */
-  aunt: "AUNT",
+  AUNT: "AUNT",
 
   /**
    * maternal aunt
    */
-  maternalaunt: "MAUNT",
+  MAUNT: "MAUNT",
 
   /**
    * paternal aunt
    */
-  paternalaunt: "PAUNT",
+  PAUNT: "PAUNT",
 
   /**
    * cousin
    */
-  cousin: "COUSN",
+  COUSN: "COUSN",
 
   /**
    * maternal cousin
    */
-  maternalcousin: "MCOUSN",
+  MCOUSN: "MCOUSN",
 
   /**
    * paternal cousin
    */
-  paternalcousin: "PCOUSN",
+  PCOUSN: "PCOUSN",
 
   /**
    * great grandparent
    */
-  greatgrandparent: "GGRPRN",
+  GGRPRN: "GGRPRN",
 
   /**
    * great grandfather
    */
-  greatgrandfather: "GGRFTH",
+  GGRFTH: "GGRFTH",
 
   /**
    * maternal great-grandfather
    */
-  maternalgreatgrandfather: "MGGRFTH",
+  MGGRFTH: "MGGRFTH",
 
   /**
    * paternal great-grandfather
    */
-  paternalgreatgrandfather: "PGGRFTH",
+  PGGRFTH: "PGGRFTH",
 
   /**
    * great grandmother
    */
-  greatgrandmother: "GGRMTH",
+  GGRMTH: "GGRMTH",
 
   /**
    * maternal great-grandmother
    */
-  maternalgreatgrandmother: "MGGRMTH",
+  MGGRMTH: "MGGRMTH",
 
   /**
    * paternal great-grandmother
    */
-  paternalgreatgrandmother: "PGGRMTH",
+  PGGRMTH: "PGGRMTH",
 
   /**
    * maternal great-grandparent
    */
-  maternalgreatgrandparent: "MGGRPRN",
+  MGGRPRN: "MGGRPRN",
 
   /**
    * paternal great-grandparent
    */
-  paternalgreatgrandparent: "PGGRPRN",
+  PGGRPRN: "PGGRPRN",
 
   /**
    * grandchild
    */
-  grandchild: "GRNDCHILD",
+  GRNDCHILD: "GRNDCHILD",
 
   /**
    * granddaughter
    */
-  granddaughter: "GRNDDAU",
+  GRNDDAU: "GRNDDAU",
 
   /**
    * grandson
    */
-  grandson: "GRNDSON",
+  GRNDSON: "GRNDSON",
 
   /**
    * grandparent
    */
-  grandparent: "GRPRN",
+  GRPRN: "GRPRN",
 
   /**
    * grandfather
    */
-  grandfather: "GRFTH",
+  GRFTH: "GRFTH",
 
   /**
    * maternal grandfather
    */
-  maternalgrandfather: "MGRFTH",
+  MGRFTH: "MGRFTH",
 
   /**
    * paternal grandfather
    */
-  paternalgrandfather: "PGRFTH",
+  PGRFTH: "PGRFTH",
 
   /**
    * grandmother
    */
-  grandmother: "GRMTH",
+  GRMTH: "GRMTH",
 
   /**
    * maternal grandmother
    */
-  maternalgrandmother: "MGRMTH",
+  MGRMTH: "MGRMTH",
 
   /**
    * paternal grandmother
    */
-  paternalgrandmother: "PGRMTH",
+  PGRMTH: "PGRMTH",
 
   /**
    * maternal grandparent
    */
-  maternalgrandparent: "MGRPRN",
+  MGRPRN: "MGRPRN",
 
   /**
    * paternal grandparent
    */
-  paternalgrandparent: "PGRPRN",
+  PGRPRN: "PGRPRN",
 
   /**
    * inlaw
    */
-  inlaw: "INLAW",
+  INLAW: "INLAW",
 
   /**
    * child-in-law
    */
-  childinlaw: "CHLDINLAW",
+  CHLDINLAW: "CHLDINLAW",
 
   /**
    * daughter in-law
    */
-  daughterinlaw: "DAUINLAW",
+  DAUINLAW: "DAUINLAW",
 
   /**
    * son in-law
    */
-  soninlaw: "SONINLAW",
+  SONINLAW: "SONINLAW",
 
   /**
    * parent in-law
    */
-  parentinlaw: "PRNINLAW",
+  PRNINLAW: "PRNINLAW",
 
   /**
    * father-in-law
    */
-  fatherinlaw: "FTHINLAW",
+  FTHINLAW: "FTHINLAW",
 
   /**
    * mother-in-law
    */
-  motherinlaw: "MTHINLAW",
+  MTHINLAW: "MTHINLAW",
 
   /**
    * mother-in-law
    */
-  motherinlaw: "MTHINLOAW",
+  MTHINLOAW: "MTHINLOAW",
 
   /**
    * sibling in-law
    */
-  siblinginlaw: "SIBINLAW",
+  SIBINLAW: "SIBINLAW",
 
   /**
    * brother-in-law
    */
-  brotherinlaw: "BROINLAW",
+  BROINLAW: "BROINLAW",
 
   /**
    * sister-in-law
    */
-  sisterinlaw: "SISINLAW",
+  SISINLAW: "SISINLAW",
 
   /**
    * sister-in-law
    */
-  sisterinlaw: "SISLINLAW",
+  SISLINLAW: "SISLINLAW",
 
   /**
    * niece/nephew
    */
-  niecenephew: "NIENEPH",
+  NIENEPH: "NIENEPH",
 
   /**
    * nephew
    */
-  nephew: "NEPHEW",
+  NEPHEW: "NEPHEW",
 
   /**
    * niece
    */
-  niece: "NIECE",
+  NIECE: "NIECE",
 
   /**
    * uncle
    */
-  uncle: "UNCLE",
+  UNCLE: "UNCLE",
 
   /**
    * maternal uncle
    */
-  maternaluncle: "MUNCLE",
+  MUNCLE: "MUNCLE",
 
   /**
    * paternal uncle
    */
-  paternaluncle: "PUNCLE",
+  PUNCLE: "PUNCLE",
 
   /**
    * parent
    */
-  parent: "PRN",
+  PRN: "PRN",
 
   /**
    * adoptive parent
    */
-  adoptiveparent: "ADOPTP",
+  ADOPTP: "ADOPTP",
 
   /**
    * adoptive father
    */
-  adoptivefather: "ADOPTF",
+  ADOPTF: "ADOPTF",
 
   /**
    * adoptive mother
    */
-  adoptivemother: "ADOPTM",
+  ADOPTM: "ADOPTM",
 
   /**
    * father
    */
-  father: "FTH",
+  FTH: "FTH",
 
   /**
    * foster father
    */
-  fosterfather: "FTHFOST",
+  FTHFOST: "FTHFOST",
 
   /**
    * natural father
    */
-  naturalfather: "NFTH",
+  NFTH: "NFTH",
 
   /**
    * natural father of fetus
    */
-  naturalfatheroffetus: "NFTHF",
+  NFTHF: "NFTHF",
 
   /**
    * stepfather
    */
-  stepfather: "STPFTH",
+  STPFTH: "STPFTH",
 
   /**
    * mother
    */
-  mother: "MTH",
+  MTH: "MTH",
 
   /**
    * gestational mother
    */
-  gestationalmother: "GESTM",
+  GESTM: "GESTM",
 
   /**
    * foster mother
    */
-  fostermother: "MTHFOST",
+  MTHFOST: "MTHFOST",
 
   /**
    * natural mother
    */
-  naturalmother: "NMTH",
+  NMTH: "NMTH",
 
   /**
    * natural mother of fetus
    */
-  naturalmotheroffetus: "NMTHF",
+  NMTHF: "NMTHF",
 
   /**
    * stepmother
    */
-  stepmother: "STPMTH",
+  STPMTH: "STPMTH",
 
   /**
    * natural parent
    */
-  naturalparent: "NPRN",
+  NPRN: "NPRN",
 
   /**
    * foster parent
    */
-  fosterparent: "PRNFOST",
+  PRNFOST: "PRNFOST",
 
   /**
    * step parent
    */
-  stepparent: "STPPRN",
+  STPPRN: "STPPRN",
 
   /**
    * sibling
    */
-  sibling: "SIB",
+  SIB: "SIB",
 
   /**
    * brother
    */
-  brother: "BRO",
+  BRO: "BRO",
 
   /**
    * half-brother
    */
-  halfbrother: "HBRO",
+  HBRO: "HBRO",
 
   /**
    * natural brother
    */
-  naturalbrother: "NBRO",
+  NBRO: "NBRO",
 
   /**
    * twin brother
    */
-  twinbrother: "TWINBRO",
+  TWINBRO: "TWINBRO",
 
   /**
    * fraternal twin brother
    */
-  fraternaltwinbrother: "FTWINBRO",
+  FTWINBRO: "FTWINBRO",
 
   /**
    * identical twin brother
    */
-  identicaltwinbrother: "ITWINBRO",
+  ITWINBRO: "ITWINBRO",
 
   /**
    * stepbrother
    */
-  stepbrother: "STPBRO",
+  STPBRO: "STPBRO",
 
   /**
    * half-sibling
    */
-  halfsibling: "HSIB",
+  HSIB: "HSIB",
 
   /**
    * half-sister
    */
-  halfsister: "HSIS",
+  HSIS: "HSIS",
 
   /**
    * natural sibling
    */
-  naturalsibling: "NSIB",
+  NSIB: "NSIB",
 
   /**
    * natural sister
    */
-  naturalsister: "NSIS",
+  NSIS: "NSIS",
 
   /**
    * twin sister
    */
-  twinsister: "TWINSIS",
+  TWINSIS: "TWINSIS",
 
   /**
    * fraternal twin sister
    */
-  fraternaltwinsister: "FTWINSIS",
+  FTWINSIS: "FTWINSIS",
 
   /**
    * identical twin sister
    */
-  identicaltwinsister: "ITWINSIS",
+  ITWINSIS: "ITWINSIS",
 
   /**
    * twin
    */
-  twin: "TWIN",
+  TWIN: "TWIN",
 
   /**
    * fraternal twin
    */
-  fraternaltwin: "FTWIN",
+  FTWIN: "FTWIN",
 
   /**
    * identical twin
    */
-  identicaltwin: "ITWIN",
+  ITWIN: "ITWIN",
 
   /**
    * sister
    */
-  sister: "SIS",
+  SIS: "SIS",
 
   /**
    * stepsister
    */
-  stepsister: "STPSIS",
+  STPSIS: "STPSIS",
 
   /**
    * step sibling
    */
-  stepsibling: "STPSIB",
+  STPSIB: "STPSIB",
 
   /**
    * significant other
    */
-  significantother: "SIGOTHR",
+  SIGOTHR: "SIGOTHR",
 
   /**
    * domestic partner
    */
-  domesticpartner: "DOMPART",
+  DOMPART: "DOMPART",
 
   /**
    * former spouse
    */
-  formerspouse: "FMRSPS",
+  FMRSPS: "FMRSPS",
 
   /**
    * spouse
    */
-  spouse: "SPS",
+  SPS: "SPS",
 
   /**
    * husband
    */
-  husband: "HUSB",
+  HUSB: "HUSB",
 
   /**
    * wife
    */
-  wife: "WIFE",
+  WIFE: "WIFE",
 
   /**
    * unrelated friend
    */
-  unrelatedfriend: "FRND",
+  FRND: "FRND",
 
   /**
    * neighbor
    */
-  neighbor: "NBOR",
+  NBOR: "NBOR",
 
   /**
    * self
    */
-  self: "ONESELF",
+  ONESELF: "ONESELF",
 
   /**
    * Roommate
    */
-  Roommate: "ROOM",
+  ROOM: "ROOM",
 
   /**
    * PolicyOrProgramCoverageRoleType
    */
-  PolicyOrProgramCoverageRoleType: "_PolicyOrProgramCoverageRoleType",
+  _PolicyOrProgramCoverageRoleType: "_PolicyOrProgramCoverageRoleType",
 
   /**
    * CoverageRoleType
    */
-  CoverageRoleType: "_CoverageRoleType",
+  _CoverageRoleType: "_CoverageRoleType",
 
   /**
    * family dependent
    */
-  familydependent: "FAMDEP",
+  FAMDEP: "FAMDEP",
 
   /**
    * handicapped dependent
    */
-  handicappeddependent: "HANDIC",
+  HANDIC: "HANDIC",
 
   /**
    * injured plaintiff
    */
-  injuredplaintiff: "INJ",
+  INJ: "INJ",
 
   /**
    * self
    */
-  self: "SELF",
+  SELF: "SELF",
 
   /**
    * sponsored dependent
    */
-  sponsoreddependent: "SPON",
+  SPON: "SPON",
 
   /**
    * student
    */
-  student: "STUD",
+  STUD: "STUD",
 
   /**
    * full-time student
    */
-  fulltimestudent: "FSTUD",
+  FSTUD: "FSTUD",
 
   /**
    * part-time student
    */
-  parttimestudent: "PSTUD",
+  PSTUD: "PSTUD",
 
   /**
    * adopted child
    */
-  adoptedchild: "ADOPT",
+  ADOPT: "ADOPT",
 
   /**
    * grandchild
    */
-  grandchild: "GCHILD",
+  GCHILD: "GCHILD",
 
   /**
    * grandparent
    */
-  grandparent: "GPARNT",
+  GPARNT: "GPARNT",
 
   /**
    * natural child
    */
-  naturalchild: "NAT",
+  NAT: "NAT",
 
   /**
    * niece/nephew
    */
-  niecenephew: "NIENE",
+  NIENE: "NIENE",
 
   /**
    * parent
    */
-  parent: "PARNT",
+  PARNT: "PARNT",
 
   /**
    * spouse
    */
-  spouse: "SPSE",
+  SPSE: "SPSE",
 
   /**
    * step child
    */
-  stepchild: "STEP",
+  STEP: "STEP",
 
   /**
    * covered party role type
    */
-  coveredpartyroletype: "_CoveredPartyRoleType",
+  _CoveredPartyRoleType: "_CoveredPartyRoleType",
 
   /**
    * ClaimantCoveredPartyRoleType
    */
-  ClaimantCoveredPartyRoleType: "_ClaimantCoveredPartyRoleType",
+  _ClaimantCoveredPartyRoleType: "_ClaimantCoveredPartyRoleType",
 
   /**
    * crime victim
    */
-  crimevictim: "CRIMEVIC",
+  CRIMEVIC: "CRIMEVIC",
 
   /**
    * injured worker
    */
-  injuredworker: "INJWKR",
+  INJWKR: "INJWKR",
 
   /**
    * DependentCoveredPartyRoleType
    */
-  DependentCoveredPartyRoleType: "_DependentCoveredPartyRoleType",
+  _DependentCoveredPartyRoleType: "_DependentCoveredPartyRoleType",
 
   /**
    * continuity of coverage beneficiary
    */
-  continuityofcoveragebeneficiary: "COCBEN",
+  COCBEN: "COCBEN",
 
   /**
    * differently abled
    */
-  differentlyabled: "DIFFABL",
+  DIFFABL: "DIFFABL",
 
   /**
    * ward
    */
-  ward: "WARD",
+  WARD: "WARD",
 
   /**
    * IndividualInsuredPartyRoleType
    */
-  IndividualInsuredPartyRoleType: "_IndividualInsuredPartyRoleType",
+  _IndividualInsuredPartyRoleType: "_IndividualInsuredPartyRoleType",
 
   /**
    * retiree
    */
-  retiree: "RETIREE",
+  RETIREE: "RETIREE",
 
   /**
    * ProgramEligiblePartyRoleType
    */
-  ProgramEligiblePartyRoleType: "_ProgramEligiblePartyRoleType",
+  _ProgramEligiblePartyRoleType: "_ProgramEligiblePartyRoleType",
 
   /**
    * member of an indigenous people
    */
-  memberofanindigenouspeople: "INDIG",
+  INDIG: "INDIG",
 
   /**
    * military
    */
-  military: "MIL",
+  MIL: "MIL",
 
   /**
    * active duty military
    */
-  activedutymilitary: "ACTMIL",
+  ACTMIL: "ACTMIL",
 
   /**
    * retired military
    */
-  retiredmilitary: "RETMIL",
+  RETMIL: "RETMIL",
 
   /**
    * veteran
    */
-  veteran: "VET",
+  VET: "VET",
 
   /**
    * SubscriberCoveredPartyRoleType
    */
-  SubscriberCoveredPartyRoleType: "_SubscriberCoveredPartyRoleType",
+  _SubscriberCoveredPartyRoleType: "_SubscriberCoveredPartyRoleType",
 
   /**
    * ResearchSubjectRoleBasis
    */
-  ResearchSubjectRoleBasis: "_ResearchSubjectRoleBasis",
+  _ResearchSubjectRoleBasis: "_ResearchSubjectRoleBasis",
 
   /**
    * enrollment
    */
-  enrollment: "ERL",
+  ERL: "ERL",
 
   /**
    * screening
    */
-  screening: "SCN",
+  SCN: "SCN",
 
   /**
    * ServiceDeliveryLocationRoleType
    */
-  ServiceDeliveryLocationRoleType: "_ServiceDeliveryLocationRoleType",
+  _ServiceDeliveryLocationRoleType: "_ServiceDeliveryLocationRoleType",
 
   /**
    * DedicatedServiceDeliveryLocationRoleType
    */
-  DedicatedServiceDeliveryLocationRoleType:
+  _DedicatedServiceDeliveryLocationRoleType:
     "_DedicatedServiceDeliveryLocationRoleType",
 
   /**
    * DedicatedClinicalLocationRoleType
    */
-  DedicatedClinicalLocationRoleType: "_DedicatedClinicalLocationRoleType",
+  _DedicatedClinicalLocationRoleType: "_DedicatedClinicalLocationRoleType",
 
   /**
    * Diagnostics or therapeutics unit
    */
-  Diagnosticsortherapeuticsunit: "DX",
+  DX: "DX",
 
   /**
    * Cardiovascular diagnostics or therapeutics unit
    */
-  Cardiovasculardiagnosticsortherapeuticsunit: "CVDX",
+  CVDX: "CVDX",
 
   /**
    * Cardiac catheterization lab
    */
-  Cardiaccatheterizationlab: "CATH",
+  CATH: "CATH",
 
   /**
    * Echocardiography lab
    */
-  Echocardiographylab: "ECHO",
+  ECHO: "ECHO",
 
   /**
    * Gastroenterology diagnostics or therapeutics lab
    */
-  Gastroenterologydiagnosticsortherapeuticslab: "GIDX",
+  GIDX: "GIDX",
 
   /**
    * Endoscopy lab
    */
-  Endoscopylab: "ENDOS",
+  ENDOS: "ENDOS",
 
   /**
    * Radiology diagnostics or therapeutics unit
    */
-  Radiologydiagnosticsortherapeuticsunit: "RADDX",
+  RADDX: "RADDX",
 
   /**
    * Radiation oncology unit
    */
-  Radiationoncologyunit: "RADO",
+  RADO: "RADO",
 
   /**
    * Neuroradiology unit
    */
-  Neuroradiologyunit: "RNEU",
+  RNEU: "RNEU",
 
   /**
    * Hospital
    */
-  Hospital: "HOSP",
+  HOSP: "HOSP",
 
   /**
    * Chronic Care Facility
    */
-  ChronicCareFacility: "CHR",
+  CHR: "CHR",
 
   /**
    * Hospitals; General Acute Care Hospital
    */
-  HospitalsGeneralAcuteCareHospital: "GACH",
+  GACH: "GACH",
 
   /**
    * Military Hospital
    */
-  MilitaryHospital: "MHSP",
+  MHSP: "MHSP",
 
   /**
    * Psychatric Care Facility
    */
-  PsychatricCareFacility: "PSYCHF",
+  PSYCHF: "PSYCHF",
 
   /**
    * Rehabilitation hospital
    */
-  Rehabilitationhospital: "RH",
+  RH: "RH",
 
   /**
    * addiction treatment center
    */
-  addictiontreatmentcenter: "RHAT",
+  RHAT: "RHAT",
 
   /**
    * intellectual impairment center
    */
-  intellectualimpairmentcenter: "RHII",
+  RHII: "RHII",
 
   /**
    * parents with adjustment difficulties center
    */
-  parentswithadjustmentdifficultiescenter: "RHMAD",
+  RHMAD: "RHMAD",
 
   /**
    * physical impairment center
    */
-  physicalimpairmentcenter: "RHPI",
+  RHPI: "RHPI",
 
   /**
    * physical impairment - hearing center
    */
-  physicalimpairmenthearingcenter: "RHPIH",
+  RHPIH: "RHPIH",
 
   /**
    * physical impairment - motor skills center
    */
-  physicalimpairmentmotorskillscenter: "RHPIMS",
+  RHPIMS: "RHPIMS",
 
   /**
    * physical impairment - visual skills center
    */
-  physicalimpairmentvisualskillscenter: "RHPIVS",
+  RHPIVS: "RHPIVS",
 
   /**
    * youths with adjustment difficulties center
    */
-  youthswithadjustmentdifficultiescenter: "RHYAD",
+  RHYAD: "RHYAD",
 
   /**
    * Hospital unit
    */
-  Hospitalunit: "HU",
+  HU: "HU",
 
   /**
    * Bone marrow transplant unit
    */
-  Bonemarrowtransplantunit: "BMTU",
+  BMTU: "BMTU",
 
   /**
    * Coronary care unit
    */
-  Coronarycareunit: "CCU",
+  CCU: "CCU",
 
   /**
    * Chest unit
    */
-  Chestunit: "CHEST",
+  CHEST: "CHEST",
 
   /**
    * Epilepsy unit
    */
-  Epilepsyunit: "EPIL",
+  EPIL: "EPIL",
 
   /**
    * Emergency room
    */
-  Emergencyroom: "ER",
+  ER: "ER",
 
   /**
    * Emergency trauma unit
    */
-  Emergencytraumaunit: "ETU",
+  ETU: "ETU",
 
   /**
    * Hemodialysis unit
    */
-  Hemodialysisunit: "HD",
+  HD: "HD",
 
   /**
    * hospital laboratory
    */
-  hospitallaboratory: "HLAB",
+  HLAB: "HLAB",
 
   /**
    * inpatient laboratory
    */
-  inpatientlaboratory: "INLAB",
+  INLAB: "INLAB",
 
   /**
    * outpatient laboratory
    */
-  outpatientlaboratory: "OUTLAB",
+  OUTLAB: "OUTLAB",
 
   /**
    * radiology unit
    */
-  radiologyunit: "HRAD",
+  HRAD: "HRAD",
 
   /**
    * specimen collection site
    */
-  specimencollectionsite: "HUSCS",
+  HUSCS: "HUSCS",
 
   /**
    * Intensive care unit
    */
-  Intensivecareunit: "ICU",
+  ICU: "ICU",
 
   /**
    * Pediatric intensive care unit
    */
-  Pediatricintensivecareunit: "PEDICU",
+  PEDICU: "PEDICU",
 
   /**
    * Pediatric neonatal intensive care unit
    */
-  Pediatricneonatalintensivecareunit: "PEDNICU",
+  PEDNICU: "PEDNICU",
 
   /**
    * inpatient pharmacy
    */
-  inpatientpharmacy: "INPHARM",
+  INPHARM: "INPHARM",
 
   /**
    * medical laboratory
    */
-  medicallaboratory: "MBL",
+  MBL: "MBL",
 
   /**
    * Neurology critical care and stroke unit
    */
-  Neurologycriticalcareandstrokeunit: "NCCS",
+  NCCS: "NCCS",
 
   /**
    * Neurosurgery unit
    */
-  Neurosurgeryunit: "NS",
+  NS: "NS",
 
   /**
    * outpatient pharmacy
    */
-  outpatientpharmacy: "OUTPHARM",
+  OUTPHARM: "OUTPHARM",
 
   /**
    * Pediatric unit
    */
-  Pediatricunit: "PEDU",
+  PEDU: "PEDU",
 
   /**
    * Psychiatric hospital unit
    */
-  Psychiatrichospitalunit: "PHU",
+  PHU: "PHU",
 
   /**
    * Rehabilitation hospital unit
    */
-  Rehabilitationhospitalunit: "RHU",
+  RHU: "RHU",
 
   /**
    * Sleep disorders unit
    */
-  Sleepdisordersunit: "SLEEP",
+  SLEEP: "SLEEP",
 
   /**
    * Nursing or custodial care facility
    */
-  Nursingorcustodialcarefacility: "NCCF",
+  NCCF: "NCCF",
 
   /**
    * Skilled nursing facility
    */
-  Skillednursingfacility: "SNF",
+  SNF: "SNF",
 
   /**
    * Outpatient facility
    */
-  Outpatientfacility: "OF",
+  OF: "OF",
 
   /**
    * Allergy clinic
    */
-  Allergyclinic: "ALL",
+  ALL: "ALL",
 
   /**
    * Amputee clinic
    */
-  Amputeeclinic: "AMPUT",
+  AMPUT: "AMPUT",
 
   /**
    * Bone marrow transplant clinic
    */
-  Bonemarrowtransplantclinic: "BMTC",
+  BMTC: "BMTC",
 
   /**
    * Breast clinic
    */
-  Breastclinic: "BREAST",
+  BREAST: "BREAST",
 
   /**
    * Child and adolescent neurology clinic
    */
-  Childandadolescentneurologyclinic: "CANC",
+  CANC: "CANC",
 
   /**
    * Child and adolescent psychiatry clinic
    */
-  Childandadolescentpsychiatryclinic: "CAPC",
+  CAPC: "CAPC",
 
   /**
    * Ambulatory Health Care Facilities; Clinic/Center; Rehabilitation: Cardiac Facilities
    */
-  AmbulatoryHealthCareFacilitiesClinicCenterRehabilitationCardiacFacilities:
-    "CARD",
+  CARD: "CARD",
 
   /**
    * Pediatric cardiology clinic
    */
-  Pediatriccardiologyclinic: "PEDCARD",
+  PEDCARD: "PEDCARD",
 
   /**
    * Coagulation clinic
    */
-  Coagulationclinic: "COAG",
+  COAG: "COAG",
 
   /**
    * Colon and rectal surgery clinic
    */
-  Colonandrectalsurgeryclinic: "CRS",
+  CRS: "CRS",
 
   /**
    * Dermatology clinic
    */
-  Dermatologyclinic: "DERM",
+  DERM: "DERM",
 
   /**
    * Endocrinology clinic
    */
-  Endocrinologyclinic: "ENDO",
+  ENDO: "ENDO",
 
   /**
    * Pediatric endocrinology clinic
    */
-  Pediatricendocrinologyclinic: "PEDE",
+  PEDE: "PEDE",
 
   /**
    * Otorhinolaryngology clinic
    */
-  Otorhinolaryngologyclinic: "ENT",
+  ENT: "ENT",
 
   /**
    * Family medicine clinic
    */
-  Familymedicineclinic: "FMC",
+  FMC: "FMC",
 
   /**
    * Gastroenterology clinic
    */
-  Gastroenterologyclinic: "GI",
+  GI: "GI",
 
   /**
    * Pediatric gastroenterology clinic
    */
-  Pediatricgastroenterologyclinic: "PEDGI",
+  PEDGI: "PEDGI",
 
   /**
    * General internal medicine clinic
    */
-  Generalinternalmedicineclinic: "GIM",
+  GIM: "GIM",
 
   /**
    * Gynecology clinic
    */
-  Gynecologyclinic: "GYN",
+  GYN: "GYN",
 
   /**
    * Hematology clinic
    */
-  Hematologyclinic: "HEM",
+  HEM: "HEM",
 
   /**
    * Pediatric hematology clinic
    */
-  Pediatrichematologyclinic: "PEDHEM",
+  PEDHEM: "PEDHEM",
 
   /**
    * Hypertension clinic
    */
-  Hypertensionclinic: "HTN",
+  HTN: "HTN",
 
   /**
    * Impairment evaluation center
    */
-  Impairmentevaluationcenter: "IEC",
+  IEC: "IEC",
 
   /**
    * Infectious disease clinic
    */
-  Infectiousdiseaseclinic: "INFD",
+  INFD: "INFD",
 
   /**
    * Pediatric infectious disease clinic
    */
-  Pediatricinfectiousdiseaseclinic: "PEDID",
+  PEDID: "PEDID",
 
   /**
    * Infertility clinic
    */
-  Infertilityclinic: "INV",
+  INV: "INV",
 
   /**
    * Lympedema clinic
    */
-  Lympedemaclinic: "LYMPH",
+  LYMPH: "LYMPH",
 
   /**
    * Medical genetics clinic
    */
-  Medicalgeneticsclinic: "MGEN",
+  MGEN: "MGEN",
 
   /**
    * Nephrology clinic
    */
-  Nephrologyclinic: "NEPH",
+  NEPH: "NEPH",
 
   /**
    * Pediatric nephrology clinic
    */
-  Pediatricnephrologyclinic: "PEDNEPH",
+  PEDNEPH: "PEDNEPH",
 
   /**
    * Neurology clinic
    */
-  Neurologyclinic: "NEUR",
+  NEUR: "NEUR",
 
   /**
    * Obstetrics clinic
    */
-  Obstetricsclinic: "OB",
+  OB: "OB",
 
   /**
    * Oral and maxillofacial surgery clinic
    */
-  Oralandmaxillofacialsurgeryclinic: "OMS",
+  OMS: "OMS",
 
   /**
    * Medical oncology clinic
    */
-  Medicaloncologyclinic: "ONCL",
+  ONCL: "ONCL",
 
   /**
    * Pediatric oncology clinic
    */
-  Pediatriconcologyclinic: "PEDHO",
+  PEDHO: "PEDHO",
 
   /**
    * Opthalmology clinic
    */
-  Opthalmologyclinic: "OPH",
+  OPH: "OPH",
 
   /**
    * optometry clinic
    */
-  optometryclinic: "OPTC",
+  OPTC: "OPTC",
 
   /**
    * Orthopedics clinic
    */
-  Orthopedicsclinic: "ORTHO",
+  ORTHO: "ORTHO",
 
   /**
    * Hand clinic
    */
-  Handclinic: "HAND",
+  HAND: "HAND",
 
   /**
    * Pain clinic
    */
-  Painclinic: "PAINCL",
+  PAINCL: "PAINCL",
 
   /**
    * Primary care clinic
    */
-  Primarycareclinic: "PC",
+  PC: "PC",
 
   /**
    * Pediatrics clinic
    */
-  Pediatricsclinic: "PEDC",
+  PEDC: "PEDC",
 
   /**
    * Pediatric rheumatology clinic
    */
-  Pediatricrheumatologyclinic: "PEDRHEUM",
+  PEDRHEUM: "PEDRHEUM",
 
   /**
    * Podiatry clinic
    */
-  Podiatryclinic: "POD",
+  POD: "POD",
 
   /**
    * Preventive medicine clinic
    */
-  Preventivemedicineclinic: "PREV",
+  PREV: "PREV",
 
   /**
    * Proctology clinic
    */
-  Proctologyclinic: "PROCTO",
+  PROCTO: "PROCTO",
 
   /**
    * Provider's Office
    */
-  ProvidersOffice: "PROFF",
+  PROFF: "PROFF",
 
   /**
    * Prosthodontics clinic
    */
-  Prosthodonticsclinic: "PROS",
+  PROS: "PROS",
 
   /**
    * Psychology clinic
    */
-  Psychologyclinic: "PSI",
+  PSI: "PSI",
 
   /**
    * Psychiatry clinic
    */
-  Psychiatryclinic: "PSY",
+  PSY: "PSY",
 
   /**
    * Rheumatology clinic
    */
-  Rheumatologyclinic: "RHEUM",
+  RHEUM: "RHEUM",
 
   /**
    * Sports medicine clinic
    */
-  Sportsmedicineclinic: "SPMED",
+  SPMED: "SPMED",
 
   /**
    * Surgery clinic
    */
-  Surgeryclinic: "SU",
+  SU: "SU",
 
   /**
    * Plastic surgery clinic
    */
-  Plasticsurgeryclinic: "PLS",
+  PLS: "PLS",
 
   /**
    * Urology clinic
    */
-  Urologyclinic: "URO",
+  URO: "URO",
 
   /**
    * Transplant clinic
    */
-  Transplantclinic: "TR",
+  TR: "TR",
 
   /**
    * Travel and geographic medicine clinic
    */
-  Travelandgeographicmedicineclinic: "TRAVEL",
+  TRAVEL: "TRAVEL",
 
   /**
    * Wound clinic
    */
-  Woundclinic: "WND",
+  WND: "WND",
 
   /**
    * Residential treatment facility
    */
-  Residentialtreatmentfacility: "RTF",
+  RTF: "RTF",
 
   /**
    * Pain rehabilitation center
    */
-  Painrehabilitationcenter: "PRC",
+  PRC: "PRC",
 
   /**
    * Substance use rehabilitation facility
    */
-  Substanceuserehabilitationfacility: "SURF",
+  SURF: "SURF",
 
   /**
    * DedicatedNonClinicalLocationRoleType
    */
-  DedicatedNonClinicalLocationRoleType: "_DedicatedNonClinicalLocationRoleType",
+  _DedicatedNonClinicalLocationRoleType:
+    "_DedicatedNonClinicalLocationRoleType",
 
   /**
    * Delivery Address
    */
-  DeliveryAddress: "DADDR",
+  DADDR: "DADDR",
 
   /**
    * Mobile Unit
    */
-  MobileUnit: "MOBL",
+  MOBL: "MOBL",
 
   /**
    * Ambulance
    */
-  Ambulance: "AMB",
+  AMB: "AMB",
 
   /**
    * Pharmacy
    */
-  Pharmacy: "PHARM",
+  PHARM: "PHARM",
 
   /**
    * IncidentalServiceDeliveryLocationRoleType
    */
-  IncidentalServiceDeliveryLocationRoleType:
+  _IncidentalServiceDeliveryLocationRoleType:
     "_IncidentalServiceDeliveryLocationRoleType",
 
   /**
    * accident site
    */
-  accidentsite: "ACC",
+  ACC: "ACC",
 
   /**
    * Community Location
    */
-  CommunityLocation: "COMM",
+  COMM: "COMM",
 
   /**
    * community service center
    */
-  communityservicecenter: "CSC",
+  CSC: "CSC",
 
   /**
    * Patient's Residence
    */
-  PatientsResidence: "PTRES",
+  PTRES: "PTRES",
 
   /**
    * school
    */
-  school: "SCHOOL",
+  SCHOOL: "SCHOOL",
 
   /**
    * underage protection center
    */
-  underageprotectioncenter: "UPC",
+  UPC: "UPC",
 
   /**
    * work site
    */
-  worksite: "WORK",
+  WORK: "WORK",
 
   /**
    * SpecimenRoleType
    */
-  SpecimenRoleType: "_SpecimenRoleType",
+  _SpecimenRoleType: "_SpecimenRoleType",
 
   /**
    * Calibrator
    */
-  Calibrator: "C",
+  C: "C",
 
   /**
    * Group
    */
-  Group: "G",
+  G: "G",
 
   /**
    * Pool
    */
-  Pool: "L",
+  L: "L",
 
   /**
    * Patient
    */
-  Patient: "P",
+  P: "P",
 
   /**
    * Quality Control
    */
-  QualityControl: "Q",
+  Q: "Q",
 
   /**
    * Blind
    */
-  Blind: "B",
+  B: "B",
 
   /**
    * Electronic QC
    */
-  ElectronicQC: "E",
+  E: "E",
 
   /**
    * Filler Proficiency
    */
-  FillerProficiency: "F",
+  F: "F",
 
   /**
    * Operator Proficiency
    */
-  OperatorProficiency: "O",
+  O: "O",
 
   /**
    * Verifying
    */
-  Verifying: "V",
+  V: "V",
 
   /**
    * Replicate
    */
-  Replicate: "R",
+  R: "R",
 
   /**
    * claimant
    */
-  claimant: "CLAIM",
+  CLAIM: "CLAIM",
 
   /**
    * Community Laboratory
    */
-  CommunityLaboratory: "communityLaboratory",
+  communityLaboratory: "communityLaboratory",
 
   /**
    * Guarantor
    */
-  Guarantor: "GT",
+  GT: "GT",
 
   /**
    * Home Health
    */
-  HomeHealth: "homeHealth",
+  homeHealth: "homeHealth",
 
   /**
    * Laboratory
    */
-  Laboratory: "laboratory",
+  laboratory: "laboratory",
 
   /**
    * Pathologist
    */
-  Pathologist: "pathologist",
+  pathologist: "pathologist",
 
   /**
    * Policy Holder
    */
-  PolicyHolder: "PH",
+  PH: "PH",
 
   /**
    * Phlebotomist
    */
-  Phlebotomist: "phlebotomist",
+  phlebotomist: "phlebotomist",
 
   /**
    * program eligible
    */
-  programeligible: "PROG",
+  PROG: "PROG",
 
   /**
    * Patient
    */
-  Patient: "PT",
+  PT: "PT",
 
   /**
    * Self
    */
-  Self: "subject",
+  subject: "subject",
 
   /**
    * Third Party
    */
-  ThirdParty: "thirdParty",
+  thirdParty: "thirdParty",
 
   /**
    * AdministrativeLocationRoleType
    */
-  AdministrativeLocationRoleType: "_AdministrativeLocationRoleType",
+  _AdministrativeLocationRoleType: "_AdministrativeLocationRoleType",
 
   /**
    * ClinicalOrganizationRoleType
    */
-  ClinicalOrganizationRoleType: "_ClinicalOrganizationRoleType",
+  _ClinicalOrganizationRoleType: "_ClinicalOrganizationRoleType",
 
   /**
    * CommissioningPartyRoleType
    */
-  CommissioningPartyRoleType: "_CommissioningPartyRoleType",
+  _CommissioningPartyRoleType: "_CommissioningPartyRoleType",
 
   /**
    * DeviceOperatorType
    */
-  DeviceOperatorType: "_DeviceOperatorType",
+  _DeviceOperatorType: "_DeviceOperatorType",
 
   /**
    * EmployeeRoleType
    */
-  EmployeeRoleType: "_EmployeeRoleType",
+  _EmployeeRoleType: "_EmployeeRoleType",
 
   /**
    * HealthcareProviderRoleType
    */
-  HealthcareProviderRoleType: "_HealthcareProviderRoleType",
+  _HealthcareProviderRoleType: "_HealthcareProviderRoleType",
 
   /**
    * LicensedRoleType
    */
-  LicensedRoleType: "_LicensedRoleType",
+  _LicensedRoleType: "_LicensedRoleType",
 
   /**
    * NDCRelatedDrugEntityType
    */
-  NDCRelatedDrugEntityType: "_NDCRelatedDrugEntityType",
+  _NDCRelatedDrugEntityType: "_NDCRelatedDrugEntityType",
 
   /**
    * OrganizationPartRoleType
    */
-  OrganizationPartRoleType: "_OrganizationPartRoleType",
+  _OrganizationPartRoleType: "_OrganizationPartRoleType",
 
   /**
    * ProductProcessingOrganizationRoleType
    */
-  ProductProcessingOrganizationRoleType:
+  _ProductProcessingOrganizationRoleType:
     "_ProductProcessingOrganizationRoleType",
 
   /**
    * ProductSafetyReportPartyRoleType
    */
-  ProductSafetyReportPartyRoleType: "_ProductSafetyReportPartyRoleType",
+  _ProductSafetyReportPartyRoleType: "_ProductSafetyReportPartyRoleType",
 
   /**
    * QualifiedRoleType
    */
-  QualifiedRoleType: "_QualifiedRoleType",
+  _QualifiedRoleType: "_QualifiedRoleType",
 
   /**
    *
@@ -2056,22 +2046,22 @@ export const ContactRoleTypeCode = {
   /**
    * dependent
    */
-  dependent: "DEPEN",
+  DEPEN: "DEPEN",
 
   /**
    * Family Member
    */
-  FamilyMember: "FM",
+  FM: "FM",
 
   /**
    * individual
    */
-  individual: "INDIV",
+  INDIV: "INDIV",
 
   /**
    * named insured
    */
-  namedinsured: "NAMED",
+  NAMED: "NAMED",
 
   /**
    *
@@ -2081,7 +2071,7 @@ export const ContactRoleTypeCode = {
   /**
    * subscriber
    */
-  subscriber: "SUBSCR",
+  SUBSCR: "SUBSCR",
 } as const;
 
 /**

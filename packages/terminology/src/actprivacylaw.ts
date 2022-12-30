@@ -6,17 +6,17 @@ export const ActPrivacyLawCode = {
   /**
    * ActPrivacyLaw
    */
-  ActPrivacyLaw: "_ActPrivacyLaw",
+  _ActPrivacyLaw: "_ActPrivacyLaw",
 
   /**
    * General Data Protection Regulation
    */
-  GeneralDataProtectionRegulation: "_ActGDPRPrivacyLaw",
+  _ActGDPRPrivacyLaw: "_ActGDPRPrivacyLaw",
 
   /**
    * GDPR Consent
    */
-  GDPRConsent: "GDPRCONSENT",
+  GDPRCONSENT: "GDPRCONSENT",
 
   /**
    * _ActUSPrivacyLaw
@@ -26,7 +26,7 @@ export const ActPrivacyLawCode = {
   /**
    * 42 CFR Part2
    */
-  FortyTwoCFRPart2: "42CFRPart2",
+  "42CFRPart2": "42CFRPart2",
 
   /**
    * Common Rule
@@ -36,7 +36,7 @@ export const ActPrivacyLawCode = {
   /**
    * HIPAA Authorization for Disclosure
    */
-  HIPAAAuthorizationforDisclosure: "HIPAAAuth",
+  HIPAAAuth: "HIPAAAuth",
 
   /**
    * HIPAA Consent
@@ -46,22 +46,22 @@ export const ActPrivacyLawCode = {
   /**
    * HIPAA notice of privacy practices
    */
-  HIPAAnoticeofprivacypractices: "HIPAANOPP",
+  HIPAANOPP: "HIPAANOPP",
 
   /**
    * HIPAA psychotherapy notes
    */
-  HIPAApsychotherapynotes: "HIPAAPsyNotes",
+  HIPAAPsyNotes: "HIPAAPsyNotes",
 
   /**
    * HIPAA Right of Access
    */
-  HIPAARightofAccess: "HIPAAROA",
+  HIPAAROA: "HIPAAROA",
 
   /**
    * HIPAA self-pay
    */
-  HIPAAselfpay: "HIPAASelfPay",
+  HIPAASelfPay: "HIPAASelfPay",
 
   /**
    * Title 38 Section 7332
@@ -71,7 +71,7 @@ export const ActPrivacyLawCode = {
   /**
    * HIPAA Consent
    */
-  HIPAAConsent: "a) HIPAAConsent",
+  "a) HIPAAConsent": "a) HIPAAConsent",
 } as const;
 
 /**

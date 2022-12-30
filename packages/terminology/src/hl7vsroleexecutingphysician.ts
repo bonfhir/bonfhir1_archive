@@ -6,17 +6,17 @@ export const Hl7VSRoleExecutingPhysicianCode = {
   /**
    * Technical Part
    */
-  TechnicalPart: "T",
+  T: "T",
 
   /**
    * Professional Part
    */
-  ProfessionalPart: "P",
+  P: "P",
 
   /**
    * Both
    */
-  Both: "B",
+  B: "B",
 } as const;
 
 /**

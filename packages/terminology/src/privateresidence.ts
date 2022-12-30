@@ -6,22 +6,22 @@ export const PrivateResidenceCode = {
   /**
    * private residence
    */
-  privateresidence: "PR",
+  PR: "PR",
 
   /**
    * Independent Household
    */
-  IndependentHousehold: "H",
+  H: "H",
 
   /**
    * Retirement Community
    */
-  RetirementCommunity: "R",
+  R: "R",
 
   /**
    * supported living
    */
-  supportedliving: "SL",
+  SL: "SL",
 } as const;
 
 /**

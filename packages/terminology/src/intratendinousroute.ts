@@ -6,7 +6,7 @@ export const IntratendinousRouteCode = {
   /**
    * Injection, intratendinous
    */
-  Injectionintratendinous: "ITENDINJ",
+  ITENDINJ: "ITENDINJ",
 } as const;
 
 /**

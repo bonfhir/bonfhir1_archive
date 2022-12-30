@@ -6,17 +6,17 @@ export const StepParentCode = {
   /**
    * step parent
    */
-  stepparent: "STPPRN",
+  STPPRN: "STPPRN",
 
   /**
    * stepfather
    */
-  stepfather: "STPFTH",
+  STPFTH: "STPFTH",
 
   /**
    * stepmother
    */
-  stepmother: "STPMTH",
+  STPMTH: "STPMTH",
 } as const;
 
 /**

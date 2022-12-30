@@ -6,7 +6,7 @@ export const ActRelationshipSchedulesRequestCode = {
   /**
    * schedules request
    */
-  schedulesrequest: "SCH",
+  SCH: "SCH",
 } as const;
 
 /**

@@ -6,22 +6,22 @@ export const ActInformationTransferCodeCode = {
   /**
    * authorized information transfer
    */
-  authorizedinformationtransfer: "INFAUT",
+  INFAUT: "INFAUT",
 
   /**
    * only on court order
    */
-  onlyoncourtorder: "INFCRT",
+  INFCRT: "INFCRT",
 
   /**
    * only in an emergency
    */
-  onlyinanemergency: "INFEMER",
+  INFEMER: "INFEMER",
 
   /**
    * regulatory information transfer
    */
-  regulatoryinformationtransfer: "INFREG",
+  INFREG: "INFREG",
 } as const;
 
 /**

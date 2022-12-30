@@ -6,12 +6,12 @@ export const RaceAmericanIndianCoushattaCode = {
   /**
    * Coushatta
    */
-  Coushatta: "1186-6",
+  "1186-6": "1186-6",
 
   /**
    * Alabama Coushatta
    */
-  AlabamaCoushatta: "1187-4",
+  "1187-4": "1187-4",
 } as const;
 
 /**

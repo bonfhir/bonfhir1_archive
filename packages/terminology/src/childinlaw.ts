@@ -6,17 +6,17 @@ export const ChildInLawCode = {
   /**
    * child-in-law
    */
-  childinlaw: "CHLDINLAW",
+  CHLDINLAW: "CHLDINLAW",
 
   /**
    * daughter in-law
    */
-  daughterinlaw: "DAUINLAW",
+  DAUINLAW: "DAUINLAW",
 
   /**
    * son in-law
    */
-  soninlaw: "SONINLAW",
+  SONINLAW: "SONINLAW",
 } as const;
 
 /**

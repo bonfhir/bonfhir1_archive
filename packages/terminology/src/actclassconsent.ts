@@ -12,7 +12,7 @@ export const ActClassConsentCode = {
   /**
    * consent
    */
-  consent: "CONS",
+  CONS: "CONS",
 } as const;
 
 /**

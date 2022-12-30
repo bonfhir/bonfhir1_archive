@@ -6,17 +6,17 @@ export const Hl7VSPurgeStatusCode = {
   /**
    * Marked for purge.  User is no longer able to update the visit.
    */
-  MarkedforpurgeUserisnolongerabletoupdatethevisit: "P",
+  P: "P",
 
   /**
    * The visit is marked for deletion and the user cannot enter new data against it.
    */
-  Thevisitismarkedfordeletionandtheusercannotenternewdataagainstit: "D",
+  D: "D",
 
   /**
    * The visit is marked inactive and the user cannot enter new data against it.
    */
-  Thevisitismarkedinactiveandtheusercannotenternewdataagainstit: "I",
+  I: "I",
 } as const;
 
 /**

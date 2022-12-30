@@ -6,17 +6,17 @@ export const Hl7VSStatusRespirationMinutesCode = {
   /**
    * Respiration minutes not used for grouping
    */
-  Respirationminutesnotusedforgrouping: "0",
+  "0": "0",
 
   /**
    * Listed respiration minutes used for grouping
    */
-  Listedrespirationminutesusedforgrouping: "1",
+  "1": "1",
 
   /**
    * OPS code value used for grouping
    */
-  OPScodevalueusedforgrouping: "2",
+  "2": "2",
 } as const;
 
 /**

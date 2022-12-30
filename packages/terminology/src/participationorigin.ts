@@ -6,7 +6,7 @@ export const ParticipationOriginCode = {
   /**
    * origin
    */
-  origin: "ORG",
+  ORG: "ORG",
 } as const;
 
 /**

@@ -6,87 +6,87 @@ export const NonDrugAgentEntityCode = {
   /**
    * egg
    */
-  egg: "NDA01",
+  NDA01: "NDA01",
 
   /**
    * fish
    */
-  fish: "NDA02",
+  NDA02: "NDA02",
 
   /**
    * lactose
    */
-  lactose: "NDA03",
+  NDA03: "NDA03",
 
   /**
    * peanut
    */
-  peanut: "NDA04",
+  NDA04: "NDA04",
 
   /**
    * soy
    */
-  soy: "NDA05",
+  NDA05: "NDA05",
 
   /**
    * sulfites
    */
-  sulfites: "NDA06",
+  NDA06: "NDA06",
 
   /**
    * wheat or gluten
    */
-  wheatorgluten: "NDA07",
+  NDA07: "NDA07",
 
   /**
    * isocyanates
    */
-  isocyanates: "NDA08",
+  NDA08: "NDA08",
 
   /**
    * solvents
    */
-  solvents: "NDA09",
+  NDA09: "NDA09",
 
   /**
    * oils
    */
-  oils: "NDA10",
+  NDA10: "NDA10",
 
   /**
    * venoms
    */
-  venoms: "NDA11",
+  NDA11: "NDA11",
 
   /**
    * latex
    */
-  latex: "NDA12",
+  NDA12: "NDA12",
 
   /**
    * shellfish
    */
-  shellfish: "NDA13",
+  NDA13: "NDA13",
 
   /**
    * strawberries
    */
-  strawberries: "NDA14",
+  NDA14: "NDA14",
 
   /**
    * tomatoes
    */
-  tomatoes: "NDA15",
+  NDA15: "NDA15",
 
   /**
    * dust
    */
-  dust: "NDA16",
+  NDA16: "NDA16",
 
   /**
    * dust mites
    */
-  dustmites: "NDA17",
+  NDA17: "NDA17",
 } as const;
 
 /**

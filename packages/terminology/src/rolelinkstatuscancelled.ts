@@ -6,7 +6,7 @@ export const RoleLinkStatusCancelledCode = {
   /**
    * cancelled
    */
-  cancelled: "CANCELLED",
+  CANCELLED: "CANCELLED",
 } as const;
 
 /**

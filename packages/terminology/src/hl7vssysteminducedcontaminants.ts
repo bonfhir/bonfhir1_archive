@@ -6,7 +6,7 @@ export const Hl7VSSystemInducedContaminantsCode = {
   /**
    * Present, type of contamination unspecified
    */
-  Presenttypeofcontaminationunspecified: "CNTM",
+  CNTM: "CNTM",
 } as const;
 
 /**

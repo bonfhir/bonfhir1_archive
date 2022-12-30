@@ -6,22 +6,22 @@ export const SubstitutionConditionCode = {
   /**
    * No substitution
    */
-  Nosubstitution: "NOSUB",
+  NOSUB: "NOSUB",
 
   /**
    * Unconditional
    */
-  Unconditional: "UNCOND",
+  UNCOND: "UNCOND",
 
   /**
    * Confirm first
    */
-  Confirmfirst: "CONFIRM",
+  CONFIRM: "CONFIRM",
 
   /**
    * Notify first
    */
-  Notifyfirst: "NOTIFY",
+  NOTIFY: "NOTIFY",
 } as const;
 
 /**

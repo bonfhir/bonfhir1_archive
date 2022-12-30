@@ -6,7 +6,7 @@ export const IntralymphaticRouteCode = {
   /**
    * Injection, intralymphatic
    */
-  Injectionintralymphatic: "ILYMPJINJ",
+  ILYMPJINJ: "ILYMPJINJ",
 } as const;
 
 /**

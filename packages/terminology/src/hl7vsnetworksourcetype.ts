@@ -6,12 +6,12 @@ export const Hl7VSNetworkSourceTypeCode = {
   /**
    * Initiate
    */
-  Initiate: "I",
+  I: "I",
 
   /**
    * Accept
    */
-  Accept: "A",
+  A: "A",
 } as const;
 
 /**

@@ -6,17 +6,17 @@ export const Hl7VSDiagnosisTypeCode = {
   /**
    * Admitting
    */
-  Admitting: "A",
+  A: "A",
 
   /**
    * Working
    */
-  Working: "W",
+  W: "W",
 
   /**
    * Final
    */
-  Final: "F",
+  F: "F",
 } as const;
 
 /**

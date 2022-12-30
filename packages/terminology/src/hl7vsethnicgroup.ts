@@ -6,17 +6,17 @@ export const Hl7VSEthnicGroupCode = {
   /**
    * Hispanic or Latino
    */
-  HispanicorLatino: "H",
+  H: "H",
 
   /**
    * Not Hispanic or Latino
    */
-  NotHispanicorLatino: "N",
+  N: "N",
 
   /**
    * Unknown
    */
-  Unknown: "U",
+  U: "U",
 } as const;
 
 /**

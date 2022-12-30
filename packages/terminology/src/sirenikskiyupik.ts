@@ -6,17 +6,17 @@ export const SirenikskiYupikCode = {
   /**
    * Pacific Yupik Gulf
    */
-  PacificYupikGulf: "x-EMS",
+  "x-EMS": "x-EMS",
 
   /**
    * Central Siberian Yupik
    */
-  CentralSiberianYupik: "x-ESS",
+  "x-ESS": "x-ESS",
 
   /**
    * Central Alaskan Yupik
    */
-  CentralAlaskanYupik: "x-ESU",
+  "x-ESU": "x-ESU",
 } as const;
 
 /**

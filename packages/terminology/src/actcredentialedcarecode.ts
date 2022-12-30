@@ -8,403 +8,404 @@ export const ActCredentialedCareCodeCode = {
   /**
    * act credentialed care
    */
-  actcredentialedcare: "_ActCredentialedCareCode",
+  _ActCredentialedCareCode: "_ActCredentialedCareCode",
 
   /**
    * act credentialed care provision peron
    */
-  actcredentialedcareprovisionperon: "_ActCredentialedCareProvisionPersonCode",
+  _ActCredentialedCareProvisionPersonCode:
+    "_ActCredentialedCareProvisionPersonCode",
 
   /**
    * certified anatomic pathology and clinical pathology care
    */
-  certifiedanatomicpathologyandclinicalpathologycare: "CACC",
+  CACC: "CACC",
 
   /**
    * certified allergy and immunology care
    */
-  certifiedallergyandimmunologycare: "CAIC",
+  CAIC: "CAIC",
 
   /**
    * certified aerospace medicine care
    */
-  certifiedaerospacemedicinecare: "CAMC",
+  CAMC: "CAMC",
 
   /**
    * certified anesthesiology care
    */
-  certifiedanesthesiologycare: "CANC",
+  CANC: "CANC",
 
   /**
    * certified anatomic pathology care
    */
-  certifiedanatomicpathologycare: "CAPC",
+  CAPC: "CAPC",
 
   /**
    * certified clinical biochemical genetics care
    */
-  certifiedclinicalbiochemicalgeneticscare: "CBGC",
+  CBGC: "CBGC",
 
   /**
    * certified clinical cytogenetics care
    */
-  certifiedclinicalcytogeneticscare: "CCCC",
+  CCCC: "CCCC",
 
   /**
    * certified clinical genetics (M.D.) care
    */
-  certifiedclinicalgeneticsMDcare: "CCGC",
+  CCGC: "CCGC",
 
   /**
    * certified clinical pathology care
    */
-  certifiedclinicalpathologycare: "CCPC",
+  CCPC: "CCPC",
 
   /**
    * certified colon and rectal surgery care
    */
-  certifiedcolonandrectalsurgerycare: "CCSC",
+  CCSC: "CCSC",
 
   /**
    * certified dermatology care
    */
-  certifieddermatologycare: "CDEC",
+  CDEC: "CDEC",
 
   /**
    * certified diagnostic radiology care
    */
-  certifieddiagnosticradiologycare: "CDRC",
+  CDRC: "CDRC",
 
   /**
    * certified emergency medicine care
    */
-  certifiedemergencymedicinecare: "CEMC",
+  CEMC: "CEMC",
 
   /**
    * certified family practice care
    */
-  certifiedfamilypracticecare: "CFPC",
+  CFPC: "CFPC",
 
   /**
    * certified internal medicine care
    */
-  certifiedinternalmedicinecare: "CIMC",
+  CIMC: "CIMC",
 
   /**
    * certified clinical molecular genetics care
    */
-  certifiedclinicalmoleculargeneticscare: "CMGC",
+  CMGC: "CMGC",
 
   /**
    * certified neurology care
    */
-  certifiedneurologycare: "CNEC",
+  CNEC: "CNEC",
 
   /**
    * certified nuclear medicine care
    */
-  certifiednuclearmedicinecare: "CNMC",
+  CNMC: "CNMC",
 
   /**
    * certified neurology with special qualifications in child neurology care
    */
-  certifiedneurologywithspecialqualificationsinchildneurologycare: "CNQC",
+  CNQC: "CNQC",
 
   /**
    * certified neurological surgery care
    */
-  certifiedneurologicalsurgerycare: "CNSC",
+  CNSC: "CNSC",
 
   /**
    * certified obstetrics and gynecology care
    */
-  certifiedobstetricsandgynecologycare: "COGC",
+  COGC: "COGC",
 
   /**
    * certified occupational medicine care
    */
-  certifiedoccupationalmedicinecare: "COMC",
+  COMC: "COMC",
 
   /**
    * certified ophthalmology care
    */
-  certifiedophthalmologycare: "COPC",
+  COPC: "COPC",
 
   /**
    * certified orthopaedic surgery care
    */
-  certifiedorthopaedicsurgerycare: "COSC",
+  COSC: "COSC",
 
   /**
    * certified otolaryngology care
    */
-  certifiedotolaryngologycare: "COTC",
+  COTC: "COTC",
 
   /**
    * certified pediatrics care
    */
-  certifiedpediatricscare: "CPEC",
+  CPEC: "CPEC",
 
   /**
    * certified Ph.D. medical genetics care
    */
-  certifiedPhDmedicalgeneticscare: "CPGC",
+  CPGC: "CPGC",
 
   /**
    * certified public health and general preventive medicine care
    */
-  certifiedpublichealthandgeneralpreventivemedicinecare: "CPHC",
+  CPHC: "CPHC",
 
   /**
    * certified physical medicine and rehabilitation care
    */
-  certifiedphysicalmedicineandrehabilitationcare: "CPRC",
+  CPRC: "CPRC",
 
   /**
    * certified plastic surgery care
    */
-  certifiedplasticsurgerycare: "CPSC",
+  CPSC: "CPSC",
 
   /**
    * certified psychiatry care
    */
-  certifiedpsychiatrycare: "CPYC",
+  CPYC: "CPYC",
 
   /**
    * certified radiation oncology care
    */
-  certifiedradiationoncologycare: "CROC",
+  CROC: "CROC",
 
   /**
    * certified radiological physics care
    */
-  certifiedradiologicalphysicscare: "CRPC",
+  CRPC: "CRPC",
 
   /**
    * certified surgery care
    */
-  certifiedsurgerycare: "CSUC",
+  CSUC: "CSUC",
 
   /**
    * certified thoracic surgery care
    */
-  certifiedthoracicsurgerycare: "CTSC",
+  CTSC: "CTSC",
 
   /**
    * certified urology care
    */
-  certifiedurologycare: "CURC",
+  CURC: "CURC",
 
   /**
    * certified vascular surgery care
    */
-  certifiedvascularsurgerycare: "CVSC",
+  CVSC: "CVSC",
 
   /**
    * licensed general physician care
    */
-  licensedgeneralphysiciancare: "LGPC",
+  LGPC: "LGPC",
 
   /**
    * act credentialed care provision program
    */
-  actcredentialedcareprovisionprogram:
+  _ActCredentialedCareProvisionProgramCode:
     "_ActCredentialedCareProvisionProgramCode",
 
   /**
    * accredited assisted living care
    */
-  accreditedassistedlivingcare: "AALC",
+  AALC: "AALC",
 
   /**
    * accredited ambulatory care
    */
-  accreditedambulatorycare: "AAMC",
+  AAMC: "AAMC",
 
   /**
    * accredited behavioral health care
    */
-  accreditedbehavioralhealthcare: "ABHC",
+  ABHC: "ABHC",
 
   /**
    * accredited critical access hospital care
    */
-  accreditedcriticalaccesshospitalcare: "ACAC",
+  ACAC: "ACAC",
 
   /**
    * accredited hospital care
    */
-  accreditedhospitalcare: "ACHC",
+  ACHC: "ACHC",
 
   /**
    * accredited home care
    */
-  accreditedhomecare: "AHOC",
+  AHOC: "AHOC",
 
   /**
    * accredited long term care
    */
-  accreditedlongtermcare: "ALTC",
+  ALTC: "ALTC",
 
   /**
    * accredited office-based surgery care
    */
-  accreditedofficebasedsurgerycare: "AOSC",
+  AOSC: "AOSC",
 
   /**
    * certified acute coronary syndrome care
    */
-  certifiedacutecoronarysyndromecare: "CACS",
+  CACS: "CACS",
 
   /**
    * certified acute myocardial infarction care
    */
-  certifiedacutemyocardialinfarctioncare: "CAMI",
+  CAMI: "CAMI",
 
   /**
    * certified asthma care
    */
-  certifiedasthmacare: "CAST",
+  CAST: "CAST",
 
   /**
    * certified bariatric surgery care
    */
-  certifiedbariatricsurgerycare: "CBAR",
+  CBAR: "CBAR",
 
   /**
    * certified coronary artery disease care
    */
-  certifiedcoronaryarterydiseasecare: "CCAD",
+  CCAD: "CCAD",
 
   /**
    * certified cardiac care
    */
-  certifiedcardiaccare: "CCAR",
+  CCAR: "CCAR",
 
   /**
    * certified depression care
    */
-  certifieddepressioncare: "CDEP",
+  CDEP: "CDEP",
 
   /**
    * certified digestive/gastrointestinal disorders care
    */
-  certifieddigestivegastrointestinaldisorderscare: "CDGD",
+  CDGD: "CDGD",
 
   /**
    * certified diabetes care
    */
-  certifieddiabetescare: "CDIA",
+  CDIA: "CDIA",
 
   /**
    * certified epilepsy care
    */
-  certifiedepilepsycare: "CEPI",
+  CEPI: "CEPI",
 
   /**
    * certified frail elderly care
    */
-  certifiedfrailelderlycare: "CFEL",
+  CFEL: "CFEL",
 
   /**
    * certified heart failure care
    */
-  certifiedheartfailurecare: "CHFC",
+  CHFC: "CHFC",
 
   /**
    * certified high risk obstetrics care
    */
-  certifiedhighriskobstetricscare: "CHRO",
+  CHRO: "CHRO",
 
   /**
    * certified hyperlipidemia care
    */
-  certifiedhyperlipidemiacare: "CHYP",
+  CHYP: "CHYP",
 
   /**
    * certified migraine headache care
    */
-  certifiedmigraineheadachecare: "CMIH",
+  CMIH: "CMIH",
 
   /**
    * certified multiple sclerosis care
    */
-  certifiedmultiplesclerosiscare: "CMSC",
+  CMSC: "CMSC",
 
   /**
    * certified orthopedic joint replacement care
    */
-  certifiedorthopedicjointreplacementcare: "COJR",
+  COJR: "COJR",
 
   /**
    * certified oncology care
    */
-  certifiedoncologycare: "CONC",
+  CONC: "CONC",
 
   /**
    * certified chronic obstructive pulmonary disease care
    */
-  certifiedchronicobstructivepulmonarydiseasecare: "COPD",
+  COPD: "COPD",
 
   /**
    * certified organ transplant care
    */
-  certifiedorgantransplantcare: "CORT",
+  CORT: "CORT",
 
   /**
    * certified parkinsons disease care
    */
-  certifiedparkinsonsdiseasecare: "CPAD",
+  CPAD: "CPAD",
 
   /**
    * certified pneumonia disease care
    */
-  certifiedpneumoniadiseasecare: "CPND",
+  CPND: "CPND",
 
   /**
    * certified primary stroke center care
    */
-  certifiedprimarystrokecentercare: "CPST",
+  CPST: "CPST",
 
   /**
    * certified stroke disease management care
    */
-  certifiedstrokediseasemanagementcare: "CSDM",
+  CSDM: "CSDM",
 
   /**
    * certified sickle cell care
    */
-  certifiedsicklecellcare: "CSIC",
+  CSIC: "CSIC",
 
   /**
    * certified sleep disorders care
    */
-  certifiedsleepdisorderscare: "CSLD",
+  CSLD: "CSLD",
 
   /**
    * certified spine treatment care
    */
-  certifiedspinetreatmentcare: "CSPT",
+  CSPT: "CSPT",
 
   /**
    * certified trauma/burn center care
    */
-  certifiedtraumaburncentercare: "CTBU",
+  CTBU: "CTBU",
 
   /**
    * certified vascular diseases care
    */
-  certifiedvasculardiseasescare: "CVDC",
+  CVDC: "CVDC",
 
   /**
    * certified wound management care
    */
-  certifiedwoundmanagementcare: "CWMA",
+  CWMA: "CWMA",
 
   /**
    * certified women's health care
    */
-  certifiedwomenshealthcare: "CWOH",
+  CWOH: "CWOH",
 } as const;
 
 /**

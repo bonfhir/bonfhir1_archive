@@ -6,52 +6,52 @@ export const InsurancePlanTypeCode = {
   /**
    * Medical
    */
-  Medical: "medical",
+  medical: "medical",
 
   /**
    * Dental
    */
-  Dental: "dental",
+  dental: "dental",
 
   /**
    * Mental Health
    */
-  MentalHealth: "mental",
+  mental: "mental",
 
   /**
    * Substance Abuse
    */
-  SubstanceAbuse: "subst-ab",
+  "subst-ab": "subst-ab",
 
   /**
    * Vision
    */
-  Vision: "vision",
+  vision: "vision",
 
   /**
    * Drug
    */
-  Drug: "drug",
+  drug: "drug",
 
   /**
    * Short Term
    */
-  ShortTerm: "short-term",
+  "short-term": "short-term",
 
   /**
    * Long Term Care
    */
-  LongTermCare: "long-term",
+  "long-term": "long-term",
 
   /**
    * Hospice
    */
-  Hospice: "hospice",
+  hospice: "hospice",
 
   /**
    * Home Health
    */
-  HomeHealth: "home",
+  home: "home",
 
   /**
    * Drug

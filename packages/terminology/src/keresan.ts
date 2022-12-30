@@ -6,12 +6,12 @@ export const KeresanCode = {
   /**
    * Rio Grande Keresan
    */
-  RioGrandeKeresan: "x-KEE",
+  "x-KEE": "x-KEE",
 
   /**
    * Acoma-Laguna
    */
-  AcomaLaguna: "x-KJQ",
+  "x-KJQ": "x-KJQ",
 } as const;
 
 /**

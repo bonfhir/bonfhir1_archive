@@ -6,22 +6,22 @@ export const TsamosanCode = {
   /**
    * Lower Chehalis
    */
-  LowerChehalis: "x-CEA",
+  "x-CEA": "x-CEA",
 
   /**
    * Upper Chehalis
    */
-  UpperChehalis: "x-CJH",
+  "x-CJH": "x-CJH",
 
   /**
    * Cowlitz
    */
-  Cowlitz: "x-COW",
+  "x-COW": "x-COW",
 
   /**
    * Quinault
    */
-  Quinault: "x-QUN",
+  "x-QUN": "x-QUN",
 } as const;
 
 /**

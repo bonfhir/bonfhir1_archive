@@ -6,27 +6,27 @@ export const Hl7VSSequencingCode = {
   /**
    * Ascending
    */
-  Ascending: "A",
+  A: "A",
 
   /**
    * Ascending, case insensitive
    */
-  Ascendingcaseinsensitive: "AN",
+  AN: "AN",
 
   /**
    * Descending
    */
-  Descending: "D",
+  D: "D",
 
   /**
    * Descending, case insensitive
    */
-  Descendingcaseinsensitive: "DN",
+  DN: "DN",
 
   /**
    * None
    */
-  None: "N",
+  N: "N",
 } as const;
 
 /**

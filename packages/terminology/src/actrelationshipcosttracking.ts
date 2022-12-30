@@ -6,12 +6,12 @@ export const ActRelationshipCostTrackingCode = {
   /**
    * has charge
    */
-  hascharge: "CHRG",
+  CHRG: "CHRG",
 
   /**
    * has cost
    */
-  hascost: "COST",
+  COST: "COST",
 } as const;
 
 /**

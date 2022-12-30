@@ -6,17 +6,17 @@ export const ClaimPayeeTypeCodesCode = {
   /**
    * Subscriber
    */
-  Subscriber: "subscriber",
+  subscriber: "subscriber",
 
   /**
    * Provider
    */
-  Provider: "provider",
+  provider: "provider",
 
   /**
    * Other
    */
-  Other: "other",
+  other: "other",
 } as const;
 
 /**

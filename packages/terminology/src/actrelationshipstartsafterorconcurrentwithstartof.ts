@@ -6,67 +6,67 @@ export const ActRelationshipStartsAfterOrConcurrentWithStartOfCode = {
   /**
    * starts after or concurrent with start of
    */
-  startsafterorconcurrentwithstartof: "SASORSCW",
+  SASORSCW: "SASORSCW",
 
   /**
    * starts after start of
    */
-  startsafterstartof: "SAS",
+  SAS: "SAS",
 
   /**
    * starts after start of, ends after end of
    */
-  startsafterstartofendsafterendof: "SASEAE",
+  SASEAE: "SASEAE",
 
   /**
    * contains end of
    */
-  containsendof: "SBEEAE",
+  SBEEAE: "SBEEAE",
 
   /**
    * start after start of, contains end of
    */
-  startafterstartofcontainsendof: "SASSBEEAS",
+  SASSBEEAS: "SASSBEEAS",
 
   /**
    * contains time of
    */
-  containstimeof: "SBSEAE",
+  SBSEAE: "SBSEAE",
 
   /**
    * starts with, ends after end of
    */
-  startswithendsafterendof: "SCWSEAE",
+  SCWSEAE: "SCWSEAE",
 
   /**
    * starts after end of
    */
-  startsafterendof: "SAE",
+  SAE: "SAE",
 
   /**
    * occurs during
    */
-  occursduring: "DURING",
+  DURING: "DURING",
 
   /**
    * starts after start of, ends with
    */
-  startsafterstartofendswith: "SASECWE",
+  SASECWE: "SASECWE",
 
   /**
    * starts concurrent with
    */
-  startsconcurrentwith: "SCW",
+  SCW: "SCW",
 
   /**
    * concurrent with
    */
-  concurrentwith: "CONCURRENT",
+  CONCURRENT: "CONCURRENT",
 
   /**
    * starts with. ends before end of
    */
-  startswithendsbeforeendof: "SCWSEBE",
+  SCWSEBE: "SCWSEBE",
 } as const;
 
 /**

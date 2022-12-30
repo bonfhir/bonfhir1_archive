@@ -8,7 +8,7 @@ export const RoleClassAffiliateCode = {
   /**
    * affiliate
    */
-  affiliate: "AFFL",
+  AFFL: "AFFL",
 } as const;
 
 /**

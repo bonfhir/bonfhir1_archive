@@ -6,17 +6,17 @@ export const AudioMediaTypeCode = {
   /**
    * Basic Audio
    */
-  BasicAudio: "audio/basic",
+  "audio/basic": "audio/basic",
 
   /**
    * K32ADPCM Audio
    */
-  K32ADPCMAudio: "audio/k32adpcm",
+  "audio/k32adpcm": "audio/k32adpcm",
 
   /**
    * MPEG audio layer 3
    */
-  MPEGaudiolayer3: "audio/mpeg",
+  "audio/mpeg": "audio/mpeg",
 } as const;
 
 /**

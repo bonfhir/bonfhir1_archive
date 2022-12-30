@@ -6,92 +6,92 @@ export const ActRelationshipStartsBeforeEndCode = {
   /**
    * starts before end of
    */
-  startsbeforeendof: "SBE",
+  SBE: "SBE",
 
   /**
    * ends before end of
    */
-  endsbeforeendof: "EBE",
+  EBE: "EBE",
 
   /**
    * starts before start of, ends before end of
    */
-  startsbeforestartofendsbeforeendof: "SBSEBE",
+  SBSEBE: "SBSEBE",
 
   /**
    * contains start of, ends before end of
    */
-  containsstartofendsbeforeendof: "SBSEASEBE",
+  SBSEASEBE: "SBSEASEBE",
 
   /**
    * ends before or concurrent with start of
    */
-  endsbeforeorconcurrentwithstartof: "EBSORECWS",
+  EBSORECWS: "EBSORECWS",
 
   /**
    * ends concurrent with start of
    */
-  endsconcurrentwithstartof: "ECWS",
+  ECWS: "ECWS",
 
   /**
    * ends before start of
    */
-  endsbeforestartof: "EBS",
+  EBS: "EBS",
 
   /**
    * starts with. ends before end of
    */
-  startswithendsbeforeendof: "SCWSEBE",
+  SCWSEBE: "SCWSEBE",
 
   /**
    * ends before or concurrent with end of
    */
-  endsbeforeorconcurrentwithendof: "EBEORECW",
+  EBEORECW: "EBEORECW",
 
   /**
    * ends concurrent with
    */
-  endsconcurrentwith: "ECW",
+  ECW: "ECW",
 
   /**
    * concurrent with
    */
-  concurrentwith: "CONCURRENT",
+  CONCURRENT: "CONCURRENT",
 
   /**
    * starts before start of, ends with
    */
-  startsbeforestartofendswith: "SBSECWE",
+  SBSECWE: "SBSECWE",
 
   /**
    * starts before or concurrent with start of
    */
-  startsbeforeorconcurrentwithstartof: "SBSORSCW",
+  SBSORSCW: "SBSORSCW",
 
   /**
    * starts concurrent with
    */
-  startsconcurrentwith: "SCW",
+  SCW: "SCW",
 
   /**
    * starts with, ends after end of
    */
-  startswithendsafterendof: "SCWSEAE",
+  SCWSEAE: "SCWSEAE",
 
   /**
    * starts before start of
    */
-  startsbeforestartof: "SBS",
+  SBS: "SBS",
 
   /**
    * contains start of
    */
-  containsstartof: "SBSEAS",
+  SBSEAS: "SBSEAS",
 
   /**
    * contains time of
    */
-  containstimeof: "SBSEAE",
+  SBSEAE: "SBSEAE",
 } as const;
 
 /**

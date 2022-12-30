@@ -6,27 +6,27 @@ export const XActRelationshipDocumentSPLCode = {
   /**
    * is appendage
    */
-  isappendage: "APND",
+  APND: "APND",
 
   /**
    * is derived from
    */
-  isderivedfrom: "DRIV",
+  DRIV: "DRIV",
 
   /**
    * replaces
    */
-  replaces: "RPLC",
+  RPLC: "RPLC",
 
   /**
    * Excerpts
    */
-  Excerpts: "XCRPT",
+  XCRPT: "XCRPT",
 
   /**
    * transformation
    */
-  transformation: "XFRM",
+  XFRM: "XFRM",
 } as const;
 
 /**

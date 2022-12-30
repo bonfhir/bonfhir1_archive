@@ -6,17 +6,17 @@ export const Hl7VSSeverityOfIllnessCodeCode = {
   /**
    * Mild
    */
-  Mild: "MI",
+  MI: "MI",
 
   /**
    * Moderate
    */
-  Moderate: "MO",
+  MO: "MO",
 
   /**
    * Severe
    */
-  Severe: "SE",
+  SE: "SE",
 } as const;
 
 /**

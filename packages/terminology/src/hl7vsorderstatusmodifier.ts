@@ -6,12 +6,12 @@ export const Hl7VSOrderStatusModifierCode = {
   /**
    * Expiration on event
    */
-  Expirationonevent: "EOE",
+  EOE: "EOE",
 
   /**
    * Expiration on time
    */
-  Expirationontime: "EOT",
+  EOT: "EOT",
 } as const;
 
 /**

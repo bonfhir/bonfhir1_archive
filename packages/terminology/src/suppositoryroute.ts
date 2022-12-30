@@ -6,7 +6,7 @@ export const SuppositoryRouteCode = {
   /**
    * Suppository, urethral
    */
-  Suppositoryurethral: "URETHSUP",
+  URETHSUP: "URETHSUP",
 } as const;
 
 /**

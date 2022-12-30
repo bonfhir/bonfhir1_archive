@@ -6,57 +6,57 @@ export const ObservationMeasureTypeCode = {
   /**
    * ObservationMeasureType
    */
-  ObservationMeasureType: "_ObservationMeasureType",
+  _ObservationMeasureType: "_ObservationMeasureType",
 
   /**
    * composite measure type
    */
-  compositemeasuretype: "COMPOSITE",
+  COMPOSITE: "COMPOSITE",
 
   /**
    * efficiency measure type
    */
-  efficiencymeasuretype: "EFFICIENCY",
+  EFFICIENCY: "EFFICIENCY",
 
   /**
    * experience measure type
    */
-  experiencemeasuretype: "EXPERIENCE",
+  EXPERIENCE: "EXPERIENCE",
 
   /**
    * outcome measure type
    */
-  outcomemeasuretype: "OUTCOME",
+  OUTCOME: "OUTCOME",
 
   /**
    * intermediate clinical outcome measure
    */
-  intermediateclinicaloutcomemeasure: "INTERM-OM",
+  "INTERM-OM": "INTERM-OM",
 
   /**
    * patient reported outcome performance measure
    */
-  patientreportedoutcomeperformancemeasure: "PRO-PM",
+  "PRO-PM": "PRO-PM",
 
   /**
    * process measure type
    */
-  processmeasuretype: "PROCESS",
+  PROCESS: "PROCESS",
 
   /**
    * appropriate use process measure
    */
-  appropriateuseprocessmeasure: "APPROPRIATE",
+  APPROPRIATE: "APPROPRIATE",
 
   /**
    * resource use measure type
    */
-  resourceusemeasuretype: "RESOURCE",
+  RESOURCE: "RESOURCE",
 
   /**
    * structure measure type
    */
-  structuremeasuretype: "STRUCTURE",
+  STRUCTURE: "STRUCTURE",
 } as const;
 
 /**

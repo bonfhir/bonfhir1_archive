@@ -6,47 +6,47 @@ export const GelDrugFormCode = {
   /**
    * Gel
    */
-  Gel: "GEL",
+  GEL: "GEL",
 
   /**
    * Gel with Applicator
    */
-  GelwithApplicator: "GELAPL",
+  GELAPL: "GELAPL",
 
   /**
    * Nasal Gel
    */
-  NasalGel: "NASGEL",
+  NASGEL: "NASGEL",
 
   /**
    * Ophthalmic Gel
    */
-  OphthalmicGel: "OPGEL",
+  OPGEL: "OPGEL",
 
   /**
    * Otic Gel
    */
-  OticGel: "OTGEL",
+  OTGEL: "OTGEL",
 
   /**
    * Topical Gel
    */
-  TopicalGel: "TOPGEL",
+  TOPGEL: "TOPGEL",
 
   /**
    * Urethral Gel
    */
-  UrethralGel: "URETHGEL",
+  URETHGEL: "URETHGEL",
 
   /**
    * Vaginal Gel
    */
-  VaginalGel: "VAGGEL",
+  VAGGEL: "VAGGEL",
 
   /**
    * Vaginal Gel with Applicator
    */
-  VaginalGelwithApplicator: "VGELAPL",
+  VGELAPL: "VGELAPL",
 } as const;
 
 /**

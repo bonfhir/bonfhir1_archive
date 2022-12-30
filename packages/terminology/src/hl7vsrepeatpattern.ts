@@ -6,143 +6,142 @@ export const Hl7VSRepeatPatternCode = {
   /**
    * every <integer> seconds
    */
-  everyintegerseconds: "Q<integer>S",
+  "Q<integer>S": "Q<integer>S",
 
   /**
    * every <integer> minutes
    */
-  everyintegerminutes: "Q<integer>M",
+  "Q<integer>M": "Q<integer>M",
 
   /**
    * every <integer> hours
    */
-  everyintegerhours: "Q<integer>H",
+  "Q<integer>H": "Q<integer>H",
 
   /**
    * every <integer> days
    */
-  everyintegerdays: "Q<integer>D",
+  "Q<integer>D": "Q<integer>D",
 
   /**
    * every <integer> weeks
    */
-  everyintegerweeks: "Q<integer>W",
+  "Q<integer>W": "Q<integer>W",
 
   /**
    * every <integer> months (Lunar cycle)
    */
-  everyintegermonthsLunarcycle: "Q<integer>L",
+  "Q<integer>L": "Q<integer>L",
 
   /**
    * repeats on a particular day of the week,
    */
-  repeatsonaparticulardayoftheweek: "Q<integer>J<day#>",
+  "Q<integer>J<day#>": "Q<integer>J<day#>",
 
   /**
    * twice a day at institution-specified times
    */
-  twiceadayatinstitutionspecifiedtimes: "BID",
+  BID: "BID",
 
   /**
    * three times a day at institution-specified times
    */
-  threetimesadayatinstitutionspecifiedtimes: "TID",
+  TID: "TID",
 
   /**
    * four times a day at institution-specified times
    */
-  fourtimesadayatinstitutionspecifiedtimes: "QID",
+  QID: "QID",
 
   /**
    * "X" times per day at institution-specified times, where X is a numeral 5 or greater.
    */
-  XtimesperdayatinstitutionspecifiedtimeswhereXisanumeral5orgreater: "xID",
+  xID: "xID",
 
   /**
    * in the morning at institution-specified time
    */
-  inthemorningatinstitutionspecifiedtime: "QAM",
+  QAM: "QAM",
 
   /**
    * during each of three eight-hour shifts at institution-specified times
    */
-  duringeachofthreeeighthourshiftsatinstitutionspecifiedtimes: "QSHIFT",
+  QSHIFT: "QSHIFT",
 
   /**
    * every other day
    */
-  everyotherday: "QOD",
+  QOD: "QOD",
 
   /**
    * every day before the hour of sleep
    */
-  everydaybeforethehourofsleep: "QHS",
+  QHS: "QHS",
 
   /**
    * in the evening at institution-specified time
    */
-  intheeveningatinstitutionspecifiedtime: "QPM",
+  QPM: "QPM",
 
   /**
    * service is provided continuously between start time and stop time
    */
-  serviceisprovidedcontinuouslybetweenstarttimeandstoptime: "C",
+  C: "C",
 
   /**
    * for future use, where <spec> is an interval specification as defined by the UNIX cron specification.
    */
-  forfutureusewherespecisanintervalspecificationasdefinedbytheUNIXcronspecification:
-    "U <spec>",
+  "U <spec>": "U <spec>",
 
   /**
    * given as needed
    */
-  givenasneeded: "PRN",
+  PRN: "PRN",
 
   /**
    * where xxx is some frequency code
    */
-  wherexxxissomefrequencycode: "PRNxxx",
+  PRNxxx: "PRNxxx",
 
   /**
    * one time only.
    */
-  onetimeonly: "Once",
+  Once: "Once",
 
   /**
    * <timing>C ("cum")<meal>
    */
-  timingCcummeal: "Meal Related Timings",
+  "Meal Related Timings": "Meal Related Timings",
 
   /**
    * Ante (before)
    */
-  Antebefore: "A",
+  A: "A",
 
   /**
    * Post (after)
    */
-  Postafter: "P",
+  P: "P",
 
   /**
    * Inter
    */
-  Inter: "I",
+  I: "I",
 
   /**
    * Cibus Matutinus (breakfast)
    */
-  CibusMatutinusbreakfast: "M",
+  M: "M",
 
   /**
    * Cibus Diurnus (lunch)
    */
-  CibusDiurnuslunch: "D",
+  D: "D",
 
   /**
    * Cibus Vespertinus (dinner)
    */
-  CibusVespertinusdinner: "V",
+  V: "V",
 } as const;
 
 /**

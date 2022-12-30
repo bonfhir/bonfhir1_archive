@@ -6,17 +6,17 @@ export const Hl7VSTransportArrangedCode = {
   /**
    * Arranged
    */
-  Arranged: "A",
+  A: "A",
 
   /**
    * Not Arranged
    */
-  NotArranged: "N",
+  N: "N",
 
   /**
    * Unknown
    */
-  Unknown: "U",
+  U: "U",
 } as const;
 
 /**

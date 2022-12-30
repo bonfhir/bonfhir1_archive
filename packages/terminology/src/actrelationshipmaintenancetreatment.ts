@@ -6,7 +6,7 @@ export const ActRelationshipMaintenanceTreatmentCode = {
   /**
    * maintenance treatment
    */
-  maintenancetreatment: "MTREAT",
+  MTREAT: "MTREAT",
 } as const;
 
 /**

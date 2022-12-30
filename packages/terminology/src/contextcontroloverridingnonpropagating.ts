@@ -6,7 +6,7 @@ export const ContextControlOverridingNonPropagatingCode = {
   /**
    * overriding, non-propagating
    */
-  overridingnonpropagating: "ON",
+  ON: "ON",
 } as const;
 
 /**

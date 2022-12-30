@@ -6,22 +6,22 @@ export const Hl7VSSequenceConditionCodeCode = {
   /**
    * End related service request(s), end current service request.
    */
-  Endrelatedservicerequestsendcurrentservicerequest: "EE",
+  EE: "EE",
 
   /**
    * End related service request(s), start current service request.
    */
-  Endrelatedservicerequestsstartcurrentservicerequest: "ES",
+  ES: "ES",
 
   /**
    * Start related service request(s), start current service request.
    */
-  Startrelatedservicerequestsstartcurrentservicerequest: "SS",
+  SS: "SS",
 
   /**
    * Start related service request(s), end current service request.
    */
-  Startrelatedservicerequestsendcurrentservicerequest: "SE",
+  SE: "SE",
 } as const;
 
 /**

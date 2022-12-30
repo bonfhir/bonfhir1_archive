@@ -6,12 +6,12 @@ export const XPhysicalVerbalParticipationModeCode = {
   /**
    * physical presence
    */
-  physicalpresence: "PHYSICAL",
+  PHYSICAL: "PHYSICAL",
 
   /**
    * verbal
    */
-  verbal: "VERBAL",
+  VERBAL: "VERBAL",
 } as const;
 
 /**

@@ -6,42 +6,42 @@ export const InsertionCode = {
   /**
    * Insertion, cervical (uterine)
    */
-  Insertioncervicaluterine: "CERVINS",
+  CERVINS: "CERVINS",
 
   /**
    * Insertion, intraocular, surgical
    */
-  Insertionintraocularsurgical: "IOSURGINS",
+  IOSURGINS: "IOSURGINS",
 
   /**
    * Insertion, intrauterine
    */
-  Insertionintrauterine: "IU",
+  IU: "IU",
 
   /**
    * Insertion, lacrimal puncta
    */
-  Insertionlacrimalpuncta: "LPINS",
+  LPINS: "LPINS",
 
   /**
    * Insertion, rectal
    */
-  Insertionrectal: "PR",
+  PR: "PR",
 
   /**
    * Insertion, subcutaneous, surgical
    */
-  Insertionsubcutaneoussurgical: "SQSURGINS",
+  SQSURGINS: "SQSURGINS",
 
   /**
    * Insertion, urethral
    */
-  Insertionurethral: "URETHINS",
+  URETHINS: "URETHINS",
 
   /**
    * Insertion, vaginal
    */
-  Insertionvaginal: "VAGINSI",
+  VAGINSI: "VAGINSI",
 } as const;
 
 /**

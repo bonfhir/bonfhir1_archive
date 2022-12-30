@@ -6,52 +6,52 @@ export const Hl7VSTelecommunicationUseCodeCode = {
   /**
    * Primary Residence Number
    */
-  PrimaryResidenceNumber: "PRN",
+  PRN: "PRN",
 
   /**
    * Other Residence Number
    */
-  OtherResidenceNumber: "ORN",
+  ORN: "ORN",
 
   /**
    * Work Number
    */
-  WorkNumber: "WPN",
+  WPN: "WPN",
 
   /**
    * Vacation Home Number
    */
-  VacationHomeNumber: "VHN",
+  VHN: "VHN",
 
   /**
    * Answering Service Number
    */
-  AnsweringServiceNumber: "ASN",
+  ASN: "ASN",
 
   /**
    * Emergency Number
    */
-  EmergencyNumber: "EMR",
+  EMR: "EMR",
 
   /**
    * Network (email) Address
    */
-  NetworkemailAddress: "NET",
+  NET: "NET",
 
   /**
    * Beeper Number
    */
-  BeeperNumber: "BPN",
+  BPN: "BPN",
 
   /**
    * Personal
    */
-  Personal: "PRS",
+  PRS: "PRS",
 
   /**
    * Direct Secure Messaging
    */
-  DirectSecureMessaging: "DSM",
+  DSM: "DSM",
 } as const;
 
 /**

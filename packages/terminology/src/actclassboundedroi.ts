@@ -6,7 +6,7 @@ export const ActClassBoundedRoiCode = {
   /**
    * bounded ROI
    */
-  boundedROI: "ROIBND",
+  ROIBND: "ROIBND",
 } as const;
 
 /**

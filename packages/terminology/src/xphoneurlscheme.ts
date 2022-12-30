@@ -6,12 +6,12 @@ export const XPhoneURLSchemeCode = {
   /**
    * Fax
    */
-  Fax: "fax",
+  fax: "fax",
 
   /**
    * Telephone
    */
-  Telephone: "tel",
+  tel: "tel",
 } as const;
 
 /**

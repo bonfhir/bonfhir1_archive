@@ -6,12 +6,12 @@ export const ManufacturerModelNameExampleCode = {
   /**
    * example model name 1
    */
-  examplemodelname1: "examplemodel1",
+  examplemodel1: "examplemodel1",
 
   /**
    * example model name 2
    */
-  examplemodelname2: "examplemodel2",
+  examplemodel2: "examplemodel2",
 } as const;
 
 /**

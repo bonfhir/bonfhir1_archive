@@ -6,3118 +6,3119 @@ export const ActInvoiceElementCodeCode = {
   /**
    * ActInvoiceAdjudicationPaymentCode
    */
-  ActInvoiceAdjudicationPaymentCode: "_ActInvoiceAdjudicationPaymentCode",
+  _ActInvoiceAdjudicationPaymentCode: "_ActInvoiceAdjudicationPaymentCode",
 
   /**
    * ActInvoiceAdjudicationPaymentGroupCode
    */
-  ActInvoiceAdjudicationPaymentGroupCode:
+  _ActInvoiceAdjudicationPaymentGroupCode:
     "_ActInvoiceAdjudicationPaymentGroupCode",
 
   /**
    * alternate electronic
    */
-  alternateelectronic: "ALEC",
+  ALEC: "ALEC",
 
   /**
    * bonus
    */
-  bonus: "BONUS",
+  BONUS: "BONUS",
 
   /**
    * carry forward adjusment
    */
-  carryforwardadjusment: "CFWD",
+  CFWD: "CFWD",
 
   /**
    * education fees
    */
-  educationfees: "EDU",
+  EDU: "EDU",
 
   /**
    * early payment fee
    */
-  earlypaymentfee: "EPYMT",
+  EPYMT: "EPYMT",
 
   /**
    * garnishee
    */
-  garnishee: "GARN",
+  GARN: "GARN",
 
   /**
    * submitted invoice
    */
-  submittedinvoice: "INVOICE",
+  INVOICE: "INVOICE",
 
   /**
    * paper invoice
    */
-  paperinvoice: "PINV",
+  PINV: "PINV",
 
   /**
    * prior period adjustment
    */
-  priorperiodadjustment: "PPRD",
+  PPRD: "PPRD",
 
   /**
    * professional association deduction
    */
-  professionalassociationdeduction: "PROA",
+  PROA: "PROA",
 
   /**
    * recovery
    */
-  recovery: "RECOV",
+  RECOV: "RECOV",
 
   /**
    * retro adjustment
    */
-  retroadjustment: "RETRO",
+  RETRO: "RETRO",
 
   /**
    * transaction fee
    */
-  transactionfee: "TRAN",
+  TRAN: "TRAN",
 
   /**
    * ActInvoiceAdjudicationPaymentGroupCode
    */
-  ActInvoiceAdjudicationPaymentGroupCode: "_ActInvoicePaymentCode",
+  _ActInvoicePaymentCode: "_ActInvoicePaymentCode",
 
   /**
    * ActInvoiceAdjudicationPaymentSummaryCode
    */
-  ActInvoiceAdjudicationPaymentSummaryCode:
+  _ActInvoiceAdjudicationPaymentSummaryCode:
     "_ActInvoiceAdjudicationPaymentSummaryCode",
 
   /**
    * contract
    */
-  contract: "CONT",
+  CONT: "CONT",
 
   /**
    * day
    */
-  day: "DAY",
+  DAY: "DAY",
 
   /**
    * location
    */
-  location: "LOC",
+  LOC: "LOC",
 
   /**
    * month
    */
-  month: "MONTH",
+  MONTH: "MONTH",
 
   /**
    * period
    */
-  period: "PERIOD",
+  PERIOD: "PERIOD",
 
   /**
    * provider
    */
-  provider: "PROV",
+  PROV: "PROV",
 
   /**
    * week
    */
-  week: "WEEK",
+  WEEK: "WEEK",
 
   /**
    * year
    */
-  year: "YEAR",
+  YEAR: "YEAR",
 
   /**
    * invoice type
    */
-  invoicetype: "INVTYPE",
+  INVTYPE: "INVTYPE",
 
   /**
    * payee
    */
-  payee: "PAYEE",
+  PAYEE: "PAYEE",
 
   /**
    * payor
    */
-  payor: "PAYOR",
+  PAYOR: "PAYOR",
 
   /**
    * sending application
    */
-  sendingapplication: "SENDAPP",
+  SENDAPP: "SENDAPP",
 
   /**
    * ActInvoiceDetailCode
    */
-  ActInvoiceDetailCode: "_ActInvoiceDetailCode",
+  _ActInvoiceDetailCode: "_ActInvoiceDetailCode",
 
   /**
    * ActInvoiceDetailClinicalProductCode
    */
-  ActInvoiceDetailClinicalProductCode: "_ActInvoiceDetailClinicalProductCode",
+  _ActInvoiceDetailClinicalProductCode: "_ActInvoiceDetailClinicalProductCode",
 
   /**
    * United Nations Standard Products and Services Classification
    */
-  UnitedNationsStandardProductsandServicesClassification: "UNSPSC",
+  UNSPSC: "UNSPSC",
 
   /**
    * ActInvoiceDetailDrugProductCode
    */
-  ActInvoiceDetailDrugProductCode: "_ActInvoiceDetailDrugProductCode",
+  _ActInvoiceDetailDrugProductCode: "_ActInvoiceDetailDrugProductCode",
 
   /**
    * Global Trade Item Number
    */
-  GlobalTradeItemNumber: "GTIN",
+  GTIN: "GTIN",
 
   /**
    * Universal Product Code
    */
-  UniversalProductCode: "UPC",
+  UPC: "UPC",
 
   /**
    * ActInvoiceDetailGenericCode
    */
-  ActInvoiceDetailGenericCode: "_ActInvoiceDetailGenericCode",
+  _ActInvoiceDetailGenericCode: "_ActInvoiceDetailGenericCode",
 
   /**
    * ActInvoiceDetailGenericAdjudicatorCode
    */
-  ActInvoiceDetailGenericAdjudicatorCode:
+  _ActInvoiceDetailGenericAdjudicatorCode:
     "_ActInvoiceDetailGenericAdjudicatorCode",
 
   /**
    * coinsurance
    */
-  coinsurance: "COIN",
+  COIN: "COIN",
 
   /**
    * patient co-pay
    */
-  patientcopay: "COPAYMENT",
+  COPAYMENT: "COPAYMENT",
 
   /**
    * deductible
    */
-  deductible: "DEDUCTIBLE",
+  DEDUCTIBLE: "DEDUCTIBLE",
 
   /**
    * payment
    */
-  payment: "PAY",
+  PAY: "PAY",
 
   /**
    * spend down
    */
-  spenddown: "SPEND",
+  SPEND: "SPEND",
 
   /**
    * co-insurance
    */
-  coinsurance: "COINS",
+  COINS: "COINS",
 
   /**
    * ActInvoiceDetailGenericModifierCode
    */
-  ActInvoiceDetailGenericModifierCode: "_ActInvoiceDetailGenericModifierCode",
+  _ActInvoiceDetailGenericModifierCode: "_ActInvoiceDetailGenericModifierCode",
 
   /**
    * non-normal hours
    */
-  nonnormalhours: "AFTHRS",
+  AFTHRS: "AFTHRS",
 
   /**
    * isolation allowance
    */
-  isolationallowance: "ISOL",
+  ISOL: "ISOL",
 
   /**
    * out of office
    */
-  outofoffice: "OOO",
+  OOO: "OOO",
 
   /**
    * ActInvoiceDetailGenericProviderCode
    */
-  ActInvoiceDetailGenericProviderCode: "_ActInvoiceDetailGenericProviderCode",
+  _ActInvoiceDetailGenericProviderCode: "_ActInvoiceDetailGenericProviderCode",
 
   /**
    * cancelled appointment
    */
-  cancelledappointment: "CANCAPT",
+  CANCAPT: "CANCAPT",
 
   /**
    * discount
    */
-  discount: "DSC",
+  DSC: "DSC",
 
   /**
    * extraordinary service assessment
    */
-  extraordinaryserviceassessment: "ESA",
+  ESA: "ESA",
 
   /**
    * fee for service top off
    */
-  feeforservicetopoff: "FFSTOP",
+  FFSTOP: "FFSTOP",
 
   /**
    * final fee
    */
-  finalfee: "FNLFEE",
+  FNLFEE: "FNLFEE",
 
   /**
    * first fee
    */
-  firstfee: "FRSTFEE",
+  FRSTFEE: "FRSTFEE",
 
   /**
    * markup or up-charge
    */
-  markuporupcharge: "MARKUP",
+  MARKUP: "MARKUP",
 
   /**
    * missed appointment
    */
-  missedappointment: "MISSAPT",
+  MISSAPT: "MISSAPT",
 
   /**
    * periodic fee
    */
-  periodicfee: "PERFEE",
+  PERFEE: "PERFEE",
 
   /**
    * performance bonus
    */
-  performancebonus: "PERMBNS",
+  PERMBNS: "PERMBNS",
 
   /**
    * restocking fee
    */
-  restockingfee: "RESTOCK",
+  RESTOCK: "RESTOCK",
 
   /**
    * travel
    */
-  travel: "TRAVEL",
+  TRAVEL: "TRAVEL",
 
   /**
    * urgent
    */
-  urgent: "URGENT",
+  URGENT: "URGENT",
 
   /**
    * ActInvoiceDetailTaxCode
    */
-  ActInvoiceDetailTaxCode: "_ActInvoiceDetailTaxCode",
+  _ActInvoiceDetailTaxCode: "_ActInvoiceDetailTaxCode",
 
   /**
    * federal sales tax
    */
-  federalsalestax: "FST",
+  FST: "FST",
 
   /**
    * harmonized sales Tax
    */
-  harmonizedsalesTax: "HST",
+  HST: "HST",
 
   /**
    * provincial/state sales tax
    */
-  provincialstatesalestax: "PST",
+  PST: "PST",
 
   /**
    * ActInvoiceDetailPreferredAccommodationCode
    */
-  ActInvoiceDetailPreferredAccommodationCode:
+  _ActInvoiceDetailPreferredAccommodationCode:
     "_ActInvoiceDetailPreferredAccommodationCode",
 
   /**
    * ActEncounterAccommodationCode
    */
-  ActEncounterAccommodationCode: "_ActEncounterAccommodationCode",
+  _ActEncounterAccommodationCode: "_ActEncounterAccommodationCode",
 
   /**
    * HL7AccommodationCode
    */
-  HL7AccommodationCode: "_HL7AccommodationCode",
+  _HL7AccommodationCode: "_HL7AccommodationCode",
 
   /**
    * Isolation
    */
-  Isolation: "I",
+  I: "I",
 
   /**
    * Private
    */
-  Private: "P",
+  P: "P",
 
   /**
    * Suite
    */
-  Suite: "S",
+  S: "S",
 
   /**
    * Semi-private
    */
-  Semiprivate: "SP",
+  SP: "SP",
 
   /**
    * Ward
    */
-  Ward: "W",
+  W: "W",
 
   /**
    * HCPCSAccommodationCode
    */
-  HCPCSAccommodationCode: "_HCPCSAccommodationCode",
+  _HCPCSAccommodationCode: "_HCPCSAccommodationCode",
 
   /**
    * ActInvoiceDetailClinicalServiceCode
    */
-  ActInvoiceDetailClinicalServiceCode: "_ActInvoiceDetailClinicalServiceCode",
+  _ActInvoiceDetailClinicalServiceCode: "_ActInvoiceDetailClinicalServiceCode",
 
   /**
    * CPT5
    */
-  CPT5: "_CPT5",
+  _CPT5: "_CPT5",
 
   /**
    * HCPCS
    */
-  HCPCS: "_HCPCS",
+  _HCPCS: "_HCPCS",
 
   /**
    * ICD10PCS
    */
-  ICD10PCS: "_ICD10PCS",
+  _ICD10PCS: "_ICD10PCS",
 
   /**
    * ICD9PCS
    */
-  ICD9PCS: "_ICD9PCS",
+  _ICD9PCS: "_ICD9PCS",
 
   /**
    * ActInvoiceDetailOralHealthProcedureCode
    */
-  ActInvoiceDetailOralHealthProcedureCode:
+  _ActInvoiceDetailOralHealthProcedureCode:
     "_ActInvoiceDetailOralHealthProcedureCode",
 
   /**
    * ActInvoiceGroupCode
    */
-  ActInvoiceGroupCode: "_ActInvoiceGroupCode",
+  _ActInvoiceGroupCode: "_ActInvoiceGroupCode",
 
   /**
    * ActInvoiceInterGroupCode
    */
-  ActInvoiceInterGroupCode: "_ActInvoiceInterGroupCode",
+  _ActInvoiceInterGroupCode: "_ActInvoiceInterGroupCode",
 
   /**
    * compound drug invoice group
    */
-  compounddruginvoicegroup: "CPNDDRGING",
+  CPNDDRGING: "CPNDDRGING",
 
   /**
    * compound ingredient invoice group
    */
-  compoundingredientinvoicegroup: "CPNDINDING",
+  CPNDINDING: "CPNDINDING",
 
   /**
    * compound supply invoice group
    */
-  compoundsupplyinvoicegroup: "CPNDSUPING",
+  CPNDSUPING: "CPNDSUPING",
 
   /**
    * drug invoice group
    */
-  druginvoicegroup: "DRUGING",
+  DRUGING: "DRUGING",
 
   /**
    * frame invoice group
    */
-  frameinvoicegroup: "FRAMEING",
+  FRAMEING: "FRAMEING",
 
   /**
    * lens invoice group
    */
-  lensinvoicegroup: "LENSING",
+  LENSING: "LENSING",
 
   /**
    * product invoice group
    */
-  productinvoicegroup: "PRDING",
+  PRDING: "PRDING",
 
   /**
    * ActInvoiceRootGroupCode
    */
-  ActInvoiceRootGroupCode: "_ActInvoiceRootGroupCode",
+  _ActInvoiceRootGroupCode: "_ActInvoiceRootGroupCode",
 
   /**
    * clinical product invoice
    */
-  clinicalproductinvoice: "CPINV",
+  CPINV: "CPINV",
 
   /**
    * clinical product invoice
    */
-  clinicalproductinvoice: "CP",
+  CP: "CP",
 
   /**
    * clinical service invoice
    */
-  clinicalserviceinvoice: "CSINV",
+  CSINV: "CSINV",
 
   /**
    * clinical service invoice
    */
-  clinicalserviceinvoice: "CS",
+  CS: "CS",
 
   /**
    * clinical service and product
    */
-  clinicalserviceandproduct: "CSPINV",
+  CSPINV: "CSPINV",
 
   /**
    * financial invoice
    */
-  financialinvoice: "FININV",
+  FININV: "FININV",
 
   /**
    * oral health service
    */
-  oralhealthservice: "OHSINV",
+  OHSINV: "OHSINV",
 
   /**
    * preferred accommodation invoice
    */
-  preferredaccommodationinvoice: "PAINV",
+  PAINV: "PAINV",
 
   /**
    * preferred accommodation invoice
    */
-  preferredaccommodationinvoice: "PA",
+  PA: "PA",
 
   /**
    * Rx compound invoice
    */
-  Rxcompoundinvoice: "RXCINV",
+  RXCINV: "RXCINV",
 
   /**
    * Rx compound invoice
    */
-  Rxcompoundinvoice: "RXC",
+  RXC: "RXC",
 
   /**
    * Rx dispense invoice
    */
-  Rxdispenseinvoice: "RXDINV",
+  RXDINV: "RXDINV",
 
   /**
    * Rx dispense invoice
    */
-  Rxdispenseinvoice: "RXD",
+  RXD: "RXD",
 
   /**
    * sessional or block fee invoice
    */
-  sessionalorblockfeeinvoice: "SBFINV",
+  SBFINV: "SBFINV",
 
   /**
    * vision dispense invoice
    */
-  visiondispenseinvoice: "VRXINV",
+  VRXINV: "VRXINV",
 
   /**
    * ActAccountCode
    */
-  ActAccountCode: "_ActAccountCode",
+  _ActAccountCode: "_ActAccountCode",
 
   /**
    * account receivable
    */
-  accountreceivable: "ACCTRECEIVABLE",
+  ACCTRECEIVABLE: "ACCTRECEIVABLE",
 
   /**
    * Cash
    */
-  Cash: "CASH",
+  CASH: "CASH",
 
   /**
    * credit card
    */
-  creditcard: "CC",
+  CC: "CC",
 
   /**
    * American Express
    */
-  AmericanExpress: "AE",
+  AE: "AE",
 
   /**
    * Diner's Club
    */
-  DinersClub: "DN",
+  DN: "DN",
 
   /**
    * Discover Card
    */
-  DiscoverCard: "DV",
+  DV: "DV",
 
   /**
    * Master Card
    */
-  MasterCard: "MC",
+  MC: "MC",
 
   /**
    * Visa
    */
-  Visa: "V",
+  V: "V",
 
   /**
    * patient billing account
    */
-  patientbillingaccount: "PBILLACCT",
+  PBILLACCT: "PBILLACCT",
 
   /**
    * CreditCard
    */
-  CreditCard: "_CreditCard",
+  _CreditCard: "_CreditCard",
 
   /**
    * ActAdjudicationCode
    */
-  ActAdjudicationCode: "_ActAdjudicationCode",
+  _ActAdjudicationCode: "_ActAdjudicationCode",
 
   /**
    * ActAdjudicationGroupCode
    */
-  ActAdjudicationGroupCode: "_ActAdjudicationGroupCode",
+  _ActAdjudicationGroupCode: "_ActAdjudicationGroupCode",
 
   /**
    * adjudicated with adjustments
    */
-  adjudicatedwithadjustments: "AA",
+  AA: "AA",
 
   /**
    * adjudicated with adjustments and no financial impact
    */
-  adjudicatedwithadjustmentsandnofinancialimpact: "ANF",
+  ANF: "ANF",
 
   /**
    * adjudicated as refused
    */
-  adjudicatedasrefused: "AR",
+  AR: "AR",
 
   /**
    * adjudicated as submitted
    */
-  adjudicatedassubmitted: "AS",
+  AS: "AS",
 
   /**
    * ActAdjudicationResultActionCode
    */
-  ActAdjudicationResultActionCode: "_ActAdjudicationResultActionCode",
+  _ActAdjudicationResultActionCode: "_ActAdjudicationResultActionCode",
 
   /**
    * Display
    */
-  Display: "DISPLAY",
+  DISPLAY: "DISPLAY",
 
   /**
    * Print on Form
    */
-  PrintonForm: "FORM",
+  FORM: "FORM",
 
   /**
    * ActBillableModifierCode
    */
-  ActBillableModifierCode: "_ActBillableModifierCode",
+  _ActBillableModifierCode: "_ActBillableModifierCode",
 
   /**
    * CPT modifier codes
    */
-  CPTmodifiercodes: "CPTM",
+  CPTM: "CPTM",
 
   /**
    * HCPCS Level II and Carrier-assigned
    */
-  HCPCSLevelIIandCarrierassigned: "HCPCSA",
+  HCPCSA: "HCPCSA",
 
   /**
    * ActBillingArrangementCode
    */
-  ActBillingArrangementCode: "_ActBillingArrangementCode",
+  _ActBillingArrangementCode: "_ActBillingArrangementCode",
 
   /**
    * block funding
    */
-  blockfunding: "BLK",
+  BLK: "BLK",
 
   /**
    * capitation funding
    */
-  capitationfunding: "CAP",
+  CAP: "CAP",
 
   /**
    * contract funding
    */
-  contractfunding: "CONTF",
+  CONTF: "CONTF",
 
   /**
    * financial
    */
-  financial: "FINBILL",
+  FINBILL: "FINBILL",
 
   /**
    * roster funding
    */
-  rosterfunding: "ROST",
+  ROST: "ROST",
 
   /**
    * sessional funding
    */
-  sessionalfunding: "SESS",
+  SESS: "SESS",
 
   /**
    * fee for service
    */
-  feeforservice: "FFS",
+  FFS: "FFS",
 
   /**
    * first fill, part fill, partial strength
    */
-  firstfillpartfillpartialstrength: "FFPS",
+  FFPS: "FFPS",
 
   /**
    * first fill complete, partial strength
    */
-  firstfillcompletepartialstrength: "FFCS",
+  FFCS: "FFCS",
 
   /**
    * trial fill partial strength
    */
-  trialfillpartialstrength: "TFS",
+  TFS: "TFS",
 
   /**
    * ActBoundedROICode
    */
-  ActBoundedROICode: "_ActBoundedROICode",
+  _ActBoundedROICode: "_ActBoundedROICode",
 
   /**
    * fully specified ROI
    */
-  fullyspecifiedROI: "ROIFS",
+  ROIFS: "ROIFS",
 
   /**
    * partially specified ROI
    */
-  partiallyspecifiedROI: "ROIPS",
+  ROIPS: "ROIPS",
 
   /**
    * act care provision
    */
-  actcareprovision: "_ActCareProvisionCode",
+  _ActCareProvisionCode: "_ActCareProvisionCode",
 
   /**
    * act credentialed care
    */
-  actcredentialedcare: "_ActCredentialedCareCode",
+  _ActCredentialedCareCode: "_ActCredentialedCareCode",
 
   /**
    * act credentialed care provision peron
    */
-  actcredentialedcareprovisionperon: "_ActCredentialedCareProvisionPersonCode",
+  _ActCredentialedCareProvisionPersonCode:
+    "_ActCredentialedCareProvisionPersonCode",
 
   /**
    * certified anatomic pathology and clinical pathology care
    */
-  certifiedanatomicpathologyandclinicalpathologycare: "CACC",
+  CACC: "CACC",
 
   /**
    * certified allergy and immunology care
    */
-  certifiedallergyandimmunologycare: "CAIC",
+  CAIC: "CAIC",
 
   /**
    * certified aerospace medicine care
    */
-  certifiedaerospacemedicinecare: "CAMC",
+  CAMC: "CAMC",
 
   /**
    * certified anesthesiology care
    */
-  certifiedanesthesiologycare: "CANC",
+  CANC: "CANC",
 
   /**
    * certified anatomic pathology care
    */
-  certifiedanatomicpathologycare: "CAPC",
+  CAPC: "CAPC",
 
   /**
    * certified clinical biochemical genetics care
    */
-  certifiedclinicalbiochemicalgeneticscare: "CBGC",
+  CBGC: "CBGC",
 
   /**
    * certified clinical cytogenetics care
    */
-  certifiedclinicalcytogeneticscare: "CCCC",
+  CCCC: "CCCC",
 
   /**
    * certified clinical genetics (M.D.) care
    */
-  certifiedclinicalgeneticsMDcare: "CCGC",
+  CCGC: "CCGC",
 
   /**
    * certified clinical pathology care
    */
-  certifiedclinicalpathologycare: "CCPC",
+  CCPC: "CCPC",
 
   /**
    * certified colon and rectal surgery care
    */
-  certifiedcolonandrectalsurgerycare: "CCSC",
+  CCSC: "CCSC",
 
   /**
    * certified dermatology care
    */
-  certifieddermatologycare: "CDEC",
+  CDEC: "CDEC",
 
   /**
    * certified diagnostic radiology care
    */
-  certifieddiagnosticradiologycare: "CDRC",
+  CDRC: "CDRC",
 
   /**
    * certified emergency medicine care
    */
-  certifiedemergencymedicinecare: "CEMC",
+  CEMC: "CEMC",
 
   /**
    * certified family practice care
    */
-  certifiedfamilypracticecare: "CFPC",
+  CFPC: "CFPC",
 
   /**
    * certified internal medicine care
    */
-  certifiedinternalmedicinecare: "CIMC",
+  CIMC: "CIMC",
 
   /**
    * certified clinical molecular genetics care
    */
-  certifiedclinicalmoleculargeneticscare: "CMGC",
+  CMGC: "CMGC",
 
   /**
    * certified neurology care
    */
-  certifiedneurologycare: "CNEC",
+  CNEC: "CNEC",
 
   /**
    * certified nuclear medicine care
    */
-  certifiednuclearmedicinecare: "CNMC",
+  CNMC: "CNMC",
 
   /**
    * certified neurology with special qualifications in child neurology care
    */
-  certifiedneurologywithspecialqualificationsinchildneurologycare: "CNQC",
+  CNQC: "CNQC",
 
   /**
    * certified neurological surgery care
    */
-  certifiedneurologicalsurgerycare: "CNSC",
+  CNSC: "CNSC",
 
   /**
    * certified obstetrics and gynecology care
    */
-  certifiedobstetricsandgynecologycare: "COGC",
+  COGC: "COGC",
 
   /**
    * certified occupational medicine care
    */
-  certifiedoccupationalmedicinecare: "COMC",
+  COMC: "COMC",
 
   /**
    * certified ophthalmology care
    */
-  certifiedophthalmologycare: "COPC",
+  COPC: "COPC",
 
   /**
    * certified orthopaedic surgery care
    */
-  certifiedorthopaedicsurgerycare: "COSC",
+  COSC: "COSC",
 
   /**
    * certified otolaryngology care
    */
-  certifiedotolaryngologycare: "COTC",
+  COTC: "COTC",
 
   /**
    * certified pediatrics care
    */
-  certifiedpediatricscare: "CPEC",
+  CPEC: "CPEC",
 
   /**
    * certified Ph.D. medical genetics care
    */
-  certifiedPhDmedicalgeneticscare: "CPGC",
+  CPGC: "CPGC",
 
   /**
    * certified public health and general preventive medicine care
    */
-  certifiedpublichealthandgeneralpreventivemedicinecare: "CPHC",
+  CPHC: "CPHC",
 
   /**
    * certified physical medicine and rehabilitation care
    */
-  certifiedphysicalmedicineandrehabilitationcare: "CPRC",
+  CPRC: "CPRC",
 
   /**
    * certified plastic surgery care
    */
-  certifiedplasticsurgerycare: "CPSC",
+  CPSC: "CPSC",
 
   /**
    * certified psychiatry care
    */
-  certifiedpsychiatrycare: "CPYC",
+  CPYC: "CPYC",
 
   /**
    * certified radiation oncology care
    */
-  certifiedradiationoncologycare: "CROC",
+  CROC: "CROC",
 
   /**
    * certified radiological physics care
    */
-  certifiedradiologicalphysicscare: "CRPC",
+  CRPC: "CRPC",
 
   /**
    * certified surgery care
    */
-  certifiedsurgerycare: "CSUC",
+  CSUC: "CSUC",
 
   /**
    * certified thoracic surgery care
    */
-  certifiedthoracicsurgerycare: "CTSC",
+  CTSC: "CTSC",
 
   /**
    * certified urology care
    */
-  certifiedurologycare: "CURC",
+  CURC: "CURC",
 
   /**
    * certified vascular surgery care
    */
-  certifiedvascularsurgerycare: "CVSC",
+  CVSC: "CVSC",
 
   /**
    * licensed general physician care
    */
-  licensedgeneralphysiciancare: "LGPC",
+  LGPC: "LGPC",
 
   /**
    * act credentialed care provision program
    */
-  actcredentialedcareprovisionprogram:
+  _ActCredentialedCareProvisionProgramCode:
     "_ActCredentialedCareProvisionProgramCode",
 
   /**
    * accredited assisted living care
    */
-  accreditedassistedlivingcare: "AALC",
+  AALC: "AALC",
 
   /**
    * accredited ambulatory care
    */
-  accreditedambulatorycare: "AAMC",
+  AAMC: "AAMC",
 
   /**
    * accredited behavioral health care
    */
-  accreditedbehavioralhealthcare: "ABHC",
+  ABHC: "ABHC",
 
   /**
    * accredited critical access hospital care
    */
-  accreditedcriticalaccesshospitalcare: "ACAC",
+  ACAC: "ACAC",
 
   /**
    * accredited hospital care
    */
-  accreditedhospitalcare: "ACHC",
+  ACHC: "ACHC",
 
   /**
    * accredited home care
    */
-  accreditedhomecare: "AHOC",
+  AHOC: "AHOC",
 
   /**
    * accredited long term care
    */
-  accreditedlongtermcare: "ALTC",
+  ALTC: "ALTC",
 
   /**
    * accredited office-based surgery care
    */
-  accreditedofficebasedsurgerycare: "AOSC",
+  AOSC: "AOSC",
 
   /**
    * certified acute coronary syndrome care
    */
-  certifiedacutecoronarysyndromecare: "CACS",
+  CACS: "CACS",
 
   /**
    * certified acute myocardial infarction care
    */
-  certifiedacutemyocardialinfarctioncare: "CAMI",
+  CAMI: "CAMI",
 
   /**
    * certified asthma care
    */
-  certifiedasthmacare: "CAST",
+  CAST: "CAST",
 
   /**
    * certified bariatric surgery care
    */
-  certifiedbariatricsurgerycare: "CBAR",
+  CBAR: "CBAR",
 
   /**
    * certified coronary artery disease care
    */
-  certifiedcoronaryarterydiseasecare: "CCAD",
+  CCAD: "CCAD",
 
   /**
    * certified cardiac care
    */
-  certifiedcardiaccare: "CCAR",
+  CCAR: "CCAR",
 
   /**
    * certified depression care
    */
-  certifieddepressioncare: "CDEP",
+  CDEP: "CDEP",
 
   /**
    * certified digestive/gastrointestinal disorders care
    */
-  certifieddigestivegastrointestinaldisorderscare: "CDGD",
+  CDGD: "CDGD",
 
   /**
    * certified diabetes care
    */
-  certifieddiabetescare: "CDIA",
+  CDIA: "CDIA",
 
   /**
    * certified epilepsy care
    */
-  certifiedepilepsycare: "CEPI",
+  CEPI: "CEPI",
 
   /**
    * certified frail elderly care
    */
-  certifiedfrailelderlycare: "CFEL",
+  CFEL: "CFEL",
 
   /**
    * certified heart failure care
    */
-  certifiedheartfailurecare: "CHFC",
+  CHFC: "CHFC",
 
   /**
    * certified high risk obstetrics care
    */
-  certifiedhighriskobstetricscare: "CHRO",
+  CHRO: "CHRO",
 
   /**
    * certified hyperlipidemia care
    */
-  certifiedhyperlipidemiacare: "CHYP",
+  CHYP: "CHYP",
 
   /**
    * certified migraine headache care
    */
-  certifiedmigraineheadachecare: "CMIH",
+  CMIH: "CMIH",
 
   /**
    * certified multiple sclerosis care
    */
-  certifiedmultiplesclerosiscare: "CMSC",
+  CMSC: "CMSC",
 
   /**
    * certified orthopedic joint replacement care
    */
-  certifiedorthopedicjointreplacementcare: "COJR",
+  COJR: "COJR",
 
   /**
    * certified oncology care
    */
-  certifiedoncologycare: "CONC",
+  CONC: "CONC",
 
   /**
    * certified chronic obstructive pulmonary disease care
    */
-  certifiedchronicobstructivepulmonarydiseasecare: "COPD",
+  COPD: "COPD",
 
   /**
    * certified organ transplant care
    */
-  certifiedorgantransplantcare: "CORT",
+  CORT: "CORT",
 
   /**
    * certified parkinsons disease care
    */
-  certifiedparkinsonsdiseasecare: "CPAD",
+  CPAD: "CPAD",
 
   /**
    * certified pneumonia disease care
    */
-  certifiedpneumoniadiseasecare: "CPND",
+  CPND: "CPND",
 
   /**
    * certified primary stroke center care
    */
-  certifiedprimarystrokecentercare: "CPST",
+  CPST: "CPST",
 
   /**
    * certified stroke disease management care
    */
-  certifiedstrokediseasemanagementcare: "CSDM",
+  CSDM: "CSDM",
 
   /**
    * certified sickle cell care
    */
-  certifiedsicklecellcare: "CSIC",
+  CSIC: "CSIC",
 
   /**
    * certified sleep disorders care
    */
-  certifiedsleepdisorderscare: "CSLD",
+  CSLD: "CSLD",
 
   /**
    * certified spine treatment care
    */
-  certifiedspinetreatmentcare: "CSPT",
+  CSPT: "CSPT",
 
   /**
    * certified trauma/burn center care
    */
-  certifiedtraumaburncentercare: "CTBU",
+  CTBU: "CTBU",
 
   /**
    * certified vascular diseases care
    */
-  certifiedvasculardiseasescare: "CVDC",
+  CVDC: "CVDC",
 
   /**
    * certified wound management care
    */
-  certifiedwoundmanagementcare: "CWMA",
+  CWMA: "CWMA",
 
   /**
    * certified women's health care
    */
-  certifiedwomenshealthcare: "CWOH",
+  CWOH: "CWOH",
 
   /**
    * ActEncounterCode
    */
-  ActEncounterCode: "_ActEncounterCode",
+  _ActEncounterCode: "_ActEncounterCode",
 
   /**
    * ambulatory
    */
-  ambulatory: "AMB",
+  AMB: "AMB",
 
   /**
    * emergency
    */
-  emergency: "EMER",
+  EMER: "EMER",
 
   /**
    * field
    */
-  field: "FLD",
+  FLD: "FLD",
 
   /**
    * home health
    */
-  homehealth: "HH",
+  HH: "HH",
 
   /**
    * inpatient encounter
    */
-  inpatientencounter: "IMP",
+  IMP: "IMP",
 
   /**
    * inpatient acute
    */
-  inpatientacute: "ACUTE",
+  ACUTE: "ACUTE",
 
   /**
    * inpatient non-acute
    */
-  inpatientnonacute: "NONAC",
+  NONAC: "NONAC",
 
   /**
    * observation encounter
    */
-  observationencounter: "OBSENC",
+  OBSENC: "OBSENC",
 
   /**
    * pre-admission
    */
-  preadmission: "PRENC",
+  PRENC: "PRENC",
 
   /**
    * short stay
    */
-  shortstay: "SS",
+  SS: "SS",
 
   /**
    * virtual
    */
-  virtual: "VR",
+  VR: "VR",
 
   /**
    * ActMedicalServiceCode
    */
-  ActMedicalServiceCode: "_ActMedicalServiceCode",
+  _ActMedicalServiceCode: "_ActMedicalServiceCode",
 
   /**
    * Alternative Level of Care
    */
-  AlternativeLevelofCare: "ALC",
+  ALC: "ALC",
 
   /**
    * Cardiology
    */
-  Cardiology: "CARD",
+  CARD: "CARD",
 
   /**
    * Chronic
    */
-  Chronic: "CHR",
+  CHR: "CHR",
 
   /**
    * Dental
    */
-  Dental: "DNTL",
+  DNTL: "DNTL",
 
   /**
    * Drug Rehab
    */
-  DrugRehab: "DRGRHB",
+  DRGRHB: "DRGRHB",
 
   /**
    * General
    */
-  General: "GENRL",
+  GENRL: "GENRL",
 
   /**
    * Medical
    */
-  Medical: "MED",
+  MED: "MED",
 
   /**
    * Obstetrics
    */
-  Obstetrics: "OBS",
+  OBS: "OBS",
 
   /**
    * Oncology
    */
-  Oncology: "ONC",
+  ONC: "ONC",
 
   /**
    * Palliative
    */
-  Palliative: "PALL",
+  PALL: "PALL",
 
   /**
    * Pediatrics
    */
-  Pediatrics: "PED",
+  PED: "PED",
 
   /**
    * Pharmaceutical
    */
-  Pharmaceutical: "PHAR",
+  PHAR: "PHAR",
 
   /**
    * Physical Rehab
    */
-  PhysicalRehab: "PHYRHB",
+  PHYRHB: "PHYRHB",
 
   /**
    * Psychiatric
    */
-  Psychiatric: "PSYCH",
+  PSYCH: "PSYCH",
 
   /**
    * Surgical
    */
-  Surgical: "SURG",
+  SURG: "SURG",
 
   /**
    * ActClaimAttachmentCategoryCode
    */
-  ActClaimAttachmentCategoryCode: "_ActClaimAttachmentCategoryCode",
+  _ActClaimAttachmentCategoryCode: "_ActClaimAttachmentCategoryCode",
 
   /**
    * auto attachment
    */
-  autoattachment: "AUTOATTCH",
+  AUTOATTCH: "AUTOATTCH",
 
   /**
    * document
    */
-  document: "DOCUMENT",
+  DOCUMENT: "DOCUMENT",
 
   /**
    * health record
    */
-  healthrecord: "HEALTHREC",
+  HEALTHREC: "HEALTHREC",
 
   /**
    * image attachment
    */
-  imageattachment: "IMG",
+  IMG: "IMG",
 
   /**
    * lab results
    */
-  labresults: "LABRESULTS",
+  LABRESULTS: "LABRESULTS",
 
   /**
    * model
    */
-  model: "MODEL",
+  MODEL: "MODEL",
 
   /**
    * work injury report attachment
    */
-  workinjuryreportattachment: "WIATTCH",
+  WIATTCH: "WIATTCH",
 
   /**
    * x-ray
    */
-  xray: "XRAY",
+  XRAY: "XRAY",
 
   /**
    * ActConsentType
    */
-  ActConsentType: "_ActConsentType",
+  _ActConsentType: "_ActConsentType",
 
   /**
    * information collection
    */
-  informationcollection: "ICOL",
+  ICOL: "ICOL",
 
   /**
    * information disclosure
    */
-  informationdisclosure: "IDSCL",
+  IDSCL: "IDSCL",
 
   /**
    * information access
    */
-  informationaccess: "INFA",
+  INFA: "INFA",
 
   /**
    * access only
    */
-  accessonly: "INFAO",
+  INFAO: "INFAO",
 
   /**
    * access and save only
    */
-  accessandsaveonly: "INFASO",
+  INFASO: "INFASO",
 
   /**
    * information redisclosure
    */
-  informationredisclosure: "IRDSCL",
+  IRDSCL: "IRDSCL",
 
   /**
    * research information access
    */
-  researchinformationaccess: "RESEARCH",
+  RESEARCH: "RESEARCH",
 
   /**
    * de-identified information access
    */
-  deidentifiedinformationaccess: "RSDID",
+  RSDID: "RSDID",
 
   /**
    * re-identifiable information access
    */
-  reidentifiableinformationaccess: "RSREID",
+  RSREID: "RSREID",
 
   /**
    * ActContainerRegistrationCode
    */
-  ActContainerRegistrationCode: "_ActContainerRegistrationCode",
+  _ActContainerRegistrationCode: "_ActContainerRegistrationCode",
 
   /**
    * Identified
    */
-  Identified: "ID",
+  ID: "ID",
 
   /**
    * In Position
    */
-  InPosition: "IP",
+  IP: "IP",
 
   /**
    * Left Equipment
    */
-  LeftEquipment: "L",
+  L: "L",
 
   /**
    * Missing
    */
-  Missing: "M",
+  M: "M",
 
   /**
    * In Process
    */
-  InProcess: "O",
+  O: "O",
 
   /**
    * Process Completed
    */
-  ProcessCompleted: "R",
+  R: "R",
 
   /**
    * Container Unavailable
    */
-  ContainerUnavailable: "X",
+  X: "X",
 
   /**
    * ActControlVariable
    */
-  ActControlVariable: "_ActControlVariable",
+  _ActControlVariable: "_ActControlVariable",
 
   /**
    * auto-repeat permission
    */
-  autorepeatpermission: "AUTO",
+  AUTO: "AUTO",
 
   /**
    * endogenous content
    */
-  endogenouscontent: "ENDC",
+  ENDC: "ENDC",
 
   /**
    * reflex permission
    */
-  reflexpermission: "REFLEX",
+  REFLEX: "REFLEX",
 
   /**
    * ECGControlVariable
    */
-  ECGControlVariable: "_ECGControlVariable",
+  _ECGControlVariable: "_ECGControlVariable",
 
   /**
    * ActCoverageConfirmationCode
    */
-  ActCoverageConfirmationCode: "_ActCoverageConfirmationCode",
+  _ActCoverageConfirmationCode: "_ActCoverageConfirmationCode",
 
   /**
    * ActCoverageAuthorizationConfirmationCode
    */
-  ActCoverageAuthorizationConfirmationCode:
+  _ActCoverageAuthorizationConfirmationCode:
     "_ActCoverageAuthorizationConfirmationCode",
 
   /**
    * Authorized
    */
-  Authorized: "AUTH",
+  AUTH: "AUTH",
 
   /**
    * Not Authorized
    */
-  NotAuthorized: "NAUTH",
+  NAUTH: "NAUTH",
 
   /**
    * ActCoverageEligibilityConfirmationCode
    */
-  ActCoverageEligibilityConfirmationCode:
+  _ActCoverageEligibilityConfirmationCode:
     "_ActCoverageEligibilityConfirmationCode",
 
   /**
    * Eligible
    */
-  Eligible: "ELG",
+  ELG: "ELG",
 
   /**
    * Not Eligible
    */
-  NotEligible: "NELG",
+  NELG: "NELG",
 
   /**
    * ActCoverageLimitCode
    */
-  ActCoverageLimitCode: "_ActCoverageLimitCode",
+  _ActCoverageLimitCode: "_ActCoverageLimitCode",
 
   /**
    * ActCoverageQuantityLimitCode
    */
-  ActCoverageQuantityLimitCode: "_ActCoverageQuantityLimitCode",
+  _ActCoverageQuantityLimitCode: "_ActCoverageQuantityLimitCode",
 
   /**
    * coverage period
    */
-  coverageperiod: "COVPRD",
+  COVPRD: "COVPRD",
 
   /**
    * life time maximum
    */
-  lifetimemaximum: "LFEMX",
+  LFEMX: "LFEMX",
 
   /**
    * Net Amount
    */
-  NetAmount: "NETAMT",
+  NETAMT: "NETAMT",
 
   /**
    * period maximum
    */
-  periodmaximum: "PRDMX",
+  PRDMX: "PRDMX",
 
   /**
    * Unit Price
    */
-  UnitPrice: "UNITPRICE",
+  UNITPRICE: "UNITPRICE",
 
   /**
    * Unit Quantity
    */
-  UnitQuantity: "UNITQTY",
+  UNITQTY: "UNITQTY",
 
   /**
    * coverage maximum
    */
-  coveragemaximum: "COVMX",
+  COVMX: "COVMX",
 
   /**
    * ActCoveredPartyLimitCode
    */
-  ActCoveredPartyLimitCode: "_ActCoveredPartyLimitCode",
+  _ActCoveredPartyLimitCode: "_ActCoveredPartyLimitCode",
 
   /**
    * ActCoveragePartyLimitGroupCode
    */
-  ActCoveragePartyLimitGroupCode: "_ActCoveragePartyLimitGroupCode",
+  _ActCoveragePartyLimitGroupCode: "_ActCoveragePartyLimitGroupCode",
 
   /**
    * ActCoverageTypeCode
    */
-  ActCoverageTypeCode: "_ActCoverageTypeCode",
+  _ActCoverageTypeCode: "_ActCoverageTypeCode",
 
   /**
    * ActInsurancePolicyCode
    */
-  ActInsurancePolicyCode: "_ActInsurancePolicyCode",
+  _ActInsurancePolicyCode: "_ActInsurancePolicyCode",
 
   /**
    * extended healthcare
    */
-  extendedhealthcare: "EHCPOL",
+  EHCPOL: "EHCPOL",
 
   /**
    * health spending account
    */
-  healthspendingaccount: "HSAPOL",
+  HSAPOL: "HSAPOL",
 
   /**
    * automobile
    */
-  automobile: "AUTOPOL",
+  AUTOPOL: "AUTOPOL",
 
   /**
    * collision coverage policy
    */
-  collisioncoveragepolicy: "COL",
+  COL: "COL",
 
   /**
    * uninsured motorist policy
    */
-  uninsuredmotoristpolicy: "UNINSMOT",
+  UNINSMOT: "UNINSMOT",
 
   /**
    * public healthcare
    */
-  publichealthcare: "PUBLICPOL",
+  PUBLICPOL: "PUBLICPOL",
 
   /**
    * dental program
    */
-  dentalprogram: "DENTPRG",
+  DENTPRG: "DENTPRG",
 
   /**
    * public health program
    */
-  publichealthprogram: "DISEASEPRG",
+  DISEASEPRG: "DISEASEPRG",
 
   /**
    * women's cancer detection program
    */
-  womenscancerdetectionprogram: "CANPRG",
+  CANPRG: "CANPRG",
 
   /**
    * end renal program
    */
-  endrenalprogram: "ENDRENAL",
+  ENDRENAL: "ENDRENAL",
 
   /**
    * HIV-AIDS program
    */
-  HIVAIDSprogram: "HIVAIDS",
+  HIVAIDS: "HIVAIDS",
 
   /**
    * mandatory health program
    */
-  mandatoryhealthprogram: "MANDPOL",
+  MANDPOL: "MANDPOL",
 
   /**
    * mental health program
    */
-  mentalhealthprogram: "MENTPRG",
+  MENTPRG: "MENTPRG",
 
   /**
    * safety net clinic program
    */
-  safetynetclinicprogram: "SAFNET",
+  SAFNET: "SAFNET",
 
   /**
    * substance use program
    */
-  substanceuseprogram: "SUBPRG",
+  SUBPRG: "SUBPRG",
 
   /**
    * subsidized health program
    */
-  subsidizedhealthprogram: "SUBSIDIZ",
+  SUBSIDIZ: "SUBSIDIZ",
 
   /**
    * subsidized managed care program
    */
-  subsidizedmanagedcareprogram: "SUBSIDMC",
+  SUBSIDMC: "SUBSIDMC",
 
   /**
    * subsidized supplemental health program
    */
-  subsidizedsupplementalhealthprogram: "SUBSUPP",
+  SUBSUPP: "SUBSUPP",
 
   /**
    * worker's compensation
    */
-  workerscompensation: "WCBPOL",
+  WCBPOL: "WCBPOL",
 
   /**
    * ActInsuranceTypeCode
    */
-  ActInsuranceTypeCode: "_ActInsuranceTypeCode",
+  _ActInsuranceTypeCode: "_ActInsuranceTypeCode",
 
   /**
    * ActHealthInsuranceTypeCode
    */
-  ActHealthInsuranceTypeCode: "_ActHealthInsuranceTypeCode",
+  _ActHealthInsuranceTypeCode: "_ActHealthInsuranceTypeCode",
 
   /**
    * dental care policy
    */
-  dentalcarepolicy: "DENTAL",
+  DENTAL: "DENTAL",
 
   /**
    * disease specific policy
    */
-  diseasespecificpolicy: "DISEASE",
+  DISEASE: "DISEASE",
 
   /**
    * drug policy
    */
-  drugpolicy: "DRUGPOL",
+  DRUGPOL: "DRUGPOL",
 
   /**
    * health insurance plan policy
    */
-  healthinsuranceplanpolicy: "HIP",
+  HIP: "HIP",
 
   /**
    * long term care policy
    */
-  longtermcarepolicy: "LTC",
+  LTC: "LTC",
 
   /**
    * managed care policy
    */
-  managedcarepolicy: "MCPOL",
+  MCPOL: "MCPOL",
 
   /**
    * point of service policy
    */
-  pointofservicepolicy: "POS",
+  POS: "POS",
 
   /**
    * health maintenance organization policy
    */
-  healthmaintenanceorganizationpolicy: "HMO",
+  HMO: "HMO",
 
   /**
    * preferred provider organization policy
    */
-  preferredproviderorganizationpolicy: "PPO",
+  PPO: "PPO",
 
   /**
    * mental health policy
    */
-  mentalhealthpolicy: "MENTPOL",
+  MENTPOL: "MENTPOL",
 
   /**
    * substance use policy
    */
-  substanceusepolicy: "SUBPOL",
+  SUBPOL: "SUBPOL",
 
   /**
    * vision care policy
    */
-  visioncarepolicy: "VISPOL",
+  VISPOL: "VISPOL",
 
   /**
    * disability insurance policy
    */
-  disabilityinsurancepolicy: "DIS",
+  DIS: "DIS",
 
   /**
    * employee welfare benefit plan policy
    */
-  employeewelfarebenefitplanpolicy: "EWB",
+  EWB: "EWB",
 
   /**
    * flexible benefit plan policy
    */
-  flexiblebenefitplanpolicy: "FLEXP",
+  FLEXP: "FLEXP",
 
   /**
    * life insurance policy
    */
-  lifeinsurancepolicy: "LIFE",
+  LIFE: "LIFE",
 
   /**
    * annuity policy
    */
-  annuitypolicy: "ANNU",
+  ANNU: "ANNU",
 
   /**
    * term life insurance policy
    */
-  termlifeinsurancepolicy: "TLIFE",
+  TLIFE: "TLIFE",
 
   /**
    * universal life insurance policy
    */
-  universallifeinsurancepolicy: "ULIFE",
+  ULIFE: "ULIFE",
 
   /**
    * property and casualty insurance policy
    */
-  propertyandcasualtyinsurancepolicy: "PNC",
+  PNC: "PNC",
 
   /**
    * reinsurance policy
    */
-  reinsurancepolicy: "REI",
+  REI: "REI",
 
   /**
    * surplus line insurance policy
    */
-  surpluslineinsurancepolicy: "SURPL",
+  SURPL: "SURPL",
 
   /**
    * umbrella liability insurance policy
    */
-  umbrellaliabilityinsurancepolicy: "UMBRL",
+  UMBRL: "UMBRL",
 
   /**
    * ActProgramTypeCode
    */
-  ActProgramTypeCode: "_ActProgramTypeCode",
+  _ActProgramTypeCode: "_ActProgramTypeCode",
 
   /**
    * charity program
    */
-  charityprogram: "CHAR",
+  CHAR: "CHAR",
 
   /**
    * crime victim program
    */
-  crimevictimprogram: "CRIME",
+  CRIME: "CRIME",
 
   /**
    * employee assistance program
    */
-  employeeassistanceprogram: "EAP",
+  EAP: "EAP",
 
   /**
    * government employee health program
    */
-  governmentemployeehealthprogram: "GOVEMP",
+  GOVEMP: "GOVEMP",
 
   /**
    * high risk pool program
    */
-  highriskpoolprogram: "HIRISK",
+  HIRISK: "HIRISK",
 
   /**
    * indigenous peoples health program
    */
-  indigenouspeopleshealthprogram: "IND",
+  IND: "IND",
 
   /**
    * military health program
    */
-  militaryhealthprogram: "MILITARY",
+  MILITARY: "MILITARY",
 
   /**
    * retiree health program
    */
-  retireehealthprogram: "RETIRE",
+  RETIRE: "RETIRE",
 
   /**
    * social service program
    */
-  socialserviceprogram: "SOCIAL",
+  SOCIAL: "SOCIAL",
 
   /**
    * veteran health program
    */
-  veteranhealthprogram: "VET",
+  VET: "VET",
 
   /**
    * ActDetectedIssueManagementCode
    */
-  ActDetectedIssueManagementCode: "_ActDetectedIssueManagementCode",
+  _ActDetectedIssueManagementCode: "_ActDetectedIssueManagementCode",
 
   /**
    * ActAdministrativeDetectedIssueManagementCode
    */
-  ActAdministrativeDetectedIssueManagementCode:
+  _ActAdministrativeDetectedIssueManagementCode:
     "_ActAdministrativeDetectedIssueManagementCode",
 
   /**
    * Authorization Issue Management Code
    */
-  AuthorizationIssueManagementCode: "_AuthorizationIssueManagementCode",
+  _AuthorizationIssueManagementCode: "_AuthorizationIssueManagementCode",
 
   /**
    * emergency authorization override
    */
-  emergencyauthorizationoverride: "EMAUTH",
+  EMAUTH: "EMAUTH",
 
   /**
    * authorization confirmed
    */
-  authorizationconfirmed: "21",
+  "21": "21",
 
   /**
    * Therapy Appropriate
    */
-  TherapyAppropriate: "1",
+  "1": "1",
 
   /**
    * Consulted Supplier
    */
-  ConsultedSupplier: "19",
+  "19": "19",
 
   /**
    * Assessed Patient
    */
-  AssessedPatient: "2",
+  "2": "2",
 
   /**
    * appropriate indication or diagnosis
    */
-  appropriateindicationordiagnosis: "22",
+  "22": "22",
 
   /**
    * prior therapy documented
    */
-  priortherapydocumented: "23",
+  "23": "23",
 
   /**
    * Patient Explanation
    */
-  PatientExplanation: "3",
+  "3": "3",
 
   /**
    * Consulted Other Source
    */
-  ConsultedOtherSource: "4",
+  "4": "4",
 
   /**
    * Consulted Prescriber
    */
-  ConsultedPrescriber: "5",
+  "5": "5",
 
   /**
    * Prescriber Declined Change
    */
-  PrescriberDeclinedChange: "6",
+  "6": "6",
 
   /**
    * Interacting Therapy No Longer Active/Planned
    */
-  InteractingTherapyNoLongerActivePlanned: "7",
+  "7": "7",
 
   /**
    * Supply Appropriate
    */
-  SupplyAppropriate: "14",
+  "14": "14",
 
   /**
    * Replacement
    */
-  Replacement: "15",
+  "15": "15",
 
   /**
    * Vacation Supply
    */
-  VacationSupply: "16",
+  "16": "16",
 
   /**
    * Weekend Supply
    */
-  WeekendSupply: "17",
+  "17": "17",
 
   /**
    * Leave of Absence
    */
-  LeaveofAbsence: "18",
+  "18": "18",
 
   /**
    * additional quantity on separate dispense
    */
-  additionalquantityonseparatedispense: "20",
+  "20": "20",
 
   /**
    * Other Action Taken
    */
-  OtherActionTaken: "8",
+  "8": "8",
 
   /**
    * Provided Patient Education
    */
-  ProvidedPatientEducation: "10",
+  "10": "10",
 
   /**
    * Added Concurrent Therapy
    */
-  AddedConcurrentTherapy: "11",
+  "11": "11",
 
   /**
    * Temporarily Suspended Concurrent Therapy
    */
-  TemporarilySuspendedConcurrentTherapy: "12",
+  "12": "12",
 
   /**
    * Stopped Concurrent Therapy
    */
-  StoppedConcurrentTherapy: "13",
+  "13": "13",
 
   /**
    * Instituted Ongoing Monitoring Program
    */
-  InstitutedOngoingMonitoringProgram: "9",
+  "9": "9",
 
   /**
    * ActFinancialDetectedIssueManagementCode
    */
-  ActFinancialDetectedIssueManagementCode:
+  _ActFinancialDetectedIssueManagementCode:
     "_ActFinancialDetectedIssueManagementCode",
 
   /**
    * ActExposureCode
    */
-  ActExposureCode: "_ActExposureCode",
+  _ActExposureCode: "_ActExposureCode",
 
   /**
    * Day care - Child care Interaction
    */
-  DaycareChildcareInteraction: "CHLDCARE",
+  CHLDCARE: "CHLDCARE",
 
   /**
    * Common Conveyance Interaction
    */
-  CommonConveyanceInteraction: "CONVEYNC",
+  CONVEYNC: "CONVEYNC",
 
   /**
    * Health Care Interaction - Not Patient Care
    */
-  HealthCareInteractionNotPatientCare: "HLTHCARE",
+  HLTHCARE: "HLTHCARE",
 
   /**
    * Care Giver Interaction
    */
-  CareGiverInteraction: "HOMECARE",
+  HOMECARE: "HOMECARE",
 
   /**
    * Hospital Patient Interaction
    */
-  HospitalPatientInteraction: "HOSPPTNT",
+  HOSPPTNT: "HOSPPTNT",
 
   /**
    * Hospital Visitor Interaction
    */
-  HospitalVisitorInteraction: "HOSPVSTR",
+  HOSPVSTR: "HOSPVSTR",
 
   /**
    * Household Interaction
    */
-  HouseholdInteraction: "HOUSEHLD",
+  HOUSEHLD: "HOUSEHLD",
 
   /**
    * Inmate Interaction
    */
-  InmateInteraction: "INMATE",
+  INMATE: "INMATE",
 
   /**
    * Intimate Interaction
    */
-  IntimateInteraction: "INTIMATE",
+  INTIMATE: "INTIMATE",
 
   /**
    * Long Term Care Facility Interaction
    */
-  LongTermCareFacilityInteraction: "LTRMCARE",
+  LTRMCARE: "LTRMCARE",
 
   /**
    * Common Space Interaction
    */
-  CommonSpaceInteraction: "PLACE",
+  PLACE: "PLACE",
 
   /**
    * Health Care Interaction - Patient Care
    */
-  HealthCareInteractionPatientCare: "PTNTCARE",
+  PTNTCARE: "PTNTCARE",
 
   /**
    * School Interaction
    */
-  SchoolInteraction: "SCHOOL2",
+  SCHOOL2: "SCHOOL2",
 
   /**
    * Social/Extended Family Interaction
    */
-  SocialExtendedFamilyInteraction: "SOCIAL2",
+  SOCIAL2: "SOCIAL2",
 
   /**
    * Common Substance Interaction
    */
-  CommonSubstanceInteraction: "SUBSTNCE",
+  SUBSTNCE: "SUBSTNCE",
 
   /**
    * Common Travel Interaction
    */
-  CommonTravelInteraction: "TRAVINT",
+  TRAVINT: "TRAVINT",
 
   /**
    * Work Interaction
    */
-  WorkInteraction: "WORK2",
+  WORK2: "WORK2",
 
   /**
    * ActFinancialTransactionCode
    */
-  ActFinancialTransactionCode: "_ActFinancialTransactionCode",
+  _ActFinancialTransactionCode: "_ActFinancialTransactionCode",
 
   /**
    * Standard Charge
    */
-  StandardCharge: "CHRG",
+  CHRG: "CHRG",
 
   /**
    * Standard Charge Reversal
    */
-  StandardChargeReversal: "REV",
+  REV: "REV",
 
   /**
    * ActIncidentCode
    */
-  ActIncidentCode: "_ActIncidentCode",
+  _ActIncidentCode: "_ActIncidentCode",
 
   /**
    * Motor vehicle accident
    */
-  Motorvehicleaccident: "MVA",
+  MVA: "MVA",
 
   /**
    * School Accident
    */
-  SchoolAccident: "SCHOOL",
+  SCHOOL: "SCHOOL",
 
   /**
    * Sporting Accident
    */
-  SportingAccident: "SPT",
+  SPT: "SPT",
 
   /**
    * Workplace accident
    */
-  Workplaceaccident: "WPA",
+  WPA: "WPA",
 
   /**
    * ActPatientSafetyIncidentCode
    */
-  ActPatientSafetyIncidentCode: "_ActPatientSafetyIncidentCode",
+  _ActPatientSafetyIncidentCode: "_ActPatientSafetyIncidentCode",
 
   /**
    * ActInformationAccessCode
    */
-  ActInformationAccessCode: "_ActInformationAccessCode",
+  _ActInformationAccessCode: "_ActInformationAccessCode",
 
   /**
    * adverse drug reaction access
    */
-  adversedrugreactionaccess: "ACADR",
+  ACADR: "ACADR",
 
   /**
    * all access
    */
-  allaccess: "ACALL",
+  ACALL: "ACALL",
 
   /**
    * allergy access
    */
-  allergyaccess: "ACALLG",
+  ACALLG: "ACALLG",
 
   /**
    * informational consent access
    */
-  informationalconsentaccess: "ACCONS",
+  ACCONS: "ACCONS",
 
   /**
    * demographics access
    */
-  demographicsaccess: "ACDEMO",
+  ACDEMO: "ACDEMO",
 
   /**
    * diagnostic imaging access
    */
-  diagnosticimagingaccess: "ACDI",
+  ACDI: "ACDI",
 
   /**
    * immunization access
    */
-  immunizationaccess: "ACIMMUN",
+  ACIMMUN: "ACIMMUN",
 
   /**
    * lab test result access
    */
-  labtestresultaccess: "ACLAB",
+  ACLAB: "ACLAB",
 
   /**
    * medication access
    */
-  medicationaccess: "ACMED",
+  ACMED: "ACMED",
 
   /**
    * medical condition access
    */
-  medicalconditionaccess: "ACMEDC",
+  ACMEDC: "ACMEDC",
 
   /**
    * mental health access
    */
-  mentalhealthaccess: "ACMEN",
+  ACMEN: "ACMEN",
 
   /**
    * common observations access
    */
-  commonobservationsaccess: "ACOBS",
+  ACOBS: "ACOBS",
 
   /**
    * policy or program information access
    */
-  policyorprograminformationaccess: "ACPOLPRG",
+  ACPOLPRG: "ACPOLPRG",
 
   /**
    * provider information access
    */
-  providerinformationaccess: "ACPROV",
+  ACPROV: "ACPROV",
 
   /**
    * professional service access
    */
-  professionalserviceaccess: "ACPSERV",
+  ACPSERV: "ACPSERV",
 
   /**
    * substance abuse access
    */
-  substanceabuseaccess: "ACSUBSTAB",
+  ACSUBSTAB: "ACSUBSTAB",
 
   /**
    * ActInformationAccessContextCode
    */
-  ActInformationAccessContextCode: "_ActInformationAccessContextCode",
+  _ActInformationAccessContextCode: "_ActInformationAccessContextCode",
 
   /**
    * authorized information transfer
    */
-  authorizedinformationtransfer: "INFAUT",
+  INFAUT: "INFAUT",
 
   /**
    * after explicit consent
    */
-  afterexplicitconsent: "INFCON",
+  INFCON: "INFCON",
 
   /**
    * only on court order
    */
-  onlyoncourtorder: "INFCRT",
+  INFCRT: "INFCRT",
 
   /**
    * only if danger to others
    */
-  onlyifdangertoothers: "INFDNG",
+  INFDNG: "INFDNG",
 
   /**
    * only in an emergency
    */
-  onlyinanemergency: "INFEMER",
+  INFEMER: "INFEMER",
 
   /**
    * only if public welfare risk
    */
-  onlyifpublicwelfarerisk: "INFPWR",
+  INFPWR: "INFPWR",
 
   /**
    * regulatory information transfer
    */
-  regulatoryinformationtransfer: "INFREG",
+  INFREG: "INFREG",
 
   /**
    * ActInformationCategoryCode
    */
-  ActInformationCategoryCode: "_ActInformationCategoryCode",
+  _ActInformationCategoryCode: "_ActInformationCategoryCode",
 
   /**
    * all categories
    */
-  allcategories: "ALLCAT",
+  ALLCAT: "ALLCAT",
 
   /**
    * allergy category
    */
-  allergycategory: "ALLGCAT",
+  ALLGCAT: "ALLGCAT",
 
   /**
    * adverse drug reaction category
    */
-  adversedrugreactioncategory: "ARCAT",
+  ARCAT: "ARCAT",
 
   /**
    * common observation category
    */
-  commonobservationcategory: "COBSCAT",
+  COBSCAT: "COBSCAT",
 
   /**
    * demographics category
    */
-  demographicscategory: "DEMOCAT",
+  DEMOCAT: "DEMOCAT",
 
   /**
    * diagnostic image category
    */
-  diagnosticimagecategory: "DICAT",
+  DICAT: "DICAT",
 
   /**
    * immunization category
    */
-  immunizationcategory: "IMMUCAT",
+  IMMUCAT: "IMMUCAT",
 
   /**
    * lab test category
    */
-  labtestcategory: "LABCAT",
+  LABCAT: "LABCAT",
 
   /**
    * medical condition category
    */
-  medicalconditioncategory: "MEDCCAT",
+  MEDCCAT: "MEDCCAT",
 
   /**
    * mental health category
    */
-  mentalhealthcategory: "MENCAT",
+  MENCAT: "MENCAT",
 
   /**
    * professional service category
    */
-  professionalservicecategory: "PSVCCAT",
+  PSVCCAT: "PSVCCAT",
 
   /**
    * medication category
    */
-  medicationcategory: "RXCAT",
+  RXCAT: "RXCAT",
 
   /**
    * ActInvoiceElementSummaryCode
    */
-  ActInvoiceElementSummaryCode: "_ActInvoiceElementSummaryCode",
+  _ActInvoiceElementSummaryCode: "_ActInvoiceElementSummaryCode",
 
   /**
    * InvoiceElementAdjudicated
    */
-  InvoiceElementAdjudicated: "_InvoiceElementAdjudicated",
+  _InvoiceElementAdjudicated: "_InvoiceElementAdjudicated",
 
   /**
    * adjud. nullified prior-period electronic amount
    */
-  adjudnullifiedpriorperiodelectronicamount: "ADNFPPELAT",
+  ADNFPPELAT: "ADNFPPELAT",
 
   /**
    * adjud. nullified prior-period electronic amount
    */
-  adjudnullifiedpriorperiodelectronicamount: "ADCNPPELAT",
+  ADCNPPELAT: "ADCNPPELAT",
 
   /**
    * adjud. nullified prior-period electronic count
    */
-  adjudnullifiedpriorperiodelectroniccount: "ADNFPPELCT",
+  ADNFPPELCT: "ADNFPPELCT",
 
   /**
    * adjud. nullified prior-period electronic count
    */
-  adjudnullifiedpriorperiodelectroniccount: "ADCNPPELCT",
+  ADCNPPELCT: "ADCNPPELCT",
 
   /**
    * adjud. nullified prior-period manual amount
    */
-  adjudnullifiedpriorperiodmanualamount: "ADNFPPMNAT",
+  ADNFPPMNAT: "ADNFPPMNAT",
 
   /**
    * adjud. nullified prior-period manual amount
    */
-  adjudnullifiedpriorperiodmanualamount: "ADCNPPMNAT",
+  ADCNPPMNAT: "ADCNPPMNAT",
 
   /**
    * adjud. nullified prior-period manual count
    */
-  adjudnullifiedpriorperiodmanualcount: "ADNFPPMNCT",
+  ADNFPPMNCT: "ADNFPPMNCT",
 
   /**
    * adjud. nullified prior-period manual count
    */
-  adjudnullifiedpriorperiodmanualcount: "ADCNPPMNCT",
+  ADCNPPMNCT: "ADCNPPMNCT",
 
   /**
    * adjud. nullified same-period electronic amount
    */
-  adjudnullifiedsameperiodelectronicamount: "ADNFSPELAT",
+  ADNFSPELAT: "ADNFSPELAT",
 
   /**
    * adjud. nullified same-period electronic amount
    */
-  adjudnullifiedsameperiodelectronicamount: "ADCNSPELAT",
+  ADCNSPELAT: "ADCNSPELAT",
 
   /**
    * adjud. nullified same-period electronic count
    */
-  adjudnullifiedsameperiodelectroniccount: "ADNFSPELCT",
+  ADNFSPELCT: "ADNFSPELCT",
 
   /**
    * adjud. nullified same-period electronic count
    */
-  adjudnullifiedsameperiodelectroniccount: "ADCNSPELCT",
+  ADCNSPELCT: "ADCNSPELCT",
 
   /**
    * adjud. nullified same-period manual amount
    */
-  adjudnullifiedsameperiodmanualamount: "ADNFSPMNAT",
+  ADNFSPMNAT: "ADNFSPMNAT",
 
   /**
    * adjud. nullified same-period manual amount
    */
-  adjudnullifiedsameperiodmanualamount: "ADCNSPMNAT",
+  ADCNSPMNAT: "ADCNSPMNAT",
 
   /**
    * adjud. nullified same-period manual count
    */
-  adjudnullifiedsameperiodmanualcount: "ADNFSPMNCT",
+  ADNFSPMNCT: "ADNFSPMNCT",
 
   /**
    * adjud. nullified same-period manual count
    */
-  adjudnullifiedsameperiodmanualcount: "ADCNSPMNCT",
+  ADCNSPMNCT: "ADCNSPMNCT",
 
   /**
    * adjud. non-payee payable prior-period electronic amount
    */
-  adjudnonpayeepayablepriorperiodelectronicamount: "ADNPPPELAT",
+  ADNPPPELAT: "ADNPPPELAT",
 
   /**
    * adjud. non-payee payable prior-period electronic count
    */
-  adjudnonpayeepayablepriorperiodelectroniccount: "ADNPPPELCT",
+  ADNPPPELCT: "ADNPPPELCT",
 
   /**
    * adjud. non-payee payable prior-period manual amount
    */
-  adjudnonpayeepayablepriorperiodmanualamount: "ADNPPPMNAT",
+  ADNPPPMNAT: "ADNPPPMNAT",
 
   /**
    * adjud. non-payee payable prior-period manual count
    */
-  adjudnonpayeepayablepriorperiodmanualcount: "ADNPPPMNCT",
+  ADNPPPMNCT: "ADNPPPMNCT",
 
   /**
    * adjud. non-payee payable same-period electronic amount
    */
-  adjudnonpayeepayablesameperiodelectronicamount: "ADNPSPELAT",
+  ADNPSPELAT: "ADNPSPELAT",
 
   /**
    * adjud. non-payee payable same-period electronic count
    */
-  adjudnonpayeepayablesameperiodelectroniccount: "ADNPSPELCT",
+  ADNPSPELCT: "ADNPSPELCT",
 
   /**
    * adjud. non-payee payable same-period manual amount
    */
-  adjudnonpayeepayablesameperiodmanualamount: "ADNPSPMNAT",
+  ADNPSPMNAT: "ADNPSPMNAT",
 
   /**
    * adjud. non-payee payable same-period manual count
    */
-  adjudnonpayeepayablesameperiodmanualcount: "ADNPSPMNCT",
+  ADNPSPMNCT: "ADNPSPMNCT",
 
   /**
    * adjud. payee payable prior-period electronic amount
    */
-  adjudpayeepayablepriorperiodelectronicamount: "ADPPPPELAT",
+  ADPPPPELAT: "ADPPPPELAT",
 
   /**
    * adjud. payee payable prior-period electronic count
    */
-  adjudpayeepayablepriorperiodelectroniccount: "ADPPPPELCT",
+  ADPPPPELCT: "ADPPPPELCT",
 
   /**
    * adjud. payee payable prior-period manual amout
    */
-  adjudpayeepayablepriorperiodmanualamout: "ADPPPPMNAT",
+  ADPPPPMNAT: "ADPPPPMNAT",
 
   /**
    * adjud. payee payable prior-period manual count
    */
-  adjudpayeepayablepriorperiodmanualcount: "ADPPPPMNCT",
+  ADPPPPMNCT: "ADPPPPMNCT",
 
   /**
    * adjud. payee payable same-period electronic amount
    */
-  adjudpayeepayablesameperiodelectronicamount: "ADPPSPELAT",
+  ADPPSPELAT: "ADPPSPELAT",
 
   /**
    * adjud. payee payable same-period electronic count
    */
-  adjudpayeepayablesameperiodelectroniccount: "ADPPSPELCT",
+  ADPPSPELCT: "ADPPSPELCT",
 
   /**
    * adjud. payee payable same-period manual amount
    */
-  adjudpayeepayablesameperiodmanualamount: "ADPPSPMNAT",
+  ADPPSPMNAT: "ADPPSPMNAT",
 
   /**
    * adjud. payee payable same-period manual count
    */
-  adjudpayeepayablesameperiodmanualcount: "ADPPSPMNCT",
+  ADPPSPMNCT: "ADPPSPMNCT",
 
   /**
    * adjud. refused prior-period electronic amount
    */
-  adjudrefusedpriorperiodelectronicamount: "ADRFPPELAT",
+  ADRFPPELAT: "ADRFPPELAT",
 
   /**
    * adjud. refused prior-period electronic count
    */
-  adjudrefusedpriorperiodelectroniccount: "ADRFPPELCT",
+  ADRFPPELCT: "ADRFPPELCT",
 
   /**
    * adjud. refused prior-period manual amount
    */
-  adjudrefusedpriorperiodmanualamount: "ADRFPPMNAT",
+  ADRFPPMNAT: "ADRFPPMNAT",
 
   /**
    * adjud. refused prior-period manual count
    */
-  adjudrefusedpriorperiodmanualcount: "ADRFPPMNCT",
+  ADRFPPMNCT: "ADRFPPMNCT",
 
   /**
    * adjud. refused same-period electronic amount
    */
-  adjudrefusedsameperiodelectronicamount: "ADRFSPELAT",
+  ADRFSPELAT: "ADRFSPELAT",
 
   /**
    * adjud. refused same-period electronic count
    */
-  adjudrefusedsameperiodelectroniccount: "ADRFSPELCT",
+  ADRFSPELCT: "ADRFSPELCT",
 
   /**
    * adjud. refused same-period manual amount
    */
-  adjudrefusedsameperiodmanualamount: "ADRFSPMNAT",
+  ADRFSPMNAT: "ADRFSPMNAT",
 
   /**
    * adjud. refused same-period manual count
    */
-  adjudrefusedsameperiodmanualcount: "ADRFSPMNCT",
+  ADRFSPMNCT: "ADRFSPMNCT",
 
   /**
    * InvoiceElementPaid
    */
-  InvoiceElementPaid: "_InvoiceElementPaid",
+  _InvoiceElementPaid: "_InvoiceElementPaid",
 
   /**
    * paid nullified prior-period electronic amount
    */
-  paidnullifiedpriorperiodelectronicamount: "PDNFPPELAT",
+  PDNFPPELAT: "PDNFPPELAT",
 
   /**
    * paid nullified prior-period electronic amount
    */
-  paidnullifiedpriorperiodelectronicamount: "PDCNPPELAT",
+  PDCNPPELAT: "PDCNPPELAT",
 
   /**
    * paid nullified prior-period electronic count
    */
-  paidnullifiedpriorperiodelectroniccount: "PDNFPPELCT",
+  PDNFPPELCT: "PDNFPPELCT",
 
   /**
    * paid nullified prior-period electronic count
    */
-  paidnullifiedpriorperiodelectroniccount: "PDCNPPELCT",
+  PDCNPPELCT: "PDCNPPELCT",
 
   /**
    * paid nullified prior-period manual amount
    */
-  paidnullifiedpriorperiodmanualamount: "PDNFPPMNAT",
+  PDNFPPMNAT: "PDNFPPMNAT",
 
   /**
    * paid nullified prior-period manual amount
    */
-  paidnullifiedpriorperiodmanualamount: "PDCNPPMNAT",
+  PDCNPPMNAT: "PDCNPPMNAT",
 
   /**
    * paid nullified prior-period manual count
    */
-  paidnullifiedpriorperiodmanualcount: "PDNFPPMNCT",
+  PDNFPPMNCT: "PDNFPPMNCT",
 
   /**
    * paid nullified prior-period manual count
    */
-  paidnullifiedpriorperiodmanualcount: "PDCNPPMNCT",
+  PDCNPPMNCT: "PDCNPPMNCT",
 
   /**
    * paid nullified same-period electronic amount
    */
-  paidnullifiedsameperiodelectronicamount: "PDNFSPELAT",
+  PDNFSPELAT: "PDNFSPELAT",
 
   /**
    * paid nullified same-period electronic amount
    */
-  paidnullifiedsameperiodelectronicamount: "PDCNSPELAT",
+  PDCNSPELAT: "PDCNSPELAT",
 
   /**
    * paid nullified same-period electronic count
    */
-  paidnullifiedsameperiodelectroniccount: "PDNFSPELCT",
+  PDNFSPELCT: "PDNFSPELCT",
 
   /**
    * paid nullified same-period electronic count
    */
-  paidnullifiedsameperiodelectroniccount: "PDCNSPELCT",
+  PDCNSPELCT: "PDCNSPELCT",
 
   /**
    * paid nullified same-period manual amount
    */
-  paidnullifiedsameperiodmanualamount: "PDNFSPMNAT",
+  PDNFSPMNAT: "PDNFSPMNAT",
 
   /**
    * paid nullified same-period manual amount
    */
-  paidnullifiedsameperiodmanualamount: "PDCNSPMNAT",
+  PDCNSPMNAT: "PDCNSPMNAT",
 
   /**
    * paid nullified same-period manual count
    */
-  paidnullifiedsameperiodmanualcount: "PDNFSPMNCT",
+  PDNFSPMNCT: "PDNFSPMNCT",
 
   /**
    * paid nullified same-period manual count
    */
-  paidnullifiedsameperiodmanualcount: "PDCNSPMNCT",
+  PDCNSPMNCT: "PDCNSPMNCT",
 
   /**
    * paid non-payee payable prior-period electronic amount
    */
-  paidnonpayeepayablepriorperiodelectronicamount: "PDNPPPELAT",
+  PDNPPPELAT: "PDNPPPELAT",
 
   /**
    * paid non-payee payable prior-period electronic count
    */
-  paidnonpayeepayablepriorperiodelectroniccount: "PDNPPPELCT",
+  PDNPPPELCT: "PDNPPPELCT",
 
   /**
    * paid non-payee payable prior-period manual amount
    */
-  paidnonpayeepayablepriorperiodmanualamount: "PDNPPPMNAT",
+  PDNPPPMNAT: "PDNPPPMNAT",
 
   /**
    * paid non-payee payable prior-period manual count
    */
-  paidnonpayeepayablepriorperiodmanualcount: "PDNPPPMNCT",
+  PDNPPPMNCT: "PDNPPPMNCT",
 
   /**
    * paid non-payee payable same-period electronic amount
    */
-  paidnonpayeepayablesameperiodelectronicamount: "PDNPSPELAT",
+  PDNPSPELAT: "PDNPSPELAT",
 
   /**
    * paid non-payee payable same-period electronic count
    */
-  paidnonpayeepayablesameperiodelectroniccount: "PDNPSPELCT",
+  PDNPSPELCT: "PDNPSPELCT",
 
   /**
    * paid non-payee payable same-period manual amount
    */
-  paidnonpayeepayablesameperiodmanualamount: "PDNPSPMNAT",
+  PDNPSPMNAT: "PDNPSPMNAT",
 
   /**
    * paid non-payee payable same-period manual count
    */
-  paidnonpayeepayablesameperiodmanualcount: "PDNPSPMNCT",
+  PDNPSPMNCT: "PDNPSPMNCT",
 
   /**
    * paid payee payable prior-period electronic amount
    */
-  paidpayeepayablepriorperiodelectronicamount: "PDPPPPELAT",
+  PDPPPPELAT: "PDPPPPELAT",
 
   /**
    * paid payee payable prior-period electronic count
    */
-  paidpayeepayablepriorperiodelectroniccount: "PDPPPPELCT",
+  PDPPPPELCT: "PDPPPPELCT",
 
   /**
    * paid payee payable prior-period manual amount
    */
-  paidpayeepayablepriorperiodmanualamount: "PDPPPPMNAT",
+  PDPPPPMNAT: "PDPPPPMNAT",
 
   /**
    * paid payee payable prior-period manual count
    */
-  paidpayeepayablepriorperiodmanualcount: "PDPPPPMNCT",
+  PDPPPPMNCT: "PDPPPPMNCT",
 
   /**
    * paid payee payable same-period electronic amount
    */
-  paidpayeepayablesameperiodelectronicamount: "PDPPSPELAT",
+  PDPPSPELAT: "PDPPSPELAT",
 
   /**
    * paid payee payable same-period electronic count
    */
-  paidpayeepayablesameperiodelectroniccount: "PDPPSPELCT",
+  PDPPSPELCT: "PDPPSPELCT",
 
   /**
    * paid payee payable same-period manual amount
    */
-  paidpayeepayablesameperiodmanualamount: "PDPPSPMNAT",
+  PDPPSPMNAT: "PDPPSPMNAT",
 
   /**
    * paid payee payable same-period manual count
    */
-  paidpayeepayablesameperiodmanualcount: "PDPPSPMNCT",
+  PDPPSPMNCT: "PDPPSPMNCT",
 
   /**
    * InvoiceElementSubmitted
    */
-  InvoiceElementSubmitted: "_InvoiceElementSubmitted",
+  _InvoiceElementSubmitted: "_InvoiceElementSubmitted",
 
   /**
    * submitted billed electronic amount
    */
-  submittedbilledelectronicamount: "SBBLELAT",
+  SBBLELAT: "SBBLELAT",
 
   /**
    * submitted billed electronic amount
    */
-  submittedbilledelectronicamount: "SBBLAT",
+  SBBLAT: "SBBLAT",
 
   /**
    * submitted billed electronic count
    */
-  submittedbilledelectroniccount: "SBBLELCT",
+  SBBLELCT: "SBBLELCT",
 
   /**
    * submitted billed electronic count
    */
-  submittedbilledelectroniccount: "SBBLCT",
+  SBBLCT: "SBBLCT",
 
   /**
    * submitted nullified electronic amount
    */
-  submittednullifiedelectronicamount: "SBNFELAT",
+  SBNFELAT: "SBNFELAT",
 
   /**
    * submitted nullified electronic amount
    */
-  submittednullifiedelectronicamount: "SBCNAT",
+  SBCNAT: "SBCNAT",
 
   /**
    * submitted cancelled electronic count
    */
-  submittedcancelledelectroniccount: "SBNFELCT",
+  SBNFELCT: "SBNFELCT",
 
   /**
    * submitted cancelled electronic count
    */
-  submittedcancelledelectroniccount: "SBCNCT",
+  SBCNCT: "SBCNCT",
 
   /**
    * submitted pending electronic amount
    */
-  submittedpendingelectronicamount: "SBPDELAT",
+  SBPDELAT: "SBPDELAT",
 
   /**
    * submitted pending electronic amount
    */
-  submittedpendingelectronicamount: "SBPDAT",
+  SBPDAT: "SBPDAT",
 
   /**
    * submitted pending electronic count
    */
-  submittedpendingelectroniccount: "SBPDELCT",
+  SBPDELCT: "SBPDELCT",
 
   /**
    * submitted pending electronic count
    */
-  submittedpendingelectroniccount: "SBPDCT",
+  SBPDCT: "SBPDCT",
 
   /**
    * ActInvoiceOverrideCode
    */
-  ActInvoiceOverrideCode: "_ActInvoiceOverrideCode",
+  _ActInvoiceOverrideCode: "_ActInvoiceOverrideCode",
 
   /**
    * coverage problem
    */
-  coverageproblem: "COVGE",
+  COVGE: "COVGE",
 
   /**
    * electronic form to follow
    */
-  electronicformtofollow: "EFORM",
+  EFORM: "EFORM",
 
   /**
    * fax to follow
    */
-  faxtofollow: "FAX",
+  FAX: "FAX",
 
   /**
    * good faith indicator
    */
-  goodfaithindicator: "GFTH",
+  GFTH: "GFTH",
 
   /**
    * late invoice
    */
-  lateinvoice: "LATE",
+  LATE: "LATE",
 
   /**
    * manual review
    */
-  manualreview: "MANUAL",
+  MANUAL: "MANUAL",
 
   /**
    * out of jurisdiction
    */
-  outofjurisdiction: "OOJ",
+  OOJ: "OOJ",
 
   /**
    * orthodontic service
    */
-  orthodonticservice: "ORTHO",
+  ORTHO: "ORTHO",
 
   /**
    * paper documentation to follow
    */
-  paperdocumentationtofollow: "PAPER",
+  PAPER: "PAPER",
 
   /**
    * public insurance exhausted
    */
-  publicinsuranceexhausted: "PIE",
+  PIE: "PIE",
 
   /**
    * delayed by a previous payor
    */
-  delayedbyapreviouspayor: "PYRDELAY",
+  PYRDELAY: "PYRDELAY",
 
   /**
    * referral not required
    */
-  referralnotrequired: "REFNR",
+  REFNR: "REFNR",
 
   /**
    * repeated service
    */
-  repeatedservice: "REPSERV",
+  REPSERV: "REPSERV",
 
   /**
    * unrelated service
    */
-  unrelatedservice: "UNRELAT",
+  UNRELAT: "UNRELAT",
 
   /**
    * verbal authorization
    */
-  verbalauthorization: "VERBAUTH",
+  VERBAUTH: "VERBAUTH",
 
   /**
    * ActListCode
    */
-  ActListCode: "_ActListCode",
+  _ActListCode: "_ActListCode",
 
   /**
    * ActObservationList
    */
-  ActObservationList: "_ActObservationList",
+  _ActObservationList: "_ActObservationList",
 
   /**
    * care plan
    */
-  careplan: "CARELIST",
+  CARELIST: "CARELIST",
 
   /**
    * condition list
    */
-  conditionlist: "CONDLIST",
+  CONDLIST: "CONDLIST",
 
   /**
    * intolerance list
    */
-  intolerancelist: "INTOLIST",
+  INTOLIST: "INTOLIST",
 
   /**
    * problem list
    */
-  problemlist: "PROBLIST",
+  PROBLIST: "PROBLIST",
 
   /**
    * risk factors
    */
-  riskfactors: "RISKLIST",
+  RISKLIST: "RISKLIST",
 
   /**
    * goal list
    */
-  goallist: "GOALLIST",
+  GOALLIST: "GOALLIST",
 
   /**
    * ActTherapyDurationWorkingListCode
    */
-  ActTherapyDurationWorkingListCode: "_ActTherapyDurationWorkingListCode",
+  _ActTherapyDurationWorkingListCode: "_ActTherapyDurationWorkingListCode",
 
   /**
    * act medication therapy duration working list
    */
-  actmedicationtherapydurationworkinglist:
+  _ActMedicationTherapyDurationWorkingListCode:
     "_ActMedicationTherapyDurationWorkingListCode",
 
   /**
    * short term/acute
    */
-  shorttermacute: "ACU",
+  ACU: "ACU",
 
   /**
    * continuous/chronic
    */
-  continuouschronic: "CHRON",
+  CHRON: "CHRON",
 
   /**
    * one time
    */
-  onetime: "ONET",
+  ONET: "ONET",
 
   /**
    * as needed
    */
-  asneeded: "PRN",
+  PRN: "PRN",
 
   /**
    * medication list
    */
-  medicationlist: "MEDLIST",
+  MEDLIST: "MEDLIST",
 
   /**
    * current medication list
    */
-  currentmedicationlist: "CURMEDLIST",
+  CURMEDLIST: "CURMEDLIST",
 
   /**
    * discharge medication list
    */
-  dischargemedicationlist: "DISCMEDLIST",
+  DISCMEDLIST: "DISCMEDLIST",
 
   /**
    * medication history
    */
-  medicationhistory: "HISTMEDLIST",
+  HISTMEDLIST: "HISTMEDLIST",
 
   /**
    * ActProcedureCategoryList
    */
-  ActProcedureCategoryList: "_ActProcedureCategoryList",
+  _ActProcedureCategoryList: "_ActProcedureCategoryList",
 
   /**
    * ActMonitoringProtocolCode
    */
-  ActMonitoringProtocolCode: "_ActMonitoringProtocolCode",
+  _ActMonitoringProtocolCode: "_ActMonitoringProtocolCode",
 
   /**
    * Controlled Substance
    */
-  ControlledSubstance: "CTLSUB",
+  CTLSUB: "CTLSUB",
 
   /**
    * DEADrugSchedule
    */
-  DEADrugSchedule: "_DEADrugSchedule",
+  _DEADrugSchedule: "_DEADrugSchedule",
 
   /**
    * investigational
    */
-  investigational: "INV",
+  INV: "INV",
 
   /**
    * limited use
    */
-  limiteduse: "LU",
+  LU: "LU",
 
   /**
    * non prescription medicine
    */
-  nonprescriptionmedicine: "OTC",
+  OTC: "OTC",
 
   /**
    * prescription only medicine
    */
-  prescriptiononlymedicine: "RX",
+  RX: "RX",
 
   /**
    * special authorization
    */
-  specialauthorization: "SA",
+  SA: "SA",
 
   /**
    * special access
    */
-  specialaccess: "SAC",
+  SAC: "SAC",
 
   /**
    * ActNonObservationIndicationCode
    */
-  ActNonObservationIndicationCode: "_ActNonObservationIndicationCode",
+  _ActNonObservationIndicationCode: "_ActNonObservationIndicationCode",
 
   /**
    * imaging study requiring contrast
    */
-  imagingstudyrequiringcontrast: "IND01",
+  IND01: "IND01",
 
   /**
    * colonoscopy prep
    */
-  colonoscopyprep: "IND02",
+  IND02: "IND02",
 
   /**
    * prophylaxis
    */
-  prophylaxis: "IND03",
+  IND03: "IND03",
 
   /**
    * surgical prophylaxis
    */
-  surgicalprophylaxis: "IND04",
+  IND04: "IND04",
 
   /**
    * pregnancy prophylaxis
    */
-  pregnancyprophylaxis: "IND05",
+  IND05: "IND05",
 
   /**
    * act observation verification
    */
-  actobservationverification: "_ActObservationVerificationType",
+  _ActObservationVerificationType: "_ActObservationVerificationType",
 
   /**
    * verify paper
    */
-  verifypaper: "VFPAPER",
+  VFPAPER: "VFPAPER",
 
   /**
    * verify paper
    */
-  verifypaper: "VRFPAPER",
+  VRFPAPER: "VRFPAPER",
 
   /**
    * ActPaymentCode
    */
-  ActPaymentCode: "_ActPaymentCode",
+  _ActPaymentCode: "_ActPaymentCode",
 
   /**
    * Automated Clearing House
    */
-  AutomatedClearingHouse: "ACH",
+  ACH: "ACH",
 
   /**
    * Cheque
    */
-  Cheque: "CHK",
+  CHK: "CHK",
 
   /**
    * Direct Deposit
    */
-  DirectDeposit: "DDP",
+  DDP: "DDP",
 
   /**
    * Non-Payment Data
    */
-  NonPaymentData: "NON",
+  NON: "NON",
 
   /**
    * ActPharmacySupplyType
    */
-  ActPharmacySupplyType: "_ActPharmacySupplyType",
+  _ActPharmacySupplyType: "_ActPharmacySupplyType",
 
   /**
    * Daily Fill
    */
-  DailyFill: "DF",
+  DF: "DF",
 
   /**
    * Emergency Supply
    */
-  EmergencySupply: "EM",
+  EM: "EM",
 
   /**
    * Script Owing
    */
-  ScriptOwing: "SO",
+  SO: "SO",
 
   /**
    * First Fill
    */
-  FirstFill: "FF",
+  FF: "FF",
 
   /**
    * First Fill - Complete
    */
-  FirstFillComplete: "FFC",
+  FFC: "FFC",
 
   /**
    * First Fill - Part Fill
    */
-  FirstFillPartFill: "FFP",
+  FFP: "FFP",
 
   /**
    * first fill, partial strength
    */
-  firstfillpartialstrength: "FFSS",
+  FFSS: "FFSS",
 
   /**
    * Trial Fill
    */
-  TrialFill: "TF",
+  TF: "TF",
 
   /**
    * Floor stock
    */
-  Floorstock: "FS",
+  FS: "FS",
 
   /**
    * Manufacturer Sample
    */
-  ManufacturerSample: "MS",
+  MS: "MS",
 
   /**
    * Refill
    */
-  Refill: "RF",
+  RF: "RF",
 
   /**
    * Unit Dose
    */
-  UnitDose: "UD",
+  UD: "UD",
 
   /**
    * Refill - Complete
    */
-  RefillComplete: "RFC",
+  RFC: "RFC",
 
   /**
    * refill complete partial strength
    */
-  refillcompletepartialstrength: "RFCS",
+  RFCS: "RFCS",
 
   /**
    * Refill (First fill this facility)
    */
-  RefillFirstfillthisfacility: "RFF",
+  RFF: "RFF",
 
   /**
    * refill partial strength (first fill this facility)
    */
-  refillpartialstrengthfirstfillthisfacility: "RFFS",
+  RFFS: "RFFS",
 
   /**
    * Refill - Part Fill
    */
-  RefillPartFill: "RFP",
+  RFP: "RFP",
 
   /**
    * refill part fill partial strength
    */
-  refillpartfillpartialstrength: "RFPS",
+  RFPS: "RFPS",
 
   /**
    * refill partial strength
    */
-  refillpartialstrength: "RFS",
+  RFS: "RFS",
 
   /**
    * Trial Balance
    */
-  TrialBalance: "TB",
+  TB: "TB",
 
   /**
    * trial balance partial strength
    */
-  trialbalancepartialstrength: "TBS",
+  TBS: "TBS",
 
   /**
    * unit dose equivalent
    */
-  unitdoseequivalent: "UDE",
+  UDE: "UDE",
 
   /**
    * ActPolicyType
    */
-  ActPolicyType: "_ActPolicyType",
+  _ActPolicyType: "_ActPolicyType",
 
   /**
    * _ActConsent
@@ -3132,42 +3133,42 @@ export const ActInvoiceElementCodeCode = {
   /**
    * grantor choice
    */
-  grantorchoice: "GRANTORCHOICE",
+  GRANTORCHOICE: "GRANTORCHOICE",
 
   /**
    * implied consent
    */
-  impliedconsent: "IMPLIED",
+  IMPLIED: "IMPLIED",
 
   /**
    * implied consent with opportunity to dissent
    */
-  impliedconsentwithopportunitytodissent: "IMPLIEDD",
+  IMPLIEDD: "IMPLIEDD",
 
   /**
    * no consent
    */
-  noconsent: "NOCONSENT",
+  NOCONSENT: "NOCONSENT",
 
   /**
    * opt-in
    */
-  optin: "OPTIN",
+  OPTIN: "OPTIN",
 
   /**
    * opt-in with restrictions
    */
-  optinwithrestrictions: "OPTINR",
+  OPTINR: "OPTINR",
 
   /**
    * op-out
    */
-  opout: "OPTOUT",
+  OPTOUT: "OPTOUT",
 
   /**
    * opt-out with exceptions
    */
-  optoutwithexceptions: "OPTOUTE",
+  OPTOUTE: "OPTOUTE",
 
   /**
    * _ActPrivacyConsentDirective
@@ -3182,12 +3183,12 @@ export const ActInvoiceElementCodeCode = {
   /**
    * GDPR Consent Directive
    */
-  GDPRConsentDirective: "GDPRCD",
+  GDPRCD: "GDPRCD",
 
   /**
    * GDPR Research Consent Directive
    */
-  GDPRResearchConsentDirective: "GDPRResearchCD",
+  GDPRResearchCD: "GDPRResearchCD",
 
   /**
    * _ActGenericConsentDirective
@@ -3197,22 +3198,22 @@ export const ActInvoiceElementCodeCode = {
   /**
    * opt-in to personal information or effect collection in a registry or repository
    */
-  optintopersonalinformationoreffectcollectioninaregistryorrepository: "OIC",
+  OIC: "OIC",
 
   /**
    * opt-in to personal information or effect sharing via a registry or repository
    */
-  optintopersonalinformationoreffectsharingviaaregistryorrepository: "OIS",
+  OIS: "OIS",
 
   /**
    * opt-out of personal information or effect collection in a registry or repository
    */
-  optoutofpersonalinformationoreffectcollectioninaregistryorrepository: "OOC",
+  OOC: "OOC",
 
   /**
    * opt-out of personal information or effect sharing via a registry or repository
    */
-  optoutofpersonalinformationoreffectsharingviaaregistryorrepository: "OOS",
+  OOS: "OOS",
 
   /**
    * _ActUSPrivacyConsentDirective
@@ -3222,67 +3223,62 @@ export const ActInvoiceElementCodeCode = {
   /**
    * 42 CFR Part 2 consent directive
    */
-  FortyTwoCFRPart2consentdirective: "42CFRPart2CD",
+  "42CFRPart2CD": "42CFRPart2CD",
 
   /**
    * Compound HIPAA Research Authorization and Informed Consent for Research
    */
-  CompoundHIPAAResearchAuthorizationandInformedConsentforResearch:
-    "CompoundResearchCD",
+  CompoundResearchCD: "CompoundResearchCD",
 
   /**
    * HIPAA Authorization Consent Directive
    */
-  HIPAAAuthorizationConsentDirective: "HIPAAAuthCD",
+  HIPAAAuthCD: "HIPAAAuthCD",
 
   /**
    * HIPAA Consent Directive
    */
-  HIPAAConsentDirective: "HIPAAConsentCD",
+  HIPAAConsentCD: "HIPAAConsentCD",
 
   /**
    * HIPAA Authorization for Disclosure for Research Consent Directive
    */
-  HIPAAAuthorizationforDisclosureforResearchConsentDirective:
-    "HIPAAResearchAuthCD",
+  HIPAAResearchAuthCD: "HIPAAResearchAuthCD",
 
   /**
    * HIPAA Right of Access Directive
    */
-  HIPAARightofAccessDirective: "HIPAAROAD",
+  HIPAAROAD: "HIPAAROAD",
 
   /**
    * Michigan Consent to Share Behavioral Health Information for Care Coordination Purposes
    */
-  MichiganConsenttoShareBehavioralHealthInformationforCareCoordinationPurposes:
-    "MDHHS-5515",
+  "MDHHS-5515": "MDHHS-5515",
 
   /**
    * Michigan Consent to Share Behavioral Health Information for Care Coordination Purposes-Michigan Mental Health Code
    */
-  MichiganConsenttoShareBehavioralHealthInformationforCareCoordinationPurposesMichiganMentalHealthCode:
-    "MDHHS-5515MMHC",
+  "MDHHS-5515MMHC": "MDHHS-5515MMHC",
 
   /**
    * Michigan Consent to Share Behavioral Health Information for Care Coordination Purposes-US 42 CFR Part 2
    */
-  MichiganConsenttoShareBehavioralHealthInformationforCareCoordinationPurposesUS42CFRPart2:
-    "MDHHS-5515Part2",
+  "MDHHS-5515Part2": "MDHHS-5515Part2",
 
   /**
    * Informed Assent for Research
    */
-  InformedAssentforResearch: "USResearchInformedAssent",
+  USResearchInformedAssent: "USResearchInformedAssent",
 
   /**
    * Informed Consent for Research
    */
-  InformedConsentforResearch: "USResearchInformedConsent",
+  USResearchInformedConsent: "USResearchInformedConsent",
 
   /**
    * Broad Consent for Research
    */
-  BroadConsentforResearch: "USBroadResearchConsent",
+  USBroadResearchConsent: "USBroadResearchConsent",
 
   /**
    * _ActInformationActionPolicy
@@ -3292,52 +3288,52 @@ export const ActInvoiceElementCodeCode = {
   /**
    * access information
    */
-  accessinformation: "INFOACCESS",
+  INFOACCESS: "INFOACCESS",
 
   /**
    * collect information
    */
-  collectinformation: "INFOCOLLECT",
+  INFOCOLLECT: "INFOCOLLECT",
 
   /**
    * deidentify information
    */
-  deidentifyinformation: "INFODEIDENTIFIY",
+  INFODEIDENTIFIY: "INFODEIDENTIFIY",
 
   /**
    * disclose information
    */
-  discloseinformation: "INFODISCLOSE",
+  INFODISCLOSE: "INFODISCLOSE",
 
   /**
    * mask information
    */
-  maskinformation: "INFOMASK",
+  INFOMASK: "INFOMASK",
 
   /**
    * read only information
    */
-  readonlyinformation: "INFOREADONLY",
+  INFOREADONLY: "INFOREADONLY",
 
   /**
    * redact information
    */
-  redactinformation: "INFOREDACT",
+  INFOREDACT: "INFOREDACT",
 
   /**
    * redisclose information
    */
-  rediscloseinformation: "INFOREDISCLOSE",
+  INFOREDISCLOSE: "INFOREDISCLOSE",
 
   /**
    * reidentify information
    */
-  reidentifyinformation: "INFOREIDENTIFY",
+  INFOREIDENTIFY: "INFOREIDENTIFY",
 
   /**
    * use information
    */
-  useinformation: "INFOUSE",
+  INFOUSE: "INFOUSE",
 
   /**
    * _ActInformationPolicy
@@ -3347,142 +3343,142 @@ export const ActInvoiceElementCodeCode = {
   /**
    * jurisdictional information policy
    */
-  jurisdictionalinformationpolicy: "JurisIP",
+  JurisIP: "JurisIP",
 
   /**
    * jurisdictional controlled unclassified information policy
    */
-  jurisdictionalcontrolledunclassifiedinformationpolicy: "JurisCUI",
+  JurisCUI: "JurisCUI",
 
   /**
    * jurisdictional de-identified information policy
    */
-  jurisdictionaldeidentifiedinformationpolicy: "JurisDEID",
+  JurisDEID: "JurisDEID",
 
   /**
    * jurisdictional limited data set
    */
-  jurisdictionallimiteddataset: "JurisLDS",
+  JurisLDS: "JurisLDS",
 
   /**
    * jurisdictional non-sensitive information policy
    */
-  jurisdictionalnonsensitiveinformationpolicy: "JurisNSI",
+  JurisNSI: "JurisNSI",
 
   /**
    * jurisdictional public information policy
    */
-  jurisdictionalpublicinformationpolicy: "JurisPI",
+  JurisPI: "JurisPI",
 
   /**
    * jurisdictional specified controlled unclassified information policy
    */
-  jurisdictionalspecifiedcontrolledunclassifiedinformationpolicy: "JurisSP-CUI",
+  "JurisSP-CUI": "JurisSP-CUI",
 
   /**
    * jurisdictional uncontrolled unclassified information policy
    */
-  jurisdictionaluncontrolledunclassifiedinformationpolicy: "JurisUUI",
+  JurisUUI: "JurisUUI",
 
   /**
    * organizational information policy
    */
-  organizationalinformationpolicy: "OrgIP",
+  OrgIP: "OrgIP",
 
   /**
    * organizational basic controlled unclassified information policy
    */
-  organizationalbasiccontrolledunclassifiedinformationpolicy: "OrgCUI",
+  OrgCUI: "OrgCUI",
 
   /**
    * organizational de-identified informati)on policy
    */
-  organizationaldeidentifiedinformationpolicy: "OrgDEID",
+  OrgDEID: "OrgDEID",
 
   /**
    * organizational limited data set information policy
    */
-  organizationallimiteddatasetinformationpolicy: "OrgLDS",
+  OrgLDS: "OrgLDS",
 
   /**
    * organizational non-sensitive information policy
    */
-  organizationalnonsensitiveinformationpolicy: "OrgNSI",
+  OrgNSI: "OrgNSI",
 
   /**
    * organizational public information policy
    */
-  organizationalpublicinformationpolicy: "OrgPI",
+  OrgPI: "OrgPI",
 
   /**
    * organizational specified controlled unclassified information policy
    */
-  organizationalspecifiedcontrolledunclassifiedinformationpolicy: "OrgSP-CUI",
+  "OrgSP-CUI": "OrgSP-CUI",
 
   /**
    * organizational uncontrolled unclassified information policy
    */
-  organizationaluncontrolledunclassifiedinformationpolicy: "OrgUUI",
+  OrgUUI: "OrgUUI",
 
   /**
    * personal information policy
    */
-  personalinformationpolicy: "PersIP",
+  PersIP: "PersIP",
 
   /**
    * personal de-identified information policy
    */
-  personaldeidentifiedinformationpolicy: "PersDEID",
+  PersDEID: "PersDEID",
 
   /**
    * personal limited data set information policy
    */
-  personallimiteddatasetinformationpolicy: "PersLDS",
+  PersLDS: "PersLDS",
 
   /**
    * personal non-sensitive information policy
    */
-  personalnonsensitiveinformationpolicy: "PersNSI",
+  PersNSI: "PersNSI",
 
   /**
    * personal public information policy
    */
-  personalpublicinformationpolicy: "PersPI",
+  PersPI: "PersPI",
 
   /**
    * ActPrivacyPolicy
    */
-  ActPrivacyPolicy: "_ActPrivacyPolicy",
+  _ActPrivacyPolicy: "_ActPrivacyPolicy",
 
   /**
    * ActConsentDirective
    */
-  ActConsentDirective: "_ActConsentDirective",
+  _ActConsentDirective: "_ActConsentDirective",
 
   /**
    * emergency only
    */
-  emergencyonly: "EMRGONLY",
+  EMRGONLY: "EMRGONLY",
 
   /**
    * notice of privacy practices
    */
-  noticeofprivacypractices: "NOPP",
+  NOPP: "NOPP",
 
   /**
    * ActPrivacyLaw
    */
-  ActPrivacyLaw: "_ActPrivacyLaw",
+  _ActPrivacyLaw: "_ActPrivacyLaw",
 
   /**
    * General Data Protection Regulation
    */
-  GeneralDataProtectionRegulation: "_ActGDPRPrivacyLaw",
+  _ActGDPRPrivacyLaw: "_ActGDPRPrivacyLaw",
 
   /**
    * GDPR Consent
    */
-  GDPRConsent: "GDPRCONSENT",
+  GDPRCONSENT: "GDPRCONSENT",
 
   /**
    * _ActUSPrivacyLaw
@@ -3492,7 +3488,7 @@ export const ActInvoiceElementCodeCode = {
   /**
    * 42 CFR Part2
    */
-  FortyTwoCFRPart2: "42CFRPart2",
+  "42CFRPart2": "42CFRPart2",
 
   /**
    * Common Rule
@@ -3502,7 +3498,7 @@ export const ActInvoiceElementCodeCode = {
   /**
    * HIPAA Authorization for Disclosure
    */
-  HIPAAAuthorizationforDisclosure: "HIPAAAuth",
+  HIPAAAuth: "HIPAAAuth",
 
   /**
    * HIPAA Consent
@@ -3512,22 +3508,22 @@ export const ActInvoiceElementCodeCode = {
   /**
    * HIPAA notice of privacy practices
    */
-  HIPAAnoticeofprivacypractices: "HIPAANOPP",
+  HIPAANOPP: "HIPAANOPP",
 
   /**
    * HIPAA psychotherapy notes
    */
-  HIPAApsychotherapynotes: "HIPAAPsyNotes",
+  HIPAAPsyNotes: "HIPAAPsyNotes",
 
   /**
    * HIPAA Right of Access
    */
-  HIPAARightofAccess: "HIPAAROA",
+  HIPAAROA: "HIPAAROA",
 
   /**
    * HIPAA self-pay
    */
-  HIPAAselfpay: "HIPAASelfPay",
+  HIPAASelfPay: "HIPAASelfPay",
 
   /**
    * Title 38 Section 7332
@@ -3537,502 +3533,502 @@ export const ActInvoiceElementCodeCode = {
   /**
    * HIPAA Consent
    */
-  HIPAAConsent: "a) HIPAAConsent",
+  "a) HIPAAConsent": "a) HIPAAConsent",
 
   /**
    * InformationSensitivityPolicy
    */
-  InformationSensitivityPolicy: "_InformationSensitivityPolicy",
+  _InformationSensitivityPolicy: "_InformationSensitivityPolicy",
 
   /**
    * ActInformationSensitivityPolicy
    */
-  ActInformationSensitivityPolicy: "_ActInformationSensitivityPolicy",
+  _ActInformationSensitivityPolicy: "_ActInformationSensitivityPolicy",
 
   /**
    * substance abuse information sensitivity
    */
-  substanceabuseinformationsensitivity: "ETH",
+  ETH: "ETH",
 
   /**
    * genetic disease information sensitivity
    */
-  geneticdiseaseinformationsensitivity: "GDIS",
+  GDIS: "GDIS",
 
   /**
    * HIV/AIDS information sensitivity
    */
-  HIVAIDSinformationsensitivity: "HIV",
+  HIV: "HIV",
 
   /**
    * military sexual trauma information sensitivity
    */
-  militarysexualtraumainformationsensitivity: "MST",
+  MST: "MST",
 
   /**
    * pregnancy information sensitivity
    */
-  pregnancyinformationsensitivity: "PREGNANT",
+  PREGNANT: "PREGNANT",
 
   /**
    * sickle cell anemia information sensitivity
    */
-  sicklecellanemiainformationsensitivity: "SCA",
+  SCA: "SCA",
 
   /**
    * sexual assault, abuse, or domestic violence information sensitivity
    */
-  sexualassaultabuseordomesticviolenceinformationsensitivity: "SDV",
+  SDV: "SDV",
 
   /**
    * sexuality and reproductive health information sensitivity
    */
-  sexualityandreproductivehealthinformationsensitivity: "SEX",
+  SEX: "SEX",
 
   /**
    * specially protected information sensitivity
    */
-  speciallyprotectedinformationsensitivity: "SPI",
+  SPI: "SPI",
 
   /**
    * behavioral health information sensitivity
    */
-  behavioralhealthinformationsensitivity: "BH",
+  BH: "BH",
 
   /**
    * cognitive disability information sensitivity
    */
-  cognitivedisabilityinformationsensitivity: "COGN",
+  COGN: "COGN",
 
   /**
    * developmental disability information sensitivity
    */
-  developmentaldisabilityinformationsensitivity: "DVD",
+  DVD: "DVD",
 
   /**
    * emotional disturbance information sensitivity
    */
-  emotionaldisturbanceinformationsensitivity: "EMOTDIS",
+  EMOTDIS: "EMOTDIS",
 
   /**
    * mental health information sensitivity
    */
-  mentalhealthinformationsensitivity: "MH",
+  MH: "MH",
 
   /**
    * psychiatry disorder information sensitivity
    */
-  psychiatrydisorderinformationsensitivity: "PSY",
+  PSY: "PSY",
 
   /**
    * psychotherapy note information sensitivity
    */
-  psychotherapynoteinformationsensitivity: "PSYTHPN",
+  PSYTHPN: "PSYTHPN",
 
   /**
    * substance use disorder information sensitivity
    */
-  substanceusedisorderinformationsensitivity: "SUD",
+  SUD: "SUD",
 
   /**
    * alcohol use disorder information sensitivity
    */
-  alcoholusedisorderinformationsensitivity: "ETHUD",
+  ETHUD: "ETHUD",
 
   /**
    * opioid use disorder information sensitivity
    */
-  opioidusedisorderinformationsensitivity: "OPIOIDUD",
+  OPIOIDUD: "OPIOIDUD",
 
   /**
    * sexually transmitted disease information sensitivity
    */
-  sexuallytransmitteddiseaseinformationsensitivity: "STD",
+  STD: "STD",
 
   /**
    * taboo
    */
-  taboo: "TBOO",
+  TBOO: "TBOO",
 
   /**
    * violence information sensitivity
    */
-  violenceinformationsensitivity: "VIO",
+  VIO: "VIO",
 
   /**
    * Identifier Sensitivity
    */
-  IdentifierSensitivity: "IDS",
+  IDS: "IDS",
 
   /**
    * sickle cell
    */
-  sicklecell: "SICKLE",
+  SICKLE: "SICKLE",
 
   /**
    * EntityInformationSensitivityPolicy
    */
-  EntityInformationSensitivityPolicy: "_EntitySensitivityPolicyType",
+  _EntitySensitivityPolicyType: "_EntitySensitivityPolicyType",
 
   /**
    * all demographic information sensitivity
    */
-  alldemographicinformationsensitivity: "DEMO",
+  DEMO: "DEMO",
 
   /**
    * date of birth information sensitivity
    */
-  dateofbirthinformationsensitivity: "DOB",
+  DOB: "DOB",
 
   /**
    * gender and sexual orientation information sensitivity
    */
-  genderandsexualorientationinformationsensitivity: "GENDER",
+  GENDER: "GENDER",
 
   /**
    * living arrangement information sensitivity
    */
-  livingarrangementinformationsensitivity: "LIVARG",
+  LIVARG: "LIVARG",
 
   /**
    * marital status information sensitivity
    */
-  maritalstatusinformationsensitivity: "MARST",
+  MARST: "MARST",
 
   /**
    * patient location
    */
-  patientlocation: "PATLOC",
+  PATLOC: "PATLOC",
 
   /**
    * race information sensitivity
    */
-  raceinformationsensitivity: "RACE",
+  RACE: "RACE",
 
   /**
    * religion information sensitivity
    */
-  religioninformationsensitivity: "REL",
+  REL: "REL",
 
   /**
    * RoleInformationSensitivityPolicy
    */
-  RoleInformationSensitivityPolicy: "_RoleInformationSensitivityPolicy",
+  _RoleInformationSensitivityPolicy: "_RoleInformationSensitivityPolicy",
 
   /**
    * business information sensitivity
    */
-  businessinformationsensitivity: "B",
+  B: "B",
 
   /**
    * employer information sensitivity
    */
-  employerinformationsensitivity: "EMPL",
+  EMPL: "EMPL",
 
   /**
    * location information sensitivity
    */
-  locationinformationsensitivity: "LOCIS",
+  LOCIS: "LOCIS",
 
   /**
    * sensitive service provider information sensitivity
    */
-  sensitiveserviceproviderinformationsensitivity: "SSP",
+  SSP: "SSP",
 
   /**
    * adolescent information sensitivity
    */
-  adolescentinformationsensitivity: "ADOL",
+  ADOL: "ADOL",
 
   /**
    * celebrity information sensitivity
    */
-  celebrityinformationsensitivity: "CEL",
+  CEL: "CEL",
 
   /**
    * celebrity information sensitivity
    */
-  celebrityinformationsensitivity: "VIP",
+  VIP: "VIP",
 
   /**
    * diagnosis information sensitivity
    */
-  diagnosisinformationsensitivity: "DIA",
+  DIA: "DIA",
 
   /**
    * drug information sensitivity
    */
-  druginformationsensitivity: "DRGIS",
+  DRGIS: "DRGIS",
 
   /**
    * employee information sensitivity
    */
-  employeeinformationsensitivity: "EMP",
+  EMP: "EMP",
 
   /**
    * patient default information sensitivity
    */
-  patientdefaultinformationsensitivity: "PDS",
+  PDS: "PDS",
 
   /**
    * physician requested information sensitivity
    */
-  physicianrequestedinformationsensitivity: "PHY",
+  PHY: "PHY",
 
   /**
    * patient requested information sensitivity
    */
-  patientrequestedinformationsensitivity: "PRS",
+  PRS: "PRS",
 
   /**
    * compartment
    */
-  compartment: "COMPT",
+  COMPT: "COMPT",
 
   /**
    * accountable care organization compartment
    */
-  accountablecareorganizationcompartment: "ACOCOMPT",
+  ACOCOMPT: "ACOCOMPT",
 
   /**
    * CDS system compartment
    */
-  CDSsystemcompartment: "CDSSCOMPT",
+  CDSSCOMPT: "CDSSCOMPT",
 
   /**
    * care team compartment
    */
-  careteamcompartment: "CTCOMPT",
+  CTCOMPT: "CTCOMPT",
 
   /**
    * financial management compartment
    */
-  financialmanagementcompartment: "FMCOMPT",
+  FMCOMPT: "FMCOMPT",
 
   /**
    * human resource compartment
    */
-  humanresourcecompartment: "HRCOMPT",
+  HRCOMPT: "HRCOMPT",
 
   /**
    * legitimate relationship compartment
    */
-  legitimaterelationshipcompartment: "LRCOMPT",
+  LRCOMPT: "LRCOMPT",
 
   /**
    * patient administration compartment
    */
-  patientadministrationcompartment: "PACOMPT",
+  PACOMPT: "PACOMPT",
 
   /**
    * research project compartment
    */
-  researchprojectcompartment: "RESCOMPT",
+  RESCOMPT: "RESCOMPT",
 
   /**
    * records management compartment
    */
-  recordsmanagementcompartment: "RMGTCOMPT",
+  RMGTCOMPT: "RMGTCOMPT",
 
   /**
    * trust policy
    */
-  trustpolicy: "ActTrustPolicyType",
+  ActTrustPolicyType: "ActTrustPolicyType",
 
   /**
    * trust accreditation
    */
-  trustaccreditation: "TRSTACCRD",
+  TRSTACCRD: "TRSTACCRD",
 
   /**
    * trust agreement
    */
-  trustagreement: "TRSTAGRE",
+  TRSTAGRE: "TRSTAGRE",
 
   /**
    * trust assurance
    */
-  trustassurance: "TRSTASSUR",
+  TRSTASSUR: "TRSTASSUR",
 
   /**
    * trust certificate
    */
-  trustcertificate: "TRSTCERT",
+  TRSTCERT: "TRSTCERT",
 
   /**
    * trust framework
    */
-  trustframework: "TRSTFWK",
+  TRSTFWK: "TRSTFWK",
 
   /**
    * trust mechanism
    */
-  trustmechanism: "TRSTMEC",
+  TRSTMEC: "TRSTMEC",
 
   /**
    * benefit policy
    */
-  benefitpolicy: "COVPOL",
+  COVPOL: "COVPOL",
 
   /**
    * security policy
    */
-  securitypolicy: "SecurityPolicy",
+  SecurityPolicy: "SecurityPolicy",
 
   /**
    * authorization policy
    */
-  authorizationpolicy: "AUTHPOL",
+  AUTHPOL: "AUTHPOL",
 
   /**
    * access control scheme
    */
-  accesscontrolscheme: "ACCESSCONSCHEME",
+  ACCESSCONSCHEME: "ACCESSCONSCHEME",
 
   /**
    * delegation policy
    */
-  delegationpolicy: "DELEPOL",
+  DELEPOL: "DELEPOL",
 
   /**
    * obligation policy
    */
-  obligationpolicy: "ObligationPolicy",
+  ObligationPolicy: "ObligationPolicy",
 
   /**
    * anonymize
    */
-  anonymize: "ANONY",
+  ANONY: "ANONY",
 
   /**
    * accounting of disclosure
    */
-  accountingofdisclosure: "AOD",
+  AOD: "AOD",
 
   /**
    * audit
    */
-  audit: "AUDIT",
+  AUDIT: "AUDIT",
 
   /**
    * audit trail
    */
-  audittrail: "AUDTR",
+  AUDTR: "AUDTR",
 
   /**
    * comply with policy
    */
-  complywithpolicy: "CPLYPOL",
+  CPLYPOL: "CPLYPOL",
 
   /**
    * comply with confidentiality code
    */
-  complywithconfidentialitycode: "CPLYCC",
+  CPLYCC: "CPLYCC",
 
   /**
    * comply with consent directive
    */
-  complywithconsentdirective: "CPLYCD",
+  CPLYCD: "CPLYCD",
 
   /**
    * comply with controlled unclassified information policy
    */
-  complywithcontrolledunclassifiedinformationpolicy: "CPLYCUI",
+  CPLYCUI: "CPLYCUI",
 
   /**
    * comply with jurisdictional privacy policy
    */
-  complywithjurisdictionalprivacypolicy: "CPLYJPP",
+  CPLYJPP: "CPLYJPP",
 
   /**
    * comply with jurisdictional security policy
    */
-  complywithjurisdictionalsecuritypolicy: "CPLYJSP",
+  CPLYJSP: "CPLYJSP",
 
   /**
    * comply with organizational privacy policy
    */
-  complywithorganizationalprivacypolicy: "CPLYOPP",
+  CPLYOPP: "CPLYOPP",
 
   /**
    * comply with organizational security policy
    */
-  complywithorganizationalsecuritypolicy: "CPLYOSP",
+  CPLYOSP: "CPLYOSP",
 
   /**
    * declassify security label
    */
-  declassifysecuritylabel: "DECLASSIFYLABEL",
+  DECLASSIFYLABEL: "DECLASSIFYLABEL",
 
   /**
    * deidentify
    */
-  deidentify: "DEID",
+  DEID: "DEID",
 
   /**
    * delete after use
    */
-  deleteafteruse: "DELAU",
+  DELAU: "DELAU",
 
   /**
    * downgrade security label
    */
-  downgradesecuritylabel: "DOWNGRDLABEL",
+  DOWNGRDLABEL: "DOWNGRDLABEL",
 
   /**
    * derive security label
    */
-  derivesecuritylabel: "DRIVLABEL",
+  DRIVLABEL: "DRIVLABEL",
 
   /**
    * encrypt
    */
-  encrypt: "ENCRYPT",
+  ENCRYPT: "ENCRYPT",
 
   /**
    * encrypt at rest
    */
-  encryptatrest: "ENCRYPTR",
+  ENCRYPTR: "ENCRYPTR",
 
   /**
    * encrypt in transit
    */
-  encryptintransit: "ENCRYPTT",
+  ENCRYPTT: "ENCRYPTT",
 
   /**
    * encrypt in use
    */
-  encryptinuse: "ENCRYPTU",
+  ENCRYPTU: "ENCRYPTU",
 
   /**
    * human approval
    */
-  humanapproval: "HUAPRV",
+  HUAPRV: "HUAPRV",
 
   /**
    * assign security label
    */
-  assignsecuritylabel: "LABEL",
+  LABEL: "LABEL",
 
   /**
    * mask
    */
-  mask: "MASK",
+  MASK: "MASK",
 
   /**
    * minimum necessary
    */
-  minimumnecessary: "MINEC",
+  MINEC: "MINEC",
 
   /**
    * persist security label
    */
-  persistsecuritylabel: "PERSISTLABEL",
+  PERSISTLABEL: "PERSISTLABEL",
 
   /**
    * privacy mark
    */
-  privacymark: "PRIVMARK",
+  PRIVMARK: "PRIVMARK",
 
   /**
    * CUI Mark
@@ -4042,22 +4038,22 @@ export const ActInvoiceElementCodeCode = {
   /**
    * pseudonymize
    */
-  pseudonymize: "PSEUD",
+  PSEUD: "PSEUD",
 
   /**
    * redact
    */
-  redact: "REDACT",
+  REDACT: "REDACT",
 
   /**
    * upgrade security label
    */
-  upgradesecuritylabel: "UPGRDLABEL",
+  UPGRDLABEL: "UPGRDLABEL",
 
   /**
    * privacy mark
    */
-  privacymark: "PrivacyMark",
+  PrivacyMark: "PrivacyMark",
 
   /**
    * ControlledUnclassifiedInformation
@@ -4082,12 +4078,12 @@ export const ActInvoiceElementCodeCode = {
   /**
    * (CUI//HLTH)
    */
-  CUIHLTH: "CUIHLTHP",
+  CUIHLTHP: "CUIHLTHP",
 
   /**
    * (CUI)
    */
-  CUI: "CUIP",
+  CUIP: "CUIP",
 
   /**
    * CUI//PRVCY
@@ -4097,32 +4093,32 @@ export const ActInvoiceElementCodeCode = {
   /**
    * (CUI//PRVCY)
    */
-  CUIPRVCY: "CUIPRVCYP",
+  CUIPRVCYP: "CUIPRVCYP",
 
   /**
    * CUI//SP-HLTH
    */
-  CUISPHLTH: "CUISP-HLTH",
+  "CUISP-HLTH": "CUISP-HLTH",
 
   /**
    * (CUI//SP-HLTH)
    */
-  CUISPHLTH: "CUISP-HLTHP",
+  "CUISP-HLTHP": "CUISP-HLTHP",
 
   /**
    * CUI//SP-PRVCY
    */
-  CUISPPRVCY: "CUISP-PRVCY",
+  "CUISP-PRVCY": "CUISP-PRVCY",
 
   /**
    * (CUI//SP-PRVCY)
    */
-  CUISPPRVCY: "CUISP-PRVCYP",
+  "CUISP-PRVCYP": "CUISP-PRVCYP",
 
   /**
    * (U)
    */
-  U: "UUI",
+  UUI: "UUI",
 
   /**
    * Security Label Mark
@@ -4132,1180 +4128,1179 @@ export const ActInvoiceElementCodeCode = {
   /**
    * confidential mark
    */
-  confidentialmark: "ConfidentialMark",
+  ConfidentialMark: "ConfidentialMark",
 
   /**
    * copy of original mark
    */
-  copyoforiginalmark: "COPYMark",
+  COPYMark: "COPYMark",
 
   /**
    * deliver only to addressee mark
    */
-  deliveronlytoaddresseemark: "DeliverToAddresseeOnlyMark",
+  DeliverToAddresseeOnlyMark: "DeliverToAddresseeOnlyMark",
 
   /**
    * prohibition against redisclosure mark
    */
-  prohibitionagainstredisclosuremark: "RedisclosureProhibitionMark",
+  RedisclosureProhibitionMark: "RedisclosureProhibitionMark",
 
   /**
    * restricted confidentiality mark
    */
-  restrictedconfidentialitymark: "RestrictedConfidentialityMark",
+  RestrictedConfidentialityMark: "RestrictedConfidentialityMark",
 
   /**
    * Draft Mark
    */
-  DraftMark: "DRAFTMark",
+  DRAFTMark: "DRAFTMark",
 
   /**
    * refrain policy
    */
-  refrainpolicy: "RefrainPolicy",
+  RefrainPolicy: "RefrainPolicy",
 
   /**
    * no disclosure without subject authorization
    */
-  nodisclosurewithoutsubjectauthorization: "NOAUTH",
+  NOAUTH: "NOAUTH",
 
   /**
    * no collection
    */
-  nocollection: "NOCOLLECT",
+  NOCOLLECT: "NOCOLLECT",
 
   /**
    * no disclosure without consent directive
    */
-  nodisclosurewithoutconsentdirective: "NODSCLCD",
+  NODSCLCD: "NODSCLCD",
 
   /**
    * no disclosure without information subject's consent directive
    */
-  nodisclosurewithoutinformationsubjectsconsentdirective: "NODSCLCDS",
+  NODSCLCDS: "NODSCLCDS",
 
   /**
    * no integration
    */
-  nointegration: "NOINTEGRATE",
+  NOINTEGRATE: "NOINTEGRATE",
 
   /**
    * no unlisted entity disclosure
    */
-  nounlistedentitydisclosure: "NOLIST",
+  NOLIST: "NOLIST",
 
   /**
    * no disclosure without MOU
    */
-  nodisclosurewithoutMOU: "NOMOU",
+  NOMOU: "NOMOU",
 
   /**
    * no disclosure without organizational authorization
    */
-  nodisclosurewithoutorganizationalauthorization: "NOORGPOL",
+  NOORGPOL: "NOORGPOL",
 
   /**
    * no disclosure to patient, family or caregivers without attending provider's authorization
    */
-  nodisclosuretopatientfamilyorcaregiverswithoutattendingprovidersauthorization:
-    "NOPAT",
+  NOPAT: "NOPAT",
 
   /**
    * no collection beyond purpose of use
    */
-  nocollectionbeyondpurposeofuse: "NOPERSISTP",
+  NOPERSISTP: "NOPERSISTP",
 
   /**
    * no redisclosure without consent directive
    */
-  noredisclosurewithoutconsentdirective: "NORDSCLCD",
+  NORDSCLCD: "NORDSCLCD",
 
   /**
    * no redisclosure without consent directive
    */
-  noredisclosurewithoutconsentdirective: "NORDSLCD",
+  NORDSLCD: "NORDSLCD",
 
   /**
    * no redisclosure without information subject's consent directive
    */
-  noredisclosurewithoutinformationsubjectsconsentdirective: "NORDSCLCDS",
+  NORDSCLCDS: "NORDSCLCDS",
 
   /**
    * no disclosure without jurisdictional authorization
    */
-  nodisclosurewithoutjurisdictionalauthorization: "NORDSCLW",
+  NORDSCLW: "NORDSCLW",
 
   /**
    * no relinking
    */
-  norelinking: "NORELINK",
+  NORELINK: "NORELINK",
 
   /**
    * no reuse beyond purpose of use
    */
-  noreusebeyondpurposeofuse: "NOREUSE",
+  NOREUSE: "NOREUSE",
 
   /**
    * no unauthorized VIP disclosure
    */
-  nounauthorizedVIPdisclosure: "NOVIP",
+  NOVIP: "NOVIP",
 
   /**
    * no disclosure without originator authorization
    */
-  nodisclosurewithoutoriginatorauthorization: "ORCON",
+  ORCON: "ORCON",
 
   /**
    * ActProductAcquisitionCode
    */
-  ActProductAcquisitionCode: "_ActProductAcquisitionCode",
+  _ActProductAcquisitionCode: "_ActProductAcquisitionCode",
 
   /**
    * Loan
    */
-  Loan: "LOAN",
+  LOAN: "LOAN",
 
   /**
    * Rent
    */
-  Rent: "RENT",
+  RENT: "RENT",
 
   /**
    * Transfer
    */
-  Transfer: "TRANSFER",
+  TRANSFER: "TRANSFER",
 
   /**
    * Sale
    */
-  Sale: "SALE",
+  SALE: "SALE",
 
   /**
    * ActSpecimenTransportCode
    */
-  ActSpecimenTransportCode: "_ActSpecimenTransportCode",
+  _ActSpecimenTransportCode: "_ActSpecimenTransportCode",
 
   /**
    * specimen received
    */
-  specimenreceived: "SREC",
+  SREC: "SREC",
 
   /**
    * specimen in storage
    */
-  specimeninstorage: "SSTOR",
+  SSTOR: "SSTOR",
 
   /**
    * specimen in transit
    */
-  specimenintransit: "STRAN",
+  STRAN: "STRAN",
 
   /**
    * ActSpecimenTreatmentCode
    */
-  ActSpecimenTreatmentCode: "_ActSpecimenTreatmentCode",
+  _ActSpecimenTreatmentCode: "_ActSpecimenTreatmentCode",
 
   /**
    * Acidification
    */
-  Acidification: "ACID",
+  ACID: "ACID",
 
   /**
    * Alkalization
    */
-  Alkalization: "ALK",
+  ALK: "ALK",
 
   /**
    * Defibrination
    */
-  Defibrination: "DEFB",
+  DEFB: "DEFB",
 
   /**
    * Filtration
    */
-  Filtration: "FILT",
+  FILT: "FILT",
 
   /**
    * LDL Precipitation
    */
-  LDLPrecipitation: "LDLP",
+  LDLP: "LDLP",
 
   /**
    * Neutralization
    */
-  Neutralization: "NEUT",
+  NEUT: "NEUT",
 
   /**
    * Recalcification
    */
-  Recalcification: "RECA",
+  RECA: "RECA",
 
   /**
    * Ultrafiltration
    */
-  Ultrafiltration: "UFIL",
+  UFIL: "UFIL",
 
   /**
    * ActSubstanceAdministrationCode
    */
-  ActSubstanceAdministrationCode: "_ActSubstanceAdministrationCode",
+  _ActSubstanceAdministrationCode: "_ActSubstanceAdministrationCode",
 
   /**
    * Drug therapy
    */
-  Drugtherapy: "DRUG",
+  DRUG: "DRUG",
 
   /**
    * food
    */
-  food: "FD",
+  FD: "FD",
 
   /**
    * Immunization
    */
-  Immunization: "IMMUNIZ",
+  IMMUNIZ: "IMMUNIZ",
 
   /**
    * Booster Immunization
    */
-  BoosterImmunization: "BOOSTER",
+  BOOSTER: "BOOSTER",
 
   /**
    * Initial Immunization
    */
-  InitialImmunization: "INITIMMUNIZ",
+  INITIMMUNIZ: "INITIMMUNIZ",
 
   /**
    * ActTaskCode
    */
-  ActTaskCode: "_ActTaskCode",
+  _ActTaskCode: "_ActTaskCode",
 
   /**
    * order entry task
    */
-  orderentrytask: "OE",
+  OE: "OE",
 
   /**
    * laboratory test order entry task
    */
-  laboratorytestorderentrytask: "LABOE",
+  LABOE: "LABOE",
 
   /**
    * medication order entry task
    */
-  medicationorderentrytask: "MEDOE",
+  MEDOE: "MEDOE",
 
   /**
    * patient documentation task
    */
-  patientdocumentationtask: "PATDOC",
+  PATDOC: "PATDOC",
 
   /**
    * allergy list review
    */
-  allergylistreview: "ALLERLREV",
+  ALLERLREV: "ALLERLREV",
 
   /**
    * clinical note entry task
    */
-  clinicalnoteentrytask: "CLINNOTEE",
+  CLINNOTEE: "CLINNOTEE",
 
   /**
    * diagnosis list entry task
    */
-  diagnosislistentrytask: "DIAGLISTE",
+  DIAGLISTE: "DIAGLISTE",
 
   /**
    * discharge instruction entry
    */
-  dischargeinstructionentry: "DISCHINSTE",
+  DISCHINSTE: "DISCHINSTE",
 
   /**
    * discharge summary entry task
    */
-  dischargesummaryentrytask: "DISCHSUME",
+  DISCHSUME: "DISCHSUME",
 
   /**
    * patient education entry
    */
-  patienteducationentry: "PATEDUE",
+  PATEDUE: "PATEDUE",
 
   /**
    * pathology report entry task
    */
-  pathologyreportentrytask: "PATREPE",
+  PATREPE: "PATREPE",
 
   /**
    * problem list entry task
    */
-  problemlistentrytask: "PROBLISTE",
+  PROBLISTE: "PROBLISTE",
 
   /**
    * radiology report entry task
    */
-  radiologyreportentrytask: "RADREPE",
+  RADREPE: "RADREPE",
 
   /**
    * immunization list review
    */
-  immunizationlistreview: "IMMLREV",
+  IMMLREV: "IMMLREV",
 
   /**
    * reminder list review
    */
-  reminderlistreview: "REMLREV",
+  REMLREV: "REMLREV",
 
   /**
    * wellness reminder list review
    */
-  wellnessreminderlistreview: "WELLREMLREV",
+  WELLREMLREV: "WELLREMLREV",
 
   /**
    * patient information review task
    */
-  patientinformationreviewtask: "PATINFO",
+  PATINFO: "PATINFO",
 
   /**
    * allergy list entry
    */
-  allergylistentry: "ALLERLE",
+  ALLERLE: "ALLERLE",
 
   /**
    * clinical decision support intervention review
    */
-  clinicaldecisionsupportinterventionreview: "CDSREV",
+  CDSREV: "CDSREV",
 
   /**
    * clinical note review task
    */
-  clinicalnotereviewtask: "CLINNOTEREV",
+  CLINNOTEREV: "CLINNOTEREV",
 
   /**
    * discharge summary review task
    */
-  dischargesummaryreviewtask: "DISCHSUMREV",
+  DISCHSUMREV: "DISCHSUMREV",
 
   /**
    * diagnosis list review task
    */
-  diagnosislistreviewtask: "DIAGLISTREV",
+  DIAGLISTREV: "DIAGLISTREV",
 
   /**
    * immunization list entry
    */
-  immunizationlistentry: "IMMLE",
+  IMMLE: "IMMLE",
 
   /**
    * laboratory results review task
    */
-  laboratoryresultsreviewtask: "LABRREV",
+  LABRREV: "LABRREV",
 
   /**
    * microbiology results review task
    */
-  microbiologyresultsreviewtask: "MICRORREV",
+  MICRORREV: "MICRORREV",
 
   /**
    * microbiology organisms results review task
    */
-  microbiologyorganismsresultsreviewtask: "MICROORGRREV",
+  MICROORGRREV: "MICROORGRREV",
 
   /**
    * microbiology sensitivity test results review task
    */
-  microbiologysensitivitytestresultsreviewtask: "MICROSENSRREV",
+  MICROSENSRREV: "MICROSENSRREV",
 
   /**
    * medication list review task
    */
-  medicationlistreviewtask: "MLREV",
+  MLREV: "MLREV",
 
   /**
    * medication administration record work list review task
    */
-  medicationadministrationrecordworklistreviewtask: "MARWLREV",
+  MARWLREV: "MARWLREV",
 
   /**
    * orders review task
    */
-  ordersreviewtask: "OREV",
+  OREV: "OREV",
 
   /**
    * pathology report review task
    */
-  pathologyreportreviewtask: "PATREPREV",
+  PATREPREV: "PATREPREV",
 
   /**
    * problem list review task
    */
-  problemlistreviewtask: "PROBLISTREV",
+  PROBLISTREV: "PROBLISTREV",
 
   /**
    * radiology report review task
    */
-  radiologyreportreviewtask: "RADREPREV",
+  RADREPREV: "RADREPREV",
 
   /**
    * reminder list entry
    */
-  reminderlistentry: "REMLE",
+  REMLE: "REMLE",
 
   /**
    * wellness reminder list entry
    */
-  wellnessreminderlistentry: "WELLREMLE",
+  WELLREMLE: "WELLREMLE",
 
   /**
    * risk assessment instrument task
    */
-  riskassessmentinstrumenttask: "RISKASSESS",
+  RISKASSESS: "RISKASSESS",
 
   /**
    * falls risk assessment instrument task
    */
-  fallsriskassessmentinstrumenttask: "FALLRISK",
+  FALLRISK: "FALLRISK",
 
   /**
    * ActTransportationModeCode
    */
-  ActTransportationModeCode: "_ActTransportationModeCode",
+  _ActTransportationModeCode: "_ActTransportationModeCode",
 
   /**
    * ActPatientTransportationModeCode
    */
-  ActPatientTransportationModeCode: "_ActPatientTransportationModeCode",
+  _ActPatientTransportationModeCode: "_ActPatientTransportationModeCode",
 
   /**
    * pedestrian transport
    */
-  pedestriantransport: "AFOOT",
+  AFOOT: "AFOOT",
 
   /**
    * pedestrian transport
    */
-  pedestriantransport: "OnFoot",
+  OnFoot: "OnFoot",
 
   /**
    * ambulance transport
    */
-  ambulancetransport: "AMBT",
+  AMBT: "AMBT",
 
   /**
    * fixed-wing ambulance transport
    */
-  fixedwingambulancetransport: "AMBAIR",
+  AMBAIR: "AMBAIR",
 
   /**
    * fixed-wing ambulance transport
    */
-  fixedwingambulancetransport: "Fixed-wingAmbulance",
+  "Fixed-wingAmbulance": "Fixed-wingAmbulance",
 
   /**
    * ground ambulance transport
    */
-  groundambulancetransport: "AMBGRND",
+  AMBGRND: "AMBGRND",
 
   /**
    * ground ambulance transport
    */
-  groundambulancetransport: "GroundAmbulance",
+  GroundAmbulance: "GroundAmbulance",
 
   /**
    * helicopter ambulance transport
    */
-  helicopterambulancetransport: "AMBHELO",
+  AMBHELO: "AMBHELO",
 
   /**
    * helicopter ambulance transport
    */
-  helicopterambulancetransport: "HelicopterAmbulance",
+  HelicopterAmbulance: "HelicopterAmbulance",
 
   /**
    * ambulance transport
    */
-  ambulancetransport: "Ambulance",
+  Ambulance: "Ambulance",
 
   /**
    * law enforcement transport
    */
-  lawenforcementtransport: "LAWENF",
+  LAWENF: "LAWENF",
 
   /**
    * law enforcement transport
    */
-  lawenforcementtransport: "LawEnforcementVehicle",
+  LawEnforcementVehicle: "LawEnforcementVehicle",
 
   /**
    * private transport
    */
-  privatetransport: "PRVTRN",
+  PRVTRN: "PRVTRN",
 
   /**
    * private transport
    */
-  privatetransport: "PrivateTransport",
+  PrivateTransport: "PrivateTransport",
 
   /**
    * public transport
    */
-  publictransport: "PUBTRN",
+  PUBTRN: "PUBTRN",
 
   /**
    * public transport
    */
-  publictransport: "PublicTransport",
+  PublicTransport: "PublicTransport",
 
   /**
    * ObservationType
    */
-  ObservationType: "_ObservationType",
+  _ObservationType: "_ObservationType",
 
   /**
    * ActSpecObsCode
    */
-  ActSpecObsCode: "_ActSpecObsCode",
+  _ActSpecObsCode: "_ActSpecObsCode",
 
   /**
    * ActSpecObsArtBldCode
    */
-  ActSpecObsArtBldCode: "ARTBLD",
+  ARTBLD: "ARTBLD",
 
   /**
    * ActSpecObsDilutionCode
    */
-  ActSpecObsDilutionCode: "DILUTION",
+  DILUTION: "DILUTION",
 
   /**
    * Auto-High Dilution
    */
-  AutoHighDilution: "AUTO-HIGH",
+  "AUTO-HIGH": "AUTO-HIGH",
 
   /**
    * Auto-Low Dilution
    */
-  AutoLowDilution: "AUTO-LOW",
+  "AUTO-LOW": "AUTO-LOW",
 
   /**
    * Pre-Dilution
    */
-  PreDilution: "PRE",
+  PRE: "PRE",
 
   /**
    * Rerun Dilution
    */
-  RerunDilution: "RERUN",
+  RERUN: "RERUN",
 
   /**
    * ActSpecObsEvntfctsCode
    */
-  ActSpecObsEvntfctsCode: "EVNFCTS",
+  EVNFCTS: "EVNFCTS",
 
   /**
    * ActSpecObsInterferenceCode
    */
-  ActSpecObsInterferenceCode: "INTFR",
+  INTFR: "INTFR",
 
   /**
    * Fibrin
    */
-  Fibrin: "FIBRIN",
+  FIBRIN: "FIBRIN",
 
   /**
    * Hemolysis
    */
-  Hemolysis: "HEMOLYSIS",
+  HEMOLYSIS: "HEMOLYSIS",
 
   /**
    * Icterus
    */
-  Icterus: "ICTERUS",
+  ICTERUS: "ICTERUS",
 
   /**
    * Lipemia
    */
-  Lipemia: "LIPEMIA",
+  LIPEMIA: "LIPEMIA",
 
   /**
    * ActSpecObsVolumeCode
    */
-  ActSpecObsVolumeCode: "VOLUME",
+  VOLUME: "VOLUME",
 
   /**
    * Available Volume
    */
-  AvailableVolume: "AVAILABLE",
+  AVAILABLE: "AVAILABLE",
 
   /**
    * Consumption Volume
    */
-  ConsumptionVolume: "CONSUMPTION",
+  CONSUMPTION: "CONSUMPTION",
 
   /**
    * Current Volume
    */
-  CurrentVolume: "CURRENT",
+  CURRENT: "CURRENT",
 
   /**
    * Initial Volume
    */
-  InitialVolume: "INITIAL",
+  INITIAL: "INITIAL",
 
   /**
    * AnnotationType
    */
-  AnnotationType: "_AnnotationType",
+  _AnnotationType: "_AnnotationType",
 
   /**
    * ActPatientAnnotationType
    */
-  ActPatientAnnotationType: "_ActPatientAnnotationType",
+  _ActPatientAnnotationType: "_ActPatientAnnotationType",
 
   /**
    * diagnostic image note
    */
-  diagnosticimagenote: "ANNDI",
+  ANNDI: "ANNDI",
 
   /**
    * general note
    */
-  generalnote: "ANNGEN",
+  ANNGEN: "ANNGEN",
 
   /**
    * immunization note
    */
-  immunizationnote: "ANNIMM",
+  ANNIMM: "ANNIMM",
 
   /**
    * laboratory note
    */
-  laboratorynote: "ANNLAB",
+  ANNLAB: "ANNLAB",
 
   /**
    * medication note
    */
-  medicationnote: "ANNMED",
+  ANNMED: "ANNMED",
 
   /**
    * ECGAnnotationType
    */
-  ECGAnnotationType: "_ECGAnnotationType",
+  _ECGAnnotationType: "_ECGAnnotationType",
 
   /**
    * GeneticObservationType
    */
-  GeneticObservationType: "_GeneticObservationType",
+  _GeneticObservationType: "_GeneticObservationType",
 
   /**
    * gene
    */
-  gene: "GENE",
+  GENE: "GENE",
 
   /**
    * ImmunizationObservationType
    */
-  ImmunizationObservationType: "_ImmunizationObservationType",
+  _ImmunizationObservationType: "_ImmunizationObservationType",
 
   /**
    * antigen count
    */
-  antigencount: "OBSANTC",
+  OBSANTC: "OBSANTC",
 
   /**
    * antigen validity
    */
-  antigenvalidity: "OBSANTV",
+  OBSANTV: "OBSANTV",
 
   /**
    * Individual Case Safety Report Type
    */
-  IndividualCaseSafetyReportType: "_IndividualCaseSafetyReportType",
+  _IndividualCaseSafetyReportType: "_IndividualCaseSafetyReportType",
 
   /**
    * patient adverse event
    */
-  patientadverseevent: "PAT_ADV_EVNT",
+  PAT_ADV_EVNT: "PAT_ADV_EVNT",
 
   /**
    * vaccine product problem
    */
-  vaccineproductproblem: "VAC_PROBLEM",
+  VAC_PROBLEM: "VAC_PROBLEM",
 
   /**
    * LOINCObservationActContextAgeType
    */
-  LOINCObservationActContextAgeType: "_LOINCObservationActContextAgeType",
+  _LOINCObservationActContextAgeType: "_LOINCObservationActContextAgeType",
 
   /**
    * age patient qn est
    */
-  agepatientqnest: "21611-9",
+  "21611-9": "21611-9",
 
   /**
    * age patient qn reported
    */
-  agepatientqnreported: "21612-7",
+  "21612-7": "21612-7",
 
   /**
    * age patient qn calc
    */
-  agepatientqncalc: "29553-5",
+  "29553-5": "29553-5",
 
   /**
    * age patient qn definition
    */
-  agepatientqndefinition: "30525-0",
+  "30525-0": "30525-0",
 
   /**
    * age at onset of adverse event
    */
-  ageatonsetofadverseevent: "30972-4",
+  "30972-4": "30972-4",
 
   /**
    * MedicationObservationType
    */
-  MedicationObservationType: "_MedicationObservationType",
+  _MedicationObservationType: "_MedicationObservationType",
 
   /**
    * representative half-life
    */
-  representativehalflife: "REP_HALF_LIFE",
+  REP_HALF_LIFE: "REP_HALF_LIFE",
 
   /**
    * coating
    */
-  coating: "SPLCOATING",
+  SPLCOATING: "SPLCOATING",
 
   /**
    * color
    */
-  color: "SPLCOLOR",
+  SPLCOLOR: "SPLCOLOR",
 
   /**
    * image
    */
-  image: "SPLIMAGE",
+  SPLIMAGE: "SPLIMAGE",
 
   /**
    * imprint
    */
-  imprint: "SPLIMPRINT",
+  SPLIMPRINT: "SPLIMPRINT",
 
   /**
    * scoring
    */
-  scoring: "SPLSCORING",
+  SPLSCORING: "SPLSCORING",
 
   /**
    * shape
    */
-  shape: "SPLSHAPE",
+  SPLSHAPE: "SPLSHAPE",
 
   /**
    * size
    */
-  size: "SPLSIZE",
+  SPLSIZE: "SPLSIZE",
 
   /**
    * symbol
    */
-  symbol: "SPLSYMBOL",
+  SPLSYMBOL: "SPLSYMBOL",
 
   /**
    * ObservationIssueTriggerCodedObservationType
    */
-  ObservationIssueTriggerCodedObservationType:
+  _ObservationIssueTriggerCodedObservationType:
     "_ObservationIssueTriggerCodedObservationType",
 
   /**
    * case transmission mode
    */
-  casetransmissionmode: "_CaseTransmissionMode",
+  _CaseTransmissionMode: "_CaseTransmissionMode",
 
   /**
    * airborne transmission
    */
-  airbornetransmission: "AIRTRNS",
+  AIRTRNS: "AIRTRNS",
 
   /**
    * animal to animal transmission
    */
-  animaltoanimaltransmission: "ANANTRNS",
+  ANANTRNS: "ANANTRNS",
 
   /**
    * animal to human transmission
    */
-  animaltohumantransmission: "ANHUMTRNS",
+  ANHUMTRNS: "ANHUMTRNS",
 
   /**
    * body fluid contact transmission
    */
-  bodyfluidcontacttransmission: "BDYFLDTRNS",
+  BDYFLDTRNS: "BDYFLDTRNS",
 
   /**
    * blood borne transmission
    */
-  bloodbornetransmission: "BLDTRNS",
+  BLDTRNS: "BLDTRNS",
 
   /**
    * transdermal transmission
    */
-  transdermaltransmission: "DERMTRNS",
+  DERMTRNS: "DERMTRNS",
 
   /**
    * environmental exposure transmission
    */
-  environmentalexposuretransmission: "ENVTRNS",
+  ENVTRNS: "ENVTRNS",
 
   /**
    * fecal-oral transmission
    */
-  fecaloraltransmission: "FECTRNS",
+  FECTRNS: "FECTRNS",
 
   /**
    * fomite transmission
    */
-  fomitetransmission: "FOMTRNS",
+  FOMTRNS: "FOMTRNS",
 
   /**
    * food-borne transmission
    */
-  foodbornetransmission: "FOODTRNS",
+  FOODTRNS: "FOODTRNS",
 
   /**
    * human to human transmission
    */
-  humantohumantransmission: "HUMHUMTRNS",
+  HUMHUMTRNS: "HUMHUMTRNS",
 
   /**
    * indeterminate disease transmission mode
    */
-  indeterminatediseasetransmissionmode: "INDTRNS",
+  INDTRNS: "INDTRNS",
 
   /**
    * lactation transmission
    */
-  lactationtransmission: "LACTTRNS",
+  LACTTRNS: "LACTTRNS",
 
   /**
    * nosocomial transmission
    */
-  nosocomialtransmission: "NOSTRNS",
+  NOSTRNS: "NOSTRNS",
 
   /**
    * parenteral transmission
    */
-  parenteraltransmission: "PARTRNS",
+  PARTRNS: "PARTRNS",
 
   /**
    * transplacental transmission
    */
-  transplacentaltransmission: "PLACTRNS",
+  PLACTRNS: "PLACTRNS",
 
   /**
    * sexual transmission
    */
-  sexualtransmission: "SEXTRNS",
+  SEXTRNS: "SEXTRNS",
 
   /**
    * transfusion transmission
    */
-  transfusiontransmission: "TRNSFTRNS",
+  TRNSFTRNS: "TRNSFTRNS",
 
   /**
    * vector-borne transmission
    */
-  vectorbornetransmission: "VECTRNS",
+  VECTRNS: "VECTRNS",
 
   /**
    * water-borne transmission
    */
-  waterbornetransmission: "WATTRNS",
+  WATTRNS: "WATTRNS",
 
   /**
    * ObservationQualityMeasureAttribute
    */
-  ObservationQualityMeasureAttribute: "_ObservationQualityMeasureAttribute",
+  _ObservationQualityMeasureAttribute: "_ObservationQualityMeasureAttribute",
 
   /**
    * aggregate measure observation
    */
-  aggregatemeasureobservation: "AGGREGATE",
+  AGGREGATE: "AGGREGATE",
 
   /**
    * composite measure method
    */
-  compositemeasuremethod: "CMPMSRMTH",
+  CMPMSRMTH: "CMPMSRMTH",
 
   /**
    * component measure scoring weight
    */
-  componentmeasurescoringweight: "CMPMSRSCRWGHT",
+  CMPMSRSCRWGHT: "CMPMSRSCRWGHT",
 
   /**
    * copyright
    */
-  copyright: "COPY",
+  COPY: "COPY",
 
   /**
    * clinical recommendation statement
    */
-  clinicalrecommendationstatement: "CRS",
+  CRS: "CRS",
 
   /**
    * definition
    */
-  definition: "DEF",
+  DEF: "DEF",
 
   /**
    * disclaimer
    */
-  disclaimer: "DISC",
+  DISC: "DISC",
 
   /**
    * finalized date/time
    */
-  finalizeddatetime: "FINALDT",
+  FINALDT: "FINALDT",
 
   /**
    * guidance
    */
-  guidance: "GUIDE",
+  GUIDE: "GUIDE",
 
   /**
    * improvement notation
    */
-  improvementnotation: "IDUR",
+  IDUR: "IDUR",
 
   /**
    * items counted
    */
-  itemscounted: "ITMCNT",
+  ITMCNT: "ITMCNT",
 
   /**
    * keyword
    */
-  keyword: "KEY",
+  KEY: "KEY",
 
   /**
    * measurement end date
    */
-  measurementenddate: "MEDT",
+  MEDT: "MEDT",
 
   /**
    * measurement start date
    */
-  measurementstartdate: "MSD",
+  MSD: "MSD",
 
   /**
    * risk adjustment
    */
-  riskadjustment: "MSRADJ",
+  MSRADJ: "MSRADJ",
 
   /**
    * rate aggregation
    */
-  rateaggregation: "MSRAGG",
+  MSRAGG: "MSRAGG",
 
   /**
    * health quality measure improvement notation
    */
-  healthqualitymeasureimprovementnotation: "MSRIMPROV",
+  MSRIMPROV: "MSRIMPROV",
 
   /**
    * jurisdiction
    */
-  jurisdiction: "MSRJUR",
+  MSRJUR: "MSRJUR",
 
   /**
    * reporter type
    */
-  reportertype: "MSRRPTR",
+  MSRRPTR: "MSRRPTR",
 
   /**
    * timeframe for reporting
    */
-  timeframeforreporting: "MSRRPTTIME",
+  MSRRPTTIME: "MSRRPTTIME",
 
   /**
    * measure scoring
    */
-  measurescoring: "MSRSCORE",
+  MSRSCORE: "MSRSCORE",
 
   /**
    * health quality measure care setting
    */
-  healthqualitymeasurecaresetting: "MSRSET",
+  MSRSET: "MSRSET",
 
   /**
    * health quality measure topic type
    */
-  healthqualitymeasuretopictype: "MSRTOPIC",
+  MSRTOPIC: "MSRTOPIC",
 
   /**
    * measurement period
    */
-  measurementperiod: "MSRTP",
+  MSRTP: "MSRTP",
 
   /**
    * measure type
    */
-  measuretype: "MSRTYPE",
+  MSRTYPE: "MSRTYPE",
 
   /**
    * rationale
    */
-  rationale: "RAT",
+  RAT: "RAT",
 
   /**
    * reference
    */
-  reference: "REF",
+  REF: "REF",
 
   /**
    * supplemental data elements
    */
-  supplementaldataelements: "SDE",
+  SDE: "SDE",
 
   /**
    * stratification
    */
-  stratification: "STRAT",
+  STRAT: "STRAT",
 
   /**
    * transmission format
    */
-  transmissionformat: "TRANF",
+  TRANF: "TRANF",
 
   /**
    * notice of use
    */
-  noticeofuse: "USE",
+  USE: "USE",
 
   /**
    * ObservationSequenceType
    */
-  ObservationSequenceType: "_ObservationSequenceType",
+  _ObservationSequenceType: "_ObservationSequenceType",
 
   /**
    * absolute time sequence
    */
-  absolutetimesequence: "TIME_ABSOLUTE",
+  TIME_ABSOLUTE: "TIME_ABSOLUTE",
 
   /**
    * relative time sequence
    */
-  relativetimesequence: "TIME_RELATIVE",
+  TIME_RELATIVE: "TIME_RELATIVE",
 
   /**
    * ECGObservationSequenceType
    */
-  ECGObservationSequenceType: "_ECGObservationSequenceType",
+  _ECGObservationSequenceType: "_ECGObservationSequenceType",
 
   /**
    * ObservationSeriesType
    */
-  ObservationSeriesType: "_ObservationSeriesType",
+  _ObservationSeriesType: "_ObservationSeriesType",
 
   /**
    * ECGObservationSeriesType
    */
-  ECGObservationSeriesType: "_ECGObservationSeriesType",
+  _ECGObservationSeriesType: "_ECGObservationSeriesType",
 
   /**
    * ECG representative beat waveforms
    */
-  ECGrepresentativebeatwaveforms: "REPRESENTATIVE_BEAT",
+  REPRESENTATIVE_BEAT: "REPRESENTATIVE_BEAT",
 
   /**
    * ECG rhythm waveforms
    */
-  ECGrhythmwaveforms: "RHYTHM",
+  RHYTHM: "RHYTHM",
 
   /**
    * PatientImmunizationRelatedObservationType
    */
-  PatientImmunizationRelatedObservationType:
+  _PatientImmunizationRelatedObservationType:
     "_PatientImmunizationRelatedObservationType",
 
   /**
    * classroom
    */
-  classroom: "CLSSRM",
+  CLSSRM: "CLSSRM",
 
   /**
    * grade
    */
-  grade: "GRADE",
+  GRADE: "GRADE",
 
   /**
    * school
    */
-  school: "SCHL",
+  SCHL: "SCHL",
 
   /**
    * school division
    */
-  schooldivision: "SCHLDIV",
+  SCHLDIV: "SCHLDIV",
 
   /**
    * teacher
    */
-  teacher: "TEACHER",
+  TEACHER: "TEACHER",
 
   /**
    * PopulationInclusionObservationType
    */
-  PopulationInclusionObservationType: "_PopulationInclusionObservationType",
+  _PopulationInclusionObservationType: "_PopulationInclusionObservationType",
 
   /**
    * denominator exclusions
    */
-  denominatorexclusions: "DENEX",
+  DENEX: "DENEX",
 
   /**
    * denominator exceptions
    */
-  denominatorexceptions: "DENEXCEP",
+  DENEXCEP: "DENEXCEP",
 
   /**
    * denominator
    */
-  denominator: "DENOM",
+  DENOM: "DENOM",
 
   /**
    * initial population
    */
-  initialpopulation: "IPOP",
+  IPOP: "IPOP",
 
   /**
    * initial patient population
    */
-  initialpatientpopulation: "IPPOP",
+  IPPOP: "IPPOP",
 
   /**
    * measure observation
    */
-  measureobservation: "MSROBS",
+  MSROBS: "MSROBS",
 
   /**
    * measure population
    */
-  measurepopulation: "MSRPOPL",
+  MSRPOPL: "MSRPOPL",
 
   /**
    * measure population exclusions
    */
-  measurepopulationexclusions: "MSRPOPLEX",
+  MSRPOPLEX: "MSRPOPLEX",
 
   /**
    * numerator
    */
-  numerator: "NUMER",
+  NUMER: "NUMER",
 
   /**
    * numerator exclusions
    */
-  numeratorexclusions: "NUMEX",
+  NUMEX: "NUMEX",
 
   /**
    * _PreferenceObservationType
@@ -5315,288 +5310,288 @@ export const ActInvoiceElementCodeCode = {
   /**
    * preference strength
    */
-  preferencestrength: "PREFSTRENGTH",
+  PREFSTRENGTH: "PREFSTRENGTH",
 
   /**
    * Adverse Reaction
    */
-  AdverseReaction: "ADVERSE_REACTION",
+  ADVERSE_REACTION: "ADVERSE_REACTION",
 
   /**
    * Assertion
    */
-  Assertion: "ASSERTION",
+  ASSERTION: "ASSERTION",
 
   /**
    * case seriousness criteria
    */
-  caseseriousnesscriteria: "CASESER",
+  CASESER: "CASESER",
 
   /**
    * case disease imported observation
    */
-  casediseaseimportedobservation: "CDIO",
+  CDIO: "CDIO",
 
   /**
    * criticality
    */
-  criticality: "CRIT",
+  CRIT: "CRIT",
 
   /**
    * case transmission mode observation
    */
-  casetransmissionmodeobservation: "CTMO",
+  CTMO: "CTMO",
 
   /**
    * ObservationDiagnosisTypes
    */
-  ObservationDiagnosisTypes: "DX",
+  DX: "DX",
 
   /**
    * admitting diagnosis
    */
-  admittingdiagnosis: "ADMDX",
+  ADMDX: "ADMDX",
 
   /**
    * discharge diagnosis
    */
-  dischargediagnosis: "DISDX",
+  DISDX: "DISDX",
 
   /**
    * intermediate diagnosis
    */
-  intermediatediagnosis: "INTDX",
+  INTDX: "INTDX",
 
   /**
    * nature of injury
    */
-  natureofinjury: "NOI",
+  NOI: "NOI",
 
   /**
    * ObservationDiagnosisTypes
    */
-  ObservationDiagnosisTypes: "_ObservationDiagnosisTypes",
+  _ObservationDiagnosisTypes: "_ObservationDiagnosisTypes",
 
   /**
    * GIS tier
    */
-  GIStier: "GISTIER",
+  GISTIER: "GISTIER",
 
   /**
    * household situation observation
    */
-  householdsituationobservation: "HHOBS",
+  HHOBS: "HHOBS",
 
   /**
    * detected issue
    */
-  detectedissue: "ISSUE",
+  ISSUE: "ISSUE",
 
   /**
    * ActAdministrativeDetectedIssueCode
    */
-  ActAdministrativeDetectedIssueCode: "_ActAdministrativeDetectedIssueCode",
+  _ActAdministrativeDetectedIssueCode: "_ActAdministrativeDetectedIssueCode",
 
   /**
    * ActAdministrativeAuthorizationDetectedIssueCode
    */
-  ActAdministrativeAuthorizationDetectedIssueCode:
+  _ActAdministrativeAuthorizationDetectedIssueCode:
     "_ActAdministrativeAuthorizationDetectedIssueCode",
 
   /**
    * Insufficient authorization
    */
-  Insufficientauthorization: "NAT",
+  NAT: "NAT",
 
   /**
    * record suppressed
    */
-  recordsuppressed: "SUPPRESSED",
+  SUPPRESSED: "SUPPRESSED",
 
   /**
    * validation issue
    */
-  validationissue: "VALIDAT",
+  VALIDAT: "VALIDAT",
 
   /**
    * Unknown key identifier
    */
-  Unknownkeyidentifier: "KEY204",
+  KEY204: "KEY204",
 
   /**
    * Duplicate key identifier
    */
-  Duplicatekeyidentifier: "KEY205",
+  KEY205: "KEY205",
 
   /**
    * Compliance Alert
    */
-  ComplianceAlert: "COMPLY",
+  COMPLY: "COMPLY",
 
   /**
    * Duplicate Therapy Alert
    */
-  DuplicateTherapyAlert: "DUPTHPY",
+  DUPTHPY: "DUPTHPY",
 
   /**
    * duplicate therapeutic alass alert
    */
-  duplicatetherapeuticalassalert: "DUPTHPCLS",
+  DUPTHPCLS: "DUPTHPCLS",
 
   /**
    * duplicate generic alert
    */
-  duplicategenericalert: "DUPTHPGEN",
+  DUPTHPGEN: "DUPTHPGEN",
 
   /**
    * commonly abused/misused alert
    */
-  commonlyabusedmisusedalert: "ABUSE",
+  ABUSE: "ABUSE",
 
   /**
    * potential fraud
    */
-  potentialfraud: "FRAUD",
+  FRAUD: "FRAUD",
 
   /**
    * Poly-orderer Alert
    */
-  PolyordererAlert: "PLYDOC",
+  PLYDOC: "PLYDOC",
 
   /**
    * Poly-supplier Alert
    */
-  PolysupplierAlert: "PLYPHRM",
+  PLYPHRM: "PLYPHRM",
 
   /**
    * Dosage problem
    */
-  Dosageproblem: "DOSE",
+  DOSE: "DOSE",
 
   /**
    * dosage-condition alert
    */
-  dosageconditionalert: "DOSECOND",
+  DOSECOND: "DOSECOND",
 
   /**
    * Dose-Duration Alert
    */
-  DoseDurationAlert: "DOSEDUR",
+  DOSEDUR: "DOSEDUR",
 
   /**
    * Dose-Duration High Alert
    */
-  DoseDurationHighAlert: "DOSEDURH",
+  DOSEDURH: "DOSEDURH",
 
   /**
    * Dose-Duration High for Indication Alert
    */
-  DoseDurationHighforIndicationAlert: "DOSEDURHIND",
+  DOSEDURHIND: "DOSEDURHIND",
 
   /**
    * Dose-Duration Low Alert
    */
-  DoseDurationLowAlert: "DOSEDURL",
+  DOSEDURL: "DOSEDURL",
 
   /**
    * Dose-Duration Low for Indication Alert
    */
-  DoseDurationLowforIndicationAlert: "DOSEDURLIND",
+  DOSEDURLIND: "DOSEDURLIND",
 
   /**
    * High Dose Alert
    */
-  HighDoseAlert: "DOSEH",
+  DOSEH: "DOSEH",
 
   /**
    * High Dose for Age Alert
    */
-  HighDoseforAgeAlert: "DOSEHINDA",
+  DOSEHINDA: "DOSEHINDA",
 
   /**
    * High Dose for Indication Alert
    */
-  HighDoseforIndicationAlert: "DOSEHIND",
+  DOSEHIND: "DOSEHIND",
 
   /**
    * High Dose for Height/Surface Area Alert
    */
-  HighDoseforHeightSurfaceAreaAlert: "DOSEHINDSA",
+  DOSEHINDSA: "DOSEHINDSA",
 
   /**
    * High Dose for Weight Alert
    */
-  HighDoseforWeightAlert: "DOSEHINDW",
+  DOSEHINDW: "DOSEHINDW",
 
   /**
    * Dose-Interval Alert
    */
-  DoseIntervalAlert: "DOSEIVL",
+  DOSEIVL: "DOSEIVL",
 
   /**
    * Dose-Interval for Indication Alert
    */
-  DoseIntervalforIndicationAlert: "DOSEIVLIND",
+  DOSEIVLIND: "DOSEIVLIND",
 
   /**
    * Low Dose Alert
    */
-  LowDoseAlert: "DOSEL",
+  DOSEL: "DOSEL",
 
   /**
    * Low Dose for Age Alert
    */
-  LowDoseforAgeAlert: "DOSELINDA",
+  DOSELINDA: "DOSELINDA",
 
   /**
    * Low Dose for Indication Alert
    */
-  LowDoseforIndicationAlert: "DOSELIND",
+  DOSELIND: "DOSELIND",
 
   /**
    * Low Dose for Height/Surface Area Alert
    */
-  LowDoseforHeightSurfaceAreaAlert: "DOSELINDSA",
+  DOSELINDSA: "DOSELINDSA",
 
   /**
    * Low Dose for Weight Alert
    */
-  LowDoseforWeightAlert: "DOSELINDW",
+  DOSELINDW: "DOSELINDW",
 
   /**
    * maximum dosage reached
    */
-  maximumdosagereached: "MDOSE",
+  MDOSE: "MDOSE",
 
   /**
    * Observation Alert
    */
-  ObservationAlert: "OBSA",
+  OBSA: "OBSA",
 
   /**
    * Age Alert
    */
-  AgeAlert: "AGE",
+  AGE: "AGE",
 
   /**
    * adult alert
    */
-  adultalert: "ADALRT",
+  ADALRT: "ADALRT",
 
   /**
    * geriatric alert
    */
-  geriatricalert: "GEALRT",
+  GEALRT: "GEALRT",
 
   /**
    * pediatric alert
    */
-  pediatricalert: "PEALRT",
+  PEALRT: "PEALRT",
 
   /**
    * Condition Alert
    */
-  ConditionAlert: "COND",
+  COND: "COND",
 
   /**
    *
@@ -5606,12 +5601,12 @@ export const ActInvoiceElementCodeCode = {
   /**
    * Lactation Alert
    */
-  LactationAlert: "LACT",
+  LACT: "LACT",
 
   /**
    * Pregnancy Alert
    */
-  PregnancyAlert: "PREG",
+  PREG: "PREG",
 
   /**
    *
@@ -5621,727 +5616,728 @@ export const ActInvoiceElementCodeCode = {
   /**
    * common reaction alert
    */
-  commonreactionalert: "CREACT",
+  CREACT: "CREACT",
 
   /**
    * Genetic Alert
    */
-  GeneticAlert: "GEN",
+  GEN: "GEN",
 
   /**
    * Gender Alert
    */
-  GenderAlert: "GEND",
+  GEND: "GEND",
 
   /**
    * Lab Alert
    */
-  LabAlert: "LAB",
+  LAB: "LAB",
 
   /**
    * Reaction Alert
    */
-  ReactionAlert: "REACT",
+  REACT: "REACT",
 
   /**
    * Allergy Alert
    */
-  AllergyAlert: "ALGY",
+  ALGY: "ALGY",
 
   /**
    * Intolerance Alert
    */
-  IntoleranceAlert: "INT",
+  INT: "INT",
 
   /**
    * Related Reaction Alert
    */
-  RelatedReactionAlert: "RREACT",
+  RREACT: "RREACT",
 
   /**
    * Related Allergy Alert
    */
-  RelatedAllergyAlert: "RALG",
+  RALG: "RALG",
 
   /**
    * Related Prior Reaction Alert
    */
-  RelatedPriorReactionAlert: "RAR",
+  RAR: "RAR",
 
   /**
    * Related Intolerance Alert
    */
-  RelatedIntoleranceAlert: "RINT",
+  RINT: "RINT",
 
   /**
    * business constraint violation
    */
-  businessconstraintviolation: "BUS",
+  BUS: "BUS",
 
   /**
    * code is not valid
    */
-  codeisnotvalid: "CODE_INVAL",
+  CODE_INVAL: "CODE_INVAL",
 
   /**
    * code has been deprecated
    */
-  codehasbeendeprecated: "CODE_DEPREC",
+  CODE_DEPREC: "CODE_DEPREC",
 
   /**
    * invalid format
    */
-  invalidformat: "FORMAT",
+  FORMAT: "FORMAT",
 
   /**
    * illegal
    */
-  illegal: "ILLEGAL",
+  ILLEGAL: "ILLEGAL",
 
   /**
    * length out of range
    */
-  lengthoutofrange: "LEN_RANGE",
+  LEN_RANGE: "LEN_RANGE",
 
   /**
    * length is too long
    */
-  lengthistoolong: "LEN_LONG",
+  LEN_LONG: "LEN_LONG",
 
   /**
    * length is too short
    */
-  lengthistooshort: "LEN_SHORT",
+  LEN_SHORT: "LEN_SHORT",
 
   /**
    * conditional element missing
    */
-  conditionalelementmissing: "MISSCOND",
+  MISSCOND: "MISSCOND",
 
   /**
    * mandatory element missing
    */
-  mandatoryelementmissing: "MISSMAND",
+  MISSMAND: "MISSMAND",
 
   /**
    * duplicate values are not permitted
    */
-  duplicatevaluesarenotpermitted: "NODUPS",
+  NODUPS: "NODUPS",
 
   /**
    * element will not be persisted
    */
-  elementwillnotbepersisted: "NOPERSIST",
+  NOPERSIST: "NOPERSIST",
 
   /**
    * repetitions out of range
    */
-  repetitionsoutofrange: "REP_RANGE",
+  REP_RANGE: "REP_RANGE",
 
   /**
    * repetitions above maximum
    */
-  repetitionsabovemaximum: "MAXOCCURS",
+  MAXOCCURS: "MAXOCCURS",
 
   /**
    * repetitions below minimum
    */
-  repetitionsbelowminimum: "MINOCCURS",
+  MINOCCURS: "MINOCCURS",
 
   /**
    * ActAdministrativeRuleDetectedIssueCode
    */
-  ActAdministrativeRuleDetectedIssueCode:
+  _ActAdministrativeRuleDetectedIssueCode:
     "_ActAdministrativeRuleDetectedIssueCode",
 
   /**
    * non-matching identification
    */
-  nonmatchingidentification: "KEY206",
+  KEY206: "KEY206",
 
   /**
    * obsolete record returned
    */
-  obsoleterecordreturned: "OBSOLETE",
+  OBSOLETE: "OBSOLETE",
 
   /**
    * ActSuppliedItemDetectedIssueCode
    */
-  ActSuppliedItemDetectedIssueCode: "_ActSuppliedItemDetectedIssueCode",
+  _ActSuppliedItemDetectedIssueCode: "_ActSuppliedItemDetectedIssueCode",
 
   /**
    * AdministrationDetectedIssueCode
    */
-  AdministrationDetectedIssueCode: "_AdministrationDetectedIssueCode",
+  _AdministrationDetectedIssueCode: "_AdministrationDetectedIssueCode",
 
   /**
    * AppropriatenessDetectedIssueCode
    */
-  AppropriatenessDetectedIssueCode: "_AppropriatenessDetectedIssueCode",
+  _AppropriatenessDetectedIssueCode: "_AppropriatenessDetectedIssueCode",
 
   /**
    * InteractionDetectedIssueCode
    */
-  InteractionDetectedIssueCode: "_InteractionDetectedIssueCode",
+  _InteractionDetectedIssueCode: "_InteractionDetectedIssueCode",
 
   /**
    * Food Interaction Alert
    */
-  FoodInteractionAlert: "FOOD",
+  FOOD: "FOOD",
 
   /**
    * Therapeutic Product Alert
    */
-  TherapeuticProductAlert: "TPROD",
+  TPROD: "TPROD",
 
   /**
    * Drug Interaction Alert
    */
-  DrugInteractionAlert: "DRG",
+  DRG: "DRG",
 
   /**
    * Natural Health Product Alert
    */
-  NaturalHealthProductAlert: "NHP",
+  NHP: "NHP",
 
   /**
    * Non-Prescription Interaction Alert
    */
-  NonPrescriptionInteractionAlert: "NONRX",
+  NONRX: "NONRX",
 
   /**
    * previously ineffective
    */
-  previouslyineffective: "PREVINEF",
+  PREVINEF: "PREVINEF",
 
   /**
    * drug action detected issue
    */
-  drugactiondetectedissue: "DACT",
+  DACT: "DACT",
 
   /**
    * timing detected issue
    */
-  timingdetectedissue: "TIME",
+  TIME: "TIME",
 
   /**
    * end too late alert
    */
-  endtoolatealert: "ALRTENDLATE",
+  ALRTENDLATE: "ALRTENDLATE",
 
   /**
    * start too late alert
    */
-  starttoolatealert: "ALRTSTRTLATE",
+  ALRTSTRTLATE: "ALRTSTRTLATE",
 
   /**
    * DrugActionDetectedIssueCode
    */
-  DrugActionDetectedIssueCode: "_DrugActionDetectedIssueCode",
+  _DrugActionDetectedIssueCode: "_DrugActionDetectedIssueCode",
 
   /**
    * TimingDetectedIssueCode
    */
-  TimingDetectedIssueCode: "_TimingDetectedIssueCode",
+  _TimingDetectedIssueCode: "_TimingDetectedIssueCode",
 
   /**
    * End Too Late Alert
    */
-  EndTooLateAlert: "ENDLATE",
+  ENDLATE: "ENDLATE",
 
   /**
    * Start Too Late Alert
    */
-  StartTooLateAlert: "STRTLATE",
+  STRTLATE: "STRTLATE",
 
   /**
    * SupplyDetectedIssueCode
    */
-  SupplyDetectedIssueCode: "_SupplyDetectedIssueCode",
+  _SupplyDetectedIssueCode: "_SupplyDetectedIssueCode",
 
   /**
    * already performed
    */
-  alreadyperformed: "ALLDONE",
+  ALLDONE: "ALLDONE",
 
   /**
    * fulfillment alert
    */
-  fulfillmentalert: "FULFIL",
+  FULFIL: "FULFIL",
 
   /**
    * no longer actionable
    */
-  nolongeractionable: "NOTACTN",
+  NOTACTN: "NOTACTN",
 
   /**
    * not equivalent alert
    */
-  notequivalentalert: "NOTEQUIV",
+  NOTEQUIV: "NOTEQUIV",
 
   /**
    * not generically equivalent alert
    */
-  notgenericallyequivalentalert: "NOTEQUIVGEN",
+  NOTEQUIVGEN: "NOTEQUIVGEN",
 
   /**
    * not therapeutically equivalent alert
    */
-  nottherapeuticallyequivalentalert: "NOTEQUIVTHER",
+  NOTEQUIVTHER: "NOTEQUIVTHER",
 
   /**
    * event timing incorrect alert
    */
-  eventtimingincorrectalert: "TIMING",
+  TIMING: "TIMING",
 
   /**
    * outside requested time
    */
-  outsiderequestedtime: "INTERVAL",
+  INTERVAL: "INTERVAL",
 
   /**
    * too soon within frequency based on the usage
    */
-  toosoonwithinfrequencybasedontheusage: "MINFREQ",
+  MINFREQ: "MINFREQ",
 
   /**
    * held/suspended alert
    */
-  heldsuspendedalert: "HELD",
+  HELD: "HELD",
 
   /**
    * Refill Too Late Alert
    */
-  RefillTooLateAlert: "TOOLATE",
+  TOOLATE: "TOOLATE",
 
   /**
    * Refill Too Soon Alert
    */
-  RefillTooSoonAlert: "TOOSOON",
+  TOOSOON: "TOOSOON",
 
   /**
    * record recorded as historical
    */
-  recordrecordedashistorical: "HISTORIC",
+  HISTORIC: "HISTORIC",
 
   /**
    * violates stated preferences
    */
-  violatesstatedpreferences: "PATPREF",
+  PATPREF: "PATPREF",
 
   /**
    * violates stated preferences, alternate available
    */
-  violatesstatedpreferencesalternateavailable: "PATPREFALT",
+  PATPREFALT: "PATPREFALT",
 
   /**
    * ActFinancialDetectedIssueCode
    */
-  ActFinancialDetectedIssueCode: "_ActFinancialDetectedIssueCode",
+  _ActFinancialDetectedIssueCode: "_ActFinancialDetectedIssueCode",
 
   /**
    * ClinicalActionDetectedIssueCode
    */
-  ClinicalActionDetectedIssueCode: "_ClinicalActionDetectedIssueCode",
+  _ClinicalActionDetectedIssueCode: "_ClinicalActionDetectedIssueCode",
 
   /**
    * Caregap
    */
-  Caregap: "CAREGAP",
+  CAREGAP: "CAREGAP",
 
   /**
    * Codinggap
    */
-  Codinggap: "CODINGGAP",
+  CODINGGAP: "CODINGGAP",
 
   /**
    * knowledge subject
    */
-  knowledgesubject: "KSUBJ",
+  KSUBJ: "KSUBJ",
 
   /**
    * knowledge subtopic
    */
-  knowledgesubtopic: "KSUBT",
+  KSUBT: "KSUBT",
 
   /**
    * intolerance
    */
-  intolerance: "OINT",
+  OINT: "OINT",
 
   /**
    * Allergy
    */
-  Allergy: "ALG",
+  ALG: "ALG",
 
   /**
    * Drug Allergy
    */
-  DrugAllergy: "DALG",
+  DALG: "DALG",
 
   /**
    * Environmental Allergy
    */
-  EnvironmentalAllergy: "EALG",
+  EALG: "EALG",
 
   /**
    * Food Allergy
    */
-  FoodAllergy: "FALG",
+  FALG: "FALG",
 
   /**
    * Drug Intolerance
    */
-  DrugIntolerance: "DINT",
+  DINT: "DINT",
 
   /**
    * Drug Non-Allergy Intolerance
    */
-  DrugNonAllergyIntolerance: "DNAINT",
+  DNAINT: "DNAINT",
 
   /**
    * Environmental Intolerance
    */
-  EnvironmentalIntolerance: "EINT",
+  EINT: "EINT",
 
   /**
    * Environmental Non-Allergy Intolerance
    */
-  EnvironmentalNonAllergyIntolerance: "ENAINT",
+  ENAINT: "ENAINT",
 
   /**
    * Food Intolerance
    */
-  FoodIntolerance: "FINT",
+  FINT: "FINT",
 
   /**
    * Food Non-Allergy Intolerance
    */
-  FoodNonAllergyIntolerance: "FNAINT",
+  FNAINT: "FNAINT",
 
   /**
    * Non-Allergy Intolerance
    */
-  NonAllergyIntolerance: "NAINT",
+  NAINT: "NAINT",
 
   /**
    * Severity Observation
    */
-  SeverityObservation: "SEV",
+  SEV: "SEV",
 
   /**
    * ActPrivilegeCategorizationType
    */
-  ActPrivilegeCategorizationType: "_ActPrivilegeCategorizationType",
+  _ActPrivilegeCategorizationType: "_ActPrivilegeCategorizationType",
 
   /**
    * AdverseSubstanceAdministrationEventActionTakenType
    */
-  AdverseSubstanceAdministrationEventActionTakenType:
+  _AdverseSubstanceAdministrationEventActionTakenType:
     "_AdverseSubstanceAdministrationEventActionTakenType",
 
   /**
    * CommonClinicalObservationType
    */
-  CommonClinicalObservationType: "_CommonClinicalObservationType",
+  _CommonClinicalObservationType: "_CommonClinicalObservationType",
 
   /**
    * FDALabelData
    */
-  FDALabelData: "_FDALabelData",
+  _FDALabelData: "_FDALabelData",
 
   /**
    * coating
    */
-  coating: "FDACOATING",
+  FDACOATING: "FDACOATING",
 
   /**
    * color
    */
-  color: "FDACOLOR",
+  FDACOLOR: "FDACOLOR",
 
   /**
    * imprint code
    */
-  imprintcode: "FDAIMPRINTCD",
+  FDAIMPRINTCD: "FDAIMPRINTCD",
 
   /**
    * logo
    */
-  logo: "FDALOGO",
+  FDALOGO: "FDALOGO",
 
   /**
    * scoring
    */
-  scoring: "FDASCORING",
+  FDASCORING: "FDASCORING",
 
   /**
    * shape
    */
-  shape: "FDASHAPE",
+  FDASHAPE: "FDASHAPE",
 
   /**
    * size
    */
-  size: "FDASIZE",
+  FDASIZE: "FDASIZE",
 
   /**
    * observation allergy test
    */
-  observationallergytest: "_ObservationAllergyTestCode",
+  _ObservationAllergyTestCode: "_ObservationAllergyTestCode",
 
   /**
    * ObservationAllergyTestType
    */
-  ObservationAllergyTestType: "_ObservationAllergyTestType",
+  _ObservationAllergyTestType: "_ObservationAllergyTestType",
 
   /**
    * observation causality assessment
    */
-  observationcausalityassessment: "_ObservationCausalityAssessmentType",
+  _ObservationCausalityAssessmentType: "_ObservationCausalityAssessmentType",
 
   /**
    * observation dosage definition precondition type
    */
-  observationdosagedefinitionpreconditiontype:
+  _ObservationDosageDefinitionPreconditionType:
     "_ObservationDosageDefinitionPreconditionType",
 
   /**
    * ObservationGenomicFamilyHistoryType
    */
-  ObservationGenomicFamilyHistoryType: "_ObservationGenomicFamilyHistoryType",
+  _ObservationGenomicFamilyHistoryType: "_ObservationGenomicFamilyHistoryType",
 
   /**
    * ObservationIndicationType
    */
-  ObservationIndicationType: "_ObservationIndicationType",
+  _ObservationIndicationType: "_ObservationIndicationType",
 
   /**
    * ObservationIssueTriggerMeasuredObservationType
    */
-  ObservationIssueTriggerMeasuredObservationType:
+  _ObservationIssueTriggerMeasuredObservationType:
     "_ObservationIssueTriggerMeasuredObservationType",
 
   /**
    * ObservationQueryMatchType
    */
-  ObservationQueryMatchType: "_ObservationQueryMatchType",
+  _ObservationQueryMatchType: "_ObservationQueryMatchType",
 
   /**
    * ObservationVisionPrescriptionType
    */
-  ObservationVisionPrescriptionType: "_ObservationVisionPrescriptionType",
+  _ObservationVisionPrescriptionType: "_ObservationVisionPrescriptionType",
 
   /**
    * PatientCharacteristicObservationType
    */
-  PatientCharacteristicObservationType: "_PatientCharacteristicObservationType",
+  _PatientCharacteristicObservationType:
+    "_PatientCharacteristicObservationType",
 
   /**
    * SimpleMeasurableClinicalObservationType
    */
-  SimpleMeasurableClinicalObservationType:
+  _SimpleMeasurableClinicalObservationType:
     "_SimpleMeasurableClinicalObservationType",
 
   /**
    * ROIOverlayShape
    */
-  ROIOverlayShape: "_ROIOverlayShape",
+  _ROIOverlayShape: "_ROIOverlayShape",
 
   /**
    * circle
    */
-  circle: "CIRCLE",
+  CIRCLE: "CIRCLE",
 
   /**
    * ellipse
    */
-  ellipse: "ELLIPSE",
+  ELLIPSE: "ELLIPSE",
 
   /**
    * point
    */
-  point: "POINT",
+  POINT: "POINT",
 
   /**
    * polyline
    */
-  polyline: "POLY",
+  POLY: "POLY",
 
   /**
    * corrected
    */
-  corrected: "C",
+  C: "C",
 
   /**
    * Diet
    */
-  Diet: "DIET",
+  DIET: "DIET",
 
   /**
    * breikost (GE)
    */
-  breikostGE: "BR",
+  BR: "BR",
 
   /**
    * diabetes mellitus diet
    */
-  diabetesmellitusdiet: "DM",
+  DM: "DM",
 
   /**
    * fasting
    */
-  fasting: "FAST",
+  FAST: "FAST",
 
   /**
    * formula diet
    */
-  formuladiet: "FORMULA",
+  FORMULA: "FORMULA",
 
   /**
    * gluten free
    */
-  glutenfree: "GF",
+  GF: "GF",
 
   /**
    * low fat
    */
-  lowfat: "LF",
+  LF: "LF",
 
   /**
    * low protein
    */
-  lowprotein: "LP",
+  LP: "LP",
 
   /**
    * liquid
    */
-  liquid: "LQ",
+  LQ: "LQ",
 
   /**
    * low sodium
    */
-  lowsodium: "LS",
+  LS: "LS",
 
   /**
    * normal diet
    */
-  normaldiet: "N",
+  N: "N",
 
   /**
    * no fat
    */
-  nofat: "NF",
+  NF: "NF",
 
   /**
    * phenylalanine free
    */
-  phenylalaninefree: "PAF",
+  PAF: "PAF",
 
   /**
    * parenteral
    */
-  parenteral: "PAR",
+  PAR: "PAR",
 
   /**
    * reduction diet
    */
-  reductiondiet: "RD",
+  RD: "RD",
 
   /**
    * schonkost (GE)
    */
-  schonkostGE: "SCH",
+  SCH: "SCH",
 
   /**
    * nutritional supplement
    */
-  nutritionalsupplement: "SUPPLEMENT",
+  SUPPLEMENT: "SUPPLEMENT",
 
   /**
    * tea only
    */
-  teaonly: "T",
+  T: "T",
 
   /**
    * low valin, leucin, isoleucin
    */
-  lowvalinleucinisoleucin: "VLI",
+  VLI: "VLI",
 
   /**
    * drug program
    */
-  drugprogram: "DRUGPRG",
+  DRUGPRG: "DRUGPRG",
 
   /**
    * final
    */
-  final: "F",
+  F: "F",
 
   /**
    * preliminary
    */
-  preliminary: "PRLMN",
+  PRLMN: "PRLMN",
 
   /**
    * SecurityObservationType
    */
-  SecurityObservationType: "SECOBS",
+  SECOBS: "SECOBS",
 
   /**
    * security category observation
    */
-  securitycategoryobservation: "SECCATOBS",
+  SECCATOBS: "SECCATOBS",
 
   /**
    * security classification observation
    */
-  securityclassificationobservation: "SECCLASSOBS",
+  SECCLASSOBS: "SECCLASSOBS",
 
   /**
    * security control observation
    */
-  securitycontrolobservation: "SECCONOBS",
+  SECCONOBS: "SECCONOBS",
 
   /**
    * security integrity observation
    */
-  securityintegrityobservation: "SECINTOBS",
+  SECINTOBS: "SECINTOBS",
 
   /**
    * security alteration integrity observation
    */
-  securityalterationintegrityobservation: "SECALTINTOBS",
+  SECALTINTOBS: "SECALTINTOBS",
 
   /**
    * security data integrity observation
    */
-  securitydataintegrityobservation: "SECDATINTOBS",
+  SECDATINTOBS: "SECDATINTOBS",
 
   /**
    * security integrity confidence observation
    */
-  securityintegrityconfidenceobservation: "SECINTCONOBS",
+  SECINTCONOBS: "SECINTCONOBS",
 
   /**
    * security integrity provenance observation
    */
-  securityintegrityprovenanceobservation: "SECINTPRVOBS",
+  SECINTPRVOBS: "SECINTPRVOBS",
 
   /**
    * security integrity provenance asserted by observation
    */
-  securityintegrityprovenanceassertedbyobservation: "SECINTPRVABOBS",
+  SECINTPRVABOBS: "SECINTPRVABOBS",
 
   /**
    * security integrity provenance reported by observation
    */
-  securityintegrityprovenancereportedbyobservation: "SECINTPRVRBOBS",
+  SECINTPRVRBOBS: "SECINTPRVRBOBS",
 
   /**
    * security integrity status observation
    */
-  securityintegritystatusobservation: "SECINTSTOBS",
+  SECINTSTOBS: "SECINTSTOBS",
 
   /**
    * SECTRSTOBS
@@ -6351,158 +6347,158 @@ export const ActInvoiceElementCodeCode = {
   /**
    * trust accreditation observation
    */
-  trustaccreditationobservation: "TRSTACCRDOBS",
+  TRSTACCRDOBS: "TRSTACCRDOBS",
 
   /**
    * trust agreement observation
    */
-  trustagreementobservation: "TRSTAGREOBS",
+  TRSTAGREOBS: "TRSTAGREOBS",
 
   /**
    * trust certificate observation
    */
-  trustcertificateobservation: "TRSTCERTOBS",
+  TRSTCERTOBS: "TRSTCERTOBS",
 
   /**
    * trust framework observation
    */
-  trustframeworkobservation: "TRSTFWKOBS",
+  TRSTFWKOBS: "TRSTFWKOBS",
 
   /**
    * trust assurance observation
    */
-  trustassuranceobservation: "TRSTLOAOBS",
+  TRSTLOAOBS: "TRSTLOAOBS",
 
   /**
    * trust mechanism observation
    */
-  trustmechanismobservation: "TRSTMECOBS",
+  TRSTMECOBS: "TRSTMECOBS",
 
   /**
    * subsidized fee for service program
    */
-  subsidizedfeeforserviceprogram: "SUBSIDFFS",
+  SUBSIDFFS: "SUBSIDFFS",
 
   /**
    * (workers compensation program
    */
-  workerscompensationprogram: "WRKCOMP",
+  WRKCOMP: "WRKCOMP",
 
   /**
    * ActAdjudicationInformationCode
    */
-  ActAdjudicationInformationCode: "_ActAdjudicationInformationCode",
+  _ActAdjudicationInformationCode: "_ActAdjudicationInformationCode",
 
   /**
    * ActBillableTreatmentPlanCode
    */
-  ActBillableTreatmentPlanCode: "_ActBillableTreatmentPlanCode",
+  _ActBillableTreatmentPlanCode: "_ActBillableTreatmentPlanCode",
 
   /**
    * ActCognitiveProfessionalServiceCode
    */
-  ActCognitiveProfessionalServiceCode: "_ActCognitiveProfessionalServiceCode",
+  _ActCognitiveProfessionalServiceCode: "_ActCognitiveProfessionalServiceCode",
 
   /**
    * ActIdentityDocumentCode
    */
-  ActIdentityDocumentCode: "_ActIdentityDocumentCode",
+  _ActIdentityDocumentCode: "_ActIdentityDocumentCode",
 
   /**
    * ActOrderCode
    */
-  ActOrderCode: "_ActOrderCode",
+  _ActOrderCode: "_ActOrderCode",
 
   /**
    * ActPrivilegeCategorization
    */
-  ActPrivilegeCategorization: "_ActPrivilegeCategorization",
+  _ActPrivilegeCategorization: "_ActPrivilegeCategorization",
 
   /**
    * ActProcedureCode
    */
-  ActProcedureCode: "_ActProcedureCode",
+  _ActProcedureCode: "_ActProcedureCode",
 
   /**
    * ActBillableServiceCode
    */
-  ActBillableServiceCode: "_ActBillableServiceCode",
+  _ActBillableServiceCode: "_ActBillableServiceCode",
 
   /**
    * ActMedicalBillableServiceCode
    */
-  ActMedicalBillableServiceCode: "_ActMedicalBillableServiceCode",
+  _ActMedicalBillableServiceCode: "_ActMedicalBillableServiceCode",
 
   /**
    * ActNonMedicalBillableServiceCode
    */
-  ActNonMedicalBillableServiceCode: "_ActNonMedicalBillableServiceCode",
+  _ActNonMedicalBillableServiceCode: "_ActNonMedicalBillableServiceCode",
 
   /**
    * ActOralHealthProcedureCode
    */
-  ActOralHealthProcedureCode: "_ActOralHealthProcedureCode",
+  _ActOralHealthProcedureCode: "_ActOralHealthProcedureCode",
 
   /**
    * ActRegistryCode
    */
-  ActRegistryCode: "_ActRegistryCode",
+  _ActRegistryCode: "_ActRegistryCode",
 
   /**
    * ActSecurityObjectCode
    */
-  ActSecurityObjectCode: "_ActSecurityObjectCode",
+  _ActSecurityObjectCode: "_ActSecurityObjectCode",
 
   /**
    * AdvanceBeneficiaryNoticeType
    */
-  AdvanceBeneficiaryNoticeType: "_AdvanceBeneficiaryNoticeType",
+  _AdvanceBeneficiaryNoticeType: "_AdvanceBeneficiaryNoticeType",
 
   /**
    * CPT4
    */
-  CPT4: "_CPT4",
+  _CPT4: "_CPT4",
 
   /**
    * ExternallyDefinedActCodes
    */
-  ExternallyDefinedActCodes: "_ExternallyDefinedActCodes",
+  _ExternallyDefinedActCodes: "_ExternallyDefinedActCodes",
 
   /**
    * HL7DefinedActCodes
    */
-  HL7DefinedActCodes: "_HL7DefinedActCodes",
+  _HL7DefinedActCodes: "_HL7DefinedActCodes",
 
   /**
    * ActDetectedIssueCode
    */
-  ActDetectedIssueCode: "_ActDetectedIssueCode",
+  _ActDetectedIssueCode: "_ActDetectedIssueCode",
 
   /**
    * HL7TriggerEventCode
    */
-  HL7TriggerEventCode: "_HL7TriggerEventCode",
+  _HL7TriggerEventCode: "_HL7TriggerEventCode",
 
   /**
    * SubstanceAdministrationActCode
    */
-  SubstanceAdministrationActCode: "_SubstanceAdministrationActCode",
+  _SubstanceAdministrationActCode: "_SubstanceAdministrationActCode",
 
   /**
    * IndividualCaseSafetyReportCriteria
    */
-  IndividualCaseSafetyReportCriteria: "_IndividualCaseSafetyReportCriteria",
+  _IndividualCaseSafetyReportCriteria: "_IndividualCaseSafetyReportCriteria",
 
   /**
    * IndividualCaseSafetyReportProductCharacteristic
    */
-  IndividualCaseSafetyReportProductCharacteristic:
+  _IndividualCaseSafetyReportProductCharacteristic:
     "_IndividualCaseSafetyReportProductCharacteristic",
 
   /**
    * ObservationActAgeGroupType
    */
-  ObservationActAgeGroupType: "_ObservationActAgeGroupType",
+  _ObservationActAgeGroupType: "_ObservationActAgeGroupType",
 
   /**
    *
@@ -6527,7 +6523,7 @@ export const ActInvoiceElementCodeCode = {
   /**
    * Storage
    */
-  Storage: "STORE",
+  STORE: "STORE",
 } as const;
 
 /**

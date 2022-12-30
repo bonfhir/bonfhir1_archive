@@ -6,12 +6,12 @@ export const WesternNumicCode = {
   /**
    * Mono
    */
-  Mono: "x-MON",
+  "x-MON": "x-MON",
 
   /**
    * Northern Paiute-Bannock
    */
-  NorthernPaiuteBannock: "x-PAO",
+  "x-PAO": "x-PAO",
 } as const;
 
 /**

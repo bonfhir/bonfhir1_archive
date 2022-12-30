@@ -6,7 +6,7 @@ export const RoleClassContaminantIngredientCode = {
   /**
    * contaminant ingredient
    */
-  contaminantingredient: "CNTM",
+  CNTM: "CNTM",
 } as const;
 
 /**

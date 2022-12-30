@@ -6,12 +6,12 @@ export const RaceAmericanIndianAssiniboineSiouxCode = {
   /**
    * Assiniboine Sioux
    */
-  AssiniboineSioux: "1030-6",
+  "1030-6": "1030-6",
 
   /**
    * Fort Peck Assiniboine Sioux
    */
-  FortPeckAssiniboineSioux: "1031-4",
+  "1031-4": "1031-4",
 } as const;
 
 /**

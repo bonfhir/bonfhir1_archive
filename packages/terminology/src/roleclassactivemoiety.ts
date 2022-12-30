@@ -8,7 +8,7 @@ export const RoleClassActiveMoietyCode = {
   /**
    * active moiety
    */
-  activemoiety: "ACTM",
+  ACTM: "ACTM",
 } as const;
 
 /**

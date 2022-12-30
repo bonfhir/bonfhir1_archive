@@ -6,187 +6,187 @@ export const NadeneCode = {
   /**
    * AthapaskanEyak
    */
-  AthapaskanEyak: "_AthapaskanEyak",
+  _AthapaskanEyak: "_AthapaskanEyak",
 
   /**
    * Athapaskan
    */
-  Athapaskan: "_Athapaskan",
+  _Athapaskan: "_Athapaskan",
 
   /**
    * Apachean
    */
-  Apachean: "_Apachean",
+  _Apachean: "_Apachean",
 
   /**
    * EasternApachean
    */
-  EasternApachean: "_EasternApachean",
+  _EasternApachean: "_EasternApachean",
 
   /**
    * Jicarilla
    */
-  Jicarilla: "x-APJ",
+  "x-APJ": "x-APJ",
 
   /**
    * Lipan
    */
-  Lipan: "x-APL",
+  "x-APL": "x-APL",
 
   /**
    * WesternApachean
    */
-  WesternApachean: "_WesternApachean",
+  _WesternApachean: "_WesternApachean",
 
   /**
    * Mescalero-Chiricahua
    */
-  MescaleroChiricahua: "x-APM",
+  "x-APM": "x-APM",
 
   /**
    * Western Apache
    */
-  WesternApache: "x-APW",
+  "x-APW": "x-APW",
 
   /**
    * Dine
    */
-  Dine: "x-NAV",
+  "x-NAV": "x-NAV",
 
   /**
    * Kiowa Apache
    */
-  KiowaApache: "x-APK",
+  "x-APK": "x-APK",
 
   /**
    * CentralAlaskaYukon
    */
-  CentralAlaskaYukon: "_CentralAlaskaYukon",
+  _CentralAlaskaYukon: "_CentralAlaskaYukon",
 
   /**
    * KoyukonIngalik
    */
-  KoyukonIngalik: "_KoyukonIngalik",
+  _KoyukonIngalik: "_KoyukonIngalik",
 
   /**
    * Holikachuk
    */
-  Holikachuk: "x-HOI",
+  "x-HOI": "x-HOI",
 
   /**
    * Degexit'an
    */
-  Degexitan: "x-ING",
+  "x-ING": "x-ING",
 
   /**
    * Koyukon
    */
-  Koyukon: "x-KOY",
+  "x-KOY": "x-KOY",
 
   /**
    * KutchinHan
    */
-  KutchinHan: "_KutchinHan",
+  _KutchinHan: "_KutchinHan",
 
   /**
    * Han
    */
-  Han: "x-HAA",
+  "x-HAA": "x-HAA",
 
   /**
    * Kutchin
    */
-  Kutchin: "x-KUC",
+  "x-KUC": "x-KUC",
 
   /**
    * TananaTutchone
    */
-  TananaTutchone: "_TananaTutchone",
+  _TananaTutchone: "_TananaTutchone",
 
   /**
    * Tanana
    */
-  Tanana: "_Tanana",
+  _Tanana: "_Tanana",
 
   /**
    * Lower Tanana
    */
-  LowerTanana: "x-TAA",
+  "x-TAA": "x-TAA",
 
   /**
    * Upper Tanana
    */
-  UpperTanana: "x-TAU",
+  "x-TAU": "x-TAU",
 
   /**
    * Tanacross
    */
-  Tanacross: "x-TCB",
+  "x-TCB": "x-TCB",
 
   /**
    * Upper Kuskokwim
    */
-  UpperKuskokwim: "x-KUU",
+  "x-KUU": "x-KUU",
 
   /**
    * PacificCoastAthapaskan
    */
-  PacificCoastAthapaskan: "_PacificCoastAthapaskan",
+  _PacificCoastAthapaskan: "_PacificCoastAthapaskan",
 
   /**
    * CaliforniaAthapaskan
    */
-  CaliforniaAthapaskan: "_CaliforniaAthapaskan",
+  _CaliforniaAthapaskan: "_CaliforniaAthapaskan",
 
   /**
    * Hupa
    */
-  Hupa: "x-HUP",
+  "x-HUP": "x-HUP",
 
   /**
    * Cahto
    */
-  Cahto: "x-KTW",
+  "x-KTW": "x-KTW",
 
   /**
    * OregonAthapaskan
    */
-  OregonAthapaskan: "_OregonAthapaskan",
+  _OregonAthapaskan: "_OregonAthapaskan",
 
   /**
    * Tolowa
    */
-  Tolowa: "x-TOL",
+  "x-TOL": "x-TOL",
 
   /**
    * Tututni
    */
-  Tututni: "x-TUU",
+  "x-TUU": "x-TUU",
 
   /**
    * SouthernAlaska
    */
-  SouthernAlaska: "_SouthernAlaska",
+  _SouthernAlaska: "_SouthernAlaska",
 
   /**
    * Ahtna
    */
-  Ahtna: "x-AHT",
+  "x-AHT": "x-AHT",
 
   /**
    * Tanaina
    */
-  Tanaina: "x-TFN",
+  "x-TFN": "x-TFN",
 
   /**
    * Eyak
    */
-  Eyak: "x-EYA",
+  "x-EYA": "x-EYA",
 
   /**
    * Tlingit
    */
-  Tlingit: "x-TLI",
+  "x-TLI": "x-TLI",
 } as const;
 
 /**

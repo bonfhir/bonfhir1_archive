@@ -6,22 +6,22 @@ export const RaceAmericanIndianMiamiCode = {
   /**
    * Miami
    */
-  Miami: "1358-1",
+  "1358-1": "1358-1",
 
   /**
    * Illinois Miami
    */
-  IllinoisMiami: "1359-9",
+  "1359-9": "1359-9",
 
   /**
    * Indiana Miami
    */
-  IndianaMiami: "1360-7",
+  "1360-7": "1360-7",
 
   /**
    * Oklahoma Miami
    */
-  OklahomaMiami: "1361-5",
+  "1361-5": "1361-5",
 } as const;
 
 /**

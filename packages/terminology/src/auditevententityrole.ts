@@ -6,122 +6,122 @@ export const AuditEventEntityRoleCode = {
   /**
    * Patient
    */
-  Patient: "1",
+  "1": "1",
 
   /**
    * Location
    */
-  Location: "2",
+  "2": "2",
 
   /**
    * Report
    */
-  Report: "3",
+  "3": "3",
 
   /**
    * Domain Resource
    */
-  DomainResource: "4",
+  "4": "4",
 
   /**
    * Master file
    */
-  Masterfile: "5",
+  "5": "5",
 
   /**
    * User
    */
-  User: "6",
+  "6": "6",
 
   /**
    * List
    */
-  List: "7",
+  "7": "7",
 
   /**
    * Doctor
    */
-  Doctor: "8",
+  "8": "8",
 
   /**
    * Subscriber
    */
-  Subscriber: "9",
+  "9": "9",
 
   /**
    * Guarantor
    */
-  Guarantor: "10",
+  "10": "10",
 
   /**
    * Security User Entity
    */
-  SecurityUserEntity: "11",
+  "11": "11",
 
   /**
    * Security User Group
    */
-  SecurityUserGroup: "12",
+  "12": "12",
 
   /**
    * Security Resource
    */
-  SecurityResource: "13",
+  "13": "13",
 
   /**
    * Security Granularity Definition
    */
-  SecurityGranularityDefinition: "14",
+  "14": "14",
 
   /**
    * Practitioner
    */
-  Practitioner: "15",
+  "15": "15",
 
   /**
    * Data Destination
    */
-  DataDestination: "16",
+  "16": "16",
 
   /**
    * Data Repository
    */
-  DataRepository: "17",
+  "17": "17",
 
   /**
    * Schedule
    */
-  Schedule: "18",
+  "18": "18",
 
   /**
    * Customer
    */
-  Customer: "19",
+  "19": "19",
 
   /**
    * Job
    */
-  Job: "20",
+  "20": "20",
 
   /**
    * Job Stream
    */
-  JobStream: "21",
+  "21": "21",
 
   /**
    * Table
    */
-  Table: "22",
+  "22": "22",
 
   /**
    * Routing Criteria
    */
-  RoutingCriteria: "23",
+  "23": "23",
 
   /**
    * Query
    */
-  Query: "24",
+  "24": "24",
 } as const;
 
 /**

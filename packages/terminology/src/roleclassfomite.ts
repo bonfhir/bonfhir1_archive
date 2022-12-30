@@ -6,7 +6,7 @@ export const RoleClassFomiteCode = {
   /**
    * fomite
    */
-  fomite: "FOMITE",
+  FOMITE: "FOMITE",
 } as const;
 
 /**

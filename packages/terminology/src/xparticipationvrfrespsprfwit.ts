@@ -6,22 +6,22 @@ export const XParticipationVrfRespSprfWitCode = {
   /**
    * responsible party
    */
-  responsibleparty: "RESP",
+  RESP: "RESP",
 
   /**
    * secondary performer
    */
-  secondaryperformer: "SPRF",
+  SPRF: "SPRF",
 
   /**
    * verifier
    */
-  verifier: "VRF",
+  VRF: "VRF",
 
   /**
    * witness
    */
-  witness: "WIT",
+  WIT: "WIT",
 } as const;
 
 /**

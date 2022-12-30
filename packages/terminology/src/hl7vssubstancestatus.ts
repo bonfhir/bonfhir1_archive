@@ -6,57 +6,57 @@ export const Hl7VSSubstanceStatusCode = {
   /**
    * Expired Warning
    */
-  ExpiredWarning: "EW",
+  EW: "EW",
 
   /**
    * Expired Error
    */
-  ExpiredError: "EE",
+  EE: "EE",
 
   /**
    * Calibration Warning
    */
-  CalibrationWarning: "CW",
+  CW: "CW",
 
   /**
    * Calibration Error
    */
-  CalibrationError: "CE",
+  CE: "CE",
 
   /**
    * QC Warning
    */
-  QCWarning: "QW",
+  QW: "QW",
 
   /**
    * QC Error
    */
-  QCError: "QE",
+  QE: "QE",
 
   /**
    * Not Available Warning
    */
-  NotAvailableWarning: "NW",
+  NW: "NW",
 
   /**
    * Not Available Error
    */
-  NotAvailableError: "NE",
+  NE: "NE",
 
   /**
    * Other Warning
    */
-  OtherWarning: "OW",
+  OW: "OW",
 
   /**
    * Other Error
    */
-  OtherError: "OE",
+  OE: "OE",
 
   /**
    * OK Status
    */
-  OKStatus: "OK",
+  OK: "OK",
 } as const;
 
 /**

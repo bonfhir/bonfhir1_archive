@@ -6,17 +6,17 @@ export const ProcessingIDCode = {
   /**
    * Debugging
    */
-  Debugging: "D",
+  D: "D",
 
   /**
    * Production
    */
-  Production: "P",
+  P: "P",
 
   /**
    * Training
    */
-  Training: "T",
+  T: "T",
 } as const;
 
 /**

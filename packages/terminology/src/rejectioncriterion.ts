@@ -6,27 +6,27 @@ export const RejectionCriterionCode = {
   /**
    * hemolized specimen
    */
-  hemolizedspecimen: "hemolized",
+  hemolized: "hemolized",
 
   /**
    * insufficient specimen volume
    */
-  insufficientspecimenvolume: "insufficient",
+  insufficient: "insufficient",
 
   /**
    * broken specimen container
    */
-  brokenspecimencontainer: "broken",
+  broken: "broken",
 
   /**
    * specimen clotted
    */
-  specimenclotted: "clotted",
+  clotted: "clotted",
 
   /**
    * specimen temperature inappropriate
    */
-  specimentemperatureinappropriate: "wrong-temperature",
+  "wrong-temperature": "wrong-temperature",
 } as const;
 
 /**

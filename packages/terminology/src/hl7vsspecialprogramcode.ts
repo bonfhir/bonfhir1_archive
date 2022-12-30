@@ -6,27 +6,27 @@ export const Hl7VSSpecialProgramCodeCode = {
   /**
    * Child Health Assistance
    */
-  ChildHealthAssistance: "CH",
+  CH: "CH",
 
   /**
    * Elective Surgery Program
    */
-  ElectiveSurgeryProgram: "ES",
+  ES: "ES",
 
   /**
    * Family Planning
    */
-  FamilyPlanning: "FP",
+  FP: "FP",
 
   /**
    * Other
    */
-  Other: "O",
+  O: "O",
 
   /**
    * Unknown
    */
-  Unknown: "U",
+  U: "U",
 } as const;
 
 /**

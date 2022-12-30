@@ -6,22 +6,22 @@ export const XRoleClassCoverageCode = {
   /**
    * covered party
    */
-  coveredparty: "COVPTY",
+  COVPTY: "COVPTY",
 
   /**
    * policy holder
    */
-  policyholder: "POLHOLD",
+  POLHOLD: "POLHOLD",
 
   /**
    * coverage sponsor
    */
-  coveragesponsor: "SPNSR",
+  SPNSR: "SPNSR",
 
   /**
    * underwriter
    */
-  underwriter: "UNDWRT",
+  UNDWRT: "UNDWRT",
 } as const;
 
 /**

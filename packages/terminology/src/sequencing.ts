@@ -6,17 +6,17 @@ export const SequencingCode = {
   /**
    * Ascending
    */
-  Ascending: "A",
+  A: "A",
 
   /**
    * Descending
    */
-  Descending: "D",
+  D: "D",
 
   /**
    * None
    */
-  None: "N",
+  N: "N",
 } as const;
 
 /**

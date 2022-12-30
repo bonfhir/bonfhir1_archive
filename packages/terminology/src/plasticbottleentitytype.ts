@@ -6,12 +6,12 @@ export const PlasticBottleEntityTypeCode = {
   /**
    * Plastic Bottle
    */
-  PlasticBottle: "BOTP",
+  BOTP: "BOTP",
 
   /**
    * Polyethylene Bottle
    */
-  PolyethyleneBottle: "BOTPLY",
+  BOTPLY: "BOTPLY",
 } as const;
 
 /**

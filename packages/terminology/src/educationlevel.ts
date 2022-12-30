@@ -6,47 +6,47 @@ export const EducationLevelCode = {
   /**
    * Associate's or technical degree complete
    */
-  Associatesortechnicaldegreecomplete: "ASSOC",
+  ASSOC: "ASSOC",
 
   /**
    * College or baccalaureate degree complete
    */
-  Collegeorbaccalaureatedegreecomplete: "BD",
+  BD: "BD",
 
   /**
    * Elementary School
    */
-  ElementarySchool: "ELEM",
+  ELEM: "ELEM",
 
   /**
    * Graduate or professional Degree complete
    */
-  GraduateorprofessionalDegreecomplete: "GD",
+  GD: "GD",
 
   /**
    * High School or secondary school degree complete
    */
-  HighSchoolorsecondaryschooldegreecomplete: "HS",
+  HS: "HS",
 
   /**
    * Some post-baccalaureate education
    */
-  Somepostbaccalaureateeducation: "PB",
+  PB: "PB",
 
   /**
    * Doctoral or post graduate education
    */
-  Doctoralorpostgraduateeducation: "POSTG",
+  POSTG: "POSTG",
 
   /**
    * Some College education
    */
-  SomeCollegeeducation: "SCOL",
+  SCOL: "SCOL",
 
   /**
    * Some secondary or high school education
    */
-  Somesecondaryorhighschooleducation: "SEC",
+  SEC: "SEC",
 } as const;
 
 /**

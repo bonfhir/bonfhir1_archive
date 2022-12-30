@@ -6,132 +6,132 @@ export const RoleClassPassiveCode = {
   /**
    * access
    */
-  access: "ACCESS",
+  ACCESS: "ACCESS",
 
   /**
    * adjacency
    */
-  adjacency: "ADJY",
+  ADJY: "ADJY",
 
   /**
    * connection
    */
-  connection: "CONC",
+  CONC: "CONC",
 
   /**
    * molecular bond
    */
-  molecularbond: "BOND",
+  BOND: "BOND",
 
   /**
    * continuity
    */
-  continuity: "CONY",
+  CONY: "CONY",
 
   /**
    * Administerable Material
    */
-  AdministerableMaterial: "ADMM",
+  ADMM: "ADMM",
 
   /**
    * birthplace
    */
-  birthplace: "BIRTHPL",
+  BIRTHPL: "BIRTHPL",
 
   /**
    * place of death
    */
-  placeofdeath: "DEATHPLC",
+  DEATHPLC: "DEATHPLC",
 
   /**
    * distributed material
    */
-  distributedmaterial: "DST",
+  DST: "DST",
 
   /**
    * retailed material
    */
-  retailedmaterial: "RET",
+  RET: "RET",
 
   /**
    * event location
    */
-  eventlocation: "EXLOC",
+  EXLOC: "EXLOC",
 
   /**
    * service delivery location
    */
-  servicedeliverylocation: "SDLOC",
+  SDLOC: "SDLOC",
 
   /**
    * dedicated service delivery location
    */
-  dedicatedservicedeliverylocation: "DSDLOC",
+  DSDLOC: "DSDLOC",
 
   /**
    * incidental service delivery location
    */
-  incidentalservicedeliverylocation: "ISDLOC",
+  ISDLOC: "ISDLOC",
 
   /**
    * exposed entity
    */
-  exposedentity: "EXPR",
+  EXPR: "EXPR",
 
   /**
    * held entity
    */
-  heldentity: "HLD",
+  HLD: "HLD",
 
   /**
    * health chart
    */
-  healthchart: "HLTHCHRT",
+  HLTHCHRT: "HLTHCHRT",
 
   /**
    * identified entity
    */
-  identifiedentity: "IDENT",
+  IDENT: "IDENT",
 
   /**
    * manufactured product
    */
-  manufacturedproduct: "MANU",
+  MANU: "MANU",
 
   /**
    * therapeutic agent
    */
-  therapeuticagent: "THER",
+  THER: "THER",
 
   /**
    * maintained entity
    */
-  maintainedentity: "MNT",
+  MNT: "MNT",
 
   /**
    * owned entity
    */
-  ownedentity: "OWN",
+  OWN: "OWN",
 
   /**
    * regulated product
    */
-  regulatedproduct: "RGPR",
+  RGPR: "RGPR",
 
   /**
    * territory of authority
    */
-  territoryofauthority: "TERR",
+  TERR: "TERR",
 
   /**
    * used entity
    */
-  usedentity: "USED",
+  USED: "USED",
 
   /**
    * warranted product
    */
-  warrantedproduct: "WRTE",
+  WRTE: "WRTE",
 } as const;
 
 /**

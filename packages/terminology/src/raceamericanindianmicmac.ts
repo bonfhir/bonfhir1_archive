@@ -6,12 +6,12 @@ export const RaceAmericanIndianMicmacCode = {
   /**
    * Micmac
    */
-  Micmac: "1365-6",
+  "1365-6": "1365-6",
 
   /**
    * Aroostook
    */
-  Aroostook: "1366-4",
+  "1366-4": "1366-4",
 } as const;
 
 /**

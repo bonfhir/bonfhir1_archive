@@ -6,77 +6,77 @@ export const Tst0280Code = {
   /**
    * Susceptibility Testing
    */
-  SusceptibilityTesting: "0280",
+  "0280": "0280",
 
   /**
    * Antibiotic sensitivity, disk
    */
-  Antibioticsensitivitydisk: "0240",
+  "0240": "0240",
 
   /**
    * BACTEC susceptibility test
    */
-  BACTECsusceptibilitytest: "0241",
+  "0241": "0241",
 
   /**
    * Disk dilution
    */
-  Diskdilution: "0242",
+  "0242": "0242",
 
   /**
    * Minimum Inhibitory Concentration
    */
-  MinimumInhibitoryConcentration: "0272",
+  "0272": "0272",
 
   /**
    * Minimum Inhibitory Concentration, macrodilution
    */
-  MinimumInhibitoryConcentrationmacrodilution: "0245",
+  "0245": "0245",
 
   /**
    * Minimum Inhibitory Concentration, microdilution
    */
-  MinimumInhibitoryConcentrationmicrodilution: "0246",
+  "0246": "0246",
 
   /**
    * Viral Genotype Susceptibility
    */
-  ViralGenotypeSusceptibility: "0273",
+  "0273": "0273",
 
   /**
    * Viral Phenotype Susceptibility
    */
-  ViralPhenotypeSusceptibility: "0274",
+  "0274": "0274",
 
   /**
    * Gradient Strip
    */
-  GradientStrip: "0275",
+  "0275": "0275",
 
   /**
    * Minimum Lethal Concentration (MLC)
    */
-  MinimumLethalConcentrationMLC: "0275a",
+  "0275a": "0275a",
 
   /**
    * Slow Mycobacteria Susceptibility
    */
-  SlowMycobacteriaSusceptibility: "0276",
+  "0276": "0276",
 
   /**
    * Serum bactericidal titer
    */
-  Serumbactericidaltiter: "0277",
+  "0277": "0277",
 
   /**
    * Agar screen
    */
-  Agarscreen: "0278",
+  "0278": "0278",
 
   /**
    * Disk induction
    */
-  Diskinduction: "0279",
+  "0279": "0279",
 } as const;
 
 /**

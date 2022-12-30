@@ -6,17 +6,17 @@ export const HomeAddressCode = {
   /**
    * home address
    */
-  homeaddress: "H",
+  H: "H",
 
   /**
    * primary home
    */
-  primaryhome: "HP",
+  HP: "HP",
 
   /**
    * vacation home
    */
-  vacationhome: "HV",
+  HV: "HV",
 } as const;
 
 /**

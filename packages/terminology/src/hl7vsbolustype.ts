@@ -6,12 +6,12 @@ export const Hl7VSBolusTypeCode = {
   /**
    * Supplemental
    */
-  Supplemental: "C",
+  C: "C",
 
   /**
    * Loading
    */
-  Loading: "L",
+  L: "L",
 } as const;
 
 /**

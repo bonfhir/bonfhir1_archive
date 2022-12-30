@@ -8,77 +8,77 @@ export const ActPriorityCode = {
   /**
    * ASAP
    */
-  ASAP: "A",
+  A: "A",
 
   /**
    * callback results
    */
-  callbackresults: "CR",
+  CR: "CR",
 
   /**
    * elective
    */
-  elective: "EL",
+  EL: "EL",
 
   /**
    * emergency
    */
-  emergency: "EM",
+  EM: "EM",
 
   /**
    * preop
    */
-  preop: "P",
+  P: "P",
 
   /**
    * as needed
    */
-  asneeded: "PRN",
+  PRN: "PRN",
 
   /**
    * routine
    */
-  routine: "R",
+  R: "R",
 
   /**
    * rush reporting
    */
-  rushreporting: "RR",
+  RR: "RR",
 
   /**
    * stat
    */
-  stat: "S",
+  S: "S",
 
   /**
    * timing critical
    */
-  timingcritical: "T",
+  T: "T",
 
   /**
    * use as directed
    */
-  useasdirected: "UD",
+  UD: "UD",
 
   /**
    * urgent
    */
-  urgent: "UR",
+  UR: "UR",
 
   /**
    * callback for scheduling
    */
-  callbackforscheduling: "CS",
+  CS: "CS",
 
   /**
    * callback placer for scheduling
    */
-  callbackplacerforscheduling: "CSP",
+  CSP: "CSP",
 
   /**
    * contact recipient for scheduling
    */
-  contactrecipientforscheduling: "CSR",
+  CSR: "CSR",
 } as const;
 
 /**

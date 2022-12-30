@@ -6,22 +6,22 @@ export const DefinitionStatusCode = {
   /**
    * Draft
    */
-  Draft: "draft",
+  draft: "draft",
 
   /**
    * Active
    */
-  Active: "active",
+  active: "active",
 
   /**
    * Withdrawn
    */
-  Withdrawn: "withdrawn",
+  withdrawn: "withdrawn",
 
   /**
    * Unknown
    */
-  Unknown: "unknown",
+  unknown: "unknown",
 } as const;
 
 /**

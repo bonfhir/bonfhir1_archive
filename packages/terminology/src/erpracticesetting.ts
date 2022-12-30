@@ -6,12 +6,12 @@ export const ERPracticeSettingCode = {
   /**
    * Emergency room
    */
-  Emergencyroom: "ER",
+  ER: "ER",
 
   /**
    * Emergency trauma unit
    */
-  Emergencytraumaunit: "ETU",
+  ETU: "ETU",
 } as const;
 
 /**

@@ -6,17 +6,17 @@ export const Hl7VSTypeOfAgreementCode = {
   /**
    * Standard
    */
-  Standard: "S",
+  S: "S",
 
   /**
    * Unified
    */
-  Unified: "U",
+  U: "U",
 
   /**
    * Maternity
    */
-  Maternity: "M",
+  M: "M",
 } as const;
 
 /**

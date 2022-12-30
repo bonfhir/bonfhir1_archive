@@ -6,27 +6,27 @@ export const RaceAlaskanNativeAleutChugachCode = {
   /**
    * Chugach Aleut
    */
-  ChugachAleut: "1984-4",
+  "1984-4": "1984-4",
 
   /**
    * Chenega
    */
-  Chenega: "1985-1",
+  "1985-1": "1985-1",
 
   /**
    * Chugach Corporation
    */
-  ChugachCorporation: "1986-9",
+  "1986-9": "1986-9",
 
   /**
    * English Bay
    */
-  EnglishBay: "1987-7",
+  "1987-7": "1987-7",
 
   /**
    * Port Graham
    */
-  PortGraham: "1988-5",
+  "1988-5": "1988-5",
 } as const;
 
 /**

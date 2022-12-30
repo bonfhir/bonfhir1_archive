@@ -6,7 +6,7 @@ export const PeriduralRouteCode = {
   /**
    * Injection, peridural
    */
-  Injectionperidural: "PDURINJ",
+  PDURINJ: "PDURINJ",
 } as const;
 
 /**

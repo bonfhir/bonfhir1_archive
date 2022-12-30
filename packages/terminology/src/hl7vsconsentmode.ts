@@ -6,17 +6,17 @@ export const Hl7VSConsentModeCode = {
   /**
    * Verbal
    */
-  Verbal: "V",
+  V: "V",
 
   /**
    * Written
    */
-  Written: "W",
+  W: "W",
 
   /**
    * Telephone
    */
-  Telephone: "T",
+  T: "T",
 } as const;
 
 /**

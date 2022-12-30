@@ -6,17 +6,17 @@ export const MedicationKnowledgeStatusCodesCode = {
   /**
    * Active
    */
-  Active: "active",
+  active: "active",
 
   /**
    * Inactive
    */
-  Inactive: "inactive",
+  inactive: "inactive",
 
   /**
    * Entered in Error
    */
-  EnteredinError: "entered-in-error",
+  "entered-in-error": "entered-in-error",
 } as const;
 
 /**

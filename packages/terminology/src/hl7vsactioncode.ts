@@ -6,22 +6,22 @@ export const Hl7VSActionCodeCode = {
   /**
    * Add/Insert
    */
-  AddInsert: "A",
+  A: "A",
 
   /**
    * Delete
    */
-  Delete: "D",
+  D: "D",
 
   /**
    * Update
    */
-  Update: "U",
+  U: "U",
 
   /**
    * No change
    */
-  Nochange: "X",
+  X: "X",
 } as const;
 
 /**

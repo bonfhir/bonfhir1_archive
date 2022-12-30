@@ -6,52 +6,52 @@ export const EndpointConnectionTypeCode = {
   /**
    * DICOM WADO-RS
    */
-  DICOMWADORS: "dicom-wado-rs",
+  "dicom-wado-rs": "dicom-wado-rs",
 
   /**
    * DICOM QIDO-RS
    */
-  DICOMQIDORS: "dicom-qido-rs",
+  "dicom-qido-rs": "dicom-qido-rs",
 
   /**
    * DICOM STOW-RS
    */
-  DICOMSTOWRS: "dicom-stow-rs",
+  "dicom-stow-rs": "dicom-stow-rs",
 
   /**
    * DICOM WADO-URI
    */
-  DICOMWADOURI: "dicom-wado-uri",
+  "dicom-wado-uri": "dicom-wado-uri",
 
   /**
    * HL7 FHIR
    */
-  HL7FHIR: "hl7-fhir-rest",
+  "hl7-fhir-rest": "hl7-fhir-rest",
 
   /**
    * HL7 FHIR Messaging
    */
-  HL7FHIRMessaging: "hl7-fhir-msg",
+  "hl7-fhir-msg": "hl7-fhir-msg",
 
   /**
    * HL7 v2 MLLP
    */
-  HL7v2MLLP: "hl7v2-mllp",
+  "hl7v2-mllp": "hl7v2-mllp",
 
   /**
    * Secure email
    */
-  Secureemail: "secure-email",
+  "secure-email": "secure-email",
 
   /**
    * Direct Project
    */
-  DirectProject: "direct-project",
+  "direct-project": "direct-project",
 
   /**
    * CDS Hooks Service
    */
-  CDSHooksService: "cds-hooks-service",
+  "cds-hooks-service": "cds-hooks-service",
 } as const;
 
 /**

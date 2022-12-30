@@ -6,22 +6,22 @@ export const EvidenceDirectnessCode = {
   /**
    * Low quality match
    */
-  Lowqualitymatch: "low",
+  low: "low",
 
   /**
    * Moderate quality match
    */
-  Moderatequalitymatch: "moderate",
+  moderate: "moderate",
 
   /**
    * High quality match
    */
-  Highqualitymatch: "high",
+  high: "high",
 
   /**
    * Exact match
    */
-  Exactmatch: "exact",
+  exact: "exact",
 } as const;
 
 /**

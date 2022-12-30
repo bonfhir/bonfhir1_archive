@@ -6,117 +6,117 @@ export const ActRelationshipSequelCode = {
   /**
    * is sequel
    */
-  issequel: "SEQL",
+  SEQL: "SEQL",
 
   /**
    * is appendage
    */
-  isappendage: "APND",
+  APND: "APND",
 
   /**
    * has baseline
    */
-  hasbaseline: "BSLN",
+  BSLN: "BSLN",
 
   /**
    * complies with
    */
-  complieswith: "COMPLY",
+  COMPLY: "COMPLY",
 
   /**
    * documents
    */
-  documents: "DOC",
+  DOC: "DOC",
 
   /**
    * fulfills
    */
-  fulfills: "FLFS",
+  FLFS: "FLFS",
 
   /**
    * occurrence
    */
-  occurrence: "OCCR",
+  OCCR: "OCCR",
 
   /**
    * references order
    */
-  referencesorder: "OREF",
+  OREF: "OREF",
 
   /**
    * schedules request
    */
-  schedulesrequest: "SCH",
+  SCH: "SCH",
 
   /**
    * has generalization
    */
-  hasgeneralization: "GEN",
+  GEN: "GEN",
 
   /**
    * evaluates (goal)
    */
-  evaluatesgoal: "GEVL",
+  GEVL: "GEVL",
 
   /**
    * instantiates (master)
    */
-  instantiatesmaster: "INST",
+  INST: "INST",
 
   /**
    * modifies
    */
-  modifies: "MOD",
+  MOD: "MOD",
 
   /**
    * matches (trigger)
    */
-  matchestrigger: "MTCH",
+  MTCH: "MTCH",
 
   /**
    * has option
    */
-  hasoption: "OPTN",
+  OPTN: "OPTN",
 
   /**
    * re-challenge
    */
-  rechallenge: "RCHAL",
+  RCHAL: "RCHAL",
 
   /**
    * reverses
    */
-  reverses: "REV",
+  REV: "REV",
 
   /**
    * replaces
    */
-  replaces: "RPLC",
+  RPLC: "RPLC",
 
   /**
    * succeeds
    */
-  succeeds: "SUCC",
+  SUCC: "SUCC",
 
   /**
    * updates (condition)
    */
-  updatescondition: "UPDT",
+  UPDT: "UPDT",
 
   /**
    * Excerpts
    */
-  Excerpts: "XCRPT",
+  XCRPT: "XCRPT",
 
   /**
    * Excerpt verbatim
    */
-  Excerptverbatim: "VRXCRPT",
+  VRXCRPT: "VRXCRPT",
 
   /**
    * transformation
    */
-  transformation: "XFRM",
+  XFRM: "XFRM",
 } as const;
 
 /**

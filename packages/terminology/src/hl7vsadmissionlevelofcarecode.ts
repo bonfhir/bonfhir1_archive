@@ -6,32 +6,32 @@ export const Hl7VSAdmissionLevelOfCareCodeCode = {
   /**
    * Acute
    */
-  Acute: "AC",
+  AC: "AC",
 
   /**
    * Chronic
    */
-  Chronic: "CH",
+  CH: "CH",
 
   /**
    * Comatose
    */
-  Comatose: "CO",
+  CO: "CO",
 
   /**
    * Critical
    */
-  Critical: "CR",
+  CR: "CR",
 
   /**
    * Improved
    */
-  Improved: "IM",
+  IM: "IM",
 
   /**
    * Moribund
    */
-  Moribund: "MO",
+  MO: "MO",
 } as const;
 
 /**

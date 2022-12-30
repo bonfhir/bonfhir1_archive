@@ -8,22 +8,22 @@ export const PaymentTermsCode = {
   /**
    * Cash on Delivery
    */
-  CashonDelivery: "COD",
+  COD: "COD",
 
   /**
    * Net 30 days
    */
-  Net30days: "N30",
+  N30: "N30",
 
   /**
    * Net 60 days
    */
-  Net60days: "N60",
+  N60: "N60",
 
   /**
    * Net 90 days
    */
-  Net90days: "N90",
+  N90: "N90",
 } as const;
 
 /**

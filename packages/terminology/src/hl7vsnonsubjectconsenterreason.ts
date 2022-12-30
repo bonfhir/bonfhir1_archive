@@ -6,17 +6,17 @@ export const Hl7VSNonSubjectConsenterReasonCode = {
   /**
    * Subject is a minor
    */
-  Subjectisaminor: "MIN",
+  MIN: "MIN",
 
   /**
    * Subject is not competent to consent
    */
-  Subjectisnotcompetenttoconsent: "NC",
+  NC: "NC",
 
   /**
    * Legally mandated
    */
-  Legallymandated: "LM",
+  LM: "LM",
 } as const;
 
 /**

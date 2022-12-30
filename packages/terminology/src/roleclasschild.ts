@@ -6,7 +6,7 @@ export const RoleClassChildCode = {
   /**
    * child
    */
-  child: "CHILD",
+  CHILD: "CHILD",
 } as const;
 
 /**

@@ -12,42 +12,42 @@ export const SnodentOrthodonticDiagnosticFeatureInternationalCode = {
   /**
    * Gingival Recession
    */
-  GingivalRecession: "133426D",
+  "133426D": "133426D",
 
   /**
    * Bimaxillary protrusion
    */
-  Bimaxillaryprotrusion: "157044D",
+  "157044D": "157044D",
 
   /**
    * Deep impinging overbite with soft tissue destruction
    */
-  Deepimpingingoverbitewithsofttissuedestruction: "210952D",
+  "210952D": "210952D",
 
   /**
    * Anterior crossbite with destruction of oral mucosa
    */
-  Anteriorcrossbitewithdestructionoforalmucosa: "210953D",
+  "210953D": "210953D",
 
   /**
    * Lip incompetence due to horizontal overbite
    */
-  Lipincompetenceduetohorizontaloverbite: "210954D",
+  "210954D": "210954D",
 
   /**
    * Posterior crossbite limited to left side
    */
-  Posteriorcrossbitelimitedtoleftside: "210955D",
+  "210955D": "210955D",
 
   /**
    * Posterior crossbite limited to right side
    */
-  Posteriorcrossbitelimitedtorightside: "210956D",
+  "210956D": "210956D",
 
   /**
    * Articulatory defect secondary to dental defect
    */
-  Articulatorydefectsecondarytodentaldefect: "210957D",
+  "210957D": "210957D",
 } as const;
 
 /**

@@ -6,62 +6,62 @@ export const Hl7VSSubstanceTypeCode = {
   /**
    * Single Test Reagent
    */
-  SingleTestReagent: "SR",
+  SR: "SR",
 
   /**
    * Multiple Test Reagent
    */
-  MultipleTestReagent: "MR",
+  MR: "MR",
 
   /**
    * Diluent
    */
-  Diluent: "DI",
+  DI: "DI",
 
   /**
    * Pretreatment
    */
-  Pretreatment: "PT",
+  PT: "PT",
 
   /**
    * Reagent Calibrator
    */
-  ReagentCalibrator: "RC",
+  RC: "RC",
 
   /**
    * Control Reagent
    */
-  ControlReagent: "CO",
+  CO: "CO",
 
   /**
    * Purified Water
    */
-  PurifiedWater: "PW",
+  PW: "PW",
 
   /**
    * Liquid Waste
    */
-  LiquidWaste: "LW",
+  LW: "LW",
 
   /**
    * Solid Waste
    */
-  SolidWaste: "SW",
+  SW: "SW",
 
   /**
    * Countable Solid Item
    */
-  CountableSolidItem: "SC",
+  SC: "SC",
 
   /**
    * Measurable Liquid Item
    */
-  MeasurableLiquidItem: "LI",
+  LI: "LI",
 
   /**
    * Other
    */
-  Other: "OT",
+  OT: "OT",
 } as const;
 
 /**

@@ -6,7 +6,7 @@ export const ActClassDietCode = {
   /**
    * diet
    */
-  diet: "DIET",
+  DIET: "DIET",
 } as const;
 
 /**

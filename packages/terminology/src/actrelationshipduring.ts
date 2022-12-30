@@ -6,7 +6,7 @@ export const ActRelationshipDuringCode = {
   /**
    * occurs during
    */
-  occursduring: "DURING",
+  DURING: "DURING",
 } as const;
 
 /**

@@ -6,12 +6,12 @@ export const Hl7VSVisitIndicatorCode = {
   /**
    * Account level
    */
-  Accountlevel: "A",
+  A: "A",
 
   /**
    * Visit level
    */
-  Visitlevel: "V",
+  V: "V",
 } as const;
 
 /**

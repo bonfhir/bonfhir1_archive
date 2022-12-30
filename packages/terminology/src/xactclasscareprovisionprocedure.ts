@@ -6,12 +6,12 @@ export const XActClassCareProvisionProcedureCode = {
   /**
    * care provision
    */
-  careprovision: "PCPR",
+  PCPR: "PCPR",
 
   /**
    * procedure
    */
-  procedure: "PROC",
+  PROC: "PROC",
 } as const;
 
 /**

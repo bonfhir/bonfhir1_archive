@@ -6,7 +6,7 @@ export const SubarachnoidRouteCode = {
   /**
    * Injection, subarachnoid
    */
-  Injectionsubarachnoid: "SUBARACHINJ",
+  SUBARACHINJ: "SUBARACHINJ",
 } as const;
 
 /**

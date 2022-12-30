@@ -6,17 +6,17 @@ export const Hl7VSGestationCategoryCodeCode = {
   /**
    * Premature / Pre-term
    */
-  PrematurePreterm: "1",
+  "1": "1",
 
   /**
    * Full Term
    */
-  FullTerm: "2",
+  "2": "2",
 
   /**
    * Overdue / Post-term
    */
-  OverduePostterm: "3",
+  "3": "3",
 } as const;
 
 /**

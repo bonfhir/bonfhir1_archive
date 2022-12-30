@@ -6,7 +6,7 @@ export const ParticipationExposureagentCode = {
   /**
    * ExposureAgent
    */
-  ExposureAgent: "EXPAGNT",
+  EXPAGNT: "EXPAGNT",
 } as const;
 
 /**

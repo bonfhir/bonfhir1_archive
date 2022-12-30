@@ -6,82 +6,82 @@ export const Hl7VSAmbulatoryStatusCode = {
   /**
    * No functional limitations
    */
-  Nofunctionallimitations: "A0",
+  A0: "A0",
 
   /**
    * Ambulates with assistive device
    */
-  Ambulateswithassistivedevice: "A1",
+  A1: "A1",
 
   /**
    * Wheelchair/stretcher bound
    */
-  Wheelchairstretcherbound: "A2",
+  A2: "A2",
 
   /**
    * Comatose; non-responsive
    */
-  Comatosenonresponsive: "A3",
+  A3: "A3",
 
   /**
    * Disoriented
    */
-  Disoriented: "A4",
+  A4: "A4",
 
   /**
    * Vision impaired
    */
-  Visionimpaired: "A5",
+  A5: "A5",
 
   /**
    * Hearing impaired
    */
-  Hearingimpaired: "A6",
+  A6: "A6",
 
   /**
    * Speech impaired
    */
-  Speechimpaired: "A7",
+  A7: "A7",
 
   /**
    * Non-English speaking
    */
-  NonEnglishspeaking: "A8",
+  A8: "A8",
 
   /**
    * Functional level unknown
    */
-  Functionallevelunknown: "A9",
+  A9: "A9",
 
   /**
    * Oxygen therapy
    */
-  Oxygentherapy: "B1",
+  B1: "B1",
 
   /**
    * Special equipment (tubes, IVs, catheters)
    */
-  SpecialequipmenttubesIVscatheters: "B2",
+  B2: "B2",
 
   /**
    * Amputee
    */
-  Amputee: "B3",
+  B3: "B3",
 
   /**
    * Mastectomy
    */
-  Mastectomy: "B4",
+  B4: "B4",
 
   /**
    * Paraplegic
    */
-  Paraplegic: "B5",
+  B5: "B5",
 
   /**
    * Pregnant
    */
-  Pregnant: "B6",
+  B6: "B6",
 } as const;
 
 /**

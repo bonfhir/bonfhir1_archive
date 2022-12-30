@@ -6,47 +6,47 @@ export const AuditEventSourceTypeCode = {
   /**
    * User Device
    */
-  UserDevice: "1",
+  "1": "1",
 
   /**
    * Data Interface
    */
-  DataInterface: "2",
+  "2": "2",
 
   /**
    * Web Server
    */
-  WebServer: "3",
+  "3": "3",
 
   /**
    * Application Server
    */
-  ApplicationServer: "4",
+  "4": "4",
 
   /**
    * Database Server
    */
-  DatabaseServer: "5",
+  "5": "5",
 
   /**
    * Security Server
    */
-  SecurityServer: "6",
+  "6": "6",
 
   /**
    * Network Device
    */
-  NetworkDevice: "7",
+  "7": "7",
 
   /**
    * Network Router
    */
-  NetworkRouter: "8",
+  "8": "8",
 
   /**
    * Other
    */
-  Other: "9",
+  "9": "9",
 } as const;
 
 /**

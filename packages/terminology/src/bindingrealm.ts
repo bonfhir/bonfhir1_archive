@@ -6,7 +6,7 @@ export const BindingRealmCode = {
   /**
    * binding realms
    */
-  bindingrealms: "BindingRealms",
+  BindingRealms: "BindingRealms",
 
   /**
    * Affiliate Realms
@@ -16,217 +16,217 @@ export const BindingRealmCode = {
   /**
    * Argentina
    */
-  Argentina: "AR",
+  AR: "AR",
 
   /**
    * Austria
    */
-  Austria: "AT",
+  AT: "AT",
 
   /**
    * Australia
    */
-  Australia: "AU",
+  AU: "AU",
 
   /**
    * Brazil
    */
-  Brazil: "BR",
+  BR: "BR",
 
   /**
    * Canada
    */
-  Canada: "CA",
+  CA: "CA",
 
   /**
    * Switzerland
    */
-  Switzerland: "CH",
+  CH: "CH",
 
   /**
    * Chile
    */
-  Chile: "CL",
+  CL: "CL",
 
   /**
    * China
    */
-  China: "CN",
+  CN: "CN",
 
   /**
    * Columbia
    */
-  Columbia: "CO",
+  CO: "CO",
 
   /**
    * Czech Republic
    */
-  CzechRepublic: "CZ",
+  CZ: "CZ",
 
   /**
    * Germany
    */
-  Germany: "DE",
+  DE: "DE",
 
   /**
    * Denmark
    */
-  Denmark: "DK",
+  DK: "DK",
 
   /**
    * Spain
    */
-  Spain: "ES",
+  ES: "ES",
 
   /**
    * Finland
    */
-  Finland: "FI",
+  FI: "FI",
 
   /**
    * France
    */
-  France: "FR",
+  FR: "FR",
 
   /**
    * Greece
    */
-  Greece: "GR",
+  GR: "GR",
 
   /**
    * Croatia
    */
-  Croatia: "HR",
+  HR: "HR",
 
   /**
    * Ireland
    */
-  Ireland: "IE",
+  IE: "IE",
 
   /**
    * India
    */
-  India: "IN",
+  IN: "IN",
 
   /**
    * Italy
    */
-  Italy: "IT",
+  IT: "IT",
 
   /**
    * Japan
    */
-  Japan: "JP",
+  JP: "JP",
 
   /**
    * Korea
    */
-  Korea: "KR",
+  KR: "KR",
 
   /**
    * Lithuania
    */
-  Lithuania: "LT",
+  LT: "LT",
 
   /**
    * Mexico
    */
-  Mexico: "MX",
+  MX: "MX",
 
   /**
    * The Netherlands
    */
-  TheNetherlands: "NL",
+  NL: "NL",
 
   /**
    * New Zealand
    */
-  NewZealand: "NZ",
+  NZ: "NZ",
 
   /**
    * Romania
    */
-  Romania: "RO",
+  RO: "RO",
 
   /**
    * Russian Federation
    */
-  RussianFederation: "RU",
+  RU: "RU",
 
   /**
    * Sweden
    */
-  Sweden: "SE",
+  SE: "SE",
 
   /**
    * Singapore
    */
-  Singapore: "SG",
+  SG: "SG",
 
   /**
    * Southern Africa
    */
-  SouthernAfrica: "SOA",
+  SOA: "SOA",
 
   /**
    * Turkey
    */
-  Turkey: "TR",
+  TR: "TR",
 
   /**
    * Taiwan
    */
-  Taiwan: "TW",
+  TW: "TW",
 
   /**
    * United Kingdom
    */
-  UnitedKingdom: "UK",
+  UK: "UK",
 
   /**
    * United States of America
    */
-  UnitedStatesofAmerica: "US",
+  US: "US",
 
   /**
    * Universal
    */
-  Universal: "UV",
+  UV: "UV",
 
   /**
    * Uruguay
    */
-  Uruguay: "UY",
+  UY: "UY",
 
   /**
    * Unclassified Realm
    */
-  UnclassifiedRealm: "C1",
+  C1: "C1",
 
   /**
    * Great Britain
    */
-  GreatBritain: "GB",
+  GB: "GB",
 
   /**
    * Representative Realm
    */
-  RepresentativeRealm: "R1",
+  R1: "R1",
 
   /**
    * Example Realm
    */
-  ExampleRealm: "X1",
+  X1: "X1",
 
   /**
    * namespace realms
    */
-  namespacerealms: "NamespaceRealms",
+  NamespaceRealms: "NamespaceRealms",
 
   /**
    * Localized Version
    */
-  LocalizedVersion: "ZZ",
+  ZZ: "ZZ",
 
   /**
    * Special Realms

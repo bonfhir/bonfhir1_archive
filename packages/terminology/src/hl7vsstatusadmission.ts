@@ -6,22 +6,22 @@ export const Hl7VSStatusAdmissionCode = {
   /**
    * Admission status is valid; used for grouping
    */
-  Admissionstatusisvalidusedforgrouping: "0",
+  "0": "0",
 
   /**
    * Admission status is valid; not used for grouping
    */
-  Admissionstatusisvalidnotusedforgrouping: "1",
+  "1": "1",
 
   /**
    * Admission status is invalid; not used for grouping
    */
-  Admissionstatusisinvalidnotusedforgrouping: "2",
+  "2": "2",
 
   /**
    * Admission status is invalid; default value used for grouping
    */
-  Admissionstatusisinvaliddefaultvalueusedforgrouping: "3",
+  "3": "3",
 } as const;
 
 /**

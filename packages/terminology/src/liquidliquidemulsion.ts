@@ -6,102 +6,102 @@ export const LiquidLiquidEmulsionCode = {
   /**
    * Cream
    */
-  Cream: "CRM",
+  CRM: "CRM",
 
   /**
    * Nasal Cream
    */
-  NasalCream: "NASCRM",
+  NASCRM: "NASCRM",
 
   /**
    * Ophthalmic Cream
    */
-  OphthalmicCream: "OPCRM",
+  OPCRM: "OPCRM",
 
   /**
    * Oral Cream
    */
-  OralCream: "ORCRM",
+  ORCRM: "ORCRM",
 
   /**
    * Otic Cream
    */
-  OticCream: "OTCRM",
+  OTCRM: "OTCRM",
 
   /**
    * Rectal Cream
    */
-  RectalCream: "RECCRM",
+  RECCRM: "RECCRM",
 
   /**
    * Topical Cream
    */
-  TopicalCream: "TOPCRM",
+  TOPCRM: "TOPCRM",
 
   /**
    * Vaginal Cream
    */
-  VaginalCream: "VAGCRM",
+  VAGCRM: "VAGCRM",
 
   /**
    * Vaginal Cream with Applicator
    */
-  VaginalCreamwithApplicator: "VAGCRMAPL",
+  VAGCRMAPL: "VAGCRMAPL",
 
   /**
    * Lotion
    */
-  Lotion: "LTN",
+  LTN: "LTN",
 
   /**
    * Topical Lotion
    */
-  TopicalLotion: "TOPLTN",
+  TOPLTN: "TOPLTN",
 
   /**
    * Ointment
    */
-  Ointment: "OINT",
+  OINT: "OINT",
 
   /**
    * Nasal Ointment
    */
-  NasalOintment: "NASOINT",
+  NASOINT: "NASOINT",
 
   /**
    * Ointment with Applicator
    */
-  OintmentwithApplicator: "OINTAPL",
+  OINTAPL: "OINTAPL",
 
   /**
    * Ophthalmic Ointment
    */
-  OphthalmicOintment: "OPOINT",
+  OPOINT: "OPOINT",
 
   /**
    * Otic Ointment
    */
-  OticOintment: "OTOINT",
+  OTOINT: "OTOINT",
 
   /**
    * Rectal Ointment
    */
-  RectalOintment: "RECOINT",
+  RECOINT: "RECOINT",
 
   /**
    * Topical Ointment
    */
-  TopicalOintment: "TOPOINT",
+  TOPOINT: "TOPOINT",
 
   /**
    * Vaginal Ointment
    */
-  VaginalOintment: "VAGOINT",
+  VAGOINT: "VAGOINT",
 
   /**
    * Vaginal Ointment with Applicator
    */
-  VaginalOintmentwithApplicator: "VAGOINTAPL",
+  VAGOINTAPL: "VAGOINTAPL",
 } as const;
 
 /**

@@ -6,12 +6,12 @@ export const KutchinHanCode = {
   /**
    * Han
    */
-  Han: "x-HAA",
+  "x-HAA": "x-HAA",
 
   /**
    * Kutchin
    */
-  Kutchin: "x-KUC",
+  "x-KUC": "x-KUC",
 } as const;
 
 /**

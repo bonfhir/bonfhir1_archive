@@ -6,7 +6,7 @@ export const ActClassEncounterCode = {
   /**
    * encounter
    */
-  encounter: "ENC",
+  ENC: "ENC",
 } as const;
 
 /**

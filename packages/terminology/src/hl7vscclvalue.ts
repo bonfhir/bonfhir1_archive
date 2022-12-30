@@ -6,27 +6,27 @@ export const Hl7VSCclValueCode = {
   /**
    * Nothing obvious
    */
-  Nothingobvious: "0",
+  "0": "0",
 
   /**
    * Low
    */
-  Low: "1",
+  "1": "1",
 
   /**
    * Moderate
    */
-  Moderate: "2",
+  "2": "2",
 
   /**
    * High
    */
-  High: "3",
+  "3": "3",
 
   /**
    * Very high
    */
-  Veryhigh: "4",
+  "4": "4",
 } as const;
 
 /**

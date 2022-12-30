@@ -6,22 +6,22 @@ export const DocumentStorageCode = {
   /**
    * archived (not active)
    */
-  archivednotactive: "AR",
+  AR: "AR",
 
   /**
    * purged
    */
-  purged: "PU",
+  PU: "PU",
 
   /**
    * active
    */
-  active: "AC",
+  AC: "AC",
 
   /**
    * active and archived
    */
-  activeandarchived: "AA",
+  AA: "AA",
 } as const;
 
 /**

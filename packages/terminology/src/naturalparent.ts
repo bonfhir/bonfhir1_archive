@@ -6,27 +6,27 @@ export const NaturalParentCode = {
   /**
    * natural parent
    */
-  naturalparent: "NPRN",
+  NPRN: "NPRN",
 
   /**
    * natural father
    */
-  naturalfather: "NFTH",
+  NFTH: "NFTH",
 
   /**
    * natural father of fetus
    */
-  naturalfatheroffetus: "NFTHF",
+  NFTHF: "NFTHF",
 
   /**
    * natural mother
    */
-  naturalmother: "NMTH",
+  NMTH: "NMTH",
 
   /**
    * natural mother of fetus
    */
-  naturalmotheroffetus: "NMTHF",
+  NMTHF: "NMTHF",
 } as const;
 
 /**

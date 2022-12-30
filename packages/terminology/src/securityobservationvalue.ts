@@ -6,562 +6,562 @@ export const SecurityObservationValueCode = {
   /**
    * SecurityObservationValue
    */
-  SecurityObservationValue: "_SecurityObservationValue",
+  _SecurityObservationValue: "_SecurityObservationValue",
 
   /**
    * security category
    */
-  securitycategory: "_SECCATOBV",
+  _SECCATOBV: "_SECCATOBV",
 
   /**
    * security classification
    */
-  securityclassification: "_SECCLASSOBV",
+  _SECCLASSOBV: "_SECCLASSOBV",
 
   /**
    * security control
    */
-  securitycontrol: "_SECCONOBV",
+  _SECCONOBV: "_SECCONOBV",
 
   /**
    * security integrity
    */
-  securityintegrity: "_SECINTOBV",
+  _SECINTOBV: "_SECINTOBV",
 
   /**
    * alteration integrity
    */
-  alterationintegrity: "_SECALTINTOBV",
+  _SECALTINTOBV: "_SECALTINTOBV",
 
   /**
    * abstracted
    */
-  abstracted: "ABSTRED",
+  ABSTRED: "ABSTRED",
 
   /**
    * aggregated
    */
-  aggregated: "AGGRED",
+  AGGRED: "AGGRED",
 
   /**
    * anonymized
    */
-  anonymized: "ANONYED",
+  ANONYED: "ANONYED",
 
   /**
    * mapped
    */
-  mapped: "MAPPED",
+  MAPPED: "MAPPED",
 
   /**
    * masked
    */
-  masked: "MASKED",
+  MASKED: "MASKED",
 
   /**
    * pseudonymized
    */
-  pseudonymized: "PSEUDED",
+  PSEUDED: "PSEUDED",
 
   /**
    * redacted
    */
-  redacted: "REDACTED",
+  REDACTED: "REDACTED",
 
   /**
    * subsetted
    */
-  subsetted: "SUBSETTED",
+  SUBSETTED: "SUBSETTED",
 
   /**
    * syntactic transform
    */
-  syntactictransform: "SYNTAC",
+  SYNTAC: "SYNTAC",
 
   /**
    * translated
    */
-  translated: "TRSLT",
+  TRSLT: "TRSLT",
 
   /**
    * versioned
    */
-  versioned: "VERSIONED",
+  VERSIONED: "VERSIONED",
 
   /**
    * data integrity
    */
-  dataintegrity: "_SECDATINTOBV",
+  _SECDATINTOBV: "_SECDATINTOBV",
 
   /**
    * cryptographic hash function
    */
-  cryptographichashfunction: "CRYTOHASH",
+  CRYTOHASH: "CRYTOHASH",
 
   /**
    * digital signature
    */
-  digitalsignature: "DIGSIG",
+  DIGSIG: "DIGSIG",
 
   /**
    * integrity confidence
    */
-  integrityconfidence: "_SECINTCONOBV",
+  _SECINTCONOBV: "_SECINTCONOBV",
 
   /**
    * highly reliable
    */
-  highlyreliable: "HRELIABLE",
+  HRELIABLE: "HRELIABLE",
 
   /**
    * reliable
    */
-  reliable: "RELIABLE",
+  RELIABLE: "RELIABLE",
 
   /**
    * uncertain reliability
    */
-  uncertainreliability: "UNCERTREL",
+  UNCERTREL: "UNCERTREL",
 
   /**
    * unreliable
    */
-  unreliable: "UNRELIABLE",
+  UNRELIABLE: "UNRELIABLE",
 
   /**
    * provenance
    */
-  provenance: "_SECINTPRVOBV",
+  _SECINTPRVOBV: "_SECINTPRVOBV",
 
   /**
    * provenance asserted by
    */
-  provenanceassertedby: "_SECINTPRVABOBV",
+  _SECINTPRVABOBV: "_SECINTPRVABOBV",
 
   /**
    * clinician asserted
    */
-  clinicianasserted: "CLINAST",
+  CLINAST: "CLINAST",
 
   /**
    * device asserted
    */
-  deviceasserted: "DEVAST",
+  DEVAST: "DEVAST",
 
   /**
    * healthcare professional asserted
    */
-  healthcareprofessionalasserted: "HCPAST",
+  HCPAST: "HCPAST",
 
   /**
    * patient acquaintance asserted
    */
-  patientacquaintanceasserted: "PACQAST",
+  PACQAST: "PACQAST",
 
   /**
    * patient asserted
    */
-  patientasserted: "PATAST",
+  PATAST: "PATAST",
 
   /**
    * payer asserted
    */
-  payerasserted: "PAYAST",
+  PAYAST: "PAYAST",
 
   /**
    * professional asserted
    */
-  professionalasserted: "PROAST",
+  PROAST: "PROAST",
 
   /**
    * substitute decision maker asserted
    */
-  substitutedecisionmakerasserted: "SDMAST",
+  SDMAST: "SDMAST",
 
   /**
    * provenance reported by
    */
-  provenancereportedby: "_SECINTPRVRBOBV",
+  _SECINTPRVRBOBV: "_SECINTPRVRBOBV",
 
   /**
    * clinician reported
    */
-  clinicianreported: "CLINRPT",
+  CLINRPT: "CLINRPT",
 
   /**
    * device reported
    */
-  devicereported: "DEVRPT",
+  DEVRPT: "DEVRPT",
 
   /**
    * healthcare professional reported
    */
-  healthcareprofessionalreported: "HCPRPT",
+  HCPRPT: "HCPRPT",
 
   /**
    * patient acquaintance reported
    */
-  patientacquaintancereported: "PACQRPT",
+  PACQRPT: "PACQRPT",
 
   /**
    * patient reported
    */
-  patientreported: "PATRPT",
+  PATRPT: "PATRPT",
 
   /**
    * payer reported
    */
-  payerreported: "PAYRPT",
+  PAYRPT: "PAYRPT",
 
   /**
    * professional reported
    */
-  professionalreported: "PRORPT",
+  PRORPT: "PRORPT",
 
   /**
    * substitute decision maker reported
    */
-  substitutedecisionmakerreported: "SDMRPT",
+  SDMRPT: "SDMRPT",
 
   /**
    * integrity status
    */
-  integritystatus: "_SECINTSTOBV",
+  _SECINTSTOBV: "_SECINTSTOBV",
 
   /**
    * security trust observation
    */
-  securitytrustobservation: "SECTRSTOBV",
+  SECTRSTOBV: "SECTRSTOBV",
 
   /**
    * trust accreditation observation
    */
-  trustaccreditationobservation: "TRSTACCRDOBV",
+  TRSTACCRDOBV: "TRSTACCRDOBV",
 
   /**
    * trust agreement observation
    */
-  trustagreementobservation: "TRSTAGREOBV",
+  TRSTAGREOBV: "TRSTAGREOBV",
 
   /**
    * trust certificate observation
    */
-  trustcertificateobservation: "TRSTCERTOBV",
+  TRSTCERTOBV: "TRSTCERTOBV",
 
   /**
    * none supplied 5
    */
-  nonesupplied5: "TRSTFWKOBV",
+  TRSTFWKOBV: "TRSTFWKOBV",
 
   /**
    * trust assurance observation
    */
-  trustassuranceobservation: "TRSTLOAOBV",
+  TRSTLOAOBV: "TRSTLOAOBV",
 
   /**
    * authentication level of assurance value
    */
-  authenticationlevelofassurancevalue: "LOAAN",
+  LOAAN: "LOAAN",
 
   /**
    * low authentication level of assurance
    */
-  lowauthenticationlevelofassurance: "LOAAN1",
+  LOAAN1: "LOAAN1",
 
   /**
    * basic authentication level of assurance
    */
-  basicauthenticationlevelofassurance: "LOAAN2",
+  LOAAN2: "LOAAN2",
 
   /**
    * medium authentication level of assurance
    */
-  mediumauthenticationlevelofassurance: "LOAAN3",
+  LOAAN3: "LOAAN3",
 
   /**
    * high authentication level of assurance
    */
-  highauthenticationlevelofassurance: "LOAAN4",
+  LOAAN4: "LOAAN4",
 
   /**
    * authentication process level of assurance value
    */
-  authenticationprocesslevelofassurancevalue: "LOAAP",
+  LOAAP: "LOAAP",
 
   /**
    * low authentication process level of assurance
    */
-  lowauthenticationprocesslevelofassurance: "LOAAP1",
+  LOAAP1: "LOAAP1",
 
   /**
    * basic authentication process level of assurance
    */
-  basicauthenticationprocesslevelofassurance: "LOAAP2",
+  LOAAP2: "LOAAP2",
 
   /**
    * medium authentication process level of assurance
    */
-  mediumauthenticationprocesslevelofassurance: "LOAAP3",
+  LOAAP3: "LOAAP3",
 
   /**
    * high authentication process level of assurance
    */
-  highauthenticationprocesslevelofassurance: "LOAAP4",
+  LOAAP4: "LOAAP4",
 
   /**
    * assertion level of assurance value
    */
-  assertionlevelofassurancevalue: "LOAAS",
+  LOAAS: "LOAAS",
 
   /**
    * low assertion level of assurance
    */
-  lowassertionlevelofassurance: "LOAAS1",
+  LOAAS1: "LOAAS1",
 
   /**
    * basic assertion level of assurance
    */
-  basicassertionlevelofassurance: "LOAAS2",
+  LOAAS2: "LOAAS2",
 
   /**
    * medium assertion level of assurance
    */
-  mediumassertionlevelofassurance: "LOAAS3",
+  LOAAS3: "LOAAS3",
 
   /**
    * high assertion level of assurance
    */
-  highassertionlevelofassurance: "LOAAS4",
+  LOAAS4: "LOAAS4",
 
   /**
    * token and credential management level of assurance value)
    */
-  tokenandcredentialmanagementlevelofassurancevalue: "LOACM",
+  LOACM: "LOACM",
 
   /**
    * low token and credential management level of assurance
    */
-  lowtokenandcredentialmanagementlevelofassurance: "LOACM1",
+  LOACM1: "LOACM1",
 
   /**
    * basic token and credential management level of assurance
    */
-  basictokenandcredentialmanagementlevelofassurance: "LOACM2",
+  LOACM2: "LOACM2",
 
   /**
    * medium token and credential management level of assurance
    */
-  mediumtokenandcredentialmanagementlevelofassurance: "LOACM3",
+  LOACM3: "LOACM3",
 
   /**
    * high token and credential management level of assurance
    */
-  hightokenandcredentialmanagementlevelofassurance: "LOACM4",
+  LOACM4: "LOACM4",
 
   /**
    * identity proofing level of assurance
    */
-  identityproofinglevelofassurance: "LOAID",
+  LOAID: "LOAID",
 
   /**
    * low identity proofing level of assurance
    */
-  lowidentityproofinglevelofassurance: "LOAID1",
+  LOAID1: "LOAID1",
 
   /**
    * basic identity proofing level of assurance
    */
-  basicidentityproofinglevelofassurance: "LOAID2",
+  LOAID2: "LOAID2",
 
   /**
    * medium identity proofing level of assurance
    */
-  mediumidentityproofinglevelofassurance: "LOAID3",
+  LOAID3: "LOAID3",
 
   /**
    * high identity proofing level of assurance
    */
-  highidentityproofinglevelofassurance: "LOAID4",
+  LOAID4: "LOAID4",
 
   /**
    * non-repudiation level of assurance value
    */
-  nonrepudiationlevelofassurancevalue: "LOANR",
+  LOANR: "LOANR",
 
   /**
    * low non-repudiation level of assurance
    */
-  lownonrepudiationlevelofassurance: "LOANR1",
+  LOANR1: "LOANR1",
 
   /**
    * basic non-repudiation level of assurance
    */
-  basicnonrepudiationlevelofassurance: "LOANR2",
+  LOANR2: "LOANR2",
 
   /**
    * medium non-repudiation level of assurance
    */
-  mediumnonrepudiationlevelofassurance: "LOANR3",
+  LOANR3: "LOANR3",
 
   /**
    * high non-repudiation level of assurance
    */
-  highnonrepudiationlevelofassurance: "LOANR4",
+  LOANR4: "LOANR4",
 
   /**
    * remote access level of assurance value
    */
-  remoteaccesslevelofassurancevalue: "LOARA",
+  LOARA: "LOARA",
 
   /**
    * low remote access level of assurance
    */
-  lowremoteaccesslevelofassurance: "LOARA1",
+  LOARA1: "LOARA1",
 
   /**
    * basic remote access level of assurance
    */
-  basicremoteaccesslevelofassurance: "LOARA2",
+  LOARA2: "LOARA2",
 
   /**
    * medium remote access level of assurance
    */
-  mediumremoteaccesslevelofassurance: "LOARA3",
+  LOARA3: "LOARA3",
 
   /**
    * high remote access level of assurance
    */
-  highremoteaccesslevelofassurance: "LOARA4",
+  LOARA4: "LOARA4",
 
   /**
    * token level of assurance value
    */
-  tokenlevelofassurancevalue: "LOATK",
+  LOATK: "LOATK",
 
   /**
    * low token level of assurance
    */
-  lowtokenlevelofassurance: "LOATK1",
+  LOATK1: "LOATK1",
 
   /**
    * basic token level of assurance
    */
-  basictokenlevelofassurance: "LOATK2",
+  LOATK2: "LOATK2",
 
   /**
    * medium token level of assurance
    */
-  mediumtokenlevelofassurance: "LOATK3",
+  LOATK3: "LOATK3",
 
   /**
    * high token level of assurance
    */
-  hightokenlevelofassurance: "LOATK4",
+  LOATK4: "LOATK4",
 
   /**
    * none supplied 6
    */
-  nonesupplied6: "TRSTMECOBV",
+  TRSTMECOBV: "TRSTMECOBV",
 
   /**
    * low
    */
-  low: "L",
+  L: "L",
 
   /**
    * moderate
    */
-  moderate: "M",
+  M: "M",
 
   /**
    * normal
    */
-  normal: "N",
+  N: "N",
 
   /**
    * restricted
    */
-  restricted: "R",
+  R: "R",
 
   /**
    * unrestricted
    */
-  unrestricted: "U",
+  U: "U",
 
   /**
    * very restricted
    */
-  veryrestricted: "V",
+  V: "V",
 
   /**
    * Confidentiality
    */
-  Confidentiality: "_Confidentiality",
+  _Confidentiality: "_Confidentiality",
 
   /**
    * ConfidentialityByAccessKind
    */
-  ConfidentialityByAccessKind: "_ConfidentialityByAccessKind",
+  _ConfidentialityByAccessKind: "_ConfidentialityByAccessKind",
 
   /**
    * business
    */
-  business: "B",
+  B: "B",
 
   /**
    * clinician
    */
-  clinician: "D",
+  D: "D",
 
   /**
    * individual
    */
-  individual: "I",
+  I: "I",
 
   /**
    * ConfidentialityByInfoType
    */
-  ConfidentialityByInfoType: "_ConfidentialityByInfoType",
+  _ConfidentialityByInfoType: "_ConfidentialityByInfoType",
 
   /**
    * substance abuse related
    */
-  substanceabuserelated: "ETH",
+  ETH: "ETH",
 
   /**
    * HIV related
    */
-  HIVrelated: "HIV",
+  HIV: "HIV",
 
   /**
    * psychiatry relate
    */
-  psychiatryrelate: "PSY",
+  PSY: "PSY",
 
   /**
    * sexual and domestic violence related
    */
-  sexualanddomesticviolencerelated: "SDV",
+  SDV: "SDV",
 
   /**
    * ConfidentialityModifiers
    */
-  ConfidentialityModifiers: "_ConfidentialityModifiers",
+  _ConfidentialityModifiers: "_ConfidentialityModifiers",
 
   /**
    * celebrity
    */
-  celebrity: "C",
+  C: "C",
 
   /**
    * sensitive
    */
-  sensitive: "S",
+  S: "S",
 
   /**
    * taboo
    */
-  taboo: "T",
+  T: "T",
 } as const;
 
 /**

@@ -6,22 +6,22 @@ export const InhalerMedicalDeviceCode = {
   /**
    * Inhaler
    */
-  Inhaler: "INH",
+  INH: "INH",
 
   /**
    * Diskus
    */
-  Diskus: "DSKS",
+  DSKS: "DSKS",
 
   /**
    * Diskhaler
    */
-  Diskhaler: "DSKUNH",
+  DSKUNH: "DSKUNH",
 
   /**
    * Turbuhaler
    */
-  Turbuhaler: "TRBINH",
+  TRBINH: "TRBINH",
 } as const;
 
 /**

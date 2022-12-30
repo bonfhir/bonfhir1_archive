@@ -6,17 +6,17 @@ export const ExampleDiagnosisOnAdmissionCodesCode = {
   /**
    * Yes
    */
-  Yes: "yes",
+  yes: "yes",
 
   /**
    * No
    */
-  No: "no",
+  no: "no",
 
   /**
    * Unknown
    */
-  Unknown: "unknown",
+  unknown: "unknown",
 } as const;
 
 /**

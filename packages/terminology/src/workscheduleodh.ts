@@ -6,47 +6,47 @@ export const WorkScheduleODHCode = {
   /**
    * daytime shift
    */
-  daytimeshift: "DS",
+  DS: "DS",
 
   /**
    * early morning shift
    */
-  earlymorningshift: "EMS",
+  EMS: "EMS",
 
   /**
    * evening shift
    */
-  eveningshift: "ES",
+  ES: "ES",
 
   /**
    * night shift
    */
-  nightshift: "NS",
+  NS: "NS",
 
   /**
    * rotating shift with nights
    */
-  rotatingshiftwithnights: "RSWN",
+  RSWN: "RSWN",
 
   /**
    * rotating shift without nights
    */
-  rotatingshiftwithoutnights: "RSWON",
+  RSWON: "RSWON",
 
   /**
    * split shift
    */
-  splitshift: "SS",
+  SS: "SS",
 
   /**
    * very long shift
    */
-  verylongshift: "VLS",
+  VLS: "VLS",
 
   /**
    * variable shift
    */
-  variableshift: "VS",
+  VS: "VS",
 } as const;
 
 /**

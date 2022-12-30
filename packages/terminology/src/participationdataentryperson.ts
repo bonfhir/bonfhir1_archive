@@ -6,7 +6,7 @@ export const ParticipationDataEntryPersonCode = {
   /**
    * data entry person
    */
-  dataentryperson: "ENT",
+  ENT: "ENT",
 } as const;
 
 /**

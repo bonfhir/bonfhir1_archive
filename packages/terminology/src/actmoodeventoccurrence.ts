@@ -8,7 +8,7 @@ export const ActMoodEventOccurrenceCode = {
   /**
    * event (occurrence)
    */
-  eventoccurrence: "EVN",
+  EVN: "EVN",
 } as const;
 
 /**

@@ -6,7 +6,7 @@ export const ParticipationCatalystCode = {
   /**
    * catalyst
    */
-  catalyst: "CAT",
+  CAT: "CAT",
 } as const;
 
 /**

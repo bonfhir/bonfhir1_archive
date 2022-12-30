@@ -6,31 +6,27 @@ export const Hl7VSNatureOfServiceTestObservationCode = {
   /**
    * Profile or battery consisting of many independent atomic observations (e.g., SMA12, electrolytes), usually done at one instrument on one specimen
    */
-  ProfileorbatteryconsistingofmanyindependentatomicobservationsegSMA12electrolytesusuallydoneatoneinstrumentononespecimen:
-    "P",
+  P: "P",
 
   /**
    * Functional procedure that may consist of one or more interrelated measures (e.g., glucose tolerance test, creatinine clearance), usually done at different times and/or on different specimens
    */
-  Functionalprocedurethatmayconsistofoneormoreinterrelatedmeasuresegglucosetolerancetestcreatinineclearanceusuallydoneatdifferenttimesandorondifferentspecimens:
-    "F",
+  F: "F",
 
   /**
    * Atomic service/test/observation (test code or treatment code)
    */
-  Atomicservicetestobservationtestcodeortreatmentcode: "A",
+  A: "A",
 
   /**
    * Superset-a set of batteries or procedures ordered under a single code unit but processed as separate batteries (e.g., routines = CBC, UA, electrolytes)<p>This set indicates that the code being described is used to order multiple service/test/observation b
    */
-  SupersetasetofbatteriesorproceduresorderedunderasinglecodeunitbutprocessedasseparatebatteriesegroutinesCBCUAelectrolytespThissetindicatesthatthecodebeingdescribedisusedtoordermultipleservicetestobservationb:
-    "S",
+  S: "S",
 
   /**
    * Single observation calculated via a rule or formula from other independent observations (e.g., Alveolar-arterial ratio, cardiac output)
    */
-  SingleobservationcalculatedviaaruleorformulafromotherindependentobservationsegAlveolararterialratiocardiacoutput:
-    "C",
+  C: "C",
 } as const;
 
 /**

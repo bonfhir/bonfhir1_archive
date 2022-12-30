@@ -6,22 +6,22 @@ export const Hl7VSProcedureFunctionalTypeCode = {
   /**
    * Anesthesia
    */
-  Anesthesia: "A",
+  A: "A",
 
   /**
    * Procedure for treatment (therapeutic, including operations)
    */
-  Procedurefortreatmenttherapeuticincludingoperations: "P",
+  P: "P",
 
   /**
    * Invasive procedure not classified elsewhere (e.g., IV, catheter, etc.)
    */
-  InvasiveprocedurenotclassifiedelsewhereegIVcatheteretc: "I",
+  I: "I",
 
   /**
    * Diagnostic procedure
    */
-  Diagnosticprocedure: "D",
+  D: "D",
 } as const;
 
 /**

@@ -8,47 +8,47 @@ export const AdministrableDrugFormCode = {
   /**
    * Applicatorful
    */
-  Applicatorful: "APPFUL",
+  APPFUL: "APPFUL",
 
   /**
    * Puff
    */
-  Puff: "PUFF",
+  PUFF: "PUFF",
 
   /**
    * Scoops
    */
-  Scoops: "SCOOP",
+  SCOOP: "SCOOP",
 
   /**
    * Sprays
    */
-  Sprays: "SPRY",
+  SPRY: "SPRY",
 
   /**
    * Drops
    */
-  Drops: "DROP",
+  DROP: "DROP",
 
   /**
    * Nasal Drops
    */
-  NasalDrops: "NDROP",
+  NDROP: "NDROP",
 
   /**
    * Ophthalmic Drops
    */
-  OphthalmicDrops: "OPDROP",
+  OPDROP: "OPDROP",
 
   /**
    * Oral Drops
    */
-  OralDrops: "ORDROP",
+  ORDROP: "ORDROP",
 
   /**
    * Otic Drops
    */
-  OticDrops: "OTDROP",
+  OTDROP: "OTDROP",
 } as const;
 
 /**

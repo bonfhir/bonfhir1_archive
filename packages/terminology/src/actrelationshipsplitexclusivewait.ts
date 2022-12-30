@@ -6,7 +6,7 @@ export const ActRelationshipSplitExclusiveWaitCode = {
   /**
    * exclusive wait
    */
-  exclusivewait: "EW",
+  EW: "EW",
 } as const;
 
 /**

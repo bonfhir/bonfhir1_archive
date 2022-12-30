@@ -6,37 +6,37 @@ export const TextMediaTypeCode = {
   /**
    * HTML Text
    */
-  HTMLText: "text/html",
+  "text/html": "text/html",
 
   /**
    * Plain Text
    */
-  PlainText: "text/plain",
+  "text/plain": "text/plain",
 
   /**
    * RTF Text
    */
-  RTFText: "text/rtf",
+  "text/rtf": "text/rtf",
 
   /**
    * SGML Text
    */
-  SGMLText: "text/sgml",
+  "text/sgml": "text/sgml",
 
   /**
    * HL7 Text
    */
-  HL7Text: "text/x-hl7-ft",
+  "text/x-hl7-ft": "text/x-hl7-ft",
 
   /**
    * HL7 Structured Narrative
    */
-  HL7StructuredNarrative: "text/x-hl7-text+xml",
+  "text/x-hl7-text+xml": "text/x-hl7-text+xml",
 
   /**
    * XML Text
    */
-  XMLText: "text/xml",
+  "text/xml": "text/xml",
 } as const;
 
 /**

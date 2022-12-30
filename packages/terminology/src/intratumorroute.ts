@@ -6,7 +6,7 @@ export const IntratumorRouteCode = {
   /**
    * Injection, intratumor
    */
-  Injectionintratumor: "ITUMINJ",
+  ITUMINJ: "ITUMINJ",
 } as const;
 
 /**

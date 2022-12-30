@@ -6,17 +6,17 @@ export const Hl7VSVisitPriorityCodeCode = {
   /**
    * Emergency
    */
-  Emergency: "1",
+  "1": "1",
 
   /**
    * Urgent
    */
-  Urgent: "2",
+  "2": "2",
 
   /**
    * Elective
    */
-  Elective: "3",
+  "3": "3",
 } as const;
 
 /**

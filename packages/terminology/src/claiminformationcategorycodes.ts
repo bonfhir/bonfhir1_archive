@@ -6,72 +6,72 @@ export const ClaimInformationCategoryCodesCode = {
   /**
    * Information
    */
-  Information: "info",
+  info: "info",
 
   /**
    * Discharge
    */
-  Discharge: "discharge",
+  discharge: "discharge",
 
   /**
    * Onset
    */
-  Onset: "onset",
+  onset: "onset",
 
   /**
    * Related Services
    */
-  RelatedServices: "related",
+  related: "related",
 
   /**
    * Exception
    */
-  Exception: "exception",
+  exception: "exception",
 
   /**
    * Materials Forwarded
    */
-  MaterialsForwarded: "material",
+  material: "material",
 
   /**
    * Attachment
    */
-  Attachment: "attachment",
+  attachment: "attachment",
 
   /**
    * Missing Tooth
    */
-  MissingTooth: "missingtooth",
+  missingtooth: "missingtooth",
 
   /**
    * Prosthesis
    */
-  Prosthesis: "prosthesis",
+  prosthesis: "prosthesis",
 
   /**
    * Other
    */
-  Other: "other",
+  other: "other",
 
   /**
    * Hospitalized
    */
-  Hospitalized: "hospitalized",
+  hospitalized: "hospitalized",
 
   /**
    * EmploymentImpacted
    */
-  EmploymentImpacted: "employmentimpacted",
+  employmentimpacted: "employmentimpacted",
 
   /**
    * External Caause
    */
-  ExternalCaause: "externalcause",
+  externalcause: "externalcause",
 
   /**
    * Patient Reason for Visit
    */
-  PatientReasonforVisit: "patientreasonforvisit",
+  patientreasonforvisit: "patientreasonforvisit",
 } as const;
 
 /**

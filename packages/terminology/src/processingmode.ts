@@ -6,22 +6,22 @@ export const ProcessingModeCode = {
   /**
    * Archive
    */
-  Archive: "A",
+  A: "A",
 
   /**
    * Initial load
    */
-  Initialload: "I",
+  I: "I",
 
   /**
    * Restore from archive
    */
-  Restorefromarchive: "R",
+  R: "R",
 
   /**
    * Current processing
    */
-  Currentprocessing: "T",
+  T: "T",
 } as const;
 
 /**

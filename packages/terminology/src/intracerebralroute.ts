@@ -6,7 +6,7 @@ export const IntracerebralRouteCode = {
   /**
    * Injection, intracerebral
    */
-  Injectionintracerebral: "ICEREBINJ",
+  ICEREBINJ: "ICEREBINJ",
 } as const;
 
 /**

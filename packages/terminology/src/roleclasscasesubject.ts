@@ -6,7 +6,7 @@ export const RoleClassCaseSubjectCode = {
   /**
    * Case Subject
    */
-  CaseSubject: "CASEBJ",
+  CASEBJ: "CASEBJ",
 } as const;
 
 /**

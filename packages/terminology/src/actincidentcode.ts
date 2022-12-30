@@ -6,27 +6,27 @@ export const ActIncidentCodeCode = {
   /**
    * Motor vehicle accident
    */
-  Motorvehicleaccident: "MVA",
+  MVA: "MVA",
 
   /**
    * School Accident
    */
-  SchoolAccident: "SCHOOL",
+  SCHOOL: "SCHOOL",
 
   /**
    * Sporting Accident
    */
-  SportingAccident: "SPT",
+  SPT: "SPT",
 
   /**
    * Workplace accident
    */
-  Workplaceaccident: "WPA",
+  WPA: "WPA",
 
   /**
    * ActPatientSafetyIncidentCode
    */
-  ActPatientSafetyIncidentCode: "_ActPatientSafetyIncidentCode",
+  _ActPatientSafetyIncidentCode: "_ActPatientSafetyIncidentCode",
 } as const;
 
 /**

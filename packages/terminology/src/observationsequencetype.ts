@@ -6,17 +6,17 @@ export const ObservationSequenceTypeCode = {
   /**
    * absolute time sequence
    */
-  absolutetimesequence: "TIME_ABSOLUTE",
+  TIME_ABSOLUTE: "TIME_ABSOLUTE",
 
   /**
    * relative time sequence
    */
-  relativetimesequence: "TIME_RELATIVE",
+  TIME_RELATIVE: "TIME_RELATIVE",
 
   /**
    * ECGObservationSequenceType
    */
-  ECGObservationSequenceType: "_ECGObservationSequenceType",
+  _ECGObservationSequenceType: "_ECGObservationSequenceType",
 } as const;
 
 /**

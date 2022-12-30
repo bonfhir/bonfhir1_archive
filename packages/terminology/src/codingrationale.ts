@@ -10,42 +10,42 @@ export const CodingRationaleCode = {
   /**
    * originally produced code
    */
-  originallyproducedcode: "O",
+  O: "O",
 
   /**
    * original and required
    */
-  originalandrequired: "OR",
+  OR: "OR",
 
   /**
    * post-coded
    */
-  postcoded: "P",
+  P: "P",
 
   /**
    * post-coded and required
    */
-  postcodedandrequired: "PR",
+  PR: "PR",
 
   /**
    * required
    */
-  required: "R",
+  R: "R",
 
   /**
    * HL7 Specified or Mandated
    */
-  HL7SpecifiedorMandated: "HL7",
+  HL7: "HL7",
 
   /**
    * Both HL7 mandated and the original code
    */
-  BothHL7mandatedandtheoriginalcode: "SH",
+  SH: "SH",
 
   /**
    * Source (or original) code
    */
-  Sourceororiginalcode: "SRC",
+  SRC: "SRC",
 } as const;
 
 /**

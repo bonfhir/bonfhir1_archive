@@ -6,7 +6,7 @@ export const RoleClassExposureVectorCode = {
   /**
    * exposure vector
    */
-  exposurevector: "EXPVECTOR",
+  EXPVECTOR: "EXPVECTOR",
 } as const;
 
 /**

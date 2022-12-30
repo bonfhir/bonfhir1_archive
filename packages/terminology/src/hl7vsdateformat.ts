@@ -6,32 +6,32 @@ export const Hl7VSDateFormatCode = {
   /**
    * mm/dd/yy
    */
-  mmddyy: "1",
+  "1": "1",
 
   /**
    * yy.mm.dd
    */
-  yymmdd: "2",
+  "2": "2",
 
   /**
    * dd/mm/yy
    */
-  ddmmyy: "3",
+  "3": "3",
 
   /**
    * dd.mm.yy
    */
-  ddmmyy: "4",
+  "4": "4",
 
   /**
    * yy/mm/dd
    */
-  yymmdd: "5",
+  "5": "5",
 
   /**
    * Yymmdd
    */
-  Yymmdd: "6",
+  "6": "6",
 } as const;
 
 /**

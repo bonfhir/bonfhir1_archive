@@ -6,323 +6,323 @@ export const ActCoverageAssessmentObservationValueCode = {
   /**
    * ActCoverageAssessmentObservationValue
    */
-  ActCoverageAssessmentObservationValue:
+  _ActCoverageAssessmentObservationValue:
     "_ActCoverageAssessmentObservationValue",
 
   /**
    * ActFinancialStatusObservationValue
    */
-  ActFinancialStatusObservationValue: "_ActFinancialStatusObservationValue",
+  _ActFinancialStatusObservationValue: "_ActFinancialStatusObservationValue",
 
   /**
    * asset
    */
-  asset: "ASSET",
+  ASSET: "ASSET",
 
   /**
    * annuity
    */
-  annuity: "ANNUITY",
+  ANNUITY: "ANNUITY",
 
   /**
    * real property
    */
-  realproperty: "PROP",
+  PROP: "PROP",
 
   /**
    * retirement investment account
    */
-  retirementinvestmentaccount: "RETACCT",
+  RETACCT: "RETACCT",
 
   /**
    * trust
    */
-  trust: "TRUST",
+  TRUST: "TRUST",
 
   /**
    * income
    */
-  income: "INCOME",
+  INCOME: "INCOME",
 
   /**
    * child support
    */
-  childsupport: "CHILD",
+  CHILD: "CHILD",
 
   /**
    * disability pay
    */
-  disabilitypay: "DISABL",
+  DISABL: "DISABL",
 
   /**
    * investment income
    */
-  investmentincome: "INVEST",
+  INVEST: "INVEST",
 
   /**
    * paid employment
    */
-  paidemployment: "PAY",
+  PAY: "PAY",
 
   /**
    * retirement pay
    */
-  retirementpay: "RETIRE",
+  RETIRE: "RETIRE",
 
   /**
    * spousal or partner support
    */
-  spousalorpartnersupport: "SPOUSAL",
+  SPOUSAL: "SPOUSAL",
 
   /**
    * income supplement
    */
-  incomesupplement: "SUPPLE",
+  SUPPLE: "SUPPLE",
 
   /**
    * tax obligation
    */
-  taxobligation: "TAX",
+  TAX: "TAX",
 
   /**
    * living expense
    */
-  livingexpense: "LIVEXP",
+  LIVEXP: "LIVEXP",
 
   /**
    * clothing expense
    */
-  clothingexpense: "CLOTH",
+  CLOTH: "CLOTH",
 
   /**
    * food expense
    */
-  foodexpense: "FOOD",
+  FOOD: "FOOD",
 
   /**
    * health expense
    */
-  healthexpense: "HEALTH",
+  HEALTH: "HEALTH",
 
   /**
    * household expense
    */
-  householdexpense: "HOUSE",
+  HOUSE: "HOUSE",
 
   /**
    * legal expense
    */
-  legalexpense: "LEGAL",
+  LEGAL: "LEGAL",
 
   /**
    * mortgage
    */
-  mortgage: "MORTG",
+  MORTG: "MORTG",
 
   /**
    * rent
    */
-  rent: "RENT",
+  RENT: "RENT",
 
   /**
    * sundry expense
    */
-  sundryexpense: "SUNDRY",
+  SUNDRY: "SUNDRY",
 
   /**
    * transportation expense
    */
-  transportationexpense: "TRANS",
+  TRANS: "TRANS",
 
   /**
    * utility expense
    */
-  utilityexpense: "UTIL",
+  UTIL: "UTIL",
 
   /**
    * eligibility indicator
    */
-  eligibilityindicator: "ELSTAT",
+  ELSTAT: "ELSTAT",
 
   /**
    * adoption document
    */
-  adoptiondocument: "ADOPT",
+  ADOPT: "ADOPT",
 
   /**
    * birth certificate
    */
-  birthcertificate: "BTHCERT",
+  BTHCERT: "BTHCERT",
 
   /**
    * creditable coverage document
    */
-  creditablecoveragedocument: "CCOC",
+  CCOC: "CCOC",
 
   /**
    * driver license
    */
-  driverlicense: "DRLIC",
+  DRLIC: "DRLIC",
 
   /**
    * foster child document
    */
-  fosterchilddocument: "FOSTER",
+  FOSTER: "FOSTER",
 
   /**
    * program or policy member
    */
-  programorpolicymember: "MEMBER",
+  MEMBER: "MEMBER",
 
   /**
    * military identification
    */
-  militaryidentification: "MIL",
+  MIL: "MIL",
 
   /**
    * marriage certificate
    */
-  marriagecertificate: "MRGCERT",
+  MRGCERT: "MRGCERT",
 
   /**
    * passport
    */
-  passport: "PASSPORT",
+  PASSPORT: "PASSPORT",
 
   /**
    * student enrollment
    */
-  studentenrollment: "STUDENRL",
+  STUDENRL: "STUDENRL",
 
   /**
    * health status
    */
-  healthstatus: "HLSTAT",
+  HLSTAT: "HLSTAT",
 
   /**
    * disabled
    */
-  disabled: "DISABLE",
+  DISABLE: "DISABLE",
 
   /**
    * drug use
    */
-  druguse: "DRUG",
+  DRUG: "DRUG",
 
   /**
    * IV drug use
    */
-  IVdruguse: "IVDRG",
+  IVDRG: "IVDRG",
 
   /**
    * pregnant
    */
-  pregnant: "PGNT",
+  PGNT: "PGNT",
 
   /**
    * living dependency
    */
-  livingdependency: "LIVDEP",
+  LIVDEP: "LIVDEP",
 
   /**
    * relative dependent
    */
-  relativedependent: "RELDEP",
+  RELDEP: "RELDEP",
 
   /**
    * spouse dependent
    */
-  spousedependent: "SPSDEP",
+  SPSDEP: "SPSDEP",
 
   /**
    * unrelated person dependent
    */
-  unrelatedpersondependent: "URELDEP",
+  URELDEP: "URELDEP",
 
   /**
    * living situation
    */
-  livingsituation: "LIVSIT",
+  LIVSIT: "LIVSIT",
 
   /**
    * alone
    */
-  alone: "ALONE",
+  ALONE: "ALONE",
 
   /**
    * dependent children
    */
-  dependentchildren: "DEPCHD",
+  DEPCHD: "DEPCHD",
 
   /**
    * dependent spouse
    */
-  dependentspouse: "DEPSPS",
+  DEPSPS: "DEPSPS",
 
   /**
    * dependent young children
    */
-  dependentyoungchildren: "DEPYGCHD",
+  DEPYGCHD: "DEPYGCHD",
 
   /**
    * live with family
    */
-  livewithfamily: "FAM",
+  FAM: "FAM",
 
   /**
    * relative
    */
-  relative: "RELAT",
+  RELAT: "RELAT",
 
   /**
    * spouse only
    */
-  spouseonly: "SPS",
+  SPS: "SPS",
 
   /**
    * unrelated person
    */
-  unrelatedperson: "UNREL",
+  UNREL: "UNREL",
 
   /**
    * socio economic status
    */
-  socioeconomicstatus: "SOECSTAT",
+  SOECSTAT: "SOECSTAT",
 
   /**
    * abuse victim
    */
-  abusevictim: "ABUSE",
+  ABUSE: "ABUSE",
 
   /**
    * homeless
    */
-  homeless: "HMLESS",
+  HMLESS: "HMLESS",
 
   /**
    * illegal immigrant
    */
-  illegalimmigrant: "ILGIM",
+  ILGIM: "ILGIM",
 
   /**
    * incarcerated
    */
-  incarcerated: "INCAR",
+  INCAR: "INCAR",
 
   /**
    * probation
    */
-  probation: "PROB",
+  PROB: "PROB",
 
   /**
    * refugee
    */
-  refugee: "REFUG",
+  REFUG: "REFUG",
 
   /**
    * unemployed
    */
-  unemployed: "UNEMPL",
+  UNEMPL: "UNEMPL",
 } as const;
 
 /**

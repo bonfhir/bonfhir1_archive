@@ -6,12 +6,12 @@ export const QueryRequestLimitCode = {
   /**
    * QueryRequestLimit
    */
-  QueryRequestLimit: "_QueryRequestLimit",
+  _QueryRequestLimit: "_QueryRequestLimit",
 
   /**
    * record
    */
-  record: "RD",
+  RD: "RD",
 } as const;
 
 /**

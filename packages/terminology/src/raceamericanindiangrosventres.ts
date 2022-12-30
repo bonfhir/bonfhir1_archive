@@ -6,12 +6,12 @@ export const RaceAmericanIndianGrosVentresCode = {
   /**
    * Gros Ventres
    */
-  GrosVentres: "1264-1",
+  "1264-1": "1264-1",
 
   /**
    * Atsina
    */
-  Atsina: "1265-8",
+  "1265-8": "1265-8",
 } as const;
 
 /**

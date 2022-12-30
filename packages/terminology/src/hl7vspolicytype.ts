@@ -6,27 +6,27 @@ export const Hl7VSPolicyTypeCode = {
   /**
    * Ancillary
    */
-  Ancillary: "ANC",
+  ANC: "ANC",
 
   /**
    * Second ancillary
    */
-  Secondancillary: "2ANC",
+  "2ANC": "2ANC",
 
   /**
    * Major medical
    */
-  Majormedical: "MMD",
+  MMD: "MMD",
 
   /**
    * Second major medical
    */
-  Secondmajormedical: "2MMD",
+  "2MMD": "2MMD",
 
   /**
    * Third major medical
    */
-  Thirdmajormedical: "3MMD",
+  "3MMD": "3MMD",
 } as const;
 
 /**

@@ -6,37 +6,37 @@ export const IncidentalServiceDeliveryLocationRoleTypeCode = {
   /**
    * accident site
    */
-  accidentsite: "ACC",
+  ACC: "ACC",
 
   /**
    * Community Location
    */
-  CommunityLocation: "COMM",
+  COMM: "COMM",
 
   /**
    * community service center
    */
-  communityservicecenter: "CSC",
+  CSC: "CSC",
 
   /**
    * Patient's Residence
    */
-  PatientsResidence: "PTRES",
+  PTRES: "PTRES",
 
   /**
    * school
    */
-  school: "SCHOOL",
+  SCHOOL: "SCHOOL",
 
   /**
    * underage protection center
    */
-  underageprotectioncenter: "UPC",
+  UPC: "UPC",
 
   /**
    * work site
    */
-  worksite: "WORK",
+  WORK: "WORK",
 } as const;
 
 /**

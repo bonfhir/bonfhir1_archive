@@ -6,27 +6,27 @@ export const XEncounterParticipantCode = {
   /**
    * admitter
    */
-  admitter: "ADM",
+  ADM: "ADM",
 
   /**
    * attender
    */
-  attender: "ATND",
+  ATND: "ATND",
 
   /**
    * consultant
    */
-  consultant: "CON",
+  CON: "CON",
 
   /**
    * discharger
    */
-  discharger: "DIS",
+  DIS: "DIS",
 
   /**
    * referrer
    */
-  referrer: "REF",
+  REF: "REF",
 } as const;
 
 /**

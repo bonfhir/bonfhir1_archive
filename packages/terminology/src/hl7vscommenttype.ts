@@ -6,42 +6,42 @@ export const Hl7VSCommentTypeCode = {
   /**
    * Patient Instructions
    */
-  PatientInstructions: "PI",
+  PI: "PI",
 
   /**
    * Ancillary Instructions
    */
-  AncillaryInstructions: "AI",
+  AI: "AI",
 
   /**
    * General Instructions
    */
-  GeneralInstructions: "GI",
+  GI: "GI",
 
   /**
    * Primary Reason
    */
-  PrimaryReason: "1R",
+  "1R": "1R",
 
   /**
    * Secondary Reason
    */
-  SecondaryReason: "2R",
+  "2R": "2R",
 
   /**
    * General Reason
    */
-  GeneralReason: "GR",
+  GR: "GR",
 
   /**
    * Remark
    */
-  Remark: "RE",
+  RE: "RE",
 
   /**
    * Duplicate/Interaction Reason
    */
-  DuplicateInteractionReason: "DR",
+  DR: "DR",
 } as const;
 
 /**

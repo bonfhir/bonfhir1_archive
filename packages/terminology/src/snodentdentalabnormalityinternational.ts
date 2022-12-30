@@ -12,27 +12,27 @@ export const SnodentDentalAbnormalityInternationalCode = {
   /**
    * Tooth Absent
    */
-  ToothAbsent: "100203D",
+  "100203D": "100203D",
 
   /**
    * Impacted tooth
    */
-  Impactedtooth: "104161D",
+  "104161D": "104161D",
 
   /**
    * Supernumerary tooth
    */
-  Supernumerarytooth: "116259D",
+  "116259D": "116259D",
 
   /**
    * Ankylosis of tooth
    */
-  Ankylosisoftooth: "127066D",
+  "127066D": "127066D",
 
   /**
    * Ectopic tooth
    */
-  Ectopictooth: "139347D",
+  "139347D": "139347D",
 } as const;
 
 /**

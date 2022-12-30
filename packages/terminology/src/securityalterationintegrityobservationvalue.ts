@@ -6,57 +6,57 @@ export const SecurityAlterationIntegrityObservationValueCode = {
   /**
    * abstracted
    */
-  abstracted: "ABSTRED",
+  ABSTRED: "ABSTRED",
 
   /**
    * aggregated
    */
-  aggregated: "AGGRED",
+  AGGRED: "AGGRED",
 
   /**
    * anonymized
    */
-  anonymized: "ANONYED",
+  ANONYED: "ANONYED",
 
   /**
    * mapped
    */
-  mapped: "MAPPED",
+  MAPPED: "MAPPED",
 
   /**
    * masked
    */
-  masked: "MASKED",
+  MASKED: "MASKED",
 
   /**
    * pseudonymized
    */
-  pseudonymized: "PSEUDED",
+  PSEUDED: "PSEUDED",
 
   /**
    * redacted
    */
-  redacted: "REDACTED",
+  REDACTED: "REDACTED",
 
   /**
    * subsetted
    */
-  subsetted: "SUBSETTED",
+  SUBSETTED: "SUBSETTED",
 
   /**
    * syntactic transform
    */
-  syntactictransform: "SYNTAC",
+  SYNTAC: "SYNTAC",
 
   /**
    * translated
    */
-  translated: "TRSLT",
+  TRSLT: "TRSLT",
 
   /**
    * versioned
    */
-  versioned: "VERSIONED",
+  VERSIONED: "VERSIONED",
 } as const;
 
 /**

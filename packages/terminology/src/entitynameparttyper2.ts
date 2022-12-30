@@ -6,22 +6,22 @@ export const EntityNamePartTypeR2Code = {
   /**
    * delimiter
    */
-  delimiter: "DEL",
+  DEL: "DEL",
 
   /**
    * family
    */
-  family: "FAM",
+  FAM: "FAM",
 
   /**
    * given
    */
-  given: "GIV",
+  GIV: "GIV",
 
   /**
    * title
    */
-  title: "TITLE",
+  TITLE: "TITLE",
 } as const;
 
 /**

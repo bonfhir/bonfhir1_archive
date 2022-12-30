@@ -6,17 +6,17 @@ export const RaceAmericanIndianHoopaCode = {
   /**
    * Hoopa
    */
-  Hoopa: "1271-6",
+  "1271-6": "1271-6",
 
   /**
    * Trinity
    */
-  Trinity: "1272-4",
+  "1272-4": "1272-4",
 
   /**
    * Whilkut
    */
-  Whilkut: "1273-2",
+  "1273-2": "1273-2",
 } as const;
 
 /**

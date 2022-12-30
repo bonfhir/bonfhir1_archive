@@ -6,12 +6,12 @@ export const ActTaskRiskAssessmentInstrumentCodeCode = {
   /**
    * risk assessment instrument task
    */
-  riskassessmentinstrumenttask: "RISKASSESS",
+  RISKASSESS: "RISKASSESS",
 
   /**
    * falls risk assessment instrument task
    */
-  fallsriskassessmentinstrumenttask: "FALLRISK",
+  FALLRISK: "FALLRISK",
 } as const;
 
 /**

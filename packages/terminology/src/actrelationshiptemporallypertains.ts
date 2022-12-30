@@ -6,12 +6,13 @@ export const ActRelationshipTemporallyPertainsCode = {
   /**
    * ActRelationshipTemporallyPertainsEnd
    */
-  ActRelationshipTemporallyPertainsEnd: "_ActRelationshipTemporallyPertainsEnd",
+  _ActRelationshipTemporallyPertainsEnd:
+    "_ActRelationshipTemporallyPertainsEnd",
 
   /**
    * ActRelationshipTemporallyPertainsStart
    */
-  ActRelationshipTemporallyPertainsStart:
+  _ActRelationshipTemporallyPertainsStart:
     "_ActRelationshipTemporallyPertainsStart",
 } as const;
 

@@ -6,167 +6,167 @@ export const RaceAmericanIndianSiouxCode = {
   /**
    * Sioux
    */
-  Sioux: "1609-7",
+  "1609-7": "1609-7",
 
   /**
    * Blackfoot Sioux
    */
-  BlackfootSioux: "1610-5",
+  "1610-5": "1610-5",
 
   /**
    * Brule Sioux
    */
-  BruleSioux: "1611-3",
+  "1611-3": "1611-3",
 
   /**
    * Cheyenne River Sioux
    */
-  CheyenneRiverSioux: "1612-1",
+  "1612-1": "1612-1",
 
   /**
    * Crow Creek Sioux
    */
-  CrowCreekSioux: "1613-9",
+  "1613-9": "1613-9",
 
   /**
    * Dakota Sioux
    */
-  DakotaSioux: "1614-7",
+  "1614-7": "1614-7",
 
   /**
    * Flandreau Santee
    */
-  FlandreauSantee: "1615-4",
+  "1615-4": "1615-4",
 
   /**
    * Fort Peck
    */
-  FortPeck: "1616-2",
+  "1616-2": "1616-2",
 
   /**
    * Lake Traverse Sioux
    */
-  LakeTraverseSioux: "1617-0",
+  "1617-0": "1617-0",
 
   /**
    * Lower Brule Sioux
    */
-  LowerBruleSioux: "1618-8",
+  "1618-8": "1618-8",
 
   /**
    * Lower Sioux
    */
-  LowerSioux: "1619-6",
+  "1619-6": "1619-6",
 
   /**
    * Mdewakanton Sioux
    */
-  MdewakantonSioux: "1620-4",
+  "1620-4": "1620-4",
 
   /**
    * Miniconjou
    */
-  Miniconjou: "1621-2",
+  "1621-2": "1621-2",
 
   /**
    * Oglala Sioux
    */
-  OglalaSioux: "1622-0",
+  "1622-0": "1622-0",
 
   /**
    * Pine Ridge Sioux
    */
-  PineRidgeSioux: "1623-8",
+  "1623-8": "1623-8",
 
   /**
    * Pipestone Sioux
    */
-  PipestoneSioux: "1624-6",
+  "1624-6": "1624-6",
 
   /**
    * Prairie Island Sioux
    */
-  PrairieIslandSioux: "1625-3",
+  "1625-3": "1625-3",
 
   /**
    * Prior Lake Sioux
    */
-  PriorLakeSioux: "1626-1",
+  "1626-1": "1626-1",
 
   /**
    * Rosebud Sioux
    */
-  RosebudSioux: "1627-9",
+  "1627-9": "1627-9",
 
   /**
    * Sans Arc Sioux
    */
-  SansArcSioux: "1628-7",
+  "1628-7": "1628-7",
 
   /**
    * Santee Sioux
    */
-  SanteeSioux: "1629-5",
+  "1629-5": "1629-5",
 
   /**
    * Sisseton-Wahpeton
    */
-  SissetonWahpeton: "1630-3",
+  "1630-3": "1630-3",
 
   /**
    * Sisseton Sioux
    */
-  SissetonSioux: "1631-1",
+  "1631-1": "1631-1",
 
   /**
    * Spirit Lake Sioux
    */
-  SpiritLakeSioux: "1632-9",
+  "1632-9": "1632-9",
 
   /**
    * Standing Rock Sioux
    */
-  StandingRockSioux: "1633-7",
+  "1633-7": "1633-7",
 
   /**
    * Teton Sioux
    */
-  TetonSioux: "1634-5",
+  "1634-5": "1634-5",
 
   /**
    * Two Kettle Sioux
    */
-  TwoKettleSioux: "1635-2",
+  "1635-2": "1635-2",
 
   /**
    * Upper Sioux
    */
-  UpperSioux: "1636-0",
+  "1636-0": "1636-0",
 
   /**
    * Wahpekute Sioux
    */
-  WahpekuteSioux: "1637-8",
+  "1637-8": "1637-8",
 
   /**
    * Wahpeton Sioux
    */
-  WahpetonSioux: "1638-6",
+  "1638-6": "1638-6",
 
   /**
    * Wazhaza Sioux
    */
-  WazhazaSioux: "1639-4",
+  "1639-4": "1639-4",
 
   /**
    * Yankton Sioux
    */
-  YanktonSioux: "1640-2",
+  "1640-2": "1640-2",
 
   /**
    * Yanktonai Sioux
    */
-  YanktonaiSioux: "1641-0",
+  "1641-0": "1641-0",
 } as const;
 
 /**

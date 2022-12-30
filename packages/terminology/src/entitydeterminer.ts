@@ -6,27 +6,27 @@ export const EntityDeterminerCode = {
   /**
    * specific
    */
-  specific: "INSTANCE",
+  INSTANCE: "INSTANCE",
 
   /**
    * specific group
    */
-  specificgroup: "GROUP",
+  GROUP: "GROUP",
 
   /**
    * described
    */
-  described: "KIND",
+  KIND: "KIND",
 
   /**
    * described group
    */
-  describedgroup: "GROUPKIND",
+  GROUPKIND: "GROUPKIND",
 
   /**
    * described quantified
    */
-  describedquantified: "QUANTIFIED_KIND",
+  QUANTIFIED_KIND: "QUANTIFIED_KIND",
 } as const;
 
 /**

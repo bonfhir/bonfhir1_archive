@@ -6,47 +6,47 @@ export const Hl7VSProcedurePractitionerTypeCode = {
   /**
    * Anesthesiologist/Anesthetist
    */
-  AnesthesiologistAnesthetist: "AN",
+  AN: "AN",
 
   /**
    * Procedure MD/ Surgeon
    */
-  ProcedureMDSurgeon: "PR",
+  PR: "PR",
 
   /**
    * Radiologist
    */
-  Radiologist: "RD",
+  RD: "RD",
 
   /**
    * Resident
    */
-  Resident: "RS",
+  RS: "RS",
 
   /**
    * Nurse Practitioner
    */
-  NursePractitioner: "NP",
+  NP: "NP",
 
   /**
    * Certified Nurse Midwife
    */
-  CertifiedNurseMidwife: "CM",
+  CM: "CM",
 
   /**
    * Scrub Nurse
    */
-  ScrubNurse: "SN",
+  SN: "SN",
 
   /**
    * Primary Surgeon
    */
-  PrimarySurgeon: "PS",
+  PS: "PS",
 
   /**
    * Assistant Surgeon
    */
-  AssistantSurgeon: "AS",
+  AS: "AS",
 } as const;
 
 /**

@@ -6,42 +6,42 @@ export const SecurityIntegrityObservationTypeCode = {
   /**
    * security integrity observation
    */
-  securityintegrityobservation: "SECINTOBS",
+  SECINTOBS: "SECINTOBS",
 
   /**
    * security alteration integrity observation
    */
-  securityalterationintegrityobservation: "SECALTINTOBS",
+  SECALTINTOBS: "SECALTINTOBS",
 
   /**
    * security data integrity observation
    */
-  securitydataintegrityobservation: "SECDATINTOBS",
+  SECDATINTOBS: "SECDATINTOBS",
 
   /**
    * security integrity confidence observation
    */
-  securityintegrityconfidenceobservation: "SECINTCONOBS",
+  SECINTCONOBS: "SECINTCONOBS",
 
   /**
    * security integrity provenance observation
    */
-  securityintegrityprovenanceobservation: "SECINTPRVOBS",
+  SECINTPRVOBS: "SECINTPRVOBS",
 
   /**
    * security integrity provenance asserted by observation
    */
-  securityintegrityprovenanceassertedbyobservation: "SECINTPRVABOBS",
+  SECINTPRVABOBS: "SECINTPRVABOBS",
 
   /**
    * security integrity provenance reported by observation
    */
-  securityintegrityprovenancereportedbyobservation: "SECINTPRVRBOBS",
+  SECINTPRVRBOBS: "SECINTPRVRBOBS",
 
   /**
    * security integrity status observation
    */
-  securityintegritystatusobservation: "SECINTSTOBS",
+  SECINTSTOBS: "SECINTSTOBS",
 } as const;
 
 /**

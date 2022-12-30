@@ -6,67 +6,67 @@ export const Hl7VSExtendedPriorityCodesCode = {
   /**
    * Stat
    */
-  Stat: "S",
+  S: "S",
 
   /**
    * ASAP
    */
-  ASAP: "A",
+  A: "A",
 
   /**
    * Routine
    */
-  Routine: "R",
+  R: "R",
 
   /**
    * Preop
    */
-  Preop: "P",
+  P: "P",
 
   /**
    * Callback
    */
-  Callback: "C",
+  C: "C",
 
   /**
    * Timing critical
    */
-  Timingcritical: "T",
+  T: "T",
 
   /**
    * Timing critical within <integer> seconds.
    */
-  Timingcriticalwithinintegerseconds: "TS<integer>",
+  "TS<integer>": "TS<integer>",
 
   /**
    * Timing critical within <integer> minutes.
    */
-  Timingcriticalwithinintegerminutes: "TM<integer>",
+  "TM<integer>": "TM<integer>",
 
   /**
    * Timing critical within <integer> hours.
    */
-  Timingcriticalwithinintegerhours: "TH<integer>",
+  "TH<integer>": "TH<integer>",
 
   /**
    * Timing critical within <integer> days.
    */
-  Timingcriticalwithinintegerdays: "TD<integer>",
+  "TD<integer>": "TD<integer>",
 
   /**
    * Timing critical within <integer> weeks.
    */
-  Timingcriticalwithinintegerweeks: "TW<integer>",
+  "TW<integer>": "TW<integer>",
 
   /**
    * Timing critical within <integer> months.
    */
-  Timingcriticalwithinintegermonths: "TL<integer>",
+  "TL<integer>": "TL<integer>",
 
   /**
    * As needed
    */
-  Asneeded: "PRN",
+  PRN: "PRN",
 } as const;
 
 /**

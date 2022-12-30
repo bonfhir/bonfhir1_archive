@@ -6,17 +6,17 @@ export const Hl7VSEscortRequiredCode = {
   /**
    * Required
    */
-  Required: "R",
+  R: "R",
 
   /**
    * Not Required
    */
-  NotRequired: "N",
+  N: "N",
 
   /**
    * Unknown
    */
-  Unknown: "U",
+  U: "U",
 } as const;
 
 /**

@@ -6,7 +6,7 @@ export const ActRelationshipCheckpointThroughCode = {
   /**
    * through
    */
-  through: "T",
+  T: "T",
 } as const;
 
 /**

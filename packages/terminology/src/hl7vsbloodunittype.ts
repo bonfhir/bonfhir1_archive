@@ -6,37 +6,37 @@ export const Hl7VSBloodUnitTypeCode = {
   /**
    * Whole Blood
    */
-  WholeBlood: "WBL",
+  WBL: "WBL",
 
   /**
    * Red Blood Cells
    */
-  RedBloodCells: "RBC",
+  RBC: "RBC",
 
   /**
    * Plasma
    */
-  Plasma: "PLS",
+  PLS: "PLS",
 
   /**
    * Platelets
    */
-  Platelets: "PLT",
+  PLT: "PLT",
 
   /**
    * Granulocytes
    */
-  Granulocytes: "GRN",
+  GRN: "GRN",
 
   /**
    * Peripheral Stem Cells
    */
-  PeripheralStemCells: "PSC",
+  PSC: "PSC",
 
   /**
    * Lymphocytes
    */
-  Lymphocytes: "LYM",
+  LYM: "LYM",
 } as const;
 
 /**

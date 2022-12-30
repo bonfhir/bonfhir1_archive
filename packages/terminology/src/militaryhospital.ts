@@ -6,7 +6,7 @@ export const MilitaryHospitalCode = {
   /**
    * Military Hospital
    */
-  MilitaryHospital: "MHSP",
+  MHSP: "MHSP",
 } as const;
 
 /**

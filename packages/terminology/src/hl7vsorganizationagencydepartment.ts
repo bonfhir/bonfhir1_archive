@@ -6,32 +6,32 @@ export const Hl7VSOrganizationAgencyDepartmentCode = {
   /**
    * American Express
    */
-  AmericanExpress: "AE",
+  AE: "AE",
 
   /**
    * Drug Enforcement Agency
    */
-  DrugEnforcementAgency: "DEA",
+  DEA: "DEA",
 
   /**
    * Department of Defense
    */
-  DepartmentofDefense: "DOD",
+  DOD: "DOD",
 
   /**
    * Master Card
    */
-  MasterCard: "MC",
+  MC: "MC",
 
   /**
    * Veterans Affairs
    */
-  VeteransAffairs: "VA",
+  VA: "VA",
 
   /**
    * Visa
    */
-  Visa: "VI",
+  VI: "VI",
 } as const;
 
 /**

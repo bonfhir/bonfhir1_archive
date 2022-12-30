@@ -6,7 +6,7 @@ export const RoleClassAdministerableMaterialCode = {
   /**
    * Administerable Material
    */
-  AdministerableMaterial: "ADMM",
+  ADMM: "ADMM",
 } as const;
 
 /**

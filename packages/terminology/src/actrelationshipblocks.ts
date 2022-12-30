@@ -6,7 +6,7 @@ export const ActRelationshipBlocksCode = {
   /**
    * blocks
    */
-  blocks: "BLOCK",
+  BLOCK: "BLOCK",
 } as const;
 
 /**

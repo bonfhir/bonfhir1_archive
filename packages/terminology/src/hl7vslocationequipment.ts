@@ -6,42 +6,42 @@ export const Hl7VSLocationEquipmentCode = {
   /**
    * Oxygen
    */
-  Oxygen: "OXY",
+  OXY: "OXY",
 
   /**
    * Suction
    */
-  Suction: "SUC",
+  SUC: "SUC",
 
   /**
    * Vital signs monitor
    */
-  Vitalsignsmonitor: "VIT",
+  VIT: "VIT",
 
   /**
    * Infusion pump
    */
-  Infusionpump: "INF",
+  INF: "INF",
 
   /**
    * IV pump
    */
-  IVpump: "IVP",
+  IVP: "IVP",
 
   /**
    * Electro-Encephalogram
    */
-  ElectroEncephalogram: "EEG",
+  EEG: "EEG",
 
   /**
    * Electro-Cardiogram
    */
-  ElectroCardiogram: "EKG",
+  EKG: "EKG",
 
   /**
    * Ventilator
    */
-  Ventilator: "VEN",
+  VEN: "VEN",
 } as const;
 
 /**

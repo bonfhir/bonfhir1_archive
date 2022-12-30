@@ -6,32 +6,32 @@ export const AcknowledgementTypeCode = {
   /**
    * Application Acknowledgement Accept
    */
-  ApplicationAcknowledgementAccept: "AA",
+  AA: "AA",
 
   /**
    * Application Acknowledgement Error
    */
-  ApplicationAcknowledgementError: "AE",
+  AE: "AE",
 
   /**
    * Application Acknowledgement Reject
    */
-  ApplicationAcknowledgementReject: "AR",
+  AR: "AR",
 
   /**
    * Accept Acknowledgement Commit Accept
    */
-  AcceptAcknowledgementCommitAccept: "CA",
+  CA: "CA",
 
   /**
    * Accept Acknowledgement Commit Error
    */
-  AcceptAcknowledgementCommitError: "CE",
+  CE: "CE",
 
   /**
    * Accept Acknowledgement Commit Reject
    */
-  AcceptAcknowledgementCommitReject: "CR",
+  CR: "CR",
 } as const;
 
 /**

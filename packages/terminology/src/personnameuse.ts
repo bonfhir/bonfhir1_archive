@@ -6,17 +6,17 @@ export const PersonNameUseCode = {
   /**
    * Alphabetic
    */
-  Alphabetic: "ABC",
+  ABC: "ABC",
 
   /**
    * Ideographic
    */
-  Ideographic: "IDE",
+  IDE: "IDE",
 
   /**
    * Syllabic
    */
-  Syllabic: "SYL",
+  SYL: "SYL",
 } as const;
 
 /**

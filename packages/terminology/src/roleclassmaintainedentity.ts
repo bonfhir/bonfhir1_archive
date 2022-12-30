@@ -6,7 +6,7 @@ export const RoleClassMaintainedEntityCode = {
   /**
    * maintained entity
    */
-  maintainedentity: "MNT",
+  MNT: "MNT",
 } as const;
 
 /**

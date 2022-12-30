@@ -6,17 +6,17 @@ export const Hl7VSResponseModalityCode = {
   /**
    * Real Time
    */
-  RealTime: "R",
+  R: "R",
 
   /**
    * Bolus (a series of responses sent at the same time without use of batch formatting)
    */
-  Bolusaseriesofresponsessentatthesametimewithoutuseofbatchformatting: "T",
+  T: "T",
 
   /**
    * Batch
    */
-  Batch: "B",
+  B: "B",
 } as const;
 
 /**

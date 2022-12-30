@@ -6,7 +6,7 @@ export const SublesionalRouteCode = {
   /**
    * Injection, sublesional
    */
-  Injectionsublesional: "SLESINJ",
+  SLESINJ: "SLESINJ",
 } as const;
 
 /**

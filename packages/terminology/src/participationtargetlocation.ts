@@ -6,32 +6,32 @@ export const ParticipationTargetLocationCode = {
   /**
    * location
    */
-  location: "LOC",
+  LOC: "LOC",
 
   /**
    * destination
    */
-  destination: "DST",
+  DST: "DST",
 
   /**
    * entry location
    */
-  entrylocation: "ELOC",
+  ELOC: "ELOC",
 
   /**
    * origin
    */
-  origin: "ORG",
+  ORG: "ORG",
 
   /**
    * remote
    */
-  remote: "RML",
+  RML: "RML",
 
   /**
    * via
    */
-  via: "VIA",
+  VIA: "VIA",
 } as const;
 
 /**

@@ -6,22 +6,22 @@ export const Hl7VSFacilityTypeCode = {
   /**
    * User
    */
-  User: "U",
+  U: "U",
 
   /**
    * Manufacturer
    */
-  Manufacturer: "M",
+  M: "M",
 
   /**
    * Distributor
    */
-  Distributor: "D",
+  D: "D",
 
   /**
    * Agent for a foreign manufacturer
    */
-  Agentforaforeignmanufacturer: "A",
+  A: "A",
 } as const;
 
 /**

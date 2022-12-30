@@ -6,32 +6,32 @@ export const Hl7VSWhichDateTimeStatusQualifierCode = {
   /**
    * Any status
    */
-  Anystatus: "ANY",
+  ANY: "ANY",
 
   /**
    * Current final value, whether final or corrected
    */
-  Currentfinalvaluewhetherfinalorcorrected: "CFN",
+  CFN: "CFN",
 
   /**
    * Corrected only (no final with corrections)
    */
-  Correctedonlynofinalwithcorrections: "COR",
+  COR: "COR",
 
   /**
    * Final only (no corrections)
    */
-  Finalonlynocorrections: "FIN",
+  FIN: "FIN",
 
   /**
    * Preliminary
    */
-  Preliminary: "PRE",
+  PRE: "PRE",
 
   /**
    * Report completion date/time
    */
-  Reportcompletiondatetime: "REP",
+  REP: "REP",
 } as const;
 
 /**

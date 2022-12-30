@@ -6,34 +6,32 @@ export const Hl7VSAppointmentTypeCodesCode = {
   /**
    * A request to add a completed appointment, used to maintain records of completed appointments that did not appear in the schedule (e.g., STAT, walk-in, etc.)
    */
-  ArequesttoaddacompletedappointmentusedtomaintainrecordsofcompletedappointmentsthatdidnotappearinthescheduleegSTATwalkinetc:
-    "COMPLETE",
+  COMPLETE: "COMPLETE",
 
   /**
    * Routine schedule request type - default if not valued
    */
-  Routineschedulerequesttypedefaultifnotvalued: "NORMAL",
+  NORMAL: "NORMAL",
 
   /**
    * A request for a tentative (e.g., “penciled in”) appointment
    */
-  Arequestforatentativeegpenciledinappointment: "TENTATIVE",
+  TENTATIVE: "TENTATIVE",
 
   /**
    * Routine schedule request type – default if not valued
    */
-  Routineschedulerequesttypedefaultifnotvalued: "Normal",
+  Normal: "Normal",
 
   /**
    * A request for a tentative (e.g., “penciled in”) appointment
    */
-  Arequestforatentativeegpenciledinappointment: "Tentative",
+  Tentative: "Tentative",
 
   /**
    * A request to add a completed appointment, used to maintain records of completed appointments that did not appear in the schedule (e.g., STAT, walk-in, etc.)
    */
-  ArequesttoaddacompletedappointmentusedtomaintainrecordsofcompletedappointmentsthatdidnotappearinthescheduleegSTATwalkinetc:
-    "Complete",
+  Complete: "Complete",
 } as const;
 
 /**

@@ -6,32 +6,32 @@ export const ActObservationListCode = {
   /**
    * care plan
    */
-  careplan: "CARELIST",
+  CARELIST: "CARELIST",
 
   /**
    * condition list
    */
-  conditionlist: "CONDLIST",
+  CONDLIST: "CONDLIST",
 
   /**
    * intolerance list
    */
-  intolerancelist: "INTOLIST",
+  INTOLIST: "INTOLIST",
 
   /**
    * problem list
    */
-  problemlist: "PROBLIST",
+  PROBLIST: "PROBLIST",
 
   /**
    * risk factors
    */
-  riskfactors: "RISKLIST",
+  RISKLIST: "RISKLIST",
 
   /**
    * goal list
    */
-  goallist: "GOALLIST",
+  GOALLIST: "GOALLIST",
 } as const;
 
 /**

@@ -6,7 +6,7 @@ export const ActRelationshipHasPreviousInstanceCode = {
   /**
    * has previous instance
    */
-  haspreviousinstance: "PREV",
+  PREV: "PREV",
 } as const;
 
 /**

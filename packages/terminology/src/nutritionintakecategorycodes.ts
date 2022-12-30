@@ -6,22 +6,22 @@ export const NutritionIntakeCategoryCodesCode = {
   /**
    * Inpatient
    */
-  Inpatient: "inpatient",
+  inpatient: "inpatient",
 
   /**
    * Outpatient
    */
-  Outpatient: "outpatient",
+  outpatient: "outpatient",
 
   /**
    * Community
    */
-  Community: "community",
+  community: "community",
 
   /**
    * Patient Specified
    */
-  PatientSpecified: "patientspecified",
+  patientspecified: "patientspecified",
 } as const;
 
 /**

@@ -6,12 +6,12 @@ export const ListStyleCode = {
   /**
    * List Style
    */
-  ListStyle: "_ListStyle",
+  _ListStyle: "_ListStyle",
 
   /**
    * Ordered List Style
    */
-  OrderedListStyle: "_OrderedListStyle",
+  _OrderedListStyle: "_OrderedListStyle",
 
   /**
    * Arabic
@@ -26,7 +26,7 @@ export const ListStyleCode = {
   /**
    * Big Alpha
    */
-  BigAlpha: "BIG.ALPHA",
+  "BIG.ALPHA": "BIG.ALPHA",
 
   /**
    * Big Roman
@@ -36,7 +36,7 @@ export const ListStyleCode = {
   /**
    * Big Roman
    */
-  BigRoman: "BIG.ROMAN",
+  "BIG.ROMAN": "BIG.ROMAN",
 
   /**
    * Little Alpha
@@ -46,7 +46,7 @@ export const ListStyleCode = {
   /**
    * Little Alpha
    */
-  LittleAlpha: "LITTLE.ALPHA",
+  "LITTLE.ALPHA": "LITTLE.ALPHA",
 
   /**
    * Little Roman
@@ -56,12 +56,12 @@ export const ListStyleCode = {
   /**
    * Little Roman
    */
-  LittleRoman: "LITTLE.ROMAN",
+  "LITTLE.ROMAN": "LITTLE.ROMAN",
 
   /**
    * Unordered List Style
    */
-  UnorderedListStyle: "_UnorderedListStyle",
+  _UnorderedListStyle: "_UnorderedListStyle",
 
   /**
    * Circle

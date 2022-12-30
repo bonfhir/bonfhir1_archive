@@ -12,32 +12,32 @@ export const SnodentDentalPeriodontalProbingPositionInternationalCode = {
   /**
    * Lingual Surface
    */
-  LingualSurface: "103356D",
+  "103356D": "103356D",
 
   /**
    * Facial surface of tooth
    */
-  Facialsurfaceoftooth: "139277D",
+  "139277D": "139277D",
 
   /**
    * Mesial-lingual
    */
-  Mesiallingual: "163013D",
+  "163013D": "163013D",
 
   /**
    * Distal-lingual
    */
-  Distallingual: "163468D",
+  "163468D": "163468D",
 
   /**
    * Distal-buccal
    */
-  Distalbuccal: "163596D",
+  "163596D": "163596D",
 
   /**
    * Mesial-buccal
    */
-  Mesialbuccal: "163680D",
+  "163680D": "163680D",
 } as const;
 
 /**

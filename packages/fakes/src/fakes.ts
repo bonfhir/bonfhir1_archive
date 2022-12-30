@@ -1,4 +1,5 @@
-import { build, ExtractResource, ResourceType } from "@bonfhir/core";
+import type { ExtractResource, ResourceType } from "@bonfhir/core";
+import { build } from "@bonfhir/core";
 import type {
   Account,
   ActivityDefinition,

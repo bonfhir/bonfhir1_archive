@@ -6,22 +6,22 @@ export const EncounterTypeCode = {
   /**
    * Annual diabetes mellitus screening
    */
-  Annualdiabetesmellitusscreening: "ADMS",
+  ADMS: "ADMS",
 
   /**
    * Bone drilling/bone marrow punction in clinic
    */
-  Bonedrillingbonemarrowpunctioninclinic: "BD/BM-clin",
+  "BD/BM-clin": "BD/BM-clin",
 
   /**
    * Infant colon screening - 60 minutes
    */
-  Infantcolonscreening60minutes: "CCS60",
+  CCS60: "CCS60",
 
   /**
    * Outpatient Kenacort injection
    */
-  OutpatientKenacortinjection: "OKI",
+  OKI: "OKI",
 } as const;
 
 /**

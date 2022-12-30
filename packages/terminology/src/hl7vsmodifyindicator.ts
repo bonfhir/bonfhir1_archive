@@ -6,12 +6,12 @@ export const Hl7VSModifyIndicatorCode = {
   /**
    * New Subscription
    */
-  NewSubscription: "N",
+  N: "N",
 
   /**
    * Modified Subscription
    */
-  ModifiedSubscription: "M",
+  M: "M",
 } as const;
 
 /**

@@ -6,7 +6,7 @@ export const Tst0275aCode = {
   /**
    * Minimum Lethal Concentration (MLC)
    */
-  MinimumLethalConcentrationMLC: "0275a",
+  "0275a": "0275a",
 } as const;
 
 /**

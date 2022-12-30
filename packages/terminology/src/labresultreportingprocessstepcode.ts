@@ -6,17 +6,17 @@ export const LabResultReportingProcessStepCodeCode = {
   /**
    * corrected
    */
-  corrected: "C",
+  C: "C",
 
   /**
    * final
    */
-  final: "F",
+  F: "F",
 
   /**
    * preliminary
    */
-  preliminary: "PRLMN",
+  PRLMN: "PRLMN",
 } as const;
 
 /**

@@ -6,12 +6,12 @@ export const RinseCode = {
   /**
    * Rinse, dental
    */
-  Rinsedental: "DENRINSE",
+  DENRINSE: "DENRINSE",
 
   /**
    * Rinse, oral
    */
-  Rinseoral: "ORRINSE",
+  ORRINSE: "ORRINSE",
 } as const;
 
 /**

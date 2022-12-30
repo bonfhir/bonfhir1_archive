@@ -6,12 +6,12 @@ export const ActBoundedROICodeCode = {
   /**
    * fully specified ROI
    */
-  fullyspecifiedROI: "ROIFS",
+  ROIFS: "ROIFS",
 
   /**
    * partially specified ROI
    */
-  partiallyspecifiedROI: "ROIPS",
+  ROIPS: "ROIPS",
 } as const;
 
 /**

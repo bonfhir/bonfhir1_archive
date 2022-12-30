@@ -6,42 +6,42 @@ export const CapsuleDrugFormCode = {
   /**
    * Capsule
    */
-  Capsule: "CAP",
+  CAP: "CAP",
 
   /**
    * Oral Capsule
    */
-  OralCapsule: "ORCAP",
+  ORCAP: "ORCAP",
 
   /**
    * Enteric Coated Capsule
    */
-  EntericCoatedCapsule: "ENTCAP",
+  ENTCAP: "ENTCAP",
 
   /**
    * Extended Release Enteric Coated Capsule
    */
-  ExtendedReleaseEntericCoatedCapsule: "ERENTCAP",
+  ERENTCAP: "ERENTCAP",
 
   /**
    * Extended Release Capsule
    */
-  ExtendedReleaseCapsule: "ERCAP",
+  ERCAP: "ERCAP",
 
   /**
    * 12 Hour Extended Release Capsule
    */
-  TwelveHourExtendedReleaseCapsule: "ERCAP12",
+  ERCAP12: "ERCAP12",
 
   /**
    * 24 Hour Extended Release Capsule
    */
-  TwentyFourHourExtendedReleaseCapsule: "ERCAP24",
+  ERCAP24: "ERCAP24",
 
   /**
    * Extended Release Enteric Coated Capsule
    */
-  ExtendedReleaseEntericCoatedCapsule: "ERECCAP",
+  ERECCAP: "ERECCAP",
 } as const;
 
 /**

@@ -6,12 +6,12 @@ export const ActMoodProposalCode = {
   /**
    * proposal
    */
-  proposal: "PRP",
+  PRP: "PRP",
 
   /**
    * recommendation
    */
-  recommendation: "RMD",
+  RMD: "RMD",
 } as const;
 
 /**

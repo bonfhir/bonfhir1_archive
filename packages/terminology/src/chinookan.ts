@@ -6,12 +6,12 @@ export const ChinookanCode = {
   /**
    * UpperChinook
    */
-  UpperChinook: "_UpperChinook",
+  _UpperChinook: "_UpperChinook",
 
   /**
    * Kiksht
    */
-  Kiksht: "x-WAC",
+  "x-WAC": "x-WAC",
 } as const;
 
 /**

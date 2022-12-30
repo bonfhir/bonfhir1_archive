@@ -6,17 +6,17 @@ export const Hl7VSArmStickCode = {
   /**
    * Left Arm
    */
-  LeftArm: "L",
+  L: "L",
 
   /**
    * Right Arm
    */
-  RightArm: "R",
+  R: "R",
 
   /**
    * Both Arms
    */
-  BothArms: "B",
+  B: "B",
 } as const;
 
 /**

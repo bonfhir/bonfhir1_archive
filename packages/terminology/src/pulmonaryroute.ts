@@ -6,32 +6,32 @@ export const PulmonaryRouteCode = {
   /**
    * Inhalation, intermittent positive pressure breathing (ippb)
    */
-  Inhalationintermittentpositivepressurebreathingippb: "IPPB",
+  IPPB: "IPPB",
 
   /**
    * Inhalation, ventilator
    */
-  Inhalationventilator: "VENT",
+  VENT: "VENT",
 
   /**
    * Inhalation, ventimask
    */
-  Inhalationventimask: "VENTMASK",
+  VENTMASK: "VENTMASK",
 
   /**
    * Instillation, endotracheal tube
    */
-  Instillationendotrachealtube: "ETINSTL",
+  ETINSTL: "ETINSTL",
 
   /**
    * Instillation, nasotracheal tube
    */
-  Instillationnasotrachealtube: "NTT",
+  NTT: "NTT",
 
   /**
    * Nebulization, endotracheal tube
    */
-  Nebulizationendotrachealtube: "ETNEB",
+  ETNEB: "ETNEB",
 } as const;
 
 /**

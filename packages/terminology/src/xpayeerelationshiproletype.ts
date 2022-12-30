@@ -6,22 +6,22 @@ export const XPayeeRelationshipRoleTypeCode = {
   /**
    * Family Member
    */
-  FamilyMember: "FM",
+  FM: "FM",
 
   /**
    * Guarantor
    */
-  Guarantor: "GT",
+  GT: "GT",
 
   /**
    * Policy Holder
    */
-  PolicyHolder: "PH",
+  PH: "PH",
 
   /**
    * Patient
    */
-  Patient: "PT",
+  PT: "PT",
 } as const;
 
 /**

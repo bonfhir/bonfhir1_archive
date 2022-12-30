@@ -6,32 +6,32 @@ export const PartialCompletionScaleCode = {
   /**
    * Great extent
    */
-  Greatextent: "G",
+  G: "G",
 
   /**
    * Large extent
    */
-  Largeextent: "LE",
+  LE: "LE",
 
   /**
    * Medium extent
    */
-  Mediumextent: "ME",
+  ME: "ME",
 
   /**
    * Minimal extent
    */
-  Minimalextent: "MI",
+  MI: "MI",
 
   /**
    * None
    */
-  None: "N",
+  N: "N",
 
   /**
    * Some extent
    */
-  Someextent: "S",
+  S: "S",
 } as const;
 
 /**

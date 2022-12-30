@@ -6,12 +6,12 @@ export const OrthoClinPracticeSettingCode = {
   /**
    * Orthopedics clinic
    */
-  Orthopedicsclinic: "ORTHO",
+  ORTHO: "ORTHO",
 
   /**
    * Hand clinic
    */
-  Handclinic: "HAND",
+  HAND: "HAND",
 } as const;
 
 /**

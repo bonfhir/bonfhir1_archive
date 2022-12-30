@@ -6,27 +6,27 @@ export const Hl7VSProcedureDrgTypeCode = {
   /**
    * 1st non-Operative
    */
-  OnestnonOperative: "1",
+  "1": "1",
 
   /**
    * 2nd non-Operative
    */
-  TwondnonOperative: "2",
+  "2": "2",
 
   /**
    * Major Operative
    */
-  MajorOperative: "3",
+  "3": "3",
 
   /**
    * 2nd Operative
    */
-  TwondOperative: "4",
+  "4": "4",
 
   /**
    * 3rd Operative
    */
-  ThreerdOperative: "5",
+  "5": "5",
 } as const;
 
 /**

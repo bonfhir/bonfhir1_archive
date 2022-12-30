@@ -6,13 +6,12 @@ export const Hl7VSTemperatureUnitsCode = {
   /**
    * Degrees Fahrenheit (note that V2 has erroneously published this for many years without the square brackets)
    */
-  DegreesFahrenheitnotethatV2haserroneouslypublishedthisformanyyearswithoutthesquarebrackets:
-    "[degF]",
+  "[degF]": "[degF]",
 
   /**
    * Degrees Celsius
    */
-  DegreesCelsius: "Cel",
+  Cel: "Cel",
 } as const;
 
 /**

@@ -6,22 +6,22 @@ export const ROIOverlayShapeCode = {
   /**
    * circle
    */
-  circle: "CIRCLE",
+  CIRCLE: "CIRCLE",
 
   /**
    * ellipse
    */
-  ellipse: "ELLIPSE",
+  ELLIPSE: "ELLIPSE",
 
   /**
    * point
    */
-  point: "POINT",
+  POINT: "POINT",
 
   /**
    * polyline
    */
-  polyline: "POLY",
+  POLY: "POLY",
 } as const;
 
 /**

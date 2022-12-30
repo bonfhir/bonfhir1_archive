@@ -6,17 +6,17 @@ export const AdministrativeGenderCode = {
   /**
    * Female
    */
-  Female: "F",
+  F: "F",
 
   /**
    * Male
    */
-  Male: "M",
+  M: "M",
 
   /**
    * Undifferentiated
    */
-  Undifferentiated: "UN",
+  UN: "UN",
 } as const;
 
 /**

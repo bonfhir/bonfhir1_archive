@@ -6,12 +6,12 @@ export const RaceAmericanIndianYurokCode = {
   /**
    * Yurok
    */
-  Yurok: "1732-7",
+  "1732-7": "1732-7",
 
   /**
    * Coast Yurok
    */
-  CoastYurok: "1733-5",
+  "1733-5": "1733-5",
 } as const;
 
 /**

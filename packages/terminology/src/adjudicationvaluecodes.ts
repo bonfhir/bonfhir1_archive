@@ -6,42 +6,42 @@ export const AdjudicationValueCodesCode = {
   /**
    * Submitted Amount
    */
-  SubmittedAmount: "submitted",
+  submitted: "submitted",
 
   /**
    * CoPay
    */
-  CoPay: "copay",
+  copay: "copay",
 
   /**
    * Eligible Amount
    */
-  EligibleAmount: "eligible",
+  eligible: "eligible",
 
   /**
    * Deductible
    */
-  Deductible: "deductible",
+  deductible: "deductible",
 
   /**
    * Unallocated Deductible
    */
-  UnallocatedDeductible: "unallocdeduct",
+  unallocdeduct: "unallocdeduct",
 
   /**
    * Eligible %
    */
-  Eligible: "eligpercent",
+  eligpercent: "eligpercent",
 
   /**
    * Tax
    */
-  Tax: "tax",
+  tax: "tax",
 
   /**
    * Benefit Amount
    */
-  BenefitAmount: "benefit",
+  benefit: "benefit",
 } as const;
 
 /**

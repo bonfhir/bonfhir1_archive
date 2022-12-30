@@ -6,7 +6,7 @@ export const ActClassCdaLevelOneClinicalDocumentCode = {
   /**
    * CDA Level One clinical document
    */
-  CDALevelOneclinicaldocument: "CDALVLONE",
+  CDALVLONE: "CDALVLONE",
 } as const;
 
 /**

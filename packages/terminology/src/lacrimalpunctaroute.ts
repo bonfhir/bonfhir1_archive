@@ -6,7 +6,7 @@ export const LacrimalPunctaRouteCode = {
   /**
    * Insertion, lacrimal puncta
    */
-  Insertionlacrimalpuncta: "LPINS",
+  LPINS: "LPINS",
 } as const;
 
 /**

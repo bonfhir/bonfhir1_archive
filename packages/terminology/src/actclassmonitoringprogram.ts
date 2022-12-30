@@ -6,7 +6,7 @@ export const ActClassMonitoringProgramCode = {
   /**
    * monitoring program
    */
-  monitoringprogram: "MPROT",
+  MPROT: "MPROT",
 } as const;
 
 /**

@@ -6,22 +6,22 @@ export const QualityOfEvidenceRatingCode = {
   /**
    * High quality
    */
-  Highquality: "high",
+  high: "high",
 
   /**
    * Moderate quality
    */
-  Moderatequality: "moderate",
+  moderate: "moderate",
 
   /**
    * Low quality
    */
-  Lowquality: "low",
+  low: "low",
 
   /**
    * Very low quality
    */
-  Verylowquality: "very-low",
+  "very-low": "very-low",
 } as const;
 
 /**

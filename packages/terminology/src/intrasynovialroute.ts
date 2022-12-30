@@ -6,7 +6,7 @@ export const IntrasynovialRouteCode = {
   /**
    * Injection, intrasynovial
    */
-  Injectionintrasynovial: "ISYNINJ",
+  ISYNINJ: "ISYNINJ",
 } as const;
 
 /**

@@ -6,287 +6,287 @@ export const ActCoverageTypeCodeCode = {
   /**
    * ActCoverageTypeCode
    */
-  ActCoverageTypeCode: "_ActCoverageTypeCode",
+  _ActCoverageTypeCode: "_ActCoverageTypeCode",
 
   /**
    * ActInsurancePolicyCode
    */
-  ActInsurancePolicyCode: "_ActInsurancePolicyCode",
+  _ActInsurancePolicyCode: "_ActInsurancePolicyCode",
 
   /**
    * extended healthcare
    */
-  extendedhealthcare: "EHCPOL",
+  EHCPOL: "EHCPOL",
 
   /**
    * health spending account
    */
-  healthspendingaccount: "HSAPOL",
+  HSAPOL: "HSAPOL",
 
   /**
    * automobile
    */
-  automobile: "AUTOPOL",
+  AUTOPOL: "AUTOPOL",
 
   /**
    * collision coverage policy
    */
-  collisioncoveragepolicy: "COL",
+  COL: "COL",
 
   /**
    * uninsured motorist policy
    */
-  uninsuredmotoristpolicy: "UNINSMOT",
+  UNINSMOT: "UNINSMOT",
 
   /**
    * public healthcare
    */
-  publichealthcare: "PUBLICPOL",
+  PUBLICPOL: "PUBLICPOL",
 
   /**
    * dental program
    */
-  dentalprogram: "DENTPRG",
+  DENTPRG: "DENTPRG",
 
   /**
    * public health program
    */
-  publichealthprogram: "DISEASEPRG",
+  DISEASEPRG: "DISEASEPRG",
 
   /**
    * women's cancer detection program
    */
-  womenscancerdetectionprogram: "CANPRG",
+  CANPRG: "CANPRG",
 
   /**
    * end renal program
    */
-  endrenalprogram: "ENDRENAL",
+  ENDRENAL: "ENDRENAL",
 
   /**
    * HIV-AIDS program
    */
-  HIVAIDSprogram: "HIVAIDS",
+  HIVAIDS: "HIVAIDS",
 
   /**
    * mandatory health program
    */
-  mandatoryhealthprogram: "MANDPOL",
+  MANDPOL: "MANDPOL",
 
   /**
    * mental health program
    */
-  mentalhealthprogram: "MENTPRG",
+  MENTPRG: "MENTPRG",
 
   /**
    * safety net clinic program
    */
-  safetynetclinicprogram: "SAFNET",
+  SAFNET: "SAFNET",
 
   /**
    * substance use program
    */
-  substanceuseprogram: "SUBPRG",
+  SUBPRG: "SUBPRG",
 
   /**
    * subsidized health program
    */
-  subsidizedhealthprogram: "SUBSIDIZ",
+  SUBSIDIZ: "SUBSIDIZ",
 
   /**
    * subsidized managed care program
    */
-  subsidizedmanagedcareprogram: "SUBSIDMC",
+  SUBSIDMC: "SUBSIDMC",
 
   /**
    * subsidized supplemental health program
    */
-  subsidizedsupplementalhealthprogram: "SUBSUPP",
+  SUBSUPP: "SUBSUPP",
 
   /**
    * worker's compensation
    */
-  workerscompensation: "WCBPOL",
+  WCBPOL: "WCBPOL",
 
   /**
    * ActInsuranceTypeCode
    */
-  ActInsuranceTypeCode: "_ActInsuranceTypeCode",
+  _ActInsuranceTypeCode: "_ActInsuranceTypeCode",
 
   /**
    * ActHealthInsuranceTypeCode
    */
-  ActHealthInsuranceTypeCode: "_ActHealthInsuranceTypeCode",
+  _ActHealthInsuranceTypeCode: "_ActHealthInsuranceTypeCode",
 
   /**
    * dental care policy
    */
-  dentalcarepolicy: "DENTAL",
+  DENTAL: "DENTAL",
 
   /**
    * disease specific policy
    */
-  diseasespecificpolicy: "DISEASE",
+  DISEASE: "DISEASE",
 
   /**
    * drug policy
    */
-  drugpolicy: "DRUGPOL",
+  DRUGPOL: "DRUGPOL",
 
   /**
    * health insurance plan policy
    */
-  healthinsuranceplanpolicy: "HIP",
+  HIP: "HIP",
 
   /**
    * long term care policy
    */
-  longtermcarepolicy: "LTC",
+  LTC: "LTC",
 
   /**
    * managed care policy
    */
-  managedcarepolicy: "MCPOL",
+  MCPOL: "MCPOL",
 
   /**
    * point of service policy
    */
-  pointofservicepolicy: "POS",
+  POS: "POS",
 
   /**
    * health maintenance organization policy
    */
-  healthmaintenanceorganizationpolicy: "HMO",
+  HMO: "HMO",
 
   /**
    * preferred provider organization policy
    */
-  preferredproviderorganizationpolicy: "PPO",
+  PPO: "PPO",
 
   /**
    * mental health policy
    */
-  mentalhealthpolicy: "MENTPOL",
+  MENTPOL: "MENTPOL",
 
   /**
    * substance use policy
    */
-  substanceusepolicy: "SUBPOL",
+  SUBPOL: "SUBPOL",
 
   /**
    * vision care policy
    */
-  visioncarepolicy: "VISPOL",
+  VISPOL: "VISPOL",
 
   /**
    * disability insurance policy
    */
-  disabilityinsurancepolicy: "DIS",
+  DIS: "DIS",
 
   /**
    * employee welfare benefit plan policy
    */
-  employeewelfarebenefitplanpolicy: "EWB",
+  EWB: "EWB",
 
   /**
    * flexible benefit plan policy
    */
-  flexiblebenefitplanpolicy: "FLEXP",
+  FLEXP: "FLEXP",
 
   /**
    * life insurance policy
    */
-  lifeinsurancepolicy: "LIFE",
+  LIFE: "LIFE",
 
   /**
    * annuity policy
    */
-  annuitypolicy: "ANNU",
+  ANNU: "ANNU",
 
   /**
    * term life insurance policy
    */
-  termlifeinsurancepolicy: "TLIFE",
+  TLIFE: "TLIFE",
 
   /**
    * universal life insurance policy
    */
-  universallifeinsurancepolicy: "ULIFE",
+  ULIFE: "ULIFE",
 
   /**
    * property and casualty insurance policy
    */
-  propertyandcasualtyinsurancepolicy: "PNC",
+  PNC: "PNC",
 
   /**
    * reinsurance policy
    */
-  reinsurancepolicy: "REI",
+  REI: "REI",
 
   /**
    * surplus line insurance policy
    */
-  surpluslineinsurancepolicy: "SURPL",
+  SURPL: "SURPL",
 
   /**
    * umbrella liability insurance policy
    */
-  umbrellaliabilityinsurancepolicy: "UMBRL",
+  UMBRL: "UMBRL",
 
   /**
    * ActProgramTypeCode
    */
-  ActProgramTypeCode: "_ActProgramTypeCode",
+  _ActProgramTypeCode: "_ActProgramTypeCode",
 
   /**
    * charity program
    */
-  charityprogram: "CHAR",
+  CHAR: "CHAR",
 
   /**
    * crime victim program
    */
-  crimevictimprogram: "CRIME",
+  CRIME: "CRIME",
 
   /**
    * employee assistance program
    */
-  employeeassistanceprogram: "EAP",
+  EAP: "EAP",
 
   /**
    * government employee health program
    */
-  governmentemployeehealthprogram: "GOVEMP",
+  GOVEMP: "GOVEMP",
 
   /**
    * high risk pool program
    */
-  highriskpoolprogram: "HIRISK",
+  HIRISK: "HIRISK",
 
   /**
    * indigenous peoples health program
    */
-  indigenouspeopleshealthprogram: "IND",
+  IND: "IND",
 
   /**
    * military health program
    */
-  militaryhealthprogram: "MILITARY",
+  MILITARY: "MILITARY",
 
   /**
    * retiree health program
    */
-  retireehealthprogram: "RETIRE",
+  RETIRE: "RETIRE",
 
   /**
    * social service program
    */
-  socialserviceprogram: "SOCIAL",
+  SOCIAL: "SOCIAL",
 
   /**
    * veteran health program
    */
-  veteranhealthprogram: "VET",
+  VET: "VET",
 } as const;
 
 /**

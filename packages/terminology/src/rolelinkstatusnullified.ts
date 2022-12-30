@@ -6,7 +6,7 @@ export const RoleLinkStatusNullifiedCode = {
   /**
    * nullified
    */
-  nullified: "NULLIFIED",
+  NULLIFIED: "NULLIFIED",
 } as const;
 
 /**

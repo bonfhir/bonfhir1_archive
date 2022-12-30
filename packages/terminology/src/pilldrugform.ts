@@ -6,132 +6,132 @@ export const PillDrugFormCode = {
   /**
    * Pill
    */
-  Pill: "PILL",
+  PILL: "PILL",
 
   /**
    * Capsule
    */
-  Capsule: "CAP",
+  CAP: "CAP",
 
   /**
    * Oral Capsule
    */
-  OralCapsule: "ORCAP",
+  ORCAP: "ORCAP",
 
   /**
    * Enteric Coated Capsule
    */
-  EntericCoatedCapsule: "ENTCAP",
+  ENTCAP: "ENTCAP",
 
   /**
    * Extended Release Enteric Coated Capsule
    */
-  ExtendedReleaseEntericCoatedCapsule: "ERENTCAP",
+  ERENTCAP: "ERENTCAP",
 
   /**
    * Extended Release Capsule
    */
-  ExtendedReleaseCapsule: "ERCAP",
+  ERCAP: "ERCAP",
 
   /**
    * 12 Hour Extended Release Capsule
    */
-  TwelveHourExtendedReleaseCapsule: "ERCAP12",
+  ERCAP12: "ERCAP12",
 
   /**
    * 24 Hour Extended Release Capsule
    */
-  TwentyFourHourExtendedReleaseCapsule: "ERCAP24",
+  ERCAP24: "ERCAP24",
 
   /**
    * Extended Release Enteric Coated Capsule
    */
-  ExtendedReleaseEntericCoatedCapsule: "ERECCAP",
+  ERECCAP: "ERECCAP",
 
   /**
    * Tablet
    */
-  Tablet: "TAB",
+  TAB: "TAB",
 
   /**
    * Oral Tablet
    */
-  OralTablet: "ORTAB",
+  ORTAB: "ORTAB",
 
   /**
    * Buccal Tablet
    */
-  BuccalTablet: "BUCTAB",
+  BUCTAB: "BUCTAB",
 
   /**
    * Sustained Release Buccal Tablet
    */
-  SustainedReleaseBuccalTablet: "SRBUCTAB",
+  SRBUCTAB: "SRBUCTAB",
 
   /**
    * Caplet
    */
-  Caplet: "CAPLET",
+  CAPLET: "CAPLET",
 
   /**
    * Chewable Tablet
    */
-  ChewableTablet: "CHEWTAB",
+  CHEWTAB: "CHEWTAB",
 
   /**
    * Coated Particles Tablet
    */
-  CoatedParticlesTablet: "CPTAB",
+  CPTAB: "CPTAB",
 
   /**
    * Disintegrating Tablet
    */
-  DisintegratingTablet: "DISINTAB",
+  DISINTAB: "DISINTAB",
 
   /**
    * Delayed Release Tablet
    */
-  DelayedReleaseTablet: "DRTAB",
+  DRTAB: "DRTAB",
 
   /**
    * Enteric Coated Tablet
    */
-  EntericCoatedTablet: "ECTAB",
+  ECTAB: "ECTAB",
 
   /**
    * Extended Release Enteric Coated Tablet
    */
-  ExtendedReleaseEntericCoatedTablet: "ERECTAB",
+  ERECTAB: "ERECTAB",
 
   /**
    * Extended Release Tablet
    */
-  ExtendedReleaseTablet: "ERTAB",
+  ERTAB: "ERTAB",
 
   /**
    * 12 Hour Extended Release Tablet
    */
-  TwelveHourExtendedReleaseTablet: "ERTAB12",
+  ERTAB12: "ERTAB12",
 
   /**
    * 24 Hour Extended Release Tablet
    */
-  TwentyFourHourExtendedReleaseTablet: "ERTAB24",
+  ERTAB24: "ERTAB24",
 
   /**
    * Lozenge/Oral Troche
    */
-  LozengeOralTroche: "ORTROCHE",
+  ORTROCHE: "ORTROCHE",
 
   /**
    * Sublingual Tablet
    */
-  SublingualTablet: "SLTAB",
+  SLTAB: "SLTAB",
 
   /**
    * Vaginal Tablet
    */
-  VaginalTablet: "VAGTAB",
+  VAGTAB: "VAGTAB",
 } as const;
 
 /**

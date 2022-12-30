@@ -6,47 +6,47 @@ export const DocumentCompletionCode = {
   /**
    * authenticated
    */
-  authenticated: "AU",
+  AU: "AU",
 
   /**
    * dictated
    */
-  dictated: "DI",
+  DI: "DI",
 
   /**
    * documented
    */
-  documented: "DO",
+  DO: "DO",
 
   /**
    * incomplete
    */
-  incomplete: "IN",
+  IN: "IN",
 
   /**
    * in progress
    */
-  inprogress: "IP",
+  IP: "IP",
 
   /**
    * legally authenticated
    */
-  legallyauthenticated: "LA",
+  LA: "LA",
 
   /**
    * nullified document
    */
-  nullifieddocument: "NU",
+  NU: "NU",
 
   /**
    * pre-authenticated
    */
-  preauthenticated: "PA",
+  PA: "PA",
 
   /**
    * unsigned completed document
    */
-  unsignedcompleteddocument: "UC",
+  UC: "UC",
 } as const;
 
 /**

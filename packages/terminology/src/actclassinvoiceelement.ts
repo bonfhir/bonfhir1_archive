@@ -6,7 +6,7 @@ export const ActClassInvoiceElementCode = {
   /**
    * invoice element
    */
-  invoiceelement: "INVE",
+  INVE: "INVE",
 } as const;
 
 /**

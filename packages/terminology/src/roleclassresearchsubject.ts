@@ -8,7 +8,7 @@ export const RoleClassResearchSubjectCode = {
   /**
    * research subject
    */
-  researchsubject: "RESBJ",
+  RESBJ: "RESBJ",
 } as const;
 
 /**

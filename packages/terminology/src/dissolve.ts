@@ -6,12 +6,12 @@ export const DissolveCode = {
   /**
    * Dissolve, oral
    */
-  Dissolveoral: "DISSOLVE",
+  DISSOLVE: "DISSOLVE",
 
   /**
    * Dissolve, sublingual
    */
-  Dissolvesublingual: "SL",
+  SL: "SL",
 } as const;
 
 /**

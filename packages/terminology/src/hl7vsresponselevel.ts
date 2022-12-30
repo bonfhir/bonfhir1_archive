@@ -6,25 +6,22 @@ export const Hl7VSResponseLevelCode = {
   /**
    * Never.  No application-level response needed
    */
-  NeverNoapplicationlevelresponseneeded: "NE",
+  NE: "NE",
 
   /**
    * Error/Reject conditions only.  Only MFA segments denoting errors must be returned via the application-level acknowledgment for this message
    */
-  ErrorRejectconditionsonlyOnlyMFAsegmentsdenotingerrorsmustbereturnedviatheapplicationlevelacknowledgmentforthismessage:
-    "ER",
+  ER: "ER",
 
   /**
    * Always.  All MFA segments (whether denoting errors or not) must be returned via the application-level acknowledgment message
    */
-  AlwaysAllMFAsegmentswhetherdenotingerrorsornotmustbereturnedviatheapplicationlevelacknowledgmentmessage:
-    "AL",
+  AL: "AL",
 
   /**
    * Success.  Only MFA segments denoting success must be returned via the application-level acknowledgment for this message
    */
-  SuccessOnlyMFAsegmentsdenotingsuccessmustbereturnedviatheapplicationlevelacknowledgmentforthismessage:
-    "SU",
+  SU: "SU",
 } as const;
 
 /**

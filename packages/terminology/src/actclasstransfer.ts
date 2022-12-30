@@ -6,7 +6,7 @@ export const ActClassTransferCode = {
   /**
    * transfer
    */
-  transfer: "TRFR",
+  TRFR: "TRFR",
 } as const;
 
 /**

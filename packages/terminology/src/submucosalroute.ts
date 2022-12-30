@@ -6,12 +6,12 @@ export const SubmucosalRouteCode = {
   /**
    * Injection, submucosal
    */
-  Injectionsubmucosal: "SUBMUCINJ",
+  SUBMUCINJ: "SUBMUCINJ",
 
   /**
    * Mucosal absorption, submucosal
    */
-  Mucosalabsorptionsubmucosal: "SMUCMAB",
+  SMUCMAB: "SMUCMAB",
 } as const;
 
 /**

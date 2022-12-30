@@ -6,27 +6,27 @@ export const RacePacificIslandMelanesianCode = {
   /**
    * Melanesian
    */
-  Melanesian: "2100-6",
+  "2100-6": "2100-6",
 
   /**
    * Fijian
    */
-  Fijian: "2101-4",
+  "2101-4": "2101-4",
 
   /**
    * Papua New Guinean
    */
-  PapuaNewGuinean: "2102-2",
+  "2102-2": "2102-2",
 
   /**
    * Solomon Islander
    */
-  SolomonIslander: "2103-0",
+  "2103-0": "2103-0",
 
   /**
    * New Hebrides
    */
-  NewHebrides: "2104-8",
+  "2104-8": "2104-8",
 } as const;
 
 /**

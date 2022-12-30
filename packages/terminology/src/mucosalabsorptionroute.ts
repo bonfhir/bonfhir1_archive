@@ -6,17 +6,17 @@ export const MucosalAbsorptionRouteCode = {
   /**
    * Mucosal absorption, intraduodenal
    */
-  Mucosalabsorptionintraduodenal: "IDOUDMAB",
+  IDOUDMAB: "IDOUDMAB",
 
   /**
    * Mucosal absorption, intratracheal
    */
-  Mucosalabsorptionintratracheal: "ITRACHMAB",
+  ITRACHMAB: "ITRACHMAB",
 
   /**
    * Mucosal absorption, submucosal
    */
-  Mucosalabsorptionsubmucosal: "SMUCMAB",
+  SMUCMAB: "SMUCMAB",
 } as const;
 
 /**

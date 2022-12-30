@@ -6,307 +6,307 @@ export const Hl7VSDegreeLicenseCertificateCode = {
   /**
    * Advanced Practice Nurse
    */
-  AdvancedPracticeNurse: "PN",
+  PN: "PN",
 
   /**
    * Associate of Applied Science
    */
-  AssociateofAppliedScience: "AAS",
+  AAS: "AAS",
 
   /**
    * Associate of Arts
    */
-  AssociateofArts: "AA",
+  AA: "AA",
 
   /**
    * Associate of Business Administration
    */
-  AssociateofBusinessAdministration: "ABA",
+  ABA: "ABA",
 
   /**
    * Associate of Engineering
    */
-  AssociateofEngineering: "AE",
+  AE: "AE",
 
   /**
    * Associate of Science
    */
-  AssociateofScience: "AS",
+  AS: "AS",
 
   /**
    * Bachelor of Arts
    */
-  BachelorofArts: "BA",
+  BA: "BA",
 
   /**
    * Bachelor of Business Administration
    */
-  BachelorofBusinessAdministration: "BBA",
+  BBA: "BBA",
 
   /**
    * Bachelor or Engineering
    */
-  BachelororEngineering: "BE",
+  BE: "BE",
 
   /**
    * Bachelor of Fine Arts
    */
-  BachelorofFineArts: "BFA",
+  BFA: "BFA",
 
   /**
    * Bachelor of Nursing
    */
-  BachelorofNursing: "BN",
+  BN: "BN",
 
   /**
    * Bachelor of Science
    */
-  BachelorofScience: "BS",
+  BS: "BS",
 
   /**
    * Bachelor of Science - Law
    */
-  BachelorofScienceLaw: "BSL",
+  BSL: "BSL",
 
   /**
    * Bachelor on Science - Nursing
    */
-  BacheloronScienceNursing: "BSN",
+  BSN: "BSN",
 
   /**
    * Bachelor of Theology
    */
-  BachelorofTheology: "BT",
+  BT: "BT",
 
   /**
    * Certificate
    */
-  Certificate: "CER",
+  CER: "CER",
 
   /**
    * Certified Adult Nurse Practitioner
    */
-  CertifiedAdultNursePractitioner: "CANP",
+  CANP: "CANP",
 
   /**
    * Certified Medical Assistant
    */
-  CertifiedMedicalAssistant: "CMA",
+  CMA: "CMA",
 
   /**
    * Certified Nurse Practitioner
    */
-  CertifiedNursePractitioner: "CNP",
+  CNP: "CNP",
 
   /**
    * Certified Nurse Midwife
    */
-  CertifiedNurseMidwife: "CNM",
+  CNM: "CNM",
 
   /**
    * Certified Registered Nurse
    */
-  CertifiedRegisteredNurse: "CRN",
+  CRN: "CRN",
 
   /**
    * Certified Nurse Specialist
    */
-  CertifiedNurseSpecialist: "CNS",
+  CNS: "CNS",
 
   /**
    * Certified Pediatric Nurse Practitioner
    */
-  CertifiedPediatricNursePractitioner: "CPNP",
+  CPNP: "CPNP",
 
   /**
    * Certified Tumor Registrar
    */
-  CertifiedTumorRegistrar: "CTR",
+  CTR: "CTR",
 
   /**
    * Diploma
    */
-  Diploma: "DIP",
+  DIP: "DIP",
 
   /**
    * Doctor of Business Administration
    */
-  DoctorofBusinessAdministration: "DBA",
+  DBA: "DBA",
 
   /**
    * Doctor of Education
    */
-  DoctorofEducation: "DED",
+  DED: "DED",
 
   /**
    * Doctor of Pharmacy
    */
-  DoctorofPharmacy: "PharmD",
+  PharmD: "PharmD",
 
   /**
    * Doctor of Engineering
    */
-  DoctorofEngineering: "PHE",
+  PHE: "PHE",
 
   /**
    * Doctor of Philosophy
    */
-  DoctorofPhilosophy: "PHD",
+  PHD: "PHD",
 
   /**
    * Doctor of Science
    */
-  DoctorofScience: "PHS",
+  PHS: "PHS",
 
   /**
    * Doctor of Medicine
    */
-  DoctorofMedicine: "MD",
+  MD: "MD",
 
   /**
    * Doctor of Osteopathy
    */
-  DoctorofOsteopathy: "DO",
+  DO: "DO",
 
   /**
    * Emergency Medical Technician
    */
-  EmergencyMedicalTechnician: "EMT",
+  EMT: "EMT",
 
   /**
    * Emergency Medical Technician - Paramedic
    */
-  EmergencyMedicalTechnicianParamedic: "EMTP",
+  EMTP: "EMTP",
 
   /**
    * Family Practice Nurse Practitioner
    */
-  FamilyPracticeNursePractitioner: "FPNP",
+  FPNP: "FPNP",
 
   /**
    * High School Graduate
    */
-  HighSchoolGraduate: "HS",
+  HS: "HS",
 
   /**
    * Juris Doctor
    */
-  JurisDoctor: "JD",
+  JD: "JD",
 
   /**
    * Master of Arts
    */
-  MasterofArts: "MA",
+  MA: "MA",
 
   /**
    * Master of Business Administration
    */
-  MasterofBusinessAdministration: "MBA",
+  MBA: "MBA",
 
   /**
    * Master of Civil Engineering
    */
-  MasterofCivilEngineering: "MCE",
+  MCE: "MCE",
 
   /**
    * Master of Divinity
    */
-  MasterofDivinity: "MDI",
+  MDI: "MDI",
 
   /**
    * Master of Education
    */
-  MasterofEducation: "MED",
+  MED: "MED",
 
   /**
    * Master of Electrical Engineering
    */
-  MasterofElectricalEngineering: "MEE",
+  MEE: "MEE",
 
   /**
    * Master of Engineering
    */
-  MasterofEngineering: "ME",
+  ME: "ME",
 
   /**
    * Master of Fine Arts
    */
-  MasterofFineArts: "MFA",
+  MFA: "MFA",
 
   /**
    * Master of Mechanical Engineering
    */
-  MasterofMechanicalEngineering: "MME",
+  MME: "MME",
 
   /**
    * Master of Science
    */
-  MasterofScience: "MS",
+  MS: "MS",
 
   /**
    * Master of Science - Law
    */
-  MasterofScienceLaw: "MSL",
+  MSL: "MSL",
 
   /**
    * Master of Science - Nursing
    */
-  MasterofScienceNursing: "MSN",
+  MSN: "MSN",
 
   /**
    * Master of Theology
    */
-  MasterofTheology: "MTH",
+  MTH: "MTH",
 
   /**
    * Medical Assistant
    */
-  MedicalAssistant: "MDA",
+  MDA: "MDA",
 
   /**
    * Medical Technician
    */
-  MedicalTechnician: "MT",
+  MT: "MT",
 
   /**
    * Non-Graduate
    */
-  NonGraduate: "NG",
+  NG: "NG",
 
   /**
    * Nurse Practitioner
    */
-  NursePractitioner: "NP",
+  NP: "NP",
 
   /**
    * Physician Assistant
    */
-  PhysicianAssistant: "PA",
+  PA: "PA",
 
   /**
    * Registered Medical Assistant
    */
-  RegisteredMedicalAssistant: "RMA",
+  RMA: "RMA",
 
   /**
    * Registered Nurse
    */
-  RegisteredNurse: "RN",
+  RN: "RN",
 
   /**
    * Registered Pharmacist
    */
-  RegisteredPharmacist: "RPH",
+  RPH: "RPH",
 
   /**
    * Secretarial Certificate
    */
-  SecretarialCertificate: "SEC",
+  SEC: "SEC",
 
   /**
    * Trade School Graduate
    */
-  TradeSchoolGraduate: "TS",
+  TS: "TS",
 } as const;
 
 /**

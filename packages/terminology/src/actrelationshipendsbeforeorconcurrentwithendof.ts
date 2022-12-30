@@ -6,52 +6,52 @@ export const ActRelationshipEndsBeforeOrConcurrentWithEndOfCode = {
   /**
    * ends before or concurrent with end of
    */
-  endsbeforeorconcurrentwithendof: "EBEORECW",
+  EBEORECW: "EBEORECW",
 
   /**
    * ends concurrent with
    */
-  endsconcurrentwith: "ECW",
+  ECW: "ECW",
 
   /**
    * concurrent with
    */
-  concurrentwith: "CONCURRENT",
+  CONCURRENT: "CONCURRENT",
 
   /**
    * starts before start of, ends with
    */
-  startsbeforestartofendswith: "SBSECWE",
+  SBSECWE: "SBSECWE",
 
   /**
    * ends before end of
    */
-  endsbeforeendof: "EBE",
+  EBE: "EBE",
 
   /**
    * starts before start of, ends before end of
    */
-  startsbeforestartofendsbeforeendof: "SBSEBE",
+  SBSEBE: "SBSEBE",
 
   /**
    * contains start of, ends before end of
    */
-  containsstartofendsbeforeendof: "SBSEASEBE",
+  SBSEASEBE: "SBSEASEBE",
 
   /**
    * ends before or concurrent with start of
    */
-  endsbeforeorconcurrentwithstartof: "EBSORECWS",
+  EBSORECWS: "EBSORECWS",
 
   /**
    * ends concurrent with start of
    */
-  endsconcurrentwithstartof: "ECWS",
+  ECWS: "ECWS",
 
   /**
    * ends before start of
    */
-  endsbeforestartof: "EBS",
+  EBS: "EBS",
 } as const;
 
 /**

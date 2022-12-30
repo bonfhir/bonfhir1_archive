@@ -6,17 +6,17 @@ export const XSUCCREPLPREVCode = {
   /**
    * has previous instance
    */
-  haspreviousinstance: "PREV",
+  PREV: "PREV",
 
   /**
    * replaces
    */
-  replaces: "RPLC",
+  RPLC: "RPLC",
 
   /**
    * succeeds
    */
-  succeeds: "SUCC",
+  SUCC: "SUCC",
 } as const;
 
 /**

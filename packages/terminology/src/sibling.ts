@@ -6,107 +6,107 @@ export const SiblingCode = {
   /**
    * sibling
    */
-  sibling: "SIB",
+  SIB: "SIB",
 
   /**
    * brother
    */
-  brother: "BRO",
+  BRO: "BRO",
 
   /**
    * half-brother
    */
-  halfbrother: "HBRO",
+  HBRO: "HBRO",
 
   /**
    * natural brother
    */
-  naturalbrother: "NBRO",
+  NBRO: "NBRO",
 
   /**
    * twin brother
    */
-  twinbrother: "TWINBRO",
+  TWINBRO: "TWINBRO",
 
   /**
    * fraternal twin brother
    */
-  fraternaltwinbrother: "FTWINBRO",
+  FTWINBRO: "FTWINBRO",
 
   /**
    * identical twin brother
    */
-  identicaltwinbrother: "ITWINBRO",
+  ITWINBRO: "ITWINBRO",
 
   /**
    * stepbrother
    */
-  stepbrother: "STPBRO",
+  STPBRO: "STPBRO",
 
   /**
    * half-sibling
    */
-  halfsibling: "HSIB",
+  HSIB: "HSIB",
 
   /**
    * half-sister
    */
-  halfsister: "HSIS",
+  HSIS: "HSIS",
 
   /**
    * natural sibling
    */
-  naturalsibling: "NSIB",
+  NSIB: "NSIB",
 
   /**
    * natural sister
    */
-  naturalsister: "NSIS",
+  NSIS: "NSIS",
 
   /**
    * twin sister
    */
-  twinsister: "TWINSIS",
+  TWINSIS: "TWINSIS",
 
   /**
    * fraternal twin sister
    */
-  fraternaltwinsister: "FTWINSIS",
+  FTWINSIS: "FTWINSIS",
 
   /**
    * identical twin sister
    */
-  identicaltwinsister: "ITWINSIS",
+  ITWINSIS: "ITWINSIS",
 
   /**
    * twin
    */
-  twin: "TWIN",
+  TWIN: "TWIN",
 
   /**
    * fraternal twin
    */
-  fraternaltwin: "FTWIN",
+  FTWIN: "FTWIN",
 
   /**
    * identical twin
    */
-  identicaltwin: "ITWIN",
+  ITWIN: "ITWIN",
 
   /**
    * sister
    */
-  sister: "SIS",
+  SIS: "SIS",
 
   /**
    * stepsister
    */
-  stepsister: "STPSIS",
+  STPSIS: "STPSIS",
 
   /**
    * step sibling
    */
-  stepsibling: "STPSIB",
+  STPSIB: "STPSIB",
 } as const;
 
 /**

@@ -6,32 +6,32 @@ export const Hl7VSMarketingBasisCode = {
   /**
    * 510 (K)
    */
-  FiveHundredTenK: "510K",
+  "510K": "510K",
 
   /**
    * 510 (K) exempt
    */
-  FiveHundredTenKexempt: "510E",
+  "510E": "510E",
 
   /**
    * Premarketing authorization
    */
-  Premarketingauthorization: "PMA",
+  PMA: "PMA",
 
   /**
    * Preamendment
    */
-  Preamendment: "PRE",
+  PRE: "PRE",
 
   /**
    * Transitional
    */
-  Transitional: "TXN",
+  TXN: "TXN",
 
   /**
    * Post marketing study (522)
    */
-  Postmarketingstudy522: "522S",
+  "522S": "522S",
 } as const;
 
 /**

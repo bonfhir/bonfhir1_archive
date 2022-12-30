@@ -6,12 +6,12 @@ export const EntericCoatedTabletCode = {
   /**
    * Enteric Coated Tablet
    */
-  EntericCoatedTablet: "ECTAB",
+  ECTAB: "ECTAB",
 
   /**
    * Extended Release Enteric Coated Tablet
    */
-  ExtendedReleaseEntericCoatedTablet: "ERECTAB",
+  ERECTAB: "ERECTAB",
 } as const;
 
 /**

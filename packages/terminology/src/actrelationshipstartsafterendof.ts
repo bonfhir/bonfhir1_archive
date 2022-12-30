@@ -6,7 +6,7 @@ export const ActRelationshipStartsAfterEndOfCode = {
   /**
    * starts after end of
    */
-  startsafterendof: "SAE",
+  SAE: "SAE",
 } as const;
 
 /**

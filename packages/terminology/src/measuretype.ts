@@ -6,27 +6,27 @@ export const MeasureTypeCode = {
   /**
    * Process
    */
-  Process: "process",
+  process: "process",
 
   /**
    * Outcome
    */
-  Outcome: "outcome",
+  outcome: "outcome",
 
   /**
    * Structure
    */
-  Structure: "structure",
+  structure: "structure",
 
   /**
    * Patient Reported Outcome
    */
-  PatientReportedOutcome: "patient-reported-outcome",
+  "patient-reported-outcome": "patient-reported-outcome",
 
   /**
    * Composite
    */
-  Composite: "composite",
+  composite: "composite",
 } as const;
 
 /**

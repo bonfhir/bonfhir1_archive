@@ -6,17 +6,17 @@ export const GoalPriorityCode = {
   /**
    * High Priority
    */
-  HighPriority: "high-priority",
+  "high-priority": "high-priority",
 
   /**
    * Medium Priority
    */
-  MediumPriority: "medium-priority",
+  "medium-priority": "medium-priority",
 
   /**
    * Low Priority
    */
-  LowPriority: "low-priority",
+  "low-priority": "low-priority",
 } as const;
 
 /**

@@ -6,7 +6,7 @@ export const NootkanCode = {
   /**
    * Makah
    */
-  Makah: "x-MYH",
+  "x-MYH": "x-MYH",
 } as const;
 
 /**

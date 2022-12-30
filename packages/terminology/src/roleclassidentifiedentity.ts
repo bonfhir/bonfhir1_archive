@@ -6,7 +6,7 @@ export const RoleClassIdentifiedEntityCode = {
   /**
    * identified entity
    */
-  identifiedentity: "IDENT",
+  IDENT: "IDENT",
 } as const;
 
 /**

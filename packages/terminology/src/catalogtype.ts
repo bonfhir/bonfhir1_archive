@@ -6,17 +6,17 @@ export const CatalogTypeCode = {
   /**
    * Medication Catalog
    */
-  MedicationCatalog: "medication",
+  medication: "medication",
 
   /**
    * Device Catalog
    */
-  DeviceCatalog: "device",
+  device: "device",
 
   /**
    * Protocol List
    */
-  ProtocolList: "protocol",
+  protocol: "protocol",
 } as const;
 
 /**

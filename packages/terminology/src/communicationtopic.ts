@@ -6,32 +6,32 @@ export const CommunicationTopicCode = {
   /**
    * Prescription Refill Request
    */
-  PrescriptionRefillRequest: "prescription-refill-request",
+  "prescription-refill-request": "prescription-refill-request",
 
   /**
    * Progress Update
    */
-  ProgressUpdate: "progress-update",
+  "progress-update": "progress-update",
 
   /**
    * Report Labs
    */
-  ReportLabs: "report-labs",
+  "report-labs": "report-labs",
 
   /**
    * Appointment Reminder
    */
-  AppointmentReminder: "appointment-reminder",
+  "appointment-reminder": "appointment-reminder",
 
   /**
    * Phone Consult
    */
-  PhoneConsult: "phone-consult",
+  "phone-consult": "phone-consult",
 
   /**
    * Summary Report
    */
-  SummaryReport: "summary-report",
+  "summary-report": "summary-report",
 } as const;
 
 /**

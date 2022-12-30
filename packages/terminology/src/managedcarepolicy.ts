@@ -10,22 +10,22 @@ export const ManagedCarePolicyCode = {
   /**
    * managed care policy
    */
-  managedcarepolicy: "MCPOL",
+  MCPOL: "MCPOL",
 
   /**
    * point of service policy
    */
-  pointofservicepolicy: "POS",
+  POS: "POS",
 
   /**
    * health maintenance organization policy
    */
-  healthmaintenanceorganizationpolicy: "HMO",
+  HMO: "HMO",
 
   /**
    * preferred provider organization policy
    */
-  preferredproviderorganizationpolicy: "PPO",
+  PPO: "PPO",
 } as const;
 
 /**

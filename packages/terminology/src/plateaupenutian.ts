@@ -6,37 +6,37 @@ export const PlateauPenutianCode = {
   /**
    * Sahaptian
    */
-  Sahaptian: "_Sahaptian",
+  _Sahaptian: "_Sahaptian",
 
   /**
    * Umatilla
    */
-  Umatilla: "x-UMA",
+  "x-UMA": "x-UMA",
 
   /**
    * Walla Walla
    */
-  WallaWalla: "x-WAA",
+  "x-WAA": "x-WAA",
 
   /**
    * Tenino
    */
-  Tenino: "x-WAR",
+  "x-WAR": "x-WAR",
 
   /**
    * Yakima
    */
-  Yakima: "x-YAK",
+  "x-YAK": "x-YAK",
 
   /**
    * Klamath-Modoc
    */
-  KlamathModoc: "x-KLA",
+  "x-KLA": "x-KLA",
 
   /**
    * Nez Perce
    */
-  NezPerce: "x-NEZ",
+  "x-NEZ": "x-NEZ",
 } as const;
 
 /**

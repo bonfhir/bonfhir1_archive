@@ -6,22 +6,22 @@ export const GastricRouteCode = {
   /**
    * Injection, gastric button
    */
-  Injectiongastricbutton: "GBINJ",
+  GBINJ: "GBINJ",
 
   /**
    * Instillation, gastrostomy tube
    */
-  Instillationgastrostomytube: "GT",
+  GT: "GT",
 
   /**
    * Instillation, nasogastric tube
    */
-  Instillationnasogastrictube: "NGT",
+  NGT: "NGT",
 
   /**
    * Instillation, orogastric tube
    */
-  Instillationorogastrictube: "OGT",
+  OGT: "OGT",
 } as const;
 
 /**

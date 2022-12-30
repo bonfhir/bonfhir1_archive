@@ -6,7 +6,7 @@ export const ActRelationshipHasMetadataCode = {
   /**
    * has metadata
    */
-  hasmetadata: "META",
+  META: "META",
 } as const;
 
 /**

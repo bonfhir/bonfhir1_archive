@@ -6,67 +6,67 @@ export const RaceAmericanIndianCreekCode = {
   /**
    * Creek
    */
-  Creek: "1193-2",
+  "1193-2": "1193-2",
 
   /**
    * Alabama Creek
    */
-  AlabamaCreek: "1194-0",
+  "1194-0": "1194-0",
 
   /**
    * Alabama Quassarte
    */
-  AlabamaQuassarte: "1195-7",
+  "1195-7": "1195-7",
 
   /**
    * Eastern Creek
    */
-  EasternCreek: "1196-5",
+  "1196-5": "1196-5",
 
   /**
    * Eastern Muscogee
    */
-  EasternMuscogee: "1197-3",
+  "1197-3": "1197-3",
 
   /**
    * Kialegee
    */
-  Kialegee: "1198-1",
+  "1198-1": "1198-1",
 
   /**
    * Lower Muscogee
    */
-  LowerMuscogee: "1199-9",
+  "1199-9": "1199-9",
 
   /**
    * Machis Lower Creek Indian
    */
-  MachisLowerCreekIndian: "1200-5",
+  "1200-5": "1200-5",
 
   /**
    * Poarch Band
    */
-  PoarchBand: "1201-3",
+  "1201-3": "1201-3",
 
   /**
    * Principal Creek Indian Nation
    */
-  PrincipalCreekIndianNation: "1202-1",
+  "1202-1": "1202-1",
 
   /**
    * Star Clan of Muscogee Creeks
    */
-  StarClanofMuscogeeCreeks: "1203-9",
+  "1203-9": "1203-9",
 
   /**
    * Thlopthlocco
    */
-  Thlopthlocco: "1204-7",
+  "1204-7": "1204-7",
 
   /**
    * Tuckabachee
    */
-  Tuckabachee: "1205-4",
+  "1205-4": "1205-4",
 } as const;
 
 /**

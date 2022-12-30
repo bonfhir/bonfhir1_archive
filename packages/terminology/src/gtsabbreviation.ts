@@ -41,12 +41,12 @@ export const GTSAbbreviationCode = {
   /**
    * GTSAbbreviationHolidays
    */
-  GTSAbbreviationHolidays: "JH",
+  JH: "JH",
 
   /**
    * GTSAbbreviationHolidaysChristianRoman
    */
-  GTSAbbreviationHolidaysChristianRoman:
+  _GTSAbbreviationHolidaysChristianRoman:
     "_GTSAbbreviationHolidaysChristianRoman",
 
   /**
@@ -82,27 +82,27 @@ export const GTSAbbreviationCode = {
   /**
    * The Netherlands National Holidays
    */
-  TheNetherlandsNationalHolidays: "JHNNL",
+  JHNNL: "JHNNL",
 
   /**
    * Liberation day (May 5 every five years)
    */
-  LiberationdayMay5everyfiveyears: "JHNNLLD",
+  JHNNLLD: "JHNNLLD",
 
   /**
    * Queen's day (April 30)
    */
-  QueensdayApril30: "JHNNLQD",
+  JHNNLQD: "JHNNLQD",
 
   /**
    * Sinterklaas (December 5)
    */
-  SinterklaasDecember5: "JHNNLSK",
+  JHNNLSK: "JHNNLSK",
 
   /**
    * GTSAbbreviationHolidaysUSNational
    */
-  GTSAbbreviationHolidaysUSNational: "JHNUS",
+  JHNUS: "JHNUS",
 
   /**
    * JHNUSCLM

@@ -20,12 +20,12 @@ export const ActRelationshipHasSubjectCode = {
   /**
    * has subject
    */
-  hassubject: "SUBJ",
+  SUBJ: "SUBJ",
 
   /**
    * has qualifier
    */
-  hasqualifier: "QUALF",
+  QUALF: "QUALF",
 } as const;
 
 /**

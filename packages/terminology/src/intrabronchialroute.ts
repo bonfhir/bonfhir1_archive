@@ -6,7 +6,7 @@ export const IntrabronchialRouteCode = {
   /**
    * Instillation, intrabronchial
    */
-  Instillationintrabronchial: "IBRONCHINSTIL",
+  IBRONCHINSTIL: "IBRONCHINSTIL",
 } as const;
 
 /**

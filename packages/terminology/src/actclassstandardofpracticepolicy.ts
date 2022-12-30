@@ -12,7 +12,7 @@ export const ActClassStandardOfPracticePolicyCode = {
   /**
    * standard of practice policy
    */
-  standardofpracticepolicy: "STDPOL",
+  STDPOL: "STDPOL",
 } as const;
 
 /**

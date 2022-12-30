@@ -6,37 +6,37 @@ export const Hl7VSRecreationalDrugUseCodeCode = {
   /**
    * Alcohol
    */
-  Alcohol: "A",
+  A: "A",
 
   /**
    * Kava
    */
-  Kava: "K",
+  K: "K",
 
   /**
    * Marijuana
    */
-  Marijuana: "M",
+  M: "M",
 
   /**
    * Tobacco - smoked
    */
-  Tobaccosmoked: "T",
+  T: "T",
 
   /**
    * Tobacco - chewed
    */
-  Tobaccochewed: "C",
+  C: "C",
 
   /**
    * Other
    */
-  Other: "O",
+  O: "O",
 
   /**
    * Unknown
    */
-  Unknown: "U",
+  U: "U",
 } as const;
 
 /**

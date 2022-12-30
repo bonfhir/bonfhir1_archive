@@ -6,62 +6,62 @@ export const InvoiceElementSubmittedCode = {
   /**
    * submitted billed electronic amount
    */
-  submittedbilledelectronicamount: "SBBLELAT",
+  SBBLELAT: "SBBLELAT",
 
   /**
    * submitted billed electronic amount
    */
-  submittedbilledelectronicamount: "SBBLAT",
+  SBBLAT: "SBBLAT",
 
   /**
    * submitted billed electronic count
    */
-  submittedbilledelectroniccount: "SBBLELCT",
+  SBBLELCT: "SBBLELCT",
 
   /**
    * submitted billed electronic count
    */
-  submittedbilledelectroniccount: "SBBLCT",
+  SBBLCT: "SBBLCT",
 
   /**
    * submitted nullified electronic amount
    */
-  submittednullifiedelectronicamount: "SBNFELAT",
+  SBNFELAT: "SBNFELAT",
 
   /**
    * submitted nullified electronic amount
    */
-  submittednullifiedelectronicamount: "SBCNAT",
+  SBCNAT: "SBCNAT",
 
   /**
    * submitted cancelled electronic count
    */
-  submittedcancelledelectroniccount: "SBNFELCT",
+  SBNFELCT: "SBNFELCT",
 
   /**
    * submitted cancelled electronic count
    */
-  submittedcancelledelectroniccount: "SBCNCT",
+  SBCNCT: "SBCNCT",
 
   /**
    * submitted pending electronic amount
    */
-  submittedpendingelectronicamount: "SBPDELAT",
+  SBPDELAT: "SBPDELAT",
 
   /**
    * submitted pending electronic amount
    */
-  submittedpendingelectronicamount: "SBPDAT",
+  SBPDAT: "SBPDAT",
 
   /**
    * submitted pending electronic count
    */
-  submittedpendingelectroniccount: "SBPDELCT",
+  SBPDELCT: "SBPDELCT",
 
   /**
    * submitted pending electronic count
    */
-  submittedpendingelectroniccount: "SBPDCT",
+  SBPDCT: "SBPDCT",
 } as const;
 
 /**

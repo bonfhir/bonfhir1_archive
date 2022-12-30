@@ -6,12 +6,12 @@ export const XActRelationshipRelatedAuthorizationsCode = {
   /**
    * authorized by
    */
-  authorizedby: "AUTH",
+  AUTH: "AUTH",
 
   /**
    * refers to
    */
-  refersto: "REFR",
+  REFR: "REFR",
 } as const;
 
 /**

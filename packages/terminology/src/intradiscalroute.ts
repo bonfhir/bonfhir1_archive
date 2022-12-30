@@ -6,7 +6,7 @@ export const IntradiscalRouteCode = {
   /**
    * Injection, intradiscal
    */
-  Injectionintradiscal: "IDISCINJ",
+  IDISCINJ: "IDISCINJ",
 } as const;
 
 /**

@@ -6,57 +6,57 @@ export const PopulationInclusionObservationTypeCode = {
   /**
    * PopulationInclusionObservationType
    */
-  PopulationInclusionObservationType: "_PopulationInclusionObservationType",
+  _PopulationInclusionObservationType: "_PopulationInclusionObservationType",
 
   /**
    * denominator exclusions
    */
-  denominatorexclusions: "DENEX",
+  DENEX: "DENEX",
 
   /**
    * denominator exceptions
    */
-  denominatorexceptions: "DENEXCEP",
+  DENEXCEP: "DENEXCEP",
 
   /**
    * denominator
    */
-  denominator: "DENOM",
+  DENOM: "DENOM",
 
   /**
    * initial population
    */
-  initialpopulation: "IPOP",
+  IPOP: "IPOP",
 
   /**
    * initial patient population
    */
-  initialpatientpopulation: "IPPOP",
+  IPPOP: "IPPOP",
 
   /**
    * measure observation
    */
-  measureobservation: "MSROBS",
+  MSROBS: "MSROBS",
 
   /**
    * measure population
    */
-  measurepopulation: "MSRPOPL",
+  MSRPOPL: "MSRPOPL",
 
   /**
    * measure population exclusions
    */
-  measurepopulationexclusions: "MSRPOPLEX",
+  MSRPOPLEX: "MSRPOPLEX",
 
   /**
    * numerator
    */
-  numerator: "NUMER",
+  NUMER: "NUMER",
 
   /**
    * numerator exclusions
    */
-  numeratorexclusions: "NUMEX",
+  NUMEX: "NUMEX",
 } as const;
 
 /**

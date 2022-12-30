@@ -6,12 +6,12 @@ export const Hl7VsStateProvinceCode = {
   /**
    * Alberta
    */
-  Alberta: "CA-AB",
+  "CA-AB": "CA-AB",
 
   /**
    * Michigan
    */
-  Michigan: "US-MI",
+  "US-MI": "US-MI",
 } as const;
 
 /**

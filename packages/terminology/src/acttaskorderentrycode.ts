@@ -6,17 +6,17 @@ export const ActTaskOrderEntryCodeCode = {
   /**
    * order entry task
    */
-  orderentrytask: "OE",
+  OE: "OE",
 
   /**
    * laboratory test order entry task
    */
-  laboratorytestorderentrytask: "LABOE",
+  LABOE: "LABOE",
 
   /**
    * medication order entry task
    */
-  medicationorderentrytask: "MEDOE",
+  MEDOE: "MEDOE",
 } as const;
 
 /**

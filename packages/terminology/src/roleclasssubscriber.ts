@@ -12,7 +12,7 @@ export const RoleClassSubscriberCode = {
   /**
    * subscriber
    */
-  subscriber: "SUBSCR",
+  SUBSCR: "SUBSCR",
 } as const;
 
 /**

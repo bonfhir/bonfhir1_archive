@@ -12,22 +12,22 @@ export const RoleClassNamedInsuredCode = {
   /**
    * named insured
    */
-  namedinsured: "NAMED",
+  NAMED: "NAMED",
 
   /**
    * dependent
    */
-  dependent: "DEPEN",
+  DEPEN: "DEPEN",
 
   /**
    * individual
    */
-  individual: "INDIV",
+  INDIV: "INDIV",
 
   /**
    * subscriber
    */
-  subscriber: "SUBSCR",
+  SUBSCR: "SUBSCR",
 } as const;
 
 /**

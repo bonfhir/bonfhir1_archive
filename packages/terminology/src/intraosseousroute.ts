@@ -6,12 +6,12 @@ export const IntraosseousRouteCode = {
   /**
    * Infusion, intraosseous, continuous
    */
-  Infusionintraosseouscontinuous: "IOSSC",
+  IOSSC: "IOSSC",
 
   /**
    * Injection, intraosseous
    */
-  Injectionintraosseous: "IOSSINJ",
+  IOSSINJ: "IOSSINJ",
 } as const;
 
 /**

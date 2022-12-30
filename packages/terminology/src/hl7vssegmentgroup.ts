@@ -6,7 +6,7 @@ export const Hl7VSSegmentGroupCode = {
   /**
    * PID group
    */
-  PIDgroup: "PIDG",
+  PIDG: "PIDG",
 
   /**
    *
@@ -16,7 +16,7 @@ export const Hl7VSSegmentGroupCode = {
   /**
    * OBR group
    */
-  OBRgroup: "OBRG",
+  OBRG: "OBRG",
 
   /**
    *
@@ -26,7 +26,7 @@ export const Hl7VSSegmentGroupCode = {
   /**
    * ORC group
    */
-  ORCgroup: "ORCG",
+  ORCG: "ORCG",
 
   /**
    *
@@ -36,7 +36,7 @@ export const Hl7VSSegmentGroupCode = {
   /**
    * RXA group
    */
-  RXAgroup: "RXAG",
+  RXAG: "RXAG",
 
   /**
    *
@@ -46,7 +46,7 @@ export const Hl7VSSegmentGroupCode = {
   /**
    * RXD group
    */
-  RXDgroup: "RXDG",
+  RXDG: "RXDG",
 
   /**
    *
@@ -56,7 +56,7 @@ export const Hl7VSSegmentGroupCode = {
   /**
    * RXE group
    */
-  RXEgroup: "RXEG",
+  RXEG: "RXEG",
 
   /**
    *
@@ -66,7 +66,7 @@ export const Hl7VSSegmentGroupCode = {
   /**
    * RXO group
    */
-  RXOgroup: "RXOG",
+  RXOG: "RXOG",
 
   /**
    *

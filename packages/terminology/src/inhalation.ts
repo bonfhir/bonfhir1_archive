@@ -6,77 +6,77 @@ export const InhalationCode = {
   /**
    * Inhalation, respiratory
    */
-  Inhalationrespiratory: "IPINHL",
+  IPINHL: "IPINHL",
 
   /**
    * Inhalation, oral intermittent flow
    */
-  Inhalationoralintermittentflow: "ORIFINHL",
+  ORIFINHL: "ORIFINHL",
 
   /**
    * Inhalation, oral rebreather mask
    */
-  Inhalationoralrebreathermask: "REBREATH",
+  REBREATH: "REBREATH",
 
   /**
    * Inhalation, respiratory
    */
-  Inhalationrespiratory: "ORINHL",
+  ORINHL: "ORINHL",
 
   /**
    * Inhalation, respiratory
    */
-  Inhalationrespiratory: "RESPINHL",
+  RESPINHL: "RESPINHL",
 
   /**
    * Inhalation, intermittent positive pressure breathing (ippb)
    */
-  Inhalationintermittentpositivepressurebreathingippb: "IPPB",
+  IPPB: "IPPB",
 
   /**
    * Inhalation, nasal
    */
-  Inhalationnasal: "NASINHL",
+  NASINHL: "NASINHL",
 
   /**
    * Inhalation, nasal cannula
    */
-  Inhalationnasalcannula: "NASINHLC",
+  NASINHLC: "NASINHLC",
 
   /**
    * Inhalation, nasal cannula
    */
-  Inhalationnasalcannula: "NP",
+  NP: "NP",
 
   /**
    * Inhalation, nebulization
    */
-  Inhalationnebulization: "NEB",
+  NEB: "NEB",
 
   /**
    * Inhalation, nebulization, nasal
    */
-  Inhalationnebulizationnasal: "NASNEB",
+  NASNEB: "NASNEB",
 
   /**
    * Inhalation, nebulization, oral
    */
-  Inhalationnebulizationoral: "ORNEB",
+  ORNEB: "ORNEB",
 
   /**
    * Inhalation, tracheostomy
    */
-  Inhalationtracheostomy: "TRACH",
+  TRACH: "TRACH",
 
   /**
    * Inhalation, ventilator
    */
-  Inhalationventilator: "VENT",
+  VENT: "VENT",
 
   /**
    * Inhalation, ventimask
    */
-  Inhalationventimask: "VENTMASK",
+  VENTMASK: "VENTMASK",
 } as const;
 
 /**

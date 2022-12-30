@@ -6,32 +6,32 @@ export const RaceCanadianLatinIndianCode = {
   /**
    * Canadian and Latin American Indian
    */
-  CanadianandLatinAmericanIndian: "1068-6",
+  "1068-6": "1068-6",
 
   /**
    * Canadian Indian
    */
-  CanadianIndian: "1069-4",
+  "1069-4": "1069-4",
 
   /**
    * Central American Indian
    */
-  CentralAmericanIndian: "1070-2",
+  "1070-2": "1070-2",
 
   /**
    * French American Indian
    */
-  FrenchAmericanIndian: "1071-0",
+  "1071-0": "1071-0",
 
   /**
    * Mexican American Indian
    */
-  MexicanAmericanIndian: "1072-8",
+  "1072-8": "1072-8",
 
   /**
    * South American Indian
    */
-  SouthAmericanIndian: "1073-6",
+  "1073-6": "1073-6",
 } as const;
 
 /**

@@ -6,97 +6,97 @@ export const ParticipationModeCode = {
   /**
    * physical presence
    */
-  physicalpresence: "PHYSICAL",
+  PHYSICAL: "PHYSICAL",
 
   /**
    * remote presence
    */
-  remotepresence: "REMOTE",
+  REMOTE: "REMOTE",
 
   /**
    * verbal
    */
-  verbal: "VERBAL",
+  VERBAL: "VERBAL",
 
   /**
    * dictated
    */
-  dictated: "DICTATE",
+  DICTATE: "DICTATE",
 
   /**
    * face-to-face
    */
-  facetoface: "FACE",
+  FACE: "FACE",
 
   /**
    * telephone
    */
-  telephone: "PHONE",
+  PHONE: "PHONE",
 
   /**
    * videoconferencing
    */
-  videoconferencing: "VIDEOCONF",
+  VIDEOCONF: "VIDEOCONF",
 
   /**
    * written
    */
-  written: "WRITTEN",
+  WRITTEN: "WRITTEN",
 
   /**
    * telefax
    */
-  telefax: "FAXWRIT",
+  FAXWRIT: "FAXWRIT",
 
   /**
    * handwritten
    */
-  handwritten: "HANDWRIT",
+  HANDWRIT: "HANDWRIT",
 
   /**
    * mail
    */
-  mail: "MAILWRIT",
+  MAILWRIT: "MAILWRIT",
 
   /**
    * online written
    */
-  onlinewritten: "ONLINEWRIT",
+  ONLINEWRIT: "ONLINEWRIT",
 
   /**
    * email
    */
-  email: "EMAILWRIT",
+  EMAILWRIT: "EMAILWRIT",
 
   /**
    * typewritten
    */
-  typewritten: "TYPEWRIT",
+  TYPEWRIT: "TYPEWRIT",
 
   /**
    * messaging
    */
-  messaging: "MSGWRIT",
+  MSGWRIT: "MSGWRIT",
 
   /**
    * SMS message
    */
-  SMSmessage: "SMSWRIT",
+  SMSWRIT: "SMSWRIT",
 
   /**
    * MMS message
    */
-  MMSmessage: "MMSWRIT",
+  MMSWRIT: "MMSWRIT",
 
   /**
    * messaging app
    */
-  messagingapp: "APPWRIT",
+  APPWRIT: "APPWRIT",
 
   /**
    * electronic data
    */
-  electronicdata: "ELECTRONIC",
+  ELECTRONIC: "ELECTRONIC",
 } as const;
 
 /**

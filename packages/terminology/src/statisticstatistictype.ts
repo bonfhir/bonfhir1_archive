@@ -6,112 +6,112 @@ export const StatisticStatisticTypeCode = {
   /**
    * Absolute Median Difference
    */
-  AbsoluteMedianDifference: "absolute-MedianDiff",
+  "absolute-MedianDiff": "absolute-MedianDiff",
 
   /**
    * Count
    */
-  Count: "C25463",
+  C25463: "C25463",
 
   /**
    * Covariance
    */
-  Covariance: "0000301",
+  "0000301": "0000301",
 
   /**
    * Predicted Risk
    */
-  PredictedRisk: "predictedRisk",
+  predictedRisk: "predictedRisk",
 
   /**
    * Descriptive
    */
-  Descriptive: "descriptive",
+  descriptive: "descriptive",
 
   /**
    * Hazard Ratio
    */
-  HazardRatio: "C93150",
+  C93150: "C93150",
 
   /**
    * Incidence
    */
-  Incidence: "C16726",
+  C16726: "C16726",
 
   /**
    * Incidence Rate Ratio
    */
-  IncidenceRateRatio: "rate-ratio",
+  "rate-ratio": "rate-ratio",
 
   /**
    * Maximum
    */
-  Maximum: "C25564",
+  C25564: "C25564",
 
   /**
    * Mean
    */
-  Mean: "C53319",
+  C53319: "C53319",
 
   /**
    * Mean Difference
    */
-  MeanDifference: "0000457",
+  "0000457": "0000457",
 
   /**
    * Median
    */
-  Median: "C28007",
+  C28007: "C28007",
 
   /**
    * Minimum
    */
-  Minimum: "C25570",
+  C25570: "C25570",
 
   /**
    * Odds Ratio
    */
-  OddsRatio: "C16932",
+  C16932: "C16932",
 
   /**
    * Pearson Correlation Coefficient
    */
-  PearsonCorrelationCoefficient: "C65172",
+  C65172: "C65172",
 
   /**
    * Prevalence
    */
-  Prevalence: "C17010",
+  C17010: "C17010",
 
   /**
    * Proportion
    */
-  Proportion: "C44256",
+  C44256: "C44256",
 
   /**
    * Regression Coefficient
    */
-  RegressionCoefficient: "0000565",
+  "0000565": "0000565",
 
   /**
    * Relative Risk
    */
-  RelativeRisk: "C93152",
+  C93152: "C93152",
 
   /**
    * Risk Difference
    */
-  RiskDifference: "0000424",
+  "0000424": "0000424",
 
   /**
    * Spearman Rank-Order Correlation
    */
-  SpearmanRankOrderCorrelation: "C65171",
+  C65171: "C65171",
 
   /**
    * Standardized Mean Difference
    */
-  StandardizedMeanDifference: "0000100",
+  "0000100": "0000100",
 } as const;
 
 /**

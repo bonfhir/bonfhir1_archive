@@ -6,12 +6,12 @@ export const OregonAthapaskanCode = {
   /**
    * Tolowa
    */
-  Tolowa: "x-TOL",
+  "x-TOL": "x-TOL",
 
   /**
    * Tututni
    */
-  Tututni: "x-TUU",
+  "x-TUU": "x-TUU",
 } as const;
 
 /**

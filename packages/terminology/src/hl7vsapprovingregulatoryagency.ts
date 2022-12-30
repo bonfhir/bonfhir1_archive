@@ -6,12 +6,12 @@ export const Hl7VSApprovingRegulatoryAgencyCode = {
   /**
    * Food and Drug Administration
    */
-  FoodandDrugAdministration: "FDA",
+  FDA: "FDA",
 
   /**
    * American Medical Association
    */
-  AmericanMedicalAssociation: "AMA",
+  AMA: "AMA",
 } as const;
 
 /**

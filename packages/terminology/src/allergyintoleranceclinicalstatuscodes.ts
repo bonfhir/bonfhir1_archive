@@ -6,17 +6,17 @@ export const AllergyIntoleranceClinicalStatusCodesCode = {
   /**
    * Active
    */
-  Active: "active",
+  active: "active",
 
   /**
    * Inactive
    */
-  Inactive: "inactive",
+  inactive: "inactive",
 
   /**
    * Resolved
    */
-  Resolved: "resolved",
+  resolved: "resolved",
 } as const;
 
 /**

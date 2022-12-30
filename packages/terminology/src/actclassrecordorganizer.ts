@@ -6,72 +6,72 @@ export const ActClassRecordOrganizerCode = {
   /**
    * composition
    */
-  composition: "COMPOSITION",
+  COMPOSITION: "COMPOSITION",
 
   /**
    * document
    */
-  document: "DOC",
+  DOC: "DOC",
 
   /**
    * clinical document
    */
-  clinicaldocument: "DOCCLIN",
+  DOCCLIN: "DOCCLIN",
 
   /**
    * CDA Level One clinical document
    */
-  CDALevelOneclinicaldocument: "CDALVLONE",
+  CDALVLONE: "CDALVLONE",
 
   /**
    * record container
    */
-  recordcontainer: "CONTAINER",
+  CONTAINER: "CONTAINER",
 
   /**
    * category
    */
-  category: "CATEGORY",
+  CATEGORY: "CATEGORY",
 
   /**
    * document body
    */
-  documentbody: "DOCBODY",
+  DOCBODY: "DOCBODY",
 
   /**
    * document section
    */
-  documentsection: "DOCSECT",
+  DOCSECT: "DOCSECT",
 
   /**
    * topic
    */
-  topic: "TOPIC",
+  TOPIC: "TOPIC",
 
   /**
    * extract
    */
-  extract: "EXTRACT",
+  EXTRACT: "EXTRACT",
 
   /**
    * electronic health record
    */
-  electronichealthrecord: "EHR",
+  EHR: "EHR",
 
   /**
    * folder
    */
-  folder: "FOLDER",
+  FOLDER: "FOLDER",
 
   /**
    * grouper
    */
-  grouper: "GROUPER",
+  GROUPER: "GROUPER",
 
   /**
    * Cluster
    */
-  Cluster: "CLUSTER",
+  CLUSTER: "CLUSTER",
 } as const;
 
 /**

@@ -6,12 +6,12 @@ export const ActClassSupplyCode = {
   /**
    * supply
    */
-  supply: "SPLY",
+  SPLY: "SPLY",
 
   /**
    * diet
    */
-  diet: "DIET",
+  DIET: "DIET",
 } as const;
 
 /**

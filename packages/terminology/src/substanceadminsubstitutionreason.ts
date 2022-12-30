@@ -6,22 +6,22 @@ export const SubstanceAdminSubstitutionReasonCode = {
   /**
    * continuing therapy
    */
-  continuingtherapy: "CT",
+  CT: "CT",
 
   /**
    * formulary policy
    */
-  formularypolicy: "FP",
+  FP: "FP",
 
   /**
    * out of stock
    */
-  outofstock: "OS",
+  OS: "OS",
 
   /**
    * regulatory requirement
    */
-  regulatoryrequirement: "RR",
+  RR: "RR",
 } as const;
 
 /**

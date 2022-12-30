@@ -6,12 +6,12 @@ export const XParticipationAuthorPerformerCode = {
   /**
    * author (originator)
    */
-  authororiginator: "AUT",
+  AUT: "AUT",
 
   /**
    * performer
    */
-  performer: "PRF",
+  PRF: "PRF",
 } as const;
 
 /**

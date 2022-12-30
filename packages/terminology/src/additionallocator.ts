@@ -6,7 +6,7 @@ export const AdditionalLocatorCode = {
   /**
    * additional locator
    */
-  additionallocator: "ADL",
+  ADL: "ADL",
 } as const;
 
 /**

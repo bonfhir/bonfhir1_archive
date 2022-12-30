@@ -6,12 +6,12 @@ export const ActAdjudicationResultActionCodeCode = {
   /**
    * Display
    */
-  Display: "DISPLAY",
+  DISPLAY: "DISPLAY",
 
   /**
    * Print on Form
    */
-  PrintonForm: "FORM",
+  FORM: "FORM",
 } as const;
 
 /**

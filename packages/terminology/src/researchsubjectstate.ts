@@ -6,67 +6,67 @@ export const ResearchSubjectStateCode = {
   /**
    * Candidate
    */
-  Candidate: "candidate",
+  candidate: "candidate",
 
   /**
    * Eligible
    */
-  Eligible: "eligible",
+  eligible: "eligible",
 
   /**
    * Follow-up
    */
-  Followup: "follow-up",
+  "follow-up": "follow-up",
 
   /**
    * Ineligible
    */
-  Ineligible: "ineligible",
+  ineligible: "ineligible",
 
   /**
    * Not Registered
    */
-  NotRegistered: "not-registered",
+  "not-registered": "not-registered",
 
   /**
    * Off-study
    */
-  Offstudy: "off-study",
+  "off-study": "off-study",
 
   /**
    * On-study
    */
-  Onstudy: "on-study",
+  "on-study": "on-study",
 
   /**
    * On-study-intervention
    */
-  Onstudyintervention: "on-study-intervention",
+  "on-study-intervention": "on-study-intervention",
 
   /**
    * On-study-observation
    */
-  Onstudyobservation: "on-study-observation",
+  "on-study-observation": "on-study-observation",
 
   /**
    * Pending on-study
    */
-  Pendingonstudy: "pending-on-study",
+  "pending-on-study": "pending-on-study",
 
   /**
    * Potential Candidate
    */
-  PotentialCandidate: "potential-candidate",
+  "potential-candidate": "potential-candidate",
 
   /**
    * Screening
    */
-  Screening: "screening",
+  screening: "screening",
 
   /**
    * Withdrawn
    */
-  Withdrawn: "withdrawn",
+  withdrawn: "withdrawn",
 } as const;
 
 /**

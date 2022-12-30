@@ -6,67 +6,67 @@ export const Hl7VSReasonForStudyCode = {
   /**
    * Bank residual specimen
    */
-  Bankresidualspecimen: "BS",
+  BS: "BS",
 
   /**
    * Confirm results value
    */
-  Confirmresultsvalue: "CR",
+  CR: "CR",
 
   /**
    * Store residual specimen pending follow up
    */
-  Storeresidualspecimenpendingfollowup: "FP",
+  FP: "FP",
 
   /**
    * Interpret results
    */
-  Interpretresults: "IN",
+  IN: "IN",
 
   /**
    * Review clinically inconsistent results
    */
-  Reviewclinicallyinconsistentresults: "IR",
+  IR: "IR",
 
   /**
    * Incorrect test performed
    */
-  Incorrecttestperformed: "IT",
+  IT: "IT",
 
   /**
    * Test ordering problem
    */
-  Testorderingproblem: "OP",
+  OP: "OP",
 
   /**
    * Patient identification problem
    */
-  Patientidentificationproblem: "PI",
+  PI: "PI",
 
   /**
    * Suspected interference
    */
-  Suspectedinterference: "SI",
+  SI: "SI",
 
   /**
    * Sampling problem
    */
-  Samplingproblem: "SP",
+  SP: "SP",
 
   /**
    * Specimen transport problem
    */
-  Specimentransportproblem: "TP",
+  TP: "TP",
 
   /**
    * Turnaround time problem
    */
-  Turnaroundtimeproblem: "TT",
+  TT: "TT",
 
   /**
    * Incorrect results
    */
-  Incorrectresults: "XR",
+  XR: "XR",
 } as const;
 
 /**

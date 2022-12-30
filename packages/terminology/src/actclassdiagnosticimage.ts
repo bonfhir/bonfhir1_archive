@@ -6,7 +6,7 @@ export const ActClassDiagnosticImageCode = {
   /**
    * diagnostic image
    */
-  diagnosticimage: "DGIMG",
+  DGIMG: "DGIMG",
 } as const;
 
 /**

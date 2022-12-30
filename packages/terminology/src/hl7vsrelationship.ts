@@ -6,162 +6,162 @@ export const Hl7VSRelationshipCode = {
   /**
    * Self
    */
-  Self: "SEL",
+  SEL: "SEL",
 
   /**
    * Spouse
    */
-  Spouse: "SPO",
+  SPO: "SPO",
 
   /**
    * Life partner
    */
-  Lifepartner: "DOM",
+  DOM: "DOM",
 
   /**
    * Child
    */
-  Child: "CHD",
+  CHD: "CHD",
 
   /**
    * Grandchild
    */
-  Grandchild: "GCH",
+  GCH: "GCH",
 
   /**
    * Natural child
    */
-  Naturalchild: "NCH",
+  NCH: "NCH",
 
   /**
    * Stepchild
    */
-  Stepchild: "SCH",
+  SCH: "SCH",
 
   /**
    * Foster child
    */
-  Fosterchild: "FCH",
+  FCH: "FCH",
 
   /**
    * Handicapped dependent
    */
-  Handicappeddependent: "DEP",
+  DEP: "DEP",
 
   /**
    * Ward of court
    */
-  Wardofcourt: "WRD",
+  WRD: "WRD",
 
   /**
    * Parent
    */
-  Parent: "PAR",
+  PAR: "PAR",
 
   /**
    * Mother
    */
-  Mother: "MTH",
+  MTH: "MTH",
 
   /**
    * Father
    */
-  Father: "FTH",
+  FTH: "FTH",
 
   /**
    * Care giver
    */
-  Caregiver: "CGV",
+  CGV: "CGV",
 
   /**
    * Guardian
    */
-  Guardian: "GRD",
+  GRD: "GRD",
 
   /**
    * Grandparent
    */
-  Grandparent: "GRP",
+  GRP: "GRP",
 
   /**
    * Extended family
    */
-  Extendedfamily: "EXF",
+  EXF: "EXF",
 
   /**
    * Sibling
    */
-  Sibling: "SIB",
+  SIB: "SIB",
 
   /**
    * Brother
    */
-  Brother: "BRO",
+  BRO: "BRO",
 
   /**
    * Sister
    */
-  Sister: "SIS",
+  SIS: "SIS",
 
   /**
    * Friend
    */
-  Friend: "FND",
+  FND: "FND",
 
   /**
    * Other adult
    */
-  Otheradult: "OAD",
+  OAD: "OAD",
 
   /**
    * Employee
    */
-  Employee: "EME",
+  EME: "EME",
 
   /**
    * Employer
    */
-  Employer: "EMR",
+  EMR: "EMR",
 
   /**
    * Associate
    */
-  Associate: "ASC",
+  ASC: "ASC",
 
   /**
    * Emergency contact
    */
-  Emergencycontact: "EMC",
+  EMC: "EMC",
 
   /**
    * Owner
    */
-  Owner: "OWN",
+  OWN: "OWN",
 
   /**
    * Trainer
    */
-  Trainer: "TRA",
+  TRA: "TRA",
 
   /**
    * Manager
    */
-  Manager: "MGR",
+  MGR: "MGR",
 
   /**
    * None
    */
-  None: "NON",
+  NON: "NON",
 
   /**
    * Unknown
    */
-  Unknown: "UNK",
+  UNK: "UNK",
 
   /**
    * Other
    */
-  Other: "OTH",
+  OTH: "OTH",
 } as const;
 
 /**

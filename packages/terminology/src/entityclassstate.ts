@@ -6,12 +6,12 @@ export const EntityClassStateCode = {
   /**
    * state
    */
-  state: "STATE",
+  STATE: "STATE",
 
   /**
    * Nation
    */
-  Nation: "NAT",
+  NAT: "NAT",
 } as const;
 
 /**

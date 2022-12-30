@@ -6,32 +6,32 @@ export const CommunicationNotDoneReasonCode = {
   /**
    * Unknown
    */
-  Unknown: "unknown",
+  unknown: "unknown",
 
   /**
    * System Error
    */
-  SystemError: "system-error",
+  "system-error": "system-error",
 
   /**
    * Invalid Phone Number
    */
-  InvalidPhoneNumber: "invalid-phone-number",
+  "invalid-phone-number": "invalid-phone-number",
 
   /**
    * Recipient Unavailable
    */
-  RecipientUnavailable: "recipient-unavailable",
+  "recipient-unavailable": "recipient-unavailable",
 
   /**
    * Family Objection
    */
-  FamilyObjection: "family-objection",
+  "family-objection": "family-objection",
 
   /**
    * Patient Objection
    */
-  PatientObjection: "patient-objection",
+  "patient-objection": "patient-objection",
 } as const;
 
 /**

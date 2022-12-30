@@ -6,7 +6,7 @@ export const EntityClassCountryCode = {
   /**
    * country
    */
-  country: "COUNTRY",
+  COUNTRY: "COUNTRY",
 } as const;
 
 /**

@@ -6,42 +6,42 @@ export const Hl7VSCalendarAlignmentCode = {
   /**
    * month of the year
    */
-  monthoftheyear: "MY",
+  MY: "MY",
 
   /**
    * week of the year
    */
-  weekoftheyear: "WY",
+  WY: "WY",
 
   /**
    * day of the month
    */
-  dayofthemonth: "DM",
+  DM: "DM",
 
   /**
    * day of the year
    */
-  dayoftheyear: "DY",
+  DY: "DY",
 
   /**
    * day of the week (begins with Monday)
    */
-  dayoftheweekbeginswithMonday: "DW",
+  DW: "DW",
 
   /**
    * hour of the day
    */
-  houroftheday: "HD",
+  HD: "HD",
 
   /**
    * minute of the hour
    */
-  minuteofthehour: "NH",
+  NH: "NH",
 
   /**
    * second of the minute
    */
-  secondoftheminute: "SN",
+  SN: "SN",
 } as const;
 
 /**

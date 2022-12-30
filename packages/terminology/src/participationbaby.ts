@@ -6,7 +6,7 @@ export const ParticipationBabyCode = {
   /**
    * baby
    */
-  baby: "BBY",
+  BBY: "BBY",
 } as const;
 
 /**

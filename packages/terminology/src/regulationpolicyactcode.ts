@@ -12,12 +12,12 @@ export const RegulationPolicyActCodeCode = {
   /**
    * non prescription medicine
    */
-  nonprescriptionmedicine: "OTC",
+  OTC: "OTC",
 
   /**
    * prescription only medicine
    */
-  prescriptiononlymedicine: "RX",
+  RX: "RX",
 } as const;
 
 /**

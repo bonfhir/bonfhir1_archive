@@ -6,77 +6,77 @@ export const ActMedicalServiceCodeCode = {
   /**
    * Alternative Level of Care
    */
-  AlternativeLevelofCare: "ALC",
+  ALC: "ALC",
 
   /**
    * Cardiology
    */
-  Cardiology: "CARD",
+  CARD: "CARD",
 
   /**
    * Chronic
    */
-  Chronic: "CHR",
+  CHR: "CHR",
 
   /**
    * Dental
    */
-  Dental: "DNTL",
+  DNTL: "DNTL",
 
   /**
    * Drug Rehab
    */
-  DrugRehab: "DRGRHB",
+  DRGRHB: "DRGRHB",
 
   /**
    * General
    */
-  General: "GENRL",
+  GENRL: "GENRL",
 
   /**
    * Medical
    */
-  Medical: "MED",
+  MED: "MED",
 
   /**
    * Obstetrics
    */
-  Obstetrics: "OBS",
+  OBS: "OBS",
 
   /**
    * Oncology
    */
-  Oncology: "ONC",
+  ONC: "ONC",
 
   /**
    * Palliative
    */
-  Palliative: "PALL",
+  PALL: "PALL",
 
   /**
    * Pediatrics
    */
-  Pediatrics: "PED",
+  PED: "PED",
 
   /**
    * Pharmaceutical
    */
-  Pharmaceutical: "PHAR",
+  PHAR: "PHAR",
 
   /**
    * Physical Rehab
    */
-  PhysicalRehab: "PHYRHB",
+  PHYRHB: "PHYRHB",
 
   /**
    * Psychiatric
    */
-  Psychiatric: "PSYCH",
+  PSYCH: "PSYCH",
 
   /**
    * Surgical
    */
-  Surgical: "SURG",
+  SURG: "SURG",
 } as const;
 
 /**

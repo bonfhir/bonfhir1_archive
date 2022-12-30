@@ -6,7 +6,7 @@ export const AleutCode = {
   /**
    * Aleut
    */
-  Aleut: "x-ALW",
+  "x-ALW": "x-ALW",
 } as const;
 
 /**

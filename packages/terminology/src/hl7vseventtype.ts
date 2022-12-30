@@ -6,12 +6,12 @@ export const Hl7VSEventTypeCode = {
   /**
    * Log Event
    */
-  LogEvent: "LOG",
+  LOG: "LOG",
 
   /**
    * Service Event
    */
-  ServiceEvent: "SER",
+  SER: "SER",
 } as const;
 
 /**

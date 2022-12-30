@@ -12,7 +12,7 @@ export const ActMoodRequestCode = {
   /**
    * request
    */
-  request: "RQO",
+  RQO: "RQO",
 } as const;
 
 /**

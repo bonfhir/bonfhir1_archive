@@ -6,27 +6,27 @@ export const ExposureModeCode = {
   /**
    * ExposureMode
    */
-  ExposureMode: "_ExposureMode",
+  _ExposureMode: "_ExposureMode",
 
   /**
    * airborne
    */
-  airborne: "AIRBORNE",
+  AIRBORNE: "AIRBORNE",
 
   /**
    * contact
    */
-  contact: "CONTACT",
+  CONTACT: "CONTACT",
 
   /**
    * foodborne
    */
-  foodborne: "FOODBORNE",
+  FOODBORNE: "FOODBORNE",
 
   /**
    * waterborne
    */
-  waterborne: "WATERBORNE",
+  WATERBORNE: "WATERBORNE",
 } as const;
 
 /**

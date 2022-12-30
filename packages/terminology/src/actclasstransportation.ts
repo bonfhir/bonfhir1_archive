@@ -6,7 +6,7 @@ export const ActClassTransportationCode = {
   /**
    * transportation
    */
-  transportation: "TRNS",
+  TRNS: "TRNS",
 } as const;
 
 /**

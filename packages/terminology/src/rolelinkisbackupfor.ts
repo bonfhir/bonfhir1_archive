@@ -6,7 +6,7 @@ export const RoleLinkIsBackupForCode = {
   /**
    * is backup for
    */
-  isbackupfor: "BACKUP",
+  BACKUP: "BACKUP",
 } as const;
 
 /**

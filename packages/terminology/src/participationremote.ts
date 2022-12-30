@@ -6,7 +6,7 @@ export const ParticipationRemoteCode = {
   /**
    * remote
    */
-  remote: "RML",
+  RML: "RML",
 } as const;
 
 /**

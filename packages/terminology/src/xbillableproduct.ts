@@ -6,72 +6,72 @@ export const XBillableProductCode = {
   /**
    * ACD Solution A
    */
-  ACDSolutionA: "ACDA",
+  ACDA: "ACDA",
 
   /**
    * ACD Solution B
    */
-  ACDSolutionB: "ACDB",
+  ACDB: "ACDB",
 
   /**
    * Acetic Acid
    */
-  AceticAcid: "ACET",
+  ACET: "ACET",
 
   /**
    * Amies transport medium
    */
-  Amiestransportmedium: "AMIES",
+  AMIES: "AMIES",
 
   /**
    * Bacterial Transport medium
    */
-  BacterialTransportmedium: "BACTM",
+  BACTM: "BACTM",
 
   /**
    * Buffered 10% formalin
    */
-  Buffered10formalin: "BF10",
+  BF10: "BF10",
 
   /**
    * Boric Acid
    */
-  BoricAcid: "BOR",
+  BOR: "BOR",
 
   /**
    * Bouin's solution
    */
-  Bouinssolution: "BOUIN",
+  BOUIN: "BOUIN",
 
   /**
    * Buffered skim milk
    */
-  Bufferedskimmilk: "BSKM",
+  BSKM: "BSKM",
 
   /**
    * 3.2% Citrate
    */
-  ThirtyTwoCitrate: "C32",
+  C32: "C32",
 
   /**
    * 3.8% Citrate
    */
-  ThirtyEightCitrate: "C38",
+  C38: "C38",
 
   /**
    * Carson's Modified 10% formalin
    */
-  CarsonsModified10formalin: "CARS",
+  CARS: "CARS",
 
   /**
    * Cary Blair Medium
    */
-  CaryBlairMedium: "CARY",
+  CARY: "CARY",
 
   /**
    * Chlamydia transport medium
    */
-  Chlamydiatransportmedium: "CHLTM",
+  CHLTM: "CHLTM",
 
   /**
    * CTAD
@@ -81,87 +81,87 @@ export const XBillableProductCode = {
   /**
    * Potassium/K EDTA 15%
    */
-  PotassiumKEDTA15: "EDTK15",
+  EDTK15: "EDTK15",
 
   /**
    * Potassium/K EDTA 7.5%
    */
-  PotassiumKEDTA75: "EDTK75",
+  EDTK75: "EDTK75",
 
   /**
    * Sodium/Na EDTA
    */
-  SodiumNaEDTA: "EDTN",
+  EDTN: "EDTN",
 
   /**
    * Enteric bacteria transport medium
    */
-  Entericbacteriatransportmedium: "ENT",
+  ENT: "ENT",
 
   /**
    * 10% Formalin
    */
-  TenFormalin: "F10",
+  F10: "F10",
 
   /**
    * Thrombin NIH; soybean trypsin inhibitor
    */
-  ThrombinNIHsoybeantrypsininhibitor: "FDP",
+  FDP: "FDP",
 
   /**
    * Sodium Fluoride, 10mg
    */
-  SodiumFluoride10mg: "FL10",
+  FL10: "FL10",
 
   /**
    * Sodium Fluoride, 100mg
    */
-  SodiumFluoride100mg: "FL100",
+  FL100: "FL100",
 
   /**
    * 6N HCL
    */
-  SixNHCL: "HCL6",
+  HCL6: "HCL6",
 
   /**
    * Ammonium heparin
    */
-  Ammoniumheparin: "HEPA",
+  HEPA: "HEPA",
 
   /**
    * Lithium/Li Heparin
    */
-  LithiumLiHeparin: "HEPL",
+  HEPL: "HEPL",
 
   /**
    * Sodium/Na Heparin
    */
-  SodiumNaHeparin: "HEPN",
+  HEPN: "HEPN",
 
   /**
    * Nitric Acid
    */
-  NitricAcid: "HNO3",
+  HNO3: "HNO3",
 
   /**
    * Jones Kendrick Medium
    */
-  JonesKendrickMedium: "JKM",
+  JKM: "JKM",
 
   /**
    * Karnovsky's fixative
    */
-  Karnovskysfixative: "KARN",
+  KARN: "KARN",
 
   /**
    * Potassium Oxalate
    */
-  PotassiumOxalate: "KOX",
+  KOX: "KOX",
 
   /**
    * Lithium iodoacetate
    */
-  Lithiumiodoacetate: "LIA",
+  LIA: "LIA",
 
   /**
    * M4
@@ -181,367 +181,367 @@ export const XBillableProductCode = {
   /**
    * Michel's transport medium
    */
-  Michelstransportmedium: "MICHTM",
+  MICHTM: "MICHTM",
 
   /**
    * MMD transport medium
    */
-  MMDtransportmedium: "MMDTM",
+  MMDTM: "MMDTM",
 
   /**
    * Sodium Fluoride
    */
-  SodiumFluoride: "NAF",
+  NAF: "NAF",
 
   /**
    * None
    */
-  None: "NONE",
+  NONE: "NONE",
 
   /**
    * Page's Saline
    */
-  PagesSaline: "PAGE",
+  PAGE: "PAGE",
 
   /**
    * Phenol
    */
-  Phenol: "PHENOL",
+  PHENOL: "PHENOL",
 
   /**
    * Polyvinylalcohol
    */
-  Polyvinylalcohol: "PVA",
+  PVA: "PVA",
 
   /**
    * Reagan Lowe Medium
    */
-  ReaganLoweMedium: "RLM",
+  RLM: "RLM",
 
   /**
    * Siliceous earth
    */
-  Siliceousearth: "SILICA",
+  SILICA: "SILICA",
 
   /**
    * Sodium polyanethol sulfonate 0.35% in 0.85% sodium chloride
    */
-  Sodiumpolyanetholsulfonate035in085sodiumchloride: "SPS",
+  SPS: "SPS",
 
   /**
    * Serum Separator Tube
    */
-  SerumSeparatorTube: "SST",
+  SST: "SST",
 
   /**
    * Stuart transport medium
    */
-  Stuarttransportmedium: "STUTM",
+  STUTM: "STUTM",
 
   /**
    * Thrombin
    */
-  Thrombin: "THROM",
+  THROM: "THROM",
 
   /**
    * Thymol
    */
-  Thymol: "THYMOL",
+  THYMOL: "THYMOL",
 
   /**
    * Thyoglycolate broth
    */
-  Thyoglycolatebroth: "THYO",
+  THYO: "THYO",
 
   /**
    * Toluene
    */
-  Toluene: "TOLU",
+  TOLU: "TOLU",
 
   /**
    * Ureaplasma transport medium
    */
-  Ureaplasmatransportmedium: "URETM",
+  URETM: "URETM",
 
   /**
    * Viral Transport medium
    */
-  ViralTransportmedium: "VIRTM",
+  VIRTM: "VIRTM",
 
   /**
    * Buffered Citrate
    */
-  BufferedCitrate: "WEST",
+  WEST: "WEST",
 
   /**
    * Package
    */
-  Package: "PKG",
+  PKG: "PKG",
 
   /**
    * NonRigidContainerEntityType
    */
-  NonRigidContainerEntityType: "_NonRigidContainerEntityType",
+  _NonRigidContainerEntityType: "_NonRigidContainerEntityType",
 
   /**
    * Bag
    */
-  Bag: "BAG",
+  BAG: "BAG",
 
   /**
    * Packet
    */
-  Packet: "PACKT",
+  PACKT: "PACKT",
 
   /**
    * Pouch
    */
-  Pouch: "PCH",
+  PCH: "PCH",
 
   /**
    * Sachet
    */
-  Sachet: "SACH",
+  SACH: "SACH",
 
   /**
    * RigidContainerEntityType
    */
-  RigidContainerEntityType: "_RigidContainerEntityType",
+  _RigidContainerEntityType: "_RigidContainerEntityType",
 
   /**
    * IndividualPackageEntityType
    */
-  IndividualPackageEntityType: "_IndividualPackageEntityType",
+  _IndividualPackageEntityType: "_IndividualPackageEntityType",
 
   /**
    * Ampule
    */
-  Ampule: "AMP",
+  AMP: "AMP",
 
   /**
    * Minim
    */
-  Minim: "MINIM",
+  MINIM: "MINIM",
 
   /**
    * Nebuamp
    */
-  Nebuamp: "NEBAMP",
+  NEBAMP: "NEBAMP",
 
   /**
    * Ovule
    */
-  Ovule: "OVUL",
+  OVUL: "OVUL",
 
   /**
    * MultiUseContainerEntityType
    */
-  MultiUseContainerEntityType: "_MultiUseContainerEntityType",
+  _MultiUseContainerEntityType: "_MultiUseContainerEntityType",
 
   /**
    * Bottle
    */
-  Bottle: "BOT",
+  BOT: "BOT",
 
   /**
    * Amber Bottle
    */
-  AmberBottle: "BOTA",
+  BOTA: "BOTA",
 
   /**
    * Dropper Bottle
    */
-  DropperBottle: "BOTD",
+  BOTD: "BOTD",
 
   /**
    * Glass Bottle
    */
-  GlassBottle: "BOTG",
+  BOTG: "BOTG",
 
   /**
    * Plastic Bottle
    */
-  PlasticBottle: "BOTP",
+  BOTP: "BOTP",
 
   /**
    * Polyethylene Bottle
    */
-  PolyethyleneBottle: "BOTPLY",
+  BOTPLY: "BOTPLY",
 
   /**
    * Box
    */
-  Box: "BOX",
+  BOX: "BOX",
 
   /**
    * Can
    */
-  Can: "CAN",
+  CAN: "CAN",
 
   /**
    * Cartridge
    */
-  Cartridge: "CART",
+  CART: "CART",
 
   /**
    * Canister
    */
-  Canister: "CNSTR",
+  CNSTR: "CNSTR",
 
   /**
    * Jar
    */
-  Jar: "JAR",
+  JAR: "JAR",
 
   /**
    * Jug
    */
-  Jug: "JUG",
+  JUG: "JUG",
 
   /**
    * Tin
    */
-  Tin: "TIN",
+  TIN: "TIN",
 
   /**
    * Tub
    */
-  Tub: "TUB",
+  TUB: "TUB",
 
   /**
    * Tube
    */
-  Tube: "TUBE",
+  TUBE: "TUBE",
 
   /**
    * Vial
    */
-  Vial: "VIAL",
+  VIAL: "VIAL",
 
   /**
    * Blister Pack
    */
-  BlisterPack: "BLSTRPK",
+  BLSTRPK: "BLSTRPK",
 
   /**
    * Card
    */
-  Card: "CARD",
+  CARD: "CARD",
 
   /**
    * Compliance Package
    */
-  CompliancePackage: "COMPPKG",
+  COMPPKG: "COMPPKG",
 
   /**
    * Dial Pack
    */
-  DialPack: "DIALPK",
+  DIALPK: "DIALPK",
 
   /**
    * Disk
    */
-  Disk: "DISK",
+  DISK: "DISK",
 
   /**
    * Dosette
    */
-  Dosette: "DOSET",
+  DOSET: "DOSET",
 
   /**
    * Strip
    */
-  Strip: "STRIP",
+  STRIP: "STRIP",
 
   /**
    * Kit
    */
-  Kit: "KIT",
+  KIT: "KIT",
 
   /**
    * System
    */
-  System: "SYSTM",
+  SYSTM: "SYSTM",
 
   /**
    * AccessMedicalDevice
    */
-  AccessMedicalDevice: "_AccessMedicalDevice",
+  _AccessMedicalDevice: "_AccessMedicalDevice",
 
   /**
    * Line
    */
-  Line: "LINE",
+  LINE: "LINE",
 
   /**
    * Intra-arterial Line
    */
-  IntraarterialLine: "IALINE",
+  IALINE: "IALINE",
 
   /**
    * Intraveneous Line
    */
-  IntraveneousLine: "IVLINE",
+  IVLINE: "IVLINE",
 
   /**
    * AdministrationMedicalDevice
    */
-  AdministrationMedicalDevice: "_AdministrationMedicalDevice",
+  _AdministrationMedicalDevice: "_AdministrationMedicalDevice",
 
   /**
    * InjectionMedicalDevice
    */
-  InjectionMedicalDevice: "_InjectionMedicalDevice",
+  _InjectionMedicalDevice: "_InjectionMedicalDevice",
 
   /**
    * AutoInjector
    */
-  AutoInjector: "AINJ",
+  AINJ: "AINJ",
 
   /**
    * Pen
    */
-  Pen: "PEN",
+  PEN: "PEN",
 
   /**
    * Syringe
    */
-  Syringe: "SYR",
+  SYR: "SYR",
 
   /**
    * Applicator
    */
-  Applicator: "APLCTR",
+  APLCTR: "APLCTR",
 
   /**
    * Inhaler
    */
-  Inhaler: "INH",
+  INH: "INH",
 
   /**
    * Diskus
    */
-  Diskus: "DSKS",
+  DSKS: "DSKS",
 
   /**
    * Diskhaler
    */
-  Diskhaler: "DSKUNH",
+  DSKUNH: "DSKUNH",
 
   /**
    * Turbuhaler
    */
-  Turbuhaler: "TRBINH",
+  TRBINH: "TRBINH",
 
   /**
    * Pump
    */
-  Pump: "PMP",
+  PMP: "PMP",
 
   /**
    * Vaccine
    */
-  Vaccine: "VCCNE",
+  VCCNE: "VCCNE",
 } as const;
 
 /**

@@ -6,7 +6,7 @@ export const ActRelationshipIndependentOfTimeOfCode = {
   /**
    * independent of time of
    */
-  independentoftimeof: "INDEPENDENT",
+  INDEPENDENT: "INDEPENDENT",
 } as const;
 
 /**

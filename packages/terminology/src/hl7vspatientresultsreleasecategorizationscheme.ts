@@ -6,35 +6,32 @@ export const Hl7VSPatientResultsReleaseCategorizationSchemeCode = {
   /**
    * Share To Be Determined -<p>Category to be determined
    */
-  ShareToBeDeterminedpCategorytobedetermined: "STBD",
+  STBD: "STBD",
 
   /**
    * Share Immediately -<p>Share result with patient immediately
    */
-  ShareImmediatelypShareresultwithpatientimmediately: "SIMM",
+  SIMM: "SIMM",
 
   /**
    * Share Within Normal Limits -<p>Share result in reference/therapeutic range with patient immediately<p>Share result out of reference/therapeutic ranges with patient after 1 or more business day as agreed to by the systems in play.
    */
-  ShareWithinNormalLimitspShareresultinreferencetherapeuticrangewithpatientimmediatelypShareresultoutofreferencetherapeuticrangeswithpatientafter1ormorebusinessdayasagreedtobythesystemsinplay:
-    "SWNL",
+  SWNL: "SWNL",
 
   /**
    * Share In1 Day -<p>Share result regardless of reference/therapeutic range after 1 or more business day as agreed to by the systems in play.
    */
-  ShareIn1DaypShareresultregardlessofreferencetherapeuticrangeafter1ormorebusinessdayasagreedtobythesystemsinplay:
-    "SID",
+  SID: "SID",
 
   /**
    * Share in 1 Day Conditionally -<p>Share result in reference ranges/therapeutic with patient after 1 or more business day as agreed to by the systems in play.<p>Withhold result out of reference/therapeutic range until physician release
    */
-  Sharein1DayConditionallypShareresultinreferencerangestherapeuticwithpatientafter1ormorebusinessdayasagreedtobythesystemsinplaypWithholdresultoutofreferencetherapeuticrangeuntilphysicianrelease:
-    "SIDC",
+  SIDC: "SIDC",
 
   /**
    * Share Withhold -<p>Withhold result regardless of reference/therapeutic ranges
    */
-  ShareWithholdpWithholdresultregardlessofreferencetherapeuticranges: "SWTH",
+  SWTH: "SWTH",
 } as const;
 
 /**

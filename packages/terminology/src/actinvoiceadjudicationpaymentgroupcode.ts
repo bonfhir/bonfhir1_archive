@@ -6,67 +6,67 @@ export const ActInvoiceAdjudicationPaymentGroupCodeCode = {
   /**
    * alternate electronic
    */
-  alternateelectronic: "ALEC",
+  ALEC: "ALEC",
 
   /**
    * bonus
    */
-  bonus: "BONUS",
+  BONUS: "BONUS",
 
   /**
    * carry forward adjusment
    */
-  carryforwardadjusment: "CFWD",
+  CFWD: "CFWD",
 
   /**
    * education fees
    */
-  educationfees: "EDU",
+  EDU: "EDU",
 
   /**
    * early payment fee
    */
-  earlypaymentfee: "EPYMT",
+  EPYMT: "EPYMT",
 
   /**
    * garnishee
    */
-  garnishee: "GARN",
+  GARN: "GARN",
 
   /**
    * submitted invoice
    */
-  submittedinvoice: "INVOICE",
+  INVOICE: "INVOICE",
 
   /**
    * paper invoice
    */
-  paperinvoice: "PINV",
+  PINV: "PINV",
 
   /**
    * prior period adjustment
    */
-  priorperiodadjustment: "PPRD",
+  PPRD: "PPRD",
 
   /**
    * professional association deduction
    */
-  professionalassociationdeduction: "PROA",
+  PROA: "PROA",
 
   /**
    * recovery
    */
-  recovery: "RECOV",
+  RECOV: "RECOV",
 
   /**
    * retro adjustment
    */
-  retroadjustment: "RETRO",
+  RETRO: "RETRO",
 
   /**
    * transaction fee
    */
-  transactionfee: "TRAN",
+  TRAN: "TRAN",
 } as const;
 
 /**

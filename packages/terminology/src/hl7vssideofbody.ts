@@ -6,12 +6,12 @@ export const Hl7VSSideOfBodyCode = {
   /**
    * Left
    */
-  Left: "L",
+  L: "L",
 
   /**
    * Right
    */
-  Right: "R",
+  R: "R",
 } as const;
 
 /**

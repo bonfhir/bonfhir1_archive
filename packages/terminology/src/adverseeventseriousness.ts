@@ -6,12 +6,12 @@ export const AdverseEventSeriousnessCode = {
   /**
    * Non-serious
    */
-  Nonserious: "non-serious",
+  "non-serious": "non-serious",
 
   /**
    * Serious
    */
-  Serious: "serious",
+  serious: "serious",
 } as const;
 
 /**

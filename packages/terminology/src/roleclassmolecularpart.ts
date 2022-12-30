@@ -6,12 +6,12 @@ export const RoleClassMolecularPartCode = {
   /**
    * active moiety
    */
-  activemoiety: "ACTM",
+  ACTM: "ACTM",
 
   /**
    * part
    */
-  part: "PART",
+  PART: "PART",
 } as const;
 
 /**

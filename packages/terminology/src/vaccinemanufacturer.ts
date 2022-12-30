@@ -6,205 +6,202 @@ export const VaccineManufacturerCode = {
   /**
    * Abbott Laboratories (includes Ross Products Division)
    */
-  AbbottLaboratoriesincludesRossProductsDivision: "AB",
+  AB: "AB",
 
   /**
    * Adams Laboratories
    */
-  AdamsLaboratories: "AD",
+  AD: "AD",
 
   /**
    * Alpha Therapeutic Corporation
    */
-  AlphaTherapeuticCorporation: "ALP",
+  ALP: "ALP",
 
   /**
    * Armour [Inactive - use CEN]
    */
-  ArmourInactiveuseCEN: "AR",
+  AR: "AR",
 
   /**
    * Aviron
    */
-  Aviron: "AVI",
+  AVI: "AVI",
 
   /**
    * Baxter Healthcare Corporation
    */
-  BaxterHealthcareCorporation: "BA",
+  BA: "BA",
 
   /**
    * Bayer Corporation (includes Miles, Inc. and Cutter Laboratories)
    */
-  BayerCorporationincludesMilesIncandCutterLaboratories: "BAY",
+  BAY: "BAY",
 
   /**
    * Berna Products [Inactive - use BPC]
    */
-  BernaProductsInactiveuseBPC: "BP",
+  BP: "BP",
 
   /**
    * Berna Products Corporation (includes Swiss Serum and Vaccine Institute Berne)
    */
-  BernaProductsCorporationincludesSwissSerumandVaccineInstituteBerne: "BPC",
+  BPC: "BPC",
 
   /**
    * Centeon L.L.C. (includes Armour Pharmaceutical Company)
    */
-  CenteonLLCincludesArmourPharmaceuticalCompany: "CEN",
+  CEN: "CEN",
 
   /**
    * Chiron Corporation
    */
-  ChironCorporation: "CHI",
+  CHI: "CHI",
 
   /**
    * Connaught [Inactive - use PMC]
    */
-  ConnaughtInactiveusePMC: "CON",
+  CON: "CON",
 
   /**
    * Evans Medical Limited (an affiliate of Medeva Pharmaceuticals, Inc.)
    */
-  EvansMedicalLimitedanaffiliateofMedevaPharmaceuticalsInc: "EVN",
+  EVN: "EVN",
 
   /**
    * Greer Laboratories, Inc.
    */
-  GreerLaboratoriesInc: "GRE",
+  GRE: "GRE",
 
   /**
    * Immuno International AG
    */
-  ImmunoInternationalAG: "IAG",
+  IAG: "IAG",
 
   /**
    * Merieux [Inactive - use PMC]
    */
-  MerieuxInactiveusePMC: "IM",
+  IM: "IM",
 
   /**
    * Immuno-U.S., Inc.
    */
-  ImmunoUSInc: "IUS",
+  IUS: "IUS",
 
   /**
    * The Research Foundation for Microbial Diseases of Osaka University (BIKEN)
    */
-  TheResearchFoundationforMicrobialDiseasesofOsakaUniversityBIKEN: "JPN",
+  JPN: "JPN",
 
   /**
    * Korea Green Cross Corporation
    */
-  KoreaGreenCrossCorporation: "KGC",
+  KGC: "KGC",
 
   /**
    * Lederle [Inactive - use WAL]
    */
-  LederleInactiveuseWAL: "LED",
+  LED: "LED",
 
   /**
    * Massachusetts Public Health Biologic Laboratories
    */
-  MassachusettsPublicHealthBiologicLaboratories: "MA",
+  MA: "MA",
 
   /**
    * MedImmune, Inc.
    */
-  MedImmuneInc: "MED",
+  MED: "MED",
 
   /**
    * Miles [Inactive - use BAY]
    */
-  MilesInactiveuseBAY: "MIL",
+  MIL: "MIL",
 
   /**
    * Bioport Corporation (formerly Michigan Biologic Products Institute)
    */
-  BioportCorporationformerlyMichiganBiologicProductsInstitute: "MIP",
+  MIP: "MIP",
 
   /**
    * Merck and Co., Inc.
    */
-  MerckandCoInc: "MSD",
+  MSD: "MSD",
 
   /**
    * NABI (formerly North American Biologicals, Inc.)
    */
-  NABIformerlyNorthAmericanBiologicalsInc: "NAB",
+  NAB: "NAB",
 
   /**
    * North American Vaccine, Inc.
    */
-  NorthAmericanVaccineInc: "NAV",
+  NAV: "NAV",
 
   /**
    * Novartis Pharmaceutical Corporation (includes Ciba-Geigy Limited and Sandoz Limited)
    */
-  NovartisPharmaceuticalCorporationincludesCibaGeigyLimitedandSandozLimited:
-    "NOV",
+  NOV: "NOV",
 
   /**
    * New York Blood Center
    */
-  NewYorkBloodCenter: "NYB",
+  NYB: "NYB",
 
   /**
    * Ortho Diagnostic Systems, Inc.
    */
-  OrthoDiagnosticSystemsInc: "ORT",
+  ORT: "ORT",
 
   /**
    * Organon Teknika Corporation
    */
-  OrganonTeknikaCorporation: "OTC",
+  OTC: "OTC",
 
   /**
    * Parkedale Pharmaceuticals (formerly Parke-Davis)
    */
-  ParkedalePharmaceuticalsformerlyParkeDavis: "PD",
+  PD: "PD",
 
   /**
    * Aventis Pasteur Inc. (formerly Pasteur Merieux Connaught; includes Connaught Laboratories and Pasteur Merieux)
    */
-  AventisPasteurIncformerlyPasteurMerieuxConnaughtincludesConnaughtLaboratoriesandPasteurMerieux:
-    "PMC",
+  PMC: "PMC",
 
   /**
    * Praxis Biologics [Inactive - use WAL]
    */
-  PraxisBiologicsInactiveuseWAL: "PRX",
+  PRX: "PRX",
 
   /**
    * Sclavo, Inc.
    */
-  SclavoInc: "SCL",
+  SCL: "SCL",
 
   /**
    * Swiss Serum and Vaccine Inst. [Inactive - use BPC]
    */
-  SwissSerumandVaccineInstInactiveuseBPC: "SI",
+  SI: "SI",
 
   /**
    * SmithKline Beecham
    */
-  SmithKlineBeecham: "SKB",
+  SKB: "SKB",
 
   /**
    * United States Army Medical Research and Materiel Command
    */
-  UnitedStatesArmyMedicalResearchandMaterielCommand: "USA",
+  USA: "USA",
 
   /**
    * Wyeth-Ayerst [Inactive - use WAL]
    */
-  WyethAyerstInactiveuseWAL: "WA",
+  WA: "WA",
 
   /**
    * Wyeth-Ayerst (includes Wyeth-Lederle Vaccines and Pediatrics, Wyeth Laboratories, Lederle Laboratories, and Praxis Biologics)
    */
-  WyethAyerstincludesWyethLederleVaccinesandPediatricsWyethLaboratoriesLederleLaboratoriesandPraxisBiologics:
-    "WAL",
+  WAL: "WAL",
 } as const;
 
 /**

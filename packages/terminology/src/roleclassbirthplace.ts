@@ -6,7 +6,7 @@ export const RoleClassBirthplaceCode = {
   /**
    * birthplace
    */
-  birthplace: "BIRTHPL",
+  BIRTHPL: "BIRTHPL",
 } as const;
 
 /**

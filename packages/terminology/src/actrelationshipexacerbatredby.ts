@@ -6,7 +6,7 @@ export const ActRelationshipExacerbatredByCode = {
   /**
    * exacerbated by
    */
-  exacerbatedby: "EXACBY",
+  EXACBY: "EXACBY",
 } as const;
 
 /**

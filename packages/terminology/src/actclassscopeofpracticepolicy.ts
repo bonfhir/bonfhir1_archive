@@ -12,7 +12,7 @@ export const ActClassScopeOfPracticePolicyCode = {
   /**
    * scope of practice policy
    */
-  scopeofpracticepolicy: "SCOPOL",
+  SCOPOL: "SCOPOL",
 } as const;
 
 /**

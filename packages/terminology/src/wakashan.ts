@@ -6,12 +6,12 @@ export const WakashanCode = {
   /**
    * Nootkan
    */
-  Nootkan: "_Nootkan",
+  _Nootkan: "_Nootkan",
 
   /**
    * Makah
    */
-  Makah: "x-MYH",
+  "x-MYH": "x-MYH",
 } as const;
 
 /**

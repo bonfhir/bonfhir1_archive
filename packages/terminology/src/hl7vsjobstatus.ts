@@ -6,22 +6,22 @@ export const Hl7VSJobStatusCode = {
   /**
    * Permanent
    */
-  Permanent: "P",
+  P: "P",
 
   /**
    * Temporary
    */
-  Temporary: "T",
+  T: "T",
 
   /**
    * Other
    */
-  Other: "O",
+  O: "O",
 
   /**
    * Unknown
    */
-  Unknown: "U",
+  U: "U",
 } as const;
 
 /**

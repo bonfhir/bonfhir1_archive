@@ -14,12 +14,12 @@ export const ActUncertaintyCode = {
   /**
    * stated with no assertion of uncertainty
    */
-  statedwithnoassertionofuncertainty: "N",
+  N: "N",
 
   /**
    * stated with uncertainty
    */
-  statedwithuncertainty: "U",
+  U: "U",
 } as const;
 
 /**

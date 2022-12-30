@@ -6,22 +6,22 @@ export const ImplantStatusCode = {
   /**
    * Functional
    */
-  Functional: "functional",
+  functional: "functional",
 
   /**
    * Non-Functional
    */
-  NonFunctional: "non-functional",
+  "non-functional": "non-functional",
 
   /**
    * Disabled
    */
-  Disabled: "disabled",
+  disabled: "disabled",
 
   /**
    * Unknown
    */
-  Unknown: "unknown",
+  unknown: "unknown",
 } as const;
 
 /**

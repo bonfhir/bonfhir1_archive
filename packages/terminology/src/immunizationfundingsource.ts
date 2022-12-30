@@ -6,12 +6,12 @@ export const ImmunizationFundingSourceCode = {
   /**
    * Private
    */
-  Private: "private",
+  private: "private",
 
   /**
    * Public
    */
-  Public: "public",
+  public: "public",
 } as const;
 
 /**

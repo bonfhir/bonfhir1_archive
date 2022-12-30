@@ -6,52 +6,52 @@ export const TherapyAppropriateManagementCodeCode = {
   /**
    * Therapy Appropriate
    */
-  TherapyAppropriate: "1",
+  "1": "1",
 
   /**
    * Consulted Supplier
    */
-  ConsultedSupplier: "19",
+  "19": "19",
 
   /**
    * Assessed Patient
    */
-  AssessedPatient: "2",
+  "2": "2",
 
   /**
    * appropriate indication or diagnosis
    */
-  appropriateindicationordiagnosis: "22",
+  "22": "22",
 
   /**
    * prior therapy documented
    */
-  priortherapydocumented: "23",
+  "23": "23",
 
   /**
    * Patient Explanation
    */
-  PatientExplanation: "3",
+  "3": "3",
 
   /**
    * Consulted Other Source
    */
-  ConsultedOtherSource: "4",
+  "4": "4",
 
   /**
    * Consulted Prescriber
    */
-  ConsultedPrescriber: "5",
+  "5": "5",
 
   /**
    * Prescriber Declined Change
    */
-  PrescriberDeclinedChange: "6",
+  "6": "6",
 
   /**
    * Interacting Therapy No Longer Active/Planned
    */
-  InteractingTherapyNoLongerActivePlanned: "7",
+  "7": "7",
 } as const;
 
 /**

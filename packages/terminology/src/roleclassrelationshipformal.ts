@@ -6,182 +6,182 @@ export const RoleClassRelationshipFormalCode = {
   /**
    * affiliate
    */
-  affiliate: "AFFL",
+  AFFL: "AFFL",
 
   /**
    * agent
    */
-  agent: "AGNT",
+  AGNT: "AGNT",
 
   /**
    * assigned entity
    */
-  assignedentity: "ASSIGNED",
+  ASSIGNED: "ASSIGNED",
 
   /**
    * commissioning party
    */
-  commissioningparty: "COMPAR",
+  COMPAR: "COMPAR",
 
   /**
    * signing authority or officer
    */
-  signingauthorityorofficer: "SGNOFF",
+  SGNOFF: "SGNOFF",
 
   /**
    * contact
    */
-  contact: "CON",
+  CON: "CON",
 
   /**
    * emergency contact
    */
-  emergencycontact: "ECON",
+  ECON: "ECON",
 
   /**
    * next of kin
    */
-  nextofkin: "NOK",
+  NOK: "NOK",
 
   /**
    * guardian
    */
-  guardian: "GUARD",
+  GUARD: "GUARD",
 
   /**
    * citizen
    */
-  citizen: "CIT",
+  CIT: "CIT",
 
   /**
    * covered party
    */
-  coveredparty: "COVPTY",
+  COVPTY: "COVPTY",
 
   /**
    * claimant
    */
-  claimant: "CLAIM",
+  CLAIM: "CLAIM",
 
   /**
    * named insured
    */
-  namedinsured: "NAMED",
+  NAMED: "NAMED",
 
   /**
    * dependent
    */
-  dependent: "DEPEN",
+  DEPEN: "DEPEN",
 
   /**
    * individual
    */
-  individual: "INDIV",
+  INDIV: "INDIV",
 
   /**
    * subscriber
    */
-  subscriber: "SUBSCR",
+  SUBSCR: "SUBSCR",
 
   /**
    * program eligible
    */
-  programeligible: "PROG",
+  PROG: "PROG",
 
   /**
    * clinical research investigator
    */
-  clinicalresearchinvestigator: "CRINV",
+  CRINV: "CRINV",
 
   /**
    * clinical research sponsor
    */
-  clinicalresearchsponsor: "CRSPNSR",
+  CRSPNSR: "CRSPNSR",
 
   /**
    * employee
    */
-  employee: "EMP",
+  EMP: "EMP",
 
   /**
    * military person
    */
-  militaryperson: "MIL",
+  MIL: "MIL",
 
   /**
    * guarantor
    */
-  guarantor: "GUAR",
+  GUAR: "GUAR",
 
   /**
    * Investigation Subject
    */
-  InvestigationSubject: "INVSBJ",
+  INVSBJ: "INVSBJ",
 
   /**
    * Case Subject
    */
-  CaseSubject: "CASEBJ",
+  CASEBJ: "CASEBJ",
 
   /**
    * research subject
    */
-  researchsubject: "RESBJ",
+  RESBJ: "RESBJ",
 
   /**
    * licensed entity
    */
-  licensedentity: "LIC",
+  LIC: "LIC",
 
   /**
    * notary public
    */
-  notarypublic: "NOT",
+  NOT: "NOT",
 
   /**
    * healthcare provider
    */
-  healthcareprovider: "PROV",
+  PROV: "PROV",
 
   /**
    * patient
    */
-  patient: "PAT",
+  PAT: "PAT",
 
   /**
    * payee
    */
-  payee: "PAYEE",
+  PAYEE: "PAYEE",
 
   /**
    * invoice payor
    */
-  invoicepayor: "PAYOR",
+  PAYOR: "PAYOR",
 
   /**
    * policy holder
    */
-  policyholder: "POLHOLD",
+  POLHOLD: "POLHOLD",
 
   /**
    * qualified entity
    */
-  qualifiedentity: "QUAL",
+  QUAL: "QUAL",
 
   /**
    * coverage sponsor
    */
-  coveragesponsor: "SPNSR",
+  SPNSR: "SPNSR",
 
   /**
    * student
    */
-  student: "STD",
+  STD: "STD",
 
   /**
    * underwriter
    */
-  underwriter: "UNDWRT",
+  UNDWRT: "UNDWRT",
 } as const;
 
 /**

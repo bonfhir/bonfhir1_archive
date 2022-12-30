@@ -6,7 +6,7 @@ export const SerranoGabrielinoCode = {
   /**
    * Serrano
    */
-  Serrano: "x-SER",
+  "x-SER": "x-SER",
 } as const;
 
 /**

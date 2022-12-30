@@ -6,7 +6,7 @@ export const GTINCode = {
   /**
    * Global Trade Item Number
    */
-  GlobalTradeItemNumber: "GTIN",
+  GTIN: "GTIN",
 } as const;
 
 /**

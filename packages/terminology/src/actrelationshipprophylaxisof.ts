@@ -6,7 +6,7 @@ export const ActRelationshipProphylaxisOfCode = {
   /**
    * prophylaxis of
    */
-  prophylaxisof: "PRYLX",
+  PRYLX: "PRYLX",
 } as const;
 
 /**

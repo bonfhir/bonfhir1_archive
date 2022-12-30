@@ -6,22 +6,22 @@ export const ObservationLivingDependencyValueCode = {
   /**
    * living dependency
    */
-  livingdependency: "LIVDEP",
+  LIVDEP: "LIVDEP",
 
   /**
    * relative dependent
    */
-  relativedependent: "RELDEP",
+  RELDEP: "RELDEP",
 
   /**
    * spouse dependent
    */
-  spousedependent: "SPSDEP",
+  SPSDEP: "SPSDEP",
 
   /**
    * unrelated person dependent
    */
-  unrelatedpersondependent: "URELDEP",
+  URELDEP: "URELDEP",
 } as const;
 
 /**

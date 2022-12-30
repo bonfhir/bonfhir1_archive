@@ -6,17 +6,17 @@ export const ReasonMedicationGivenCodesCode = {
   /**
    * None
    */
-  None: "a",
+  a: "a",
 
   /**
    * Given as Ordered
    */
-  GivenasOrdered: "b",
+  b: "b",
 
   /**
    * Emergency
    */
-  Emergency: "c",
+  c: "c",
 } as const;
 
 /**

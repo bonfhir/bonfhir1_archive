@@ -6,77 +6,77 @@ export const Hl7VSEmploymentStatusCode = {
   /**
    * Full time employed
    */
-  Fulltimeemployed: "1",
+  "1": "1",
 
   /**
    * Full Time
    */
-  FullTime: "F",
+  F: "F",
 
   /**
    * see chapter 6
    */
-  seechapter6: "...",
+  "...": "...",
 
   /**
    * Part time employed
    */
-  Parttimeemployed: "2",
+  "2": "2",
 
   /**
    * Part Time
    */
-  PartTime: "P",
+  P: "P",
 
   /**
    * Self-employed
    */
-  Selfemployed: "4",
+  "4": "4",
 
   /**
    * Per Diem
    */
-  PerDiem: "D",
+  D: "D",
 
   /**
    * Contract, per diem
    */
-  Contractperdiem: "C",
+  C: "C",
 
   /**
    * Leave of absence (e.g., family leave, sabbatical, etc.)
    */
-  Leaveofabsenceegfamilyleavesabbaticaletc: "L",
+  L: "L",
 
   /**
    * Temporarily unemployed
    */
-  Temporarilyunemployed: "T",
+  T: "T",
 
   /**
    * Unemployed
    */
-  Unemployed: "3",
+  "3": "3",
 
   /**
    * Retired
    */
-  Retired: "5",
+  "5": "5",
 
   /**
    * On active military duty
    */
-  Onactivemilitaryduty: "6",
+  "6": "6",
 
   /**
    * Other
    */
-  Other: "O",
+  O: "O",
 
   /**
    * Unknown
    */
-  Unknown: "9",
+  "9": "9",
 } as const;
 
 /**

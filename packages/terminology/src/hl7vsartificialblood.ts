@@ -6,12 +6,12 @@ export const Hl7VSArtificialBloodCode = {
   /**
    * Stromal free hemoglobin preparations
    */
-  Stromalfreehemoglobinpreparations: "SFHB",
+  SFHB: "SFHB",
 
   /**
    * Fluorocarbons
    */
-  Fluorocarbons: "FLUR",
+  FLUR: "FLUR",
 } as const;
 
 /**

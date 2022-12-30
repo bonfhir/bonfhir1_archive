@@ -6,22 +6,22 @@ export const Hl7VSReferralDispositionCode = {
   /**
    * Send Written Report
    */
-  SendWrittenReport: "WR",
+  WR: "WR",
 
   /**
    * Return Patient After Evaluation
    */
-  ReturnPatientAfterEvaluation: "RP",
+  RP: "RP",
 
   /**
    * Assume Management
    */
-  AssumeManagement: "AM",
+  AM: "AM",
 
   /**
    * Second Opinion
    */
-  SecondOpinion: "SO",
+  SO: "SO",
 } as const;
 
 /**

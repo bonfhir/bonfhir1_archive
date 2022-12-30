@@ -6,12 +6,12 @@ export const ImmunizationProgramEligibilityCode = {
   /**
    * Not Eligible
    */
-  NotEligible: "ineligible",
+  ineligible: "ineligible",
 
   /**
    * Uninsured
    */
-  Uninsured: "uninsured",
+  uninsured: "uninsured",
 } as const;
 
 /**

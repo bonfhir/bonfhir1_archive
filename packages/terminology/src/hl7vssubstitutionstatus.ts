@@ -6,57 +6,57 @@ export const Hl7VSSubstitutionStatusCode = {
   /**
    * No substitute was dispensed.  This is equivalent to the default (null) value.
    */
-  NosubstitutewasdispensedThisisequivalenttothedefaultnullvalue: "N",
+  N: "N",
 
   /**
    * A generic substitution was dispensed.
    */
-  Agenericsubstitutionwasdispensed: "G",
+  G: "G",
 
   /**
    * A therapeutic substitution was dispensed.
    */
-  Atherapeuticsubstitutionwasdispensed: "T",
+  T: "T",
 
   /**
    * No product selection indicated
    */
-  Noproductselectionindicated: "0",
+  "0": "0",
 
   /**
    * Substitution not allowed by prescriber
    */
-  Substitutionnotallowedbyprescriber: "1",
+  "1": "1",
 
   /**
    * Substitution allowed - patient requested product dispensed
    */
-  Substitutionallowedpatientrequestedproductdispensed: "2",
+  "2": "2",
 
   /**
    * Substitution allowed - pharmacist selected product dispensed
    */
-  Substitutionallowedpharmacistselectedproductdispensed: "3",
+  "3": "3",
 
   /**
    * Substitution allowed - generic drug not in stock
    */
-  Substitutionallowedgenericdrugnotinstock: "4",
+  "4": "4",
 
   /**
    * Substitution allowed - brand drug dispensed as a generic
    */
-  Substitutionallowedbranddrugdispensedasageneric: "5",
+  "5": "5",
 
   /**
    * Substitution not allowed - brand drug mandated by law
    */
-  Substitutionnotallowedbranddrugmandatedbylaw: "7",
+  "7": "7",
 
   /**
    * Substitution allowed - generic drug not available in marketplace
    */
-  Substitutionallowedgenericdrugnotavailableinmarketplace: "8",
+  "8": "8",
 } as const;
 
 /**

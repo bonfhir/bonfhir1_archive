@@ -6,27 +6,27 @@ export const XRoleClassCredentialedEntityCode = {
   /**
    * assigned entity
    */
-  assignedentity: "ASSIGNED",
+  ASSIGNED: "ASSIGNED",
 
   /**
    * qualified entity
    */
-  qualifiedentity: "QUAL",
+  QUAL: "QUAL",
 
   /**
    * licensed entity
    */
-  licensedentity: "LIC",
+  LIC: "LIC",
 
   /**
    * notary public
    */
-  notarypublic: "NOT",
+  NOT: "NOT",
 
   /**
    * healthcare provider
    */
-  healthcareprovider: "PROV",
+  PROV: "PROV",
 } as const;
 
 /**

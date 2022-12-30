@@ -6,17 +6,17 @@ export const MedicationUsageAdministrationLocationCode = {
   /**
    * Inpatient
    */
-  Inpatient: "inpatient",
+  inpatient: "inpatient",
 
   /**
    * Outpatient
    */
-  Outpatient: "outpatient",
+  outpatient: "outpatient",
 
   /**
    * Community
    */
-  Community: "community",
+  community: "community",
 } as const;
 
 /**

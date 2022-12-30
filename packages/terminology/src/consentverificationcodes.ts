@@ -6,12 +6,12 @@ export const ConsentVerificationCodesCode = {
   /**
    * FamilyVerified
    */
-  FamilyVerified: "family",
+  family: "family",
 
   /**
    * Validation
    */
-  Validation: "validation",
+  validation: "validation",
 } as const;
 
 /**

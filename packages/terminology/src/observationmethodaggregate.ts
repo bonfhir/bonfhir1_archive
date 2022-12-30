@@ -6,62 +6,62 @@ export const ObservationMethodAggregateCode = {
   /**
    * observation method aggregate
    */
-  observationmethodaggregate: "_ObservationMethodAggregate",
+  _ObservationMethodAggregate: "_ObservationMethodAggregate",
 
   /**
    * average
    */
-  average: "AVERAGE",
+  AVERAGE: "AVERAGE",
 
   /**
    * count
    */
-  count: "COUNT",
+  COUNT: "COUNT",
 
   /**
    * maxima
    */
-  maxima: "MAX",
+  MAX: "MAX",
 
   /**
    * median
    */
-  median: "MEDIAN",
+  MEDIAN: "MEDIAN",
 
   /**
    * minima
    */
-  minima: "MIN",
+  MIN: "MIN",
 
   /**
    * mode
    */
-  mode: "MODE",
+  MODE: "MODE",
 
   /**
    * population standard deviation
    */
-  populationstandarddeviation: "STDEV.P",
+  "STDEV.P": "STDEV.P",
 
   /**
    * sample standard deviation
    */
-  samplestandarddeviation: "STDEV.S",
+  "STDEV.S": "STDEV.S",
 
   /**
    * sum
    */
-  sum: "SUM",
+  SUM: "SUM",
 
   /**
    * population variance
    */
-  populationvariance: "VARIANCE.P",
+  "VARIANCE.P": "VARIANCE.P",
 
   /**
    * sample variance
    */
-  samplevariance: "VARIANCE.S",
+  "VARIANCE.S": "VARIANCE.S",
 } as const;
 
 /**

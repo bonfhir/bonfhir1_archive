@@ -6,32 +6,32 @@ export const Hl7VSPatientConditionCodeCode = {
   /**
    * Satisfactory
    */
-  Satisfactory: "A",
+  A: "A",
 
   /**
    * Critical
    */
-  Critical: "C",
+  C: "C",
 
   /**
    * Poor
    */
-  Poor: "P",
+  P: "P",
 
   /**
    * Stable
    */
-  Stable: "S",
+  S: "S",
 
   /**
    * Other
    */
-  Other: "O",
+  O: "O",
 
   /**
    * Unknown
    */
-  Unknown: "U",
+  U: "U",
 } as const;
 
 /**

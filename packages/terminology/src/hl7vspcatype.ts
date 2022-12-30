@@ -6,17 +6,17 @@ export const Hl7VSPcaTypeCode = {
   /**
    * Continuous
    */
-  Continuous: "C",
+  C: "C",
 
   /**
    * PCA Only
    */
-  PCAOnly: "P",
+  P: "P",
 
   /**
    * PCA + Continuous
    */
-  PCAContinuous: "PC",
+  PC: "PC",
 } as const;
 
 /**

@@ -6,27 +6,27 @@ export const TimingDetectedIssueCodeCode = {
   /**
    * End Too Late Alert
    */
-  EndTooLateAlert: "ENDLATE",
+  ENDLATE: "ENDLATE",
 
   /**
    * Start Too Late Alert
    */
-  StartTooLateAlert: "STRTLATE",
+  STRTLATE: "STRTLATE",
 
   /**
    * timing detected issue
    */
-  timingdetectedissue: "TIME",
+  TIME: "TIME",
 
   /**
    * end too late alert
    */
-  endtoolatealert: "ALRTENDLATE",
+  ALRTENDLATE: "ALRTENDLATE",
 
   /**
    * start too late alert
    */
-  starttoolatealert: "ALRTSTRTLATE",
+  ALRTSTRTLATE: "ALRTSTRTLATE",
 } as const;
 
 /**

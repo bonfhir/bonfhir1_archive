@@ -6,7 +6,7 @@ export const RitwanCode = {
   /**
    * Yurok
    */
-  Yurok: "x-YUR",
+  "x-YUR": "x-YUR",
 } as const;
 
 /**

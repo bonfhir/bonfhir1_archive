@@ -6,7 +6,7 @@ export const RoleClassSigningAuthorityOrOfficerCode = {
   /**
    * signing authority or officer
    */
-  signingauthorityorofficer: "SGNOFF",
+  SGNOFF: "SGNOFF",
 } as const;
 
 /**

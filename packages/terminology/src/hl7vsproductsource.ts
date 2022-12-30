@@ -6,22 +6,22 @@ export const Hl7VSProductSourceCode = {
   /**
    * Actual product involved in incident was evaluated
    */
-  Actualproductinvolvedinincidentwasevaluated: "A",
+  A: "A",
 
   /**
    * A product from the same lot as the actual product involved was evaluated
    */
-  Aproductfromthesamelotastheactualproductinvolvedwasevaluated: "L",
+  L: "L",
 
   /**
    * A product from a reserve sample was evaluated
    */
-  Aproductfromareservesamplewasevaluated: "R",
+  R: "R",
 
   /**
    * A product from a controlled/non-related inventory was evaluated
    */
-  Aproductfromacontrollednonrelatedinventorywasevaluated: "N",
+  N: "N",
 } as const;
 
 /**

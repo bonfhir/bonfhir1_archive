@@ -6,112 +6,112 @@ export const Hl7VSContainerConditionCode = {
   /**
    * No suggested values
    */
-  Nosuggestedvalues: "...",
+  "...": "...",
 
   /**
    * Not Body temperature
    */
-  NotBodytemperature: "XC37",
+  XC37: "XC37",
 
   /**
    * Not Ambient temperature
    */
-  NotAmbienttemperature: "XAMB",
+  XAMB: "XAMB",
 
   /**
    * Not Critical ambient temperature
    */
-  NotCriticalambienttemperature: "XCAMB",
+  XCAMB: "XCAMB",
 
   /**
    * Not Refrigerated temperature
    */
-  NotRefrigeratedtemperature: "XREF",
+  XREF: "XREF",
 
   /**
    * Not Critical refrigerated temperature
    */
-  NotCriticalrefrigeratedtemperature: "XCREF",
+  XCREF: "XCREF",
 
   /**
    * Not Frozen temperature
    */
-  NotFrozentemperature: "XFRZ",
+  XFRZ: "XFRZ",
 
   /**
    * Not Critical frozen temperature
    */
-  NotCriticalfrozentemperature: "XCFRZ",
+  XCFRZ: "XCFRZ",
 
   /**
    * Not Deep frozen
    */
-  NotDeepfrozen: "XDFRZ",
+  XDFRZ: "XDFRZ",
 
   /**
    * Not Ultra frozen
    */
-  NotUltrafrozen: "XUFRZ",
+  XUFRZ: "XUFRZ",
 
   /**
    * Not Liquid nitrogen
    */
-  NotLiquidnitrogen: "XNTR",
+  XNTR: "XNTR",
 
   /**
    * Not Protected from light
    */
-  NotProtectedfromlight: "XPRTL",
+  XPRTL: "XPRTL",
 
   /**
    * Exposed to Air
    */
-  ExposedtoAir: "XCATM",
+  XCATM: "XCATM",
 
   /**
    * Not Dry
    */
-  NotDry: "XDRY",
+  XDRY: "XDRY",
 
   /**
    * Exposed to shock
    */
-  Exposedtoshock: "XPSO",
+  XPSO: "XPSO",
 
   /**
    * Shaken
    */
-  Shaken: "XPSA",
+  XPSA: "XPSA",
 
   /**
    * Not Upright
    */
-  NotUpright: "XUPR",
+  XUPR: "XUPR",
 
   /**
    * Metal Exposed
    */
-  MetalExposed: "XMTLF",
+  XMTLF: "XMTLF",
 
   /**
    * Seal Broken
    */
-  SealBroken: "SB",
+  SB: "SB",
 
   /**
    * Container Cracked
    */
-  ContainerCracked: "CC",
+  CC: "CC",
 
   /**
    * Container Torn
    */
-  ContainerTorn: "CT",
+  CT: "CT",
 
   /**
    * Container Leaking
    */
-  ContainerLeaking: "CL",
+  CL: "CL",
 } as const;
 
 /**

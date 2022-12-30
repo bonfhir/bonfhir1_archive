@@ -6,7 +6,7 @@ export const InterstitialRouteCode = {
   /**
    * Injection, interstitial
    */
-  Injectioninterstitial: "INTERSTITINJ",
+  INTERSTITINJ: "INTERSTITINJ",
 } as const;
 
 /**

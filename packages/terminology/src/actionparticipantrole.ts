@@ -6,3117 +6,3117 @@ export const ActionParticipantRoleCode = {
   /**
    * Doctor
    */
-  Doctor: "doctor",
+  doctor: "doctor",
 
   /**
    * Nurse
    */
-  Nurse: "nurse",
+  nurse: "nurse",
 
   /**
    * Pharmacist
    */
-  Pharmacist: "pharmacist",
+  pharmacist: "pharmacist",
 
   /**
    * Researcher
    */
-  Researcher: "researcher",
+  researcher: "researcher",
 
   /**
    * Teacher/educator
    */
-  Teachereducator: "teacher",
+  teacher: "teacher",
 
   /**
    * ICT professional
    */
-  ICTprofessional: "ict",
+  ict: "ict",
 
   /**
    * Healthcare professional
    */
-  Healthcareprofessional: "223366009",
+  "223366009": "223366009",
 
   /**
    * Specialized surgeon
    */
-  Specializedsurgeon: "1421009",
+  "1421009": "1421009",
 
   /**
    * Radiation therapist
    */
-  Radiationtherapist: "3430008",
+  "3430008": "3430008",
 
   /**
    * Chiropractor
    */
-  Chiropractor: "3842006",
+  "3842006": "3842006",
 
   /**
    * Dental assistant
    */
-  Dentalassistant: "4162009",
+  "4162009": "4162009",
 
   /**
    * Auxiliary nurse
    */
-  Auxiliarynurse: "5275007",
+  "5275007": "5275007",
 
   /**
    * Specialized nurse
    */
-  Specializednurse: "6816002",
+  "6816002": "6816002",
 
   /**
    * Hospital administrator
    */
-  Hospitaladministrator: "6868009",
+  "6868009": "6868009",
 
   /**
    * Plastic surgeon
    */
-  Plasticsurgeon: "8724009",
+  "8724009": "8724009",
 
   /**
    * Neuropathologist
    */
-  Neuropathologist: "11661002",
+  "11661002": "11661002",
 
   /**
    * Nephrologist
    */
-  Nephrologist: "11911009",
+  "11911009": "11911009",
 
   /**
    * Obstetrician
    */
-  Obstetrician: "11935004",
+  "11935004": "11935004",
 
   /**
    * School dental assistant
    */
-  Schooldentalassistant: "13580004",
+  "13580004": "13580004",
 
   /**
    * Medical microbiologist
    */
-  Medicalmicrobiologist: "14698002",
+  "14698002": "14698002",
 
   /**
    * Cardiologist
    */
-  Cardiologist: "17561000",
+  "17561000": "17561000",
 
   /**
    * Dermatologist
    */
-  Dermatologist: "18803008",
+  "18803008": "18803008",
 
   /**
    * Laboratory hematologist
    */
-  Laboratoryhematologist: "18850004",
+  "18850004": "18850004",
 
   /**
    * Gerodontist
    */
-  Gerodontist: "19244007",
+  "19244007": "19244007",
 
   /**
    * Removable prosthodontist
    */
-  Removableprosthodontist: "20145008",
+  "20145008": "20145008",
 
   /**
    * Specialized dentist
    */
-  Specializeddentist: "21365001",
+  "21365001": "21365001",
 
   /**
    * Neuropsychiatrist
    */
-  Neuropsychiatrist: "21450003",
+  "21450003": "21450003",
 
   /**
    * Medical assistant
    */
-  Medicalassistant: "22515006",
+  "22515006": "22515006",
 
   /**
    * Orthopedic surgeon
    */
-  Orthopedicsurgeon: "22731001",
+  "22731001": "22731001",
 
   /**
    * Thoracic surgeon
    */
-  Thoracicsurgeon: "22983004",
+  "22983004": "22983004",
 
   /**
    * Community health physician
    */
-  Communityhealthphysician: "23278007",
+  "23278007": "23278007",
 
   /**
    * Physical medicine specialist
    */
-  Physicalmedicinespecialist: "24430003",
+  "24430003": "24430003",
 
   /**
    * Urologist
    */
-  Urologist: "24590004",
+  "24590004": "24590004",
 
   /**
    * Electroencephalography specialist
    */
-  Electroencephalographyspecialist: "25961008",
+  "25961008": "25961008",
 
   /**
    * Dental hygienist
    */
-  Dentalhygienist: "26042002",
+  "26042002": "26042002",
 
   /**
    * Public health nurse
    */
-  Publichealthnurse: "26369006",
+  "26369006": "26369006",
 
   /**
    * Optometrist
    */
-  Optometrist: "28229004",
+  "28229004": "28229004",
 
   /**
    * Neonatologist
    */
-  Neonatologist: "28411006",
+  "28411006": "28411006",
 
   /**
    * Medical biochemist
    */
-  Medicalbiochemist: "28544002",
+  "28544002": "28544002",
 
   /**
    * Physiotherapist
    */
-  Physiotherapist: "36682004",
+  "36682004": "36682004",
 
   /**
    * Periodontist
    */
-  Periodontist: "37154003",
+  "37154003": "37154003",
 
   /**
    * Orthodontist
    */
-  Orthodontist: "37504001",
+  "37504001": "37504001",
 
   /**
    * Internal medicine specialist
    */
-  Internalmedicinespecialist: "39677007",
+  "39677007": "39677007",
 
   /**
    * Dietitian (general)
    */
-  Dietitiangeneral: "40127002",
+  "40127002": "40127002",
 
   /**
    * Hematologist
    */
-  Hematologist: "40204001",
+  "40204001": "40204001",
 
   /**
    * Interpreter
    */
-  Interpreter: "40570005",
+  "40570005": "40570005",
 
   /**
    * Respiratory disease specialist
    */
-  Respiratorydiseasespecialist: "41672002",
+  "41672002": "41672002",
 
   /**
    * Medical X-ray technician
    */
-  MedicalXraytechnician: "41904004",
+  "41904004": "41904004",
 
   /**
    * Occupational health nurse
    */
-  Occupationalhealthnurse: "43702002",
+  "43702002": "43702002",
 
   /**
    * Pharmaceutical assistant
    */
-  Pharmaceuticalassistant: "44652006",
+  "44652006": "44652006",
 
   /**
    * Rheumatologist
    */
-  Rheumatologist: "45440000",
+  "45440000": "45440000",
 
   /**
    * Neurosurgeon
    */
-  Neurosurgeon: "45544007",
+  "45544007": "45544007",
 
   /**
    * Sanitarian
    */
-  Sanitarian: "45956004",
+  "45956004": "45956004",
 
   /**
    * Pharmacist
    */
-  Pharmacist: "46255001",
+  "46255001": "46255001",
 
   /**
    * Philologist
    */
-  Philologist: "48740002",
+  "48740002": "48740002",
 
   /**
    * Dispensing optician
    */
-  Dispensingoptician: "49203003",
+  "49203003": "49203003",
 
   /**
    * Oral surgeon
    */
-  Oralsurgeon: "49993003",
+  "49993003": "49993003",
 
   /**
    * Endodontist
    */
-  Endodontist: "50149000",
+  "50149000": "50149000",
 
   /**
    * Faith healer
    */
-  Faithhealer: "54503009",
+  "54503009": "54503009",
 
   /**
    * Neurologist
    */
-  Neurologist: "56397003",
+  "56397003": "56397003",
 
   /**
    * Public health physician
    */
-  Publichealthphysician: "56466003",
+  "56466003": "56466003",
 
   /**
    * Medical record administrator
    */
-  Medicalrecordadministrator: "56542007",
+  "56542007": "56542007",
 
   /**
    * Cardiovascular surgeon
    */
-  Cardiovascularsurgeon: "56545009",
+  "56545009": "56545009",
 
   /**
    * Fixed prosthodontist
    */
-  Fixedprosthodontist: "57654006",
+  "57654006": "57654006",
 
   /**
    * General physician
    */
-  Generalphysician: "59058001",
+  "59058001": "59058001",
 
   /**
    * Orthopedic technician
    */
-  Orthopedictechnician: "59169001",
+  "59169001": "59169001",
 
   /**
    * Dental prosthesis maker and repairer
    */
-  Dentalprosthesismakerandrepairer: "59317003",
+  "59317003": "59317003",
 
   /**
    * Psychologist
    */
-  Psychologist: "59944000",
+  "59944000": "59944000",
 
   /**
    * Public health nutritionist
    */
-  Publichealthnutritionist: "60008001",
+  "60008001": "60008001",
 
   /**
    * Medical pathologist
    */
-  Medicalpathologist: "61207006",
+  "61207006": "61207006",
 
   /**
    * Laboratory medicine specialist
    */
-  Laboratorymedicinespecialist: "61246008",
+  "61246008": "61246008",
 
   /**
    * Otorhinolaryngologist
    */
-  Otorhinolaryngologist: "61345009",
+  "61345009": "61345009",
 
   /**
    * Endocrinologist
    */
-  Endocrinologist: "61894003",
+  "61894003": "61894003",
 
   /**
    * Family medicine specialist
    */
-  Familymedicinespecialist: "62247001",
+  "62247001": "62247001",
 
   /**
    * Clinical immunologist
    */
-  Clinicalimmunologist: "63098009",
+  "63098009": "63098009",
 
   /**
    * Oral pathologist
    */
-  Oralpathologist: "66476003",
+  "66476003": "66476003",
 
   /**
    * Radiologist
    */
-  Radiologist: "66862007",
+  "66862007": "66862007",
 
   /**
    * Public health dentist
    */
-  Publichealthdentist: "68867008",
+  "68867008": "68867008",
 
   /**
    * Prosthodontist
    */
-  Prosthodontist: "68950000",
+  "68950000": "68950000",
 
   /**
    * Specialized physician
    */
-  Specializedphysician: "69280009",
+  "69280009": "69280009",
 
   /**
    * Gastroenterologist
    */
-  Gastroenterologist: "71838004",
+  "71838004": "71838004",
 
   /**
    * Nursing aid
    */
-  Nursingaid: "73265009",
+  "73265009": "73265009",
 
   /**
    * Professional midwife
    */
-  Professionalmidwife: "75271001",
+  "75271001": "75271001",
 
   /**
    * Practical aid (pharmacy)
    */
-  Practicalaidpharmacy: "76166008",
+  "76166008": "76166008",
 
   /**
    * Osteopath
    */
-  Osteopath: "76231001",
+  "76231001": "76231001",
 
   /**
    * Infectious disease specialist
    */
-  Infectiousdiseasespecialist: "76899008",
+  "76899008": "76899008",
 
   /**
    * General surgeon
    */
-  Generalsurgeon: "78703002",
+  "78703002": "78703002",
 
   /**
    * Diagnostic radiologist
    */
-  Diagnosticradiologist: "78729002",
+  "78729002": "78729002",
 
   /**
    * Auxiliary midwife
    */
-  Auxiliarymidwife: "79898004",
+  "79898004": "79898004",
 
   /**
    * Translator
    */
-  Translator: "80409005",
+  "80409005": "80409005",
 
   /**
    * Occupational therapist
    */
-  Occupationaltherapist: "80546007",
+  "80546007": "80546007",
 
   /**
    * Psychiatrist
    */
-  Psychiatrist: "80584001",
+  "80584001": "80584001",
 
   /**
    * Nuclear medicine specialist
    */
-  Nuclearmedicinespecialist: "80933006",
+  "80933006": "80933006",
 
   /**
    * Clinical pathologist
    */
-  Clinicalpathologist: "81464008",
+  "81464008": "81464008",
 
   /**
    * Pediatrician
    */
-  Pediatrician: "82296001",
+  "82296001": "82296001",
 
   /**
    * Anatomic pathologist
    */
-  Anatomicpathologist: "83273008",
+  "83273008": "83273008",
 
   /**
    * Gynecologist
    */
-  Gynecologist: "83685006",
+  "83685006": "83685006",
 
   /**
    * General pathologist
    */
-  Generalpathologist: "85733003",
+  "85733003": "85733003",
 
   /**
    * Anesthesiologist
    */
-  Anesthesiologist: "88189002",
+  "88189002": "88189002",
 
   /**
    * Pedodontist
    */
-  Pedodontist: "90201008",
+  "90201008": "90201008",
 
   /**
    * Geriatrics specialist
    */
-  Geriatricsspecialist: "90655003",
+  "90655003": "90655003",
 
   /**
    * Dentist
    */
-  Dentist: "106289002",
+  "106289002": "106289002",
 
   /**
    * Dietician AND/OR public health nutritionist
    */
-  DieticianANDORpublichealthnutritionist: "106291005",
+  "106291005": "106291005",
 
   /**
    * Professional nurse
    */
-  Professionalnurse: "106292003",
+  "106292003": "106292003",
 
   /**
    * Nursing personnel
    */
-  Nursingpersonnel: "106293008",
+  "106293008": "106293008",
 
   /**
    * Midwifery personnel
    */
-  Midwiferypersonnel: "106294002",
+  "106294002": "106294002",
 
   /**
    * Physiotherapist AND/OR occupational therapist
    */
-  PhysiotherapistANDORoccupationaltherapist: "106296000",
+  "106296000": "106296000",
 
   /**
    * Philologist, translator AND/OR interpreter
    */
-  PhilologisttranslatorANDORinterpreter: "106330007",
+  "106330007": "106330007",
 
   /**
    * Medical practitioner
    */
-  Medicalpractitioner: "158965000",
+  "158965000": "158965000",
 
   /**
    * Medical administrator - national
    */
-  Medicaladministratornational: "158966004",
+  "158966004": "158966004",
 
   /**
    * Consultant physician
    */
-  Consultantphysician: "158967008",
+  "158967008": "158967008",
 
   /**
    * Consultant surgeon
    */
-  Consultantsurgeon: "158968003",
+  "158968003": "158968003",
 
   /**
    * Consultant gynecology and obstetrics
    */
-  Consultantgynecologyandobstetrics: "158969006",
+  "158969006": "158969006",
 
   /**
    * Hospital registrar
    */
-  Hospitalregistrar: "158971006",
+  "158971006": "158971006",
 
   /**
    * House officer
    */
-  Houseofficer: "158972004",
+  "158972004": "158972004",
 
   /**
    * Occupational physician
    */
-  Occupationalphysician: "158973009",
+  "158973009": "158973009",
 
   /**
    * Clinical medical officer
    */
-  Clinicalmedicalofficer: "158974003",
+  "158974003": "158974003",
 
   /**
    * Medical practitioner - teaching
    */
-  Medicalpractitionerteaching: "158975002",
+  "158975002": "158975002",
 
   /**
    * Dental administrator
    */
-  Dentaladministrator: "158977005",
+  "158977005": "158977005",
 
   /**
    * Dental consultant
    */
-  Dentalconsultant: "158978000",
+  "158978000": "158978000",
 
   /**
    * Dental general practitioner
    */
-  Dentalgeneralpractitioner: "158979008",
+  "158979008": "158979008",
 
   /**
    * Dental practitioner - teaching
    */
-  Dentalpractitionerteaching: "158980006",
+  "158980006": "158980006",
 
   /**
    * Nurse administrator - national
    */
-  Nurseadministratornational: "158983008",
+  "158983008": "158983008",
 
   /**
    * Nursing officer - region
    */
-  Nursingofficerregion: "158984002",
+  "158984002": "158984002",
 
   /**
    * Nursing officer - district
    */
-  Nursingofficerdistrict: "158985001",
+  "158985001": "158985001",
 
   /**
    * Nursing administrator - professional body
    */
-  Nursingadministratorprofessionalbody: "158986000",
+  "158986000": "158986000",
 
   /**
    * Nursing officer - division
    */
-  Nursingofficerdivision: "158987009",
+  "158987009": "158987009",
 
   /**
    * Nurse education director
    */
-  Nurseeducationdirector: "158988004",
+  "158988004": "158988004",
 
   /**
    * Occupational health nursing officer
    */
-  Occupationalhealthnursingofficer: "158989007",
+  "158989007": "158989007",
 
   /**
    * Nursing officer
    */
-  Nursingofficer: "158990003",
+  "158990003": "158990003",
 
   /**
    * Midwifery sister
    */
-  Midwiferysister: "158992006",
+  "158992006": "158992006",
 
   /**
    * Nursing sister (theatre)
    */
-  Nursingsistertheatre: "158993001",
+  "158993001": "158993001",
 
   /**
    * Staff nurse
    */
-  Staffnurse: "158994007",
+  "158994007": "158994007",
 
   /**
    * Staff midwife
    */
-  Staffmidwife: "158995008",
+  "158995008": "158995008",
 
   /**
    * State enrolled nurse
    */
-  Stateenrollednurse: "158996009",
+  "158996009": "158996009",
 
   /**
    * District nurse
    */
-  Districtnurse: "158997000",
+  "158997000": "158997000",
 
   /**
    * Private nurse
    */
-  Privatenurse: "158998005",
+  "158998005": "158998005",
 
   /**
    * Community midwife
    */
-  Communitymidwife: "158999002",
+  "158999002": "158999002",
 
   /**
    * Clinic nurse
    */
-  Clinicnurse: "159001001",
+  "159001001": "159001001",
 
   /**
    * Practice nurse
    */
-  Practicenurse: "159002008",
+  "159002008": "159002008",
 
   /**
    * School nurse
    */
-  Schoolnurse: "159003003",
+  "159003003": "159003003",
 
   /**
    * Nurse - teaching
    */
-  Nurseteaching: "159004009",
+  "159004009": "159004009",
 
   /**
    * Student nurse
    */
-  Studentnurse: "159005005",
+  "159005005": "159005005",
 
   /**
    * Dental nurse
    */
-  Dentalnurse: "159006006",
+  "159006006": "159006006",
 
   /**
    * Community pediatric nurse
    */
-  Communitypediatricnurse: "159007002",
+  "159007002": "159007002",
 
   /**
    * Hospital pharmacist
    */
-  Hospitalpharmacist: "159010009",
+  "159010009": "159010009",
 
   /**
    * Retail pharmacist
    */
-  Retailpharmacist: "159011008",
+  "159011008": "159011008",
 
   /**
    * Industrial pharmacist
    */
-  Industrialpharmacist: "159012001",
+  "159012001": "159012001",
 
   /**
    * Trainee pharmacist
    */
-  Traineepharmacist: "159014000",
+  "159014000": "159014000",
 
   /**
    * Medical radiographer
    */
-  Medicalradiographer: "159016003",
+  "159016003": "159016003",
 
   /**
    * Diagnostic radiographer
    */
-  Diagnosticradiographer: "159017007",
+  "159017007": "159017007",
 
   /**
    * Therapeutic radiographer
    */
-  Therapeuticradiographer: "159018002",
+  "159018002": "159018002",
 
   /**
    * Trainee radiographer
    */
-  Traineeradiographer: "159019005",
+  "159019005": "159019005",
 
   /**
    * Ophthalmic optician
    */
-  Ophthalmicoptician: "159021000",
+  "159021000": "159021000",
 
   /**
    * Trainee optician
    */
-  Traineeoptician: "159022007",
+  "159022007": "159022007",
 
   /**
    * Remedial gymnast
    */
-  Remedialgymnast: "159025009",
+  "159025009": "159025009",
 
   /**
    * Speech and language therapist
    */
-  Speechandlanguagetherapist: "159026005",
+  "159026005": "159026005",
 
   /**
    * Orthoptist
    */
-  Orthoptist: "159027001",
+  "159027001": "159027001",
 
   /**
    * Trainee remedial therapist
    */
-  Traineeremedialtherapist: "159028006",
+  "159028006": "159028006",
 
   /**
    * Dietician
    */
-  Dietician: "159033005",
+  "159033005": "159033005",
 
   /**
    * Podiatrist
    */
-  Podiatrist: "159034004",
+  "159034004": "159034004",
 
   /**
    * Dental auxiliary
    */
-  Dentalauxiliary: "159035003",
+  "159035003": "159035003",
 
   /**
    * ECG technician
    */
-  ECGtechnician: "159036002",
+  "159036002": "159036002",
 
   /**
    * EEG technician
    */
-  EEGtechnician: "159037006",
+  "159037006": "159037006",
 
   /**
    * Artificial limb fitter
    */
-  Artificiallimbfitter: "159038001",
+  "159038001": "159038001",
 
   /**
    * AT - Audiology technician
    */
-  ATAudiologytechnician: "159039009",
+  "159039009": "159039009",
 
   /**
    * Pharmacy technician
    */
-  Pharmacytechnician: "159040006",
+  "159040006": "159040006",
 
   /**
    * Trainee medical technician
    */
-  Traineemedicaltechnician: "159041005",
+  "159041005": "159041005",
 
   /**
    * Geneticist
    */
-  Geneticist: "159141008",
+  "159141008": "159141008",
 
   /**
    * Surgical corset fitter
    */
-  Surgicalcorsetfitter: "159972006",
+  "159972006": "159972006",
 
   /**
    * Dental technician
    */
-  Dentaltechnician: "160008000",
+  "160008000": "160008000",
 
   /**
    * Clinical assistant
    */
-  Clinicalassistant: "224529009",
+  "224529009": "224529009",
 
   /**
    * Senior registrar
    */
-  Seniorregistrar: "224530004",
+  "224530004": "224530004",
 
   /**
    * Registrar
    */
-  Registrar: "224531000",
+  "224531000": "224531000",
 
   /**
    * Senior house officer
    */
-  Seniorhouseofficer: "224532007",
+  "224532007": "224532007",
 
   /**
    * MO - Medical officer
    */
-  MOMedicalofficer: "224533002",
+  "224533002": "224533002",
 
   /**
    * Health visitors, nurses and midwives
    */
-  Healthvisitorsnursesandmidwives: "224534008",
+  "224534008": "224534008",
 
   /**
    * Registered nurse
    */
-  Registerednurse: "224535009",
+  "224535009": "224535009",
 
   /**
    * Midwifery tutor
    */
-  Midwiferytutor: "224536005",
+  "224536005": "224536005",
 
   /**
    * Accident and Emergency nurse (occupation)
    */
-  AccidentandEmergencynurseoccupation: "224537001",
+  "224537001": "224537001",
 
   /**
    * Triage nurse
    */
-  Triagenurse: "224538006",
+  "224538006": "224538006",
 
   /**
    * Community nurse
    */
-  Communitynurse: "224540001",
+  "224540001": "224540001",
 
   /**
    * Nursing continence advisor
    */
-  Nursingcontinenceadvisor: "224541002",
+  "224541002": "224541002",
 
   /**
    * Coronary care nurse
    */
-  Coronarycarenurse: "224542009",
+  "224542009": "224542009",
 
   /**
    * Diabetic nurse
    */
-  Diabeticnurse: "224543004",
+  "224543004": "224543004",
 
   /**
    * Family planning nurse
    */
-  Familyplanningnurse: "224544005",
+  "224544005": "224544005",
 
   /**
    * Care of the elderly nurse
    */
-  Careoftheelderlynurse: "224545006",
+  "224545006": "224545006",
 
   /**
    * ICN - Infection control nurse
    */
-  ICNInfectioncontrolnurse: "224546007",
+  "224546007": "224546007",
 
   /**
    * Intensive therapy nurse
    */
-  Intensivetherapynurse: "224547003",
+  "224547003": "224547003",
 
   /**
    * Learning disabilities nurse
    */
-  Learningdisabilitiesnurse: "224548008",
+  "224548008": "224548008",
 
   /**
    * Neonatal nurse
    */
-  Neonatalnurse: "224549000",
+  "224549000": "224549000",
 
   /**
    * Neurology nurse
    */
-  Neurologynurse: "224550000",
+  "224550000": "224550000",
 
   /**
    * Industrial nurse
    */
-  Industrialnurse: "224551001",
+  "224551001": "224551001",
 
   /**
    * Oncology nurse
    */
-  Oncologynurse: "224552008",
+  "224552008": "224552008",
 
   /**
    * Marie Curie nurse
    */
-  MarieCurienurse: "224554009",
+  "224554009": "224554009",
 
   /**
    * Pain control nurse
    */
-  Paincontrolnurse: "224555005",
+  "224555005": "224555005",
 
   /**
    * Palliative care nurse
    */
-  Palliativecarenurse: "224556006",
+  "224556006": "224556006",
 
   /**
    * Chemotherapy nurse
    */
-  Chemotherapynurse: "224557002",
+  "224557002": "224557002",
 
   /**
    * Radiotherapy nurse
    */
-  Radiotherapynurse: "224558007",
+  "224558007": "224558007",
 
   /**
    * Recovery nurse
    */
-  Recoverynurse: "224559004",
+  "224559004": "224559004",
 
   /**
    * Stomatherapist
    */
-  Stomatherapist: "224560009",
+  "224560009": "224560009",
 
   /**
    * Pediatric nurse
    */
-  Pediatricnurse: "224562001",
+  "224562001": "224562001",
 
   /**
    * Psychiatric nurse
    */
-  Psychiatricnurse: "224563006",
+  "224563006": "224563006",
 
   /**
    * Community mental health nurse
    */
-  Communitymentalhealthnurse: "224564000",
+  "224564000": "224564000",
 
   /**
    * Renal nurse
    */
-  Renalnurse: "224565004",
+  "224565004": "224565004",
 
   /**
    * Hemodialysis nurse
    */
-  Hemodialysisnurse: "224566003",
+  "224566003": "224566003",
 
   /**
    * Wound care nurse
    */
-  Woundcarenurse: "224567007",
+  "224567007": "224567007",
 
   /**
    * Nurse grade
    */
-  Nursegrade: "224569005",
+  "224569005": "224569005",
 
   /**
    * Clinical nurse specialist
    */
-  Clinicalnursespecialist: "224570006",
+  "224570006": "224570006",
 
   /**
    * Nurse practitioner
    */
-  Nursepractitioner: "224571005",
+  "224571005": "224571005",
 
   /**
    * Nursing sister
    */
-  Nursingsister: "224572003",
+  "224572003": "224572003",
 
   /**
    * CN - Charge nurse
    */
-  CNChargenurse: "224573008",
+  "224573008": "224573008",
 
   /**
    * Ward manager
    */
-  Wardmanager: "224574002",
+  "224574002": "224574002",
 
   /**
    * Nursing team leader
    */
-  Nursingteamleader: "224575001",
+  "224575001": "224575001",
 
   /**
    * Nursing assistant
    */
-  Nursingassistant: "224576000",
+  "224576000": "224576000",
 
   /**
    * HCA - Healthcare assistant
    */
-  HCAHealthcareassistant: "224577009",
+  "224577009": "224577009",
 
   /**
    * Nursery nurse
    */
-  Nurserynurse: "224578004",
+  "224578004": "224578004",
 
   /**
    * Healthcare service manager
    */
-  Healthcareservicemanager: "224579007",
+  "224579007": "224579007",
 
   /**
    * Occupational health service manager
    */
-  Occupationalhealthservicemanager: "224580005",
+  "224580005": "224580005",
 
   /**
    * Community nurse manager
    */
-  Communitynursemanager: "224581009",
+  "224581009": "224581009",
 
   /**
    * Behavior therapist
    */
-  Behaviortherapist: "224583007",
+  "224583007": "224583007",
 
   /**
    * Behavior therapy assistant
    */
-  Behaviortherapyassistant: "224584001",
+  "224584001": "224584001",
 
   /**
    * Drama therapist
    */
-  Dramatherapist: "224585000",
+  "224585000": "224585000",
 
   /**
    * Domiciliary occupational therapist
    */
-  Domiciliaryoccupationaltherapist: "224586004",
+  "224586004": "224586004",
 
   /**
    * Occupational therapy helper
    */
-  Occupationaltherapyhelper: "224587008",
+  "224587008": "224587008",
 
   /**
    * Psychotherapist
    */
-  Psychotherapist: "224588003",
+  "224588003": "224588003",
 
   /**
    * Community-based physiotherapist
    */
-  Communitybasedphysiotherapist: "224589006",
+  "224589006": "224589006",
 
   /**
    * Play therapist
    */
-  Playtherapist: "224590002",
+  "224590002": "224590002",
 
   /**
    * Play specialist
    */
-  Playspecialist: "224591003",
+  "224591003": "224591003",
 
   /**
    * Play leader
    */
-  Playleader: "224592005",
+  "224592005": "224592005",
 
   /**
    * Community-based speech and language therapist
    */
-  Communitybasedspeechandlanguagetherapist: "224593000",
+  "224593000": "224593000",
 
   /**
    * Speech and language assistant
    */
-  Speechandlanguageassistant: "224594006",
+  "224594006": "224594006",
 
   /**
    * Professional counselor (occupation)
    */
-  Professionalcounseloroccupation: "224595007",
+  "224595007": "224595007",
 
   /**
    * Marriage guidance counselor (occupation)
    */
-  Marriageguidancecounseloroccupation: "224596008",
+  "224596008": "224596008",
 
   /**
    * Trained nurse counselor (occupation)
    */
-  Trainednursecounseloroccupation: "224597004",
+  "224597004": "224597004",
 
   /**
    * Trained social worker counselor (occupation)
    */
-  Trainedsocialworkercounseloroccupation: "224598009",
+  "224598009": "224598009",
 
   /**
    * Trained personnel counselor (occupation)
    */
-  Trainedpersonnelcounseloroccupation: "224599001",
+  "224599001": "224599001",
 
   /**
    * Psychoanalyst
    */
-  Psychoanalyst: "224600003",
+  "224600003": "224600003",
 
   /**
    * Assistant psychologist
    */
-  Assistantpsychologist: "224601004",
+  "224601004": "224601004",
 
   /**
    * Community-based podiatrist
    */
-  Communitybasedpodiatrist: "224602006",
+  "224602006": "224602006",
 
   /**
    * Foot care worker
    */
-  Footcareworker: "224603001",
+  "224603001": "224603001",
 
   /**
    * Audiometrician
    */
-  Audiometrician: "224604007",
+  "224604007": "224604007",
 
   /**
    * Technical healthcare occupation
    */
-  Technicalhealthcareoccupation: "224606009",
+  "224606009": "224606009",
 
   /**
    * Occupational therapy technical instructor
    */
-  Occupationaltherapytechnicalinstructor: "224607000",
+  "224607000": "224607000",
 
   /**
    * Administrative healthcare staff
    */
-  Administrativehealthcarestaff: "224608005",
+  "224608005": "224608005",
 
   /**
    * Complementary health worker
    */
-  Complementaryhealthworker: "224609002",
+  "224609002": "224609002",
 
   /**
    * Supporting services personnel
    */
-  Supportingservicespersonnel: "224610007",
+  "224610007": "224610007",
 
   /**
    * Research associate
    */
-  Researchassociate: "224614003",
+  "224614003": "224614003",
 
   /**
    * Research nurse
    */
-  Researchnurse: "224615002",
+  "224615002": "224615002",
 
   /**
    * Human aid to communication
    */
-  Humanaidtocommunication: "224620002",
+  "224620002": "224620002",
 
   /**
    * Palantypist
    */
-  Palantypist: "224621003",
+  "224621003": "224621003",
 
   /**
    * Note taker
    */
-  Notetaker: "224622005",
+  "224622005": "224622005",
 
   /**
    * Cuer
    */
-  Cuer: "224623000",
+  "224623000": "224623000",
 
   /**
    * Lipspeaker
    */
-  Lipspeaker: "224624006",
+  "224624006": "224624006",
 
   /**
    * Interpreter for British sign language
    */
-  InterpreterforBritishsignlanguage: "224625007",
+  "224625007": "224625007",
 
   /**
    * Interpreter for Signs supporting English
    */
-  InterpreterforSignssupportingEnglish: "224626008",
+  "224626008": "224626008",
 
   /**
    * General practitioner locum
    */
-  Generalpractitionerlocum: "224936003",
+  "224936003": "224936003",
 
   /**
    * Lactation consultant
    */
-  Lactationconsultant: "225726006",
+  "225726006": "225726006",
 
   /**
    * Midwife counselor (occupation)
    */
-  Midwifecounseloroccupation: "225727002",
+  "225727002": "225727002",
 
   /**
    * Nursing occupation (occupation)
    */
-  Nursingoccupationoccupation: "265937000",
+  "265937000": "265937000",
 
   /**
    * Medical/dental technicians
    */
-  Medicaldentaltechnicians: "265939002",
+  "265939002": "265939002",
 
   /**
    * Parkinson's disease nurse
    */
-  Parkinsonsdiseasenurse: "283875005",
+  "283875005": "283875005",
 
   /**
    * Specialist registrar
    */
-  Specialistregistrar: "302211009",
+  "302211009": "302211009",
 
   /**
    * Member of mental health review tribunal
    */
-  Memberofmentalhealthreviewtribunal: "303124005",
+  "303124005": "303124005",
 
   /**
    * Hospital manager
    */
-  Hospitalmanager: "303129000",
+  "303129000": "303129000",
 
   /**
    * Responsible medical officer
    */
-  Responsiblemedicalofficer: "303133007",
+  "303133007": "303133007",
 
   /**
    * Independent doctor
    */
-  Independentdoctor: "303134001",
+  "303134001": "303134001",
 
   /**
    * Bereavement counselor (occupation)
    */
-  Bereavementcounseloroccupation: "304291006",
+  "304291006": "304291006",
 
   /**
    * Surgeon
    */
-  Surgeon: "304292004",
+  "304292004": "304292004",
 
   /**
    * Medical technician
    */
-  Medicaltechnician: "307988006",
+  "307988006": "307988006",
 
   /**
    * Remedial therapist
    */
-  Remedialtherapist: "308002005",
+  "308002005": "308002005",
 
   /**
    * Accident and emergency doctor
    */
-  Accidentandemergencydoctor: "309294001",
+  "309294001": "309294001",
 
   /**
    * Clinical oncologist
    */
-  Clinicaloncologist: "309295000",
+  "309295000": "309295000",
 
   /**
    * Family planning doctor
    */
-  Familyplanningdoctor: "309296004",
+  "309296004": "309296004",
 
   /**
    * Associate general practitioner
    */
-  Associategeneralpractitioner: "309322005",
+  "309322005": "309322005",
 
   /**
    * Partner of general practitioner
    */
-  Partnerofgeneralpractitioner: "309323000",
+  "309323000": "309323000",
 
   /**
    * Assistant GP
    */
-  AssistantGP: "309324006",
+  "309324006": "309324006",
 
   /**
    * Deputizing general practitioner
    */
-  Deputizinggeneralpractitioner: "309326008",
+  "309326008": "309326008",
 
   /**
    * General practitioner registrar
    */
-  Generalpractitionerregistrar: "309327004",
+  "309327004": "309327004",
 
   /**
    * Ambulatory pediatrician
    */
-  Ambulatorypediatrician: "309328009",
+  "309328009": "309328009",
 
   /**
    * Community pediatrician
    */
-  Communitypediatrician: "309329001",
+  "309329001": "309329001",
 
   /**
    * Pediatric cardiologist
    */
-  Pediatriccardiologist: "309330006",
+  "309330006": "309330006",
 
   /**
    * Pediatric endocrinologist
    */
-  Pediatricendocrinologist: "309331005",
+  "309331005": "309331005",
 
   /**
    * Pediatric gastroenterologist
    */
-  Pediatricgastroenterologist: "309332003",
+  "309332003": "309332003",
 
   /**
    * Pediatric nephrologist
    */
-  Pediatricnephrologist: "309333008",
+  "309333008": "309333008",
 
   /**
    * Pediatric neurologist
    */
-  Pediatricneurologist: "309334002",
+  "309334002": "309334002",
 
   /**
    * Pediatric rheumatologist
    */
-  Pediatricrheumatologist: "309335001",
+  "309335001": "309335001",
 
   /**
    * Pediatric oncologist
    */
-  Pediatriconcologist: "309336000",
+  "309336000": "309336000",
 
   /**
    * Pain management specialist
    */
-  Painmanagementspecialist: "309337009",
+  "309337009": "309337009",
 
   /**
    * Intensive care specialist
    */
-  Intensivecarespecialist: "309338004",
+  "309338004": "309338004",
 
   /**
    * Adult intensive care specialist
    */
-  Adultintensivecarespecialist: "309339007",
+  "309339007": "309339007",
 
   /**
    * Pediatric intensive care specialist
    */
-  Pediatricintensivecarespecialist: "309340009",
+  "309340009": "309340009",
 
   /**
    * Blood transfusion doctor
    */
-  Bloodtransfusiondoctor: "309341008",
+  "309341008": "309341008",
 
   /**
    * Histopathologist
    */
-  Histopathologist: "309342001",
+  "309342001": "309342001",
 
   /**
    * Physician
    */
-  Physician: "309343006",
+  "309343006": "309343006",
 
   /**
    * Chest physician
    */
-  Chestphysician: "309345004",
+  "309345004": "309345004",
 
   /**
    * Thoracic physician
    */
-  Thoracicphysician: "309346003",
+  "309346003": "309346003",
 
   /**
    * Clinical hematologist
    */
-  Clinicalhematologist: "309347007",
+  "309347007": "309347007",
 
   /**
    * Clinical neurophysiologist
    */
-  Clinicalneurophysiologist: "309348002",
+  "309348002": "309348002",
 
   /**
    * Clinical physiologist
    */
-  Clinicalphysiologist: "309349005",
+  "309349005": "309349005",
 
   /**
    * Diabetologist
    */
-  Diabetologist: "309350005",
+  "309350005": "309350005",
 
   /**
    * Andrologist
    */
-  Andrologist: "309351009",
+  "309351009": "309351009",
 
   /**
    * Neuroendocrinologist
    */
-  Neuroendocrinologist: "309352002",
+  "309352002": "309352002",
 
   /**
    * Reproductive endocrinologist
    */
-  Reproductiveendocrinologist: "309353007",
+  "309353007": "309353007",
 
   /**
    * Thyroidologist
    */
-  Thyroidologist: "309354001",
+  "309354001": "309354001",
 
   /**
    * Clinical geneticist
    */
-  Clinicalgeneticist: "309355000",
+  "309355000": "309355000",
 
   /**
    * Clinical cytogeneticist
    */
-  Clinicalcytogeneticist: "309356004",
+  "309356004": "309356004",
 
   /**
    * Clinical molecular geneticist
    */
-  Clinicalmoleculargeneticist: "309357008",
+  "309357008": "309357008",
 
   /**
    * Genitourinary medicine physician
    */
-  Genitourinarymedicinephysician: "309358003",
+  "309358003": "309358003",
 
   /**
    * Palliative care physician
    */
-  Palliativecarephysician: "309359006",
+  "309359006": "309359006",
 
   /**
    * Rehabilitation physician
    */
-  Rehabilitationphysician: "309360001",
+  "309360001": "309360001",
 
   /**
    * Child and adolescent psychiatrist
    */
-  Childandadolescentpsychiatrist: "309361002",
+  "309361002": "309361002",
 
   /**
    * Forensic psychiatrist
    */
-  Forensicpsychiatrist: "309362009",
+  "309362009": "309362009",
 
   /**
    * Liaison psychiatrist
    */
-  Liaisonpsychiatrist: "309363004",
+  "309363004": "309363004",
 
   /**
    * Psychogeriatrician
    */
-  Psychogeriatrician: "309364005",
+  "309364005": "309364005",
 
   /**
    * Rehabilitation psychiatrist
    */
-  Rehabilitationpsychiatrist: "309366007",
+  "309366007": "309366007",
 
   /**
    * Obstetrician and gynecologist
    */
-  Obstetricianandgynecologist: "309367003",
+  "309367003": "309367003",
 
   /**
    * Breast surgeon
    */
-  Breastsurgeon: "309368008",
+  "309368008": "309368008",
 
   /**
    * Cardiothoracic surgeon
    */
-  Cardiothoracicsurgeon: "309369000",
+  "309369000": "309369000",
 
   /**
    * Cardiac surgeon
    */
-  Cardiacsurgeon: "309371000",
+  "309371000": "309371000",
 
   /**
    * Ear, nose and throat surgeon
    */
-  Earnoseandthroatsurgeon: "309372007",
+  "309372007": "309372007",
 
   /**
    * Endocrine surgeon
    */
-  Endocrinesurgeon: "309373002",
+  "309373002": "309373002",
 
   /**
    * Thyroid surgeon
    */
-  Thyroidsurgeon: "309374008",
+  "309374008": "309374008",
 
   /**
    * Pituitary surgeon
    */
-  Pituitarysurgeon: "309375009",
+  "309375009": "309375009",
 
   /**
    * Gastrointestinal surgeon
    */
-  Gastrointestinalsurgeon: "309376005",
+  "309376005": "309376005",
 
   /**
    * General gastrointestinal surgeon
    */
-  Generalgastrointestinalsurgeon: "309377001",
+  "309377001": "309377001",
 
   /**
    * Upper gastrointestinal surgeon
    */
-  Uppergastrointestinalsurgeon: "309378006",
+  "309378006": "309378006",
 
   /**
    * Colorectal surgeon
    */
-  Colorectalsurgeon: "309379003",
+  "309379003": "309379003",
 
   /**
    * Hand surgeon
    */
-  Handsurgeon: "309380000",
+  "309380000": "309380000",
 
   /**
    * Hepatobiliary surgeon
    */
-  Hepatobiliarysurgeon: "309381001",
+  "309381001": "309381001",
 
   /**
    * Ophthalmic surgeon
    */
-  Ophthalmicsurgeon: "309382008",
+  "309382008": "309382008",
 
   /**
    * Pediatric surgeon
    */
-  Pediatricsurgeon: "309383003",
+  "309383003": "309383003",
 
   /**
    * Pancreatic surgeon
    */
-  Pancreaticsurgeon: "309384009",
+  "309384009": "309384009",
 
   /**
    * Transplant surgeon
    */
-  Transplantsurgeon: "309385005",
+  "309385005": "309385005",
 
   /**
    * Trauma surgeon
    */
-  Traumasurgeon: "309386006",
+  "309386006": "309386006",
 
   /**
    * Vascular surgeon
    */
-  Vascularsurgeon: "309388007",
+  "309388007": "309388007",
 
   /**
    * Medical practitioner grade
    */
-  Medicalpractitionergrade: "309389004",
+  "309389004": "309389004",
 
   /**
    * Hospital consultant
    */
-  Hospitalconsultant: "309390008",
+  "309390008": "309390008",
 
   /**
    * Visiting specialist registrar
    */
-  Visitingspecialistregistrar: "309391007",
+  "309391007": "309391007",
 
   /**
    * Research registrar
    */
-  Researchregistrar: "309392000",
+  "309392000": "309392000",
 
   /**
    * General practitioner grade
    */
-  Generalpractitionergrade: "309393005",
+  "309393005": "309393005",
 
   /**
    * General practitioner principal
    */
-  Generalpractitionerprincipal: "309394004",
+  "309394004": "309394004",
 
   /**
    * Hospital specialist
    */
-  Hospitalspecialist: "309395003",
+  "309395003": "309395003",
 
   /**
    * Associate specialist
    */
-  Associatespecialist: "309396002",
+  "309396002": "309396002",
 
   /**
    * Research fellow
    */
-  Researchfellow: "309397006",
+  "309397006": "309397006",
 
   /**
    * Profession allied to medicine
    */
-  Professionalliedtomedicine: "309398001",
+  "309398001": "309398001",
 
   /**
    * Hospital dietitian
    */
-  Hospitaldietitian: "309399009",
+  "309399009": "309399009",
 
   /**
    * Domiciliary physiotherapist
    */
-  Domiciliaryphysiotherapist: "309400002",
+  "309400002": "309400002",
 
   /**
    * GP-based physiotherapist
    */
-  GPbasedphysiotherapist: "309401003",
+  "309401003": "309401003",
 
   /**
    * Hospital-based physiotherapist
    */
-  Hospitalbasedphysiotherapist: "309402005",
+  "309402005": "309402005",
 
   /**
    * Private physiotherapist
    */
-  Privatephysiotherapist: "309403000",
+  "309403000": "309403000",
 
   /**
    * Physiotherapy helper
    */
-  Physiotherapyhelper: "309404006",
+  "309404006": "309404006",
 
   /**
    * Hospital-based speech and language therapist
    */
-  Hospitalbasedspeechandlanguagetherapist: "309409001",
+  "309409001": "309409001",
 
   /**
    * Arts therapist
    */
-  Artstherapist: "309410006",
+  "309410006": "309410006",
 
   /**
    * Dance therapist
    */
-  Dancetherapist: "309411005",
+  "309411005": "309411005",
 
   /**
    * Music therapist
    */
-  Musictherapist: "309412003",
+  "309412003": "309412003",
 
   /**
    * Renal dietitian
    */
-  Renaldietitian: "309413008",
+  "309413008": "309413008",
 
   /**
    * Liver dietitian
    */
-  Liverdietitian: "309414002",
+  "309414002": "309414002",
 
   /**
    * Oncology dietitian
    */
-  Oncologydietitian: "309415001",
+  "309415001": "309415001",
 
   /**
    * Pediatric dietitian
    */
-  Pediatricdietitian: "309416000",
+  "309416000": "309416000",
 
   /**
    * Diabetes dietitian
    */
-  Diabetesdietitian: "309417009",
+  "309417009": "309417009",
 
   /**
    * Audiologist
    */
-  Audiologist: "309418004",
+  "309418004": "309418004",
 
   /**
    * Hearing therapist
    */
-  Hearingtherapist: "309419007",
+  "309419007": "309419007",
 
   /**
    * Audiological scientist
    */
-  Audiologicalscientist: "309420001",
+  "309420001": "309420001",
 
   /**
    * Hearing aid dispenser
    */
-  Hearingaiddispenser: "309421002",
+  "309421002": "309421002",
 
   /**
    * Community-based occupational therapist
    */
-  Communitybasedoccupationaltherapist: "309422009",
+  "309422009": "309422009",
 
   /**
    * Hospital occupational therapist
    */
-  Hospitaloccupationaltherapist: "309423004",
+  "309423004": "309423004",
 
   /**
    * Social services occupational therapist
    */
-  Socialservicesoccupationaltherapist: "309427003",
+  "309427003": "309427003",
 
   /**
    * Orthotist
    */
-  Orthotist: "309428008",
+  "309428008": "309428008",
 
   /**
    * Surgical fitter
    */
-  Surgicalfitter: "309429000",
+  "309429000": "309429000",
 
   /**
    * Hospital-based podiatrist
    */
-  Hospitalbasedpodiatrist: "309434001",
+  "309434001": "309434001",
 
   /**
    * Podiatry assistant
    */
-  Podiatryassistant: "309435000",
+  "309435000": "309435000",
 
   /**
    * Lymphedema nurse
    */
-  Lymphedemanurse: "309436004",
+  "309436004": "309436004",
 
   /**
    * Community learning disabilities nurse
    */
-  Communitylearningdisabilitiesnurse: "309437008",
+  "309437008": "309437008",
 
   /**
    * Clinical nurse teacher
    */
-  Clinicalnurseteacher: "309439006",
+  "309439006": "309439006",
 
   /**
    * Community practice nurse teacher
    */
-  Communitypracticenurseteacher: "309440008",
+  "309440008": "309440008",
 
   /**
    * Nurse tutor
    */
-  Nursetutor: "309441007",
+  "309441007": "309441007",
 
   /**
    * Nurse teacher practitioner
    */
-  Nurseteacherpractitioner: "309442000",
+  "309442000": "309442000",
 
   /**
    * Nurse lecturer practitioner
    */
-  Nurselecturerpractitioner: "309443005",
+  "309443005": "309443005",
 
   /**
    * Outreach nurse
    */
-  Outreachnurse: "309444004",
+  "309444004": "309444004",
 
   /**
    * Anesthetic nurse
    */
-  Anestheticnurse: "309445003",
+  "309445003": "309445003",
 
   /**
    * Nurse manager
    */
-  Nursemanager: "309446002",
+  "309446002": "309446002",
 
   /**
    * Nurse administrator
    */
-  Nurseadministrator: "309450009",
+  "309450009": "309450009",
 
   /**
    * Midwifery grade
    */
-  Midwiferygrade: "309452001",
+  "309452001": "309452001",
 
   /**
    * Registered midwife
    */
-  Registeredmidwife: "309453006",
+  "309453006": "309453006",
 
   /**
    * Student midwife
    */
-  Studentmidwife: "309454000",
+  "309454000": "309454000",
 
   /**
    * Parentcraft sister
    */
-  Parentcraftsister: "309455004",
+  "309455004": "309455004",
 
   /**
    * Healthcare professional grade
    */
-  Healthcareprofessionalgrade: "309459005",
+  "309459005": "309459005",
 
   /**
    * Restorative dentist
    */
-  Restorativedentist: "309460000",
+  "309460000": "309460000",
 
   /**
    * Pediatric audiologist
    */
-  Pediatricaudiologist: "310170009",
+  "310170009": "310170009",
 
   /**
    * Immunopathologist
    */
-  Immunopathologist: "310171008",
+  "310171008": "310171008",
 
   /**
    * Audiological physician
    */
-  Audiologicalphysician: "310172001",
+  "310172001": "310172001",
 
   /**
    * Clinical pharmacologist
    */
-  Clinicalpharmacologist: "310173006",
+  "310173006": "310173006",
 
   /**
    * Private doctor
    */
-  Privatedoctor: "310174000",
+  "310174000": "310174000",
 
   /**
    * Agency nurse
    */
-  Agencynurse: "310175004",
+  "310175004": "310175004",
 
   /**
    * Behavioral therapist nurse
    */
-  Behavioraltherapistnurse: "310176003",
+  "310176003": "310176003",
 
   /**
    * Cardiac rehabilitation nurse
    */
-  Cardiacrehabilitationnurse: "310177007",
+  "310177007": "310177007",
 
   /**
    * Genitourinary nurse
    */
-  Genitourinarynurse: "310178002",
+  "310178002": "310178002",
 
   /**
    * Rheumatology nurse specialist
    */
-  Rheumatologynursespecialist: "310179005",
+  "310179005": "310179005",
 
   /**
    * Continence nurse
    */
-  Continencenurse: "310180008",
+  "310180008": "310180008",
 
   /**
    * Contact tracing nurse
    */
-  Contacttracingnurse: "310181007",
+  "310181007": "310181007",
 
   /**
    * General nurse
    */
-  Generalnurse: "310182000",
+  "310182000": "310182000",
 
   /**
    * Liaison nurse
    */
-  Liaisonnurse: "310184004",
+  "310184004": "310184004",
 
   /**
    * Diabetic liaison nurse
    */
-  Diabeticliaisonnurse: "310185003",
+  "310185003": "310185003",
 
   /**
    * Nurse psychotherapist
    */
-  Nursepsychotherapist: "310186002",
+  "310186002": "310186002",
 
   /**
    * Company nurse
    */
-  Companynurse: "310187006",
+  "310187006": "310187006",
 
   /**
    * Hospital midwife
    */
-  Hospitalmidwife: "310188001",
+  "310188001": "310188001",
 
   /**
    * Genetic counselor (occupation)
    */
-  Geneticcounseloroccupation: "310189009",
+  "310189009": "310189009",
 
   /**
    * Mental health counselor (occupation)
    */
-  Mentalhealthcounseloroccupation: "310190000",
+  "310190000": "310190000",
 
   /**
    * Clinical psychologist
    */
-  Clinicalpsychologist: "310191001",
+  "310191001": "310191001",
 
   /**
    * Educational psychologist
    */
-  Educationalpsychologist: "310192008",
+  "310192008": "310192008",
 
   /**
    * Coroner
    */
-  Coroner: "310193003",
+  "310193003": "310193003",
 
   /**
    * Appliance officer
    */
-  Applianceofficer: "310194009",
+  "310194009": "310194009",
 
   /**
    * Medical oncologist
    */
-  Medicaloncologist: "310512001",
+  "310512001": "310512001",
 
   /**
    * School medical officer
    */
-  Schoolmedicalofficer: "311441001",
+  "311441001": "311441001",
 
   /**
    * Integrated midwife
    */
-  Integratedmidwife: "312485001",
+  "312485001": "312485001",
 
   /**
    * RN First Assist
    */
-  RNFirstAssist: "372102007",
+  "372102007": "372102007",
 
   /**
    * Optician (occupation)
    */
-  Opticianoccupation: "387619007",
+  "387619007": "387619007",
 
   /**
    * Medical secretary (occupation)
    */
-  Medicalsecretaryoccupation: "394572006",
+  "394572006": "394572006",
 
   /**
    * Hospital nurse (occupation)
    */
-  Hospitalnurseoccupation: "394618009",
+  "394618009": "394618009",
 
   /**
    * Paramedic (occupation)
    */
-  Paramedicoccupation: "397897005",
+  "397897005": "397897005",
 
   /**
    * Staff grade obstetrician (occupation)
    */
-  Staffgradeobstetricianoccupation: "397903001",
+  "397903001": "397903001",
 
   /**
    * Staff grade practitioner (occupation)
    */
-  Staffgradepractitioneroccupation: "397908005",
+  "397908005": "397908005",
 
   /**
    * Medical student (occupation)
    */
-  Medicalstudentoccupation: "398130009",
+  "398130009": "398130009",
 
   /**
    * Acting obstetric registrar (occupation)
    */
-  Actingobstetricregistraroccupation: "398238009",
+  "398238009": "398238009",
 
   /**
    * Physiotherapist technical instructor (occupation)
    */
-  Physiotherapisttechnicalinstructoroccupation: "404940000",
+  "404940000": "404940000",
 
   /**
    * Resident physician (occupation)
    */
-  Residentphysicianoccupation: "405277009",
+  "405277009": "405277009",
 
   /**
    * Certified registered nurse anesthetist (occupation)
    */
-  Certifiedregisterednurseanesthetistoccupation: "405278004",
+  "405278004": "405278004",
 
   /**
    * Attending physician (occupation)
    */
-  Attendingphysicianoccupation: "405279007",
+  "405279007": "405279007",
 
   /**
    * Assigned practitioner (occupation)
    */
-  Assignedpractitioneroccupation: "405623001",
+  "405623001": "405623001",
 
   /**
    * Professional initiating surgical case
    */
-  Professionalinitiatingsurgicalcase: "405684005",
+  "405684005": "405684005",
 
   /**
    * Professional providing staff relief during surgical procedure
    */
-  Professionalprovidingstaffreliefduringsurgicalprocedure: "405685006",
+  "405685006": "405685006",
 
   /**
    * Consultant pediatrician (occupation)
    */
-  Consultantpediatricianoccupation: "408798009",
+  "408798009": "408798009",
 
   /**
    * Consultant neonatologist (occupation)
    */
-  Consultantneonatologistoccupation: "408799001",
+  "408799001": "408799001",
 
   /**
    * Health educator (occupation)
    */
-  Healtheducatoroccupation: "409974004",
+  "409974004": "409974004",
 
   /**
    * Certified health education specialist (occupation)
    */
-  Certifiedhealtheducationspecialistoccupation: "409975003",
+  "409975003": "409975003",
 
   /**
    * Circulating nurse (occupation)
    */
-  Circulatingnurseoccupation: "413854007",
+  "413854007": "413854007",
 
   /**
    * Perioperative nurse (occupation)
    */
-  Perioperativenurseoccupation: "415075003",
+  "415075003": "415075003",
 
   /**
    * Scrub nurse (occupation)
    */
-  Scrubnurseoccupation: "415506007",
+  "415506007": "415506007",
 
   /**
    * Fellow of American Academy of Osteopathy (occupation)
    */
-  FellowofAmericanAcademyofOsteopathyoccupation: "416160000",
+  "416160000": "416160000",
 
   /**
    * Oculoplastic surgeon (occupation)
    */
-  Oculoplasticsurgeonoccupation: "420409002",
+  "420409002": "420409002",
 
   /**
    * Retinal surgeon (occupation)
    */
-  Retinalsurgeonoccupation: "420678001",
+  "420678001": "420678001",
 
   /**
    * Admitting physician (occupation)
    */
-  Admittingphysicianoccupation: "421841007",
+  "421841007": "421841007",
 
   /**
    * Medical ophthalmologist (occupation)
    */
-  Medicalophthalmologistoccupation: "422140007",
+  "422140007": "422140007",
 
   /**
    * Ophthalmologist (occupation)
    */
-  Ophthalmologistoccupation: "422234006",
+  "422234006": "422234006",
 
   /**
    * Health coach (occupation)
    */
-  Healthcoachoccupation: "432100008",
+  "432100008": "432100008",
 
   /**
    * Respiratory therapist (occupation)
    */
-  Respiratorytherapistoccupation: "442867008",
+  "442867008": "442867008",
 
   /**
    * Podiatric surgeon (occupation)
    */
-  Podiatricsurgeonoccupation: "443090005",
+  "443090005": "443090005",
 
   /**
    * Hypnotherapist (occupation)
    */
-  Hypnotherapistoccupation: "444912007",
+  "444912007": "444912007",
 
   /**
    * Asthma nurse specialist (occupation)
    */
-  Asthmanursespecialistoccupation: "445313000",
+  "445313000": "445313000",
 
   /**
    * Nurse case manager (occupation)
    */
-  Nursecasemanageroccupation: "445451001",
+  "445451001": "445451001",
 
   /**
    * Primary care physician (occupation)
    */
-  Primarycarephysicianoccupation: "446050000",
+  "446050000": "446050000",
 
   /**
    * Addiction medicine specialist (occupation)
    */
-  Addictionmedicinespecialistoccupation: "446701002",
+  "446701002": "446701002",
 
   /**
    * Physician assistant (occupation)
    */
-  Physicianassistantoccupation: "449161006",
+  "449161006": "449161006",
 
   /**
    * Government midwife (occupation)
    */
-  Governmentmidwifeoccupation: "471302004",
+  "471302004": "471302004",
 
   /**
    * Sleep medicine specialist (occupation)
    */
-  Sleepmedicinespecialistoccupation: "720503005",
+  "720503005": "720503005",
 
   /**
    * Occupation medicine specialist (occupation)
    */
-  Occupationmedicinespecialistoccupation: "721936008",
+  "721936008": "721936008",
 
   /**
    * Preventive medicine specialist (occupation)
    */
-  Preventivemedicinespecialistoccupation: "721937004",
+  "721937004": "721937004",
 
   /**
    * Tropical medicine specialist (occupation)
    */
-  Tropicalmedicinespecialistoccupation: "721938009",
+  "721938009": "721938009",
 
   /**
    * Vascular medicine specialist
    */
-  Vascularmedicinespecialist: "721939001",
+  "721939001": "721939001",
 
   /**
    * Legal medicine specialist (occupation)
    */
-  Legalmedicinespecialistoccupation: "721940004",
+  "721940004": "721940004",
 
   /**
    * Health psychologist (occupation)
    */
-  Healthpsychologistoccupation: "721941000",
+  "721941000": "721941000",
 
   /**
    * Cardiovascular perfusionist (occupation)
    */
-  Cardiovascularperfusionistoccupation: "721942007",
+  "721942007": "721942007",
 
   /**
    * Clinical immunology and allergy specialist (occupation)
    */
-  Clinicalimmunologyandallergyspecialistoccupation: "721943002",
+  "721943002": "721943002",
 
   /**
    * Clinical pharmacist (occupation)
    */
-  Clinicalpharmacistoccupation: "734293001",
+  "734293001": "734293001",
 
   /**
    * Pharmacist prescriber (occupation)
    */
-  Pharmacistprescriberoccupation: "734294007",
+  "734294007": "734294007",
 
   /**
    * Radiation oncologist (occupation)
    */
-  Radiationoncologistoccupation: "763292005",
+  "763292005": "763292005",
 
   /**
    * Home health aide (occupation)
    */
-  Homehealthaideoccupation: "768730001",
+  "768730001": "768730001",
 
   /**
    * Home helper
    */
-  Homehelper: "768731002",
+  "768731002": "768731002",
 
   /**
    * School health educator
    */
-  Schoolhealtheducator: "768732009",
+  "768732009": "768732009",
 
   /**
    * Medically responsible investigator (occupation)
    */
-  Medicallyresponsibleinvestigatoroccupation: "768819009",
+  "768819009": "768819009",
 
   /**
    * Doula (occupation)
    */
-  Doulaoccupation: "768825008",
+  "768825008": "768825008",
 
   /**
    * Crisis counselor (occupation)
    */
-  Crisiscounseloroccupation: "768826009",
+  "768826009": "768826009",
 
   /**
    * Nutritionist
    */
-  Nutritionist: "768827000",
+  "768827000": "768827000",
 
   /**
    * Epidemiologist
    */
-  Epidemiologist: "768828005",
+  "768828005": "768828005",
 
   /**
    * Community dietician (occupation)
    */
-  Communitydieticianoccupation: "768829002",
+  "768829002": "768829002",
 
   /**
    * Case manager (occupation)
    */
-  Casemanageroccupation: "768832004",
+  "768832004": "768832004",
 
   /**
    * Discharging physician
    */
-  Dischargingphysician: "768833009",
+  "768833009": "768833009",
 
   /**
    * Disease manager (occupation)
    */
-  Diseasemanageroccupation: "768834003",
+  "768834003": "768834003",
 
   /**
    * Patient navigator
    */
-  Patientnavigator: "768836001",
+  "768836001": "768836001",
 
   /**
    * Hospitalist (occupation)
    */
-  Hospitalistoccupation: "768837005",
+  "768837005": "768837005",
 
   /**
    * Consultant (occupation)
    */
-  Consultantoccupation: "768839008",
+  "768839008": "768839008",
 
   /**
    * Ultrasonographer
    */
-  Ultrasonographer: "789543004",
+  "789543004": "789543004",
 
   /**
    * Allied health assistant (occupation)
    */
-  Alliedhealthassistantoccupation: "840583002",
+  "840583002": "840583002",
 
   /**
    * Allied health student
    */
-  Alliedhealthstudent: "840584008",
+  "840584008": "840584008",
 
   /**
    * Clinical respiratory physiologist
    */
-  Clinicalrespiratoryphysiologist: "878785002",
+  "878785002": "878785002",
 
   /**
    * Operating room technician (occupation)
    */
-  Operatingroomtechnicianoccupation: "878786001",
+  "878786001": "878786001",
 
   /**
    * Anesthesia technician
    */
-  Anesthesiatechnician: "878787005",
+  "878787005": "878787005",
 
   /**
    * Sexual assault nurse examiner (occupation)
    */
-  Sexualassaultnurseexamineroccupation: "897187007",
+  "897187007": "897187007",
 
   /**
    * Massage therapist (occupation)
    */
-  Massagetherapistoccupation: "1172950003",
+  "1172950003": "1172950003",
 
   /**
    * Intellectual disability psychiatrist (occupation)
    */
-  Intellectualdisabilitypsychiatristoccupation: "1186716007",
+  "1186716007": "1186716007",
 
   /**
    * Intellectual disability nurse (occupation)
    */
-  Intellectualdisabilitynurseoccupation: "1186914001",
+  "1186914001": "1186914001",
 
   /**
    * Nurse complex case manager
    */
-  Nursecomplexcasemanager: "3981000175106",
+  "3981000175106": "3981000175106",
 
   /**
    * Adolescent medicine specialist
    */
-  Adolescentmedicinespecialist: "9371000175105",
+  "9371000175105": "9371000175105",
 
   /**
    * Adult gerontology primary care nurse practitioner (occupation)
    */
-  Adultgerontologyprimarycarenursepractitioneroccupation: "25941000087102",
+  "25941000087102": "25941000087102",
 
   /**
    * Pediatric nurse practitioner (occupation)
    */
-  Pediatricnursepractitioneroccupation: "26031000087100",
+  "26031000087100": "26031000087100",
 
   /**
    * PHCNP - primary health care nurse practitioner
    */
-  PHCNPprimaryhealthcarenursepractitioner: "26071000087103",
+  "26071000087103": "26071000087103",
 
   /**
    * Public health nurse practitioner
    */
-  Publichealthnursepractitioner: "26091000087104",
+  "26091000087104": "26091000087104",
 
   /**
    * Acupuncturist (occupation)
    */
-  Acupuncturistoccupation: "450044741000087104",
+  "450044741000087104": "450044741000087104",
 
   /**
    * Billing contact person
    */
-  Billingcontactperson: "BP",
+  BP: "BP",
 
   /**
    * Contact person
    */
-  Contactperson: "CP",
+  CP: "CP",
 
   /**
    * Emergency contact person
    */
-  Emergencycontactperson: "EP",
+  EP: "EP",
 
   /**
    * Person preparing referral
    */
-  Personpreparingreferral: "PR",
+  PR: "PR",
 
   /**
    * Employer
    */
-  Employer: "E",
+  E: "E",
 
   /**
    * Emergency Contact
    */
-  EmergencyContact: "C",
+  C: "C",
 
   /**
    * Federal Agency
    */
-  FederalAgency: "F",
+  F: "F",
 
   /**
    * Insurance Company
    */
-  InsuranceCompany: "I",
+  I: "I",
 
   /**
    * Next-of-Kin
    */
-  NextofKin: "N",
+  N: "N",
 
   /**
    * State Agency
    */
-  StateAgency: "S",
+  S: "S",
 
   /**
    * Other
    */
-  Other: "O",
+  O: "O",
 
   /**
    * Unknown
    */
-  Unknown: "U",
+  U: "U",
 
   /**
    * PersonalRelationshipRoleType
    */
-  PersonalRelationshipRoleType: "_PersonalRelationshipRoleType",
+  _PersonalRelationshipRoleType: "_PersonalRelationshipRoleType",
 
   /**
    * family member
    */
-  familymember: "FAMMEMB",
+  FAMMEMB: "FAMMEMB",
 
   /**
    * child
    */
-  child: "CHILD",
+  CHILD: "CHILD",
 
   /**
    * adopted child
    */
-  adoptedchild: "CHLDADOPT",
+  CHLDADOPT: "CHLDADOPT",
 
   /**
    * adopted daughter
    */
-  adopteddaughter: "DAUADOPT",
+  DAUADOPT: "DAUADOPT",
 
   /**
    * adopted son
    */
-  adoptedson: "SONADOPT",
+  SONADOPT: "SONADOPT",
 
   /**
    * foster child
    */
-  fosterchild: "CHLDFOST",
+  CHLDFOST: "CHLDFOST",
 
   /**
    * foster daughter
    */
-  fosterdaughter: "DAUFOST",
+  DAUFOST: "DAUFOST",
 
   /**
    * foster son
    */
-  fosterson: "SONFOST",
+  SONFOST: "SONFOST",
 
   /**
    * daughter
    */
-  daughter: "DAUC",
+  DAUC: "DAUC",
 
   /**
    * natural daughter
    */
-  naturaldaughter: "DAU",
+  DAU: "DAU",
 
   /**
    * stepdaughter
    */
-  stepdaughter: "STPDAU",
+  STPDAU: "STPDAU",
 
   /**
    * natural child
    */
-  naturalchild: "NCHILD",
+  NCHILD: "NCHILD",
 
   /**
    * natural son
    */
-  naturalson: "SON",
+  SON: "SON",
 
   /**
    * son
    */
-  son: "SONC",
+  SONC: "SONC",
 
   /**
    * stepson
    */
-  stepson: "STPSON",
+  STPSON: "STPSON",
 
   /**
    * step child
    */
-  stepchild: "STPCHLD",
+  STPCHLD: "STPCHLD",
 
   /**
    * extended family member
    */
-  extendedfamilymember: "EXT",
+  EXT: "EXT",
 
   /**
    * aunt
    */
-  aunt: "AUNT",
+  AUNT: "AUNT",
 
   /**
    * maternal aunt
    */
-  maternalaunt: "MAUNT",
+  MAUNT: "MAUNT",
 
   /**
    * paternal aunt
    */
-  paternalaunt: "PAUNT",
+  PAUNT: "PAUNT",
 
   /**
    * cousin
    */
-  cousin: "COUSN",
+  COUSN: "COUSN",
 
   /**
    * maternal cousin
    */
-  maternalcousin: "MCOUSN",
+  MCOUSN: "MCOUSN",
 
   /**
    * paternal cousin
    */
-  paternalcousin: "PCOUSN",
+  PCOUSN: "PCOUSN",
 
   /**
    * great grandparent
    */
-  greatgrandparent: "GGRPRN",
+  GGRPRN: "GGRPRN",
 
   /**
    * great grandfather
    */
-  greatgrandfather: "GGRFTH",
+  GGRFTH: "GGRFTH",
 
   /**
    * maternal great-grandfather
    */
-  maternalgreatgrandfather: "MGGRFTH",
+  MGGRFTH: "MGGRFTH",
 
   /**
    * paternal great-grandfather
    */
-  paternalgreatgrandfather: "PGGRFTH",
+  PGGRFTH: "PGGRFTH",
 
   /**
    * great grandmother
    */
-  greatgrandmother: "GGRMTH",
+  GGRMTH: "GGRMTH",
 
   /**
    * maternal great-grandmother
    */
-  maternalgreatgrandmother: "MGGRMTH",
+  MGGRMTH: "MGGRMTH",
 
   /**
    * paternal great-grandmother
    */
-  paternalgreatgrandmother: "PGGRMTH",
+  PGGRMTH: "PGGRMTH",
 
   /**
    * maternal great-grandparent
    */
-  maternalgreatgrandparent: "MGGRPRN",
+  MGGRPRN: "MGGRPRN",
 
   /**
    * paternal great-grandparent
    */
-  paternalgreatgrandparent: "PGGRPRN",
+  PGGRPRN: "PGGRPRN",
 
   /**
    * grandchild
    */
-  grandchild: "GRNDCHILD",
+  GRNDCHILD: "GRNDCHILD",
 
   /**
    * granddaughter
    */
-  granddaughter: "GRNDDAU",
+  GRNDDAU: "GRNDDAU",
 
   /**
    * grandson
    */
-  grandson: "GRNDSON",
+  GRNDSON: "GRNDSON",
 
   /**
    * grandparent
    */
-  grandparent: "GRPRN",
+  GRPRN: "GRPRN",
 
   /**
    * grandfather
    */
-  grandfather: "GRFTH",
+  GRFTH: "GRFTH",
 
   /**
    * maternal grandfather
    */
-  maternalgrandfather: "MGRFTH",
+  MGRFTH: "MGRFTH",
 
   /**
    * paternal grandfather
    */
-  paternalgrandfather: "PGRFTH",
+  PGRFTH: "PGRFTH",
 
   /**
    * grandmother
    */
-  grandmother: "GRMTH",
+  GRMTH: "GRMTH",
 
   /**
    * maternal grandmother
    */
-  maternalgrandmother: "MGRMTH",
+  MGRMTH: "MGRMTH",
 
   /**
    * paternal grandmother
    */
-  paternalgrandmother: "PGRMTH",
+  PGRMTH: "PGRMTH",
 
   /**
    * maternal grandparent
    */
-  maternalgrandparent: "MGRPRN",
+  MGRPRN: "MGRPRN",
 
   /**
    * paternal grandparent
    */
-  paternalgrandparent: "PGRPRN",
+  PGRPRN: "PGRPRN",
 
   /**
    * inlaw
    */
-  inlaw: "INLAW",
+  INLAW: "INLAW",
 
   /**
    * child-in-law
    */
-  childinlaw: "CHLDINLAW",
+  CHLDINLAW: "CHLDINLAW",
 
   /**
    * daughter in-law
    */
-  daughterinlaw: "DAUINLAW",
+  DAUINLAW: "DAUINLAW",
 
   /**
    * son in-law
    */
-  soninlaw: "SONINLAW",
+  SONINLAW: "SONINLAW",
 
   /**
    * parent in-law
    */
-  parentinlaw: "PRNINLAW",
+  PRNINLAW: "PRNINLAW",
 
   /**
    * father-in-law
    */
-  fatherinlaw: "FTHINLAW",
+  FTHINLAW: "FTHINLAW",
 
   /**
    * mother-in-law
    */
-  motherinlaw: "MTHINLAW",
+  MTHINLAW: "MTHINLAW",
 
   /**
    * mother-in-law
    */
-  motherinlaw: "MTHINLOAW",
+  MTHINLOAW: "MTHINLOAW",
 
   /**
    * sibling in-law
    */
-  siblinginlaw: "SIBINLAW",
+  SIBINLAW: "SIBINLAW",
 
   /**
    * brother-in-law
    */
-  brotherinlaw: "BROINLAW",
+  BROINLAW: "BROINLAW",
 
   /**
    * sister-in-law
    */
-  sisterinlaw: "SISINLAW",
+  SISINLAW: "SISINLAW",
 
   /**
    * sister-in-law
    */
-  sisterinlaw: "SISLINLAW",
+  SISLINLAW: "SISLINLAW",
 
   /**
    * niece/nephew
    */
-  niecenephew: "NIENEPH",
+  NIENEPH: "NIENEPH",
 
   /**
    * nephew
    */
-  nephew: "NEPHEW",
+  NEPHEW: "NEPHEW",
 
   /**
    * niece
    */
-  niece: "NIECE",
+  NIECE: "NIECE",
 
   /**
    * uncle
    */
-  uncle: "UNCLE",
+  UNCLE: "UNCLE",
 
   /**
    * maternal uncle
    */
-  maternaluncle: "MUNCLE",
+  MUNCLE: "MUNCLE",
 
   /**
    * paternal uncle
    */
-  paternaluncle: "PUNCLE",
+  PUNCLE: "PUNCLE",
 
   /**
    * parent
    */
-  parent: "PRN",
+  PRN: "PRN",
 
   /**
    * adoptive parent
    */
-  adoptiveparent: "ADOPTP",
+  ADOPTP: "ADOPTP",
 
   /**
    * adoptive father
    */
-  adoptivefather: "ADOPTF",
+  ADOPTF: "ADOPTF",
 
   /**
    * adoptive mother
    */
-  adoptivemother: "ADOPTM",
+  ADOPTM: "ADOPTM",
 
   /**
    * father
    */
-  father: "FTH",
+  FTH: "FTH",
 
   /**
    * foster father
    */
-  fosterfather: "FTHFOST",
+  FTHFOST: "FTHFOST",
 
   /**
    * natural father
    */
-  naturalfather: "NFTH",
+  NFTH: "NFTH",
 
   /**
    * natural father of fetus
    */
-  naturalfatheroffetus: "NFTHF",
+  NFTHF: "NFTHF",
 
   /**
    * stepfather
    */
-  stepfather: "STPFTH",
+  STPFTH: "STPFTH",
 
   /**
    * mother
    */
-  mother: "MTH",
+  MTH: "MTH",
 
   /**
    * gestational mother
    */
-  gestationalmother: "GESTM",
+  GESTM: "GESTM",
 
   /**
    * foster mother
    */
-  fostermother: "MTHFOST",
+  MTHFOST: "MTHFOST",
 
   /**
    * natural mother
    */
-  naturalmother: "NMTH",
+  NMTH: "NMTH",
 
   /**
    * natural mother of fetus
    */
-  naturalmotheroffetus: "NMTHF",
+  NMTHF: "NMTHF",
 
   /**
    * stepmother
    */
-  stepmother: "STPMTH",
+  STPMTH: "STPMTH",
 
   /**
    * natural parent
    */
-  naturalparent: "NPRN",
+  NPRN: "NPRN",
 
   /**
    * foster parent
    */
-  fosterparent: "PRNFOST",
+  PRNFOST: "PRNFOST",
 
   /**
    * step parent
    */
-  stepparent: "STPPRN",
+  STPPRN: "STPPRN",
 
   /**
    * sibling
    */
-  sibling: "SIB",
+  SIB: "SIB",
 
   /**
    * brother
    */
-  brother: "BRO",
+  BRO: "BRO",
 
   /**
    * half-brother
    */
-  halfbrother: "HBRO",
+  HBRO: "HBRO",
 
   /**
    * natural brother
    */
-  naturalbrother: "NBRO",
+  NBRO: "NBRO",
 
   /**
    * twin brother
    */
-  twinbrother: "TWINBRO",
+  TWINBRO: "TWINBRO",
 
   /**
    * fraternal twin brother
    */
-  fraternaltwinbrother: "FTWINBRO",
+  FTWINBRO: "FTWINBRO",
 
   /**
    * identical twin brother
    */
-  identicaltwinbrother: "ITWINBRO",
+  ITWINBRO: "ITWINBRO",
 
   /**
    * stepbrother
    */
-  stepbrother: "STPBRO",
+  STPBRO: "STPBRO",
 
   /**
    * half-sibling
    */
-  halfsibling: "HSIB",
+  HSIB: "HSIB",
 
   /**
    * half-sister
    */
-  halfsister: "HSIS",
+  HSIS: "HSIS",
 
   /**
    * natural sibling
    */
-  naturalsibling: "NSIB",
+  NSIB: "NSIB",
 
   /**
    * natural sister
    */
-  naturalsister: "NSIS",
+  NSIS: "NSIS",
 
   /**
    * twin sister
    */
-  twinsister: "TWINSIS",
+  TWINSIS: "TWINSIS",
 
   /**
    * fraternal twin sister
    */
-  fraternaltwinsister: "FTWINSIS",
+  FTWINSIS: "FTWINSIS",
 
   /**
    * identical twin sister
    */
-  identicaltwinsister: "ITWINSIS",
+  ITWINSIS: "ITWINSIS",
 
   /**
    * twin
    */
-  twin: "TWIN",
+  TWIN: "TWIN",
 
   /**
    * fraternal twin
    */
-  fraternaltwin: "FTWIN",
+  FTWIN: "FTWIN",
 
   /**
    * identical twin
    */
-  identicaltwin: "ITWIN",
+  ITWIN: "ITWIN",
 
   /**
    * sister
    */
-  sister: "SIS",
+  SIS: "SIS",
 
   /**
    * stepsister
    */
-  stepsister: "STPSIS",
+  STPSIS: "STPSIS",
 
   /**
    * step sibling
    */
-  stepsibling: "STPSIB",
+  STPSIB: "STPSIB",
 
   /**
    * significant other
    */
-  significantother: "SIGOTHR",
+  SIGOTHR: "SIGOTHR",
 
   /**
    * domestic partner
    */
-  domesticpartner: "DOMPART",
+  DOMPART: "DOMPART",
 
   /**
    * former spouse
    */
-  formerspouse: "FMRSPS",
+  FMRSPS: "FMRSPS",
 
   /**
    * spouse
    */
-  spouse: "SPS",
+  SPS: "SPS",
 
   /**
    * husband
    */
-  husband: "HUSB",
+  HUSB: "HUSB",
 
   /**
    * wife
    */
-  wife: "WIFE",
+  WIFE: "WIFE",
 
   /**
    * unrelated friend
    */
-  unrelatedfriend: "FRND",
+  FRND: "FRND",
 
   /**
    * neighbor
    */
-  neighbor: "NBOR",
+  NBOR: "NBOR",
 
   /**
    * self
    */
-  self: "ONESELF",
+  ONESELF: "ONESELF",
 
   /**
    * Roommate
    */
-  Roommate: "ROOM",
+  ROOM: "ROOM",
 } as const;
 
 /**

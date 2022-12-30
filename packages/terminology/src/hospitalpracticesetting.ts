@@ -6,72 +6,72 @@ export const HospitalPracticeSettingCode = {
   /**
    * Hospital
    */
-  Hospital: "HOSP",
+  HOSP: "HOSP",
 
   /**
    * Chronic Care Facility
    */
-  ChronicCareFacility: "CHR",
+  CHR: "CHR",
 
   /**
    * Hospitals; General Acute Care Hospital
    */
-  HospitalsGeneralAcuteCareHospital: "GACH",
+  GACH: "GACH",
 
   /**
    * Military Hospital
    */
-  MilitaryHospital: "MHSP",
+  MHSP: "MHSP",
 
   /**
    * Psychatric Care Facility
    */
-  PsychatricCareFacility: "PSYCHF",
+  PSYCHF: "PSYCHF",
 
   /**
    * Rehabilitation hospital
    */
-  Rehabilitationhospital: "RH",
+  RH: "RH",
 
   /**
    * addiction treatment center
    */
-  addictiontreatmentcenter: "RHAT",
+  RHAT: "RHAT",
 
   /**
    * intellectual impairment center
    */
-  intellectualimpairmentcenter: "RHII",
+  RHII: "RHII",
 
   /**
    * parents with adjustment difficulties center
    */
-  parentswithadjustmentdifficultiescenter: "RHMAD",
+  RHMAD: "RHMAD",
 
   /**
    * physical impairment center
    */
-  physicalimpairmentcenter: "RHPI",
+  RHPI: "RHPI",
 
   /**
    * physical impairment - hearing center
    */
-  physicalimpairmenthearingcenter: "RHPIH",
+  RHPIH: "RHPIH",
 
   /**
    * physical impairment - motor skills center
    */
-  physicalimpairmentmotorskillscenter: "RHPIMS",
+  RHPIMS: "RHPIMS",
 
   /**
    * physical impairment - visual skills center
    */
-  physicalimpairmentvisualskillscenter: "RHPIVS",
+  RHPIVS: "RHPIVS",
 
   /**
    * youths with adjustment difficulties center
    */
-  youthswithadjustmentdifficultiescenter: "RHYAD",
+  RHYAD: "RHYAD",
 } as const;
 
 /**

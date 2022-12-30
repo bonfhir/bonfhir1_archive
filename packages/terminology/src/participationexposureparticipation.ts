@@ -6,17 +6,17 @@ export const ParticipationExposureparticipationCode = {
   /**
    * ExposureParticipation
    */
-  ExposureParticipation: "EXPART",
+  EXPART: "EXPART",
 
   /**
    * ExposureTarget
    */
-  ExposureTarget: "EXPTRGT",
+  EXPTRGT: "EXPTRGT",
 
   /**
    * ExposureSource
    */
-  ExposureSource: "EXSRC",
+  EXSRC: "EXSRC",
 } as const;
 
 /**

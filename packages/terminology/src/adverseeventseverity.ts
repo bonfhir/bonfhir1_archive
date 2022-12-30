@@ -6,17 +6,17 @@ export const AdverseEventSeverityCode = {
   /**
    * Mild
    */
-  Mild: "mild",
+  mild: "mild",
 
   /**
    * Moderate
    */
-  Moderate: "moderate",
+  moderate: "moderate",
 
   /**
    * Severe
    */
-  Severe: "severe",
+  severe: "severe",
 } as const;
 
 /**

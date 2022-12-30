@@ -12,7 +12,7 @@ export const ActClassDetectedIssueCode = {
   /**
    * detected issue
    */
-  detectedissue: "ALRT",
+  ALRT: "ALRT",
 } as const;
 
 /**

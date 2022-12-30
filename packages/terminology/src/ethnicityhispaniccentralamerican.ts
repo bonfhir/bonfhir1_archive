@@ -6,47 +6,47 @@ export const EthnicityHispanicCentralAmericanCode = {
   /**
    * Central American
    */
-  CentralAmerican: "2155-0",
+  "2155-0": "2155-0",
 
   /**
    * Costa Rican
    */
-  CostaRican: "2156-8",
+  "2156-8": "2156-8",
 
   /**
    * Guatemalan
    */
-  Guatemalan: "2157-6",
+  "2157-6": "2157-6",
 
   /**
    * Honduran
    */
-  Honduran: "2158-4",
+  "2158-4": "2158-4",
 
   /**
    * Nicaraguan
    */
-  Nicaraguan: "2159-2",
+  "2159-2": "2159-2",
 
   /**
    * Panamanian
    */
-  Panamanian: "2160-0",
+  "2160-0": "2160-0",
 
   /**
    * Salvadoran
    */
-  Salvadoran: "2161-8",
+  "2161-8": "2161-8",
 
   /**
    * Central American Indian
    */
-  CentralAmericanIndian: "2162-6",
+  "2162-6": "2162-6",
 
   /**
    * Canal Zone
    */
-  CanalZone: "2163-4",
+  "2163-4": "2163-4",
 } as const;
 
 /**

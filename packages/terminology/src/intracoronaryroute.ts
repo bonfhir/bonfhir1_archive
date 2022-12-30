@@ -6,17 +6,17 @@ export const IntracoronaryRouteCode = {
   /**
    * Infusion, intracoronary
    */
-  Infusionintracoronary: "ICOR",
+  ICOR: "ICOR",
 
   /**
    * Injection, intracoronary
    */
-  Injectionintracoronary: "ICORONINJ",
+  ICORONINJ: "ICORONINJ",
 
   /**
    * Injection, intracoronary, push
    */
-  Injectionintracoronarypush: "ICORONINJP",
+  ICORONINJP: "ICORONINJP",
 } as const;
 
 /**

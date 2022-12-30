@@ -6,7 +6,7 @@ export const ActShortStayEncounterCodeCode = {
   /**
    * short stay
    */
-  shortstay: "SS",
+  SS: "SS",
 } as const;
 
 /**

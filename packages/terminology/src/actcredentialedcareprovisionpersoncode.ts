@@ -6,197 +6,198 @@ export const ActCredentialedCareProvisionPersonCodeCode = {
   /**
    * act credentialed care provision peron
    */
-  actcredentialedcareprovisionperon: "_ActCredentialedCareProvisionPersonCode",
+  _ActCredentialedCareProvisionPersonCode:
+    "_ActCredentialedCareProvisionPersonCode",
 
   /**
    * certified anatomic pathology and clinical pathology care
    */
-  certifiedanatomicpathologyandclinicalpathologycare: "CACC",
+  CACC: "CACC",
 
   /**
    * certified allergy and immunology care
    */
-  certifiedallergyandimmunologycare: "CAIC",
+  CAIC: "CAIC",
 
   /**
    * certified aerospace medicine care
    */
-  certifiedaerospacemedicinecare: "CAMC",
+  CAMC: "CAMC",
 
   /**
    * certified anesthesiology care
    */
-  certifiedanesthesiologycare: "CANC",
+  CANC: "CANC",
 
   /**
    * certified anatomic pathology care
    */
-  certifiedanatomicpathologycare: "CAPC",
+  CAPC: "CAPC",
 
   /**
    * certified clinical biochemical genetics care
    */
-  certifiedclinicalbiochemicalgeneticscare: "CBGC",
+  CBGC: "CBGC",
 
   /**
    * certified clinical cytogenetics care
    */
-  certifiedclinicalcytogeneticscare: "CCCC",
+  CCCC: "CCCC",
 
   /**
    * certified clinical genetics (M.D.) care
    */
-  certifiedclinicalgeneticsMDcare: "CCGC",
+  CCGC: "CCGC",
 
   /**
    * certified clinical pathology care
    */
-  certifiedclinicalpathologycare: "CCPC",
+  CCPC: "CCPC",
 
   /**
    * certified colon and rectal surgery care
    */
-  certifiedcolonandrectalsurgerycare: "CCSC",
+  CCSC: "CCSC",
 
   /**
    * certified dermatology care
    */
-  certifieddermatologycare: "CDEC",
+  CDEC: "CDEC",
 
   /**
    * certified diagnostic radiology care
    */
-  certifieddiagnosticradiologycare: "CDRC",
+  CDRC: "CDRC",
 
   /**
    * certified emergency medicine care
    */
-  certifiedemergencymedicinecare: "CEMC",
+  CEMC: "CEMC",
 
   /**
    * certified family practice care
    */
-  certifiedfamilypracticecare: "CFPC",
+  CFPC: "CFPC",
 
   /**
    * certified internal medicine care
    */
-  certifiedinternalmedicinecare: "CIMC",
+  CIMC: "CIMC",
 
   /**
    * certified clinical molecular genetics care
    */
-  certifiedclinicalmoleculargeneticscare: "CMGC",
+  CMGC: "CMGC",
 
   /**
    * certified neurology care
    */
-  certifiedneurologycare: "CNEC",
+  CNEC: "CNEC",
 
   /**
    * certified nuclear medicine care
    */
-  certifiednuclearmedicinecare: "CNMC",
+  CNMC: "CNMC",
 
   /**
    * certified neurology with special qualifications in child neurology care
    */
-  certifiedneurologywithspecialqualificationsinchildneurologycare: "CNQC",
+  CNQC: "CNQC",
 
   /**
    * certified neurological surgery care
    */
-  certifiedneurologicalsurgerycare: "CNSC",
+  CNSC: "CNSC",
 
   /**
    * certified obstetrics and gynecology care
    */
-  certifiedobstetricsandgynecologycare: "COGC",
+  COGC: "COGC",
 
   /**
    * certified occupational medicine care
    */
-  certifiedoccupationalmedicinecare: "COMC",
+  COMC: "COMC",
 
   /**
    * certified ophthalmology care
    */
-  certifiedophthalmologycare: "COPC",
+  COPC: "COPC",
 
   /**
    * certified orthopaedic surgery care
    */
-  certifiedorthopaedicsurgerycare: "COSC",
+  COSC: "COSC",
 
   /**
    * certified otolaryngology care
    */
-  certifiedotolaryngologycare: "COTC",
+  COTC: "COTC",
 
   /**
    * certified pediatrics care
    */
-  certifiedpediatricscare: "CPEC",
+  CPEC: "CPEC",
 
   /**
    * certified Ph.D. medical genetics care
    */
-  certifiedPhDmedicalgeneticscare: "CPGC",
+  CPGC: "CPGC",
 
   /**
    * certified public health and general preventive medicine care
    */
-  certifiedpublichealthandgeneralpreventivemedicinecare: "CPHC",
+  CPHC: "CPHC",
 
   /**
    * certified physical medicine and rehabilitation care
    */
-  certifiedphysicalmedicineandrehabilitationcare: "CPRC",
+  CPRC: "CPRC",
 
   /**
    * certified plastic surgery care
    */
-  certifiedplasticsurgerycare: "CPSC",
+  CPSC: "CPSC",
 
   /**
    * certified psychiatry care
    */
-  certifiedpsychiatrycare: "CPYC",
+  CPYC: "CPYC",
 
   /**
    * certified radiation oncology care
    */
-  certifiedradiationoncologycare: "CROC",
+  CROC: "CROC",
 
   /**
    * certified radiological physics care
    */
-  certifiedradiologicalphysicscare: "CRPC",
+  CRPC: "CRPC",
 
   /**
    * certified surgery care
    */
-  certifiedsurgerycare: "CSUC",
+  CSUC: "CSUC",
 
   /**
    * certified thoracic surgery care
    */
-  certifiedthoracicsurgerycare: "CTSC",
+  CTSC: "CTSC",
 
   /**
    * certified urology care
    */
-  certifiedurologycare: "CURC",
+  CURC: "CURC",
 
   /**
    * certified vascular surgery care
    */
-  certifiedvascularsurgerycare: "CVSC",
+  CVSC: "CVSC",
 
   /**
    * licensed general physician care
    */
-  licensedgeneralphysiciancare: "LGPC",
+  LGPC: "LGPC",
 } as const;
 
 /**

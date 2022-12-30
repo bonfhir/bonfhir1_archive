@@ -6,689 +6,687 @@ export const Hl7VSConsentTypeCode = {
   /**
    * Release of Information/MR / Authorization to Disclosure Protected Health Information
    */
-  ReleaseofInformationMRAuthorizationtoDisclosureProtectedHealthInformation:
-    "001",
+  "001": "001",
 
   /**
    * Medical Procedure (invasive)
    */
-  MedicalProcedureinvasive: "002",
+  "002": "002",
 
   /**
    * Acknowledge Receipt of Privacy Notice
    */
-  AcknowledgeReceiptofPrivacyNotice: "003",
+  "003": "003",
 
   /**
    * Abortion
    */
-  Abortion: "004",
+  "004": "004",
 
   /**
    * Abortion/Laminaria
    */
-  AbortionLaminaria: "005",
+  "005": "005",
 
   /**
    * Accutane - Information
    */
-  AccutaneInformation: "006",
+  "006": "006",
 
   /**
    * Accutane - Woman
    */
-  AccutaneWoman: "007",
+  "007": "007",
 
   /**
    * Advanced Beneficiary Notice
    */
-  AdvancedBeneficiaryNotice: "008",
+  "008": "008",
 
   /**
    * AFP (Alpha Fetoprotein) Screening
    */
-  AFPAlphaFetoproteinScreening: "009",
+  "009": "009",
 
   /**
    * Amniocentesis (consent & refusal)
    */
-  Amniocentesisconsentrefusal: "010",
+  "010": "010",
 
   /**
    * Anatomical Gift (organ donation)
    */
-  AnatomicalGiftorgandonation: "011",
+  "011": "011",
 
   /**
    * Anesthesia - Complications
    */
-  AnesthesiaComplications: "012",
+  "012": "012",
 
   /**
    * Anesthesia - Questionnaire
    */
-  AnesthesiaQuestionnaire: "013",
+  "013": "013",
 
   /**
    * Angiogram
    */
-  Angiogram: "014",
+  "014": "014",
 
   /**
    * Angioplasty
    */
-  Angioplasty: "015",
+  "015": "015",
 
   /**
    * Anticancer Drugs
    */
-  AnticancerDrugs: "016",
+  "016": "016",
 
   /**
    * Antipsychotic Medications
    */
-  AntipsychoticMedications: "017",
+  "017": "017",
 
   /**
    * Arthrogram
    */
-  Arthrogram: "018",
+  "018": "018",
 
   /**
    * Autopsy
    */
-  Autopsy: "019",
+  "019": "019",
 
   /**
    * AZT Therapy
    */
-  AZTTherapy: "020",
+  "020": "020",
 
   /**
    * Biliary Drainage
    */
-  BiliaryDrainage: "021",
+  "021": "021",
 
   /**
    * Biliary Stone Extraction
    */
-  BiliaryStoneExtraction: "022",
+  "022": "022",
 
   /**
    * Biopsy
    */
-  Biopsy: "023",
+  "023": "023",
 
   /**
    * Bleeding Time Test
    */
-  BleedingTimeTest: "024",
+  "024": "024",
 
   /**
    * Bronchogram
    */
-  Bronchogram: "025",
+  "025": "025",
 
   /**
    * Cardiac Catheterization
    */
-  CardiacCatheterization: "026",
+  "026": "026",
 
   /**
    * Coronary Angiography
    */
-  CoronaryAngiography: "027",
+  "027": "027",
 
   /**
    * Coronary Angiography w/o Surgery Capability
    */
-  CoronaryAngiographywoSurgeryCapability: "028",
+  "028": "028",
 
   /**
    * Cataract Op/Implant of FDA Aprvd Lens
    */
-  CataractOpImplantofFDAAprvdLens: "029",
+  "029": "029",
 
   /**
    * Cataract Op/Implant of Investigational Lens
    */
-  CataractOpImplantofInvestigationalLens: "030",
+  "030": "030",
 
   /**
    * Cataract Surgery
    */
-  CataractSurgery: "031",
+  "031": "031",
 
   /**
    * Cholera Immunization
    */
-  CholeraImmunization: "032",
+  "032": "032",
 
   /**
    * Cholesterol Screening
    */
-  CholesterolScreening: "033",
+  "033": "033",
 
   /**
    * Circumcision - Newborn
    */
-  CircumcisionNewborn: "034",
+  "034": "034",
 
   /**
    * Colonoscopy
    */
-  Colonoscopy: "035",
+  "035": "035",
 
   /**
    * Contact Lenses
    */
-  ContactLenses: "036",
+  "036": "036",
 
   /**
    * CT Scan - Cervical & Lumbar
    */
-  CTScanCervicalLumbar: "037",
+  "037": "037",
 
   /**
    * CT Scan w/ IV Contrast Media into Vein
    */
-  CTScanwIVContrastMediaintoVein: "038",
+  "038": "038",
 
   /**
    * CVS (Chorionic Villus) Sampling
    */
-  CVSChorionicVillusSampling: "039",
+  "039": "039",
 
   /**
    * Cystospy
    */
-  Cystospy: "040",
+  "040": "040",
 
   /**
    * Disclosure of Protected Health Information to Family/Friends
    */
-  DisclosureofProtectedHealthInformationtoFamilyFriends: "041",
+  "041": "041",
 
   /**
    * D & C and Conization
    */
-  DCandConization: "042",
+  "042": "042",
 
   /**
    * Dacryocystogram
    */
-  Dacryocystogram: "043",
+  "043": "043",
 
   /**
    * Diagnostic Isotope
    */
-  DiagnosticIsotope: "044",
+  "044": "044",
 
   /**
    * Drainage of an Abscess
    */
-  DrainageofanAbscess: "045",
+  "045": "045",
 
   /**
    * Drug Screening
    */
-  DrugScreening: "046",
+  "046": "046",
 
   /**
    * Electronic Monitoring of Labor - Refusal
    */
-  ElectronicMonitoringofLaborRefusal: "047",
+  "047": "047",
 
   /**
    * Endometrial Biopsy
    */
-  EndometrialBiopsy: "048",
+  "048": "048",
 
   /**
    * Endoscopy/Sclerosis of Esophageal Varices
    */
-  EndoscopySclerosisofEsophagealVarices: "049",
+  "049": "049",
 
   /**
    * ERCP
    */
-  ERCP: "050",
+  "050": "050",
 
   /**
    * Exposure to reportable Communicable Disease
    */
-  ExposuretoreportableCommunicableDisease: "051",
+  "051": "051",
 
   /**
    * External Version
    */
-  ExternalVersion: "052",
+  "052": "052",
 
   /**
    * Fluorescein Angioscopy
    */
-  FluoresceinAngioscopy: "053",
+  "053": "053",
 
   /**
    * Hepatitis B - Consent/Declination
    */
-  HepatitisBConsentDeclination: "054",
+  "054": "054",
 
   /**
    * Herniogram
    */
-  Herniogram: "055",
+  "055": "055",
 
   /**
    * HIV Test - Consent Refusal
    */
-  HIVTestConsentRefusal: "056",
+  "056": "056",
 
   /**
    * HIV Test - Disclosure
    */
-  HIVTestDisclosure: "057",
+  "057": "057",
 
   /**
    * HIV Test - Prenatal
    */
-  HIVTestPrenatal: "058",
+  "058": "058",
 
   /**
    * Home IV Treatment Program
    */
-  HomeIVTreatmentProgram: "059",
+  "059": "059",
 
   /**
    * Home Parenteral Treatment Program
    */
-  HomeParenteralTreatmentProgram: "060",
+  "060": "060",
 
   /**
    * Hysterectomy
    */
-  Hysterectomy: "061",
+  "061": "061",
 
   /**
    * Hysterosalpingogram
    */
-  Hysterosalpingogram: "062",
+  "062": "062",
 
   /**
    * Injection Slip/ Consent
    */
-  InjectionSlipConsent: "063",
+  "063": "063",
 
   /**
    * Intrauterine Device
    */
-  IntrauterineDevice: "064",
+  "064": "064",
 
   /**
    * Intrauterine Device/Sterilization
    */
-  IntrauterineDeviceSterilization: "065",
+  "065": "065",
 
   /**
    * Intravascular Infusion of Streptokinase/Urokinase
    */
-  IntravascularInfusionofStreptokinaseUrokinase: "066",
+  "066": "066",
 
   /**
    * Intravenous Cholangiogram
    */
-  IntravenousCholangiogram: "067",
+  "067": "067",
 
   /**
    * Intravenous Digital Angiography
    */
-  IntravenousDigitalAngiography: "068",
+  "068": "068",
 
   /**
    * Iodine Administration
    */
-  IodineAdministration: "069",
+  "069": "069",
 
   /**
    * ISG
    */
-  ISG: "070",
+  "070": "070",
 
   /**
    * IVP
    */
-  IVP: "071",
+  "071": "071",
 
   /**
    * Laser Photocoagulation
    */
-  LaserPhotocoagulation: "072",
+  "072": "072",
 
   /**
    * Laser treatment
    */
-  Lasertreatment: "073",
+  "073": "073",
 
   /**
    * Lithium Carbonate
    */
-  LithiumCarbonate: "074",
+  "074": "074",
 
   /**
    * Liver Biopsy
    */
-  LiverBiopsy: "075",
+  "075": "075",
 
   /**
    * Lumbar Puncture
    */
-  LumbarPuncture: "076",
+  "076": "076",
 
   /**
    * Lymphangiogram
    */
-  Lymphangiogram: "077",
+  "077": "077",
 
   /**
    * MAO Inhibitors
    */
-  MAOInhibitors: "078",
+  "078": "078",
 
   /**
    * Med, Psych, and/or Drug/Alcohol
    */
-  MedPsychandorDrugAlcohol: "079",
+  "079": "079",
 
   /**
    * Medical Treatment - Refusal
    */
-  MedicalTreatmentRefusal: "080",
+  "080": "080",
 
   /**
    * Morning-after Pill
    */
-  MorningafterPill: "081",
+  "081": "081",
 
   /**
    * MRI - Adult
    */
-  MRIAdult: "082",
+  "082": "082",
 
   /**
    * MRI - Pediatric
    */
-  MRIPediatric: "083",
+  "083": "083",
 
   /**
    * Myelogram
    */
-  Myelogram: "084",
+  "084": "084",
 
   /**
    * Needle Biopsy
    */
-  NeedleBiopsy: "085",
+  "085": "085",
 
   /**
    * Needle Biopsy of Lung
    */
-  NeedleBiopsyofLung: "086",
+  "086": "086",
 
   /**
    * Newborn Treatment and Release
    */
-  NewbornTreatmentandRelease: "087",
+  "087": "087",
 
   /**
    * Norplant Subdermal Birth Control Implant
    */
-  NorplantSubdermalBirthControlImplant: "088",
+  "088": "088",
 
   /**
    * Operations, Anesthesia, Transfusions
    */
-  OperationsAnesthesiaTransfusions: "089",
+  "089": "089",
 
   /**
    * Oral Contraceptives
    */
-  OralContraceptives: "090",
+  "090": "090",
 
   /**
    * Organ Donation
    */
-  OrganDonation: "091",
+  "091": "091",
 
   /**
    * Patient Permits, Consents
    */
-  PatientPermitsConsents: "092",
+  "092": "092",
 
   /**
    * Patient Treatment Permit, Release & Admission
    */
-  PatientTreatmentPermitReleaseAdmission: "093",
+  "093": "093",
 
   /**
    * Penile Injections
    */
-  PenileInjections: "094",
+  "094": "094",
 
   /**
    * Percutaneous Nephrostomy
    */
-  PercutaneousNephrostomy: "095",
+  "095": "095",
 
   /**
    * Percutaneous Transhepatic Cholangiogram
    */
-  PercutaneousTranshepaticCholangiogram: "096",
+  "096": "096",
 
   /**
    * Photographs
    */
-  Photographs: "097",
+  "097": "097",
 
   /**
    * Photographs - Employee
    */
-  PhotographsEmployee: "098",
+  "098": "098",
 
   /**
    * Photographs - Medical Research
    */
-  PhotographsMedicalResearch: "099",
+  "099": "099",
 
   /**
    * Photographs - news Media
    */
-  PhotographsnewsMedia: "100",
+  "100": "100",
 
   /**
    * Psychiatric Admission - Next of Kin
    */
-  PsychiatricAdmissionNextofKin: "101",
+  "101": "101",
 
   /**
    * Psychiatric Information During Hospital Stay
    */
-  PsychiatricInformationDuringHospitalStay: "102",
+  "102": "102",
 
   /**
    * Public Release of Information
    */
-  PublicReleaseofInformation: "103",
+  "103": "103",
 
   /**
    * Radiologic Procedure
    */
-  RadiologicProcedure: "104",
+  "104": "104",
 
   /**
    * Refusal of Treatment
    */
-  RefusalofTreatment: "105",
+  "105": "105",
 
   /**
    * Release of Body
    */
-  ReleaseofBody: "106",
+  "106": "106",
 
   /**
    * Release of Limb
    */
-  ReleaseofLimb: "107",
+  "107": "107",
 
   /**
    * Rh Immune Globulin
    */
-  RhImmuneGlobulin: "108",
+  "108": "108",
 
   /**
    * Rights of Medical Research Participants
    */
-  RightsofMedicalResearchParticipants: "109",
+  "109": "109",
 
   /**
    * Request to Restrict Access/Disclosure to Medical Record/Protected Health Information
    */
-  RequesttoRestrictAccessDisclosuretoMedicalRecordProtectedHealthInformation:
-    "110",
+  "110": "110",
 
   /**
    * Request for Remain Anonymous
    */
-  RequestforRemainAnonymous: "111",
+  "111": "111",
 
   /**
    * Seat Belt Exemption
    */
-  SeatBeltExemption: "112",
+  "112": "112",
 
   /**
    * Sialogram
    */
-  Sialogram: "113",
+  "113": "113",
 
   /**
    * Sigmoidoscopy
    */
-  Sigmoidoscopy: "114",
+  "114": "114",
 
   /**
    * Sterilization - Anesthesia & Medical Services
    */
-  SterilizationAnesthesiaMedicalServices: "115",
+  "115": "115",
 
   /**
    * Sterilization -Federally Funded
    */
-  SterilizationFederallyFunded: "116",
+  "116": "116",
 
   /**
    * Sterilization - Female
    */
-  SterilizationFemale: "117",
+  "117": "117",
 
   /**
    * Sterilization - Laparoscopy/Pomeroy
    */
-  SterilizationLaparoscopyPomeroy: "118",
+  "118": "118",
 
   /**
    * Sterilization - Non-Federally Funded
    */
-  SterilizationNonFederallyFunded: "119",
+  "119": "119",
 
   /**
    * Sterilization - Secondary
    */
-  SterilizationSecondary: "120",
+  "120": "120",
 
   /**
    * Tranquilizers
    */
-  Tranquilizers: "121",
+  "121": "121",
 
   /**
    * Transfer - Acknowledgement
    */
-  TransferAcknowledgement: "122",
+  "122": "122",
 
   /**
    * Transfer - Authorization
    */
-  TransferAuthorization: "123",
+  "123": "123",
 
   /**
    * Transfer Certification - Physician
    */
-  TransferCertificationPhysician: "124",
+  "124": "124",
 
   /**
    * Transfer/Discharge Request
    */
-  TransferDischargeRequest: "125",
+  "125": "125",
 
   /**
    * Transfer for Non-Medical Reasons
    */
-  TransferforNonMedicalReasons: "126",
+  "126": "126",
 
   /**
    * Transfer - Interfaculty Neonatal
    */
-  TransferInterfacultyNeonatal: "127",
+  "127": "127",
 
   /**
    * Transfer Refusal
    */
-  TransferRefusal: "128",
+  "128": "128",
 
   /**
    * Transfer Refusal of Further Treatment
    */
-  TransferRefusalofFurtherTreatment: "129",
+  "129": "129",
 
   /**
    * Treadmill & EKG
    */
-  TreadmillEKG: "130",
+  "130": "130",
 
   /**
    * Treadmill, Thallium-201
    */
-  TreadmillThallium201: "131",
+  "131": "131",
 
   /**
    * Typhoid
    */
-  Typhoid: "132",
+  "132": "132",
 
   /**
    * Use of Investigational Device
    */
-  UseofInvestigationalDevice: "133",
+  "133": "133",
 
   /**
    * Use of Investigational Drug
    */
-  UseofInvestigationalDrug: "134",
+  "134": "134",
 
   /**
    * Venogram
    */
-  Venogram: "135",
+  "135": "135",
 
   /**
    * Videotape
    */
-  Videotape: "136",
+  "136": "136",
 
   /**
    * Voiding Cystogram
    */
-  VoidingCystogram: "1137",
+  "1137": "1137",
 } as const;
 
 /**

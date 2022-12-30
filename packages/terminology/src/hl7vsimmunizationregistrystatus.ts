@@ -6,37 +6,37 @@ export const Hl7VSImmunizationRegistryStatusCode = {
   /**
    * Active
    */
-  Active: "A",
+  A: "A",
 
   /**
    * Inactive
    */
-  Inactive: "I",
+  I: "I",
 
   /**
    * Inactive - Lost to follow-up (cancel contract)
    */
-  InactiveLosttofollowupcancelcontract: "L",
+  L: "L",
 
   /**
    * Inactive - Moved or gone elsewhere (cancel contract)
    */
-  InactiveMovedorgoneelsewherecancelcontract: "M",
+  M: "M",
 
   /**
    * Inactive - Permanently inactive (Do not reactivate or add new entries to the record)
    */
-  InactivePermanentlyinactiveDonotreactivateoraddnewentriestotherecord: "P",
+  P: "P",
 
   /**
    * Other
    */
-  Other: "O",
+  O: "O",
 
   /**
    * Unknown
    */
-  Unknown: "U",
+  U: "U",
 } as const;
 
 /**

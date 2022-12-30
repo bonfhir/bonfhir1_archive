@@ -6,12 +6,12 @@ export const BlisterPackEntityTypeCode = {
   /**
    * Blister Pack
    */
-  BlisterPack: "BLSTRPK",
+  BLSTRPK: "BLSTRPK",
 
   /**
    * Card
    */
-  Card: "CARD",
+  CARD: "CARD",
 } as const;
 
 /**

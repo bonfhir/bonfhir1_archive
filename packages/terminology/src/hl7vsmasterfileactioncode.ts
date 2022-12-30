@@ -6,27 +6,27 @@ export const Hl7VSMasterfileActionCodeCode = {
   /**
    * Add record to master file
    */
-  Addrecordtomasterfile: "MAD",
+  MAD: "MAD",
 
   /**
    * Delete record from master file
    */
-  Deleterecordfrommasterfile: "MDL",
+  MDL: "MDL",
 
   /**
    * Update record for master file
    */
-  Updaterecordformasterfile: "MUP",
+  MUP: "MUP",
 
   /**
    * Deactivate: discontinue using record in master file, but do not delete from database
    */
-  Deactivatediscontinueusingrecordinmasterfilebutdonotdeletefromdatabase: "MDC",
+  MDC: "MDC",
 
   /**
    * Reactivate deactivated record
    */
-  Reactivatedeactivatedrecord: "MAC",
+  MAC: "MAC",
 } as const;
 
 /**

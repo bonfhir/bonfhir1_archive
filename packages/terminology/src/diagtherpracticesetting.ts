@@ -6,47 +6,47 @@ export const DiagTherPracticeSettingCode = {
   /**
    * Diagnostics or therapeutics unit
    */
-  Diagnosticsortherapeuticsunit: "DX",
+  DX: "DX",
 
   /**
    * Cardiovascular diagnostics or therapeutics unit
    */
-  Cardiovasculardiagnosticsortherapeuticsunit: "CVDX",
+  CVDX: "CVDX",
 
   /**
    * Cardiac catheterization lab
    */
-  Cardiaccatheterizationlab: "CATH",
+  CATH: "CATH",
 
   /**
    * Echocardiography lab
    */
-  Echocardiographylab: "ECHO",
+  ECHO: "ECHO",
 
   /**
    * Gastroenterology diagnostics or therapeutics lab
    */
-  Gastroenterologydiagnosticsortherapeuticslab: "GIDX",
+  GIDX: "GIDX",
 
   /**
    * Endoscopy lab
    */
-  Endoscopylab: "ENDOS",
+  ENDOS: "ENDOS",
 
   /**
    * Radiology diagnostics or therapeutics unit
    */
-  Radiologydiagnosticsortherapeuticsunit: "RADDX",
+  RADDX: "RADDX",
 
   /**
    * Radiation oncology unit
    */
-  Radiationoncologyunit: "RADO",
+  RADO: "RADO",
 
   /**
    * Neuroradiology unit
    */
-  Neuroradiologyunit: "RNEU",
+  RNEU: "RNEU",
 } as const;
 
 /**

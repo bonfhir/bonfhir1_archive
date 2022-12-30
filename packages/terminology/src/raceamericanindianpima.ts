@@ -6,17 +6,17 @@ export const RaceAmericanIndianPimaCode = {
   /**
    * Pima
    */
-  Pima: "1456-3",
+  "1456-3": "1456-3",
 
   /**
    * Gila River Pima-Maricopa
    */
-  GilaRiverPimaMaricopa: "1457-1",
+  "1457-1": "1457-1",
 
   /**
    * Salt River Pima-Maricopa
    */
-  SaltRiverPimaMaricopa: "1458-9",
+  "1458-9": "1458-9",
 } as const;
 
 /**

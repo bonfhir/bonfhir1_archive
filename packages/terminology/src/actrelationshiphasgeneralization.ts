@@ -6,7 +6,7 @@ export const ActRelationshipHasGeneralizationCode = {
   /**
    * has generalization
    */
-  hasgeneralization: "GEN",
+  GEN: "GEN",
 } as const;
 
 /**

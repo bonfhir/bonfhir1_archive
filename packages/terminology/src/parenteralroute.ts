@@ -6,7 +6,7 @@ export const ParenteralRouteCode = {
   /**
    * Injection, parenteral
    */
-  Injectionparenteral: "PARENTINJ",
+  PARENTINJ: "PARENTINJ",
 } as const;
 
 /**

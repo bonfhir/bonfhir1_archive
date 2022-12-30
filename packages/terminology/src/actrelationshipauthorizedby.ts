@@ -6,7 +6,7 @@ export const ActRelationshipAuthorizedByCode = {
   /**
    * authorized by
    */
-  authorizedby: "AUTH",
+  AUTH: "AUTH",
 } as const;
 
 /**

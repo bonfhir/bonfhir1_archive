@@ -6,7 +6,7 @@ export const ActMoodResourceSlotCode = {
   /**
    * resource slot
    */
-  resourceslot: "SLOT",
+  SLOT: "SLOT",
 } as const;
 
 /**

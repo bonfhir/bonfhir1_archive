@@ -6,7 +6,7 @@ export const TransplacentalRouteCode = {
   /**
    * Injection, transplacental
    */
-  Injectiontransplacental: "TRPLACINJ",
+  TRPLACINJ: "TRPLACINJ",
 } as const;
 
 /**

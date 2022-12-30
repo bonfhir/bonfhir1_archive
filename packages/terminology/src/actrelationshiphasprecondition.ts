@@ -6,7 +6,7 @@ export const ActRelationshipHasPreConditionCode = {
   /**
    * has pre-condition
    */
-  hasprecondition: "PRCN",
+  PRCN: "PRCN",
 } as const;
 
 /**

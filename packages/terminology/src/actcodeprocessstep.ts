@@ -6,72 +6,72 @@ export const ActCodeProcessStepCode = {
   /**
    * Acidification
    */
-  Acidification: "ACID",
+  ACID: "ACID",
 
   /**
    * Alkalization
    */
-  Alkalization: "ALK",
+  ALK: "ALK",
 
   /**
    * corrected
    */
-  corrected: "C",
+  C: "C",
 
   /**
    * Defibrination
    */
-  Defibrination: "DEFB",
+  DEFB: "DEFB",
 
   /**
    * final
    */
-  final: "F",
+  F: "F",
 
   /**
    * Filtration
    */
-  Filtration: "FILT",
+  FILT: "FILT",
 
   /**
    * LDL Precipitation
    */
-  LDLPrecipitation: "LDLP",
+  LDLP: "LDLP",
 
   /**
    * Neutralization
    */
-  Neutralization: "NEUT",
+  NEUT: "NEUT",
 
   /**
    * preliminary
    */
-  preliminary: "PRLMN",
+  PRLMN: "PRLMN",
 
   /**
    * Recalcification
    */
-  Recalcification: "RECA",
+  RECA: "RECA",
 
   /**
    * specimen received
    */
-  specimenreceived: "SREC",
+  SREC: "SREC",
 
   /**
    * specimen in storage
    */
-  specimeninstorage: "SSTOR",
+  SSTOR: "SSTOR",
 
   /**
    * specimen in transit
    */
-  specimenintransit: "STRAN",
+  STRAN: "STRAN",
 
   /**
    * Ultrafiltration
    */
-  Ultrafiltration: "UFIL",
+  UFIL: "UFIL",
 } as const;
 
 /**

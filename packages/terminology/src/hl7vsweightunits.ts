@@ -6,12 +6,12 @@ export const Hl7VSWeightUnitsCode = {
   /**
    * [lb_av]
    */
-  lb_av: "[lb_av]",
+  "[lb_av]": "[lb_av]",
 
   /**
    * [oz_av]
    */
-  oz_av: "[oz_av]",
+  "[oz_av]": "[oz_av]",
 
   /**
    * kg

@@ -6,12 +6,12 @@ export const Hl7VSMedicalRoleExecutingPhysicianCode = {
   /**
    * Employed
    */
-  Employed: "E",
+  E: "E",
 
   /**
    * Self-employed
    */
-  Selfemployed: "SE",
+  SE: "SE",
 } as const;
 
 /**

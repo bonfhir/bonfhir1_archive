@@ -6,7 +6,7 @@ export const SecurityIntegrityProvenanceReportedByObservationTypeCode = {
   /**
    * security integrity provenance reported by observation
    */
-  securityintegrityprovenancereportedbyobservation: "SECINTPRVRBOBS",
+  SECINTPRVRBOBS: "SECINTPRVRBOBS",
 } as const;
 
 /**

@@ -6,67 +6,67 @@ export const Hl7VSEventRelatedPeriodCode = {
   /**
    * the hour of sleep (e.g., H18-22)
    */
-  thehourofsleepegH1822: "HS",
+  HS: "HS",
 
   /**
    * before meal (from lat. ante cibus)
    */
-  beforemealfromlatantecibus: "AC",
+  AC: "AC",
 
   /**
    * after meal (from lat. post cibus)
    */
-  aftermealfromlatpostcibus: "PC",
+  PC: "PC",
 
   /**
    * between meals (from lat. inter cibus)
    */
-  betweenmealsfromlatintercibus: "IC",
+  IC: "IC",
 
   /**
    * before breakfast (from lat. ante cibus matutinus)
    */
-  beforebreakfastfromlatantecibusmatutinus: "ACM",
+  ACM: "ACM",
 
   /**
    * before lunch (from lat. ante cibus diurnus)
    */
-  beforelunchfromlatantecibusdiurnus: "ACD",
+  ACD: "ACD",
 
   /**
    * before dinner (from lat. ante cibus vespertinus)
    */
-  beforedinnerfromlatantecibusvespertinus: "ACV",
+  ACV: "ACV",
 
   /**
    * after breakfast (from lat. post cibus matutinus)
    */
-  afterbreakfastfromlatpostcibusmatutinus: "PCM",
+  PCM: "PCM",
 
   /**
    * after lunch (from lat. post cibus diurnus)
    */
-  afterlunchfromlatpostcibusdiurnus: "PCD",
+  PCD: "PCD",
 
   /**
    * after dinner (from lat. post cibus vespertinus)
    */
-  afterdinnerfromlatpostcibusvespertinus: "PCV",
+  PCV: "PCV",
 
   /**
    * between breakfast and lunch
    */
-  betweenbreakfastandlunch: "ICM",
+  ICM: "ICM",
 
   /**
    * between lunch and dinner
    */
-  betweenlunchanddinner: "ICD",
+  ICD: "ICD",
 
   /**
    * between dinner and the hour of sleep
    */
-  betweendinnerandthehourofsleep: "ICV",
+  ICV: "ICV",
 } as const;
 
 /**

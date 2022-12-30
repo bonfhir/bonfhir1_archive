@@ -6,17 +6,17 @@ export const DeltaCaliforniaCode = {
   /**
    * Diegueno
    */
-  Diegueno: "_Diegueno",
+  _Diegueno: "_Diegueno",
 
   /**
    * Kumeyaay
    */
-  Kumeyaay: "x-DIH",
+  "x-DIH": "x-DIH",
 
   /**
    * Cocopa
    */
-  Cocopa: "x-COC",
+  "x-COC": "x-COC",
 } as const;
 
 /**

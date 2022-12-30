@@ -6,17 +6,17 @@ export const ResearchStudyObjectiveTypeCode = {
   /**
    * Primary
    */
-  Primary: "primary",
+  primary: "primary",
 
   /**
    * Secondary
    */
-  Secondary: "secondary",
+  secondary: "secondary",
 
   /**
    * Exploratory
    */
-  Exploratory: "exploratory",
+  exploratory: "exploratory",
 } as const;
 
 /**

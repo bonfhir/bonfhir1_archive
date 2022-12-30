@@ -6,27 +6,27 @@ export const ExtendedReleaseCapsuleCode = {
   /**
    * Extended Release Capsule
    */
-  ExtendedReleaseCapsule: "ERCAP",
+  ERCAP: "ERCAP",
 
   /**
    * Extended Release Enteric Coated Capsule
    */
-  ExtendedReleaseEntericCoatedCapsule: "ERENTCAP",
+  ERENTCAP: "ERENTCAP",
 
   /**
    * 12 Hour Extended Release Capsule
    */
-  TwelveHourExtendedReleaseCapsule: "ERCAP12",
+  ERCAP12: "ERCAP12",
 
   /**
    * 24 Hour Extended Release Capsule
    */
-  TwentyFourHourExtendedReleaseCapsule: "ERCAP24",
+  ERCAP24: "ERCAP24",
 
   /**
    * Extended Release Enteric Coated Capsule
    */
-  ExtendedReleaseEntericCoatedCapsule: "ERECCAP",
+  ERECCAP: "ERECCAP",
 } as const;
 
 /**

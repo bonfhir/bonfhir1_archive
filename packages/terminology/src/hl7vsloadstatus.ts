@@ -6,22 +6,22 @@ export const Hl7VSLoadStatusCode = {
   /**
    * Building a Load
    */
-  BuildingaLoad: "LLD",
+  LLD: "LLD",
 
   /**
    * Load In Process
    */
-  LoadInProcess: "LCP",
+  LCP: "LCP",
 
   /**
    * Load is Complete
    */
-  LoadisComplete: "LCC",
+  LCC: "LCC",
 
   /**
    * Load Canceled
    */
-  LoadCanceled: "LCN",
+  LCN: "LCN",
 } as const;
 
 /**

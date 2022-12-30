@@ -6,28 +6,28 @@ export const SubstanceAdministrationPermissionRefusalReasonCodeCode = {
   /**
    * SubstanceAdministrationPermissionRefusalReasonCode
    */
-  SubstanceAdministrationPermissionRefusalReasonCode:
+  _SubstanceAdministrationPermissionRefusalReasonCode:
     "_SubstanceAdministrationPermissionRefusalReasonCode",
 
   /**
    * no user permission
    */
-  nouserpermission: "NOUSERPERM",
+  NOUSERPERM: "NOUSERPERM",
 
   /**
    * patient not eligible
    */
-  patientnoteligible: "PATINELIG",
+  PATINELIG: "PATINELIG",
 
   /**
    * protocol not met
    */
-  protocolnotmet: "PROTUNMET",
+  PROTUNMET: "PROTUNMET",
 
   /**
    * provider not authorized
    */
-  providernotauthorized: "PROVUNAUTH",
+  PROVUNAUTH: "PROVUNAUTH",
 } as const;
 
 /**

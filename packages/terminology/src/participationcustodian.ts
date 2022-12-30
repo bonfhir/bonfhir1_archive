@@ -6,7 +6,7 @@ export const ParticipationCustodianCode = {
   /**
    * custodian
    */
-  custodian: "CST",
+  CST: "CST",
 } as const;
 
 /**

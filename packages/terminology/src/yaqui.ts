@@ -6,17 +6,17 @@ export const YaquiCode = {
   /**
    * Yaqui
    */
-  Yaqui: "1711-1",
+  "1711-1": "1711-1",
 
   /**
    * Barrio Libre
    */
-  BarrioLibre: "1712-9",
+  "1712-9": "1712-9",
 
   /**
    * Pascua Yaqui
    */
-  PascuaYaqui: "1713-7",
+  "1713-7": "1713-7",
 } as const;
 
 /**

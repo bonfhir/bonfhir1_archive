@@ -6,22 +6,22 @@ export const RaceAmericanIndianSacFoxCode = {
   /**
    * Sac and Fox
    */
-  SacandFox: "1551-1",
+  "1551-1": "1551-1",
 
   /**
    * Iowa Sac and Fox
    */
-  IowaSacandFox: "1552-9",
+  "1552-9": "1552-9",
 
   /**
    * Missouri Sac and Fox
    */
-  MissouriSacandFox: "1553-7",
+  "1553-7": "1553-7",
 
   /**
    * Oklahoma Sac and Fox
    */
-  OklahomaSacandFox: "1554-5",
+  "1554-5": "1554-5",
 } as const;
 
 /**

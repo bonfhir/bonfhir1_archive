@@ -6,17 +6,17 @@ export const LengthOutOfRangeCode = {
   /**
    * length out of range
    */
-  lengthoutofrange: "LEN_RANGE",
+  LEN_RANGE: "LEN_RANGE",
 
   /**
    * length is too long
    */
-  lengthistoolong: "LEN_LONG",
+  LEN_LONG: "LEN_LONG",
 
   /**
    * length is too short
    */
-  lengthistooshort: "LEN_SHORT",
+  LEN_SHORT: "LEN_SHORT",
 } as const;
 
 /**

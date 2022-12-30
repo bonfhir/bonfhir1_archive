@@ -6,52 +6,52 @@ export const AdministrationMedicalDeviceCode = {
   /**
    * InjectionMedicalDevice
    */
-  InjectionMedicalDevice: "_InjectionMedicalDevice",
+  _InjectionMedicalDevice: "_InjectionMedicalDevice",
 
   /**
    * AutoInjector
    */
-  AutoInjector: "AINJ",
+  AINJ: "AINJ",
 
   /**
    * Pen
    */
-  Pen: "PEN",
+  PEN: "PEN",
 
   /**
    * Syringe
    */
-  Syringe: "SYR",
+  SYR: "SYR",
 
   /**
    * Applicator
    */
-  Applicator: "APLCTR",
+  APLCTR: "APLCTR",
 
   /**
    * Inhaler
    */
-  Inhaler: "INH",
+  INH: "INH",
 
   /**
    * Diskus
    */
-  Diskus: "DSKS",
+  DSKS: "DSKS",
 
   /**
    * Diskhaler
    */
-  Diskhaler: "DSKUNH",
+  DSKUNH: "DSKUNH",
 
   /**
    * Turbuhaler
    */
-  Turbuhaler: "TRBINH",
+  TRBINH: "TRBINH",
 
   /**
    * Pump
    */
-  Pump: "PMP",
+  PMP: "PMP",
 } as const;
 
 /**

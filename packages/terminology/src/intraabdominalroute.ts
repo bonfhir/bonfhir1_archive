@@ -6,7 +6,7 @@ export const IntraabdominalRouteCode = {
   /**
    * Injection, intra-abdominal
    */
-  Injectionintraabdominal: "IABDINJ",
+  IABDINJ: "IABDINJ",
 } as const;
 
 /**

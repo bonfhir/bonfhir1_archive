@@ -6,7 +6,7 @@ export const RoleClassInstanceCode = {
   /**
    * instance
    */
-  instance: "INST",
+  INST: "INST",
 } as const;
 
 /**

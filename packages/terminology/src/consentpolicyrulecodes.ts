@@ -6,138 +6,137 @@ export const ConsentPolicyRuleCodesCode = {
   /**
    * Common Rule Informed Consent
    */
-  CommonRuleInformedConsent: "cric",
+  cric: "cric",
 
   /**
    * Illinois Consent by Minors to Medical Procedures
    */
-  IllinoisConsentbyMinorstoMedicalProcedures: "illinois-minor-procedure",
+  "illinois-minor-procedure": "illinois-minor-procedure",
 
   /**
    * HIPAA Authorization
    */
-  HIPAAAuthorization: "hipaa-auth",
+  "hipaa-auth": "hipaa-auth",
 
   /**
    * HIPAA Notice of Privacy Practices
    */
-  HIPAANoticeofPrivacyPractices: "hipaa-npp",
+  "hipaa-npp": "hipaa-npp",
 
   /**
    * HIPAA Restrictions
    */
-  HIPAARestrictions: "hipaa-restrictions",
+  "hipaa-restrictions": "hipaa-restrictions",
 
   /**
    * HIPAA Research Authorization
    */
-  HIPAAResearchAuthorization: "hipaa-research",
+  "hipaa-research": "hipaa-research",
 
   /**
    * HIPAA Self-Pay Restriction
    */
-  HIPAASelfPayRestriction: "hipaa-self-pay",
+  "hipaa-self-pay": "hipaa-self-pay",
 
   /**
    * Michigan MDHHS-5515 Consent to Share Behavioral Health Information for Care Coordination Purposes
    */
-  MichiganMDHHS5515ConsenttoShareBehavioralHealthInformationforCareCoordinationPurposes:
-    "mdhhs-5515",
+  "mdhhs-5515": "mdhhs-5515",
 
   /**
    * New York State Surgical and Invasive Procedure Protocol
    */
-  NewYorkStateSurgicalandInvasiveProcedureProtocol: "nyssipp",
+  nyssipp: "nyssipp",
 
   /**
    * VA Form 10-0484
    */
-  VAForm100484: "va-10-0484",
+  "va-10-0484": "va-10-0484",
 
   /**
    * VA Form 10-0485
    */
-  VAForm100485: "va-10-0485",
+  "va-10-0485": "va-10-0485",
 
   /**
    * VA Form 10-5345
    */
-  VAForm105345: "va-10-5345",
+  "va-10-5345": "va-10-5345",
 
   /**
    * VA Form 10-5345a
    */
-  VAForm105345a: "va-10-5345a",
+  "va-10-5345a": "va-10-5345a",
 
   /**
    * VA Form 10-5345a-MHV
    */
-  VAForm105345aMHV: "va-10-5345a-mhv",
+  "va-10-5345a-mhv": "va-10-5345a-mhv",
 
   /**
    * VA Form 10-10-10116
    */
-  VAForm101010116: "va-10-10116",
+  "va-10-10116": "va-10-10116",
 
   /**
    * VA Form 21-4142
    */
-  VAForm214142: "va-21-4142",
+  "va-21-4142": "va-21-4142",
 
   /**
    * SSA Authorization to Disclose
    */
-  SSAAuthorizationtoDisclose: "ssa-827",
+  "ssa-827": "ssa-827",
 
   /**
    * Michigan behavior and mental health consent
    */
-  Michiganbehaviorandmentalhealthconsent: "dch-3927",
+  "dch-3927": "dch-3927",
 
   /**
    * Squaxin Indian behavioral health and HIPAA consent
    */
-  SquaxinIndianbehavioralhealthandHIPAAconsent: "squaxin",
+  squaxin: "squaxin",
 
   /**
    * NL LSP Permission
    */
-  NLLSPPermission: "nl-lsp",
+  "nl-lsp": "nl-lsp",
 
   /**
    * AT ELGA Opt-in Consent
    */
-  ATELGAOptinConsent: "at-elga",
+  "at-elga": "at-elga",
 
   /**
    * HHS NIH HIPAA Research Authorization
    */
-  HHSNIHHIPAAResearchAuthorization: "nih-hipaa",
+  "nih-hipaa": "nih-hipaa",
 
   /**
    * NCI Cancer Clinical Trial consent
    */
-  NCICancerClinicalTrialconsent: "nci",
+  nci: "nci",
 
   /**
    * NIH Global Rare Disease Patient Registry and Data Repository consent
    */
-  NIHGlobalRareDiseasePatientRegistryandDataRepositoryconsent: "nih-grdr",
+  "nih-grdr": "nih-grdr",
 
   /**
    * NIH Authorization for the Release of Medical Information
    */
-  NIHAuthorizationfortheReleaseofMedicalInformation: "nih-527",
+  "nih-527": "nih-527",
 
   /**
    * Population origins and ancestry research consent
    */
-  Populationoriginsandancestryresearchconsent: "ga4gh",
+  ga4gh: "ga4gh",
 
   /**
    * CH EPR Consent
    */
-  CHEPRConsent: "ch-epr",
+  "ch-epr": "ch-epr",
 } as const;
 
 /**

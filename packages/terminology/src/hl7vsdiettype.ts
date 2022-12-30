@@ -6,17 +6,17 @@ export const Hl7VSDietTypeCode = {
   /**
    * Diet
    */
-  Diet: "D",
+  D: "D",
 
   /**
    * Supplement
    */
-  Supplement: "S",
+  S: "S",
 
   /**
    * Preference
    */
-  Preference: "P",
+  P: "P",
 } as const;
 
 /**

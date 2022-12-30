@@ -6,7 +6,7 @@ export const EntityClassMicroorganismCode = {
   /**
    * microorganism
    */
-  microorganism: "MIC",
+  MIC: "MIC",
 } as const;
 
 /**

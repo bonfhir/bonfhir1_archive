@@ -6,62 +6,62 @@ export const EntityNamePartQualifierCode = {
   /**
    * OrganizationNamePartQualifier
    */
-  OrganizationNamePartQualifier: "_OrganizationNamePartQualifier",
+  _OrganizationNamePartQualifier: "_OrganizationNamePartQualifier",
 
   /**
    * academic
    */
-  academic: "AC",
+  AC: "AC",
 
   /**
    * adopted
    */
-  adopted: "AD",
+  AD: "AD",
 
   /**
    * birth
    */
-  birth: "BR",
+  BR: "BR",
 
   /**
    * callme
    */
-  callme: "CL",
+  CL: "CL",
 
   /**
    * initial
    */
-  initial: "IN",
+  IN: "IN",
 
   /**
    * Legal status
    */
-  Legalstatus: "LS",
+  LS: "LS",
 
   /**
    * nobility
    */
-  nobility: "NB",
+  NB: "NB",
 
   /**
    * professional
    */
-  professional: "PR",
+  PR: "PR",
 
   /**
    * spouse
    */
-  spouse: "SP",
+  SP: "SP",
 
   /**
    * title
    */
-  title: "TITLE",
+  TITLE: "TITLE",
 
   /**
    * voorvoegsel
    */
-  voorvoegsel: "VV",
+  VV: "VV",
 
   /**
    * PharmaceuticalEntityNamePartQualifiers
@@ -72,82 +72,82 @@ export const EntityNamePartQualifierCode = {
   /**
    * container name
    */
-  containername: "CON",
+  CON: "CON",
 
   /**
    * device name
    */
-  devicename: "DEV",
+  DEV: "DEV",
 
   /**
    * FlavorName
    */
-  FlavorName: "FLAV",
+  FLAV: "FLAV",
 
   /**
    * FormulationPartName
    */
-  FormulationPartName: "FORMUL",
+  FORMUL: "FORMUL",
 
   /**
    * form name
    */
-  formname: "FRM",
+  FRM: "FRM",
 
   /**
    * invented name
    */
-  inventedname: "INV",
+  INV: "INV",
 
   /**
    * TargetPopulationName
    */
-  TargetPopulationName: "POPUL",
+  POPUL: "POPUL",
 
   /**
    * scientific name
    */
-  scientificname: "SCI",
+  SCI: "SCI",
 
   /**
    * strength name
    */
-  strengthname: "STR",
+  STR: "STR",
 
   /**
    * TimeOrPeriodName
    */
-  TimeOrPeriodName: "TIME",
+  TIME: "TIME",
 
   /**
    * trademark name
    */
-  trademarkname: "TMK",
+  TMK: "TMK",
 
   /**
    * intended use name
    */
-  intendedusename: "USE",
+  USE: "USE",
 
   /**
    * PersonNamePartQualifier
    */
-  PersonNamePartQualifier: "_PersonNamePartQualifier",
+  _PersonNamePartQualifier: "_PersonNamePartQualifier",
 
   /**
    * PersonNamePartAffixTypes
    */
-  PersonNamePartAffixTypes: "_PersonNamePartAffixTypes",
+  _PersonNamePartAffixTypes: "_PersonNamePartAffixTypes",
 
   /**
    * PersonNamePartChangeQualifier
    */
-  PersonNamePartChangeQualifier: "_PersonNamePartChangeQualifier",
+  _PersonNamePartChangeQualifier: "_PersonNamePartChangeQualifier",
 
   /**
    * PersonNamePartMiscQualifier
    */
-  PersonNamePartMiscQualifier: "_PersonNamePartMiscQualifier",
+  _PersonNamePartMiscQualifier: "_PersonNamePartMiscQualifier",
 } as const;
 
 /**

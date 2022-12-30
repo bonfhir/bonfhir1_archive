@@ -6,17 +6,17 @@ export const Hl7VSAllowSubstitutionCode = {
   /**
    * Substitutions are NOT authorized.  (This is the default - null.)
    */
-  SubstitutionsareNOTauthorizedThisisthedefaultnull: "N",
+  N: "N",
 
   /**
    * Allow generic substitutions.
    */
-  Allowgenericsubstitutions: "G",
+  G: "G",
 
   /**
    * Allow therapeutic substitutions
    */
-  Allowtherapeuticsubstitutions: "T",
+  T: "T",
 } as const;
 
 /**

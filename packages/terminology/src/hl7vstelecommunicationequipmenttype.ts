@@ -6,52 +6,52 @@ export const Hl7VSTelecommunicationEquipmentTypeCode = {
   /**
    * Telephone
    */
-  Telephone: "PH",
+  PH: "PH",
 
   /**
    * Fax
    */
-  Fax: "FX",
+  FX: "FX",
 
   /**
    * Modem
    */
-  Modem: "MD",
+  MD: "MD",
 
   /**
    * Cellular or Mobile Phone
    */
-  CellularorMobilePhone: "CP",
+  CP: "CP",
 
   /**
    * Satellite Phone
    */
-  SatellitePhone: "SAT",
+  SAT: "SAT",
 
   /**
    * Beeper
    */
-  Beeper: "BP",
+  BP: "BP",
 
   /**
    * Internet Address
    */
-  InternetAddress: "Internet",
+  Internet: "Internet",
 
   /**
    * X.400 email address
    */
-  X400emailaddress: "X.400",
+  "X.400": "X.400",
 
   /**
    * Telecommunications Device for the Deaf
    */
-  TelecommunicationsDevicefortheDeaf: "TDD",
+  TDD: "TDD",
 
   /**
    * Teletypewriter
    */
-  Teletypewriter: "TTY",
+  TTY: "TTY",
 } as const;
 
 /**

@@ -6,17 +6,17 @@ export const RoleClassInvestigationSubjectCode = {
   /**
    * Investigation Subject
    */
-  InvestigationSubject: "INVSBJ",
+  INVSBJ: "INVSBJ",
 
   /**
    * Case Subject
    */
-  CaseSubject: "CASEBJ",
+  CASEBJ: "CASEBJ",
 
   /**
    * research subject
    */
-  researchsubject: "RESBJ",
+  RESBJ: "RESBJ",
 } as const;
 
 /**

@@ -6,52 +6,52 @@ export const Hl7VSGrouperStatusCode = {
   /**
    * Normal grouping
    */
-  Normalgrouping: "0",
+  "0": "0",
 
   /**
    * Invalid or missing primary diagnosis
    */
-  Invalidormissingprimarydiagnosis: "1",
+  "1": "1",
 
   /**
    * Diagnosis is not allowed to be primary
    */
-  Diagnosisisnotallowedtobeprimary: "2",
+  "2": "2",
 
   /**
    * Data does not fulfill DRG criteria
    */
-  DatadoesnotfulfillDRGcriteria: "3",
+  "3": "3",
 
   /**
    * Invalid age, admission date, date of birth or discharge date
    */
-  Invalidageadmissiondatedateofbirthordischargedate: "4",
+  "4": "4",
 
   /**
    * Invalid gender
    */
-  Invalidgender: "5",
+  "5": "5",
 
   /**
    * Invalid discharge status
    */
-  Invaliddischargestatus: "6",
+  "6": "6",
 
   /**
    * Invalid weight ad admission
    */
-  Invalidweightadadmission: "7",
+  "7": "7",
 
   /**
    * Invalid length of stay
    */
-  Invalidlengthofstay: "8",
+  "8": "8",
 
   /**
    * Invalid field "same day"
    */
-  Invalidfieldsameday: "9",
+  "9": "9",
 } as const;
 
 /**

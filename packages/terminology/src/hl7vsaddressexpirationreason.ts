@@ -6,22 +6,22 @@ export const Hl7VSAddressExpirationReasonCode = {
   /**
    * Moved
    */
-  Moved: "M",
+  M: "M",
 
   /**
    * Added in error
    */
-  Addedinerror: "E",
+  E: "E",
 
   /**
    * On request
    */
-  Onrequest: "R",
+  R: "R",
 
   /**
    * Corrected
    */
-  Corrected: "C",
+  C: "C",
 } as const;
 
 /**

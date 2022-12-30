@@ -6,12 +6,12 @@ export const SoftTissueRouteCode = {
   /**
    * Injection, soft tissue
    */
-  Injectionsofttissue: "SOFTISINJ",
+  SOFTISINJ: "SOFTISINJ",
 
   /**
    * Instillation, soft tissue
    */
-  Instillationsofttissue: "SOFTISINSTIL",
+  SOFTISINSTIL: "SOFTISINSTIL",
 } as const;
 
 /**

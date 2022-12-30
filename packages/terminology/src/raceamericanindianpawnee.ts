@@ -6,12 +6,12 @@ export const RaceAmericanIndianPawneeCode = {
   /**
    * Pawnee
    */
-  Pawnee: "1445-6",
+  "1445-6": "1445-6",
 
   /**
    * Oklahoma Pawnee
    */
-  OklahomaPawnee: "1446-4",
+  "1446-4": "1446-4",
 } as const;
 
 /**

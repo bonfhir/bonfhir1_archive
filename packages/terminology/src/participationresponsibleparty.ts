@@ -8,7 +8,7 @@ export const ParticipationResponsiblePartyCode = {
   /**
    * responsible party
    */
-  responsibleparty: "RESP",
+  RESP: "RESP",
 } as const;
 
 /**

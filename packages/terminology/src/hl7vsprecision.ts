@@ -6,32 +6,32 @@ export const Hl7VSPrecisionCode = {
   /**
    * year
    */
-  year: "Y",
+  Y: "Y",
 
   /**
    * month
    */
-  month: "L",
+  L: "L",
 
   /**
    * day
    */
-  day: "D",
+  D: "D",
 
   /**
    * hour
    */
-  hour: "H",
+  H: "H",
 
   /**
    * minute
    */
-  minute: "M",
+  M: "M",
 
   /**
    * second
    */
-  second: "S",
+  S: "S",
 } as const;
 
 /**

@@ -6,12 +6,12 @@ export const ExampleProcedureTypeCodesCode = {
   /**
    * Primary procedure
    */
-  Primaryprocedure: "primary",
+  primary: "primary",
 
   /**
    * Secondary procedure
    */
-  Secondaryprocedure: "secondary",
+  secondary: "secondary",
 } as const;
 
 /**

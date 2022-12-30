@@ -6,7 +6,7 @@ export const VitreousHumourRouteCode = {
   /**
    * Implantation, intravitreal
    */
-  Implantationintravitreal: "IVITIMPLNT",
+  IVITIMPLNT: "IVITIMPLNT",
 } as const;
 
 /**

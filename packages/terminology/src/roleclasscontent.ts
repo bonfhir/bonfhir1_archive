@@ -6,7 +6,7 @@ export const RoleClassContentCode = {
   /**
    * content
    */
-  content: "CONT",
+  CONT: "CONT",
 } as const;
 
 /**

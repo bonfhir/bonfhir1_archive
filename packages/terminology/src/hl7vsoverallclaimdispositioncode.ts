@@ -6,27 +6,27 @@ export const Hl7VSOverallClaimDispositionCodeCode = {
   /**
    * No edits present on claim
    */
-  Noeditspresentonclaim: "0",
+  "0": "0",
 
   /**
    * Only edits present are for line item denial or rejection
    */
-  Onlyeditspresentareforlineitemdenialorrejection: "1",
+  "1": "1",
 
   /**
    * Multiple-day claim with one or more days denied or rejected
    */
-  Multipledayclaimwithoneormoredaysdeniedorrejected: "2",
+  "2": "2",
 
   /**
    * Claim denied, rejected, suspended or returned to provider with only post payment edits
    */
-  Claimdeniedrejectedsuspendedorreturnedtoproviderwithonlypostpaymentedits: "3",
+  "3": "3",
 
   /**
    * Claim denied, rejected, suspended or returned to provider with only pre payment edits
    */
-  Claimdeniedrejectedsuspendedorreturnedtoproviderwithonlyprepaymentedits: "4",
+  "4": "4",
 } as const;
 
 /**

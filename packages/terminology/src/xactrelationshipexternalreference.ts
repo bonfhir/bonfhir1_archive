@@ -6,32 +6,32 @@ export const XActRelationshipExternalReferenceCode = {
   /**
    * episodeLink
    */
-  episodeLink: "ELNK",
+  ELNK: "ELNK",
 
   /**
    * refers to
    */
-  refersto: "REFR",
+  REFR: "REFR",
 
   /**
    * replaces
    */
-  replaces: "RPLC",
+  RPLC: "RPLC",
 
   /**
    * has support
    */
-  hassupport: "SPRT",
+  SPRT: "SPRT",
 
   /**
    * has subject
    */
-  hassubject: "SUBJ",
+  SUBJ: "SUBJ",
 
   /**
    * Excerpts
    */
-  Excerpts: "XCRPT",
+  XCRPT: "XCRPT",
 } as const;
 
 /**

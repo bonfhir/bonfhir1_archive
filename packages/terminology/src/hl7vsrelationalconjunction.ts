@@ -6,7 +6,7 @@ export const Hl7VSRelationalConjunctionCode = {
   /**
    * Default
    */
-  Default: "AND",
+  AND: "AND",
 
   /**
    *

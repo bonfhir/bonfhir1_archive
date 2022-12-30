@@ -6,12 +6,12 @@ export const ECGObservationSeriesTypeCode = {
   /**
    * ECG representative beat waveforms
    */
-  ECGrepresentativebeatwaveforms: "REPRESENTATIVE_BEAT",
+  REPRESENTATIVE_BEAT: "REPRESENTATIVE_BEAT",
 
   /**
    * ECG rhythm waveforms
    */
-  ECGrhythmwaveforms: "RHYTHM",
+  RHYTHM: "RHYTHM",
 } as const;
 
 /**

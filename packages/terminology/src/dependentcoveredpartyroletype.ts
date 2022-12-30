@@ -6,37 +6,37 @@ export const DependentCoveredPartyRoleTypeCode = {
   /**
    * DependentCoveredPartyRoleType
    */
-  DependentCoveredPartyRoleType: "_DependentCoveredPartyRoleType",
+  _DependentCoveredPartyRoleType: "_DependentCoveredPartyRoleType",
 
   /**
    * continuity of coverage beneficiary
    */
-  continuityofcoveragebeneficiary: "COCBEN",
+  COCBEN: "COCBEN",
 
   /**
    * differently abled
    */
-  differentlyabled: "DIFFABL",
+  DIFFABL: "DIFFABL",
 
   /**
    * ward
    */
-  ward: "WARD",
+  WARD: "WARD",
 
   /**
    * student
    */
-  student: "STUD",
+  STUD: "STUD",
 
   /**
    * full-time student
    */
-  fulltimestudent: "FSTUD",
+  FSTUD: "FSTUD",
 
   /**
    * part-time student
    */
-  parttimestudent: "PSTUD",
+  PSTUD: "PSTUD",
 } as const;
 
 /**

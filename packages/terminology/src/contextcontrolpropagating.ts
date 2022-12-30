@@ -6,12 +6,12 @@ export const ContextControlPropagatingCode = {
   /**
    * additive, propagating
    */
-  additivepropagating: "AP",
+  AP: "AP",
 
   /**
    * overriding, propagating
    */
-  overridingpropagating: "OP",
+  OP: "OP",
 } as const;
 
 /**

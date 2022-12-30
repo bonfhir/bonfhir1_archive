@@ -6,7 +6,7 @@ export const RoleClassAliquotCode = {
   /**
    * aliquot
    */
-  aliquot: "ALQT",
+  ALQT: "ALQT",
 } as const;
 
 /**

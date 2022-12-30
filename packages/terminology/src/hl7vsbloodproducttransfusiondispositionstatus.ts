@@ -6,37 +6,37 @@ export const Hl7VSBloodProductTransfusionDispositionStatusCode = {
   /**
    * Returned unused and unlinked
    */
-  Returnedunusedandunlinked: "RA",
+  RA: "RA",
 
   /**
    * Returned unused but linked
    */
-  Returnedunusedbutlinked: "RL",
+  RL: "RL",
 
   /**
    * Wasted
    */
-  Wasted: "WA",
+  WA: "WA",
 
   /**
    * Transfusion Interrupted
    */
-  TransfusionInterrupted: "TI",
+  TI: "TI",
 
   /**
    * Transfusion Ended with Reactions
    */
-  TransfusionEndedwithReactions: "TR",
+  TR: "TR",
 
   /**
    * Transfusion Started
    */
-  TransfusionStarted: "TS",
+  TS: "TS",
 
   /**
    * Transfusion Ended
    */
-  TransfusionEnded: "TX",
+  TX: "TX",
 } as const;
 
 /**

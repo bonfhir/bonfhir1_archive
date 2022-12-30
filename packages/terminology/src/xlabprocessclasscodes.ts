@@ -6,42 +6,42 @@ export const XLabProcessClassCodesCode = {
   /**
    * accession
    */
-  accession: "ACSN",
+  ACSN: "ACSN",
 
   /**
    * container registration
    */
-  containerregistration: "CONTREG",
+  CONTREG: "CONTREG",
 
   /**
    * observation
    */
-  observation: "OBS",
+  OBS: "OBS",
 
   /**
    * procedure
    */
-  procedure: "PROC",
+  PROC: "PROC",
 
   /**
    * specimen treatment
    */
-  specimentreatment: "SPCTRT",
+  SPCTRT: "SPCTRT",
 
   /**
    * Specimen Collection
    */
-  SpecimenCollection: "SPECCOLLECT",
+  SPECCOLLECT: "SPECCOLLECT",
 
   /**
    * storage
    */
-  storage: "STORE",
+  STORE: "STORE",
 
   /**
    * transportation
    */
-  transportation: "TRNS",
+  TRNS: "TRNS",
 } as const;
 
 /**

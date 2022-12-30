@@ -6,7 +6,7 @@ export const BuccalMucosaRouteCode = {
   /**
    * Topical application, buccal
    */
-  Topicalapplicationbuccal: "BUC",
+  BUC: "BUC",
 } as const;
 
 /**

@@ -20,562 +20,562 @@ export const RoleClassCode = {
   /**
    * role
    */
-  role: "ROL",
+  ROL: "ROL",
 
   /**
    * RoleClassAssociative
    */
-  RoleClassAssociative: "_RoleClassAssociative",
+  _RoleClassAssociative: "_RoleClassAssociative",
 
   /**
    * RoleClassMutualRelationship
    */
-  RoleClassMutualRelationship: "_RoleClassMutualRelationship",
+  _RoleClassMutualRelationship: "_RoleClassMutualRelationship",
 
   /**
    * RoleClassRelationshipFormal
    */
-  RoleClassRelationshipFormal: "_RoleClassRelationshipFormal",
+  _RoleClassRelationshipFormal: "_RoleClassRelationshipFormal",
 
   /**
    * affiliate
    */
-  affiliate: "AFFL",
+  AFFL: "AFFL",
 
   /**
    * agent
    */
-  agent: "AGNT",
+  AGNT: "AGNT",
 
   /**
    * assigned entity
    */
-  assignedentity: "ASSIGNED",
+  ASSIGNED: "ASSIGNED",
 
   /**
    * commissioning party
    */
-  commissioningparty: "COMPAR",
+  COMPAR: "COMPAR",
 
   /**
    * signing authority or officer
    */
-  signingauthorityorofficer: "SGNOFF",
+  SGNOFF: "SGNOFF",
 
   /**
    * contact
    */
-  contact: "CON",
+  CON: "CON",
 
   /**
    * emergency contact
    */
-  emergencycontact: "ECON",
+  ECON: "ECON",
 
   /**
    * next of kin
    */
-  nextofkin: "NOK",
+  NOK: "NOK",
 
   /**
    * guardian
    */
-  guardian: "GUARD",
+  GUARD: "GUARD",
 
   /**
    * citizen
    */
-  citizen: "CIT",
+  CIT: "CIT",
 
   /**
    * covered party
    */
-  coveredparty: "COVPTY",
+  COVPTY: "COVPTY",
 
   /**
    * claimant
    */
-  claimant: "CLAIM",
+  CLAIM: "CLAIM",
 
   /**
    * named insured
    */
-  namedinsured: "NAMED",
+  NAMED: "NAMED",
 
   /**
    * dependent
    */
-  dependent: "DEPEN",
+  DEPEN: "DEPEN",
 
   /**
    * individual
    */
-  individual: "INDIV",
+  INDIV: "INDIV",
 
   /**
    * subscriber
    */
-  subscriber: "SUBSCR",
+  SUBSCR: "SUBSCR",
 
   /**
    * program eligible
    */
-  programeligible: "PROG",
+  PROG: "PROG",
 
   /**
    * clinical research investigator
    */
-  clinicalresearchinvestigator: "CRINV",
+  CRINV: "CRINV",
 
   /**
    * clinical research sponsor
    */
-  clinicalresearchsponsor: "CRSPNSR",
+  CRSPNSR: "CRSPNSR",
 
   /**
    * employee
    */
-  employee: "EMP",
+  EMP: "EMP",
 
   /**
    * military person
    */
-  militaryperson: "MIL",
+  MIL: "MIL",
 
   /**
    * guarantor
    */
-  guarantor: "GUAR",
+  GUAR: "GUAR",
 
   /**
    * Investigation Subject
    */
-  InvestigationSubject: "INVSBJ",
+  INVSBJ: "INVSBJ",
 
   /**
    * Case Subject
    */
-  CaseSubject: "CASEBJ",
+  CASEBJ: "CASEBJ",
 
   /**
    * research subject
    */
-  researchsubject: "RESBJ",
+  RESBJ: "RESBJ",
 
   /**
    * licensed entity
    */
-  licensedentity: "LIC",
+  LIC: "LIC",
 
   /**
    * notary public
    */
-  notarypublic: "NOT",
+  NOT: "NOT",
 
   /**
    * healthcare provider
    */
-  healthcareprovider: "PROV",
+  PROV: "PROV",
 
   /**
    * patient
    */
-  patient: "PAT",
+  PAT: "PAT",
 
   /**
    * payee
    */
-  payee: "PAYEE",
+  PAYEE: "PAYEE",
 
   /**
    * invoice payor
    */
-  invoicepayor: "PAYOR",
+  PAYOR: "PAYOR",
 
   /**
    * policy holder
    */
-  policyholder: "POLHOLD",
+  POLHOLD: "POLHOLD",
 
   /**
    * qualified entity
    */
-  qualifiedentity: "QUAL",
+  QUAL: "QUAL",
 
   /**
    * coverage sponsor
    */
-  coveragesponsor: "SPNSR",
+  SPNSR: "SPNSR",
 
   /**
    * student
    */
-  student: "STD",
+  STD: "STD",
 
   /**
    * underwriter
    */
-  underwriter: "UNDWRT",
+  UNDWRT: "UNDWRT",
 
   /**
    * caregiver
    */
-  caregiver: "CAREGIVER",
+  CAREGIVER: "CAREGIVER",
 
   /**
    * personal relationship
    */
-  personalrelationship: "PRS",
+  PRS: "PRS",
 
   /**
    * self
    */
-  self: "SELF",
+  SELF: "SELF",
 
   /**
    * RoleClassPassive
    */
-  RoleClassPassive: "_RoleClassPassive",
+  _RoleClassPassive: "_RoleClassPassive",
 
   /**
    * access
    */
-  access: "ACCESS",
+  ACCESS: "ACCESS",
 
   /**
    * adjacency
    */
-  adjacency: "ADJY",
+  ADJY: "ADJY",
 
   /**
    * connection
    */
-  connection: "CONC",
+  CONC: "CONC",
 
   /**
    * molecular bond
    */
-  molecularbond: "BOND",
+  BOND: "BOND",
 
   /**
    * continuity
    */
-  continuity: "CONY",
+  CONY: "CONY",
 
   /**
    * Administerable Material
    */
-  AdministerableMaterial: "ADMM",
+  ADMM: "ADMM",
 
   /**
    * birthplace
    */
-  birthplace: "BIRTHPL",
+  BIRTHPL: "BIRTHPL",
 
   /**
    * place of death
    */
-  placeofdeath: "DEATHPLC",
+  DEATHPLC: "DEATHPLC",
 
   /**
    * distributed material
    */
-  distributedmaterial: "DST",
+  DST: "DST",
 
   /**
    * retailed material
    */
-  retailedmaterial: "RET",
+  RET: "RET",
 
   /**
    * event location
    */
-  eventlocation: "EXLOC",
+  EXLOC: "EXLOC",
 
   /**
    * service delivery location
    */
-  servicedeliverylocation: "SDLOC",
+  SDLOC: "SDLOC",
 
   /**
    * dedicated service delivery location
    */
-  dedicatedservicedeliverylocation: "DSDLOC",
+  DSDLOC: "DSDLOC",
 
   /**
    * incidental service delivery location
    */
-  incidentalservicedeliverylocation: "ISDLOC",
+  ISDLOC: "ISDLOC",
 
   /**
    * exposed entity
    */
-  exposedentity: "EXPR",
+  EXPR: "EXPR",
 
   /**
    * held entity
    */
-  heldentity: "HLD",
+  HLD: "HLD",
 
   /**
    * health chart
    */
-  healthchart: "HLTHCHRT",
+  HLTHCHRT: "HLTHCHRT",
 
   /**
    * identified entity
    */
-  identifiedentity: "IDENT",
+  IDENT: "IDENT",
 
   /**
    * manufactured product
    */
-  manufacturedproduct: "MANU",
+  MANU: "MANU",
 
   /**
    * therapeutic agent
    */
-  therapeuticagent: "THER",
+  THER: "THER",
 
   /**
    * maintained entity
    */
-  maintainedentity: "MNT",
+  MNT: "MNT",
 
   /**
    * owned entity
    */
-  ownedentity: "OWN",
+  OWN: "OWN",
 
   /**
    * regulated product
    */
-  regulatedproduct: "RGPR",
+  RGPR: "RGPR",
 
   /**
    * territory of authority
    */
-  territoryofauthority: "TERR",
+  TERR: "TERR",
 
   /**
    * used entity
    */
-  usedentity: "USED",
+  USED: "USED",
 
   /**
    * warranted product
    */
-  warrantedproduct: "WRTE",
+  WRTE: "WRTE",
 
   /**
    * RoleClassOntological
    */
-  RoleClassOntological: "_RoleClassOntological",
+  _RoleClassOntological: "_RoleClassOntological",
 
   /**
    * equivalent entity
    */
-  equivalententity: "EQUIV",
+  EQUIV: "EQUIV",
 
   /**
    * same
    */
-  same: "SAME",
+  SAME: "SAME",
 
   /**
    * subsumed by
    */
-  subsumedby: "SUBY",
+  SUBY: "SUBY",
 
   /**
    * has generalization
    */
-  hasgeneralization: "GEN",
+  GEN: "GEN",
 
   /**
    * has generic
    */
-  hasgeneric: "GRIC",
+  GRIC: "GRIC",
 
   /**
    * instance
    */
-  instance: "INST",
+  INST: "INST",
 
   /**
    * subsumer
    */
-  subsumer: "SUBS",
+  SUBS: "SUBS",
 
   /**
    * RoleClassPartitive
    */
-  RoleClassPartitive: "_RoleClassPartitive",
+  _RoleClassPartitive: "_RoleClassPartitive",
 
   /**
    * content
    */
-  content: "CONT",
+  CONT: "CONT",
 
   /**
    * exposure agent carrier
    */
-  exposureagentcarrier: "EXPAGTCAR",
+  EXPAGTCAR: "EXPAGTCAR",
 
   /**
    * exposure vector
    */
-  exposurevector: "EXPVECTOR",
+  EXPVECTOR: "EXPVECTOR",
 
   /**
    * fomite
    */
-  fomite: "FOMITE",
+  FOMITE: "FOMITE",
 
   /**
    * ingredient
    */
-  ingredient: "INGR",
+  INGR: "INGR",
 
   /**
    * active ingredient
    */
-  activeingredient: "ACTI",
+  ACTI: "ACTI",
 
   /**
    * active ingredient - basis of strength
    */
-  activeingredientbasisofstrength: "ACTIB",
+  ACTIB: "ACTIB",
 
   /**
    * active ingredient - moiety is basis of strength
    */
-  activeingredientmoietyisbasisofstrength: "ACTIM",
+  ACTIM: "ACTIM",
 
   /**
    * active ingredient - reference substance is basis of strength
    */
-  activeingredientreferencesubstanceisbasisofstrength: "ACTIR",
+  ACTIR: "ACTIR",
 
   /**
    * adjuvant
    */
-  adjuvant: "ADJV",
+  ADJV: "ADJV",
 
   /**
    * additive
    */
-  additive: "ADTV",
+  ADTV: "ADTV",
 
   /**
    * base
    */
-  base: "BASE",
+  BASE: "BASE",
 
   /**
    * contaminant ingredient
    */
-  contaminantingredient: "CNTM",
+  CNTM: "CNTM",
 
   /**
    * inactive ingredient
    */
-  inactiveingredient: "IACT",
+  IACT: "IACT",
 
   /**
    * color additive
    */
-  coloradditive: "COLR",
+  COLR: "COLR",
 
   /**
    * flavor additive
    */
-  flavoradditive: "FLVR",
+  FLVR: "FLVR",
 
   /**
    * preservative
    */
-  preservative: "PRSV",
+  PRSV: "PRSV",
 
   /**
    * stabilizer
    */
-  stabilizer: "STBL",
+  STBL: "STBL",
 
   /**
    * mechanical ingredient
    */
-  mechanicalingredient: "MECH",
+  MECH: "MECH",
 
   /**
    * located entity
    */
-  locatedentity: "LOCE",
+  LOCE: "LOCE",
 
   /**
    * stored entity
    */
-  storedentity: "STOR",
+  STOR: "STOR",
 
   /**
    * member
    */
-  member: "MBR",
+  MBR: "MBR",
 
   /**
    * part
    */
-  part: "PART",
+  PART: "PART",
 
   /**
    * active moiety
    */
-  activemoiety: "ACTM",
+  ACTM: "ACTM",
 
   /**
    * specimen
    */
-  specimen: "SPEC",
+  SPEC: "SPEC",
 
   /**
    * aliquot
    */
-  aliquot: "ALQT",
+  ALQT: "ALQT",
 
   /**
    * isolate
    */
-  isolate: "ISLT",
+  ISLT: "ISLT",
 
   /**
    * child
    */
-  child: "CHILD",
+  CHILD: "CHILD",
 
   /**
    * credentialed entity
    */
-  credentialedentity: "CRED",
+  CRED: "CRED",
 
   /**
    * nurse practitioner
    */
-  nursepractitioner: "NURPRAC",
+  NURPRAC: "NURPRAC",
 
   /**
    * nurse
    */
-  nurse: "NURS",
+  NURS: "NURS",
 
   /**
    * physician assistant
    */
-  physicianassistant: "PA",
+  PA: "PA",
 
   /**
    * physician
    */
-  physician: "PHYS",
+  PHYS: "PHYS",
 } as const;
 
 /**

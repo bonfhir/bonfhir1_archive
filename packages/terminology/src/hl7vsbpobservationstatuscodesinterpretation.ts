@@ -6,32 +6,32 @@ export const Hl7VSBpObservationStatusCodesInterpretationCode = {
   /**
    * Record coming over is a correction and thus replaces a final status
    */
-  Recordcomingoverisacorrectionandthusreplacesafinalstatus: "C",
+  C: "C",
 
   /**
    * Deletes the BPX record
    */
-  DeletestheBPXrecord: "D",
+  D: "D",
 
   /**
    * Final status; Can only be changed with a corrected status
    */
-  FinalstatusCanonlybechangedwithacorrectedstatus: "F",
+  F: "F",
 
   /**
    * Order detail description only (no status)
    */
-  Orderdetaildescriptiononlynostatus: "O",
+  O: "O",
 
   /**
    * Preliminary status
    */
-  Preliminarystatus: "P",
+  P: "P",
 
   /**
    * Post original as wrong, e.g., transmitted for wrong patient
    */
-  Postoriginalaswrongegtransmittedforwrongpatient: "W",
+  W: "W",
 } as const;
 
 /**

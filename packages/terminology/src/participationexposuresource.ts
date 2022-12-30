@@ -6,7 +6,7 @@ export const ParticipationExposuresourceCode = {
   /**
    * ExposureSource
    */
-  ExposureSource: "EXSRC",
+  EXSRC: "EXSRC",
 } as const;
 
 /**

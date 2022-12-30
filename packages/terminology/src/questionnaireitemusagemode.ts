@@ -6,27 +6,27 @@ export const QuestionnaireItemUsageModeCode = {
   /**
    * Capture & Display
    */
-  CaptureDisplay: "capture-display",
+  "capture-display": "capture-display",
 
   /**
    * Capture Only
    */
-  CaptureOnly: "capture",
+  capture: "capture",
 
   /**
    * Display Only
    */
-  DisplayOnly: "display",
+  display: "display",
 
   /**
    * Display when Answered
    */
-  DisplaywhenAnswered: "display-non-empty",
+  "display-non-empty": "display-non-empty",
 
   /**
    * Capture or, if answered, Display
    */
-  CaptureorifansweredDisplay: "capture-display-non-empty",
+  "capture-display-non-empty": "capture-display-non-empty",
 } as const;
 
 /**

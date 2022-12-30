@@ -6,17 +6,17 @@ export const EntityDeterminerDeterminedCode = {
   /**
    * described
    */
-  described: "KIND",
+  KIND: "KIND",
 
   /**
    * described group
    */
-  describedgroup: "GROUPKIND",
+  GROUPKIND: "GROUPKIND",
 
   /**
    * described quantified
    */
-  describedquantified: "QUANTIFIED_KIND",
+  QUANTIFIED_KIND: "QUANTIFIED_KIND",
 } as const;
 
 /**

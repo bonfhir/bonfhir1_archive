@@ -12,147 +12,147 @@ export const ActMoodCode = {
   /**
    * ActMoodCompletionTrack
    */
-  ActMoodCompletionTrack: "_ActMoodCompletionTrack",
+  _ActMoodCompletionTrack: "_ActMoodCompletionTrack",
 
   /**
    * potential
    */
-  potential: "_ActMoodPotential",
+  _ActMoodPotential: "_ActMoodPotential",
 
   /**
    * definition
    */
-  definition: "DEF",
+  DEF: "DEF",
 
   /**
    * permission
    */
-  permission: "PERM",
+  PERM: "PERM",
 
   /**
    * resource slot
    */
-  resourceslot: "SLOT",
+  SLOT: "SLOT",
 
   /**
    * event (occurrence)
    */
-  eventoccurrence: "EVN",
+  EVN: "EVN",
 
   /**
    * intent
    */
-  intent: "INT",
+  INT: "INT",
 
   /**
    * desire
    */
-  desire: "_ActMoodDesire",
+  _ActMoodDesire: "_ActMoodDesire",
 
   /**
    * act request
    */
-  actrequest: "_ActMoodActRequest",
+  _ActMoodActRequest: "_ActMoodActRequest",
 
   /**
    * appointment request
    */
-  appointmentrequest: "ARQ",
+  ARQ: "ARQ",
 
   /**
    * permission request
    */
-  permissionrequest: "PERMRQ",
+  PERMRQ: "PERMRQ",
 
   /**
    * request
    */
-  request: "RQO",
+  RQO: "RQO",
 
   /**
    * request
    */
-  request: "ORD",
+  ORD: "ORD",
 
   /**
    * proposal
    */
-  proposal: "PRP",
+  PRP: "PRP",
 
   /**
    * recommendation
    */
-  recommendation: "RMD",
+  RMD: "RMD",
 
   /**
    * promise
    */
-  promise: "PRMS",
+  PRMS: "PRMS",
 
   /**
    * appointment
    */
-  appointment: "APT",
+  APT: "APT",
 
   /**
    * ActMoodPredicate
    */
-  ActMoodPredicate: "_ActMoodPredicate",
+  _ActMoodPredicate: "_ActMoodPredicate",
 
   /**
    * criterion
    */
-  criterion: "CRT",
+  CRT: "CRT",
 
   /**
    * event criterion
    */
-  eventcriterion: "EVN.CRT",
+  "EVN.CRT": "EVN.CRT",
 
   /**
    * goal criterion
    */
-  goalcriterion: "GOL.CRT",
+  "GOL.CRT": "GOL.CRT",
 
   /**
    * intent criterion
    */
-  intentcriterion: "INT.CRT",
+  "INT.CRT": "INT.CRT",
 
   /**
    * promise criterion
    */
-  promisecriterion: "PRMS.CRT",
+  "PRMS.CRT": "PRMS.CRT",
 
   /**
    * request criterion
    */
-  requestcriterion: "RQO.CRT",
+  "RQO.CRT": "RQO.CRT",
 
   /**
    * risk criterion
    */
-  riskcriterion: "RSK.CRT",
+  "RSK.CRT": "RSK.CRT",
 
   /**
    * expectation
    */
-  expectation: "EXPEC",
+  EXPEC: "EXPEC",
 
   /**
    * Goal
    */
-  Goal: "GOL",
+  GOL: "GOL",
 
   /**
    * risk
    */
-  risk: "RSK",
+  RSK: "RSK",
 
   /**
    * option
    */
-  option: "OPT",
+  OPT: "OPT",
 } as const;
 
 /**

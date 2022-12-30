@@ -6,7 +6,7 @@ export const ParticipationAnalyteCode = {
   /**
    * analyte
    */
-  analyte: "ALY",
+  ALY: "ALY",
 } as const;
 
 /**

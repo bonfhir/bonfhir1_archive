@@ -6,12 +6,12 @@ export const FormCodesCode = {
   /**
    * Form #1
    */
-  Form1: "1",
+  "1": "1",
 
   /**
    * Form #1
    */
-  Form1: "2",
+  "2": "2",
 } as const;
 
 /**

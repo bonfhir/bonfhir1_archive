@@ -6,22 +6,22 @@ export const ActExposureLevelCodeCode = {
   /**
    * ActExposureLevelCode
    */
-  ActExposureLevelCode: "_ActExposureLevelCode",
+  _ActExposureLevelCode: "_ActExposureLevelCode",
 
   /**
    * high
    */
-  high: "HIGH",
+  HIGH: "HIGH",
 
   /**
    * low
    */
-  low: "LOW",
+  LOW: "LOW",
 
   /**
    * medium
    */
-  medium: "MEDIUM",
+  MEDIUM: "MEDIUM",
 } as const;
 
 /**

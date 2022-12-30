@@ -6,7 +6,7 @@ export const PerianalRouteCode = {
   /**
    * Topical application, perianal
    */
-  Topicalapplicationperianal: "PERIANAL",
+  PERIANAL: "PERIANAL",
 } as const;
 
 /**

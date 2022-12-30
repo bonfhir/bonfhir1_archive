@@ -6,17 +6,17 @@ export const Hl7VSProcedurePriorityCode = {
   /**
    * the admitting procedure
    */
-  theadmittingprocedure: "0",
+  "0": "0",
 
   /**
    * the primary procedure
    */
-  theprimaryprocedure: "1",
+  "1": "1",
 
   /**
    * for ranked secondary procedures
    */
-  forrankedsecondaryprocedures: "2",
+  "2": "2",
 
   /**
    *
@@ -26,7 +26,7 @@ export const Hl7VSProcedurePriorityCode = {
   /**
    * No suggested values defined
    */
-  Nosuggestedvaluesdefined: "...",
+  "...": "...",
 } as const;
 
 /**

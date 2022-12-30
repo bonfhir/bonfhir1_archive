@@ -6,7 +6,7 @@ export const DeliveryAddressLineCode = {
   /**
    * delivery address line
    */
-  deliveryaddressline: "DAL",
+  DAL: "DAL",
 } as const;
 
 /**

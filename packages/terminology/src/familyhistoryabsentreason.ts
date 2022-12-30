@@ -6,22 +6,22 @@ export const FamilyHistoryAbsentReasonCode = {
   /**
    * Subject Unknown
    */
-  SubjectUnknown: "subject-unknown",
+  "subject-unknown": "subject-unknown",
 
   /**
    * Information Withheld
    */
-  InformationWithheld: "withheld",
+  withheld: "withheld",
 
   /**
    * Unable To Obtain
    */
-  UnableToObtain: "unable-to-obtain",
+  "unable-to-obtain": "unable-to-obtain",
 
   /**
    * Deferred
    */
-  Deferred: "deferred",
+  deferred: "deferred",
 } as const;
 
 /**

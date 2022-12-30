@@ -6,7 +6,7 @@ export const ActClassDocumentBodyCode = {
   /**
    * document body
    */
-  documentbody: "DOCBODY",
+  DOCBODY: "DOCBODY",
 } as const;
 
 /**

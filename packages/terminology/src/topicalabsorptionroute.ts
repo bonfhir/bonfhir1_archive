@@ -6,7 +6,7 @@ export const TopicalAbsorptionRouteCode = {
   /**
    * Topical absorption, transtympanic
    */
-  Topicalabsorptiontranstympanic: "TTYMPTABSORP",
+  TTYMPTABSORP: "TTYMPTABSORP",
 } as const;
 
 /**

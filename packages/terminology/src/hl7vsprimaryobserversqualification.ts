@@ -6,37 +6,37 @@ export const Hl7VSPrimaryObserverSQualificationCode = {
   /**
    * Physician (osteopath, homeopath)
    */
-  Physicianosteopathhomeopath: "P",
+  P: "P",
 
   /**
    * Pharmacist
    */
-  Pharmacist: "R",
+  R: "R",
 
   /**
    * Mid-level professional (nurse, nurse practitioner, physician's assistant)
    */
-  Midlevelprofessionalnursenursepractitionerphysiciansassistant: "M",
+  M: "M",
 
   /**
    * Other health professional
    */
-  Otherhealthprofessional: "H",
+  H: "H",
 
   /**
    * Health care consumer/patient
    */
-  Healthcareconsumerpatient: "C",
+  C: "C",
 
   /**
    * Lawyer/attorney
    */
-  Lawyerattorney: "L",
+  L: "L",
 
   /**
    * Other non-health professional
    */
-  Othernonhealthprofessional: "O",
+  O: "O",
 } as const;
 
 /**

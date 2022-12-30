@@ -6,7 +6,7 @@ export const IntratympanicRouteCode = {
   /**
    * Injection, intratympanic
    */
-  Injectionintratympanic: "ITYMPINJ",
+  ITYMPINJ: "ITYMPINJ",
 } as const;
 
 /**

@@ -6,17 +6,17 @@ export const MapRelationshipCode = {
   /**
    * Broader Than
    */
-  BroaderThan: "BT",
+  BT: "BT",
 
   /**
    * Exact
    */
-  Exact: "E",
+  E: "E",
 
   /**
    * Narrower Than
    */
-  NarrowerThan: "NT",
+  NT: "NT",
 } as const;
 
 /**

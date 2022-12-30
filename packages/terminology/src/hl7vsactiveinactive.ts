@@ -6,12 +6,12 @@ export const Hl7VSActiveInactiveCode = {
   /**
    * Active Staff
    */
-  ActiveStaff: "A",
+  A: "A",
 
   /**
    * Inactive Staff
    */
-  InactiveStaff: "I",
+  I: "I",
 } as const;
 
 /**

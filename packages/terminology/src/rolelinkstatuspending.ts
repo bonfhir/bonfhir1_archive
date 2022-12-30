@@ -6,7 +6,7 @@ export const RoleLinkStatusPendingCode = {
   /**
    * pending
    */
-  pending: "PENDING",
+  PENDING: "PENDING",
 } as const;
 
 /**

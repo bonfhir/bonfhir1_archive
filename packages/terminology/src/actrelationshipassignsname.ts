@@ -6,7 +6,7 @@ export const ActRelationshipAssignsNameCode = {
   /**
    * assigns name
    */
-  assignsname: "NAME",
+  NAME: "NAME",
 } as const;
 
 /**

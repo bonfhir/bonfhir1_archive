@@ -6,47 +6,47 @@ export const Hl7VSProcessInterruptionReasonCode = {
   /**
    * No reason given, donor decided to stop without giving a reason
    */
-  Noreasongivendonordecidedtostopwithoutgivingareason: "NRG",
+  NRG: "NRG",
 
   /**
    * Phone Call-Donor
    */
-  PhoneCallDonor: "PCD",
+  PCD: "PCD",
 
   /**
    * Couldn't wait
    */
-  Couldntwait: "DCW",
+  DCW: "DCW",
 
   /**
    * Couldn't follow through with donation (scared)
    */
-  Couldntfollowthroughwithdonationscared: "CFT",
+  CFT: "CFT",
 
   /**
    * Bathroom
    */
-  Bathroom: "DBB",
+  DBB: "DBB",
 
   /**
    * Phlebotomy Issue
    */
-  PhlebotomyIssue: "DNI",
+  DNI: "DNI",
 
   /**
    * Apheresis Software Crash
    */
-  ApheresisSoftwareCrash: "ASC",
+  ASC: "ASC",
 
   /**
    * Manufacturing Software Crash
    */
-  ManufacturingSoftwareCrash: "BSC",
+  BSC: "BSC",
 
   /**
    * General Facility Emergency
    */
-  GeneralFacilityEmergency: "GFE",
+  GFE: "GFE",
 } as const;
 
 /**

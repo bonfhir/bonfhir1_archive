@@ -8,32 +8,32 @@ export const LanguageAbilityModeCode = {
   /**
    * Expressed signed
    */
-  Expressedsigned: "ESGN",
+  ESGN: "ESGN",
 
   /**
    * Expressed spoken
    */
-  Expressedspoken: "ESP",
+  ESP: "ESP",
 
   /**
    * Expressed written
    */
-  Expressedwritten: "EWR",
+  EWR: "EWR",
 
   /**
    * Received signed
    */
-  Receivedsigned: "RSGN",
+  RSGN: "RSGN",
 
   /**
    * Received spoken
    */
-  Receivedspoken: "RSP",
+  RSP: "RSP",
 
   /**
    * Received written
    */
-  Receivedwritten: "RWR",
+  RWR: "RWR",
 } as const;
 
 /**

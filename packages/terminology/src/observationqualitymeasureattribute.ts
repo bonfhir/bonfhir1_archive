@@ -6,162 +6,162 @@ export const ObservationQualityMeasureAttributeCode = {
   /**
    * ObservationQualityMeasureAttribute
    */
-  ObservationQualityMeasureAttribute: "_ObservationQualityMeasureAttribute",
+  _ObservationQualityMeasureAttribute: "_ObservationQualityMeasureAttribute",
 
   /**
    * aggregate measure observation
    */
-  aggregatemeasureobservation: "AGGREGATE",
+  AGGREGATE: "AGGREGATE",
 
   /**
    * composite measure method
    */
-  compositemeasuremethod: "CMPMSRMTH",
+  CMPMSRMTH: "CMPMSRMTH",
 
   /**
    * component measure scoring weight
    */
-  componentmeasurescoringweight: "CMPMSRSCRWGHT",
+  CMPMSRSCRWGHT: "CMPMSRSCRWGHT",
 
   /**
    * copyright
    */
-  copyright: "COPY",
+  COPY: "COPY",
 
   /**
    * clinical recommendation statement
    */
-  clinicalrecommendationstatement: "CRS",
+  CRS: "CRS",
 
   /**
    * definition
    */
-  definition: "DEF",
+  DEF: "DEF",
 
   /**
    * disclaimer
    */
-  disclaimer: "DISC",
+  DISC: "DISC",
 
   /**
    * finalized date/time
    */
-  finalizeddatetime: "FINALDT",
+  FINALDT: "FINALDT",
 
   /**
    * guidance
    */
-  guidance: "GUIDE",
+  GUIDE: "GUIDE",
 
   /**
    * improvement notation
    */
-  improvementnotation: "IDUR",
+  IDUR: "IDUR",
 
   /**
    * items counted
    */
-  itemscounted: "ITMCNT",
+  ITMCNT: "ITMCNT",
 
   /**
    * keyword
    */
-  keyword: "KEY",
+  KEY: "KEY",
 
   /**
    * measurement end date
    */
-  measurementenddate: "MEDT",
+  MEDT: "MEDT",
 
   /**
    * measurement start date
    */
-  measurementstartdate: "MSD",
+  MSD: "MSD",
 
   /**
    * risk adjustment
    */
-  riskadjustment: "MSRADJ",
+  MSRADJ: "MSRADJ",
 
   /**
    * rate aggregation
    */
-  rateaggregation: "MSRAGG",
+  MSRAGG: "MSRAGG",
 
   /**
    * health quality measure improvement notation
    */
-  healthqualitymeasureimprovementnotation: "MSRIMPROV",
+  MSRIMPROV: "MSRIMPROV",
 
   /**
    * jurisdiction
    */
-  jurisdiction: "MSRJUR",
+  MSRJUR: "MSRJUR",
 
   /**
    * reporter type
    */
-  reportertype: "MSRRPTR",
+  MSRRPTR: "MSRRPTR",
 
   /**
    * timeframe for reporting
    */
-  timeframeforreporting: "MSRRPTTIME",
+  MSRRPTTIME: "MSRRPTTIME",
 
   /**
    * measure scoring
    */
-  measurescoring: "MSRSCORE",
+  MSRSCORE: "MSRSCORE",
 
   /**
    * health quality measure care setting
    */
-  healthqualitymeasurecaresetting: "MSRSET",
+  MSRSET: "MSRSET",
 
   /**
    * health quality measure topic type
    */
-  healthqualitymeasuretopictype: "MSRTOPIC",
+  MSRTOPIC: "MSRTOPIC",
 
   /**
    * measurement period
    */
-  measurementperiod: "MSRTP",
+  MSRTP: "MSRTP",
 
   /**
    * measure type
    */
-  measuretype: "MSRTYPE",
+  MSRTYPE: "MSRTYPE",
 
   /**
    * rationale
    */
-  rationale: "RAT",
+  RAT: "RAT",
 
   /**
    * reference
    */
-  reference: "REF",
+  REF: "REF",
 
   /**
    * supplemental data elements
    */
-  supplementaldataelements: "SDE",
+  SDE: "SDE",
 
   /**
    * stratification
    */
-  stratification: "STRAT",
+  STRAT: "STRAT",
 
   /**
    * transmission format
    */
-  transmissionformat: "TRANF",
+  TRANF: "TRANF",
 
   /**
    * notice of use
    */
-  noticeofuse: "USE",
+  USE: "USE",
 } as const;
 
 /**

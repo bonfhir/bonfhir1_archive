@@ -6,282 +6,282 @@ export const Hl7VSAdministriveSiteCode = {
   /**
    * Nebulized
    */
-  Nebulized: "LNB",
+  LNB: "LNB",
 
   /**
    * Left Vastus Lateralis
    */
-  LeftVastusLateralis: "LV",
+  LV: "LV",
 
   /**
    * Bilateral Ears
    */
-  BilateralEars: "BE",
+  BE: "BE",
 
   /**
    * Bilateral Eyes
    */
-  BilateralEyes: "OU",
+  OU: "OU",
 
   /**
    * Bilateral Nares
    */
-  BilateralNares: "BN",
+  BN: "BN",
 
   /**
    * Buttock
    */
-  Buttock: "BU",
+  BU: "BU",
 
   /**
    * Chest Tube
    */
-  ChestTube: "CT",
+  CT: "CT",
 
   /**
    * Left Arm
    */
-  LeftArm: "LA",
+  LA: "LA",
 
   /**
    * Left Anterior Chest
    */
-  LeftAnteriorChest: "LAC",
+  LAC: "LAC",
 
   /**
    * Left Antecubital Fossa
    */
-  LeftAntecubitalFossa: "LACF",
+  LACF: "LACF",
 
   /**
    * Left Deltoid
    */
-  LeftDeltoid: "LD",
+  LD: "LD",
 
   /**
    * Left Ear
    */
-  LeftEar: "LE",
+  LE: "LE",
 
   /**
    * Left External Jugular
    */
-  LeftExternalJugular: "LEJ",
+  LEJ: "LEJ",
 
   /**
    * Left Eye
    */
-  LeftEye: "OS",
+  OS: "OS",
 
   /**
    * Left Foot
    */
-  LeftFoot: "LF",
+  LF: "LF",
 
   /**
    * Left Gluteus Medius
    */
-  LeftGluteusMedius: "LG",
+  LG: "LG",
 
   /**
    * Left Hand
    */
-  LeftHand: "LH",
+  LH: "LH",
 
   /**
    * Left Internal Jugular
    */
-  LeftInternalJugular: "LIJ",
+  LIJ: "LIJ",
 
   /**
    * Left Lower Abd Quadrant
    */
-  LeftLowerAbdQuadrant: "LLAQ",
+  LLAQ: "LLAQ",
 
   /**
    * Left Lower Forearm
    */
-  LeftLowerForearm: "LLFA",
+  LLFA: "LLFA",
 
   /**
    * Left Mid Forearm
    */
-  LeftMidForearm: "LMFA",
+  LMFA: "LMFA",
 
   /**
    * Left Naris
    */
-  LeftNaris: "LN",
+  LN: "LN",
 
   /**
    * Left Posterior Chest
    */
-  LeftPosteriorChest: "LPC",
+  LPC: "LPC",
 
   /**
    * Left Subclavian
    */
-  LeftSubclavian: "LSC",
+  LSC: "LSC",
 
   /**
    * Left Thigh
    */
-  LeftThigh: "LT",
+  LT: "LT",
 
   /**
    * Left Upper Arm
    */
-  LeftUpperArm: "LUA",
+  LUA: "LUA",
 
   /**
    * Left Upper Abd Quadrant
    */
-  LeftUpperAbdQuadrant: "LUAQ",
+  LUAQ: "LUAQ",
 
   /**
    * Left Upper Forearm
    */
-  LeftUpperForearm: "LUFA",
+  LUFA: "LUFA",
 
   /**
    * Left Ventragluteal
    */
-  LeftVentragluteal: "LVG",
+  LVG: "LVG",
 
   /**
    * Left Vastus Lateralis
    */
-  LeftVastusLateralis: "LVL",
+  LVL: "LVL",
 
   /**
    * Nebulized
    */
-  Nebulized: "NB",
+  NB: "NB",
 
   /**
    * Perianal
    */
-  Perianal: "PA",
+  PA: "PA",
 
   /**
    * Perineal
    */
-  Perineal: "PERIN",
+  PERIN: "PERIN",
 
   /**
    * Right Arm
    */
-  RightArm: "RA",
+  RA: "RA",
 
   /**
    * Right Anterior Chest
    */
-  RightAnteriorChest: "RAC",
+  RAC: "RAC",
 
   /**
    * Right Antecubital Fossa
    */
-  RightAntecubitalFossa: "RACF",
+  RACF: "RACF",
 
   /**
    * Right Deltoid
    */
-  RightDeltoid: "RD",
+  RD: "RD",
 
   /**
    * Right Ear
    */
-  RightEar: "RE",
+  RE: "RE",
 
   /**
    * Right External Jugular
    */
-  RightExternalJugular: "REJ",
+  REJ: "REJ",
 
   /**
    * Right Eye
    */
-  RightEye: "OD",
+  OD: "OD",
 
   /**
    * Right Foot
    */
-  RightFoot: "RF",
+  RF: "RF",
 
   /**
    * Right Gluteus Medius
    */
-  RightGluteusMedius: "RG",
+  RG: "RG",
 
   /**
    * Right Hand
    */
-  RightHand: "RH",
+  RH: "RH",
 
   /**
    * Right Internal Jugular
    */
-  RightInternalJugular: "RIJ",
+  RIJ: "RIJ",
 
   /**
    * Rt Lower Abd Quadrant
    */
-  RtLowerAbdQuadrant: "RLAQ",
+  RLAQ: "RLAQ",
 
   /**
    * Right Lower Forearm
    */
-  RightLowerForearm: "RLFA",
+  RLFA: "RLFA",
 
   /**
    * Right Mid Forearm
    */
-  RightMidForearm: "RMFA",
+  RMFA: "RMFA",
 
   /**
    * Right Naris
    */
-  RightNaris: "RN",
+  RN: "RN",
 
   /**
    * Right Posterior Chest
    */
-  RightPosteriorChest: "RPC",
+  RPC: "RPC",
 
   /**
    * Right Subclavian
    */
-  RightSubclavian: "RSC",
+  RSC: "RSC",
 
   /**
    * Right Thigh
    */
-  RightThigh: "RT",
+  RT: "RT",
 
   /**
    * Right Upper Arm
    */
-  RightUpperArm: "RUA",
+  RUA: "RUA",
 
   /**
    * Right Upper Abd Quadrant
    */
-  RightUpperAbdQuadrant: "RUAQ",
+  RUAQ: "RUAQ",
 
   /**
    * Right Upper Forearm
    */
-  RightUpperForearm: "RUFA",
+  RUFA: "RUFA",
 
   /**
    * Right Vastus Lateralis
    */
-  RightVastusLateralis: "RVL",
+  RVL: "RVL",
 
   /**
    * Right Ventragluteal
    */
-  RightVentragluteal: "RVG",
+  RVG: "RVG",
 } as const;
 
 /**

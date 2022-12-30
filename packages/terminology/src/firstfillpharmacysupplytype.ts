@@ -6,47 +6,47 @@ export const FirstFillPharmacySupplyTypeCode = {
   /**
    * First Fill
    */
-  FirstFill: "FF",
+  FF: "FF",
 
   /**
    * fee for service
    */
-  feeforservice: "FFS",
+  FFS: "FFS",
 
   /**
    * first fill, part fill, partial strength
    */
-  firstfillpartfillpartialstrength: "FFPS",
+  FFPS: "FFPS",
 
   /**
    * first fill complete, partial strength
    */
-  firstfillcompletepartialstrength: "FFCS",
+  FFCS: "FFCS",
 
   /**
    * trial fill partial strength
    */
-  trialfillpartialstrength: "TFS",
+  TFS: "TFS",
 
   /**
    * First Fill - Complete
    */
-  FirstFillComplete: "FFC",
+  FFC: "FFC",
 
   /**
    * First Fill - Part Fill
    */
-  FirstFillPartFill: "FFP",
+  FFP: "FFP",
 
   /**
    * first fill, partial strength
    */
-  firstfillpartialstrength: "FFSS",
+  FFSS: "FFSS",
 
   /**
    * Trial Fill
    */
-  TrialFill: "TF",
+  TF: "TF",
 } as const;
 
 /**

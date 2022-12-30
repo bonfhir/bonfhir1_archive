@@ -6,7 +6,7 @@ export const ActRelationshipItemsLocatedCode = {
   /**
    * items located
    */
-  itemslocated: "ITEMSLOC",
+  ITEMSLOC: "ITEMSLOC",
 } as const;
 
 /**

@@ -6,47 +6,47 @@ export const ExampleUseCodesForListCode = {
   /**
    * Alerts
    */
-  Alerts: "alerts",
+  alerts: "alerts",
 
   /**
    * Adverse Reactions
    */
-  AdverseReactions: "adverserxns",
+  adverserxns: "adverserxns",
 
   /**
    * Allergies
    */
-  Allergies: "allergies",
+  allergies: "allergies",
 
   /**
    * Medication List
    */
-  MedicationList: "medications",
+  medications: "medications",
 
   /**
    * Problem List
    */
-  ProblemList: "problems",
+  problems: "problems",
 
   /**
    * Worklist
    */
-  Worklist: "worklist",
+  worklist: "worklist",
 
   /**
    * Waiting List
    */
-  WaitingList: "waiting",
+  waiting: "waiting",
 
   /**
    * Protocols
    */
-  Protocols: "protocols",
+  protocols: "protocols",
 
   /**
    * Care Plans
    */
-  CarePlans: "plans",
+  plans: "plans",
 } as const;
 
 /**

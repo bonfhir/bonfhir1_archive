@@ -6,52 +6,52 @@ export const GuideParameterCodeCode = {
   /**
    * Apply Metadata Value
    */
-  ApplyMetadataValue: "apply",
+  apply: "apply",
 
   /**
    * Resource Path
    */
-  ResourcePath: "path-resource",
+  "path-resource": "path-resource",
 
   /**
    * Pages Path
    */
-  PagesPath: "path-pages",
+  "path-pages": "path-pages",
 
   /**
    * Terminology Cache Path
    */
-  TerminologyCachePath: "path-tx-cache",
+  "path-tx-cache": "path-tx-cache",
 
   /**
    * Expansion Profile
    */
-  ExpansionProfile: "expansion-parameter",
+  "expansion-parameter": "expansion-parameter",
 
   /**
    * Broken Links Rule
    */
-  BrokenLinksRule: "rule-broken-links",
+  "rule-broken-links": "rule-broken-links",
 
   /**
    * Generate XML
    */
-  GenerateXML: "generate-xml",
+  "generate-xml": "generate-xml",
 
   /**
    * Generate JSON
    */
-  GenerateJSON: "generate-json",
+  "generate-json": "generate-json",
 
   /**
    * Generate Turtle
    */
-  GenerateTurtle: "generate-turtle",
+  "generate-turtle": "generate-turtle",
 
   /**
    * HTML Template
    */
-  HTMLTemplate: "html-template",
+  "html-template": "html-template",
 } as const;
 
 /**

@@ -6,12 +6,12 @@ export const IntegrityCheckAlgorithmCode = {
   /**
    * secure hash algorithm - 1
    */
-  securehashalgorithm1: "SHA-1",
+  "SHA-1": "SHA-1",
 
   /**
    * secure hash algorithm - 256
    */
-  securehashalgorithm256: "SHA-256",
+  "SHA-256": "SHA-256",
 } as const;
 
 /**

@@ -6,17 +6,17 @@ export const SeverityObservationCode = {
   /**
    * High
    */
-  High: "H",
+  H: "H",
 
   /**
    * Low
    */
-  Low: "L",
+  L: "L",
 
   /**
    * Moderate
    */
-  Moderate: "M",
+  M: "M",
 } as const;
 
 /**

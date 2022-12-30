@@ -6,27 +6,27 @@ export const RespiratoryTractRouteCode = {
   /**
    * Inhalation, respiratory
    */
-  Inhalationrespiratory: "IPINHL",
+  IPINHL: "IPINHL",
 
   /**
    * Inhalation, oral intermittent flow
    */
-  Inhalationoralintermittentflow: "ORIFINHL",
+  ORIFINHL: "ORIFINHL",
 
   /**
    * Inhalation, oral rebreather mask
    */
-  Inhalationoralrebreathermask: "REBREATH",
+  REBREATH: "REBREATH",
 
   /**
    * Inhalation, respiratory
    */
-  Inhalationrespiratory: "ORINHL",
+  ORINHL: "ORINHL",
 
   /**
    * Inhalation, respiratory
    */
-  Inhalationrespiratory: "RESPINHL",
+  RESPINHL: "RESPINHL",
 } as const;
 
 /**

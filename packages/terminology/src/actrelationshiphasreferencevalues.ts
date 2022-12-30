@@ -6,7 +6,7 @@ export const ActRelationshipHasReferenceValuesCode = {
   /**
    * has reference values
    */
-  hasreferencevalues: "REFV",
+  REFV: "REFV",
 } as const;
 
 /**

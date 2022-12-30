@@ -6,32 +6,32 @@ export const ObservationInterpretationExceptionsCode = {
   /**
    * Off scale low
    */
-  Offscalelow: "<",
+  "<": "<",
 
   /**
    * Off scale high
    */
-  Offscalehigh: ">",
+  ">": ">",
 
   /**
    * Anti-complementary substances present
    */
-  Anticomplementarysubstancespresent: "AC",
+  AC: "AC",
 
   /**
    * Insufficient evidence
    */
-  Insufficientevidence: "IE",
+  IE: "IE",
 
   /**
    * Quality control failure
    */
-  Qualitycontrolfailure: "QCF",
+  QCF: "QCF",
 
   /**
    * Cytotoxic substance present
    */
-  Cytotoxicsubstancepresent: "TOX",
+  TOX: "TOX",
 } as const;
 
 /**

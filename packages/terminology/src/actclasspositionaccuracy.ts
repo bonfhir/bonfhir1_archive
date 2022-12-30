@@ -6,7 +6,7 @@ export const ActClassPositionAccuracyCode = {
   /**
    * position accuracy
    */
-  positionaccuracy: "POSACC",
+  POSACC: "POSACC",
 } as const;
 
 /**

@@ -6,42 +6,42 @@ export const MuskogeanCode = {
   /**
    * CentralMuskogean
    */
-  CentralMuskogean: "_CentralMuskogean",
+  _CentralMuskogean: "_CentralMuskogean",
 
   /**
    * Alabama
    */
-  Alabama: "x-AKZ",
+  "x-AKZ": "x-AKZ",
 
   /**
    * Koasati
    */
-  Koasati: "x-CKU",
+  "x-CKU": "x-CKU",
 
   /**
    * Mikasuki
    */
-  Mikasuki: "x-MIK",
+  "x-MIK": "x-MIK",
 
   /**
    * WesternMuskogean
    */
-  WesternMuskogean: "_WesternMuskogean",
+  _WesternMuskogean: "_WesternMuskogean",
 
   /**
    * Choctaw
    */
-  Choctaw: "x-CCT",
+  "x-CCT": "x-CCT",
 
   /**
    * Chickasaw
    */
-  Chickasaw: "x-CIC",
+  "x-CIC": "x-CIC",
 
   /**
    * Creek
    */
-  Creek: "x-CRK",
+  "x-CRK": "x-CRK",
 } as const;
 
 /**

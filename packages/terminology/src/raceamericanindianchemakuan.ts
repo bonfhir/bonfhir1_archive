@@ -6,17 +6,17 @@ export const RaceAmericanIndianChemakuanCode = {
   /**
    * Chemakuan
    */
-  Chemakuan: "1082-7",
+  "1082-7": "1082-7",
 
   /**
    * Hoh
    */
-  Hoh: "1083-5",
+  "1083-5": "1083-5",
 
   /**
    * Quileute
    */
-  Quileute: "1084-3",
+  "1084-3": "1084-3",
 } as const;
 
 /**

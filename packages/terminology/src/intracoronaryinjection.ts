@@ -6,12 +6,12 @@ export const IntracoronaryInjectionCode = {
   /**
    * Injection, intracoronary
    */
-  Injectionintracoronary: "ICORONINJ",
+  ICORONINJ: "ICORONINJ",
 
   /**
    * Injection, intracoronary, push
    */
-  Injectionintracoronarypush: "ICORONINJP",
+  ICORONINJP: "ICORONINJP",
 } as const;
 
 /**

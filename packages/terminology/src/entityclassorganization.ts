@@ -6,22 +6,22 @@ export const EntityClassOrganizationCode = {
   /**
    * organization
    */
-  organization: "ORG",
+  ORG: "ORG",
 
   /**
    * public institution
    */
-  publicinstitution: "PUB",
+  PUB: "PUB",
 
   /**
    * state
    */
-  state: "STATE",
+  STATE: "STATE",
 
   /**
    * Nation
    */
-  Nation: "NAT",
+  NAT: "NAT",
 } as const;
 
 /**

@@ -6,27 +6,27 @@ export const ReferralMethodCode = {
   /**
    * Fax
    */
-  Fax: "fax",
+  fax: "fax",
 
   /**
    * Phone
    */
-  Phone: "phone",
+  phone: "phone",
 
   /**
    * Secure Messaging
    */
-  SecureMessaging: "elec",
+  elec: "elec",
 
   /**
    * Secure Email
    */
-  SecureEmail: "semail",
+  semail: "semail",
 
   /**
    * Mail
    */
-  Mail: "mail",
+  mail: "mail",
 } as const;
 
 /**

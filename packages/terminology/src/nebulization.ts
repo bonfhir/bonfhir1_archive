@@ -6,7 +6,7 @@ export const NebulizationCode = {
   /**
    * Nebulization, endotracheal tube
    */
-  Nebulizationendotrachealtube: "ETNEB",
+  ETNEB: "ETNEB",
 } as const;
 
 /**

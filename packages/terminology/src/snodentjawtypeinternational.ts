@@ -12,12 +12,12 @@ export const SnodentJawTypeInternationalCode = {
   /**
    * Bone structure of maxilla
    */
-  Bonestructureofmaxilla: "108042D",
+  "108042D": "108042D",
 
   /**
    * Bone structure of mandible
    */
-  Bonestructureofmandible: "144511D",
+  "144511D": "144511D",
 } as const;
 
 /**

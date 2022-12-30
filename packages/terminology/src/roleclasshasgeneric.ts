@@ -6,7 +6,7 @@ export const RoleClassHasGenericCode = {
   /**
    * has generic
    */
-  hasgeneric: "GRIC",
+  GRIC: "GRIC",
 } as const;
 
 /**

@@ -6,12 +6,12 @@ export const MultipartMediaTypeCode = {
   /**
    * CDA Level 1 Multipart
    */
-  CDALevel1Multipart: "multipart/x-hl7-cda-level-one",
+  "multipart/x-hl7-cda-level-one": "multipart/x-hl7-cda-level-one",
 
   /**
    * CDA Level 1 Multipart
    */
-  CDALevel1Multipart: "multipart/x-hl7-cda-level1",
+  "multipart/x-hl7-cda-level1": "multipart/x-hl7-cda-level1",
 } as const;
 
 /**

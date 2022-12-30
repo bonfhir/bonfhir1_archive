@@ -1,10 +1,11 @@
-import { build, ExtractResource, ResourceType } from "@bonfhir/core";
-{{#fhirPath data.[profiles-types] "Bundle/ComplexElements"}}
+import { build } from "@bonfhir/core";
+import type { ExtractResource, ResourceType } from "@bonfhir/core";
+{{#each (fhirPath data.[profiles-types] "Bundle/ComplexElements")}}
 import type { {{type}} } from "fhir/r4";
-{{/fhirPath}}
-{{#fhirPath data.[profiles-resources] "Bundle/DomainResources"}}
+{{/each}}
+{{#each (fhirPath data.[profiles-resources] "Bundle/DomainResources")}}
 import type { {{type}} } from "fhir/r4";
-{{/fhirPath}}
+{{/each}}
 
 /**
  * Create a fake FHIR resource.
@@ -16,17 +17,17 @@ export function fake<TResource extends ResourceType>(
 ): ExtractResource<TResource> {
 
   switch(resourceType) {
-    {{#fhirPath data.[profiles-resources] "Bundle/DomainResources"}}
+    {{#each (fhirPath data.[profiles-resources] "Bundle/DomainResources")}}
     case "{{type}}":
       return build(resourceType, {...fake{{type}}(),...override} as unknown as Omit<ExtractResource<TResource>, "resourceType">);
-    {{/fhirPath}}
+    {{/each}}
     default:
       throw new Error(`Unsupported fake for resource type ${resourceType}`);
   }
 }
 
-{{#fhirPath data.[profiles-resources] "Bundle/DomainResources"}}
+{{#each (fhirPath data.[profiles-resources] "Bundle/DomainResources")}}
 function fake{{type}}(): {{type}} {
   throw new Error();
 }
-{{/fhirPath}}
+{{/each}}

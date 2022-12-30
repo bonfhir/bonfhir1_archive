@@ -6,7 +6,7 @@ export const CreeCode = {
   /**
    * Western Cree
    */
-  WesternCree: "x-CRP",
+  "x-CRP": "x-CRP",
 } as const;
 
 /**

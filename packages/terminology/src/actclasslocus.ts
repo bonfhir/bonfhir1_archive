@@ -6,7 +6,7 @@ export const ActClassLocusCode = {
   /**
    * locus
    */
-  locus: "LOC",
+  LOC: "LOC",
 } as const;
 
 /**

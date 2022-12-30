@@ -6,22 +6,22 @@ export const Hl7VSInformPersonCodeCode = {
   /**
    * Inform patient
    */
-  Informpatient: "PAT",
+  PAT: "PAT",
 
   /**
    * Do NOT inform patient
    */
-  DoNOTinformpatient: "NPAT",
+  NPAT: "NPAT",
 
   /**
    * Inform User
    */
-  InformUser: "USR",
+  USR: "USR",
 
   /**
    * Inform help desk
    */
-  Informhelpdesk: "HD",
+  HD: "HD",
 } as const;
 
 /**

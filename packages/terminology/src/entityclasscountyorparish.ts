@@ -6,7 +6,7 @@ export const EntityClassCountyOrParishCode = {
   /**
    * county or parish
    */
-  countyorparish: "COUNTY",
+  COUNTY: "COUNTY",
 } as const;
 
 /**

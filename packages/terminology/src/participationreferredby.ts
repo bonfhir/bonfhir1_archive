@@ -8,7 +8,7 @@ export const ParticipationReferredByCode = {
   /**
    * Referred By
    */
-  ReferredBy: "REFB",
+  REFB: "REFB",
 } as const;
 
 /**

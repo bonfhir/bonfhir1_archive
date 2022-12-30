@@ -6,17 +6,17 @@ export const SubsidizedHealthProgramCode = {
   /**
    * subsidized health program
    */
-  subsidizedhealthprogram: "SUBSIDIZ",
+  SUBSIDIZ: "SUBSIDIZ",
 
   /**
    * subsidized managed care program
    */
-  subsidizedmanagedcareprogram: "SUBSIDMC",
+  SUBSIDMC: "SUBSIDMC",
 
   /**
    * subsidized supplemental health program
    */
-  subsidizedsupplementalhealthprogram: "SUBSUPP",
+  SUBSUPP: "SUBSUPP",
 } as const;
 
 /**

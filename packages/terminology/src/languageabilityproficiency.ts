@@ -8,22 +8,22 @@ export const LanguageAbilityProficiencyCode = {
   /**
    * Excellent
    */
-  Excellent: "E",
+  E: "E",
 
   /**
    * Fair
    */
-  Fair: "F",
+  F: "F",
 
   /**
    * Good
    */
-  Good: "G",
+  G: "G",
 
   /**
    * Poor
    */
-  Poor: "P",
+  P: "P",
 } as const;
 
 /**

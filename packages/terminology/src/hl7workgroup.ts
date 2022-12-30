@@ -6,127 +6,127 @@ export const HL7WorkgroupCode = {
   /**
    * Community Based Collaborative Care
    */
-  CommunityBasedCollaborativeCare: "cbcc",
+  cbcc: "cbcc",
 
   /**
    * Clinical Decision Support
    */
-  ClinicalDecisionSupport: "cds",
+  cds: "cds",
 
   /**
    * Clinical Quality Information
    */
-  ClinicalQualityInformation: "cqi",
+  cqi: "cqi",
 
   /**
    * Clinical Genomics
    */
-  ClinicalGenomics: "cg",
+  cg: "cg",
 
   /**
    * Health Care Devices
    */
-  HealthCareDevices: "dev",
+  dev: "dev",
 
   /**
    * Electronic Health Records
    */
-  ElectronicHealthRecords: "ehr",
+  ehr: "ehr",
 
   /**
    * FHIR Infrastructure
    */
-  FHIRInfrastructure: "fhir",
+  fhir: "fhir",
 
   /**
    * Financial Management
    */
-  FinancialManagement: "fm",
+  fm: "fm",
 
   /**
    * Health Standards Integration
    */
-  HealthStandardsIntegration: "hsi",
+  hsi: "hsi",
 
   /**
    * Imaging Integration
    */
-  ImagingIntegration: "ii",
+  ii: "ii",
 
   /**
    * Infrastructure And Messaging
    */
-  InfrastructureAndMessaging: "inm",
+  inm: "inm",
 
   /**
    * Implementable Technology Specifications
    */
-  ImplementableTechnologySpecifications: "its",
+  its: "its",
 
   /**
    * Modeling and Methodology
    */
-  ModelingandMethodology: "mnm",
+  mnm: "mnm",
 
   /**
    * Orders and Observations
    */
-  OrdersandObservations: "oo",
+  oo: "oo",
 
   /**
    * Patient Administration
    */
-  PatientAdministration: "pa",
+  pa: "pa",
 
   /**
    * Patient Care
    */
-  PatientCare: "pc",
+  pc: "pc",
 
   /**
    * Public Health and Emergency Response
    */
-  PublicHealthandEmergencyResponse: "pher",
+  pher: "pher",
 
   /**
    * Pharmacy
    */
-  Pharmacy: "phx",
+  phx: "phx",
 
   /**
    * Biomedical Research and Regulation
    */
-  BiomedicalResearchandRegulation: "brr",
+  brr: "brr",
 
   /**
    * Structured Documents
    */
-  StructuredDocuments: "sd",
+  sd: "sd",
 
   /**
    * Security
    */
-  Security: "sec",
+  sec: "sec",
 
   /**
    * US Realm Taskforce
    */
-  USRealmTaskforce: "us",
+  us: "us",
 
   /**
    * Vocabulary
    */
-  Vocabulary: "vocab",
+  vocab: "vocab",
 
   /**
    * Application Implementation and Design
    */
-  ApplicationImplementationandDesign: "aid",
+  aid: "aid",
 
   /**
    * Clinical Attachments
    */
-  ClinicalAttachments: "att",
+  att: "att",
 } as const;
 
 /**

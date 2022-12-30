@@ -6,7 +6,7 @@ export const PaiCode = {
   /**
    * Havasupai
    */
-  Havasupai: "x-YUF",
+  "x-YUF": "x-YUF",
 } as const;
 
 /**

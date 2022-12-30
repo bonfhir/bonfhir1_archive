@@ -6,7 +6,7 @@ export const RoleClassCommissioningPartyCode = {
   /**
    * commissioning party
    */
-  commissioningparty: "COMPAR",
+  COMPAR: "COMPAR",
 } as const;
 
 /**

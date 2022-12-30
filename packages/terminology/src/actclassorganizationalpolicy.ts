@@ -12,7 +12,7 @@ export const ActClassOrganizationalPolicyCode = {
   /**
    * organizational policy
    */
-  organizationalpolicy: "ORGPOL",
+  ORGPOL: "ORGPOL",
 } as const;
 
 /**

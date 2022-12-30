@@ -12,7 +12,7 @@ export const ActRelationshipModifiesCode = {
   /**
    * modifies
    */
-  modifies: "MOD",
+  MOD: "MOD",
 } as const;
 
 /**

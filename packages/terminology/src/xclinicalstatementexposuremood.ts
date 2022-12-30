@@ -6,27 +6,27 @@ export const XClinicalStatementExposureMoodCode = {
   /**
    * criterion
    */
-  criterion: "CRT",
+  CRT: "CRT",
 
   /**
    * definition
    */
-  definition: "DEF",
+  DEF: "DEF",
 
   /**
    * event (occurrence)
    */
-  eventoccurrence: "EVN",
+  EVN: "EVN",
 
   /**
    * event criterion
    */
-  eventcriterion: "EVN.CRT",
+  "EVN.CRT": "EVN.CRT",
 
   /**
    * risk
    */
-  risk: "RSK",
+  RSK: "RSK",
 } as const;
 
 /**

@@ -6,7 +6,7 @@ export const EntityClassHolderCode = {
   /**
    * holder
    */
-  holder: "HOLD",
+  HOLD: "HOLD",
 } as const;
 
 /**

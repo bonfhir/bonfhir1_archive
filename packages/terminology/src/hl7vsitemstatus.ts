@@ -6,17 +6,17 @@ export const Hl7VSItemStatusCode = {
   /**
    * Active
    */
-  Active: "A",
+  A: "A",
 
   /**
    * Pending Inactive
    */
-  PendingInactive: "P",
+  P: "P",
 
   /**
    * Inactive
    */
-  Inactive: "I",
+  I: "I",
 } as const;
 
 /**

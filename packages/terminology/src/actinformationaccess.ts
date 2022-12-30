@@ -6,17 +6,17 @@ export const ActInformationAccessCode = {
   /**
    * information access
    */
-  informationaccess: "INFA",
+  INFA: "INFA",
 
   /**
    * access only
    */
-  accessonly: "INFAO",
+  INFAO: "INFAO",
 
   /**
    * access and save only
    */
-  accessandsaveonly: "INFASO",
+  INFASO: "INFASO",
 } as const;
 
 /**

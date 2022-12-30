@@ -6,7 +6,7 @@ export const ActAmbulatoryEncounterCodeCode = {
   /**
    * ambulatory
    */
-  ambulatory: "AMB",
+  AMB: "AMB",
 } as const;
 
 /**

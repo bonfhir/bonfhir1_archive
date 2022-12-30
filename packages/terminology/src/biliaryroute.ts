@@ -6,12 +6,12 @@ export const BiliaryRouteCode = {
   /**
    * Injection, biliary tract
    */
-  Injectionbiliarytract: "BILINJ",
+  BILINJ: "BILINJ",
 
   /**
    * Injection, for cholangiography
    */
-  Injectionforcholangiography: "CHOLINJ",
+  CHOLINJ: "CHOLINJ",
 } as const;
 
 /**

@@ -6,32 +6,32 @@ export const HL7AccommodationCodeCode = {
   /**
    * HL7AccommodationCode
    */
-  HL7AccommodationCode: "_HL7AccommodationCode",
+  _HL7AccommodationCode: "_HL7AccommodationCode",
 
   /**
    * Isolation
    */
-  Isolation: "I",
+  I: "I",
 
   /**
    * Private
    */
-  Private: "P",
+  P: "P",
 
   /**
    * Suite
    */
-  Suite: "S",
+  S: "S",
 
   /**
    * Semi-private
    */
-  Semiprivate: "SP",
+  SP: "SP",
 
   /**
    * Ward
    */
-  Ward: "W",
+  W: "W",
 } as const;
 
 /**

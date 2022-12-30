@@ -6,17 +6,17 @@ export const ActRelationshipEndsDuringCode = {
   /**
    * ends during
    */
-  endsduring: "EDU",
+  EDU: "EDU",
 
   /**
    * contains start of, ends before end of
    */
-  containsstartofendsbeforeendof: "SBSEASEBE",
+  SBSEASEBE: "SBSEASEBE",
 
   /**
    * starts with. ends before end of
    */
-  startswithendsbeforeendof: "SCWSEBE",
+  SCWSEBE: "SCWSEBE",
 } as const;
 
 /**

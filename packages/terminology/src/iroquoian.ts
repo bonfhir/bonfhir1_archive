@@ -6,42 +6,42 @@ export const IroquoianCode = {
   /**
    * NorthernIroquoian
    */
-  NorthernIroquoian: "_NorthernIroquoian",
+  _NorthernIroquoian: "_NorthernIroquoian",
 
   /**
    * Cayuga
    */
-  Cayuga: "x-CAY",
+  "x-CAY": "x-CAY",
 
   /**
    * Mohawk
    */
-  Mohawk: "x-MOH",
+  "x-MOH": "x-MOH",
 
   /**
    * Oneida
    */
-  Oneida: "x-ONE",
+  "x-ONE": "x-ONE",
 
   /**
    * Onondaga
    */
-  Onondaga: "x-ONO",
+  "x-ONO": "x-ONO",
 
   /**
    * Seneca
    */
-  Seneca: "x-SEE",
+  "x-SEE": "x-SEE",
 
   /**
    * Tuscarora
    */
-  Tuscarora: "x-TUS",
+  "x-TUS": "x-TUS",
 
   /**
    * Cherokee
    */
-  Cherokee: "x-CER",
+  "x-CER": "x-CER",
 } as const;
 
 /**

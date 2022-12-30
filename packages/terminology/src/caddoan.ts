@@ -6,32 +6,32 @@ export const CaddoanCode = {
   /**
    * NorthernCaddoan
    */
-  NorthernCaddoan: "_NorthernCaddoan",
+  _NorthernCaddoan: "_NorthernCaddoan",
 
   /**
    * Arikara
    */
-  Arikara: "x-ARI",
+  "x-ARI": "x-ARI",
 
   /**
    * Pawnee
    */
-  Pawnee: "x-PAW",
+  "x-PAW": "x-PAW",
 
   /**
    * Wichita
    */
-  Wichita: "x-WIC",
+  "x-WIC": "x-WIC",
 
   /**
    * SouthernCaddoan
    */
-  SouthernCaddoan: "_SouthernCaddoan",
+  _SouthernCaddoan: "_SouthernCaddoan",
 
   /**
    * Caddo
    */
-  Caddo: "x-CAD",
+  "x-CAD": "x-CAD",
 } as const;
 
 /**

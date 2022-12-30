@@ -6,119 +6,117 @@ export const Hl7VSProviderRoleCode = {
   /**
    * Admitting
    */
-  Admitting: "AD",
+  AD: "AD",
 
   /**
    * Administering Provider
    */
-  AdministeringProvider: "AP",
+  AP: "AP",
 
   /**
    * Attending
    */
-  Attending: "AT",
+  AT: "AT",
 
   /**
    * Collecting Provider
    */
-  CollectingProvider: "CLP",
+  CLP: "CLP",
 
   /**
    * Consulting Provider
    */
-  ConsultingProvider: "CP",
+  CP: "CP",
 
   /**
    * Dispensing Provider
    */
-  DispensingProvider: "DP",
+  DP: "DP",
 
   /**
    * Entering Provider (probably not the same as transcriptionist?)
    */
-  EnteringProviderprobablynotthesameastranscriptionist: "EP",
+  EP: "EP",
 
   /**
    * Family Health Care Professional
    */
-  FamilyHealthCareProfessional: "FHCP",
+  FHCP: "FHCP",
 
   /**
    * Initiating Provider (as in action by)
    */
-  InitiatingProviderasinactionby: "IP",
+  IP: "IP",
 
   /**
    * Medical Director
    */
-  MedicalDirector: "MDIR",
+  MDIR: "MDIR",
 
   /**
    * Ordering Provider
    */
-  OrderingProvider: "OP",
+  OP: "OP",
 
   /**
    * Pharmacist   (not sure how to dissect Pharmacist/Treatment Supplier's Verifier ID)
    */
-  PharmacistnotsurehowtodissectPharmacistTreatmentSuppliersVerifierID: "PH",
+  PH: "PH",
 
   /**
    * Primary Care Provider
    */
-  PrimaryCareProvider: "PP",
+  PP: "PP",
 
   /**
    * Responsible Observer
    */
-  ResponsibleObserver: "RO",
+  RO: "RO",
 
   /**
    * Referring Provider
    */
-  ReferringProvider: "RP",
+  RP: "RP",
 
   /**
    * Referred to Provider
    */
-  ReferredtoProvider: "RT",
+  RT: "RT",
 
   /**
    * Transcriptionist
    */
-  Transcriptionist: "TR",
+  TR: "TR",
 
   /**
    * Primary Interpreter
    */
-  PrimaryInterpreter: "PI",
+  PI: "PI",
 
   /**
    * Assistant/Alternate Interpreter
    */
-  AssistantAlternateInterpreter: "AI",
+  AI: "AI",
 
   /**
    * Technician
    */
-  Technician: "TN",
+  TN: "TN",
 
   /**
    * Verifying Provider
    */
-  VerifyingProvider: "VP",
+  VP: "VP",
 
   /**
    * Verifying Pharmaceutical Supplier   (not sure how to dissect Pharmacist/Treatment Supplier's Verifier ID)
    */
-  VerifyingPharmaceuticalSuppliernotsurehowtodissectPharmacistTreatmentSuppliersVerifierID:
-    "VPS",
+  VPS: "VPS",
 
   /**
    * Verifying Treatment Supplier   (not sure how to dissect Pharmacist/Treatment Supplier's Verifier ID)
    */
-  VerifyingTreatmentSuppliernotsurehowtodissectPharmacistTreatmentSuppliersVerifierID:
-    "VTS",
+  VTS: "VTS",
 } as const;
 
 /**

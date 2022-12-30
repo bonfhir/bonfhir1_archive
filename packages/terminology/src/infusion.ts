@@ -6,67 +6,67 @@ export const InfusionCode = {
   /**
    * Infusion, epidural
    */
-  Infusionepidural: "EPI",
+  EPI: "EPI",
 
   /**
    * Infusion, intraarterial catheter
    */
-  Infusionintraarterialcatheter: "IA",
+  IA: "IA",
 
   /**
    * Infusion, intracardiac
    */
-  Infusionintracardiac: "IC",
+  IC: "IC",
 
   /**
    * Infusion, intracoronary
    */
-  Infusionintracoronary: "ICOR",
+  ICOR: "ICOR",
 
   /**
    * Infusion, intraosseous, continuous
    */
-  Infusionintraosseouscontinuous: "IOSSC",
+  IOSSC: "IOSSC",
 
   /**
    * Infusion, intrathecal
    */
-  Infusionintrathecal: "IT",
+  IT: "IT",
 
   /**
    * Infusion, intravenous
    */
-  Infusionintravenous: "IV",
+  IV: "IV",
 
   /**
    * Infusion, intravenous catheter
    */
-  Infusionintravenouscatheter: "IVC",
+  IVC: "IVC",
 
   /**
    * Infusion, intravenous catheter, continuous
    */
-  Infusionintravenouscathetercontinuous: "IVCC",
+  IVCC: "IVCC",
 
   /**
    * Infusion, intravenous catheter, intermittent
    */
-  Infusionintravenouscatheterintermittent: "IVCI",
+  IVCI: "IVCI",
 
   /**
    * Infusion, intravenous catheter, pca pump
    */
-  Infusionintravenouscatheterpcapump: "PCA",
+  PCA: "PCA",
 
   /**
    * Infusion, intravascular
    */
-  Infusionintravascular: "IVASCINFUS",
+  IVASCINFUS: "IVASCINFUS",
 
   /**
    * Infusion, subcutaneous
    */
-  Infusionsubcutaneous: "SQINFUS",
+  SQINFUS: "SQINFUS",
 } as const;
 
 /**

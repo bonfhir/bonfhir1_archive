@@ -6,7 +6,7 @@ export const IntracavitaryRouteCode = {
   /**
    * Injection, intracavitary
    */
-  Injectionintracavitary: "ICAVITINJ",
+  ICAVITINJ: "ICAVITINJ",
 } as const;
 
 /**

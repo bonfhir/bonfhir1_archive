@@ -6,17 +6,17 @@ export const Hl7VSMilitaryStatusCode = {
   /**
    * Active duty
    */
-  Activeduty: "ACT",
+  ACT: "ACT",
 
   /**
    * Retired
    */
-  Retired: "RET",
+  RET: "RET",
 
   /**
    * Deceased
    */
-  Deceased: "DEC",
+  DEC: "DEC",
 } as const;
 
 /**

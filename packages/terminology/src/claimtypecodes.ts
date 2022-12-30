@@ -6,27 +6,27 @@ export const ClaimTypeCodesCode = {
   /**
    * Institutional
    */
-  Institutional: "institutional",
+  institutional: "institutional",
 
   /**
    * Oral
    */
-  Oral: "oral",
+  oral: "oral",
 
   /**
    * Pharmacy
    */
-  Pharmacy: "pharmacy",
+  pharmacy: "pharmacy",
 
   /**
    * Professional
    */
-  Professional: "professional",
+  professional: "professional",
 
   /**
    * Vision
    */
-  Vision: "vision",
+  vision: "vision",
 } as const;
 
 /**

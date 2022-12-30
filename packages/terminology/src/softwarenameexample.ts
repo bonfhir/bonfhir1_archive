@@ -6,12 +6,12 @@ export const SoftwareNameExampleCode = {
   /**
    * example software name 1
    */
-  examplesoftwarename1: "examplesoftware1",
+  examplesoftware1: "examplesoftware1",
 
   /**
    * example software name 2
    */
-  examplesoftwarename2: "examplesoftware2",
+  examplesoftware2: "examplesoftware2",
 } as const;
 
 /**

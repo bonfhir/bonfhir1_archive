@@ -6,7 +6,7 @@ export const ParticipationUgentNotificationContactCode = {
   /**
    * ugent notification contact
    */
-  ugentnotificationcontact: "NOT",
+  NOT: "NOT",
 } as const;
 
 /**

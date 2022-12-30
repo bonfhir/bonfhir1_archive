@@ -6,17 +6,17 @@ export const RaceAmericanIndianChickahominyCode = {
   /**
    * Chickahominy
    */
-  Chickahominy: "1108-0",
+  "1108-0": "1108-0",
 
   /**
    * Eastern Chickahominy
    */
-  EasternChickahominy: "1109-8",
+  "1109-8": "1109-8",
 
   /**
    * Western Chickahominy
    */
-  WesternChickahominy: "1110-6",
+  "1110-6": "1110-6",
 } as const;
 
 /**

@@ -6,12 +6,12 @@ export const XActFinancialProductAcquisitionCodeCode = {
   /**
    * Rent
    */
-  Rent: "RENT",
+  RENT: "RENT",
 
   /**
    * Sale
    */
-  Sale: "SALE",
+  SALE: "SALE",
 } as const;
 
 /**

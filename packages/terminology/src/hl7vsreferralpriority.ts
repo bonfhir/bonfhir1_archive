@@ -6,17 +6,17 @@ export const Hl7VSReferralPriorityCode = {
   /**
    * STAT
    */
-  STAT: "S",
+  S: "S",
 
   /**
    * ASAP
    */
-  ASAP: "A",
+  A: "A",
 
   /**
    * Routine
    */
-  Routine: "R",
+  R: "R",
 } as const;
 
 /**

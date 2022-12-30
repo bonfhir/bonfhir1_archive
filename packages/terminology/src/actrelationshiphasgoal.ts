@@ -6,7 +6,7 @@ export const ActRelationshipHasGoalCode = {
   /**
    * has goal
    */
-  hasgoal: "GOAL",
+  GOAL: "GOAL",
 } as const;
 
 /**

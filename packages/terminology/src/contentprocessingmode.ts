@@ -6,12 +6,12 @@ export const ContentProcessingModeCode = {
   /**
    * Sequential
    */
-  Sequential: "SEQL",
+  SEQL: "SEQL",
 
   /**
    * Unordered
    */
-  Unordered: "UNOR",
+  UNOR: "UNOR",
 } as const;
 
 /**

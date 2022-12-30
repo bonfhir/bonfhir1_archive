@@ -12,22 +12,22 @@ export const ActRelationshipJoinCode = {
   /**
    * detached
    */
-  detached: "D",
+  D: "D",
 
   /**
    * kill
    */
-  kill: "K",
+  K: "K",
 
   /**
    * wait
    */
-  wait: "W",
+  W: "W",
 
   /**
    * exclusive wait
    */
-  exclusivewait: "X",
+  X: "X",
 } as const;
 
 /**

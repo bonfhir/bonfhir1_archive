@@ -12,32 +12,32 @@ export const SnodentDentalToothFurcationSiteInternationalCode = {
   /**
    * Lingual Surface
    */
-  LingualSurface: "103356D",
+  "103356D": "103356D",
 
   /**
    * Buccal Surface
    */
-  BuccalSurface: "103387D",
+  "103387D": "103387D",
 
   /**
    * Mesial Surface
    */
-  MesialSurface: "132513D",
+  "132513D": "132513D",
 
   /**
    * Distal Surface
    */
-  DistalSurface: "146014D",
+  "146014D": "146014D",
 
   /**
    * Mesial-lingual
    */
-  Mesiallingual: "163013D",
+  "163013D": "163013D",
 
   /**
    * Distal-lingual
    */
-  Distallingual: "163468D",
+  "163468D": "163468D",
 } as const;
 
 /**

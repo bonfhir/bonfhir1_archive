@@ -6,7 +6,7 @@ export const RoleClassInvoicePayorCode = {
   /**
    * invoice payor
    */
-  invoicepayor: "PAYOR",
+  PAYOR: "PAYOR",
 } as const;
 
 /**

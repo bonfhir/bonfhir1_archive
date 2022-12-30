@@ -6,17 +6,17 @@ export const RoleClassEquivalentEntityCode = {
   /**
    * equivalent entity
    */
-  equivalententity: "EQUIV",
+  EQUIV: "EQUIV",
 
   /**
    * same
    */
-  same: "SAME",
+  SAME: "SAME",
 
   /**
    * subsumed by
    */
-  subsumedby: "SUBY",
+  SUBY: "SUBY",
 } as const;
 
 /**

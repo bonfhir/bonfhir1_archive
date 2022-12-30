@@ -6,32 +6,32 @@ export const EthnicityHispanicMexicanCode = {
   /**
    * Mexican
    */
-  Mexican: "2148-5",
+  "2148-5": "2148-5",
 
   /**
    * Mexican American
    */
-  MexicanAmerican: "2149-3",
+  "2149-3": "2149-3",
 
   /**
    * Mexicano
    */
-  Mexicano: "2150-1",
+  "2150-1": "2150-1",
 
   /**
    * Chicano
    */
-  Chicano: "2151-9",
+  "2151-9": "2151-9",
 
   /**
    * La Raza
    */
-  LaRaza: "2152-7",
+  "2152-7": "2152-7",
 
   /**
    * Mexican American Indian
    */
-  MexicanAmericanIndian: "2153-5",
+  "2153-5": "2153-5",
 } as const;
 
 /**

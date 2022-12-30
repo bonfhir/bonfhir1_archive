@@ -6,27 +6,27 @@ export const Hl7VSResponseFlagCode = {
   /**
    * Report exceptions only
    */
-  Reportexceptionsonly: "E",
+  E: "E",
 
   /**
    * Same as E, also Replacement and Parent-Child
    */
-  SameasEalsoReplacementandParentChild: "R",
+  R: "R",
 
   /**
    * Same as R, also other associated segments
    */
-  SameasRalsootherassociatedsegments: "D",
+  D: "D",
 
   /**
    * Same as D, plus confirmations explicitly
    */
-  SameasDplusconfirmationsexplicitly: "F",
+  F: "F",
 
   /**
    * Only the MSA segment is returned
    */
-  OnlytheMSAsegmentisreturned: "N",
+  N: "N",
 } as const;
 
 /**

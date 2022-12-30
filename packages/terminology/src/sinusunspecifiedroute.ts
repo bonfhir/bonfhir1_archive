@@ -6,12 +6,12 @@ export const SinusUnspecifiedRouteCode = {
   /**
    * Injection, endosinusial
    */
-  Injectionendosinusial: "ENDOSININJ",
+  ENDOSININJ: "ENDOSININJ",
 
   /**
    * Instillation, sinus, unspecified
    */
-  Instillationsinusunspecified: "SININSTIL",
+  SININSTIL: "SININSTIL",
 } as const;
 
 /**

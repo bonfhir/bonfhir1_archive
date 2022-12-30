@@ -6,7 +6,7 @@ export const ActRelationshipAdjunctCurativeIndicationCode = {
   /**
    * adjunct curative indication
    */
-  adjunctcurativeindication: "CURE.ADJ",
+  "CURE.ADJ": "CURE.ADJ",
 } as const;
 
 /**

@@ -6,22 +6,22 @@ export const RaceAmericanIndianWashoeCode = {
   /**
    * Washoe
    */
-  Washoe: "1687-3",
+  "1687-3": "1687-3",
 
   /**
    * Alpine
    */
-  Alpine: "1688-1",
+  "1688-1": "1688-1",
 
   /**
    * Carson
    */
-  Carson: "1689-9",
+  "1689-9": "1689-9",
 
   /**
    * Dresslerville
    */
-  Dresslerville: "1690-7",
+  "1690-7": "1690-7",
 } as const;
 
 /**

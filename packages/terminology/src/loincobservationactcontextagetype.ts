@@ -6,27 +6,27 @@ export const LOINCObservationActContextAgeTypeCode = {
   /**
    * age patient qn est
    */
-  agepatientqnest: "21611-9",
+  "21611-9": "21611-9",
 
   /**
    * age patient qn reported
    */
-  agepatientqnreported: "21612-7",
+  "21612-7": "21612-7",
 
   /**
    * age patient qn calc
    */
-  agepatientqncalc: "29553-5",
+  "29553-5": "29553-5",
 
   /**
    * age patient qn definition
    */
-  agepatientqndefinition: "30525-0",
+  "30525-0": "30525-0",
 
   /**
    * age at onset of adverse event
    */
-  ageatonsetofadverseevent: "30972-4",
+  "30972-4": "30972-4",
 } as const;
 
 /**

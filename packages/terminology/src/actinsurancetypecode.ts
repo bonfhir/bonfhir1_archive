@@ -8,152 +8,152 @@ export const ActInsuranceTypeCodeCode = {
   /**
    * ActInsuranceTypeCode
    */
-  ActInsuranceTypeCode: "_ActInsuranceTypeCode",
+  _ActInsuranceTypeCode: "_ActInsuranceTypeCode",
 
   /**
    * automobile
    */
-  automobile: "AUTOPOL",
+  AUTOPOL: "AUTOPOL",
 
   /**
    * collision coverage policy
    */
-  collisioncoveragepolicy: "COL",
+  COL: "COL",
 
   /**
    * uninsured motorist policy
    */
-  uninsuredmotoristpolicy: "UNINSMOT",
+  UNINSMOT: "UNINSMOT",
 
   /**
    * ActHealthInsuranceTypeCode
    */
-  ActHealthInsuranceTypeCode: "_ActHealthInsuranceTypeCode",
+  _ActHealthInsuranceTypeCode: "_ActHealthInsuranceTypeCode",
 
   /**
    * dental care policy
    */
-  dentalcarepolicy: "DENTAL",
+  DENTAL: "DENTAL",
 
   /**
    * disease specific policy
    */
-  diseasespecificpolicy: "DISEASE",
+  DISEASE: "DISEASE",
 
   /**
    * drug policy
    */
-  drugpolicy: "DRUGPOL",
+  DRUGPOL: "DRUGPOL",
 
   /**
    * extended healthcare
    */
-  extendedhealthcare: "EHCPOL",
+  EHCPOL: "EHCPOL",
 
   /**
    * health insurance plan policy
    */
-  healthinsuranceplanpolicy: "HIP",
+  HIP: "HIP",
 
   /**
    * health spending account
    */
-  healthspendingaccount: "HSAPOL",
+  HSAPOL: "HSAPOL",
 
   /**
    * long term care policy
    */
-  longtermcarepolicy: "LTC",
+  LTC: "LTC",
 
   /**
    * managed care policy
    */
-  managedcarepolicy: "MCPOL",
+  MCPOL: "MCPOL",
 
   /**
    * point of service policy
    */
-  pointofservicepolicy: "POS",
+  POS: "POS",
 
   /**
    * health maintenance organization policy
    */
-  healthmaintenanceorganizationpolicy: "HMO",
+  HMO: "HMO",
 
   /**
    * preferred provider organization policy
    */
-  preferredproviderorganizationpolicy: "PPO",
+  PPO: "PPO",
 
   /**
    * mental health policy
    */
-  mentalhealthpolicy: "MENTPOL",
+  MENTPOL: "MENTPOL",
 
   /**
    * substance use policy
    */
-  substanceusepolicy: "SUBPOL",
+  SUBPOL: "SUBPOL",
 
   /**
    * vision care policy
    */
-  visioncarepolicy: "VISPOL",
+  VISPOL: "VISPOL",
 
   /**
    * disability insurance policy
    */
-  disabilityinsurancepolicy: "DIS",
+  DIS: "DIS",
 
   /**
    * employee welfare benefit plan policy
    */
-  employeewelfarebenefitplanpolicy: "EWB",
+  EWB: "EWB",
 
   /**
    * flexible benefit plan policy
    */
-  flexiblebenefitplanpolicy: "FLEXP",
+  FLEXP: "FLEXP",
 
   /**
    * life insurance policy
    */
-  lifeinsurancepolicy: "LIFE",
+  LIFE: "LIFE",
 
   /**
    * annuity policy
    */
-  annuitypolicy: "ANNU",
+  ANNU: "ANNU",
 
   /**
    * term life insurance policy
    */
-  termlifeinsurancepolicy: "TLIFE",
+  TLIFE: "TLIFE",
 
   /**
    * universal life insurance policy
    */
-  universallifeinsurancepolicy: "ULIFE",
+  ULIFE: "ULIFE",
 
   /**
    * property and casualty insurance policy
    */
-  propertyandcasualtyinsurancepolicy: "PNC",
+  PNC: "PNC",
 
   /**
    * reinsurance policy
    */
-  reinsurancepolicy: "REI",
+  REI: "REI",
 
   /**
    * surplus line insurance policy
    */
-  surpluslineinsurancepolicy: "SURPL",
+  SURPL: "SURPL",
 
   /**
    * umbrella liability insurance policy
    */
-  umbrellaliabilityinsurancepolicy: "UMBRL",
+  UMBRL: "UMBRL",
 } as const;
 
 /**

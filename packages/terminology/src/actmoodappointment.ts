@@ -6,7 +6,7 @@ export const ActMoodAppointmentCode = {
   /**
    * appointment
    */
-  appointment: "APT",
+  APT: "APT",
 } as const;
 
 /**

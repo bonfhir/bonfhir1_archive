@@ -6,83 +6,72 @@ export const Hl7VSConfidentialityCode = {
   /**
    * Business - Since the service class can represent knowledge structures that may be considered a trade or business secret, there is sometimes (though rarely) the need to flag those items as of business level confidentiality.  However, no patient related inf
    */
-  BusinessSincetheserviceclasscanrepresentknowledgestructuresthatmaybeconsideredatradeorbusinesssecretthereissometimesthoughrarelytheneedtoflagthoseitemsasofbusinesslevelconfidentialityHowevernopatientrelatedinf:
-    "B",
+  B: "B",
 
   /**
    * Clinician - Only clinicians may see this item, billing and administration persons can not access this item without special permission.
    */
-  ClinicianOnlycliniciansmayseethisitembillingandadministrationpersonscannotaccessthisitemwithoutspecialpermission:
-    "D",
+  D: "D",
 
   /**
    * Individual - Access only to individual persons who are mentioned explicitly as actors of this service and whose actor type warrants that access (cf. to actor typed code).
    */
-  IndividualAccessonlytoindividualpersonswhoarementionedexplicitlyasactorsofthisserviceandwhoseactortypewarrantsthataccesscftoactortypedcode:
-    "I",
+  I: "I",
 
   /**
    * Low - No patient record item can be of low confidentiality.  However, some service objects are not patient related and therefore may have low confidentiality.
    */
-  LowNopatientrecorditemcanbeoflowconfidentialityHoweversomeserviceobjectsarenotpatientrelatedandthereforemayhavelowconfidentiality:
-    "L",
+  L: "L",
 
   /**
    * Normal - Normal confidentiality rules (according to good health care practice) apply, that is, only authorized individuals with a legitimate medical or business need may access this item.
    */
-  NormalNormalconfidentialityrulesaccordingtogoodhealthcarepracticeapplythatisonlyauthorizedindividualswithalegitimatemedicalorbusinessneedmayaccessthisitem:
-    "N",
+  N: "N",
 
   /**
    * Restricted - Restricted access, e.g. only to providers having a current care relationship to the patient.
    */
-  RestrictedRestrictedaccessegonlytoprovidershavingacurrentcarerelationshiptothepatient:
-    "R",
+  R: "R",
 
   /**
    * Very restricted - Very restricted access as declared by the Privacy Officer of the record holder.
    */
-  VeryrestrictedVeryrestrictedaccessasdeclaredbythePrivacyOfficeroftherecordholder:
-    "V",
+  V: "V",
 
   /**
    * Substance abuse related - Alcohol/drug-abuse related item
    */
-  SubstanceabuserelatedAlcoholdrugabuserelateditem: "ETH",
+  ETH: "ETH",
 
   /**
    * HIV Related - HIV and AIDS related item
    */
-  HIVRelatedHIVandAIDSrelateditem: "HIV",
+  HIV: "HIV",
 
   /**
    * Psychiatry related - Psychiatry related item
    */
-  PsychiatryrelatedPsychiatryrelateditem: "PSY",
+  PSY: "PSY",
 
   /**
    * Sexual and domestic violence related - Sexual assault / domestic violence related item
    */
-  SexualanddomesticviolencerelatedSexualassaultdomesticviolencerelateditem:
-    "SDV",
+  SDV: "SDV",
 
   /**
    * Celebrity - Celebrities are people of public interest (VIP) including employees, whose information require special protection.
    */
-  CelebrityCelebritiesarepeopleofpublicinterestVIPincludingemployeeswhoseinformationrequirespecialprotection:
-    "C",
+  C: "C",
 
   /**
    * Sensitive - Information for which the patient seeks heightened confidentiality.  Sensitive information is not to be shared with family members.  Information reported by the patient about family members is sensitive by default.  Flag can be set or cleared
    */
-  SensitiveInformationforwhichthepatientseeksheightenedconfidentialitySensitiveinformationisnottobesharedwithfamilymembersInformationreportedbythepatientaboutfamilymembersissensitivebydefaultFlagcanbesetorcleared:
-    "S",
+  S: "S",
 
   /**
    * Taboo - Information not to be disclosed or discussed with patient except through physician assigned to patient in this case.  This is usually a temporary constraint only; example use is a new fatal diagnosis or finding, such as malignancy or HIV.
    */
-  TabooInformationnottobedisclosedordiscussedwithpatientexceptthroughphysicianassignedtopatientinthiscaseThisisusuallyatemporaryconstraintonlyexampleuseisanewfataldiagnosisorfindingsuchasmalignancyorHIV:
-    "T",
+  T: "T",
 } as const;
 
 /**

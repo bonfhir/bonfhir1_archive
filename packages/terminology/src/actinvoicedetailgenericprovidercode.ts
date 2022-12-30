@@ -6,67 +6,67 @@ export const ActInvoiceDetailGenericProviderCodeCode = {
   /**
    * cancelled appointment
    */
-  cancelledappointment: "CANCAPT",
+  CANCAPT: "CANCAPT",
 
   /**
    * discount
    */
-  discount: "DSC",
+  DSC: "DSC",
 
   /**
    * extraordinary service assessment
    */
-  extraordinaryserviceassessment: "ESA",
+  ESA: "ESA",
 
   /**
    * fee for service top off
    */
-  feeforservicetopoff: "FFSTOP",
+  FFSTOP: "FFSTOP",
 
   /**
    * final fee
    */
-  finalfee: "FNLFEE",
+  FNLFEE: "FNLFEE",
 
   /**
    * first fee
    */
-  firstfee: "FRSTFEE",
+  FRSTFEE: "FRSTFEE",
 
   /**
    * markup or up-charge
    */
-  markuporupcharge: "MARKUP",
+  MARKUP: "MARKUP",
 
   /**
    * missed appointment
    */
-  missedappointment: "MISSAPT",
+  MISSAPT: "MISSAPT",
 
   /**
    * periodic fee
    */
-  periodicfee: "PERFEE",
+  PERFEE: "PERFEE",
 
   /**
    * performance bonus
    */
-  performancebonus: "PERMBNS",
+  PERMBNS: "PERMBNS",
 
   /**
    * restocking fee
    */
-  restockingfee: "RESTOCK",
+  RESTOCK: "RESTOCK",
 
   /**
    * travel
    */
-  travel: "TRAVEL",
+  TRAVEL: "TRAVEL",
 
   /**
    * urgent
    */
-  urgent: "URGENT",
+  URGENT: "URGENT",
 } as const;
 
 /**

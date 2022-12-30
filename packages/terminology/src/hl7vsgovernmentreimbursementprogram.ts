@@ -6,12 +6,12 @@ export const Hl7VSGovernmentReimbursementProgramCode = {
   /**
    * Medicare
    */
-  Medicare: "MM",
+  MM: "MM",
 
   /**
    * Medi-Cal
    */
-  MediCal: "C",
+  C: "C",
 } as const;
 
 /**

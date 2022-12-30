@@ -6,27 +6,27 @@ export const StatusRevisionRefusalReasonCodeCode = {
   /**
    * StatusRevisionRefusalReasonCode
    */
-  StatusRevisionRefusalReasonCode: "_StatusRevisionRefusalReasonCode",
+  _StatusRevisionRefusalReasonCode: "_StatusRevisionRefusalReasonCode",
 
   /**
    * no record match
    */
-  norecordmatch: "NORECMTCH",
+  NORECMTCH: "NORECMTCH",
 
   /**
    * in requested state
    */
-  inrequestedstate: "INRQSTATE",
+  INRQSTATE: "INRQSTATE",
 
   /**
    * no user permission
    */
-  nouserpermission: "NOUSERPERM",
+  NOUSERPERM: "NOUSERPERM",
 
   /**
    * fully filled
    */
-  fullyfilled: "FILLED",
+  FILLED: "FILLED",
 } as const;
 
 /**

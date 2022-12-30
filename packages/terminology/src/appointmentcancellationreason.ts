@@ -6,162 +6,162 @@ export const AppointmentCancellationReasonCode = {
   /**
    * Patient
    */
-  Patient: "pat",
+  pat: "pat",
 
   /**
    * Patient: Canceled via automated reminder system
    */
-  PatientCanceledviaautomatedremindersystem: "pat-crs",
+  "pat-crs": "pat-crs",
 
   /**
    * Patient: Canceled via Patient Portal
    */
-  PatientCanceledviaPatientPortal: "pat-cpp",
+  "pat-cpp": "pat-cpp",
 
   /**
    * Patient: Deceased
    */
-  PatientDeceased: "pat-dec",
+  "pat-dec": "pat-dec",
 
   /**
    * Patient: Feeling Better
    */
-  PatientFeelingBetter: "pat-fb",
+  "pat-fb": "pat-fb",
 
   /**
    * Patient: Lack of Transportation
    */
-  PatientLackofTransportation: "pat-lt",
+  "pat-lt": "pat-lt",
 
   /**
    * Patient: Member Terminated
    */
-  PatientMemberTerminated: "pat-mt",
+  "pat-mt": "pat-mt",
 
   /**
    * Patient: Moved
    */
-  PatientMoved: "pat-mv",
+  "pat-mv": "pat-mv",
 
   /**
    * Patient: Pregnant
    */
-  PatientPregnant: "pat-preg",
+  "pat-preg": "pat-preg",
 
   /**
    * Patient: Scheduled from Wait List
    */
-  PatientScheduledfromWaitList: "pat-swl",
+  "pat-swl": "pat-swl",
 
   /**
    * Patient: Unhappy/Changed Provider
    */
-  PatientUnhappyChangedProvider: "pat-ucp",
+  "pat-ucp": "pat-ucp",
 
   /**
    * Provider
    */
-  Provider: "prov",
+  prov: "prov",
 
   /**
    * Provider: Personal
    */
-  ProviderPersonal: "prov-pers",
+  "prov-pers": "prov-pers",
 
   /**
    * Provider: Discharged
    */
-  ProviderDischarged: "prov-dch",
+  "prov-dch": "prov-dch",
 
   /**
    * Provider: Edu/Meeting
    */
-  ProviderEduMeeting: "prov-edu",
+  "prov-edu": "prov-edu",
 
   /**
    * Provider: Hospitalized
    */
-  ProviderHospitalized: "prov-hosp",
+  "prov-hosp": "prov-hosp",
 
   /**
    * Provider: Labs Out of Acceptable Range
    */
-  ProviderLabsOutofAcceptableRange: "prov-labs",
+  "prov-labs": "prov-labs",
 
   /**
    * Provider: MRI Screening Form Marked Do Not Proceed
    */
-  ProviderMRIScreeningFormMarkedDoNotProceed: "prov-mri",
+  "prov-mri": "prov-mri",
 
   /**
    * Provider: Oncology Treatment Plan Changes
    */
-  ProviderOncologyTreatmentPlanChanges: "prov-onc",
+  "prov-onc": "prov-onc",
 
   /**
    * Equipment Maintenance/Repair
    */
-  EquipmentMaintenanceRepair: "maint",
+  maint: "maint",
 
   /**
    * Prep/Med Incomplete
    */
-  PrepMedIncomplete: "meds-inc",
+  "meds-inc": "meds-inc",
 
   /**
    * Other
    */
-  Other: "other",
+  other: "other",
 
   /**
    * Other: CMS Therapy Cap Service Not Authorized
    */
-  OtherCMSTherapyCapServiceNotAuthorized: "oth-cms",
+  "oth-cms": "oth-cms",
 
   /**
    * Other: Error
    */
-  OtherError: "oth-err",
+  "oth-err": "oth-err",
 
   /**
    * Other: Financial
    */
-  OtherFinancial: "oth-fin",
+  "oth-fin": "oth-fin",
 
   /**
    * Other: Improper IV Access/Infiltrate IV
    */
-  OtherImproperIVAccessInfiltrateIV: "oth-iv",
+  "oth-iv": "oth-iv",
 
   /**
    * Other: No Interpreter Available
    */
-  OtherNoInterpreterAvailable: "oth-int",
+  "oth-int": "oth-int",
 
   /**
    * Other: Prep/Med/Results Unavailable
    */
-  OtherPrepMedResultsUnavailable: "oth-mu",
+  "oth-mu": "oth-mu",
 
   /**
    * Other: Room/Resource Maintenance
    */
-  OtherRoomResourceMaintenance: "oth-room",
+  "oth-room": "oth-room",
 
   /**
    * Other: Schedule Order Error
    */
-  OtherScheduleOrderError: "oth-oerr",
+  "oth-oerr": "oth-oerr",
 
   /**
    * Other: Silent Walk In Error
    */
-  OtherSilentWalkInError: "oth-swie",
+  "oth-swie": "oth-swie",
 
   /**
    * Other: Weather
    */
-  OtherWeather: "oth-weath",
+  "oth-weath": "oth-weath",
 } as const;
 
 /**

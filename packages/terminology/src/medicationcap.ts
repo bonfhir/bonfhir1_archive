@@ -6,12 +6,12 @@ export const MedicationCapCode = {
   /**
    * ChildProof
    */
-  ChildProof: "CHILD",
+  CHILD: "CHILD",
 
   /**
    * EasyOpen
    */
-  EasyOpen: "EASY",
+  EASY: "EASY",
 } as const;
 
 /**

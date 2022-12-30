@@ -6,32 +6,32 @@ export const MobilityImpairedCode = {
   /**
    * Mobility impaired
    */
-  Mobilityimpaired: "5",
+  "5": "5",
 
   /**
    * Requires crib
    */
-  Requirescrib: "CB",
+  CB: "CB",
 
   /**
    * Requires crutches
    */
-  Requirescrutches: "CR",
+  CR: "CR",
 
   /**
    * Requires gurney
    */
-  Requiresgurney: "G",
+  G: "G",
 
   /**
    * Requires wheelchair
    */
-  Requireswheelchair: "WC",
+  WC: "WC",
 
   /**
    * Requires walker
    */
-  Requireswalker: "WK",
+  WK: "WK",
 } as const;
 
 /**

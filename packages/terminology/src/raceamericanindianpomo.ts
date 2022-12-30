@@ -6,47 +6,47 @@ export const RaceAmericanIndianPomoCode = {
   /**
    * Pomo
    */
-  Pomo: "1464-7",
+  "1464-7": "1464-7",
 
   /**
    * Central Pomo
    */
-  CentralPomo: "1465-4",
+  "1465-4": "1465-4",
 
   /**
    * Dry Creek
    */
-  DryCreek: "1466-2",
+  "1466-2": "1466-2",
 
   /**
    * Eastern Pomo
    */
-  EasternPomo: "1467-0",
+  "1467-0": "1467-0",
 
   /**
    * Kashia
    */
-  Kashia: "1468-8",
+  "1468-8": "1468-8",
 
   /**
    * Northern Pomo
    */
-  NorthernPomo: "1469-6",
+  "1469-6": "1469-6",
 
   /**
    * Scotts Valley
    */
-  ScottsValley: "1470-4",
+  "1470-4": "1470-4",
 
   /**
    * Stonyford
    */
-  Stonyford: "1471-2",
+  "1471-2": "1471-2",
 
   /**
    * Sulphur Bank
    */
-  SulphurBank: "1472-0",
+  "1472-0": "1472-0",
 } as const;
 
 /**

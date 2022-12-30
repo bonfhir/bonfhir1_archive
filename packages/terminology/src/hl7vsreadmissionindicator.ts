@@ -6,7 +6,7 @@ export const Hl7VSReAdmissionIndicatorCode = {
   /**
    * Re-admission
    */
-  Readmission: "R",
+  R: "R",
 } as const;
 
 /**

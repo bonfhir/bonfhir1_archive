@@ -6,12 +6,12 @@ export const Hl7VSReportPriorityCode = {
   /**
    * Routine
    */
-  Routine: "R",
+  R: "R",
 
   /**
    * Stat
    */
-  Stat: "S",
+  S: "S",
 } as const;
 
 /**

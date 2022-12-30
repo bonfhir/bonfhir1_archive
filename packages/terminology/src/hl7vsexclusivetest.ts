@@ -6,18 +6,17 @@ export const Hl7VSExclusiveTestCode = {
   /**
    * This test should be exclusive
    */
-  Thistestshouldbeexclusive: "Y",
+  Y: "Y",
 
   /**
    * This test can be included with any number of other tests
    */
-  Thistestcanbeincludedwithanynumberofothertests: "N",
+  N: "N",
 
   /**
    * In some cases, this test should be only exclusively with like tests (examples are cyto or pathology)
    */
-  Insomecasesthistestshouldbeonlyexclusivelywithliketestsexamplesarecytoorpathology:
-    "D",
+  D: "D",
 } as const;
 
 /**

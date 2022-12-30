@@ -6,17 +6,17 @@ export const Hl7VSQueryFormatCodeCode = {
   /**
    * Response is in display format
    */
-  Responseisindisplayformat: "D",
+  D: "D",
 
   /**
    * Response is in record-oriented format
    */
-  Responseisinrecordorientedformat: "R",
+  R: "R",
 
   /**
    * Response is in tabular format
    */
-  Responseisintabularformat: "T",
+  T: "T",
 } as const;
 
 /**

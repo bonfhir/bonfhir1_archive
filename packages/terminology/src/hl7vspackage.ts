@@ -6,22 +6,22 @@ export const Hl7VSPackageCode = {
   /**
    * Case
    */
-  Case: "CS",
+  CS: "CS",
 
   /**
    * Box
    */
-  Box: "BX",
+  BX: "BX",
 
   /**
    * Each
    */
-  Each: "EA",
+  EA: "EA",
 
   /**
    * Set
    */
-  Set: "SET",
+  SET: "SET",
 } as const;
 
 /**

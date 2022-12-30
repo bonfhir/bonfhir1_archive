@@ -6,37 +6,37 @@ export const Hl7VSLevelOfCareCode = {
   /**
    * Ambulatory
    */
-  Ambulatory: "A",
+  A: "A",
 
   /**
    * Emergency
    */
-  Emergency: "E",
+  E: "E",
 
   /**
    * Isolation
    */
-  Isolation: "F",
+  F: "F",
 
   /**
    * Intensive care
    */
-  Intensivecare: "N",
+  N: "N",
 
   /**
    * Critical care
    */
-  Criticalcare: "C",
+  C: "C",
 
   /**
    * Routine
    */
-  Routine: "R",
+  R: "R",
 
   /**
    * Surgery
    */
-  Surgery: "S",
+  S: "S",
 } as const;
 
 /**

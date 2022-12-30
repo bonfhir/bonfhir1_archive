@@ -6,7 +6,7 @@ export const RoleLinkIdentificationCode = {
   /**
    * Identification
    */
-  Identification: "IDENT",
+  IDENT: "IDENT",
 } as const;
 
 /**

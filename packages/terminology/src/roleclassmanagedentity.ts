@@ -6,22 +6,22 @@ export const RoleClassManagedEntityCode = {
   /**
    * access
    */
-  access: "ACCESS",
+  ACCESS: "ACCESS",
 
   /**
    * held entity
    */
-  heldentity: "HLD",
+  HLD: "HLD",
 
   /**
    * maintained entity
    */
-  maintainedentity: "MNT",
+  MNT: "MNT",
 
   /**
    * owned entity
    */
-  ownedentity: "OWN",
+  OWN: "OWN",
 } as const;
 
 /**

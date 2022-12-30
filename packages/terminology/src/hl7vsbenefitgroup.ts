@@ -6,12 +6,12 @@ export const Hl7VSBenefitGroupCode = {
   /**
    * AMBULATORY CARE
    */
-  AMBULATORYCARE: "AMB",
+  AMB: "AMB",
 
   /**
    * DENTAL
    */
-  DENTAL: "DENT",
+  DENT: "DENT",
 } as const;
 
 /**

@@ -6,7 +6,7 @@ export const Hl7VSRulingActCode = {
   /**
    * Safe Medical Devices Act
    */
-  SafeMedicalDevicesAct: "SMDA",
+  SMDA: "SMDA",
 } as const;
 
 /**

@@ -6,852 +6,852 @@ export const UnitsOfMeasureCaseSensitiveCode = {
   /**
    * percent
    */
-  percent: "%",
+  "%": "%",
 
   /**
    * percent / 100 WBC
    */
-  percent100WBC: "%/100{WBC}",
+  "%/100{WBC}": "%/100{WBC}",
 
   /**
    * percent 0to3Hours
    */
-  percent0to3Hours: "%{0to3Hours}",
+  "%{0to3Hours}": "%{0to3Hours}",
 
   /**
    * percent Abnormal
    */
-  percentAbnormal: "%{Abnormal}",
+  "%{Abnormal}": "%{Abnormal}",
 
   /**
    * percent Activity
    */
-  percentActivity: "%{Activity}",
+  "%{Activity}": "%{Activity}",
 
   /**
    * percent BasalActivity
    */
-  percentBasalActivity: "%{BasalActivity}",
+  "%{BasalActivity}": "%{BasalActivity}",
 
   /**
    * percent Binding
    */
-  percentBinding: "%{Binding}",
+  "%{Binding}": "%{Binding}",
 
   /**
    * percent Blockade
    */
-  percentBlockade: "%{Blockade}",
+  "%{Blockade}": "%{Blockade}",
 
   /**
    * percent Carboxyhemoglobin
    */
-  percentCarboxyhemoglobin: "%{Carboxyhemoglobin}",
+  "%{Carboxyhemoglobin}": "%{Carboxyhemoglobin}",
 
   /**
    * percent Conversion
    */
-  percentConversion: "%{Conversion}",
+  "%{Conversion}": "%{Conversion}",
 
   /**
    * percent Cound
    */
-  percentCound: "%{Cound}",
+  "%{Cound}": "%{Cound}",
 
   /**
    * percent EosSeen
    */
-  percentEosSeen: "%{EosSeen}",
+  "%{EosSeen}": "%{EosSeen}",
 
   /**
    * percent Excretion
    */
-  percentExcretion: "%{Excretion}",
+  "%{Excretion}": "%{Excretion}",
 
   /**
    * percent Fat
    */
-  percentFat: "%{Fat}",
+  "%{Fat}": "%{Fat}",
 
   /**
    * percent FetalErythrocytes
    */
-  percentFetalErythrocytes: "%{FetalErythrocytes}",
+  "%{FetalErythrocytes}": "%{FetalErythrocytes}",
 
   /**
    * percent Hemoglobin
    */
-  percentHemoglobin: "%{Hemoglobin}",
+  "%{Hemoglobin}": "%{Hemoglobin}",
 
   /**
    * percent HemoglobinA1C
    */
-  percentHemoglobinA1C: "%{HemoglobinA1C}",
+  "%{HemoglobinA1C}": "%{HemoglobinA1C}",
 
   /**
    * percent HemoglobinSaturation
    */
-  percentHemoglobinSaturation: "%{HemoglobinSaturation}",
+  "%{HemoglobinSaturation}": "%{HemoglobinSaturation}",
 
   /**
    * percent Hemolysis
    */
-  percentHemolysis: "%{Hemolysis}",
+  "%{Hemolysis}": "%{Hemolysis}",
 
   /**
    * percent HumanResponse
    */
-  percentHumanResponse: "%{HumanResponse}",
+  "%{HumanResponse}": "%{HumanResponse}",
 
   /**
    * percent Index
    */
-  percentIndex: "%{Index}",
+  "%{Index}": "%{Index}",
 
   /**
    * percent Inhibition
    */
-  percentInhibition: "%{Inhibition}",
+  "%{Inhibition}": "%{Inhibition}",
 
   /**
    * percent Live
    */
-  percentLive: "%{Live}",
+  "%{Live}": "%{Live}",
 
   /**
    * percent Negative Control
    */
-  percentNegativeControl: "%{Negative Control}",
+  "%{Negative Control}": "%{Negative Control}",
 
   /**
    * percent Normal
    */
-  percentNormal: "%{Normal}",
+  "%{Normal}": "%{Normal}",
 
   /**
    * percent NormalControl
    */
-  percentNormalControl: "%{NormalControl}",
+  "%{NormalControl}": "%{NormalControl}",
 
   /**
    * percent NormalPooledPlasma
    */
-  percentNormalPooledPlasma: "%{NormalPooledPlasma}",
+  "%{NormalPooledPlasma}": "%{NormalPooledPlasma}",
 
   /**
    * percent ofAvailable
    */
-  percentofAvailable: "%{ofAvailable}",
+  "%{ofAvailable}": "%{ofAvailable}",
 
   /**
    * percent ofBacteria
    */
-  percentofBacteria: "%{ofBacteria}",
+  "%{ofBacteria}": "%{ofBacteria}",
 
   /**
    * percent OfLymphocytes
    */
-  percentOfLymphocytes: "%{OfLymphocytes}",
+  "%{OfLymphocytes}": "%{OfLymphocytes}",
 
   /**
    * percent OfWBCs
    */
-  percentOfWBCs: "%{OfWBCs}",
+  "%{OfWBCs}": "%{OfWBCs}",
 
   /**
    * percent Oxygen
    */
-  percentOxygen: "%{Oxygen}",
+  "%{Oxygen}": "%{Oxygen}",
 
   /**
    * percent Positive
    */
-  percentPositive: "%{Positive}",
+  "%{Positive}": "%{Positive}",
 
   /**
    * percent Precipitate
    */
-  percentPrecipitate: "%{Precipitate}",
+  "%{Precipitate}": "%{Precipitate}",
 
   /**
    * percent Reactivity
    */
-  percentReactivity: "%{Reactivity}",
+  "%{Reactivity}": "%{Reactivity}",
 
   /**
    * percent response
    */
-  percentresponse: "%{response}",
+  "%{response}": "%{response}",
 
   /**
    * percent risk
    */
-  percentrisk: "%{risk}",
+  "%{risk}": "%{risk}",
 
   /**
    * percent SpermMotility
    */
-  percentSpermMotility: "%{SpermMotility}",
+  "%{SpermMotility}": "%{SpermMotility}",
 
   /**
    * percent Total
    */
-  percentTotal: "%{Total}",
+  "%{Total}": "%{Total}",
 
   /**
    * percent TotalProtein
    */
-  percentTotalProtein: "%{TotalProtein}",
+  "%{TotalProtein}": "%{TotalProtein}",
 
   /**
    * percent Tot'Cholesterol
    */
-  percentTotCholesterol: "%{Tot'Cholesterol}",
+  "%{Tot'Cholesterol}": "%{Tot'Cholesterol}",
 
   /**
    * percent Tot'Hgb
    */
-  percentTotHgb: "%{Tot'Hgb}",
+  "%{Tot'Hgb}": "%{Tot'Hgb}",
 
   /**
    * percent Uptake
    */
-  percentUptake: "%{Uptake}",
+  "%{Uptake}": "%{Uptake}",
 
   /**
    * VolumePercent
    */
-  VolumePercent: "%{vol}",
+  "%{vol}": "%{vol}",
 
   /**
    * percent WeightToWeight
    */
-  percentWeightToWeight: "%{WeightToWeight}",
+  "%{WeightToWeight}": "%{WeightToWeight}",
 
   /**
    * per 12 * hour
    */
-  per12hour: "/(12.h)",
+  "/(12.h)": "/(12.h)",
 
   /**
    * per arbitrary unit
    */
-  perarbitraryunit: "/[arb'U]",
+  "/[arb'U]": "/[arb'U]",
 
   /**
    * per high power field
    */
-  perhighpowerfield: "/[HPF]",
+  "/[HPF]": "/[HPF]",
 
   /**
    * per international unit
    */
-  perinternationalunit: "/[iU]",
+  "/[iU]": "/[iU]",
 
   /**
    * per low power field
    */
-  perlowpowerfield: "/[LPF]",
+  "/[LPF]": "/[LPF]",
 
   /**
    * per Entity
    */
-  perEntity: "/{Entity}",
+  "/{Entity}": "/{Entity}",
 
   /**
    * per oif
    */
-  peroif: "/{oif}",
+  "/{oif}": "/{oif}",
 
   /**
    * per Specimen
    */
-  perSpecimen: "/{Specimen}",
+  "/{Specimen}": "/{Specimen}",
 
   /**
    * per tot
    */
-  pertot: "/{tot}",
+  "/{tot}": "/{tot}",
 
   /**
    * PerTenGiga
    */
-  PerTenGiga: "/10*10",
+  "/10*10": "/10*10",
 
   /**
    * PerTrillion
    */
-  PerTrillion: "/10*12",
+  "/10*12": "/10*12",
 
   /**
    * PerTrillionRedBloodCells
    */
-  PerTrillionRedBloodCells: "/10*12{rbc}",
+  "/10*12{rbc}": "/10*12{rbc}",
 
   /**
    * PerMillion
    */
-  PerMillion: "/10*6",
+  "/10*6": "/10*6",
 
   /**
    * PerBillion
    */
-  PerBillion: "/10*9",
+  "/10*9": "/10*9",
 
   /**
    * per 100
    */
-  per100: "/100",
+  "/100": "/100",
 
   /**
    * per 100 cells
    */
-  per100cells: "/100{cells}",
+  "/100{cells}": "/100{cells}",
 
   /**
    * per 100 neutrophils
    */
-  per100neutrophils: "/100{neutrophils}",
+  "/100{neutrophils}": "/100{neutrophils}",
 
   /**
    * per 100 spermatozoa
    */
-  per100spermatozoa: "/100{spermatozoa}",
+  "/100{spermatozoa}": "/100{spermatozoa}",
 
   /**
    * Per100WBC
    */
-  Per100WBC: "/100{WBC}",
+  "/100{WBC}": "/100{WBC}",
 
   /**
    * Per100WBC
    */
-  Per100WBC: "/100{WBCs}",
+  "/100{WBCs}": "/100{WBCs}",
 
   /**
    * / year
    */
-  year: "/a",
+  "/a": "/a",
 
   /**
    * per centimeter of water
    */
-  percentimeterofwater: "/cm[H2O]",
+  "/cm[H2O]": "/cm[H2O]",
 
   /**
    * per day
    */
-  perday: "/d",
+  "/d": "/d",
 
   /**
    * per deciliter
    */
-  perdeciliter: "/dL",
+  "/dL": "/dL",
 
   /**
    * per gram
    */
-  pergram: "/g",
+  "/g": "/g",
 
   /**
    * per gram creat
    */
-  pergramcreat: "/g{creat}",
+  "/g{creat}": "/g{creat}",
 
   /**
    * per gram hgb
    */
-  pergramhgb: "/g{hgb}",
+  "/g{hgb}": "/g{hgb}",
 
   /**
    * per gram tot'nit
    */
-  pergramtotnit: "/g{tot'nit}",
+  "/g{tot'nit}": "/g{tot'nit}",
 
   /**
    * per gram tot'prot
    */
-  pergramtotprot: "/g{tot'prot}",
+  "/g{tot'prot}": "/g{tot'prot}",
 
   /**
    * per gram wet'tis
    */
-  pergramwettis: "/g{wet'tis}",
+  "/g{wet'tis}": "/g{wet'tis}",
 
   /**
    * per hour
    */
-  perhour: "/h",
+  "/h": "/h",
 
   /**
    * per kilogram
    */
-  perkilogram: "/kg",
+  "/kg": "/kg",
 
   /**
    * per kilogram body wt
    */
-  perkilogrambodywt: "/kg{body'wt}",
+  "/kg{body'wt}": "/kg{body'wt}",
 
   /**
    * per liter
    */
-  perliter: "/L",
+  "/L": "/L",
 
   /**
    * per square meter
    */
-  persquaremeter: "/m2",
+  "/m2": "/m2",
 
   /**
    * per milligram
    */
-  permilligram: "/mg",
+  "/mg": "/mg",
 
   /**
    * per minute
    */
-  perminute: "/min",
+  "/min": "/min",
 
   /**
    * per milliliter
    */
-  permilliliter: "/mL",
+  "/mL": "/mL",
 
   /**
    * per cubic millimeter
    */
-  percubicmillimeter: "/mm3",
+  "/mm3": "/mm3",
 
   /**
    * per millimole
    */
-  permillimole: "/mmol",
+  "/mmol": "/mmol",
 
   /**
    * per month
    */
-  permonth: "/mo",
+  "/mo": "/mo",
 
   /**
    * per second
    */
-  persecond: "/s",
+  "/s": "/s",
 
   /**
    * per enzyme unit
    */
-  perenzymeunit: "/U",
+  "/U": "/U",
 
   /**
    * per microgram
    */
-  permicrogram: "/ug",
+  "/ug": "/ug",
 
   /**
    * per microliter
    */
-  permicroliter: "/uL",
+  "/uL": "/uL",
 
   /**
    * per week
    */
-  perweek: "/wk",
+  "/wk": "/wk",
 
   /**
    * IgA anticardiolipin unit
    */
-  IgAanticardiolipinunit: "[APL'U]",
+  "[APL'U]": "[APL'U]",
 
   /**
    * IgA anticardiolipin unit per milliliter
    */
-  IgAanticardiolipinunitpermilliliter: "[APL'U]/mL",
+  "[APL'U]/mL": "[APL'U]/mL",
 
   /**
    * arbitrary unit
    */
-  arbitraryunit: "[arb'U]",
+  "[arb'U]": "[arb'U]",
 
   /**
    * arbitary unit / liter
    */
-  arbitaryunitliter: "[arb'U]/L",
+  "[arb'U]/L": "[arb'U]/L",
 
   /**
    * arbitrary unit per milliliter
    */
-  arbitraryunitpermilliliter: "[arb'U]/mL",
+  "[arb'U]/mL": "[arb'U]/mL",
 
   /**
    * allergy unit
    */
-  allergyunit: "[AU]",
+  "[AU]": "[AU]",
 
   /**
    * bioequivalent allergen unit
    */
-  bioequivalentallergenunit: "[BAU]",
+  "[BAU]": "[BAU]",
 
   /**
    * Bethesda unit
    */
-  Bethesdaunit: "[beth'U]",
+  "[beth'U]": "[beth'U]",
 
   /**
    * colony forming unit
    */
-  colonyformingunit: "[CFU]",
+  "[CFU]": "[CFU]",
 
   /**
    * colony forming unit per liter
    */
-  colonyformingunitperliter: "[CFU]/L",
+  "[CFU]/L": "[CFU]/L",
 
   /**
    * colony forming unit per milliliter
    */
-  colonyformingunitpermilliliter: "[CFU]/mL",
+  "[CFU]/mL": "[CFU]/mL",
 
   /**
    * French (catheter gauge)
    */
-  Frenchcathetergauge: "[Ch]",
+  "[Ch]": "[Ch]",
 
   /**
    * cubic inch
    */
-  cubicinch: "[cin_i]",
+  "[cin_i]": "[cin_i]",
 
   /**
    * cup
    */
-  cup: "[cup_us]",
+  "[cup_us]": "[cup_us]",
 
   /**
    * degree Fahrenheit
    */
-  degreeFahrenheit: "[degF]",
+  "[degF]": "[degF]",
 
   /**
    * Dram (US and British)
    */
-  DramUSandBritish: "[dr_av]",
+  "[dr_av]": "[dr_av]",
 
   /**
    * drop
    */
-  drop: "[drp]",
+  "[drp]": "[drp]",
 
   /**
    * drop / HPF
    */
-  dropHPF: "[drp]/[HPF]",
+  "[drp]/[HPF]": "[drp]/[HPF]",
 
   /**
    * drop / hour
    */
-  drophour: "[drp]/h",
+  "[drp]/h": "[drp]/h",
 
   /**
    * drop / minute
    */
-  dropminute: "[drp]/min",
+  "[drp]/min": "[drp]/min",
 
   /**
    * drop / milliliter
    */
-  dropmilliliter: "[drp]/mL",
+  "[drp]/mL": "[drp]/mL",
 
   /**
    * drop / second
    */
-  dropsecond: "[drp]/s",
+  "[drp]/s": "[drp]/s",
 
   /**
    * fluid dram
    */
-  fluiddram: "[fdr_us]",
+  "[fdr_us]": "[fdr_us]",
 
   /**
    * fluid ounce
    */
-  fluidounce: "[foz_br]",
+  "[foz_br]": "[foz_br]",
 
   /**
    * fluid ounce
    */
-  fluidounce: "[foz_us]",
+  "[foz_us]": "[foz_us]",
 
   /**
    * Feet
    */
-  Feet: "[ft_i]",
+  "[ft_i]": "[ft_i]",
 
   /**
    * fathom
    */
-  fathom: "[fth_i]",
+  "[fth_i]": "[fth_i]",
 
   /**
    * gallon
    */
-  gallon: "[gal_br]",
+  "[gal_br]": "[gal_br]",
 
   /**
    * Queen Anne's wine gallon
    */
-  QueenAnneswinegallon: "[gal_us]",
+  "[gal_us]": "[gal_us]",
 
   /**
    * IgG anticardiolipin unit
    */
-  IgGanticardiolipinunit: "[GPL'U]",
+  "[GPL'U]": "[GPL'U]",
 
   /**
    * grain
    */
-  grain: "[gr]",
+  "[gr]": "[gr]",
 
   /**
    * inch (international)
    */
-  inchinternational: "[in_i]",
+  "[in_i]": "[in_i]",
 
   /**
    * international unit
    */
-  internationalunit: "[iU]",
+  "[iU]": "[iU]",
 
   /**
    * international unit per 2 hour
    */
-  internationalunitper2hour: "[IU]/(2.h)",
+  "[IU]/(2.h)": "[IU]/(2.h)",
 
   /**
    * international unit per 24 hour
    */
-  internationalunitper24hour: "[IU]/(24.h)",
+  "[IU]/(24.h)": "[IU]/(24.h)",
 
   /**
    * international unit per billion red blood cells
    */
-  internationalunitperbillionredbloodcells: "[IU]/10*9{RBCs}",
+  "[IU]/10*9{RBCs}": "[IU]/10*9{RBCs}",
 
   /**
    * international unit per day
    */
-  internationalunitperday: "[IU]/d",
+  "[IU]/d": "[IU]/d",
 
   /**
    * international unit per deciliter
    */
-  internationalunitperdeciliter: "[IU]/dL",
+  "[IU]/dL": "[IU]/dL",
 
   /**
    * international unit per gram
    */
-  internationalunitpergram: "[IU]/g",
+  "[IU]/g": "[IU]/g",
 
   /**
    * international unit per gram of hemoglobin
    */
-  internationalunitpergramofhemoglobin: "[IU]/g{Hb}",
+  "[IU]/g{Hb}": "[IU]/g{Hb}",
 
   /**
    * international unit / gram Hgb
    */
-  internationalunitgramHgb: "[iU]/g{Hgb}",
+  "[iU]/g{Hgb}": "[iU]/g{Hgb}",
 
   /**
    * international unit per hour
    */
-  internationalunitperhour: "[IU]/h",
+  "[IU]/h": "[IU]/h",
 
   /**
    * international unit per kilogram
    */
-  internationalunitperkilogram: "[IU]/kg",
+  "[IU]/kg": "[IU]/kg",
 
   /**
    * international unit per kilogram per day
    */
-  internationalunitperkilogramperday: "[IU]/kg/d",
+  "[IU]/kg/d": "[IU]/kg/d",
 
   /**
    * international unit per liter
    */
-  internationalunitperliter: "[IU]/L",
+  "[IU]/L": "[IU]/L",
 
   /**
    * international unit per minute
    */
-  internationalunitperminute: "[IU]/min",
+  "[IU]/min": "[IU]/min",
 
   /**
    * international unit per milliliter
    */
-  internationalunitpermilliliter: "[IU]/mL",
+  "[IU]/mL": "[IU]/mL",
 
   /**
    * pound (US and British)
    */
-  poundUSandBritish: "[lb_av]",
+  "[lb_av]": "[lb_av]",
 
   /**
    * statute mile
    */
-  statutemile: "[mi_i]",
+  "[mi_i]": "[mi_i]",
 
   /**
    * mile
    */
-  mile: "[mi_us]",
+  "[mi_us]": "[mi_us]",
 
   /**
    * minim
    */
-  minim: "[min_us]",
+  "[min_us]": "[min_us]",
 
   /**
    * IgM anticardiolipin unit
    */
-  IgManticardiolipinunit: "[MPL'U]",
+  "[MPL'U]": "[MPL'U]",
 
   /**
    * nautical mile
    */
-  nauticalmile: "[nmi_i]",
+  "[nmi_i]": "[nmi_i]",
 
   /**
    * ounce (US and British)
    */
-  ounceUSandBritish: "[oz_av]",
+  "[oz_av]": "[oz_av]",
 
   /**
    * ounce
    */
-  ounce: "[oz_tr]",
+  "[oz_tr]": "[oz_tr]",
 
   /**
    * pH
    */
-  pH: "[pH]",
+  "[pH]": "[pH]",
 
   /**
    * the number pi * radian / minute
    */
-  thenumberpiradianminute: "[pi].rad/min",
+  "[pi].rad/min": "[pi].rad/min",
 
   /**
    * part per billion
    */
-  partperbillion: "[ppb]",
+  "[ppb]": "[ppb]",
 
   /**
    * part per million
    */
-  partpermillion: "[ppm]",
+  "[ppm]": "[ppm]",
 
   /**
    * part per million in volume per volume
    */
-  partpermillioninvolumepervolume: "[ppm]{v/v}",
+  "[ppm]{v/v}": "[ppm]{v/v}",
 
   /**
    * part per trillion
    */
-  partpertrillion: "[pptr]",
+  "[pptr]": "[pptr]",
 
   /**
    * parts per thousand
    */
-  partsperthousand: "[ppth]",
+  "[ppth]": "[ppth]",
 
   /**
    * pound per square inch
    */
-  poundpersquareinch: "[psi]",
+  "[psi]": "[psi]",
 
   /**
    * pint
    */
-  pint: "[pt_br]",
+  "[pt_br]": "[pt_br]",
 
   /**
    * quart
    */
-  quart: "[qt_br]",
+  "[qt_br]": "[qt_br]",
 
   /**
    * quart
    */
-  quart: "[qt_us]",
+  "[qt_us]": "[qt_us]",
 
   /**
    * square foot (international)
    */
-  squarefootinternational: "[sft_i]",
+  "[sft_i]": "[sft_i]",
 
   /**
    * square inch (international)
    */
-  squareinchinternational: "[sin_i]",
+  "[sin_i]": "[sin_i]",
 
   /**
    * short ton U.S. ton
    */
-  shorttonUSton: "[ston_av]",
+  "[ston_av]": "[ston_av]",
 
   /**
    * square yard
    */
-  squareyard: "[syd_i]",
+  "[syd_i]": "[syd_i]",
 
   /**
    * tablespoon (US)
    */
-  tablespoonUS: "[tbs_us]",
+  "[tbs_us]": "[tbs_us]",
 
   /**
    * tuberculin unit
    */
-  tuberculinunit: "[tb'U]",
+  "[tb'U]": "[tb'U]",
 
   /**
    * Todd unit
    */
-  Toddunit: "[todd'U]",
+  "[todd'U]": "[todd'U]",
 
   /**
    * teaspoon
    */
-  teaspoon: "[tsp_us]",
+  "[tsp_us]": "[tsp_us]",
 
   /**
    * yard
    */
-  yard: "[yd_i]",
+  "[yd_i]": "[yd_i]",
 
   /**
    * # of calculi
    */
-  ofcalculi: "{# of calculi}",
+  "{# of calculi}": "{# of calculi}",
 
   /**
    * # of donor informative markers
    */
-  ofdonorinformativemarkers: "{# of donor informative markers}",
+  "{# of donor informative markers}": "{# of donor informative markers}",
 
   /**
    * # of fetuses
    */
-  offetuses: "{# of fetuses}",
+  "{# of fetuses}": "{# of fetuses}",
 
   /**
    * # of informative markers
    */
-  ofinformativemarkers: "{# of informative markers}",
+  "{# of informative markers}": "{# of informative markers}",
 
   /**
    * #
@@ -861,963 +861,962 @@ export const UnitsOfMeasureCaseSensitiveCode = {
   /**
    * 2 or 3 times / day
    */
-  Twoor3timesday: "{2 or 3 times}/d",
+  "{2 or 3 times}/d": "{2 or 3 times}/d",
 
   /**
    * 3 times / day
    */
-  Threetimesday: "{3 times}/d",
+  "{3 times}/d": "{3 times}/d",
 
   /**
    * 4 times / day
    */
-  Fourtimesday: "{4 times}/d",
+  "{4 times}/d": "{4 times}/d",
 
   /**
    * 5 times / day
    */
-  Fivetimesday: "{5 times}/d",
+  "{5 times}/d": "{5 times}/d",
 
   /**
    * absorbance
    */
-  absorbance: "{absorbance}",
+  "{absorbance}": "{absorbance}",
 
   /**
    * Absorbance'U
    */
-  AbsorbanceU: "{Absorbance'U}",
+  "{Absorbance'U}": "{Absorbance'U}",
 
   /**
    * Absorbance'U / milliliter
    */
-  AbsorbanceUmilliliter: "{Absorbance'U}/mL",
+  "{Absorbance'U}/mL": "{Absorbance'U}/mL",
 
   /**
    * activity
    */
-  activity: "{activity}",
+  "{activity}": "{activity}",
 
   /**
    * ActivityCoefficient
    */
-  ActivityCoefficient: "{ActivityCoefficient}",
+  "{ActivityCoefficient}": "{ActivityCoefficient}",
 
   /**
    * AHF'U
    */
-  AHFU: "{AHF'U}",
+  "{AHF'U}": "{AHF'U}",
 
   /**
    * AntibodyResponse'U
    */
-  AntibodyResponseU: "{AntibodyResponse'U}",
+  "{AntibodyResponse'U}": "{AntibodyResponse'U}",
 
   /**
    * Applicator
    */
-  Applicator: "{Applicator}",
+  "{Applicator}": "{Applicator}",
 
   /**
    * IgA antiphosphatidylserine unit
    */
-  IgAantiphosphatidylserineunit: "{APS'U}",
+  "{APS'U}": "{APS'U}",
 
   /**
    * AspirinReaction'U
    */
-  AspirinReactionU: "{AspirinReaction'U}",
+  "{AspirinReaction'U}": "{AspirinReaction'U}",
 
   /**
    * Bead
    */
-  Bead: "{Bead}",
+  "{Bead}": "{Bead}",
 
   /**
    * Beats / minute
    */
-  Beatsminute: "{Beats}/min",
+  "{Beats}/min": "{Beats}/min",
 
   /**
    * Bottle
    */
-  Bottle: "{Bottle}",
+  "{Bottle}": "{Bottle}",
 
   /**
    * Bowls / day
    */
-  Bowlsday: "{Bowls}/d",
+  "{Bowls}/d": "{Bowls}/d",
 
   /**
    * Breaths / minute
    */
-  Breathsminute: "{Breaths}/min",
+  "{Breaths}/min": "{Breaths}/min",
 
   /**
    * complement activity enzyme unit
    */
-  complementactivityenzymeunit: "{CAE'U}",
+  "{CAE'U}": "{CAE'U}",
 
   /**
    * CagRepeat
    */
-  CagRepeat: "{CagRepeat}",
+  "{CagRepeat}": "{CagRepeat}",
 
   /**
    * Can
    */
-  Can: "{Can}",
+  "{Can}": "{Can}",
 
   /**
    * Cans / week
    */
-  Cansweek: "{Cans}/wk",
+  "{Cans}/wk": "{Cans}/wk",
 
   /**
    * Capsule
    */
-  Capsule: "{Capsule}",
+  "{Capsule}": "{Capsule}",
 
   /**
    * Cell
    */
-  Cell: "{Cell}",
+  "{Cell}": "{Cell}",
 
   /**
    * cells
    */
-  cells: "{cells}",
+  "{cells}": "{cells}",
 
   /**
    * cells per high power field
    */
-  cellsperhighpowerfield: "{cells}/[HPF]",
+  "{cells}/[HPF]": "{cells}/[HPF]",
 
   /**
    * Cells / milliliter
    */
-  Cellsmilliliter: "{Cells}/mL",
+  "{Cells}/mL": "{Cells}/mL",
 
   /**
    * cells per microliter
    */
-  cellspermicroliter: "{cells}/uL",
+  "{cells}/uL": "{cells}/uL",
 
   /**
    * CfTiter
    */
-  CfTiter: "{CfTiter}",
+  "{CfTiter}": "{CfTiter}",
 
   /**
    * cfu
    */
-  cfu: "{cfu}",
+  "{cfu}": "{cfu}",
 
   /**
    * cfu / milliliter
    */
-  cfumilliliter: "{cfu}/mL",
+  "{cfu}/mL": "{cfu}/mL",
 
   /**
    * CGG_repeats
    */
-  CGG_repeats: "{CGG_repeats}",
+  "{CGG_repeats}": "{CGG_repeats}",
 
   /**
    * CGG
    */
-  CGG: "{CGG}",
+  "{CGG}": "{CGG}",
 
   /**
    * complement CH100 unit
    */
-  complementCH100unit: "{CH100'U}",
+  "{CH100'U}": "{CH100'U}",
 
   /**
    * clock time
    */
-  clocktime: "{clock time}",
+  "{clock time}": "{clock time}",
 
   /**
    * clock_time
    */
-  clock_time: "{clock_time}",
+  "{clock_time}": "{clock_time}",
 
   /**
    * ComplementActivityEnzyme'U
    */
-  ComplementActivityEnzymeU: "{ComplementActivityEnzyme'U}",
+  "{ComplementActivityEnzyme'U}": "{ComplementActivityEnzyme'U}",
 
   /**
    * ComplementCH100'U
    */
-  ComplementCH100U: "{ComplementCH100'U}",
+  "{ComplementCH100'U}": "{ComplementCH100'U}",
 
   /**
    * ComplementCH50'U
    */
-  ComplementCH50U: "{ComplementCH50'U}",
+  "{ComplementCH50'U}": "{ComplementCH50'U}",
 
   /**
    * copies per milliliter
    */
-  copiespermilliliter: "{copies}/mL",
+  "{copies}/mL": "{copies}/mL",
 
   /**
    * copies per microgram
    */
-  copiespermicrogram: "{copies}/ug",
+  "{copies}/ug": "{copies}/ug",
 
   /**
    * Copies / microliter
    */
-  Copiesmicroliter: "{Copies}/uL",
+  "{Copies}/uL": "{Copies}/uL",
 
   /**
    * Count
    */
-  Count: "{Count}",
+  "{Count}": "{Count}",
 
   /**
    * Counts / minute
    */
-  Countsminute: "{Counts}/min",
+  "{Counts}/min": "{Counts}/min",
 
   /**
    * Dalton
    */
-  Dalton: "{Dalton}",
+  "{Dalton}": "{Dalton}",
 
   /**
    * DdTiter
    */
-  DdTiter: "{DdTiter}",
+  "{DdTiter}": "{DdTiter}",
 
   /**
    * DeltaOpticalDensity
    */
-  DeltaOpticalDensity: "{DeltaOpticalDensity}",
+  "{DeltaOpticalDensity}": "{DeltaOpticalDensity}",
 
   /**
    * dilution
    */
-  dilution: "{Dilution}",
+  "{Dilution}": "{Dilution}",
 
   /**
    * Disintegrations / minute
    */
-  Disintegrationsminute: "{Disintegrations}/min",
+  "{Disintegrations}/min": "{Disintegrations}/min",
 
   /**
    * Dose
    */
-  Dose: "{Dose}",
+  "{Dose}": "{Dose}",
 
   /**
    * Drinks / day
    */
-  Drinksday: "{Drinks}/d",
+  "{Drinks}/d": "{Drinks}/d",
 
   /**
    * Each
    */
-  Each: "{Each}",
+  "{Each}": "{Each}",
 
   /**
    * Ehrlich unit
    */
-  Ehrlichunit: "{Ehrlich'U}",
+  "{Ehrlich'U}": "{Ehrlich'U}",
 
   /**
    * Ehrlich unit per 2 hour
    */
-  Ehrlichunitper2hour: "{Ehrlich'U}/(2.h)",
+  "{Ehrlich'U}/(2.h)": "{Ehrlich'U}/(2.h)",
 
   /**
    * Ehrlich unit per 100 gram
    */
-  Ehrlichunitper100gram: "{Ehrlich'U}/100.g",
+  "{Ehrlich'U}/100.g": "{Ehrlich'U}/100.g",
 
   /**
    * Ehrlich unit per day
    */
-  Ehrlichunitperday: "{Ehrlich'U}/d",
+  "{Ehrlich'U}/d": "{Ehrlich'U}/d",
 
   /**
    * Ehrilich unit per deciliter
    */
-  Ehrilichunitperdeciliter: "{Ehrlich'U}/dL",
+  "{Ehrlich'U}/dL": "{Ehrlich'U}/dL",
 
   /**
    * Ehrlich'U / milliliter
    */
-  EhrlichUmilliliter: "{Ehrlich'U}/mL",
+  "{Ehrlich'U}/mL": "{Ehrlich'U}/mL",
 
   /**
    * EIA index
    */
-  EIAindex: "{EIAIndex}",
+  "{EIAIndex}": "{EIAIndex}",
 
   /**
    * EIA titer
    */
-  EIAtiter: "{EIATiter}",
+  "{EIATiter}": "{EIATiter}",
 
   /**
    * EIA unit
    */
-  EIAunit: "{EIA'U}",
+  "{EIA'U}": "{EIA'U}",
 
   /**
    * EIA unit per enzyme Unit
    */
-  EIAunitperenzymeUnit: "{EIA'U}/U",
+  "{EIA'U}/U": "{EIA'U}/U",
 
   /**
    * ElisaIndex
    */
-  ElisaIndex: "{ElisaIndex}",
+  "{ElisaIndex}": "{ElisaIndex}",
 
   /**
    * ELISA unit
    */
-  ELISAunit: "{ELISA'U}",
+  "{ELISA'U}": "{ELISA'U}",
 
   /**
    * Elisa'U / milliliter
    */
-  ElisaUmilliliter: "{Elisa'U}/mL",
+  "{Elisa'U}/mL": "{Elisa'U}/mL",
 
   /**
    * ElisaValue
    */
-  ElisaValue: "{ElisaValue}",
+  "{ElisaValue}": "{ElisaValue}",
 
   /**
    * erythrocyte per microliter
    */
-  erythrocytepermicroliter: "{ERY}/uL",
+  "{ERY}/uL": "{ERY}/uL",
 
   /**
    * Events
    */
-  Events: "{Events}",
+  "{Events}": "{Events}",
 
   /**
    * FluorescenceIntensity'U
    */
-  FluorescenceIntensityU: "{FluorescenceIntensity'U}",
+  "{FluorescenceIntensity'U}": "{FluorescenceIntensity'U}",
 
   /**
    * G unit
    */
-  Gunit: "U{G}",
+  "U{G}": "U{G}",
 
   /**
    * GliadinIndexValue
    */
-  GliadinIndexValue: "{GliadinIndexValue}",
+  "{GliadinIndexValue}": "{GliadinIndexValue}",
 
   /**
    * G-PortionPhospholipids
    */
-  GPortionPhospholipids: "{G-PortionPhospholipids}",
+  "{G-PortionPhospholipids}": "{G-PortionPhospholipids}",
 
   /**
    * HaTiter
    */
-  HaTiter: "{HaTiter}",
+  "{HaTiter}": "{HaTiter}",
 
   /**
    * IfaIndex
    */
-  IfaIndex: "{IfaIndex}",
+  "{IfaIndex}": "{IfaIndex}",
 
   /**
    * IfaTiter
    */
-  IfaTiter: "{IfaTiter}",
+  "{IfaTiter}": "{IfaTiter}",
 
   /**
    * IgAAntiphosphatidyleserine'U
    */
-  IgAAntiphosphatidyleserineU: "{IgAAntiphosphatidyleserine'U}",
+  "{IgAAntiphosphatidyleserine'U}": "{IgAAntiphosphatidyleserine'U}",
 
   /**
    * IgAPhospholipid'U
    */
-  IgAPhospholipidU: "{IgAPhospholipid'U}",
+  "{IgAPhospholipid'U}": "{IgAPhospholipid'U}",
 
   /**
    * IgGAntiphosphatidyleserine'U
    */
-  IgGAntiphosphatidyleserineU: "{IgGAntiphosphatidyleserine'U}",
+  "{IgGAntiphosphatidyleserine'U}": "{IgGAntiphosphatidyleserine'U}",
 
   /**
    * IgGIndex
    */
-  IgGIndex: "{IgGIndex}",
+  "{IgGIndex}": "{IgGIndex}",
 
   /**
    * IgMAntiphosphatidyleserine'U
    */
-  IgMAntiphosphatidyleserineU: "{IgMAntiphosphatidyleserine'U}",
+  "{IgMAntiphosphatidyleserine'U}": "{IgMAntiphosphatidyleserine'U}",
 
   /**
    * IgMIndex
    */
-  IgMIndex: "{IgMIndex}",
+  "{IgMIndex}": "{IgMIndex}",
 
   /**
    * immune complex unit
    */
-  immunecomplexunit: "{ImmuneComplex'U}",
+  "{ImmuneComplex'U}": "{ImmuneComplex'U}",
 
   /**
    * ImmuneStatusRatio
    */
-  ImmuneStatusRatio: "{ImmuneStatusRatio}",
+  "{ImmuneStatusRatio}": "{ImmuneStatusRatio}",
 
   /**
    * Immunity
    */
-  Immunity: "{Immunity}",
+  "{Immunity}": "{Immunity}",
 
   /**
    * Index_val
    */
-  Index_val: "{Index_val}",
+  "{Index_val}": "{Index_val}",
 
   /**
    * index
    */
-  index: "{index}",
+  "{index}": "{index}",
 
   /**
    * IndexValue
    */
-  IndexValue: "{IndexValue}",
+  "{IndexValue}": "{IndexValue}",
 
   /**
    * InhaledTobaccoUseAmountYears
    */
-  InhaledTobaccoUseAmountYears: "{InhaledTobaccoUseAmountYears}",
+  "{InhaledTobaccoUseAmountYears}": "{InhaledTobaccoUseAmountYears}",
 
   /**
    * InhaledTobaccoUsePacks / day
    */
-  InhaledTobaccoUsePacksday: "{InhaledTobaccoUsePacks}/d",
+  "{InhaledTobaccoUsePacks}/d": "{InhaledTobaccoUsePacks}/d",
 
   /**
    * international normalized ratio
    */
-  internationalnormalizedratio: "{INR}",
+  "{INR}": "{INR}",
 
   /**
    * INR'unit
    */
-  INRunit: "{INR'unit}",
+  "{INR'unit}": "{INR'unit}",
 
   /**
    * Juvenile Diabetes Foundation unit
    */
-  JuvenileDiabetesFoundationunit: "{JDF'U}",
+  "{JDF'U}": "{JDF'U}",
 
   /**
    * Juvenile Diabetes Foundation unit per liter
    */
-  JuvenileDiabetesFoundationunitperliter: "{JDF'U}/L",
+  "{JDF'U}/L": "{JDF'U}/L",
 
   /**
    * JuvenileDiabetesFound'U
    */
-  JuvenileDiabetesFoundU: "{JuvenileDiabetesFound'U}",
+  "{JuvenileDiabetesFound'U}": "{JuvenileDiabetesFound'U}",
 
   /**
    * kaolin clotting time
    */
-  kaolinclottingtime: "{KCT'U}",
+  "{KCT'U}": "{KCT'U}",
 
   /**
    * Kronus unit per liter
    */
-  Kronusunitperliter: "{KRONU'U}/L",
+  "{KRONU'U}/L": "{KRONU'U}/L",
 
   /**
    * Kronus unit per milliliter
    */
-  Kronusunitpermilliliter: "{KRONU'U}/mL",
+  "{KRONU'U}/mL": "{KRONU'U}/mL",
 
   /**
    * lgCopies / milliliter
    */
-  lgCopiesmilliliter: "{lgCopies}/ml",
+  "{lgCopies}/ml": "{lgCopies}/ml",
 
   /**
    * log (base 10) copies per milliliter
    */
-  logbase10copiespermilliliter: "{log_copies}/mL",
+  "{log_copies}/mL": "{log_copies}/mL",
 
   /**
    * log (base 10) international unit per milliliter
    */
-  logbase10internationalunitpermilliliter: "{log_IU}/mL",
+  "{log_IU}/mL": "{log_IU}/mL",
 
   /**
    * LymeIndexValue
    */
-  LymeIndexValue: "{LymeIndexValue}",
+  "{LymeIndexValue}": "{LymeIndexValue}",
 
   /**
    * M.o.M.
    */
-  MoM: "{M.o.M.}",
+  "{M.o.M.}": "{M.o.M.}",
 
   /**
    * multiple of the median
    */
-  multipleofthemedian: "{M.o.M}",
+  "{M.o.M}": "{M.o.M}",
 
   /**
    * Markers
    */
-  Markers: "{Markers}",
+  "{Markers}": "{Markers}",
 
   /**
    * minidrp
    */
-  minidrp: "{minidrp}",
+  "{minidrp}": "{minidrp}",
 
   /**
    * Molecule / Platelet
    */
-  MoleculePlatelet: "{Molecule}/{Platelet}",
+  "{Molecule}/{Platelet}": "{Molecule}/{Platelet}",
 
   /**
    * M-PortionPhospholipids
    */
-  MPortionPhospholipids: "{M-PortionPhospholipids}",
+  "{M-PortionPhospholipids}": "{M-PortionPhospholipids}",
 
   /**
    * IgM antiphosphatidylserine unit
    */
-  IgMantiphosphatidylserineunit: "{MPS'U}",
+  "{MPS'U}": "{MPS'U}",
 
   /**
    * IgM antiphosphatidylserine unit per milliliter
    */
-  IgMantiphosphatidylserineunitpermilliliter: "{MPS'U}/mL",
+  "{MPS'U}/mL": "{MPS'U}/mL",
 
   /**
    * MultOfMean
    */
-  MultOfMean: "{MultOfMean}",
+  "{MultOfMean}": "{MultOfMean}",
 
   /**
    * NonspecificOunce
    */
-  NonspecificOunce: "{NonspecificOunce}",
+  "{NonspecificOunce}": "{NonspecificOunce}",
 
   /**
    * Number
    */
-  Number: "{Number}",
+  "{Number}": "{Number}",
 
   /**
    * optical density unit
    */
-  opticaldensityunit: "{OD_unit}",
+  "{OD_unit}": "{OD_unit}",
 
   /**
    * Once / day
    */
-  Onceday: "{Once}/d",
+  "{Once}/d": "{Once}/d",
 
   /**
    * OpticalDensity
    */
-  OpticalDensity: "{OpticalDensity}",
+  "{OpticalDensity}": "{OpticalDensity}",
 
   /**
    * OpticalDensityIndex
    */
-  OpticalDensityIndex: "{OpticalDensityIndex}",
+  "{OpticalDensityIndex}": "{OpticalDensityIndex}",
 
   /**
    * OpticalDensityRatio
    */
-  OpticalDensityRatio: "{OpticalDensityRatio}",
+  "{OpticalDensityRatio}": "{OpticalDensityRatio}",
 
   /**
    * P2Y12 Reaction Units
    */
-  P2Y12ReactionUnits: "{P2Y12 Reaction Units}",
+  "{P2Y12 Reaction Units}": "{P2Y12 Reaction Units}",
 
   /**
    * Package
    */
-  Package: "{Package}",
+  "{Package}": "{Package}",
 
   /**
    * Packs / day
    */
-  Packsday: "{Packs}/d",
+  "{Packs}/d": "{Packs}/d",
 
   /**
    * PackYears
    */
-  PackYears: "{PackYears}",
+  "{PackYears}": "{PackYears}",
 
   /**
    * Patch
    */
-  Patch: "{Patch}",
+  "{Patch}": "{Patch}",
 
   /**
    * Percentile
    */
-  Percentile: "{Percentile}",
+  "{Percentile}": "{Percentile}",
 
   /**
    * Pill
    */
-  Pill: "{Pill}",
+  "{Pill}": "{Pill}",
 
   /**
    * Pouches / week
    */
-  Pouchesweek: "{Pouches}/wk",
+  "{Pouches}/wk": "{Pouches}/wk",
 
   /**
    * RadioactiveT3UptakeRatio
    */
-  RadioactiveT3UptakeRatio: "{RadioactiveT3UptakeRatio}",
+  "{RadioactiveT3UptakeRatio}": "{RadioactiveT3UptakeRatio}",
 
   /**
    * ratio
    */
-  ratio: "{ratio}",
+  "{ratio}": "{ratio}",
 
   /**
    * red blood cell per microliter
    */
-  redbloodcellpermicroliter: "{RBC}/uL",
+  "{RBC}/uL": "{RBC}/uL",
 
   /**
    * RecTiter
    */
-  RecTiter: "{RecTiter}",
+  "{RecTiter}": "{RecTiter}",
 
   /**
    * Relative'U
    */
-  RelativeU: "{Relative'U}",
+  "{Relative'U}": "{Relative'U}",
 
   /**
    * RelativeViscosity
    */
-  RelativeViscosity: "{RelativeViscosity}",
+  "{RelativeViscosity}": "{RelativeViscosity}",
 
   /**
    * RPI'U
    */
-  RPIU: "{RPI'U}",
+  "{RPI'U}": "{RPI'U}",
 
   /**
    * RubellaVirus
    */
-  RubellaVirus: "{RubellaVirus}",
+  "{RubellaVirus}": "{RubellaVirus}",
 
   /**
    * SatIndex
    */
-  SatIndex: "{SatIndex}",
+  "{SatIndex}": "{SatIndex}",
 
   /**
    * Scoop
    */
-  Scoop: "{Scoop}",
+  "{Scoop}": "{Scoop}",
 
   /**
    * ScoreOf
    */
-  ScoreOf: "{ScoreOf}",
+  "{ScoreOf}": "{ScoreOf}",
 
   /**
    * shift
    */
-  shift: "{shift}",
+  "{shift}": "{shift}",
 
   /**
    * spermatozoa per milliliter
    */
-  spermatozoapermilliliter: "{spermatozoa}/mL",
+  "{spermatozoa}/mL": "{spermatozoa}/mL",
 
   /**
    * spray
    */
-  spray: "{spray}",
+  "{spray}": "{spray}",
 
   /**
    * StandardDeviation
    */
-  StandardDeviation: "{StandardDeviation}",
+  "{StandardDeviation}": "{StandardDeviation}",
 
   /**
    * StandardIgA'U
    */
-  StandardIgAU: "{StandardIgA'U}",
+  "{StandardIgA'U}": "{StandardIgA'U}",
 
   /**
    * StandardIgG'U
    */
-  StandardIgGU: "{StandardIgG'U}",
+  "{StandardIgG'U}": "{StandardIgG'U}",
 
   /**
    * StandardIgM'U
    */
-  StandardIgMU: "{StandardIgM'U}",
+  "{StandardIgM'U}": "{StandardIgM'U}",
 
   /**
    * StdDeviation'U
    */
-  StdDeviationU: "{StdDeviation'U}",
+  "{StdDeviation'U}": "{StdDeviation'U}",
 
   /**
    * StimulatingIndex
    */
-  StimulatingIndex: "{StimulatingIndex}",
+  "{StimulatingIndex}": "{StimulatingIndex}",
 
   /**
    * Streptozyme'U
    */
-  StreptozymeU: "{Streptozyme'U}",
+  "{Streptozyme'U}": "{Streptozyme'U}",
 
   /**
    * ThyroxinUptake'U
    */
-  ThyroxinUptakeU: "{ThyroxinUptake'U}",
+  "{ThyroxinUptake'U}": "{ThyroxinUptake'U}",
 
   /**
    * TIBC'U
    */
-  TIBCU: "{TIBC'U}",
+  "{TIBC'U}": "{TIBC'U}",
 
   /**
    * Times / week
    */
-  Timesweek: "{Times}/wk",
+  "{Times}/wk": "{Times}/wk",
 
   /**
    * Tine'U
    */
-  TineU: "{Tine'U}",
+  "{Tine'U}": "{Tine'U}",
 
   /**
    * titer
    */
-  titer: "{titer}",
+  "{titer}": "{titer}",
 
   /**
    * ToxoplasmaIndexValue
    */
-  ToxoplasmaIndexValue: "{ToxoplasmaIndexValue}",
+  "{ToxoplasmaIndexValue}": "{ToxoplasmaIndexValue}",
 
   /**
    * Vial
    */
-  Vial: "{Vial}",
+  "{Vial}": "{Vial}",
 
   /**
    * Volume / Vvolume
    */
-  VolumeVvolume: "{Volume}/{Vvolume}",
+  "{Volume}/{Vvolume}": "{Volume}/{Vvolume}",
 
   /**
    * WeeksDays
    */
-  WeeksDays: "{WeeksDays}",
+  "{WeeksDays}": "{WeeksDays}",
 
   /**
    * WhiteBloodCell
    */
-  WhiteBloodCell: "{WhiteBloodCell}",
+  "{WhiteBloodCell}": "{WhiteBloodCell}",
 
   /**
    * one per day
    */
-  oneperday: "1/d",
+  "1/d": "1/d",
 
   /**
    * one per minute
    */
-  oneperminute: "1/min",
+  "1/min": "1/min",
 
   /**
    * trillion per liter
    */
-  trillionperliter: "10*12/L",
+  "10*12/L": "10*12/L",
 
   /**
    * Thousand
    */
-  Thousand: "10*3",
+  "10*3": "10*3",
 
   /**
    * Thousand Red Blood Cells
    */
-  ThousandRedBloodCells: "10*3.{RBC}",
+  "10*3.{RBC}": "10*3.{RBC}",
 
   /**
    * Thousand Per * Unit
    */
-  ThousandPerUnit: "10*3.U",
+  "10*3.U": "10*3.U",
 
   /**
    * Thousand Per Liter
    */
-  ThousandPerLiter: "10*3/L",
+  "10*3/L": "10*3/L",
 
   /**
    * Thousand Per MilliLiter
    */
-  ThousandPerMilliLiter: "10*3/mL",
+  "10*3/mL": "10*3/mL",
 
   /**
    * Thousands Per MicroLiter
    */
-  ThousandsPerMicroLiter: "10*3/uL",
+  "10*3/uL": "10*3/uL",
 
   /**
    * Thousand Copies Per MilliLiter
    */
-  ThousandCopiesPerMilliLiter: "10*3{Copies}/mL",
+  "10*3{Copies}/mL": "10*3{Copies}/mL",
 
   /**
    * (the number ten for arbitrary powers ^ -3) Polarization'U
    */
-  thenumbertenforarbitrarypowers3PolarizationU: "10*-3{Polarization'U}",
+  "10*-3{Polarization'U}": "10*-3{Polarization'U}",
 
   /**
    * OneHundredThousand
    */
-  OneHundredThousand: "10*5",
+  "10*5": "10*5",
 
   /**
    * Million
    */
-  Million: "10*6",
+  "10*6": "10*6",
 
   /**
    * MillionInternationalUnit
    */
-  MillionInternationalUnit: "10*6.[iU]",
+  "10*6.[iU]": "10*6.[iU]",
 
   /**
    * MillionEquivalentsPerMilliLiter
    */
-  MillionEquivalentsPerMilliLiter: "10*6.eq/mL",
+  "10*6.eq/mL": "10*6.eq/mL",
 
   /**
    * (the number ten for arbitrary powers ^ 6) * Unit
    */
-  thenumbertenforarbitrarypowers6Unit: "10*6.U",
+  "10*6.U": "10*6.U",
 
   /**
    * MillionPerSpecimen
    */
-  MillionPerSpecimen: "10*6/{Specimen}",
+  "10*6/{Specimen}": "10*6/{Specimen}",
 
   /**
    * million per kilogram
    */
-  millionperkilogram: "10*6/kg",
+  "10*6/kg": "10*6/kg",
 
   /**
    * million per liter
    */
-  millionperliter: "10*6/L",
+  "10*6/L": "10*6/L",
 
   /**
    * million per milliliter
    */
-  millionpermilliliter: "10*6/mL",
+  "10*6/mL": "10*6/mL",
 
   /**
    * (the number ten for arbitrary powers ^ 6) / (millimeter ^ 3)
    */
-  thenumbertenforarbitrarypowers6millimeter3: "10*6/mm3",
+  "10*6/mm3": "10*6/mm3",
 
   /**
    * million per microliter
    */
-  millionpermicroliter: "10*6/uL",
+  "10*6/uL": "10*6/uL",
 
   /**
    * (the number ten for arbitrary powers ^ -6) Immunofluorescence'U
    */
-  thenumbertenforarbitrarypowers6ImmunofluorescenceU:
-    "10*-6{Immunofluorescence'U}",
+  "10*-6{Immunofluorescence'U}": "10*-6{Immunofluorescence'U}",
 
   /**
    * TenToEighth
    */
-  TenToEighth: "10*8",
+  "10*8": "10*8",
 
   /**
    * billion per liter
    */
-  billionperliter: "10*9/L",
+  "10*9/L": "10*9/L",
 
   /**
    * billion per milliliter
    */
-  billionpermilliliter: "10*9/mL",
+  "10*9/mL": "10*9/mL",
 
   /**
    * billion per microliter
    */
-  billionpermicroliter: "10*9/uL",
+  "10*9/uL": "10*9/uL",
 
   /**
    * 10 liter per minute per square meter
    */
-  Tenliterperminutepersquaremeter: "10.L/(min.m2)",
+  "10.L/(min.m2)": "10.L/(min.m2)",
 
   /**
    * 10 liter per minute
    */
-  Tenliterperminute: "10.L/min",
+  "10.L/min": "10.L/min",
 
   /**
    * 10 * microNewton * second / centimeter * (meter ^ 2)
    */
-  TenmicroNewtonsecondcentimetermeter2: "10.uN.s/(cm.m2)",
+  "10.uN.s/(cm.m2)": "10.uN.s/(cm.m2)",
 
   /**
    * 10 * microNewton * second / centimeter
    */
-  TenmicroNewtonsecondcentimeter: "10.uN.s/cm",
+  "10.uN.s/cm": "10.uN.s/cm",
 
   /**
    * 10 * microNewton * second / (centimeter ^ 2)
    */
-  TenmicroNewtonsecondcentimeter2: "10.uN.s/cm2",
+  "10.uN.s/cm2": "10.uN.s/cm2",
 
   /**
    * year
    */
-  year: "a",
+  a: "a",
 
   /**
    * Ampère / meter
    */
-  Ampremeter: "A/m",
+  "A/m": "A/m",
 
   /**
    * technical atmosphere
    */
-  technicalatmosphere: "att",
+  att: "att",
 
   /**
    * bar
@@ -1827,132 +1826,132 @@ export const UnitsOfMeasureCaseSensitiveCode = {
   /**
    * degree Celsius
    */
-  degreeCelsius: "Cel",
+  Cel: "Cel",
 
   /**
    * centigram
    */
-  centigram: "cg",
+  cg: "cg",
 
   /**
    * centiliter
    */
-  centiliter: "cL",
+  cL: "cL",
 
   /**
    * centimeter
    */
-  centimeter: "cm",
+  cm: "cm",
 
   /**
    * centimeter of water
    */
-  centimeterofwater: "cm[H2O]",
+  "cm[H2O]": "cm[H2O]",
 
   /**
    * centimeter of water column / second * meter
    */
-  centimeterofwatercolumnsecondmeter: "cm[H2O]/(s.m)",
+  "cm[H2O]/(s.m)": "cm[H2O]/(s.m)",
 
   /**
    * centimeter of water per liter per second
    */
-  centimeterofwaterperliterpersecond: "cm[H2O]/L/s",
+  "cm[H2O]/L/s": "cm[H2O]/L/s",
 
   /**
    * centimeter of mercury
    */
-  centimeterofmercury: "cm[Hg]",
+  "cm[Hg]": "cm[Hg]",
 
   /**
    * square centimeter
    */
-  squarecentimeter: "cm2",
+  cm2: "cm2",
 
   /**
    * square centimeter per second
    */
-  squarecentimeterpersecond: "cm2/s",
+  "cm2/s": "cm2/s",
 
   /**
    * cubic centimeter
    */
-  cubiccentimeter: "cm3",
+  cm3: "cm3",
 
   /**
    * centiPoise
    */
-  centiPoise: "cP",
+  cP: "cP",
 
   /**
    * centiStokes
    */
-  centiStokes: "cSt",
+  cSt: "cSt",
 
   /**
    * day
    */
-  day: "d",
+  d: "d",
 
   /**
    * decibel
    */
-  decibel: "dB",
+  dB: "dB",
 
   /**
    * degree
    */
-  degree: "deg",
+  deg: "deg",
 
   /**
    * degree per second
    */
-  degreepersecond: "deg/s",
+  "deg/s": "deg/s",
 
   /**
    * decigram
    */
-  decigram: "dg",
+  dg: "dg",
 
   /**
    * deciliter
    */
-  deciliter: "dL",
+  dL: "dL",
 
   /**
    * decimeter
    */
-  decimeter: "dm",
+  dm: "dm",
 
   /**
    * square decimeter per square second
    */
-  squaredecimeterpersquaresecond: "dm2/s2",
+  "dm2/s2": "dm2/s2",
 
   /**
    * equivalents
    */
-  equivalents: "eq",
+  eq: "eq",
 
   /**
    * equivalents / liter
    */
-  equivalentsliter: "eq/L",
+  "eq/L": "eq/L",
 
   /**
    * equivalents / milliliter
    */
-  equivalentsmilliliter: "eq/mL",
+  "eq/mL": "eq/mL",
 
   /**
    * equivalents / millimole
    */
-  equivalentsmillimole: "eq/mmol",
+  "eq/mmol": "eq/mmol",
 
   /**
    * equivalents / micromole
    */
-  equivalentsmicromole: "eq/umol",
+  "eq/umol": "eq/umol",
 
   /**
    * erg
@@ -1962,1648 +1961,1647 @@ export const UnitsOfMeasureCaseSensitiveCode = {
   /**
    * electronvolt
    */
-  electronvolt: "eV",
+  eV: "eV",
 
   /**
    * femtogram
    */
-  femtogram: "fg",
+  fg: "fg",
 
   /**
    * femtoliter
    */
-  femtoliter: "fL",
+  fL: "fL",
 
   /**
    * femtoliter / nanoliter
    */
-  femtoliternanoliter: "fL/nL",
+  "fL/nL": "fL/nL",
 
   /**
    * femtometer
    */
-  femtometer: "fm",
+  fm: "fm",
 
   /**
    * femtomole
    */
-  femtomole: "fmol",
+  fmol: "fmol",
 
   /**
    * femtomole per gram
    */
-  femtomolepergram: "fmol/g",
+  "fmol/g": "fmol/g",
 
   /**
    * femtomole per liter
    */
-  femtomoleperliter: "fmol/L",
+  "fmol/L": "fmol/L",
 
   /**
    * femtomole / milligram
    */
-  femtomolemilligram: "fmol/mg",
+  "fmol/mg": "fmol/mg",
 
   /**
    * femtomole / milliliter
    */
-  femtomolemilliliter: "fmol/mL",
+  "fmol/mL": "fmol/mL",
 
   /**
    * gram
    */
-  gram: "g",
+  g: "g",
 
   /**
    * gram * meter
    */
-  grammeter: "g.m",
+  "g.m": "g.m",
 
   /**
    * gram * meter / hb * (meter ^ 2)
    */
-  grammeterhbmeter2: "g.m/({hb}.m2)",
+  "g.m/({hb}.m2)": "g.m/({hb}.m2)",
 
   /**
    * gram * meter / hb
    */
-  grammeterhb: "g.m/{hb}",
+  "g.m/{hb}": "g.m/{hb}",
 
   /**
    * gram per 100 gram
    */
-  gramper100gram: "g/(100.g)",
+  "g/(100.g)": "g/(100.g)",
 
   /**
    * gram per 12 hour
    */
-  gramper12hour: "g/(12.h)",
+  "g/(12.h)": "g/(12.h)",
 
   /**
    * gram per 24 hour
    */
-  gramper24hour: "g/(24.h)",
+  "g/(24.h)": "g/(24.h)",
 
   /**
    * gram per 3 days
    */
-  gramper3days: "g/(3.d)",
+  "g/(3.d)": "g/(3.d)",
 
   /**
    * gram per 4 hour
    */
-  gramper4hour: "g/(4.h)",
+  "g/(4.h)": "g/(4.h)",
 
   /**
    * gram per 48 hour
    */
-  gramper48hour: "g/(48.h)",
+  "g/(48.h)": "g/(48.h)",
 
   /**
    * gram per 5 hour
    */
-  gramper5hour: "g/(5.h)",
+  "g/(5.h)": "g/(5.h)",
 
   /**
    * gram per 6 hour
    */
-  gramper6hour: "g/(6.h)",
+  "g/(6.h)": "g/(6.h)",
 
   /**
    * gram per 72 hour
    */
-  gramper72hour: "g/(72.h)",
+  "g/(72.h)": "g/(72.h)",
 
   /**
    * gram / 8 * hour
    */
-  gram8hour: "g/(8.h)",
+  "g/(8.h)": "g/(8.h)",
 
   /**
    * gram / 8 * kilogram * hour
    */
-  gram8kilogramhour: "g/(8.kg.h)",
+  "g/(8.kg.h)": "g/(8.kg.h)",
 
   /**
    * gram / kilogram * hour
    */
-  gramkilogramhour: "g/(kg.h)",
+  "g/(kg.h)": "g/(kg.h)",
 
   /**
    * gram / kilogram * minute
    */
-  gramkilogramminute: "g/(kg.min)",
+  "g/(kg.min)": "g/(kg.min)",
 
   /**
    * gram / TotalWeight
    */
-  gramTotalWeight: "g/{TotalWeight}",
+  "g/{TotalWeight}": "g/{TotalWeight}",
 
   /**
    * gram per day
    */
-  gramperday: "g/d",
+  "g/d": "g/d",
 
   /**
    * gram per deciliter
    */
-  gramperdeciliter: "g/dL",
+  "g/dL": "g/dL",
 
   /**
    * gram per gram
    */
-  grampergram: "g/g",
+  "g/g": "g/g",
 
   /**
    * gram / gram Cre
    */
-  gramgramCre: "g/g{Cre}",
+  "g/g{Cre}": "g/g{Cre}",
 
   /**
    * gram / gram creat
    */
-  gramgramcreat: "g/g{creat}",
+  "g/g{creat}": "g/g{creat}",
 
   /**
    * gram per gram of tissue
    */
-  grampergramoftissue: "g/g{tissue}",
+  "g/g{tissue}": "g/g{tissue}",
 
   /**
    * gram per hour
    */
-  gramperhour: "g/h",
+  "g/h": "g/h",
 
   /**
    * gram per hour per square meter
    */
-  gramperhourpersquaremeter: "g/h/m2",
+  "g/h/m2": "g/h/m2",
 
   /**
    * gram per kilogram
    */
-  gramperkilogram: "g/kg",
+  "g/kg": "g/kg",
 
   /**
    * gram per kilogram per day
    */
-  gramperkilogramperday: "g/kg/d",
+  "g/kg/d": "g/kg/d",
 
   /**
    * gram per liter
    */
-  gramperliter: "g/L",
+  "g/L": "g/L",
 
   /**
    * grams Per Square Meter
    */
-  gramsPerSquareMeter: "g/m2",
+  "g/m2": "g/m2",
 
   /**
    * gram per milligram
    */
-  grampermilligram: "g/mg",
+  "g/mg": "g/mg",
 
   /**
    * gram per minute
    */
-  gramperminute: "g/min",
+  "g/min": "g/min",
 
   /**
    * gram per milliliter
    */
-  grampermilliliter: "g/mL",
+  "g/mL": "g/mL",
 
   /**
    * gram per millimole
    */
-  grampermillimole: "g/mmol",
+  "g/mmol": "g/mmol",
 
   /**
    * gram / millimole creat
    */
-  grammillimolecreat: "g/mmol{creat}",
+  "g/mmol{creat}": "g/mmol{creat}",
 
   /**
    * gram per mole
    */
-  grampermole: "g/mol",
+  "g/mol": "g/mol",
 
   /**
    * gigaBecquerel
    */
-  gigaBecquerel: "GBq",
+  GBq: "GBq",
 
   /**
    * hour
    */
-  hour: "h",
+  h: "h",
 
   /**
    * hectoliter
    */
-  hectoliter: "hL",
+  hL: "hL",
 
   /**
    * Hertz
    */
-  Hertz: "Hz",
+  Hz: "Hz",
 
   /**
    * joule
    */
-  joule: "J",
+  J: "J",
 
   /**
    * joule per liter
    */
-  jouleperliter: "J/L",
+  "J/L": "J/L",
 
   /**
    * Kelvin
    */
-  Kelvin: "K",
+  K: "K",
 
   /**
    * Kelvin / Watt
    */
-  KelvinWatt: "K/W",
+  "K/W": "K/W",
 
   /**
    * kilo international unit per liter
    */
-  kilointernationalunitperliter: "k[IU]/L",
+  "k[IU]/L": "k[IU]/L",
 
   /**
    * kilo international unit per milliliter
    */
-  kilointernationalunitpermilliliter: "k[IU]/mL",
+  "k[IU]/mL": "k[IU]/mL",
 
   /**
    * katal / kilogram
    */
-  katalkilogram: "kat/kg",
+  "kat/kg": "kat/kg",
 
   /**
    * katal / liter
    */
-  katalliter: "kat/L",
+  "kat/L": "kat/L",
 
   /**
    * kiloBecquerel
    */
-  kiloBecquerel: "kBq",
+  kBq: "kBq",
 
   /**
    * kilocalorie
    */
-  kilocalorie: "kcal",
+  kcal: "kcal",
 
   /**
    * kilocalorie / 8 * hour
    */
-  kilocalorie8hour: "kcal/(8.h)",
+  "kcal/(8.h)": "kcal/(8.h)",
 
   /**
    * kilocalorie per hour
    */
-  kilocalorieperhour: "kcal/h",
+  "kcal/h": "kcal/h",
 
   /**
    * kilogram
    */
-  kilogram: "kg",
+  kg: "kg",
 
   /**
    * kilogram meter per second
    */
-  kilogrammeterpersecond: "kg.m/s",
+  "kg.m/s": "kg.m/s",
 
   /**
    * kilogram per second per square meter
    */
-  kilogrampersecondpersquaremeter: "kg/(s.m2)",
+  "kg/(s.m2)": "kg/(s.m2)",
 
   /**
    * kilogram per hour
    */
-  kilogramperhour: "kg/h",
+  "kg/h": "kg/h",
 
   /**
    * kilogram per liter
    */
-  kilogramperliter: "kg/L",
+  "kg/L": "kg/L",
 
   /**
    * kilogram / (meter ^ 2)
    */
-  kilogrammeter2: "kg/m2",
+  "kg/m2": "kg/m2",
 
   /**
    * kilogram / (meter ^ 3)
    */
-  kilogrammeter3: "kg/m3",
+  "kg/m3": "kg/m3",
 
   /**
    * kilogram / minute
    */
-  kilogramminute: "kg/min",
+  "kg/min": "kg/min",
 
   /**
    * kilogram per mole
    */
-  kilogrampermole: "kg/mol",
+  "kg/mol": "kg/mol",
 
   /**
    * kilogram / second
    */
-  kilogramsecond: "kg/s",
+  "kg/s": "kg/s",
 
   /**
    * kiloliter
    */
-  kiloliter: "kL",
+  kL: "kL",
 
   /**
    * kilometer
    */
-  kilometer: "km",
+  km: "km",
 
   /**
    * kiloPascal
    */
-  kiloPascal: "kPa",
+  kPa: "kPa",
 
   /**
    * kilosecond
    */
-  kilosecond: "ks",
+  ks: "ks",
 
   /**
    * kiloenzyme Unit per gram
    */
-  kiloenzymeUnitpergram: "kU/g",
+  "kU/g": "kU/g",
 
   /**
    * kiloUnit / hour
    */
-  kiloUnithour: "kU/h",
+  "kU/h": "kU/h",
 
   /**
    * kiloenzyme Unit per liter
    */
-  kiloenzymeUnitperliter: "kU/L",
+  "kU/L": "kU/L",
 
   /**
    * kilo enzyme unit per milliliter
    */
-  kiloenzymeunitpermilliliter: "kU/mL",
+  "kU/mL": "kU/mL",
 
   /**
    * liter
    */
-  liter: "L",
+  L: "L",
 
   /**
    * liter * (second ^ 2) / second
    */
-  litersecond2second: "L.s2/s",
+  "L.s2/s": "L.s2/s",
 
   /**
    * liter per 8 hour
    */
-  literper8hour: "L/(8.h)",
+  "L/(8.h)": "L/(8.h)",
 
   /**
    * liter per minute per square meter
    */
-  literperminutepersquaremeter: "L/(min.m2)",
+  "L/(min.m2)": "L/(min.m2)",
 
   /**
    * liter per day
    */
-  literperday: "L/d",
+  "L/d": "L/d",
 
   /**
    * liter per hour
    */
-  literperhour: "L/h",
+  "L/h": "L/h",
 
   /**
    * liter per kilogram
    */
-  literperkilogram: "L/kg",
+  "L/kg": "L/kg",
 
   /**
    * liter per liter
    */
-  literperliter: "L/L",
+  "L/L": "L/L",
 
   /**
    * liter per minute
    */
-  literperminute: "L/min",
+  "L/min": "L/min",
 
   /**
    * liter / second
    */
-  litersecond: "L/s",
+  "L/s": "L/s",
 
   /**
    * lumen / (meter ^ 2)
    */
-  lumenmeter2: "lm/m2",
+  "lm/m2": "lm/m2",
 
   /**
    * meter
    */
-  meter: "m",
+  m: "m",
 
   /**
    * meter per second
    */
-  meterpersecond: "m/s",
+  "m/s": "m/s",
 
   /**
    * meter per square second
    */
-  meterpersquaresecond: "m/s2",
+  "m/s2": "m/s2",
 
   /**
    * milliinternational unit
    */
-  milliinternationalunit: "m[iU]",
+  "m[iU]": "m[iU]",
 
   /**
    * milli international unit per liter
    */
-  milliinternationalunitperliter: "m[IU]/L",
+  "m[IU]/L": "m[IU]/L",
 
   /**
    * milli international unit per milliliter
    */
-  milliinternationalunitpermilliliter: "m[IU]/mL",
+  "m[IU]/mL": "m[IU]/mL",
 
   /**
    * square meter
    */
-  squaremeter: "m2",
+  m2: "m2",
 
   /**
    * square meter per second
    */
-  squaremeterpersecond: "m2/s",
+  "m2/s": "m2/s",
 
   /**
    * cubic meter per second
    */
-  cubicmeterpersecond: "m3/s",
+  "m3/s": "m3/s",
 
   /**
    * milliAmpère
    */
-  milliAmpre: "mA",
+  mA: "mA",
 
   /**
    * millibar
    */
-  millibar: "mbar",
+  mbar: "mbar",
 
   /**
    * millibar second per liter
    */
-  millibarsecondperliter: "mbar.s/L",
+  "mbar.s/L": "mbar.s/L",
 
   /**
    * megaBecquerel
    */
-  megaBecquerel: "MBq",
+  MBq: "MBq",
 
   /**
    * milliCurie
    */
-  milliCurie: "mCi",
+  mCi: "mCi",
 
   /**
    * milliequivalent
    */
-  milliequivalent: "meq",
+  meq: "meq",
 
   /**
    * milliequivalent per 12 hour
    */
-  milliequivalentper12hour: "meq/(12.h)",
+  "meq/(12.h)": "meq/(12.h)",
 
   /**
    * milliequivalent per 2 hour
    */
-  milliequivalentper2hour: "meq/(2.h)",
+  "meq/(2.h)": "meq/(2.h)",
 
   /**
    * milliequivalent per 24 hour
    */
-  milliequivalentper24hour: "meq/(24.h)",
+  "meq/(24.h)": "meq/(24.h)",
 
   /**
    * milliequivalent per 8 hour
    */
-  milliequivalentper8hour: "meq/(8.h)",
+  "meq/(8.h)": "meq/(8.h)",
 
   /**
    * milliequivalents / 8 * hour * kilogram
    */
-  milliequivalents8hourkilogram: "meq/(8.h.kg)",
+  "meq/(8.h.kg)": "meq/(8.h.kg)",
 
   /**
    * milliequivalents / kilogram * day
    */
-  milliequivalentskilogramday: "meq/(kg.d)",
+  "meq/(kg.d)": "meq/(kg.d)",
 
   /**
    * milliequivalents / Specimen
    */
-  milliequivalentsSpecimen: "meq/{Specimen}",
+  "meq/{Specimen}": "meq/{Specimen}",
 
   /**
    * milliequivalent per day
    */
-  milliequivalentperday: "meq/d",
+  "meq/d": "meq/d",
 
   /**
    * milliequivalent per deciliter
    */
-  milliequivalentperdeciliter: "meq/dL",
+  "meq/dL": "meq/dL",
 
   /**
    * milliequivalent per gram
    */
-  milliequivalentpergram: "meq/g",
+  "meq/g": "meq/g",
 
   /**
    * milliequivalents / gram Cre
    */
-  milliequivalentsgramCre: "meq/g{Cre}",
+  "meq/g{Cre}": "meq/g{Cre}",
 
   /**
    * milliequivalent per hour
    */
-  milliequivalentperhour: "meq/h",
+  "meq/h": "meq/h",
 
   /**
    * milliequivalent per kilogram
    */
-  milliequivalentperkilogram: "meq/kg",
+  "meq/kg": "meq/kg",
 
   /**
    * milliequivalent per kilogram per hour
    */
-  milliequivalentperkilogramperhour: "meq/kg/h",
+  "meq/kg/h": "meq/kg/h",
 
   /**
    * milliequivalents / kilogram / minute
    */
-  milliequivalentskilogramminute: "meq/kg/min",
+  "meq/kg/min": "meq/kg/min",
 
   /**
    * milliequivalent per liter
    */
-  milliequivalentperliter: "meq/L",
+  "meq/L": "meq/L",
 
   /**
    * milliequivalent per square meter
    */
-  milliequivalentpersquaremeter: "meq/m2",
+  "meq/m2": "meq/m2",
 
   /**
    * milliequivalent per minute
    */
-  milliequivalentperminute: "meq/min",
+  "meq/min": "meq/min",
 
   /**
    * milliequivalent per milliliter
    */
-  milliequivalentpermilliliter: "meq/mL",
+  "meq/mL": "meq/mL",
 
   /**
    * milligram
    */
-  milligram: "mg",
+  mg: "mg",
 
   /**
    * milligram per 10 hour
    */
-  milligramper10hour: "mg/(10.h)",
+  "mg/(10.h)": "mg/(10.h)",
 
   /**
    * milligram per 12 hour
    */
-  milligramper12hour: "mg/(12.h)",
+  "mg/(12.h)": "mg/(12.h)",
 
   /**
    * milligram per 18 hour
    */
-  milligramper18hour: "mg/(18.h)",
+  "mg/(18.h)": "mg/(18.h)",
 
   /**
    * milligram per 2 hour
    */
-  milligramper2hour: "mg/(2.h)",
+  "mg/(2.h)": "mg/(2.h)",
 
   /**
    * milligram per 24 hour
    */
-  milligramper24hour: "mg/(24.h)",
+  "mg/(24.h)": "mg/(24.h)",
 
   /**
    * milligram per 72 hour
    */
-  milligramper72hour: "mg/(72.h)",
+  "mg/(72.h)": "mg/(72.h)",
 
   /**
    * milligram per 8 hour
    */
-  milligramper8hour: "mg/(8.h)",
+  "mg/(8.h)": "mg/(8.h)",
 
   /**
    * milligram / 8 * hour * kilogram
    */
-  milligram8hourkilogram: "mg/(8.h.kg)",
+  "mg/(8.h.kg)": "mg/(8.h.kg)",
 
   /**
    * milligram / kilogram * hour
    */
-  milligramkilogramhour: "mg/(kg.h)",
+  "mg/(kg.h)": "mg/(kg.h)",
 
   /**
    * milligram / Hgb / gram
    */
-  milligramHgbgram: "mg/{Hgb}/g",
+  "mg/{Hgb}/g": "mg/{Hgb}/g",
 
   /**
    * milligram / Specimen
    */
-  milligramSpecimen: "mg/{Specimen}",
+  "mg/{Specimen}": "mg/{Specimen}",
 
   /**
    * milligram / Tot'Volume
    */
-  milligramTotVolume: "mg/{Tot'Volume}",
+  "mg/{Tot'Volume}": "mg/{Tot'Volume}",
 
   /**
    * milligram / Volume
    */
-  milligramVolume: "mg/{Volume}",
+  "mg/{Volume}": "mg/{Volume}",
 
   /**
    * milligram per day
    */
-  milligramperday: "mg/d",
+  "mg/d": "mg/d",
 
   /**
    * milligram / day / 173 * (the number ten for arbitrary powers ^ -2) * (meter ^ 2)
    */
-  milligramday173thenumbertenforarbitrarypowers2meter2: "mg/d/(173.10*-2.m2)",
+  "mg/d/(173.10*-2.m2)": "mg/d/(173.10*-2.m2)",
 
   /**
    * milligram per deciliter
    */
-  milligramperdeciliter: "mg/dL",
+  "mg/dL": "mg/dL",
 
   /**
    * milligram per gram
    */
-  milligrampergram: "mg/g",
+  "mg/g": "mg/g",
 
   /**
    * milligram / gram Cre
    */
-  milligramgramCre: "mg/g{Cre}",
+  "mg/g{Cre}": "mg/g{Cre}",
 
   /**
    * milligram per gram of creatinine
    */
-  milligrampergramofcreatinine: "mg/g{creat}",
+  "mg/g{creat}": "mg/g{creat}",
 
   /**
    * milligram per hour
    */
-  milligramperhour: "mg/h",
+  "mg/h": "mg/h",
 
   /**
    * milligram per kilogram
    */
-  milligramperkilogram: "mg/kg",
+  "mg/kg": "mg/kg",
 
   /**
    * milligram / kilogram / 24 * hour
    */
-  milligramkilogram24hour: "mg/kg/(24.h)",
+  "mg/kg/(24.h)": "mg/kg/(24.h)",
 
   /**
    * milligram per kilogram per day
    */
-  milligramperkilogramperday: "mg/kg/d",
+  "mg/kg/d": "mg/kg/d",
 
   /**
    * milligram per kilogram per minute
    */
-  milligramperkilogramperminute: "mg/kg/min",
+  "mg/kg/min": "mg/kg/min",
 
   /**
    * milligram per liter
    */
-  milligramperliter: "mg/L",
+  "mg/L": "mg/L",
 
   /**
    * milligram per square meter
    */
-  milligrampersquaremeter: "mg/m2",
+  "mg/m2": "mg/m2",
 
   /**
    * milligram per cubic meter
    */
-  milligrampercubicmeter: "mg/m3",
+  "mg/m3": "mg/m3",
 
   /**
    * milligram per milligram
    */
-  milligrampermilligram: "mg/mg",
+  "mg/mg": "mg/mg",
 
   /**
    * milligram / milligram cre
    */
-  milligrammilligramcre: "mg/mg{cre}",
+  "mg/mg{cre}": "mg/mg{cre}",
 
   /**
    * milligram per minute
    */
-  milligramperminute: "mg/min",
+  "mg/min": "mg/min",
 
   /**
    * milligram per milliliter
    */
-  milligrampermilliliter: "mg/mL",
+  "mg/mL": "mg/mL",
 
   /**
    * milligram per millimole
    */
-  milligrampermillimole: "mg/mmol",
+  "mg/mmol": "mg/mmol",
 
   /**
    * milligram / millimole Cre
    */
-  milligrammillimoleCre: "mg/mmol{Cre}",
+  "mg/mmol{Cre}": "mg/mmol{Cre}",
 
   /**
    * milligram per millimole of creatinine
    */
-  milligrampermillimoleofcreatinine: "mg/mmol{creat}",
+  "mg/mmol{creat}": "mg/mmol{creat}",
 
   /**
    * milligram per week
    */
-  milligramperweek: "mg/wk",
+  "mg/wk": "mg/wk",
 
   /**
    * milligram Phenylketones / deciliter
    */
-  milligramPhenylketonesdeciliter: "mg{Phenylketones}/dL",
+  "mg{Phenylketones}/dL": "mg{Phenylketones}/dL",
 
   /**
    * minute
    */
-  minute: "min",
+  min: "min",
 
   /**
    * milliliter
    */
-  milliliter: "mL",
+  mL: "mL",
 
   /**
    * milliliter / h'b * (meter ^ 2)
    */
-  milliliterhbmeter2: "mL/({h'b}.m2)",
+  "mL/({h'b}.m2)": "mL/({h'b}.m2)",
 
   /**
    * milliliter per 10 hour
    */
-  milliliterper10hour: "mL/(10.h)",
+  "mL/(10.h)": "mL/(10.h)",
 
   /**
    * milliliter per 12 hour
    */
-  milliliterper12hour: "mL/(12.h)",
+  "mL/(12.h)": "mL/(12.h)",
 
   /**
    * milliliter per 2 hour
    */
-  milliliterper2hour: "mL/(2.h)",
+  "mL/(2.h)": "mL/(2.h)",
 
   /**
    * milliliter per 24 hour
    */
-  milliliterper24hour: "mL/(24.h)",
+  "mL/(24.h)": "mL/(24.h)",
 
   /**
    * milliliter per 4 hour
    */
-  milliliterper4hour: "mL/(4.h)",
+  "mL/(4.h)": "mL/(4.h)",
 
   /**
    * milliliter per 72 hour
    */
-  milliliterper72hour: "mL/(72.h)",
+  "mL/(72.h)": "mL/(72.h)",
 
   /**
    * milliliter per 8 hour
    */
-  milliliterper8hour: "mL/(8.h)",
+  "mL/(8.h)": "mL/(8.h)",
 
   /**
    * milliliter / kilogram * minute
    */
-  milliliterkilogramminute: "mL/(kg.min)",
+  "mL/(kg.min)": "mL/(kg.min)",
 
   /**
    * milliliter per square inch (international)
    */
-  milliliterpersquareinchinternational: "mL/[sin_i]",
+  "mL/[sin_i]": "mL/[sin_i]",
 
   /**
    * MilliLitersPerHeartbeat [SI Volume Units]
    */
-  MilliLitersPerHeartbeatSIVolumeUnits: "mL/{h'b}",
+  "mL/{h'b}": "mL/{h'b}",
 
   /**
    * milliliter / centimeter of water column
    */
-  millilitercentimeterofwatercolumn: "mL/cm[H2O]",
+  "mL/cm[H2O]": "mL/cm[H2O]",
 
   /**
    * milliliter per day
    */
-  milliliterperday: "mL/d",
+  "mL/d": "mL/d",
 
   /**
    * milliliter per deciliter
    */
-  milliliterperdeciliter: "mL/dL",
+  "mL/dL": "mL/dL",
 
   /**
    * milliliter per hour
    */
-  milliliterperhour: "mL/h",
+  "mL/h": "mL/h",
 
   /**
    * milliliter per kilogram
    */
-  milliliterperkilogram: "mL/kg",
+  "mL/kg": "mL/kg",
 
   /**
    * milliliter per kilogram per 8 hour
    */
-  milliliterperkilogramper8hour: "mL/kg/(8.h)",
+  "mL/kg/(8.h)": "mL/kg/(8.h)",
 
   /**
    * milliliter per kilogram per day
    */
-  milliliterperkilogramperday: "mL/kg/d",
+  "mL/kg/d": "mL/kg/d",
 
   /**
    * milliliter per kilogram per hour
    */
-  milliliterperkilogramperhour: "mL/kg/h",
+  "mL/kg/h": "mL/kg/h",
 
   /**
    * milliliter per kilogram per minute
    */
-  milliliterperkilogramperminute: "mL/kg/min",
+  "mL/kg/min": "mL/kg/min",
 
   /**
    * milliliter per liter
    */
-  milliliterperliter: "mL/L",
+  "mL/L": "mL/L",
 
   /**
    * milliliter per square meter
    */
-  milliliterpersquaremeter: "mL/m2",
+  "mL/m2": "mL/m2",
 
   /**
    * milliliter per millibar
    */
-  milliliterpermillibar: "mL/mbar",
+  "mL/mbar": "mL/mbar",
 
   /**
    * milliliter per minute
    */
-  milliliterperminute: "mL/min",
+  "mL/min": "mL/min",
 
   /**
    * milliliter / minute / 173 * (the number ten for arbitrary powers ^ -2) * (meter ^ 2)
    */
-  milliliterminute173thenumbertenforarbitrarypowers2meter2:
-    "mL/min/(173.10*-2.m2)",
+  "mL/min/(173.10*-2.m2)": "mL/min/(173.10*-2.m2)",
 
   /**
    * milliliter per minute per 1.73 square meter
    */
-  milliliterperminuteper173squaremeter: "mL/min/{1.73_m2}",
+  "mL/min/{1.73_m2}": "mL/min/{1.73_m2}",
 
   /**
    * milliliter per minute per square meter
    */
-  milliliterperminutepersquaremeter: "mL/min/m2",
+  "mL/min/m2": "mL/min/m2",
 
   /**
    * milliliter per millimeter
    */
-  milliliterpermillimeter: "mL/mm",
+  "mL/mm": "mL/mm",
 
   /**
    * milliliter per second
    */
-  milliliterpersecond: "mL/s",
+  "mL/s": "mL/s",
 
   /**
    * millimeter
    */
-  millimeter: "mm",
+  mm: "mm",
 
   /**
    * millimeter per hour
    */
-  millimeterperhour: "mm/h",
+  "mm/h": "mm/h",
 
   /**
    * millimeter per minute
    */
-  millimeterperminute: "mm/min",
+  "mm/min": "mm/min",
 
   /**
    * millimeter of water
    */
-  millimeterofwater: "mm[H2O]",
+  "mm[H2O]": "mm[H2O]",
 
   /**
    * millimeter of mercury
    */
-  millimeterofmercury: "mm[Hg]",
+  "mm[Hg]": "mm[Hg]",
 
   /**
    * square millimeter
    */
-  squaremillimeter: "mm2",
+  mm2: "mm2",
 
   /**
    * cubic millimeter
    */
-  cubicmillimeter: "mm3",
+  mm3: "mm3",
 
   /**
    * millimole
    */
-  millimole: "mmol",
+  mmol: "mmol",
 
   /**
    * millimole per 12 hour
    */
-  millimoleper12hour: "mmol/(12.h)",
+  "mmol/(12.h)": "mmol/(12.h)",
 
   /**
    * millimole per 18 hour
    */
-  millimoleper18hour: "mmol/(18.h)",
+  "mmol/(18.h)": "mmol/(18.h)",
 
   /**
    * millimole per 2 hour
    */
-  millimoleper2hour: "mmol/(2.h)",
+  "mmol/(2.h)": "mmol/(2.h)",
 
   /**
    * millimole per 24 hour
    */
-  millimoleper24hour: "mmol/(24.h)",
+  "mmol/(24.h)": "mmol/(24.h)",
 
   /**
    * millimole per 6 hour
    */
-  millimoleper6hour: "mmol/(6.h)",
+  "mmol/(6.h)": "mmol/(6.h)",
 
   /**
    * millimole per 8 hour
    */
-  millimoleper8hour: "mmol/(8.h)",
+  "mmol/(8.h)": "mmol/(8.h)",
 
   /**
    * millimole / 8 * hour * kilogram
    */
-  millimole8hourkilogram: "mmol/(8.h.kg)",
+  "mmol/(8.h.kg)": "mmol/(8.h.kg)",
 
   /**
    * millimole / Tot'Volume
    */
-  millimoleTotVolume: "mmol/{Tot'Volume}",
+  "mmol/{Tot'Volume}": "mmol/{Tot'Volume}",
 
   /**
    * millimole per day
    */
-  millimoleperday: "mmol/d",
+  "mmol/d": "mmol/d",
 
   /**
    * millimole per deciliter
    */
-  millimoleperdeciliter: "mmol/dL",
+  "mmol/dL": "mmol/dL",
 
   /**
    * millimole per gram
    */
-  millimolepergram: "mmol/g",
+  "mmol/g": "mmol/g",
 
   /**
    * millimole per gram of creatinine
    */
-  millimolepergramofcreatinine: "mmol/g{creat}",
+  "mmol/g{creat}": "mmol/g{creat}",
 
   /**
    * millimole per gram of hemoglobin
    */
-  millimolepergramofhemoglobin: "mmol/g{hemoglobin}",
+  "mmol/g{hemoglobin}": "mmol/g{hemoglobin}",
 
   /**
    * millimole per hour
    */
-  millimoleperhour: "mmol/h",
+  "mmol/h": "mmol/h",
 
   /**
    * millimole per hour per milligram of hemoglobin
    */
-  millimoleperhourpermilligramofhemoglobin: "mmol/h/mg{Hb}",
+  "mmol/h/mg{Hb}": "mmol/h/mg{Hb}",
 
   /**
    * millimole per hour per milligram of protein
    */
-  millimoleperhourpermilligramofprotein: "mmol/h/mg{protein}",
+  "mmol/h/mg{protein}": "mmol/h/mg{protein}",
 
   /**
    * millimole per kilogram
    */
-  millimoleperkilogram: "mmol/kg",
+  "mmol/kg": "mmol/kg",
 
   /**
    * millimole per kilogram per day
    */
-  millimoleperkilogramperday: "mmol/kg/d",
+  "mmol/kg/d": "mmol/kg/d",
 
   /**
    * millimole per kilogram per hour
    */
-  millimoleperkilogramperhour: "mmol/kg/h",
+  "mmol/kg/h": "mmol/kg/h",
 
   /**
    * millimole per kilogram per minute
    */
-  millimoleperkilogramperminute: "mmol/kg/min",
+  "mmol/kg/min": "mmol/kg/min",
 
   /**
    * millimole per kilogram of water
    */
-  millimoleperkilogramofwater: "mmol/kg{H2O}",
+  "mmol/kg{H2O}": "mmol/kg{H2O}",
 
   /**
    * millimole per liter
    */
-  millimoleperliter: "mmol/L",
+  "mmol/L": "mmol/L",
 
   /**
    * millimole per liter per second
    */
-  millimoleperliterpersecond: "mmol/L/s",
+  "mmol/L/s": "mmol/L/s",
 
   /**
    * millimole / meter
    */
-  millimolemeter: "mmol/m",
+  "mmol/m": "mmol/m",
 
   /**
    * millimole per square meter
    */
-  millimolepersquaremeter: "mmol/m2",
+  "mmol/m2": "mmol/m2",
 
   /**
    * millimole per minute
    */
-  millimoleperminute: "mmol/min",
+  "mmol/min": "mmol/min",
 
   /**
    * millimole per millimole
    */
-  millimolepermillimole: "mmol/mmol",
+  "mmol/mmol": "mmol/mmol",
 
   /**
    * millimole per mole
    */
-  millimolepermole: "mmol/mol",
+  "mmol/mol": "mmol/mol",
 
   /**
    * millimole per mole of creatinine
    */
-  millimolepermoleofcreatinine: "mmol/mol{creat}",
+  "mmol/mol{creat}": "mmol/mol{creat}",
 
   /**
    * millimole per second per liter
    */
-  millimolepersecondperliter: "mmol/s/L",
+  "mmol/s/L": "mmol/s/L",
 
   /**
    * month
    */
-  month: "mo",
+  mo: "mo",
 
   /**
    * mole
    */
-  mole: "mol",
+  mol: "mol",
 
   /**
    * mole per day
    */
-  moleperday: "mol/d",
+  "mol/d": "mol/d",
 
   /**
    * mole per kilogram
    */
-  moleperkilogram: "mol/kg",
+  "mol/kg": "mol/kg",
 
   /**
    * mole per kilogram per second
    */
-  moleperkilogrampersecond: "mol/kg/s",
+  "mol/kg/s": "mol/kg/s",
 
   /**
    * mole per liter
    */
-  moleperliter: "mol/L",
+  "mol/L": "mol/L",
 
   /**
    * mole per cubic meter
    */
-  molepercubicmeter: "mol/m3",
+  "mol/m3": "mol/m3",
 
   /**
    * mole per milliliter
    */
-  molepermilliliter: "mol/mL",
+  "mol/mL": "mol/mL",
 
   /**
    * mole per mole
    */
-  molepermole: "mol/mol",
+  "mol/mol": "mol/mol",
 
   /**
    * mole / mole creat
    */
-  molemolecreat: "mol/mol{creat}",
+  "mol/mol{creat}": "mol/mol{creat}",
 
   /**
    * mole per second
    */
-  molepersecond: "mol/s",
+  "mol/s": "mol/s",
 
   /**
    * milliosmole
    */
-  milliosmole: "mosm",
+  mosm: "mosm",
 
   /**
    * milliosmole per kilogram
    */
-  milliosmoleperkilogram: "mosm/kg",
+  "mosm/kg": "mosm/kg",
 
   /**
    * milliosmole per liter
    */
-  milliosmoleperliter: "mosm/L",
+  "mosm/L": "mosm/L",
 
   /**
    * millipascal
    */
-  millipascal: "mPa",
+  mPa: "mPa",
 
   /**
    * millisecond
    */
-  millisecond: "ms",
+  ms: "ms",
 
   /**
    * millienzyme Unit
    */
-  millienzymeUnit: "mU",
+  mU: "mU",
 
   /**
    * millienzyme Unit per gram
    */
-  millienzymeUnitpergram: "mU/g",
+  "mU/g": "mU/g",
 
   /**
    * milliUnit / gram Hgb
    */
-  milliUnitgramHgb: "mU/g{Hgb}",
+  "mU/g{Hgb}": "mU/g{Hgb}",
 
   /**
    * millienzyme Unit per liter
    */
-  millienzymeUnitperliter: "mU/L",
+  "mU/L": "mU/L",
 
   /**
    * milliUnit / milligram
    */
-  milliUnitmilligram: "mU/mg",
+  "mU/mg": "mU/mg",
 
   /**
    * milliUnit / milligram Cre
    */
-  milliUnitmilligramCre: "mU/mg{Cre}",
+  "mU/mg{Cre}": "mU/mg{Cre}",
 
   /**
    * milliUnit / minute
    */
-  milliUnitminute: "mU/min",
+  "mU/min": "mU/min",
 
   /**
    * millienzyme Unit per milliliter
    */
-  millienzymeUnitpermilliliter: "mU/mL",
+  "mU/mL": "mU/mL",
 
   /**
    * millienzyme Unit per milliliter per minute
    */
-  millienzymeUnitpermilliliterperminute: "mU/mL/min",
+  "mU/mL/min": "mU/mL/min",
 
   /**
    * millienzyme Unit per millimole of creatinine
    */
-  millienzymeUnitpermillimoleofcreatinine: "mU/mmol{creatinine}",
+  "mU/mmol{creatinine}": "mU/mmol{creatinine}",
 
   /**
    * millienzyme Unit per millimole of red blood cells
    */
-  millienzymeUnitpermillimoleofredbloodcells: "mU/mmol{RBCs}",
+  "mU/mmol{RBCs}": "mU/mmol{RBCs}",
 
   /**
    * milliVolt
    */
-  milliVolt: "mV",
+  mV: "mV",
 
   /**
    * Newton
    */
-  Newton: "N",
+  N: "N",
 
   /**
    * Newton centimeter
    */
-  Newtoncentimeter: "N.cm",
+  "N.cm": "N.cm",
 
   /**
    * Newton second
    */
-  Newtonsecond: "N.s",
+  "N.s": "N.s",
 
   /**
    * nanoCurie
    */
-  nanoCurie: "nCi",
+  nCi: "nCi",
 
   /**
    * nanogram
    */
-  nanogram: "ng",
+  ng: "ng",
 
   /**
    * nanogram per 24 hour
    */
-  nanogramper24hour: "ng/(24.h)",
+  "ng/(24.h)": "ng/(24.h)",
 
   /**
    * nanogram per 8 hour
    */
-  nanogramper8hour: "ng/(8.h)",
+  "ng/(8.h)": "ng/(8.h)",
 
   /**
    * nanogram / 8 * hour * kilogram
    */
-  nanogram8hourkilogram: "ng/(8.h.kg)",
+  "ng/(8.h.kg)": "ng/(8.h.kg)",
 
   /**
    * nanogram / kilogram * day
    */
-  nanogramkilogramday: "ng/(kg.d)",
+  "ng/(kg.d)": "ng/(kg.d)",
 
   /**
    * nanogram / kilogram * hour
    */
-  nanogramkilogramhour: "ng/(kg.h)",
+  "ng/(kg.h)": "ng/(kg.h)",
 
   /**
    * nanogram / kilogram * minute
    */
-  nanogramkilogramminute: "ng/(kg.min)",
+  "ng/(kg.min)": "ng/(kg.min)",
 
   /**
    * nanogram per million
    */
-  nanogrampermillion: "ng/10*6",
+  "ng/10*6": "ng/10*6",
 
   /**
    * nanogram per day
    */
-  nanogramperday: "ng/d",
+  "ng/d": "ng/d",
 
   /**
    * nanogram per deciliter
    */
-  nanogramperdeciliter: "ng/dL",
+  "ng/dL": "ng/dL",
 
   /**
    * nanogram / deciliter / hour
    */
-  nanogramdeciliterhour: "ng/dL/h",
+  "ng/dL/h": "ng/dL/h",
 
   /**
    * nanogram per gram
    */
-  nanogrampergram: "ng/g",
+  "ng/g": "ng/g",
 
   /**
    * nanogram / gram Cre
    */
-  nanogramgramCre: "ng/g{Cre}",
+  "ng/g{Cre}": "ng/g{Cre}",
 
   /**
    * nanogram per gram of creatinine
    */
-  nanogrampergramofcreatinine: "ng/g{creat}",
+  "ng/g{creat}": "ng/g{creat}",
 
   /**
    * nanogram per hour
    */
-  nanogramperhour: "ng/h",
+  "ng/h": "ng/h",
 
   /**
    * nanogram per kilogram
    */
-  nanogramperkilogram: "ng/kg",
+  "ng/kg": "ng/kg",
 
   /**
    * nanogram per kilogram per 8 hour
    */
-  nanogramperkilogramper8hour: "ng/kg/(8.h)",
+  "ng/kg/(8.h)": "ng/kg/(8.h)",
 
   /**
    * nanogram per kilogram per hour
    */
-  nanogramperkilogramperhour: "ng/kg/h",
+  "ng/kg/h": "ng/kg/h",
 
   /**
    * nanogram per kilogram per minute
    */
-  nanogramperkilogramperminute: "ng/kg/min",
+  "ng/kg/min": "ng/kg/min",
 
   /**
    * nanogram per liter
    */
-  nanogramperliter: "ng/L",
+  "ng/L": "ng/L",
 
   /**
    * nanogram per square meter
    */
-  nanogrampersquaremeter: "ng/m2",
+  "ng/m2": "ng/m2",
 
   /**
    * nanogram per milligram
    */
-  nanogrampermilligram: "ng/mg",
+  "ng/mg": "ng/mg",
 
   /**
    * nanogram per milligram per hour
    */
-  nanogrampermilligramperhour: "ng/mg/h",
+  "ng/mg/h": "ng/mg/h",
 
   /**
    * nanogram / milligram Protein
    */
-  nanogrammilligramProtein: "ng/mg{Protein}",
+  "ng/mg{Protein}": "ng/mg{Protein}",
 
   /**
    * nanogram per minute
    */
-  nanogramperminute: "ng/min",
+  "ng/min": "ng/min",
 
   /**
    * nanogram per millliiter
    */
-  nanogrampermillliiter: "ng/mL",
+  "ng/mL": "ng/mL",
 
   /**
    * nanogram per milliliter per hour
    */
-  nanogrampermilliliterperhour: "ng/mL/h",
+  "ng/mL/h": "ng/mL/h",
 
   /**
    * nanogram / milliliter rbc
    */
-  nanogrammilliliterrbc: "ng/mL{rbc}",
+  "ng/mL{rbc}": "ng/mL{rbc}",
 
   /**
    * nanogram per second
    */
-  nanogrampersecond: "ng/s",
+  "ng/s": "ng/s",
 
   /**
    * nanokatal
    */
-  nanokatal: "nkat",
+  nkat: "nkat",
 
   /**
    * nanoliter
    */
-  nanoliter: "nL",
+  nL: "nL",
 
   /**
    * nanometer
    */
-  nanometer: "nm",
+  nm: "nm",
 
   /**
    * nanometer per second per liter
    */
-  nanometerpersecondperliter: "nm/s/L",
+  "nm/s/L": "nm/s/L",
 
   /**
    * nanomole
    */
-  nanomole: "nmol",
+  nmol: "nmol",
 
   /**
    * nanomole per 24 hour
    */
-  nanomoleper24hour: "nmol/(24.h)",
+  "nmol/(24.h)": "nmol/(24.h)",
 
   /**
    * nanomole per day
    */
-  nanomoleperday: "nmol/d",
+  "nmol/d": "nmol/d",
 
   /**
    * nanomole per deciliter
    */
-  nanomoleperdeciliter: "nmol/dL",
+  "nmol/dL": "nmol/dL",
 
   /**
    * nanomole per gram
    */
-  nanomolepergram: "nmol/g",
+  "nmol/g": "nmol/g",
 
   /**
    * nanomole / gram Cre
    */
-  nanomolegramCre: "nmol/g{Cre}",
+  "nmol/g{Cre}": "nmol/g{Cre}",
 
   /**
    * nanomole per gram of creatinine
    */
-  nanomolepergramofcreatinine: "nmol/g{creat}",
+  "nmol/g{creat}": "nmol/g{creat}",
 
   /**
    * nanomole per gram of dry weight
    */
-  nanomolepergramofdryweight: "nmol/g{dry_wt}",
+  "nmol/g{dry_wt}": "nmol/g{dry_wt}",
 
   /**
    * nanomole per hour per liter
    */
-  nanomoleperhourperliter: "nmol/h/L",
+  "nmol/h/L": "nmol/h/L",
 
   /**
    * nanomole per hour per milligram of protein
    */
-  nanomoleperhourpermilligramofprotein: "nmol/h/mg{protein}",
+  "nmol/h/mg{protein}": "nmol/h/mg{protein}",
 
   /**
    * nanomole per hour per milliliter
    */
-  nanomoleperhourpermilliliter: "nmol/h/mL",
+  "nmol/h/mL": "nmol/h/mL",
 
   /**
    * nanomole per liter
    */
-  nanomoleperliter: "nmol/L",
+  "nmol/L": "nmol/L",
 
   /**
    * nanomole per liter per millimole of creatinine
    */
-  nanomoleperliterpermillimoleofcreatinine: "nmol/L/mmol{creat}",
+  "nmol/L/mmol{creat}": "nmol/L/mmol{creat}",
 
   /**
    * nanomole per liter per second
    */
-  nanomoleperliterpersecond: "nmol/L/s",
+  "nmol/L/s": "nmol/L/s",
 
   /**
    * nanomole per liter of red blood cells
    */
-  nanomoleperliterofredbloodcells: "nmol/L{RBCs}",
+  "nmol/L{RBCs}": "nmol/L{RBCs}",
 
   /**
    * nanomole per meter per milligram of protein
    */
-  nanomolepermeterpermilligramofprotein: "nmol/m/mg{protein}",
+  "nmol/m/mg{protein}": "nmol/m/mg{protein}",
 
   /**
    * nanomole per milligram
    */
-  nanomolepermilligram: "nmol/mg",
+  "nmol/mg": "nmol/mg",
 
   /**
    * nanomole per milligram per hour
    */
-  nanomolepermilligramperhour: "nmol/mg/h",
+  "nmol/mg/h": "nmol/mg/h",
 
   /**
    * nanomole per minute per milligram of hemoglobin
    */
-  nanomoleperminutepermilligramofhemoglobin: "nmol/min/mg{hemoglobin}",
+  "nmol/min/mg{hemoglobin}": "nmol/min/mg{hemoglobin}",
 
   /**
    * nanomole per minute per milligram of protein
    */
-  nanomoleperminutepermilligramofprotein: "nmol/min/mg{protein}",
+  "nmol/min/mg{protein}": "nmol/min/mg{protein}",
 
   /**
    * nanomole per minute per milliliter
    */
-  nanomoleperminutepermilliliter: "nmol/min/mL",
+  "nmol/min/mL": "nmol/min/mL",
 
   /**
    * nanomole per milliliter
    */
-  nanomolepermilliliter: "nmol/mL",
+  "nmol/mL": "nmol/mL",
 
   /**
    * nanomole per milliliter per hour
    */
-  nanomolepermilliliterperhour: "nmol/mL/h",
+  "nmol/mL/h": "nmol/mL/h",
 
   /**
    * nanomole per milliliter per minute
    */
-  nanomolepermilliliterperminute: "nmol/mL/min",
+  "nmol/mL/min": "nmol/mL/min",
 
   /**
    * nanomole per millimole
    */
-  nanomolepermillimole: "nmol/mmol",
+  "nmol/mmol": "nmol/mmol",
 
   /**
    * nanomole / millimole Cre
    */
-  nanomolemillimoleCre: "nmol/mmol{Cre}",
+  "nmol/mmol{Cre}": "nmol/mmol{Cre}",
 
   /**
    * nanomole per millimole of creatinine
    */
-  nanomolepermillimoleofcreatinine: "nmol/mmol{creat}",
+  "nmol/mmol{creat}": "nmol/mmol{creat}",
 
   /**
    * nanomole per mole
    */
-  nanomolepermole: "nmol/mol",
+  "nmol/mol": "nmol/mol",
 
   /**
    * nanomole per nanomole
    */
-  nanomolepernanomole: "nmol/nmol",
+  "nmol/nmol": "nmol/nmol",
 
   /**
    * nanomole per second
    */
-  nanomolepersecond: "nmol/s",
+  "nmol/s": "nmol/s",
 
   /**
    * nanomole per second per liter
    */
-  nanomolepersecondperliter: "nmol/s/L",
+  "nmol/s/L": "nmol/s/L",
 
   /**
    * nanomole per micromole  of creatinine
    */
-  nanomolepermicromoleofcreatinine: "nmol/umol{creat}",
+  "nmol/umol{creat}": "nmol/umol{creat}",
 
   /**
    * nanosecond
    */
-  nanosecond: "ns",
+  ns: "ns",
 
   /**
    * Ohm
@@ -3613,2919 +3611,2917 @@ export const UnitsOfMeasureCaseSensitiveCode = {
   /**
    * osmole per kilogram
    */
-  osmoleperkilogram: "osm/kg",
+  "osm/kg": "osm/kg",
 
   /**
    * osmole per liter
    */
-  osmoleperliter: "osm/L",
+  "osm/L": "osm/L",
 
   /**
    * Pascal
    */
-  Pascal: "Pa",
+  Pa: "Pa",
 
   /**
    * picogram
    */
-  picogram: "pg",
+  pg: "pg",
 
   /**
    * picogram per deciliter
    */
-  picogramperdeciliter: "pg/dL",
+  "pg/dL": "pg/dL",
 
   /**
    * picogram per liter
    */
-  picogramperliter: "pg/L",
+  "pg/L": "pg/L",
 
   /**
    * picogram per milligram
    */
-  picogrampermilligram: "pg/mg",
+  "pg/mg": "pg/mg",
 
   /**
    * picogram per milliliter
    */
-  picogrampermilliliter: "pg/mL",
+  "pg/mL": "pg/mL",
 
   /**
    * picogram per millimeter
    */
-  picogrampermillimeter: "pg/mm",
+  "pg/mm": "pg/mm",
 
   /**
    * picokatal
    */
-  picokatal: "pkat",
+  pkat: "pkat",
 
   /**
    * picoliter
    */
-  picoliter: "pL",
+  pL: "pL",
 
   /**
    * picometer
    */
-  picometer: "pm",
+  pm: "pm",
 
   /**
    * picomole
    */
-  picomole: "pmol",
+  pmol: "pmol",
 
   /**
    * picomole per day
    */
-  picomoleperday: "pmol/d",
+  "pmol/d": "pmol/d",
 
   /**
    * picomole per deciliter
    */
-  picomoleperdeciliter: "pmol/dL",
+  "pmol/dL": "pmol/dL",
 
   /**
    * picomole per gram
    */
-  picomolepergram: "pmol/g",
+  "pmol/g": "pmol/g",
 
   /**
    * picomole per hour per milligram of protein
    */
-  picomoleperhourpermilligramofprotein: "pmol/h/mg{protein}",
+  "pmol/h/mg{protein}": "pmol/h/mg{protein}",
 
   /**
    * picomole per hour per milliliter
    */
-  picomoleperhourpermilliliter: "pmol/h/mL",
+  "pmol/h/mL": "pmol/h/mL",
 
   /**
    * picomole per liter
    */
-  picomoleperliter: "pmol/L",
+  "pmol/L": "pmol/L",
 
   /**
    * picomole per milligram of protein
    */
-  picomolepermilligramofprotein: "pmol/mg{protein}",
+  "pmol/mg{protein}": "pmol/mg{protein}",
 
   /**
    * picomole per minute
    */
-  picomoleperminute: "pmol/min",
+  "pmol/min": "pmol/min",
 
   /**
    * picomole per minute per milligram of protein
    */
-  picomoleperminutepermilligramofprotein: "pmol/min/mg{protein}",
+  "pmol/min/mg{protein}": "pmol/min/mg{protein}",
 
   /**
    * picomole per milliliter
    */
-  picomolepermilliliter: "pmol/mL",
+  "pmol/mL": "pmol/mL",
 
   /**
    * picomole per millimole
    */
-  picomolepermillimole: "pmol/mmol",
+  "pmol/mmol": "pmol/mmol",
 
   /**
    * picomole per millimole of creatinine
    */
-  picomolepermillimoleofcreatinine: "pmol/mmol{creat}",
+  "pmol/mmol{creat}": "pmol/mmol{creat}",
 
   /**
    * picomole per mole
    */
-  picomolepermole: "pmol/mol",
+  "pmol/mol": "pmol/mol",
 
   /**
    * picomole per micromole
    */
-  picomolepermicromole: "pmol/umol",
+  "pmol/umol": "pmol/umol",
 
   /**
    * picomole per micromole of creatinine
    */
-  picomolepermicromoleofcreatinine: "pmol/umol{creat}",
+  "pmol/umol{creat}": "pmol/umol{creat}",
 
   /**
    * picosecond
    */
-  picosecond: "ps",
+  ps: "ps",
 
   /**
    * picotesla
    */
-  picotesla: "pT",
+  pT: "pT",
 
   /**
    * second
    */
-  second: "s",
+  s: "s",
 
   /**
    * Stokes
    */
-  Stokes: "St",
+  St: "St",
 
   /**
    * tonne
    */
-  tonne: "t",
+  t: "t",
 
   /**
    * enzyme Unit
    */
-  enzymeUnit: "U",
+  U: "U",
 
   /**
    * enzyme Unit per 1 hour
    */
-  enzymeUnitper1hour: "U/(1.h)",
+  "U/(1.h)": "U/(1.h)",
 
   /**
    * enzyme unit per 12 hour
    */
-  enzymeunitper12hour: "U/(12.h)",
+  "U/(12.h)": "U/(12.h)",
 
   /**
    * enzyme Unit per 18 hour
    */
-  enzymeUnitper18hour: "U/(18.h)",
+  "U/(18.h)": "U/(18.h)",
 
   /**
    * enzyme unit per 2 hour
    */
-  enzymeunitper2hour: "U/(2.h)",
+  "U/(2.h)": "U/(2.h)",
 
   /**
    * enzyme unit per 24 hour
    */
-  enzymeunitper24hour: "U/(24.h)",
+  "U/(24.h)": "U/(24.h)",
 
   /**
    * enzyme unit per 10 billion cells
    */
-  enzymeunitper10billioncells: "U/10*10{cells}",
+  "U/10*10{cells}": "U/10*10{cells}",
 
   /**
    * enzyme unit per trillion
    */
-  enzymeunitpertrillion: "U/10*12",
+  "U/10*12": "U/10*12",
 
   /**
    * enzyme unit per million
    */
-  enzymeunitpermillion: "U/10*6",
+  "U/10*6": "U/10*6",
 
   /**
    * enzyme unit per billion
    */
-  enzymeunitperbillion: "U/10*9",
+  "U/10*9": "U/10*9",
 
   /**
    * enzyme unit per day
    */
-  enzymeunitperday: "U/d",
+  "U/d": "U/d",
 
   /**
    * enzyme unit per deciliter
    */
-  enzymeunitperdeciliter: "U/dL",
+  "U/dL": "U/dL",
 
   /**
    * enzyme unit per gram
    */
-  enzymeunitpergram: "U/g",
+  "U/g": "U/g",
 
   /**
    * Unit / gram Cre
    */
-  UnitgramCre: "U/g{Cre}",
+  "U/g{Cre}": "U/g{Cre}",
 
   /**
    * enzyme unit per gram of hemoglobin
    */
-  enzymeunitpergramofhemoglobin: "U/g{Hb}",
+  "U/g{Hb}": "U/g{Hb}",
 
   /**
    * enzyme Unit per gram of hemoglobin
    */
-  enzymeUnitpergramofhemoglobin: "U/g{hemoglobin}",
+  "U/g{hemoglobin}": "U/g{hemoglobin}",
 
   /**
    * UnitsPerGramHemoglobin
    */
-  UnitsPerGramHemoglobin: "U/g{Hgb}",
+  "U/g{Hgb}": "U/g{Hgb}",
 
   /**
    * enzyme unit per hour
    */
-  enzymeunitperhour: "U/h",
+  "U/h": "U/h",
 
   /**
    * Unit / kilogram / hour
    */
-  Unitkilogramhour: "U/kg/h",
+  "U/kg/h": "U/kg/h",
 
   /**
    * enzyme unit per kilogram of hemoglobin
    */
-  enzymeunitperkilogramofhemoglobin: "U/kg{Hb}",
+  "U/kg{Hb}": "U/kg{Hb}",
 
   /**
    * enzyme Unit per kilogram of hemoglobin
    */
-  enzymeUnitperkilogramofhemoglobin: "U/kg{hemoglobin}",
+  "U/kg{hemoglobin}": "U/kg{hemoglobin}",
 
   /**
    * enzyme unit per liter
    */
-  enzymeunitperliter: "U/L",
+  "U/L": "U/L",
 
   /**
    * enzyme unit per minute
    */
-  enzymeunitperminute: "U/min",
+  "U/min": "U/min",
 
   /**
    * enzyme unit per milliliter
    */
-  enzymeunitpermilliliter: "U/mL",
+  "U/mL": "U/mL",
 
   /**
    * Unit / milliliter RBC
    */
-  UnitmilliliterRBC: "U/mL{RBC}",
+  "U/mL{RBC}": "U/mL{RBC}",
 
   /**
    * enzyme unit per milliliter of red blood cells
    */
-  enzymeunitpermilliliterofredbloodcells: "U/mL{RBCs}",
+  "U/mL{RBCs}": "U/mL{RBCs}",
 
   /**
    * enzyme unit per millimole of creatinine
    */
-  enzymeunitpermillimoleofcreatinine: "U/mmol{creat}",
+  "U/mmol{creat}": "U/mmol{creat}",
 
   /**
    * enzyme Unit per mole
    */
-  enzymeUnitpermole: "U/mol",
+  "U/mol": "U/mol",
 
   /**
    * enzyme unit per second
    */
-  enzymeunitpersecond: "U/s",
+  "U/s": "U/s",
 
   /**
    * enzyme Unit per micromole
    */
-  enzymeUnitpermicromole: "U/umol",
+  "U/umol": "U/umol",
 
   /**
    * micro international unit
    */
-  microinternationalunit: "u[IU]",
+  "u[IU]": "u[IU]",
 
   /**
    * microinternational unit per liter
    */
-  microinternationalunitperliter: "u[IU]/L",
+  "u[IU]/L": "u[IU]/L",
 
   /**
    * micro international unit per milliliter
    */
-  microinternationalunitpermilliliter: "u[IU]/mL",
+  "u[IU]/mL": "u[IU]/mL",
 
   /**
    * microequivalents
    */
-  microequivalents: "ueq",
+  ueq: "ueq",
 
   /**
    * microequivalent per liter
    */
-  microequivalentperliter: "ueq/L",
+  "ueq/L": "ueq/L",
 
   /**
    * microequivalent per milliliter
    */
-  microequivalentpermilliliter: "ueq/mL",
+  "ueq/mL": "ueq/mL",
 
   /**
    * microgram
    */
-  microgram: "ug",
+  ug: "ug",
 
   /**
    * microgram per 24 hour
    */
-  microgramper24hour: "ug/(24.h)",
+  "ug/(24.h)": "ug/(24.h)",
 
   /**
    * microgram per 8 hour
    */
-  microgramper8hour: "ug/(8.h)",
+  "ug/(8.h)": "ug/(8.h)",
 
   /**
    * microgram / kilogram * day
    */
-  microgramkilogramday: "ug/(kg.d)",
+  "ug/(kg.d)": "ug/(kg.d)",
 
   /**
    * microgram / kilogram * hour
    */
-  microgramkilogramhour: "ug/(kg.h)",
+  "ug/(kg.h)": "ug/(kg.h)",
 
   /**
    * microgram / Specimen
    */
-  microgramSpecimen: "ug/{Specimen}",
+  "ug/{Specimen}": "ug/{Specimen}",
 
   /**
    * MicroGramsPerTotalVolume
    */
-  MicroGramsPerTotalVolume: "ug/{TotalVolume}",
+  "ug/{TotalVolume}": "ug/{TotalVolume}",
 
   /**
    * microgram per day
    */
-  microgramperday: "ug/d",
+  "ug/d": "ug/d",
 
   /**
    * microgram per deciliter
    */
-  microgramperdeciliter: "ug/dL",
+  "ug/dL": "ug/dL",
 
   /**
    * microgram / deciliter rbc
    */
-  microgramdeciliterrbc: "ug/dL{rbc}",
+  "ug/dL{rbc}": "ug/dL{rbc}",
 
   /**
    * microgram per gram
    */
-  microgrampergram: "ug/g",
+  "ug/g": "ug/g",
 
   /**
    * microgram / gram Cre
    */
-  microgramgramCre: "ug/g{Cre}",
+  "ug/g{Cre}": "ug/g{Cre}",
 
   /**
    * microgram per gram of creatinine
    */
-  microgrampergramofcreatinine: "ug/g{creat}",
+  "ug/g{creat}": "ug/g{creat}",
 
   /**
    * microgram / gram DryWeight
    */
-  microgramgramDryWeight: "ug/g{DryWeight}",
+  "ug/g{DryWeight}": "ug/g{DryWeight}",
 
   /**
    * microgram / gram Hgb
    */
-  microgramgramHgb: "ug/g{Hgb}",
+  "ug/g{Hgb}": "ug/g{Hgb}",
 
   /**
    * microgram / gram Tissue
    */
-  microgramgramTissue: "ug/g{Tissue}",
+  "ug/g{Tissue}": "ug/g{Tissue}",
 
   /**
    * microgram per hour
    */
-  microgramperhour: "ug/h",
+  "ug/h": "ug/h",
 
   /**
    * microgram per kilogram
    */
-  microgramperkilogram: "ug/kg",
+  "ug/kg": "ug/kg",
 
   /**
    * microgram per kilogram per 8 hour
    */
-  microgramperkilogramper8hour: "ug/kg/(8.h)",
+  "ug/kg/(8.h)": "ug/kg/(8.h)",
 
   /**
    * microgram per kilogram per day
    */
-  microgramperkilogramperday: "ug/kg/d",
+  "ug/kg/d": "ug/kg/d",
 
   /**
    * microgram per kilogram per hour
    */
-  microgramperkilogramperhour: "ug/kg/h",
+  "ug/kg/h": "ug/kg/h",
 
   /**
    * microgram per kilogram per minute
    */
-  microgramperkilogramperminute: "ug/kg/min",
+  "ug/kg/min": "ug/kg/min",
 
   /**
    * microgram per liter
    */
-  microgramperliter: "ug/L",
+  "ug/L": "ug/L",
 
   /**
    * microgram per liter per 24 hour
    */
-  microgramperliterper24hour: "ug/L/(24.h)",
+  "ug/L/(24.h)": "ug/L/(24.h)",
 
   /**
    * microgram / liter DDU
    */
-  microgramliterDDU: "ug/L{DDU}",
+  "ug/L{DDU}": "ug/L{DDU}",
 
   /**
    * microgram per square meter
    */
-  microgrampersquaremeter: "ug/m2",
+  "ug/m2": "ug/m2",
 
   /**
    * microgram per milligram
    */
-  microgrampermilligram: "ug/mg",
+  "ug/mg": "ug/mg",
 
   /**
    * microgram / milligram Cre
    */
-  microgrammilligramCre: "ug/mg{Cre}",
+  "ug/mg{Cre}": "ug/mg{Cre}",
 
   /**
    * microgram per milligram of creatinine
    */
-  microgrampermilligramofcreatinine: "ug/mg{creat}",
+  "ug/mg{creat}": "ug/mg{creat}",
 
   /**
    * microgram per minute
    */
-  microgramperminute: "ug/min",
+  "ug/min": "ug/min",
 
   /**
    * microgram per milliliter
    */
-  microgrampermilliliter: "ug/mL",
+  "ug/mL": "ug/mL",
 
   /**
    * microgram / milliliter FEU
    */
-  microgrammilliliterFEU: "ug/mL{FEU}",
+  "ug/mL{FEU}": "ug/mL{FEU}",
 
   /**
    * microgram per millimole
    */
-  microgrampermillimole: "ug/mmol",
+  "ug/mmol": "ug/mmol",
 
   /**
    * microgram per nanogram
    */
-  microgrampernanogram: "ug/ng",
+  "ug/ng": "ug/ng",
 
   /**
    * microgram T4 / deciliter
    */
-  microgramT4deciliter: "ug{T4}/dL",
+  "ug{T4}/dL": "ug{T4}/dL",
 
   /**
    * microkatal
    */
-  microkatal: "ukat",
+  ukat: "ukat",
 
   /**
    * microliter
    */
-  microliter: "uL",
+  uL: "uL",
 
   /**
    * microliter per 2 hour
    */
-  microliterper2hour: "uL/(2.h)",
+  "uL/(2.h)": "uL/(2.h)",
 
   /**
    * microliter per hour
    */
-  microliterperhour: "uL/h",
+  "uL/h": "uL/h",
 
   /**
    * micrometer
    */
-  micrometer: "um",
+  um: "um",
 
   /**
    * micrometer per second
    */
-  micrometerpersecond: "um/s",
+  "um/s": "um/s",
 
   /**
    * micromole
    */
-  micromole: "umol",
+  umol: "umol",
 
   /**
    * micromole per 24 hour
    */
-  micromoleper24hour: "umol/(24.h)",
+  "umol/(24.h)": "umol/(24.h)",
 
   /**
    * micromole per day
    */
-  micromoleperday: "umol/d",
+  "umol/d": "umol/d",
 
   /**
    * micromole per deciliter
    */
-  micromoleperdeciliter: "umol/dL",
+  "umol/dL": "umol/dL",
 
   /**
    * micromole per gram
    */
-  micromolepergram: "umol/g",
+  "umol/g": "umol/g",
 
   /**
    * micromole / gram Cre
    */
-  micromolegramCre: "umol/g{Cre}",
+  "umol/g{Cre}": "umol/g{Cre}",
 
   /**
    * micromole per gram of creatinine
    */
-  micromolepergramofcreatinine: "umol/g{creat}",
+  "umol/g{creat}": "umol/g{creat}",
 
   /**
    * micromole per gram of hemoglobin
    */
-  micromolepergramofhemoglobin: "umol/g{Hb}",
+  "umol/g{Hb}": "umol/g{Hb}",
 
   /**
    * micromole per gram of hemoglobin
    */
-  micromolepergramofhemoglobin: "umol/g{hemoglobin}",
+  "umol/g{hemoglobin}": "umol/g{hemoglobin}",
 
   /**
    * micromole / gram Hgb
    */
-  micromolegramHgb: "umol/g{Hgb}",
+  "umol/g{Hgb}": "umol/g{Hgb}",
 
   /**
    * micromole per hour
    */
-  micromoleperhour: "umol/h",
+  "umol/h": "umol/h",
 
   /**
    * micromole / hour / gram
    */
-  micromolehourgram: "umol/h/g",
+  "umol/h/g": "umol/h/g",
 
   /**
    * micromole per hour per liter
    */
-  micromoleperhourperliter: "umol/h/L",
+  "umol/h/L": "umol/h/L",
 
   /**
    * micromole per hour per milligram of protein
    */
-  micromoleperhourpermilligramofprotein: "umol/h/mg{protein}",
+  "umol/h/mg{protein}": "umol/h/mg{protein}",
 
   /**
    * micromole per kilogram
    */
-  micromoleperkilogram: "umol/kg",
+  "umol/kg": "umol/kg",
 
   /**
    * micromole per liter
    */
-  micromoleperliter: "umol/L",
+  "umol/L": "umol/L",
 
   /**
    * micromole per liter per hour
    */
-  micromoleperliterperhour: "umol/L/h",
+  "umol/L/h": "umol/L/h",
 
   /**
    * micromole per liter of red blood cells
    */
-  micromoleperliterofredbloodcells: "umol/L{rbc}",
+  "umol/L{rbc}": "umol/L{rbc}",
 
   /**
    * micromole / meter
    */
-  micromolemeter: "umol/m",
+  "umol/m": "umol/m",
 
   /**
    * micromole per milligram
    */
-  micromolepermilligram: "umol/mg",
+  "umol/mg": "umol/mg",
 
   /**
    * micromole / milligram Cre
    */
-  micromolemilligramCre: "umol/mg{Cre}",
+  "umol/mg{Cre}": "umol/mg{Cre}",
 
   /**
    * micromole per minute
    */
-  micromoleperminute: "umol/min",
+  "umol/min": "umol/min",
 
   /**
    * micromole per minute per gram
    */
-  micromoleperminutepergram: "umol/min/g",
+  "umol/min/g": "umol/min/g",
 
   /**
    * micromole / minute / gram prot
    */
-  micromoleminutegramprot: "umol/min/g{prot}",
+  "umol/min/g{prot}": "umol/min/g{prot}",
 
   /**
    * micromole per minute per gram of protein
    */
-  micromoleperminutepergramofprotein: "umol/min/g{protein}",
+  "umol/min/g{protein}": "umol/min/g{protein}",
 
   /**
    * micromole per minute per liter
    */
-  micromoleperminuteperliter: "umol/min/L",
+  "umol/min/L": "umol/min/L",
 
   /**
    * micromole per milliliter
    */
-  micromolepermilliliter: "umol/mL",
+  "umol/mL": "umol/mL",
 
   /**
    * micromole per milliliter per minute
    */
-  micromolepermilliliterperminute: "umol/mL/min",
+  "umol/mL/min": "umol/mL/min",
 
   /**
    * micromole per millimole
    */
-  micromolepermillimole: "umol/mmol",
+  "umol/mmol": "umol/mmol",
 
   /**
    * micromole per mole
    */
-  micromolepermole: "umol/mol",
+  "umol/mol": "umol/mol",
 
   /**
    * micromole / mole Cre
    */
-  micromolemoleCre: "umol/mol{Cre}",
+  "umol/mol{Cre}": "umol/mol{Cre}",
 
   /**
    * micromole per mole of creatinine
    */
-  micromolepermoleofcreatinine: "umol/mol{creat}",
+  "umol/mol{creat}": "umol/mol{creat}",
 
   /**
    * micromole per mole of hemoglobin
    */
-  micromolepermoleofhemoglobin: "umol/mol{Hb}",
+  "umol/mol{Hb}": "umol/mol{Hb}",
 
   /**
    * micromole per micromole
    */
-  micromolepermicromole: "umol/umol",
+  "umol/umol": "umol/umol",
 
   /**
    * microOhm
    */
-  microOhm: "uOhm",
+  uOhm: "uOhm",
 
   /**
    * microsecond
    */
-  microsecond: "us",
+  us: "us",
 
   /**
    * microUnit
    */
-  microUnit: "uU",
+  uU: "uU",
 
   /**
    * micro enzyme unit per gram
    */
-  microenzymeunitpergram: "uU/g",
+  "uU/g": "uU/g",
 
   /**
    * micro enzyme unit per liter
    */
-  microenzymeunitperliter: "uU/L",
+  "uU/L": "uU/L",
 
   /**
    * micro enzyme unit per milliliter
    */
-  microenzymeunitpermilliliter: "uU/mL",
+  "uU/mL": "uU/mL",
 
   /**
    * microvolt
    */
-  microvolt: "uV",
+  uV: "uV",
 
   /**
    * volt
    */
-  volt: "V",
+  V: "V",
 
   /**
    * week
    */
-  week: "wk",
+  wk: "wk",
 
   /**
    * 10 micronewton second per centimeter to the fifth power per square meter
    */
-  Tenmicronewtonsecondpercentimetertothefifthpowerpersquaremeter:
-    "10.uN.s/(cm5.m2)",
+  "10.uN.s/(cm5.m2)": "10.uN.s/(cm5.m2)",
 
   /**
    * 10 thousand per microliter
    */
-  Tenthousandpermicroliter: "10*4/uL",
+  "10*4/uL": "10*4/uL",
 
   /**
    * 24 hour
    */
-  TwentyFourhour: "24.h",
+  "24.h": "24.h",
 
   /**
    * Ampère
    */
-  Ampre: "A",
+  A: "A",
 
   /**
    * aspirin response unit
    */
-  aspirinresponseunit: "{ARU}",
+  "{ARU}": "{ARU}",
 
   /**
    * standard atmosphere
    */
-  standardatmosphere: "atm",
+  atm: "atm",
 
   /**
    * attogram per cell
    */
-  attogrampercell: "ag/{cell}",
+  "ag/{cell}": "ag/{cell}",
 
   /**
    * Becquerel
    */
-  Becquerel: "Bq",
+  Bq: "Bq",
 
   /**
    * binding index
    */
-  bindingindex: "{binding_index}",
+  "{binding_index}": "{binding_index}",
 
   /**
    * Bodansky unit
    */
-  Bodanskyunit: "[bdsk'U]",
+  "[bdsk'U]": "[bdsk'U]",
 
   /**
    * CAG trinucleotide repeats
    */
-  CAGtrinucleotiderepeats: "{CAG_repeats}",
+  "{CAG_repeats}": "{CAG_repeats}",
 
   /**
    * calorie
    */
-  calorie: "cal",
+  cal: "cal",
 
   /**
    * centimeter of water per second per meter
    */
-  centimeterofwaterpersecondpermeter: "cm[H2O]/s/m",
+  "cm[H2O]/s/m": "cm[H2O]/s/m",
 
   /**
    * change in (delta) optical density
    */
-  changeindeltaopticaldensity: "{delta_OD}",
+  "{delta_OD}": "{delta_OD}",
 
   /**
    * copies
    */
-  copies: "{copies}",
+  "{copies}": "{copies}",
 
   /**
    * count
    */
-  count: "{count}",
+  "{count}": "{count}",
 
   /**
    * counts per minute
    */
-  countsperminute: "{CPM}",
+  "{CPM}": "{CPM}",
 
   /**
    * counts per minute per thousand cells
    */
-  countsperminuteperthousandcells: "{CPM}/10*3{cell}",
+  "{CPM}/10*3{cell}": "{CPM}/10*3{cell}",
 
   /**
    * dekaliter per minute
    */
-  dekaliterperminute: "daL/min",
+  "daL/min": "daL/min",
 
   /**
    * dekaliter per minute per square meter
    */
-  dekaliterperminutepersquaremeter: "daL/min/m2",
+  "daL/min/m2": "daL/min/m2",
 
   /**
    * dilution
    */
-  dilution: "{dilution}",
+  "{dilution}": "{dilution}",
 
   /**
    * dyne second per centimeter
    */
-  dynesecondpercentimeter: "dyn.s/cm",
+  "dyn.s/cm": "dyn.s/cm",
 
   /**
    * dyne second per centimeter per square meter
    */
-  dynesecondpercentimeterpersquaremeter: "dyn.s/(cm.m2)",
+  "dyn.s/(cm.m2)": "dyn.s/(cm.m2)",
 
   /**
    * EIA index
    */
-  EIAindex: "{EIA_index}",
+  "{EIA_index}": "{EIA_index}",
 
   /**
    * EIA titer
    */
-  EIAtiter: "{EIA_titer}",
+  "{EIA_titer}": "{EIA_titer}",
 
   /**
    * EIA value
    */
-  EIAvalue: "{EV}",
+  "{EV}": "{EV}",
 
   /**
    * enzyme unit per 10
    */
-  enzymeunitper10: "U/10",
+  "U/10": "U/10",
 
   /**
    * enzyme unit per 10 billion
    */
-  enzymeunitper10billion: "U/10*10",
+  "U/10*10": "U/10*10",
 
   /**
    * enzyme unit per 10 gram of feces
    */
-  enzymeunitper10gramoffeces: "U/(10.g){feces}",
+  "U/(10.g){feces}": "U/(10.g){feces}",
 
   /**
    * enzyme unit per gram of creatinine
    */
-  enzymeunitpergramofcreatinine: "U/g{creat}",
+  "U/g{creat}": "U/g{creat}",
 
   /**
    * enzyme unit per gram of protein
    */
-  enzymeunitpergramofprotein: "U/g{protein}",
+  "U/g{protein}": "U/g{protein}",
 
   /**
    * enzyme unit per liter at 25 deg Celsius
    */
-  enzymeunitperliterat25degCelsius: "U{25Cel}/L",
+  "U{25Cel}/L": "U{25Cel}/L",
 
   /**
    * enzyme unit per liter at 37 deg Celsius
    */
-  enzymeunitperliterat37degCelsius: "U{37Cel}/L",
+  "U{37Cel}/L": "U{37Cel}/L",
 
   /**
    * enzyme unit per trillion red blood cells
    */
-  enzymeunitpertrillionredbloodcells: "U/10*12{RBCs}",
+  "U/10*12{RBCs}": "U/10*12{RBCs}",
 
   /**
    * Farad
    */
-  Farad: "F",
+  F: "F",
 
   /**
    * femtomole per milligram of cytosol protein
    */
-  femtomolepermilligramofcytosolprotein: "fmol/mg{cytosol_protein}",
+  "fmol/mg{cytosol_protein}": "fmol/mg{cytosol_protein}",
 
   /**
    * femtomole per milligram of protein
    */
-  femtomolepermilligramofprotein: "fmol/mg{protein}",
+  "fmol/mg{protein}": "fmol/mg{protein}",
 
   /**
    * fluorescent intensity unit
    */
-  fluorescentintensityunit: "{FIU}",
+  "{FIU}": "{FIU}",
 
   /**
    * fraction
    */
-  fraction: "{fraction}",
+  "{fraction}": "{fraction}",
 
   /**
    * GAA trinucleotide repeats
    */
-  GAAtrinucleotiderepeats: "{GAA_repeats}",
+  "{GAA_repeats}": "{GAA_repeats}",
 
   /**
    * genomes per milliliter
    */
-  genomespermilliliter: "{genomes}/mL",
+  "{genomes}/mL": "{genomes}/mL",
 
   /**
    * globules (drops)  per high power field
    */
-  globulesdropsperhighpowerfield: "{Globules}/[HPF]",
+  "{Globules}/[HPF]": "{Globules}/[HPF]",
 
   /**
    * gram meter per heart beat
    */
-  grammeterperheartbeat: "g.m/{beat}",
+  "g.m/{beat}": "g.m/{beat}",
 
   /**
    * gram of creatinine
    */
-  gramofcreatinine: "g{creat}",
+  "g{creat}": "g{creat}",
 
   /**
    * gram of hemoglobin
    */
-  gramofhemoglobin: "g{Hb}",
+  "g{Hb}": "g{Hb}",
 
   /**
    * gram of total nitrogen
    */
-  gramoftotalnitrogen: "g{total_nit}",
+  "g{total_nit}": "g{total_nit}",
 
   /**
    * gram of total protein
    */
-  gramoftotalprotein: "g{total_prot}",
+  "g{total_prot}": "g{total_prot}",
 
   /**
    * gram of wet tissue
    */
-  gramofwettissue: "g{wet_tissue}",
+  "g{wet_tissue}": "g{wet_tissue}",
 
   /**
    * gram per  kilogram per 8 hour
    */
-  gramperkilogramper8hour: "g/kg/(8.h)",
+  "g/kg/(8.h)": "g/kg/(8.h)",
 
   /**
    * gram per 8 hour shift
    */
-  gramper8hourshift: "g/(8.h){shift}",
+  "g/(8.h){shift}": "g/(8.h){shift}",
 
   /**
    * gram per cubic centimeter
    */
-  grampercubiccentimeter: "g/cm3",
+  "g/cm3": "g/cm3",
 
   /**
    * gram per gram of globulin
    */
-  grampergramofglobulin: "g/g{globulin}",
+  "g/g{globulin}": "g/g{globulin}",
 
   /**
    * gram per kilogram per 8 hour shift
    */
-  gramperkilogramper8hourshift: "g/kg/(8.h){shift}",
+  "g/kg/(8.h){shift}": "g/kg/(8.h){shift}",
 
   /**
    * gram per kilogram per hour
    */
-  gramperkilogramperhour: "g/kg/h",
+  "g/kg/h": "g/kg/h",
 
   /**
    * gram per kilogram per minute
    */
-  gramperkilogramperminute: "g/kg/min",
+  "g/kg/min": "g/kg/min",
 
   /**
    * gram per mole of creatinine
    */
-  grampermoleofcreatinine: "g/mol{creat}",
+  "g/mol{creat}": "g/mol{creat}",
 
   /**
    * gram per specimen
    */
-  gramperspecimen: "g/{specimen}",
+  "g/{specimen}": "g/{specimen}",
 
   /**
    * gram per total output
    */
-  grampertotaloutput: "g/{total_output}",
+  "g/{total_output}": "g/{total_output}",
 
   /**
    * gram per total weight
    */
-  grampertotalweight: "g/{total_weight}",
+  "g/{total_weight}": "g/{total_weight}",
 
   /**
    * Gray
    */
-  Gray: "Gy",
+  Gy: "Gy",
 
   /**
    * heart beats per minute
    */
-  heartbeatsperminute: "{beats}/min",
+  "{beats}/min": "{beats}/min",
 
   /**
    * Henry
    */
-  Henry: "H",
+  H: "H",
 
   /**
    * high power field
    */
-  highpowerfield: "[HPF]",
+  "[HPF]": "[HPF]",
 
   /**
    * IgG anticardiolipin unit per milliliter**
    */
-  IgGanticardiolipinunitpermilliliter: "[GPL'U]/mL",
+  "[GPL'U]/mL": "[GPL'U]/mL",
 
   /**
    * IgG antiphosphatidylserine unit
    */
-  IgGantiphosphatidylserineunit: "{GPS'U}",
+  "{GPS'U}": "{GPS'U}",
 
   /**
    * IgM anticardiolipin unit per milliliter**
    */
-  IgManticardiolipinunitpermilliliter: "[MPL'U]/mL",
+  "[MPL'U]/mL": "[MPL'U]/mL",
 
   /**
    * immune status ratio
    */
-  immunestatusratio: "{ISR}",
+  "{ISR}": "{ISR}",
 
   /**
    * immunofluorescence assay index
    */
-  immunofluorescenceassayindex: "{IFA_index}",
+  "{IFA_index}": "{IFA_index}",
 
   /**
    * Immunofluorescence assay titer
    */
-  Immunofluorescenceassaytiter: "{IFA_titer}",
+  "{IFA_titer}": "{IFA_titer}",
 
   /**
    * inch (international) of water
    */
-  inchinternationalofwater: "[in_i'H2O]",
+  "[in_i'H2O]": "[in_i'H2O]",
 
   /**
    * index value
    */
-  indexvalue: "{index_val}",
+  "{index_val}": "{index_val}",
 
   /**
    * influenza hemagglutination titer
    */
-  influenzahemagglutinationtiter: "{HA_titer}",
+  "{HA_titer}": "{HA_titer}",
 
   /**
    * international unit
    */
-  internationalunit: "[IU]",
+  "[IU]": "[IU]",
 
   /**
    * international unit per liter at 37 degrees Celsius
    */
-  internationalunitperliterat37degreesCelsius: "[IU]/L{37Cel}",
+  "[IU]/L{37Cel}": "[IU]/L{37Cel}",
 
   /**
    * international unit per milligram of creatinine
    */
-  internationalunitpermilligramofcreatinine: "[IU]/mg{creat}",
+  "[IU]/mg{creat}": "[IU]/mg{creat}",
 
   /**
    * katal
    */
-  katal: "kat",
+  kat: "kat",
 
   /**
    * kilo enzyme unit
    */
-  kiloenzymeunit: "kU",
+  kU: "kU",
 
   /**
    * kilo enzyme unit per liter class
    */
-  kiloenzymeunitperliterclass: "kU/L{class}",
+  "kU/L{class}": "kU/L{class}",
 
   /**
    * kilocalorie per day
    */
-  kilocalorieperday: "kcal/d",
+  "kcal/d": "kcal/d",
 
   /**
    * kilocalorie per kilogram per 24 hour
    */
-  kilocalorieperkilogramper24hour: "kcal/kg/(24.h)",
+  "kcal/kg/(24.h)": "kcal/kg/(24.h)",
 
   /**
    * kilocalorie per ounce (US & British)
    */
-  kilocalorieperounceUSBritish: "kcal/[oz_av]",
+  "kcal/[oz_av]": "kcal/[oz_av]",
 
   /**
    * King Armstrong unit
    */
-  KingArmstrongunit: "[ka'U]",
+  "[ka'U]": "[ka'U]",
 
   /**
    * liter per 24 hour
    */
-  literper24hour: "L/(24.h)",
+  "L/(24.h)": "L/(24.h)",
 
   /**
    * liter per second per square second
    */
-  literpersecondpersquaresecond: "L/s/s2",
+  "L/s/s2": "L/s/s2",
 
   /**
    * log (base 10) copies per milliliter
    */
-  logbase10copiespermilliliter: "{Log_copies}/mL",
+  "{Log_copies}/mL": "{Log_copies}/mL",
 
   /**
    * log (base 10) international unit
    */
-  logbase10internationalunit: "{Log_IU}",
+  "{Log_IU}": "{Log_IU}",
 
   /**
    * log (base 10) international unit per milliliter
    */
-  logbase10internationalunitpermilliliter: "{Log_IU}/mL",
+  "{Log_IU}/mL": "{Log_IU}/mL",
 
   /**
    * log base 10
    */
-  logbase10: "{Log}",
+  "{Log}": "{Log}",
 
   /**
    * low power field
    */
-  lowpowerfield: "[LPF]",
+  "[LPF]": "[LPF]",
 
   /**
    * lumen
    */
-  lumen: "lm",
+  lm: "lm",
 
   /**
    * lumen square meter
    */
-  lumensquaremeter: "lm.m2",
+  "lm.m2": "lm.m2",
 
   /**
    * Lyme index value
    */
-  Lymeindexvalue: "{Lyme_index_value}",
+  "{Lyme_index_value}": "{Lyme_index_value}",
 
   /**
    * Mac Lagan unit
    */
-  MacLaganunit: "[mclg'U]",
+  "[mclg'U]": "[mclg'U]",
 
   /**
    * megasecond
    */
-  megasecond: "Ms",
+  Ms: "Ms",
 
   /**
    * microgram  per gram of feces
    */
-  microgrampergramoffeces: "ug/g{feces}",
+  "ug/g{feces}": "ug/g{feces}",
 
   /**
    * microgram fibrinogen equivalent unit per milliliter
    */
-  microgramfibrinogenequivalentunitpermilliliter: "ug{FEU}/mL",
+  "ug{FEU}/mL": "ug{FEU}/mL",
 
   /**
    * microgram per 100 gram
    */
-  microgramper100gram: "ug/(100.g)",
+  "ug/(100.g)": "ug/(100.g)",
 
   /**
    * microgram per cubic meter
    */
-  microgrampercubicmeter: "ug/m3",
+  "ug/m3": "ug/m3",
 
   /**
    * microgram per deciliter of red blood cells
    */
-  microgramperdeciliterofredbloodcells: "ug/dL{RBCs}",
+  "ug/dL{RBCs}": "ug/dL{RBCs}",
 
   /**
    * microgram per gram of dry tissue
    */
-  microgrampergramofdrytissue: "ug/g{dry_tissue}",
+  "ug/g{dry_tissue}": "ug/g{dry_tissue}",
 
   /**
    * microgram per gram of dry weight
    */
-  microgrampergramofdryweight: "ug/g{dry_wt}",
+  "ug/g{dry_wt}": "ug/g{dry_wt}",
 
   /**
    * microgram per gram of hair
    */
-  microgrampergramofhair: "ug/g{hair}",
+  "ug/g{hair}": "ug/g{hair}",
 
   /**
    * microgram per gram of hemoglobin
    */
-  microgrampergramofhemoglobin: "ug/g{Hb}",
+  "ug/g{Hb}": "ug/g{Hb}",
 
   /**
    * microgram per gram of tissue
    */
-  microgrampergramoftissue: "ug/g{tissue}",
+  "ug/g{tissue}": "ug/g{tissue}",
 
   /**
    * microgram per liter of red blood cells
    */
-  microgramperliterofredbloodcells: "ug/L{RBCs}",
+  "ug/L{RBCs}": "ug/L{RBCs}",
 
   /**
    * microgram per milliliter class
    */
-  microgrampermilliliterclass: "ug/mL{class}",
+  "ug/mL{class}": "ug/mL{class}",
 
   /**
    * microgram per milliliter equivalent
    */
-  microgrampermilliliterequivalent: "ug/mL{eqv}",
+  "ug/mL{eqv}": "ug/mL{eqv}",
 
   /**
    * microgram per millimole of creatinine
    */
-  microgrampermillimoleofcreatinine: "ug/mmol{creat}",
+  "ug/mmol{creat}": "ug/mmol{creat}",
 
   /**
    * microgram per specimen
    */
-  microgramperspecimen: "ug/{specimen}",
+  "ug/{specimen}": "ug/{specimen}",
 
   /**
    * microgram per square foot (international)
    */
-  microgrampersquarefootinternational: "ug/[sft_i]",
+  "ug/[sft_i]": "ug/[sft_i]",
 
   /**
    * micromole bone collagen equivalent per mole
    */
-  micromolebonecollagenequivalentpermole: "umol{BCE}/mol",
+  "umol{BCE}/mol": "umol{BCE}/mol",
 
   /**
    * micromole per 2 hour
    */
-  micromoleper2hour: "umol/(2.h)",
+  "umol/(2.h)": "umol/(2.h)",
 
   /**
    * micromole per 8 hour
    */
-  micromoleper8hour: "umol/(8.h)",
+  "umol/(8.h)": "umol/(8.h)",
 
   /**
    * micromole per deciliter of glomerular filtrate
    */
-  micromoleperdeciliterofglomerularfiltrate: "umol/dL{GF}",
+  "umol/dL{GF}": "umol/dL{GF}",
 
   /**
    * micromole per kilogram of feces
    */
-  micromoleperkilogramoffeces: "umol/kg{feces}",
+  "umol/kg{feces}": "umol/kg{feces}",
 
   /**
    * micromole per liter of red blood cells
    */
-  micromoleperliterofredbloodcells: "umol/L{RBCs}",
+  "umol/L{RBCs}": "umol/L{RBCs}",
 
   /**
    * micromole per micromole of creatinine
    */
-  micromolepermicromoleofcreatinine: "umol/umol{creat}",
+  "umol/umol{creat}": "umol/umol{creat}",
 
   /**
    * micromole per milligram of creatinine
    */
-  micromolepermilligramofcreatinine: "umol/mg{creat}",
+  "umol/mg{creat}": "umol/mg{creat}",
 
   /**
    * micromole per millimole of creatinine
    */
-  micromolepermillimoleofcreatinine: "umol/mmol{creat}",
+  "umol/mmol{creat}": "umol/mmol{creat}",
 
   /**
    * micromole per minute per gram of mucosa
    */
-  micromoleperminutepergramofmucosa: "umol/min/g{mucosa}",
+  "umol/min/g{mucosa}": "umol/min/g{mucosa}",
 
   /**
    * milli  enzyme unit per millimole of creatinine
    */
-  millienzymeunitpermillimoleofcreatinine: "mU/mmol{creat}",
+  "mU/mmol{creat}": "mU/mmol{creat}",
 
   /**
    * milli enzyme unit per gram of hemoglobin
    */
-  millienzymeunitpergramofhemoglobin: "mU/g{Hb}",
+  "mU/g{Hb}": "mU/g{Hb}",
 
   /**
    * milli enzyme unit per gram of protein
    */
-  millienzymeunitpergramofprotein: "mU/g{protein}",
+  "mU/g{protein}": "mU/g{protein}",
 
   /**
    * milli enzyme unit per milligram of creatinine
    */
-  millienzymeunitpermilligramofcreatinine: "mU/mg{creat}",
+  "mU/mg{creat}": "mU/mg{creat}",
 
   /**
    * millibar per liter per second
    */
-  millibarperliterpersecond: "mbar/L/s",
+  "mbar/L/s": "mbar/L/s",
 
   /**
    * milliequivalent per gram of creatinine
    */
-  milliequivalentpergramofcreatinine: "meq/g{creat}",
+  "meq/g{creat}": "meq/g{creat}",
 
   /**
    * milliequivalent per specimen
    */
-  milliequivalentperspecimen: "meq/{specimen}",
+  "meq/{specimen}": "meq/{specimen}",
 
   /**
    * milliequivalent per total volume
    */
-  milliequivalentpertotalvolume: "meq/{total_volume}",
+  "meq/{total_volume}": "meq/{total_volume}",
 
   /**
    * milligram fibrinogen equivalent unit per liter
    */
-  milligramfibrinogenequivalentunitperliter: "mg{FEU}/L",
+  "mg{FEU}/L": "mg{FEU}/L",
 
   /**
    * milligram per 6 hour
    */
-  milligramper6hour: "mg/(6.h)",
+  "mg/(6.h)": "mg/(6.h)",
 
   /**
    * milligram per collection
    */
-  milligrampercollection: "mg/{collection}",
+  "mg/{collection}": "mg/{collection}",
 
   /**
    * milligram per day per 1.73 square meter
    */
-  milligramperdayper173squaremeter: "mg/d/{1.73_m2}",
+  "mg/d/{1.73_m2}": "mg/d/{1.73_m2}",
 
   /**
    * milligram per deciliter of red blood cells
    */
-  milligramperdeciliterofredbloodcells: "mg/dL{RBCs}",
+  "mg/dL{RBCs}": "mg/dL{RBCs}",
 
   /**
    * milligram per gram of dry tissue
    */
-  milligrampergramofdrytissue: "mg/g{dry_tissue}",
+  "mg/g{dry_tissue}": "mg/g{dry_tissue}",
 
   /**
    * milligram per gram of feces
    */
-  milligrampergramoffeces: "mg/g{feces}",
+  "mg/g{feces}": "mg/g{feces}",
 
   /**
    * milligram per gram of tissue
    */
-  milligrampergramoftissue: "mg/g{tissue}",
+  "mg/g{tissue}": "mg/g{tissue}",
 
   /**
    * milligram per gram of wet tissue
    */
-  milligrampergramofwettissue: "mg/g{wet_tissue}",
+  "mg/g{wet_tissue}": "mg/g{wet_tissue}",
 
   /**
    * milligram per kilogram per 8 hour
    */
-  milligramperkilogramper8hour: "mg/kg/(8.h)",
+  "mg/kg/(8.h)": "mg/kg/(8.h)",
 
   /**
    * milligram per kilogram per hour
    */
-  milligramperkilogramperhour: "mg/kg/h",
+  "mg/kg/h": "mg/kg/h",
 
   /**
    * milligram per liter of red blood cells
    */
-  milligramperliterofredbloodcells: "mg/L{RBCs}",
+  "mg/L{RBCs}": "mg/L{RBCs}",
 
   /**
    * milligram per milligram of creatinine
    */
-  milligrampermilligramofcreatinine: "mg/mg{creat}",
+  "mg/mg{creat}": "mg/mg{creat}",
 
   /**
    * milligram per specimen
    */
-  milligramperspecimen: "mg/{specimen}",
+  "mg/{specimen}": "mg/{specimen}",
 
   /**
    * milligram per total output
    */
-  milligrampertotaloutput: "mg/{total_output}",
+  "mg/{total_output}": "mg/{total_output}",
 
   /**
    * milligram per total volume
    */
-  milligrampertotalvolume: "mg/{total_volume}",
+  "mg/{total_volume}": "mg/{total_volume}",
 
   /**
    * milliliter of fetal red blood cells
    */
-  milliliteroffetalredbloodcells: "mL{fetal_RBCs}",
+  "mL{fetal_RBCs}": "mL{fetal_RBCs}",
 
   /**
    * milliliter per 5 hour
    */
-  milliliterper5hour: "mL/(5.h)",
+  "mL/(5.h)": "mL/(5.h)",
 
   /**
    * milliliter per 6 hour
    */
-  milliliterper6hour: "mL/(6.h)",
+  "mL/(6.h)": "mL/(6.h)",
 
   /**
    * milliliter per heart beat
    */
-  milliliterperheartbeat: "mL/{beat}",
+  "mL/{beat}": "mL/{beat}",
 
   /**
    * milliliter per heart beat per  square meter
    */
-  milliliterperheartbeatpersquaremeter: "mL/{beat}/m2",
+  "mL/{beat}/m2": "mL/{beat}/m2",
 
   /**
    * millimole per 5 hour
    */
-  millimoleper5hour: "mmol/(5.h)",
+  "mmol/(5.h)": "mmol/(5.h)",
 
   /**
    * millimole per ejaculate
    */
-  millimoleperejaculate: "mmol/{ejaculate}",
+  "mmol/{ejaculate}": "mmol/{ejaculate}",
 
   /**
    * millimole per kilogram per 8 hour
    */
-  millimoleperkilogramper8hour: "mmol/kg/(8.h)",
+  "mmol/kg/(8.h)": "mmol/kg/(8.h)",
 
   /**
    * millimole per liter of red blood cells
    */
-  millimoleperliterofredbloodcells: "mmol/L{RBCs}",
+  "mmol/L{RBCs}": "mmol/L{RBCs}",
 
   /**
    * millimole per millimole of urea
    */
-  millimolepermillimoleofurea: "mmol/mmol{urea}",
+  "mmol/mmol{urea}": "mmol/mmol{urea}",
 
   /**
    * millimole per millmole of creatinine
    */
-  millimolepermillmoleofcreatinine: "mmol/mmol{creat}",
+  "mmol/mmol{creat}": "mmol/mmol{creat}",
 
   /**
    * millimole per specimen
    */
-  millimoleperspecimen: "mmol/{specimen}",
+  "mmol/{specimen}": "mmol/{specimen}",
 
   /**
    * millimole per total volume
    */
-  millimolepertotalvolume: "mmol/{total_vol}",
+  "mmol/{total_vol}": "mmol/{total_vol}",
 
   /**
    * million colony forming unit per liter
    */
-  millioncolonyformingunitperliter: "10*6.[CFU]/L",
+  "10*6.[CFU]/L": "10*6.[CFU]/L",
 
   /**
    * million international unit
    */
-  millioninternationalunit: "10*6.[IU]",
+  "10*6.[IU]": "10*6.[IU]",
 
   /**
    * million per 24 hour
    */
-  millionper24hour: "10*6/(24.h)",
+  "10*6/(24.h)": "10*6/(24.h)",
 
   /**
    * millipascal second
    */
-  millipascalsecond: "mPa.s",
+  "mPa.s": "mPa.s",
 
   /**
    * minidrop per minute
    */
-  minidropperminute: "{minidrop}/min",
+  "{minidrop}/min": "{minidrop}/min",
 
   /**
    * minidrop per second
    */
-  minidroppersecond: "{minidrop}/s",
+  "{minidrop}/s": "{minidrop}/s",
 
   /**
    * molecule per platelet
    */
-  moleculeperplatelet: "{molecule}/{platelet}",
+  "{molecule}/{platelet}": "{molecule}/{platelet}",
 
   /**
    * month-day-year
    */
-  monthdayyear: "{mm/dd/yyyy}",
+  "{mm/dd/yyyy}": "{mm/dd/yyyy}",
 
   /**
    * mutation
    */
-  mutation: "{mutation}",
+  "{mutation}": "{mutation}",
 
   /**
    * nanoenzyme unit per milliliter
    */
-  nanoenzymeunitpermilliliter: "nU/mL",
+  "nU/mL": "nU/mL",
 
   /**
    * nanoenzyme unit per red blood cell
    */
-  nanoenzymeunitperredbloodcell: "nU/{RBC}",
+  "nU/{RBC}": "nU/{RBC}",
 
   /**
    * nanogram fibrinogen equivalent unit per milliliter
    */
-  nanogramfibrinogenequivalentunitpermilliliter: "ng{FEU}/mL",
+  "ng{FEU}/mL": "ng{FEU}/mL",
 
   /**
    * nanogram per enzyme unit
    */
-  nanogramperenzymeunit: "ng/U",
+  "ng/U": "ng/U",
 
   /**
    * nanogram per milligram of creatinine
    */
-  nanogrampermilligramofcreatinine: "ng/mg{creat}",
+  "ng/mg{creat}": "ng/mg{creat}",
 
   /**
    * nanogram per milligram of protein
    */
-  nanogrampermilligramofprotein: "ng/mg{protein}",
+  "ng/mg{protein}": "ng/mg{protein}",
 
   /**
    * nanogram per milliliter of red blood cells
    */
-  nanogrampermilliliterofredbloodcells: "ng/mL{RBCs}",
+  "ng/mL{RBCs}": "ng/mL{RBCs}",
 
   /**
    * nanogram per million red blood cells
    */
-  nanogrampermillionredbloodcells: "ng/10*6{RBCs}",
+  "ng/10*6{RBCs}": "ng/10*6{RBCs}",
 
   /**
    * nanomole bone collagen equivalent
    */
-  nanomolebonecollagenequivalent: "nmol{BCE}",
+  "nmol{BCE}": "nmol{BCE}",
 
   /**
    * nanomole bone collagen equivalent per liter
    */
-  nanomolebonecollagenequivalentperliter: "nmol{BCE}/L",
+  "nmol{BCE}/L": "nmol{BCE}/L",
 
   /**
    * nanomole bone collagen equivalent per millimole of creatinine
    */
-  nanomolebonecollagenequivalentpermillimoleofcreatinine:
-    "nmol{BCE}/mmol{creat}",
+  "nmol{BCE}/mmol{creat}": "nmol{BCE}/mmol{creat}",
 
   /**
    * nanomole of 1/2 cystine per milligram of protein
    */
-  nanomoleof12cystinepermilligramofprotein: "nmol{1/2cys}/mg{protein}",
+  "nmol{1/2cys}/mg{protein}": "nmol{1/2cys}/mg{protein}",
 
   /**
    * nanomole of ATP
    */
-  nanomoleofATP: "nmol{ATP}",
+  "nmol{ATP}": "nmol{ATP}",
 
   /**
    * nanomole per deciliter of glomerular filtrate
    */
-  nanomoleperdeciliterofglomerularfiltrate: "nmol/dL{GF}",
+  "nmol/dL{GF}": "nmol/dL{GF}",
 
   /**
    * nanomole per milligram of creatinine
    */
-  nanomolepermilligramofcreatinine: "nmol/mg{creat}",
+  "nmol/mg{creat}": "nmol/mg{creat}",
 
   /**
    * nanomole per milligram of protein
    */
-  nanomolepermilligramofprotein: "nmol/mg{protein}",
+  "nmol/mg{protein}": "nmol/mg{protein}",
 
   /**
    * nanomole per milligram of protein per hour
    */
-  nanomolepermilligramofproteinperhour: "nmol/mg{protein}/h",
+  "nmol/mg{protein}/h": "nmol/mg{protein}/h",
 
   /**
    * nanomole per minute
    */
-  nanomoleperminute: "nmol/min",
+  "nmol/min": "nmol/min",
 
   /**
    * nanomole per minute per milligram of hemoglobin
    */
-  nanomoleperminutepermilligramofhemoglobin: "nmol/min/mg{Hb}",
+  "nmol/min/mg{Hb}": "nmol/min/mg{Hb}",
 
   /**
    * nanomole per minute per million cells
    */
-  nanomoleperminutepermillioncells: "nmol/min/10*6{cells}",
+  "nmol/min/10*6{cells}": "nmol/min/10*6{cells}",
 
   /**
    * number per high power field
    */
-  numberperhighpowerfield: "{#}/[HPF]",
+  "{#}/[HPF]": "{#}/[HPF]",
 
   /**
    * number per liter
    */
-  numberperliter: "{#}/L",
+  "{#}/L": "{#}/L",
 
   /**
    * number per low power field
    */
-  numberperlowpowerfield: "{#}/[LPF]",
+  "{#}/[LPF]": "{#}/[LPF]",
 
   /**
    * number per microliter
    */
-  numberpermicroliter: "{#}/uL",
+  "{#}/uL": "{#}/uL",
 
   /**
    * number per milliliter
    */
-  numberpermilliliter: "{#}/mL",
+  "{#}/mL": "{#}/mL",
 
   /**
    * number per minute
    */
-  numberperminute: "{#}/min",
+  "{#}/min": "{#}/min",
 
   /**
    * Ohm meter
    */
-  Ohmmeter: "Ohm.m",
+  "Ohm.m": "Ohm.m",
 
   /**
    * osmole
    */
-  osmole: "osm",
+  osm: "osm",
 
   /**
    * panbio unit
    */
-  panbiounit: "{Pan_Bio'U}",
+  "{Pan_Bio'U}": "{Pan_Bio'U}",
 
   /**
    * per 10 thousand red blood cells
    */
-  per10thousandredbloodcells: "/10*4{RBCs}",
+  "/10*4{RBCs}": "/10*4{RBCs}",
 
   /**
    * per cubic meter
    */
-  percubicmeter: "/m3",
+  "/m3": "/m3",
 
   /**
    * per entity
    */
-  perentity: "/{entity}",
+  "/{entity}": "/{entity}",
 
   /**
    * per gram of hemoglobin
    */
-  pergramofhemoglobin: "/g{Hb}",
+  "/g{Hb}": "/g{Hb}",
 
   /**
    * per gram of total nitrogen
    */
-  pergramoftotalnitrogen: "/g{tot_nit}",
+  "/g{tot_nit}": "/g{tot_nit}",
 
   /**
    * per gram of total protein
    */
-  pergramoftotalprotein: "/g{tot_prot}",
+  "/g{tot_prot}": "/g{tot_prot}",
 
   /**
    * per gram of wet tissue
    */
-  pergramofwettissue: "/g{wet_tis}",
+  "/g{wet_tis}": "/g{wet_tis}",
 
   /**
    * per international unit
    */
-  perinternationalunit: "/[IU]",
+  "/[IU]": "/[IU]",
 
   /**
    * per kilogram of body weight
    */
-  perkilogramofbodyweight: "/kg{body_wt}",
+  "/kg{body_wt}": "/kg{body_wt}",
 
   /**
    * per millimeter
    */
-  permillimeter: "/mm",
+  "/mm": "/mm",
 
   /**
    * per millimole of creatinine
    */
-  permillimoleofcreatinine: "/mmol{creat}",
+  "/mmol{creat}": "/mmol{creat}",
 
   /**
    * per oil immersion field
    */
-  peroilimmersionfield: "/{OIF}",
+  "/{OIF}": "/{OIF}",
 
   /**
    * per thousand
    */
-  perthousand: "/10*3",
+  "/10*3": "/10*3",
 
   /**
    * per thousand red blood cells
    */
-  perthousandredbloodcells: "/10*3.{RBCs}",
+  "/10*3.{RBCs}": "/10*3.{RBCs}",
 
   /**
    * per trillion red blood cells
    */
-  pertrillionredbloodcells: "/10*12{RBCs}",
+  "/10*12{RBCs}": "/10*12{RBCs}",
 
   /**
    * percent  loss of acetylcholine receptor
    */
-  percentlossofacetylcholinereceptor: "%{loss_AChR}",
+  "%{loss_AChR}": "%{loss_AChR}",
 
   /**
    * percent  penetration
    */
-  percentpenetration: "%{penetration}",
+  "%{penetration}": "%{penetration}",
 
   /**
    * percent abnormal
    */
-  percentabnormal: "%{abnormal}",
+  "%{abnormal}": "%{abnormal}",
 
   /**
    * percent activity
    */
-  percentactivity: "%{activity}",
+  "%{activity}": "%{activity}",
 
   /**
    * percent aggregation
    */
-  percentaggregation: "%{aggregation}",
+  "%{aggregation}": "%{aggregation}",
 
   /**
    * percent at 60 minute
    */
-  percentat60minute: "%{at_60_min}",
+  "%{at_60_min}": "%{at_60_min}",
 
   /**
    * percent basal activity
    */
-  percentbasalactivity: "%{basal_activity}",
+  "%{basal_activity}": "%{basal_activity}",
 
   /**
    * percent binding
    */
-  percentbinding: "%{binding}",
+  "%{binding}": "%{binding}",
 
   /**
    * percent blockade
    */
-  percentblockade: "%{blockade}",
+  "%{blockade}": "%{blockade}",
 
   /**
    * percent blocked
    */
-  percentblocked: "%{blocked}",
+  "%{blocked}": "%{blocked}",
 
   /**
    * percent bound
    */
-  percentbound: "%{bound}",
+  "%{bound}": "%{bound}",
 
   /**
    * percent breakdown
    */
-  percentbreakdown: "%{breakdown}",
+  "%{breakdown}": "%{breakdown}",
 
   /**
    * percent deficient
    */
-  percentdeficient: "%{deficient}",
+  "%{deficient}": "%{deficient}",
 
   /**
    * percent dose
    */
-  percentdose: "%{dose}",
+  "%{dose}": "%{dose}",
 
   /**
    * percent excretion
    */
-  percentexcretion: "%{excretion}",
+  "%{excretion}": "%{excretion}",
 
   /**
    * percent hemoglobin
    */
-  percenthemoglobin: "%{Hb}",
+  "%{Hb}": "%{Hb}",
 
   /**
    * percent hemolysis
    */
-  percenthemolysis: "%{hemolysis}",
+  "%{hemolysis}": "%{hemolysis}",
 
   /**
    * percent index
    */
-  percentindex: "%{index}",
+  "%{index}": "%{index}",
 
   /**
    * percent inhibition
    */
-  percentinhibition: "%{inhibition}",
+  "%{inhibition}": "%{inhibition}",
 
   /**
    * percent loss
    */
-  percentloss: "%{loss}",
+  "%{loss}": "%{loss}",
 
   /**
    * percent lysis
    */
-  percentlysis: "%{lysis}",
+  "%{lysis}": "%{lysis}",
 
   /**
    * percent normal
    */
-  percentnormal: "%{normal}",
+  "%{normal}": "%{normal}",
 
   /**
    * percent normal pooled plasma
    */
-  percentnormalpooledplasma: "%{normal_pooled_plasma}",
+  "%{normal_pooled_plasma}": "%{normal_pooled_plasma}",
 
   /**
    * percent of bacteria
    */
-  percentofbacteria: "%{bacteria}",
+  "%{bacteria}": "%{bacteria}",
 
   /**
    * percent of baseline
    */
-  percentofbaseline: "%{baseline}",
+  "%{baseline}": "%{baseline}",
 
   /**
    * percent of cells
    */
-  percentofcells: "%{cells}",
+  "%{cells}": "%{cells}",
 
   /**
    * percent of red blood cells
    */
-  percentofredbloodcells: "%{RBCs}",
+  "%{RBCs}": "%{RBCs}",
 
   /**
    * percent of white blood cells
    */
-  percentofwhitebloodcells: "%{WBCs}",
+  "%{WBCs}": "%{WBCs}",
 
   /**
    * percent positive
    */
-  percentpositive: "%{positive}",
+  "%{positive}": "%{positive}",
 
   /**
    * percent reactive
    */
-  percentreactive: "%{reactive}",
+  "%{reactive}": "%{reactive}",
 
   /**
    * percent recovery
    */
-  percentrecovery: "%{recovery}",
+  "%{recovery}": "%{recovery}",
 
   /**
    * percent reference
    */
-  percentreference: "%{reference}",
+  "%{reference}": "%{reference}",
 
   /**
    * percent residual
    */
-  percentresidual: "%{residual}",
+  "%{residual}": "%{residual}",
 
   /**
    * percent saturation
    */
-  percentsaturation: "%{saturation}",
+  "%{saturation}": "%{saturation}",
 
   /**
    * percent total
    */
-  percenttotal: "%{total}",
+  "%{total}": "%{total}",
 
   /**
    * percent uptake
    */
-  percentuptake: "%{uptake}",
+  "%{uptake}": "%{uptake}",
 
   /**
    * percent viable
    */
-  percentviable: "%{viable}",
+  "%{viable}": "%{viable}",
 
   /**
    * percentile
    */
-  percentile: "{percentile}",
+  "{percentile}": "{percentile}",
 
   /**
    * phenotype
    */
-  phenotype: "{phenotype}",
+  "{phenotype}": "{phenotype}",
 
   /**
    * picoampere
    */
-  picoampere: "pA",
+  pA: "pA",
 
   /**
    * picogram per cell
    */
-  picogrampercell: "pg/{cell}",
+  "pg/{cell}": "pg/{cell}",
 
   /**
    * picogram per milligram of creatinine
    */
-  picogrampermilligramofcreatinine: "pg/mg{creat}",
+  "pg/mg{creat}": "pg/mg{creat}",
 
   /**
    * picogram per red blood cell
    */
-  picogramperredbloodcell: "pg/{RBC}",
+  "pg/{RBC}": "pg/{RBC}",
 
   /**
    * picomole per 24 hour
    */
-  picomoleper24hour: "pmol/(24.h)",
+  "pmol/(24.h)": "pmol/(24.h)",
 
   /**
    * picomole per red blood cell
    */
-  picomoleperredbloodcell: "pmol/{RBC}",
+  "pmol/{RBC}": "pmol/{RBC}",
 
   /**
    * pint
    */
-  pint: "[pt_us]",
+  "[pt_us]": "[pt_us]",
 
   /**
    * relative percent
    */
-  relativepercent: "%{relative}",
+  "%{relative}": "%{relative}",
 
   /**
    * relative saturation
    */
-  relativesaturation: "{relative_saturation}",
+  "{relative_saturation}": "{relative_saturation}",
 
   /**
    * rubella virus
    */
-  rubellavirus: "{Rubella_virus}",
+  "{Rubella_virus}": "{Rubella_virus}",
 
   /**
    * saturation
    */
-  saturation: "{saturation}",
+  "{saturation}": "{saturation}",
 
   /**
    * second per control
    */
-  secondpercontrol: "s/{control}",
+  "s/{control}": "s/{control}",
 
   /**
    * Siemens
    */
-  Siemens: "S",
+  S: "S",
 
   /**
    * Sievert
    */
-  Sievert: "Sv",
+  Sv: "Sv",
 
   /**
    * signal to cutoff ratio
    */
-  signaltocutoffratio: "{s_co_ratio}",
+  "{s_co_ratio}": "{s_co_ratio}",
 
   /**
    * standard deviation
    */
-  standarddeviation: "{STDV}",
+  "{STDV}": "{STDV}",
 
   /**
    * Tesla
    */
-  Tesla: "T",
+  T: "T",
 
   /**
    * thousand copies per milliliter
    */
-  thousandcopiespermilliliter: "10*3{copies}/mL",
+  "10*3{copies}/mL": "10*3{copies}/mL",
 
   /**
    * thousand red blood cells
    */
-  thousandredbloodcells: "10*3{RBCs}",
+  "10*3{RBCs}": "10*3{RBCs}",
 
   /**
    * thyroid-stimulating immunoglobulin index
    */
-  thyroidstimulatingimmunoglobulinindex: "{TSI_index}",
+  "{TSI_index}": "{TSI_index}",
 
   /**
    * Weber
    */
-  Weber: "Wb",
+  Wb: "Wb",
 
   /**
    * white blood cells
    */
-  whitebloodcells: "{WBCs}",
+  "{WBCs}": "{WBCs}",
 
   /**
    * 1*
    */
-  One: "1",
+  "1": "1",
 
   /**
    * minute
    */
-  minute: "'",
+  "'": "'",
 
   /**
    * second
    */
-  second: "''",
+  "''": "''",
 
   /**
    * percent of slope
    */
-  percentofslope: "%[slope]",
+  "%[slope]": "%[slope]",
 
   /**
    * PercentBound
    */
-  PercentBound: "%{Bound}",
+  "%{Bound}": "%{Bound}",
 
   /**
    * Per100Spermatozoa
    */
-  Per100Spermatozoa: "/100{Spermatozoa}",
+  "/100{Spermatozoa}": "/100{Spermatozoa}",
 
   /**
    * PerGramHemoglobin
    */
-  PerGramHemoglobin: "/g{HGB}",
+  "/g{HGB}": "/g{HGB}",
 
   /**
    * acre
    */
-  acre: "[acr_br]",
+  "[acr_br]": "[acr_br]",
 
   /**
    * acre
    */
-  acre: "[acr_us]",
+  "[acr_us]": "[acr_us]",
 
   /**
    * Amb a 1 units
    */
-  Amba1units: "[Amb'a'1'U]",
+  "[Amb'a'1'U]": "[Amb'a'1'U]",
 
   /**
    * barrel
    */
-  barrel: "[bbl_us]",
+  "[bbl_us]": "[bbl_us]",
 
   /**
    * board foot
    */
-  boardfoot: "[bf_i]",
+  "[bf_i]": "[bf_i]",
 
   /**
    * British thermal unit
    */
-  Britishthermalunit: "[Btu]",
+  "[Btu]": "[Btu]",
 
   /**
    * British thermal unit at 39 °F
    */
-  Britishthermalunitat39F: "[Btu_39]",
+  "[Btu_39]": "[Btu_39]",
 
   /**
    * British thermal unit at 59 °F
    */
-  Britishthermalunitat59F: "[Btu_59]",
+  "[Btu_59]": "[Btu_59]",
 
   /**
    * British thermal unit at 60 °F
    */
-  Britishthermalunitat60F: "[Btu_60]",
+  "[Btu_60]": "[Btu_60]",
 
   /**
    * international table British thermal unit
    */
-  internationaltableBritishthermalunit: "[Btu_IT]",
+  "[Btu_IT]": "[Btu_IT]",
 
   /**
    * mean British thermal unit
    */
-  meanBritishthermalunit: "[Btu_m]",
+  "[Btu_m]": "[Btu_m]",
 
   /**
    * thermochemical British thermal unit
    */
-  thermochemicalBritishthermalunit: "[Btu_th]",
+  "[Btu_th]": "[Btu_th]",
 
   /**
    * bushel
    */
-  bushel: "[bu_br]",
+  "[bu_br]": "[bu_br]",
 
   /**
    * bushel
    */
-  bushel: "[bu_us]",
+  "[bu_us]": "[bu_us]",
 
   /**
    * velocity of light
    */
-  velocityoflight: "[c]",
+  "[c]": "[c]",
 
   /**
    * nutrition label Calories
    */
-  nutritionlabelCalories: "[Cal]",
+  "[Cal]": "[Cal]",
 
   /**
    * carat of gold alloys
    */
-  caratofgoldalloys: "[car_Au]",
+  "[car_Au]": "[car_Au]",
 
   /**
    * metric carat
    */
-  metriccarat: "[car_m]",
+  "[car_m]": "[car_m]",
 
   /**
    * CELL CULTURE INFECTIOUS DOSE 50%
    */
-  CELLCULTUREINFECTIOUSDOSE50: "[CCID_50]",
+  "[CCID_50]": "[CCID_50]",
 
   /**
    * cubic foot
    */
-  cubicfoot: "[cft_i]",
+  "[cft_i]": "[cft_i]",
 
   /**
    * Gunter's chain
    */
-  Gunterschain: "[ch_br]",
+  "[ch_br]": "[ch_br]",
 
   /**
    * Gunter's chain Surveyor's chain
    */
-  GunterschainSurveyorschain: "[ch_us]",
+  "[ch_us]": "[ch_us]",
 
   /**
    * cicero Didot's pica
    */
-  ciceroDidotspica: "[cicero]",
+  "[cicero]": "[cicero]",
 
   /**
    * circular mil
    */
-  circularmil: "[cml_i]",
+  "[cml_i]": "[cml_i]",
 
   /**
    * cord
    */
-  cord: "[cr_i]",
+  "[cr_i]": "[cr_i]",
 
   /**
    * cord
    */
-  cord: "[crd_us]",
+  "[crd_us]": "[crd_us]",
 
   /**
    * cubic yard
    */
-  cubicyard: "[cyd_i]",
+  "[cyd_i]": "[cyd_i]",
 
   /**
    * D-ANTIGEN UNITS
    */
-  DANTIGENUNITS: "[D'ag'U]",
+  "[D'ag'U]": "[D'ag'U]",
 
   /**
    * didot Didot's point
    */
-  didotDidotspoint: "[didot]",
+  "[didot]": "[didot]",
 
   /**
    * diopter
    */
-  diopter: "[diop]",
+  "[diop]": "[diop]",
 
   /**
    * dry pint
    */
-  drypint: "[dpt_us]",
+  "[dpt_us]": "[dpt_us]",
 
   /**
    * dry quart
    */
-  dryquart: "[dqt_us]",
+  "[dqt_us]": "[dqt_us]",
 
   /**
    * dram drachm
    */
-  dramdrachm: "[dr_ap]",
+  "[dr_ap]": "[dr_ap]",
 
   /**
    * Dye unit
    */
-  Dyeunit: "[dye'U]",
+  "[dye'U]": "[dye'U]",
 
   /**
    * elementary charge
    */
-  elementarycharge: "[e]",
+  "[e]": "[e]",
 
   /**
    * permittivity of vacuum
    */
-  permittivityofvacuum: "[eps_0]",
+  "[eps_0]": "[eps_0]",
 
   /**
    * fluid dram
    */
-  fluiddram: "[fdr_br]",
+  "[fdr_br]": "[fdr_br]",
 
   /**
    * FOCUS-FORMING UNITS
    */
-  FOCUSFORMINGUNITS: "[FFU]",
+  "[FFU]": "[FFU]",
 
   /**
    * foot
    */
-  foot: "[ft_br]",
+  "[ft_br]": "[ft_br]",
 
   /**
    * foot
    */
-  foot: "[ft_us]",
+  "[ft_us]": "[ft_us]",
 
   /**
    * fathom
    */
-  fathom: "[fth_br]",
+  "[fth_br]": "[fth_br]",
 
   /**
    * fathom
    */
-  fathom: "[fth_us]",
+  "[fth_us]": "[fth_us]",
 
   /**
    * furlong
    */
-  furlong: "[fur_us]",
+  "[fur_us]": "[fur_us]",
 
   /**
    * Newtonian constant of gravitation
    */
-  Newtonianconstantofgravitation: "[G]",
+  "[G]": "[G]",
 
   /**
    * historical winchester gallon
    */
-  historicalwinchestergallon: "[gal_wi]",
+  "[gal_wi]": "[gal_wi]",
 
   /**
    * gill
    */
-  gill: "[gil_br]",
+  "[gil_br]": "[gil_br]",
 
   /**
    * gill
    */
-  gill: "[gil_us]",
+  "[gil_us]": "[gil_us]",
 
   /**
    * Planck constant
    */
-  Planckconstant: "[h]",
+  "[h]": "[h]",
 
   /**
    * hand
    */
-  hand: "[hd_i]",
+  "[hd_i]": "[hd_i]",
 
   /**
    * Hounsfield unit
    */
-  Hounsfieldunit: "[hnsf'U]",
+  "[hnsf'U]": "[hnsf'U]",
 
   /**
    * horsepower
    */
-  horsepower: "[HP]",
+  "[HP]": "[HP]",
 
   /**
    * HOMEOPATHIC POTENCY OF CENTESIMAL SERIES
    */
-  HOMEOPATHICPOTENCYOFCENTESIMALSERIES: "[hp_C]",
+  "[hp_C]": "[hp_C]",
 
   /**
    * HOMEOPATHIC POTENCY OF MILLESIMAL SERIES
    */
-  HOMEOPATHICPOTENCYOFMILLESIMALSERIES: "[hp_M]",
+  "[hp_M]": "[hp_M]",
 
   /**
    * HOMEOPATHIC POTENCY OF QUINTAMILLESIMAL SERIES
    */
-  HOMEOPATHICPOTENCYOFQUINTAMILLESIMALSERIES: "[hp_Q]",
+  "[hp_Q]": "[hp_Q]",
 
   /**
    * HOMEOPATHIC POTENCY OF DECIMAL SERIES
    */
-  HOMEOPATHICPOTENCYOFDECIMALSERIES: "[hp_X]",
+  "[hp_X]": "[hp_X]",
 
   /**
    * inch
    */
-  inch: "[in_br]",
+  "[in_br]": "[in_br]",
 
   /**
    * inch of mercury column
    */
-  inchofmercurycolumn: "[in_i'Hg]",
+  "[in_i'Hg]": "[in_i'Hg]",
 
   /**
    * inch
    */
-  inch: "[in_us]",
+  "[in_us]": "[in_us]",
 
   /**
    * InternationalUnitsPerDeciLiter
    */
-  InternationalUnitsPerDeciLiter: "[iU]/dL",
+  "[iU]/dL": "[iU]/dL",
 
   /**
    * InternationalUnitsPerGram
    */
-  InternationalUnitsPerGram: "[iU]/g",
+  "[iU]/g": "[iU]/g",
 
   /**
    * InternationalUnitsPerKilogram
    */
-  InternationalUnitsPerKilogram: "[iU]/kg",
+  "[iU]/kg": "[iU]/kg",
 
   /**
    * InternationalUnitsPerLiter
    */
-  InternationalUnitsPerLiter: "[iU]/L",
+  "[iU]/L": "[iU]/L",
 
   /**
    * InternationalUnitsPerMilliLiter
    */
-  InternationalUnitsPerMilliLiter: "[iU]/mL",
+  "[iU]/mL": "[iU]/mL",
 
   /**
    * Boltzmann constant
    */
-  Boltzmannconstant: "[k]",
+  "[k]": "[k]",
 
   /**
    * knot
    */
-  knot: "[kn_br]",
+  "[kn_br]": "[kn_br]",
 
   /**
    * knot
    */
-  knot: "[kn_i]",
+  "[kn_i]": "[kn_i]",
 
   /**
    * Kunkel unit
    */
-  Kunkelunit: "[knk'U]",
+  "[knk'U]": "[knk'U]",
 
   /**
    * pound
    */
-  pound: "[lb_ap]",
+  "[lb_ap]": "[lb_ap]",
 
   /**
    * pound
    */
-  pound: "[lb_tr]",
+  "[lb_tr]": "[lb_tr]",
 
   /**
    * pound force
    */
-  poundforce: "[lbf_av]",
+  "[lbf_av]": "[lbf_av]",
 
   /**
    * long hunderdweight British hundredweight
    */
-  longhunderdweightBritishhundredweight: "[lcwt_av]",
+  "[lcwt_av]": "[lcwt_av]",
 
   /**
    * LIMIT OF FLOCCULATION
    */
-  LIMITOFFLOCCULATION: "[Lf]",
+  "[Lf]": "[Lf]",
 
   /**
    * ligne French line
    */
-  ligneFrenchline: "[ligne]",
+  "[ligne]": "[ligne]",
 
   /**
    * link for Gunter's chain
    */
-  linkforGunterschain: "[lk_br]",
+  "[lk_br]": "[lk_br]",
 
   /**
    * link for Gunter's chain
    */
-  linkforGunterschain: "[lk_us]",
+  "[lk_us]": "[lk_us]",
 
   /**
    * line
    */
-  line: "[lne]",
+  "[lne]": "[lne]",
 
   /**
    * long ton British ton
    */
-  longtonBritishton: "[lton_av]",
+  "[lton_av]": "[lton_av]",
 
   /**
    * light-year
    */
-  lightyear: "[ly]",
+  "[ly]": "[ly]",
 
   /**
    * electron mass
    */
-  electronmass: "[m_e]",
+  "[m_e]": "[m_e]",
 
   /**
    * proton mass
    */
-  protonmass: "[m_p]",
+  "[m_p]": "[m_p]",
 
   /**
    * mesh
    */
-  mesh: "[mesh_i]",
+  "[mesh_i]": "[mesh_i]",
 
   /**
    * metabolic equivalent
    */
-  metabolicequivalent: "[MET]",
+  "[MET]": "[MET]",
 
   /**
    * mile
    */
-  mile: "[mi_br]",
+  "[mi_br]": "[mi_br]",
 
   /**
    * mil
    */
-  mil: "[mil_i]",
+  "[mil_i]": "[mil_i]",
 
   /**
    * mil
    */
-  mil: "[mil_us]",
+  "[mil_us]": "[mil_us]",
 
   /**
    * minim
    */
-  minim: "[min_br]",
+  "[min_br]": "[min_br]",
 
   /**
    * permeability of vacuum
    */
-  permeabilityofvacuum: "[mu_0]",
+  "[mu_0]": "[mu_0]",
 
   /**
    * nautical mile
    */
-  nauticalmile: "[nmi_br]",
+  "[nmi_br]": "[nmi_br]",
 
   /**
    * ounce (US and British)
    */
-  ounceUSandBritish: "[oz_ap]",
+  "[oz_ap]": "[oz_ap]",
 
   /**
    * pace
    */
-  pace: "[pc_br]",
+  "[pc_br]": "[pc_br]",
 
   /**
    * pica
    */
-  pica: "[pca]",
+  "[pca]": "[pca]",
 
   /**
    * Printer's pica
    */
-  Printerspica: "[pca_pr]",
+  "[pca_pr]": "[pca_pr]",
 
   /**
    * prism diopter
    */
-  prismdiopter: "[p'diop]",
+  "[p'diop]": "[p'diop]",
 
   /**
    * PLAQUE-FORMING UNITS
    */
-  PLAQUEFORMINGUNITS: "[PFU]",
+  "[PFU]": "[PFU]",
 
   /**
    * the number pi
    */
-  thenumberpi: "[pi]",
+  "[pi]": "[pi]",
 
   /**
    * pied French foot
    */
-  piedFrenchfoot: "[pied]",
+  "[pied]": "[pied]",
 
   /**
    * peck
    */
-  peck: "[pk_br]",
+  "[pk_br]": "[pk_br]",
 
   /**
    * peck
    */
-  peck: "[pk_us]",
+  "[pk_us]": "[pk_us]",
 
   /**
    * point
    */
-  point: "[pnt]",
+  "[pnt]": "[pnt]",
 
   /**
    * Printer's point
    */
-  Printerspoint: "[pnt_pr]",
+  "[pnt_pr]": "[pnt_pr]",
 
   /**
    * PROTEIN NITROGEN UNITS
    */
-  PROTEINNITROGENUNITS: "[PNU]",
+  "[PNU]": "[PNU]",
 
   /**
    * pouce French inch
    */
-  pouceFrenchinch: "[pouce]",
+  "[pouce]": "[pouce]",
 
   /**
    * peripheral vascular resistance unit
    */
-  peripheralvascularresistanceunit: "[PRU]",
+  "[PRU]": "[PRU]",
 
   /**
    * pennyweight
    */
-  pennyweight: "[pwt_tr]",
+  "[pwt_tr]": "[pwt_tr]",
 
   /**
    * Ramden's chain Engineer's chain
    */
-  RamdenschainEngineerschain: "[rch_us]",
+  "[rch_us]": "[rch_us]",
 
   /**
    * rod
    */
-  rod: "[rd_br]",
+  "[rd_br]": "[rd_br]",
 
   /**
    * rod
    */
-  rod: "[rd_us]",
+  "[rd_us]": "[rd_us]",
 
   /**
    * link for Ramden's chain
    */
-  linkforRamdenschain: "[rlk_us]",
+  "[rlk_us]": "[rlk_us]",
 
   /**
    * Svedberg unit
    */
-  Svedbergunit: "[S]",
+  "[S]": "[S]",
 
   /**
    * scruple
    */
-  scruple: "[sc_ap]",
+  "[sc_ap]": "[sc_ap]",
 
   /**
    * section
    */
-  section: "[sct]",
+  "[sct]": "[sct]",
 
   /**
    * short hundredweight U.S. hundredweight
    */
-  shorthundredweightUShundredweight: "[scwt_av]",
+  "[scwt_av]": "[scwt_av]",
 
   /**
    * Somogyi unit
    */
-  Somogyiunit: "[smgy'U]",
+  "[smgy'U]": "[smgy'U]",
 
   /**
    * square mile
    */
-  squaremile: "[smi_us]",
+  "[smi_us]": "[smi_us]",
 
   /**
    * Smoot
    */
-  Smoot: "[smoot]",
+  "[smoot]": "[smoot]",
 
   /**
    * square rod
    */
-  squarerod: "[srd_us]",
+  "[srd_us]": "[srd_us]",
 
   /**
    * stone British stone
    */
-  stoneBritishstone: "[stone_av]",
+  "[stone_av]": "[stone_av]",
 
   /**
    * TISSUE CULTURE INFECTIOUS DOSE 50%
    */
-  TISSUECULTUREINFECTIOUSDOSE50: "[TCID_50]",
+  "[TCID_50]": "[TCID_50]",
 
   /**
    * township
    */
-  township: "[twp]",
+  "[twp]": "[twp]",
 
   /**
    * UNITED STATES PHARMACOPEIA UNIT
    */
-  UNITEDSTATESPHARMACOPEIAUNIT: "[USP'U]",
+  "[USP'U]": "[USP'U]",
 
   /**
    * yard
    */
-  yard: "[yd_br]",
+  "[yd_br]": "[yd_br]",
 
   /**
    * yard
    */
-  yard: "[yd_us]",
+  "[yd_us]": "[yd_us]",
 
   /**
    * CellsPerMicroLiter
    */
-  CellsPerMicroLiter: "{Cells}/uL",
+  "{Cells}/uL": "{Cells}/uL",
 
   /**
    * CopiesPerMilliLiter
    */
-  CopiesPerMilliLiter: "{Copies}/mL",
+  "{Copies}/mL": "{Copies}/mL",
 
   /**
    * crossing threshold
    */
-  crossingthreshold: "{Ct}",
+  "{Ct}": "{Ct}",
 
   /**
    * EhrlichUnitsPerDeciLiter
    */
-  EhrlichUnitsPerDeciLiter: "{Ehrlich_U}/dL",
+  "{Ehrlich_U}/dL": "{Ehrlich_U}/dL",
 
   /**
    * EhrlichUnitsPerDeciLiter [Arbitrary Concentration Units]
    */
-  EhrlichUnitsPerDeciLiterArbitraryConcentrationUnits: "{EhrlichU}/dL",
+  "{EhrlichU}/dL": "{EhrlichU}/dL",
 
   /**
    * ElisaUnitsPerMilliLiter
    */
-  ElisaUnitsPerMilliLiter: "{Elisa_U}/mL",
+  "{Elisa_U}/mL": "{Elisa_U}/mL",
 
   /**
    * ElisaUnitsPerMilliLiter [Arbitrary Concentration Units]
    */
-  ElisaUnitsPerMilliLiterArbitraryConcentrationUnits: "{ElisaU}/mL",
+  "{ElisaU}/mL": "{ElisaU}/mL",
 
   /**
    * HOMEOPATHIC POTENCY OF CENTESIMAL KORSAKOVIAN SERIES
    */
-  HOMEOPATHICPOTENCYOFCENTESIMALKORSAKOVIANSERIES: "{kp_C}",
+  "{kp_C}": "{kp_C}",
 
   /**
    * red blood cell count
    */
-  redbloodcellcount: "{rbc}",
+  "{rbc}": "{rbc}",
 
   /**
    * SpermatozoaPerMilliLiter
    */
-  SpermatozoaPerMilliLiter: "{Spermatozoa}/mL",
+  "{Spermatozoa}/mL": "{Spermatozoa}/mL",
 
   /**
    * tablets
    */
-  tablets: "{tbl}",
+  "{tbl}": "{tbl}",
 
   /**
    * particles total count
    */
-  particlestotalcount: "{tot}",
+  "{tot}": "{tot}",
 
   /**
    * the number ten for arbitrary powers
    */
-  thenumbertenforarbitrarypowers: "10*",
+  "10*": "10*",
 
   /**
    * the number ten for arbitrary powers
    */
-  thenumbertenforarbitrarypowers: "10^",
+  "10^": "10^",
 
   /**
    * mean Gregorian year
    */
-  meanGregorianyear: "a_g",
+  a_g: "a_g",
 
   /**
    * mean Julian year
    */
-  meanJulianyear: "a_j",
+  a_j: "a_j",
 
   /**
    * tropical year
    */
-  tropicalyear: "a_t",
+  a_t: "a_t",
 
   /**
    * Ångström
    */
-  ngstrm: "Ao",
+  Ao: "Ao",
 
   /**
    * are
    */
-  are: "ar",
+  ar: "ar",
 
   /**
    * astronomic unit
    */
-  astronomicunit: "AU",
+  AU: "AU",
 
   /**
    * barn
    */
-  barn: "b",
+  b: "b",
 
   /**
    * bel
    */
-  bel: "B",
+  B: "B",
 
   /**
    * bel kilowatt
    */
-  belkilowatt: "B[kW]",
+  "B[kW]": "B[kW]",
 
   /**
    * bel millivolt
    */
-  belmillivolt: "B[mV]",
+  "B[mV]": "B[mV]",
 
   /**
    * bel sound pressure
    */
-  belsoundpressure: "B[SPL]",
+  "B[SPL]": "B[SPL]",
 
   /**
    * bel microvolt
    */
-  belmicrovolt: "B[uV]",
+  "B[uV]": "B[uV]",
 
   /**
    * bel volt
    */
-  belvolt: "B[V]",
+  "B[V]": "B[V]",
 
   /**
    * bel watt
    */
-  belwatt: "B[W]",
+  "B[W]": "B[W]",
 
   /**
    * baud
    */
-  baud: "Bd",
+  Bd: "Bd",
 
   /**
    * Biot
    */
-  Biot: "Bi",
+  Bi: "Bi",
 
   /**
    * bit
@@ -6535,77 +6531,77 @@ export const UnitsOfMeasureCaseSensitiveCode = {
   /**
    * bit
    */
-  bit: "bit_s",
+  bit_s: "bit_s",
 
   /**
    * byte
    */
-  byte: "By",
+  By: "By",
 
   /**
    * Coulomb
    */
-  Coulomb: "C",
+  C: "C",
 
   /**
    * calorie at 15 °C
    */
-  calorieat15C: "cal_[15]",
+  "cal_[15]": "cal_[15]",
 
   /**
    * calorie at 20 °C
    */
-  calorieat20C: "cal_[20]",
+  "cal_[20]": "cal_[20]",
 
   /**
    * international table calorie
    */
-  internationaltablecalorie: "cal_IT",
+  cal_IT: "cal_IT",
 
   /**
    * mean calorie
    */
-  meancalorie: "cal_m",
+  cal_m: "cal_m",
 
   /**
    * thermochemical calorie
    */
-  thermochemicalcalorie: "cal_th",
+  cal_th: "cal_th",
 
   /**
    * candela
    */
-  candela: "cd",
+  cd: "cd",
 
   /**
    * CURIE
    */
-  CURIE: "Ci",
+  Ci: "Ci",
 
   /**
    * circle
    */
-  circle: "circ",
+  circ: "circ",
 
   /**
    * dyne
    */
-  dyne: "dyn",
+  dyn: "dyn",
 
   /**
    * Gauss
    */
-  Gauss: "G",
+  G: "G",
 
   /**
    * gram percent
    */
-  grampercent: "g%",
+  "g%": "g%",
 
   /**
    * gram meter per heartbeat
    */
-  grammeterperheartbeat: "g.m/{H.B.}",
+  "g.m/{H.B.}": "g.m/{H.B.}",
 
   /**
    * Gal
@@ -6615,67 +6611,67 @@ export const UnitsOfMeasureCaseSensitiveCode = {
   /**
    * Gilbert
    */
-  Gilbert: "Gb",
+  Gb: "Gb",
 
   /**
    * gram-force
    */
-  gramforce: "gf",
+  gf: "gf",
 
   /**
    * gon grade
    */
-  gongrade: "gon",
+  gon: "gon",
 
   /**
    * KiloInternationalUnitsPerMilliLiter
    */
-  KiloInternationalUnitsPerMilliLiter: "k[iU]/mL",
+  "k[iU]/mL": "k[iU]/mL",
 
   /**
    * kilogram of wet tissue
    */
-  kilogramofwettissue: "kg{wet'tis}",
+  "kg{wet'tis}": "kg{wet'tis}",
 
   /**
    * Kayser
    */
-  Kayser: "Ky",
+  Ky: "Ky",
 
   /**
    * Lambert
    */
-  Lambert: "Lmb",
+  Lmb: "Lmb",
 
   /**
    * lux
    */
-  lux: "lx",
+  lx: "lx",
 
   /**
    * meter of water column
    */
-  meterofwatercolumn: "m[H2O]",
+  "m[H2O]": "m[H2O]",
 
   /**
    * meter of mercury column
    */
-  meterofmercurycolumn: "m[Hg]",
+  "m[Hg]": "m[Hg]",
 
   /**
    * MilliGramPerTotalVolume
    */
-  MilliGramPerTotalVolume: "mg/{TotalVolume}",
+  "mg/{TotalVolume}": "mg/{TotalVolume}",
 
   /**
    * MilligramsPerMilligramCreatinine
    */
-  MilligramsPerMilligramCreatinine: "mg/mg{Cre}",
+  "mg/mg{Cre}": "mg/mg{Cre}",
 
   /**
    * milligram of creatinine
    */
-  milligramofcreatinine: "mg{creat}",
+  "mg{creat}": "mg{creat}",
 
   /**
    * mho
@@ -6685,112 +6681,112 @@ export const UnitsOfMeasureCaseSensitiveCode = {
   /**
    * MilliMolesPerTotalVolume [Substance Units]
    */
-  MilliMolesPerTotalVolumeSubstanceUnits: "mmol/{TotalVolume}",
+  "mmol/{TotalVolume}": "mmol/{TotalVolume}",
 
   /**
    * MilliMolesPerMoleCreatinine
    */
-  MilliMolesPerMoleCreatinine: "mmol/mol{Cre}",
+  "mmol/mol{Cre}": "mmol/mol{Cre}",
 
   /**
    * mean Gregorian month
    */
-  meanGregorianmonth: "mo_g",
+  mo_g: "mo_g",
 
   /**
    * mean Julian month
    */
-  meanJulianmonth: "mo_j",
+  mo_j: "mo_j",
 
   /**
    * synodal month
    */
-  synodalmonth: "mo_s",
+  mo_s: "mo_s",
 
   /**
    * Maxwell
    */
-  Maxwell: "Mx",
+  Mx: "Mx",
 
   /**
    * neper
    */
-  neper: "Np",
+  Np: "Np",
 
   /**
    * Oersted
    */
-  Oersted: "Oe",
+  Oe: "Oe",
 
   /**
    * Poise
    */
-  Poise: "P",
+  P: "P",
 
   /**
    * parsec
    */
-  parsec: "pc",
+  pc: "pc",
 
   /**
    * phot
    */
-  phot: "ph",
+  ph: "ph",
 
   /**
    * Roentgen
    */
-  Roentgen: "R",
+  R: "R",
 
   /**
    * radian
    */
-  radian: "rad",
+  rad: "rad",
 
   /**
    * radiation absorbed dose
    */
-  radiationabsorbeddose: "RAD",
+  RAD: "RAD",
 
   /**
    * radiation equivalent man
    */
-  radiationequivalentman: "REM",
+  REM: "REM",
 
   /**
    * stilb
    */
-  stilb: "sb",
+  sb: "sb",
 
   /**
    * spere
    */
-  spere: "sph",
+  sph: "sph",
 
   /**
    * steradian
    */
-  steradian: "sr",
+  sr: "sr",
 
   /**
    * stere
    */
-  stere: "st",
+  st: "st",
 
   /**
    * unified atomic mass unit
    */
-  unifiedatomicmassunit: "u",
+  u: "u",
 
   /**
    * MICROCURIE
    */
-  MICROCURIE: "uCi",
+  uCi: "uCi",
 
   /**
    * Watt
    */
-  Watt: "W",
+  W: "W",
 } as const;
 
 /**

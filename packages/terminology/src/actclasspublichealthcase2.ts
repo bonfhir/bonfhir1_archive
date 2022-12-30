@@ -6,7 +6,7 @@ export const ActClassPublicHealthCase2Code = {
   /**
    * public health case
    */
-  publichealthcase: "HCASE",
+  HCASE: "HCASE",
 } as const;
 
 /**

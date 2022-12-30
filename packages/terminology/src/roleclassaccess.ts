@@ -6,7 +6,7 @@ export const RoleClassAccessCode = {
   /**
    * access
    */
-  access: "ACCESS",
+  ACCESS: "ACCESS",
 } as const;
 
 /**

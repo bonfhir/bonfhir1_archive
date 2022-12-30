@@ -6,12 +6,12 @@ export const ActTaskMedicationListReviewCodeCode = {
   /**
    * medication list review task
    */
-  medicationlistreviewtask: "MLREV",
+  MLREV: "MLREV",
 
   /**
    * medication administration record work list review task
    */
-  medicationadministrationrecordworklistreviewtask: "MARWLREV",
+  MARWLREV: "MARWLREV",
 } as const;
 
 /**

@@ -6,22 +6,22 @@ export const Hl7VSRelevantClincialInformationCode = {
   /**
    * Patient was fasting prior to the procedure.
    */
-  Patientwasfastingpriortotheprocedure: "F",
+  F: "F",
 
   /**
    * The patient indicated they did not fast prior to the procedure.
    */
-  Thepatientindicatedtheydidnotfastpriortotheprocedure: "NF",
+  NF: "NF",
 
   /**
    * Not Given - Patient was not asked at the time of the procedure.
    */
-  NotGivenPatientwasnotaskedatthetimeoftheprocedure: "NG",
+  NG: "NG",
 
   /**
    * Fasting not asked of the patient at time of procedure.
    */
-  Fastingnotaskedofthepatientattimeofprocedure: "FNA",
+  FNA: "FNA",
 } as const;
 
 /**

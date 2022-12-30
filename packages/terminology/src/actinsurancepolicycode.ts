@@ -6,97 +6,97 @@ export const ActInsurancePolicyCodeCode = {
   /**
    * extended healthcare
    */
-  extendedhealthcare: "EHCPOL",
+  EHCPOL: "EHCPOL",
 
   /**
    * health spending account
    */
-  healthspendingaccount: "HSAPOL",
+  HSAPOL: "HSAPOL",
 
   /**
    * automobile
    */
-  automobile: "AUTOPOL",
+  AUTOPOL: "AUTOPOL",
 
   /**
    * collision coverage policy
    */
-  collisioncoveragepolicy: "COL",
+  COL: "COL",
 
   /**
    * uninsured motorist policy
    */
-  uninsuredmotoristpolicy: "UNINSMOT",
+  UNINSMOT: "UNINSMOT",
 
   /**
    * public healthcare
    */
-  publichealthcare: "PUBLICPOL",
+  PUBLICPOL: "PUBLICPOL",
 
   /**
    * dental program
    */
-  dentalprogram: "DENTPRG",
+  DENTPRG: "DENTPRG",
 
   /**
    * public health program
    */
-  publichealthprogram: "DISEASEPRG",
+  DISEASEPRG: "DISEASEPRG",
 
   /**
    * women's cancer detection program
    */
-  womenscancerdetectionprogram: "CANPRG",
+  CANPRG: "CANPRG",
 
   /**
    * end renal program
    */
-  endrenalprogram: "ENDRENAL",
+  ENDRENAL: "ENDRENAL",
 
   /**
    * HIV-AIDS program
    */
-  HIVAIDSprogram: "HIVAIDS",
+  HIVAIDS: "HIVAIDS",
 
   /**
    * mandatory health program
    */
-  mandatoryhealthprogram: "MANDPOL",
+  MANDPOL: "MANDPOL",
 
   /**
    * mental health program
    */
-  mentalhealthprogram: "MENTPRG",
+  MENTPRG: "MENTPRG",
 
   /**
    * safety net clinic program
    */
-  safetynetclinicprogram: "SAFNET",
+  SAFNET: "SAFNET",
 
   /**
    * substance use program
    */
-  substanceuseprogram: "SUBPRG",
+  SUBPRG: "SUBPRG",
 
   /**
    * subsidized health program
    */
-  subsidizedhealthprogram: "SUBSIDIZ",
+  SUBSIDIZ: "SUBSIDIZ",
 
   /**
    * subsidized managed care program
    */
-  subsidizedmanagedcareprogram: "SUBSIDMC",
+  SUBSIDMC: "SUBSIDMC",
 
   /**
    * subsidized supplemental health program
    */
-  subsidizedsupplementalhealthprogram: "SUBSUPP",
+  SUBSUPP: "SUBSUPP",
 
   /**
    * worker's compensation
    */
-  workerscompensation: "WCBPOL",
+  WCBPOL: "WCBPOL",
 } as const;
 
 /**

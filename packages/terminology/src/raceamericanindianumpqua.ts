@@ -6,12 +6,12 @@ export const RaceAmericanIndianUmpquaCode = {
   /**
    * Umpqua
    */
-  Umpqua: "1667-5",
+  "1667-5": "1667-5",
 
   /**
    * Cow Creek Umpqua
    */
-  CowCreekUmpqua: "1668-3",
+  "1668-3": "1668-3",
 } as const;
 
 /**

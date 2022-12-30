@@ -8,52 +8,52 @@ export const ActRelationshipSubsetCode = {
   /**
    * ParticipationSubset
    */
-  ParticipationSubset: "_ParticipationSubset",
+  _ParticipationSubset: "_ParticipationSubset",
 
   /**
    * expected future
    */
-  expectedfuture: "FUTURE",
+  FUTURE: "FUTURE",
 
   /**
    * future summary
    */
-  futuresummary: "FUTSUM",
+  FUTSUM: "FUTSUM",
 
   /**
    * expected last
    */
-  expectedlast: "LAST",
+  LAST: "LAST",
 
   /**
    * expected next
    */
-  expectednext: "NEXT",
+  NEXT: "NEXT",
 
   /**
    * previous
    */
-  previous: "PAST",
+  PAST: "PAST",
 
   /**
    * first known
    */
-  firstknown: "FIRST",
+  FIRST: "FIRST",
 
   /**
    * previous summary
    */
-  previoussummary: "PREVSUM",
+  PREVSUM: "PREVSUM",
 
   /**
    * most recent
    */
-  mostrecent: "RECENT",
+  RECENT: "RECENT",
 
   /**
    * summary
    */
-  summary: "SUM",
+  SUM: "SUM",
 
   /**
    * ActRelationshipExpectedSubset
@@ -68,12 +68,12 @@ export const ActRelationshipSubsetCode = {
   /**
    * maximum
    */
-  maximum: "MAX",
+  MAX: "MAX",
 
   /**
    * minimum
    */
-  minimum: "MIN",
+  MIN: "MIN",
 } as const;
 
 /**

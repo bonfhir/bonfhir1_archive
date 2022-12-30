@@ -6,22 +6,22 @@ export const Hl7VSPublicityCodeCode = {
   /**
    * Family only
    */
-  Familyonly: "F",
+  F: "F",
 
   /**
    * No Publicity
    */
-  NoPublicity: "N",
+  N: "N",
 
   /**
    * Other
    */
-  Other: "O",
+  O: "O",
 
   /**
    * Unknown
    */
-  Unknown: "U",
+  U: "U",
 } as const;
 
 /**

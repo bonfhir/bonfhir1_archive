@@ -6,22 +6,22 @@ export const ActConditionListCode = {
   /**
    * condition list
    */
-  conditionlist: "CONDLIST",
+  CONDLIST: "CONDLIST",
 
   /**
    * intolerance list
    */
-  intolerancelist: "INTOLIST",
+  INTOLIST: "INTOLIST",
 
   /**
    * problem list
    */
-  problemlist: "PROBLIST",
+  PROBLIST: "PROBLIST",
 
   /**
    * risk factors
    */
-  riskfactors: "RISKLIST",
+  RISKLIST: "RISKLIST",
 } as const;
 
 /**

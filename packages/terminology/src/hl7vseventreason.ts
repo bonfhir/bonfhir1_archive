@@ -6,27 +6,27 @@ export const Hl7VSEventReasonCode = {
   /**
    * Patient request
    */
-  Patientrequest: "01",
+  "01": "01",
 
   /**
    * Physician/health practitioner order
    */
-  Physicianhealthpractitionerorder: "02",
+  "02": "02",
 
   /**
    * Census management
    */
-  Censusmanagement: "03",
+  "03": "03",
 
   /**
    * Other
    */
-  Other: "O",
+  O: "O",
 
   /**
    * Unknown
    */
-  Unknown: "U",
+  U: "U",
 } as const;
 
 /**

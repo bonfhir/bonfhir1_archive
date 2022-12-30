@@ -6,42 +6,42 @@ export const Hl7VSTreatmentCode = {
   /**
    * LDL Precipitation
    */
-  LDLPrecipitation: "LDLP",
+  LDLP: "LDLP",
 
   /**
    * Recalification
    */
-  Recalification: "RECA",
+  RECA: "RECA",
 
   /**
    * Defibrination
    */
-  Defibrination: "DEFB",
+  DEFB: "DEFB",
 
   /**
    * Acidification
    */
-  Acidification: "ACID",
+  ACID: "ACID",
 
   /**
    * Neutralization
    */
-  Neutralization: "NEUT",
+  NEUT: "NEUT",
 
   /**
    * Alkalization
    */
-  Alkalization: "ALK",
+  ALK: "ALK",
 
   /**
    * Filtration
    */
-  Filtration: "FILT",
+  FILT: "FILT",
 
   /**
    * Ultrafiltration
    */
-  Ultrafiltration: "UFIL",
+  UFIL: "UFIL",
 } as const;
 
 /**

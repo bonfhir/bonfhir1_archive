@@ -6,12 +6,12 @@ export const ExampleRelatedClaimRelationshipCodesCode = {
   /**
    * Prior Claim
    */
-  PriorClaim: "prior",
+  prior: "prior",
 
   /**
    * Associated Claim
    */
-  AssociatedClaim: "associated",
+  associated: "associated",
 } as const;
 
 /**

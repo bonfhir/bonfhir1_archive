@@ -6,37 +6,37 @@ export const Hl7VSNatureOfAbnormalTestingCode = {
   /**
    * An age-based population
    */
-  Anagebasedpopulation: "A",
+  A: "A",
 
   /**
    * None - generic normal range
    */
-  Nonegenericnormalrange: "N",
+  N: "N",
 
   /**
    * A race-based population
    */
-  Aracebasedpopulation: "R",
+  R: "R",
 
   /**
    * A sex-based population
    */
-  Asexbasedpopulation: "S",
+  S: "S",
 
   /**
    * Species
    */
-  Species: "SP",
+  SP: "SP",
 
   /**
    * Breed
    */
-  Breed: "B",
+  B: "B",
 
   /**
    * Strain
    */
-  Strain: "ST",
+  ST: "ST",
 } as const;
 
 /**

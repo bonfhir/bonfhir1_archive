@@ -6,12 +6,12 @@ export const ConditionalCode = {
   /**
    * Confirm first
    */
-  Confirmfirst: "CONFIRM",
+  CONFIRM: "CONFIRM",
 
   /**
    * Notify first
    */
-  Notifyfirst: "NOTIFY",
+  NOTIFY: "NOTIFY",
 } as const;
 
 /**

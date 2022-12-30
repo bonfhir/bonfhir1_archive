@@ -10,7 +10,7 @@ export const ResourceGroupEntityTypeCode = {
   /**
    * PractitionerGroup
    */
-  PractitionerGroup: "PRAC",
+  PRAC: "PRAC",
 } as const;
 
 /**

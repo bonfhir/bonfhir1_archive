@@ -6,7 +6,7 @@ export const IntraepithelialRouteCode = {
   /**
    * Injection, intraepithelial
    */
-  Injectionintraepithelial: "IEPITHINJ",
+  IEPITHINJ: "IEPITHINJ",
 } as const;
 
 /**

@@ -6,7 +6,7 @@ export const Hl7VSItemImportanceCodesCode = {
   /**
    * Critical
    */
-  Critical: "CRT",
+  CRT: "CRT",
 } as const;
 
 /**

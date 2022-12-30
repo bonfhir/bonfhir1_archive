@@ -6,22 +6,22 @@ export const YokutsanCode = {
   /**
    * Kings River
    */
-  KingsRiver: "x-ENH",
+  "x-ENH": "x-ENH",
 
   /**
    * Gashowu
    */
-  Gashowu: "x-GSH",
+  "x-GSH": "x-GSH",
 
   /**
    * Poso Creek
    */
-  PosoCreek: "x-PYL",
+  "x-PYL": "x-PYL",
 
   /**
    * Tule-Kaweah
    */
-  TuleKaweah: "x-TKH",
+  "x-TKH": "x-TKH",
 } as const;
 
 /**

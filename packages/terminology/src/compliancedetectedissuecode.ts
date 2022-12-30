@@ -6,42 +6,42 @@ export const ComplianceDetectedIssueCodeCode = {
   /**
    * Compliance Alert
    */
-  ComplianceAlert: "COMPLY",
+  COMPLY: "COMPLY",
 
   /**
    * Duplicate Therapy Alert
    */
-  DuplicateTherapyAlert: "DUPTHPY",
+  DUPTHPY: "DUPTHPY",
 
   /**
    * duplicate therapeutic alass alert
    */
-  duplicatetherapeuticalassalert: "DUPTHPCLS",
+  DUPTHPCLS: "DUPTHPCLS",
 
   /**
    * duplicate generic alert
    */
-  duplicategenericalert: "DUPTHPGEN",
+  DUPTHPGEN: "DUPTHPGEN",
 
   /**
    * commonly abused/misused alert
    */
-  commonlyabusedmisusedalert: "ABUSE",
+  ABUSE: "ABUSE",
 
   /**
    * potential fraud
    */
-  potentialfraud: "FRAUD",
+  FRAUD: "FRAUD",
 
   /**
    * Poly-orderer Alert
    */
-  PolyordererAlert: "PLYDOC",
+  PLYDOC: "PLYDOC",
 
   /**
    * Poly-supplier Alert
    */
-  PolysupplierAlert: "PLYPHRM",
+  PLYPHRM: "PLYPHRM",
 } as const;
 
 /**

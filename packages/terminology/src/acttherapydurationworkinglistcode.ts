@@ -6,33 +6,33 @@ export const ActTherapyDurationWorkingListCodeCode = {
   /**
    * ActTherapyDurationWorkingListCode
    */
-  ActTherapyDurationWorkingListCode: "_ActTherapyDurationWorkingListCode",
+  _ActTherapyDurationWorkingListCode: "_ActTherapyDurationWorkingListCode",
 
   /**
    * act medication therapy duration working list
    */
-  actmedicationtherapydurationworkinglist:
+  _ActMedicationTherapyDurationWorkingListCode:
     "_ActMedicationTherapyDurationWorkingListCode",
 
   /**
    * short term/acute
    */
-  shorttermacute: "ACU",
+  ACU: "ACU",
 
   /**
    * continuous/chronic
    */
-  continuouschronic: "CHRON",
+  CHRON: "CHRON",
 
   /**
    * one time
    */
-  onetime: "ONET",
+  ONET: "ONET",
 
   /**
    * as needed
    */
-  asneeded: "PRN",
+  PRN: "PRN",
 } as const;
 
 /**

@@ -6,47 +6,47 @@ export const RaceWhiteEuropeanCode = {
   /**
    * European
    */
-  European: "2108-9",
+  "2108-9": "2108-9",
 
   /**
    * Armenian
    */
-  Armenian: "2109-7",
+  "2109-7": "2109-7",
 
   /**
    * English
    */
-  English: "2110-5",
+  "2110-5": "2110-5",
 
   /**
    * French
    */
-  French: "2111-3",
+  "2111-3": "2111-3",
 
   /**
    * German
    */
-  German: "2112-1",
+  "2112-1": "2112-1",
 
   /**
    * Irish
    */
-  Irish: "2113-9",
+  "2113-9": "2113-9",
 
   /**
    * Italian
    */
-  Italian: "2114-7",
+  "2114-7": "2114-7",
 
   /**
    * Polish
    */
-  Polish: "2115-4",
+  "2115-4": "2115-4",
 
   /**
    * Scottish
    */
-  Scottish: "2116-2",
+  "2116-2": "2116-2",
 } as const;
 
 /**

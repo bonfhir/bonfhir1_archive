@@ -6,22 +6,22 @@ export const IssueFilterCodeCode = {
   /**
    * QueryParameterValue
    */
-  QueryParameterValue: "_QueryParameterValue",
+  _QueryParameterValue: "_QueryParameterValue",
 
   /**
    * all
    */
-  all: "ISSFA",
+  ISSFA: "ISSFA",
 
   /**
    * with issues
    */
-  withissues: "ISSFI",
+  ISSFI: "ISSFI",
 
   /**
    * with unmanaged issues
    */
-  withunmanagedissues: "ISSFU",
+  ISSFU: "ISSFU",
 } as const;
 
 /**

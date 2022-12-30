@@ -13,32 +13,32 @@ export const SecurityTrustObservationTypeCode = {
   /**
    * trust accreditation observation
    */
-  trustaccreditationobservation: "TRSTACCRDOBS",
+  TRSTACCRDOBS: "TRSTACCRDOBS",
 
   /**
    * trust agreement observation
    */
-  trustagreementobservation: "TRSTAGREOBS",
+  TRSTAGREOBS: "TRSTAGREOBS",
 
   /**
    * trust certificate observation
    */
-  trustcertificateobservation: "TRSTCERTOBS",
+  TRSTCERTOBS: "TRSTCERTOBS",
 
   /**
    * trust framework observation
    */
-  trustframeworkobservation: "TRSTFWKOBS",
+  TRSTFWKOBS: "TRSTFWKOBS",
 
   /**
    * trust assurance observation
    */
-  trustassuranceobservation: "TRSTLOAOBS",
+  TRSTLOAOBS: "TRSTLOAOBS",
 
   /**
    * trust mechanism observation
    */
-  trustmechanismobservation: "TRSTMECOBS",
+  TRSTMECOBS: "TRSTMECOBS",
 } as const;
 
 /**

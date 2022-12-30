@@ -6,7 +6,7 @@ export const UNSPSCCode = {
   /**
    * United Nations Standard Products and Services Classification
    */
-  UnitedNationsStandardProductsandServicesClassification: "UNSPSC",
+  UNSPSC: "UNSPSC",
 } as const;
 
 /**

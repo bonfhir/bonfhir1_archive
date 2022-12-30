@@ -6,17 +6,17 @@ export const Hl7VSSequenceResultsFlagCode = {
   /**
    * Sequential
    */
-  Sequential: "S",
+  S: "S",
 
   /**
    * Cyclical
    */
-  Cyclical: "C",
+  C: "C",
 
   /**
    * Reserved for future use
    */
-  Reservedforfutureuse: "R",
+  R: "R",
 } as const;
 
 /**

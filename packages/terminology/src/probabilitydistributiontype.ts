@@ -6,12 +6,12 @@ export const ProbabilityDistributionTypeCode = {
   /**
    * beta
    */
-  beta: "B",
+  B: "B",
 
   /**
    * exponential
    */
-  exponential: "E",
+  E: "E",
 
   /**
    * F
@@ -21,17 +21,17 @@ export const ProbabilityDistributionTypeCode = {
   /**
    * (gamma)
    */
-  gamma: "G",
+  G: "G",
 
   /**
    * log-normal
    */
-  lognormal: "LN",
+  LN: "LN",
 
   /**
    * normal (Gaussian)
    */
-  normalGaussian: "N",
+  N: "N",
 
   /**
    * T
@@ -41,12 +41,12 @@ export const ProbabilityDistributionTypeCode = {
   /**
    * uniform
    */
-  uniform: "U",
+  U: "U",
 
   /**
    * chi square
    */
-  chisquare: "X2",
+  X2: "X2",
 } as const;
 
 /**

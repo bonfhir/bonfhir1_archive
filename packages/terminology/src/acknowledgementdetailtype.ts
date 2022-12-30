@@ -10,17 +10,17 @@ export const AcknowledgementDetailTypeCode = {
   /**
    * Error
    */
-  Error: "E",
+  E: "E",
 
   /**
    * Information
    */
-  Information: "I",
+  I: "I",
 
   /**
    * Warning
    */
-  Warning: "W",
+  W: "W",
 
   /**
    *

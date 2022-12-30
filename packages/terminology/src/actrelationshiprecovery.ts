@@ -6,7 +6,7 @@ export const ActRelationshipRecoveryCode = {
   /**
    * recovers
    */
-  recovers: "RCVY",
+  RCVY: "RCVY",
 } as const;
 
 /**

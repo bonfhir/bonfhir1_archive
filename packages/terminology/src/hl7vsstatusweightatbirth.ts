@@ -6,17 +6,17 @@ export const Hl7VSStatusWeightAtBirthCode = {
   /**
    * No weight reported at admission used for grouping
    */
-  Noweightreportedatadmissionusedforgrouping: "0",
+  "0": "0",
 
   /**
    * Weight reported at admission used for grouping
    */
-  Weightreportedatadmissionusedforgrouping: "1",
+  "1": "1",
 
   /**
    * Default weight (>2499g) used for grouping
    */
-  Defaultweight2499gusedforgrouping: "2",
+  "2": "2",
 } as const;
 
 /**

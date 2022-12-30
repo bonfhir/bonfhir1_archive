@@ -6,37 +6,37 @@ export const Hl7VSAdministrativeSexCode = {
   /**
    * Female
    */
-  Female: "F",
+  F: "F",
 
   /**
    * Male
    */
-  Male: "M",
+  M: "M",
 
   /**
    * Other
    */
-  Other: "O",
+  O: "O",
 
   /**
    * Unknown
    */
-  Unknown: "U",
+  U: "U",
 
   /**
    * Ambiguous
    */
-  Ambiguous: "A",
+  A: "A",
 
   /**
    * Not applicable
    */
-  Notapplicable: "N",
+  N: "N",
 
   /**
    * Non-Binary
    */
-  NonBinary: "X",
+  X: "X",
 } as const;
 
 /**

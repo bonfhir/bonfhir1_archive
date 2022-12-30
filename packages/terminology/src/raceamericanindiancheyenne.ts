@@ -6,17 +6,17 @@ export const RaceAmericanIndianCheyenneCode = {
   /**
    * Cheyenne
    */
-  Cheyenne: "1102-3",
+  "1102-3": "1102-3",
 
   /**
    * Northern Cheyenne
    */
-  NorthernCheyenne: "1103-1",
+  "1103-1": "1103-1",
 
   /**
    * Southern Cheyenne
    */
-  SouthernCheyenne: "1104-9",
+  "1104-9": "1104-9",
 } as const;
 
 /**

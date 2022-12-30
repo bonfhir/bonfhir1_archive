@@ -6,22 +6,22 @@ export const MedicationRequestCategoryCodesCode = {
   /**
    * Inpatient
    */
-  Inpatient: "inpatient",
+  inpatient: "inpatient",
 
   /**
    * Outpatient
    */
-  Outpatient: "outpatient",
+  outpatient: "outpatient",
 
   /**
    * Community
    */
-  Community: "community",
+  community: "community",
 
   /**
    * Discharge
    */
-  Discharge: "discharge",
+  discharge: "discharge",
 } as const;
 
 /**

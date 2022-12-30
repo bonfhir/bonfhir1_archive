@@ -6,32 +6,32 @@ export const Hl7VSRoomTypeCode = {
   /**
    * Private room
    */
-  Privateroom: "PRI",
+  PRI: "PRI",
 
   /**
    * Second private room
    */
-  Secondprivateroom: "2PRI",
+  "2PRI": "2PRI",
 
   /**
    * Semi-private room
    */
-  Semiprivateroom: "SPR",
+  SPR: "SPR",
 
   /**
    * Second semi-private room
    */
-  Secondsemiprivateroom: "2SPR",
+  "2SPR": "2SPR",
 
   /**
    * Intensive care unit
    */
-  Intensivecareunit: "ICU",
+  ICU: "ICU",
 
   /**
    * Second intensive care unit
    */
-  Secondintensivecareunit: "2ICU",
+  "2ICU": "2ICU",
 } as const;
 
 /**

@@ -6,32 +6,32 @@ export const ObservationMeasureCountableItemsCode = {
   /**
    * Procedure
    */
-  Procedure: "71388002",
+  "71388002": "71388002",
 
   /**
    * Device
    */
-  Device: "49062001",
+  "49062001": "49062001",
 
   /**
    * Person
    */
-  Person: "125676002",
+  "125676002": "125676002",
 
   /**
    * Group (social concept)
    */
-  Groupsocialconcept: "389109008",
+  "389109008": "389109008",
 
   /**
    * Events
    */
-  Events: "272379006",
+  "272379006": "272379006",
 
   /**
    * Non-SI unit of time
    */
-  NonSIunitoftime: "258700003",
+  "258700003": "258700003",
 } as const;
 
 /**

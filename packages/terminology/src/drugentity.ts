@@ -6,22 +6,22 @@ export const DrugEntityCode = {
   /**
    * DrugEntity
    */
-  DrugEntity: "_DrugEntity",
+  _DrugEntity: "_DrugEntity",
 
   /**
    * ClinicalDrug
    */
-  ClinicalDrug: "_ClinicalDrug",
+  _ClinicalDrug: "_ClinicalDrug",
 
   /**
    * ActiveIngredientDrugEntityType
    */
-  ActiveIngredientDrugEntityType: "_ActiveIngredientDrugEntityType",
+  _ActiveIngredientDrugEntityType: "_ActiveIngredientDrugEntityType",
 
   /**
    * ManufacturedDrug
    */
-  ManufacturedDrug: "_ManufacturedDrug",
+  _ManufacturedDrug: "_ManufacturedDrug",
 } as const;
 
 /**

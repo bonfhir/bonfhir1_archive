@@ -6,22 +6,22 @@ export const ActMedicationListCode = {
   /**
    * medication list
    */
-  medicationlist: "MEDLIST",
+  MEDLIST: "MEDLIST",
 
   /**
    * current medication list
    */
-  currentmedicationlist: "CURMEDLIST",
+  CURMEDLIST: "CURMEDLIST",
 
   /**
    * discharge medication list
    */
-  dischargemedicationlist: "DISCMEDLIST",
+  DISCMEDLIST: "DISCMEDLIST",
 
   /**
    * medication history
    */
-  medicationhistory: "HISTMEDLIST",
+  HISTMEDLIST: "HISTMEDLIST",
 } as const;
 
 /**

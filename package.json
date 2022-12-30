@@ -7,6 +7,11 @@
   "workspaces": [
     "packages/*"
   ],
+  "scripts": {
+    "clean": "lerna run clean",
+    "check": "lerna run check",
+    "build": "lerna run build"
+  },
   "devDependencies": {
     "@types/lodash": "^4",
     "lerna": "^6.3.0"

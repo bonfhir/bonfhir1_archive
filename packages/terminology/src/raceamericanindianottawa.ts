@@ -6,22 +6,22 @@ export const RaceAmericanIndianOttawaCode = {
   /**
    * Ottawa
    */
-  Ottawa: "1411-8",
+  "1411-8": "1411-8",
 
   /**
    * Burt Lake Ottawa
    */
-  BurtLakeOttawa: "1412-6",
+  "1412-6": "1412-6",
 
   /**
    * Michigan Ottawa
    */
-  MichiganOttawa: "1413-4",
+  "1413-4": "1413-4",
 
   /**
    * Oklahoma Ottawa
    */
-  OklahomaOttawa: "1414-2",
+  "1414-2": "1414-2",
 } as const;
 
 /**

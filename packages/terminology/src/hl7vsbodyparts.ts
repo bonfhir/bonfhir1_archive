@@ -6,2232 +6,2232 @@ export const Hl7VSBodyPartsCode = {
   /**
    * Jugular, External
    */
-  JugularExternal: "JUGE",
+  JUGE: "JUGE",
 
   /**
    * Abdomen
    */
-  Abdomen: "ADB",
+  ADB: "ADB",
 
   /**
    * Acetabulum
    */
-  Acetabulum: "ACET",
+  ACET: "ACET",
 
   /**
    * Achilles
    */
-  Achilles: "ACHIL",
+  ACHIL: "ACHIL",
 
   /**
    * Adenoids
    */
-  Adenoids: "ADE",
+  ADE: "ADE",
 
   /**
    * Adrenal
    */
-  Adrenal: "ADR",
+  ADR: "ADR",
 
   /**
    * Amniotic fluid
    */
-  Amnioticfluid: "AMN",
+  AMN: "AMN",
 
   /**
    * Amniotic Sac
    */
-  AmnioticSac: "AMS",
+  AMS: "AMS",
 
   /**
    * Anal
    */
-  Anal: "ANAL",
+  ANAL: "ANAL",
 
   /**
    * Ankle
    */
-  Ankle: "ANKL",
+  ANKL: "ANKL",
 
   /**
    * Antecubital
    */
-  Antecubital: "ANTEC",
+  ANTEC: "ANTEC",
 
   /**
    * Antecubital Fossa
    */
-  AntecubitalFossa: "ANTECF",
+  ANTECF: "ANTECF",
 
   /**
    * Antrum
    */
-  Antrum: "ANTR",
+  ANTR: "ANTR",
 
   /**
    * Anus
    */
-  Anus: "ANUS",
+  ANUS: "ANUS",
 
   /**
    * Aorta
    */
-  Aorta: "AORTA",
+  AORTA: "AORTA",
 
   /**
    * Aortic Rim
    */
-  AorticRim: "AR",
+  AR: "AR",
 
   /**
    * Aortic Valve
    */
-  AorticValve: "AV",
+  AV: "AV",
 
   /**
    * Appendix
    */
-  Appendix: "APDX",
+  APDX: "APDX",
 
   /**
    * Areola
    */
-  Areola: "AREO",
+  AREO: "AREO",
 
   /**
    * Arm
    */
-  Arm: "ARM",
+  ARM: "ARM",
 
   /**
    * Artery
    */
-  Artery: "ARTE",
+  ARTE: "ARTE",
 
   /**
    * Ascites
    */
-  Ascites: "ASCIT",
+  ASCIT: "ASCIT",
 
   /**
    * Ascitic Fluid
    */
-  AsciticFluid: "ASCT",
+  ASCT: "ASCT",
 
   /**
    * Atrium
    */
-  Atrium: "ATR",
+  ATR: "ATR",
 
   /**
    * Auricular
    */
-  Auricular: "AURI",
+  AURI: "AURI",
 
   /**
    * Axilla
    */
-  Axilla: "AXI",
+  AXI: "AXI",
 
   /**
    * Back
    */
-  Back: "BACK",
+  BACK: "BACK",
 
   /**
    * Bartholin Duct
    */
-  BartholinDuct: "BARTD",
+  BARTD: "BARTD",
 
   /**
    * Bartholin Gland
    */
-  BartholinGland: "BARTG",
+  BARTG: "BARTG",
 
   /**
    * Bartholin Gland Fluid
    */
-  BartholinGlandFluid: "BRTGF",
+  BRTGF: "BRTGF",
 
   /**
    * Basophils
    */
-  Basophils: "BPH",
+  BPH: "BPH",
 
   /**
    * Bile Duct
    */
-  BileDuct: "BID",
+  BID: "BID",
 
   /**
    * Bile fluid
    */
-  Bilefluid: "BIFL",
+  BIFL: "BIFL",
 
   /**
    * Bladder
    */
-  Bladder: "BLAD",
+  BLAD: "BLAD",
 
   /**
    * Blood
    */
-  Blood: "BLOOD",
+  BLOOD: "BLOOD",
 
   /**
    * Blood,  Arterial
    */
-  BloodArterial: "BLDA",
+  BLDA: "BLDA",
 
   /**
    * Blood,  Capillary
    */
-  BloodCapillary: "BLDC",
+  BLDC: "BLDC",
 
   /**
    * Blood,  Venous
    */
-  BloodVenous: "BLDV",
+  BLDV: "BLDV",
 
   /**
    * Blood, Cord
    */
-  BloodCord: "CBLD",
+  CBLD: "CBLD",
 
   /**
    * Blood, Whole
    */
-  BloodWhole: "BLD",
+  BLD: "BLD",
 
   /**
    * Body, Whole
    */
-  BodyWhole: "BDY",
+  BDY: "BDY",
 
   /**
    * Bone
    */
-  Bone: "BON",
+  BON: "BON",
 
   /**
    * Bone marrow
    */
-  Bonemarrow: "BMAR",
+  BMAR: "BMAR",
 
   /**
    * Bowel
    */
-  Bowel: "BOWEL",
+  BOWEL: "BOWEL",
 
   /**
    * Bowel, Large
    */
-  BowelLarge: "BOWLA",
+  BOWLA: "BOWLA",
 
   /**
    * Bowel, Small
    */
-  BowelSmall: "BOWSM",
+  BOWSM: "BOWSM",
 
   /**
    * Brachial
    */
-  Brachial: "BRA",
+  BRA: "BRA",
 
   /**
    * Brain
    */
-  Brain: "BRAIN",
+  BRAIN: "BRAIN",
 
   /**
    * Brain Cyst Fluid
    */
-  BrainCystFluid: "BCYS",
+  BCYS: "BCYS",
 
   /**
    * Breast
    */
-  Breast: "BRST",
+  BRST: "BRST",
 
   /**
    * Breast fluid
    */
-  Breastfluid: "BRSTFL",
+  BRSTFL: "BRSTFL",
 
   /**
    * Bronchial
    */
-  Bronchial: "BRO",
+  BRO: "BRO",
 
   /**
    * Bronchiole/Bronchiolar
    */
-  BronchioleBronchiolar: "BROCH",
+  BROCH: "BROCH",
 
   /**
    * Bronchus/Bronchial
    */
-  BronchusBronchial: "BRONC",
+  BRONC: "BRONC",
 
   /**
    * Broviac
    */
-  Broviac: "BRV",
+  BRV: "BRV",
 
   /**
    * Buccal
    */
-  Buccal: "BUCCA",
+  BUCCA: "BUCCA",
 
   /**
    * Bursa
    */
-  Bursa: "BURSA",
+  BURSA: "BURSA",
 
   /**
    * Bursa Fluid
    */
-  BursaFluid: "BURSF",
+  BURSF: "BURSF",
 
   /**
    * Buttocks
    */
-  Buttocks: "BUTT",
+  BUTT: "BUTT",
 
   /**
    * Calf
    */
-  Calf: "CALF",
+  CALF: "CALF",
 
   /**
    * Canal
    */
-  Canal: "CANAL",
+  CANAL: "CANAL",
 
   /**
    * Canaliculis
    */
-  Canaliculis: "CANLI",
+  CANLI: "CANLI",
 
   /**
    * Cannula
    */
-  Cannula: "CNL",
+  CNL: "CNL",
 
   /**
    * Canthus
    */
-  Canthus: "CANTH",
+  CANTH: "CANTH",
 
   /**
    * Cardiac Muscle
    */
-  CardiacMuscle: "CDM",
+  CDM: "CDM",
 
   /**
    * Carotid
    */
-  Carotid: "CARO",
+  CARO: "CARO",
 
   /**
    * Carpal
    */
-  Carpal: "CARP",
+  CARP: "CARP",
 
   /**
    * Cavity
    */
-  Cavity: "CAVIT",
+  CAVIT: "CAVIT",
 
   /**
    * Cavity, Chest
    */
-  CavityChest: "CHE",
+  CHE: "CHE",
 
   /**
    * Cecum/Cecal
    */
-  CecumCecal: "CECUM",
+  CECUM: "CECUM",
 
   /**
    * Cerebral Spinal Fluid
    */
-  CerebralSpinalFluid: "CSF",
+  CSF: "CSF",
 
   /**
    * Cervix
    */
-  Cervix: "CVX",
+  CVX: "CVX",
 
   /**
    * Cervix/Uterus
    */
-  CervixUterus: "CERVUT",
+  CERVUT: "CERVUT",
 
   /**
    * Cheek
    */
-  Cheek: "CHEEK",
+  CHEEK: "CHEEK",
 
   /**
    * Chest
    */
-  Chest: "CHES",
+  CHES: "CHES",
 
   /**
    * Chest Tube
    */
-  ChestTube: "CHEST",
+  CHEST: "CHEST",
 
   /**
    * Chest Tube
    */
-  ChestTube: "CHESTÂ ",
+  "CHESTÂ ": "CHESTÂ ",
 
   /**
    * Chin
    */
-  Chin: "CHIN",
+  CHIN: "CHIN",
 
   /**
    * Circumcision Site
    */
-  CircumcisionSite: "CIRCU",
+  CIRCU: "CIRCU",
 
   /**
    * Clavicle/Clavicular
    */
-  ClavicleClavicular: "CLAVI",
+  CLAVI: "CLAVI",
 
   /**
    * Clitoral
    */
-  Clitoral: "CLITO",
+  CLITO: "CLITO",
 
   /**
    * Clitoris
    */
-  Clitoris: "CLIT",
+  CLIT: "CLIT",
 
   /**
    * Coccygeal
    */
-  Coccygeal: "COCCG",
+  COCCG: "COCCG",
 
   /**
    * Coccyx
    */
-  Coccyx: "COCCY",
+  COCCY: "COCCY",
 
   /**
    * Colon
    */
-  Colon: "COLON",
+  COLON: "COLON",
 
   /**
    * Colostomy
    */
-  Colostomy: "COLOS",
+  COLOS: "COLOS",
 
   /**
    * Colostomy Stoma
    */
-  ColostomyStoma: "COS",
+  COS: "COS",
 
   /**
    * Common Duct
    */
-  CommonDuct: "CDUCT",
+  CDUCT: "CDUCT",
 
   /**
    * Conjunctiva
    */
-  Conjunctiva: "CONJ",
+  CONJ: "CONJ",
 
   /**
    * Coral
    */
-  Coral: "CORAL",
+  CORAL: "CORAL",
 
   /**
    * Cord
    */
-  Cord: "COR",
+  COR: "COR",
 
   /**
    * Cord Blood
    */
-  CordBlood: "CORD",
+  CORD: "CORD",
 
   /**
    * Cornea
    */
-  Cornea: "CORN",
+  CORN: "CORN",
 
   /**
    * Cranium, ethmoid
    */
-  Craniumethmoid: "CRANE",
+  CRANE: "CRANE",
 
   /**
    * Cranium, frontal
    */
-  Craniumfrontal: "CRANF",
+  CRANF: "CRANF",
 
   /**
    * Cranium, occipital
    */
-  Craniumoccipital: "CRANO",
+  CRANO: "CRANO",
 
   /**
    * Cranium, parietal
    */
-  Craniumparietal: "CRANP",
+  CRANP: "CRANP",
 
   /**
    * Cranium, sphenoid
    */
-  Craniumsphenoid: "CRANS",
+  CRANS: "CRANS",
 
   /**
    * Cranium, temporal
    */
-  Craniumtemporal: "CRANT",
+  CRANT: "CRANT",
 
   /**
    * Cubitus
    */
-  Cubitus: "CUBIT",
+  CUBIT: "CUBIT",
 
   /**
    * Cuff
    */
-  Cuff: "CUFF",
+  CUFF: "CUFF",
 
   /**
    * Cul De Sac
    */
-  CulDeSac: "CULD",
+  CULD: "CULD",
 
   /**
    * Culdocentesis
    */
-  Culdocentesis: "CULDO",
+  CULDO: "CULDO",
 
   /**
    * Deltoid
    */
-  Deltoid: "DELT",
+  DELT: "DELT",
 
   /**
    * Dental
    */
-  Dental: "DENTA",
+  DENTA: "DENTA",
 
   /**
    * Dental Gingiva
    */
-  DentalGingiva: "DEN",
+  DEN: "DEN",
 
   /**
    * Dialysis Fluid
    */
-  DialysisFluid: "DIAF",
+  DIAF: "DIAF",
 
   /**
    * Diaphragm
    */
-  Diaphragm: "DPH",
+  DPH: "DPH",
 
   /**
    * Digit
    */
-  Digit: "DIGIT",
+  DIGIT: "DIGIT",
 
   /**
    * Disc
    */
-  Disc: "DISC",
+  DISC: "DISC",
 
   /**
    * Dorsum/Dorsal
    */
-  DorsumDorsal: "DORS",
+  DORS: "DORS",
 
   /**
    * Duodenal Fluid
    */
-  DuodenalFluid: "DUFL",
+  DUFL: "DUFL",
 
   /**
    * Duodenum/Duodenal
    */
-  DuodenumDuodenal: "DUODE",
+  DUODE: "DUODE",
 
   /**
    * Dura
    */
-  Dura: "DUR",
+  DUR: "DUR",
 
   /**
    * Ear
    */
-  Ear: "EAR",
+  EAR: "EAR",
 
   /**
    * Ear bone, incus
    */
-  Earboneincus: "EARBI",
+  EARBI: "EARBI",
 
   /**
    * Ear bone, malleus
    */
-  Earbonemalleus: "EARBM",
+  EARBM: "EARBM",
 
   /**
    * Ear bone,stapes
    */
-  Earbonestapes: "EARBS",
+  EARBS: "EARBS",
 
   /**
    * Ear Lobe
    */
-  EarLobe: "EARLO",
+  EARLO: "EARLO",
 
   /**
    * Elbow
    */
-  Elbow: "ELBOW",
+  ELBOW: "ELBOW",
 
   /**
    * Elbow Joint
    */
-  ElbowJoint: "ELBOWJ",
+  ELBOWJ: "ELBOWJ",
 
   /**
    * Endocardium
    */
-  Endocardium: "ENDC",
+  ENDC: "ENDC",
 
   /**
    * Endocervical
    */
-  Endocervical: "EC",
+  EC: "EC",
 
   /**
    * endolpthamitis
    */
-  endolpthamitis: "EOLPH",
+  EOLPH: "EOLPH",
 
   /**
    * Endometrium
    */
-  Endometrium: "ENDM",
+  ENDM: "ENDM",
 
   /**
    * Endotracheal
    */
-  Endotracheal: "ET",
+  ET: "ET",
 
   /**
    * Endourethral
    */
-  Endourethral: "EUR",
+  EUR: "EUR",
 
   /**
    * Eosinophils
    */
-  Eosinophils: "EOS",
+  EOS: "EOS",
 
   /**
    * Epicardial
    */
-  Epicardial: "EPICA",
+  EPICA: "EPICA",
 
   /**
    * Epicardium
    */
-  Epicardium: "EPICM",
+  EPICM: "EPICM",
 
   /**
    * Epididymis
    */
-  Epididymis: "EPD",
+  EPD: "EPD",
 
   /**
    * Epidural
    */
-  Epidural: "EPIDU",
+  EPIDU: "EPIDU",
 
   /**
    * Epiglottis
    */
-  Epiglottis: "EPIGL",
+  EPIGL: "EPIGL",
 
   /**
    * Esophageal
    */
-  Esophageal: "ESOPG",
+  ESOPG: "ESOPG",
 
   /**
    * Esophagus
    */
-  Esophagus: "ESO",
+  ESO: "ESO",
 
   /**
    * Ethmoid
    */
-  Ethmoid: "ETHMO",
+  ETHMO: "ETHMO",
 
   /**
    * External Jugular
    */
-  ExternalJugular: " ",
+  " ": " ",
 
   /**
    * External Jugular
    */
-  ExternalJugular: "Â ",
+  "Â ": "Â ",
 
   /**
    * Eye
    */
-  Eye: "EYE",
+  EYE: "EYE",
 
   /**
    * Eyebrow
    */
-  Eyebrow: "BROW",
+  BROW: "BROW",
 
   /**
    * Eyelid
    */
-  Eyelid: "EYELI",
+  EYELI: "EYELI",
 
   /**
    * Face
    */
-  Face: "FACE",
+  FACE: "FACE",
 
   /**
    * Facial bone, inferior nasal concha
    */
-  Facialboneinferiornasalconcha: "FBINC",
+  FBINC: "FBINC",
 
   /**
    * Facial bone, lacrimal
    */
-  Facialbonelacrimal: "FBLAC",
+  FBLAC: "FBLAC",
 
   /**
    * Facial bone, maxilla
    */
-  Facialbonemaxilla: "FBMAX",
+  FBMAX: "FBMAX",
 
   /**
    * Facial bone, nasal
    */
-  Facialbonenasal: "FBNAS",
+  FBNAS: "FBNAS",
 
   /**
    * Facial bone, palatine
    */
-  Facialbonepalatine: "FBPAL",
+  FBPAL: "FBPAL",
 
   /**
    * Facial bone, vomer
    */
-  Facialbonevomer: "FBVOM",
+  FBVOM: "FBVOM",
 
   /**
    * Facial bone, zygomatic
    */
-  Facialbonezygomatic: "FBZYG",
+  FBZYG: "FBZYG",
 
   /**
    * Fallopian Tube
    */
-  FallopianTube: "FALLT",
+  FALLT: "FALLT",
 
   /**
    * Femoral
    */
-  Femoral: "FEMOR",
+  FEMOR: "FEMOR",
 
   /**
    * Femoral Head
    */
-  FemoralHead: "FMH",
+  FMH: "FMH",
 
   /**
    * Femur
    */
-  Femur: "FEMUR",
+  FEMUR: "FEMUR",
 
   /**
    * Fetus
    */
-  Fetus: "FET",
+  FET: "FET",
 
   /**
    * Fibula
    */
-  Fibula: "FIBU",
+  FIBU: "FIBU",
 
   /**
    * Finger
    */
-  Finger: "FING",
+  FING: "FING",
 
   /**
    * Finger Nail
    */
-  FingerNail: "FINGN",
+  FINGN: "FINGN",
 
   /**
    * Follicle
    */
-  Follicle: "FOL",
+  FOL: "FOL",
 
   /**
    * Foot
    */
-  Foot: "FOOT",
+  FOOT: "FOOT",
 
   /**
    * Forearm
    */
-  Forearm: "FOREA",
+  FOREA: "FOREA",
 
   /**
    * Forehead
    */
-  Forehead: "FOREH",
+  FOREH: "FOREH",
 
   /**
    * Foreskin
    */
-  Foreskin: "FORES",
+  FORES: "FORES",
 
   /**
    * Fourchette
    */
-  Fourchette: "FOURC",
+  FOURC: "FOURC",
 
   /**
    * Gall Bladder
    */
-  GallBladder: "GB",
+  GB: "GB",
 
   /**
    * Genital
    */
-  Genital: "GEN",
+  GEN: "GEN",
 
   /**
    * Genital - Vulva
    */
-  GenitalVulva: "GVU",
+  GVU: "GVU",
 
   /**
    * Genital Cervix
    */
-  GenitalCervix: "GENC",
+  GENC: "GENC",
 
   /**
    * Genital Lesion
    */
-  GenitalLesion: "GL",
+  GL: "GL",
 
   /**
    * Genital Lochia
    */
-  GenitalLochia: "GENL",
+  GENL: "GENL",
 
   /**
    * Gland
    */
-  Gland: "GLAND",
+  GLAND: "GLAND",
 
   /**
    * Glans
    */
-  Glans: "GLANS",
+  GLANS: "GLANS",
 
   /**
    * Gluteal
    */
-  Gluteal: "GLUTE",
+  GLUTE: "GLUTE",
 
   /**
    * Gluteus
    */
-  Gluteus: "GLUT",
+  GLUT: "GLUT",
 
   /**
    * Gluteus Medius
    */
-  GluteusMedius: "GLUTM",
+  GLUTM: "GLUTM",
 
   /**
    * Groin
    */
-  Groin: "GROIN",
+  GROIN: "GROIN",
 
   /**
    * Gum
    */
-  Gum: "GUM",
+  GUM: "GUM",
 
   /**
    * Hair
    */
-  Hair: "HAR",
+  HAR: "HAR",
 
   /**
    * Hallux
    */
-  Hallux: "HAL",
+  HAL: "HAL",
 
   /**
    * Hand
    */
-  Hand: "HAND",
+  HAND: "HAND",
 
   /**
    * Head
    */
-  Head: "HEAD",
+  HEAD: "HEAD",
 
   /**
    * Heart
    */
-  Heart: "HART",
+  HART: "HART",
 
   /**
    * Heart Valve
    */
-  HeartValve: "HV",
+  HV: "HV",
 
   /**
    * Heart Valve, Bicuspid
    */
-  HeartValveBicuspid: "HVB",
+  HVB: "HVB",
 
   /**
    * Heart Valve, Tricuspid
    */
-  HeartValveTricuspid: "HVT",
+  HVT: "HVT",
 
   /**
    * Heel
    */
-  Heel: "HEEL",
+  HEEL: "HEEL",
 
   /**
    * Hemorrhoid
    */
-  Hemorrhoid: "HEM",
+  HEM: "HEM",
 
   /**
    * Hip
    */
-  Hip: "HIP",
+  HIP: "HIP",
 
   /**
    * Hip Joint
    */
-  HipJoint: "HIPJ",
+  HIPJ: "HIPJ",
 
   /**
    * Humerus
    */
-  Humerus: "HUMER",
+  HUMER: "HUMER",
 
   /**
    * Hymen
    */
-  Hymen: "HYMEN",
+  HYMEN: "HYMEN",
 
   /**
    * Ileal Conduit
    */
-  IlealConduit: "ILC",
+  ILC: "ILC",
 
   /**
    * Ileal Loop
    */
-  IlealLoop: "ILE",
+  ILE: "ILE",
 
   /**
    * Ileostomy
    */
-  Ileostomy: "ILEOS",
+  ILEOS: "ILEOS",
 
   /**
    * Ileum
    */
-  Ileum: "ILEUM",
+  ILEUM: "ILEUM",
 
   /**
    * Iliac
    */
-  Iliac: "ILIAC",
+  ILIAC: "ILIAC",
 
   /**
    * Iliac Crest
    */
-  IliacCrest: "ILCR",
+  ILCR: "ILCR",
 
   /**
    * Ilical Conduit
    */
-  IlicalConduit: "ILCON",
+  ILCON: "ILCON",
 
   /**
    * Inguinal
    */
-  Inguinal: "INGUI",
+  INGUI: "INGUI",
 
   /**
    * Jugular, Internal
    */
-  JugularInternal: "JUGI",
+  JUGI: "JUGI",
 
   /**
    * Intestine
    */
-  Intestine: "INT",
+  INT: "INT",
 
   /**
    * Intracervical
    */
-  Intracervical: "ICX",
+  ICX: "ICX",
 
   /**
    * Intranasal
    */
-  Intranasal: "INASA",
+  INASA: "INASA",
 
   /**
    * Intrauterine
    */
-  Intrauterine: "INTRU",
+  INTRU: "INTRU",
 
   /**
    * Introitus
    */
-  Introitus: "INTRO",
+  INTRO: "INTRO",
 
   /**
    * Ischium
    */
-  Ischium: "ISCHI",
+  ISCHI: "ISCHI",
 
   /**
    * Jaw
    */
-  Jaw: "JAW",
+  JAW: "JAW",
 
   /**
    * Kidney
    */
-  Kidney: "KIDN",
+  KIDN: "KIDN",
 
   /**
    * Kidney
    */
-  Kidney: "KIDNÂ ",
+  "KIDNÂ ": "KIDNÂ ",
 
   /**
    * Knee
    */
-  Knee: "KNEE",
+  KNEE: "KNEE",
 
   /**
    * Knee Fluid
    */
-  KneeFluid: "KNEEF",
+  KNEEF: "KNEEF",
 
   /**
    * Knee Joint
    */
-  KneeJoint: "KNEEJ",
+  KNEEJ: "KNEEJ",
 
   /**
    * Labia
    */
-  Labia: "LABIA",
+  LABIA: "LABIA",
 
   /**
    * Labia Majora
    */
-  LabiaMajora: "LABMA",
+  LABMA: "LABMA",
 
   /**
    * Labia Minora
    */
-  LabiaMinora: "LABMI",
+  LABMI: "LABMI",
 
   /**
    * Lacrimal
    */
-  Lacrimal: "LACRI",
+  LACRI: "LACRI",
 
   /**
    * Lamella
    */
-  Lamella: "LAM",
+  LAM: "LAM",
 
   /**
    * Intestine, Large
    */
-  IntestineLarge: "INSTL",
+  INSTL: "INSTL",
 
   /**
    * Larynx
    */
-  Larynx: "LARYN",
+  LARYN: "LARYN",
 
   /**
    * Leg
    */
-  Leg: "LEG",
+  LEG: "LEG",
 
   /**
    * Lens
    */
-  Lens: "LENS",
+  LENS: "LENS",
 
   /**
    * Leukocytes
    */
-  Leukocytes: "WBC",
+  WBC: "WBC",
 
   /**
    * Lingual
    */
-  Lingual: "LING",
+  LING: "LING",
 
   /**
    * Lingula
    */
-  Lingula: "LINGU",
+  LINGU: "LINGU",
 
   /**
    * Lip
    */
-  Lip: "LIP",
+  LIP: "LIP",
 
   /**
    * Liquid Stool
    */
-  LiquidStool: "STOOLL",
+  STOOLL: "STOOLL",
 
   /**
    * Liver
    */
-  Liver: "LIVER",
+  LIVER: "LIVER",
 
   /**
    * Lobe
    */
-  Lobe: "LOBE",
+  LOBE: "LOBE",
 
   /**
    * Lochia
    */
-  Lochia: "LOCH",
+  LOCH: "LOCH",
 
   /**
    * Loop, Ishial
    */
-  LoopIshial: "ISH",
+  ISH: "ISH",
 
   /**
    * Lumbar
    */
-  Lumbar: "LUMBA",
+  LUMBA: "LUMBA",
 
   /**
    * Lumen
    */
-  Lumen: "LMN",
+  LMN: "LMN",
 
   /**
    * Lung
    */
-  Lung: "LUNG",
+  LUNG: "LUNG",
 
   /**
    * Lymph Node
    */
-  LymphNode: "LN",
+  LN: "LN",
 
   /**
    * Lymph Node, Groin
    */
-  LymphNodeGroin: "LNG",
+  LNG: "LNG",
 
   /**
    * Lymphocytes
    */
-  Lymphocytes: "LYM",
+  LYM: "LYM",
 
   /**
    * Macrophages
    */
-  Macrophages: "MAC",
+  MAC: "MAC",
 
   /**
    * Malleolus
    */
-  Malleolus: "MALLE",
+  MALLE: "MALLE",
 
   /**
    * Mandible/Mandibular
    */
-  MandibleMandibular: "MANDI",
+  MANDI: "MANDI",
 
   /**
    * Marrow
    */
-  Marrow: "MAR",
+  MAR: "MAR",
 
   /**
    * Mastoid
    */
-  Mastoid: "MAST",
+  MAST: "MAST",
 
   /**
    * Maxilla/Maxillary
    */
-  MaxillaMaxillary: "MAXIL",
+  MAXIL: "MAXIL",
 
   /**
    * Maxillary Sinus
    */
-  MaxillarySinus: "MAXS",
+  MAXS: "MAXS",
 
   /**
    * Meatus
    */
-  Meatus: "MEATU",
+  MEATU: "MEATU",
 
   /**
    * Meconium
    */
-  Meconium: "MEC",
+  MEC: "MEC",
 
   /**
    * Mediastinum
    */
-  Mediastinum: "MEDST",
+  MEDST: "MEDST",
 
   /**
    * Medullary
    */
-  Medullary: "MEDU",
+  MEDU: "MEDU",
 
   /**
    * Membrane
    */
-  Membrane: "MOU",
+  MOU: "MOU",
 
   /**
    * Meninges
    */
-  Meninges: "MPB",
+  MPB: "MPB",
 
   /**
    * Metacarpal
    */
-  Metacarpal: "METAC",
+  METAC: "METAC",
 
   /**
    * Metatarsal
    */
-  Metatarsal: "METAT",
+  METAT: "METAT",
 
   /**
    * Milk, Breast
    */
-  MilkBreast: "MILK",
+  MILK: "MILK",
 
   /**
    * Mitral Valve
    */
-  MitralValve: "MITRL",
+  MITRL: "MITRL",
 
   /**
    * Molar
    */
-  Molar: "MOLAR",
+  MOLAR: "MOLAR",
 
   /**
    * Mons Pubis
    */
-  MonsPubis: "MP",
+  MP: "MP",
 
   /**
    * Mons Ureteris
    */
-  MonsUreteris: "MONSU",
+  MONSU: "MONSU",
 
   /**
    * Mons Veneris(Mons Pubis)
    */
-  MonsVenerisMonsPubis: "MONSV",
+  MONSV: "MONSV",
 
   /**
    * Mouth
    */
-  Mouth: "MOUTH",
+  MOUTH: "MOUTH",
 
   /**
    * Mrsa:
    */
-  Mrsa: "MRSA2",
+  MRSA2: "MRSA2",
 
   /**
    * Myocardium
    */
-  Myocardium: "MYO",
+  MYO: "MYO",
 
   /**
    * Nail
    */
-  Nail: "NAIL",
+  NAIL: "NAIL",
 
   /**
    * Nail Bed
    */
-  NailBed: "NAILB",
+  NAILB: "NAILB",
 
   /**
    * Nail, Finger
    */
-  NailFinger: "NAILF",
+  NAILF: "NAILF",
 
   /**
    * Nail, Toe
    */
-  NailToe: "NAILT",
+  NAILT: "NAILT",
 
   /**
    * Nares
    */
-  Nares: "NARES",
+  NARES: "NARES",
 
   /**
    * Nasal
    */
-  Nasal: "NASL",
+  NASL: "NASL",
 
   /**
    * Nasal Septum
    */
-  NasalSeptum: "NSS",
+  NSS: "NSS",
 
   /**
    * Nasolacrimal
    */
-  Nasolacrimal: "NLACR",
+  NLACR: "NLACR",
 
   /**
    * Nasopharyngeal/Nasopharynx
    */
-  NasopharyngealNasopharynx: "NP",
+  NP: "NP",
 
   /**
    * Nasotracheal
    */
-  Nasotracheal: "NTRAC",
+  NTRAC: "NTRAC",
 
   /**
    * Navel
    */
-  Navel: "NAVEL",
+  NAVEL: "NAVEL",
 
   /**
    * Neck
    */
-  Neck: "NECK",
+  NECK: "NECK",
 
   /**
    * Nerve
    */
-  Nerve: "NERVE",
+  NERVE: "NERVE",
 
   /**
    * Nipple
    */
-  Nipple: "NIPPL",
+  NIPPL: "NIPPL",
 
   /**
    * Nose (Nasal Passage)
    */
-  NoseNasalPassage: "NOS",
+  NOS: "NOS",
 
   /**
    * Nose/Nose(outside)
    */
-  NoseNoseoutside: "NOSE",
+  NOSE: "NOSE",
 
   /**
    * Nostril
    */
-  Nostril: "NOSTR",
+  NOSTR: "NOSTR",
 
   /**
    * Occipital
    */
-  Occipital: "OCCIP",
+  OCCIP: "OCCIP",
 
   /**
    * Olecranon
    */
-  Olecranon: "OLECR",
+  OLECR: "OLECR",
 
   /**
    * Omentum
    */
-  Omentum: "OMEN",
+  OMEN: "OMEN",
 
   /**
    * Orbit/Orbital
    */
-  OrbitOrbital: "ORBIT",
+  ORBIT: "ORBIT",
 
   /**
    * Oropharynx
    */
-  Oropharynx: "ORO",
+  ORO: "ORO",
 
   /**
    * Os coxa (pelvic girdle)
    */
-  Oscoxapelvicgirdle: "OSCOX",
+  OSCOX: "OSCOX",
 
   /**
    * Ovary
    */
-  Ovary: "OVARY",
+  OVARY: "OVARY",
 
   /**
    * Palate
    */
-  Palate: "PALAT",
+  PALAT: "PALAT",
 
   /**
    * Palate, Hard
    */
-  PalateHard: "PLATH",
+  PLATH: "PLATH",
 
   /**
    * Palate, Soft
    */
-  PalateSoft: "PLATS",
+  PLATS: "PLATS",
 
   /**
    * Palm
    */
-  Palm: "PALM",
+  PALM: "PALM",
 
   /**
    * Pancreas
    */
-  Pancreas: "PANCR",
+  PANCR: "PANCR",
 
   /**
    * Pancreatic Fluid
    */
-  PancreaticFluid: "PAFL",
+  PAFL: "PAFL",
 
   /**
    * Parasternal
    */
-  Parasternal: "PAS",
+  PAS: "PAS",
 
   /**
    * Paratracheal
    */
-  Paratracheal: "PARAT",
+  PARAT: "PARAT",
 
   /**
    * Parietal
    */
-  Parietal: "PARIE",
+  PARIE: "PARIE",
 
   /**
    * Paronychia
    */
-  Paronychia: "PARON",
+  PARON: "PARON",
 
   /**
    * Parotid/Parotid Gland
    */
-  ParotidParotidGland: "PAROT",
+  PAROT: "PAROT",
 
   /**
    * Patella
    */
-  Patella: "PATEL",
+  PATEL: "PATEL",
 
   /**
    * Pelvis
    */
-  Pelvis: "PELV",
+  PELV: "PELV",
 
   /**
    * Penile Shaft
    */
-  PenileShaft: "PENSH",
+  PENSH: "PENSH",
 
   /**
    * Penis
    */
-  Penis: "PENIS",
+  PENIS: "PENIS",
 
   /**
    * Perianal/Perirectal
    */
-  PerianalPerirectal: "PANAL",
+  PANAL: "PANAL",
 
   /**
    * Pericardial Fluid
    */
-  PericardialFluid: "PERI",
+  PERI: "PERI",
 
   /**
    * Pericardium
    */
-  Pericardium: "PCARD",
+  PCARD: "PCARD",
 
   /**
    * Periclitoral
    */
-  Periclitoral: "PCLIT",
+  PCLIT: "PCLIT",
 
   /**
    * Perihepatic
    */
-  Perihepatic: "PERIH",
+  PERIH: "PERIH",
 
   /**
    * Perineal
    */
-  Perineal: "PNEAL",
+  PNEAL: "PNEAL",
 
   /**
    * Perineal Abscess
    */
-  PerinealAbscess: "PERIN",
+  PERIN: "PERIN",
 
   /**
    * Perinephric
    */
-  Perinephric: "PNEPH",
+  PNEPH: "PNEPH",
 
   /**
    * Perineum
    */
-  Perineum: "PNM",
+  PNM: "PNM",
 
   /**
    * Periorbital
    */
-  Periorbital: "PORBI",
+  PORBI: "PORBI",
 
   /**
    * Perirectal
    */
-  Perirectal: "PERRA",
+  PERRA: "PERRA",
 
   /**
    * Perisplenic
    */
-  Perisplenic: "PERIS",
+  PERIS: "PERIS",
 
   /**
    * Peritoneal
    */
-  Peritoneal: "PER",
+  PER: "PER",
 
   /**
    * Peritoneal Fluid
    */
-  PeritonealFluid: "PERT",
+  PERT: "PERT",
 
   /**
    * Peritoneum
    */
-  Peritoneum: "PERIT",
+  PERIT: "PERIT",
 
   /**
    * Peritonsillar
    */
-  Peritonsillar: "PTONS",
+  PTONS: "PTONS",
 
   /**
    * Periurethal
    */
-  Periurethal: "PERIU",
+  PERIU: "PERIU",
 
   /**
    * Perivesicular
    */
-  Perivesicular: "PERIV",
+  PERIV: "PERIV",
 
   /**
    * Phalanyx
    */
-  Phalanyx: "PHALA",
+  PHALA: "PHALA",
 
   /**
    * Pilonidal
    */
-  Pilonidal: "PILO",
+  PILO: "PILO",
 
   /**
    * Pinna
    */
-  Pinna: "PINNA",
+  PINNA: "PINNA",
 
   /**
    * Placenta
    */
-  Placenta: "PLC",
+  PLC: "PLC",
 
   /**
    * Placenta (Fetal Side)
    */
-  PlacentaFetalSide: "PLACF",
+  PLACF: "PLACF",
 
   /**
    * Placenta (Maternal Side)
    */
-  PlacentaMaternalSide: "PLACM",
+  PLACM: "PLACM",
 
   /**
    * Plantar
    */
-  Plantar: "PLANT",
+  PLANT: "PLANT",
 
   /**
    * Pleura
    */
-  Pleura: "PLEUR",
+  PLEUR: "PLEUR",
 
   /**
    * Pleural Fluid
    */
-  PleuralFluid: "PLEU",
+  PLEU: "PLEU",
 
   /**
    * Pleural Fluid (Thoracentesis Fld)
    */
-  PleuralFluidThoracentesisFld: "PLR",
+  PLR: "PLR",
 
   /**
    * Popliteal
    */
-  Popliteal: "POPLI",
+  POPLI: "POPLI",
 
   /**
    * Preauricular
    */
-  Preauricular: "PREAU",
+  PREAU: "PREAU",
 
   /**
    * Prerenal
    */
-  Prerenal: "PRERE",
+  PRERE: "PRERE",
 
   /**
    * Prostate Gland
    */
-  ProstateGland: "PRST",
+  PRST: "PRST",
 
   /**
    * Prostatic Fluid
    */
-  ProstaticFluid: "PROS",
+  PROS: "PROS",
 
   /**
    * Pubic
    */
-  Pubic: "PUBIC",
+  PUBIC: "PUBIC",
 
   /**
    * Pulmonary Artery
    */
-  PulmonaryArtery: "PUL",
+  PUL: "PUL",
 
   /**
    * Radial
    */
-  Radial: "RADI",
+  RADI: "RADI",
 
   /**
    * Radius
    */
-  Radius: "RADIUS",
+  RADIUS: "RADIUS",
 
   /**
    * Rectal
    */
-  Rectal: "RECTL",
+  RECTL: "RECTL",
 
   /**
    * Rectum
    */
-  Rectum: "RECTU",
+  RECTU: "RECTU",
 
   /**
    * Red Blood Cells
    */
-  RedBloodCells: "RBC",
+  RBC: "RBC",
 
   /**
    * Renal
    */
-  Renal: "RENL",
+  RENL: "RENL",
 
   /**
    * Renal Pelvis
    */
-  RenalPelvis: "RNP",
+  RNP: "RNP",
 
   /**
    * Retroperitoneal
    */
-  Retroperitoneal: "RPERI",
+  RPERI: "RPERI",
 
   /**
    * Rib
    */
-  Rib: "RIB",
+  RIB: "RIB",
 
   /**
    * Sacral
    */
-  Sacral: "SACRA",
+  SACRA: "SACRA",
 
   /**
    * Sacrococcygeal
    */
-  Sacrococcygeal: "SACRO",
+  SACRO: "SACRO",
 
   /**
    * Sacroiliac
    */
-  Sacroiliac: "SACIL",
+  SACIL: "SACIL",
 
   /**
    * Sacrum
    */
-  Sacrum: "SACRU",
+  SACRU: "SACRU",
 
   /**
    * Salivary Gland
    */
-  SalivaryGland: "SALGL",
+  SALGL: "SALGL",
 
   /**
    * Scalp
    */
-  Scalp: "SCALP",
+  SCALP: "SCALP",
 
   /**
    * Scapula/Scapular
    */
-  ScapulaScapular: "SCAPU",
+  SCAPU: "SCAPU",
 
   /**
    * Sclera
    */
-  Sclera: "SCLER",
+  SCLER: "SCLER",
 
   /**
    * Scrotum/Scrotal
    */
-  ScrotumScrotal: "SCROT",
+  SCROT: "SCROT",
 
   /**
    * Semen
    */
-  Semen: "SEMN",
+  SEMN: "SEMN",
 
   /**
    * Seminal Fluid
    */
-  SeminalFluid: "SEM",
+  SEM: "SEM",
 
   /**
    * Septum/Septal
    */
-  SeptumSeptal: "SEPTU",
+  SEPTU: "SEPTU",
 
   /**
    * Seroma
    */
-  Seroma: "SEROM",
+  SEROM: "SEROM",
 
   /**
    * Shin
    */
-  Shin: "SHIN",
+  SHIN: "SHIN",
 
   /**
    * Sholder Joint
    */
-  SholderJoint: "SHOLJ",
+  SHOLJ: "SHOLJ",
 
   /**
    * Shoulder
    */
-  Shoulder: "SHOL",
+  SHOL: "SHOL",
 
   /**
    * Sigmoid
    */
-  Sigmoid: "SIGMO",
+  SIGMO: "SIGMO",
 
   /**
    * Sinus
    */
-  Sinus: "SINUS",
+  SINUS: "SINUS",
 
   /**
    * Skeletal Muscle
    */
-  SkeletalMuscle: "SKM",
+  SKM: "SKM",
 
   /**
    * Skene's Gland
    */
-  SkenesGland: "SKENE",
+  SKENE: "SKENE",
 
   /**
    * Skull
    */
-  Skull: "SKULL",
+  SKULL: "SKULL",
 
   /**
    * Intestine, Small
    */
-  IntestineSmall: "INSTS",
+  INSTS: "INSTS",
 
   /**
    * Sole
    */
-  Sole: "SOLE",
+  SOLE: "SOLE",
 
   /**
    * Spermatozoa
    */
-  Spermatozoa: "SPRM",
+  SPRM: "SPRM",
 
   /**
    * Sphenoid
    */
-  Sphenoid: "SPHEN",
+  SPHEN: "SPHEN",
 
   /**
    * Spinal Cord
    */
-  SpinalCord: "SPCOR",
+  SPCOR: "SPCOR",
 
   /**
    * Spleen
    */
-  Spleen: "SPLN",
+  SPLN: "SPLN",
 
   /**
    * Sternum/Sternal
    */
-  SternumSternal: "STER",
+  STER: "STER",
 
   /**
    * Stoma
    */
-  Stoma: "STOM",
+  STOM: "STOM",
 
   /**
    * Stoma, Urinary
    */
-  StomaUrinary: "USTOM",
+  USTOM: "USTOM",
 
   /**
    * Stomach
    */
-  Stomach: "STOMA",
+  STOMA: "STOMA",
 
   /**
    * Stump
    */
-  Stump: "STUMP",
+  STUMP: "STUMP",
 
   /**
    * Sub Clavian
    */
-  SubClavian: "SCLV",
+  SCLV: "SCLV",
 
   /**
    * Subdiaphramatic
    */
-  Subdiaphramatic: "SDP",
+  SDP: "SDP",
 
   /**
    * Subdural
    */
-  Subdural: "SUB",
+  SUB: "SUB",
 
   /**
    * Subdural Fluid
    */
-  SubduralFluid: "SUBD",
+  SUBD: "SUBD",
 
   /**
    * Subgaleal Fluid
    */
-  SubgalealFluid: "SGF",
+  SGF: "SGF",
 
   /**
    * Submandibular
    */
-  Submandibular: "SUBM",
+  SUBM: "SUBM",
 
   /**
    * Submaxillary
    */
-  Submaxillary: "SUBX",
+  SUBX: "SUBX",
 
   /**
    * Submental
    */
-  Submental: "SUBME",
+  SUBME: "SUBME",
 
   /**
    * Subphrenic
    */
-  Subphrenic: "SUBPH",
+  SUBPH: "SUBPH",
 
   /**
    * Supra Cervical
    */
-  SupraCervical: "SPX",
+  SPX: "SPX",
 
   /**
    * Supraclavicle/Supraclavicular
    */
-  SupraclavicleSupraclavicular: "SCLAV",
+  SCLAV: "SCLAV",
 
   /**
    * Suprapubic
    */
-  Suprapubic: "SUPRA",
+  SUPRA: "SUPRA",
 
   /**
    * Suprapubic Specimen
    */
-  SuprapubicSpecimen: "SUPB",
+  SUPB: "SUPB",
 
   /**
    * Sweat
    */
-  Sweat: "SWT",
+  SWT: "SWT",
 
   /**
    * Sweat Gland
    */
-  SweatGland: "SWTG",
+  SWTG: "SWTG",
 
   /**
    * Synovial
    */
-  Synovial: "SYNOL",
+  SYNOL: "SYNOL",
 
   /**
    * Synovial Fluid
    */
-  SynovialFluid: "SYN",
+  SYN: "SYN",
 
   /**
    * Synovium
    */
-  Synovium: "SYNOV",
+  SYNOV: "SYNOV",
 
   /**
    * Tarsal
    */
-  Tarsal: "TARS",
+  TARS: "TARS",
 
   /**
    * Tear Duct
    */
-  TearDuct: "TDUCT",
+  TDUCT: "TDUCT",
 
   /**
    * Tears
    */
-  Tears: "TEAR",
+  TEAR: "TEAR",
 
   /**
    * Temple
    */
-  Temple: "TEMPL",
+  TEMPL: "TEMPL",
 
   /**
    * Temporal
    */
-  Temporal: "TEMPO",
+  TEMPO: "TEMPO",
 
   /**
    * Temporal Lobe
    */
-  TemporalLobe: "TML",
+  TML: "TML",
 
   /**
    * Testicle(Testis)
    */
-  TesticleTestis: "TESTI",
+  TESTI: "TESTI",
 
   /**
    * Thigh
    */
-  Thigh: "THIGH",
+  THIGH: "THIGH",
 
   /**
    * Thorax/Thoracic/Thoracentesis
    */
-  ThoraxThoracicThoracentesis: "THORA",
+  THORA: "THORA",
 
   /**
    * Throat
    */
-  Throat: "THRB",
+  THRB: "THRB",
 
   /**
    * Thumb
    */
-  Thumb: "THUMB",
+  THUMB: "THUMB",
 
   /**
    * Thumbnail
    */
-  Thumbnail: "TNL",
+  TNL: "TNL",
 
   /**
    * Thymus
    */
-  Thymus: "THM",
+  THM: "THM",
 
   /**
    * Thyroid
    */
-  Thyroid: "THYRD",
+  THYRD: "THYRD",
 
   /**
    * Tibia
    */
-  Tibia: "TIBIA",
+  TIBIA: "TIBIA",
 
   /**
    * Toe
    */
-  Toe: "TOE",
+  TOE: "TOE",
 
   /**
    * Toe Nail
    */
-  ToeNail: "TOEN",
+  TOEN: "TOEN",
 
   /**
    * Tongue
    */
-  Tongue: "TONG",
+  TONG: "TONG",
 
   /**
    * Tonsil
    */
-  Tonsil: "TONS",
+  TONS: "TONS",
 
   /**
    * Tooth
    */
-  Tooth: "TOOTH",
+  TOOTH: "TOOTH",
 
   /**
    * Tooth Socket
    */
-  ToothSocket: "TSK",
+  TSK: "TSK",
 
   /**
    * Trachea/Tracheal
    */
-  TracheaTracheal: "TRCHE",
+  TRCHE: "TRCHE",
 
   /**
    * Transbronchial
    */
-  Transbronchial: "TBRON",
+  TBRON: "TBRON",
 
   /**
    * Transcarina Asp
    */
-  TranscarinaAsp: "TCN",
+  TCN: "TCN",
 
   /**
    * Ulna/Ulnar
    */
-  UlnaUlnar: "ULNA",
+  ULNA: "ULNA",
 
   /**
    * Umbilical Blood
    */
-  UmbilicalBlood: "UMB",
+  UMB: "UMB",
 
   /**
    * Umbilicus/Umbilical
    */
-  UmbilicusUmbilical: "UMBL",
+  UMBL: "UMBL",
 
   /**
    * Ureter
    */
-  Ureter: "URET",
+  URET: "URET",
 
   /**
    * Urethra
    */
-  Urethra: "URTH",
+  URTH: "URTH",
 
   /**
    * Uterine
    */
-  Uterine: "UTERI",
+  UTERI: "UTERI",
 
   /**
    * Uterine Cul/De/Sac
    */
-  UterineCulDeSac: "SAC",
+  SAC: "SAC",
 
   /**
    * Uterus
    */
-  Uterus: "UTER",
+  UTER: "UTER",
 
   /**
    * Vagina/Vaginal
    */
-  VaginaVaginal: "VAGIN",
+  VAGIN: "VAGIN",
 
   /**
    * Vaginal Cuff
    */
-  VaginalCuff: "VCUFF",
+  VCUFF: "VCUFF",
 
   /**
    * Vaginal Vault
    */
-  VaginalVault: "VGV",
+  VGV: "VGV",
 
   /**
    * Valve
    */
-  Valve: "VAL",
+  VAL: "VAL",
 
   /**
    * Vas Deferens
    */
-  VasDeferens: "VAS",
+  VAS: "VAS",
 
   /**
    * Vastus Lateralis
    */
-  VastusLateralis: "VASTL",
+  VASTL: "VASTL",
 
   /**
    * Vault
    */
-  Vault: "VAULT",
+  VAULT: "VAULT",
 
   /**
    * Vein
    */
-  Vein: "VEIN",
+  VEIN: "VEIN",
 
   /**
    * Ventragluteal
    */
-  Ventragluteal: "VENTG",
+  VENTG: "VENTG",
 
   /**
    * Ventricular CSF
    */
-  VentricularCSF: "VCSF",
+  VCSF: "VCSF",
 
   /**
    * Vermis Cerebelli
    */
-  VermisCerebelli: "VERMI",
+  VERMI: "VERMI",
 
   /**
    * Vertebra, cervical
    */
-  Vertebracervical: "VERTC",
+  VERTC: "VERTC",
 
   /**
    * Vertebra, lumbar
    */
-  Vertebralumbar: "VERTL",
+  VERTL: "VERTL",
 
   /**
    * Vertebra, thoracic
    */
-  Vertebrathoracic: "VERTT",
+  VERTT: "VERTT",
 
   /**
    * Vesicle
    */
-  Vesicle: "VESI",
+  VESI: "VESI",
 
   /**
    * Vesicular
    */
-  Vesicular: "VESCL",
+  VESCL: "VESCL",
 
   /**
    * Vesicular Fluid
    */
-  VesicularFluid: "VESFLD",
+  VESFLD: "VESFLD",
 
   /**
    * Vestibule(Genital)
    */
-  VestibuleGenital: "VESTI",
+  VESTI: "VESTI",
 
   /**
    * Vitreous Fluid
    */
-  VitreousFluid: "VITR",
+  VITR: "VITR",
 
   /**
    * Vocal Cord
    */
-  VocalCord: "VOC",
+  VOC: "VOC",
 
   /**
    * Vulva
    */
-  Vulva: "VULVA",
+  VULVA: "VULVA",
 
   /**
    * Wrist
    */
-  Wrist: "WRIST",
+  WRIST: "WRIST",
 } as const;
 
 /**

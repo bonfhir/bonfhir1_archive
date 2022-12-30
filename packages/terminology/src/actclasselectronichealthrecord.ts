@@ -8,7 +8,7 @@ export const ActClassElectronicHealthRecordCode = {
   /**
    * electronic health record
    */
-  electronichealthrecord: "EHR",
+  EHR: "EHR",
 } as const;
 
 /**

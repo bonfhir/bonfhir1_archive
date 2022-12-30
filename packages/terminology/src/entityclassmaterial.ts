@@ -6,47 +6,47 @@ export const EntityClassMaterialCode = {
   /**
    * material
    */
-  material: "MAT",
+  MAT: "MAT",
 
   /**
    * chemical substance
    */
-  chemicalsubstance: "CHEM",
+  CHEM: "CHEM",
 
   /**
    * food
    */
-  food: "FOOD",
+  FOOD: "FOOD",
 
   /**
    * manufactured material
    */
-  manufacturedmaterial: "MMAT",
+  MMAT: "MMAT",
 
   /**
    * container
    */
-  container: "CONT",
+  CONT: "CONT",
 
   /**
    * holder
    */
-  holder: "HOLD",
+  HOLD: "HOLD",
 
   /**
    * device
    */
-  device: "DEV",
+  DEV: "DEV",
 
   /**
    * certificate representation
    */
-  certificaterepresentation: "CER",
+  CER: "CER",
 
   /**
    * imaging modality
    */
-  imagingmodality: "MODDV",
+  MODDV: "MODDV",
 } as const;
 
 /**

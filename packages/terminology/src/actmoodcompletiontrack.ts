@@ -6,82 +6,82 @@ export const ActMoodCompletionTrackCode = {
   /**
    * potential
    */
-  potential: "_ActMoodPotential",
+  _ActMoodPotential: "_ActMoodPotential",
 
   /**
    * definition
    */
-  definition: "DEF",
+  DEF: "DEF",
 
   /**
    * permission
    */
-  permission: "PERM",
+  PERM: "PERM",
 
   /**
    * resource slot
    */
-  resourceslot: "SLOT",
+  SLOT: "SLOT",
 
   /**
    * event (occurrence)
    */
-  eventoccurrence: "EVN",
+  EVN: "EVN",
 
   /**
    * intent
    */
-  intent: "INT",
+  INT: "INT",
 
   /**
    * desire
    */
-  desire: "_ActMoodDesire",
+  _ActMoodDesire: "_ActMoodDesire",
 
   /**
    * act request
    */
-  actrequest: "_ActMoodActRequest",
+  _ActMoodActRequest: "_ActMoodActRequest",
 
   /**
    * appointment request
    */
-  appointmentrequest: "ARQ",
+  ARQ: "ARQ",
 
   /**
    * permission request
    */
-  permissionrequest: "PERMRQ",
+  PERMRQ: "PERMRQ",
 
   /**
    * request
    */
-  request: "RQO",
+  RQO: "RQO",
 
   /**
    * request
    */
-  request: "ORD",
+  ORD: "ORD",
 
   /**
    * proposal
    */
-  proposal: "PRP",
+  PRP: "PRP",
 
   /**
    * recommendation
    */
-  recommendation: "RMD",
+  RMD: "RMD",
 
   /**
    * promise
    */
-  promise: "PRMS",
+  PRMS: "PRMS",
 
   /**
    * appointment
    */
-  appointment: "APT",
+  APT: "APT",
 } as const;
 
 /**

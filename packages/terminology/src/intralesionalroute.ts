@@ -6,17 +6,17 @@ export const IntralesionalRouteCode = {
   /**
    * Injection, intralesional
    */
-  Injectionintralesional: "ILESINJ",
+  ILESINJ: "ILESINJ",
 
   /**
    * Irrigation, intralesional
    */
-  Irrigationintralesional: "ILESIRR",
+  ILESIRR: "ILESIRR",
 
   /**
    * Topical application, intralesional
    */
-  Topicalapplicationintralesional: "ILTOP",
+  ILTOP: "ILTOP",
 } as const;
 
 /**

@@ -6,137 +6,137 @@ export const EntityClassRootCode = {
   /**
    * entity
    */
-  entity: "ENT",
+  ENT: "ENT",
 
   /**
    * health chart entity
    */
-  healthchartentity: "HCE",
+  HCE: "HCE",
 
   /**
    * living subject
    */
-  livingsubject: "LIV",
+  LIV: "LIV",
 
   /**
    * non-person living subject
    */
-  nonpersonlivingsubject: "NLIV",
+  NLIV: "NLIV",
 
   /**
    * animal
    */
-  animal: "ANM",
+  ANM: "ANM",
 
   /**
    * microorganism
    */
-  microorganism: "MIC",
+  MIC: "MIC",
 
   /**
    * plant
    */
-  plant: "PLNT",
+  PLNT: "PLNT",
 
   /**
    * person
    */
-  person: "PSN",
+  PSN: "PSN",
 
   /**
    * material
    */
-  material: "MAT",
+  MAT: "MAT",
 
   /**
    * chemical substance
    */
-  chemicalsubstance: "CHEM",
+  CHEM: "CHEM",
 
   /**
    * food
    */
-  food: "FOOD",
+  FOOD: "FOOD",
 
   /**
    * manufactured material
    */
-  manufacturedmaterial: "MMAT",
+  MMAT: "MMAT",
 
   /**
    * container
    */
-  container: "CONT",
+  CONT: "CONT",
 
   /**
    * holder
    */
-  holder: "HOLD",
+  HOLD: "HOLD",
 
   /**
    * device
    */
-  device: "DEV",
+  DEV: "DEV",
 
   /**
    * certificate representation
    */
-  certificaterepresentation: "CER",
+  CER: "CER",
 
   /**
    * imaging modality
    */
-  imagingmodality: "MODDV",
+  MODDV: "MODDV",
 
   /**
    * organization
    */
-  organization: "ORG",
+  ORG: "ORG",
 
   /**
    * public institution
    */
-  publicinstitution: "PUB",
+  PUB: "PUB",
 
   /**
    * state
    */
-  state: "STATE",
+  STATE: "STATE",
 
   /**
    * Nation
    */
-  Nation: "NAT",
+  NAT: "NAT",
 
   /**
    * place
    */
-  place: "PLC",
+  PLC: "PLC",
 
   /**
    * city or town
    */
-  cityortown: "CITY",
+  CITY: "CITY",
 
   /**
    * country
    */
-  country: "COUNTRY",
+  COUNTRY: "COUNTRY",
 
   /**
    * county or parish
    */
-  countyorparish: "COUNTY",
+  COUNTY: "COUNTY",
 
   /**
    * state or province
    */
-  stateorprovince: "PROVINCE",
+  PROVINCE: "PROVINCE",
 
   /**
    * group
    */
-  group: "RGRP",
+  RGRP: "RGRP",
 } as const;
 
 /**

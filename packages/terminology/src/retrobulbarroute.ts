@@ -6,7 +6,7 @@ export const RetrobulbarRouteCode = {
   /**
    * Injection, retrobulbar
    */
-  Injectionretrobulbar: "RBINJ",
+  RBINJ: "RBINJ",
 } as const;
 
 /**

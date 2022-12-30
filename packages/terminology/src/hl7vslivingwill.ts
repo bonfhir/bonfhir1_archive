@@ -6,27 +6,27 @@ export const Hl7VSLivingWillCode = {
   /**
    * Yes, patient has a living will
    */
-  Yespatienthasalivingwill: "Y",
+  Y: "Y",
 
   /**
    * Yes, patient has a living will but it is not on file
    */
-  Yespatienthasalivingwillbutitisnotonfile: "F",
+  F: "F",
 
   /**
    * No, patient does not have a living will and no information was provided
    */
-  Nopatientdoesnothavealivingwillandnoinformationwasprovided: "N",
+  N: "N",
 
   /**
    * No, patient does not have a living will but information was provided
    */
-  Nopatientdoesnothavealivingwillbutinformationwasprovided: "I",
+  I: "I",
 
   /**
    * Unknown
    */
-  Unknown: "U",
+  U: "U",
 } as const;
 
 /**

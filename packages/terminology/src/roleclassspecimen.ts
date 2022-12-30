@@ -6,17 +6,17 @@ export const RoleClassSpecimenCode = {
   /**
    * specimen
    */
-  specimen: "SPEC",
+  SPEC: "SPEC",
 
   /**
    * aliquot
    */
-  aliquot: "ALQT",
+  ALQT: "ALQT",
 
   /**
    * isolate
    */
-  isolate: "ISLT",
+  ISLT: "ISLT",
 } as const;
 
 /**

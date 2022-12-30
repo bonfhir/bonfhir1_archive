@@ -6,7 +6,7 @@ export const TepimanCode = {
   /**
    * Papago-Pima
    */
-  PapagoPima: "x-PAP",
+  "x-PAP": "x-PAP",
 } as const;
 
 /**

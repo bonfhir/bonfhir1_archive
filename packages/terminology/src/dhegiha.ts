@@ -6,22 +6,22 @@ export const DhegihaCode = {
   /**
    * Kansa
    */
-  Kansa: "x-KAA",
+  "x-KAA": "x-KAA",
 
   /**
    * Omaha-Ponca
    */
-  OmahaPonca: "x-OMA",
+  "x-OMA": "x-OMA",
 
   /**
    * Osage
    */
-  Osage: "x-OSA",
+  "x-OSA": "x-OSA",
 
   /**
    * Quapaw
    */
-  Quapaw: "x-QUA",
+  "x-QUA": "x-QUA",
 } as const;
 
 /**

@@ -6,22 +6,22 @@ export const SahaptianCode = {
   /**
    * Umatilla
    */
-  Umatilla: "x-UMA",
+  "x-UMA": "x-UMA",
 
   /**
    * Walla Walla
    */
-  WallaWalla: "x-WAA",
+  "x-WAA": "x-WAA",
 
   /**
    * Tenino
    */
-  Tenino: "x-WAR",
+  "x-WAR": "x-WAR",
 
   /**
    * Yakima
    */
-  Yakima: "x-YAK",
+  "x-YAK": "x-YAK",
 } as const;
 
 /**

@@ -6,17 +6,17 @@ export const AddressLineCode = {
   /**
    * address line
    */
-  addressline: "AL",
+  AL: "AL",
 
   /**
    * delivery address line
    */
-  deliveryaddressline: "DAL",
+  DAL: "DAL",
 
   /**
    * street address line
    */
-  streetaddressline: "SAL",
+  SAL: "SAL",
 } as const;
 
 /**

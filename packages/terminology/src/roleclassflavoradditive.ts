@@ -6,7 +6,7 @@ export const RoleClassFlavorAdditiveCode = {
   /**
    * flavor additive
    */
-  flavoradditive: "FLVR",
+  FLVR: "FLVR",
 } as const;
 
 /**

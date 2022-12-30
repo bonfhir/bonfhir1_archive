@@ -6,12 +6,12 @@ export const StrengthOfRecommendationRatingCode = {
   /**
    * Strong
    */
-  Strong: "strong",
+  strong: "strong",
 
   /**
    * Weak
    */
-  Weak: "weak",
+  weak: "weak",
 } as const;
 
 /**

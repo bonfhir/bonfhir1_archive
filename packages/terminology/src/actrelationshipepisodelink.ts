@@ -6,7 +6,7 @@ export const ActRelationshipEpisodelinkCode = {
   /**
    * episodeLink
    */
-  episodeLink: "ELNK",
+  ELNK: "ELNK",
 } as const;
 
 /**

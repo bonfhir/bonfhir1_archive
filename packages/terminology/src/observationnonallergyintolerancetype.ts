@@ -6,22 +6,22 @@ export const ObservationNonAllergyIntoleranceTypeCode = {
   /**
    * Non-Allergy Intolerance
    */
-  NonAllergyIntolerance: "NAINT",
+  NAINT: "NAINT",
 
   /**
    * Drug Non-Allergy Intolerance
    */
-  DrugNonAllergyIntolerance: "DNAINT",
+  DNAINT: "DNAINT",
 
   /**
    * Environmental Non-Allergy Intolerance
    */
-  EnvironmentalNonAllergyIntolerance: "ENAINT",
+  ENAINT: "ENAINT",
 
   /**
    * Food Non-Allergy Intolerance
    */
-  FoodNonAllergyIntolerance: "FNAINT",
+  FNAINT: "FNAINT",
 } as const;
 
 /**

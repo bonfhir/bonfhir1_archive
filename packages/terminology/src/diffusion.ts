@@ -6,17 +6,17 @@ export const DiffusionCode = {
   /**
    * Diffusion, extracorporeal
    */
-  Diffusionextracorporeal: "EXTCORPDIF",
+  EXTCORPDIF: "EXTCORPDIF",
 
   /**
    * Diffusion, hemodialysis
    */
-  Diffusionhemodialysis: "HEMODIFF",
+  HEMODIFF: "HEMODIFF",
 
   /**
    * Diffusion, transdermal
    */
-  Diffusiontransdermal: "TRNSDERMD",
+  TRNSDERMD: "TRNSDERMD",
 } as const;
 
 /**

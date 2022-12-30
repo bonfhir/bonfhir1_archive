@@ -6,12 +6,12 @@ export const GIClinicPracticeSettingCode = {
   /**
    * Gastroenterology clinic
    */
-  Gastroenterologyclinic: "GI",
+  GI: "GI",
 
   /**
    * Pediatric gastroenterology clinic
    */
-  Pediatricgastroenterologyclinic: "PEDGI",
+  PEDGI: "PEDGI",
 } as const;
 
 /**

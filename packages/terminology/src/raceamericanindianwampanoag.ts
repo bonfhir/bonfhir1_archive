@@ -6,17 +6,17 @@ export const RaceAmericanIndianWampanoagCode = {
   /**
    * Wampanoag
    */
-  Wampanoag: "1679-0",
+  "1679-0": "1679-0",
 
   /**
    * Gay Head Wampanoag
    */
-  GayHeadWampanoag: "1680-8",
+  "1680-8": "1680-8",
 
   /**
    * Mashpee Wampanoag
    */
-  MashpeeWampanoag: "1681-6",
+  "1681-6": "1681-6",
 } as const;
 
 /**

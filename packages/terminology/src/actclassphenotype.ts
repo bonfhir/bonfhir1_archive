@@ -6,7 +6,7 @@ export const ActClassPhenotypeCode = {
   /**
    * phenotype
    */
-  phenotype: "PHN",
+  PHN: "PHN",
 } as const;
 
 /**

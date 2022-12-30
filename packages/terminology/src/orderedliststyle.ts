@@ -6,7 +6,7 @@ export const OrderedListStyleCode = {
   /**
    * Ordered List Style
    */
-  OrderedListStyle: "_OrderedListStyle",
+  _OrderedListStyle: "_OrderedListStyle",
 
   /**
    * Arabic
@@ -21,7 +21,7 @@ export const OrderedListStyleCode = {
   /**
    * Big Alpha
    */
-  BigAlpha: "BIG.ALPHA",
+  "BIG.ALPHA": "BIG.ALPHA",
 
   /**
    * Big Roman
@@ -31,7 +31,7 @@ export const OrderedListStyleCode = {
   /**
    * Big Roman
    */
-  BigRoman: "BIG.ROMAN",
+  "BIG.ROMAN": "BIG.ROMAN",
 
   /**
    * Little Alpha
@@ -41,7 +41,7 @@ export const OrderedListStyleCode = {
   /**
    * Little Alpha
    */
-  LittleAlpha: "LITTLE.ALPHA",
+  "LITTLE.ALPHA": "LITTLE.ALPHA",
 
   /**
    * Little Roman
@@ -51,7 +51,7 @@ export const OrderedListStyleCode = {
   /**
    * Little Roman
    */
-  LittleRoman: "LITTLE.ROMAN",
+  "LITTLE.ROMAN": "LITTLE.ROMAN",
 } as const;
 
 /**

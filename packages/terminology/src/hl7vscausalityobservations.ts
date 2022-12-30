@@ -6,57 +6,57 @@ export const Hl7VSCausalityObservationsCode = {
   /**
    * Abatement of event after product withdrawn
    */
-  Abatementofeventafterproductwithdrawn: "AW",
+  AW: "AW",
 
   /**
    * Event recurred after product reintroduced
    */
-  Eventrecurredafterproductreintroduced: "BE",
+  BE: "BE",
 
   /**
    * Literature reports association of product with event
    */
-  Literaturereportsassociationofproductwithevent: "LI",
+  LI: "LI",
 
   /**
    * Event occurred after product introduced
    */
-  Eventoccurredafterproductintroduced: "IN",
+  IN: "IN",
 
   /**
    * Alternative explanations for the event available
    */
-  Alternativeexplanationsfortheeventavailable: "EX",
+  EX: "EX",
 
   /**
    * Effect observed when patient receives placebo
    */
-  Effectobservedwhenpatientreceivesplacebo: "PL",
+  PL: "PL",
 
   /**
    * Toxic levels of product documented in blood or body fluids
    */
-  Toxiclevelsofproductdocumentedinbloodorbodyfluids: "TC",
+  TC: "TC",
 
   /**
    * Dose response observed
    */
-  Doseresponseobserved: "DR",
+  DR: "DR",
 
   /**
    * Similar events in past for this patient
    */
-  Similareventsinpastforthispatient: "SE",
+  SE: "SE",
 
   /**
    * Occurrence of event was confirmed by objective evidence
    */
-  Occurrenceofeventwasconfirmedbyobjectiveevidence: "OE",
+  OE: "OE",
 
   /**
    * Other
    */
-  Other: "OT",
+  OT: "OT",
 } as const;
 
 /**

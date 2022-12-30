@@ -6,37 +6,37 @@ export const RectalRouteCode = {
   /**
    * Enema, rectal
    */
-  Enemarectal: "ENEMA",
+  ENEMA: "ENEMA",
 
   /**
    * Enema, rectal retention
    */
-  Enemarectalretention: "RETENEMA",
+  RETENEMA: "RETENEMA",
 
   /**
    * Insertion, rectal
    */
-  Insertionrectal: "PR",
+  PR: "PR",
 
   /**
    * Instillation, rectal
    */
-  Instillationrectal: "RECINSTL",
+  RECINSTL: "RECINSTL",
 
   /**
    * Instillation, rectal tube
    */
-  Instillationrectaltube: "RECTINSTL",
+  RECTINSTL: "RECTINSTL",
 
   /**
    * Irrigation, rectal
    */
-  Irrigationrectal: "RECIRR",
+  RECIRR: "RECIRR",
 
   /**
    * Topical application, rectal
    */
-  Topicalapplicationrectal: "RECTAL",
+  RECTAL: "RECTAL",
 } as const;
 
 /**

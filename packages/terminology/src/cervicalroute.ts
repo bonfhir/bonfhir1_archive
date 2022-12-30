@@ -6,27 +6,27 @@ export const CervicalRouteCode = {
   /**
    * Topical application, cervical
    */
-  Topicalapplicationcervical: "CERV",
+  CERV: "CERV",
 
   /**
    * Injection, cervical
    */
-  Injectioncervical: "CERVINJ",
+  CERVINJ: "CERVINJ",
 
   /**
    * Insertion, cervical (uterine)
    */
-  Insertioncervicaluterine: "CERVINS",
+  CERVINS: "CERVINS",
 
   /**
    * Topical application, dental
    */
-  Topicalapplicationdental: "DEN",
+  DEN: "DEN",
 
   /**
    * Rinse, dental
    */
-  Rinsedental: "DENRINSE",
+  DENRINSE: "DENRINSE",
 } as const;
 
 /**

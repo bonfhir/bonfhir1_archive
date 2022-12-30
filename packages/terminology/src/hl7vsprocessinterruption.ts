@@ -6,19 +6,17 @@ export const Hl7VSProcessInterruptionCode = {
   /**
    * Process was not interrupted
    */
-  Processwasnotinterrupted: "NIN",
+  NIN: "NIN",
 
   /**
    * Walk Out: Process interrupted before the Phlebotomist inserts the needle in the Donor's arm
    */
-  WalkOutProcessinterruptedbeforethePhlebotomistinsertstheneedleintheDonorsarm:
-    "WOT",
+  WOT: "WOT",
 
   /**
    * Aborted Run: Process interrupted after the Phlebotomist inserts the needle in the Donor's arm
    */
-  AbortedRunProcessinterruptedafterthePhlebotomistinsertstheneedleintheDonorsarm:
-    "ABR",
+  ABR: "ABR",
 } as const;
 
 /**

@@ -10,7 +10,7 @@ export const RoleClassIndividualCode = {
   /**
    * individual
    */
-  individual: "INDIV",
+  INDIV: "INDIV",
 } as const;
 
 /**

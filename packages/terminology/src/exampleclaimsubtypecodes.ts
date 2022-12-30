@@ -6,12 +6,12 @@ export const ExampleClaimSubTypeCodesCode = {
   /**
    * Orthodontic Claim
    */
-  OrthodonticClaim: "ortho",
+  ortho: "ortho",
 
   /**
    * Emergency Claim
    */
-  EmergencyClaim: "emergency",
+  emergency: "emergency",
 } as const;
 
 /**

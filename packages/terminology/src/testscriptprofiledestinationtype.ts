@@ -6,22 +6,22 @@ export const TestScriptProfileDestinationTypeCode = {
   /**
    * FHIR Server
    */
-  FHIRServer: "FHIR-Server",
+  "FHIR-Server": "FHIR-Server",
 
   /**
    * FHIR SDC FormManager
    */
-  FHIRSDCFormManager: "FHIR-SDC-FormManager",
+  "FHIR-SDC-FormManager": "FHIR-SDC-FormManager",
 
   /**
    * FHIR SDC FormProcessor
    */
-  FHIRSDCFormProcessor: "FHIR-SDC-FormProcessor",
+  "FHIR-SDC-FormProcessor": "FHIR-SDC-FormProcessor",
 
   /**
    * FHIR SDC FormReceiver
    */
-  FHIRSDCFormReceiver: "FHIR-SDC-FormReceiver",
+  "FHIR-SDC-FormReceiver": "FHIR-SDC-FormReceiver",
 } as const;
 
 /**

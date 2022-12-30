@@ -6,32 +6,32 @@ export const ParticipationInformationRecipientCode = {
   /**
    * information recipient
    */
-  informationrecipient: "IRCP",
+  IRCP: "IRCP",
 
   /**
    * ugent notification contact
    */
-  ugentnotificationcontact: "NOT",
+  NOT: "NOT",
 
   /**
    * primary information recipient
    */
-  primaryinformationrecipient: "PRCP",
+  PRCP: "PRCP",
 
   /**
    * Referred By
    */
-  ReferredBy: "REFB",
+  REFB: "REFB",
 
   /**
    * Referred to
    */
-  Referredto: "REFT",
+  REFT: "REFT",
 
   /**
    * tracker
    */
-  tracker: "TRC",
+  TRC: "TRC",
 } as const;
 
 /**

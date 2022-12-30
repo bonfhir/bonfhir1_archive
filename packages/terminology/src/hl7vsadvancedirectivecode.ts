@@ -6,12 +6,12 @@ export const Hl7VSAdvanceDirectiveCodeCode = {
   /**
    * Do not resuscitate
    */
-  Donotresuscitate: "DNR",
+  DNR: "DNR",
 
   /**
    * No directive
    */
-  Nodirective: "N",
+  N: "N",
 } as const;
 
 /**

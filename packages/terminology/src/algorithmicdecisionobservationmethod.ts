@@ -6,12 +6,12 @@ export const AlgorithmicDecisionObservationMethodCode = {
   /**
    * algorithm
    */
-  algorithm: "ALGM",
+  ALGM: "ALGM",
 
   /**
    * bayesian calculation
    */
-  bayesiancalculation: "BYCL",
+  BYCL: "BYCL",
 } as const;
 
 /**

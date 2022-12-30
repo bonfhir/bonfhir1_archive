@@ -6,12 +6,12 @@ export const EnemaCode = {
   /**
    * Enema, rectal
    */
-  Enemarectal: "ENEMA",
+  ENEMA: "ENEMA",
 
   /**
    * Enema, rectal retention
    */
-  Enemarectalretention: "RETENEMA",
+  RETENEMA: "RETENEMA",
 } as const;
 
 /**

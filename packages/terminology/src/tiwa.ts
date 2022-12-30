@@ -6,12 +6,12 @@ export const TiwaCode = {
   /**
    * Northern Tiwa
    */
-  NorthernTiwa: "x-TAO",
+  "x-TAO": "x-TAO",
 
   /**
    * Southern Tiwa
    */
-  SouthernTiwa: "x-TIX",
+  "x-TIX": "x-TIX",
 } as const;
 
 /**

@@ -6,17 +6,17 @@ export const ResidentialTreatmentPracticeSettingCode = {
   /**
    * Residential treatment facility
    */
-  Residentialtreatmentfacility: "RTF",
+  RTF: "RTF",
 
   /**
    * Pain rehabilitation center
    */
-  Painrehabilitationcenter: "PRC",
+  PRC: "PRC",
 
   /**
    * Substance use rehabilitation facility
    */
-  Substanceuserehabilitationfacility: "SURF",
+  SURF: "SURF",
 } as const;
 
 /**

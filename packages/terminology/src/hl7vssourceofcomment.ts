@@ -6,17 +6,17 @@ export const Hl7VSSourceOfCommentCode = {
   /**
    * Ancillary (filler) department is source of comment
    */
-  Ancillaryfillerdepartmentissourceofcomment: "L",
+  L: "L",
 
   /**
    * Orderer (placer) is source of comment
    */
-  Ordererplacerissourceofcomment: "P",
+  P: "P",
 
   /**
    * Other system is source of comment
    */
-  Othersystemissourceofcomment: "O",
+  O: "O",
 } as const;
 
 /**

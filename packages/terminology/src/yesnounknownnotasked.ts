@@ -6,22 +6,22 @@ export const YesNoUnknownNotAskedCode = {
   /**
    * Yes
    */
-  Yes: "Y",
+  Y: "Y",
 
   /**
    * No
    */
-  No: "N",
+  N: "N",
 
   /**
    * Unknown
    */
-  Unknown: "ASKU",
+  ASKU: "ASKU",
 
   /**
    * Not Asked
    */
-  NotAsked: "NASK",
+  NASK: "NASK",
 } as const;
 
 /**

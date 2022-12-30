@@ -8,92 +8,92 @@ export const EntityHandlingCode = {
   /**
    * Ambient Temperature
    */
-  AmbientTemperature: "AMB",
+  AMB: "AMB",
 
   /**
    * Body Temperature
    */
-  BodyTemperature: "C37",
+  C37: "C37",
 
   /**
    * Critical Ambient temperature
    */
-  CriticalAmbienttemperature: "CAMB",
+  CAMB: "CAMB",
 
   /**
    * Protect from Air
    */
-  ProtectfromAir: "CATM",
+  CATM: "CATM",
 
   /**
    * Critical frozen
    */
-  Criticalfrozen: "CFRZ",
+  CFRZ: "CFRZ",
 
   /**
    * Critical refrigerated temperature
    */
-  Criticalrefrigeratedtemperature: "CREF",
+  CREF: "CREF",
 
   /**
    * Deep Frozen
    */
-  DeepFrozen: "DFRZ",
+  DFRZ: "DFRZ",
 
   /**
    * dry
    */
-  dry: "DRY",
+  DRY: "DRY",
 
   /**
    * frozen
    */
-  frozen: "FRZ",
+  FRZ: "FRZ",
 
   /**
    * Metal Free
    */
-  MetalFree: "MTLF",
+  MTLF: "MTLF",
 
   /**
    * nitrogen
    */
-  nitrogen: "NTR",
+  NTR: "NTR",
 
   /**
    * Protect from Light
    */
-  ProtectfromLight: "PRTL",
+  PRTL: "PRTL",
 
   /**
    * do not shake
    */
-  donotshake: "PSA",
+  PSA: "PSA",
 
   /**
    * no shock
    */
-  noshock: "PSO",
+  PSO: "PSO",
 
   /**
    * Refrigerated temperature
    */
-  Refrigeratedtemperature: "REF",
+  REF: "REF",
 
   /**
    * Shake before use
    */
-  Shakebeforeuse: "SBU",
+  SBU: "SBU",
 
   /**
    * Ultra frozen
    */
-  Ultrafrozen: "UFRZ",
+  UFRZ: "UFRZ",
 
   /**
    * upright
    */
-  upright: "UPR",
+  UPR: "UPR",
 } as const;
 
 /**

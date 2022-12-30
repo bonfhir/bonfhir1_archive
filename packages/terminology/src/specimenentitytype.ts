@@ -6,627 +6,627 @@ export const SpecimenEntityTypeCode = {
   /**
    * Abcess
    */
-  Abcess: "ABS",
+  ABS: "ABS",
 
   /**
    * Amniotic fluid
    */
-  Amnioticfluid: "AMN",
+  AMN: "AMN",
 
   /**
    * Aspirate
    */
-  Aspirate: "ASP",
+  ASP: "ASP",
 
   /**
    * Blood bag
    */
-  Bloodbag: "BBL",
+  BBL: "BBL",
 
   /**
    * Whole body
    */
-  Wholebody: "BDY",
+  BDY: "BDY",
 
   /**
    * Bile fluid
    */
-  Bilefluid: "BIFL",
+  BIFL: "BIFL",
 
   /**
    * Whole blood
    */
-  Wholeblood: "BLD",
+  BLD: "BLD",
 
   /**
    * Blood arterial
    */
-  Bloodarterial: "BLDA",
+  BLDA: "BLDA",
 
   /**
    * Blood capillary
    */
-  Bloodcapillary: "BLDC",
+  BLDC: "BLDC",
 
   /**
    * Blood - cord
    */
-  Bloodcord: "BLDCO",
+  BLDCO: "BLDCO",
 
   /**
    * Blood venous
    */
-  Bloodvenous: "BLDV",
+  BLDV: "BLDV",
 
   /**
    * Bone
    */
-  Bone: "BON",
+  BON: "BON",
 
   /**
    * Basophils
    */
-  Basophils: "BPH",
+  BPH: "BPH",
 
   /**
    * Blood product unit
    */
-  Bloodproductunit: "BPU",
+  BPU: "BPU",
 
   /**
    * Burn
    */
-  Burn: "BRN",
+  BRN: "BRN",
 
   /**
    * Bronchial
    */
-  Bronchial: "BRO",
+  BRO: "BRO",
 
   /**
    * Exhaled gas (=breath)
    */
-  Exhaledgasbreath: "BRTH",
+  BRTH: "BRTH",
 
   /**
    * Exhaled gas (=breath)
    */
-  Exhaledgasbreath: "EXG",
+  EXG: "EXG",
 
   /**
    * Calculus (=Stone)
    */
-  CalculusStone: "CALC",
+  CALC: "CALC",
 
   /**
    * Calculus (=Stone)
    */
-  CalculusStone: "STON",
+  STON: "STON",
 
   /**
    * Cardiac muscle
    */
-  Cardiacmuscle: "CDM",
+  CDM: "CDM",
 
   /**
    * Conjunctiva
    */
-  Conjunctiva: "CNJT",
+  CNJT: "CNJT",
 
   /**
    * Cannula
    */
-  Cannula: "CNL",
+  CNL: "CNL",
 
   /**
    * Colostrum
    */
-  Colostrum: "COL",
+  COL: "COL",
 
   /**
    * Cornea
    */
-  Cornea: "CRN",
+  CRN: "CRN",
 
   /**
    * Cerebral spinal fluid
    */
-  Cerebralspinalfluid: "CSF",
+  CSF: "CSF",
 
   /**
    * Catheter tip
    */
-  Cathetertip: "CTP",
+  CTP: "CTP",
 
   /**
    * Curettage
    */
-  Curettage: "CUR",
+  CUR: "CUR",
 
   /**
    * Cervical mucus
    */
-  Cervicalmucus: "CVM",
+  CVM: "CVM",
 
   /**
    * Cervix
    */
-  Cervix: "CVX",
+  CVX: "CVX",
 
   /**
    * Cyst
    */
-  Cyst: "CYST",
+  CYST: "CYST",
 
   /**
    * Dialysis fluid
    */
-  Dialysisfluid: "DIAF",
+  DIAF: "DIAF",
 
   /**
    * Dose med or substance
    */
-  Dosemedorsubstance: "DOSE",
+  DOSE: "DOSE",
 
   /**
    * Drain
    */
-  Drain: "DRN",
+  DRN: "DRN",
 
   /**
    * Duodenal fluid
    */
-  Duodenalfluid: "DUFL",
+  DUFL: "DUFL",
 
   /**
    * Ear
    */
-  Ear: "EAR",
+  EAR: "EAR",
 
   /**
    * Ear wax (cerumen)
    */
-  Earwaxcerumen: "EARW",
+  EARW: "EARW",
 
   /**
    * Electrode
    */
-  Electrode: "ELT",
+  ELT: "ELT",
 
   /**
    * Endocardium
    */
-  Endocardium: "ENDC",
+  ENDC: "ENDC",
 
   /**
    * Endometrium
    */
-  Endometrium: "ENDM",
+  ENDM: "ENDM",
 
   /**
    * Eosinophils
    */
-  Eosinophils: "EOS",
+  EOS: "EOS",
 
   /**
    * Eye
    */
-  Eye: "EYE",
+  EYE: "EYE",
 
   /**
    * Fibroblasts
    */
-  Fibroblasts: "FIB",
+  FIB: "FIB",
 
   /**
    * Fistula
    */
-  Fistula: "FIST",
+  FIST: "FIST",
 
   /**
    * Filter
    */
-  Filter: "FLT",
+  FLT: "FLT",
 
   /**
    * Body fluid, unsp
    */
-  Bodyfluidunsp: "FLU",
+  FLU: "FLU",
 
   /**
    * Food sample
    */
-  Foodsample: "FOOD",
+  FOOD: "FOOD",
 
   /**
    * Gas
    */
-  Gas: "GAS",
+  GAS: "GAS",
 
   /**
    * Gastric fluid/contents
    */
-  Gastricfluidcontents: "GAST",
+  GAST: "GAST",
 
   /**
    * Genital
    */
-  Genital: "GEN",
+  GEN: "GEN",
 
   /**
    * Genital cervix
    */
-  Genitalcervix: "GENC",
+  GENC: "GENC",
 
   /**
    * Genital fluid
    */
-  Genitalfluid: "GENF",
+  GENF: "GENF",
 
   /**
    * Genital lochia
    */
-  Genitallochia: "GENL",
+  GENL: "GENL",
 
   /**
    * Genital vaginal
    */
-  Genitalvaginal: "GENV",
+  GENV: "GENV",
 
   /**
    * Hair
    */
-  Hair: "HAR",
+  HAR: "HAR",
 
   /**
    * Inhaled Gas
    */
-  InhaledGas: "IHG",
+  IHG: "IHG",
 
   /**
    * Isolate
    */
-  Isolate: "ISLT",
+  ISLT: "ISLT",
 
   /**
    * Intubation tube
    */
-  Intubationtube: "IT",
+  IT: "IT",
 
   /**
    * Lamella
    */
-  Lamella: "LAM",
+  LAM: "LAM",
 
   /**
    * Liquid NOS
    */
-  LiquidNOS: "LIQ",
+  LIQ: "LIQ",
 
   /**
    * Line
    */
-  Line: "LN",
+  LN: "LN",
 
   /**
    * Line arterial
    */
-  Linearterial: "LNA",
+  LNA: "LNA",
 
   /**
    * Line venous
    */
-  Linevenous: "LNV",
+  LNV: "LNV",
 
   /**
    * Lymphocytes
    */
-  Lymphocytes: "LYM",
+  LYM: "LYM",
 
   /**
    * Macrophages
    */
-  Macrophages: "MAC",
+  MAC: "MAC",
 
   /**
    * Marrow (bone)
    */
-  Marrowbone: "MAR",
+  MAR: "MAR",
 
   /**
    * Menstrual blood
    */
-  Menstrualblood: "MBLD",
+  MBLD: "MBLD",
 
   /**
    * Meconium
    */
-  Meconium: "MEC",
+  MEC: "MEC",
 
   /**
    * Breast milk
    */
-  Breastmilk: "MILK",
+  MILK: "MILK",
 
   /**
    * Milk
    */
-  Milk: "MLK",
+  MLK: "MLK",
 
   /**
    * Nail
    */
-  Nail: "NAIL",
+  NAIL: "NAIL",
 
   /**
    * Nose (nasal passage)
    */
-  Nosenasalpassage: "NOS",
+  NOS: "NOS",
 
   /**
    * Pancreatic fluid
    */
-  Pancreaticfluid: "PAFL",
+  PAFL: "PAFL",
 
   /**
    * Patient
    */
-  Patient: "PAT",
+  PAT: "PAT",
 
   /**
    * Plasma
    */
-  Plasma: "PLAS",
+  PLAS: "PLAS",
 
   /**
    * Plasma bag
    */
-  Plasmabag: "PLB",
+  PLB: "PLB",
 
   /**
    * Placenta
    */
-  Placenta: "PLC",
+  PLC: "PLC",
 
   /**
    * Pleural fluid (thoracentesis fld)
    */
-  Pleuralfluidthoracentesisfld: "PLR",
+  PLR: "PLR",
 
   /**
    * Polymorphonuclear neutrophils
    */
-  Polymorphonuclearneutrophils: "PMN",
+  PMN: "PMN",
 
   /**
    * Platelet poor plasma
    */
-  Plateletpoorplasma: "PPP",
+  PPP: "PPP",
 
   /**
    * Platelet rich plasma
    */
-  Plateletrichplasma: "PRP",
+  PRP: "PRP",
 
   /**
    * Peritoneal fluid /ascites
    */
-  Peritonealfluidascites: "PRT",
+  PRT: "PRT",
 
   /**
    * Pus
    */
-  Pus: "PUS",
+  PUS: "PUS",
 
   /**
    * Erythrocytes
    */
-  Erythrocytes: "RBC",
+  RBC: "RBC",
 
   /**
    * Saliva
    */
-  Saliva: "SAL",
+  SAL: "SAL",
 
   /**
    * Serum
    */
-  Serum: "SER",
+  SER: "SER",
 
   /**
    * Skeletal muscle
    */
-  Skeletalmuscle: "SKM",
+  SKM: "SKM",
 
   /**
    * Skin
    */
-  Skin: "SKN",
+  SKN: "SKN",
 
   /**
    * Seminal fluid
    */
-  Seminalfluid: "SMN",
+  SMN: "SMN",
 
   /**
    * Seminal plasma
    */
-  Seminalplasma: "SMPLS",
+  SMPLS: "SMPLS",
 
   /**
    * Synovial fluid (Joint fluid)
    */
-  SynovialfluidJointfluid: "SNV",
+  SNV: "SNV",
 
   /**
    * Spermatozoa
    */
-  Spermatozoa: "SPRM",
+  SPRM: "SPRM",
 
   /**
    * Sputum
    */
-  Sputum: "SPT",
+  SPT: "SPT",
 
   /**
    * Sputum - coughed
    */
-  Sputumcoughed: "SPTC",
+  SPTC: "SPTC",
 
   /**
    * Sputum - tracheal aspirate
    */
-  Sputumtrachealaspirate: "SPTT",
+  SPTT: "SPTT",
 
   /**
    * Stool = Fecal
    */
-  StoolFecal: "STL",
+  STL: "STL",
 
   /**
    * Sweat
    */
-  Sweat: "SWT",
+  SWT: "SWT",
 
   /**
    * Tears
    */
-  Tears: "TEAR",
+  TEAR: "TEAR",
 
   /**
    * Thrombocyte (platelet)
    */
-  Thrombocyteplatelet: "THRB",
+  THRB: "THRB",
 
   /**
    * Throat
    */
-  Throat: "THRT",
+  THRT: "THRT",
 
   /**
    * Tissue gall bladder
    */
-  Tissuegallbladder: "TISG",
+  TISG: "TISG",
 
   /**
    * Tissue placenta
    */
-  Tissueplacenta: "TISPL",
+  TISPL: "TISPL",
 
   /**
    * Tissue, unspecified
    */
-  Tissueunspecified: "TISS",
+  TISS: "TISS",
 
   /**
    * Tissue ulcer
    */
-  Tissueulcer: "TISU",
+  TISU: "TISU",
 
   /**
    * Tissue large intestine
    */
-  Tissuelargeintestine: "TLGI",
+  TLGI: "TLGI",
 
   /**
    * Tissue lung
    */
-  Tissuelung: "TLNG",
+  TLNG: "TLNG",
 
   /**
    * Tissue small intestine Tissue ulcer
    */
-  TissuesmallintestineTissueulcer: "TSMI",
+  TSMI: "TSMI",
 
   /**
    * Tube, unspecified
    */
-  Tubeunspecified: "TUB",
+  TUB: "TUB",
 
   /**
    * Ulcer
    */
-  Ulcer: "ULC",
+  ULC: "ULC",
 
   /**
    * Umbilical blood
    */
-  Umbilicalblood: "UMB",
+  UMB: "UMB",
 
   /**
    * Unknown medicine
    */
-  Unknownmedicine: "UMED",
+  UMED: "UMED",
 
   /**
    * Urine
    */
-  Urine: "UR",
+  UR: "UR",
 
   /**
    * Urine clean catch
    */
-  Urinecleancatch: "URC",
+  URC: "URC",
 
   /**
    * Urine sediment
    */
-  Urinesediment: "URNS",
+  URNS: "URNS",
 
   /**
    * Urine catheter
    */
-  Urinecatheter: "URT",
+  URT: "URT",
 
   /**
    * Urethra
    */
-  Urethra: "URTH",
+  URTH: "URTH",
 
   /**
    * Unknown substance
    */
-  Unknownsubstance: "USUB",
+  USUB: "USUB",
 
   /**
    * Vomitus
    */
-  Vomitus: "VOM",
+  VOM: "VOM",
 
   /**
    * Water
    */
-  Water: "WAT",
+  WAT: "WAT",
 
   /**
    * Leukocytes
    */
-  Leukocytes: "WBC",
+  WBC: "WBC",
 
   /**
    * Wick
    */
-  Wick: "WICK",
+  WICK: "WICK",
 
   /**
    * Wound
    */
-  Wound: "WND",
+  WND: "WND",
 
   /**
    * Wound abscess
    */
-  Woundabscess: "WNDA",
+  WNDA: "WNDA",
 
   /**
    * Wound drainage
    */
-  Wounddrainage: "WNDD",
+  WNDD: "WNDD",
 
   /**
    * Wound exudate
    */
-  Woundexudate: "WNDE",
+  WNDE: "WNDE",
 } as const;
 
 /**

@@ -6,22 +6,22 @@ export const Hl7VSReferralStatusCode = {
   /**
    * Accepted
    */
-  Accepted: "A",
+  A: "A",
 
   /**
    * Pending
    */
-  Pending: "P",
+  P: "P",
 
   /**
    * Rejected
    */
-  Rejected: "R",
+  R: "R",
 
   /**
    * Expired
    */
-  Expired: "E",
+  E: "E",
 } as const;
 
 /**

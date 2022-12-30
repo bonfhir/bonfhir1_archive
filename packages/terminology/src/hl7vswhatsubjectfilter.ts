@@ -6,193 +6,192 @@ export const Hl7VSWhatSubjectFilterCode = {
   /**
    * Advice/diagnosis
    */
-  Advicediagnosis: "ADV",
+  ADV: "ADV",
 
   /**
    * Nursing unit lookup (returns patients in beds, excluding empty beds)
    */
-  Nursingunitlookupreturnspatientsinbedsexcludingemptybeds: "ANU",
+  ANU: "ANU",
 
   /**
    * Patient name lookup
    */
-  Patientnamelookup: "APN",
+  APN: "APN",
 
   /**
    * Physician lookup
    */
-  Physicianlookup: "APP",
+  APP: "APP",
 
   /**
    * Nursing unit lookup (returns patients in beds, including empty beds)
    */
-  Nursingunitlookupreturnspatientsinbedsincludingemptybeds: "ARN",
+  ARN: "ARN",
 
   /**
    * Medical record number query, returns visits for a medical record number
    */
-  Medicalrecordnumberqueryreturnsvisitsforamedicalrecordnumber: "APM",
+  APM: "APM",
 
   /**
    * Account number query, return matching visit
    */
-  Accountnumberqueryreturnmatchingvisit: "APA",
+  APA: "APA",
 
   /**
    * Cancel.  Used to cancel a query
    */
-  CancelUsedtocancelaquery: "CAN",
+  CAN: "CAN",
 
   /**
    * Demographics
    */
-  Demographics: "DEM",
+  DEM: "DEM",
 
   /**
    * Financial
    */
-  Financial: "FIN",
+  FIN: "FIN",
 
   /**
    * Generate new identifier
    */
-  Generatenewidentifier: "GID",
+  GID: "GID",
 
   /**
    * Goals
    */
-  Goals: "GOL",
+  GOL: "GOL",
 
   /**
    * Most recent inpatient
    */
-  Mostrecentinpatient: "MRI",
+  MRI: "MRI",
 
   /**
    * Most recent outpatient
    */
-  Mostrecentoutpatient: "MRO",
+  MRO: "MRO",
 
   /**
    * Network clock
    */
-  Networkclock: "NCK",
+  NCK: "NCK",
 
   /**
    * Network status change
    */
-  Networkstatuschange: "NSC",
+  NSC: "NSC",
 
   /**
    * Network statistic
    */
-  Networkstatistic: "NST",
+  NST: "NST",
 
   /**
    * Order
    */
-  Order: "ORD",
+  ORD: "ORD",
 
   /**
    * Other
    */
-  Other: "OTH",
+  OTH: "OTH",
 
   /**
    * Problems
    */
-  Problems: "PRB",
+  PRB: "PRB",
 
   /**
    * Procedure
    */
-  Procedure: "PRO",
+  PRO: "PRO",
 
   /**
    * Result
    */
-  Result: "RES",
+  RES: "RES",
 
   /**
    * Pharmacy administration information
    */
-  Pharmacyadministrationinformation: "RAR",
+  RAR: "RAR",
 
   /**
    * Pharmacy encoded order information
    */
-  Pharmacyencodedorderinformation: "RER",
+  RER: "RER",
 
   /**
    * Pharmacy dispense information
    */
-  Pharmacydispenseinformation: "RDR",
+  RDR: "RDR",
 
   /**
    * Pharmacy give information
    */
-  Pharmacygiveinformation: "RGR",
+  RGR: "RGR",
 
   /**
    * Master file query
    */
-  Masterfilequery: "MFQ",
+  MFQ: "MFQ",
 
   /**
    * Pharmacy prescription information
    */
-  Pharmacyprescriptioninformation: "ROR",
+  ROR: "ROR",
 
   /**
    * All schedule related information, including open slots, booked slots, blocked slots
    */
-  Allschedulerelatedinformationincludingopenslotsbookedslotsblockedslots: "SAL",
+  SAL: "SAL",
 
   /**
    * Booked slots on the identified schedule
    */
-  Bookedslotsontheidentifiedschedule: "SBK",
+  SBK: "SBK",
 
   /**
    * Blocked slots on the identified schedule
    */
-  Blockedslotsontheidentifiedschedule: "SBL",
+  SBL: "SBL",
 
   /**
    * First open slot on the identified schedule after the start date/tiem
    */
-  Firstopenslotontheidentifiedscheduleafterthestartdatetiem: "SOF",
+  SOF: "SOF",
 
   /**
    * Open slots on the identified schedule between the begin and end of the start date/time range
    */
-  Openslotsontheidentifiedschedulebetweenthebeginandendofthestartdatetimerange:
-    "SOP",
+  SOP: "SOP",
 
   /**
    * Time slots available for a single appointment
    */
-  Timeslotsavailableforasingleappointment: "SSA",
+  SSA: "SSA",
 
   /**
    * Time slots available for a recurring appointment
    */
-  Timeslotsavailableforarecurringappointment: "SSR",
+  SSR: "SSR",
 
   /**
    * Status
    */
-  Status: "STA",
+  STA: "STA",
 
   /**
    * Vaccine Information
    */
-  VaccineInformation: "VXI",
+  VXI: "VXI",
 
   /**
    * Get cross-referenced identifiers
    */
-  Getcrossreferencedidentifiers: "XID",
+  XID: "XID",
 } as const;
 
 /**

@@ -6,7 +6,7 @@ export const ActRelationshipReplacesCode = {
   /**
    * replaces
    */
-  replaces: "RPLC",
+  RPLC: "RPLC",
 } as const;
 
 /**

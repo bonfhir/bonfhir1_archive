@@ -6,57 +6,57 @@ export const Hl7VSBloodProductProcessingRequirementsCode = {
   /**
    * Leukoreduced
    */
-  Leukoreduced: "LR",
+  LR: "LR",
 
   /**
    * Irradiated
    */
-  Irradiated: "IR",
+  IR: "IR",
 
   /**
    * CMV Safe
    */
-  CMVSafe: "CS",
+  CS: "CS",
 
   /**
    * Fresh unit
    */
-  Freshunit: "FR",
+  FR: "FR",
 
   /**
    * Autologous Unit
    */
-  AutologousUnit: "AU",
+  AU: "AU",
 
   /**
    * Directed Unit
    */
-  DirectedUnit: "DI",
+  DI: "DI",
 
   /**
    * HLA Matched
    */
-  HLAMatched: "HL",
+  HL: "HL",
 
   /**
    * CMV Negative
    */
-  CMVNegative: "CM",
+  CM: "CM",
 
   /**
    * Hemoglobin S Negative
    */
-  HemoglobinSNegative: "HB",
+  HB: "HB",
 
   /**
    * Washed
    */
-  Washed: "WA",
+  WA: "WA",
 
   /**
    * IgA Deficient
    */
-  IgADeficient: "IG",
+  IG: "IG",
 } as const;
 
 /**

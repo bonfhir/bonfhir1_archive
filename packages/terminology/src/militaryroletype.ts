@@ -8,22 +8,22 @@ export const MilitaryRoleTypeCode = {
   /**
    * military
    */
-  military: "MIL",
+  MIL: "MIL",
 
   /**
    * active duty military
    */
-  activedutymilitary: "ACTMIL",
+  ACTMIL: "ACTMIL",
 
   /**
    * retired military
    */
-  retiredmilitary: "RETMIL",
+  RETMIL: "RETMIL",
 
   /**
    * veteran
    */
-  veteran: "VET",
+  VET: "VET",
 } as const;
 
 /**

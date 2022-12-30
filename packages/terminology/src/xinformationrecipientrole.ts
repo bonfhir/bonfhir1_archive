@@ -6,27 +6,27 @@ export const XInformationRecipientRoleCode = {
   /**
    * assigned entity
    */
-  assignedentity: "ASSIGNED",
+  ASSIGNED: "ASSIGNED",
 
   /**
    * caregiver
    */
-  caregiver: "CAREGIVER",
+  CAREGIVER: "CAREGIVER",
 
   /**
    * guarantor
    */
-  guarantor: "GUAR",
+  GUAR: "GUAR",
 
   /**
    * healthcare provider
    */
-  healthcareprovider: "PROV",
+  PROV: "PROV",
 
   /**
    * personal relationship
    */
-  personalrelationship: "PRS",
+  PRS: "PRS",
 } as const;
 
 /**

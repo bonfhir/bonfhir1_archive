@@ -6,7 +6,7 @@ export const ActRelationshipSplitExclusiveTryOnceCode = {
   /**
    * exclusive try once
    */
-  exclusivetryonce: "E1",
+  E1: "E1",
 } as const;
 
 /**

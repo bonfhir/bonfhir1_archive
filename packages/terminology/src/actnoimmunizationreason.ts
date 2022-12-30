@@ -8,47 +8,47 @@ export const ActNoImmunizationReasonCode = {
   /**
    * ActNoImmunizationReason
    */
-  ActNoImmunizationReason: "_ActNoImmunizationReason",
+  _ActNoImmunizationReason: "_ActNoImmunizationReason",
 
   /**
    * immunity
    */
-  immunity: "IMMUNE",
+  IMMUNE: "IMMUNE",
 
   /**
    * medical precaution
    */
-  medicalprecaution: "MEDPREC",
+  MEDPREC: "MEDPREC",
 
   /**
    * product out of stock
    */
-  productoutofstock: "OSTOCK",
+  OSTOCK: "OSTOCK",
 
   /**
    * patient objection
    */
-  patientobjection: "PATOBJ",
+  PATOBJ: "PATOBJ",
 
   /**
    * philosophical objection
    */
-  philosophicalobjection: "PHILISOP",
+  PHILISOP: "PHILISOP",
 
   /**
    * religious objection
    */
-  religiousobjection: "RELIG",
+  RELIG: "RELIG",
 
   /**
    * vaccine efficacy concerns
    */
-  vaccineefficacyconcerns: "VACEFF",
+  VACEFF: "VACEFF",
 
   /**
    * vaccine safety concerns
    */
-  vaccinesafetyconcerns: "VACSAF",
+  VACSAF: "VACSAF",
 } as const;
 
 /**

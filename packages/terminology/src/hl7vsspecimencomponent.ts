@@ -6,42 +6,42 @@ export const Hl7VSSpecimenComponentCode = {
   /**
    * Supernatant
    */
-  Supernatant: "SUP",
+  SUP: "SUP",
 
   /**
    * Sediment
    */
-  Sediment: "SED",
+  SED: "SED",
 
   /**
    * Whole blood, homogeneous
    */
-  Wholebloodhomogeneous: "BLD",
+  BLD: "BLD",
 
   /**
    * Whole blood, separated
    */
-  Wholebloodseparated: "BSEP",
+  BSEP: "BSEP",
 
   /**
    * Platelet rich plasma
    */
-  Plateletrichplasma: "PRP",
+  PRP: "PRP",
 
   /**
    * Platelet poor plasma
    */
-  Plateletpoorplasma: "PPP",
+  PPP: "PPP",
 
   /**
    * Serum, NOS (not otherwise specified)
    */
-  SerumNOSnototherwisespecified: "SER",
+  SER: "SER",
 
   /**
    * Plasma, NOS (not otherwise specified)
    */
-  PlasmaNOSnototherwisespecified: "PLAS",
+  PLAS: "PLAS",
 } as const;
 
 /**

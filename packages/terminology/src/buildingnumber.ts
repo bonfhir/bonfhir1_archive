@@ -6,7 +6,7 @@ export const BuildingNumberCode = {
   /**
    * building number
    */
-  buildingnumber: "BNR",
+  BNR: "BNR",
 } as const;
 
 /**

@@ -6,17 +6,17 @@ export const JejunumRouteCode = {
   /**
    * Instillation, gastro-jejunostomy tube
    */
-  Instillationgastrojejunostomytube: "GJT",
+  GJT: "GJT",
 
   /**
    * Instillation, jejunostomy tube
    */
-  Instillationjejunostomytube: "JJTINSTL",
+  JJTINSTL: "JJTINSTL",
 
   /**
    * Instillation, orojejunum tube
    */
-  Instillationorojejunumtube: "OJJ",
+  OJJ: "OJJ",
 } as const;
 
 /**

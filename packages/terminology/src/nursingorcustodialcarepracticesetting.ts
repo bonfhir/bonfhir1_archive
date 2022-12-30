@@ -6,12 +6,12 @@ export const NursingOrCustodialCarePracticeSettingCode = {
   /**
    * Nursing or custodial care facility
    */
-  Nursingorcustodialcarefacility: "NCCF",
+  NCCF: "NCCF",
 
   /**
    * Skilled nursing facility
    */
-  Skillednursingfacility: "SNF",
+  SNF: "SNF",
 } as const;
 
 /**

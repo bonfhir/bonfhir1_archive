@@ -6,17 +6,17 @@ export const RaceAmericanIndianKickapooCode = {
   /**
    * Kickapoo
    */
-  Kickapoo: "1305-2",
+  "1305-2": "1305-2",
 
   /**
    * Oklahoma Kickapoo
    */
-  OklahomaKickapoo: "1306-0",
+  "1306-0": "1306-0",
 
   /**
    * Texas Kickapoo
    */
-  TexasKickapoo: "1307-8",
+  "1307-8": "1307-8",
 } as const;
 
 /**

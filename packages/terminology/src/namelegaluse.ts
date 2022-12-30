@@ -6,12 +6,12 @@ export const NameLegalUseCode = {
   /**
    * Legal
    */
-  Legal: "L",
+  L: "L",
 
   /**
    * official registry
    */
-  officialregistry: "OR",
+  OR: "OR",
 } as const;
 
 /**

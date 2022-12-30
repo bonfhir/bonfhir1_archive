@@ -6,27 +6,27 @@ export const Hl7VSRootCauseCode = {
   /**
    * Analysis Process
    */
-  AnalysisProcess: "AP",
+  AP: "AP",
 
   /**
    * Information Management
    */
-  InformationManagement: "IM",
+  IM: "IM",
 
   /**
    * Laboratory
    */
-  Laboratory: "L",
+  L: "L",
 
   /**
    * Not Applicable
    */
-  NotApplicable: "NA",
+  NA: "NA",
 
   /**
    * Placer Data
    */
-  PlacerData: "PD",
+  PD: "PD",
 } as const;
 
 /**

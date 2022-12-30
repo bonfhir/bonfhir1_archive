@@ -6,32 +6,32 @@ export const SupplyAppropriateManagementCodeCode = {
   /**
    * Supply Appropriate
    */
-  SupplyAppropriate: "14",
+  "14": "14",
 
   /**
    * Replacement
    */
-  Replacement: "15",
+  "15": "15",
 
   /**
    * Vacation Supply
    */
-  VacationSupply: "16",
+  "16": "16",
 
   /**
    * Weekend Supply
    */
-  WeekendSupply: "17",
+  "17": "17",
 
   /**
    * Leave of Absence
    */
-  LeaveofAbsence: "18",
+  "18": "18",
 
   /**
    * additional quantity on separate dispense
    */
-  additionalquantityonseparatedispense: "20",
+  "20": "20",
 } as const;
 
 /**

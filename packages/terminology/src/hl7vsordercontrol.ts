@@ -6,292 +6,292 @@ export const Hl7VSOrderControlCode = {
   /**
    * Order/service refill request approval
    */
-  Orderservicerefillrequestapproval: "AF",
+  AF: "AF",
 
   /**
    * Cancel order/service request
    */
-  Cancelorderservicerequest: "CA",
+  CA: "CA",
 
   /**
    * Child order/service
    */
-  Childorderservice: "CH",
+  CH: "CH",
 
   /**
    * Combined result
    */
-  Combinedresult: "CN",
+  CN: "CN",
 
   /**
    * Cancel process step
    */
-  Cancelprocessstep: "CP",
+  CP: "CP",
 
   /**
    * Canceled as requested
    */
-  Canceledasrequested: "CR",
+  CR: "CR",
 
   /**
    * Discontinue order/service request
    */
-  Discontinueorderservicerequest: "DC",
+  DC: "DC",
 
   /**
    * Data errors
    */
-  Dataerrors: "DE",
+  DE: "DE",
 
   /**
    * Order/service refill request denied
    */
-  Orderservicerefillrequestdenied: "DF",
+  DF: "DF",
 
   /**
    * Discontinued as requested
    */
-  Discontinuedasrequested: "DR",
+  DR: "DR",
 
   /**
    * Order/service refilled, unsolicited
    */
-  Orderservicerefilledunsolicited: "FU",
+  FU: "FU",
 
   /**
    * Hold order request
    */
-  Holdorderrequest: "HD",
+  HD: "HD",
 
   /**
    * On hold as requested
    */
-  Onholdasrequested: "HR",
+  HR: "HR",
 
   /**
    * Link order/service to patient care problem or goal
    */
-  Linkorderservicetopatientcareproblemorgoal: "LI",
+  LI: "LI",
 
   /**
    * Miscellaneous Charge - not associated with an order
    */
-  MiscellaneousChargenotassociatedwithanorder: "MC",
+  MC: "MC",
 
   /**
    * Number assigned
    */
-  Numberassigned: "NA",
+  NA: "NA",
 
   /**
    * Notification Received
    */
-  NotificationReceived: "NR",
+  NR: "NR",
 
   /**
    * New order/service
    */
-  Neworderservice: "NW",
+  NW: "NW",
 
   /**
    * Order/service canceled
    */
-  Orderservicecanceled: "OC",
+  OC: "OC",
 
   /**
    * Order/service discontinued
    */
-  Orderservicediscontinued: "OD",
+  OD: "OD",
 
   /**
    * Order/service released
    */
-  Orderservicereleased: "OE",
+  OE: "OE",
 
   /**
    * Order/service refilled as requested
    */
-  Orderservicerefilledasrequested: "OF",
+  OF: "OF",
 
   /**
    * Order/service held
    */
-  Orderserviceheld: "OH",
+  OH: "OH",
 
   /**
    * Order/service accepted & OK
    */
-  OrderserviceacceptedOK: "OK",
+  OK: "OK",
 
   /**
    * Notification of order for outside dispense
    */
-  Notificationoforderforoutsidedispense: "OP",
+  OP: "OP",
 
   /**
    * Released as requested
    */
-  Releasedasrequested: "OR",
+  OR: "OR",
 
   /**
    * Parent order/service
    */
-  Parentorderservice: "PA",
+  PA: "PA",
 
   /**
    * Previous Results with new order/service
    */
-  PreviousResultswithneworderservice: "PR",
+  PR: "PR",
 
   /**
    * Notification of replacement order for outside dispense
    */
-  Notificationofreplacementorderforoutsidedispense: "PY",
+  PY: "PY",
 
   /**
    * Recommendation Accepted
    */
-  RecommendationAccepted: "RA",
+  RA: "RA",
 
   /**
    * Recommended Change
    */
-  RecommendedChange: "RC",
+  RC: "RC",
 
   /**
    * Recommendation Declined
    */
-  RecommendationDeclined: "RD",
+  RD: "RD",
 
   /**
    * Observations/Performed Service to follow
    */
-  ObservationsPerformedServicetofollow: "RE",
+  RE: "RE",
 
   /**
    * Refill order/service request
    */
-  Refillorderservicerequest: "RF",
+  RF: "RF",
 
   /**
    * Release previous hold
    */
-  Releaseprevioushold: "RL",
+  RL: "RL",
 
   /**
    * Replacement order
    */
-  Replacementorder: "RO",
+  RO: "RO",
 
   /**
    * Order/service replace request
    */
-  Orderservicereplacerequest: "RP",
+  RP: "RP",
 
   /**
    * Replaced as requested
    */
-  Replacedasrequested: "RQ",
+  RQ: "RQ",
 
   /**
    * Request received
    */
-  Requestreceived: "RR",
+  RR: "RR",
 
   /**
    * Replaced unsolicited
    */
-  Replacedunsolicited: "RU",
+  RU: "RU",
 
   /**
    * Status changed
    */
-  Statuschanged: "SC",
+  SC: "SC",
 
   /**
    * Send order/service number
    */
-  Sendorderservicenumber: "SN",
+  SN: "SN",
 
   /**
    * Supplemented as requested
    */
-  Supplementedasrequested: "SQ",
+  SQ: "SQ",
 
   /**
    * Response to send order/service status request
    */
-  Responsetosendorderservicestatusrequest: "SR",
+  SR: "SR",
 
   /**
    * Send order/service status request
    */
-  Sendorderservicestatusrequest: "SS",
+  SS: "SS",
 
   /**
    * Supplement this order
    */
-  Supplementthisorder: "SU",
+  SU: "SU",
 
   /**
    * Unable to accept order/service
    */
-  Unabletoacceptorderservice: "UA",
+  UA: "UA",
 
   /**
    * Unable to cancel
    */
-  Unabletocancel: "UC",
+  UC: "UC",
 
   /**
    * Unable to discontinue
    */
-  Unabletodiscontinue: "UD",
+  UD: "UD",
 
   /**
    * Unable to refill
    */
-  Unabletorefill: "UF",
+  UF: "UF",
 
   /**
    * Unable to put on hold
    */
-  Unabletoputonhold: "UH",
+  UH: "UH",
 
   /**
    * Unable to replace
    */
-  Unabletoreplace: "UM",
+  UM: "UM",
 
   /**
    * Unlink order/service from patient care problem or goal
    */
-  Unlinkorderservicefrompatientcareproblemorgoal: "UN",
+  UN: "UN",
 
   /**
    * Unable to release
    */
-  Unabletorelease: "UR",
+  UR: "UR",
 
   /**
    * Unable to change
    */
-  Unabletochange: "UX",
+  UX: "UX",
 
   /**
    * Change order/service request
    */
-  Changeorderservicerequest: "XO",
+  XO: "XO",
 
   /**
    * Changed as requested
    */
-  Changedasrequested: "XR",
+  XR: "XR",
 
   /**
    * Order/service changed, unsol.
    */
-  Orderservicechangedunsol: "XX",
+  XX: "XX",
 } as const;
 
 /**

@@ -6,17 +6,17 @@ export const RoleClassContactCode = {
   /**
    * contact
    */
-  contact: "CON",
+  CON: "CON",
 
   /**
    * emergency contact
    */
-  emergencycontact: "ECON",
+  ECON: "ECON",
 
   /**
    * next of kin
    */
-  nextofkin: "NOK",
+  NOK: "NOK",
 } as const;
 
 /**

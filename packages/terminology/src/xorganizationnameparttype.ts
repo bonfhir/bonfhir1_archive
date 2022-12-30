@@ -6,17 +6,17 @@ export const XOrganizationNamePartTypeCode = {
   /**
    * delimiter
    */
-  delimiter: "DEL",
+  DEL: "DEL",
 
   /**
    * prefix
    */
-  prefix: "PFX",
+  PFX: "PFX",
 
   /**
    * suffix
    */
-  suffix: "SFX",
+  SFX: "SFX",
 } as const;
 
 /**

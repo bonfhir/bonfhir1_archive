@@ -6,18 +6,17 @@ export const Hl7VSNatureOfChallengeCode = {
   /**
    * Fasting (no calorie intake) for the period specified in the time component of the term, e.g., 1H POST CFST
    */
-  Fastingnocalorieintakefortheperiodspecifiedinthetimecomponentofthetermeg1HPOSTCFST:
-    "CFST",
+  CFST: "CFST",
 
   /**
    * Exercise undertaken as challenge (can be quantified)
    */
-  Exerciseundertakenaschallengecanbequantified: "EXCZ",
+  EXCZ: "EXCZ",
 
   /**
    * No fluid intake for the period specified in the time component of the term
    */
-  Nofluidintakefortheperiodspecifiedinthetimecomponentoftheterm: "FFST",
+  FFST: "FFST",
 } as const;
 
 /**

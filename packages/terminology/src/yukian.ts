@@ -6,12 +6,12 @@ export const YukianCode = {
   /**
    * Wappo
    */
-  Wappo: "x-WAO",
+  "x-WAO": "x-WAO",
 
   /**
    * Yuki
    */
-  Yuki: "x-YUK",
+  "x-YUK": "x-YUK",
 } as const;
 
 /**

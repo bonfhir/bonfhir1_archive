@@ -6,7 +6,7 @@ export const ActClassPositionCoordinateCode = {
   /**
    * position coordinate
    */
-  positioncoordinate: "POSCOORD",
+  POSCOORD: "POSCOORD",
 } as const;
 
 /**

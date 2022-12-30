@@ -6,47 +6,47 @@ export const CreamDrugFormCode = {
   /**
    * Cream
    */
-  Cream: "CRM",
+  CRM: "CRM",
 
   /**
    * Nasal Cream
    */
-  NasalCream: "NASCRM",
+  NASCRM: "NASCRM",
 
   /**
    * Ophthalmic Cream
    */
-  OphthalmicCream: "OPCRM",
+  OPCRM: "OPCRM",
 
   /**
    * Oral Cream
    */
-  OralCream: "ORCRM",
+  ORCRM: "ORCRM",
 
   /**
    * Otic Cream
    */
-  OticCream: "OTCRM",
+  OTCRM: "OTCRM",
 
   /**
    * Rectal Cream
    */
-  RectalCream: "RECCRM",
+  RECCRM: "RECCRM",
 
   /**
    * Topical Cream
    */
-  TopicalCream: "TOPCRM",
+  TOPCRM: "TOPCRM",
 
   /**
    * Vaginal Cream
    */
-  VaginalCream: "VAGCRM",
+  VAGCRM: "VAGCRM",
 
   /**
    * Vaginal Cream with Applicator
    */
-  VaginalCreamwithApplicator: "VAGCRMAPL",
+  VAGCRMAPL: "VAGCRMAPL",
 } as const;
 
 /**

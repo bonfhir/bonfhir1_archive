@@ -6,7 +6,7 @@ export const ActClassIncidentCode = {
   /**
    * incident
    */
-  incident: "INC",
+  INC: "INC",
 } as const;
 
 /**

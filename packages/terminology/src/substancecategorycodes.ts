@@ -6,37 +6,37 @@ export const SubstanceCategoryCodesCode = {
   /**
    * Allergen
    */
-  Allergen: "allergen",
+  allergen: "allergen",
 
   /**
    * Biological Substance
    */
-  BiologicalSubstance: "biological",
+  biological: "biological",
 
   /**
    * Body Substance
    */
-  BodySubstance: "body",
+  body: "body",
 
   /**
    * Chemical
    */
-  Chemical: "chemical",
+  chemical: "chemical",
 
   /**
    * Dietary Substance
    */
-  DietarySubstance: "food",
+  food: "food",
 
   /**
    * Drug or Medicament
    */
-  DrugorMedicament: "drug",
+  drug: "drug",
 
   /**
    * Material
    */
-  Material: "material",
+  material: "material",
 } as const;
 
 /**

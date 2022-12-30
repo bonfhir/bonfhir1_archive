@@ -6,12 +6,12 @@ export const IntratrachealRouteCode = {
   /**
    * Instillation, intratracheal
    */
-  Instillationintratracheal: "ITRACHINSTIL",
+  ITRACHINSTIL: "ITRACHINSTIL",
 
   /**
    * Mucosal absorption, intratracheal
    */
-  Mucosalabsorptionintratracheal: "ITRACHMAB",
+  ITRACHMAB: "ITRACHMAB",
 } as const;
 
 /**

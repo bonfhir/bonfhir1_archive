@@ -6,12 +6,12 @@ export const XMedicationOrImmunizationCode = {
   /**
    * Drug therapy
    */
-  Drugtherapy: "DRUG",
+  DRUG: "DRUG",
 
   /**
    * Immunization
    */
-  Immunization: "IMMUNIZ",
+  IMMUNIZ: "IMMUNIZ",
 } as const;
 
 /**

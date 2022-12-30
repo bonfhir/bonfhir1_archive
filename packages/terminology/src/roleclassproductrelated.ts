@@ -6,32 +6,32 @@ export const RoleClassProductRelatedCode = {
   /**
    * distributed material
    */
-  distributedmaterial: "DST",
+  DST: "DST",
 
   /**
    * manufactured product
    */
-  manufacturedproduct: "MANU",
+  MANU: "MANU",
 
   /**
    * retailed material
    */
-  retailedmaterial: "RET",
+  RET: "RET",
 
   /**
    * regulated product
    */
-  regulatedproduct: "RGPR",
+  RGPR: "RGPR",
 
   /**
    * therapeutic agent
    */
-  therapeuticagent: "THER",
+  THER: "THER",
 
   /**
    * warranted product
    */
-  warrantedproduct: "WRTE",
+  WRTE: "WRTE",
 } as const;
 
 /**

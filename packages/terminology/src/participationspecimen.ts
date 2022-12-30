@@ -6,7 +6,7 @@ export const ParticipationSpecimenCode = {
   /**
    * specimen
    */
-  specimen: "SPC",
+  SPC: "SPC",
 } as const;
 
 /**

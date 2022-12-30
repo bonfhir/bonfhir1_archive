@@ -6,12 +6,12 @@ export const HairRouteCode = {
   /**
    * Topical application, hair
    */
-  Topicalapplicationhair: "HAIR",
+  HAIR: "HAIR",
 
   /**
    * Shampoo
    */
-  Shampoo: "SHAMPOO",
+  SHAMPOO: "SHAMPOO",
 } as const;
 
 /**

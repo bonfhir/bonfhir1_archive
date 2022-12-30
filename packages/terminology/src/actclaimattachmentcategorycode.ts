@@ -6,47 +6,47 @@ export const ActClaimAttachmentCategoryCodeCode = {
   /**
    * ActClaimAttachmentCategoryCode
    */
-  ActClaimAttachmentCategoryCode: "_ActClaimAttachmentCategoryCode",
+  _ActClaimAttachmentCategoryCode: "_ActClaimAttachmentCategoryCode",
 
   /**
    * auto attachment
    */
-  autoattachment: "AUTOATTCH",
+  AUTOATTCH: "AUTOATTCH",
 
   /**
    * document
    */
-  document: "DOCUMENT",
+  DOCUMENT: "DOCUMENT",
 
   /**
    * health record
    */
-  healthrecord: "HEALTHREC",
+  HEALTHREC: "HEALTHREC",
 
   /**
    * image attachment
    */
-  imageattachment: "IMG",
+  IMG: "IMG",
 
   /**
    * lab results
    */
-  labresults: "LABRESULTS",
+  LABRESULTS: "LABRESULTS",
 
   /**
    * model
    */
-  model: "MODEL",
+  MODEL: "MODEL",
 
   /**
    * work injury report attachment
    */
-  workinjuryreportattachment: "WIATTCH",
+  WIATTCH: "WIATTCH",
 
   /**
    * x-ray
    */
-  xray: "XRAY",
+  XRAY: "XRAY",
 } as const;
 
 /**

@@ -6,17 +6,17 @@ export const Hl7VSSequenceConditionCode = {
   /**
    * Sequence conditions
    */
-  Sequenceconditions: "S",
+  S: "S",
 
   /**
    * Repeating cycle of orders
    */
-  Repeatingcycleoforders: "C",
+  C: "C",
 
   /**
    * Reserved for possible future use
    */
-  Reservedforpossiblefutureuse: "R",
+  R: "R",
 } as const;
 
 /**

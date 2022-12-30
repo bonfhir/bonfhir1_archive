@@ -6,12 +6,12 @@ export const LaryngealRouteCode = {
   /**
    * Instillation, laryngeal
    */
-  Instillationlaryngeal: "LARYNGINSTIL",
+  LARYNGINSTIL: "LARYNGINSTIL",
 
   /**
    * Topical application, laryngeal
    */
-  Topicalapplicationlaryngeal: "LARYNGTA",
+  LARYNGTA: "LARYNGTA",
 } as const;
 
 /**

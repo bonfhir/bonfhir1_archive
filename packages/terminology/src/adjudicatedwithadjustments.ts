@@ -12,12 +12,12 @@ export const AdjudicatedWithAdjustmentsCode = {
   /**
    * adjudicated with adjustments
    */
-  adjudicatedwithadjustments: "AA",
+  AA: "AA",
 
   /**
    * adjudicated with adjustments and no financial impact
    */
-  adjudicatedwithadjustmentsandnofinancialimpact: "ANF",
+  ANF: "ANF",
 } as const;
 
 /**

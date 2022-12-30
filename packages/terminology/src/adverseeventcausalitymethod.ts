@@ -6,17 +6,17 @@ export const AdverseEventCausalityMethodCode = {
   /**
    * Probability Scale
    */
-  ProbabilityScale: "probability-scale",
+  "probability-scale": "probability-scale",
 
   /**
    * Bayesian
    */
-  Bayesian: "bayesian",
+  bayesian: "bayesian",
 
   /**
    * Checklist
    */
-  Checklist: "checklist",
+  checklist: "checklist",
 } as const;
 
 /**

@@ -6,12 +6,12 @@ export const EasternApacheanCode = {
   /**
    * Jicarilla
    */
-  Jicarilla: "x-APJ",
+  "x-APJ": "x-APJ",
 
   /**
    * Lipan
    */
-  Lipan: "x-APL",
+  "x-APL": "x-APL",
 } as const;
 
 /**

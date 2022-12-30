@@ -6,27 +6,27 @@ export const XActRelationshipPertinentInfoCode = {
   /**
    * is etiology for
    */
-  isetiologyfor: "CAUS",
+  CAUS: "CAUS",
 
   /**
    * is manifestation of
    */
-  ismanifestationof: "MFST",
+  MFST: "MFST",
 
   /**
    * refers to
    */
-  refersto: "REFR",
+  REFR: "REFR",
 
   /**
    * has support
    */
-  hassupport: "SPRT",
+  SPRT: "SPRT",
 
   /**
    * has subject
    */
-  hassubject: "SUBJ",
+  SUBJ: "SUBJ",
 } as const;
 
 /**

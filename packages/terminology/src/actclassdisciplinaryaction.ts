@@ -8,7 +8,7 @@ export const ActClassDisciplinaryActionCode = {
   /**
    * disciplinary action
    */
-  disciplinaryaction: "DISPACT",
+  DISPACT: "DISPACT",
 } as const;
 
 /**

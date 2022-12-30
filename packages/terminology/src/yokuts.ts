@@ -6,22 +6,22 @@ export const YokutsCode = {
   /**
    * Yokuts
    */
-  Yokuts: "1717-8",
+  "1717-8": "1717-8",
 
   /**
    * Chukchansi
    */
-  Chukchansi: "1718-6",
+  "1718-6": "1718-6",
 
   /**
    * Tachi
    */
-  Tachi: "1719-4",
+  "1719-4": "1719-4",
 
   /**
    * Tule River
    */
-  TuleRiver: "1720-2",
+  "1720-2": "1720-2",
 } as const;
 
 /**

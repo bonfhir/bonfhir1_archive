@@ -15,7 +15,7 @@ export const ParticipationAuthorOriginatorCode = {
   /**
    * author (originator)
    */
-  authororiginator: "AUT",
+  AUT: "AUT",
 } as const;
 
 /**

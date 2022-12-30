@@ -6,57 +6,57 @@ export const ActClassSubjectPhysicalPositionCode = {
   /**
    * subject body position
    */
-  subjectbodyposition: "_SubjectBodyPosition",
+  _SubjectBodyPosition: "_SubjectBodyPosition",
 
   /**
    * left lateral decubitus
    */
-  leftlateraldecubitus: "LLD",
+  LLD: "LLD",
 
   /**
    * prone
    */
-  prone: "PRN",
+  PRN: "PRN",
 
   /**
    * right lateral decubitus
    */
-  rightlateraldecubitus: "RLD",
+  RLD: "RLD",
 
   /**
    * Semi-Fowler's
    */
-  SemiFowlers: "SFWL",
+  SFWL: "SFWL",
 
   /**
    * sitting
    */
-  sitting: "SIT",
+  SIT: "SIT",
 
   /**
    * standing
    */
-  standing: "STN",
+  STN: "STN",
 
   /**
    * supine
    */
-  supine: "SUP",
+  SUP: "SUP",
 
   /**
    * reverse trendelenburg
    */
-  reversetrendelenburg: "RTRD",
+  RTRD: "RTRD",
 
   /**
    * trendelenburg
    */
-  trendelenburg: "TRD",
+  TRD: "TRD",
 
   /**
    * imaging subject orientation
    */
-  imagingsubjectorientation: "_ImagingSubjectOrientation",
+  _ImagingSubjectOrientation: "_ImagingSubjectOrientation",
 } as const;
 
 /**

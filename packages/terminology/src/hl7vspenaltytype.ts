@@ -6,12 +6,12 @@ export const Hl7VSPenaltyTypeCode = {
   /**
    * Currency amount
    */
-  Currencyamount: "AT",
+  AT: "AT",
 
   /**
    * Percentage
    */
-  Percentage: "PC",
+  PC: "PC",
 } as const;
 
 /**

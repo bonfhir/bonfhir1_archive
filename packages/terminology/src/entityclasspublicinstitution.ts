@@ -6,7 +6,7 @@ export const EntityClassPublicInstitutionCode = {
   /**
    * public institution
    */
-  publicinstitution: "PUB",
+  PUB: "PUB",
 } as const;
 
 /**

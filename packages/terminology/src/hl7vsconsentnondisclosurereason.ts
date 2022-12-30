@@ -6,17 +6,17 @@ export const Hl7VSConsentNonDisclosureReasonCode = {
   /**
    * Emergency
    */
-  Emergency: "E",
+  E: "E",
 
   /**
    * Rx Private
    */
-  RxPrivate: "RX",
+  RX: "RX",
 
   /**
    * Patient Request
    */
-  PatientRequest: "PR",
+  PR: "PR",
 } as const;
 
 /**

@@ -8,7 +8,7 @@ export const ActClassRegistrationCode = {
   /**
    * registration
    */
-  registration: "REG",
+  REG: "REG",
 } as const;
 
 /**

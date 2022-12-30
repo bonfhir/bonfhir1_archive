@@ -6,22 +6,22 @@ export const Hl7VSCyclicEntryExitIndicatorCode = {
   /**
    * First service
    */
-  Firstservice: "F",
+  F: "F",
 
   /**
    * Last service
    */
-  Lastservice: "L",
+  L: "L",
 
   /**
    * The first service request in a cyclic group
    */
-  Thefirstservicerequestinacyclicgroup: "*",
+  "*": "*",
 
   /**
    * The last service request in a cyclic group.
    */
-  Thelastservicerequestinacyclicgroup: "#",
+  "#": "#",
 } as const;
 
 /**

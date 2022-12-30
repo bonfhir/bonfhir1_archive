@@ -6,12 +6,12 @@ export const XRoleClassCoverageInvoiceCode = {
   /**
    * payee
    */
-  payee: "PAYEE",
+  PAYEE: "PAYEE",
 
   /**
    * invoice payor
    */
-  invoicepayor: "PAYOR",
+  PAYOR: "PAYOR",
 } as const;
 
 /**

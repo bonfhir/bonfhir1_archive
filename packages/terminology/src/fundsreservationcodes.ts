@@ -6,17 +6,17 @@ export const FundsReservationCodesCode = {
   /**
    * Patient
    */
-  Patient: "patient",
+  patient: "patient",
 
   /**
    * Provider
    */
-  Provider: "provider",
+  provider: "provider",
 
   /**
    * None
    */
-  None: "none",
+  none: "none",
 } as const;
 
 /**

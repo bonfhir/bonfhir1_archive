@@ -6,22 +6,22 @@ export const ParticipationPhysicalPerformerCode = {
   /**
    * performer
    */
-  performer: "PRF",
+  PRF: "PRF",
 
   /**
    * distributor
    */
-  distributor: "DIST",
+  DIST: "DIST",
 
   /**
    * primary performer
    */
-  primaryperformer: "PPRF",
+  PPRF: "PPRF",
 
   /**
    * secondary performer
    */
-  secondaryperformer: "SPRF",
+  SPRF: "SPRF",
 } as const;
 
 /**

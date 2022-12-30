@@ -6,7 +6,7 @@ export const RoleClassContinuityCode = {
   /**
    * continuity
    */
-  continuity: "CONY",
+  CONY: "CONY",
 } as const;
 
 /**

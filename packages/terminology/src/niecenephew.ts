@@ -6,17 +6,17 @@ export const NieceNephewCode = {
   /**
    * niece/nephew
    */
-  niecenephew: "NIENEPH",
+  NIENEPH: "NIENEPH",
 
   /**
    * nephew
    */
-  nephew: "NEPHEW",
+  NEPHEW: "NEPHEW",
 
   /**
    * niece
    */
-  niece: "NIECE",
+  NIECE: "NIECE",
 } as const;
 
 /**

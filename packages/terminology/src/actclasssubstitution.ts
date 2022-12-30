@@ -8,7 +8,7 @@ export const ActClassSubstitutionCode = {
   /**
    * Substitution
    */
-  Substitution: "SUBST",
+  SUBST: "SUBST",
 } as const;
 
 /**

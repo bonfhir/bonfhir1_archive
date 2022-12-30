@@ -6,37 +6,37 @@ export const DietCode = {
   /**
    * Vegetarian
    */
-  Vegetarian: "vegetarian",
+  vegetarian: "vegetarian",
 
   /**
    * Dairy Free
    */
-  DairyFree: "dairy-free",
+  "dairy-free": "dairy-free",
 
   /**
    * Nut Free
    */
-  NutFree: "nut-free",
+  "nut-free": "nut-free",
 
   /**
    * Gluten Free
    */
-  GlutenFree: "gluten-free",
+  "gluten-free": "gluten-free",
 
   /**
    * Vegan
    */
-  Vegan: "vegan",
+  vegan: "vegan",
 
   /**
    * Halal
    */
-  Halal: "halal",
+  halal: "halal",
 
   /**
    * Kosher
    */
-  Kosher: "kosher",
+  kosher: "kosher",
 } as const;
 
 /**

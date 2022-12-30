@@ -6,132 +6,132 @@ export const Hl7VSSpecialtyTypeCode = {
   /**
    * Ambulatory
    */
-  Ambulatory: "AMB",
+  AMB: "AMB",
 
   /**
    * Psychiatric
    */
-  Psychiatric: "PSY",
+  PSY: "PSY",
 
   /**
    * Pediatric psychiatric
    */
-  Pediatricpsychiatric: "PPS",
+  PPS: "PPS",
 
   /**
    * Rehabilitation
    */
-  Rehabilitation: "REH",
+  REH: "REH",
 
   /**
    * Pediatric rehabilitation
    */
-  Pediatricrehabilitation: "PRE",
+  PRE: "PRE",
 
   /**
    * Isolation
    */
-  Isolation: "ISO",
+  ISO: "ISO",
 
   /**
    * Obstetrics, gynecology
    */
-  Obstetricsgynecology: "OBG",
+  OBG: "OBG",
 
   /**
    * Pediatric/neonatal intensive care
    */
-  Pediatricneonatalintensivecare: "PIN",
+  PIN: "PIN",
 
   /**
    * Intensive care
    */
-  Intensivecare: "INT",
+  INT: "INT",
 
   /**
    * Surgery
    */
-  Surgery: "SUR",
+  SUR: "SUR",
 
   /**
    * Psychiatric intensive care
    */
-  Psychiatricintensivecare: "PSI",
+  PSI: "PSI",
 
   /**
    * Education
    */
-  Education: "EDI",
+  EDI: "EDI",
 
   /**
    * Coronary/cardiac care
    */
-  Coronarycardiaccare: "CAR",
+  CAR: "CAR",
 
   /**
    * Newborn, nursery, infants
    */
-  Newbornnurseryinfants: "NBI",
+  NBI: "NBI",
 
   /**
    * Critical care
    */
-  Criticalcare: "CCR",
+  CCR: "CCR",
 
   /**
    * Pediatrics
    */
-  Pediatrics: "PED",
+  PED: "PED",
 
   /**
    * Emergency
    */
-  Emergency: "EMR",
+  EMR: "EMR",
 
   /**
    * Observation
    */
-  Observation: "OBS",
+  OBS: "OBS",
 
   /**
    * Walk-in clinic
    */
-  Walkinclinic: "WIC",
+  WIC: "WIC",
 
   /**
    * General/family practice
    */
-  Generalfamilypractice: "PHY",
+  PHY: "PHY",
 
   /**
    * Allergy
    */
-  Allergy: "ALC",
+  ALC: "ALC",
 
   /**
    * Family planning
    */
-  Familyplanning: "FPC",
+  FPC: "FPC",
 
   /**
    * Chiropractic
    */
-  Chiropractic: "CHI",
+  CHI: "CHI",
 
   /**
    * Cancer
    */
-  Cancer: "CAN",
+  CAN: "CAN",
 
   /**
    * Naturopathic
    */
-  Naturopathic: "NAT",
+  NAT: "NAT",
 
   /**
    * Other specialty
    */
-  Otherspecialty: "OTH",
+  OTH: "OTH",
 } as const;
 
 /**

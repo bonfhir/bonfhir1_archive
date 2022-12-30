@@ -6,37 +6,37 @@ export const Hl7VSMimeTypesCode = {
   /**
    * Application data
    */
-  Applicationdata: "application",
+  application: "application",
 
   /**
    * Audio data
    */
-  Audiodata: "audio",
+  audio: "audio",
 
   /**
    * Image data
    */
-  Imagedata: "image",
+  image: "image",
 
   /**
    * Model data
    */
-  Modeldata: "model",
+  model: "model",
 
   /**
    * Text data
    */
-  Textdata: "text",
+  text: "text",
 
   /**
    * Video data
    */
-  Videodata: "video",
+  video: "video",
 
   /**
    * MIME multipart package
    */
-  MIMEmultipartpackage: "multipart",
+  multipart: "multipart",
 } as const;
 
 /**

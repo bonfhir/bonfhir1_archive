@@ -6,22 +6,22 @@ export const ActAccommodationReasonCode = {
   /**
    * Accommodation Requested Not Available
    */
-  AccommodationRequestedNotAvailable: "ACCREQNA",
+  ACCREQNA: "ACCREQNA",
 
   /**
    * Floor Convenience
    */
-  FloorConvenience: "FLRCNV",
+  FLRCNV: "FLRCNV",
 
   /**
    * Medical Necessity
    */
-  MedicalNecessity: "MEDNEC",
+  MEDNEC: "MEDNEC",
 
   /**
    * Patient request
    */
-  Patientrequest: "PAT",
+  PAT: "PAT",
 } as const;
 
 /**

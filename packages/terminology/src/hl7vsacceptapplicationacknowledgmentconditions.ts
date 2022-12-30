@@ -6,22 +6,22 @@ export const Hl7VSAcceptApplicationAcknowledgmentConditionsCode = {
   /**
    * Always
    */
-  Always: "AL",
+  AL: "AL",
 
   /**
    * Never
    */
-  Never: "NE",
+  NE: "NE",
 
   /**
    * Error/reject conditions only
    */
-  Errorrejectconditionsonly: "ER",
+  ER: "ER",
 
   /**
    * Successful completion only
    */
-  Successfulcompletiononly: "SU",
+  SU: "SU",
 } as const;
 
 /**

@@ -6,7 +6,7 @@ export const ActRelationshipSummarizedByCode = {
   /**
    * summarized by
    */
-  summarizedby: "SUMM",
+  SUMM: "SUMM",
 } as const;
 
 /**

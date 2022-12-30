@@ -6,7 +6,7 @@ export const TsimshianicCode = {
   /**
    * Coast Tsimshain
    */
-  CoastTsimshain: "x-TSI",
+  "x-TSI": "x-TSI",
 } as const;
 
 /**

@@ -6,52 +6,52 @@ export const OralRouteCode = {
   /**
    * Chew, oral
    */
-  Cheworal: "CHEW",
+  CHEW: "CHEW",
 
   /**
    * Dissolve, oral
    */
-  Dissolveoral: "DISSOLVE",
+  DISSOLVE: "DISSOLVE",
 
   /**
    * Inhalation, respiratory
    */
-  Inhalationrespiratory: "IPINHL",
+  IPINHL: "IPINHL",
 
   /**
    * Inhalation, oral intermittent flow
    */
-  Inhalationoralintermittentflow: "ORIFINHL",
+  ORIFINHL: "ORIFINHL",
 
   /**
    * Inhalation, oral rebreather mask
    */
-  Inhalationoralrebreathermask: "REBREATH",
+  REBREATH: "REBREATH",
 
   /**
    * Inhalation, respiratory
    */
-  Inhalationrespiratory: "ORINHL",
+  ORINHL: "ORINHL",
 
   /**
    * Inhalation, respiratory
    */
-  Inhalationrespiratory: "RESPINHL",
+  RESPINHL: "RESPINHL",
 
   /**
    * Topical application, oral
    */
-  Topicalapplicationoral: "ORALTA",
+  ORALTA: "ORALTA",
 
   /**
    * Rinse, oral
    */
-  Rinseoral: "ORRINSE",
+  ORRINSE: "ORRINSE",
 
   /**
    * Swallow, oral
    */
-  Swalloworal: "PO",
+  PO: "PO",
 } as const;
 
 /**

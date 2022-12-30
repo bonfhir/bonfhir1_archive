@@ -8,22 +8,22 @@ export const XEncounterAdmissionUrgencyCode = {
   /**
    * elective
    */
-  elective: "EL",
+  EL: "EL",
 
   /**
    * emergency
    */
-  emergency: "EM",
+  EM: "EM",
 
   /**
    * routine
    */
-  routine: "R",
+  R: "R",
 
   /**
    * urgent
    */
-  urgent: "UR",
+  UR: "UR",
 } as const;
 
 /**

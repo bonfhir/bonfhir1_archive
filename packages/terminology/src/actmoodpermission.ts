@@ -6,7 +6,7 @@ export const ActMoodPermissionCode = {
   /**
    * permission
    */
-  permission: "PERM",
+  PERM: "PERM",
 } as const;
 
 /**

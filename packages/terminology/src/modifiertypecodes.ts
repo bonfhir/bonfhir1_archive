@@ -6,32 +6,32 @@ export const ModifierTypeCodesCode = {
   /**
    * Repair of prior service or installation
    */
-  Repairofpriorserviceorinstallation: "a",
+  a: "a",
 
   /**
    * Temporary service or installation
    */
-  Temporaryserviceorinstallation: "b",
+  b: "b",
 
   /**
    * TMJ treatment
    */
-  TMJtreatment: "c",
+  c: "c",
 
   /**
    * Implant or associated with an implant
    */
-  Implantorassociatedwithanimplant: "e",
+  e: "e",
 
   /**
    * Rush or Outside of office hours
    */
-  RushorOutsideofofficehours: "rooh",
+  rooh: "rooh",
 
   /**
    * None
    */
-  None: "x",
+  x: "x",
 } as const;
 
 /**

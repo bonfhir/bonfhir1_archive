@@ -6,17 +6,17 @@ export const Hl7VSSpecimenChildRoleCode = {
   /**
    * Aliquot
    */
-  Aliquot: "A",
+  A: "A",
 
   /**
    * Component
    */
-  Component: "C",
+  C: "C",
 
   /**
    * Modified from original specimen
    */
-  Modifiedfromoriginalspecimen: "M",
+  M: "M",
 } as const;
 
 /**

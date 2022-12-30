@@ -6,22 +6,22 @@ export const Hl7VSPayeeTypeCode = {
   /**
    * Payee Organization
    */
-  PayeeOrganization: "ORG",
+  ORG: "ORG",
 
   /**
    * Person
    */
-  Person: "PERS",
+  PERS: "PERS",
 
   /**
    * Pay Person
    */
-  PayPerson: "PPER",
+  PPER: "PPER",
 
   /**
    * Employer
    */
-  Employer: "EMPL",
+  EMPL: "EMPL",
 } as const;
 
 /**

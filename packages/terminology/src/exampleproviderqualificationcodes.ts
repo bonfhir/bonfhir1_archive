@@ -6,17 +6,17 @@ export const ExampleProviderQualificationCodesCode = {
   /**
    * Dentist
    */
-  Dentist: "311405",
+  "311405": "311405",
 
   /**
    * Ophthalmologist
    */
-  Ophthalmologist: "604215",
+  "604215": "604215",
 
   /**
    * Optometrist
    */
-  Optometrist: "604210",
+  "604210": "604210",
 } as const;
 
 /**

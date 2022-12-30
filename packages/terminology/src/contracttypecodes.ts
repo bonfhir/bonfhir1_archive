@@ -6,27 +6,27 @@ export const ContractTypeCodesCode = {
   /**
    * Privacy
    */
-  Privacy: "privacy",
+  privacy: "privacy",
 
   /**
    * Disclosure
    */
-  Disclosure: "disclosure",
+  disclosure: "disclosure",
 
   /**
    * Health Insurance
    */
-  HealthInsurance: "healthinsurance",
+  healthinsurance: "healthinsurance",
 
   /**
    * Supply Contract
    */
-  SupplyContract: "supply",
+  supply: "supply",
 
   /**
    * Consent
    */
-  Consent: "consent",
+  consent: "consent",
 } as const;
 
 /**

@@ -6,22 +6,22 @@ export const XActMoodRqoPrpAptArqCode = {
   /**
    * appointment
    */
-  appointment: "APT",
+  APT: "APT",
 
   /**
    * appointment request
    */
-  appointmentrequest: "ARQ",
+  ARQ: "ARQ",
 
   /**
    * proposal
    */
-  proposal: "PRP",
+  PRP: "PRP",
 
   /**
    * request
    */
-  request: "RQO",
+  RQO: "RQO",
 } as const;
 
 /**

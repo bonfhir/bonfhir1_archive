@@ -6,7 +6,7 @@ export const EntityClassChemicalSubstanceCode = {
   /**
    * chemical substance
    */
-  chemicalsubstance: "CHEM",
+  CHEM: "CHEM",
 } as const;
 
 /**

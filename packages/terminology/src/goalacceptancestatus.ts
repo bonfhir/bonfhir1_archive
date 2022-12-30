@@ -6,17 +6,17 @@ export const GoalAcceptanceStatusCode = {
   /**
    * Agree
    */
-  Agree: "agree",
+  agree: "agree",
 
   /**
    * Disagree
    */
-  Disagree: "disagree",
+  disagree: "disagree",
 
   /**
    * Pending
    */
-  Pending: "pending",
+  pending: "pending",
 } as const;
 
 /**

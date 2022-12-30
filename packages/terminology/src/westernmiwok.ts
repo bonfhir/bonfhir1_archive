@@ -6,12 +6,12 @@ export const WesternMiwokCode = {
   /**
    * Coast Miwok
    */
-  CoastMiwok: "x-CSI",
+  "x-CSI": "x-CSI",
 
   /**
    * Lake Miwok
    */
-  LakeMiwok: "x-LMW",
+  "x-LMW": "x-LMW",
 } as const;
 
 /**

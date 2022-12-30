@@ -6,12 +6,12 @@ export const IntraesophagealRouteCode = {
   /**
    * Instillation, intraesophageal
    */
-  Instillationintraesophageal: "IESOPHINSTIL",
+  IESOPHINSTIL: "IESOPHINSTIL",
 
   /**
    * Topical application, intraesophageal
    */
-  Topicalapplicationintraesophageal: "IESOPHTA",
+  IESOPHTA: "IESOPHTA",
 } as const;
 
 /**

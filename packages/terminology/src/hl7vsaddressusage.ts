@@ -6,17 +6,17 @@ export const Hl7VSAddressUsageCode = {
   /**
    * Mailing
    */
-  Mailing: "M",
+  M: "M",
 
   /**
    * Visit
    */
-  Visit: "V",
+  V: "V",
 
   /**
    * Classification
    */
-  Classification: "C",
+  C: "C",
 } as const;
 
 /**

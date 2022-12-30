@@ -6,12 +6,12 @@ export const ActRelationshipEndsNearStartsCode = {
   /**
    * ends near start
    */
-  endsnearstart: "ENS",
+  ENS: "ENS",
 
   /**
    * ends concurrent with start of
    */
-  endsconcurrentwithstartof: "ECWS",
+  ECWS: "ECWS",
 } as const;
 
 /**

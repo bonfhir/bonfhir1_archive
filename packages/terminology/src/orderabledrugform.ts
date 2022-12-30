@@ -6,807 +6,807 @@ export const OrderableDrugFormCode = {
   /**
    * GasDrugForm
    */
-  GasDrugForm: "_GasDrugForm",
+  _GasDrugForm: "_GasDrugForm",
 
   /**
    * Gas for Inhalation
    */
-  GasforInhalation: "GASINHL",
+  GASINHL: "GASINHL",
 
   /**
    * GasLiquidMixture
    */
-  GasLiquidMixture: "_GasLiquidMixture",
+  _GasLiquidMixture: "_GasLiquidMixture",
 
   /**
    * Aerosol
    */
-  Aerosol: "AER",
+  AER: "AER",
 
   /**
    * Breath Activated Inhaler
    */
-  BreathActivatedInhaler: "BAINHL",
+  BAINHL: "BAINHL",
 
   /**
    * Inhalant Solution
    */
-  InhalantSolution: "INHLSOL",
+  INHLSOL: "INHLSOL",
 
   /**
    * Metered Dose Inhaler
    */
-  MeteredDoseInhaler: "MDINHL",
+  MDINHL: "MDINHL",
 
   /**
    * Nasal Spray
    */
-  NasalSpray: "NASSPRY",
+  NASSPRY: "NASSPRY",
 
   /**
    * Dermal Spray
    */
-  DermalSpray: "DERMSPRY",
+  DERMSPRY: "DERMSPRY",
 
   /**
    * Foam
    */
-  Foam: "FOAM",
+  FOAM: "FOAM",
 
   /**
    * Foam with Applicator
    */
-  FoamwithApplicator: "FOAMAPL",
+  FOAMAPL: "FOAMAPL",
 
   /**
    * Rectal foam
    */
-  Rectalfoam: "RECFORM",
+  RECFORM: "RECFORM",
 
   /**
    * Vaginal foam
    */
-  Vaginalfoam: "VAGFOAM",
+  VAGFOAM: "VAGFOAM",
 
   /**
    * Vaginal foam with applicator
    */
-  Vaginalfoamwithapplicator: "VAGFOAMAPL",
+  VAGFOAMAPL: "VAGFOAMAPL",
 
   /**
    * Rectal Spray
    */
-  RectalSpray: "RECSPRY",
+  RECSPRY: "RECSPRY",
 
   /**
    * Vaginal Spray
    */
-  VaginalSpray: "VAGSPRY",
+  VAGSPRY: "VAGSPRY",
 
   /**
    * GasSolidSpray
    */
-  GasSolidSpray: "_GasSolidSpray",
+  _GasSolidSpray: "_GasSolidSpray",
 
   /**
    * Inhalant
    */
-  Inhalant: "INHL",
+  INHL: "INHL",
 
   /**
    * Breath Activated Powder Inhaler
    */
-  BreathActivatedPowderInhaler: "BAINHLPWD",
+  BAINHLPWD: "BAINHLPWD",
 
   /**
    * Inhalant Powder
    */
-  InhalantPowder: "INHLPWD",
+  INHLPWD: "INHLPWD",
 
   /**
    * Metered Dose Powder Inhaler
    */
-  MeteredDosePowderInhaler: "MDINHLPWD",
+  MDINHLPWD: "MDINHLPWD",
 
   /**
    * Nasal Inhalant
    */
-  NasalInhalant: "NASINHL",
+  NASINHL: "NASINHL",
 
   /**
    * Oral Inhalant
    */
-  OralInhalant: "ORINHL",
+  ORINHL: "ORINHL",
 
   /**
    * Powder Spray
    */
-  PowderSpray: "PWDSPRY",
+  PWDSPRY: "PWDSPRY",
 
   /**
    * Spray with Adaptor
    */
-  SpraywithAdaptor: "SPRYADAPT",
+  SPRYADAPT: "SPRYADAPT",
 
   /**
    * Liquid
    */
-  Liquid: "_Liquid",
+  _Liquid: "_Liquid",
 
   /**
    * Liquid Cleanser
    */
-  LiquidCleanser: "LIQCLN",
+  LIQCLN: "LIQCLN",
 
   /**
    * Medicated Liquid Soap
    */
-  MedicatedLiquidSoap: "LIQSOAP",
+  LIQSOAP: "LIQSOAP",
 
   /**
    * Shampoo
    */
-  Shampoo: "SHMP",
+  SHMP: "SHMP",
 
   /**
    * Oil
    */
-  Oil: "OIL",
+  OIL: "OIL",
 
   /**
    * Topical Oil
    */
-  TopicalOil: "TOPOIL",
+  TOPOIL: "TOPOIL",
 
   /**
    * Solution
    */
-  Solution: "SOL",
+  SOL: "SOL",
 
   /**
    * Drops
    */
-  Drops: "DROP",
+  DROP: "DROP",
 
   /**
    * Nasal Drops
    */
-  NasalDrops: "NDROP",
+  NDROP: "NDROP",
 
   /**
    * Ophthalmic Drops
    */
-  OphthalmicDrops: "OPDROP",
+  OPDROP: "OPDROP",
 
   /**
    * Oral Drops
    */
-  OralDrops: "ORDROP",
+  ORDROP: "ORDROP",
 
   /**
    * Otic Drops
    */
-  OticDrops: "OTDROP",
+  OTDROP: "OTDROP",
 
   /**
    * Intraperitoneal Solution
    */
-  IntraperitonealSolution: "IPSOL",
+  IPSOL: "IPSOL",
 
   /**
    * Irrigation Solution
    */
-  IrrigationSolution: "IRSOL",
+  IRSOL: "IRSOL",
 
   /**
    * Douche
    */
-  Douche: "DOUCHE",
+  DOUCHE: "DOUCHE",
 
   /**
    * Enema
    */
-  Enema: "ENEMA",
+  ENEMA: "ENEMA",
 
   /**
    * Ophthalmic Irrigation Solution
    */
-  OphthalmicIrrigationSolution: "OPIRSOL",
+  OPIRSOL: "OPIRSOL",
 
   /**
    * Intravenous Solution
    */
-  IntravenousSolution: "IVSOL",
+  IVSOL: "IVSOL",
 
   /**
    * Oral Solution
    */
-  OralSolution: "ORALSOL",
+  ORALSOL: "ORALSOL",
 
   /**
    * Elixir
    */
-  Elixir: "ELIXIR",
+  ELIXIR: "ELIXIR",
 
   /**
    * Mouthwash/Rinse
    */
-  MouthwashRinse: "RINSE",
+  RINSE: "RINSE",
 
   /**
    * Syrup
    */
-  Syrup: "SYRUP",
+  SYRUP: "SYRUP",
 
   /**
    * Rectal Solution
    */
-  RectalSolution: "RECSOL",
+  RECSOL: "RECSOL",
 
   /**
    * Topical Solution
    */
-  TopicalSolution: "TOPSOL",
+  TOPSOL: "TOPSOL",
 
   /**
    * Liniment
    */
-  Liniment: "LIN",
+  LIN: "LIN",
 
   /**
    * Mucous Membrane Topical Solution
    */
-  MucousMembraneTopicalSolution: "MUCTOPSOL",
+  MUCTOPSOL: "MUCTOPSOL",
 
   /**
    * Tincture
    */
-  Tincture: "TINC",
+  TINC: "TINC",
 
   /**
    * LiquidLiquidEmulsion
    */
-  LiquidLiquidEmulsion: "_LiquidLiquidEmulsion",
+  _LiquidLiquidEmulsion: "_LiquidLiquidEmulsion",
 
   /**
    * Cream
    */
-  Cream: "CRM",
+  CRM: "CRM",
 
   /**
    * Nasal Cream
    */
-  NasalCream: "NASCRM",
+  NASCRM: "NASCRM",
 
   /**
    * Ophthalmic Cream
    */
-  OphthalmicCream: "OPCRM",
+  OPCRM: "OPCRM",
 
   /**
    * Oral Cream
    */
-  OralCream: "ORCRM",
+  ORCRM: "ORCRM",
 
   /**
    * Otic Cream
    */
-  OticCream: "OTCRM",
+  OTCRM: "OTCRM",
 
   /**
    * Rectal Cream
    */
-  RectalCream: "RECCRM",
+  RECCRM: "RECCRM",
 
   /**
    * Topical Cream
    */
-  TopicalCream: "TOPCRM",
+  TOPCRM: "TOPCRM",
 
   /**
    * Vaginal Cream
    */
-  VaginalCream: "VAGCRM",
+  VAGCRM: "VAGCRM",
 
   /**
    * Vaginal Cream with Applicator
    */
-  VaginalCreamwithApplicator: "VAGCRMAPL",
+  VAGCRMAPL: "VAGCRMAPL",
 
   /**
    * Lotion
    */
-  Lotion: "LTN",
+  LTN: "LTN",
 
   /**
    * Topical Lotion
    */
-  TopicalLotion: "TOPLTN",
+  TOPLTN: "TOPLTN",
 
   /**
    * Ointment
    */
-  Ointment: "OINT",
+  OINT: "OINT",
 
   /**
    * Nasal Ointment
    */
-  NasalOintment: "NASOINT",
+  NASOINT: "NASOINT",
 
   /**
    * Ointment with Applicator
    */
-  OintmentwithApplicator: "OINTAPL",
+  OINTAPL: "OINTAPL",
 
   /**
    * Ophthalmic Ointment
    */
-  OphthalmicOintment: "OPOINT",
+  OPOINT: "OPOINT",
 
   /**
    * Otic Ointment
    */
-  OticOintment: "OTOINT",
+  OTOINT: "OTOINT",
 
   /**
    * Rectal Ointment
    */
-  RectalOintment: "RECOINT",
+  RECOINT: "RECOINT",
 
   /**
    * Topical Ointment
    */
-  TopicalOintment: "TOPOINT",
+  TOPOINT: "TOPOINT",
 
   /**
    * Vaginal Ointment
    */
-  VaginalOintment: "VAGOINT",
+  VAGOINT: "VAGOINT",
 
   /**
    * Vaginal Ointment with Applicator
    */
-  VaginalOintmentwithApplicator: "VAGOINTAPL",
+  VAGOINTAPL: "VAGOINTAPL",
 
   /**
    * LiquidSolidSuspension
    */
-  LiquidSolidSuspension: "_LiquidSolidSuspension",
+  _LiquidSolidSuspension: "_LiquidSolidSuspension",
 
   /**
    * Gel
    */
-  Gel: "GEL",
+  GEL: "GEL",
 
   /**
    * Gel with Applicator
    */
-  GelwithApplicator: "GELAPL",
+  GELAPL: "GELAPL",
 
   /**
    * Nasal Gel
    */
-  NasalGel: "NASGEL",
+  NASGEL: "NASGEL",
 
   /**
    * Ophthalmic Gel
    */
-  OphthalmicGel: "OPGEL",
+  OPGEL: "OPGEL",
 
   /**
    * Otic Gel
    */
-  OticGel: "OTGEL",
+  OTGEL: "OTGEL",
 
   /**
    * Topical Gel
    */
-  TopicalGel: "TOPGEL",
+  TOPGEL: "TOPGEL",
 
   /**
    * Urethral Gel
    */
-  UrethralGel: "URETHGEL",
+  URETHGEL: "URETHGEL",
 
   /**
    * Vaginal Gel
    */
-  VaginalGel: "VAGGEL",
+  VAGGEL: "VAGGEL",
 
   /**
    * Vaginal Gel with Applicator
    */
-  VaginalGelwithApplicator: "VGELAPL",
+  VGELAPL: "VGELAPL",
 
   /**
    * Paste
    */
-  Paste: "PASTE",
+  PASTE: "PASTE",
 
   /**
    * Pudding
    */
-  Pudding: "PUD",
+  PUD: "PUD",
 
   /**
    * Toothpaste
    */
-  Toothpaste: "TPASTE",
+  TPASTE: "TPASTE",
 
   /**
    * Suspension
    */
-  Suspension: "SUSP",
+  SUSP: "SUSP",
 
   /**
    * Intrathecal Suspension
    */
-  IntrathecalSuspension: "ITSUSP",
+  ITSUSP: "ITSUSP",
 
   /**
    * Ophthalmic Suspension
    */
-  OphthalmicSuspension: "OPSUSP",
+  OPSUSP: "OPSUSP",
 
   /**
    * Oral Suspension
    */
-  OralSuspension: "ORSUSP",
+  ORSUSP: "ORSUSP",
 
   /**
    * Extended-Release Suspension
    */
-  ExtendedReleaseSuspension: "ERSUSP",
+  ERSUSP: "ERSUSP",
 
   /**
    * 12 Hour Extended-Release Suspension
    */
-  TwelveHourExtendedReleaseSuspension: "ERSUSP12",
+  ERSUSP12: "ERSUSP12",
 
   /**
    * 24 Hour Extended Release Suspension
    */
-  TwentyFourHourExtendedReleaseSuspension: "ERSUSP24",
+  ERSUSP24: "ERSUSP24",
 
   /**
    * Otic Suspension
    */
-  OticSuspension: "OTSUSP",
+  OTSUSP: "OTSUSP",
 
   /**
    * Rectal Suspension
    */
-  RectalSuspension: "RECSUSP",
+  RECSUSP: "RECSUSP",
 
   /**
    * SolidDrugForm
    */
-  SolidDrugForm: "_SolidDrugForm",
+  _SolidDrugForm: "_SolidDrugForm",
 
   /**
    * Bar
    */
-  Bar: "BAR",
+  BAR: "BAR",
 
   /**
    * Bar Soap
    */
-  BarSoap: "BARSOAP",
+  BARSOAP: "BARSOAP",
 
   /**
    * Medicated Bar Soap
    */
-  MedicatedBarSoap: "MEDBAR",
+  MEDBAR: "MEDBAR",
 
   /**
    * Chewable Bar
    */
-  ChewableBar: "CHEWBAR",
+  CHEWBAR: "CHEWBAR",
 
   /**
    * Beads
    */
-  Beads: "BEAD",
+  BEAD: "BEAD",
 
   /**
    * Cake
    */
-  Cake: "CAKE",
+  CAKE: "CAKE",
 
   /**
    * Cement
    */
-  Cement: "CEMENT",
+  CEMENT: "CEMENT",
 
   /**
    * Crystals
    */
-  Crystals: "CRYS",
+  CRYS: "CRYS",
 
   /**
    * Disk
    */
-  Disk: "DISK",
+  DISK: "DISK",
 
   /**
    * Flakes
    */
-  Flakes: "FLAKE",
+  FLAKE: "FLAKE",
 
   /**
    * Granules
    */
-  Granules: "GRAN",
+  GRAN: "GRAN",
 
   /**
    * ChewingGum
    */
-  ChewingGum: "GUM",
+  GUM: "GUM",
 
   /**
    * Pad
    */
-  Pad: "PAD",
+  PAD: "PAD",
 
   /**
    * Medicated Pad
    */
-  MedicatedPad: "MEDPAD",
+  MEDPAD: "MEDPAD",
 
   /**
    * Patch
    */
-  Patch: "PATCH",
+  PATCH: "PATCH",
 
   /**
    * Transdermal Patch
    */
-  TransdermalPatch: "TPATCH",
+  TPATCH: "TPATCH",
 
   /**
    * 16 Hour Transdermal Patch
    */
-  SixteenHourTransdermalPatch: "TPATH16",
+  TPATH16: "TPATH16",
 
   /**
    * 24 Hour Transdermal Patch
    */
-  TwentyFourHourTransdermalPatch: "TPATH24",
+  TPATH24: "TPATH24",
 
   /**
    * Biweekly Transdermal Patch
    */
-  BiweeklyTransdermalPatch: "TPATH2WK",
+  TPATH2WK: "TPATH2WK",
 
   /**
    * 72 Hour Transdermal Patch
    */
-  SeventyTwoHourTransdermalPatch: "TPATH72",
+  TPATH72: "TPATH72",
 
   /**
    * Weekly Transdermal Patch
    */
-  WeeklyTransdermalPatch: "TPATHWK",
+  TPATHWK: "TPATHWK",
 
   /**
    * Pellet
    */
-  Pellet: "PELLET",
+  PELLET: "PELLET",
 
   /**
    * Pill
    */
-  Pill: "PILL",
+  PILL: "PILL",
 
   /**
    * Capsule
    */
-  Capsule: "CAP",
+  CAP: "CAP",
 
   /**
    * Oral Capsule
    */
-  OralCapsule: "ORCAP",
+  ORCAP: "ORCAP",
 
   /**
    * Enteric Coated Capsule
    */
-  EntericCoatedCapsule: "ENTCAP",
+  ENTCAP: "ENTCAP",
 
   /**
    * Extended Release Enteric Coated Capsule
    */
-  ExtendedReleaseEntericCoatedCapsule: "ERENTCAP",
+  ERENTCAP: "ERENTCAP",
 
   /**
    * Extended Release Capsule
    */
-  ExtendedReleaseCapsule: "ERCAP",
+  ERCAP: "ERCAP",
 
   /**
    * 12 Hour Extended Release Capsule
    */
-  TwelveHourExtendedReleaseCapsule: "ERCAP12",
+  ERCAP12: "ERCAP12",
 
   /**
    * 24 Hour Extended Release Capsule
    */
-  TwentyFourHourExtendedReleaseCapsule: "ERCAP24",
+  ERCAP24: "ERCAP24",
 
   /**
    * Extended Release Enteric Coated Capsule
    */
-  ExtendedReleaseEntericCoatedCapsule: "ERECCAP",
+  ERECCAP: "ERECCAP",
 
   /**
    * Tablet
    */
-  Tablet: "TAB",
+  TAB: "TAB",
 
   /**
    * Oral Tablet
    */
-  OralTablet: "ORTAB",
+  ORTAB: "ORTAB",
 
   /**
    * Buccal Tablet
    */
-  BuccalTablet: "BUCTAB",
+  BUCTAB: "BUCTAB",
 
   /**
    * Sustained Release Buccal Tablet
    */
-  SustainedReleaseBuccalTablet: "SRBUCTAB",
+  SRBUCTAB: "SRBUCTAB",
 
   /**
    * Caplet
    */
-  Caplet: "CAPLET",
+  CAPLET: "CAPLET",
 
   /**
    * Chewable Tablet
    */
-  ChewableTablet: "CHEWTAB",
+  CHEWTAB: "CHEWTAB",
 
   /**
    * Coated Particles Tablet
    */
-  CoatedParticlesTablet: "CPTAB",
+  CPTAB: "CPTAB",
 
   /**
    * Disintegrating Tablet
    */
-  DisintegratingTablet: "DISINTAB",
+  DISINTAB: "DISINTAB",
 
   /**
    * Delayed Release Tablet
    */
-  DelayedReleaseTablet: "DRTAB",
+  DRTAB: "DRTAB",
 
   /**
    * Enteric Coated Tablet
    */
-  EntericCoatedTablet: "ECTAB",
+  ECTAB: "ECTAB",
 
   /**
    * Extended Release Enteric Coated Tablet
    */
-  ExtendedReleaseEntericCoatedTablet: "ERECTAB",
+  ERECTAB: "ERECTAB",
 
   /**
    * Extended Release Tablet
    */
-  ExtendedReleaseTablet: "ERTAB",
+  ERTAB: "ERTAB",
 
   /**
    * 12 Hour Extended Release Tablet
    */
-  TwelveHourExtendedReleaseTablet: "ERTAB12",
+  ERTAB12: "ERTAB12",
 
   /**
    * 24 Hour Extended Release Tablet
    */
-  TwentyFourHourExtendedReleaseTablet: "ERTAB24",
+  ERTAB24: "ERTAB24",
 
   /**
    * Lozenge/Oral Troche
    */
-  LozengeOralTroche: "ORTROCHE",
+  ORTROCHE: "ORTROCHE",
 
   /**
    * Sublingual Tablet
    */
-  SublingualTablet: "SLTAB",
+  SLTAB: "SLTAB",
 
   /**
    * Vaginal Tablet
    */
-  VaginalTablet: "VAGTAB",
+  VAGTAB: "VAGTAB",
 
   /**
    * Powder
    */
-  Powder: "POWD",
+  POWD: "POWD",
 
   /**
    * Topical Powder
    */
-  TopicalPowder: "TOPPWD",
+  TOPPWD: "TOPPWD",
 
   /**
    * Rectal Powder
    */
-  RectalPowder: "RECPWD",
+  RECPWD: "RECPWD",
 
   /**
    * Vaginal Powder
    */
-  VaginalPowder: "VAGPWD",
+  VAGPWD: "VAGPWD",
 
   /**
    * Suppository
    */
-  Suppository: "SUPP",
+  SUPP: "SUPP",
 
   /**
    * Rectal Suppository
    */
-  RectalSuppository: "RECSUPP",
+  RECSUPP: "RECSUPP",
 
   /**
    * Urethral suppository
    */
-  Urethralsuppository: "URETHSUPP",
+  URETHSUPP: "URETHSUPP",
 
   /**
    * Vaginal Suppository
    */
-  VaginalSuppository: "VAGSUPP",
+  VAGSUPP: "VAGSUPP",
 
   /**
    * Swab
    */
-  Swab: "SWAB",
+  SWAB: "SWAB",
 
   /**
    * Medicated swab
    */
-  Medicatedswab: "MEDSWAB",
+  MEDSWAB: "MEDSWAB",
 
   /**
    * Wafer
    */
-  Wafer: "WAFER",
+  WAFER: "WAFER",
 
   /**
    * Applicatorful
    */
-  Applicatorful: "APPFUL",
+  APPFUL: "APPFUL",
 
   /**
    * Puff
    */
-  Puff: "PUFF",
+  PUFF: "PUFF",
 
   /**
    * Scoops
    */
-  Scoops: "SCOOP",
+  SCOOP: "SCOOP",
 
   /**
    * Sprays
    */
-  Sprays: "SPRY",
+  SPRY: "SPRY",
 
   /**
    * AdministrableDrugForm
    */
-  AdministrableDrugForm: "_AdministrableDrugForm",
+  _AdministrableDrugForm: "_AdministrableDrugForm",
 
   /**
    * DispensableDrugForm
    */
-  DispensableDrugForm: "_DispensableDrugForm",
+  _DispensableDrugForm: "_DispensableDrugForm",
 } as const;
 
 /**

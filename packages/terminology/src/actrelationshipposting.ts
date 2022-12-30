@@ -6,12 +6,12 @@ export const ActRelationshipPostingCode = {
   /**
    * has credit
    */
-  hascredit: "CREDIT",
+  CREDIT: "CREDIT",
 
   /**
    * has debit
    */
-  hasdebit: "DEBIT",
+  DEBIT: "DEBIT",
 } as const;
 
 /**

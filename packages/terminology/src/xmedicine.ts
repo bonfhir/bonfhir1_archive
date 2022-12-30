@@ -6,12 +6,12 @@ export const XMedicineCode = {
   /**
    * Blood Product
    */
-  BloodProduct: "BLDPRD",
+  BLDPRD: "BLDPRD",
 
   /**
    * Vaccine
    */
-  Vaccine: "VCCNE",
+  VCCNE: "VCCNE",
 } as const;
 
 /**

@@ -6,17 +6,17 @@ export const RaceAmericanIndianMaiduCode = {
   /**
    * Maidu
    */
-  Maidu: "1344-1",
+  "1344-1": "1344-1",
 
   /**
    * Mountain Maidu
    */
-  MountainMaidu: "1345-8",
+  "1345-8": "1345-8",
 
   /**
    * Nishinam
    */
-  Nishinam: "1346-6",
+  "1346-6": "1346-6",
 } as const;
 
 /**

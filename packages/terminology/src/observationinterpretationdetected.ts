@@ -11,32 +11,32 @@ export const ObservationInterpretationDetectedCode = {
   /**
    * Indeterminate
    */
-  Indeterminate: "IND",
+  IND: "IND",
 
   /**
    * Equivocal
    */
-  Equivocal: "E",
+  E: "E",
 
   /**
    * Negative
    */
-  Negative: "NEG",
+  NEG: "NEG",
 
   /**
    * Not detected
    */
-  Notdetected: "ND",
+  ND: "ND",
 
   /**
    * Positive
    */
-  Positive: "POS",
+  POS: "POS",
 
   /**
    * Detected
    */
-  Detected: "DET",
+  DET: "DET",
 } as const;
 
 /**

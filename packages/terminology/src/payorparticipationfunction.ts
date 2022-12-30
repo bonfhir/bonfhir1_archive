@@ -6,37 +6,37 @@ export const PayorParticipationFunctionCode = {
   /**
    * PayorParticipationFunction
    */
-  PayorParticipationFunction: "_PayorParticipationFunction",
+  _PayorParticipationFunction: "_PayorParticipationFunction",
 
   /**
    * claims adjudication
    */
-  claimsadjudication: "CLMADJ",
+  CLMADJ: "CLMADJ",
 
   /**
    * enrollment broker
    */
-  enrollmentbroker: "ENROLL",
+  ENROLL: "ENROLL",
 
   /**
    * ffs management
    */
-  ffsmanagement: "FFSMGT",
+  FFSMGT: "FFSMGT",
 
   /**
    * managed care management
    */
-  managedcaremanagement: "MCMGT",
+  MCMGT: "MCMGT",
 
   /**
    * provider management
    */
-  providermanagement: "PROVMGT",
+  PROVMGT: "PROVMGT",
 
   /**
    * utilization management
    */
-  utilizationmanagement: "UMGT",
+  UMGT: "UMGT",
 } as const;
 
 /**

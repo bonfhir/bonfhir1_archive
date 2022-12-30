@@ -6,17 +6,17 @@ export const HL7SearchUseCode = {
   /**
    * search
    */
-  search: "SRCH",
+  SRCH: "SRCH",
 
   /**
    * phonetic
    */
-  phonetic: "PHON",
+  PHON: "PHON",
 
   /**
    * Soundex
    */
-  Soundex: "SNDX",
+  SNDX: "SNDX",
 } as const;
 
 /**

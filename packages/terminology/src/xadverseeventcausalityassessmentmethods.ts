@@ -6,17 +6,17 @@ export const XAdverseEventCausalityAssessmentMethodsCode = {
   /**
    * algorithm
    */
-  algorithm: "ALGM",
+  ALGM: "ALGM",
 
   /**
    * bayesian calculation
    */
-  bayesiancalculation: "BYCL",
+  BYCL: "BYCL",
 
   /**
    * global introspection
    */
-  globalintrospection: "GINT",
+  GINT: "GINT",
 } as const;
 
 /**

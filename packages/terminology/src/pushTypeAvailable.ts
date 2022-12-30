@@ -6,17 +6,17 @@ export const Push_type_availableCode = {
   /**
    * Specific requested changes
    */
-  Specificrequestedchanges: "specific",
+  specific: "specific",
 
   /**
    * Any changes
    */
-  Anychanges: "any",
+  any: "any",
 
   /**
    * As defined by source
    */
-  Asdefinedbysource: "source",
+  source: "source",
 } as const;
 
 /**

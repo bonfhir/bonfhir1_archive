@@ -6,7 +6,7 @@ export const CommonTagsCode = {
   /**
    * Actionable
    */
-  Actionable: "actionable",
+  actionable: "actionable",
 } as const;
 
 /**

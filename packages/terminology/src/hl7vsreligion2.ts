@@ -6,477 +6,477 @@ export const Hl7VSReligion2Code = {
   /**
    * Atheist
    */
-  Atheist: "A",
+  A: "A",
 
   /**
    * Baptist
    */
-  Baptist: "B",
+  B: "B",
 
   /**
    * Catholic
    */
-  Catholic: "C",
+  C: "C",
 
   /**
    * Episcopalian
    */
-  Episcopalian: "E",
+  E: "E",
 
   /**
    * Judaism
    */
-  Judaism: "J",
+  J: "J",
 
   /**
    * Lutheran
    */
-  Lutheran: "L",
+  L: "L",
 
   /**
    * Church of Latter Day Saints (Mormon)
    */
-  ChurchofLatterDaySaintsMormon: "M",
+  M: "M",
 
   /**
    * Hindu
    */
-  Hindu: "N",
+  N: "N",
 
   /**
    * Protestant
    */
-  Protestant: "P",
+  P: "P",
 
   /**
    * Agnostic
    */
-  Agnostic: "AGN",
+  AGN: "AGN",
 
   /**
    * Atheist
    */
-  Atheist: "ATH",
+  ATH: "ATH",
 
   /**
    * Baha'i
    */
-  Bahai: "BAH",
+  BAH: "BAH",
 
   /**
    * Brethren
    */
-  Brethren: "BRE",
+  BRE: "BRE",
 
   /**
    * Buddhist
    */
-  Buddhist: "BUD",
+  BUD: "BUD",
 
   /**
    * Buddhist: Mahayana
    */
-  BuddhistMahayana: "BMA",
+  BMA: "BMA",
 
   /**
    * Buddhist: Theravada
    */
-  BuddhistTheravada: "BTH",
+  BTH: "BTH",
 
   /**
    * Buddhist: Tantrayana
    */
-  BuddhistTantrayana: "BTA",
+  BTA: "BTA",
 
   /**
    * Buddhist: Other
    */
-  BuddhistOther: "BOT",
+  BOT: "BOT",
 
   /**
    * Chinese Folk Religionist
    */
-  ChineseFolkReligionist: "CFR",
+  CFR: "CFR",
 
   /**
    * Christian
    */
-  Christian: "CHR",
+  CHR: "CHR",
 
   /**
    * Christian: American Baptist Church
    */
-  ChristianAmericanBaptistChurch: "ABC",
+  ABC: "ABC",
 
   /**
    * Christian: African Methodist Episcopal
    */
-  ChristianAfricanMethodistEpiscopal: "AMT",
+  AMT: "AMT",
 
   /**
    * Christian: African Methodist Episcopal Zion
    */
-  ChristianAfricanMethodistEpiscopalZion: "AME",
+  AME: "AME",
 
   /**
    * Christian: Anglican
    */
-  ChristianAnglican: "ANG",
+  ANG: "ANG",
 
   /**
    * Christian: Assembly of God
    */
-  ChristianAssemblyofGod: "AOG",
+  AOG: "AOG",
 
   /**
    * Christian: Baptist
    */
-  ChristianBaptist: "BAP",
+  BAP: "BAP",
 
   /**
    * Christian: Christian Reformed
    */
-  ChristianChristianReformed: "CRR",
+  CRR: "CRR",
 
   /**
    * Christian: Christian Science
    */
-  ChristianChristianScience: "CHS",
+  CHS: "CHS",
 
   /**
    * Christian: Christian Missionary Alliance
    */
-  ChristianChristianMissionaryAlliance: "CMA",
+  CMA: "CMA",
 
   /**
    * Christian: Church of Christ
    */
-  ChristianChurchofChrist: "COC",
+  COC: "COC",
 
   /**
    * Christian: Church of God
    */
-  ChristianChurchofGod: "COG",
+  COG: "COG",
 
   /**
    * Christian: Church of God in Christ
    */
-  ChristianChurchofGodinChrist: "COI",
+  COI: "COI",
 
   /**
    * Christian: Community
    */
-  ChristianCommunity: "COM",
+  COM: "COM",
 
   /**
    * Christian: Congregational
    */
-  ChristianCongregational: "COL",
+  COL: "COL",
 
   /**
    * Christian: Eastern Orthodox
    */
-  ChristianEasternOrthodox: "EOT",
+  EOT: "EOT",
 
   /**
    * Christian: Evangelical Church
    */
-  ChristianEvangelicalChurch: "EVC",
+  EVC: "EVC",
 
   /**
    * Christian: Episcopalian
    */
-  ChristianEpiscopalian: "EPI",
+  EPI: "EPI",
 
   /**
    * Christian: Free Will Baptist
    */
-  ChristianFreeWillBaptist: "FWB",
+  FWB: "FWB",
 
   /**
    * Christian: Friends
    */
-  ChristianFriends: "FRQ",
+  FRQ: "FRQ",
 
   /**
    * Christian: Full Gospel
    */
-  ChristianFullGospel: "FUL",
+  FUL: "FUL",
 
   /**
    * Christian: Greek Orthodox
    */
-  ChristianGreekOrthodox: "GRE",
+  GRE: "GRE",
 
   /**
    * Christian: Jehovah's Witness
    */
-  ChristianJehovahsWitness: "JWN",
+  JWN: "JWN",
 
   /**
    * Christian: Latter-day Saints
    */
-  ChristianLatterdaySaints: "MOM",
+  MOM: "MOM",
 
   /**
    * Christian: Lutheran
    */
-  ChristianLutheran: "LUT",
+  LUT: "LUT",
 
   /**
    * Christian: Lutheran Missouri Synod
    */
-  ChristianLutheranMissouriSynod: "LMS",
+  LMS: "LMS",
 
   /**
    * Christian: Mennonite
    */
-  ChristianMennonite: "MEN",
+  MEN: "MEN",
 
   /**
    * Christian: Methodist
    */
-  ChristianMethodist: "MET",
+  MET: "MET",
 
   /**
    * Christian: Church of the Nazarene
    */
-  ChristianChurchoftheNazarene: "NAZ",
+  NAZ: "NAZ",
 
   /**
    * Christian: Orthodox
    */
-  ChristianOrthodox: "ORT",
+  ORT: "ORT",
 
   /**
    * Christian: Pentecostal
    */
-  ChristianPentecostal: "PEN",
+  PEN: "PEN",
 
   /**
    * Christian: Other Pentecostal
    */
-  ChristianOtherPentecostal: "COP",
+  COP: "COP",
 
   /**
    * Christian: Presbyterian
    */
-  ChristianPresbyterian: "PRE",
+  PRE: "PRE",
 
   /**
    * Christian: Protestant
    */
-  ChristianProtestant: "PRO",
+  PRO: "PRO",
 
   /**
    * Christian: Other Protestant
    */
-  ChristianOtherProtestant: "PRC",
+  PRC: "PRC",
 
   /**
    * Christian: Friends
    */
-  ChristianFriends: "QUA",
+  QUA: "QUA",
 
   /**
    * Christian: Reformed Church
    */
-  ChristianReformedChurch: "REC",
+  REC: "REC",
 
   /**
    * Christian: Reorganized Church of Jesus Christ-LDS
    */
-  ChristianReorganizedChurchofJesusChristLDS: "REO",
+  REO: "REO",
 
   /**
    * Christian: Roman Catholic
    */
-  ChristianRomanCatholic: "CAT",
+  CAT: "CAT",
 
   /**
    * Christian: Salvation Army
    */
-  ChristianSalvationArmy: "SAA",
+  SAA: "SAA",
 
   /**
    * Christian: Seventh Day Adventist
    */
-  ChristianSeventhDayAdventist: "SEV",
+  SEV: "SEV",
 
   /**
    * Christian: Southern Baptist
    */
-  ChristianSouthernBaptist: "SOU",
+  SOU: "SOU",
 
   /**
    * Christian: United Church of Christ
    */
-  ChristianUnitedChurchofChrist: "UCC",
+  UCC: "UCC",
 
   /**
    * Christian: United Methodist
    */
-  ChristianUnitedMethodist: "UMD",
+  UMD: "UMD",
 
   /**
    * Christian: Unitarian
    */
-  ChristianUnitarian: "UNI",
+  UNI: "UNI",
 
   /**
    * Christian: Unitarian Universalist
    */
-  ChristianUnitarianUniversalist: "UNU",
+  UNU: "UNU",
 
   /**
    * Christian: Wesleyan
    */
-  ChristianWesleyan: "WES",
+  WES: "WES",
 
   /**
    * Christian: Wesleyan Methodist
    */
-  ChristianWesleyanMethodist: "WMC",
+  WMC: "WMC",
 
   /**
    * Christian: Other
    */
-  ChristianOther: "COT",
+  COT: "COT",
 
   /**
    * Confucian
    */
-  Confucian: "CNF",
+  CNF: "CNF",
 
   /**
    * Disciples of Christ
    */
-  DisciplesofChrist: "DOC",
+  DOC: "DOC",
 
   /**
    * Ethnic Religionist
    */
-  EthnicReligionist: "ERL",
+  ERL: "ERL",
 
   /**
    * Hindu
    */
-  Hindu: "HIN",
+  HIN: "HIN",
 
   /**
    * Hindu: Shaivites
    */
-  HinduShaivites: "HSH",
+  HSH: "HSH",
 
   /**
    * Hindu: Vaishnavites
    */
-  HinduVaishnavites: "HVA",
+  HVA: "HVA",
 
   /**
    * Hindu: Other
    */
-  HinduOther: "HOT",
+  HOT: "HOT",
 
   /**
    * Jain
    */
-  Jain: "JAI",
+  JAI: "JAI",
 
   /**
    * Jewish
    */
-  Jewish: "JEW",
+  JEW: "JEW",
 
   /**
    * Jewish: Conservative
    */
-  JewishConservative: "JCO",
+  JCO: "JCO",
 
   /**
    * Jewish: Orthodox
    */
-  JewishOrthodox: "JOR",
+  JOR: "JOR",
 
   /**
    * Jewish: Reconstructionist
    */
-  JewishReconstructionist: "JRC",
+  JRC: "JRC",
 
   /**
    * Jewish: Reform
    */
-  JewishReform: "JRF",
+  JRF: "JRF",
 
   /**
    * Jewish: Renewal
    */
-  JewishRenewal: "JRN",
+  JRN: "JRN",
 
   /**
    * Jewish: Other
    */
-  JewishOther: "JOT",
+  JOT: "JOT",
 
   /**
    * Muslim
    */
-  Muslim: "MOS",
+  MOS: "MOS",
 
   /**
    * Muslim: Shiite
    */
-  MuslimShiite: "MSH",
+  MSH: "MSH",
 
   /**
    * Muslim: Sunni
    */
-  MuslimSunni: "MSU",
+  MSU: "MSU",
 
   /**
    * Muslim: Other
    */
-  MuslimOther: "MOT",
+  MOT: "MOT",
 
   /**
    * Native American
    */
-  NativeAmerican: "NAM",
+  NAM: "NAM",
 
   /**
    * New Religionist
    */
-  NewReligionist: "NRL",
+  NRL: "NRL",
 
   /**
    * Nonreligious
    */
-  Nonreligious: "NOE",
+  NOE: "NOE",
 
   /**
    * Shintoist
    */
-  Shintoist: "SHN",
+  SHN: "SHN",
 
   /**
    * Sikh
    */
-  Sikh: "SIK",
+  SIK: "SIK",
 
   /**
    * Spiritist
    */
-  Spiritist: "SPI",
+  SPI: "SPI",
 
   /**
    * Other
    */
-  Other: "OTH",
+  OTH: "OTH",
 
   /**
    * Unknown
    */
-  Unknown: "VAR",
+  VAR: "VAR",
 } as const;
 
 /**

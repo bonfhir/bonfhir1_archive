@@ -6,77 +6,77 @@ export const RaceAmericanIndianShoshoneCode = {
   /**
    * Shoshone
    */
-  Shoshone: "1586-7",
+  "1586-7": "1586-7",
 
   /**
    * Battle Mountain
    */
-  BattleMountain: "1587-5",
+  "1587-5": "1587-5",
 
   /**
    * Duckwater
    */
-  Duckwater: "1588-3",
+  "1588-3": "1588-3",
 
   /**
    * Elko
    */
-  Elko: "1589-1",
+  "1589-1": "1589-1",
 
   /**
    * Ely
    */
-  Ely: "1590-9",
+  "1590-9": "1590-9",
 
   /**
    * Goshute
    */
-  Goshute: "1591-7",
+  "1591-7": "1591-7",
 
   /**
    * Panamint
    */
-  Panamint: "1592-5",
+  "1592-5": "1592-5",
 
   /**
    * Ruby Valley
    */
-  RubyValley: "1593-3",
+  "1593-3": "1593-3",
 
   /**
    * Skull Valley
    */
-  SkullValley: "1594-1",
+  "1594-1": "1594-1",
 
   /**
    * South Fork Shoshone
    */
-  SouthForkShoshone: "1595-8",
+  "1595-8": "1595-8",
 
   /**
    * Te-Moak Western Shoshone
    */
-  TeMoakWesternShoshone: "1596-6",
+  "1596-6": "1596-6",
 
   /**
    * Timbi-Sha Shoshone
    */
-  TimbiShaShoshone: "1597-4",
+  "1597-4": "1597-4",
 
   /**
    * Washakie
    */
-  Washakie: "1598-2",
+  "1598-2": "1598-2",
 
   /**
    * Wind River Shoshone
    */
-  WindRiverShoshone: "1599-0",
+  "1599-0": "1599-0",
 
   /**
    * Yomba
    */
-  Yomba: "1600-6",
+  "1600-6": "1600-6",
 } as const;
 
 /**

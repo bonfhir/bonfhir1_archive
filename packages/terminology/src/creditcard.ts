@@ -6,27 +6,27 @@ export const CreditCardCode = {
   /**
    * American Express
    */
-  AmericanExpress: "AE",
+  AE: "AE",
 
   /**
    * Diner's Club
    */
-  DinersClub: "DN",
+  DN: "DN",
 
   /**
    * Discover Card
    */
-  DiscoverCard: "DV",
+  DV: "DV",
 
   /**
    * Master Card
    */
-  MasterCard: "MC",
+  MC: "MC",
 
   /**
    * Visa
    */
-  Visa: "V",
+  V: "V",
 } as const;
 
 /**

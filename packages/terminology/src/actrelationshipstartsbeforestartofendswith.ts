@@ -6,7 +6,7 @@ export const ActRelationshipStartsBeforeStartOfEndsWithCode = {
   /**
    * starts before start of, ends with
    */
-  startsbeforestartofendswith: "SBSECWE",
+  SBSECWE: "SBSECWE",
 } as const;
 
 /**

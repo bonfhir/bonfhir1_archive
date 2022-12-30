@@ -12,17 +12,17 @@ export const SnodentDentalToothMobilityMillerClassificationInternationalCode = {
   /**
    * Tooth mobility - grade 1
    */
-  Toothmobilitygrade1: "116762D",
+  "116762D": "116762D",
 
   /**
    * Tooth mobility - grade 2
    */
-  Toothmobilitygrade2: "136123D",
+  "136123D": "136123D",
 
   /**
    * Tooth mobility - grade 3
    */
-  Toothmobilitygrade3: "149641D",
+  "149641D": "149641D",
 } as const;
 
 /**

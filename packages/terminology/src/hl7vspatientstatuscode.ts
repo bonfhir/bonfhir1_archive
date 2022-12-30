@@ -6,12 +6,12 @@ export const Hl7VSPatientStatusCodeCode = {
   /**
    * Active Inpatient
    */
-  ActiveInpatient: "AI",
+  AI: "AI",
 
   /**
    * Discharged Inpatient
    */
-  DischargedInpatient: "DI",
+  DI: "DI",
 } as const;
 
 /**

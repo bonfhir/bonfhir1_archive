@@ -6,37 +6,37 @@ export const SchedulingActReasonCode = {
   /**
    * Patient request
    */
-  Patientrequest: "PAT",
+  PAT: "PAT",
 
   /**
    * Unexpected Block (of Schedule)
    */
-  UnexpectedBlockofSchedule: "BLK",
+  BLK: "BLK",
 
   /**
    * Patient Deceased
    */
-  PatientDeceased: "DEC",
+  DEC: "DEC",
 
   /**
    * No Financial Backing
    */
-  NoFinancialBacking: "FIN",
+  FIN: "FIN",
 
   /**
    * Medical Status Altered
    */
-  MedicalStatusAltered: "MED",
+  MED: "MED",
 
   /**
    * In an outside meeting
    */
-  Inanoutsidemeeting: "MTG",
+  MTG: "MTG",
 
   /**
    * Physician request
    */
-  Physicianrequest: "PHY",
+  PHY: "PHY",
 } as const;
 
 /**

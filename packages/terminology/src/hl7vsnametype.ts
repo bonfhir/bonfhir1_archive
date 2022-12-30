@@ -6,122 +6,122 @@ export const Hl7VSNameTypeCode = {
   /**
    * Other
    */
-  Other: "O",
+  O: "O",
 
   /**
    * Assigned
    */
-  Assigned: "A",
+  A: "A",
 
   /**
    * Birth name
    */
-  Birthname: "B",
+  B: "B",
 
   /**
    * Bad Name
    */
-  BadName: "BAD",
+  BAD: "BAD",
 
   /**
    * Adopted Name
    */
-  AdoptedName: "C",
+  C: "C",
 
   /**
    * Customary Name
    */
-  CustomaryName: "D",
+  D: "D",
 
   /**
    * Fathers Name
    */
-  FathersName: "F",
+  F: "F",
 
   /**
    * Licensing Name
    */
-  LicensingName: "I",
+  I: "I",
 
   /**
    * Business name
    */
-  Businessname: "K",
+  K: "K",
 
   /**
    * Official Registry Name
    */
-  OfficialRegistryName: "L",
+  L: "L",
 
   /**
    * Maiden Name
    */
-  MaidenName: "M",
+  M: "M",
 
   /**
    * Masked
    */
-  Masked: "MSK",
+  MSK: "MSK",
 
   /**
    * Nickname
    */
-  Nickname: "N",
+  N: "N",
 
   /**
    * Temporarily Unavailable
    */
-  TemporarilyUnavailable: "NAV",
+  NAV: "NAV",
 
   /**
    * Newborn Name
    */
-  NewbornName: "NB",
+  NB: "NB",
 
   /**
    * No Longer To Be Used
    */
-  NoLongerToBeUsed: "NOUSE",
+  NOUSE: "NOUSE",
 
   /**
    * Name of Partner/Spouse
    */
-  NameofPartnerSpouse: "P",
+  P: "P",
 
   /**
    * Registered Name
    */
-  RegisteredName: "R",
+  R: "R",
 
   /**
    * Religious
    */
-  Religious: "REL",
+  REL: "REL",
 
   /**
    * Pseudonym
    */
-  Pseudonym: "S",
+  S: "S",
 
   /**
    * Indigenous/Tribal
    */
-  IndigenousTribal: "T",
+  T: "T",
 
   /**
    * Temporary Name
    */
-  TemporaryName: "TEMP",
+  TEMP: "TEMP",
 
   /**
    * Unknown
    */
-  Unknown: "U",
+  U: "U",
 
   /**
    * No suggested values defined
    */
-  Nosuggestedvaluesdefined: "...",
+  "...": "...",
 } as const;
 
 /**

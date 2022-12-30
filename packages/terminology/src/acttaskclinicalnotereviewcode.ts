@@ -6,12 +6,12 @@ export const ActTaskClinicalNoteReviewCodeCode = {
   /**
    * clinical note review task
    */
-  clinicalnotereviewtask: "CLINNOTEREV",
+  CLINNOTEREV: "CLINNOTEREV",
 
   /**
    * discharge summary review task
    */
-  dischargesummaryreviewtask: "DISCHSUMREV",
+  DISCHSUMREV: "DISCHSUMREV",
 } as const;
 
 /**

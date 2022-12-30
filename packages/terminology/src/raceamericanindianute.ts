@@ -6,22 +6,22 @@ export const RaceAmericanIndianUteCode = {
   /**
    * Ute
    */
-  Ute: "1670-9",
+  "1670-9": "1670-9",
 
   /**
    * Allen Canyon
    */
-  AllenCanyon: "1671-7",
+  "1671-7": "1671-7",
 
   /**
    * Uintah Ute
    */
-  UintahUte: "1672-5",
+  "1672-5": "1672-5",
 
   /**
    * Ute Mountain Ute
    */
-  UteMountainUte: "1673-3",
+  "1673-3": "1673-3",
 } as const;
 
 /**

@@ -6,17 +6,17 @@ export const InjectionMedicalDeviceCode = {
   /**
    * AutoInjector
    */
-  AutoInjector: "AINJ",
+  AINJ: "AINJ",
 
   /**
    * Pen
    */
-  Pen: "PEN",
+  PEN: "PEN",
 
   /**
    * Syringe
    */
-  Syringe: "SYR",
+  SYR: "SYR",
 } as const;
 
 /**

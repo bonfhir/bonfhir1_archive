@@ -6,32 +6,32 @@ export const Hl7VSShipmentStatusCode = {
   /**
    * On Hold
    */
-  OnHold: "ONH",
+  ONH: "ONH",
 
   /**
    * Inventoried
    */
-  Inventoried: "INV",
+  INV: "INV",
 
   /**
    * Processing
    */
-  Processing: "PRC",
+  PRC: "PRC",
 
   /**
    * Rejected
    */
-  Rejected: "REJ",
+  REJ: "REJ",
 
   /**
    * Triaged to Lab
    */
-  TriagedtoLab: "TTL",
+  TTL: "TTL",
 
   /**
    * In Transit
    */
-  InTransit: "TRN",
+  TRN: "TRN",
 } as const;
 
 /**

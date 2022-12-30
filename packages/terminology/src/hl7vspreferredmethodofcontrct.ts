@@ -6,32 +6,32 @@ export const Hl7VSPreferredMethodOfContrctCode = {
   /**
    * Beeper Number
    */
-  BeeperNumber: "B",
+  B: "B",
 
   /**
    * Cellular Phone Number
    */
-  CellularPhoneNumber: "C",
+  C: "C",
 
   /**
    * E-Mail Address (for backward compatibility)
    */
-  EMailAddressforbackwardcompatibility: "E",
+  E: "E",
 
   /**
    * FAX Number
    */
-  FAXNumber: "F",
+  F: "F",
 
   /**
    * Home Phone Number
    */
-  HomePhoneNumber: "H",
+  H: "H",
 
   /**
    * Office Phone Number
    */
-  OfficePhoneNumber: "O",
+  O: "O",
 } as const;
 
 /**

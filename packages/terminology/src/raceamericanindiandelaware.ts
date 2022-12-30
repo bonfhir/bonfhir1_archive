@@ -6,37 +6,37 @@ export const RaceAmericanIndianDelawareCode = {
   /**
    * Delaware
    */
-  Delaware: "1214-6",
+  "1214-6": "1214-6",
 
   /**
    * Eastern Delaware
    */
-  EasternDelaware: "1215-3",
+  "1215-3": "1215-3",
 
   /**
    * Lenni-Lenape
    */
-  LenniLenape: "1216-1",
+  "1216-1": "1216-1",
 
   /**
    * Munsee
    */
-  Munsee: "1217-9",
+  "1217-9": "1217-9",
 
   /**
    * Oklahoma Delaware
    */
-  OklahomaDelaware: "1218-7",
+  "1218-7": "1218-7",
 
   /**
    * Rampough Mountain
    */
-  RampoughMountain: "1219-5",
+  "1219-5": "1219-5",
 
   /**
    * Sand Hill
    */
-  SandHill: "1220-3",
+  "1220-3": "1220-3",
 } as const;
 
 /**

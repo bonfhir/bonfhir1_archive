@@ -6,12 +6,12 @@ export const Hl7VSStockLocationCode = {
   /**
    * Filled from ancillary department stock
    */
-  Filledfromancillarydepartmentstock: "AN",
+  AN: "AN",
 
   /**
    * Filled from floor stock
    */
-  Filledfromfloorstock: "FL",
+  FL: "FL",
 } as const;
 
 /**

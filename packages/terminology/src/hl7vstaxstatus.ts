@@ -6,12 +6,12 @@ export const Hl7VSTaxStatusCode = {
   /**
    * Registered in VAT register
    */
-  RegisteredinVATregister: "RVAT",
+  RVAT: "RVAT",
 
   /**
    * Unregistered in VAT register
    */
-  UnregisteredinVATregister: "UVAT",
+  UVAT: "UVAT",
 } as const;
 
 /**

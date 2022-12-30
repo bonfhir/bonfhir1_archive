@@ -6,12 +6,12 @@ export const ExampleVisionPrescriptionProductCodesCode = {
   /**
    * Lens
    */
-  Lens: "lens",
+  lens: "lens",
 
   /**
    * Contact Lens
    */
-  ContactLens: "contact",
+  contact: "contact",
 } as const;
 
 /**
