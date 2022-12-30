@@ -1,7 +1,7 @@
 import type { DomainResource, FhirResource, Resource } from "fhir/r4";
-{{#fhirPath data.[profiles-types] "Bundle/ComplexElements"}}
+{{#each (fhirPath data.[profiles-types] "Bundle/ComplexElements")}}
 import type { {{type}} } from "fhir/r4";
-{{/fhirPath}}
+{{/each}}
 
 /**
  * All the possible resource types.
@@ -20,9 +20,9 @@ export type ExtractResource<TResourceType extends ResourceType> = Extract<
  * All the resources types for DomainResource only.
  */
 export const DomainResourceTypes: string[] = [
-{{#fhirPath data.[profiles-resources] "Bundle/DomainResources"}}
+{{#each (fhirPath data.[profiles-resources] "Bundle/DomainResources")}}
 "{{type}}",
-{{/fhirPath}}
+{{/each}}
 ];
 
 /**
@@ -35,7 +35,7 @@ export function isDomainResource(
 }
 
 export type AnnotatedComplexElement =
-{{#fhirPath data.[profiles-types] "Bundle/ComplexElements"}}| ({{type}} & { readonly elementType: "{{type}}" }){{/fhirPath}};
+{{#each (fhirPath data.[profiles-types] "Bundle/ComplexElements")}}| ({{type}} & { readonly elementType: "{{type}}" }){{/each}};
 
 export type ComplexElementType = AnnotatedComplexElement["elementType"];
 
@@ -44,4 +44,4 @@ export type ComplexElementType = AnnotatedComplexElement["elementType"];
  */
 export type ExtractComplexElement<TComplexElement extends ComplexElementType> = Omit<Extract<AnnotatedComplexElement, { elementType: TComplexElement }>, "elementType">;
 
-export type PrimitiveElementType = {{#fhirPath data.[profiles-types] "Bundle/PrimitiveElements"}}| "{{type}}"{{/fhirPath}};
+export type PrimitiveElementType = {{#each (fhirPath data.[profiles-types] "Bundle/PrimitiveElements")}}| "{{type}}"{{/each}};

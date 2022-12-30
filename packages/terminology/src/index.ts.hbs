@@ -1,4 +1,4 @@
-{{#fhirPath data.expansions "Bundle.entry.select(resource).ofType(ValueSet)"}}
+{{#each (fhirPath data.expansions "Bundle.entry.select(resource).ofType(ValueSet)")}}
 export * from "./{{camelcase name}}";
 {{#writeFiles "{{camelcase name}}.ts"}}
 /**
@@ -6,13 +6,13 @@ export * from "./{{camelcase name}}";
  * {{ url }}
  */
 export const {{safeNameAsVar name}}Code = {
-  {{#eachRecursiveFlatten expansion.contains "contains"}}
+  {{#each (recursiveFlatten expansion.contains "contains")}}
     /**
      * {{display}}
      */
     {{#if (safeNameAsVar display)}}{{safeNameAsVar display}}{{else}}"{{code}}"{{/if}}: "{{code}}",
     
-  {{/eachRecursiveFlatten}}
+  {{/each}}
 } as const;
 
 /**
@@ -20,4 +20,4 @@ export const {{safeNameAsVar name}}Code = {
  */
 export type {{safeNameAsVar name}}Code = typeof {{safeNameAsVar name}}Code[keyof typeof {{safeNameAsVar name}}Code];
 {{/writeFiles}}
-{{/fhirPath}}
+{{/each}}

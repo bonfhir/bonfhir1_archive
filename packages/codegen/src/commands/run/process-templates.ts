@@ -8,10 +8,18 @@ import { Context } from "./context";
 import { elementImmediatePath } from "./helpers/elementImmediatePath";
 import { fhirPath } from "./helpers/fhirPath";
 import { notIn } from "./helpers/notIn";
-import { eachRecursiveFlatten } from "./helpers/recursiveFlatten";
+import { recursiveFlatten } from "./helpers/recursiveFlatten";
 import { safeNameAsVar } from "./helpers/safeNameAsVar";
 import { buildWriteFiles } from "./helpers/writeFiles";
 
+/**
+ * For each of the template files, execute a subtask to render the template by passing
+ * the current context.
+ * Injects custom helpers as well:
+ *  - all helpers from [handlebars-helpers](https://assemble.io/helpers/)
+ *  - `startCase` from [lodash](https://lodash.com/docs/4.17.15#startCase)
+ *  - helpers from the `helpers` directory
+ */
 export const ProcessTemplatesTask: ListrTask<Context> = {
   title: "Process templates",
   task: async (ctx) => {
@@ -39,9 +47,10 @@ function CreateTemplateProcessTask(templatePath: string): ListrTask<Context> {
           fhirPath,
           writeFiles: buildWriteFiles(ctx, templateParsedPath.dir),
           safeNameAsVar,
-          eachRecursiveFlatten,
+          recursiveFlatten,
           elementImmediatePath,
           notIn,
+          ...(ctx.helpers || {}),
         },
       });
 

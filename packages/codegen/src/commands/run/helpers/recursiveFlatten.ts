@@ -1,22 +1,18 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import hb from "handlebars";
 
-export const eachRecursiveFlatten = (
-  fnCtx: any[],
-  attribute: string,
-  options: hb.HelperOptions
-) => {
+/**
+ * Depth-first recursive exploration of an array using a single attribute.
+ */
+export const recursiveFlatten = (fnCtx: any[], attribute: string) => {
   if (!fnCtx) {
-    return "";
+    return [];
   }
 
   if (!Array.isArray(fnCtx)) {
     throw new Error("The context passed to recursiveFlatten must be an array.");
   }
 
-  return [...recursiveExploration(fnCtx, attribute)]
-    .map((x) => options.fn(x))
-    .join("");
+  return [...recursiveExploration(fnCtx, attribute)];
 };
 
 function* recursiveExploration(

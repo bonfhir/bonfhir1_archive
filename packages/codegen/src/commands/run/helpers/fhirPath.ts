@@ -1,5 +1,4 @@
 import { evaluate as evaluateFhirPath } from "fhirpath";
-import hb from "handlebars";
 
 export const FHIRPathShortcuts: Record<string, string> = {
   "Bundle/DomainResources":
@@ -14,11 +13,11 @@ export const FHIRPathShortcuts: Record<string, string> = {
     "StructureDefinition.snapshot.element.where(isSummary=true)",
 };
 
-export const fhirPath = (
-  fnCtx: unknown,
-  path: string,
-  options: hb.HelperOptions
-) => {
-  const evaluated = evaluateFhirPath(fnCtx, FHIRPathShortcuts[path] || path);
-  return evaluated.map((x) => options.fn(x)).join("");
+/**
+ * Evaluate a [FHIRPath](http://hl7.org/fhirpath/N1/) against some data.
+ *
+ * A number of shortcut expressions has been defined for ease of use. See `FHIRPathShortcuts`.
+ */
+export const fhirPath = (fnCtx: unknown, fhirPath: string) => {
+  return evaluateFhirPath(fnCtx, FHIRPathShortcuts[fhirPath] || fhirPath);
 };

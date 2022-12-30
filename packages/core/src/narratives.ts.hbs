@@ -1,11 +1,11 @@
 import { encode } from "html-entities"
 import type { ElementDefinitionType, FhirResource } from "fhir/r4";
-{{#fhirPath data.[profiles-resources] "Bundle/DomainResources"}}
+{{#each (fhirPath data.[profiles-resources] "Bundle/DomainResources")}}
 import type { {{type}} } from "fhir/r4";
-{{/fhirPath}}
-{{#fhirPath data.[profiles-types] "Bundle/ComplexElements"}}
+{{/each}}
+{{#each (fhirPath data.[profiles-types] "Bundle/ComplexElements")}}
 import type { {{type}} } from "fhir/r4";
-{{/fhirPath}}
+{{/each}}
 import type { ComplexElementType, ExtractComplexElement } from "./types";
 
 export interface NarrativeElement {
@@ -27,23 +27,23 @@ export function narrativeElement<TComplexElement extends ComplexElementType>(
   }
 
   switch(elementType) {
-  {{#fhirPath data.[profiles-types] "Bundle/ComplexElements"}}
+  {{#each (fhirPath data.[profiles-types] "Bundle/ComplexElements")}}
     case "{{type}}":
       return narrativeElement{{type}}(element as unknown as {{type}});
-  {{/fhirPath}}
+  {{/each}}
     default:
       return undefined;
   }
 }
 
-{{#fhirPath data.[profiles-types] "Bundle/ComplexElements"}}
+{{#each (fhirPath data.[profiles-types] "Bundle/ComplexElements")}}
 function narrativeElement{{type}}(element: {{type}} | null | undefined): string | undefined {
   if (!element) {
     return undefined;
   }
 
   const components: Array<string | undefined> = [
-    {{#fhirPath this "StructureDefinition/SummaryElements"}}
+    {{#each (fhirPath this "StructureDefinition/SummaryElements")}}
       {{#if (elementImmediatePath path)}}
         narrativeElementByType({
           attr: "{{startCase (elementImmediatePath path)}}",
@@ -52,7 +52,7 @@ function narrativeElement{{type}}(element: {{type}} | null | undefined): string 
           type: {{JSONstringify type.[0]}}
         }),
       {{/if}}
-    {{/fhirPath}}
+    {{/each}}
   ];
 
   if(!components.length) {
@@ -61,7 +61,7 @@ function narrativeElement{{type}}(element: {{type}} | null | undefined): string 
 
   return `<ul>${components.filter(x => x?.trim()).join("")}</ul>`;
 }
-{{/fhirPath}}
+{{/each}}
 
 export function narrativeElementByType({attr, value, max, type}: NarrativeElement): string | undefined {
   if(!value) {
@@ -90,7 +90,7 @@ export function narrativeElementByType({attr, value, max, type}: NarrativeElemen
         return `<li><span class="fhir-attr">${attr}: </span><span class="fhir-value">${value.map(x => encode(x?.toString())).join(", ")}</span></li>`
       }
       return `<li><span class="fhir-attr">${attr}: </span><span class="fhir-value">${encode(value?.toString())}</span></li>`;
-    {{#fhirPath data.[profiles-types] "Bundle/ComplexElements"}}
+    {{#each (fhirPath data.[profiles-types] "Bundle/ComplexElements")}}
     case "{{type}}":
       if (max === "*") {
         if (!Array.isArray(value)) {
@@ -100,7 +100,7 @@ export function narrativeElementByType({attr, value, max, type}: NarrativeElemen
       }
 
       return `<li><span class="fhir-attr">${attr}: </span>${narrativeElement{{type}}(value as unknown as {{type}})}</li>`;
-    {{/fhirPath}}
+    {{/each}}
     default:
       return undefined;
   }
@@ -108,19 +108,19 @@ export function narrativeElementByType({attr, value, max, type}: NarrativeElemen
 
 export function narrative<TResourceType extends FhirResource>(resource: TResourceType): Narrative {
   switch(resource.resourceType) {
-    {{#fhirPath data.[profiles-resources] "Bundle/DomainResources"}}
+    {{#each (fhirPath data.[profiles-resources] "Bundle/DomainResources")}}
     case "{{type}}":
       return narrative{{type}}(resource);
-    {{/fhirPath}}
+    {{/each}}
     default:
       throw new Error(`Unsupported narrative for resource type ${resource.resourceType}`);
   }
 }
 
-{{#fhirPath data.[profiles-resources] "Bundle/DomainResources"}}
+{{#each (fhirPath data.[profiles-resources] "Bundle/DomainResources")}}
 function narrative{{type}}(resource: {{type}}): Narrative {
   return buildNarrative([
-    {{#fhirPath this "StructureDefinition/SummaryElements"}}
+    {{#each (fhirPath this "StructureDefinition/SummaryElements")}}
       {{#if (notIn (elementImmediatePath path) "meta,implicitRules,language,text,contained,extensions,modifierExtensions")}}
         {
             attr: "{{startCase (elementImmediatePath path)}}",
@@ -129,11 +129,11 @@ function narrative{{type}}(resource: {{type}}): Narrative {
             type: {{JSONstringify type.[0]}}
         },
       {{/if}}
-    {{/fhirPath}}
+    {{/each}}
   ]);
 }
 
-{{/fhirPath}}
+{{/each}}
 
 export function buildNarrative(components: NarrativeElement[]): Narrative {
   return {

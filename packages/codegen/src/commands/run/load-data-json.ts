@@ -4,6 +4,10 @@ import { ListrTask } from "listr";
 import { parse as pathParse } from "node:path";
 import { Context } from "./context";
 
+/**
+ * This task loads data file as JSON
+ * From the `Config.dataJson` property to `Context.data`.
+ */
 export const LoadDataJsonTask: ListrTask<Context> = {
   title: "Load data JSON files",
   task: async (ctx, task) => {

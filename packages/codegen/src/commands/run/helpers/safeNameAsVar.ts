@@ -4,6 +4,10 @@ const toWords = new ToWords({
   localeCode: "en-US",
 });
 
+/**
+ * Return a string that can safely be used as a Typescript variable name.
+ * Invalid characters are stripped out, and starting numbers are converted by their letter equivalent.
+ */
 export const safeNameAsVar = (value: string | null | undefined) => {
   const result = value?.replace(/[^\w]/g, "");
   if (!result) {

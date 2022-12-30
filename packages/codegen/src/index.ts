@@ -2,7 +2,7 @@
 
 import chalk from "chalk";
 import yargs from "yargs";
-import * as run from "./commands/run";
+import run from "./commands/run";
 
 try {
   yargs()
