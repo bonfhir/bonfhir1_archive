@@ -8,13 +8,15 @@
     "packages/*"
   ],
   "scripts": {
-    "clean": "lerna run clean",
-    "check": "lerna run check",
-    "build": "lerna run build"
+    "build": "lerna run build",
+    "check": "lerna run --parallel check",
+    "clean": "lerna run --parallel clean",
+    "graph": "nx graph"
   },
   "devDependencies": {
     "@types/lodash": "^4",
-    "lerna": "^6.3.0"
+    "lerna": "^6.3.0",
+    "nx": "^15.4.2"
   },
   "dependencies": {
     "lodash": "^4.17.21"

@@ -9,7 +9,7 @@
   "typings": "dist/index.d.ts",
   "scripts": {
     "build": "yarn clean && tsc --project tsconfig.build.json",
-    "check": "prettier --loglevel silent --check ./src && eslint ./src && tsc --noEmit",
+    "check": "prettier --check ./src && eslint ./src && tsc --noEmit",
     "clean": "rimraf dist/",
     "codegen": "yarn workspace @bonfhir/codegen run dev run -d \"${PWD}/../../fhir/4b/**/*.json\" -t \"${PWD}/**/*.hbs\" -p 'prettier --write %files%'",
     "test": "jest"

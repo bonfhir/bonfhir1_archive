@@ -1,9 +1,9 @@
 {{#writeFiles "result.ts"}}
-export const AllDomainResources = [
-  {{#each (fhirPath data.[profiles-resources] "Bundle/DomainResources")}}
+  export const AllDomainResources = [
+  {{#each (fhirPath data.profiles-resources "Bundle/DomainResources")}}
     {{#if (notIn type "Appointment,AppointmentResponse")}}
-    "{{testHelper type}}",
+      "{{testHelper type}}",
     {{/if}}
   {{/each}}
-];
+  ];
 {{/writeFiles}}

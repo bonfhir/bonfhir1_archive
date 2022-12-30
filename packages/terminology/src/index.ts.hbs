@@ -1,6 +1,4 @@
-{{#each (fhirPath data.expansions "Bundle.entry.select(resource).ofType(ValueSet)")}}
-export * from "./{{camelcase name}}";
-{{#writeFiles "{{camelcase name}}.ts"}}
+{{#each (uniqBy (fhirPath data.expansions "Bundle.entry.select(resource).ofType(ValueSet)") "name")}}
 /**
  * {{ description }}
  * {{ url }}
@@ -19,5 +17,4 @@ export const {{safeNameAsVar name}}Code = {
  * https://hl7.org/fhir/valueset-address-type.html
  */
 export type {{safeNameAsVar name}}Code = typeof {{safeNameAsVar name}}Code[keyof typeof {{safeNameAsVar name}}Code];
-{{/writeFiles}}
 {{/each}}

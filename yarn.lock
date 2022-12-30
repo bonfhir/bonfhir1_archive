@@ -3698,6 +3698,7 @@ __metadata:
     "@types/lodash": ^4
     lerna: ^6.3.0
     lodash: ^4.17.21
+    nx: ^15.4.2
   languageName: unknown
   linkType: soft
 
@@ -9047,7 +9048,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nx@npm:15.4.2, nx@npm:>= 14 <= 16, nx@npm:>=14.8.6 < 16":
+"nx@npm:15.4.2, nx@npm:>= 14 <= 16, nx@npm:>=14.8.6 < 16, nx@npm:^15.4.2":
   version: 15.4.2
   resolution: "nx@npm:15.4.2"
   dependencies:
