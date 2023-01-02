@@ -1,0 +1,32 @@
+name: Bonfhir Build
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  
+jobs:
+  build:
+    runs-on: ubuntu-22.04
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.x
+          cache: yarn
+
+      - name: Install packages
+        run: yarn install
+
+      - name: Build
+        run: yarn build
+
+      - name: Check
+        run: yarn check
+
+      - name: Test
+        run: yarn test

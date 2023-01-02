@@ -11,7 +11,8 @@
     "build": "lerna run build",
     "check": "lerna run --parallel check",
     "clean": "lerna run --parallel clean",
-    "graph": "nx graph"
+    "graph": "nx graph",
+    "test": "lerna run --parallel test -- --coverage --passWithNoTests"
   },
   "devDependencies": {
     "@types/lodash": "^4",
