@@ -24,6 +24,9 @@ jobs:
       - name: Check
         run: yarn lerna run check
 
+      - name: Build
+        run: yarn lerna run build
+
       - name: Test
         run: yarn lerna run test -- --coverage --passWithNoTests
 
