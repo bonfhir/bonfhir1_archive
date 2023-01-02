@@ -12,7 +12,7 @@
     "check": "lerna run --parallel check",
     "clean": "lerna run --parallel clean",
     "graph": "nx graph",
-    "test": "lerna run --parallel test -- --coverage --passWithNoTests"
+    "test": "lerna run --parallel test"
   },
   "devDependencies": {
     "@types/lodash": "^4",

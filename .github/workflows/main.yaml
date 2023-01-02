@@ -1,7 +1,6 @@
-name: Bonfhir Build
+name: Bonfhir Main
 
 on:
-  pull_request:
   push:
     branches: [main]
   
@@ -22,14 +21,11 @@ jobs:
       - name: Install packages
         run: yarn install
 
-      - name: Build
-        run: yarn build
-
       - name: Check
-        run: yarn check
+        run: yarn lerna run check
 
       - name: Test
-        run: yarn test
+        run: yarn lerna run test -- --coverage --passWithNoTests
 
       - name: Upload code coverage
         uses: codecov/codecov-action@v3
