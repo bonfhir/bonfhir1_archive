@@ -9,12 +9,18 @@ import { isDomainResource } from "./types";
  * The narrative is re-generated if need be.
  */
 export function merge<TResource extends FhirResource>(
-  args: MergeArgs<TResource>
+  args: MergeArgs<TResource> & {
+    /**
+     * Custom `Narrative` generator. If not provided, a default narrative generator is used.
+     */
+    narrativeGenerator?: typeof narrative | null | undefined;
+  }
 ): MergeResult<TResource> {
-  const result = mergeFhirResources(args);
+  const { narrativeGenerator, ...mergeArgs } = args;
+  const result = mergeFhirResources(mergeArgs);
 
   if (result.isUpdated && result.merged && isDomainResource(result.merged)) {
-    result.merged.text = narrative(result.merged);
+    result.merged.text = (narrativeGenerator || narrative)(result.merged);
   }
 
   return result;
