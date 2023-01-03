@@ -1,0 +1,145 @@
+import { encode } from "html-entities"
+import type { ElementDefinitionType, FhirResource } from "fhir/r4";
+{{#each (fhirPath data.[profiles-resources] "Bundle/DomainResources")}}
+import type { {{type}} } from "fhir/r4";
+{{/each}}
+{{#each (fhirPath data.[profiles-types] "Bundle/ComplexElements")}}
+import type { {{type}} } from "fhir/r4";
+{{/each}}
+import type { ComplexElementType, ExtractComplexElement } from "./types";
+
+export interface NarrativeElement {
+  attr: string;
+  value: unknown;
+  type: ElementDefinitionType;
+  max: "1" | "*";
+}
+
+/**
+ * Generate a `Narrative`-compatible XHTML representation for complex-types.
+ */
+export function narrativeElement<TComplexElement extends ComplexElementType>(
+  elementType: TComplexElement,
+  element: ExtractComplexElement<TComplexElement> | null | undefined
+): string | undefined {
+  if (!element) {
+    return undefined;
+  }
+
+  switch(elementType) {
+  {{#each (fhirPath data.[profiles-types] "Bundle/ComplexElements")}}
+    case "{{type}}":
+      return narrativeElement{{type}}(element as unknown as {{type}});
+  {{/each}}
+    default:
+      return undefined;
+  }
+}
+
+{{#each (fhirPath data.[profiles-types] "Bundle/ComplexElements")}}
+function narrativeElement{{type}}(element: {{type}} | null | undefined): string | undefined {
+  if (!element) {
+    return undefined;
+  }
+
+  const components: Array<string | undefined> = [
+    {{#each (fhirPath this "StructureDefinition/SummaryElements")}}
+      {{#if (elementImmediatePath path)}}
+        narrativeElementByType({
+          attr: "{{startCase (elementImmediatePath path)}}",
+          value: element.{{elementImmediatePath path}},
+          max: "{{max}}",
+          type: {{JSONstringify type.[0]}}
+        }),
+      {{/if}}
+    {{/each}}
+  ];
+
+  if(!components.length) {
+    return undefined;
+  }
+
+  return `<ul>${components.filter(x => x?.trim()).join("")}</ul>`;
+}
+{{/each}}
+
+export function narrativeElementByType({attr, value, max, type}: NarrativeElement): string | undefined {
+  if(!value) {
+    return undefined;
+  }
+
+  switch(type.code) {
+    case "base64Binary":
+    case "boolean":
+    case "date":
+    case "dateTime":
+    case "decimal":
+    case "instant":
+    case "integer":
+    case "string":
+    case "http://hl7.org/fhirpath/System.String":
+    case "time":
+    case "uri":
+    case "url":
+    case "xhtml":
+      if (max === "*") {
+        if (!Array.isArray(value)) {
+          return undefined;
+        }
+
+        return `<li><span class="fhir-attr">${attr}: </span><span class="fhir-value">${value.map(x => encode(x?.toString())).join(", ")}</span></li>`
+      }
+      return `<li><span class="fhir-attr">${attr}: </span><span class="fhir-value">${encode(value?.toString())}</span></li>`;
+    {{#each (fhirPath data.[profiles-types] "Bundle/ComplexElements")}}
+    case "{{type}}":
+      if (max === "*") {
+        if (!Array.isArray(value)) {
+          return undefined;
+        }
+        return `<li><span class="fhir-attr">${attr}: </span><ul>${value.map(x => `<li>${narrativeElement{{type}}(x as unknown as {{type}})}</li>`).join("")}</ul></li>`;
+      }
+
+      return `<li><span class="fhir-attr">${attr}: </span>${narrativeElement{{type}}(value as unknown as {{type}})}</li>`;
+    {{/each}}
+    default:
+      return undefined;
+  }
+}
+
+export function narrative<TResourceType extends FhirResource>(resource: TResourceType): Narrative {
+  switch(resource.resourceType) {
+    {{#each (fhirPath data.[profiles-resources] "Bundle/DomainResources")}}
+    case "{{type}}":
+      return narrative{{type}}(resource);
+    {{/each}}
+    default:
+      throw new Error(`Unsupported narrative for resource type ${resource.resourceType}`);
+  }
+}
+
+{{#each (fhirPath data.[profiles-resources] "Bundle/DomainResources")}}
+function narrative{{type}}(resource: {{type}}): Narrative {
+  return buildNarrative([
+    {{#each (fhirPath this "StructureDefinition/SummaryElements")}}
+      {{#if (notIn (elementImmediatePath path) "meta,implicitRules,language,text,contained,extensions,modifierExtensions")}}
+        {
+            attr: "{{startCase (elementImmediatePath path)}}",
+            value: resource.{{elementImmediatePath path}},
+            max: "{{max}}",
+            type: {{JSONstringify type.[0]}}
+        },
+      {{/if}}
+    {{/each}}
+  ]);
+}
+
+{{/each}}
+
+export function buildNarrative(components: NarrativeElement[]): Narrative {
+  return {
+    status: "generated",
+    div: `<div xmlns="http://www.w3.org/1999/xhtml" class="fhir-narrative"><ul>${components
+      .map(narrativeElementByType)
+      .filter((x) => !!x).join("")}</ul></div>`,
+  };
+}
