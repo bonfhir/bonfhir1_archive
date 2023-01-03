@@ -12,7 +12,7 @@
     "deploy": "docusaurus deploy",
     "dev": "docusaurus start --port 4000",
     "docusaurus": "docusaurus",
-    "serve": "docusaurus serve --dir dist",
+    "serve": "docusaurus serve --dir dist --port 4000",
     "swizzle": "docusaurus swizzle",
     "write-heading-ids": "docusaurus write-heading-ids",
     "write-translations": "docusaurus write-translations"
