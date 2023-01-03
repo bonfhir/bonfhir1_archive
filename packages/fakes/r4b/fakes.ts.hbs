@@ -1,11 +1,12 @@
-import { build } from "@bonfhir/core/r4b";
-import type { ExtractResource, ResourceType } from "@bonfhir/core/r4b";
+import { build, buildCodeableConcept } from "@bonfhir/core/r4b/index.js";
+import type { ExtractResource, ResourceType } from "@bonfhir/core/r4b/index.js";
 {{#each (fhirPath data.[profiles-types] "Bundle/ComplexElements")}}
 import type { {{type}} } from "fhir/r4";
 {{/each}}
 {{#each (fhirPath data.[profiles-resources] "Bundle/DomainResources")}}
 import type { {{type}} } from "fhir/r4";
 {{/each}}
+import { rand, randAlpha, randBoolean, randEmail, randPhoneNumber, randLastName, randFirstName, randNumber, randRecentDate, randAddress, randParagraph, randText, randUrl, randCompanyName, randText, randUuid } from "@ngneat/falso"
 
 /**
  * Create a fake FHIR resource.
@@ -13,7 +14,7 @@ import type { {{type}} } from "fhir/r4";
  */
 export function fake<TResource extends ResourceType>(
   resourceType: TResource,
-  override: Partial<Omit<ExtractResource<TResource>, "resourceType">> | null | undefined
+  override?: Partial<Omit<ExtractResource<TResource>, "resourceType">> | null | undefined
 ): ExtractResource<TResource> {
 
   switch(resourceType) {
@@ -28,7 +29,94 @@ export function fake<TResource extends ResourceType>(
 
 {{#each (fhirPath data.[profiles-resources] "Bundle/DomainResources")}}
 function fake{{type}}(): {{type}} {
-  throw new Error();
+  return {
+    resourceType: "{{type}}",
+    {{#each (fhirPath this "StructureDefinition.snapshot.element")}}
+      {{#if (notIn (elementImmediatePath path) "meta,implicitRules,language,text,contained,extension,modifierExtension")}}
+        {{elementImmediatePath path}}: {{randomFunction this @root.data.valuesets}},
+      {{/if}}
+    {{/each}}
+  }
 }
 
 {{/each}}
+
+/**
+ * Build a fake `Identifier`.
+ * @see https://www.hl7.org/fhir/identifier-registry.html for more information.
+ */ 
+export function fakeIdentifier(
+  knownIdentifier: "http://hl7.org/fhir/sid/us-ssn" | "http://hl7.org/fhir/sid/us-mbi" | "http://hl7.org/fhir/sid/us-npi" | string,
+  override?: Partial<Identifier> | null | undefined): Identifier {
+
+  return {
+    use: rand(["usual", "official", "temp", "secondary", "old"]),
+    type: buildCodeableConcept({
+      coding: [{
+        system: "http://terminology.hl7.org/CodeSystem/v2-0203",
+        code: knownIdentifier === "http://hl7.org/fhir/sid/us-npi" ? "PRN" : "SB",
+        display: knownIdentifier === "http://hl7.org/fhir/sid/us-npi" ? "Provider number" : "Social Beneficiary Identifier"
+      }]
+    }),
+    system: knownIdentifier,
+    value: randAlpha(),
+    ...override
+  }
+}
+
+/**
+ * Build a fake `HumanName`
+ */
+export function fakeHumanName(override?: Partial<HumanName> | null | undefined): HumanName {
+  return {
+    use: rand(["usual", "official"]),
+    family: randLastName(),
+    given: [randFirstName()],
+    ...override
+  }
+}
+
+/**
+ * Build a fake `ContactPoint`
+ */
+export function fakeContactPoint(
+  override?: Partial<ContactPoint> | null | undefined
+): ContactPoint {
+  const system = rand(["phone", "fax", "email", "url", "sms", "other"]) as ContactPoint["system"];
+  return {
+    system,
+    value: (() => {
+      switch (system) {
+        case "email":
+          return randEmail();
+        case "url":
+        case "other":
+          return randUrl();
+        default:
+          return randPhoneNumber();
+      }
+      throw new Error();
+    })(),
+    use: rand(["home", "work", "mobile"]),
+    ...override,
+  };
+}
+
+/**
+ * Build a fake `Address`
+ */
+export function fakeAddress(
+  override?: Partial<Address> | null | undefined
+): Address {
+  const address = randAddress();
+
+  return {
+    use: rand(["home", "work"]),
+    type: rand(["postal", "physical", "both"]),
+    line: [address.street],
+    city: address.city,
+    state: address.county,
+    postalCode: address.zipCode,
+    ...override,
+  };
+}
