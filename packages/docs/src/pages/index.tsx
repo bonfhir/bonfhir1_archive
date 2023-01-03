@@ -19,7 +19,7 @@ function HomepageHeader() {
             className="button button--secondary button--lg"
             to="/docs/intro"
           >
-            Get started - your custom EHR in one day ⏱️
+            Get started now ⏱️!
           </Link>
         </div>
       </div>
