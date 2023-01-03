@@ -1,6 +1,7 @@
 {
   "extends": "@bonfhir/typescript-config/tsconfig.json",
   "include": ["**/*.ts"],
+  "exclude": ["**/dist"],
   "compilerOptions": {
     "rootDir": "."
   }

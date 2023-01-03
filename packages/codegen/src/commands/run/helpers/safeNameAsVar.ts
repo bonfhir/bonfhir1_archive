@@ -9,7 +9,7 @@ const toWords = new ToWords({
  * Invalid characters are stripped out, and starting numbers are converted by their letter equivalent.
  */
 export const safeNameAsVar = (value: string | null | undefined) => {
-  const result = value?.replace(/[^\w]/g, "");
+  const result = value?.replace(/[^\w_]/g, "");
   if (!result) {
     return result;
   }

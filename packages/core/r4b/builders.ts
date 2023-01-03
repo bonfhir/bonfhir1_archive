@@ -1,3 +1,4 @@
+import { CodeableConcept } from "fhir/r4";
 import { narrative } from "./narratives";
 import { ExtractResource, isDomainResource, ResourceType } from "./types";
 
@@ -21,4 +22,24 @@ export function build<TResource extends ResourceType>(
   }
 
   return result;
+}
+
+/**
+ * Build a new `CodeableConcept`.
+ * The `text` property default to the first coding `display` value if not provided.
+ */
+export function buildCodeableConcept(element: CodeableConcept): CodeableConcept;
+export function buildCodeableConcept(element: null | undefined): undefined;
+export function buildCodeableConcept(
+  element: CodeableConcept | null | undefined
+): CodeableConcept | undefined;
+export function buildCodeableConcept(
+  element: CodeableConcept | null | undefined
+): CodeableConcept | undefined {
+  return element
+    ? {
+        ...element,
+        text: element?.text || element?.coding?.[0]?.display,
+      }
+    : undefined;
 }

@@ -172,6 +172,9 @@ import type {
 import { encode } from "html-entities";
 import type { ComplexElementType, ExtractComplexElement } from "./types";
 
+/**
+ * A unit of content used to generate a `Narrative`.
+ */
 export interface NarrativeElement {
   attr: string;
   value: unknown;
@@ -180,7 +183,7 @@ export interface NarrativeElement {
 }
 
 /**
- * Generate a `Narrative`-compatible XHTML representation for complex-types.
+ * Generate a `Narrative`-compatible XHTML representation for complex `Element` types.
  */
 export function narrativeElement<TComplexElement extends ComplexElementType>(
   elementType: TComplexElement,
@@ -1496,6 +1499,9 @@ function narrativeElementUsageContext(
   return `<ul>${components.filter((x) => x?.trim()).join("")}</ul>`;
 }
 
+/**
+ * Generate a `Narrative`-compatible XHTML representation as specified by a `NarrativeElement`.
+ */
 export function narrativeElementByType({
   attr,
   value,
@@ -2025,6 +2031,9 @@ export function narrativeElementByType({
   }
 }
 
+/**
+ * Generate a `Narrative` for a FHIR resource.
+ */
 export function narrative<TResourceType extends FhirResource>(
   resource: TResourceType
 ): Narrative {
@@ -15311,6 +15320,9 @@ function narrativeVisionPrescription(resource: VisionPrescription): Narrative {
   ]);
 }
 
+/**
+ * Build a `Narrative` from a list of `NarrativeElement`. This can be used to compose final `Narrative` for FHIR resources.
+ */
 export function buildNarrative(components: NarrativeElement[]): Narrative {
   return {
     status: "generated",
