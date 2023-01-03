@@ -1,0 +1,108 @@
+{
+  "name": "Bonfhir",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "devcontainer",
+  "workspaceFolder": "/workspace",
+  "overrideCommand": false,
+  "customizations": {
+    "vscode": {
+      "extensions": [
+		"andrejunges.Handlebars",
+		"dbaeumer.vscode-eslint",
+		"eamodio.gitlens",
+		"EditorConfig.EditorConfig",
+		"esbenp.prettier-vscode",
+		"github.vscode-pull-request-github",
+		"ms-azuretools.vscode-docker",
+		"nrwl.angular-console",
+		"streetsidesoftware.code-spell-checker",
+		"usernamehw.errorlens",
+		"vivaxy.vscode-conventional-commits",
+		"wmaurer.change-case",
+		"cschleiden.vscode-github-actions"
+	],
+      "settings": {
+        "[javascript]": {
+          "editor.defaultFormatter": "esbenp.prettier-vscode",
+          "editor.formatOnSave": true,
+          "editor.codeActionsOnSave": {
+            "source.fixAll.eslint": true
+          }
+        },
+        "[json]": {
+          "editor.defaultFormatter": "esbenp.prettier-vscode",
+          "editor.formatOnSave": true
+        },
+        "[jsonc]": {
+          "editor.defaultFormatter": "esbenp.prettier-vscode",
+          "editor.formatOnSave": true
+        },
+        "[markdown]": {
+          "editor.defaultFormatter": "esbenp.prettier-vscode",
+          "editor.formatOnSave": true
+        },
+        "[typescript]": {
+          "editor.defaultFormatter": "esbenp.prettier-vscode",
+          "editor.formatOnSave": true,
+          "editor.codeActionsOnSave": {
+            "source.fixAll.eslint": true
+          }
+        },
+        "[typescriptreact]": {
+          "editor.defaultFormatter": "esbenp.prettier-vscode",
+          "editor.formatOnSave": true,
+          "editor.codeActionsOnSave": {
+            "source.fixAll.eslint": true
+          }
+        },
+        "conventionalCommits.scopes": ["root", "codegen"],
+        "conventionalCommits.showEditor": true,
+        "cSpell.words": [
+          "bonfhir",
+          "Bonfhir",
+          "codegen",
+          "devcontainer",
+          "fhir",
+          "FHIR",
+          "fhirpath",
+          "Listr",
+          "listr"
+        ],
+        "errorLens.enabledDiagnosticLevels": ["error", "warning"],
+        "eslint.workingDirectories": ["packages/*"],
+        "explorer.fileNesting.enabled": true,
+        "explorer.fileNesting.expand": false,
+        "explorer.fileNesting.patterns": {
+          "*.cjs": "${basename}.spec.${extname}, ${basename}.stories.${extname}, ${basename}.test.${extname}",
+          "*.js": "${basename}.spec.${extname}, ${basename}.stories.${extname}, ${basename}.test.${extname}",
+          "*.jsx": "${basename}.spec.${extname}, ${basename}.stories.${extname}, ${basename}.test.${extname}",
+          "*.mjs": "${basename}.spec.${extname}, ${basename}.stories.${extname}, ${basename}.test.${extname}",
+          "*.ts": "${basename}.spec.${extname}, ${basename}.stories.${extname}, ${basename}.test.${extname}",
+          "*.tsx": "${basename}.spec.${extname}, ${basename}.stories.${extname}, ${basename}.test.${extname}",
+          "*.ts.hbs": "${capture}.ts"
+        },
+        "files.associations": {
+          "*.snap": "javascript"
+        },
+        "files.exclude": {
+          "**/node_modules": true,
+          "**/.parcel-cache": true,
+          "**/.yarn": true,
+          "**/tsconfig.tsbuildinfo": true
+        },
+        "git.branchProtection": ["main"],
+        "json.schemas": [
+          {
+            "fileMatch": ["*.fhir.json"],
+            "url": "./fhir/4b/definitions/fhir.schema.json"
+          }
+        ],
+        "terminal.integrated.defaultProfile.linux": "zsh"
+      }
+    }
+  },
+
+  "postStartCommand": "find . -name \"node_modules\" -exec sh -c 'sudo chown -R $USER:$GROUP \"$0\"' '{}' \\; && yarn install --silent",
+
+  "remoteUser": "node"
+}

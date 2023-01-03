@@ -1,0 +1,18 @@
+version: "3"
+
+services:
+  devcontainer:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: sleep infinity
+    environment:
+      - HISTFILE=/command_history/.zsh_history
+    volumes:
+      - ${WORKSPACE_ROOT:-..}:/workspace:cached
+      - devcontainer_node_modules:/workspace/node_modules
+      - devcontainer_command_history:/command_history
+
+volumes:
+  devcontainer_node_modules:
+  devcontainer_command_history:
