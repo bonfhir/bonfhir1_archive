@@ -1,0 +1,22 @@
+{{#each (uniqBy (fhirPath data.expansions "Bundle.entry.select(resource).ofType(ValueSet)") "name")}}
+{{#if expansion.contains}}
+/**
+ * {{ description }}
+ * {{ url }}
+ */
+export const {{safeNameAsVar name}}Code = {
+  {{#each (uniqBy (recursiveFlatten expansion.contains "contains") "code")}}
+    /**
+     * {{display}}
+     */
+    "{{code}}": "{{code}}",
+    
+  {{/each}}
+} as const;
+
+/**
+ * https://hl7.org/fhir/valueset-address-type.html
+ */
+export type {{safeNameAsVar name}}Code = typeof {{safeNameAsVar name}}Code[keyof typeof {{safeNameAsVar name}}Code];
+{{/if}}
+{{/each}}

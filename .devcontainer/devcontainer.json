@@ -55,7 +55,12 @@
             "source.fixAll.eslint": true
           }
         },
-        "conventionalCommits.scopes": ["codegen", "core"],
+        "conventionalCommits.scopes": [
+          "codegen",
+          "core",
+          "fakes",
+          "terminology"
+        ],
         "conventionalCommits.showEditor": true,
         "cSpell.words": [
           "bonfhir",
