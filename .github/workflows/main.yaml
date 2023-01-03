@@ -34,3 +34,17 @@ jobs:
 
       - name: Upload code coverage
         uses: codecov/codecov-action@v3
+
+      - name: Authenticate SSH deploy key
+        uses: webfactory/ssh-agent@v0.5.0
+        with:
+          ssh-private-key: ${{ secrets.GH_PAGES_DEPLOY }}
+      
+      - name: Deploy doc
+        env:
+          USE_SSH: true
+          DEPLOYMENT_BRANCH: main
+        run: |
+          git config --global user.email "actions@github.com"
+          git config --global user.name "gh-actions"
+          yarn lerna run deploy --scope=@bonfhir/docs --since=HEAD^1
