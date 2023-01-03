@@ -10,7 +10,7 @@
     "check": "tsc --noEmit",
     "clean": "docusaurus clear && rimraf dist/",
     "deploy": "docusaurus deploy",
-    "dev": "docusaurus start",
+    "dev": "docusaurus start --port 4000",
     "docusaurus": "docusaurus",
     "serve": "docusaurus serve --dir dist",
     "swizzle": "docusaurus swizzle",
