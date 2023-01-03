@@ -67,6 +67,8 @@
           "bonfhir",
           "Bonfhir",
           "codegen",
+          "codeable",
+          "Codeable",
           "devcontainer",
           "fhir",
           "FHIR",

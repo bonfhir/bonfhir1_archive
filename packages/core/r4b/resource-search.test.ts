@@ -1,4 +1,5 @@
 import { resourceSearch } from "./resource-search";
+import { DomainResourceTypes, ResourceType } from "./types";
 
 describe("resource-search", () => {
   it.each([
@@ -16,5 +17,11 @@ describe("resource-search", () => {
     ],
   ])("%s", (searchBuilder, expected) => {
     expect(searchBuilder.href).toEqual(expected);
+  });
+
+  it.each(DomainResourceTypes)("search %s", (resourceType) => {
+    expect(
+      resourceSearch(resourceType as ResourceType)._id("12345")
+    ).not.toBeFalsy();
   });
 });
