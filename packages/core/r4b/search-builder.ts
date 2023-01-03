@@ -254,6 +254,29 @@ export class FhirSearchBuilder {
       | null
       | undefined,
     modifier?: ":identifier" | ResourceType | null | undefined
+  ): FhirSearchBuilder;
+  public reference(
+    parameter: string,
+    id:
+      | { id: string; type: string }
+      | {
+          system?: string | null | undefined;
+          code?: string | null | undefined;
+          value?: string | null | undefined;
+        }
+      | string
+      | Array<
+          | { id: string; type: string }
+          | {
+              system?: string | null | undefined;
+              code?: string | null | undefined;
+              value?: string | null | undefined;
+            }
+          | string
+        >
+      | null
+      | undefined,
+    modifier?: ":identifier" | ResourceType | null | undefined
   ): FhirSearchBuilder {
     if (!id) {
       return this;

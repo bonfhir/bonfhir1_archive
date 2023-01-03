@@ -1,0 +1,67 @@
+{{#each (fhirPath data.[profiles-resources] "Bundle/DomainResources")}}
+import type { {{type}} } from "fhir/r4";
+{{/each}}
+import type { ResourceType } from "./types";
+import { fhirSearch, FhirSearchBuilder, Prefix, StringModifier, TokenModifier, UriModifier } from "./search-builder";
+
+/**
+ * Return a typed search builder for a specific resource.
+ * 
+ * @example
+ *  > resourceSearch("Patient").name("John").active("true").href
+ *  > "name=John&active=true"
+ */
+export function resourceSearch<TResource extends ResourceType>(type: TResource): ExtractSearchBuilder<TResource> {
+  switch(type) {
+    {{#each (fhirPath data.[profiles-resources] "Bundle/DomainResources")}}
+    case "{{type}}":
+      return new ResourceSearchBuilder{{type}}() as ExtractSearchBuilder<TResource>;
+    {{/each}}
+    default:
+      throw new Error(`Unsupported resourceSearch for resource type ${type}`);
+  }
+}
+
+{{#each (fhirPath data.[profiles-resources] "Bundle/DomainResources")}}
+class ResourceSearchBuilder{{type}} {
+
+  readonly resourceType = "{{type}}";
+
+  /**
+   * The underlying `FhirSearchBuilder`, that can be used directly if needed.
+   */
+  public builder: FhirSearchBuilder = fhirSearch();
+
+  /**
+   * Get the final string containing the whole URL.
+   */
+  public get href(): string {
+    return this.builder.href;
+  }
+
+  {{#each (uniqBy (fhirPath @root.data.[search-parameters] (replace "Bundle.entry.select(resource).ofType(SearchParameter).where(base='DomainResource' or base='Resource' or base='CURRENTYPE')" "CURRENTYPE" type)) "code")}}
+  {{#if (notIn type "composite,special")}}
+    /**
+    * {{description}}
+    */
+    {{safeNameAsVar code}}({{searchArgs type}}): ResourceSearchBuilder{{../type}} {
+      this.builder.{{type}}("{{code}}", {{searchArgsInvoke type}});
+      return this;
+    }
+
+  {{/if}}
+  {{/each}}
+}
+
+{{/each}}
+
+export type ResourceSearchBuilder = 
+  {{#each (fhirPath data.[profiles-resources] "Bundle/DomainResources")}}
+  | ResourceSearchBuilder{{type}}
+  {{/each}};
+
+/**
+ * Allow referencing a search builder type from its string ResourceType representation.
+ */
+export type ExtractSearchBuilder<TResourceType extends ResourceType> =
+  Extract<ResourceSearchBuilder, { resourceType: TResourceType }>;
