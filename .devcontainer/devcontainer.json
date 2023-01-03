@@ -58,6 +58,7 @@
         "conventionalCommits.scopes": [
           "codegen",
           "core",
+          "docs",
           "fakes",
           "terminology"
         ],
