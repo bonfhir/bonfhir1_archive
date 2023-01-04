@@ -43,6 +43,29 @@ const config = {
     ],
   ],
 
+  plugins: [
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "codegen",
+        path: "codegen",
+        routeBasePath: "codegen",
+        sidebarPath: require.resolve("./sidebars.js"),
+        editUrl: "https://github.com/bonfhir/bonfhir/tree/main/packages/docs/",
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "packages",
+        path: "packages",
+        routeBasePath: "packages",
+        sidebarPath: require.resolve("./sidebars.js"),
+        editUrl: "https://github.com/bonfhir/bonfhir/tree/main/packages/docs/",
+      },
+    ],
+  ],
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -57,7 +80,19 @@ const config = {
             type: "doc",
             docId: "intro",
             position: "left",
-            label: "Tutorial",
+            label: "Get started",
+          },
+          {
+            to: "/packages/all",
+            label: "Packages",
+            position: "left",
+            activeBaseRegex: `/packages/`,
+          },
+          {
+            to: "/codegen/codegen",
+            label: "Code Generation",
+            position: "left",
+            activeBaseRegex: `/codegen/`,
           },
           {
             href: "https://github.com/bonfhir/bonfhir",
@@ -68,17 +103,7 @@ const config = {
       },
       footer: {
         style: "dark",
-        links: [
-          {
-            title: "Docs",
-            items: [
-              {
-                label: "Tutorial",
-                to: "/docs/intro",
-              },
-            ],
-          },
-        ],
+        links: [],
         copyright: `Copyright © ${new Date().getFullYear()}. Built with Docusaurus.`,
       },
       prism: {
