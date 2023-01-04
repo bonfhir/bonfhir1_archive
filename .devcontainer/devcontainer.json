@@ -60,6 +60,7 @@
           "core",
           "docs",
           "fakes",
+          "medplum",
           "terminology"
         ],
         "conventionalCommits.showEditor": true,
