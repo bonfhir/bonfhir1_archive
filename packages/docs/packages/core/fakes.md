@@ -4,4 +4,6 @@ sidebar_position: 3
 
 # Fakes
 
-Package: `@bonfhir/fakes`
+```bash npm2yarn
+npm install @bonfhir/fakes
+```

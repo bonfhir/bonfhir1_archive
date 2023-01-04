@@ -1722,6 +1722,7 @@ __metadata:
     "@docusaurus/module-type-aliases": 2.2.0
     "@docusaurus/plugin-content-docs": ^2.2.0
     "@docusaurus/preset-classic": 2.2.0
+    "@docusaurus/remark-plugin-npm2yarn": ^2.2.0
     "@mdx-js/react": ^1.6.22
     "@tsconfig/docusaurus": ^1.0.5
     "@types/rimraf": ^3
@@ -2449,6 +2450,17 @@ __metadata:
   peerDependencies:
     react: "*"
   checksum: 930fb9e2936412a12461f210acdc154a433283921ca43ac3fc3b84cb6c12eb738b3a3719373022bf68004efeb1a928dbe36c467d7a1f86454ed6241576d936e7
+  languageName: node
+  linkType: hard
+
+"@docusaurus/remark-plugin-npm2yarn@npm:^2.2.0":
+  version: 2.2.0
+  resolution: "@docusaurus/remark-plugin-npm2yarn@npm:2.2.0"
+  dependencies:
+    npm-to-yarn: ^1.0.1
+    tslib: ^2.4.0
+    unist-util-visit: ^2.0.3
+  checksum: 653b496d5a06e48977c9b9bcdbd01fdd89bfe627c878ea2471f0ec05e4ffbab9738795ff239f310b8ac132062db3e041858ee118556965ec0de872ee43b31b1d
   languageName: node
   linkType: hard
 
@@ -14383,6 +14395,13 @@ __metadata:
   dependencies:
     path-key: ^3.0.0
   checksum: 5374c0cea4b0bbfdfae62da7bbdf1e1558d338335f4cacf2515c282ff358ff27b2ecb91ffa5330a8b14390ac66a1e146e10700440c1ab868208430f56b5f4d23
+  languageName: node
+  linkType: hard
+
+"npm-to-yarn@npm:^1.0.1":
+  version: 1.2.1
+  resolution: "npm-to-yarn@npm:1.2.1"
+  checksum: 7a4a0774968a22ec2f11cff99c21d1ef201232dff38a5ffab253b9a45faf8c9639c1163a314c64b5e7258c85b9311b8c8d9468bea2042de4ba534309b388c1f4
   languageName: node
   linkType: hard
 
