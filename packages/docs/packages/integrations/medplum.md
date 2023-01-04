@@ -2,6 +2,8 @@
 sidebar_position: 1
 ---
 
-# Medplum integration
+# Medplum
 
-Package: `@bonfhir/medplum`
+```bash npm2yarn
+npm install @bonfhir/medplum
+```

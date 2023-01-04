@@ -1,7 +1,9 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 ---
 
-# OpenFDA integration
+# Open FDA
 
-Package: `@bonfhir/openfda`
+```bash npm2yarn
+npm install @bonfhir/openfda
+```

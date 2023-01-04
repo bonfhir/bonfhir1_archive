@@ -2,8 +2,8 @@
 sidebar_position: 2
 ---
 
-# Terminology
+# CMS.gov
 
 ```bash npm2yarn
-npm install @bonfhir/terminology
+npm install @bonfhir/cmsdotgov
 ```

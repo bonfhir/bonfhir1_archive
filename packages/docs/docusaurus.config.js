@@ -33,6 +33,9 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
+          remarkPlugins: [
+            [require("@docusaurus/remark-plugin-npm2yarn"), { sync: true }],
+          ],
           editUrl:
             "https://github.com/bonfhir/bonfhir/tree/main/packages/docs/",
         },
@@ -52,6 +55,9 @@ const config = {
         routeBasePath: "codegen",
         sidebarPath: require.resolve("./sidebars.js"),
         editUrl: "https://github.com/bonfhir/bonfhir/tree/main/packages/docs/",
+        remarkPlugins: [
+          [require("@docusaurus/remark-plugin-npm2yarn"), { sync: true }],
+        ],
       },
     ],
     [
@@ -62,6 +68,9 @@ const config = {
         routeBasePath: "packages",
         sidebarPath: require.resolve("./sidebars.js"),
         editUrl: "https://github.com/bonfhir/bonfhir/tree/main/packages/docs/",
+        remarkPlugins: [
+          [require("@docusaurus/remark-plugin-npm2yarn"), { sync: true }],
+        ],
       },
     ],
   ],
@@ -83,7 +92,7 @@ const config = {
             label: "Get started",
           },
           {
-            to: "/packages/all",
+            to: "/packages/core",
             label: "Packages",
             position: "left",
             activeBaseRegex: `/packages/`,
