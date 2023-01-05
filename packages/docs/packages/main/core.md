@@ -136,7 +136,7 @@ of implementations.
 
 This can also simplify unit testing by offering a simple interface to mock.
 
-Concrete implementations can be found in [Integrations](category/integrations) packages, or can be built quite easily yourself.
+Concrete implementations can be found in [Integrations](/packages/integrations/medplum) packages, or can be built quite easily yourself.
 
 ## FHIR Search
 

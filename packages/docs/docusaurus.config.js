@@ -50,9 +50,9 @@ const config = {
     [
       "@docusaurus/plugin-content-docs",
       {
-        id: "codegen",
-        path: "codegen",
-        routeBasePath: "codegen",
+        id: "packages",
+        path: "packages",
+        routeBasePath: "packages",
         sidebarPath: require.resolve("./sidebars.js"),
         editUrl: "https://github.com/bonfhir/bonfhir/tree/main/packages/docs/",
         remarkPlugins: [
@@ -63,9 +63,9 @@ const config = {
     [
       "@docusaurus/plugin-content-docs",
       {
-        id: "packages",
-        path: "packages",
-        routeBasePath: "packages",
+        id: "contributing",
+        path: "contributing",
+        routeBasePath: "contributing",
         sidebarPath: require.resolve("./sidebars.js"),
         editUrl: "https://github.com/bonfhir/bonfhir/tree/main/packages/docs/",
         remarkPlugins: [
@@ -78,6 +78,10 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      colorMode: {
+        defaultMode: "light",
+        disableSwitch: true,
+      },
       navbar: {
         title: "Bonfhir",
         logo: {
@@ -92,20 +96,25 @@ const config = {
             label: "Get started",
           },
           {
-            to: "/packages/core",
+            to: "/packages/main/core",
             label: "Packages",
             position: "left",
             activeBaseRegex: `/packages/`,
           },
           {
-            to: "/codegen/codegen",
-            label: "Code Generation",
+            to: "/contributing/contributing",
+            label: "Contributing",
             position: "left",
-            activeBaseRegex: `/codegen/`,
+            activeBaseRegex: `/contributing/`,
           },
           {
             href: "https://github.com/bonfhir/bonfhir",
             label: "GitHub",
+            position: "right",
+          },
+          {
+            href: "https://hl7.org/fhir/",
+            label: "FHIR",
             position: "right",
           },
         ],
@@ -113,11 +122,10 @@ const config = {
       footer: {
         style: "dark",
         links: [],
-        copyright: `Copyright © ${new Date().getFullYear()}. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()}. Site built with ❤️ using Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
       },
     }),
 };
