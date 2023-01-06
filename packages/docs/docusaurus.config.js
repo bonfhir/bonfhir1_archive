@@ -96,7 +96,7 @@ const config = {
             label: "Get started",
           },
           {
-            to: "/packages/main/core",
+            to: "/packages/foundation/core",
             label: "Packages",
             position: "left",
             activeBaseRegex: `/packages/`,
