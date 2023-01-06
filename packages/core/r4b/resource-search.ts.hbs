@@ -1,7 +1,8 @@
 {{#each (fhirPath data.[profiles-resources] "Bundle/DomainResources")}}
 import type { {{type}} } from "fhir/r4";
 {{/each}}
-import type { ResourceType } from "./types";
+import _ from "lodash";
+import type { ExtractResource, ResourceType } from "./types";
 import { fhirSearch, FhirSearchBuilder, Prefix, StringModifier, TokenModifier, UriModifier } from "./search-builder";
 
 /**
@@ -37,6 +38,42 @@ class ResourceSearchBuilder{{type}} {
    */
   public get href(): string {
     return this.builder.href;
+  }
+
+  /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined,
+      iterate?: boolean | null | undefined
+    }
+  ): ResourceSearchBuilder{{type}} {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${options?.targetResourceType ? `:${options.targetResourceType}` : ""}`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined,
+      iterate?: boolean | null | undefined
+    }
+  ): ResourceSearchBuilder{{type}} {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${options?.targetResourceType ? `:${options.targetResourceType}` : ""}`
+    );
+    return this;
   }
 
   {{#each (uniqBy (fhirPath @root.data.[search-parameters] (replace "Bundle.entry.select(resource).ofType(SearchParameter).where(base='DomainResource' or base='Resource' or base='CURRENTYPE')" "CURRENTYPE" type)) "code")}}

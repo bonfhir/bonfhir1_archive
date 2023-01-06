@@ -138,10 +138,116 @@ This can also simplify unit testing by offering a simple interface to mock.
 
 Concrete implementations can be found in [Integrations](/packages/integrations/medplum) packages, or can be built quite easily yourself.
 
+### FHIR Client decorator
+
+A utility function is provided to be able to decorate a `FhirRestfulClient`, to intercept calls made to it.
+This can be helpful to log calls, or record resources elsewhere for example.
+
+```typescript
+import { decorateFhirRestfulClient, FhirRestfulClient, FhirRestfulClientInterceptor } from "@bonfhir/core/r4b";
+
+const client: FhirRestfulClient = ...;
+const interceptor: FhirRestfulClientInterceptor = {
+  read: async (originalClient, [type, id]) => {
+    console.log(`Reading ${type}/${id}...`)
+    const result = await originalClient.read(type, id);
+    console.log(`Read ${type}/${id}: ${result?.text?.div}`);
+    return result;
+  },
+  search: ...
+}
+
+const decoratedClient = decorateFhirRestfulClient(client, interceptor);
+await decoratedClient.read(...);
+```
+
 ## FHIR Search
+
+There are utility functions designed to help creating [FHIR Search](https://hl7.org/fhir/search.html) URL query parameters.
 
 ### Resources search
 
+The easiest way is to use the `resourceSearch` helper method, as it provides typing for all resources, based on the search parameters specification:
+
+```typescript
+import { resourceSearch } from "@bonfhir/core/r4b";
+
+resourceSearch("Organization").identifier("12345").active("true").href;
+resourceSearch("Patient").identifier({
+  system: "http://hl7.org/fhir/sid/us-ssn",
+  value: "000-00-0000",
+}).href;
+resourceSearch("Account").status("active").type("patient")._tag({
+  system: "source",
+  value: "foo",
+}).href;
+```
+
 ### Generic search builder
 
+In addition to the resource-typed searches, there is a generic search builder that exposes the fundamental [FHIR Search Parameter Types](https://hl7.org/fhir/search.html#ptypes)
+to help compose FHIR searches as well:
+
+```typescript
+import { fhirSearch } from "@bonfhir/core/r4b";
+
+fhirSearch().token("identifier", "152345235").href;
+fhirSearch().date("date", "2010-01-01", "ge").date("date", "2011-12-31", "le")
+  .href;
+fhirSearch().date("date", "2010-01-01", "ge").date("date", "2011-12-31", "le")
+  .href;
+fhirSearch().reference(
+  "subject",
+  { system: "http://acme.org/fhir/identifier/mrn", value: "123456" },
+  ":identifier"
+).href;
+```
+
 ## Bundle navigator
+
+It can be hard sometime to extract and navigate a [`Bundle`](https://hl7.org/fhir/bundle.html), when it is the result of a complex [Search operation](https://hl7.org/fhir/search.html).
+
+The primary resources are returned along with [`_include`](https://hl7.org/fhir/search.html#include) and [`_revinclude`](https://hl7.org/fhir/search.html#revinclude),
+that must be resolved via [`references`](https://hl7.org/fhir/references.html).
+Additionally, naive implementations can lead to O(N<sup>2</sup>) complexity when processing `_revinclude` resources for example.
+
+The `bundleNavigator` helper can help with this by providing lazy indexing and search on top of a bundle to extract resources efficiently:
+
+```typescript
+import {
+  buildReferenceFromResource,
+  bundleNavigator,
+  fhirSearch,
+} from "@bonfhir/core/r4b";
+
+const bundle = await client.search(
+  "Patient",
+  resourceSearch("Patient")
+    ._include("Patient", "managingOrganization")
+    ._revinclude("Provenance", "target")
+    ._include("Provenance", "agent", { iterate: true })
+);
+
+const navigator = bundleNavigator<Patient, Organization | Provenance>(bundle);
+for (const patient of navigator.searchMatch()) {
+  const managingOrganization = navigator.reference(
+    patient?.managingOrganization?.reference
+  );
+  const provenance = navigator.firstRevReference<Provenance>(
+    "ofType(Provenance).target.reference",
+    buildReferenceFromResource(patient).reference
+  );
+  const provenanceOrganization = navigator.reference(
+    provenance?.agent[0]?.who.reference
+  );
+}
+```
+
+In this example, the bundle is only iterated twice:
+
+- once to index the results for the calls to `searchMatch` and `reference`
+- a second time to create the on-the-fly index for the `firstRevReference`
+
+The reverse references uses [FHIR Path](http://hl7.org/fhirpath/N1/) to create indices that can be reused in loops.
+
+All indices are created lazily, so it is very cheap to create / return a `bundleNavigator` even if it is not used subsequently.

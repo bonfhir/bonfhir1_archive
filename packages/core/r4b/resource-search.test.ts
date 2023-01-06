@@ -5,6 +5,13 @@ describe("resource-search", () => {
   it.each([
     [resourceSearch("Patient").name("John Doe"), "name=John%20Doe"],
     [
+      resourceSearch("Patient")
+        ._include("Patient", "managingOrganization")
+        ._revinclude("Provenance", "target")
+        ._include("Provenance", "agent", { iterate: true }),
+      "_include=Patient%3AmanagingOrganization&_revinclude=Provenance%3Atarget&_include:iterate=Provenance%3Aagent",
+    ],
+    [
       resourceSearch("Organization").identifier("12345").active("true"),
       "identifier=12345&active=true",
     ],
