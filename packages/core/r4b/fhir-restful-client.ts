@@ -249,3 +249,37 @@ export interface JSONPatchOperationTest {
   path: string;
   value: unknown;
 }
+
+/**
+ * Structure to build interception on top of a `FhirRestfulClient`.
+ */
+export type FhirRestfulClientInterceptor = {
+  [K in keyof FhirRestfulClient]?:
+    | ((
+        client: FhirRestfulClient,
+        args: Parameters<FhirRestfulClient[K]>
+      ) => ReturnType<FhirRestfulClient[K]>)
+    | null
+    | undefined;
+};
+
+/**
+ * Allows to weave in interceptor for each `FhirRestfulClient` methods.
+ */
+export function decorateFhirRestfulClient(
+  client: FhirRestfulClient,
+  interceptor: FhirRestfulClientInterceptor
+): FhirRestfulClient {
+  return Object.entries(client).reduce((acc, cur) => {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const [key, fn] = cur as [keyof FhirRestfulClient, any];
+    acc[key] = (...args: unknown[]) => {
+      if (interceptor[key]) {
+        // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+        return interceptor[key]!(client, args as never);
+      }
+      return fn(...args);
+    };
+    return acc;
+  }, {} as FhirRestfulClient);
+}
