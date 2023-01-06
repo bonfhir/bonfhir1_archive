@@ -1,4 +1,5 @@
 export * from "./builders";
+export * from "./bundle-navigator";
 export * from "./fhir-restful-client";
 export * from "./merge";
 export * from "./narratives";

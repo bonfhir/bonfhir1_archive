@@ -59,9 +59,9 @@
           "codegen",
           "core",
           "docs",
-          "fakes",
           "medplum",
-          "terminology"
+          "terminology",
+          "test-support"
         ],
         "conventionalCommits.showEditor": true,
         "cSpell.words": [
@@ -75,7 +75,8 @@
           "FHIR",
           "fhirpath",
           "Listr",
-          "listr"
+          "listr",
+          "Referenceable"
         ],
         "errorLens.enabledDiagnosticLevels": ["error", "warning"],
         "eslint.workingDirectories": ["packages/*"],

@@ -1,6 +1,11 @@
-import { CodeableConcept } from "fhir/r4";
+import { CodeableConcept, DomainResource, Reference } from "fhir/r4";
 import { narrative } from "./narratives";
-import { ExtractResource, isDomainResource, ResourceType } from "./types";
+import {
+  ExtractResource,
+  isDomainResource,
+  ResourceType,
+  WithRequired,
+} from "./types";
 
 /**
  * Build a specific FHIR resource.
@@ -42,4 +47,47 @@ export function buildCodeableConcept(
         text: element?.text || element?.coding?.[0]?.display,
       }
     : undefined;
+}
+
+export interface Referenceable {
+  resourceType: string | undefined;
+  id?: string | undefined;
+}
+
+/**
+ * Build a new Reference to a resource.
+ */
+export function buildReferenceFromResource(
+  resource: Referenceable
+): WithRequired<Reference, "reference">;
+export function buildReferenceFromResource(
+  resource: null | undefined
+): undefined;
+export function buildReferenceFromResource(
+  resource: Referenceable | null | undefined
+): WithRequired<Reference, "reference"> | undefined;
+export function buildReferenceFromResource(
+  resource: Referenceable | null | undefined
+): WithRequired<Reference, "reference"> | undefined {
+  if (!resource) {
+    return undefined;
+  }
+
+  if (!resource.resourceType || !resource.id) {
+    throw new Error(
+      `Cannot build reference from ${JSON.stringify(
+        resource
+      )}. Missing either the resourceType or id.`
+    );
+  }
+
+  return {
+    reference: `${resource.resourceType}/${resource.id}`,
+    type: resource.resourceType,
+    display:
+      (resource as DomainResource).text?.div ||
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      (resource as any).text ||
+      undefined,
+  };
 }

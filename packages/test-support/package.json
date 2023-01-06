@@ -1,6 +1,6 @@
 {
-  "name": "@bonfhir/fakes",
-  "description": "Fakers for Bonfhir.",
+  "name": "@bonfhir/test-support",
+  "description": "Test helpers for Bonfhir.",
   "version": "0.0.0",
   "repository": "https://github.com/bonfhir/bonfhir.git",
   "license": "APACHE-2.0",
@@ -39,7 +39,9 @@
   },
   "dependencies": {
     "@bonfhir/core": "*",
-    "@ngneat/falso": "^6.3.2"
+    "@ngneat/falso": "^6.3.2",
+    "fast-glob": "^3.2.12",
+    "fhirpath": "^3.3.1"
   },
   "prettier": "@bonfhir/prettier-config"
 }

@@ -143,3 +143,5 @@ Concrete implementations can be found in [Integrations](/packages/integrations/m
 ### Resources search
 
 ### Generic search builder
+
+## Bundle navigator
