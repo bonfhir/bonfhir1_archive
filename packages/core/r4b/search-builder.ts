@@ -38,11 +38,11 @@ export class FhirSearchBuilder {
    * @returns the modified builder instance
    *
    * @example
-   *    > fhirSearch("Appointment").date("date", "2022-01-02").href
-   *    > "/Appointment?date=2022-01-02"
+   *    > fhirSearch().date("date", "2022-01-02").href
+   *    > "date=2022-01-02"
    *
-   *    > fhirSearch("Appointment").date("date", "2010-01-01", "ge").date("date", "2011-12-31", "le").href
-   *    > "/Appointment?date=ge2010-01-01&date=le2011-12-31"
+   *    > fhirSearch().date("date", "2010-01-01", "ge").date("date", "2011-12-31", "le").href
+   *    > "date=ge2010-01-01&date=le2011-12-31"
    */
   public date(
     parameter: string,
@@ -79,8 +79,8 @@ export class FhirSearchBuilder {
    * @returns the modified builder instance
    *
    * @example
-   *    > fhirSearch("RiskAssessment").missing("probability").href
-   *    > "/RiskAssessment?probability:missing=true"
+   *    > fhirSearch().missing("probability").href
+   *    > "probability:missing=true"
    */
   public missing(parameter: string, isMissing = true): FhirSearchBuilder {
     this.searchParams.push([
@@ -98,11 +98,11 @@ export class FhirSearchBuilder {
    * @returns the modified builder instance
    *
    * @example
-   *    > fhirSearch("RiskAssessment").number("probability", 3).href
-   *    > "/RiskAssessment?probability=3"
+   *    > fhirSearch().number("probability", 3).href
+   *    > "probability=3"
    *
-   *    > fhirSearch("RiskAssessment").number("probability", "2e2").href
-   *    > "/RiskAssessment?probability=2e2",
+   *    > fhirSearch().number("probability", "2e2").href
+   *    > "probability=2e2",
    */
   public number(
     parameter: string,
@@ -129,8 +129,8 @@ export class FhirSearchBuilder {
    * @returns the modified builder instance
    *
    * @example
-   *    > fhirSearch("Observation").quantity("value-quantity", { number: 5.4, code: "mg" }).href
-   *    > "/Observation?value-quantity=5.4||mg"
+   *    > fhirSearch().quantity("value-quantity", { number: 5.4, code: "mg" }).href
+   *    > "value-quantity=5.4||mg"
    */
   public quantity(
     parameter: string,
@@ -194,14 +194,14 @@ export class FhirSearchBuilder {
    * @returns the modified builder instance
    *
    * @example
-   *    > fhirSearch("Observation").reference("subject", "Patient/23").href
-   *    > "/Observation?subject=Patient%2F23"
+   *    > fhirSearch().reference("subject", "Patient/23").href
+   *    > "subject=Patient%2F23"
    *
-   *    > fhirSearch("Observation").reference("subject", ["12", "23"], "Patient").href
-   *    >  "/Observation?subject:Patient=12,23"
+   *    > fhirSearch().reference("subject", ["12", "23"], "Patient").href
+   *    >  "subject:Patient=12,23"
    *
-   *    > fhirSearch("Observation").reference("subject", { system: "http://acme.org/fhir/identifier/mrn", value: "123456" }, ":identifier").href
-   *    > "/Observation?subject:identifier=http%3A%2F%2Facme.org%2Ffhir%2Fidentifier%2Fmrn|123456"
+   *    > fhirSearch().reference("subject", { system: "http://acme.org/fhir/identifier/mrn", value: "123456" }, ":identifier").href
+   *    > "subject:identifier=http%3A%2F%2Facme.org%2Ffhir%2Fidentifier%2Fmrn|123456"
    */
   public reference(
     parameter: string,
@@ -348,11 +348,11 @@ export class FhirSearchBuilder {
    * @returns the modified builder instance
    *
    * @example
-   *    > fhirSearch("Patient").string("name", "John Doe").href
-   *    > "/Patient?name=John%20Doe"
+   *    > fhirSearch().string("name", "John Doe").href
+   *    > "name=John%20Doe"
    *
-   *    > fhirSearch("Patient").string("given", ["eve", "adam"], ":contains").href
-   *    > "/Patient?given:contains=eve,adam"
+   *    > fhirSearch().string("given", ["eve", "adam"], ":contains").href
+   *    > "given:contains=eve,adam"
    */
   public string(
     parameter: string,
@@ -377,14 +377,14 @@ export class FhirSearchBuilder {
    * @returns the modified builder instance
    *
    * @example
-   *    > fhirSearch("Patient").token("identifier", { system: "http://acme.org/patient", value: "2345" }).href
-   *    > "/Patient?identifier=http%3A%2F%2Facme.org%2Fpatient|2345"
+   *    > fhirSearch().token("identifier", { system: "http://acme.org/patient", value: "2345" }).href
+   *    > "identifier=http%3A%2F%2Facme.org%2Fpatient|2345"
    *
-   *    > fhirSearch("Patient").token("gender", ["male", "female"]).href
-   *    > "/Patient?gender=male,female"
+   *    > fhirSearch().token("gender", ["male", "female"]).href
+   *    > "gender=male,female"
    *
-   *    > fhirSearch("Patient").token("gender", "male", ":not").href
-   *    > "/Patient?gender:not=male"
+   *    > fhirSearch().token("gender", "male", ":not").href
+   *    > "gender:not=male"
    */
   public token(
     parameter: string,
@@ -463,8 +463,8 @@ export class FhirSearchBuilder {
    * @returns the modified builder instance
    *
    * @example
-   *    > fhirSearch("ValueSet").uri("url", "http://acme.org/fhir/ValueSet/123").href
-   *    > "/ValueSet?url=http%3A%2F%2Facme.org%2Ffhir%2FValueSet%2F123"
+   *    > fhirSearch().uri("url", "http://acme.org/fhir/ValueSet/123").href
+   *    > "url=http%3A%2F%2Facme.org%2Ffhir%2FValueSet%2F123"
    */
   public uri(
     parameter: string,
@@ -503,8 +503,8 @@ export class FhirSearchBuilder {
    * If no path was provided, returns only the search parameters without the `?`.
    *
    * @example
-   *    > fhirSearch("Patient").string("name", "John Doe").href
-   *    > "/Patient?name=John%20Doe"
+   *    > fhirSearch().string("name", "John Doe").href
+   *    > "name=John%20Doe"
    *
    *    > fhirSearch().string("name", "John Doe").href
    *    > "name=John%20Doe"

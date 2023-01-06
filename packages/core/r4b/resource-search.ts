@@ -1,3 +1,4 @@
+import _ from "lodash";
 import {
   fhirSearch,
   FhirSearchBuilder,
@@ -6,7 +7,7 @@ import {
   TokenModifier,
   UriModifier,
 } from "./search-builder";
-import type { ResourceType } from "./types";
+import type { ExtractResource, ResourceType } from "./types";
 
 /**
  * Return a typed search builder for a specific resource.
@@ -313,6 +314,46 @@ class ResourceSearchBuilderAccount {
    */
   public get href(): string {
     return this.builder.href;
+  }
+
+  /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderAccount {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderAccount {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
   }
 
   /**
@@ -758,6 +799,46 @@ class ResourceSearchBuilderActivityDefinition {
    */
   public get href(): string {
     return this.builder.href;
+  }
+
+  /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderActivityDefinition {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderActivityDefinition {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
   }
 
   /**
@@ -1456,6 +1537,46 @@ class ResourceSearchBuilderAdministrableProductDefinition {
   }
 
   /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderAdministrableProductDefinition {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderAdministrableProductDefinition {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -1930,6 +2051,46 @@ class ResourceSearchBuilderAdverseEvent {
    */
   public get href(): string {
     return this.builder.href;
+  }
+
+  /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderAdverseEvent {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderAdverseEvent {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
   }
 
   /**
@@ -2508,6 +2669,46 @@ class ResourceSearchBuilderAllergyIntolerance {
   }
 
   /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderAllergyIntolerance {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderAllergyIntolerance {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -3029,6 +3230,46 @@ class ResourceSearchBuilderAppointment {
    */
   public get href(): string {
     return this.builder.href;
+  }
+
+  /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderAppointment {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderAppointment {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
   }
 
   /**
@@ -3746,6 +3987,46 @@ class ResourceSearchBuilderAppointmentResponse {
   }
 
   /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderAppointmentResponse {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderAppointmentResponse {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -4197,6 +4478,46 @@ class ResourceSearchBuilderAuditEvent {
    */
   public get href(): string {
     return this.builder.href;
+  }
+
+  /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderAuditEvent {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderAuditEvent {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
   }
 
   /**
@@ -4869,6 +5190,46 @@ class ResourceSearchBuilderBasic {
   }
 
   /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderBasic {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderBasic {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -5276,6 +5637,46 @@ class ResourceSearchBuilderBiologicallyDerivedProduct {
   }
 
   /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderBiologicallyDerivedProduct {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderBiologicallyDerivedProduct {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -5528,6 +5929,46 @@ class ResourceSearchBuilderBodyStructure {
    */
   public get href(): string {
     return this.builder.href;
+  }
+
+  /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderBodyStructure {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderBodyStructure {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
   }
 
   /**
@@ -5893,6 +6334,46 @@ class ResourceSearchBuilderCapabilityStatement {
    */
   public get href(): string {
     return this.builder.href;
+  }
+
+  /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderCapabilityStatement {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderCapabilityStatement {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
   }
 
   /**
@@ -6381,6 +6862,46 @@ class ResourceSearchBuilderCarePlan {
    */
   public get href(): string {
     return this.builder.href;
+  }
+
+  /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderCarePlan {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderCarePlan {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
   }
 
   /**
@@ -7088,6 +7609,46 @@ class ResourceSearchBuilderCareTeam {
   }
 
   /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderCareTeam {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderCareTeam {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -7484,6 +8045,46 @@ class ResourceSearchBuilderCatalogEntry {
   }
 
   /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderCatalogEntry {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderCatalogEntry {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -7736,6 +8337,46 @@ class ResourceSearchBuilderChargeItem {
    */
   public get href(): string {
     return this.builder.href;
+  }
+
+  /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderChargeItem {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderChargeItem {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
   }
 
   /**
@@ -8427,6 +9068,46 @@ class ResourceSearchBuilderChargeItemDefinition {
   }
 
   /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderChargeItemDefinition {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderChargeItemDefinition {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -8936,6 +9617,46 @@ class ResourceSearchBuilderCitation {
    */
   public get href(): string {
     return this.builder.href;
+  }
+
+  /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderCitation {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderCitation {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
   }
 
   /**
@@ -9459,6 +10180,46 @@ class ResourceSearchBuilderClaim {
    */
   public get href(): string {
     return this.builder.href;
+  }
+
+  /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderClaim {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderClaim {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
   }
 
   /**
@@ -10184,6 +10945,46 @@ class ResourceSearchBuilderClaimResponse {
   }
 
   /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderClaimResponse {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderClaimResponse {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -10693,6 +11494,46 @@ class ResourceSearchBuilderClinicalImpression {
    */
   public get href(): string {
     return this.builder.href;
+  }
+
+  /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderClinicalImpression {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderClinicalImpression {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
   }
 
   /**
@@ -11264,6 +12105,46 @@ class ResourceSearchBuilderClinicalUseDefinition {
   }
 
   /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderClinicalUseDefinition {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderClinicalUseDefinition {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -11826,6 +12707,46 @@ class ResourceSearchBuilderCodeSystem {
   }
 
   /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderCodeSystem {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderCodeSystem {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -12199,6 +13120,46 @@ class ResourceSearchBuilderCommunication {
    */
   public get href(): string {
     return this.builder.href;
+  }
+
+  /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderCommunication {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderCommunication {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
   }
 
   /**
@@ -12827,6 +13788,46 @@ class ResourceSearchBuilderCommunicationRequest {
    */
   public get href(): string {
     return this.builder.href;
+  }
+
+  /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderCommunicationRequest {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderCommunicationRequest {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
   }
 
   /**
@@ -13501,6 +14502,46 @@ class ResourceSearchBuilderCompartmentDefinition {
   }
 
   /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderCompartmentDefinition {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderCompartmentDefinition {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -13807,6 +14848,46 @@ class ResourceSearchBuilderComposition {
    */
   public get href(): string {
     return this.builder.href;
+  }
+
+  /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderComposition {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderComposition {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
   }
 
   /**
@@ -14394,6 +15475,46 @@ class ResourceSearchBuilderConceptMap {
   }
 
   /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderConceptMap {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderConceptMap {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -14889,6 +16010,46 @@ class ResourceSearchBuilderCondition {
    */
   public get href(): string {
     return this.builder.href;
+  }
+
+  /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderCondition {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderCondition {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
   }
 
   /**
@@ -15565,6 +16726,46 @@ class ResourceSearchBuilderConsent {
   }
 
   /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderConsent {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderConsent {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -16138,6 +17339,46 @@ class ResourceSearchBuilderContract {
   }
 
   /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderContract {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderContract {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -16622,6 +17863,46 @@ class ResourceSearchBuilderCoverage {
    */
   public get href(): string {
     return this.builder.href;
+  }
+
+  /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderCoverage {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderCoverage {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
   }
 
   /**
@@ -17155,6 +18436,46 @@ class ResourceSearchBuilderCoverageEligibilityRequest {
   }
 
   /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderCoverageEligibilityRequest {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderCoverageEligibilityRequest {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -17588,6 +18909,46 @@ class ResourceSearchBuilderCoverageEligibilityResponse {
    */
   public get href(): string {
     return this.builder.href;
+  }
+
+  /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderCoverageEligibilityResponse {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderCoverageEligibilityResponse {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
   }
 
   /**
@@ -18065,6 +19426,46 @@ class ResourceSearchBuilderDetectedIssue {
   }
 
   /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderDetectedIssue {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderDetectedIssue {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -18413,6 +19814,46 @@ class ResourceSearchBuilderDevice {
    */
   public get href(): string {
     return this.builder.href;
+  }
+
+  /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderDevice {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderDevice {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
   }
 
   /**
@@ -18905,6 +20346,46 @@ class ResourceSearchBuilderDeviceDefinition {
   }
 
   /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderDeviceDefinition {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderDeviceDefinition {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -19240,6 +20721,46 @@ class ResourceSearchBuilderDeviceMetric {
    */
   public get href(): string {
     return this.builder.href;
+  }
+
+  /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderDeviceMetric {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderDeviceMetric {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
   }
 
   /**
@@ -19634,6 +21155,46 @@ class ResourceSearchBuilderDeviceRequest {
    */
   public get href(): string {
     return this.builder.href;
+  }
+
+  /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderDeviceRequest {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderDeviceRequest {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
   }
 
   /**
@@ -20238,6 +21799,46 @@ class ResourceSearchBuilderDeviceUseStatement {
   }
 
   /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderDeviceUseStatement {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderDeviceUseStatement {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -20575,6 +22176,46 @@ class ResourceSearchBuilderDiagnosticReport {
    */
   public get href(): string {
     return this.builder.href;
+  }
+
+  /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderDiagnosticReport {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderDiagnosticReport {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
   }
 
   /**
@@ -21128,6 +22769,46 @@ class ResourceSearchBuilderDocumentManifest {
   }
 
   /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderDocumentManifest {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderDocumentManifest {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -21612,6 +23293,46 @@ class ResourceSearchBuilderDocumentReference {
    */
   public get href(): string {
     return this.builder.href;
+  }
+
+  /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderDocumentReference {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderDocumentReference {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
   }
 
   /**
@@ -22355,6 +24076,46 @@ class ResourceSearchBuilderEncounter {
    */
   public get href(): string {
     return this.builder.href;
+  }
+
+  /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderEncounter {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderEncounter {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
   }
 
   /**
@@ -23136,6 +24897,46 @@ class ResourceSearchBuilderEndpoint {
   }
 
   /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderEndpoint {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderEndpoint {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -23539,6 +25340,46 @@ class ResourceSearchBuilderEnrollmentRequest {
   }
 
   /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderEnrollmentRequest {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderEnrollmentRequest {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -23906,6 +25747,46 @@ class ResourceSearchBuilderEnrollmentResponse {
   }
 
   /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderEnrollmentResponse {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderEnrollmentResponse {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -24241,6 +26122,46 @@ class ResourceSearchBuilderEpisodeOfCare {
    */
   public get href(): string {
     return this.builder.href;
+  }
+
+  /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderEpisodeOfCare {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderEpisodeOfCare {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
   }
 
   /**
@@ -24639,6 +26560,46 @@ class ResourceSearchBuilderEventDefinition {
    */
   public get href(): string {
     return this.builder.href;
+  }
+
+  /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderEventDefinition {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderEventDefinition {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
   }
 
   /**
@@ -25337,6 +27298,46 @@ class ResourceSearchBuilderEvidence {
   }
 
   /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderEvidence {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderEvidence {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -25811,6 +27812,46 @@ class ResourceSearchBuilderEvidenceReport {
   }
 
   /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderEvidenceReport {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderEvidenceReport {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -26222,6 +28263,46 @@ class ResourceSearchBuilderEvidenceVariable {
    */
   public get href(): string {
     return this.builder.href;
+  }
+
+  /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderEvidenceVariable {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderEvidenceVariable {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
   }
 
   /**
@@ -26707,6 +28788,46 @@ class ResourceSearchBuilderExampleScenario {
    */
   public get href(): string {
     return this.builder.href;
+  }
+
+  /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderExampleScenario {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderExampleScenario {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
   }
 
   /**
@@ -27197,6 +29318,46 @@ class ResourceSearchBuilderExplanationOfBenefit {
    */
   public get href(): string {
     return this.builder.href;
+  }
+
+  /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderExplanationOfBenefit {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderExplanationOfBenefit {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
   }
 
   /**
@@ -27908,6 +30069,46 @@ class ResourceSearchBuilderFamilyMemberHistory {
   }
 
   /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderFamilyMemberHistory {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderFamilyMemberHistory {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -28284,6 +30485,46 @@ class ResourceSearchBuilderFlag {
   }
 
   /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderFlag {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderFlag {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -28621,6 +30862,46 @@ class ResourceSearchBuilderGoal {
    */
   public get href(): string {
     return this.builder.href;
+  }
+
+  /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderGoal {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderGoal {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
   }
 
   /**
@@ -29011,6 +31292,46 @@ class ResourceSearchBuilderGraphDefinition {
   }
 
   /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderGraphDefinition {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderGraphDefinition {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -29290,6 +31611,46 @@ class ResourceSearchBuilderGroup {
    */
   public get href(): string {
     return this.builder.href;
+  }
+
+  /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderGroup {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderGroup {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
   }
 
   /**
@@ -29795,6 +32156,46 @@ class ResourceSearchBuilderGuidanceResponse {
   }
 
   /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderGuidanceResponse {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderGuidanceResponse {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -30159,6 +32560,46 @@ class ResourceSearchBuilderHealthcareService {
    */
   public get href(): string {
     return this.builder.href;
+  }
+
+  /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderHealthcareService {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderHealthcareService {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
   }
 
   /**
@@ -30730,6 +33171,46 @@ class ResourceSearchBuilderImagingStudy {
    */
   public get href(): string {
     return this.builder.href;
+  }
+
+  /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderImagingStudy {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderImagingStudy {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
   }
 
   /**
@@ -31391,6 +33872,46 @@ class ResourceSearchBuilderImmunization {
   }
 
   /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderImmunization {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderImmunization {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -31959,6 +34480,46 @@ class ResourceSearchBuilderImmunizationEvaluation {
   }
 
   /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderImmunizationEvaluation {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderImmunizationEvaluation {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -32388,6 +34949,46 @@ class ResourceSearchBuilderImmunizationRecommendation {
    */
   public get href(): string {
     return this.builder.href;
+  }
+
+  /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderImmunizationRecommendation {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderImmunizationRecommendation {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
   }
 
   /**
@@ -32852,6 +35453,46 @@ class ResourceSearchBuilderImplementationGuide {
   }
 
   /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderImplementationGuide {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderImplementationGuide {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -33218,6 +35859,46 @@ class ResourceSearchBuilderIngredient {
    */
   public get href(): string {
     return this.builder.href;
+  }
+
+  /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderIngredient {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderIngredient {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
   }
 
   /**
@@ -33697,6 +36378,46 @@ class ResourceSearchBuilderInsurancePlan {
    */
   public get href(): string {
     return this.builder.href;
+  }
+
+  /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderInsurancePlan {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderInsurancePlan {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
   }
 
   /**
@@ -34224,6 +36945,46 @@ class ResourceSearchBuilderInvoice {
    */
   public get href(): string {
     return this.builder.href;
+  }
+
+  /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderInvoice {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderInvoice {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
   }
 
   /**
@@ -34830,6 +37591,46 @@ class ResourceSearchBuilderLibrary {
    */
   public get href(): string {
     return this.builder.href;
+  }
+
+  /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderLibrary {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderLibrary {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
   }
 
   /**
@@ -35582,6 +38383,46 @@ class ResourceSearchBuilderLinkage {
   }
 
   /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderLinkage {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderLinkage {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -35921,6 +38762,46 @@ class ResourceSearchBuilderList {
    */
   public get href(): string {
     return this.builder.href;
+  }
+
+  /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderList {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderList {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
   }
 
   /**
@@ -36339,6 +39220,46 @@ class ResourceSearchBuilderLocation {
    */
   public get href(): string {
     return this.builder.href;
+  }
+
+  /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderLocation {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderLocation {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
   }
 
   /**
@@ -36885,6 +39806,46 @@ class ResourceSearchBuilderManufacturedItemDefinition {
   }
 
   /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderManufacturedItemDefinition {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderManufacturedItemDefinition {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -37218,6 +40179,46 @@ class ResourceSearchBuilderMeasure {
    */
   public get href(): string {
     return this.builder.href;
+  }
+
+  /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderMeasure {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderMeasure {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
   }
 
   /**
@@ -37916,6 +40917,46 @@ class ResourceSearchBuilderMeasureReport {
   }
 
   /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderMeasureReport {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderMeasureReport {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -38389,6 +41430,46 @@ class ResourceSearchBuilderMedia {
    */
   public get href(): string {
     return this.builder.href;
+  }
+
+  /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderMedia {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderMedia {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
   }
 
   /**
@@ -38994,6 +42075,46 @@ class ResourceSearchBuilderMedication {
   }
 
   /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderMedication {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderMedication {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -39450,6 +42571,46 @@ class ResourceSearchBuilderMedicationAdministration {
    */
   public get href(): string {
     return this.builder.href;
+  }
+
+  /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderMedicationAdministration {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderMedicationAdministration {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
   }
 
   /**
@@ -39915,6 +43076,46 @@ class ResourceSearchBuilderMedicationDispense {
    */
   public get href(): string {
     return this.builder.href;
+  }
+
+  /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderMedicationDispense {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderMedicationDispense {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
   }
 
   /**
@@ -40425,6 +43626,46 @@ class ResourceSearchBuilderMedicationKnowledge {
    */
   public get href(): string {
     return this.builder.href;
+  }
+
+  /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderMedicationKnowledge {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderMedicationKnowledge {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
   }
 
   /**
@@ -41040,6 +44281,46 @@ class ResourceSearchBuilderMedicationRequest {
   }
 
   /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderMedicationRequest {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderMedicationRequest {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -41576,6 +44857,46 @@ class ResourceSearchBuilderMedicationStatement {
   }
 
   /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderMedicationStatement {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderMedicationStatement {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -41982,6 +45303,46 @@ class ResourceSearchBuilderMedicinalProductDefinition {
    */
   public get href(): string {
     return this.builder.href;
+  }
+
+  /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderMedicinalProductDefinition {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderMedicinalProductDefinition {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
   }
 
   /**
@@ -42552,6 +45913,46 @@ class ResourceSearchBuilderMessageDefinition {
   }
 
   /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderMessageDefinition {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderMessageDefinition {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -42914,6 +46315,46 @@ class ResourceSearchBuilderMessageHeader {
    */
   public get href(): string {
     return this.builder.href;
+  }
+
+  /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderMessageHeader {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderMessageHeader {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
   }
 
   /**
@@ -43500,6 +46941,46 @@ class ResourceSearchBuilderMolecularSequence {
   }
 
   /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderMolecularSequence {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderMolecularSequence {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -43936,6 +47417,46 @@ class ResourceSearchBuilderNamingSystem {
   }
 
   /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderNamingSystem {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderNamingSystem {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -44340,6 +47861,46 @@ class ResourceSearchBuilderNutritionOrder {
    */
   public get href(): string {
     return this.builder.href;
+  }
+
+  /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderNutritionOrder {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderNutritionOrder {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
   }
 
   /**
@@ -44813,6 +48374,46 @@ class ResourceSearchBuilderNutritionProduct {
   }
 
   /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderNutritionProduct {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderNutritionProduct {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -45119,6 +48720,46 @@ class ResourceSearchBuilderObservation {
    */
   public get href(): string {
     return this.builder.href;
+  }
+
+  /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderObservation {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderObservation {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
   }
 
   /**
@@ -46044,6 +49685,46 @@ class ResourceSearchBuilderObservationDefinition {
   }
 
   /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderObservationDefinition {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderObservationDefinition {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -46296,6 +49977,46 @@ class ResourceSearchBuilderOperationDefinition {
    */
   public get href(): string {
     return this.builder.href;
+  }
+
+  /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderOperationDefinition {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderOperationDefinition {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
   }
 
   /**
@@ -46776,6 +50497,46 @@ class ResourceSearchBuilderOperationOutcome {
   }
 
   /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderOperationOutcome {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderOperationOutcome {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -47028,6 +50789,46 @@ class ResourceSearchBuilderOrganization {
    */
   public get href(): string {
     return this.builder.href;
+  }
+
+  /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderOrganization {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderOrganization {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
   }
 
   /**
@@ -47526,6 +51327,46 @@ class ResourceSearchBuilderOrganizationAffiliation {
    */
   public get href(): string {
     return this.builder.href;
+  }
+
+  /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderOrganizationAffiliation {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderOrganizationAffiliation {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
   }
 
   /**
@@ -48158,6 +51999,46 @@ class ResourceSearchBuilderPackagedProductDefinition {
   }
 
   /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderPackagedProductDefinition {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderPackagedProductDefinition {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -48726,6 +52607,46 @@ class ResourceSearchBuilderPatient {
   }
 
   /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderPatient {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderPatient {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -49198,6 +53119,46 @@ class ResourceSearchBuilderPaymentNotice {
   }
 
   /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderPaymentNotice {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderPaymentNotice {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -49629,6 +53590,46 @@ class ResourceSearchBuilderPaymentReconciliation {
    */
   public get href(): string {
     return this.builder.href;
+  }
+
+  /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderPaymentReconciliation {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderPaymentReconciliation {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
   }
 
   /**
@@ -50077,6 +54078,46 @@ class ResourceSearchBuilderPerson {
   }
 
   /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderPerson {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderPerson {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -50512,6 +54553,46 @@ class ResourceSearchBuilderPlanDefinition {
    */
   public get href(): string {
     return this.builder.href;
+  }
+
+  /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderPlanDefinition {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderPlanDefinition {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
   }
 
   /**
@@ -51266,6 +55347,46 @@ class ResourceSearchBuilderPractitioner {
   }
 
   /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderPractitioner {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderPractitioner {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -51610,6 +55731,46 @@ class ResourceSearchBuilderPractitionerRole {
    */
   public get href(): string {
     return this.builder.href;
+  }
+
+  /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderPractitionerRole {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderPractitionerRole {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
   }
 
   /**
@@ -52129,6 +56290,46 @@ class ResourceSearchBuilderProcedure {
    */
   public get href(): string {
     return this.builder.href;
+  }
+
+  /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderProcedure {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderProcedure {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
   }
 
   /**
@@ -52682,6 +56883,46 @@ class ResourceSearchBuilderProvenance {
   }
 
   /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderProvenance {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderProvenance {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -53182,6 +57423,46 @@ class ResourceSearchBuilderQuestionnaire {
    */
   public get href(): string {
     return this.builder.href;
+  }
+
+  /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderQuestionnaire {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderQuestionnaire {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
   }
 
   /**
@@ -53773,6 +58054,46 @@ class ResourceSearchBuilderQuestionnaireResponse {
   }
 
   /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderQuestionnaireResponse {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderQuestionnaireResponse {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -54325,6 +58646,46 @@ class ResourceSearchBuilderRegulatedAuthorization {
   }
 
   /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderRegulatedAuthorization {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderRegulatedAuthorization {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -54773,6 +59134,46 @@ class ResourceSearchBuilderRelatedPerson {
   }
 
   /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderRelatedPerson {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderRelatedPerson {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -55146,6 +59547,46 @@ class ResourceSearchBuilderRequestGroup {
    */
   public get href(): string {
     return this.builder.href;
+  }
+
+  /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderRequestGroup {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderRequestGroup {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
   }
 
   /**
@@ -55759,6 +60200,46 @@ class ResourceSearchBuilderResearchDefinition {
    */
   public get href(): string {
     return this.builder.href;
+  }
+
+  /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderResearchDefinition {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderResearchDefinition {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
   }
 
   /**
@@ -56457,6 +60938,46 @@ class ResourceSearchBuilderResearchElementDefinition {
   }
 
   /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderResearchElementDefinition {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderResearchElementDefinition {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -57152,6 +61673,46 @@ class ResourceSearchBuilderResearchStudy {
   }
 
   /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderResearchStudy {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderResearchStudy {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -57736,6 +62297,46 @@ class ResourceSearchBuilderResearchSubject {
   }
 
   /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderResearchSubject {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderResearchSubject {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -58143,6 +62744,46 @@ class ResourceSearchBuilderRiskAssessment {
   }
 
   /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderRiskAssessment {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderRiskAssessment {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -58547,6 +63188,46 @@ class ResourceSearchBuilderSchedule {
    */
   public get href(): string {
     return this.builder.href;
+  }
+
+  /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderSchedule {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderSchedule {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
   }
 
   /**
@@ -58980,6 +63661,46 @@ class ResourceSearchBuilderSearchParameter {
   }
 
   /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderSearchParameter {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderSearchParameter {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -59398,6 +64119,46 @@ class ResourceSearchBuilderServiceRequest {
    */
   public get href(): string {
     return this.builder.href;
+  }
+
+  /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderServiceRequest {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderServiceRequest {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
   }
 
   /**
@@ -60081,6 +64842,46 @@ class ResourceSearchBuilderSlot {
   }
 
   /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderSlot {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderSlot {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -60535,6 +65336,46 @@ class ResourceSearchBuilderSpecimen {
    */
   public get href(): string {
     return this.builder.href;
+  }
+
+  /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderSpecimen {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderSpecimen {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
   }
 
   /**
@@ -61109,6 +65950,46 @@ class ResourceSearchBuilderSpecimenDefinition {
   }
 
   /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderSpecimenDefinition {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderSpecimenDefinition {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -61442,6 +66323,46 @@ class ResourceSearchBuilderStructureDefinition {
    */
   public get href(): string {
     return this.builder.href;
+  }
+
+  /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderStructureDefinition {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderStructureDefinition {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
   }
 
   /**
@@ -61985,6 +66906,46 @@ class ResourceSearchBuilderStructureMap {
   }
 
   /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderStructureMap {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderStructureMap {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -62237,6 +67198,46 @@ class ResourceSearchBuilderSubscription {
    */
   public get href(): string {
     return this.builder.href;
+  }
+
+  /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderSubscription {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderSubscription {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
   }
 
   /**
@@ -62625,6 +67626,46 @@ class ResourceSearchBuilderSubscriptionStatus {
   }
 
   /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderSubscriptionStatus {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderSubscriptionStatus {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -62877,6 +67918,46 @@ class ResourceSearchBuilderSubscriptionTopic {
    */
   public get href(): string {
     return this.builder.href;
+  }
+
+  /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderSubscriptionTopic {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderSubscriptionTopic {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
   }
 
   /**
@@ -63279,6 +68360,46 @@ class ResourceSearchBuilderSubstance {
    */
   public get href(): string {
     return this.builder.href;
+  }
+
+  /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderSubstance {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderSubstance {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
   }
 
   /**
@@ -63741,6 +68862,46 @@ class ResourceSearchBuilderSubstanceDefinition {
   }
 
   /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderSubstanceDefinition {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderSubstanceDefinition {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -64115,6 +69276,46 @@ class ResourceSearchBuilderSupplyDelivery {
   }
 
   /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderSupplyDelivery {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderSupplyDelivery {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -64452,6 +69653,46 @@ class ResourceSearchBuilderSupplyRequest {
    */
   public get href(): string {
     return this.builder.href;
+  }
+
+  /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderSupplyRequest {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderSupplyRequest {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
   }
 
   /**
@@ -64848,6 +70089,46 @@ class ResourceSearchBuilderTask {
    */
   public get href(): string {
     return this.builder.href;
+  }
+
+  /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderTask {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderTask {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
   }
 
   /**
@@ -65587,6 +70868,46 @@ class ResourceSearchBuilderTerminologyCapabilities {
   }
 
   /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderTerminologyCapabilities {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderTerminologyCapabilities {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -65839,6 +71160,46 @@ class ResourceSearchBuilderTestReport {
    */
   public get href(): string {
     return this.builder.href;
+  }
+
+  /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderTestReport {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderTestReport {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
   }
 
   /**
@@ -66210,6 +71571,46 @@ class ResourceSearchBuilderTestScript {
    */
   public get href(): string {
     return this.builder.href;
+  }
+
+  /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderTestScript {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderTestScript {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
   }
 
   /**
@@ -66736,6 +72137,46 @@ class ResourceSearchBuilderValueSet {
   }
 
   /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderValueSet {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderValueSet {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -67040,6 +72481,46 @@ class ResourceSearchBuilderVerificationResult {
   }
 
   /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderVerificationResult {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderVerificationResult {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -67321,6 +72802,46 @@ class ResourceSearchBuilderVisionPrescription {
    */
   public get href(): string {
     return this.builder.href;
+  }
+
+  /**
+   * Include a related resource directly referenced by the main resource.
+   */
+  _include<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderVisionPrescription {
+    this.builder.string(
+      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
+  }
+
+  /**
+   * Include a related resource referencing the main resource.
+   */
+  _revinclude<TResourceType extends ResourceType>(
+    sourceResource: TResourceType,
+    searchParameter: keyof ExtractResource<TResourceType>,
+    options?: {
+      targetResourceType?: ResourceType | null | undefined;
+      iterate?: boolean | null | undefined;
+    }
+  ): ResourceSearchBuilderVisionPrescription {
+    this.builder.string(
+      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `${sourceResource}:${String(searchParameter)}${
+        options?.targetResourceType ? `:${options.targetResourceType}` : ""
+      }`
+    );
+    return this;
   }
 
   /**
