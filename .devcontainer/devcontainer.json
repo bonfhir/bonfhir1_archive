@@ -75,7 +75,8 @@
           "FHIR",
           "fhirpath",
           "Listr",
-          "listr"
+          "listr",
+          "Referenceable"
         ],
         "errorLens.enabledDiagnosticLevels": ["error", "warning"],
         "eslint.workingDirectories": ["packages/*"],
