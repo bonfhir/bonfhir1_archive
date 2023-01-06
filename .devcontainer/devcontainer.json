@@ -8,6 +8,7 @@
     "vscode": {
       "extensions": [
         "andrejunges.Handlebars",
+        "cschleiden.vscode-github-actions",
         "dbaeumer.vscode-eslint",
         "eamodio.gitlens",
         "EditorConfig.EditorConfig",
@@ -17,9 +18,7 @@
         "nrwl.angular-console",
         "streetsidesoftware.code-spell-checker",
         "usernamehw.errorlens",
-        "vivaxy.vscode-conventional-commits",
-        "wmaurer.change-case",
-        "cschleiden.vscode-github-actions"
+        "vivaxy.vscode-conventional-commits"
       ],
       "settings": {
         "[javascript]": {
@@ -76,6 +75,8 @@
           "fhirpath",
           "Listr",
           "listr",
+          "medplum",
+          "Medplum",
           "Referenceable"
         ],
         "errorLens.enabledDiagnosticLevels": ["error", "warning"],

@@ -1,4 +1,4 @@
-import {
+import type {
   ConcurrencyParameters,
   ConditionalSearchParameters,
   ExtractResource,
@@ -7,7 +7,7 @@ import {
   HistoryParameters,
   JSONPatchBody,
   ResourceType,
-} from "@bonfhir/core/r4b";
+} from "@bonfhir/core/r4b/index.js";
 import { MedplumClient } from "@medplum/core";
 import { Bundle, CapabilityStatement, FhirResource } from "fhir/r4";
 
@@ -21,15 +21,10 @@ import { Bundle, CapabilityStatement, FhirResource } from "fhir/r4";
  *    - `capabilities` is not supported
  */
 export function buildFhirRestfulClientAdapter(
-  client: MedplumClient,
-  logger?: (
-    action: keyof FhirRestfulClient,
-    args: unknown,
-    result: unknown
-  ) => void | Promise<void>
+  client: MedplumClient
 ): FhirRestfulClient {
   return {
-    async read<TResource extends ResourceType>(
+    read<TResource extends ResourceType>(
       type: TResource,
       id: string,
       options?: GeneralParameters | null | undefined
@@ -38,12 +33,10 @@ export function buildFhirRestfulClientAdapter(
         throw new Error("read#options is not supported by the MedplumClient.");
       }
 
-      const result = await client.readResource(type, id);
-      await logger?.("read", { type, id, options }, result);
-      return result;
+      return client.readResource(type, id);
     },
 
-    async vread<TResource extends ResourceType>(
+    vread<TResource extends ResourceType>(
       type: TResource,
       id: string,
       vid: string,
@@ -53,12 +46,10 @@ export function buildFhirRestfulClientAdapter(
         throw new Error("vread#options is not supported by the MedplumClient.");
       }
 
-      const result = await client.readVersion(type, id, vid);
-      await logger?.("vread", { type, id, vid, options }, result);
-      return result;
+      return client.readVersion(type, id, vid);
     },
 
-    async update<TResource extends FhirResource>(
+    update<TResource extends FhirResource>(
       body: TResource,
       options?:
         | (GeneralParameters &
@@ -73,12 +64,10 @@ export function buildFhirRestfulClientAdapter(
         );
       }
 
-      const result = await client.updateResource(body);
-      await logger?.("update", { body, options }, result);
-      return result;
+      return client.updateResource(body);
     },
 
-    async patch<TResource extends ResourceType>(
+    patch<TResource extends ResourceType>(
       type: TResource,
       id: string,
       body: JSONPatchBody,
@@ -93,12 +82,10 @@ export function buildFhirRestfulClientAdapter(
         throw new Error("patch#options is not supported by the MedplumClient.");
       }
 
-      const result = await client.patchResource(type, id, body);
-      await logger?.("patch", { type, id, body, options }, result);
-      return result;
+      return client.patchResource(type, id, body);
     },
 
-    async delete(
+    delete(
       type: ResourceType,
       id: string,
       options?:
@@ -112,11 +99,10 @@ export function buildFhirRestfulClientAdapter(
         );
       }
 
-      await client.deleteResource(type, id);
-      await logger?.("delete", { type, id, options }, undefined);
+      return client.deleteResource(type, id);
     },
 
-    async history<TResource extends ResourceType>(
+    history<TResource extends ResourceType>(
       type?: TResource | null | undefined,
       id?: string | null | undefined,
       options?: (GeneralParameters & HistoryParameters) | null | undefined
@@ -133,12 +119,10 @@ export function buildFhirRestfulClientAdapter(
         );
       }
 
-      const result = await client.readHistory(type, id);
-      await logger?.("history", { type, id, options }, result);
-      return result;
+      return client.readHistory(type, id);
     },
 
-    async create<TResource extends FhirResource>(
+    create<TResource extends FhirResource>(
       body: TResource,
       options?:
         | (GeneralParameters & ConditionalSearchParameters)
@@ -151,12 +135,10 @@ export function buildFhirRestfulClientAdapter(
         );
       }
 
-      const result = await client.createResource(body);
-      await logger?.("create", { body, options }, result);
-      return result;
+      return client.createResource(body);
     },
 
-    async search<TResource extends ResourceType>(
+    search<TResource extends ResourceType>(
       type?: TResource | null | undefined,
       parameters?: string | null | undefined,
       options?: GeneralParameters | null | undefined
@@ -167,16 +149,14 @@ export function buildFhirRestfulClientAdapter(
         );
       }
 
-      const result = await client.search(type, parameters || undefined);
-      await logger?.("search", { type, parameters, options }, result);
-      return result;
+      return client.search(type, parameters || undefined);
     },
 
     capabilities(): Promise<CapabilityStatement> {
       throw new Error("capabilities is not supported by the MedplumClient.");
     },
 
-    async batch(
+    batch(
       body: Bundle,
       options?: GeneralParameters | null | undefined
     ): Promise<Bundle> {
@@ -184,9 +164,7 @@ export function buildFhirRestfulClientAdapter(
         throw new Error("batch#options is not supported by the MedplumClient.");
       }
 
-      const result = await client.executeBatch(body);
-      await logger?.("batch", { body }, result);
-      return result;
+      return client.executeBatch(body);
     },
 
     async execute<TOperationResult, TOperationParameters = unknown>(
@@ -205,12 +183,10 @@ export function buildFhirRestfulClientAdapter(
         options?.type === "ValueSet" &&
         isValidExpandOperationParameters(options?.parameters)
       ) {
-        const result = await client.searchValueSet(
+        return await client.searchValueSet(
           options.parameters.url,
           options.parameters.filter
         );
-        await logger?.("execute", { operation, options }, result);
-        return result;
       }
 
       if (
@@ -218,11 +194,9 @@ export function buildFhirRestfulClientAdapter(
         options?.type === "Patient" &&
         options?.id
       ) {
-        const result = (await client.readPatientEverything(
+        return (await client.readPatientEverything(
           options.id
         )) as Promise<TOperationResult>;
-        await logger?.("execute", { operation, options }, result);
-        return result;
       }
 
       if (
@@ -231,13 +205,11 @@ export function buildFhirRestfulClientAdapter(
         options?.id &&
         isValidGraphOperationParameter(options?.parameters)
       ) {
-        const result = (await client.readResourceGraph(
+        return (await client.readResourceGraph(
           options.type,
           options.id,
           options.parameters.graph
         )) as Promise<TOperationResult>;
-        await logger?.("execute", { operation, options }, result);
-        return result;
       }
 
       throw new Error(
