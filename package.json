@@ -11,6 +11,7 @@
     "build": "lerna run build",
     "check": "lerna run --parallel check",
     "clean": "lerna run --parallel clean",
+    "codegen": "lerna run --parallel codegen",
     "commit": "commit",
     "graph": "nx graph",
     "postinstall": "husky install",

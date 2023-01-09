@@ -71,6 +71,10 @@ The `codegen` package also provides some additional helpers - [the exhaustive li
 
 Some notable helpers:
 
+### `elementImmediatePath`
+
+Return the immediate path for a FHIR [Element Definition](https://hl7.org/fhir/elementdefinition.html#ElementDefinition) path property.
+
 ### `fhirPath`
 
 Returns the result of evaluating a [FHIRPath](http://hl7.org/fhirpath/N1/) against a resource.
@@ -101,6 +105,48 @@ Here is how the example can also be written:
 {{/each}}
 ```
 
+### `in/notIn`
+
+Filter if it is / it is not in a list of values.
+
+```handlebars
+{{#each (fhirPath data.profiles-resources "Bundle/DomainResources")}}
+  {{#if (in name "Account,Patient")}}
+    ...
+  {{/if}}
+{{/each}}
+```
+
+### `readLines`
+
+Load text file and return an array with each line as a string. Ignores empty lines.
+Load path is relative to the template file.
+
+```handlebars
+{{#if (in name (readLines "namesToKeep.txt"))}}
+  ...
+{{/if}}
+```
+
+### `recursiveFlatten`
+
+Depth-first recursive exploration of an array using a single attribute.
+
+### `safeNameAsVar`
+
+Returns a string that can safely be used as a Typescript variable name
+
+```handlebars
+{{#safeNameAsVar "12 ab"}} -> "twelveab"
+```
+
+### `valueSetExpansions`
+
+[Expand](https://hl7.org/fhir/valueset.html#expansion) a `ValueSet` using FHIR definition files.
+
+_Implementation is currently limited and do not support advanced filtering capabilities.
+It is only here to support codegen on the [Terminology package](/packages/foundation/terminology)_
+
 ### `writeFiles`
 
 Allows rendering the content in a different file than the root of the template file.
@@ -117,19 +163,3 @@ Example to write one file per domain resource, each with a class with the name o
   {{/writeFile}}
 {{/each}}
 ```
-
-### `safeNameAsVar`
-
-Returns a string that can safely be used as a Typescript variable name
-
-```handlebars
-{{#safeNameAsVar "12 ab"}} -> "twelveab"
-```
-
-### `recursiveFlatten`
-
-Depth-first recursive exploration of an array using a single attribute.
-
-### `elementImmediatePath`
-
-Return the immediate path for a FHIR [Element Definition](https://hl7.org/fhir/elementdefinition.html#ElementDefinition) path property.

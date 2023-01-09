@@ -1,0 +1,53 @@
+import type { TypedValueSet } from "./typed-valueset.js";
+import { CodeableConcept, Coding,  ValueSetExpansionContains } from "fhir/r4.js";
+
+{{#each (fhirPath data.valuesets "Bundle.entry.select(resource).ofType(ValueSet)")}}
+{{#if (notIn url (readLines "valuesets-excluded.txt"))}}
+{{#if (valueSetExpansions @root.data url)}}
+/**
+ * {{replaceNewLines description " "}}
+ * 
+ * {{ url }}
+ */
+export const {{safeNameAsVar name}}: TypedValueSet<{ {{#each (uniqBy (valueSetExpansions @root.data url) "display")}}"{{replace display '"' '\"'}}": "{{code}}"; {{/each}} }> = {
+  url: "{{url}}",
+
+  values: {
+    {{#each (uniqBy (valueSetExpansions @root.data url) "display")}}
+      "{{replace display '"' '\"'}}": {
+        code: "{{code}}",
+        coding: <Coding>{
+          code: "{{code}}",
+          display: "{{replace display '"' '\"'}}",
+          system: "{{system}}",
+        },
+        codeableConcept: <CodeableConcept>{
+          coding: [
+            {
+              code: "{{code}}",
+              display: "{{replace display '"' '\"'}}",
+              system: "{{system}}",
+            }
+          ],
+          text: "{{replace display '"' '\"'}}"
+        }
+      },
+
+    {{/each}}
+  },
+
+  expansion: <Array<ValueSetExpansionContains>>[
+    {{#each (valueSetExpansions @root.data url)}}
+      {
+        system: "{{system}}",
+        code: "{{code}}",
+        display: "{{replace display '"' '\"'}}",
+      },
+
+    {{/each}}
+  ]
+} as const;
+
+{{/if}}
+{{/if}}
+{{/each}}
