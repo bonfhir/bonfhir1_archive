@@ -12,7 +12,7 @@
     "build": "yarn clean && tsc --project tsconfig.build.json",
     "check": "prettier --check ./**/*.ts && eslint ./**/*.ts && tsc --noEmit",
     "clean": "rimraf dist/",
-    "codegen": "yarn workspace @bonfhir/codegen run dev run -d \"${PWD}/../../fhir/r4b/**/*.json\" -t \"${PWD}/r4b/**/*.hbs\" --helpers \"${PWD}/template-helpers.js\" -p 'prettier --write %files%'",
+    "codegen": "yarn workspace @bonfhir/codegen run dev run -d \"${PWD}/../../fhir/r4b/definitions/**/*.json\" -t \"${PWD}/r4b/**/*.hbs\" --helpers \"${PWD}/template-helpers.js\" -p 'prettier --write %files%'",
     "test": "jest"
   },
   "packageManager": "yarn@3.3.1",
