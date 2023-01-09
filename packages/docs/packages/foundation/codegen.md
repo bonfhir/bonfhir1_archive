@@ -4,6 +4,8 @@ sidebar_position: 4
 
 # Codegen
 
+![npm](https://img.shields.io/npm/v/@bonfhir/codegen)
+
 ```bash npm2yarn
 npm install @bonfhir/codegen
 ```
