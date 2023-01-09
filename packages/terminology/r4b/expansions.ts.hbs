@@ -1,0 +1,42 @@
+import type { TypedValueSet } from "./typed-valueset.js";
+import { CodeableConcept, Coding,  ValueSetExpansionContains } from "fhir/r4.js";
+
+{{#each (fhirPath data.expansions "Bundle.entry.select(resource).ofType(ValueSet)")}}
+{{#if (in url (readLines "expansions.txt"))}}
+/**
+ * {{replaceNewLines description " "}}
+ * 
+ * {{ url }}
+ */
+export const {{safeNameAsVar name}}: TypedValueSet<{ {{#each (uniqBy (recursiveFlatten expansion.contains "contains") "display")}}"{{safeNameAsVar display}}": "{{code}}"; {{/each}} }> = {
+  url: "{{url}}",
+  
+  values: {
+    {{#each (uniqBy (recursiveFlatten expansion.contains "contains") "code")}}
+      "{{safeNameAsVar display}}": {
+        code: "{{code}}",
+        coding: <Coding>{
+          code: "{{code}}",
+          display: "{{display}}",
+          system: "{{system}}",
+        },
+        codeableConcept: <CodeableConcept>{
+          coding: [
+            {
+              code: "{{code}}",
+              display: "{{display}}",
+              system: "{{system}}",
+            }
+          ],
+          text: "{{display}}"
+        }
+      },
+
+    {{/each}}
+  },
+
+  expansion: <Array<ValueSetExpansionContains>>{{JSONstringify expansion.contains}}
+} as const;
+
+{{/if}}
+{{/each}}
