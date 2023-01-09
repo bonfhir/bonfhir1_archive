@@ -3,7 +3,7 @@
 /**
  * Depth-first recursive exploration of an array using a single attribute.
  */
-export const recursiveFlatten = (fnCtx: any[], attribute: string) => {
+export const recursiveFlatten = <T>(fnCtx: T[], attribute: string): T[] => {
   if (!fnCtx) {
     return [];
   }

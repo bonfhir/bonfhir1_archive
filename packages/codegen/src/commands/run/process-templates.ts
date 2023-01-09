@@ -7,9 +7,13 @@ import { join as pathJoin, parse as pathParse } from "node:path";
 import { Context } from "./context.js";
 import { elementImmediatePath } from "./helpers/elementImmediatePath.js";
 import { fhirPath } from "./helpers/fhirPath.js";
+import { inFn } from "./helpers/in.js";
 import { notIn } from "./helpers/notIn.js";
+import { buildReadLines } from "./helpers/readLines.js";
 import { recursiveFlatten } from "./helpers/recursiveFlatten.js";
+import { replaceNewLines } from "./helpers/replaceNewLines.js";
 import { safeNameAsVar } from "./helpers/safeNameAsVar.js";
+import { valueSetExpansions } from "./helpers/valueSetExpansions.js";
 import { buildWriteFiles } from "./helpers/writeFiles.js";
 
 /**
@@ -48,12 +52,16 @@ function CreateTemplateProcessTask(templatePath: string): ListrTask<Context> {
           startCase: _.startCase,
           uniq: _.uniq,
           uniqBy: _.uniqBy,
-          fhirPath,
-          writeFiles: buildWriteFiles(ctx, templateParsedPath.dir),
-          safeNameAsVar,
-          recursiveFlatten,
           elementImmediatePath,
+          fhirPath,
+          in: inFn,
           notIn,
+          readLines: buildReadLines(templateParsedPath.dir),
+          recursiveFlatten,
+          replaceNewLines,
+          safeNameAsVar,
+          valueSetExpansions,
+          writeFiles: buildWriteFiles(ctx, templateParsedPath.dir),
           ...(ctx.helpers || {}),
         },
       });
