@@ -1655,7 +1655,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@bonfhir/codegen@^1.0.0-alpha.0, @bonfhir/codegen@workspace:packages/codegen":
+"@bonfhir/codegen@^1.0.0-alpha.1, @bonfhir/codegen@workspace:packages/codegen":
   version: 0.0.0-use.local
   resolution: "@bonfhir/codegen@workspace:packages/codegen"
   dependencies:
@@ -1693,11 +1693,11 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bonfhir/core@^1.0.0-alpha.0, @bonfhir/core@workspace:packages/core":
+"@bonfhir/core@^1.0.0-alpha.1, @bonfhir/core@workspace:packages/core":
   version: 0.0.0-use.local
   resolution: "@bonfhir/core@workspace:packages/core"
   dependencies:
-    "@bonfhir/codegen": ^1.0.0-alpha.0
+    "@bonfhir/codegen": ^1.0.0-alpha.1
     "@bonfhir/eslint-config": ^1.0.0
     "@bonfhir/prettier-config": ^1.0.0
     "@bonfhir/typescript-config": ^1.0.0
@@ -1757,7 +1757,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@bonfhir/medplum@workspace:packages/medplum"
   dependencies:
-    "@bonfhir/core": ^1.0.0-alpha.0
+    "@bonfhir/core": ^1.0.0-alpha.1
     "@bonfhir/eslint-config": ^1.0.0
     "@bonfhir/prettier-config": ^1.0.0
     "@bonfhir/typescript-config": ^1.0.0
@@ -1791,7 +1791,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@bonfhir/terminology@workspace:packages/terminology"
   dependencies:
-    "@bonfhir/codegen": ^1.0.0-alpha.0
+    "@bonfhir/codegen": ^1.0.0-alpha.1
     "@bonfhir/eslint-config": ^1.0.0
     "@bonfhir/prettier-config": ^1.0.0
     "@bonfhir/typescript-config": ^1.0.0
@@ -1813,8 +1813,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@bonfhir/test-support@workspace:packages/test-support"
   dependencies:
-    "@bonfhir/codegen": ^1.0.0-alpha.0
-    "@bonfhir/core": ^1.0.0-alpha.0
+    "@bonfhir/codegen": ^1.0.0-alpha.1
+    "@bonfhir/core": ^1.0.0-alpha.1
     "@bonfhir/eslint-config": ^1.0.0
     "@bonfhir/prettier-config": ^1.0.0
     "@bonfhir/typescript-config": ^1.0.0

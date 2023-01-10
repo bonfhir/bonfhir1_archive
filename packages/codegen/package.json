@@ -1,7 +1,7 @@
 {
   "name": "@bonfhir/codegen",
   "description": "Code generator based on FHIR definitions",
-  "version": "1.0.0-alpha.0",
+  "version": "1.0.0-alpha.1",
   "repository": "https://github.com/bonfhir/bonfhir.git",
   "license": "APACHE-2.0",
   "type": "module",
