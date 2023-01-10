@@ -1689,7 +1689,7 @@ __metadata:
     typescript: ^4.9.4
     yargs: ^17.6.2
   bin:
-    bonfhir-codegen: dist/index.js
+    bonfhir-codegen: index.js
   languageName: unknown
   linkType: soft
 

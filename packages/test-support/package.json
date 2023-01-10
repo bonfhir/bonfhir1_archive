@@ -5,21 +5,16 @@
   "repository": "https://github.com/bonfhir/bonfhir.git",
   "license": "APACHE-2.0",
   "type": "module",
-  "exports": {
-    "./r4b/index.js": "./dist/r4b/index.js"
-  },
   "scripts": {
     "build": "yarn clean && tsc --project tsconfig.build.json",
     "check": "prettier --check ./**/*.ts && eslint ./**/*.ts && tsc --noEmit",
     "clean": "rimraf dist/",
     "codegen": "yarn workspace @bonfhir/codegen run dev run -d \"${PWD}/../../fhir/r4b/definitions/**/*.json\" -t \"${PWD}/r4b/**/*.hbs\" --helpers \"${PWD}/template-helpers.js\" -p 'prettier --write %files%'",
+    "package:create": "node package.js pack",
+    "package:publish": "node package.js publish",
     "test": "jest"
   },
   "packageManager": "yarn@3.3.1",
-  "files": [
-    "dist/**/*",
-    "!**/*.tsbuildinfo"
-  ],
   "devDependencies": {
     "@bonfhir/codegen": "^1.0.0-alpha.0",
     "@bonfhir/eslint-config": "^1.0.0",

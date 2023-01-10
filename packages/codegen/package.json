@@ -6,20 +6,18 @@
   "license": "APACHE-2.0",
   "type": "module",
   "bin": {
-    "bonfhir-codegen": "dist/index.js"
+    "bonfhir-codegen": "index.js"
   },
   "scripts": {
     "build": "yarn clean && tsc --project tsconfig.build.json",
     "check": "prettier --check ./src && eslint ./src && tsc --noEmit",
     "clean": "rimraf dist/",
     "dev": "ts-node --esm --swc --transpileOnly src/index.ts",
+    "package:create": "node package.js pack",
+    "package:publish": "node package.js publish",
     "test": "jest"
   },
   "packageManager": "yarn@3.3.1",
-  "files": [
-    "dist/**/*",
-    "!**/*.tsbuildinfo"
-  ],
   "devDependencies": {
     "@bonfhir/eslint-config": "^1.0.0",
     "@bonfhir/prettier-config": "^1.0.0",

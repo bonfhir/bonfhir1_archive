@@ -15,13 +15,13 @@ This package is there to support a light usage of FHIR terminology.
 The subject is vast and complex, so for any important implementation a analysis must be made as to how to use FHIR
 terminology appropriately.
 
-Nevertheless, this library provides some out-of-the-box typings for the common [`ValueSet`](https://hl7.org/fhir/terminologies-valuesets.html)
-defines in the FHIR spec.
+Nevertheless, this library provides some out-of-the-box typings for the common [`ValueSets`](https://hl7.org/fhir/terminologies-valuesets.html)
+defined in the FHIR spec.
 
 ## ValueSet expansion
 
 For a lot of the [`ValueSet` defined in the FHIR Terminology](https://hl7.org/fhir/terminologies-valuesets.html), this provide
-a typed-version with all values, codes, `Coding`, and `CodeableConcept` exapnded and ready to be used.
+a typed-version with all values, codes, `Coding`, and `CodeableConcept` expanded and ready to be used.
 
 ```typescript
 import { build } from "@bonfhir/core/r4b";
