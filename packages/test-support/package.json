@@ -5,12 +5,6 @@
   "repository": "https://github.com/bonfhir/bonfhir.git",
   "license": "APACHE-2.0",
   "type": "module",
-  "exports": {
-    "r4b": {
-      "types": "./r4b/index.d.ts",
-      "import": "./r4b/index.js"
-    }
-  },
   "scripts": {
     "build": "yarn clean && tsc --project tsconfig.build.json",
     "check": "prettier --check ./**/*.ts && eslint ./**/*.ts && tsc --noEmit",
