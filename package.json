@@ -15,7 +15,8 @@
     "commit": "commit",
     "graph": "nx graph",
     "postinstall": "husky install",
-    "test": "lerna run --parallel test"
+    "test": "lerna run --parallel test",
+    "version": "yarn install && git stage yarn.lock"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.3.0",

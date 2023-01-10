@@ -3,7 +3,7 @@ import {
   bundleNavigator,
   ExtractResource,
   ResourceType,
-} from "@bonfhir/core/r4b/index.js";
+} from "@bonfhir/core/r4b";
 import { rand } from "@ngneat/falso";
 import fg from "fast-glob";
 import { Bundle, FhirResource } from "fhir/r4";

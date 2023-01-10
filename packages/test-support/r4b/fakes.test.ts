@@ -1,4 +1,4 @@
-import { DomainResourceTypes, ResourceType } from "@bonfhir/core/r4b/index.js";
+import { DomainResourceTypes, ResourceType } from "@bonfhir/core/r4b";
 import { DomainResource } from "fhir/r4";
 import { fake } from "./fakes";
 

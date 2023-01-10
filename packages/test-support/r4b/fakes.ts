@@ -1,5 +1,9 @@
-import type { ExtractResource, ResourceType } from "@bonfhir/core/r4b/index.js";
-import { build, buildCodeableConcept } from "@bonfhir/core/r4b/index.js";
+import {
+  build,
+  buildCodeableConcept,
+  ExtractResource,
+  ResourceType,
+} from "@bonfhir/core/r4b";
 import {
   rand,
   randAddress,
