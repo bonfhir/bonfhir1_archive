@@ -6,6 +6,15 @@ import { IdentifierTypeCodes } from "./valuesets.js";
  */
 export const KnownIdentifierSystems = Object.freeze({
   /**
+   * As defined by [RFC 3986](http://www.ietf.org/rfc/rfc3986.txt) (with many schemes defined in many RFCs).
+   * For OIDs and UUIDs, use the URN form ([urn:oid:](http://www.ietf.org/rfc/rfc3001.txt) (note: lowercase)
+   * and [urn:uuid:](http://www.ietf.org/rfc/rfc4122.txt)
+   */
+  URI: {
+    system: "urn:ietf:rfc:3986",
+  },
+
+  /**
    * An OID issued under DICOM OID rules. DICOM OIDs are represented as plain OIDs, with a prefix of "urn:oid:"
    */
   DICOMUniqueId: {
