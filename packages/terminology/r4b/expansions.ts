@@ -1,5 +1,5 @@
-import { CodeableConcept, Coding, ValueSetExpansionContains } from "fhir/r4.js";
-import type { TypedValueSet } from "./typed-valueset.js";
+import { CodeableConcept, Coding, ValueSetExpansionContains } from "fhir/r4";
+import type { TypedValueSet } from "./typed-valueset";
 
 /**
  * Domain provides codes that qualify the ActEncounterClass (ENC)

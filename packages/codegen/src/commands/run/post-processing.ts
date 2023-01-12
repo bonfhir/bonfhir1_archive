@@ -3,7 +3,7 @@ import Listr, { ListrTask } from "listr";
 import _ from "lodash";
 import { exec } from "node:child_process";
 import { promisify } from "node:util";
-import { Context } from "./context.js";
+import { Context } from "./context";
 
 const execAsync = promisify(exec);
 

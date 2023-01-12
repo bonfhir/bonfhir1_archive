@@ -1,6 +1,6 @@
 import fg from "fast-glob";
 import { ListrTask } from "listr";
-import { Context } from "./context.js";
+import { Context } from "./context";
 
 /**
  * Scan files for the list of template files to process.

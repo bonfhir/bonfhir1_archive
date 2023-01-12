@@ -1,4 +1,4 @@
-import { IdentifierTypeCodes } from "./valuesets.js";
+import { IdentifierTypeCodes } from "./valuesets";
 
 /**
  * Know Identifier Systems / Identifier Registry

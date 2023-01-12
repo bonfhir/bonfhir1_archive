@@ -1,12 +1,12 @@
 import chalk from "chalk";
 import Listr from "listr";
 import { CommandModule } from "yargs";
-import { Config, Context } from "./context.js";
-import { LoadDataJsonTask } from "./load-data-json.js";
-import { LoadHelpersTask } from "./load-helpers.js";
-import { PostProcessingTask } from "./post-processing.js";
-import { ProcessTemplatesTask } from "./process-templates.js";
-import { ScanTemplatesTask } from "./scan-templates.js";
+import { Config, Context } from "./context";
+import { LoadDataJsonTask } from "./load-data-json";
+import { LoadHelpersTask } from "./load-helpers";
+import { PostProcessingTask } from "./post-processing";
+import { ProcessTemplatesTask } from "./process-templates";
+import { ScanTemplatesTask } from "./scan-templates";
 
 export default <CommandModule<unknown, Config>>{
   command: "run",
