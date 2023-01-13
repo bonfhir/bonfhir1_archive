@@ -42354,6 +42354,33 @@ class ResourceSearchBuilderMedication {
   }
 
   /**
+   * Returns medications for a specific code
+   */
+  code(
+    value:
+      | {
+          system?: string | null | undefined;
+          code?: string | null | undefined;
+          value?: string | null | undefined;
+        }
+      | string
+      | Array<
+          | {
+              system?: string | null | undefined;
+              code?: string | null | undefined;
+              value?: string | null | undefined;
+            }
+          | string
+        >
+      | null
+      | undefined,
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderMedication {
+    this.builder.token("code", value, modifier);
+    return this;
+  }
+
+  /**
    * Returns medications in a batch with this expiration date
    */
   expirationdate(
