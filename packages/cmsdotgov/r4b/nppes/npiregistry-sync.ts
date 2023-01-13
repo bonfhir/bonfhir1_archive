@@ -16,6 +16,7 @@ import {
   ContactPointUse,
   KnownIdentifierSystems,
   NameUse,
+  OrganizationType,
   ProvenanceParticipantType,
 } from "@bonfhir/terminology/r4b";
 import {
@@ -332,19 +333,22 @@ export class NPIRegistrySyncSession {
         ],
         name: "Centers for Medicare & Medicaid Services",
         alias: ["CMS"],
+        type: [OrganizationType.values.Government.codeableConcept],
       })
     );
 
+    this.provenance = {
+      agent: [
+        {
+          type: ProvenanceParticipantType.values.Author.codeableConcept,
+          who: buildReferenceFromResource(this.cmsOrganization),
+        },
+      ],
+    };
+
     return {
       organization: this.cmsOrganization,
-      provenance: {
-        agent: [
-          {
-            type: ProvenanceParticipantType.values.Author.codeableConcept,
-            who: buildReferenceFromResource(this.cmsOrganization),
-          },
-        ],
-      },
+      provenance: this.provenance,
     };
   }
 

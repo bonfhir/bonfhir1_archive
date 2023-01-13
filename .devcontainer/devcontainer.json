@@ -60,6 +60,7 @@
           "core",
           "docs",
           "medplum",
+          "nih-nlm",
           "terminology",
           "test-support"
         ],
