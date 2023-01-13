@@ -1,4 +1,7 @@
-import { Bundle, CapabilityStatement, FhirResource } from "fhir/r4";
+import { Bundle, CapabilityStatement, FhirResource, Identifier } from "fhir/r4";
+import _ from "lodash";
+import { merge, MergeResult } from "./merge";
+import { fhirSearch } from "./search-builder";
 import { ExtractResource, ResourceType } from "./types";
 
 /**
@@ -282,4 +285,67 @@ export function decorateFhirRestfulClient(
     };
     return acc;
   }, {} as FhirRestfulClient);
+}
+
+export type CreateOrMergeAction = "return" | "replace" | "merge" | "add";
+
+/**
+ * Searches for an existing resource that have the same identifiers.
+ *  - if not found, create the new resource and return it
+ *  - if found, depending on the action, either:
+ *     - return the existing resource
+ *     - replace the existing resource and return the new one
+ *     - merge the 2 resources, update the resource if need be on the server, and return the final merged result
+ *     - or create another resource only if it is different the the existing one
+ */
+export async function createOr<
+  TResource extends FhirResource & { identifier?: Identifier[] }
+>(
+  action: CreateOrMergeAction,
+  client: FhirRestfulClient,
+  resource: TResource,
+  search?: string | null | undefined
+): Promise<MergeResult<TResource>> {
+  if (!search && !resource.identifier?.length) {
+    throw new Error(
+      `Unable to createOr${action} resource of type ${resource.resourceType} as it has no identifier.`
+    );
+  }
+
+  const current = (
+    await client.search(
+      resource.resourceType,
+      search || fhirSearch().token("identifier", resource.identifier).href
+    )
+  )?.entry?.[0]?.resource as TResource | undefined;
+
+  if (!current) {
+    return [await client.create(resource), true];
+  }
+
+  if (action === "return") {
+    return [current, false];
+  }
+
+  if (action === "replace") {
+    if (_.isEqual(_.omit(current, ["id"]), resource)) {
+      return [current, false];
+    }
+    resource.id = current.id;
+    return [await client.update(resource), true];
+  }
+
+  if (action === "add") {
+    if (_.isEqual(_.omit(current, ["id"]), resource)) {
+      return [current, false];
+    }
+    return [await client.create(resource), true];
+  }
+
+  const [merged, isUpdated] = merge({ current, incoming: resource });
+  if (isUpdated) {
+    return [await client.update(merged), true];
+  }
+
+  return [merged, false];
 }

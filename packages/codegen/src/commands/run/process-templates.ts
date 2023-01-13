@@ -4,17 +4,17 @@ import handlebarsHelpers from "handlebars-helpers";
 import Listr, { ListrTask } from "listr";
 import _ from "lodash";
 import { join as pathJoin, parse as pathParse } from "node:path";
-import { Context } from "./context.js";
-import { elementImmediatePath } from "./helpers/elementImmediatePath.js";
-import { fhirPath } from "./helpers/fhirPath.js";
-import { inFn } from "./helpers/in.js";
-import { notIn } from "./helpers/notIn.js";
-import { buildReadLines } from "./helpers/readLines.js";
-import { recursiveFlatten } from "./helpers/recursiveFlatten.js";
-import { replaceNewLines } from "./helpers/replaceNewLines.js";
-import { safeNameAsVar } from "./helpers/safeNameAsVar.js";
-import { valueSetExpansions } from "./helpers/valueSetExpansions.js";
-import { buildWriteFiles } from "./helpers/writeFiles.js";
+import { Context } from "./context";
+import { elementImmediatePath } from "./helpers/elementImmediatePath";
+import { fhirPath } from "./helpers/fhirPath";
+import { inFn } from "./helpers/in";
+import { notIn } from "./helpers/notIn";
+import { buildReadLines } from "./helpers/readLines";
+import { recursiveFlatten } from "./helpers/recursiveFlatten";
+import { replaceNewLines } from "./helpers/replaceNewLines";
+import { safeNameAsVar } from "./helpers/safeNameAsVar";
+import { valueSetExpansions } from "./helpers/valueSetExpansions";
+import { buildWriteFiles } from "./helpers/writeFiles";
 
 /**
  * For each of the template files, execute a subtask to render the template by passing

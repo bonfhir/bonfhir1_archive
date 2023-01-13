@@ -2,7 +2,7 @@ import fg from "fast-glob";
 import { readFile } from "fs/promises";
 import { ListrTask } from "listr";
 import { parse as pathParse } from "node:path";
-import { Context } from "./context.js";
+import { Context } from "./context";
 
 /**
  * This task loads data file as JSON

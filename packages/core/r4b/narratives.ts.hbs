@@ -130,7 +130,7 @@ export function narrative<TResourceType extends FhirResource>(resource: TResourc
 function narrative{{type}}(resource: {{type}}): Narrative {
   return buildNarrative([
     {{#each (fhirPath this "StructureDefinition/SummaryElements")}}
-      {{#if (notIn (elementImmediatePath path) "meta,implicitRules,language,text,contained,extension,modifierExtension")}}
+      {{#if (notIn (elementImmediatePath path) "id,meta,implicitRules,language,text,contained,extension,modifierExtension")}}
         {
             attr: "{{startCase (elementImmediatePath path)}}",
             value: resource.{{elementImmediatePath path}},

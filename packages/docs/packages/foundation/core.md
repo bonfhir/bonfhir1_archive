@@ -163,6 +163,49 @@ const decoratedClient = decorateFhirRestfulClient(client, interceptor);
 await decoratedClient.read(...);
 ```
 
+### `createOr` utility
+
+Often time there is a need to create, add, update or merge a resource on a server depending on it's prior existence.
+This is a very common occurrence in data integration scenarios / syncing tasks.
+
+The `core` package provide a utility to help with those operations:
+
+```typescript
+import { build, createOr, resourceSearch } from "@bonfhir/core/r4b";
+import { KnownIdentifierSystems } from "@bonfhir/terminology/r4b";
+
+
+const resource = build("Patient", {
+  identifier: [
+    {
+      ...KnownIdentifierSystems.USSocialSecurityNumber,
+      value: "000000000",
+    },
+  ],
+  ...
+});
+
+// Will return the existing resource on the server if it exists, or create a new one
+// Search is performed by default using the identifiers.
+const [mergedResource, wasMerged] = createOr("return", client, resource);
+
+// Will replace entirely the existing resource on the server if it exists, or create a new one
+// Search is performed by default using the identifiers.
+const [mergedResource, wasMerged] = createOr("replace", client, resource);
+
+// Will merge the existing resource on the server with the one here, or create a new one if not found
+// Search is performed by default using the identifiers.
+const [mergedResource, wasMerged] = createOr("merge", client, resource);
+
+// Will add a new resource, unless there is an existing one with a strict equality except for the `id` property (avoid strict duplicates).
+// Search is performed by default using the identifiers.
+const [mergedResource, wasMerged] = createOr("add", client, resource);
+
+// The search can be customized (instead of using the default identifiers)
+const [mergedResource, wasMerged] = createOr("merge", client, resource, resourceSearch("Patient").name("John Doe").href);
+
+```
+
 ## FHIR Search
 
 There are utility functions designed to help creating [FHIR Search](https://hl7.org/fhir/search.html) URL query parameters.

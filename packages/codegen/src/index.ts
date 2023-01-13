@@ -2,7 +2,7 @@
 
 import chalk from "chalk";
 import yargs from "yargs";
-import run from "./commands/run/index.js";
+import run from "./commands/run/index";
 
 try {
   yargs()

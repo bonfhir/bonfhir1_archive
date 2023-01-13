@@ -9,13 +9,13 @@
   ],
   "scripts": {
     "build": "lerna run build",
-    "check": "lerna run --parallel check",
-    "clean": "lerna run --parallel clean",
-    "codegen": "lerna run --parallel codegen",
+    "check": "lerna run check",
+    "clean": "lerna run clean",
+    "codegen": "lerna run codegen",
     "commit": "commit",
     "graph": "nx graph",
     "postinstall": "husky install",
-    "test": "lerna run --parallel test",
+    "test": "lerna run test",
     "version": "yarn install && git stage yarn.lock"
   },
   "devDependencies": {

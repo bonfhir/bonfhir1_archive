@@ -1,0 +1,1 @@
+{"resourceType":"Bundle","type":"searchset","entry":[],"link":[{"relation":"self","url":"http://localhost:8103/fhir/R4/Location?_count=20&identifier=https%3A%2F%2Fwww.usps.com%2F%7CNC"},{"relation":"first","url":"http://localhost:8103/fhir/R4/Location?_count=20&_offset=0&identifier=https%3A%2F%2Fwww.usps.com%2F%7CNC"}]}

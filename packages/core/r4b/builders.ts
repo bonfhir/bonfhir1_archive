@@ -1,4 +1,4 @@
-import { CodeableConcept, DomainResource, Reference } from "fhir/r4";
+import { CodeableConcept, Reference } from "fhir/r4";
 import { narrative } from "./narratives";
 import {
   ExtractResource,
@@ -84,10 +84,5 @@ export function buildReferenceFromResource(
   return {
     reference: `${resource.resourceType}/${resource.id}`,
     type: resource.resourceType,
-    display:
-      (resource as DomainResource).text?.div ||
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      (resource as any).text ||
-      undefined,
   };
 }

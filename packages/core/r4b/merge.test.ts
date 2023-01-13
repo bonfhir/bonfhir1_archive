@@ -6,65 +6,65 @@ describe("merge", () => {
       const current = { id: "1234" };
       const incoming = undefined;
 
-      const result = mergeFhirResources({
+      const [merged, isUpdated] = mergeFhirResources({
         current,
         incoming,
       });
 
-      expect(result.isUpdated).toBeFalsy();
-      expect(result.merged).toEqual(current);
+      expect(isUpdated).toBeFalsy();
+      expect(merged).toEqual(current);
     });
 
     it("updates and returns the cloned incoming value if no current value is given", () => {
       const current = undefined;
       const incoming = { id: "1234" };
 
-      const result = mergeFhirResources({
+      const [merged, isUpdated] = mergeFhirResources({
         current,
         incoming,
       });
 
-      expect(result.isUpdated).toBeTruthy();
-      expect(result.merged).toEqual(incoming);
+      expect(isUpdated).toBeTruthy();
+      expect(merged).toEqual(incoming);
     });
 
     it("returns a new resource with incoming properties superseding current properties", () => {
       const current = { id: "1234" };
       const incoming = { id: "5678" };
 
-      const result = mergeFhirResources({
+      const [merged, isUpdated] = mergeFhirResources({
         current,
         incoming,
       });
 
-      expect(result.isUpdated).toBeTruthy();
-      expect(result.merged).toEqual(incoming);
+      expect(isUpdated).toBeTruthy();
+      expect(merged).toEqual(incoming);
     });
 
     it("returns a new resource with properties of both current and incoming values", () => {
       const current = { id: "1234", active: true };
       const incoming: Record<string, unknown> = { id: "5678", number: 3 };
 
-      const result = mergeFhirResources({
+      const [merged, isUpdated] = mergeFhirResources({
         current,
         incoming,
       });
 
-      expect(result.isUpdated).toBeTruthy();
-      expect(result.merged).toEqual({ ...current, ...incoming });
+      expect(isUpdated).toBeTruthy();
+      expect(merged).toEqual({ ...current, ...incoming });
     });
 
     it("combines the arrays if both contain value objects (no ids)", () => {
       const current = { id: "1234", elements: [1, 2, 3] };
       const incoming = { id: "5678", elements: [1, 3, 4] };
 
-      const result = mergeFhirResources({
+      const [merged, isUpdated] = mergeFhirResources({
         current,
         incoming,
       });
 
-      expect(result.isUpdated).toBeTruthy();
-      expect(result.merged).toEqual({
+      expect(isUpdated).toBeTruthy();
+      expect(merged).toEqual({
         id: "5678",
         elements: [1, 2, 3, 4],
       });
@@ -80,13 +80,13 @@ describe("merge", () => {
         ],
       };
 
-      const result = mergeFhirResources({
+      const [merged, isUpdated] = mergeFhirResources({
         current,
         incoming,
       });
 
-      expect(result.isUpdated).toBeTruthy();
-      expect(result.merged).toEqual({
+      expect(isUpdated).toBeTruthy();
+      expect(merged).toEqual({
         id: "5678",
         elements: [
           { id: "1", value: "foo" },

@@ -55,6 +55,7 @@
           }
         },
         "conventionalCommits.scopes": [
+          "cmsdotgov",
           "codegen",
           "core",
           "docs",

@@ -1,5 +1,5 @@
-import type { TypedValueSet } from "./typed-valueset.js";
-import { CodeableConcept, Coding,  ValueSetExpansionContains } from "fhir/r4.js";
+import type { TypedValueSet } from "./typed-valueset";
+import { CodeableConcept, Coding,  ValueSetExpansionContains } from "fhir/r4";
 
 {{#each (fhirPath data.valuesets "Bundle.entry.select(resource).ofType(ValueSet)")}}
 {{#if (notIn url (readLines "valuesets-excluded.txt"))}}

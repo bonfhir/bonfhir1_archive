@@ -2324,20 +2324,6 @@ export function narrative<TResourceType extends FhirResource>(
 function narrativeAccount(resource: Account): Narrative {
   return buildNarrative([
     {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
-    {
       attr: "Identifier",
       value: resource.identifier,
       max: "*",
@@ -2410,20 +2396,6 @@ function narrativeAccount(resource: Account): Narrative {
 
 function narrativeActivityDefinition(resource: ActivityDefinition): Narrative {
   return buildNarrative([
-    {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
     {
       attr: "Url",
       value: resource.url,
@@ -2534,20 +2506,6 @@ function narrativeAdministrableProductDefinition(
 ): Narrative {
   return buildNarrative([
     {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
-    {
       attr: "Identifier",
       value: resource.identifier,
       max: "*",
@@ -2627,20 +2585,6 @@ function narrativeAdministrableProductDefinition(
 
 function narrativeAdverseEvent(resource: AdverseEvent): Narrative {
   return buildNarrative([
-    {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
     {
       attr: "Identifier",
       value: resource.identifier,
@@ -2821,20 +2765,6 @@ function narrativeAdverseEvent(resource: AdverseEvent): Narrative {
 function narrativeAllergyIntolerance(resource: AllergyIntolerance): Narrative {
   return buildNarrative([
     {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
-    {
       attr: "Identifier",
       value: resource.identifier,
       max: "*",
@@ -2905,20 +2835,6 @@ function narrativeAllergyIntolerance(resource: AllergyIntolerance): Narrative {
 function narrativeAppointment(resource: Appointment): Narrative {
   return buildNarrative([
     {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
-    {
       attr: "Identifier",
       value: resource.identifier,
       max: "*",
@@ -2986,20 +2902,6 @@ function narrativeAppointmentResponse(
 ): Narrative {
   return buildNarrative([
     {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
-    {
       attr: "Identifier",
       value: resource.identifier,
       max: "*",
@@ -3049,20 +2951,6 @@ function narrativeAppointmentResponse(
 function narrativeAuditEvent(resource: AuditEvent): Narrative {
   return buildNarrative([
     {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
-    {
       attr: "Type",
       value: resource.type,
       max: "1",
@@ -3109,20 +2997,6 @@ function narrativeAuditEvent(resource: AuditEvent): Narrative {
 
 function narrativeBasic(resource: Basic): Narrative {
   return buildNarrative([
-    {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
     {
       attr: "Identifier",
       value: resource.identifier,
@@ -3173,20 +3047,6 @@ function narrativeBiologicallyDerivedProduct(
 ): Narrative {
   return buildNarrative([
     {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
-    {
       attr: "Identifier",
       value: resource.identifier,
       max: "*",
@@ -3197,20 +3057,6 @@ function narrativeBiologicallyDerivedProduct(
 
 function narrativeBodyStructure(resource: BodyStructure): Narrative {
   return buildNarrative([
-    {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
     {
       attr: "Identifier",
       value: resource.identifier,
@@ -3257,20 +3103,6 @@ function narrativeCapabilityStatement(
   resource: CapabilityStatement
 ): Narrative {
   return buildNarrative([
-    {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
     {
       attr: "Url",
       value: resource.url,
@@ -3429,20 +3261,6 @@ function narrativeCapabilityStatement(
 
 function narrativeCarePlan(resource: CarePlan): Narrative {
   return buildNarrative([
-    {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
     {
       attr: "Identifier",
       value: resource.identifier,
@@ -3610,20 +3428,6 @@ function narrativeCarePlan(resource: CarePlan): Narrative {
 function narrativeCareTeam(resource: CareTeam): Narrative {
   return buildNarrative([
     {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
-    {
       attr: "Identifier",
       value: resource.identifier,
       max: "*",
@@ -3689,20 +3493,6 @@ function narrativeCareTeam(resource: CareTeam): Narrative {
 function narrativeCatalogEntry(resource: CatalogEntry): Narrative {
   return buildNarrative([
     {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
-    {
       attr: "Identifier",
       value: resource.identifier,
       max: "*",
@@ -3740,20 +3530,6 @@ function narrativeCatalogEntry(resource: CatalogEntry): Narrative {
 
 function narrativeChargeItem(resource: ChargeItem): Narrative {
   return buildNarrative([
-    {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
     {
       attr: "Identifier",
       value: resource.identifier,
@@ -3846,20 +3622,6 @@ function narrativeChargeItemDefinition(
   resource: ChargeItemDefinition
 ): Narrative {
   return buildNarrative([
-    {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
     {
       attr: "Url",
       value: resource.url,
@@ -3978,20 +3740,6 @@ function narrativeChargeItemDefinition(
 function narrativeCitation(resource: Citation): Narrative {
   return buildNarrative([
     {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
-    {
       attr: "Url",
       value: resource.url,
       max: "1",
@@ -4075,20 +3823,6 @@ function narrativeCitation(resource: Citation): Narrative {
 function narrativeClaim(resource: Claim): Narrative {
   return buildNarrative([
     {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
-    {
       attr: "Status",
       value: resource.status,
       max: "1",
@@ -4167,20 +3901,6 @@ function narrativeClaim(resource: Claim): Narrative {
 function narrativeClaimResponse(resource: ClaimResponse): Narrative {
   return buildNarrative([
     {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
-    {
       attr: "Status",
       value: resource.status,
       max: "1",
@@ -4248,20 +3968,6 @@ function narrativeClaimResponse(resource: ClaimResponse): Narrative {
 
 function narrativeClinicalImpression(resource: ClinicalImpression): Narrative {
   return buildNarrative([
-    {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
     {
       attr: "Identifier",
       value: resource.identifier,
@@ -4344,20 +4050,6 @@ function narrativeClinicalUseDefinition(
   resource: ClinicalUseDefinition
 ): Narrative {
   return buildNarrative([
-    {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
     {
       attr: "Identifier",
       value: resource.identifier,
@@ -4443,20 +4135,6 @@ function narrativeClinicalUseDefinition(
 
 function narrativeCodeSystem(resource: CodeSystem): Narrative {
   return buildNarrative([
-    {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
     {
       attr: "Url",
       value: resource.url,
@@ -4601,20 +4279,6 @@ function narrativeCodeSystem(resource: CodeSystem): Narrative {
 function narrativeCommunication(resource: Communication): Narrative {
   return buildNarrative([
     {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
-    {
       attr: "Identifier",
       value: resource.identifier,
       max: "*",
@@ -4725,20 +4389,6 @@ function narrativeCommunicationRequest(
   resource: CommunicationRequest
 ): Narrative {
   return buildNarrative([
-    {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
     {
       attr: "Identifier",
       value: resource.identifier,
@@ -4865,20 +4515,6 @@ function narrativeCompartmentDefinition(
 ): Narrative {
   return buildNarrative([
     {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
-    {
       attr: "Url",
       value: resource.url,
       max: "1",
@@ -4955,20 +4591,6 @@ function narrativeCompartmentDefinition(
 
 function narrativeComposition(resource: Composition): Narrative {
   return buildNarrative([
-    {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
     {
       attr: "Identifier",
       value: resource.identifier,
@@ -5066,20 +4688,6 @@ function narrativeComposition(resource: Composition): Narrative {
 function narrativeConceptMap(resource: ConceptMap): Narrative {
   return buildNarrative([
     {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
-    {
       attr: "Url",
       value: resource.url,
       max: "1",
@@ -5156,20 +4764,6 @@ function narrativeConceptMap(resource: ConceptMap): Narrative {
 
 function narrativeCondition(resource: Condition): Narrative {
   return buildNarrative([
-    {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
     {
       attr: "Identifier",
       value: resource.identifier,
@@ -5261,20 +4855,6 @@ function narrativeCondition(resource: Condition): Narrative {
 function narrativeConsent(resource: Consent): Narrative {
   return buildNarrative([
     {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
-    {
       attr: "Identifier",
       value: resource.identifier,
       max: "*",
@@ -5361,20 +4941,6 @@ function narrativeConsent(resource: Consent): Narrative {
 function narrativeContract(resource: Contract): Narrative {
   return buildNarrative([
     {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
-    {
       attr: "Identifier",
       value: resource.identifier,
       max: "*",
@@ -5442,20 +5008,6 @@ function narrativeContract(resource: Contract): Narrative {
 
 function narrativeCoverage(resource: Coverage): Narrative {
   return buildNarrative([
-    {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
     {
       attr: "Identifier",
       value: resource.identifier,
@@ -5559,20 +5111,6 @@ function narrativeCoverageEligibilityRequest(
 ): Narrative {
   return buildNarrative([
     {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
-    {
       attr: "Status",
       value: resource.status,
       max: "1",
@@ -5615,20 +5153,6 @@ function narrativeCoverageEligibilityResponse(
   resource: CoverageEligibilityResponse
 ): Narrative {
   return buildNarrative([
-    {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
     {
       attr: "Status",
       value: resource.status,
@@ -5687,20 +5211,6 @@ function narrativeCoverageEligibilityResponse(
 
 function narrativeDetectedIssue(resource: DetectedIssue): Narrative {
   return buildNarrative([
-    {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
     {
       attr: "Identifier",
       value: resource.identifier,
@@ -5762,20 +5272,6 @@ function narrativeDetectedIssue(resource: DetectedIssue): Narrative {
 function narrativeDevice(resource: Device): Narrative {
   return buildNarrative([
     {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
-    {
       attr: "Udi Carrier",
       value: resource.udiCarrier,
       max: "*",
@@ -5799,20 +5295,6 @@ function narrativeDevice(resource: Device): Narrative {
 function narrativeDeviceDefinition(resource: DeviceDefinition): Narrative {
   return buildNarrative([
     {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
-    {
       attr: "Safety",
       value: resource.safety,
       max: "*",
@@ -5834,20 +5316,6 @@ function narrativeDeviceDefinition(resource: DeviceDefinition): Narrative {
 
 function narrativeDeviceMetric(resource: DeviceMetric): Narrative {
   return buildNarrative([
-    {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
     {
       attr: "Identifier",
       value: resource.identifier,
@@ -5919,20 +5387,6 @@ function narrativeDeviceMetric(resource: DeviceMetric): Narrative {
 
 function narrativeDeviceRequest(resource: DeviceRequest): Narrative {
   return buildNarrative([
-    {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
     {
       attr: "Identifier",
       value: resource.identifier,
@@ -6092,20 +5546,6 @@ function narrativeDeviceRequest(resource: DeviceRequest): Narrative {
 function narrativeDeviceUseStatement(resource: DeviceUseStatement): Narrative {
   return buildNarrative([
     {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
-    {
       attr: "Identifier",
       value: resource.identifier,
       max: "*",
@@ -6218,20 +5658,6 @@ function narrativeDeviceUseStatement(resource: DeviceUseStatement): Narrative {
 function narrativeDiagnosticReport(resource: DiagnosticReport): Narrative {
   return buildNarrative([
     {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
-    {
       attr: "Identifier",
       value: resource.identifier,
       max: "*",
@@ -6329,20 +5755,6 @@ function narrativeDiagnosticReport(resource: DiagnosticReport): Narrative {
 function narrativeDocumentManifest(resource: DocumentManifest): Narrative {
   return buildNarrative([
     {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
-    {
       attr: "Master Identifier",
       value: resource.masterIdentifier,
       max: "1",
@@ -6416,20 +5828,6 @@ function narrativeDocumentManifest(resource: DocumentManifest): Narrative {
 
 function narrativeDocumentReference(resource: DocumentReference): Narrative {
   return buildNarrative([
-    {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
     {
       attr: "Master Identifier",
       value: resource.masterIdentifier,
@@ -6538,20 +5936,6 @@ function narrativeDocumentReference(resource: DocumentReference): Narrative {
 function narrativeEncounter(resource: Encounter): Narrative {
   return buildNarrative([
     {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
-    {
       attr: "Identifier",
       value: resource.identifier,
       max: "*",
@@ -6651,20 +6035,6 @@ function narrativeEncounter(resource: Encounter): Narrative {
 function narrativeEndpoint(resource: Endpoint): Narrative {
   return buildNarrative([
     {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
-    {
       attr: "Identifier",
       value: resource.identifier,
       max: "*",
@@ -6727,20 +6097,6 @@ function narrativeEndpoint(resource: Endpoint): Narrative {
 function narrativeEnrollmentRequest(resource: EnrollmentRequest): Narrative {
   return buildNarrative([
     {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
-    {
       attr: "Status",
       value: resource.status,
       max: "1",
@@ -6752,20 +6108,6 @@ function narrativeEnrollmentRequest(resource: EnrollmentRequest): Narrative {
 function narrativeEnrollmentResponse(resource: EnrollmentResponse): Narrative {
   return buildNarrative([
     {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
-    {
       attr: "Status",
       value: resource.status,
       max: "1",
@@ -6776,20 +6118,6 @@ function narrativeEnrollmentResponse(resource: EnrollmentResponse): Narrative {
 
 function narrativeEpisodeOfCare(resource: EpisodeOfCare): Narrative {
   return buildNarrative([
-    {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
     {
       attr: "Status",
       value: resource.status,
@@ -6837,20 +6165,6 @@ function narrativeEpisodeOfCare(resource: EpisodeOfCare): Narrative {
 
 function narrativeEventDefinition(resource: EventDefinition): Narrative {
   return buildNarrative([
-    {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
     {
       attr: "Url",
       value: resource.url,
@@ -6953,20 +6267,6 @@ function narrativeEventDefinition(resource: EventDefinition): Narrative {
 function narrativeEvidence(resource: Evidence): Narrative {
   return buildNarrative([
     {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
-    {
       attr: "Url",
       value: resource.url,
       max: "1",
@@ -7038,20 +6338,6 @@ function narrativeEvidence(resource: Evidence): Narrative {
 function narrativeEvidenceReport(resource: EvidenceReport): Narrative {
   return buildNarrative([
     {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
-    {
       attr: "Url",
       value: resource.url,
       max: "1",
@@ -7116,20 +6402,6 @@ function narrativeEvidenceReport(resource: EvidenceReport): Narrative {
 
 function narrativeEvidenceVariable(resource: EvidenceVariable): Narrative {
   return buildNarrative([
-    {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
     {
       attr: "Url",
       value: resource.url,
@@ -7220,20 +6492,6 @@ function narrativeEvidenceVariable(resource: EvidenceVariable): Narrative {
 function narrativeExampleScenario(resource: ExampleScenario): Narrative {
   return buildNarrative([
     {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
-    {
       attr: "Url",
       value: resource.url,
       max: "1",
@@ -7306,20 +6564,6 @@ function narrativeExplanationOfBenefit(
   resource: ExplanationOfBenefit
 ): Narrative {
   return buildNarrative([
-    {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
     {
       attr: "Status",
       value: resource.status,
@@ -7406,20 +6650,6 @@ function narrativeFamilyMemberHistory(
   resource: FamilyMemberHistory
 ): Narrative {
   return buildNarrative([
-    {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
     {
       attr: "Identifier",
       value: resource.identifier,
@@ -7526,20 +6756,6 @@ function narrativeFamilyMemberHistory(
 function narrativeFlag(resource: Flag): Narrative {
   return buildNarrative([
     {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
-    {
       attr: "Identifier",
       value: resource.identifier,
       max: "*",
@@ -7617,20 +6833,6 @@ function narrativeFlag(resource: Flag): Narrative {
 function narrativeGoal(resource: Goal): Narrative {
   return buildNarrative([
     {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
-    {
       attr: "Lifecycle Status",
       value: resource.lifecycleStatus,
       max: "1",
@@ -7698,20 +6900,6 @@ function narrativeGoal(resource: Goal): Narrative {
 
 function narrativeGraphDefinition(resource: GraphDefinition): Narrative {
   return buildNarrative([
-    {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
     {
       attr: "Url",
       value: resource.url,
@@ -7784,20 +6972,6 @@ function narrativeGraphDefinition(resource: GraphDefinition): Narrative {
 function narrativeGroup(resource: Group): Narrative {
   return buildNarrative([
     {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
-    {
       attr: "Identifier",
       value: resource.identifier,
       max: "*",
@@ -7859,20 +7033,6 @@ function narrativeGroup(resource: Group): Narrative {
 function narrativeGuidanceResponse(resource: GuidanceResponse): Narrative {
   return buildNarrative([
     {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
-    {
       attr: "Request Identifier",
       value: resource.requestIdentifier,
       max: "1",
@@ -7895,20 +7055,6 @@ function narrativeGuidanceResponse(resource: GuidanceResponse): Narrative {
 
 function narrativeHealthcareService(resource: HealthcareService): Narrative {
   return buildNarrative([
-    {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
     {
       attr: "Identifier",
       value: resource.identifier,
@@ -7980,20 +7126,6 @@ function narrativeHealthcareService(resource: HealthcareService): Narrative {
 
 function narrativeImagingStudy(resource: ImagingStudy): Narrative {
   return buildNarrative([
-    {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
     {
       attr: "Identifier",
       value: resource.identifier,
@@ -8169,20 +7301,6 @@ function narrativeImagingStudy(resource: ImagingStudy): Narrative {
 function narrativeImmunization(resource: Immunization): Narrative {
   return buildNarrative([
     {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
-    {
       attr: "Status",
       value: resource.status,
       max: "1",
@@ -8235,20 +7353,6 @@ function narrativeImmunizationEvaluation(
 ): Narrative {
   return buildNarrative([
     {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
-    {
       attr: "Status",
       value: resource.status,
       max: "1",
@@ -8292,20 +7396,6 @@ function narrativeImmunizationRecommendation(
 ): Narrative {
   return buildNarrative([
     {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
-    {
       attr: "Identifier",
       value: resource.identifier,
       max: "*",
@@ -8339,20 +7429,6 @@ function narrativeImplementationGuide(
   resource: ImplementationGuide
 ): Narrative {
   return buildNarrative([
-    {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
     {
       attr: "Url",
       value: resource.url,
@@ -8455,20 +7531,6 @@ function narrativeImplementationGuide(
 function narrativeIngredient(resource: Ingredient): Narrative {
   return buildNarrative([
     {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
-    {
       attr: "Identifier",
       value: resource.identifier,
       max: "1",
@@ -8529,20 +7591,6 @@ function narrativeIngredient(resource: Ingredient): Narrative {
 function narrativeInsurancePlan(resource: InsurancePlan): Narrative {
   return buildNarrative([
     {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
-    {
       attr: "Identifier",
       value: resource.identifier,
       max: "*",
@@ -8598,20 +7646,6 @@ function narrativeInsurancePlan(resource: InsurancePlan): Narrative {
 
 function narrativeInvoice(resource: Invoice): Narrative {
   return buildNarrative([
-    {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
     {
       attr: "Identifier",
       value: resource.identifier,
@@ -8678,20 +7712,6 @@ function narrativeInvoice(resource: Invoice): Narrative {
 
 function narrativeLibrary(resource: Library): Narrative {
   return buildNarrative([
-    {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
     {
       attr: "Url",
       value: resource.url,
@@ -8794,20 +7814,6 @@ function narrativeLibrary(resource: Library): Narrative {
 function narrativeLinkage(resource: Linkage): Narrative {
   return buildNarrative([
     {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
-    {
       attr: "Active",
       value: resource.active,
       max: "1",
@@ -8837,20 +7843,6 @@ function narrativeLinkage(resource: Linkage): Narrative {
 
 function narrativeList(resource: List): Narrative {
   return buildNarrative([
-    {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
     {
       attr: "Status",
       value: resource.status,
@@ -8914,20 +7906,6 @@ function narrativeList(resource: List): Narrative {
 
 function narrativeLocation(resource: Location): Narrative {
   return buildNarrative([
-    {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
     {
       attr: "Identifier",
       value: resource.identifier,
@@ -8993,20 +7971,6 @@ function narrativeManufacturedItemDefinition(
 ): Narrative {
   return buildNarrative([
     {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
-    {
       attr: "Identifier",
       value: resource.identifier,
       max: "*",
@@ -9056,20 +8020,6 @@ function narrativeManufacturedItemDefinition(
 
 function narrativeMeasure(resource: Measure): Narrative {
   return buildNarrative([
-    {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
     {
       attr: "Url",
       value: resource.url,
@@ -9226,20 +8176,6 @@ function narrativeMeasure(resource: Measure): Narrative {
 function narrativeMeasureReport(resource: MeasureReport): Narrative {
   return buildNarrative([
     {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
-    {
       attr: "Identifier",
       value: resource.identifier,
       max: "*",
@@ -9320,20 +8256,6 @@ function narrativeMeasureReport(resource: MeasureReport): Narrative {
 
 function narrativeMedia(resource: Media): Narrative {
   return buildNarrative([
-    {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
     {
       attr: "Identifier",
       value: resource.identifier,
@@ -9501,20 +8423,6 @@ function narrativeMedia(resource: Media): Narrative {
 function narrativeMedication(resource: Medication): Narrative {
   return buildNarrative([
     {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
-    {
       attr: "Identifier",
       value: resource.identifier,
       max: "*",
@@ -9554,20 +8462,6 @@ function narrativeMedicationAdministration(
   resource: MedicationAdministration
 ): Narrative {
   return buildNarrative([
-    {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
     {
       attr: "Instantiates",
       value: resource.instantiates,
@@ -9616,20 +8510,6 @@ function narrativeMedicationAdministration(
 function narrativeMedicationDispense(resource: MedicationDispense): Narrative {
   return buildNarrative([
     {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
-    {
       attr: "Status",
       value: resource.status,
       max: "1",
@@ -9660,20 +8540,6 @@ function narrativeMedicationKnowledge(
   resource: MedicationKnowledge
 ): Narrative {
   return buildNarrative([
-    {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
     {
       attr: "Code",
       value: resource.code,
@@ -9715,20 +8581,6 @@ function narrativeMedicationKnowledge(
 
 function narrativeMedicationRequest(resource: MedicationRequest): Narrative {
   return buildNarrative([
-    {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
     {
       attr: "Status",
       value: resource.status,
@@ -9833,20 +8685,6 @@ function narrativeMedicationStatement(
 ): Narrative {
   return buildNarrative([
     {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
-    {
       attr: "Identifier",
       value: resource.identifier,
       max: "*",
@@ -9929,20 +8767,6 @@ function narrativeMedicinalProductDefinition(
   resource: MedicinalProductDefinition
 ): Narrative {
   return buildNarrative([
-    {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
     {
       attr: "Identifier",
       value: resource.identifier,
@@ -10137,20 +8961,6 @@ function narrativeMedicinalProductDefinition(
 function narrativeMessageDefinition(resource: MessageDefinition): Narrative {
   return buildNarrative([
     {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
-    {
       attr: "Url",
       value: resource.url,
       max: "1",
@@ -10286,20 +9096,6 @@ function narrativeMessageDefinition(resource: MessageDefinition): Narrative {
 function narrativeMessageHeader(resource: MessageHeader): Narrative {
   return buildNarrative([
     {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
-    {
       attr: "Destination",
       value: resource.destination,
       max: "*",
@@ -10398,20 +9194,6 @@ function narrativeMessageHeader(resource: MessageHeader): Narrative {
 
 function narrativeMolecularSequence(resource: MolecularSequence): Narrative {
   return buildNarrative([
-    {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
     {
       attr: "Identifier",
       value: resource.identifier,
@@ -10531,20 +9313,6 @@ function narrativeMolecularSequence(resource: MolecularSequence): Narrative {
 function narrativeNamingSystem(resource: NamingSystem): Narrative {
   return buildNarrative([
     {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
-    {
       attr: "Name",
       value: resource.name,
       max: "1",
@@ -10603,20 +9371,6 @@ function narrativeNamingSystem(resource: NamingSystem): Narrative {
 
 function narrativeNutritionOrder(resource: NutritionOrder): Narrative {
   return buildNarrative([
-    {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
     {
       attr: "Instantiates Canonical",
       value: resource.instantiatesCanonical,
@@ -10680,20 +9434,6 @@ function narrativeNutritionOrder(resource: NutritionOrder): Narrative {
 function narrativeNutritionProduct(resource: NutritionProduct): Narrative {
   return buildNarrative([
     {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
-    {
       attr: "Status",
       value: resource.status,
       max: "1",
@@ -10731,20 +9471,6 @@ function narrativeNutritionProduct(resource: NutritionProduct): Narrative {
 
 function narrativeObservation(resource: Observation): Narrative {
   return buildNarrative([
-    {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
     {
       attr: "Identifier",
       value: resource.identifier,
@@ -10897,20 +9623,6 @@ function narrativeObservationDefinition(
 ): Narrative {
   return buildNarrative([
     {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
-    {
       attr: "Category",
       value: resource.category,
       max: "*",
@@ -10935,20 +9647,6 @@ function narrativeOperationDefinition(
   resource: OperationDefinition
 ): Narrative {
   return buildNarrative([
-    {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
     {
       attr: "Url",
       value: resource.url,
@@ -11074,20 +9772,6 @@ function narrativeOperationDefinition(
 function narrativeOperationOutcome(resource: OperationOutcome): Narrative {
   return buildNarrative([
     {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
-    {
       attr: "Issue",
       value: resource.issue,
       max: "*",
@@ -11098,20 +9782,6 @@ function narrativeOperationOutcome(resource: OperationOutcome): Narrative {
 
 function narrativeOrganization(resource: Organization): Narrative {
   return buildNarrative([
-    {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
     {
       attr: "Identifier",
       value: resource.identifier,
@@ -11158,20 +9828,6 @@ function narrativeOrganizationAffiliation(
   resource: OrganizationAffiliation
 ): Narrative {
   return buildNarrative([
-    {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
     {
       attr: "Identifier",
       value: resource.identifier,
@@ -11251,20 +9907,6 @@ function narrativePackagedProductDefinition(
   resource: PackagedProductDefinition
 ): Narrative {
   return buildNarrative([
-    {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
     {
       attr: "Identifier",
       value: resource.identifier,
@@ -11363,20 +10005,6 @@ function narrativePackagedProductDefinition(
 function narrativePatient(resource: Patient): Narrative {
   return buildNarrative([
     {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
-    {
       attr: "Identifier",
       value: resource.identifier,
       max: "*",
@@ -11439,20 +10067,6 @@ function narrativePatient(resource: Patient): Narrative {
 function narrativePaymentNotice(resource: PaymentNotice): Narrative {
   return buildNarrative([
     {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
-    {
       attr: "Status",
       value: resource.status,
       max: "1",
@@ -11498,20 +10112,6 @@ function narrativePaymentReconciliation(
 ): Narrative {
   return buildNarrative([
     {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
-    {
       attr: "Status",
       value: resource.status,
       max: "1",
@@ -11556,20 +10156,6 @@ function narrativePaymentReconciliation(
 function narrativePerson(resource: Person): Narrative {
   return buildNarrative([
     {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
-    {
       attr: "Name",
       value: resource.name,
       max: "*",
@@ -11613,20 +10199,6 @@ function narrativePerson(resource: Person): Narrative {
 
 function narrativePlanDefinition(resource: PlanDefinition): Narrative {
   return buildNarrative([
-    {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
     {
       attr: "Url",
       value: resource.url,
@@ -11723,20 +10295,6 @@ function narrativePlanDefinition(resource: PlanDefinition): Narrative {
 function narrativePractitioner(resource: Practitioner): Narrative {
   return buildNarrative([
     {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
-    {
       attr: "Identifier",
       value: resource.identifier,
       max: "*",
@@ -11783,20 +10341,6 @@ function narrativePractitioner(resource: Practitioner): Narrative {
 
 function narrativePractitionerRole(resource: PractitionerRole): Narrative {
   return buildNarrative([
-    {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
     {
       attr: "Identifier",
       value: resource.identifier,
@@ -11865,20 +10409,6 @@ function narrativePractitionerRole(resource: PractitionerRole): Narrative {
 
 function narrativeProcedure(resource: Procedure): Narrative {
   return buildNarrative([
-    {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
     {
       attr: "Identifier",
       value: resource.identifier,
@@ -12058,20 +10588,6 @@ function narrativeProcedure(resource: Procedure): Narrative {
 function narrativeProvenance(resource: Provenance): Narrative {
   return buildNarrative([
     {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
-    {
       attr: "Target",
       value: resource.target,
       max: "*",
@@ -12091,20 +10607,6 @@ function narrativeProvenance(resource: Provenance): Narrative {
 
 function narrativeQuestionnaire(resource: Questionnaire): Narrative {
   return buildNarrative([
-    {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
     {
       attr: "Url",
       value: resource.url,
@@ -12202,20 +10704,6 @@ function narrativeQuestionnaireResponse(
   resource: QuestionnaireResponse
 ): Narrative {
   return buildNarrative([
-    {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
     {
       attr: "Identifier",
       value: resource.identifier,
@@ -12324,20 +10812,6 @@ function narrativeRegulatedAuthorization(
   resource: RegulatedAuthorization
 ): Narrative {
   return buildNarrative([
-    {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
     {
       attr: "Identifier",
       value: resource.identifier,
@@ -12456,20 +10930,6 @@ function narrativeRegulatedAuthorization(
 function narrativeRelatedPerson(resource: RelatedPerson): Narrative {
   return buildNarrative([
     {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
-    {
       attr: "Identifier",
       value: resource.identifier,
       max: "*",
@@ -12532,20 +10992,6 @@ function narrativeRelatedPerson(resource: RelatedPerson): Narrative {
 function narrativeRequestGroup(resource: RequestGroup): Narrative {
   return buildNarrative([
     {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
-    {
       attr: "Identifier",
       value: resource.identifier,
       max: "*",
@@ -12598,20 +11044,6 @@ function narrativeRequestGroup(resource: RequestGroup): Narrative {
 
 function narrativeResearchDefinition(resource: ResearchDefinition): Narrative {
   return buildNarrative([
-    {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
     {
       attr: "Url",
       value: resource.url,
@@ -12748,20 +11180,6 @@ function narrativeResearchElementDefinition(
 ): Narrative {
   return buildNarrative([
     {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
-    {
       attr: "Url",
       value: resource.url,
       max: "1",
@@ -12868,20 +11286,6 @@ function narrativeResearchElementDefinition(
 
 function narrativeResearchStudy(resource: ResearchStudy): Narrative {
   return buildNarrative([
-    {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
     {
       attr: "Identifier",
       value: resource.identifier,
@@ -13027,20 +11431,6 @@ function narrativeResearchStudy(resource: ResearchStudy): Narrative {
 function narrativeResearchSubject(resource: ResearchSubject): Narrative {
   return buildNarrative([
     {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
-    {
       attr: "Identifier",
       value: resource.identifier,
       max: "*",
@@ -13083,20 +11473,6 @@ function narrativeResearchSubject(resource: ResearchSubject): Narrative {
 
 function narrativeRiskAssessment(resource: RiskAssessment): Narrative {
   return buildNarrative([
-    {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
     {
       attr: "Identifier",
       value: resource.identifier,
@@ -13170,20 +11546,6 @@ function narrativeRiskAssessment(resource: RiskAssessment): Narrative {
 function narrativeSchedule(resource: Schedule): Narrative {
   return buildNarrative([
     {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
-    {
       attr: "Identifier",
       value: resource.identifier,
       max: "*",
@@ -13241,20 +11603,6 @@ function narrativeSchedule(resource: Schedule): Narrative {
 
 function narrativeSearchParameter(resource: SearchParameter): Narrative {
   return buildNarrative([
-    {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
     {
       attr: "Url",
       value: resource.url,
@@ -13344,20 +11692,6 @@ function narrativeSearchParameter(resource: SearchParameter): Narrative {
 
 function narrativeServiceRequest(resource: ServiceRequest): Narrative {
   return buildNarrative([
-    {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
     {
       attr: "Identifier",
       value: resource.identifier,
@@ -13585,20 +11919,6 @@ function narrativeServiceRequest(resource: ServiceRequest): Narrative {
 function narrativeSlot(resource: Slot): Narrative {
   return buildNarrative([
     {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
-    {
       attr: "Identifier",
       value: resource.identifier,
       max: "*",
@@ -13661,20 +11981,6 @@ function narrativeSlot(resource: Slot): Narrative {
 function narrativeSpecimen(resource: Specimen): Narrative {
   return buildNarrative([
     {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
-    {
       attr: "Identifier",
       value: resource.identifier,
       max: "*",
@@ -13731,20 +12037,6 @@ function narrativeSpecimen(resource: Specimen): Narrative {
 function narrativeSpecimenDefinition(resource: SpecimenDefinition): Narrative {
   return buildNarrative([
     {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
-    {
       attr: "Identifier",
       value: resource.identifier,
       max: "1",
@@ -13781,20 +12073,6 @@ function narrativeStructureDefinition(
   resource: StructureDefinition
 ): Narrative {
   return buildNarrative([
-    {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
     {
       attr: "Url",
       value: resource.url,
@@ -13938,20 +12216,6 @@ function narrativeStructureDefinition(
 function narrativeStructureMap(resource: StructureMap): Narrative {
   return buildNarrative([
     {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
-    {
       attr: "Url",
       value: resource.url,
       max: "1",
@@ -14050,20 +12314,6 @@ function narrativeStructureMap(resource: StructureMap): Narrative {
 function narrativeSubscription(resource: Subscription): Narrative {
   return buildNarrative([
     {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
-    {
       attr: "Status",
       value: resource.status,
       max: "1",
@@ -14110,20 +12360,6 @@ function narrativeSubscription(resource: Subscription): Narrative {
 
 function narrativeSubscriptionStatus(resource: SubscriptionStatus): Narrative {
   return buildNarrative([
-    {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
     {
       attr: "Status",
       value: resource.status,
@@ -14173,20 +12409,6 @@ function narrativeSubscriptionStatus(resource: SubscriptionStatus): Narrative {
 
 function narrativeSubscriptionTopic(resource: SubscriptionTopic): Narrative {
   return buildNarrative([
-    {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
     {
       attr: "Url",
       value: resource.url,
@@ -14300,20 +12522,6 @@ function narrativeSubscriptionTopic(resource: SubscriptionTopic): Narrative {
 function narrativeSubstance(resource: Substance): Narrative {
   return buildNarrative([
     {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
-    {
       attr: "Identifier",
       value: resource.identifier,
       max: "*",
@@ -14362,20 +12570,6 @@ function narrativeSubstanceDefinition(
   resource: SubstanceDefinition
 ): Narrative {
   return buildNarrative([
-    {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
     {
       attr: "Identifier",
       value: resource.identifier,
@@ -14505,20 +12699,6 @@ function narrativeSubstanceDefinition(
 function narrativeSupplyDelivery(resource: SupplyDelivery): Narrative {
   return buildNarrative([
     {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
-    {
       attr: "Based On",
       value: resource.basedOn,
       max: "*",
@@ -14552,20 +12732,6 @@ function narrativeSupplyDelivery(resource: SupplyDelivery): Narrative {
 
 function narrativeSupplyRequest(resource: SupplyRequest): Narrative {
   return buildNarrative([
-    {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
     {
       attr: "Identifier",
       value: resource.identifier,
@@ -14635,20 +12801,6 @@ function narrativeSupplyRequest(resource: SupplyRequest): Narrative {
 
 function narrativeTask(resource: Task): Narrative {
   return buildNarrative([
-    {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
     {
       attr: "Instantiates Canonical",
       value: resource.instantiatesCanonical,
@@ -14816,20 +12968,6 @@ function narrativeTerminologyCapabilities(
 ): Narrative {
   return buildNarrative([
     {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
-    {
       attr: "Url",
       value: resource.url,
       max: "1",
@@ -14931,20 +13069,6 @@ function narrativeTerminologyCapabilities(
 function narrativeTestReport(resource: TestReport): Narrative {
   return buildNarrative([
     {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
-    {
       attr: "Identifier",
       value: resource.identifier,
       max: "1",
@@ -15000,20 +13124,6 @@ function narrativeTestReport(resource: TestReport): Narrative {
 
 function narrativeTestScript(resource: TestScript): Narrative {
   return buildNarrative([
-    {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
     {
       attr: "Url",
       value: resource.url,
@@ -15091,20 +13201,6 @@ function narrativeTestScript(resource: TestScript): Narrative {
 
 function narrativeValueSet(resource: ValueSet): Narrative {
   return buildNarrative([
-    {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
     {
       attr: "Url",
       value: resource.url,
@@ -15189,20 +13285,6 @@ function narrativeValueSet(resource: ValueSet): Narrative {
 function narrativeVerificationResult(resource: VerificationResult): Narrative {
   return buildNarrative([
     {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
-    {
       attr: "Target",
       value: resource.target,
       max: "*",
@@ -15258,20 +13340,6 @@ function narrativeVerificationResult(resource: VerificationResult): Narrative {
 
 function narrativeVisionPrescription(resource: VisionPrescription): Narrative {
   return buildNarrative([
-    {
-      attr: "Id",
-      value: resource.id,
-      max: "1",
-      type: {
-        extension: [
-          {
-            url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-            valueUrl: "id",
-          },
-        ],
-        code: "http://hl7.org/fhirpath/System.String",
-      },
-    },
     {
       attr: "Status",
       value: resource.status,

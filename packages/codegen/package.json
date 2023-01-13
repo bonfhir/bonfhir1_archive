@@ -12,7 +12,7 @@
     "build": "yarn clean && tsc --project tsconfig.build.json",
     "check": "prettier --check ./src && eslint ./src && tsc --noEmit",
     "clean": "rimraf dist/",
-    "dev": "ts-node --esm --swc --transpileOnly src/index.ts",
+    "dev": "ts-node --esm --swc --transpileOnly --experimental-specifier-resolution=node src/index.ts",
     "package:create": "node package.js pack",
     "package:publish": "node package.js publish",
     "test": "jest"

@@ -8,6 +8,9 @@ const transpilationConfig = {
     },
     target: "es2020",
   },
+  module: {
+    type: "ES6",
+  },
 };
 
 /** @type {import('jest').Config} */
