@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable @typescript-eslint/no-non-null-assertion */
-import { setSystemTime } from "@bonfhir/core/r4b";
+import { FhirRestfulClient, setSystemTime } from "@bonfhir/core/r4b";
 import { buildFhirRestfulClientAdapter } from "@bonfhir/medplum/r4b";
 import { MedplumClient } from "@medplum/core";
 import fetch from "fetch-vcr";
@@ -9,8 +9,33 @@ import { fileURLToPath } from "url";
 import { NPIRegistrySyncSession } from "./npiregistry-sync";
 
 describe("npiregistry-sync", () => {
+  let client: FhirRestfulClient = {} as FhirRestfulClient;
+
   beforeAll(() => {
     setSystemTime(new Date(2023, 1, 1));
+    global.fetch = fetch as any;
+    const medplum = new MedplumClient({
+      baseUrl: process.env.MEDPLUM_SERVER_URL || "http://medplum:8103",
+      fetch: fetch,
+    });
+    // Uncomment the following lines when re-recording fetches.
+    // await medplum.startClientLogin(
+    //   process.env.MEDPLUM_CLIENT_ID!,
+    //   process.env.MEDPLUM_CLIENT_SECRET!
+    // );
+    client = buildFhirRestfulClientAdapter(medplum);
+  });
+
+  beforeEach(() => {
+    fetch.configure({
+      fixturePath: join(
+        dirname(fileURLToPath(import.meta.url)),
+        "__fixtures__",
+        "npiregistry-sync",
+        expect.getState().currentTestName!.replace(/[^a-z0-9]/gi, "_")
+      ),
+      // mode: "record"
+    });
   });
 
   afterAll(() => {
@@ -18,26 +43,6 @@ describe("npiregistry-sync", () => {
   });
 
   it("returns undefined if not found", async () => {
-    fetch.configure({
-      fixturePath: join(
-        dirname(fileURLToPath(import.meta.url)),
-        "__fixtures__",
-        "npiregistry-sync",
-        "not-found"
-      ),
-    });
-
-    global.fetch = fetch as any;
-    const medplum = new MedplumClient({
-      baseUrl: process.env.MEDPLUM_SERVER_URL,
-      fetch: fetch,
-    });
-    // await medplum.startClientLogin(
-    //   process.env.MEDPLUM_CLIENT_ID!,
-    //   process.env.MEDPLUM_CLIENT_SECRET!
-    // );
-
-    const client = buildFhirRestfulClientAdapter(medplum);
     const syncSession = new NPIRegistrySyncSession({
       client,
     });
@@ -48,26 +53,6 @@ describe("npiregistry-sync", () => {
   });
 
   it("syncs an Organization from scratch", async () => {
-    fetch.configure({
-      fixturePath: join(
-        dirname(fileURLToPath(import.meta.url)),
-        "__fixtures__",
-        "npiregistry-sync",
-        "organization"
-      ),
-    });
-
-    global.fetch = fetch as any;
-    const medplum = new MedplumClient({
-      baseUrl: process.env.MEDPLUM_SERVER_URL,
-      fetch: fetch,
-    });
-    // await medplum.startClientLogin(
-    //   process.env.MEDPLUM_CLIENT_ID!,
-    //   process.env.MEDPLUM_CLIENT_SECRET!
-    // );
-
-    const client = buildFhirRestfulClientAdapter(medplum);
     const syncSession = new NPIRegistrySyncSession({
       client,
     });
@@ -78,26 +63,6 @@ describe("npiregistry-sync", () => {
   });
 
   it("syncs a Practitioner from scratch", async () => {
-    fetch.configure({
-      fixturePath: join(
-        dirname(fileURLToPath(import.meta.url)),
-        "__fixtures__",
-        "npiregistry-sync",
-        "practitioner"
-      ),
-    });
-
-    global.fetch = fetch as any;
-    const medplum = new MedplumClient({
-      baseUrl: process.env.MEDPLUM_SERVER_URL,
-      fetch: fetch,
-    });
-    // await medplum.startClientLogin(
-    //   process.env.MEDPLUM_CLIENT_ID!,
-    //   process.env.MEDPLUM_CLIENT_SECRET!
-    // );
-
-    const client = buildFhirRestfulClientAdapter(medplum);
     const syncSession = new NPIRegistrySyncSession({
       client,
     });
