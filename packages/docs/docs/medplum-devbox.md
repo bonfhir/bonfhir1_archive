@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 4
 ---
 
 # Medplum DevBox
@@ -8,7 +8,7 @@ sidebar_position: 2
 docker pull ghcr.io/bonfhir/medplum-devbox
 ```
 
-This one is not a NPM package, but a Docker image destined to run [Medplum](https://www.medplum.com/) locally, in **development** mode.
+A Docker image destined to run [Medplum](https://www.medplum.com/) locally, in **development** mode.
 
 Differences with the [official medplum docker image](https://hub.docker.com/r/medplum/medplum-server):
 

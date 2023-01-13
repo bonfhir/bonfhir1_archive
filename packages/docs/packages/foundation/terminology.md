@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Terminology
 
-![npm](https://img.shields.io/npm/v/@bonfhir/terminology)
+[![npm](https://img.shields.io/npm/v/@bonfhir/terminology)](https://www.npmjs.com/package/@bonfhir/terminology)
 
 ```bash npm2yarn
 npm install @bonfhir/terminology

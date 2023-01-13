@@ -4,6 +4,8 @@ sidebar_position: 3
 
 # CMS.gov
 
+[![npm](https://img.shields.io/npm/v/@bonfhir/cmsdotgov)](https://www.npmjs.com/package/@bonfhir/cmsdotgov)
+
 ```bash npm2yarn
 npm install @bonfhir/cmsdotgov
 ```

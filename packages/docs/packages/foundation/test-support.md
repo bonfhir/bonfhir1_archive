@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Test Support
 
-![npm](https://img.shields.io/npm/v/@bonfhir/test-support)
+[![npm](https://img.shields.io/npm/v/@bonfhir/test-support)](https://www.npmjs.com/package/@bonfhir/test-support)
 
 ```bash npm2yarn
 npm install @bonfhir/test-support

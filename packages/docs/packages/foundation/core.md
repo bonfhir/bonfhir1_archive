@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Core
 
-![npm](https://img.shields.io/npm/v/@bonfhir/core)
+[![npm](https://img.shields.io/npm/v/@bonfhir/core)](https://www.npmjs.com/package/@bonfhir/core)
 
 ```bash npm2yarn
 npm install @bonfhir/core
