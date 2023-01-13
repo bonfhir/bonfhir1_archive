@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.3](https://github.com/bonfhir/bonfhir/compare/@bonfhir/core@1.0.0-alpha.2...@bonfhir/core@1.0.0-alpha.3) (2023-01-13)
+
+
+### Bug Fixes
+
+* **core:** :bug: add `code` to `resourceSearch("Medication")` ([0a132d4](https://github.com/bonfhir/bonfhir/commit/0a132d42421bc656bc3fce02eeb6947e1185e636)), closes [#19](https://github.com/bonfhir/bonfhir/issues/19)
+
+
+
+
+
 # [1.0.0-alpha.2](https://github.com/bonfhir/bonfhir/compare/@bonfhir/core@1.0.0-alpha.1...@bonfhir/core@1.0.0-alpha.2) (2023-01-13)
 
 
