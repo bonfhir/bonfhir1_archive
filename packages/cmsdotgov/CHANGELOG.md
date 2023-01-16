@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.4](https://github.com/bonfhir/bonfhir/compare/@bonfhir/cmsdotgov@1.0.0-alpha.3...@bonfhir/cmsdotgov@1.0.0-alpha.4) (2023-01-16)
+
+
+### Features
+
+* **cmsdotgov:** :sparkles: add ICD10 coding builder ([49272c1](https://github.com/bonfhir/bonfhir/commit/49272c186ea11616becc58f47a82fce1c78e3ace))
+
+
+
+
+
 # [1.0.0-alpha.3](https://github.com/bonfhir/bonfhir/compare/@bonfhir/cmsdotgov@1.0.0-alpha.2...@bonfhir/cmsdotgov@1.0.0-alpha.3) (2023-01-13)
 
 **Note:** Version bump only for package @bonfhir/cmsdotgov
