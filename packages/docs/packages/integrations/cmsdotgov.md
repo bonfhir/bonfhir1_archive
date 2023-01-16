@@ -53,3 +53,40 @@ Here are the entities created:
 The Provenance record can be provided as an option if needed (will serve as a template to create the records), or de-activated entirely by passing the "no-provenance" value to the sync session.
 
 The `NPIRegistrySyncSession` can be safely re-used or re-created any time; all it does is holding a cache for certain referenced values (mainly the CMS.gov `Organization` and the `Location` per state), to save a few round-trips to the server.
+
+## ICD10 Codes builder
+
+The `ICD10CodesBuilder` is there to help create `Coding` and `CodeableConcept` for ICD10 Codes using reference files
+downloadable at https://www.cms.gov/Medicare/Coding/ICD10:
+
+```typescript
+import { ICD10CodesBuilder } from "@bonfhir/cmsdotgov/r4b";
+
+const builder = new ICD10CodesBuilder({
+  sourceFilePath: "./icd10cm_codes_2023.txt",
+  version: "2023",
+});
+
+const coding = await builder.coding("A408");
+/*
+{
+  system: "http://hl7.org/fhir/sid/icd-10-cm",
+  code: "A408",
+  display: "Other streptococcal sepsis",
+  version: "2023"
+}
+*/
+
+const codeableConcept = await builder.codeableConcept("B301");
+/*
+{
+  coding: [{
+    system: "http://hl7.org/fhir/sid/icd-10-cm",
+    code: "B301",
+    display: "Conjunctivitis due to adenovirus",
+    version: "2023",
+  }],
+  text: "Conjunctivitis due to adenovirus"
+}
+*/
+```
