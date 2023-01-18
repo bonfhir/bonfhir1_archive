@@ -40,6 +40,17 @@ It is also possible, for each of the value sets, to enumerate all it's expanded 
 _The terminology package is quite big, so if you plan to use it on a frontend application,
 make sure to run a bundler with tree-shaking capabilities to limit the size of the final package._
 
+## Code System URIs
+
+All the code system URIs [listed in the FHIR specification](https://hl7.org/fhir/terminologies-systems.html#) are available as constants:
+
+```typescript
+import { CodeSystemURIs } from "@bonfhir/terminology/r4b";
+
+CodeSystemURIs.Ndc; // "http://hl7.org/fhir/sid/ndc"
+CodeSystemURIs.Ietf3066; // "urn:ietf:bcp:47"
+```
+
 ## Known Identifier Systems / Identifier Registry
 
 The package also includes definitions for [Known Identifier Systems](https://hl7.org/fhir/identifier-registry.html).
