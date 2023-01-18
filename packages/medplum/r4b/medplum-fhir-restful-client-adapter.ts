@@ -1,10 +1,11 @@
-import type {
+import {
   ConcurrencyParameters,
   ConditionalSearchParameters,
   ExtractResource,
   FhirRestfulClient,
   GeneralParameters,
   HistoryParameters,
+  isFhirResource,
   JSONPatchBody,
   ResourceType,
 } from "@bonfhir/core/r4b";
@@ -24,7 +25,7 @@ export function buildFhirRestfulClientAdapter(
   client: MedplumClient
 ): FhirRestfulClient {
   return {
-    read<TResource extends ResourceType>(
+    async read<TResource extends ResourceType>(
       type: TResource,
       id: string,
       options?: GeneralParameters | null | undefined
@@ -33,10 +34,20 @@ export function buildFhirRestfulClientAdapter(
         throw new Error("read#options is not supported by the MedplumClient.");
       }
 
-      return client.readResource(type, id);
+      try {
+        return await client.readResource(type, id);
+      } catch (error) {
+        if (
+          isFhirResource("OperationOutcome", error) &&
+          ["not-found", "gone"].includes(error.id!)
+        ) {
+          return undefined;
+        }
+        throw error;
+      }
     },
 
-    vread<TResource extends ResourceType>(
+    async vread<TResource extends ResourceType>(
       type: TResource,
       id: string,
       vid: string,
@@ -46,7 +57,17 @@ export function buildFhirRestfulClientAdapter(
         throw new Error("vread#options is not supported by the MedplumClient.");
       }
 
-      return client.readVersion(type, id, vid);
+      try {
+        return await client.readVersion(type, id, vid);
+      } catch (error) {
+        if (
+          isFhirResource("OperationOutcome", error) &&
+          ["not-found", "gone"].includes(error.id!)
+        ) {
+          return undefined;
+        }
+        throw error;
+      }
     },
 
     update<TResource extends FhirResource>(
@@ -85,7 +106,7 @@ export function buildFhirRestfulClientAdapter(
       return client.patchResource(type, id, body);
     },
 
-    delete(
+    async delete(
       type: ResourceType,
       id: string,
       options?:
@@ -99,7 +120,17 @@ export function buildFhirRestfulClientAdapter(
         );
       }
 
-      return client.deleteResource(type, id);
+      try {
+        return await client.deleteResource(type, id);
+      } catch (error) {
+        if (
+          isFhirResource("OperationOutcome", error) &&
+          ["not-found", "gone"].includes(error.id!)
+        ) {
+          return undefined;
+        }
+        throw error;
+      }
     },
 
     history<TResource extends ResourceType>(

@@ -22,7 +22,7 @@ Given a NDC Code (or Rxcui number), it will interrogate the API and sync back th
 
 ```typescript
 import { FhirRestfulClient } from "@bonfhir/core/r4b";
-import { NPIRegistrySyncSession } from "@bonfhir/cmsdotgov/r4b";
+import { RxNormSyncSession } from "@bonfhir/nih-nlm/r4b";
 
 const client: FhirRestfulClient = ...;
 
