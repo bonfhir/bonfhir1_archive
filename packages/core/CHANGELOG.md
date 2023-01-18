@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.4](https://github.com/bonfhir/bonfhir/compare/@bonfhir/core@1.0.0-alpha.3...@bonfhir/core@1.0.0-alpha.4) (2023-01-18)
+
+
+### Features
+
+* **core:** :sparkles: add `isFhirResource` utility ([3798b3b](https://github.com/bonfhir/bonfhir/commit/3798b3bee30a2f6338c1dffb1373f6015394821d))
+* **core:** :sparkles: add `searchAllPages` utility ([b725c01](https://github.com/bonfhir/bonfhir/commit/b725c011e4502e6c02ab9c3c3a57d66d8ee3a954))
+
+
+
+
+
 # [1.0.0-alpha.3](https://github.com/bonfhir/bonfhir/compare/@bonfhir/core@1.0.0-alpha.2...@bonfhir/core@1.0.0-alpha.3) (2023-01-13)
 
 
