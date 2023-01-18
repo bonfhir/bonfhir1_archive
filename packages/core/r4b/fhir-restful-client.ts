@@ -1,8 +1,8 @@
 import { Bundle, CapabilityStatement, FhirResource, Identifier } from "fhir/r4";
 import _ from "lodash";
 import { merge, MergeResult } from "./merge";
-import { fhirSearch } from "./search-builder";
-import { ExtractResource, ResourceType } from "./types";
+import { fhirSearch, FhirSearchBuilder } from "./search-builder";
+import { ExtractResource, ResourceType, WithRequired } from "./types";
 
 /**
  * Abstract FHIR Restful Client that can be used as a dependency.
@@ -348,4 +348,54 @@ export async function createOr<
   }
 
   return [merged, false];
+}
+
+/**
+ * Execute a search operation and retrieve all pages from the server, aggregating into a final `Bundle`.
+ * Be careful, as this can be a very long / expensive operation.
+ */
+export async function searchAllPages<TResource extends ResourceType>(
+  client: FhirRestfulClient,
+  type: TResource | null | undefined,
+  searchBuilder: FhirSearchBuilder
+): Promise<WithRequired<Bundle<ExtractResource<TResource>>, "entry">> {
+  const result: WithRequired<Bundle<ExtractResource<TResource>>, "entry"> = {
+    resourceType: "Bundle",
+    type: "searchset",
+    entry: [],
+  };
+
+  let currentSearchBundle: Bundle<ExtractResource<TResource>> | undefined =
+    undefined;
+
+  while (
+    !currentSearchBundle ||
+    currentSearchBundle.link?.find((link) => link.relation === "next")
+  ) {
+    const searchParameters = searchBuilder.clone();
+    if (currentSearchBundle) {
+      const nextUrl = new URL(
+        // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+        currentSearchBundle.link!.find((link) => link.relation === "next")!.url!
+      );
+      if (
+        !nextUrl.searchParams.get("_count") &&
+        !nextUrl.searchParams.get("_offset")
+      ) {
+        throw new Error(
+          `Unable to extract _count and _offset parameters from the next url ${nextUrl.href}.`
+        );
+      }
+      searchParameters.string("_count", nextUrl.searchParams.get("_count"));
+      searchParameters.string("_offset", nextUrl.searchParams.get("_offset"));
+    }
+
+    currentSearchBundle = await client.search<TResource>(
+      type,
+      searchParameters.href
+    );
+    result.entry.push(...(currentSearchBundle.entry || []));
+  }
+
+  return result;
 }
