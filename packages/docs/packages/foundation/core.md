@@ -206,6 +206,22 @@ const [mergedResource, wasMerged] = createOr("merge", client, resource, resource
 
 ```
 
+### `searchAllPages` utility
+
+The `searchAllPages` utility can be used to retrieve _all_ pages for a given search criteria.
+
+> Be careful as this may be a very long / very expensive operation.
+
+```typescript
+import { searchAllPages, resourceSearch } from "@bonfhir/core/r4b";
+
+const allPatients = await searchAllPages(
+  client,
+  "Patient",
+  resourceSearch("Patient").builder
+);
+```
+
 ## FHIR Search
 
 There are utility functions designed to help creating [FHIR Search](https://hl7.org/fhir/search.html) URL query parameters.
