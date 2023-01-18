@@ -9,6 +9,7 @@ import {
   utcNow,
 } from "@bonfhir/core/r4b";
 import {
+  CodeSystemURIs,
   ContactPointSystem,
   KnownIdentifierSystems,
   MedicationKnowledgeStatusCodes,
@@ -106,14 +107,14 @@ export class RxNormSyncSession {
           coding: _.compact([
             indexedAllProperties["CODES"]["RxCUI"]
               ? {
-                  system: "http://www.nlm.nih.gov/research/umls/rxnorm",
+                  system: CodeSystemURIs.RxNorm,
                   code: indexedAllProperties["CODES"]["RxCUI"],
                   display: indexedAllProperties["NAMES"]["RxNorm Name"],
                 }
               : undefined,
             indexedAllProperties["CODES"]["SNOMEDCT"]
               ? {
-                  system: "http://snomed.info/sct",
+                  system: CodeSystemURIs.SNOMED_CT_INT,
                   code: indexedAllProperties["CODES"]["SNOMEDCT"],
                 }
               : undefined,
@@ -129,7 +130,7 @@ export class RxNormSyncSession {
                 itemCodeableConcept: buildCodeableConcept({
                   coding: [
                     {
-                      system: "http://www.nlm.nih.gov/research/umls/rxnorm",
+                      system: CodeSystemURIs.RxNorm,
                       code: indexedAllProperties["ATTRIBUTES"][
                         "Active_ingredient_RxCUI"
                       ],
@@ -151,12 +152,12 @@ export class RxNormSyncSession {
       resourceSearch("Medication").code(
         _.compact([
           {
-            system: "http://www.nlm.nih.gov/research/umls/rxnorm",
+            system: CodeSystemURIs.RxNorm,
             value: indexedAllProperties["CODES"]["RxCUI"],
           },
           indexedAllProperties["CODES"]["SNOMEDCT"]
             ? {
-                system: "http://snomed.info/sct",
+                system: CodeSystemURIs.SNOMED_CT_INT,
                 value: indexedAllProperties["CODES"]["SNOMEDCT"],
               }
             : undefined,
@@ -180,7 +181,7 @@ export class RxNormSyncSession {
           code: buildCodeableConcept({
             coding: [
               {
-                system: "http://terminology.hl7.org/NamingSystem/v3-ndc",
+                system: CodeSystemURIs.Ndc,
                 code: ndcProps.ndcItem,
                 display: ndcProps.packagingList?.packaging?.join(", "),
               },
@@ -194,7 +195,7 @@ export class RxNormSyncSession {
           ingredient: result.ingredient,
         }),
         resourceSearch("MedicationKnowledge").code({
-          system: "http://terminology.hl7.org/NamingSystem/v3-ndc",
+          system: CodeSystemURIs.Ndc,
           value: ndcProps.ndcItem,
         }).href
       );
@@ -305,7 +306,7 @@ export class RxNormSyncSession {
         id: this.stableId,
         numerator: {
           value: parseFloat(match.groups!["number"]!),
-          system: "http://unitsofmeasure.org",
+          system: CodeSystemURIs.UCUM,
           code: match.groups!["unit"]!,
         },
       };

@@ -1,4 +1,5 @@
 import { buildCodeableConcept } from "@bonfhir/core/r4b";
+import { CodeSystemURIs } from "@bonfhir/terminology/r4b";
 import { CodeableConcept, Coding } from "fhir/r4";
 import _ from "lodash";
 import { createReadStream } from "node:fs";
@@ -49,7 +50,7 @@ export class ICD10CodesBuilder {
     await this.ensureDataLoaded();
 
     return {
-      system: this.options.system || "http://hl7.org/fhir/sid/icd-10-cm",
+      system: this.options.system || CodeSystemURIs.Icd10CM,
       code,
       display: this._descriptionsByCode.get(code),
       version: this.options.version || undefined,
