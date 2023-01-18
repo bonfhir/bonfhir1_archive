@@ -269,3 +269,14 @@ export function asArray<T>(
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   return Array.isArray(value) ? (value as any) : [value];
 }
+
+/**
+ * Return true if the object is a FhirResource of a specific type.
+ */
+export function isFhirResource<TResource extends ResourceType>(
+  type: TResource,
+  object: unknown | null | undefined
+): object is ExtractResource<TResource> {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  return (object as any)?.resourceType === type;
+}
