@@ -290,7 +290,7 @@ export function decorateFhirRestfulClient(
 export type CreateOrMergeAction = "return" | "replace" | "merge" | "add";
 
 /**
- * Searches for an existing resource that have the same identifiers.
+ * Searches for an existing resource that have the same identifiers (or use a custom search query string).
  *  - if not found, create the new resource and return it
  *  - if found, depending on the action, either:
  *     - return the existing resource
@@ -303,10 +303,28 @@ export async function createOr<
 >(
   action: CreateOrMergeAction,
   client: FhirRestfulClient,
+  resource: TResource
+): Promise<MergeResult<TResource>>;
+export async function createOr<TResource extends FhirResource>(
+  action: CreateOrMergeAction,
+  client: FhirRestfulClient,
+  resource: TResource,
+  search: string
+): Promise<MergeResult<TResource>>;
+export async function createOr<
+  TResource extends
+    | FhirResource
+    | (FhirResource & { identifier?: Identifier[] })
+>(
+  action: CreateOrMergeAction,
+  client: FhirRestfulClient,
   resource: TResource,
   search?: string | null | undefined
 ): Promise<MergeResult<TResource>> {
-  if (!search && !resource.identifier?.length) {
+  if (
+    !search &&
+    !(resource as { identifier?: Identifier[] }).identifier?.length
+  ) {
     throw new Error(
       `Unable to createOr${action} resource of type ${resource.resourceType} as it has no identifier.`
     );
@@ -315,7 +333,11 @@ export async function createOr<
   const current = (
     await client.search(
       resource.resourceType,
-      search || fhirSearch().token("identifier", resource.identifier).href
+      search ||
+        fhirSearch().token(
+          "identifier",
+          (resource as { identifier?: Identifier[] }).identifier
+        ).href
     )
   )?.entry?.[0]?.resource as TResource | undefined;
 
