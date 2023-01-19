@@ -15995,6 +15995,28 @@ class ResourceSearchBuilderConceptMap {
     this.builder.reference("target-uri", id, modifier);
     return this;
   }
+
+  /**
+   * The human-friendly name of the concept map
+   */
+  title(
+    value: string | string[] | null | undefined,
+    modifier?: StringModifier | null | undefined
+  ): ResourceSearchBuilderConceptMap {
+    this.builder.string("title", value, modifier);
+    return this;
+  }
+
+  /**
+   * The uri that identifies the concept map
+   */
+  url(
+    value: string | URL | Array<string | URL> | null | undefined,
+    modifier?: UriModifier | null | undefined
+  ): ResourceSearchBuilderConceptMap {
+    this.builder.uri("url", value, modifier);
+    return this;
+  }
 }
 
 class ResourceSearchBuilderCondition {
