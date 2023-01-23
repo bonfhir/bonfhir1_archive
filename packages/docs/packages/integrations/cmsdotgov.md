@@ -90,3 +90,42 @@ const codeableConcept = await builder.codeableConcept("B301");
 }
 */
 ```
+
+## HCPCS Codes builder
+
+The `HCPCSCodesBuilder` is there to help create `Coding` and `CodeableConcept` for HCPCS Codes using reference files
+downloadable at https://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets:
+
+```typescript
+import { HCPCSCodesBuilder } from "@bonfhir/cmsdotgov/r4b";
+
+const builder = new ICD10CodesBuilder({
+  sourceFilePath: "./HCPC2023_JAN_ANWEB_v3.csv",
+  version: "2023-01",
+});
+
+const coding = await builder.coding("G0157");
+/*
+{
+  system: "https://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+  code: "G0157",
+  display: "Services performed by a qualified physical therapist assistant in the home health or hospice setting, each 15 minutes",
+  version: "2023-01"
+}
+*/
+
+const codeableConcept = await builder.codeableConcept("L3470");
+/*
+{
+  coding: [{
+    system: "https://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+    code: "L3470",
+    display: "Heel, thomas extended to ball",
+    version: "2023-01",
+  }],
+  text: "Heel, thomas extended to ball"
+}
+*/
+```
+
+_Source files should be CSV files. If you download them as Excel file, you can use the `ssconvert` utility to process them into CSV files._
