@@ -213,13 +213,18 @@ The `searchAllPages` utility can be used to retrieve _all_ pages for a given sea
 > Be careful as this may be a very long / very expensive operation.
 
 ```typescript
-import { searchAllPages, resourceSearch } from "@bonfhir/core/r4b";
+import { searchAllPages, resourceSearch, nextUrl } from "@bonfhir/core/r4b";
 
 const allPatients = await searchAllPages(
   client,
   "Patient",
-  resourceSearch("Patient").builder
+  resourceSearch("Patient").href
 );
+
+// For paginating yourself
+const searchResult = await client.search("Patient");
+const searchPatientPage2 =
+  nextUrl(searchResult) && (await client.get(nextUrl(searchResult)));
 ```
 
 ## FHIR Search

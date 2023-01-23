@@ -1,7 +1,7 @@
 import { Bundle, CapabilityStatement, FhirResource, Identifier } from "fhir/r4";
 import _ from "lodash";
 import { merge, MergeResult } from "./merge";
-import { fhirSearch, FhirSearchBuilder } from "./search-builder";
+import { fhirSearch } from "./search-builder";
 import { ExtractResource, ResourceType, WithRequired } from "./types";
 
 /**
@@ -141,6 +141,11 @@ export interface FhirRestfulClient {
       | null
       | undefined
   ) => Promise<TOperationResult>;
+
+  /**
+   * Execute an HTTP Get and return the parsed body.
+   */
+  get: <T = unknown>(url: URL | string) => Promise<T>;
 }
 
 /**
@@ -379,7 +384,7 @@ export async function createOr<
 export async function searchAllPages<TResource extends ResourceType>(
   client: FhirRestfulClient,
   type: TResource | null | undefined,
-  searchBuilder: FhirSearchBuilder
+  search: string
 ): Promise<WithRequired<Bundle<ExtractResource<TResource>>, "entry">> {
   const result: WithRequired<Bundle<ExtractResource<TResource>>, "entry"> = {
     resourceType: "Bundle",
@@ -390,34 +395,25 @@ export async function searchAllPages<TResource extends ResourceType>(
   let currentSearchBundle: Bundle<ExtractResource<TResource>> | undefined =
     undefined;
 
-  while (
-    !currentSearchBundle ||
-    currentSearchBundle.link?.find((link) => link.relation === "next")
-  ) {
-    const searchParameters = searchBuilder.clone();
+  while (!currentSearchBundle || nextUrl(currentSearchBundle)) {
     if (currentSearchBundle) {
-      const nextUrl = new URL(
+      currentSearchBundle = await client.get<
+        Bundle<ExtractResource<TResource>>
         // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-        currentSearchBundle.link!.find((link) => link.relation === "next")!.url!
-      );
-      if (
-        !nextUrl.searchParams.get("_count") &&
-        !nextUrl.searchParams.get("_offset")
-      ) {
-        throw new Error(
-          `Unable to extract _count and _offset parameters from the next url ${nextUrl.href}.`
-        );
-      }
-      searchParameters.string("_count", nextUrl.searchParams.get("_count"));
-      searchParameters.string("_offset", nextUrl.searchParams.get("_offset"));
+      >(nextUrl(currentSearchBundle)!);
+    } else {
+      currentSearchBundle = await client.search<TResource>(type, search);
     }
 
-    currentSearchBundle = await client.search<TResource>(
-      type,
-      searchParameters.href
-    );
     result.entry.push(...(currentSearchBundle.entry || []));
   }
 
   return result;
+}
+
+/**
+ * Return the next URL for a search bundle, or undefined if there is none.
+ */
+export function nextUrl(bundle: Bundle): string | undefined {
+  return bundle.link?.find((link) => link.relation === "next")?.url;
 }
