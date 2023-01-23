@@ -31,7 +31,7 @@ describe("icd10-codes-builder", () => {
       system: "http://hl7.org/fhir/sid/icd-10-cm",
       code: "A123456789",
       display: undefined,
-      version: "2023",
+      version: undefined,
     });
   });
 
@@ -59,7 +59,7 @@ describe("icd10-codes-builder", () => {
         {
           system: "http://hl7.org/fhir/sid/icd-10-cm",
           code: "A",
-          version: "2023",
+          version: undefined,
         },
       ],
     });

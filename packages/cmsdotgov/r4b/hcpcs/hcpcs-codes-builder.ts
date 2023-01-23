@@ -1,42 +1,45 @@
 import { buildCodeableConcept } from "@bonfhir/core/r4b";
 import { CodeSystemURIs } from "@bonfhir/terminology/r4b";
+import { parse } from "csv-parse";
 import { CodeableConcept, Coding } from "fhir/r4";
 import _ from "lodash";
 import { createReadStream } from "node:fs";
-import { createInterface } from "node:readline";
 
-export interface ICD10CodesBuilderOptions {
+export interface HCPCSCodesBuilderOptions {
   /**
-   * The path to the source file containing the ICD10 codes and descriptions.
-   * The file can be downloaded at https://www.cms.gov/Medicare/Coding/ICD10
+   * The path to the source file containing the HCPCS codes and descriptions.
+   * The file can be downloaded at https://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets.
+   *
+   * These should be CSV files. If you download them as Excel file, you can use the
+   * `ssconvert` utility to process them into CSV files.
    */
   sourceFilePath: string;
 
   /**
-   * The version of the data file, most probably the year.
+   * The version of the data file, most probably the year and month of publishing.
    * Will be included in the coding if provided.
    */
   version?: string | null | undefined;
 
   /**
-   * The coding system to use. Defaults to http://hl7.org/fhir/sid/icd-10-cm.
+   * The coding system to use. Defaults to https://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets.
    */
   system?: string | null | undefined;
 }
 
 /**
- * Parses a file from CMS.gov that contains ICD10 codes and description,
+ * Parses a file from CMS.gov that contains HCPCS codes and description,
  * and allows building `Coding` & `CodeableConcept` from these.
  */
-export class ICD10CodesBuilder {
+export class HCPCSCodesBuilder {
   private _descriptionsByCode = new Map<string, string>();
 
-  constructor(private options: ICD10CodesBuilderOptions) {}
+  constructor(private options: HCPCSCodesBuilderOptions) {}
 
   /**
    * Return true if the code is listed in the source file.
    */
-  public async isICD10Code(code: string): Promise<boolean> {
+  public async isHCPCSCode(code: string): Promise<boolean> {
     await this.ensureDataLoaded();
 
     return this._descriptionsByCode.has(code);
@@ -50,7 +53,7 @@ export class ICD10CodesBuilder {
     await this.ensureDataLoaded();
 
     return {
-      system: this.options.system || CodeSystemURIs.Icd10CM,
+      system: this.options.system || CodeSystemURIs.HCPCSLevelII,
       code,
       display: this._descriptionsByCode.get(code),
       version: this._descriptionsByCode.get(code)
@@ -72,17 +75,17 @@ export class ICD10CodesBuilder {
       return;
     }
 
-    for await (const line of createInterface({
-      input: createReadStream(this.options.sourceFilePath),
-      crlfDelay: Infinity,
-    })) {
-      const splittedLine = line.split(/\s+/);
-      if (splittedLine[0]) {
-        this._descriptionsByCode.set(
-          splittedLine[0].toUpperCase(),
-          splittedLine.slice(1).join(" ")
-        );
-      }
+    for await (const line of createReadStream(this.options.sourceFilePath).pipe(
+      parse({
+        columns: true,
+        skipEmptyLines: true,
+        trim: true,
+      })
+    )) {
+      this._descriptionsByCode.set(
+        line["HCPC"].trim().toUpperCase(),
+        line["LONG DESCRIPTION"]?.trim() || line["SHORT DESCRIPTION"]?.trim()
+      );
     }
   }
 }
