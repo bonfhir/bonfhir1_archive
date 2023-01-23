@@ -80,7 +80,9 @@
           "listr",
           "medplum",
           "Medplum",
-          "Referenceable"
+          "Referenceable",
+          "searchset",
+          "vread"
         ],
         "errorLens.enabledDiagnosticLevels": ["error", "warning"],
         "eslint.workingDirectories": ["packages/*"],

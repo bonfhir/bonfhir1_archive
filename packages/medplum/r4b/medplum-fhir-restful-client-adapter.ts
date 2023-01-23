@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-non-null-assertion */
 import {
   ConcurrencyParameters,
   ConditionalSearchParameters,
@@ -246,6 +247,10 @@ export function buildFhirRestfulClientAdapter(
       throw new Error(
         `The ${operation} operation (${options?.type}/${options?.id}) is not supported by the MedplumClient.`
       );
+    },
+
+    get<T = unknown>(url: URL | string): Promise<T> {
+      return client.get(url);
     },
   };
 }

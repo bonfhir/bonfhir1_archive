@@ -22,6 +22,10 @@ describe("resource-search", () => {
       }),
       "status=active&type=patient&_tag=source|foo",
     ],
+    [
+      resourceSearch("Organization")._sort("name")._sort(["-type", "name"]),
+      "_sort=-type,name",
+    ],
   ])("%s", (searchBuilder, expected) => {
     expect(searchBuilder.href).toEqual(expected);
   });

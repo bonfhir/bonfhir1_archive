@@ -41,6 +41,12 @@ describe("search-builder", () => {
         .date("date", "2011-12-31", Prefix.LessThanOrEqual),
       "date=ge2010-01-01&date=le2011-12-31",
     ],
+    [
+      fhirSearch()
+        .date("date", "2010-01-01", Prefix.GreaterThanOrEqual)
+        .date("date", "2011-12-31", Prefix.LessThanOrEqual, "replace"),
+      "date=le2011-12-31",
+    ],
     [fhirSearch().date("date", null), ""],
     [fhirSearch().date("date", undefined), ""],
     [fhirSearch().date("date", ""), ""],
@@ -52,6 +58,12 @@ describe("search-builder", () => {
     [fhirSearch().missing("probability"), "probability:missing=true"],
     [fhirSearch().missing("probability", true), "probability:missing=true"],
     [fhirSearch().missing("probability", false), "probability:missing=false"],
+    [
+      fhirSearch()
+        .missing("probability", false)
+        .missing("probability", true, "replace"),
+      "probability:missing=true",
+    ],
   ])("missing/%s", (builder, expected) => {
     expect(builder.href).toBe(expected);
   });
@@ -72,6 +84,12 @@ describe("search-builder", () => {
     [fhirSearch().number("probability", null), ""],
     [fhirSearch().number("probability", undefined), ""],
     [fhirSearch().number("probability", ""), ""],
+    [
+      fhirSearch()
+        .number("probability", "2e2")
+        .number("probability", 3, null, "replace"),
+      "probability=3",
+    ],
   ])("number/%s", (builder, expected) => {
     expect(builder.href).toBe(expected);
   });
@@ -118,6 +136,15 @@ describe("search-builder", () => {
     [fhirSearch().quantity("value-quantity", undefined), ""],
     [fhirSearch().quantity("value-quantity", null), ""],
     [fhirSearch().quantity("value-quantity", ""), ""],
+    [
+      fhirSearch()
+        .quantity("value-quantity", {
+          number: 5.4,
+          code: "mg",
+        })
+        .quantity("value-quantity", 0, null, "replace"),
+      "value-quantity=0",
+    ],
   ])("quantity/%s", (builder, expected) => {
     expect(builder.href).toBe(expected);
   });
@@ -162,6 +189,12 @@ describe("search-builder", () => {
     [fhirSearch().reference("subject", null), ""],
     [fhirSearch().reference("subject", undefined), ""],
     [fhirSearch().reference("subject", ""), ""],
+    [
+      fhirSearch()
+        .reference("subject", "23", "Patient")
+        .reference("subject", "123456", "Patient", "replace"),
+      "subject:Patient=123456",
+    ],
   ])("reference/%s", (builder, expected) => {
     expect(builder.href).toBe(expected);
   });
@@ -183,6 +216,12 @@ describe("search-builder", () => {
     [fhirSearch().string("name", null), ""],
     [fhirSearch().string("name", undefined), ""],
     [fhirSearch().string("name", ""), ""],
+    [
+      fhirSearch()
+        .string("name", "John Doe")
+        .string("name", "eve", null, "replace"),
+      "name=eve",
+    ],
   ])("string/%s", (builder, expected) => {
     expect(builder.href).toBe(expected);
   });
@@ -259,6 +298,12 @@ describe("search-builder", () => {
       }),
       "",
     ],
+    [
+      fhirSearch()
+        .token("gender", "male")
+        .token("gender", "female", null, "replace"),
+      "gender=female",
+    ],
   ])("token/%s", (builder, expected) => {
     expect(builder.href).toBe(expected);
   });
@@ -287,6 +332,12 @@ describe("search-builder", () => {
     [fhirSearch().uri("url", null), ""],
     [fhirSearch().uri("url", undefined), ""],
     [fhirSearch().uri("url", ""), ""],
+    [
+      fhirSearch()
+        .uri("url", "http://acme.org/fhir/ValueSet/123")
+        .uri("url", "http://acme.org/fhir/", null, "replace"),
+      "url=http%3A%2F%2Facme.org%2Ffhir%2F",
+    ],
   ])("uri/%s", (builder, expected) => {
     expect(builder.href).toBe(expected);
   });
