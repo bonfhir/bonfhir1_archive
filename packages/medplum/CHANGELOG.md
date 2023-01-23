@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.5](https://github.com/bonfhir/bonfhir/compare/@bonfhir/medplum@1.0.0-alpha.4...@bonfhir/medplum@1.0.0-alpha.5) (2023-01-23)
+
+
+### Features
+
+* **medplum:** :sparkles: add support for `get` method ([ad32a26](https://github.com/bonfhir/bonfhir/commit/ad32a2643e4dbfd80f58061bd3af05b6f4e5019e))
+
+
+
+
+
 # [1.0.0-alpha.4](https://github.com/bonfhir/bonfhir/compare/@bonfhir/medplum@1.0.0-alpha.3...@bonfhir/medplum@1.0.0-alpha.4) (2023-01-18)
 
 

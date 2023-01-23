@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.5](https://github.com/bonfhir/bonfhir/compare/@bonfhir/core@1.0.0-alpha.4...@bonfhir/core@1.0.0-alpha.5) (2023-01-23)
+
+
+### Bug Fixes
+
+* **core:** :adhesive_bandage: add `title` and `url` to `resourceSearch("ConceptMap")` ([e8f06ee](https://github.com/bonfhir/bonfhir/commit/e8f06ee19525fbad0264917283ad28431328776d)), closes [#29](https://github.com/bonfhir/bonfhir/issues/29)
+* **core:** :adhesive_bandage: fix `createOr` mandating identifier when a search is provided ([b2a2628](https://github.com/bonfhir/bonfhir/commit/b2a2628d574f0453d84d725767349aa2fc89cea6)), closes [#28](https://github.com/bonfhir/bonfhir/issues/28)
+
+
+### Features
+
+* **core:** :sparkles: add `get` to `FhirRestfulClient` + support for better pagination ([d8e260a](https://github.com/bonfhir/bonfhir/commit/d8e260a6ccb1f4d8cda229310663f7c8f3f9a6c6))
+* **core:** :sparkles: add more search parameters ([debef45](https://github.com/bonfhir/bonfhir/commit/debef458e815506a27abb43c582bd5fd0dc58a8c)), closes [#26](https://github.com/bonfhir/bonfhir/issues/26)
+* **core:** :sparkles: add version-specific reference builder ([3a9eaa7](https://github.com/bonfhir/bonfhir/commit/3a9eaa72db30013c529000d67d99dabadf4b9f36))
+
+
+
+
+
 # [1.0.0-alpha.4](https://github.com/bonfhir/bonfhir/compare/@bonfhir/core@1.0.0-alpha.3...@bonfhir/core@1.0.0-alpha.4) (2023-01-18)
 
 
