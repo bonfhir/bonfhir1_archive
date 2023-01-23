@@ -55,6 +55,7 @@
           }
         },
         "conventionalCommits.scopes": [
+          "charlson-comorbidity-index",
           "cmsdotgov",
           "codegen",
           "core",
