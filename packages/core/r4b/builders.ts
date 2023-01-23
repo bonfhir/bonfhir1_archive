@@ -54,20 +54,38 @@ export interface Referenceable {
   id?: string | undefined;
 }
 
+export interface VersionSpecific {
+  meta?: {
+    versionId?: string | undefined;
+  };
+}
+
 /**
  * Build a new Reference to a resource.
  */
 export function buildReferenceFromResource(
-  resource: Referenceable
+  resource: Referenceable & VersionSpecific,
+  referenceType?: "version-specific"
 ): WithRequired<Reference, "reference">;
 export function buildReferenceFromResource(
-  resource: null | undefined
+  resource: Referenceable,
+  referenceType?: null | undefined
+): WithRequired<Reference, "reference">;
+export function buildReferenceFromResource(
+  resource: Referenceable & VersionSpecific,
+  referenceType?: "version-specific" | null | undefined
+): WithRequired<Reference, "reference">;
+export function buildReferenceFromResource(
+  resource: null | undefined,
+  referenceType?: "version-specific" | null | undefined
 ): undefined;
 export function buildReferenceFromResource(
-  resource: Referenceable | null | undefined
+  resource: (Referenceable & VersionSpecific) | null | undefined,
+  referenceType?: "version-specific" | null | undefined
 ): WithRequired<Reference, "reference"> | undefined;
 export function buildReferenceFromResource(
-  resource: Referenceable | null | undefined
+  resource: (Referenceable & VersionSpecific) | null | undefined,
+  referenceType?: "version-specific" | null | undefined
 ): WithRequired<Reference, "reference"> | undefined {
   if (!resource) {
     return undefined;
@@ -79,6 +97,20 @@ export function buildReferenceFromResource(
         resource
       )}. Missing either the resourceType or id.`
     );
+  }
+
+  if (referenceType === "version-specific") {
+    if (!resource.meta?.versionId) {
+      throw new Error(
+        `Cannot build version-specific reference from ${JSON.stringify(
+          resource
+        )}. Missing meta.versionId.`
+      );
+    }
+    return {
+      reference: `${resource.resourceType}/${resource.id}/_history/${resource.meta.versionId}`,
+      type: resource.resourceType,
+    };
   }
 
   return {

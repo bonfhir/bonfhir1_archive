@@ -55,6 +55,7 @@
           }
         },
         "conventionalCommits.scopes": [
+          "charlson-comorbidity-index",
           "cmsdotgov",
           "codegen",
           "core",
@@ -112,13 +113,6 @@
         ],
         "terminal.integrated.defaultProfile.linux": "zsh"
       }
-    }
-  },
-
-  "portsAttributes": {
-    "4000": {
-      "label": "Docs",
-      "onAutoForward": "openBrowserOnce"
     }
   },
 
