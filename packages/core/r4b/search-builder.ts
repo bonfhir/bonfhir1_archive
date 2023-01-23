@@ -47,7 +47,8 @@ export class FhirSearchBuilder {
   public date(
     parameter: string,
     value: Date | string | Array<Date | string> | null | undefined,
-    prefix?: Prefix | null | undefined
+    prefix?: Prefix | null | undefined,
+    replace?: "replace" | null | undefined
   ): FhirSearchBuilder {
     if (value) {
       const parameterValues = Array.isArray(value)
@@ -57,7 +58,7 @@ export class FhirSearchBuilder {
         return this;
       }
 
-      this.searchParams.push([
+      this.push(
         parameter,
         parameterValues
           .map(
@@ -67,7 +68,8 @@ export class FhirSearchBuilder {
               }`
           )
           .join(","),
-      ]);
+        replace
+      );
     }
     return this;
   }
@@ -82,12 +84,16 @@ export class FhirSearchBuilder {
    *    > fhirSearch().missing("probability").href
    *    > "probability:missing=true"
    */
-  public missing(parameter: string, isMissing = true): FhirSearchBuilder {
-    this.searchParams.push([
+  public missing(
+    parameter: string,
+    isMissing = true,
+    replace?: "replace" | null | undefined
+  ): FhirSearchBuilder {
+    return this.push(
       `${parameter}:missing`,
       isMissing ? "true" : "false",
-    ]);
-    return this;
+      replace
+    );
   }
 
   /**
@@ -107,16 +113,18 @@ export class FhirSearchBuilder {
   public number(
     parameter: string,
     value: number | string | Array<number | string> | null | undefined,
-    prefix?: Prefix | null | undefined
+    prefix?: Prefix | null | undefined,
+    replace?: "replace" | null | undefined
   ): FhirSearchBuilder {
     if (value) {
       const parameterValues = Array.isArray(value)
         ? value.filter((x) => x)
         : [value];
-      this.searchParams.push([
+      this.push(
         parameter,
         parameterValues.map((x) => `${prefix || ""}${x}`).join(","),
-      ]);
+        replace
+      );
     }
     return this;
   }
@@ -153,7 +161,8 @@ export class FhirSearchBuilder {
         >
       | null
       | undefined,
-    prefix?: Prefix | null | undefined
+    prefix?: Prefix | null | undefined,
+    replace?: "replace" | null | undefined
   ): FhirSearchBuilder {
     if (number === null || number === undefined || number === "") {
       return this;
@@ -167,7 +176,7 @@ export class FhirSearchBuilder {
       return this;
     }
 
-    this.searchParams.push([
+    this.push(
       parameter,
       parameterValues
         .map(
@@ -181,7 +190,8 @@ export class FhirSearchBuilder {
             }`
         )
         .join(","),
-    ]);
+      replace
+    );
 
     return this;
   }
@@ -211,7 +221,8 @@ export class FhirSearchBuilder {
       | Array<{ id: string; type: string } | string>
       | null
       | undefined,
-    modifier?: ResourceType | null | undefined
+    modifier?: ResourceType | null | undefined,
+    replace?: "replace" | null | undefined
   ): FhirSearchBuilder;
   public reference(
     parameter: string,
@@ -230,7 +241,8 @@ export class FhirSearchBuilder {
             }
           | string
         >,
-    modifier: ":identifier"
+    modifier: ":identifier",
+    replace?: "replace" | null | undefined
   ): FhirSearchBuilder;
   public reference(
     parameter: string,
@@ -253,7 +265,8 @@ export class FhirSearchBuilder {
         >
       | null
       | undefined,
-    modifier?: ":identifier" | ResourceType | null | undefined
+    modifier?: ":identifier" | ResourceType | null | undefined,
+    replace?: "replace" | null | undefined
   ): FhirSearchBuilder;
   public reference(
     parameter: string,
@@ -276,7 +289,8 @@ export class FhirSearchBuilder {
         >
       | null
       | undefined,
-    modifier?: ":identifier" | ResourceType | null | undefined
+    modifier?: ":identifier" | ResourceType | null | undefined,
+    replace?: "replace" | null | undefined
   ): FhirSearchBuilder {
     if (!id) {
       return this;
@@ -299,7 +313,9 @@ export class FhirSearchBuilder {
                   value?: string | null | undefined;
                 }
               | string
-            >
+            >,
+        null,
+        replace
       );
 
       return this;
@@ -325,10 +341,11 @@ export class FhirSearchBuilder {
       return this;
     }
 
-    this.searchParams.push([
+    this.push(
       `${parameter}${modifier ? `:${modifier}` : ""}`,
       renderedParameterValues.join(","),
-    ]);
+      replace
+    );
 
     return this;
   }
@@ -357,14 +374,16 @@ export class FhirSearchBuilder {
   public string(
     parameter: string,
     value: string | string[] | null | undefined,
-    modifier?: StringModifier | null | undefined
+    modifier?: StringModifier | null | undefined,
+    replace?: "replace" | null | undefined
   ): FhirSearchBuilder {
     if (value?.length) {
       const parameterValues = typeof value === "string" ? [value] : value;
-      this.searchParams.push([
+      this.push(
         `${parameter}${modifier || ""}`,
         parameterValues.map((x) => encodeURIComponent(x)).join(","),
-      ]);
+        replace
+      );
     }
     return this;
   }
@@ -405,7 +424,8 @@ export class FhirSearchBuilder {
         >
       | null
       | undefined,
-    modifier?: TokenModifier | null | undefined
+    modifier?: TokenModifier | null | undefined,
+    replace?: "replace" | null | undefined
   ): FhirSearchBuilder {
     if (value === null || value === undefined) {
       return this;
@@ -424,10 +444,11 @@ export class FhirSearchBuilder {
       .join(",");
 
     if (renderedParameterValues) {
-      this.searchParams.push([
+      this.push(
         `${parameter}${modifier || ""}`,
         renderedParameterValues,
-      ]);
+        replace
+      );
     }
     return this;
   }
@@ -469,7 +490,8 @@ export class FhirSearchBuilder {
   public uri(
     parameter: string,
     value: string | URL | Array<string | URL> | null | undefined,
-    modifier?: UriModifier | null | undefined
+    modifier?: UriModifier | null | undefined,
+    replace?: "replace" | null | undefined
   ): FhirSearchBuilder {
     if (!value) {
       return this;
@@ -482,11 +504,11 @@ export class FhirSearchBuilder {
       return this;
     }
 
-    this.searchParams.push([
+    return this.push(
       `${parameter}${modifier || ""}`,
       parameterValues.map((x) => encodeURIComponent(x.toString())).join(","),
-    ]);
-    return this;
+      replace
+    );
   }
 
   /**
@@ -513,6 +535,27 @@ export class FhirSearchBuilder {
     return !this.searchParams.length
       ? ""
       : this.searchParams.map(([key, value]) => `${key}=${value}`).join("&");
+  }
+
+  private push(
+    parameter: string,
+    value: string,
+    replace?: "replace" | null | undefined
+  ): FhirSearchBuilder {
+    if (replace) {
+      let foundIndex = 0;
+      while (
+        (foundIndex = this.searchParams.findIndex(
+          (x) => x[0] === parameter
+        )) !== -1
+      ) {
+        this.searchParams.splice(foundIndex, 1);
+      }
+    }
+
+    this.searchParams.push([parameter, value]);
+
+    return this;
   }
 }
 

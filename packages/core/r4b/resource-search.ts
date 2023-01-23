@@ -317,7 +317,31 @@ class ResourceSearchBuilderAccount {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderAccount | SortOrderAccount[]
+  ): ResourceSearchBuilderAccount {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderAccount {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -338,6 +362,8 @@ class ResourceSearchBuilderAccount {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -353,6 +379,16 @@ class ResourceSearchBuilderAccount {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderAccount {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -786,6 +822,50 @@ class ResourceSearchBuilderAccount {
   }
 }
 
+export type SortOrderAccount =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "identifier"
+  | "-identifier"
+  | "name"
+  | "-name"
+  | "owner"
+  | "-owner"
+  | "patient"
+  | "-patient"
+  | "period"
+  | "-period"
+  | "status"
+  | "-status"
+  | "subject"
+  | "-subject"
+  | "type"
+  | "-type";
+
 class ResourceSearchBuilderActivityDefinition {
   readonly resourceType = "ActivityDefinition";
 
@@ -802,7 +882,31 @@ class ResourceSearchBuilderActivityDefinition {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderActivityDefinition | SortOrderActivityDefinition[]
+  ): ResourceSearchBuilderActivityDefinition {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderActivityDefinition {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -823,6 +927,8 @@ class ResourceSearchBuilderActivityDefinition {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -838,6 +944,16 @@ class ResourceSearchBuilderActivityDefinition {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderActivityDefinition {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -1521,6 +1637,74 @@ class ResourceSearchBuilderActivityDefinition {
   }
 }
 
+export type SortOrderActivityDefinition =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "composed-of"
+  | "-composed-of"
+  | "context"
+  | "-context"
+  | "context-quantity"
+  | "-context-quantity"
+  | "context-type"
+  | "-context-type"
+  | "date"
+  | "-date"
+  | "depends-on"
+  | "-depends-on"
+  | "derived-from"
+  | "-derived-from"
+  | "description"
+  | "-description"
+  | "effective"
+  | "-effective"
+  | "identifier"
+  | "-identifier"
+  | "jurisdiction"
+  | "-jurisdiction"
+  | "name"
+  | "-name"
+  | "predecessor"
+  | "-predecessor"
+  | "publisher"
+  | "-publisher"
+  | "status"
+  | "-status"
+  | "successor"
+  | "-successor"
+  | "title"
+  | "-title"
+  | "topic"
+  | "-topic"
+  | "url"
+  | "-url"
+  | "version"
+  | "-version";
+
 class ResourceSearchBuilderAdministrableProductDefinition {
   readonly resourceType = "AdministrableProductDefinition";
 
@@ -1537,7 +1721,33 @@ class ResourceSearchBuilderAdministrableProductDefinition {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters:
+      | SortOrderAdministrableProductDefinition
+      | SortOrderAdministrableProductDefinition[]
+  ): ResourceSearchBuilderAdministrableProductDefinition {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderAdministrableProductDefinition {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -1558,6 +1768,8 @@ class ResourceSearchBuilderAdministrableProductDefinition {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -1573,6 +1785,18 @@ class ResourceSearchBuilderAdministrableProductDefinition {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(
+    value: SummaryValue
+  ): ResourceSearchBuilderAdministrableProductDefinition {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -2038,6 +2262,50 @@ class ResourceSearchBuilderAdministrableProductDefinition {
   }
 }
 
+export type SortOrderAdministrableProductDefinition =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "device"
+  | "-device"
+  | "dose-form"
+  | "-dose-form"
+  | "form-of"
+  | "-form-of"
+  | "identifier"
+  | "-identifier"
+  | "ingredient"
+  | "-ingredient"
+  | "manufactured-item"
+  | "-manufactured-item"
+  | "route"
+  | "-route"
+  | "target-species"
+  | "-target-species";
+
 class ResourceSearchBuilderAdverseEvent {
   readonly resourceType = "AdverseEvent";
 
@@ -2054,7 +2322,31 @@ class ResourceSearchBuilderAdverseEvent {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderAdverseEvent | SortOrderAdverseEvent[]
+  ): ResourceSearchBuilderAdverseEvent {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderAdverseEvent {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -2075,6 +2367,8 @@ class ResourceSearchBuilderAdverseEvent {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -2090,6 +2384,16 @@ class ResourceSearchBuilderAdverseEvent {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderAdverseEvent {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -2653,6 +2957,58 @@ class ResourceSearchBuilderAdverseEvent {
   }
 }
 
+export type SortOrderAdverseEvent =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "actuality"
+  | "-actuality"
+  | "category"
+  | "-category"
+  | "date"
+  | "-date"
+  | "event"
+  | "-event"
+  | "location"
+  | "-location"
+  | "recorder"
+  | "-recorder"
+  | "resultingcondition"
+  | "-resultingcondition"
+  | "seriousness"
+  | "-seriousness"
+  | "severity"
+  | "-severity"
+  | "study"
+  | "-study"
+  | "subject"
+  | "-subject"
+  | "substance"
+  | "-substance";
+
 class ResourceSearchBuilderAllergyIntolerance {
   readonly resourceType = "AllergyIntolerance";
 
@@ -2669,7 +3025,31 @@ class ResourceSearchBuilderAllergyIntolerance {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderAllergyIntolerance | SortOrderAllergyIntolerance[]
+  ): ResourceSearchBuilderAllergyIntolerance {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderAllergyIntolerance {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -2690,6 +3070,8 @@ class ResourceSearchBuilderAllergyIntolerance {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -2705,6 +3087,16 @@ class ResourceSearchBuilderAllergyIntolerance {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderAllergyIntolerance {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -3217,6 +3609,56 @@ class ResourceSearchBuilderAllergyIntolerance {
   }
 }
 
+export type SortOrderAllergyIntolerance =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "asserter"
+  | "-asserter"
+  | "category"
+  | "-category"
+  | "clinical-status"
+  | "-clinical-status"
+  | "criticality"
+  | "-criticality"
+  | "last-date"
+  | "-last-date"
+  | "manifestation"
+  | "-manifestation"
+  | "onset"
+  | "-onset"
+  | "recorder"
+  | "-recorder"
+  | "route"
+  | "-route"
+  | "severity"
+  | "-severity"
+  | "verification-status"
+  | "-verification-status";
+
 class ResourceSearchBuilderAppointment {
   readonly resourceType = "Appointment";
 
@@ -3233,7 +3675,31 @@ class ResourceSearchBuilderAppointment {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderAppointment | SortOrderAppointment[]
+  ): ResourceSearchBuilderAppointment {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderAppointment {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -3254,6 +3720,8 @@ class ResourceSearchBuilderAppointment {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -3269,6 +3737,16 @@ class ResourceSearchBuilderAppointment {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderAppointment {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -3971,6 +4449,68 @@ class ResourceSearchBuilderAppointment {
   }
 }
 
+export type SortOrderAppointment =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "actor"
+  | "-actor"
+  | "appointment-type"
+  | "-appointment-type"
+  | "based-on"
+  | "-based-on"
+  | "date"
+  | "-date"
+  | "identifier"
+  | "-identifier"
+  | "location"
+  | "-location"
+  | "part-status"
+  | "-part-status"
+  | "patient"
+  | "-patient"
+  | "practitioner"
+  | "-practitioner"
+  | "reason-code"
+  | "-reason-code"
+  | "reason-reference"
+  | "-reason-reference"
+  | "service-category"
+  | "-service-category"
+  | "service-type"
+  | "-service-type"
+  | "slot"
+  | "-slot"
+  | "specialty"
+  | "-specialty"
+  | "status"
+  | "-status"
+  | "supporting-info"
+  | "-supporting-info";
+
 class ResourceSearchBuilderAppointmentResponse {
   readonly resourceType = "AppointmentResponse";
 
@@ -3987,7 +4527,31 @@ class ResourceSearchBuilderAppointmentResponse {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderAppointmentResponse | SortOrderAppointmentResponse[]
+  ): ResourceSearchBuilderAppointmentResponse {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderAppointmentResponse {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -4008,6 +4572,8 @@ class ResourceSearchBuilderAppointmentResponse {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -4023,6 +4589,16 @@ class ResourceSearchBuilderAppointmentResponse {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderAppointmentResponse {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -4465,6 +5041,48 @@ class ResourceSearchBuilderAppointmentResponse {
   }
 }
 
+export type SortOrderAppointmentResponse =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "actor"
+  | "-actor"
+  | "appointment"
+  | "-appointment"
+  | "identifier"
+  | "-identifier"
+  | "location"
+  | "-location"
+  | "part-status"
+  | "-part-status"
+  | "patient"
+  | "-patient"
+  | "practitioner"
+  | "-practitioner";
+
 class ResourceSearchBuilderAuditEvent {
   readonly resourceType = "AuditEvent";
 
@@ -4481,7 +5099,31 @@ class ResourceSearchBuilderAuditEvent {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderAuditEvent | SortOrderAuditEvent[]
+  ): ResourceSearchBuilderAuditEvent {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderAuditEvent {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -4502,6 +5144,8 @@ class ResourceSearchBuilderAuditEvent {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -4517,6 +5161,16 @@ class ResourceSearchBuilderAuditEvent {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderAuditEvent {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -5174,6 +5828,70 @@ class ResourceSearchBuilderAuditEvent {
   }
 }
 
+export type SortOrderAuditEvent =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "action"
+  | "-action"
+  | "address"
+  | "-address"
+  | "agent"
+  | "-agent"
+  | "agent-name"
+  | "-agent-name"
+  | "agent-role"
+  | "-agent-role"
+  | "altid"
+  | "-altid"
+  | "date"
+  | "-date"
+  | "entity"
+  | "-entity"
+  | "entity-name"
+  | "-entity-name"
+  | "entity-role"
+  | "-entity-role"
+  | "entity-type"
+  | "-entity-type"
+  | "outcome"
+  | "-outcome"
+  | "patient"
+  | "-patient"
+  | "policy"
+  | "-policy"
+  | "site"
+  | "-site"
+  | "source"
+  | "-source"
+  | "subtype"
+  | "-subtype"
+  | "type"
+  | "-type";
+
 class ResourceSearchBuilderBasic {
   readonly resourceType = "Basic";
 
@@ -5190,7 +5908,31 @@ class ResourceSearchBuilderBasic {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderBasic | SortOrderBasic[]
+  ): ResourceSearchBuilderBasic {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderBasic {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -5211,6 +5953,8 @@ class ResourceSearchBuilderBasic {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -5226,6 +5970,16 @@ class ResourceSearchBuilderBasic {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderBasic {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -5621,6 +6375,46 @@ class ResourceSearchBuilderBasic {
   }
 }
 
+export type SortOrderBasic =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "author"
+  | "-author"
+  | "code"
+  | "-code"
+  | "created"
+  | "-created"
+  | "identifier"
+  | "-identifier"
+  | "patient"
+  | "-patient"
+  | "subject"
+  | "-subject";
+
 class ResourceSearchBuilderBiologicallyDerivedProduct {
   readonly resourceType = "BiologicallyDerivedProduct";
 
@@ -5637,7 +6431,33 @@ class ResourceSearchBuilderBiologicallyDerivedProduct {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters:
+      | SortOrderBiologicallyDerivedProduct
+      | SortOrderBiologicallyDerivedProduct[]
+  ): ResourceSearchBuilderBiologicallyDerivedProduct {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderBiologicallyDerivedProduct {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -5658,6 +6478,8 @@ class ResourceSearchBuilderBiologicallyDerivedProduct {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -5673,6 +6495,18 @@ class ResourceSearchBuilderBiologicallyDerivedProduct {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(
+    value: SummaryValue
+  ): ResourceSearchBuilderBiologicallyDerivedProduct {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -5916,6 +6750,34 @@ class ResourceSearchBuilderBiologicallyDerivedProduct {
   }
 }
 
+export type SortOrderBiologicallyDerivedProduct =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type";
+
 class ResourceSearchBuilderBodyStructure {
   readonly resourceType = "BodyStructure";
 
@@ -5932,7 +6794,31 @@ class ResourceSearchBuilderBodyStructure {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderBodyStructure | SortOrderBodyStructure[]
+  ): ResourceSearchBuilderBodyStructure {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderBodyStructure {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -5953,6 +6839,8 @@ class ResourceSearchBuilderBodyStructure {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -5968,6 +6856,16 @@ class ResourceSearchBuilderBodyStructure {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderBodyStructure {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -6321,6 +7219,42 @@ class ResourceSearchBuilderBodyStructure {
   }
 }
 
+export type SortOrderBodyStructure =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "identifier"
+  | "-identifier"
+  | "location"
+  | "-location"
+  | "morphology"
+  | "-morphology"
+  | "patient"
+  | "-patient";
+
 class ResourceSearchBuilderCapabilityStatement {
   readonly resourceType = "CapabilityStatement";
 
@@ -6337,7 +7271,31 @@ class ResourceSearchBuilderCapabilityStatement {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderCapabilityStatement | SortOrderCapabilityStatement[]
+  ): ResourceSearchBuilderCapabilityStatement {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderCapabilityStatement {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -6358,6 +7316,8 @@ class ResourceSearchBuilderCapabilityStatement {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -6373,6 +7333,16 @@ class ResourceSearchBuilderCapabilityStatement {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderCapabilityStatement {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -6849,6 +7819,52 @@ class ResourceSearchBuilderCapabilityStatement {
   }
 }
 
+export type SortOrderCapabilityStatement =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "fhirversion"
+  | "-fhirversion"
+  | "format"
+  | "-format"
+  | "guide"
+  | "-guide"
+  | "mode"
+  | "-mode"
+  | "resource"
+  | "-resource"
+  | "resource-profile"
+  | "-resource-profile"
+  | "security-service"
+  | "-security-service"
+  | "software"
+  | "-software"
+  | "supported-profile"
+  | "-supported-profile";
+
 class ResourceSearchBuilderCarePlan {
   readonly resourceType = "CarePlan";
 
@@ -6865,7 +7881,31 @@ class ResourceSearchBuilderCarePlan {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderCarePlan | SortOrderCarePlan[]
+  ): ResourceSearchBuilderCarePlan {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderCarePlan {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -6886,6 +7926,8 @@ class ResourceSearchBuilderCarePlan {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -6901,6 +7943,16 @@ class ResourceSearchBuilderCarePlan {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderCarePlan {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -7593,6 +8645,68 @@ class ResourceSearchBuilderCarePlan {
   }
 }
 
+export type SortOrderCarePlan =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "activity-code"
+  | "-activity-code"
+  | "activity-date"
+  | "-activity-date"
+  | "activity-reference"
+  | "-activity-reference"
+  | "based-on"
+  | "-based-on"
+  | "care-team"
+  | "-care-team"
+  | "category"
+  | "-category"
+  | "condition"
+  | "-condition"
+  | "encounter"
+  | "-encounter"
+  | "goal"
+  | "-goal"
+  | "instantiates-canonical"
+  | "-instantiates-canonical"
+  | "instantiates-uri"
+  | "-instantiates-uri"
+  | "intent"
+  | "-intent"
+  | "part-of"
+  | "-part-of"
+  | "performer"
+  | "-performer"
+  | "replaces"
+  | "-replaces"
+  | "status"
+  | "-status"
+  | "subject"
+  | "-subject";
+
 class ResourceSearchBuilderCareTeam {
   readonly resourceType = "CareTeam";
 
@@ -7609,7 +8723,31 @@ class ResourceSearchBuilderCareTeam {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderCareTeam | SortOrderCareTeam[]
+  ): ResourceSearchBuilderCareTeam {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderCareTeam {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -7630,6 +8768,8 @@ class ResourceSearchBuilderCareTeam {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -7645,6 +8785,16 @@ class ResourceSearchBuilderCareTeam {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderCareTeam {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -8029,6 +9179,44 @@ class ResourceSearchBuilderCareTeam {
   }
 }
 
+export type SortOrderCareTeam =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "category"
+  | "-category"
+  | "encounter"
+  | "-encounter"
+  | "participant"
+  | "-participant"
+  | "status"
+  | "-status"
+  | "subject"
+  | "-subject";
+
 class ResourceSearchBuilderCatalogEntry {
   readonly resourceType = "CatalogEntry";
 
@@ -8045,7 +9233,31 @@ class ResourceSearchBuilderCatalogEntry {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderCatalogEntry | SortOrderCatalogEntry[]
+  ): ResourceSearchBuilderCatalogEntry {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderCatalogEntry {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -8066,6 +9278,8 @@ class ResourceSearchBuilderCatalogEntry {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -8081,6 +9295,16 @@ class ResourceSearchBuilderCatalogEntry {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderCatalogEntry {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -8324,6 +9548,34 @@ class ResourceSearchBuilderCatalogEntry {
   }
 }
 
+export type SortOrderCatalogEntry =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type";
+
 class ResourceSearchBuilderChargeItem {
   readonly resourceType = "ChargeItem";
 
@@ -8340,7 +9592,31 @@ class ResourceSearchBuilderChargeItem {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderChargeItem | SortOrderChargeItem[]
+  ): ResourceSearchBuilderChargeItem {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderChargeItem {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -8361,6 +9637,8 @@ class ResourceSearchBuilderChargeItem {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -8376,6 +9654,16 @@ class ResourceSearchBuilderChargeItem {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderChargeItem {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -9052,6 +10340,68 @@ class ResourceSearchBuilderChargeItem {
   }
 }
 
+export type SortOrderChargeItem =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "account"
+  | "-account"
+  | "code"
+  | "-code"
+  | "context"
+  | "-context"
+  | "entered-date"
+  | "-entered-date"
+  | "enterer"
+  | "-enterer"
+  | "factor-override"
+  | "-factor-override"
+  | "identifier"
+  | "-identifier"
+  | "occurrence"
+  | "-occurrence"
+  | "patient"
+  | "-patient"
+  | "performer-actor"
+  | "-performer-actor"
+  | "performer-function"
+  | "-performer-function"
+  | "performing-organization"
+  | "-performing-organization"
+  | "price-override"
+  | "-price-override"
+  | "quantity"
+  | "-quantity"
+  | "requesting-organization"
+  | "-requesting-organization"
+  | "service"
+  | "-service"
+  | "subject"
+  | "-subject";
+
 class ResourceSearchBuilderChargeItemDefinition {
   readonly resourceType = "ChargeItemDefinition";
 
@@ -9068,7 +10418,31 @@ class ResourceSearchBuilderChargeItemDefinition {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderChargeItemDefinition | SortOrderChargeItemDefinition[]
+  ): ResourceSearchBuilderChargeItemDefinition {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderChargeItemDefinition {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -9089,6 +10463,8 @@ class ResourceSearchBuilderChargeItemDefinition {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -9104,6 +10480,16 @@ class ResourceSearchBuilderChargeItemDefinition {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderChargeItemDefinition {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -9604,6 +10990,60 @@ class ResourceSearchBuilderChargeItemDefinition {
   }
 }
 
+export type SortOrderChargeItemDefinition =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "context"
+  | "-context"
+  | "context-quantity"
+  | "-context-quantity"
+  | "context-type"
+  | "-context-type"
+  | "date"
+  | "-date"
+  | "description"
+  | "-description"
+  | "effective"
+  | "-effective"
+  | "identifier"
+  | "-identifier"
+  | "jurisdiction"
+  | "-jurisdiction"
+  | "publisher"
+  | "-publisher"
+  | "status"
+  | "-status"
+  | "title"
+  | "-title"
+  | "url"
+  | "-url"
+  | "version"
+  | "-version";
+
 class ResourceSearchBuilderCitation {
   readonly resourceType = "Citation";
 
@@ -9620,7 +11060,31 @@ class ResourceSearchBuilderCitation {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderCitation | SortOrderCitation[]
+  ): ResourceSearchBuilderCitation {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderCitation {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -9641,6 +11105,8 @@ class ResourceSearchBuilderCitation {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -9656,6 +11122,16 @@ class ResourceSearchBuilderCitation {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderCitation {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -10167,6 +11643,62 @@ class ResourceSearchBuilderCitation {
   }
 }
 
+export type SortOrderCitation =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "context"
+  | "-context"
+  | "context-quantity"
+  | "-context-quantity"
+  | "context-type"
+  | "-context-type"
+  | "date"
+  | "-date"
+  | "description"
+  | "-description"
+  | "effective"
+  | "-effective"
+  | "identifier"
+  | "-identifier"
+  | "jurisdiction"
+  | "-jurisdiction"
+  | "name"
+  | "-name"
+  | "publisher"
+  | "-publisher"
+  | "status"
+  | "-status"
+  | "title"
+  | "-title"
+  | "url"
+  | "-url"
+  | "version"
+  | "-version";
+
 class ResourceSearchBuilderClaim {
   readonly resourceType = "Claim";
 
@@ -10183,7 +11715,31 @@ class ResourceSearchBuilderClaim {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderClaim | SortOrderClaim[]
+  ): ResourceSearchBuilderClaim {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderClaim {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -10204,6 +11760,8 @@ class ResourceSearchBuilderClaim {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -10219,6 +11777,16 @@ class ResourceSearchBuilderClaim {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderClaim {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -10929,6 +12497,68 @@ class ResourceSearchBuilderClaim {
   }
 }
 
+export type SortOrderClaim =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "care-team"
+  | "-care-team"
+  | "created"
+  | "-created"
+  | "detail-udi"
+  | "-detail-udi"
+  | "encounter"
+  | "-encounter"
+  | "enterer"
+  | "-enterer"
+  | "facility"
+  | "-facility"
+  | "identifier"
+  | "-identifier"
+  | "insurer"
+  | "-insurer"
+  | "item-udi"
+  | "-item-udi"
+  | "patient"
+  | "-patient"
+  | "payee"
+  | "-payee"
+  | "priority"
+  | "-priority"
+  | "procedure-udi"
+  | "-procedure-udi"
+  | "provider"
+  | "-provider"
+  | "status"
+  | "-status"
+  | "subdetail-udi"
+  | "-subdetail-udi"
+  | "use"
+  | "-use";
+
 class ResourceSearchBuilderClaimResponse {
   readonly resourceType = "ClaimResponse";
 
@@ -10945,7 +12575,31 @@ class ResourceSearchBuilderClaimResponse {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderClaimResponse | SortOrderClaimResponse[]
+  ): ResourceSearchBuilderClaimResponse {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderClaimResponse {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -10966,6 +12620,8 @@ class ResourceSearchBuilderClaimResponse {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -10981,6 +12637,16 @@ class ResourceSearchBuilderClaimResponse {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderClaimResponse {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -11481,6 +13147,56 @@ class ResourceSearchBuilderClaimResponse {
   }
 }
 
+export type SortOrderClaimResponse =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "created"
+  | "-created"
+  | "disposition"
+  | "-disposition"
+  | "identifier"
+  | "-identifier"
+  | "insurer"
+  | "-insurer"
+  | "outcome"
+  | "-outcome"
+  | "patient"
+  | "-patient"
+  | "payment-date"
+  | "-payment-date"
+  | "request"
+  | "-request"
+  | "requestor"
+  | "-requestor"
+  | "status"
+  | "-status"
+  | "use"
+  | "-use";
+
 class ResourceSearchBuilderClinicalImpression {
   readonly resourceType = "ClinicalImpression";
 
@@ -11497,7 +13213,31 @@ class ResourceSearchBuilderClinicalImpression {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderClinicalImpression | SortOrderClinicalImpression[]
+  ): ResourceSearchBuilderClinicalImpression {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderClinicalImpression {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -11518,6 +13258,8 @@ class ResourceSearchBuilderClinicalImpression {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -11533,6 +13275,16 @@ class ResourceSearchBuilderClinicalImpression {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderClinicalImpression {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -12089,6 +13841,56 @@ class ResourceSearchBuilderClinicalImpression {
   }
 }
 
+export type SortOrderClinicalImpression =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "assessor"
+  | "-assessor"
+  | "encounter"
+  | "-encounter"
+  | "finding-code"
+  | "-finding-code"
+  | "finding-ref"
+  | "-finding-ref"
+  | "identifier"
+  | "-identifier"
+  | "investigation"
+  | "-investigation"
+  | "previous"
+  | "-previous"
+  | "problem"
+  | "-problem"
+  | "status"
+  | "-status"
+  | "subject"
+  | "-subject"
+  | "supporting-info"
+  | "-supporting-info";
+
 class ResourceSearchBuilderClinicalUseDefinition {
   readonly resourceType = "ClinicalUseDefinition";
 
@@ -12105,7 +13907,33 @@ class ResourceSearchBuilderClinicalUseDefinition {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters:
+      | SortOrderClinicalUseDefinition
+      | SortOrderClinicalUseDefinition[]
+  ): ResourceSearchBuilderClinicalUseDefinition {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderClinicalUseDefinition {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -12126,6 +13954,8 @@ class ResourceSearchBuilderClinicalUseDefinition {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -12141,6 +13971,16 @@ class ResourceSearchBuilderClinicalUseDefinition {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderClinicalUseDefinition {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -12691,6 +14531,56 @@ class ResourceSearchBuilderClinicalUseDefinition {
   }
 }
 
+export type SortOrderClinicalUseDefinition =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "contraindication"
+  | "-contraindication"
+  | "contraindication-reference"
+  | "-contraindication-reference"
+  | "effect"
+  | "-effect"
+  | "effect-reference"
+  | "-effect-reference"
+  | "identifier"
+  | "-identifier"
+  | "indication"
+  | "-indication"
+  | "indication-reference"
+  | "-indication-reference"
+  | "interaction"
+  | "-interaction"
+  | "product"
+  | "-product"
+  | "subject"
+  | "-subject"
+  | "type"
+  | "-type";
+
 class ResourceSearchBuilderCodeSystem {
   readonly resourceType = "CodeSystem";
 
@@ -12707,7 +14597,31 @@ class ResourceSearchBuilderCodeSystem {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderCodeSystem | SortOrderCodeSystem[]
+  ): ResourceSearchBuilderCodeSystem {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderCodeSystem {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -12728,6 +14642,8 @@ class ResourceSearchBuilderCodeSystem {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -12743,6 +14659,16 @@ class ResourceSearchBuilderCodeSystem {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderCodeSystem {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -13107,6 +15033,44 @@ class ResourceSearchBuilderCodeSystem {
   }
 }
 
+export type SortOrderCodeSystem =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "code"
+  | "-code"
+  | "content-mode"
+  | "-content-mode"
+  | "language"
+  | "-language"
+  | "supplements"
+  | "-supplements"
+  | "system"
+  | "-system";
+
 class ResourceSearchBuilderCommunication {
   readonly resourceType = "Communication";
 
@@ -13123,7 +15087,31 @@ class ResourceSearchBuilderCommunication {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderCommunication | SortOrderCommunication[]
+  ): ResourceSearchBuilderCommunication {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderCommunication {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -13144,6 +15132,8 @@ class ResourceSearchBuilderCommunication {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -13159,6 +15149,16 @@ class ResourceSearchBuilderCommunication {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderCommunication {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -13775,6 +15775,64 @@ class ResourceSearchBuilderCommunication {
   }
 }
 
+export type SortOrderCommunication =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "based-on"
+  | "-based-on"
+  | "category"
+  | "-category"
+  | "encounter"
+  | "-encounter"
+  | "identifier"
+  | "-identifier"
+  | "instantiates-canonical"
+  | "-instantiates-canonical"
+  | "instantiates-uri"
+  | "-instantiates-uri"
+  | "medium"
+  | "-medium"
+  | "part-of"
+  | "-part-of"
+  | "patient"
+  | "-patient"
+  | "received"
+  | "-received"
+  | "recipient"
+  | "-recipient"
+  | "sender"
+  | "-sender"
+  | "sent"
+  | "-sent"
+  | "status"
+  | "-status"
+  | "subject"
+  | "-subject";
+
 class ResourceSearchBuilderCommunicationRequest {
   readonly resourceType = "CommunicationRequest";
 
@@ -13791,7 +15849,31 @@ class ResourceSearchBuilderCommunicationRequest {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderCommunicationRequest | SortOrderCommunicationRequest[]
+  ): ResourceSearchBuilderCommunicationRequest {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderCommunicationRequest {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -13812,6 +15894,8 @@ class ResourceSearchBuilderCommunicationRequest {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -13827,6 +15911,16 @@ class ResourceSearchBuilderCommunicationRequest {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderCommunicationRequest {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -14486,6 +16580,66 @@ class ResourceSearchBuilderCommunicationRequest {
   }
 }
 
+export type SortOrderCommunicationRequest =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "authored"
+  | "-authored"
+  | "based-on"
+  | "-based-on"
+  | "category"
+  | "-category"
+  | "encounter"
+  | "-encounter"
+  | "group-identifier"
+  | "-group-identifier"
+  | "identifier"
+  | "-identifier"
+  | "medium"
+  | "-medium"
+  | "occurrence"
+  | "-occurrence"
+  | "patient"
+  | "-patient"
+  | "priority"
+  | "-priority"
+  | "recipient"
+  | "-recipient"
+  | "replaces"
+  | "-replaces"
+  | "requester"
+  | "-requester"
+  | "sender"
+  | "-sender"
+  | "status"
+  | "-status"
+  | "subject"
+  | "-subject";
+
 class ResourceSearchBuilderCompartmentDefinition {
   readonly resourceType = "CompartmentDefinition";
 
@@ -14502,7 +16656,33 @@ class ResourceSearchBuilderCompartmentDefinition {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters:
+      | SortOrderCompartmentDefinition
+      | SortOrderCompartmentDefinition[]
+  ): ResourceSearchBuilderCompartmentDefinition {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderCompartmentDefinition {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -14523,6 +16703,8 @@ class ResourceSearchBuilderCompartmentDefinition {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -14538,6 +16720,16 @@ class ResourceSearchBuilderCompartmentDefinition {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderCompartmentDefinition {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -14835,6 +17027,38 @@ class ResourceSearchBuilderCompartmentDefinition {
   }
 }
 
+export type SortOrderCompartmentDefinition =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "code"
+  | "-code"
+  | "resource"
+  | "-resource";
+
 class ResourceSearchBuilderComposition {
   readonly resourceType = "Composition";
 
@@ -14851,7 +17075,31 @@ class ResourceSearchBuilderComposition {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderComposition | SortOrderComposition[]
+  ): ResourceSearchBuilderComposition {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderComposition {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -14872,6 +17120,8 @@ class ResourceSearchBuilderComposition {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -14887,6 +17137,16 @@ class ResourceSearchBuilderComposition {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderComposition {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -15459,6 +17719,60 @@ class ResourceSearchBuilderComposition {
   }
 }
 
+export type SortOrderComposition =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "attester"
+  | "-attester"
+  | "author"
+  | "-author"
+  | "category"
+  | "-category"
+  | "confidentiality"
+  | "-confidentiality"
+  | "context"
+  | "-context"
+  | "entry"
+  | "-entry"
+  | "period"
+  | "-period"
+  | "related-id"
+  | "-related-id"
+  | "related-ref"
+  | "-related-ref"
+  | "section"
+  | "-section"
+  | "status"
+  | "-status"
+  | "subject"
+  | "-subject"
+  | "title"
+  | "-title";
+
 class ResourceSearchBuilderConceptMap {
   readonly resourceType = "ConceptMap";
 
@@ -15475,7 +17789,31 @@ class ResourceSearchBuilderConceptMap {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderConceptMap | SortOrderConceptMap[]
+  ): ResourceSearchBuilderConceptMap {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderConceptMap {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -15496,6 +17834,8 @@ class ResourceSearchBuilderConceptMap {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -15511,6 +17851,16 @@ class ResourceSearchBuilderConceptMap {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderConceptMap {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -16019,6 +18369,60 @@ class ResourceSearchBuilderConceptMap {
   }
 }
 
+export type SortOrderConceptMap =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "dependson"
+  | "-dependson"
+  | "other"
+  | "-other"
+  | "product"
+  | "-product"
+  | "source"
+  | "-source"
+  | "source-code"
+  | "-source-code"
+  | "source-system"
+  | "-source-system"
+  | "source-uri"
+  | "-source-uri"
+  | "target"
+  | "-target"
+  | "target-code"
+  | "-target-code"
+  | "target-system"
+  | "-target-system"
+  | "target-uri"
+  | "-target-uri"
+  | "title"
+  | "-title"
+  | "url"
+  | "-url";
+
 class ResourceSearchBuilderCondition {
   readonly resourceType = "Condition";
 
@@ -16035,7 +18439,31 @@ class ResourceSearchBuilderCondition {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderCondition | SortOrderCondition[]
+  ): ResourceSearchBuilderCondition {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderCondition {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -16056,6 +18484,8 @@ class ResourceSearchBuilderCondition {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -16071,6 +18501,16 @@ class ResourceSearchBuilderCondition {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderCondition {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -16732,6 +19172,70 @@ class ResourceSearchBuilderCondition {
   }
 }
 
+export type SortOrderCondition =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "abatement-age"
+  | "-abatement-age"
+  | "abatement-date"
+  | "-abatement-date"
+  | "abatement-string"
+  | "-abatement-string"
+  | "asserter"
+  | "-asserter"
+  | "body-site"
+  | "-body-site"
+  | "category"
+  | "-category"
+  | "clinical-status"
+  | "-clinical-status"
+  | "encounter"
+  | "-encounter"
+  | "evidence"
+  | "-evidence"
+  | "evidence-detail"
+  | "-evidence-detail"
+  | "onset-age"
+  | "-onset-age"
+  | "onset-date"
+  | "-onset-date"
+  | "onset-info"
+  | "-onset-info"
+  | "recorded-date"
+  | "-recorded-date"
+  | "severity"
+  | "-severity"
+  | "stage"
+  | "-stage"
+  | "subject"
+  | "-subject"
+  | "verification-status"
+  | "-verification-status";
+
 class ResourceSearchBuilderConsent {
   readonly resourceType = "Consent";
 
@@ -16748,7 +19252,31 @@ class ResourceSearchBuilderConsent {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderConsent | SortOrderConsent[]
+  ): ResourceSearchBuilderConsent {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderConsent {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -16769,6 +19297,8 @@ class ResourceSearchBuilderConsent {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -16784,6 +19314,16 @@ class ResourceSearchBuilderConsent {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderConsent {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -17345,6 +19885,58 @@ class ResourceSearchBuilderConsent {
   }
 }
 
+export type SortOrderConsent =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "action"
+  | "-action"
+  | "actor"
+  | "-actor"
+  | "category"
+  | "-category"
+  | "consentor"
+  | "-consentor"
+  | "data"
+  | "-data"
+  | "organization"
+  | "-organization"
+  | "period"
+  | "-period"
+  | "purpose"
+  | "-purpose"
+  | "scope"
+  | "-scope"
+  | "security-label"
+  | "-security-label"
+  | "source-reference"
+  | "-source-reference"
+  | "status"
+  | "-status";
+
 class ResourceSearchBuilderContract {
   readonly resourceType = "Contract";
 
@@ -17361,7 +19953,31 @@ class ResourceSearchBuilderContract {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderContract | SortOrderContract[]
+  ): ResourceSearchBuilderContract {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderContract {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -17382,6 +19998,8 @@ class ResourceSearchBuilderContract {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -17397,6 +20015,16 @@ class ResourceSearchBuilderContract {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderContract {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -17872,6 +20500,54 @@ class ResourceSearchBuilderContract {
   }
 }
 
+export type SortOrderContract =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "authority"
+  | "-authority"
+  | "domain"
+  | "-domain"
+  | "identifier"
+  | "-identifier"
+  | "instantiates"
+  | "-instantiates"
+  | "issued"
+  | "-issued"
+  | "patient"
+  | "-patient"
+  | "signer"
+  | "-signer"
+  | "status"
+  | "-status"
+  | "subject"
+  | "-subject"
+  | "url"
+  | "-url";
+
 class ResourceSearchBuilderCoverage {
   readonly resourceType = "Coverage";
 
@@ -17888,7 +20564,31 @@ class ResourceSearchBuilderCoverage {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderCoverage | SortOrderCoverage[]
+  ): ResourceSearchBuilderCoverage {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderCoverage {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -17909,6 +20609,8 @@ class ResourceSearchBuilderCoverage {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -17924,6 +20626,16 @@ class ResourceSearchBuilderCoverage {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderCoverage {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -18442,6 +21154,56 @@ class ResourceSearchBuilderCoverage {
   }
 }
 
+export type SortOrderCoverage =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "beneficiary"
+  | "-beneficiary"
+  | "class-type"
+  | "-class-type"
+  | "class-value"
+  | "-class-value"
+  | "dependent"
+  | "-dependent"
+  | "identifier"
+  | "-identifier"
+  | "patient"
+  | "-patient"
+  | "payor"
+  | "-payor"
+  | "policy-holder"
+  | "-policy-holder"
+  | "status"
+  | "-status"
+  | "subscriber"
+  | "-subscriber"
+  | "type"
+  | "-type";
+
 class ResourceSearchBuilderCoverageEligibilityRequest {
   readonly resourceType = "CoverageEligibilityRequest";
 
@@ -18458,7 +21220,33 @@ class ResourceSearchBuilderCoverageEligibilityRequest {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters:
+      | SortOrderCoverageEligibilityRequest
+      | SortOrderCoverageEligibilityRequest[]
+  ): ResourceSearchBuilderCoverageEligibilityRequest {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderCoverageEligibilityRequest {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -18479,6 +21267,8 @@ class ResourceSearchBuilderCoverageEligibilityRequest {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -18494,6 +21284,18 @@ class ResourceSearchBuilderCoverageEligibilityRequest {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(
+    value: SummaryValue
+  ): ResourceSearchBuilderCoverageEligibilityRequest {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -18918,6 +21720,48 @@ class ResourceSearchBuilderCoverageEligibilityRequest {
   }
 }
 
+export type SortOrderCoverageEligibilityRequest =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "created"
+  | "-created"
+  | "enterer"
+  | "-enterer"
+  | "facility"
+  | "-facility"
+  | "identifier"
+  | "-identifier"
+  | "patient"
+  | "-patient"
+  | "provider"
+  | "-provider"
+  | "status"
+  | "-status";
+
 class ResourceSearchBuilderCoverageEligibilityResponse {
   readonly resourceType = "CoverageEligibilityResponse";
 
@@ -18934,7 +21778,33 @@ class ResourceSearchBuilderCoverageEligibilityResponse {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters:
+      | SortOrderCoverageEligibilityResponse
+      | SortOrderCoverageEligibilityResponse[]
+  ): ResourceSearchBuilderCoverageEligibilityResponse {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderCoverageEligibilityResponse {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -18955,6 +21825,8 @@ class ResourceSearchBuilderCoverageEligibilityResponse {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -18970,6 +21842,18 @@ class ResourceSearchBuilderCoverageEligibilityResponse {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(
+    value: SummaryValue
+  ): ResourceSearchBuilderCoverageEligibilityResponse {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -19432,6 +22316,52 @@ class ResourceSearchBuilderCoverageEligibilityResponse {
   }
 }
 
+export type SortOrderCoverageEligibilityResponse =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "created"
+  | "-created"
+  | "disposition"
+  | "-disposition"
+  | "identifier"
+  | "-identifier"
+  | "insurer"
+  | "-insurer"
+  | "outcome"
+  | "-outcome"
+  | "patient"
+  | "-patient"
+  | "request"
+  | "-request"
+  | "requestor"
+  | "-requestor"
+  | "status"
+  | "-status";
+
 class ResourceSearchBuilderDetectedIssue {
   readonly resourceType = "DetectedIssue";
 
@@ -19448,7 +22378,31 @@ class ResourceSearchBuilderDetectedIssue {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderDetectedIssue | SortOrderDetectedIssue[]
+  ): ResourceSearchBuilderDetectedIssue {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderDetectedIssue {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -19469,6 +22423,8 @@ class ResourceSearchBuilderDetectedIssue {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -19484,6 +22440,16 @@ class ResourceSearchBuilderDetectedIssue {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderDetectedIssue {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -19823,6 +22789,42 @@ class ResourceSearchBuilderDetectedIssue {
   }
 }
 
+export type SortOrderDetectedIssue =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "author"
+  | "-author"
+  | "code"
+  | "-code"
+  | "identified"
+  | "-identified"
+  | "implicated"
+  | "-implicated";
+
 class ResourceSearchBuilderDevice {
   readonly resourceType = "Device";
 
@@ -19839,7 +22841,31 @@ class ResourceSearchBuilderDevice {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderDevice | SortOrderDevice[]
+  ): ResourceSearchBuilderDevice {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderDevice {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -19860,6 +22886,8 @@ class ResourceSearchBuilderDevice {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -19875,6 +22903,16 @@ class ResourceSearchBuilderDevice {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderDevice {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -20352,6 +23390,58 @@ class ResourceSearchBuilderDevice {
   }
 }
 
+export type SortOrderDevice =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "device-name"
+  | "-device-name"
+  | "identifier"
+  | "-identifier"
+  | "location"
+  | "-location"
+  | "manufacturer"
+  | "-manufacturer"
+  | "model"
+  | "-model"
+  | "organization"
+  | "-organization"
+  | "patient"
+  | "-patient"
+  | "status"
+  | "-status"
+  | "type"
+  | "-type"
+  | "udi-carrier"
+  | "-udi-carrier"
+  | "udi-di"
+  | "-udi-di"
+  | "url"
+  | "-url";
+
 class ResourceSearchBuilderDeviceDefinition {
   readonly resourceType = "DeviceDefinition";
 
@@ -20368,7 +23458,31 @@ class ResourceSearchBuilderDeviceDefinition {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderDeviceDefinition | SortOrderDeviceDefinition[]
+  ): ResourceSearchBuilderDeviceDefinition {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderDeviceDefinition {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -20389,6 +23503,8 @@ class ResourceSearchBuilderDeviceDefinition {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -20404,6 +23520,16 @@ class ResourceSearchBuilderDeviceDefinition {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderDeviceDefinition {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -20730,6 +23856,40 @@ class ResourceSearchBuilderDeviceDefinition {
   }
 }
 
+export type SortOrderDeviceDefinition =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "identifier"
+  | "-identifier"
+  | "parent"
+  | "-parent"
+  | "type"
+  | "-type";
+
 class ResourceSearchBuilderDeviceMetric {
   readonly resourceType = "DeviceMetric";
 
@@ -20746,7 +23906,31 @@ class ResourceSearchBuilderDeviceMetric {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderDeviceMetric | SortOrderDeviceMetric[]
+  ): ResourceSearchBuilderDeviceMetric {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderDeviceMetric {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -20767,6 +23951,8 @@ class ResourceSearchBuilderDeviceMetric {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -20782,6 +23968,16 @@ class ResourceSearchBuilderDeviceMetric {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderDeviceMetric {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -21164,6 +24360,44 @@ class ResourceSearchBuilderDeviceMetric {
   }
 }
 
+export type SortOrderDeviceMetric =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "category"
+  | "-category"
+  | "identifier"
+  | "-identifier"
+  | "parent"
+  | "-parent"
+  | "source"
+  | "-source"
+  | "type"
+  | "-type";
+
 class ResourceSearchBuilderDeviceRequest {
   readonly resourceType = "DeviceRequest";
 
@@ -21180,7 +24414,31 @@ class ResourceSearchBuilderDeviceRequest {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderDeviceRequest | SortOrderDeviceRequest[]
+  ): ResourceSearchBuilderDeviceRequest {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderDeviceRequest {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -21201,6 +24459,8 @@ class ResourceSearchBuilderDeviceRequest {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -21216,6 +24476,16 @@ class ResourceSearchBuilderDeviceRequest {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderDeviceRequest {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -21805,6 +25075,62 @@ class ResourceSearchBuilderDeviceRequest {
   }
 }
 
+export type SortOrderDeviceRequest =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "authored-on"
+  | "-authored-on"
+  | "based-on"
+  | "-based-on"
+  | "device"
+  | "-device"
+  | "event-date"
+  | "-event-date"
+  | "group-identifier"
+  | "-group-identifier"
+  | "instantiates-canonical"
+  | "-instantiates-canonical"
+  | "instantiates-uri"
+  | "-instantiates-uri"
+  | "insurance"
+  | "-insurance"
+  | "intent"
+  | "-intent"
+  | "performer"
+  | "-performer"
+  | "prior-request"
+  | "-prior-request"
+  | "requester"
+  | "-requester"
+  | "status"
+  | "-status"
+  | "subject"
+  | "-subject";
+
 class ResourceSearchBuilderDeviceUseStatement {
   readonly resourceType = "DeviceUseStatement";
 
@@ -21821,7 +25147,31 @@ class ResourceSearchBuilderDeviceUseStatement {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderDeviceUseStatement | SortOrderDeviceUseStatement[]
+  ): ResourceSearchBuilderDeviceUseStatement {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderDeviceUseStatement {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -21842,6 +25192,8 @@ class ResourceSearchBuilderDeviceUseStatement {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -21857,6 +25209,16 @@ class ResourceSearchBuilderDeviceUseStatement {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderDeviceUseStatement {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -22185,6 +25547,40 @@ class ResourceSearchBuilderDeviceUseStatement {
   }
 }
 
+export type SortOrderDeviceUseStatement =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "device"
+  | "-device"
+  | "identifier"
+  | "-identifier"
+  | "subject"
+  | "-subject";
+
 class ResourceSearchBuilderDiagnosticReport {
   readonly resourceType = "DiagnosticReport";
 
@@ -22201,7 +25597,31 @@ class ResourceSearchBuilderDiagnosticReport {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderDiagnosticReport | SortOrderDiagnosticReport[]
+  ): ResourceSearchBuilderDiagnosticReport {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderDiagnosticReport {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -22222,6 +25642,8 @@ class ResourceSearchBuilderDiagnosticReport {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -22237,6 +25659,16 @@ class ResourceSearchBuilderDiagnosticReport {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderDiagnosticReport {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -22775,6 +26207,56 @@ class ResourceSearchBuilderDiagnosticReport {
   }
 }
 
+export type SortOrderDiagnosticReport =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "based-on"
+  | "-based-on"
+  | "category"
+  | "-category"
+  | "conclusion"
+  | "-conclusion"
+  | "issued"
+  | "-issued"
+  | "media"
+  | "-media"
+  | "performer"
+  | "-performer"
+  | "result"
+  | "-result"
+  | "results-interpreter"
+  | "-results-interpreter"
+  | "specimen"
+  | "-specimen"
+  | "status"
+  | "-status"
+  | "subject"
+  | "-subject";
+
 class ResourceSearchBuilderDocumentManifest {
   readonly resourceType = "DocumentManifest";
 
@@ -22791,7 +26273,31 @@ class ResourceSearchBuilderDocumentManifest {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderDocumentManifest | SortOrderDocumentManifest[]
+  ): ResourceSearchBuilderDocumentManifest {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderDocumentManifest {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -22812,6 +26318,8 @@ class ResourceSearchBuilderDocumentManifest {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -22827,6 +26335,16 @@ class ResourceSearchBuilderDocumentManifest {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderDocumentManifest {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -23302,6 +26820,54 @@ class ResourceSearchBuilderDocumentManifest {
   }
 }
 
+export type SortOrderDocumentManifest =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "author"
+  | "-author"
+  | "created"
+  | "-created"
+  | "description"
+  | "-description"
+  | "item"
+  | "-item"
+  | "recipient"
+  | "-recipient"
+  | "related-id"
+  | "-related-id"
+  | "related-ref"
+  | "-related-ref"
+  | "source"
+  | "-source"
+  | "status"
+  | "-status"
+  | "subject"
+  | "-subject";
+
 class ResourceSearchBuilderDocumentReference {
   readonly resourceType = "DocumentReference";
 
@@ -23318,7 +26884,31 @@ class ResourceSearchBuilderDocumentReference {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderDocumentReference | SortOrderDocumentReference[]
+  ): ResourceSearchBuilderDocumentReference {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderDocumentReference {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -23339,6 +26929,8 @@ class ResourceSearchBuilderDocumentReference {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -23354,6 +26946,16 @@ class ResourceSearchBuilderDocumentReference {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderDocumentReference {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -24085,6 +27687,74 @@ class ResourceSearchBuilderDocumentReference {
   }
 }
 
+export type SortOrderDocumentReference =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "authenticator"
+  | "-authenticator"
+  | "author"
+  | "-author"
+  | "category"
+  | "-category"
+  | "contenttype"
+  | "-contenttype"
+  | "custodian"
+  | "-custodian"
+  | "date"
+  | "-date"
+  | "description"
+  | "-description"
+  | "event"
+  | "-event"
+  | "facility"
+  | "-facility"
+  | "format"
+  | "-format"
+  | "language"
+  | "-language"
+  | "location"
+  | "-location"
+  | "period"
+  | "-period"
+  | "related"
+  | "-related"
+  | "relatesto"
+  | "-relatesto"
+  | "relation"
+  | "-relation"
+  | "security-label"
+  | "-security-label"
+  | "setting"
+  | "-setting"
+  | "status"
+  | "-status"
+  | "subject"
+  | "-subject";
+
 class ResourceSearchBuilderEncounter {
   readonly resourceType = "Encounter";
 
@@ -24101,7 +27771,31 @@ class ResourceSearchBuilderEncounter {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderEncounter | SortOrderEncounter[]
+  ): ResourceSearchBuilderEncounter {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderEncounter {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -24122,6 +27816,8 @@ class ResourceSearchBuilderEncounter {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -24137,6 +27833,16 @@ class ResourceSearchBuilderEncounter {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderEncounter {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -24903,6 +28609,72 @@ class ResourceSearchBuilderEncounter {
   }
 }
 
+export type SortOrderEncounter =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "account"
+  | "-account"
+  | "appointment"
+  | "-appointment"
+  | "based-on"
+  | "-based-on"
+  | "class"
+  | "-class"
+  | "diagnosis"
+  | "-diagnosis"
+  | "episode-of-care"
+  | "-episode-of-care"
+  | "length"
+  | "-length"
+  | "location"
+  | "-location"
+  | "location-period"
+  | "-location-period"
+  | "part-of"
+  | "-part-of"
+  | "participant"
+  | "-participant"
+  | "participant-type"
+  | "-participant-type"
+  | "practitioner"
+  | "-practitioner"
+  | "reason-code"
+  | "-reason-code"
+  | "reason-reference"
+  | "-reason-reference"
+  | "service-provider"
+  | "-service-provider"
+  | "special-arrangement"
+  | "-special-arrangement"
+  | "status"
+  | "-status"
+  | "subject"
+  | "-subject";
+
 class ResourceSearchBuilderEndpoint {
   readonly resourceType = "Endpoint";
 
@@ -24919,7 +28691,31 @@ class ResourceSearchBuilderEndpoint {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderEndpoint | SortOrderEndpoint[]
+  ): ResourceSearchBuilderEndpoint {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderEndpoint {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -24940,6 +28736,8 @@ class ResourceSearchBuilderEndpoint {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -24955,6 +28753,16 @@ class ResourceSearchBuilderEndpoint {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderEndpoint {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -25346,6 +29154,46 @@ class ResourceSearchBuilderEndpoint {
   }
 }
 
+export type SortOrderEndpoint =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "connection-type"
+  | "-connection-type"
+  | "identifier"
+  | "-identifier"
+  | "name"
+  | "-name"
+  | "organization"
+  | "-organization"
+  | "payload-type"
+  | "-payload-type"
+  | "status"
+  | "-status";
+
 class ResourceSearchBuilderEnrollmentRequest {
   readonly resourceType = "EnrollmentRequest";
 
@@ -25362,7 +29210,31 @@ class ResourceSearchBuilderEnrollmentRequest {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderEnrollmentRequest | SortOrderEnrollmentRequest[]
+  ): ResourceSearchBuilderEnrollmentRequest {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderEnrollmentRequest {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -25383,6 +29255,8 @@ class ResourceSearchBuilderEnrollmentRequest {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -25398,6 +29272,16 @@ class ResourceSearchBuilderEnrollmentRequest {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderEnrollmentRequest {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -25753,6 +29637,42 @@ class ResourceSearchBuilderEnrollmentRequest {
   }
 }
 
+export type SortOrderEnrollmentRequest =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "identifier"
+  | "-identifier"
+  | "patient"
+  | "-patient"
+  | "status"
+  | "-status"
+  | "subject"
+  | "-subject";
+
 class ResourceSearchBuilderEnrollmentResponse {
   readonly resourceType = "EnrollmentResponse";
 
@@ -25769,7 +29689,31 @@ class ResourceSearchBuilderEnrollmentResponse {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderEnrollmentResponse | SortOrderEnrollmentResponse[]
+  ): ResourceSearchBuilderEnrollmentResponse {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderEnrollmentResponse {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -25790,6 +29734,8 @@ class ResourceSearchBuilderEnrollmentResponse {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -25805,6 +29751,16 @@ class ResourceSearchBuilderEnrollmentResponse {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderEnrollmentResponse {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -26131,6 +30087,40 @@ class ResourceSearchBuilderEnrollmentResponse {
   }
 }
 
+export type SortOrderEnrollmentResponse =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "identifier"
+  | "-identifier"
+  | "request"
+  | "-request"
+  | "status"
+  | "-status";
+
 class ResourceSearchBuilderEpisodeOfCare {
   readonly resourceType = "EpisodeOfCare";
 
@@ -26147,7 +30137,31 @@ class ResourceSearchBuilderEpisodeOfCare {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderEpisodeOfCare | SortOrderEpisodeOfCare[]
+  ): ResourceSearchBuilderEpisodeOfCare {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderEpisodeOfCare {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -26168,6 +30182,8 @@ class ResourceSearchBuilderEpisodeOfCare {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -26183,6 +30199,16 @@ class ResourceSearchBuilderEpisodeOfCare {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderEpisodeOfCare {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -26569,6 +30595,44 @@ class ResourceSearchBuilderEpisodeOfCare {
   }
 }
 
+export type SortOrderEpisodeOfCare =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "care-manager"
+  | "-care-manager"
+  | "condition"
+  | "-condition"
+  | "incoming-referral"
+  | "-incoming-referral"
+  | "organization"
+  | "-organization"
+  | "status"
+  | "-status";
+
 class ResourceSearchBuilderEventDefinition {
   readonly resourceType = "EventDefinition";
 
@@ -26585,7 +30649,31 @@ class ResourceSearchBuilderEventDefinition {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderEventDefinition | SortOrderEventDefinition[]
+  ): ResourceSearchBuilderEventDefinition {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderEventDefinition {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -26606,6 +30694,8 @@ class ResourceSearchBuilderEventDefinition {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -26621,6 +30711,16 @@ class ResourceSearchBuilderEventDefinition {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderEventDefinition {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -27304,6 +31404,74 @@ class ResourceSearchBuilderEventDefinition {
   }
 }
 
+export type SortOrderEventDefinition =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "composed-of"
+  | "-composed-of"
+  | "context"
+  | "-context"
+  | "context-quantity"
+  | "-context-quantity"
+  | "context-type"
+  | "-context-type"
+  | "date"
+  | "-date"
+  | "depends-on"
+  | "-depends-on"
+  | "derived-from"
+  | "-derived-from"
+  | "description"
+  | "-description"
+  | "effective"
+  | "-effective"
+  | "identifier"
+  | "-identifier"
+  | "jurisdiction"
+  | "-jurisdiction"
+  | "name"
+  | "-name"
+  | "predecessor"
+  | "-predecessor"
+  | "publisher"
+  | "-publisher"
+  | "status"
+  | "-status"
+  | "successor"
+  | "-successor"
+  | "title"
+  | "-title"
+  | "topic"
+  | "-topic"
+  | "url"
+  | "-url"
+  | "version"
+  | "-version";
+
 class ResourceSearchBuilderEvidence {
   readonly resourceType = "Evidence";
 
@@ -27320,7 +31488,31 @@ class ResourceSearchBuilderEvidence {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderEvidence | SortOrderEvidence[]
+  ): ResourceSearchBuilderEvidence {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderEvidence {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -27341,6 +31533,8 @@ class ResourceSearchBuilderEvidence {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -27356,6 +31550,16 @@ class ResourceSearchBuilderEvidence {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderEvidence {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -27818,6 +32022,56 @@ class ResourceSearchBuilderEvidence {
   }
 }
 
+export type SortOrderEvidence =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "context"
+  | "-context"
+  | "context-quantity"
+  | "-context-quantity"
+  | "context-type"
+  | "-context-type"
+  | "date"
+  | "-date"
+  | "description"
+  | "-description"
+  | "identifier"
+  | "-identifier"
+  | "publisher"
+  | "-publisher"
+  | "status"
+  | "-status"
+  | "title"
+  | "-title"
+  | "url"
+  | "-url"
+  | "version"
+  | "-version";
+
 class ResourceSearchBuilderEvidenceReport {
   readonly resourceType = "EvidenceReport";
 
@@ -27834,7 +32088,31 @@ class ResourceSearchBuilderEvidenceReport {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderEvidenceReport | SortOrderEvidenceReport[]
+  ): ResourceSearchBuilderEvidenceReport {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderEvidenceReport {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -27855,6 +32133,8 @@ class ResourceSearchBuilderEvidenceReport {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -27870,6 +32150,16 @@ class ResourceSearchBuilderEvidenceReport {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderEvidenceReport {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -28272,6 +32562,48 @@ class ResourceSearchBuilderEvidenceReport {
   }
 }
 
+export type SortOrderEvidenceReport =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "context"
+  | "-context"
+  | "context-quantity"
+  | "-context-quantity"
+  | "context-type"
+  | "-context-type"
+  | "identifier"
+  | "-identifier"
+  | "publisher"
+  | "-publisher"
+  | "status"
+  | "-status"
+  | "url"
+  | "-url";
+
 class ResourceSearchBuilderEvidenceVariable {
   readonly resourceType = "EvidenceVariable";
 
@@ -28288,7 +32620,31 @@ class ResourceSearchBuilderEvidenceVariable {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderEvidenceVariable | SortOrderEvidenceVariable[]
+  ): ResourceSearchBuilderEvidenceVariable {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderEvidenceVariable {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -28309,6 +32665,8 @@ class ResourceSearchBuilderEvidenceVariable {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -28324,6 +32682,16 @@ class ResourceSearchBuilderEvidenceVariable {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderEvidenceVariable {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -28797,6 +33165,58 @@ class ResourceSearchBuilderEvidenceVariable {
   }
 }
 
+export type SortOrderEvidenceVariable =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "context"
+  | "-context"
+  | "context-quantity"
+  | "-context-quantity"
+  | "context-type"
+  | "-context-type"
+  | "date"
+  | "-date"
+  | "description"
+  | "-description"
+  | "identifier"
+  | "-identifier"
+  | "name"
+  | "-name"
+  | "publisher"
+  | "-publisher"
+  | "status"
+  | "-status"
+  | "title"
+  | "-title"
+  | "url"
+  | "-url"
+  | "version"
+  | "-version";
+
 class ResourceSearchBuilderExampleScenario {
   readonly resourceType = "ExampleScenario";
 
@@ -28813,7 +33233,31 @@ class ResourceSearchBuilderExampleScenario {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderExampleScenario | SortOrderExampleScenario[]
+  ): ResourceSearchBuilderExampleScenario {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderExampleScenario {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -28834,6 +33278,8 @@ class ResourceSearchBuilderExampleScenario {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -28849,6 +33295,16 @@ class ResourceSearchBuilderExampleScenario {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderExampleScenario {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -29327,6 +33783,56 @@ class ResourceSearchBuilderExampleScenario {
   }
 }
 
+export type SortOrderExampleScenario =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "context"
+  | "-context"
+  | "context-quantity"
+  | "-context-quantity"
+  | "context-type"
+  | "-context-type"
+  | "date"
+  | "-date"
+  | "identifier"
+  | "-identifier"
+  | "jurisdiction"
+  | "-jurisdiction"
+  | "name"
+  | "-name"
+  | "publisher"
+  | "-publisher"
+  | "status"
+  | "-status"
+  | "url"
+  | "-url"
+  | "version"
+  | "-version";
+
 class ResourceSearchBuilderExplanationOfBenefit {
   readonly resourceType = "ExplanationOfBenefit";
 
@@ -29343,7 +33849,31 @@ class ResourceSearchBuilderExplanationOfBenefit {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderExplanationOfBenefit | SortOrderExplanationOfBenefit[]
+  ): ResourceSearchBuilderExplanationOfBenefit {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderExplanationOfBenefit {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -29364,6 +33894,8 @@ class ResourceSearchBuilderExplanationOfBenefit {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -29379,6 +33911,16 @@ class ResourceSearchBuilderExplanationOfBenefit {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderExplanationOfBenefit {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -30075,6 +34617,68 @@ class ResourceSearchBuilderExplanationOfBenefit {
   }
 }
 
+export type SortOrderExplanationOfBenefit =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "care-team"
+  | "-care-team"
+  | "claim"
+  | "-claim"
+  | "coverage"
+  | "-coverage"
+  | "created"
+  | "-created"
+  | "detail-udi"
+  | "-detail-udi"
+  | "disposition"
+  | "-disposition"
+  | "encounter"
+  | "-encounter"
+  | "enterer"
+  | "-enterer"
+  | "facility"
+  | "-facility"
+  | "identifier"
+  | "-identifier"
+  | "item-udi"
+  | "-item-udi"
+  | "patient"
+  | "-patient"
+  | "payee"
+  | "-payee"
+  | "procedure-udi"
+  | "-procedure-udi"
+  | "provider"
+  | "-provider"
+  | "status"
+  | "-status"
+  | "subdetail-udi"
+  | "-subdetail-udi";
+
 class ResourceSearchBuilderFamilyMemberHistory {
   readonly resourceType = "FamilyMemberHistory";
 
@@ -30091,7 +34695,31 @@ class ResourceSearchBuilderFamilyMemberHistory {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderFamilyMemberHistory | SortOrderFamilyMemberHistory[]
+  ): ResourceSearchBuilderFamilyMemberHistory {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderFamilyMemberHistory {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -30112,6 +34740,8 @@ class ResourceSearchBuilderFamilyMemberHistory {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -30127,6 +34757,16 @@ class ResourceSearchBuilderFamilyMemberHistory {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderFamilyMemberHistory {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -30491,6 +35131,44 @@ class ResourceSearchBuilderFamilyMemberHistory {
   }
 }
 
+export type SortOrderFamilyMemberHistory =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "instantiates-canonical"
+  | "-instantiates-canonical"
+  | "instantiates-uri"
+  | "-instantiates-uri"
+  | "relationship"
+  | "-relationship"
+  | "sex"
+  | "-sex"
+  | "status"
+  | "-status";
+
 class ResourceSearchBuilderFlag {
   readonly resourceType = "Flag";
 
@@ -30507,7 +35185,31 @@ class ResourceSearchBuilderFlag {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderFlag | SortOrderFlag[]
+  ): ResourceSearchBuilderFlag {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderFlag {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -30528,6 +35230,8 @@ class ResourceSearchBuilderFlag {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -30543,6 +35247,16 @@ class ResourceSearchBuilderFlag {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderFlag {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -30871,6 +35585,40 @@ class ResourceSearchBuilderFlag {
   }
 }
 
+export type SortOrderFlag =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "author"
+  | "-author"
+  | "identifier"
+  | "-identifier"
+  | "subject"
+  | "-subject";
+
 class ResourceSearchBuilderGoal {
   readonly resourceType = "Goal";
 
@@ -30887,7 +35635,31 @@ class ResourceSearchBuilderGoal {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderGoal | SortOrderGoal[]
+  ): ResourceSearchBuilderGoal {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderGoal {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -30908,6 +35680,8 @@ class ResourceSearchBuilderGoal {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -30923,6 +35697,16 @@ class ResourceSearchBuilderGoal {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderGoal {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -31298,6 +36082,46 @@ class ResourceSearchBuilderGoal {
   }
 }
 
+export type SortOrderGoal =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "achievement-status"
+  | "-achievement-status"
+  | "category"
+  | "-category"
+  | "lifecycle-status"
+  | "-lifecycle-status"
+  | "start-date"
+  | "-start-date"
+  | "subject"
+  | "-subject"
+  | "target-date"
+  | "-target-date";
+
 class ResourceSearchBuilderGraphDefinition {
   readonly resourceType = "GraphDefinition";
 
@@ -31314,7 +36138,31 @@ class ResourceSearchBuilderGraphDefinition {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderGraphDefinition | SortOrderGraphDefinition[]
+  ): ResourceSearchBuilderGraphDefinition {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderGraphDefinition {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -31335,6 +36183,8 @@ class ResourceSearchBuilderGraphDefinition {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -31350,6 +36200,16 @@ class ResourceSearchBuilderGraphDefinition {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderGraphDefinition {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -31620,6 +36480,36 @@ class ResourceSearchBuilderGraphDefinition {
   }
 }
 
+export type SortOrderGraphDefinition =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "start"
+  | "-start";
+
 class ResourceSearchBuilderGroup {
   readonly resourceType = "Group";
 
@@ -31636,7 +36526,31 @@ class ResourceSearchBuilderGroup {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderGroup | SortOrderGroup[]
+  ): ResourceSearchBuilderGroup {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderGroup {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -31657,6 +36571,8 @@ class ResourceSearchBuilderGroup {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -31672,6 +36588,16 @@ class ResourceSearchBuilderGroup {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderGroup {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -32162,6 +37088,52 @@ class ResourceSearchBuilderGroup {
   }
 }
 
+export type SortOrderGroup =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "actual"
+  | "-actual"
+  | "characteristic"
+  | "-characteristic"
+  | "code"
+  | "-code"
+  | "exclude"
+  | "-exclude"
+  | "identifier"
+  | "-identifier"
+  | "managing-entity"
+  | "-managing-entity"
+  | "member"
+  | "-member"
+  | "type"
+  | "-type"
+  | "value"
+  | "-value";
+
 class ResourceSearchBuilderGuidanceResponse {
   readonly resourceType = "GuidanceResponse";
 
@@ -32178,7 +37150,31 @@ class ResourceSearchBuilderGuidanceResponse {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderGuidanceResponse | SortOrderGuidanceResponse[]
+  ): ResourceSearchBuilderGuidanceResponse {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderGuidanceResponse {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -32199,6 +37195,8 @@ class ResourceSearchBuilderGuidanceResponse {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -32214,6 +37212,16 @@ class ResourceSearchBuilderGuidanceResponse {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderGuidanceResponse {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -32569,6 +37577,42 @@ class ResourceSearchBuilderGuidanceResponse {
   }
 }
 
+export type SortOrderGuidanceResponse =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "identifier"
+  | "-identifier"
+  | "patient"
+  | "-patient"
+  | "request"
+  | "-request"
+  | "subject"
+  | "-subject";
+
 class ResourceSearchBuilderHealthcareService {
   readonly resourceType = "HealthcareService";
 
@@ -32585,7 +37629,31 @@ class ResourceSearchBuilderHealthcareService {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderHealthcareService | SortOrderHealthcareService[]
+  ): ResourceSearchBuilderHealthcareService {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderHealthcareService {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -32606,6 +37674,8 @@ class ResourceSearchBuilderHealthcareService {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -32621,6 +37691,16 @@ class ResourceSearchBuilderHealthcareService {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderHealthcareService {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -33180,6 +38260,58 @@ class ResourceSearchBuilderHealthcareService {
   }
 }
 
+export type SortOrderHealthcareService =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "active"
+  | "-active"
+  | "characteristic"
+  | "-characteristic"
+  | "coverage-area"
+  | "-coverage-area"
+  | "endpoint"
+  | "-endpoint"
+  | "identifier"
+  | "-identifier"
+  | "location"
+  | "-location"
+  | "name"
+  | "-name"
+  | "organization"
+  | "-organization"
+  | "program"
+  | "-program"
+  | "service-category"
+  | "-service-category"
+  | "service-type"
+  | "-service-type"
+  | "specialty"
+  | "-specialty";
+
 class ResourceSearchBuilderImagingStudy {
   readonly resourceType = "ImagingStudy";
 
@@ -33196,7 +38328,31 @@ class ResourceSearchBuilderImagingStudy {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderImagingStudy | SortOrderImagingStudy[]
+  ): ResourceSearchBuilderImagingStudy {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderImagingStudy {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -33217,6 +38373,8 @@ class ResourceSearchBuilderImagingStudy {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -33232,6 +38390,16 @@ class ResourceSearchBuilderImagingStudy {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderImagingStudy {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -33878,6 +39046,64 @@ class ResourceSearchBuilderImagingStudy {
   }
 }
 
+export type SortOrderImagingStudy =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "basedon"
+  | "-basedon"
+  | "bodysite"
+  | "-bodysite"
+  | "dicom-class"
+  | "-dicom-class"
+  | "encounter"
+  | "-encounter"
+  | "endpoint"
+  | "-endpoint"
+  | "instance"
+  | "-instance"
+  | "interpreter"
+  | "-interpreter"
+  | "modality"
+  | "-modality"
+  | "performer"
+  | "-performer"
+  | "reason"
+  | "-reason"
+  | "referrer"
+  | "-referrer"
+  | "series"
+  | "-series"
+  | "started"
+  | "-started"
+  | "status"
+  | "-status"
+  | "subject"
+  | "-subject";
+
 class ResourceSearchBuilderImmunization {
   readonly resourceType = "Immunization";
 
@@ -33894,7 +39120,31 @@ class ResourceSearchBuilderImmunization {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderImmunization | SortOrderImmunization[]
+  ): ResourceSearchBuilderImmunization {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderImmunization {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -33915,6 +39165,8 @@ class ResourceSearchBuilderImmunization {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -33930,6 +39182,16 @@ class ResourceSearchBuilderImmunization {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderImmunization {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -34486,6 +39748,60 @@ class ResourceSearchBuilderImmunization {
   }
 }
 
+export type SortOrderImmunization =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "location"
+  | "-location"
+  | "lot-number"
+  | "-lot-number"
+  | "manufacturer"
+  | "-manufacturer"
+  | "performer"
+  | "-performer"
+  | "reaction"
+  | "-reaction"
+  | "reaction-date"
+  | "-reaction-date"
+  | "reason-code"
+  | "-reason-code"
+  | "reason-reference"
+  | "-reason-reference"
+  | "series"
+  | "-series"
+  | "status"
+  | "-status"
+  | "status-reason"
+  | "-status-reason"
+  | "target-disease"
+  | "-target-disease"
+  | "vaccine-code"
+  | "-vaccine-code";
+
 class ResourceSearchBuilderImmunizationEvaluation {
   readonly resourceType = "ImmunizationEvaluation";
 
@@ -34502,7 +39818,33 @@ class ResourceSearchBuilderImmunizationEvaluation {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters:
+      | SortOrderImmunizationEvaluation
+      | SortOrderImmunizationEvaluation[]
+  ): ResourceSearchBuilderImmunizationEvaluation {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderImmunizationEvaluation {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -34523,6 +39865,8 @@ class ResourceSearchBuilderImmunizationEvaluation {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -34538,6 +39882,16 @@ class ResourceSearchBuilderImmunizationEvaluation {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderImmunizationEvaluation {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -34958,6 +40312,48 @@ class ResourceSearchBuilderImmunizationEvaluation {
   }
 }
 
+export type SortOrderImmunizationEvaluation =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "date"
+  | "-date"
+  | "dose-status"
+  | "-dose-status"
+  | "identifier"
+  | "-identifier"
+  | "immunization-event"
+  | "-immunization-event"
+  | "patient"
+  | "-patient"
+  | "status"
+  | "-status"
+  | "target-disease"
+  | "-target-disease";
+
 class ResourceSearchBuilderImmunizationRecommendation {
   readonly resourceType = "ImmunizationRecommendation";
 
@@ -34974,7 +40370,33 @@ class ResourceSearchBuilderImmunizationRecommendation {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters:
+      | SortOrderImmunizationRecommendation
+      | SortOrderImmunizationRecommendation[]
+  ): ResourceSearchBuilderImmunizationRecommendation {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderImmunizationRecommendation {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -34995,6 +40417,8 @@ class ResourceSearchBuilderImmunizationRecommendation {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -35010,6 +40434,18 @@ class ResourceSearchBuilderImmunizationRecommendation {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(
+    value: SummaryValue
+  ): ResourceSearchBuilderImmunizationRecommendation {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -35459,6 +40895,50 @@ class ResourceSearchBuilderImmunizationRecommendation {
   }
 }
 
+export type SortOrderImmunizationRecommendation =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "date"
+  | "-date"
+  | "identifier"
+  | "-identifier"
+  | "information"
+  | "-information"
+  | "patient"
+  | "-patient"
+  | "status"
+  | "-status"
+  | "support"
+  | "-support"
+  | "target-disease"
+  | "-target-disease"
+  | "vaccine-type"
+  | "-vaccine-type";
+
 class ResourceSearchBuilderImplementationGuide {
   readonly resourceType = "ImplementationGuide";
 
@@ -35475,7 +40955,31 @@ class ResourceSearchBuilderImplementationGuide {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderImplementationGuide | SortOrderImplementationGuide[]
+  ): ResourceSearchBuilderImplementationGuide {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderImplementationGuide {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -35496,6 +41000,8 @@ class ResourceSearchBuilderImplementationGuide {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -35511,6 +41017,16 @@ class ResourceSearchBuilderImplementationGuide {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderImplementationGuide {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -35868,6 +41384,42 @@ class ResourceSearchBuilderImplementationGuide {
   }
 }
 
+export type SortOrderImplementationGuide =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "depends-on"
+  | "-depends-on"
+  | "experimental"
+  | "-experimental"
+  | "global"
+  | "-global"
+  | "resource"
+  | "-resource";
+
 class ResourceSearchBuilderIngredient {
   readonly resourceType = "Ingredient";
 
@@ -35884,7 +41436,31 @@ class ResourceSearchBuilderIngredient {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderIngredient | SortOrderIngredient[]
+  ): ResourceSearchBuilderIngredient {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderIngredient {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -35905,6 +41481,8 @@ class ResourceSearchBuilderIngredient {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -35920,6 +41498,16 @@ class ResourceSearchBuilderIngredient {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderIngredient {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -36387,6 +41975,50 @@ class ResourceSearchBuilderIngredient {
   }
 }
 
+export type SortOrderIngredient =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "for"
+  | "-for"
+  | "function"
+  | "-function"
+  | "identifier"
+  | "-identifier"
+  | "manufacturer"
+  | "-manufacturer"
+  | "role"
+  | "-role"
+  | "substance"
+  | "-substance"
+  | "substance-code"
+  | "-substance-code"
+  | "substance-definition"
+  | "-substance-definition";
+
 class ResourceSearchBuilderInsurancePlan {
   readonly resourceType = "InsurancePlan";
 
@@ -36403,7 +42035,31 @@ class ResourceSearchBuilderInsurancePlan {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderInsurancePlan | SortOrderInsurancePlan[]
+  ): ResourceSearchBuilderInsurancePlan {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderInsurancePlan {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -36424,6 +42080,8 @@ class ResourceSearchBuilderInsurancePlan {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -36439,6 +42097,16 @@ class ResourceSearchBuilderInsurancePlan {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderInsurancePlan {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -36954,6 +42622,62 @@ class ResourceSearchBuilderInsurancePlan {
   }
 }
 
+export type SortOrderInsurancePlan =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "address"
+  | "-address"
+  | "address-city"
+  | "-address-city"
+  | "address-country"
+  | "-address-country"
+  | "address-postalcode"
+  | "-address-postalcode"
+  | "address-state"
+  | "-address-state"
+  | "address-use"
+  | "-address-use"
+  | "administered-by"
+  | "-administered-by"
+  | "endpoint"
+  | "-endpoint"
+  | "identifier"
+  | "-identifier"
+  | "name"
+  | "-name"
+  | "owned-by"
+  | "-owned-by"
+  | "phonetic"
+  | "-phonetic"
+  | "status"
+  | "-status"
+  | "type"
+  | "-type";
+
 class ResourceSearchBuilderInvoice {
   readonly resourceType = "Invoice";
 
@@ -36970,7 +42694,31 @@ class ResourceSearchBuilderInvoice {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderInvoice | SortOrderInvoice[]
+  ): ResourceSearchBuilderInvoice {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderInvoice {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -36991,6 +42739,8 @@ class ResourceSearchBuilderInvoice {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -37006,6 +42756,16 @@ class ResourceSearchBuilderInvoice {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderInvoice {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -37600,6 +43360,60 @@ class ResourceSearchBuilderInvoice {
   }
 }
 
+export type SortOrderInvoice =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "account"
+  | "-account"
+  | "date"
+  | "-date"
+  | "identifier"
+  | "-identifier"
+  | "issuer"
+  | "-issuer"
+  | "participant"
+  | "-participant"
+  | "participant-role"
+  | "-participant-role"
+  | "patient"
+  | "-patient"
+  | "recipient"
+  | "-recipient"
+  | "status"
+  | "-status"
+  | "subject"
+  | "-subject"
+  | "totalgross"
+  | "-totalgross"
+  | "totalnet"
+  | "-totalnet"
+  | "type"
+  | "-type";
+
 class ResourceSearchBuilderLibrary {
   readonly resourceType = "Library";
 
@@ -37616,7 +43430,31 @@ class ResourceSearchBuilderLibrary {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderLibrary | SortOrderLibrary[]
+  ): ResourceSearchBuilderLibrary {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderLibrary {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -37637,6 +43475,8 @@ class ResourceSearchBuilderLibrary {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -37652,6 +43492,16 @@ class ResourceSearchBuilderLibrary {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderLibrary {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -38389,6 +44239,78 @@ class ResourceSearchBuilderLibrary {
   }
 }
 
+export type SortOrderLibrary =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "composed-of"
+  | "-composed-of"
+  | "content-type"
+  | "-content-type"
+  | "context"
+  | "-context"
+  | "context-quantity"
+  | "-context-quantity"
+  | "context-type"
+  | "-context-type"
+  | "date"
+  | "-date"
+  | "depends-on"
+  | "-depends-on"
+  | "derived-from"
+  | "-derived-from"
+  | "description"
+  | "-description"
+  | "effective"
+  | "-effective"
+  | "identifier"
+  | "-identifier"
+  | "jurisdiction"
+  | "-jurisdiction"
+  | "name"
+  | "-name"
+  | "predecessor"
+  | "-predecessor"
+  | "publisher"
+  | "-publisher"
+  | "status"
+  | "-status"
+  | "successor"
+  | "-successor"
+  | "title"
+  | "-title"
+  | "topic"
+  | "-topic"
+  | "type"
+  | "-type"
+  | "url"
+  | "-url"
+  | "version"
+  | "-version";
+
 class ResourceSearchBuilderLinkage {
   readonly resourceType = "Linkage";
 
@@ -38405,7 +44327,31 @@ class ResourceSearchBuilderLinkage {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderLinkage | SortOrderLinkage[]
+  ): ResourceSearchBuilderLinkage {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderLinkage {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -38426,6 +44372,8 @@ class ResourceSearchBuilderLinkage {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -38441,6 +44389,16 @@ class ResourceSearchBuilderLinkage {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderLinkage {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -38771,6 +44729,40 @@ class ResourceSearchBuilderLinkage {
   }
 }
 
+export type SortOrderLinkage =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "author"
+  | "-author"
+  | "item"
+  | "-item"
+  | "source"
+  | "-source";
+
 class ResourceSearchBuilderList {
   readonly resourceType = "List";
 
@@ -38787,7 +44779,31 @@ class ResourceSearchBuilderList {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderList | SortOrderList[]
+  ): ResourceSearchBuilderList {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderList {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -38808,6 +44824,8 @@ class ResourceSearchBuilderList {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -38823,6 +44841,16 @@ class ResourceSearchBuilderList {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderList {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -39229,6 +45257,48 @@ class ResourceSearchBuilderList {
   }
 }
 
+export type SortOrderList =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "empty-reason"
+  | "-empty-reason"
+  | "item"
+  | "-item"
+  | "notes"
+  | "-notes"
+  | "source"
+  | "-source"
+  | "status"
+  | "-status"
+  | "subject"
+  | "-subject"
+  | "title"
+  | "-title";
+
 class ResourceSearchBuilderLocation {
   readonly resourceType = "Location";
 
@@ -39245,7 +45315,31 @@ class ResourceSearchBuilderLocation {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderLocation | SortOrderLocation[]
+  ): ResourceSearchBuilderLocation {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderLocation {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -39266,6 +45360,8 @@ class ResourceSearchBuilderLocation {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -39281,6 +45377,16 @@ class ResourceSearchBuilderLocation {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderLocation {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -39812,6 +45918,62 @@ class ResourceSearchBuilderLocation {
   }
 }
 
+export type SortOrderLocation =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "address"
+  | "-address"
+  | "address-city"
+  | "-address-city"
+  | "address-country"
+  | "-address-country"
+  | "address-postalcode"
+  | "-address-postalcode"
+  | "address-state"
+  | "-address-state"
+  | "address-use"
+  | "-address-use"
+  | "endpoint"
+  | "-endpoint"
+  | "identifier"
+  | "-identifier"
+  | "name"
+  | "-name"
+  | "operational-status"
+  | "-operational-status"
+  | "organization"
+  | "-organization"
+  | "partof"
+  | "-partof"
+  | "status"
+  | "-status"
+  | "type"
+  | "-type";
+
 class ResourceSearchBuilderManufacturedItemDefinition {
   readonly resourceType = "ManufacturedItemDefinition";
 
@@ -39828,7 +45990,33 @@ class ResourceSearchBuilderManufacturedItemDefinition {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters:
+      | SortOrderManufacturedItemDefinition
+      | SortOrderManufacturedItemDefinition[]
+  ): ResourceSearchBuilderManufacturedItemDefinition {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderManufacturedItemDefinition {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -39849,6 +46037,8 @@ class ResourceSearchBuilderManufacturedItemDefinition {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -39864,6 +46054,18 @@ class ResourceSearchBuilderManufacturedItemDefinition {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(
+    value: SummaryValue
+  ): ResourceSearchBuilderManufacturedItemDefinition {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -40188,6 +46390,40 @@ class ResourceSearchBuilderManufacturedItemDefinition {
   }
 }
 
+export type SortOrderManufacturedItemDefinition =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "dose-form"
+  | "-dose-form"
+  | "identifier"
+  | "-identifier"
+  | "ingredient"
+  | "-ingredient";
+
 class ResourceSearchBuilderMeasure {
   readonly resourceType = "Measure";
 
@@ -40204,7 +46440,31 @@ class ResourceSearchBuilderMeasure {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderMeasure | SortOrderMeasure[]
+  ): ResourceSearchBuilderMeasure {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderMeasure {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -40225,6 +46485,8 @@ class ResourceSearchBuilderMeasure {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -40240,6 +46502,16 @@ class ResourceSearchBuilderMeasure {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderMeasure {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -40923,6 +47195,74 @@ class ResourceSearchBuilderMeasure {
   }
 }
 
+export type SortOrderMeasure =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "composed-of"
+  | "-composed-of"
+  | "context"
+  | "-context"
+  | "context-quantity"
+  | "-context-quantity"
+  | "context-type"
+  | "-context-type"
+  | "date"
+  | "-date"
+  | "depends-on"
+  | "-depends-on"
+  | "derived-from"
+  | "-derived-from"
+  | "description"
+  | "-description"
+  | "effective"
+  | "-effective"
+  | "identifier"
+  | "-identifier"
+  | "jurisdiction"
+  | "-jurisdiction"
+  | "name"
+  | "-name"
+  | "predecessor"
+  | "-predecessor"
+  | "publisher"
+  | "-publisher"
+  | "status"
+  | "-status"
+  | "successor"
+  | "-successor"
+  | "title"
+  | "-title"
+  | "topic"
+  | "-topic"
+  | "url"
+  | "-url"
+  | "version"
+  | "-version";
+
 class ResourceSearchBuilderMeasureReport {
   readonly resourceType = "MeasureReport";
 
@@ -40939,7 +47279,31 @@ class ResourceSearchBuilderMeasureReport {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderMeasureReport | SortOrderMeasureReport[]
+  ): ResourceSearchBuilderMeasureReport {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderMeasureReport {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -40960,6 +47324,8 @@ class ResourceSearchBuilderMeasureReport {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -40975,6 +47341,16 @@ class ResourceSearchBuilderMeasureReport {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderMeasureReport {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -41439,6 +47815,52 @@ class ResourceSearchBuilderMeasureReport {
   }
 }
 
+export type SortOrderMeasureReport =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "date"
+  | "-date"
+  | "evaluated-resource"
+  | "-evaluated-resource"
+  | "identifier"
+  | "-identifier"
+  | "measure"
+  | "-measure"
+  | "patient"
+  | "-patient"
+  | "period"
+  | "-period"
+  | "reporter"
+  | "-reporter"
+  | "status"
+  | "-status"
+  | "subject"
+  | "-subject";
+
 class ResourceSearchBuilderMedia {
   readonly resourceType = "Media";
 
@@ -41455,7 +47877,31 @@ class ResourceSearchBuilderMedia {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderMedia | SortOrderMedia[]
+  ): ResourceSearchBuilderMedia {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderMedia {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -41476,6 +47922,8 @@ class ResourceSearchBuilderMedia {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -41491,6 +47939,16 @@ class ResourceSearchBuilderMedia {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderMedia {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -42081,6 +48539,60 @@ class ResourceSearchBuilderMedia {
   }
 }
 
+export type SortOrderMedia =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "based-on"
+  | "-based-on"
+  | "created"
+  | "-created"
+  | "device"
+  | "-device"
+  | "encounter"
+  | "-encounter"
+  | "identifier"
+  | "-identifier"
+  | "modality"
+  | "-modality"
+  | "operator"
+  | "-operator"
+  | "patient"
+  | "-patient"
+  | "site"
+  | "-site"
+  | "status"
+  | "-status"
+  | "subject"
+  | "-subject"
+  | "type"
+  | "-type"
+  | "view"
+  | "-view";
+
 class ResourceSearchBuilderMedication {
   readonly resourceType = "Medication";
 
@@ -42097,7 +48609,31 @@ class ResourceSearchBuilderMedication {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderMedication | SortOrderMedication[]
+  ): ResourceSearchBuilderMedication {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderMedication {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -42118,6 +48654,8 @@ class ResourceSearchBuilderMedication {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -42133,6 +48671,16 @@ class ResourceSearchBuilderMedication {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderMedication {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -42607,6 +49155,52 @@ class ResourceSearchBuilderMedication {
   }
 }
 
+export type SortOrderMedication =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "code"
+  | "-code"
+  | "expiration-date"
+  | "-expiration-date"
+  | "form"
+  | "-form"
+  | "identifier"
+  | "-identifier"
+  | "ingredient"
+  | "-ingredient"
+  | "ingredient-code"
+  | "-ingredient-code"
+  | "lot-number"
+  | "-lot-number"
+  | "manufacturer"
+  | "-manufacturer"
+  | "status"
+  | "-status";
+
 class ResourceSearchBuilderMedicationAdministration {
   readonly resourceType = "MedicationAdministration";
 
@@ -42623,7 +49217,33 @@ class ResourceSearchBuilderMedicationAdministration {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters:
+      | SortOrderMedicationAdministration
+      | SortOrderMedicationAdministration[]
+  ): ResourceSearchBuilderMedicationAdministration {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderMedicationAdministration {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -42644,6 +49264,8 @@ class ResourceSearchBuilderMedicationAdministration {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -42659,6 +49281,16 @@ class ResourceSearchBuilderMedicationAdministration {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderMedicationAdministration {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -43112,6 +49744,50 @@ class ResourceSearchBuilderMedicationAdministration {
   }
 }
 
+export type SortOrderMedicationAdministration =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "context"
+  | "-context"
+  | "device"
+  | "-device"
+  | "effective-time"
+  | "-effective-time"
+  | "performer"
+  | "-performer"
+  | "reason-given"
+  | "-reason-given"
+  | "reason-not-given"
+  | "-reason-not-given"
+  | "request"
+  | "-request"
+  | "subject"
+  | "-subject";
+
 class ResourceSearchBuilderMedicationDispense {
   readonly resourceType = "MedicationDispense";
 
@@ -43128,7 +49804,31 @@ class ResourceSearchBuilderMedicationDispense {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderMedicationDispense | SortOrderMedicationDispense[]
+  ): ResourceSearchBuilderMedicationDispense {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderMedicationDispense {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -43149,6 +49849,8 @@ class ResourceSearchBuilderMedicationDispense {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -43164,6 +49866,16 @@ class ResourceSearchBuilderMedicationDispense {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderMedicationDispense {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -43662,6 +50374,54 @@ class ResourceSearchBuilderMedicationDispense {
   }
 }
 
+export type SortOrderMedicationDispense =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "context"
+  | "-context"
+  | "destination"
+  | "-destination"
+  | "performer"
+  | "-performer"
+  | "prescription"
+  | "-prescription"
+  | "receiver"
+  | "-receiver"
+  | "responsibleparty"
+  | "-responsibleparty"
+  | "subject"
+  | "-subject"
+  | "type"
+  | "-type"
+  | "whenhandedover"
+  | "-whenhandedover"
+  | "whenprepared"
+  | "-whenprepared";
+
 class ResourceSearchBuilderMedicationKnowledge {
   readonly resourceType = "MedicationKnowledge";
 
@@ -43678,7 +50438,31 @@ class ResourceSearchBuilderMedicationKnowledge {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderMedicationKnowledge | SortOrderMedicationKnowledge[]
+  ): ResourceSearchBuilderMedicationKnowledge {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderMedicationKnowledge {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -43699,6 +50483,8 @@ class ResourceSearchBuilderMedicationKnowledge {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -43714,6 +50500,16 @@ class ResourceSearchBuilderMedicationKnowledge {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderMedicationKnowledge {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -44314,6 +51110,60 @@ class ResourceSearchBuilderMedicationKnowledge {
   }
 }
 
+export type SortOrderMedicationKnowledge =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "classification"
+  | "-classification"
+  | "classification-type"
+  | "-classification-type"
+  | "code"
+  | "-code"
+  | "doseform"
+  | "-doseform"
+  | "ingredient"
+  | "-ingredient"
+  | "ingredient-code"
+  | "-ingredient-code"
+  | "manufacturer"
+  | "-manufacturer"
+  | "monitoring-program-name"
+  | "-monitoring-program-name"
+  | "monitoring-program-type"
+  | "-monitoring-program-type"
+  | "monograph"
+  | "-monograph"
+  | "monograph-type"
+  | "-monograph-type"
+  | "source-cost"
+  | "-source-cost"
+  | "status"
+  | "-status";
+
 class ResourceSearchBuilderMedicationRequest {
   readonly resourceType = "MedicationRequest";
 
@@ -44330,7 +51180,31 @@ class ResourceSearchBuilderMedicationRequest {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderMedicationRequest | SortOrderMedicationRequest[]
+  ): ResourceSearchBuilderMedicationRequest {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderMedicationRequest {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -44351,6 +51225,8 @@ class ResourceSearchBuilderMedicationRequest {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -44366,6 +51242,16 @@ class ResourceSearchBuilderMedicationRequest {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderMedicationRequest {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -44890,6 +51776,56 @@ class ResourceSearchBuilderMedicationRequest {
   }
 }
 
+export type SortOrderMedicationRequest =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "authoredon"
+  | "-authoredon"
+  | "category"
+  | "-category"
+  | "date"
+  | "-date"
+  | "encounter"
+  | "-encounter"
+  | "intended-dispenser"
+  | "-intended-dispenser"
+  | "intended-performer"
+  | "-intended-performer"
+  | "intended-performertype"
+  | "-intended-performertype"
+  | "intent"
+  | "-intent"
+  | "priority"
+  | "-priority"
+  | "requester"
+  | "-requester"
+  | "subject"
+  | "-subject";
+
 class ResourceSearchBuilderMedicationStatement {
   readonly resourceType = "MedicationStatement";
 
@@ -44906,7 +51842,31 @@ class ResourceSearchBuilderMedicationStatement {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderMedicationStatement | SortOrderMedicationStatement[]
+  ): ResourceSearchBuilderMedicationStatement {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderMedicationStatement {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -44927,6 +51887,8 @@ class ResourceSearchBuilderMedicationStatement {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -44942,6 +51904,16 @@ class ResourceSearchBuilderMedicationStatement {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderMedicationStatement {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -45339,6 +52311,46 @@ class ResourceSearchBuilderMedicationStatement {
   }
 }
 
+export type SortOrderMedicationStatement =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "category"
+  | "-category"
+  | "context"
+  | "-context"
+  | "effective"
+  | "-effective"
+  | "part-of"
+  | "-part-of"
+  | "source"
+  | "-source"
+  | "subject"
+  | "-subject";
+
 class ResourceSearchBuilderMedicinalProductDefinition {
   readonly resourceType = "MedicinalProductDefinition";
 
@@ -45355,7 +52367,33 @@ class ResourceSearchBuilderMedicinalProductDefinition {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters:
+      | SortOrderMedicinalProductDefinition
+      | SortOrderMedicinalProductDefinition[]
+  ): ResourceSearchBuilderMedicinalProductDefinition {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderMedicinalProductDefinition {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -45376,6 +52414,8 @@ class ResourceSearchBuilderMedicinalProductDefinition {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -45391,6 +52431,18 @@ class ResourceSearchBuilderMedicinalProductDefinition {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(
+    value: SummaryValue
+  ): ResourceSearchBuilderMedicinalProductDefinition {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -45946,6 +52998,58 @@ class ResourceSearchBuilderMedicinalProductDefinition {
   }
 }
 
+export type SortOrderMedicinalProductDefinition =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "characteristic"
+  | "-characteristic"
+  | "characteristic-type"
+  | "-characteristic-type"
+  | "contact"
+  | "-contact"
+  | "domain"
+  | "-domain"
+  | "identifier"
+  | "-identifier"
+  | "ingredient"
+  | "-ingredient"
+  | "master-file"
+  | "-master-file"
+  | "name"
+  | "-name"
+  | "name-language"
+  | "-name-language"
+  | "product-classification"
+  | "-product-classification"
+  | "status"
+  | "-status"
+  | "type"
+  | "-type";
+
 class ResourceSearchBuilderMessageDefinition {
   readonly resourceType = "MessageDefinition";
 
@@ -45962,7 +53066,31 @@ class ResourceSearchBuilderMessageDefinition {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderMessageDefinition | SortOrderMessageDefinition[]
+  ): ResourceSearchBuilderMessageDefinition {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderMessageDefinition {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -45983,6 +53111,8 @@ class ResourceSearchBuilderMessageDefinition {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -45998,6 +53128,16 @@ class ResourceSearchBuilderMessageDefinition {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderMessageDefinition {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -46351,6 +53491,42 @@ class ResourceSearchBuilderMessageDefinition {
   }
 }
 
+export type SortOrderMessageDefinition =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "category"
+  | "-category"
+  | "event"
+  | "-event"
+  | "focus"
+  | "-focus"
+  | "parent"
+  | "-parent";
+
 class ResourceSearchBuilderMessageHeader {
   readonly resourceType = "MessageHeader";
 
@@ -46367,7 +53543,31 @@ class ResourceSearchBuilderMessageHeader {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderMessageHeader | SortOrderMessageHeader[]
+  ): ResourceSearchBuilderMessageHeader {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderMessageHeader {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -46388,6 +53588,8 @@ class ResourceSearchBuilderMessageHeader {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -46403,6 +53605,16 @@ class ResourceSearchBuilderMessageHeader {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderMessageHeader {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -46974,6 +54186,62 @@ class ResourceSearchBuilderMessageHeader {
   }
 }
 
+export type SortOrderMessageHeader =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "author"
+  | "-author"
+  | "code"
+  | "-code"
+  | "destination"
+  | "-destination"
+  | "destination-uri"
+  | "-destination-uri"
+  | "enterer"
+  | "-enterer"
+  | "event"
+  | "-event"
+  | "focus"
+  | "-focus"
+  | "receiver"
+  | "-receiver"
+  | "response-id"
+  | "-response-id"
+  | "responsible"
+  | "-responsible"
+  | "sender"
+  | "-sender"
+  | "source"
+  | "-source"
+  | "source-uri"
+  | "-source-uri"
+  | "target"
+  | "-target";
+
 class ResourceSearchBuilderMolecularSequence {
   readonly resourceType = "MolecularSequence";
 
@@ -46990,7 +54258,31 @@ class ResourceSearchBuilderMolecularSequence {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderMolecularSequence | SortOrderMolecularSequence[]
+  ): ResourceSearchBuilderMolecularSequence {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderMolecularSequence {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -47011,6 +54303,8 @@ class ResourceSearchBuilderMolecularSequence {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -47026,6 +54320,16 @@ class ResourceSearchBuilderMolecularSequence {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderMolecularSequence {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -47450,6 +54754,52 @@ class ResourceSearchBuilderMolecularSequence {
   }
 }
 
+export type SortOrderMolecularSequence =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "chromosome"
+  | "-chromosome"
+  | "identifier"
+  | "-identifier"
+  | "patient"
+  | "-patient"
+  | "referenceseqid"
+  | "-referenceseqid"
+  | "type"
+  | "-type"
+  | "variant-end"
+  | "-variant-end"
+  | "variant-start"
+  | "-variant-start"
+  | "window-end"
+  | "-window-end"
+  | "window-start"
+  | "-window-start";
+
 class ResourceSearchBuilderNamingSystem {
   readonly resourceType = "NamingSystem";
 
@@ -47466,7 +54816,31 @@ class ResourceSearchBuilderNamingSystem {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderNamingSystem | SortOrderNamingSystem[]
+  ): ResourceSearchBuilderNamingSystem {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderNamingSystem {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -47487,6 +54861,8 @@ class ResourceSearchBuilderNamingSystem {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -47502,6 +54878,16 @@ class ResourceSearchBuilderNamingSystem {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderNamingSystem {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -47897,6 +55283,50 @@ class ResourceSearchBuilderNamingSystem {
   }
 }
 
+export type SortOrderNamingSystem =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "contact"
+  | "-contact"
+  | "id-type"
+  | "-id-type"
+  | "kind"
+  | "-kind"
+  | "period"
+  | "-period"
+  | "responsible"
+  | "-responsible"
+  | "telecom"
+  | "-telecom"
+  | "type"
+  | "-type"
+  | "value"
+  | "-value";
+
 class ResourceSearchBuilderNutritionOrder {
   readonly resourceType = "NutritionOrder";
 
@@ -47913,7 +55343,31 @@ class ResourceSearchBuilderNutritionOrder {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderNutritionOrder | SortOrderNutritionOrder[]
+  ): ResourceSearchBuilderNutritionOrder {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderNutritionOrder {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -47934,6 +55388,8 @@ class ResourceSearchBuilderNutritionOrder {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -47949,6 +55405,16 @@ class ResourceSearchBuilderNutritionOrder {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderNutritionOrder {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -48407,6 +55873,52 @@ class ResourceSearchBuilderNutritionOrder {
   }
 }
 
+export type SortOrderNutritionOrder =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "additive"
+  | "-additive"
+  | "datetime"
+  | "-datetime"
+  | "formula"
+  | "-formula"
+  | "instantiates-canonical"
+  | "-instantiates-canonical"
+  | "instantiates-uri"
+  | "-instantiates-uri"
+  | "oraldiet"
+  | "-oraldiet"
+  | "provider"
+  | "-provider"
+  | "status"
+  | "-status"
+  | "supplement"
+  | "-supplement";
+
 class ResourceSearchBuilderNutritionProduct {
   readonly resourceType = "NutritionProduct";
 
@@ -48423,7 +55935,31 @@ class ResourceSearchBuilderNutritionProduct {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderNutritionProduct | SortOrderNutritionProduct[]
+  ): ResourceSearchBuilderNutritionProduct {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderNutritionProduct {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -48444,6 +55980,8 @@ class ResourceSearchBuilderNutritionProduct {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -48459,6 +55997,16 @@ class ResourceSearchBuilderNutritionProduct {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderNutritionProduct {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -48756,6 +56304,38 @@ class ResourceSearchBuilderNutritionProduct {
   }
 }
 
+export type SortOrderNutritionProduct =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "identifier"
+  | "-identifier"
+  | "status"
+  | "-status";
+
 class ResourceSearchBuilderObservation {
   readonly resourceType = "Observation";
 
@@ -48772,7 +56352,31 @@ class ResourceSearchBuilderObservation {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderObservation | SortOrderObservation[]
+  ): ResourceSearchBuilderObservation {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderObservation {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -48793,6 +56397,8 @@ class ResourceSearchBuilderObservation {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -48808,6 +56414,16 @@ class ResourceSearchBuilderObservation {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderObservation {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -49718,6 +57334,84 @@ class ResourceSearchBuilderObservation {
   }
 }
 
+export type SortOrderObservation =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "based-on"
+  | "-based-on"
+  | "category"
+  | "-category"
+  | "combo-code"
+  | "-combo-code"
+  | "combo-data-absent-reason"
+  | "-combo-data-absent-reason"
+  | "combo-value-concept"
+  | "-combo-value-concept"
+  | "combo-value-quantity"
+  | "-combo-value-quantity"
+  | "component-code"
+  | "-component-code"
+  | "component-data-absent-reason"
+  | "-component-data-absent-reason"
+  | "component-value-concept"
+  | "-component-value-concept"
+  | "component-value-quantity"
+  | "-component-value-quantity"
+  | "data-absent-reason"
+  | "-data-absent-reason"
+  | "derived-from"
+  | "-derived-from"
+  | "device"
+  | "-device"
+  | "focus"
+  | "-focus"
+  | "has-member"
+  | "-has-member"
+  | "method"
+  | "-method"
+  | "part-of"
+  | "-part-of"
+  | "performer"
+  | "-performer"
+  | "specimen"
+  | "-specimen"
+  | "status"
+  | "-status"
+  | "subject"
+  | "-subject"
+  | "value-concept"
+  | "-value-concept"
+  | "value-date"
+  | "-value-date"
+  | "value-quantity"
+  | "-value-quantity"
+  | "value-string"
+  | "-value-string";
+
 class ResourceSearchBuilderObservationDefinition {
   readonly resourceType = "ObservationDefinition";
 
@@ -49734,7 +57428,33 @@ class ResourceSearchBuilderObservationDefinition {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters:
+      | SortOrderObservationDefinition
+      | SortOrderObservationDefinition[]
+  ): ResourceSearchBuilderObservationDefinition {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderObservationDefinition {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -49755,6 +57475,8 @@ class ResourceSearchBuilderObservationDefinition {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -49770,6 +57492,16 @@ class ResourceSearchBuilderObservationDefinition {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderObservationDefinition {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -50013,6 +57745,34 @@ class ResourceSearchBuilderObservationDefinition {
   }
 }
 
+export type SortOrderObservationDefinition =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type";
+
 class ResourceSearchBuilderOperationDefinition {
   readonly resourceType = "OperationDefinition";
 
@@ -50029,7 +57789,31 @@ class ResourceSearchBuilderOperationDefinition {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderOperationDefinition | SortOrderOperationDefinition[]
+  ): ResourceSearchBuilderOperationDefinition {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderOperationDefinition {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -50050,6 +57834,8 @@ class ResourceSearchBuilderOperationDefinition {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -50065,6 +57851,16 @@ class ResourceSearchBuilderOperationDefinition {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderOperationDefinition {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -50530,6 +58326,50 @@ class ResourceSearchBuilderOperationDefinition {
   }
 }
 
+export type SortOrderOperationDefinition =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "base"
+  | "-base"
+  | "code"
+  | "-code"
+  | "input-profile"
+  | "-input-profile"
+  | "instance"
+  | "-instance"
+  | "kind"
+  | "-kind"
+  | "output-profile"
+  | "-output-profile"
+  | "system"
+  | "-system"
+  | "type"
+  | "-type";
+
 class ResourceSearchBuilderOperationOutcome {
   readonly resourceType = "OperationOutcome";
 
@@ -50546,7 +58386,31 @@ class ResourceSearchBuilderOperationOutcome {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderOperationOutcome | SortOrderOperationOutcome[]
+  ): ResourceSearchBuilderOperationOutcome {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderOperationOutcome {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -50567,6 +58431,8 @@ class ResourceSearchBuilderOperationOutcome {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -50582,6 +58448,16 @@ class ResourceSearchBuilderOperationOutcome {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderOperationOutcome {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -50825,6 +58701,34 @@ class ResourceSearchBuilderOperationOutcome {
   }
 }
 
+export type SortOrderOperationOutcome =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type";
+
 class ResourceSearchBuilderOrganization {
   readonly resourceType = "Organization";
 
@@ -50841,7 +58745,31 @@ class ResourceSearchBuilderOrganization {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderOrganization | SortOrderOrganization[]
+  ): ResourceSearchBuilderOrganization {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderOrganization {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -50862,6 +58790,8 @@ class ResourceSearchBuilderOrganization {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -50877,6 +58807,16 @@ class ResourceSearchBuilderOrganization {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderOrganization {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -51363,6 +59303,60 @@ class ResourceSearchBuilderOrganization {
   }
 }
 
+export type SortOrderOrganization =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "active"
+  | "-active"
+  | "address"
+  | "-address"
+  | "address-city"
+  | "-address-city"
+  | "address-country"
+  | "-address-country"
+  | "address-postalcode"
+  | "-address-postalcode"
+  | "address-state"
+  | "-address-state"
+  | "address-use"
+  | "-address-use"
+  | "endpoint"
+  | "-endpoint"
+  | "identifier"
+  | "-identifier"
+  | "name"
+  | "-name"
+  | "partof"
+  | "-partof"
+  | "phonetic"
+  | "-phonetic"
+  | "type"
+  | "-type";
+
 class ResourceSearchBuilderOrganizationAffiliation {
   readonly resourceType = "OrganizationAffiliation";
 
@@ -51379,7 +59373,33 @@ class ResourceSearchBuilderOrganizationAffiliation {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters:
+      | SortOrderOrganizationAffiliation
+      | SortOrderOrganizationAffiliation[]
+  ): ResourceSearchBuilderOrganizationAffiliation {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderOrganizationAffiliation {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -51400,6 +59420,8 @@ class ResourceSearchBuilderOrganizationAffiliation {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -51415,6 +59437,16 @@ class ResourceSearchBuilderOrganizationAffiliation {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderOrganizationAffiliation {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -52032,6 +60064,62 @@ class ResourceSearchBuilderOrganizationAffiliation {
   }
 }
 
+export type SortOrderOrganizationAffiliation =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "active"
+  | "-active"
+  | "date"
+  | "-date"
+  | "email"
+  | "-email"
+  | "endpoint"
+  | "-endpoint"
+  | "identifier"
+  | "-identifier"
+  | "location"
+  | "-location"
+  | "network"
+  | "-network"
+  | "participating-organization"
+  | "-participating-organization"
+  | "phone"
+  | "-phone"
+  | "primary-organization"
+  | "-primary-organization"
+  | "role"
+  | "-role"
+  | "service"
+  | "-service"
+  | "specialty"
+  | "-specialty"
+  | "telecom"
+  | "-telecom";
+
 class ResourceSearchBuilderPackagedProductDefinition {
   readonly resourceType = "PackagedProductDefinition";
 
@@ -52048,7 +60136,33 @@ class ResourceSearchBuilderPackagedProductDefinition {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters:
+      | SortOrderPackagedProductDefinition
+      | SortOrderPackagedProductDefinition[]
+  ): ResourceSearchBuilderPackagedProductDefinition {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderPackagedProductDefinition {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -52069,6 +60183,8 @@ class ResourceSearchBuilderPackagedProductDefinition {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -52084,6 +60200,18 @@ class ResourceSearchBuilderPackagedProductDefinition {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(
+    value: SummaryValue
+  ): ResourceSearchBuilderPackagedProductDefinition {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -52640,6 +60768,56 @@ class ResourceSearchBuilderPackagedProductDefinition {
   }
 }
 
+export type SortOrderPackagedProductDefinition =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "biological"
+  | "-biological"
+  | "contained-item"
+  | "-contained-item"
+  | "device"
+  | "-device"
+  | "identifier"
+  | "-identifier"
+  | "manufactured-item"
+  | "-manufactured-item"
+  | "medication"
+  | "-medication"
+  | "name"
+  | "-name"
+  | "nutrition"
+  | "-nutrition"
+  | "package"
+  | "-package"
+  | "package-for"
+  | "-package-for"
+  | "status"
+  | "-status";
+
 class ResourceSearchBuilderPatient {
   readonly resourceType = "Patient";
 
@@ -52656,7 +60834,31 @@ class ResourceSearchBuilderPatient {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderPatient | SortOrderPatient[]
+  ): ResourceSearchBuilderPatient {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderPatient {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -52677,6 +60879,8 @@ class ResourceSearchBuilderPatient {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -52692,6 +60896,16 @@ class ResourceSearchBuilderPatient {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderPatient {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -53152,6 +61366,52 @@ class ResourceSearchBuilderPatient {
   }
 }
 
+export type SortOrderPatient =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "active"
+  | "-active"
+  | "death-date"
+  | "-death-date"
+  | "deceased"
+  | "-deceased"
+  | "general-practitioner"
+  | "-general-practitioner"
+  | "identifier"
+  | "-identifier"
+  | "language"
+  | "-language"
+  | "link"
+  | "-link"
+  | "name"
+  | "-name"
+  | "organization"
+  | "-organization";
+
 class ResourceSearchBuilderPaymentNotice {
   readonly resourceType = "PaymentNotice";
 
@@ -53168,7 +61428,31 @@ class ResourceSearchBuilderPaymentNotice {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderPaymentNotice | SortOrderPaymentNotice[]
+  ): ResourceSearchBuilderPaymentNotice {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderPaymentNotice {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -53189,6 +61473,8 @@ class ResourceSearchBuilderPaymentNotice {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -53204,6 +61490,16 @@ class ResourceSearchBuilderPaymentNotice {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderPaymentNotice {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -53626,6 +61922,48 @@ class ResourceSearchBuilderPaymentNotice {
   }
 }
 
+export type SortOrderPaymentNotice =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "created"
+  | "-created"
+  | "identifier"
+  | "-identifier"
+  | "payment-status"
+  | "-payment-status"
+  | "provider"
+  | "-provider"
+  | "request"
+  | "-request"
+  | "response"
+  | "-response"
+  | "status"
+  | "-status";
+
 class ResourceSearchBuilderPaymentReconciliation {
   readonly resourceType = "PaymentReconciliation";
 
@@ -53642,7 +61980,33 @@ class ResourceSearchBuilderPaymentReconciliation {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters:
+      | SortOrderPaymentReconciliation
+      | SortOrderPaymentReconciliation[]
+  ): ResourceSearchBuilderPaymentReconciliation {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderPaymentReconciliation {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -53663,6 +62027,8 @@ class ResourceSearchBuilderPaymentReconciliation {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -53678,6 +62044,16 @@ class ResourceSearchBuilderPaymentReconciliation {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderPaymentReconciliation {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -54111,6 +62487,50 @@ class ResourceSearchBuilderPaymentReconciliation {
   }
 }
 
+export type SortOrderPaymentReconciliation =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "created"
+  | "-created"
+  | "disposition"
+  | "-disposition"
+  | "identifier"
+  | "-identifier"
+  | "outcome"
+  | "-outcome"
+  | "payment-issuer"
+  | "-payment-issuer"
+  | "request"
+  | "-request"
+  | "requestor"
+  | "-requestor"
+  | "status"
+  | "-status";
+
 class ResourceSearchBuilderPerson {
   readonly resourceType = "Person";
 
@@ -54127,7 +62547,31 @@ class ResourceSearchBuilderPerson {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderPerson | SortOrderPerson[]
+  ): ResourceSearchBuilderPerson {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderPerson {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -54148,6 +62592,8 @@ class ResourceSearchBuilderPerson {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -54163,6 +62609,16 @@ class ResourceSearchBuilderPerson {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderPerson {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -54589,6 +63045,48 @@ class ResourceSearchBuilderPerson {
   }
 }
 
+export type SortOrderPerson =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "identifier"
+  | "-identifier"
+  | "link"
+  | "-link"
+  | "name"
+  | "-name"
+  | "organization"
+  | "-organization"
+  | "patient"
+  | "-patient"
+  | "practitioner"
+  | "-practitioner"
+  | "relatedperson"
+  | "-relatedperson";
+
 class ResourceSearchBuilderPlanDefinition {
   readonly resourceType = "PlanDefinition";
 
@@ -54605,7 +63103,31 @@ class ResourceSearchBuilderPlanDefinition {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderPlanDefinition | SortOrderPlanDefinition[]
+  ): ResourceSearchBuilderPlanDefinition {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderPlanDefinition {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -54626,6 +63148,8 @@ class ResourceSearchBuilderPlanDefinition {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -54641,6 +63165,16 @@ class ResourceSearchBuilderPlanDefinition {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderPlanDefinition {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -55380,6 +63914,78 @@ class ResourceSearchBuilderPlanDefinition {
   }
 }
 
+export type SortOrderPlanDefinition =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "composed-of"
+  | "-composed-of"
+  | "context"
+  | "-context"
+  | "context-quantity"
+  | "-context-quantity"
+  | "context-type"
+  | "-context-type"
+  | "date"
+  | "-date"
+  | "definition"
+  | "-definition"
+  | "depends-on"
+  | "-depends-on"
+  | "derived-from"
+  | "-derived-from"
+  | "description"
+  | "-description"
+  | "effective"
+  | "-effective"
+  | "identifier"
+  | "-identifier"
+  | "jurisdiction"
+  | "-jurisdiction"
+  | "name"
+  | "-name"
+  | "predecessor"
+  | "-predecessor"
+  | "publisher"
+  | "-publisher"
+  | "status"
+  | "-status"
+  | "successor"
+  | "-successor"
+  | "title"
+  | "-title"
+  | "topic"
+  | "-topic"
+  | "type"
+  | "-type"
+  | "url"
+  | "-url"
+  | "version"
+  | "-version";
+
 class ResourceSearchBuilderPractitioner {
   readonly resourceType = "Practitioner";
 
@@ -55396,7 +64002,31 @@ class ResourceSearchBuilderPractitioner {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderPractitioner | SortOrderPractitioner[]
+  ): ResourceSearchBuilderPractitioner {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderPractitioner {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -55417,6 +64047,8 @@ class ResourceSearchBuilderPractitioner {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -55432,6 +64064,16 @@ class ResourceSearchBuilderPractitioner {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderPractitioner {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -55767,6 +64409,42 @@ class ResourceSearchBuilderPractitioner {
   }
 }
 
+export type SortOrderPractitioner =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "active"
+  | "-active"
+  | "communication"
+  | "-communication"
+  | "identifier"
+  | "-identifier"
+  | "name"
+  | "-name";
+
 class ResourceSearchBuilderPractitionerRole {
   readonly resourceType = "PractitionerRole";
 
@@ -55783,7 +64461,31 @@ class ResourceSearchBuilderPractitionerRole {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderPractitionerRole | SortOrderPractitionerRole[]
+  ): ResourceSearchBuilderPractitionerRole {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderPractitionerRole {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -55804,6 +64506,8 @@ class ResourceSearchBuilderPractitionerRole {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -55819,6 +64523,16 @@ class ResourceSearchBuilderPractitionerRole {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderPractitionerRole {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -56326,6 +65040,54 @@ class ResourceSearchBuilderPractitionerRole {
   }
 }
 
+export type SortOrderPractitionerRole =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "active"
+  | "-active"
+  | "date"
+  | "-date"
+  | "endpoint"
+  | "-endpoint"
+  | "identifier"
+  | "-identifier"
+  | "location"
+  | "-location"
+  | "organization"
+  | "-organization"
+  | "practitioner"
+  | "-practitioner"
+  | "role"
+  | "-role"
+  | "service"
+  | "-service"
+  | "specialty"
+  | "-specialty";
+
 class ResourceSearchBuilderProcedure {
   readonly resourceType = "Procedure";
 
@@ -56342,7 +65104,31 @@ class ResourceSearchBuilderProcedure {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderProcedure | SortOrderProcedure[]
+  ): ResourceSearchBuilderProcedure {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderProcedure {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -56363,6 +65149,8 @@ class ResourceSearchBuilderProcedure {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -56378,6 +65166,16 @@ class ResourceSearchBuilderProcedure {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderProcedure {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -56916,6 +65714,56 @@ class ResourceSearchBuilderProcedure {
   }
 }
 
+export type SortOrderProcedure =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "based-on"
+  | "-based-on"
+  | "category"
+  | "-category"
+  | "instantiates-canonical"
+  | "-instantiates-canonical"
+  | "instantiates-uri"
+  | "-instantiates-uri"
+  | "location"
+  | "-location"
+  | "part-of"
+  | "-part-of"
+  | "performer"
+  | "-performer"
+  | "reason-code"
+  | "-reason-code"
+  | "reason-reference"
+  | "-reason-reference"
+  | "status"
+  | "-status"
+  | "subject"
+  | "-subject";
+
 class ResourceSearchBuilderProvenance {
   readonly resourceType = "Provenance";
 
@@ -56932,7 +65780,31 @@ class ResourceSearchBuilderProvenance {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderProvenance | SortOrderProvenance[]
+  ): ResourceSearchBuilderProvenance {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderProvenance {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -56953,6 +65825,8 @@ class ResourceSearchBuilderProvenance {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -56968,6 +65842,16 @@ class ResourceSearchBuilderProvenance {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderProvenance {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -57459,6 +66343,54 @@ class ResourceSearchBuilderProvenance {
   }
 }
 
+export type SortOrderProvenance =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "agent"
+  | "-agent"
+  | "agent-role"
+  | "-agent-role"
+  | "agent-type"
+  | "-agent-type"
+  | "entity"
+  | "-entity"
+  | "location"
+  | "-location"
+  | "patient"
+  | "-patient"
+  | "recorded"
+  | "-recorded"
+  | "signature-type"
+  | "-signature-type"
+  | "target"
+  | "-target"
+  | "when"
+  | "-when";
+
 class ResourceSearchBuilderQuestionnaire {
   readonly resourceType = "Questionnaire";
 
@@ -57475,7 +66407,31 @@ class ResourceSearchBuilderQuestionnaire {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderQuestionnaire | SortOrderQuestionnaire[]
+  ): ResourceSearchBuilderQuestionnaire {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderQuestionnaire {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -57496,6 +66452,8 @@ class ResourceSearchBuilderQuestionnaire {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -57511,6 +66469,16 @@ class ResourceSearchBuilderQuestionnaire {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderQuestionnaire {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -58087,6 +67055,68 @@ class ResourceSearchBuilderQuestionnaire {
   }
 }
 
+export type SortOrderQuestionnaire =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "code"
+  | "-code"
+  | "context"
+  | "-context"
+  | "context-quantity"
+  | "-context-quantity"
+  | "context-type"
+  | "-context-type"
+  | "date"
+  | "-date"
+  | "definition"
+  | "-definition"
+  | "description"
+  | "-description"
+  | "effective"
+  | "-effective"
+  | "identifier"
+  | "-identifier"
+  | "jurisdiction"
+  | "-jurisdiction"
+  | "name"
+  | "-name"
+  | "publisher"
+  | "-publisher"
+  | "status"
+  | "-status"
+  | "subject-type"
+  | "-subject-type"
+  | "title"
+  | "-title"
+  | "url"
+  | "-url"
+  | "version"
+  | "-version";
+
 class ResourceSearchBuilderQuestionnaireResponse {
   readonly resourceType = "QuestionnaireResponse";
 
@@ -58103,7 +67133,33 @@ class ResourceSearchBuilderQuestionnaireResponse {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters:
+      | SortOrderQuestionnaireResponse
+      | SortOrderQuestionnaireResponse[]
+  ): ResourceSearchBuilderQuestionnaireResponse {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderQuestionnaireResponse {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -58124,6 +67180,8 @@ class ResourceSearchBuilderQuestionnaireResponse {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -58139,6 +67197,16 @@ class ResourceSearchBuilderQuestionnaireResponse {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderQuestionnaireResponse {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -58679,6 +67747,56 @@ class ResourceSearchBuilderQuestionnaireResponse {
   }
 }
 
+export type SortOrderQuestionnaireResponse =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "author"
+  | "-author"
+  | "authored"
+  | "-authored"
+  | "based-on"
+  | "-based-on"
+  | "encounter"
+  | "-encounter"
+  | "identifier"
+  | "-identifier"
+  | "part-of"
+  | "-part-of"
+  | "patient"
+  | "-patient"
+  | "questionnaire"
+  | "-questionnaire"
+  | "source"
+  | "-source"
+  | "status"
+  | "-status"
+  | "subject"
+  | "-subject";
+
 class ResourceSearchBuilderRegulatedAuthorization {
   readonly resourceType = "RegulatedAuthorization";
 
@@ -58695,7 +67813,33 @@ class ResourceSearchBuilderRegulatedAuthorization {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters:
+      | SortOrderRegulatedAuthorization
+      | SortOrderRegulatedAuthorization[]
+  ): ResourceSearchBuilderRegulatedAuthorization {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderRegulatedAuthorization {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -58716,6 +67860,8 @@ class ResourceSearchBuilderRegulatedAuthorization {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -58731,6 +67877,16 @@ class ResourceSearchBuilderRegulatedAuthorization {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderRegulatedAuthorization {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -59167,6 +68323,48 @@ class ResourceSearchBuilderRegulatedAuthorization {
   }
 }
 
+export type SortOrderRegulatedAuthorization =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "case"
+  | "-case"
+  | "case-type"
+  | "-case-type"
+  | "holder"
+  | "-holder"
+  | "identifier"
+  | "-identifier"
+  | "region"
+  | "-region"
+  | "status"
+  | "-status"
+  | "subject"
+  | "-subject";
+
 class ResourceSearchBuilderRelatedPerson {
   readonly resourceType = "RelatedPerson";
 
@@ -59183,7 +68381,31 @@ class ResourceSearchBuilderRelatedPerson {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderRelatedPerson | SortOrderRelatedPerson[]
+  ): ResourceSearchBuilderRelatedPerson {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderRelatedPerson {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -59204,6 +68426,8 @@ class ResourceSearchBuilderRelatedPerson {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -59219,6 +68443,16 @@ class ResourceSearchBuilderRelatedPerson {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderRelatedPerson {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -59583,6 +68817,44 @@ class ResourceSearchBuilderRelatedPerson {
   }
 }
 
+export type SortOrderRelatedPerson =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "active"
+  | "-active"
+  | "identifier"
+  | "-identifier"
+  | "name"
+  | "-name"
+  | "patient"
+  | "-patient"
+  | "relationship"
+  | "-relationship";
+
 class ResourceSearchBuilderRequestGroup {
   readonly resourceType = "RequestGroup";
 
@@ -59599,7 +68871,31 @@ class ResourceSearchBuilderRequestGroup {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderRequestGroup | SortOrderRequestGroup[]
+  ): ResourceSearchBuilderRequestGroup {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderRequestGroup {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -59620,6 +68916,8 @@ class ResourceSearchBuilderRequestGroup {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -59635,6 +68933,16 @@ class ResourceSearchBuilderRequestGroup {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderRequestGroup {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -60236,6 +69544,62 @@ class ResourceSearchBuilderRequestGroup {
   }
 }
 
+export type SortOrderRequestGroup =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "author"
+  | "-author"
+  | "authored"
+  | "-authored"
+  | "code"
+  | "-code"
+  | "encounter"
+  | "-encounter"
+  | "group-identifier"
+  | "-group-identifier"
+  | "identifier"
+  | "-identifier"
+  | "instantiates-canonical"
+  | "-instantiates-canonical"
+  | "instantiates-uri"
+  | "-instantiates-uri"
+  | "intent"
+  | "-intent"
+  | "participant"
+  | "-participant"
+  | "patient"
+  | "-patient"
+  | "priority"
+  | "-priority"
+  | "status"
+  | "-status"
+  | "subject"
+  | "-subject";
+
 class ResourceSearchBuilderResearchDefinition {
   readonly resourceType = "ResearchDefinition";
 
@@ -60252,7 +69616,31 @@ class ResourceSearchBuilderResearchDefinition {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderResearchDefinition | SortOrderResearchDefinition[]
+  ): ResourceSearchBuilderResearchDefinition {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderResearchDefinition {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -60273,6 +69661,8 @@ class ResourceSearchBuilderResearchDefinition {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -60288,6 +69678,16 @@ class ResourceSearchBuilderResearchDefinition {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderResearchDefinition {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -60971,6 +70371,74 @@ class ResourceSearchBuilderResearchDefinition {
   }
 }
 
+export type SortOrderResearchDefinition =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "composed-of"
+  | "-composed-of"
+  | "context"
+  | "-context"
+  | "context-quantity"
+  | "-context-quantity"
+  | "context-type"
+  | "-context-type"
+  | "date"
+  | "-date"
+  | "depends-on"
+  | "-depends-on"
+  | "derived-from"
+  | "-derived-from"
+  | "description"
+  | "-description"
+  | "effective"
+  | "-effective"
+  | "identifier"
+  | "-identifier"
+  | "jurisdiction"
+  | "-jurisdiction"
+  | "name"
+  | "-name"
+  | "predecessor"
+  | "-predecessor"
+  | "publisher"
+  | "-publisher"
+  | "status"
+  | "-status"
+  | "successor"
+  | "-successor"
+  | "title"
+  | "-title"
+  | "topic"
+  | "-topic"
+  | "url"
+  | "-url"
+  | "version"
+  | "-version";
+
 class ResourceSearchBuilderResearchElementDefinition {
   readonly resourceType = "ResearchElementDefinition";
 
@@ -60987,7 +70455,33 @@ class ResourceSearchBuilderResearchElementDefinition {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters:
+      | SortOrderResearchElementDefinition
+      | SortOrderResearchElementDefinition[]
+  ): ResourceSearchBuilderResearchElementDefinition {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderResearchElementDefinition {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -61008,6 +70502,8 @@ class ResourceSearchBuilderResearchElementDefinition {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -61023,6 +70519,18 @@ class ResourceSearchBuilderResearchElementDefinition {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(
+    value: SummaryValue
+  ): ResourceSearchBuilderResearchElementDefinition {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -61706,6 +71214,74 @@ class ResourceSearchBuilderResearchElementDefinition {
   }
 }
 
+export type SortOrderResearchElementDefinition =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "composed-of"
+  | "-composed-of"
+  | "context"
+  | "-context"
+  | "context-quantity"
+  | "-context-quantity"
+  | "context-type"
+  | "-context-type"
+  | "date"
+  | "-date"
+  | "depends-on"
+  | "-depends-on"
+  | "derived-from"
+  | "-derived-from"
+  | "description"
+  | "-description"
+  | "effective"
+  | "-effective"
+  | "identifier"
+  | "-identifier"
+  | "jurisdiction"
+  | "-jurisdiction"
+  | "name"
+  | "-name"
+  | "predecessor"
+  | "-predecessor"
+  | "publisher"
+  | "-publisher"
+  | "status"
+  | "-status"
+  | "successor"
+  | "-successor"
+  | "title"
+  | "-title"
+  | "topic"
+  | "-topic"
+  | "url"
+  | "-url"
+  | "version"
+  | "-version";
+
 class ResourceSearchBuilderResearchStudy {
   readonly resourceType = "ResearchStudy";
 
@@ -61722,7 +71298,31 @@ class ResourceSearchBuilderResearchStudy {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderResearchStudy | SortOrderResearchStudy[]
+  ): ResourceSearchBuilderResearchStudy {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderResearchStudy {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -61743,6 +71343,8 @@ class ResourceSearchBuilderResearchStudy {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -61758,6 +71360,16 @@ class ResourceSearchBuilderResearchStudy {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderResearchStudy {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -62330,6 +71942,60 @@ class ResourceSearchBuilderResearchStudy {
   }
 }
 
+export type SortOrderResearchStudy =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "category"
+  | "-category"
+  | "date"
+  | "-date"
+  | "focus"
+  | "-focus"
+  | "identifier"
+  | "-identifier"
+  | "keyword"
+  | "-keyword"
+  | "location"
+  | "-location"
+  | "partof"
+  | "-partof"
+  | "principalinvestigator"
+  | "-principalinvestigator"
+  | "protocol"
+  | "-protocol"
+  | "site"
+  | "-site"
+  | "sponsor"
+  | "-sponsor"
+  | "status"
+  | "-status"
+  | "title"
+  | "-title";
+
 class ResourceSearchBuilderResearchSubject {
   readonly resourceType = "ResearchSubject";
 
@@ -62346,7 +72012,31 @@ class ResourceSearchBuilderResearchSubject {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderResearchSubject | SortOrderResearchSubject[]
+  ): ResourceSearchBuilderResearchSubject {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderResearchSubject {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -62367,6 +72057,8 @@ class ResourceSearchBuilderResearchSubject {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -62382,6 +72074,16 @@ class ResourceSearchBuilderResearchSubject {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderResearchSubject {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -62777,6 +72479,46 @@ class ResourceSearchBuilderResearchSubject {
   }
 }
 
+export type SortOrderResearchSubject =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "date"
+  | "-date"
+  | "identifier"
+  | "-identifier"
+  | "individual"
+  | "-individual"
+  | "patient"
+  | "-patient"
+  | "status"
+  | "-status"
+  | "study"
+  | "-study";
+
 class ResourceSearchBuilderRiskAssessment {
   readonly resourceType = "RiskAssessment";
 
@@ -62793,7 +72535,31 @@ class ResourceSearchBuilderRiskAssessment {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderRiskAssessment | SortOrderRiskAssessment[]
+  ): ResourceSearchBuilderRiskAssessment {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderRiskAssessment {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -62814,6 +72580,8 @@ class ResourceSearchBuilderRiskAssessment {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -62829,6 +72597,16 @@ class ResourceSearchBuilderRiskAssessment {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderRiskAssessment {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -63224,6 +73002,46 @@ class ResourceSearchBuilderRiskAssessment {
   }
 }
 
+export type SortOrderRiskAssessment =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "condition"
+  | "-condition"
+  | "method"
+  | "-method"
+  | "performer"
+  | "-performer"
+  | "probability"
+  | "-probability"
+  | "risk"
+  | "-risk"
+  | "subject"
+  | "-subject";
+
 class ResourceSearchBuilderSchedule {
   readonly resourceType = "Schedule";
 
@@ -63240,7 +73058,31 @@ class ResourceSearchBuilderSchedule {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderSchedule | SortOrderSchedule[]
+  ): ResourceSearchBuilderSchedule {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderSchedule {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -63261,6 +73103,8 @@ class ResourceSearchBuilderSchedule {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -63276,6 +73120,16 @@ class ResourceSearchBuilderSchedule {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderSchedule {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -63694,6 +73548,48 @@ class ResourceSearchBuilderSchedule {
   }
 }
 
+export type SortOrderSchedule =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "active"
+  | "-active"
+  | "actor"
+  | "-actor"
+  | "date"
+  | "-date"
+  | "identifier"
+  | "-identifier"
+  | "service-category"
+  | "-service-category"
+  | "service-type"
+  | "-service-type"
+  | "specialty"
+  | "-specialty";
+
 class ResourceSearchBuilderSearchParameter {
   readonly resourceType = "SearchParameter";
 
@@ -63710,7 +73606,31 @@ class ResourceSearchBuilderSearchParameter {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderSearchParameter | SortOrderSearchParameter[]
+  ): ResourceSearchBuilderSearchParameter {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderSearchParameter {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -63731,6 +73651,8 @@ class ResourceSearchBuilderSearchParameter {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -63746,6 +73668,16 @@ class ResourceSearchBuilderSearchParameter {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderSearchParameter {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -64155,6 +74087,46 @@ class ResourceSearchBuilderSearchParameter {
   }
 }
 
+export type SortOrderSearchParameter =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "base"
+  | "-base"
+  | "code"
+  | "-code"
+  | "component"
+  | "-component"
+  | "derived-from"
+  | "-derived-from"
+  | "target"
+  | "-target"
+  | "type"
+  | "-type";
+
 class ResourceSearchBuilderServiceRequest {
   readonly resourceType = "ServiceRequest";
 
@@ -64171,7 +74143,31 @@ class ResourceSearchBuilderServiceRequest {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderServiceRequest | SortOrderServiceRequest[]
+  ): ResourceSearchBuilderServiceRequest {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderServiceRequest {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -64192,6 +74188,8 @@ class ResourceSearchBuilderServiceRequest {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -64207,6 +74205,16 @@ class ResourceSearchBuilderServiceRequest {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderServiceRequest {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -64875,6 +74883,68 @@ class ResourceSearchBuilderServiceRequest {
   }
 }
 
+export type SortOrderServiceRequest =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "authored"
+  | "-authored"
+  | "based-on"
+  | "-based-on"
+  | "body-site"
+  | "-body-site"
+  | "category"
+  | "-category"
+  | "instantiates-canonical"
+  | "-instantiates-canonical"
+  | "instantiates-uri"
+  | "-instantiates-uri"
+  | "intent"
+  | "-intent"
+  | "occurrence"
+  | "-occurrence"
+  | "performer"
+  | "-performer"
+  | "performer-type"
+  | "-performer-type"
+  | "priority"
+  | "-priority"
+  | "replaces"
+  | "-replaces"
+  | "requester"
+  | "-requester"
+  | "requisition"
+  | "-requisition"
+  | "specimen"
+  | "-specimen"
+  | "status"
+  | "-status"
+  | "subject"
+  | "-subject";
+
 class ResourceSearchBuilderSlot {
   readonly resourceType = "Slot";
 
@@ -64891,7 +74961,31 @@ class ResourceSearchBuilderSlot {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderSlot | SortOrderSlot[]
+  ): ResourceSearchBuilderSlot {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderSlot {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -64912,6 +75006,8 @@ class ResourceSearchBuilderSlot {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -64927,6 +75023,16 @@ class ResourceSearchBuilderSlot {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderSlot {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -65372,6 +75478,50 @@ class ResourceSearchBuilderSlot {
   }
 }
 
+export type SortOrderSlot =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "appointment-type"
+  | "-appointment-type"
+  | "identifier"
+  | "-identifier"
+  | "schedule"
+  | "-schedule"
+  | "service-category"
+  | "-service-category"
+  | "service-type"
+  | "-service-type"
+  | "specialty"
+  | "-specialty"
+  | "start"
+  | "-start"
+  | "status"
+  | "-status";
+
 class ResourceSearchBuilderSpecimen {
   readonly resourceType = "Specimen";
 
@@ -65388,7 +75538,31 @@ class ResourceSearchBuilderSpecimen {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderSpecimen | SortOrderSpecimen[]
+  ): ResourceSearchBuilderSpecimen {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderSpecimen {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -65409,6 +75583,8 @@ class ResourceSearchBuilderSpecimen {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -65424,6 +75600,16 @@ class ResourceSearchBuilderSpecimen {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderSpecimen {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -65983,6 +76169,58 @@ class ResourceSearchBuilderSpecimen {
   }
 }
 
+export type SortOrderSpecimen =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "accession"
+  | "-accession"
+  | "bodysite"
+  | "-bodysite"
+  | "collected"
+  | "-collected"
+  | "collector"
+  | "-collector"
+  | "container"
+  | "-container"
+  | "container-id"
+  | "-container-id"
+  | "identifier"
+  | "-identifier"
+  | "parent"
+  | "-parent"
+  | "patient"
+  | "-patient"
+  | "status"
+  | "-status"
+  | "subject"
+  | "-subject"
+  | "type"
+  | "-type";
+
 class ResourceSearchBuilderSpecimenDefinition {
   readonly resourceType = "SpecimenDefinition";
 
@@ -65999,7 +76237,31 @@ class ResourceSearchBuilderSpecimenDefinition {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderSpecimenDefinition | SortOrderSpecimenDefinition[]
+  ): ResourceSearchBuilderSpecimenDefinition {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderSpecimenDefinition {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -66020,6 +76282,8 @@ class ResourceSearchBuilderSpecimenDefinition {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -66035,6 +76299,16 @@ class ResourceSearchBuilderSpecimenDefinition {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderSpecimenDefinition {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -66359,6 +76633,40 @@ class ResourceSearchBuilderSpecimenDefinition {
   }
 }
 
+export type SortOrderSpecimenDefinition =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "container"
+  | "-container"
+  | "identifier"
+  | "-identifier"
+  | "type"
+  | "-type";
+
 class ResourceSearchBuilderStructureDefinition {
   readonly resourceType = "StructureDefinition";
 
@@ -66375,7 +76683,31 @@ class ResourceSearchBuilderStructureDefinition {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderStructureDefinition | SortOrderStructureDefinition[]
+  ): ResourceSearchBuilderStructureDefinition {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderStructureDefinition {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -66396,6 +76728,8 @@ class ResourceSearchBuilderStructureDefinition {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -66411,6 +76745,16 @@ class ResourceSearchBuilderStructureDefinition {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderStructureDefinition {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -66939,6 +77283,56 @@ class ResourceSearchBuilderStructureDefinition {
   }
 }
 
+export type SortOrderStructureDefinition =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "abstract"
+  | "-abstract"
+  | "base"
+  | "-base"
+  | "base-path"
+  | "-base-path"
+  | "derivation"
+  | "-derivation"
+  | "experimental"
+  | "-experimental"
+  | "ext-context"
+  | "-ext-context"
+  | "keyword"
+  | "-keyword"
+  | "kind"
+  | "-kind"
+  | "path"
+  | "-path"
+  | "type"
+  | "-type"
+  | "valueset"
+  | "-valueset";
+
 class ResourceSearchBuilderStructureMap {
   readonly resourceType = "StructureMap";
 
@@ -66955,7 +77349,31 @@ class ResourceSearchBuilderStructureMap {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderStructureMap | SortOrderStructureMap[]
+  ): ResourceSearchBuilderStructureMap {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderStructureMap {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -66976,6 +77394,8 @@ class ResourceSearchBuilderStructureMap {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -66991,6 +77411,16 @@ class ResourceSearchBuilderStructureMap {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderStructureMap {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -67234,6 +77664,34 @@ class ResourceSearchBuilderStructureMap {
   }
 }
 
+export type SortOrderStructureMap =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type";
+
 class ResourceSearchBuilderSubscription {
   readonly resourceType = "Subscription";
 
@@ -67250,7 +77708,31 @@ class ResourceSearchBuilderSubscription {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderSubscription | SortOrderSubscription[]
+  ): ResourceSearchBuilderSubscription {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderSubscription {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -67271,6 +77753,8 @@ class ResourceSearchBuilderSubscription {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -67286,6 +77770,16 @@ class ResourceSearchBuilderSubscription {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderSubscription {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -67659,6 +78153,46 @@ class ResourceSearchBuilderSubscription {
   }
 }
 
+export type SortOrderSubscription =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "contact"
+  | "-contact"
+  | "criteria"
+  | "-criteria"
+  | "payload"
+  | "-payload"
+  | "status"
+  | "-status"
+  | "type"
+  | "-type"
+  | "url"
+  | "-url";
+
 class ResourceSearchBuilderSubscriptionStatus {
   readonly resourceType = "SubscriptionStatus";
 
@@ -67675,7 +78209,31 @@ class ResourceSearchBuilderSubscriptionStatus {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderSubscriptionStatus | SortOrderSubscriptionStatus[]
+  ): ResourceSearchBuilderSubscriptionStatus {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderSubscriptionStatus {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -67696,6 +78254,8 @@ class ResourceSearchBuilderSubscriptionStatus {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -67711,6 +78271,16 @@ class ResourceSearchBuilderSubscriptionStatus {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderSubscriptionStatus {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -67954,6 +78524,34 @@ class ResourceSearchBuilderSubscriptionStatus {
   }
 }
 
+export type SortOrderSubscriptionStatus =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type";
+
 class ResourceSearchBuilderSubscriptionTopic {
   readonly resourceType = "SubscriptionTopic";
 
@@ -67970,7 +78568,31 @@ class ResourceSearchBuilderSubscriptionTopic {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderSubscriptionTopic | SortOrderSubscriptionTopic[]
+  ): ResourceSearchBuilderSubscriptionTopic {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderSubscriptionTopic {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -67991,6 +78613,8 @@ class ResourceSearchBuilderSubscriptionTopic {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -68006,6 +78630,16 @@ class ResourceSearchBuilderSubscriptionTopic {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderSubscriptionTopic {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -68396,6 +79030,52 @@ class ResourceSearchBuilderSubscriptionTopic {
   }
 }
 
+export type SortOrderSubscriptionTopic =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "date"
+  | "-date"
+  | "derived-or-self"
+  | "-derived-or-self"
+  | "identifier"
+  | "-identifier"
+  | "resource"
+  | "-resource"
+  | "status"
+  | "-status"
+  | "title"
+  | "-title"
+  | "trigger-description"
+  | "-trigger-description"
+  | "url"
+  | "-url"
+  | "version"
+  | "-version";
+
 class ResourceSearchBuilderSubstance {
   readonly resourceType = "Substance";
 
@@ -68412,7 +79092,31 @@ class ResourceSearchBuilderSubstance {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderSubstance | SortOrderSubstance[]
+  ): ResourceSearchBuilderSubstance {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderSubstance {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -68433,6 +79137,8 @@ class ResourceSearchBuilderSubstance {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -68448,6 +79154,16 @@ class ResourceSearchBuilderSubstance {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderSubstance {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -68895,6 +79611,50 @@ class ResourceSearchBuilderSubstance {
   }
 }
 
+export type SortOrderSubstance =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "category"
+  | "-category"
+  | "code"
+  | "-code"
+  | "container-identifier"
+  | "-container-identifier"
+  | "expiry"
+  | "-expiry"
+  | "identifier"
+  | "-identifier"
+  | "quantity"
+  | "-quantity"
+  | "status"
+  | "-status"
+  | "substance-reference"
+  | "-substance-reference";
+
 class ResourceSearchBuilderSubstanceDefinition {
   readonly resourceType = "SubstanceDefinition";
 
@@ -68911,7 +79671,31 @@ class ResourceSearchBuilderSubstanceDefinition {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderSubstanceDefinition | SortOrderSubstanceDefinition[]
+  ): ResourceSearchBuilderSubstanceDefinition {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderSubstanceDefinition {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -68932,6 +79716,8 @@ class ResourceSearchBuilderSubstanceDefinition {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -68947,6 +79733,16 @@ class ResourceSearchBuilderSubstanceDefinition {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderSubstanceDefinition {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -69309,6 +80105,44 @@ class ResourceSearchBuilderSubstanceDefinition {
   }
 }
 
+export type SortOrderSubstanceDefinition =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "classification"
+  | "-classification"
+  | "code"
+  | "-code"
+  | "domain"
+  | "-domain"
+  | "identifier"
+  | "-identifier"
+  | "name"
+  | "-name";
+
 class ResourceSearchBuilderSupplyDelivery {
   readonly resourceType = "SupplyDelivery";
 
@@ -69325,7 +80159,31 @@ class ResourceSearchBuilderSupplyDelivery {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderSupplyDelivery | SortOrderSupplyDelivery[]
+  ): ResourceSearchBuilderSupplyDelivery {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderSupplyDelivery {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -69346,6 +80204,8 @@ class ResourceSearchBuilderSupplyDelivery {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -69361,6 +80221,16 @@ class ResourceSearchBuilderSupplyDelivery {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderSupplyDelivery {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -69689,6 +80559,40 @@ class ResourceSearchBuilderSupplyDelivery {
   }
 }
 
+export type SortOrderSupplyDelivery =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "receiver"
+  | "-receiver"
+  | "status"
+  | "-status"
+  | "supplier"
+  | "-supplier";
+
 class ResourceSearchBuilderSupplyRequest {
   readonly resourceType = "SupplyRequest";
 
@@ -69705,7 +80609,31 @@ class ResourceSearchBuilderSupplyRequest {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderSupplyRequest | SortOrderSupplyRequest[]
+  ): ResourceSearchBuilderSupplyRequest {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderSupplyRequest {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -69726,6 +80654,8 @@ class ResourceSearchBuilderSupplyRequest {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -69741,6 +80671,16 @@ class ResourceSearchBuilderSupplyRequest {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderSupplyRequest {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -70125,6 +81065,44 @@ class ResourceSearchBuilderSupplyRequest {
   }
 }
 
+export type SortOrderSupplyRequest =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "category"
+  | "-category"
+  | "requester"
+  | "-requester"
+  | "status"
+  | "-status"
+  | "subject"
+  | "-subject"
+  | "supplier"
+  | "-supplier";
+
 class ResourceSearchBuilderTask {
   readonly resourceType = "Task";
 
@@ -70141,7 +81119,31 @@ class ResourceSearchBuilderTask {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderTask | SortOrderTask[]
+  ): ResourceSearchBuilderTask {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderTask {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -70162,6 +81164,8 @@ class ResourceSearchBuilderTask {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -70177,6 +81181,16 @@ class ResourceSearchBuilderTask {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderTask {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -70901,6 +81915,72 @@ class ResourceSearchBuilderTask {
   }
 }
 
+export type SortOrderTask =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "authored-on"
+  | "-authored-on"
+  | "based-on"
+  | "-based-on"
+  | "business-status"
+  | "-business-status"
+  | "code"
+  | "-code"
+  | "encounter"
+  | "-encounter"
+  | "focus"
+  | "-focus"
+  | "group-identifier"
+  | "-group-identifier"
+  | "identifier"
+  | "-identifier"
+  | "intent"
+  | "-intent"
+  | "modified"
+  | "-modified"
+  | "owner"
+  | "-owner"
+  | "part-of"
+  | "-part-of"
+  | "patient"
+  | "-patient"
+  | "performer"
+  | "-performer"
+  | "period"
+  | "-period"
+  | "priority"
+  | "-priority"
+  | "requester"
+  | "-requester"
+  | "status"
+  | "-status"
+  | "subject"
+  | "-subject";
+
 class ResourceSearchBuilderTerminologyCapabilities {
   readonly resourceType = "TerminologyCapabilities";
 
@@ -70917,7 +81997,33 @@ class ResourceSearchBuilderTerminologyCapabilities {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters:
+      | SortOrderTerminologyCapabilities
+      | SortOrderTerminologyCapabilities[]
+  ): ResourceSearchBuilderTerminologyCapabilities {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderTerminologyCapabilities {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -70938,6 +82044,8 @@ class ResourceSearchBuilderTerminologyCapabilities {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -70953,6 +82061,16 @@ class ResourceSearchBuilderTerminologyCapabilities {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderTerminologyCapabilities {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -71196,6 +82314,34 @@ class ResourceSearchBuilderTerminologyCapabilities {
   }
 }
 
+export type SortOrderTerminologyCapabilities =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type";
+
 class ResourceSearchBuilderTestReport {
   readonly resourceType = "TestReport";
 
@@ -71212,7 +82358,31 @@ class ResourceSearchBuilderTestReport {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderTestReport | SortOrderTestReport[]
+  ): ResourceSearchBuilderTestReport {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderTestReport {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -71233,6 +82403,8 @@ class ResourceSearchBuilderTestReport {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -71248,6 +82420,16 @@ class ResourceSearchBuilderTestReport {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderTestReport {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -71607,6 +82789,46 @@ class ResourceSearchBuilderTestReport {
   }
 }
 
+export type SortOrderTestReport =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "identifier"
+  | "-identifier"
+  | "issued"
+  | "-issued"
+  | "participant"
+  | "-participant"
+  | "result"
+  | "-result"
+  | "tester"
+  | "-tester"
+  | "testscript"
+  | "-testscript";
+
 class ResourceSearchBuilderTestScript {
   readonly resourceType = "TestScript";
 
@@ -71623,7 +82845,31 @@ class ResourceSearchBuilderTestScript {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderTestScript | SortOrderTestScript[]
+  ): ResourceSearchBuilderTestScript {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderTestScript {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -71644,6 +82890,8 @@ class ResourceSearchBuilderTestScript {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -71659,6 +82907,16 @@ class ResourceSearchBuilderTestScript {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderTestScript {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -72170,6 +83428,62 @@ class ResourceSearchBuilderTestScript {
   }
 }
 
+export type SortOrderTestScript =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "context"
+  | "-context"
+  | "context-quantity"
+  | "-context-quantity"
+  | "context-type"
+  | "-context-type"
+  | "date"
+  | "-date"
+  | "description"
+  | "-description"
+  | "identifier"
+  | "-identifier"
+  | "jurisdiction"
+  | "-jurisdiction"
+  | "name"
+  | "-name"
+  | "publisher"
+  | "-publisher"
+  | "status"
+  | "-status"
+  | "testscript-capability"
+  | "-testscript-capability"
+  | "title"
+  | "-title"
+  | "url"
+  | "-url"
+  | "version"
+  | "-version";
+
 class ResourceSearchBuilderValueSet {
   readonly resourceType = "ValueSet";
 
@@ -72186,7 +83500,31 @@ class ResourceSearchBuilderValueSet {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderValueSet | SortOrderValueSet[]
+  ): ResourceSearchBuilderValueSet {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderValueSet {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -72207,6 +83545,8 @@ class ResourceSearchBuilderValueSet {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -72222,6 +83562,16 @@ class ResourceSearchBuilderValueSet {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderValueSet {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -72514,6 +83864,40 @@ class ResourceSearchBuilderValueSet {
   }
 }
 
+export type SortOrderValueSet =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "code"
+  | "-code"
+  | "expansion"
+  | "-expansion"
+  | "reference"
+  | "-reference";
+
 class ResourceSearchBuilderVerificationResult {
   readonly resourceType = "VerificationResult";
 
@@ -72530,7 +83914,31 @@ class ResourceSearchBuilderVerificationResult {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderVerificationResult | SortOrderVerificationResult[]
+  ): ResourceSearchBuilderVerificationResult {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderVerificationResult {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -72551,6 +83959,8 @@ class ResourceSearchBuilderVerificationResult {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -72566,6 +83976,16 @@ class ResourceSearchBuilderVerificationResult {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderVerificationResult {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -72838,6 +84258,36 @@ class ResourceSearchBuilderVerificationResult {
   }
 }
 
+export type SortOrderVerificationResult =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "target"
+  | "-target";
+
 class ResourceSearchBuilderVisionPrescription {
   readonly resourceType = "VisionPrescription";
 
@@ -72854,7 +84304,31 @@ class ResourceSearchBuilderVisionPrescription {
   }
 
   /**
+   * Indicate the sort order.
+   *
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(
+    parameters: SortOrderVisionPrescription | SortOrderVisionPrescription[]
+  ): ResourceSearchBuilderVisionPrescription {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilderVisionPrescription {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -72875,6 +84349,8 @@ class ResourceSearchBuilderVisionPrescription {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -72890,6 +84366,16 @@ class ResourceSearchBuilderVisionPrescription {
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilderVisionPrescription {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -73200,6 +84686,40 @@ class ResourceSearchBuilderVisionPrescription {
   }
 }
 
+export type SortOrderVisionPrescription =
+  | "_text"
+  | "-_text"
+  | "_content"
+  | "-_content"
+  | "_filter"
+  | "-_filter"
+  | "_has"
+  | "-_has"
+  | "_id"
+  | "-_id"
+  | "_lastUpdated"
+  | "-_lastUpdated"
+  | "_list"
+  | "-_list"
+  | "_profile"
+  | "-_profile"
+  | "_query"
+  | "-_query"
+  | "_security"
+  | "-_security"
+  | "_source"
+  | "-_source"
+  | "_tag"
+  | "-_tag"
+  | "_type"
+  | "-_type"
+  | "datewritten"
+  | "-datewritten"
+  | "prescriber"
+  | "-prescriber"
+  | "status"
+  | "-status";
+
 export type ResourceSearchBuilder =
   | ResourceSearchBuilderAccount
   | ResourceSearchBuilderActivityDefinition
@@ -73347,3 +84867,5 @@ export type ExtractSearchBuilder<TResourceType extends ResourceType> = Extract<
   ResourceSearchBuilder,
   { resourceType: TResourceType }
 >;
+
+export type SummaryValue = "true" | "text" | "data" | "count" | "false";

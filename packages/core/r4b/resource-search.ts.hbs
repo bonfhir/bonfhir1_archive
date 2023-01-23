@@ -41,7 +41,29 @@ class ResourceSearchBuilder{{type}} {
   }
 
   /**
+   * Indicate the sort order.
+   * 
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(parameters: SortOrder{{type}} | SortOrder{{type}}[]): ResourceSearchBuilder{{type}} {
+    this.builder.string("_sort", parameters, null, "replace");
+    return this;
+  }
+
+  /**
+   * The number of primary resources to return by page.
+   *
+   * @see https://hl7.org/fhir/search.html#count
+   */
+  _count(value: number): ResourceSearchBuilder{{type}} {
+    this.builder.string("_count", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
    * Include a related resource directly referenced by the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#include
    */
   _include<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -60,6 +82,8 @@ class ResourceSearchBuilder{{type}} {
 
   /**
    * Include a related resource referencing the main resource.
+   *
+   * @see https://hl7.org/fhir/search.html#revinclude
    */
   _revinclude<TResourceType extends ResourceType>(
     sourceResource: TResourceType,
@@ -73,6 +97,16 @@ class ResourceSearchBuilder{{type}} {
       `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${options?.targetResourceType ? `:${options.targetResourceType}` : ""}`
     );
+    return this;
+  }
+
+  /**
+   *  Return only a portion of the resources.
+   *
+   * @see https://hl7.org/fhir/search.html#summary
+   */
+  _summary(value: SummaryValue): ResourceSearchBuilder{{type}} {
+    this.builder.string("_summary", `${value}`, null, "replace");
     return this;
   }
 
@@ -90,6 +124,13 @@ class ResourceSearchBuilder{{type}} {
   {{/each}}
 }
 
+export type SortOrder{{type}} = 
+  {{#each (uniqBy (fhirPath @root.data.[search-parameters] (replace "Bundle.entry.select(resource).ofType(SearchParameter).where(base='DomainResource' or base='Resource' or base='CURRENTYPE')" "CURRENTYPE" type)) "code")}}
+  {{#if (notIn type "composite,special")}}
+  | "{{code}}" | "-{{code}}"
+  {{/if}}
+  {{/each}};
+
 {{/each}}
 
 export type ResourceSearchBuilder = 
@@ -102,3 +143,5 @@ export type ResourceSearchBuilder =
  */
 export type ExtractSearchBuilder<TResourceType extends ResourceType> =
   Extract<ResourceSearchBuilder, { resourceType: TResourceType }>;
+
+export type SummaryValue = "true" | "text" | "data" | "count" | "false";
