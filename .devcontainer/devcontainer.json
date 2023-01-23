@@ -116,13 +116,6 @@
     }
   },
 
-  "portsAttributes": {
-    "4000": {
-      "label": "Docs",
-      "onAutoForward": "openBrowserOnce"
-    }
-  },
-
   "postStartCommand": "find . -name \"node_modules\" -exec sh -c 'sudo chown -R $USER:$GROUP \"$0\"' '{}' \\; && yarn install --silent",
 
   "remoteUser": "node"
