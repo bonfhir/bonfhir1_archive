@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.8](https://github.com/bonfhir/bonfhir/compare/@bonfhir/cmsdotgov@1.0.0-alpha.7...@bonfhir/cmsdotgov@1.0.0-alpha.8) (2023-01-23)
+
+
+### Bug Fixes
+
+* **cmsdotgov:** :adhesive_bandage: fix return undefined as version when ICD-10 code not found ([b4aa4f5](https://github.com/bonfhir/bonfhir/commit/b4aa4f5dba12393a04a95a9ff1388f3207018b3c))
+
+
+### Features
+
+* **cmsdotgov:** :sparkles: add HCPCS Code builder ([2e6bcac](https://github.com/bonfhir/bonfhir/commit/2e6bcac04a0fcbcc78265e69d4363d62b42d1090))
+
+
+
+
+
 # [1.0.0-alpha.7](https://github.com/bonfhir/bonfhir/compare/@bonfhir/cmsdotgov@1.0.0-alpha.6...@bonfhir/cmsdotgov@1.0.0-alpha.7) (2023-01-23)
 
 **Note:** Version bump only for package @bonfhir/cmsdotgov
