@@ -53,7 +53,9 @@ export class ICD10CodesBuilder {
       system: this.options.system || CodeSystemURIs.Icd10CM,
       code,
       display: this._descriptionsByCode.get(code),
-      version: this.options.version || undefined,
+      version: this._descriptionsByCode.get(code)
+        ? this.options.version || undefined
+        : undefined,
     };
   }
 
