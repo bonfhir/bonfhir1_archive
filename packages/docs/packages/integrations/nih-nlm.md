@@ -45,3 +45,21 @@ Here are the entities created:
 The Provenance record can be provided as an option if needed (will serve as a template to create the records), or de-activated entirely by passing the "no-provenance" value to the sync session.
 
 The `RxNormSyncSession` can be safely re-used or re-created any time; all it does is holding a cache for certain referenced values (mainly the NLM `Organization`), to save a few round-trips to the server.
+
+## Drug Interactions
+
+Allows identification of drug interactions using [NLM Drug Interaction API](https://lhncbc.nlm.nih.gov/RxNav/APIs/InteractionAPIs.html).
+
+```typescript
+import { findDrugInteractionsIssues } from "@bonfhir/nih-nlm/r4b";
+
+// with Rxcuis directly
+const detectedIssues = await findDrugInteractionsIssues({
+  rxcuis: ["207106", "152923", "656659"],
+});
+
+// with Medication resources coded with Rxcui - See RxNorm sync above
+const detectedIssues = await findDrugInteractionsIssues({
+  medications,
+});
+```
