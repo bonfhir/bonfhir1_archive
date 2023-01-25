@@ -1,6 +1,11 @@
-import { build, isFhirResource } from "@bonfhir/core/r4b";
-import { CodeSystemURIs } from "@bonfhir/terminology/r4b";
-import { Bundle, DetectedIssue, Medication } from "fhir/r4";
+import { build, isFhirResource, utcNow } from "@bonfhir/core/r4b";
+import {
+  CodeSystemURIs,
+  DetectedIssueCategory,
+  KnownIdentifierSystems,
+  ObservationStatus,
+} from "@bonfhir/terminology/r4b";
+import { Bundle, DetectedIssue, Medication, Reference } from "fhir/r4";
 import { evaluate as fhirPath } from "fhirpath";
 import _ from "lodash";
 import {
@@ -58,13 +63,13 @@ export const DRUG_INTERACTIONS_LIST_API_URL =
   "https://rxnav.nlm.nih.gov/REST/interaction/list.json";
 
 /**
- *
+ * Return `DetectedIssue` in case of drug interactions problem for a list of medication identified by their rxcui.
  * @throw Error if the list of rxcuis is shorter than 2.
  */
 export async function findDrugInteractionsIssues(
   args: FindDrugInteractionsIssuesArgs
 ): Promise<FindDrugInteractionsIssuesResult> {
-  const rxcuis = _.compact(getRxcuis(args));
+  const rxcuis = _(getRxcuis(args)).uniq().compact().value();
 
   if (rxcuis?.length < 2) {
     throw new Error(
@@ -73,7 +78,7 @@ export async function findDrugInteractionsIssues(
   }
 
   const drugInteractionsSearchParams = new URLSearchParams();
-  drugInteractionsSearchParams.set("rxcuis", rxcuis.join("+"));
+  drugInteractionsSearchParams.set("rxcuis", rxcuis.join(" "));
   const fetchUrl = new URL(
     args.drugInteractionsListApiUrl || DRUG_INTERACTIONS_LIST_API_URL
   );
@@ -84,8 +89,12 @@ export async function findDrugInteractionsIssues(
   ).json()) as DrugInteractionListResponse;
 
   return {
-    issues: (response.fullInteractionTypeGroup || []).flatMap((x) =>
-      (x.fullInteractionType || []).map(mapFullInteractionTypeToDetectedIssue)
+    issues: _.compact(
+      (response.fullInteractionTypeGroup || []).flatMap((x) =>
+        (x.fullInteractionType || []).flatMap(
+          mapFullInteractionTypeToDetectedIssue
+        )
+      )
     ),
   };
 }
@@ -114,6 +123,59 @@ function getRxcuis(args: FindDrugInteractionsIssuesArgs): string[] {
 
 function mapFullInteractionTypeToDetectedIssue(
   fullInteractionType: FullInteractionType
-): DetectedIssue {
-  throw new Error("Not Implemented!");
+): DetectedIssue[] {
+  return (fullInteractionType.interactionPair || []).map(
+    (interactionPair): DetectedIssue =>
+      build("DetectedIssue", {
+        status: ObservationStatus.values.Registered.code,
+        code: DetectedIssueCategory.values["Drug Interaction Alert"]
+          .codeableConcept,
+        severity: mapSeverity(interactionPair.severity),
+        author: {
+          identifier: {
+            ...KnownIdentifierSystems.URI,
+            value: "https://lhncbc.nlm.nih.gov/RxNav/APIs/InteractionAPIs.html",
+          },
+        },
+        identifiedDateTime: utcNow().toISOString(),
+        implicated: (fullInteractionType.minConcept || []).map(
+          (concept): Reference => ({
+            display: concept.name,
+            identifier: {
+              system: CodeSystemURIs.RxNorm,
+              value: concept.rxcui,
+            },
+          })
+        ),
+        detail: interactionPair.description,
+        reference: interactionPair.interactionConcept?.find(
+          (x) => !!x.sourceConceptItem?.url
+        )?.sourceConceptItem?.url,
+      })
+  );
+}
+
+function mapSeverity(
+  severity: string | undefined
+): "high" | "moderate" | "low" | undefined {
+  if (severity) {
+    const normalizedSeverity = severity.trim().toLowerCase();
+
+    if (normalizedSeverity.includes("high")) {
+      return "high";
+    }
+
+    if (
+      normalizedSeverity.includes("medium") ||
+      normalizedSeverity.includes("moderate")
+    ) {
+      return "moderate";
+    }
+
+    if (normalizedSeverity.includes("low")) {
+      return "low";
+    }
+  }
+
+  return undefined;
 }
