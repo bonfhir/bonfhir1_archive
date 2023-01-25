@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.7](https://github.com/bonfhir/bonfhir/compare/@bonfhir/nih-nlm@1.0.0-alpha.6...@bonfhir/nih-nlm@1.0.0-alpha.7) (2023-01-25)
+
+
+### Features
+
+* **nih-nlm:** :sparkles: add drug-interaction API support ([151757c](https://github.com/bonfhir/bonfhir/commit/151757c71f3c073d50f1fc2f1013bedfc9471436))
+
+
+
+
+
 # [1.0.0-alpha.6](https://github.com/bonfhir/bonfhir/compare/@bonfhir/nih-nlm@1.0.0-alpha.5...@bonfhir/nih-nlm@1.0.0-alpha.6) (2023-01-23)
 
 **Note:** Version bump only for package @bonfhir/nih-nlm
