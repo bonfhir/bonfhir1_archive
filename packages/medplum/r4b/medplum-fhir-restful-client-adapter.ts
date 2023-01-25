@@ -217,7 +217,7 @@ export function buildFhirRestfulClientAdapter(
       ) {
         return await client.searchValueSet(
           options.parameters.url,
-          options.parameters.filter
+          options.parameters.filter ?? ""
         );
       }
 
@@ -255,20 +255,66 @@ export function buildFhirRestfulClientAdapter(
   };
 }
 
-/**
- * Parameters for the $expand operation.
- */
-export interface ExpandOperationParameters {
-  url: string;
-  filter: string;
+function isNil(value: unknown): value is null | undefined {
+  return value === null || value === undefined;
 }
 
+function isObject(value: unknown): value is Record<string, unknown> {
+  return typeof value === "object" && value !== null && !Array.isArray(value);
+}
+
+function isString(value: unknown): value is string {
+  return typeof value === "string";
+}
+
+function containsNonWhitespace(value: string): boolean {
+  return !!value.trim();
+}
+
+/**
+ * Parameters for the `$expand` operation.
+ *
+ * @see https://www.hl7.org/fhir/valueset-operation-expand.html
+ */
+export interface ExpandOperationParameters {
+  /**
+   * A canonical reference to a value set. The server must know the value set
+   * (e.g. it is defined explicitly in the server's value sets, or it is defined
+   * implicitly by some code system known to the server.
+   */
+  url: string;
+
+  /**
+   * A text filter that is applied to restrict the codes that are returned (this
+   * is useful in a UI context). The interpretation of this is delegated to the
+   * server in order to allow to determine the most optimal search approach for
+   * the context. The server can document the way this parameter works in
+   * [TerminologyCapabilities][0]..expansion.textFilter. Typical usage of this
+   * parameter includes functionality like:
+   * - using left matching e.g. "acut ast"
+   * - allowing for wild cards such as %, &, ?
+   * - searching on definition as well as display(s)
+   * - allowing for search conditions (and / or / exclusions)
+   *
+   * Text Search engines such as Lucene or Solr, long with their considerable
+   * functionality, might also be used. The optional text search might also be
+   * code system specific, and servers might have different implementations for
+   * different code systems.
+   *
+   * [0]: https://www.hl7.org/fhir/terminologycapabilities.html
+   */
+  filter?: string | null | undefined;
+}
+
+/** Are the given `parameters` valid {@link ExpandOperationParameters}? */
 function isValidExpandOperationParameters(
   parameters: unknown
 ): parameters is ExpandOperationParameters {
   return (
-    !!(parameters as ExpandOperationParameters)?.url &&
-    !!(parameters as ExpandOperationParameters)?.filter
+    isObject(parameters) &&
+    isString(parameters.url) &&
+    containsNonWhitespace(parameters.url) &&
+    (isNil(parameters.filter) || isString(parameters.filter))
   );
 }
 
