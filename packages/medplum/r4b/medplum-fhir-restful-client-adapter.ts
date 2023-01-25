@@ -319,14 +319,27 @@ function isValidExpandOperationParameters(
 }
 
 /**
- * Parameters for the $graph operation.
+ * Parameters for the `$graph` operation.
+ *
+ * @see https://www.hl7.org/fhir/resource-operation-graph.html
  */
 export interface GraphOperationParameters {
+  /**
+   * Servers MAY choose to allow any graph definition to be specified, but MAY
+   * require that the client choose a graph definition from a specific list of
+   * known supported definitions. The server is not required to support a formal
+   * definition of the graph on the end point.
+   */
   graph: string;
 }
 
+/** Are the given `parameters` valid {@link GraphOperationParameters}? */
 function isValidGraphOperationParameter(
   parameters: unknown
 ): parameters is GraphOperationParameters {
-  return !!(parameters as GraphOperationParameters)?.graph;
+  return (
+    isObject(parameters) &&
+    isString(parameters.graph) &&
+    containsNonWhitespace(parameters.graph)
+  );
 }
