@@ -14,7 +14,7 @@ describe("medplum-fhir-restful-client-adapter", () => {
     fetch: fetch,
   });
   const client = buildFhirRestfulClientAdapter(medplum);
-  global.fetch = fetch as any;
+  global.fetch = fetch as typeof global.fetch;
 
   beforeEach(async () => {
     const fixturePath = join(
