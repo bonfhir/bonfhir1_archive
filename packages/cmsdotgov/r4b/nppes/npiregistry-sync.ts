@@ -24,6 +24,7 @@ import {
   Bundle,
   BundleEntry,
   ContactPoint,
+  FhirResource,
   HealthcareService,
   Location,
   Organization,
@@ -40,10 +41,35 @@ import {
 } from "./npiregistry-models";
 
 export interface NPIRegistrySyncSessionOptions {
+  /**
+   * The FHIR client to use to perform the sync operations.
+   */
   client: FhirRestfulClient;
+
+  /**
+   * Base NPI Registry API URL.
+   * Defaults to {@link NPI_REGISTRY_API_URL}
+   */
   npiRegistryBaseUrl?: string | null | undefined;
+
+  /**
+   * The provenance template to use when building provenance information.
+   * Use "no-provenance" to disable provenance tracking.
+   */
   provenance?: Partial<Provenance> | "no-provenance" | null | undefined;
+
+  /**
+   * The stable id to use on merge operations for elements inside resources.
+   */
   stableId?: string | null | undefined;
+
+  /**
+   * Callback that allows customization of resources when they are built.
+   */
+  onResourceBuild?:
+    | ((resource: FhirResource) => FhirResource)
+    | null
+    | undefined;
 }
 
 export const NPI_REGISTRY_API_URL =
@@ -73,6 +99,9 @@ export class NPIRegistrySyncSession {
   private cmsOrganization: Organization | undefined;
   public stateLocationsMapping: Record<string, Location> = {};
   public stableId: string;
+  private onResourceBuild: <TResource extends FhirResource>(
+    resource: TResource
+  ) => TResource;
 
   public constructor(options: NPIRegistrySyncSessionOptions) {
     this.client = options.client;
@@ -81,6 +110,8 @@ export class NPIRegistrySyncSession {
     );
     this.provenance = options.provenance || undefined;
     this.stableId = options.stableId || "npi-registry";
+    this.onResourceBuild = (options.onResourceBuild ||
+      ((resource) => resource)) as typeof this.onResourceBuild;
   }
 
   public async sync(search: SyncNPISearch): Promise<SyncNPIResult | undefined> {
@@ -112,46 +143,48 @@ export class NPIRegistrySyncSession {
         [result] = await createOr(
           "merge",
           this.client,
-          build("Practitioner", {
-            active: npiResult.basic.status === "A",
-            identifier: [
-              {
-                ...KnownIdentifierSystems.USNationalProviderIdentifier,
-                value: npiResult.number,
-              },
-            ],
-            name: [
-              {
-                id: this.stableId,
-                use: NameUse.values.Official.code,
-                family: npiResult.basic.last_name,
-                given: [
-                  npiResult.basic.first_name,
-                  npiResult.basic.middle_name,
-                ].filter((x) => x?.trim()),
-              },
-            ],
-            telecom: this.mapNPIRegistryAddressesToContactPoints(
-              npiResult.addresses
-            ),
-            address: this.mapNPIRegistryAddressesToAddresses(
-              npiResult.addresses
-            ),
-            qualification: (npiResult.taxonomies || []).map(
-              (taxonomy): PractitionerQualification => ({
-                id: `${this.stableId}-${taxonomy.code}`,
-                code: buildCodeableConcept({
-                  coding: [
-                    {
-                      system: "https://npidb.org/taxonomy",
-                      code: taxonomy.code,
-                      display: taxonomy.desc,
-                    },
-                  ],
-                }),
-              })
-            ),
-          })
+          this.onResourceBuild(
+            build("Practitioner", {
+              active: npiResult.basic.status === "A",
+              identifier: [
+                {
+                  ...KnownIdentifierSystems.USNationalProviderIdentifier,
+                  value: npiResult.number,
+                },
+              ],
+              name: [
+                {
+                  id: this.stableId,
+                  use: NameUse.values.Official.code,
+                  family: npiResult.basic.last_name,
+                  given: [
+                    npiResult.basic.first_name,
+                    npiResult.basic.middle_name,
+                  ].filter((x) => x?.trim()),
+                },
+              ],
+              telecom: this.mapNPIRegistryAddressesToContactPoints(
+                npiResult.addresses
+              ),
+              address: this.mapNPIRegistryAddressesToAddresses(
+                npiResult.addresses
+              ),
+              qualification: (npiResult.taxonomies || []).map(
+                (taxonomy): PractitionerQualification => ({
+                  id: `${this.stableId}-${taxonomy.code}`,
+                  code: buildCodeableConcept({
+                    coding: [
+                      {
+                        system: "https://npidb.org/taxonomy",
+                        code: taxonomy.code,
+                        display: taxonomy.desc,
+                      },
+                    ],
+                  }),
+                })
+              ),
+            })
+          )
         );
       } else {
         bundle.entry?.push(
@@ -176,81 +209,85 @@ export class NPIRegistrySyncSession {
         [result] = await createOr(
           "merge",
           this.client,
-          build("Organization", {
-            active: npiResult.basic.status === "A",
-            identifier: [
-              {
-                ...KnownIdentifierSystems.USNationalProviderIdentifier,
-                value: npiResult.number,
-              },
-            ],
-            name: npiResult.basic.organization_name,
-            telecom: this.mapNPIRegistryAddressesToContactPoints(
-              npiResult.addresses
-            ),
-            address: this.mapNPIRegistryAddressesToAddresses(
-              npiResult.addresses
-            ),
-            contact: npiResult.basic.authorized_official_last_name.trim()
-              ? [
-                  {
-                    id: this.stableId,
-                    purpose:
-                      ContactEntityType.values.Administrative.codeableConcept,
-                    name: {
+          this.onResourceBuild(
+            build("Organization", {
+              active: npiResult.basic.status === "A",
+              identifier: [
+                {
+                  ...KnownIdentifierSystems.USNationalProviderIdentifier,
+                  value: npiResult.number,
+                },
+              ],
+              name: npiResult.basic.organization_name,
+              telecom: this.mapNPIRegistryAddressesToContactPoints(
+                npiResult.addresses
+              ),
+              address: this.mapNPIRegistryAddressesToAddresses(
+                npiResult.addresses
+              ),
+              contact: npiResult.basic.authorized_official_last_name.trim()
+                ? [
+                    {
                       id: this.stableId,
-                      use: NameUse.values.Official.code,
-                      family:
-                        npiResult.basic.authorized_official_last_name.trim(),
-                      given: [
-                        npiResult.basic.authorized_official_first_name,
-                      ].filter((x) => x?.trim()),
+                      purpose:
+                        ContactEntityType.values.Administrative.codeableConcept,
+                      name: {
+                        id: this.stableId,
+                        use: NameUse.values.Official.code,
+                        family:
+                          npiResult.basic.authorized_official_last_name.trim(),
+                        given: [
+                          npiResult.basic.authorized_official_first_name,
+                        ].filter((x) => x?.trim()),
+                      },
+                      telecom:
+                        npiResult.basic.authorized_official_telephone_number.trim()
+                          ? [
+                              {
+                                id: this.stableId,
+                                system: ContactPointSystem.values.Phone.code,
+                                use: ContactPointUse.values.Work.code,
+                                value:
+                                  npiResult.basic.authorized_official_telephone_number.trim(),
+                              },
+                            ]
+                          : undefined,
                     },
-                    telecom:
-                      npiResult.basic.authorized_official_telephone_number.trim()
-                        ? [
-                            {
-                              id: this.stableId,
-                              system: ContactPointSystem.values.Phone.code,
-                              use: ContactPointUse.values.Work.code,
-                              value:
-                                npiResult.basic.authorized_official_telephone_number.trim(),
-                            },
-                          ]
-                        : undefined,
-                  },
-                ]
-              : undefined,
-          })
+                  ]
+                : undefined,
+            })
+          )
         );
 
         for (const taxonomy of npiResult.taxonomies) {
           const [healthService] = await createOr(
             "merge",
             this.client,
-            build("HealthcareService", {
-              active: true,
-              providedBy: buildReferenceFromResource(result),
-              category: [
-                buildCodeableConcept({
-                  coding: [
-                    {
-                      system: "https://npidb.org/taxonomy",
-                      code: taxonomy.code,
-                      display: taxonomy.desc,
-                    },
-                  ],
-                }),
-              ],
-              coverageArea:
-                taxonomy.state && this.stateLocationsMapping[taxonomy.state]
-                  ? [
-                      buildReferenceFromResource(
-                        this.stateLocationsMapping[taxonomy.state]!
-                      ),
-                    ]
-                  : undefined,
-            }),
+            this.onResourceBuild(
+              build("HealthcareService", {
+                active: true,
+                providedBy: buildReferenceFromResource(result),
+                category: [
+                  buildCodeableConcept({
+                    coding: [
+                      {
+                        system: "https://npidb.org/taxonomy",
+                        code: taxonomy.code,
+                        display: taxonomy.desc,
+                      },
+                    ],
+                  }),
+                ],
+                coverageArea:
+                  taxonomy.state && this.stateLocationsMapping[taxonomy.state]
+                    ? [
+                        buildReferenceFromResource(
+                          this.stateLocationsMapping[taxonomy.state]!
+                        ),
+                      ]
+                    : undefined,
+              })
+            ),
             resourceSearch("HealthcareService")
               .organization({ type: "Organization", id: result.id! })
               .servicecategory({
@@ -274,12 +311,14 @@ export class NPIRegistrySyncSession {
       const [provenance] = await createOr(
         "return",
         this.client,
-        build("Provenance", {
-          agent: [],
-          ...provenanceResult.provenance,
-          recorded: utcNow().toISOString(),
-          target: [buildReferenceFromResource(result!)],
-        }),
+        this.onResourceBuild(
+          build("Provenance", {
+            agent: [],
+            ...provenanceResult.provenance,
+            recorded: utcNow().toISOString(),
+            target: [buildReferenceFromResource(result!)],
+          })
+        ),
         resourceSearch("Provenance")
           .target({ type: result!.resourceType, id: result!.id! })
           .agent({
@@ -324,17 +363,19 @@ export class NPIRegistrySyncSession {
     [this.cmsOrganization] = await createOr(
       "return",
       this.client,
-      build("Organization", {
-        identifier: [
-          {
-            ...KnownIdentifierSystems.URI,
-            value: CMS_DOT_GOV_IDENTIFIER_VALUE,
-          },
-        ],
-        name: "Centers for Medicare & Medicaid Services",
-        alias: ["CMS"],
-        type: [OrganizationType.values.Government.codeableConcept],
-      })
+      this.onResourceBuild(
+        build("Organization", {
+          identifier: [
+            {
+              ...KnownIdentifierSystems.URI,
+              value: CMS_DOT_GOV_IDENTIFIER_VALUE,
+            },
+          ],
+          name: "Centers for Medicare & Medicaid Services",
+          alias: ["CMS"],
+          type: [OrganizationType.values.Government.codeableConcept],
+        })
+      )
     );
 
     this.provenance = {
@@ -369,15 +410,17 @@ export class NPIRegistrySyncSession {
         [this.stateLocationsMapping[state]] = await createOr(
           "return",
           this.client,
-          build("Location", {
-            identifier: [
-              {
-                system: "https://www.usps.com/",
-                value: state,
-              },
-            ],
-            name: state,
-          })
+          this.onResourceBuild(
+            build("Location", {
+              identifier: [
+                {
+                  system: "https://www.usps.com/",
+                  value: state,
+                },
+              ],
+              name: state,
+            })
+          )
         );
       }
       result.push(this.stateLocationsMapping[state]!);
