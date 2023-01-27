@@ -317,3 +317,74 @@ In this example, the bundle is only iterated twice:
 The reverse references uses [FHIR Path](http://hl7.org/fhirpath/N1/) to create indices that can be reused in loops.
 
 All indices are created lazily, so it is very cheap to create / return a `bundleNavigator` even if it is not used subsequently.
+
+## Timeline builder
+
+The `buildTimelineOfResourcesWithPeriods` can compute blocks of time where resources can be placed, assuming you can project them into a `Period`.
+
+```typescript
+import { buid, buildTimelineOfResourcesWithPeriods } from "@bonfhir/core/r4b";
+
+const resources = [
+  build("MedicationDispense", {
+    status: "completed",
+    daysSupply: { value: 30 },
+    whenHandedOver: "2021-01-01",
+  }),
+  build("MedicationDispense", {
+    status: "completed",
+    daysSupply: { value: 30 },
+    whenHandedOver: "2021-01-15",
+  }),
+  build("MedicationDispense", {
+    status: "completed",
+    daysSupply: { value: 90 },
+    whenHandedOver: "2021-01-01",
+  }),
+  build("MedicationDispense", {
+    status: "completed",
+    daysSupply: { value: 15 },
+    whenHandedOver: "2021-03-01",
+  }),
+];
+
+const result = buildTimelineOfResourcesWithPeriods({
+  resources,
+  periodFn: resource => ({
+    start: resource.whenHandedOver!,
+    end: addDays(
+      new Date(resource.whenHandedOver!),
+      resource.daysSupply!.value!
+    )
+      .toISOString()
+      .slice(0, 10),
+  }),
+});
+
+// result
+{
+  blocks: [
+    {
+      period: {
+        start: "2021-01-01",
+        end: "2021-01-15",
+      },
+      items: [resources[0]],
+    },
+    {
+      period: {
+        start: "2021-01-15",
+        end: "2021-01-31",
+      },
+      items: [resources[0], resources[1]],
+    },
+    {
+      period: {
+        start: "2021-01-31",
+        end: "2021-02-14",
+      },
+      items: [resources[1]],
+    },
+  ],
+}
+```
