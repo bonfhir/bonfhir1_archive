@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.9](https://github.com/bonfhir/bonfhir/compare/@bonfhir/cmsdotgov@1.0.0-alpha.8...@bonfhir/cmsdotgov@1.0.0-alpha.9) (2023-01-27)
+
+
+### Features
+
+* **cmsdotgov:** :sparkles: add `onResourceBuild` callback ([7871563](https://github.com/bonfhir/bonfhir/commit/7871563ce3c4107f30704e2fd25ac9db2ddeb1b4))
+
+
+
+
+
 # [1.0.0-alpha.8](https://github.com/bonfhir/bonfhir/compare/@bonfhir/cmsdotgov@1.0.0-alpha.7...@bonfhir/cmsdotgov@1.0.0-alpha.8) (2023-01-23)
 
 

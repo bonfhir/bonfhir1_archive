@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.6](https://github.com/bonfhir/bonfhir/compare/@bonfhir/medplum@1.0.0-alpha.5...@bonfhir/medplum@1.0.0-alpha.6) (2023-01-27)
+
+
+### Bug Fixes
+
+* **medplum:** :bug: accept optional `filter` param for the `$expand` operation ([026b7a4](https://github.com/bonfhir/bonfhir/commit/026b7a4f57323a27af102b57cc07af483e95c3b9))
+
+
+
+
+
 # [1.0.0-alpha.5](https://github.com/bonfhir/bonfhir/compare/@bonfhir/medplum@1.0.0-alpha.4...@bonfhir/medplum@1.0.0-alpha.5) (2023-01-23)
 
 
