@@ -19,6 +19,7 @@ import {
 } from "@bonfhir/terminology/r4b";
 import {
   Bundle,
+  FhirResource,
   Medication,
   MedicationKnowledge,
   Organization,
@@ -30,10 +31,35 @@ import { URLSearchParams } from "url";
 import { AllProperties, NDCProperties } from "./rxnorm-models";
 
 export interface RxNormSyncSessionOptions {
+  /**
+   * The FHIR client to use to perform the sync operations.
+   */
   client: FhirRestfulClient;
+
+  /**
+   * Base RxNorm API URL.
+   * Defaults to {@link RX_NORM_API_URL}
+   */
   rxNormAPIBaseUrl?: string | null | undefined;
+
+  /**
+   * The provenance template to use when building provenance information.
+   * Use "no-provenance" to disable provenance tracking.
+   */
   provenance?: Partial<Provenance> | "no-provenance" | null | undefined;
+
+  /**
+   * The stable id to use on merge operations for elements inside resources.
+   */
   stableId?: string | null | undefined;
+
+  /**
+   * Callback that allows customization of resources when they are built.
+   */
+  onResourceBuild?:
+    | ((resource: FhirResource) => FhirResource)
+    | null
+    | undefined;
 }
 
 export const RX_NORM_API_URL = "https://rxnav.nlm.nih.gov/REST/";
@@ -50,6 +76,9 @@ export class RxNormSyncSession {
   public provenance: Partial<Provenance> | "no-provenance" | undefined;
   private nihNlmOrganization: Organization | undefined;
   public stableId: string;
+  private onResourceBuild: <TResource extends FhirResource>(
+    resource: TResource
+  ) => TResource;
 
   public constructor(options: RxNormSyncSessionOptions) {
     this.client = options.client;
@@ -58,6 +87,8 @@ export class RxNormSyncSession {
     );
     this.provenance = options.provenance || undefined;
     this.stableId = options.stableId || "rx-norm";
+    this.onResourceBuild = (options.onResourceBuild ||
+      ((resource) => resource)) as typeof this.onResourceBuild;
   }
 
   public async syncAllProperties(
@@ -102,53 +133,55 @@ export class RxNormSyncSession {
     const [result] = await createOr(
       "return",
       this.client,
-      build("Medication", {
-        code: buildCodeableConcept({
-          coding: _.compact([
-            indexedAllProperties["CODES"]["RxCUI"]
-              ? {
-                  system: CodeSystemURIs.RxNorm,
-                  code: indexedAllProperties["CODES"]["RxCUI"],
-                  display: indexedAllProperties["NAMES"]["RxNorm Name"],
-                }
-              : undefined,
-            indexedAllProperties["CODES"]["SNOMEDCT"]
-              ? {
-                  system: CodeSystemURIs.SNOMED_CT_INT,
-                  code: indexedAllProperties["CODES"]["SNOMEDCT"],
-                }
-              : undefined,
-          ]),
-        }),
-        status: MedicationStatusCodes.values.Active.code,
-        ingredient: indexedAllProperties["ATTRIBUTES"][
-          "Active_ingredient_RxCUI"
-        ]
-          ? [
-              {
-                id: this.stableId,
-                itemCodeableConcept: buildCodeableConcept({
-                  coding: [
-                    {
-                      system: CodeSystemURIs.RxNorm,
-                      code: indexedAllProperties["ATTRIBUTES"][
-                        "Active_ingredient_RxCUI"
-                      ],
-                      display:
-                        indexedAllProperties["ATTRIBUTES"][
-                          "Active_ingredient_name"
+      this.onResourceBuild(
+        build("Medication", {
+          code: buildCodeableConcept({
+            coding: _.compact([
+              indexedAllProperties["CODES"]["RxCUI"]
+                ? {
+                    system: CodeSystemURIs.RxNorm,
+                    code: indexedAllProperties["CODES"]["RxCUI"],
+                    display: indexedAllProperties["NAMES"]["RxNorm Name"],
+                  }
+                : undefined,
+              indexedAllProperties["CODES"]["SNOMEDCT"]
+                ? {
+                    system: CodeSystemURIs.SNOMED_CT_INT,
+                    code: indexedAllProperties["CODES"]["SNOMEDCT"],
+                  }
+                : undefined,
+            ]),
+          }),
+          status: MedicationStatusCodes.values.Active.code,
+          ingredient: indexedAllProperties["ATTRIBUTES"][
+            "Active_ingredient_RxCUI"
+          ]
+            ? [
+                {
+                  id: this.stableId,
+                  itemCodeableConcept: buildCodeableConcept({
+                    coding: [
+                      {
+                        system: CodeSystemURIs.RxNorm,
+                        code: indexedAllProperties["ATTRIBUTES"][
+                          "Active_ingredient_RxCUI"
                         ],
-                    },
-                  ],
-                }),
-                isActive: true,
-                strength: this.parseStrength(
-                  indexedAllProperties["ATTRIBUTES"]["AVAILABLE_STRENGTH"]
-                ),
-              },
-            ]
-          : undefined,
-      }),
+                        display:
+                          indexedAllProperties["ATTRIBUTES"][
+                            "Active_ingredient_name"
+                          ],
+                      },
+                    ],
+                  }),
+                  isActive: true,
+                  strength: this.parseStrength(
+                    indexedAllProperties["ATTRIBUTES"]["AVAILABLE_STRENGTH"]
+                  ),
+                },
+              ]
+            : undefined,
+        })
+      ),
       resourceSearch("Medication").code(
         _.compact([
           {
@@ -177,23 +210,25 @@ export class RxNormSyncSession {
       [medicationKnowledge] = await createOr(
         "return",
         this.client,
-        build("MedicationKnowledge", {
-          code: buildCodeableConcept({
-            coding: [
-              {
-                system: CodeSystemURIs.Ndc,
-                code: ndcProps.ndcItem,
-                display: ndcProps.packagingList?.packaging?.join(", "),
-              },
-            ],
-          }),
-          status:
-            indexedProps["MARKETING_STATUS"]?.propValue === "ACTIVE"
-              ? MedicationKnowledgeStatusCodes.values.Active.code
-              : undefined,
-          associatedMedication: [buildReferenceFromResource(result)],
-          ingredient: result.ingredient,
-        }),
+        this.onResourceBuild(
+          build("MedicationKnowledge", {
+            code: buildCodeableConcept({
+              coding: [
+                {
+                  system: CodeSystemURIs.Ndc,
+                  code: ndcProps.ndcItem,
+                  display: ndcProps.packagingList?.packaging?.join(", "),
+                },
+              ],
+            }),
+            status:
+              indexedProps["MARKETING_STATUS"]?.propValue === "ACTIVE"
+                ? MedicationKnowledgeStatusCodes.values.Active.code
+                : undefined,
+            associatedMedication: [buildReferenceFromResource(result)],
+            ingredient: result.ingredient,
+          })
+        ),
         resourceSearch("MedicationKnowledge").code({
           system: CodeSystemURIs.Ndc,
           value: ndcProps.ndcItem,
@@ -210,17 +245,19 @@ export class RxNormSyncSession {
       const [provenance] = await createOr(
         "return",
         this.client,
-        build("Provenance", {
-          agent: [],
-          ...provenanceResult.provenance,
-          recorded: utcNow().toISOString(),
-          target: _.compact([
-            buildReferenceFromResource(result!),
-            medicationKnowledge
-              ? buildReferenceFromResource(medicationKnowledge)
-              : undefined,
-          ]),
-        }),
+        this.onResourceBuild(
+          build("Provenance", {
+            agent: [],
+            ...provenanceResult.provenance,
+            recorded: utcNow().toISOString(),
+            target: _.compact([
+              buildReferenceFromResource(result!),
+              medicationKnowledge
+                ? buildReferenceFromResource(medicationKnowledge)
+                : undefined,
+            ]),
+          })
+        ),
         resourceSearch("Provenance")
           .target({ type: result!.resourceType, id: result!.id! })
           .agent({
@@ -329,27 +366,29 @@ export class RxNormSyncSession {
     [this.nihNlmOrganization] = await createOr(
       "return",
       this.client,
-      build("Organization", {
-        identifier: [
-          {
-            ...KnownIdentifierSystems.URI,
-            value: NIH_NLM_IDENTIFIER_VALUE,
-          },
-        ],
-        name: "National Library of Medicine (NLM)",
-        alias: ["NLM"],
-        type: [OrganizationType.values.Government.codeableConcept],
-        contact: [
-          {
-            telecom: [
-              {
-                system: ContactPointSystem.values.Email.code,
-                value: "rxnorminfo@nlm.nih.gov",
-              },
-            ],
-          },
-        ],
-      })
+      this.onResourceBuild(
+        build("Organization", {
+          identifier: [
+            {
+              ...KnownIdentifierSystems.URI,
+              value: NIH_NLM_IDENTIFIER_VALUE,
+            },
+          ],
+          name: "National Library of Medicine (NLM)",
+          alias: ["NLM"],
+          type: [OrganizationType.values.Government.codeableConcept],
+          contact: [
+            {
+              telecom: [
+                {
+                  system: ContactPointSystem.values.Email.code,
+                  value: "rxnorminfo@nlm.nih.gov",
+                },
+              ],
+            },
+          ],
+        })
+      )
     );
 
     this.provenance = {
