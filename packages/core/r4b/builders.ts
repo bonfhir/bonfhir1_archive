@@ -118,3 +118,24 @@ export function buildReferenceFromResource(
     type: resource.resourceType,
   };
 }
+
+/**
+ * Extract the id portion of a `Reference.reference`.
+ */
+export function getIdFromReference(reference: Reference): string | undefined;
+export function getIdFromReference(reference: null | undefined): undefined;
+export function getIdFromReference(
+  reference: Reference | null | undefined
+): string | undefined;
+export function getIdFromReference(
+  reference: Reference | null | undefined
+): string | undefined {
+  if (!reference?.reference) {
+    return undefined;
+  }
+
+  const splittedRef = reference.reference.split("/");
+  return splittedRef.length === 1
+    ? splittedRef[0]
+    : splittedRef.slice(1).join("/");
+}
