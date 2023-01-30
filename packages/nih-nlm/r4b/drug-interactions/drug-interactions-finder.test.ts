@@ -67,6 +67,7 @@ describe("drug-interactions-finder", () => {
     const result = await findDrugInteractionsIssues({
       medications: ["207106", "152923", "656659"].map((code) =>
         build("Medication", {
+          id: `medid-${code}`,
           code: buildCodeableConcept({
             coding: [
               {

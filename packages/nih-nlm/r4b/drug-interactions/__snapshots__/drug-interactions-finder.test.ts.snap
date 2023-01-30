@@ -24,17 +24,9 @@ exports[`drug-interactions-finder returns issues when there is drug interaction 
     "implicated": [
       {
         "display": "simvastatin 40 MG Oral Tablet [Zocor]",
-        "identifier": {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "value": "152923",
-        },
       },
       {
         "display": "fluconazole 50 MG Oral Tablet [Diflucan]",
-        "identifier": {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "value": "207106",
-        },
       },
     ],
     "reference": "https://go.drugbank.com/drugs/DB00641#interactions",
@@ -42,7 +34,7 @@ exports[`drug-interactions-finder returns issues when there is drug interaction 
     "severity": undefined,
     "status": "registered",
     "text": {
-      "div": "<div xmlns="http://www.w3.org/1999/xhtml" class="fhir-narrative"><ul><li><span class="fhir-attr">Code: </span><ul><li><span class="fhir-attr">Coding: </span><ul><li><ul><li><span class="fhir-attr">System: </span><span class="fhir-value">http://terminology.hl7.org/CodeSystem/v3-ActCode</span></li><li><span class="fhir-attr">Display: </span><span class="fhir-value">Drug Interaction Alert</span></li></ul></li></ul></li><li><span class="fhir-attr">Text: </span><span class="fhir-value">Drug Interaction Alert</span></li></ul></li><li><span class="fhir-attr">Author: </span><ul><li><span class="fhir-attr">Identifier: </span><ul><li><span class="fhir-attr">System: </span><span class="fhir-value">urn:ietf:rfc:3986</span></li><li><span class="fhir-attr">Value: </span><span class="fhir-value">https://lhncbc.nlm.nih.gov/RxNav/APIs/InteractionAPIs.html</span></li></ul></li></ul></li><li><span class="fhir-attr">Implicated: </span><ul><li><ul><li><span class="fhir-attr">Identifier: </span><ul><li><span class="fhir-attr">System: </span><span class="fhir-value">http://www.nlm.nih.gov/research/umls/rxnorm</span></li><li><span class="fhir-attr">Value: </span><span class="fhir-value">152923</span></li></ul></li><li><span class="fhir-attr">Display: </span><span class="fhir-value">simvastatin 40 MG Oral Tablet [Zocor]</span></li></ul></li><li><ul><li><span class="fhir-attr">Identifier: </span><ul><li><span class="fhir-attr">System: </span><span class="fhir-value">http://www.nlm.nih.gov/research/umls/rxnorm</span></li><li><span class="fhir-attr">Value: </span><span class="fhir-value">207106</span></li></ul></li><li><span class="fhir-attr">Display: </span><span class="fhir-value">fluconazole 50 MG Oral Tablet [Diflucan]</span></li></ul></li></ul></li></ul></div>",
+      "div": "<div xmlns="http://www.w3.org/1999/xhtml" class="fhir-narrative"><ul><li><span class="fhir-attr">Code: </span><ul><li><span class="fhir-attr">Coding: </span><ul><li><ul><li><span class="fhir-attr">System: </span><span class="fhir-value">http://terminology.hl7.org/CodeSystem/v3-ActCode</span></li><li><span class="fhir-attr">Display: </span><span class="fhir-value">Drug Interaction Alert</span></li></ul></li></ul></li><li><span class="fhir-attr">Text: </span><span class="fhir-value">Drug Interaction Alert</span></li></ul></li><li><span class="fhir-attr">Author: </span><ul><li><span class="fhir-attr">Identifier: </span><ul><li><span class="fhir-attr">System: </span><span class="fhir-value">urn:ietf:rfc:3986</span></li><li><span class="fhir-attr">Value: </span><span class="fhir-value">https://lhncbc.nlm.nih.gov/RxNav/APIs/InteractionAPIs.html</span></li></ul></li></ul></li><li><span class="fhir-attr">Implicated: </span><ul><li><ul><li><span class="fhir-attr">Display: </span><span class="fhir-value">simvastatin 40 MG Oral Tablet [Zocor]</span></li></ul></li><li><ul><li><span class="fhir-attr">Display: </span><span class="fhir-value">fluconazole 50 MG Oral Tablet [Diflucan]</span></li></ul></li></ul></li></ul></div>",
       "status": "generated",
     },
   },
@@ -68,17 +60,9 @@ exports[`drug-interactions-finder returns issues when there is drug interaction 
     "implicated": [
       {
         "display": "simvastatin 40 MG Oral Tablet [Zocor]",
-        "identifier": {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "value": "152923",
-        },
       },
       {
         "display": "bosentan 125 MG Oral Tablet",
-        "identifier": {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "value": "656659",
-        },
       },
     ],
     "reference": "https://go.drugbank.com/drugs/DB00641#interactions",
@@ -86,7 +70,7 @@ exports[`drug-interactions-finder returns issues when there is drug interaction 
     "severity": undefined,
     "status": "registered",
     "text": {
-      "div": "<div xmlns="http://www.w3.org/1999/xhtml" class="fhir-narrative"><ul><li><span class="fhir-attr">Code: </span><ul><li><span class="fhir-attr">Coding: </span><ul><li><ul><li><span class="fhir-attr">System: </span><span class="fhir-value">http://terminology.hl7.org/CodeSystem/v3-ActCode</span></li><li><span class="fhir-attr">Display: </span><span class="fhir-value">Drug Interaction Alert</span></li></ul></li></ul></li><li><span class="fhir-attr">Text: </span><span class="fhir-value">Drug Interaction Alert</span></li></ul></li><li><span class="fhir-attr">Author: </span><ul><li><span class="fhir-attr">Identifier: </span><ul><li><span class="fhir-attr">System: </span><span class="fhir-value">urn:ietf:rfc:3986</span></li><li><span class="fhir-attr">Value: </span><span class="fhir-value">https://lhncbc.nlm.nih.gov/RxNav/APIs/InteractionAPIs.html</span></li></ul></li></ul></li><li><span class="fhir-attr">Implicated: </span><ul><li><ul><li><span class="fhir-attr">Identifier: </span><ul><li><span class="fhir-attr">System: </span><span class="fhir-value">http://www.nlm.nih.gov/research/umls/rxnorm</span></li><li><span class="fhir-attr">Value: </span><span class="fhir-value">152923</span></li></ul></li><li><span class="fhir-attr">Display: </span><span class="fhir-value">simvastatin 40 MG Oral Tablet [Zocor]</span></li></ul></li><li><ul><li><span class="fhir-attr">Identifier: </span><ul><li><span class="fhir-attr">System: </span><span class="fhir-value">http://www.nlm.nih.gov/research/umls/rxnorm</span></li><li><span class="fhir-attr">Value: </span><span class="fhir-value">656659</span></li></ul></li><li><span class="fhir-attr">Display: </span><span class="fhir-value">bosentan 125 MG Oral Tablet</span></li></ul></li></ul></li></ul></div>",
+      "div": "<div xmlns="http://www.w3.org/1999/xhtml" class="fhir-narrative"><ul><li><span class="fhir-attr">Code: </span><ul><li><span class="fhir-attr">Coding: </span><ul><li><ul><li><span class="fhir-attr">System: </span><span class="fhir-value">http://terminology.hl7.org/CodeSystem/v3-ActCode</span></li><li><span class="fhir-attr">Display: </span><span class="fhir-value">Drug Interaction Alert</span></li></ul></li></ul></li><li><span class="fhir-attr">Text: </span><span class="fhir-value">Drug Interaction Alert</span></li></ul></li><li><span class="fhir-attr">Author: </span><ul><li><span class="fhir-attr">Identifier: </span><ul><li><span class="fhir-attr">System: </span><span class="fhir-value">urn:ietf:rfc:3986</span></li><li><span class="fhir-attr">Value: </span><span class="fhir-value">https://lhncbc.nlm.nih.gov/RxNav/APIs/InteractionAPIs.html</span></li></ul></li></ul></li><li><span class="fhir-attr">Implicated: </span><ul><li><ul><li><span class="fhir-attr">Display: </span><span class="fhir-value">simvastatin 40 MG Oral Tablet [Zocor]</span></li></ul></li><li><ul><li><span class="fhir-attr">Display: </span><span class="fhir-value">bosentan 125 MG Oral Tablet</span></li></ul></li></ul></li></ul></div>",
       "status": "generated",
     },
   },
@@ -112,17 +96,9 @@ exports[`drug-interactions-finder returns issues when there is drug interaction 
     "implicated": [
       {
         "display": "simvastatin 40 MG Oral Tablet [Zocor]",
-        "identifier": {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "value": "152923",
-        },
       },
       {
         "display": "bosentan 125 MG Oral Tablet",
-        "identifier": {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "value": "656659",
-        },
       },
     ],
     "reference": "https://go.drugbank.com/drugs/DB00641#interactions",
@@ -130,7 +106,7 @@ exports[`drug-interactions-finder returns issues when there is drug interaction 
     "severity": undefined,
     "status": "registered",
     "text": {
-      "div": "<div xmlns="http://www.w3.org/1999/xhtml" class="fhir-narrative"><ul><li><span class="fhir-attr">Code: </span><ul><li><span class="fhir-attr">Coding: </span><ul><li><ul><li><span class="fhir-attr">System: </span><span class="fhir-value">http://terminology.hl7.org/CodeSystem/v3-ActCode</span></li><li><span class="fhir-attr">Display: </span><span class="fhir-value">Drug Interaction Alert</span></li></ul></li></ul></li><li><span class="fhir-attr">Text: </span><span class="fhir-value">Drug Interaction Alert</span></li></ul></li><li><span class="fhir-attr">Author: </span><ul><li><span class="fhir-attr">Identifier: </span><ul><li><span class="fhir-attr">System: </span><span class="fhir-value">urn:ietf:rfc:3986</span></li><li><span class="fhir-attr">Value: </span><span class="fhir-value">https://lhncbc.nlm.nih.gov/RxNav/APIs/InteractionAPIs.html</span></li></ul></li></ul></li><li><span class="fhir-attr">Implicated: </span><ul><li><ul><li><span class="fhir-attr">Identifier: </span><ul><li><span class="fhir-attr">System: </span><span class="fhir-value">http://www.nlm.nih.gov/research/umls/rxnorm</span></li><li><span class="fhir-attr">Value: </span><span class="fhir-value">152923</span></li></ul></li><li><span class="fhir-attr">Display: </span><span class="fhir-value">simvastatin 40 MG Oral Tablet [Zocor]</span></li></ul></li><li><ul><li><span class="fhir-attr">Identifier: </span><ul><li><span class="fhir-attr">System: </span><span class="fhir-value">http://www.nlm.nih.gov/research/umls/rxnorm</span></li><li><span class="fhir-attr">Value: </span><span class="fhir-value">656659</span></li></ul></li><li><span class="fhir-attr">Display: </span><span class="fhir-value">bosentan 125 MG Oral Tablet</span></li></ul></li></ul></li></ul></div>",
+      "div": "<div xmlns="http://www.w3.org/1999/xhtml" class="fhir-narrative"><ul><li><span class="fhir-attr">Code: </span><ul><li><span class="fhir-attr">Coding: </span><ul><li><ul><li><span class="fhir-attr">System: </span><span class="fhir-value">http://terminology.hl7.org/CodeSystem/v3-ActCode</span></li><li><span class="fhir-attr">Display: </span><span class="fhir-value">Drug Interaction Alert</span></li></ul></li></ul></li><li><span class="fhir-attr">Text: </span><span class="fhir-value">Drug Interaction Alert</span></li></ul></li><li><span class="fhir-attr">Author: </span><ul><li><span class="fhir-attr">Identifier: </span><ul><li><span class="fhir-attr">System: </span><span class="fhir-value">urn:ietf:rfc:3986</span></li><li><span class="fhir-attr">Value: </span><span class="fhir-value">https://lhncbc.nlm.nih.gov/RxNav/APIs/InteractionAPIs.html</span></li></ul></li></ul></li><li><span class="fhir-attr">Implicated: </span><ul><li><ul><li><span class="fhir-attr">Display: </span><span class="fhir-value">simvastatin 40 MG Oral Tablet [Zocor]</span></li></ul></li><li><ul><li><span class="fhir-attr">Display: </span><span class="fhir-value">bosentan 125 MG Oral Tablet</span></li></ul></li></ul></li></ul></div>",
       "status": "generated",
     },
   },
@@ -156,17 +132,9 @@ exports[`drug-interactions-finder returns issues when there is drug interaction 
     "implicated": [
       {
         "display": "fluconazole 50 MG Oral Tablet [Diflucan]",
-        "identifier": {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "value": "207106",
-        },
       },
       {
         "display": "bosentan 125 MG Oral Tablet",
-        "identifier": {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "value": "656659",
-        },
       },
     ],
     "reference": "https://go.drugbank.com/drugs/DB00196#interactions",
@@ -174,7 +142,7 @@ exports[`drug-interactions-finder returns issues when there is drug interaction 
     "severity": undefined,
     "status": "registered",
     "text": {
-      "div": "<div xmlns="http://www.w3.org/1999/xhtml" class="fhir-narrative"><ul><li><span class="fhir-attr">Code: </span><ul><li><span class="fhir-attr">Coding: </span><ul><li><ul><li><span class="fhir-attr">System: </span><span class="fhir-value">http://terminology.hl7.org/CodeSystem/v3-ActCode</span></li><li><span class="fhir-attr">Display: </span><span class="fhir-value">Drug Interaction Alert</span></li></ul></li></ul></li><li><span class="fhir-attr">Text: </span><span class="fhir-value">Drug Interaction Alert</span></li></ul></li><li><span class="fhir-attr">Author: </span><ul><li><span class="fhir-attr">Identifier: </span><ul><li><span class="fhir-attr">System: </span><span class="fhir-value">urn:ietf:rfc:3986</span></li><li><span class="fhir-attr">Value: </span><span class="fhir-value">https://lhncbc.nlm.nih.gov/RxNav/APIs/InteractionAPIs.html</span></li></ul></li></ul></li><li><span class="fhir-attr">Implicated: </span><ul><li><ul><li><span class="fhir-attr">Identifier: </span><ul><li><span class="fhir-attr">System: </span><span class="fhir-value">http://www.nlm.nih.gov/research/umls/rxnorm</span></li><li><span class="fhir-attr">Value: </span><span class="fhir-value">207106</span></li></ul></li><li><span class="fhir-attr">Display: </span><span class="fhir-value">fluconazole 50 MG Oral Tablet [Diflucan]</span></li></ul></li><li><ul><li><span class="fhir-attr">Identifier: </span><ul><li><span class="fhir-attr">System: </span><span class="fhir-value">http://www.nlm.nih.gov/research/umls/rxnorm</span></li><li><span class="fhir-attr">Value: </span><span class="fhir-value">656659</span></li></ul></li><li><span class="fhir-attr">Display: </span><span class="fhir-value">bosentan 125 MG Oral Tablet</span></li></ul></li></ul></li></ul></div>",
+      "div": "<div xmlns="http://www.w3.org/1999/xhtml" class="fhir-narrative"><ul><li><span class="fhir-attr">Code: </span><ul><li><span class="fhir-attr">Coding: </span><ul><li><ul><li><span class="fhir-attr">System: </span><span class="fhir-value">http://terminology.hl7.org/CodeSystem/v3-ActCode</span></li><li><span class="fhir-attr">Display: </span><span class="fhir-value">Drug Interaction Alert</span></li></ul></li></ul></li><li><span class="fhir-attr">Text: </span><span class="fhir-value">Drug Interaction Alert</span></li></ul></li><li><span class="fhir-attr">Author: </span><ul><li><span class="fhir-attr">Identifier: </span><ul><li><span class="fhir-attr">System: </span><span class="fhir-value">urn:ietf:rfc:3986</span></li><li><span class="fhir-attr">Value: </span><span class="fhir-value">https://lhncbc.nlm.nih.gov/RxNav/APIs/InteractionAPIs.html</span></li></ul></li></ul></li><li><span class="fhir-attr">Implicated: </span><ul><li><ul><li><span class="fhir-attr">Display: </span><span class="fhir-value">fluconazole 50 MG Oral Tablet [Diflucan]</span></li></ul></li><li><ul><li><span class="fhir-attr">Display: </span><span class="fhir-value">bosentan 125 MG Oral Tablet</span></li></ul></li></ul></li></ul></div>",
       "status": "generated",
     },
   },
@@ -200,17 +168,9 @@ exports[`drug-interactions-finder returns issues when there is drug interaction 
     "implicated": [
       {
         "display": "fluconazole 50 MG Oral Tablet [Diflucan]",
-        "identifier": {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "value": "207106",
-        },
       },
       {
         "display": "bosentan 125 MG Oral Tablet",
-        "identifier": {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "value": "656659",
-        },
       },
     ],
     "reference": "https://go.drugbank.com/drugs/DB00196#interactions",
@@ -218,7 +178,7 @@ exports[`drug-interactions-finder returns issues when there is drug interaction 
     "severity": undefined,
     "status": "registered",
     "text": {
-      "div": "<div xmlns="http://www.w3.org/1999/xhtml" class="fhir-narrative"><ul><li><span class="fhir-attr">Code: </span><ul><li><span class="fhir-attr">Coding: </span><ul><li><ul><li><span class="fhir-attr">System: </span><span class="fhir-value">http://terminology.hl7.org/CodeSystem/v3-ActCode</span></li><li><span class="fhir-attr">Display: </span><span class="fhir-value">Drug Interaction Alert</span></li></ul></li></ul></li><li><span class="fhir-attr">Text: </span><span class="fhir-value">Drug Interaction Alert</span></li></ul></li><li><span class="fhir-attr">Author: </span><ul><li><span class="fhir-attr">Identifier: </span><ul><li><span class="fhir-attr">System: </span><span class="fhir-value">urn:ietf:rfc:3986</span></li><li><span class="fhir-attr">Value: </span><span class="fhir-value">https://lhncbc.nlm.nih.gov/RxNav/APIs/InteractionAPIs.html</span></li></ul></li></ul></li><li><span class="fhir-attr">Implicated: </span><ul><li><ul><li><span class="fhir-attr">Identifier: </span><ul><li><span class="fhir-attr">System: </span><span class="fhir-value">http://www.nlm.nih.gov/research/umls/rxnorm</span></li><li><span class="fhir-attr">Value: </span><span class="fhir-value">207106</span></li></ul></li><li><span class="fhir-attr">Display: </span><span class="fhir-value">fluconazole 50 MG Oral Tablet [Diflucan]</span></li></ul></li><li><ul><li><span class="fhir-attr">Identifier: </span><ul><li><span class="fhir-attr">System: </span><span class="fhir-value">http://www.nlm.nih.gov/research/umls/rxnorm</span></li><li><span class="fhir-attr">Value: </span><span class="fhir-value">656659</span></li></ul></li><li><span class="fhir-attr">Display: </span><span class="fhir-value">bosentan 125 MG Oral Tablet</span></li></ul></li></ul></li></ul></div>",
+      "div": "<div xmlns="http://www.w3.org/1999/xhtml" class="fhir-narrative"><ul><li><span class="fhir-attr">Code: </span><ul><li><span class="fhir-attr">Coding: </span><ul><li><ul><li><span class="fhir-attr">System: </span><span class="fhir-value">http://terminology.hl7.org/CodeSystem/v3-ActCode</span></li><li><span class="fhir-attr">Display: </span><span class="fhir-value">Drug Interaction Alert</span></li></ul></li></ul></li><li><span class="fhir-attr">Text: </span><span class="fhir-value">Drug Interaction Alert</span></li></ul></li><li><span class="fhir-attr">Author: </span><ul><li><span class="fhir-attr">Identifier: </span><ul><li><span class="fhir-attr">System: </span><span class="fhir-value">urn:ietf:rfc:3986</span></li><li><span class="fhir-attr">Value: </span><span class="fhir-value">https://lhncbc.nlm.nih.gov/RxNav/APIs/InteractionAPIs.html</span></li></ul></li></ul></li><li><span class="fhir-attr">Implicated: </span><ul><li><ul><li><span class="fhir-attr">Display: </span><span class="fhir-value">fluconazole 50 MG Oral Tablet [Diflucan]</span></li></ul></li><li><ul><li><span class="fhir-attr">Display: </span><span class="fhir-value">bosentan 125 MG Oral Tablet</span></li></ul></li></ul></li></ul></div>",
       "status": "generated",
     },
   },
@@ -244,17 +204,9 @@ exports[`drug-interactions-finder returns issues when there is drug interaction 
     "implicated": [
       {
         "display": "simvastatin 40 MG Oral Tablet [Zocor]",
-        "identifier": {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "value": "152923",
-        },
       },
       {
         "display": "fluconazole 50 MG Oral Tablet [Diflucan]",
-        "identifier": {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "value": "207106",
-        },
       },
     ],
     "reference": "NA",
@@ -262,7 +214,7 @@ exports[`drug-interactions-finder returns issues when there is drug interaction 
     "severity": "high",
     "status": "registered",
     "text": {
-      "div": "<div xmlns="http://www.w3.org/1999/xhtml" class="fhir-narrative"><ul><li><span class="fhir-attr">Code: </span><ul><li><span class="fhir-attr">Coding: </span><ul><li><ul><li><span class="fhir-attr">System: </span><span class="fhir-value">http://terminology.hl7.org/CodeSystem/v3-ActCode</span></li><li><span class="fhir-attr">Display: </span><span class="fhir-value">Drug Interaction Alert</span></li></ul></li></ul></li><li><span class="fhir-attr">Text: </span><span class="fhir-value">Drug Interaction Alert</span></li></ul></li><li><span class="fhir-attr">Author: </span><ul><li><span class="fhir-attr">Identifier: </span><ul><li><span class="fhir-attr">System: </span><span class="fhir-value">urn:ietf:rfc:3986</span></li><li><span class="fhir-attr">Value: </span><span class="fhir-value">https://lhncbc.nlm.nih.gov/RxNav/APIs/InteractionAPIs.html</span></li></ul></li></ul></li><li><span class="fhir-attr">Implicated: </span><ul><li><ul><li><span class="fhir-attr">Identifier: </span><ul><li><span class="fhir-attr">System: </span><span class="fhir-value">http://www.nlm.nih.gov/research/umls/rxnorm</span></li><li><span class="fhir-attr">Value: </span><span class="fhir-value">152923</span></li></ul></li><li><span class="fhir-attr">Display: </span><span class="fhir-value">simvastatin 40 MG Oral Tablet [Zocor]</span></li></ul></li><li><ul><li><span class="fhir-attr">Identifier: </span><ul><li><span class="fhir-attr">System: </span><span class="fhir-value">http://www.nlm.nih.gov/research/umls/rxnorm</span></li><li><span class="fhir-attr">Value: </span><span class="fhir-value">207106</span></li></ul></li><li><span class="fhir-attr">Display: </span><span class="fhir-value">fluconazole 50 MG Oral Tablet [Diflucan]</span></li></ul></li></ul></li></ul></div>",
+      "div": "<div xmlns="http://www.w3.org/1999/xhtml" class="fhir-narrative"><ul><li><span class="fhir-attr">Code: </span><ul><li><span class="fhir-attr">Coding: </span><ul><li><ul><li><span class="fhir-attr">System: </span><span class="fhir-value">http://terminology.hl7.org/CodeSystem/v3-ActCode</span></li><li><span class="fhir-attr">Display: </span><span class="fhir-value">Drug Interaction Alert</span></li></ul></li></ul></li><li><span class="fhir-attr">Text: </span><span class="fhir-value">Drug Interaction Alert</span></li></ul></li><li><span class="fhir-attr">Author: </span><ul><li><span class="fhir-attr">Identifier: </span><ul><li><span class="fhir-attr">System: </span><span class="fhir-value">urn:ietf:rfc:3986</span></li><li><span class="fhir-attr">Value: </span><span class="fhir-value">https://lhncbc.nlm.nih.gov/RxNav/APIs/InteractionAPIs.html</span></li></ul></li></ul></li><li><span class="fhir-attr">Implicated: </span><ul><li><ul><li><span class="fhir-attr">Display: </span><span class="fhir-value">simvastatin 40 MG Oral Tablet [Zocor]</span></li></ul></li><li><ul><li><span class="fhir-attr">Display: </span><span class="fhir-value">fluconazole 50 MG Oral Tablet [Diflucan]</span></li></ul></li></ul></li></ul></div>",
       "status": "generated",
     },
   },
@@ -293,17 +245,13 @@ exports[`drug-interactions-finder returns issues when there is drug interaction 
     "implicated": [
       {
         "display": "simvastatin 40 MG Oral Tablet [Zocor]",
-        "identifier": {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "value": "152923",
-        },
+        "reference": "Medication/medid-152923",
+        "type": "Medication",
       },
       {
         "display": "fluconazole 50 MG Oral Tablet [Diflucan]",
-        "identifier": {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "value": "207106",
-        },
+        "reference": "Medication/medid-207106",
+        "type": "Medication",
       },
     ],
     "reference": "https://go.drugbank.com/drugs/DB00641#interactions",
@@ -311,7 +259,7 @@ exports[`drug-interactions-finder returns issues when there is drug interaction 
     "severity": undefined,
     "status": "registered",
     "text": {
-      "div": "<div xmlns="http://www.w3.org/1999/xhtml" class="fhir-narrative"><ul><li><span class="fhir-attr">Code: </span><ul><li><span class="fhir-attr">Coding: </span><ul><li><ul><li><span class="fhir-attr">System: </span><span class="fhir-value">http://terminology.hl7.org/CodeSystem/v3-ActCode</span></li><li><span class="fhir-attr">Display: </span><span class="fhir-value">Drug Interaction Alert</span></li></ul></li></ul></li><li><span class="fhir-attr">Text: </span><span class="fhir-value">Drug Interaction Alert</span></li></ul></li><li><span class="fhir-attr">Author: </span><ul><li><span class="fhir-attr">Identifier: </span><ul><li><span class="fhir-attr">System: </span><span class="fhir-value">urn:ietf:rfc:3986</span></li><li><span class="fhir-attr">Value: </span><span class="fhir-value">https://lhncbc.nlm.nih.gov/RxNav/APIs/InteractionAPIs.html</span></li></ul></li></ul></li><li><span class="fhir-attr">Implicated: </span><ul><li><ul><li><span class="fhir-attr">Identifier: </span><ul><li><span class="fhir-attr">System: </span><span class="fhir-value">http://www.nlm.nih.gov/research/umls/rxnorm</span></li><li><span class="fhir-attr">Value: </span><span class="fhir-value">152923</span></li></ul></li><li><span class="fhir-attr">Display: </span><span class="fhir-value">simvastatin 40 MG Oral Tablet [Zocor]</span></li></ul></li><li><ul><li><span class="fhir-attr">Identifier: </span><ul><li><span class="fhir-attr">System: </span><span class="fhir-value">http://www.nlm.nih.gov/research/umls/rxnorm</span></li><li><span class="fhir-attr">Value: </span><span class="fhir-value">207106</span></li></ul></li><li><span class="fhir-attr">Display: </span><span class="fhir-value">fluconazole 50 MG Oral Tablet [Diflucan]</span></li></ul></li></ul></li></ul></div>",
+      "div": "<div xmlns="http://www.w3.org/1999/xhtml" class="fhir-narrative"><ul><li><span class="fhir-attr">Code: </span><ul><li><span class="fhir-attr">Coding: </span><ul><li><ul><li><span class="fhir-attr">System: </span><span class="fhir-value">http://terminology.hl7.org/CodeSystem/v3-ActCode</span></li><li><span class="fhir-attr">Display: </span><span class="fhir-value">Drug Interaction Alert</span></li></ul></li></ul></li><li><span class="fhir-attr">Text: </span><span class="fhir-value">Drug Interaction Alert</span></li></ul></li><li><span class="fhir-attr">Author: </span><ul><li><span class="fhir-attr">Identifier: </span><ul><li><span class="fhir-attr">System: </span><span class="fhir-value">urn:ietf:rfc:3986</span></li><li><span class="fhir-attr">Value: </span><span class="fhir-value">https://lhncbc.nlm.nih.gov/RxNav/APIs/InteractionAPIs.html</span></li></ul></li></ul></li><li><span class="fhir-attr">Implicated: </span><ul><li><ul><li><span class="fhir-attr">Reference: </span><span class="fhir-value">Medication/medid-152923</span></li><li><span class="fhir-attr">Type: </span><span class="fhir-value">Medication</span></li><li><span class="fhir-attr">Display: </span><span class="fhir-value">simvastatin 40 MG Oral Tablet [Zocor]</span></li></ul></li><li><ul><li><span class="fhir-attr">Reference: </span><span class="fhir-value">Medication/medid-207106</span></li><li><span class="fhir-attr">Type: </span><span class="fhir-value">Medication</span></li><li><span class="fhir-attr">Display: </span><span class="fhir-value">fluconazole 50 MG Oral Tablet [Diflucan]</span></li></ul></li></ul></li></ul></div>",
       "status": "generated",
     },
   },
@@ -337,17 +285,13 @@ exports[`drug-interactions-finder returns issues when there is drug interaction 
     "implicated": [
       {
         "display": "simvastatin 40 MG Oral Tablet [Zocor]",
-        "identifier": {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "value": "152923",
-        },
+        "reference": "Medication/medid-152923",
+        "type": "Medication",
       },
       {
         "display": "bosentan 125 MG Oral Tablet",
-        "identifier": {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "value": "656659",
-        },
+        "reference": "Medication/medid-656659",
+        "type": "Medication",
       },
     ],
     "reference": "https://go.drugbank.com/drugs/DB00641#interactions",
@@ -355,7 +299,7 @@ exports[`drug-interactions-finder returns issues when there is drug interaction 
     "severity": undefined,
     "status": "registered",
     "text": {
-      "div": "<div xmlns="http://www.w3.org/1999/xhtml" class="fhir-narrative"><ul><li><span class="fhir-attr">Code: </span><ul><li><span class="fhir-attr">Coding: </span><ul><li><ul><li><span class="fhir-attr">System: </span><span class="fhir-value">http://terminology.hl7.org/CodeSystem/v3-ActCode</span></li><li><span class="fhir-attr">Display: </span><span class="fhir-value">Drug Interaction Alert</span></li></ul></li></ul></li><li><span class="fhir-attr">Text: </span><span class="fhir-value">Drug Interaction Alert</span></li></ul></li><li><span class="fhir-attr">Author: </span><ul><li><span class="fhir-attr">Identifier: </span><ul><li><span class="fhir-attr">System: </span><span class="fhir-value">urn:ietf:rfc:3986</span></li><li><span class="fhir-attr">Value: </span><span class="fhir-value">https://lhncbc.nlm.nih.gov/RxNav/APIs/InteractionAPIs.html</span></li></ul></li></ul></li><li><span class="fhir-attr">Implicated: </span><ul><li><ul><li><span class="fhir-attr">Identifier: </span><ul><li><span class="fhir-attr">System: </span><span class="fhir-value">http://www.nlm.nih.gov/research/umls/rxnorm</span></li><li><span class="fhir-attr">Value: </span><span class="fhir-value">152923</span></li></ul></li><li><span class="fhir-attr">Display: </span><span class="fhir-value">simvastatin 40 MG Oral Tablet [Zocor]</span></li></ul></li><li><ul><li><span class="fhir-attr">Identifier: </span><ul><li><span class="fhir-attr">System: </span><span class="fhir-value">http://www.nlm.nih.gov/research/umls/rxnorm</span></li><li><span class="fhir-attr">Value: </span><span class="fhir-value">656659</span></li></ul></li><li><span class="fhir-attr">Display: </span><span class="fhir-value">bosentan 125 MG Oral Tablet</span></li></ul></li></ul></li></ul></div>",
+      "div": "<div xmlns="http://www.w3.org/1999/xhtml" class="fhir-narrative"><ul><li><span class="fhir-attr">Code: </span><ul><li><span class="fhir-attr">Coding: </span><ul><li><ul><li><span class="fhir-attr">System: </span><span class="fhir-value">http://terminology.hl7.org/CodeSystem/v3-ActCode</span></li><li><span class="fhir-attr">Display: </span><span class="fhir-value">Drug Interaction Alert</span></li></ul></li></ul></li><li><span class="fhir-attr">Text: </span><span class="fhir-value">Drug Interaction Alert</span></li></ul></li><li><span class="fhir-attr">Author: </span><ul><li><span class="fhir-attr">Identifier: </span><ul><li><span class="fhir-attr">System: </span><span class="fhir-value">urn:ietf:rfc:3986</span></li><li><span class="fhir-attr">Value: </span><span class="fhir-value">https://lhncbc.nlm.nih.gov/RxNav/APIs/InteractionAPIs.html</span></li></ul></li></ul></li><li><span class="fhir-attr">Implicated: </span><ul><li><ul><li><span class="fhir-attr">Reference: </span><span class="fhir-value">Medication/medid-152923</span></li><li><span class="fhir-attr">Type: </span><span class="fhir-value">Medication</span></li><li><span class="fhir-attr">Display: </span><span class="fhir-value">simvastatin 40 MG Oral Tablet [Zocor]</span></li></ul></li><li><ul><li><span class="fhir-attr">Reference: </span><span class="fhir-value">Medication/medid-656659</span></li><li><span class="fhir-attr">Type: </span><span class="fhir-value">Medication</span></li><li><span class="fhir-attr">Display: </span><span class="fhir-value">bosentan 125 MG Oral Tablet</span></li></ul></li></ul></li></ul></div>",
       "status": "generated",
     },
   },
@@ -381,17 +325,13 @@ exports[`drug-interactions-finder returns issues when there is drug interaction 
     "implicated": [
       {
         "display": "simvastatin 40 MG Oral Tablet [Zocor]",
-        "identifier": {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "value": "152923",
-        },
+        "reference": "Medication/medid-152923",
+        "type": "Medication",
       },
       {
         "display": "bosentan 125 MG Oral Tablet",
-        "identifier": {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "value": "656659",
-        },
+        "reference": "Medication/medid-656659",
+        "type": "Medication",
       },
     ],
     "reference": "https://go.drugbank.com/drugs/DB00641#interactions",
@@ -399,7 +339,7 @@ exports[`drug-interactions-finder returns issues when there is drug interaction 
     "severity": undefined,
     "status": "registered",
     "text": {
-      "div": "<div xmlns="http://www.w3.org/1999/xhtml" class="fhir-narrative"><ul><li><span class="fhir-attr">Code: </span><ul><li><span class="fhir-attr">Coding: </span><ul><li><ul><li><span class="fhir-attr">System: </span><span class="fhir-value">http://terminology.hl7.org/CodeSystem/v3-ActCode</span></li><li><span class="fhir-attr">Display: </span><span class="fhir-value">Drug Interaction Alert</span></li></ul></li></ul></li><li><span class="fhir-attr">Text: </span><span class="fhir-value">Drug Interaction Alert</span></li></ul></li><li><span class="fhir-attr">Author: </span><ul><li><span class="fhir-attr">Identifier: </span><ul><li><span class="fhir-attr">System: </span><span class="fhir-value">urn:ietf:rfc:3986</span></li><li><span class="fhir-attr">Value: </span><span class="fhir-value">https://lhncbc.nlm.nih.gov/RxNav/APIs/InteractionAPIs.html</span></li></ul></li></ul></li><li><span class="fhir-attr">Implicated: </span><ul><li><ul><li><span class="fhir-attr">Identifier: </span><ul><li><span class="fhir-attr">System: </span><span class="fhir-value">http://www.nlm.nih.gov/research/umls/rxnorm</span></li><li><span class="fhir-attr">Value: </span><span class="fhir-value">152923</span></li></ul></li><li><span class="fhir-attr">Display: </span><span class="fhir-value">simvastatin 40 MG Oral Tablet [Zocor]</span></li></ul></li><li><ul><li><span class="fhir-attr">Identifier: </span><ul><li><span class="fhir-attr">System: </span><span class="fhir-value">http://www.nlm.nih.gov/research/umls/rxnorm</span></li><li><span class="fhir-attr">Value: </span><span class="fhir-value">656659</span></li></ul></li><li><span class="fhir-attr">Display: </span><span class="fhir-value">bosentan 125 MG Oral Tablet</span></li></ul></li></ul></li></ul></div>",
+      "div": "<div xmlns="http://www.w3.org/1999/xhtml" class="fhir-narrative"><ul><li><span class="fhir-attr">Code: </span><ul><li><span class="fhir-attr">Coding: </span><ul><li><ul><li><span class="fhir-attr">System: </span><span class="fhir-value">http://terminology.hl7.org/CodeSystem/v3-ActCode</span></li><li><span class="fhir-attr">Display: </span><span class="fhir-value">Drug Interaction Alert</span></li></ul></li></ul></li><li><span class="fhir-attr">Text: </span><span class="fhir-value">Drug Interaction Alert</span></li></ul></li><li><span class="fhir-attr">Author: </span><ul><li><span class="fhir-attr">Identifier: </span><ul><li><span class="fhir-attr">System: </span><span class="fhir-value">urn:ietf:rfc:3986</span></li><li><span class="fhir-attr">Value: </span><span class="fhir-value">https://lhncbc.nlm.nih.gov/RxNav/APIs/InteractionAPIs.html</span></li></ul></li></ul></li><li><span class="fhir-attr">Implicated: </span><ul><li><ul><li><span class="fhir-attr">Reference: </span><span class="fhir-value">Medication/medid-152923</span></li><li><span class="fhir-attr">Type: </span><span class="fhir-value">Medication</span></li><li><span class="fhir-attr">Display: </span><span class="fhir-value">simvastatin 40 MG Oral Tablet [Zocor]</span></li></ul></li><li><ul><li><span class="fhir-attr">Reference: </span><span class="fhir-value">Medication/medid-656659</span></li><li><span class="fhir-attr">Type: </span><span class="fhir-value">Medication</span></li><li><span class="fhir-attr">Display: </span><span class="fhir-value">bosentan 125 MG Oral Tablet</span></li></ul></li></ul></li></ul></div>",
       "status": "generated",
     },
   },
@@ -425,17 +365,13 @@ exports[`drug-interactions-finder returns issues when there is drug interaction 
     "implicated": [
       {
         "display": "fluconazole 50 MG Oral Tablet [Diflucan]",
-        "identifier": {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "value": "207106",
-        },
+        "reference": "Medication/medid-207106",
+        "type": "Medication",
       },
       {
         "display": "bosentan 125 MG Oral Tablet",
-        "identifier": {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "value": "656659",
-        },
+        "reference": "Medication/medid-656659",
+        "type": "Medication",
       },
     ],
     "reference": "https://go.drugbank.com/drugs/DB00196#interactions",
@@ -443,7 +379,7 @@ exports[`drug-interactions-finder returns issues when there is drug interaction 
     "severity": undefined,
     "status": "registered",
     "text": {
-      "div": "<div xmlns="http://www.w3.org/1999/xhtml" class="fhir-narrative"><ul><li><span class="fhir-attr">Code: </span><ul><li><span class="fhir-attr">Coding: </span><ul><li><ul><li><span class="fhir-attr">System: </span><span class="fhir-value">http://terminology.hl7.org/CodeSystem/v3-ActCode</span></li><li><span class="fhir-attr">Display: </span><span class="fhir-value">Drug Interaction Alert</span></li></ul></li></ul></li><li><span class="fhir-attr">Text: </span><span class="fhir-value">Drug Interaction Alert</span></li></ul></li><li><span class="fhir-attr">Author: </span><ul><li><span class="fhir-attr">Identifier: </span><ul><li><span class="fhir-attr">System: </span><span class="fhir-value">urn:ietf:rfc:3986</span></li><li><span class="fhir-attr">Value: </span><span class="fhir-value">https://lhncbc.nlm.nih.gov/RxNav/APIs/InteractionAPIs.html</span></li></ul></li></ul></li><li><span class="fhir-attr">Implicated: </span><ul><li><ul><li><span class="fhir-attr">Identifier: </span><ul><li><span class="fhir-attr">System: </span><span class="fhir-value">http://www.nlm.nih.gov/research/umls/rxnorm</span></li><li><span class="fhir-attr">Value: </span><span class="fhir-value">207106</span></li></ul></li><li><span class="fhir-attr">Display: </span><span class="fhir-value">fluconazole 50 MG Oral Tablet [Diflucan]</span></li></ul></li><li><ul><li><span class="fhir-attr">Identifier: </span><ul><li><span class="fhir-attr">System: </span><span class="fhir-value">http://www.nlm.nih.gov/research/umls/rxnorm</span></li><li><span class="fhir-attr">Value: </span><span class="fhir-value">656659</span></li></ul></li><li><span class="fhir-attr">Display: </span><span class="fhir-value">bosentan 125 MG Oral Tablet</span></li></ul></li></ul></li></ul></div>",
+      "div": "<div xmlns="http://www.w3.org/1999/xhtml" class="fhir-narrative"><ul><li><span class="fhir-attr">Code: </span><ul><li><span class="fhir-attr">Coding: </span><ul><li><ul><li><span class="fhir-attr">System: </span><span class="fhir-value">http://terminology.hl7.org/CodeSystem/v3-ActCode</span></li><li><span class="fhir-attr">Display: </span><span class="fhir-value">Drug Interaction Alert</span></li></ul></li></ul></li><li><span class="fhir-attr">Text: </span><span class="fhir-value">Drug Interaction Alert</span></li></ul></li><li><span class="fhir-attr">Author: </span><ul><li><span class="fhir-attr">Identifier: </span><ul><li><span class="fhir-attr">System: </span><span class="fhir-value">urn:ietf:rfc:3986</span></li><li><span class="fhir-attr">Value: </span><span class="fhir-value">https://lhncbc.nlm.nih.gov/RxNav/APIs/InteractionAPIs.html</span></li></ul></li></ul></li><li><span class="fhir-attr">Implicated: </span><ul><li><ul><li><span class="fhir-attr">Reference: </span><span class="fhir-value">Medication/medid-207106</span></li><li><span class="fhir-attr">Type: </span><span class="fhir-value">Medication</span></li><li><span class="fhir-attr">Display: </span><span class="fhir-value">fluconazole 50 MG Oral Tablet [Diflucan]</span></li></ul></li><li><ul><li><span class="fhir-attr">Reference: </span><span class="fhir-value">Medication/medid-656659</span></li><li><span class="fhir-attr">Type: </span><span class="fhir-value">Medication</span></li><li><span class="fhir-attr">Display: </span><span class="fhir-value">bosentan 125 MG Oral Tablet</span></li></ul></li></ul></li></ul></div>",
       "status": "generated",
     },
   },
@@ -469,17 +405,13 @@ exports[`drug-interactions-finder returns issues when there is drug interaction 
     "implicated": [
       {
         "display": "fluconazole 50 MG Oral Tablet [Diflucan]",
-        "identifier": {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "value": "207106",
-        },
+        "reference": "Medication/medid-207106",
+        "type": "Medication",
       },
       {
         "display": "bosentan 125 MG Oral Tablet",
-        "identifier": {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "value": "656659",
-        },
+        "reference": "Medication/medid-656659",
+        "type": "Medication",
       },
     ],
     "reference": "https://go.drugbank.com/drugs/DB00196#interactions",
@@ -487,7 +419,7 @@ exports[`drug-interactions-finder returns issues when there is drug interaction 
     "severity": undefined,
     "status": "registered",
     "text": {
-      "div": "<div xmlns="http://www.w3.org/1999/xhtml" class="fhir-narrative"><ul><li><span class="fhir-attr">Code: </span><ul><li><span class="fhir-attr">Coding: </span><ul><li><ul><li><span class="fhir-attr">System: </span><span class="fhir-value">http://terminology.hl7.org/CodeSystem/v3-ActCode</span></li><li><span class="fhir-attr">Display: </span><span class="fhir-value">Drug Interaction Alert</span></li></ul></li></ul></li><li><span class="fhir-attr">Text: </span><span class="fhir-value">Drug Interaction Alert</span></li></ul></li><li><span class="fhir-attr">Author: </span><ul><li><span class="fhir-attr">Identifier: </span><ul><li><span class="fhir-attr">System: </span><span class="fhir-value">urn:ietf:rfc:3986</span></li><li><span class="fhir-attr">Value: </span><span class="fhir-value">https://lhncbc.nlm.nih.gov/RxNav/APIs/InteractionAPIs.html</span></li></ul></li></ul></li><li><span class="fhir-attr">Implicated: </span><ul><li><ul><li><span class="fhir-attr">Identifier: </span><ul><li><span class="fhir-attr">System: </span><span class="fhir-value">http://www.nlm.nih.gov/research/umls/rxnorm</span></li><li><span class="fhir-attr">Value: </span><span class="fhir-value">207106</span></li></ul></li><li><span class="fhir-attr">Display: </span><span class="fhir-value">fluconazole 50 MG Oral Tablet [Diflucan]</span></li></ul></li><li><ul><li><span class="fhir-attr">Identifier: </span><ul><li><span class="fhir-attr">System: </span><span class="fhir-value">http://www.nlm.nih.gov/research/umls/rxnorm</span></li><li><span class="fhir-attr">Value: </span><span class="fhir-value">656659</span></li></ul></li><li><span class="fhir-attr">Display: </span><span class="fhir-value">bosentan 125 MG Oral Tablet</span></li></ul></li></ul></li></ul></div>",
+      "div": "<div xmlns="http://www.w3.org/1999/xhtml" class="fhir-narrative"><ul><li><span class="fhir-attr">Code: </span><ul><li><span class="fhir-attr">Coding: </span><ul><li><ul><li><span class="fhir-attr">System: </span><span class="fhir-value">http://terminology.hl7.org/CodeSystem/v3-ActCode</span></li><li><span class="fhir-attr">Display: </span><span class="fhir-value">Drug Interaction Alert</span></li></ul></li></ul></li><li><span class="fhir-attr">Text: </span><span class="fhir-value">Drug Interaction Alert</span></li></ul></li><li><span class="fhir-attr">Author: </span><ul><li><span class="fhir-attr">Identifier: </span><ul><li><span class="fhir-attr">System: </span><span class="fhir-value">urn:ietf:rfc:3986</span></li><li><span class="fhir-attr">Value: </span><span class="fhir-value">https://lhncbc.nlm.nih.gov/RxNav/APIs/InteractionAPIs.html</span></li></ul></li></ul></li><li><span class="fhir-attr">Implicated: </span><ul><li><ul><li><span class="fhir-attr">Reference: </span><span class="fhir-value">Medication/medid-207106</span></li><li><span class="fhir-attr">Type: </span><span class="fhir-value">Medication</span></li><li><span class="fhir-attr">Display: </span><span class="fhir-value">fluconazole 50 MG Oral Tablet [Diflucan]</span></li></ul></li><li><ul><li><span class="fhir-attr">Reference: </span><span class="fhir-value">Medication/medid-656659</span></li><li><span class="fhir-attr">Type: </span><span class="fhir-value">Medication</span></li><li><span class="fhir-attr">Display: </span><span class="fhir-value">bosentan 125 MG Oral Tablet</span></li></ul></li></ul></li></ul></div>",
       "status": "generated",
     },
   },
@@ -513,17 +445,13 @@ exports[`drug-interactions-finder returns issues when there is drug interaction 
     "implicated": [
       {
         "display": "simvastatin 40 MG Oral Tablet [Zocor]",
-        "identifier": {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "value": "152923",
-        },
+        "reference": "Medication/medid-152923",
+        "type": "Medication",
       },
       {
         "display": "fluconazole 50 MG Oral Tablet [Diflucan]",
-        "identifier": {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "value": "207106",
-        },
+        "reference": "Medication/medid-207106",
+        "type": "Medication",
       },
     ],
     "reference": "NA",
@@ -531,7 +459,7 @@ exports[`drug-interactions-finder returns issues when there is drug interaction 
     "severity": "high",
     "status": "registered",
     "text": {
-      "div": "<div xmlns="http://www.w3.org/1999/xhtml" class="fhir-narrative"><ul><li><span class="fhir-attr">Code: </span><ul><li><span class="fhir-attr">Coding: </span><ul><li><ul><li><span class="fhir-attr">System: </span><span class="fhir-value">http://terminology.hl7.org/CodeSystem/v3-ActCode</span></li><li><span class="fhir-attr">Display: </span><span class="fhir-value">Drug Interaction Alert</span></li></ul></li></ul></li><li><span class="fhir-attr">Text: </span><span class="fhir-value">Drug Interaction Alert</span></li></ul></li><li><span class="fhir-attr">Author: </span><ul><li><span class="fhir-attr">Identifier: </span><ul><li><span class="fhir-attr">System: </span><span class="fhir-value">urn:ietf:rfc:3986</span></li><li><span class="fhir-attr">Value: </span><span class="fhir-value">https://lhncbc.nlm.nih.gov/RxNav/APIs/InteractionAPIs.html</span></li></ul></li></ul></li><li><span class="fhir-attr">Implicated: </span><ul><li><ul><li><span class="fhir-attr">Identifier: </span><ul><li><span class="fhir-attr">System: </span><span class="fhir-value">http://www.nlm.nih.gov/research/umls/rxnorm</span></li><li><span class="fhir-attr">Value: </span><span class="fhir-value">152923</span></li></ul></li><li><span class="fhir-attr">Display: </span><span class="fhir-value">simvastatin 40 MG Oral Tablet [Zocor]</span></li></ul></li><li><ul><li><span class="fhir-attr">Identifier: </span><ul><li><span class="fhir-attr">System: </span><span class="fhir-value">http://www.nlm.nih.gov/research/umls/rxnorm</span></li><li><span class="fhir-attr">Value: </span><span class="fhir-value">207106</span></li></ul></li><li><span class="fhir-attr">Display: </span><span class="fhir-value">fluconazole 50 MG Oral Tablet [Diflucan]</span></li></ul></li></ul></li></ul></div>",
+      "div": "<div xmlns="http://www.w3.org/1999/xhtml" class="fhir-narrative"><ul><li><span class="fhir-attr">Code: </span><ul><li><span class="fhir-attr">Coding: </span><ul><li><ul><li><span class="fhir-attr">System: </span><span class="fhir-value">http://terminology.hl7.org/CodeSystem/v3-ActCode</span></li><li><span class="fhir-attr">Display: </span><span class="fhir-value">Drug Interaction Alert</span></li></ul></li></ul></li><li><span class="fhir-attr">Text: </span><span class="fhir-value">Drug Interaction Alert</span></li></ul></li><li><span class="fhir-attr">Author: </span><ul><li><span class="fhir-attr">Identifier: </span><ul><li><span class="fhir-attr">System: </span><span class="fhir-value">urn:ietf:rfc:3986</span></li><li><span class="fhir-attr">Value: </span><span class="fhir-value">https://lhncbc.nlm.nih.gov/RxNav/APIs/InteractionAPIs.html</span></li></ul></li></ul></li><li><span class="fhir-attr">Implicated: </span><ul><li><ul><li><span class="fhir-attr">Reference: </span><span class="fhir-value">Medication/medid-152923</span></li><li><span class="fhir-attr">Type: </span><span class="fhir-value">Medication</span></li><li><span class="fhir-attr">Display: </span><span class="fhir-value">simvastatin 40 MG Oral Tablet [Zocor]</span></li></ul></li><li><ul><li><span class="fhir-attr">Reference: </span><span class="fhir-value">Medication/medid-207106</span></li><li><span class="fhir-attr">Type: </span><span class="fhir-value">Medication</span></li><li><span class="fhir-attr">Display: </span><span class="fhir-value">fluconazole 50 MG Oral Tablet [Diflucan]</span></li></ul></li></ul></li></ul></div>",
       "status": "generated",
     },
   },
