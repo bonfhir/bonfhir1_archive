@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.6](https://github.com/bonfhir/bonfhir/compare/@bonfhir/core@1.0.0-alpha.5...@bonfhir/core@1.0.0-alpha.6) (2023-01-30)
+
+
+### Features
+
+* **core:** :sparkles: add `buildTimelineOfResourcesWithPeriods` method ([f989f17](https://github.com/bonfhir/bonfhir/commit/f989f17ae1bc32dd478f69f79d9ffec50916d22f))
+* **core:** :sparkles: add `getIdFromReference` convenience method ([2c237f0](https://github.com/bonfhir/bonfhir/commit/2c237f0cc641e40778583ba581e6b846c8a8b9d4))
+
+
+
+
+
 # [1.0.0-alpha.5](https://github.com/bonfhir/bonfhir/compare/@bonfhir/core@1.0.0-alpha.4...@bonfhir/core@1.0.0-alpha.5) (2023-01-23)
 
 
