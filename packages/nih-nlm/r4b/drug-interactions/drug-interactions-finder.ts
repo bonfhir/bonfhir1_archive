@@ -1,4 +1,9 @@
-import { build, isFhirResource, utcNow } from "@bonfhir/core/r4b";
+import {
+  build,
+  buildReferenceFromResource,
+  isFhirResource,
+  utcNow,
+} from "@bonfhir/core/r4b";
 import {
   CodeSystemURIs,
   DetectedIssueCategory,
@@ -6,7 +11,6 @@ import {
   ObservationStatus,
 } from "@bonfhir/terminology/r4b";
 import { Bundle, DetectedIssue, Medication, Reference } from "fhir/r4";
-import { evaluate as fhirPath } from "fhirpath";
 import _ from "lodash";
 import {
   DrugInteractionListResponse,
@@ -69,16 +73,19 @@ export const DRUG_INTERACTIONS_LIST_API_URL =
 export async function findDrugInteractionsIssues(
   args: FindDrugInteractionsIssuesArgs
 ): Promise<FindDrugInteractionsIssuesResult> {
-  const rxcuis = _(getRxcuis(args)).uniq().compact().value();
+  const medicationsByRxcui = getMedicationsByRxcui(args);
 
-  if (rxcuis?.length < 2) {
+  if (Object.keys(medicationsByRxcui).length < 2) {
     throw new Error(
       "Unable to find drug interactions if the list of drugs is < 2."
     );
   }
 
   const drugInteractionsSearchParams = new URLSearchParams();
-  drugInteractionsSearchParams.set("rxcuis", rxcuis.join(" "));
+  drugInteractionsSearchParams.set(
+    "rxcuis",
+    Object.keys(medicationsByRxcui).join(" ")
+  );
   const fetchUrl = new URL(
     args.drugInteractionsListApiUrl || DRUG_INTERACTIONS_LIST_API_URL
   );
@@ -88,42 +95,69 @@ export async function findDrugInteractionsIssues(
     await fetch(fetchUrl.href)
   ).json()) as DrugInteractionListResponse;
 
+  let medicationArgs = isFindDrugInteractionsIssuesArgsMedications(args)
+    ? args.medications
+    : undefined;
+  if (isFhirResource("Bundle", medicationArgs)) {
+    medicationArgs =
+      _.compact(medicationArgs.entry?.map((x) => x.resource)) || [];
+  }
+
   return {
     issues: _.compact(
       (response.fullInteractionTypeGroup || []).flatMap((x) =>
-        (x.fullInteractionType || []).flatMap(
-          mapFullInteractionTypeToDetectedIssue
+        (x.fullInteractionType || []).flatMap((fullInteractionType) =>
+          mapFullInteractionTypeToDetectedIssue(
+            fullInteractionType,
+            medicationsByRxcui
+          )
         )
       )
     ),
   };
 }
 
-function getRxcuis(args: FindDrugInteractionsIssuesArgs): string[] {
+function getMedicationsByRxcui(
+  args: FindDrugInteractionsIssuesArgs
+): Record<string, Medication | undefined> {
   if (isFindDrugInteractionsIssuesArgsMedications(args)) {
-    const medicationBundle = isFhirResource("Bundle", args.medications)
-      ? args.medications
-      : build("Bundle", {
-          type: "collection",
-          entry: args.medications.map((resource) => ({
-            resource,
-          })),
-        });
-
-    return (
-      fhirPath(
-        medicationBundle,
-        `Bundle.select(entry.resource.code.coding).where(system = '${CodeSystemURIs.RxNorm}').select(code)`
-      ) || ([] as string[])
+    const medications = _.compact(
+      isFhirResource("Bundle", args.medications)
+        ? args.medications.entry?.map((x) => x.resource)
+        : args.medications
     );
-  }
 
-  return args.rxcuis;
+    return medications.reduce((acc, cur) => {
+      const rxNormCode = cur.code?.coding?.find(
+        (x) => x.system === CodeSystemURIs.RxNorm
+      );
+      if (rxNormCode?.code) {
+        acc[rxNormCode.code] = cur;
+      }
+      return acc;
+    }, {} as Record<string, Medication | undefined>);
+  } else {
+    return args.rxcuis.reduce((acc, cur) => {
+      acc[cur] = undefined;
+      return acc;
+    }, {} as Record<string, Medication | undefined>);
+  }
 }
 
 function mapFullInteractionTypeToDetectedIssue(
-  fullInteractionType: FullInteractionType
+  fullInteractionType: FullInteractionType,
+  medicationsByRxcui: Record<string, Medication | undefined>
 ): DetectedIssue[] {
+  const medications = _.compact(
+    (fullInteractionType.minConcept || []).map((concept) =>
+      concept.rxcui
+        ? {
+            medication: medicationsByRxcui[concept.rxcui],
+            display: concept.name,
+          }
+        : undefined
+    )
+  );
   return (fullInteractionType.interactionPair || []).map(
     (interactionPair): DetectedIssue =>
       build("DetectedIssue", {
@@ -138,15 +172,20 @@ function mapFullInteractionTypeToDetectedIssue(
           },
         },
         identifiedDateTime: utcNow().toISOString(),
-        implicated: (fullInteractionType.minConcept || []).map(
-          (concept): Reference => ({
-            display: concept.name,
-            identifier: {
-              system: CodeSystemURIs.RxNorm,
-              value: concept.rxcui,
-            },
-          })
-        ),
+        implicated: medications.length
+          ? medications.map((med) => ({
+              ...buildReferenceFromResource(med.medication),
+              display: med.display,
+            }))
+          : (fullInteractionType.minConcept || []).map(
+              (concept): Reference => ({
+                display: concept.name,
+                identifier: {
+                  system: CodeSystemURIs.RxNorm,
+                  value: concept.rxcui,
+                },
+              })
+            ),
         detail: interactionPair.description,
         reference: interactionPair.interactionConcept?.find(
           (x) => !!x.sourceConceptItem?.url
