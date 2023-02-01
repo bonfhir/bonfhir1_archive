@@ -14,6 +14,7 @@ services:
     volumes:
       - ${WORKSPACE_ROOT:-..}:/workspace:cached
       - devcontainer_node_modules:/workspace/node_modules
+      - devcontainer_sample_node_modules:/workspace/samples/ehr-sample-app/node_modules
       - devcontainer_command_history:/command_history
 
   medplum:
@@ -48,5 +49,6 @@ services:
 
 volumes:
   devcontainer_node_modules:
+  devcontainer_sample_node_modules:
   devcontainer_command_history:
   postgres_data:
