@@ -60,6 +60,7 @@
           "codegen",
           "core",
           "docs",
+          "ehr-sample-app",
           "medplum",
           "nih-nlm",
           "terminology",
@@ -118,7 +119,7 @@
     }
   },
 
-  "postStartCommand": "find . -name \"node_modules\" -exec sh -c 'sudo chown -R $USER:$GROUP \"$0\"' '{}' \\; && yarn install --silent && git config --global --add safe.directory /workspace",
+  "postStartCommand": "yarn install --silent && git config --global --add safe.directory /workspace",
 
   "remoteUser": "node"
 }
