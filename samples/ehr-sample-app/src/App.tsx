@@ -14,11 +14,16 @@ import dataProvider from "@pankod/refine-simple-rest";
 import { ChakraUIInferencer } from "@pankod/refine-inferencer/chakra-ui";
 import routerProvider from "@pankod/refine-react-router-v6";
 
+import { dataProvider as fhirDataProvider } from "./fhir-dataprovider";
+
 function App() {
   return (
     <ChakraProvider theme={refineTheme}>
       <Refine
-        dataProvider={dataProvider("https://api.fake-rest.refine.dev")}
+        dataProvider={{
+          default: dataProvider("https://api.fake-rest.refine.dev"),
+          fhir: fhirDataProvider("https://api.fake-rest.refine.dev"),
+        }}
         notificationProvider={notificationProvider()}
         ReadyPage={ReadyPage}
         catchAll={<ErrorComponent />}
@@ -31,6 +36,9 @@ function App() {
             show: ChakraUIInferencer,
             create: ChakraUIInferencer,
             canDelete: true,
+            options: {
+              providerName: "default",
+            },
           },
         ]}
         routerProvider={routerProvider}

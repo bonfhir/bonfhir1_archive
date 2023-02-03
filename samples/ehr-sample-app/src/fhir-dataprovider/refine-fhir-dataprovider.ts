@@ -5,7 +5,7 @@ import { DataProvider } from "@pankod/refine-core";
 import { stringify } from "@pankod/refine-simple-rest";
 import { axiosInstance, generateFilter, generateSort } from "./utils";
 
-import { buildFhirRestfulClientAdapter } from "@bonfhir/medplum/r4b/medplum-fhir-restful-client-adapter";
+import { buildFhirRestfulClientAdapter } from "@bonfhir/medplum/r4b";
 import { MedplumClient } from "@medplum/core";
 
 export const dataProvider = (
@@ -31,10 +31,11 @@ export const dataProvider = (
       sort
     );
 
-    const medplum = new MedplumClient({
+    const medplum: MedplumClient = new MedplumClient({
       baseUrl: process.env.MEDPLUM_SERVER_URL || "http://medplum:8103",
       fetch: fetch,
     });
+    // @ts-ignore
     const fhirClient = buildFhirRestfulClientAdapter(medplum);
 
     const bundle = await fhirClient.search("Patient");

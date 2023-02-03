@@ -6,6 +6,8 @@
     "hoistingLimits": "workspaces"
   },
   "dependencies": {
+    "@bonfhir/medplum": "workspace:^",
+    "@medplum/core": "^2.0.0",
     "@pankod/refine-chakra-ui": "^1.0.0",
     "@pankod/refine-cli": "^1.2.0",
     "@pankod/refine-core": "^3.18.0",
@@ -43,16 +45,9 @@
       "react-app/jest"
     ]
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not op_mini all"
+  ]
 }

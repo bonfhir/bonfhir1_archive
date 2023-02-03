@@ -63,6 +63,7 @@
           "ehr-sample-app",
           "medplum",
           "nih-nlm",
+          "refine-fhir-dataprovider",
           "terminology",
           "test-support"
         ],
