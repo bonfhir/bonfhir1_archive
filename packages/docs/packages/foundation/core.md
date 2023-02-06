@@ -249,6 +249,14 @@ resourceSearch("Account").status("active").type("patient")._tag({
 }).href;
 ```
 
+If any search parameter is missing from the builder, you can always drop down to a
+[Generic search](#generic-search-builder) using the `builder` property:
+
+```typescript
+resourceSearch("Organization").identifier("12345").builder.string("_count", 20)
+  .href;
+```
+
 ### Generic search builder
 
 In addition to the resource-typed searches, there is a generic search builder that exposes the fundamental [FHIR Search Parameter Types](https://hl7.org/fhir/search.html#ptypes)

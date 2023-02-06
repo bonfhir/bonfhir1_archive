@@ -27,7 +27,8 @@
     "@types/lodash": "^4",
     "husky": "^8.0.3",
     "lerna": "^6.3.0",
-    "nx": "^15.4.2"
+    "nx": "^15.4.2",
+    "process": "^0.11.10"
   },
   "dependencies": {
     "lodash": "^4.17.21"

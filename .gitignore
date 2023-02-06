@@ -14,3 +14,4 @@
 
 *.tsbuildinfo
 *.log
+.parcel-cache/*
