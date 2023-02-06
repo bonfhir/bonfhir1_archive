@@ -5,7 +5,7 @@ import type { {{type}} } from "fhir/r4";
 {{#each (fhirPath data.[profiles-resources] "Bundle/DomainResources")}}
 import type { {{type}} } from "fhir/r4";
 {{/each}}
-import { rand, randAlpha, randBoolean, randEmail, randPhoneNumber, randLastName, randFirstName, randNumber, randRecentDate, randAddress, randParagraph, randText, randUrl, randCompanyName, randText, randUuid } from "@ngneat/falso"
+import { rand, randAlpha, randBoolean, randEmail, randPhoneNumber, randLastName, randFirstName, randNumber, randRecentDate, randAddress, randParagraph, randPastDate, randText, randUrl, randCompanyName, randText, randUuid } from "@ngneat/falso"
 
 /**
  * Create a fake FHIR resource.
