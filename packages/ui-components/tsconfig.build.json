@@ -1,0 +1,7 @@
+{
+  "extends": "./tsconfig.json",
+  "exclude": ["**/*.test.ts", "**/*.test.tsx", "**/__fixtures__"],
+  "compilerOptions": {
+    "outDir": "dist"
+  }
+}
