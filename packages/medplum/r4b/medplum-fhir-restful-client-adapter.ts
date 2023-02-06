@@ -10,7 +10,7 @@ import {
   JSONPatchBody,
   ResourceType,
 } from "@bonfhir/core/r4b";
-import { MedplumClient } from "@medplum/core";
+import type { MedplumClient } from "@medplum/core";
 import { Bundle, CapabilityStatement, FhirResource } from "fhir/r4";
 
 /**
