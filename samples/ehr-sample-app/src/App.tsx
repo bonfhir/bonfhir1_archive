@@ -1,5 +1,9 @@
 import { FhirQueryProvider } from "@bonfhir/fhir-query/r4b";
 import { buildFhirRestfulClientAdapter } from "@bonfhir/medplum/r4b";
+import {
+  FhirUIComponentsBaseFormatter,
+  FhirUIComponentsProvider,
+} from "@bonfhir/ui-components/r4b";
 import { MedplumClient } from "@medplum/core";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import { ConfigProvider } from "antd";
@@ -44,11 +48,17 @@ export function App(): ReactElement | null {
     return null;
   }
 
+  const formatter = FhirUIComponentsBaseFormatter(
+    /* fhirLanguageCode: "en-Us", */
+  );
+
   return (
     <BrowserRouter>
       <FhirQueryProvider fhirClient={fhirClient}>
         <ConfigProvider>
-          <AppRoutes />
+          <FhirUIComponentsProvider formatter={formatter}>
+            <AppRoutes />
+          </FhirUIComponentsProvider>
         </ConfigProvider>
         <ReactQueryDevtools />
       </FhirQueryProvider>

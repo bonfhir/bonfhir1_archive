@@ -1,8 +1,21 @@
 import { ReactElement } from "react";
+import { useFhirUIComponentsContext } from "../../FhirUIComponentsContext";
+
+export interface FhirDate {
+  /**
+   * An object containing each section of valid FHIR Date.
+   *
+   * @see https://hl7.org/fhir/datatypes.html#date
+   */
+
+  year: string;
+  month: string | null | undefined;
+  day: string | null | undefined;
+}
 
 export interface FhirDateValueProps {
   /**
-   * A valid FHIR Date.
+   * A string representing a valid FHIR Date.
    *
    * @see https://hl7.org/fhir/datatypes.html#date
    */
@@ -14,13 +27,27 @@ export interface FhirDateValueProps {
  *
  * @see https://hl7.org/fhir/datatypes.html#date
  */
+const fhirDateRegexpCheck = new RegExp(
+  "^(?<year>[0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)" +
+    "(-(?<month>0[1-9]|1[0-2])" +
+    "(-(?<day>0[1-9]|[1-2][0-9]|3[0-1]))?)?$"
+);
 export function FhirDateValue({
   value,
 }: FhirDateValueProps): ReactElement | null {
+  const { formatter } = useFhirUIComponentsContext();
+
   if (!value) {
     return null;
   }
 
-  // TODO: properly parse and format date value.
-  return <>{value}</>;
+  const matchingData = value.trim().match(fhirDateRegexpCheck)?.groups;
+  if (!matchingData?.year)
+    throw new Error(
+      "Value does not match the fhir date format as described in `https://hl7.org/fhir/datatypes.html#date'"
+    );
+
+  const { year, month, day } = matchingData;
+
+  return <>{formatter.formatDate({ year, month, day })}</>;
 }
