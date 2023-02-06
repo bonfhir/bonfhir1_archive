@@ -10,5 +10,5 @@ RUN mkdir /command_history \
 
 # Touch node_modules mounted as volumes
 RUN mkdir -p /workspace/node_modules \
- && mkdir -p /workspace/samples/ehr-sample-app/node_modules \
+ && mkdir -p /workspace/packages/docs/node_modules \
  && chown -R node /workspace
