@@ -1,4 +1,5 @@
 import { useFhirSearch } from "@bonfhir/fhir-query/r4b";
+import { FhirDateValue } from "@bonfhir/ui-components/r4b";
 import { Typography } from "antd";
 import { ReactElement } from "react";
 import { Link } from "react-router-dom";
@@ -19,7 +20,8 @@ export function Patients(): ReactElement | null {
       <ul>
         {patientsQuery.data?.nav.type("Patient").map((patient) => (
           <li key={patient.id}>
-            <Link to={`/patients/${patient.id}`}>{patient.id}</Link>
+            <Link to={`/patients/${patient.id}`}>{patient.id}</Link> (DOB:
+            <FhirDateValue value={patient.birthDate} />)
           </li>
         ))}
       </ul>

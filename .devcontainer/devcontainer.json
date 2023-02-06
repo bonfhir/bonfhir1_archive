@@ -65,7 +65,8 @@
           "medplum",
           "nih-nlm",
           "terminology",
-          "test-support"
+          "test-support",
+          "ui-components"
         ],
         "conventionalCommits.showEditor": true,
         "cSpell.words": [
