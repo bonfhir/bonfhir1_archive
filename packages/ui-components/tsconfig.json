@@ -1,7 +1,7 @@
 {
   "extends": "@bonfhir/typescript-config/tsconfig.json",
   "include": ["**/*.ts", "**/*.tsx"],
-  "exclude": ["**/dist"],
+  "exclude": ["**/dist", "**/dist-ladle"],
   "compilerOptions": {
     "rootDir": ".",
     "jsx": "react-jsx"
