@@ -220,15 +220,18 @@ return (
 Return a [Query](https://tanstack.com/query/latest/docs/react/guides/queries) for a
 [search](https://hl7.org/fhir/http.html#search) request.
 
-This version of the search is the one to choose if you want total control over pagination, as it does not attempt to
-control it. However, it allows you to perform the initial query, and to pass any subsequent
-[link](https://hl7.org/fhir/bundle-definitions.html#Bundle.link) url to navigate across pages.
+This version [handles pagination properly](https://tanstack.com/query/latest/docs/react/guides/paginated-queries),
+but requires the parent component to manage the pagination state.
 
 ```typescript
 import { useFhirSearch } from "@bonfhir/fhir-query/r4b";
 
+// You can substitute this for a URL query parameters (e.g. useSearchParams), this way you have stable/shareable URLs.
+const [pageUrl, setPageUrl] = useState("");
+
 const organizationSearchQuery = useFhirSearch("Organization", (search) =>
-  search.type("govt")._count(20)._sort("name")
+  search.type("govt")._count(20)._sort("name"),
+  pageUrl
 );
 
 if (organizationSearchQuery.isInitialLoading) {
@@ -245,37 +248,43 @@ return (
       <li>{org.name}</li>
     ))}
   </ul>
+  {organizationSearchQuery.data?.hasPreviousPage && <button onClick={() => setPageUrl(organizationSearchQuery.data?.previousPageUrl)}>Previous</button>}
+  {organizationSearchQuery.data?.hasNextPage && <button onClick={() => setPageUrl(organizationSearchQuery.data?.nextPageUrl)}>Next</button>}
 );
 ```
 
-Search parameters can be:
+### `useFhirInfiniteSearch`
 
-- a [`resourceSearch` builder](/packages/foundation/core#resources-search)
-- a raw [FHIR Search](https://hl7.org/fhir/search.html) string
-- or an absolute URL returned by a previous search execution to navigate across pages
+Return a [Infinite Query](https://tanstack.com/query/latest/docs/react/guides/infinite-queries) for a
+[search](https://hl7.org/fhir/http.html#search) request.
 
-Example pagination usage:
+This search version is for infinite search / scroll behavior.
 
 ```typescript
+import { useFhirInfiniteSearch } from "@bonfhir/fhir-query/r4b";
 
-// You can substitute this for a URL query parameters, this way you have stable/shareable URLs
-const [pageUrl, setPageUrl] = useState("");
 
-const organizationSearchQuery = useFhirSearch("Organization", (search) =>
-  pageUrl || search._count(20)._sort("name")
+const organizationSearchQuery = useFhirInfiniteSearch("Organization", (search) =>
+  search.type("govt")._count(20)._sort("name"),
 );
 
-const nextUrl = nextUrl(organizationSearchQuery.data?.bundle);
+if (organizationSearchQuery.isInitialLoading) {
+  return <div>Loading...</div>;
+}
+
+if (organizationSearchQuery.isError) {
+  return <div>{organizationSearchQuery.error?.message}</div>;
+}
 
 return (
   <ul>
-    {organizationSearchQuery.data?.nav.type("Organization").map((org) => (
+    {organizationSearchQuery.data?.pages?.flatMap(page => page.nav.type("Organization")).map((org) => (
       <li>{org.name}</li>
     ))}
   </ul>
-  {nextUrl && <button onClick={() => setPageUrl(nextUrl)}>Next</button>}
+  // Might want to tie it to scroll behavior instead
+  {organizationSearchQuery.hasNextPage && <button onClick={() => organizationSearchQuery.fetchNextPage()}>Fetch Next</button>}
 );
-
 ```
 
 ### `useFhirCapabilities`

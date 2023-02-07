@@ -395,12 +395,12 @@ export async function searchAllPages<TResource extends ResourceType>(
   let currentSearchBundle: Bundle<ExtractResource<TResource>> | undefined =
     undefined;
 
-  while (!currentSearchBundle || nextUrl(currentSearchBundle)) {
+  while (!currentSearchBundle || linkUrl(currentSearchBundle, "next")) {
     if (currentSearchBundle) {
       currentSearchBundle = await client.get<
         Bundle<ExtractResource<TResource>>
         // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-      >(nextUrl(currentSearchBundle)!);
+      >(linkUrl(currentSearchBundle, "next")!);
     } else {
       currentSearchBundle = await client.search<TResource>(type, search);
     }
@@ -412,8 +412,11 @@ export async function searchAllPages<TResource extends ResourceType>(
 }
 
 /**
- * Return the next URL for a search bundle, or undefined if there is none.
+ * Return the url associated with a link, characterized by a relation.
  */
-export function nextUrl(bundle: Bundle): string | undefined {
-  return bundle.link?.find((link) => link.relation === "next")?.url;
+export function linkUrl(
+  bundle: Bundle,
+  relation: "self" | "first" | "next" | "previous"
+) {
+  return bundle.link?.find((link) => link.relation === relation)?.url;
 }
