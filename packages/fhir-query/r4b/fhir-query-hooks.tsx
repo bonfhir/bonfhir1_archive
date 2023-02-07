@@ -5,11 +5,15 @@ import {
   ExtractSearchBuilder,
   FhirRestfulClient,
   JSONPatchBody,
+  linkUrl,
   resourceSearch,
   ResourceType,
 } from "@bonfhir/core/r4b";
 import {
   QueryClient,
+  useInfiniteQuery,
+  UseInfiniteQueryOptions,
+  UseInfiniteQueryResult,
   useMutation,
   UseMutationOptions,
   UseMutationResult,
@@ -61,8 +65,18 @@ export const FhirQueryKeys = {
   search: (
     type: ResourceType,
     parameters?: string | null | undefined,
+    pageUrl?: string | null | undefined,
     options?: Parameters<FhirRestfulClient["search"]>[2] | null | undefined
-  ) => [type, "search", parameters, options] as const,
+  ) => [type, "search", parameters, pageUrl, options] as const,
+
+  /**
+   * Get the query keys for a infinite search request
+   */
+  infiniteSearch: (
+    type: ResourceType,
+    parameters?: string | null | undefined,
+    options?: Parameters<FhirRestfulClient["search"]>[2] | null | undefined
+  ) => [type, "infiniteSearch", parameters, options] as const,
 
   /**
    * Lookup the query cache and try to find an existing instance of a resource stored in a search request,
@@ -108,6 +122,7 @@ export const FhirQueryKeys = {
   ) => {
     queryClient.invalidateQueries([type, id]);
     queryClient.invalidateQueries([type, "search"]);
+    queryClient.invalidateQueries([type, "infiniteSearch"]);
   },
 };
 
@@ -122,23 +137,22 @@ export function useFhirRead<TResource extends ResourceType>(
   options?:
     | {
         fhir?: Parameters<FhirRestfulClient["read"]>[2];
-        query:
+        query?:
           | Omit<
               UseQueryOptions<
-                ExtractResource<TResource> | undefined,
+                ExtractResource<TResource>,
                 unknown,
-                ExtractResource<TResource> | undefined,
+                ExtractResource<TResource>,
                 ReturnType<typeof FhirQueryKeys["read"]>
               >,
               "initialData" | "queryKey" | "queryFn"
             >
           | null
           | undefined;
-        throwIfNotFound?: boolean | null | undefined;
       }
     | null
     | undefined
-): UseQueryResult<ExtractResource<TResource> | undefined> {
+): UseQueryResult<ExtractResource<TResource>> {
   const fhirQueryContext = useFhirQueryContext();
 
   const queryFn = useCallback(async () => {
@@ -147,7 +161,7 @@ export function useFhirRead<TResource extends ResourceType>(
       id,
       options?.fhir
     );
-    if (!resource && options?.throwIfNotFound) {
+    if (!resource) {
       throw new Error(`${type} with id ${id} cannot be found.`);
     }
 
@@ -162,7 +176,7 @@ export function useFhirRead<TResource extends ResourceType>(
     ...options?.query,
     queryKey: FhirQueryKeys.read(type, id, options?.fhir),
     queryFn,
-  } as Omit<UseQueryOptions<ExtractResource<TResource> | undefined, unknown, ExtractResource<TResource> | undefined, ReturnType<typeof FhirQueryKeys["read"]>>, "initialData">);
+  } as Omit<UseQueryOptions<ExtractResource<TResource>, unknown, ExtractResource<TResource>, ReturnType<typeof FhirQueryKeys["read"]>>, "initialData">);
 }
 
 /**
@@ -177,23 +191,22 @@ export function useFhirVRead<TResource extends ResourceType>(
   options?:
     | {
         fhir?: Parameters<FhirRestfulClient["vread"]>[3];
-        query:
+        query?:
           | Omit<
               UseQueryOptions<
-                ExtractResource<TResource> | undefined,
+                ExtractResource<TResource>,
                 unknown,
-                ExtractResource<TResource> | undefined,
+                ExtractResource<TResource>,
                 ReturnType<typeof FhirQueryKeys["vread"]>
               >,
               "initialData" | "queryKey" | "queryFn"
             >
           | null
           | undefined;
-        throwIfNotFound?: boolean | null | undefined;
       }
     | null
     | undefined
-): UseQueryResult<ExtractResource<TResource> | undefined> {
+): UseQueryResult<ExtractResource<TResource>> {
   const fhirQueryContext = useFhirQueryContext();
 
   const queryFn = useCallback(() => {
@@ -203,7 +216,7 @@ export function useFhirVRead<TResource extends ResourceType>(
       vid,
       options?.fhir
     );
-    if (!resource && options?.throwIfNotFound) {
+    if (!resource) {
       throw new Error(
         `${type} with id ${id} and version ${vid} cannot be found.`
       );
@@ -215,7 +228,7 @@ export function useFhirVRead<TResource extends ResourceType>(
     ...options?.query,
     queryKey: FhirQueryKeys.vread(type, id, vid, options?.fhir),
     queryFn,
-  });
+  } as Omit<UseQueryOptions<ExtractResource<TResource>, unknown, ExtractResource<TResource>, ReturnType<typeof FhirQueryKeys["vread"]>>, "initialData">);
 }
 
 export type BundleResult<
@@ -237,7 +250,7 @@ export function useFhirHistory<TResource extends ResourceType>(
   options?:
     | {
         fhir?: Parameters<FhirRestfulClient["history"]>[2];
-        query:
+        query?:
           | Omit<
               UseQueryOptions<
                 BundleResult<ExtractResource<TResource>>,
@@ -276,21 +289,43 @@ export function useFhirHistory<TResource extends ResourceType>(
   });
 }
 
+export type PaginatedBundleResult<
+  PrimaryResourceType extends FhirResource,
+  SecondaryResourceType extends FhirResource = PrimaryResourceType
+> = BundleResult<PrimaryResourceType, SecondaryResourceType> & {
+  nextPageUrl: string | undefined;
+
+  /** true if there is a next page. */
+  hasNextPage: boolean;
+
+  previousPageUrl: string | undefined;
+
+  /**
+   * true if there is a previous page.
+   * This is true if the bundle has as previous link, or we are in a subsequent page.
+   * In other words, this is not a guarantee that previousUrl is not undefined.
+   */
+  hasPreviousPage: boolean;
+};
+
 /**
  * Return a [Query](https://tanstack.com/query/latest/docs/react/guides/queries) for a search request.
  *
  * Returns both the actual `Bundle`, and a configured `BundleNavigator` to help with manipulating the bundle.
  *
- * @param parameters - the search parameters can either be:
- *  - a function that manipulates a `resourceSearch` for the primary resource type
- *  - a search parameters string
- *  - or an absolute URL that can be used to retrieve links in subsequent requests (a.k.a. handling pagination)
+ * @param parameters - the initial search parameters can either be a function that manipulates a `resourceSearch` for the
+ * primary resource type or a search parameters string
+ *
+ * @param pageUrl - a page url extracted from previous bundle to navigate to a subsequent page.
  *
  * @see https://hl7.org/fhir/http.html#search
  *
  * @example
+ *  const [pageUrl, setPageUrl] = useState("");
+ *  const patientQuery = useFhirSearch("Patient", (search) => search.name("John Doe")._sort("-organization"), pageUrl);
  *
- *  const patientQuery = useFhirSearch("Patient", pageUrl || (search) => search.name("John Doe")._sort("-organization"));
+ *  // To paginate
+ *  setPageUrl(patientQuery.data?.nextPageUrl);
  */
 export function useFhirSearch<
   TResource extends ResourceType,
@@ -304,10 +339,11 @@ export function useFhirSearch<
     | string
     | null
     | undefined,
+  pageUrl?: string | null | undefined,
   options?:
     | {
         fhir?: Parameters<FhirRestfulClient["search"]>[2];
-        query:
+        query?:
           | Omit<
               UseQueryOptions<
                 BundleResult<ExtractResource<TResource>, SecondaryResourceType>,
@@ -315,7 +351,7 @@ export function useFhirSearch<
                 BundleResult<ExtractResource<TResource>, SecondaryResourceType>,
                 ReturnType<typeof FhirQueryKeys["search"]>
               >,
-              "initialData" | "queryKey" | "queryFn"
+              "initialData" | "queryKey" | "queryFn" | "keepPreviousData"
             >
           | null
           | undefined;
@@ -332,14 +368,117 @@ export function useFhirSearch<
       ? extractSearchBuilderAsString(parameters(resourceSearch(type)))
       : parameters;
 
-  const queryFn = useCallback(async () => {
-    if (
-      finalParameters?.startsWith("http://") ||
-      finalParameters?.startsWith("https://")
-    ) {
+  const queryFn = useCallback(async (): Promise<
+    PaginatedBundleResult<ExtractResource<TResource>, SecondaryResourceType>
+  > => {
+    if (pageUrl) {
       const bundle = await fhirQueryContext.fhirClient.get<
         Bundle<ExtractResource<TResource>>
-      >(finalParameters);
+      >(pageUrl);
+      const nextPageUrl = linkUrl(bundle, "next");
+      const previousPageUrl = linkUrl(bundle, "previous");
+
+      return {
+        bundle,
+        nav: bundleNavigator<ExtractResource<TResource>, SecondaryResourceType>(
+          bundle
+        ),
+        nextPageUrl,
+        hasNextPage: !!nextPageUrl,
+        previousPageUrl,
+        hasPreviousPage: !!previousPageUrl || !!pageUrl,
+      };
+    }
+
+    const bundle = await fhirQueryContext.fhirClient.search(
+      type,
+      finalParameters,
+      options?.fhir
+    );
+    const nextPageUrl = linkUrl(bundle, "next");
+    const previousPageUrl = linkUrl(bundle, "previous");
+
+    return {
+      bundle,
+      nav: bundleNavigator<ExtractResource<TResource>, SecondaryResourceType>(
+        bundle
+      ),
+      nextPageUrl,
+      hasNextPage: !!nextPageUrl,
+      previousPageUrl,
+      hasPreviousPage: !!previousPageUrl || !!pageUrl,
+    };
+  }, [
+    fhirQueryContext.fhirClient,
+    type,
+    finalParameters,
+    pageUrl,
+    options?.fhir,
+  ]);
+
+  return useQuery({
+    ...options?.query,
+    queryKey: FhirQueryKeys.search(
+      type,
+      finalParameters,
+      pageUrl,
+      options?.fhir
+    ),
+    queryFn,
+    keepPreviousData: true,
+  });
+}
+
+export function useFhirInfiniteSearch<
+  TResource extends ResourceType,
+  SecondaryResourceType extends FhirResource = ExtractResource<TResource>
+>(
+  type: TResource,
+  parameters?:
+    | ((
+        search: ExtractSearchBuilder<TResource>
+      ) => ExtractSearchBuilder<TResource> | string)
+    | string
+    | null
+    | undefined,
+  options?:
+    | {
+        fhir?: Parameters<FhirRestfulClient["search"]>[2];
+        query?:
+          | Omit<
+              UseInfiniteQueryOptions<
+                BundleResult<ExtractResource<TResource>, SecondaryResourceType>,
+                unknown,
+                BundleResult<ExtractResource<TResource>, SecondaryResourceType>,
+                ReturnType<typeof FhirQueryKeys["infiniteSearch"]>
+              >,
+              | "initialData"
+              | "queryKey"
+              | "queryFn"
+              | "keepPreviousData"
+              | "getNextPageParam"
+            >
+          | null
+          | undefined;
+      }
+    | null
+    | undefined
+): UseInfiniteQueryResult<
+  BundleResult<ExtractResource<TResource>, SecondaryResourceType>
+> {
+  const fhirQueryContext = useFhirQueryContext();
+
+  const finalParameters =
+    typeof parameters === "function"
+      ? extractSearchBuilderAsString(parameters(resourceSearch(type)))
+      : parameters;
+
+  const queryFn = async (pageUrl: string) => {
+    if (pageUrl) {
+      const bundle = await fhirQueryContext.fhirClient.get<
+        Bundle<ExtractResource<TResource>>
+      >(pageUrl);
+
       return {
         bundle,
         nav: bundleNavigator<ExtractResource<TResource>, SecondaryResourceType>(
@@ -360,13 +499,23 @@ export function useFhirSearch<
         bundle
       ),
     };
-  }, [fhirQueryContext.fhirClient, type, finalParameters, options?.fhir]);
+  };
 
-  return useQuery({
+  return useInfiniteQuery({
     ...options?.query,
-    queryKey: FhirQueryKeys.search(type, finalParameters, options?.fhir),
+    queryKey: FhirQueryKeys.infiniteSearch(
+      type,
+      finalParameters,
+      options?.fhir
+    ),
     queryFn,
-  });
+    getNextPageParam: (lastPage: BundleResult<FhirResource>) =>
+      linkUrl(lastPage.bundle, "next"),
+    getPreviousPageParam: (lastPage: BundleResult<FhirResource>) =>
+      linkUrl(lastPage.bundle, "previous"),
+    keepPreviousData: true,
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  } as any);
 }
 
 function extractSearchBuilderAsString<TResourceType extends ResourceType>(

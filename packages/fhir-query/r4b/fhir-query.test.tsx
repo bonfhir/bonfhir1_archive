@@ -73,6 +73,30 @@ describe("fhir-query", () => {
     });
   });
 
+  it("reads a resource and error if not found", async () => {
+    jest.spyOn(console, "error").mockImplementation(() => {
+      // React query console.error the error. we silence it for the test.
+    });
+    const wrapper = ({ children }: PropsWithChildren) => (
+      <FhirQueryProvider
+        fhirClient={fhirClient}
+        queryClientConfig={{ defaultOptions: { queries: { retry: false } } }}
+      >
+        {children}
+      </FhirQueryProvider>
+    );
+
+    const { result } = renderHook(
+      () => useFhirRead("Patient", "b71f99b0-0e01-4659-a26d-d0de00ece8f0"),
+      { wrapper }
+    );
+
+    await waitFor(() => {
+      expect(result.current.isError).toBeTruthy();
+      expect((result.current.error as Error).message).toContain("found");
+    });
+  });
+
   it("vread a resource", async () => {
     const wrapper = ({ children }: PropsWithChildren) => (
       <FhirQueryProvider fhirClient={fhirClient}>{children}</FhirQueryProvider>
@@ -94,6 +118,34 @@ describe("fhir-query", () => {
         resourceType: "Patient",
         id: "a942b3d5-19bc-4959-8b5d-f9aedd790a94",
       });
+    });
+  });
+
+  it("vreads a resource and error if not found", async () => {
+    jest.spyOn(console, "error").mockImplementation(() => {
+      // React query console.error the error. we silence it for the test.
+    });
+    const wrapper = ({ children }: PropsWithChildren) => (
+      <FhirQueryProvider
+        fhirClient={fhirClient}
+        queryClientConfig={{ defaultOptions: { queries: { retry: false } } }}
+      >
+        {children}
+      </FhirQueryProvider>
+    );
+
+    const { result } = renderHook(
+      () =>
+        useFhirVRead(
+          "Patient",
+          "b71f99b0-0e01-4659-a26d-d0de00ece8f0",
+          "ffdded8c-94f0-42a6-b8d5-2b4ad377a716"
+        ),
+      { wrapper }
+    );
+
+    await waitFor(() => {
+      expect(result.current.isError).toBeTruthy();
     });
   });
 
