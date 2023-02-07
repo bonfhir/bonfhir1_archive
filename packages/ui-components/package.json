@@ -6,8 +6,8 @@
   "license": "APACHE-2.0",
   "type": "module",
   "scripts": {
-    "build": "yarn clean && tsc --project tsconfig.build.json",
-    "build:ladle": "ladle build --stories='./**/*.stories.tsx' --outDir dist-ladle/",
+    "build": "yarn clean && tsc --project tsconfig.build.json && yarn build:ladle",
+    "build:ladle": "ladle build --stories='./**/*.stories.tsx' --outDir dist-ladle/ --base /ui-components/dist-ladle",
     "check": "prettier --check ./**/*.tsx && eslint ./**/*.tsx && tsc --noEmit",
     "clean": "rimraf dist/ dist-ladle/",
     "dev": "ladle serve --stories='./**/*.stories.tsx'",
