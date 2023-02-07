@@ -253,6 +253,40 @@ return (
 );
 ```
 
+### `useFhirInfiniteSearch`
+
+Return a [Infinite Query](https://tanstack.com/query/latest/docs/react/guides/infinite-queries) for a
+[search](https://hl7.org/fhir/http.html#search) request.
+
+This search version is for infinite search / scroll behavior.
+
+```typescript
+import { useFhirInfiniteSearch } from "@bonfhir/fhir-query/r4b";
+
+
+const organizationSearchQuery = useFhirInfiniteSearch("Organization", (search) =>
+  search.type("govt")._count(20)._sort("name"),
+);
+
+if (organizationSearchQuery.isInitialLoading) {
+  return <div>Loading...</div>;
+}
+
+if (organizationSearchQuery.isError) {
+  return <div>{organizationSearchQuery.error?.message}</div>;
+}
+
+return (
+  <ul>
+    {organizationSearchQuery.data?.pages?.flatMap(page => page.nav.type("Organization")).map((org) => (
+      <li>{org.name}</li>
+    ))}
+  </ul>
+  // Might want to tie it to scroll behavior instead
+  {organizationSearchQuery.hasNextPage && <button onClick={() => organizationSearchQuery.fetchNextPage()}>Fetch Next</button>}
+);
+```
+
 ### `useFhirCapabilities`
 
 Return a [Query](https://tanstack.com/query/latest/docs/react/guides/queries) for a
