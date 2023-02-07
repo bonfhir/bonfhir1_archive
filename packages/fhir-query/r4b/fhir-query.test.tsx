@@ -206,6 +206,7 @@ describe("fhir-query", () => {
       () =>
         useFhirSearch(
           "Patient",
+          (search) => search._count(2),
           `${
             process.env.MEDPLUM_SERVER_URL || "http://medplum:8103"
           }/fhir/R4/Patient?_count=2&_offset=2`

@@ -11,6 +11,7 @@ import {
 } from "@bonfhir/core/r4b";
 import {
   QueryClient,
+  QueryKey,
   useInfiniteQuery,
   UseInfiniteQueryOptions,
   UseInfiniteQueryResult,
@@ -90,11 +91,36 @@ export const FhirQueryKeys = {
     type: ResourceType,
     id: string
   ): ExtractResource<ResourceType> | undefined => {
-    return _(queryClient.getQueriesData([type, "search"]) || [])
-      .flatMap(([, result]) =>
-        (result as BundleResult<FhirResource>).nav.type(type)
-      )
-      .find((resource) => resource.id === id);
+    try {
+      const inSearch = _(queryClient.getQueriesData([type, "search"]) || [])
+        .flatMap(([, result]) =>
+          (result as BundleResult<FhirResource>).nav.type(type)
+        )
+        .find((resource) => resource.id === id);
+      if (inSearch) {
+        return inSearch;
+      }
+
+      return (
+        _(queryClient.getQueriesData([type, "infiniteSearch"]) || [])
+          .flatMap(
+            ([, pages]: [
+              QueryKey,
+              { pages: Array<BundleResult<FhirResource>> }
+            ]) => pages.pages
+          )
+          .flatMap((data: BundleResult<FhirResource>) => data.nav.type(type))
+          // We have a typing bug here with lodash - thus this horrible construct for any.
+          .find(
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
+            ((resource: FhirResource) => resource.id === id) as any
+          ) as unknown as ExtractResource<ResourceType> | undefined
+      );
+    } catch (error) {
+      // Just in case the cache is corrupted.
+      console.error(error);
+      return undefined;
+    }
   },
 
   /**
@@ -346,9 +372,15 @@ export function useFhirSearch<
         query?:
           | Omit<
               UseQueryOptions<
-                BundleResult<ExtractResource<TResource>, SecondaryResourceType>,
+                PaginatedBundleResult<
+                  ExtractResource<TResource>,
+                  SecondaryResourceType
+                >,
                 unknown,
-                BundleResult<ExtractResource<TResource>, SecondaryResourceType>,
+                PaginatedBundleResult<
+                  ExtractResource<TResource>,
+                  SecondaryResourceType
+                >,
                 ReturnType<typeof FhirQueryKeys["search"]>
               >,
               "initialData" | "queryKey" | "queryFn" | "keepPreviousData"
@@ -359,7 +391,7 @@ export function useFhirSearch<
     | null
     | undefined
 ): UseQueryResult<
-  BundleResult<ExtractResource<TResource>, SecondaryResourceType>
+  PaginatedBundleResult<ExtractResource<TResource>, SecondaryResourceType>
 > {
   const fhirQueryContext = useFhirQueryContext();
 
@@ -377,6 +409,7 @@ export function useFhirSearch<
       >(pageUrl);
       const nextPageUrl = linkUrl(bundle, "next");
       const previousPageUrl = linkUrl(bundle, "previous");
+      const firstPageUrl = linkUrl(bundle, "first");
 
       return {
         bundle,
@@ -385,8 +418,9 @@ export function useFhirSearch<
         ),
         nextPageUrl,
         hasNextPage: !!nextPageUrl,
-        previousPageUrl,
-        hasPreviousPage: !!previousPageUrl || !!pageUrl,
+        previousPageUrl:
+          previousPageUrl === firstPageUrl ? undefined : previousPageUrl,
+        hasPreviousPage: true,
       };
     }
 
@@ -406,7 +440,7 @@ export function useFhirSearch<
       nextPageUrl,
       hasNextPage: !!nextPageUrl,
       previousPageUrl,
-      hasPreviousPage: !!previousPageUrl || !!pageUrl,
+      hasPreviousPage: !!pageUrl,
     };
   }, [
     fhirQueryContext.fhirClient,
@@ -473,11 +507,11 @@ export function useFhirInfiniteSearch<
       ? extractSearchBuilderAsString(parameters(resourceSearch(type)))
       : parameters;
 
-  const queryFn = async (pageUrl: string) => {
-    if (pageUrl) {
+  const queryFn = async (data: { pageParam: string }) => {
+    if (data?.pageParam) {
       const bundle = await fhirQueryContext.fhirClient.get<
         Bundle<ExtractResource<TResource>>
-      >(pageUrl);
+      >(data.pageParam);
 
       return {
         bundle,
@@ -511,8 +545,6 @@ export function useFhirInfiniteSearch<
     queryFn,
     getNextPageParam: (lastPage: BundleResult<FhirResource>) =>
       linkUrl(lastPage.bundle, "next"),
-    getPreviousPageParam: (lastPage: BundleResult<FhirResource>) =>
-      linkUrl(lastPage.bundle, "previous"),
     keepPreviousData: true,
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
   } as any);
