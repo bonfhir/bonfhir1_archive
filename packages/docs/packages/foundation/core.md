@@ -213,7 +213,7 @@ The `searchAllPages` utility can be used to retrieve _all_ pages for a given sea
 > Be careful as this may be a very long / very expensive operation.
 
 ```typescript
-import { searchAllPages, resourceSearch, nextUrl } from "@bonfhir/core/r4b";
+import { searchAllPages, resourceSearch, linkUrl } from "@bonfhir/core/r4b";
 
 const allPatients = await searchAllPages(
   client,
@@ -224,7 +224,9 @@ const allPatients = await searchAllPages(
 // For paginating yourself
 const searchResult = await client.search("Patient");
 const searchPatientPage2 =
-  nextUrl(searchResult) && (await client.get(nextUrl(searchResult)));
+  linkUrl(searchResult, "next") &&
+  (await client.get(linkUrl(searchResult, "next")));
+const backPage = linkUrl(searchPatientPage2, "previous");
 ```
 
 ## FHIR Search
@@ -331,7 +333,7 @@ All indices are created lazily, so it is very cheap to create / return a `bundle
 The `buildTimelineOfResourcesWithPeriods` can compute blocks of time where resources can be placed, assuming you can project them into a `Period`.
 
 ```typescript
-import { buid, buildTimelineOfResourcesWithPeriods } from "@bonfhir/core/r4b";
+import { build, buildTimelineOfResourcesWithPeriods } from "@bonfhir/core/r4b";
 
 const resources = [
   build("MedicationDispense", {
