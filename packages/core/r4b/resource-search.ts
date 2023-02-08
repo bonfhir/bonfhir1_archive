@@ -46043,6 +46043,33 @@ class ResourceSearchBuilderList {
   }
 
   /**
+   * Business identifier
+   */
+  identifier(
+    value:
+      | {
+          system?: string | null | undefined;
+          code?: string | null | undefined;
+          value?: string | null | undefined;
+        }
+      | string
+      | Array<
+          | {
+              system?: string | null | undefined;
+              code?: string | null | undefined;
+              value?: string | null | undefined;
+            }
+          | string
+        >
+      | null
+      | undefined,
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderList {
+    this.builder.token("identifier", value, modifier);
+    return this;
+  }
+
+  /**
    * Actual entry
    */
   item(
@@ -46208,6 +46235,8 @@ export type SortOrderList =
   | "-_type"
   | "empty-reason"
   | "-empty-reason"
+  | "identifier"
+  | "-identifier"
   | "item"
   | "-item"
   | "notes"
