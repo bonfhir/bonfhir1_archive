@@ -30,6 +30,10 @@ export default <CommandModule<unknown, Config>>{
       describe:
         "Command(s) to run for each file after generation. Use the token %file% to reference the file, or %files% to reference all files.",
     },
+    header: {
+      type: "string",
+      describe: "Header information to add to the top of the generated files.",
+    },
     helpers: {
       type: "string",
       describe: "Path to a js file to load as Handlebars helpers.",
