@@ -110,6 +110,17 @@ class ResourceSearchBuilder{{type}} {
     return this;
   }
 
+  /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   * 
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(value: "none" | "estimate" | "accurate"): ResourceSearchBuilder{{type}} {
+    this.builder.string("_total", value, null, "replace");
+    return this;
+  }
+
   {{#each (uniqBy (fhirPath @root.data.[search-parameters] (replace "Bundle.entry.select(resource).ofType(SearchParameter).where(base='DomainResource' or base='Resource' or base='CURRENTYPE')" "CURRENTYPE" type)) "code")}}
   {{#if (notIn type "composite,special")}}
     /**
