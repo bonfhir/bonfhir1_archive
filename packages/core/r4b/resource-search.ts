@@ -393,6 +393,19 @@ class ResourceSearchBuilderAccount {
   }
 
   /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderAccount {
+    this.builder.string("_total", value, null, "replace");
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -954,6 +967,19 @@ class ResourceSearchBuilderActivityDefinition {
    */
   _summary(value: SummaryValue): ResourceSearchBuilderActivityDefinition {
     this.builder.string("_summary", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderActivityDefinition {
+    this.builder.string("_total", value, null, "replace");
     return this;
   }
 
@@ -1801,6 +1827,19 @@ class ResourceSearchBuilderAdministrableProductDefinition {
   }
 
   /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderAdministrableProductDefinition {
+    this.builder.string("_total", value, null, "replace");
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -2394,6 +2433,19 @@ class ResourceSearchBuilderAdverseEvent {
    */
   _summary(value: SummaryValue): ResourceSearchBuilderAdverseEvent {
     this.builder.string("_summary", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderAdverseEvent {
+    this.builder.string("_total", value, null, "replace");
     return this;
   }
 
@@ -3101,6 +3153,19 @@ class ResourceSearchBuilderAllergyIntolerance {
   }
 
   /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderAllergyIntolerance {
+    this.builder.string("_total", value, null, "replace");
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -3747,6 +3812,19 @@ class ResourceSearchBuilderAppointment {
    */
   _summary(value: SummaryValue): ResourceSearchBuilderAppointment {
     this.builder.string("_summary", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderAppointment {
+    this.builder.string("_total", value, null, "replace");
     return this;
   }
 
@@ -4603,6 +4681,19 @@ class ResourceSearchBuilderAppointmentResponse {
   }
 
   /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderAppointmentResponse {
+    this.builder.string("_total", value, null, "replace");
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -5171,6 +5262,19 @@ class ResourceSearchBuilderAuditEvent {
    */
   _summary(value: SummaryValue): ResourceSearchBuilderAuditEvent {
     this.builder.string("_summary", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderAuditEvent {
+    this.builder.string("_total", value, null, "replace");
     return this;
   }
 
@@ -5984,6 +6088,17 @@ class ResourceSearchBuilderBasic {
   }
 
   /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(value: "none" | "estimate" | "accurate"): ResourceSearchBuilderBasic {
+    this.builder.string("_total", value, null, "replace");
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -6511,6 +6626,19 @@ class ResourceSearchBuilderBiologicallyDerivedProduct {
   }
 
   /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderBiologicallyDerivedProduct {
+    this.builder.string("_total", value, null, "replace");
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -6866,6 +6994,19 @@ class ResourceSearchBuilderBodyStructure {
    */
   _summary(value: SummaryValue): ResourceSearchBuilderBodyStructure {
     this.builder.string("_summary", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderBodyStructure {
+    this.builder.string("_total", value, null, "replace");
     return this;
   }
 
@@ -7343,6 +7484,19 @@ class ResourceSearchBuilderCapabilityStatement {
    */
   _summary(value: SummaryValue): ResourceSearchBuilderCapabilityStatement {
     this.builder.string("_summary", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderCapabilityStatement {
+    this.builder.string("_total", value, null, "replace");
     return this;
   }
 
@@ -7953,6 +8107,19 @@ class ResourceSearchBuilderCarePlan {
    */
   _summary(value: SummaryValue): ResourceSearchBuilderCarePlan {
     this.builder.string("_summary", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderCarePlan {
+    this.builder.string("_total", value, null, "replace");
     return this;
   }
 
@@ -8799,6 +8966,19 @@ class ResourceSearchBuilderCareTeam {
   }
 
   /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderCareTeam {
+    this.builder.string("_total", value, null, "replace");
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -9309,6 +9489,19 @@ class ResourceSearchBuilderCatalogEntry {
   }
 
   /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderCatalogEntry {
+    this.builder.string("_total", value, null, "replace");
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -9664,6 +9857,19 @@ class ResourceSearchBuilderChargeItem {
    */
   _summary(value: SummaryValue): ResourceSearchBuilderChargeItem {
     this.builder.string("_summary", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderChargeItem {
+    this.builder.string("_total", value, null, "replace");
     return this;
   }
 
@@ -10494,6 +10700,19 @@ class ResourceSearchBuilderChargeItemDefinition {
   }
 
   /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderChargeItemDefinition {
+    this.builder.string("_total", value, null, "replace");
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -11132,6 +11351,19 @@ class ResourceSearchBuilderCitation {
    */
   _summary(value: SummaryValue): ResourceSearchBuilderCitation {
     this.builder.string("_summary", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderCitation {
+    this.builder.string("_total", value, null, "replace");
     return this;
   }
 
@@ -11787,6 +12019,17 @@ class ResourceSearchBuilderClaim {
    */
   _summary(value: SummaryValue): ResourceSearchBuilderClaim {
     this.builder.string("_summary", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(value: "none" | "estimate" | "accurate"): ResourceSearchBuilderClaim {
+    this.builder.string("_total", value, null, "replace");
     return this;
   }
 
@@ -12651,6 +12894,19 @@ class ResourceSearchBuilderClaimResponse {
   }
 
   /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderClaimResponse {
+    this.builder.string("_total", value, null, "replace");
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -13285,6 +13541,19 @@ class ResourceSearchBuilderClinicalImpression {
    */
   _summary(value: SummaryValue): ResourceSearchBuilderClinicalImpression {
     this.builder.string("_summary", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderClinicalImpression {
+    this.builder.string("_total", value, null, "replace");
     return this;
   }
 
@@ -13985,6 +14254,19 @@ class ResourceSearchBuilderClinicalUseDefinition {
   }
 
   /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderClinicalUseDefinition {
+    this.builder.string("_total", value, null, "replace");
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -14673,6 +14955,19 @@ class ResourceSearchBuilderCodeSystem {
   }
 
   /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderCodeSystem {
+    this.builder.string("_total", value, null, "replace");
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -15159,6 +15454,19 @@ class ResourceSearchBuilderCommunication {
    */
   _summary(value: SummaryValue): ResourceSearchBuilderCommunication {
     this.builder.string("_summary", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderCommunication {
+    this.builder.string("_total", value, null, "replace");
     return this;
   }
 
@@ -15921,6 +16229,19 @@ class ResourceSearchBuilderCommunicationRequest {
    */
   _summary(value: SummaryValue): ResourceSearchBuilderCommunicationRequest {
     this.builder.string("_summary", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderCommunicationRequest {
+    this.builder.string("_total", value, null, "replace");
     return this;
   }
 
@@ -16734,6 +17055,19 @@ class ResourceSearchBuilderCompartmentDefinition {
   }
 
   /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderCompartmentDefinition {
+    this.builder.string("_total", value, null, "replace");
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -17147,6 +17481,19 @@ class ResourceSearchBuilderComposition {
    */
   _summary(value: SummaryValue): ResourceSearchBuilderComposition {
     this.builder.string("_summary", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderComposition {
+    this.builder.string("_total", value, null, "replace");
     return this;
   }
 
@@ -17865,6 +18212,19 @@ class ResourceSearchBuilderConceptMap {
   }
 
   /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderConceptMap {
+    this.builder.string("_total", value, null, "replace");
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -18511,6 +18871,19 @@ class ResourceSearchBuilderCondition {
    */
   _summary(value: SummaryValue): ResourceSearchBuilderCondition {
     this.builder.string("_summary", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderCondition {
+    this.builder.string("_total", value, null, "replace");
     return this;
   }
 
@@ -19328,6 +19701,19 @@ class ResourceSearchBuilderConsent {
   }
 
   /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderConsent {
+    this.builder.string("_total", value, null, "replace");
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -20029,6 +20415,19 @@ class ResourceSearchBuilderContract {
   }
 
   /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderContract {
+    this.builder.string("_total", value, null, "replace");
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -20636,6 +21035,19 @@ class ResourceSearchBuilderCoverage {
    */
   _summary(value: SummaryValue): ResourceSearchBuilderCoverage {
     this.builder.string("_summary", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderCoverage {
+    this.builder.string("_total", value, null, "replace");
     return this;
   }
 
@@ -21300,6 +21712,19 @@ class ResourceSearchBuilderCoverageEligibilityRequest {
   }
 
   /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderCoverageEligibilityRequest {
+    this.builder.string("_total", value, null, "replace");
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -21854,6 +22279,19 @@ class ResourceSearchBuilderCoverageEligibilityResponse {
     value: SummaryValue
   ): ResourceSearchBuilderCoverageEligibilityResponse {
     this.builder.string("_summary", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderCoverageEligibilityResponse {
+    this.builder.string("_total", value, null, "replace");
     return this;
   }
 
@@ -22454,6 +22892,19 @@ class ResourceSearchBuilderDetectedIssue {
   }
 
   /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderDetectedIssue {
+    this.builder.string("_total", value, null, "replace");
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -22913,6 +23364,17 @@ class ResourceSearchBuilderDevice {
    */
   _summary(value: SummaryValue): ResourceSearchBuilderDevice {
     this.builder.string("_summary", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(value: "none" | "estimate" | "accurate"): ResourceSearchBuilderDevice {
+    this.builder.string("_total", value, null, "replace");
     return this;
   }
 
@@ -23534,6 +23996,19 @@ class ResourceSearchBuilderDeviceDefinition {
   }
 
   /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderDeviceDefinition {
+    this.builder.string("_total", value, null, "replace");
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -23978,6 +24453,19 @@ class ResourceSearchBuilderDeviceMetric {
    */
   _summary(value: SummaryValue): ResourceSearchBuilderDeviceMetric {
     this.builder.string("_summary", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderDeviceMetric {
+    this.builder.string("_total", value, null, "replace");
     return this;
   }
 
@@ -24486,6 +24974,19 @@ class ResourceSearchBuilderDeviceRequest {
    */
   _summary(value: SummaryValue): ResourceSearchBuilderDeviceRequest {
     this.builder.string("_summary", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderDeviceRequest {
+    this.builder.string("_total", value, null, "replace");
     return this;
   }
 
@@ -25223,6 +25724,19 @@ class ResourceSearchBuilderDeviceUseStatement {
   }
 
   /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderDeviceUseStatement {
+    this.builder.string("_total", value, null, "replace");
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -25669,6 +26183,19 @@ class ResourceSearchBuilderDiagnosticReport {
    */
   _summary(value: SummaryValue): ResourceSearchBuilderDiagnosticReport {
     this.builder.string("_summary", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderDiagnosticReport {
+    this.builder.string("_total", value, null, "replace");
     return this;
   }
 
@@ -26349,6 +26876,19 @@ class ResourceSearchBuilderDocumentManifest {
   }
 
   /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderDocumentManifest {
+    this.builder.string("_total", value, null, "replace");
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -26956,6 +27496,19 @@ class ResourceSearchBuilderDocumentReference {
    */
   _summary(value: SummaryValue): ResourceSearchBuilderDocumentReference {
     this.builder.string("_summary", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderDocumentReference {
+    this.builder.string("_total", value, null, "replace");
     return this;
   }
 
@@ -27843,6 +28396,19 @@ class ResourceSearchBuilderEncounter {
    */
   _summary(value: SummaryValue): ResourceSearchBuilderEncounter {
     this.builder.string("_summary", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderEncounter {
+    this.builder.string("_total", value, null, "replace");
     return this;
   }
 
@@ -28767,6 +29333,19 @@ class ResourceSearchBuilderEndpoint {
   }
 
   /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderEndpoint {
+    this.builder.string("_total", value, null, "replace");
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -29286,6 +29865,19 @@ class ResourceSearchBuilderEnrollmentRequest {
   }
 
   /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderEnrollmentRequest {
+    this.builder.string("_total", value, null, "replace");
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -29765,6 +30357,19 @@ class ResourceSearchBuilderEnrollmentResponse {
   }
 
   /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderEnrollmentResponse {
+    this.builder.string("_total", value, null, "replace");
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -30209,6 +30814,19 @@ class ResourceSearchBuilderEpisodeOfCare {
    */
   _summary(value: SummaryValue): ResourceSearchBuilderEpisodeOfCare {
     this.builder.string("_summary", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderEpisodeOfCare {
+    this.builder.string("_total", value, null, "replace");
     return this;
   }
 
@@ -30721,6 +31339,19 @@ class ResourceSearchBuilderEventDefinition {
    */
   _summary(value: SummaryValue): ResourceSearchBuilderEventDefinition {
     this.builder.string("_summary", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderEventDefinition {
+    this.builder.string("_total", value, null, "replace");
     return this;
   }
 
@@ -31564,6 +32195,19 @@ class ResourceSearchBuilderEvidence {
   }
 
   /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderEvidence {
+    this.builder.string("_total", value, null, "replace");
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -32164,6 +32808,19 @@ class ResourceSearchBuilderEvidenceReport {
   }
 
   /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderEvidenceReport {
+    this.builder.string("_total", value, null, "replace");
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -32692,6 +33349,19 @@ class ResourceSearchBuilderEvidenceVariable {
    */
   _summary(value: SummaryValue): ResourceSearchBuilderEvidenceVariable {
     this.builder.string("_summary", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderEvidenceVariable {
+    this.builder.string("_total", value, null, "replace");
     return this;
   }
 
@@ -33309,6 +33979,19 @@ class ResourceSearchBuilderExampleScenario {
   }
 
   /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderExampleScenario {
+    this.builder.string("_total", value, null, "replace");
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -33921,6 +34604,19 @@ class ResourceSearchBuilderExplanationOfBenefit {
    */
   _summary(value: SummaryValue): ResourceSearchBuilderExplanationOfBenefit {
     this.builder.string("_summary", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderExplanationOfBenefit {
+    this.builder.string("_total", value, null, "replace");
     return this;
   }
 
@@ -34771,6 +35467,19 @@ class ResourceSearchBuilderFamilyMemberHistory {
   }
 
   /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderFamilyMemberHistory {
+    this.builder.string("_total", value, null, "replace");
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -35261,6 +35970,17 @@ class ResourceSearchBuilderFlag {
   }
 
   /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(value: "none" | "estimate" | "accurate"): ResourceSearchBuilderFlag {
+    this.builder.string("_total", value, null, "replace");
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -35707,6 +36427,17 @@ class ResourceSearchBuilderGoal {
    */
   _summary(value: SummaryValue): ResourceSearchBuilderGoal {
     this.builder.string("_summary", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(value: "none" | "estimate" | "accurate"): ResourceSearchBuilderGoal {
+    this.builder.string("_total", value, null, "replace");
     return this;
   }
 
@@ -36214,6 +36945,19 @@ class ResourceSearchBuilderGraphDefinition {
   }
 
   /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderGraphDefinition {
+    this.builder.string("_total", value, null, "replace");
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -36598,6 +37342,17 @@ class ResourceSearchBuilderGroup {
    */
   _summary(value: SummaryValue): ResourceSearchBuilderGroup {
     this.builder.string("_summary", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(value: "none" | "estimate" | "accurate"): ResourceSearchBuilderGroup {
+    this.builder.string("_total", value, null, "replace");
     return this;
   }
 
@@ -37226,6 +37981,19 @@ class ResourceSearchBuilderGuidanceResponse {
   }
 
   /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderGuidanceResponse {
+    this.builder.string("_total", value, null, "replace");
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -37701,6 +38469,19 @@ class ResourceSearchBuilderHealthcareService {
    */
   _summary(value: SummaryValue): ResourceSearchBuilderHealthcareService {
     this.builder.string("_summary", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderHealthcareService {
+    this.builder.string("_total", value, null, "replace");
     return this;
   }
 
@@ -38400,6 +39181,19 @@ class ResourceSearchBuilderImagingStudy {
    */
   _summary(value: SummaryValue): ResourceSearchBuilderImagingStudy {
     this.builder.string("_summary", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderImagingStudy {
+    this.builder.string("_total", value, null, "replace");
     return this;
   }
 
@@ -39196,6 +39990,19 @@ class ResourceSearchBuilderImmunization {
   }
 
   /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderImmunization {
+    this.builder.string("_total", value, null, "replace");
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -39896,6 +40703,19 @@ class ResourceSearchBuilderImmunizationEvaluation {
   }
 
   /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderImmunizationEvaluation {
+    this.builder.string("_total", value, null, "replace");
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -40446,6 +41266,19 @@ class ResourceSearchBuilderImmunizationRecommendation {
     value: SummaryValue
   ): ResourceSearchBuilderImmunizationRecommendation {
     this.builder.string("_summary", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderImmunizationRecommendation {
+    this.builder.string("_total", value, null, "replace");
     return this;
   }
 
@@ -41031,6 +41864,19 @@ class ResourceSearchBuilderImplementationGuide {
   }
 
   /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderImplementationGuide {
+    this.builder.string("_total", value, null, "replace");
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -41508,6 +42354,19 @@ class ResourceSearchBuilderIngredient {
    */
   _summary(value: SummaryValue): ResourceSearchBuilderIngredient {
     this.builder.string("_summary", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderIngredient {
+    this.builder.string("_total", value, null, "replace");
     return this;
   }
 
@@ -42107,6 +42966,19 @@ class ResourceSearchBuilderInsurancePlan {
    */
   _summary(value: SummaryValue): ResourceSearchBuilderInsurancePlan {
     this.builder.string("_summary", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderInsurancePlan {
+    this.builder.string("_total", value, null, "replace");
     return this;
   }
 
@@ -42766,6 +43638,19 @@ class ResourceSearchBuilderInvoice {
    */
   _summary(value: SummaryValue): ResourceSearchBuilderInvoice {
     this.builder.string("_summary", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderInvoice {
+    this.builder.string("_total", value, null, "replace");
     return this;
   }
 
@@ -43502,6 +44387,19 @@ class ResourceSearchBuilderLibrary {
    */
   _summary(value: SummaryValue): ResourceSearchBuilderLibrary {
     this.builder.string("_summary", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderLibrary {
+    this.builder.string("_total", value, null, "replace");
     return this;
   }
 
@@ -44403,6 +45301,19 @@ class ResourceSearchBuilderLinkage {
   }
 
   /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderLinkage {
+    this.builder.string("_total", value, null, "replace");
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -44855,6 +45766,17 @@ class ResourceSearchBuilderList {
   }
 
   /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(value: "none" | "estimate" | "accurate"): ResourceSearchBuilderList {
+    this.builder.string("_total", value, null, "replace");
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -45121,6 +46043,33 @@ class ResourceSearchBuilderList {
   }
 
   /**
+   * Business identifier
+   */
+  identifier(
+    value:
+      | {
+          system?: string | null | undefined;
+          code?: string | null | undefined;
+          value?: string | null | undefined;
+        }
+      | string
+      | Array<
+          | {
+              system?: string | null | undefined;
+              code?: string | null | undefined;
+              value?: string | null | undefined;
+            }
+          | string
+        >
+      | null
+      | undefined,
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderList {
+    this.builder.token("identifier", value, modifier);
+    return this;
+  }
+
+  /**
    * Actual entry
    */
   item(
@@ -45286,6 +46235,8 @@ export type SortOrderList =
   | "-_type"
   | "empty-reason"
   | "-empty-reason"
+  | "identifier"
+  | "-identifier"
   | "item"
   | "-item"
   | "notes"
@@ -45387,6 +46338,19 @@ class ResourceSearchBuilderLocation {
    */
   _summary(value: SummaryValue): ResourceSearchBuilderLocation {
     this.builder.string("_summary", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderLocation {
+    this.builder.string("_total", value, null, "replace");
     return this;
   }
 
@@ -46070,6 +47034,19 @@ class ResourceSearchBuilderManufacturedItemDefinition {
   }
 
   /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderManufacturedItemDefinition {
+    this.builder.string("_total", value, null, "replace");
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -46512,6 +47489,19 @@ class ResourceSearchBuilderMeasure {
    */
   _summary(value: SummaryValue): ResourceSearchBuilderMeasure {
     this.builder.string("_summary", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderMeasure {
+    this.builder.string("_total", value, null, "replace");
     return this;
   }
 
@@ -47355,6 +48345,19 @@ class ResourceSearchBuilderMeasureReport {
   }
 
   /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderMeasureReport {
+    this.builder.string("_total", value, null, "replace");
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -47949,6 +48952,17 @@ class ResourceSearchBuilderMedia {
    */
   _summary(value: SummaryValue): ResourceSearchBuilderMedia {
     this.builder.string("_summary", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(value: "none" | "estimate" | "accurate"): ResourceSearchBuilderMedia {
+    this.builder.string("_total", value, null, "replace");
     return this;
   }
 
@@ -48685,6 +49699,19 @@ class ResourceSearchBuilderMedication {
   }
 
   /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderMedication {
+    this.builder.string("_total", value, null, "replace");
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -49295,6 +50322,19 @@ class ResourceSearchBuilderMedicationAdministration {
   }
 
   /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderMedicationAdministration {
+    this.builder.string("_total", value, null, "replace");
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -49876,6 +50916,19 @@ class ResourceSearchBuilderMedicationDispense {
    */
   _summary(value: SummaryValue): ResourceSearchBuilderMedicationDispense {
     this.builder.string("_summary", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderMedicationDispense {
+    this.builder.string("_total", value, null, "replace");
     return this;
   }
 
@@ -50510,6 +51563,19 @@ class ResourceSearchBuilderMedicationKnowledge {
    */
   _summary(value: SummaryValue): ResourceSearchBuilderMedicationKnowledge {
     this.builder.string("_summary", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderMedicationKnowledge {
+    this.builder.string("_total", value, null, "replace");
     return this;
   }
 
@@ -51256,6 +52322,19 @@ class ResourceSearchBuilderMedicationRequest {
   }
 
   /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderMedicationRequest {
+    this.builder.string("_total", value, null, "replace");
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -51918,6 +52997,19 @@ class ResourceSearchBuilderMedicationStatement {
   }
 
   /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderMedicationStatement {
+    this.builder.string("_total", value, null, "replace");
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -52443,6 +53535,19 @@ class ResourceSearchBuilderMedicinalProductDefinition {
     value: SummaryValue
   ): ResourceSearchBuilderMedicinalProductDefinition {
     this.builder.string("_summary", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderMedicinalProductDefinition {
+    this.builder.string("_total", value, null, "replace");
     return this;
   }
 
@@ -53142,6 +54247,19 @@ class ResourceSearchBuilderMessageDefinition {
   }
 
   /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderMessageDefinition {
+    this.builder.string("_total", value, null, "replace");
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -53615,6 +54733,19 @@ class ResourceSearchBuilderMessageHeader {
    */
   _summary(value: SummaryValue): ResourceSearchBuilderMessageHeader {
     this.builder.string("_summary", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderMessageHeader {
+    this.builder.string("_total", value, null, "replace");
     return this;
   }
 
@@ -54334,6 +55465,19 @@ class ResourceSearchBuilderMolecularSequence {
   }
 
   /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderMolecularSequence {
+    this.builder.string("_total", value, null, "replace");
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -54892,6 +56036,19 @@ class ResourceSearchBuilderNamingSystem {
   }
 
   /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderNamingSystem {
+    this.builder.string("_total", value, null, "replace");
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -55415,6 +56572,19 @@ class ResourceSearchBuilderNutritionOrder {
    */
   _summary(value: SummaryValue): ResourceSearchBuilderNutritionOrder {
     this.builder.string("_summary", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderNutritionOrder {
+    this.builder.string("_total", value, null, "replace");
     return this;
   }
 
@@ -56011,6 +57181,19 @@ class ResourceSearchBuilderNutritionProduct {
   }
 
   /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderNutritionProduct {
+    this.builder.string("_total", value, null, "replace");
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -56424,6 +57607,19 @@ class ResourceSearchBuilderObservation {
    */
   _summary(value: SummaryValue): ResourceSearchBuilderObservation {
     this.builder.string("_summary", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderObservation {
+    this.builder.string("_total", value, null, "replace");
     return this;
   }
 
@@ -57506,6 +58702,19 @@ class ResourceSearchBuilderObservationDefinition {
   }
 
   /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderObservationDefinition {
+    this.builder.string("_total", value, null, "replace");
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -57861,6 +59070,19 @@ class ResourceSearchBuilderOperationDefinition {
    */
   _summary(value: SummaryValue): ResourceSearchBuilderOperationDefinition {
     this.builder.string("_summary", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderOperationDefinition {
+    this.builder.string("_total", value, null, "replace");
     return this;
   }
 
@@ -58462,6 +59684,19 @@ class ResourceSearchBuilderOperationOutcome {
   }
 
   /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderOperationOutcome {
+    this.builder.string("_total", value, null, "replace");
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -58817,6 +60052,19 @@ class ResourceSearchBuilderOrganization {
    */
   _summary(value: SummaryValue): ResourceSearchBuilderOrganization {
     this.builder.string("_summary", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderOrganization {
+    this.builder.string("_total", value, null, "replace");
     return this;
   }
 
@@ -59447,6 +60695,19 @@ class ResourceSearchBuilderOrganizationAffiliation {
    */
   _summary(value: SummaryValue): ResourceSearchBuilderOrganizationAffiliation {
     this.builder.string("_summary", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderOrganizationAffiliation {
+    this.builder.string("_total", value, null, "replace");
     return this;
   }
 
@@ -60216,6 +61477,19 @@ class ResourceSearchBuilderPackagedProductDefinition {
   }
 
   /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderPackagedProductDefinition {
+    this.builder.string("_total", value, null, "replace");
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -60910,6 +62184,19 @@ class ResourceSearchBuilderPatient {
   }
 
   /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderPatient {
+    this.builder.string("_total", value, null, "replace");
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -61504,6 +62791,19 @@ class ResourceSearchBuilderPaymentNotice {
   }
 
   /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderPaymentNotice {
+    this.builder.string("_total", value, null, "replace");
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -62054,6 +63354,19 @@ class ResourceSearchBuilderPaymentReconciliation {
    */
   _summary(value: SummaryValue): ResourceSearchBuilderPaymentReconciliation {
     this.builder.string("_summary", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderPaymentReconciliation {
+    this.builder.string("_total", value, null, "replace");
     return this;
   }
 
@@ -62623,6 +63936,17 @@ class ResourceSearchBuilderPerson {
   }
 
   /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(value: "none" | "estimate" | "accurate"): ResourceSearchBuilderPerson {
+    this.builder.string("_total", value, null, "replace");
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -63175,6 +64499,19 @@ class ResourceSearchBuilderPlanDefinition {
    */
   _summary(value: SummaryValue): ResourceSearchBuilderPlanDefinition {
     this.builder.string("_summary", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderPlanDefinition {
+    this.builder.string("_total", value, null, "replace");
     return this;
   }
 
@@ -64078,6 +65415,19 @@ class ResourceSearchBuilderPractitioner {
   }
 
   /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderPractitioner {
+    this.builder.string("_total", value, null, "replace");
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -64533,6 +65883,19 @@ class ResourceSearchBuilderPractitionerRole {
    */
   _summary(value: SummaryValue): ResourceSearchBuilderPractitionerRole {
     this.builder.string("_summary", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderPractitionerRole {
+    this.builder.string("_total", value, null, "replace");
     return this;
   }
 
@@ -65176,6 +66539,19 @@ class ResourceSearchBuilderProcedure {
    */
   _summary(value: SummaryValue): ResourceSearchBuilderProcedure {
     this.builder.string("_summary", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderProcedure {
+    this.builder.string("_total", value, null, "replace");
     return this;
   }
 
@@ -65856,6 +67232,19 @@ class ResourceSearchBuilderProvenance {
   }
 
   /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderProvenance {
+    this.builder.string("_total", value, null, "replace");
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -66479,6 +67868,19 @@ class ResourceSearchBuilderQuestionnaire {
    */
   _summary(value: SummaryValue): ResourceSearchBuilderQuestionnaire {
     this.builder.string("_summary", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderQuestionnaire {
+    this.builder.string("_total", value, null, "replace");
     return this;
   }
 
@@ -67211,6 +68613,19 @@ class ResourceSearchBuilderQuestionnaireResponse {
   }
 
   /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderQuestionnaireResponse {
+    this.builder.string("_total", value, null, "replace");
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -67891,6 +69306,19 @@ class ResourceSearchBuilderRegulatedAuthorization {
   }
 
   /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderRegulatedAuthorization {
+    this.builder.string("_total", value, null, "replace");
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -68457,6 +69885,19 @@ class ResourceSearchBuilderRelatedPerson {
   }
 
   /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderRelatedPerson {
+    this.builder.string("_total", value, null, "replace");
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -68943,6 +70384,19 @@ class ResourceSearchBuilderRequestGroup {
    */
   _summary(value: SummaryValue): ResourceSearchBuilderRequestGroup {
     this.builder.string("_summary", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderRequestGroup {
+    this.builder.string("_total", value, null, "replace");
     return this;
   }
 
@@ -69688,6 +71142,19 @@ class ResourceSearchBuilderResearchDefinition {
    */
   _summary(value: SummaryValue): ResourceSearchBuilderResearchDefinition {
     this.builder.string("_summary", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderResearchDefinition {
+    this.builder.string("_total", value, null, "replace");
     return this;
   }
 
@@ -70535,6 +72002,19 @@ class ResourceSearchBuilderResearchElementDefinition {
   }
 
   /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderResearchElementDefinition {
+    this.builder.string("_total", value, null, "replace");
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -71374,6 +72854,19 @@ class ResourceSearchBuilderResearchStudy {
   }
 
   /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderResearchStudy {
+    this.builder.string("_total", value, null, "replace");
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -72088,6 +73581,19 @@ class ResourceSearchBuilderResearchSubject {
   }
 
   /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderResearchSubject {
+    this.builder.string("_total", value, null, "replace");
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -72611,6 +74117,19 @@ class ResourceSearchBuilderRiskAssessment {
   }
 
   /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderRiskAssessment {
+    this.builder.string("_total", value, null, "replace");
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -73130,6 +74649,19 @@ class ResourceSearchBuilderSchedule {
    */
   _summary(value: SummaryValue): ResourceSearchBuilderSchedule {
     this.builder.string("_summary", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderSchedule {
+    this.builder.string("_total", value, null, "replace");
     return this;
   }
 
@@ -73682,6 +75214,19 @@ class ResourceSearchBuilderSearchParameter {
   }
 
   /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderSearchParameter {
+    this.builder.string("_total", value, null, "replace");
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -74215,6 +75760,19 @@ class ResourceSearchBuilderServiceRequest {
    */
   _summary(value: SummaryValue): ResourceSearchBuilderServiceRequest {
     this.builder.string("_summary", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderServiceRequest {
+    this.builder.string("_total", value, null, "replace");
     return this;
   }
 
@@ -75037,6 +76595,17 @@ class ResourceSearchBuilderSlot {
   }
 
   /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(value: "none" | "estimate" | "accurate"): ResourceSearchBuilderSlot {
+    this.builder.string("_total", value, null, "replace");
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -75610,6 +77179,19 @@ class ResourceSearchBuilderSpecimen {
    */
   _summary(value: SummaryValue): ResourceSearchBuilderSpecimen {
     this.builder.string("_summary", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderSpecimen {
+    this.builder.string("_total", value, null, "replace");
     return this;
   }
 
@@ -76313,6 +77895,19 @@ class ResourceSearchBuilderSpecimenDefinition {
   }
 
   /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderSpecimenDefinition {
+    this.builder.string("_total", value, null, "replace");
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -76755,6 +78350,19 @@ class ResourceSearchBuilderStructureDefinition {
    */
   _summary(value: SummaryValue): ResourceSearchBuilderStructureDefinition {
     this.builder.string("_summary", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderStructureDefinition {
+    this.builder.string("_total", value, null, "replace");
     return this;
   }
 
@@ -77425,6 +79033,19 @@ class ResourceSearchBuilderStructureMap {
   }
 
   /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderStructureMap {
+    this.builder.string("_total", value, null, "replace");
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -77780,6 +79401,19 @@ class ResourceSearchBuilderSubscription {
    */
   _summary(value: SummaryValue): ResourceSearchBuilderSubscription {
     this.builder.string("_summary", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderSubscription {
+    this.builder.string("_total", value, null, "replace");
     return this;
   }
 
@@ -78285,6 +79919,19 @@ class ResourceSearchBuilderSubscriptionStatus {
   }
 
   /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderSubscriptionStatus {
+    this.builder.string("_total", value, null, "replace");
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -78640,6 +80287,19 @@ class ResourceSearchBuilderSubscriptionTopic {
    */
   _summary(value: SummaryValue): ResourceSearchBuilderSubscriptionTopic {
     this.builder.string("_summary", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderSubscriptionTopic {
+    this.builder.string("_total", value, null, "replace");
     return this;
   }
 
@@ -79164,6 +80824,19 @@ class ResourceSearchBuilderSubstance {
    */
   _summary(value: SummaryValue): ResourceSearchBuilderSubstance {
     this.builder.string("_summary", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderSubstance {
+    this.builder.string("_total", value, null, "replace");
     return this;
   }
 
@@ -79747,6 +81420,19 @@ class ResourceSearchBuilderSubstanceDefinition {
   }
 
   /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderSubstanceDefinition {
+    this.builder.string("_total", value, null, "replace");
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -80235,6 +81921,19 @@ class ResourceSearchBuilderSupplyDelivery {
   }
 
   /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderSupplyDelivery {
+    this.builder.string("_total", value, null, "replace");
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -80681,6 +82380,19 @@ class ResourceSearchBuilderSupplyRequest {
    */
   _summary(value: SummaryValue): ResourceSearchBuilderSupplyRequest {
     this.builder.string("_summary", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderSupplyRequest {
+    this.builder.string("_total", value, null, "replace");
     return this;
   }
 
@@ -81191,6 +82903,17 @@ class ResourceSearchBuilderTask {
    */
   _summary(value: SummaryValue): ResourceSearchBuilderTask {
     this.builder.string("_summary", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(value: "none" | "estimate" | "accurate"): ResourceSearchBuilderTask {
+    this.builder.string("_total", value, null, "replace");
     return this;
   }
 
@@ -82075,6 +83798,19 @@ class ResourceSearchBuilderTerminologyCapabilities {
   }
 
   /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderTerminologyCapabilities {
+    this.builder.string("_total", value, null, "replace");
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -82430,6 +84166,19 @@ class ResourceSearchBuilderTestReport {
    */
   _summary(value: SummaryValue): ResourceSearchBuilderTestReport {
     this.builder.string("_summary", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderTestReport {
+    this.builder.string("_total", value, null, "replace");
     return this;
   }
 
@@ -82917,6 +84666,19 @@ class ResourceSearchBuilderTestScript {
    */
   _summary(value: SummaryValue): ResourceSearchBuilderTestScript {
     this.builder.string("_summary", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderTestScript {
+    this.builder.string("_total", value, null, "replace");
     return this;
   }
 
@@ -83576,6 +85338,19 @@ class ResourceSearchBuilderValueSet {
   }
 
   /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderValueSet {
+    this.builder.string("_total", value, null, "replace");
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -83990,6 +85765,19 @@ class ResourceSearchBuilderVerificationResult {
   }
 
   /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderVerificationResult {
+    this.builder.string("_total", value, null, "replace");
+    return this;
+  }
+
+  /**
    * Search on the narrative of the resource
    */
   _text(
@@ -84376,6 +86164,19 @@ class ResourceSearchBuilderVisionPrescription {
    */
   _summary(value: SummaryValue): ResourceSearchBuilderVisionPrescription {
     this.builder.string("_summary", `${value}`, null, "replace");
+    return this;
+  }
+
+  /**
+   * Add a `total` element to the returned `Bundle` which is the number of resources that match the search parameters.
+   * Note that `Bundle.total` represents the total number of matches, not how many resources are returned in a particular response
+   *
+   * @see https://hl7.org/fhir/search.html#total
+   */
+  _total(
+    value: "none" | "estimate" | "accurate"
+  ): ResourceSearchBuilderVisionPrescription {
+    this.builder.string("_total", value, null, "replace");
     return this;
   }
 

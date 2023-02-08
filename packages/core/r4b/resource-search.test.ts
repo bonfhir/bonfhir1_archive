@@ -26,6 +26,10 @@ describe("resource-search", () => {
       resourceSearch("Organization")._sort("name")._sort(["-type", "name"]),
       "_sort=-type,name",
     ],
+    [
+      resourceSearch("Organization")._total("estimate")._total("accurate"),
+      "_total=accurate",
+    ],
   ])("%s", (searchBuilder, expected) => {
     expect(searchBuilder.href).toEqual(expected);
   });

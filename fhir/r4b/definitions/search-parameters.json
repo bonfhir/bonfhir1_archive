@@ -41212,6 +41212,31 @@
       }
     },
     {
+      "fullUrl": "http://hl7.org/fhir/SearchParameter/List-identifier",
+      "resource": {
+        "resourceType": "SearchParameter",
+        "id": "List-identifier",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+            "valueCode": "trial-use"
+          }
+        ],
+        "url": "http://hl7.org/fhir/SearchParameter/List-identifier",
+        "version": "4.3.0",
+        "name": "identifier",
+        "status": "draft",
+        "experimental": false,
+        "description": "Business identifier",
+        "code": "identifier",
+        "base": ["List"],
+        "type": "token",
+        "expression": "List.identifier",
+        "xpath": "f:List/f:identifier",
+        "xpathUsage": "normal"
+      }
+    },
+    {
       "fullUrl": "http://hl7.org/fhir/SearchParameter/List-item",
       "resource": {
         "resourceType": "SearchParameter",
