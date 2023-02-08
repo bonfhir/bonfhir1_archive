@@ -19,6 +19,9 @@ const RandomMappings = {
     id: {
       "http://hl7.org/fhirpath/System.String": "randUuid()",
     },
+    birthDate: {
+      date: "randPastDate({ years: 99 }).toISOString().slice(0, 10)",
+    },
     identifier: {
       Identifier: "fakeIdentifier(randAlpha())",
     },
