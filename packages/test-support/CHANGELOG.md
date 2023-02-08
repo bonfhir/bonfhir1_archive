@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.8](https://github.com/bonfhir/bonfhir/compare/@bonfhir/test-support@1.0.0-alpha.7...@bonfhir/test-support@1.0.0-alpha.8) (2023-02-08)
+
+
+### Bug Fixes
+
+* **test-support:** birthDate attributes are now between 0 and 99 years old ([becb3e3](https://github.com/bonfhir/bonfhir/commit/becb3e3393f5b02ca7fd61e2e0ce02ec8a02d763))
+
+
+
+
+
 # [1.0.0-alpha.7](https://github.com/bonfhir/bonfhir/compare/@bonfhir/test-support@1.0.0-alpha.6...@bonfhir/test-support@1.0.0-alpha.7) (2023-01-30)
 
 **Note:** Version bump only for package @bonfhir/test-support

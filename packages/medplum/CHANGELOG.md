@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.8](https://github.com/bonfhir/bonfhir/compare/@bonfhir/medplum@1.0.0-alpha.7...@bonfhir/medplum@1.0.0-alpha.8) (2023-02-08)
+
+
+### Features
+
+* **medplum:** :arrow_up: upgrade medplum package version to 2 ([b8cf33b](https://github.com/bonfhir/bonfhir/commit/b8cf33b88df8c58e7c6d74de5ba8de7acc0f2abb))
+
+
+
+
+
 # [1.0.0-alpha.7](https://github.com/bonfhir/bonfhir/compare/@bonfhir/medplum@1.0.0-alpha.6...@bonfhir/medplum@1.0.0-alpha.7) (2023-01-30)
 
 **Note:** Version bump only for package @bonfhir/medplum

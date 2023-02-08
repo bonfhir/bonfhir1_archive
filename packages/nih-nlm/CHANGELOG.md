@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.10](https://github.com/bonfhir/bonfhir/compare/@bonfhir/nih-nlm@1.0.0-alpha.9...@bonfhir/nih-nlm@1.0.0-alpha.10) (2023-02-08)
+
+
+### Features
+
+* :arrow_up: upgrade medplum package version (dev dependency only) ([bd473dd](https://github.com/bonfhir/bonfhir/commit/bd473dd79ccd678b3a81d8fc0ed37f0715317669))
+
+
+
+
+
 # [1.0.0-alpha.9](https://github.com/bonfhir/bonfhir/compare/@bonfhir/nih-nlm@1.0.0-alpha.8...@bonfhir/nih-nlm@1.0.0-alpha.9) (2023-01-30)
 
 

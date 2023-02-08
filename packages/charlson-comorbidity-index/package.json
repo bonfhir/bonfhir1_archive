@@ -1,7 +1,7 @@
 {
   "name": "@bonfhir/charlson-comorbidity-index",
   "description": "Charlson Comorbidity Index calculator.",
-  "version": "0.1.0-alpha.2",
+  "version": "0.1.0-alpha.3",
   "repository": "https://github.com/bonfhir/bonfhir.git",
   "license": "APACHE-2.0",
   "type": "module",
@@ -16,9 +16,9 @@
   "packageManager": "yarn@3.3.1",
   "devDependencies": {
     "@bonfhir/eslint-config": "^1.0.0",
-    "@bonfhir/medplum": "^1.0.0-alpha.7",
+    "@bonfhir/medplum": "^1.0.0-alpha.8",
     "@bonfhir/prettier-config": "^1.0.0",
-    "@bonfhir/test-support": "^1.0.0-alpha.7",
+    "@bonfhir/test-support": "^1.0.0-alpha.8",
     "@bonfhir/typescript-config": "^1.0.0",
     "@medplum/core": "^2.0.1",
     "@swc/core": "^1.3.24",
@@ -35,7 +35,7 @@
     "typescript": "^4.9.4"
   },
   "dependencies": {
-    "@bonfhir/core": "^1.0.0-alpha.6",
+    "@bonfhir/core": "^1.0.0-alpha.7",
     "lodash": "^4.17.21"
   },
   "prettier": "@bonfhir/prettier-config"

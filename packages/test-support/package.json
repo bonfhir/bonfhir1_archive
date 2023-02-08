@@ -1,7 +1,7 @@
 {
   "name": "@bonfhir/test-support",
   "description": "Test helpers for Bonfhir.",
-  "version": "1.0.0-alpha.7",
+  "version": "1.0.0-alpha.8",
   "repository": "https://github.com/bonfhir/bonfhir.git",
   "license": "APACHE-2.0",
   "type": "module",
@@ -33,7 +33,7 @@
     "typescript": "^4.9.4"
   },
   "dependencies": {
-    "@bonfhir/core": "^1.0.0-alpha.6",
+    "@bonfhir/core": "^1.0.0-alpha.7",
     "@ngneat/falso": "^6.3.2",
     "fast-glob": "^3.2.12",
     "fhirpath": "^3.3.1"

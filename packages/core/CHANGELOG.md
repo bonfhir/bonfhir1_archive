@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.7](https://github.com/bonfhir/bonfhir/compare/@bonfhir/core@1.0.0-alpha.6...@bonfhir/core@1.0.0-alpha.7) (2023-02-08)
+
+
+### Features
+
+* **core:** :sparkles: update `nextUrl` to a more generic `linkUrl` ([48a9cb4](https://github.com/bonfhir/bonfhir/commit/48a9cb4dee6bf998e42fa71990b47ddba67327ec)), closes [#50](https://github.com/bonfhir/bonfhir/issues/50)
+
+
+
+
+
 # [1.0.0-alpha.6](https://github.com/bonfhir/bonfhir/compare/@bonfhir/core@1.0.0-alpha.5...@bonfhir/core@1.0.0-alpha.6) (2023-01-30)
 
 

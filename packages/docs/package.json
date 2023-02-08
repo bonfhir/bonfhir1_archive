@@ -1,7 +1,7 @@
 {
   "name": "@bonfhir/docs",
   "description": "Documentation site for Bonfhir.",
-  "version": "0.0.0",
+  "version": "0.1.0-alpha.0",
   "repository": "https://github.com/bonfhir/bonfhir.git",
   "license": "APACHE-2.0",
   "private": true,
