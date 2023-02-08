@@ -6,6 +6,7 @@ export interface Config {
   templates: string;
   postProcessing: string[] | undefined;
   helpers: string | undefined;
+  header: string | undefined;
 }
 
 /**
