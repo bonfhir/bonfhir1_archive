@@ -11,8 +11,7 @@
     "clean": "rimraf dist/",
     "codegen": "yarn workspace @bonfhir/codegen run dev run -d \"${PWD}/../../fhir/r4b/**/*.json\" -t \"${PWD}/r4b/**/*.ts.hbs\" --helpers \"${PWD}/template-helpers.js\" -p 'prettier --write %files%'",
     "package:create": "node package.js pack",
-    "package:publish": "node package.js publish",
-    "test": "jest"
+    "package:publish": "node package.js publish"
   },
   "packageManager": "yarn@3.3.1",
   "devDependencies": {

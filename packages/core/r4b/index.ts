@@ -1,5 +1,6 @@
 export * from "./builders";
 export * from "./bundle-navigator";
+export * from "./data-type-adapter";
 export * from "./date";
 export * from "./fhir-restful-client";
 export * from "./merge";
