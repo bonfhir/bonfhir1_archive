@@ -1,6 +1,12 @@
 {
   "extends": "./tsconfig.json",
-  "exclude": ["**/*.test.ts", "**/*.test.tsx", "**/__fixtures__"],
+  "exclude": [
+    "**/*.test.ts",
+    "**/*.test.tsx",
+    "**/*.stories.tsx",
+    "**/__fixtures__",
+    "**/.ladle"
+  ],
   "compilerOptions": {
     "outDir": "dist"
   }
