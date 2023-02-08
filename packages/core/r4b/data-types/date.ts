@@ -5,6 +5,7 @@
  */
 
 export interface FhirDateTypeAdapter {
+  locale: string | undefined;
   /**
    * Parse a FHIR date
    *
@@ -63,14 +64,18 @@ const fhirDateRegexp = new RegExp(
 );
 
 /**
- * Return a {@link FhirDataTypeAdapter} that uses the [`Intl` API](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl)
+ * Return a {@link FhirDateTypeAdapter} that uses the [`Intl` API](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl)
  * (ECMAScript Internationalization API)
  * @param locale - see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl#locales_argument
  */
 export function fhirDateTypeAdapter(
   locale: string | undefined
 ): FhirDateTypeAdapter {
+  // JIT locale check
+  Intl.DateTimeFormat(locale);
+
   return {
+    locale,
     parse(value) {
       if (!value?.trim()) {
         return undefined;
@@ -103,25 +108,26 @@ export function fhirDateTypeAdapter(
     format(value, style) {
       const fhirDate = typeof value === "string" ? this.parse(value) : value;
 
-      if (!fhirDate) return "";
+      if (!fhirDate?.date) return "";
+
+      const options: Intl.DateTimeFormatOptions = {};
 
       switch (fhirDate.flavour) {
         case "year":
-          return new Intl.DateTimeFormat(locale, { year: "numeric" }).format(
-            fhirDate.date
-          );
+          options.year = "numeric";
+          break;
         case "year-month":
-          return new Intl.DateTimeFormat(locale, {
-            year: "numeric",
-            month: convertDateStyleToMonthStyle(style),
-          }).format(fhirDate.date);
+          options.year = "numeric";
+          options.month = convertDateStyleToMonthStyle(style);
+          break;
         case "full":
-          return new Intl.DateTimeFormat(locale, {
-            dateStyle: style || undefined,
-          }).format(fhirDate.date);
+          options.dateStyle = style || undefined;
+          break;
         default:
           throw new Error(`Unknown date flavour ${fhirDate.flavour}`);
       }
+
+      return new Intl.DateTimeFormat(locale, options).format(fhirDate.date);
     },
   };
 }

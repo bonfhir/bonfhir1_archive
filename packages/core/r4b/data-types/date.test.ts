@@ -5,6 +5,10 @@ describe("fhirDateTypeAdapter", () => {
     describe(`with ${locale} as locale`, () => {
       const adapter = fhirDateTypeAdapter(locale);
 
+      it("exposes the locale", () => {
+        expect(adapter.locale).toEqual(locale);
+      });
+
       describe("date", () => {
         it.each(<Array<[string, Partial<FhirDate>]>>[
           [
@@ -69,6 +73,14 @@ describe("fhirDateTypeAdapter", () => {
       ])("format %p", (value, style, expected) => {
         expect(adapter.format(value, style)).toEqual(expected);
       });
+    });
+  });
+
+  describe("with an unknown locale", () => {
+    it("raises an error", () => {
+      expect(() => fhirDateTypeAdapter("nope")).toThrowError(
+        "Incorrect locale information provided"
+      );
     });
   });
 });

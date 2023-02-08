@@ -1863,6 +1863,7 @@ __metadata:
     "@types/node": ^18.11.18
     "@types/rimraf": ^3
     date-fns: ^2.29.3
+    decimal.js: ^10.4.3
     eslint: ^8.30.0
     fhirpath: ^3.3.1
     html-entities: ^2.3.3
@@ -10204,7 +10205,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"decimal.js@npm:^10.4.2":
+"decimal.js@npm:^10.4.2, decimal.js@npm:^10.4.3":
   version: 10.4.3
   resolution: "decimal.js@npm:10.4.3"
   checksum: 796404dcfa9d1dbfdc48870229d57f788b48c21c603c3f6554a1c17c10195fc1024de338b0cf9e1efe0c7c167eeb18f04548979bcc5fdfabebb7cc0ae3287bae

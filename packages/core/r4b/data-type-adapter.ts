@@ -1,4 +1,8 @@
 import { FhirDateTypeAdapter, fhirDateTypeAdapter } from "./data-types/date";
+import {
+  FhirDecimalTypeAdapter,
+  fhirDecimalTypeAdapter,
+} from "./data-types/decimal";
 
 /**
  * This is used to manipulate FHIR data types, both parsing values and formatting them as localized strings.
@@ -8,6 +12,7 @@ import { FhirDateTypeAdapter, fhirDateTypeAdapter } from "./data-types/date";
 export interface FhirDataTypeAdapter {
   locale: string | undefined;
   date: FhirDateTypeAdapter;
+  decimal: FhirDecimalTypeAdapter;
 }
 
 /**
@@ -22,8 +27,9 @@ export function intlFhirDataTypeAdapter(
   Intl.DateTimeFormat(locale);
 
   return {
-    locale: locale,
+    locale,
     date: fhirDateTypeAdapter(locale),
+    decimal: fhirDecimalTypeAdapter(locale),
   };
 }
 
