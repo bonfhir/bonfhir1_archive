@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.9](https://github.com/bonfhir/bonfhir/compare/@bonfhir/test-support@1.0.0-alpha.8...@bonfhir/test-support@1.0.0-alpha.9) (2023-02-08)
+
+**Note:** Version bump only for package @bonfhir/test-support
+
+
+
+
+
 # [1.0.0-alpha.8](https://github.com/bonfhir/bonfhir/compare/@bonfhir/test-support@1.0.0-alpha.7...@bonfhir/test-support@1.0.0-alpha.8) (2023-02-08)
 
 

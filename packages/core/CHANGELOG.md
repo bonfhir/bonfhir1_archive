@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.8](https://github.com/bonfhir/bonfhir/compare/@bonfhir/core@1.0.0-alpha.7...@bonfhir/core@1.0.0-alpha.8) (2023-02-08)
+
+
+### Bug Fixes
+
+* **core:** :bug: add `_total` to all `resourceSearch` ([5f00c14](https://github.com/bonfhir/bonfhir/commit/5f00c14b2e0b6915382d631e471337bde29ea094)), closes [#70](https://github.com/bonfhir/bonfhir/issues/70)
+* **core:** :bug: add `identifier` to `resourceSearch("List")` ([e042f8e](https://github.com/bonfhir/bonfhir/commit/e042f8ee2075c4c35e636c954347f694430c1751)), closes [#41](https://github.com/bonfhir/bonfhir/issues/41)
+
+
+
+
+
 # [1.0.0-alpha.7](https://github.com/bonfhir/bonfhir/compare/@bonfhir/core@1.0.0-alpha.6...@bonfhir/core@1.0.0-alpha.7) (2023-02-08)
 
 
