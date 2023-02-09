@@ -4,6 +4,17 @@
  * @see https://hl7.org/fhir/datatypes.html#integer
  */
 
+export interface FhirIntegerFormatOptions {
+  notation?:
+    | "standard"
+    | "scientific"
+    | "engineering"
+    | "compact-short"
+    | "compact-long"
+    | null
+    | undefined;
+}
+
 export interface FhirIntegerTypeAdapter {
   locale: string | undefined;
   /**
@@ -18,7 +29,10 @@ export interface FhirIntegerTypeAdapter {
    *
    * @see https://hl7.org/fhir/datatypes.html#integer
    */
-  format(value: number | string | null | undefined): string;
+  format(
+    value: number | string | null | undefined,
+    options?: FhirIntegerFormatOptions | null | undefined
+  ): string;
 }
 
 const fhirIntegerRegexp = new RegExp("^([0]|[-+]?[1-9][0-9]*)$");
@@ -58,14 +72,27 @@ export function fhirIntegerTypeAdapter(
       return parseInt(value);
     },
 
-    format(value) {
+    format(value, options) {
       const fhirInteger = Number.isInteger(value)
         ? (value as number)
         : this.parse(value);
 
       if (!fhirInteger) return "";
 
-      return new Intl.NumberFormat(locale).format(fhirInteger);
+      if (
+        options?.notation &&
+        ["compact-short", "compact-long"].includes(options.notation)
+      ) {
+        return new Intl.NumberFormat(locale, {
+          notation: "compact",
+          compactDisplay:
+            options.notation === "compact-long" ? "long" : "short",
+        }).format(fhirInteger);
+      }
+
+      return new Intl.NumberFormat(locale, {
+        notation: options?.notation as Intl.NumberFormatOptions["notation"],
+      }).format(fhirInteger);
     },
   };
 }

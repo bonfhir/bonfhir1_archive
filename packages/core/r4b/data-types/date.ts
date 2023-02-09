@@ -4,6 +4,10 @@
  * @see https://hl7.org/fhir/datatypes.html#date
  */
 
+export interface FhirDateFormatOptions {
+  dateStyle?: "full" | "long" | "medium" | "short" | null | undefined;
+}
+
 export interface FhirDateTypeAdapter {
   /**
    * Parse a FHIR date
@@ -19,11 +23,9 @@ export interface FhirDateTypeAdapter {
    */
   format(
     value: FhirDate | string | null | undefined,
-    style?: DateStyle | null | undefined
+    options?: FhirDateFormatOptions | null | undefined
   ): string;
 }
-
-export type DateStyle = "full" | "long" | "medium" | "short";
 
 /**
  * A parsed FHIR date
@@ -100,7 +102,7 @@ export function fhirDateTypeAdapter(
       };
     },
 
-    format(value, style) {
+    format(value, options) {
       const fhirDate = typeof value === "string" ? this.parse(value) : value;
 
       if (!fhirDate) return "";
@@ -113,11 +115,11 @@ export function fhirDateTypeAdapter(
         case "year-month":
           return new Intl.DateTimeFormat(locale, {
             year: "numeric",
-            month: convertDateStyleToMonthStyle(style),
+            month: convertDateStyleToMonthStyle(options?.dateStyle),
           }).format(fhirDate.date);
         case "full":
           return new Intl.DateTimeFormat(locale, {
-            dateStyle: style || undefined,
+            dateStyle: options?.dateStyle || undefined,
           }).format(fhirDate.date);
         default:
           throw new Error(`Unknown date flavour ${fhirDate.flavour}`);
@@ -127,7 +129,7 @@ export function fhirDateTypeAdapter(
 }
 
 function convertDateStyleToMonthStyle(
-  style: DateStyle | null | undefined
+  style: FhirDateFormatOptions["dateStyle"] | null | undefined
 ): "numeric" | "2-digit" | "long" | "short" | "narrow" | undefined {
   switch (style) {
     case "full":

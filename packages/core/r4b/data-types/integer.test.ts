@@ -1,4 +1,4 @@
-import { fhirIntegerTypeAdapter } from "./integer";
+import { FhirIntegerFormatOptions, fhirIntegerTypeAdapter } from "./integer";
 
 describe("fhirIntegerTypeAdapter", () => {
   ["en-us", undefined].forEach((locale) => {
@@ -20,12 +20,20 @@ describe("fhirIntegerTypeAdapter", () => {
       });
 
       describe("format", () => {
-        it.each([
-          ["123", "123"],
-          [123, "123"],
-          [undefined, ""],
-        ])("format %p", (value, expected) => {
-          expect(adapter.format(value)).toEqual(expected);
+        it.each(<
+          Array<
+            [string | undefined, FhirIntegerFormatOptions | undefined, string]
+          >
+        >[
+          ["123", undefined, "123"],
+          [987654321, { notation: "compact-short" }, "988M"],
+          [987654321, { notation: "compact-long" }, "988 million"],
+          [987654321, { notation: "scientific" }, "9.877E8"],
+          [987654321, { notation: "engineering" }, "987.654E6"],
+          [123, undefined, "123"],
+          [undefined, undefined, ""],
+        ])("format %p", (value, options, expected) => {
+          expect(adapter.format(value, options)).toEqual(expected);
         });
       });
 
