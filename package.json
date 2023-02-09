@@ -11,6 +11,7 @@
   "scripts": {
     "build": "lerna run build",
     "check": "lerna run check",
+    "format": "lerna run format --parallel",
     "clean": "lerna run clean",
     "codegen": "lerna run codegen",
     "commit": "commit",

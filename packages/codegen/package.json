@@ -11,6 +11,7 @@
   "scripts": {
     "build": "yarn clean && tsc --project tsconfig.build.json",
     "check": "prettier --check ./src && eslint ./src && tsc --noEmit",
+    "format": "prettier --loglevel warn --write ./**/*.ts && eslint ./**/*.ts && tsc",
     "clean": "rimraf dist/",
     "dev": "ts-node --esm --swc --transpileOnly --experimental-specifier-resolution=node src/index.ts",
     "package:create": "node package.js pack",

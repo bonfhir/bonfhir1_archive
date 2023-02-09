@@ -9,6 +9,7 @@
     "build": "yarn clean && tsc --project tsconfig.build.json && yarn build:ladle",
     "build:ladle": "ladle build --stories='./**/*.stories.tsx' --outDir dist-ladle/ --base /ui-components/dist-ladle",
     "check": "prettier --check ./**/*.tsx && eslint ./**/*.tsx && tsc --noEmit",
+    "format": "prettier --loglevel warn --write ./**/*.ts && eslint ./**/*.ts && tsc",
     "clean": "rimraf dist/ dist-ladle/",
     "dev": "ladle serve --stories='./**/*.stories.tsx'",
     "package:create": "node package.js pack",
