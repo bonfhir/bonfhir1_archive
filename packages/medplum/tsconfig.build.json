@@ -2,6 +2,8 @@
   "extends": "./tsconfig.json",
   "exclude": ["**/*.test.ts", "**/__fixtures__"],
   "compilerOptions": {
-    "outDir": "dist"
+    "outDir": "dist",
+    "lib": ["esnext", "dom"],
+    "emitDeclarationOnly": true
   }
 }
