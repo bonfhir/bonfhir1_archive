@@ -18,3 +18,5 @@
 .parcel-cache/*
 
 **/settings.json
+
+**/.rollup.cache/*

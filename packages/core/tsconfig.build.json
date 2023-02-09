@@ -3,7 +3,6 @@
   "exclude": ["**/*.test.ts", "**/__fixtures__"],
   "compilerOptions": {
     "outDir": "dist",
-    "lib": ["esnext", "dom"],
-    "emitDeclarationOnly": true
+    "lib": ["esnext", "dom"]
   }
 }
