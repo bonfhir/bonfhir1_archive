@@ -1,4 +1,8 @@
 import { FhirDateTypeAdapter, fhirDateTypeAdapter } from "./data-types/date";
+import {
+  FhirIntegerTypeAdapter,
+  fhirIntegerTypeAdapter,
+} from "./data-types/integer";
 
 /**
  * This is used to manipulate FHIR data types, both parsing values and formatting them as localized strings.
@@ -8,6 +12,7 @@ import { FhirDateTypeAdapter, fhirDateTypeAdapter } from "./data-types/date";
 export interface FhirDataTypeAdapter {
   locale: string | undefined;
   date: FhirDateTypeAdapter;
+  integer: FhirIntegerTypeAdapter;
 }
 
 /**
@@ -24,6 +29,7 @@ export function intlFhirDataTypeAdapter(
   return {
     locale: locale,
     date: fhirDateTypeAdapter(locale),
+    integer: fhirIntegerTypeAdapter(locale),
   };
 }
 
