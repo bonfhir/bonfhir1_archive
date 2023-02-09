@@ -17,7 +17,8 @@
     "graph": "nx graph",
     "postinstall": "husky install",
     "test": "lerna run test",
-    "version": "yarn install && git stage yarn.lock"
+    "version": "yarn install && git stage yarn.lock",
+    "reset": "find . -type dir -name node_modules | xargs rm -rf && rm -rf yarn.lock"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.3.0",

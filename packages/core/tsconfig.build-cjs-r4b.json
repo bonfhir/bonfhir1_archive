@@ -1,0 +1,9 @@
+{
+  "extends": "./tsconfig.build.json",
+  "compilerOptions": {
+    "outDir": "dist/cjs/r4b",
+    "rootDir": "src/r4b"
+  },
+  "include": ["src/r4b/**/*.ts"],
+  "exclude": ["**/*.test.ts"]
+}
