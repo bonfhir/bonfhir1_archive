@@ -9,6 +9,7 @@ describe("intlFhirDataTypeAdapter", () => {
         expect(typeof adapter.markdown.format).toBe("function");
         expect(typeof adapter.code.format).toBe("function");
         expect(typeof adapter.date.format).toBe("function");
+        expect(typeof adapter.boolean.format).toBe("function");
         expect(typeof adapter.uri.format).toBe("function");
         expect(typeof adapter.uri.format).toBe("function");
         expect(typeof adapter.canonical.format).toBe("function");

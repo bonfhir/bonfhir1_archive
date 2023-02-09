@@ -1,5 +1,9 @@
 import _ from "lodash";
 import {
+  FhirBooleanTypeAdapter,
+  fhirBooleanTypeAdapter,
+} from "./data-types/boolean";
+import {
   FhirCanonicalTypeAdapter,
   fhirCanonicalTypeAdapter,
 } from "./data-types/canonical";
@@ -37,6 +41,7 @@ export interface FhirDataTypeAdapter {
   locale: string | undefined;
   code: FhirCodeTypeAdapter;
   date: FhirDateTypeAdapter;
+  boolean: FhirBooleanTypeAdapter;
   dateTime: FhirDateTimeTypeAdapter;
   instant: FhirInstantTypeAdapter;
   integer: FhirIntegerTypeAdapter;
@@ -85,6 +90,7 @@ export function intlFhirDataTypeAdapter(
     locale,
     code: fhirCodeTypeAdapter(locale),
     date: fhirDateTypeAdapter(locale),
+    boolean: fhirBooleanTypeAdapter(locale),
     dateTime: fhirDateTimeTypeAdapter(locale),
     instant: fhirInstantTypeAdapter(locale),
     integer: fhirIntegerTypeAdapter(locale),
