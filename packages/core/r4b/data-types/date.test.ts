@@ -1,4 +1,4 @@
-import { DateStyle, FhirDate, fhirDateTypeAdapter } from "./date";
+import { FhirDate, FhirDateFormatOptions, fhirDateTypeAdapter } from "./date";
 
 describe("fhirDateTypeAdapter", () => {
   ["en-us", undefined].forEach((locale) => {
@@ -41,12 +41,14 @@ describe("fhirDateTypeAdapter", () => {
           expect(adapter.parse(value)).toMatchObject(expected);
         });
 
-        it.each(<Array<[string | FhirDate, DateStyle | undefined, string]>>[
+        it.each(<
+          Array<[string | FhirDate, FhirDateFormatOptions | undefined, string]>
+        >[
           ["2023-02-08", undefined, "2/8/2023"],
-          ["2023-02-08", "full", "Wednesday, February 8, 2023"],
-          ["2023-02-08", "medium", "Feb 8, 2023"],
-          ["2023-02-08", "short", "2/8/23"],
-          ["2023-02", "medium", "Feb 2023"],
+          ["2023-02-08", { dateStyle: "full" }, "Wednesday, February 8, 2023"],
+          ["2023-02-08", { dateStyle: "medium" }, "Feb 8, 2023"],
+          ["2023-02-08", { dateStyle: "short" }, "2/8/23"],
+          ["2023-02", { dateStyle: "medium" }, "Feb 2023"],
           ["2023", undefined, "2023"],
         ])("format %p", (value, style, expected) => {
           expect(adapter.format(value, style)).toEqual(expected);
@@ -59,12 +61,14 @@ describe("fhirDateTypeAdapter", () => {
     const adapter = fhirDateTypeAdapter("fr-CA");
 
     describe("date", () => {
-      it.each(<Array<[string | FhirDate, DateStyle | undefined, string]>>[
+      it.each(<
+        Array<[string | FhirDate, FhirDateFormatOptions | undefined, string]>
+      >[
         ["2023-02-08", undefined, "2023-02-08"],
-        ["2023-02-08", "full", "mercredi 8 février 2023"],
-        ["2023-02-08", "medium", "8 févr. 2023"],
-        ["2023-02-08", "short", "2023-02-08"],
-        ["2023-02", "medium", "févr. 2023"],
+        ["2023-02-08", { dateStyle: "full" }, "mercredi 8 février 2023"],
+        ["2023-02-08", { dateStyle: "medium" }, "8 févr. 2023"],
+        ["2023-02-08", { dateStyle: "short" }, "2023-02-08"],
+        ["2023-02", { dateStyle: "medium" }, "févr. 2023"],
         ["2023", undefined, "2023"],
       ])("format %p", (value, style, expected) => {
         expect(adapter.format(value, style)).toEqual(expected);

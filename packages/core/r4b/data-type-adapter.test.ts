@@ -7,6 +7,7 @@ describe("intlFhirDataTypeAdapter", () => {
 
       it("exposes different adapters", () => {
         expect(typeof adapter.date.format).toBe("function");
+        expect(typeof adapter.integer.format).toBe("function");
       });
     });
   });
