@@ -2,7 +2,7 @@
   "extends": "./tsconfig.build.json",
   "compilerOptions": {
     "outDir": "dist/cjs/r4b",
-    "rootDir": "src/r4b"
+    "rootDirs": ["src/r4b", "../core/src"]
   },
   "include": ["src/r4b/**/*.ts"],
   "exclude": ["**/*.test.ts"]

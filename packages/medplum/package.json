@@ -20,14 +20,17 @@
     ".": {
       "types": "./dist/esm/index.d.ts",
       "require": "./dist/cjs/index.cjs",
-      "import": "./dist/esm/index.mjs"
+      "import": "./dist/esm/index.mjs",
+      "default": "./dist/esm/index.mjs"
     },
     "./r4b": {
       "types": "./dist/esm/r4b/index.d.ts",
       "require": "./dist/cjs/r4b/index.cjs",
-      "import": "./dist/esm/r4b/index.mjs"
+      "import": "./dist/esm/r4b/index.mjs",
+      "default": "./dist/esm/r4b/index.mjs"
     }
   },
+  "types": "./dist/esm/index.d.ts",
   "packageManager": "yarn@3.3.1",
   "devDependencies": {
     "@bonfhir/eslint-config": "^1.0.0",

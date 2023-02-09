@@ -3,6 +3,9 @@
   "include": ["**/*.ts"],
   "exclude": ["**/dist"],
   "compilerOptions": {
-    "rootDir": "."
+    "rootDirs": ["src", "../core/src"],
+    "paths": {
+      "@bonfhir/core/*": ["../core/src/*"]
+    }
   }
 }

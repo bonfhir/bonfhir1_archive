@@ -13,13 +13,19 @@ const extensions = [".ts"];
 const gitHash = execSync("git rev-parse --short HEAD").toString().trim();
 const moduleVersion = packageJson.version + "-" + gitHash;
 
-const globalModules = []; // add package names to be treated as external
 const makeGlobalModuleName = (id) => {
   const [moduleName, ..._] = id.replace("./", "").split("/");
   return moduleName;
 };
-const isExternalModule = (id) =>
-  globalModules.includes(makeGlobalModuleName(id));
+const makeExternalPredicate = (externalArr) => {
+  if (externalArr.length === 0) return () => false;
+  const externalPattern = new RegExp(`^(${externalArr.join("|")})($|/)`);
+  return (id) => externalPattern.test(id);
+};
+const external = makeExternalPredicate([
+  ...Object.keys(packageJson.dependencies || {}),
+  ...Object.keys(packageJson.peerDependencies || {}),
+]);
 
 export default [
   {
@@ -45,7 +51,7 @@ export default [
         preventAssignment: true,
         values: {
           "process.env.NODE_ENV": '"production"',
-          "process.env.BONFHIR_CORE_VERSION": `"${moduleVersion}"`,
+          "process.env.BONFHIR_MEDPLUM_VERSION": `"${moduleVersion}"`,
         },
       }),
       json(),
@@ -61,7 +67,7 @@ export default [
         },
       },
     ],
-    external: isExternalModule,
+    external,
   },
   {
     input: "src/r4b/index.ts",
@@ -86,7 +92,7 @@ export default [
         preventAssignment: true,
         values: {
           "process.env.NODE_ENV": '"production"',
-          "process.env.BONFHIR_CORE_VERSION": `"${moduleVersion}"`,
+          "process.env.BONFHIR_MEDPLUM_VERSION": `"${moduleVersion}"`,
         },
       }),
       json(),
@@ -101,7 +107,7 @@ export default [
         },
       },
     ],
-    external: isExternalModule,
+    external,
   },
   {
     input: "src/index.ts",
@@ -127,7 +133,7 @@ export default [
         preventAssignment: true,
         values: {
           "process.env.NODE_ENV": '"production"',
-          "process.env.BONFHIR_CORE_VERSION": `"${moduleVersion}"`,
+          "process.env.BONFHIR_MEDPLUM_VERSION": `"${moduleVersion}"`,
         },
       }),
       json(),
@@ -143,6 +149,6 @@ export default [
         },
       },
     ],
-    external: isExternalModule,
+    external,
   },
 ];
