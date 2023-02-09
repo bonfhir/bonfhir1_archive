@@ -1,6 +1,6 @@
 export * from "./builders";
 export * from "./bundle-navigator";
-export * from "./data-type-adapter";
+// export * from "./data-type-adapter"; // missing from rebased main branch??
 export * from "./date";
 export * from "./fhir-restful-client";
 export * from "./merge";
