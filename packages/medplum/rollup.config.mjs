@@ -6,6 +6,7 @@ import terser from "@rollup/plugin-terser";
 import typescript from "@rollup/plugin-typescript";
 import { execSync } from "child_process";
 import { mkdirSync, writeFileSync } from "fs";
+import analyze from "rollup-plugin-analyzer";
 import packageJson from "./package.json" assert { type: "json" };
 
 const extensions = [".ts"];
@@ -66,6 +67,7 @@ export default [
           writeFileSync("./dist/cjs/package.json", '{"type": "commonjs"}');
         },
       },
+      analyze({ hideDeps: true, limit: 0, summaryOnly: true }),
     ],
     external,
   },
@@ -106,6 +108,7 @@ export default [
           // TBD
         },
       },
+      analyze({ hideDeps: true, limit: 0, summaryOnly: true }),
     ],
     external,
   },
@@ -148,6 +151,7 @@ export default [
           writeFileSync("./dist/esm/package.json", '{"type": "module"}');
         },
       },
+      analyze({ hideDeps: true, limit: 0, summaryOnly: true }),
     ],
     external,
   },
