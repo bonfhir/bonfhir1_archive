@@ -19,11 +19,14 @@ describe("fhirBooleanTypeAdapter", () => {
         });
 
         it.each([
-          [true, "true"],
-          [false, "false"],
-          [undefined, ""],
-        ])("format %p", (value, expected) => {
-          expect(adapter.format(value)).toEqual(expected);
+          [true, "true", undefined],
+          [false, "false", undefined],
+          [undefined, "", undefined],
+          [true, "yes", { labels: { true: "yes" } }],
+          [null, "nothing", { labels: { nil: "nothing" } }],
+          [undefined, "nothing at all", { labels: { nil: "nothing at all" } }],
+        ])("format %p", (value, expected, options) => {
+          expect(adapter.format(value, options)).toEqual(expected);
         });
 
         describe("given invalid value", () => {

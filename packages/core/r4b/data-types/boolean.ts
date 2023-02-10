@@ -1,8 +1,17 @@
+import _ from "lodash";
 /**
  * A boolean
  *
  * @see https://hl7.org/fhir/datatypes.html#boolean
  */
+
+export interface FhirBooleanFormatOptions {
+  labels?: {
+    true?: string;
+    false?: string;
+    nil?: string;
+  };
+}
 
 export interface FhirBooleanTypeAdapter {
   locale: string | undefined;
@@ -18,10 +27,18 @@ export interface FhirBooleanTypeAdapter {
    *
    * @see https://hl7.org/fhir/datatypes.html#boolean
    */
-  format(value: string | boolean | null | undefined): string;
+  format(
+    value: string | boolean | null | undefined,
+    options?: FhirBooleanFormatOptions
+  ): string;
 }
 
 const fhirBooleanRegexp = new RegExp("^(true)|(false)$");
+const defaultLabels = {
+  true: "true",
+  false: "false",
+  nil: "",
+};
 
 /**
  * Return a {@link FhirBooleanTypeAdapter}
@@ -42,17 +59,27 @@ export function fhirBooleanTypeAdapter(
       // value is a string
       if (!sanitizedValue.match(fhirBooleanRegexp))
         throw new Error(
-          "Value does not match the fhir boolean format as described in `https://hl7.org/fhir/datatypes.html#boolean'"
+          "Value does not match the fhir boolean format as described in `https://hl7.org/fhir/datatypes.html#boolean`"
         );
 
       return sanitizedValue === "true";
     },
 
-    format(value) {
+    format(value, options) {
       const fhirBoolean =
         typeof value === "boolean" ? value : this.parse(value);
 
-      return fhirBoolean?.toString() || "";
+      options ||= {};
+      const labels = _.merge({}, defaultLabels, options.labels || {});
+      switch (fhirBoolean) {
+        case true:
+          return labels["true"];
+        case false:
+          return labels["false"];
+        case null:
+        case undefined:
+          return labels["nil"];
+      }
     },
   };
 }
