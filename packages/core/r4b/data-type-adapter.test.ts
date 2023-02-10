@@ -7,6 +7,8 @@ describe("intlFhirDataTypeAdapter", () => {
 
       it("exposes different adapters", () => {
         expect(typeof adapter.date.format).toBe("function");
+        expect(typeof adapter.dateTime.format).toBe("function");
+        expect(typeof adapter.instant.format).toBe("function");
         expect(typeof adapter.integer.format).toBe("function");
         expect(typeof adapter.decimal.format).toBe("function");
       });
