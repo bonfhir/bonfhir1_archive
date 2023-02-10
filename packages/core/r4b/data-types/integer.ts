@@ -18,7 +18,7 @@ export interface FhirIntegerFormatOptions {
 }
 
 export interface FhirIntegerTypeAdapter {
-  locale: string | undefined;
+  locale: FhirDataTypeAdapter["locale"];
   /**
    * Parse a FHIR integer
    *
