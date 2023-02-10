@@ -65,7 +65,7 @@ export class BundleNavigator<
     | undefined;
 
   // Index resources first by a fhirPath indicating a reverse reference
-  // (probably obtain through a revinclude instruction), then by the actual reverse reference - e.g.
+  // (probably obtained through a _revinclude instruction), then by the actual reverse reference - e.g.
   // "ofType(Provenance).target.reference" -> Patient/982effa0-aa0f-4995-b380-c1621b1f0ffc -> [Provenance]
   // Built by _ensureFhirPathIndex
   private _resourcesByRefFhirPathIndex:
@@ -218,11 +218,23 @@ export class BundleNavigator<
     >[];
   }
 
+  /**
+   * Return all unique resources across bundles.
+   **/
+  public get resources(): IterableIterator<
+    PrimaryResourceType | SecondaryResourceType
+  > {
+    this._ensurePrimaryIndices();
+    // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+    return this._resourcesByRelativeReference!.values();
+  }
+
   private _ensurePrimaryIndices() {
     if (!this._resourcesByRelativeReference) {
       this._resourcesByRelativeReference = new Map();
       this._resourcesBySearchMode = new Map();
       this._resourcesByType = new Map();
+
       for (const entry of this._bundles
         .flatMap(
           (x) =>
