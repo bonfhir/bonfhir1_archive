@@ -1,4 +1,5 @@
 import Decimal from "decimal.js";
+import { FhirDataTypeAdapter } from "../data-type-adapter";
 /**
  * Rational numbers that have a decimal representation.
  *
@@ -17,7 +18,8 @@ export interface FhirDecimalFormatOptions {
 }
 
 export interface FhirDecimalTypeAdapter {
-  locale: string | undefined;
+  locale?: FhirDataTypeAdapter["locale"];
+
   /**
    * Parse a FHIR decimal
    *

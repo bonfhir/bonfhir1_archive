@@ -1,3 +1,5 @@
+import { FhirDataTypeAdapter } from "../data-type-adapter";
+
 /**
  * An Integer
  *
@@ -43,7 +45,7 @@ const fhirIntegerRegexp = new RegExp("^([0]|[-+]?[1-9][0-9]*)$");
  * @param locale - see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl#locales_argument
  */
 export function fhirIntegerTypeAdapter(
-  locale: string | undefined
+  locale?: string | undefined
 ): FhirIntegerTypeAdapter {
   // JIT locale check
   Intl.NumberFormat(locale);
