@@ -19295,6 +19295,33 @@ class ResourceSearchBuilderCondition {
   }
 
   /**
+   * Code for the condition
+   */
+  code(
+    value:
+      | {
+          system?: string | null | undefined;
+          code?: string | null | undefined;
+          value?: string | null | undefined;
+        }
+      | string
+      | Array<
+          | {
+              system?: string | null | undefined;
+              code?: string | null | undefined;
+              value?: string | null | undefined;
+            }
+          | string
+        >
+      | null
+      | undefined,
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderCondition {
+    this.builder.token("code", value, modifier);
+    return this;
+  }
+
+  /**
    * Encounter created as part of
    */
   encounter(
@@ -19427,6 +19454,35 @@ class ResourceSearchBuilderCondition {
     modifier?: StringModifier | null | undefined
   ): ResourceSearchBuilderCondition {
     this.builder.string("onset-info", value, modifier);
+    return this;
+  }
+
+  /**
+   * Who has the condition?
+   */
+  patient(
+    id:
+      | { id: string; type: string }
+      | {
+          system?: string | null | undefined;
+          code?: string | null | undefined;
+          value?: string | null | undefined;
+        }
+      | string
+      | Array<
+          | { id: string; type: string }
+          | {
+              system?: string | null | undefined;
+              code?: string | null | undefined;
+              value?: string | null | undefined;
+            }
+          | string
+        >
+      | null
+      | undefined,
+    modifier?: ":identifier" | ResourceType | null | undefined
+  ): ResourceSearchBuilderCondition {
+    this.builder.reference("patient", id, modifier);
     return this;
   }
 
@@ -19593,6 +19649,8 @@ export type SortOrderCondition =
   | "-category"
   | "clinical-status"
   | "-clinical-status"
+  | "code"
+  | "-code"
   | "encounter"
   | "-encounter"
   | "evidence"
@@ -19605,6 +19663,8 @@ export type SortOrderCondition =
   | "-onset-date"
   | "onset-info"
   | "-onset-info"
+  | "patient"
+  | "-patient"
   | "recorded-date"
   | "-recorded-date"
   | "severity"
