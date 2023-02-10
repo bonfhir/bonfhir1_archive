@@ -71,7 +71,7 @@ export type FhirDataTypeAdapterMessageExpression =
  * @param locale - see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl#locales_argument
  */
 export function intlFhirDataTypeAdapter(
-  locale: string | undefined
+  locale?: string | undefined
 ): FhirDataTypeAdapter {
   // JIT locale check
   Intl.DateTimeFormat(locale);
