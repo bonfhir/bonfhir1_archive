@@ -9,6 +9,8 @@ export interface FhirDateFormatOptions {
 }
 
 export interface FhirDateTypeAdapter {
+  locale: string | undefined;
+
   /**
    * Parse a FHIR date
    *
@@ -65,14 +67,18 @@ const fhirDateRegexp = new RegExp(
 );
 
 /**
- * Return a {@link FhirDataTypeAdapter} that uses the [`Intl` API](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl)
+ * Return a {@link FhirDateTypeAdapter} that uses the [`Intl` API](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl)
  * (ECMAScript Internationalization API)
  * @param locale - see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl#locales_argument
  */
 export function fhirDateTypeAdapter(
   locale: string | undefined
 ): FhirDateTypeAdapter {
+  // JIT locale check
+  Intl.DateTimeFormat(locale);
+
   return {
+    locale,
     parse(value) {
       if (!value?.trim()) {
         return undefined;

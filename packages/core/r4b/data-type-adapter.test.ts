@@ -8,6 +8,11 @@ describe("intlFhirDataTypeAdapter", () => {
       it("exposes different adapters", () => {
         expect(typeof adapter.date.format).toBe("function");
         expect(typeof adapter.integer.format).toBe("function");
+        expect(typeof adapter.decimal.format).toBe("function");
+      });
+
+      it("exposes the locale", () => {
+        expect(adapter.locale).toEqual(locale);
       });
     });
   });
