@@ -1,5 +1,9 @@
 import { FhirDateTypeAdapter, fhirDateTypeAdapter } from "./data-types/date";
 import {
+  FhirDateTimeTypeAdapter,
+  fhirDateTimeTypeAdapter,
+} from "./data-types/dateTime";
+import {
   FhirDecimalTypeAdapter,
   fhirDecimalTypeAdapter,
 } from "./data-types/decimal";
@@ -16,6 +20,7 @@ import {
 export interface FhirDataTypeAdapter {
   locale: string | undefined;
   date: FhirDateTypeAdapter;
+  dateTime: FhirDateTimeTypeAdapter;
   integer: FhirIntegerTypeAdapter;
   decimal: FhirDecimalTypeAdapter;
 }
@@ -34,6 +39,7 @@ export function intlFhirDataTypeAdapter(
   return {
     locale,
     date: fhirDateTypeAdapter(locale),
+    dateTime: fhirDateTimeTypeAdapter(locale),
     integer: fhirIntegerTypeAdapter(locale),
     decimal: fhirDecimalTypeAdapter(locale),
   };

@@ -1,3 +1,6 @@
+import { FhirDataTypeAdapter } from "../data-type-adapter";
+import { fhirDateRegexpFragment } from "./helpers";
+
 /**
  * A date, or partial date (e.g. just year or year + month) as used in human communication.
  *
@@ -9,7 +12,7 @@ export interface FhirDateFormatOptions {
 }
 
 export interface FhirDateTypeAdapter {
-  locale: string | undefined;
+  locale?: FhirDataTypeAdapter["locale"];
 
   /**
    * Parse a FHIR date
@@ -60,11 +63,7 @@ export interface FhirDate {
   day: number | undefined;
 }
 
-const fhirDateRegexp = new RegExp(
-  "^(?<year>[0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)" +
-    "(-(?<month>0[1-9]|1[0-2])" +
-    "(-(?<day>0[1-9]|[1-2][0-9]|3[0-1]))?)?$"
-);
+const fhirDateRegexp = new RegExp(`^${fhirDateRegexpFragment}$`);
 
 /**
  * Return a {@link FhirDateTypeAdapter} that uses the [`Intl` API](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl)
@@ -72,7 +71,7 @@ const fhirDateRegexp = new RegExp(
  * @param locale - see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl#locales_argument
  */
 export function fhirDateTypeAdapter(
-  locale: string | undefined
+  locale?: string | undefined
 ): FhirDateTypeAdapter {
   // JIT locale check
   Intl.DateTimeFormat(locale);
@@ -113,23 +112,24 @@ export function fhirDateTypeAdapter(
 
       if (!fhirDate) return "";
 
+      const intlOptions: Intl.DateTimeFormatOptions = {};
+
       switch (fhirDate.flavour) {
         case "year":
-          return new Intl.DateTimeFormat(locale, { year: "numeric" }).format(
-            fhirDate.date
-          );
+          intlOptions.year = "numeric";
+          break;
         case "year-month":
-          return new Intl.DateTimeFormat(locale, {
-            year: "numeric",
-            month: convertDateStyleToMonthStyle(options?.dateStyle),
-          }).format(fhirDate.date);
+          intlOptions.year = "numeric";
+          intlOptions.month = convertDateStyleToMonthStyle(options?.dateStyle);
+          break;
         case "full":
-          return new Intl.DateTimeFormat(locale, {
-            dateStyle: options?.dateStyle || undefined,
-          }).format(fhirDate.date);
+          intlOptions.dateStyle = options?.dateStyle || undefined;
+          break;
         default:
           throw new Error(`Unknown date flavour ${fhirDate.flavour}`);
       }
+
+      return new Intl.DateTimeFormat(locale, intlOptions).format(fhirDate.date);
     },
   };
 }
