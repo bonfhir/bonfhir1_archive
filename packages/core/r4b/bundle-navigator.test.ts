@@ -281,4 +281,22 @@ describe("BundleNavigator", () => {
       );
     });
   });
+
+  describe("resources", () => {
+    it("returns all the resources", () => {
+      const navigator = bundleNavigator<Patient, Provenance | Organization>(
+        patientsListBundle
+      );
+
+      expect([...navigator.resources]).toHaveLength(102);
+    });
+
+    describe("for an empty bundle", () => {
+      it("returns an empty array", () => {
+        const navigator = bundleNavigator(emptyBundle);
+
+        expect([...navigator.resources]).toStrictEqual([]);
+      });
+    });
+  });
 });
