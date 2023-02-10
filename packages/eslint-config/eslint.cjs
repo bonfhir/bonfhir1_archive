@@ -14,4 +14,32 @@ module.exports = {
   parser: "@typescript-eslint/parser",
   plugins: ["@typescript-eslint/eslint-plugin"],
   root: true,
+  rules: {
+    // https://stackoverflow.com/a/64067915/5397051
+    // Allow unused params if they start with _
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": [
+      "warn",
+      {
+        argsIgnorePattern: "^_",
+        varsIgnorePattern: "^_",
+        caughtErrorsIgnorePattern: "^_",
+      },
+    ],
+    // forbid usage of unused variables (marked with an _)
+    "@typescript-eslint/naming-convention": [
+      "error",
+      {
+        selector: ["parameter", "variable"],
+        leadingUnderscore: "forbid",
+        format: null,
+      },
+      {
+        selector: "parameter",
+        leadingUnderscore: "require",
+        format: null,
+        modifiers: ["unused"],
+      },
+    ],
+  },
 };
