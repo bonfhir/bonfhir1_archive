@@ -36,6 +36,12 @@ const execAsync = promisify(exec);
     join(distDirectory, "README.md")
   );
 
+  // Copy CHANGELOG.md
+  await copyFile(
+    join(rootPackageDirectory, "CHANGELOG.md"),
+    join(distDirectory, "CHANGELOG.md")
+  );
+
   // Delete TypeScript build info
   try {
     await unlink(join(distDirectory, "tsconfig.build.tsbuildinfo"));
