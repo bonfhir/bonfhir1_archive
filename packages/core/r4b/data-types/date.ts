@@ -112,7 +112,9 @@ export function fhirDateTypeAdapter(
 
       if (!fhirDate) return "";
 
-      const intlOptions: Intl.DateTimeFormatOptions = {};
+      const intlOptions: Intl.DateTimeFormatOptions = {
+        timeZone: "UTC",
+      };
 
       switch (fhirDate.flavour) {
         case "year":
