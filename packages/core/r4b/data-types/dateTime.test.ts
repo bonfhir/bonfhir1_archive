@@ -37,8 +37,8 @@ describe("fhirDateTimeTypeAdapter", () => {
     it.each([
       "2015-02-07T13", // invalid time
       "2015-02-07T", // invalid time
-      "13:28:17-05:00", // no time
-      "T13:28:17-05:00", // no time
+      "13:28:17-05:00", // no date
+      "T13:28:17-05:00", // no date
       "2015-02-07T13:28:17", // no timezone
       "2015-02-07T13:28:17-", // no timezone
       "2015-02-07T13:28:17+", // no timezone
