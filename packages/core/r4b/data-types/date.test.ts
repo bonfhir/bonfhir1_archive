@@ -48,7 +48,7 @@ describe("fhirDateTypeAdapter", () => {
         it.each(<
           Array<[string | FhirDate, FhirDateFormatOptions | undefined, string]>
         >[
-          ["2023-02-08", undefined, "2/8/2023"],
+          ["2023-12-31", undefined, "12/31/2023"],
           ["2023-02-08", { dateStyle: "full" }, "Wednesday, February 8, 2023"],
           ["2023-02-08", { dateStyle: "medium" }, "Feb 8, 2023"],
           ["2023-02-08", { dateStyle: "short" }, "2/8/23"],
