@@ -3,7 +3,14 @@
  */
 
 import { existsSync } from "fs";
-import { copyFile, readFile, rename, unlink, writeFile } from "fs/promises";
+import {
+  copyFile,
+  readdir,
+  readFile,
+  rename,
+  unlink,
+  writeFile,
+} from "fs/promises";
 import { exec } from "node:child_process";
 import { promisify } from "node:util";
 import { dirname, join } from "path";
@@ -23,6 +30,20 @@ const execAsync = promisify(exec);
   delete packageJson.packageManager;
   delete packageJson.devDependencies;
   delete packageJson.prettier;
+
+  packageJson.exports = {};
+  for (const packageRootDirName of (
+    await readdir(distDirectory, { withFileTypes: true })
+  )
+    .filter((dirent) => dirent.isDirectory())
+    .map((dirent) => dirent.name)) {
+    packageJson.exports[`./${packageRootDirName}`] = {
+      types: `./${packageRootDirName}/index.d.ts`,
+      require: `./${packageRootDirName}/index.cjs`,
+      import: `./${packageRootDirName}/index.js`,
+      default: `./${packageRootDirName}/index.js`,
+    };
+  }
 
   await writeFile(
     join(distDirectory, "package.json"),

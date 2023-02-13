@@ -10,17 +10,9 @@
     "check": "prettier --check ./**/*.tsx && eslint ./**/*.tsx && tsc --noEmit",
     "clean": "rimraf dist/",
     "format": "prettier --loglevel warn --write ./**/*.tsx && eslint --fix ./**/*.tsx",
-    "package:create": "node package.js pack",
-    "package:publish": "node package.js publish",
+    "package:create": "yarn build && node package.js pack",
+    "package:publish": "yarn build && node package.js publish",
     "test": "jest"
-  },
-  "exports": {
-    "./r4b": {
-      "types": "./r4b/index.d.ts",
-      "require": "./r4b/index.cjs",
-      "import": "./r4b/index.js",
-      "default": "./r4b/index.js"
-    }
   },
   "packageManager": "yarn@3.3.1",
   "devDependencies": {
