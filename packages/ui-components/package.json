@@ -6,7 +6,7 @@
   "license": "APACHE-2.0",
   "type": "module",
   "scripts": {
-    "build": "yarn clean && tsc --project tsconfig.build.json && yarn build:ladle",
+    "build": "yarn clean && tsup r4b/index.tsx --format esm,cjs --out-dir dist/r4b --shims --dts --tsconfig tsconfig.build.json",
     "build:ladle": "ladle build --stories='./**/*.stories.tsx' --outDir dist-ladle/ --base /ui-components/dist-ladle",
     "check": "prettier --check ./**/*.tsx && eslint ./**/*.tsx && tsc --noEmit",
     "clean": "rimraf dist/ dist-ladle/",
@@ -14,6 +14,14 @@
     "package:create": "node package.js pack",
     "package:publish": "node package.js publish",
     "test": "jest"
+  },
+  "exports": {
+    "./r4b": {
+      "types": "./r4b/index.d.ts",
+      "require": "./r4b/index.cjs",
+      "import": "./r4b/index.js",
+      "default": "./r4b/index.js"
+    }
   },
   "packageManager": "yarn@3.3.1",
   "devDependencies": {
@@ -41,6 +49,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "rimraf": "^3.0.2",
+    "tsup": "^6.6.2",
     "typescript": "^4.9.4"
   },
   "dependencies": {
@@ -49,7 +58,6 @@
   },
   "prettier": "@bonfhir/prettier-config",
   "peerDependencies": {
-    "@tanstack/react-query": "^4.0.0",
     "react": "*",
     "react-dom": "*"
   }
