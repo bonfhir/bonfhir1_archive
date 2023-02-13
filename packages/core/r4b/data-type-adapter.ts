@@ -2,6 +2,7 @@ import {
   FhirCanonicalTypeAdapter,
   fhirCanonicalTypeAdapter,
 } from "./data-types/canonical";
+import { fhirCodeTypeAdapter, FhirCodeTypeAdapter } from "./data-types/code";
 import { FhirDateTypeAdapter, fhirDateTypeAdapter } from "./data-types/date";
 import {
   FhirDateTimeTypeAdapter,
@@ -29,6 +30,7 @@ import { FhirURLTypeAdapter, fhirURLTypeAdapter } from "./data-types/URL";
  */
 export interface FhirDataTypeAdapter {
   locale: string | undefined;
+  code: FhirCodeTypeAdapter;
   date: FhirDateTypeAdapter;
   dateTime: FhirDateTimeTypeAdapter;
   instant: FhirInstantTypeAdapter;
@@ -52,6 +54,7 @@ export function intlFhirDataTypeAdapter(
 
   return {
     locale,
+    code: fhirCodeTypeAdapter(locale),
     date: fhirDateTypeAdapter(locale),
     dateTime: fhirDateTimeTypeAdapter(locale),
     instant: fhirInstantTypeAdapter(locale),
