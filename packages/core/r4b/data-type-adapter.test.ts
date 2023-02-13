@@ -6,6 +6,7 @@ describe("intlFhirDataTypeAdapter", () => {
       const adapter = intlFhirDataTypeAdapter(locale);
 
       it("exposes different adapters", () => {
+        expect(typeof adapter.code.format).toBe("function");
         expect(typeof adapter.date.format).toBe("function");
         expect(typeof adapter.uri.format).toBe("function");
         expect(typeof adapter.uri.format).toBe("function");
