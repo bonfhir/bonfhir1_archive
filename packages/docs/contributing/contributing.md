@@ -54,8 +54,11 @@ Individual packages can be found in the [packages](https://github.com/bonfhir/bo
 
 Each package should expose a list of standard [scripts](https://yarnpkg.com/configuration/manifest/#scripts):
 
-- `yarn build`: Create a production build of the code (compiled with TypeScript)
+- `yarn build`: Create a production build of the code
 - `yarn check`: Run quality checks: [Prettier](https://prettier.io/), [ESLint](https://eslint.org/) and [type checking](https://www.typescriptlang.org/docs/handbook/compiler-options.html#using-the-cli)
 - `yarn clean`: Clean artifacts related to the build process; may be invoked automatically by the `build` script
 - `yarn codegen`: Run the [code generation](codegen) on the package source files, to generate source code
+- `yarn format`: Automatically format the code (using Prettier & ESLint); if you use the devcontainer this should be done automatically by VSCode
+- `yarn package:create`: Package the build to create a local NPM package
+- `yarn package:publish`: Package the build and publish to the NPM registry
 - `yarn test`: Run automated tests

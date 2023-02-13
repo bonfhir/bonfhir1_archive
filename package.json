@@ -14,6 +14,7 @@
     "clean": "lerna run clean",
     "codegen": "lerna run codegen",
     "commit": "commit",
+    "format": "lerna run format",
     "graph": "nx graph",
     "postinstall": "husky install",
     "test": "lerna run test",

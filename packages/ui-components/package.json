@@ -11,6 +11,7 @@
     "check": "prettier --check ./**/*.tsx && eslint ./**/*.tsx && tsc --noEmit",
     "clean": "rimraf dist/ dist-ladle/",
     "dev": "ladle serve --stories='./**/*.stories.tsx'",
+    "format": "prettier --loglevel warn --write ./**/*.tsx && eslint --fix ./**/*.tsx",
     "package:create": "node package.js pack",
     "package:publish": "node package.js publish",
     "test": "jest"

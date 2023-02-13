@@ -9,6 +9,7 @@
     "build": "yarn clean && tsup r4b/index.ts --format esm,cjs --out-dir dist/r4b --shims --dts --tsconfig tsconfig.build.json",
     "check": "prettier --check ./**/*.ts && eslint ./**/*.ts && tsc --noEmit",
     "clean": "rimraf dist/",
+    "format": "prettier --loglevel warn --write ./**/*.ts && eslint --fix ./**/*.ts",
     "package:create": "node package.js pack",
     "package:publish": "node package.js publish",
     "test": "jest"
