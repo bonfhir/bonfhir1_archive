@@ -21,6 +21,10 @@ import {
   FhirIntegerTypeAdapter,
   fhirIntegerTypeAdapter,
 } from "./data-types/integer";
+import {
+  fhirMarkdownTypeAdapter,
+  FhirMarkdownTypeAdapter,
+} from "./data-types/markdown";
 import { FhirURITypeAdapter, fhirURITypeAdapter } from "./data-types/URI";
 import { FhirURLTypeAdapter, fhirURLTypeAdapter } from "./data-types/URL";
 
@@ -40,6 +44,7 @@ export interface FhirDataTypeAdapter {
   uri: FhirURITypeAdapter;
   url: FhirURLTypeAdapter;
   canonical: FhirCanonicalTypeAdapter;
+  markdown: FhirMarkdownTypeAdapter;
 
   message: (
     strings: TemplateStringsArray,
@@ -87,6 +92,7 @@ export function intlFhirDataTypeAdapter(
     uri: fhirURITypeAdapter(locale),
     url: fhirURLTypeAdapter(locale),
     canonical: fhirCanonicalTypeAdapter(locale),
+    markdown: fhirMarkdownTypeAdapter(locale),
 
     message(
       strings: TemplateStringsArray,
