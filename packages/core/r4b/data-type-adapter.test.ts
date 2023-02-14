@@ -30,4 +30,23 @@ describe("intlFhirDataTypeAdapter", () => {
       );
     });
   });
+
+  describe("message", () => {
+    const adapter = intlFhirDataTypeAdapter("en-us");
+
+    it("format messages", () => {
+      expect(adapter.message``).toEqual("");
+      expect(adapter.message`this is ${[1, "integer"]} guy.`).toEqual(
+        "this is 1 guy."
+      );
+
+      expect(
+        adapter.message`this is ${[
+          "2023-02-02",
+          "date",
+          { dateStyle: "long" },
+        ]} guy.`
+      ).toEqual("this is February 2, 2023 guy.");
+    });
+  });
 });

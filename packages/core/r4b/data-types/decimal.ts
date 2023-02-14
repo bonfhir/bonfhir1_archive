@@ -25,7 +25,7 @@ export interface FhirDecimalTypeAdapter {
    *
    * @see https://hl7.org/fhir/datatypes.html#decimal
    */
-  parse(value: string | number | undefined): FhirDecimal | undefined;
+  parse(value: string | number | null | undefined): FhirDecimal | undefined;
 
   /**
    * Format a FHIR decimal
@@ -33,8 +33,8 @@ export interface FhirDecimalTypeAdapter {
    * @see https://hl7.org/fhir/datatypes.html#decimal
    */
   format(
-    value: FhirDecimal | string | number | undefined,
-    options?: FhirDecimalFormatOptions | undefined
+    value: FhirDecimal | string | number | null | undefined,
+    options?: FhirDecimalFormatOptions | null | undefined
   ): string;
 }
 

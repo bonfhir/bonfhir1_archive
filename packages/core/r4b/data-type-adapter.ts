@@ -1,3 +1,4 @@
+import _ from "lodash";
 import {
   FhirCanonicalTypeAdapter,
   fhirCanonicalTypeAdapter,
@@ -39,7 +40,30 @@ export interface FhirDataTypeAdapter {
   uri: FhirURITypeAdapter;
   url: FhirURLTypeAdapter;
   canonical: FhirCanonicalTypeAdapter;
+
+  message: (
+    strings: TemplateStringsArray,
+    ...expr: FhirDataTypeAdapterMessageExpression[]
+  ) => string;
 }
+
+type MessageExpressionAdapter<
+  TAdapterName extends keyof Omit<FhirDataTypeAdapter, "locale" | "message">
+> =
+  | [Parameters<FhirDataTypeAdapter[TAdapterName]["format"]>[0], TAdapterName]
+  | [
+      Parameters<FhirDataTypeAdapter[TAdapterName]["format"]>[0],
+      TAdapterName,
+      Parameters<FhirDataTypeAdapter[TAdapterName]["format"]>[1]
+    ];
+
+export type FhirDataTypeAdapterMessageExpression =
+  | string
+  | MessageExpressionAdapter<"date">
+  | MessageExpressionAdapter<"integer">
+  | MessageExpressionAdapter<"decimal">
+  | null
+  | undefined;
 
 /**
  * Return a {@link FhirDataTypeAdapter} that uses the [`Intl` API](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl)
@@ -47,7 +71,7 @@ export interface FhirDataTypeAdapter {
  * @param locale - see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl#locales_argument
  */
 export function intlFhirDataTypeAdapter(
-  locale: string | undefined
+  locale?: string | undefined
 ): FhirDataTypeAdapter {
   // JIT locale check
   Intl.DateTimeFormat(locale);
@@ -63,7 +87,39 @@ export function intlFhirDataTypeAdapter(
     uri: fhirURITypeAdapter(locale),
     url: fhirURLTypeAdapter(locale),
     canonical: fhirCanonicalTypeAdapter(locale),
+
+    message(
+      strings: TemplateStringsArray,
+      ...expr: FhirDataTypeAdapterMessageExpression[]
+    ) {
+      return _.flatten(
+        _.zip(
+          strings,
+          expr.map((x) => renderExpression(this, x))
+        )
+      ).join("");
+    },
   };
+}
+
+function renderExpression(
+  adapter: FhirDataTypeAdapter,
+  value: FhirDataTypeAdapterMessageExpression
+) {
+  if (_.isNil(value)) {
+    return "";
+  }
+
+  if (Array.isArray(value)) {
+    const adapterName = value[1];
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const valueToFormat: any = value[0];
+    const options = value[2];
+
+    return adapter[adapterName].format(valueToFormat, options);
+  }
+
+  return value.toString();
 }
 
 export * from "./data-types/date";
