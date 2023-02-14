@@ -23,6 +23,7 @@ import {
 } from "./data-types/integer";
 import { FhirURITypeAdapter, fhirURITypeAdapter } from "./data-types/URI";
 import { FhirURLTypeAdapter, fhirURLTypeAdapter } from "./data-types/URL";
+import { FhirQuantityTypeAdapter, fhirQuantityTypeAdapter } from "./data-types/quantity";
 
 /**
  * This is used to manipulate FHIR data types, both parsing values and formatting them as localized strings.
@@ -31,6 +32,7 @@ import { FhirURLTypeAdapter, fhirURLTypeAdapter } from "./data-types/URL";
  */
 export interface FhirDataTypeAdapter {
   locale: string | undefined;
+  // primitive types
   code: FhirCodeTypeAdapter;
   date: FhirDateTypeAdapter;
   dateTime: FhirDateTimeTypeAdapter;
@@ -40,6 +42,8 @@ export interface FhirDataTypeAdapter {
   uri: FhirURITypeAdapter;
   url: FhirURLTypeAdapter;
   canonical: FhirCanonicalTypeAdapter;
+  // general-purpose types
+  quantity: fhirQuantityTypeAdapter;
 
   message: (
     strings: TemplateStringsArray,
@@ -78,6 +82,7 @@ export function intlFhirDataTypeAdapter(
 
   return {
     locale,
+    // primitive types
     code: fhirCodeTypeAdapter(locale),
     date: fhirDateTypeAdapter(locale),
     dateTime: fhirDateTimeTypeAdapter(locale),
@@ -87,6 +92,8 @@ export function intlFhirDataTypeAdapter(
     uri: fhirURITypeAdapter(locale),
     url: fhirURLTypeAdapter(locale),
     canonical: fhirCanonicalTypeAdapter(locale),
+    // general-purpose types
+    quantity: fhirQuantityTypeAdapter(locale),
 
     message(
       strings: TemplateStringsArray,
