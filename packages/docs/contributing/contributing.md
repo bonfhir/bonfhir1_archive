@@ -62,3 +62,30 @@ Each package should expose a list of standard [scripts](https://yarnpkg.com/conf
 - `yarn package:create`: Package the build to create a local NPM package
 - `yarn package:publish`: Package the build and publish to the NPM registry
 - `yarn test`: Run automated tests
+
+### Conventional commits
+
+This project adopts the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) approach to git commit
+messages.
+
+This is enforced locally with the usage of [commitlint](https://commitlint.js.org/#/).
+If the commit does not conform with the conventional commit spec, it will be rejected.
+
+This is important as the release process leverages the commit messages to create a changelog for each packages
+(using [lerna](https://lerna.js.org/)). The scope is used to filter which commit belongs to which package.
+
+The development approach follows this process:
+ - isolate changes made to packages into different commits; when committing, follow the
+   [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) conventions, and ensure the scope is the
+   correct package name
+ - when committing locally, you can either use `yarn commit` at the root of the repo (which triggers a commitlint wizard),
+   or use the [VS Code Conventional Commits](https://marketplace.visualstudio.com/items?itemName=vivaxy.vscode-conventional-commits)
+   extension that is installed by default in the [devcontainer](#pre-requisites)
+
+Submit a PR, and follow the PR template.
+Reviewing commits is part of the work of the reviewer, and you may get asked to update your commit messages.
+If this is the case, just use `git rebase --interactive` or `git reset` locally, and force push the updates to the
+remote branch.
+
+Once the PR has been approved, simply merge and accept the default merge message
+provided by GitHub.
