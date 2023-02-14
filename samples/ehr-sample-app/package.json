@@ -11,8 +11,7 @@
     "build": "parcel build",
     "check": "prettier --check ./**/*.tsx && eslint ./**/*.tsx && tsc --noEmit",
     "clean": "rimraf dist/",
-    "package:create": "node package.js pack",
-    "package:publish": "node package.js publish",
+    "format": "prettier --loglevel warn --write ./**/*.tsx && eslint --fix ./**/*.tsx",
     "test": "jest"
   },
   "source": "src/index.html",

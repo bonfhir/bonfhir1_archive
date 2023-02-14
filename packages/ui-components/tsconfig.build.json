@@ -8,6 +8,7 @@
     "**/.ladle"
   ],
   "compilerOptions": {
+    "incremental": false,
     "outDir": "dist"
   }
 }

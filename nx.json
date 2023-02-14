@@ -1,16 +1,6 @@
 {
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
-  "targetDefaults": {
-    "build": {
-      "dependsOn": ["^build"]
-    },
-    "check": {
-      "dependsOn": ["^build"]
-    },
-    "test": {
-      "dependsOn": ["^build"]
-    }
-  },
+  "targetDefaults": {},
   "tasksRunnerOptions": {
     "default": {
       "runner": "nx/tasks-runners/default"

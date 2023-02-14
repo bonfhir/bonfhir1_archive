@@ -9,12 +9,13 @@
     "bonfhir-codegen": "index.js"
   },
   "scripts": {
-    "build": "yarn clean && tsc --project tsconfig.build.json",
+    "build": "yarn clean && tsup src/index.ts --format esm,cjs --out-dir dist/ --shims --dts --tsconfig tsconfig.build.json",
     "check": "prettier --check ./src && eslint ./src && tsc --noEmit",
     "clean": "rimraf dist/",
     "dev": "ts-node --esm --swc --transpileOnly --experimental-specifier-resolution=node src/index.ts",
-    "package:create": "node package.js pack",
-    "package:publish": "node package.js publish",
+    "format": "prettier --loglevel warn --write ./**/*.ts && eslint --fix ./**/*.ts",
+    "package:create": "yarn build && node package.js pack",
+    "package:publish": "yarn build && node package.js publish",
     "test": "jest"
   },
   "packageManager": "yarn@3.3.1",
@@ -38,6 +39,7 @@
     "prettier": "^2.8.1",
     "rimraf": "^3.0.2",
     "ts-node": "^10.9.1",
+    "tsup": "^6.6.2",
     "typescript": "^4.9.4"
   },
   "dependencies": {
