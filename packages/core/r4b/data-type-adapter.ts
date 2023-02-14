@@ -21,10 +21,8 @@ import {
   FhirIntegerTypeAdapter,
   fhirIntegerTypeAdapter,
 } from "./data-types/integer";
-import {
-  fhirMarkdownTypeAdapter,
-  FhirMarkdownTypeAdapter,
-} from "./data-types/markdown";
+import { FhirMarkdownTypeAdapter } from "./data-types/markdown";
+import { FhirQuantityTypeAdapter } from "./data-types/quantity";
 import { FhirURITypeAdapter, fhirURITypeAdapter } from "./data-types/URI";
 import { FhirURLTypeAdapter, fhirURLTypeAdapter } from "./data-types/URL";
 
@@ -35,6 +33,7 @@ import { FhirURLTypeAdapter, fhirURLTypeAdapter } from "./data-types/URL";
  */
 export interface FhirDataTypeAdapter {
   locale: string | undefined;
+  // primitive types
   code: FhirCodeTypeAdapter;
   date: FhirDateTypeAdapter;
   dateTime: FhirDateTimeTypeAdapter;
@@ -45,6 +44,8 @@ export interface FhirDataTypeAdapter {
   url: FhirURLTypeAdapter;
   canonical: FhirCanonicalTypeAdapter;
   markdown: FhirMarkdownTypeAdapter;
+  // general-purpose types
+  quantity: FhirQuantityTypeAdapter;
 
   message: (
     strings: TemplateStringsArray,
@@ -83,6 +84,7 @@ export function intlFhirDataTypeAdapter(
 
   return {
     locale,
+    // primitive types
     code: fhirCodeTypeAdapter(locale),
     date: fhirDateTypeAdapter(locale),
     dateTime: fhirDateTimeTypeAdapter(locale),
@@ -92,7 +94,6 @@ export function intlFhirDataTypeAdapter(
     uri: fhirURITypeAdapter(locale),
     url: fhirURLTypeAdapter(locale),
     canonical: fhirCanonicalTypeAdapter(locale),
-    markdown: fhirMarkdownTypeAdapter(locale),
 
     message(
       strings: TemplateStringsArray,
