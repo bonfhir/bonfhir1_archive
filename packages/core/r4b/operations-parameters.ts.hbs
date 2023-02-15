@@ -1,0 +1,74 @@
+import type {
+  ActivityDefinition,
+  Binary,
+  Bundle,
+  CapabilityStatement,
+  CarePlan,
+  CodeableConcept,
+  CodeSystem,
+  Coding,
+  ConceptMap,
+  Library,
+  MeasureReport,
+  Meta,
+  Observation,
+  OperationOutcome,
+  Period,
+  PlanDefinition,
+  Questionnaire,
+  Reference,
+  Resource,
+  StructureDefinition,
+  ValueSet,
+} from "fhir/r4";
+
+{{#each (fhirPath data.[profiles-resources] "Bundle/OperationDefinition")}}
+
+{{#if (hasParameters this "in")}}
+/**
+ * {{replaceNewLines description " "}}
+ */
+export interface {{replace (startCase id) " " ""}}OperationParameters {
+  {{#each parameter}}
+  {{#if (eq use "in")}}
+    /**
+     * {{replaceNewLines documentation " "}}
+     */
+    {{operationParameter this}}
+
+  {{/if}}
+  {{/each}}
+}
+{{/if}}
+
+{{#if (hasParameters this "out")}}
+{{#if (onlyHasOutReturn this)}}
+export type {{replace (startCase id) " " ""}}OperationResult =
+{{#each parameter}}
+{{#if (eq use "out")}}
+{{#if (eq type "Any")}}
+ unknown;
+{{else}}
+ {{type}};
+ {{/if}}
+{{/if}}
+{{/each}}
+{{else}}
+/**
+ * {{replaceNewLines description " "}}
+ */
+export interface {{replace (startCase id) " " ""}}OperationResult {
+  {{#each parameter}}
+  {{#if (eq use "out")}}
+    /**
+     * {{replaceNewLines documentation " "}}
+     */
+    {{operationParameter this}}
+
+  {{/if}}
+  {{/each}}
+}
+{{/if}}
+{{/if}}
+
+{{/each}}
