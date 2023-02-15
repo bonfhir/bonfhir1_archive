@@ -229,6 +229,26 @@ const searchPatientPage2 =
 const backPage = linkUrl(searchPatientPage2, "previous");
 ```
 
+### Standard Operations Types
+
+The `core` library contains types for the [standard FHIR Operations](https://www.hl7.org/fhir/operationslist.html)
+parameters and results:
+
+```typescript
+import type {
+  ValueSetExpandOperationParameters,
+  ValueSetExpandOperationResult,
+} from "@bonfhir/core/r4b";
+
+const valueSet = await client.execute<
+  ValueSetExpandOperationResult,
+  ValueSetExpandOperationParameters
+>("$expand", {
+  type: "ValueSet",
+  parameters: { url: "http://hl7.org/fhir/ValueSet/address-use" },
+});
+```
+
 ## FHIR Search
 
 There are utility functions designed to help creating [FHIR Search](https://hl7.org/fhir/search.html) URL query parameters.
