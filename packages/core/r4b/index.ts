@@ -5,6 +5,7 @@ export * from "./date";
 export * from "./fhir-restful-client";
 export * from "./merge";
 export * from "./narratives";
+export * from "./operations-parameters";
 export * from "./period-calculator";
 export * from "./resource-search";
 export * from "./search-builder";
