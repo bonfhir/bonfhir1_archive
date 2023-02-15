@@ -11,6 +11,8 @@ export const FHIRPathShortcuts: Record<string, string> = {
     "Bundle.entry.select(resource).ofType(StructureDefinition).where(baseDefinition='http://hl7.org/fhir/StructureDefinition/Element' and kind='primitive-type' and abstract=false)",
   "StructureDefinition/SummaryElements":
     "StructureDefinition.snapshot.element.where(isSummary=true)",
+  "Bundle/OperationDefinition":
+    "Bundle.entry.select(resource).ofType(OperationDefinition)",
 };
 
 /**
