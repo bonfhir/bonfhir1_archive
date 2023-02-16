@@ -20,6 +20,7 @@ describe("intlFhirDataTypeAdapter", () => {
         // general-purpose types
         expect(typeof adapter.money.format).toBe("function");
         expect(typeof adapter.period.format).toBe("function");
+        expect(typeof adapter.count.format).toBe("function");
         expect(typeof adapter.quantity.format).toBe("function");
         expect(typeof adapter.range.format).toBe("function");
         expect(typeof adapter.ratio.format).toBe("function");

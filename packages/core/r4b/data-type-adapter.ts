@@ -4,6 +4,7 @@ import {
   fhirCanonicalTypeAdapter,
 } from "./data-types/canonical";
 import { fhirCodeTypeAdapter, FhirCodeTypeAdapter } from "./data-types/code";
+import { FhirCountTypeAdapter, fhirCountTypeAdapter } from "./data-types/count";
 import { FhirDateTypeAdapter, fhirDateTypeAdapter } from "./data-types/date";
 import {
   FhirDateTimeTypeAdapter,
@@ -68,6 +69,7 @@ export interface FhirDataTypeAdapter {
   // general-purpose types
   money: FhirMoneyTypeAdapter;
   period: FhirPeriodTypeAdapter;
+  count: FhirCountTypeAdapter;
   quantity: FhirQuantityTypeAdapter;
   range: FhirRangeTypeAdapter;
   ratio: FhirRatioTypeAdapter;
@@ -125,6 +127,7 @@ export function intlFhirDataTypeAdapter(
     // general-purpose types
     money: fhirMoneyTypeAdapter(locale),
     period: fhirPeriodTypeAdapter(locale),
+    count: fhirCountTypeAdapter(locale),
     quantity: fhirQuantityTypeAdapter(locale),
     range: fhirRangeTypeAdapter(locale),
     ratio: fhirRatioTypeAdapter(locale),
