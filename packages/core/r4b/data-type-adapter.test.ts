@@ -29,6 +29,7 @@ describe("intlFhirDataTypeAdapter", () => {
         expect(typeof adapter.ratio.format).toBe("function");
         expect(typeof adapter.ratioRange.format).toBe("function");
         expect(typeof adapter.simpleQuantity.format).toBe("function");
+        expect(typeof adapter.coding.format).toBe("function");
       });
 
       it("exposes the locale", () => {

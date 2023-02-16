@@ -5,6 +5,10 @@ import {
   fhirCanonicalTypeAdapter,
 } from "./data-types/canonical";
 import { fhirCodeTypeAdapter, FhirCodeTypeAdapter } from "./data-types/code";
+import {
+  fhirCodingTypeAdapter,
+  FhirCodingTypeAdapter,
+} from "./data-types/coding";
 import { FhirCountTypeAdapter, fhirCountTypeAdapter } from "./data-types/count";
 import { FhirDateTypeAdapter, fhirDateTypeAdapter } from "./data-types/date";
 import {
@@ -15,7 +19,10 @@ import {
   FhirDecimalTypeAdapter,
   fhirDecimalTypeAdapter,
 } from "./data-types/decimal";
-import { FhirDistanceTypeAdapter, fhirDistanceTypeAdapter } from "./data-types/distance";
+import {
+  FhirDistanceTypeAdapter,
+  fhirDistanceTypeAdapter,
+} from "./data-types/distance";
 import {
   FhirDurationTypeAdapter,
   fhirDurationTypeAdapter,
@@ -84,6 +91,7 @@ export interface FhirDataTypeAdapter {
   ratio: FhirRatioTypeAdapter;
   ratioRange: FhirRatioRangeTypeAdapter;
   simpleQuantity: FhirSimpleQuantityTypeAdapter;
+  coding: FhirCodingTypeAdapter;
 
   message: (
     strings: TemplateStringsArray,
@@ -145,6 +153,7 @@ export function intlFhirDataTypeAdapter(
     ratio: fhirRatioTypeAdapter(locale),
     ratioRange: fhirRatioRangeTypeAdapter(locale),
     simpleQuantity: fhirSimpleQuantityTypeAdapter(locale),
+    coding: fhirCodingTypeAdapter(locale),
 
     message(
       strings: TemplateStringsArray,
