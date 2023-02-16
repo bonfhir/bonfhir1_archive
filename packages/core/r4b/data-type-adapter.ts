@@ -76,32 +76,31 @@ import { FhirURLTypeAdapter, fhirURLTypeAdapter } from "./data-types/URL";
  */
 export interface FhirDataTypeAdapter {
   locale: string | undefined;
-  // primitive types
-  code: FhirCodeTypeAdapter;
-  date: FhirDateTypeAdapter;
-  boolean: FhirBooleanTypeAdapter;
-  dateTime: FhirDateTimeTypeAdapter;
-  instant: FhirInstantTypeAdapter;
-  integer: FhirIntegerTypeAdapter;
-  decimal: FhirDecimalTypeAdapter;
-  uri: FhirURITypeAdapter;
-  url: FhirURLTypeAdapter;
-  canonical: FhirCanonicalTypeAdapter;
-  markdown: FhirMarkdownTypeAdapter;
-  // general-purpose types
-  money: FhirMoneyTypeAdapter;
-  period: FhirPeriodTypeAdapter;
+
   age: FhirAgeTypeAdapter;
+  boolean: FhirBooleanTypeAdapter;
+  canonical: FhirCanonicalTypeAdapter;
+  code: FhirCodeTypeAdapter;
+  codeableConcept: FhirCodeableConceptTypeAdapter;
+  coding: FhirCodingTypeAdapter;
   count: FhirCountTypeAdapter;
+  date: FhirDateTypeAdapter;
+  dateTime: FhirDateTimeTypeAdapter;
+  decimal: FhirDecimalTypeAdapter;
   distance: FhirDistanceTypeAdapter;
   duration: FhirDurationTypeAdapter;
+  instant: FhirInstantTypeAdapter;
+  integer: FhirIntegerTypeAdapter;
+  markdown: FhirMarkdownTypeAdapter;
+  money: FhirMoneyTypeAdapter;
+  period: FhirPeriodTypeAdapter;
   quantity: FhirQuantityTypeAdapter;
   range: FhirRangeTypeAdapter;
   ratio: FhirRatioTypeAdapter;
   ratioRange: FhirRatioRangeTypeAdapter;
   simpleQuantity: FhirSimpleQuantityTypeAdapter;
-  coding: FhirCodingTypeAdapter;
-  codeableConcept: FhirCodeableConceptTypeAdapter;
+  uri: FhirURITypeAdapter;
+  url: FhirURLTypeAdapter;
 
   message: (
     strings: TemplateStringsArray,
@@ -121,9 +120,30 @@ type MessageExpressionAdapter<
 
 export type FhirDataTypeAdapterMessageExpression =
   | string
+  | MessageExpressionAdapter<"age">
+  | MessageExpressionAdapter<"boolean">
+  | MessageExpressionAdapter<"canonical">
+  | MessageExpressionAdapter<"code">
+  | MessageExpressionAdapter<"codeableConcept">
+  | MessageExpressionAdapter<"coding">
+  | MessageExpressionAdapter<"count">
   | MessageExpressionAdapter<"date">
-  | MessageExpressionAdapter<"integer">
+  | MessageExpressionAdapter<"dateTime">
   | MessageExpressionAdapter<"decimal">
+  | MessageExpressionAdapter<"distance">
+  | MessageExpressionAdapter<"duration">
+  | MessageExpressionAdapter<"instant">
+  | MessageExpressionAdapter<"integer">
+  | MessageExpressionAdapter<"markdown">
+  | MessageExpressionAdapter<"money">
+  | MessageExpressionAdapter<"period">
+  | MessageExpressionAdapter<"quantity">
+  | MessageExpressionAdapter<"range">
+  | MessageExpressionAdapter<"ratio">
+  | MessageExpressionAdapter<"ratioRange">
+  | MessageExpressionAdapter<"simpleQuantity">
+  | MessageExpressionAdapter<"uri">
+  | MessageExpressionAdapter<"url">
   | null
   | undefined;
 
@@ -195,7 +215,8 @@ function renderExpression(
     const valueToFormat: any = value[0];
     const options = value[2];
 
-    return adapter[adapterName].format(valueToFormat, options);
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    return adapter[adapterName].format(valueToFormat, options as any);
   }
 
   return value.toString();

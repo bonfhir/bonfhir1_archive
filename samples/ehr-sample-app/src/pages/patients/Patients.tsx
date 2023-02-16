@@ -21,7 +21,22 @@ export function Patients(): ReactElement | null {
         {patientsQuery.data?.nav.type("Patient").map((patient) => (
           <li key={patient.id}>
             <Link to={`/patients/${patient.id}`}>{patient.id}</Link> (DOB:
-            <FhirValue type="date" value={patient.birthDate} />)
+            <FhirValue
+              type="date"
+              value={patient.birthDate}
+              options={{ dateStyle: "long" }}
+            />
+            , Gender:{" "}
+            <FhirValue
+              type="code"
+              value={patient.gender}
+              options={{
+                valueSetExpand: {
+                  url: "http://hl7.org/fhir/ValueSet/administrative-gender",
+                },
+              }}
+            />
+            )
           </li>
         ))}
       </ul>
