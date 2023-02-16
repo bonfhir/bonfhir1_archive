@@ -22,9 +22,28 @@ import {
   fhirIntegerTypeAdapter,
 } from "./data-types/integer";
 import {
-  fhirMarkdownTypeAdapter,
   FhirMarkdownTypeAdapter,
+  fhirMarkdownTypeAdapter,
 } from "./data-types/markdown";
+import { fhirMoneyTypeAdapter, FhirMoneyTypeAdapter } from "./data-types/money";
+import {
+  fhirPeriodTypeAdapter,
+  FhirPeriodTypeAdapter,
+} from "./data-types/period";
+import {
+  FhirQuantityTypeAdapter,
+  fhirQuantityTypeAdapter,
+} from "./data-types/quantity";
+import { fhirRangeTypeAdapter, FhirRangeTypeAdapter } from "./data-types/range";
+import { fhirRatioTypeAdapter, FhirRatioTypeAdapter } from "./data-types/ratio";
+import {
+  fhirRatioRangeTypeAdapter,
+  FhirRatioRangeTypeAdapter,
+} from "./data-types/ratioRange";
+import {
+  fhirSimpleQuantityTypeAdapter,
+  FhirSimpleQuantityTypeAdapter,
+} from "./data-types/simpleQuantity";
 import { FhirURITypeAdapter, fhirURITypeAdapter } from "./data-types/URI";
 import { FhirURLTypeAdapter, fhirURLTypeAdapter } from "./data-types/URL";
 
@@ -35,6 +54,7 @@ import { FhirURLTypeAdapter, fhirURLTypeAdapter } from "./data-types/URL";
  */
 export interface FhirDataTypeAdapter {
   locale: string | undefined;
+  // primitive types
   code: FhirCodeTypeAdapter;
   date: FhirDateTypeAdapter;
   dateTime: FhirDateTimeTypeAdapter;
@@ -45,6 +65,14 @@ export interface FhirDataTypeAdapter {
   url: FhirURLTypeAdapter;
   canonical: FhirCanonicalTypeAdapter;
   markdown: FhirMarkdownTypeAdapter;
+  // general-purpose types
+  money: FhirMoneyTypeAdapter;
+  period: FhirPeriodTypeAdapter;
+  quantity: FhirQuantityTypeAdapter;
+  range: FhirRangeTypeAdapter;
+  ratio: FhirRatioTypeAdapter;
+  ratioRange: FhirRatioRangeTypeAdapter;
+  simpleQuantity: FhirSimpleQuantityTypeAdapter;
 
   message: (
     strings: TemplateStringsArray,
@@ -83,6 +111,7 @@ export function intlFhirDataTypeAdapter(
 
   return {
     locale,
+    // primitive types
     code: fhirCodeTypeAdapter(locale),
     date: fhirDateTypeAdapter(locale),
     dateTime: fhirDateTimeTypeAdapter(locale),
@@ -93,6 +122,14 @@ export function intlFhirDataTypeAdapter(
     url: fhirURLTypeAdapter(locale),
     canonical: fhirCanonicalTypeAdapter(locale),
     markdown: fhirMarkdownTypeAdapter(locale),
+    // general-purpose types
+    money: fhirMoneyTypeAdapter(locale),
+    period: fhirPeriodTypeAdapter(locale),
+    quantity: fhirQuantityTypeAdapter(locale),
+    range: fhirRangeTypeAdapter(locale),
+    ratio: fhirRatioTypeAdapter(locale),
+    ratioRange: fhirRatioRangeTypeAdapter(locale),
+    simpleQuantity: fhirSimpleQuantityTypeAdapter(locale),
 
     message(
       strings: TemplateStringsArray,
