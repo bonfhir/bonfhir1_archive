@@ -3,13 +3,13 @@ import { FhirDataTypeAdapter } from "../data-type-adapter";
 import { FhirCodeFormatOptions, fhirCodeTypeAdapter } from "./code";
 
 /**
- * A measured amount (or an amount that can potentially be measured).
+ * A Coding is a representation of a defined concept using a symbol from a defined "code system"
  *
  * @see https://hl7.org/fhir/datatypes.html#coding
  */
 
 export type FhirCodingFormatOptions = {
-  codeValueSetExpansions: FhirCodeFormatOptions["valueSetExpansions"];
+  valueSetExpansions: FhirCodeFormatOptions["valueSetExpansions"];
 };
 
 export interface FhirCodingTypeAdapter {
@@ -44,7 +44,7 @@ export function fhirCodingTypeAdapter(
       const formattedCode = fhirCodeTypeAdapter(locale).format(
         fhirCoding.code,
         {
-          valueSetExpansions: options?.codeValueSetExpansions,
+          valueSetExpansions: options?.valueSetExpansions,
         }
       );
 

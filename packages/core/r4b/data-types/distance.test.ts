@@ -21,11 +21,13 @@ describe("fhirDistanceTypeAdapter", () => {
     ];
 
     it.each(<
-      Array<[Distance | undefined, FhirDistanceFormatOptions | undefined, string]>
+      Array<
+        [Distance | undefined, FhirDistanceFormatOptions | undefined, string]
+      >
     >[
       [
         {
-          value: -42,
+          value: -42.3,
           code: "0",
           comparator: ">",
         },
@@ -33,16 +35,10 @@ describe("fhirDistanceTypeAdapter", () => {
           codeValueSetExpansions: animalsValueSetExpansion,
           valueNotation: "scientific",
         },
-        "> -4.2E1 km",
+        "> -4.23E1 km",
       ],
     ])("parse %p", (value, options, expected) => {
       expect(adapter.format(value, options)).toEqual(expected);
-    });
-
-    describe("given a float", () => {
-      expect(() => adapter.format({ value: 2.3 })).toThrowError(
-        /Value is a float. It does not match the fhir integer format.*/
-      );
     });
 
     describe("given no code", () => {

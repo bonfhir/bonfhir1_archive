@@ -29,7 +29,7 @@ describe("fhirCodingTypeAdapter", () => {
           display: "Cat",
         },
         {
-          codeValueSetExpansions: animalsValueSetExpansion,
+          valueSetExpansions: animalsValueSetExpansion,
         },
         "year",
       ],
@@ -39,7 +39,7 @@ describe("fhirCodingTypeAdapter", () => {
           display: "mouse",
         },
         {
-          codeValueSetExpansions: animalsValueSetExpansion,
+          valueSetExpansions: animalsValueSetExpansion,
         },
         "mouse",
       ],

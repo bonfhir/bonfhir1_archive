@@ -1,8 +1,8 @@
 import { Duration } from "fhir/r4";
 import { FhirDataTypeAdapter } from "../data-type-adapter";
 import { FhirCodeFormatOptions, fhirCodeTypeAdapter } from "./code";
+import { FhirDecimalFormatOptions, fhirDecimalTypeAdapter } from "./decimal";
 import { removeDoubleSpaces } from "./helpers";
-import { FhirIntegerFormatOptions, fhirIntegerTypeAdapter } from "./integer";
 
 /**
  * A measured amount (or an amount that can potentially be measured).
@@ -12,7 +12,7 @@ import { FhirIntegerFormatOptions, fhirIntegerTypeAdapter } from "./integer";
 
 export type FhirDurationFormatOptions = {
   codeValueSetExpansions: FhirCodeFormatOptions["valueSetExpansions"];
-  valueNotation: FhirIntegerFormatOptions["notation"];
+  valueNotation: FhirDecimalFormatOptions["notation"];
 };
 
 export interface FhirDurationTypeAdapter {
@@ -45,7 +45,7 @@ export function fhirDurationTypeAdapter(
       if (!fhirDuration) return "";
 
       // value https://www.hl7.org/fhir/datatypes-definitions.html#Duration.value
-      const formattedValue = fhirIntegerTypeAdapter(locale).format(
+      const formattedValue = fhirDecimalTypeAdapter(locale).format(
         fhirDuration.value,
         {
           notation: options?.valueNotation,
@@ -62,9 +62,12 @@ export function fhirDurationTypeAdapter(
       const formattedSystem = fhirDuration.system?.trim() || "";
 
       // code https://www.hl7.org/fhir/datatypes-definitions.html#Duration.code
-      const formattedCode = fhirCodeTypeAdapter(locale).format(fhirDuration.code, {
-        valueSetExpansions: options?.codeValueSetExpansions,
-      });
+      const formattedCode = fhirCodeTypeAdapter(locale).format(
+        fhirDuration.code,
+        {
+          valueSetExpansions: options?.codeValueSetExpansions,
+        }
+      );
 
       if (!formattedCode) {
         throw new Error(

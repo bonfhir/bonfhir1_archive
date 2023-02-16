@@ -64,7 +64,7 @@ describe("fhirCodeableConceptTypeAdapter", () => {
           ],
         },
         {
-          codeValueSetExpansions: animalsValueSetExpansion,
+          valueSetExpansions: animalsValueSetExpansion,
         },
         "[cat, dog, spider, monkey]",
       ],

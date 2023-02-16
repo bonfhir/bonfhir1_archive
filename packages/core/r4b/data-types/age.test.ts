@@ -1,14 +1,14 @@
-import { Count, ValueSetExpansionContains } from "fhir/r4";
-import { FhirCountFormatOptions, fhirCountTypeAdapter } from "./count";
+import { Age, ValueSetExpansionContains } from "fhir/r4";
+import { FhirAgeFormatOptions, fhirAgeTypeAdapter } from "./age";
 
-describe("fhirCountTypeAdapter", () => {
+describe("fhirAgeTypeAdapter", () => {
   it("exposes the locale", () => {
-    const adapter = fhirCountTypeAdapter("fr-CA");
+    const adapter = fhirAgeTypeAdapter("fr-CA");
     expect(adapter.locale).toEqual("fr-CA");
   });
 
   describe("format", () => {
-    const adapter = fhirCountTypeAdapter();
+    const adapter = fhirAgeTypeAdapter();
     const animalsValueSetExpansion: ReadonlyArray<ValueSetExpansionContains> = [
       {
         code: "0",
@@ -21,7 +21,7 @@ describe("fhirCountTypeAdapter", () => {
     ];
 
     it.each(<
-      Array<[Count | undefined, FhirCountFormatOptions | undefined, string]>
+      Array<[Age | undefined, FhirAgeFormatOptions | undefined, string]>
     >[
       [
         {
@@ -54,7 +54,7 @@ describe("fhirCountTypeAdapter", () => {
 
   describe("with an unknown locale", () => {
     it("raises an error", () => {
-      expect(() => fhirCountTypeAdapter("nope")).toThrowError(
+      expect(() => fhirAgeTypeAdapter("nope")).toThrowError(
         "Incorrect locale information provided"
       );
     });

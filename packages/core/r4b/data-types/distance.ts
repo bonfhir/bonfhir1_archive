@@ -1,8 +1,8 @@
 import { Distance } from "fhir/r4";
 import { FhirDataTypeAdapter } from "../data-type-adapter";
 import { FhirCodeFormatOptions, fhirCodeTypeAdapter } from "./code";
+import { FhirDecimalFormatOptions, fhirDecimalTypeAdapter } from "./decimal";
 import { removeDoubleSpaces } from "./helpers";
-import { FhirIntegerFormatOptions, fhirIntegerTypeAdapter } from "./integer";
 
 /**
  * A measured amount (or an amount that can potentially be measured).
@@ -12,7 +12,7 @@ import { FhirIntegerFormatOptions, fhirIntegerTypeAdapter } from "./integer";
 
 export type FhirDistanceFormatOptions = {
   codeValueSetExpansions: FhirCodeFormatOptions["valueSetExpansions"];
-  valueNotation: FhirIntegerFormatOptions["notation"];
+  valueNotation: FhirDecimalFormatOptions["notation"];
 };
 
 export interface FhirDistanceTypeAdapter {
@@ -45,7 +45,7 @@ export function fhirDistanceTypeAdapter(
       if (!fhirDistance) return "";
 
       // value https://www.hl7.org/fhir/datatypes-definitions.html#Distance.value
-      const formattedValue = fhirIntegerTypeAdapter(locale).format(
+      const formattedValue = fhirDecimalTypeAdapter(locale).format(
         fhirDistance.value,
         {
           notation: options?.valueNotation,
@@ -62,9 +62,12 @@ export function fhirDistanceTypeAdapter(
       const formattedSystem = fhirDistance.system?.trim() || "";
 
       // code https://www.hl7.org/fhir/datatypes-definitions.html#Distance.code
-      const formattedCode = fhirCodeTypeAdapter(locale).format(fhirDistance.code, {
-        valueSetExpansions: options?.codeValueSetExpansions,
-      });
+      const formattedCode = fhirCodeTypeAdapter(locale).format(
+        fhirDistance.code,
+        {
+          valueSetExpansions: options?.codeValueSetExpansions,
+        }
+      );
 
       if (!formattedCode) {
         throw new Error(

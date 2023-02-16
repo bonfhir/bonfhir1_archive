@@ -4,13 +4,16 @@ import { FhirCodeFormatOptions } from "./code";
 import { fhirCodingTypeAdapter } from "./coding";
 
 /**
- * A measured amount (or an amount that can potentially be measured).
+ * A CodeableConcept represents a value that is usually supplied by
+ *  providing a reference to one or more terminologies or ontologies but
+ *  may also be defined by the provision of text.
+ * This is a common pattern in healthcare data.
  *
  * @see https://hl7.org/fhir/datatypes.html#codeableConcept
  */
 
 export type FhirCodeableConceptFormatOptions = {
-  codeValueSetExpansions?: FhirCodeFormatOptions["valueSetExpansions"];
+  valueSetExpansions?: FhirCodeFormatOptions["valueSetExpansions"];
   style?: "short" | "full" | "valuesOnly";
 };
 
@@ -46,7 +49,7 @@ export function fhirCodeableConceptTypeAdapter(
       const codingAdapter = fhirCodingTypeAdapter(locale);
       const formattedCodings = fhirCodeableConcept.coding.map((coding) =>
         codingAdapter.format(coding, {
-          codeValueSetExpansions: options?.codeValueSetExpansions,
+          valueSetExpansions: options?.valueSetExpansions,
         })
       );
 
