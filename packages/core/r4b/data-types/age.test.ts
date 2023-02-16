@@ -12,11 +12,11 @@ describe("fhirCountTypeAdapter", () => {
     const animalsValueSetExpansion: ReadonlyArray<ValueSetExpansionContains> = [
       {
         code: "0",
-        display: "cat",
+        display: "year",
       },
       {
         code: "1",
-        display: "dog",
+        display: "days",
       },
     ];
 
@@ -33,7 +33,7 @@ describe("fhirCountTypeAdapter", () => {
           codeValueSetExpansions: animalsValueSetExpansion,
           valueNotation: "scientific",
         },
-        "> -4.2E1 cat",
+        "> -4.2E1 year",
       ],
     ])("parse %p", (value, options, expected) => {
       expect(adapter.format(value, options)).toEqual(expected);

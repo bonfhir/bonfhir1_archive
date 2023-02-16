@@ -1,4 +1,5 @@
 import _ from "lodash";
+import { fhirAgeTypeAdapter, FhirAgeTypeAdapter } from "./data-types/age";
 import {
   FhirCanonicalTypeAdapter,
   fhirCanonicalTypeAdapter,
@@ -69,6 +70,7 @@ export interface FhirDataTypeAdapter {
   // general-purpose types
   money: FhirMoneyTypeAdapter;
   period: FhirPeriodTypeAdapter;
+  age: FhirAgeTypeAdapter;
   count: FhirCountTypeAdapter;
   quantity: FhirQuantityTypeAdapter;
   range: FhirRangeTypeAdapter;
@@ -128,6 +130,7 @@ export function intlFhirDataTypeAdapter(
     money: fhirMoneyTypeAdapter(locale),
     period: fhirPeriodTypeAdapter(locale),
     count: fhirCountTypeAdapter(locale),
+    age: fhirAgeTypeAdapter(locale),
     quantity: fhirQuantityTypeAdapter(locale),
     range: fhirRangeTypeAdapter(locale),
     ratio: fhirRatioTypeAdapter(locale),
