@@ -15,6 +15,7 @@ import {
   FhirDecimalTypeAdapter,
   fhirDecimalTypeAdapter,
 } from "./data-types/decimal";
+import { FhirDistanceTypeAdapter, fhirDistanceTypeAdapter } from "./data-types/distance";
 import {
   FhirDurationTypeAdapter,
   fhirDurationTypeAdapter,
@@ -76,6 +77,7 @@ export interface FhirDataTypeAdapter {
   period: FhirPeriodTypeAdapter;
   age: FhirAgeTypeAdapter;
   count: FhirCountTypeAdapter;
+  distance: FhirDistanceTypeAdapter;
   duration: FhirDurationTypeAdapter;
   quantity: FhirQuantityTypeAdapter;
   range: FhirRangeTypeAdapter;
@@ -135,6 +137,7 @@ export function intlFhirDataTypeAdapter(
     money: fhirMoneyTypeAdapter(locale),
     period: fhirPeriodTypeAdapter(locale),
     count: fhirCountTypeAdapter(locale),
+    distance: fhirDistanceTypeAdapter(locale),
     age: fhirAgeTypeAdapter(locale),
     duration: fhirDurationTypeAdapter(locale),
     quantity: fhirQuantityTypeAdapter(locale),
