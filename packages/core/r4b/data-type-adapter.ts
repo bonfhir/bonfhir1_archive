@@ -1,4 +1,5 @@
 import _ from "lodash";
+import { fhirAgeTypeAdapter, FhirAgeTypeAdapter } from "./data-types/age";
 import {
   FhirBooleanTypeAdapter,
   fhirBooleanTypeAdapter,
@@ -8,6 +9,15 @@ import {
   fhirCanonicalTypeAdapter,
 } from "./data-types/canonical";
 import { fhirCodeTypeAdapter, FhirCodeTypeAdapter } from "./data-types/code";
+import {
+  FhirCodeableConceptTypeAdapter,
+  fhirCodeableConceptTypeAdapter,
+} from "./data-types/codeableConcept";
+import {
+  fhirCodingTypeAdapter,
+  FhirCodingTypeAdapter,
+} from "./data-types/coding";
+import { FhirCountTypeAdapter, fhirCountTypeAdapter } from "./data-types/count";
 import { FhirDateTypeAdapter, fhirDateTypeAdapter } from "./data-types/date";
 import {
   FhirDateTimeTypeAdapter,
@@ -17,6 +27,14 @@ import {
   FhirDecimalTypeAdapter,
   fhirDecimalTypeAdapter,
 } from "./data-types/decimal";
+import {
+  FhirDistanceTypeAdapter,
+  fhirDistanceTypeAdapter,
+} from "./data-types/distance";
+import {
+  FhirDurationTypeAdapter,
+  fhirDurationTypeAdapter,
+} from "./data-types/duration";
 import {
   FhirInstantTypeAdapter,
   fhirInstantTypeAdapter,
@@ -73,11 +91,17 @@ export interface FhirDataTypeAdapter {
   // general-purpose types
   money: FhirMoneyTypeAdapter;
   period: FhirPeriodTypeAdapter;
+  age: FhirAgeTypeAdapter;
+  count: FhirCountTypeAdapter;
+  distance: FhirDistanceTypeAdapter;
+  duration: FhirDurationTypeAdapter;
   quantity: FhirQuantityTypeAdapter;
   range: FhirRangeTypeAdapter;
   ratio: FhirRatioTypeAdapter;
   ratioRange: FhirRatioRangeTypeAdapter;
   simpleQuantity: FhirSimpleQuantityTypeAdapter;
+  coding: FhirCodingTypeAdapter;
+  codeableConcept: FhirCodeableConceptTypeAdapter;
 
   message: (
     strings: TemplateStringsArray,
@@ -131,11 +155,17 @@ export function intlFhirDataTypeAdapter(
     // general-purpose types
     money: fhirMoneyTypeAdapter(locale),
     period: fhirPeriodTypeAdapter(locale),
+    count: fhirCountTypeAdapter(locale),
+    distance: fhirDistanceTypeAdapter(locale),
+    age: fhirAgeTypeAdapter(locale),
+    duration: fhirDurationTypeAdapter(locale),
     quantity: fhirQuantityTypeAdapter(locale),
     range: fhirRangeTypeAdapter(locale),
     ratio: fhirRatioTypeAdapter(locale),
     ratioRange: fhirRatioRangeTypeAdapter(locale),
     simpleQuantity: fhirSimpleQuantityTypeAdapter(locale),
+    coding: fhirCodingTypeAdapter(locale),
+    codeableConcept: fhirCodeableConceptTypeAdapter(locale),
 
     message(
       strings: TemplateStringsArray,
