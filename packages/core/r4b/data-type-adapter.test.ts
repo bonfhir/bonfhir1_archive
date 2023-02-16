@@ -64,6 +64,13 @@ describe("intlFhirDataTypeAdapter", () => {
           { dateStyle: "long" },
         ]} guy.`
       ).toEqual("this is February 2, 2023 guy.");
+
+      expect(
+        adapter.message`the cost is ${[
+          { currency: "USD", value: 15 },
+          "money",
+        ]}`
+      ).toEqual("the cost is $15.00");
     });
   });
 });
