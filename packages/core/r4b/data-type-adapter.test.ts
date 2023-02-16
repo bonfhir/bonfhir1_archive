@@ -6,6 +6,7 @@ describe("intlFhirDataTypeAdapter", () => {
       const adapter = intlFhirDataTypeAdapter(locale);
 
       it("exposes different adapters", () => {
+        // primitive types
         expect(typeof adapter.markdown.format).toBe("function");
         expect(typeof adapter.code.format).toBe("function");
         expect(typeof adapter.date.format).toBe("function");
@@ -17,6 +18,14 @@ describe("intlFhirDataTypeAdapter", () => {
         expect(typeof adapter.instant.format).toBe("function");
         expect(typeof adapter.integer.format).toBe("function");
         expect(typeof adapter.decimal.format).toBe("function");
+        // general-purpose types
+        expect(typeof adapter.money.format).toBe("function");
+        expect(typeof adapter.period.format).toBe("function");
+        expect(typeof adapter.quantity.format).toBe("function");
+        expect(typeof adapter.range.format).toBe("function");
+        expect(typeof adapter.ratio.format).toBe("function");
+        expect(typeof adapter.ratioRange.format).toBe("function");
+        expect(typeof adapter.simpleQuantity.format).toBe("function");
       });
 
       it("exposes the locale", () => {

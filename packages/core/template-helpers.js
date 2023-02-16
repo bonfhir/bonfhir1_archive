@@ -104,3 +104,55 @@ export function searchArgsInvoke(searchParameterType) {
       throw new Error(`Unknown search parameter type ${searchParameterType}.`);
   }
 }
+
+/** @type (parameter: import("fhir/r4").OperationDefinitionParameter) => string */
+export function operationParameter(parameter) {
+  let value = `"${parameter.name}"`;
+
+  if (parameter.min === 0) {
+    value += "?";
+  }
+
+  value += ": ";
+
+  switch (parameter.type) {
+    case "canonical":
+    case "code":
+    case "date":
+    case "dateTime":
+    case "id":
+    case "instant":
+    case "uri":
+    case "url":
+      value += "string";
+      break;
+    case "decimal":
+    case "integer":
+    case "positiveInt":
+      value += "number";
+      break;
+    default:
+      value += parameter.type;
+  }
+
+  if (parameter.max === "*") {
+    value += "[]";
+  }
+
+  if (parameter.min === 0) {
+    value += " | null | undefined";
+  }
+
+  value += ";";
+
+  return value;
+}
+
+export function hasParameters(definition, use) {
+  return definition.parameter.some((x) => x.use === use);
+}
+
+export function onlyHasOutReturn(definition) {
+  const allOutParameters = definition.parameter.filter((x) => x.use === "out");
+  return allOutParameters.length === 1 && allOutParameters[0].name === "return";
+}
