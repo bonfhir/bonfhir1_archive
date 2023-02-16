@@ -5,6 +5,7 @@ import {
   fhirCanonicalTypeAdapter,
 } from "./data-types/canonical";
 import { fhirCodeTypeAdapter, FhirCodeTypeAdapter } from "./data-types/code";
+import { FhirCodeableConceptTypeAdapter, fhirCodeableConceptTypeAdapter } from "./data-types/codeableConcept";
 import {
   fhirCodingTypeAdapter,
   FhirCodingTypeAdapter,
@@ -92,6 +93,7 @@ export interface FhirDataTypeAdapter {
   ratioRange: FhirRatioRangeTypeAdapter;
   simpleQuantity: FhirSimpleQuantityTypeAdapter;
   coding: FhirCodingTypeAdapter;
+  codeableConcept: FhirCodeableConceptTypeAdapter;
 
   message: (
     strings: TemplateStringsArray,
@@ -154,6 +156,7 @@ export function intlFhirDataTypeAdapter(
     ratioRange: fhirRatioRangeTypeAdapter(locale),
     simpleQuantity: fhirSimpleQuantityTypeAdapter(locale),
     coding: fhirCodingTypeAdapter(locale),
+    codeableConcept: fhirCodeableConceptTypeAdapter(locale),
 
     message(
       strings: TemplateStringsArray,

@@ -48,7 +48,7 @@ export function fhirCodingTypeAdapter(
         }
       );
 
-      return formattedCode !== fhirCoding.code
+      return formattedCode !== fhirCoding.code && formattedCode
         ? formattedCode
         : fhirCoding.display || formattedCode || fhirCoding.code;
     },
