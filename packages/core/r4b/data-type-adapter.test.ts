@@ -20,6 +20,7 @@ describe("intlFhirDataTypeAdapter", () => {
         expect(typeof adapter.uri.format).toBe("function");
         // general-purpose types
         expect(typeof adapter.age.format).toBe("function");
+        expect(typeof adapter.address.format).toBe("function");
         expect(typeof adapter.codeableConcept.format).toBe("function");
         expect(typeof adapter.coding.format).toBe("function");
         expect(typeof adapter.count.format).toBe("function");

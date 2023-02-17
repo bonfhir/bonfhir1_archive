@@ -38,17 +38,17 @@ export function fhirPeriodTypeAdapter(
   return {
     locale,
     format(fhirPeriod, options) {
-      if (!fhirPeriod?.start || !fhirPeriod?.end) return "";
+      if (!fhirPeriod?.start) return "";
 
       const dateTimeAdapter = fhirDateTimeTypeAdapter(locale);
       const formattedStartDateTime = dateTimeAdapter.format(
         fhirPeriod.start,
         options
       );
-      const formattedEndDateTime = dateTimeAdapter.format(
+      const formattedEndDateTime = fhirPeriod.end ? dateTimeAdapter.format(
         fhirPeriod.end,
         options
-      );
+      ) : "ongoing";
 
       return removeDoubleSpaces(
         [formattedStartDateTime, " - ", formattedEndDateTime].join(" ")
