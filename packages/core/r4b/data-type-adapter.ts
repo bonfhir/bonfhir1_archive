@@ -38,6 +38,10 @@ import {
   fhirDurationTypeAdapter,
 } from "./data-types/duration";
 import {
+  fhirHumanNameTypeAdapter,
+  FhirHumanNameTypeAdapter,
+} from "./data-types/humanName";
+import {
   FhirInstantTypeAdapter,
   fhirInstantTypeAdapter,
 } from "./data-types/instant";
@@ -91,6 +95,7 @@ export interface FhirDataTypeAdapter {
   decimal: FhirDecimalTypeAdapter;
   distance: FhirDistanceTypeAdapter;
   duration: FhirDurationTypeAdapter;
+  humanName: FhirHumanNameTypeAdapter;
   instant: FhirInstantTypeAdapter;
   integer: FhirIntegerTypeAdapter;
   markdown: FhirMarkdownTypeAdapter;
@@ -134,6 +139,7 @@ export type FhirDataTypeAdapterMessageExpression =
   | MessageExpressionAdapter<"decimal">
   | MessageExpressionAdapter<"distance">
   | MessageExpressionAdapter<"duration">
+  | MessageExpressionAdapter<"humanName">
   | MessageExpressionAdapter<"instant">
   | MessageExpressionAdapter<"integer">
   | MessageExpressionAdapter<"markdown">
@@ -181,6 +187,7 @@ export function intlFhirDataTypeAdapter(
     distance: fhirDistanceTypeAdapter(locale),
     age: fhirAgeTypeAdapter(locale),
     duration: fhirDurationTypeAdapter(locale),
+    humanName: fhirHumanNameTypeAdapter(locale),
     quantity: fhirQuantityTypeAdapter(locale),
     range: fhirRangeTypeAdapter(locale),
     ratio: fhirRatioTypeAdapter(locale),

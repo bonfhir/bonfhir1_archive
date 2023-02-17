@@ -7,31 +7,32 @@ describe("intlFhirDataTypeAdapter", () => {
 
       it("exposes different adapters", () => {
         // primitive types
-        expect(typeof adapter.markdown.format).toBe("function");
+        expect(typeof adapter.boolean.format).toBe("function");
+        expect(typeof adapter.canonical.format).toBe("function");
         expect(typeof adapter.code.format).toBe("function");
         expect(typeof adapter.date.format).toBe("function");
-        expect(typeof adapter.boolean.format).toBe("function");
-        expect(typeof adapter.uri.format).toBe("function");
-        expect(typeof adapter.uri.format).toBe("function");
-        expect(typeof adapter.canonical.format).toBe("function");
         expect(typeof adapter.dateTime.format).toBe("function");
+        expect(typeof adapter.decimal.format).toBe("function");
         expect(typeof adapter.instant.format).toBe("function");
         expect(typeof adapter.integer.format).toBe("function");
-        expect(typeof adapter.decimal.format).toBe("function");
+        expect(typeof adapter.markdown.format).toBe("function");
+        expect(typeof adapter.uri.format).toBe("function");
+        expect(typeof adapter.uri.format).toBe("function");
         // general-purpose types
+        expect(typeof adapter.age.format).toBe("function");
+        expect(typeof adapter.codeableConcept.format).toBe("function");
+        expect(typeof adapter.coding.format).toBe("function");
+        expect(typeof adapter.count.format).toBe("function");
+        expect(typeof adapter.distance.format).toBe("function");
+        expect(typeof adapter.duration.format).toBe("function");
+        expect(typeof adapter.humanName.format).toBe("function");
         expect(typeof adapter.money.format).toBe("function");
         expect(typeof adapter.period.format).toBe("function");
-        expect(typeof adapter.count.format).toBe("function");
-        expect(typeof adapter.age.format).toBe("function");
-        expect(typeof adapter.duration.format).toBe("function");
-        expect(typeof adapter.distance.format).toBe("function");
         expect(typeof adapter.quantity.format).toBe("function");
         expect(typeof adapter.range.format).toBe("function");
         expect(typeof adapter.ratio.format).toBe("function");
         expect(typeof adapter.ratioRange.format).toBe("function");
         expect(typeof adapter.simpleQuantity.format).toBe("function");
-        expect(typeof adapter.coding.format).toBe("function");
-        expect(typeof adapter.codeableConcept.format).toBe("function");
       });
 
       it("exposes the locale", () => {
