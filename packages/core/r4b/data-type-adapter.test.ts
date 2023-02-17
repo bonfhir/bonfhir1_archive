@@ -24,6 +24,7 @@ describe("intlFhirDataTypeAdapter", () => {
         expect(typeof adapter.codeableConcept.format).toBe("function");
         expect(typeof adapter.coding.format).toBe("function");
         expect(typeof adapter.count.format).toBe("function");
+        expect(typeof adapter.contactPoint.format).toBe("function");
         expect(typeof adapter.distance.format).toBe("function");
         expect(typeof adapter.duration.format).toBe("function");
         expect(typeof adapter.humanName.format).toBe("function");

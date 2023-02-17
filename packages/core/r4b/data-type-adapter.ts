@@ -23,6 +23,10 @@ import {
   fhirCodingTypeAdapter,
   FhirCodingTypeAdapter,
 } from "./data-types/coding";
+import {
+  fhirContactPointTypeAdapter,
+  FhirContactPointTypeAdapter,
+} from "./data-types/contactPoint";
 import { FhirCountTypeAdapter, fhirCountTypeAdapter } from "./data-types/count";
 import { FhirDateTypeAdapter, fhirDateTypeAdapter } from "./data-types/date";
 import {
@@ -94,6 +98,7 @@ export interface FhirDataTypeAdapter {
   code: FhirCodeTypeAdapter;
   codeableConcept: FhirCodeableConceptTypeAdapter;
   coding: FhirCodingTypeAdapter;
+  contactPoint: FhirContactPointTypeAdapter;
   count: FhirCountTypeAdapter;
   date: FhirDateTypeAdapter;
   dateTime: FhirDateTimeTypeAdapter;
@@ -133,11 +138,13 @@ type MessageExpressionAdapter<
 export type FhirDataTypeAdapterMessageExpression =
   | string
   | MessageExpressionAdapter<"age">
+  | MessageExpressionAdapter<"address">
   | MessageExpressionAdapter<"boolean">
   | MessageExpressionAdapter<"canonical">
   | MessageExpressionAdapter<"code">
   | MessageExpressionAdapter<"codeableConcept">
   | MessageExpressionAdapter<"coding">
+  | MessageExpressionAdapter<"contactPoint">
   | MessageExpressionAdapter<"count">
   | MessageExpressionAdapter<"date">
   | MessageExpressionAdapter<"dateTime">
@@ -190,6 +197,7 @@ export function intlFhirDataTypeAdapter(
     address: fhirAddressTypeAdapter(locale),
     codeableConcept: fhirCodeableConceptTypeAdapter(locale),
     coding: fhirCodingTypeAdapter(locale),
+    contactPoint: fhirContactPointTypeAdapter(locale),
     count: fhirCountTypeAdapter(locale),
     distance: fhirDistanceTypeAdapter(locale),
     duration: fhirDurationTypeAdapter(locale),

@@ -45,10 +45,9 @@ export function fhirPeriodTypeAdapter(
         fhirPeriod.start,
         options
       );
-      const formattedEndDateTime = fhirPeriod.end ? dateTimeAdapter.format(
-        fhirPeriod.end,
-        options
-      ) : "ongoing";
+      const formattedEndDateTime = fhirPeriod.end
+        ? dateTimeAdapter.format(fhirPeriod.end, options)
+        : "ongoing";
 
       return removeDoubleSpaces(
         [formattedStartDateTime, " - ", formattedEndDateTime].join(" ")
