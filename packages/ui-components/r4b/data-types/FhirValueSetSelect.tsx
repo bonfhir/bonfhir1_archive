@@ -1,4 +1,5 @@
 import {
+  buildCodeableConcept,
   ValueSetExpandOperationParameters,
   ValueSetExpandOperationResult,
 } from "@bonfhir/core/r4b";
@@ -47,9 +48,15 @@ export function FhirValueSetSelect<TRendererProps = unknown>(
 ): ReactElement | null {
   const uiContext = useFhirUIComponentsContext();
 
-  const { valueSetExpand, valueSetExpansions, ...options } =
-    props as unknown as FhirValueSetSelectPropsExpand &
-      FhirValueSetSelectPropsExpansions;
+  const {
+    valueSetExpand,
+    valueSetExpansions,
+    kind,
+    value,
+    onChange,
+    ...options
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  } = props as any;
 
   const valueSetExpandQuery = useFhirExecute<
     ValueSetExpandOperationResult,
@@ -65,7 +72,7 @@ export function FhirValueSetSelect<TRendererProps = unknown>(
 
   const items = useMemo<SelectItem[]>(() => {
     if (valueSetExpansions) {
-      return valueSetExpansions.map((x) => ({
+      return valueSetExpansions.map((x: ValueSetExpansionContains) => ({
         label: uiContext.dataTypeAdapter.coding.format(x),
         value: x.code || "",
         fhirValue: x,
@@ -81,48 +88,65 @@ export function FhirValueSetSelect<TRendererProps = unknown>(
     return [];
   }, [valueSetExpansions, valueSetExpandQuery.data]);
 
-  const onChange = useCallback(
+  const managedOnChange = useCallback(
     (value: string) => {
-      if (!props.onChange) {
+      if (!onChange) {
         return;
       }
 
       if (!value) {
-        props.onChange(undefined);
+        onChange(undefined);
         return;
       }
 
-      switch (props.kind) {
+      switch (kind) {
         case "code":
-          props.onChange(value);
+          onChange(value);
           break;
         case "coding":
+          onChange({
+            code: value,
+            system: items.find((x) => x.value === value)?.fhirValue?.system,
+            display: items.find((x) => x.value === value)?.fhirValue?.display,
+          });
+          break;
         case "codeableConcept":
-          //TODO
+          onChange(
+            buildCodeableConcept({
+              coding: [
+                {
+                  code: value,
+                  system: items.find((x) => x.value === value)?.fhirValue
+                    ?.system,
+                  display: items.find((x) => x.value === value)?.fhirValue
+                    ?.display,
+                },
+              ],
+            })
+          );
           break;
       }
     },
-    [props.kind, props.onChange]
+    [kind, onChange]
   );
 
-  let value = "";
-  switch (props.kind) {
+  let managedValue = "";
+  switch (kind) {
     case "code":
-      console.log("code", props.value);
-      value = props.value || "";
+      managedValue = value || "";
       break;
     case "coding":
-      value = props.value?.code || "";
+      managedValue = value?.code || "";
       break;
     case "codeableConcept":
-      value = props.value?.coding?.[0]?.code || "";
+      managedValue = value?.coding?.[0]?.code || "";
       break;
   }
 
   return uiContext.renderer.select({
-    value,
+    value: managedValue,
     items,
-    onChange,
+    onChange: managedOnChange,
     loading: valueSetExpandQuery.isInitialLoading,
     ...options,
   });

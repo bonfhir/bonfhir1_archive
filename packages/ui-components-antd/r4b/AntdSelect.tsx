@@ -12,8 +12,6 @@ export function AntdSelect(
 ): ReactElement | null {
   const { value, items, onChange, loading, ...selectProps } = props;
 
-  console.log({ value });
-
   return (
     <Select
       value={value}

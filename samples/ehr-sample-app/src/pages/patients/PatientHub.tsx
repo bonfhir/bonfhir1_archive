@@ -18,12 +18,10 @@ export function PatientHub(): ReactElement | null {
         kind="code"
         value={patient?.gender}
         style={{ width: 120 }}
-        onChange={(x: any) => {
-          patient!.gender = x;
-        }}
         valueSetExpand={{
           url: "http://hl7.org/fhir/ValueSet/administrative-gender",
         }}
+        placeholder="Select a gender"
       />
     </div>
   );
