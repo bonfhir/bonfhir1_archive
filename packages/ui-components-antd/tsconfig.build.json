@@ -1,0 +1,14 @@
+{
+  "extends": "./tsconfig.json",
+  "exclude": [
+    "**/*.test.ts",
+    "**/*.test.tsx",
+    "**/*.stories.tsx",
+    "**/__fixtures__",
+    "**/.ladle"
+  ],
+  "compilerOptions": {
+    "incremental": false,
+    "outDir": "dist"
+  }
+}

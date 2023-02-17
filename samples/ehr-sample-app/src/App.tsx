@@ -1,5 +1,6 @@
 import { FhirQueryProvider } from "@bonfhir/fhir-query/r4b";
 import { buildFhirRestfulClientAdapter } from "@bonfhir/medplum/r4b";
+import { antdFhirUIComponentsRenderer } from "@bonfhir/ui-components-antd/r4b";
 import { FhirUIComponentsProvider } from "@bonfhir/ui-components/r4b";
 import { MedplumClient } from "@medplum/core";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
@@ -48,7 +49,7 @@ export function App(): ReactElement | null {
   return (
     <BrowserRouter>
       <FhirQueryProvider fhirClient={fhirClient}>
-        <FhirUIComponentsProvider>
+        <FhirUIComponentsProvider renderer={antdFhirUIComponentsRenderer()}>
           <ConfigProvider>
             <AppRoutes />
           </ConfigProvider>
