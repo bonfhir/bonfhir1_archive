@@ -1,45 +1,50 @@
 import { useFhirSearch } from "@bonfhir/fhir-query/r4b";
-import { FhirValue } from "@bonfhir/ui-components/r4b";
+import { AntdTableProps } from "@bonfhir/ui-components-antd/r4b/AntdTable";
+import { FhirTable, FhirValue } from "@bonfhir/ui-components/r4b";
 import { Typography } from "antd";
+import { Patient } from "fhir/r4";
 import { ReactElement } from "react";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { Page } from "../../components/Page";
 
 export function Patients(): ReactElement | null {
+  const navigate = useNavigate();
   const patientsQuery = useFhirSearch("Patient", (search) =>
     search.active("true")
   );
 
-  if (patientsQuery.isInitialLoading) {
-    return <div>Loading...</div>;
-  }
-
   return (
     <Page>
       <Typography.Title>Patients</Typography.Title>
-      <ul>
-        {patientsQuery.data?.nav.type("Patient").map((patient) => (
-          <li key={patient.id}>
-            <Link to={`/patients/${patient.id}`}>{patient.id}</Link> (DOB:
-            <FhirValue
-              type="date"
-              value={patient.birthDate}
-              options={{ dateStyle: "long" }}
-            />
-            , Gender:{" "}
-            <FhirValue
-              type="code"
-              value={patient.gender}
-              options={{
-                valueSetExpand: {
-                  url: "http://hl7.org/fhir/ValueSet/administrative-gender",
-                },
-              }}
-            />
-            )
-          </li>
-        ))}
-      </ul>
+      <FhirTable<Patient, Patient, AntdTableProps>
+        query={patientsQuery}
+        querySelect={(result) => result.nav.type("Patient")}
+        columns={[
+          {
+            title: "Id",
+            render: (patient) => patient.id,
+          },
+          {
+            title: "Gender",
+            render: (patient) => (
+              <FhirValue
+                type="code"
+                value={patient.gender}
+                options={{
+                  valueSetExpand: {
+                    url: "http://hl7.org/fhir/ValueSet/administrative-gender",
+                  },
+                }}
+              />
+            ),
+          },
+        ]}
+        onRow={(patient) => {
+          return {
+            onClick: () => navigate(`/patients/${(patient as Patient).id}`),
+          };
+        }}
+      />
     </Page>
   );
 }

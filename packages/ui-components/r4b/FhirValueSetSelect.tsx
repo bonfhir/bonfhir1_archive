@@ -6,8 +6,8 @@ import {
 import { useFhirExecute } from "@bonfhir/fhir-query/r4b";
 import { CodeableConcept, Coding, ValueSetExpansionContains } from "fhir/r4";
 import { ReactElement, useCallback, useMemo } from "react";
-import { useFhirUIComponentsContext } from "../FhirUIComponentsContext";
-import { SelectItem } from "../FhirUIComponentsRenderer";
+import { useFhirUIComponentsContext } from "./FhirUIComponentsContext";
+import { SelectItem } from "./FhirUIComponentsRenderer";
 
 export interface FhirValueSetSelectPropsExpansions {
   valueSetExpansions: ValueSetExpansionContains[];

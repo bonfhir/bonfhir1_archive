@@ -5,7 +5,7 @@ import {
 } from "@bonfhir/core/r4b";
 import { useFhirExecute } from "@bonfhir/fhir-query/r4b";
 import { ReactElement } from "react";
-import { useFhirUIComponentsContext } from "../FhirUIComponentsContext";
+import { useFhirUIComponentsContext } from "./FhirUIComponentsContext";
 
 export interface FhirValuePropsCombination<TAdapterName, TValue, TOptions> {
   type: TAdapterName;
