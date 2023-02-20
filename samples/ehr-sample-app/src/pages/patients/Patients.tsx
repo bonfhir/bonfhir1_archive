@@ -1,4 +1,5 @@
 import { useFhirSearch } from "@bonfhir/fhir-query/r4b";
+import { ValueSetURIs } from "@bonfhir/terminology/r4b";
 import { FhirValue } from "@bonfhir/ui-components/r4b";
 import { Typography } from "antd";
 import { ReactElement } from "react";
@@ -32,7 +33,7 @@ export function Patients(): ReactElement | null {
               value={patient.gender}
               options={{
                 valueSetExpand: {
-                  url: "http://hl7.org/fhir/ValueSet/administrative-gender",
+                  url: ValueSetURIs.AdministrativeGender,
                 },
               }}
             />
