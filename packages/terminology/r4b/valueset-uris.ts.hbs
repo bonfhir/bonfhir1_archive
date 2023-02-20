@@ -1,0 +1,17 @@
+
+/**
+ * URIs for ValueSets documented in the FHIR spec
+ * 
+ * @see https://hl7.org/fhir/terminologies-valuesets.html
+ */
+export const ValueSetURIs = {
+{{#each (uniqBy (fhirPath data.valuesets "Bundle.entry.select(resource).ofType(ValueSet)") "name")}}
+    /**
+     * {{replaceNewLines description " "}}
+     *
+     * @see {{ url }}
+     */
+     "{{name}}": "{{url}}",
+
+{{/each}}
+} as const;
