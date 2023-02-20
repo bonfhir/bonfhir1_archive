@@ -71,7 +71,6 @@ export function Patients(): ReactElement | null {
           },
         ]}
         {...fhirTable}
-        rowKey={(patient) => patient.id!}
         onRow={(patient) => {
           return {
             onClick: () => navigate(`/patients/${patient.id}`),

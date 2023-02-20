@@ -1971,6 +1971,8 @@ __metadata:
     "@bonfhir/typescript-config": ^1.0.0
     "@bonfhir/ui-components-antd": ^0.1.0-alpha.1
     "@medplum/core": ^2.0.1
+    "@parcel/reporter-bundle-analyzer": ^2.8.3
+    "@parcel/reporter-bundle-buddy": ^2.8.3
     "@swc/core": ^1.3.24
     "@swc/jest": ^0.2.24
     "@tanstack/react-query": ^4.24.4
@@ -5684,6 +5686,26 @@ __metadata:
   dependencies:
     "@parcel/types": 2.8.3
   checksum: a69ac66f5cc28197cf689f1c4144398457d62a086621a22b3b45fe863909a094b616dad415ec01673a9eb731b05fe9060bcb340c07efcd48343577a540fbfdf7
+  languageName: node
+  linkType: hard
+
+"@parcel/reporter-bundle-analyzer@npm:^2.8.3":
+  version: 2.8.3
+  resolution: "@parcel/reporter-bundle-analyzer@npm:2.8.3"
+  dependencies:
+    "@parcel/plugin": 2.8.3
+    "@parcel/utils": 2.8.3
+    nullthrows: ^1.1.1
+  checksum: 2c7f11fabee9792e82a8e93ea1830abcb8f896d67c3ca9f7bbd7d2820709f4d6dd2304b0b3de46376f30d4c188b874a3dbd48acecc2558905c21f052a0b3e00f
+  languageName: node
+  linkType: hard
+
+"@parcel/reporter-bundle-buddy@npm:^2.8.3":
+  version: 2.8.3
+  resolution: "@parcel/reporter-bundle-buddy@npm:2.8.3"
+  dependencies:
+    "@parcel/plugin": 2.8.3
+  checksum: d376d63fb6aae49c239f53d2996e5a94a307b8c07e7d679f4aa2c654ebc71806b6e3e1e326ea65a81bd6a6236a808555f70cc71fd72fc39880767751e2aa2d4e
   languageName: node
   linkType: hard
 

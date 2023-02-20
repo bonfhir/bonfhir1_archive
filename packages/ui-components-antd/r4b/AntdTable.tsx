@@ -78,6 +78,7 @@ export function AntdTable<AntdTableProps, AntdTableColumnProps>(
         showTotal: () => pagination.total,
       }}
       onChange={managedOnChange}
+      rowKey={(resource) => resource?.id}
       {...renderedProps}
     />
   );
