@@ -24,9 +24,9 @@ export interface FhirContactPointTypeAdapter {
    * @see https://hl7.org/fhir/datatypes.html#contactPoint
    */
   format(
-    value: ContactPoint | null | undefined,
+    value: ContactPoint | ContactPoint[] | null | undefined,
     options?: FhirContactPointFormatOptions | null | undefined
-  ): string;
+  ): string | string[];
 }
 
 /**
@@ -42,6 +42,11 @@ export function fhirContactPointTypeAdapter(
   return {
     locale,
     format(fhirContactPoint, options) {
+      if (Array.isArray(fhirContactPoint))
+        return sortContactPoints(fhirContactPoint).map(
+          (contactPoint) => this.format(contactPoint, options) as string
+        );
+
       if (!fhirContactPoint?.value) return "";
 
       const use = fhirCodeTypeAdapter(locale).format(fhirContactPoint.use, {
@@ -75,3 +80,32 @@ export function fhirContactPointTypeAdapter(
     },
   };
 }
+
+const sortContactPoints = (contactPoints: ContactPoint[]): ContactPoint[] => {
+  return contactPoints.sort((contactPoint1, contactPoint2) => {
+    // sort rank
+    if (
+      (contactPoint1.rank || contactPoint2.rank) &&
+      contactPoint1.rank !== contactPoint2.rank
+    ) {
+      if (contactPoint1.rank && !contactPoint2.rank) return -1;
+      if (!contactPoint1.rank && contactPoint2.rank) return 1;
+      return (contactPoint1.rank || 0) - (contactPoint2.rank || 0);
+    }
+
+    // then sort by use
+    return (
+      contactPointUseOrder[contactPoint1.use || "undefined"] -
+      contactPointUseOrder[contactPoint2.use || "undefined"]
+    );
+  });
+};
+
+const contactPointUseOrder = {
+  home: 0,
+  work: 1,
+  temp: 2,
+  old: 3,
+  mobile: 4,
+  undefined: 5,
+};

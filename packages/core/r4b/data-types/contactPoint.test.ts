@@ -65,6 +65,61 @@ describe("fhirContactPointTypeAdapter", () => {
     });
   });
 
+  describe("format for arrays", () => {
+    it("sorts by period and type", () => {
+      const contactPoints: ContactPoint[] = [
+        {
+          rank: 2,
+          value: "rank 2",
+        },
+        {
+          rank: 4,
+          use: "work",
+          value: "rank 4, work",
+        },
+        {
+          rank: 0,
+          use: "old",
+          value: "rank 0, old, 0 is undefined rank",
+        },
+        {
+          rank: 1,
+          use: "old",
+          value: "rank 1, old",
+        },
+        {
+          use: "work",
+          value: "work",
+        },
+        {
+          rank: 10,
+          use: "work",
+          value: "rank 10, work",
+        },
+        {
+          rank: 4,
+          use: "home",
+          value: "rank 4, home",
+        },
+        {
+          use: "home",
+          value: "home",
+        },
+      ];
+
+      expect(fhirContactPointTypeAdapter().format(contactPoints)).toEqual([
+        "rank 1, old",
+        "rank 2",
+        "rank 4, home",
+        "rank 4, work",
+        "rank 10, work",
+        "home",
+        "work",
+        "rank 0, old, 0 is undefined rank",
+      ]);
+    });
+  });
+
   describe("with an unknown locale", () => {
     it("raises an error", () => {
       expect(() => fhirContactPointTypeAdapter("nope")).toThrowError(
