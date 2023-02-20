@@ -4,9 +4,11 @@ import {
 } from "@bonfhir/core/r4b";
 import { PropsWithChildren, useMemo } from "react";
 import { FhirUIComponentsContext } from "./FhirUIComponentsContext";
+import { FhirUIComponentsRenderer } from "./FhirUIComponentsRenderer";
 
 export type FhirUIComponentsProviderProps = PropsWithChildren<{
   dataTypeAdapter?: FhirDataTypeAdapter | null | undefined;
+  renderer: FhirUIComponentsRenderer;
 }>;
 
 /**
@@ -26,6 +28,7 @@ export function FhirUIComponentsProvider(props: FhirUIComponentsProviderProps) {
     <FhirUIComponentsContext.Provider
       value={{
         dataTypeAdapter,
+        renderer: props.renderer,
       }}
     >
       {props.children}

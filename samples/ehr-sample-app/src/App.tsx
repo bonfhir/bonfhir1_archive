@@ -48,7 +48,7 @@ export function App(): ReactElement | null {
   return (
     <BrowserRouter>
       <FhirQueryProvider fhirClient={fhirClient}>
-        <FhirUIComponentsProvider>
+        <FhirUIComponentsProvider renderer={{}}>
           <ConfigProvider>
             <AppRoutes />
           </ConfigProvider>

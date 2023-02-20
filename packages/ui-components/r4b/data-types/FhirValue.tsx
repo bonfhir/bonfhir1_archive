@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import {
   FhirDataTypeAdapter,
   ValueSetExpandOperationParameters,
@@ -8,8 +9,19 @@ import { ReactElement } from "react";
 import { useFhirUIComponentsContext } from "../FhirUIComponentsContext";
 
 export interface FhirValuePropsCombination<TAdapterName, TValue, TOptions> {
+  /**
+   * The FHIR data tyoe.
+   */
   type: TAdapterName;
+
+  /**
+   * The actual FHIR value.
+   */
   value: TValue | null | undefined;
+
+  /**
+   * Any option used to render.
+   */
   options?: TOptions | null | undefined;
 }
 
@@ -34,6 +46,10 @@ export type FhirValuePropsAdapterValueSetExpand<
 >;
 
 export type HasValueSetExpand = {
+  /**
+   * If relevant, pass the options for a [ValueSet expand](http://www.hl7.org/fhir/valueset-operation-expand.html)
+   * operation that will be invoked, and will populate the `valueSetExpansion` in return.
+   */
   valueSetExpand: ValueSetExpandOperationParameters;
 };
 
@@ -80,6 +96,8 @@ export type FhirValueProps =
  *  <FhirValue type="date" value={patient.birthDate} options={{ dateStyle: "long" }} />
  *
  *  <FhirValue type="code" value={patient.gender} options={{ valueSetExpand: { url: "http://hl7.org/fhir/ValueSet/administrative-gender" }}} />
+ *
+ * @see use the `value` renderer to customize rendering.
  */
 export function FhirValue(props: FhirValueProps): ReactElement | null {
   const uiContext = useFhirUIComponentsContext();
@@ -99,6 +117,23 @@ export function FhirValue(props: FhirValueProps): ReactElement | null {
     }
   );
 
+  if (uiContext.renderer.value) {
+    return uiContext.renderer.value({
+      ...props,
+      dataTypeAdapter: uiContext.dataTypeAdapter,
+      valueSetExpandQuery,
+      formatted: uiContext.dataTypeAdapter[props.type].format(
+        props.value as any,
+        {
+          ...options,
+          valueSetExpansions:
+            (options as any).valueSetExpansions ||
+            valueSetExpandQuery.data?.expansion?.contains,
+        } as any
+      ),
+    });
+  }
+
   if (props.type === "markdown" && props.options?.style === "html") {
     // TODO: make it safer
     return (
@@ -116,15 +151,12 @@ export function FhirValue(props: FhirValueProps): ReactElement | null {
   return (
     <>
       {uiContext.dataTypeAdapter[props.type].format(
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         props.value as any,
         {
           ...options,
           valueSetExpansions:
-            // eslint-disable-next-line @typescript-eslint/no-explicit-any
             (options as any).valueSetExpansions ||
             valueSetExpandQuery.data?.expansion?.contains,
-          // eslint-disable-next-line @typescript-eslint/no-explicit-any
         } as any
       )}
     </>
