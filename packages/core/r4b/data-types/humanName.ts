@@ -31,9 +31,9 @@ export interface FhirHumanNameTypeAdapter {
    * @see https://hl7.org/fhir/datatypes.html#humanName
    */
   format(
-    value: HumanName | null | undefined,
+    value: HumanName | HumanName[] | null | undefined,
     options?: FhirHumanNameFormatOptions | null | undefined
-  ): string;
+  ): string | string[];
 }
 
 /**
@@ -50,6 +50,11 @@ export function fhirHumanNameTypeAdapter(
     locale,
     format(fhirHumanName, options) {
       if (!fhirHumanName) return "";
+
+      if (Array.isArray(fhirHumanName))
+        return sortHumanNames(fhirHumanName).map(
+          (humanName) => this.format(humanName, options) as string
+        );
 
       const shortStyle = removeDoubleSpaces(
         `${fhirHumanName.given?.[0]} ${fhirHumanName.family}`
@@ -98,3 +103,23 @@ export function fhirHumanNameTypeAdapter(
     },
   };
 }
+
+const humanNameUseOrder = {
+  usual: 0,
+  official: 1,
+  nickname: 2,
+  temp: 3,
+  anonymous: 4,
+  old: 5,
+  maiden: 6,
+  undefined: 7,
+};
+
+const sortHumanNames = (humanNames: HumanName[]): HumanName[] => {
+  return humanNames.sort((humanName1, humanName2) => {
+    return (
+      humanNameUseOrder[humanName1.use || "undefined"] -
+      humanNameUseOrder[humanName2.use || "undefined"]
+    );
+  });
+};

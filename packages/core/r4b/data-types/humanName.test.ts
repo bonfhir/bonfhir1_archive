@@ -69,6 +69,35 @@ describe("fhirHumanNameTypeAdapter", () => {
     });
   });
 
+  describe("format for arrays", () => {
+    it("sorts by period and type", () => {
+      const addresses: HumanName[] = [
+        {
+          use: "usual",
+          text: "usual",
+        },
+        {
+          use: "temp",
+          text: "temp",
+        },
+        {
+          use: "official",
+          text: "official",
+        },
+        {
+          use: "maiden",
+          text: "maiden",
+        },
+      ];
+
+      expect(
+        fhirHumanNameTypeAdapter().format(addresses, {
+          style: "text",
+        })
+      ).toEqual(["usual", "official", "temp", "maiden"]);
+    });
+  });
+
   describe("with an unknown locale", () => {
     it("raises an error", () => {
       expect(() => fhirHumanNameTypeAdapter("nope")).toThrowError(

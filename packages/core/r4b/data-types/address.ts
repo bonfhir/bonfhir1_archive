@@ -106,12 +106,10 @@ const sortAddresses = (addresses: Address[]): Address[] => {
     }
 
     // then sort by use
-    if (address1.use && !address2.use) return -1;
-    if (address2.use && !address1.use) return 1;
-    if (address2.use && address1.use)
-      return addressUseOrder[address1.use] - addressUseOrder[address2.use];
-
-    return 0;
+    return (
+      addressUseOrder[address1.use || "undefined"] -
+      addressUseOrder[address2.use || "undefined"]
+    );
   });
 };
 
@@ -122,4 +120,5 @@ const addressUseOrder = {
   temp: 2,
   old: 3,
   billing: 4,
+  undefined: 4,
 };
