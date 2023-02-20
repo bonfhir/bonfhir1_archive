@@ -90,6 +90,59 @@ describe("fhirAddressTypeAdapter", () => {
     });
   });
 
+  describe("format for arrays", () => {
+    it("sorts by period and type", () => {
+      const addresses: Address[] = [
+        {
+          use: "home",
+          period: { end: "2023-01-01" },
+          text: "home, past",
+        },
+        {
+          use: "work",
+          period: { end: "2023-01-01" },
+          text: "work, past",
+        },
+        {
+          use: "temp",
+          text: "temp, present",
+        },
+        {
+          use: "work",
+          text: "work, present",
+        },
+        {
+          use: "old",
+          period: { end: "1990-01-01" },
+          text: "a long time ago, old",
+        },
+        {
+          period: { end: "1990-01-01" },
+          text: "a long time ago, no use",
+        },
+        {
+          use: "work",
+          period: { end: "1990-01-01" },
+          text: "a long time ago, work",
+        },
+      ];
+
+      expect(
+        fhirAddressTypeAdapter().format(addresses, {
+          style: "text",
+        })
+      ).toEqual([
+        "work, present",
+        "temp, present",
+        "home, past",
+        "work, past",
+        "a long time ago, work",
+        "a long time ago, old",
+        "a long time ago, no use",
+      ]);
+    });
+  });
+
   describe("with an unknown locale", () => {
     it("raises an error", () => {
       expect(() => fhirAddressTypeAdapter("nope")).toThrowError(
