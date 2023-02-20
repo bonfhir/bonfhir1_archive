@@ -67,6 +67,12 @@ import {
   FhirPeriodTypeAdapter,
 } from "./data-types/period";
 import {
+  fhirPositiveIntTypeAdapter,
+  FhirPositiveIntTypeAdapter,
+  fhirUnsignedIntTypeAdapter,
+  FhirUnsignedIntTypeAdapter,
+} from "./data-types/positiveInt";
+import {
   FhirQuantityTypeAdapter,
   fhirQuantityTypeAdapter,
 } from "./data-types/quantity";
@@ -80,6 +86,18 @@ import {
   fhirSimpleQuantityTypeAdapter,
   FhirSimpleQuantityTypeAdapter,
 } from "./data-types/simpleQuantity";
+import {
+  FhirBase64BinaryTypeAdapter,
+  fhirBase64BinaryTypeAdapter,
+  fhirIdTypeAdapter,
+  FhirIdTypeAdapter,
+  fhirOidTypeAdapter,
+  FhirOidTypeAdapter,
+  fhirStringTypeAdapter,
+  FhirStringTypeAdapter,
+  fhirUuidTypeAdapter,
+  FhirUuidTypeAdapter,
+} from "./data-types/string";
 import { FhirURITypeAdapter, fhirURITypeAdapter } from "./data-types/URI";
 import { FhirURLTypeAdapter, fhirURLTypeAdapter } from "./data-types/URL";
 
@@ -91,8 +109,9 @@ import { FhirURLTypeAdapter, fhirURLTypeAdapter } from "./data-types/URL";
 export interface FhirDataTypeAdapter {
   locale: string | undefined;
 
-  age: FhirAgeTypeAdapter;
   address: FhirAddressTypeAdapter;
+  age: FhirAgeTypeAdapter;
+  base64Binary: FhirBase64BinaryTypeAdapter;
   boolean: FhirBooleanTypeAdapter;
   canonical: FhirCanonicalTypeAdapter;
   code: FhirCodeTypeAdapter;
@@ -106,18 +125,24 @@ export interface FhirDataTypeAdapter {
   distance: FhirDistanceTypeAdapter;
   duration: FhirDurationTypeAdapter;
   humanName: FhirHumanNameTypeAdapter;
+  id: FhirIdTypeAdapter;
   instant: FhirInstantTypeAdapter;
   integer: FhirIntegerTypeAdapter;
   markdown: FhirMarkdownTypeAdapter;
   money: FhirMoneyTypeAdapter;
+  oid: FhirOidTypeAdapter;
   period: FhirPeriodTypeAdapter;
+  positiveInt: FhirPositiveIntTypeAdapter;
   quantity: FhirQuantityTypeAdapter;
   range: FhirRangeTypeAdapter;
   ratio: FhirRatioTypeAdapter;
   ratioRange: FhirRatioRangeTypeAdapter;
   simpleQuantity: FhirSimpleQuantityTypeAdapter;
+  string: FhirStringTypeAdapter;
+  unsignedInt: FhirUnsignedIntTypeAdapter;
   uri: FhirURITypeAdapter;
   url: FhirURLTypeAdapter;
+  uuid: FhirUuidTypeAdapter;
 
   message: (
     strings: TemplateStringsArray,
@@ -137,8 +162,9 @@ type MessageExpressionAdapter<
 
 export type FhirDataTypeAdapterMessageExpression =
   | string
-  | MessageExpressionAdapter<"age">
   | MessageExpressionAdapter<"address">
+  | MessageExpressionAdapter<"age">
+  | MessageExpressionAdapter<"base64Binary">
   | MessageExpressionAdapter<"boolean">
   | MessageExpressionAdapter<"canonical">
   | MessageExpressionAdapter<"code">
@@ -152,18 +178,25 @@ export type FhirDataTypeAdapterMessageExpression =
   | MessageExpressionAdapter<"distance">
   | MessageExpressionAdapter<"duration">
   | MessageExpressionAdapter<"humanName">
+  | MessageExpressionAdapter<"id">
   | MessageExpressionAdapter<"instant">
   | MessageExpressionAdapter<"integer">
   | MessageExpressionAdapter<"markdown">
   | MessageExpressionAdapter<"money">
+  | MessageExpressionAdapter<"oid">
   | MessageExpressionAdapter<"period">
+  | MessageExpressionAdapter<"positiveInt">
   | MessageExpressionAdapter<"quantity">
   | MessageExpressionAdapter<"range">
   | MessageExpressionAdapter<"ratio">
   | MessageExpressionAdapter<"ratioRange">
   | MessageExpressionAdapter<"simpleQuantity">
+  | MessageExpressionAdapter<"string">
+  | MessageExpressionAdapter<"unsignedInt">
+  | MessageExpressionAdapter<"unsignedInt">
   | MessageExpressionAdapter<"uri">
   | MessageExpressionAdapter<"url">
+  | MessageExpressionAdapter<"uuid">
   | null
   | undefined;
 
@@ -181,20 +214,27 @@ export function intlFhirDataTypeAdapter(
   return {
     locale,
     // primitive types
+    base64Binary: fhirBase64BinaryTypeAdapter(locale),
     boolean: fhirBooleanTypeAdapter(locale),
     canonical: fhirCanonicalTypeAdapter(locale),
     code: fhirCodeTypeAdapter(locale),
     date: fhirDateTypeAdapter(locale),
     dateTime: fhirDateTimeTypeAdapter(locale),
     decimal: fhirDecimalTypeAdapter(locale),
+    id: fhirIdTypeAdapter(locale),
     instant: fhirInstantTypeAdapter(locale),
     integer: fhirIntegerTypeAdapter(locale),
     markdown: fhirMarkdownTypeAdapter(locale),
+    oid: fhirOidTypeAdapter(locale),
+    positiveInt: fhirPositiveIntTypeAdapter(locale),
+    string: fhirStringTypeAdapter(locale),
+    unsignedInt: fhirUnsignedIntTypeAdapter(locale),
     uri: fhirURITypeAdapter(locale),
     url: fhirURLTypeAdapter(locale),
+    uuid: fhirUuidTypeAdapter(locale),
     // general-purpose types
-    age: fhirAgeTypeAdapter(locale),
     address: fhirAddressTypeAdapter(locale),
+    age: fhirAgeTypeAdapter(locale),
     codeableConcept: fhirCodeableConceptTypeAdapter(locale),
     coding: fhirCodingTypeAdapter(locale),
     contactPoint: fhirContactPointTypeAdapter(locale),

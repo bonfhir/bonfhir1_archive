@@ -7,17 +7,24 @@ describe("intlFhirDataTypeAdapter", () => {
 
       it("exposes different adapters", () => {
         // primitive types
+        expect(typeof adapter.base64Binary.format).toBe("function");
         expect(typeof adapter.boolean.format).toBe("function");
         expect(typeof adapter.canonical.format).toBe("function");
         expect(typeof adapter.code.format).toBe("function");
         expect(typeof adapter.date.format).toBe("function");
         expect(typeof adapter.dateTime.format).toBe("function");
         expect(typeof adapter.decimal.format).toBe("function");
+        expect(typeof adapter.id.format).toBe("function");
         expect(typeof adapter.instant.format).toBe("function");
         expect(typeof adapter.integer.format).toBe("function");
         expect(typeof adapter.markdown.format).toBe("function");
+        expect(typeof adapter.oid.format).toBe("function");
+        expect(typeof adapter.positiveInt.format).toBe("function");
+        expect(typeof adapter.string.format).toBe("function");
+        expect(typeof adapter.unsignedInt.format).toBe("function");
         expect(typeof adapter.uri.format).toBe("function");
         expect(typeof adapter.uri.format).toBe("function");
+        expect(typeof adapter.uuid.format).toBe("function");
         // general-purpose types
         expect(typeof adapter.age.format).toBe("function");
         expect(typeof adapter.address.format).toBe("function");
@@ -35,6 +42,20 @@ describe("intlFhirDataTypeAdapter", () => {
         expect(typeof adapter.ratio.format).toBe("function");
         expect(typeof adapter.ratioRange.format).toBe("function");
         expect(typeof adapter.simpleQuantity.format).toBe("function");
+      });
+
+      describe("aliases", () => {
+        it("works", () => {
+          const base64BinaryTypeAdapter =
+            intlFhirDataTypeAdapter("fr-CA").base64Binary;
+          const uuidTypeAdapter = intlFhirDataTypeAdapter("en-EN").uuid;
+
+          expect(base64BinaryTypeAdapter.locale).toEqual("fr-CA");
+          expect(uuidTypeAdapter.locale).toEqual("en-EN");
+
+          expect(base64BinaryTypeAdapter.format("bonjour")).toEqual("bonjour");
+          expect(uuidTypeAdapter.format("123-123-123")).toEqual("123-123-123");
+        });
       });
 
       it("exposes the locale", () => {

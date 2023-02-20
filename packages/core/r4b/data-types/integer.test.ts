@@ -12,7 +12,7 @@ describe("fhirIntegerTypeAdapter", () => {
       describe("parse", () => {
         it.each([
           ["12", 12],
-          [42, 42],
+          [-42, -42],
           [undefined, undefined],
         ])("parse %p", (value, expected) => {
           expect(adapter.parse(value)).toEqual(expected);
@@ -30,7 +30,7 @@ describe("fhirIntegerTypeAdapter", () => {
           [987654321, { notation: "compact-long" }, "988 million"],
           [987654321, { notation: "scientific" }, "9.877E8"],
           [987654321, { notation: "engineering" }, "987.654E6"],
-          [123, undefined, "123"],
+          [-123, undefined, "-123"],
           [undefined, undefined, ""],
         ])("format %p", (value, options, expected) => {
           expect(adapter.format(value, options)).toEqual(expected);
