@@ -1,5 +1,5 @@
 import { Period } from "fhir/r4";
-import _ from "lodash";
+import uniq from "lodash/uniq";
 import { WithRequired } from "./types";
 
 export interface Timeline<T> {
@@ -99,11 +99,9 @@ export function buildTimelineOfResourcesWithPeriods<T>({
   const tuples: Array<[T, WithRequired<Period, "start" | "end">]> =
     resources.map((resource) => [resource, periodFn(resource)]);
 
-  const ticks = _(tuples)
-    .flatMap((tuple) => [tuple[1].start, tuple[1].end])
-    .uniq()
-    .sort()
-    .value();
+  const ticks = uniq(
+    tuples.flatMap((tuple) => [tuple[1].start, tuple[1].end])
+  ).sort();
 
   const blocks: TimelineBlock<T>[] = [];
 
@@ -118,10 +116,9 @@ export function buildTimelineOfResourcesWithPeriods<T>({
         start,
         end,
       },
-      items: _(tuples)
+      items: tuples
         .filter(([, period]) => start < period.end && end > period.start)
-        .map(([resource]) => resource)
-        .value(),
+        .map(([resource]) => resource),
     });
   }
 

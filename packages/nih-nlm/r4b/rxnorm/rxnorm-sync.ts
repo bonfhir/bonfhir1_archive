@@ -26,7 +26,8 @@ import {
   Provenance,
   Ratio,
 } from "fhir/r4";
-import _ from "lodash";
+import compact from "lodash/compact";
+import keyBy from "lodash/keyBy";
 import { URLSearchParams } from "url";
 import { AllProperties, NDCProperties } from "./rxnorm-models";
 
@@ -136,7 +137,7 @@ export class RxNormSyncSession {
       this.onResourceBuild(
         build("Medication", {
           code: buildCodeableConcept({
-            coding: _.compact([
+            coding: compact([
               indexedAllProperties["CODES"]["RxCUI"]
                 ? {
                     system: CodeSystemURIs.RxNorm,
@@ -183,7 +184,7 @@ export class RxNormSyncSession {
         })
       ),
       resourceSearch("Medication").code(
-        _.compact([
+        compact([
           {
             system: CodeSystemURIs.RxNorm,
             value: indexedAllProperties["CODES"]["RxCUI"],
@@ -203,7 +204,7 @@ export class RxNormSyncSession {
     let medicationKnowledge: MedicationKnowledge | undefined = undefined;
     if (ndcProperties?.ndcPropertyList?.ndcProperty?.[0]) {
       const ndcProps = ndcProperties.ndcPropertyList.ndcProperty[0];
-      const indexedProps = _.keyBy(
+      const indexedProps = keyBy(
         ndcProps.propertyConceptList.propertyConcept,
         "propName"
       );
@@ -250,7 +251,7 @@ export class RxNormSyncSession {
             agent: [],
             ...provenanceResult.provenance,
             recorded: utcNow().toISOString(),
-            target: _.compact([
+            target: compact([
               buildReferenceFromResource(result!),
               medicationKnowledge
                 ? buildReferenceFromResource(medicationKnowledge)
@@ -304,7 +305,7 @@ export class RxNormSyncSession {
         return [{}, ndcProperties];
       }
 
-      rxcuis = _.compact(
+      rxcuis = compact(
         ndcProperties.ndcPropertyList.ndcProperty.map((x) => x.rxcui)
       );
     }

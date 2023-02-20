@@ -32,7 +32,10 @@ import {
   PractitionerQualification,
   Provenance,
 } from "fhir/r4";
-import _ from "lodash";
+import compact from "lodash/compact";
+import flatten from "lodash/flatten";
+import uniq from "lodash/uniq";
+import uniqBy from "lodash/uniqBy";
 import {
   isPractitioner,
   NPIRegistryAddress,
@@ -396,12 +399,9 @@ export class NPIRegistrySyncSession {
   private async syncStatesAsLocation(
     results: NPIRegistryResult[]
   ): Promise<Location[]> {
-    const allStates = _(results)
-      .flatMap((x) => x.taxonomies)
-      .map((x) => x.state)
-      .uniq()
-      .compact()
-      .value();
+    const allStates = compact(
+      uniq(results.flatMap((x) => x.taxonomies).map((x) => x.state))
+    );
 
     const result: Location[] = [];
 
@@ -432,33 +432,36 @@ export class NPIRegistrySyncSession {
   private mapNPIRegistryAddressesToContactPoints(
     addresses: NPIRegistryAddress[] | null | undefined
   ): ContactPoint[] {
-    return _(
-      (addresses || []).map(
-        (address) =>
-          <ContactPoint[]>[
-            address.telephone_number?.trim()
-              ? {
-                  id: `${this.stableId}-${address.telephone_number?.trim()}`,
-                  system: ContactPointSystem.values.Phone.code,
-                  use: ContactPointUse.values.Work.code,
-                  value: address.telephone_number?.trim(),
-                }
-              : undefined,
-            address.fax_number?.trim()
-              ? {
-                  id: `${this.stableId}-${address.fax_number?.trim()}`,
-                  system: ContactPointSystem.values.Fax.code,
-                  use: ContactPointUse.values.Work.code,
-                  value: address.fax_number?.trim(),
-                }
-              : undefined,
-          ]
-      )
-    )
-      .flatten()
-      .compact()
-      .uniqBy("id")
-      .value() as ContactPoint[];
+    return uniqBy(
+      compact(
+        flatten(
+          (addresses || []).map(
+            (address) =>
+              <ContactPoint[]>[
+                address.telephone_number?.trim()
+                  ? {
+                      id: `${
+                        this.stableId
+                      }-${address.telephone_number?.trim()}`,
+                      system: ContactPointSystem.values.Phone.code,
+                      use: ContactPointUse.values.Work.code,
+                      value: address.telephone_number?.trim(),
+                    }
+                  : undefined,
+                address.fax_number?.trim()
+                  ? {
+                      id: `${this.stableId}-${address.fax_number?.trim()}`,
+                      system: ContactPointSystem.values.Fax.code,
+                      use: ContactPointUse.values.Work.code,
+                      value: address.fax_number?.trim(),
+                    }
+                  : undefined,
+              ]
+          )
+        )
+      ),
+      "id"
+    );
   }
 
   private mapNPIRegistryAddressesToAddresses(

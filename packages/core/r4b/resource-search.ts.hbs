@@ -1,7 +1,7 @@
 {{#each (fhirPath data.[profiles-resources] "Bundle/DomainResources")}}
 import type { {{type}} } from "fhir/r4";
 {{/each}}
-import _ from "lodash";
+import isNil from "lodash/isNil";
 import type { ExtractResource, ResourceType } from "./types";
 import { fhirSearch, FhirSearchBuilder, Prefix, StringModifier, TokenModifier, UriModifier } from "./search-builder";
 
@@ -74,7 +74,7 @@ class ResourceSearchBuilder{{type}} {
     }
   ): ResourceSearchBuilder{{type}} {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${options?.targetResourceType ? `:${options.targetResourceType}` : ""}`
     );
     return this;
@@ -94,7 +94,7 @@ class ResourceSearchBuilder{{type}} {
     }
   ): ResourceSearchBuilder{{type}} {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${options?.targetResourceType ? `:${options.targetResourceType}` : ""}`
     );
     return this;

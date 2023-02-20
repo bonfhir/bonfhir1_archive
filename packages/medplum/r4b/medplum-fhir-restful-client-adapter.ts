@@ -12,6 +12,8 @@ import {
 } from "@bonfhir/core/r4b";
 import type { MedplumClient } from "@medplum/core";
 import { Bundle, CapabilityStatement, FhirResource } from "fhir/r4";
+import isNil from "lodash/isNil";
+import isString from "lodash/isString";
 
 /**
  * Create an adapter from a `MedplumClient` to conform to `FhirRestfulClient`.
@@ -255,16 +257,8 @@ export function buildFhirRestfulClientAdapter(
   };
 }
 
-function isNil(value: unknown): value is null | undefined {
-  return value === null || value === undefined;
-}
-
 function isObject(value: unknown): value is Record<string, unknown> {
   return typeof value === "object" && value !== null && !Array.isArray(value);
-}
-
-function isString(value: unknown): value is string {
-  return typeof value === "string";
 }
 
 function containsNonWhitespace(value: string): boolean {

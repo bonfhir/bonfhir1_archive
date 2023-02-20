@@ -1,5 +1,6 @@
 import { Bundle, CapabilityStatement, FhirResource, Identifier } from "fhir/r4";
-import _ from "lodash";
+import isEqual from "lodash/isEqual";
+import omit from "lodash/omit";
 import { merge, MergeResult } from "./merge";
 import { fhirSearch } from "./search-builder";
 import { ExtractResource, ResourceType, WithRequired } from "./types";
@@ -355,7 +356,7 @@ export async function createOr<
   }
 
   if (action === "replace") {
-    if (_.isEqual(_.omit(current, ["id"]), resource)) {
+    if (isEqual(omit(current, ["id"]), resource)) {
       return [current, false];
     }
     resource.id = current.id;
@@ -363,7 +364,7 @@ export async function createOr<
   }
 
   if (action === "add") {
-    if (_.isEqual(_.omit(current, ["id"]), resource)) {
+    if (isEqual(omit(current, ["id"]), resource)) {
       return [current, false];
     }
     return [await client.create(resource), true];

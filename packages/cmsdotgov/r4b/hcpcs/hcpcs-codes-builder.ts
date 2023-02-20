@@ -2,7 +2,7 @@ import { buildCodeableConcept } from "@bonfhir/core/r4b";
 import { CodeSystemURIs } from "@bonfhir/terminology/r4b";
 import { parse } from "csv-parse";
 import { CodeableConcept, Coding } from "fhir/r4";
-import _ from "lodash";
+import isEmpty from "lodash/isEmpty";
 import { createReadStream } from "node:fs";
 
 export interface HCPCSCodesBuilderOptions {
@@ -71,7 +71,7 @@ export class HCPCSCodesBuilder {
   }
 
   private async ensureDataLoaded() {
-    if (!_.isEmpty(this._descriptionsByCode)) {
+    if (!isEmpty(this._descriptionsByCode)) {
       return;
     }
 
