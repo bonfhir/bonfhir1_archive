@@ -23,7 +23,7 @@ describe("fhirAddressTypeAdapter", () => {
       district: "Baldwin",
       state: "Nevada",
       postalCode: "2A1 J7T",
-      country: "Austria",
+      country: "US",
       period: {
         start: "2020-10-11",
       },
@@ -47,11 +47,10 @@ describe("fhirAddressTypeAdapter", () => {
         [Address | undefined, FhirAddressFormatOptions | undefined, string[]]
       >
     >[
-      [address, undefined, ["18 rue des paquerettes, Nevada. (main address)"]],
       [
         address,
         {
-          style: "full",
+          style: "extended",
           useValueSetExpansions: useValueSetExpansion,
           typeValueSetExpansions: typeValueSetExpansion,
         },
@@ -62,39 +61,29 @@ describe("fhirAddressTypeAdapter", () => {
           "allée 3",
           "batiment 4",
           "appartement 008",
-          "Wonderland Baldwin, Nevada 2A1 J7T",
-          "Austria",
+          "Wonderland, Nevada 2A1 J7T",
+          "US",
         ],
       ],
       ..._.entries({
         text: ["18 rue des paquerettes, Nevada. (main address)"],
         full: [
+          "18 rue des paquerettes",
+          "allée 3",
+          "batiment 4",
+          "appartement 008",
+          "Wonderland, Nevada 2A1 J7T",
+        ],
+        extended: [
           "(10/11/2020 - ongoing)",
           "postal - home",
           "18 rue des paquerettes",
           "allée 3",
           "batiment 4",
           "appartement 008",
-          "Wonderland Baldwin, Nevada 2A1 J7T",
-          "Austria",
+          "Wonderland, Nevada 2A1 J7T",
+          "US",
         ],
-        long: [
-          "(home)",
-          "18 rue des paquerettes",
-          "allée 3",
-          "batiment 4",
-          "appartement 008",
-          "Wonderland Baldwin, Nevada 2A1 J7T",
-          "Austria",
-        ],
-        medium: [
-          "18 rue des paquerettes",
-          "allée 3",
-          "batiment 4",
-          "appartement 008",
-          "Wonderland Baldwin, Nevada 2A1 J7T",
-        ],
-        short: ["18 rue des paquerettes", "Wonderland Baldwin, Nevada 2A1 J7T"],
       }).map(([style, expected]) => [address, { style }, expected]),
     ])("parse %p with %p", (value, options, expected) => {
       expect(adapter.format(value, options)).toEqual(expected.join("\n"));

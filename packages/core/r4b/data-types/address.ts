@@ -1,4 +1,5 @@
 import { Address } from "fhir/r4";
+import { formatAddress } from "localized-address-format";
 import _ from "lodash";
 import { FhirDataTypeAdapter } from "../data-type-adapter";
 import { FhirCodeFormatOptions, fhirCodeTypeAdapter } from "./code";
@@ -12,7 +13,7 @@ import { fhirPeriodTypeAdapter } from "./period";
  */
 
 export type FhirAddressFormatOptions = {
-  style?: "text" | "full" | "long" | "medium" | "short" | null | undefined;
+  style?: "text" | "full" | "extended" | null | undefined;
   useValueSetExpansions?: FhirCodeFormatOptions["valueSetExpansions"];
   typeValueSetExpansions?: FhirCodeFormatOptions["valueSetExpansions"];
 };
@@ -46,53 +47,37 @@ export function fhirAddressTypeAdapter(
     format(fhirAddress, options) {
       if (!fhirAddress) return "";
 
-      const shortStyle = _.compact([
-        fhirAddress.line?.[0],
-        removeDoubleSpaces(
-          [
-            [fhirAddress.city, fhirAddress.district].join(" "),
-            [fhirAddress.state, fhirAddress.postalCode].join(" "),
-          ].join(", ")
-        ),
-      ]);
-      const mediumStyle = _.compact([
-        ...(fhirAddress.line || []),
-        removeDoubleSpaces(
-          [
-            [fhirAddress.city, fhirAddress.district].join(" "),
-            [fhirAddress.state, fhirAddress.postalCode].join(" "),
-          ].join(", ")
-        ),
-      ]);
       const use = fhirCodeTypeAdapter(locale).format(fhirAddress.use, {
         valueSetExpansions: options?.useValueSetExpansions,
       });
       const type = fhirCodeTypeAdapter(locale).format(fhirAddress.type, {
         valueSetExpansions: options?.typeValueSetExpansions,
       });
+
+      const fullAddress = formatAddress({
+        postalCountry: fhirAddress.country,
+        administrativeArea: fhirAddress.state,
+        locality: fhirAddress.city,
+        dependentLocality: fhirAddress.district,
+        postalCode: fhirAddress.postalCode,
+        addressLines: fhirAddress.line,
+      });
+
       switch (options?.style) {
         case null:
         case undefined:
         case "text":
-          return fhirAddress.text || shortStyle.join("\n");
-        case "short":
-          return shortStyle.join("\n");
+          return fhirAddress.text || "";
         case "full":
+          return fullAddress.join("\n");
+        case "extended":
           return removeDoubleSpaces(
             _.compact([
               `(${fhirPeriodTypeAdapter(locale).format(fhirAddress.period)})`,
               `${type} - ${use}`,
-              ...mediumStyle,
+              ...fullAddress,
               fhirAddress.country,
             ]).join("\n")
-          );
-        case "medium":
-          return mediumStyle.join("\n");
-        case "long":
-          return removeDoubleSpaces(
-            _.compact([`(${use})`, ...mediumStyle, fhirAddress.country]).join(
-              "\n"
-            )
           );
         default:
           throw new Error(`Unknown style option ${options?.style}`);
