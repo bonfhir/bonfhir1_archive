@@ -1,12 +1,14 @@
 import { FhirDataTypeAdapter } from "@bonfhir/core/r4b";
 import { createContext, useContext } from "react";
+import { FhirUIComponentsRenderer } from "./FhirUIComponentsRenderer";
 
 export interface FhirUIComponentsContext {
   dataTypeAdapter: FhirDataTypeAdapter;
+  renderer: FhirUIComponentsRenderer;
 }
 
 /**
- * The context used by fhir-query.
+ * The context used by FHIR UI Components.
  */
 export const FhirUIComponentsContext = createContext<
   FhirUIComponentsContext | undefined
