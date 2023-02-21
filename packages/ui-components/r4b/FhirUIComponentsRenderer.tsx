@@ -16,7 +16,7 @@ export interface FhirUIComponentsRenderer {
    * Renderer to display a empty error message.
    */
   empty: <TRendererProps = unknown>(
-    props: TRendererProps
+    props: EmptyProps<TRendererProps>
   ) => ReactElement | null;
 
   /**
@@ -30,7 +30,7 @@ export interface FhirUIComponentsRenderer {
    * Renderer to display a panel showing an unexpected/technical error.
    */
   loader: <TRendererProps = unknown>(
-    props: TRendererProps
+    props: LoaderProps<TRendererProps>
   ) => ReactElement | null;
 
   /**
@@ -45,7 +45,16 @@ export interface FhirUIComponentsRenderer {
     | undefined;
 }
 
+export type EmptyProps<TRendererProps = unknown> = TRendererProps & {
+  query?: UseQueryResult | Array<UseQueryResult> | undefined;
+};
+
+export type LoaderProps<TRendererProps = unknown> = TRendererProps & {
+  query?: UseQueryResult | Array<UseQueryResult> | undefined;
+};
+
 export type ErrorPanelProps<TRendererProps = unknown> = TRendererProps & {
+  query?: UseQueryResult | Array<UseQueryResult> | undefined;
   error: unknown;
 };
 
