@@ -1,3 +1,4 @@
+import { antdFhirUIComponentsRenderer } from "@bonfhir/antd/r4b";
 import { FhirQueryProvider } from "@bonfhir/fhir-query/r4b";
 import { buildFhirRestfulClientAdapter } from "@bonfhir/medplum/r4b";
 import { FhirUIComponentsProvider } from "@bonfhir/ui-components/r4b";
@@ -10,6 +11,8 @@ import { BrowserRouter } from "react-router-dom";
 import { AppRoutes } from "./AppRoutes";
 
 export function App(): ReactElement | null {
+  const renderer = useMemo(antdFhirUIComponentsRenderer, []);
+
   const medplum = useMemo(
     () =>
       new MedplumClient({
@@ -48,12 +51,12 @@ export function App(): ReactElement | null {
   return (
     <BrowserRouter>
       <FhirQueryProvider fhirClient={fhirClient}>
-        <FhirUIComponentsProvider renderer={{}}>
-          <ConfigProvider>
+        <ConfigProvider>
+          <FhirUIComponentsProvider renderer={renderer}>
             <AppRoutes />
-          </ConfigProvider>
-          <ReactQueryDevtools />
-        </FhirUIComponentsProvider>
+            <ReactQueryDevtools />
+          </FhirUIComponentsProvider>
+        </ConfigProvider>
       </FhirQueryProvider>
     </BrowserRouter>
   );
