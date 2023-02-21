@@ -1,4 +1,5 @@
-import _ from "lodash";
+import cloneDeep from "lodash/cloneDeep";
+import isNil from "lodash/isNil";
 import { ResourceType } from "./types";
 
 /**
@@ -26,7 +27,7 @@ export class FhirSearchBuilder {
    */
   public clone(): FhirSearchBuilder {
     const cloned = new FhirSearchBuilder();
-    cloned.searchParams = _.cloneDeep(this.searchParams);
+    cloned.searchParams = cloneDeep(this.searchParams);
     return cloned;
   }
 
@@ -164,12 +165,12 @@ export class FhirSearchBuilder {
     prefix?: Prefix | null | undefined,
     replace?: "replace" | null | undefined
   ): FhirSearchBuilder {
-    if (number === null || number === undefined || number === "") {
+    if (isNil(number) || number === "") {
       return this;
     }
 
     const parameterValues = Array.isArray(number)
-      ? number.filter((x) => x !== null && x !== undefined && x !== "")
+      ? number.filter((x) => !isNil(x) && x !== "")
       : [number];
 
     if (!parameterValues.length) {
@@ -427,7 +428,7 @@ export class FhirSearchBuilder {
     modifier?: TokenModifier | null | undefined,
     replace?: "replace" | null | undefined
   ): FhirSearchBuilder {
-    if (value === null || value === undefined) {
+    if (isNil(value)) {
       return this;
     }
 
@@ -466,7 +467,7 @@ export class FhirSearchBuilder {
       typeof value === "string"
         ? encodeURIComponent(value)
         : [value.system, value.code, value.value]
-            .filter((x) => x !== undefined && x !== null)
+            .filter((x) => !isNil(x))
             .map((x) => (x ? encodeURIComponent(x) : x))
             .join("|");
     if (!result || result === "|") {

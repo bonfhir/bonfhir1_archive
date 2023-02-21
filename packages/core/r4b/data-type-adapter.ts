@@ -1,4 +1,6 @@
-import _ from "lodash";
+import flatten from "lodash/flatten";
+import isNil from "lodash/isNil";
+import zip from "lodash/zip";
 import { fhirAgeTypeAdapter, FhirAgeTypeAdapter } from "./data-types/age";
 import {
   FhirBooleanTypeAdapter,
@@ -191,8 +193,8 @@ export function intlFhirDataTypeAdapter(
       strings: TemplateStringsArray,
       ...expr: FhirDataTypeAdapterMessageExpression[]
     ) {
-      return _.flatten(
-        _.zip(
+      return flatten(
+        zip(
           strings,
           expr.map((x) => renderExpression(this, x))
         )
@@ -205,7 +207,7 @@ function renderExpression(
   adapter: FhirDataTypeAdapter,
   value: FhirDataTypeAdapterMessageExpression
 ) {
-  if (_.isNil(value)) {
+  if (isNil(value)) {
     return "";
   }
 

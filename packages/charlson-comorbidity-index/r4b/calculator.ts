@@ -1,6 +1,12 @@
 import { buildReferenceFromResource } from "@bonfhir/core/r4b";
 import { ConceptMap, Condition, Patient, Reference } from "fhir/r4";
-import _ from "lodash";
+import compact from "lodash/compact";
+import isEmpty from "lodash/isEmpty";
+import keyBy from "lodash/keyBy";
+import sum from "lodash/sum";
+import uniq from "lodash/uniq";
+import xor from "lodash/xor";
+
 import { CharlsonComorbidityIndexCode } from "./terminology";
 
 export interface CharlsonComorbidityIndexArgs {
@@ -100,16 +106,17 @@ export function computeCharlsonComorbidityIndex({
     };
   }
 
-  const conceptMapElementCodes = _(cciConceptMap.group || [])
-    .flatMap((x) => x.element || [])
-    .flatMap((x) => x.code)
-    .compact()
-    .uniq()
-    .value();
+  const conceptMapElementCodes = uniq(
+    compact(
+      (cciConceptMap.group || [])
+        .flatMap((x) => x.element || [])
+        .flatMap((x) => x.code)
+    )
+  );
 
   if (
-    !_.isEmpty(
-      _.xor(
+    !isEmpty(
+      xor(
         conceptMapElementCodes,
         Object.values(CharlsonComorbidityIndexCode).filter((x) => x !== "age")
       )
@@ -118,7 +125,7 @@ export function computeCharlsonComorbidityIndex({
     return {
       status: "error",
       errorCode: "invalid-conceptmap",
-      errorMessage: `No the concept map is missing the following element codes: ${_.xor(
+      errorMessage: `No the concept map is missing the following element codes: ${xor(
         conceptMapElementCodes,
         Object.values(CharlsonComorbidityIndexCode).filter((x) => x !== "age")
       ).join(", ")}.`,
@@ -132,7 +139,7 @@ export function computeCharlsonComorbidityIndex({
     ...allScoreExceptAge.scores,
   };
 
-  const score = _.sum(Object.values(detailedScores));
+  const score = sum(Object.values(detailedScores));
   const tenYearSurvivalRate =
     Math.round(
       (Math.pow(0.983, Math.pow(Math.E, score * 0.9)) + Number.EPSILON) * 100
@@ -143,7 +150,7 @@ export function computeCharlsonComorbidityIndex({
     score,
     tenYearSurvivalRate,
     detailedScores,
-    basedOn: _.compact([
+    basedOn: compact([
       cciConceptMap.id && cciConceptMap.meta?.versionId
         ? buildReferenceFromResource(cciConceptMap, "version-specific")
         : undefined,
@@ -186,15 +193,15 @@ function computeScores(
   scores: Record<Exclude<CharlsonComorbidityIndexCode, "age">, number>;
   basedOn: Reference[];
 } {
-  const allConditionsByCodes = _(conditions)
-    .flatMap((condition) =>
+  const allConditionsByCodes = keyBy(
+    conditions.flatMap((condition) =>
       (condition.code?.coding || []).map((coding) => ({
         condition,
         code: coding.code,
       }))
-    )
-    .keyBy("code")
-    .value();
+    ),
+    "code"
+  );
 
   const basedOn: Reference[] = [];
   const scores = Object.values(CharlsonComorbidityIndexCode).reduce(

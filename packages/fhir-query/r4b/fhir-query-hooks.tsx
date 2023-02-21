@@ -11,7 +11,6 @@ import {
 } from "@bonfhir/core/r4b";
 import {
   QueryClient,
-  QueryKey,
   useInfiniteQuery,
   UseInfiniteQueryOptions,
   UseInfiniteQueryResult,
@@ -23,7 +22,6 @@ import {
   UseQueryResult,
 } from "@tanstack/react-query";
 import { Bundle, CapabilityStatement, FhirResource } from "fhir/r4";
-import _ from "lodash";
 import { useCallback } from "react";
 import { useFhirQueryContext } from "./fhir-query-context";
 
@@ -92,7 +90,7 @@ export const FhirQueryKeys = {
     id: string
   ): ExtractResource<ResourceType> | undefined => {
     try {
-      const inSearch = _(queryClient.getQueriesData([type, "search"]) || [])
+      const inSearch = (queryClient.getQueriesData([type, "search"]) || [])
         .flatMap(([, result]) =>
           (result as BundleResult<FhirResource>).nav.type(type)
         )
@@ -102,13 +100,12 @@ export const FhirQueryKeys = {
       }
 
       return (
-        _(queryClient.getQueriesData([type, "infiniteSearch"]) || [])
-          .flatMap(
-            ([, pages]: [
-              QueryKey,
-              { pages: Array<BundleResult<FhirResource>> }
-            ]) => pages.pages
-          )
+        (
+          queryClient.getQueriesData<{
+            pages: Array<BundleResult<FhirResource>>;
+          }>([type, "infiniteSearch"]) || []
+        )
+          .flatMap(([, pages]) => pages?.pages || [])
           .flatMap((data: BundleResult<FhirResource>) => data.nav.type(type))
           // We have a typing bug here with lodash - thus this horrible construct for any.
           .find(

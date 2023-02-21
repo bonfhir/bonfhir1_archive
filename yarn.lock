@@ -2010,6 +2010,7 @@ __metadata:
     "@typescript-eslint/parser": ^5.47.1
     eslint: ^8.30.0
     eslint-config-prettier: ^8.5.0
+    eslint-plugin-lodash: ^7.4.0
     eslint-plugin-prettier: ^4.2.1
   peerDependencies:
     prettier: ^2.8.1
@@ -11869,6 +11870,17 @@ __metadata:
   bin:
     eslint-config-prettier: bin/cli.js
   checksum: 0d0f5c32e7a0ad91249467ce71ca92394ccd343178277d318baf32063b79ea90216f4c81d1065d60f96366fdc60f151d4d68ae7811a58bd37228b84c2083f893
+  languageName: node
+  linkType: hard
+
+"eslint-plugin-lodash@npm:^7.4.0":
+  version: 7.4.0
+  resolution: "eslint-plugin-lodash@npm:7.4.0"
+  dependencies:
+    lodash: ^4.17.21
+  peerDependencies:
+    eslint: ">=2"
+  checksum: 7557cded64dd0e1042b420214e65ba9d6c5cb6c83c40e471db1f7d33e63584d1260c9ca9a4fded4ca7a2fe2ac2a9cdc303e072105096fa99b583101c6e7ada13
   languageName: node
   linkType: hard
 

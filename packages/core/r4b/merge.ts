@@ -1,6 +1,8 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { FhirResource } from "fhir/r4";
-import _ from "lodash";
+import cloneDeep from "lodash/cloneDeep";
+import isEqual from "lodash/isEqual";
+import isNil from "lodash/isNil";
 import { narrative } from "./narratives";
 import { isDomainResource } from "./types";
 
@@ -55,17 +57,18 @@ export function mergeFhirResources<T>({
   current,
   incoming,
 }: MergeArgs<T>): MergeResult<T> {
-  if (current === undefined || current === null) {
-    return [_.cloneDeep(incoming) as T, true];
+  if (isNil(current)) {
+    return [cloneDeep(incoming) as T, true];
   }
 
-  const result: MergeResult<T> = [_.cloneDeep(current), false];
+  const result: MergeResult<T> = [cloneDeep(current), false];
 
-  if (incoming === undefined || incoming === null) {
+  if (isNil(incoming)) {
     return result;
   }
 
-  for (const [incomingKey, incomingValue] of Object.entries(incoming) as [
+  // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+  for (const [incomingKey, incomingValue] of Object.entries(incoming!) as [
     keyof T,
     unknown
   ][]) {
@@ -84,13 +87,13 @@ export function mergeFhirResourcesArrays<T>({
   current,
   incoming,
 }: MergeArgs<T[]>): MergeResult<T[]> {
-  if (current === undefined || current === null) {
-    return [_.cloneDeep(incoming) as T[], true];
+  if (isNil(current)) {
+    return [cloneDeep(incoming) as T[], true];
   }
 
-  const result: MergeResult<T[]> = [_.cloneDeep(current), false];
+  const result: MergeResult<T[]> = [cloneDeep(current), false];
 
-  if (incoming === undefined || incoming === null) {
+  if (isNil(incoming)) {
     return result;
   }
 
@@ -100,7 +103,7 @@ export function mergeFhirResourcesArrays<T>({
         return isHasId(x) && x.id === incomingValue.id;
       }
 
-      return _.isEqual(x, incomingValue);
+      return isEqual(x, incomingValue);
     });
     const currentEntry =
       currentEntryIndex >= 0 ? current[currentEntryIndex] : undefined;
@@ -116,7 +119,7 @@ export function mergeFhirResourcesArrays<T>({
       incoming: incomingValue,
     });
     result[1] = result[1] || mergeResult[1];
-    if (mergeResult[0] !== null && mergeResult[0] !== undefined) {
+    if (!isNil(mergeResult[0])) {
       result[0].splice(currentEntryIndex, 1, mergeResult[0]);
     } else {
       result[0].splice(currentEntryIndex, 1);
@@ -130,8 +133,8 @@ function mergeFhirValues<T = any>({
   current,
   incoming,
 }: MergeArgs<T>): MergeResult<T> {
-  if (current === null || current === undefined) {
-    return [_.cloneDeep(incoming) as T, true];
+  if (isNil(current)) {
+    return [cloneDeep(incoming) as T, true];
   }
 
   if (Array.isArray(current)) {
@@ -149,5 +152,5 @@ function mergeFhirValues<T = any>({
     });
   }
 
-  return [incoming as T, !_.isEqual(current, incoming)];
+  return [incoming as T, !isEqual(current, incoming)];
 }

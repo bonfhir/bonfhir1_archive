@@ -5,7 +5,7 @@
  * Instead, edit the template file "resource-search.ts.hbs".
  */
 
-import _ from "lodash";
+import isNil from "lodash/isNil";
 import {
   fhirSearch,
   FhirSearchBuilder,
@@ -359,7 +359,7 @@ class ResourceSearchBuilderAccount {
     }
   ): ResourceSearchBuilderAccount {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -381,7 +381,7 @@ class ResourceSearchBuilderAccount {
     }
   ): ResourceSearchBuilderAccount {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -937,7 +937,7 @@ class ResourceSearchBuilderActivityDefinition {
     }
   ): ResourceSearchBuilderActivityDefinition {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -959,7 +959,7 @@ class ResourceSearchBuilderActivityDefinition {
     }
   ): ResourceSearchBuilderActivityDefinition {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -1791,7 +1791,7 @@ class ResourceSearchBuilderAdministrableProductDefinition {
     }
   ): ResourceSearchBuilderAdministrableProductDefinition {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -1813,7 +1813,7 @@ class ResourceSearchBuilderAdministrableProductDefinition {
     }
   ): ResourceSearchBuilderAdministrableProductDefinition {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -2403,7 +2403,7 @@ class ResourceSearchBuilderAdverseEvent {
     }
   ): ResourceSearchBuilderAdverseEvent {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -2425,7 +2425,7 @@ class ResourceSearchBuilderAdverseEvent {
     }
   ): ResourceSearchBuilderAdverseEvent {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -3119,7 +3119,7 @@ class ResourceSearchBuilderAllergyIntolerance {
     }
   ): ResourceSearchBuilderAllergyIntolerance {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -3141,7 +3141,7 @@ class ResourceSearchBuilderAllergyIntolerance {
     }
   ): ResourceSearchBuilderAllergyIntolerance {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -3782,7 +3782,7 @@ class ResourceSearchBuilderAppointment {
     }
   ): ResourceSearchBuilderAppointment {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -3804,7 +3804,7 @@ class ResourceSearchBuilderAppointment {
     }
   ): ResourceSearchBuilderAppointment {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -4647,7 +4647,7 @@ class ResourceSearchBuilderAppointmentResponse {
     }
   ): ResourceSearchBuilderAppointmentResponse {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -4669,7 +4669,7 @@ class ResourceSearchBuilderAppointmentResponse {
     }
   ): ResourceSearchBuilderAppointmentResponse {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -5232,7 +5232,7 @@ class ResourceSearchBuilderAuditEvent {
     }
   ): ResourceSearchBuilderAuditEvent {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -5254,7 +5254,7 @@ class ResourceSearchBuilderAuditEvent {
     }
   ): ResourceSearchBuilderAuditEvent {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -6054,7 +6054,7 @@ class ResourceSearchBuilderBasic {
     }
   ): ResourceSearchBuilderBasic {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -6076,7 +6076,7 @@ class ResourceSearchBuilderBasic {
     }
   ): ResourceSearchBuilderBasic {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -6590,7 +6590,7 @@ class ResourceSearchBuilderBiologicallyDerivedProduct {
     }
   ): ResourceSearchBuilderBiologicallyDerivedProduct {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -6612,7 +6612,7 @@ class ResourceSearchBuilderBiologicallyDerivedProduct {
     }
   ): ResourceSearchBuilderBiologicallyDerivedProduct {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -6964,7 +6964,7 @@ class ResourceSearchBuilderBodyStructure {
     }
   ): ResourceSearchBuilderBodyStructure {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -6986,7 +6986,7 @@ class ResourceSearchBuilderBodyStructure {
     }
   ): ResourceSearchBuilderBodyStructure {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -7454,7 +7454,7 @@ class ResourceSearchBuilderCapabilityStatement {
     }
   ): ResourceSearchBuilderCapabilityStatement {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -7476,7 +7476,7 @@ class ResourceSearchBuilderCapabilityStatement {
     }
   ): ResourceSearchBuilderCapabilityStatement {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -8077,7 +8077,7 @@ class ResourceSearchBuilderCarePlan {
     }
   ): ResourceSearchBuilderCarePlan {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -8099,7 +8099,7 @@ class ResourceSearchBuilderCarePlan {
     }
   ): ResourceSearchBuilderCarePlan {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -8932,7 +8932,7 @@ class ResourceSearchBuilderCareTeam {
     }
   ): ResourceSearchBuilderCareTeam {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -8954,7 +8954,7 @@ class ResourceSearchBuilderCareTeam {
     }
   ): ResourceSearchBuilderCareTeam {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -9455,7 +9455,7 @@ class ResourceSearchBuilderCatalogEntry {
     }
   ): ResourceSearchBuilderCatalogEntry {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -9477,7 +9477,7 @@ class ResourceSearchBuilderCatalogEntry {
     }
   ): ResourceSearchBuilderCatalogEntry {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -9827,7 +9827,7 @@ class ResourceSearchBuilderChargeItem {
     }
   ): ResourceSearchBuilderChargeItem {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -9849,7 +9849,7 @@ class ResourceSearchBuilderChargeItem {
     }
   ): ResourceSearchBuilderChargeItem {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -10666,7 +10666,7 @@ class ResourceSearchBuilderChargeItemDefinition {
     }
   ): ResourceSearchBuilderChargeItemDefinition {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -10688,7 +10688,7 @@ class ResourceSearchBuilderChargeItemDefinition {
     }
   ): ResourceSearchBuilderChargeItemDefinition {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -11321,7 +11321,7 @@ class ResourceSearchBuilderCitation {
     }
   ): ResourceSearchBuilderCitation {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -11343,7 +11343,7 @@ class ResourceSearchBuilderCitation {
     }
   ): ResourceSearchBuilderCitation {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -11989,7 +11989,7 @@ class ResourceSearchBuilderClaim {
     }
   ): ResourceSearchBuilderClaim {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -12011,7 +12011,7 @@ class ResourceSearchBuilderClaim {
     }
   ): ResourceSearchBuilderClaim {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -12860,7 +12860,7 @@ class ResourceSearchBuilderClaimResponse {
     }
   ): ResourceSearchBuilderClaimResponse {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -12882,7 +12882,7 @@ class ResourceSearchBuilderClaimResponse {
     }
   ): ResourceSearchBuilderClaimResponse {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -13511,7 +13511,7 @@ class ResourceSearchBuilderClinicalImpression {
     }
   ): ResourceSearchBuilderClinicalImpression {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -13533,7 +13533,7 @@ class ResourceSearchBuilderClinicalImpression {
     }
   ): ResourceSearchBuilderClinicalImpression {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -14220,7 +14220,7 @@ class ResourceSearchBuilderClinicalUseDefinition {
     }
   ): ResourceSearchBuilderClinicalUseDefinition {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -14242,7 +14242,7 @@ class ResourceSearchBuilderClinicalUseDefinition {
     }
   ): ResourceSearchBuilderClinicalUseDefinition {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -14921,7 +14921,7 @@ class ResourceSearchBuilderCodeSystem {
     }
   ): ResourceSearchBuilderCodeSystem {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -14943,7 +14943,7 @@ class ResourceSearchBuilderCodeSystem {
     }
   ): ResourceSearchBuilderCodeSystem {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -15424,7 +15424,7 @@ class ResourceSearchBuilderCommunication {
     }
   ): ResourceSearchBuilderCommunication {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -15446,7 +15446,7 @@ class ResourceSearchBuilderCommunication {
     }
   ): ResourceSearchBuilderCommunication {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -16199,7 +16199,7 @@ class ResourceSearchBuilderCommunicationRequest {
     }
   ): ResourceSearchBuilderCommunicationRequest {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -16221,7 +16221,7 @@ class ResourceSearchBuilderCommunicationRequest {
     }
   ): ResourceSearchBuilderCommunicationRequest {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -17021,7 +17021,7 @@ class ResourceSearchBuilderCompartmentDefinition {
     }
   ): ResourceSearchBuilderCompartmentDefinition {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -17043,7 +17043,7 @@ class ResourceSearchBuilderCompartmentDefinition {
     }
   ): ResourceSearchBuilderCompartmentDefinition {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -17451,7 +17451,7 @@ class ResourceSearchBuilderComposition {
     }
   ): ResourceSearchBuilderComposition {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -17473,7 +17473,7 @@ class ResourceSearchBuilderComposition {
     }
   ): ResourceSearchBuilderComposition {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -18178,7 +18178,7 @@ class ResourceSearchBuilderConceptMap {
     }
   ): ResourceSearchBuilderConceptMap {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -18200,7 +18200,7 @@ class ResourceSearchBuilderConceptMap {
     }
   ): ResourceSearchBuilderConceptMap {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -18841,7 +18841,7 @@ class ResourceSearchBuilderCondition {
     }
   ): ResourceSearchBuilderCondition {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -18863,7 +18863,7 @@ class ResourceSearchBuilderCondition {
     }
   ): ResourceSearchBuilderCondition {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -19727,7 +19727,7 @@ class ResourceSearchBuilderConsent {
     }
   ): ResourceSearchBuilderConsent {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -19749,7 +19749,7 @@ class ResourceSearchBuilderConsent {
     }
   ): ResourceSearchBuilderConsent {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -20441,7 +20441,7 @@ class ResourceSearchBuilderContract {
     }
   ): ResourceSearchBuilderContract {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -20463,7 +20463,7 @@ class ResourceSearchBuilderContract {
     }
   ): ResourceSearchBuilderContract {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -21065,7 +21065,7 @@ class ResourceSearchBuilderCoverage {
     }
   ): ResourceSearchBuilderCoverage {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -21087,7 +21087,7 @@ class ResourceSearchBuilderCoverage {
     }
   ): ResourceSearchBuilderCoverage {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -21736,7 +21736,7 @@ class ResourceSearchBuilderCoverageEligibilityRequest {
     }
   ): ResourceSearchBuilderCoverageEligibilityRequest {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -21758,7 +21758,7 @@ class ResourceSearchBuilderCoverageEligibilityRequest {
     }
   ): ResourceSearchBuilderCoverageEligibilityRequest {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -22307,7 +22307,7 @@ class ResourceSearchBuilderCoverageEligibilityResponse {
     }
   ): ResourceSearchBuilderCoverageEligibilityResponse {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -22329,7 +22329,7 @@ class ResourceSearchBuilderCoverageEligibilityResponse {
     }
   ): ResourceSearchBuilderCoverageEligibilityResponse {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -22918,7 +22918,7 @@ class ResourceSearchBuilderDetectedIssue {
     }
   ): ResourceSearchBuilderDetectedIssue {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -22940,7 +22940,7 @@ class ResourceSearchBuilderDetectedIssue {
     }
   ): ResourceSearchBuilderDetectedIssue {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -23394,7 +23394,7 @@ class ResourceSearchBuilderDevice {
     }
   ): ResourceSearchBuilderDevice {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -23416,7 +23416,7 @@ class ResourceSearchBuilderDevice {
     }
   ): ResourceSearchBuilderDevice {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -24022,7 +24022,7 @@ class ResourceSearchBuilderDeviceDefinition {
     }
   ): ResourceSearchBuilderDeviceDefinition {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -24044,7 +24044,7 @@ class ResourceSearchBuilderDeviceDefinition {
     }
   ): ResourceSearchBuilderDeviceDefinition {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -24483,7 +24483,7 @@ class ResourceSearchBuilderDeviceMetric {
     }
   ): ResourceSearchBuilderDeviceMetric {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -24505,7 +24505,7 @@ class ResourceSearchBuilderDeviceMetric {
     }
   ): ResourceSearchBuilderDeviceMetric {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -25004,7 +25004,7 @@ class ResourceSearchBuilderDeviceRequest {
     }
   ): ResourceSearchBuilderDeviceRequest {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -25026,7 +25026,7 @@ class ResourceSearchBuilderDeviceRequest {
     }
   ): ResourceSearchBuilderDeviceRequest {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -25750,7 +25750,7 @@ class ResourceSearchBuilderDeviceUseStatement {
     }
   ): ResourceSearchBuilderDeviceUseStatement {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -25772,7 +25772,7 @@ class ResourceSearchBuilderDeviceUseStatement {
     }
   ): ResourceSearchBuilderDeviceUseStatement {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -26213,7 +26213,7 @@ class ResourceSearchBuilderDiagnosticReport {
     }
   ): ResourceSearchBuilderDiagnosticReport {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -26235,7 +26235,7 @@ class ResourceSearchBuilderDiagnosticReport {
     }
   ): ResourceSearchBuilderDiagnosticReport {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -26902,7 +26902,7 @@ class ResourceSearchBuilderDocumentManifest {
     }
   ): ResourceSearchBuilderDocumentManifest {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -26924,7 +26924,7 @@ class ResourceSearchBuilderDocumentManifest {
     }
   ): ResourceSearchBuilderDocumentManifest {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -27526,7 +27526,7 @@ class ResourceSearchBuilderDocumentReference {
     }
   ): ResourceSearchBuilderDocumentReference {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -27548,7 +27548,7 @@ class ResourceSearchBuilderDocumentReference {
     }
   ): ResourceSearchBuilderDocumentReference {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -28426,7 +28426,7 @@ class ResourceSearchBuilderEncounter {
     }
   ): ResourceSearchBuilderEncounter {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -28448,7 +28448,7 @@ class ResourceSearchBuilderEncounter {
     }
   ): ResourceSearchBuilderEncounter {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -29359,7 +29359,7 @@ class ResourceSearchBuilderEndpoint {
     }
   ): ResourceSearchBuilderEndpoint {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -29381,7 +29381,7 @@ class ResourceSearchBuilderEndpoint {
     }
   ): ResourceSearchBuilderEndpoint {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -29891,7 +29891,7 @@ class ResourceSearchBuilderEnrollmentRequest {
     }
   ): ResourceSearchBuilderEnrollmentRequest {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -29913,7 +29913,7 @@ class ResourceSearchBuilderEnrollmentRequest {
     }
   ): ResourceSearchBuilderEnrollmentRequest {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -30383,7 +30383,7 @@ class ResourceSearchBuilderEnrollmentResponse {
     }
   ): ResourceSearchBuilderEnrollmentResponse {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -30405,7 +30405,7 @@ class ResourceSearchBuilderEnrollmentResponse {
     }
   ): ResourceSearchBuilderEnrollmentResponse {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -30844,7 +30844,7 @@ class ResourceSearchBuilderEpisodeOfCare {
     }
   ): ResourceSearchBuilderEpisodeOfCare {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -30866,7 +30866,7 @@ class ResourceSearchBuilderEpisodeOfCare {
     }
   ): ResourceSearchBuilderEpisodeOfCare {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -31369,7 +31369,7 @@ class ResourceSearchBuilderEventDefinition {
     }
   ): ResourceSearchBuilderEventDefinition {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -31391,7 +31391,7 @@ class ResourceSearchBuilderEventDefinition {
     }
   ): ResourceSearchBuilderEventDefinition {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -32221,7 +32221,7 @@ class ResourceSearchBuilderEvidence {
     }
   ): ResourceSearchBuilderEvidence {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -32243,7 +32243,7 @@ class ResourceSearchBuilderEvidence {
     }
   ): ResourceSearchBuilderEvidence {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -32834,7 +32834,7 @@ class ResourceSearchBuilderEvidenceReport {
     }
   ): ResourceSearchBuilderEvidenceReport {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -32856,7 +32856,7 @@ class ResourceSearchBuilderEvidenceReport {
     }
   ): ResourceSearchBuilderEvidenceReport {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -33379,7 +33379,7 @@ class ResourceSearchBuilderEvidenceVariable {
     }
   ): ResourceSearchBuilderEvidenceVariable {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -33401,7 +33401,7 @@ class ResourceSearchBuilderEvidenceVariable {
     }
   ): ResourceSearchBuilderEvidenceVariable {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -34005,7 +34005,7 @@ class ResourceSearchBuilderExampleScenario {
     }
   ): ResourceSearchBuilderExampleScenario {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -34027,7 +34027,7 @@ class ResourceSearchBuilderExampleScenario {
     }
   ): ResourceSearchBuilderExampleScenario {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -34634,7 +34634,7 @@ class ResourceSearchBuilderExplanationOfBenefit {
     }
   ): ResourceSearchBuilderExplanationOfBenefit {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -34656,7 +34656,7 @@ class ResourceSearchBuilderExplanationOfBenefit {
     }
   ): ResourceSearchBuilderExplanationOfBenefit {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -35493,7 +35493,7 @@ class ResourceSearchBuilderFamilyMemberHistory {
     }
   ): ResourceSearchBuilderFamilyMemberHistory {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -35515,7 +35515,7 @@ class ResourceSearchBuilderFamilyMemberHistory {
     }
   ): ResourceSearchBuilderFamilyMemberHistory {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -35996,7 +35996,7 @@ class ResourceSearchBuilderFlag {
     }
   ): ResourceSearchBuilderFlag {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -36018,7 +36018,7 @@ class ResourceSearchBuilderFlag {
     }
   ): ResourceSearchBuilderFlag {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -36457,7 +36457,7 @@ class ResourceSearchBuilderGoal {
     }
   ): ResourceSearchBuilderGoal {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -36479,7 +36479,7 @@ class ResourceSearchBuilderGoal {
     }
   ): ResourceSearchBuilderGoal {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -36971,7 +36971,7 @@ class ResourceSearchBuilderGraphDefinition {
     }
   ): ResourceSearchBuilderGraphDefinition {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -36993,7 +36993,7 @@ class ResourceSearchBuilderGraphDefinition {
     }
   ): ResourceSearchBuilderGraphDefinition {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -37372,7 +37372,7 @@ class ResourceSearchBuilderGroup {
     }
   ): ResourceSearchBuilderGroup {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -37394,7 +37394,7 @@ class ResourceSearchBuilderGroup {
     }
   ): ResourceSearchBuilderGroup {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -38007,7 +38007,7 @@ class ResourceSearchBuilderGuidanceResponse {
     }
   ): ResourceSearchBuilderGuidanceResponse {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -38029,7 +38029,7 @@ class ResourceSearchBuilderGuidanceResponse {
     }
   ): ResourceSearchBuilderGuidanceResponse {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -38499,7 +38499,7 @@ class ResourceSearchBuilderHealthcareService {
     }
   ): ResourceSearchBuilderHealthcareService {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -38521,7 +38521,7 @@ class ResourceSearchBuilderHealthcareService {
     }
   ): ResourceSearchBuilderHealthcareService {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -39211,7 +39211,7 @@ class ResourceSearchBuilderImagingStudy {
     }
   ): ResourceSearchBuilderImagingStudy {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -39233,7 +39233,7 @@ class ResourceSearchBuilderImagingStudy {
     }
   ): ResourceSearchBuilderImagingStudy {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -40016,7 +40016,7 @@ class ResourceSearchBuilderImmunization {
     }
   ): ResourceSearchBuilderImmunization {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -40038,7 +40038,7 @@ class ResourceSearchBuilderImmunization {
     }
   ): ResourceSearchBuilderImmunization {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -40729,7 +40729,7 @@ class ResourceSearchBuilderImmunizationEvaluation {
     }
   ): ResourceSearchBuilderImmunizationEvaluation {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -40751,7 +40751,7 @@ class ResourceSearchBuilderImmunizationEvaluation {
     }
   ): ResourceSearchBuilderImmunizationEvaluation {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -41294,7 +41294,7 @@ class ResourceSearchBuilderImmunizationRecommendation {
     }
   ): ResourceSearchBuilderImmunizationRecommendation {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -41316,7 +41316,7 @@ class ResourceSearchBuilderImmunizationRecommendation {
     }
   ): ResourceSearchBuilderImmunizationRecommendation {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -41890,7 +41890,7 @@ class ResourceSearchBuilderImplementationGuide {
     }
   ): ResourceSearchBuilderImplementationGuide {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -41912,7 +41912,7 @@ class ResourceSearchBuilderImplementationGuide {
     }
   ): ResourceSearchBuilderImplementationGuide {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -42384,7 +42384,7 @@ class ResourceSearchBuilderIngredient {
     }
   ): ResourceSearchBuilderIngredient {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -42406,7 +42406,7 @@ class ResourceSearchBuilderIngredient {
     }
   ): ResourceSearchBuilderIngredient {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -42996,7 +42996,7 @@ class ResourceSearchBuilderInsurancePlan {
     }
   ): ResourceSearchBuilderInsurancePlan {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -43018,7 +43018,7 @@ class ResourceSearchBuilderInsurancePlan {
     }
   ): ResourceSearchBuilderInsurancePlan {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -43668,7 +43668,7 @@ class ResourceSearchBuilderInvoice {
     }
   ): ResourceSearchBuilderInvoice {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -43690,7 +43690,7 @@ class ResourceSearchBuilderInvoice {
     }
   ): ResourceSearchBuilderInvoice {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -44417,7 +44417,7 @@ class ResourceSearchBuilderLibrary {
     }
   ): ResourceSearchBuilderLibrary {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -44439,7 +44439,7 @@ class ResourceSearchBuilderLibrary {
     }
   ): ResourceSearchBuilderLibrary {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -45327,7 +45327,7 @@ class ResourceSearchBuilderLinkage {
     }
   ): ResourceSearchBuilderLinkage {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -45349,7 +45349,7 @@ class ResourceSearchBuilderLinkage {
     }
   ): ResourceSearchBuilderLinkage {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -45792,7 +45792,7 @@ class ResourceSearchBuilderList {
     }
   ): ResourceSearchBuilderList {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -45814,7 +45814,7 @@ class ResourceSearchBuilderList {
     }
   ): ResourceSearchBuilderList {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -46368,7 +46368,7 @@ class ResourceSearchBuilderLocation {
     }
   ): ResourceSearchBuilderLocation {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -46390,7 +46390,7 @@ class ResourceSearchBuilderLocation {
     }
   ): ResourceSearchBuilderLocation {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -47058,7 +47058,7 @@ class ResourceSearchBuilderManufacturedItemDefinition {
     }
   ): ResourceSearchBuilderManufacturedItemDefinition {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -47080,7 +47080,7 @@ class ResourceSearchBuilderManufacturedItemDefinition {
     }
   ): ResourceSearchBuilderManufacturedItemDefinition {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -47519,7 +47519,7 @@ class ResourceSearchBuilderMeasure {
     }
   ): ResourceSearchBuilderMeasure {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -47541,7 +47541,7 @@ class ResourceSearchBuilderMeasure {
     }
   ): ResourceSearchBuilderMeasure {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -48371,7 +48371,7 @@ class ResourceSearchBuilderMeasureReport {
     }
   ): ResourceSearchBuilderMeasureReport {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -48393,7 +48393,7 @@ class ResourceSearchBuilderMeasureReport {
     }
   ): ResourceSearchBuilderMeasureReport {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -48982,7 +48982,7 @@ class ResourceSearchBuilderMedia {
     }
   ): ResourceSearchBuilderMedia {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -49004,7 +49004,7 @@ class ResourceSearchBuilderMedia {
     }
   ): ResourceSearchBuilderMedia {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -49725,7 +49725,7 @@ class ResourceSearchBuilderMedication {
     }
   ): ResourceSearchBuilderMedication {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -49747,7 +49747,7 @@ class ResourceSearchBuilderMedication {
     }
   ): ResourceSearchBuilderMedication {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -50348,7 +50348,7 @@ class ResourceSearchBuilderMedicationAdministration {
     }
   ): ResourceSearchBuilderMedicationAdministration {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -50370,7 +50370,7 @@ class ResourceSearchBuilderMedicationAdministration {
     }
   ): ResourceSearchBuilderMedicationAdministration {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -50946,7 +50946,7 @@ class ResourceSearchBuilderMedicationDispense {
     }
   ): ResourceSearchBuilderMedicationDispense {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -50968,7 +50968,7 @@ class ResourceSearchBuilderMedicationDispense {
     }
   ): ResourceSearchBuilderMedicationDispense {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -51593,7 +51593,7 @@ class ResourceSearchBuilderMedicationKnowledge {
     }
   ): ResourceSearchBuilderMedicationKnowledge {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -51615,7 +51615,7 @@ class ResourceSearchBuilderMedicationKnowledge {
     }
   ): ResourceSearchBuilderMedicationKnowledge {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -52348,7 +52348,7 @@ class ResourceSearchBuilderMedicationRequest {
     }
   ): ResourceSearchBuilderMedicationRequest {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -52370,7 +52370,7 @@ class ResourceSearchBuilderMedicationRequest {
     }
   ): ResourceSearchBuilderMedicationRequest {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -53023,7 +53023,7 @@ class ResourceSearchBuilderMedicationStatement {
     }
   ): ResourceSearchBuilderMedicationStatement {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -53045,7 +53045,7 @@ class ResourceSearchBuilderMedicationStatement {
     }
   ): ResourceSearchBuilderMedicationStatement {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -53563,7 +53563,7 @@ class ResourceSearchBuilderMedicinalProductDefinition {
     }
   ): ResourceSearchBuilderMedicinalProductDefinition {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -53585,7 +53585,7 @@ class ResourceSearchBuilderMedicinalProductDefinition {
     }
   ): ResourceSearchBuilderMedicinalProductDefinition {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -54273,7 +54273,7 @@ class ResourceSearchBuilderMessageDefinition {
     }
   ): ResourceSearchBuilderMessageDefinition {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -54295,7 +54295,7 @@ class ResourceSearchBuilderMessageDefinition {
     }
   ): ResourceSearchBuilderMessageDefinition {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -54763,7 +54763,7 @@ class ResourceSearchBuilderMessageHeader {
     }
   ): ResourceSearchBuilderMessageHeader {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -54785,7 +54785,7 @@ class ResourceSearchBuilderMessageHeader {
     }
   ): ResourceSearchBuilderMessageHeader {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -55491,7 +55491,7 @@ class ResourceSearchBuilderMolecularSequence {
     }
   ): ResourceSearchBuilderMolecularSequence {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -55513,7 +55513,7 @@ class ResourceSearchBuilderMolecularSequence {
     }
   ): ResourceSearchBuilderMolecularSequence {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -56062,7 +56062,7 @@ class ResourceSearchBuilderNamingSystem {
     }
   ): ResourceSearchBuilderNamingSystem {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -56084,7 +56084,7 @@ class ResourceSearchBuilderNamingSystem {
     }
   ): ResourceSearchBuilderNamingSystem {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -56602,7 +56602,7 @@ class ResourceSearchBuilderNutritionOrder {
     }
   ): ResourceSearchBuilderNutritionOrder {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -56624,7 +56624,7 @@ class ResourceSearchBuilderNutritionOrder {
     }
   ): ResourceSearchBuilderNutritionOrder {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -57207,7 +57207,7 @@ class ResourceSearchBuilderNutritionProduct {
     }
   ): ResourceSearchBuilderNutritionProduct {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -57229,7 +57229,7 @@ class ResourceSearchBuilderNutritionProduct {
     }
   ): ResourceSearchBuilderNutritionProduct {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -57637,7 +57637,7 @@ class ResourceSearchBuilderObservation {
     }
   ): ResourceSearchBuilderObservation {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -57659,7 +57659,7 @@ class ResourceSearchBuilderObservation {
     }
   ): ResourceSearchBuilderObservation {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -58728,7 +58728,7 @@ class ResourceSearchBuilderObservationDefinition {
     }
   ): ResourceSearchBuilderObservationDefinition {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -58750,7 +58750,7 @@ class ResourceSearchBuilderObservationDefinition {
     }
   ): ResourceSearchBuilderObservationDefinition {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -59100,7 +59100,7 @@ class ResourceSearchBuilderOperationDefinition {
     }
   ): ResourceSearchBuilderOperationDefinition {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -59122,7 +59122,7 @@ class ResourceSearchBuilderOperationDefinition {
     }
   ): ResourceSearchBuilderOperationDefinition {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -59710,7 +59710,7 @@ class ResourceSearchBuilderOperationOutcome {
     }
   ): ResourceSearchBuilderOperationOutcome {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -59732,7 +59732,7 @@ class ResourceSearchBuilderOperationOutcome {
     }
   ): ResourceSearchBuilderOperationOutcome {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -60082,7 +60082,7 @@ class ResourceSearchBuilderOrganization {
     }
   ): ResourceSearchBuilderOrganization {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -60104,7 +60104,7 @@ class ResourceSearchBuilderOrganization {
     }
   ): ResourceSearchBuilderOrganization {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -60725,7 +60725,7 @@ class ResourceSearchBuilderOrganizationAffiliation {
     }
   ): ResourceSearchBuilderOrganizationAffiliation {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -60747,7 +60747,7 @@ class ResourceSearchBuilderOrganizationAffiliation {
     }
   ): ResourceSearchBuilderOrganizationAffiliation {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -61501,7 +61501,7 @@ class ResourceSearchBuilderPackagedProductDefinition {
     }
   ): ResourceSearchBuilderPackagedProductDefinition {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -61523,7 +61523,7 @@ class ResourceSearchBuilderPackagedProductDefinition {
     }
   ): ResourceSearchBuilderPackagedProductDefinition {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -62210,7 +62210,7 @@ class ResourceSearchBuilderPatient {
     }
   ): ResourceSearchBuilderPatient {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -62232,7 +62232,7 @@ class ResourceSearchBuilderPatient {
     }
   ): ResourceSearchBuilderPatient {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -62817,7 +62817,7 @@ class ResourceSearchBuilderPaymentNotice {
     }
   ): ResourceSearchBuilderPaymentNotice {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -62839,7 +62839,7 @@ class ResourceSearchBuilderPaymentNotice {
     }
   ): ResourceSearchBuilderPaymentNotice {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -63384,7 +63384,7 @@ class ResourceSearchBuilderPaymentReconciliation {
     }
   ): ResourceSearchBuilderPaymentReconciliation {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -63406,7 +63406,7 @@ class ResourceSearchBuilderPaymentReconciliation {
     }
   ): ResourceSearchBuilderPaymentReconciliation {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -63962,7 +63962,7 @@ class ResourceSearchBuilderPerson {
     }
   ): ResourceSearchBuilderPerson {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -63984,7 +63984,7 @@ class ResourceSearchBuilderPerson {
     }
   ): ResourceSearchBuilderPerson {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -64529,7 +64529,7 @@ class ResourceSearchBuilderPlanDefinition {
     }
   ): ResourceSearchBuilderPlanDefinition {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -64551,7 +64551,7 @@ class ResourceSearchBuilderPlanDefinition {
     }
   ): ResourceSearchBuilderPlanDefinition {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -65441,7 +65441,7 @@ class ResourceSearchBuilderPractitioner {
     }
   ): ResourceSearchBuilderPractitioner {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -65463,7 +65463,7 @@ class ResourceSearchBuilderPractitioner {
     }
   ): ResourceSearchBuilderPractitioner {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -65913,7 +65913,7 @@ class ResourceSearchBuilderPractitionerRole {
     }
   ): ResourceSearchBuilderPractitionerRole {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -65935,7 +65935,7 @@ class ResourceSearchBuilderPractitionerRole {
     }
   ): ResourceSearchBuilderPractitionerRole {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -66569,7 +66569,7 @@ class ResourceSearchBuilderProcedure {
     }
   ): ResourceSearchBuilderProcedure {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -66591,7 +66591,7 @@ class ResourceSearchBuilderProcedure {
     }
   ): ResourceSearchBuilderProcedure {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -67258,7 +67258,7 @@ class ResourceSearchBuilderProvenance {
     }
   ): ResourceSearchBuilderProvenance {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -67280,7 +67280,7 @@ class ResourceSearchBuilderProvenance {
     }
   ): ResourceSearchBuilderProvenance {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -67898,7 +67898,7 @@ class ResourceSearchBuilderQuestionnaire {
     }
   ): ResourceSearchBuilderQuestionnaire {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -67920,7 +67920,7 @@ class ResourceSearchBuilderQuestionnaire {
     }
   ): ResourceSearchBuilderQuestionnaire {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -68639,7 +68639,7 @@ class ResourceSearchBuilderQuestionnaireResponse {
     }
   ): ResourceSearchBuilderQuestionnaireResponse {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -68661,7 +68661,7 @@ class ResourceSearchBuilderQuestionnaireResponse {
     }
   ): ResourceSearchBuilderQuestionnaireResponse {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -69332,7 +69332,7 @@ class ResourceSearchBuilderRegulatedAuthorization {
     }
   ): ResourceSearchBuilderRegulatedAuthorization {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -69354,7 +69354,7 @@ class ResourceSearchBuilderRegulatedAuthorization {
     }
   ): ResourceSearchBuilderRegulatedAuthorization {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -69911,7 +69911,7 @@ class ResourceSearchBuilderRelatedPerson {
     }
   ): ResourceSearchBuilderRelatedPerson {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -69933,7 +69933,7 @@ class ResourceSearchBuilderRelatedPerson {
     }
   ): ResourceSearchBuilderRelatedPerson {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -70414,7 +70414,7 @@ class ResourceSearchBuilderRequestGroup {
     }
   ): ResourceSearchBuilderRequestGroup {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -70436,7 +70436,7 @@ class ResourceSearchBuilderRequestGroup {
     }
   ): ResourceSearchBuilderRequestGroup {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -71172,7 +71172,7 @@ class ResourceSearchBuilderResearchDefinition {
     }
   ): ResourceSearchBuilderResearchDefinition {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -71194,7 +71194,7 @@ class ResourceSearchBuilderResearchDefinition {
     }
   ): ResourceSearchBuilderResearchDefinition {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -72026,7 +72026,7 @@ class ResourceSearchBuilderResearchElementDefinition {
     }
   ): ResourceSearchBuilderResearchElementDefinition {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -72048,7 +72048,7 @@ class ResourceSearchBuilderResearchElementDefinition {
     }
   ): ResourceSearchBuilderResearchElementDefinition {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -72880,7 +72880,7 @@ class ResourceSearchBuilderResearchStudy {
     }
   ): ResourceSearchBuilderResearchStudy {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -72902,7 +72902,7 @@ class ResourceSearchBuilderResearchStudy {
     }
   ): ResourceSearchBuilderResearchStudy {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -73607,7 +73607,7 @@ class ResourceSearchBuilderResearchSubject {
     }
   ): ResourceSearchBuilderResearchSubject {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -73629,7 +73629,7 @@ class ResourceSearchBuilderResearchSubject {
     }
   ): ResourceSearchBuilderResearchSubject {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -74143,7 +74143,7 @@ class ResourceSearchBuilderRiskAssessment {
     }
   ): ResourceSearchBuilderRiskAssessment {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -74165,7 +74165,7 @@ class ResourceSearchBuilderRiskAssessment {
     }
   ): ResourceSearchBuilderRiskAssessment {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -74679,7 +74679,7 @@ class ResourceSearchBuilderSchedule {
     }
   ): ResourceSearchBuilderSchedule {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -74701,7 +74701,7 @@ class ResourceSearchBuilderSchedule {
     }
   ): ResourceSearchBuilderSchedule {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -75240,7 +75240,7 @@ class ResourceSearchBuilderSearchParameter {
     }
   ): ResourceSearchBuilderSearchParameter {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -75262,7 +75262,7 @@ class ResourceSearchBuilderSearchParameter {
     }
   ): ResourceSearchBuilderSearchParameter {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -75790,7 +75790,7 @@ class ResourceSearchBuilderServiceRequest {
     }
   ): ResourceSearchBuilderServiceRequest {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -75812,7 +75812,7 @@ class ResourceSearchBuilderServiceRequest {
     }
   ): ResourceSearchBuilderServiceRequest {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -76621,7 +76621,7 @@ class ResourceSearchBuilderSlot {
     }
   ): ResourceSearchBuilderSlot {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -76643,7 +76643,7 @@ class ResourceSearchBuilderSlot {
     }
   ): ResourceSearchBuilderSlot {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -77209,7 +77209,7 @@ class ResourceSearchBuilderSpecimen {
     }
   ): ResourceSearchBuilderSpecimen {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -77231,7 +77231,7 @@ class ResourceSearchBuilderSpecimen {
     }
   ): ResourceSearchBuilderSpecimen {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -77921,7 +77921,7 @@ class ResourceSearchBuilderSpecimenDefinition {
     }
   ): ResourceSearchBuilderSpecimenDefinition {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -77943,7 +77943,7 @@ class ResourceSearchBuilderSpecimenDefinition {
     }
   ): ResourceSearchBuilderSpecimenDefinition {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -78380,7 +78380,7 @@ class ResourceSearchBuilderStructureDefinition {
     }
   ): ResourceSearchBuilderStructureDefinition {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -78402,7 +78402,7 @@ class ResourceSearchBuilderStructureDefinition {
     }
   ): ResourceSearchBuilderStructureDefinition {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -79059,7 +79059,7 @@ class ResourceSearchBuilderStructureMap {
     }
   ): ResourceSearchBuilderStructureMap {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -79081,7 +79081,7 @@ class ResourceSearchBuilderStructureMap {
     }
   ): ResourceSearchBuilderStructureMap {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -79431,7 +79431,7 @@ class ResourceSearchBuilderSubscription {
     }
   ): ResourceSearchBuilderSubscription {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -79453,7 +79453,7 @@ class ResourceSearchBuilderSubscription {
     }
   ): ResourceSearchBuilderSubscription {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -79945,7 +79945,7 @@ class ResourceSearchBuilderSubscriptionStatus {
     }
   ): ResourceSearchBuilderSubscriptionStatus {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -79967,7 +79967,7 @@ class ResourceSearchBuilderSubscriptionStatus {
     }
   ): ResourceSearchBuilderSubscriptionStatus {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -80317,7 +80317,7 @@ class ResourceSearchBuilderSubscriptionTopic {
     }
   ): ResourceSearchBuilderSubscriptionTopic {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -80339,7 +80339,7 @@ class ResourceSearchBuilderSubscriptionTopic {
     }
   ): ResourceSearchBuilderSubscriptionTopic {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -80854,7 +80854,7 @@ class ResourceSearchBuilderSubstance {
     }
   ): ResourceSearchBuilderSubstance {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -80876,7 +80876,7 @@ class ResourceSearchBuilderSubstance {
     }
   ): ResourceSearchBuilderSubstance {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -81446,7 +81446,7 @@ class ResourceSearchBuilderSubstanceDefinition {
     }
   ): ResourceSearchBuilderSubstanceDefinition {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -81468,7 +81468,7 @@ class ResourceSearchBuilderSubstanceDefinition {
     }
   ): ResourceSearchBuilderSubstanceDefinition {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -81947,7 +81947,7 @@ class ResourceSearchBuilderSupplyDelivery {
     }
   ): ResourceSearchBuilderSupplyDelivery {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -81969,7 +81969,7 @@ class ResourceSearchBuilderSupplyDelivery {
     }
   ): ResourceSearchBuilderSupplyDelivery {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -82410,7 +82410,7 @@ class ResourceSearchBuilderSupplyRequest {
     }
   ): ResourceSearchBuilderSupplyRequest {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -82432,7 +82432,7 @@ class ResourceSearchBuilderSupplyRequest {
     }
   ): ResourceSearchBuilderSupplyRequest {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -82933,7 +82933,7 @@ class ResourceSearchBuilderTask {
     }
   ): ResourceSearchBuilderTask {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -82955,7 +82955,7 @@ class ResourceSearchBuilderTask {
     }
   ): ResourceSearchBuilderTask {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -83824,7 +83824,7 @@ class ResourceSearchBuilderTerminologyCapabilities {
     }
   ): ResourceSearchBuilderTerminologyCapabilities {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -83846,7 +83846,7 @@ class ResourceSearchBuilderTerminologyCapabilities {
     }
   ): ResourceSearchBuilderTerminologyCapabilities {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -84196,7 +84196,7 @@ class ResourceSearchBuilderTestReport {
     }
   ): ResourceSearchBuilderTestReport {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -84218,7 +84218,7 @@ class ResourceSearchBuilderTestReport {
     }
   ): ResourceSearchBuilderTestReport {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -84696,7 +84696,7 @@ class ResourceSearchBuilderTestScript {
     }
   ): ResourceSearchBuilderTestScript {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -84718,7 +84718,7 @@ class ResourceSearchBuilderTestScript {
     }
   ): ResourceSearchBuilderTestScript {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -85364,7 +85364,7 @@ class ResourceSearchBuilderValueSet {
     }
   ): ResourceSearchBuilderValueSet {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -85386,7 +85386,7 @@ class ResourceSearchBuilderValueSet {
     }
   ): ResourceSearchBuilderValueSet {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -85791,7 +85791,7 @@ class ResourceSearchBuilderVerificationResult {
     }
   ): ResourceSearchBuilderVerificationResult {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -85813,7 +85813,7 @@ class ResourceSearchBuilderVerificationResult {
     }
   ): ResourceSearchBuilderVerificationResult {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -86194,7 +86194,7 @@ class ResourceSearchBuilderVisionPrescription {
     }
   ): ResourceSearchBuilderVisionPrescription {
     this.builder.string(
-      `_include${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -86216,7 +86216,7 @@ class ResourceSearchBuilderVisionPrescription {
     }
   ): ResourceSearchBuilderVisionPrescription {
     this.builder.string(
-      `_revinclude${_.isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`

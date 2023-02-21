@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-non-null-assertion */
 import Listr, { ListrTask } from "listr";
-import _ from "lodash";
+import chunk from "lodash/chunk";
 import { exec } from "node:child_process";
 import { promisify } from "node:util";
 import { Context } from "./context";
@@ -22,7 +22,7 @@ export const PostProcessingTask: ListrTask<Context> = {
       (x) => !x.includes("%file%")
     );
     for (const globalPostProcessingTask of globalPostProcessingTasks) {
-      const fileChunks = _.chunk(
+      const fileChunks = chunk(
         ctx.writtenFiles,
         GLOBAL_POST_PROCESSING_CHUNK_SIZE
       );
