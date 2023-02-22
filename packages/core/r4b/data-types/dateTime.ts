@@ -2,7 +2,7 @@ import { FhirDataTypeAdapter } from "../data-type-adapter";
 import {
   fhirDateRegexpFragment,
   fhirTimeWithZoneRegexpFragment,
-} from "./helpers";
+} from "./helpers/dateTimeRegexp";
 
 /**
  * A dateTime, or partial dateTime (e.g. just year or year + month) as used in human communication.

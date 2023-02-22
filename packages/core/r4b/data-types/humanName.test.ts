@@ -55,6 +55,15 @@ describe("fhirHumanNameTypeAdapter", () => {
           style: "full",
           useValueSetExpansions: nameUseValueSetExpansion,
         },
+        "Mr Dr Bonisseur de la Bath Hubert Léandre jr",
+      ],
+      [
+        name,
+        {
+          style: "full",
+          useValueSetExpansions: nameUseValueSetExpansion,
+          includeUse: true,
+        },
         "Mr Dr Bonisseur de la Bath Hubert Léandre jr (officiel)",
       ],
       ..._.entries({
@@ -62,7 +71,7 @@ describe("fhirHumanNameTypeAdapter", () => {
         short: "Hubert Bonisseur de la Bath",
         medium: "Mr Dr Bonisseur de la Bath Hubert",
         long: "Mr Dr Bonisseur de la Bath Hubert Léandre",
-        full: "Mr Dr Bonisseur de la Bath Hubert Léandre jr (official)",
+        full: "Mr Dr Bonisseur de la Bath Hubert Léandre jr",
       }).map(([style, expected]) => [name, { style }, expected]),
     ])("parse %p with %p", (value, options, expected) => {
       expect(adapter.format(value, options)).toEqual(expected);
@@ -70,31 +79,46 @@ describe("fhirHumanNameTypeAdapter", () => {
   });
 
   describe("format for arrays", () => {
-    it("sorts by period and type", () => {
-      const addresses: HumanName[] = [
-        {
-          use: "usual",
-          text: "usual",
-        },
-        {
-          use: "temp",
-          text: "temp",
-        },
-        {
-          use: "official",
-          text: "official",
-        },
-        {
-          use: "maiden",
-          text: "maiden",
-        },
-      ];
+    const addresses: HumanName[] = [
+      {
+        use: "usual",
+        text: "usual",
+      },
+      {
+        use: "temp",
+        text: "temp",
+      },
+      {
+        use: "official",
+        text: "official",
+      },
+      {
+        use: "maiden",
+        text: "maiden",
+      },
+    ];
 
+    it("sorts by use", () => {
+      expect(fhirHumanNameTypeAdapter().format(addresses)).toEqual(
+        "usual, " + "official, " + "temp, " + "and maiden"
+      );
+    });
+
+    it("Allows custom sort and filter", () => {
       expect(
         fhirHumanNameTypeAdapter().format(addresses, {
-          style: "text",
+          useFilterOrder: ["temp", "official"],
         })
-      ).toEqual(["usual", "official", "temp", "maiden"]);
+      ).toEqual("temp and official");
+    });
+
+    it("Allows to only display a few", () => {
+      expect(
+        fhirHumanNameTypeAdapter().format(addresses, {
+          useFilterOrder: ["temp", "official"],
+          max: 1,
+        })
+      ).toEqual("temp");
     });
   });
 

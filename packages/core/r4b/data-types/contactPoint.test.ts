@@ -13,7 +13,7 @@ describe("fhirContactPointTypeAdapter", () => {
 
   describe("format", () => {
     const adapter = fhirContactPointTypeAdapter();
-    const contactPoint = {
+    const contactPoint: ContactPoint = {
       use: "home",
       system: "email",
       value: "jack@example.com",
@@ -52,10 +52,10 @@ describe("fhirContactPointTypeAdapter", () => {
           useValueSetExpansions: useValueSetExpansion,
           systemValueSetExpansions: systemValueSetExpansion,
         },
-        "nº42 - 10/11/2020 - ongoing\nadresse mail: jack@example.com (domicile)",
+        "nº42 - 10/11/2020 - ongoing, adresse mail: jack@example.com (domicile)",
       ],
       ..._.entries({
-        full: "nº42 - 10/11/2020 - ongoing\nemail: jack@example.com (home)",
+        full: "nº42 - 10/11/2020 - ongoing, email: jack@example.com (home)",
         long: "email: jack@example.com (home)",
         medium: "jack@example.com (home)",
         short: "jack@example.com",
@@ -63,60 +63,89 @@ describe("fhirContactPointTypeAdapter", () => {
     ])("parse %p with %p", (value, options, expected) => {
       expect(adapter.format(value, options)).toEqual(expected);
     });
+
+    it("allows to specify line separator", () => {
+      expect(
+        adapter.format(contactPoint, { style: "full", lineSeparator: "\n" })
+      ).toEqual("nº42 - 10/11/2020 - ongoing\nemail: jack@example.com (home)");
+    });
   });
 
   describe("format for arrays", () => {
-    it("sorts by period and type", () => {
-      const contactPoints: ContactPoint[] = [
-        {
-          rank: 2,
-          value: "rank 2",
-        },
-        {
-          rank: 4,
-          use: "work",
-          value: "rank 4, work",
-        },
-        {
-          rank: 0,
-          use: "old",
-          value: "rank 0, old, 0 is undefined rank",
-        },
-        {
-          rank: 1,
-          use: "old",
-          value: "rank 1, old",
-        },
-        {
-          use: "work",
-          value: "work",
-        },
-        {
-          rank: 10,
-          use: "work",
-          value: "rank 10, work",
-        },
-        {
-          rank: 4,
-          use: "home",
-          value: "rank 4, home",
-        },
-        {
-          use: "home",
-          value: "home",
-        },
-      ];
+    const contactPoints: ContactPoint[] = [
+      {
+        rank: 2,
+        value: "rank 2",
+      },
+      {
+        rank: 4,
+        use: "work",
+        value: "rank 4, work",
+      },
+      {
+        rank: 0,
+        use: "old",
+        value: "rank 0, old, 0 is undefined rank",
+      },
+      {
+        rank: 1,
+        use: "old",
+        value: "rank 1, old",
+      },
+      {
+        use: "work",
+        value: "work",
+      },
+      {
+        rank: 10,
+        use: "work",
+        value: "rank 10, work",
+      },
+      {
+        rank: 4,
+        use: "home",
+        value: "rank 4, home",
+      },
+      {
+        use: "home",
+        value: "home",
+      },
+    ];
 
-      expect(fhirContactPointTypeAdapter().format(contactPoints)).toEqual([
-        "rank 1, old",
-        "rank 2",
-        "rank 4, home",
-        "rank 4, work",
-        "rank 10, work",
-        "home",
-        "work",
-        "rank 0, old, 0 is undefined rank",
-      ]);
+    it("sorts by period and type", () => {
+      expect(fhirContactPointTypeAdapter().format(contactPoints)).toEqual(
+        "rank 1, old, " +
+          "rank 2, " +
+          "rank 4, home, " +
+          "rank 4, work, " +
+          "rank 10, work, " +
+          "home, " +
+          "work, and " +
+          "rank 0, old, 0 is undefined rank"
+      );
+    });
+
+    it("Allows custom sort and filter", () => {
+      expect(
+        fhirContactPointTypeAdapter().format(contactPoints, {
+          useFilterOrder: ["work", "home"],
+        })
+      ).toEqual(
+        "rank 4, work, " +
+          "rank 4, home, " +
+          "rank 10, work, " +
+          "work, and " +
+          "home"
+      );
+    });
+
+    it("Allows to only display a few", () => {
+      expect(
+        fhirContactPointTypeAdapter().format(contactPoints, {
+          useFilterOrder: ["work", "home"],
+          max: 2,
+        })
+      ).toEqual("rank 4, work and rank 4, home");
     });
   });
 

@@ -31,8 +31,10 @@ describe("fhirIdentifierTypeAdapter", () => {
       coding: [{ code: "0" }, { code: "1" }, { code: "2" }],
       text: "list of code.",
     };
+    const systemsLabels = { NAS: "numero de sécurité social" };
     const identifier = {
       use: "usual",
+      system: "NAS",
       type: coding,
       value: "123:456:789",
       period: {
@@ -48,20 +50,21 @@ describe("fhirIdentifierTypeAdapter", () => {
         ]
       >
     >[
-      [identifier, undefined, "123:456:789"],
+      [identifier, undefined, "NAS: 123:456:789"],
       [
         identifier,
         {
           style: "full",
           valueSetExpansions: animalsValueSetExpansion,
+          systemsLabels: systemsLabels,
         },
-        "[10/11/2020 - ongoing] - usual\n(list of code. (cat, dog, spider))\n123:456:789",
+        "[10/11/2020 - ongoing]\nnumero de sécurité social: 123:456:789\nusual - list of code. (cat, dog, spider)",
       ],
       ..._.entries({
-        full: "[10/11/2020 - ongoing] - usual\n(list of code. (0, 1, 2))\n123:456:789",
-        long: "usual (list of code. (0, 1, 2))\n123:456:789",
-        medium: "usual (list of code.)\n123:456:789",
-        short: "123:456:789 (usual)",
+        full: "[10/11/2020 - ongoing]\nNAS: 123:456:789\nusual - list of code. (0, 1, 2)",
+        long: "NAS: 123:456:789\nusual - list of code. (0, 1, 2)",
+        medium: "NAS: 123:456:789 (usual)",
+        short: "NAS: 123:456:789",
         value: "123:456:789",
       }).map(([style, expected]) => [identifier, { style }, expected]),
     ])("parse %p with %p", (value, options, expected) => {
@@ -70,51 +73,89 @@ describe("fhirIdentifierTypeAdapter", () => {
   });
 
   describe("format for arrays", () => {
-    it("sorts by period and type", () => {
-      const identifiers: Identifier[] = [
-        {
-          use: "official",
-          period: { end: "2023-01-01" },
-          value: "official, past",
-        },
-        {
-          use: "usual",
-          period: { end: "2023-01-01" },
-          value: "usual, past",
-        },
-        {
-          use: "temp",
-          value: "temp, present",
-        },
-        {
-          use: "usual",
-          value: "usual, present",
-        },
-        {
-          use: "secondary",
-          period: { end: "1990-01-01" },
-          value: "a long time ago, secondary",
-        },
-        {
-          period: { end: "1990-01-01" },
-          value: "a long time ago, no use",
-        },
-        {
-          use: "usual",
-          period: { end: "1990-01-01" },
-          value: "a long time ago, usual",
-        },
-      ];
+    const identifiers: Identifier[] = [
+      {
+        use: "official",
+        system: "NAS",
+        period: { end: "2023-01-01" },
+        value: "official, past",
+      },
+      {
+        use: "usual",
+        system: "ID",
+        period: { end: "2023-01-01" },
+        value: "usual, past",
+      },
+      {
+        use: "temp",
+        system: "ID",
+        value: "temp, present",
+      },
+      {
+        use: "usual",
+        system: "SKD_S",
+        value: "usual, present",
+      },
+      {
+        use: "secondary",
+        period: { end: "1990-01-01" },
+        value: "a long time ago, secondary",
+      },
+      {
+        period: { end: "1990-01-01" },
+        value: "a long time ago, no use",
+      },
+      {
+        use: "usual",
+        period: { end: "1990-01-01" },
+        value: "a long time ago, usual",
+      },
+    ];
 
-      expect(fhirIdentifierTypeAdapter().format(identifiers)).toEqual([
-        "usual, present",
-        "temp, present",
-        "usual, past",
-        "official, past",
-        "a long time ago, usual",
-        "a long time ago, secondary",
-        "a long time ago, no use",
-      ]);
+    it("sorts by period and use", () => {
+      expect(
+        fhirIdentifierTypeAdapter().format(identifiers, { style: "value" })
+      ).toEqual(
+        "usual, present, " +
+          "temp, present, " +
+          "usual, past, " +
+          "official, past, " +
+          "a long time ago, usual, " +
+          "a long time ago, secondary, " +
+          "and a long time ago, no use"
+      );
+    });
+
+    it("Allows custom sort and filter", () => {
+      expect(
+        fhirIdentifierTypeAdapter().format(identifiers, {
+          useFilterOrder: ["official", "usual"],
+          style: "value",
+        })
+      ).toEqual(
+        "usual, present, " +
+          "official, past, " +
+          "usual, past, and " +
+          "a long time ago, usual"
+      );
+
+      expect(
+        fhirIdentifierTypeAdapter().format(identifiers, {
+          systemFilterOrder: ["ID", "NAS"],
+        })
+      ).toEqual(
+        "ID: temp, present, " + "ID: usual, past, and " + "NAS: official, past"
+      );
+    });
+
+    it("Allows to only display a few", () => {
+      expect(
+        fhirIdentifierTypeAdapter().format(identifiers, {
+          useFilterOrder: ["official", "usual"],
+          style: "value",
+          max: 2,
+        })
+      ).toEqual("usual, present and official, past");
     });
   });
 

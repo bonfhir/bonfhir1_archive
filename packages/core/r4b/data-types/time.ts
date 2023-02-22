@@ -1,5 +1,5 @@
 import { FhirDataTypeAdapter } from "../data-type-adapter";
-import { fhirTimeRegexpFragment } from "./helpers";
+import { fhirTimeRegexpFragment } from "./helpers/dateTimeRegexp";
 
 /**
  * A time, or partial time (e.g. just year or year + month) as used in human communication.

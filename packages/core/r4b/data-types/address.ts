@@ -1,10 +1,10 @@
 import { Address } from "fhir/r4";
 import { formatAddress } from "localized-address-format";
-import _ from "lodash";
+import compact from "lodash/compact";
+import reduce from "lodash/reduce";
 import { FhirDataTypeAdapter } from "../data-type-adapter";
 import { FhirCodeFormatOptions, fhirCodeTypeAdapter } from "./code";
-import { fhirDateTimeTypeAdapter } from "./dateTime";
-import { removeDoubleSpaces } from "./helpers";
+import { comparePeriods, removeDoubleSpaces } from "./helpers";
 import { fhirPeriodTypeAdapter } from "./period";
 
 /**
@@ -14,7 +14,56 @@ import { fhirPeriodTypeAdapter } from "./period";
  */
 
 export type FhirAddressFormatOptions = {
-  style?: "text" | "full" | "extended" | null | undefined;
+  /**
+   * The default country to apply if missing from the address.
+   */
+  defaultCountry?: string | null | undefined;
+
+  /**
+   * Whether the country should be happened at the end of the address or not.
+   * Defaults to false.
+   */
+  includeCountry?: boolean | null | undefined;
+
+  /**
+   * - standard: display the address without the use, type or period.
+   * - full: display the address with the period
+   * - extended: display the address with the use, type and period
+   */
+  style?: "standard" | "full" | "extended" | null | undefined;
+
+  /**
+   * True to use text if present, false to never use text - defaults to true
+   */
+  preferText?: boolean | null | undefined;
+
+  /**
+   * The separator to use to join formatted line addresses. Defaults to ", "
+   */
+  lineSeparator?: string | null | undefined;
+
+  /**
+   * When using a list of addresses, format only the first n (after sorting).
+   * Default to Infinity to show or all addresses in a list.
+   */
+  max?: number | null | undefined;
+
+  /**
+   * When using a list of addresses:
+   * - the sort order for the `use` attribute.
+   * - the filter to select only specific values
+   *
+   * Defaults to [home, work, billing, temp, old, undefined]
+   */
+  useFilterOrder?: Array<Address["use"]> | null | undefined;
+
+  /**
+   * When using a list of addresses, the options to pass to the Intl listFormat method.
+   */
+  // listFormatOptions is only available in es2022
+  // listFormatOptions?: Intl.ListFormatOptions | undefined;
+  listFormatOptions?: object | undefined;
+
   useValueSetExpansions?: FhirCodeFormatOptions["valueSetExpansions"];
   typeValueSetExpansions?: FhirCodeFormatOptions["valueSetExpansions"];
 };
@@ -30,7 +79,21 @@ export interface FhirAddressTypeAdapter {
   format(
     value: Address[] | Address | null | undefined,
     options?: FhirAddressFormatOptions | null | undefined
-  ): string[] | string;
+  ): string;
+}
+
+export interface FhirAddressTypeAdapter {
+  locale: FhirDataTypeAdapter["locale"];
+
+  /**
+   * Format a FHIR address
+   *
+   * @see https://hl7.org/fhir/datatypes.html#address
+   */
+  format(
+    value: Address[] | Address | null | undefined,
+    options?: FhirAddressFormatOptions | null | undefined
+  ): string;
 }
 
 /**
@@ -48,11 +111,20 @@ export function fhirAddressTypeAdapter(
     format(fhirAddress, options) {
       if (!fhirAddress) return "";
 
-      if (Array.isArray(fhirAddress))
-        return sortAddresses(fhirAddress).map(
-          (address) => this.format(address, options) as string
-        );
+      if (Array.isArray(fhirAddress)) {
+        const formattedAddressList = filterAndSortAddresses(
+          fhirAddress,
+          options
+        ).map((address) => this.format(address, options));
 
+        // @ts-expect-error, ListFormat typing is only available on es2022
+        return new Intl.ListFormat(locale, options?.listFormatOptions).format(
+          formattedAddressList
+        );
+      }
+
+      const country =
+        fhirAddress.country || options?.defaultCountry || undefined;
       const use = fhirCodeTypeAdapter(locale).format(fhirAddress.use, {
         valueSetExpansions: options?.useValueSetExpansions,
       });
@@ -61,7 +133,7 @@ export function fhirAddressTypeAdapter(
       });
 
       const fullAddress = formatAddress({
-        postalCountry: fhirAddress.country,
+        postalCountry: country,
         administrativeArea: fhirAddress.state,
         locality: fhirAddress.city,
         dependentLocality: fhirAddress.district,
@@ -69,56 +141,76 @@ export function fhirAddressTypeAdapter(
         addressLines: fhirAddress.line,
       });
 
-      switch (options?.style) {
-        case null:
-        case undefined:
-        case "text":
-          return fhirAddress.text || "";
-        case "full":
-          return fullAddress.join("\n");
-        case "extended":
-          return removeDoubleSpaces(
-            _.compact([
-              `(${fhirPeriodTypeAdapter(locale).format(fhirAddress.period)})`,
-              `${type} - ${use}`,
-              ...fullAddress,
-              fhirAddress.country,
-            ]).join("\n")
-          );
-        default:
-          throw new Error(`Unknown style option ${options?.style}`);
-      }
+      if (options?.preferText !== false && fhirAddress.text)
+        return fhirAddress.text;
+
+      const addressComponents = fullAddress;
+
+      // add use and type
+      if (options?.style === "extended")
+        addressComponents.unshift(`${type} - ${use}`);
+
+      // add period
+      if (["full", "extended"].includes(options?.style || ""))
+        addressComponents.unshift(
+          `(${fhirPeriodTypeAdapter(locale).format(fhirAddress.period)})`
+        );
+
+      // add country
+      if (options?.includeCountry && country) addressComponents.push(country);
+
+      return compact(addressComponents.map(removeDoubleSpaces)).join(
+        options?.lineSeparator || ", "
+      );
     },
   };
 }
 
-const sortAddresses = (addresses: Address[]): Address[] => {
-  return addresses.sort((address1, address2) => {
-    const address1EndDate = dateTimeAdapter.parse(address1?.period?.end);
-    const address2EndDate = dateTimeAdapter.parse(address2?.period?.end);
+const filterAndSortAddresses = (
+  addresses: Address[],
+  options: FhirAddressFormatOptions | null | undefined
+): Address[] => {
+  const useFilterOrder = options?.useFilterOrder || addressUseOrderFilter;
+  const indexedOrder: { [k: string]: number } = reduce(
+    useFilterOrder,
+    (indexedValues, currentValue, index) => ({
+      ...indexedValues,
+      [currentValue || "undefined"]: index,
+    }),
+    {}
+  );
 
-    // sort by period
-    if (!address1EndDate && address2EndDate) return -1;
-    if (!address2EndDate && address1EndDate) return 1;
-    if (address1EndDate && address2EndDate) {
-      if (address1EndDate.date > address2EndDate.date) return -1;
-      if (address2EndDate.date > address1EndDate.date) return 1;
-    }
+  // filter out by use
+  if (options?.useFilterOrder)
+    addresses = addresses.filter((address) =>
+      useFilterOrder.includes(address.use)
+    );
+
+  // sort out by period, then use
+  addresses = addresses.sort((address1, address2) => {
+    const periodComparisonResult = comparePeriods(address1, address2);
+
+    if (periodComparisonResult) return periodComparisonResult;
 
     // then sort by use
     return (
-      addressUseOrder[address1.use || "undefined"] -
-      addressUseOrder[address2.use || "undefined"]
+      (indexedOrder[address1.use || "undefined"] || 0) -
+      (indexedOrder[address2.use || "undefined"] || 0)
     );
   });
+
+  if (options?.max) {
+    addresses = addresses.slice(0, options.max);
+  }
+
+  return addresses;
 };
 
-const dateTimeAdapter = fhirDateTimeTypeAdapter();
-const addressUseOrder = {
-  home: 0,
-  work: 1,
-  temp: 2,
-  old: 3,
-  billing: 4,
-  undefined: 4,
-};
+const addressUseOrderFilter: Address["use"][] = [
+  "home",
+  "work",
+  "temp",
+  "old",
+  "billing",
+  undefined,
+];
