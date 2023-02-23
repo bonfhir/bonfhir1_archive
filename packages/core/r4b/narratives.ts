@@ -176,18 +176,17 @@ import type {
   VerificationResult,
   VisionPrescription,
 } from "fhir/r4";
-import { encode } from "html-entities";
 import type { ComplexElementType, ExtractComplexElement } from "./types";
 
 /**
  * A unit of content used to generate a `Narrative`.
  */
-export interface NarrativeElement {
-  attr: string;
-  value: unknown;
-  type: ElementDefinitionType;
-  max: "1" | "*";
-}
+export type NarrativeElement = [
+  string,
+  unknown,
+  ElementDefinitionType,
+  "1" | "*"
+];
 
 /**
  * Generate a `Narrative`-compatible XHTML representation for complex `Element` types.
@@ -284,66 +283,31 @@ function narrativeElementAddress(
   }
 
   const components: Array<string | undefined> = [
-    narrativeElementByType({
-      attr: "Use",
-      value: element.use,
-      max: "1",
-      type: { code: "code" },
-    }),
-    narrativeElementByType({
-      attr: "Type",
-      value: element.type,
-      max: "1",
-      type: { code: "code" },
-    }),
-    narrativeElementByType({
-      attr: "Text",
-      value: element.text,
-      max: "1",
-      type: { code: "string" },
-    }),
-    narrativeElementByType({
-      attr: "Line",
-      value: element.line,
-      max: "*",
-      type: { code: "string" },
-    }),
-    narrativeElementByType({
-      attr: "City",
-      value: element.city,
-      max: "1",
-      type: { code: "string" },
-    }),
-    narrativeElementByType({
-      attr: "District",
-      value: element.district,
-      max: "1",
-      type: { code: "string" },
-    }),
-    narrativeElementByType({
-      attr: "State",
-      value: element.state,
-      max: "1",
-      type: { code: "string" },
-    }),
-    narrativeElementByType({
-      attr: "Postal Code",
-      value: element.postalCode,
-      max: "1",
-      type: { code: "string" },
-    }),
-    narrativeElementByType({
-      attr: "Country",
-      value: element.country,
-      max: "1",
-      type: { code: "string" },
-    }),
-    narrativeElementByType({
-      attr: "Period",
-      value: element.period,
-      max: "1",
-      type: { code: "Period" },
-    }),
+    narrativeElementByType(["Use", element.use, { code: "code" }, "1"]),
+    narrativeElementByType(["Type", element.type, { code: "code" }, "1"]),
+    narrativeElementByType(["Text", element.text, { code: "string" }, "1"]),
+    narrativeElementByType(["Line", element.line, { code: "string" }, "*"]),
+    narrativeElementByType(["City", element.city, { code: "string" }, "1"]),
+    narrativeElementByType([
+      "District",
+      element.district,
+      { code: "string" },
+      "1",
+    ]),
+    narrativeElementByType(["State", element.state, { code: "string" }, "1"]),
+    narrativeElementByType([
+      "Postal Code",
+      element.postalCode,
+      { code: "string" },
+      "1",
+    ]),
+    narrativeElementByType([
+      "Country",
+      element.country,
+      { code: "string" },
+      "1",
+    ]),
+    narrativeElementByType(["Period", element.period, { code: "Period" }, "1"]),
   ];
 
   if (!components.length) {
@@ -360,18 +324,8 @@ function narrativeElementAnnotation(
   }
 
   const components: Array<string | undefined> = [
-    narrativeElementByType({
-      attr: "Time",
-      value: element.time,
-      max: "1",
-      type: { code: "dateTime" },
-    }),
-    narrativeElementByType({
-      attr: "Text",
-      value: element.text,
-      max: "1",
-      type: { code: "markdown" },
-    }),
+    narrativeElementByType(["Time", element.time, { code: "dateTime" }, "1"]),
+    narrativeElementByType(["Text", element.text, { code: "markdown" }, "1"]),
   ];
 
   if (!components.length) {
@@ -388,48 +342,38 @@ function narrativeElementAttachment(
   }
 
   const components: Array<string | undefined> = [
-    narrativeElementByType({
-      attr: "Content Type",
-      value: element.contentType,
-      max: "1",
-      type: { code: "code" },
-    }),
-    narrativeElementByType({
-      attr: "Language",
-      value: element.language,
-      max: "1",
-      type: { code: "code" },
-    }),
-    narrativeElementByType({
-      attr: "Url",
-      value: element.url,
-      max: "1",
-      type: { code: "url" },
-    }),
-    narrativeElementByType({
-      attr: "Size",
-      value: element.size,
-      max: "1",
-      type: { code: "unsignedInt" },
-    }),
-    narrativeElementByType({
-      attr: "Hash",
-      value: element.hash,
-      max: "1",
-      type: { code: "base64Binary" },
-    }),
-    narrativeElementByType({
-      attr: "Title",
-      value: element.title,
-      max: "1",
-      type: { code: "string" },
-    }),
-    narrativeElementByType({
-      attr: "Creation",
-      value: element.creation,
-      max: "1",
-      type: { code: "dateTime" },
-    }),
+    narrativeElementByType([
+      "Content Type",
+      element.contentType,
+      { code: "code" },
+      "1",
+    ]),
+    narrativeElementByType([
+      "Language",
+      element.language,
+      { code: "code" },
+      "1",
+    ]),
+    narrativeElementByType(["Url", element.url, { code: "url" }, "1"]),
+    narrativeElementByType([
+      "Size",
+      element.size,
+      { code: "unsignedInt" },
+      "1",
+    ]),
+    narrativeElementByType([
+      "Hash",
+      element.hash,
+      { code: "base64Binary" },
+      "1",
+    ]),
+    narrativeElementByType(["Title", element.title, { code: "string" }, "1"]),
+    narrativeElementByType([
+      "Creation",
+      element.creation,
+      { code: "dateTime" },
+      "1",
+    ]),
   ];
 
   if (!components.length) {
@@ -446,18 +390,8 @@ function narrativeElementCodeableConcept(
   }
 
   const components: Array<string | undefined> = [
-    narrativeElementByType({
-      attr: "Coding",
-      value: element.coding,
-      max: "*",
-      type: { code: "Coding" },
-    }),
-    narrativeElementByType({
-      attr: "Text",
-      value: element.text,
-      max: "1",
-      type: { code: "string" },
-    }),
+    narrativeElementByType(["Coding", element.coding, { code: "Coding" }, "*"]),
+    narrativeElementByType(["Text", element.text, { code: "string" }, "1"]),
   ];
 
   if (!components.length) {
@@ -474,18 +408,18 @@ function narrativeElementCodeableReference(
   }
 
   const components: Array<string | undefined> = [
-    narrativeElementByType({
-      attr: "Concept",
-      value: element.concept,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    }),
-    narrativeElementByType({
-      attr: "Reference",
-      value: element.reference,
-      max: "1",
-      type: { code: "Reference" },
-    }),
+    narrativeElementByType([
+      "Concept",
+      element.concept,
+      { code: "CodeableConcept" },
+      "1",
+    ]),
+    narrativeElementByType([
+      "Reference",
+      element.reference,
+      { code: "Reference" },
+      "1",
+    ]),
   ];
 
   if (!components.length) {
@@ -502,36 +436,26 @@ function narrativeElementCoding(
   }
 
   const components: Array<string | undefined> = [
-    narrativeElementByType({
-      attr: "System",
-      value: element.system,
-      max: "1",
-      type: { code: "uri" },
-    }),
-    narrativeElementByType({
-      attr: "Version",
-      value: element.version,
-      max: "1",
-      type: { code: "string" },
-    }),
-    narrativeElementByType({
-      attr: "Code",
-      value: element.code,
-      max: "1",
-      type: { code: "code" },
-    }),
-    narrativeElementByType({
-      attr: "Display",
-      value: element.display,
-      max: "1",
-      type: { code: "string" },
-    }),
-    narrativeElementByType({
-      attr: "User Selected",
-      value: element.userSelected,
-      max: "1",
-      type: { code: "boolean" },
-    }),
+    narrativeElementByType(["System", element.system, { code: "uri" }, "1"]),
+    narrativeElementByType([
+      "Version",
+      element.version,
+      { code: "string" },
+      "1",
+    ]),
+    narrativeElementByType(["Code", element.code, { code: "code" }, "1"]),
+    narrativeElementByType([
+      "Display",
+      element.display,
+      { code: "string" },
+      "1",
+    ]),
+    narrativeElementByType([
+      "User Selected",
+      element.userSelected,
+      { code: "boolean" },
+      "1",
+    ]),
   ];
 
   if (!components.length) {
@@ -548,18 +472,13 @@ function narrativeElementContactDetail(
   }
 
   const components: Array<string | undefined> = [
-    narrativeElementByType({
-      attr: "Name",
-      value: element.name,
-      max: "1",
-      type: { code: "string" },
-    }),
-    narrativeElementByType({
-      attr: "Telecom",
-      value: element.telecom,
-      max: "*",
-      type: { code: "ContactPoint" },
-    }),
+    narrativeElementByType(["Name", element.name, { code: "string" }, "1"]),
+    narrativeElementByType([
+      "Telecom",
+      element.telecom,
+      { code: "ContactPoint" },
+      "*",
+    ]),
   ];
 
   if (!components.length) {
@@ -576,36 +495,16 @@ function narrativeElementContactPoint(
   }
 
   const components: Array<string | undefined> = [
-    narrativeElementByType({
-      attr: "System",
-      value: element.system,
-      max: "1",
-      type: { code: "code" },
-    }),
-    narrativeElementByType({
-      attr: "Value",
-      value: element.value,
-      max: "1",
-      type: { code: "string" },
-    }),
-    narrativeElementByType({
-      attr: "Use",
-      value: element.use,
-      max: "1",
-      type: { code: "code" },
-    }),
-    narrativeElementByType({
-      attr: "Rank",
-      value: element.rank,
-      max: "1",
-      type: { code: "positiveInt" },
-    }),
-    narrativeElementByType({
-      attr: "Period",
-      value: element.period,
-      max: "1",
-      type: { code: "Period" },
-    }),
+    narrativeElementByType(["System", element.system, { code: "code" }, "1"]),
+    narrativeElementByType(["Value", element.value, { code: "string" }, "1"]),
+    narrativeElementByType(["Use", element.use, { code: "code" }, "1"]),
+    narrativeElementByType([
+      "Rank",
+      element.rank,
+      { code: "positiveInt" },
+      "1",
+    ]),
+    narrativeElementByType(["Period", element.period, { code: "Period" }, "1"]),
   ];
 
   if (!components.length) {
@@ -622,24 +521,14 @@ function narrativeElementContributor(
   }
 
   const components: Array<string | undefined> = [
-    narrativeElementByType({
-      attr: "Type",
-      value: element.type,
-      max: "1",
-      type: { code: "code" },
-    }),
-    narrativeElementByType({
-      attr: "Name",
-      value: element.name,
-      max: "1",
-      type: { code: "string" },
-    }),
-    narrativeElementByType({
-      attr: "Contact",
-      value: element.contact,
-      max: "*",
-      type: { code: "ContactDetail" },
-    }),
+    narrativeElementByType(["Type", element.type, { code: "code" }, "1"]),
+    narrativeElementByType(["Name", element.name, { code: "string" }, "1"]),
+    narrativeElementByType([
+      "Contact",
+      element.contact,
+      { code: "ContactDetail" },
+      "*",
+    ]),
   ];
 
   if (!components.length) {
@@ -656,53 +545,38 @@ function narrativeElementDataRequirement(
   }
 
   const components: Array<string | undefined> = [
-    narrativeElementByType({
-      attr: "Type",
-      value: element.type,
-      max: "1",
-      type: { code: "code" },
-    }),
-    narrativeElementByType({
-      attr: "Profile",
-      value: element.profile,
-      max: "*",
-      type: {
-        code: "canonical",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/StructureDefinition",
-        ],
-      },
-    }),
-    narrativeElementByType({
-      attr: "Must Support",
-      value: element.mustSupport,
-      max: "*",
-      type: { code: "string" },
-    }),
-    narrativeElementByType({
-      attr: "Code Filter",
-      value: element.codeFilter,
-      max: "*",
-      type: { code: "Element" },
-    }),
-    narrativeElementByType({
-      attr: "Date Filter",
-      value: element.dateFilter,
-      max: "*",
-      type: { code: "Element" },
-    }),
-    narrativeElementByType({
-      attr: "Limit",
-      value: element.limit,
-      max: "1",
-      type: { code: "positiveInt" },
-    }),
-    narrativeElementByType({
-      attr: "Sort",
-      value: element.sort,
-      max: "*",
-      type: { code: "Element" },
-    }),
+    narrativeElementByType(["Type", element.type, { code: "code" }, "1"]),
+    narrativeElementByType([
+      "Profile",
+      element.profile,
+      { code: "canonical" },
+      "*",
+    ]),
+    narrativeElementByType([
+      "Must Support",
+      element.mustSupport,
+      { code: "string" },
+      "*",
+    ]),
+    narrativeElementByType([
+      "Code Filter",
+      element.codeFilter,
+      { code: "Element" },
+      "*",
+    ]),
+    narrativeElementByType([
+      "Date Filter",
+      element.dateFilter,
+      { code: "Element" },
+      "*",
+    ]),
+    narrativeElementByType([
+      "Limit",
+      element.limit,
+      { code: "positiveInt" },
+      "1",
+    ]),
+    narrativeElementByType(["Sort", element.sort, { code: "Element" }, "*"]),
   ];
 
   if (!components.length) {
@@ -719,36 +593,31 @@ function narrativeElementExpression(
   }
 
   const components: Array<string | undefined> = [
-    narrativeElementByType({
-      attr: "Description",
-      value: element.description,
-      max: "1",
-      type: { code: "string" },
-    }),
-    narrativeElementByType({
-      attr: "Name",
-      value: element.name,
-      max: "1",
-      type: { code: "id" },
-    }),
-    narrativeElementByType({
-      attr: "Language",
-      value: element.language,
-      max: "1",
-      type: { code: "code" },
-    }),
-    narrativeElementByType({
-      attr: "Expression",
-      value: element.expression,
-      max: "1",
-      type: { code: "string" },
-    }),
-    narrativeElementByType({
-      attr: "Reference",
-      value: element.reference,
-      max: "1",
-      type: { code: "uri" },
-    }),
+    narrativeElementByType([
+      "Description",
+      element.description,
+      { code: "string" },
+      "1",
+    ]),
+    narrativeElementByType(["Name", element.name, { code: "id" }, "1"]),
+    narrativeElementByType([
+      "Language",
+      element.language,
+      { code: "code" },
+      "1",
+    ]),
+    narrativeElementByType([
+      "Expression",
+      element.expression,
+      { code: "string" },
+      "1",
+    ]),
+    narrativeElementByType([
+      "Reference",
+      element.reference,
+      { code: "uri" },
+      "1",
+    ]),
   ];
 
   if (!components.length) {
@@ -780,48 +649,13 @@ function narrativeElementHumanName(
   }
 
   const components: Array<string | undefined> = [
-    narrativeElementByType({
-      attr: "Use",
-      value: element.use,
-      max: "1",
-      type: { code: "code" },
-    }),
-    narrativeElementByType({
-      attr: "Text",
-      value: element.text,
-      max: "1",
-      type: { code: "string" },
-    }),
-    narrativeElementByType({
-      attr: "Family",
-      value: element.family,
-      max: "1",
-      type: { code: "string" },
-    }),
-    narrativeElementByType({
-      attr: "Given",
-      value: element.given,
-      max: "*",
-      type: { code: "string" },
-    }),
-    narrativeElementByType({
-      attr: "Prefix",
-      value: element.prefix,
-      max: "*",
-      type: { code: "string" },
-    }),
-    narrativeElementByType({
-      attr: "Suffix",
-      value: element.suffix,
-      max: "*",
-      type: { code: "string" },
-    }),
-    narrativeElementByType({
-      attr: "Period",
-      value: element.period,
-      max: "1",
-      type: { code: "Period" },
-    }),
+    narrativeElementByType(["Use", element.use, { code: "code" }, "1"]),
+    narrativeElementByType(["Text", element.text, { code: "string" }, "1"]),
+    narrativeElementByType(["Family", element.family, { code: "string" }, "1"]),
+    narrativeElementByType(["Given", element.given, { code: "string" }, "*"]),
+    narrativeElementByType(["Prefix", element.prefix, { code: "string" }, "*"]),
+    narrativeElementByType(["Suffix", element.suffix, { code: "string" }, "*"]),
+    narrativeElementByType(["Period", element.period, { code: "Period" }, "1"]),
   ];
 
   if (!components.length) {
@@ -838,45 +672,22 @@ function narrativeElementIdentifier(
   }
 
   const components: Array<string | undefined> = [
-    narrativeElementByType({
-      attr: "Use",
-      value: element.use,
-      max: "1",
-      type: { code: "code" },
-    }),
-    narrativeElementByType({
-      attr: "Type",
-      value: element.type,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    }),
-    narrativeElementByType({
-      attr: "System",
-      value: element.system,
-      max: "1",
-      type: { code: "uri" },
-    }),
-    narrativeElementByType({
-      attr: "Value",
-      value: element.value,
-      max: "1",
-      type: { code: "string" },
-    }),
-    narrativeElementByType({
-      attr: "Period",
-      value: element.period,
-      max: "1",
-      type: { code: "Period" },
-    }),
-    narrativeElementByType({
-      attr: "Assigner",
-      value: element.assigner,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Organization"],
-      },
-    }),
+    narrativeElementByType(["Use", element.use, { code: "code" }, "1"]),
+    narrativeElementByType([
+      "Type",
+      element.type,
+      { code: "CodeableConcept" },
+      "1",
+    ]),
+    narrativeElementByType(["System", element.system, { code: "uri" }, "1"]),
+    narrativeElementByType(["Value", element.value, { code: "string" }, "1"]),
+    narrativeElementByType(["Period", element.period, { code: "Period" }, "1"]),
+    narrativeElementByType([
+      "Assigner",
+      element.assigner,
+      { code: "Reference" },
+      "1",
+    ]),
   ];
 
   if (!components.length) {
@@ -893,47 +704,32 @@ function narrativeElementMeta(
   }
 
   const components: Array<string | undefined> = [
-    narrativeElementByType({
-      attr: "Version Id",
-      value: element.versionId,
-      max: "1",
-      type: { code: "id" },
-    }),
-    narrativeElementByType({
-      attr: "Last Updated",
-      value: element.lastUpdated,
-      max: "1",
-      type: { code: "instant" },
-    }),
-    narrativeElementByType({
-      attr: "Source",
-      value: element.source,
-      max: "1",
-      type: { code: "uri" },
-    }),
-    narrativeElementByType({
-      attr: "Profile",
-      value: element.profile,
-      max: "*",
-      type: {
-        code: "canonical",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/StructureDefinition",
-        ],
-      },
-    }),
-    narrativeElementByType({
-      attr: "Security",
-      value: element.security,
-      max: "*",
-      type: { code: "Coding" },
-    }),
-    narrativeElementByType({
-      attr: "Tag",
-      value: element.tag,
-      max: "*",
-      type: { code: "Coding" },
-    }),
+    narrativeElementByType([
+      "Version Id",
+      element.versionId,
+      { code: "id" },
+      "1",
+    ]),
+    narrativeElementByType([
+      "Last Updated",
+      element.lastUpdated,
+      { code: "instant" },
+      "1",
+    ]),
+    narrativeElementByType(["Source", element.source, { code: "uri" }, "1"]),
+    narrativeElementByType([
+      "Profile",
+      element.profile,
+      { code: "canonical" },
+      "*",
+    ]),
+    narrativeElementByType([
+      "Security",
+      element.security,
+      { code: "Coding" },
+      "*",
+    ]),
+    narrativeElementByType(["Tag", element.tag, { code: "Coding" }, "*"]),
   ];
 
   if (!components.length) {
@@ -950,18 +746,13 @@ function narrativeElementMoney(
   }
 
   const components: Array<string | undefined> = [
-    narrativeElementByType({
-      attr: "Value",
-      value: element.value,
-      max: "1",
-      type: { code: "decimal" },
-    }),
-    narrativeElementByType({
-      attr: "Currency",
-      value: element.currency,
-      max: "1",
-      type: { code: "code" },
-    }),
+    narrativeElementByType(["Value", element.value, { code: "decimal" }, "1"]),
+    narrativeElementByType([
+      "Currency",
+      element.currency,
+      { code: "code" },
+      "1",
+    ]),
   ];
 
   if (!components.length) {
@@ -993,53 +784,23 @@ function narrativeElementParameterDefinition(
   }
 
   const components: Array<string | undefined> = [
-    narrativeElementByType({
-      attr: "Name",
-      value: element.name,
-      max: "1",
-      type: { code: "code" },
-    }),
-    narrativeElementByType({
-      attr: "Use",
-      value: element.use,
-      max: "1",
-      type: { code: "code" },
-    }),
-    narrativeElementByType({
-      attr: "Min",
-      value: element.min,
-      max: "1",
-      type: { code: "integer" },
-    }),
-    narrativeElementByType({
-      attr: "Max",
-      value: element.max,
-      max: "1",
-      type: { code: "string" },
-    }),
-    narrativeElementByType({
-      attr: "Documentation",
-      value: element.documentation,
-      max: "1",
-      type: { code: "string" },
-    }),
-    narrativeElementByType({
-      attr: "Type",
-      value: element.type,
-      max: "1",
-      type: { code: "code" },
-    }),
-    narrativeElementByType({
-      attr: "Profile",
-      value: element.profile,
-      max: "1",
-      type: {
-        code: "canonical",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/StructureDefinition",
-        ],
-      },
-    }),
+    narrativeElementByType(["Name", element.name, { code: "code" }, "1"]),
+    narrativeElementByType(["Use", element.use, { code: "code" }, "1"]),
+    narrativeElementByType(["Min", element.min, { code: "integer" }, "1"]),
+    narrativeElementByType(["Max", element.max, { code: "string" }, "1"]),
+    narrativeElementByType([
+      "Documentation",
+      element.documentation,
+      { code: "string" },
+      "1",
+    ]),
+    narrativeElementByType(["Type", element.type, { code: "code" }, "1"]),
+    narrativeElementByType([
+      "Profile",
+      element.profile,
+      { code: "canonical" },
+      "1",
+    ]),
   ];
 
   if (!components.length) {
@@ -1056,18 +817,8 @@ function narrativeElementPeriod(
   }
 
   const components: Array<string | undefined> = [
-    narrativeElementByType({
-      attr: "Start",
-      value: element.start,
-      max: "1",
-      type: { code: "dateTime" },
-    }),
-    narrativeElementByType({
-      attr: "End",
-      value: element.end,
-      max: "1",
-      type: { code: "dateTime" },
-    }),
+    narrativeElementByType(["Start", element.start, { code: "dateTime" }, "1"]),
+    narrativeElementByType(["End", element.end, { code: "dateTime" }, "1"]),
   ];
 
   if (!components.length) {
@@ -1084,36 +835,16 @@ function narrativeElementQuantity(
   }
 
   const components: Array<string | undefined> = [
-    narrativeElementByType({
-      attr: "Value",
-      value: element.value,
-      max: "1",
-      type: { code: "decimal" },
-    }),
-    narrativeElementByType({
-      attr: "Comparator",
-      value: element.comparator,
-      max: "1",
-      type: { code: "code" },
-    }),
-    narrativeElementByType({
-      attr: "Unit",
-      value: element.unit,
-      max: "1",
-      type: { code: "string" },
-    }),
-    narrativeElementByType({
-      attr: "System",
-      value: element.system,
-      max: "1",
-      type: { code: "uri" },
-    }),
-    narrativeElementByType({
-      attr: "Code",
-      value: element.code,
-      max: "1",
-      type: { code: "code" },
-    }),
+    narrativeElementByType(["Value", element.value, { code: "decimal" }, "1"]),
+    narrativeElementByType([
+      "Comparator",
+      element.comparator,
+      { code: "code" },
+      "1",
+    ]),
+    narrativeElementByType(["Unit", element.unit, { code: "string" }, "1"]),
+    narrativeElementByType(["System", element.system, { code: "uri" }, "1"]),
+    narrativeElementByType(["Code", element.code, { code: "code" }, "1"]),
   ];
 
   if (!components.length) {
@@ -1130,24 +861,24 @@ function narrativeElementRange(
   }
 
   const components: Array<string | undefined> = [
-    narrativeElementByType({
-      attr: "Low",
-      value: element.low,
-      max: "1",
-      type: {
+    narrativeElementByType([
+      "Low",
+      element.low,
+      {
         code: "Quantity",
         profile: ["http://hl7.org/fhir/StructureDefinition/SimpleQuantity"],
       },
-    }),
-    narrativeElementByType({
-      attr: "High",
-      value: element.high,
-      max: "1",
-      type: {
+      "1",
+    ]),
+    narrativeElementByType([
+      "High",
+      element.high,
+      {
         code: "Quantity",
         profile: ["http://hl7.org/fhir/StructureDefinition/SimpleQuantity"],
       },
-    }),
+      "1",
+    ]),
   ];
 
   if (!components.length) {
@@ -1164,18 +895,18 @@ function narrativeElementRatio(
   }
 
   const components: Array<string | undefined> = [
-    narrativeElementByType({
-      attr: "Numerator",
-      value: element.numerator,
-      max: "1",
-      type: { code: "Quantity" },
-    }),
-    narrativeElementByType({
-      attr: "Denominator",
-      value: element.denominator,
-      max: "1",
-      type: { code: "Quantity" },
-    }),
+    narrativeElementByType([
+      "Numerator",
+      element.numerator,
+      { code: "Quantity" },
+      "1",
+    ]),
+    narrativeElementByType([
+      "Denominator",
+      element.denominator,
+      { code: "Quantity" },
+      "1",
+    ]),
   ];
 
   if (!components.length) {
@@ -1192,33 +923,33 @@ function narrativeElementRatioRange(
   }
 
   const components: Array<string | undefined> = [
-    narrativeElementByType({
-      attr: "Low Numerator",
-      value: element.lowNumerator,
-      max: "1",
-      type: {
+    narrativeElementByType([
+      "Low Numerator",
+      element.lowNumerator,
+      {
         code: "Quantity",
         profile: ["http://hl7.org/fhir/StructureDefinition/SimpleQuantity"],
       },
-    }),
-    narrativeElementByType({
-      attr: "High Numerator",
-      value: element.highNumerator,
-      max: "1",
-      type: {
+      "1",
+    ]),
+    narrativeElementByType([
+      "High Numerator",
+      element.highNumerator,
+      {
         code: "Quantity",
         profile: ["http://hl7.org/fhir/StructureDefinition/SimpleQuantity"],
       },
-    }),
-    narrativeElementByType({
-      attr: "Denominator",
-      value: element.denominator,
-      max: "1",
-      type: {
+      "1",
+    ]),
+    narrativeElementByType([
+      "Denominator",
+      element.denominator,
+      {
         code: "Quantity",
         profile: ["http://hl7.org/fhir/StructureDefinition/SimpleQuantity"],
       },
-    }),
+      "1",
+    ]),
   ];
 
   if (!components.length) {
@@ -1235,30 +966,25 @@ function narrativeElementReference(
   }
 
   const components: Array<string | undefined> = [
-    narrativeElementByType({
-      attr: "Reference",
-      value: element.reference,
-      max: "1",
-      type: { code: "string" },
-    }),
-    narrativeElementByType({
-      attr: "Type",
-      value: element.type,
-      max: "1",
-      type: { code: "uri" },
-    }),
-    narrativeElementByType({
-      attr: "Identifier",
-      value: element.identifier,
-      max: "1",
-      type: { code: "Identifier" },
-    }),
-    narrativeElementByType({
-      attr: "Display",
-      value: element.display,
-      max: "1",
-      type: { code: "string" },
-    }),
+    narrativeElementByType([
+      "Reference",
+      element.reference,
+      { code: "string" },
+      "1",
+    ]),
+    narrativeElementByType(["Type", element.type, { code: "uri" }, "1"]),
+    narrativeElementByType([
+      "Identifier",
+      element.identifier,
+      { code: "Identifier" },
+      "1",
+    ]),
+    narrativeElementByType([
+      "Display",
+      element.display,
+      { code: "string" },
+      "1",
+    ]),
   ];
 
   if (!components.length) {
@@ -1275,51 +1001,33 @@ function narrativeElementRelatedArtifact(
   }
 
   const components: Array<string | undefined> = [
-    narrativeElementByType({
-      attr: "Type",
-      value: element.type,
-      max: "1",
-      type: { code: "code" },
-    }),
-    narrativeElementByType({
-      attr: "Label",
-      value: element.label,
-      max: "1",
-      type: { code: "string" },
-    }),
-    narrativeElementByType({
-      attr: "Display",
-      value: element.display,
-      max: "1",
-      type: { code: "string" },
-    }),
-    narrativeElementByType({
-      attr: "Citation",
-      value: element.citation,
-      max: "1",
-      type: { code: "markdown" },
-    }),
-    narrativeElementByType({
-      attr: "Url",
-      value: element.url,
-      max: "1",
-      type: { code: "url" },
-    }),
-    narrativeElementByType({
-      attr: "Document",
-      value: element.document,
-      max: "1",
-      type: { code: "Attachment" },
-    }),
-    narrativeElementByType({
-      attr: "Resource",
-      value: element.resource,
-      max: "1",
-      type: {
-        code: "canonical",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Resource"],
-      },
-    }),
+    narrativeElementByType(["Type", element.type, { code: "code" }, "1"]),
+    narrativeElementByType(["Label", element.label, { code: "string" }, "1"]),
+    narrativeElementByType([
+      "Display",
+      element.display,
+      { code: "string" },
+      "1",
+    ]),
+    narrativeElementByType([
+      "Citation",
+      element.citation,
+      { code: "markdown" },
+      "1",
+    ]),
+    narrativeElementByType(["Url", element.url, { code: "url" }, "1"]),
+    narrativeElementByType([
+      "Document",
+      element.document,
+      { code: "Attachment" },
+      "1",
+    ]),
+    narrativeElementByType([
+      "Resource",
+      element.resource,
+      { code: "canonical" },
+      "1",
+    ]),
   ];
 
   if (!components.length) {
@@ -1336,45 +1044,45 @@ function narrativeElementSampledData(
   }
 
   const components: Array<string | undefined> = [
-    narrativeElementByType({
-      attr: "Origin",
-      value: element.origin,
-      max: "1",
-      type: {
+    narrativeElementByType([
+      "Origin",
+      element.origin,
+      {
         code: "Quantity",
         profile: ["http://hl7.org/fhir/StructureDefinition/SimpleQuantity"],
       },
-    }),
-    narrativeElementByType({
-      attr: "Period",
-      value: element.period,
-      max: "1",
-      type: { code: "decimal" },
-    }),
-    narrativeElementByType({
-      attr: "Factor",
-      value: element.factor,
-      max: "1",
-      type: { code: "decimal" },
-    }),
-    narrativeElementByType({
-      attr: "Lower Limit",
-      value: element.lowerLimit,
-      max: "1",
-      type: { code: "decimal" },
-    }),
-    narrativeElementByType({
-      attr: "Upper Limit",
-      value: element.upperLimit,
-      max: "1",
-      type: { code: "decimal" },
-    }),
-    narrativeElementByType({
-      attr: "Dimensions",
-      value: element.dimensions,
-      max: "1",
-      type: { code: "positiveInt" },
-    }),
+      "1",
+    ]),
+    narrativeElementByType([
+      "Period",
+      element.period,
+      { code: "decimal" },
+      "1",
+    ]),
+    narrativeElementByType([
+      "Factor",
+      element.factor,
+      { code: "decimal" },
+      "1",
+    ]),
+    narrativeElementByType([
+      "Lower Limit",
+      element.lowerLimit,
+      { code: "decimal" },
+      "1",
+    ]),
+    narrativeElementByType([
+      "Upper Limit",
+      element.upperLimit,
+      { code: "decimal" },
+      "1",
+    ]),
+    narrativeElementByType([
+      "Dimensions",
+      element.dimensions,
+      { code: "positiveInt" },
+      "1",
+    ]),
   ];
 
   if (!components.length) {
@@ -1391,50 +1099,15 @@ function narrativeElementSignature(
   }
 
   const components: Array<string | undefined> = [
-    narrativeElementByType({
-      attr: "Type",
-      value: element.type,
-      max: "*",
-      type: { code: "Coding" },
-    }),
-    narrativeElementByType({
-      attr: "When",
-      value: element.when,
-      max: "1",
-      type: { code: "instant" },
-    }),
-    narrativeElementByType({
-      attr: "Who",
-      value: element.who,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Practitioner",
-          "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
-          "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
-          "http://hl7.org/fhir/StructureDefinition/Patient",
-          "http://hl7.org/fhir/StructureDefinition/Device",
-          "http://hl7.org/fhir/StructureDefinition/Organization",
-        ],
-      },
-    }),
-    narrativeElementByType({
-      attr: "On Behalf Of",
-      value: element.onBehalfOf,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Practitioner",
-          "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
-          "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
-          "http://hl7.org/fhir/StructureDefinition/Patient",
-          "http://hl7.org/fhir/StructureDefinition/Device",
-          "http://hl7.org/fhir/StructureDefinition/Organization",
-        ],
-      },
-    }),
+    narrativeElementByType(["Type", element.type, { code: "Coding" }, "*"]),
+    narrativeElementByType(["When", element.when, { code: "instant" }, "1"]),
+    narrativeElementByType(["Who", element.who, { code: "Reference" }, "1"]),
+    narrativeElementByType([
+      "On Behalf Of",
+      element.onBehalfOf,
+      { code: "Reference" },
+      "1",
+    ]),
   ];
 
   if (!components.length) {
@@ -1451,30 +1124,20 @@ function narrativeElementTriggerDefinition(
   }
 
   const components: Array<string | undefined> = [
-    narrativeElementByType({
-      attr: "Type",
-      value: element.type,
-      max: "1",
-      type: { code: "code" },
-    }),
-    narrativeElementByType({
-      attr: "Name",
-      value: element.name,
-      max: "1",
-      type: { code: "string" },
-    }),
-    narrativeElementByType({
-      attr: "Data",
-      value: element.data,
-      max: "*",
-      type: { code: "DataRequirement" },
-    }),
-    narrativeElementByType({
-      attr: "Condition",
-      value: element.condition,
-      max: "1",
-      type: { code: "Expression" },
-    }),
+    narrativeElementByType(["Type", element.type, { code: "code" }, "1"]),
+    narrativeElementByType(["Name", element.name, { code: "string" }, "1"]),
+    narrativeElementByType([
+      "Data",
+      element.data,
+      { code: "DataRequirement" },
+      "*",
+    ]),
+    narrativeElementByType([
+      "Condition",
+      element.condition,
+      { code: "Expression" },
+      "1",
+    ]),
   ];
 
   if (!components.length) {
@@ -1491,12 +1154,7 @@ function narrativeElementUsageContext(
   }
 
   const components: Array<string | undefined> = [
-    narrativeElementByType({
-      attr: "Code",
-      value: element.code,
-      max: "1",
-      type: { code: "Coding" },
-    }),
+    narrativeElementByType(["Code", element.code, { code: "Coding" }, "1"]),
   ];
 
   if (!components.length) {
@@ -1509,12 +1167,12 @@ function narrativeElementUsageContext(
 /**
  * Generate a `Narrative`-compatible XHTML representation as specified by a `NarrativeElement`.
  */
-export function narrativeElementByType({
+export function narrativeElementByType([
   attr,
   value,
-  max,
   type,
-}: NarrativeElement): string | undefined {
+  max,
+]: NarrativeElement): string | undefined {
   if (!value) {
     return undefined;
   }
@@ -1539,10 +1197,10 @@ export function narrativeElementByType({
         }
 
         return `<li><span class="fhir-attr">${attr}: </span><span class="fhir-value">${value
-          .map((x) => encode(x?.toString()))
+          .map((x) => htmlEncode(x?.toString()))
           .join(", ")}</span></li>`;
       }
-      return `<li><span class="fhir-attr">${attr}: </span><span class="fhir-value">${encode(
+      return `<li><span class="fhir-attr">${attr}: </span><span class="fhir-value">${htmlEncode(
         value?.toString()
       )}</span></li>`;
     case "Address":
@@ -2328,978 +1986,236 @@ export function narrative<TResourceType extends FhirResource>(
   }
 }
 
-function narrativeAccount(resource: Account): Narrative {
+function narrativeAccount(r: Account): Narrative {
   return buildNarrative([
-    {
-      attr: "Identifier",
-      value: resource.identifier,
-      max: "*",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Type",
-      value: resource.type,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Name",
-      value: resource.name,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Subject",
-      value: resource.subject,
-      max: "*",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Patient",
-          "http://hl7.org/fhir/StructureDefinition/Device",
-          "http://hl7.org/fhir/StructureDefinition/Practitioner",
-          "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
-          "http://hl7.org/fhir/StructureDefinition/Location",
-          "http://hl7.org/fhir/StructureDefinition/HealthcareService",
-          "http://hl7.org/fhir/StructureDefinition/Organization",
-        ],
-      },
-    },
-    {
-      attr: "Service Period",
-      value: resource.servicePeriod,
-      max: "1",
-      type: { code: "Period" },
-    },
-    {
-      attr: "Coverage",
-      value: resource.coverage,
-      max: "*",
-      type: { code: "BackboneElement" },
-    },
-    {
-      attr: "Owner",
-      value: resource.owner,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Organization"],
-      },
-    },
-    {
-      attr: "Description",
-      value: resource.description,
-      max: "1",
-      type: { code: "string" },
-    },
+    ["Identifier", r.identifier, { code: "Identifier" }, "*"],
+    ["Status", r.status, { code: "code" }, "1"],
+    ["Type", r.type, { code: "CodeableConcept" }, "1"],
+    ["Name", r.name, { code: "string" }, "1"],
+    ["Subject", r.subject, { code: "Reference" }, "*"],
+    ["Service Period", r.servicePeriod, { code: "Period" }, "1"],
+    ["Coverage", r.coverage, { code: "BackboneElement" }, "*"],
+    ["Owner", r.owner, { code: "Reference" }, "1"],
+    ["Description", r.description, { code: "string" }, "1"],
   ]);
 }
 
-function narrativeActivityDefinition(resource: ActivityDefinition): Narrative {
+function narrativeActivityDefinition(r: ActivityDefinition): Narrative {
   return buildNarrative([
-    {
-      attr: "Url",
-      value: resource.url,
-      max: "1",
-      type: { code: "uri" },
-    },
-    {
-      attr: "Identifier",
-      value: resource.identifier,
-      max: "*",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Version",
-      value: resource.version,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Name",
-      value: resource.name,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Title",
-      value: resource.title,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Experimental",
-      value: resource.experimental,
-      max: "1",
-      type: { code: "boolean" },
-    },
-    {
-      attr: "Date",
-      value: resource.date,
-      max: "1",
-      type: { code: "dateTime" },
-    },
-    {
-      attr: "Publisher",
-      value: resource.publisher,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Contact",
-      value: resource.contact,
-      max: "*",
-      type: { code: "ContactDetail" },
-    },
-    {
-      attr: "Description",
-      value: resource.description,
-      max: "1",
-      type: { code: "markdown" },
-    },
-    {
-      attr: "Use Context",
-      value: resource.useContext,
-      max: "*",
-      type: { code: "UsageContext" },
-    },
-    {
-      attr: "Jurisdiction",
-      value: resource.jurisdiction,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Effective Period",
-      value: resource.effectivePeriod,
-      max: "1",
-      type: { code: "Period" },
-    },
-    {
-      attr: "Kind",
-      value: resource.kind,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Code",
-      value: resource.code,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Do Not Perform",
-      value: resource.doNotPerform,
-      max: "1",
-      type: { code: "boolean" },
-    },
+    ["Url", r.url, { code: "uri" }, "1"],
+    ["Identifier", r.identifier, { code: "Identifier" }, "*"],
+    ["Version", r.version, { code: "string" }, "1"],
+    ["Name", r.name, { code: "string" }, "1"],
+    ["Title", r.title, { code: "string" }, "1"],
+    ["Status", r.status, { code: "code" }, "1"],
+    ["Experimental", r.experimental, { code: "boolean" }, "1"],
+    ["Date", r.date, { code: "dateTime" }, "1"],
+    ["Publisher", r.publisher, { code: "string" }, "1"],
+    ["Contact", r.contact, { code: "ContactDetail" }, "*"],
+    ["Description", r.description, { code: "markdown" }, "1"],
+    ["Use Context", r.useContext, { code: "UsageContext" }, "*"],
+    ["Jurisdiction", r.jurisdiction, { code: "CodeableConcept" }, "*"],
+    ["Effective Period", r.effectivePeriod, { code: "Period" }, "1"],
+    ["Kind", r.kind, { code: "code" }, "1"],
+    ["Code", r.code, { code: "CodeableConcept" }, "1"],
+    ["Do Not Perform", r.doNotPerform, { code: "boolean" }, "1"],
   ]);
 }
 
 function narrativeAdministrableProductDefinition(
-  resource: AdministrableProductDefinition
+  r: AdministrableProductDefinition
 ): Narrative {
   return buildNarrative([
-    {
-      attr: "Identifier",
-      value: resource.identifier,
-      max: "*",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Form Of",
-      value: resource.formOf,
-      max: "*",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/MedicinalProductDefinition",
-        ],
-      },
-    },
-    {
-      attr: "Administrable Dose Form",
-      value: resource.administrableDoseForm,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Unit Of Presentation",
-      value: resource.unitOfPresentation,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Produced From",
-      value: resource.producedFrom,
-      max: "*",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/ManufacturedItemDefinition",
-        ],
-      },
-    },
-    {
-      attr: "Ingredient",
-      value: resource.ingredient,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Device",
-      value: resource.device,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/DeviceDefinition",
-        ],
-      },
-    },
-    {
-      attr: "Property",
-      value: resource.property,
-      max: "*",
-      type: { code: "BackboneElement" },
-    },
-    {
-      attr: "Route Of Administration",
-      value: resource.routeOfAdministration,
-      max: "*",
-      type: { code: "BackboneElement" },
-    },
+    ["Identifier", r.identifier, { code: "Identifier" }, "*"],
+    ["Status", r.status, { code: "code" }, "1"],
+    ["Form Of", r.formOf, { code: "Reference" }, "*"],
+    [
+      "Administrable Dose Form",
+      r.administrableDoseForm,
+      { code: "CodeableConcept" },
+      "1",
+    ],
+    [
+      "Unit Of Presentation",
+      r.unitOfPresentation,
+      { code: "CodeableConcept" },
+      "1",
+    ],
+    ["Produced From", r.producedFrom, { code: "Reference" }, "*"],
+    ["Ingredient", r.ingredient, { code: "CodeableConcept" }, "*"],
+    ["Device", r.device, { code: "Reference" }, "1"],
+    ["Property", r.property, { code: "BackboneElement" }, "*"],
+    [
+      "Route Of Administration",
+      r.routeOfAdministration,
+      { code: "BackboneElement" },
+      "*",
+    ],
   ]);
 }
 
-function narrativeAdverseEvent(resource: AdverseEvent): Narrative {
+function narrativeAdverseEvent(r: AdverseEvent): Narrative {
   return buildNarrative([
-    {
-      attr: "Identifier",
-      value: resource.identifier,
-      max: "1",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Actuality",
-      value: resource.actuality,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Category",
-      value: resource.category,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Event",
-      value: resource.event,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Subject",
-      value: resource.subject,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Patient",
-          "http://hl7.org/fhir/StructureDefinition/Group",
-          "http://hl7.org/fhir/StructureDefinition/Practitioner",
-          "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
-        ],
-      },
-    },
-    {
-      attr: "Encounter",
-      value: resource.encounter,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Encounter"],
-      },
-    },
-    {
-      attr: "Date",
-      value: resource.date,
-      max: "1",
-      type: { code: "dateTime" },
-    },
-    {
-      attr: "Detected",
-      value: resource.detected,
-      max: "1",
-      type: { code: "dateTime" },
-    },
-    {
-      attr: "Recorded Date",
-      value: resource.recordedDate,
-      max: "1",
-      type: { code: "dateTime" },
-    },
-    {
-      attr: "Resulting Condition",
-      value: resource.resultingCondition,
-      max: "*",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Condition"],
-      },
-    },
-    {
-      attr: "Location",
-      value: resource.location,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Location"],
-      },
-    },
-    {
-      attr: "Seriousness",
-      value: resource.seriousness,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Severity",
-      value: resource.severity,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Outcome",
-      value: resource.outcome,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Recorder",
-      value: resource.recorder,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Patient",
-          "http://hl7.org/fhir/StructureDefinition/Practitioner",
-          "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
-          "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
-        ],
-      },
-    },
-    {
-      attr: "Contributor",
-      value: resource.contributor,
-      max: "*",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Practitioner",
-          "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
-          "http://hl7.org/fhir/StructureDefinition/Device",
-        ],
-      },
-    },
-    {
-      attr: "Suspect Entity",
-      value: resource.suspectEntity,
-      max: "*",
-      type: { code: "BackboneElement" },
-    },
-    {
-      attr: "Subject Medical History",
-      value: resource.subjectMedicalHistory,
-      max: "*",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Condition",
-          "http://hl7.org/fhir/StructureDefinition/Observation",
-          "http://hl7.org/fhir/StructureDefinition/AllergyIntolerance",
-          "http://hl7.org/fhir/StructureDefinition/FamilyMemberHistory",
-          "http://hl7.org/fhir/StructureDefinition/Immunization",
-          "http://hl7.org/fhir/StructureDefinition/Procedure",
-          "http://hl7.org/fhir/StructureDefinition/Media",
-          "http://hl7.org/fhir/StructureDefinition/DocumentReference",
-        ],
-      },
-    },
-    {
-      attr: "Reference Document",
-      value: resource.referenceDocument,
-      max: "*",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/DocumentReference",
-        ],
-      },
-    },
-    {
-      attr: "Study",
-      value: resource.study,
-      max: "*",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/ResearchStudy",
-        ],
-      },
-    },
+    ["Identifier", r.identifier, { code: "Identifier" }, "1"],
+    ["Actuality", r.actuality, { code: "code" }, "1"],
+    ["Category", r.category, { code: "CodeableConcept" }, "*"],
+    ["Event", r.event, { code: "CodeableConcept" }, "1"],
+    ["Subject", r.subject, { code: "Reference" }, "1"],
+    ["Encounter", r.encounter, { code: "Reference" }, "1"],
+    ["Date", r.date, { code: "dateTime" }, "1"],
+    ["Detected", r.detected, { code: "dateTime" }, "1"],
+    ["Recorded Date", r.recordedDate, { code: "dateTime" }, "1"],
+    ["Resulting Condition", r.resultingCondition, { code: "Reference" }, "*"],
+    ["Location", r.location, { code: "Reference" }, "1"],
+    ["Seriousness", r.seriousness, { code: "CodeableConcept" }, "1"],
+    ["Severity", r.severity, { code: "CodeableConcept" }, "1"],
+    ["Outcome", r.outcome, { code: "CodeableConcept" }, "1"],
+    ["Recorder", r.recorder, { code: "Reference" }, "1"],
+    ["Contributor", r.contributor, { code: "Reference" }, "*"],
+    ["Suspect Entity", r.suspectEntity, { code: "BackboneElement" }, "*"],
+    [
+      "Subject Medical History",
+      r.subjectMedicalHistory,
+      { code: "Reference" },
+      "*",
+    ],
+    ["Reference Document", r.referenceDocument, { code: "Reference" }, "*"],
+    ["Study", r.study, { code: "Reference" }, "*"],
   ]);
 }
 
-function narrativeAllergyIntolerance(resource: AllergyIntolerance): Narrative {
+function narrativeAllergyIntolerance(r: AllergyIntolerance): Narrative {
   return buildNarrative([
-    {
-      attr: "Identifier",
-      value: resource.identifier,
-      max: "*",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Clinical Status",
-      value: resource.clinicalStatus,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Verification Status",
-      value: resource.verificationStatus,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Type",
-      value: resource.type,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Category",
-      value: resource.category,
-      max: "*",
-      type: { code: "code" },
-    },
-    {
-      attr: "Criticality",
-      value: resource.criticality,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Code",
-      value: resource.code,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Patient",
-      value: resource.patient,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Patient"],
-      },
-    },
-    {
-      attr: "Asserter",
-      value: resource.asserter,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Patient",
-          "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
-          "http://hl7.org/fhir/StructureDefinition/Practitioner",
-          "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
-        ],
-      },
-    },
+    ["Identifier", r.identifier, { code: "Identifier" }, "*"],
+    ["Clinical Status", r.clinicalStatus, { code: "CodeableConcept" }, "1"],
+    [
+      "Verification Status",
+      r.verificationStatus,
+      { code: "CodeableConcept" },
+      "1",
+    ],
+    ["Type", r.type, { code: "code" }, "1"],
+    ["Category", r.category, { code: "code" }, "*"],
+    ["Criticality", r.criticality, { code: "code" }, "1"],
+    ["Code", r.code, { code: "CodeableConcept" }, "1"],
+    ["Patient", r.patient, { code: "Reference" }, "1"],
+    ["Asserter", r.asserter, { code: "Reference" }, "1"],
   ]);
 }
 
-function narrativeAppointment(resource: Appointment): Narrative {
+function narrativeAppointment(r: Appointment): Narrative {
   return buildNarrative([
-    {
-      attr: "Identifier",
-      value: resource.identifier,
-      max: "*",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Cancelation Reason",
-      value: resource.cancelationReason,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Service Category",
-      value: resource.serviceCategory,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Service Type",
-      value: resource.serviceType,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Specialty",
-      value: resource.specialty,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Appointment Type",
-      value: resource.appointmentType,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Reason Code",
-      value: resource.reasonCode,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Start",
-      value: resource.start,
-      max: "1",
-      type: { code: "instant" },
-    },
-    {
-      attr: "End",
-      value: resource.end,
-      max: "1",
-      type: { code: "instant" },
-    },
+    ["Identifier", r.identifier, { code: "Identifier" }, "*"],
+    ["Status", r.status, { code: "code" }, "1"],
+    [
+      "Cancelation Reason",
+      r.cancelationReason,
+      { code: "CodeableConcept" },
+      "1",
+    ],
+    ["Service Category", r.serviceCategory, { code: "CodeableConcept" }, "*"],
+    ["Service Type", r.serviceType, { code: "CodeableConcept" }, "*"],
+    ["Specialty", r.specialty, { code: "CodeableConcept" }, "*"],
+    ["Appointment Type", r.appointmentType, { code: "CodeableConcept" }, "1"],
+    ["Reason Code", r.reasonCode, { code: "CodeableConcept" }, "*"],
+    ["Start", r.start, { code: "instant" }, "1"],
+    ["End", r.end, { code: "instant" }, "1"],
   ]);
 }
 
-function narrativeAppointmentResponse(
-  resource: AppointmentResponse
-): Narrative {
+function narrativeAppointmentResponse(r: AppointmentResponse): Narrative {
   return buildNarrative([
-    {
-      attr: "Identifier",
-      value: resource.identifier,
-      max: "*",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Appointment",
-      value: resource.appointment,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Appointment"],
-      },
-    },
-    {
-      attr: "Participant Type",
-      value: resource.participantType,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Actor",
-      value: resource.actor,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Patient",
-          "http://hl7.org/fhir/StructureDefinition/Practitioner",
-          "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
-          "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
-          "http://hl7.org/fhir/StructureDefinition/Device",
-          "http://hl7.org/fhir/StructureDefinition/HealthcareService",
-          "http://hl7.org/fhir/StructureDefinition/Location",
-        ],
-      },
-    },
-    {
-      attr: "Participant Status",
-      value: resource.participantStatus,
-      max: "1",
-      type: { code: "code" },
-    },
+    ["Identifier", r.identifier, { code: "Identifier" }, "*"],
+    ["Appointment", r.appointment, { code: "Reference" }, "1"],
+    ["Participant Type", r.participantType, { code: "CodeableConcept" }, "*"],
+    ["Actor", r.actor, { code: "Reference" }, "1"],
+    ["Participant Status", r.participantStatus, { code: "code" }, "1"],
   ]);
 }
 
-function narrativeAuditEvent(resource: AuditEvent): Narrative {
+function narrativeAuditEvent(r: AuditEvent): Narrative {
   return buildNarrative([
-    {
-      attr: "Type",
-      value: resource.type,
-      max: "1",
-      type: { code: "Coding" },
-    },
-    {
-      attr: "Subtype",
-      value: resource.subtype,
-      max: "*",
-      type: { code: "Coding" },
-    },
-    {
-      attr: "Action",
-      value: resource.action,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Recorded",
-      value: resource.recorded,
-      max: "1",
-      type: { code: "instant" },
-    },
-    {
-      attr: "Outcome",
-      value: resource.outcome,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Outcome Desc",
-      value: resource.outcomeDesc,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Purpose Of Event",
-      value: resource.purposeOfEvent,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
+    ["Type", r.type, { code: "Coding" }, "1"],
+    ["Subtype", r.subtype, { code: "Coding" }, "*"],
+    ["Action", r.action, { code: "code" }, "1"],
+    ["Recorded", r.recorded, { code: "instant" }, "1"],
+    ["Outcome", r.outcome, { code: "code" }, "1"],
+    ["Outcome Desc", r.outcomeDesc, { code: "string" }, "1"],
+    ["Purpose Of Event", r.purposeOfEvent, { code: "CodeableConcept" }, "*"],
   ]);
 }
 
-function narrativeBasic(resource: Basic): Narrative {
+function narrativeBasic(r: Basic): Narrative {
   return buildNarrative([
-    {
-      attr: "Identifier",
-      value: resource.identifier,
-      max: "*",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Code",
-      value: resource.code,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Subject",
-      value: resource.subject,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Resource"],
-      },
-    },
-    {
-      attr: "Created",
-      value: resource.created,
-      max: "1",
-      type: { code: "date" },
-    },
-    {
-      attr: "Author",
-      value: resource.author,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Practitioner",
-          "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
-          "http://hl7.org/fhir/StructureDefinition/Patient",
-          "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
-          "http://hl7.org/fhir/StructureDefinition/Organization",
-        ],
-      },
-    },
+    ["Identifier", r.identifier, { code: "Identifier" }, "*"],
+    ["Code", r.code, { code: "CodeableConcept" }, "1"],
+    ["Subject", r.subject, { code: "Reference" }, "1"],
+    ["Created", r.created, { code: "date" }, "1"],
+    ["Author", r.author, { code: "Reference" }, "1"],
   ]);
 }
 
 function narrativeBiologicallyDerivedProduct(
-  resource: BiologicallyDerivedProduct
+  r: BiologicallyDerivedProduct
 ): Narrative {
   return buildNarrative([
-    {
-      attr: "Identifier",
-      value: resource.identifier,
-      max: "*",
-      type: { code: "Identifier" },
-    },
+    ["Identifier", r.identifier, { code: "Identifier" }, "*"],
   ]);
 }
 
-function narrativeBodyStructure(resource: BodyStructure): Narrative {
+function narrativeBodyStructure(r: BodyStructure): Narrative {
   return buildNarrative([
-    {
-      attr: "Identifier",
-      value: resource.identifier,
-      max: "*",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Active",
-      value: resource.active,
-      max: "1",
-      type: { code: "boolean" },
-    },
-    {
-      attr: "Morphology",
-      value: resource.morphology,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Location",
-      value: resource.location,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Description",
-      value: resource.description,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Patient",
-      value: resource.patient,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Patient"],
-      },
-    },
+    ["Identifier", r.identifier, { code: "Identifier" }, "*"],
+    ["Active", r.active, { code: "boolean" }, "1"],
+    ["Morphology", r.morphology, { code: "CodeableConcept" }, "1"],
+    ["Location", r.location, { code: "CodeableConcept" }, "1"],
+    ["Description", r.description, { code: "string" }, "1"],
+    ["Patient", r.patient, { code: "Reference" }, "1"],
   ]);
 }
 
-function narrativeCapabilityStatement(
-  resource: CapabilityStatement
-): Narrative {
+function narrativeCapabilityStatement(r: CapabilityStatement): Narrative {
   return buildNarrative([
-    {
-      attr: "Url",
-      value: resource.url,
-      max: "1",
-      type: { code: "uri" },
-    },
-    {
-      attr: "Version",
-      value: resource.version,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Name",
-      value: resource.name,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Title",
-      value: resource.title,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Experimental",
-      value: resource.experimental,
-      max: "1",
-      type: { code: "boolean" },
-    },
-    {
-      attr: "Date",
-      value: resource.date,
-      max: "1",
-      type: { code: "dateTime" },
-    },
-    {
-      attr: "Publisher",
-      value: resource.publisher,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Contact",
-      value: resource.contact,
-      max: "*",
-      type: { code: "ContactDetail" },
-    },
-    {
-      attr: "Use Context",
-      value: resource.useContext,
-      max: "*",
-      type: { code: "UsageContext" },
-    },
-    {
-      attr: "Jurisdiction",
-      value: resource.jurisdiction,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Kind",
-      value: resource.kind,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Instantiates",
-      value: resource.instantiates,
-      max: "*",
-      type: {
-        code: "canonical",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/CapabilityStatement",
-        ],
-      },
-    },
-    {
-      attr: "Imports",
-      value: resource.imports,
-      max: "*",
-      type: {
-        code: "canonical",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/CapabilityStatement",
-        ],
-      },
-    },
-    {
-      attr: "Software",
-      value: resource.software,
-      max: "1",
-      type: { code: "BackboneElement" },
-    },
-    {
-      attr: "Implementation",
-      value: resource.implementation,
-      max: "1",
-      type: { code: "BackboneElement" },
-    },
-    {
-      attr: "Fhir Version",
-      value: resource.fhirVersion,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Format",
-      value: resource.format,
-      max: "*",
-      type: { code: "code" },
-    },
-    {
-      attr: "Patch Format",
-      value: resource.patchFormat,
-      max: "*",
-      type: { code: "code" },
-    },
-    {
-      attr: "Implementation Guide",
-      value: resource.implementationGuide,
-      max: "*",
-      type: {
-        code: "canonical",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/ImplementationGuide",
-        ],
-      },
-    },
-    {
-      attr: "Rest",
-      value: resource.rest,
-      max: "*",
-      type: { code: "BackboneElement" },
-    },
-    {
-      attr: "Messaging",
-      value: resource.messaging,
-      max: "*",
-      type: { code: "BackboneElement" },
-    },
-    {
-      attr: "Document",
-      value: resource.document,
-      max: "*",
-      type: { code: "BackboneElement" },
-    },
+    ["Url", r.url, { code: "uri" }, "1"],
+    ["Version", r.version, { code: "string" }, "1"],
+    ["Name", r.name, { code: "string" }, "1"],
+    ["Title", r.title, { code: "string" }, "1"],
+    ["Status", r.status, { code: "code" }, "1"],
+    ["Experimental", r.experimental, { code: "boolean" }, "1"],
+    ["Date", r.date, { code: "dateTime" }, "1"],
+    ["Publisher", r.publisher, { code: "string" }, "1"],
+    ["Contact", r.contact, { code: "ContactDetail" }, "*"],
+    ["Use Context", r.useContext, { code: "UsageContext" }, "*"],
+    ["Jurisdiction", r.jurisdiction, { code: "CodeableConcept" }, "*"],
+    ["Kind", r.kind, { code: "code" }, "1"],
+    ["Instantiates", r.instantiates, { code: "canonical" }, "*"],
+    ["Imports", r.imports, { code: "canonical" }, "*"],
+    ["Software", r.software, { code: "BackboneElement" }, "1"],
+    ["Implementation", r.implementation, { code: "BackboneElement" }, "1"],
+    ["Fhir Version", r.fhirVersion, { code: "code" }, "1"],
+    ["Format", r.format, { code: "code" }, "*"],
+    ["Patch Format", r.patchFormat, { code: "code" }, "*"],
+    ["Implementation Guide", r.implementationGuide, { code: "canonical" }, "*"],
+    ["Rest", r.rest, { code: "BackboneElement" }, "*"],
+    ["Messaging", r.messaging, { code: "BackboneElement" }, "*"],
+    ["Document", r.document, { code: "BackboneElement" }, "*"],
   ]);
 }
 
-function narrativeCarePlan(resource: CarePlan): Narrative {
+function narrativeCarePlan(r: CarePlan): Narrative {
   return buildNarrative([
-    {
-      attr: "Identifier",
-      value: resource.identifier,
-      max: "*",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Instantiates Canonical",
-      value: resource.instantiatesCanonical,
-      max: "*",
-      type: {
-        code: "canonical",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/PlanDefinition",
-          "http://hl7.org/fhir/StructureDefinition/Questionnaire",
-          "http://hl7.org/fhir/StructureDefinition/Measure",
-          "http://hl7.org/fhir/StructureDefinition/ActivityDefinition",
-          "http://hl7.org/fhir/StructureDefinition/OperationDefinition",
-        ],
-      },
-    },
-    {
-      attr: "Instantiates Uri",
-      value: resource.instantiatesUri,
-      max: "*",
-      type: { code: "uri" },
-    },
-    {
-      attr: "Based On",
-      value: resource.basedOn,
-      max: "*",
-      type: {
+    ["Identifier", r.identifier, { code: "Identifier" }, "*"],
+    [
+      "Instantiates Canonical",
+      r.instantiatesCanonical,
+      { code: "canonical" },
+      "*",
+    ],
+    ["Instantiates Uri", r.instantiatesUri, { code: "uri" }, "*"],
+    [
+      "Based On",
+      r.basedOn,
+      {
         extension: [
           {
             url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy",
@@ -3307,14 +2223,13 @@ function narrativeCarePlan(resource: CarePlan): Narrative {
           },
         ],
         code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/CarePlan"],
       },
-    },
-    {
-      attr: "Replaces",
-      value: resource.replaces,
-      max: "*",
-      type: {
+      "*",
+    ],
+    [
+      "Replaces",
+      r.replaces,
+      {
         extension: [
           {
             url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy",
@@ -3322,14 +2237,13 @@ function narrativeCarePlan(resource: CarePlan): Narrative {
           },
         ],
         code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/CarePlan"],
       },
-    },
-    {
-      attr: "Part Of",
-      value: resource.partOf,
-      max: "*",
-      type: {
+      "*",
+    ],
+    [
+      "Part Of",
+      r.partOf,
+      {
         extension: [
           {
             url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy",
@@ -3337,6487 +2251,1379 @@ function narrativeCarePlan(resource: CarePlan): Narrative {
           },
         ],
         code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/CarePlan"],
       },
-    },
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Intent",
-      value: resource.intent,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Category",
-      value: resource.category,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Title",
-      value: resource.title,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Description",
-      value: resource.description,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Subject",
-      value: resource.subject,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Patient",
-          "http://hl7.org/fhir/StructureDefinition/Group",
-        ],
-      },
-    },
-    {
-      attr: "Encounter",
-      value: resource.encounter,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Encounter"],
-      },
-    },
-    {
-      attr: "Period",
-      value: resource.period,
-      max: "1",
-      type: { code: "Period" },
-    },
-    {
-      attr: "Created",
-      value: resource.created,
-      max: "1",
-      type: { code: "dateTime" },
-    },
-    {
-      attr: "Author",
-      value: resource.author,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Patient",
-          "http://hl7.org/fhir/StructureDefinition/Practitioner",
-          "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
-          "http://hl7.org/fhir/StructureDefinition/Device",
-          "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
-          "http://hl7.org/fhir/StructureDefinition/Organization",
-          "http://hl7.org/fhir/StructureDefinition/CareTeam",
-        ],
-      },
-    },
-    {
-      attr: "Addresses",
-      value: resource.addresses,
-      max: "*",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Condition"],
-      },
-    },
+      "*",
+    ],
+    ["Status", r.status, { code: "code" }, "1"],
+    ["Intent", r.intent, { code: "code" }, "1"],
+    ["Category", r.category, { code: "CodeableConcept" }, "*"],
+    ["Title", r.title, { code: "string" }, "1"],
+    ["Description", r.description, { code: "string" }, "1"],
+    ["Subject", r.subject, { code: "Reference" }, "1"],
+    ["Encounter", r.encounter, { code: "Reference" }, "1"],
+    ["Period", r.period, { code: "Period" }, "1"],
+    ["Created", r.created, { code: "dateTime" }, "1"],
+    ["Author", r.author, { code: "Reference" }, "1"],
+    ["Addresses", r.addresses, { code: "Reference" }, "*"],
   ]);
 }
 
-function narrativeCareTeam(resource: CareTeam): Narrative {
+function narrativeCareTeam(r: CareTeam): Narrative {
   return buildNarrative([
-    {
-      attr: "Identifier",
-      value: resource.identifier,
-      max: "*",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Category",
-      value: resource.category,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Name",
-      value: resource.name,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Subject",
-      value: resource.subject,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Patient",
-          "http://hl7.org/fhir/StructureDefinition/Group",
-        ],
-      },
-    },
-    {
-      attr: "Encounter",
-      value: resource.encounter,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Encounter"],
-      },
-    },
-    {
-      attr: "Period",
-      value: resource.period,
-      max: "1",
-      type: { code: "Period" },
-    },
-    {
-      attr: "Managing Organization",
-      value: resource.managingOrganization,
-      max: "*",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Organization"],
-      },
-    },
+    ["Identifier", r.identifier, { code: "Identifier" }, "*"],
+    ["Status", r.status, { code: "code" }, "1"],
+    ["Category", r.category, { code: "CodeableConcept" }, "*"],
+    ["Name", r.name, { code: "string" }, "1"],
+    ["Subject", r.subject, { code: "Reference" }, "1"],
+    ["Encounter", r.encounter, { code: "Reference" }, "1"],
+    ["Period", r.period, { code: "Period" }, "1"],
+    [
+      "Managing Organization",
+      r.managingOrganization,
+      { code: "Reference" },
+      "*",
+    ],
   ]);
 }
 
-function narrativeCatalogEntry(resource: CatalogEntry): Narrative {
+function narrativeCatalogEntry(r: CatalogEntry): Narrative {
   return buildNarrative([
-    {
-      attr: "Identifier",
-      value: resource.identifier,
-      max: "*",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Orderable",
-      value: resource.orderable,
-      max: "1",
-      type: { code: "boolean" },
-    },
-    {
-      attr: "Referenced Item",
-      value: resource.referencedItem,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Medication",
-          "http://hl7.org/fhir/StructureDefinition/Device",
-          "http://hl7.org/fhir/StructureDefinition/Organization",
-          "http://hl7.org/fhir/StructureDefinition/Practitioner",
-          "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
-          "http://hl7.org/fhir/StructureDefinition/HealthcareService",
-          "http://hl7.org/fhir/StructureDefinition/ActivityDefinition",
-          "http://hl7.org/fhir/StructureDefinition/PlanDefinition",
-          "http://hl7.org/fhir/StructureDefinition/SpecimenDefinition",
-          "http://hl7.org/fhir/StructureDefinition/ObservationDefinition",
-          "http://hl7.org/fhir/StructureDefinition/Binary",
-        ],
-      },
-    },
+    ["Identifier", r.identifier, { code: "Identifier" }, "*"],
+    ["Orderable", r.orderable, { code: "boolean" }, "1"],
+    ["Referenced Item", r.referencedItem, { code: "Reference" }, "1"],
   ]);
 }
 
-function narrativeChargeItem(resource: ChargeItem): Narrative {
+function narrativeChargeItem(r: ChargeItem): Narrative {
   return buildNarrative([
-    {
-      attr: "Identifier",
-      value: resource.identifier,
-      max: "*",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Code",
-      value: resource.code,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Subject",
-      value: resource.subject,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Patient",
-          "http://hl7.org/fhir/StructureDefinition/Group",
-        ],
-      },
-    },
-    {
-      attr: "Context",
-      value: resource.context,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Encounter",
-          "http://hl7.org/fhir/StructureDefinition/EpisodeOfCare",
-        ],
-      },
-    },
-    {
-      attr: "Quantity",
-      value: resource.quantity,
-      max: "1",
-      type: { code: "Quantity" },
-    },
-    {
-      attr: "Bodysite",
-      value: resource.bodysite,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Enterer",
-      value: resource.enterer,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Practitioner",
-          "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
-          "http://hl7.org/fhir/StructureDefinition/Organization",
-          "http://hl7.org/fhir/StructureDefinition/Patient",
-          "http://hl7.org/fhir/StructureDefinition/Device",
-          "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
-        ],
-      },
-    },
-    {
-      attr: "Entered Date",
-      value: resource.enteredDate,
-      max: "1",
-      type: { code: "dateTime" },
-    },
-    {
-      attr: "Account",
-      value: resource.account,
-      max: "*",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Account"],
-      },
-    },
+    ["Identifier", r.identifier, { code: "Identifier" }, "*"],
+    ["Status", r.status, { code: "code" }, "1"],
+    ["Code", r.code, { code: "CodeableConcept" }, "1"],
+    ["Subject", r.subject, { code: "Reference" }, "1"],
+    ["Context", r.context, { code: "Reference" }, "1"],
+    ["Quantity", r.quantity, { code: "Quantity" }, "1"],
+    ["Bodysite", r.bodysite, { code: "CodeableConcept" }, "*"],
+    ["Enterer", r.enterer, { code: "Reference" }, "1"],
+    ["Entered Date", r.enteredDate, { code: "dateTime" }, "1"],
+    ["Account", r.account, { code: "Reference" }, "*"],
   ]);
 }
 
-function narrativeChargeItemDefinition(
-  resource: ChargeItemDefinition
-): Narrative {
+function narrativeChargeItemDefinition(r: ChargeItemDefinition): Narrative {
   return buildNarrative([
-    {
-      attr: "Url",
-      value: resource.url,
-      max: "1",
-      type: { code: "uri" },
-    },
-    {
-      attr: "Identifier",
-      value: resource.identifier,
-      max: "*",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Version",
-      value: resource.version,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Title",
-      value: resource.title,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Derived From Uri",
-      value: resource.derivedFromUri,
-      max: "*",
-      type: { code: "uri" },
-    },
-    {
-      attr: "Part Of",
-      value: resource.partOf,
-      max: "*",
-      type: {
-        code: "canonical",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/ChargeItemDefinition",
-        ],
-      },
-    },
-    {
-      attr: "Replaces",
-      value: resource.replaces,
-      max: "*",
-      type: {
-        code: "canonical",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/ChargeItemDefinition",
-        ],
-      },
-    },
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Experimental",
-      value: resource.experimental,
-      max: "1",
-      type: { code: "boolean" },
-    },
-    {
-      attr: "Date",
-      value: resource.date,
-      max: "1",
-      type: { code: "dateTime" },
-    },
-    {
-      attr: "Publisher",
-      value: resource.publisher,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Contact",
-      value: resource.contact,
-      max: "*",
-      type: { code: "ContactDetail" },
-    },
-    {
-      attr: "Description",
-      value: resource.description,
-      max: "1",
-      type: { code: "markdown" },
-    },
-    {
-      attr: "Use Context",
-      value: resource.useContext,
-      max: "*",
-      type: { code: "UsageContext" },
-    },
-    {
-      attr: "Jurisdiction",
-      value: resource.jurisdiction,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Effective Period",
-      value: resource.effectivePeriod,
-      max: "1",
-      type: { code: "Period" },
-    },
-    {
-      attr: "Code",
-      value: resource.code,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
+    ["Url", r.url, { code: "uri" }, "1"],
+    ["Identifier", r.identifier, { code: "Identifier" }, "*"],
+    ["Version", r.version, { code: "string" }, "1"],
+    ["Title", r.title, { code: "string" }, "1"],
+    ["Derived From Uri", r.derivedFromUri, { code: "uri" }, "*"],
+    ["Part Of", r.partOf, { code: "canonical" }, "*"],
+    ["Replaces", r.replaces, { code: "canonical" }, "*"],
+    ["Status", r.status, { code: "code" }, "1"],
+    ["Experimental", r.experimental, { code: "boolean" }, "1"],
+    ["Date", r.date, { code: "dateTime" }, "1"],
+    ["Publisher", r.publisher, { code: "string" }, "1"],
+    ["Contact", r.contact, { code: "ContactDetail" }, "*"],
+    ["Description", r.description, { code: "markdown" }, "1"],
+    ["Use Context", r.useContext, { code: "UsageContext" }, "*"],
+    ["Jurisdiction", r.jurisdiction, { code: "CodeableConcept" }, "*"],
+    ["Effective Period", r.effectivePeriod, { code: "Period" }, "1"],
+    ["Code", r.code, { code: "CodeableConcept" }, "1"],
   ]);
 }
 
-function narrativeCitation(resource: Citation): Narrative {
+function narrativeCitation(r: Citation): Narrative {
   return buildNarrative([
-    {
-      attr: "Url",
-      value: resource.url,
-      max: "1",
-      type: { code: "uri" },
-    },
-    {
-      attr: "Identifier",
-      value: resource.identifier,
-      max: "*",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Version",
-      value: resource.version,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Name",
-      value: resource.name,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Title",
-      value: resource.title,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Experimental",
-      value: resource.experimental,
-      max: "1",
-      type: { code: "boolean" },
-    },
-    {
-      attr: "Date",
-      value: resource.date,
-      max: "1",
-      type: { code: "dateTime" },
-    },
-    {
-      attr: "Publisher",
-      value: resource.publisher,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Contact",
-      value: resource.contact,
-      max: "*",
-      type: { code: "ContactDetail" },
-    },
-    {
-      attr: "Use Context",
-      value: resource.useContext,
-      max: "*",
-      type: { code: "UsageContext" },
-    },
-    {
-      attr: "Jurisdiction",
-      value: resource.jurisdiction,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Effective Period",
-      value: resource.effectivePeriod,
-      max: "1",
-      type: { code: "Period" },
-    },
+    ["Url", r.url, { code: "uri" }, "1"],
+    ["Identifier", r.identifier, { code: "Identifier" }, "*"],
+    ["Version", r.version, { code: "string" }, "1"],
+    ["Name", r.name, { code: "string" }, "1"],
+    ["Title", r.title, { code: "string" }, "1"],
+    ["Status", r.status, { code: "code" }, "1"],
+    ["Experimental", r.experimental, { code: "boolean" }, "1"],
+    ["Date", r.date, { code: "dateTime" }, "1"],
+    ["Publisher", r.publisher, { code: "string" }, "1"],
+    ["Contact", r.contact, { code: "ContactDetail" }, "*"],
+    ["Use Context", r.useContext, { code: "UsageContext" }, "*"],
+    ["Jurisdiction", r.jurisdiction, { code: "CodeableConcept" }, "*"],
+    ["Effective Period", r.effectivePeriod, { code: "Period" }, "1"],
   ]);
 }
 
-function narrativeClaim(resource: Claim): Narrative {
+function narrativeClaim(r: Claim): Narrative {
   return buildNarrative([
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Type",
-      value: resource.type,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Use",
-      value: resource.use,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Patient",
-      value: resource.patient,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Patient"],
-      },
-    },
-    {
-      attr: "Billable Period",
-      value: resource.billablePeriod,
-      max: "1",
-      type: { code: "Period" },
-    },
-    {
-      attr: "Created",
-      value: resource.created,
-      max: "1",
-      type: { code: "dateTime" },
-    },
-    {
-      attr: "Insurer",
-      value: resource.insurer,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Organization"],
-      },
-    },
-    {
-      attr: "Provider",
-      value: resource.provider,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Practitioner",
-          "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
-          "http://hl7.org/fhir/StructureDefinition/Organization",
-        ],
-      },
-    },
-    {
-      attr: "Priority",
-      value: resource.priority,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Insurance",
-      value: resource.insurance,
-      max: "*",
-      type: { code: "BackboneElement" },
-    },
+    ["Status", r.status, { code: "code" }, "1"],
+    ["Type", r.type, { code: "CodeableConcept" }, "1"],
+    ["Use", r.use, { code: "code" }, "1"],
+    ["Patient", r.patient, { code: "Reference" }, "1"],
+    ["Billable Period", r.billablePeriod, { code: "Period" }, "1"],
+    ["Created", r.created, { code: "dateTime" }, "1"],
+    ["Insurer", r.insurer, { code: "Reference" }, "1"],
+    ["Provider", r.provider, { code: "Reference" }, "1"],
+    ["Priority", r.priority, { code: "CodeableConcept" }, "1"],
+    ["Insurance", r.insurance, { code: "BackboneElement" }, "*"],
   ]);
 }
 
-function narrativeClaimResponse(resource: ClaimResponse): Narrative {
+function narrativeClaimResponse(r: ClaimResponse): Narrative {
   return buildNarrative([
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Type",
-      value: resource.type,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Use",
-      value: resource.use,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Patient",
-      value: resource.patient,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Patient"],
-      },
-    },
-    {
-      attr: "Created",
-      value: resource.created,
-      max: "1",
-      type: { code: "dateTime" },
-    },
-    {
-      attr: "Insurer",
-      value: resource.insurer,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Organization"],
-      },
-    },
-    {
-      attr: "Request",
-      value: resource.request,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Claim"],
-      },
-    },
-    {
-      attr: "Outcome",
-      value: resource.outcome,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Total",
-      value: resource.total,
-      max: "*",
-      type: { code: "BackboneElement" },
-    },
+    ["Status", r.status, { code: "code" }, "1"],
+    ["Type", r.type, { code: "CodeableConcept" }, "1"],
+    ["Use", r.use, { code: "code" }, "1"],
+    ["Patient", r.patient, { code: "Reference" }, "1"],
+    ["Created", r.created, { code: "dateTime" }, "1"],
+    ["Insurer", r.insurer, { code: "Reference" }, "1"],
+    ["Request", r.request, { code: "Reference" }, "1"],
+    ["Outcome", r.outcome, { code: "code" }, "1"],
+    ["Total", r.total, { code: "BackboneElement" }, "*"],
   ]);
 }
 
-function narrativeClinicalImpression(resource: ClinicalImpression): Narrative {
+function narrativeClinicalImpression(r: ClinicalImpression): Narrative {
   return buildNarrative([
-    {
-      attr: "Identifier",
-      value: resource.identifier,
-      max: "*",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Code",
-      value: resource.code,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Description",
-      value: resource.description,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Subject",
-      value: resource.subject,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Patient",
-          "http://hl7.org/fhir/StructureDefinition/Group",
-        ],
-      },
-    },
-    {
-      attr: "Encounter",
-      value: resource.encounter,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Encounter"],
-      },
-    },
-    {
-      attr: "Date",
-      value: resource.date,
-      max: "1",
-      type: { code: "dateTime" },
-    },
-    {
-      attr: "Assessor",
-      value: resource.assessor,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Practitioner",
-          "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
-        ],
-      },
-    },
-    {
-      attr: "Problem",
-      value: resource.problem,
-      max: "*",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Condition",
-          "http://hl7.org/fhir/StructureDefinition/AllergyIntolerance",
-        ],
-      },
-    },
+    ["Identifier", r.identifier, { code: "Identifier" }, "*"],
+    ["Status", r.status, { code: "code" }, "1"],
+    ["Code", r.code, { code: "CodeableConcept" }, "1"],
+    ["Description", r.description, { code: "string" }, "1"],
+    ["Subject", r.subject, { code: "Reference" }, "1"],
+    ["Encounter", r.encounter, { code: "Reference" }, "1"],
+    ["Date", r.date, { code: "dateTime" }, "1"],
+    ["Assessor", r.assessor, { code: "Reference" }, "1"],
+    ["Problem", r.problem, { code: "Reference" }, "*"],
   ]);
 }
 
-function narrativeClinicalUseDefinition(
-  resource: ClinicalUseDefinition
-): Narrative {
+function narrativeClinicalUseDefinition(r: ClinicalUseDefinition): Narrative {
   return buildNarrative([
-    {
-      attr: "Identifier",
-      value: resource.identifier,
-      max: "*",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Type",
-      value: resource.type,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Category",
-      value: resource.category,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Subject",
-      value: resource.subject,
-      max: "*",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/MedicinalProductDefinition",
-          "http://hl7.org/fhir/StructureDefinition/Medication",
-          "http://hl7.org/fhir/StructureDefinition/ActivityDefinition",
-          "http://hl7.org/fhir/StructureDefinition/PlanDefinition",
-          "http://hl7.org/fhir/StructureDefinition/Device",
-          "http://hl7.org/fhir/StructureDefinition/DeviceDefinition",
-          "http://hl7.org/fhir/StructureDefinition/Substance",
-        ],
-      },
-    },
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Contraindication",
-      value: resource.contraindication,
-      max: "1",
-      type: { code: "BackboneElement" },
-    },
-    {
-      attr: "Indication",
-      value: resource.indication,
-      max: "1",
-      type: { code: "BackboneElement" },
-    },
-    {
-      attr: "Interaction",
-      value: resource.interaction,
-      max: "1",
-      type: { code: "BackboneElement" },
-    },
-    {
-      attr: "Population",
-      value: resource.population,
-      max: "*",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Group"],
-      },
-    },
-    {
-      attr: "Undesirable Effect",
-      value: resource.undesirableEffect,
-      max: "1",
-      type: { code: "BackboneElement" },
-    },
-    {
-      attr: "Warning",
-      value: resource.warning,
-      max: "1",
-      type: { code: "BackboneElement" },
-    },
+    ["Identifier", r.identifier, { code: "Identifier" }, "*"],
+    ["Type", r.type, { code: "code" }, "1"],
+    ["Category", r.category, { code: "CodeableConcept" }, "*"],
+    ["Subject", r.subject, { code: "Reference" }, "*"],
+    ["Status", r.status, { code: "CodeableConcept" }, "1"],
+    ["Contraindication", r.contraindication, { code: "BackboneElement" }, "1"],
+    ["Indication", r.indication, { code: "BackboneElement" }, "1"],
+    ["Interaction", r.interaction, { code: "BackboneElement" }, "1"],
+    ["Population", r.population, { code: "Reference" }, "*"],
+    [
+      "Undesirable Effect",
+      r.undesirableEffect,
+      { code: "BackboneElement" },
+      "1",
+    ],
+    ["Warning", r.warning, { code: "BackboneElement" }, "1"],
   ]);
 }
 
-function narrativeCodeSystem(resource: CodeSystem): Narrative {
+function narrativeCodeSystem(r: CodeSystem): Narrative {
   return buildNarrative([
-    {
-      attr: "Url",
-      value: resource.url,
-      max: "1",
-      type: { code: "uri" },
-    },
-    {
-      attr: "Identifier",
-      value: resource.identifier,
-      max: "*",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Version",
-      value: resource.version,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Name",
-      value: resource.name,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Title",
-      value: resource.title,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Experimental",
-      value: resource.experimental,
-      max: "1",
-      type: { code: "boolean" },
-    },
-    {
-      attr: "Date",
-      value: resource.date,
-      max: "1",
-      type: { code: "dateTime" },
-    },
-    {
-      attr: "Publisher",
-      value: resource.publisher,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Contact",
-      value: resource.contact,
-      max: "*",
-      type: { code: "ContactDetail" },
-    },
-    {
-      attr: "Use Context",
-      value: resource.useContext,
-      max: "*",
-      type: { code: "UsageContext" },
-    },
-    {
-      attr: "Jurisdiction",
-      value: resource.jurisdiction,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Case Sensitive",
-      value: resource.caseSensitive,
-      max: "1",
-      type: { code: "boolean" },
-    },
-    {
-      attr: "Value Set",
-      value: resource.valueSet,
-      max: "1",
-      type: {
-        code: "canonical",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/ValueSet"],
-      },
-    },
-    {
-      attr: "Hierarchy Meaning",
-      value: resource.hierarchyMeaning,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Compositional",
-      value: resource.compositional,
-      max: "1",
-      type: { code: "boolean" },
-    },
-    {
-      attr: "Version Needed",
-      value: resource.versionNeeded,
-      max: "1",
-      type: { code: "boolean" },
-    },
-    {
-      attr: "Content",
-      value: resource.content,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Supplements",
-      value: resource.supplements,
-      max: "1",
-      type: {
-        code: "canonical",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/CodeSystem"],
-      },
-    },
-    {
-      attr: "Count",
-      value: resource.count,
-      max: "1",
-      type: { code: "unsignedInt" },
-    },
-    {
-      attr: "Filter",
-      value: resource.filter,
-      max: "*",
-      type: { code: "BackboneElement" },
-    },
-    {
-      attr: "Property",
-      value: resource.property,
-      max: "*",
-      type: { code: "BackboneElement" },
-    },
+    ["Url", r.url, { code: "uri" }, "1"],
+    ["Identifier", r.identifier, { code: "Identifier" }, "*"],
+    ["Version", r.version, { code: "string" }, "1"],
+    ["Name", r.name, { code: "string" }, "1"],
+    ["Title", r.title, { code: "string" }, "1"],
+    ["Status", r.status, { code: "code" }, "1"],
+    ["Experimental", r.experimental, { code: "boolean" }, "1"],
+    ["Date", r.date, { code: "dateTime" }, "1"],
+    ["Publisher", r.publisher, { code: "string" }, "1"],
+    ["Contact", r.contact, { code: "ContactDetail" }, "*"],
+    ["Use Context", r.useContext, { code: "UsageContext" }, "*"],
+    ["Jurisdiction", r.jurisdiction, { code: "CodeableConcept" }, "*"],
+    ["Case Sensitive", r.caseSensitive, { code: "boolean" }, "1"],
+    ["Value Set", r.valueSet, { code: "canonical" }, "1"],
+    ["Hierarchy Meaning", r.hierarchyMeaning, { code: "code" }, "1"],
+    ["Compositional", r.compositional, { code: "boolean" }, "1"],
+    ["Version Needed", r.versionNeeded, { code: "boolean" }, "1"],
+    ["Content", r.content, { code: "code" }, "1"],
+    ["Supplements", r.supplements, { code: "canonical" }, "1"],
+    ["Count", r.count, { code: "unsignedInt" }, "1"],
+    ["Filter", r.filter, { code: "BackboneElement" }, "*"],
+    ["Property", r.property, { code: "BackboneElement" }, "*"],
   ]);
 }
 
-function narrativeCommunication(resource: Communication): Narrative {
+function narrativeCommunication(r: Communication): Narrative {
   return buildNarrative([
-    {
-      attr: "Identifier",
-      value: resource.identifier,
-      max: "*",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Instantiates Canonical",
-      value: resource.instantiatesCanonical,
-      max: "*",
-      type: {
-        code: "canonical",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/PlanDefinition",
-          "http://hl7.org/fhir/StructureDefinition/ActivityDefinition",
-          "http://hl7.org/fhir/StructureDefinition/Measure",
-          "http://hl7.org/fhir/StructureDefinition/OperationDefinition",
-          "http://hl7.org/fhir/StructureDefinition/Questionnaire",
-        ],
-      },
-    },
-    {
-      attr: "Instantiates Uri",
-      value: resource.instantiatesUri,
-      max: "*",
-      type: { code: "uri" },
-    },
-    {
-      attr: "Based On",
-      value: resource.basedOn,
-      max: "*",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Resource"],
-      },
-    },
-    {
-      attr: "Part Of",
-      value: resource.partOf,
-      max: "*",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Resource"],
-      },
-    },
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Status Reason",
-      value: resource.statusReason,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Priority",
-      value: resource.priority,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Subject",
-      value: resource.subject,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Patient",
-          "http://hl7.org/fhir/StructureDefinition/Group",
-        ],
-      },
-    },
-    {
-      attr: "Encounter",
-      value: resource.encounter,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Encounter"],
-      },
-    },
-    {
-      attr: "Reason Code",
-      value: resource.reasonCode,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Reason Reference",
-      value: resource.reasonReference,
-      max: "*",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Condition",
-          "http://hl7.org/fhir/StructureDefinition/Observation",
-          "http://hl7.org/fhir/StructureDefinition/DiagnosticReport",
-          "http://hl7.org/fhir/StructureDefinition/DocumentReference",
-        ],
-      },
-    },
+    ["Identifier", r.identifier, { code: "Identifier" }, "*"],
+    [
+      "Instantiates Canonical",
+      r.instantiatesCanonical,
+      { code: "canonical" },
+      "*",
+    ],
+    ["Instantiates Uri", r.instantiatesUri, { code: "uri" }, "*"],
+    ["Based On", r.basedOn, { code: "Reference" }, "*"],
+    ["Part Of", r.partOf, { code: "Reference" }, "*"],
+    ["Status", r.status, { code: "code" }, "1"],
+    ["Status Reason", r.statusReason, { code: "CodeableConcept" }, "1"],
+    ["Priority", r.priority, { code: "code" }, "1"],
+    ["Subject", r.subject, { code: "Reference" }, "1"],
+    ["Encounter", r.encounter, { code: "Reference" }, "1"],
+    ["Reason Code", r.reasonCode, { code: "CodeableConcept" }, "*"],
+    ["Reason Reference", r.reasonReference, { code: "Reference" }, "*"],
   ]);
 }
 
-function narrativeCommunicationRequest(
-  resource: CommunicationRequest
-): Narrative {
+function narrativeCommunicationRequest(r: CommunicationRequest): Narrative {
   return buildNarrative([
-    {
-      attr: "Identifier",
-      value: resource.identifier,
-      max: "*",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Based On",
-      value: resource.basedOn,
-      max: "*",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Resource"],
-      },
-    },
-    {
-      attr: "Replaces",
-      value: resource.replaces,
-      max: "*",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/CommunicationRequest",
-        ],
-      },
-    },
-    {
-      attr: "Group Identifier",
-      value: resource.groupIdentifier,
-      max: "1",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Priority",
-      value: resource.priority,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Do Not Perform",
-      value: resource.doNotPerform,
-      max: "1",
-      type: { code: "boolean" },
-    },
-    {
-      attr: "Encounter",
-      value: resource.encounter,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Encounter"],
-      },
-    },
-    {
-      attr: "Authored On",
-      value: resource.authoredOn,
-      max: "1",
-      type: { code: "dateTime" },
-    },
-    {
-      attr: "Requester",
-      value: resource.requester,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Practitioner",
-          "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
-          "http://hl7.org/fhir/StructureDefinition/Organization",
-          "http://hl7.org/fhir/StructureDefinition/Patient",
-          "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
-          "http://hl7.org/fhir/StructureDefinition/Device",
-        ],
-      },
-    },
-    {
-      attr: "Sender",
-      value: resource.sender,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Device",
-          "http://hl7.org/fhir/StructureDefinition/Organization",
-          "http://hl7.org/fhir/StructureDefinition/Patient",
-          "http://hl7.org/fhir/StructureDefinition/Practitioner",
-          "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
-          "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
-          "http://hl7.org/fhir/StructureDefinition/HealthcareService",
-        ],
-      },
-    },
-    {
-      attr: "Reason Code",
-      value: resource.reasonCode,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Reason Reference",
-      value: resource.reasonReference,
-      max: "*",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Condition",
-          "http://hl7.org/fhir/StructureDefinition/Observation",
-          "http://hl7.org/fhir/StructureDefinition/DiagnosticReport",
-          "http://hl7.org/fhir/StructureDefinition/DocumentReference",
-        ],
-      },
-    },
+    ["Identifier", r.identifier, { code: "Identifier" }, "*"],
+    ["Based On", r.basedOn, { code: "Reference" }, "*"],
+    ["Replaces", r.replaces, { code: "Reference" }, "*"],
+    ["Group Identifier", r.groupIdentifier, { code: "Identifier" }, "1"],
+    ["Status", r.status, { code: "code" }, "1"],
+    ["Priority", r.priority, { code: "code" }, "1"],
+    ["Do Not Perform", r.doNotPerform, { code: "boolean" }, "1"],
+    ["Encounter", r.encounter, { code: "Reference" }, "1"],
+    ["Authored On", r.authoredOn, { code: "dateTime" }, "1"],
+    ["Requester", r.requester, { code: "Reference" }, "1"],
+    ["Sender", r.sender, { code: "Reference" }, "1"],
+    ["Reason Code", r.reasonCode, { code: "CodeableConcept" }, "*"],
+    ["Reason Reference", r.reasonReference, { code: "Reference" }, "*"],
   ]);
 }
 
-function narrativeCompartmentDefinition(
-  resource: CompartmentDefinition
-): Narrative {
+function narrativeCompartmentDefinition(r: CompartmentDefinition): Narrative {
   return buildNarrative([
-    {
-      attr: "Url",
-      value: resource.url,
-      max: "1",
-      type: { code: "uri" },
-    },
-    {
-      attr: "Version",
-      value: resource.version,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Name",
-      value: resource.name,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Experimental",
-      value: resource.experimental,
-      max: "1",
-      type: { code: "boolean" },
-    },
-    {
-      attr: "Date",
-      value: resource.date,
-      max: "1",
-      type: { code: "dateTime" },
-    },
-    {
-      attr: "Publisher",
-      value: resource.publisher,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Contact",
-      value: resource.contact,
-      max: "*",
-      type: { code: "ContactDetail" },
-    },
-    {
-      attr: "Use Context",
-      value: resource.useContext,
-      max: "*",
-      type: { code: "UsageContext" },
-    },
-    {
-      attr: "Code",
-      value: resource.code,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Search",
-      value: resource.search,
-      max: "1",
-      type: { code: "boolean" },
-    },
-    {
-      attr: "Resource",
-      value: resource.resource,
-      max: "*",
-      type: { code: "BackboneElement" },
-    },
+    ["Url", r.url, { code: "uri" }, "1"],
+    ["Version", r.version, { code: "string" }, "1"],
+    ["Name", r.name, { code: "string" }, "1"],
+    ["Status", r.status, { code: "code" }, "1"],
+    ["Experimental", r.experimental, { code: "boolean" }, "1"],
+    ["Date", r.date, { code: "dateTime" }, "1"],
+    ["Publisher", r.publisher, { code: "string" }, "1"],
+    ["Contact", r.contact, { code: "ContactDetail" }, "*"],
+    ["Use Context", r.useContext, { code: "UsageContext" }, "*"],
+    ["Code", r.code, { code: "code" }, "1"],
+    ["Search", r.search, { code: "boolean" }, "1"],
+    ["Resource", r.resource, { code: "BackboneElement" }, "*"],
   ]);
 }
 
-function narrativeComposition(resource: Composition): Narrative {
+function narrativeComposition(r: Composition): Narrative {
   return buildNarrative([
-    {
-      attr: "Identifier",
-      value: resource.identifier,
-      max: "1",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Type",
-      value: resource.type,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Category",
-      value: resource.category,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Subject",
-      value: resource.subject,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Resource"],
-      },
-    },
-    {
-      attr: "Encounter",
-      value: resource.encounter,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Encounter"],
-      },
-    },
-    {
-      attr: "Date",
-      value: resource.date,
-      max: "1",
-      type: { code: "dateTime" },
-    },
-    {
-      attr: "Author",
-      value: resource.author,
-      max: "*",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Practitioner",
-          "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
-          "http://hl7.org/fhir/StructureDefinition/Device",
-          "http://hl7.org/fhir/StructureDefinition/Patient",
-          "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
-          "http://hl7.org/fhir/StructureDefinition/Organization",
-        ],
-      },
-    },
-    {
-      attr: "Title",
-      value: resource.title,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Confidentiality",
-      value: resource.confidentiality,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Custodian",
-      value: resource.custodian,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Organization"],
-      },
-    },
-    {
-      attr: "Event",
-      value: resource.event,
-      max: "*",
-      type: { code: "BackboneElement" },
-    },
+    ["Identifier", r.identifier, { code: "Identifier" }, "1"],
+    ["Status", r.status, { code: "code" }, "1"],
+    ["Type", r.type, { code: "CodeableConcept" }, "1"],
+    ["Category", r.category, { code: "CodeableConcept" }, "*"],
+    ["Subject", r.subject, { code: "Reference" }, "1"],
+    ["Encounter", r.encounter, { code: "Reference" }, "1"],
+    ["Date", r.date, { code: "dateTime" }, "1"],
+    ["Author", r.author, { code: "Reference" }, "*"],
+    ["Title", r.title, { code: "string" }, "1"],
+    ["Confidentiality", r.confidentiality, { code: "code" }, "1"],
+    ["Custodian", r.custodian, { code: "Reference" }, "1"],
+    ["Event", r.event, { code: "BackboneElement" }, "*"],
   ]);
 }
 
-function narrativeConceptMap(resource: ConceptMap): Narrative {
+function narrativeConceptMap(r: ConceptMap): Narrative {
   return buildNarrative([
-    {
-      attr: "Url",
-      value: resource.url,
-      max: "1",
-      type: { code: "uri" },
-    },
-    {
-      attr: "Identifier",
-      value: resource.identifier,
-      max: "1",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Version",
-      value: resource.version,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Name",
-      value: resource.name,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Title",
-      value: resource.title,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Experimental",
-      value: resource.experimental,
-      max: "1",
-      type: { code: "boolean" },
-    },
-    {
-      attr: "Date",
-      value: resource.date,
-      max: "1",
-      type: { code: "dateTime" },
-    },
-    {
-      attr: "Publisher",
-      value: resource.publisher,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Contact",
-      value: resource.contact,
-      max: "*",
-      type: { code: "ContactDetail" },
-    },
-    {
-      attr: "Use Context",
-      value: resource.useContext,
-      max: "*",
-      type: { code: "UsageContext" },
-    },
-    {
-      attr: "Jurisdiction",
-      value: resource.jurisdiction,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
+    ["Url", r.url, { code: "uri" }, "1"],
+    ["Identifier", r.identifier, { code: "Identifier" }, "1"],
+    ["Version", r.version, { code: "string" }, "1"],
+    ["Name", r.name, { code: "string" }, "1"],
+    ["Title", r.title, { code: "string" }, "1"],
+    ["Status", r.status, { code: "code" }, "1"],
+    ["Experimental", r.experimental, { code: "boolean" }, "1"],
+    ["Date", r.date, { code: "dateTime" }, "1"],
+    ["Publisher", r.publisher, { code: "string" }, "1"],
+    ["Contact", r.contact, { code: "ContactDetail" }, "*"],
+    ["Use Context", r.useContext, { code: "UsageContext" }, "*"],
+    ["Jurisdiction", r.jurisdiction, { code: "CodeableConcept" }, "*"],
   ]);
 }
 
-function narrativeCondition(resource: Condition): Narrative {
+function narrativeCondition(r: Condition): Narrative {
   return buildNarrative([
-    {
-      attr: "Identifier",
-      value: resource.identifier,
-      max: "*",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Clinical Status",
-      value: resource.clinicalStatus,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Verification Status",
-      value: resource.verificationStatus,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Code",
-      value: resource.code,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Body Site",
-      value: resource.bodySite,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Subject",
-      value: resource.subject,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Patient",
-          "http://hl7.org/fhir/StructureDefinition/Group",
-        ],
-      },
-    },
-    {
-      attr: "Encounter",
-      value: resource.encounter,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Encounter"],
-      },
-    },
-    {
-      attr: "Recorded Date",
-      value: resource.recordedDate,
-      max: "1",
-      type: { code: "dateTime" },
-    },
-    {
-      attr: "Recorder",
-      value: resource.recorder,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Practitioner",
-          "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
-          "http://hl7.org/fhir/StructureDefinition/Patient",
-          "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
-        ],
-      },
-    },
-    {
-      attr: "Asserter",
-      value: resource.asserter,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Practitioner",
-          "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
-          "http://hl7.org/fhir/StructureDefinition/Patient",
-          "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
-        ],
-      },
-    },
+    ["Identifier", r.identifier, { code: "Identifier" }, "*"],
+    ["Clinical Status", r.clinicalStatus, { code: "CodeableConcept" }, "1"],
+    [
+      "Verification Status",
+      r.verificationStatus,
+      { code: "CodeableConcept" },
+      "1",
+    ],
+    ["Code", r.code, { code: "CodeableConcept" }, "1"],
+    ["Body Site", r.bodySite, { code: "CodeableConcept" }, "*"],
+    ["Subject", r.subject, { code: "Reference" }, "1"],
+    ["Encounter", r.encounter, { code: "Reference" }, "1"],
+    ["Recorded Date", r.recordedDate, { code: "dateTime" }, "1"],
+    ["Recorder", r.recorder, { code: "Reference" }, "1"],
+    ["Asserter", r.asserter, { code: "Reference" }, "1"],
   ]);
 }
 
-function narrativeConsent(resource: Consent): Narrative {
+function narrativeConsent(r: Consent): Narrative {
   return buildNarrative([
-    {
-      attr: "Identifier",
-      value: resource.identifier,
-      max: "*",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Scope",
-      value: resource.scope,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Category",
-      value: resource.category,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Patient",
-      value: resource.patient,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Patient"],
-      },
-    },
-    {
-      attr: "Date Time",
-      value: resource.dateTime,
-      max: "1",
-      type: { code: "dateTime" },
-    },
-    {
-      attr: "Performer",
-      value: resource.performer,
-      max: "*",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Organization",
-          "http://hl7.org/fhir/StructureDefinition/Patient",
-          "http://hl7.org/fhir/StructureDefinition/Practitioner",
-          "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
-          "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
-        ],
-      },
-    },
-    {
-      attr: "Organization",
-      value: resource.organization,
-      max: "*",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Organization"],
-      },
-    },
-    {
-      attr: "Policy Rule",
-      value: resource.policyRule,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Verification",
-      value: resource.verification,
-      max: "*",
-      type: { code: "BackboneElement" },
-    },
-    {
-      attr: "Provision",
-      value: resource.provision,
-      max: "1",
-      type: { code: "BackboneElement" },
-    },
+    ["Identifier", r.identifier, { code: "Identifier" }, "*"],
+    ["Status", r.status, { code: "code" }, "1"],
+    ["Scope", r.scope, { code: "CodeableConcept" }, "1"],
+    ["Category", r.category, { code: "CodeableConcept" }, "*"],
+    ["Patient", r.patient, { code: "Reference" }, "1"],
+    ["Date Time", r.dateTime, { code: "dateTime" }, "1"],
+    ["Performer", r.performer, { code: "Reference" }, "*"],
+    ["Organization", r.organization, { code: "Reference" }, "*"],
+    ["Policy Rule", r.policyRule, { code: "CodeableConcept" }, "1"],
+    ["Verification", r.verification, { code: "BackboneElement" }, "*"],
+    ["Provision", r.provision, { code: "BackboneElement" }, "1"],
   ]);
 }
 
-function narrativeContract(resource: Contract): Narrative {
+function narrativeContract(r: Contract): Narrative {
   return buildNarrative([
-    {
-      attr: "Identifier",
-      value: resource.identifier,
-      max: "*",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Version",
-      value: resource.version,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Issued",
-      value: resource.issued,
-      max: "1",
-      type: { code: "dateTime" },
-    },
-    {
-      attr: "Applies",
-      value: resource.applies,
-      max: "1",
-      type: { code: "Period" },
-    },
-    {
-      attr: "Subject",
-      value: resource.subject,
-      max: "*",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Resource"],
-      },
-    },
-    {
-      attr: "Name",
-      value: resource.name,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Title",
-      value: resource.title,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Type",
-      value: resource.type,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Sub Type",
-      value: resource.subType,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
+    ["Identifier", r.identifier, { code: "Identifier" }, "*"],
+    ["Version", r.version, { code: "string" }, "1"],
+    ["Status", r.status, { code: "code" }, "1"],
+    ["Issued", r.issued, { code: "dateTime" }, "1"],
+    ["Applies", r.applies, { code: "Period" }, "1"],
+    ["Subject", r.subject, { code: "Reference" }, "*"],
+    ["Name", r.name, { code: "string" }, "1"],
+    ["Title", r.title, { code: "string" }, "1"],
+    ["Type", r.type, { code: "CodeableConcept" }, "1"],
+    ["Sub Type", r.subType, { code: "CodeableConcept" }, "*"],
   ]);
 }
 
-function narrativeCoverage(resource: Coverage): Narrative {
+function narrativeCoverage(r: Coverage): Narrative {
   return buildNarrative([
-    {
-      attr: "Identifier",
-      value: resource.identifier,
-      max: "*",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Type",
-      value: resource.type,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Policy Holder",
-      value: resource.policyHolder,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Patient",
-          "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
-          "http://hl7.org/fhir/StructureDefinition/Organization",
-        ],
-      },
-    },
-    {
-      attr: "Subscriber",
-      value: resource.subscriber,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Patient",
-          "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
-        ],
-      },
-    },
-    {
-      attr: "Subscriber Id",
-      value: resource.subscriberId,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Beneficiary",
-      value: resource.beneficiary,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Patient"],
-      },
-    },
-    {
-      attr: "Dependent",
-      value: resource.dependent,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Period",
-      value: resource.period,
-      max: "1",
-      type: { code: "Period" },
-    },
-    {
-      attr: "Payor",
-      value: resource.payor,
-      max: "*",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Organization",
-          "http://hl7.org/fhir/StructureDefinition/Patient",
-          "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
-        ],
-      },
-    },
-    {
-      attr: "Order",
-      value: resource.order,
-      max: "1",
-      type: { code: "positiveInt" },
-    },
-    {
-      attr: "Network",
-      value: resource.network,
-      max: "1",
-      type: { code: "string" },
-    },
+    ["Identifier", r.identifier, { code: "Identifier" }, "*"],
+    ["Status", r.status, { code: "code" }, "1"],
+    ["Type", r.type, { code: "CodeableConcept" }, "1"],
+    ["Policy Holder", r.policyHolder, { code: "Reference" }, "1"],
+    ["Subscriber", r.subscriber, { code: "Reference" }, "1"],
+    ["Subscriber Id", r.subscriberId, { code: "string" }, "1"],
+    ["Beneficiary", r.beneficiary, { code: "Reference" }, "1"],
+    ["Dependent", r.dependent, { code: "string" }, "1"],
+    ["Period", r.period, { code: "Period" }, "1"],
+    ["Payor", r.payor, { code: "Reference" }, "*"],
+    ["Order", r.order, { code: "positiveInt" }, "1"],
+    ["Network", r.network, { code: "string" }, "1"],
   ]);
 }
 
 function narrativeCoverageEligibilityRequest(
-  resource: CoverageEligibilityRequest
+  r: CoverageEligibilityRequest
 ): Narrative {
   return buildNarrative([
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Purpose",
-      value: resource.purpose,
-      max: "*",
-      type: { code: "code" },
-    },
-    {
-      attr: "Patient",
-      value: resource.patient,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Patient"],
-      },
-    },
-    {
-      attr: "Created",
-      value: resource.created,
-      max: "1",
-      type: { code: "dateTime" },
-    },
-    {
-      attr: "Insurer",
-      value: resource.insurer,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Organization"],
-      },
-    },
+    ["Status", r.status, { code: "code" }, "1"],
+    ["Purpose", r.purpose, { code: "code" }, "*"],
+    ["Patient", r.patient, { code: "Reference" }, "1"],
+    ["Created", r.created, { code: "dateTime" }, "1"],
+    ["Insurer", r.insurer, { code: "Reference" }, "1"],
   ]);
 }
 
 function narrativeCoverageEligibilityResponse(
-  resource: CoverageEligibilityResponse
+  r: CoverageEligibilityResponse
 ): Narrative {
   return buildNarrative([
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Purpose",
-      value: resource.purpose,
-      max: "*",
-      type: { code: "code" },
-    },
-    {
-      attr: "Patient",
-      value: resource.patient,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Patient"],
-      },
-    },
-    {
-      attr: "Created",
-      value: resource.created,
-      max: "1",
-      type: { code: "dateTime" },
-    },
-    {
-      attr: "Request",
-      value: resource.request,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/CoverageEligibilityRequest",
-        ],
-      },
-    },
-    {
-      attr: "Outcome",
-      value: resource.outcome,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Insurer",
-      value: resource.insurer,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Organization"],
-      },
-    },
+    ["Status", r.status, { code: "code" }, "1"],
+    ["Purpose", r.purpose, { code: "code" }, "*"],
+    ["Patient", r.patient, { code: "Reference" }, "1"],
+    ["Created", r.created, { code: "dateTime" }, "1"],
+    ["Request", r.request, { code: "Reference" }, "1"],
+    ["Outcome", r.outcome, { code: "code" }, "1"],
+    ["Insurer", r.insurer, { code: "Reference" }, "1"],
   ]);
 }
 
-function narrativeDetectedIssue(resource: DetectedIssue): Narrative {
+function narrativeDetectedIssue(r: DetectedIssue): Narrative {
   return buildNarrative([
-    {
-      attr: "Identifier",
-      value: resource.identifier,
-      max: "*",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Code",
-      value: resource.code,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Severity",
-      value: resource.severity,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Patient",
-      value: resource.patient,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Patient"],
-      },
-    },
-    {
-      attr: "Author",
-      value: resource.author,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Practitioner",
-          "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
-          "http://hl7.org/fhir/StructureDefinition/Device",
-        ],
-      },
-    },
-    {
-      attr: "Implicated",
-      value: resource.implicated,
-      max: "*",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Resource"],
-      },
-    },
+    ["Identifier", r.identifier, { code: "Identifier" }, "*"],
+    ["Status", r.status, { code: "code" }, "1"],
+    ["Code", r.code, { code: "CodeableConcept" }, "1"],
+    ["Severity", r.severity, { code: "code" }, "1"],
+    ["Patient", r.patient, { code: "Reference" }, "1"],
+    ["Author", r.author, { code: "Reference" }, "1"],
+    ["Implicated", r.implicated, { code: "Reference" }, "*"],
   ]);
 }
 
-function narrativeDevice(resource: Device): Narrative {
+function narrativeDevice(r: Device): Narrative {
   return buildNarrative([
-    {
-      attr: "Udi Carrier",
-      value: resource.udiCarrier,
-      max: "*",
-      type: { code: "BackboneElement" },
-    },
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Safety",
-      value: resource.safety,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
+    ["Udi Carrier", r.udiCarrier, { code: "BackboneElement" }, "*"],
+    ["Status", r.status, { code: "code" }, "1"],
+    ["Safety", r.safety, { code: "CodeableConcept" }, "*"],
   ]);
 }
 
-function narrativeDeviceDefinition(resource: DeviceDefinition): Narrative {
+function narrativeDeviceDefinition(r: DeviceDefinition): Narrative {
   return buildNarrative([
-    {
-      attr: "Safety",
-      value: resource.safety,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Parent Device",
-      value: resource.parentDevice,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/DeviceDefinition",
-        ],
-      },
-    },
+    ["Safety", r.safety, { code: "CodeableConcept" }, "*"],
+    ["Parent Device", r.parentDevice, { code: "Reference" }, "1"],
   ]);
 }
 
-function narrativeDeviceMetric(resource: DeviceMetric): Narrative {
+function narrativeDeviceMetric(r: DeviceMetric): Narrative {
   return buildNarrative([
-    {
-      attr: "Identifier",
-      value: resource.identifier,
-      max: "*",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Type",
-      value: resource.type,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Unit",
-      value: resource.unit,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Source",
-      value: resource.source,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Device"],
-      },
-    },
-    {
-      attr: "Parent",
-      value: resource.parent,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Device"],
-      },
-    },
-    {
-      attr: "Operational Status",
-      value: resource.operationalStatus,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Color",
-      value: resource.color,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Category",
-      value: resource.category,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Measurement Period",
-      value: resource.measurementPeriod,
-      max: "1",
-      type: { code: "Timing" },
-    },
-    {
-      attr: "Calibration",
-      value: resource.calibration,
-      max: "*",
-      type: { code: "BackboneElement" },
-    },
+    ["Identifier", r.identifier, { code: "Identifier" }, "*"],
+    ["Type", r.type, { code: "CodeableConcept" }, "1"],
+    ["Unit", r.unit, { code: "CodeableConcept" }, "1"],
+    ["Source", r.source, { code: "Reference" }, "1"],
+    ["Parent", r.parent, { code: "Reference" }, "1"],
+    ["Operational Status", r.operationalStatus, { code: "code" }, "1"],
+    ["Color", r.color, { code: "code" }, "1"],
+    ["Category", r.category, { code: "code" }, "1"],
+    ["Measurement Period", r.measurementPeriod, { code: "Timing" }, "1"],
+    ["Calibration", r.calibration, { code: "BackboneElement" }, "*"],
   ]);
 }
 
-function narrativeDeviceRequest(resource: DeviceRequest): Narrative {
+function narrativeDeviceRequest(r: DeviceRequest): Narrative {
   return buildNarrative([
-    {
-      attr: "Identifier",
-      value: resource.identifier,
-      max: "*",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Instantiates Canonical",
-      value: resource.instantiatesCanonical,
-      max: "*",
-      type: {
-        code: "canonical",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/ActivityDefinition",
-          "http://hl7.org/fhir/StructureDefinition/PlanDefinition",
-        ],
-      },
-    },
-    {
-      attr: "Instantiates Uri",
-      value: resource.instantiatesUri,
-      max: "*",
-      type: { code: "uri" },
-    },
-    {
-      attr: "Based On",
-      value: resource.basedOn,
-      max: "*",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Resource"],
-      },
-    },
-    {
-      attr: "Prior Request",
-      value: resource.priorRequest,
-      max: "*",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Resource"],
-      },
-    },
-    {
-      attr: "Group Identifier",
-      value: resource.groupIdentifier,
-      max: "1",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Intent",
-      value: resource.intent,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Priority",
-      value: resource.priority,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Subject",
-      value: resource.subject,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Patient",
-          "http://hl7.org/fhir/StructureDefinition/Group",
-          "http://hl7.org/fhir/StructureDefinition/Location",
-          "http://hl7.org/fhir/StructureDefinition/Device",
-        ],
-      },
-    },
-    {
-      attr: "Encounter",
-      value: resource.encounter,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Encounter"],
-      },
-    },
-    {
-      attr: "Authored On",
-      value: resource.authoredOn,
-      max: "1",
-      type: { code: "dateTime" },
-    },
-    {
-      attr: "Requester",
-      value: resource.requester,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Device",
-          "http://hl7.org/fhir/StructureDefinition/Practitioner",
-          "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
-          "http://hl7.org/fhir/StructureDefinition/Organization",
-        ],
-      },
-    },
-    {
-      attr: "Performer Type",
-      value: resource.performerType,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Performer",
-      value: resource.performer,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Practitioner",
-          "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
-          "http://hl7.org/fhir/StructureDefinition/Organization",
-          "http://hl7.org/fhir/StructureDefinition/CareTeam",
-          "http://hl7.org/fhir/StructureDefinition/HealthcareService",
-          "http://hl7.org/fhir/StructureDefinition/Patient",
-          "http://hl7.org/fhir/StructureDefinition/Device",
-          "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
-        ],
-      },
-    },
-    {
-      attr: "Reason Code",
-      value: resource.reasonCode,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Reason Reference",
-      value: resource.reasonReference,
-      max: "*",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Condition",
-          "http://hl7.org/fhir/StructureDefinition/Observation",
-          "http://hl7.org/fhir/StructureDefinition/DiagnosticReport",
-          "http://hl7.org/fhir/StructureDefinition/DocumentReference",
-        ],
-      },
-    },
+    ["Identifier", r.identifier, { code: "Identifier" }, "*"],
+    [
+      "Instantiates Canonical",
+      r.instantiatesCanonical,
+      { code: "canonical" },
+      "*",
+    ],
+    ["Instantiates Uri", r.instantiatesUri, { code: "uri" }, "*"],
+    ["Based On", r.basedOn, { code: "Reference" }, "*"],
+    ["Prior Request", r.priorRequest, { code: "Reference" }, "*"],
+    ["Group Identifier", r.groupIdentifier, { code: "Identifier" }, "1"],
+    ["Status", r.status, { code: "code" }, "1"],
+    ["Intent", r.intent, { code: "code" }, "1"],
+    ["Priority", r.priority, { code: "code" }, "1"],
+    ["Subject", r.subject, { code: "Reference" }, "1"],
+    ["Encounter", r.encounter, { code: "Reference" }, "1"],
+    ["Authored On", r.authoredOn, { code: "dateTime" }, "1"],
+    ["Requester", r.requester, { code: "Reference" }, "1"],
+    ["Performer Type", r.performerType, { code: "CodeableConcept" }, "1"],
+    ["Performer", r.performer, { code: "Reference" }, "1"],
+    ["Reason Code", r.reasonCode, { code: "CodeableConcept" }, "*"],
+    ["Reason Reference", r.reasonReference, { code: "Reference" }, "*"],
   ]);
 }
 
-function narrativeDeviceUseStatement(resource: DeviceUseStatement): Narrative {
+function narrativeDeviceUseStatement(r: DeviceUseStatement): Narrative {
   return buildNarrative([
-    {
-      attr: "Identifier",
-      value: resource.identifier,
-      max: "*",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Based On",
-      value: resource.basedOn,
-      max: "*",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/ServiceRequest",
-        ],
-      },
-    },
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Subject",
-      value: resource.subject,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Patient",
-          "http://hl7.org/fhir/StructureDefinition/Group",
-        ],
-      },
-    },
-    {
-      attr: "Derived From",
-      value: resource.derivedFrom,
-      max: "*",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/ServiceRequest",
-          "http://hl7.org/fhir/StructureDefinition/Procedure",
-          "http://hl7.org/fhir/StructureDefinition/Claim",
-          "http://hl7.org/fhir/StructureDefinition/Observation",
-          "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse",
-          "http://hl7.org/fhir/StructureDefinition/DocumentReference",
-        ],
-      },
-    },
-    {
-      attr: "Recorded On",
-      value: resource.recordedOn,
-      max: "1",
-      type: { code: "dateTime" },
-    },
-    {
-      attr: "Source",
-      value: resource.source,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Patient",
-          "http://hl7.org/fhir/StructureDefinition/Practitioner",
-          "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
-          "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
-        ],
-      },
-    },
-    {
-      attr: "Device",
-      value: resource.device,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Device"],
-      },
-    },
-    {
-      attr: "Reason Code",
-      value: resource.reasonCode,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Reason Reference",
-      value: resource.reasonReference,
-      max: "*",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Condition",
-          "http://hl7.org/fhir/StructureDefinition/Observation",
-          "http://hl7.org/fhir/StructureDefinition/DiagnosticReport",
-          "http://hl7.org/fhir/StructureDefinition/DocumentReference",
-          "http://hl7.org/fhir/StructureDefinition/Media",
-        ],
-      },
-    },
-    {
-      attr: "Body Site",
-      value: resource.bodySite,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
+    ["Identifier", r.identifier, { code: "Identifier" }, "*"],
+    ["Based On", r.basedOn, { code: "Reference" }, "*"],
+    ["Status", r.status, { code: "code" }, "1"],
+    ["Subject", r.subject, { code: "Reference" }, "1"],
+    ["Derived From", r.derivedFrom, { code: "Reference" }, "*"],
+    ["Recorded On", r.recordedOn, { code: "dateTime" }, "1"],
+    ["Source", r.source, { code: "Reference" }, "1"],
+    ["Device", r.device, { code: "Reference" }, "1"],
+    ["Reason Code", r.reasonCode, { code: "CodeableConcept" }, "*"],
+    ["Reason Reference", r.reasonReference, { code: "Reference" }, "*"],
+    ["Body Site", r.bodySite, { code: "CodeableConcept" }, "1"],
   ]);
 }
 
-function narrativeDiagnosticReport(resource: DiagnosticReport): Narrative {
+function narrativeDiagnosticReport(r: DiagnosticReport): Narrative {
   return buildNarrative([
-    {
-      attr: "Identifier",
-      value: resource.identifier,
-      max: "*",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Category",
-      value: resource.category,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Code",
-      value: resource.code,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Subject",
-      value: resource.subject,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Patient",
-          "http://hl7.org/fhir/StructureDefinition/Group",
-          "http://hl7.org/fhir/StructureDefinition/Device",
-          "http://hl7.org/fhir/StructureDefinition/Location",
-          "http://hl7.org/fhir/StructureDefinition/Organization",
-          "http://hl7.org/fhir/StructureDefinition/Procedure",
-          "http://hl7.org/fhir/StructureDefinition/Practitioner",
-          "http://hl7.org/fhir/StructureDefinition/Medication",
-          "http://hl7.org/fhir/StructureDefinition/Substance",
-        ],
-      },
-    },
-    {
-      attr: "Encounter",
-      value: resource.encounter,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Encounter"],
-      },
-    },
-    {
-      attr: "Issued",
-      value: resource.issued,
-      max: "1",
-      type: { code: "instant" },
-    },
-    {
-      attr: "Performer",
-      value: resource.performer,
-      max: "*",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Practitioner",
-          "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
-          "http://hl7.org/fhir/StructureDefinition/Organization",
-          "http://hl7.org/fhir/StructureDefinition/CareTeam",
-        ],
-      },
-    },
-    {
-      attr: "Results Interpreter",
-      value: resource.resultsInterpreter,
-      max: "*",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Practitioner",
-          "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
-          "http://hl7.org/fhir/StructureDefinition/Organization",
-          "http://hl7.org/fhir/StructureDefinition/CareTeam",
-        ],
-      },
-    },
-    {
-      attr: "Media",
-      value: resource.media,
-      max: "*",
-      type: { code: "BackboneElement" },
-    },
+    ["Identifier", r.identifier, { code: "Identifier" }, "*"],
+    ["Status", r.status, { code: "code" }, "1"],
+    ["Category", r.category, { code: "CodeableConcept" }, "*"],
+    ["Code", r.code, { code: "CodeableConcept" }, "1"],
+    ["Subject", r.subject, { code: "Reference" }, "1"],
+    ["Encounter", r.encounter, { code: "Reference" }, "1"],
+    ["Issued", r.issued, { code: "instant" }, "1"],
+    ["Performer", r.performer, { code: "Reference" }, "*"],
+    ["Results Interpreter", r.resultsInterpreter, { code: "Reference" }, "*"],
+    ["Media", r.media, { code: "BackboneElement" }, "*"],
   ]);
 }
 
-function narrativeDocumentManifest(resource: DocumentManifest): Narrative {
+function narrativeDocumentManifest(r: DocumentManifest): Narrative {
   return buildNarrative([
-    {
-      attr: "Master Identifier",
-      value: resource.masterIdentifier,
-      max: "1",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Identifier",
-      value: resource.identifier,
-      max: "*",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Type",
-      value: resource.type,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Subject",
-      value: resource.subject,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Patient",
-          "http://hl7.org/fhir/StructureDefinition/Practitioner",
-          "http://hl7.org/fhir/StructureDefinition/Group",
-          "http://hl7.org/fhir/StructureDefinition/Device",
-        ],
-      },
-    },
-    {
-      attr: "Author",
-      value: resource.author,
-      max: "*",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Practitioner",
-          "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
-          "http://hl7.org/fhir/StructureDefinition/Organization",
-          "http://hl7.org/fhir/StructureDefinition/Device",
-          "http://hl7.org/fhir/StructureDefinition/Patient",
-          "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
-        ],
-      },
-    },
-    {
-      attr: "Description",
-      value: resource.description,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Content",
-      value: resource.content,
-      max: "*",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Resource"],
-      },
-    },
+    ["Master Identifier", r.masterIdentifier, { code: "Identifier" }, "1"],
+    ["Identifier", r.identifier, { code: "Identifier" }, "*"],
+    ["Status", r.status, { code: "code" }, "1"],
+    ["Type", r.type, { code: "CodeableConcept" }, "1"],
+    ["Subject", r.subject, { code: "Reference" }, "1"],
+    ["Author", r.author, { code: "Reference" }, "*"],
+    ["Description", r.description, { code: "string" }, "1"],
+    ["Content", r.content, { code: "Reference" }, "*"],
   ]);
 }
 
-function narrativeDocumentReference(resource: DocumentReference): Narrative {
+function narrativeDocumentReference(r: DocumentReference): Narrative {
   return buildNarrative([
-    {
-      attr: "Master Identifier",
-      value: resource.masterIdentifier,
-      max: "1",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Identifier",
-      value: resource.identifier,
-      max: "*",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Doc Status",
-      value: resource.docStatus,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Type",
-      value: resource.type,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Category",
-      value: resource.category,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Subject",
-      value: resource.subject,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Patient",
-          "http://hl7.org/fhir/StructureDefinition/Practitioner",
-          "http://hl7.org/fhir/StructureDefinition/Group",
-          "http://hl7.org/fhir/StructureDefinition/Device",
-        ],
-      },
-    },
-    {
-      attr: "Date",
-      value: resource.date,
-      max: "1",
-      type: { code: "instant" },
-    },
-    {
-      attr: "Author",
-      value: resource.author,
-      max: "*",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Practitioner",
-          "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
-          "http://hl7.org/fhir/StructureDefinition/Organization",
-          "http://hl7.org/fhir/StructureDefinition/Device",
-          "http://hl7.org/fhir/StructureDefinition/Patient",
-          "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
-        ],
-      },
-    },
-    {
-      attr: "Relates To",
-      value: resource.relatesTo,
-      max: "*",
-      type: { code: "BackboneElement" },
-    },
-    {
-      attr: "Description",
-      value: resource.description,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Security Label",
-      value: resource.securityLabel,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Content",
-      value: resource.content,
-      max: "*",
-      type: { code: "BackboneElement" },
-    },
-    {
-      attr: "Context",
-      value: resource.context,
-      max: "1",
-      type: { code: "BackboneElement" },
-    },
+    ["Master Identifier", r.masterIdentifier, { code: "Identifier" }, "1"],
+    ["Identifier", r.identifier, { code: "Identifier" }, "*"],
+    ["Status", r.status, { code: "code" }, "1"],
+    ["Doc Status", r.docStatus, { code: "code" }, "1"],
+    ["Type", r.type, { code: "CodeableConcept" }, "1"],
+    ["Category", r.category, { code: "CodeableConcept" }, "*"],
+    ["Subject", r.subject, { code: "Reference" }, "1"],
+    ["Date", r.date, { code: "instant" }, "1"],
+    ["Author", r.author, { code: "Reference" }, "*"],
+    ["Relates To", r.relatesTo, { code: "BackboneElement" }, "*"],
+    ["Description", r.description, { code: "string" }, "1"],
+    ["Security Label", r.securityLabel, { code: "CodeableConcept" }, "*"],
+    ["Content", r.content, { code: "BackboneElement" }, "*"],
+    ["Context", r.context, { code: "BackboneElement" }, "1"],
   ]);
 }
 
-function narrativeEncounter(resource: Encounter): Narrative {
+function narrativeEncounter(r: Encounter): Narrative {
   return buildNarrative([
-    {
-      attr: "Identifier",
-      value: resource.identifier,
-      max: "*",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Class",
-      value: resource.class,
-      max: "1",
-      type: { code: "Coding" },
-    },
-    {
-      attr: "Type",
-      value: resource.type,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Service Type",
-      value: resource.serviceType,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Subject",
-      value: resource.subject,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Patient",
-          "http://hl7.org/fhir/StructureDefinition/Group",
-        ],
-      },
-    },
-    {
-      attr: "Episode Of Care",
-      value: resource.episodeOfCare,
-      max: "*",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/EpisodeOfCare",
-        ],
-      },
-    },
-    {
-      attr: "Participant",
-      value: resource.participant,
-      max: "*",
-      type: { code: "BackboneElement" },
-    },
-    {
-      attr: "Appointment",
-      value: resource.appointment,
-      max: "*",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Appointment"],
-      },
-    },
-    {
-      attr: "Reason Code",
-      value: resource.reasonCode,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Reason Reference",
-      value: resource.reasonReference,
-      max: "*",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Condition",
-          "http://hl7.org/fhir/StructureDefinition/Procedure",
-          "http://hl7.org/fhir/StructureDefinition/Observation",
-          "http://hl7.org/fhir/StructureDefinition/ImmunizationRecommendation",
-        ],
-      },
-    },
-    {
-      attr: "Diagnosis",
-      value: resource.diagnosis,
-      max: "*",
-      type: { code: "BackboneElement" },
-    },
+    ["Identifier", r.identifier, { code: "Identifier" }, "*"],
+    ["Status", r.status, { code: "code" }, "1"],
+    ["Class", r.class, { code: "Coding" }, "1"],
+    ["Type", r.type, { code: "CodeableConcept" }, "*"],
+    ["Service Type", r.serviceType, { code: "CodeableConcept" }, "1"],
+    ["Subject", r.subject, { code: "Reference" }, "1"],
+    ["Episode Of Care", r.episodeOfCare, { code: "Reference" }, "*"],
+    ["Participant", r.participant, { code: "BackboneElement" }, "*"],
+    ["Appointment", r.appointment, { code: "Reference" }, "*"],
+    ["Reason Code", r.reasonCode, { code: "CodeableConcept" }, "*"],
+    ["Reason Reference", r.reasonReference, { code: "Reference" }, "*"],
+    ["Diagnosis", r.diagnosis, { code: "BackboneElement" }, "*"],
   ]);
 }
 
-function narrativeEndpoint(resource: Endpoint): Narrative {
+function narrativeEndpoint(r: Endpoint): Narrative {
   return buildNarrative([
-    {
-      attr: "Identifier",
-      value: resource.identifier,
-      max: "*",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Connection Type",
-      value: resource.connectionType,
-      max: "1",
-      type: { code: "Coding" },
-    },
-    {
-      attr: "Name",
-      value: resource.name,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Managing Organization",
-      value: resource.managingOrganization,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Organization"],
-      },
-    },
-    {
-      attr: "Period",
-      value: resource.period,
-      max: "1",
-      type: { code: "Period" },
-    },
-    {
-      attr: "Payload Type",
-      value: resource.payloadType,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Payload Mime Type",
-      value: resource.payloadMimeType,
-      max: "*",
-      type: { code: "code" },
-    },
-    {
-      attr: "Address",
-      value: resource.address,
-      max: "1",
-      type: { code: "url" },
-    },
+    ["Identifier", r.identifier, { code: "Identifier" }, "*"],
+    ["Status", r.status, { code: "code" }, "1"],
+    ["Connection Type", r.connectionType, { code: "Coding" }, "1"],
+    ["Name", r.name, { code: "string" }, "1"],
+    [
+      "Managing Organization",
+      r.managingOrganization,
+      { code: "Reference" },
+      "1",
+    ],
+    ["Period", r.period, { code: "Period" }, "1"],
+    ["Payload Type", r.payloadType, { code: "CodeableConcept" }, "*"],
+    ["Payload Mime Type", r.payloadMimeType, { code: "code" }, "*"],
+    ["Address", r.address, { code: "url" }, "1"],
   ]);
 }
 
-function narrativeEnrollmentRequest(resource: EnrollmentRequest): Narrative {
+function narrativeEnrollmentRequest(r: EnrollmentRequest): Narrative {
+  return buildNarrative([["Status", r.status, { code: "code" }, "1"]]);
+}
+
+function narrativeEnrollmentResponse(r: EnrollmentResponse): Narrative {
+  return buildNarrative([["Status", r.status, { code: "code" }, "1"]]);
+}
+
+function narrativeEpisodeOfCare(r: EpisodeOfCare): Narrative {
   return buildNarrative([
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
+    ["Status", r.status, { code: "code" }, "1"],
+    ["Type", r.type, { code: "CodeableConcept" }, "*"],
+    ["Diagnosis", r.diagnosis, { code: "BackboneElement" }, "*"],
+    ["Patient", r.patient, { code: "Reference" }, "1"],
+    [
+      "Managing Organization",
+      r.managingOrganization,
+      { code: "Reference" },
+      "1",
+    ],
+    ["Period", r.period, { code: "Period" }, "1"],
   ]);
 }
 
-function narrativeEnrollmentResponse(resource: EnrollmentResponse): Narrative {
+function narrativeEventDefinition(r: EventDefinition): Narrative {
   return buildNarrative([
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
+    ["Url", r.url, { code: "uri" }, "1"],
+    ["Identifier", r.identifier, { code: "Identifier" }, "*"],
+    ["Version", r.version, { code: "string" }, "1"],
+    ["Name", r.name, { code: "string" }, "1"],
+    ["Title", r.title, { code: "string" }, "1"],
+    ["Status", r.status, { code: "code" }, "1"],
+    ["Experimental", r.experimental, { code: "boolean" }, "1"],
+    ["Date", r.date, { code: "dateTime" }, "1"],
+    ["Publisher", r.publisher, { code: "string" }, "1"],
+    ["Contact", r.contact, { code: "ContactDetail" }, "*"],
+    ["Use Context", r.useContext, { code: "UsageContext" }, "*"],
+    ["Jurisdiction", r.jurisdiction, { code: "CodeableConcept" }, "*"],
+    ["Approval Date", r.approvalDate, { code: "date" }, "1"],
+    ["Last Review Date", r.lastReviewDate, { code: "date" }, "1"],
+    ["Effective Period", r.effectivePeriod, { code: "Period" }, "1"],
+    ["Trigger", r.trigger, { code: "TriggerDefinition" }, "*"],
   ]);
 }
 
-function narrativeEpisodeOfCare(resource: EpisodeOfCare): Narrative {
+function narrativeEvidence(r: Evidence): Narrative {
   return buildNarrative([
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Type",
-      value: resource.type,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Diagnosis",
-      value: resource.diagnosis,
-      max: "*",
-      type: { code: "BackboneElement" },
-    },
-    {
-      attr: "Patient",
-      value: resource.patient,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Patient"],
-      },
-    },
-    {
-      attr: "Managing Organization",
-      value: resource.managingOrganization,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Organization"],
-      },
-    },
-    {
-      attr: "Period",
-      value: resource.period,
-      max: "1",
-      type: { code: "Period" },
-    },
+    ["Url", r.url, { code: "uri" }, "1"],
+    ["Identifier", r.identifier, { code: "Identifier" }, "*"],
+    ["Version", r.version, { code: "string" }, "1"],
+    ["Title", r.title, { code: "string" }, "1"],
+    ["Status", r.status, { code: "code" }, "1"],
+    ["Date", r.date, { code: "dateTime" }, "1"],
+    ["Use Context", r.useContext, { code: "UsageContext" }, "*"],
+    ["Publisher", r.publisher, { code: "string" }, "1"],
+    ["Contact", r.contact, { code: "ContactDetail" }, "*"],
+    ["Author", r.author, { code: "ContactDetail" }, "*"],
+    ["Endorser", r.endorser, { code: "ContactDetail" }, "*"],
   ]);
 }
 
-function narrativeEventDefinition(resource: EventDefinition): Narrative {
+function narrativeEvidenceReport(r: EvidenceReport): Narrative {
   return buildNarrative([
-    {
-      attr: "Url",
-      value: resource.url,
-      max: "1",
-      type: { code: "uri" },
-    },
-    {
-      attr: "Identifier",
-      value: resource.identifier,
-      max: "*",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Version",
-      value: resource.version,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Name",
-      value: resource.name,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Title",
-      value: resource.title,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Experimental",
-      value: resource.experimental,
-      max: "1",
-      type: { code: "boolean" },
-    },
-    {
-      attr: "Date",
-      value: resource.date,
-      max: "1",
-      type: { code: "dateTime" },
-    },
-    {
-      attr: "Publisher",
-      value: resource.publisher,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Contact",
-      value: resource.contact,
-      max: "*",
-      type: { code: "ContactDetail" },
-    },
-    {
-      attr: "Use Context",
-      value: resource.useContext,
-      max: "*",
-      type: { code: "UsageContext" },
-    },
-    {
-      attr: "Jurisdiction",
-      value: resource.jurisdiction,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Approval Date",
-      value: resource.approvalDate,
-      max: "1",
-      type: { code: "date" },
-    },
-    {
-      attr: "Last Review Date",
-      value: resource.lastReviewDate,
-      max: "1",
-      type: { code: "date" },
-    },
-    {
-      attr: "Effective Period",
-      value: resource.effectivePeriod,
-      max: "1",
-      type: { code: "Period" },
-    },
-    {
-      attr: "Trigger",
-      value: resource.trigger,
-      max: "*",
-      type: { code: "TriggerDefinition" },
-    },
+    ["Url", r.url, { code: "uri" }, "1"],
+    ["Status", r.status, { code: "code" }, "1"],
+    ["Use Context", r.useContext, { code: "UsageContext" }, "*"],
+    ["Identifier", r.identifier, { code: "Identifier" }, "*"],
+    ["Related Identifier", r.relatedIdentifier, { code: "Identifier" }, "*"],
+    ["Subject", r.subject, { code: "BackboneElement" }, "1"],
+    ["Publisher", r.publisher, { code: "string" }, "1"],
+    ["Contact", r.contact, { code: "ContactDetail" }, "*"],
+    ["Author", r.author, { code: "ContactDetail" }, "*"],
+    ["Endorser", r.endorser, { code: "ContactDetail" }, "*"],
   ]);
 }
 
-function narrativeEvidence(resource: Evidence): Narrative {
+function narrativeEvidenceVariable(r: EvidenceVariable): Narrative {
   return buildNarrative([
-    {
-      attr: "Url",
-      value: resource.url,
-      max: "1",
-      type: { code: "uri" },
-    },
-    {
-      attr: "Identifier",
-      value: resource.identifier,
-      max: "*",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Version",
-      value: resource.version,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Title",
-      value: resource.title,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Date",
-      value: resource.date,
-      max: "1",
-      type: { code: "dateTime" },
-    },
-    {
-      attr: "Use Context",
-      value: resource.useContext,
-      max: "*",
-      type: { code: "UsageContext" },
-    },
-    {
-      attr: "Publisher",
-      value: resource.publisher,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Contact",
-      value: resource.contact,
-      max: "*",
-      type: { code: "ContactDetail" },
-    },
-    {
-      attr: "Author",
-      value: resource.author,
-      max: "*",
-      type: { code: "ContactDetail" },
-    },
-    {
-      attr: "Endorser",
-      value: resource.endorser,
-      max: "*",
-      type: { code: "ContactDetail" },
-    },
+    ["Url", r.url, { code: "uri" }, "1"],
+    ["Identifier", r.identifier, { code: "Identifier" }, "*"],
+    ["Version", r.version, { code: "string" }, "1"],
+    ["Name", r.name, { code: "string" }, "1"],
+    ["Title", r.title, { code: "string" }, "1"],
+    ["Short Title", r.shortTitle, { code: "string" }, "1"],
+    ["Status", r.status, { code: "code" }, "1"],
+    ["Date", r.date, { code: "dateTime" }, "1"],
+    ["Description", r.description, { code: "markdown" }, "1"],
+    ["Use Context", r.useContext, { code: "UsageContext" }, "*"],
+    ["Publisher", r.publisher, { code: "string" }, "1"],
+    ["Contact", r.contact, { code: "ContactDetail" }, "*"],
+    ["Characteristic", r.characteristic, { code: "BackboneElement" }, "*"],
+    ["Handling", r.handling, { code: "code" }, "1"],
   ]);
 }
 
-function narrativeEvidenceReport(resource: EvidenceReport): Narrative {
+function narrativeExampleScenario(r: ExampleScenario): Narrative {
   return buildNarrative([
-    {
-      attr: "Url",
-      value: resource.url,
-      max: "1",
-      type: { code: "uri" },
-    },
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Use Context",
-      value: resource.useContext,
-      max: "*",
-      type: { code: "UsageContext" },
-    },
-    {
-      attr: "Identifier",
-      value: resource.identifier,
-      max: "*",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Related Identifier",
-      value: resource.relatedIdentifier,
-      max: "*",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Subject",
-      value: resource.subject,
-      max: "1",
-      type: { code: "BackboneElement" },
-    },
-    {
-      attr: "Publisher",
-      value: resource.publisher,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Contact",
-      value: resource.contact,
-      max: "*",
-      type: { code: "ContactDetail" },
-    },
-    {
-      attr: "Author",
-      value: resource.author,
-      max: "*",
-      type: { code: "ContactDetail" },
-    },
-    {
-      attr: "Endorser",
-      value: resource.endorser,
-      max: "*",
-      type: { code: "ContactDetail" },
-    },
+    ["Url", r.url, { code: "uri" }, "1"],
+    ["Identifier", r.identifier, { code: "Identifier" }, "*"],
+    ["Version", r.version, { code: "string" }, "1"],
+    ["Name", r.name, { code: "string" }, "1"],
+    ["Status", r.status, { code: "code" }, "1"],
+    ["Experimental", r.experimental, { code: "boolean" }, "1"],
+    ["Date", r.date, { code: "dateTime" }, "1"],
+    ["Publisher", r.publisher, { code: "string" }, "1"],
+    ["Contact", r.contact, { code: "ContactDetail" }, "*"],
+    ["Use Context", r.useContext, { code: "UsageContext" }, "*"],
+    ["Jurisdiction", r.jurisdiction, { code: "CodeableConcept" }, "*"],
   ]);
 }
 
-function narrativeEvidenceVariable(resource: EvidenceVariable): Narrative {
+function narrativeExplanationOfBenefit(r: ExplanationOfBenefit): Narrative {
   return buildNarrative([
-    {
-      attr: "Url",
-      value: resource.url,
-      max: "1",
-      type: { code: "uri" },
-    },
-    {
-      attr: "Identifier",
-      value: resource.identifier,
-      max: "*",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Version",
-      value: resource.version,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Name",
-      value: resource.name,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Title",
-      value: resource.title,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Short Title",
-      value: resource.shortTitle,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Date",
-      value: resource.date,
-      max: "1",
-      type: { code: "dateTime" },
-    },
-    {
-      attr: "Description",
-      value: resource.description,
-      max: "1",
-      type: { code: "markdown" },
-    },
-    {
-      attr: "Use Context",
-      value: resource.useContext,
-      max: "*",
-      type: { code: "UsageContext" },
-    },
-    {
-      attr: "Publisher",
-      value: resource.publisher,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Contact",
-      value: resource.contact,
-      max: "*",
-      type: { code: "ContactDetail" },
-    },
-    {
-      attr: "Characteristic",
-      value: resource.characteristic,
-      max: "*",
-      type: { code: "BackboneElement" },
-    },
-    {
-      attr: "Handling",
-      value: resource.handling,
-      max: "1",
-      type: { code: "code" },
-    },
+    ["Status", r.status, { code: "code" }, "1"],
+    ["Type", r.type, { code: "CodeableConcept" }, "1"],
+    ["Use", r.use, { code: "code" }, "1"],
+    ["Patient", r.patient, { code: "Reference" }, "1"],
+    ["Billable Period", r.billablePeriod, { code: "Period" }, "1"],
+    ["Created", r.created, { code: "dateTime" }, "1"],
+    ["Insurer", r.insurer, { code: "Reference" }, "1"],
+    ["Provider", r.provider, { code: "Reference" }, "1"],
+    ["Outcome", r.outcome, { code: "code" }, "1"],
+    ["Insurance", r.insurance, { code: "BackboneElement" }, "*"],
+    ["Total", r.total, { code: "BackboneElement" }, "*"],
   ]);
 }
 
-function narrativeExampleScenario(resource: ExampleScenario): Narrative {
+function narrativeFamilyMemberHistory(r: FamilyMemberHistory): Narrative {
   return buildNarrative([
-    {
-      attr: "Url",
-      value: resource.url,
-      max: "1",
-      type: { code: "uri" },
-    },
-    {
-      attr: "Identifier",
-      value: resource.identifier,
-      max: "*",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Version",
-      value: resource.version,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Name",
-      value: resource.name,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Experimental",
-      value: resource.experimental,
-      max: "1",
-      type: { code: "boolean" },
-    },
-    {
-      attr: "Date",
-      value: resource.date,
-      max: "1",
-      type: { code: "dateTime" },
-    },
-    {
-      attr: "Publisher",
-      value: resource.publisher,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Contact",
-      value: resource.contact,
-      max: "*",
-      type: { code: "ContactDetail" },
-    },
-    {
-      attr: "Use Context",
-      value: resource.useContext,
-      max: "*",
-      type: { code: "UsageContext" },
-    },
-    {
-      attr: "Jurisdiction",
-      value: resource.jurisdiction,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
+    ["Identifier", r.identifier, { code: "Identifier" }, "*"],
+    [
+      "Instantiates Canonical",
+      r.instantiatesCanonical,
+      { code: "canonical" },
+      "*",
+    ],
+    ["Instantiates Uri", r.instantiatesUri, { code: "uri" }, "*"],
+    ["Status", r.status, { code: "code" }, "1"],
+    [
+      "Data Absent Reason",
+      r.dataAbsentReason,
+      { code: "CodeableConcept" },
+      "1",
+    ],
+    ["Patient", r.patient, { code: "Reference" }, "1"],
+    ["Date", r.date, { code: "dateTime" }, "1"],
+    ["Name", r.name, { code: "string" }, "1"],
+    ["Relationship", r.relationship, { code: "CodeableConcept" }, "1"],
+    ["Sex", r.sex, { code: "CodeableConcept" }, "1"],
+    ["Estimated Age", r.estimatedAge, { code: "boolean" }, "1"],
+    ["Reason Code", r.reasonCode, { code: "CodeableConcept" }, "*"],
+    ["Reason Reference", r.reasonReference, { code: "Reference" }, "*"],
   ]);
 }
 
-function narrativeExplanationOfBenefit(
-  resource: ExplanationOfBenefit
-): Narrative {
+function narrativeFlag(r: Flag): Narrative {
   return buildNarrative([
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Type",
-      value: resource.type,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Use",
-      value: resource.use,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Patient",
-      value: resource.patient,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Patient"],
-      },
-    },
-    {
-      attr: "Billable Period",
-      value: resource.billablePeriod,
-      max: "1",
-      type: { code: "Period" },
-    },
-    {
-      attr: "Created",
-      value: resource.created,
-      max: "1",
-      type: { code: "dateTime" },
-    },
-    {
-      attr: "Insurer",
-      value: resource.insurer,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Organization"],
-      },
-    },
-    {
-      attr: "Provider",
-      value: resource.provider,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Practitioner",
-          "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
-          "http://hl7.org/fhir/StructureDefinition/Organization",
-        ],
-      },
-    },
-    {
-      attr: "Outcome",
-      value: resource.outcome,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Insurance",
-      value: resource.insurance,
-      max: "*",
-      type: { code: "BackboneElement" },
-    },
-    {
-      attr: "Total",
-      value: resource.total,
-      max: "*",
-      type: { code: "BackboneElement" },
-    },
+    ["Identifier", r.identifier, { code: "Identifier" }, "*"],
+    ["Status", r.status, { code: "code" }, "1"],
+    ["Category", r.category, { code: "CodeableConcept" }, "*"],
+    ["Code", r.code, { code: "CodeableConcept" }, "1"],
+    ["Subject", r.subject, { code: "Reference" }, "1"],
+    ["Period", r.period, { code: "Period" }, "1"],
+    ["Encounter", r.encounter, { code: "Reference" }, "1"],
+    ["Author", r.author, { code: "Reference" }, "1"],
   ]);
 }
 
-function narrativeFamilyMemberHistory(
-  resource: FamilyMemberHistory
-): Narrative {
+function narrativeGoal(r: Goal): Narrative {
   return buildNarrative([
-    {
-      attr: "Identifier",
-      value: resource.identifier,
-      max: "*",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Instantiates Canonical",
-      value: resource.instantiatesCanonical,
-      max: "*",
-      type: {
-        code: "canonical",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/PlanDefinition",
-          "http://hl7.org/fhir/StructureDefinition/Questionnaire",
-          "http://hl7.org/fhir/StructureDefinition/ActivityDefinition",
-          "http://hl7.org/fhir/StructureDefinition/Measure",
-          "http://hl7.org/fhir/StructureDefinition/OperationDefinition",
-        ],
-      },
-    },
-    {
-      attr: "Instantiates Uri",
-      value: resource.instantiatesUri,
-      max: "*",
-      type: { code: "uri" },
-    },
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Data Absent Reason",
-      value: resource.dataAbsentReason,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Patient",
-      value: resource.patient,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Patient"],
-      },
-    },
-    {
-      attr: "Date",
-      value: resource.date,
-      max: "1",
-      type: { code: "dateTime" },
-    },
-    {
-      attr: "Name",
-      value: resource.name,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Relationship",
-      value: resource.relationship,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Sex",
-      value: resource.sex,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Estimated Age",
-      value: resource.estimatedAge,
-      max: "1",
-      type: { code: "boolean" },
-    },
-    {
-      attr: "Reason Code",
-      value: resource.reasonCode,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Reason Reference",
-      value: resource.reasonReference,
-      max: "*",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Condition",
-          "http://hl7.org/fhir/StructureDefinition/Observation",
-          "http://hl7.org/fhir/StructureDefinition/AllergyIntolerance",
-          "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse",
-          "http://hl7.org/fhir/StructureDefinition/DiagnosticReport",
-          "http://hl7.org/fhir/StructureDefinition/DocumentReference",
-        ],
-      },
-    },
+    ["Lifecycle Status", r.lifecycleStatus, { code: "code" }, "1"],
+    [
+      "Achievement Status",
+      r.achievementStatus,
+      { code: "CodeableConcept" },
+      "1",
+    ],
+    ["Category", r.category, { code: "CodeableConcept" }, "*"],
+    ["Priority", r.priority, { code: "CodeableConcept" }, "1"],
+    ["Description", r.description, { code: "CodeableConcept" }, "1"],
+    ["Subject", r.subject, { code: "Reference" }, "1"],
+    ["Status Date", r.statusDate, { code: "date" }, "1"],
+    ["Expressed By", r.expressedBy, { code: "Reference" }, "1"],
   ]);
 }
 
-function narrativeFlag(resource: Flag): Narrative {
+function narrativeGraphDefinition(r: GraphDefinition): Narrative {
   return buildNarrative([
-    {
-      attr: "Identifier",
-      value: resource.identifier,
-      max: "*",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Category",
-      value: resource.category,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Code",
-      value: resource.code,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Subject",
-      value: resource.subject,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Patient",
-          "http://hl7.org/fhir/StructureDefinition/Location",
-          "http://hl7.org/fhir/StructureDefinition/Group",
-          "http://hl7.org/fhir/StructureDefinition/Organization",
-          "http://hl7.org/fhir/StructureDefinition/Practitioner",
-          "http://hl7.org/fhir/StructureDefinition/PlanDefinition",
-          "http://hl7.org/fhir/StructureDefinition/Medication",
-          "http://hl7.org/fhir/StructureDefinition/Procedure",
-        ],
-      },
-    },
-    {
-      attr: "Period",
-      value: resource.period,
-      max: "1",
-      type: { code: "Period" },
-    },
-    {
-      attr: "Encounter",
-      value: resource.encounter,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Encounter"],
-      },
-    },
-    {
-      attr: "Author",
-      value: resource.author,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Device",
-          "http://hl7.org/fhir/StructureDefinition/Organization",
-          "http://hl7.org/fhir/StructureDefinition/Patient",
-          "http://hl7.org/fhir/StructureDefinition/Practitioner",
-          "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
-        ],
-      },
-    },
+    ["Url", r.url, { code: "uri" }, "1"],
+    ["Version", r.version, { code: "string" }, "1"],
+    ["Name", r.name, { code: "string" }, "1"],
+    ["Status", r.status, { code: "code" }, "1"],
+    ["Experimental", r.experimental, { code: "boolean" }, "1"],
+    ["Date", r.date, { code: "dateTime" }, "1"],
+    ["Publisher", r.publisher, { code: "string" }, "1"],
+    ["Contact", r.contact, { code: "ContactDetail" }, "*"],
+    ["Use Context", r.useContext, { code: "UsageContext" }, "*"],
+    ["Jurisdiction", r.jurisdiction, { code: "CodeableConcept" }, "*"],
+    ["Start", r.start, { code: "code" }, "1"],
   ]);
 }
 
-function narrativeGoal(resource: Goal): Narrative {
+function narrativeGroup(r: Group): Narrative {
   return buildNarrative([
-    {
-      attr: "Lifecycle Status",
-      value: resource.lifecycleStatus,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Achievement Status",
-      value: resource.achievementStatus,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Category",
-      value: resource.category,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Priority",
-      value: resource.priority,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Description",
-      value: resource.description,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Subject",
-      value: resource.subject,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Patient",
-          "http://hl7.org/fhir/StructureDefinition/Group",
-          "http://hl7.org/fhir/StructureDefinition/Organization",
-        ],
-      },
-    },
-    {
-      attr: "Status Date",
-      value: resource.statusDate,
-      max: "1",
-      type: { code: "date" },
-    },
-    {
-      attr: "Expressed By",
-      value: resource.expressedBy,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Patient",
-          "http://hl7.org/fhir/StructureDefinition/Practitioner",
-          "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
-          "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
-        ],
-      },
-    },
+    ["Identifier", r.identifier, { code: "Identifier" }, "*"],
+    ["Active", r.active, { code: "boolean" }, "1"],
+    ["Type", r.type, { code: "code" }, "1"],
+    ["Actual", r.actual, { code: "boolean" }, "1"],
+    ["Code", r.code, { code: "CodeableConcept" }, "1"],
+    ["Name", r.name, { code: "string" }, "1"],
+    ["Quantity", r.quantity, { code: "unsignedInt" }, "1"],
+    ["Managing Entity", r.managingEntity, { code: "Reference" }, "1"],
   ]);
 }
 
-function narrativeGraphDefinition(resource: GraphDefinition): Narrative {
+function narrativeGuidanceResponse(r: GuidanceResponse): Narrative {
   return buildNarrative([
-    {
-      attr: "Url",
-      value: resource.url,
-      max: "1",
-      type: { code: "uri" },
-    },
-    {
-      attr: "Version",
-      value: resource.version,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Name",
-      value: resource.name,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Experimental",
-      value: resource.experimental,
-      max: "1",
-      type: { code: "boolean" },
-    },
-    {
-      attr: "Date",
-      value: resource.date,
-      max: "1",
-      type: { code: "dateTime" },
-    },
-    {
-      attr: "Publisher",
-      value: resource.publisher,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Contact",
-      value: resource.contact,
-      max: "*",
-      type: { code: "ContactDetail" },
-    },
-    {
-      attr: "Use Context",
-      value: resource.useContext,
-      max: "*",
-      type: { code: "UsageContext" },
-    },
-    {
-      attr: "Jurisdiction",
-      value: resource.jurisdiction,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Start",
-      value: resource.start,
-      max: "1",
-      type: { code: "code" },
-    },
+    ["Request Identifier", r.requestIdentifier, { code: "Identifier" }, "1"],
+    ["Identifier", r.identifier, { code: "Identifier" }, "*"],
+    ["Status", r.status, { code: "code" }, "1"],
   ]);
 }
 
-function narrativeGroup(resource: Group): Narrative {
+function narrativeHealthcareService(r: HealthcareService): Narrative {
   return buildNarrative([
-    {
-      attr: "Identifier",
-      value: resource.identifier,
-      max: "*",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Active",
-      value: resource.active,
-      max: "1",
-      type: { code: "boolean" },
-    },
-    {
-      attr: "Type",
-      value: resource.type,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Actual",
-      value: resource.actual,
-      max: "1",
-      type: { code: "boolean" },
-    },
-    {
-      attr: "Code",
-      value: resource.code,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Name",
-      value: resource.name,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Quantity",
-      value: resource.quantity,
-      max: "1",
-      type: { code: "unsignedInt" },
-    },
-    {
-      attr: "Managing Entity",
-      value: resource.managingEntity,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Organization",
-          "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
-          "http://hl7.org/fhir/StructureDefinition/Practitioner",
-          "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
-        ],
-      },
-    },
+    ["Identifier", r.identifier, { code: "Identifier" }, "*"],
+    ["Active", r.active, { code: "boolean" }, "1"],
+    ["Provided By", r.providedBy, { code: "Reference" }, "1"],
+    ["Category", r.category, { code: "CodeableConcept" }, "*"],
+    ["Type", r.type, { code: "CodeableConcept" }, "*"],
+    ["Specialty", r.specialty, { code: "CodeableConcept" }, "*"],
+    ["Location", r.location, { code: "Reference" }, "*"],
+    ["Name", r.name, { code: "string" }, "1"],
+    ["Comment", r.comment, { code: "string" }, "1"],
+    ["Photo", r.photo, { code: "Attachment" }, "1"],
   ]);
 }
 
-function narrativeGuidanceResponse(resource: GuidanceResponse): Narrative {
+function narrativeImagingStudy(r: ImagingStudy): Narrative {
   return buildNarrative([
-    {
-      attr: "Request Identifier",
-      value: resource.requestIdentifier,
-      max: "1",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Identifier",
-      value: resource.identifier,
-      max: "*",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
+    ["Identifier", r.identifier, { code: "Identifier" }, "*"],
+    ["Status", r.status, { code: "code" }, "1"],
+    ["Modality", r.modality, { code: "Coding" }, "*"],
+    ["Subject", r.subject, { code: "Reference" }, "1"],
+    ["Encounter", r.encounter, { code: "Reference" }, "1"],
+    ["Started", r.started, { code: "dateTime" }, "1"],
+    ["Based On", r.basedOn, { code: "Reference" }, "*"],
+    ["Referrer", r.referrer, { code: "Reference" }, "1"],
+    ["Interpreter", r.interpreter, { code: "Reference" }, "*"],
+    ["Endpoint", r.endpoint, { code: "Reference" }, "*"],
+    ["Number Of Series", r.numberOfSeries, { code: "unsignedInt" }, "1"],
+    ["Number Of Instances", r.numberOfInstances, { code: "unsignedInt" }, "1"],
+    ["Procedure Reference", r.procedureReference, { code: "Reference" }, "1"],
+    ["Procedure Code", r.procedureCode, { code: "CodeableConcept" }, "*"],
+    ["Location", r.location, { code: "Reference" }, "1"],
+    ["Reason Code", r.reasonCode, { code: "CodeableConcept" }, "*"],
+    ["Reason Reference", r.reasonReference, { code: "Reference" }, "*"],
+    ["Note", r.note, { code: "Annotation" }, "*"],
+    ["Description", r.description, { code: "string" }, "1"],
+    ["Series", r.series, { code: "BackboneElement" }, "*"],
   ]);
 }
 
-function narrativeHealthcareService(resource: HealthcareService): Narrative {
+function narrativeImmunization(r: Immunization): Narrative {
   return buildNarrative([
-    {
-      attr: "Identifier",
-      value: resource.identifier,
-      max: "*",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Active",
-      value: resource.active,
-      max: "1",
-      type: { code: "boolean" },
-    },
-    {
-      attr: "Provided By",
-      value: resource.providedBy,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Organization"],
-      },
-    },
-    {
-      attr: "Category",
-      value: resource.category,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Type",
-      value: resource.type,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Specialty",
-      value: resource.specialty,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Location",
-      value: resource.location,
-      max: "*",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Location"],
-      },
-    },
-    {
-      attr: "Name",
-      value: resource.name,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Comment",
-      value: resource.comment,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Photo",
-      value: resource.photo,
-      max: "1",
-      type: { code: "Attachment" },
-    },
+    ["Status", r.status, { code: "code" }, "1"],
+    ["Vaccine Code", r.vaccineCode, { code: "CodeableConcept" }, "1"],
+    ["Patient", r.patient, { code: "Reference" }, "1"],
+    ["Primary Source", r.primarySource, { code: "boolean" }, "1"],
+    ["Performer", r.performer, { code: "BackboneElement" }, "*"],
+    ["Note", r.note, { code: "Annotation" }, "*"],
+    ["Is Subpotent", r.isSubpotent, { code: "boolean" }, "1"],
   ]);
 }
 
-function narrativeImagingStudy(resource: ImagingStudy): Narrative {
+function narrativeImmunizationEvaluation(r: ImmunizationEvaluation): Narrative {
   return buildNarrative([
-    {
-      attr: "Identifier",
-      value: resource.identifier,
-      max: "*",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Modality",
-      value: resource.modality,
-      max: "*",
-      type: { code: "Coding" },
-    },
-    {
-      attr: "Subject",
-      value: resource.subject,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Patient",
-          "http://hl7.org/fhir/StructureDefinition/Device",
-          "http://hl7.org/fhir/StructureDefinition/Group",
-        ],
-      },
-    },
-    {
-      attr: "Encounter",
-      value: resource.encounter,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Encounter"],
-      },
-    },
-    {
-      attr: "Started",
-      value: resource.started,
-      max: "1",
-      type: { code: "dateTime" },
-    },
-    {
-      attr: "Based On",
-      value: resource.basedOn,
-      max: "*",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/CarePlan",
-          "http://hl7.org/fhir/StructureDefinition/ServiceRequest",
-          "http://hl7.org/fhir/StructureDefinition/Appointment",
-          "http://hl7.org/fhir/StructureDefinition/AppointmentResponse",
-          "http://hl7.org/fhir/StructureDefinition/Task",
-        ],
-      },
-    },
-    {
-      attr: "Referrer",
-      value: resource.referrer,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Practitioner",
-          "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
-        ],
-      },
-    },
-    {
-      attr: "Interpreter",
-      value: resource.interpreter,
-      max: "*",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Practitioner",
-          "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
-        ],
-      },
-    },
-    {
-      attr: "Endpoint",
-      value: resource.endpoint,
-      max: "*",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Endpoint"],
-      },
-    },
-    {
-      attr: "Number Of Series",
-      value: resource.numberOfSeries,
-      max: "1",
-      type: { code: "unsignedInt" },
-    },
-    {
-      attr: "Number Of Instances",
-      value: resource.numberOfInstances,
-      max: "1",
-      type: { code: "unsignedInt" },
-    },
-    {
-      attr: "Procedure Reference",
-      value: resource.procedureReference,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Procedure"],
-      },
-    },
-    {
-      attr: "Procedure Code",
-      value: resource.procedureCode,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Location",
-      value: resource.location,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Location"],
-      },
-    },
-    {
-      attr: "Reason Code",
-      value: resource.reasonCode,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Reason Reference",
-      value: resource.reasonReference,
-      max: "*",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Condition",
-          "http://hl7.org/fhir/StructureDefinition/Observation",
-          "http://hl7.org/fhir/StructureDefinition/Media",
-          "http://hl7.org/fhir/StructureDefinition/DiagnosticReport",
-          "http://hl7.org/fhir/StructureDefinition/DocumentReference",
-        ],
-      },
-    },
-    {
-      attr: "Note",
-      value: resource.note,
-      max: "*",
-      type: { code: "Annotation" },
-    },
-    {
-      attr: "Description",
-      value: resource.description,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Series",
-      value: resource.series,
-      max: "*",
-      type: { code: "BackboneElement" },
-    },
-  ]);
-}
-
-function narrativeImmunization(resource: Immunization): Narrative {
-  return buildNarrative([
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Vaccine Code",
-      value: resource.vaccineCode,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Patient",
-      value: resource.patient,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Patient"],
-      },
-    },
-    {
-      attr: "Primary Source",
-      value: resource.primarySource,
-      max: "1",
-      type: { code: "boolean" },
-    },
-    {
-      attr: "Performer",
-      value: resource.performer,
-      max: "*",
-      type: { code: "BackboneElement" },
-    },
-    {
-      attr: "Note",
-      value: resource.note,
-      max: "*",
-      type: { code: "Annotation" },
-    },
-    {
-      attr: "Is Subpotent",
-      value: resource.isSubpotent,
-      max: "1",
-      type: { code: "boolean" },
-    },
-  ]);
-}
-
-function narrativeImmunizationEvaluation(
-  resource: ImmunizationEvaluation
-): Narrative {
-  return buildNarrative([
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Patient",
-      value: resource.patient,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Patient"],
-      },
-    },
-    {
-      attr: "Target Disease",
-      value: resource.targetDisease,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Immunization Event",
-      value: resource.immunizationEvent,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Immunization"],
-      },
-    },
-    {
-      attr: "Dose Status",
-      value: resource.doseStatus,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
+    ["Status", r.status, { code: "code" }, "1"],
+    ["Patient", r.patient, { code: "Reference" }, "1"],
+    ["Target Disease", r.targetDisease, { code: "CodeableConcept" }, "1"],
+    ["Immunization Event", r.immunizationEvent, { code: "Reference" }, "1"],
+    ["Dose Status", r.doseStatus, { code: "CodeableConcept" }, "1"],
   ]);
 }
 
 function narrativeImmunizationRecommendation(
-  resource: ImmunizationRecommendation
+  r: ImmunizationRecommendation
 ): Narrative {
   return buildNarrative([
-    {
-      attr: "Identifier",
-      value: resource.identifier,
-      max: "*",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Patient",
-      value: resource.patient,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Patient"],
-      },
-    },
-    {
-      attr: "Date",
-      value: resource.date,
-      max: "1",
-      type: { code: "dateTime" },
-    },
-    {
-      attr: "Recommendation",
-      value: resource.recommendation,
-      max: "*",
-      type: { code: "BackboneElement" },
-    },
+    ["Identifier", r.identifier, { code: "Identifier" }, "*"],
+    ["Patient", r.patient, { code: "Reference" }, "1"],
+    ["Date", r.date, { code: "dateTime" }, "1"],
+    ["Recommendation", r.recommendation, { code: "BackboneElement" }, "*"],
   ]);
 }
 
-function narrativeImplementationGuide(
-  resource: ImplementationGuide
-): Narrative {
+function narrativeImplementationGuide(r: ImplementationGuide): Narrative {
   return buildNarrative([
-    {
-      attr: "Url",
-      value: resource.url,
-      max: "1",
-      type: { code: "uri" },
-    },
-    {
-      attr: "Version",
-      value: resource.version,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Name",
-      value: resource.name,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Title",
-      value: resource.title,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Experimental",
-      value: resource.experimental,
-      max: "1",
-      type: { code: "boolean" },
-    },
-    {
-      attr: "Date",
-      value: resource.date,
-      max: "1",
-      type: { code: "dateTime" },
-    },
-    {
-      attr: "Publisher",
-      value: resource.publisher,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Contact",
-      value: resource.contact,
-      max: "*",
-      type: { code: "ContactDetail" },
-    },
-    {
-      attr: "Use Context",
-      value: resource.useContext,
-      max: "*",
-      type: { code: "UsageContext" },
-    },
-    {
-      attr: "Jurisdiction",
-      value: resource.jurisdiction,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Package Id",
-      value: resource.packageId,
-      max: "1",
-      type: { code: "id" },
-    },
-    {
-      attr: "License",
-      value: resource.license,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Fhir Version",
-      value: resource.fhirVersion,
-      max: "*",
-      type: { code: "code" },
-    },
-    {
-      attr: "Depends On",
-      value: resource.dependsOn,
-      max: "*",
-      type: { code: "BackboneElement" },
-    },
-    {
-      attr: "Global",
-      value: resource.global,
-      max: "*",
-      type: { code: "BackboneElement" },
-    },
+    ["Url", r.url, { code: "uri" }, "1"],
+    ["Version", r.version, { code: "string" }, "1"],
+    ["Name", r.name, { code: "string" }, "1"],
+    ["Title", r.title, { code: "string" }, "1"],
+    ["Status", r.status, { code: "code" }, "1"],
+    ["Experimental", r.experimental, { code: "boolean" }, "1"],
+    ["Date", r.date, { code: "dateTime" }, "1"],
+    ["Publisher", r.publisher, { code: "string" }, "1"],
+    ["Contact", r.contact, { code: "ContactDetail" }, "*"],
+    ["Use Context", r.useContext, { code: "UsageContext" }, "*"],
+    ["Jurisdiction", r.jurisdiction, { code: "CodeableConcept" }, "*"],
+    ["Package Id", r.packageId, { code: "id" }, "1"],
+    ["License", r.license, { code: "code" }, "1"],
+    ["Fhir Version", r.fhirVersion, { code: "code" }, "*"],
+    ["Depends On", r.dependsOn, { code: "BackboneElement" }, "*"],
+    ["Global", r.global, { code: "BackboneElement" }, "*"],
   ]);
 }
 
-function narrativeIngredient(resource: Ingredient): Narrative {
+function narrativeIngredient(r: Ingredient): Narrative {
   return buildNarrative([
-    {
-      attr: "Identifier",
-      value: resource.identifier,
-      max: "1",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "For",
-      value: resource.for,
-      max: "*",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/MedicinalProductDefinition",
-          "http://hl7.org/fhir/StructureDefinition/AdministrableProductDefinition",
-          "http://hl7.org/fhir/StructureDefinition/ManufacturedItemDefinition",
-        ],
-      },
-    },
-    {
-      attr: "Role",
-      value: resource.role,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Function",
-      value: resource.function,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Allergenic Indicator",
-      value: resource.allergenicIndicator,
-      max: "1",
-      type: { code: "boolean" },
-    },
-    {
-      attr: "Manufacturer",
-      value: resource.manufacturer,
-      max: "*",
-      type: { code: "BackboneElement" },
-    },
-    {
-      attr: "Substance",
-      value: resource.substance,
-      max: "1",
-      type: { code: "BackboneElement" },
-    },
+    ["Identifier", r.identifier, { code: "Identifier" }, "1"],
+    ["Status", r.status, { code: "code" }, "1"],
+    ["For", r.for, { code: "Reference" }, "*"],
+    ["Role", r.role, { code: "CodeableConcept" }, "1"],
+    ["Function", r.function, { code: "CodeableConcept" }, "*"],
+    ["Allergenic Indicator", r.allergenicIndicator, { code: "boolean" }, "1"],
+    ["Manufacturer", r.manufacturer, { code: "BackboneElement" }, "*"],
+    ["Substance", r.substance, { code: "BackboneElement" }, "1"],
   ]);
 }
 
-function narrativeInsurancePlan(resource: InsurancePlan): Narrative {
+function narrativeInsurancePlan(r: InsurancePlan): Narrative {
   return buildNarrative([
-    {
-      attr: "Identifier",
-      value: resource.identifier,
-      max: "*",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Type",
-      value: resource.type,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Name",
-      value: resource.name,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Owned By",
-      value: resource.ownedBy,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Organization"],
-      },
-    },
-    {
-      attr: "Administered By",
-      value: resource.administeredBy,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Organization"],
-      },
-    },
-    {
-      attr: "Coverage Area",
-      value: resource.coverageArea,
-      max: "*",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Location"],
-      },
-    },
+    ["Identifier", r.identifier, { code: "Identifier" }, "*"],
+    ["Status", r.status, { code: "code" }, "1"],
+    ["Type", r.type, { code: "CodeableConcept" }, "*"],
+    ["Name", r.name, { code: "string" }, "1"],
+    ["Owned By", r.ownedBy, { code: "Reference" }, "1"],
+    ["Administered By", r.administeredBy, { code: "Reference" }, "1"],
+    ["Coverage Area", r.coverageArea, { code: "Reference" }, "*"],
   ]);
 }
 
-function narrativeInvoice(resource: Invoice): Narrative {
+function narrativeInvoice(r: Invoice): Narrative {
   return buildNarrative([
-    {
-      attr: "Identifier",
-      value: resource.identifier,
-      max: "*",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Type",
-      value: resource.type,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Subject",
-      value: resource.subject,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Patient",
-          "http://hl7.org/fhir/StructureDefinition/Group",
-        ],
-      },
-    },
-    {
-      attr: "Recipient",
-      value: resource.recipient,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Organization",
-          "http://hl7.org/fhir/StructureDefinition/Patient",
-          "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
-        ],
-      },
-    },
-    {
-      attr: "Date",
-      value: resource.date,
-      max: "1",
-      type: { code: "dateTime" },
-    },
-    {
-      attr: "Total Net",
-      value: resource.totalNet,
-      max: "1",
-      type: { code: "Money" },
-    },
-    {
-      attr: "Total Gross",
-      value: resource.totalGross,
-      max: "1",
-      type: { code: "Money" },
-    },
+    ["Identifier", r.identifier, { code: "Identifier" }, "*"],
+    ["Status", r.status, { code: "code" }, "1"],
+    ["Type", r.type, { code: "CodeableConcept" }, "1"],
+    ["Subject", r.subject, { code: "Reference" }, "1"],
+    ["Recipient", r.recipient, { code: "Reference" }, "1"],
+    ["Date", r.date, { code: "dateTime" }, "1"],
+    ["Total Net", r.totalNet, { code: "Money" }, "1"],
+    ["Total Gross", r.totalGross, { code: "Money" }, "1"],
   ]);
 }
 
-function narrativeLibrary(resource: Library): Narrative {
+function narrativeLibrary(r: Library): Narrative {
   return buildNarrative([
-    {
-      attr: "Url",
-      value: resource.url,
-      max: "1",
-      type: { code: "uri" },
-    },
-    {
-      attr: "Identifier",
-      value: resource.identifier,
-      max: "*",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Version",
-      value: resource.version,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Name",
-      value: resource.name,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Title",
-      value: resource.title,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Experimental",
-      value: resource.experimental,
-      max: "1",
-      type: { code: "boolean" },
-    },
-    {
-      attr: "Type",
-      value: resource.type,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Date",
-      value: resource.date,
-      max: "1",
-      type: { code: "dateTime" },
-    },
-    {
-      attr: "Publisher",
-      value: resource.publisher,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Contact",
-      value: resource.contact,
-      max: "*",
-      type: { code: "ContactDetail" },
-    },
-    {
-      attr: "Description",
-      value: resource.description,
-      max: "1",
-      type: { code: "markdown" },
-    },
-    {
-      attr: "Use Context",
-      value: resource.useContext,
-      max: "*",
-      type: { code: "UsageContext" },
-    },
-    {
-      attr: "Jurisdiction",
-      value: resource.jurisdiction,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Effective Period",
-      value: resource.effectivePeriod,
-      max: "1",
-      type: { code: "Period" },
-    },
-    {
-      attr: "Content",
-      value: resource.content,
-      max: "*",
-      type: { code: "Attachment" },
-    },
+    ["Url", r.url, { code: "uri" }, "1"],
+    ["Identifier", r.identifier, { code: "Identifier" }, "*"],
+    ["Version", r.version, { code: "string" }, "1"],
+    ["Name", r.name, { code: "string" }, "1"],
+    ["Title", r.title, { code: "string" }, "1"],
+    ["Status", r.status, { code: "code" }, "1"],
+    ["Experimental", r.experimental, { code: "boolean" }, "1"],
+    ["Type", r.type, { code: "CodeableConcept" }, "1"],
+    ["Date", r.date, { code: "dateTime" }, "1"],
+    ["Publisher", r.publisher, { code: "string" }, "1"],
+    ["Contact", r.contact, { code: "ContactDetail" }, "*"],
+    ["Description", r.description, { code: "markdown" }, "1"],
+    ["Use Context", r.useContext, { code: "UsageContext" }, "*"],
+    ["Jurisdiction", r.jurisdiction, { code: "CodeableConcept" }, "*"],
+    ["Effective Period", r.effectivePeriod, { code: "Period" }, "1"],
+    ["Content", r.content, { code: "Attachment" }, "*"],
   ]);
 }
 
-function narrativeLinkage(resource: Linkage): Narrative {
+function narrativeLinkage(r: Linkage): Narrative {
   return buildNarrative([
-    {
-      attr: "Active",
-      value: resource.active,
-      max: "1",
-      type: { code: "boolean" },
-    },
-    {
-      attr: "Author",
-      value: resource.author,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Practitioner",
-          "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
-          "http://hl7.org/fhir/StructureDefinition/Organization",
-        ],
-      },
-    },
-    {
-      attr: "Item",
-      value: resource.item,
-      max: "*",
-      type: { code: "BackboneElement" },
-    },
+    ["Active", r.active, { code: "boolean" }, "1"],
+    ["Author", r.author, { code: "Reference" }, "1"],
+    ["Item", r.item, { code: "BackboneElement" }, "*"],
   ]);
 }
 
-function narrativeList(resource: List): Narrative {
+function narrativeList(r: List): Narrative {
   return buildNarrative([
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Mode",
-      value: resource.mode,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Title",
-      value: resource.title,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Code",
-      value: resource.code,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Subject",
-      value: resource.subject,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Patient",
-          "http://hl7.org/fhir/StructureDefinition/Group",
-          "http://hl7.org/fhir/StructureDefinition/Device",
-          "http://hl7.org/fhir/StructureDefinition/Location",
-        ],
-      },
-    },
-    {
-      attr: "Date",
-      value: resource.date,
-      max: "1",
-      type: { code: "dateTime" },
-    },
-    {
-      attr: "Source",
-      value: resource.source,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Practitioner",
-          "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
-          "http://hl7.org/fhir/StructureDefinition/Patient",
-          "http://hl7.org/fhir/StructureDefinition/Device",
-        ],
-      },
-    },
+    ["Status", r.status, { code: "code" }, "1"],
+    ["Mode", r.mode, { code: "code" }, "1"],
+    ["Title", r.title, { code: "string" }, "1"],
+    ["Code", r.code, { code: "CodeableConcept" }, "1"],
+    ["Subject", r.subject, { code: "Reference" }, "1"],
+    ["Date", r.date, { code: "dateTime" }, "1"],
+    ["Source", r.source, { code: "Reference" }, "1"],
   ]);
 }
 
-function narrativeLocation(resource: Location): Narrative {
+function narrativeLocation(r: Location): Narrative {
   return buildNarrative([
-    {
-      attr: "Identifier",
-      value: resource.identifier,
-      max: "*",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Operational Status",
-      value: resource.operationalStatus,
-      max: "1",
-      type: { code: "Coding" },
-    },
-    {
-      attr: "Name",
-      value: resource.name,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Description",
-      value: resource.description,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Mode",
-      value: resource.mode,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Type",
-      value: resource.type,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Physical Type",
-      value: resource.physicalType,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Managing Organization",
-      value: resource.managingOrganization,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Organization"],
-      },
-    },
+    ["Identifier", r.identifier, { code: "Identifier" }, "*"],
+    ["Status", r.status, { code: "code" }, "1"],
+    ["Operational Status", r.operationalStatus, { code: "Coding" }, "1"],
+    ["Name", r.name, { code: "string" }, "1"],
+    ["Description", r.description, { code: "string" }, "1"],
+    ["Mode", r.mode, { code: "code" }, "1"],
+    ["Type", r.type, { code: "CodeableConcept" }, "*"],
+    ["Physical Type", r.physicalType, { code: "CodeableConcept" }, "1"],
+    [
+      "Managing Organization",
+      r.managingOrganization,
+      { code: "Reference" },
+      "1",
+    ],
   ]);
 }
 
 function narrativeManufacturedItemDefinition(
-  resource: ManufacturedItemDefinition
+  r: ManufacturedItemDefinition
 ): Narrative {
   return buildNarrative([
-    {
-      attr: "Identifier",
-      value: resource.identifier,
-      max: "*",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Manufactured Dose Form",
-      value: resource.manufacturedDoseForm,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Unit Of Presentation",
-      value: resource.unitOfPresentation,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Manufacturer",
-      value: resource.manufacturer,
-      max: "*",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Organization"],
-      },
-    },
-    {
-      attr: "Ingredient",
-      value: resource.ingredient,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Property",
-      value: resource.property,
-      max: "*",
-      type: { code: "BackboneElement" },
-    },
+    ["Identifier", r.identifier, { code: "Identifier" }, "*"],
+    ["Status", r.status, { code: "code" }, "1"],
+    [
+      "Manufactured Dose Form",
+      r.manufacturedDoseForm,
+      { code: "CodeableConcept" },
+      "1",
+    ],
+    [
+      "Unit Of Presentation",
+      r.unitOfPresentation,
+      { code: "CodeableConcept" },
+      "1",
+    ],
+    ["Manufacturer", r.manufacturer, { code: "Reference" }, "*"],
+    ["Ingredient", r.ingredient, { code: "CodeableConcept" }, "*"],
+    ["Property", r.property, { code: "BackboneElement" }, "*"],
   ]);
 }
 
-function narrativeMeasure(resource: Measure): Narrative {
+function narrativeMeasure(r: Measure): Narrative {
   return buildNarrative([
-    {
-      attr: "Url",
-      value: resource.url,
-      max: "1",
-      type: { code: "uri" },
-    },
-    {
-      attr: "Identifier",
-      value: resource.identifier,
-      max: "*",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Version",
-      value: resource.version,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Name",
-      value: resource.name,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Title",
-      value: resource.title,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Experimental",
-      value: resource.experimental,
-      max: "1",
-      type: { code: "boolean" },
-    },
-    {
-      attr: "Date",
-      value: resource.date,
-      max: "1",
-      type: { code: "dateTime" },
-    },
-    {
-      attr: "Publisher",
-      value: resource.publisher,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Contact",
-      value: resource.contact,
-      max: "*",
-      type: { code: "ContactDetail" },
-    },
-    {
-      attr: "Description",
-      value: resource.description,
-      max: "1",
-      type: { code: "markdown" },
-    },
-    {
-      attr: "Use Context",
-      value: resource.useContext,
-      max: "*",
-      type: { code: "UsageContext" },
-    },
-    {
-      attr: "Jurisdiction",
-      value: resource.jurisdiction,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Effective Period",
-      value: resource.effectivePeriod,
-      max: "1",
-      type: { code: "Period" },
-    },
-    {
-      attr: "Disclaimer",
-      value: resource.disclaimer,
-      max: "1",
-      type: { code: "markdown" },
-    },
-    {
-      attr: "Scoring",
-      value: resource.scoring,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Composite Scoring",
-      value: resource.compositeScoring,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Type",
-      value: resource.type,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Risk Adjustment",
-      value: resource.riskAdjustment,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Rate Aggregation",
-      value: resource.rateAggregation,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Rationale",
-      value: resource.rationale,
-      max: "1",
-      type: { code: "markdown" },
-    },
-    {
-      attr: "Clinical Recommendation Statement",
-      value: resource.clinicalRecommendationStatement,
-      max: "1",
-      type: { code: "markdown" },
-    },
-    {
-      attr: "Improvement Notation",
-      value: resource.improvementNotation,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Definition",
-      value: resource.definition,
-      max: "*",
-      type: { code: "markdown" },
-    },
-    {
-      attr: "Guidance",
-      value: resource.guidance,
-      max: "1",
-      type: { code: "markdown" },
-    },
+    ["Url", r.url, { code: "uri" }, "1"],
+    ["Identifier", r.identifier, { code: "Identifier" }, "*"],
+    ["Version", r.version, { code: "string" }, "1"],
+    ["Name", r.name, { code: "string" }, "1"],
+    ["Title", r.title, { code: "string" }, "1"],
+    ["Status", r.status, { code: "code" }, "1"],
+    ["Experimental", r.experimental, { code: "boolean" }, "1"],
+    ["Date", r.date, { code: "dateTime" }, "1"],
+    ["Publisher", r.publisher, { code: "string" }, "1"],
+    ["Contact", r.contact, { code: "ContactDetail" }, "*"],
+    ["Description", r.description, { code: "markdown" }, "1"],
+    ["Use Context", r.useContext, { code: "UsageContext" }, "*"],
+    ["Jurisdiction", r.jurisdiction, { code: "CodeableConcept" }, "*"],
+    ["Effective Period", r.effectivePeriod, { code: "Period" }, "1"],
+    ["Disclaimer", r.disclaimer, { code: "markdown" }, "1"],
+    ["Scoring", r.scoring, { code: "CodeableConcept" }, "1"],
+    ["Composite Scoring", r.compositeScoring, { code: "CodeableConcept" }, "1"],
+    ["Type", r.type, { code: "CodeableConcept" }, "*"],
+    ["Risk Adjustment", r.riskAdjustment, { code: "string" }, "1"],
+    ["Rate Aggregation", r.rateAggregation, { code: "string" }, "1"],
+    ["Rationale", r.rationale, { code: "markdown" }, "1"],
+    [
+      "Clinical Recommendation Statement",
+      r.clinicalRecommendationStatement,
+      { code: "markdown" },
+      "1",
+    ],
+    [
+      "Improvement Notation",
+      r.improvementNotation,
+      { code: "CodeableConcept" },
+      "1",
+    ],
+    ["Definition", r.definition, { code: "markdown" }, "*"],
+    ["Guidance", r.guidance, { code: "markdown" }, "1"],
   ]);
 }
 
-function narrativeMeasureReport(resource: MeasureReport): Narrative {
+function narrativeMeasureReport(r: MeasureReport): Narrative {
   return buildNarrative([
-    {
-      attr: "Identifier",
-      value: resource.identifier,
-      max: "*",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Type",
-      value: resource.type,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Measure",
-      value: resource.measure,
-      max: "1",
-      type: {
-        code: "canonical",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Measure"],
-      },
-    },
-    {
-      attr: "Subject",
-      value: resource.subject,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Patient",
-          "http://hl7.org/fhir/StructureDefinition/Practitioner",
-          "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
-          "http://hl7.org/fhir/StructureDefinition/Location",
-          "http://hl7.org/fhir/StructureDefinition/Device",
-          "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
-          "http://hl7.org/fhir/StructureDefinition/Group",
-        ],
-      },
-    },
-    {
-      attr: "Date",
-      value: resource.date,
-      max: "1",
-      type: { code: "dateTime" },
-    },
-    {
-      attr: "Reporter",
-      value: resource.reporter,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Practitioner",
-          "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
-          "http://hl7.org/fhir/StructureDefinition/Location",
-          "http://hl7.org/fhir/StructureDefinition/Organization",
-        ],
-      },
-    },
-    {
-      attr: "Period",
-      value: resource.period,
-      max: "1",
-      type: { code: "Period" },
-    },
-    {
-      attr: "Improvement Notation",
-      value: resource.improvementNotation,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
+    ["Identifier", r.identifier, { code: "Identifier" }, "*"],
+    ["Status", r.status, { code: "code" }, "1"],
+    ["Type", r.type, { code: "code" }, "1"],
+    ["Measure", r.measure, { code: "canonical" }, "1"],
+    ["Subject", r.subject, { code: "Reference" }, "1"],
+    ["Date", r.date, { code: "dateTime" }, "1"],
+    ["Reporter", r.reporter, { code: "Reference" }, "1"],
+    ["Period", r.period, { code: "Period" }, "1"],
+    [
+      "Improvement Notation",
+      r.improvementNotation,
+      { code: "CodeableConcept" },
+      "1",
+    ],
   ]);
 }
 
-function narrativeMedia(resource: Media): Narrative {
+function narrativeMedia(r: Media): Narrative {
   return buildNarrative([
-    {
-      attr: "Identifier",
-      value: resource.identifier,
-      max: "*",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Based On",
-      value: resource.basedOn,
-      max: "*",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/ServiceRequest",
-          "http://hl7.org/fhir/StructureDefinition/CarePlan",
-        ],
-      },
-    },
-    {
-      attr: "Part Of",
-      value: resource.partOf,
-      max: "*",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Resource"],
-      },
-    },
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Type",
-      value: resource.type,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Modality",
-      value: resource.modality,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "View",
-      value: resource.view,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Subject",
-      value: resource.subject,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Patient",
-          "http://hl7.org/fhir/StructureDefinition/Practitioner",
-          "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
-          "http://hl7.org/fhir/StructureDefinition/Group",
-          "http://hl7.org/fhir/StructureDefinition/Device",
-          "http://hl7.org/fhir/StructureDefinition/Specimen",
-          "http://hl7.org/fhir/StructureDefinition/Location",
-        ],
-      },
-    },
-    {
-      attr: "Encounter",
-      value: resource.encounter,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Encounter"],
-      },
-    },
-    {
-      attr: "Issued",
-      value: resource.issued,
-      max: "1",
-      type: { code: "instant" },
-    },
-    {
-      attr: "Operator",
-      value: resource.operator,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Practitioner",
-          "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
-          "http://hl7.org/fhir/StructureDefinition/Organization",
-          "http://hl7.org/fhir/StructureDefinition/CareTeam",
-          "http://hl7.org/fhir/StructureDefinition/Patient",
-          "http://hl7.org/fhir/StructureDefinition/Device",
-          "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
-        ],
-      },
-    },
-    {
-      attr: "Reason Code",
-      value: resource.reasonCode,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Body Site",
-      value: resource.bodySite,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Device Name",
-      value: resource.deviceName,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Device",
-      value: resource.device,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Device",
-          "http://hl7.org/fhir/StructureDefinition/DeviceMetric",
-          "http://hl7.org/fhir/StructureDefinition/Device",
-        ],
-      },
-    },
-    {
-      attr: "Height",
-      value: resource.height,
-      max: "1",
-      type: { code: "positiveInt" },
-    },
-    {
-      attr: "Width",
-      value: resource.width,
-      max: "1",
-      type: { code: "positiveInt" },
-    },
-    {
-      attr: "Frames",
-      value: resource.frames,
-      max: "1",
-      type: { code: "positiveInt" },
-    },
-    {
-      attr: "Duration",
-      value: resource.duration,
-      max: "1",
-      type: { code: "decimal" },
-    },
-    {
-      attr: "Content",
-      value: resource.content,
-      max: "1",
-      type: { code: "Attachment" },
-    },
+    ["Identifier", r.identifier, { code: "Identifier" }, "*"],
+    ["Based On", r.basedOn, { code: "Reference" }, "*"],
+    ["Part Of", r.partOf, { code: "Reference" }, "*"],
+    ["Status", r.status, { code: "code" }, "1"],
+    ["Type", r.type, { code: "CodeableConcept" }, "1"],
+    ["Modality", r.modality, { code: "CodeableConcept" }, "1"],
+    ["View", r.view, { code: "CodeableConcept" }, "1"],
+    ["Subject", r.subject, { code: "Reference" }, "1"],
+    ["Encounter", r.encounter, { code: "Reference" }, "1"],
+    ["Issued", r.issued, { code: "instant" }, "1"],
+    ["Operator", r.operator, { code: "Reference" }, "1"],
+    ["Reason Code", r.reasonCode, { code: "CodeableConcept" }, "*"],
+    ["Body Site", r.bodySite, { code: "CodeableConcept" }, "1"],
+    ["Device Name", r.deviceName, { code: "string" }, "1"],
+    ["Device", r.device, { code: "Reference" }, "1"],
+    ["Height", r.height, { code: "positiveInt" }, "1"],
+    ["Width", r.width, { code: "positiveInt" }, "1"],
+    ["Frames", r.frames, { code: "positiveInt" }, "1"],
+    ["Duration", r.duration, { code: "decimal" }, "1"],
+    ["Content", r.content, { code: "Attachment" }, "1"],
   ]);
 }
 
-function narrativeMedication(resource: Medication): Narrative {
+function narrativeMedication(r: Medication): Narrative {
   return buildNarrative([
-    {
-      attr: "Identifier",
-      value: resource.identifier,
-      max: "*",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Code",
-      value: resource.code,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Manufacturer",
-      value: resource.manufacturer,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Organization"],
-      },
-    },
-    {
-      attr: "Amount",
-      value: resource.amount,
-      max: "1",
-      type: { code: "Ratio" },
-    },
+    ["Identifier", r.identifier, { code: "Identifier" }, "*"],
+    ["Code", r.code, { code: "CodeableConcept" }, "1"],
+    ["Status", r.status, { code: "code" }, "1"],
+    ["Manufacturer", r.manufacturer, { code: "Reference" }, "1"],
+    ["Amount", r.amount, { code: "Ratio" }, "1"],
   ]);
 }
 
 function narrativeMedicationAdministration(
-  resource: MedicationAdministration
+  r: MedicationAdministration
 ): Narrative {
   return buildNarrative([
-    {
-      attr: "Instantiates",
-      value: resource.instantiates,
-      max: "*",
-      type: { code: "uri" },
-    },
-    {
-      attr: "Part Of",
-      value: resource.partOf,
-      max: "*",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/MedicationAdministration",
-          "http://hl7.org/fhir/StructureDefinition/Procedure",
-        ],
-      },
-    },
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Subject",
-      value: resource.subject,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Patient",
-          "http://hl7.org/fhir/StructureDefinition/Group",
-        ],
-      },
-    },
-    {
-      attr: "Performer",
-      value: resource.performer,
-      max: "*",
-      type: { code: "BackboneElement" },
-    },
+    ["Instantiates", r.instantiates, { code: "uri" }, "*"],
+    ["Part Of", r.partOf, { code: "Reference" }, "*"],
+    ["Status", r.status, { code: "code" }, "1"],
+    ["Subject", r.subject, { code: "Reference" }, "1"],
+    ["Performer", r.performer, { code: "BackboneElement" }, "*"],
   ]);
 }
 
-function narrativeMedicationDispense(resource: MedicationDispense): Narrative {
+function narrativeMedicationDispense(r: MedicationDispense): Narrative {
   return buildNarrative([
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Subject",
-      value: resource.subject,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Patient",
-          "http://hl7.org/fhir/StructureDefinition/Group",
-        ],
-      },
-    },
-    {
-      attr: "When Prepared",
-      value: resource.whenPrepared,
-      max: "1",
-      type: { code: "dateTime" },
-    },
+    ["Status", r.status, { code: "code" }, "1"],
+    ["Subject", r.subject, { code: "Reference" }, "1"],
+    ["When Prepared", r.whenPrepared, { code: "dateTime" }, "1"],
   ]);
 }
 
-function narrativeMedicationKnowledge(
-  resource: MedicationKnowledge
-): Narrative {
+function narrativeMedicationKnowledge(r: MedicationKnowledge): Narrative {
   return buildNarrative([
-    {
-      attr: "Code",
-      value: resource.code,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Manufacturer",
-      value: resource.manufacturer,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Organization"],
-      },
-    },
-    {
-      attr: "Amount",
-      value: resource.amount,
-      max: "1",
-      type: {
+    ["Code", r.code, { code: "CodeableConcept" }, "1"],
+    ["Status", r.status, { code: "code" }, "1"],
+    ["Manufacturer", r.manufacturer, { code: "Reference" }, "1"],
+    [
+      "Amount",
+      r.amount,
+      {
         code: "Quantity",
         profile: ["http://hl7.org/fhir/StructureDefinition/SimpleQuantity"],
       },
-    },
-    {
-      attr: "Synonym",
-      value: resource.synonym,
-      max: "*",
-      type: { code: "string" },
-    },
+      "1",
+    ],
+    ["Synonym", r.synonym, { code: "string" }, "*"],
   ]);
 }
 
-function narrativeMedicationRequest(resource: MedicationRequest): Narrative {
+function narrativeMedicationRequest(r: MedicationRequest): Narrative {
   return buildNarrative([
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Intent",
-      value: resource.intent,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Priority",
-      value: resource.priority,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Do Not Perform",
-      value: resource.doNotPerform,
-      max: "1",
-      type: { code: "boolean" },
-    },
-    {
-      attr: "Subject",
-      value: resource.subject,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Patient",
-          "http://hl7.org/fhir/StructureDefinition/Group",
-        ],
-      },
-    },
-    {
-      attr: "Authored On",
-      value: resource.authoredOn,
-      max: "1",
-      type: { code: "dateTime" },
-    },
-    {
-      attr: "Requester",
-      value: resource.requester,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Practitioner",
-          "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
-          "http://hl7.org/fhir/StructureDefinition/Organization",
-          "http://hl7.org/fhir/StructureDefinition/Patient",
-          "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
-          "http://hl7.org/fhir/StructureDefinition/Device",
-        ],
-      },
-    },
-    {
-      attr: "Performer Type",
-      value: resource.performerType,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Instantiates Canonical",
-      value: resource.instantiatesCanonical,
-      max: "*",
-      type: { code: "canonical" },
-    },
-    {
-      attr: "Instantiates Uri",
-      value: resource.instantiatesUri,
-      max: "*",
-      type: { code: "uri" },
-    },
-    {
-      attr: "Based On",
-      value: resource.basedOn,
-      max: "*",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/CarePlan",
-          "http://hl7.org/fhir/StructureDefinition/MedicationRequest",
-          "http://hl7.org/fhir/StructureDefinition/ServiceRequest",
-          "http://hl7.org/fhir/StructureDefinition/ImmunizationRecommendation",
-        ],
-      },
-    },
-    {
-      attr: "Group Identifier",
-      value: resource.groupIdentifier,
-      max: "1",
-      type: { code: "Identifier" },
-    },
+    ["Status", r.status, { code: "code" }, "1"],
+    ["Intent", r.intent, { code: "code" }, "1"],
+    ["Priority", r.priority, { code: "code" }, "1"],
+    ["Do Not Perform", r.doNotPerform, { code: "boolean" }, "1"],
+    ["Subject", r.subject, { code: "Reference" }, "1"],
+    ["Authored On", r.authoredOn, { code: "dateTime" }, "1"],
+    ["Requester", r.requester, { code: "Reference" }, "1"],
+    ["Performer Type", r.performerType, { code: "CodeableConcept" }, "1"],
+    [
+      "Instantiates Canonical",
+      r.instantiatesCanonical,
+      { code: "canonical" },
+      "*",
+    ],
+    ["Instantiates Uri", r.instantiatesUri, { code: "uri" }, "*"],
+    ["Based On", r.basedOn, { code: "Reference" }, "*"],
+    ["Group Identifier", r.groupIdentifier, { code: "Identifier" }, "1"],
   ]);
 }
 
-function narrativeMedicationStatement(
-  resource: MedicationStatement
-): Narrative {
+function narrativeMedicationStatement(r: MedicationStatement): Narrative {
   return buildNarrative([
-    {
-      attr: "Identifier",
-      value: resource.identifier,
-      max: "*",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Based On",
-      value: resource.basedOn,
-      max: "*",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/MedicationRequest",
-          "http://hl7.org/fhir/StructureDefinition/CarePlan",
-          "http://hl7.org/fhir/StructureDefinition/ServiceRequest",
-        ],
-      },
-    },
-    {
-      attr: "Part Of",
-      value: resource.partOf,
-      max: "*",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/MedicationAdministration",
-          "http://hl7.org/fhir/StructureDefinition/MedicationDispense",
-          "http://hl7.org/fhir/StructureDefinition/MedicationStatement",
-          "http://hl7.org/fhir/StructureDefinition/Procedure",
-          "http://hl7.org/fhir/StructureDefinition/Observation",
-        ],
-      },
-    },
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Category",
-      value: resource.category,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Subject",
-      value: resource.subject,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Patient",
-          "http://hl7.org/fhir/StructureDefinition/Group",
-        ],
-      },
-    },
-    {
-      attr: "Context",
-      value: resource.context,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Encounter",
-          "http://hl7.org/fhir/StructureDefinition/EpisodeOfCare",
-        ],
-      },
-    },
-    {
-      attr: "Date Asserted",
-      value: resource.dateAsserted,
-      max: "1",
-      type: { code: "dateTime" },
-    },
+    ["Identifier", r.identifier, { code: "Identifier" }, "*"],
+    ["Based On", r.basedOn, { code: "Reference" }, "*"],
+    ["Part Of", r.partOf, { code: "Reference" }, "*"],
+    ["Status", r.status, { code: "code" }, "1"],
+    ["Category", r.category, { code: "CodeableConcept" }, "1"],
+    ["Subject", r.subject, { code: "Reference" }, "1"],
+    ["Context", r.context, { code: "Reference" }, "1"],
+    ["Date Asserted", r.dateAsserted, { code: "dateTime" }, "1"],
   ]);
 }
 
 function narrativeMedicinalProductDefinition(
-  resource: MedicinalProductDefinition
+  r: MedicinalProductDefinition
 ): Narrative {
   return buildNarrative([
-    {
-      attr: "Identifier",
-      value: resource.identifier,
-      max: "*",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Type",
-      value: resource.type,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Domain",
-      value: resource.domain,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Version",
-      value: resource.version,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Status Date",
-      value: resource.statusDate,
-      max: "1",
-      type: { code: "dateTime" },
-    },
-    {
-      attr: "Description",
-      value: resource.description,
-      max: "1",
-      type: { code: "markdown" },
-    },
-    {
-      attr: "Combined Pharmaceutical Dose Form",
-      value: resource.combinedPharmaceuticalDoseForm,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Route",
-      value: resource.route,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Indication",
-      value: resource.indication,
-      max: "1",
-      type: { code: "markdown" },
-    },
-    {
-      attr: "Legal Status Of Supply",
-      value: resource.legalStatusOfSupply,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Additional Monitoring Indicator",
-      value: resource.additionalMonitoringIndicator,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Special Measures",
-      value: resource.specialMeasures,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Pediatric Use Indicator",
-      value: resource.pediatricUseIndicator,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Classification",
-      value: resource.classification,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Marketing Status",
-      value: resource.marketingStatus,
-      max: "*",
-      type: { code: "MarketingStatus" },
-    },
-    {
-      attr: "Packaged Medicinal Product",
-      value: resource.packagedMedicinalProduct,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Ingredient",
-      value: resource.ingredient,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Impurity",
-      value: resource.impurity,
-      max: "*",
-      type: {
-        code: "CodeableReference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/SubstanceDefinition",
-        ],
-      },
-    },
-    {
-      attr: "Attached Document",
-      value: resource.attachedDocument,
-      max: "*",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/DocumentReference",
-        ],
-      },
-    },
-    {
-      attr: "Master File",
-      value: resource.masterFile,
-      max: "*",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/DocumentReference",
-        ],
-      },
-    },
-    {
-      attr: "Contact",
-      value: resource.contact,
-      max: "*",
-      type: { code: "BackboneElement" },
-    },
-    {
-      attr: "Clinical Trial",
-      value: resource.clinicalTrial,
-      max: "*",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/ResearchStudy",
-        ],
-      },
-    },
-    {
-      attr: "Code",
-      value: resource.code,
-      max: "*",
-      type: { code: "Coding" },
-    },
-    {
-      attr: "Name",
-      value: resource.name,
-      max: "*",
-      type: { code: "BackboneElement" },
-    },
-    {
-      attr: "Cross Reference",
-      value: resource.crossReference,
-      max: "*",
-      type: { code: "BackboneElement" },
-    },
-    {
-      attr: "Operation",
-      value: resource.operation,
-      max: "*",
-      type: { code: "BackboneElement" },
-    },
-    {
-      attr: "Characteristic",
-      value: resource.characteristic,
-      max: "*",
-      type: { code: "BackboneElement" },
-    },
+    ["Identifier", r.identifier, { code: "Identifier" }, "*"],
+    ["Type", r.type, { code: "CodeableConcept" }, "1"],
+    ["Domain", r.domain, { code: "CodeableConcept" }, "1"],
+    ["Version", r.version, { code: "string" }, "1"],
+    ["Status", r.status, { code: "CodeableConcept" }, "1"],
+    ["Status Date", r.statusDate, { code: "dateTime" }, "1"],
+    ["Description", r.description, { code: "markdown" }, "1"],
+    [
+      "Combined Pharmaceutical Dose Form",
+      r.combinedPharmaceuticalDoseForm,
+      { code: "CodeableConcept" },
+      "1",
+    ],
+    ["Route", r.route, { code: "CodeableConcept" }, "*"],
+    ["Indication", r.indication, { code: "markdown" }, "1"],
+    [
+      "Legal Status Of Supply",
+      r.legalStatusOfSupply,
+      { code: "CodeableConcept" },
+      "1",
+    ],
+    [
+      "Additional Monitoring Indicator",
+      r.additionalMonitoringIndicator,
+      { code: "CodeableConcept" },
+      "1",
+    ],
+    ["Special Measures", r.specialMeasures, { code: "CodeableConcept" }, "*"],
+    [
+      "Pediatric Use Indicator",
+      r.pediatricUseIndicator,
+      { code: "CodeableConcept" },
+      "1",
+    ],
+    ["Classification", r.classification, { code: "CodeableConcept" }, "*"],
+    ["Marketing Status", r.marketingStatus, { code: "MarketingStatus" }, "*"],
+    [
+      "Packaged Medicinal Product",
+      r.packagedMedicinalProduct,
+      { code: "CodeableConcept" },
+      "*",
+    ],
+    ["Ingredient", r.ingredient, { code: "CodeableConcept" }, "*"],
+    ["Impurity", r.impurity, { code: "CodeableReference" }, "*"],
+    ["Attached Document", r.attachedDocument, { code: "Reference" }, "*"],
+    ["Master File", r.masterFile, { code: "Reference" }, "*"],
+    ["Contact", r.contact, { code: "BackboneElement" }, "*"],
+    ["Clinical Trial", r.clinicalTrial, { code: "Reference" }, "*"],
+    ["Code", r.code, { code: "Coding" }, "*"],
+    ["Name", r.name, { code: "BackboneElement" }, "*"],
+    ["Cross Reference", r.crossReference, { code: "BackboneElement" }, "*"],
+    ["Operation", r.operation, { code: "BackboneElement" }, "*"],
+    ["Characteristic", r.characteristic, { code: "BackboneElement" }, "*"],
   ]);
 }
 
-function narrativeMessageDefinition(resource: MessageDefinition): Narrative {
+function narrativeMessageDefinition(r: MessageDefinition): Narrative {
   return buildNarrative([
-    {
-      attr: "Url",
-      value: resource.url,
-      max: "1",
-      type: { code: "uri" },
-    },
-    {
-      attr: "Identifier",
-      value: resource.identifier,
-      max: "*",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Version",
-      value: resource.version,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Name",
-      value: resource.name,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Title",
-      value: resource.title,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Replaces",
-      value: resource.replaces,
-      max: "*",
-      type: {
-        code: "canonical",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/MessageDefinition",
-        ],
-      },
-    },
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Experimental",
-      value: resource.experimental,
-      max: "1",
-      type: { code: "boolean" },
-    },
-    {
-      attr: "Date",
-      value: resource.date,
-      max: "1",
-      type: { code: "dateTime" },
-    },
-    {
-      attr: "Publisher",
-      value: resource.publisher,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Contact",
-      value: resource.contact,
-      max: "*",
-      type: { code: "ContactDetail" },
-    },
-    {
-      attr: "Description",
-      value: resource.description,
-      max: "1",
-      type: { code: "markdown" },
-    },
-    {
-      attr: "Use Context",
-      value: resource.useContext,
-      max: "*",
-      type: { code: "UsageContext" },
-    },
-    {
-      attr: "Jurisdiction",
-      value: resource.jurisdiction,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Purpose",
-      value: resource.purpose,
-      max: "1",
-      type: { code: "markdown" },
-    },
-    {
-      attr: "Base",
-      value: resource.base,
-      max: "1",
-      type: {
-        code: "canonical",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/MessageDefinition",
-        ],
-      },
-    },
-    {
-      attr: "Parent",
-      value: resource.parent,
-      max: "*",
-      type: {
-        code: "canonical",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/ActivityDefinition",
-          "http://hl7.org/fhir/StructureDefinition/PlanDefinition",
-        ],
-      },
-    },
-    {
-      attr: "Category",
-      value: resource.category,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Focus",
-      value: resource.focus,
-      max: "*",
-      type: { code: "BackboneElement" },
-    },
+    ["Url", r.url, { code: "uri" }, "1"],
+    ["Identifier", r.identifier, { code: "Identifier" }, "*"],
+    ["Version", r.version, { code: "string" }, "1"],
+    ["Name", r.name, { code: "string" }, "1"],
+    ["Title", r.title, { code: "string" }, "1"],
+    ["Replaces", r.replaces, { code: "canonical" }, "*"],
+    ["Status", r.status, { code: "code" }, "1"],
+    ["Experimental", r.experimental, { code: "boolean" }, "1"],
+    ["Date", r.date, { code: "dateTime" }, "1"],
+    ["Publisher", r.publisher, { code: "string" }, "1"],
+    ["Contact", r.contact, { code: "ContactDetail" }, "*"],
+    ["Description", r.description, { code: "markdown" }, "1"],
+    ["Use Context", r.useContext, { code: "UsageContext" }, "*"],
+    ["Jurisdiction", r.jurisdiction, { code: "CodeableConcept" }, "*"],
+    ["Purpose", r.purpose, { code: "markdown" }, "1"],
+    ["Base", r.base, { code: "canonical" }, "1"],
+    ["Parent", r.parent, { code: "canonical" }, "*"],
+    ["Category", r.category, { code: "code" }, "1"],
+    ["Focus", r.focus, { code: "BackboneElement" }, "*"],
   ]);
 }
 
-function narrativeMessageHeader(resource: MessageHeader): Narrative {
+function narrativeMessageHeader(r: MessageHeader): Narrative {
   return buildNarrative([
-    {
-      attr: "Destination",
-      value: resource.destination,
-      max: "*",
-      type: { code: "BackboneElement" },
-    },
-    {
-      attr: "Sender",
-      value: resource.sender,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Practitioner",
-          "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
-          "http://hl7.org/fhir/StructureDefinition/Organization",
-        ],
-      },
-    },
-    {
-      attr: "Enterer",
-      value: resource.enterer,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Practitioner",
-          "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
-        ],
-      },
-    },
-    {
-      attr: "Author",
-      value: resource.author,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Practitioner",
-          "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
-        ],
-      },
-    },
-    {
-      attr: "Source",
-      value: resource.source,
-      max: "1",
-      type: { code: "BackboneElement" },
-    },
-    {
-      attr: "Responsible",
-      value: resource.responsible,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Practitioner",
-          "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
-          "http://hl7.org/fhir/StructureDefinition/Organization",
-        ],
-      },
-    },
-    {
-      attr: "Reason",
-      value: resource.reason,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Response",
-      value: resource.response,
-      max: "1",
-      type: { code: "BackboneElement" },
-    },
-    {
-      attr: "Focus",
-      value: resource.focus,
-      max: "*",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Resource"],
-      },
-    },
-    {
-      attr: "Definition",
-      value: resource.definition,
-      max: "1",
-      type: {
-        code: "canonical",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/MessageDefinition",
-        ],
-      },
-    },
+    ["Destination", r.destination, { code: "BackboneElement" }, "*"],
+    ["Sender", r.sender, { code: "Reference" }, "1"],
+    ["Enterer", r.enterer, { code: "Reference" }, "1"],
+    ["Author", r.author, { code: "Reference" }, "1"],
+    ["Source", r.source, { code: "BackboneElement" }, "1"],
+    ["Responsible", r.responsible, { code: "Reference" }, "1"],
+    ["Reason", r.reason, { code: "CodeableConcept" }, "1"],
+    ["Response", r.response, { code: "BackboneElement" }, "1"],
+    ["Focus", r.focus, { code: "Reference" }, "*"],
+    ["Definition", r.definition, { code: "canonical" }, "1"],
   ]);
 }
 
-function narrativeMolecularSequence(resource: MolecularSequence): Narrative {
+function narrativeMolecularSequence(r: MolecularSequence): Narrative {
   return buildNarrative([
-    {
-      attr: "Identifier",
-      value: resource.identifier,
-      max: "*",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Type",
-      value: resource.type,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Coordinate System",
-      value: resource.coordinateSystem,
-      max: "1",
-      type: { code: "integer" },
-    },
-    {
-      attr: "Patient",
-      value: resource.patient,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Patient"],
-      },
-    },
-    {
-      attr: "Specimen",
-      value: resource.specimen,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Specimen"],
-      },
-    },
-    {
-      attr: "Device",
-      value: resource.device,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Device"],
-      },
-    },
-    {
-      attr: "Performer",
-      value: resource.performer,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Organization"],
-      },
-    },
-    {
-      attr: "Quantity",
-      value: resource.quantity,
-      max: "1",
-      type: { code: "Quantity" },
-    },
-    {
-      attr: "Reference Seq",
-      value: resource.referenceSeq,
-      max: "1",
-      type: { code: "BackboneElement" },
-    },
-    {
-      attr: "Variant",
-      value: resource.variant,
-      max: "*",
-      type: { code: "BackboneElement" },
-    },
-    {
-      attr: "Observed Seq",
-      value: resource.observedSeq,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Quality",
-      value: resource.quality,
-      max: "*",
-      type: { code: "BackboneElement" },
-    },
-    {
-      attr: "Read Coverage",
-      value: resource.readCoverage,
-      max: "1",
-      type: { code: "integer" },
-    },
-    {
-      attr: "Repository",
-      value: resource.repository,
-      max: "*",
-      type: { code: "BackboneElement" },
-    },
-    {
-      attr: "Pointer",
-      value: resource.pointer,
-      max: "*",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/MolecularSequence",
-        ],
-      },
-    },
-    {
-      attr: "Structure Variant",
-      value: resource.structureVariant,
-      max: "*",
-      type: { code: "BackboneElement" },
-    },
+    ["Identifier", r.identifier, { code: "Identifier" }, "*"],
+    ["Type", r.type, { code: "code" }, "1"],
+    ["Coordinate System", r.coordinateSystem, { code: "integer" }, "1"],
+    ["Patient", r.patient, { code: "Reference" }, "1"],
+    ["Specimen", r.specimen, { code: "Reference" }, "1"],
+    ["Device", r.device, { code: "Reference" }, "1"],
+    ["Performer", r.performer, { code: "Reference" }, "1"],
+    ["Quantity", r.quantity, { code: "Quantity" }, "1"],
+    ["Reference Seq", r.referenceSeq, { code: "BackboneElement" }, "1"],
+    ["Variant", r.variant, { code: "BackboneElement" }, "*"],
+    ["Observed Seq", r.observedSeq, { code: "string" }, "1"],
+    ["Quality", r.quality, { code: "BackboneElement" }, "*"],
+    ["Read Coverage", r.readCoverage, { code: "integer" }, "1"],
+    ["Repository", r.repository, { code: "BackboneElement" }, "*"],
+    ["Pointer", r.pointer, { code: "Reference" }, "*"],
+    ["Structure Variant", r.structureVariant, { code: "BackboneElement" }, "*"],
   ]);
 }
 
-function narrativeNamingSystem(resource: NamingSystem): Narrative {
+function narrativeNamingSystem(r: NamingSystem): Narrative {
   return buildNarrative([
-    {
-      attr: "Name",
-      value: resource.name,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Kind",
-      value: resource.kind,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Date",
-      value: resource.date,
-      max: "1",
-      type: { code: "dateTime" },
-    },
-    {
-      attr: "Publisher",
-      value: resource.publisher,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Contact",
-      value: resource.contact,
-      max: "*",
-      type: { code: "ContactDetail" },
-    },
-    {
-      attr: "Use Context",
-      value: resource.useContext,
-      max: "*",
-      type: { code: "UsageContext" },
-    },
-    {
-      attr: "Jurisdiction",
-      value: resource.jurisdiction,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Unique Id",
-      value: resource.uniqueId,
-      max: "*",
-      type: { code: "BackboneElement" },
-    },
+    ["Name", r.name, { code: "string" }, "1"],
+    ["Status", r.status, { code: "code" }, "1"],
+    ["Kind", r.kind, { code: "code" }, "1"],
+    ["Date", r.date, { code: "dateTime" }, "1"],
+    ["Publisher", r.publisher, { code: "string" }, "1"],
+    ["Contact", r.contact, { code: "ContactDetail" }, "*"],
+    ["Use Context", r.useContext, { code: "UsageContext" }, "*"],
+    ["Jurisdiction", r.jurisdiction, { code: "CodeableConcept" }, "*"],
+    ["Unique Id", r.uniqueId, { code: "BackboneElement" }, "*"],
   ]);
 }
 
-function narrativeNutritionOrder(resource: NutritionOrder): Narrative {
+function narrativeNutritionOrder(r: NutritionOrder): Narrative {
   return buildNarrative([
-    {
-      attr: "Instantiates Canonical",
-      value: resource.instantiatesCanonical,
-      max: "*",
-      type: {
-        code: "canonical",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/ActivityDefinition",
-          "http://hl7.org/fhir/StructureDefinition/PlanDefinition",
-        ],
-      },
-    },
-    {
-      attr: "Instantiates Uri",
-      value: resource.instantiatesUri,
-      max: "*",
-      type: { code: "uri" },
-    },
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Intent",
-      value: resource.intent,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Patient",
-      value: resource.patient,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Patient"],
-      },
-    },
-    {
-      attr: "Date Time",
-      value: resource.dateTime,
-      max: "1",
-      type: { code: "dateTime" },
-    },
-    {
-      attr: "Orderer",
-      value: resource.orderer,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Practitioner",
-          "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
-        ],
-      },
-    },
+    [
+      "Instantiates Canonical",
+      r.instantiatesCanonical,
+      { code: "canonical" },
+      "*",
+    ],
+    ["Instantiates Uri", r.instantiatesUri, { code: "uri" }, "*"],
+    ["Status", r.status, { code: "code" }, "1"],
+    ["Intent", r.intent, { code: "code" }, "1"],
+    ["Patient", r.patient, { code: "Reference" }, "1"],
+    ["Date Time", r.dateTime, { code: "dateTime" }, "1"],
+    ["Orderer", r.orderer, { code: "Reference" }, "1"],
   ]);
 }
 
-function narrativeNutritionProduct(resource: NutritionProduct): Narrative {
+function narrativeNutritionProduct(r: NutritionProduct): Narrative {
   return buildNarrative([
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Category",
-      value: resource.category,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Code",
-      value: resource.code,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Manufacturer",
-      value: resource.manufacturer,
-      max: "*",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Organization"],
-      },
-    },
-    {
-      attr: "Nutrient",
-      value: resource.nutrient,
-      max: "*",
-      type: { code: "BackboneElement" },
-    },
+    ["Status", r.status, { code: "code" }, "1"],
+    ["Category", r.category, { code: "CodeableConcept" }, "*"],
+    ["Code", r.code, { code: "CodeableConcept" }, "1"],
+    ["Manufacturer", r.manufacturer, { code: "Reference" }, "*"],
+    ["Nutrient", r.nutrient, { code: "BackboneElement" }, "*"],
   ]);
 }
 
-function narrativeObservation(resource: Observation): Narrative {
+function narrativeObservation(r: Observation): Narrative {
   return buildNarrative([
-    {
-      attr: "Identifier",
-      value: resource.identifier,
-      max: "*",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Based On",
-      value: resource.basedOn,
-      max: "*",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/CarePlan",
-          "http://hl7.org/fhir/StructureDefinition/DeviceRequest",
-          "http://hl7.org/fhir/StructureDefinition/ImmunizationRecommendation",
-          "http://hl7.org/fhir/StructureDefinition/MedicationRequest",
-          "http://hl7.org/fhir/StructureDefinition/NutritionOrder",
-          "http://hl7.org/fhir/StructureDefinition/ServiceRequest",
-        ],
-      },
-    },
-    {
-      attr: "Part Of",
-      value: resource.partOf,
-      max: "*",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/MedicationAdministration",
-          "http://hl7.org/fhir/StructureDefinition/MedicationDispense",
-          "http://hl7.org/fhir/StructureDefinition/MedicationStatement",
-          "http://hl7.org/fhir/StructureDefinition/Procedure",
-          "http://hl7.org/fhir/StructureDefinition/Immunization",
-          "http://hl7.org/fhir/StructureDefinition/ImagingStudy",
-        ],
-      },
-    },
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Code",
-      value: resource.code,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Subject",
-      value: resource.subject,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Patient",
-          "http://hl7.org/fhir/StructureDefinition/Group",
-          "http://hl7.org/fhir/StructureDefinition/Device",
-          "http://hl7.org/fhir/StructureDefinition/Location",
-          "http://hl7.org/fhir/StructureDefinition/Organization",
-          "http://hl7.org/fhir/StructureDefinition/Procedure",
-          "http://hl7.org/fhir/StructureDefinition/Practitioner",
-          "http://hl7.org/fhir/StructureDefinition/Medication",
-          "http://hl7.org/fhir/StructureDefinition/Substance",
-        ],
-      },
-    },
-    {
-      attr: "Focus",
-      value: resource.focus,
-      max: "*",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Resource"],
-      },
-    },
-    {
-      attr: "Encounter",
-      value: resource.encounter,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Encounter"],
-      },
-    },
-    {
-      attr: "Issued",
-      value: resource.issued,
-      max: "1",
-      type: { code: "instant" },
-    },
-    {
-      attr: "Performer",
-      value: resource.performer,
-      max: "*",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Practitioner",
-          "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
-          "http://hl7.org/fhir/StructureDefinition/Organization",
-          "http://hl7.org/fhir/StructureDefinition/CareTeam",
-          "http://hl7.org/fhir/StructureDefinition/Patient",
-          "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
-        ],
-      },
-    },
-    {
-      attr: "Has Member",
-      value: resource.hasMember,
-      max: "*",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Observation",
-          "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse",
-          "http://hl7.org/fhir/StructureDefinition/MolecularSequence",
-        ],
-      },
-    },
-    {
-      attr: "Derived From",
-      value: resource.derivedFrom,
-      max: "*",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/DocumentReference",
-          "http://hl7.org/fhir/StructureDefinition/ImagingStudy",
-          "http://hl7.org/fhir/StructureDefinition/Media",
-          "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse",
-          "http://hl7.org/fhir/StructureDefinition/Observation",
-          "http://hl7.org/fhir/StructureDefinition/MolecularSequence",
-        ],
-      },
-    },
-    {
-      attr: "Component",
-      value: resource.component,
-      max: "*",
-      type: { code: "BackboneElement" },
-    },
+    ["Identifier", r.identifier, { code: "Identifier" }, "*"],
+    ["Based On", r.basedOn, { code: "Reference" }, "*"],
+    ["Part Of", r.partOf, { code: "Reference" }, "*"],
+    ["Status", r.status, { code: "code" }, "1"],
+    ["Code", r.code, { code: "CodeableConcept" }, "1"],
+    ["Subject", r.subject, { code: "Reference" }, "1"],
+    ["Focus", r.focus, { code: "Reference" }, "*"],
+    ["Encounter", r.encounter, { code: "Reference" }, "1"],
+    ["Issued", r.issued, { code: "instant" }, "1"],
+    ["Performer", r.performer, { code: "Reference" }, "*"],
+    ["Has Member", r.hasMember, { code: "Reference" }, "*"],
+    ["Derived From", r.derivedFrom, { code: "Reference" }, "*"],
+    ["Component", r.component, { code: "BackboneElement" }, "*"],
   ]);
 }
 
-function narrativeObservationDefinition(
-  resource: ObservationDefinition
-): Narrative {
+function narrativeObservationDefinition(r: ObservationDefinition): Narrative {
   return buildNarrative([
-    {
-      attr: "Category",
-      value: resource.category,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Code",
-      value: resource.code,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Identifier",
-      value: resource.identifier,
-      max: "*",
-      type: { code: "Identifier" },
-    },
+    ["Category", r.category, { code: "CodeableConcept" }, "*"],
+    ["Code", r.code, { code: "CodeableConcept" }, "1"],
+    ["Identifier", r.identifier, { code: "Identifier" }, "*"],
   ]);
 }
 
-function narrativeOperationDefinition(
-  resource: OperationDefinition
-): Narrative {
+function narrativeOperationDefinition(r: OperationDefinition): Narrative {
   return buildNarrative([
-    {
-      attr: "Url",
-      value: resource.url,
-      max: "1",
-      type: { code: "uri" },
-    },
-    {
-      attr: "Version",
-      value: resource.version,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Name",
-      value: resource.name,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Title",
-      value: resource.title,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Kind",
-      value: resource.kind,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Experimental",
-      value: resource.experimental,
-      max: "1",
-      type: { code: "boolean" },
-    },
-    {
-      attr: "Date",
-      value: resource.date,
-      max: "1",
-      type: { code: "dateTime" },
-    },
-    {
-      attr: "Publisher",
-      value: resource.publisher,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Contact",
-      value: resource.contact,
-      max: "*",
-      type: { code: "ContactDetail" },
-    },
-    {
-      attr: "Use Context",
-      value: resource.useContext,
-      max: "*",
-      type: { code: "UsageContext" },
-    },
-    {
-      attr: "Jurisdiction",
-      value: resource.jurisdiction,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Affects State",
-      value: resource.affectsState,
-      max: "1",
-      type: { code: "boolean" },
-    },
-    {
-      attr: "Code",
-      value: resource.code,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Base",
-      value: resource.base,
-      max: "1",
-      type: {
-        code: "canonical",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/OperationDefinition",
-        ],
-      },
-    },
-    {
-      attr: "Resource",
-      value: resource.resource,
-      max: "*",
-      type: { code: "code" },
-    },
-    {
-      attr: "System",
-      value: resource.system,
-      max: "1",
-      type: { code: "boolean" },
-    },
-    {
-      attr: "Type",
-      value: resource.type,
-      max: "1",
-      type: { code: "boolean" },
-    },
-    {
-      attr: "Instance",
-      value: resource.instance,
-      max: "1",
-      type: { code: "boolean" },
-    },
+    ["Url", r.url, { code: "uri" }, "1"],
+    ["Version", r.version, { code: "string" }, "1"],
+    ["Name", r.name, { code: "string" }, "1"],
+    ["Title", r.title, { code: "string" }, "1"],
+    ["Status", r.status, { code: "code" }, "1"],
+    ["Kind", r.kind, { code: "code" }, "1"],
+    ["Experimental", r.experimental, { code: "boolean" }, "1"],
+    ["Date", r.date, { code: "dateTime" }, "1"],
+    ["Publisher", r.publisher, { code: "string" }, "1"],
+    ["Contact", r.contact, { code: "ContactDetail" }, "*"],
+    ["Use Context", r.useContext, { code: "UsageContext" }, "*"],
+    ["Jurisdiction", r.jurisdiction, { code: "CodeableConcept" }, "*"],
+    ["Affects State", r.affectsState, { code: "boolean" }, "1"],
+    ["Code", r.code, { code: "code" }, "1"],
+    ["Base", r.base, { code: "canonical" }, "1"],
+    ["Resource", r.resource, { code: "code" }, "*"],
+    ["System", r.system, { code: "boolean" }, "1"],
+    ["Type", r.type, { code: "boolean" }, "1"],
+    ["Instance", r.instance, { code: "boolean" }, "1"],
   ]);
 }
 
-function narrativeOperationOutcome(resource: OperationOutcome): Narrative {
-  return buildNarrative([
-    {
-      attr: "Issue",
-      value: resource.issue,
-      max: "*",
-      type: { code: "BackboneElement" },
-    },
-  ]);
+function narrativeOperationOutcome(r: OperationOutcome): Narrative {
+  return buildNarrative([["Issue", r.issue, { code: "BackboneElement" }, "*"]]);
 }
 
-function narrativeOrganization(resource: Organization): Narrative {
+function narrativeOrganization(r: Organization): Narrative {
   return buildNarrative([
-    {
-      attr: "Identifier",
-      value: resource.identifier,
-      max: "*",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Active",
-      value: resource.active,
-      max: "1",
-      type: { code: "boolean" },
-    },
-    {
-      attr: "Type",
-      value: resource.type,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Name",
-      value: resource.name,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Part Of",
-      value: resource.partOf,
-      max: "1",
-      type: {
+    ["Identifier", r.identifier, { code: "Identifier" }, "*"],
+    ["Active", r.active, { code: "boolean" }, "1"],
+    ["Type", r.type, { code: "CodeableConcept" }, "*"],
+    ["Name", r.name, { code: "string" }, "1"],
+    [
+      "Part Of",
+      r.partOf,
+      {
         extension: [
           {
             url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy",
@@ -9825,2380 +3631,531 @@ function narrativeOrganization(resource: Organization): Narrative {
           },
         ],
         code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Organization"],
       },
-    },
+      "1",
+    ],
   ]);
 }
 
 function narrativeOrganizationAffiliation(
-  resource: OrganizationAffiliation
+  r: OrganizationAffiliation
 ): Narrative {
   return buildNarrative([
-    {
-      attr: "Identifier",
-      value: resource.identifier,
-      max: "*",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Active",
-      value: resource.active,
-      max: "1",
-      type: { code: "boolean" },
-    },
-    {
-      attr: "Period",
-      value: resource.period,
-      max: "1",
-      type: { code: "Period" },
-    },
-    {
-      attr: "Organization",
-      value: resource.organization,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Organization"],
-      },
-    },
-    {
-      attr: "Participating Organization",
-      value: resource.participatingOrganization,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Organization"],
-      },
-    },
-    {
-      attr: "Network",
-      value: resource.network,
-      max: "*",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Organization"],
-      },
-    },
-    {
-      attr: "Code",
-      value: resource.code,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Specialty",
-      value: resource.specialty,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Location",
-      value: resource.location,
-      max: "*",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Location"],
-      },
-    },
-    {
-      attr: "Telecom",
-      value: resource.telecom,
-      max: "*",
-      type: { code: "ContactPoint" },
-    },
+    ["Identifier", r.identifier, { code: "Identifier" }, "*"],
+    ["Active", r.active, { code: "boolean" }, "1"],
+    ["Period", r.period, { code: "Period" }, "1"],
+    ["Organization", r.organization, { code: "Reference" }, "1"],
+    [
+      "Participating Organization",
+      r.participatingOrganization,
+      { code: "Reference" },
+      "1",
+    ],
+    ["Network", r.network, { code: "Reference" }, "*"],
+    ["Code", r.code, { code: "CodeableConcept" }, "*"],
+    ["Specialty", r.specialty, { code: "CodeableConcept" }, "*"],
+    ["Location", r.location, { code: "Reference" }, "*"],
+    ["Telecom", r.telecom, { code: "ContactPoint" }, "*"],
   ]);
 }
 
 function narrativePackagedProductDefinition(
-  resource: PackagedProductDefinition
+  r: PackagedProductDefinition
 ): Narrative {
   return buildNarrative([
-    {
-      attr: "Identifier",
-      value: resource.identifier,
-      max: "*",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Name",
-      value: resource.name,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Type",
-      value: resource.type,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Package For",
-      value: resource.packageFor,
-      max: "*",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/MedicinalProductDefinition",
-        ],
-      },
-    },
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Status Date",
-      value: resource.statusDate,
-      max: "1",
-      type: { code: "dateTime" },
-    },
-    {
-      attr: "Contained Item Quantity",
-      value: resource.containedItemQuantity,
-      max: "*",
-      type: { code: "Quantity" },
-    },
-    {
-      attr: "Description",
-      value: resource.description,
-      max: "1",
-      type: { code: "markdown" },
-    },
-    {
-      attr: "Legal Status Of Supply",
-      value: resource.legalStatusOfSupply,
-      max: "*",
-      type: { code: "BackboneElement" },
-    },
-    {
-      attr: "Marketing Status",
-      value: resource.marketingStatus,
-      max: "*",
-      type: { code: "MarketingStatus" },
-    },
-    {
-      attr: "Characteristic",
-      value: resource.characteristic,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Copackaged Indicator",
-      value: resource.copackagedIndicator,
-      max: "1",
-      type: { code: "boolean" },
-    },
-    {
-      attr: "Manufacturer",
-      value: resource.manufacturer,
-      max: "*",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Organization"],
-      },
-    },
-    {
-      attr: "Package",
-      value: resource.package,
-      max: "1",
-      type: { code: "BackboneElement" },
-    },
+    ["Identifier", r.identifier, { code: "Identifier" }, "*"],
+    ["Name", r.name, { code: "string" }, "1"],
+    ["Type", r.type, { code: "CodeableConcept" }, "1"],
+    ["Package For", r.packageFor, { code: "Reference" }, "*"],
+    ["Status", r.status, { code: "CodeableConcept" }, "1"],
+    ["Status Date", r.statusDate, { code: "dateTime" }, "1"],
+    [
+      "Contained Item Quantity",
+      r.containedItemQuantity,
+      { code: "Quantity" },
+      "*",
+    ],
+    ["Description", r.description, { code: "markdown" }, "1"],
+    [
+      "Legal Status Of Supply",
+      r.legalStatusOfSupply,
+      { code: "BackboneElement" },
+      "*",
+    ],
+    ["Marketing Status", r.marketingStatus, { code: "MarketingStatus" }, "*"],
+    ["Characteristic", r.characteristic, { code: "CodeableConcept" }, "*"],
+    ["Copackaged Indicator", r.copackagedIndicator, { code: "boolean" }, "1"],
+    ["Manufacturer", r.manufacturer, { code: "Reference" }, "*"],
+    ["Package", r.package, { code: "BackboneElement" }, "1"],
   ]);
 }
 
-function narrativePatient(resource: Patient): Narrative {
+function narrativePatient(r: Patient): Narrative {
   return buildNarrative([
-    {
-      attr: "Identifier",
-      value: resource.identifier,
-      max: "*",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Active",
-      value: resource.active,
-      max: "1",
-      type: { code: "boolean" },
-    },
-    {
-      attr: "Name",
-      value: resource.name,
-      max: "*",
-      type: { code: "HumanName" },
-    },
-    {
-      attr: "Telecom",
-      value: resource.telecom,
-      max: "*",
-      type: { code: "ContactPoint" },
-    },
-    {
-      attr: "Gender",
-      value: resource.gender,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Birth Date",
-      value: resource.birthDate,
-      max: "1",
-      type: { code: "date" },
-    },
-    {
-      attr: "Address",
-      value: resource.address,
-      max: "*",
-      type: { code: "Address" },
-    },
-    {
-      attr: "Managing Organization",
-      value: resource.managingOrganization,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Organization"],
-      },
-    },
-    {
-      attr: "Link",
-      value: resource.link,
-      max: "*",
-      type: { code: "BackboneElement" },
-    },
+    ["Identifier", r.identifier, { code: "Identifier" }, "*"],
+    ["Active", r.active, { code: "boolean" }, "1"],
+    ["Name", r.name, { code: "HumanName" }, "*"],
+    ["Telecom", r.telecom, { code: "ContactPoint" }, "*"],
+    ["Gender", r.gender, { code: "code" }, "1"],
+    ["Birth Date", r.birthDate, { code: "date" }, "1"],
+    ["Address", r.address, { code: "Address" }, "*"],
+    [
+      "Managing Organization",
+      r.managingOrganization,
+      { code: "Reference" },
+      "1",
+    ],
+    ["Link", r.link, { code: "BackboneElement" }, "*"],
   ]);
 }
 
-function narrativePaymentNotice(resource: PaymentNotice): Narrative {
+function narrativePaymentNotice(r: PaymentNotice): Narrative {
   return buildNarrative([
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Created",
-      value: resource.created,
-      max: "1",
-      type: { code: "dateTime" },
-    },
-    {
-      attr: "Payment",
-      value: resource.payment,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/PaymentReconciliation",
-        ],
-      },
-    },
-    {
-      attr: "Recipient",
-      value: resource.recipient,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Organization"],
-      },
-    },
-    {
-      attr: "Amount",
-      value: resource.amount,
-      max: "1",
-      type: { code: "Money" },
-    },
+    ["Status", r.status, { code: "code" }, "1"],
+    ["Created", r.created, { code: "dateTime" }, "1"],
+    ["Payment", r.payment, { code: "Reference" }, "1"],
+    ["Recipient", r.recipient, { code: "Reference" }, "1"],
+    ["Amount", r.amount, { code: "Money" }, "1"],
   ]);
 }
 
-function narrativePaymentReconciliation(
-  resource: PaymentReconciliation
-): Narrative {
+function narrativePaymentReconciliation(r: PaymentReconciliation): Narrative {
   return buildNarrative([
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Period",
-      value: resource.period,
-      max: "1",
-      type: { code: "Period" },
-    },
-    {
-      attr: "Created",
-      value: resource.created,
-      max: "1",
-      type: { code: "dateTime" },
-    },
-    {
-      attr: "Payment Issuer",
-      value: resource.paymentIssuer,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Organization"],
-      },
-    },
-    {
-      attr: "Payment Date",
-      value: resource.paymentDate,
-      max: "1",
-      type: { code: "date" },
-    },
-    {
-      attr: "Payment Amount",
-      value: resource.paymentAmount,
-      max: "1",
-      type: { code: "Money" },
-    },
+    ["Status", r.status, { code: "code" }, "1"],
+    ["Period", r.period, { code: "Period" }, "1"],
+    ["Created", r.created, { code: "dateTime" }, "1"],
+    ["Payment Issuer", r.paymentIssuer, { code: "Reference" }, "1"],
+    ["Payment Date", r.paymentDate, { code: "date" }, "1"],
+    ["Payment Amount", r.paymentAmount, { code: "Money" }, "1"],
   ]);
 }
 
-function narrativePerson(resource: Person): Narrative {
+function narrativePerson(r: Person): Narrative {
   return buildNarrative([
-    {
-      attr: "Name",
-      value: resource.name,
-      max: "*",
-      type: { code: "HumanName" },
-    },
-    {
-      attr: "Telecom",
-      value: resource.telecom,
-      max: "*",
-      type: { code: "ContactPoint" },
-    },
-    {
-      attr: "Gender",
-      value: resource.gender,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Birth Date",
-      value: resource.birthDate,
-      max: "1",
-      type: { code: "date" },
-    },
-    {
-      attr: "Managing Organization",
-      value: resource.managingOrganization,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Organization"],
-      },
-    },
-    {
-      attr: "Active",
-      value: resource.active,
-      max: "1",
-      type: { code: "boolean" },
-    },
+    ["Name", r.name, { code: "HumanName" }, "*"],
+    ["Telecom", r.telecom, { code: "ContactPoint" }, "*"],
+    ["Gender", r.gender, { code: "code" }, "1"],
+    ["Birth Date", r.birthDate, { code: "date" }, "1"],
+    [
+      "Managing Organization",
+      r.managingOrganization,
+      { code: "Reference" },
+      "1",
+    ],
+    ["Active", r.active, { code: "boolean" }, "1"],
   ]);
 }
 
-function narrativePlanDefinition(resource: PlanDefinition): Narrative {
+function narrativePlanDefinition(r: PlanDefinition): Narrative {
   return buildNarrative([
-    {
-      attr: "Url",
-      value: resource.url,
-      max: "1",
-      type: { code: "uri" },
-    },
-    {
-      attr: "Identifier",
-      value: resource.identifier,
-      max: "*",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Version",
-      value: resource.version,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Name",
-      value: resource.name,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Title",
-      value: resource.title,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Type",
-      value: resource.type,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Experimental",
-      value: resource.experimental,
-      max: "1",
-      type: { code: "boolean" },
-    },
-    {
-      attr: "Date",
-      value: resource.date,
-      max: "1",
-      type: { code: "dateTime" },
-    },
-    {
-      attr: "Publisher",
-      value: resource.publisher,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Contact",
-      value: resource.contact,
-      max: "*",
-      type: { code: "ContactDetail" },
-    },
-    {
-      attr: "Description",
-      value: resource.description,
-      max: "1",
-      type: { code: "markdown" },
-    },
-    {
-      attr: "Use Context",
-      value: resource.useContext,
-      max: "*",
-      type: { code: "UsageContext" },
-    },
-    {
-      attr: "Jurisdiction",
-      value: resource.jurisdiction,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Effective Period",
-      value: resource.effectivePeriod,
-      max: "1",
-      type: { code: "Period" },
-    },
+    ["Url", r.url, { code: "uri" }, "1"],
+    ["Identifier", r.identifier, { code: "Identifier" }, "*"],
+    ["Version", r.version, { code: "string" }, "1"],
+    ["Name", r.name, { code: "string" }, "1"],
+    ["Title", r.title, { code: "string" }, "1"],
+    ["Type", r.type, { code: "CodeableConcept" }, "1"],
+    ["Status", r.status, { code: "code" }, "1"],
+    ["Experimental", r.experimental, { code: "boolean" }, "1"],
+    ["Date", r.date, { code: "dateTime" }, "1"],
+    ["Publisher", r.publisher, { code: "string" }, "1"],
+    ["Contact", r.contact, { code: "ContactDetail" }, "*"],
+    ["Description", r.description, { code: "markdown" }, "1"],
+    ["Use Context", r.useContext, { code: "UsageContext" }, "*"],
+    ["Jurisdiction", r.jurisdiction, { code: "CodeableConcept" }, "*"],
+    ["Effective Period", r.effectivePeriod, { code: "Period" }, "1"],
   ]);
 }
 
-function narrativePractitioner(resource: Practitioner): Narrative {
+function narrativePractitioner(r: Practitioner): Narrative {
   return buildNarrative([
-    {
-      attr: "Identifier",
-      value: resource.identifier,
-      max: "*",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Active",
-      value: resource.active,
-      max: "1",
-      type: { code: "boolean" },
-    },
-    {
-      attr: "Name",
-      value: resource.name,
-      max: "*",
-      type: { code: "HumanName" },
-    },
-    {
-      attr: "Telecom",
-      value: resource.telecom,
-      max: "*",
-      type: { code: "ContactPoint" },
-    },
-    {
-      attr: "Address",
-      value: resource.address,
-      max: "*",
-      type: { code: "Address" },
-    },
-    {
-      attr: "Gender",
-      value: resource.gender,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Birth Date",
-      value: resource.birthDate,
-      max: "1",
-      type: { code: "date" },
-    },
+    ["Identifier", r.identifier, { code: "Identifier" }, "*"],
+    ["Active", r.active, { code: "boolean" }, "1"],
+    ["Name", r.name, { code: "HumanName" }, "*"],
+    ["Telecom", r.telecom, { code: "ContactPoint" }, "*"],
+    ["Address", r.address, { code: "Address" }, "*"],
+    ["Gender", r.gender, { code: "code" }, "1"],
+    ["Birth Date", r.birthDate, { code: "date" }, "1"],
   ]);
 }
 
-function narrativePractitionerRole(resource: PractitionerRole): Narrative {
+function narrativePractitionerRole(r: PractitionerRole): Narrative {
   return buildNarrative([
-    {
-      attr: "Identifier",
-      value: resource.identifier,
-      max: "*",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Active",
-      value: resource.active,
-      max: "1",
-      type: { code: "boolean" },
-    },
-    {
-      attr: "Period",
-      value: resource.period,
-      max: "1",
-      type: { code: "Period" },
-    },
-    {
-      attr: "Practitioner",
-      value: resource.practitioner,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Practitioner"],
-      },
-    },
-    {
-      attr: "Organization",
-      value: resource.organization,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Organization"],
-      },
-    },
-    {
-      attr: "Code",
-      value: resource.code,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Specialty",
-      value: resource.specialty,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Location",
-      value: resource.location,
-      max: "*",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Location"],
-      },
-    },
-    {
-      attr: "Telecom",
-      value: resource.telecom,
-      max: "*",
-      type: { code: "ContactPoint" },
-    },
+    ["Identifier", r.identifier, { code: "Identifier" }, "*"],
+    ["Active", r.active, { code: "boolean" }, "1"],
+    ["Period", r.period, { code: "Period" }, "1"],
+    ["Practitioner", r.practitioner, { code: "Reference" }, "1"],
+    ["Organization", r.organization, { code: "Reference" }, "1"],
+    ["Code", r.code, { code: "CodeableConcept" }, "*"],
+    ["Specialty", r.specialty, { code: "CodeableConcept" }, "*"],
+    ["Location", r.location, { code: "Reference" }, "*"],
+    ["Telecom", r.telecom, { code: "ContactPoint" }, "*"],
   ]);
 }
 
-function narrativeProcedure(resource: Procedure): Narrative {
+function narrativeProcedure(r: Procedure): Narrative {
   return buildNarrative([
-    {
-      attr: "Identifier",
-      value: resource.identifier,
-      max: "*",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Instantiates Canonical",
-      value: resource.instantiatesCanonical,
-      max: "*",
-      type: {
-        code: "canonical",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/PlanDefinition",
-          "http://hl7.org/fhir/StructureDefinition/ActivityDefinition",
-          "http://hl7.org/fhir/StructureDefinition/Measure",
-          "http://hl7.org/fhir/StructureDefinition/OperationDefinition",
-          "http://hl7.org/fhir/StructureDefinition/Questionnaire",
-        ],
-      },
-    },
-    {
-      attr: "Instantiates Uri",
-      value: resource.instantiatesUri,
-      max: "*",
-      type: { code: "uri" },
-    },
-    {
-      attr: "Based On",
-      value: resource.basedOn,
-      max: "*",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/CarePlan",
-          "http://hl7.org/fhir/StructureDefinition/ServiceRequest",
-        ],
-      },
-    },
-    {
-      attr: "Part Of",
-      value: resource.partOf,
-      max: "*",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Procedure",
-          "http://hl7.org/fhir/StructureDefinition/Observation",
-          "http://hl7.org/fhir/StructureDefinition/MedicationAdministration",
-        ],
-      },
-    },
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Status Reason",
-      value: resource.statusReason,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Category",
-      value: resource.category,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Code",
-      value: resource.code,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Subject",
-      value: resource.subject,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Patient",
-          "http://hl7.org/fhir/StructureDefinition/Group",
-        ],
-      },
-    },
-    {
-      attr: "Encounter",
-      value: resource.encounter,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Encounter"],
-      },
-    },
-    {
-      attr: "Recorder",
-      value: resource.recorder,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Patient",
-          "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
-          "http://hl7.org/fhir/StructureDefinition/Practitioner",
-          "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
-        ],
-      },
-    },
-    {
-      attr: "Asserter",
-      value: resource.asserter,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Patient",
-          "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
-          "http://hl7.org/fhir/StructureDefinition/Practitioner",
-          "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
-        ],
-      },
-    },
-    {
-      attr: "Performer",
-      value: resource.performer,
-      max: "*",
-      type: { code: "BackboneElement" },
-    },
-    {
-      attr: "Location",
-      value: resource.location,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Location"],
-      },
-    },
-    {
-      attr: "Reason Code",
-      value: resource.reasonCode,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Reason Reference",
-      value: resource.reasonReference,
-      max: "*",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Condition",
-          "http://hl7.org/fhir/StructureDefinition/Observation",
-          "http://hl7.org/fhir/StructureDefinition/Procedure",
-          "http://hl7.org/fhir/StructureDefinition/DiagnosticReport",
-          "http://hl7.org/fhir/StructureDefinition/DocumentReference",
-        ],
-      },
-    },
-    {
-      attr: "Body Site",
-      value: resource.bodySite,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Outcome",
-      value: resource.outcome,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
+    ["Identifier", r.identifier, { code: "Identifier" }, "*"],
+    [
+      "Instantiates Canonical",
+      r.instantiatesCanonical,
+      { code: "canonical" },
+      "*",
+    ],
+    ["Instantiates Uri", r.instantiatesUri, { code: "uri" }, "*"],
+    ["Based On", r.basedOn, { code: "Reference" }, "*"],
+    ["Part Of", r.partOf, { code: "Reference" }, "*"],
+    ["Status", r.status, { code: "code" }, "1"],
+    ["Status Reason", r.statusReason, { code: "CodeableConcept" }, "1"],
+    ["Category", r.category, { code: "CodeableConcept" }, "1"],
+    ["Code", r.code, { code: "CodeableConcept" }, "1"],
+    ["Subject", r.subject, { code: "Reference" }, "1"],
+    ["Encounter", r.encounter, { code: "Reference" }, "1"],
+    ["Recorder", r.recorder, { code: "Reference" }, "1"],
+    ["Asserter", r.asserter, { code: "Reference" }, "1"],
+    ["Performer", r.performer, { code: "BackboneElement" }, "*"],
+    ["Location", r.location, { code: "Reference" }, "1"],
+    ["Reason Code", r.reasonCode, { code: "CodeableConcept" }, "*"],
+    ["Reason Reference", r.reasonReference, { code: "Reference" }, "*"],
+    ["Body Site", r.bodySite, { code: "CodeableConcept" }, "*"],
+    ["Outcome", r.outcome, { code: "CodeableConcept" }, "1"],
   ]);
 }
 
-function narrativeProvenance(resource: Provenance): Narrative {
+function narrativeProvenance(r: Provenance): Narrative {
   return buildNarrative([
-    {
-      attr: "Target",
-      value: resource.target,
-      max: "*",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Resource"],
-      },
-    },
-    {
-      attr: "Recorded",
-      value: resource.recorded,
-      max: "1",
-      type: { code: "instant" },
-    },
+    ["Target", r.target, { code: "Reference" }, "*"],
+    ["Recorded", r.recorded, { code: "instant" }, "1"],
   ]);
 }
 
-function narrativeQuestionnaire(resource: Questionnaire): Narrative {
+function narrativeQuestionnaire(r: Questionnaire): Narrative {
   return buildNarrative([
-    {
-      attr: "Url",
-      value: resource.url,
-      max: "1",
-      type: { code: "uri" },
-    },
-    {
-      attr: "Identifier",
-      value: resource.identifier,
-      max: "*",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Version",
-      value: resource.version,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Name",
-      value: resource.name,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Title",
-      value: resource.title,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Experimental",
-      value: resource.experimental,
-      max: "1",
-      type: { code: "boolean" },
-    },
-    {
-      attr: "Subject Type",
-      value: resource.subjectType,
-      max: "*",
-      type: { code: "code" },
-    },
-    {
-      attr: "Date",
-      value: resource.date,
-      max: "1",
-      type: { code: "dateTime" },
-    },
-    {
-      attr: "Publisher",
-      value: resource.publisher,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Contact",
-      value: resource.contact,
-      max: "*",
-      type: { code: "ContactDetail" },
-    },
-    {
-      attr: "Use Context",
-      value: resource.useContext,
-      max: "*",
-      type: { code: "UsageContext" },
-    },
-    {
-      attr: "Jurisdiction",
-      value: resource.jurisdiction,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Effective Period",
-      value: resource.effectivePeriod,
-      max: "1",
-      type: { code: "Period" },
-    },
-    {
-      attr: "Code",
-      value: resource.code,
-      max: "*",
-      type: { code: "Coding" },
-    },
+    ["Url", r.url, { code: "uri" }, "1"],
+    ["Identifier", r.identifier, { code: "Identifier" }, "*"],
+    ["Version", r.version, { code: "string" }, "1"],
+    ["Name", r.name, { code: "string" }, "1"],
+    ["Title", r.title, { code: "string" }, "1"],
+    ["Status", r.status, { code: "code" }, "1"],
+    ["Experimental", r.experimental, { code: "boolean" }, "1"],
+    ["Subject Type", r.subjectType, { code: "code" }, "*"],
+    ["Date", r.date, { code: "dateTime" }, "1"],
+    ["Publisher", r.publisher, { code: "string" }, "1"],
+    ["Contact", r.contact, { code: "ContactDetail" }, "*"],
+    ["Use Context", r.useContext, { code: "UsageContext" }, "*"],
+    ["Jurisdiction", r.jurisdiction, { code: "CodeableConcept" }, "*"],
+    ["Effective Period", r.effectivePeriod, { code: "Period" }, "1"],
+    ["Code", r.code, { code: "Coding" }, "*"],
   ]);
 }
 
-function narrativeQuestionnaireResponse(
-  resource: QuestionnaireResponse
-): Narrative {
+function narrativeQuestionnaireResponse(r: QuestionnaireResponse): Narrative {
   return buildNarrative([
-    {
-      attr: "Identifier",
-      value: resource.identifier,
-      max: "1",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Based On",
-      value: resource.basedOn,
-      max: "*",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/CarePlan",
-          "http://hl7.org/fhir/StructureDefinition/ServiceRequest",
-        ],
-      },
-    },
-    {
-      attr: "Part Of",
-      value: resource.partOf,
-      max: "*",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Observation",
-          "http://hl7.org/fhir/StructureDefinition/Procedure",
-        ],
-      },
-    },
-    {
-      attr: "Questionnaire",
-      value: resource.questionnaire,
-      max: "1",
-      type: {
-        code: "canonical",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Questionnaire",
-        ],
-      },
-    },
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Subject",
-      value: resource.subject,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Resource"],
-      },
-    },
-    {
-      attr: "Encounter",
-      value: resource.encounter,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Encounter"],
-      },
-    },
-    {
-      attr: "Authored",
-      value: resource.authored,
-      max: "1",
-      type: { code: "dateTime" },
-    },
-    {
-      attr: "Author",
-      value: resource.author,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Device",
-          "http://hl7.org/fhir/StructureDefinition/Practitioner",
-          "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
-          "http://hl7.org/fhir/StructureDefinition/Patient",
-          "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
-          "http://hl7.org/fhir/StructureDefinition/Organization",
-        ],
-      },
-    },
-    {
-      attr: "Source",
-      value: resource.source,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Patient",
-          "http://hl7.org/fhir/StructureDefinition/Practitioner",
-          "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
-          "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
-        ],
-      },
-    },
+    ["Identifier", r.identifier, { code: "Identifier" }, "1"],
+    ["Based On", r.basedOn, { code: "Reference" }, "*"],
+    ["Part Of", r.partOf, { code: "Reference" }, "*"],
+    ["Questionnaire", r.questionnaire, { code: "canonical" }, "1"],
+    ["Status", r.status, { code: "code" }, "1"],
+    ["Subject", r.subject, { code: "Reference" }, "1"],
+    ["Encounter", r.encounter, { code: "Reference" }, "1"],
+    ["Authored", r.authored, { code: "dateTime" }, "1"],
+    ["Author", r.author, { code: "Reference" }, "1"],
+    ["Source", r.source, { code: "Reference" }, "1"],
   ]);
 }
 
-function narrativeRegulatedAuthorization(
-  resource: RegulatedAuthorization
-): Narrative {
+function narrativeRegulatedAuthorization(r: RegulatedAuthorization): Narrative {
   return buildNarrative([
-    {
-      attr: "Identifier",
-      value: resource.identifier,
-      max: "*",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Subject",
-      value: resource.subject,
-      max: "*",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/MedicinalProductDefinition",
-          "http://hl7.org/fhir/StructureDefinition/BiologicallyDerivedProduct",
-          "http://hl7.org/fhir/StructureDefinition/NutritionProduct",
-          "http://hl7.org/fhir/StructureDefinition/PackagedProductDefinition",
-          "http://hl7.org/fhir/StructureDefinition/SubstanceDefinition",
-          "http://hl7.org/fhir/StructureDefinition/DeviceDefinition",
-          "http://hl7.org/fhir/StructureDefinition/ResearchStudy",
-          "http://hl7.org/fhir/StructureDefinition/ActivityDefinition",
-          "http://hl7.org/fhir/StructureDefinition/PlanDefinition",
-          "http://hl7.org/fhir/StructureDefinition/ObservationDefinition",
-          "http://hl7.org/fhir/StructureDefinition/Practitioner",
-          "http://hl7.org/fhir/StructureDefinition/Organization",
-          "http://hl7.org/fhir/StructureDefinition/Location",
-        ],
-      },
-    },
-    {
-      attr: "Type",
-      value: resource.type,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Description",
-      value: resource.description,
-      max: "1",
-      type: { code: "markdown" },
-    },
-    {
-      attr: "Region",
-      value: resource.region,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Status Date",
-      value: resource.statusDate,
-      max: "1",
-      type: { code: "dateTime" },
-    },
-    {
-      attr: "Validity Period",
-      value: resource.validityPeriod,
-      max: "1",
-      type: { code: "Period" },
-    },
-    {
-      attr: "Indication",
-      value: resource.indication,
-      max: "1",
-      type: {
-        code: "CodeableReference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/ClinicalUseDefinition",
-        ],
-      },
-    },
-    {
-      attr: "Intended Use",
-      value: resource.intendedUse,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Basis",
-      value: resource.basis,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Holder",
-      value: resource.holder,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Organization"],
-      },
-    },
-    {
-      attr: "Regulator",
-      value: resource.regulator,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Organization"],
-      },
-    },
-    {
-      attr: "Case",
-      value: resource.case,
-      max: "1",
-      type: { code: "BackboneElement" },
-    },
+    ["Identifier", r.identifier, { code: "Identifier" }, "*"],
+    ["Subject", r.subject, { code: "Reference" }, "*"],
+    ["Type", r.type, { code: "CodeableConcept" }, "1"],
+    ["Description", r.description, { code: "markdown" }, "1"],
+    ["Region", r.region, { code: "CodeableConcept" }, "*"],
+    ["Status", r.status, { code: "CodeableConcept" }, "1"],
+    ["Status Date", r.statusDate, { code: "dateTime" }, "1"],
+    ["Validity Period", r.validityPeriod, { code: "Period" }, "1"],
+    ["Indication", r.indication, { code: "CodeableReference" }, "1"],
+    ["Intended Use", r.intendedUse, { code: "CodeableConcept" }, "1"],
+    ["Basis", r.basis, { code: "CodeableConcept" }, "*"],
+    ["Holder", r.holder, { code: "Reference" }, "1"],
+    ["Regulator", r.regulator, { code: "Reference" }, "1"],
+    ["Case", r.case, { code: "BackboneElement" }, "1"],
   ]);
 }
 
-function narrativeRelatedPerson(resource: RelatedPerson): Narrative {
+function narrativeRelatedPerson(r: RelatedPerson): Narrative {
   return buildNarrative([
-    {
-      attr: "Identifier",
-      value: resource.identifier,
-      max: "*",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Active",
-      value: resource.active,
-      max: "1",
-      type: { code: "boolean" },
-    },
-    {
-      attr: "Patient",
-      value: resource.patient,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Patient"],
-      },
-    },
-    {
-      attr: "Relationship",
-      value: resource.relationship,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Name",
-      value: resource.name,
-      max: "*",
-      type: { code: "HumanName" },
-    },
-    {
-      attr: "Telecom",
-      value: resource.telecom,
-      max: "*",
-      type: { code: "ContactPoint" },
-    },
-    {
-      attr: "Gender",
-      value: resource.gender,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Birth Date",
-      value: resource.birthDate,
-      max: "1",
-      type: { code: "date" },
-    },
-    {
-      attr: "Address",
-      value: resource.address,
-      max: "*",
-      type: { code: "Address" },
-    },
+    ["Identifier", r.identifier, { code: "Identifier" }, "*"],
+    ["Active", r.active, { code: "boolean" }, "1"],
+    ["Patient", r.patient, { code: "Reference" }, "1"],
+    ["Relationship", r.relationship, { code: "CodeableConcept" }, "*"],
+    ["Name", r.name, { code: "HumanName" }, "*"],
+    ["Telecom", r.telecom, { code: "ContactPoint" }, "*"],
+    ["Gender", r.gender, { code: "code" }, "1"],
+    ["Birth Date", r.birthDate, { code: "date" }, "1"],
+    ["Address", r.address, { code: "Address" }, "*"],
   ]);
 }
 
-function narrativeRequestGroup(resource: RequestGroup): Narrative {
+function narrativeRequestGroup(r: RequestGroup): Narrative {
   return buildNarrative([
-    {
-      attr: "Identifier",
-      value: resource.identifier,
-      max: "*",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Instantiates Canonical",
-      value: resource.instantiatesCanonical,
-      max: "*",
-      type: { code: "canonical" },
-    },
-    {
-      attr: "Instantiates Uri",
-      value: resource.instantiatesUri,
-      max: "*",
-      type: { code: "uri" },
-    },
-    {
-      attr: "Group Identifier",
-      value: resource.groupIdentifier,
-      max: "1",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Intent",
-      value: resource.intent,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Priority",
-      value: resource.priority,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Code",
-      value: resource.code,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
+    ["Identifier", r.identifier, { code: "Identifier" }, "*"],
+    [
+      "Instantiates Canonical",
+      r.instantiatesCanonical,
+      { code: "canonical" },
+      "*",
+    ],
+    ["Instantiates Uri", r.instantiatesUri, { code: "uri" }, "*"],
+    ["Group Identifier", r.groupIdentifier, { code: "Identifier" }, "1"],
+    ["Status", r.status, { code: "code" }, "1"],
+    ["Intent", r.intent, { code: "code" }, "1"],
+    ["Priority", r.priority, { code: "code" }, "1"],
+    ["Code", r.code, { code: "CodeableConcept" }, "1"],
   ]);
 }
 
-function narrativeResearchDefinition(resource: ResearchDefinition): Narrative {
+function narrativeResearchDefinition(r: ResearchDefinition): Narrative {
   return buildNarrative([
-    {
-      attr: "Url",
-      value: resource.url,
-      max: "1",
-      type: { code: "uri" },
-    },
-    {
-      attr: "Identifier",
-      value: resource.identifier,
-      max: "*",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Version",
-      value: resource.version,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Name",
-      value: resource.name,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Title",
-      value: resource.title,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Experimental",
-      value: resource.experimental,
-      max: "1",
-      type: { code: "boolean" },
-    },
-    {
-      attr: "Date",
-      value: resource.date,
-      max: "1",
-      type: { code: "dateTime" },
-    },
-    {
-      attr: "Publisher",
-      value: resource.publisher,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Contact",
-      value: resource.contact,
-      max: "*",
-      type: { code: "ContactDetail" },
-    },
-    {
-      attr: "Description",
-      value: resource.description,
-      max: "1",
-      type: { code: "markdown" },
-    },
-    {
-      attr: "Use Context",
-      value: resource.useContext,
-      max: "*",
-      type: { code: "UsageContext" },
-    },
-    {
-      attr: "Jurisdiction",
-      value: resource.jurisdiction,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Effective Period",
-      value: resource.effectivePeriod,
-      max: "1",
-      type: { code: "Period" },
-    },
-    {
-      attr: "Population",
-      value: resource.population,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/ResearchElementDefinition",
-        ],
-      },
-    },
-    {
-      attr: "Exposure",
-      value: resource.exposure,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/ResearchElementDefinition",
-        ],
-      },
-    },
-    {
-      attr: "Exposure Alternative",
-      value: resource.exposureAlternative,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/ResearchElementDefinition",
-        ],
-      },
-    },
-    {
-      attr: "Outcome",
-      value: resource.outcome,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/ResearchElementDefinition",
-        ],
-      },
-    },
+    ["Url", r.url, { code: "uri" }, "1"],
+    ["Identifier", r.identifier, { code: "Identifier" }, "*"],
+    ["Version", r.version, { code: "string" }, "1"],
+    ["Name", r.name, { code: "string" }, "1"],
+    ["Title", r.title, { code: "string" }, "1"],
+    ["Status", r.status, { code: "code" }, "1"],
+    ["Experimental", r.experimental, { code: "boolean" }, "1"],
+    ["Date", r.date, { code: "dateTime" }, "1"],
+    ["Publisher", r.publisher, { code: "string" }, "1"],
+    ["Contact", r.contact, { code: "ContactDetail" }, "*"],
+    ["Description", r.description, { code: "markdown" }, "1"],
+    ["Use Context", r.useContext, { code: "UsageContext" }, "*"],
+    ["Jurisdiction", r.jurisdiction, { code: "CodeableConcept" }, "*"],
+    ["Effective Period", r.effectivePeriod, { code: "Period" }, "1"],
+    ["Population", r.population, { code: "Reference" }, "1"],
+    ["Exposure", r.exposure, { code: "Reference" }, "1"],
+    ["Exposure Alternative", r.exposureAlternative, { code: "Reference" }, "1"],
+    ["Outcome", r.outcome, { code: "Reference" }, "1"],
   ]);
 }
 
 function narrativeResearchElementDefinition(
-  resource: ResearchElementDefinition
+  r: ResearchElementDefinition
 ): Narrative {
   return buildNarrative([
-    {
-      attr: "Url",
-      value: resource.url,
-      max: "1",
-      type: { code: "uri" },
-    },
-    {
-      attr: "Identifier",
-      value: resource.identifier,
-      max: "*",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Version",
-      value: resource.version,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Name",
-      value: resource.name,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Title",
-      value: resource.title,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Short Title",
-      value: resource.shortTitle,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Experimental",
-      value: resource.experimental,
-      max: "1",
-      type: { code: "boolean" },
-    },
-    {
-      attr: "Date",
-      value: resource.date,
-      max: "1",
-      type: { code: "dateTime" },
-    },
-    {
-      attr: "Publisher",
-      value: resource.publisher,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Contact",
-      value: resource.contact,
-      max: "*",
-      type: { code: "ContactDetail" },
-    },
-    {
-      attr: "Description",
-      value: resource.description,
-      max: "1",
-      type: { code: "markdown" },
-    },
-    {
-      attr: "Use Context",
-      value: resource.useContext,
-      max: "*",
-      type: { code: "UsageContext" },
-    },
-    {
-      attr: "Jurisdiction",
-      value: resource.jurisdiction,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Effective Period",
-      value: resource.effectivePeriod,
-      max: "1",
-      type: { code: "Period" },
-    },
-    {
-      attr: "Type",
-      value: resource.type,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Characteristic",
-      value: resource.characteristic,
-      max: "*",
-      type: { code: "BackboneElement" },
-    },
+    ["Url", r.url, { code: "uri" }, "1"],
+    ["Identifier", r.identifier, { code: "Identifier" }, "*"],
+    ["Version", r.version, { code: "string" }, "1"],
+    ["Name", r.name, { code: "string" }, "1"],
+    ["Title", r.title, { code: "string" }, "1"],
+    ["Short Title", r.shortTitle, { code: "string" }, "1"],
+    ["Status", r.status, { code: "code" }, "1"],
+    ["Experimental", r.experimental, { code: "boolean" }, "1"],
+    ["Date", r.date, { code: "dateTime" }, "1"],
+    ["Publisher", r.publisher, { code: "string" }, "1"],
+    ["Contact", r.contact, { code: "ContactDetail" }, "*"],
+    ["Description", r.description, { code: "markdown" }, "1"],
+    ["Use Context", r.useContext, { code: "UsageContext" }, "*"],
+    ["Jurisdiction", r.jurisdiction, { code: "CodeableConcept" }, "*"],
+    ["Effective Period", r.effectivePeriod, { code: "Period" }, "1"],
+    ["Type", r.type, { code: "code" }, "1"],
+    ["Characteristic", r.characteristic, { code: "BackboneElement" }, "*"],
   ]);
 }
 
-function narrativeResearchStudy(resource: ResearchStudy): Narrative {
+function narrativeResearchStudy(r: ResearchStudy): Narrative {
   return buildNarrative([
-    {
-      attr: "Identifier",
-      value: resource.identifier,
-      max: "*",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Title",
-      value: resource.title,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Protocol",
-      value: resource.protocol,
-      max: "*",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/PlanDefinition",
-        ],
-      },
-    },
-    {
-      attr: "Part Of",
-      value: resource.partOf,
-      max: "*",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/ResearchStudy",
-        ],
-      },
-    },
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Primary Purpose Type",
-      value: resource.primaryPurposeType,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Phase",
-      value: resource.phase,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Category",
-      value: resource.category,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Focus",
-      value: resource.focus,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Condition",
-      value: resource.condition,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Contact",
-      value: resource.contact,
-      max: "*",
-      type: { code: "ContactDetail" },
-    },
-    {
-      attr: "Keyword",
-      value: resource.keyword,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Location",
-      value: resource.location,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Enrollment",
-      value: resource.enrollment,
-      max: "*",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Group"],
-      },
-    },
-    {
-      attr: "Period",
-      value: resource.period,
-      max: "1",
-      type: { code: "Period" },
-    },
-    {
-      attr: "Sponsor",
-      value: resource.sponsor,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Organization"],
-      },
-    },
-    {
-      attr: "Principal Investigator",
-      value: resource.principalInvestigator,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Practitioner",
-          "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
-        ],
-      },
-    },
-    {
-      attr: "Site",
-      value: resource.site,
-      max: "*",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Location"],
-      },
-    },
-    {
-      attr: "Reason Stopped",
-      value: resource.reasonStopped,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
+    ["Identifier", r.identifier, { code: "Identifier" }, "*"],
+    ["Title", r.title, { code: "string" }, "1"],
+    ["Protocol", r.protocol, { code: "Reference" }, "*"],
+    ["Part Of", r.partOf, { code: "Reference" }, "*"],
+    ["Status", r.status, { code: "code" }, "1"],
+    [
+      "Primary Purpose Type",
+      r.primaryPurposeType,
+      { code: "CodeableConcept" },
+      "1",
+    ],
+    ["Phase", r.phase, { code: "CodeableConcept" }, "1"],
+    ["Category", r.category, { code: "CodeableConcept" }, "*"],
+    ["Focus", r.focus, { code: "CodeableConcept" }, "*"],
+    ["Condition", r.condition, { code: "CodeableConcept" }, "*"],
+    ["Contact", r.contact, { code: "ContactDetail" }, "*"],
+    ["Keyword", r.keyword, { code: "CodeableConcept" }, "*"],
+    ["Location", r.location, { code: "CodeableConcept" }, "*"],
+    ["Enrollment", r.enrollment, { code: "Reference" }, "*"],
+    ["Period", r.period, { code: "Period" }, "1"],
+    ["Sponsor", r.sponsor, { code: "Reference" }, "1"],
+    [
+      "Principal Investigator",
+      r.principalInvestigator,
+      { code: "Reference" },
+      "1",
+    ],
+    ["Site", r.site, { code: "Reference" }, "*"],
+    ["Reason Stopped", r.reasonStopped, { code: "CodeableConcept" }, "1"],
   ]);
 }
 
-function narrativeResearchSubject(resource: ResearchSubject): Narrative {
+function narrativeResearchSubject(r: ResearchSubject): Narrative {
   return buildNarrative([
-    {
-      attr: "Identifier",
-      value: resource.identifier,
-      max: "*",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Period",
-      value: resource.period,
-      max: "1",
-      type: { code: "Period" },
-    },
-    {
-      attr: "Study",
-      value: resource.study,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/ResearchStudy",
-        ],
-      },
-    },
-    {
-      attr: "Individual",
-      value: resource.individual,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Patient"],
-      },
-    },
+    ["Identifier", r.identifier, { code: "Identifier" }, "*"],
+    ["Status", r.status, { code: "code" }, "1"],
+    ["Period", r.period, { code: "Period" }, "1"],
+    ["Study", r.study, { code: "Reference" }, "1"],
+    ["Individual", r.individual, { code: "Reference" }, "1"],
   ]);
 }
 
-function narrativeRiskAssessment(resource: RiskAssessment): Narrative {
+function narrativeRiskAssessment(r: RiskAssessment): Narrative {
   return buildNarrative([
-    {
-      attr: "Identifier",
-      value: resource.identifier,
-      max: "*",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Method",
-      value: resource.method,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Code",
-      value: resource.code,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Subject",
-      value: resource.subject,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Patient",
-          "http://hl7.org/fhir/StructureDefinition/Group",
-        ],
-      },
-    },
-    {
-      attr: "Encounter",
-      value: resource.encounter,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Encounter"],
-      },
-    },
-    {
-      attr: "Condition",
-      value: resource.condition,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Condition"],
-      },
-    },
-    {
-      attr: "Performer",
-      value: resource.performer,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Practitioner",
-          "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
-          "http://hl7.org/fhir/StructureDefinition/Device",
-        ],
-      },
-    },
+    ["Identifier", r.identifier, { code: "Identifier" }, "*"],
+    ["Status", r.status, { code: "code" }, "1"],
+    ["Method", r.method, { code: "CodeableConcept" }, "1"],
+    ["Code", r.code, { code: "CodeableConcept" }, "1"],
+    ["Subject", r.subject, { code: "Reference" }, "1"],
+    ["Encounter", r.encounter, { code: "Reference" }, "1"],
+    ["Condition", r.condition, { code: "Reference" }, "1"],
+    ["Performer", r.performer, { code: "Reference" }, "1"],
   ]);
 }
 
-function narrativeSchedule(resource: Schedule): Narrative {
+function narrativeSchedule(r: Schedule): Narrative {
   return buildNarrative([
-    {
-      attr: "Identifier",
-      value: resource.identifier,
-      max: "*",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Active",
-      value: resource.active,
-      max: "1",
-      type: { code: "boolean" },
-    },
-    {
-      attr: "Service Category",
-      value: resource.serviceCategory,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Service Type",
-      value: resource.serviceType,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Specialty",
-      value: resource.specialty,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Actor",
-      value: resource.actor,
-      max: "*",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Patient",
-          "http://hl7.org/fhir/StructureDefinition/Practitioner",
-          "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
-          "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
-          "http://hl7.org/fhir/StructureDefinition/Device",
-          "http://hl7.org/fhir/StructureDefinition/HealthcareService",
-          "http://hl7.org/fhir/StructureDefinition/Location",
-        ],
-      },
-    },
-    {
-      attr: "Planning Horizon",
-      value: resource.planningHorizon,
-      max: "1",
-      type: { code: "Period" },
-    },
+    ["Identifier", r.identifier, { code: "Identifier" }, "*"],
+    ["Active", r.active, { code: "boolean" }, "1"],
+    ["Service Category", r.serviceCategory, { code: "CodeableConcept" }, "*"],
+    ["Service Type", r.serviceType, { code: "CodeableConcept" }, "*"],
+    ["Specialty", r.specialty, { code: "CodeableConcept" }, "*"],
+    ["Actor", r.actor, { code: "Reference" }, "*"],
+    ["Planning Horizon", r.planningHorizon, { code: "Period" }, "1"],
   ]);
 }
 
-function narrativeSearchParameter(resource: SearchParameter): Narrative {
+function narrativeSearchParameter(r: SearchParameter): Narrative {
   return buildNarrative([
-    {
-      attr: "Url",
-      value: resource.url,
-      max: "1",
-      type: { code: "uri" },
-    },
-    {
-      attr: "Version",
-      value: resource.version,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Name",
-      value: resource.name,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Experimental",
-      value: resource.experimental,
-      max: "1",
-      type: { code: "boolean" },
-    },
-    {
-      attr: "Date",
-      value: resource.date,
-      max: "1",
-      type: { code: "dateTime" },
-    },
-    {
-      attr: "Publisher",
-      value: resource.publisher,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Contact",
-      value: resource.contact,
-      max: "*",
-      type: { code: "ContactDetail" },
-    },
-    {
-      attr: "Description",
-      value: resource.description,
-      max: "1",
-      type: { code: "markdown" },
-    },
-    {
-      attr: "Use Context",
-      value: resource.useContext,
-      max: "*",
-      type: { code: "UsageContext" },
-    },
-    {
-      attr: "Jurisdiction",
-      value: resource.jurisdiction,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Code",
-      value: resource.code,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Base",
-      value: resource.base,
-      max: "*",
-      type: { code: "code" },
-    },
-    {
-      attr: "Type",
-      value: resource.type,
-      max: "1",
-      type: { code: "code" },
-    },
+    ["Url", r.url, { code: "uri" }, "1"],
+    ["Version", r.version, { code: "string" }, "1"],
+    ["Name", r.name, { code: "string" }, "1"],
+    ["Status", r.status, { code: "code" }, "1"],
+    ["Experimental", r.experimental, { code: "boolean" }, "1"],
+    ["Date", r.date, { code: "dateTime" }, "1"],
+    ["Publisher", r.publisher, { code: "string" }, "1"],
+    ["Contact", r.contact, { code: "ContactDetail" }, "*"],
+    ["Description", r.description, { code: "markdown" }, "1"],
+    ["Use Context", r.useContext, { code: "UsageContext" }, "*"],
+    ["Jurisdiction", r.jurisdiction, { code: "CodeableConcept" }, "*"],
+    ["Code", r.code, { code: "code" }, "1"],
+    ["Base", r.base, { code: "code" }, "*"],
+    ["Type", r.type, { code: "code" }, "1"],
   ]);
 }
 
-function narrativeServiceRequest(resource: ServiceRequest): Narrative {
+function narrativeServiceRequest(r: ServiceRequest): Narrative {
   return buildNarrative([
-    {
-      attr: "Identifier",
-      value: resource.identifier,
-      max: "*",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Instantiates Canonical",
-      value: resource.instantiatesCanonical,
-      max: "*",
-      type: {
-        code: "canonical",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/ActivityDefinition",
-          "http://hl7.org/fhir/StructureDefinition/PlanDefinition",
-        ],
-      },
-    },
-    {
-      attr: "Instantiates Uri",
-      value: resource.instantiatesUri,
-      max: "*",
-      type: { code: "uri" },
-    },
-    {
-      attr: "Based On",
-      value: resource.basedOn,
-      max: "*",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/CarePlan",
-          "http://hl7.org/fhir/StructureDefinition/ServiceRequest",
-          "http://hl7.org/fhir/StructureDefinition/MedicationRequest",
-        ],
-      },
-    },
-    {
-      attr: "Replaces",
-      value: resource.replaces,
-      max: "*",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/ServiceRequest",
-        ],
-      },
-    },
-    {
-      attr: "Requisition",
-      value: resource.requisition,
-      max: "1",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Intent",
-      value: resource.intent,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Category",
-      value: resource.category,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Priority",
-      value: resource.priority,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Do Not Perform",
-      value: resource.doNotPerform,
-      max: "1",
-      type: { code: "boolean" },
-    },
-    {
-      attr: "Code",
-      value: resource.code,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Order Detail",
-      value: resource.orderDetail,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Subject",
-      value: resource.subject,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Patient",
-          "http://hl7.org/fhir/StructureDefinition/Group",
-          "http://hl7.org/fhir/StructureDefinition/Location",
-          "http://hl7.org/fhir/StructureDefinition/Device",
-        ],
-      },
-    },
-    {
-      attr: "Encounter",
-      value: resource.encounter,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Encounter"],
-      },
-    },
-    {
-      attr: "Authored On",
-      value: resource.authoredOn,
-      max: "1",
-      type: { code: "dateTime" },
-    },
-    {
-      attr: "Requester",
-      value: resource.requester,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Practitioner",
-          "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
-          "http://hl7.org/fhir/StructureDefinition/Organization",
-          "http://hl7.org/fhir/StructureDefinition/Patient",
-          "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
-          "http://hl7.org/fhir/StructureDefinition/Device",
-        ],
-      },
-    },
-    {
-      attr: "Performer Type",
-      value: resource.performerType,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Performer",
-      value: resource.performer,
-      max: "*",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Practitioner",
-          "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
-          "http://hl7.org/fhir/StructureDefinition/Organization",
-          "http://hl7.org/fhir/StructureDefinition/CareTeam",
-          "http://hl7.org/fhir/StructureDefinition/HealthcareService",
-          "http://hl7.org/fhir/StructureDefinition/Patient",
-          "http://hl7.org/fhir/StructureDefinition/Device",
-          "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
-        ],
-      },
-    },
-    {
-      attr: "Location Code",
-      value: resource.locationCode,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Location Reference",
-      value: resource.locationReference,
-      max: "*",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Location"],
-      },
-    },
-    {
-      attr: "Reason Code",
-      value: resource.reasonCode,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Reason Reference",
-      value: resource.reasonReference,
-      max: "*",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Condition",
-          "http://hl7.org/fhir/StructureDefinition/Observation",
-          "http://hl7.org/fhir/StructureDefinition/DiagnosticReport",
-          "http://hl7.org/fhir/StructureDefinition/DocumentReference",
-        ],
-      },
-    },
-    {
-      attr: "Specimen",
-      value: resource.specimen,
-      max: "*",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Specimen"],
-      },
-    },
-    {
-      attr: "Body Site",
-      value: resource.bodySite,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Patient Instruction",
-      value: resource.patientInstruction,
-      max: "1",
-      type: { code: "string" },
-    },
+    ["Identifier", r.identifier, { code: "Identifier" }, "*"],
+    [
+      "Instantiates Canonical",
+      r.instantiatesCanonical,
+      { code: "canonical" },
+      "*",
+    ],
+    ["Instantiates Uri", r.instantiatesUri, { code: "uri" }, "*"],
+    ["Based On", r.basedOn, { code: "Reference" }, "*"],
+    ["Replaces", r.replaces, { code: "Reference" }, "*"],
+    ["Requisition", r.requisition, { code: "Identifier" }, "1"],
+    ["Status", r.status, { code: "code" }, "1"],
+    ["Intent", r.intent, { code: "code" }, "1"],
+    ["Category", r.category, { code: "CodeableConcept" }, "*"],
+    ["Priority", r.priority, { code: "code" }, "1"],
+    ["Do Not Perform", r.doNotPerform, { code: "boolean" }, "1"],
+    ["Code", r.code, { code: "CodeableConcept" }, "1"],
+    ["Order Detail", r.orderDetail, { code: "CodeableConcept" }, "*"],
+    ["Subject", r.subject, { code: "Reference" }, "1"],
+    ["Encounter", r.encounter, { code: "Reference" }, "1"],
+    ["Authored On", r.authoredOn, { code: "dateTime" }, "1"],
+    ["Requester", r.requester, { code: "Reference" }, "1"],
+    ["Performer Type", r.performerType, { code: "CodeableConcept" }, "1"],
+    ["Performer", r.performer, { code: "Reference" }, "*"],
+    ["Location Code", r.locationCode, { code: "CodeableConcept" }, "*"],
+    ["Location Reference", r.locationReference, { code: "Reference" }, "*"],
+    ["Reason Code", r.reasonCode, { code: "CodeableConcept" }, "*"],
+    ["Reason Reference", r.reasonReference, { code: "Reference" }, "*"],
+    ["Specimen", r.specimen, { code: "Reference" }, "*"],
+    ["Body Site", r.bodySite, { code: "CodeableConcept" }, "*"],
+    ["Patient Instruction", r.patientInstruction, { code: "string" }, "1"],
   ]);
 }
 
-function narrativeSlot(resource: Slot): Narrative {
+function narrativeSlot(r: Slot): Narrative {
   return buildNarrative([
-    {
-      attr: "Identifier",
-      value: resource.identifier,
-      max: "*",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Service Category",
-      value: resource.serviceCategory,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Service Type",
-      value: resource.serviceType,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Specialty",
-      value: resource.specialty,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Appointment Type",
-      value: resource.appointmentType,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Schedule",
-      value: resource.schedule,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Schedule"],
-      },
-    },
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Start",
-      value: resource.start,
-      max: "1",
-      type: { code: "instant" },
-    },
-    {
-      attr: "End",
-      value: resource.end,
-      max: "1",
-      type: { code: "instant" },
-    },
+    ["Identifier", r.identifier, { code: "Identifier" }, "*"],
+    ["Service Category", r.serviceCategory, { code: "CodeableConcept" }, "*"],
+    ["Service Type", r.serviceType, { code: "CodeableConcept" }, "*"],
+    ["Specialty", r.specialty, { code: "CodeableConcept" }, "*"],
+    ["Appointment Type", r.appointmentType, { code: "CodeableConcept" }, "1"],
+    ["Schedule", r.schedule, { code: "Reference" }, "1"],
+    ["Status", r.status, { code: "code" }, "1"],
+    ["Start", r.start, { code: "instant" }, "1"],
+    ["End", r.end, { code: "instant" }, "1"],
   ]);
 }
 
-function narrativeSpecimen(resource: Specimen): Narrative {
+function narrativeSpecimen(r: Specimen): Narrative {
   return buildNarrative([
-    {
-      attr: "Identifier",
-      value: resource.identifier,
-      max: "*",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Accession Identifier",
-      value: resource.accessionIdentifier,
-      max: "1",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Type",
-      value: resource.type,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Subject",
-      value: resource.subject,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Patient",
-          "http://hl7.org/fhir/StructureDefinition/Group",
-          "http://hl7.org/fhir/StructureDefinition/Device",
-          "http://hl7.org/fhir/StructureDefinition/Substance",
-          "http://hl7.org/fhir/StructureDefinition/Location",
-        ],
-      },
-    },
-    {
-      attr: "Received Time",
-      value: resource.receivedTime,
-      max: "1",
-      type: { code: "dateTime" },
-    },
-    {
-      attr: "Condition",
-      value: resource.condition,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
+    ["Identifier", r.identifier, { code: "Identifier" }, "*"],
+    [
+      "Accession Identifier",
+      r.accessionIdentifier,
+      { code: "Identifier" },
+      "1",
+    ],
+    ["Status", r.status, { code: "code" }, "1"],
+    ["Type", r.type, { code: "CodeableConcept" }, "1"],
+    ["Subject", r.subject, { code: "Reference" }, "1"],
+    ["Received Time", r.receivedTime, { code: "dateTime" }, "1"],
+    ["Condition", r.condition, { code: "CodeableConcept" }, "*"],
   ]);
 }
 
-function narrativeSpecimenDefinition(resource: SpecimenDefinition): Narrative {
+function narrativeSpecimenDefinition(r: SpecimenDefinition): Narrative {
   return buildNarrative([
-    {
-      attr: "Identifier",
-      value: resource.identifier,
-      max: "1",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Type Collected",
-      value: resource.typeCollected,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Patient Preparation",
-      value: resource.patientPreparation,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Time Aspect",
-      value: resource.timeAspect,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Collection",
-      value: resource.collection,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
+    ["Identifier", r.identifier, { code: "Identifier" }, "1"],
+    ["Type Collected", r.typeCollected, { code: "CodeableConcept" }, "1"],
+    [
+      "Patient Preparation",
+      r.patientPreparation,
+      { code: "CodeableConcept" },
+      "*",
+    ],
+    ["Time Aspect", r.timeAspect, { code: "string" }, "1"],
+    ["Collection", r.collection, { code: "CodeableConcept" }, "*"],
   ]);
 }
 
-function narrativeStructureDefinition(
-  resource: StructureDefinition
-): Narrative {
+function narrativeStructureDefinition(r: StructureDefinition): Narrative {
   return buildNarrative([
-    {
-      attr: "Url",
-      value: resource.url,
-      max: "1",
-      type: { code: "uri" },
-    },
-    {
-      attr: "Identifier",
-      value: resource.identifier,
-      max: "*",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Version",
-      value: resource.version,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Name",
-      value: resource.name,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Title",
-      value: resource.title,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Experimental",
-      value: resource.experimental,
-      max: "1",
-      type: { code: "boolean" },
-    },
-    {
-      attr: "Date",
-      value: resource.date,
-      max: "1",
-      type: { code: "dateTime" },
-    },
-    {
-      attr: "Publisher",
-      value: resource.publisher,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Contact",
-      value: resource.contact,
-      max: "*",
-      type: { code: "ContactDetail" },
-    },
-    {
-      attr: "Use Context",
-      value: resource.useContext,
-      max: "*",
-      type: { code: "UsageContext" },
-    },
-    {
-      attr: "Jurisdiction",
-      value: resource.jurisdiction,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Keyword",
-      value: resource.keyword,
-      max: "*",
-      type: { code: "Coding" },
-    },
-    {
-      attr: "Fhir Version",
-      value: resource.fhirVersion,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Kind",
-      value: resource.kind,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Abstract",
-      value: resource.abstract,
-      max: "1",
-      type: { code: "boolean" },
-    },
-    {
-      attr: "Context",
-      value: resource.context,
-      max: "*",
-      type: { code: "BackboneElement" },
-    },
-    {
-      attr: "Context Invariant",
-      value: resource.contextInvariant,
-      max: "*",
-      type: { code: "string" },
-    },
-    {
-      attr: "Type",
-      value: resource.type,
-      max: "1",
-      type: { code: "uri" },
-    },
-    {
-      attr: "Base Definition",
-      value: resource.baseDefinition,
-      max: "1",
-      type: {
+    ["Url", r.url, { code: "uri" }, "1"],
+    ["Identifier", r.identifier, { code: "Identifier" }, "*"],
+    ["Version", r.version, { code: "string" }, "1"],
+    ["Name", r.name, { code: "string" }, "1"],
+    ["Title", r.title, { code: "string" }, "1"],
+    ["Status", r.status, { code: "code" }, "1"],
+    ["Experimental", r.experimental, { code: "boolean" }, "1"],
+    ["Date", r.date, { code: "dateTime" }, "1"],
+    ["Publisher", r.publisher, { code: "string" }, "1"],
+    ["Contact", r.contact, { code: "ContactDetail" }, "*"],
+    ["Use Context", r.useContext, { code: "UsageContext" }, "*"],
+    ["Jurisdiction", r.jurisdiction, { code: "CodeableConcept" }, "*"],
+    ["Keyword", r.keyword, { code: "Coding" }, "*"],
+    ["Fhir Version", r.fhirVersion, { code: "code" }, "1"],
+    ["Kind", r.kind, { code: "code" }, "1"],
+    ["Abstract", r.abstract, { code: "boolean" }, "1"],
+    ["Context", r.context, { code: "BackboneElement" }, "*"],
+    ["Context Invariant", r.contextInvariant, { code: "string" }, "*"],
+    ["Type", r.type, { code: "uri" }, "1"],
+    [
+      "Base Definition",
+      r.baseDefinition,
+      {
         extension: [
           {
             url: "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy",
@@ -12206,1192 +4163,276 @@ function narrativeStructureDefinition(
           },
         ],
         code: "canonical",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/StructureDefinition",
-        ],
       },
-    },
-    {
-      attr: "Derivation",
-      value: resource.derivation,
-      max: "1",
-      type: { code: "code" },
-    },
+      "1",
+    ],
+    ["Derivation", r.derivation, { code: "code" }, "1"],
   ]);
 }
 
-function narrativeStructureMap(resource: StructureMap): Narrative {
+function narrativeStructureMap(r: StructureMap): Narrative {
   return buildNarrative([
-    {
-      attr: "Url",
-      value: resource.url,
-      max: "1",
-      type: { code: "uri" },
-    },
-    {
-      attr: "Identifier",
-      value: resource.identifier,
-      max: "*",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Version",
-      value: resource.version,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Name",
-      value: resource.name,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Title",
-      value: resource.title,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Experimental",
-      value: resource.experimental,
-      max: "1",
-      type: { code: "boolean" },
-    },
-    {
-      attr: "Date",
-      value: resource.date,
-      max: "1",
-      type: { code: "dateTime" },
-    },
-    {
-      attr: "Publisher",
-      value: resource.publisher,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Contact",
-      value: resource.contact,
-      max: "*",
-      type: { code: "ContactDetail" },
-    },
-    {
-      attr: "Use Context",
-      value: resource.useContext,
-      max: "*",
-      type: { code: "UsageContext" },
-    },
-    {
-      attr: "Jurisdiction",
-      value: resource.jurisdiction,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Structure",
-      value: resource.structure,
-      max: "*",
-      type: { code: "BackboneElement" },
-    },
-    {
-      attr: "Import",
-      value: resource.import,
-      max: "*",
-      type: {
-        code: "canonical",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/StructureMap"],
-      },
-    },
-    {
-      attr: "Group",
-      value: resource.group,
-      max: "*",
-      type: { code: "BackboneElement" },
-    },
+    ["Url", r.url, { code: "uri" }, "1"],
+    ["Identifier", r.identifier, { code: "Identifier" }, "*"],
+    ["Version", r.version, { code: "string" }, "1"],
+    ["Name", r.name, { code: "string" }, "1"],
+    ["Title", r.title, { code: "string" }, "1"],
+    ["Status", r.status, { code: "code" }, "1"],
+    ["Experimental", r.experimental, { code: "boolean" }, "1"],
+    ["Date", r.date, { code: "dateTime" }, "1"],
+    ["Publisher", r.publisher, { code: "string" }, "1"],
+    ["Contact", r.contact, { code: "ContactDetail" }, "*"],
+    ["Use Context", r.useContext, { code: "UsageContext" }, "*"],
+    ["Jurisdiction", r.jurisdiction, { code: "CodeableConcept" }, "*"],
+    ["Structure", r.structure, { code: "BackboneElement" }, "*"],
+    ["Import", r.import, { code: "canonical" }, "*"],
+    ["Group", r.group, { code: "BackboneElement" }, "*"],
   ]);
 }
 
-function narrativeSubscription(resource: Subscription): Narrative {
+function narrativeSubscription(r: Subscription): Narrative {
   return buildNarrative([
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Contact",
-      value: resource.contact,
-      max: "*",
-      type: { code: "ContactPoint" },
-    },
-    {
-      attr: "End",
-      value: resource.end,
-      max: "1",
-      type: { code: "instant" },
-    },
-    {
-      attr: "Reason",
-      value: resource.reason,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Criteria",
-      value: resource.criteria,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Error",
-      value: resource.error,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Channel",
-      value: resource.channel,
-      max: "1",
-      type: { code: "BackboneElement" },
-    },
+    ["Status", r.status, { code: "code" }, "1"],
+    ["Contact", r.contact, { code: "ContactPoint" }, "*"],
+    ["End", r.end, { code: "instant" }, "1"],
+    ["Reason", r.reason, { code: "string" }, "1"],
+    ["Criteria", r.criteria, { code: "string" }, "1"],
+    ["Error", r.error, { code: "string" }, "1"],
+    ["Channel", r.channel, { code: "BackboneElement" }, "1"],
   ]);
 }
 
-function narrativeSubscriptionStatus(resource: SubscriptionStatus): Narrative {
+function narrativeSubscriptionStatus(r: SubscriptionStatus): Narrative {
   return buildNarrative([
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Type",
-      value: resource.type,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Events Since Subscription Start",
-      value: resource.eventsSinceSubscriptionStart,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Subscription",
-      value: resource.subscription,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Subscription"],
-      },
-    },
-    {
-      attr: "Topic",
-      value: resource.topic,
-      max: "1",
-      type: {
-        code: "canonical",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/SubscriptionTopic",
-        ],
-      },
-    },
-    {
-      attr: "Error",
-      value: resource.error,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
+    ["Status", r.status, { code: "code" }, "1"],
+    ["Type", r.type, { code: "code" }, "1"],
+    [
+      "Events Since Subscription Start",
+      r.eventsSinceSubscriptionStart,
+      { code: "string" },
+      "1",
+    ],
+    ["Subscription", r.subscription, { code: "Reference" }, "1"],
+    ["Topic", r.topic, { code: "canonical" }, "1"],
+    ["Error", r.error, { code: "CodeableConcept" }, "*"],
   ]);
 }
 
-function narrativeSubscriptionTopic(resource: SubscriptionTopic): Narrative {
+function narrativeSubscriptionTopic(r: SubscriptionTopic): Narrative {
   return buildNarrative([
-    {
-      attr: "Url",
-      value: resource.url,
-      max: "1",
-      type: { code: "uri" },
-    },
-    {
-      attr: "Identifier",
-      value: resource.identifier,
-      max: "*",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Version",
-      value: resource.version,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Title",
-      value: resource.title,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Derived From",
-      value: resource.derivedFrom,
-      max: "*",
-      type: {
-        code: "canonical",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/SubscriptionTopic",
-        ],
-      },
-    },
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Experimental",
-      value: resource.experimental,
-      max: "1",
-      type: { code: "boolean" },
-    },
-    {
-      attr: "Date",
-      value: resource.date,
-      max: "1",
-      type: { code: "dateTime" },
-    },
-    {
-      attr: "Publisher",
-      value: resource.publisher,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Contact",
-      value: resource.contact,
-      max: "*",
-      type: { code: "ContactDetail" },
-    },
-    {
-      attr: "Use Context",
-      value: resource.useContext,
-      max: "*",
-      type: { code: "UsageContext" },
-    },
-    {
-      attr: "Jurisdiction",
-      value: resource.jurisdiction,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Effective Period",
-      value: resource.effectivePeriod,
-      max: "1",
-      type: { code: "Period" },
-    },
-    {
-      attr: "Resource Trigger",
-      value: resource.resourceTrigger,
-      max: "*",
-      type: { code: "BackboneElement" },
-    },
-    {
-      attr: "Event Trigger",
-      value: resource.eventTrigger,
-      max: "*",
-      type: { code: "BackboneElement" },
-    },
-    {
-      attr: "Can Filter By",
-      value: resource.canFilterBy,
-      max: "*",
-      type: { code: "BackboneElement" },
-    },
-    {
-      attr: "Notification Shape",
-      value: resource.notificationShape,
-      max: "*",
-      type: { code: "BackboneElement" },
-    },
+    ["Url", r.url, { code: "uri" }, "1"],
+    ["Identifier", r.identifier, { code: "Identifier" }, "*"],
+    ["Version", r.version, { code: "string" }, "1"],
+    ["Title", r.title, { code: "string" }, "1"],
+    ["Derived From", r.derivedFrom, { code: "canonical" }, "*"],
+    ["Status", r.status, { code: "code" }, "1"],
+    ["Experimental", r.experimental, { code: "boolean" }, "1"],
+    ["Date", r.date, { code: "dateTime" }, "1"],
+    ["Publisher", r.publisher, { code: "string" }, "1"],
+    ["Contact", r.contact, { code: "ContactDetail" }, "*"],
+    ["Use Context", r.useContext, { code: "UsageContext" }, "*"],
+    ["Jurisdiction", r.jurisdiction, { code: "CodeableConcept" }, "*"],
+    ["Effective Period", r.effectivePeriod, { code: "Period" }, "1"],
+    ["Resource Trigger", r.resourceTrigger, { code: "BackboneElement" }, "*"],
+    ["Event Trigger", r.eventTrigger, { code: "BackboneElement" }, "*"],
+    ["Can Filter By", r.canFilterBy, { code: "BackboneElement" }, "*"],
+    [
+      "Notification Shape",
+      r.notificationShape,
+      { code: "BackboneElement" },
+      "*",
+    ],
   ]);
 }
 
-function narrativeSubstance(resource: Substance): Narrative {
+function narrativeSubstance(r: Substance): Narrative {
   return buildNarrative([
-    {
-      attr: "Identifier",
-      value: resource.identifier,
-      max: "*",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Category",
-      value: resource.category,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Code",
-      value: resource.code,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Description",
-      value: resource.description,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Instance",
-      value: resource.instance,
-      max: "*",
-      type: { code: "BackboneElement" },
-    },
-    {
-      attr: "Ingredient",
-      value: resource.ingredient,
-      max: "*",
-      type: { code: "BackboneElement" },
-    },
+    ["Identifier", r.identifier, { code: "Identifier" }, "*"],
+    ["Status", r.status, { code: "code" }, "1"],
+    ["Category", r.category, { code: "CodeableConcept" }, "*"],
+    ["Code", r.code, { code: "CodeableConcept" }, "1"],
+    ["Description", r.description, { code: "string" }, "1"],
+    ["Instance", r.instance, { code: "BackboneElement" }, "*"],
+    ["Ingredient", r.ingredient, { code: "BackboneElement" }, "*"],
   ]);
 }
 
-function narrativeSubstanceDefinition(
-  resource: SubstanceDefinition
-): Narrative {
+function narrativeSubstanceDefinition(r: SubstanceDefinition): Narrative {
   return buildNarrative([
-    {
-      attr: "Identifier",
-      value: resource.identifier,
-      max: "*",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Version",
-      value: resource.version,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Classification",
-      value: resource.classification,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Domain",
-      value: resource.domain,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Grade",
-      value: resource.grade,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Description",
-      value: resource.description,
-      max: "1",
-      type: { code: "markdown" },
-    },
-    {
-      attr: "Information Source",
-      value: resource.informationSource,
-      max: "*",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Citation"],
-      },
-    },
-    {
-      attr: "Note",
-      value: resource.note,
-      max: "*",
-      type: { code: "Annotation" },
-    },
-    {
-      attr: "Manufacturer",
-      value: resource.manufacturer,
-      max: "*",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Organization"],
-      },
-    },
-    {
-      attr: "Supplier",
-      value: resource.supplier,
-      max: "*",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Organization"],
-      },
-    },
-    {
-      attr: "Moiety",
-      value: resource.moiety,
-      max: "*",
-      type: { code: "BackboneElement" },
-    },
-    {
-      attr: "Property",
-      value: resource.property,
-      max: "*",
-      type: { code: "BackboneElement" },
-    },
-    {
-      attr: "Molecular Weight",
-      value: resource.molecularWeight,
-      max: "*",
-      type: { code: "BackboneElement" },
-    },
-    {
-      attr: "Structure",
-      value: resource.structure,
-      max: "1",
-      type: { code: "BackboneElement" },
-    },
-    {
-      attr: "Code",
-      value: resource.code,
-      max: "*",
-      type: { code: "BackboneElement" },
-    },
-    {
-      attr: "Name",
-      value: resource.name,
-      max: "*",
-      type: { code: "BackboneElement" },
-    },
-    {
-      attr: "Relationship",
-      value: resource.relationship,
-      max: "*",
-      type: { code: "BackboneElement" },
-    },
-    {
-      attr: "Source Material",
-      value: resource.sourceMaterial,
-      max: "1",
-      type: { code: "BackboneElement" },
-    },
+    ["Identifier", r.identifier, { code: "Identifier" }, "*"],
+    ["Version", r.version, { code: "string" }, "1"],
+    ["Status", r.status, { code: "CodeableConcept" }, "1"],
+    ["Classification", r.classification, { code: "CodeableConcept" }, "*"],
+    ["Domain", r.domain, { code: "CodeableConcept" }, "1"],
+    ["Grade", r.grade, { code: "CodeableConcept" }, "*"],
+    ["Description", r.description, { code: "markdown" }, "1"],
+    ["Information Source", r.informationSource, { code: "Reference" }, "*"],
+    ["Note", r.note, { code: "Annotation" }, "*"],
+    ["Manufacturer", r.manufacturer, { code: "Reference" }, "*"],
+    ["Supplier", r.supplier, { code: "Reference" }, "*"],
+    ["Moiety", r.moiety, { code: "BackboneElement" }, "*"],
+    ["Property", r.property, { code: "BackboneElement" }, "*"],
+    ["Molecular Weight", r.molecularWeight, { code: "BackboneElement" }, "*"],
+    ["Structure", r.structure, { code: "BackboneElement" }, "1"],
+    ["Code", r.code, { code: "BackboneElement" }, "*"],
+    ["Name", r.name, { code: "BackboneElement" }, "*"],
+    ["Relationship", r.relationship, { code: "BackboneElement" }, "*"],
+    ["Source Material", r.sourceMaterial, { code: "BackboneElement" }, "1"],
   ]);
 }
 
-function narrativeSupplyDelivery(resource: SupplyDelivery): Narrative {
+function narrativeSupplyDelivery(r: SupplyDelivery): Narrative {
   return buildNarrative([
-    {
-      attr: "Based On",
-      value: resource.basedOn,
-      max: "*",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/SupplyRequest",
-        ],
-      },
-    },
-    {
-      attr: "Part Of",
-      value: resource.partOf,
-      max: "*",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/SupplyDelivery",
-          "http://hl7.org/fhir/StructureDefinition/Contract",
-        ],
-      },
-    },
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
+    ["Based On", r.basedOn, { code: "Reference" }, "*"],
+    ["Part Of", r.partOf, { code: "Reference" }, "*"],
+    ["Status", r.status, { code: "code" }, "1"],
   ]);
 }
 
-function narrativeSupplyRequest(resource: SupplyRequest): Narrative {
+function narrativeSupplyRequest(r: SupplyRequest): Narrative {
   return buildNarrative([
-    {
-      attr: "Identifier",
-      value: resource.identifier,
-      max: "*",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Category",
-      value: resource.category,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Priority",
-      value: resource.priority,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Quantity",
-      value: resource.quantity,
-      max: "1",
-      type: { code: "Quantity" },
-    },
-    {
-      attr: "Authored On",
-      value: resource.authoredOn,
-      max: "1",
-      type: { code: "dateTime" },
-    },
-    {
-      attr: "Requester",
-      value: resource.requester,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Practitioner",
-          "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
-          "http://hl7.org/fhir/StructureDefinition/Organization",
-          "http://hl7.org/fhir/StructureDefinition/Patient",
-          "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
-          "http://hl7.org/fhir/StructureDefinition/Device",
-        ],
-      },
-    },
-    {
-      attr: "Supplier",
-      value: resource.supplier,
-      max: "*",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Organization",
-          "http://hl7.org/fhir/StructureDefinition/HealthcareService",
-        ],
-      },
-    },
+    ["Identifier", r.identifier, { code: "Identifier" }, "*"],
+    ["Status", r.status, { code: "code" }, "1"],
+    ["Category", r.category, { code: "CodeableConcept" }, "1"],
+    ["Priority", r.priority, { code: "code" }, "1"],
+    ["Quantity", r.quantity, { code: "Quantity" }, "1"],
+    ["Authored On", r.authoredOn, { code: "dateTime" }, "1"],
+    ["Requester", r.requester, { code: "Reference" }, "1"],
+    ["Supplier", r.supplier, { code: "Reference" }, "*"],
   ]);
 }
 
-function narrativeTask(resource: Task): Narrative {
+function narrativeTask(r: Task): Narrative {
   return buildNarrative([
-    {
-      attr: "Instantiates Canonical",
-      value: resource.instantiatesCanonical,
-      max: "1",
-      type: {
-        code: "canonical",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/ActivityDefinition",
-        ],
-      },
-    },
-    {
-      attr: "Instantiates Uri",
-      value: resource.instantiatesUri,
-      max: "1",
-      type: { code: "uri" },
-    },
-    {
-      attr: "Based On",
-      value: resource.basedOn,
-      max: "*",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Resource"],
-      },
-    },
-    {
-      attr: "Group Identifier",
-      value: resource.groupIdentifier,
-      max: "1",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Part Of",
-      value: resource.partOf,
-      max: "*",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Task"],
-      },
-    },
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Status Reason",
-      value: resource.statusReason,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Business Status",
-      value: resource.businessStatus,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Intent",
-      value: resource.intent,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Code",
-      value: resource.code,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Description",
-      value: resource.description,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Focus",
-      value: resource.focus,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Resource"],
-      },
-    },
-    {
-      attr: "For",
-      value: resource.for,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Resource"],
-      },
-    },
-    {
-      attr: "Encounter",
-      value: resource.encounter,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Encounter"],
-      },
-    },
-    {
-      attr: "Execution Period",
-      value: resource.executionPeriod,
-      max: "1",
-      type: { code: "Period" },
-    },
-    {
-      attr: "Last Modified",
-      value: resource.lastModified,
-      max: "1",
-      type: { code: "dateTime" },
-    },
-    {
-      attr: "Requester",
-      value: resource.requester,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Device",
-          "http://hl7.org/fhir/StructureDefinition/Organization",
-          "http://hl7.org/fhir/StructureDefinition/Patient",
-          "http://hl7.org/fhir/StructureDefinition/Practitioner",
-          "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
-          "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
-        ],
-      },
-    },
-    {
-      attr: "Owner",
-      value: resource.owner,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Practitioner",
-          "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
-          "http://hl7.org/fhir/StructureDefinition/Organization",
-          "http://hl7.org/fhir/StructureDefinition/CareTeam",
-          "http://hl7.org/fhir/StructureDefinition/HealthcareService",
-          "http://hl7.org/fhir/StructureDefinition/Patient",
-          "http://hl7.org/fhir/StructureDefinition/Device",
-          "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
-        ],
-      },
-    },
-    {
-      attr: "Location",
-      value: resource.location,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Location"],
-      },
-    },
+    [
+      "Instantiates Canonical",
+      r.instantiatesCanonical,
+      { code: "canonical" },
+      "1",
+    ],
+    ["Instantiates Uri", r.instantiatesUri, { code: "uri" }, "1"],
+    ["Based On", r.basedOn, { code: "Reference" }, "*"],
+    ["Group Identifier", r.groupIdentifier, { code: "Identifier" }, "1"],
+    ["Part Of", r.partOf, { code: "Reference" }, "*"],
+    ["Status", r.status, { code: "code" }, "1"],
+    ["Status Reason", r.statusReason, { code: "CodeableConcept" }, "1"],
+    ["Business Status", r.businessStatus, { code: "CodeableConcept" }, "1"],
+    ["Intent", r.intent, { code: "code" }, "1"],
+    ["Code", r.code, { code: "CodeableConcept" }, "1"],
+    ["Description", r.description, { code: "string" }, "1"],
+    ["Focus", r.focus, { code: "Reference" }, "1"],
+    ["For", r.for, { code: "Reference" }, "1"],
+    ["Encounter", r.encounter, { code: "Reference" }, "1"],
+    ["Execution Period", r.executionPeriod, { code: "Period" }, "1"],
+    ["Last Modified", r.lastModified, { code: "dateTime" }, "1"],
+    ["Requester", r.requester, { code: "Reference" }, "1"],
+    ["Owner", r.owner, { code: "Reference" }, "1"],
+    ["Location", r.location, { code: "Reference" }, "1"],
   ]);
 }
 
 function narrativeTerminologyCapabilities(
-  resource: TerminologyCapabilities
+  r: TerminologyCapabilities
 ): Narrative {
   return buildNarrative([
-    {
-      attr: "Url",
-      value: resource.url,
-      max: "1",
-      type: { code: "uri" },
-    },
-    {
-      attr: "Version",
-      value: resource.version,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Name",
-      value: resource.name,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Title",
-      value: resource.title,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Experimental",
-      value: resource.experimental,
-      max: "1",
-      type: { code: "boolean" },
-    },
-    {
-      attr: "Date",
-      value: resource.date,
-      max: "1",
-      type: { code: "dateTime" },
-    },
-    {
-      attr: "Publisher",
-      value: resource.publisher,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Contact",
-      value: resource.contact,
-      max: "*",
-      type: { code: "ContactDetail" },
-    },
-    {
-      attr: "Use Context",
-      value: resource.useContext,
-      max: "*",
-      type: { code: "UsageContext" },
-    },
-    {
-      attr: "Jurisdiction",
-      value: resource.jurisdiction,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Copyright",
-      value: resource.copyright,
-      max: "1",
-      type: { code: "markdown" },
-    },
-    {
-      attr: "Kind",
-      value: resource.kind,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Software",
-      value: resource.software,
-      max: "1",
-      type: { code: "BackboneElement" },
-    },
-    {
-      attr: "Implementation",
-      value: resource.implementation,
-      max: "1",
-      type: { code: "BackboneElement" },
-    },
-    {
-      attr: "Locked Date",
-      value: resource.lockedDate,
-      max: "1",
-      type: { code: "boolean" },
-    },
+    ["Url", r.url, { code: "uri" }, "1"],
+    ["Version", r.version, { code: "string" }, "1"],
+    ["Name", r.name, { code: "string" }, "1"],
+    ["Title", r.title, { code: "string" }, "1"],
+    ["Status", r.status, { code: "code" }, "1"],
+    ["Experimental", r.experimental, { code: "boolean" }, "1"],
+    ["Date", r.date, { code: "dateTime" }, "1"],
+    ["Publisher", r.publisher, { code: "string" }, "1"],
+    ["Contact", r.contact, { code: "ContactDetail" }, "*"],
+    ["Use Context", r.useContext, { code: "UsageContext" }, "*"],
+    ["Jurisdiction", r.jurisdiction, { code: "CodeableConcept" }, "*"],
+    ["Copyright", r.copyright, { code: "markdown" }, "1"],
+    ["Kind", r.kind, { code: "code" }, "1"],
+    ["Software", r.software, { code: "BackboneElement" }, "1"],
+    ["Implementation", r.implementation, { code: "BackboneElement" }, "1"],
+    ["Locked Date", r.lockedDate, { code: "boolean" }, "1"],
   ]);
 }
 
-function narrativeTestReport(resource: TestReport): Narrative {
+function narrativeTestReport(r: TestReport): Narrative {
   return buildNarrative([
-    {
-      attr: "Identifier",
-      value: resource.identifier,
-      max: "1",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Name",
-      value: resource.name,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Test Script",
-      value: resource.testScript,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/TestScript"],
-      },
-    },
-    {
-      attr: "Result",
-      value: resource.result,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Score",
-      value: resource.score,
-      max: "1",
-      type: { code: "decimal" },
-    },
-    {
-      attr: "Tester",
-      value: resource.tester,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Issued",
-      value: resource.issued,
-      max: "1",
-      type: { code: "dateTime" },
-    },
+    ["Identifier", r.identifier, { code: "Identifier" }, "1"],
+    ["Name", r.name, { code: "string" }, "1"],
+    ["Status", r.status, { code: "code" }, "1"],
+    ["Test Script", r.testScript, { code: "Reference" }, "1"],
+    ["Result", r.result, { code: "code" }, "1"],
+    ["Score", r.score, { code: "decimal" }, "1"],
+    ["Tester", r.tester, { code: "string" }, "1"],
+    ["Issued", r.issued, { code: "dateTime" }, "1"],
   ]);
 }
 
-function narrativeTestScript(resource: TestScript): Narrative {
+function narrativeTestScript(r: TestScript): Narrative {
   return buildNarrative([
-    {
-      attr: "Url",
-      value: resource.url,
-      max: "1",
-      type: { code: "uri" },
-    },
-    {
-      attr: "Identifier",
-      value: resource.identifier,
-      max: "1",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Version",
-      value: resource.version,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Name",
-      value: resource.name,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Title",
-      value: resource.title,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Experimental",
-      value: resource.experimental,
-      max: "1",
-      type: { code: "boolean" },
-    },
-    {
-      attr: "Date",
-      value: resource.date,
-      max: "1",
-      type: { code: "dateTime" },
-    },
-    {
-      attr: "Publisher",
-      value: resource.publisher,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Contact",
-      value: resource.contact,
-      max: "*",
-      type: { code: "ContactDetail" },
-    },
-    {
-      attr: "Use Context",
-      value: resource.useContext,
-      max: "*",
-      type: { code: "UsageContext" },
-    },
-    {
-      attr: "Jurisdiction",
-      value: resource.jurisdiction,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
+    ["Url", r.url, { code: "uri" }, "1"],
+    ["Identifier", r.identifier, { code: "Identifier" }, "1"],
+    ["Version", r.version, { code: "string" }, "1"],
+    ["Name", r.name, { code: "string" }, "1"],
+    ["Title", r.title, { code: "string" }, "1"],
+    ["Status", r.status, { code: "code" }, "1"],
+    ["Experimental", r.experimental, { code: "boolean" }, "1"],
+    ["Date", r.date, { code: "dateTime" }, "1"],
+    ["Publisher", r.publisher, { code: "string" }, "1"],
+    ["Contact", r.contact, { code: "ContactDetail" }, "*"],
+    ["Use Context", r.useContext, { code: "UsageContext" }, "*"],
+    ["Jurisdiction", r.jurisdiction, { code: "CodeableConcept" }, "*"],
   ]);
 }
 
-function narrativeValueSet(resource: ValueSet): Narrative {
+function narrativeValueSet(r: ValueSet): Narrative {
   return buildNarrative([
-    {
-      attr: "Url",
-      value: resource.url,
-      max: "1",
-      type: { code: "uri" },
-    },
-    {
-      attr: "Identifier",
-      value: resource.identifier,
-      max: "*",
-      type: { code: "Identifier" },
-    },
-    {
-      attr: "Version",
-      value: resource.version,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Name",
-      value: resource.name,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Title",
-      value: resource.title,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Experimental",
-      value: resource.experimental,
-      max: "1",
-      type: { code: "boolean" },
-    },
-    {
-      attr: "Date",
-      value: resource.date,
-      max: "1",
-      type: { code: "dateTime" },
-    },
-    {
-      attr: "Publisher",
-      value: resource.publisher,
-      max: "1",
-      type: { code: "string" },
-    },
-    {
-      attr: "Contact",
-      value: resource.contact,
-      max: "*",
-      type: { code: "ContactDetail" },
-    },
-    {
-      attr: "Use Context",
-      value: resource.useContext,
-      max: "*",
-      type: { code: "UsageContext" },
-    },
-    {
-      attr: "Jurisdiction",
-      value: resource.jurisdiction,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Immutable",
-      value: resource.immutable,
-      max: "1",
-      type: { code: "boolean" },
-    },
+    ["Url", r.url, { code: "uri" }, "1"],
+    ["Identifier", r.identifier, { code: "Identifier" }, "*"],
+    ["Version", r.version, { code: "string" }, "1"],
+    ["Name", r.name, { code: "string" }, "1"],
+    ["Title", r.title, { code: "string" }, "1"],
+    ["Status", r.status, { code: "code" }, "1"],
+    ["Experimental", r.experimental, { code: "boolean" }, "1"],
+    ["Date", r.date, { code: "dateTime" }, "1"],
+    ["Publisher", r.publisher, { code: "string" }, "1"],
+    ["Contact", r.contact, { code: "ContactDetail" }, "*"],
+    ["Use Context", r.useContext, { code: "UsageContext" }, "*"],
+    ["Jurisdiction", r.jurisdiction, { code: "CodeableConcept" }, "*"],
+    ["Immutable", r.immutable, { code: "boolean" }, "1"],
   ]);
 }
 
-function narrativeVerificationResult(resource: VerificationResult): Narrative {
+function narrativeVerificationResult(r: VerificationResult): Narrative {
   return buildNarrative([
-    {
-      attr: "Target",
-      value: resource.target,
-      max: "*",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Resource"],
-      },
-    },
-    {
-      attr: "Target Location",
-      value: resource.targetLocation,
-      max: "*",
-      type: { code: "string" },
-    },
-    {
-      attr: "Need",
-      value: resource.need,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Status Date",
-      value: resource.statusDate,
-      max: "1",
-      type: { code: "dateTime" },
-    },
-    {
-      attr: "Validation Type",
-      value: resource.validationType,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Validation Process",
-      value: resource.validationProcess,
-      max: "*",
-      type: { code: "CodeableConcept" },
-    },
-    {
-      attr: "Failure Action",
-      value: resource.failureAction,
-      max: "1",
-      type: { code: "CodeableConcept" },
-    },
+    ["Target", r.target, { code: "Reference" }, "*"],
+    ["Target Location", r.targetLocation, { code: "string" }, "*"],
+    ["Need", r.need, { code: "CodeableConcept" }, "1"],
+    ["Status", r.status, { code: "code" }, "1"],
+    ["Status Date", r.statusDate, { code: "dateTime" }, "1"],
+    ["Validation Type", r.validationType, { code: "CodeableConcept" }, "1"],
+    [
+      "Validation Process",
+      r.validationProcess,
+      { code: "CodeableConcept" },
+      "*",
+    ],
+    ["Failure Action", r.failureAction, { code: "CodeableConcept" }, "1"],
   ]);
 }
 
-function narrativeVisionPrescription(resource: VisionPrescription): Narrative {
+function narrativeVisionPrescription(r: VisionPrescription): Narrative {
   return buildNarrative([
-    {
-      attr: "Status",
-      value: resource.status,
-      max: "1",
-      type: { code: "code" },
-    },
-    {
-      attr: "Created",
-      value: resource.created,
-      max: "1",
-      type: { code: "dateTime" },
-    },
-    {
-      attr: "Patient",
-      value: resource.patient,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: ["http://hl7.org/fhir/StructureDefinition/Patient"],
-      },
-    },
-    {
-      attr: "Date Written",
-      value: resource.dateWritten,
-      max: "1",
-      type: { code: "dateTime" },
-    },
-    {
-      attr: "Prescriber",
-      value: resource.prescriber,
-      max: "1",
-      type: {
-        code: "Reference",
-        targetProfile: [
-          "http://hl7.org/fhir/StructureDefinition/Practitioner",
-          "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
-        ],
-      },
-    },
-    {
-      attr: "Lens Specification",
-      value: resource.lensSpecification,
-      max: "*",
-      type: { code: "BackboneElement" },
-    },
+    ["Status", r.status, { code: "code" }, "1"],
+    ["Created", r.created, { code: "dateTime" }, "1"],
+    ["Patient", r.patient, { code: "Reference" }, "1"],
+    ["Date Written", r.dateWritten, { code: "dateTime" }, "1"],
+    ["Prescriber", r.prescriber, { code: "Reference" }, "1"],
+    [
+      "Lens Specification",
+      r.lensSpecification,
+      { code: "BackboneElement" },
+      "*",
+    ],
   ]);
 }
 
@@ -13406,4 +4447,11 @@ export function buildNarrative(components: NarrativeElement[]): Narrative {
       .filter((x) => !!x)
       .join("")}</ul></div>`,
   };
+}
+
+function htmlEncode(value: string): string {
+  return value.replace(
+    /[\u00A0-\u9999<>&]/g,
+    (i) => "&#" + i.charCodeAt(0) + ";"
+  );
 }

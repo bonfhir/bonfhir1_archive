@@ -1,4 +1,3 @@
-import { encode } from "html-entities"
 import type { ElementDefinitionType, FhirResource } from "fhir/r4";
 {{#each (fhirPath data.[profiles-resources] "Bundle/DomainResources")}}
 import type { {{type}} } from "fhir/r4";
@@ -11,12 +10,7 @@ import type { ComplexElementType, ExtractComplexElement } from "./types";
 /**
  * A unit of content used to generate a `Narrative`.
  */
-export interface NarrativeElement {
-  attr: string;
-  value: unknown;
-  type: ElementDefinitionType;
-  max: "1" | "*";
-}
+export type NarrativeElement = [string,  unknown, ElementDefinitionType, "1" | "*"];
 
 /**
  * Generate a `Narrative`-compatible XHTML representation for complex `Element` types.
@@ -48,12 +42,12 @@ function narrativeElement{{type}}(element: {{type}} | null | undefined): string 
   const components: Array<string | undefined> = [
     {{#each (fhirPath this "StructureDefinition/SummaryElements")}}
       {{#if (elementImmediatePath path)}}
-        narrativeElementByType({
-          attr: "{{startCase (elementImmediatePath path)}}",
-          value: element.{{elementImmediatePath path}},
-          max: "{{max}}",
-          type: {{JSONstringify type.[0]}}
-        }),
+        narrativeElementByType([
+          "{{startCase (elementImmediatePath path)}}",
+          element.{{elementImmediatePath path}},
+          {{JSONstringify (stripTargetProfile type.[0])}},
+          "{{max}}",
+        ]),
       {{/if}}
     {{/each}}
   ];
@@ -69,7 +63,7 @@ function narrativeElement{{type}}(element: {{type}} | null | undefined): string 
 /**
  * Generate a `Narrative`-compatible XHTML representation as specified by a `NarrativeElement`.
  */
-export function narrativeElementByType({attr, value, max, type}: NarrativeElement): string | undefined {
+export function narrativeElementByType([attr, value, type, max]: NarrativeElement): string | undefined {
   if(!value) {
     return undefined;
   }
@@ -93,9 +87,9 @@ export function narrativeElementByType({attr, value, max, type}: NarrativeElemen
           return undefined;
         }
 
-        return `<li><span class="fhir-attr">${attr}: </span><span class="fhir-value">${value.map(x => encode(x?.toString())).join(", ")}</span></li>`
+        return `<li><span class="fhir-attr">${attr}: </span><span class="fhir-value">${value.map(x => htmlEncode(x?.toString())).join(", ")}</span></li>`
       }
-      return `<li><span class="fhir-attr">${attr}: </span><span class="fhir-value">${encode(value?.toString())}</span></li>`;
+      return `<li><span class="fhir-attr">${attr}: </span><span class="fhir-value">${htmlEncode(value?.toString())}</span></li>`;
     {{#each (fhirPath data.[profiles-types] "Bundle/ComplexElements")}}
     case "{{type}}":
       if (max === "*") {
@@ -127,16 +121,16 @@ export function narrative<TResourceType extends FhirResource>(resource: TResourc
 }
 
 {{#each (fhirPath data.[profiles-resources] "Bundle/DomainResources")}}
-function narrative{{type}}(resource: {{type}}): Narrative {
+function narrative{{type}}(r: {{type}}): Narrative {
   return buildNarrative([
     {{#each (fhirPath this "StructureDefinition/SummaryElements")}}
       {{#if (notIn (elementImmediatePath path) "id,meta,implicitRules,language,text,contained,extension,modifierExtension")}}
-        {
-            attr: "{{startCase (elementImmediatePath path)}}",
-            value: resource.{{elementImmediatePath path}},
-            max: "{{max}}",
-            type: {{JSONstringify type.[0]}}
-        },
+        [
+            "{{startCase (elementImmediatePath path)}}",
+            r.{{elementImmediatePath path}},
+            {{JSONstringify (stripTargetProfile type.[0])}},
+            "{{max}}",
+        ],
       {{/if}}
     {{/each}}
   ]);
@@ -154,4 +148,11 @@ export function buildNarrative(components: NarrativeElement[]): Narrative {
       .map(narrativeElementByType)
       .filter((x) => !!x).join("")}</ul></div>`,
   };
+}
+
+function htmlEncode(value: string): string {
+  return value.replace(
+    /[\u00A0-\u9999<>&]/g,
+    (i) => "&#" + i.charCodeAt(0) + ";"
+  );
 }

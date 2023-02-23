@@ -38,7 +38,6 @@
   "dependencies": {
     "@types/fhir": "^0.0.35",
     "fhirpath": "^3.3.1",
-    "html-entities": "^2.3.3",
     "marked": "^4.2.12"
   },
   "prettier": "@bonfhir/prettier-config"
