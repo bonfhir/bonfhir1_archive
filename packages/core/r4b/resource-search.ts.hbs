@@ -23,11 +23,10 @@ export function resourceSearch<TResource extends ResourceType>(type: TResource):
   }
 }
 
-{{#each (fhirPath data.[profiles-resources] "Bundle/DomainResources")}}
-class ResourceSearchBuilder{{type}} {
-
-  readonly resourceType = "{{type}}";
-
+/**
+ * Base class for all ResourceSearchBuilder{type}
+ */
+class BaseResourceSearchBuilder<TResourceSearchBuilder> {
   /**
    * The underlying `FhirSearchBuilder`, that can be used directly if needed.
    */
@@ -41,23 +40,13 @@ class ResourceSearchBuilder{{type}} {
   }
 
   /**
-   * Indicate the sort order.
-   * 
-   * @see https://hl7.org/fhir/search.html#sort
-   */
-  _sort(parameters: SortOrder{{type}} | SortOrder{{type}}[]): ResourceSearchBuilder{{type}} {
-    this.builder.string("_sort", parameters, null, "replace");
-    return this;
-  }
-
-  /**
    * The number of primary resources to return by page.
    *
    * @see https://hl7.org/fhir/search.html#count
    */
-  _count(value: number): ResourceSearchBuilder{{type}} {
+  _count(value: number): TResourceSearchBuilder {
     this.builder.string("_count", `${value}`, null, "replace");
-    return this;
+    return this as unknown as TResourceSearchBuilder;
   }
 
   /**
@@ -72,12 +61,12 @@ class ResourceSearchBuilder{{type}} {
       targetResourceType?: ResourceType | null | undefined,
       iterate?: boolean | null | undefined
     }
-  ): ResourceSearchBuilder{{type}} {
+  ): TResourceSearchBuilder {
     this.builder.string(
       `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${options?.targetResourceType ? `:${options.targetResourceType}` : ""}`
     );
-    return this;
+    return this as unknown as TResourceSearchBuilder;
   }
 
   /**
@@ -92,12 +81,12 @@ class ResourceSearchBuilder{{type}} {
       targetResourceType?: ResourceType | null | undefined,
       iterate?: boolean | null | undefined
     }
-  ): ResourceSearchBuilder{{type}} {
+  ): TResourceSearchBuilder {
     this.builder.string(
       `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${options?.targetResourceType ? `:${options.targetResourceType}` : ""}`
     );
-    return this;
+    return this as unknown as TResourceSearchBuilder;
   }
 
   /**
@@ -105,9 +94,9 @@ class ResourceSearchBuilder{{type}} {
    *
    * @see https://hl7.org/fhir/search.html#summary
    */
-  _summary(value: SummaryValue): ResourceSearchBuilder{{type}} {
+  _summary(value: SummaryValue): TResourceSearchBuilder {
     this.builder.string("_summary", `${value}`, null, "replace");
-    return this;
+    return this as unknown as TResourceSearchBuilder;
   }
 
   /**
@@ -116,10 +105,28 @@ class ResourceSearchBuilder{{type}} {
    * 
    * @see https://hl7.org/fhir/search.html#total
    */
-  _total(value: "none" | "estimate" | "accurate"): ResourceSearchBuilder{{type}} {
+  _total(value: "none" | "estimate" | "accurate"): TResourceSearchBuilder {
     this.builder.string("_total", value, null, "replace");
+    return this as unknown as TResourceSearchBuilder;
+  }
+}
+
+{{#each (fhirPath data.[profiles-resources] "Bundle/DomainResources")}}
+class ResourceSearchBuilder{{type}} extends BaseResourceSearchBuilder<ResourceSearchBuilder{{type}}> {
+
+  readonly resourceType = "{{type}}";
+
+{{#if (notIn type "BiologicallyDerivedProduct,CatalogEntry,ObservationDefinition,OperationOutcome,StructureMap,SubscriptionStatus,TerminologyCapabilities")}}
+  /**
+   * Indicate the sort order.
+   * 
+   * @see https://hl7.org/fhir/search.html#sort
+   */
+  _sort(parameters: SortOrder{{type}} | SortOrder{{type}}[]): ResourceSearchBuilder{{type}} {
+    this.builder.string("_sort", parameters, null, "replace");
     return this;
   }
+{{/if}}
 
   {{#each (uniqBy (fhirPath @root.data.[search-parameters] (replace "Bundle.entry.select(resource).ofType(SearchParameter).where(base='DomainResource' or base='Resource' or base='CURRENTYPE')" "CURRENTYPE" type)) "code")}}
   {{#if (notIn type "composite,special")}}
@@ -135,12 +142,17 @@ class ResourceSearchBuilder{{type}} {
   {{/each}}
 }
 
+{{#if (notIn type "BiologicallyDerivedProduct,CatalogEntry,ObservationDefinition,OperationOutcome,StructureMap,SubscriptionStatus,TerminologyCapabilities")}}
 export type SortOrder{{type}} = 
   {{#each (uniqBy (fhirPath @root.data.[search-parameters] (replace "Bundle.entry.select(resource).ofType(SearchParameter).where(base='DomainResource' or base='Resource' or base='CURRENTYPE')" "CURRENTYPE" type)) "code")}}
-  {{#if (notIn type "composite,special")}}
-  | "{{code}}" | "-{{code}}"
-  {{/if}}
+    {{#if (notIn type "composite,special")}}
+      {{#startsWith "_" code}}
+      {{else}}
+        | "{{code}}" | "-{{code}}"
+      {{/startsWith}}
+    {{/if}}
   {{/each}};
+{{/if}}
 
 {{/each}}
 

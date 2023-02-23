@@ -6,74 +6,19 @@
 export function searchArgs(searchParameterType) {
   switch (searchParameterType) {
     case "date":
-      return "value: Date | string | Array<Date | string> | null | undefined, prefix?: Prefix | null | undefined";
+      return `value: Parameters<FhirSearchBuilder["date"]>[1], prefix?: Prefix | null | undefined`;
     case "number":
-      return "value: number | string | Array<number | string> | null | undefined, prefix?: Prefix | null | undefined";
+      return `value: Parameters<FhirSearchBuilder["number"]>[1], prefix?: Prefix | null | undefined`;
     case "quantity":
-      return `number:
-      | number
-      | string
-      | {
-          number: number | string | null | undefined;
-          system?: string | null | undefined;
-          code?: string | null | undefined;
-        }
-      | Array<
-          | number
-          | string
-          | {
-              number: number | string | null | undefined;
-              system?: string | null | undefined;
-              code?: string | null | undefined;
-            }
-        >
-      | null
-      | undefined,
-    prefix?: Prefix | null | undefined`;
+      return `number: Parameters<FhirSearchBuilder["quantity"]>[1], prefix?: Prefix | null | undefined`;
     case "reference":
-      return `id:
-      | { id: string; type: string }
-      | {
-          system?: string | null | undefined;
-          code?: string | null | undefined;
-          value?: string | null | undefined;
-        }
-      | string
-      | Array<
-          | { id: string; type: string }
-          | {
-              system?: string | null | undefined;
-              code?: string | null | undefined;
-              value?: string | null | undefined;
-            }
-          | string
-        >
-      | null
-      | undefined,
-    modifier?: ":identifier" | ResourceType | null | undefined`;
+      return `id: Parameters<FhirSearchBuilder["reference"]>[1], modifier?: ":identifier" | ResourceType | null | undefined`;
     case "string":
-      return "value: string | string[] | null | undefined, modifier?: StringModifier | null | undefined";
+      return `value: Parameters<FhirSearchBuilder["string"]>[1], modifier?: StringModifier | null | undefined`;
     case "token":
-      return `value:
-      | {
-          system?: string | null | undefined;
-          code?: string | null | undefined;
-          value?: string | null | undefined;
-        }
-      | string
-      | Array<
-          | {
-              system?: string | null | undefined;
-              code?: string | null | undefined;
-              value?: string | null | undefined;
-            }
-          | string
-        >
-      | null
-      | undefined,
-    modifier?: TokenModifier | null | undefined`;
+      return `value: Parameters<FhirSearchBuilder["token"]>[1], modifier?: TokenModifier | null | undefined`;
     case "uri":
-      return "value: string | URL | Array<string | URL> | null | undefined, modifier?: UriModifier | null | undefined";
+      return `value: Parameters<FhirSearchBuilder["uri"]>[1], modifier?: UriModifier | null | undefined`;
     default:
       throw new Error(`Unknown search parameter type ${searchParameterType}.`);
   }
@@ -155,4 +100,18 @@ export function hasParameters(definition, use) {
 export function onlyHasOutReturn(definition) {
   const allOutParameters = definition.parameter.filter((x) => x.use === "out");
   return allOutParameters.length === 1 && allOutParameters[0].name === "return";
+}
+
+/**
+ * If type is an object and has a targetProfile attribute, removes it.
+ * This is done to cut down on the narrative file size significantly.
+ */
+export function stripTargetProfile(type) {
+  if (typeof type !== "object") {
+    return type;
+  }
+
+  delete type.targetProfile;
+
+  return type;
 }
