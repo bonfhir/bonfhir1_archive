@@ -1,5 +1,5 @@
 import { UseQueryResult } from "@tanstack/react-query";
-import { PropsWithChildren, ReactElement } from "react";
+import { createElement, PropsWithChildren, ReactElement } from "react";
 import { useFhirUIComponentsContext } from "../FhirUIComponentsContext";
 
 export type FhirQueryLoaderProps<
@@ -40,7 +40,7 @@ export function FhirQueryLoader<
 
   const queriesInError = allQueries.filter((query) => query.isError);
   if (queriesInError.length) {
-    return renderer.errorPanel({
+    return createElement(renderer.errorPanel, {
       query,
       // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
       error: queriesInError[0]!.error,
@@ -52,7 +52,7 @@ export function FhirQueryLoader<
     (query) => query.isInitialLoading
   );
   if (queriesInitiallyLoading.length) {
-    return renderer.loader({ query, ...loaderProps });
+    return createElement(renderer.loader, { query, ...loaderProps });
   }
 
   if (
@@ -60,7 +60,7 @@ export function FhirQueryLoader<
     (allQueries[0]?.data == null ||
       (Array.isArray(allQueries[0]?.data) && !allQueries[0].data.length))
   ) {
-    return renderer.empty({ query, ...emptyProps });
+    return createElement(renderer.empty, { query, ...emptyProps });
   }
 
   return <>{children}</>;

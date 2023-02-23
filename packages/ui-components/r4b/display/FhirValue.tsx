@@ -5,12 +5,12 @@ import {
   ValueSetExpandOperationResult,
 } from "@bonfhir/core/r4b";
 import { useFhirExecute } from "@bonfhir/fhir-query/r4b";
-import { ReactElement, useEffect, useState } from "react";
+import { createElement, ReactElement, useEffect, useState } from "react";
 import { useFhirUIComponentsContext } from "../FhirUIComponentsContext";
 
 export interface FhirValuePropsCombination<TAdapterName, TValue, TOptions> {
   /**
-   * The FHIR data tyoe.
+   * The FHIR data type.
    */
   type: TAdapterName;
 
@@ -127,7 +127,7 @@ export type FhirValueProps =
  * @see use the `value` renderer to customize rendering.
  */
 export function FhirValue(props: FhirValueProps): ReactElement | null {
-  const uiContext = useFhirUIComponentsContext();
+  const { dataTypeAdapter, renderer } = useFhirUIComponentsContext();
   const [, setTimeState] = useState(Date.now());
 
   const { valueSetExpand, ...options } =
@@ -170,12 +170,12 @@ export function FhirValue(props: FhirValueProps): ReactElement | null {
     (props.options as HasRefreshInterval)?.refreshInterval,
   ]);
 
-  if (uiContext.renderer.value) {
-    return uiContext.renderer.value({
+  if (renderer.value) {
+    return createElement(renderer.value, {
       ...props,
-      dataTypeAdapter: uiContext.dataTypeAdapter,
+      dataTypeAdapter,
       valueSetExpandQuery,
-      formatted: uiContext.dataTypeAdapter[props.type].format(
+      formatted: dataTypeAdapter[props.type].format(
         props.value as any,
         {
           ...options,
@@ -192,10 +192,7 @@ export function FhirValue(props: FhirValueProps): ReactElement | null {
     return (
       <div
         dangerouslySetInnerHTML={{
-          __html: uiContext.dataTypeAdapter.markdown.format(
-            props.value,
-            props.options
-          ),
+          __html: dataTypeAdapter.markdown.format(props.value, props.options),
         }}
       />
     );
@@ -203,7 +200,7 @@ export function FhirValue(props: FhirValueProps): ReactElement | null {
 
   return (
     <>
-      {uiContext.dataTypeAdapter[props.type].format(
+      {dataTypeAdapter[props.type].format(
         props.value as any,
         {
           ...options,

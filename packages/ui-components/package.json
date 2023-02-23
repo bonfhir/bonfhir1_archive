@@ -45,7 +45,10 @@
   },
   "dependencies": {
     "@bonfhir/core": "^1.0.0-alpha.12",
-    "@bonfhir/fhir-query": "^0.1.0-alpha.6"
+    "@bonfhir/fhir-query": "^0.1.0-alpha.6",
+    "formik": "^2.2.9",
+    "react-hook-form": "^7.43.2",
+    "use-deep-compare-effect": "^1.8.1"
   },
   "prettier": "@bonfhir/prettier-config",
   "peerDependencies": {

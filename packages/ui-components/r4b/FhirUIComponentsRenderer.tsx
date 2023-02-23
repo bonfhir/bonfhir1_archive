@@ -3,8 +3,11 @@ import {
   ValueSetExpandOperationResult,
 } from "@bonfhir/core/r4b";
 import { UseQueryResult } from "@tanstack/react-query";
-import { ReactElement } from "react";
+import { FieldHelperProps, FieldInputProps, FieldMetaProps } from "formik";
+import { ReactElement, ReactNode } from "react";
 import { FhirValueProps } from "./display";
+import { FhirFieldResourcePropsOptions } from "./forms/fields/resource";
+import { FhirFieldStringPropsOptions } from "./forms/fields/string";
 
 /**
  * Renderer interface for FHIR UI Components.
@@ -27,10 +30,25 @@ export interface FhirUIComponentsRenderer {
   ) => ReactElement | null;
 
   /**
+   * Renderer for an Input component.
+   */
+  input: <TRendererProps = unknown>(
+    props: InputProps<TRendererProps>
+  ) => ReactElement | null;
+
+  /**
    * Renderer to display a panel showing an unexpected/technical error.
    */
   loader: <TRendererProps = unknown>(
     props: LoaderProps<TRendererProps>
+  ) => ReactElement | null;
+
+  resource: <TRendererProps = unknown>(
+    props: ResourceProps<TRendererProps>
+  ) => ReactElement | null;
+
+  table: <TRendererProps = unknown, TColumnRenderProps = unknown>(
+    props: TableProps<TRendererProps, TColumnRenderProps>
   ) => ReactElement | null;
 
   /**
@@ -49,13 +67,50 @@ export type EmptyProps<TRendererProps = unknown> = TRendererProps & {
   query?: UseQueryResult | Array<UseQueryResult> | undefined;
 };
 
+export type ErrorPanelProps<TRendererProps = unknown> = TRendererProps & {
+  query?: UseQueryResult | Array<UseQueryResult> | undefined;
+  error: unknown;
+};
+
+export type InputProps<TRendererProps = unknown> = TRendererProps & {
+  options?: FhirFieldStringPropsOptions | null | undefined;
+} & {
+  field: FieldInputProps<string>;
+  meta: FieldMetaProps<string>;
+  helpers: FieldHelperProps<string>;
+};
+
 export type LoaderProps<TRendererProps = unknown> = TRendererProps & {
   query?: UseQueryResult | Array<UseQueryResult> | undefined;
 };
 
-export type ErrorPanelProps<TRendererProps = unknown> = TRendererProps & {
-  query?: UseQueryResult | Array<UseQueryResult> | undefined;
-  error: unknown;
+export type ResourceProps<TRendererProps = unknown> = TRendererProps & {
+  options: FhirFieldResourcePropsOptions;
+} & {
+  field: FieldInputProps<string>;
+  meta: FieldMetaProps<string>;
+  helpers: FieldHelperProps<string>;
+} & {
+  onSearch?: (value: string) => void;
+  items: Array<{ label: string; value: string }>;
+};
+
+export type TableProps<TRendererProps, TColumnRenderProps> = TRendererProps & {
+  query: UseQueryResult;
+  data: readonly unknown[] | undefined;
+  columns: readonly TableColum<TColumnRenderProps>[];
+  total: number;
+  pageSize: number;
+  onPageChange: (direction: "next" | "previous") => void;
+  sort: string | null | undefined;
+  onSortChange: (sort: string) => void;
+};
+
+export type TableColum<TRendererProps> = TRendererProps & {
+  key: string;
+  title: string;
+  sortable: boolean;
+  render: (rowIndex: number) => ReactNode;
 };
 
 export type ValueRendererProps<TRendererProps = unknown> = TRendererProps &
