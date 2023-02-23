@@ -176,7 +176,6 @@ import type {
   VerificationResult,
   VisionPrescription,
 } from "fhir/r4";
-import { encode } from "html-entities";
 import type { ComplexElementType, ExtractComplexElement } from "./types";
 
 /**
@@ -1539,10 +1538,10 @@ export function narrativeElementByType({
         }
 
         return `<li><span class="fhir-attr">${attr}: </span><span class="fhir-value">${value
-          .map((x) => encode(x?.toString()))
+          .map((x) => htmlEncode(x?.toString()))
           .join(", ")}</span></li>`;
       }
-      return `<li><span class="fhir-attr">${attr}: </span><span class="fhir-value">${encode(
+      return `<li><span class="fhir-attr">${attr}: </span><span class="fhir-value">${htmlEncode(
         value?.toString()
       )}</span></li>`;
     case "Address":
@@ -13406,4 +13405,11 @@ export function buildNarrative(components: NarrativeElement[]): Narrative {
       .filter((x) => !!x)
       .join("")}</ul></div>`,
   };
+}
+
+function htmlEncode(value: string): string {
+  return value.replace(
+    /[\u00A0-\u9999<>&]/g,
+    (i) => "&#" + i.charCodeAt(0) + ";"
+  );
 }

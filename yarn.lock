@@ -1960,7 +1960,6 @@ __metadata:
     "@types/rimraf": ^3
     eslint: ^8.30.0
     fhirpath: ^3.3.1
-    html-entities: ^2.3.3
     jest: ^29.3.1
     jest-mock-extended: ^3.0.1
     marked: ^4.2.12
@@ -13901,7 +13900,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"html-entities@npm:^2.3.2, html-entities@npm:^2.3.3":
+"html-entities@npm:^2.3.2":
   version: 2.3.3
   resolution: "html-entities@npm:2.3.3"
   checksum: 92521501da8aa5f66fee27f0f022d6e9ceae62667dae93aa6a2f636afa71ad530b7fb24a18d4d6c124c9885970cac5f8a52dbf1731741161002816ae43f98196
