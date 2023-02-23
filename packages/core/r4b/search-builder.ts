@@ -1,5 +1,7 @@
 import cloneDeep from "lodash/cloneDeep";
 import isNil from "lodash/isNil";
+import isObject from "lodash/isObject";
+import isString from "lodash/isString";
 import { ResourceType } from "./types";
 
 /**
@@ -65,7 +67,7 @@ export class FhirSearchBuilder {
           .map(
             (x) =>
               `${prefix || ""}${
-                typeof x === "string" ? encodeURIComponent(x) : x.toISOString()
+                isString(x) ? encodeURIComponent(x) : x.toISOString()
               }`
           )
           .join(","),
@@ -183,7 +185,7 @@ export class FhirSearchBuilder {
         .map(
           (x) =>
             `${prefix || ""}${
-              typeof x === "object"
+              isObject(x)
                 ? [x.number, x.system, x.code]
                     .map((y) => (y ? encodeURIComponent(`${y}`) : ""))
                     .join("|")
@@ -327,7 +329,7 @@ export class FhirSearchBuilder {
     const renderedParameterValues = (
       parameterValues as Array<{ id: string; type: string } | string>
     ).map((x) =>
-      typeof x === "string"
+      isString(x)
         ? encodeURIComponent(x)
         : encodeURIComponent(
             `${x.type}/${
@@ -379,7 +381,7 @@ export class FhirSearchBuilder {
     replace?: "replace" | null | undefined
   ): FhirSearchBuilder {
     if (value?.length) {
-      const parameterValues = typeof value === "string" ? [value] : value;
+      const parameterValues = isString(value) ? [value] : value;
       this.push(
         `${parameter}${modifier || ""}`,
         parameterValues.map((x) => encodeURIComponent(x)).join(","),
@@ -463,13 +465,19 @@ export class FhirSearchBuilder {
           value?: string | null | undefined;
         }
   ): string {
-    const result =
-      typeof value === "string"
-        ? encodeURIComponent(value)
-        : [value.system, value.code, value.value]
-            .filter((x) => !isNil(x))
-            .map((x) => (x ? encodeURIComponent(x) : x))
-            .join("|");
+    let result = "";
+
+    if (isString(value)) {
+      result = encodeURIComponent(value);
+    } else if (value.system && !value.code && !value.value) {
+      result = `${encodeURIComponent(value.system)}|`;
+    } else {
+      result = [value.system, value.code, value.value]
+        .filter((x) => !isNil(x))
+        .map((x) => (x ? encodeURIComponent(x) : x))
+        .join("|");
+    }
+
     if (!result || result === "|") {
       return "";
     }

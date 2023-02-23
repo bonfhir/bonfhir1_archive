@@ -255,6 +255,10 @@ describe("search-builder", () => {
       "code:below=126851005",
     ],
     [
+      fhirSearch().token("code", { system: "http://hl7.org/fhir/sid/icd-10" }),
+      "code=http%3A%2F%2Fhl7.org%2Ffhir%2Fsid%2Ficd-10|",
+    ],
+    [
       fhirSearch().token(
         "code",
         "http://acme.org/fhir/ValueSet/cardiac-conditions",
