@@ -89,7 +89,7 @@ describe("BundleNavigator", () => {
       )[0]!.resource;
 
       const provenanceWithPatientTarget = navigator.revReference<Provenance>(
-        "ofType(Provenance).target.reference",
+        (provenance) => provenance.target,
         patientReference
       );
 
@@ -104,7 +104,7 @@ describe("BundleNavigator", () => {
       const patientReference = "Patient/23af4168-fc91-4b4d-a498-4485ce5ebc6f";
 
       const provenanceWithPatientTarget = navigator.revReference<Provenance>(
-        "ofType(Provenance).target.reference",
+        (provenance) => provenance.target,
         patientReference
       );
 
@@ -119,7 +119,7 @@ describe("BundleNavigator", () => {
         );
 
         const result = navigator.revReference<Provenance>(
-          "ofType(Provenance).target.reference",
+          (provenance) => provenance.target,
           patientReference
         );
 
@@ -142,7 +142,7 @@ describe("BundleNavigator", () => {
 
       const provenanceWithPatientTarget =
         navigator.firstRevReference<Provenance>(
-          "ofType(Provenance).target.reference",
+          (provenance) => provenance.target,
           patientReference
         );
 
@@ -156,7 +156,7 @@ describe("BundleNavigator", () => {
 
       const provenanceWithPatientTarget =
         navigator.firstRevReference<Provenance>(
-          "ofType(Provenance).target.reference",
+          (provenance) => provenance.target,
           patientReference
         );
 
@@ -171,7 +171,7 @@ describe("BundleNavigator", () => {
         );
 
         const result = navigator.firstRevReference<Provenance>(
-          "ofType(Provenance).target.reference",
+          (provenance) => provenance.target,
           patientReference
         );
 

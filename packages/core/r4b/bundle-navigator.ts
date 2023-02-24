@@ -1,5 +1,4 @@
-import { Bundle, BundleEntry, FhirResource } from "fhir/r4";
-import { evaluate as evaluateFhirPath } from "fhirpath";
+import { Bundle, BundleEntry, FhirResource, Reference } from "fhir/r4";
 import { buildReferenceFromResource } from "./builders";
 import { asArray } from "./types";
 
@@ -64,13 +63,13 @@ export class BundleNavigator<
       >
     | undefined;
 
-  // Index resources first by a fhirPath indicating a reverse reference
+  // Index resources first by a select function expression indicating a reverse reference
   // (probably obtained through a _revinclude instruction), then by the actual reverse reference - e.g.
-  // "ofType(Provenance).target.reference" -> Patient/982effa0-aa0f-4995-b380-c1621b1f0ffc -> [Provenance]
-  // Built by _ensureFhirPathIndex
-  private _resourcesByRefFhirPathIndex:
+  // `(res) => res.target` -> Patient/982effa0-aa0f-4995-b380-c1621b1f0ffc -> [Provenance]
+  // Built by _ensureSelectIndex
+  private _resourcesByRefSelectIndex:
     | Map<
-        string | Path,
+        string,
         Map<string, Array<PrimaryResourceType | SecondaryResourceType>>
       >
     | undefined;
@@ -110,13 +109,13 @@ export class BundleNavigator<
   }
 
   /**
-   * Return matching resources that have the reference returned by the specified FHIRPath
+   * Return matching resources that have the reference returned by the specified select expression
    * This can be used to find associated resource returned as part of a revinclude search parameter.
-   * @param fhirPath - the FHIR path that points to the reference to look for inside the resource. - e.g. "ofType(Claim).patient.reference"
-   * @param reference - the resource reference to match with the values returned by the fhirPath - e.g. "Patient/59ba0a80-035a-4a8e-930b-d9f6c523b97a"
+   * @param select - the select function to index the resources. - e.g. `claim => claim.patient`
+   * @param reference - the resource reference to match with the values returned by the select - e.g. "Patient/59ba0a80-035a-4a8e-930b-d9f6c523b97a"
    *
    * @example
-   *   navigator.refReference<Appointment>("ofType(Appointment).participant.actor.reference", "Practitioner/06549508-aae9-4d82-a937-0ddeb0f2de38");
+   *   navigator.refReference<Appointment>(appointment => appointment.participant.actor, "Practitioner/06549508-aae9-4d82-a937-0ddeb0f2de38");
    *
    * @see http://hl7.org/fhir/fhirpath.html
    */
@@ -125,27 +124,29 @@ export class BundleNavigator<
       | PrimaryResourceType
       | SecondaryResourceType
   >(
-    fhirPath: string | Path,
+    select: (resource: MatchType) => Reference | Reference[],
     reference: string | null | undefined
   ): MatchType[] {
     if (!reference?.length) {
       return [];
     }
 
-    this._ensureFhirPathIndex(fhirPath);
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    this._ensureSelectIndex(select as any);
 
-    return (this._resourcesByRefFhirPathIndex?.get(fhirPath)?.get(reference) ||
-      []) as MatchType[];
+    return (this._resourcesByRefSelectIndex
+      ?.get(select.toString())
+      ?.get(reference) || []) as MatchType[];
   }
 
   /**
-   * Return the first matching resource that have the reference returned by the specified FHIRPath, or undefined if there isn't any.
+   * Return the first matching resource that have the reference returned by the specified select expression, or undefined if there isn't any.
    * This can be used to find associated resource returned as part of a revinclude search parameter.
-   * @param fhirPath - the FHIR path that points to the reference to look for inside the resource. - e.g. "ofType(Claim).patient"
-   * @param reference - the resource reference to match with the values returned by the fhirPath - e.g. "Patient/59ba0a80-035a-4a8e-930b-d9f6c523b97a"
+   * @param select - the select function to index the resources. - e.g. `claim => claim.patient`
+   * @param reference - the resource reference to match with the values returned by the select - e.g. "Patient/59ba0a80-035a-4a8e-930b-d9f6c523b97a"
    *
    * @example
-   *   navigator.refReference<Appointment>("ofType(Provenance).target.actor.reference", "Patient/06549508-aae9-4d82-a937-0ddeb0f2de38");
+   *   navigator.refReference<Appointment>(provenance => provenance.target.actor, "Patient/06549508-aae9-4d82-a937-0ddeb0f2de38");
    *
    * @see http://hl7.org/fhir/fhirpath.html
    */
@@ -154,17 +155,19 @@ export class BundleNavigator<
       | PrimaryResourceType
       | SecondaryResourceType
   >(
-    fhirPath: string | Path,
+    select: (resource: MatchType) => Reference | Reference[],
     reference: string | null | undefined
   ): MatchType | undefined {
     if (!reference?.length) {
       return undefined;
     }
 
-    this._ensureFhirPathIndex(fhirPath);
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    this._ensureSelectIndex(select as any);
 
-    return (this._resourcesByRefFhirPathIndex?.get(fhirPath)?.get(reference) ||
-      [])?.[0] as MatchType | undefined;
+    return (this._resourcesByRefSelectIndex
+      ?.get(select.toString())
+      ?.get(reference) || [])?.[0] as MatchType | undefined;
   }
 
   /**
@@ -273,28 +276,30 @@ export class BundleNavigator<
     }
   }
 
-  private _ensureFhirPathIndex(fhirPath: string | Path): void {
-    if (!this._resourcesByRefFhirPathIndex) {
-      this._resourcesByRefFhirPathIndex = new Map();
+  private _ensureSelectIndex(select: (res: unknown) => Reference): void {
+    if (!this._resourcesByRefSelectIndex) {
+      this._resourcesByRefSelectIndex = new Map();
     }
 
-    if (!this._resourcesByRefFhirPathIndex.has(fhirPath)) {
-      const mappedByFhirPath = new Map();
+    if (!this._resourcesByRefSelectIndex.has(select.toString())) {
+      const mappedByReference = new Map();
       for (const entry of this._bundles
         .flatMap(
           (x) =>
             x.entry as BundleEntry<PrimaryResourceType | SecondaryResourceType>
         )
         .filter((x) => !!x) || []) {
-        for (const reference of evaluateFhirPath(entry.resource, fhirPath)) {
-          if (!mappedByFhirPath.has(reference)) {
-            mappedByFhirPath.set(reference, []);
+        for (const reference of asArray(select(entry.resource)).filter(
+          (ref) => !!ref?.reference
+        )) {
+          if (!mappedByReference.has(reference.reference)) {
+            mappedByReference.set(reference.reference, []);
           }
 
-          mappedByFhirPath.get(reference).push(entry.resource);
+          mappedByReference.get(reference.reference).push(entry.resource);
         }
       }
-      this._resourcesByRefFhirPathIndex.set(fhirPath, mappedByFhirPath);
+      this._resourcesByRefSelectIndex.set(select.toString(), mappedByReference);
     }
   }
 }
