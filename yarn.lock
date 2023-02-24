@@ -1959,7 +1959,6 @@ __metadata:
     "@types/node": ^18.11.18
     "@types/rimraf": ^3
     eslint: ^8.30.0
-    fhirpath: ^3.3.1
     jest: ^29.3.1
     jest-mock-extended: ^3.0.1
     marked: ^4.2.12

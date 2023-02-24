@@ -330,7 +330,7 @@ for (const patient of navigator.searchMatch()) {
     patient?.managingOrganization?.reference
   );
   const provenance = navigator.firstRevReference<Provenance>(
-    "ofType(Provenance).target.reference",
+    (provenance) => provenance.target,
     buildReferenceFromResource(patient).reference
   );
   const provenanceOrganization = navigator.reference(
@@ -344,7 +344,7 @@ In this example, the bundle is only iterated twice:
 - once to index the results for the calls to `searchMatch` and `reference`
 - a second time to create the on-the-fly index for the `firstRevReference`
 
-The reverse references uses [FHIR Path](http://hl7.org/fhirpath/N1/) to create indices that can be reused in loops.
+The reverse references also create indices that can be reused in loops, assuming the select function is the same (the cache key is the function `toString()` method).
 
 All indices are created lazily, so it is very cheap to create / return a `bundleNavigator` even if it is not used subsequently.
 
