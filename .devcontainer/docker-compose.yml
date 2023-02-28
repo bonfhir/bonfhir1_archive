@@ -19,7 +19,7 @@ services:
       - devcontainer_command_history:/command_history
 
   medplum:
-    image: ghcr.io/bonfhir/medplum-devbox:v1.0.6
+    image: ghcr.io/bonfhir/medplum-devbox:v2.0.4
     depends_on:
       - postgres
       - redis
@@ -27,7 +27,7 @@ services:
       - "3000:3000"
       - "8103:8103"
     volumes:
-      - ./medplum.config.json:/workspace/packages/server/medplum.config.json
+      - ./medplum.config.json:/usr/src/medplum/packages/server/medplum.config.json
   
   postgres:
     image: postgres:12-bullseye
