@@ -14,7 +14,6 @@ Differences with the [official medplum docker image](https://hub.docker.com/r/me
 
 - Runs **BOTH** the server **AND** the front-end app concurrently, so that once it's started you can [connect to the app](http://localhost:3000) right away
 - Automatically seeds a `ClientApplication` with default, stable [credentials](#default-application) in addition to the [default medplum user](#default-user)
-- Multi-arch: `arm64` in addition to `amd64` to support running smoothly on Apple Silicon as well as X86
 
 **DO NOT USE IN PRODUCTION**.
 
@@ -36,7 +35,7 @@ services:
       - "3000:3000"
       - "8103:8103"
     volumes:
-      - ./medplum.config.json:/workspace/packages/server/medplum.config.json
+      - ./medplum.config.json:/usr/src/medplum/packages/server/medplum.config.json
 
   postgres:
     image: postgres:12-bullseye
@@ -83,3 +82,4 @@ Example of content for the volume-mounted files can be found here:
 
 - **Client ID**: f54370de-eaf3-4d81-a17e-24860f667912
 - **Client Secret**: 75d8e7d06bf9283926c51d5f461295ccf0b69128e983b6ecdd5a9c07506895de
+- **Redirect URI**: http://localhost:1234/
