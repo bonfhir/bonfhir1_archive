@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.10](https://github.com/bonfhir/bonfhir/compare/@bonfhir/medplum@1.0.0-alpha.9...@bonfhir/medplum@1.0.0-alpha.10) (2023-03-01)
+
+**Note:** Version bump only for package @bonfhir/medplum
+
+
+
+
+
 # [1.0.0-alpha.9](https://github.com/bonfhir/bonfhir/compare/@bonfhir/medplum@1.0.0-alpha.8...@bonfhir/medplum@1.0.0-alpha.9) (2023-02-08)
 
 **Note:** Version bump only for package @bonfhir/medplum

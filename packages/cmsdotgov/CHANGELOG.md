@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.13](https://github.com/bonfhir/bonfhir/compare/@bonfhir/cmsdotgov@1.0.0-alpha.12...@bonfhir/cmsdotgov@1.0.0-alpha.13) (2023-03-01)
+
+
+### Bug Fixes
+
+* **cmsdotgov:** :white_check_mark: update unit tests after narrative update ([41bbeb7](https://github.com/bonfhir/bonfhir/commit/41bbeb7a795106f7e8b69c41e78a6ff6bf042b74))
+
+
+
+
+
 # [1.0.0-alpha.12](https://github.com/bonfhir/bonfhir/compare/@bonfhir/cmsdotgov@1.0.0-alpha.11...@bonfhir/cmsdotgov@1.0.0-alpha.12) (2023-02-08)
 
 **Note:** Version bump only for package @bonfhir/cmsdotgov

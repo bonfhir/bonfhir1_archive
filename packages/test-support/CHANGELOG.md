@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.10](https://github.com/bonfhir/bonfhir/compare/@bonfhir/test-support@1.0.0-alpha.9...@bonfhir/test-support@1.0.0-alpha.10) (2023-03-01)
+
+
+### Bug Fixes
+
+* **codegen:** :adhesive_bandage: fix bundling of auto-generated note ([295efa0](https://github.com/bonfhir/bonfhir/commit/295efa0900f0cb1f80a889e05d8969452ccb8262))
+
+
+
+
+
 # [1.0.0-alpha.9](https://github.com/bonfhir/bonfhir/compare/@bonfhir/test-support@1.0.0-alpha.8...@bonfhir/test-support@1.0.0-alpha.9) (2023-02-08)
 
 **Note:** Version bump only for package @bonfhir/test-support

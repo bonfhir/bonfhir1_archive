@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.12](https://github.com/bonfhir/bonfhir/compare/@bonfhir/nih-nlm@1.0.0-alpha.11...@bonfhir/nih-nlm@1.0.0-alpha.12) (2023-03-01)
+
+
+### Bug Fixes
+
+* **nih-nlm:** :white_check_mark: fix unit tests after narrative update in core ([91884cf](https://github.com/bonfhir/bonfhir/commit/91884cf9fb0ef7cfbbe589a97c1b5c82713b18c1))
+
+
+
+
+
 # [1.0.0-alpha.11](https://github.com/bonfhir/bonfhir/compare/@bonfhir/nih-nlm@1.0.0-alpha.10...@bonfhir/nih-nlm@1.0.0-alpha.11) (2023-02-08)
 
 **Note:** Version bump only for package @bonfhir/nih-nlm
