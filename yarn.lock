@@ -2000,12 +2000,12 @@ __metadata:
   dependencies:
     "@bonfhir/antd": ^0.1.0-alpha.0
     "@bonfhir/core": ^1.0.0-alpha.8
-    "@bonfhir/eslint-config": ^1.0.0
+    "@bonfhir/eslint-config": ^1.1.0-alpha.0
     "@bonfhir/fhir-query": ^0.1.0-alpha.1
     "@bonfhir/medplum": ^1.0.0-alpha.9
     "@bonfhir/prettier-config": ^1.0.0
     "@bonfhir/terminology": ^1.0.0-alpha.3
-    "@bonfhir/typescript-config": ^1.0.0
+    "@bonfhir/typescript-config": ^1.0.1-alpha.0
     "@bonfhir/ui-components": ^0.1.0-alpha.1
     "@medplum/core": ^2.0.3
     "@swc/core": ^1.3.24
@@ -2052,21 +2052,6 @@ __metadata:
     prettier: ^2.8.1
   languageName: unknown
   linkType: soft
-
-"@bonfhir/eslint-config@npm:^1.0.0":
-  version: 1.0.0
-  resolution: "@bonfhir/eslint-config@npm:1.0.0"
-  dependencies:
-    "@typescript-eslint/eslint-plugin": ^5.47.1
-    "@typescript-eslint/parser": ^5.47.1
-    eslint: ^8.30.0
-    eslint-config-prettier: ^8.5.0
-    eslint-plugin-prettier: ^4.2.1
-  peerDependencies:
-    prettier: ^2.8.1
-  checksum: bdec55db4030c039a8aabe8070020adf953285798a352a995e0f198deab4b0559f017a8aaef8d254e26f0155992def9757f176aca6e616999206f8b45e9e8423
-  languageName: node
-  linkType: hard
 
 "@bonfhir/fhir-query@^0.1.0-alpha.1, @bonfhir/fhir-query@^0.1.0-alpha.2, @bonfhir/fhir-query@workspace:packages/fhir-query":
   version: 0.0.0-use.local
@@ -2227,16 +2212,6 @@ __metadata:
     typescript: ^4.9.4
   languageName: unknown
   linkType: soft
-
-"@bonfhir/typescript-config@npm:^1.0.0":
-  version: 1.0.0
-  resolution: "@bonfhir/typescript-config@npm:1.0.0"
-  dependencies:
-    "@types/node": ^18.11.18
-    typescript: ^4.9.4
-  checksum: fd5ac4153bfd3a2683b0c2950f5320d8303e0f8a2f8d58ac08ffb9ca14da549260c390a2f73a7c5d39d576b012bf2673214eb2a01e1d51ef73404a28b68c3883
-  languageName: node
-  linkType: hard
 
 "@bonfhir/ui-components@^0.1.0-alpha.1, @bonfhir/ui-components@^0.1.0-alpha.2, @bonfhir/ui-components@workspace:packages/ui-components":
   version: 0.0.0-use.local
