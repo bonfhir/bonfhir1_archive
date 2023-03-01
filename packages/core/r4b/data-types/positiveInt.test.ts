@@ -4,10 +4,12 @@ import {
   fhirUnsignedIntTypeAdapter,
 } from "./positiveInt";
 
-[
-  [fhirPositiveIntTypeAdapter, "fhirPositiveIntTypeAdapter"],
-  [fhirUnsignedIntTypeAdapter, "fhirUnsignedIntTypeAdapter"],
-].map(([adapterFunction, name]) => {
+(
+  [
+    [fhirPositiveIntTypeAdapter, "fhirPositiveIntTypeAdapter"],
+    [fhirUnsignedIntTypeAdapter, "fhirUnsignedIntTypeAdapter"],
+  ] as const
+).map(([adapterFunction, name]) => {
   describe(`${name}`, () => {
     ["en-us", undefined].forEach((locale) => {
       describe(`with ${locale} as locale`, () => {

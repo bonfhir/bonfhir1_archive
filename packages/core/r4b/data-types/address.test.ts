@@ -1,5 +1,5 @@
 import { Address, ValueSetExpansionContains } from "fhir/r4";
-import entries from "lodash/entries";
+import toPairs from "lodash/toPairs";
 import { FhirAddressFormatOptions, fhirAddressTypeAdapter } from "./address";
 
 describe("fhirAddressTypeAdapter", () => {
@@ -91,7 +91,7 @@ describe("fhirAddressTypeAdapter", () => {
         },
         ["18 rue des paquerettes, Nevada. (main address)"],
       ],
-      ...entries({
+      ...toPairs({
         short: [
           "18 rue des paquerettes",
           "allée 3",

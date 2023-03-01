@@ -1,5 +1,5 @@
 import { HumanName, ValueSetExpansionContains } from "fhir/r4";
-import _ from "lodash";
+import toPairs from "lodash/toPairs";
 import {
   FhirHumanNameFormatOptions,
   fhirHumanNameTypeAdapter,
@@ -66,7 +66,7 @@ describe("fhirHumanNameTypeAdapter", () => {
         },
         "Mr Dr Bonisseur de la Bath Hubert Léandre jr (officiel)",
       ],
-      ..._.entries({
+      ...toPairs({
         shorter: "Hubert",
         short: "Hubert Bonisseur de la Bath",
         medium: "Mr Dr Bonisseur de la Bath Hubert",
