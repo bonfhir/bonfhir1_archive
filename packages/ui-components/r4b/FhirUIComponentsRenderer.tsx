@@ -73,5 +73,5 @@ export type ValueRendererProps<TRendererProps = unknown> = TRendererProps &
     /**
      * The formatted string using the options, if you want to use it directly.
      */
-    formatted: string;
+    formatted: string | undefined;
   };
