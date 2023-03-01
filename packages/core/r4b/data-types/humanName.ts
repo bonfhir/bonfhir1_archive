@@ -57,9 +57,7 @@ export type FhirHumanNameFormatOptions = {
   /**
    * When using a list of names, the options to pass to the Intl listFormat method.
    */
-  // listFormatOptions is only available in es2022
-  // listFormatOptions?: Intl.ListFormatOptions | undefined;
-  listFormatOptions?: object | undefined;
+  listFormatOptions?: Intl.ListFormatOptions | undefined;
 
   useValueSetExpansions?: FhirCodeFormatOptions["valueSetExpansions"];
 };
@@ -99,7 +97,6 @@ export function fhirHumanNameTypeAdapter(
           options
         ).map((humanName) => this.format(humanName, options));
 
-        // @ts-expect-error, ListFormat typing is only available on es2022
         return new Intl.ListFormat(locale, options?.listFormatOptions).format(
           formattedHumanNameList
         );

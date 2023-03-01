@@ -42,9 +42,7 @@ export type FhirContactPointFormatOptions = {
   /**
    * When using a list of contact points, the options to pass to the Intl listFormat method.
    */
-  // listFormatOptions is only available in es2022
-  // listFormatOptions?: Intl.ListFormatOptions | undefined;
-  listFormatOptions?: object | undefined;
+  listFormatOptions?: Intl.ListFormatOptions | undefined;
 
   systemValueSetExpansions?: FhirCodeFormatOptions["valueSetExpansions"];
   useValueSetExpansions?: FhirCodeFormatOptions["valueSetExpansions"];
@@ -83,7 +81,6 @@ export function fhirContactPointTypeAdapter(
           options
         ).map((contactPoint) => this.format(contactPoint, options));
 
-        // @ts-expect-error, ListFormat typing is only available on es2022
         return new Intl.ListFormat(locale, options?.listFormatOptions).format(
           formattedContactPointList
         );

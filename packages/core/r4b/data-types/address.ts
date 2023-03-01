@@ -60,9 +60,7 @@ export type FhirAddressFormatOptions = {
   /**
    * When using a list of addresses, the options to pass to the Intl listFormat method.
    */
-  // listFormatOptions is only available in es2022
-  // listFormatOptions?: Intl.ListFormatOptions | undefined;
-  listFormatOptions?: object | undefined;
+  listFormatOptions?: Intl.ListFormatOptions | undefined;
 
   useValueSetExpansions?: FhirCodeFormatOptions["valueSetExpansions"];
   typeValueSetExpansions?: FhirCodeFormatOptions["valueSetExpansions"];
@@ -117,7 +115,6 @@ export function fhirAddressTypeAdapter(
           options
         ).map((address) => this.format(address, options));
 
-        // @ts-expect-error, ListFormat typing is only available on es2022
         return new Intl.ListFormat(locale, options?.listFormatOptions).format(
           formattedAddressList
         );
