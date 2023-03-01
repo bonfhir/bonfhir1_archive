@@ -1,32 +1,29 @@
-/* Date and Time regexp fragments */
-/* eslint-disable */
-export const fhirDateRegexpFragment =
-  "(?<date>" +
-  "(?<year>[0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)" + // mandatory year
-  "(" +
-  "-(?<month>0[1-9]|1[0-2])" + // month
-  "(" +
-  "-(?<day>0[1-9]|[1-2][0-9]|3[0-1])" + // day
-  ")?" + //optional day
-  ")?" + // optional month
-  ")";
-
-export const fhirTimeRegexpFragment =
-  "(?<time>" +
-  "(?<hours>[01][0-9]|2[0-3]):" +
-  "(?<minutes>[0-5][0-9]):" +
-  "(?<seconds>[0-5][0-9]|60)" +
-  "(?<milliseconds>\\.[0-9]{1,9})?" +
-  ")";
-
-export const fhirTimezoneRegexpFragment =
-  "(?<timezone>Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))";
-
-export const fhirTimeWithZoneRegexpFragment =
-  "(?<timeWithTimezone>" +
-  fhirTimeRegexpFragment +
-  fhirTimezoneRegexpFragment +
-  ")";
-
 export const removeDoubleSpaces = (value: string): string =>
   value.replace(/\s{2,}/g, " ").trim();
+
+import { Period } from "fhir/r4";
+import { FhirDateTimeTypeAdapter, fhirDateTimeTypeAdapter } from "../dateTime";
+
+let dateTimeAdapter: FhirDateTimeTypeAdapter;
+
+type elementWithPeriod = {
+  period?: Period | undefined;
+};
+export const comparePeriods = (
+  element1: elementWithPeriod,
+  element2: elementWithPeriod
+) => {
+  dateTimeAdapter ||= fhirDateTimeTypeAdapter();
+  const element1EndDate = dateTimeAdapter.parse(element1?.period?.end);
+  const element2EndDate = dateTimeAdapter.parse(element2?.period?.end);
+
+  // sort by period
+  if (!element1EndDate && element2EndDate) return -1;
+  if (!element2EndDate && element1EndDate) return 1;
+  if (element1EndDate && element2EndDate) {
+    if (element1EndDate.date > element2EndDate.date) return -1;
+    if (element2EndDate.date > element1EndDate.date) return 1;
+  }
+
+  return 0;
+};

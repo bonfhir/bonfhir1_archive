@@ -23,6 +23,13 @@ describe("fhirPeriodTypeAdapter", () => {
       ],
       [
         {
+          start: "2023-12-15",
+        },
+        undefined,
+        "12/15/2023 - ongoing",
+      ],
+      [
+        {
           start: "2015-02-07T13:28:17-05:00",
           end: "2015-02-08T13:28:17-05:00",
         },

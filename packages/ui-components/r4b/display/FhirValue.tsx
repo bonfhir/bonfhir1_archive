@@ -54,33 +54,43 @@ export type HasValueSetExpand = {
 };
 
 export type FhirValueProps =
+  | FhirValuePropsAdapter<"address">
+  | FhirValuePropsAdapter<"age">
+  | FhirValuePropsAdapter<"base64Binary">
+  | FhirValuePropsAdapter<"boolean">
+  | FhirValuePropsAdapter<"canonical">
   | FhirValuePropsAdapter<"code">
   | FhirValuePropsAdapterValueSetExpand<"code">
-  | FhirValuePropsAdapter<"coding">
-  | FhirValuePropsAdapterValueSetExpand<"coding">
   | FhirValuePropsAdapter<"codeableConcept">
   | FhirValuePropsAdapterValueSetExpand<"codeableConcept">
-  | FhirValuePropsAdapter<"boolean">
+  | FhirValuePropsAdapter<"coding">
+  | FhirValuePropsAdapterValueSetExpand<"coding">
+  | FhirValuePropsAdapter<"contactPoint">
+  | FhirValuePropsAdapter<"count">
   | FhirValuePropsAdapter<"date">
   | FhirValuePropsAdapter<"dateTime">
+  | FhirValuePropsAdapter<"decimal">
+  | FhirValuePropsAdapter<"distance">
+  | FhirValuePropsAdapter<"duration">
+  | FhirValuePropsAdapter<"humanName">
+  | FhirValuePropsAdapter<"id">
+  | FhirValuePropsAdapter<"identifier">
   | FhirValuePropsAdapter<"instant">
   | FhirValuePropsAdapter<"integer">
-  | FhirValuePropsAdapter<"decimal">
-  | FhirValuePropsAdapter<"uri">
-  | FhirValuePropsAdapter<"url">
-  | FhirValuePropsAdapter<"canonical">
   | FhirValuePropsAdapter<"markdown">
   | FhirValuePropsAdapter<"money">
+  | FhirValuePropsAdapter<"oid">
   | FhirValuePropsAdapter<"period">
+  | FhirValuePropsAdapter<"positiveInt">
   | FhirValuePropsAdapter<"quantity">
   | FhirValuePropsAdapter<"range">
   | FhirValuePropsAdapter<"ratio">
   | FhirValuePropsAdapter<"ratioRange">
   | FhirValuePropsAdapter<"simpleQuantity">
-  | FhirValuePropsAdapter<"age">
-  | FhirValuePropsAdapter<"count">
-  | FhirValuePropsAdapter<"distance">
-  | FhirValuePropsAdapter<"duration">;
+  | FhirValuePropsAdapter<"string">
+  | FhirValuePropsAdapter<"unsignedInt">
+  | FhirValuePropsAdapter<"uri">
+  | FhirValuePropsAdapter<"url">;
 
 /**
  * Render a [FHIR datatype](https://hl7.org/fhir/datatypes.html) as a string, using the context

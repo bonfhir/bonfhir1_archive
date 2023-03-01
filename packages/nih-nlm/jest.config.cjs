@@ -6,7 +6,7 @@ const transpilationConfig = {
       syntax: "typescript",
       tsx: true,
     },
-    target: "es2020",
+    target: "es2022",
   },
   module: {
     type: "ES6",
