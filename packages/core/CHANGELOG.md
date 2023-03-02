@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.10](https://github.com/bonfhir/bonfhir/compare/@bonfhir/core@1.0.0-alpha.9...@bonfhir/core@1.0.0-alpha.10) (2023-03-02)
+
+
+### Bug Fixes
+
+* **core:** :adhesive_bandage: fix revReference signature to allow `null | undefined` on `select` ([4fa40eb](https://github.com/bonfhir/bonfhir/commit/4fa40eb6b5bf622eda1863b6b6439b3738710e1b))
+
+
+
+
+
 # [1.0.0-alpha.9](https://github.com/bonfhir/bonfhir/compare/@bonfhir/core@1.0.0-alpha.8...@bonfhir/core@1.0.0-alpha.9) (2023-03-01)
 
 
