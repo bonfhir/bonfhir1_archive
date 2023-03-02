@@ -124,7 +124,7 @@ export class BundleNavigator<
       | PrimaryResourceType
       | SecondaryResourceType
   >(
-    select: (resource: MatchType) => Reference | Reference[],
+    select: (resource: MatchType) => Reference | Reference[] | null | undefined,
     reference: string | null | undefined
   ): MatchType[] {
     if (!reference?.length) {
@@ -155,7 +155,7 @@ export class BundleNavigator<
       | PrimaryResourceType
       | SecondaryResourceType
   >(
-    select: (resource: MatchType) => Reference | Reference[],
+    select: (resource: MatchType) => Reference | Reference[] | null | undefined,
     reference: string | null | undefined
   ): MatchType | undefined {
     if (!reference?.length) {
@@ -224,12 +224,10 @@ export class BundleNavigator<
   /**
    * Return all unique resources across bundles.
    **/
-  public get resources(): IterableIterator<
-    PrimaryResourceType | SecondaryResourceType
-  > {
+  public get resources(): Array<PrimaryResourceType | SecondaryResourceType> {
     this._ensurePrimaryIndices();
     // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-    return this._resourcesByRelativeReference!.values();
+    return [...this._resourcesByRelativeReference!.values()];
   }
 
   private _ensurePrimaryIndices() {
@@ -276,7 +274,9 @@ export class BundleNavigator<
     }
   }
 
-  private _ensureSelectIndex(select: (res: unknown) => Reference): void {
+  private _ensureSelectIndex(
+    select: (res: unknown) => Reference | Reference[] | null | undefined
+  ): void {
     if (!this._resourcesByRefSelectIndex) {
       this._resourcesByRefSelectIndex = new Map();
     }
@@ -289,7 +289,7 @@ export class BundleNavigator<
             x.entry as BundleEntry<PrimaryResourceType | SecondaryResourceType>
         )
         .filter((x) => !!x) || []) {
-        for (const reference of asArray(select(entry.resource)).filter(
+        for (const reference of asArray(select(entry.resource) || []).filter(
           (ref) => !!ref?.reference
         )) {
           if (!mappedByReference.has(reference.reference)) {
