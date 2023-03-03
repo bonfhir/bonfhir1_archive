@@ -5,10 +5,8 @@ import {
   ResourceType,
 } from "@bonfhir/core/r4b";
 import { rand } from "@ngneat/falso";
-import fg from "fast-glob";
 import { Bundle, FhirResource } from "fhir/r4";
 import { evaluate } from "fhirpath";
-import { readFile } from "fs/promises";
 
 export type SyntheticFn = <TResourceType extends ResourceType>(
   resourceType: TResourceType,
@@ -68,6 +66,10 @@ export function syntheticGenerator(dataFilesPath: string): SyntheticFn {
 async function loadSyntheticNavigator(
   dataFilesPath: string
 ): Promise<BundleNavigator<FhirResource>> {
+  // We used dynamic import to allow running the rest of the package in the browser, despite bundler no bundling
+  // properly
+  const { default: fg } = await import("fast-glob");
+  const { readFile } = await import("fs/promises");
   const dataFiles = await fg(dataFilesPath);
   const bundles: Array<Bundle<FhirResource>> = [];
   for (const dataFile of dataFiles) {
