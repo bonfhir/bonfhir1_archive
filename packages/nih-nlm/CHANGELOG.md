@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.14](https://github.com/bonfhir/bonfhir/compare/@bonfhir/nih-nlm@1.0.0-alpha.13...@bonfhir/nih-nlm@1.0.0-alpha.14) (2023-03-07)
+
+
+### Features
+
+* **core:** :sparkles: simplify/shorten narrative by removing class ([adcdb27](https://github.com/bonfhir/bonfhir/commit/adcdb27df6665a916dbe23680a6bfeb949bdda26))
+
+
+
+
+
 # [1.0.0-alpha.13](https://github.com/bonfhir/bonfhir/compare/@bonfhir/nih-nlm@1.0.0-alpha.12...@bonfhir/nih-nlm@1.0.0-alpha.13) (2023-03-02)
 
 **Note:** Version bump only for package @bonfhir/nih-nlm

@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.1.0-alpha.8](https://github.com/bonfhir/bonfhir/compare/@bonfhir/charlson-comorbidity-index@0.1.0-alpha.7...@bonfhir/charlson-comorbidity-index@0.1.0-alpha.8) (2023-03-07)
+
+**Note:** Version bump only for package @bonfhir/charlson-comorbidity-index
+
+
+
+
+
 # [0.1.0-alpha.7](https://github.com/bonfhir/bonfhir/compare/@bonfhir/charlson-comorbidity-index@0.1.0-alpha.6...@bonfhir/charlson-comorbidity-index@0.1.0-alpha.7) (2023-03-03)
 
 **Note:** Version bump only for package @bonfhir/charlson-comorbidity-index

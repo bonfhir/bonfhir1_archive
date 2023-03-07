@@ -1,7 +1,7 @@
 {
   "name": "@bonfhir/cmsdotgov",
   "description": "CMS.gov integration package for Bonfhir.",
-  "version": "1.0.0-alpha.14",
+  "version": "1.0.0-alpha.15",
   "repository": "https://github.com/bonfhir/bonfhir.git",
   "license": "APACHE-2.0",
   "type": "module",
@@ -17,7 +17,7 @@
   "packageManager": "yarn@3.3.1",
   "devDependencies": {
     "@bonfhir/eslint-config": "^1.1.0-alpha.0",
-    "@bonfhir/medplum": "^1.0.0-alpha.11",
+    "@bonfhir/medplum": "^1.0.0-alpha.12",
     "@bonfhir/prettier-config": "^1.0.0",
     "@bonfhir/typescript-config": "^1.0.1-alpha.0",
     "@medplum/core": "^2.0.3",
@@ -36,7 +36,7 @@
     "typescript": "^4.9.4"
   },
   "dependencies": {
-    "@bonfhir/core": "^1.0.0-alpha.10",
+    "@bonfhir/core": "^1.0.0-alpha.11",
     "@bonfhir/terminology": "^1.0.0-alpha.4",
     "csv-parse": "^5.3.3",
     "lodash": "^4.17.21"

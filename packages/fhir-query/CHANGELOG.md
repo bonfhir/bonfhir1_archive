@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.1.0-alpha.4](https://github.com/bonfhir/bonfhir/compare/@bonfhir/fhir-query@0.1.0-alpha.3...@bonfhir/fhir-query@0.1.0-alpha.4) (2023-03-07)
+
+
+### Features
+
+* **core:** :sparkles: simplify/shorten narrative by removing class ([adcdb27](https://github.com/bonfhir/bonfhir/commit/adcdb27df6665a916dbe23680a6bfeb949bdda26))
+
+
+
+
+
 # [0.1.0-alpha.3](https://github.com/bonfhir/bonfhir/compare/@bonfhir/fhir-query@0.1.0-alpha.2...@bonfhir/fhir-query@0.1.0-alpha.3) (2023-03-02)
 
 **Note:** Version bump only for package @bonfhir/fhir-query
