@@ -51,6 +51,7 @@
   },
   "prettier": "@bonfhir/prettier-config",
   "peerDependencies": {
+    "@tanstack/react-query": "^4.0.0",
     "react": "*",
     "react-dom": "*"
   }
