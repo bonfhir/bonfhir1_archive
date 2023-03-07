@@ -20,7 +20,7 @@ describe("medplum-fhir-restful-client-adapter", () => {
     const fixturePath = join(
       dirname(fileURLToPath(import.meta.url)),
       "__fixtures__",
-      "npiregistry-sync",
+      "medplum-fhir-restful-client-adapter",
       expect.getState().currentTestName!.replace(/[^a-z0-9]/gi, "_")
     );
     if (!existsSync(fixturePath)) {

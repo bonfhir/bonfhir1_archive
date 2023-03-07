@@ -87,19 +87,19 @@ export function narrativeElementByType([attr, value, type, max]: NarrativeElemen
           return undefined;
         }
 
-        return `<li><span class="fhir-attr">${attr}: </span><span class="fhir-value">${value.map(x => htmlEncode(x?.toString())).join(", ")}</span></li>`
+        return `<li><span>${attr}: </span><span>${value.map(x => htmlEncode(x?.toString())).join(", ")}</span></li>`
       }
-      return `<li><span class="fhir-attr">${attr}: </span><span class="fhir-value">${htmlEncode(value?.toString())}</span></li>`;
+      return `<li><span>${attr}: </span><span>${htmlEncode(value?.toString())}</span></li>`;
     {{#each (fhirPath data.[profiles-types] "Bundle/ComplexElements")}}
     case "{{type}}":
       if (max === "*") {
         if (!Array.isArray(value)) {
           return undefined;
         }
-        return `<li><span class="fhir-attr">${attr}: </span><ul>${value.map(x => `<li>${narrativeElement{{type}}(x as unknown as {{type}})}</li>`).join("")}</ul></li>`;
+        return `<li><span>${attr}: </span><ul>${value.map(x => `<li>${narrativeElement{{type}}(x as unknown as {{type}})}</li>`).join("")}</ul></li>`;
       }
 
-      return `<li><span class="fhir-attr">${attr}: </span>${narrativeElement{{type}}(value as unknown as {{type}})}</li>`;
+      return `<li><span>${attr}: </span>${narrativeElement{{type}}(value as unknown as {{type}})}</li>`;
     {{/each}}
     default:
       return undefined;
@@ -144,7 +144,7 @@ function narrative{{type}}(r: {{type}}): Narrative {
 export function buildNarrative(components: NarrativeElement[]): Narrative {
   return {
     status: "generated",
-    div: `<div xmlns="http://www.w3.org/1999/xhtml" class="fhir-narrative"><ul>${components
+    div: `<div xmlns="http://www.w3.org/1999/xhtml"><ul>${components
       .map(narrativeElementByType)
       .filter((x) => !!x).join("")}</ul></div>`,
   };

@@ -1196,11 +1196,11 @@ export function narrativeElementByType([
           return undefined;
         }
 
-        return `<li><span class="fhir-attr">${attr}: </span><span class="fhir-value">${value
+        return `<li><span>${attr}: </span><span>${value
           .map((x) => htmlEncode(x?.toString()))
           .join(", ")}</span></li>`;
       }
-      return `<li><span class="fhir-attr">${attr}: </span><span class="fhir-value">${htmlEncode(
+      return `<li><span>${attr}: </span><span>${htmlEncode(
         value?.toString()
       )}</span></li>`;
     case "Address":
@@ -1208,7 +1208,7 @@ export function narrativeElementByType([
         if (!Array.isArray(value)) {
           return undefined;
         }
-        return `<li><span class="fhir-attr">${attr}: </span><ul>${value
+        return `<li><span>${attr}: </span><ul>${value
           .map(
             (x) =>
               `<li>${narrativeElementAddress(x as unknown as Address)}</li>`
@@ -1216,7 +1216,7 @@ export function narrativeElementByType([
           .join("")}</ul></li>`;
       }
 
-      return `<li><span class="fhir-attr">${attr}: </span>${narrativeElementAddress(
+      return `<li><span>${attr}: </span>${narrativeElementAddress(
         value as unknown as Address
       )}</li>`;
     case "Annotation":
@@ -1224,7 +1224,7 @@ export function narrativeElementByType([
         if (!Array.isArray(value)) {
           return undefined;
         }
-        return `<li><span class="fhir-attr">${attr}: </span><ul>${value
+        return `<li><span>${attr}: </span><ul>${value
           .map(
             (x) =>
               `<li>${narrativeElementAnnotation(
@@ -1234,7 +1234,7 @@ export function narrativeElementByType([
           .join("")}</ul></li>`;
       }
 
-      return `<li><span class="fhir-attr">${attr}: </span>${narrativeElementAnnotation(
+      return `<li><span>${attr}: </span>${narrativeElementAnnotation(
         value as unknown as Annotation
       )}</li>`;
     case "Attachment":
@@ -1242,7 +1242,7 @@ export function narrativeElementByType([
         if (!Array.isArray(value)) {
           return undefined;
         }
-        return `<li><span class="fhir-attr">${attr}: </span><ul>${value
+        return `<li><span>${attr}: </span><ul>${value
           .map(
             (x) =>
               `<li>${narrativeElementAttachment(
@@ -1252,7 +1252,7 @@ export function narrativeElementByType([
           .join("")}</ul></li>`;
       }
 
-      return `<li><span class="fhir-attr">${attr}: </span>${narrativeElementAttachment(
+      return `<li><span>${attr}: </span>${narrativeElementAttachment(
         value as unknown as Attachment
       )}</li>`;
     case "CodeableConcept":
@@ -1260,7 +1260,7 @@ export function narrativeElementByType([
         if (!Array.isArray(value)) {
           return undefined;
         }
-        return `<li><span class="fhir-attr">${attr}: </span><ul>${value
+        return `<li><span>${attr}: </span><ul>${value
           .map(
             (x) =>
               `<li>${narrativeElementCodeableConcept(
@@ -1270,7 +1270,7 @@ export function narrativeElementByType([
           .join("")}</ul></li>`;
       }
 
-      return `<li><span class="fhir-attr">${attr}: </span>${narrativeElementCodeableConcept(
+      return `<li><span>${attr}: </span>${narrativeElementCodeableConcept(
         value as unknown as CodeableConcept
       )}</li>`;
     case "CodeableReference":
@@ -1278,7 +1278,7 @@ export function narrativeElementByType([
         if (!Array.isArray(value)) {
           return undefined;
         }
-        return `<li><span class="fhir-attr">${attr}: </span><ul>${value
+        return `<li><span>${attr}: </span><ul>${value
           .map(
             (x) =>
               `<li>${narrativeElementCodeableReference(
@@ -1288,7 +1288,7 @@ export function narrativeElementByType([
           .join("")}</ul></li>`;
       }
 
-      return `<li><span class="fhir-attr">${attr}: </span>${narrativeElementCodeableReference(
+      return `<li><span>${attr}: </span>${narrativeElementCodeableReference(
         value as unknown as CodeableReference
       )}</li>`;
     case "Coding":
@@ -1296,14 +1296,14 @@ export function narrativeElementByType([
         if (!Array.isArray(value)) {
           return undefined;
         }
-        return `<li><span class="fhir-attr">${attr}: </span><ul>${value
+        return `<li><span>${attr}: </span><ul>${value
           .map(
             (x) => `<li>${narrativeElementCoding(x as unknown as Coding)}</li>`
           )
           .join("")}</ul></li>`;
       }
 
-      return `<li><span class="fhir-attr">${attr}: </span>${narrativeElementCoding(
+      return `<li><span>${attr}: </span>${narrativeElementCoding(
         value as unknown as Coding
       )}</li>`;
     case "ContactDetail":
@@ -1311,7 +1311,7 @@ export function narrativeElementByType([
         if (!Array.isArray(value)) {
           return undefined;
         }
-        return `<li><span class="fhir-attr">${attr}: </span><ul>${value
+        return `<li><span>${attr}: </span><ul>${value
           .map(
             (x) =>
               `<li>${narrativeElementContactDetail(
@@ -1321,7 +1321,7 @@ export function narrativeElementByType([
           .join("")}</ul></li>`;
       }
 
-      return `<li><span class="fhir-attr">${attr}: </span>${narrativeElementContactDetail(
+      return `<li><span>${attr}: </span>${narrativeElementContactDetail(
         value as unknown as ContactDetail
       )}</li>`;
     case "ContactPoint":
@@ -1329,7 +1329,7 @@ export function narrativeElementByType([
         if (!Array.isArray(value)) {
           return undefined;
         }
-        return `<li><span class="fhir-attr">${attr}: </span><ul>${value
+        return `<li><span>${attr}: </span><ul>${value
           .map(
             (x) =>
               `<li>${narrativeElementContactPoint(
@@ -1339,7 +1339,7 @@ export function narrativeElementByType([
           .join("")}</ul></li>`;
       }
 
-      return `<li><span class="fhir-attr">${attr}: </span>${narrativeElementContactPoint(
+      return `<li><span>${attr}: </span>${narrativeElementContactPoint(
         value as unknown as ContactPoint
       )}</li>`;
     case "Contributor":
@@ -1347,7 +1347,7 @@ export function narrativeElementByType([
         if (!Array.isArray(value)) {
           return undefined;
         }
-        return `<li><span class="fhir-attr">${attr}: </span><ul>${value
+        return `<li><span>${attr}: </span><ul>${value
           .map(
             (x) =>
               `<li>${narrativeElementContributor(
@@ -1357,7 +1357,7 @@ export function narrativeElementByType([
           .join("")}</ul></li>`;
       }
 
-      return `<li><span class="fhir-attr">${attr}: </span>${narrativeElementContributor(
+      return `<li><span>${attr}: </span>${narrativeElementContributor(
         value as unknown as Contributor
       )}</li>`;
     case "DataRequirement":
@@ -1365,7 +1365,7 @@ export function narrativeElementByType([
         if (!Array.isArray(value)) {
           return undefined;
         }
-        return `<li><span class="fhir-attr">${attr}: </span><ul>${value
+        return `<li><span>${attr}: </span><ul>${value
           .map(
             (x) =>
               `<li>${narrativeElementDataRequirement(
@@ -1375,7 +1375,7 @@ export function narrativeElementByType([
           .join("")}</ul></li>`;
       }
 
-      return `<li><span class="fhir-attr">${attr}: </span>${narrativeElementDataRequirement(
+      return `<li><span>${attr}: </span>${narrativeElementDataRequirement(
         value as unknown as DataRequirement
       )}</li>`;
     case "Expression":
@@ -1383,7 +1383,7 @@ export function narrativeElementByType([
         if (!Array.isArray(value)) {
           return undefined;
         }
-        return `<li><span class="fhir-attr">${attr}: </span><ul>${value
+        return `<li><span>${attr}: </span><ul>${value
           .map(
             (x) =>
               `<li>${narrativeElementExpression(
@@ -1393,7 +1393,7 @@ export function narrativeElementByType([
           .join("")}</ul></li>`;
       }
 
-      return `<li><span class="fhir-attr">${attr}: </span>${narrativeElementExpression(
+      return `<li><span>${attr}: </span>${narrativeElementExpression(
         value as unknown as Expression
       )}</li>`;
     case "Extension":
@@ -1401,7 +1401,7 @@ export function narrativeElementByType([
         if (!Array.isArray(value)) {
           return undefined;
         }
-        return `<li><span class="fhir-attr">${attr}: </span><ul>${value
+        return `<li><span>${attr}: </span><ul>${value
           .map(
             (x) =>
               `<li>${narrativeElementExtension(x as unknown as Extension)}</li>`
@@ -1409,7 +1409,7 @@ export function narrativeElementByType([
           .join("")}</ul></li>`;
       }
 
-      return `<li><span class="fhir-attr">${attr}: </span>${narrativeElementExtension(
+      return `<li><span>${attr}: </span>${narrativeElementExtension(
         value as unknown as Extension
       )}</li>`;
     case "HumanName":
@@ -1417,7 +1417,7 @@ export function narrativeElementByType([
         if (!Array.isArray(value)) {
           return undefined;
         }
-        return `<li><span class="fhir-attr">${attr}: </span><ul>${value
+        return `<li><span>${attr}: </span><ul>${value
           .map(
             (x) =>
               `<li>${narrativeElementHumanName(x as unknown as HumanName)}</li>`
@@ -1425,7 +1425,7 @@ export function narrativeElementByType([
           .join("")}</ul></li>`;
       }
 
-      return `<li><span class="fhir-attr">${attr}: </span>${narrativeElementHumanName(
+      return `<li><span>${attr}: </span>${narrativeElementHumanName(
         value as unknown as HumanName
       )}</li>`;
     case "Identifier":
@@ -1433,7 +1433,7 @@ export function narrativeElementByType([
         if (!Array.isArray(value)) {
           return undefined;
         }
-        return `<li><span class="fhir-attr">${attr}: </span><ul>${value
+        return `<li><span>${attr}: </span><ul>${value
           .map(
             (x) =>
               `<li>${narrativeElementIdentifier(
@@ -1443,7 +1443,7 @@ export function narrativeElementByType([
           .join("")}</ul></li>`;
       }
 
-      return `<li><span class="fhir-attr">${attr}: </span>${narrativeElementIdentifier(
+      return `<li><span>${attr}: </span>${narrativeElementIdentifier(
         value as unknown as Identifier
       )}</li>`;
     case "Meta":
@@ -1451,12 +1451,12 @@ export function narrativeElementByType([
         if (!Array.isArray(value)) {
           return undefined;
         }
-        return `<li><span class="fhir-attr">${attr}: </span><ul>${value
+        return `<li><span>${attr}: </span><ul>${value
           .map((x) => `<li>${narrativeElementMeta(x as unknown as Meta)}</li>`)
           .join("")}</ul></li>`;
       }
 
-      return `<li><span class="fhir-attr">${attr}: </span>${narrativeElementMeta(
+      return `<li><span>${attr}: </span>${narrativeElementMeta(
         value as unknown as Meta
       )}</li>`;
     case "Money":
@@ -1464,14 +1464,14 @@ export function narrativeElementByType([
         if (!Array.isArray(value)) {
           return undefined;
         }
-        return `<li><span class="fhir-attr">${attr}: </span><ul>${value
+        return `<li><span>${attr}: </span><ul>${value
           .map(
             (x) => `<li>${narrativeElementMoney(x as unknown as Money)}</li>`
           )
           .join("")}</ul></li>`;
       }
 
-      return `<li><span class="fhir-attr">${attr}: </span>${narrativeElementMoney(
+      return `<li><span>${attr}: </span>${narrativeElementMoney(
         value as unknown as Money
       )}</li>`;
     case "Narrative":
@@ -1479,7 +1479,7 @@ export function narrativeElementByType([
         if (!Array.isArray(value)) {
           return undefined;
         }
-        return `<li><span class="fhir-attr">${attr}: </span><ul>${value
+        return `<li><span>${attr}: </span><ul>${value
           .map(
             (x) =>
               `<li>${narrativeElementNarrative(x as unknown as Narrative)}</li>`
@@ -1487,7 +1487,7 @@ export function narrativeElementByType([
           .join("")}</ul></li>`;
       }
 
-      return `<li><span class="fhir-attr">${attr}: </span>${narrativeElementNarrative(
+      return `<li><span>${attr}: </span>${narrativeElementNarrative(
         value as unknown as Narrative
       )}</li>`;
     case "ParameterDefinition":
@@ -1495,7 +1495,7 @@ export function narrativeElementByType([
         if (!Array.isArray(value)) {
           return undefined;
         }
-        return `<li><span class="fhir-attr">${attr}: </span><ul>${value
+        return `<li><span>${attr}: </span><ul>${value
           .map(
             (x) =>
               `<li>${narrativeElementParameterDefinition(
@@ -1505,7 +1505,7 @@ export function narrativeElementByType([
           .join("")}</ul></li>`;
       }
 
-      return `<li><span class="fhir-attr">${attr}: </span>${narrativeElementParameterDefinition(
+      return `<li><span>${attr}: </span>${narrativeElementParameterDefinition(
         value as unknown as ParameterDefinition
       )}</li>`;
     case "Period":
@@ -1513,14 +1513,14 @@ export function narrativeElementByType([
         if (!Array.isArray(value)) {
           return undefined;
         }
-        return `<li><span class="fhir-attr">${attr}: </span><ul>${value
+        return `<li><span>${attr}: </span><ul>${value
           .map(
             (x) => `<li>${narrativeElementPeriod(x as unknown as Period)}</li>`
           )
           .join("")}</ul></li>`;
       }
 
-      return `<li><span class="fhir-attr">${attr}: </span>${narrativeElementPeriod(
+      return `<li><span>${attr}: </span>${narrativeElementPeriod(
         value as unknown as Period
       )}</li>`;
     case "Quantity":
@@ -1528,7 +1528,7 @@ export function narrativeElementByType([
         if (!Array.isArray(value)) {
           return undefined;
         }
-        return `<li><span class="fhir-attr">${attr}: </span><ul>${value
+        return `<li><span>${attr}: </span><ul>${value
           .map(
             (x) =>
               `<li>${narrativeElementQuantity(x as unknown as Quantity)}</li>`
@@ -1536,7 +1536,7 @@ export function narrativeElementByType([
           .join("")}</ul></li>`;
       }
 
-      return `<li><span class="fhir-attr">${attr}: </span>${narrativeElementQuantity(
+      return `<li><span>${attr}: </span>${narrativeElementQuantity(
         value as unknown as Quantity
       )}</li>`;
     case "Range":
@@ -1544,14 +1544,14 @@ export function narrativeElementByType([
         if (!Array.isArray(value)) {
           return undefined;
         }
-        return `<li><span class="fhir-attr">${attr}: </span><ul>${value
+        return `<li><span>${attr}: </span><ul>${value
           .map(
             (x) => `<li>${narrativeElementRange(x as unknown as Range)}</li>`
           )
           .join("")}</ul></li>`;
       }
 
-      return `<li><span class="fhir-attr">${attr}: </span>${narrativeElementRange(
+      return `<li><span>${attr}: </span>${narrativeElementRange(
         value as unknown as Range
       )}</li>`;
     case "Ratio":
@@ -1559,14 +1559,14 @@ export function narrativeElementByType([
         if (!Array.isArray(value)) {
           return undefined;
         }
-        return `<li><span class="fhir-attr">${attr}: </span><ul>${value
+        return `<li><span>${attr}: </span><ul>${value
           .map(
             (x) => `<li>${narrativeElementRatio(x as unknown as Ratio)}</li>`
           )
           .join("")}</ul></li>`;
       }
 
-      return `<li><span class="fhir-attr">${attr}: </span>${narrativeElementRatio(
+      return `<li><span>${attr}: </span>${narrativeElementRatio(
         value as unknown as Ratio
       )}</li>`;
     case "RatioRange":
@@ -1574,7 +1574,7 @@ export function narrativeElementByType([
         if (!Array.isArray(value)) {
           return undefined;
         }
-        return `<li><span class="fhir-attr">${attr}: </span><ul>${value
+        return `<li><span>${attr}: </span><ul>${value
           .map(
             (x) =>
               `<li>${narrativeElementRatioRange(
@@ -1584,7 +1584,7 @@ export function narrativeElementByType([
           .join("")}</ul></li>`;
       }
 
-      return `<li><span class="fhir-attr">${attr}: </span>${narrativeElementRatioRange(
+      return `<li><span>${attr}: </span>${narrativeElementRatioRange(
         value as unknown as RatioRange
       )}</li>`;
     case "Reference":
@@ -1592,7 +1592,7 @@ export function narrativeElementByType([
         if (!Array.isArray(value)) {
           return undefined;
         }
-        return `<li><span class="fhir-attr">${attr}: </span><ul>${value
+        return `<li><span>${attr}: </span><ul>${value
           .map(
             (x) =>
               `<li>${narrativeElementReference(x as unknown as Reference)}</li>`
@@ -1600,7 +1600,7 @@ export function narrativeElementByType([
           .join("")}</ul></li>`;
       }
 
-      return `<li><span class="fhir-attr">${attr}: </span>${narrativeElementReference(
+      return `<li><span>${attr}: </span>${narrativeElementReference(
         value as unknown as Reference
       )}</li>`;
     case "RelatedArtifact":
@@ -1608,7 +1608,7 @@ export function narrativeElementByType([
         if (!Array.isArray(value)) {
           return undefined;
         }
-        return `<li><span class="fhir-attr">${attr}: </span><ul>${value
+        return `<li><span>${attr}: </span><ul>${value
           .map(
             (x) =>
               `<li>${narrativeElementRelatedArtifact(
@@ -1618,7 +1618,7 @@ export function narrativeElementByType([
           .join("")}</ul></li>`;
       }
 
-      return `<li><span class="fhir-attr">${attr}: </span>${narrativeElementRelatedArtifact(
+      return `<li><span>${attr}: </span>${narrativeElementRelatedArtifact(
         value as unknown as RelatedArtifact
       )}</li>`;
     case "SampledData":
@@ -1626,7 +1626,7 @@ export function narrativeElementByType([
         if (!Array.isArray(value)) {
           return undefined;
         }
-        return `<li><span class="fhir-attr">${attr}: </span><ul>${value
+        return `<li><span>${attr}: </span><ul>${value
           .map(
             (x) =>
               `<li>${narrativeElementSampledData(
@@ -1636,7 +1636,7 @@ export function narrativeElementByType([
           .join("")}</ul></li>`;
       }
 
-      return `<li><span class="fhir-attr">${attr}: </span>${narrativeElementSampledData(
+      return `<li><span>${attr}: </span>${narrativeElementSampledData(
         value as unknown as SampledData
       )}</li>`;
     case "Signature":
@@ -1644,7 +1644,7 @@ export function narrativeElementByType([
         if (!Array.isArray(value)) {
           return undefined;
         }
-        return `<li><span class="fhir-attr">${attr}: </span><ul>${value
+        return `<li><span>${attr}: </span><ul>${value
           .map(
             (x) =>
               `<li>${narrativeElementSignature(x as unknown as Signature)}</li>`
@@ -1652,7 +1652,7 @@ export function narrativeElementByType([
           .join("")}</ul></li>`;
       }
 
-      return `<li><span class="fhir-attr">${attr}: </span>${narrativeElementSignature(
+      return `<li><span>${attr}: </span>${narrativeElementSignature(
         value as unknown as Signature
       )}</li>`;
     case "TriggerDefinition":
@@ -1660,7 +1660,7 @@ export function narrativeElementByType([
         if (!Array.isArray(value)) {
           return undefined;
         }
-        return `<li><span class="fhir-attr">${attr}: </span><ul>${value
+        return `<li><span>${attr}: </span><ul>${value
           .map(
             (x) =>
               `<li>${narrativeElementTriggerDefinition(
@@ -1670,7 +1670,7 @@ export function narrativeElementByType([
           .join("")}</ul></li>`;
       }
 
-      return `<li><span class="fhir-attr">${attr}: </span>${narrativeElementTriggerDefinition(
+      return `<li><span>${attr}: </span>${narrativeElementTriggerDefinition(
         value as unknown as TriggerDefinition
       )}</li>`;
     case "UsageContext":
@@ -1678,7 +1678,7 @@ export function narrativeElementByType([
         if (!Array.isArray(value)) {
           return undefined;
         }
-        return `<li><span class="fhir-attr">${attr}: </span><ul>${value
+        return `<li><span>${attr}: </span><ul>${value
           .map(
             (x) =>
               `<li>${narrativeElementUsageContext(
@@ -1688,7 +1688,7 @@ export function narrativeElementByType([
           .join("")}</ul></li>`;
       }
 
-      return `<li><span class="fhir-attr">${attr}: </span>${narrativeElementUsageContext(
+      return `<li><span>${attr}: </span>${narrativeElementUsageContext(
         value as unknown as UsageContext
       )}</li>`;
     default:
@@ -4442,7 +4442,7 @@ function narrativeVisionPrescription(r: VisionPrescription): Narrative {
 export function buildNarrative(components: NarrativeElement[]): Narrative {
   return {
     status: "generated",
-    div: `<div xmlns="http://www.w3.org/1999/xhtml" class="fhir-narrative"><ul>${components
+    div: `<div xmlns="http://www.w3.org/1999/xhtml"><ul>${components
       .map(narrativeElementByType)
       .filter((x) => !!x)
       .join("")}</ul></div>`,
