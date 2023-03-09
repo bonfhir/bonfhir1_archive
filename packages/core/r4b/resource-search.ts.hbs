@@ -128,7 +128,7 @@ class ResourceSearchBuilder{{type}} extends BaseResourceSearchBuilder<ResourceSe
   }
 {{/if}}
 
-  {{#each (uniqBy (fhirPath @root.data.[search-parameters] (replace "Bundle.entry.select(resource).ofType(SearchParameter).where(base='DomainResource' or base='Resource' or base='CURRENTYPE')" "CURRENTYPE" type)) "code")}}
+  {{#each (uniqBy (fhirPath @root.data.[search-parameters] (replace "Bundle.entry.select(resource).ofType(SearchParameter).where(base='DomainResource' or base='Resource' or base='CURRENTYPE' or base contains 'CURRENTYPE')" "CURRENTYPE" type)) "code")}}
   {{#if (notIn type "composite,special")}}
     /**
     * {{description}}
@@ -144,7 +144,7 @@ class ResourceSearchBuilder{{type}} extends BaseResourceSearchBuilder<ResourceSe
 
 {{#if (notIn type "BiologicallyDerivedProduct,CatalogEntry,ObservationDefinition,OperationOutcome,StructureMap,SubscriptionStatus,TerminologyCapabilities")}}
 export type SortOrder{{type}} = 
-  {{#each (uniqBy (fhirPath @root.data.[search-parameters] (replace "Bundle.entry.select(resource).ofType(SearchParameter).where(base='DomainResource' or base='Resource' or base='CURRENTYPE')" "CURRENTYPE" type)) "code")}}
+  {{#each (uniqBy (fhirPath @root.data.[search-parameters] (replace "Bundle.entry.select(resource).ofType(SearchParameter).where(base='DomainResource' or base='Resource' or base='CURRENTYPE' or base contains 'CURRENTYPE')" "CURRENTYPE" type)) "code")}}
     {{#if (notIn type "composite,special")}}
       {{#startsWith "_" code}}
       {{else}}
