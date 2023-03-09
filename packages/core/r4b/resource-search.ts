@@ -1862,6 +1862,33 @@ class ResourceSearchBuilderAllergyIntolerance extends BaseResourceSearchBuilder<
   }
 
   /**
+    * Multiple Resources: 
+
+* [AllergyIntolerance](allergyintolerance.html): Code that identifies the allergy or intolerance
+* [Condition](condition.html): Code for the condition
+* [DeviceRequest](devicerequest.html): Code for what is being requested/ordered
+* [DiagnosticReport](diagnosticreport.html): The code for the report, as opposed to codes for the atomic results, which are the names on the observation resource referred to from the result
+* [FamilyMemberHistory](familymemberhistory.html): A search by a condition code
+* [List](list.html): What the purpose of this list is
+* [Medication](medication.html): Returns medications for a specific code
+* [MedicationAdministration](medicationadministration.html): Return administrations of this medication code
+* [MedicationDispense](medicationdispense.html): Returns dispenses of this medicine code
+* [MedicationRequest](medicationrequest.html): Return prescriptions of this medication code
+* [MedicationStatement](medicationstatement.html): Return statements of this medication code
+* [Observation](observation.html): The code of the observation type
+* [Procedure](procedure.html): A code to identify a  procedure
+* [ServiceRequest](servicerequest.html): What is being requested/ordered
+
+    */
+  code(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderAllergyIntolerance {
+    this.builder.token("code", value, modifier);
+    return this;
+  }
+
+  /**
    * low | high | unable-to-assess
    */
   criticality(
@@ -1869,6 +1896,79 @@ class ResourceSearchBuilderAllergyIntolerance extends BaseResourceSearchBuilder<
     modifier?: TokenModifier | null | undefined
   ): ResourceSearchBuilderAllergyIntolerance {
     this.builder.token("criticality", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [AllergyIntolerance](allergyintolerance.html): Date first version of the resource instance was recorded
+* [CarePlan](careplan.html): Time period plan covers
+* [CareTeam](careteam.html): Time period team covers
+* [ClinicalImpression](clinicalimpression.html): When the assessment was documented
+* [Composition](composition.html): Composition editing time
+* [Consent](consent.html): When this Consent was created or indexed
+* [DiagnosticReport](diagnosticreport.html): The clinically relevant time of the report
+* [Encounter](encounter.html): A date within the period the Encounter lasted
+* [EpisodeOfCare](episodeofcare.html): The provided date search value falls within the episode of care's period
+* [FamilyMemberHistory](familymemberhistory.html): When history was recorded or last updated
+* [Flag](flag.html): Time period when flag is active
+* [Immunization](immunization.html): Vaccination  (non)-Administration Date
+* [List](list.html): When the list was prepared
+* [Observation](observation.html): Obtained date/time. If the obtained element is a period, a date that falls in the period
+* [Procedure](procedure.html): When the procedure was performed
+* [RiskAssessment](riskassessment.html): When was assessment made?
+* [SupplyRequest](supplyrequest.html): When the request was made
+
+    */
+  date(
+    value: Parameters<FhirSearchBuilder["date"]>[1],
+    prefix?: Prefix | null | undefined
+  ): ResourceSearchBuilderAllergyIntolerance {
+    this.builder.date("date", value, prefix);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [AllergyIntolerance](allergyintolerance.html): External ids for this item
+* [CarePlan](careplan.html): External Ids for this plan
+* [CareTeam](careteam.html): External Ids for this team
+* [Composition](composition.html): Version-independent identifier for the Composition
+* [Condition](condition.html): A unique identifier of the condition record
+* [Consent](consent.html): Identifier for this record (external references)
+* [DetectedIssue](detectedissue.html): Unique id for the detected issue
+* [DeviceRequest](devicerequest.html): Business identifier for request/order
+* [DiagnosticReport](diagnosticreport.html): An identifier for the report
+* [DocumentManifest](documentmanifest.html): Unique Identifier for the set of documents
+* [DocumentReference](documentreference.html): Master Version Specific Identifier
+* [Encounter](encounter.html): Identifier(s) by which this encounter is known
+* [EpisodeOfCare](episodeofcare.html): Business Identifier(s) relevant for this EpisodeOfCare
+* [FamilyMemberHistory](familymemberhistory.html): A search by a record identifier
+* [Goal](goal.html): External Ids for this goal
+* [ImagingStudy](imagingstudy.html): Identifiers for the Study, such as DICOM Study Instance UID and Accession number
+* [Immunization](immunization.html): Business identifier
+* [List](list.html): Business identifier
+* [MedicationAdministration](medicationadministration.html): Return administrations with this external identifier
+* [MedicationDispense](medicationdispense.html): Returns dispenses with this external identifier
+* [MedicationRequest](medicationrequest.html): Return prescriptions with this external identifier
+* [MedicationStatement](medicationstatement.html): Return statements with this external identifier
+* [NutritionOrder](nutritionorder.html): Return nutrition orders with this external identifier
+* [Observation](observation.html): The unique id for a particular observation
+* [Procedure](procedure.html): A unique identifier for a procedure
+* [RiskAssessment](riskassessment.html): Unique identifier for the assessment
+* [ServiceRequest](servicerequest.html): Identifiers assigned to this order
+* [SupplyDelivery](supplydelivery.html): External identifier
+* [SupplyRequest](supplyrequest.html): Business Identifier for SupplyRequest
+* [VisionPrescription](visionprescription.html): Return prescriptions with this external identifier
+
+    */
+  identifier(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderAllergyIntolerance {
+    this.builder.token("identifier", value, modifier);
     return this;
   }
 
@@ -1906,6 +2006,51 @@ class ResourceSearchBuilderAllergyIntolerance extends BaseResourceSearchBuilder<
   }
 
   /**
+    * Multiple Resources: 
+
+* [AllergyIntolerance](allergyintolerance.html): Who the sensitivity is for
+* [CarePlan](careplan.html): Who the care plan is for
+* [CareTeam](careteam.html): Who care team is for
+* [ClinicalImpression](clinicalimpression.html): Patient or group assessed
+* [Composition](composition.html): Who and/or what the composition is about
+* [Condition](condition.html): Who has the condition?
+* [Consent](consent.html): Who the consent applies to
+* [DetectedIssue](detectedissue.html): Associated patient
+* [DeviceRequest](devicerequest.html): Individual the service is ordered for
+* [DeviceUseStatement](deviceusestatement.html): Search by subject - a patient
+* [DiagnosticReport](diagnosticreport.html): The subject of the report if a patient
+* [DocumentManifest](documentmanifest.html): The subject of the set of documents
+* [DocumentReference](documentreference.html): Who/what is the subject of the document
+* [Encounter](encounter.html): The patient or group present at the encounter
+* [EpisodeOfCare](episodeofcare.html): The patient who is the focus of this episode of care
+* [FamilyMemberHistory](familymemberhistory.html): The identity of a subject to list family member history items for
+* [Flag](flag.html): The identity of a subject to list flags for
+* [Goal](goal.html): Who this goal is intended for
+* [ImagingStudy](imagingstudy.html): Who the study is about
+* [Immunization](immunization.html): The patient for the vaccination record
+* [List](list.html): If all resources have the same subject
+* [MedicationAdministration](medicationadministration.html): The identity of a patient to list administrations  for
+* [MedicationDispense](medicationdispense.html): The identity of a patient to list dispenses  for
+* [MedicationRequest](medicationrequest.html): Returns prescriptions for a specific patient
+* [MedicationStatement](medicationstatement.html): Returns statements for a specific patient.
+* [NutritionOrder](nutritionorder.html): The identity of the person who requires the diet, formula or nutritional supplement
+* [Observation](observation.html): The subject that the observation is about (if patient)
+* [Procedure](procedure.html): Search by subject - a patient
+* [RiskAssessment](riskassessment.html): Who/what does assessment apply to?
+* [ServiceRequest](servicerequest.html): Search by subject - a patient
+* [SupplyDelivery](supplydelivery.html): Patient for whom the item is supplied
+* [VisionPrescription](visionprescription.html): The identity of a patient to list dispenses for
+
+    */
+  patient(
+    id: Parameters<FhirSearchBuilder["reference"]>[1],
+    modifier?: ":identifier" | ResourceType | null | undefined
+  ): ResourceSearchBuilderAllergyIntolerance {
+    this.builder.reference("patient", id, modifier);
+    return this;
+  }
+
+  /**
    * Who recorded the sensitivity
    */
   recorder(
@@ -1939,6 +2084,25 @@ class ResourceSearchBuilderAllergyIntolerance extends BaseResourceSearchBuilder<
   }
 
   /**
+    * Multiple Resources: 
+
+* [AllergyIntolerance](allergyintolerance.html): allergy | intolerance - Underlying mechanism (if known)
+* [Composition](composition.html): Kind of composition (LOINC if possible)
+* [DocumentManifest](documentmanifest.html): Kind of document set
+* [DocumentReference](documentreference.html): Kind of document (LOINC if possible)
+* [Encounter](encounter.html): Specific type of encounter
+* [EpisodeOfCare](episodeofcare.html): Type/class  - e.g. specialist referral, disease management
+
+    */
+  type(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderAllergyIntolerance {
+    this.builder.token("type", value, modifier);
+    return this;
+  }
+
+  /**
    * unconfirmed | confirmed | refuted | entered-in-error
    */
   verificationstatus(
@@ -1957,20 +2121,30 @@ export type SortOrderAllergyIntolerance =
   | "-category"
   | "clinical-status"
   | "-clinical-status"
+  | "code"
+  | "-code"
   | "criticality"
   | "-criticality"
+  | "date"
+  | "-date"
+  | "identifier"
+  | "-identifier"
   | "last-date"
   | "-last-date"
   | "manifestation"
   | "-manifestation"
   | "onset"
   | "-onset"
+  | "patient"
+  | "-patient"
   | "recorder"
   | "-recorder"
   | "route"
   | "-route"
   | "severity"
   | "-severity"
+  | "type"
+  | "-type"
   | "verification-status"
   | "-verification-status";
 
@@ -3761,6 +3935,141 @@ class ResourceSearchBuilderCapabilityStatement extends BaseResourceSearchBuilder
   }
 
   /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): A use context assigned to the capability statement
+* [CodeSystem](codesystem.html): A use context assigned to the code system
+* [CompartmentDefinition](compartmentdefinition.html): A use context assigned to the compartment definition
+* [ConceptMap](conceptmap.html): A use context assigned to the concept map
+* [GraphDefinition](graphdefinition.html): A use context assigned to the graph definition
+* [ImplementationGuide](implementationguide.html): A use context assigned to the implementation guide
+* [MessageDefinition](messagedefinition.html): A use context assigned to the message definition
+* [NamingSystem](namingsystem.html): A use context assigned to the naming system
+* [OperationDefinition](operationdefinition.html): A use context assigned to the operation definition
+* [SearchParameter](searchparameter.html): A use context assigned to the search parameter
+* [StructureDefinition](structuredefinition.html): A use context assigned to the structure definition
+* [StructureMap](structuremap.html): A use context assigned to the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): A use context assigned to the terminology capabilities
+* [ValueSet](valueset.html): A use context assigned to the value set
+
+    */
+  context(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderCapabilityStatement {
+    this.builder.token("context", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): A quantity- or range-valued use context assigned to the capability statement
+* [CodeSystem](codesystem.html): A quantity- or range-valued use context assigned to the code system
+* [CompartmentDefinition](compartmentdefinition.html): A quantity- or range-valued use context assigned to the compartment definition
+* [ConceptMap](conceptmap.html): A quantity- or range-valued use context assigned to the concept map
+* [GraphDefinition](graphdefinition.html): A quantity- or range-valued use context assigned to the graph definition
+* [ImplementationGuide](implementationguide.html): A quantity- or range-valued use context assigned to the implementation guide
+* [MessageDefinition](messagedefinition.html): A quantity- or range-valued use context assigned to the message definition
+* [NamingSystem](namingsystem.html): A quantity- or range-valued use context assigned to the naming system
+* [OperationDefinition](operationdefinition.html): A quantity- or range-valued use context assigned to the operation definition
+* [SearchParameter](searchparameter.html): A quantity- or range-valued use context assigned to the search parameter
+* [StructureDefinition](structuredefinition.html): A quantity- or range-valued use context assigned to the structure definition
+* [StructureMap](structuremap.html): A quantity- or range-valued use context assigned to the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): A quantity- or range-valued use context assigned to the terminology capabilities
+* [ValueSet](valueset.html): A quantity- or range-valued use context assigned to the value set
+
+    */
+  contextquantity(
+    number: Parameters<FhirSearchBuilder["quantity"]>[1],
+    prefix?: Prefix | null | undefined
+  ): ResourceSearchBuilderCapabilityStatement {
+    this.builder.quantity("context-quantity", number, prefix);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): A type of use context assigned to the capability statement
+* [CodeSystem](codesystem.html): A type of use context assigned to the code system
+* [CompartmentDefinition](compartmentdefinition.html): A type of use context assigned to the compartment definition
+* [ConceptMap](conceptmap.html): A type of use context assigned to the concept map
+* [GraphDefinition](graphdefinition.html): A type of use context assigned to the graph definition
+* [ImplementationGuide](implementationguide.html): A type of use context assigned to the implementation guide
+* [MessageDefinition](messagedefinition.html): A type of use context assigned to the message definition
+* [NamingSystem](namingsystem.html): A type of use context assigned to the naming system
+* [OperationDefinition](operationdefinition.html): A type of use context assigned to the operation definition
+* [SearchParameter](searchparameter.html): A type of use context assigned to the search parameter
+* [StructureDefinition](structuredefinition.html): A type of use context assigned to the structure definition
+* [StructureMap](structuremap.html): A type of use context assigned to the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): A type of use context assigned to the terminology capabilities
+* [ValueSet](valueset.html): A type of use context assigned to the value set
+
+    */
+  contexttype(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderCapabilityStatement {
+    this.builder.token("context-type", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): The capability statement publication date
+* [CodeSystem](codesystem.html): The code system publication date
+* [CompartmentDefinition](compartmentdefinition.html): The compartment definition publication date
+* [ConceptMap](conceptmap.html): The concept map publication date
+* [GraphDefinition](graphdefinition.html): The graph definition publication date
+* [ImplementationGuide](implementationguide.html): The implementation guide publication date
+* [MessageDefinition](messagedefinition.html): The message definition publication date
+* [NamingSystem](namingsystem.html): The naming system publication date
+* [OperationDefinition](operationdefinition.html): The operation definition publication date
+* [SearchParameter](searchparameter.html): The search parameter publication date
+* [StructureDefinition](structuredefinition.html): The structure definition publication date
+* [StructureMap](structuremap.html): The structure map publication date
+* [TerminologyCapabilities](terminologycapabilities.html): The terminology capabilities publication date
+* [ValueSet](valueset.html): The value set publication date
+
+    */
+  date(
+    value: Parameters<FhirSearchBuilder["date"]>[1],
+    prefix?: Prefix | null | undefined
+  ): ResourceSearchBuilderCapabilityStatement {
+    this.builder.date("date", value, prefix);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): The description of the capability statement
+* [CodeSystem](codesystem.html): The description of the code system
+* [CompartmentDefinition](compartmentdefinition.html): The description of the compartment definition
+* [ConceptMap](conceptmap.html): The description of the concept map
+* [GraphDefinition](graphdefinition.html): The description of the graph definition
+* [ImplementationGuide](implementationguide.html): The description of the implementation guide
+* [MessageDefinition](messagedefinition.html): The description of the message definition
+* [NamingSystem](namingsystem.html): The description of the naming system
+* [OperationDefinition](operationdefinition.html): The description of the operation definition
+* [SearchParameter](searchparameter.html): The description of the search parameter
+* [StructureDefinition](structuredefinition.html): The description of the structure definition
+* [StructureMap](structuremap.html): The description of the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): The description of the terminology capabilities
+* [ValueSet](valueset.html): The description of the value set
+
+    */
+  description(
+    value: Parameters<FhirSearchBuilder["string"]>[1],
+    modifier?: StringModifier | null | undefined
+  ): ResourceSearchBuilderCapabilityStatement {
+    this.builder.string("description", value, modifier);
+    return this;
+  }
+
+  /**
    * The version of FHIR
    */
   fhirversion(
@@ -3794,6 +4103,32 @@ class ResourceSearchBuilderCapabilityStatement extends BaseResourceSearchBuilder
   }
 
   /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): Intended jurisdiction for the capability statement
+* [CodeSystem](codesystem.html): Intended jurisdiction for the code system
+* [ConceptMap](conceptmap.html): Intended jurisdiction for the concept map
+* [GraphDefinition](graphdefinition.html): Intended jurisdiction for the graph definition
+* [ImplementationGuide](implementationguide.html): Intended jurisdiction for the implementation guide
+* [MessageDefinition](messagedefinition.html): Intended jurisdiction for the message definition
+* [NamingSystem](namingsystem.html): Intended jurisdiction for the naming system
+* [OperationDefinition](operationdefinition.html): Intended jurisdiction for the operation definition
+* [SearchParameter](searchparameter.html): Intended jurisdiction for the search parameter
+* [StructureDefinition](structuredefinition.html): Intended jurisdiction for the structure definition
+* [StructureMap](structuremap.html): Intended jurisdiction for the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): Intended jurisdiction for the terminology capabilities
+* [ValueSet](valueset.html): Intended jurisdiction for the value set
+
+    */
+  jurisdiction(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderCapabilityStatement {
+    this.builder.token("jurisdiction", value, modifier);
+    return this;
+  }
+
+  /**
    * Mode - restful (server/client) or messaging (sender/receiver)
    */
   mode(
@@ -3801,6 +4136,60 @@ class ResourceSearchBuilderCapabilityStatement extends BaseResourceSearchBuilder
     modifier?: TokenModifier | null | undefined
   ): ResourceSearchBuilderCapabilityStatement {
     this.builder.token("mode", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): Computationally friendly name of the capability statement
+* [CodeSystem](codesystem.html): Computationally friendly name of the code system
+* [CompartmentDefinition](compartmentdefinition.html): Computationally friendly name of the compartment definition
+* [ConceptMap](conceptmap.html): Computationally friendly name of the concept map
+* [GraphDefinition](graphdefinition.html): Computationally friendly name of the graph definition
+* [ImplementationGuide](implementationguide.html): Computationally friendly name of the implementation guide
+* [MessageDefinition](messagedefinition.html): Computationally friendly name of the message definition
+* [NamingSystem](namingsystem.html): Computationally friendly name of the naming system
+* [OperationDefinition](operationdefinition.html): Computationally friendly name of the operation definition
+* [SearchParameter](searchparameter.html): Computationally friendly name of the search parameter
+* [StructureDefinition](structuredefinition.html): Computationally friendly name of the structure definition
+* [StructureMap](structuremap.html): Computationally friendly name of the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): Computationally friendly name of the terminology capabilities
+* [ValueSet](valueset.html): Computationally friendly name of the value set
+
+    */
+  name(
+    value: Parameters<FhirSearchBuilder["string"]>[1],
+    modifier?: StringModifier | null | undefined
+  ): ResourceSearchBuilderCapabilityStatement {
+    this.builder.string("name", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): Name of the publisher of the capability statement
+* [CodeSystem](codesystem.html): Name of the publisher of the code system
+* [CompartmentDefinition](compartmentdefinition.html): Name of the publisher of the compartment definition
+* [ConceptMap](conceptmap.html): Name of the publisher of the concept map
+* [GraphDefinition](graphdefinition.html): Name of the publisher of the graph definition
+* [ImplementationGuide](implementationguide.html): Name of the publisher of the implementation guide
+* [MessageDefinition](messagedefinition.html): Name of the publisher of the message definition
+* [NamingSystem](namingsystem.html): Name of the publisher of the naming system
+* [OperationDefinition](operationdefinition.html): Name of the publisher of the operation definition
+* [SearchParameter](searchparameter.html): Name of the publisher of the search parameter
+* [StructureDefinition](structuredefinition.html): Name of the publisher of the structure definition
+* [StructureMap](structuremap.html): Name of the publisher of the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): Name of the publisher of the terminology capabilities
+* [ValueSet](valueset.html): Name of the publisher of the value set
+
+    */
+  publisher(
+    value: Parameters<FhirSearchBuilder["string"]>[1],
+    modifier?: StringModifier | null | undefined
+  ): ResourceSearchBuilderCapabilityStatement {
+    this.builder.string("publisher", value, modifier);
     return this;
   }
 
@@ -3849,6 +4238,33 @@ class ResourceSearchBuilderCapabilityStatement extends BaseResourceSearchBuilder
   }
 
   /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): The current status of the capability statement
+* [CodeSystem](codesystem.html): The current status of the code system
+* [CompartmentDefinition](compartmentdefinition.html): The current status of the compartment definition
+* [ConceptMap](conceptmap.html): The current status of the concept map
+* [GraphDefinition](graphdefinition.html): The current status of the graph definition
+* [ImplementationGuide](implementationguide.html): The current status of the implementation guide
+* [MessageDefinition](messagedefinition.html): The current status of the message definition
+* [NamingSystem](namingsystem.html): The current status of the naming system
+* [OperationDefinition](operationdefinition.html): The current status of the operation definition
+* [SearchParameter](searchparameter.html): The current status of the search parameter
+* [StructureDefinition](structuredefinition.html): The current status of the structure definition
+* [StructureMap](structuremap.html): The current status of the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): The current status of the terminology capabilities
+* [ValueSet](valueset.html): The current status of the value set
+
+    */
+  status(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderCapabilityStatement {
+    this.builder.token("status", value, modifier);
+    return this;
+  }
+
+  /**
    * Profiles for use cases supported
    */
   supportedprofile(
@@ -3858,17 +4274,108 @@ class ResourceSearchBuilderCapabilityStatement extends BaseResourceSearchBuilder
     this.builder.reference("supported-profile", id, modifier);
     return this;
   }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): The human-friendly name of the capability statement
+* [CodeSystem](codesystem.html): The human-friendly name of the code system
+* [ConceptMap](conceptmap.html): The human-friendly name of the concept map
+* [ImplementationGuide](implementationguide.html): The human-friendly name of the implementation guide
+* [MessageDefinition](messagedefinition.html): The human-friendly name of the message definition
+* [OperationDefinition](operationdefinition.html): The human-friendly name of the operation definition
+* [StructureDefinition](structuredefinition.html): The human-friendly name of the structure definition
+* [StructureMap](structuremap.html): The human-friendly name of the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): The human-friendly name of the terminology capabilities
+* [ValueSet](valueset.html): The human-friendly name of the value set
+
+    */
+  title(
+    value: Parameters<FhirSearchBuilder["string"]>[1],
+    modifier?: StringModifier | null | undefined
+  ): ResourceSearchBuilderCapabilityStatement {
+    this.builder.string("title", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): The uri that identifies the capability statement
+* [CodeSystem](codesystem.html): The uri that identifies the code system
+* [CompartmentDefinition](compartmentdefinition.html): The uri that identifies the compartment definition
+* [ConceptMap](conceptmap.html): The uri that identifies the concept map
+* [GraphDefinition](graphdefinition.html): The uri that identifies the graph definition
+* [ImplementationGuide](implementationguide.html): The uri that identifies the implementation guide
+* [MessageDefinition](messagedefinition.html): The uri that identifies the message definition
+* [OperationDefinition](operationdefinition.html): The uri that identifies the operation definition
+* [SearchParameter](searchparameter.html): The uri that identifies the search parameter
+* [StructureDefinition](structuredefinition.html): The uri that identifies the structure definition
+* [StructureMap](structuremap.html): The uri that identifies the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): The uri that identifies the terminology capabilities
+* [ValueSet](valueset.html): The uri that identifies the value set
+
+    */
+  url(
+    value: Parameters<FhirSearchBuilder["uri"]>[1],
+    modifier?: UriModifier | null | undefined
+  ): ResourceSearchBuilderCapabilityStatement {
+    this.builder.uri("url", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): The business version of the capability statement
+* [CodeSystem](codesystem.html): The business version of the code system
+* [CompartmentDefinition](compartmentdefinition.html): The business version of the compartment definition
+* [ConceptMap](conceptmap.html): The business version of the concept map
+* [GraphDefinition](graphdefinition.html): The business version of the graph definition
+* [ImplementationGuide](implementationguide.html): The business version of the implementation guide
+* [MessageDefinition](messagedefinition.html): The business version of the message definition
+* [OperationDefinition](operationdefinition.html): The business version of the operation definition
+* [SearchParameter](searchparameter.html): The business version of the search parameter
+* [StructureDefinition](structuredefinition.html): The business version of the structure definition
+* [StructureMap](structuremap.html): The business version of the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): The business version of the terminology capabilities
+* [ValueSet](valueset.html): The business version of the value set
+
+    */
+  version(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderCapabilityStatement {
+    this.builder.token("version", value, modifier);
+    return this;
+  }
 }
 
 export type SortOrderCapabilityStatement =
+  | "context"
+  | "-context"
+  | "context-quantity"
+  | "-context-quantity"
+  | "context-type"
+  | "-context-type"
+  | "date"
+  | "-date"
+  | "description"
+  | "-description"
   | "fhirversion"
   | "-fhirversion"
   | "format"
   | "-format"
   | "guide"
   | "-guide"
+  | "jurisdiction"
+  | "-jurisdiction"
   | "mode"
   | "-mode"
+  | "name"
+  | "-name"
+  | "publisher"
+  | "-publisher"
   | "resource"
   | "-resource"
   | "resource-profile"
@@ -3877,8 +4384,16 @@ export type SortOrderCapabilityStatement =
   | "-security-service"
   | "software"
   | "-software"
+  | "status"
+  | "-status"
   | "supported-profile"
-  | "-supported-profile";
+  | "-supported-profile"
+  | "title"
+  | "-title"
+  | "url"
+  | "-url"
+  | "version"
+  | "-version";
 
 class ResourceSearchBuilderCarePlan extends BaseResourceSearchBuilder<ResourceSearchBuilderCarePlan> {
   readonly resourceType = "CarePlan";
@@ -4035,6 +4550,124 @@ class ResourceSearchBuilderCarePlan extends BaseResourceSearchBuilder<ResourceSe
     modifier?: TokenModifier | null | undefined
   ): ResourceSearchBuilderCarePlan {
     this.builder.token("_type", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [AllergyIntolerance](allergyintolerance.html): Date first version of the resource instance was recorded
+* [CarePlan](careplan.html): Time period plan covers
+* [CareTeam](careteam.html): Time period team covers
+* [ClinicalImpression](clinicalimpression.html): When the assessment was documented
+* [Composition](composition.html): Composition editing time
+* [Consent](consent.html): When this Consent was created or indexed
+* [DiagnosticReport](diagnosticreport.html): The clinically relevant time of the report
+* [Encounter](encounter.html): A date within the period the Encounter lasted
+* [EpisodeOfCare](episodeofcare.html): The provided date search value falls within the episode of care's period
+* [FamilyMemberHistory](familymemberhistory.html): When history was recorded or last updated
+* [Flag](flag.html): Time period when flag is active
+* [Immunization](immunization.html): Vaccination  (non)-Administration Date
+* [List](list.html): When the list was prepared
+* [Observation](observation.html): Obtained date/time. If the obtained element is a period, a date that falls in the period
+* [Procedure](procedure.html): When the procedure was performed
+* [RiskAssessment](riskassessment.html): When was assessment made?
+* [SupplyRequest](supplyrequest.html): When the request was made
+
+    */
+  date(
+    value: Parameters<FhirSearchBuilder["date"]>[1],
+    prefix?: Prefix | null | undefined
+  ): ResourceSearchBuilderCarePlan {
+    this.builder.date("date", value, prefix);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [AllergyIntolerance](allergyintolerance.html): External ids for this item
+* [CarePlan](careplan.html): External Ids for this plan
+* [CareTeam](careteam.html): External Ids for this team
+* [Composition](composition.html): Version-independent identifier for the Composition
+* [Condition](condition.html): A unique identifier of the condition record
+* [Consent](consent.html): Identifier for this record (external references)
+* [DetectedIssue](detectedissue.html): Unique id for the detected issue
+* [DeviceRequest](devicerequest.html): Business identifier for request/order
+* [DiagnosticReport](diagnosticreport.html): An identifier for the report
+* [DocumentManifest](documentmanifest.html): Unique Identifier for the set of documents
+* [DocumentReference](documentreference.html): Master Version Specific Identifier
+* [Encounter](encounter.html): Identifier(s) by which this encounter is known
+* [EpisodeOfCare](episodeofcare.html): Business Identifier(s) relevant for this EpisodeOfCare
+* [FamilyMemberHistory](familymemberhistory.html): A search by a record identifier
+* [Goal](goal.html): External Ids for this goal
+* [ImagingStudy](imagingstudy.html): Identifiers for the Study, such as DICOM Study Instance UID and Accession number
+* [Immunization](immunization.html): Business identifier
+* [List](list.html): Business identifier
+* [MedicationAdministration](medicationadministration.html): Return administrations with this external identifier
+* [MedicationDispense](medicationdispense.html): Returns dispenses with this external identifier
+* [MedicationRequest](medicationrequest.html): Return prescriptions with this external identifier
+* [MedicationStatement](medicationstatement.html): Return statements with this external identifier
+* [NutritionOrder](nutritionorder.html): Return nutrition orders with this external identifier
+* [Observation](observation.html): The unique id for a particular observation
+* [Procedure](procedure.html): A unique identifier for a procedure
+* [RiskAssessment](riskassessment.html): Unique identifier for the assessment
+* [ServiceRequest](servicerequest.html): Identifiers assigned to this order
+* [SupplyDelivery](supplydelivery.html): External identifier
+* [SupplyRequest](supplyrequest.html): Business Identifier for SupplyRequest
+* [VisionPrescription](visionprescription.html): Return prescriptions with this external identifier
+
+    */
+  identifier(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderCarePlan {
+    this.builder.token("identifier", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [AllergyIntolerance](allergyintolerance.html): Who the sensitivity is for
+* [CarePlan](careplan.html): Who the care plan is for
+* [CareTeam](careteam.html): Who care team is for
+* [ClinicalImpression](clinicalimpression.html): Patient or group assessed
+* [Composition](composition.html): Who and/or what the composition is about
+* [Condition](condition.html): Who has the condition?
+* [Consent](consent.html): Who the consent applies to
+* [DetectedIssue](detectedissue.html): Associated patient
+* [DeviceRequest](devicerequest.html): Individual the service is ordered for
+* [DeviceUseStatement](deviceusestatement.html): Search by subject - a patient
+* [DiagnosticReport](diagnosticreport.html): The subject of the report if a patient
+* [DocumentManifest](documentmanifest.html): The subject of the set of documents
+* [DocumentReference](documentreference.html): Who/what is the subject of the document
+* [Encounter](encounter.html): The patient or group present at the encounter
+* [EpisodeOfCare](episodeofcare.html): The patient who is the focus of this episode of care
+* [FamilyMemberHistory](familymemberhistory.html): The identity of a subject to list family member history items for
+* [Flag](flag.html): The identity of a subject to list flags for
+* [Goal](goal.html): Who this goal is intended for
+* [ImagingStudy](imagingstudy.html): Who the study is about
+* [Immunization](immunization.html): The patient for the vaccination record
+* [List](list.html): If all resources have the same subject
+* [MedicationAdministration](medicationadministration.html): The identity of a patient to list administrations  for
+* [MedicationDispense](medicationdispense.html): The identity of a patient to list dispenses  for
+* [MedicationRequest](medicationrequest.html): Returns prescriptions for a specific patient
+* [MedicationStatement](medicationstatement.html): Returns statements for a specific patient.
+* [NutritionOrder](nutritionorder.html): The identity of the person who requires the diet, formula or nutritional supplement
+* [Observation](observation.html): The subject that the observation is about (if patient)
+* [Procedure](procedure.html): Search by subject - a patient
+* [RiskAssessment](riskassessment.html): Who/what does assessment apply to?
+* [ServiceRequest](servicerequest.html): Search by subject - a patient
+* [SupplyDelivery](supplydelivery.html): Patient for whom the item is supplied
+* [VisionPrescription](visionprescription.html): The identity of a patient to list dispenses for
+
+    */
+  patient(
+    id: Parameters<FhirSearchBuilder["reference"]>[1],
+    modifier?: ":identifier" | ResourceType | null | undefined
+  ): ResourceSearchBuilderCarePlan {
+    this.builder.reference("patient", id, modifier);
     return this;
   }
 
@@ -4227,6 +4860,12 @@ class ResourceSearchBuilderCarePlan extends BaseResourceSearchBuilder<ResourceSe
 }
 
 export type SortOrderCarePlan =
+  | "date"
+  | "-date"
+  | "identifier"
+  | "-identifier"
+  | "patient"
+  | "-patient"
   | "activity-code"
   | "-activity-code"
   | "activity-date"
@@ -4421,6 +5060,124 @@ class ResourceSearchBuilderCareTeam extends BaseResourceSearchBuilder<ResourceSe
   }
 
   /**
+    * Multiple Resources: 
+
+* [AllergyIntolerance](allergyintolerance.html): Date first version of the resource instance was recorded
+* [CarePlan](careplan.html): Time period plan covers
+* [CareTeam](careteam.html): Time period team covers
+* [ClinicalImpression](clinicalimpression.html): When the assessment was documented
+* [Composition](composition.html): Composition editing time
+* [Consent](consent.html): When this Consent was created or indexed
+* [DiagnosticReport](diagnosticreport.html): The clinically relevant time of the report
+* [Encounter](encounter.html): A date within the period the Encounter lasted
+* [EpisodeOfCare](episodeofcare.html): The provided date search value falls within the episode of care's period
+* [FamilyMemberHistory](familymemberhistory.html): When history was recorded or last updated
+* [Flag](flag.html): Time period when flag is active
+* [Immunization](immunization.html): Vaccination  (non)-Administration Date
+* [List](list.html): When the list was prepared
+* [Observation](observation.html): Obtained date/time. If the obtained element is a period, a date that falls in the period
+* [Procedure](procedure.html): When the procedure was performed
+* [RiskAssessment](riskassessment.html): When was assessment made?
+* [SupplyRequest](supplyrequest.html): When the request was made
+
+    */
+  date(
+    value: Parameters<FhirSearchBuilder["date"]>[1],
+    prefix?: Prefix | null | undefined
+  ): ResourceSearchBuilderCareTeam {
+    this.builder.date("date", value, prefix);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [AllergyIntolerance](allergyintolerance.html): External ids for this item
+* [CarePlan](careplan.html): External Ids for this plan
+* [CareTeam](careteam.html): External Ids for this team
+* [Composition](composition.html): Version-independent identifier for the Composition
+* [Condition](condition.html): A unique identifier of the condition record
+* [Consent](consent.html): Identifier for this record (external references)
+* [DetectedIssue](detectedissue.html): Unique id for the detected issue
+* [DeviceRequest](devicerequest.html): Business identifier for request/order
+* [DiagnosticReport](diagnosticreport.html): An identifier for the report
+* [DocumentManifest](documentmanifest.html): Unique Identifier for the set of documents
+* [DocumentReference](documentreference.html): Master Version Specific Identifier
+* [Encounter](encounter.html): Identifier(s) by which this encounter is known
+* [EpisodeOfCare](episodeofcare.html): Business Identifier(s) relevant for this EpisodeOfCare
+* [FamilyMemberHistory](familymemberhistory.html): A search by a record identifier
+* [Goal](goal.html): External Ids for this goal
+* [ImagingStudy](imagingstudy.html): Identifiers for the Study, such as DICOM Study Instance UID and Accession number
+* [Immunization](immunization.html): Business identifier
+* [List](list.html): Business identifier
+* [MedicationAdministration](medicationadministration.html): Return administrations with this external identifier
+* [MedicationDispense](medicationdispense.html): Returns dispenses with this external identifier
+* [MedicationRequest](medicationrequest.html): Return prescriptions with this external identifier
+* [MedicationStatement](medicationstatement.html): Return statements with this external identifier
+* [NutritionOrder](nutritionorder.html): Return nutrition orders with this external identifier
+* [Observation](observation.html): The unique id for a particular observation
+* [Procedure](procedure.html): A unique identifier for a procedure
+* [RiskAssessment](riskassessment.html): Unique identifier for the assessment
+* [ServiceRequest](servicerequest.html): Identifiers assigned to this order
+* [SupplyDelivery](supplydelivery.html): External identifier
+* [SupplyRequest](supplyrequest.html): Business Identifier for SupplyRequest
+* [VisionPrescription](visionprescription.html): Return prescriptions with this external identifier
+
+    */
+  identifier(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderCareTeam {
+    this.builder.token("identifier", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [AllergyIntolerance](allergyintolerance.html): Who the sensitivity is for
+* [CarePlan](careplan.html): Who the care plan is for
+* [CareTeam](careteam.html): Who care team is for
+* [ClinicalImpression](clinicalimpression.html): Patient or group assessed
+* [Composition](composition.html): Who and/or what the composition is about
+* [Condition](condition.html): Who has the condition?
+* [Consent](consent.html): Who the consent applies to
+* [DetectedIssue](detectedissue.html): Associated patient
+* [DeviceRequest](devicerequest.html): Individual the service is ordered for
+* [DeviceUseStatement](deviceusestatement.html): Search by subject - a patient
+* [DiagnosticReport](diagnosticreport.html): The subject of the report if a patient
+* [DocumentManifest](documentmanifest.html): The subject of the set of documents
+* [DocumentReference](documentreference.html): Who/what is the subject of the document
+* [Encounter](encounter.html): The patient or group present at the encounter
+* [EpisodeOfCare](episodeofcare.html): The patient who is the focus of this episode of care
+* [FamilyMemberHistory](familymemberhistory.html): The identity of a subject to list family member history items for
+* [Flag](flag.html): The identity of a subject to list flags for
+* [Goal](goal.html): Who this goal is intended for
+* [ImagingStudy](imagingstudy.html): Who the study is about
+* [Immunization](immunization.html): The patient for the vaccination record
+* [List](list.html): If all resources have the same subject
+* [MedicationAdministration](medicationadministration.html): The identity of a patient to list administrations  for
+* [MedicationDispense](medicationdispense.html): The identity of a patient to list dispenses  for
+* [MedicationRequest](medicationrequest.html): Returns prescriptions for a specific patient
+* [MedicationStatement](medicationstatement.html): Returns statements for a specific patient.
+* [NutritionOrder](nutritionorder.html): The identity of the person who requires the diet, formula or nutritional supplement
+* [Observation](observation.html): The subject that the observation is about (if patient)
+* [Procedure](procedure.html): Search by subject - a patient
+* [RiskAssessment](riskassessment.html): Who/what does assessment apply to?
+* [ServiceRequest](servicerequest.html): Search by subject - a patient
+* [SupplyDelivery](supplydelivery.html): Patient for whom the item is supplied
+* [VisionPrescription](visionprescription.html): The identity of a patient to list dispenses for
+
+    */
+  patient(
+    id: Parameters<FhirSearchBuilder["reference"]>[1],
+    modifier?: ":identifier" | ResourceType | null | undefined
+  ): ResourceSearchBuilderCareTeam {
+    this.builder.reference("patient", id, modifier);
+    return this;
+  }
+
+  /**
    * Type of team
    */
   category(
@@ -4477,6 +5234,12 @@ class ResourceSearchBuilderCareTeam extends BaseResourceSearchBuilder<ResourceSe
 }
 
 export type SortOrderCareTeam =
+  | "date"
+  | "-date"
+  | "identifier"
+  | "-identifier"
+  | "patient"
+  | "-patient"
   | "category"
   | "-category"
   | "encounter"
@@ -6535,6 +7298,81 @@ class ResourceSearchBuilderClinicalImpression extends BaseResourceSearchBuilder<
   }
 
   /**
+    * Multiple Resources: 
+
+* [AllergyIntolerance](allergyintolerance.html): Date first version of the resource instance was recorded
+* [CarePlan](careplan.html): Time period plan covers
+* [CareTeam](careteam.html): Time period team covers
+* [ClinicalImpression](clinicalimpression.html): When the assessment was documented
+* [Composition](composition.html): Composition editing time
+* [Consent](consent.html): When this Consent was created or indexed
+* [DiagnosticReport](diagnosticreport.html): The clinically relevant time of the report
+* [Encounter](encounter.html): A date within the period the Encounter lasted
+* [EpisodeOfCare](episodeofcare.html): The provided date search value falls within the episode of care's period
+* [FamilyMemberHistory](familymemberhistory.html): When history was recorded or last updated
+* [Flag](flag.html): Time period when flag is active
+* [Immunization](immunization.html): Vaccination  (non)-Administration Date
+* [List](list.html): When the list was prepared
+* [Observation](observation.html): Obtained date/time. If the obtained element is a period, a date that falls in the period
+* [Procedure](procedure.html): When the procedure was performed
+* [RiskAssessment](riskassessment.html): When was assessment made?
+* [SupplyRequest](supplyrequest.html): When the request was made
+
+    */
+  date(
+    value: Parameters<FhirSearchBuilder["date"]>[1],
+    prefix?: Prefix | null | undefined
+  ): ResourceSearchBuilderClinicalImpression {
+    this.builder.date("date", value, prefix);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [AllergyIntolerance](allergyintolerance.html): Who the sensitivity is for
+* [CarePlan](careplan.html): Who the care plan is for
+* [CareTeam](careteam.html): Who care team is for
+* [ClinicalImpression](clinicalimpression.html): Patient or group assessed
+* [Composition](composition.html): Who and/or what the composition is about
+* [Condition](condition.html): Who has the condition?
+* [Consent](consent.html): Who the consent applies to
+* [DetectedIssue](detectedissue.html): Associated patient
+* [DeviceRequest](devicerequest.html): Individual the service is ordered for
+* [DeviceUseStatement](deviceusestatement.html): Search by subject - a patient
+* [DiagnosticReport](diagnosticreport.html): The subject of the report if a patient
+* [DocumentManifest](documentmanifest.html): The subject of the set of documents
+* [DocumentReference](documentreference.html): Who/what is the subject of the document
+* [Encounter](encounter.html): The patient or group present at the encounter
+* [EpisodeOfCare](episodeofcare.html): The patient who is the focus of this episode of care
+* [FamilyMemberHistory](familymemberhistory.html): The identity of a subject to list family member history items for
+* [Flag](flag.html): The identity of a subject to list flags for
+* [Goal](goal.html): Who this goal is intended for
+* [ImagingStudy](imagingstudy.html): Who the study is about
+* [Immunization](immunization.html): The patient for the vaccination record
+* [List](list.html): If all resources have the same subject
+* [MedicationAdministration](medicationadministration.html): The identity of a patient to list administrations  for
+* [MedicationDispense](medicationdispense.html): The identity of a patient to list dispenses  for
+* [MedicationRequest](medicationrequest.html): Returns prescriptions for a specific patient
+* [MedicationStatement](medicationstatement.html): Returns statements for a specific patient.
+* [NutritionOrder](nutritionorder.html): The identity of the person who requires the diet, formula or nutritional supplement
+* [Observation](observation.html): The subject that the observation is about (if patient)
+* [Procedure](procedure.html): Search by subject - a patient
+* [RiskAssessment](riskassessment.html): Who/what does assessment apply to?
+* [ServiceRequest](servicerequest.html): Search by subject - a patient
+* [SupplyDelivery](supplydelivery.html): Patient for whom the item is supplied
+* [VisionPrescription](visionprescription.html): The identity of a patient to list dispenses for
+
+    */
+  patient(
+    id: Parameters<FhirSearchBuilder["reference"]>[1],
+    modifier?: ":identifier" | ResourceType | null | undefined
+  ): ResourceSearchBuilderClinicalImpression {
+    this.builder.reference("patient", id, modifier);
+    return this;
+  }
+
+  /**
    * The clinician performing the assessment
    */
   assessor(
@@ -6657,6 +7495,10 @@ class ResourceSearchBuilderClinicalImpression extends BaseResourceSearchBuilder<
 }
 
 export type SortOrderClinicalImpression =
+  | "date"
+  | "-date"
+  | "patient"
+  | "-patient"
   | "assessor"
   | "-assessor"
   | "encounter"
@@ -7145,6 +7987,323 @@ class ResourceSearchBuilderCodeSystem extends BaseResourceSearchBuilder<Resource
   }
 
   /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): A use context assigned to the capability statement
+* [CodeSystem](codesystem.html): A use context assigned to the code system
+* [CompartmentDefinition](compartmentdefinition.html): A use context assigned to the compartment definition
+* [ConceptMap](conceptmap.html): A use context assigned to the concept map
+* [GraphDefinition](graphdefinition.html): A use context assigned to the graph definition
+* [ImplementationGuide](implementationguide.html): A use context assigned to the implementation guide
+* [MessageDefinition](messagedefinition.html): A use context assigned to the message definition
+* [NamingSystem](namingsystem.html): A use context assigned to the naming system
+* [OperationDefinition](operationdefinition.html): A use context assigned to the operation definition
+* [SearchParameter](searchparameter.html): A use context assigned to the search parameter
+* [StructureDefinition](structuredefinition.html): A use context assigned to the structure definition
+* [StructureMap](structuremap.html): A use context assigned to the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): A use context assigned to the terminology capabilities
+* [ValueSet](valueset.html): A use context assigned to the value set
+
+    */
+  context(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderCodeSystem {
+    this.builder.token("context", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): A quantity- or range-valued use context assigned to the capability statement
+* [CodeSystem](codesystem.html): A quantity- or range-valued use context assigned to the code system
+* [CompartmentDefinition](compartmentdefinition.html): A quantity- or range-valued use context assigned to the compartment definition
+* [ConceptMap](conceptmap.html): A quantity- or range-valued use context assigned to the concept map
+* [GraphDefinition](graphdefinition.html): A quantity- or range-valued use context assigned to the graph definition
+* [ImplementationGuide](implementationguide.html): A quantity- or range-valued use context assigned to the implementation guide
+* [MessageDefinition](messagedefinition.html): A quantity- or range-valued use context assigned to the message definition
+* [NamingSystem](namingsystem.html): A quantity- or range-valued use context assigned to the naming system
+* [OperationDefinition](operationdefinition.html): A quantity- or range-valued use context assigned to the operation definition
+* [SearchParameter](searchparameter.html): A quantity- or range-valued use context assigned to the search parameter
+* [StructureDefinition](structuredefinition.html): A quantity- or range-valued use context assigned to the structure definition
+* [StructureMap](structuremap.html): A quantity- or range-valued use context assigned to the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): A quantity- or range-valued use context assigned to the terminology capabilities
+* [ValueSet](valueset.html): A quantity- or range-valued use context assigned to the value set
+
+    */
+  contextquantity(
+    number: Parameters<FhirSearchBuilder["quantity"]>[1],
+    prefix?: Prefix | null | undefined
+  ): ResourceSearchBuilderCodeSystem {
+    this.builder.quantity("context-quantity", number, prefix);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): A type of use context assigned to the capability statement
+* [CodeSystem](codesystem.html): A type of use context assigned to the code system
+* [CompartmentDefinition](compartmentdefinition.html): A type of use context assigned to the compartment definition
+* [ConceptMap](conceptmap.html): A type of use context assigned to the concept map
+* [GraphDefinition](graphdefinition.html): A type of use context assigned to the graph definition
+* [ImplementationGuide](implementationguide.html): A type of use context assigned to the implementation guide
+* [MessageDefinition](messagedefinition.html): A type of use context assigned to the message definition
+* [NamingSystem](namingsystem.html): A type of use context assigned to the naming system
+* [OperationDefinition](operationdefinition.html): A type of use context assigned to the operation definition
+* [SearchParameter](searchparameter.html): A type of use context assigned to the search parameter
+* [StructureDefinition](structuredefinition.html): A type of use context assigned to the structure definition
+* [StructureMap](structuremap.html): A type of use context assigned to the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): A type of use context assigned to the terminology capabilities
+* [ValueSet](valueset.html): A type of use context assigned to the value set
+
+    */
+  contexttype(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderCodeSystem {
+    this.builder.token("context-type", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): The capability statement publication date
+* [CodeSystem](codesystem.html): The code system publication date
+* [CompartmentDefinition](compartmentdefinition.html): The compartment definition publication date
+* [ConceptMap](conceptmap.html): The concept map publication date
+* [GraphDefinition](graphdefinition.html): The graph definition publication date
+* [ImplementationGuide](implementationguide.html): The implementation guide publication date
+* [MessageDefinition](messagedefinition.html): The message definition publication date
+* [NamingSystem](namingsystem.html): The naming system publication date
+* [OperationDefinition](operationdefinition.html): The operation definition publication date
+* [SearchParameter](searchparameter.html): The search parameter publication date
+* [StructureDefinition](structuredefinition.html): The structure definition publication date
+* [StructureMap](structuremap.html): The structure map publication date
+* [TerminologyCapabilities](terminologycapabilities.html): The terminology capabilities publication date
+* [ValueSet](valueset.html): The value set publication date
+
+    */
+  date(
+    value: Parameters<FhirSearchBuilder["date"]>[1],
+    prefix?: Prefix | null | undefined
+  ): ResourceSearchBuilderCodeSystem {
+    this.builder.date("date", value, prefix);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): The description of the capability statement
+* [CodeSystem](codesystem.html): The description of the code system
+* [CompartmentDefinition](compartmentdefinition.html): The description of the compartment definition
+* [ConceptMap](conceptmap.html): The description of the concept map
+* [GraphDefinition](graphdefinition.html): The description of the graph definition
+* [ImplementationGuide](implementationguide.html): The description of the implementation guide
+* [MessageDefinition](messagedefinition.html): The description of the message definition
+* [NamingSystem](namingsystem.html): The description of the naming system
+* [OperationDefinition](operationdefinition.html): The description of the operation definition
+* [SearchParameter](searchparameter.html): The description of the search parameter
+* [StructureDefinition](structuredefinition.html): The description of the structure definition
+* [StructureMap](structuremap.html): The description of the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): The description of the terminology capabilities
+* [ValueSet](valueset.html): The description of the value set
+
+    */
+  description(
+    value: Parameters<FhirSearchBuilder["string"]>[1],
+    modifier?: StringModifier | null | undefined
+  ): ResourceSearchBuilderCodeSystem {
+    this.builder.string("description", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): Intended jurisdiction for the capability statement
+* [CodeSystem](codesystem.html): Intended jurisdiction for the code system
+* [ConceptMap](conceptmap.html): Intended jurisdiction for the concept map
+* [GraphDefinition](graphdefinition.html): Intended jurisdiction for the graph definition
+* [ImplementationGuide](implementationguide.html): Intended jurisdiction for the implementation guide
+* [MessageDefinition](messagedefinition.html): Intended jurisdiction for the message definition
+* [NamingSystem](namingsystem.html): Intended jurisdiction for the naming system
+* [OperationDefinition](operationdefinition.html): Intended jurisdiction for the operation definition
+* [SearchParameter](searchparameter.html): Intended jurisdiction for the search parameter
+* [StructureDefinition](structuredefinition.html): Intended jurisdiction for the structure definition
+* [StructureMap](structuremap.html): Intended jurisdiction for the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): Intended jurisdiction for the terminology capabilities
+* [ValueSet](valueset.html): Intended jurisdiction for the value set
+
+    */
+  jurisdiction(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderCodeSystem {
+    this.builder.token("jurisdiction", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): Computationally friendly name of the capability statement
+* [CodeSystem](codesystem.html): Computationally friendly name of the code system
+* [CompartmentDefinition](compartmentdefinition.html): Computationally friendly name of the compartment definition
+* [ConceptMap](conceptmap.html): Computationally friendly name of the concept map
+* [GraphDefinition](graphdefinition.html): Computationally friendly name of the graph definition
+* [ImplementationGuide](implementationguide.html): Computationally friendly name of the implementation guide
+* [MessageDefinition](messagedefinition.html): Computationally friendly name of the message definition
+* [NamingSystem](namingsystem.html): Computationally friendly name of the naming system
+* [OperationDefinition](operationdefinition.html): Computationally friendly name of the operation definition
+* [SearchParameter](searchparameter.html): Computationally friendly name of the search parameter
+* [StructureDefinition](structuredefinition.html): Computationally friendly name of the structure definition
+* [StructureMap](structuremap.html): Computationally friendly name of the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): Computationally friendly name of the terminology capabilities
+* [ValueSet](valueset.html): Computationally friendly name of the value set
+
+    */
+  name(
+    value: Parameters<FhirSearchBuilder["string"]>[1],
+    modifier?: StringModifier | null | undefined
+  ): ResourceSearchBuilderCodeSystem {
+    this.builder.string("name", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): Name of the publisher of the capability statement
+* [CodeSystem](codesystem.html): Name of the publisher of the code system
+* [CompartmentDefinition](compartmentdefinition.html): Name of the publisher of the compartment definition
+* [ConceptMap](conceptmap.html): Name of the publisher of the concept map
+* [GraphDefinition](graphdefinition.html): Name of the publisher of the graph definition
+* [ImplementationGuide](implementationguide.html): Name of the publisher of the implementation guide
+* [MessageDefinition](messagedefinition.html): Name of the publisher of the message definition
+* [NamingSystem](namingsystem.html): Name of the publisher of the naming system
+* [OperationDefinition](operationdefinition.html): Name of the publisher of the operation definition
+* [SearchParameter](searchparameter.html): Name of the publisher of the search parameter
+* [StructureDefinition](structuredefinition.html): Name of the publisher of the structure definition
+* [StructureMap](structuremap.html): Name of the publisher of the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): Name of the publisher of the terminology capabilities
+* [ValueSet](valueset.html): Name of the publisher of the value set
+
+    */
+  publisher(
+    value: Parameters<FhirSearchBuilder["string"]>[1],
+    modifier?: StringModifier | null | undefined
+  ): ResourceSearchBuilderCodeSystem {
+    this.builder.string("publisher", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): The current status of the capability statement
+* [CodeSystem](codesystem.html): The current status of the code system
+* [CompartmentDefinition](compartmentdefinition.html): The current status of the compartment definition
+* [ConceptMap](conceptmap.html): The current status of the concept map
+* [GraphDefinition](graphdefinition.html): The current status of the graph definition
+* [ImplementationGuide](implementationguide.html): The current status of the implementation guide
+* [MessageDefinition](messagedefinition.html): The current status of the message definition
+* [NamingSystem](namingsystem.html): The current status of the naming system
+* [OperationDefinition](operationdefinition.html): The current status of the operation definition
+* [SearchParameter](searchparameter.html): The current status of the search parameter
+* [StructureDefinition](structuredefinition.html): The current status of the structure definition
+* [StructureMap](structuremap.html): The current status of the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): The current status of the terminology capabilities
+* [ValueSet](valueset.html): The current status of the value set
+
+    */
+  status(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderCodeSystem {
+    this.builder.token("status", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): The human-friendly name of the capability statement
+* [CodeSystem](codesystem.html): The human-friendly name of the code system
+* [ConceptMap](conceptmap.html): The human-friendly name of the concept map
+* [ImplementationGuide](implementationguide.html): The human-friendly name of the implementation guide
+* [MessageDefinition](messagedefinition.html): The human-friendly name of the message definition
+* [OperationDefinition](operationdefinition.html): The human-friendly name of the operation definition
+* [StructureDefinition](structuredefinition.html): The human-friendly name of the structure definition
+* [StructureMap](structuremap.html): The human-friendly name of the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): The human-friendly name of the terminology capabilities
+* [ValueSet](valueset.html): The human-friendly name of the value set
+
+    */
+  title(
+    value: Parameters<FhirSearchBuilder["string"]>[1],
+    modifier?: StringModifier | null | undefined
+  ): ResourceSearchBuilderCodeSystem {
+    this.builder.string("title", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): The uri that identifies the capability statement
+* [CodeSystem](codesystem.html): The uri that identifies the code system
+* [CompartmentDefinition](compartmentdefinition.html): The uri that identifies the compartment definition
+* [ConceptMap](conceptmap.html): The uri that identifies the concept map
+* [GraphDefinition](graphdefinition.html): The uri that identifies the graph definition
+* [ImplementationGuide](implementationguide.html): The uri that identifies the implementation guide
+* [MessageDefinition](messagedefinition.html): The uri that identifies the message definition
+* [OperationDefinition](operationdefinition.html): The uri that identifies the operation definition
+* [SearchParameter](searchparameter.html): The uri that identifies the search parameter
+* [StructureDefinition](structuredefinition.html): The uri that identifies the structure definition
+* [StructureMap](structuremap.html): The uri that identifies the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): The uri that identifies the terminology capabilities
+* [ValueSet](valueset.html): The uri that identifies the value set
+
+    */
+  url(
+    value: Parameters<FhirSearchBuilder["uri"]>[1],
+    modifier?: UriModifier | null | undefined
+  ): ResourceSearchBuilderCodeSystem {
+    this.builder.uri("url", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): The business version of the capability statement
+* [CodeSystem](codesystem.html): The business version of the code system
+* [CompartmentDefinition](compartmentdefinition.html): The business version of the compartment definition
+* [ConceptMap](conceptmap.html): The business version of the concept map
+* [GraphDefinition](graphdefinition.html): The business version of the graph definition
+* [ImplementationGuide](implementationguide.html): The business version of the implementation guide
+* [MessageDefinition](messagedefinition.html): The business version of the message definition
+* [OperationDefinition](operationdefinition.html): The business version of the operation definition
+* [SearchParameter](searchparameter.html): The business version of the search parameter
+* [StructureDefinition](structuredefinition.html): The business version of the structure definition
+* [StructureMap](structuremap.html): The business version of the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): The business version of the terminology capabilities
+* [ValueSet](valueset.html): The business version of the value set
+
+    */
+  version(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderCodeSystem {
+    this.builder.token("version", value, modifier);
+    return this;
+  }
+
+  /**
    * A code defined in the code system
    */
   code(
@@ -7163,6 +8322,25 @@ class ResourceSearchBuilderCodeSystem extends BaseResourceSearchBuilder<Resource
     modifier?: TokenModifier | null | undefined
   ): ResourceSearchBuilderCodeSystem {
     this.builder.token("content-mode", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CodeSystem](codesystem.html): External identifier for the code system
+* [ConceptMap](conceptmap.html): External identifier for the concept map
+* [MessageDefinition](messagedefinition.html): External identifier for the message definition
+* [StructureDefinition](structuredefinition.html): External identifier for the structure definition
+* [StructureMap](structuremap.html): External identifier for the structure map
+* [ValueSet](valueset.html): External identifier for the value set
+
+    */
+  identifier(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderCodeSystem {
+    this.builder.token("identifier", value, modifier);
     return this;
   }
 
@@ -7201,10 +8379,36 @@ class ResourceSearchBuilderCodeSystem extends BaseResourceSearchBuilder<Resource
 }
 
 export type SortOrderCodeSystem =
+  | "context"
+  | "-context"
+  | "context-quantity"
+  | "-context-quantity"
+  | "context-type"
+  | "-context-type"
+  | "date"
+  | "-date"
+  | "description"
+  | "-description"
+  | "jurisdiction"
+  | "-jurisdiction"
+  | "name"
+  | "-name"
+  | "publisher"
+  | "-publisher"
+  | "status"
+  | "-status"
+  | "title"
+  | "-title"
+  | "url"
+  | "-url"
+  | "version"
+  | "-version"
   | "code"
   | "-code"
   | "content-mode"
   | "-content-mode"
+  | "identifier"
+  | "-identifier"
   | "language"
   | "-language"
   | "supplements"
@@ -8098,6 +9302,274 @@ class ResourceSearchBuilderCompartmentDefinition extends BaseResourceSearchBuild
   }
 
   /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): A use context assigned to the capability statement
+* [CodeSystem](codesystem.html): A use context assigned to the code system
+* [CompartmentDefinition](compartmentdefinition.html): A use context assigned to the compartment definition
+* [ConceptMap](conceptmap.html): A use context assigned to the concept map
+* [GraphDefinition](graphdefinition.html): A use context assigned to the graph definition
+* [ImplementationGuide](implementationguide.html): A use context assigned to the implementation guide
+* [MessageDefinition](messagedefinition.html): A use context assigned to the message definition
+* [NamingSystem](namingsystem.html): A use context assigned to the naming system
+* [OperationDefinition](operationdefinition.html): A use context assigned to the operation definition
+* [SearchParameter](searchparameter.html): A use context assigned to the search parameter
+* [StructureDefinition](structuredefinition.html): A use context assigned to the structure definition
+* [StructureMap](structuremap.html): A use context assigned to the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): A use context assigned to the terminology capabilities
+* [ValueSet](valueset.html): A use context assigned to the value set
+
+    */
+  context(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderCompartmentDefinition {
+    this.builder.token("context", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): A quantity- or range-valued use context assigned to the capability statement
+* [CodeSystem](codesystem.html): A quantity- or range-valued use context assigned to the code system
+* [CompartmentDefinition](compartmentdefinition.html): A quantity- or range-valued use context assigned to the compartment definition
+* [ConceptMap](conceptmap.html): A quantity- or range-valued use context assigned to the concept map
+* [GraphDefinition](graphdefinition.html): A quantity- or range-valued use context assigned to the graph definition
+* [ImplementationGuide](implementationguide.html): A quantity- or range-valued use context assigned to the implementation guide
+* [MessageDefinition](messagedefinition.html): A quantity- or range-valued use context assigned to the message definition
+* [NamingSystem](namingsystem.html): A quantity- or range-valued use context assigned to the naming system
+* [OperationDefinition](operationdefinition.html): A quantity- or range-valued use context assigned to the operation definition
+* [SearchParameter](searchparameter.html): A quantity- or range-valued use context assigned to the search parameter
+* [StructureDefinition](structuredefinition.html): A quantity- or range-valued use context assigned to the structure definition
+* [StructureMap](structuremap.html): A quantity- or range-valued use context assigned to the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): A quantity- or range-valued use context assigned to the terminology capabilities
+* [ValueSet](valueset.html): A quantity- or range-valued use context assigned to the value set
+
+    */
+  contextquantity(
+    number: Parameters<FhirSearchBuilder["quantity"]>[1],
+    prefix?: Prefix | null | undefined
+  ): ResourceSearchBuilderCompartmentDefinition {
+    this.builder.quantity("context-quantity", number, prefix);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): A type of use context assigned to the capability statement
+* [CodeSystem](codesystem.html): A type of use context assigned to the code system
+* [CompartmentDefinition](compartmentdefinition.html): A type of use context assigned to the compartment definition
+* [ConceptMap](conceptmap.html): A type of use context assigned to the concept map
+* [GraphDefinition](graphdefinition.html): A type of use context assigned to the graph definition
+* [ImplementationGuide](implementationguide.html): A type of use context assigned to the implementation guide
+* [MessageDefinition](messagedefinition.html): A type of use context assigned to the message definition
+* [NamingSystem](namingsystem.html): A type of use context assigned to the naming system
+* [OperationDefinition](operationdefinition.html): A type of use context assigned to the operation definition
+* [SearchParameter](searchparameter.html): A type of use context assigned to the search parameter
+* [StructureDefinition](structuredefinition.html): A type of use context assigned to the structure definition
+* [StructureMap](structuremap.html): A type of use context assigned to the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): A type of use context assigned to the terminology capabilities
+* [ValueSet](valueset.html): A type of use context assigned to the value set
+
+    */
+  contexttype(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderCompartmentDefinition {
+    this.builder.token("context-type", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): The capability statement publication date
+* [CodeSystem](codesystem.html): The code system publication date
+* [CompartmentDefinition](compartmentdefinition.html): The compartment definition publication date
+* [ConceptMap](conceptmap.html): The concept map publication date
+* [GraphDefinition](graphdefinition.html): The graph definition publication date
+* [ImplementationGuide](implementationguide.html): The implementation guide publication date
+* [MessageDefinition](messagedefinition.html): The message definition publication date
+* [NamingSystem](namingsystem.html): The naming system publication date
+* [OperationDefinition](operationdefinition.html): The operation definition publication date
+* [SearchParameter](searchparameter.html): The search parameter publication date
+* [StructureDefinition](structuredefinition.html): The structure definition publication date
+* [StructureMap](structuremap.html): The structure map publication date
+* [TerminologyCapabilities](terminologycapabilities.html): The terminology capabilities publication date
+* [ValueSet](valueset.html): The value set publication date
+
+    */
+  date(
+    value: Parameters<FhirSearchBuilder["date"]>[1],
+    prefix?: Prefix | null | undefined
+  ): ResourceSearchBuilderCompartmentDefinition {
+    this.builder.date("date", value, prefix);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): The description of the capability statement
+* [CodeSystem](codesystem.html): The description of the code system
+* [CompartmentDefinition](compartmentdefinition.html): The description of the compartment definition
+* [ConceptMap](conceptmap.html): The description of the concept map
+* [GraphDefinition](graphdefinition.html): The description of the graph definition
+* [ImplementationGuide](implementationguide.html): The description of the implementation guide
+* [MessageDefinition](messagedefinition.html): The description of the message definition
+* [NamingSystem](namingsystem.html): The description of the naming system
+* [OperationDefinition](operationdefinition.html): The description of the operation definition
+* [SearchParameter](searchparameter.html): The description of the search parameter
+* [StructureDefinition](structuredefinition.html): The description of the structure definition
+* [StructureMap](structuremap.html): The description of the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): The description of the terminology capabilities
+* [ValueSet](valueset.html): The description of the value set
+
+    */
+  description(
+    value: Parameters<FhirSearchBuilder["string"]>[1],
+    modifier?: StringModifier | null | undefined
+  ): ResourceSearchBuilderCompartmentDefinition {
+    this.builder.string("description", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): Computationally friendly name of the capability statement
+* [CodeSystem](codesystem.html): Computationally friendly name of the code system
+* [CompartmentDefinition](compartmentdefinition.html): Computationally friendly name of the compartment definition
+* [ConceptMap](conceptmap.html): Computationally friendly name of the concept map
+* [GraphDefinition](graphdefinition.html): Computationally friendly name of the graph definition
+* [ImplementationGuide](implementationguide.html): Computationally friendly name of the implementation guide
+* [MessageDefinition](messagedefinition.html): Computationally friendly name of the message definition
+* [NamingSystem](namingsystem.html): Computationally friendly name of the naming system
+* [OperationDefinition](operationdefinition.html): Computationally friendly name of the operation definition
+* [SearchParameter](searchparameter.html): Computationally friendly name of the search parameter
+* [StructureDefinition](structuredefinition.html): Computationally friendly name of the structure definition
+* [StructureMap](structuremap.html): Computationally friendly name of the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): Computationally friendly name of the terminology capabilities
+* [ValueSet](valueset.html): Computationally friendly name of the value set
+
+    */
+  name(
+    value: Parameters<FhirSearchBuilder["string"]>[1],
+    modifier?: StringModifier | null | undefined
+  ): ResourceSearchBuilderCompartmentDefinition {
+    this.builder.string("name", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): Name of the publisher of the capability statement
+* [CodeSystem](codesystem.html): Name of the publisher of the code system
+* [CompartmentDefinition](compartmentdefinition.html): Name of the publisher of the compartment definition
+* [ConceptMap](conceptmap.html): Name of the publisher of the concept map
+* [GraphDefinition](graphdefinition.html): Name of the publisher of the graph definition
+* [ImplementationGuide](implementationguide.html): Name of the publisher of the implementation guide
+* [MessageDefinition](messagedefinition.html): Name of the publisher of the message definition
+* [NamingSystem](namingsystem.html): Name of the publisher of the naming system
+* [OperationDefinition](operationdefinition.html): Name of the publisher of the operation definition
+* [SearchParameter](searchparameter.html): Name of the publisher of the search parameter
+* [StructureDefinition](structuredefinition.html): Name of the publisher of the structure definition
+* [StructureMap](structuremap.html): Name of the publisher of the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): Name of the publisher of the terminology capabilities
+* [ValueSet](valueset.html): Name of the publisher of the value set
+
+    */
+  publisher(
+    value: Parameters<FhirSearchBuilder["string"]>[1],
+    modifier?: StringModifier | null | undefined
+  ): ResourceSearchBuilderCompartmentDefinition {
+    this.builder.string("publisher", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): The current status of the capability statement
+* [CodeSystem](codesystem.html): The current status of the code system
+* [CompartmentDefinition](compartmentdefinition.html): The current status of the compartment definition
+* [ConceptMap](conceptmap.html): The current status of the concept map
+* [GraphDefinition](graphdefinition.html): The current status of the graph definition
+* [ImplementationGuide](implementationguide.html): The current status of the implementation guide
+* [MessageDefinition](messagedefinition.html): The current status of the message definition
+* [NamingSystem](namingsystem.html): The current status of the naming system
+* [OperationDefinition](operationdefinition.html): The current status of the operation definition
+* [SearchParameter](searchparameter.html): The current status of the search parameter
+* [StructureDefinition](structuredefinition.html): The current status of the structure definition
+* [StructureMap](structuremap.html): The current status of the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): The current status of the terminology capabilities
+* [ValueSet](valueset.html): The current status of the value set
+
+    */
+  status(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderCompartmentDefinition {
+    this.builder.token("status", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): The uri that identifies the capability statement
+* [CodeSystem](codesystem.html): The uri that identifies the code system
+* [CompartmentDefinition](compartmentdefinition.html): The uri that identifies the compartment definition
+* [ConceptMap](conceptmap.html): The uri that identifies the concept map
+* [GraphDefinition](graphdefinition.html): The uri that identifies the graph definition
+* [ImplementationGuide](implementationguide.html): The uri that identifies the implementation guide
+* [MessageDefinition](messagedefinition.html): The uri that identifies the message definition
+* [OperationDefinition](operationdefinition.html): The uri that identifies the operation definition
+* [SearchParameter](searchparameter.html): The uri that identifies the search parameter
+* [StructureDefinition](structuredefinition.html): The uri that identifies the structure definition
+* [StructureMap](structuremap.html): The uri that identifies the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): The uri that identifies the terminology capabilities
+* [ValueSet](valueset.html): The uri that identifies the value set
+
+    */
+  url(
+    value: Parameters<FhirSearchBuilder["uri"]>[1],
+    modifier?: UriModifier | null | undefined
+  ): ResourceSearchBuilderCompartmentDefinition {
+    this.builder.uri("url", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): The business version of the capability statement
+* [CodeSystem](codesystem.html): The business version of the code system
+* [CompartmentDefinition](compartmentdefinition.html): The business version of the compartment definition
+* [ConceptMap](conceptmap.html): The business version of the concept map
+* [GraphDefinition](graphdefinition.html): The business version of the graph definition
+* [ImplementationGuide](implementationguide.html): The business version of the implementation guide
+* [MessageDefinition](messagedefinition.html): The business version of the message definition
+* [OperationDefinition](operationdefinition.html): The business version of the operation definition
+* [SearchParameter](searchparameter.html): The business version of the search parameter
+* [StructureDefinition](structuredefinition.html): The business version of the structure definition
+* [StructureMap](structuremap.html): The business version of the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): The business version of the terminology capabilities
+* [ValueSet](valueset.html): The business version of the value set
+
+    */
+  version(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderCompartmentDefinition {
+    this.builder.token("version", value, modifier);
+    return this;
+  }
+
+  /**
    * Patient | Encounter | RelatedPerson | Practitioner | Device
    */
   code(
@@ -8121,6 +9593,26 @@ class ResourceSearchBuilderCompartmentDefinition extends BaseResourceSearchBuild
 }
 
 export type SortOrderCompartmentDefinition =
+  | "context"
+  | "-context"
+  | "context-quantity"
+  | "-context-quantity"
+  | "context-type"
+  | "-context-type"
+  | "date"
+  | "-date"
+  | "description"
+  | "-description"
+  | "name"
+  | "-name"
+  | "publisher"
+  | "-publisher"
+  | "status"
+  | "-status"
+  | "url"
+  | "-url"
+  | "version"
+  | "-version"
   | "code"
   | "-code"
   | "resource"
@@ -8285,6 +9777,143 @@ class ResourceSearchBuilderComposition extends BaseResourceSearchBuilder<Resourc
   }
 
   /**
+    * Multiple Resources: 
+
+* [AllergyIntolerance](allergyintolerance.html): Date first version of the resource instance was recorded
+* [CarePlan](careplan.html): Time period plan covers
+* [CareTeam](careteam.html): Time period team covers
+* [ClinicalImpression](clinicalimpression.html): When the assessment was documented
+* [Composition](composition.html): Composition editing time
+* [Consent](consent.html): When this Consent was created or indexed
+* [DiagnosticReport](diagnosticreport.html): The clinically relevant time of the report
+* [Encounter](encounter.html): A date within the period the Encounter lasted
+* [EpisodeOfCare](episodeofcare.html): The provided date search value falls within the episode of care's period
+* [FamilyMemberHistory](familymemberhistory.html): When history was recorded or last updated
+* [Flag](flag.html): Time period when flag is active
+* [Immunization](immunization.html): Vaccination  (non)-Administration Date
+* [List](list.html): When the list was prepared
+* [Observation](observation.html): Obtained date/time. If the obtained element is a period, a date that falls in the period
+* [Procedure](procedure.html): When the procedure was performed
+* [RiskAssessment](riskassessment.html): When was assessment made?
+* [SupplyRequest](supplyrequest.html): When the request was made
+
+    */
+  date(
+    value: Parameters<FhirSearchBuilder["date"]>[1],
+    prefix?: Prefix | null | undefined
+  ): ResourceSearchBuilderComposition {
+    this.builder.date("date", value, prefix);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [AllergyIntolerance](allergyintolerance.html): External ids for this item
+* [CarePlan](careplan.html): External Ids for this plan
+* [CareTeam](careteam.html): External Ids for this team
+* [Composition](composition.html): Version-independent identifier for the Composition
+* [Condition](condition.html): A unique identifier of the condition record
+* [Consent](consent.html): Identifier for this record (external references)
+* [DetectedIssue](detectedissue.html): Unique id for the detected issue
+* [DeviceRequest](devicerequest.html): Business identifier for request/order
+* [DiagnosticReport](diagnosticreport.html): An identifier for the report
+* [DocumentManifest](documentmanifest.html): Unique Identifier for the set of documents
+* [DocumentReference](documentreference.html): Master Version Specific Identifier
+* [Encounter](encounter.html): Identifier(s) by which this encounter is known
+* [EpisodeOfCare](episodeofcare.html): Business Identifier(s) relevant for this EpisodeOfCare
+* [FamilyMemberHistory](familymemberhistory.html): A search by a record identifier
+* [Goal](goal.html): External Ids for this goal
+* [ImagingStudy](imagingstudy.html): Identifiers for the Study, such as DICOM Study Instance UID and Accession number
+* [Immunization](immunization.html): Business identifier
+* [List](list.html): Business identifier
+* [MedicationAdministration](medicationadministration.html): Return administrations with this external identifier
+* [MedicationDispense](medicationdispense.html): Returns dispenses with this external identifier
+* [MedicationRequest](medicationrequest.html): Return prescriptions with this external identifier
+* [MedicationStatement](medicationstatement.html): Return statements with this external identifier
+* [NutritionOrder](nutritionorder.html): Return nutrition orders with this external identifier
+* [Observation](observation.html): The unique id for a particular observation
+* [Procedure](procedure.html): A unique identifier for a procedure
+* [RiskAssessment](riskassessment.html): Unique identifier for the assessment
+* [ServiceRequest](servicerequest.html): Identifiers assigned to this order
+* [SupplyDelivery](supplydelivery.html): External identifier
+* [SupplyRequest](supplyrequest.html): Business Identifier for SupplyRequest
+* [VisionPrescription](visionprescription.html): Return prescriptions with this external identifier
+
+    */
+  identifier(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderComposition {
+    this.builder.token("identifier", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [AllergyIntolerance](allergyintolerance.html): Who the sensitivity is for
+* [CarePlan](careplan.html): Who the care plan is for
+* [CareTeam](careteam.html): Who care team is for
+* [ClinicalImpression](clinicalimpression.html): Patient or group assessed
+* [Composition](composition.html): Who and/or what the composition is about
+* [Condition](condition.html): Who has the condition?
+* [Consent](consent.html): Who the consent applies to
+* [DetectedIssue](detectedissue.html): Associated patient
+* [DeviceRequest](devicerequest.html): Individual the service is ordered for
+* [DeviceUseStatement](deviceusestatement.html): Search by subject - a patient
+* [DiagnosticReport](diagnosticreport.html): The subject of the report if a patient
+* [DocumentManifest](documentmanifest.html): The subject of the set of documents
+* [DocumentReference](documentreference.html): Who/what is the subject of the document
+* [Encounter](encounter.html): The patient or group present at the encounter
+* [EpisodeOfCare](episodeofcare.html): The patient who is the focus of this episode of care
+* [FamilyMemberHistory](familymemberhistory.html): The identity of a subject to list family member history items for
+* [Flag](flag.html): The identity of a subject to list flags for
+* [Goal](goal.html): Who this goal is intended for
+* [ImagingStudy](imagingstudy.html): Who the study is about
+* [Immunization](immunization.html): The patient for the vaccination record
+* [List](list.html): If all resources have the same subject
+* [MedicationAdministration](medicationadministration.html): The identity of a patient to list administrations  for
+* [MedicationDispense](medicationdispense.html): The identity of a patient to list dispenses  for
+* [MedicationRequest](medicationrequest.html): Returns prescriptions for a specific patient
+* [MedicationStatement](medicationstatement.html): Returns statements for a specific patient.
+* [NutritionOrder](nutritionorder.html): The identity of the person who requires the diet, formula or nutritional supplement
+* [Observation](observation.html): The subject that the observation is about (if patient)
+* [Procedure](procedure.html): Search by subject - a patient
+* [RiskAssessment](riskassessment.html): Who/what does assessment apply to?
+* [ServiceRequest](servicerequest.html): Search by subject - a patient
+* [SupplyDelivery](supplydelivery.html): Patient for whom the item is supplied
+* [VisionPrescription](visionprescription.html): The identity of a patient to list dispenses for
+
+    */
+  patient(
+    id: Parameters<FhirSearchBuilder["reference"]>[1],
+    modifier?: ":identifier" | ResourceType | null | undefined
+  ): ResourceSearchBuilderComposition {
+    this.builder.reference("patient", id, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [AllergyIntolerance](allergyintolerance.html): allergy | intolerance - Underlying mechanism (if known)
+* [Composition](composition.html): Kind of composition (LOINC if possible)
+* [DocumentManifest](documentmanifest.html): Kind of document set
+* [DocumentReference](documentreference.html): Kind of document (LOINC if possible)
+* [Encounter](encounter.html): Specific type of encounter
+* [EpisodeOfCare](episodeofcare.html): Type/class  - e.g. specialist referral, disease management
+
+    */
+  type(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderComposition {
+    this.builder.token("type", value, modifier);
+    return this;
+  }
+
+  /**
    * Who attested the composition
    */
   attester(
@@ -8336,6 +9965,31 @@ class ResourceSearchBuilderComposition extends BaseResourceSearchBuilder<Resourc
     modifier?: TokenModifier | null | undefined
   ): ResourceSearchBuilderComposition {
     this.builder.token("context", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [Composition](composition.html): Context of the Composition
+* [DeviceRequest](devicerequest.html): Encounter during which request was created
+* [DiagnosticReport](diagnosticreport.html): The Encounter when the order was made
+* [DocumentReference](documentreference.html): Context of the document  content
+* [Flag](flag.html): Alert relevant during encounter
+* [List](list.html): Context in which list created
+* [NutritionOrder](nutritionorder.html): Return nutrition orders with this encounter identifier
+* [Observation](observation.html): Encounter related to the observation
+* [Procedure](procedure.html): Encounter created as part of
+* [RiskAssessment](riskassessment.html): Where was assessment performed?
+* [ServiceRequest](servicerequest.html): An encounter in which this request is made
+* [VisionPrescription](visionprescription.html): Return prescriptions with this encounter identifier
+
+    */
+  encounter(
+    id: Parameters<FhirSearchBuilder["reference"]>[1],
+    modifier?: ":identifier" | ResourceType | null | undefined
+  ): ResourceSearchBuilderComposition {
+    this.builder.reference("encounter", id, modifier);
     return this;
   }
 
@@ -8429,6 +10083,14 @@ class ResourceSearchBuilderComposition extends BaseResourceSearchBuilder<Resourc
 }
 
 export type SortOrderComposition =
+  | "date"
+  | "-date"
+  | "identifier"
+  | "-identifier"
+  | "patient"
+  | "-patient"
+  | "type"
+  | "-type"
   | "attester"
   | "-attester"
   | "author"
@@ -8439,6 +10101,8 @@ export type SortOrderComposition =
   | "-confidentiality"
   | "context"
   | "-context"
+  | "encounter"
+  | "-encounter"
   | "entry"
   | "-entry"
   | "period"
@@ -8615,6 +10279,342 @@ class ResourceSearchBuilderConceptMap extends BaseResourceSearchBuilder<Resource
   }
 
   /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): A use context assigned to the capability statement
+* [CodeSystem](codesystem.html): A use context assigned to the code system
+* [CompartmentDefinition](compartmentdefinition.html): A use context assigned to the compartment definition
+* [ConceptMap](conceptmap.html): A use context assigned to the concept map
+* [GraphDefinition](graphdefinition.html): A use context assigned to the graph definition
+* [ImplementationGuide](implementationguide.html): A use context assigned to the implementation guide
+* [MessageDefinition](messagedefinition.html): A use context assigned to the message definition
+* [NamingSystem](namingsystem.html): A use context assigned to the naming system
+* [OperationDefinition](operationdefinition.html): A use context assigned to the operation definition
+* [SearchParameter](searchparameter.html): A use context assigned to the search parameter
+* [StructureDefinition](structuredefinition.html): A use context assigned to the structure definition
+* [StructureMap](structuremap.html): A use context assigned to the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): A use context assigned to the terminology capabilities
+* [ValueSet](valueset.html): A use context assigned to the value set
+
+    */
+  context(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderConceptMap {
+    this.builder.token("context", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): A quantity- or range-valued use context assigned to the capability statement
+* [CodeSystem](codesystem.html): A quantity- or range-valued use context assigned to the code system
+* [CompartmentDefinition](compartmentdefinition.html): A quantity- or range-valued use context assigned to the compartment definition
+* [ConceptMap](conceptmap.html): A quantity- or range-valued use context assigned to the concept map
+* [GraphDefinition](graphdefinition.html): A quantity- or range-valued use context assigned to the graph definition
+* [ImplementationGuide](implementationguide.html): A quantity- or range-valued use context assigned to the implementation guide
+* [MessageDefinition](messagedefinition.html): A quantity- or range-valued use context assigned to the message definition
+* [NamingSystem](namingsystem.html): A quantity- or range-valued use context assigned to the naming system
+* [OperationDefinition](operationdefinition.html): A quantity- or range-valued use context assigned to the operation definition
+* [SearchParameter](searchparameter.html): A quantity- or range-valued use context assigned to the search parameter
+* [StructureDefinition](structuredefinition.html): A quantity- or range-valued use context assigned to the structure definition
+* [StructureMap](structuremap.html): A quantity- or range-valued use context assigned to the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): A quantity- or range-valued use context assigned to the terminology capabilities
+* [ValueSet](valueset.html): A quantity- or range-valued use context assigned to the value set
+
+    */
+  contextquantity(
+    number: Parameters<FhirSearchBuilder["quantity"]>[1],
+    prefix?: Prefix | null | undefined
+  ): ResourceSearchBuilderConceptMap {
+    this.builder.quantity("context-quantity", number, prefix);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): A type of use context assigned to the capability statement
+* [CodeSystem](codesystem.html): A type of use context assigned to the code system
+* [CompartmentDefinition](compartmentdefinition.html): A type of use context assigned to the compartment definition
+* [ConceptMap](conceptmap.html): A type of use context assigned to the concept map
+* [GraphDefinition](graphdefinition.html): A type of use context assigned to the graph definition
+* [ImplementationGuide](implementationguide.html): A type of use context assigned to the implementation guide
+* [MessageDefinition](messagedefinition.html): A type of use context assigned to the message definition
+* [NamingSystem](namingsystem.html): A type of use context assigned to the naming system
+* [OperationDefinition](operationdefinition.html): A type of use context assigned to the operation definition
+* [SearchParameter](searchparameter.html): A type of use context assigned to the search parameter
+* [StructureDefinition](structuredefinition.html): A type of use context assigned to the structure definition
+* [StructureMap](structuremap.html): A type of use context assigned to the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): A type of use context assigned to the terminology capabilities
+* [ValueSet](valueset.html): A type of use context assigned to the value set
+
+    */
+  contexttype(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderConceptMap {
+    this.builder.token("context-type", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): The capability statement publication date
+* [CodeSystem](codesystem.html): The code system publication date
+* [CompartmentDefinition](compartmentdefinition.html): The compartment definition publication date
+* [ConceptMap](conceptmap.html): The concept map publication date
+* [GraphDefinition](graphdefinition.html): The graph definition publication date
+* [ImplementationGuide](implementationguide.html): The implementation guide publication date
+* [MessageDefinition](messagedefinition.html): The message definition publication date
+* [NamingSystem](namingsystem.html): The naming system publication date
+* [OperationDefinition](operationdefinition.html): The operation definition publication date
+* [SearchParameter](searchparameter.html): The search parameter publication date
+* [StructureDefinition](structuredefinition.html): The structure definition publication date
+* [StructureMap](structuremap.html): The structure map publication date
+* [TerminologyCapabilities](terminologycapabilities.html): The terminology capabilities publication date
+* [ValueSet](valueset.html): The value set publication date
+
+    */
+  date(
+    value: Parameters<FhirSearchBuilder["date"]>[1],
+    prefix?: Prefix | null | undefined
+  ): ResourceSearchBuilderConceptMap {
+    this.builder.date("date", value, prefix);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): The description of the capability statement
+* [CodeSystem](codesystem.html): The description of the code system
+* [CompartmentDefinition](compartmentdefinition.html): The description of the compartment definition
+* [ConceptMap](conceptmap.html): The description of the concept map
+* [GraphDefinition](graphdefinition.html): The description of the graph definition
+* [ImplementationGuide](implementationguide.html): The description of the implementation guide
+* [MessageDefinition](messagedefinition.html): The description of the message definition
+* [NamingSystem](namingsystem.html): The description of the naming system
+* [OperationDefinition](operationdefinition.html): The description of the operation definition
+* [SearchParameter](searchparameter.html): The description of the search parameter
+* [StructureDefinition](structuredefinition.html): The description of the structure definition
+* [StructureMap](structuremap.html): The description of the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): The description of the terminology capabilities
+* [ValueSet](valueset.html): The description of the value set
+
+    */
+  description(
+    value: Parameters<FhirSearchBuilder["string"]>[1],
+    modifier?: StringModifier | null | undefined
+  ): ResourceSearchBuilderConceptMap {
+    this.builder.string("description", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): Intended jurisdiction for the capability statement
+* [CodeSystem](codesystem.html): Intended jurisdiction for the code system
+* [ConceptMap](conceptmap.html): Intended jurisdiction for the concept map
+* [GraphDefinition](graphdefinition.html): Intended jurisdiction for the graph definition
+* [ImplementationGuide](implementationguide.html): Intended jurisdiction for the implementation guide
+* [MessageDefinition](messagedefinition.html): Intended jurisdiction for the message definition
+* [NamingSystem](namingsystem.html): Intended jurisdiction for the naming system
+* [OperationDefinition](operationdefinition.html): Intended jurisdiction for the operation definition
+* [SearchParameter](searchparameter.html): Intended jurisdiction for the search parameter
+* [StructureDefinition](structuredefinition.html): Intended jurisdiction for the structure definition
+* [StructureMap](structuremap.html): Intended jurisdiction for the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): Intended jurisdiction for the terminology capabilities
+* [ValueSet](valueset.html): Intended jurisdiction for the value set
+
+    */
+  jurisdiction(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderConceptMap {
+    this.builder.token("jurisdiction", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): Computationally friendly name of the capability statement
+* [CodeSystem](codesystem.html): Computationally friendly name of the code system
+* [CompartmentDefinition](compartmentdefinition.html): Computationally friendly name of the compartment definition
+* [ConceptMap](conceptmap.html): Computationally friendly name of the concept map
+* [GraphDefinition](graphdefinition.html): Computationally friendly name of the graph definition
+* [ImplementationGuide](implementationguide.html): Computationally friendly name of the implementation guide
+* [MessageDefinition](messagedefinition.html): Computationally friendly name of the message definition
+* [NamingSystem](namingsystem.html): Computationally friendly name of the naming system
+* [OperationDefinition](operationdefinition.html): Computationally friendly name of the operation definition
+* [SearchParameter](searchparameter.html): Computationally friendly name of the search parameter
+* [StructureDefinition](structuredefinition.html): Computationally friendly name of the structure definition
+* [StructureMap](structuremap.html): Computationally friendly name of the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): Computationally friendly name of the terminology capabilities
+* [ValueSet](valueset.html): Computationally friendly name of the value set
+
+    */
+  name(
+    value: Parameters<FhirSearchBuilder["string"]>[1],
+    modifier?: StringModifier | null | undefined
+  ): ResourceSearchBuilderConceptMap {
+    this.builder.string("name", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): Name of the publisher of the capability statement
+* [CodeSystem](codesystem.html): Name of the publisher of the code system
+* [CompartmentDefinition](compartmentdefinition.html): Name of the publisher of the compartment definition
+* [ConceptMap](conceptmap.html): Name of the publisher of the concept map
+* [GraphDefinition](graphdefinition.html): Name of the publisher of the graph definition
+* [ImplementationGuide](implementationguide.html): Name of the publisher of the implementation guide
+* [MessageDefinition](messagedefinition.html): Name of the publisher of the message definition
+* [NamingSystem](namingsystem.html): Name of the publisher of the naming system
+* [OperationDefinition](operationdefinition.html): Name of the publisher of the operation definition
+* [SearchParameter](searchparameter.html): Name of the publisher of the search parameter
+* [StructureDefinition](structuredefinition.html): Name of the publisher of the structure definition
+* [StructureMap](structuremap.html): Name of the publisher of the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): Name of the publisher of the terminology capabilities
+* [ValueSet](valueset.html): Name of the publisher of the value set
+
+    */
+  publisher(
+    value: Parameters<FhirSearchBuilder["string"]>[1],
+    modifier?: StringModifier | null | undefined
+  ): ResourceSearchBuilderConceptMap {
+    this.builder.string("publisher", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): The current status of the capability statement
+* [CodeSystem](codesystem.html): The current status of the code system
+* [CompartmentDefinition](compartmentdefinition.html): The current status of the compartment definition
+* [ConceptMap](conceptmap.html): The current status of the concept map
+* [GraphDefinition](graphdefinition.html): The current status of the graph definition
+* [ImplementationGuide](implementationguide.html): The current status of the implementation guide
+* [MessageDefinition](messagedefinition.html): The current status of the message definition
+* [NamingSystem](namingsystem.html): The current status of the naming system
+* [OperationDefinition](operationdefinition.html): The current status of the operation definition
+* [SearchParameter](searchparameter.html): The current status of the search parameter
+* [StructureDefinition](structuredefinition.html): The current status of the structure definition
+* [StructureMap](structuremap.html): The current status of the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): The current status of the terminology capabilities
+* [ValueSet](valueset.html): The current status of the value set
+
+    */
+  status(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderConceptMap {
+    this.builder.token("status", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): The human-friendly name of the capability statement
+* [CodeSystem](codesystem.html): The human-friendly name of the code system
+* [ConceptMap](conceptmap.html): The human-friendly name of the concept map
+* [ImplementationGuide](implementationguide.html): The human-friendly name of the implementation guide
+* [MessageDefinition](messagedefinition.html): The human-friendly name of the message definition
+* [OperationDefinition](operationdefinition.html): The human-friendly name of the operation definition
+* [StructureDefinition](structuredefinition.html): The human-friendly name of the structure definition
+* [StructureMap](structuremap.html): The human-friendly name of the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): The human-friendly name of the terminology capabilities
+* [ValueSet](valueset.html): The human-friendly name of the value set
+
+    */
+  title(
+    value: Parameters<FhirSearchBuilder["string"]>[1],
+    modifier?: StringModifier | null | undefined
+  ): ResourceSearchBuilderConceptMap {
+    this.builder.string("title", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): The uri that identifies the capability statement
+* [CodeSystem](codesystem.html): The uri that identifies the code system
+* [CompartmentDefinition](compartmentdefinition.html): The uri that identifies the compartment definition
+* [ConceptMap](conceptmap.html): The uri that identifies the concept map
+* [GraphDefinition](graphdefinition.html): The uri that identifies the graph definition
+* [ImplementationGuide](implementationguide.html): The uri that identifies the implementation guide
+* [MessageDefinition](messagedefinition.html): The uri that identifies the message definition
+* [OperationDefinition](operationdefinition.html): The uri that identifies the operation definition
+* [SearchParameter](searchparameter.html): The uri that identifies the search parameter
+* [StructureDefinition](structuredefinition.html): The uri that identifies the structure definition
+* [StructureMap](structuremap.html): The uri that identifies the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): The uri that identifies the terminology capabilities
+* [ValueSet](valueset.html): The uri that identifies the value set
+
+    */
+  url(
+    value: Parameters<FhirSearchBuilder["uri"]>[1],
+    modifier?: UriModifier | null | undefined
+  ): ResourceSearchBuilderConceptMap {
+    this.builder.uri("url", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): The business version of the capability statement
+* [CodeSystem](codesystem.html): The business version of the code system
+* [CompartmentDefinition](compartmentdefinition.html): The business version of the compartment definition
+* [ConceptMap](conceptmap.html): The business version of the concept map
+* [GraphDefinition](graphdefinition.html): The business version of the graph definition
+* [ImplementationGuide](implementationguide.html): The business version of the implementation guide
+* [MessageDefinition](messagedefinition.html): The business version of the message definition
+* [OperationDefinition](operationdefinition.html): The business version of the operation definition
+* [SearchParameter](searchparameter.html): The business version of the search parameter
+* [StructureDefinition](structuredefinition.html): The business version of the structure definition
+* [StructureMap](structuremap.html): The business version of the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): The business version of the terminology capabilities
+* [ValueSet](valueset.html): The business version of the value set
+
+    */
+  version(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderConceptMap {
+    this.builder.token("version", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CodeSystem](codesystem.html): External identifier for the code system
+* [ConceptMap](conceptmap.html): External identifier for the concept map
+* [MessageDefinition](messagedefinition.html): External identifier for the message definition
+* [StructureDefinition](structuredefinition.html): External identifier for the structure definition
+* [StructureMap](structuremap.html): External identifier for the structure map
+* [ValueSet](valueset.html): External identifier for the value set
+
+    */
+  identifier(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderConceptMap {
+    this.builder.token("identifier", value, modifier);
+    return this;
+  }
+
+  /**
    * Reference to property mapping depends on
    */
   dependson(
@@ -8734,31 +10734,35 @@ class ResourceSearchBuilderConceptMap extends BaseResourceSearchBuilder<Resource
     this.builder.reference("target-uri", id, modifier);
     return this;
   }
-
-  /**
-   * The human-friendly name of the concept map
-   */
-  title(
-    value: Parameters<FhirSearchBuilder["string"]>[1],
-    modifier?: StringModifier | null | undefined
-  ): ResourceSearchBuilderConceptMap {
-    this.builder.string("title", value, modifier);
-    return this;
-  }
-
-  /**
-   * The uri that identifies the concept map
-   */
-  url(
-    value: Parameters<FhirSearchBuilder["uri"]>[1],
-    modifier?: UriModifier | null | undefined
-  ): ResourceSearchBuilderConceptMap {
-    this.builder.uri("url", value, modifier);
-    return this;
-  }
 }
 
 export type SortOrderConceptMap =
+  | "context"
+  | "-context"
+  | "context-quantity"
+  | "-context-quantity"
+  | "context-type"
+  | "-context-type"
+  | "date"
+  | "-date"
+  | "description"
+  | "-description"
+  | "jurisdiction"
+  | "-jurisdiction"
+  | "name"
+  | "-name"
+  | "publisher"
+  | "-publisher"
+  | "status"
+  | "-status"
+  | "title"
+  | "-title"
+  | "url"
+  | "-url"
+  | "version"
+  | "-version"
+  | "identifier"
+  | "-identifier"
   | "dependson"
   | "-dependson"
   | "other"
@@ -8780,11 +10784,7 @@ export type SortOrderConceptMap =
   | "target-system"
   | "-target-system"
   | "target-uri"
-  | "-target-uri"
-  | "title"
-  | "-title"
-  | "url"
-  | "-url";
+  | "-target-uri";
 
 class ResourceSearchBuilderCondition extends BaseResourceSearchBuilder<ResourceSearchBuilderCondition> {
   readonly resourceType = "Condition";
@@ -8945,6 +10945,121 @@ class ResourceSearchBuilderCondition extends BaseResourceSearchBuilder<ResourceS
   }
 
   /**
+    * Multiple Resources: 
+
+* [AllergyIntolerance](allergyintolerance.html): Code that identifies the allergy or intolerance
+* [Condition](condition.html): Code for the condition
+* [DeviceRequest](devicerequest.html): Code for what is being requested/ordered
+* [DiagnosticReport](diagnosticreport.html): The code for the report, as opposed to codes for the atomic results, which are the names on the observation resource referred to from the result
+* [FamilyMemberHistory](familymemberhistory.html): A search by a condition code
+* [List](list.html): What the purpose of this list is
+* [Medication](medication.html): Returns medications for a specific code
+* [MedicationAdministration](medicationadministration.html): Return administrations of this medication code
+* [MedicationDispense](medicationdispense.html): Returns dispenses of this medicine code
+* [MedicationRequest](medicationrequest.html): Return prescriptions of this medication code
+* [MedicationStatement](medicationstatement.html): Return statements of this medication code
+* [Observation](observation.html): The code of the observation type
+* [Procedure](procedure.html): A code to identify a  procedure
+* [ServiceRequest](servicerequest.html): What is being requested/ordered
+
+    */
+  code(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderCondition {
+    this.builder.token("code", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [AllergyIntolerance](allergyintolerance.html): External ids for this item
+* [CarePlan](careplan.html): External Ids for this plan
+* [CareTeam](careteam.html): External Ids for this team
+* [Composition](composition.html): Version-independent identifier for the Composition
+* [Condition](condition.html): A unique identifier of the condition record
+* [Consent](consent.html): Identifier for this record (external references)
+* [DetectedIssue](detectedissue.html): Unique id for the detected issue
+* [DeviceRequest](devicerequest.html): Business identifier for request/order
+* [DiagnosticReport](diagnosticreport.html): An identifier for the report
+* [DocumentManifest](documentmanifest.html): Unique Identifier for the set of documents
+* [DocumentReference](documentreference.html): Master Version Specific Identifier
+* [Encounter](encounter.html): Identifier(s) by which this encounter is known
+* [EpisodeOfCare](episodeofcare.html): Business Identifier(s) relevant for this EpisodeOfCare
+* [FamilyMemberHistory](familymemberhistory.html): A search by a record identifier
+* [Goal](goal.html): External Ids for this goal
+* [ImagingStudy](imagingstudy.html): Identifiers for the Study, such as DICOM Study Instance UID and Accession number
+* [Immunization](immunization.html): Business identifier
+* [List](list.html): Business identifier
+* [MedicationAdministration](medicationadministration.html): Return administrations with this external identifier
+* [MedicationDispense](medicationdispense.html): Returns dispenses with this external identifier
+* [MedicationRequest](medicationrequest.html): Return prescriptions with this external identifier
+* [MedicationStatement](medicationstatement.html): Return statements with this external identifier
+* [NutritionOrder](nutritionorder.html): Return nutrition orders with this external identifier
+* [Observation](observation.html): The unique id for a particular observation
+* [Procedure](procedure.html): A unique identifier for a procedure
+* [RiskAssessment](riskassessment.html): Unique identifier for the assessment
+* [ServiceRequest](servicerequest.html): Identifiers assigned to this order
+* [SupplyDelivery](supplydelivery.html): External identifier
+* [SupplyRequest](supplyrequest.html): Business Identifier for SupplyRequest
+* [VisionPrescription](visionprescription.html): Return prescriptions with this external identifier
+
+    */
+  identifier(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderCondition {
+    this.builder.token("identifier", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [AllergyIntolerance](allergyintolerance.html): Who the sensitivity is for
+* [CarePlan](careplan.html): Who the care plan is for
+* [CareTeam](careteam.html): Who care team is for
+* [ClinicalImpression](clinicalimpression.html): Patient or group assessed
+* [Composition](composition.html): Who and/or what the composition is about
+* [Condition](condition.html): Who has the condition?
+* [Consent](consent.html): Who the consent applies to
+* [DetectedIssue](detectedissue.html): Associated patient
+* [DeviceRequest](devicerequest.html): Individual the service is ordered for
+* [DeviceUseStatement](deviceusestatement.html): Search by subject - a patient
+* [DiagnosticReport](diagnosticreport.html): The subject of the report if a patient
+* [DocumentManifest](documentmanifest.html): The subject of the set of documents
+* [DocumentReference](documentreference.html): Who/what is the subject of the document
+* [Encounter](encounter.html): The patient or group present at the encounter
+* [EpisodeOfCare](episodeofcare.html): The patient who is the focus of this episode of care
+* [FamilyMemberHistory](familymemberhistory.html): The identity of a subject to list family member history items for
+* [Flag](flag.html): The identity of a subject to list flags for
+* [Goal](goal.html): Who this goal is intended for
+* [ImagingStudy](imagingstudy.html): Who the study is about
+* [Immunization](immunization.html): The patient for the vaccination record
+* [List](list.html): If all resources have the same subject
+* [MedicationAdministration](medicationadministration.html): The identity of a patient to list administrations  for
+* [MedicationDispense](medicationdispense.html): The identity of a patient to list dispenses  for
+* [MedicationRequest](medicationrequest.html): Returns prescriptions for a specific patient
+* [MedicationStatement](medicationstatement.html): Returns statements for a specific patient.
+* [NutritionOrder](nutritionorder.html): The identity of the person who requires the diet, formula or nutritional supplement
+* [Observation](observation.html): The subject that the observation is about (if patient)
+* [Procedure](procedure.html): Search by subject - a patient
+* [RiskAssessment](riskassessment.html): Who/what does assessment apply to?
+* [ServiceRequest](servicerequest.html): Search by subject - a patient
+* [SupplyDelivery](supplydelivery.html): Patient for whom the item is supplied
+* [VisionPrescription](visionprescription.html): The identity of a patient to list dispenses for
+
+    */
+  patient(
+    id: Parameters<FhirSearchBuilder["reference"]>[1],
+    modifier?: ":identifier" | ResourceType | null | undefined
+  ): ResourceSearchBuilderCondition {
+    this.builder.reference("patient", id, modifier);
+    return this;
+  }
+
+  /**
    * Abatement as age or age range
    */
   abatementage(
@@ -9022,17 +11137,6 @@ class ResourceSearchBuilderCondition extends BaseResourceSearchBuilder<ResourceS
   }
 
   /**
-   * Code for the condition
-   */
-  code(
-    value: Parameters<FhirSearchBuilder["token"]>[1],
-    modifier?: TokenModifier | null | undefined
-  ): ResourceSearchBuilderCondition {
-    this.builder.token("code", value, modifier);
-    return this;
-  }
-
-  /**
    * Encounter created as part of
    */
   encounter(
@@ -9099,17 +11203,6 @@ class ResourceSearchBuilderCondition extends BaseResourceSearchBuilder<ResourceS
   }
 
   /**
-   * Who has the condition?
-   */
-  patient(
-    id: Parameters<FhirSearchBuilder["reference"]>[1],
-    modifier?: ":identifier" | ResourceType | null | undefined
-  ): ResourceSearchBuilderCondition {
-    this.builder.reference("patient", id, modifier);
-    return this;
-  }
-
-  /**
    * Date record was first recorded
    */
   recordeddate(
@@ -9166,6 +11259,12 @@ class ResourceSearchBuilderCondition extends BaseResourceSearchBuilder<ResourceS
 }
 
 export type SortOrderCondition =
+  | "code"
+  | "-code"
+  | "identifier"
+  | "-identifier"
+  | "patient"
+  | "-patient"
   | "abatement-age"
   | "-abatement-age"
   | "abatement-date"
@@ -9180,8 +11279,6 @@ export type SortOrderCondition =
   | "-category"
   | "clinical-status"
   | "-clinical-status"
-  | "code"
-  | "-code"
   | "encounter"
   | "-encounter"
   | "evidence"
@@ -9194,8 +11291,6 @@ export type SortOrderCondition =
   | "-onset-date"
   | "onset-info"
   | "-onset-info"
-  | "patient"
-  | "-patient"
   | "recorded-date"
   | "-recorded-date"
   | "severity"
@@ -9366,6 +11461,124 @@ class ResourceSearchBuilderConsent extends BaseResourceSearchBuilder<ResourceSea
   }
 
   /**
+    * Multiple Resources: 
+
+* [AllergyIntolerance](allergyintolerance.html): Date first version of the resource instance was recorded
+* [CarePlan](careplan.html): Time period plan covers
+* [CareTeam](careteam.html): Time period team covers
+* [ClinicalImpression](clinicalimpression.html): When the assessment was documented
+* [Composition](composition.html): Composition editing time
+* [Consent](consent.html): When this Consent was created or indexed
+* [DiagnosticReport](diagnosticreport.html): The clinically relevant time of the report
+* [Encounter](encounter.html): A date within the period the Encounter lasted
+* [EpisodeOfCare](episodeofcare.html): The provided date search value falls within the episode of care's period
+* [FamilyMemberHistory](familymemberhistory.html): When history was recorded or last updated
+* [Flag](flag.html): Time period when flag is active
+* [Immunization](immunization.html): Vaccination  (non)-Administration Date
+* [List](list.html): When the list was prepared
+* [Observation](observation.html): Obtained date/time. If the obtained element is a period, a date that falls in the period
+* [Procedure](procedure.html): When the procedure was performed
+* [RiskAssessment](riskassessment.html): When was assessment made?
+* [SupplyRequest](supplyrequest.html): When the request was made
+
+    */
+  date(
+    value: Parameters<FhirSearchBuilder["date"]>[1],
+    prefix?: Prefix | null | undefined
+  ): ResourceSearchBuilderConsent {
+    this.builder.date("date", value, prefix);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [AllergyIntolerance](allergyintolerance.html): External ids for this item
+* [CarePlan](careplan.html): External Ids for this plan
+* [CareTeam](careteam.html): External Ids for this team
+* [Composition](composition.html): Version-independent identifier for the Composition
+* [Condition](condition.html): A unique identifier of the condition record
+* [Consent](consent.html): Identifier for this record (external references)
+* [DetectedIssue](detectedissue.html): Unique id for the detected issue
+* [DeviceRequest](devicerequest.html): Business identifier for request/order
+* [DiagnosticReport](diagnosticreport.html): An identifier for the report
+* [DocumentManifest](documentmanifest.html): Unique Identifier for the set of documents
+* [DocumentReference](documentreference.html): Master Version Specific Identifier
+* [Encounter](encounter.html): Identifier(s) by which this encounter is known
+* [EpisodeOfCare](episodeofcare.html): Business Identifier(s) relevant for this EpisodeOfCare
+* [FamilyMemberHistory](familymemberhistory.html): A search by a record identifier
+* [Goal](goal.html): External Ids for this goal
+* [ImagingStudy](imagingstudy.html): Identifiers for the Study, such as DICOM Study Instance UID and Accession number
+* [Immunization](immunization.html): Business identifier
+* [List](list.html): Business identifier
+* [MedicationAdministration](medicationadministration.html): Return administrations with this external identifier
+* [MedicationDispense](medicationdispense.html): Returns dispenses with this external identifier
+* [MedicationRequest](medicationrequest.html): Return prescriptions with this external identifier
+* [MedicationStatement](medicationstatement.html): Return statements with this external identifier
+* [NutritionOrder](nutritionorder.html): Return nutrition orders with this external identifier
+* [Observation](observation.html): The unique id for a particular observation
+* [Procedure](procedure.html): A unique identifier for a procedure
+* [RiskAssessment](riskassessment.html): Unique identifier for the assessment
+* [ServiceRequest](servicerequest.html): Identifiers assigned to this order
+* [SupplyDelivery](supplydelivery.html): External identifier
+* [SupplyRequest](supplyrequest.html): Business Identifier for SupplyRequest
+* [VisionPrescription](visionprescription.html): Return prescriptions with this external identifier
+
+    */
+  identifier(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderConsent {
+    this.builder.token("identifier", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [AllergyIntolerance](allergyintolerance.html): Who the sensitivity is for
+* [CarePlan](careplan.html): Who the care plan is for
+* [CareTeam](careteam.html): Who care team is for
+* [ClinicalImpression](clinicalimpression.html): Patient or group assessed
+* [Composition](composition.html): Who and/or what the composition is about
+* [Condition](condition.html): Who has the condition?
+* [Consent](consent.html): Who the consent applies to
+* [DetectedIssue](detectedissue.html): Associated patient
+* [DeviceRequest](devicerequest.html): Individual the service is ordered for
+* [DeviceUseStatement](deviceusestatement.html): Search by subject - a patient
+* [DiagnosticReport](diagnosticreport.html): The subject of the report if a patient
+* [DocumentManifest](documentmanifest.html): The subject of the set of documents
+* [DocumentReference](documentreference.html): Who/what is the subject of the document
+* [Encounter](encounter.html): The patient or group present at the encounter
+* [EpisodeOfCare](episodeofcare.html): The patient who is the focus of this episode of care
+* [FamilyMemberHistory](familymemberhistory.html): The identity of a subject to list family member history items for
+* [Flag](flag.html): The identity of a subject to list flags for
+* [Goal](goal.html): Who this goal is intended for
+* [ImagingStudy](imagingstudy.html): Who the study is about
+* [Immunization](immunization.html): The patient for the vaccination record
+* [List](list.html): If all resources have the same subject
+* [MedicationAdministration](medicationadministration.html): The identity of a patient to list administrations  for
+* [MedicationDispense](medicationdispense.html): The identity of a patient to list dispenses  for
+* [MedicationRequest](medicationrequest.html): Returns prescriptions for a specific patient
+* [MedicationStatement](medicationstatement.html): Returns statements for a specific patient.
+* [NutritionOrder](nutritionorder.html): The identity of the person who requires the diet, formula or nutritional supplement
+* [Observation](observation.html): The subject that the observation is about (if patient)
+* [Procedure](procedure.html): Search by subject - a patient
+* [RiskAssessment](riskassessment.html): Who/what does assessment apply to?
+* [ServiceRequest](servicerequest.html): Search by subject - a patient
+* [SupplyDelivery](supplydelivery.html): Patient for whom the item is supplied
+* [VisionPrescription](visionprescription.html): The identity of a patient to list dispenses for
+
+    */
+  patient(
+    id: Parameters<FhirSearchBuilder["reference"]>[1],
+    modifier?: ":identifier" | ResourceType | null | undefined
+  ): ResourceSearchBuilderConsent {
+    this.builder.reference("patient", id, modifier);
+    return this;
+  }
+
+  /**
    * Actions controlled by this rule
    */
   action(
@@ -9499,6 +11712,12 @@ class ResourceSearchBuilderConsent extends BaseResourceSearchBuilder<ResourceSea
 }
 
 export type SortOrderConsent =
+  | "date"
+  | "-date"
+  | "identifier"
+  | "-identifier"
+  | "patient"
+  | "-patient"
   | "action"
   | "-action"
   | "actor"
@@ -10812,6 +13031,94 @@ class ResourceSearchBuilderDetectedIssue extends BaseResourceSearchBuilder<Resou
   }
 
   /**
+    * Multiple Resources: 
+
+* [AllergyIntolerance](allergyintolerance.html): External ids for this item
+* [CarePlan](careplan.html): External Ids for this plan
+* [CareTeam](careteam.html): External Ids for this team
+* [Composition](composition.html): Version-independent identifier for the Composition
+* [Condition](condition.html): A unique identifier of the condition record
+* [Consent](consent.html): Identifier for this record (external references)
+* [DetectedIssue](detectedissue.html): Unique id for the detected issue
+* [DeviceRequest](devicerequest.html): Business identifier for request/order
+* [DiagnosticReport](diagnosticreport.html): An identifier for the report
+* [DocumentManifest](documentmanifest.html): Unique Identifier for the set of documents
+* [DocumentReference](documentreference.html): Master Version Specific Identifier
+* [Encounter](encounter.html): Identifier(s) by which this encounter is known
+* [EpisodeOfCare](episodeofcare.html): Business Identifier(s) relevant for this EpisodeOfCare
+* [FamilyMemberHistory](familymemberhistory.html): A search by a record identifier
+* [Goal](goal.html): External Ids for this goal
+* [ImagingStudy](imagingstudy.html): Identifiers for the Study, such as DICOM Study Instance UID and Accession number
+* [Immunization](immunization.html): Business identifier
+* [List](list.html): Business identifier
+* [MedicationAdministration](medicationadministration.html): Return administrations with this external identifier
+* [MedicationDispense](medicationdispense.html): Returns dispenses with this external identifier
+* [MedicationRequest](medicationrequest.html): Return prescriptions with this external identifier
+* [MedicationStatement](medicationstatement.html): Return statements with this external identifier
+* [NutritionOrder](nutritionorder.html): Return nutrition orders with this external identifier
+* [Observation](observation.html): The unique id for a particular observation
+* [Procedure](procedure.html): A unique identifier for a procedure
+* [RiskAssessment](riskassessment.html): Unique identifier for the assessment
+* [ServiceRequest](servicerequest.html): Identifiers assigned to this order
+* [SupplyDelivery](supplydelivery.html): External identifier
+* [SupplyRequest](supplyrequest.html): Business Identifier for SupplyRequest
+* [VisionPrescription](visionprescription.html): Return prescriptions with this external identifier
+
+    */
+  identifier(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderDetectedIssue {
+    this.builder.token("identifier", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [AllergyIntolerance](allergyintolerance.html): Who the sensitivity is for
+* [CarePlan](careplan.html): Who the care plan is for
+* [CareTeam](careteam.html): Who care team is for
+* [ClinicalImpression](clinicalimpression.html): Patient or group assessed
+* [Composition](composition.html): Who and/or what the composition is about
+* [Condition](condition.html): Who has the condition?
+* [Consent](consent.html): Who the consent applies to
+* [DetectedIssue](detectedissue.html): Associated patient
+* [DeviceRequest](devicerequest.html): Individual the service is ordered for
+* [DeviceUseStatement](deviceusestatement.html): Search by subject - a patient
+* [DiagnosticReport](diagnosticreport.html): The subject of the report if a patient
+* [DocumentManifest](documentmanifest.html): The subject of the set of documents
+* [DocumentReference](documentreference.html): Who/what is the subject of the document
+* [Encounter](encounter.html): The patient or group present at the encounter
+* [EpisodeOfCare](episodeofcare.html): The patient who is the focus of this episode of care
+* [FamilyMemberHistory](familymemberhistory.html): The identity of a subject to list family member history items for
+* [Flag](flag.html): The identity of a subject to list flags for
+* [Goal](goal.html): Who this goal is intended for
+* [ImagingStudy](imagingstudy.html): Who the study is about
+* [Immunization](immunization.html): The patient for the vaccination record
+* [List](list.html): If all resources have the same subject
+* [MedicationAdministration](medicationadministration.html): The identity of a patient to list administrations  for
+* [MedicationDispense](medicationdispense.html): The identity of a patient to list dispenses  for
+* [MedicationRequest](medicationrequest.html): Returns prescriptions for a specific patient
+* [MedicationStatement](medicationstatement.html): Returns statements for a specific patient.
+* [NutritionOrder](nutritionorder.html): The identity of the person who requires the diet, formula or nutritional supplement
+* [Observation](observation.html): The subject that the observation is about (if patient)
+* [Procedure](procedure.html): Search by subject - a patient
+* [RiskAssessment](riskassessment.html): Who/what does assessment apply to?
+* [ServiceRequest](servicerequest.html): Search by subject - a patient
+* [SupplyDelivery](supplydelivery.html): Patient for whom the item is supplied
+* [VisionPrescription](visionprescription.html): The identity of a patient to list dispenses for
+
+    */
+  patient(
+    id: Parameters<FhirSearchBuilder["reference"]>[1],
+    modifier?: ":identifier" | ResourceType | null | undefined
+  ): ResourceSearchBuilderDetectedIssue {
+    this.builder.reference("patient", id, modifier);
+    return this;
+  }
+
+  /**
    * The provider or device that identified the issue
    */
   author(
@@ -10857,6 +13164,10 @@ class ResourceSearchBuilderDetectedIssue extends BaseResourceSearchBuilder<Resou
 }
 
 export type SortOrderDetectedIssue =
+  | "identifier"
+  | "-identifier"
+  | "patient"
+  | "-patient"
   | "author"
   | "-author"
   | "code"
@@ -11768,6 +14079,146 @@ class ResourceSearchBuilderDeviceRequest extends BaseResourceSearchBuilder<Resou
   }
 
   /**
+    * Multiple Resources: 
+
+* [AllergyIntolerance](allergyintolerance.html): Code that identifies the allergy or intolerance
+* [Condition](condition.html): Code for the condition
+* [DeviceRequest](devicerequest.html): Code for what is being requested/ordered
+* [DiagnosticReport](diagnosticreport.html): The code for the report, as opposed to codes for the atomic results, which are the names on the observation resource referred to from the result
+* [FamilyMemberHistory](familymemberhistory.html): A search by a condition code
+* [List](list.html): What the purpose of this list is
+* [Medication](medication.html): Returns medications for a specific code
+* [MedicationAdministration](medicationadministration.html): Return administrations of this medication code
+* [MedicationDispense](medicationdispense.html): Returns dispenses of this medicine code
+* [MedicationRequest](medicationrequest.html): Return prescriptions of this medication code
+* [MedicationStatement](medicationstatement.html): Return statements of this medication code
+* [Observation](observation.html): The code of the observation type
+* [Procedure](procedure.html): A code to identify a  procedure
+* [ServiceRequest](servicerequest.html): What is being requested/ordered
+
+    */
+  code(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderDeviceRequest {
+    this.builder.token("code", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [AllergyIntolerance](allergyintolerance.html): External ids for this item
+* [CarePlan](careplan.html): External Ids for this plan
+* [CareTeam](careteam.html): External Ids for this team
+* [Composition](composition.html): Version-independent identifier for the Composition
+* [Condition](condition.html): A unique identifier of the condition record
+* [Consent](consent.html): Identifier for this record (external references)
+* [DetectedIssue](detectedissue.html): Unique id for the detected issue
+* [DeviceRequest](devicerequest.html): Business identifier for request/order
+* [DiagnosticReport](diagnosticreport.html): An identifier for the report
+* [DocumentManifest](documentmanifest.html): Unique Identifier for the set of documents
+* [DocumentReference](documentreference.html): Master Version Specific Identifier
+* [Encounter](encounter.html): Identifier(s) by which this encounter is known
+* [EpisodeOfCare](episodeofcare.html): Business Identifier(s) relevant for this EpisodeOfCare
+* [FamilyMemberHistory](familymemberhistory.html): A search by a record identifier
+* [Goal](goal.html): External Ids for this goal
+* [ImagingStudy](imagingstudy.html): Identifiers for the Study, such as DICOM Study Instance UID and Accession number
+* [Immunization](immunization.html): Business identifier
+* [List](list.html): Business identifier
+* [MedicationAdministration](medicationadministration.html): Return administrations with this external identifier
+* [MedicationDispense](medicationdispense.html): Returns dispenses with this external identifier
+* [MedicationRequest](medicationrequest.html): Return prescriptions with this external identifier
+* [MedicationStatement](medicationstatement.html): Return statements with this external identifier
+* [NutritionOrder](nutritionorder.html): Return nutrition orders with this external identifier
+* [Observation](observation.html): The unique id for a particular observation
+* [Procedure](procedure.html): A unique identifier for a procedure
+* [RiskAssessment](riskassessment.html): Unique identifier for the assessment
+* [ServiceRequest](servicerequest.html): Identifiers assigned to this order
+* [SupplyDelivery](supplydelivery.html): External identifier
+* [SupplyRequest](supplyrequest.html): Business Identifier for SupplyRequest
+* [VisionPrescription](visionprescription.html): Return prescriptions with this external identifier
+
+    */
+  identifier(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderDeviceRequest {
+    this.builder.token("identifier", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [AllergyIntolerance](allergyintolerance.html): Who the sensitivity is for
+* [CarePlan](careplan.html): Who the care plan is for
+* [CareTeam](careteam.html): Who care team is for
+* [ClinicalImpression](clinicalimpression.html): Patient or group assessed
+* [Composition](composition.html): Who and/or what the composition is about
+* [Condition](condition.html): Who has the condition?
+* [Consent](consent.html): Who the consent applies to
+* [DetectedIssue](detectedissue.html): Associated patient
+* [DeviceRequest](devicerequest.html): Individual the service is ordered for
+* [DeviceUseStatement](deviceusestatement.html): Search by subject - a patient
+* [DiagnosticReport](diagnosticreport.html): The subject of the report if a patient
+* [DocumentManifest](documentmanifest.html): The subject of the set of documents
+* [DocumentReference](documentreference.html): Who/what is the subject of the document
+* [Encounter](encounter.html): The patient or group present at the encounter
+* [EpisodeOfCare](episodeofcare.html): The patient who is the focus of this episode of care
+* [FamilyMemberHistory](familymemberhistory.html): The identity of a subject to list family member history items for
+* [Flag](flag.html): The identity of a subject to list flags for
+* [Goal](goal.html): Who this goal is intended for
+* [ImagingStudy](imagingstudy.html): Who the study is about
+* [Immunization](immunization.html): The patient for the vaccination record
+* [List](list.html): If all resources have the same subject
+* [MedicationAdministration](medicationadministration.html): The identity of a patient to list administrations  for
+* [MedicationDispense](medicationdispense.html): The identity of a patient to list dispenses  for
+* [MedicationRequest](medicationrequest.html): Returns prescriptions for a specific patient
+* [MedicationStatement](medicationstatement.html): Returns statements for a specific patient.
+* [NutritionOrder](nutritionorder.html): The identity of the person who requires the diet, formula or nutritional supplement
+* [Observation](observation.html): The subject that the observation is about (if patient)
+* [Procedure](procedure.html): Search by subject - a patient
+* [RiskAssessment](riskassessment.html): Who/what does assessment apply to?
+* [ServiceRequest](servicerequest.html): Search by subject - a patient
+* [SupplyDelivery](supplydelivery.html): Patient for whom the item is supplied
+* [VisionPrescription](visionprescription.html): The identity of a patient to list dispenses for
+
+    */
+  patient(
+    id: Parameters<FhirSearchBuilder["reference"]>[1],
+    modifier?: ":identifier" | ResourceType | null | undefined
+  ): ResourceSearchBuilderDeviceRequest {
+    this.builder.reference("patient", id, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [Composition](composition.html): Context of the Composition
+* [DeviceRequest](devicerequest.html): Encounter during which request was created
+* [DiagnosticReport](diagnosticreport.html): The Encounter when the order was made
+* [DocumentReference](documentreference.html): Context of the document  content
+* [Flag](flag.html): Alert relevant during encounter
+* [List](list.html): Context in which list created
+* [NutritionOrder](nutritionorder.html): Return nutrition orders with this encounter identifier
+* [Observation](observation.html): Encounter related to the observation
+* [Procedure](procedure.html): Encounter created as part of
+* [RiskAssessment](riskassessment.html): Where was assessment performed?
+* [ServiceRequest](servicerequest.html): An encounter in which this request is made
+* [VisionPrescription](visionprescription.html): Return prescriptions with this encounter identifier
+
+    */
+  encounter(
+    id: Parameters<FhirSearchBuilder["reference"]>[1],
+    modifier?: ":identifier" | ResourceType | null | undefined
+  ): ResourceSearchBuilderDeviceRequest {
+    this.builder.reference("encounter", id, modifier);
+    return this;
+  }
+
+  /**
    * When the request transitioned to being actionable
    */
   authoredon(
@@ -11923,6 +14374,14 @@ class ResourceSearchBuilderDeviceRequest extends BaseResourceSearchBuilder<Resou
 }
 
 export type SortOrderDeviceRequest =
+  | "code"
+  | "-code"
+  | "identifier"
+  | "-identifier"
+  | "patient"
+  | "-patient"
+  | "encounter"
+  | "-encounter"
   | "authored-on"
   | "-authored-on"
   | "based-on"
@@ -12111,6 +14570,51 @@ class ResourceSearchBuilderDeviceUseStatement extends BaseResourceSearchBuilder<
   }
 
   /**
+    * Multiple Resources: 
+
+* [AllergyIntolerance](allergyintolerance.html): Who the sensitivity is for
+* [CarePlan](careplan.html): Who the care plan is for
+* [CareTeam](careteam.html): Who care team is for
+* [ClinicalImpression](clinicalimpression.html): Patient or group assessed
+* [Composition](composition.html): Who and/or what the composition is about
+* [Condition](condition.html): Who has the condition?
+* [Consent](consent.html): Who the consent applies to
+* [DetectedIssue](detectedissue.html): Associated patient
+* [DeviceRequest](devicerequest.html): Individual the service is ordered for
+* [DeviceUseStatement](deviceusestatement.html): Search by subject - a patient
+* [DiagnosticReport](diagnosticreport.html): The subject of the report if a patient
+* [DocumentManifest](documentmanifest.html): The subject of the set of documents
+* [DocumentReference](documentreference.html): Who/what is the subject of the document
+* [Encounter](encounter.html): The patient or group present at the encounter
+* [EpisodeOfCare](episodeofcare.html): The patient who is the focus of this episode of care
+* [FamilyMemberHistory](familymemberhistory.html): The identity of a subject to list family member history items for
+* [Flag](flag.html): The identity of a subject to list flags for
+* [Goal](goal.html): Who this goal is intended for
+* [ImagingStudy](imagingstudy.html): Who the study is about
+* [Immunization](immunization.html): The patient for the vaccination record
+* [List](list.html): If all resources have the same subject
+* [MedicationAdministration](medicationadministration.html): The identity of a patient to list administrations  for
+* [MedicationDispense](medicationdispense.html): The identity of a patient to list dispenses  for
+* [MedicationRequest](medicationrequest.html): Returns prescriptions for a specific patient
+* [MedicationStatement](medicationstatement.html): Returns statements for a specific patient.
+* [NutritionOrder](nutritionorder.html): The identity of the person who requires the diet, formula or nutritional supplement
+* [Observation](observation.html): The subject that the observation is about (if patient)
+* [Procedure](procedure.html): Search by subject - a patient
+* [RiskAssessment](riskassessment.html): Who/what does assessment apply to?
+* [ServiceRequest](servicerequest.html): Search by subject - a patient
+* [SupplyDelivery](supplydelivery.html): Patient for whom the item is supplied
+* [VisionPrescription](visionprescription.html): The identity of a patient to list dispenses for
+
+    */
+  patient(
+    id: Parameters<FhirSearchBuilder["reference"]>[1],
+    modifier?: ":identifier" | ResourceType | null | undefined
+  ): ResourceSearchBuilderDeviceUseStatement {
+    this.builder.reference("patient", id, modifier);
+    return this;
+  }
+
+  /**
    * Search by device
    */
   device(
@@ -12145,6 +14649,8 @@ class ResourceSearchBuilderDeviceUseStatement extends BaseResourceSearchBuilder<
 }
 
 export type SortOrderDeviceUseStatement =
+  | "patient"
+  | "-patient"
   | "device"
   | "-device"
   | "identifier"
@@ -12311,6 +14817,176 @@ class ResourceSearchBuilderDiagnosticReport extends BaseResourceSearchBuilder<Re
   }
 
   /**
+    * Multiple Resources: 
+
+* [AllergyIntolerance](allergyintolerance.html): Code that identifies the allergy or intolerance
+* [Condition](condition.html): Code for the condition
+* [DeviceRequest](devicerequest.html): Code for what is being requested/ordered
+* [DiagnosticReport](diagnosticreport.html): The code for the report, as opposed to codes for the atomic results, which are the names on the observation resource referred to from the result
+* [FamilyMemberHistory](familymemberhistory.html): A search by a condition code
+* [List](list.html): What the purpose of this list is
+* [Medication](medication.html): Returns medications for a specific code
+* [MedicationAdministration](medicationadministration.html): Return administrations of this medication code
+* [MedicationDispense](medicationdispense.html): Returns dispenses of this medicine code
+* [MedicationRequest](medicationrequest.html): Return prescriptions of this medication code
+* [MedicationStatement](medicationstatement.html): Return statements of this medication code
+* [Observation](observation.html): The code of the observation type
+* [Procedure](procedure.html): A code to identify a  procedure
+* [ServiceRequest](servicerequest.html): What is being requested/ordered
+
+    */
+  code(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderDiagnosticReport {
+    this.builder.token("code", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [AllergyIntolerance](allergyintolerance.html): Date first version of the resource instance was recorded
+* [CarePlan](careplan.html): Time period plan covers
+* [CareTeam](careteam.html): Time period team covers
+* [ClinicalImpression](clinicalimpression.html): When the assessment was documented
+* [Composition](composition.html): Composition editing time
+* [Consent](consent.html): When this Consent was created or indexed
+* [DiagnosticReport](diagnosticreport.html): The clinically relevant time of the report
+* [Encounter](encounter.html): A date within the period the Encounter lasted
+* [EpisodeOfCare](episodeofcare.html): The provided date search value falls within the episode of care's period
+* [FamilyMemberHistory](familymemberhistory.html): When history was recorded or last updated
+* [Flag](flag.html): Time period when flag is active
+* [Immunization](immunization.html): Vaccination  (non)-Administration Date
+* [List](list.html): When the list was prepared
+* [Observation](observation.html): Obtained date/time. If the obtained element is a period, a date that falls in the period
+* [Procedure](procedure.html): When the procedure was performed
+* [RiskAssessment](riskassessment.html): When was assessment made?
+* [SupplyRequest](supplyrequest.html): When the request was made
+
+    */
+  date(
+    value: Parameters<FhirSearchBuilder["date"]>[1],
+    prefix?: Prefix | null | undefined
+  ): ResourceSearchBuilderDiagnosticReport {
+    this.builder.date("date", value, prefix);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [AllergyIntolerance](allergyintolerance.html): External ids for this item
+* [CarePlan](careplan.html): External Ids for this plan
+* [CareTeam](careteam.html): External Ids for this team
+* [Composition](composition.html): Version-independent identifier for the Composition
+* [Condition](condition.html): A unique identifier of the condition record
+* [Consent](consent.html): Identifier for this record (external references)
+* [DetectedIssue](detectedissue.html): Unique id for the detected issue
+* [DeviceRequest](devicerequest.html): Business identifier for request/order
+* [DiagnosticReport](diagnosticreport.html): An identifier for the report
+* [DocumentManifest](documentmanifest.html): Unique Identifier for the set of documents
+* [DocumentReference](documentreference.html): Master Version Specific Identifier
+* [Encounter](encounter.html): Identifier(s) by which this encounter is known
+* [EpisodeOfCare](episodeofcare.html): Business Identifier(s) relevant for this EpisodeOfCare
+* [FamilyMemberHistory](familymemberhistory.html): A search by a record identifier
+* [Goal](goal.html): External Ids for this goal
+* [ImagingStudy](imagingstudy.html): Identifiers for the Study, such as DICOM Study Instance UID and Accession number
+* [Immunization](immunization.html): Business identifier
+* [List](list.html): Business identifier
+* [MedicationAdministration](medicationadministration.html): Return administrations with this external identifier
+* [MedicationDispense](medicationdispense.html): Returns dispenses with this external identifier
+* [MedicationRequest](medicationrequest.html): Return prescriptions with this external identifier
+* [MedicationStatement](medicationstatement.html): Return statements with this external identifier
+* [NutritionOrder](nutritionorder.html): Return nutrition orders with this external identifier
+* [Observation](observation.html): The unique id for a particular observation
+* [Procedure](procedure.html): A unique identifier for a procedure
+* [RiskAssessment](riskassessment.html): Unique identifier for the assessment
+* [ServiceRequest](servicerequest.html): Identifiers assigned to this order
+* [SupplyDelivery](supplydelivery.html): External identifier
+* [SupplyRequest](supplyrequest.html): Business Identifier for SupplyRequest
+* [VisionPrescription](visionprescription.html): Return prescriptions with this external identifier
+
+    */
+  identifier(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderDiagnosticReport {
+    this.builder.token("identifier", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [AllergyIntolerance](allergyintolerance.html): Who the sensitivity is for
+* [CarePlan](careplan.html): Who the care plan is for
+* [CareTeam](careteam.html): Who care team is for
+* [ClinicalImpression](clinicalimpression.html): Patient or group assessed
+* [Composition](composition.html): Who and/or what the composition is about
+* [Condition](condition.html): Who has the condition?
+* [Consent](consent.html): Who the consent applies to
+* [DetectedIssue](detectedissue.html): Associated patient
+* [DeviceRequest](devicerequest.html): Individual the service is ordered for
+* [DeviceUseStatement](deviceusestatement.html): Search by subject - a patient
+* [DiagnosticReport](diagnosticreport.html): The subject of the report if a patient
+* [DocumentManifest](documentmanifest.html): The subject of the set of documents
+* [DocumentReference](documentreference.html): Who/what is the subject of the document
+* [Encounter](encounter.html): The patient or group present at the encounter
+* [EpisodeOfCare](episodeofcare.html): The patient who is the focus of this episode of care
+* [FamilyMemberHistory](familymemberhistory.html): The identity of a subject to list family member history items for
+* [Flag](flag.html): The identity of a subject to list flags for
+* [Goal](goal.html): Who this goal is intended for
+* [ImagingStudy](imagingstudy.html): Who the study is about
+* [Immunization](immunization.html): The patient for the vaccination record
+* [List](list.html): If all resources have the same subject
+* [MedicationAdministration](medicationadministration.html): The identity of a patient to list administrations  for
+* [MedicationDispense](medicationdispense.html): The identity of a patient to list dispenses  for
+* [MedicationRequest](medicationrequest.html): Returns prescriptions for a specific patient
+* [MedicationStatement](medicationstatement.html): Returns statements for a specific patient.
+* [NutritionOrder](nutritionorder.html): The identity of the person who requires the diet, formula or nutritional supplement
+* [Observation](observation.html): The subject that the observation is about (if patient)
+* [Procedure](procedure.html): Search by subject - a patient
+* [RiskAssessment](riskassessment.html): Who/what does assessment apply to?
+* [ServiceRequest](servicerequest.html): Search by subject - a patient
+* [SupplyDelivery](supplydelivery.html): Patient for whom the item is supplied
+* [VisionPrescription](visionprescription.html): The identity of a patient to list dispenses for
+
+    */
+  patient(
+    id: Parameters<FhirSearchBuilder["reference"]>[1],
+    modifier?: ":identifier" | ResourceType | null | undefined
+  ): ResourceSearchBuilderDiagnosticReport {
+    this.builder.reference("patient", id, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [Composition](composition.html): Context of the Composition
+* [DeviceRequest](devicerequest.html): Encounter during which request was created
+* [DiagnosticReport](diagnosticreport.html): The Encounter when the order was made
+* [DocumentReference](documentreference.html): Context of the document  content
+* [Flag](flag.html): Alert relevant during encounter
+* [List](list.html): Context in which list created
+* [NutritionOrder](nutritionorder.html): Return nutrition orders with this encounter identifier
+* [Observation](observation.html): Encounter related to the observation
+* [Procedure](procedure.html): Encounter created as part of
+* [RiskAssessment](riskassessment.html): Where was assessment performed?
+* [ServiceRequest](servicerequest.html): An encounter in which this request is made
+* [VisionPrescription](visionprescription.html): Return prescriptions with this encounter identifier
+
+    */
+  encounter(
+    id: Parameters<FhirSearchBuilder["reference"]>[1],
+    modifier?: ":identifier" | ResourceType | null | undefined
+  ): ResourceSearchBuilderDiagnosticReport {
+    this.builder.reference("encounter", id, modifier);
+    return this;
+  }
+
+  /**
    * Reference to the service request.
    */
   basedon(
@@ -12433,6 +15109,16 @@ class ResourceSearchBuilderDiagnosticReport extends BaseResourceSearchBuilder<Re
 }
 
 export type SortOrderDiagnosticReport =
+  | "code"
+  | "-code"
+  | "date"
+  | "-date"
+  | "identifier"
+  | "-identifier"
+  | "patient"
+  | "-patient"
+  | "encounter"
+  | "-encounter"
   | "based-on"
   | "-based-on"
   | "category"
@@ -12615,6 +15301,113 @@ class ResourceSearchBuilderDocumentManifest extends BaseResourceSearchBuilder<Re
   }
 
   /**
+    * Multiple Resources: 
+
+* [AllergyIntolerance](allergyintolerance.html): External ids for this item
+* [CarePlan](careplan.html): External Ids for this plan
+* [CareTeam](careteam.html): External Ids for this team
+* [Composition](composition.html): Version-independent identifier for the Composition
+* [Condition](condition.html): A unique identifier of the condition record
+* [Consent](consent.html): Identifier for this record (external references)
+* [DetectedIssue](detectedissue.html): Unique id for the detected issue
+* [DeviceRequest](devicerequest.html): Business identifier for request/order
+* [DiagnosticReport](diagnosticreport.html): An identifier for the report
+* [DocumentManifest](documentmanifest.html): Unique Identifier for the set of documents
+* [DocumentReference](documentreference.html): Master Version Specific Identifier
+* [Encounter](encounter.html): Identifier(s) by which this encounter is known
+* [EpisodeOfCare](episodeofcare.html): Business Identifier(s) relevant for this EpisodeOfCare
+* [FamilyMemberHistory](familymemberhistory.html): A search by a record identifier
+* [Goal](goal.html): External Ids for this goal
+* [ImagingStudy](imagingstudy.html): Identifiers for the Study, such as DICOM Study Instance UID and Accession number
+* [Immunization](immunization.html): Business identifier
+* [List](list.html): Business identifier
+* [MedicationAdministration](medicationadministration.html): Return administrations with this external identifier
+* [MedicationDispense](medicationdispense.html): Returns dispenses with this external identifier
+* [MedicationRequest](medicationrequest.html): Return prescriptions with this external identifier
+* [MedicationStatement](medicationstatement.html): Return statements with this external identifier
+* [NutritionOrder](nutritionorder.html): Return nutrition orders with this external identifier
+* [Observation](observation.html): The unique id for a particular observation
+* [Procedure](procedure.html): A unique identifier for a procedure
+* [RiskAssessment](riskassessment.html): Unique identifier for the assessment
+* [ServiceRequest](servicerequest.html): Identifiers assigned to this order
+* [SupplyDelivery](supplydelivery.html): External identifier
+* [SupplyRequest](supplyrequest.html): Business Identifier for SupplyRequest
+* [VisionPrescription](visionprescription.html): Return prescriptions with this external identifier
+
+    */
+  identifier(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderDocumentManifest {
+    this.builder.token("identifier", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [AllergyIntolerance](allergyintolerance.html): Who the sensitivity is for
+* [CarePlan](careplan.html): Who the care plan is for
+* [CareTeam](careteam.html): Who care team is for
+* [ClinicalImpression](clinicalimpression.html): Patient or group assessed
+* [Composition](composition.html): Who and/or what the composition is about
+* [Condition](condition.html): Who has the condition?
+* [Consent](consent.html): Who the consent applies to
+* [DetectedIssue](detectedissue.html): Associated patient
+* [DeviceRequest](devicerequest.html): Individual the service is ordered for
+* [DeviceUseStatement](deviceusestatement.html): Search by subject - a patient
+* [DiagnosticReport](diagnosticreport.html): The subject of the report if a patient
+* [DocumentManifest](documentmanifest.html): The subject of the set of documents
+* [DocumentReference](documentreference.html): Who/what is the subject of the document
+* [Encounter](encounter.html): The patient or group present at the encounter
+* [EpisodeOfCare](episodeofcare.html): The patient who is the focus of this episode of care
+* [FamilyMemberHistory](familymemberhistory.html): The identity of a subject to list family member history items for
+* [Flag](flag.html): The identity of a subject to list flags for
+* [Goal](goal.html): Who this goal is intended for
+* [ImagingStudy](imagingstudy.html): Who the study is about
+* [Immunization](immunization.html): The patient for the vaccination record
+* [List](list.html): If all resources have the same subject
+* [MedicationAdministration](medicationadministration.html): The identity of a patient to list administrations  for
+* [MedicationDispense](medicationdispense.html): The identity of a patient to list dispenses  for
+* [MedicationRequest](medicationrequest.html): Returns prescriptions for a specific patient
+* [MedicationStatement](medicationstatement.html): Returns statements for a specific patient.
+* [NutritionOrder](nutritionorder.html): The identity of the person who requires the diet, formula or nutritional supplement
+* [Observation](observation.html): The subject that the observation is about (if patient)
+* [Procedure](procedure.html): Search by subject - a patient
+* [RiskAssessment](riskassessment.html): Who/what does assessment apply to?
+* [ServiceRequest](servicerequest.html): Search by subject - a patient
+* [SupplyDelivery](supplydelivery.html): Patient for whom the item is supplied
+* [VisionPrescription](visionprescription.html): The identity of a patient to list dispenses for
+
+    */
+  patient(
+    id: Parameters<FhirSearchBuilder["reference"]>[1],
+    modifier?: ":identifier" | ResourceType | null | undefined
+  ): ResourceSearchBuilderDocumentManifest {
+    this.builder.reference("patient", id, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [AllergyIntolerance](allergyintolerance.html): allergy | intolerance - Underlying mechanism (if known)
+* [Composition](composition.html): Kind of composition (LOINC if possible)
+* [DocumentManifest](documentmanifest.html): Kind of document set
+* [DocumentReference](documentreference.html): Kind of document (LOINC if possible)
+* [Encounter](encounter.html): Specific type of encounter
+* [EpisodeOfCare](episodeofcare.html): Type/class  - e.g. specialist referral, disease management
+
+    */
+  type(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderDocumentManifest {
+    this.builder.token("type", value, modifier);
+    return this;
+  }
+
+  /**
    * Who and/or what authored the DocumentManifest
    */
   author(
@@ -12726,6 +15519,12 @@ class ResourceSearchBuilderDocumentManifest extends BaseResourceSearchBuilder<Re
 }
 
 export type SortOrderDocumentManifest =
+  | "identifier"
+  | "-identifier"
+  | "patient"
+  | "-patient"
+  | "type"
+  | "-type"
   | "author"
   | "-author"
   | "created"
@@ -12902,6 +15701,138 @@ class ResourceSearchBuilderDocumentReference extends BaseResourceSearchBuilder<R
     modifier?: TokenModifier | null | undefined
   ): ResourceSearchBuilderDocumentReference {
     this.builder.token("_type", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [AllergyIntolerance](allergyintolerance.html): External ids for this item
+* [CarePlan](careplan.html): External Ids for this plan
+* [CareTeam](careteam.html): External Ids for this team
+* [Composition](composition.html): Version-independent identifier for the Composition
+* [Condition](condition.html): A unique identifier of the condition record
+* [Consent](consent.html): Identifier for this record (external references)
+* [DetectedIssue](detectedissue.html): Unique id for the detected issue
+* [DeviceRequest](devicerequest.html): Business identifier for request/order
+* [DiagnosticReport](diagnosticreport.html): An identifier for the report
+* [DocumentManifest](documentmanifest.html): Unique Identifier for the set of documents
+* [DocumentReference](documentreference.html): Master Version Specific Identifier
+* [Encounter](encounter.html): Identifier(s) by which this encounter is known
+* [EpisodeOfCare](episodeofcare.html): Business Identifier(s) relevant for this EpisodeOfCare
+* [FamilyMemberHistory](familymemberhistory.html): A search by a record identifier
+* [Goal](goal.html): External Ids for this goal
+* [ImagingStudy](imagingstudy.html): Identifiers for the Study, such as DICOM Study Instance UID and Accession number
+* [Immunization](immunization.html): Business identifier
+* [List](list.html): Business identifier
+* [MedicationAdministration](medicationadministration.html): Return administrations with this external identifier
+* [MedicationDispense](medicationdispense.html): Returns dispenses with this external identifier
+* [MedicationRequest](medicationrequest.html): Return prescriptions with this external identifier
+* [MedicationStatement](medicationstatement.html): Return statements with this external identifier
+* [NutritionOrder](nutritionorder.html): Return nutrition orders with this external identifier
+* [Observation](observation.html): The unique id for a particular observation
+* [Procedure](procedure.html): A unique identifier for a procedure
+* [RiskAssessment](riskassessment.html): Unique identifier for the assessment
+* [ServiceRequest](servicerequest.html): Identifiers assigned to this order
+* [SupplyDelivery](supplydelivery.html): External identifier
+* [SupplyRequest](supplyrequest.html): Business Identifier for SupplyRequest
+* [VisionPrescription](visionprescription.html): Return prescriptions with this external identifier
+
+    */
+  identifier(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderDocumentReference {
+    this.builder.token("identifier", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [AllergyIntolerance](allergyintolerance.html): Who the sensitivity is for
+* [CarePlan](careplan.html): Who the care plan is for
+* [CareTeam](careteam.html): Who care team is for
+* [ClinicalImpression](clinicalimpression.html): Patient or group assessed
+* [Composition](composition.html): Who and/or what the composition is about
+* [Condition](condition.html): Who has the condition?
+* [Consent](consent.html): Who the consent applies to
+* [DetectedIssue](detectedissue.html): Associated patient
+* [DeviceRequest](devicerequest.html): Individual the service is ordered for
+* [DeviceUseStatement](deviceusestatement.html): Search by subject - a patient
+* [DiagnosticReport](diagnosticreport.html): The subject of the report if a patient
+* [DocumentManifest](documentmanifest.html): The subject of the set of documents
+* [DocumentReference](documentreference.html): Who/what is the subject of the document
+* [Encounter](encounter.html): The patient or group present at the encounter
+* [EpisodeOfCare](episodeofcare.html): The patient who is the focus of this episode of care
+* [FamilyMemberHistory](familymemberhistory.html): The identity of a subject to list family member history items for
+* [Flag](flag.html): The identity of a subject to list flags for
+* [Goal](goal.html): Who this goal is intended for
+* [ImagingStudy](imagingstudy.html): Who the study is about
+* [Immunization](immunization.html): The patient for the vaccination record
+* [List](list.html): If all resources have the same subject
+* [MedicationAdministration](medicationadministration.html): The identity of a patient to list administrations  for
+* [MedicationDispense](medicationdispense.html): The identity of a patient to list dispenses  for
+* [MedicationRequest](medicationrequest.html): Returns prescriptions for a specific patient
+* [MedicationStatement](medicationstatement.html): Returns statements for a specific patient.
+* [NutritionOrder](nutritionorder.html): The identity of the person who requires the diet, formula or nutritional supplement
+* [Observation](observation.html): The subject that the observation is about (if patient)
+* [Procedure](procedure.html): Search by subject - a patient
+* [RiskAssessment](riskassessment.html): Who/what does assessment apply to?
+* [ServiceRequest](servicerequest.html): Search by subject - a patient
+* [SupplyDelivery](supplydelivery.html): Patient for whom the item is supplied
+* [VisionPrescription](visionprescription.html): The identity of a patient to list dispenses for
+
+    */
+  patient(
+    id: Parameters<FhirSearchBuilder["reference"]>[1],
+    modifier?: ":identifier" | ResourceType | null | undefined
+  ): ResourceSearchBuilderDocumentReference {
+    this.builder.reference("patient", id, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [AllergyIntolerance](allergyintolerance.html): allergy | intolerance - Underlying mechanism (if known)
+* [Composition](composition.html): Kind of composition (LOINC if possible)
+* [DocumentManifest](documentmanifest.html): Kind of document set
+* [DocumentReference](documentreference.html): Kind of document (LOINC if possible)
+* [Encounter](encounter.html): Specific type of encounter
+* [EpisodeOfCare](episodeofcare.html): Type/class  - e.g. specialist referral, disease management
+
+    */
+  type(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderDocumentReference {
+    this.builder.token("type", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [Composition](composition.html): Context of the Composition
+* [DeviceRequest](devicerequest.html): Encounter during which request was created
+* [DiagnosticReport](diagnosticreport.html): The Encounter when the order was made
+* [DocumentReference](documentreference.html): Context of the document  content
+* [Flag](flag.html): Alert relevant during encounter
+* [List](list.html): Context in which list created
+* [NutritionOrder](nutritionorder.html): Return nutrition orders with this encounter identifier
+* [Observation](observation.html): Encounter related to the observation
+* [Procedure](procedure.html): Encounter created as part of
+* [RiskAssessment](riskassessment.html): Where was assessment performed?
+* [ServiceRequest](servicerequest.html): An encounter in which this request is made
+* [VisionPrescription](visionprescription.html): Return prescriptions with this encounter identifier
+
+    */
+  encounter(
+    id: Parameters<FhirSearchBuilder["reference"]>[1],
+    modifier?: ":identifier" | ResourceType | null | undefined
+  ): ResourceSearchBuilderDocumentReference {
+    this.builder.reference("encounter", id, modifier);
     return this;
   }
 
@@ -13127,6 +16058,14 @@ class ResourceSearchBuilderDocumentReference extends BaseResourceSearchBuilder<R
 }
 
 export type SortOrderDocumentReference =
+  | "identifier"
+  | "-identifier"
+  | "patient"
+  | "-patient"
+  | "type"
+  | "-type"
+  | "encounter"
+  | "-encounter"
   | "authenticator"
   | "-authenticator"
   | "author"
@@ -13323,6 +16262,143 @@ class ResourceSearchBuilderEncounter extends BaseResourceSearchBuilder<ResourceS
     modifier?: TokenModifier | null | undefined
   ): ResourceSearchBuilderEncounter {
     this.builder.token("_type", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [AllergyIntolerance](allergyintolerance.html): Date first version of the resource instance was recorded
+* [CarePlan](careplan.html): Time period plan covers
+* [CareTeam](careteam.html): Time period team covers
+* [ClinicalImpression](clinicalimpression.html): When the assessment was documented
+* [Composition](composition.html): Composition editing time
+* [Consent](consent.html): When this Consent was created or indexed
+* [DiagnosticReport](diagnosticreport.html): The clinically relevant time of the report
+* [Encounter](encounter.html): A date within the period the Encounter lasted
+* [EpisodeOfCare](episodeofcare.html): The provided date search value falls within the episode of care's period
+* [FamilyMemberHistory](familymemberhistory.html): When history was recorded or last updated
+* [Flag](flag.html): Time period when flag is active
+* [Immunization](immunization.html): Vaccination  (non)-Administration Date
+* [List](list.html): When the list was prepared
+* [Observation](observation.html): Obtained date/time. If the obtained element is a period, a date that falls in the period
+* [Procedure](procedure.html): When the procedure was performed
+* [RiskAssessment](riskassessment.html): When was assessment made?
+* [SupplyRequest](supplyrequest.html): When the request was made
+
+    */
+  date(
+    value: Parameters<FhirSearchBuilder["date"]>[1],
+    prefix?: Prefix | null | undefined
+  ): ResourceSearchBuilderEncounter {
+    this.builder.date("date", value, prefix);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [AllergyIntolerance](allergyintolerance.html): External ids for this item
+* [CarePlan](careplan.html): External Ids for this plan
+* [CareTeam](careteam.html): External Ids for this team
+* [Composition](composition.html): Version-independent identifier for the Composition
+* [Condition](condition.html): A unique identifier of the condition record
+* [Consent](consent.html): Identifier for this record (external references)
+* [DetectedIssue](detectedissue.html): Unique id for the detected issue
+* [DeviceRequest](devicerequest.html): Business identifier for request/order
+* [DiagnosticReport](diagnosticreport.html): An identifier for the report
+* [DocumentManifest](documentmanifest.html): Unique Identifier for the set of documents
+* [DocumentReference](documentreference.html): Master Version Specific Identifier
+* [Encounter](encounter.html): Identifier(s) by which this encounter is known
+* [EpisodeOfCare](episodeofcare.html): Business Identifier(s) relevant for this EpisodeOfCare
+* [FamilyMemberHistory](familymemberhistory.html): A search by a record identifier
+* [Goal](goal.html): External Ids for this goal
+* [ImagingStudy](imagingstudy.html): Identifiers for the Study, such as DICOM Study Instance UID and Accession number
+* [Immunization](immunization.html): Business identifier
+* [List](list.html): Business identifier
+* [MedicationAdministration](medicationadministration.html): Return administrations with this external identifier
+* [MedicationDispense](medicationdispense.html): Returns dispenses with this external identifier
+* [MedicationRequest](medicationrequest.html): Return prescriptions with this external identifier
+* [MedicationStatement](medicationstatement.html): Return statements with this external identifier
+* [NutritionOrder](nutritionorder.html): Return nutrition orders with this external identifier
+* [Observation](observation.html): The unique id for a particular observation
+* [Procedure](procedure.html): A unique identifier for a procedure
+* [RiskAssessment](riskassessment.html): Unique identifier for the assessment
+* [ServiceRequest](servicerequest.html): Identifiers assigned to this order
+* [SupplyDelivery](supplydelivery.html): External identifier
+* [SupplyRequest](supplyrequest.html): Business Identifier for SupplyRequest
+* [VisionPrescription](visionprescription.html): Return prescriptions with this external identifier
+
+    */
+  identifier(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderEncounter {
+    this.builder.token("identifier", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [AllergyIntolerance](allergyintolerance.html): Who the sensitivity is for
+* [CarePlan](careplan.html): Who the care plan is for
+* [CareTeam](careteam.html): Who care team is for
+* [ClinicalImpression](clinicalimpression.html): Patient or group assessed
+* [Composition](composition.html): Who and/or what the composition is about
+* [Condition](condition.html): Who has the condition?
+* [Consent](consent.html): Who the consent applies to
+* [DetectedIssue](detectedissue.html): Associated patient
+* [DeviceRequest](devicerequest.html): Individual the service is ordered for
+* [DeviceUseStatement](deviceusestatement.html): Search by subject - a patient
+* [DiagnosticReport](diagnosticreport.html): The subject of the report if a patient
+* [DocumentManifest](documentmanifest.html): The subject of the set of documents
+* [DocumentReference](documentreference.html): Who/what is the subject of the document
+* [Encounter](encounter.html): The patient or group present at the encounter
+* [EpisodeOfCare](episodeofcare.html): The patient who is the focus of this episode of care
+* [FamilyMemberHistory](familymemberhistory.html): The identity of a subject to list family member history items for
+* [Flag](flag.html): The identity of a subject to list flags for
+* [Goal](goal.html): Who this goal is intended for
+* [ImagingStudy](imagingstudy.html): Who the study is about
+* [Immunization](immunization.html): The patient for the vaccination record
+* [List](list.html): If all resources have the same subject
+* [MedicationAdministration](medicationadministration.html): The identity of a patient to list administrations  for
+* [MedicationDispense](medicationdispense.html): The identity of a patient to list dispenses  for
+* [MedicationRequest](medicationrequest.html): Returns prescriptions for a specific patient
+* [MedicationStatement](medicationstatement.html): Returns statements for a specific patient.
+* [NutritionOrder](nutritionorder.html): The identity of the person who requires the diet, formula or nutritional supplement
+* [Observation](observation.html): The subject that the observation is about (if patient)
+* [Procedure](procedure.html): Search by subject - a patient
+* [RiskAssessment](riskassessment.html): Who/what does assessment apply to?
+* [ServiceRequest](servicerequest.html): Search by subject - a patient
+* [SupplyDelivery](supplydelivery.html): Patient for whom the item is supplied
+* [VisionPrescription](visionprescription.html): The identity of a patient to list dispenses for
+
+    */
+  patient(
+    id: Parameters<FhirSearchBuilder["reference"]>[1],
+    modifier?: ":identifier" | ResourceType | null | undefined
+  ): ResourceSearchBuilderEncounter {
+    this.builder.reference("patient", id, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [AllergyIntolerance](allergyintolerance.html): allergy | intolerance - Underlying mechanism (if known)
+* [Composition](composition.html): Kind of composition (LOINC if possible)
+* [DocumentManifest](documentmanifest.html): Kind of document set
+* [DocumentReference](documentreference.html): Kind of document (LOINC if possible)
+* [Encounter](encounter.html): Specific type of encounter
+* [EpisodeOfCare](episodeofcare.html): Type/class  - e.g. specialist referral, disease management
+
+    */
+  type(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderEncounter {
+    this.builder.token("type", value, modifier);
     return this;
   }
 
@@ -13537,6 +16613,14 @@ class ResourceSearchBuilderEncounter extends BaseResourceSearchBuilder<ResourceS
 }
 
 export type SortOrderEncounter =
+  | "date"
+  | "-date"
+  | "identifier"
+  | "-identifier"
+  | "patient"
+  | "-patient"
+  | "type"
+  | "-type"
   | "account"
   | "-account"
   | "appointment"
@@ -14387,6 +17471,143 @@ class ResourceSearchBuilderEpisodeOfCare extends BaseResourceSearchBuilder<Resou
   }
 
   /**
+    * Multiple Resources: 
+
+* [AllergyIntolerance](allergyintolerance.html): Date first version of the resource instance was recorded
+* [CarePlan](careplan.html): Time period plan covers
+* [CareTeam](careteam.html): Time period team covers
+* [ClinicalImpression](clinicalimpression.html): When the assessment was documented
+* [Composition](composition.html): Composition editing time
+* [Consent](consent.html): When this Consent was created or indexed
+* [DiagnosticReport](diagnosticreport.html): The clinically relevant time of the report
+* [Encounter](encounter.html): A date within the period the Encounter lasted
+* [EpisodeOfCare](episodeofcare.html): The provided date search value falls within the episode of care's period
+* [FamilyMemberHistory](familymemberhistory.html): When history was recorded or last updated
+* [Flag](flag.html): Time period when flag is active
+* [Immunization](immunization.html): Vaccination  (non)-Administration Date
+* [List](list.html): When the list was prepared
+* [Observation](observation.html): Obtained date/time. If the obtained element is a period, a date that falls in the period
+* [Procedure](procedure.html): When the procedure was performed
+* [RiskAssessment](riskassessment.html): When was assessment made?
+* [SupplyRequest](supplyrequest.html): When the request was made
+
+    */
+  date(
+    value: Parameters<FhirSearchBuilder["date"]>[1],
+    prefix?: Prefix | null | undefined
+  ): ResourceSearchBuilderEpisodeOfCare {
+    this.builder.date("date", value, prefix);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [AllergyIntolerance](allergyintolerance.html): External ids for this item
+* [CarePlan](careplan.html): External Ids for this plan
+* [CareTeam](careteam.html): External Ids for this team
+* [Composition](composition.html): Version-independent identifier for the Composition
+* [Condition](condition.html): A unique identifier of the condition record
+* [Consent](consent.html): Identifier for this record (external references)
+* [DetectedIssue](detectedissue.html): Unique id for the detected issue
+* [DeviceRequest](devicerequest.html): Business identifier for request/order
+* [DiagnosticReport](diagnosticreport.html): An identifier for the report
+* [DocumentManifest](documentmanifest.html): Unique Identifier for the set of documents
+* [DocumentReference](documentreference.html): Master Version Specific Identifier
+* [Encounter](encounter.html): Identifier(s) by which this encounter is known
+* [EpisodeOfCare](episodeofcare.html): Business Identifier(s) relevant for this EpisodeOfCare
+* [FamilyMemberHistory](familymemberhistory.html): A search by a record identifier
+* [Goal](goal.html): External Ids for this goal
+* [ImagingStudy](imagingstudy.html): Identifiers for the Study, such as DICOM Study Instance UID and Accession number
+* [Immunization](immunization.html): Business identifier
+* [List](list.html): Business identifier
+* [MedicationAdministration](medicationadministration.html): Return administrations with this external identifier
+* [MedicationDispense](medicationdispense.html): Returns dispenses with this external identifier
+* [MedicationRequest](medicationrequest.html): Return prescriptions with this external identifier
+* [MedicationStatement](medicationstatement.html): Return statements with this external identifier
+* [NutritionOrder](nutritionorder.html): Return nutrition orders with this external identifier
+* [Observation](observation.html): The unique id for a particular observation
+* [Procedure](procedure.html): A unique identifier for a procedure
+* [RiskAssessment](riskassessment.html): Unique identifier for the assessment
+* [ServiceRequest](servicerequest.html): Identifiers assigned to this order
+* [SupplyDelivery](supplydelivery.html): External identifier
+* [SupplyRequest](supplyrequest.html): Business Identifier for SupplyRequest
+* [VisionPrescription](visionprescription.html): Return prescriptions with this external identifier
+
+    */
+  identifier(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderEpisodeOfCare {
+    this.builder.token("identifier", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [AllergyIntolerance](allergyintolerance.html): Who the sensitivity is for
+* [CarePlan](careplan.html): Who the care plan is for
+* [CareTeam](careteam.html): Who care team is for
+* [ClinicalImpression](clinicalimpression.html): Patient or group assessed
+* [Composition](composition.html): Who and/or what the composition is about
+* [Condition](condition.html): Who has the condition?
+* [Consent](consent.html): Who the consent applies to
+* [DetectedIssue](detectedissue.html): Associated patient
+* [DeviceRequest](devicerequest.html): Individual the service is ordered for
+* [DeviceUseStatement](deviceusestatement.html): Search by subject - a patient
+* [DiagnosticReport](diagnosticreport.html): The subject of the report if a patient
+* [DocumentManifest](documentmanifest.html): The subject of the set of documents
+* [DocumentReference](documentreference.html): Who/what is the subject of the document
+* [Encounter](encounter.html): The patient or group present at the encounter
+* [EpisodeOfCare](episodeofcare.html): The patient who is the focus of this episode of care
+* [FamilyMemberHistory](familymemberhistory.html): The identity of a subject to list family member history items for
+* [Flag](flag.html): The identity of a subject to list flags for
+* [Goal](goal.html): Who this goal is intended for
+* [ImagingStudy](imagingstudy.html): Who the study is about
+* [Immunization](immunization.html): The patient for the vaccination record
+* [List](list.html): If all resources have the same subject
+* [MedicationAdministration](medicationadministration.html): The identity of a patient to list administrations  for
+* [MedicationDispense](medicationdispense.html): The identity of a patient to list dispenses  for
+* [MedicationRequest](medicationrequest.html): Returns prescriptions for a specific patient
+* [MedicationStatement](medicationstatement.html): Returns statements for a specific patient.
+* [NutritionOrder](nutritionorder.html): The identity of the person who requires the diet, formula or nutritional supplement
+* [Observation](observation.html): The subject that the observation is about (if patient)
+* [Procedure](procedure.html): Search by subject - a patient
+* [RiskAssessment](riskassessment.html): Who/what does assessment apply to?
+* [ServiceRequest](servicerequest.html): Search by subject - a patient
+* [SupplyDelivery](supplydelivery.html): Patient for whom the item is supplied
+* [VisionPrescription](visionprescription.html): The identity of a patient to list dispenses for
+
+    */
+  patient(
+    id: Parameters<FhirSearchBuilder["reference"]>[1],
+    modifier?: ":identifier" | ResourceType | null | undefined
+  ): ResourceSearchBuilderEpisodeOfCare {
+    this.builder.reference("patient", id, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [AllergyIntolerance](allergyintolerance.html): allergy | intolerance - Underlying mechanism (if known)
+* [Composition](composition.html): Kind of composition (LOINC if possible)
+* [DocumentManifest](documentmanifest.html): Kind of document set
+* [DocumentReference](documentreference.html): Kind of document (LOINC if possible)
+* [Encounter](encounter.html): Specific type of encounter
+* [EpisodeOfCare](episodeofcare.html): Type/class  - e.g. specialist referral, disease management
+
+    */
+  type(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderEpisodeOfCare {
+    this.builder.token("type", value, modifier);
+    return this;
+  }
+
+  /**
    * Care manager/care coordinator for the patient
    */
   caremanager(
@@ -14443,6 +17664,14 @@ class ResourceSearchBuilderEpisodeOfCare extends BaseResourceSearchBuilder<Resou
 }
 
 export type SortOrderEpisodeOfCare =
+  | "date"
+  | "-date"
+  | "identifier"
+  | "-identifier"
+  | "patient"
+  | "-patient"
+  | "type"
+  | "-type"
   | "care-manager"
   | "-care-manager"
   | "condition"
@@ -16593,6 +19822,151 @@ class ResourceSearchBuilderFamilyMemberHistory extends BaseResourceSearchBuilder
   }
 
   /**
+    * Multiple Resources: 
+
+* [AllergyIntolerance](allergyintolerance.html): Code that identifies the allergy or intolerance
+* [Condition](condition.html): Code for the condition
+* [DeviceRequest](devicerequest.html): Code for what is being requested/ordered
+* [DiagnosticReport](diagnosticreport.html): The code for the report, as opposed to codes for the atomic results, which are the names on the observation resource referred to from the result
+* [FamilyMemberHistory](familymemberhistory.html): A search by a condition code
+* [List](list.html): What the purpose of this list is
+* [Medication](medication.html): Returns medications for a specific code
+* [MedicationAdministration](medicationadministration.html): Return administrations of this medication code
+* [MedicationDispense](medicationdispense.html): Returns dispenses of this medicine code
+* [MedicationRequest](medicationrequest.html): Return prescriptions of this medication code
+* [MedicationStatement](medicationstatement.html): Return statements of this medication code
+* [Observation](observation.html): The code of the observation type
+* [Procedure](procedure.html): A code to identify a  procedure
+* [ServiceRequest](servicerequest.html): What is being requested/ordered
+
+    */
+  code(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderFamilyMemberHistory {
+    this.builder.token("code", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [AllergyIntolerance](allergyintolerance.html): Date first version of the resource instance was recorded
+* [CarePlan](careplan.html): Time period plan covers
+* [CareTeam](careteam.html): Time period team covers
+* [ClinicalImpression](clinicalimpression.html): When the assessment was documented
+* [Composition](composition.html): Composition editing time
+* [Consent](consent.html): When this Consent was created or indexed
+* [DiagnosticReport](diagnosticreport.html): The clinically relevant time of the report
+* [Encounter](encounter.html): A date within the period the Encounter lasted
+* [EpisodeOfCare](episodeofcare.html): The provided date search value falls within the episode of care's period
+* [FamilyMemberHistory](familymemberhistory.html): When history was recorded or last updated
+* [Flag](flag.html): Time period when flag is active
+* [Immunization](immunization.html): Vaccination  (non)-Administration Date
+* [List](list.html): When the list was prepared
+* [Observation](observation.html): Obtained date/time. If the obtained element is a period, a date that falls in the period
+* [Procedure](procedure.html): When the procedure was performed
+* [RiskAssessment](riskassessment.html): When was assessment made?
+* [SupplyRequest](supplyrequest.html): When the request was made
+
+    */
+  date(
+    value: Parameters<FhirSearchBuilder["date"]>[1],
+    prefix?: Prefix | null | undefined
+  ): ResourceSearchBuilderFamilyMemberHistory {
+    this.builder.date("date", value, prefix);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [AllergyIntolerance](allergyintolerance.html): External ids for this item
+* [CarePlan](careplan.html): External Ids for this plan
+* [CareTeam](careteam.html): External Ids for this team
+* [Composition](composition.html): Version-independent identifier for the Composition
+* [Condition](condition.html): A unique identifier of the condition record
+* [Consent](consent.html): Identifier for this record (external references)
+* [DetectedIssue](detectedissue.html): Unique id for the detected issue
+* [DeviceRequest](devicerequest.html): Business identifier for request/order
+* [DiagnosticReport](diagnosticreport.html): An identifier for the report
+* [DocumentManifest](documentmanifest.html): Unique Identifier for the set of documents
+* [DocumentReference](documentreference.html): Master Version Specific Identifier
+* [Encounter](encounter.html): Identifier(s) by which this encounter is known
+* [EpisodeOfCare](episodeofcare.html): Business Identifier(s) relevant for this EpisodeOfCare
+* [FamilyMemberHistory](familymemberhistory.html): A search by a record identifier
+* [Goal](goal.html): External Ids for this goal
+* [ImagingStudy](imagingstudy.html): Identifiers for the Study, such as DICOM Study Instance UID and Accession number
+* [Immunization](immunization.html): Business identifier
+* [List](list.html): Business identifier
+* [MedicationAdministration](medicationadministration.html): Return administrations with this external identifier
+* [MedicationDispense](medicationdispense.html): Returns dispenses with this external identifier
+* [MedicationRequest](medicationrequest.html): Return prescriptions with this external identifier
+* [MedicationStatement](medicationstatement.html): Return statements with this external identifier
+* [NutritionOrder](nutritionorder.html): Return nutrition orders with this external identifier
+* [Observation](observation.html): The unique id for a particular observation
+* [Procedure](procedure.html): A unique identifier for a procedure
+* [RiskAssessment](riskassessment.html): Unique identifier for the assessment
+* [ServiceRequest](servicerequest.html): Identifiers assigned to this order
+* [SupplyDelivery](supplydelivery.html): External identifier
+* [SupplyRequest](supplyrequest.html): Business Identifier for SupplyRequest
+* [VisionPrescription](visionprescription.html): Return prescriptions with this external identifier
+
+    */
+  identifier(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderFamilyMemberHistory {
+    this.builder.token("identifier", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [AllergyIntolerance](allergyintolerance.html): Who the sensitivity is for
+* [CarePlan](careplan.html): Who the care plan is for
+* [CareTeam](careteam.html): Who care team is for
+* [ClinicalImpression](clinicalimpression.html): Patient or group assessed
+* [Composition](composition.html): Who and/or what the composition is about
+* [Condition](condition.html): Who has the condition?
+* [Consent](consent.html): Who the consent applies to
+* [DetectedIssue](detectedissue.html): Associated patient
+* [DeviceRequest](devicerequest.html): Individual the service is ordered for
+* [DeviceUseStatement](deviceusestatement.html): Search by subject - a patient
+* [DiagnosticReport](diagnosticreport.html): The subject of the report if a patient
+* [DocumentManifest](documentmanifest.html): The subject of the set of documents
+* [DocumentReference](documentreference.html): Who/what is the subject of the document
+* [Encounter](encounter.html): The patient or group present at the encounter
+* [EpisodeOfCare](episodeofcare.html): The patient who is the focus of this episode of care
+* [FamilyMemberHistory](familymemberhistory.html): The identity of a subject to list family member history items for
+* [Flag](flag.html): The identity of a subject to list flags for
+* [Goal](goal.html): Who this goal is intended for
+* [ImagingStudy](imagingstudy.html): Who the study is about
+* [Immunization](immunization.html): The patient for the vaccination record
+* [List](list.html): If all resources have the same subject
+* [MedicationAdministration](medicationadministration.html): The identity of a patient to list administrations  for
+* [MedicationDispense](medicationdispense.html): The identity of a patient to list dispenses  for
+* [MedicationRequest](medicationrequest.html): Returns prescriptions for a specific patient
+* [MedicationStatement](medicationstatement.html): Returns statements for a specific patient.
+* [NutritionOrder](nutritionorder.html): The identity of the person who requires the diet, formula or nutritional supplement
+* [Observation](observation.html): The subject that the observation is about (if patient)
+* [Procedure](procedure.html): Search by subject - a patient
+* [RiskAssessment](riskassessment.html): Who/what does assessment apply to?
+* [ServiceRequest](servicerequest.html): Search by subject - a patient
+* [SupplyDelivery](supplydelivery.html): Patient for whom the item is supplied
+* [VisionPrescription](visionprescription.html): The identity of a patient to list dispenses for
+
+    */
+  patient(
+    id: Parameters<FhirSearchBuilder["reference"]>[1],
+    modifier?: ":identifier" | ResourceType | null | undefined
+  ): ResourceSearchBuilderFamilyMemberHistory {
+    this.builder.reference("patient", id, modifier);
+    return this;
+  }
+
+  /**
    * Instantiates FHIR protocol or definition
    */
   instantiatescanonical(
@@ -16649,6 +20023,14 @@ class ResourceSearchBuilderFamilyMemberHistory extends BaseResourceSearchBuilder
 }
 
 export type SortOrderFamilyMemberHistory =
+  | "code"
+  | "-code"
+  | "date"
+  | "-date"
+  | "identifier"
+  | "-identifier"
+  | "patient"
+  | "-patient"
   | "instantiates-canonical"
   | "-instantiates-canonical"
   | "instantiates-uri"
@@ -16819,6 +20201,106 @@ class ResourceSearchBuilderFlag extends BaseResourceSearchBuilder<ResourceSearch
   }
 
   /**
+    * Multiple Resources: 
+
+* [AllergyIntolerance](allergyintolerance.html): Date first version of the resource instance was recorded
+* [CarePlan](careplan.html): Time period plan covers
+* [CareTeam](careteam.html): Time period team covers
+* [ClinicalImpression](clinicalimpression.html): When the assessment was documented
+* [Composition](composition.html): Composition editing time
+* [Consent](consent.html): When this Consent was created or indexed
+* [DiagnosticReport](diagnosticreport.html): The clinically relevant time of the report
+* [Encounter](encounter.html): A date within the period the Encounter lasted
+* [EpisodeOfCare](episodeofcare.html): The provided date search value falls within the episode of care's period
+* [FamilyMemberHistory](familymemberhistory.html): When history was recorded or last updated
+* [Flag](flag.html): Time period when flag is active
+* [Immunization](immunization.html): Vaccination  (non)-Administration Date
+* [List](list.html): When the list was prepared
+* [Observation](observation.html): Obtained date/time. If the obtained element is a period, a date that falls in the period
+* [Procedure](procedure.html): When the procedure was performed
+* [RiskAssessment](riskassessment.html): When was assessment made?
+* [SupplyRequest](supplyrequest.html): When the request was made
+
+    */
+  date(
+    value: Parameters<FhirSearchBuilder["date"]>[1],
+    prefix?: Prefix | null | undefined
+  ): ResourceSearchBuilderFlag {
+    this.builder.date("date", value, prefix);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [AllergyIntolerance](allergyintolerance.html): Who the sensitivity is for
+* [CarePlan](careplan.html): Who the care plan is for
+* [CareTeam](careteam.html): Who care team is for
+* [ClinicalImpression](clinicalimpression.html): Patient or group assessed
+* [Composition](composition.html): Who and/or what the composition is about
+* [Condition](condition.html): Who has the condition?
+* [Consent](consent.html): Who the consent applies to
+* [DetectedIssue](detectedissue.html): Associated patient
+* [DeviceRequest](devicerequest.html): Individual the service is ordered for
+* [DeviceUseStatement](deviceusestatement.html): Search by subject - a patient
+* [DiagnosticReport](diagnosticreport.html): The subject of the report if a patient
+* [DocumentManifest](documentmanifest.html): The subject of the set of documents
+* [DocumentReference](documentreference.html): Who/what is the subject of the document
+* [Encounter](encounter.html): The patient or group present at the encounter
+* [EpisodeOfCare](episodeofcare.html): The patient who is the focus of this episode of care
+* [FamilyMemberHistory](familymemberhistory.html): The identity of a subject to list family member history items for
+* [Flag](flag.html): The identity of a subject to list flags for
+* [Goal](goal.html): Who this goal is intended for
+* [ImagingStudy](imagingstudy.html): Who the study is about
+* [Immunization](immunization.html): The patient for the vaccination record
+* [List](list.html): If all resources have the same subject
+* [MedicationAdministration](medicationadministration.html): The identity of a patient to list administrations  for
+* [MedicationDispense](medicationdispense.html): The identity of a patient to list dispenses  for
+* [MedicationRequest](medicationrequest.html): Returns prescriptions for a specific patient
+* [MedicationStatement](medicationstatement.html): Returns statements for a specific patient.
+* [NutritionOrder](nutritionorder.html): The identity of the person who requires the diet, formula or nutritional supplement
+* [Observation](observation.html): The subject that the observation is about (if patient)
+* [Procedure](procedure.html): Search by subject - a patient
+* [RiskAssessment](riskassessment.html): Who/what does assessment apply to?
+* [ServiceRequest](servicerequest.html): Search by subject - a patient
+* [SupplyDelivery](supplydelivery.html): Patient for whom the item is supplied
+* [VisionPrescription](visionprescription.html): The identity of a patient to list dispenses for
+
+    */
+  patient(
+    id: Parameters<FhirSearchBuilder["reference"]>[1],
+    modifier?: ":identifier" | ResourceType | null | undefined
+  ): ResourceSearchBuilderFlag {
+    this.builder.reference("patient", id, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [Composition](composition.html): Context of the Composition
+* [DeviceRequest](devicerequest.html): Encounter during which request was created
+* [DiagnosticReport](diagnosticreport.html): The Encounter when the order was made
+* [DocumentReference](documentreference.html): Context of the document  content
+* [Flag](flag.html): Alert relevant during encounter
+* [List](list.html): Context in which list created
+* [NutritionOrder](nutritionorder.html): Return nutrition orders with this encounter identifier
+* [Observation](observation.html): Encounter related to the observation
+* [Procedure](procedure.html): Encounter created as part of
+* [RiskAssessment](riskassessment.html): Where was assessment performed?
+* [ServiceRequest](servicerequest.html): An encounter in which this request is made
+* [VisionPrescription](visionprescription.html): Return prescriptions with this encounter identifier
+
+    */
+  encounter(
+    id: Parameters<FhirSearchBuilder["reference"]>[1],
+    modifier?: ":identifier" | ResourceType | null | undefined
+  ): ResourceSearchBuilderFlag {
+    this.builder.reference("encounter", id, modifier);
+    return this;
+  }
+
+  /**
    * Flag creator
    */
   author(
@@ -16853,6 +20335,12 @@ class ResourceSearchBuilderFlag extends BaseResourceSearchBuilder<ResourceSearch
 }
 
 export type SortOrderFlag =
+  | "date"
+  | "-date"
+  | "patient"
+  | "-patient"
+  | "encounter"
+  | "-encounter"
   | "author"
   | "-author"
   | "identifier"
@@ -17019,6 +20507,94 @@ class ResourceSearchBuilderGoal extends BaseResourceSearchBuilder<ResourceSearch
   }
 
   /**
+    * Multiple Resources: 
+
+* [AllergyIntolerance](allergyintolerance.html): External ids for this item
+* [CarePlan](careplan.html): External Ids for this plan
+* [CareTeam](careteam.html): External Ids for this team
+* [Composition](composition.html): Version-independent identifier for the Composition
+* [Condition](condition.html): A unique identifier of the condition record
+* [Consent](consent.html): Identifier for this record (external references)
+* [DetectedIssue](detectedissue.html): Unique id for the detected issue
+* [DeviceRequest](devicerequest.html): Business identifier for request/order
+* [DiagnosticReport](diagnosticreport.html): An identifier for the report
+* [DocumentManifest](documentmanifest.html): Unique Identifier for the set of documents
+* [DocumentReference](documentreference.html): Master Version Specific Identifier
+* [Encounter](encounter.html): Identifier(s) by which this encounter is known
+* [EpisodeOfCare](episodeofcare.html): Business Identifier(s) relevant for this EpisodeOfCare
+* [FamilyMemberHistory](familymemberhistory.html): A search by a record identifier
+* [Goal](goal.html): External Ids for this goal
+* [ImagingStudy](imagingstudy.html): Identifiers for the Study, such as DICOM Study Instance UID and Accession number
+* [Immunization](immunization.html): Business identifier
+* [List](list.html): Business identifier
+* [MedicationAdministration](medicationadministration.html): Return administrations with this external identifier
+* [MedicationDispense](medicationdispense.html): Returns dispenses with this external identifier
+* [MedicationRequest](medicationrequest.html): Return prescriptions with this external identifier
+* [MedicationStatement](medicationstatement.html): Return statements with this external identifier
+* [NutritionOrder](nutritionorder.html): Return nutrition orders with this external identifier
+* [Observation](observation.html): The unique id for a particular observation
+* [Procedure](procedure.html): A unique identifier for a procedure
+* [RiskAssessment](riskassessment.html): Unique identifier for the assessment
+* [ServiceRequest](servicerequest.html): Identifiers assigned to this order
+* [SupplyDelivery](supplydelivery.html): External identifier
+* [SupplyRequest](supplyrequest.html): Business Identifier for SupplyRequest
+* [VisionPrescription](visionprescription.html): Return prescriptions with this external identifier
+
+    */
+  identifier(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderGoal {
+    this.builder.token("identifier", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [AllergyIntolerance](allergyintolerance.html): Who the sensitivity is for
+* [CarePlan](careplan.html): Who the care plan is for
+* [CareTeam](careteam.html): Who care team is for
+* [ClinicalImpression](clinicalimpression.html): Patient or group assessed
+* [Composition](composition.html): Who and/or what the composition is about
+* [Condition](condition.html): Who has the condition?
+* [Consent](consent.html): Who the consent applies to
+* [DetectedIssue](detectedissue.html): Associated patient
+* [DeviceRequest](devicerequest.html): Individual the service is ordered for
+* [DeviceUseStatement](deviceusestatement.html): Search by subject - a patient
+* [DiagnosticReport](diagnosticreport.html): The subject of the report if a patient
+* [DocumentManifest](documentmanifest.html): The subject of the set of documents
+* [DocumentReference](documentreference.html): Who/what is the subject of the document
+* [Encounter](encounter.html): The patient or group present at the encounter
+* [EpisodeOfCare](episodeofcare.html): The patient who is the focus of this episode of care
+* [FamilyMemberHistory](familymemberhistory.html): The identity of a subject to list family member history items for
+* [Flag](flag.html): The identity of a subject to list flags for
+* [Goal](goal.html): Who this goal is intended for
+* [ImagingStudy](imagingstudy.html): Who the study is about
+* [Immunization](immunization.html): The patient for the vaccination record
+* [List](list.html): If all resources have the same subject
+* [MedicationAdministration](medicationadministration.html): The identity of a patient to list administrations  for
+* [MedicationDispense](medicationdispense.html): The identity of a patient to list dispenses  for
+* [MedicationRequest](medicationrequest.html): Returns prescriptions for a specific patient
+* [MedicationStatement](medicationstatement.html): Returns statements for a specific patient.
+* [NutritionOrder](nutritionorder.html): The identity of the person who requires the diet, formula or nutritional supplement
+* [Observation](observation.html): The subject that the observation is about (if patient)
+* [Procedure](procedure.html): Search by subject - a patient
+* [RiskAssessment](riskassessment.html): Who/what does assessment apply to?
+* [ServiceRequest](servicerequest.html): Search by subject - a patient
+* [SupplyDelivery](supplydelivery.html): Patient for whom the item is supplied
+* [VisionPrescription](visionprescription.html): The identity of a patient to list dispenses for
+
+    */
+  patient(
+    id: Parameters<FhirSearchBuilder["reference"]>[1],
+    modifier?: ":identifier" | ResourceType | null | undefined
+  ): ResourceSearchBuilderGoal {
+    this.builder.reference("patient", id, modifier);
+    return this;
+  }
+
+  /**
    * in-progress | improving | worsening | no-change | achieved | sustaining | not-achieved | no-progress | not-attainable
    */
   achievementstatus(
@@ -17086,6 +20662,10 @@ class ResourceSearchBuilderGoal extends BaseResourceSearchBuilder<ResourceSearch
 }
 
 export type SortOrderGoal =
+  | "identifier"
+  | "-identifier"
+  | "patient"
+  | "-patient"
   | "achievement-status"
   | "-achievement-status"
   | "category"
@@ -17258,6 +20838,300 @@ class ResourceSearchBuilderGraphDefinition extends BaseResourceSearchBuilder<Res
   }
 
   /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): A use context assigned to the capability statement
+* [CodeSystem](codesystem.html): A use context assigned to the code system
+* [CompartmentDefinition](compartmentdefinition.html): A use context assigned to the compartment definition
+* [ConceptMap](conceptmap.html): A use context assigned to the concept map
+* [GraphDefinition](graphdefinition.html): A use context assigned to the graph definition
+* [ImplementationGuide](implementationguide.html): A use context assigned to the implementation guide
+* [MessageDefinition](messagedefinition.html): A use context assigned to the message definition
+* [NamingSystem](namingsystem.html): A use context assigned to the naming system
+* [OperationDefinition](operationdefinition.html): A use context assigned to the operation definition
+* [SearchParameter](searchparameter.html): A use context assigned to the search parameter
+* [StructureDefinition](structuredefinition.html): A use context assigned to the structure definition
+* [StructureMap](structuremap.html): A use context assigned to the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): A use context assigned to the terminology capabilities
+* [ValueSet](valueset.html): A use context assigned to the value set
+
+    */
+  context(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderGraphDefinition {
+    this.builder.token("context", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): A quantity- or range-valued use context assigned to the capability statement
+* [CodeSystem](codesystem.html): A quantity- or range-valued use context assigned to the code system
+* [CompartmentDefinition](compartmentdefinition.html): A quantity- or range-valued use context assigned to the compartment definition
+* [ConceptMap](conceptmap.html): A quantity- or range-valued use context assigned to the concept map
+* [GraphDefinition](graphdefinition.html): A quantity- or range-valued use context assigned to the graph definition
+* [ImplementationGuide](implementationguide.html): A quantity- or range-valued use context assigned to the implementation guide
+* [MessageDefinition](messagedefinition.html): A quantity- or range-valued use context assigned to the message definition
+* [NamingSystem](namingsystem.html): A quantity- or range-valued use context assigned to the naming system
+* [OperationDefinition](operationdefinition.html): A quantity- or range-valued use context assigned to the operation definition
+* [SearchParameter](searchparameter.html): A quantity- or range-valued use context assigned to the search parameter
+* [StructureDefinition](structuredefinition.html): A quantity- or range-valued use context assigned to the structure definition
+* [StructureMap](structuremap.html): A quantity- or range-valued use context assigned to the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): A quantity- or range-valued use context assigned to the terminology capabilities
+* [ValueSet](valueset.html): A quantity- or range-valued use context assigned to the value set
+
+    */
+  contextquantity(
+    number: Parameters<FhirSearchBuilder["quantity"]>[1],
+    prefix?: Prefix | null | undefined
+  ): ResourceSearchBuilderGraphDefinition {
+    this.builder.quantity("context-quantity", number, prefix);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): A type of use context assigned to the capability statement
+* [CodeSystem](codesystem.html): A type of use context assigned to the code system
+* [CompartmentDefinition](compartmentdefinition.html): A type of use context assigned to the compartment definition
+* [ConceptMap](conceptmap.html): A type of use context assigned to the concept map
+* [GraphDefinition](graphdefinition.html): A type of use context assigned to the graph definition
+* [ImplementationGuide](implementationguide.html): A type of use context assigned to the implementation guide
+* [MessageDefinition](messagedefinition.html): A type of use context assigned to the message definition
+* [NamingSystem](namingsystem.html): A type of use context assigned to the naming system
+* [OperationDefinition](operationdefinition.html): A type of use context assigned to the operation definition
+* [SearchParameter](searchparameter.html): A type of use context assigned to the search parameter
+* [StructureDefinition](structuredefinition.html): A type of use context assigned to the structure definition
+* [StructureMap](structuremap.html): A type of use context assigned to the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): A type of use context assigned to the terminology capabilities
+* [ValueSet](valueset.html): A type of use context assigned to the value set
+
+    */
+  contexttype(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderGraphDefinition {
+    this.builder.token("context-type", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): The capability statement publication date
+* [CodeSystem](codesystem.html): The code system publication date
+* [CompartmentDefinition](compartmentdefinition.html): The compartment definition publication date
+* [ConceptMap](conceptmap.html): The concept map publication date
+* [GraphDefinition](graphdefinition.html): The graph definition publication date
+* [ImplementationGuide](implementationguide.html): The implementation guide publication date
+* [MessageDefinition](messagedefinition.html): The message definition publication date
+* [NamingSystem](namingsystem.html): The naming system publication date
+* [OperationDefinition](operationdefinition.html): The operation definition publication date
+* [SearchParameter](searchparameter.html): The search parameter publication date
+* [StructureDefinition](structuredefinition.html): The structure definition publication date
+* [StructureMap](structuremap.html): The structure map publication date
+* [TerminologyCapabilities](terminologycapabilities.html): The terminology capabilities publication date
+* [ValueSet](valueset.html): The value set publication date
+
+    */
+  date(
+    value: Parameters<FhirSearchBuilder["date"]>[1],
+    prefix?: Prefix | null | undefined
+  ): ResourceSearchBuilderGraphDefinition {
+    this.builder.date("date", value, prefix);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): The description of the capability statement
+* [CodeSystem](codesystem.html): The description of the code system
+* [CompartmentDefinition](compartmentdefinition.html): The description of the compartment definition
+* [ConceptMap](conceptmap.html): The description of the concept map
+* [GraphDefinition](graphdefinition.html): The description of the graph definition
+* [ImplementationGuide](implementationguide.html): The description of the implementation guide
+* [MessageDefinition](messagedefinition.html): The description of the message definition
+* [NamingSystem](namingsystem.html): The description of the naming system
+* [OperationDefinition](operationdefinition.html): The description of the operation definition
+* [SearchParameter](searchparameter.html): The description of the search parameter
+* [StructureDefinition](structuredefinition.html): The description of the structure definition
+* [StructureMap](structuremap.html): The description of the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): The description of the terminology capabilities
+* [ValueSet](valueset.html): The description of the value set
+
+    */
+  description(
+    value: Parameters<FhirSearchBuilder["string"]>[1],
+    modifier?: StringModifier | null | undefined
+  ): ResourceSearchBuilderGraphDefinition {
+    this.builder.string("description", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): Intended jurisdiction for the capability statement
+* [CodeSystem](codesystem.html): Intended jurisdiction for the code system
+* [ConceptMap](conceptmap.html): Intended jurisdiction for the concept map
+* [GraphDefinition](graphdefinition.html): Intended jurisdiction for the graph definition
+* [ImplementationGuide](implementationguide.html): Intended jurisdiction for the implementation guide
+* [MessageDefinition](messagedefinition.html): Intended jurisdiction for the message definition
+* [NamingSystem](namingsystem.html): Intended jurisdiction for the naming system
+* [OperationDefinition](operationdefinition.html): Intended jurisdiction for the operation definition
+* [SearchParameter](searchparameter.html): Intended jurisdiction for the search parameter
+* [StructureDefinition](structuredefinition.html): Intended jurisdiction for the structure definition
+* [StructureMap](structuremap.html): Intended jurisdiction for the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): Intended jurisdiction for the terminology capabilities
+* [ValueSet](valueset.html): Intended jurisdiction for the value set
+
+    */
+  jurisdiction(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderGraphDefinition {
+    this.builder.token("jurisdiction", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): Computationally friendly name of the capability statement
+* [CodeSystem](codesystem.html): Computationally friendly name of the code system
+* [CompartmentDefinition](compartmentdefinition.html): Computationally friendly name of the compartment definition
+* [ConceptMap](conceptmap.html): Computationally friendly name of the concept map
+* [GraphDefinition](graphdefinition.html): Computationally friendly name of the graph definition
+* [ImplementationGuide](implementationguide.html): Computationally friendly name of the implementation guide
+* [MessageDefinition](messagedefinition.html): Computationally friendly name of the message definition
+* [NamingSystem](namingsystem.html): Computationally friendly name of the naming system
+* [OperationDefinition](operationdefinition.html): Computationally friendly name of the operation definition
+* [SearchParameter](searchparameter.html): Computationally friendly name of the search parameter
+* [StructureDefinition](structuredefinition.html): Computationally friendly name of the structure definition
+* [StructureMap](structuremap.html): Computationally friendly name of the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): Computationally friendly name of the terminology capabilities
+* [ValueSet](valueset.html): Computationally friendly name of the value set
+
+    */
+  name(
+    value: Parameters<FhirSearchBuilder["string"]>[1],
+    modifier?: StringModifier | null | undefined
+  ): ResourceSearchBuilderGraphDefinition {
+    this.builder.string("name", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): Name of the publisher of the capability statement
+* [CodeSystem](codesystem.html): Name of the publisher of the code system
+* [CompartmentDefinition](compartmentdefinition.html): Name of the publisher of the compartment definition
+* [ConceptMap](conceptmap.html): Name of the publisher of the concept map
+* [GraphDefinition](graphdefinition.html): Name of the publisher of the graph definition
+* [ImplementationGuide](implementationguide.html): Name of the publisher of the implementation guide
+* [MessageDefinition](messagedefinition.html): Name of the publisher of the message definition
+* [NamingSystem](namingsystem.html): Name of the publisher of the naming system
+* [OperationDefinition](operationdefinition.html): Name of the publisher of the operation definition
+* [SearchParameter](searchparameter.html): Name of the publisher of the search parameter
+* [StructureDefinition](structuredefinition.html): Name of the publisher of the structure definition
+* [StructureMap](structuremap.html): Name of the publisher of the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): Name of the publisher of the terminology capabilities
+* [ValueSet](valueset.html): Name of the publisher of the value set
+
+    */
+  publisher(
+    value: Parameters<FhirSearchBuilder["string"]>[1],
+    modifier?: StringModifier | null | undefined
+  ): ResourceSearchBuilderGraphDefinition {
+    this.builder.string("publisher", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): The current status of the capability statement
+* [CodeSystem](codesystem.html): The current status of the code system
+* [CompartmentDefinition](compartmentdefinition.html): The current status of the compartment definition
+* [ConceptMap](conceptmap.html): The current status of the concept map
+* [GraphDefinition](graphdefinition.html): The current status of the graph definition
+* [ImplementationGuide](implementationguide.html): The current status of the implementation guide
+* [MessageDefinition](messagedefinition.html): The current status of the message definition
+* [NamingSystem](namingsystem.html): The current status of the naming system
+* [OperationDefinition](operationdefinition.html): The current status of the operation definition
+* [SearchParameter](searchparameter.html): The current status of the search parameter
+* [StructureDefinition](structuredefinition.html): The current status of the structure definition
+* [StructureMap](structuremap.html): The current status of the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): The current status of the terminology capabilities
+* [ValueSet](valueset.html): The current status of the value set
+
+    */
+  status(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderGraphDefinition {
+    this.builder.token("status", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): The uri that identifies the capability statement
+* [CodeSystem](codesystem.html): The uri that identifies the code system
+* [CompartmentDefinition](compartmentdefinition.html): The uri that identifies the compartment definition
+* [ConceptMap](conceptmap.html): The uri that identifies the concept map
+* [GraphDefinition](graphdefinition.html): The uri that identifies the graph definition
+* [ImplementationGuide](implementationguide.html): The uri that identifies the implementation guide
+* [MessageDefinition](messagedefinition.html): The uri that identifies the message definition
+* [OperationDefinition](operationdefinition.html): The uri that identifies the operation definition
+* [SearchParameter](searchparameter.html): The uri that identifies the search parameter
+* [StructureDefinition](structuredefinition.html): The uri that identifies the structure definition
+* [StructureMap](structuremap.html): The uri that identifies the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): The uri that identifies the terminology capabilities
+* [ValueSet](valueset.html): The uri that identifies the value set
+
+    */
+  url(
+    value: Parameters<FhirSearchBuilder["uri"]>[1],
+    modifier?: UriModifier | null | undefined
+  ): ResourceSearchBuilderGraphDefinition {
+    this.builder.uri("url", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): The business version of the capability statement
+* [CodeSystem](codesystem.html): The business version of the code system
+* [CompartmentDefinition](compartmentdefinition.html): The business version of the compartment definition
+* [ConceptMap](conceptmap.html): The business version of the concept map
+* [GraphDefinition](graphdefinition.html): The business version of the graph definition
+* [ImplementationGuide](implementationguide.html): The business version of the implementation guide
+* [MessageDefinition](messagedefinition.html): The business version of the message definition
+* [OperationDefinition](operationdefinition.html): The business version of the operation definition
+* [SearchParameter](searchparameter.html): The business version of the search parameter
+* [StructureDefinition](structuredefinition.html): The business version of the structure definition
+* [StructureMap](structuremap.html): The business version of the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): The business version of the terminology capabilities
+* [ValueSet](valueset.html): The business version of the value set
+
+    */
+  version(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderGraphDefinition {
+    this.builder.token("version", value, modifier);
+    return this;
+  }
+
+  /**
    * Type of resource at which the graph starts
    */
   start(
@@ -17269,7 +21143,31 @@ class ResourceSearchBuilderGraphDefinition extends BaseResourceSearchBuilder<Res
   }
 }
 
-export type SortOrderGraphDefinition = "start" | "-start";
+export type SortOrderGraphDefinition =
+  | "context"
+  | "-context"
+  | "context-quantity"
+  | "-context-quantity"
+  | "context-type"
+  | "-context-type"
+  | "date"
+  | "-date"
+  | "description"
+  | "-description"
+  | "jurisdiction"
+  | "-jurisdiction"
+  | "name"
+  | "-name"
+  | "publisher"
+  | "-publisher"
+  | "status"
+  | "-status"
+  | "url"
+  | "-url"
+  | "version"
+  | "-version"
+  | "start"
+  | "-start";
 
 class ResourceSearchBuilderGroup extends BaseResourceSearchBuilder<ResourceSearchBuilderGroup> {
   readonly resourceType = "Group";
@@ -18238,6 +22136,94 @@ class ResourceSearchBuilderImagingStudy extends BaseResourceSearchBuilder<Resour
   }
 
   /**
+    * Multiple Resources: 
+
+* [AllergyIntolerance](allergyintolerance.html): External ids for this item
+* [CarePlan](careplan.html): External Ids for this plan
+* [CareTeam](careteam.html): External Ids for this team
+* [Composition](composition.html): Version-independent identifier for the Composition
+* [Condition](condition.html): A unique identifier of the condition record
+* [Consent](consent.html): Identifier for this record (external references)
+* [DetectedIssue](detectedissue.html): Unique id for the detected issue
+* [DeviceRequest](devicerequest.html): Business identifier for request/order
+* [DiagnosticReport](diagnosticreport.html): An identifier for the report
+* [DocumentManifest](documentmanifest.html): Unique Identifier for the set of documents
+* [DocumentReference](documentreference.html): Master Version Specific Identifier
+* [Encounter](encounter.html): Identifier(s) by which this encounter is known
+* [EpisodeOfCare](episodeofcare.html): Business Identifier(s) relevant for this EpisodeOfCare
+* [FamilyMemberHistory](familymemberhistory.html): A search by a record identifier
+* [Goal](goal.html): External Ids for this goal
+* [ImagingStudy](imagingstudy.html): Identifiers for the Study, such as DICOM Study Instance UID and Accession number
+* [Immunization](immunization.html): Business identifier
+* [List](list.html): Business identifier
+* [MedicationAdministration](medicationadministration.html): Return administrations with this external identifier
+* [MedicationDispense](medicationdispense.html): Returns dispenses with this external identifier
+* [MedicationRequest](medicationrequest.html): Return prescriptions with this external identifier
+* [MedicationStatement](medicationstatement.html): Return statements with this external identifier
+* [NutritionOrder](nutritionorder.html): Return nutrition orders with this external identifier
+* [Observation](observation.html): The unique id for a particular observation
+* [Procedure](procedure.html): A unique identifier for a procedure
+* [RiskAssessment](riskassessment.html): Unique identifier for the assessment
+* [ServiceRequest](servicerequest.html): Identifiers assigned to this order
+* [SupplyDelivery](supplydelivery.html): External identifier
+* [SupplyRequest](supplyrequest.html): Business Identifier for SupplyRequest
+* [VisionPrescription](visionprescription.html): Return prescriptions with this external identifier
+
+    */
+  identifier(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderImagingStudy {
+    this.builder.token("identifier", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [AllergyIntolerance](allergyintolerance.html): Who the sensitivity is for
+* [CarePlan](careplan.html): Who the care plan is for
+* [CareTeam](careteam.html): Who care team is for
+* [ClinicalImpression](clinicalimpression.html): Patient or group assessed
+* [Composition](composition.html): Who and/or what the composition is about
+* [Condition](condition.html): Who has the condition?
+* [Consent](consent.html): Who the consent applies to
+* [DetectedIssue](detectedissue.html): Associated patient
+* [DeviceRequest](devicerequest.html): Individual the service is ordered for
+* [DeviceUseStatement](deviceusestatement.html): Search by subject - a patient
+* [DiagnosticReport](diagnosticreport.html): The subject of the report if a patient
+* [DocumentManifest](documentmanifest.html): The subject of the set of documents
+* [DocumentReference](documentreference.html): Who/what is the subject of the document
+* [Encounter](encounter.html): The patient or group present at the encounter
+* [EpisodeOfCare](episodeofcare.html): The patient who is the focus of this episode of care
+* [FamilyMemberHistory](familymemberhistory.html): The identity of a subject to list family member history items for
+* [Flag](flag.html): The identity of a subject to list flags for
+* [Goal](goal.html): Who this goal is intended for
+* [ImagingStudy](imagingstudy.html): Who the study is about
+* [Immunization](immunization.html): The patient for the vaccination record
+* [List](list.html): If all resources have the same subject
+* [MedicationAdministration](medicationadministration.html): The identity of a patient to list administrations  for
+* [MedicationDispense](medicationdispense.html): The identity of a patient to list dispenses  for
+* [MedicationRequest](medicationrequest.html): Returns prescriptions for a specific patient
+* [MedicationStatement](medicationstatement.html): Returns statements for a specific patient.
+* [NutritionOrder](nutritionorder.html): The identity of the person who requires the diet, formula or nutritional supplement
+* [Observation](observation.html): The subject that the observation is about (if patient)
+* [Procedure](procedure.html): Search by subject - a patient
+* [RiskAssessment](riskassessment.html): Who/what does assessment apply to?
+* [ServiceRequest](servicerequest.html): Search by subject - a patient
+* [SupplyDelivery](supplydelivery.html): Patient for whom the item is supplied
+* [VisionPrescription](visionprescription.html): The identity of a patient to list dispenses for
+
+    */
+  patient(
+    id: Parameters<FhirSearchBuilder["reference"]>[1],
+    modifier?: ":identifier" | ResourceType | null | undefined
+  ): ResourceSearchBuilderImagingStudy {
+    this.builder.reference("patient", id, modifier);
+    return this;
+  }
+
+  /**
    * The order for the image
    */
   basedon(
@@ -18404,6 +22390,10 @@ class ResourceSearchBuilderImagingStudy extends BaseResourceSearchBuilder<Resour
 }
 
 export type SortOrderImagingStudy =
+  | "identifier"
+  | "-identifier"
+  | "patient"
+  | "-patient"
   | "basedon"
   | "-basedon"
   | "bodysite"
@@ -18594,6 +22584,124 @@ class ResourceSearchBuilderImmunization extends BaseResourceSearchBuilder<Resour
   }
 
   /**
+    * Multiple Resources: 
+
+* [AllergyIntolerance](allergyintolerance.html): Date first version of the resource instance was recorded
+* [CarePlan](careplan.html): Time period plan covers
+* [CareTeam](careteam.html): Time period team covers
+* [ClinicalImpression](clinicalimpression.html): When the assessment was documented
+* [Composition](composition.html): Composition editing time
+* [Consent](consent.html): When this Consent was created or indexed
+* [DiagnosticReport](diagnosticreport.html): The clinically relevant time of the report
+* [Encounter](encounter.html): A date within the period the Encounter lasted
+* [EpisodeOfCare](episodeofcare.html): The provided date search value falls within the episode of care's period
+* [FamilyMemberHistory](familymemberhistory.html): When history was recorded or last updated
+* [Flag](flag.html): Time period when flag is active
+* [Immunization](immunization.html): Vaccination  (non)-Administration Date
+* [List](list.html): When the list was prepared
+* [Observation](observation.html): Obtained date/time. If the obtained element is a period, a date that falls in the period
+* [Procedure](procedure.html): When the procedure was performed
+* [RiskAssessment](riskassessment.html): When was assessment made?
+* [SupplyRequest](supplyrequest.html): When the request was made
+
+    */
+  date(
+    value: Parameters<FhirSearchBuilder["date"]>[1],
+    prefix?: Prefix | null | undefined
+  ): ResourceSearchBuilderImmunization {
+    this.builder.date("date", value, prefix);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [AllergyIntolerance](allergyintolerance.html): External ids for this item
+* [CarePlan](careplan.html): External Ids for this plan
+* [CareTeam](careteam.html): External Ids for this team
+* [Composition](composition.html): Version-independent identifier for the Composition
+* [Condition](condition.html): A unique identifier of the condition record
+* [Consent](consent.html): Identifier for this record (external references)
+* [DetectedIssue](detectedissue.html): Unique id for the detected issue
+* [DeviceRequest](devicerequest.html): Business identifier for request/order
+* [DiagnosticReport](diagnosticreport.html): An identifier for the report
+* [DocumentManifest](documentmanifest.html): Unique Identifier for the set of documents
+* [DocumentReference](documentreference.html): Master Version Specific Identifier
+* [Encounter](encounter.html): Identifier(s) by which this encounter is known
+* [EpisodeOfCare](episodeofcare.html): Business Identifier(s) relevant for this EpisodeOfCare
+* [FamilyMemberHistory](familymemberhistory.html): A search by a record identifier
+* [Goal](goal.html): External Ids for this goal
+* [ImagingStudy](imagingstudy.html): Identifiers for the Study, such as DICOM Study Instance UID and Accession number
+* [Immunization](immunization.html): Business identifier
+* [List](list.html): Business identifier
+* [MedicationAdministration](medicationadministration.html): Return administrations with this external identifier
+* [MedicationDispense](medicationdispense.html): Returns dispenses with this external identifier
+* [MedicationRequest](medicationrequest.html): Return prescriptions with this external identifier
+* [MedicationStatement](medicationstatement.html): Return statements with this external identifier
+* [NutritionOrder](nutritionorder.html): Return nutrition orders with this external identifier
+* [Observation](observation.html): The unique id for a particular observation
+* [Procedure](procedure.html): A unique identifier for a procedure
+* [RiskAssessment](riskassessment.html): Unique identifier for the assessment
+* [ServiceRequest](servicerequest.html): Identifiers assigned to this order
+* [SupplyDelivery](supplydelivery.html): External identifier
+* [SupplyRequest](supplyrequest.html): Business Identifier for SupplyRequest
+* [VisionPrescription](visionprescription.html): Return prescriptions with this external identifier
+
+    */
+  identifier(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderImmunization {
+    this.builder.token("identifier", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [AllergyIntolerance](allergyintolerance.html): Who the sensitivity is for
+* [CarePlan](careplan.html): Who the care plan is for
+* [CareTeam](careteam.html): Who care team is for
+* [ClinicalImpression](clinicalimpression.html): Patient or group assessed
+* [Composition](composition.html): Who and/or what the composition is about
+* [Condition](condition.html): Who has the condition?
+* [Consent](consent.html): Who the consent applies to
+* [DetectedIssue](detectedissue.html): Associated patient
+* [DeviceRequest](devicerequest.html): Individual the service is ordered for
+* [DeviceUseStatement](deviceusestatement.html): Search by subject - a patient
+* [DiagnosticReport](diagnosticreport.html): The subject of the report if a patient
+* [DocumentManifest](documentmanifest.html): The subject of the set of documents
+* [DocumentReference](documentreference.html): Who/what is the subject of the document
+* [Encounter](encounter.html): The patient or group present at the encounter
+* [EpisodeOfCare](episodeofcare.html): The patient who is the focus of this episode of care
+* [FamilyMemberHistory](familymemberhistory.html): The identity of a subject to list family member history items for
+* [Flag](flag.html): The identity of a subject to list flags for
+* [Goal](goal.html): Who this goal is intended for
+* [ImagingStudy](imagingstudy.html): Who the study is about
+* [Immunization](immunization.html): The patient for the vaccination record
+* [List](list.html): If all resources have the same subject
+* [MedicationAdministration](medicationadministration.html): The identity of a patient to list administrations  for
+* [MedicationDispense](medicationdispense.html): The identity of a patient to list dispenses  for
+* [MedicationRequest](medicationrequest.html): Returns prescriptions for a specific patient
+* [MedicationStatement](medicationstatement.html): Returns statements for a specific patient.
+* [NutritionOrder](nutritionorder.html): The identity of the person who requires the diet, formula or nutritional supplement
+* [Observation](observation.html): The subject that the observation is about (if patient)
+* [Procedure](procedure.html): Search by subject - a patient
+* [RiskAssessment](riskassessment.html): Who/what does assessment apply to?
+* [ServiceRequest](servicerequest.html): Search by subject - a patient
+* [SupplyDelivery](supplydelivery.html): Patient for whom the item is supplied
+* [VisionPrescription](visionprescription.html): The identity of a patient to list dispenses for
+
+    */
+  patient(
+    id: Parameters<FhirSearchBuilder["reference"]>[1],
+    modifier?: ":identifier" | ResourceType | null | undefined
+  ): ResourceSearchBuilderImmunization {
+    this.builder.reference("patient", id, modifier);
+    return this;
+  }
+
+  /**
    * The service delivery location or facility in which the vaccine was / was to be administered
    */
   location(
@@ -18738,6 +22846,12 @@ class ResourceSearchBuilderImmunization extends BaseResourceSearchBuilder<Resour
 }
 
 export type SortOrderImmunization =
+  | "date"
+  | "-date"
+  | "identifier"
+  | "-identifier"
+  | "patient"
+  | "-patient"
   | "location"
   | "-location"
   | "lot-number"
@@ -19445,6 +23559,323 @@ class ResourceSearchBuilderImplementationGuide extends BaseResourceSearchBuilder
   }
 
   /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): A use context assigned to the capability statement
+* [CodeSystem](codesystem.html): A use context assigned to the code system
+* [CompartmentDefinition](compartmentdefinition.html): A use context assigned to the compartment definition
+* [ConceptMap](conceptmap.html): A use context assigned to the concept map
+* [GraphDefinition](graphdefinition.html): A use context assigned to the graph definition
+* [ImplementationGuide](implementationguide.html): A use context assigned to the implementation guide
+* [MessageDefinition](messagedefinition.html): A use context assigned to the message definition
+* [NamingSystem](namingsystem.html): A use context assigned to the naming system
+* [OperationDefinition](operationdefinition.html): A use context assigned to the operation definition
+* [SearchParameter](searchparameter.html): A use context assigned to the search parameter
+* [StructureDefinition](structuredefinition.html): A use context assigned to the structure definition
+* [StructureMap](structuremap.html): A use context assigned to the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): A use context assigned to the terminology capabilities
+* [ValueSet](valueset.html): A use context assigned to the value set
+
+    */
+  context(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderImplementationGuide {
+    this.builder.token("context", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): A quantity- or range-valued use context assigned to the capability statement
+* [CodeSystem](codesystem.html): A quantity- or range-valued use context assigned to the code system
+* [CompartmentDefinition](compartmentdefinition.html): A quantity- or range-valued use context assigned to the compartment definition
+* [ConceptMap](conceptmap.html): A quantity- or range-valued use context assigned to the concept map
+* [GraphDefinition](graphdefinition.html): A quantity- or range-valued use context assigned to the graph definition
+* [ImplementationGuide](implementationguide.html): A quantity- or range-valued use context assigned to the implementation guide
+* [MessageDefinition](messagedefinition.html): A quantity- or range-valued use context assigned to the message definition
+* [NamingSystem](namingsystem.html): A quantity- or range-valued use context assigned to the naming system
+* [OperationDefinition](operationdefinition.html): A quantity- or range-valued use context assigned to the operation definition
+* [SearchParameter](searchparameter.html): A quantity- or range-valued use context assigned to the search parameter
+* [StructureDefinition](structuredefinition.html): A quantity- or range-valued use context assigned to the structure definition
+* [StructureMap](structuremap.html): A quantity- or range-valued use context assigned to the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): A quantity- or range-valued use context assigned to the terminology capabilities
+* [ValueSet](valueset.html): A quantity- or range-valued use context assigned to the value set
+
+    */
+  contextquantity(
+    number: Parameters<FhirSearchBuilder["quantity"]>[1],
+    prefix?: Prefix | null | undefined
+  ): ResourceSearchBuilderImplementationGuide {
+    this.builder.quantity("context-quantity", number, prefix);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): A type of use context assigned to the capability statement
+* [CodeSystem](codesystem.html): A type of use context assigned to the code system
+* [CompartmentDefinition](compartmentdefinition.html): A type of use context assigned to the compartment definition
+* [ConceptMap](conceptmap.html): A type of use context assigned to the concept map
+* [GraphDefinition](graphdefinition.html): A type of use context assigned to the graph definition
+* [ImplementationGuide](implementationguide.html): A type of use context assigned to the implementation guide
+* [MessageDefinition](messagedefinition.html): A type of use context assigned to the message definition
+* [NamingSystem](namingsystem.html): A type of use context assigned to the naming system
+* [OperationDefinition](operationdefinition.html): A type of use context assigned to the operation definition
+* [SearchParameter](searchparameter.html): A type of use context assigned to the search parameter
+* [StructureDefinition](structuredefinition.html): A type of use context assigned to the structure definition
+* [StructureMap](structuremap.html): A type of use context assigned to the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): A type of use context assigned to the terminology capabilities
+* [ValueSet](valueset.html): A type of use context assigned to the value set
+
+    */
+  contexttype(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderImplementationGuide {
+    this.builder.token("context-type", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): The capability statement publication date
+* [CodeSystem](codesystem.html): The code system publication date
+* [CompartmentDefinition](compartmentdefinition.html): The compartment definition publication date
+* [ConceptMap](conceptmap.html): The concept map publication date
+* [GraphDefinition](graphdefinition.html): The graph definition publication date
+* [ImplementationGuide](implementationguide.html): The implementation guide publication date
+* [MessageDefinition](messagedefinition.html): The message definition publication date
+* [NamingSystem](namingsystem.html): The naming system publication date
+* [OperationDefinition](operationdefinition.html): The operation definition publication date
+* [SearchParameter](searchparameter.html): The search parameter publication date
+* [StructureDefinition](structuredefinition.html): The structure definition publication date
+* [StructureMap](structuremap.html): The structure map publication date
+* [TerminologyCapabilities](terminologycapabilities.html): The terminology capabilities publication date
+* [ValueSet](valueset.html): The value set publication date
+
+    */
+  date(
+    value: Parameters<FhirSearchBuilder["date"]>[1],
+    prefix?: Prefix | null | undefined
+  ): ResourceSearchBuilderImplementationGuide {
+    this.builder.date("date", value, prefix);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): The description of the capability statement
+* [CodeSystem](codesystem.html): The description of the code system
+* [CompartmentDefinition](compartmentdefinition.html): The description of the compartment definition
+* [ConceptMap](conceptmap.html): The description of the concept map
+* [GraphDefinition](graphdefinition.html): The description of the graph definition
+* [ImplementationGuide](implementationguide.html): The description of the implementation guide
+* [MessageDefinition](messagedefinition.html): The description of the message definition
+* [NamingSystem](namingsystem.html): The description of the naming system
+* [OperationDefinition](operationdefinition.html): The description of the operation definition
+* [SearchParameter](searchparameter.html): The description of the search parameter
+* [StructureDefinition](structuredefinition.html): The description of the structure definition
+* [StructureMap](structuremap.html): The description of the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): The description of the terminology capabilities
+* [ValueSet](valueset.html): The description of the value set
+
+    */
+  description(
+    value: Parameters<FhirSearchBuilder["string"]>[1],
+    modifier?: StringModifier | null | undefined
+  ): ResourceSearchBuilderImplementationGuide {
+    this.builder.string("description", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): Intended jurisdiction for the capability statement
+* [CodeSystem](codesystem.html): Intended jurisdiction for the code system
+* [ConceptMap](conceptmap.html): Intended jurisdiction for the concept map
+* [GraphDefinition](graphdefinition.html): Intended jurisdiction for the graph definition
+* [ImplementationGuide](implementationguide.html): Intended jurisdiction for the implementation guide
+* [MessageDefinition](messagedefinition.html): Intended jurisdiction for the message definition
+* [NamingSystem](namingsystem.html): Intended jurisdiction for the naming system
+* [OperationDefinition](operationdefinition.html): Intended jurisdiction for the operation definition
+* [SearchParameter](searchparameter.html): Intended jurisdiction for the search parameter
+* [StructureDefinition](structuredefinition.html): Intended jurisdiction for the structure definition
+* [StructureMap](structuremap.html): Intended jurisdiction for the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): Intended jurisdiction for the terminology capabilities
+* [ValueSet](valueset.html): Intended jurisdiction for the value set
+
+    */
+  jurisdiction(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderImplementationGuide {
+    this.builder.token("jurisdiction", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): Computationally friendly name of the capability statement
+* [CodeSystem](codesystem.html): Computationally friendly name of the code system
+* [CompartmentDefinition](compartmentdefinition.html): Computationally friendly name of the compartment definition
+* [ConceptMap](conceptmap.html): Computationally friendly name of the concept map
+* [GraphDefinition](graphdefinition.html): Computationally friendly name of the graph definition
+* [ImplementationGuide](implementationguide.html): Computationally friendly name of the implementation guide
+* [MessageDefinition](messagedefinition.html): Computationally friendly name of the message definition
+* [NamingSystem](namingsystem.html): Computationally friendly name of the naming system
+* [OperationDefinition](operationdefinition.html): Computationally friendly name of the operation definition
+* [SearchParameter](searchparameter.html): Computationally friendly name of the search parameter
+* [StructureDefinition](structuredefinition.html): Computationally friendly name of the structure definition
+* [StructureMap](structuremap.html): Computationally friendly name of the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): Computationally friendly name of the terminology capabilities
+* [ValueSet](valueset.html): Computationally friendly name of the value set
+
+    */
+  name(
+    value: Parameters<FhirSearchBuilder["string"]>[1],
+    modifier?: StringModifier | null | undefined
+  ): ResourceSearchBuilderImplementationGuide {
+    this.builder.string("name", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): Name of the publisher of the capability statement
+* [CodeSystem](codesystem.html): Name of the publisher of the code system
+* [CompartmentDefinition](compartmentdefinition.html): Name of the publisher of the compartment definition
+* [ConceptMap](conceptmap.html): Name of the publisher of the concept map
+* [GraphDefinition](graphdefinition.html): Name of the publisher of the graph definition
+* [ImplementationGuide](implementationguide.html): Name of the publisher of the implementation guide
+* [MessageDefinition](messagedefinition.html): Name of the publisher of the message definition
+* [NamingSystem](namingsystem.html): Name of the publisher of the naming system
+* [OperationDefinition](operationdefinition.html): Name of the publisher of the operation definition
+* [SearchParameter](searchparameter.html): Name of the publisher of the search parameter
+* [StructureDefinition](structuredefinition.html): Name of the publisher of the structure definition
+* [StructureMap](structuremap.html): Name of the publisher of the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): Name of the publisher of the terminology capabilities
+* [ValueSet](valueset.html): Name of the publisher of the value set
+
+    */
+  publisher(
+    value: Parameters<FhirSearchBuilder["string"]>[1],
+    modifier?: StringModifier | null | undefined
+  ): ResourceSearchBuilderImplementationGuide {
+    this.builder.string("publisher", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): The current status of the capability statement
+* [CodeSystem](codesystem.html): The current status of the code system
+* [CompartmentDefinition](compartmentdefinition.html): The current status of the compartment definition
+* [ConceptMap](conceptmap.html): The current status of the concept map
+* [GraphDefinition](graphdefinition.html): The current status of the graph definition
+* [ImplementationGuide](implementationguide.html): The current status of the implementation guide
+* [MessageDefinition](messagedefinition.html): The current status of the message definition
+* [NamingSystem](namingsystem.html): The current status of the naming system
+* [OperationDefinition](operationdefinition.html): The current status of the operation definition
+* [SearchParameter](searchparameter.html): The current status of the search parameter
+* [StructureDefinition](structuredefinition.html): The current status of the structure definition
+* [StructureMap](structuremap.html): The current status of the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): The current status of the terminology capabilities
+* [ValueSet](valueset.html): The current status of the value set
+
+    */
+  status(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderImplementationGuide {
+    this.builder.token("status", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): The human-friendly name of the capability statement
+* [CodeSystem](codesystem.html): The human-friendly name of the code system
+* [ConceptMap](conceptmap.html): The human-friendly name of the concept map
+* [ImplementationGuide](implementationguide.html): The human-friendly name of the implementation guide
+* [MessageDefinition](messagedefinition.html): The human-friendly name of the message definition
+* [OperationDefinition](operationdefinition.html): The human-friendly name of the operation definition
+* [StructureDefinition](structuredefinition.html): The human-friendly name of the structure definition
+* [StructureMap](structuremap.html): The human-friendly name of the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): The human-friendly name of the terminology capabilities
+* [ValueSet](valueset.html): The human-friendly name of the value set
+
+    */
+  title(
+    value: Parameters<FhirSearchBuilder["string"]>[1],
+    modifier?: StringModifier | null | undefined
+  ): ResourceSearchBuilderImplementationGuide {
+    this.builder.string("title", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): The uri that identifies the capability statement
+* [CodeSystem](codesystem.html): The uri that identifies the code system
+* [CompartmentDefinition](compartmentdefinition.html): The uri that identifies the compartment definition
+* [ConceptMap](conceptmap.html): The uri that identifies the concept map
+* [GraphDefinition](graphdefinition.html): The uri that identifies the graph definition
+* [ImplementationGuide](implementationguide.html): The uri that identifies the implementation guide
+* [MessageDefinition](messagedefinition.html): The uri that identifies the message definition
+* [OperationDefinition](operationdefinition.html): The uri that identifies the operation definition
+* [SearchParameter](searchparameter.html): The uri that identifies the search parameter
+* [StructureDefinition](structuredefinition.html): The uri that identifies the structure definition
+* [StructureMap](structuremap.html): The uri that identifies the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): The uri that identifies the terminology capabilities
+* [ValueSet](valueset.html): The uri that identifies the value set
+
+    */
+  url(
+    value: Parameters<FhirSearchBuilder["uri"]>[1],
+    modifier?: UriModifier | null | undefined
+  ): ResourceSearchBuilderImplementationGuide {
+    this.builder.uri("url", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): The business version of the capability statement
+* [CodeSystem](codesystem.html): The business version of the code system
+* [CompartmentDefinition](compartmentdefinition.html): The business version of the compartment definition
+* [ConceptMap](conceptmap.html): The business version of the concept map
+* [GraphDefinition](graphdefinition.html): The business version of the graph definition
+* [ImplementationGuide](implementationguide.html): The business version of the implementation guide
+* [MessageDefinition](messagedefinition.html): The business version of the message definition
+* [OperationDefinition](operationdefinition.html): The business version of the operation definition
+* [SearchParameter](searchparameter.html): The business version of the search parameter
+* [StructureDefinition](structuredefinition.html): The business version of the structure definition
+* [StructureMap](structuremap.html): The business version of the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): The business version of the terminology capabilities
+* [ValueSet](valueset.html): The business version of the value set
+
+    */
+  version(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderImplementationGuide {
+    this.builder.token("version", value, modifier);
+    return this;
+  }
+
+  /**
    * Identity of the IG that this depends on
    */
   dependson(
@@ -19490,6 +23921,30 @@ class ResourceSearchBuilderImplementationGuide extends BaseResourceSearchBuilder
 }
 
 export type SortOrderImplementationGuide =
+  | "context"
+  | "-context"
+  | "context-quantity"
+  | "-context-quantity"
+  | "context-type"
+  | "-context-type"
+  | "date"
+  | "-date"
+  | "description"
+  | "-description"
+  | "jurisdiction"
+  | "-jurisdiction"
+  | "name"
+  | "-name"
+  | "publisher"
+  | "-publisher"
+  | "status"
+  | "-status"
+  | "title"
+  | "-title"
+  | "url"
+  | "-url"
+  | "version"
+  | "-version"
   | "depends-on"
   | "-depends-on"
   | "experimental"
@@ -21243,6 +25698,176 @@ class ResourceSearchBuilderList extends BaseResourceSearchBuilder<ResourceSearch
   }
 
   /**
+    * Multiple Resources: 
+
+* [AllergyIntolerance](allergyintolerance.html): Code that identifies the allergy or intolerance
+* [Condition](condition.html): Code for the condition
+* [DeviceRequest](devicerequest.html): Code for what is being requested/ordered
+* [DiagnosticReport](diagnosticreport.html): The code for the report, as opposed to codes for the atomic results, which are the names on the observation resource referred to from the result
+* [FamilyMemberHistory](familymemberhistory.html): A search by a condition code
+* [List](list.html): What the purpose of this list is
+* [Medication](medication.html): Returns medications for a specific code
+* [MedicationAdministration](medicationadministration.html): Return administrations of this medication code
+* [MedicationDispense](medicationdispense.html): Returns dispenses of this medicine code
+* [MedicationRequest](medicationrequest.html): Return prescriptions of this medication code
+* [MedicationStatement](medicationstatement.html): Return statements of this medication code
+* [Observation](observation.html): The code of the observation type
+* [Procedure](procedure.html): A code to identify a  procedure
+* [ServiceRequest](servicerequest.html): What is being requested/ordered
+
+    */
+  code(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderList {
+    this.builder.token("code", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [AllergyIntolerance](allergyintolerance.html): Date first version of the resource instance was recorded
+* [CarePlan](careplan.html): Time period plan covers
+* [CareTeam](careteam.html): Time period team covers
+* [ClinicalImpression](clinicalimpression.html): When the assessment was documented
+* [Composition](composition.html): Composition editing time
+* [Consent](consent.html): When this Consent was created or indexed
+* [DiagnosticReport](diagnosticreport.html): The clinically relevant time of the report
+* [Encounter](encounter.html): A date within the period the Encounter lasted
+* [EpisodeOfCare](episodeofcare.html): The provided date search value falls within the episode of care's period
+* [FamilyMemberHistory](familymemberhistory.html): When history was recorded or last updated
+* [Flag](flag.html): Time period when flag is active
+* [Immunization](immunization.html): Vaccination  (non)-Administration Date
+* [List](list.html): When the list was prepared
+* [Observation](observation.html): Obtained date/time. If the obtained element is a period, a date that falls in the period
+* [Procedure](procedure.html): When the procedure was performed
+* [RiskAssessment](riskassessment.html): When was assessment made?
+* [SupplyRequest](supplyrequest.html): When the request was made
+
+    */
+  date(
+    value: Parameters<FhirSearchBuilder["date"]>[1],
+    prefix?: Prefix | null | undefined
+  ): ResourceSearchBuilderList {
+    this.builder.date("date", value, prefix);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [AllergyIntolerance](allergyintolerance.html): External ids for this item
+* [CarePlan](careplan.html): External Ids for this plan
+* [CareTeam](careteam.html): External Ids for this team
+* [Composition](composition.html): Version-independent identifier for the Composition
+* [Condition](condition.html): A unique identifier of the condition record
+* [Consent](consent.html): Identifier for this record (external references)
+* [DetectedIssue](detectedissue.html): Unique id for the detected issue
+* [DeviceRequest](devicerequest.html): Business identifier for request/order
+* [DiagnosticReport](diagnosticreport.html): An identifier for the report
+* [DocumentManifest](documentmanifest.html): Unique Identifier for the set of documents
+* [DocumentReference](documentreference.html): Master Version Specific Identifier
+* [Encounter](encounter.html): Identifier(s) by which this encounter is known
+* [EpisodeOfCare](episodeofcare.html): Business Identifier(s) relevant for this EpisodeOfCare
+* [FamilyMemberHistory](familymemberhistory.html): A search by a record identifier
+* [Goal](goal.html): External Ids for this goal
+* [ImagingStudy](imagingstudy.html): Identifiers for the Study, such as DICOM Study Instance UID and Accession number
+* [Immunization](immunization.html): Business identifier
+* [List](list.html): Business identifier
+* [MedicationAdministration](medicationadministration.html): Return administrations with this external identifier
+* [MedicationDispense](medicationdispense.html): Returns dispenses with this external identifier
+* [MedicationRequest](medicationrequest.html): Return prescriptions with this external identifier
+* [MedicationStatement](medicationstatement.html): Return statements with this external identifier
+* [NutritionOrder](nutritionorder.html): Return nutrition orders with this external identifier
+* [Observation](observation.html): The unique id for a particular observation
+* [Procedure](procedure.html): A unique identifier for a procedure
+* [RiskAssessment](riskassessment.html): Unique identifier for the assessment
+* [ServiceRequest](servicerequest.html): Identifiers assigned to this order
+* [SupplyDelivery](supplydelivery.html): External identifier
+* [SupplyRequest](supplyrequest.html): Business Identifier for SupplyRequest
+* [VisionPrescription](visionprescription.html): Return prescriptions with this external identifier
+
+    */
+  identifier(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderList {
+    this.builder.token("identifier", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [AllergyIntolerance](allergyintolerance.html): Who the sensitivity is for
+* [CarePlan](careplan.html): Who the care plan is for
+* [CareTeam](careteam.html): Who care team is for
+* [ClinicalImpression](clinicalimpression.html): Patient or group assessed
+* [Composition](composition.html): Who and/or what the composition is about
+* [Condition](condition.html): Who has the condition?
+* [Consent](consent.html): Who the consent applies to
+* [DetectedIssue](detectedissue.html): Associated patient
+* [DeviceRequest](devicerequest.html): Individual the service is ordered for
+* [DeviceUseStatement](deviceusestatement.html): Search by subject - a patient
+* [DiagnosticReport](diagnosticreport.html): The subject of the report if a patient
+* [DocumentManifest](documentmanifest.html): The subject of the set of documents
+* [DocumentReference](documentreference.html): Who/what is the subject of the document
+* [Encounter](encounter.html): The patient or group present at the encounter
+* [EpisodeOfCare](episodeofcare.html): The patient who is the focus of this episode of care
+* [FamilyMemberHistory](familymemberhistory.html): The identity of a subject to list family member history items for
+* [Flag](flag.html): The identity of a subject to list flags for
+* [Goal](goal.html): Who this goal is intended for
+* [ImagingStudy](imagingstudy.html): Who the study is about
+* [Immunization](immunization.html): The patient for the vaccination record
+* [List](list.html): If all resources have the same subject
+* [MedicationAdministration](medicationadministration.html): The identity of a patient to list administrations  for
+* [MedicationDispense](medicationdispense.html): The identity of a patient to list dispenses  for
+* [MedicationRequest](medicationrequest.html): Returns prescriptions for a specific patient
+* [MedicationStatement](medicationstatement.html): Returns statements for a specific patient.
+* [NutritionOrder](nutritionorder.html): The identity of the person who requires the diet, formula or nutritional supplement
+* [Observation](observation.html): The subject that the observation is about (if patient)
+* [Procedure](procedure.html): Search by subject - a patient
+* [RiskAssessment](riskassessment.html): Who/what does assessment apply to?
+* [ServiceRequest](servicerequest.html): Search by subject - a patient
+* [SupplyDelivery](supplydelivery.html): Patient for whom the item is supplied
+* [VisionPrescription](visionprescription.html): The identity of a patient to list dispenses for
+
+    */
+  patient(
+    id: Parameters<FhirSearchBuilder["reference"]>[1],
+    modifier?: ":identifier" | ResourceType | null | undefined
+  ): ResourceSearchBuilderList {
+    this.builder.reference("patient", id, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [Composition](composition.html): Context of the Composition
+* [DeviceRequest](devicerequest.html): Encounter during which request was created
+* [DiagnosticReport](diagnosticreport.html): The Encounter when the order was made
+* [DocumentReference](documentreference.html): Context of the document  content
+* [Flag](flag.html): Alert relevant during encounter
+* [List](list.html): Context in which list created
+* [NutritionOrder](nutritionorder.html): Return nutrition orders with this encounter identifier
+* [Observation](observation.html): Encounter related to the observation
+* [Procedure](procedure.html): Encounter created as part of
+* [RiskAssessment](riskassessment.html): Where was assessment performed?
+* [ServiceRequest](servicerequest.html): An encounter in which this request is made
+* [VisionPrescription](visionprescription.html): Return prescriptions with this encounter identifier
+
+    */
+  encounter(
+    id: Parameters<FhirSearchBuilder["reference"]>[1],
+    modifier?: ":identifier" | ResourceType | null | undefined
+  ): ResourceSearchBuilderList {
+    this.builder.reference("encounter", id, modifier);
+    return this;
+  }
+
+  /**
    * Why list is empty
    */
   emptyreason(
@@ -21250,17 +25875,6 @@ class ResourceSearchBuilderList extends BaseResourceSearchBuilder<ResourceSearch
     modifier?: TokenModifier | null | undefined
   ): ResourceSearchBuilderList {
     this.builder.token("empty-reason", value, modifier);
-    return this;
-  }
-
-  /**
-   * Business identifier
-   */
-  identifier(
-    value: Parameters<FhirSearchBuilder["token"]>[1],
-    modifier?: TokenModifier | null | undefined
-  ): ResourceSearchBuilderList {
-    this.builder.token("identifier", value, modifier);
     return this;
   }
 
@@ -21332,10 +25946,18 @@ class ResourceSearchBuilderList extends BaseResourceSearchBuilder<ResourceSearch
 }
 
 export type SortOrderList =
-  | "empty-reason"
-  | "-empty-reason"
+  | "code"
+  | "-code"
+  | "date"
+  | "-date"
   | "identifier"
   | "-identifier"
+  | "patient"
+  | "-patient"
+  | "encounter"
+  | "-encounter"
+  | "empty-reason"
+  | "-empty-reason"
   | "item"
   | "-item"
   | "notes"
@@ -23082,8 +27704,24 @@ class ResourceSearchBuilderMedication extends BaseResourceSearchBuilder<Resource
   }
 
   /**
-   * Returns medications for a specific code
-   */
+    * Multiple Resources: 
+
+* [AllergyIntolerance](allergyintolerance.html): Code that identifies the allergy or intolerance
+* [Condition](condition.html): Code for the condition
+* [DeviceRequest](devicerequest.html): Code for what is being requested/ordered
+* [DiagnosticReport](diagnosticreport.html): The code for the report, as opposed to codes for the atomic results, which are the names on the observation resource referred to from the result
+* [FamilyMemberHistory](familymemberhistory.html): A search by a condition code
+* [List](list.html): What the purpose of this list is
+* [Medication](medication.html): Returns medications for a specific code
+* [MedicationAdministration](medicationadministration.html): Return administrations of this medication code
+* [MedicationDispense](medicationdispense.html): Returns dispenses of this medicine code
+* [MedicationRequest](medicationrequest.html): Return prescriptions of this medication code
+* [MedicationStatement](medicationstatement.html): Return statements of this medication code
+* [Observation](observation.html): The code of the observation type
+* [Procedure](procedure.html): A code to identify a  procedure
+* [ServiceRequest](servicerequest.html): What is being requested/ordered
+
+    */
   code(
     value: Parameters<FhirSearchBuilder["token"]>[1],
     modifier?: TokenModifier | null | undefined
@@ -23362,6 +28000,121 @@ class ResourceSearchBuilderMedicationAdministration extends BaseResourceSearchBu
   }
 
   /**
+    * Multiple Resources: 
+
+* [AllergyIntolerance](allergyintolerance.html): Code that identifies the allergy or intolerance
+* [Condition](condition.html): Code for the condition
+* [DeviceRequest](devicerequest.html): Code for what is being requested/ordered
+* [DiagnosticReport](diagnosticreport.html): The code for the report, as opposed to codes for the atomic results, which are the names on the observation resource referred to from the result
+* [FamilyMemberHistory](familymemberhistory.html): A search by a condition code
+* [List](list.html): What the purpose of this list is
+* [Medication](medication.html): Returns medications for a specific code
+* [MedicationAdministration](medicationadministration.html): Return administrations of this medication code
+* [MedicationDispense](medicationdispense.html): Returns dispenses of this medicine code
+* [MedicationRequest](medicationrequest.html): Return prescriptions of this medication code
+* [MedicationStatement](medicationstatement.html): Return statements of this medication code
+* [Observation](observation.html): The code of the observation type
+* [Procedure](procedure.html): A code to identify a  procedure
+* [ServiceRequest](servicerequest.html): What is being requested/ordered
+
+    */
+  code(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderMedicationAdministration {
+    this.builder.token("code", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [AllergyIntolerance](allergyintolerance.html): External ids for this item
+* [CarePlan](careplan.html): External Ids for this plan
+* [CareTeam](careteam.html): External Ids for this team
+* [Composition](composition.html): Version-independent identifier for the Composition
+* [Condition](condition.html): A unique identifier of the condition record
+* [Consent](consent.html): Identifier for this record (external references)
+* [DetectedIssue](detectedissue.html): Unique id for the detected issue
+* [DeviceRequest](devicerequest.html): Business identifier for request/order
+* [DiagnosticReport](diagnosticreport.html): An identifier for the report
+* [DocumentManifest](documentmanifest.html): Unique Identifier for the set of documents
+* [DocumentReference](documentreference.html): Master Version Specific Identifier
+* [Encounter](encounter.html): Identifier(s) by which this encounter is known
+* [EpisodeOfCare](episodeofcare.html): Business Identifier(s) relevant for this EpisodeOfCare
+* [FamilyMemberHistory](familymemberhistory.html): A search by a record identifier
+* [Goal](goal.html): External Ids for this goal
+* [ImagingStudy](imagingstudy.html): Identifiers for the Study, such as DICOM Study Instance UID and Accession number
+* [Immunization](immunization.html): Business identifier
+* [List](list.html): Business identifier
+* [MedicationAdministration](medicationadministration.html): Return administrations with this external identifier
+* [MedicationDispense](medicationdispense.html): Returns dispenses with this external identifier
+* [MedicationRequest](medicationrequest.html): Return prescriptions with this external identifier
+* [MedicationStatement](medicationstatement.html): Return statements with this external identifier
+* [NutritionOrder](nutritionorder.html): Return nutrition orders with this external identifier
+* [Observation](observation.html): The unique id for a particular observation
+* [Procedure](procedure.html): A unique identifier for a procedure
+* [RiskAssessment](riskassessment.html): Unique identifier for the assessment
+* [ServiceRequest](servicerequest.html): Identifiers assigned to this order
+* [SupplyDelivery](supplydelivery.html): External identifier
+* [SupplyRequest](supplyrequest.html): Business Identifier for SupplyRequest
+* [VisionPrescription](visionprescription.html): Return prescriptions with this external identifier
+
+    */
+  identifier(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderMedicationAdministration {
+    this.builder.token("identifier", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [AllergyIntolerance](allergyintolerance.html): Who the sensitivity is for
+* [CarePlan](careplan.html): Who the care plan is for
+* [CareTeam](careteam.html): Who care team is for
+* [ClinicalImpression](clinicalimpression.html): Patient or group assessed
+* [Composition](composition.html): Who and/or what the composition is about
+* [Condition](condition.html): Who has the condition?
+* [Consent](consent.html): Who the consent applies to
+* [DetectedIssue](detectedissue.html): Associated patient
+* [DeviceRequest](devicerequest.html): Individual the service is ordered for
+* [DeviceUseStatement](deviceusestatement.html): Search by subject - a patient
+* [DiagnosticReport](diagnosticreport.html): The subject of the report if a patient
+* [DocumentManifest](documentmanifest.html): The subject of the set of documents
+* [DocumentReference](documentreference.html): Who/what is the subject of the document
+* [Encounter](encounter.html): The patient or group present at the encounter
+* [EpisodeOfCare](episodeofcare.html): The patient who is the focus of this episode of care
+* [FamilyMemberHistory](familymemberhistory.html): The identity of a subject to list family member history items for
+* [Flag](flag.html): The identity of a subject to list flags for
+* [Goal](goal.html): Who this goal is intended for
+* [ImagingStudy](imagingstudy.html): Who the study is about
+* [Immunization](immunization.html): The patient for the vaccination record
+* [List](list.html): If all resources have the same subject
+* [MedicationAdministration](medicationadministration.html): The identity of a patient to list administrations  for
+* [MedicationDispense](medicationdispense.html): The identity of a patient to list dispenses  for
+* [MedicationRequest](medicationrequest.html): Returns prescriptions for a specific patient
+* [MedicationStatement](medicationstatement.html): Returns statements for a specific patient.
+* [NutritionOrder](nutritionorder.html): The identity of the person who requires the diet, formula or nutritional supplement
+* [Observation](observation.html): The subject that the observation is about (if patient)
+* [Procedure](procedure.html): Search by subject - a patient
+* [RiskAssessment](riskassessment.html): Who/what does assessment apply to?
+* [ServiceRequest](servicerequest.html): Search by subject - a patient
+* [SupplyDelivery](supplydelivery.html): Patient for whom the item is supplied
+* [VisionPrescription](visionprescription.html): The identity of a patient to list dispenses for
+
+    */
+  patient(
+    id: Parameters<FhirSearchBuilder["reference"]>[1],
+    modifier?: ":identifier" | ResourceType | null | undefined
+  ): ResourceSearchBuilderMedicationAdministration {
+    this.builder.reference("patient", id, modifier);
+    return this;
+  }
+
+  /**
    * Return administrations that share this encounter or episode of care
    */
   context(
@@ -23391,6 +28144,23 @@ class ResourceSearchBuilderMedicationAdministration extends BaseResourceSearchBu
     prefix?: Prefix | null | undefined
   ): ResourceSearchBuilderMedicationAdministration {
     this.builder.date("effective-time", value, prefix);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [MedicationAdministration](medicationadministration.html): Return administrations of this medication resource
+* [MedicationDispense](medicationdispense.html): Returns dispenses of this medicine resource
+* [MedicationRequest](medicationrequest.html): Return prescriptions for this medication reference
+* [MedicationStatement](medicationstatement.html): Return statements of this medication reference
+
+    */
+  medication(
+    id: Parameters<FhirSearchBuilder["reference"]>[1],
+    modifier?: ":identifier" | ResourceType | null | undefined
+  ): ResourceSearchBuilderMedicationAdministration {
+    this.builder.reference("medication", id, modifier);
     return this;
   }
 
@@ -23439,6 +28209,23 @@ class ResourceSearchBuilderMedicationAdministration extends BaseResourceSearchBu
   }
 
   /**
+    * Multiple Resources: 
+
+* [MedicationAdministration](medicationadministration.html): MedicationAdministration event status (for example one of active/paused/completed/nullified)
+* [MedicationDispense](medicationdispense.html): Returns dispenses with a specified dispense status
+* [MedicationRequest](medicationrequest.html): Status of the prescription
+* [MedicationStatement](medicationstatement.html): Return statements that match the given status
+
+    */
+  status(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderMedicationAdministration {
+    this.builder.token("status", value, modifier);
+    return this;
+  }
+
+  /**
    * The identity of the individual or group to list administrations for
    */
   subject(
@@ -23451,12 +28238,20 @@ class ResourceSearchBuilderMedicationAdministration extends BaseResourceSearchBu
 }
 
 export type SortOrderMedicationAdministration =
+  | "code"
+  | "-code"
+  | "identifier"
+  | "-identifier"
+  | "patient"
+  | "-patient"
   | "context"
   | "-context"
   | "device"
   | "-device"
   | "effective-time"
   | "-effective-time"
+  | "medication"
+  | "-medication"
   | "performer"
   | "-performer"
   | "reason-given"
@@ -23465,6 +28260,8 @@ export type SortOrderMedicationAdministration =
   | "-reason-not-given"
   | "request"
   | "-request"
+  | "status"
+  | "-status"
   | "subject"
   | "-subject";
 
@@ -23627,6 +28424,155 @@ class ResourceSearchBuilderMedicationDispense extends BaseResourceSearchBuilder<
   }
 
   /**
+    * Multiple Resources: 
+
+* [AllergyIntolerance](allergyintolerance.html): Code that identifies the allergy or intolerance
+* [Condition](condition.html): Code for the condition
+* [DeviceRequest](devicerequest.html): Code for what is being requested/ordered
+* [DiagnosticReport](diagnosticreport.html): The code for the report, as opposed to codes for the atomic results, which are the names on the observation resource referred to from the result
+* [FamilyMemberHistory](familymemberhistory.html): A search by a condition code
+* [List](list.html): What the purpose of this list is
+* [Medication](medication.html): Returns medications for a specific code
+* [MedicationAdministration](medicationadministration.html): Return administrations of this medication code
+* [MedicationDispense](medicationdispense.html): Returns dispenses of this medicine code
+* [MedicationRequest](medicationrequest.html): Return prescriptions of this medication code
+* [MedicationStatement](medicationstatement.html): Return statements of this medication code
+* [Observation](observation.html): The code of the observation type
+* [Procedure](procedure.html): A code to identify a  procedure
+* [ServiceRequest](servicerequest.html): What is being requested/ordered
+
+    */
+  code(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderMedicationDispense {
+    this.builder.token("code", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [AllergyIntolerance](allergyintolerance.html): External ids for this item
+* [CarePlan](careplan.html): External Ids for this plan
+* [CareTeam](careteam.html): External Ids for this team
+* [Composition](composition.html): Version-independent identifier for the Composition
+* [Condition](condition.html): A unique identifier of the condition record
+* [Consent](consent.html): Identifier for this record (external references)
+* [DetectedIssue](detectedissue.html): Unique id for the detected issue
+* [DeviceRequest](devicerequest.html): Business identifier for request/order
+* [DiagnosticReport](diagnosticreport.html): An identifier for the report
+* [DocumentManifest](documentmanifest.html): Unique Identifier for the set of documents
+* [DocumentReference](documentreference.html): Master Version Specific Identifier
+* [Encounter](encounter.html): Identifier(s) by which this encounter is known
+* [EpisodeOfCare](episodeofcare.html): Business Identifier(s) relevant for this EpisodeOfCare
+* [FamilyMemberHistory](familymemberhistory.html): A search by a record identifier
+* [Goal](goal.html): External Ids for this goal
+* [ImagingStudy](imagingstudy.html): Identifiers for the Study, such as DICOM Study Instance UID and Accession number
+* [Immunization](immunization.html): Business identifier
+* [List](list.html): Business identifier
+* [MedicationAdministration](medicationadministration.html): Return administrations with this external identifier
+* [MedicationDispense](medicationdispense.html): Returns dispenses with this external identifier
+* [MedicationRequest](medicationrequest.html): Return prescriptions with this external identifier
+* [MedicationStatement](medicationstatement.html): Return statements with this external identifier
+* [NutritionOrder](nutritionorder.html): Return nutrition orders with this external identifier
+* [Observation](observation.html): The unique id for a particular observation
+* [Procedure](procedure.html): A unique identifier for a procedure
+* [RiskAssessment](riskassessment.html): Unique identifier for the assessment
+* [ServiceRequest](servicerequest.html): Identifiers assigned to this order
+* [SupplyDelivery](supplydelivery.html): External identifier
+* [SupplyRequest](supplyrequest.html): Business Identifier for SupplyRequest
+* [VisionPrescription](visionprescription.html): Return prescriptions with this external identifier
+
+    */
+  identifier(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderMedicationDispense {
+    this.builder.token("identifier", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [AllergyIntolerance](allergyintolerance.html): Who the sensitivity is for
+* [CarePlan](careplan.html): Who the care plan is for
+* [CareTeam](careteam.html): Who care team is for
+* [ClinicalImpression](clinicalimpression.html): Patient or group assessed
+* [Composition](composition.html): Who and/or what the composition is about
+* [Condition](condition.html): Who has the condition?
+* [Consent](consent.html): Who the consent applies to
+* [DetectedIssue](detectedissue.html): Associated patient
+* [DeviceRequest](devicerequest.html): Individual the service is ordered for
+* [DeviceUseStatement](deviceusestatement.html): Search by subject - a patient
+* [DiagnosticReport](diagnosticreport.html): The subject of the report if a patient
+* [DocumentManifest](documentmanifest.html): The subject of the set of documents
+* [DocumentReference](documentreference.html): Who/what is the subject of the document
+* [Encounter](encounter.html): The patient or group present at the encounter
+* [EpisodeOfCare](episodeofcare.html): The patient who is the focus of this episode of care
+* [FamilyMemberHistory](familymemberhistory.html): The identity of a subject to list family member history items for
+* [Flag](flag.html): The identity of a subject to list flags for
+* [Goal](goal.html): Who this goal is intended for
+* [ImagingStudy](imagingstudy.html): Who the study is about
+* [Immunization](immunization.html): The patient for the vaccination record
+* [List](list.html): If all resources have the same subject
+* [MedicationAdministration](medicationadministration.html): The identity of a patient to list administrations  for
+* [MedicationDispense](medicationdispense.html): The identity of a patient to list dispenses  for
+* [MedicationRequest](medicationrequest.html): Returns prescriptions for a specific patient
+* [MedicationStatement](medicationstatement.html): Returns statements for a specific patient.
+* [NutritionOrder](nutritionorder.html): The identity of the person who requires the diet, formula or nutritional supplement
+* [Observation](observation.html): The subject that the observation is about (if patient)
+* [Procedure](procedure.html): Search by subject - a patient
+* [RiskAssessment](riskassessment.html): Who/what does assessment apply to?
+* [ServiceRequest](servicerequest.html): Search by subject - a patient
+* [SupplyDelivery](supplydelivery.html): Patient for whom the item is supplied
+* [VisionPrescription](visionprescription.html): The identity of a patient to list dispenses for
+
+    */
+  patient(
+    id: Parameters<FhirSearchBuilder["reference"]>[1],
+    modifier?: ":identifier" | ResourceType | null | undefined
+  ): ResourceSearchBuilderMedicationDispense {
+    this.builder.reference("patient", id, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [MedicationAdministration](medicationadministration.html): Return administrations of this medication resource
+* [MedicationDispense](medicationdispense.html): Returns dispenses of this medicine resource
+* [MedicationRequest](medicationrequest.html): Return prescriptions for this medication reference
+* [MedicationStatement](medicationstatement.html): Return statements of this medication reference
+
+    */
+  medication(
+    id: Parameters<FhirSearchBuilder["reference"]>[1],
+    modifier?: ":identifier" | ResourceType | null | undefined
+  ): ResourceSearchBuilderMedicationDispense {
+    this.builder.reference("medication", id, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [MedicationAdministration](medicationadministration.html): MedicationAdministration event status (for example one of active/paused/completed/nullified)
+* [MedicationDispense](medicationdispense.html): Returns dispenses with a specified dispense status
+* [MedicationRequest](medicationrequest.html): Status of the prescription
+* [MedicationStatement](medicationstatement.html): Return statements that match the given status
+
+    */
+  status(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderMedicationDispense {
+    this.builder.token("status", value, modifier);
+    return this;
+  }
+
+  /**
    * Returns dispenses with a specific context (episode or episode of care)
    */
   context(
@@ -23741,6 +28687,16 @@ class ResourceSearchBuilderMedicationDispense extends BaseResourceSearchBuilder<
 }
 
 export type SortOrderMedicationDispense =
+  | "code"
+  | "-code"
+  | "identifier"
+  | "-identifier"
+  | "patient"
+  | "-patient"
+  | "medication"
+  | "-medication"
+  | "status"
+  | "-status"
   | "context"
   | "-context"
   | "destination"
@@ -24251,6 +29207,155 @@ class ResourceSearchBuilderMedicationRequest extends BaseResourceSearchBuilder<R
   }
 
   /**
+    * Multiple Resources: 
+
+* [AllergyIntolerance](allergyintolerance.html): Code that identifies the allergy or intolerance
+* [Condition](condition.html): Code for the condition
+* [DeviceRequest](devicerequest.html): Code for what is being requested/ordered
+* [DiagnosticReport](diagnosticreport.html): The code for the report, as opposed to codes for the atomic results, which are the names on the observation resource referred to from the result
+* [FamilyMemberHistory](familymemberhistory.html): A search by a condition code
+* [List](list.html): What the purpose of this list is
+* [Medication](medication.html): Returns medications for a specific code
+* [MedicationAdministration](medicationadministration.html): Return administrations of this medication code
+* [MedicationDispense](medicationdispense.html): Returns dispenses of this medicine code
+* [MedicationRequest](medicationrequest.html): Return prescriptions of this medication code
+* [MedicationStatement](medicationstatement.html): Return statements of this medication code
+* [Observation](observation.html): The code of the observation type
+* [Procedure](procedure.html): A code to identify a  procedure
+* [ServiceRequest](servicerequest.html): What is being requested/ordered
+
+    */
+  code(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderMedicationRequest {
+    this.builder.token("code", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [AllergyIntolerance](allergyintolerance.html): External ids for this item
+* [CarePlan](careplan.html): External Ids for this plan
+* [CareTeam](careteam.html): External Ids for this team
+* [Composition](composition.html): Version-independent identifier for the Composition
+* [Condition](condition.html): A unique identifier of the condition record
+* [Consent](consent.html): Identifier for this record (external references)
+* [DetectedIssue](detectedissue.html): Unique id for the detected issue
+* [DeviceRequest](devicerequest.html): Business identifier for request/order
+* [DiagnosticReport](diagnosticreport.html): An identifier for the report
+* [DocumentManifest](documentmanifest.html): Unique Identifier for the set of documents
+* [DocumentReference](documentreference.html): Master Version Specific Identifier
+* [Encounter](encounter.html): Identifier(s) by which this encounter is known
+* [EpisodeOfCare](episodeofcare.html): Business Identifier(s) relevant for this EpisodeOfCare
+* [FamilyMemberHistory](familymemberhistory.html): A search by a record identifier
+* [Goal](goal.html): External Ids for this goal
+* [ImagingStudy](imagingstudy.html): Identifiers for the Study, such as DICOM Study Instance UID and Accession number
+* [Immunization](immunization.html): Business identifier
+* [List](list.html): Business identifier
+* [MedicationAdministration](medicationadministration.html): Return administrations with this external identifier
+* [MedicationDispense](medicationdispense.html): Returns dispenses with this external identifier
+* [MedicationRequest](medicationrequest.html): Return prescriptions with this external identifier
+* [MedicationStatement](medicationstatement.html): Return statements with this external identifier
+* [NutritionOrder](nutritionorder.html): Return nutrition orders with this external identifier
+* [Observation](observation.html): The unique id for a particular observation
+* [Procedure](procedure.html): A unique identifier for a procedure
+* [RiskAssessment](riskassessment.html): Unique identifier for the assessment
+* [ServiceRequest](servicerequest.html): Identifiers assigned to this order
+* [SupplyDelivery](supplydelivery.html): External identifier
+* [SupplyRequest](supplyrequest.html): Business Identifier for SupplyRequest
+* [VisionPrescription](visionprescription.html): Return prescriptions with this external identifier
+
+    */
+  identifier(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderMedicationRequest {
+    this.builder.token("identifier", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [AllergyIntolerance](allergyintolerance.html): Who the sensitivity is for
+* [CarePlan](careplan.html): Who the care plan is for
+* [CareTeam](careteam.html): Who care team is for
+* [ClinicalImpression](clinicalimpression.html): Patient or group assessed
+* [Composition](composition.html): Who and/or what the composition is about
+* [Condition](condition.html): Who has the condition?
+* [Consent](consent.html): Who the consent applies to
+* [DetectedIssue](detectedissue.html): Associated patient
+* [DeviceRequest](devicerequest.html): Individual the service is ordered for
+* [DeviceUseStatement](deviceusestatement.html): Search by subject - a patient
+* [DiagnosticReport](diagnosticreport.html): The subject of the report if a patient
+* [DocumentManifest](documentmanifest.html): The subject of the set of documents
+* [DocumentReference](documentreference.html): Who/what is the subject of the document
+* [Encounter](encounter.html): The patient or group present at the encounter
+* [EpisodeOfCare](episodeofcare.html): The patient who is the focus of this episode of care
+* [FamilyMemberHistory](familymemberhistory.html): The identity of a subject to list family member history items for
+* [Flag](flag.html): The identity of a subject to list flags for
+* [Goal](goal.html): Who this goal is intended for
+* [ImagingStudy](imagingstudy.html): Who the study is about
+* [Immunization](immunization.html): The patient for the vaccination record
+* [List](list.html): If all resources have the same subject
+* [MedicationAdministration](medicationadministration.html): The identity of a patient to list administrations  for
+* [MedicationDispense](medicationdispense.html): The identity of a patient to list dispenses  for
+* [MedicationRequest](medicationrequest.html): Returns prescriptions for a specific patient
+* [MedicationStatement](medicationstatement.html): Returns statements for a specific patient.
+* [NutritionOrder](nutritionorder.html): The identity of the person who requires the diet, formula or nutritional supplement
+* [Observation](observation.html): The subject that the observation is about (if patient)
+* [Procedure](procedure.html): Search by subject - a patient
+* [RiskAssessment](riskassessment.html): Who/what does assessment apply to?
+* [ServiceRequest](servicerequest.html): Search by subject - a patient
+* [SupplyDelivery](supplydelivery.html): Patient for whom the item is supplied
+* [VisionPrescription](visionprescription.html): The identity of a patient to list dispenses for
+
+    */
+  patient(
+    id: Parameters<FhirSearchBuilder["reference"]>[1],
+    modifier?: ":identifier" | ResourceType | null | undefined
+  ): ResourceSearchBuilderMedicationRequest {
+    this.builder.reference("patient", id, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [MedicationAdministration](medicationadministration.html): Return administrations of this medication resource
+* [MedicationDispense](medicationdispense.html): Returns dispenses of this medicine resource
+* [MedicationRequest](medicationrequest.html): Return prescriptions for this medication reference
+* [MedicationStatement](medicationstatement.html): Return statements of this medication reference
+
+    */
+  medication(
+    id: Parameters<FhirSearchBuilder["reference"]>[1],
+    modifier?: ":identifier" | ResourceType | null | undefined
+  ): ResourceSearchBuilderMedicationRequest {
+    this.builder.reference("medication", id, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [MedicationAdministration](medicationadministration.html): MedicationAdministration event status (for example one of active/paused/completed/nullified)
+* [MedicationDispense](medicationdispense.html): Returns dispenses with a specified dispense status
+* [MedicationRequest](medicationrequest.html): Status of the prescription
+* [MedicationStatement](medicationstatement.html): Return statements that match the given status
+
+    */
+  status(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderMedicationRequest {
+    this.builder.token("status", value, modifier);
+    return this;
+  }
+
+  /**
    * Return prescriptions written on this date
    */
   authoredon(
@@ -24379,6 +29484,16 @@ class ResourceSearchBuilderMedicationRequest extends BaseResourceSearchBuilder<R
 }
 
 export type SortOrderMedicationRequest =
+  | "code"
+  | "-code"
+  | "identifier"
+  | "-identifier"
+  | "patient"
+  | "-patient"
+  | "medication"
+  | "-medication"
+  | "status"
+  | "-status"
   | "authoredon"
   | "-authoredon"
   | "category"
@@ -24561,6 +29676,155 @@ class ResourceSearchBuilderMedicationStatement extends BaseResourceSearchBuilder
   }
 
   /**
+    * Multiple Resources: 
+
+* [AllergyIntolerance](allergyintolerance.html): Code that identifies the allergy or intolerance
+* [Condition](condition.html): Code for the condition
+* [DeviceRequest](devicerequest.html): Code for what is being requested/ordered
+* [DiagnosticReport](diagnosticreport.html): The code for the report, as opposed to codes for the atomic results, which are the names on the observation resource referred to from the result
+* [FamilyMemberHistory](familymemberhistory.html): A search by a condition code
+* [List](list.html): What the purpose of this list is
+* [Medication](medication.html): Returns medications for a specific code
+* [MedicationAdministration](medicationadministration.html): Return administrations of this medication code
+* [MedicationDispense](medicationdispense.html): Returns dispenses of this medicine code
+* [MedicationRequest](medicationrequest.html): Return prescriptions of this medication code
+* [MedicationStatement](medicationstatement.html): Return statements of this medication code
+* [Observation](observation.html): The code of the observation type
+* [Procedure](procedure.html): A code to identify a  procedure
+* [ServiceRequest](servicerequest.html): What is being requested/ordered
+
+    */
+  code(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderMedicationStatement {
+    this.builder.token("code", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [AllergyIntolerance](allergyintolerance.html): External ids for this item
+* [CarePlan](careplan.html): External Ids for this plan
+* [CareTeam](careteam.html): External Ids for this team
+* [Composition](composition.html): Version-independent identifier for the Composition
+* [Condition](condition.html): A unique identifier of the condition record
+* [Consent](consent.html): Identifier for this record (external references)
+* [DetectedIssue](detectedissue.html): Unique id for the detected issue
+* [DeviceRequest](devicerequest.html): Business identifier for request/order
+* [DiagnosticReport](diagnosticreport.html): An identifier for the report
+* [DocumentManifest](documentmanifest.html): Unique Identifier for the set of documents
+* [DocumentReference](documentreference.html): Master Version Specific Identifier
+* [Encounter](encounter.html): Identifier(s) by which this encounter is known
+* [EpisodeOfCare](episodeofcare.html): Business Identifier(s) relevant for this EpisodeOfCare
+* [FamilyMemberHistory](familymemberhistory.html): A search by a record identifier
+* [Goal](goal.html): External Ids for this goal
+* [ImagingStudy](imagingstudy.html): Identifiers for the Study, such as DICOM Study Instance UID and Accession number
+* [Immunization](immunization.html): Business identifier
+* [List](list.html): Business identifier
+* [MedicationAdministration](medicationadministration.html): Return administrations with this external identifier
+* [MedicationDispense](medicationdispense.html): Returns dispenses with this external identifier
+* [MedicationRequest](medicationrequest.html): Return prescriptions with this external identifier
+* [MedicationStatement](medicationstatement.html): Return statements with this external identifier
+* [NutritionOrder](nutritionorder.html): Return nutrition orders with this external identifier
+* [Observation](observation.html): The unique id for a particular observation
+* [Procedure](procedure.html): A unique identifier for a procedure
+* [RiskAssessment](riskassessment.html): Unique identifier for the assessment
+* [ServiceRequest](servicerequest.html): Identifiers assigned to this order
+* [SupplyDelivery](supplydelivery.html): External identifier
+* [SupplyRequest](supplyrequest.html): Business Identifier for SupplyRequest
+* [VisionPrescription](visionprescription.html): Return prescriptions with this external identifier
+
+    */
+  identifier(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderMedicationStatement {
+    this.builder.token("identifier", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [AllergyIntolerance](allergyintolerance.html): Who the sensitivity is for
+* [CarePlan](careplan.html): Who the care plan is for
+* [CareTeam](careteam.html): Who care team is for
+* [ClinicalImpression](clinicalimpression.html): Patient or group assessed
+* [Composition](composition.html): Who and/or what the composition is about
+* [Condition](condition.html): Who has the condition?
+* [Consent](consent.html): Who the consent applies to
+* [DetectedIssue](detectedissue.html): Associated patient
+* [DeviceRequest](devicerequest.html): Individual the service is ordered for
+* [DeviceUseStatement](deviceusestatement.html): Search by subject - a patient
+* [DiagnosticReport](diagnosticreport.html): The subject of the report if a patient
+* [DocumentManifest](documentmanifest.html): The subject of the set of documents
+* [DocumentReference](documentreference.html): Who/what is the subject of the document
+* [Encounter](encounter.html): The patient or group present at the encounter
+* [EpisodeOfCare](episodeofcare.html): The patient who is the focus of this episode of care
+* [FamilyMemberHistory](familymemberhistory.html): The identity of a subject to list family member history items for
+* [Flag](flag.html): The identity of a subject to list flags for
+* [Goal](goal.html): Who this goal is intended for
+* [ImagingStudy](imagingstudy.html): Who the study is about
+* [Immunization](immunization.html): The patient for the vaccination record
+* [List](list.html): If all resources have the same subject
+* [MedicationAdministration](medicationadministration.html): The identity of a patient to list administrations  for
+* [MedicationDispense](medicationdispense.html): The identity of a patient to list dispenses  for
+* [MedicationRequest](medicationrequest.html): Returns prescriptions for a specific patient
+* [MedicationStatement](medicationstatement.html): Returns statements for a specific patient.
+* [NutritionOrder](nutritionorder.html): The identity of the person who requires the diet, formula or nutritional supplement
+* [Observation](observation.html): The subject that the observation is about (if patient)
+* [Procedure](procedure.html): Search by subject - a patient
+* [RiskAssessment](riskassessment.html): Who/what does assessment apply to?
+* [ServiceRequest](servicerequest.html): Search by subject - a patient
+* [SupplyDelivery](supplydelivery.html): Patient for whom the item is supplied
+* [VisionPrescription](visionprescription.html): The identity of a patient to list dispenses for
+
+    */
+  patient(
+    id: Parameters<FhirSearchBuilder["reference"]>[1],
+    modifier?: ":identifier" | ResourceType | null | undefined
+  ): ResourceSearchBuilderMedicationStatement {
+    this.builder.reference("patient", id, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [MedicationAdministration](medicationadministration.html): Return administrations of this medication resource
+* [MedicationDispense](medicationdispense.html): Returns dispenses of this medicine resource
+* [MedicationRequest](medicationrequest.html): Return prescriptions for this medication reference
+* [MedicationStatement](medicationstatement.html): Return statements of this medication reference
+
+    */
+  medication(
+    id: Parameters<FhirSearchBuilder["reference"]>[1],
+    modifier?: ":identifier" | ResourceType | null | undefined
+  ): ResourceSearchBuilderMedicationStatement {
+    this.builder.reference("medication", id, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [MedicationAdministration](medicationadministration.html): MedicationAdministration event status (for example one of active/paused/completed/nullified)
+* [MedicationDispense](medicationdispense.html): Returns dispenses with a specified dispense status
+* [MedicationRequest](medicationrequest.html): Status of the prescription
+* [MedicationStatement](medicationstatement.html): Return statements that match the given status
+
+    */
+  status(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderMedicationStatement {
+    this.builder.token("status", value, modifier);
+    return this;
+  }
+
+  /**
    * Returns statements of this category of medicationstatement
    */
   category(
@@ -24628,6 +29892,16 @@ class ResourceSearchBuilderMedicationStatement extends BaseResourceSearchBuilder
 }
 
 export type SortOrderMedicationStatement =
+  | "code"
+  | "-code"
+  | "identifier"
+  | "-identifier"
+  | "patient"
+  | "-patient"
+  | "medication"
+  | "-medication"
+  | "status"
+  | "-status"
   | "category"
   | "-category"
   | "context"
@@ -25119,6 +30393,342 @@ class ResourceSearchBuilderMessageDefinition extends BaseResourceSearchBuilder<R
   }
 
   /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): A use context assigned to the capability statement
+* [CodeSystem](codesystem.html): A use context assigned to the code system
+* [CompartmentDefinition](compartmentdefinition.html): A use context assigned to the compartment definition
+* [ConceptMap](conceptmap.html): A use context assigned to the concept map
+* [GraphDefinition](graphdefinition.html): A use context assigned to the graph definition
+* [ImplementationGuide](implementationguide.html): A use context assigned to the implementation guide
+* [MessageDefinition](messagedefinition.html): A use context assigned to the message definition
+* [NamingSystem](namingsystem.html): A use context assigned to the naming system
+* [OperationDefinition](operationdefinition.html): A use context assigned to the operation definition
+* [SearchParameter](searchparameter.html): A use context assigned to the search parameter
+* [StructureDefinition](structuredefinition.html): A use context assigned to the structure definition
+* [StructureMap](structuremap.html): A use context assigned to the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): A use context assigned to the terminology capabilities
+* [ValueSet](valueset.html): A use context assigned to the value set
+
+    */
+  context(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderMessageDefinition {
+    this.builder.token("context", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): A quantity- or range-valued use context assigned to the capability statement
+* [CodeSystem](codesystem.html): A quantity- or range-valued use context assigned to the code system
+* [CompartmentDefinition](compartmentdefinition.html): A quantity- or range-valued use context assigned to the compartment definition
+* [ConceptMap](conceptmap.html): A quantity- or range-valued use context assigned to the concept map
+* [GraphDefinition](graphdefinition.html): A quantity- or range-valued use context assigned to the graph definition
+* [ImplementationGuide](implementationguide.html): A quantity- or range-valued use context assigned to the implementation guide
+* [MessageDefinition](messagedefinition.html): A quantity- or range-valued use context assigned to the message definition
+* [NamingSystem](namingsystem.html): A quantity- or range-valued use context assigned to the naming system
+* [OperationDefinition](operationdefinition.html): A quantity- or range-valued use context assigned to the operation definition
+* [SearchParameter](searchparameter.html): A quantity- or range-valued use context assigned to the search parameter
+* [StructureDefinition](structuredefinition.html): A quantity- or range-valued use context assigned to the structure definition
+* [StructureMap](structuremap.html): A quantity- or range-valued use context assigned to the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): A quantity- or range-valued use context assigned to the terminology capabilities
+* [ValueSet](valueset.html): A quantity- or range-valued use context assigned to the value set
+
+    */
+  contextquantity(
+    number: Parameters<FhirSearchBuilder["quantity"]>[1],
+    prefix?: Prefix | null | undefined
+  ): ResourceSearchBuilderMessageDefinition {
+    this.builder.quantity("context-quantity", number, prefix);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): A type of use context assigned to the capability statement
+* [CodeSystem](codesystem.html): A type of use context assigned to the code system
+* [CompartmentDefinition](compartmentdefinition.html): A type of use context assigned to the compartment definition
+* [ConceptMap](conceptmap.html): A type of use context assigned to the concept map
+* [GraphDefinition](graphdefinition.html): A type of use context assigned to the graph definition
+* [ImplementationGuide](implementationguide.html): A type of use context assigned to the implementation guide
+* [MessageDefinition](messagedefinition.html): A type of use context assigned to the message definition
+* [NamingSystem](namingsystem.html): A type of use context assigned to the naming system
+* [OperationDefinition](operationdefinition.html): A type of use context assigned to the operation definition
+* [SearchParameter](searchparameter.html): A type of use context assigned to the search parameter
+* [StructureDefinition](structuredefinition.html): A type of use context assigned to the structure definition
+* [StructureMap](structuremap.html): A type of use context assigned to the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): A type of use context assigned to the terminology capabilities
+* [ValueSet](valueset.html): A type of use context assigned to the value set
+
+    */
+  contexttype(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderMessageDefinition {
+    this.builder.token("context-type", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): The capability statement publication date
+* [CodeSystem](codesystem.html): The code system publication date
+* [CompartmentDefinition](compartmentdefinition.html): The compartment definition publication date
+* [ConceptMap](conceptmap.html): The concept map publication date
+* [GraphDefinition](graphdefinition.html): The graph definition publication date
+* [ImplementationGuide](implementationguide.html): The implementation guide publication date
+* [MessageDefinition](messagedefinition.html): The message definition publication date
+* [NamingSystem](namingsystem.html): The naming system publication date
+* [OperationDefinition](operationdefinition.html): The operation definition publication date
+* [SearchParameter](searchparameter.html): The search parameter publication date
+* [StructureDefinition](structuredefinition.html): The structure definition publication date
+* [StructureMap](structuremap.html): The structure map publication date
+* [TerminologyCapabilities](terminologycapabilities.html): The terminology capabilities publication date
+* [ValueSet](valueset.html): The value set publication date
+
+    */
+  date(
+    value: Parameters<FhirSearchBuilder["date"]>[1],
+    prefix?: Prefix | null | undefined
+  ): ResourceSearchBuilderMessageDefinition {
+    this.builder.date("date", value, prefix);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): The description of the capability statement
+* [CodeSystem](codesystem.html): The description of the code system
+* [CompartmentDefinition](compartmentdefinition.html): The description of the compartment definition
+* [ConceptMap](conceptmap.html): The description of the concept map
+* [GraphDefinition](graphdefinition.html): The description of the graph definition
+* [ImplementationGuide](implementationguide.html): The description of the implementation guide
+* [MessageDefinition](messagedefinition.html): The description of the message definition
+* [NamingSystem](namingsystem.html): The description of the naming system
+* [OperationDefinition](operationdefinition.html): The description of the operation definition
+* [SearchParameter](searchparameter.html): The description of the search parameter
+* [StructureDefinition](structuredefinition.html): The description of the structure definition
+* [StructureMap](structuremap.html): The description of the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): The description of the terminology capabilities
+* [ValueSet](valueset.html): The description of the value set
+
+    */
+  description(
+    value: Parameters<FhirSearchBuilder["string"]>[1],
+    modifier?: StringModifier | null | undefined
+  ): ResourceSearchBuilderMessageDefinition {
+    this.builder.string("description", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): Intended jurisdiction for the capability statement
+* [CodeSystem](codesystem.html): Intended jurisdiction for the code system
+* [ConceptMap](conceptmap.html): Intended jurisdiction for the concept map
+* [GraphDefinition](graphdefinition.html): Intended jurisdiction for the graph definition
+* [ImplementationGuide](implementationguide.html): Intended jurisdiction for the implementation guide
+* [MessageDefinition](messagedefinition.html): Intended jurisdiction for the message definition
+* [NamingSystem](namingsystem.html): Intended jurisdiction for the naming system
+* [OperationDefinition](operationdefinition.html): Intended jurisdiction for the operation definition
+* [SearchParameter](searchparameter.html): Intended jurisdiction for the search parameter
+* [StructureDefinition](structuredefinition.html): Intended jurisdiction for the structure definition
+* [StructureMap](structuremap.html): Intended jurisdiction for the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): Intended jurisdiction for the terminology capabilities
+* [ValueSet](valueset.html): Intended jurisdiction for the value set
+
+    */
+  jurisdiction(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderMessageDefinition {
+    this.builder.token("jurisdiction", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): Computationally friendly name of the capability statement
+* [CodeSystem](codesystem.html): Computationally friendly name of the code system
+* [CompartmentDefinition](compartmentdefinition.html): Computationally friendly name of the compartment definition
+* [ConceptMap](conceptmap.html): Computationally friendly name of the concept map
+* [GraphDefinition](graphdefinition.html): Computationally friendly name of the graph definition
+* [ImplementationGuide](implementationguide.html): Computationally friendly name of the implementation guide
+* [MessageDefinition](messagedefinition.html): Computationally friendly name of the message definition
+* [NamingSystem](namingsystem.html): Computationally friendly name of the naming system
+* [OperationDefinition](operationdefinition.html): Computationally friendly name of the operation definition
+* [SearchParameter](searchparameter.html): Computationally friendly name of the search parameter
+* [StructureDefinition](structuredefinition.html): Computationally friendly name of the structure definition
+* [StructureMap](structuremap.html): Computationally friendly name of the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): Computationally friendly name of the terminology capabilities
+* [ValueSet](valueset.html): Computationally friendly name of the value set
+
+    */
+  name(
+    value: Parameters<FhirSearchBuilder["string"]>[1],
+    modifier?: StringModifier | null | undefined
+  ): ResourceSearchBuilderMessageDefinition {
+    this.builder.string("name", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): Name of the publisher of the capability statement
+* [CodeSystem](codesystem.html): Name of the publisher of the code system
+* [CompartmentDefinition](compartmentdefinition.html): Name of the publisher of the compartment definition
+* [ConceptMap](conceptmap.html): Name of the publisher of the concept map
+* [GraphDefinition](graphdefinition.html): Name of the publisher of the graph definition
+* [ImplementationGuide](implementationguide.html): Name of the publisher of the implementation guide
+* [MessageDefinition](messagedefinition.html): Name of the publisher of the message definition
+* [NamingSystem](namingsystem.html): Name of the publisher of the naming system
+* [OperationDefinition](operationdefinition.html): Name of the publisher of the operation definition
+* [SearchParameter](searchparameter.html): Name of the publisher of the search parameter
+* [StructureDefinition](structuredefinition.html): Name of the publisher of the structure definition
+* [StructureMap](structuremap.html): Name of the publisher of the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): Name of the publisher of the terminology capabilities
+* [ValueSet](valueset.html): Name of the publisher of the value set
+
+    */
+  publisher(
+    value: Parameters<FhirSearchBuilder["string"]>[1],
+    modifier?: StringModifier | null | undefined
+  ): ResourceSearchBuilderMessageDefinition {
+    this.builder.string("publisher", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): The current status of the capability statement
+* [CodeSystem](codesystem.html): The current status of the code system
+* [CompartmentDefinition](compartmentdefinition.html): The current status of the compartment definition
+* [ConceptMap](conceptmap.html): The current status of the concept map
+* [GraphDefinition](graphdefinition.html): The current status of the graph definition
+* [ImplementationGuide](implementationguide.html): The current status of the implementation guide
+* [MessageDefinition](messagedefinition.html): The current status of the message definition
+* [NamingSystem](namingsystem.html): The current status of the naming system
+* [OperationDefinition](operationdefinition.html): The current status of the operation definition
+* [SearchParameter](searchparameter.html): The current status of the search parameter
+* [StructureDefinition](structuredefinition.html): The current status of the structure definition
+* [StructureMap](structuremap.html): The current status of the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): The current status of the terminology capabilities
+* [ValueSet](valueset.html): The current status of the value set
+
+    */
+  status(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderMessageDefinition {
+    this.builder.token("status", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): The human-friendly name of the capability statement
+* [CodeSystem](codesystem.html): The human-friendly name of the code system
+* [ConceptMap](conceptmap.html): The human-friendly name of the concept map
+* [ImplementationGuide](implementationguide.html): The human-friendly name of the implementation guide
+* [MessageDefinition](messagedefinition.html): The human-friendly name of the message definition
+* [OperationDefinition](operationdefinition.html): The human-friendly name of the operation definition
+* [StructureDefinition](structuredefinition.html): The human-friendly name of the structure definition
+* [StructureMap](structuremap.html): The human-friendly name of the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): The human-friendly name of the terminology capabilities
+* [ValueSet](valueset.html): The human-friendly name of the value set
+
+    */
+  title(
+    value: Parameters<FhirSearchBuilder["string"]>[1],
+    modifier?: StringModifier | null | undefined
+  ): ResourceSearchBuilderMessageDefinition {
+    this.builder.string("title", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): The uri that identifies the capability statement
+* [CodeSystem](codesystem.html): The uri that identifies the code system
+* [CompartmentDefinition](compartmentdefinition.html): The uri that identifies the compartment definition
+* [ConceptMap](conceptmap.html): The uri that identifies the concept map
+* [GraphDefinition](graphdefinition.html): The uri that identifies the graph definition
+* [ImplementationGuide](implementationguide.html): The uri that identifies the implementation guide
+* [MessageDefinition](messagedefinition.html): The uri that identifies the message definition
+* [OperationDefinition](operationdefinition.html): The uri that identifies the operation definition
+* [SearchParameter](searchparameter.html): The uri that identifies the search parameter
+* [StructureDefinition](structuredefinition.html): The uri that identifies the structure definition
+* [StructureMap](structuremap.html): The uri that identifies the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): The uri that identifies the terminology capabilities
+* [ValueSet](valueset.html): The uri that identifies the value set
+
+    */
+  url(
+    value: Parameters<FhirSearchBuilder["uri"]>[1],
+    modifier?: UriModifier | null | undefined
+  ): ResourceSearchBuilderMessageDefinition {
+    this.builder.uri("url", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): The business version of the capability statement
+* [CodeSystem](codesystem.html): The business version of the code system
+* [CompartmentDefinition](compartmentdefinition.html): The business version of the compartment definition
+* [ConceptMap](conceptmap.html): The business version of the concept map
+* [GraphDefinition](graphdefinition.html): The business version of the graph definition
+* [ImplementationGuide](implementationguide.html): The business version of the implementation guide
+* [MessageDefinition](messagedefinition.html): The business version of the message definition
+* [OperationDefinition](operationdefinition.html): The business version of the operation definition
+* [SearchParameter](searchparameter.html): The business version of the search parameter
+* [StructureDefinition](structuredefinition.html): The business version of the structure definition
+* [StructureMap](structuremap.html): The business version of the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): The business version of the terminology capabilities
+* [ValueSet](valueset.html): The business version of the value set
+
+    */
+  version(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderMessageDefinition {
+    this.builder.token("version", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CodeSystem](codesystem.html): External identifier for the code system
+* [ConceptMap](conceptmap.html): External identifier for the concept map
+* [MessageDefinition](messagedefinition.html): External identifier for the message definition
+* [StructureDefinition](structuredefinition.html): External identifier for the structure definition
+* [StructureMap](structuremap.html): External identifier for the structure map
+* [ValueSet](valueset.html): External identifier for the value set
+
+    */
+  identifier(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderMessageDefinition {
+    this.builder.token("identifier", value, modifier);
+    return this;
+  }
+
+  /**
    * The behavior associated with the message
    */
   category(
@@ -25164,6 +30774,32 @@ class ResourceSearchBuilderMessageDefinition extends BaseResourceSearchBuilder<R
 }
 
 export type SortOrderMessageDefinition =
+  | "context"
+  | "-context"
+  | "context-quantity"
+  | "-context-quantity"
+  | "context-type"
+  | "-context-type"
+  | "date"
+  | "-date"
+  | "description"
+  | "-description"
+  | "jurisdiction"
+  | "-jurisdiction"
+  | "name"
+  | "-name"
+  | "publisher"
+  | "-publisher"
+  | "status"
+  | "-status"
+  | "title"
+  | "-title"
+  | "url"
+  | "-url"
+  | "version"
+  | "-version"
+  | "identifier"
+  | "-identifier"
   | "category"
   | "-category"
   | "event"
@@ -25953,6 +31589,248 @@ class ResourceSearchBuilderNamingSystem extends BaseResourceSearchBuilder<Resour
   }
 
   /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): A use context assigned to the capability statement
+* [CodeSystem](codesystem.html): A use context assigned to the code system
+* [CompartmentDefinition](compartmentdefinition.html): A use context assigned to the compartment definition
+* [ConceptMap](conceptmap.html): A use context assigned to the concept map
+* [GraphDefinition](graphdefinition.html): A use context assigned to the graph definition
+* [ImplementationGuide](implementationguide.html): A use context assigned to the implementation guide
+* [MessageDefinition](messagedefinition.html): A use context assigned to the message definition
+* [NamingSystem](namingsystem.html): A use context assigned to the naming system
+* [OperationDefinition](operationdefinition.html): A use context assigned to the operation definition
+* [SearchParameter](searchparameter.html): A use context assigned to the search parameter
+* [StructureDefinition](structuredefinition.html): A use context assigned to the structure definition
+* [StructureMap](structuremap.html): A use context assigned to the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): A use context assigned to the terminology capabilities
+* [ValueSet](valueset.html): A use context assigned to the value set
+
+    */
+  context(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderNamingSystem {
+    this.builder.token("context", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): A quantity- or range-valued use context assigned to the capability statement
+* [CodeSystem](codesystem.html): A quantity- or range-valued use context assigned to the code system
+* [CompartmentDefinition](compartmentdefinition.html): A quantity- or range-valued use context assigned to the compartment definition
+* [ConceptMap](conceptmap.html): A quantity- or range-valued use context assigned to the concept map
+* [GraphDefinition](graphdefinition.html): A quantity- or range-valued use context assigned to the graph definition
+* [ImplementationGuide](implementationguide.html): A quantity- or range-valued use context assigned to the implementation guide
+* [MessageDefinition](messagedefinition.html): A quantity- or range-valued use context assigned to the message definition
+* [NamingSystem](namingsystem.html): A quantity- or range-valued use context assigned to the naming system
+* [OperationDefinition](operationdefinition.html): A quantity- or range-valued use context assigned to the operation definition
+* [SearchParameter](searchparameter.html): A quantity- or range-valued use context assigned to the search parameter
+* [StructureDefinition](structuredefinition.html): A quantity- or range-valued use context assigned to the structure definition
+* [StructureMap](structuremap.html): A quantity- or range-valued use context assigned to the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): A quantity- or range-valued use context assigned to the terminology capabilities
+* [ValueSet](valueset.html): A quantity- or range-valued use context assigned to the value set
+
+    */
+  contextquantity(
+    number: Parameters<FhirSearchBuilder["quantity"]>[1],
+    prefix?: Prefix | null | undefined
+  ): ResourceSearchBuilderNamingSystem {
+    this.builder.quantity("context-quantity", number, prefix);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): A type of use context assigned to the capability statement
+* [CodeSystem](codesystem.html): A type of use context assigned to the code system
+* [CompartmentDefinition](compartmentdefinition.html): A type of use context assigned to the compartment definition
+* [ConceptMap](conceptmap.html): A type of use context assigned to the concept map
+* [GraphDefinition](graphdefinition.html): A type of use context assigned to the graph definition
+* [ImplementationGuide](implementationguide.html): A type of use context assigned to the implementation guide
+* [MessageDefinition](messagedefinition.html): A type of use context assigned to the message definition
+* [NamingSystem](namingsystem.html): A type of use context assigned to the naming system
+* [OperationDefinition](operationdefinition.html): A type of use context assigned to the operation definition
+* [SearchParameter](searchparameter.html): A type of use context assigned to the search parameter
+* [StructureDefinition](structuredefinition.html): A type of use context assigned to the structure definition
+* [StructureMap](structuremap.html): A type of use context assigned to the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): A type of use context assigned to the terminology capabilities
+* [ValueSet](valueset.html): A type of use context assigned to the value set
+
+    */
+  contexttype(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderNamingSystem {
+    this.builder.token("context-type", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): The capability statement publication date
+* [CodeSystem](codesystem.html): The code system publication date
+* [CompartmentDefinition](compartmentdefinition.html): The compartment definition publication date
+* [ConceptMap](conceptmap.html): The concept map publication date
+* [GraphDefinition](graphdefinition.html): The graph definition publication date
+* [ImplementationGuide](implementationguide.html): The implementation guide publication date
+* [MessageDefinition](messagedefinition.html): The message definition publication date
+* [NamingSystem](namingsystem.html): The naming system publication date
+* [OperationDefinition](operationdefinition.html): The operation definition publication date
+* [SearchParameter](searchparameter.html): The search parameter publication date
+* [StructureDefinition](structuredefinition.html): The structure definition publication date
+* [StructureMap](structuremap.html): The structure map publication date
+* [TerminologyCapabilities](terminologycapabilities.html): The terminology capabilities publication date
+* [ValueSet](valueset.html): The value set publication date
+
+    */
+  date(
+    value: Parameters<FhirSearchBuilder["date"]>[1],
+    prefix?: Prefix | null | undefined
+  ): ResourceSearchBuilderNamingSystem {
+    this.builder.date("date", value, prefix);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): The description of the capability statement
+* [CodeSystem](codesystem.html): The description of the code system
+* [CompartmentDefinition](compartmentdefinition.html): The description of the compartment definition
+* [ConceptMap](conceptmap.html): The description of the concept map
+* [GraphDefinition](graphdefinition.html): The description of the graph definition
+* [ImplementationGuide](implementationguide.html): The description of the implementation guide
+* [MessageDefinition](messagedefinition.html): The description of the message definition
+* [NamingSystem](namingsystem.html): The description of the naming system
+* [OperationDefinition](operationdefinition.html): The description of the operation definition
+* [SearchParameter](searchparameter.html): The description of the search parameter
+* [StructureDefinition](structuredefinition.html): The description of the structure definition
+* [StructureMap](structuremap.html): The description of the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): The description of the terminology capabilities
+* [ValueSet](valueset.html): The description of the value set
+
+    */
+  description(
+    value: Parameters<FhirSearchBuilder["string"]>[1],
+    modifier?: StringModifier | null | undefined
+  ): ResourceSearchBuilderNamingSystem {
+    this.builder.string("description", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): Intended jurisdiction for the capability statement
+* [CodeSystem](codesystem.html): Intended jurisdiction for the code system
+* [ConceptMap](conceptmap.html): Intended jurisdiction for the concept map
+* [GraphDefinition](graphdefinition.html): Intended jurisdiction for the graph definition
+* [ImplementationGuide](implementationguide.html): Intended jurisdiction for the implementation guide
+* [MessageDefinition](messagedefinition.html): Intended jurisdiction for the message definition
+* [NamingSystem](namingsystem.html): Intended jurisdiction for the naming system
+* [OperationDefinition](operationdefinition.html): Intended jurisdiction for the operation definition
+* [SearchParameter](searchparameter.html): Intended jurisdiction for the search parameter
+* [StructureDefinition](structuredefinition.html): Intended jurisdiction for the structure definition
+* [StructureMap](structuremap.html): Intended jurisdiction for the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): Intended jurisdiction for the terminology capabilities
+* [ValueSet](valueset.html): Intended jurisdiction for the value set
+
+    */
+  jurisdiction(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderNamingSystem {
+    this.builder.token("jurisdiction", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): Computationally friendly name of the capability statement
+* [CodeSystem](codesystem.html): Computationally friendly name of the code system
+* [CompartmentDefinition](compartmentdefinition.html): Computationally friendly name of the compartment definition
+* [ConceptMap](conceptmap.html): Computationally friendly name of the concept map
+* [GraphDefinition](graphdefinition.html): Computationally friendly name of the graph definition
+* [ImplementationGuide](implementationguide.html): Computationally friendly name of the implementation guide
+* [MessageDefinition](messagedefinition.html): Computationally friendly name of the message definition
+* [NamingSystem](namingsystem.html): Computationally friendly name of the naming system
+* [OperationDefinition](operationdefinition.html): Computationally friendly name of the operation definition
+* [SearchParameter](searchparameter.html): Computationally friendly name of the search parameter
+* [StructureDefinition](structuredefinition.html): Computationally friendly name of the structure definition
+* [StructureMap](structuremap.html): Computationally friendly name of the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): Computationally friendly name of the terminology capabilities
+* [ValueSet](valueset.html): Computationally friendly name of the value set
+
+    */
+  name(
+    value: Parameters<FhirSearchBuilder["string"]>[1],
+    modifier?: StringModifier | null | undefined
+  ): ResourceSearchBuilderNamingSystem {
+    this.builder.string("name", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): Name of the publisher of the capability statement
+* [CodeSystem](codesystem.html): Name of the publisher of the code system
+* [CompartmentDefinition](compartmentdefinition.html): Name of the publisher of the compartment definition
+* [ConceptMap](conceptmap.html): Name of the publisher of the concept map
+* [GraphDefinition](graphdefinition.html): Name of the publisher of the graph definition
+* [ImplementationGuide](implementationguide.html): Name of the publisher of the implementation guide
+* [MessageDefinition](messagedefinition.html): Name of the publisher of the message definition
+* [NamingSystem](namingsystem.html): Name of the publisher of the naming system
+* [OperationDefinition](operationdefinition.html): Name of the publisher of the operation definition
+* [SearchParameter](searchparameter.html): Name of the publisher of the search parameter
+* [StructureDefinition](structuredefinition.html): Name of the publisher of the structure definition
+* [StructureMap](structuremap.html): Name of the publisher of the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): Name of the publisher of the terminology capabilities
+* [ValueSet](valueset.html): Name of the publisher of the value set
+
+    */
+  publisher(
+    value: Parameters<FhirSearchBuilder["string"]>[1],
+    modifier?: StringModifier | null | undefined
+  ): ResourceSearchBuilderNamingSystem {
+    this.builder.string("publisher", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): The current status of the capability statement
+* [CodeSystem](codesystem.html): The current status of the code system
+* [CompartmentDefinition](compartmentdefinition.html): The current status of the compartment definition
+* [ConceptMap](conceptmap.html): The current status of the concept map
+* [GraphDefinition](graphdefinition.html): The current status of the graph definition
+* [ImplementationGuide](implementationguide.html): The current status of the implementation guide
+* [MessageDefinition](messagedefinition.html): The current status of the message definition
+* [NamingSystem](namingsystem.html): The current status of the naming system
+* [OperationDefinition](operationdefinition.html): The current status of the operation definition
+* [SearchParameter](searchparameter.html): The current status of the search parameter
+* [StructureDefinition](structuredefinition.html): The current status of the structure definition
+* [StructureMap](structuremap.html): The current status of the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): The current status of the terminology capabilities
+* [ValueSet](valueset.html): The current status of the value set
+
+    */
+  status(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderNamingSystem {
+    this.builder.token("status", value, modifier);
+    return this;
+  }
+
+  /**
    * Name of an individual to contact
    */
   contact(
@@ -26042,6 +31920,24 @@ class ResourceSearchBuilderNamingSystem extends BaseResourceSearchBuilder<Resour
 }
 
 export type SortOrderNamingSystem =
+  | "context"
+  | "-context"
+  | "context-quantity"
+  | "-context-quantity"
+  | "context-type"
+  | "-context-type"
+  | "date"
+  | "-date"
+  | "description"
+  | "-description"
+  | "jurisdiction"
+  | "-jurisdiction"
+  | "name"
+  | "-name"
+  | "publisher"
+  | "-publisher"
+  | "status"
+  | "-status"
   | "contact"
   | "-contact"
   | "id-type"
@@ -26218,6 +32114,119 @@ class ResourceSearchBuilderNutritionOrder extends BaseResourceSearchBuilder<Reso
   }
 
   /**
+    * Multiple Resources: 
+
+* [AllergyIntolerance](allergyintolerance.html): External ids for this item
+* [CarePlan](careplan.html): External Ids for this plan
+* [CareTeam](careteam.html): External Ids for this team
+* [Composition](composition.html): Version-independent identifier for the Composition
+* [Condition](condition.html): A unique identifier of the condition record
+* [Consent](consent.html): Identifier for this record (external references)
+* [DetectedIssue](detectedissue.html): Unique id for the detected issue
+* [DeviceRequest](devicerequest.html): Business identifier for request/order
+* [DiagnosticReport](diagnosticreport.html): An identifier for the report
+* [DocumentManifest](documentmanifest.html): Unique Identifier for the set of documents
+* [DocumentReference](documentreference.html): Master Version Specific Identifier
+* [Encounter](encounter.html): Identifier(s) by which this encounter is known
+* [EpisodeOfCare](episodeofcare.html): Business Identifier(s) relevant for this EpisodeOfCare
+* [FamilyMemberHistory](familymemberhistory.html): A search by a record identifier
+* [Goal](goal.html): External Ids for this goal
+* [ImagingStudy](imagingstudy.html): Identifiers for the Study, such as DICOM Study Instance UID and Accession number
+* [Immunization](immunization.html): Business identifier
+* [List](list.html): Business identifier
+* [MedicationAdministration](medicationadministration.html): Return administrations with this external identifier
+* [MedicationDispense](medicationdispense.html): Returns dispenses with this external identifier
+* [MedicationRequest](medicationrequest.html): Return prescriptions with this external identifier
+* [MedicationStatement](medicationstatement.html): Return statements with this external identifier
+* [NutritionOrder](nutritionorder.html): Return nutrition orders with this external identifier
+* [Observation](observation.html): The unique id for a particular observation
+* [Procedure](procedure.html): A unique identifier for a procedure
+* [RiskAssessment](riskassessment.html): Unique identifier for the assessment
+* [ServiceRequest](servicerequest.html): Identifiers assigned to this order
+* [SupplyDelivery](supplydelivery.html): External identifier
+* [SupplyRequest](supplyrequest.html): Business Identifier for SupplyRequest
+* [VisionPrescription](visionprescription.html): Return prescriptions with this external identifier
+
+    */
+  identifier(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderNutritionOrder {
+    this.builder.token("identifier", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [AllergyIntolerance](allergyintolerance.html): Who the sensitivity is for
+* [CarePlan](careplan.html): Who the care plan is for
+* [CareTeam](careteam.html): Who care team is for
+* [ClinicalImpression](clinicalimpression.html): Patient or group assessed
+* [Composition](composition.html): Who and/or what the composition is about
+* [Condition](condition.html): Who has the condition?
+* [Consent](consent.html): Who the consent applies to
+* [DetectedIssue](detectedissue.html): Associated patient
+* [DeviceRequest](devicerequest.html): Individual the service is ordered for
+* [DeviceUseStatement](deviceusestatement.html): Search by subject - a patient
+* [DiagnosticReport](diagnosticreport.html): The subject of the report if a patient
+* [DocumentManifest](documentmanifest.html): The subject of the set of documents
+* [DocumentReference](documentreference.html): Who/what is the subject of the document
+* [Encounter](encounter.html): The patient or group present at the encounter
+* [EpisodeOfCare](episodeofcare.html): The patient who is the focus of this episode of care
+* [FamilyMemberHistory](familymemberhistory.html): The identity of a subject to list family member history items for
+* [Flag](flag.html): The identity of a subject to list flags for
+* [Goal](goal.html): Who this goal is intended for
+* [ImagingStudy](imagingstudy.html): Who the study is about
+* [Immunization](immunization.html): The patient for the vaccination record
+* [List](list.html): If all resources have the same subject
+* [MedicationAdministration](medicationadministration.html): The identity of a patient to list administrations  for
+* [MedicationDispense](medicationdispense.html): The identity of a patient to list dispenses  for
+* [MedicationRequest](medicationrequest.html): Returns prescriptions for a specific patient
+* [MedicationStatement](medicationstatement.html): Returns statements for a specific patient.
+* [NutritionOrder](nutritionorder.html): The identity of the person who requires the diet, formula or nutritional supplement
+* [Observation](observation.html): The subject that the observation is about (if patient)
+* [Procedure](procedure.html): Search by subject - a patient
+* [RiskAssessment](riskassessment.html): Who/what does assessment apply to?
+* [ServiceRequest](servicerequest.html): Search by subject - a patient
+* [SupplyDelivery](supplydelivery.html): Patient for whom the item is supplied
+* [VisionPrescription](visionprescription.html): The identity of a patient to list dispenses for
+
+    */
+  patient(
+    id: Parameters<FhirSearchBuilder["reference"]>[1],
+    modifier?: ":identifier" | ResourceType | null | undefined
+  ): ResourceSearchBuilderNutritionOrder {
+    this.builder.reference("patient", id, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [Composition](composition.html): Context of the Composition
+* [DeviceRequest](devicerequest.html): Encounter during which request was created
+* [DiagnosticReport](diagnosticreport.html): The Encounter when the order was made
+* [DocumentReference](documentreference.html): Context of the document  content
+* [Flag](flag.html): Alert relevant during encounter
+* [List](list.html): Context in which list created
+* [NutritionOrder](nutritionorder.html): Return nutrition orders with this encounter identifier
+* [Observation](observation.html): Encounter related to the observation
+* [Procedure](procedure.html): Encounter created as part of
+* [RiskAssessment](riskassessment.html): Where was assessment performed?
+* [ServiceRequest](servicerequest.html): An encounter in which this request is made
+* [VisionPrescription](visionprescription.html): Return prescriptions with this encounter identifier
+
+    */
+  encounter(
+    id: Parameters<FhirSearchBuilder["reference"]>[1],
+    modifier?: ":identifier" | ResourceType | null | undefined
+  ): ResourceSearchBuilderNutritionOrder {
+    this.builder.reference("encounter", id, modifier);
+    return this;
+  }
+
+  /**
    * Type of module component to add to the feeding
    */
   additive(
@@ -26318,6 +32327,12 @@ class ResourceSearchBuilderNutritionOrder extends BaseResourceSearchBuilder<Reso
 }
 
 export type SortOrderNutritionOrder =
+  | "identifier"
+  | "-identifier"
+  | "patient"
+  | "-patient"
+  | "encounter"
+  | "-encounter"
   | "additive"
   | "-additive"
   | "datetime"
@@ -26683,6 +32698,176 @@ class ResourceSearchBuilderObservation extends BaseResourceSearchBuilder<Resourc
   }
 
   /**
+    * Multiple Resources: 
+
+* [AllergyIntolerance](allergyintolerance.html): Code that identifies the allergy or intolerance
+* [Condition](condition.html): Code for the condition
+* [DeviceRequest](devicerequest.html): Code for what is being requested/ordered
+* [DiagnosticReport](diagnosticreport.html): The code for the report, as opposed to codes for the atomic results, which are the names on the observation resource referred to from the result
+* [FamilyMemberHistory](familymemberhistory.html): A search by a condition code
+* [List](list.html): What the purpose of this list is
+* [Medication](medication.html): Returns medications for a specific code
+* [MedicationAdministration](medicationadministration.html): Return administrations of this medication code
+* [MedicationDispense](medicationdispense.html): Returns dispenses of this medicine code
+* [MedicationRequest](medicationrequest.html): Return prescriptions of this medication code
+* [MedicationStatement](medicationstatement.html): Return statements of this medication code
+* [Observation](observation.html): The code of the observation type
+* [Procedure](procedure.html): A code to identify a  procedure
+* [ServiceRequest](servicerequest.html): What is being requested/ordered
+
+    */
+  code(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderObservation {
+    this.builder.token("code", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [AllergyIntolerance](allergyintolerance.html): Date first version of the resource instance was recorded
+* [CarePlan](careplan.html): Time period plan covers
+* [CareTeam](careteam.html): Time period team covers
+* [ClinicalImpression](clinicalimpression.html): When the assessment was documented
+* [Composition](composition.html): Composition editing time
+* [Consent](consent.html): When this Consent was created or indexed
+* [DiagnosticReport](diagnosticreport.html): The clinically relevant time of the report
+* [Encounter](encounter.html): A date within the period the Encounter lasted
+* [EpisodeOfCare](episodeofcare.html): The provided date search value falls within the episode of care's period
+* [FamilyMemberHistory](familymemberhistory.html): When history was recorded or last updated
+* [Flag](flag.html): Time period when flag is active
+* [Immunization](immunization.html): Vaccination  (non)-Administration Date
+* [List](list.html): When the list was prepared
+* [Observation](observation.html): Obtained date/time. If the obtained element is a period, a date that falls in the period
+* [Procedure](procedure.html): When the procedure was performed
+* [RiskAssessment](riskassessment.html): When was assessment made?
+* [SupplyRequest](supplyrequest.html): When the request was made
+
+    */
+  date(
+    value: Parameters<FhirSearchBuilder["date"]>[1],
+    prefix?: Prefix | null | undefined
+  ): ResourceSearchBuilderObservation {
+    this.builder.date("date", value, prefix);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [AllergyIntolerance](allergyintolerance.html): External ids for this item
+* [CarePlan](careplan.html): External Ids for this plan
+* [CareTeam](careteam.html): External Ids for this team
+* [Composition](composition.html): Version-independent identifier for the Composition
+* [Condition](condition.html): A unique identifier of the condition record
+* [Consent](consent.html): Identifier for this record (external references)
+* [DetectedIssue](detectedissue.html): Unique id for the detected issue
+* [DeviceRequest](devicerequest.html): Business identifier for request/order
+* [DiagnosticReport](diagnosticreport.html): An identifier for the report
+* [DocumentManifest](documentmanifest.html): Unique Identifier for the set of documents
+* [DocumentReference](documentreference.html): Master Version Specific Identifier
+* [Encounter](encounter.html): Identifier(s) by which this encounter is known
+* [EpisodeOfCare](episodeofcare.html): Business Identifier(s) relevant for this EpisodeOfCare
+* [FamilyMemberHistory](familymemberhistory.html): A search by a record identifier
+* [Goal](goal.html): External Ids for this goal
+* [ImagingStudy](imagingstudy.html): Identifiers for the Study, such as DICOM Study Instance UID and Accession number
+* [Immunization](immunization.html): Business identifier
+* [List](list.html): Business identifier
+* [MedicationAdministration](medicationadministration.html): Return administrations with this external identifier
+* [MedicationDispense](medicationdispense.html): Returns dispenses with this external identifier
+* [MedicationRequest](medicationrequest.html): Return prescriptions with this external identifier
+* [MedicationStatement](medicationstatement.html): Return statements with this external identifier
+* [NutritionOrder](nutritionorder.html): Return nutrition orders with this external identifier
+* [Observation](observation.html): The unique id for a particular observation
+* [Procedure](procedure.html): A unique identifier for a procedure
+* [RiskAssessment](riskassessment.html): Unique identifier for the assessment
+* [ServiceRequest](servicerequest.html): Identifiers assigned to this order
+* [SupplyDelivery](supplydelivery.html): External identifier
+* [SupplyRequest](supplyrequest.html): Business Identifier for SupplyRequest
+* [VisionPrescription](visionprescription.html): Return prescriptions with this external identifier
+
+    */
+  identifier(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderObservation {
+    this.builder.token("identifier", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [AllergyIntolerance](allergyintolerance.html): Who the sensitivity is for
+* [CarePlan](careplan.html): Who the care plan is for
+* [CareTeam](careteam.html): Who care team is for
+* [ClinicalImpression](clinicalimpression.html): Patient or group assessed
+* [Composition](composition.html): Who and/or what the composition is about
+* [Condition](condition.html): Who has the condition?
+* [Consent](consent.html): Who the consent applies to
+* [DetectedIssue](detectedissue.html): Associated patient
+* [DeviceRequest](devicerequest.html): Individual the service is ordered for
+* [DeviceUseStatement](deviceusestatement.html): Search by subject - a patient
+* [DiagnosticReport](diagnosticreport.html): The subject of the report if a patient
+* [DocumentManifest](documentmanifest.html): The subject of the set of documents
+* [DocumentReference](documentreference.html): Who/what is the subject of the document
+* [Encounter](encounter.html): The patient or group present at the encounter
+* [EpisodeOfCare](episodeofcare.html): The patient who is the focus of this episode of care
+* [FamilyMemberHistory](familymemberhistory.html): The identity of a subject to list family member history items for
+* [Flag](flag.html): The identity of a subject to list flags for
+* [Goal](goal.html): Who this goal is intended for
+* [ImagingStudy](imagingstudy.html): Who the study is about
+* [Immunization](immunization.html): The patient for the vaccination record
+* [List](list.html): If all resources have the same subject
+* [MedicationAdministration](medicationadministration.html): The identity of a patient to list administrations  for
+* [MedicationDispense](medicationdispense.html): The identity of a patient to list dispenses  for
+* [MedicationRequest](medicationrequest.html): Returns prescriptions for a specific patient
+* [MedicationStatement](medicationstatement.html): Returns statements for a specific patient.
+* [NutritionOrder](nutritionorder.html): The identity of the person who requires the diet, formula or nutritional supplement
+* [Observation](observation.html): The subject that the observation is about (if patient)
+* [Procedure](procedure.html): Search by subject - a patient
+* [RiskAssessment](riskassessment.html): Who/what does assessment apply to?
+* [ServiceRequest](servicerequest.html): Search by subject - a patient
+* [SupplyDelivery](supplydelivery.html): Patient for whom the item is supplied
+* [VisionPrescription](visionprescription.html): The identity of a patient to list dispenses for
+
+    */
+  patient(
+    id: Parameters<FhirSearchBuilder["reference"]>[1],
+    modifier?: ":identifier" | ResourceType | null | undefined
+  ): ResourceSearchBuilderObservation {
+    this.builder.reference("patient", id, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [Composition](composition.html): Context of the Composition
+* [DeviceRequest](devicerequest.html): Encounter during which request was created
+* [DiagnosticReport](diagnosticreport.html): The Encounter when the order was made
+* [DocumentReference](documentreference.html): Context of the document  content
+* [Flag](flag.html): Alert relevant during encounter
+* [List](list.html): Context in which list created
+* [NutritionOrder](nutritionorder.html): Return nutrition orders with this encounter identifier
+* [Observation](observation.html): Encounter related to the observation
+* [Procedure](procedure.html): Encounter created as part of
+* [RiskAssessment](riskassessment.html): Where was assessment performed?
+* [ServiceRequest](servicerequest.html): An encounter in which this request is made
+* [VisionPrescription](visionprescription.html): Return prescriptions with this encounter identifier
+
+    */
+  encounter(
+    id: Parameters<FhirSearchBuilder["reference"]>[1],
+    modifier?: ":identifier" | ResourceType | null | undefined
+  ): ResourceSearchBuilderObservation {
+    this.builder.reference("encounter", id, modifier);
+    return this;
+  }
+
+  /**
    * Reference to the service request.
    */
   basedon(
@@ -26959,6 +33144,16 @@ class ResourceSearchBuilderObservation extends BaseResourceSearchBuilder<Resourc
 }
 
 export type SortOrderObservation =
+  | "code"
+  | "-code"
+  | "date"
+  | "-date"
+  | "identifier"
+  | "-identifier"
+  | "patient"
+  | "-patient"
+  | "encounter"
+  | "-encounter"
   | "based-on"
   | "-based-on"
   | "category"
@@ -27316,6 +33511,323 @@ class ResourceSearchBuilderOperationDefinition extends BaseResourceSearchBuilder
   }
 
   /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): A use context assigned to the capability statement
+* [CodeSystem](codesystem.html): A use context assigned to the code system
+* [CompartmentDefinition](compartmentdefinition.html): A use context assigned to the compartment definition
+* [ConceptMap](conceptmap.html): A use context assigned to the concept map
+* [GraphDefinition](graphdefinition.html): A use context assigned to the graph definition
+* [ImplementationGuide](implementationguide.html): A use context assigned to the implementation guide
+* [MessageDefinition](messagedefinition.html): A use context assigned to the message definition
+* [NamingSystem](namingsystem.html): A use context assigned to the naming system
+* [OperationDefinition](operationdefinition.html): A use context assigned to the operation definition
+* [SearchParameter](searchparameter.html): A use context assigned to the search parameter
+* [StructureDefinition](structuredefinition.html): A use context assigned to the structure definition
+* [StructureMap](structuremap.html): A use context assigned to the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): A use context assigned to the terminology capabilities
+* [ValueSet](valueset.html): A use context assigned to the value set
+
+    */
+  context(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderOperationDefinition {
+    this.builder.token("context", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): A quantity- or range-valued use context assigned to the capability statement
+* [CodeSystem](codesystem.html): A quantity- or range-valued use context assigned to the code system
+* [CompartmentDefinition](compartmentdefinition.html): A quantity- or range-valued use context assigned to the compartment definition
+* [ConceptMap](conceptmap.html): A quantity- or range-valued use context assigned to the concept map
+* [GraphDefinition](graphdefinition.html): A quantity- or range-valued use context assigned to the graph definition
+* [ImplementationGuide](implementationguide.html): A quantity- or range-valued use context assigned to the implementation guide
+* [MessageDefinition](messagedefinition.html): A quantity- or range-valued use context assigned to the message definition
+* [NamingSystem](namingsystem.html): A quantity- or range-valued use context assigned to the naming system
+* [OperationDefinition](operationdefinition.html): A quantity- or range-valued use context assigned to the operation definition
+* [SearchParameter](searchparameter.html): A quantity- or range-valued use context assigned to the search parameter
+* [StructureDefinition](structuredefinition.html): A quantity- or range-valued use context assigned to the structure definition
+* [StructureMap](structuremap.html): A quantity- or range-valued use context assigned to the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): A quantity- or range-valued use context assigned to the terminology capabilities
+* [ValueSet](valueset.html): A quantity- or range-valued use context assigned to the value set
+
+    */
+  contextquantity(
+    number: Parameters<FhirSearchBuilder["quantity"]>[1],
+    prefix?: Prefix | null | undefined
+  ): ResourceSearchBuilderOperationDefinition {
+    this.builder.quantity("context-quantity", number, prefix);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): A type of use context assigned to the capability statement
+* [CodeSystem](codesystem.html): A type of use context assigned to the code system
+* [CompartmentDefinition](compartmentdefinition.html): A type of use context assigned to the compartment definition
+* [ConceptMap](conceptmap.html): A type of use context assigned to the concept map
+* [GraphDefinition](graphdefinition.html): A type of use context assigned to the graph definition
+* [ImplementationGuide](implementationguide.html): A type of use context assigned to the implementation guide
+* [MessageDefinition](messagedefinition.html): A type of use context assigned to the message definition
+* [NamingSystem](namingsystem.html): A type of use context assigned to the naming system
+* [OperationDefinition](operationdefinition.html): A type of use context assigned to the operation definition
+* [SearchParameter](searchparameter.html): A type of use context assigned to the search parameter
+* [StructureDefinition](structuredefinition.html): A type of use context assigned to the structure definition
+* [StructureMap](structuremap.html): A type of use context assigned to the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): A type of use context assigned to the terminology capabilities
+* [ValueSet](valueset.html): A type of use context assigned to the value set
+
+    */
+  contexttype(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderOperationDefinition {
+    this.builder.token("context-type", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): The capability statement publication date
+* [CodeSystem](codesystem.html): The code system publication date
+* [CompartmentDefinition](compartmentdefinition.html): The compartment definition publication date
+* [ConceptMap](conceptmap.html): The concept map publication date
+* [GraphDefinition](graphdefinition.html): The graph definition publication date
+* [ImplementationGuide](implementationguide.html): The implementation guide publication date
+* [MessageDefinition](messagedefinition.html): The message definition publication date
+* [NamingSystem](namingsystem.html): The naming system publication date
+* [OperationDefinition](operationdefinition.html): The operation definition publication date
+* [SearchParameter](searchparameter.html): The search parameter publication date
+* [StructureDefinition](structuredefinition.html): The structure definition publication date
+* [StructureMap](structuremap.html): The structure map publication date
+* [TerminologyCapabilities](terminologycapabilities.html): The terminology capabilities publication date
+* [ValueSet](valueset.html): The value set publication date
+
+    */
+  date(
+    value: Parameters<FhirSearchBuilder["date"]>[1],
+    prefix?: Prefix | null | undefined
+  ): ResourceSearchBuilderOperationDefinition {
+    this.builder.date("date", value, prefix);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): The description of the capability statement
+* [CodeSystem](codesystem.html): The description of the code system
+* [CompartmentDefinition](compartmentdefinition.html): The description of the compartment definition
+* [ConceptMap](conceptmap.html): The description of the concept map
+* [GraphDefinition](graphdefinition.html): The description of the graph definition
+* [ImplementationGuide](implementationguide.html): The description of the implementation guide
+* [MessageDefinition](messagedefinition.html): The description of the message definition
+* [NamingSystem](namingsystem.html): The description of the naming system
+* [OperationDefinition](operationdefinition.html): The description of the operation definition
+* [SearchParameter](searchparameter.html): The description of the search parameter
+* [StructureDefinition](structuredefinition.html): The description of the structure definition
+* [StructureMap](structuremap.html): The description of the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): The description of the terminology capabilities
+* [ValueSet](valueset.html): The description of the value set
+
+    */
+  description(
+    value: Parameters<FhirSearchBuilder["string"]>[1],
+    modifier?: StringModifier | null | undefined
+  ): ResourceSearchBuilderOperationDefinition {
+    this.builder.string("description", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): Intended jurisdiction for the capability statement
+* [CodeSystem](codesystem.html): Intended jurisdiction for the code system
+* [ConceptMap](conceptmap.html): Intended jurisdiction for the concept map
+* [GraphDefinition](graphdefinition.html): Intended jurisdiction for the graph definition
+* [ImplementationGuide](implementationguide.html): Intended jurisdiction for the implementation guide
+* [MessageDefinition](messagedefinition.html): Intended jurisdiction for the message definition
+* [NamingSystem](namingsystem.html): Intended jurisdiction for the naming system
+* [OperationDefinition](operationdefinition.html): Intended jurisdiction for the operation definition
+* [SearchParameter](searchparameter.html): Intended jurisdiction for the search parameter
+* [StructureDefinition](structuredefinition.html): Intended jurisdiction for the structure definition
+* [StructureMap](structuremap.html): Intended jurisdiction for the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): Intended jurisdiction for the terminology capabilities
+* [ValueSet](valueset.html): Intended jurisdiction for the value set
+
+    */
+  jurisdiction(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderOperationDefinition {
+    this.builder.token("jurisdiction", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): Computationally friendly name of the capability statement
+* [CodeSystem](codesystem.html): Computationally friendly name of the code system
+* [CompartmentDefinition](compartmentdefinition.html): Computationally friendly name of the compartment definition
+* [ConceptMap](conceptmap.html): Computationally friendly name of the concept map
+* [GraphDefinition](graphdefinition.html): Computationally friendly name of the graph definition
+* [ImplementationGuide](implementationguide.html): Computationally friendly name of the implementation guide
+* [MessageDefinition](messagedefinition.html): Computationally friendly name of the message definition
+* [NamingSystem](namingsystem.html): Computationally friendly name of the naming system
+* [OperationDefinition](operationdefinition.html): Computationally friendly name of the operation definition
+* [SearchParameter](searchparameter.html): Computationally friendly name of the search parameter
+* [StructureDefinition](structuredefinition.html): Computationally friendly name of the structure definition
+* [StructureMap](structuremap.html): Computationally friendly name of the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): Computationally friendly name of the terminology capabilities
+* [ValueSet](valueset.html): Computationally friendly name of the value set
+
+    */
+  name(
+    value: Parameters<FhirSearchBuilder["string"]>[1],
+    modifier?: StringModifier | null | undefined
+  ): ResourceSearchBuilderOperationDefinition {
+    this.builder.string("name", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): Name of the publisher of the capability statement
+* [CodeSystem](codesystem.html): Name of the publisher of the code system
+* [CompartmentDefinition](compartmentdefinition.html): Name of the publisher of the compartment definition
+* [ConceptMap](conceptmap.html): Name of the publisher of the concept map
+* [GraphDefinition](graphdefinition.html): Name of the publisher of the graph definition
+* [ImplementationGuide](implementationguide.html): Name of the publisher of the implementation guide
+* [MessageDefinition](messagedefinition.html): Name of the publisher of the message definition
+* [NamingSystem](namingsystem.html): Name of the publisher of the naming system
+* [OperationDefinition](operationdefinition.html): Name of the publisher of the operation definition
+* [SearchParameter](searchparameter.html): Name of the publisher of the search parameter
+* [StructureDefinition](structuredefinition.html): Name of the publisher of the structure definition
+* [StructureMap](structuremap.html): Name of the publisher of the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): Name of the publisher of the terminology capabilities
+* [ValueSet](valueset.html): Name of the publisher of the value set
+
+    */
+  publisher(
+    value: Parameters<FhirSearchBuilder["string"]>[1],
+    modifier?: StringModifier | null | undefined
+  ): ResourceSearchBuilderOperationDefinition {
+    this.builder.string("publisher", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): The current status of the capability statement
+* [CodeSystem](codesystem.html): The current status of the code system
+* [CompartmentDefinition](compartmentdefinition.html): The current status of the compartment definition
+* [ConceptMap](conceptmap.html): The current status of the concept map
+* [GraphDefinition](graphdefinition.html): The current status of the graph definition
+* [ImplementationGuide](implementationguide.html): The current status of the implementation guide
+* [MessageDefinition](messagedefinition.html): The current status of the message definition
+* [NamingSystem](namingsystem.html): The current status of the naming system
+* [OperationDefinition](operationdefinition.html): The current status of the operation definition
+* [SearchParameter](searchparameter.html): The current status of the search parameter
+* [StructureDefinition](structuredefinition.html): The current status of the structure definition
+* [StructureMap](structuremap.html): The current status of the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): The current status of the terminology capabilities
+* [ValueSet](valueset.html): The current status of the value set
+
+    */
+  status(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderOperationDefinition {
+    this.builder.token("status", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): The human-friendly name of the capability statement
+* [CodeSystem](codesystem.html): The human-friendly name of the code system
+* [ConceptMap](conceptmap.html): The human-friendly name of the concept map
+* [ImplementationGuide](implementationguide.html): The human-friendly name of the implementation guide
+* [MessageDefinition](messagedefinition.html): The human-friendly name of the message definition
+* [OperationDefinition](operationdefinition.html): The human-friendly name of the operation definition
+* [StructureDefinition](structuredefinition.html): The human-friendly name of the structure definition
+* [StructureMap](structuremap.html): The human-friendly name of the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): The human-friendly name of the terminology capabilities
+* [ValueSet](valueset.html): The human-friendly name of the value set
+
+    */
+  title(
+    value: Parameters<FhirSearchBuilder["string"]>[1],
+    modifier?: StringModifier | null | undefined
+  ): ResourceSearchBuilderOperationDefinition {
+    this.builder.string("title", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): The uri that identifies the capability statement
+* [CodeSystem](codesystem.html): The uri that identifies the code system
+* [CompartmentDefinition](compartmentdefinition.html): The uri that identifies the compartment definition
+* [ConceptMap](conceptmap.html): The uri that identifies the concept map
+* [GraphDefinition](graphdefinition.html): The uri that identifies the graph definition
+* [ImplementationGuide](implementationguide.html): The uri that identifies the implementation guide
+* [MessageDefinition](messagedefinition.html): The uri that identifies the message definition
+* [OperationDefinition](operationdefinition.html): The uri that identifies the operation definition
+* [SearchParameter](searchparameter.html): The uri that identifies the search parameter
+* [StructureDefinition](structuredefinition.html): The uri that identifies the structure definition
+* [StructureMap](structuremap.html): The uri that identifies the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): The uri that identifies the terminology capabilities
+* [ValueSet](valueset.html): The uri that identifies the value set
+
+    */
+  url(
+    value: Parameters<FhirSearchBuilder["uri"]>[1],
+    modifier?: UriModifier | null | undefined
+  ): ResourceSearchBuilderOperationDefinition {
+    this.builder.uri("url", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): The business version of the capability statement
+* [CodeSystem](codesystem.html): The business version of the code system
+* [CompartmentDefinition](compartmentdefinition.html): The business version of the compartment definition
+* [ConceptMap](conceptmap.html): The business version of the concept map
+* [GraphDefinition](graphdefinition.html): The business version of the graph definition
+* [ImplementationGuide](implementationguide.html): The business version of the implementation guide
+* [MessageDefinition](messagedefinition.html): The business version of the message definition
+* [OperationDefinition](operationdefinition.html): The business version of the operation definition
+* [SearchParameter](searchparameter.html): The business version of the search parameter
+* [StructureDefinition](structuredefinition.html): The business version of the structure definition
+* [StructureMap](structuremap.html): The business version of the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): The business version of the terminology capabilities
+* [ValueSet](valueset.html): The business version of the value set
+
+    */
+  version(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderOperationDefinition {
+    this.builder.token("version", value, modifier);
+    return this;
+  }
+
+  /**
    * Marks this as a profile of the base
    */
   base(
@@ -27405,6 +33917,30 @@ class ResourceSearchBuilderOperationDefinition extends BaseResourceSearchBuilder
 }
 
 export type SortOrderOperationDefinition =
+  | "context"
+  | "-context"
+  | "context-quantity"
+  | "-context-quantity"
+  | "context-type"
+  | "-context-type"
+  | "date"
+  | "-date"
+  | "description"
+  | "-description"
+  | "jurisdiction"
+  | "-jurisdiction"
+  | "name"
+  | "-name"
+  | "publisher"
+  | "-publisher"
+  | "status"
+  | "-status"
+  | "title"
+  | "-title"
+  | "url"
+  | "-url"
+  | "version"
+  | "-version"
   | "base"
   | "-base"
   | "code"
@@ -28720,6 +35256,124 @@ class ResourceSearchBuilderPatient extends BaseResourceSearchBuilder<ResourceSea
   }
 
   /**
+    * Multiple Resources: 
+
+* [Patient](patient.html): A server defined search that may match any of the string fields in the Address, including line, city, district, state, country, postalCode, and/or text
+* [Person](person.html): A server defined search that may match any of the string fields in the Address, including line, city, district, state, country, postalCode, and/or text
+* [Practitioner](practitioner.html): A server defined search that may match any of the string fields in the Address, including line, city, district, state, country, postalCode, and/or text
+* [RelatedPerson](relatedperson.html): A server defined search that may match any of the string fields in the Address, including line, city, district, state, country, postalCode, and/or text
+
+    */
+  address(
+    value: Parameters<FhirSearchBuilder["string"]>[1],
+    modifier?: StringModifier | null | undefined
+  ): ResourceSearchBuilderPatient {
+    this.builder.string("address", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [Patient](patient.html): A city specified in an address
+* [Person](person.html): A city specified in an address
+* [Practitioner](practitioner.html): A city specified in an address
+* [RelatedPerson](relatedperson.html): A city specified in an address
+
+    */
+  addresscity(
+    value: Parameters<FhirSearchBuilder["string"]>[1],
+    modifier?: StringModifier | null | undefined
+  ): ResourceSearchBuilderPatient {
+    this.builder.string("address-city", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [Patient](patient.html): A country specified in an address
+* [Person](person.html): A country specified in an address
+* [Practitioner](practitioner.html): A country specified in an address
+* [RelatedPerson](relatedperson.html): A country specified in an address
+
+    */
+  addresscountry(
+    value: Parameters<FhirSearchBuilder["string"]>[1],
+    modifier?: StringModifier | null | undefined
+  ): ResourceSearchBuilderPatient {
+    this.builder.string("address-country", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [Patient](patient.html): A postalCode specified in an address
+* [Person](person.html): A postal code specified in an address
+* [Practitioner](practitioner.html): A postalCode specified in an address
+* [RelatedPerson](relatedperson.html): A postal code specified in an address
+
+    */
+  addresspostalcode(
+    value: Parameters<FhirSearchBuilder["string"]>[1],
+    modifier?: StringModifier | null | undefined
+  ): ResourceSearchBuilderPatient {
+    this.builder.string("address-postalcode", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [Patient](patient.html): A state specified in an address
+* [Person](person.html): A state specified in an address
+* [Practitioner](practitioner.html): A state specified in an address
+* [RelatedPerson](relatedperson.html): A state specified in an address
+
+    */
+  addressstate(
+    value: Parameters<FhirSearchBuilder["string"]>[1],
+    modifier?: StringModifier | null | undefined
+  ): ResourceSearchBuilderPatient {
+    this.builder.string("address-state", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [Patient](patient.html): A use code specified in an address
+* [Person](person.html): A use code specified in an address
+* [Practitioner](practitioner.html): A use code specified in an address
+* [RelatedPerson](relatedperson.html): A use code specified in an address
+
+    */
+  addressuse(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderPatient {
+    this.builder.token("address-use", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [Patient](patient.html): The patient's date of birth
+* [Person](person.html): The person's date of birth
+* [RelatedPerson](relatedperson.html): The Related Person's date of birth
+
+    */
+  birthdate(
+    value: Parameters<FhirSearchBuilder["date"]>[1],
+    prefix?: Prefix | null | undefined
+  ): ResourceSearchBuilderPatient {
+    this.builder.date("birthdate", value, prefix);
+    return this;
+  }
+
+  /**
    * The date of death has been provided and satisfies this search value
    */
   deathdate(
@@ -28742,6 +35396,56 @@ class ResourceSearchBuilderPatient extends BaseResourceSearchBuilder<ResourceSea
   }
 
   /**
+    * Multiple Resources: 
+
+* [Patient](patient.html): A value in an email contact
+* [Person](person.html): A value in an email contact
+* [Practitioner](practitioner.html): A value in an email contact
+* [PractitionerRole](practitionerrole.html): A value in an email contact
+* [RelatedPerson](relatedperson.html): A value in an email contact
+
+    */
+  email(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderPatient {
+    this.builder.token("email", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [Patient](patient.html): A portion of the family name of the patient
+* [Practitioner](practitioner.html): A portion of the family name
+
+    */
+  family(
+    value: Parameters<FhirSearchBuilder["string"]>[1],
+    modifier?: StringModifier | null | undefined
+  ): ResourceSearchBuilderPatient {
+    this.builder.string("family", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [Patient](patient.html): Gender of the patient
+* [Person](person.html): The gender of the person
+* [Practitioner](practitioner.html): Gender of the practitioner
+* [RelatedPerson](relatedperson.html): Gender of the related person
+
+    */
+  gender(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderPatient {
+    this.builder.token("gender", value, modifier);
+    return this;
+  }
+
+  /**
    * Patient's nominated general practitioner, not the organization that manages the record
    */
   generalpractitioner(
@@ -28749,6 +35453,21 @@ class ResourceSearchBuilderPatient extends BaseResourceSearchBuilder<ResourceSea
     modifier?: ":identifier" | ResourceType | null | undefined
   ): ResourceSearchBuilderPatient {
     this.builder.reference("general-practitioner", id, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [Patient](patient.html): A portion of the given name of the patient
+* [Practitioner](practitioner.html): A portion of the given name
+
+    */
+  given(
+    value: Parameters<FhirSearchBuilder["string"]>[1],
+    modifier?: StringModifier | null | undefined
+  ): ResourceSearchBuilderPatient {
+    this.builder.string("given", value, modifier);
     return this;
   }
 
@@ -28806,17 +35525,92 @@ class ResourceSearchBuilderPatient extends BaseResourceSearchBuilder<ResourceSea
     this.builder.reference("organization", id, modifier);
     return this;
   }
+
+  /**
+    * Multiple Resources: 
+
+* [Patient](patient.html): A value in a phone contact
+* [Person](person.html): A value in a phone contact
+* [Practitioner](practitioner.html): A value in a phone contact
+* [PractitionerRole](practitionerrole.html): A value in a phone contact
+* [RelatedPerson](relatedperson.html): A value in a phone contact
+
+    */
+  phone(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderPatient {
+    this.builder.token("phone", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [Patient](patient.html): A portion of either family or given name using some kind of phonetic matching algorithm
+* [Person](person.html): A portion of name using some kind of phonetic matching algorithm
+* [Practitioner](practitioner.html): A portion of either family or given name using some kind of phonetic matching algorithm
+* [RelatedPerson](relatedperson.html): A portion of name using some kind of phonetic matching algorithm
+
+    */
+  phonetic(
+    value: Parameters<FhirSearchBuilder["string"]>[1],
+    modifier?: StringModifier | null | undefined
+  ): ResourceSearchBuilderPatient {
+    this.builder.string("phonetic", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [Patient](patient.html): The value in any kind of telecom details of the patient
+* [Person](person.html): The value in any kind of contact
+* [Practitioner](practitioner.html): The value in any kind of contact
+* [PractitionerRole](practitionerrole.html): The value in any kind of contact
+* [RelatedPerson](relatedperson.html): The value in any kind of contact
+
+    */
+  telecom(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderPatient {
+    this.builder.token("telecom", value, modifier);
+    return this;
+  }
 }
 
 export type SortOrderPatient =
   | "active"
   | "-active"
+  | "address"
+  | "-address"
+  | "address-city"
+  | "-address-city"
+  | "address-country"
+  | "-address-country"
+  | "address-postalcode"
+  | "-address-postalcode"
+  | "address-state"
+  | "-address-state"
+  | "address-use"
+  | "-address-use"
+  | "birthdate"
+  | "-birthdate"
   | "death-date"
   | "-death-date"
   | "deceased"
   | "-deceased"
+  | "email"
+  | "-email"
+  | "family"
+  | "-family"
+  | "gender"
+  | "-gender"
   | "general-practitioner"
   | "-general-practitioner"
+  | "given"
+  | "-given"
   | "identifier"
   | "-identifier"
   | "language"
@@ -28826,7 +35620,13 @@ export type SortOrderPatient =
   | "name"
   | "-name"
   | "organization"
-  | "-organization";
+  | "-organization"
+  | "phone"
+  | "-phone"
+  | "phonetic"
+  | "-phonetic"
+  | "telecom"
+  | "-telecom";
 
 class ResourceSearchBuilderPaymentNotice extends BaseResourceSearchBuilder<ResourceSearchBuilderPaymentNotice> {
   readonly resourceType = "PaymentNotice";
@@ -29506,6 +36306,212 @@ class ResourceSearchBuilderPerson extends BaseResourceSearchBuilder<ResourceSear
   }
 
   /**
+    * Multiple Resources: 
+
+* [Patient](patient.html): A server defined search that may match any of the string fields in the Address, including line, city, district, state, country, postalCode, and/or text
+* [Person](person.html): A server defined search that may match any of the string fields in the Address, including line, city, district, state, country, postalCode, and/or text
+* [Practitioner](practitioner.html): A server defined search that may match any of the string fields in the Address, including line, city, district, state, country, postalCode, and/or text
+* [RelatedPerson](relatedperson.html): A server defined search that may match any of the string fields in the Address, including line, city, district, state, country, postalCode, and/or text
+
+    */
+  address(
+    value: Parameters<FhirSearchBuilder["string"]>[1],
+    modifier?: StringModifier | null | undefined
+  ): ResourceSearchBuilderPerson {
+    this.builder.string("address", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [Patient](patient.html): A city specified in an address
+* [Person](person.html): A city specified in an address
+* [Practitioner](practitioner.html): A city specified in an address
+* [RelatedPerson](relatedperson.html): A city specified in an address
+
+    */
+  addresscity(
+    value: Parameters<FhirSearchBuilder["string"]>[1],
+    modifier?: StringModifier | null | undefined
+  ): ResourceSearchBuilderPerson {
+    this.builder.string("address-city", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [Patient](patient.html): A country specified in an address
+* [Person](person.html): A country specified in an address
+* [Practitioner](practitioner.html): A country specified in an address
+* [RelatedPerson](relatedperson.html): A country specified in an address
+
+    */
+  addresscountry(
+    value: Parameters<FhirSearchBuilder["string"]>[1],
+    modifier?: StringModifier | null | undefined
+  ): ResourceSearchBuilderPerson {
+    this.builder.string("address-country", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [Patient](patient.html): A postalCode specified in an address
+* [Person](person.html): A postal code specified in an address
+* [Practitioner](practitioner.html): A postalCode specified in an address
+* [RelatedPerson](relatedperson.html): A postal code specified in an address
+
+    */
+  addresspostalcode(
+    value: Parameters<FhirSearchBuilder["string"]>[1],
+    modifier?: StringModifier | null | undefined
+  ): ResourceSearchBuilderPerson {
+    this.builder.string("address-postalcode", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [Patient](patient.html): A state specified in an address
+* [Person](person.html): A state specified in an address
+* [Practitioner](practitioner.html): A state specified in an address
+* [RelatedPerson](relatedperson.html): A state specified in an address
+
+    */
+  addressstate(
+    value: Parameters<FhirSearchBuilder["string"]>[1],
+    modifier?: StringModifier | null | undefined
+  ): ResourceSearchBuilderPerson {
+    this.builder.string("address-state", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [Patient](patient.html): A use code specified in an address
+* [Person](person.html): A use code specified in an address
+* [Practitioner](practitioner.html): A use code specified in an address
+* [RelatedPerson](relatedperson.html): A use code specified in an address
+
+    */
+  addressuse(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderPerson {
+    this.builder.token("address-use", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [Patient](patient.html): The patient's date of birth
+* [Person](person.html): The person's date of birth
+* [RelatedPerson](relatedperson.html): The Related Person's date of birth
+
+    */
+  birthdate(
+    value: Parameters<FhirSearchBuilder["date"]>[1],
+    prefix?: Prefix | null | undefined
+  ): ResourceSearchBuilderPerson {
+    this.builder.date("birthdate", value, prefix);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [Patient](patient.html): A value in an email contact
+* [Person](person.html): A value in an email contact
+* [Practitioner](practitioner.html): A value in an email contact
+* [PractitionerRole](practitionerrole.html): A value in an email contact
+* [RelatedPerson](relatedperson.html): A value in an email contact
+
+    */
+  email(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderPerson {
+    this.builder.token("email", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [Patient](patient.html): Gender of the patient
+* [Person](person.html): The gender of the person
+* [Practitioner](practitioner.html): Gender of the practitioner
+* [RelatedPerson](relatedperson.html): Gender of the related person
+
+    */
+  gender(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderPerson {
+    this.builder.token("gender", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [Patient](patient.html): A value in a phone contact
+* [Person](person.html): A value in a phone contact
+* [Practitioner](practitioner.html): A value in a phone contact
+* [PractitionerRole](practitionerrole.html): A value in a phone contact
+* [RelatedPerson](relatedperson.html): A value in a phone contact
+
+    */
+  phone(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderPerson {
+    this.builder.token("phone", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [Patient](patient.html): A portion of either family or given name using some kind of phonetic matching algorithm
+* [Person](person.html): A portion of name using some kind of phonetic matching algorithm
+* [Practitioner](practitioner.html): A portion of either family or given name using some kind of phonetic matching algorithm
+* [RelatedPerson](relatedperson.html): A portion of name using some kind of phonetic matching algorithm
+
+    */
+  phonetic(
+    value: Parameters<FhirSearchBuilder["string"]>[1],
+    modifier?: StringModifier | null | undefined
+  ): ResourceSearchBuilderPerson {
+    this.builder.string("phonetic", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [Patient](patient.html): The value in any kind of telecom details of the patient
+* [Person](person.html): The value in any kind of contact
+* [Practitioner](practitioner.html): The value in any kind of contact
+* [PractitionerRole](practitionerrole.html): The value in any kind of contact
+* [RelatedPerson](relatedperson.html): The value in any kind of contact
+
+    */
+  telecom(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderPerson {
+    this.builder.token("telecom", value, modifier);
+    return this;
+  }
+
+  /**
    * A person Identifier
    */
   identifier(
@@ -29584,6 +36590,30 @@ class ResourceSearchBuilderPerson extends BaseResourceSearchBuilder<ResourceSear
 }
 
 export type SortOrderPerson =
+  | "address"
+  | "-address"
+  | "address-city"
+  | "-address-city"
+  | "address-country"
+  | "-address-country"
+  | "address-postalcode"
+  | "-address-postalcode"
+  | "address-state"
+  | "-address-state"
+  | "address-use"
+  | "-address-use"
+  | "birthdate"
+  | "-birthdate"
+  | "email"
+  | "-email"
+  | "gender"
+  | "-gender"
+  | "phone"
+  | "-phone"
+  | "phonetic"
+  | "-phonetic"
+  | "telecom"
+  | "-telecom"
   | "identifier"
   | "-identifier"
   | "link"
@@ -30205,6 +37235,226 @@ class ResourceSearchBuilderPractitioner extends BaseResourceSearchBuilder<Resour
   }
 
   /**
+    * Multiple Resources: 
+
+* [Patient](patient.html): A server defined search that may match any of the string fields in the Address, including line, city, district, state, country, postalCode, and/or text
+* [Person](person.html): A server defined search that may match any of the string fields in the Address, including line, city, district, state, country, postalCode, and/or text
+* [Practitioner](practitioner.html): A server defined search that may match any of the string fields in the Address, including line, city, district, state, country, postalCode, and/or text
+* [RelatedPerson](relatedperson.html): A server defined search that may match any of the string fields in the Address, including line, city, district, state, country, postalCode, and/or text
+
+    */
+  address(
+    value: Parameters<FhirSearchBuilder["string"]>[1],
+    modifier?: StringModifier | null | undefined
+  ): ResourceSearchBuilderPractitioner {
+    this.builder.string("address", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [Patient](patient.html): A city specified in an address
+* [Person](person.html): A city specified in an address
+* [Practitioner](practitioner.html): A city specified in an address
+* [RelatedPerson](relatedperson.html): A city specified in an address
+
+    */
+  addresscity(
+    value: Parameters<FhirSearchBuilder["string"]>[1],
+    modifier?: StringModifier | null | undefined
+  ): ResourceSearchBuilderPractitioner {
+    this.builder.string("address-city", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [Patient](patient.html): A country specified in an address
+* [Person](person.html): A country specified in an address
+* [Practitioner](practitioner.html): A country specified in an address
+* [RelatedPerson](relatedperson.html): A country specified in an address
+
+    */
+  addresscountry(
+    value: Parameters<FhirSearchBuilder["string"]>[1],
+    modifier?: StringModifier | null | undefined
+  ): ResourceSearchBuilderPractitioner {
+    this.builder.string("address-country", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [Patient](patient.html): A postalCode specified in an address
+* [Person](person.html): A postal code specified in an address
+* [Practitioner](practitioner.html): A postalCode specified in an address
+* [RelatedPerson](relatedperson.html): A postal code specified in an address
+
+    */
+  addresspostalcode(
+    value: Parameters<FhirSearchBuilder["string"]>[1],
+    modifier?: StringModifier | null | undefined
+  ): ResourceSearchBuilderPractitioner {
+    this.builder.string("address-postalcode", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [Patient](patient.html): A state specified in an address
+* [Person](person.html): A state specified in an address
+* [Practitioner](practitioner.html): A state specified in an address
+* [RelatedPerson](relatedperson.html): A state specified in an address
+
+    */
+  addressstate(
+    value: Parameters<FhirSearchBuilder["string"]>[1],
+    modifier?: StringModifier | null | undefined
+  ): ResourceSearchBuilderPractitioner {
+    this.builder.string("address-state", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [Patient](patient.html): A use code specified in an address
+* [Person](person.html): A use code specified in an address
+* [Practitioner](practitioner.html): A use code specified in an address
+* [RelatedPerson](relatedperson.html): A use code specified in an address
+
+    */
+  addressuse(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderPractitioner {
+    this.builder.token("address-use", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [Patient](patient.html): A value in an email contact
+* [Person](person.html): A value in an email contact
+* [Practitioner](practitioner.html): A value in an email contact
+* [PractitionerRole](practitionerrole.html): A value in an email contact
+* [RelatedPerson](relatedperson.html): A value in an email contact
+
+    */
+  email(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderPractitioner {
+    this.builder.token("email", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [Patient](patient.html): A portion of the family name of the patient
+* [Practitioner](practitioner.html): A portion of the family name
+
+    */
+  family(
+    value: Parameters<FhirSearchBuilder["string"]>[1],
+    modifier?: StringModifier | null | undefined
+  ): ResourceSearchBuilderPractitioner {
+    this.builder.string("family", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [Patient](patient.html): Gender of the patient
+* [Person](person.html): The gender of the person
+* [Practitioner](practitioner.html): Gender of the practitioner
+* [RelatedPerson](relatedperson.html): Gender of the related person
+
+    */
+  gender(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderPractitioner {
+    this.builder.token("gender", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [Patient](patient.html): A portion of the given name of the patient
+* [Practitioner](practitioner.html): A portion of the given name
+
+    */
+  given(
+    value: Parameters<FhirSearchBuilder["string"]>[1],
+    modifier?: StringModifier | null | undefined
+  ): ResourceSearchBuilderPractitioner {
+    this.builder.string("given", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [Patient](patient.html): A value in a phone contact
+* [Person](person.html): A value in a phone contact
+* [Practitioner](practitioner.html): A value in a phone contact
+* [PractitionerRole](practitionerrole.html): A value in a phone contact
+* [RelatedPerson](relatedperson.html): A value in a phone contact
+
+    */
+  phone(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderPractitioner {
+    this.builder.token("phone", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [Patient](patient.html): A portion of either family or given name using some kind of phonetic matching algorithm
+* [Person](person.html): A portion of name using some kind of phonetic matching algorithm
+* [Practitioner](practitioner.html): A portion of either family or given name using some kind of phonetic matching algorithm
+* [RelatedPerson](relatedperson.html): A portion of name using some kind of phonetic matching algorithm
+
+    */
+  phonetic(
+    value: Parameters<FhirSearchBuilder["string"]>[1],
+    modifier?: StringModifier | null | undefined
+  ): ResourceSearchBuilderPractitioner {
+    this.builder.string("phonetic", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [Patient](patient.html): The value in any kind of telecom details of the patient
+* [Person](person.html): The value in any kind of contact
+* [Practitioner](practitioner.html): The value in any kind of contact
+* [PractitionerRole](practitionerrole.html): The value in any kind of contact
+* [RelatedPerson](relatedperson.html): The value in any kind of contact
+
+    */
+  telecom(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderPractitioner {
+    this.builder.token("telecom", value, modifier);
+    return this;
+  }
+
+  /**
    * Whether the practitioner record is active
    */
   active(
@@ -30250,6 +37500,32 @@ class ResourceSearchBuilderPractitioner extends BaseResourceSearchBuilder<Resour
 }
 
 export type SortOrderPractitioner =
+  | "address"
+  | "-address"
+  | "address-city"
+  | "-address-city"
+  | "address-country"
+  | "-address-country"
+  | "address-postalcode"
+  | "-address-postalcode"
+  | "address-state"
+  | "-address-state"
+  | "address-use"
+  | "-address-use"
+  | "email"
+  | "-email"
+  | "family"
+  | "-family"
+  | "gender"
+  | "-gender"
+  | "given"
+  | "-given"
+  | "phone"
+  | "-phone"
+  | "phonetic"
+  | "-phonetic"
+  | "telecom"
+  | "-telecom"
   | "active"
   | "-active"
   | "communication"
@@ -30418,6 +37694,60 @@ class ResourceSearchBuilderPractitionerRole extends BaseResourceSearchBuilder<Re
   }
 
   /**
+    * Multiple Resources: 
+
+* [Patient](patient.html): A value in an email contact
+* [Person](person.html): A value in an email contact
+* [Practitioner](practitioner.html): A value in an email contact
+* [PractitionerRole](practitionerrole.html): A value in an email contact
+* [RelatedPerson](relatedperson.html): A value in an email contact
+
+    */
+  email(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderPractitionerRole {
+    this.builder.token("email", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [Patient](patient.html): A value in a phone contact
+* [Person](person.html): A value in a phone contact
+* [Practitioner](practitioner.html): A value in a phone contact
+* [PractitionerRole](practitionerrole.html): A value in a phone contact
+* [RelatedPerson](relatedperson.html): A value in a phone contact
+
+    */
+  phone(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderPractitionerRole {
+    this.builder.token("phone", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [Patient](patient.html): The value in any kind of telecom details of the patient
+* [Person](person.html): The value in any kind of contact
+* [Practitioner](practitioner.html): The value in any kind of contact
+* [PractitionerRole](practitionerrole.html): The value in any kind of contact
+* [RelatedPerson](relatedperson.html): The value in any kind of contact
+
+    */
+  telecom(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderPractitionerRole {
+    this.builder.token("telecom", value, modifier);
+    return this;
+  }
+
+  /**
    * Whether this practitioner role record is in active use
    */
   active(
@@ -30529,6 +37859,12 @@ class ResourceSearchBuilderPractitionerRole extends BaseResourceSearchBuilder<Re
 }
 
 export type SortOrderPractitionerRole =
+  | "email"
+  | "-email"
+  | "phone"
+  | "-phone"
+  | "telecom"
+  | "-telecom"
   | "active"
   | "-active"
   | "date"
@@ -30709,6 +38045,176 @@ class ResourceSearchBuilderProcedure extends BaseResourceSearchBuilder<ResourceS
   }
 
   /**
+    * Multiple Resources: 
+
+* [AllergyIntolerance](allergyintolerance.html): Code that identifies the allergy or intolerance
+* [Condition](condition.html): Code for the condition
+* [DeviceRequest](devicerequest.html): Code for what is being requested/ordered
+* [DiagnosticReport](diagnosticreport.html): The code for the report, as opposed to codes for the atomic results, which are the names on the observation resource referred to from the result
+* [FamilyMemberHistory](familymemberhistory.html): A search by a condition code
+* [List](list.html): What the purpose of this list is
+* [Medication](medication.html): Returns medications for a specific code
+* [MedicationAdministration](medicationadministration.html): Return administrations of this medication code
+* [MedicationDispense](medicationdispense.html): Returns dispenses of this medicine code
+* [MedicationRequest](medicationrequest.html): Return prescriptions of this medication code
+* [MedicationStatement](medicationstatement.html): Return statements of this medication code
+* [Observation](observation.html): The code of the observation type
+* [Procedure](procedure.html): A code to identify a  procedure
+* [ServiceRequest](servicerequest.html): What is being requested/ordered
+
+    */
+  code(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderProcedure {
+    this.builder.token("code", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [AllergyIntolerance](allergyintolerance.html): Date first version of the resource instance was recorded
+* [CarePlan](careplan.html): Time period plan covers
+* [CareTeam](careteam.html): Time period team covers
+* [ClinicalImpression](clinicalimpression.html): When the assessment was documented
+* [Composition](composition.html): Composition editing time
+* [Consent](consent.html): When this Consent was created or indexed
+* [DiagnosticReport](diagnosticreport.html): The clinically relevant time of the report
+* [Encounter](encounter.html): A date within the period the Encounter lasted
+* [EpisodeOfCare](episodeofcare.html): The provided date search value falls within the episode of care's period
+* [FamilyMemberHistory](familymemberhistory.html): When history was recorded or last updated
+* [Flag](flag.html): Time period when flag is active
+* [Immunization](immunization.html): Vaccination  (non)-Administration Date
+* [List](list.html): When the list was prepared
+* [Observation](observation.html): Obtained date/time. If the obtained element is a period, a date that falls in the period
+* [Procedure](procedure.html): When the procedure was performed
+* [RiskAssessment](riskassessment.html): When was assessment made?
+* [SupplyRequest](supplyrequest.html): When the request was made
+
+    */
+  date(
+    value: Parameters<FhirSearchBuilder["date"]>[1],
+    prefix?: Prefix | null | undefined
+  ): ResourceSearchBuilderProcedure {
+    this.builder.date("date", value, prefix);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [AllergyIntolerance](allergyintolerance.html): External ids for this item
+* [CarePlan](careplan.html): External Ids for this plan
+* [CareTeam](careteam.html): External Ids for this team
+* [Composition](composition.html): Version-independent identifier for the Composition
+* [Condition](condition.html): A unique identifier of the condition record
+* [Consent](consent.html): Identifier for this record (external references)
+* [DetectedIssue](detectedissue.html): Unique id for the detected issue
+* [DeviceRequest](devicerequest.html): Business identifier for request/order
+* [DiagnosticReport](diagnosticreport.html): An identifier for the report
+* [DocumentManifest](documentmanifest.html): Unique Identifier for the set of documents
+* [DocumentReference](documentreference.html): Master Version Specific Identifier
+* [Encounter](encounter.html): Identifier(s) by which this encounter is known
+* [EpisodeOfCare](episodeofcare.html): Business Identifier(s) relevant for this EpisodeOfCare
+* [FamilyMemberHistory](familymemberhistory.html): A search by a record identifier
+* [Goal](goal.html): External Ids for this goal
+* [ImagingStudy](imagingstudy.html): Identifiers for the Study, such as DICOM Study Instance UID and Accession number
+* [Immunization](immunization.html): Business identifier
+* [List](list.html): Business identifier
+* [MedicationAdministration](medicationadministration.html): Return administrations with this external identifier
+* [MedicationDispense](medicationdispense.html): Returns dispenses with this external identifier
+* [MedicationRequest](medicationrequest.html): Return prescriptions with this external identifier
+* [MedicationStatement](medicationstatement.html): Return statements with this external identifier
+* [NutritionOrder](nutritionorder.html): Return nutrition orders with this external identifier
+* [Observation](observation.html): The unique id for a particular observation
+* [Procedure](procedure.html): A unique identifier for a procedure
+* [RiskAssessment](riskassessment.html): Unique identifier for the assessment
+* [ServiceRequest](servicerequest.html): Identifiers assigned to this order
+* [SupplyDelivery](supplydelivery.html): External identifier
+* [SupplyRequest](supplyrequest.html): Business Identifier for SupplyRequest
+* [VisionPrescription](visionprescription.html): Return prescriptions with this external identifier
+
+    */
+  identifier(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderProcedure {
+    this.builder.token("identifier", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [AllergyIntolerance](allergyintolerance.html): Who the sensitivity is for
+* [CarePlan](careplan.html): Who the care plan is for
+* [CareTeam](careteam.html): Who care team is for
+* [ClinicalImpression](clinicalimpression.html): Patient or group assessed
+* [Composition](composition.html): Who and/or what the composition is about
+* [Condition](condition.html): Who has the condition?
+* [Consent](consent.html): Who the consent applies to
+* [DetectedIssue](detectedissue.html): Associated patient
+* [DeviceRequest](devicerequest.html): Individual the service is ordered for
+* [DeviceUseStatement](deviceusestatement.html): Search by subject - a patient
+* [DiagnosticReport](diagnosticreport.html): The subject of the report if a patient
+* [DocumentManifest](documentmanifest.html): The subject of the set of documents
+* [DocumentReference](documentreference.html): Who/what is the subject of the document
+* [Encounter](encounter.html): The patient or group present at the encounter
+* [EpisodeOfCare](episodeofcare.html): The patient who is the focus of this episode of care
+* [FamilyMemberHistory](familymemberhistory.html): The identity of a subject to list family member history items for
+* [Flag](flag.html): The identity of a subject to list flags for
+* [Goal](goal.html): Who this goal is intended for
+* [ImagingStudy](imagingstudy.html): Who the study is about
+* [Immunization](immunization.html): The patient for the vaccination record
+* [List](list.html): If all resources have the same subject
+* [MedicationAdministration](medicationadministration.html): The identity of a patient to list administrations  for
+* [MedicationDispense](medicationdispense.html): The identity of a patient to list dispenses  for
+* [MedicationRequest](medicationrequest.html): Returns prescriptions for a specific patient
+* [MedicationStatement](medicationstatement.html): Returns statements for a specific patient.
+* [NutritionOrder](nutritionorder.html): The identity of the person who requires the diet, formula or nutritional supplement
+* [Observation](observation.html): The subject that the observation is about (if patient)
+* [Procedure](procedure.html): Search by subject - a patient
+* [RiskAssessment](riskassessment.html): Who/what does assessment apply to?
+* [ServiceRequest](servicerequest.html): Search by subject - a patient
+* [SupplyDelivery](supplydelivery.html): Patient for whom the item is supplied
+* [VisionPrescription](visionprescription.html): The identity of a patient to list dispenses for
+
+    */
+  patient(
+    id: Parameters<FhirSearchBuilder["reference"]>[1],
+    modifier?: ":identifier" | ResourceType | null | undefined
+  ): ResourceSearchBuilderProcedure {
+    this.builder.reference("patient", id, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [Composition](composition.html): Context of the Composition
+* [DeviceRequest](devicerequest.html): Encounter during which request was created
+* [DiagnosticReport](diagnosticreport.html): The Encounter when the order was made
+* [DocumentReference](documentreference.html): Context of the document  content
+* [Flag](flag.html): Alert relevant during encounter
+* [List](list.html): Context in which list created
+* [NutritionOrder](nutritionorder.html): Return nutrition orders with this encounter identifier
+* [Observation](observation.html): Encounter related to the observation
+* [Procedure](procedure.html): Encounter created as part of
+* [RiskAssessment](riskassessment.html): Where was assessment performed?
+* [ServiceRequest](servicerequest.html): An encounter in which this request is made
+* [VisionPrescription](visionprescription.html): Return prescriptions with this encounter identifier
+
+    */
+  encounter(
+    id: Parameters<FhirSearchBuilder["reference"]>[1],
+    modifier?: ":identifier" | ResourceType | null | undefined
+  ): ResourceSearchBuilderProcedure {
+    this.builder.reference("encounter", id, modifier);
+    return this;
+  }
+
+  /**
    * A request for this procedure
    */
   basedon(
@@ -30831,6 +38337,16 @@ class ResourceSearchBuilderProcedure extends BaseResourceSearchBuilder<ResourceS
 }
 
 export type SortOrderProcedure =
+  | "code"
+  | "-code"
+  | "date"
+  | "-date"
+  | "identifier"
+  | "-identifier"
+  | "patient"
+  | "-patient"
+  | "encounter"
+  | "-encounter"
   | "based-on"
   | "-based-on"
   | "category"
@@ -32246,6 +39762,212 @@ class ResourceSearchBuilderRelatedPerson extends BaseResourceSearchBuilder<Resou
   }
 
   /**
+    * Multiple Resources: 
+
+* [Patient](patient.html): A server defined search that may match any of the string fields in the Address, including line, city, district, state, country, postalCode, and/or text
+* [Person](person.html): A server defined search that may match any of the string fields in the Address, including line, city, district, state, country, postalCode, and/or text
+* [Practitioner](practitioner.html): A server defined search that may match any of the string fields in the Address, including line, city, district, state, country, postalCode, and/or text
+* [RelatedPerson](relatedperson.html): A server defined search that may match any of the string fields in the Address, including line, city, district, state, country, postalCode, and/or text
+
+    */
+  address(
+    value: Parameters<FhirSearchBuilder["string"]>[1],
+    modifier?: StringModifier | null | undefined
+  ): ResourceSearchBuilderRelatedPerson {
+    this.builder.string("address", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [Patient](patient.html): A city specified in an address
+* [Person](person.html): A city specified in an address
+* [Practitioner](practitioner.html): A city specified in an address
+* [RelatedPerson](relatedperson.html): A city specified in an address
+
+    */
+  addresscity(
+    value: Parameters<FhirSearchBuilder["string"]>[1],
+    modifier?: StringModifier | null | undefined
+  ): ResourceSearchBuilderRelatedPerson {
+    this.builder.string("address-city", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [Patient](patient.html): A country specified in an address
+* [Person](person.html): A country specified in an address
+* [Practitioner](practitioner.html): A country specified in an address
+* [RelatedPerson](relatedperson.html): A country specified in an address
+
+    */
+  addresscountry(
+    value: Parameters<FhirSearchBuilder["string"]>[1],
+    modifier?: StringModifier | null | undefined
+  ): ResourceSearchBuilderRelatedPerson {
+    this.builder.string("address-country", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [Patient](patient.html): A postalCode specified in an address
+* [Person](person.html): A postal code specified in an address
+* [Practitioner](practitioner.html): A postalCode specified in an address
+* [RelatedPerson](relatedperson.html): A postal code specified in an address
+
+    */
+  addresspostalcode(
+    value: Parameters<FhirSearchBuilder["string"]>[1],
+    modifier?: StringModifier | null | undefined
+  ): ResourceSearchBuilderRelatedPerson {
+    this.builder.string("address-postalcode", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [Patient](patient.html): A state specified in an address
+* [Person](person.html): A state specified in an address
+* [Practitioner](practitioner.html): A state specified in an address
+* [RelatedPerson](relatedperson.html): A state specified in an address
+
+    */
+  addressstate(
+    value: Parameters<FhirSearchBuilder["string"]>[1],
+    modifier?: StringModifier | null | undefined
+  ): ResourceSearchBuilderRelatedPerson {
+    this.builder.string("address-state", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [Patient](patient.html): A use code specified in an address
+* [Person](person.html): A use code specified in an address
+* [Practitioner](practitioner.html): A use code specified in an address
+* [RelatedPerson](relatedperson.html): A use code specified in an address
+
+    */
+  addressuse(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderRelatedPerson {
+    this.builder.token("address-use", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [Patient](patient.html): The patient's date of birth
+* [Person](person.html): The person's date of birth
+* [RelatedPerson](relatedperson.html): The Related Person's date of birth
+
+    */
+  birthdate(
+    value: Parameters<FhirSearchBuilder["date"]>[1],
+    prefix?: Prefix | null | undefined
+  ): ResourceSearchBuilderRelatedPerson {
+    this.builder.date("birthdate", value, prefix);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [Patient](patient.html): A value in an email contact
+* [Person](person.html): A value in an email contact
+* [Practitioner](practitioner.html): A value in an email contact
+* [PractitionerRole](practitionerrole.html): A value in an email contact
+* [RelatedPerson](relatedperson.html): A value in an email contact
+
+    */
+  email(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderRelatedPerson {
+    this.builder.token("email", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [Patient](patient.html): Gender of the patient
+* [Person](person.html): The gender of the person
+* [Practitioner](practitioner.html): Gender of the practitioner
+* [RelatedPerson](relatedperson.html): Gender of the related person
+
+    */
+  gender(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderRelatedPerson {
+    this.builder.token("gender", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [Patient](patient.html): A value in a phone contact
+* [Person](person.html): A value in a phone contact
+* [Practitioner](practitioner.html): A value in a phone contact
+* [PractitionerRole](practitionerrole.html): A value in a phone contact
+* [RelatedPerson](relatedperson.html): A value in a phone contact
+
+    */
+  phone(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderRelatedPerson {
+    this.builder.token("phone", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [Patient](patient.html): A portion of either family or given name using some kind of phonetic matching algorithm
+* [Person](person.html): A portion of name using some kind of phonetic matching algorithm
+* [Practitioner](practitioner.html): A portion of either family or given name using some kind of phonetic matching algorithm
+* [RelatedPerson](relatedperson.html): A portion of name using some kind of phonetic matching algorithm
+
+    */
+  phonetic(
+    value: Parameters<FhirSearchBuilder["string"]>[1],
+    modifier?: StringModifier | null | undefined
+  ): ResourceSearchBuilderRelatedPerson {
+    this.builder.string("phonetic", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [Patient](patient.html): The value in any kind of telecom details of the patient
+* [Person](person.html): The value in any kind of contact
+* [Practitioner](practitioner.html): The value in any kind of contact
+* [PractitionerRole](practitionerrole.html): The value in any kind of contact
+* [RelatedPerson](relatedperson.html): The value in any kind of contact
+
+    */
+  telecom(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderRelatedPerson {
+    this.builder.token("telecom", value, modifier);
+    return this;
+  }
+
+  /**
    * Indicates if the related person record is active
    */
   active(
@@ -32302,6 +40024,30 @@ class ResourceSearchBuilderRelatedPerson extends BaseResourceSearchBuilder<Resou
 }
 
 export type SortOrderRelatedPerson =
+  | "address"
+  | "-address"
+  | "address-city"
+  | "-address-city"
+  | "address-country"
+  | "-address-country"
+  | "address-postalcode"
+  | "-address-postalcode"
+  | "address-state"
+  | "-address-state"
+  | "address-use"
+  | "-address-use"
+  | "birthdate"
+  | "-birthdate"
+  | "email"
+  | "-email"
+  | "gender"
+  | "-gender"
+  | "phone"
+  | "-phone"
+  | "phonetic"
+  | "-phonetic"
+  | "telecom"
+  | "-telecom"
   | "active"
   | "-active"
   | "identifier"
@@ -34228,6 +41974,149 @@ class ResourceSearchBuilderRiskAssessment extends BaseResourceSearchBuilder<Reso
   }
 
   /**
+    * Multiple Resources: 
+
+* [AllergyIntolerance](allergyintolerance.html): Date first version of the resource instance was recorded
+* [CarePlan](careplan.html): Time period plan covers
+* [CareTeam](careteam.html): Time period team covers
+* [ClinicalImpression](clinicalimpression.html): When the assessment was documented
+* [Composition](composition.html): Composition editing time
+* [Consent](consent.html): When this Consent was created or indexed
+* [DiagnosticReport](diagnosticreport.html): The clinically relevant time of the report
+* [Encounter](encounter.html): A date within the period the Encounter lasted
+* [EpisodeOfCare](episodeofcare.html): The provided date search value falls within the episode of care's period
+* [FamilyMemberHistory](familymemberhistory.html): When history was recorded or last updated
+* [Flag](flag.html): Time period when flag is active
+* [Immunization](immunization.html): Vaccination  (non)-Administration Date
+* [List](list.html): When the list was prepared
+* [Observation](observation.html): Obtained date/time. If the obtained element is a period, a date that falls in the period
+* [Procedure](procedure.html): When the procedure was performed
+* [RiskAssessment](riskassessment.html): When was assessment made?
+* [SupplyRequest](supplyrequest.html): When the request was made
+
+    */
+  date(
+    value: Parameters<FhirSearchBuilder["date"]>[1],
+    prefix?: Prefix | null | undefined
+  ): ResourceSearchBuilderRiskAssessment {
+    this.builder.date("date", value, prefix);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [AllergyIntolerance](allergyintolerance.html): External ids for this item
+* [CarePlan](careplan.html): External Ids for this plan
+* [CareTeam](careteam.html): External Ids for this team
+* [Composition](composition.html): Version-independent identifier for the Composition
+* [Condition](condition.html): A unique identifier of the condition record
+* [Consent](consent.html): Identifier for this record (external references)
+* [DetectedIssue](detectedissue.html): Unique id for the detected issue
+* [DeviceRequest](devicerequest.html): Business identifier for request/order
+* [DiagnosticReport](diagnosticreport.html): An identifier for the report
+* [DocumentManifest](documentmanifest.html): Unique Identifier for the set of documents
+* [DocumentReference](documentreference.html): Master Version Specific Identifier
+* [Encounter](encounter.html): Identifier(s) by which this encounter is known
+* [EpisodeOfCare](episodeofcare.html): Business Identifier(s) relevant for this EpisodeOfCare
+* [FamilyMemberHistory](familymemberhistory.html): A search by a record identifier
+* [Goal](goal.html): External Ids for this goal
+* [ImagingStudy](imagingstudy.html): Identifiers for the Study, such as DICOM Study Instance UID and Accession number
+* [Immunization](immunization.html): Business identifier
+* [List](list.html): Business identifier
+* [MedicationAdministration](medicationadministration.html): Return administrations with this external identifier
+* [MedicationDispense](medicationdispense.html): Returns dispenses with this external identifier
+* [MedicationRequest](medicationrequest.html): Return prescriptions with this external identifier
+* [MedicationStatement](medicationstatement.html): Return statements with this external identifier
+* [NutritionOrder](nutritionorder.html): Return nutrition orders with this external identifier
+* [Observation](observation.html): The unique id for a particular observation
+* [Procedure](procedure.html): A unique identifier for a procedure
+* [RiskAssessment](riskassessment.html): Unique identifier for the assessment
+* [ServiceRequest](servicerequest.html): Identifiers assigned to this order
+* [SupplyDelivery](supplydelivery.html): External identifier
+* [SupplyRequest](supplyrequest.html): Business Identifier for SupplyRequest
+* [VisionPrescription](visionprescription.html): Return prescriptions with this external identifier
+
+    */
+  identifier(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderRiskAssessment {
+    this.builder.token("identifier", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [AllergyIntolerance](allergyintolerance.html): Who the sensitivity is for
+* [CarePlan](careplan.html): Who the care plan is for
+* [CareTeam](careteam.html): Who care team is for
+* [ClinicalImpression](clinicalimpression.html): Patient or group assessed
+* [Composition](composition.html): Who and/or what the composition is about
+* [Condition](condition.html): Who has the condition?
+* [Consent](consent.html): Who the consent applies to
+* [DetectedIssue](detectedissue.html): Associated patient
+* [DeviceRequest](devicerequest.html): Individual the service is ordered for
+* [DeviceUseStatement](deviceusestatement.html): Search by subject - a patient
+* [DiagnosticReport](diagnosticreport.html): The subject of the report if a patient
+* [DocumentManifest](documentmanifest.html): The subject of the set of documents
+* [DocumentReference](documentreference.html): Who/what is the subject of the document
+* [Encounter](encounter.html): The patient or group present at the encounter
+* [EpisodeOfCare](episodeofcare.html): The patient who is the focus of this episode of care
+* [FamilyMemberHistory](familymemberhistory.html): The identity of a subject to list family member history items for
+* [Flag](flag.html): The identity of a subject to list flags for
+* [Goal](goal.html): Who this goal is intended for
+* [ImagingStudy](imagingstudy.html): Who the study is about
+* [Immunization](immunization.html): The patient for the vaccination record
+* [List](list.html): If all resources have the same subject
+* [MedicationAdministration](medicationadministration.html): The identity of a patient to list administrations  for
+* [MedicationDispense](medicationdispense.html): The identity of a patient to list dispenses  for
+* [MedicationRequest](medicationrequest.html): Returns prescriptions for a specific patient
+* [MedicationStatement](medicationstatement.html): Returns statements for a specific patient.
+* [NutritionOrder](nutritionorder.html): The identity of the person who requires the diet, formula or nutritional supplement
+* [Observation](observation.html): The subject that the observation is about (if patient)
+* [Procedure](procedure.html): Search by subject - a patient
+* [RiskAssessment](riskassessment.html): Who/what does assessment apply to?
+* [ServiceRequest](servicerequest.html): Search by subject - a patient
+* [SupplyDelivery](supplydelivery.html): Patient for whom the item is supplied
+* [VisionPrescription](visionprescription.html): The identity of a patient to list dispenses for
+
+    */
+  patient(
+    id: Parameters<FhirSearchBuilder["reference"]>[1],
+    modifier?: ":identifier" | ResourceType | null | undefined
+  ): ResourceSearchBuilderRiskAssessment {
+    this.builder.reference("patient", id, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [Composition](composition.html): Context of the Composition
+* [DeviceRequest](devicerequest.html): Encounter during which request was created
+* [DiagnosticReport](diagnosticreport.html): The Encounter when the order was made
+* [DocumentReference](documentreference.html): Context of the document  content
+* [Flag](flag.html): Alert relevant during encounter
+* [List](list.html): Context in which list created
+* [NutritionOrder](nutritionorder.html): Return nutrition orders with this encounter identifier
+* [Observation](observation.html): Encounter related to the observation
+* [Procedure](procedure.html): Encounter created as part of
+* [RiskAssessment](riskassessment.html): Where was assessment performed?
+* [ServiceRequest](servicerequest.html): An encounter in which this request is made
+* [VisionPrescription](visionprescription.html): Return prescriptions with this encounter identifier
+
+    */
+  encounter(
+    id: Parameters<FhirSearchBuilder["reference"]>[1],
+    modifier?: ":identifier" | ResourceType | null | undefined
+  ): ResourceSearchBuilderRiskAssessment {
+    this.builder.reference("encounter", id, modifier);
+    return this;
+  }
+
+  /**
    * Condition assessed
    */
   condition(
@@ -34295,6 +42184,14 @@ class ResourceSearchBuilderRiskAssessment extends BaseResourceSearchBuilder<Reso
 }
 
 export type SortOrderRiskAssessment =
+  | "date"
+  | "-date"
+  | "identifier"
+  | "-identifier"
+  | "patient"
+  | "-patient"
+  | "encounter"
+  | "-encounter"
   | "condition"
   | "-condition"
   | "method"
@@ -34719,6 +42616,300 @@ class ResourceSearchBuilderSearchParameter extends BaseResourceSearchBuilder<Res
   }
 
   /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): A use context assigned to the capability statement
+* [CodeSystem](codesystem.html): A use context assigned to the code system
+* [CompartmentDefinition](compartmentdefinition.html): A use context assigned to the compartment definition
+* [ConceptMap](conceptmap.html): A use context assigned to the concept map
+* [GraphDefinition](graphdefinition.html): A use context assigned to the graph definition
+* [ImplementationGuide](implementationguide.html): A use context assigned to the implementation guide
+* [MessageDefinition](messagedefinition.html): A use context assigned to the message definition
+* [NamingSystem](namingsystem.html): A use context assigned to the naming system
+* [OperationDefinition](operationdefinition.html): A use context assigned to the operation definition
+* [SearchParameter](searchparameter.html): A use context assigned to the search parameter
+* [StructureDefinition](structuredefinition.html): A use context assigned to the structure definition
+* [StructureMap](structuremap.html): A use context assigned to the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): A use context assigned to the terminology capabilities
+* [ValueSet](valueset.html): A use context assigned to the value set
+
+    */
+  context(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderSearchParameter {
+    this.builder.token("context", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): A quantity- or range-valued use context assigned to the capability statement
+* [CodeSystem](codesystem.html): A quantity- or range-valued use context assigned to the code system
+* [CompartmentDefinition](compartmentdefinition.html): A quantity- or range-valued use context assigned to the compartment definition
+* [ConceptMap](conceptmap.html): A quantity- or range-valued use context assigned to the concept map
+* [GraphDefinition](graphdefinition.html): A quantity- or range-valued use context assigned to the graph definition
+* [ImplementationGuide](implementationguide.html): A quantity- or range-valued use context assigned to the implementation guide
+* [MessageDefinition](messagedefinition.html): A quantity- or range-valued use context assigned to the message definition
+* [NamingSystem](namingsystem.html): A quantity- or range-valued use context assigned to the naming system
+* [OperationDefinition](operationdefinition.html): A quantity- or range-valued use context assigned to the operation definition
+* [SearchParameter](searchparameter.html): A quantity- or range-valued use context assigned to the search parameter
+* [StructureDefinition](structuredefinition.html): A quantity- or range-valued use context assigned to the structure definition
+* [StructureMap](structuremap.html): A quantity- or range-valued use context assigned to the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): A quantity- or range-valued use context assigned to the terminology capabilities
+* [ValueSet](valueset.html): A quantity- or range-valued use context assigned to the value set
+
+    */
+  contextquantity(
+    number: Parameters<FhirSearchBuilder["quantity"]>[1],
+    prefix?: Prefix | null | undefined
+  ): ResourceSearchBuilderSearchParameter {
+    this.builder.quantity("context-quantity", number, prefix);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): A type of use context assigned to the capability statement
+* [CodeSystem](codesystem.html): A type of use context assigned to the code system
+* [CompartmentDefinition](compartmentdefinition.html): A type of use context assigned to the compartment definition
+* [ConceptMap](conceptmap.html): A type of use context assigned to the concept map
+* [GraphDefinition](graphdefinition.html): A type of use context assigned to the graph definition
+* [ImplementationGuide](implementationguide.html): A type of use context assigned to the implementation guide
+* [MessageDefinition](messagedefinition.html): A type of use context assigned to the message definition
+* [NamingSystem](namingsystem.html): A type of use context assigned to the naming system
+* [OperationDefinition](operationdefinition.html): A type of use context assigned to the operation definition
+* [SearchParameter](searchparameter.html): A type of use context assigned to the search parameter
+* [StructureDefinition](structuredefinition.html): A type of use context assigned to the structure definition
+* [StructureMap](structuremap.html): A type of use context assigned to the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): A type of use context assigned to the terminology capabilities
+* [ValueSet](valueset.html): A type of use context assigned to the value set
+
+    */
+  contexttype(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderSearchParameter {
+    this.builder.token("context-type", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): The capability statement publication date
+* [CodeSystem](codesystem.html): The code system publication date
+* [CompartmentDefinition](compartmentdefinition.html): The compartment definition publication date
+* [ConceptMap](conceptmap.html): The concept map publication date
+* [GraphDefinition](graphdefinition.html): The graph definition publication date
+* [ImplementationGuide](implementationguide.html): The implementation guide publication date
+* [MessageDefinition](messagedefinition.html): The message definition publication date
+* [NamingSystem](namingsystem.html): The naming system publication date
+* [OperationDefinition](operationdefinition.html): The operation definition publication date
+* [SearchParameter](searchparameter.html): The search parameter publication date
+* [StructureDefinition](structuredefinition.html): The structure definition publication date
+* [StructureMap](structuremap.html): The structure map publication date
+* [TerminologyCapabilities](terminologycapabilities.html): The terminology capabilities publication date
+* [ValueSet](valueset.html): The value set publication date
+
+    */
+  date(
+    value: Parameters<FhirSearchBuilder["date"]>[1],
+    prefix?: Prefix | null | undefined
+  ): ResourceSearchBuilderSearchParameter {
+    this.builder.date("date", value, prefix);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): The description of the capability statement
+* [CodeSystem](codesystem.html): The description of the code system
+* [CompartmentDefinition](compartmentdefinition.html): The description of the compartment definition
+* [ConceptMap](conceptmap.html): The description of the concept map
+* [GraphDefinition](graphdefinition.html): The description of the graph definition
+* [ImplementationGuide](implementationguide.html): The description of the implementation guide
+* [MessageDefinition](messagedefinition.html): The description of the message definition
+* [NamingSystem](namingsystem.html): The description of the naming system
+* [OperationDefinition](operationdefinition.html): The description of the operation definition
+* [SearchParameter](searchparameter.html): The description of the search parameter
+* [StructureDefinition](structuredefinition.html): The description of the structure definition
+* [StructureMap](structuremap.html): The description of the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): The description of the terminology capabilities
+* [ValueSet](valueset.html): The description of the value set
+
+    */
+  description(
+    value: Parameters<FhirSearchBuilder["string"]>[1],
+    modifier?: StringModifier | null | undefined
+  ): ResourceSearchBuilderSearchParameter {
+    this.builder.string("description", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): Intended jurisdiction for the capability statement
+* [CodeSystem](codesystem.html): Intended jurisdiction for the code system
+* [ConceptMap](conceptmap.html): Intended jurisdiction for the concept map
+* [GraphDefinition](graphdefinition.html): Intended jurisdiction for the graph definition
+* [ImplementationGuide](implementationguide.html): Intended jurisdiction for the implementation guide
+* [MessageDefinition](messagedefinition.html): Intended jurisdiction for the message definition
+* [NamingSystem](namingsystem.html): Intended jurisdiction for the naming system
+* [OperationDefinition](operationdefinition.html): Intended jurisdiction for the operation definition
+* [SearchParameter](searchparameter.html): Intended jurisdiction for the search parameter
+* [StructureDefinition](structuredefinition.html): Intended jurisdiction for the structure definition
+* [StructureMap](structuremap.html): Intended jurisdiction for the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): Intended jurisdiction for the terminology capabilities
+* [ValueSet](valueset.html): Intended jurisdiction for the value set
+
+    */
+  jurisdiction(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderSearchParameter {
+    this.builder.token("jurisdiction", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): Computationally friendly name of the capability statement
+* [CodeSystem](codesystem.html): Computationally friendly name of the code system
+* [CompartmentDefinition](compartmentdefinition.html): Computationally friendly name of the compartment definition
+* [ConceptMap](conceptmap.html): Computationally friendly name of the concept map
+* [GraphDefinition](graphdefinition.html): Computationally friendly name of the graph definition
+* [ImplementationGuide](implementationguide.html): Computationally friendly name of the implementation guide
+* [MessageDefinition](messagedefinition.html): Computationally friendly name of the message definition
+* [NamingSystem](namingsystem.html): Computationally friendly name of the naming system
+* [OperationDefinition](operationdefinition.html): Computationally friendly name of the operation definition
+* [SearchParameter](searchparameter.html): Computationally friendly name of the search parameter
+* [StructureDefinition](structuredefinition.html): Computationally friendly name of the structure definition
+* [StructureMap](structuremap.html): Computationally friendly name of the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): Computationally friendly name of the terminology capabilities
+* [ValueSet](valueset.html): Computationally friendly name of the value set
+
+    */
+  name(
+    value: Parameters<FhirSearchBuilder["string"]>[1],
+    modifier?: StringModifier | null | undefined
+  ): ResourceSearchBuilderSearchParameter {
+    this.builder.string("name", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): Name of the publisher of the capability statement
+* [CodeSystem](codesystem.html): Name of the publisher of the code system
+* [CompartmentDefinition](compartmentdefinition.html): Name of the publisher of the compartment definition
+* [ConceptMap](conceptmap.html): Name of the publisher of the concept map
+* [GraphDefinition](graphdefinition.html): Name of the publisher of the graph definition
+* [ImplementationGuide](implementationguide.html): Name of the publisher of the implementation guide
+* [MessageDefinition](messagedefinition.html): Name of the publisher of the message definition
+* [NamingSystem](namingsystem.html): Name of the publisher of the naming system
+* [OperationDefinition](operationdefinition.html): Name of the publisher of the operation definition
+* [SearchParameter](searchparameter.html): Name of the publisher of the search parameter
+* [StructureDefinition](structuredefinition.html): Name of the publisher of the structure definition
+* [StructureMap](structuremap.html): Name of the publisher of the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): Name of the publisher of the terminology capabilities
+* [ValueSet](valueset.html): Name of the publisher of the value set
+
+    */
+  publisher(
+    value: Parameters<FhirSearchBuilder["string"]>[1],
+    modifier?: StringModifier | null | undefined
+  ): ResourceSearchBuilderSearchParameter {
+    this.builder.string("publisher", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): The current status of the capability statement
+* [CodeSystem](codesystem.html): The current status of the code system
+* [CompartmentDefinition](compartmentdefinition.html): The current status of the compartment definition
+* [ConceptMap](conceptmap.html): The current status of the concept map
+* [GraphDefinition](graphdefinition.html): The current status of the graph definition
+* [ImplementationGuide](implementationguide.html): The current status of the implementation guide
+* [MessageDefinition](messagedefinition.html): The current status of the message definition
+* [NamingSystem](namingsystem.html): The current status of the naming system
+* [OperationDefinition](operationdefinition.html): The current status of the operation definition
+* [SearchParameter](searchparameter.html): The current status of the search parameter
+* [StructureDefinition](structuredefinition.html): The current status of the structure definition
+* [StructureMap](structuremap.html): The current status of the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): The current status of the terminology capabilities
+* [ValueSet](valueset.html): The current status of the value set
+
+    */
+  status(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderSearchParameter {
+    this.builder.token("status", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): The uri that identifies the capability statement
+* [CodeSystem](codesystem.html): The uri that identifies the code system
+* [CompartmentDefinition](compartmentdefinition.html): The uri that identifies the compartment definition
+* [ConceptMap](conceptmap.html): The uri that identifies the concept map
+* [GraphDefinition](graphdefinition.html): The uri that identifies the graph definition
+* [ImplementationGuide](implementationguide.html): The uri that identifies the implementation guide
+* [MessageDefinition](messagedefinition.html): The uri that identifies the message definition
+* [OperationDefinition](operationdefinition.html): The uri that identifies the operation definition
+* [SearchParameter](searchparameter.html): The uri that identifies the search parameter
+* [StructureDefinition](structuredefinition.html): The uri that identifies the structure definition
+* [StructureMap](structuremap.html): The uri that identifies the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): The uri that identifies the terminology capabilities
+* [ValueSet](valueset.html): The uri that identifies the value set
+
+    */
+  url(
+    value: Parameters<FhirSearchBuilder["uri"]>[1],
+    modifier?: UriModifier | null | undefined
+  ): ResourceSearchBuilderSearchParameter {
+    this.builder.uri("url", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): The business version of the capability statement
+* [CodeSystem](codesystem.html): The business version of the code system
+* [CompartmentDefinition](compartmentdefinition.html): The business version of the compartment definition
+* [ConceptMap](conceptmap.html): The business version of the concept map
+* [GraphDefinition](graphdefinition.html): The business version of the graph definition
+* [ImplementationGuide](implementationguide.html): The business version of the implementation guide
+* [MessageDefinition](messagedefinition.html): The business version of the message definition
+* [OperationDefinition](operationdefinition.html): The business version of the operation definition
+* [SearchParameter](searchparameter.html): The business version of the search parameter
+* [StructureDefinition](structuredefinition.html): The business version of the structure definition
+* [StructureMap](structuremap.html): The business version of the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): The business version of the terminology capabilities
+* [ValueSet](valueset.html): The business version of the value set
+
+    */
+  version(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderSearchParameter {
+    this.builder.token("version", value, modifier);
+    return this;
+  }
+
+  /**
    * The resource type(s) this search parameter applies to
    */
   base(
@@ -34786,6 +42977,28 @@ class ResourceSearchBuilderSearchParameter extends BaseResourceSearchBuilder<Res
 }
 
 export type SortOrderSearchParameter =
+  | "context"
+  | "-context"
+  | "context-quantity"
+  | "-context-quantity"
+  | "context-type"
+  | "-context-type"
+  | "date"
+  | "-date"
+  | "description"
+  | "-description"
+  | "jurisdiction"
+  | "-jurisdiction"
+  | "name"
+  | "-name"
+  | "publisher"
+  | "-publisher"
+  | "status"
+  | "-status"
+  | "url"
+  | "-url"
+  | "version"
+  | "-version"
   | "base"
   | "-base"
   | "code"
@@ -34954,6 +43167,146 @@ class ResourceSearchBuilderServiceRequest extends BaseResourceSearchBuilder<Reso
     modifier?: TokenModifier | null | undefined
   ): ResourceSearchBuilderServiceRequest {
     this.builder.token("_type", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [AllergyIntolerance](allergyintolerance.html): Code that identifies the allergy or intolerance
+* [Condition](condition.html): Code for the condition
+* [DeviceRequest](devicerequest.html): Code for what is being requested/ordered
+* [DiagnosticReport](diagnosticreport.html): The code for the report, as opposed to codes for the atomic results, which are the names on the observation resource referred to from the result
+* [FamilyMemberHistory](familymemberhistory.html): A search by a condition code
+* [List](list.html): What the purpose of this list is
+* [Medication](medication.html): Returns medications for a specific code
+* [MedicationAdministration](medicationadministration.html): Return administrations of this medication code
+* [MedicationDispense](medicationdispense.html): Returns dispenses of this medicine code
+* [MedicationRequest](medicationrequest.html): Return prescriptions of this medication code
+* [MedicationStatement](medicationstatement.html): Return statements of this medication code
+* [Observation](observation.html): The code of the observation type
+* [Procedure](procedure.html): A code to identify a  procedure
+* [ServiceRequest](servicerequest.html): What is being requested/ordered
+
+    */
+  code(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderServiceRequest {
+    this.builder.token("code", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [AllergyIntolerance](allergyintolerance.html): External ids for this item
+* [CarePlan](careplan.html): External Ids for this plan
+* [CareTeam](careteam.html): External Ids for this team
+* [Composition](composition.html): Version-independent identifier for the Composition
+* [Condition](condition.html): A unique identifier of the condition record
+* [Consent](consent.html): Identifier for this record (external references)
+* [DetectedIssue](detectedissue.html): Unique id for the detected issue
+* [DeviceRequest](devicerequest.html): Business identifier for request/order
+* [DiagnosticReport](diagnosticreport.html): An identifier for the report
+* [DocumentManifest](documentmanifest.html): Unique Identifier for the set of documents
+* [DocumentReference](documentreference.html): Master Version Specific Identifier
+* [Encounter](encounter.html): Identifier(s) by which this encounter is known
+* [EpisodeOfCare](episodeofcare.html): Business Identifier(s) relevant for this EpisodeOfCare
+* [FamilyMemberHistory](familymemberhistory.html): A search by a record identifier
+* [Goal](goal.html): External Ids for this goal
+* [ImagingStudy](imagingstudy.html): Identifiers for the Study, such as DICOM Study Instance UID and Accession number
+* [Immunization](immunization.html): Business identifier
+* [List](list.html): Business identifier
+* [MedicationAdministration](medicationadministration.html): Return administrations with this external identifier
+* [MedicationDispense](medicationdispense.html): Returns dispenses with this external identifier
+* [MedicationRequest](medicationrequest.html): Return prescriptions with this external identifier
+* [MedicationStatement](medicationstatement.html): Return statements with this external identifier
+* [NutritionOrder](nutritionorder.html): Return nutrition orders with this external identifier
+* [Observation](observation.html): The unique id for a particular observation
+* [Procedure](procedure.html): A unique identifier for a procedure
+* [RiskAssessment](riskassessment.html): Unique identifier for the assessment
+* [ServiceRequest](servicerequest.html): Identifiers assigned to this order
+* [SupplyDelivery](supplydelivery.html): External identifier
+* [SupplyRequest](supplyrequest.html): Business Identifier for SupplyRequest
+* [VisionPrescription](visionprescription.html): Return prescriptions with this external identifier
+
+    */
+  identifier(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderServiceRequest {
+    this.builder.token("identifier", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [AllergyIntolerance](allergyintolerance.html): Who the sensitivity is for
+* [CarePlan](careplan.html): Who the care plan is for
+* [CareTeam](careteam.html): Who care team is for
+* [ClinicalImpression](clinicalimpression.html): Patient or group assessed
+* [Composition](composition.html): Who and/or what the composition is about
+* [Condition](condition.html): Who has the condition?
+* [Consent](consent.html): Who the consent applies to
+* [DetectedIssue](detectedissue.html): Associated patient
+* [DeviceRequest](devicerequest.html): Individual the service is ordered for
+* [DeviceUseStatement](deviceusestatement.html): Search by subject - a patient
+* [DiagnosticReport](diagnosticreport.html): The subject of the report if a patient
+* [DocumentManifest](documentmanifest.html): The subject of the set of documents
+* [DocumentReference](documentreference.html): Who/what is the subject of the document
+* [Encounter](encounter.html): The patient or group present at the encounter
+* [EpisodeOfCare](episodeofcare.html): The patient who is the focus of this episode of care
+* [FamilyMemberHistory](familymemberhistory.html): The identity of a subject to list family member history items for
+* [Flag](flag.html): The identity of a subject to list flags for
+* [Goal](goal.html): Who this goal is intended for
+* [ImagingStudy](imagingstudy.html): Who the study is about
+* [Immunization](immunization.html): The patient for the vaccination record
+* [List](list.html): If all resources have the same subject
+* [MedicationAdministration](medicationadministration.html): The identity of a patient to list administrations  for
+* [MedicationDispense](medicationdispense.html): The identity of a patient to list dispenses  for
+* [MedicationRequest](medicationrequest.html): Returns prescriptions for a specific patient
+* [MedicationStatement](medicationstatement.html): Returns statements for a specific patient.
+* [NutritionOrder](nutritionorder.html): The identity of the person who requires the diet, formula or nutritional supplement
+* [Observation](observation.html): The subject that the observation is about (if patient)
+* [Procedure](procedure.html): Search by subject - a patient
+* [RiskAssessment](riskassessment.html): Who/what does assessment apply to?
+* [ServiceRequest](servicerequest.html): Search by subject - a patient
+* [SupplyDelivery](supplydelivery.html): Patient for whom the item is supplied
+* [VisionPrescription](visionprescription.html): The identity of a patient to list dispenses for
+
+    */
+  patient(
+    id: Parameters<FhirSearchBuilder["reference"]>[1],
+    modifier?: ":identifier" | ResourceType | null | undefined
+  ): ResourceSearchBuilderServiceRequest {
+    this.builder.reference("patient", id, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [Composition](composition.html): Context of the Composition
+* [DeviceRequest](devicerequest.html): Encounter during which request was created
+* [DiagnosticReport](diagnosticreport.html): The Encounter when the order was made
+* [DocumentReference](documentreference.html): Context of the document  content
+* [Flag](flag.html): Alert relevant during encounter
+* [List](list.html): Context in which list created
+* [NutritionOrder](nutritionorder.html): Return nutrition orders with this encounter identifier
+* [Observation](observation.html): Encounter related to the observation
+* [Procedure](procedure.html): Encounter created as part of
+* [RiskAssessment](riskassessment.html): Where was assessment performed?
+* [ServiceRequest](servicerequest.html): An encounter in which this request is made
+* [VisionPrescription](visionprescription.html): Return prescriptions with this encounter identifier
+
+    */
+  encounter(
+    id: Parameters<FhirSearchBuilder["reference"]>[1],
+    modifier?: ":identifier" | ResourceType | null | undefined
+  ): ResourceSearchBuilderServiceRequest {
+    this.builder.reference("encounter", id, modifier);
     return this;
   }
 
@@ -35146,6 +43499,14 @@ class ResourceSearchBuilderServiceRequest extends BaseResourceSearchBuilder<Reso
 }
 
 export type SortOrderServiceRequest =
+  | "code"
+  | "-code"
+  | "identifier"
+  | "-identifier"
+  | "patient"
+  | "-patient"
+  | "encounter"
+  | "-encounter"
   | "authored"
   | "-authored"
   | "based-on"
@@ -36122,6 +44483,342 @@ class ResourceSearchBuilderStructureDefinition extends BaseResourceSearchBuilder
   }
 
   /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): A use context assigned to the capability statement
+* [CodeSystem](codesystem.html): A use context assigned to the code system
+* [CompartmentDefinition](compartmentdefinition.html): A use context assigned to the compartment definition
+* [ConceptMap](conceptmap.html): A use context assigned to the concept map
+* [GraphDefinition](graphdefinition.html): A use context assigned to the graph definition
+* [ImplementationGuide](implementationguide.html): A use context assigned to the implementation guide
+* [MessageDefinition](messagedefinition.html): A use context assigned to the message definition
+* [NamingSystem](namingsystem.html): A use context assigned to the naming system
+* [OperationDefinition](operationdefinition.html): A use context assigned to the operation definition
+* [SearchParameter](searchparameter.html): A use context assigned to the search parameter
+* [StructureDefinition](structuredefinition.html): A use context assigned to the structure definition
+* [StructureMap](structuremap.html): A use context assigned to the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): A use context assigned to the terminology capabilities
+* [ValueSet](valueset.html): A use context assigned to the value set
+
+    */
+  context(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderStructureDefinition {
+    this.builder.token("context", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): A quantity- or range-valued use context assigned to the capability statement
+* [CodeSystem](codesystem.html): A quantity- or range-valued use context assigned to the code system
+* [CompartmentDefinition](compartmentdefinition.html): A quantity- or range-valued use context assigned to the compartment definition
+* [ConceptMap](conceptmap.html): A quantity- or range-valued use context assigned to the concept map
+* [GraphDefinition](graphdefinition.html): A quantity- or range-valued use context assigned to the graph definition
+* [ImplementationGuide](implementationguide.html): A quantity- or range-valued use context assigned to the implementation guide
+* [MessageDefinition](messagedefinition.html): A quantity- or range-valued use context assigned to the message definition
+* [NamingSystem](namingsystem.html): A quantity- or range-valued use context assigned to the naming system
+* [OperationDefinition](operationdefinition.html): A quantity- or range-valued use context assigned to the operation definition
+* [SearchParameter](searchparameter.html): A quantity- or range-valued use context assigned to the search parameter
+* [StructureDefinition](structuredefinition.html): A quantity- or range-valued use context assigned to the structure definition
+* [StructureMap](structuremap.html): A quantity- or range-valued use context assigned to the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): A quantity- or range-valued use context assigned to the terminology capabilities
+* [ValueSet](valueset.html): A quantity- or range-valued use context assigned to the value set
+
+    */
+  contextquantity(
+    number: Parameters<FhirSearchBuilder["quantity"]>[1],
+    prefix?: Prefix | null | undefined
+  ): ResourceSearchBuilderStructureDefinition {
+    this.builder.quantity("context-quantity", number, prefix);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): A type of use context assigned to the capability statement
+* [CodeSystem](codesystem.html): A type of use context assigned to the code system
+* [CompartmentDefinition](compartmentdefinition.html): A type of use context assigned to the compartment definition
+* [ConceptMap](conceptmap.html): A type of use context assigned to the concept map
+* [GraphDefinition](graphdefinition.html): A type of use context assigned to the graph definition
+* [ImplementationGuide](implementationguide.html): A type of use context assigned to the implementation guide
+* [MessageDefinition](messagedefinition.html): A type of use context assigned to the message definition
+* [NamingSystem](namingsystem.html): A type of use context assigned to the naming system
+* [OperationDefinition](operationdefinition.html): A type of use context assigned to the operation definition
+* [SearchParameter](searchparameter.html): A type of use context assigned to the search parameter
+* [StructureDefinition](structuredefinition.html): A type of use context assigned to the structure definition
+* [StructureMap](structuremap.html): A type of use context assigned to the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): A type of use context assigned to the terminology capabilities
+* [ValueSet](valueset.html): A type of use context assigned to the value set
+
+    */
+  contexttype(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderStructureDefinition {
+    this.builder.token("context-type", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): The capability statement publication date
+* [CodeSystem](codesystem.html): The code system publication date
+* [CompartmentDefinition](compartmentdefinition.html): The compartment definition publication date
+* [ConceptMap](conceptmap.html): The concept map publication date
+* [GraphDefinition](graphdefinition.html): The graph definition publication date
+* [ImplementationGuide](implementationguide.html): The implementation guide publication date
+* [MessageDefinition](messagedefinition.html): The message definition publication date
+* [NamingSystem](namingsystem.html): The naming system publication date
+* [OperationDefinition](operationdefinition.html): The operation definition publication date
+* [SearchParameter](searchparameter.html): The search parameter publication date
+* [StructureDefinition](structuredefinition.html): The structure definition publication date
+* [StructureMap](structuremap.html): The structure map publication date
+* [TerminologyCapabilities](terminologycapabilities.html): The terminology capabilities publication date
+* [ValueSet](valueset.html): The value set publication date
+
+    */
+  date(
+    value: Parameters<FhirSearchBuilder["date"]>[1],
+    prefix?: Prefix | null | undefined
+  ): ResourceSearchBuilderStructureDefinition {
+    this.builder.date("date", value, prefix);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): The description of the capability statement
+* [CodeSystem](codesystem.html): The description of the code system
+* [CompartmentDefinition](compartmentdefinition.html): The description of the compartment definition
+* [ConceptMap](conceptmap.html): The description of the concept map
+* [GraphDefinition](graphdefinition.html): The description of the graph definition
+* [ImplementationGuide](implementationguide.html): The description of the implementation guide
+* [MessageDefinition](messagedefinition.html): The description of the message definition
+* [NamingSystem](namingsystem.html): The description of the naming system
+* [OperationDefinition](operationdefinition.html): The description of the operation definition
+* [SearchParameter](searchparameter.html): The description of the search parameter
+* [StructureDefinition](structuredefinition.html): The description of the structure definition
+* [StructureMap](structuremap.html): The description of the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): The description of the terminology capabilities
+* [ValueSet](valueset.html): The description of the value set
+
+    */
+  description(
+    value: Parameters<FhirSearchBuilder["string"]>[1],
+    modifier?: StringModifier | null | undefined
+  ): ResourceSearchBuilderStructureDefinition {
+    this.builder.string("description", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): Intended jurisdiction for the capability statement
+* [CodeSystem](codesystem.html): Intended jurisdiction for the code system
+* [ConceptMap](conceptmap.html): Intended jurisdiction for the concept map
+* [GraphDefinition](graphdefinition.html): Intended jurisdiction for the graph definition
+* [ImplementationGuide](implementationguide.html): Intended jurisdiction for the implementation guide
+* [MessageDefinition](messagedefinition.html): Intended jurisdiction for the message definition
+* [NamingSystem](namingsystem.html): Intended jurisdiction for the naming system
+* [OperationDefinition](operationdefinition.html): Intended jurisdiction for the operation definition
+* [SearchParameter](searchparameter.html): Intended jurisdiction for the search parameter
+* [StructureDefinition](structuredefinition.html): Intended jurisdiction for the structure definition
+* [StructureMap](structuremap.html): Intended jurisdiction for the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): Intended jurisdiction for the terminology capabilities
+* [ValueSet](valueset.html): Intended jurisdiction for the value set
+
+    */
+  jurisdiction(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderStructureDefinition {
+    this.builder.token("jurisdiction", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): Computationally friendly name of the capability statement
+* [CodeSystem](codesystem.html): Computationally friendly name of the code system
+* [CompartmentDefinition](compartmentdefinition.html): Computationally friendly name of the compartment definition
+* [ConceptMap](conceptmap.html): Computationally friendly name of the concept map
+* [GraphDefinition](graphdefinition.html): Computationally friendly name of the graph definition
+* [ImplementationGuide](implementationguide.html): Computationally friendly name of the implementation guide
+* [MessageDefinition](messagedefinition.html): Computationally friendly name of the message definition
+* [NamingSystem](namingsystem.html): Computationally friendly name of the naming system
+* [OperationDefinition](operationdefinition.html): Computationally friendly name of the operation definition
+* [SearchParameter](searchparameter.html): Computationally friendly name of the search parameter
+* [StructureDefinition](structuredefinition.html): Computationally friendly name of the structure definition
+* [StructureMap](structuremap.html): Computationally friendly name of the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): Computationally friendly name of the terminology capabilities
+* [ValueSet](valueset.html): Computationally friendly name of the value set
+
+    */
+  name(
+    value: Parameters<FhirSearchBuilder["string"]>[1],
+    modifier?: StringModifier | null | undefined
+  ): ResourceSearchBuilderStructureDefinition {
+    this.builder.string("name", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): Name of the publisher of the capability statement
+* [CodeSystem](codesystem.html): Name of the publisher of the code system
+* [CompartmentDefinition](compartmentdefinition.html): Name of the publisher of the compartment definition
+* [ConceptMap](conceptmap.html): Name of the publisher of the concept map
+* [GraphDefinition](graphdefinition.html): Name of the publisher of the graph definition
+* [ImplementationGuide](implementationguide.html): Name of the publisher of the implementation guide
+* [MessageDefinition](messagedefinition.html): Name of the publisher of the message definition
+* [NamingSystem](namingsystem.html): Name of the publisher of the naming system
+* [OperationDefinition](operationdefinition.html): Name of the publisher of the operation definition
+* [SearchParameter](searchparameter.html): Name of the publisher of the search parameter
+* [StructureDefinition](structuredefinition.html): Name of the publisher of the structure definition
+* [StructureMap](structuremap.html): Name of the publisher of the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): Name of the publisher of the terminology capabilities
+* [ValueSet](valueset.html): Name of the publisher of the value set
+
+    */
+  publisher(
+    value: Parameters<FhirSearchBuilder["string"]>[1],
+    modifier?: StringModifier | null | undefined
+  ): ResourceSearchBuilderStructureDefinition {
+    this.builder.string("publisher", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): The current status of the capability statement
+* [CodeSystem](codesystem.html): The current status of the code system
+* [CompartmentDefinition](compartmentdefinition.html): The current status of the compartment definition
+* [ConceptMap](conceptmap.html): The current status of the concept map
+* [GraphDefinition](graphdefinition.html): The current status of the graph definition
+* [ImplementationGuide](implementationguide.html): The current status of the implementation guide
+* [MessageDefinition](messagedefinition.html): The current status of the message definition
+* [NamingSystem](namingsystem.html): The current status of the naming system
+* [OperationDefinition](operationdefinition.html): The current status of the operation definition
+* [SearchParameter](searchparameter.html): The current status of the search parameter
+* [StructureDefinition](structuredefinition.html): The current status of the structure definition
+* [StructureMap](structuremap.html): The current status of the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): The current status of the terminology capabilities
+* [ValueSet](valueset.html): The current status of the value set
+
+    */
+  status(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderStructureDefinition {
+    this.builder.token("status", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): The human-friendly name of the capability statement
+* [CodeSystem](codesystem.html): The human-friendly name of the code system
+* [ConceptMap](conceptmap.html): The human-friendly name of the concept map
+* [ImplementationGuide](implementationguide.html): The human-friendly name of the implementation guide
+* [MessageDefinition](messagedefinition.html): The human-friendly name of the message definition
+* [OperationDefinition](operationdefinition.html): The human-friendly name of the operation definition
+* [StructureDefinition](structuredefinition.html): The human-friendly name of the structure definition
+* [StructureMap](structuremap.html): The human-friendly name of the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): The human-friendly name of the terminology capabilities
+* [ValueSet](valueset.html): The human-friendly name of the value set
+
+    */
+  title(
+    value: Parameters<FhirSearchBuilder["string"]>[1],
+    modifier?: StringModifier | null | undefined
+  ): ResourceSearchBuilderStructureDefinition {
+    this.builder.string("title", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): The uri that identifies the capability statement
+* [CodeSystem](codesystem.html): The uri that identifies the code system
+* [CompartmentDefinition](compartmentdefinition.html): The uri that identifies the compartment definition
+* [ConceptMap](conceptmap.html): The uri that identifies the concept map
+* [GraphDefinition](graphdefinition.html): The uri that identifies the graph definition
+* [ImplementationGuide](implementationguide.html): The uri that identifies the implementation guide
+* [MessageDefinition](messagedefinition.html): The uri that identifies the message definition
+* [OperationDefinition](operationdefinition.html): The uri that identifies the operation definition
+* [SearchParameter](searchparameter.html): The uri that identifies the search parameter
+* [StructureDefinition](structuredefinition.html): The uri that identifies the structure definition
+* [StructureMap](structuremap.html): The uri that identifies the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): The uri that identifies the terminology capabilities
+* [ValueSet](valueset.html): The uri that identifies the value set
+
+    */
+  url(
+    value: Parameters<FhirSearchBuilder["uri"]>[1],
+    modifier?: UriModifier | null | undefined
+  ): ResourceSearchBuilderStructureDefinition {
+    this.builder.uri("url", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): The business version of the capability statement
+* [CodeSystem](codesystem.html): The business version of the code system
+* [CompartmentDefinition](compartmentdefinition.html): The business version of the compartment definition
+* [ConceptMap](conceptmap.html): The business version of the concept map
+* [GraphDefinition](graphdefinition.html): The business version of the graph definition
+* [ImplementationGuide](implementationguide.html): The business version of the implementation guide
+* [MessageDefinition](messagedefinition.html): The business version of the message definition
+* [OperationDefinition](operationdefinition.html): The business version of the operation definition
+* [SearchParameter](searchparameter.html): The business version of the search parameter
+* [StructureDefinition](structuredefinition.html): The business version of the structure definition
+* [StructureMap](structuremap.html): The business version of the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): The business version of the terminology capabilities
+* [ValueSet](valueset.html): The business version of the value set
+
+    */
+  version(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderStructureDefinition {
+    this.builder.token("version", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CodeSystem](codesystem.html): External identifier for the code system
+* [ConceptMap](conceptmap.html): External identifier for the concept map
+* [MessageDefinition](messagedefinition.html): External identifier for the message definition
+* [StructureDefinition](structuredefinition.html): External identifier for the structure definition
+* [StructureMap](structuremap.html): External identifier for the structure map
+* [ValueSet](valueset.html): External identifier for the value set
+
+    */
+  identifier(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderStructureDefinition {
+    this.builder.token("identifier", value, modifier);
+    return this;
+  }
+
+  /**
    * Whether the structure is abstract
    */
   abstract(
@@ -36244,6 +44941,32 @@ class ResourceSearchBuilderStructureDefinition extends BaseResourceSearchBuilder
 }
 
 export type SortOrderStructureDefinition =
+  | "context"
+  | "-context"
+  | "context-quantity"
+  | "-context-quantity"
+  | "context-type"
+  | "-context-type"
+  | "date"
+  | "-date"
+  | "description"
+  | "-description"
+  | "jurisdiction"
+  | "-jurisdiction"
+  | "name"
+  | "-name"
+  | "publisher"
+  | "-publisher"
+  | "status"
+  | "-status"
+  | "title"
+  | "-title"
+  | "url"
+  | "-url"
+  | "version"
+  | "-version"
+  | "identifier"
+  | "-identifier"
   | "abstract"
   | "-abstract"
   | "base"
@@ -36410,6 +45133,342 @@ class ResourceSearchBuilderStructureMap extends BaseResourceSearchBuilder<Resour
     modifier?: TokenModifier | null | undefined
   ): ResourceSearchBuilderStructureMap {
     this.builder.token("_type", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): A use context assigned to the capability statement
+* [CodeSystem](codesystem.html): A use context assigned to the code system
+* [CompartmentDefinition](compartmentdefinition.html): A use context assigned to the compartment definition
+* [ConceptMap](conceptmap.html): A use context assigned to the concept map
+* [GraphDefinition](graphdefinition.html): A use context assigned to the graph definition
+* [ImplementationGuide](implementationguide.html): A use context assigned to the implementation guide
+* [MessageDefinition](messagedefinition.html): A use context assigned to the message definition
+* [NamingSystem](namingsystem.html): A use context assigned to the naming system
+* [OperationDefinition](operationdefinition.html): A use context assigned to the operation definition
+* [SearchParameter](searchparameter.html): A use context assigned to the search parameter
+* [StructureDefinition](structuredefinition.html): A use context assigned to the structure definition
+* [StructureMap](structuremap.html): A use context assigned to the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): A use context assigned to the terminology capabilities
+* [ValueSet](valueset.html): A use context assigned to the value set
+
+    */
+  context(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderStructureMap {
+    this.builder.token("context", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): A quantity- or range-valued use context assigned to the capability statement
+* [CodeSystem](codesystem.html): A quantity- or range-valued use context assigned to the code system
+* [CompartmentDefinition](compartmentdefinition.html): A quantity- or range-valued use context assigned to the compartment definition
+* [ConceptMap](conceptmap.html): A quantity- or range-valued use context assigned to the concept map
+* [GraphDefinition](graphdefinition.html): A quantity- or range-valued use context assigned to the graph definition
+* [ImplementationGuide](implementationguide.html): A quantity- or range-valued use context assigned to the implementation guide
+* [MessageDefinition](messagedefinition.html): A quantity- or range-valued use context assigned to the message definition
+* [NamingSystem](namingsystem.html): A quantity- or range-valued use context assigned to the naming system
+* [OperationDefinition](operationdefinition.html): A quantity- or range-valued use context assigned to the operation definition
+* [SearchParameter](searchparameter.html): A quantity- or range-valued use context assigned to the search parameter
+* [StructureDefinition](structuredefinition.html): A quantity- or range-valued use context assigned to the structure definition
+* [StructureMap](structuremap.html): A quantity- or range-valued use context assigned to the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): A quantity- or range-valued use context assigned to the terminology capabilities
+* [ValueSet](valueset.html): A quantity- or range-valued use context assigned to the value set
+
+    */
+  contextquantity(
+    number: Parameters<FhirSearchBuilder["quantity"]>[1],
+    prefix?: Prefix | null | undefined
+  ): ResourceSearchBuilderStructureMap {
+    this.builder.quantity("context-quantity", number, prefix);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): A type of use context assigned to the capability statement
+* [CodeSystem](codesystem.html): A type of use context assigned to the code system
+* [CompartmentDefinition](compartmentdefinition.html): A type of use context assigned to the compartment definition
+* [ConceptMap](conceptmap.html): A type of use context assigned to the concept map
+* [GraphDefinition](graphdefinition.html): A type of use context assigned to the graph definition
+* [ImplementationGuide](implementationguide.html): A type of use context assigned to the implementation guide
+* [MessageDefinition](messagedefinition.html): A type of use context assigned to the message definition
+* [NamingSystem](namingsystem.html): A type of use context assigned to the naming system
+* [OperationDefinition](operationdefinition.html): A type of use context assigned to the operation definition
+* [SearchParameter](searchparameter.html): A type of use context assigned to the search parameter
+* [StructureDefinition](structuredefinition.html): A type of use context assigned to the structure definition
+* [StructureMap](structuremap.html): A type of use context assigned to the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): A type of use context assigned to the terminology capabilities
+* [ValueSet](valueset.html): A type of use context assigned to the value set
+
+    */
+  contexttype(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderStructureMap {
+    this.builder.token("context-type", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): The capability statement publication date
+* [CodeSystem](codesystem.html): The code system publication date
+* [CompartmentDefinition](compartmentdefinition.html): The compartment definition publication date
+* [ConceptMap](conceptmap.html): The concept map publication date
+* [GraphDefinition](graphdefinition.html): The graph definition publication date
+* [ImplementationGuide](implementationguide.html): The implementation guide publication date
+* [MessageDefinition](messagedefinition.html): The message definition publication date
+* [NamingSystem](namingsystem.html): The naming system publication date
+* [OperationDefinition](operationdefinition.html): The operation definition publication date
+* [SearchParameter](searchparameter.html): The search parameter publication date
+* [StructureDefinition](structuredefinition.html): The structure definition publication date
+* [StructureMap](structuremap.html): The structure map publication date
+* [TerminologyCapabilities](terminologycapabilities.html): The terminology capabilities publication date
+* [ValueSet](valueset.html): The value set publication date
+
+    */
+  date(
+    value: Parameters<FhirSearchBuilder["date"]>[1],
+    prefix?: Prefix | null | undefined
+  ): ResourceSearchBuilderStructureMap {
+    this.builder.date("date", value, prefix);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): The description of the capability statement
+* [CodeSystem](codesystem.html): The description of the code system
+* [CompartmentDefinition](compartmentdefinition.html): The description of the compartment definition
+* [ConceptMap](conceptmap.html): The description of the concept map
+* [GraphDefinition](graphdefinition.html): The description of the graph definition
+* [ImplementationGuide](implementationguide.html): The description of the implementation guide
+* [MessageDefinition](messagedefinition.html): The description of the message definition
+* [NamingSystem](namingsystem.html): The description of the naming system
+* [OperationDefinition](operationdefinition.html): The description of the operation definition
+* [SearchParameter](searchparameter.html): The description of the search parameter
+* [StructureDefinition](structuredefinition.html): The description of the structure definition
+* [StructureMap](structuremap.html): The description of the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): The description of the terminology capabilities
+* [ValueSet](valueset.html): The description of the value set
+
+    */
+  description(
+    value: Parameters<FhirSearchBuilder["string"]>[1],
+    modifier?: StringModifier | null | undefined
+  ): ResourceSearchBuilderStructureMap {
+    this.builder.string("description", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): Intended jurisdiction for the capability statement
+* [CodeSystem](codesystem.html): Intended jurisdiction for the code system
+* [ConceptMap](conceptmap.html): Intended jurisdiction for the concept map
+* [GraphDefinition](graphdefinition.html): Intended jurisdiction for the graph definition
+* [ImplementationGuide](implementationguide.html): Intended jurisdiction for the implementation guide
+* [MessageDefinition](messagedefinition.html): Intended jurisdiction for the message definition
+* [NamingSystem](namingsystem.html): Intended jurisdiction for the naming system
+* [OperationDefinition](operationdefinition.html): Intended jurisdiction for the operation definition
+* [SearchParameter](searchparameter.html): Intended jurisdiction for the search parameter
+* [StructureDefinition](structuredefinition.html): Intended jurisdiction for the structure definition
+* [StructureMap](structuremap.html): Intended jurisdiction for the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): Intended jurisdiction for the terminology capabilities
+* [ValueSet](valueset.html): Intended jurisdiction for the value set
+
+    */
+  jurisdiction(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderStructureMap {
+    this.builder.token("jurisdiction", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): Computationally friendly name of the capability statement
+* [CodeSystem](codesystem.html): Computationally friendly name of the code system
+* [CompartmentDefinition](compartmentdefinition.html): Computationally friendly name of the compartment definition
+* [ConceptMap](conceptmap.html): Computationally friendly name of the concept map
+* [GraphDefinition](graphdefinition.html): Computationally friendly name of the graph definition
+* [ImplementationGuide](implementationguide.html): Computationally friendly name of the implementation guide
+* [MessageDefinition](messagedefinition.html): Computationally friendly name of the message definition
+* [NamingSystem](namingsystem.html): Computationally friendly name of the naming system
+* [OperationDefinition](operationdefinition.html): Computationally friendly name of the operation definition
+* [SearchParameter](searchparameter.html): Computationally friendly name of the search parameter
+* [StructureDefinition](structuredefinition.html): Computationally friendly name of the structure definition
+* [StructureMap](structuremap.html): Computationally friendly name of the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): Computationally friendly name of the terminology capabilities
+* [ValueSet](valueset.html): Computationally friendly name of the value set
+
+    */
+  name(
+    value: Parameters<FhirSearchBuilder["string"]>[1],
+    modifier?: StringModifier | null | undefined
+  ): ResourceSearchBuilderStructureMap {
+    this.builder.string("name", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): Name of the publisher of the capability statement
+* [CodeSystem](codesystem.html): Name of the publisher of the code system
+* [CompartmentDefinition](compartmentdefinition.html): Name of the publisher of the compartment definition
+* [ConceptMap](conceptmap.html): Name of the publisher of the concept map
+* [GraphDefinition](graphdefinition.html): Name of the publisher of the graph definition
+* [ImplementationGuide](implementationguide.html): Name of the publisher of the implementation guide
+* [MessageDefinition](messagedefinition.html): Name of the publisher of the message definition
+* [NamingSystem](namingsystem.html): Name of the publisher of the naming system
+* [OperationDefinition](operationdefinition.html): Name of the publisher of the operation definition
+* [SearchParameter](searchparameter.html): Name of the publisher of the search parameter
+* [StructureDefinition](structuredefinition.html): Name of the publisher of the structure definition
+* [StructureMap](structuremap.html): Name of the publisher of the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): Name of the publisher of the terminology capabilities
+* [ValueSet](valueset.html): Name of the publisher of the value set
+
+    */
+  publisher(
+    value: Parameters<FhirSearchBuilder["string"]>[1],
+    modifier?: StringModifier | null | undefined
+  ): ResourceSearchBuilderStructureMap {
+    this.builder.string("publisher", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): The current status of the capability statement
+* [CodeSystem](codesystem.html): The current status of the code system
+* [CompartmentDefinition](compartmentdefinition.html): The current status of the compartment definition
+* [ConceptMap](conceptmap.html): The current status of the concept map
+* [GraphDefinition](graphdefinition.html): The current status of the graph definition
+* [ImplementationGuide](implementationguide.html): The current status of the implementation guide
+* [MessageDefinition](messagedefinition.html): The current status of the message definition
+* [NamingSystem](namingsystem.html): The current status of the naming system
+* [OperationDefinition](operationdefinition.html): The current status of the operation definition
+* [SearchParameter](searchparameter.html): The current status of the search parameter
+* [StructureDefinition](structuredefinition.html): The current status of the structure definition
+* [StructureMap](structuremap.html): The current status of the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): The current status of the terminology capabilities
+* [ValueSet](valueset.html): The current status of the value set
+
+    */
+  status(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderStructureMap {
+    this.builder.token("status", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): The human-friendly name of the capability statement
+* [CodeSystem](codesystem.html): The human-friendly name of the code system
+* [ConceptMap](conceptmap.html): The human-friendly name of the concept map
+* [ImplementationGuide](implementationguide.html): The human-friendly name of the implementation guide
+* [MessageDefinition](messagedefinition.html): The human-friendly name of the message definition
+* [OperationDefinition](operationdefinition.html): The human-friendly name of the operation definition
+* [StructureDefinition](structuredefinition.html): The human-friendly name of the structure definition
+* [StructureMap](structuremap.html): The human-friendly name of the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): The human-friendly name of the terminology capabilities
+* [ValueSet](valueset.html): The human-friendly name of the value set
+
+    */
+  title(
+    value: Parameters<FhirSearchBuilder["string"]>[1],
+    modifier?: StringModifier | null | undefined
+  ): ResourceSearchBuilderStructureMap {
+    this.builder.string("title", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): The uri that identifies the capability statement
+* [CodeSystem](codesystem.html): The uri that identifies the code system
+* [CompartmentDefinition](compartmentdefinition.html): The uri that identifies the compartment definition
+* [ConceptMap](conceptmap.html): The uri that identifies the concept map
+* [GraphDefinition](graphdefinition.html): The uri that identifies the graph definition
+* [ImplementationGuide](implementationguide.html): The uri that identifies the implementation guide
+* [MessageDefinition](messagedefinition.html): The uri that identifies the message definition
+* [OperationDefinition](operationdefinition.html): The uri that identifies the operation definition
+* [SearchParameter](searchparameter.html): The uri that identifies the search parameter
+* [StructureDefinition](structuredefinition.html): The uri that identifies the structure definition
+* [StructureMap](structuremap.html): The uri that identifies the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): The uri that identifies the terminology capabilities
+* [ValueSet](valueset.html): The uri that identifies the value set
+
+    */
+  url(
+    value: Parameters<FhirSearchBuilder["uri"]>[1],
+    modifier?: UriModifier | null | undefined
+  ): ResourceSearchBuilderStructureMap {
+    this.builder.uri("url", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): The business version of the capability statement
+* [CodeSystem](codesystem.html): The business version of the code system
+* [CompartmentDefinition](compartmentdefinition.html): The business version of the compartment definition
+* [ConceptMap](conceptmap.html): The business version of the concept map
+* [GraphDefinition](graphdefinition.html): The business version of the graph definition
+* [ImplementationGuide](implementationguide.html): The business version of the implementation guide
+* [MessageDefinition](messagedefinition.html): The business version of the message definition
+* [OperationDefinition](operationdefinition.html): The business version of the operation definition
+* [SearchParameter](searchparameter.html): The business version of the search parameter
+* [StructureDefinition](structuredefinition.html): The business version of the structure definition
+* [StructureMap](structuremap.html): The business version of the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): The business version of the terminology capabilities
+* [ValueSet](valueset.html): The business version of the value set
+
+    */
+  version(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderStructureMap {
+    this.builder.token("version", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CodeSystem](codesystem.html): External identifier for the code system
+* [ConceptMap](conceptmap.html): External identifier for the concept map
+* [MessageDefinition](messagedefinition.html): External identifier for the message definition
+* [StructureDefinition](structuredefinition.html): External identifier for the structure definition
+* [StructureMap](structuremap.html): External identifier for the structure map
+* [ValueSet](valueset.html): External identifier for the value set
+
+    */
+  identifier(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderStructureMap {
+    this.builder.token("identifier", value, modifier);
     return this;
   }
 }
@@ -37728,6 +46787,94 @@ class ResourceSearchBuilderSupplyDelivery extends BaseResourceSearchBuilder<Reso
   }
 
   /**
+    * Multiple Resources: 
+
+* [AllergyIntolerance](allergyintolerance.html): External ids for this item
+* [CarePlan](careplan.html): External Ids for this plan
+* [CareTeam](careteam.html): External Ids for this team
+* [Composition](composition.html): Version-independent identifier for the Composition
+* [Condition](condition.html): A unique identifier of the condition record
+* [Consent](consent.html): Identifier for this record (external references)
+* [DetectedIssue](detectedissue.html): Unique id for the detected issue
+* [DeviceRequest](devicerequest.html): Business identifier for request/order
+* [DiagnosticReport](diagnosticreport.html): An identifier for the report
+* [DocumentManifest](documentmanifest.html): Unique Identifier for the set of documents
+* [DocumentReference](documentreference.html): Master Version Specific Identifier
+* [Encounter](encounter.html): Identifier(s) by which this encounter is known
+* [EpisodeOfCare](episodeofcare.html): Business Identifier(s) relevant for this EpisodeOfCare
+* [FamilyMemberHistory](familymemberhistory.html): A search by a record identifier
+* [Goal](goal.html): External Ids for this goal
+* [ImagingStudy](imagingstudy.html): Identifiers for the Study, such as DICOM Study Instance UID and Accession number
+* [Immunization](immunization.html): Business identifier
+* [List](list.html): Business identifier
+* [MedicationAdministration](medicationadministration.html): Return administrations with this external identifier
+* [MedicationDispense](medicationdispense.html): Returns dispenses with this external identifier
+* [MedicationRequest](medicationrequest.html): Return prescriptions with this external identifier
+* [MedicationStatement](medicationstatement.html): Return statements with this external identifier
+* [NutritionOrder](nutritionorder.html): Return nutrition orders with this external identifier
+* [Observation](observation.html): The unique id for a particular observation
+* [Procedure](procedure.html): A unique identifier for a procedure
+* [RiskAssessment](riskassessment.html): Unique identifier for the assessment
+* [ServiceRequest](servicerequest.html): Identifiers assigned to this order
+* [SupplyDelivery](supplydelivery.html): External identifier
+* [SupplyRequest](supplyrequest.html): Business Identifier for SupplyRequest
+* [VisionPrescription](visionprescription.html): Return prescriptions with this external identifier
+
+    */
+  identifier(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderSupplyDelivery {
+    this.builder.token("identifier", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [AllergyIntolerance](allergyintolerance.html): Who the sensitivity is for
+* [CarePlan](careplan.html): Who the care plan is for
+* [CareTeam](careteam.html): Who care team is for
+* [ClinicalImpression](clinicalimpression.html): Patient or group assessed
+* [Composition](composition.html): Who and/or what the composition is about
+* [Condition](condition.html): Who has the condition?
+* [Consent](consent.html): Who the consent applies to
+* [DetectedIssue](detectedissue.html): Associated patient
+* [DeviceRequest](devicerequest.html): Individual the service is ordered for
+* [DeviceUseStatement](deviceusestatement.html): Search by subject - a patient
+* [DiagnosticReport](diagnosticreport.html): The subject of the report if a patient
+* [DocumentManifest](documentmanifest.html): The subject of the set of documents
+* [DocumentReference](documentreference.html): Who/what is the subject of the document
+* [Encounter](encounter.html): The patient or group present at the encounter
+* [EpisodeOfCare](episodeofcare.html): The patient who is the focus of this episode of care
+* [FamilyMemberHistory](familymemberhistory.html): The identity of a subject to list family member history items for
+* [Flag](flag.html): The identity of a subject to list flags for
+* [Goal](goal.html): Who this goal is intended for
+* [ImagingStudy](imagingstudy.html): Who the study is about
+* [Immunization](immunization.html): The patient for the vaccination record
+* [List](list.html): If all resources have the same subject
+* [MedicationAdministration](medicationadministration.html): The identity of a patient to list administrations  for
+* [MedicationDispense](medicationdispense.html): The identity of a patient to list dispenses  for
+* [MedicationRequest](medicationrequest.html): Returns prescriptions for a specific patient
+* [MedicationStatement](medicationstatement.html): Returns statements for a specific patient.
+* [NutritionOrder](nutritionorder.html): The identity of the person who requires the diet, formula or nutritional supplement
+* [Observation](observation.html): The subject that the observation is about (if patient)
+* [Procedure](procedure.html): Search by subject - a patient
+* [RiskAssessment](riskassessment.html): Who/what does assessment apply to?
+* [ServiceRequest](servicerequest.html): Search by subject - a patient
+* [SupplyDelivery](supplydelivery.html): Patient for whom the item is supplied
+* [VisionPrescription](visionprescription.html): The identity of a patient to list dispenses for
+
+    */
+  patient(
+    id: Parameters<FhirSearchBuilder["reference"]>[1],
+    modifier?: ":identifier" | ResourceType | null | undefined
+  ): ResourceSearchBuilderSupplyDelivery {
+    this.builder.reference("patient", id, modifier);
+    return this;
+  }
+
+  /**
    * Who collected the Supply
    */
   receiver(
@@ -37762,6 +46909,10 @@ class ResourceSearchBuilderSupplyDelivery extends BaseResourceSearchBuilder<Reso
 }
 
 export type SortOrderSupplyDelivery =
+  | "identifier"
+  | "-identifier"
+  | "patient"
+  | "-patient"
   | "receiver"
   | "-receiver"
   | "status"
@@ -37928,6 +47079,79 @@ class ResourceSearchBuilderSupplyRequest extends BaseResourceSearchBuilder<Resou
   }
 
   /**
+    * Multiple Resources: 
+
+* [AllergyIntolerance](allergyintolerance.html): Date first version of the resource instance was recorded
+* [CarePlan](careplan.html): Time period plan covers
+* [CareTeam](careteam.html): Time period team covers
+* [ClinicalImpression](clinicalimpression.html): When the assessment was documented
+* [Composition](composition.html): Composition editing time
+* [Consent](consent.html): When this Consent was created or indexed
+* [DiagnosticReport](diagnosticreport.html): The clinically relevant time of the report
+* [Encounter](encounter.html): A date within the period the Encounter lasted
+* [EpisodeOfCare](episodeofcare.html): The provided date search value falls within the episode of care's period
+* [FamilyMemberHistory](familymemberhistory.html): When history was recorded or last updated
+* [Flag](flag.html): Time period when flag is active
+* [Immunization](immunization.html): Vaccination  (non)-Administration Date
+* [List](list.html): When the list was prepared
+* [Observation](observation.html): Obtained date/time. If the obtained element is a period, a date that falls in the period
+* [Procedure](procedure.html): When the procedure was performed
+* [RiskAssessment](riskassessment.html): When was assessment made?
+* [SupplyRequest](supplyrequest.html): When the request was made
+
+    */
+  date(
+    value: Parameters<FhirSearchBuilder["date"]>[1],
+    prefix?: Prefix | null | undefined
+  ): ResourceSearchBuilderSupplyRequest {
+    this.builder.date("date", value, prefix);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [AllergyIntolerance](allergyintolerance.html): External ids for this item
+* [CarePlan](careplan.html): External Ids for this plan
+* [CareTeam](careteam.html): External Ids for this team
+* [Composition](composition.html): Version-independent identifier for the Composition
+* [Condition](condition.html): A unique identifier of the condition record
+* [Consent](consent.html): Identifier for this record (external references)
+* [DetectedIssue](detectedissue.html): Unique id for the detected issue
+* [DeviceRequest](devicerequest.html): Business identifier for request/order
+* [DiagnosticReport](diagnosticreport.html): An identifier for the report
+* [DocumentManifest](documentmanifest.html): Unique Identifier for the set of documents
+* [DocumentReference](documentreference.html): Master Version Specific Identifier
+* [Encounter](encounter.html): Identifier(s) by which this encounter is known
+* [EpisodeOfCare](episodeofcare.html): Business Identifier(s) relevant for this EpisodeOfCare
+* [FamilyMemberHistory](familymemberhistory.html): A search by a record identifier
+* [Goal](goal.html): External Ids for this goal
+* [ImagingStudy](imagingstudy.html): Identifiers for the Study, such as DICOM Study Instance UID and Accession number
+* [Immunization](immunization.html): Business identifier
+* [List](list.html): Business identifier
+* [MedicationAdministration](medicationadministration.html): Return administrations with this external identifier
+* [MedicationDispense](medicationdispense.html): Returns dispenses with this external identifier
+* [MedicationRequest](medicationrequest.html): Return prescriptions with this external identifier
+* [MedicationStatement](medicationstatement.html): Return statements with this external identifier
+* [NutritionOrder](nutritionorder.html): Return nutrition orders with this external identifier
+* [Observation](observation.html): The unique id for a particular observation
+* [Procedure](procedure.html): A unique identifier for a procedure
+* [RiskAssessment](riskassessment.html): Unique identifier for the assessment
+* [ServiceRequest](servicerequest.html): Identifiers assigned to this order
+* [SupplyDelivery](supplydelivery.html): External identifier
+* [SupplyRequest](supplyrequest.html): Business Identifier for SupplyRequest
+* [VisionPrescription](visionprescription.html): Return prescriptions with this external identifier
+
+    */
+  identifier(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderSupplyRequest {
+    this.builder.token("identifier", value, modifier);
+    return this;
+  }
+
+  /**
    * The kind of supply (central, non-stock, etc.)
    */
   category(
@@ -37984,6 +47208,10 @@ class ResourceSearchBuilderSupplyRequest extends BaseResourceSearchBuilder<Resou
 }
 
 export type SortOrderSupplyRequest =
+  | "date"
+  | "-date"
+  | "identifier"
+  | "-identifier"
   | "category"
   | "-category"
   | "requester"
@@ -38546,6 +47774,323 @@ class ResourceSearchBuilderTerminologyCapabilities extends BaseResourceSearchBui
     modifier?: TokenModifier | null | undefined
   ): ResourceSearchBuilderTerminologyCapabilities {
     this.builder.token("_type", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): A use context assigned to the capability statement
+* [CodeSystem](codesystem.html): A use context assigned to the code system
+* [CompartmentDefinition](compartmentdefinition.html): A use context assigned to the compartment definition
+* [ConceptMap](conceptmap.html): A use context assigned to the concept map
+* [GraphDefinition](graphdefinition.html): A use context assigned to the graph definition
+* [ImplementationGuide](implementationguide.html): A use context assigned to the implementation guide
+* [MessageDefinition](messagedefinition.html): A use context assigned to the message definition
+* [NamingSystem](namingsystem.html): A use context assigned to the naming system
+* [OperationDefinition](operationdefinition.html): A use context assigned to the operation definition
+* [SearchParameter](searchparameter.html): A use context assigned to the search parameter
+* [StructureDefinition](structuredefinition.html): A use context assigned to the structure definition
+* [StructureMap](structuremap.html): A use context assigned to the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): A use context assigned to the terminology capabilities
+* [ValueSet](valueset.html): A use context assigned to the value set
+
+    */
+  context(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderTerminologyCapabilities {
+    this.builder.token("context", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): A quantity- or range-valued use context assigned to the capability statement
+* [CodeSystem](codesystem.html): A quantity- or range-valued use context assigned to the code system
+* [CompartmentDefinition](compartmentdefinition.html): A quantity- or range-valued use context assigned to the compartment definition
+* [ConceptMap](conceptmap.html): A quantity- or range-valued use context assigned to the concept map
+* [GraphDefinition](graphdefinition.html): A quantity- or range-valued use context assigned to the graph definition
+* [ImplementationGuide](implementationguide.html): A quantity- or range-valued use context assigned to the implementation guide
+* [MessageDefinition](messagedefinition.html): A quantity- or range-valued use context assigned to the message definition
+* [NamingSystem](namingsystem.html): A quantity- or range-valued use context assigned to the naming system
+* [OperationDefinition](operationdefinition.html): A quantity- or range-valued use context assigned to the operation definition
+* [SearchParameter](searchparameter.html): A quantity- or range-valued use context assigned to the search parameter
+* [StructureDefinition](structuredefinition.html): A quantity- or range-valued use context assigned to the structure definition
+* [StructureMap](structuremap.html): A quantity- or range-valued use context assigned to the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): A quantity- or range-valued use context assigned to the terminology capabilities
+* [ValueSet](valueset.html): A quantity- or range-valued use context assigned to the value set
+
+    */
+  contextquantity(
+    number: Parameters<FhirSearchBuilder["quantity"]>[1],
+    prefix?: Prefix | null | undefined
+  ): ResourceSearchBuilderTerminologyCapabilities {
+    this.builder.quantity("context-quantity", number, prefix);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): A type of use context assigned to the capability statement
+* [CodeSystem](codesystem.html): A type of use context assigned to the code system
+* [CompartmentDefinition](compartmentdefinition.html): A type of use context assigned to the compartment definition
+* [ConceptMap](conceptmap.html): A type of use context assigned to the concept map
+* [GraphDefinition](graphdefinition.html): A type of use context assigned to the graph definition
+* [ImplementationGuide](implementationguide.html): A type of use context assigned to the implementation guide
+* [MessageDefinition](messagedefinition.html): A type of use context assigned to the message definition
+* [NamingSystem](namingsystem.html): A type of use context assigned to the naming system
+* [OperationDefinition](operationdefinition.html): A type of use context assigned to the operation definition
+* [SearchParameter](searchparameter.html): A type of use context assigned to the search parameter
+* [StructureDefinition](structuredefinition.html): A type of use context assigned to the structure definition
+* [StructureMap](structuremap.html): A type of use context assigned to the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): A type of use context assigned to the terminology capabilities
+* [ValueSet](valueset.html): A type of use context assigned to the value set
+
+    */
+  contexttype(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderTerminologyCapabilities {
+    this.builder.token("context-type", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): The capability statement publication date
+* [CodeSystem](codesystem.html): The code system publication date
+* [CompartmentDefinition](compartmentdefinition.html): The compartment definition publication date
+* [ConceptMap](conceptmap.html): The concept map publication date
+* [GraphDefinition](graphdefinition.html): The graph definition publication date
+* [ImplementationGuide](implementationguide.html): The implementation guide publication date
+* [MessageDefinition](messagedefinition.html): The message definition publication date
+* [NamingSystem](namingsystem.html): The naming system publication date
+* [OperationDefinition](operationdefinition.html): The operation definition publication date
+* [SearchParameter](searchparameter.html): The search parameter publication date
+* [StructureDefinition](structuredefinition.html): The structure definition publication date
+* [StructureMap](structuremap.html): The structure map publication date
+* [TerminologyCapabilities](terminologycapabilities.html): The terminology capabilities publication date
+* [ValueSet](valueset.html): The value set publication date
+
+    */
+  date(
+    value: Parameters<FhirSearchBuilder["date"]>[1],
+    prefix?: Prefix | null | undefined
+  ): ResourceSearchBuilderTerminologyCapabilities {
+    this.builder.date("date", value, prefix);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): The description of the capability statement
+* [CodeSystem](codesystem.html): The description of the code system
+* [CompartmentDefinition](compartmentdefinition.html): The description of the compartment definition
+* [ConceptMap](conceptmap.html): The description of the concept map
+* [GraphDefinition](graphdefinition.html): The description of the graph definition
+* [ImplementationGuide](implementationguide.html): The description of the implementation guide
+* [MessageDefinition](messagedefinition.html): The description of the message definition
+* [NamingSystem](namingsystem.html): The description of the naming system
+* [OperationDefinition](operationdefinition.html): The description of the operation definition
+* [SearchParameter](searchparameter.html): The description of the search parameter
+* [StructureDefinition](structuredefinition.html): The description of the structure definition
+* [StructureMap](structuremap.html): The description of the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): The description of the terminology capabilities
+* [ValueSet](valueset.html): The description of the value set
+
+    */
+  description(
+    value: Parameters<FhirSearchBuilder["string"]>[1],
+    modifier?: StringModifier | null | undefined
+  ): ResourceSearchBuilderTerminologyCapabilities {
+    this.builder.string("description", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): Intended jurisdiction for the capability statement
+* [CodeSystem](codesystem.html): Intended jurisdiction for the code system
+* [ConceptMap](conceptmap.html): Intended jurisdiction for the concept map
+* [GraphDefinition](graphdefinition.html): Intended jurisdiction for the graph definition
+* [ImplementationGuide](implementationguide.html): Intended jurisdiction for the implementation guide
+* [MessageDefinition](messagedefinition.html): Intended jurisdiction for the message definition
+* [NamingSystem](namingsystem.html): Intended jurisdiction for the naming system
+* [OperationDefinition](operationdefinition.html): Intended jurisdiction for the operation definition
+* [SearchParameter](searchparameter.html): Intended jurisdiction for the search parameter
+* [StructureDefinition](structuredefinition.html): Intended jurisdiction for the structure definition
+* [StructureMap](structuremap.html): Intended jurisdiction for the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): Intended jurisdiction for the terminology capabilities
+* [ValueSet](valueset.html): Intended jurisdiction for the value set
+
+    */
+  jurisdiction(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderTerminologyCapabilities {
+    this.builder.token("jurisdiction", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): Computationally friendly name of the capability statement
+* [CodeSystem](codesystem.html): Computationally friendly name of the code system
+* [CompartmentDefinition](compartmentdefinition.html): Computationally friendly name of the compartment definition
+* [ConceptMap](conceptmap.html): Computationally friendly name of the concept map
+* [GraphDefinition](graphdefinition.html): Computationally friendly name of the graph definition
+* [ImplementationGuide](implementationguide.html): Computationally friendly name of the implementation guide
+* [MessageDefinition](messagedefinition.html): Computationally friendly name of the message definition
+* [NamingSystem](namingsystem.html): Computationally friendly name of the naming system
+* [OperationDefinition](operationdefinition.html): Computationally friendly name of the operation definition
+* [SearchParameter](searchparameter.html): Computationally friendly name of the search parameter
+* [StructureDefinition](structuredefinition.html): Computationally friendly name of the structure definition
+* [StructureMap](structuremap.html): Computationally friendly name of the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): Computationally friendly name of the terminology capabilities
+* [ValueSet](valueset.html): Computationally friendly name of the value set
+
+    */
+  name(
+    value: Parameters<FhirSearchBuilder["string"]>[1],
+    modifier?: StringModifier | null | undefined
+  ): ResourceSearchBuilderTerminologyCapabilities {
+    this.builder.string("name", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): Name of the publisher of the capability statement
+* [CodeSystem](codesystem.html): Name of the publisher of the code system
+* [CompartmentDefinition](compartmentdefinition.html): Name of the publisher of the compartment definition
+* [ConceptMap](conceptmap.html): Name of the publisher of the concept map
+* [GraphDefinition](graphdefinition.html): Name of the publisher of the graph definition
+* [ImplementationGuide](implementationguide.html): Name of the publisher of the implementation guide
+* [MessageDefinition](messagedefinition.html): Name of the publisher of the message definition
+* [NamingSystem](namingsystem.html): Name of the publisher of the naming system
+* [OperationDefinition](operationdefinition.html): Name of the publisher of the operation definition
+* [SearchParameter](searchparameter.html): Name of the publisher of the search parameter
+* [StructureDefinition](structuredefinition.html): Name of the publisher of the structure definition
+* [StructureMap](structuremap.html): Name of the publisher of the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): Name of the publisher of the terminology capabilities
+* [ValueSet](valueset.html): Name of the publisher of the value set
+
+    */
+  publisher(
+    value: Parameters<FhirSearchBuilder["string"]>[1],
+    modifier?: StringModifier | null | undefined
+  ): ResourceSearchBuilderTerminologyCapabilities {
+    this.builder.string("publisher", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): The current status of the capability statement
+* [CodeSystem](codesystem.html): The current status of the code system
+* [CompartmentDefinition](compartmentdefinition.html): The current status of the compartment definition
+* [ConceptMap](conceptmap.html): The current status of the concept map
+* [GraphDefinition](graphdefinition.html): The current status of the graph definition
+* [ImplementationGuide](implementationguide.html): The current status of the implementation guide
+* [MessageDefinition](messagedefinition.html): The current status of the message definition
+* [NamingSystem](namingsystem.html): The current status of the naming system
+* [OperationDefinition](operationdefinition.html): The current status of the operation definition
+* [SearchParameter](searchparameter.html): The current status of the search parameter
+* [StructureDefinition](structuredefinition.html): The current status of the structure definition
+* [StructureMap](structuremap.html): The current status of the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): The current status of the terminology capabilities
+* [ValueSet](valueset.html): The current status of the value set
+
+    */
+  status(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderTerminologyCapabilities {
+    this.builder.token("status", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): The human-friendly name of the capability statement
+* [CodeSystem](codesystem.html): The human-friendly name of the code system
+* [ConceptMap](conceptmap.html): The human-friendly name of the concept map
+* [ImplementationGuide](implementationguide.html): The human-friendly name of the implementation guide
+* [MessageDefinition](messagedefinition.html): The human-friendly name of the message definition
+* [OperationDefinition](operationdefinition.html): The human-friendly name of the operation definition
+* [StructureDefinition](structuredefinition.html): The human-friendly name of the structure definition
+* [StructureMap](structuremap.html): The human-friendly name of the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): The human-friendly name of the terminology capabilities
+* [ValueSet](valueset.html): The human-friendly name of the value set
+
+    */
+  title(
+    value: Parameters<FhirSearchBuilder["string"]>[1],
+    modifier?: StringModifier | null | undefined
+  ): ResourceSearchBuilderTerminologyCapabilities {
+    this.builder.string("title", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): The uri that identifies the capability statement
+* [CodeSystem](codesystem.html): The uri that identifies the code system
+* [CompartmentDefinition](compartmentdefinition.html): The uri that identifies the compartment definition
+* [ConceptMap](conceptmap.html): The uri that identifies the concept map
+* [GraphDefinition](graphdefinition.html): The uri that identifies the graph definition
+* [ImplementationGuide](implementationguide.html): The uri that identifies the implementation guide
+* [MessageDefinition](messagedefinition.html): The uri that identifies the message definition
+* [OperationDefinition](operationdefinition.html): The uri that identifies the operation definition
+* [SearchParameter](searchparameter.html): The uri that identifies the search parameter
+* [StructureDefinition](structuredefinition.html): The uri that identifies the structure definition
+* [StructureMap](structuremap.html): The uri that identifies the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): The uri that identifies the terminology capabilities
+* [ValueSet](valueset.html): The uri that identifies the value set
+
+    */
+  url(
+    value: Parameters<FhirSearchBuilder["uri"]>[1],
+    modifier?: UriModifier | null | undefined
+  ): ResourceSearchBuilderTerminologyCapabilities {
+    this.builder.uri("url", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): The business version of the capability statement
+* [CodeSystem](codesystem.html): The business version of the code system
+* [CompartmentDefinition](compartmentdefinition.html): The business version of the compartment definition
+* [ConceptMap](conceptmap.html): The business version of the concept map
+* [GraphDefinition](graphdefinition.html): The business version of the graph definition
+* [ImplementationGuide](implementationguide.html): The business version of the implementation guide
+* [MessageDefinition](messagedefinition.html): The business version of the message definition
+* [OperationDefinition](operationdefinition.html): The business version of the operation definition
+* [SearchParameter](searchparameter.html): The business version of the search parameter
+* [StructureDefinition](structuredefinition.html): The business version of the structure definition
+* [StructureMap](structuremap.html): The business version of the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): The business version of the terminology capabilities
+* [ValueSet](valueset.html): The business version of the value set
+
+    */
+  version(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderTerminologyCapabilities {
+    this.builder.token("version", value, modifier);
     return this;
   }
 }
@@ -39291,6 +48836,342 @@ class ResourceSearchBuilderValueSet extends BaseResourceSearchBuilder<ResourceSe
   }
 
   /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): A use context assigned to the capability statement
+* [CodeSystem](codesystem.html): A use context assigned to the code system
+* [CompartmentDefinition](compartmentdefinition.html): A use context assigned to the compartment definition
+* [ConceptMap](conceptmap.html): A use context assigned to the concept map
+* [GraphDefinition](graphdefinition.html): A use context assigned to the graph definition
+* [ImplementationGuide](implementationguide.html): A use context assigned to the implementation guide
+* [MessageDefinition](messagedefinition.html): A use context assigned to the message definition
+* [NamingSystem](namingsystem.html): A use context assigned to the naming system
+* [OperationDefinition](operationdefinition.html): A use context assigned to the operation definition
+* [SearchParameter](searchparameter.html): A use context assigned to the search parameter
+* [StructureDefinition](structuredefinition.html): A use context assigned to the structure definition
+* [StructureMap](structuremap.html): A use context assigned to the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): A use context assigned to the terminology capabilities
+* [ValueSet](valueset.html): A use context assigned to the value set
+
+    */
+  context(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderValueSet {
+    this.builder.token("context", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): A quantity- or range-valued use context assigned to the capability statement
+* [CodeSystem](codesystem.html): A quantity- or range-valued use context assigned to the code system
+* [CompartmentDefinition](compartmentdefinition.html): A quantity- or range-valued use context assigned to the compartment definition
+* [ConceptMap](conceptmap.html): A quantity- or range-valued use context assigned to the concept map
+* [GraphDefinition](graphdefinition.html): A quantity- or range-valued use context assigned to the graph definition
+* [ImplementationGuide](implementationguide.html): A quantity- or range-valued use context assigned to the implementation guide
+* [MessageDefinition](messagedefinition.html): A quantity- or range-valued use context assigned to the message definition
+* [NamingSystem](namingsystem.html): A quantity- or range-valued use context assigned to the naming system
+* [OperationDefinition](operationdefinition.html): A quantity- or range-valued use context assigned to the operation definition
+* [SearchParameter](searchparameter.html): A quantity- or range-valued use context assigned to the search parameter
+* [StructureDefinition](structuredefinition.html): A quantity- or range-valued use context assigned to the structure definition
+* [StructureMap](structuremap.html): A quantity- or range-valued use context assigned to the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): A quantity- or range-valued use context assigned to the terminology capabilities
+* [ValueSet](valueset.html): A quantity- or range-valued use context assigned to the value set
+
+    */
+  contextquantity(
+    number: Parameters<FhirSearchBuilder["quantity"]>[1],
+    prefix?: Prefix | null | undefined
+  ): ResourceSearchBuilderValueSet {
+    this.builder.quantity("context-quantity", number, prefix);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): A type of use context assigned to the capability statement
+* [CodeSystem](codesystem.html): A type of use context assigned to the code system
+* [CompartmentDefinition](compartmentdefinition.html): A type of use context assigned to the compartment definition
+* [ConceptMap](conceptmap.html): A type of use context assigned to the concept map
+* [GraphDefinition](graphdefinition.html): A type of use context assigned to the graph definition
+* [ImplementationGuide](implementationguide.html): A type of use context assigned to the implementation guide
+* [MessageDefinition](messagedefinition.html): A type of use context assigned to the message definition
+* [NamingSystem](namingsystem.html): A type of use context assigned to the naming system
+* [OperationDefinition](operationdefinition.html): A type of use context assigned to the operation definition
+* [SearchParameter](searchparameter.html): A type of use context assigned to the search parameter
+* [StructureDefinition](structuredefinition.html): A type of use context assigned to the structure definition
+* [StructureMap](structuremap.html): A type of use context assigned to the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): A type of use context assigned to the terminology capabilities
+* [ValueSet](valueset.html): A type of use context assigned to the value set
+
+    */
+  contexttype(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderValueSet {
+    this.builder.token("context-type", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): The capability statement publication date
+* [CodeSystem](codesystem.html): The code system publication date
+* [CompartmentDefinition](compartmentdefinition.html): The compartment definition publication date
+* [ConceptMap](conceptmap.html): The concept map publication date
+* [GraphDefinition](graphdefinition.html): The graph definition publication date
+* [ImplementationGuide](implementationguide.html): The implementation guide publication date
+* [MessageDefinition](messagedefinition.html): The message definition publication date
+* [NamingSystem](namingsystem.html): The naming system publication date
+* [OperationDefinition](operationdefinition.html): The operation definition publication date
+* [SearchParameter](searchparameter.html): The search parameter publication date
+* [StructureDefinition](structuredefinition.html): The structure definition publication date
+* [StructureMap](structuremap.html): The structure map publication date
+* [TerminologyCapabilities](terminologycapabilities.html): The terminology capabilities publication date
+* [ValueSet](valueset.html): The value set publication date
+
+    */
+  date(
+    value: Parameters<FhirSearchBuilder["date"]>[1],
+    prefix?: Prefix | null | undefined
+  ): ResourceSearchBuilderValueSet {
+    this.builder.date("date", value, prefix);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): The description of the capability statement
+* [CodeSystem](codesystem.html): The description of the code system
+* [CompartmentDefinition](compartmentdefinition.html): The description of the compartment definition
+* [ConceptMap](conceptmap.html): The description of the concept map
+* [GraphDefinition](graphdefinition.html): The description of the graph definition
+* [ImplementationGuide](implementationguide.html): The description of the implementation guide
+* [MessageDefinition](messagedefinition.html): The description of the message definition
+* [NamingSystem](namingsystem.html): The description of the naming system
+* [OperationDefinition](operationdefinition.html): The description of the operation definition
+* [SearchParameter](searchparameter.html): The description of the search parameter
+* [StructureDefinition](structuredefinition.html): The description of the structure definition
+* [StructureMap](structuremap.html): The description of the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): The description of the terminology capabilities
+* [ValueSet](valueset.html): The description of the value set
+
+    */
+  description(
+    value: Parameters<FhirSearchBuilder["string"]>[1],
+    modifier?: StringModifier | null | undefined
+  ): ResourceSearchBuilderValueSet {
+    this.builder.string("description", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): Intended jurisdiction for the capability statement
+* [CodeSystem](codesystem.html): Intended jurisdiction for the code system
+* [ConceptMap](conceptmap.html): Intended jurisdiction for the concept map
+* [GraphDefinition](graphdefinition.html): Intended jurisdiction for the graph definition
+* [ImplementationGuide](implementationguide.html): Intended jurisdiction for the implementation guide
+* [MessageDefinition](messagedefinition.html): Intended jurisdiction for the message definition
+* [NamingSystem](namingsystem.html): Intended jurisdiction for the naming system
+* [OperationDefinition](operationdefinition.html): Intended jurisdiction for the operation definition
+* [SearchParameter](searchparameter.html): Intended jurisdiction for the search parameter
+* [StructureDefinition](structuredefinition.html): Intended jurisdiction for the structure definition
+* [StructureMap](structuremap.html): Intended jurisdiction for the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): Intended jurisdiction for the terminology capabilities
+* [ValueSet](valueset.html): Intended jurisdiction for the value set
+
+    */
+  jurisdiction(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderValueSet {
+    this.builder.token("jurisdiction", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): Computationally friendly name of the capability statement
+* [CodeSystem](codesystem.html): Computationally friendly name of the code system
+* [CompartmentDefinition](compartmentdefinition.html): Computationally friendly name of the compartment definition
+* [ConceptMap](conceptmap.html): Computationally friendly name of the concept map
+* [GraphDefinition](graphdefinition.html): Computationally friendly name of the graph definition
+* [ImplementationGuide](implementationguide.html): Computationally friendly name of the implementation guide
+* [MessageDefinition](messagedefinition.html): Computationally friendly name of the message definition
+* [NamingSystem](namingsystem.html): Computationally friendly name of the naming system
+* [OperationDefinition](operationdefinition.html): Computationally friendly name of the operation definition
+* [SearchParameter](searchparameter.html): Computationally friendly name of the search parameter
+* [StructureDefinition](structuredefinition.html): Computationally friendly name of the structure definition
+* [StructureMap](structuremap.html): Computationally friendly name of the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): Computationally friendly name of the terminology capabilities
+* [ValueSet](valueset.html): Computationally friendly name of the value set
+
+    */
+  name(
+    value: Parameters<FhirSearchBuilder["string"]>[1],
+    modifier?: StringModifier | null | undefined
+  ): ResourceSearchBuilderValueSet {
+    this.builder.string("name", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): Name of the publisher of the capability statement
+* [CodeSystem](codesystem.html): Name of the publisher of the code system
+* [CompartmentDefinition](compartmentdefinition.html): Name of the publisher of the compartment definition
+* [ConceptMap](conceptmap.html): Name of the publisher of the concept map
+* [GraphDefinition](graphdefinition.html): Name of the publisher of the graph definition
+* [ImplementationGuide](implementationguide.html): Name of the publisher of the implementation guide
+* [MessageDefinition](messagedefinition.html): Name of the publisher of the message definition
+* [NamingSystem](namingsystem.html): Name of the publisher of the naming system
+* [OperationDefinition](operationdefinition.html): Name of the publisher of the operation definition
+* [SearchParameter](searchparameter.html): Name of the publisher of the search parameter
+* [StructureDefinition](structuredefinition.html): Name of the publisher of the structure definition
+* [StructureMap](structuremap.html): Name of the publisher of the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): Name of the publisher of the terminology capabilities
+* [ValueSet](valueset.html): Name of the publisher of the value set
+
+    */
+  publisher(
+    value: Parameters<FhirSearchBuilder["string"]>[1],
+    modifier?: StringModifier | null | undefined
+  ): ResourceSearchBuilderValueSet {
+    this.builder.string("publisher", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): The current status of the capability statement
+* [CodeSystem](codesystem.html): The current status of the code system
+* [CompartmentDefinition](compartmentdefinition.html): The current status of the compartment definition
+* [ConceptMap](conceptmap.html): The current status of the concept map
+* [GraphDefinition](graphdefinition.html): The current status of the graph definition
+* [ImplementationGuide](implementationguide.html): The current status of the implementation guide
+* [MessageDefinition](messagedefinition.html): The current status of the message definition
+* [NamingSystem](namingsystem.html): The current status of the naming system
+* [OperationDefinition](operationdefinition.html): The current status of the operation definition
+* [SearchParameter](searchparameter.html): The current status of the search parameter
+* [StructureDefinition](structuredefinition.html): The current status of the structure definition
+* [StructureMap](structuremap.html): The current status of the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): The current status of the terminology capabilities
+* [ValueSet](valueset.html): The current status of the value set
+
+    */
+  status(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderValueSet {
+    this.builder.token("status", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): The human-friendly name of the capability statement
+* [CodeSystem](codesystem.html): The human-friendly name of the code system
+* [ConceptMap](conceptmap.html): The human-friendly name of the concept map
+* [ImplementationGuide](implementationguide.html): The human-friendly name of the implementation guide
+* [MessageDefinition](messagedefinition.html): The human-friendly name of the message definition
+* [OperationDefinition](operationdefinition.html): The human-friendly name of the operation definition
+* [StructureDefinition](structuredefinition.html): The human-friendly name of the structure definition
+* [StructureMap](structuremap.html): The human-friendly name of the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): The human-friendly name of the terminology capabilities
+* [ValueSet](valueset.html): The human-friendly name of the value set
+
+    */
+  title(
+    value: Parameters<FhirSearchBuilder["string"]>[1],
+    modifier?: StringModifier | null | undefined
+  ): ResourceSearchBuilderValueSet {
+    this.builder.string("title", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): The uri that identifies the capability statement
+* [CodeSystem](codesystem.html): The uri that identifies the code system
+* [CompartmentDefinition](compartmentdefinition.html): The uri that identifies the compartment definition
+* [ConceptMap](conceptmap.html): The uri that identifies the concept map
+* [GraphDefinition](graphdefinition.html): The uri that identifies the graph definition
+* [ImplementationGuide](implementationguide.html): The uri that identifies the implementation guide
+* [MessageDefinition](messagedefinition.html): The uri that identifies the message definition
+* [OperationDefinition](operationdefinition.html): The uri that identifies the operation definition
+* [SearchParameter](searchparameter.html): The uri that identifies the search parameter
+* [StructureDefinition](structuredefinition.html): The uri that identifies the structure definition
+* [StructureMap](structuremap.html): The uri that identifies the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): The uri that identifies the terminology capabilities
+* [ValueSet](valueset.html): The uri that identifies the value set
+
+    */
+  url(
+    value: Parameters<FhirSearchBuilder["uri"]>[1],
+    modifier?: UriModifier | null | undefined
+  ): ResourceSearchBuilderValueSet {
+    this.builder.uri("url", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CapabilityStatement](capabilitystatement.html): The business version of the capability statement
+* [CodeSystem](codesystem.html): The business version of the code system
+* [CompartmentDefinition](compartmentdefinition.html): The business version of the compartment definition
+* [ConceptMap](conceptmap.html): The business version of the concept map
+* [GraphDefinition](graphdefinition.html): The business version of the graph definition
+* [ImplementationGuide](implementationguide.html): The business version of the implementation guide
+* [MessageDefinition](messagedefinition.html): The business version of the message definition
+* [OperationDefinition](operationdefinition.html): The business version of the operation definition
+* [SearchParameter](searchparameter.html): The business version of the search parameter
+* [StructureDefinition](structuredefinition.html): The business version of the structure definition
+* [StructureMap](structuremap.html): The business version of the structure map
+* [TerminologyCapabilities](terminologycapabilities.html): The business version of the terminology capabilities
+* [ValueSet](valueset.html): The business version of the value set
+
+    */
+  version(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderValueSet {
+    this.builder.token("version", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [CodeSystem](codesystem.html): External identifier for the code system
+* [ConceptMap](conceptmap.html): External identifier for the concept map
+* [MessageDefinition](messagedefinition.html): External identifier for the message definition
+* [StructureDefinition](structuredefinition.html): External identifier for the structure definition
+* [StructureMap](structuremap.html): External identifier for the structure map
+* [ValueSet](valueset.html): External identifier for the value set
+
+    */
+  identifier(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderValueSet {
+    this.builder.token("identifier", value, modifier);
+    return this;
+  }
+
+  /**
    * This special parameter searches for codes in the value set. See additional notes on the ValueSet resource
    */
   code(
@@ -39325,6 +49206,32 @@ class ResourceSearchBuilderValueSet extends BaseResourceSearchBuilder<ResourceSe
 }
 
 export type SortOrderValueSet =
+  | "context"
+  | "-context"
+  | "context-quantity"
+  | "-context-quantity"
+  | "context-type"
+  | "-context-type"
+  | "date"
+  | "-date"
+  | "description"
+  | "-description"
+  | "jurisdiction"
+  | "-jurisdiction"
+  | "name"
+  | "-name"
+  | "publisher"
+  | "-publisher"
+  | "status"
+  | "-status"
+  | "title"
+  | "-title"
+  | "url"
+  | "-url"
+  | "version"
+  | "-version"
+  | "identifier"
+  | "-identifier"
   | "code"
   | "-code"
   | "expansion"
@@ -39663,6 +49570,119 @@ class ResourceSearchBuilderVisionPrescription extends BaseResourceSearchBuilder<
   }
 
   /**
+    * Multiple Resources: 
+
+* [AllergyIntolerance](allergyintolerance.html): External ids for this item
+* [CarePlan](careplan.html): External Ids for this plan
+* [CareTeam](careteam.html): External Ids for this team
+* [Composition](composition.html): Version-independent identifier for the Composition
+* [Condition](condition.html): A unique identifier of the condition record
+* [Consent](consent.html): Identifier for this record (external references)
+* [DetectedIssue](detectedissue.html): Unique id for the detected issue
+* [DeviceRequest](devicerequest.html): Business identifier for request/order
+* [DiagnosticReport](diagnosticreport.html): An identifier for the report
+* [DocumentManifest](documentmanifest.html): Unique Identifier for the set of documents
+* [DocumentReference](documentreference.html): Master Version Specific Identifier
+* [Encounter](encounter.html): Identifier(s) by which this encounter is known
+* [EpisodeOfCare](episodeofcare.html): Business Identifier(s) relevant for this EpisodeOfCare
+* [FamilyMemberHistory](familymemberhistory.html): A search by a record identifier
+* [Goal](goal.html): External Ids for this goal
+* [ImagingStudy](imagingstudy.html): Identifiers for the Study, such as DICOM Study Instance UID and Accession number
+* [Immunization](immunization.html): Business identifier
+* [List](list.html): Business identifier
+* [MedicationAdministration](medicationadministration.html): Return administrations with this external identifier
+* [MedicationDispense](medicationdispense.html): Returns dispenses with this external identifier
+* [MedicationRequest](medicationrequest.html): Return prescriptions with this external identifier
+* [MedicationStatement](medicationstatement.html): Return statements with this external identifier
+* [NutritionOrder](nutritionorder.html): Return nutrition orders with this external identifier
+* [Observation](observation.html): The unique id for a particular observation
+* [Procedure](procedure.html): A unique identifier for a procedure
+* [RiskAssessment](riskassessment.html): Unique identifier for the assessment
+* [ServiceRequest](servicerequest.html): Identifiers assigned to this order
+* [SupplyDelivery](supplydelivery.html): External identifier
+* [SupplyRequest](supplyrequest.html): Business Identifier for SupplyRequest
+* [VisionPrescription](visionprescription.html): Return prescriptions with this external identifier
+
+    */
+  identifier(
+    value: Parameters<FhirSearchBuilder["token"]>[1],
+    modifier?: TokenModifier | null | undefined
+  ): ResourceSearchBuilderVisionPrescription {
+    this.builder.token("identifier", value, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [AllergyIntolerance](allergyintolerance.html): Who the sensitivity is for
+* [CarePlan](careplan.html): Who the care plan is for
+* [CareTeam](careteam.html): Who care team is for
+* [ClinicalImpression](clinicalimpression.html): Patient or group assessed
+* [Composition](composition.html): Who and/or what the composition is about
+* [Condition](condition.html): Who has the condition?
+* [Consent](consent.html): Who the consent applies to
+* [DetectedIssue](detectedissue.html): Associated patient
+* [DeviceRequest](devicerequest.html): Individual the service is ordered for
+* [DeviceUseStatement](deviceusestatement.html): Search by subject - a patient
+* [DiagnosticReport](diagnosticreport.html): The subject of the report if a patient
+* [DocumentManifest](documentmanifest.html): The subject of the set of documents
+* [DocumentReference](documentreference.html): Who/what is the subject of the document
+* [Encounter](encounter.html): The patient or group present at the encounter
+* [EpisodeOfCare](episodeofcare.html): The patient who is the focus of this episode of care
+* [FamilyMemberHistory](familymemberhistory.html): The identity of a subject to list family member history items for
+* [Flag](flag.html): The identity of a subject to list flags for
+* [Goal](goal.html): Who this goal is intended for
+* [ImagingStudy](imagingstudy.html): Who the study is about
+* [Immunization](immunization.html): The patient for the vaccination record
+* [List](list.html): If all resources have the same subject
+* [MedicationAdministration](medicationadministration.html): The identity of a patient to list administrations  for
+* [MedicationDispense](medicationdispense.html): The identity of a patient to list dispenses  for
+* [MedicationRequest](medicationrequest.html): Returns prescriptions for a specific patient
+* [MedicationStatement](medicationstatement.html): Returns statements for a specific patient.
+* [NutritionOrder](nutritionorder.html): The identity of the person who requires the diet, formula or nutritional supplement
+* [Observation](observation.html): The subject that the observation is about (if patient)
+* [Procedure](procedure.html): Search by subject - a patient
+* [RiskAssessment](riskassessment.html): Who/what does assessment apply to?
+* [ServiceRequest](servicerequest.html): Search by subject - a patient
+* [SupplyDelivery](supplydelivery.html): Patient for whom the item is supplied
+* [VisionPrescription](visionprescription.html): The identity of a patient to list dispenses for
+
+    */
+  patient(
+    id: Parameters<FhirSearchBuilder["reference"]>[1],
+    modifier?: ":identifier" | ResourceType | null | undefined
+  ): ResourceSearchBuilderVisionPrescription {
+    this.builder.reference("patient", id, modifier);
+    return this;
+  }
+
+  /**
+    * Multiple Resources: 
+
+* [Composition](composition.html): Context of the Composition
+* [DeviceRequest](devicerequest.html): Encounter during which request was created
+* [DiagnosticReport](diagnosticreport.html): The Encounter when the order was made
+* [DocumentReference](documentreference.html): Context of the document  content
+* [Flag](flag.html): Alert relevant during encounter
+* [List](list.html): Context in which list created
+* [NutritionOrder](nutritionorder.html): Return nutrition orders with this encounter identifier
+* [Observation](observation.html): Encounter related to the observation
+* [Procedure](procedure.html): Encounter created as part of
+* [RiskAssessment](riskassessment.html): Where was assessment performed?
+* [ServiceRequest](servicerequest.html): An encounter in which this request is made
+* [VisionPrescription](visionprescription.html): Return prescriptions with this encounter identifier
+
+    */
+  encounter(
+    id: Parameters<FhirSearchBuilder["reference"]>[1],
+    modifier?: ":identifier" | ResourceType | null | undefined
+  ): ResourceSearchBuilderVisionPrescription {
+    this.builder.reference("encounter", id, modifier);
+    return this;
+  }
+
+  /**
    * Return prescriptions written on this date
    */
   datewritten(
@@ -39697,6 +49717,12 @@ class ResourceSearchBuilderVisionPrescription extends BaseResourceSearchBuilder<
 }
 
 export type SortOrderVisionPrescription =
+  | "identifier"
+  | "-identifier"
+  | "patient"
+  | "-patient"
+  | "encounter"
+  | "-encounter"
   | "datewritten"
   | "-datewritten"
   | "prescriber"
