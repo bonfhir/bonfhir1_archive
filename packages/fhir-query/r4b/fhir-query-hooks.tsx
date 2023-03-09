@@ -92,27 +92,21 @@ export const FhirQueryKeys = {
     try {
       const inSearch = (queryClient.getQueriesData([type, "search"]) || [])
         .flatMap(([, result]) =>
-          (result as BundleResult<FhirResource>).nav.type(type)
+          (result as BundleResult<FhirResource>)?.nav?.type(type)
         )
-        .find((resource) => resource.id === id);
+        .find((resource) => resource?.id === id);
       if (inSearch) {
         return inSearch;
       }
 
       return (
-        (
-          queryClient.getQueriesData<{
-            pages: Array<BundleResult<FhirResource>>;
-          }>([type, "infiniteSearch"]) || []
-        )
-          .flatMap(([, pages]) => pages?.pages || [])
-          .flatMap((data: BundleResult<FhirResource>) => data.nav.type(type))
-          // We have a typing bug here with lodash - thus this horrible construct for any.
-          .find(
-            // eslint-disable-next-line @typescript-eslint/no-explicit-any
-            ((resource: FhirResource) => resource.id === id) as any
-          ) as unknown as ExtractResource<ResourceType> | undefined
-      );
+        queryClient.getQueriesData<{
+          pages: Array<BundleResult<FhirResource>>;
+        }>([type, "infiniteSearch"]) || []
+      )
+        .flatMap(([, pages]) => pages?.pages || [])
+        .flatMap((data: BundleResult<FhirResource>) => data?.nav?.type(type))
+        .find((resource: FhirResource) => resource?.id === id);
     } catch (error) {
       // Just in case the cache is corrupted.
       console.error(error);
