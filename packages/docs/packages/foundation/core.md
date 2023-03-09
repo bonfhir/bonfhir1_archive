@@ -348,6 +348,49 @@ The reverse references also create indices that can be reused in loops, assuming
 
 All indices are created lazily, so it is very cheap to create / return a `bundleNavigator` even if it is not used subsequently.
 
+## Data Types Adapter
+
+The `core` package includes a utility to parse and format, with support for localization, all standard [FHIR Data Types](https://hl7.org/fhir/datatypes.html).
+
+The utility uses the standard [`Intl`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl) API and provides a formatter with multiple options for each data types:
+
+```typescript
+import { intlFhirDataTypeAdapter } from "@bonfhir/core/r4b";
+
+const adapter = intlFhirDataTypeAdapter("en-us"); // or intlFhirDataTypeAdapter() to use the current locale (e.g. in a browser)
+
+adapter.date.format("2023-12-31");
+// "12/31/2023"
+adapter.date.format("2023-12-31", { dateStyle: "full" });
+// "Wednesday, February 8, 2023"
+adapter.date.format("2023-12-31", { dateStyle: "medium" });
+// "Feb 8, 2023"
+
+const zhAdapter = intlFhirDataTypeAdapter("zh-Hans-CN-u-nu-hanidec");
+adapter.decimal.format("123456.78900");
+// "一二三,四五六.七八九〇〇"
+
+const patient: Patient = {...};
+adapter.humanName.format(patient.name, { style: "short", max: 1, useFilterOrder: ["official", "usual"] });
+// Outputs a single HumanName, only for official or usual use, favoring official first.
+```
+
+Each data type adapter provides multiple options that should fit most of the needs of an application.
+If you are looking for a specific option, having a look at the [unit tests](https://github.com/bonfhir/bonfhir/tree/main/packages/core/r4b/data-types) may help.
+
+The adapter also comes with a tag function (template literal) that can be used to directly invoke adapters to compose messages:
+
+```typescript
+import { intlFhirDataTypeAdapter } from "@bonfhir/core/r4b";
+
+const patient: Patient = {...};
+const adapter = intlFhirDataTypeAdapter("en-us");
+
+adapter.message`Patient ${[patient.name, "humanName", { style: "shorter", max: 1 }]} was born on ${[patient.birthDate, "date", { dateStyle: "long"}]}.`;
+// "Patient John was born on February 2, 1954."
+
+```
+
 ## Timeline builder
 
 The `buildTimelineOfResourcesWithPeriods` can compute blocks of time where resources can be placed, assuming you can project them into a `Period`.
