@@ -1,4 +1,5 @@
 import { FhirDataTypeAdapter } from "../data-type-adapter";
+import { utcNow } from "../date";
 import { fhirDateRegexpFragment } from "./helpers/dateTimeRegexp";
 
 /**
@@ -7,9 +8,16 @@ import { fhirDateRegexpFragment } from "./helpers/dateTimeRegexp";
  * @see https://hl7.org/fhir/datatypes.html#date
  */
 
-export interface FhirDateFormatOptions {
-  dateStyle?: "full" | "long" | "medium" | "short" | null | undefined;
-}
+export type FhirDateFormatOptions =
+  | {
+      dateStyle?: "full" | "long" | "medium" | "short" | null | undefined;
+    }
+  | {
+      dateStyle: "relative";
+      relativeStyle?: "long" | "short" | null | undefined;
+      /** From when the relative computation happen - defaults to now. */
+      relativeTo?: string | number | Date | null | undefined;
+    };
 
 export interface FhirDateTypeAdapter {
   locale?: FhirDataTypeAdapter["locale"];
@@ -125,6 +133,14 @@ export function fhirDateTypeAdapter(
           intlOptions.month = convertDateStyleToMonthStyle(options?.dateStyle);
           break;
         case "full":
+          if (options?.dateStyle === "relative") {
+            return formatRelativeDate(
+              locale,
+              fhirDate.date,
+              options.relativeTo,
+              options.relativeStyle
+            );
+          }
           intlOptions.dateStyle = options?.dateStyle || undefined;
           break;
         default:
@@ -150,4 +166,69 @@ function convertDateStyleToMonthStyle(
     default:
       return undefined;
   }
+}
+
+/**
+ * @see https://momentjs.com/docs/#/displaying/fromnow/
+ * @see https://momentjs.com/docs/#/displaying/tonow/
+ */
+function formatRelativeDate(
+  locale: string | undefined,
+  value: Date,
+  relativeTo: string | number | Date | null | undefined,
+  relativeStyle: "long" | "short" | null | undefined
+) {
+  const relativeToDate = relativeTo ? new Date(relativeTo) : utcNow();
+  const relative = new Intl.RelativeTimeFormat(locale, {
+    style: relativeStyle ?? undefined,
+    numeric: "auto",
+  });
+
+  if (
+    value.getFullYear() === relativeToDate.getFullYear() &&
+    value.getMonth() === relativeToDate.getMonth() &&
+    value.getDate() === relativeToDate.getDate()
+  ) {
+    return relative.format(0, "day");
+  }
+
+  const diffSec = Math.floor(
+    (relativeToDate.getTime() - value.getTime()) / 1000
+  );
+
+  // from now
+  if (diffSec >= 0) {
+    if (diffSec < 126000) {
+      return relative.format(-1, "day");
+    } else if (diffSec < 2160000) {
+      return relative.format(-Math.floor(diffSec / 86400), "days");
+    } else if (diffSec < 3888000) {
+      return relative.format(-1, "month");
+    } else if (diffSec < 27561600) {
+      const monthDiff = relativeToDate.getMonth() - value.getMonth();
+      const yearDiff = relativeToDate.getFullYear() - value.getFullYear();
+      return relative.format(-(monthDiff + yearDiff * 12), "months");
+    } else if (diffSec < 47260800) {
+      return relative.format(-1, "year");
+    }
+
+    return relative.format(-Math.floor(diffSec / 31104000), "years");
+  }
+
+  // in now
+  if (diffSec > -126000) {
+    return relative.format(1, "day");
+  } else if (diffSec > -2160000) {
+    return relative.format(-Math.floor(diffSec / 86400), "days");
+  } else if (diffSec > -3888000) {
+    return relative.format(1, "month");
+  } else if (diffSec > -27561600) {
+    const monthDiff = relativeToDate.getMonth() - value.getMonth();
+    const yearDiff = relativeToDate.getFullYear() - value.getFullYear();
+    return relative.format(-(monthDiff + yearDiff * 12), "months");
+  } else if (diffSec > -47260800) {
+    return relative.format(1, "year");
+  }
+
+  return relative.format(-Math.floor(diffSec / 31104000), "years");
 }
