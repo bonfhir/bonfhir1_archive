@@ -1,6 +1,7 @@
 import { Bundle, CapabilityStatement, FhirResource, Identifier } from "fhir/r4";
 import isEqual from "lodash/isEqual";
 import omit from "lodash/omit";
+import { bundleNavigator, BundleNavigator } from "./bundle-navigator";
 import { merge, MergeResult } from "./merge";
 import { fhirSearch } from "./search-builder";
 import { ExtractResource, ResourceType, WithRequired } from "./types";
@@ -410,6 +411,41 @@ export async function searchAllPages<TResource extends ResourceType>(
   }
 
   return result;
+}
+
+/**
+ * Execute a search operation and walk through all the search pages.
+ * For each page, execute the `fn` callback by passing the current page bundle result.
+ */
+export async function searchByPage<TResource extends ResourceType>(
+  client: FhirRestfulClient,
+  type: TResource | null | undefined,
+  search: string,
+  fn: (args: {
+    /** The current search page bundle */
+    bundle: Bundle<ExtractResource<TResource>>;
+    /** A {@link BundleNavigator} setup for the current search page bundle. */
+    nav: BundleNavigator<ExtractResource<TResource>>;
+  }) => unknown
+): Promise<void> {
+  let currentSearchBundle: Bundle<ExtractResource<TResource>> | undefined =
+    undefined;
+
+  while (!currentSearchBundle || linkUrl(currentSearchBundle, "next")) {
+    if (currentSearchBundle) {
+      currentSearchBundle = await client.get<
+        Bundle<ExtractResource<TResource>>
+        // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+      >(linkUrl(currentSearchBundle, "next")!);
+    } else {
+      currentSearchBundle = await client.search<TResource>(type, search);
+    }
+
+    await fn({
+      bundle: currentSearchBundle,
+      nav: bundleNavigator(currentSearchBundle),
+    });
+  }
 }
 
 /**

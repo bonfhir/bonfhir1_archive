@@ -229,6 +229,27 @@ const searchPatientPage2 =
 const backPage = linkUrl(searchPatientPage2, "previous");
 ```
 
+### `searchByPage` utility
+
+Similar to the [`searchAllPages`](#searchallpages-utility), the `searchByPage` utility will retrieve all pages for a
+given search, but instead of collecting and returning the whole result set at once, it will invoke a callback for
+each page. The callback is awaited so it can be a promise.
+
+```typescript
+import { searchByPage } from "@bonfhir/core/r4b";
+
+await searchByPage(
+  client,
+  "Patient",
+  resourceSearch("Patient")._count(100)._total("accurate").href,
+  async ({ bundle, nav }) => {
+    for (const patient of nav.resources) {
+      // ...
+    }
+  }
+);
+```
+
 ### Standard Operations Types
 
 The `core` library contains types for the [standard FHIR Operations](https://www.hl7.org/fhir/operationslist.html)
