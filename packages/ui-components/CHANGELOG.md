@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.1.0-alpha.5](https://github.com/bonfhir/bonfhir/compare/@bonfhir/ui-components@0.1.0-alpha.4...@bonfhir/ui-components@0.1.0-alpha.5) (2023-03-10)
+
+
+### Features
+
+* **ui-components:** :sparkles: add auto-refresh support for relative date/time in `<FhirValue />` ([9125775](https://github.com/bonfhir/bonfhir/commit/91257754c7d049e568004bdd7f76ec2dd4aa7cff)), closes [#133](https://github.com/bonfhir/bonfhir/issues/133)
+
+
+
+
+
 # [0.1.0-alpha.4](https://github.com/bonfhir/bonfhir/compare/@bonfhir/ui-components@0.1.0-alpha.3...@bonfhir/ui-components@0.1.0-alpha.4) (2023-03-07)
 
 **Note:** Version bump only for package @bonfhir/ui-components

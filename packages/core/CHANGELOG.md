@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.12](https://github.com/bonfhir/bonfhir/compare/@bonfhir/core@1.0.0-alpha.11...@bonfhir/core@1.0.0-alpha.12) (2023-03-10)
+
+
+### Bug Fixes
+
+* **core:** :bug: fix missing `resourceSearch` parameters ([1ef9662](https://github.com/bonfhir/bonfhir/commit/1ef96625959a305cde986d99e9d0a6c6d3e90a73)), closes [#120](https://github.com/bonfhir/bonfhir/issues/120)
+
+
+### Features
+
+* **core:** :sparkles: add 'relative' option to dateTime and instant formatters ([4a23f9c](https://github.com/bonfhir/bonfhir/commit/4a23f9c9aef95c55d8716054706ed23fc4e510a3)), closes [#133](https://github.com/bonfhir/bonfhir/issues/133)
+* **core:** :sparkles: add "relative" option to date formatter ([c7909c8](https://github.com/bonfhir/bonfhir/commit/c7909c88b7b628b9a75277f2bb924e69146fc556)), closes [#133](https://github.com/bonfhir/bonfhir/issues/133)
+* **core:** :sparkles: add `searchByPage` client helper ([37f2c45](https://github.com/bonfhir/bonfhir/commit/37f2c45a86a5af1a49e726368754779d245a7ae7)), closes [#104](https://github.com/bonfhir/bonfhir/issues/104)
+
+
+
+
+
 # [1.0.0-alpha.11](https://github.com/bonfhir/bonfhir/compare/@bonfhir/core@1.0.0-alpha.10...@bonfhir/core@1.0.0-alpha.11) (2023-03-07)
 
 

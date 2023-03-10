@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.1.0-alpha.5](https://github.com/bonfhir/bonfhir/compare/@bonfhir/fhir-query@0.1.0-alpha.4...@bonfhir/fhir-query@0.1.0-alpha.5) (2023-03-10)
+
+
+### Bug Fixes
+
+* **fhir-query:** :adhesive_bandage: fix error when search cache is null ([438c8d4](https://github.com/bonfhir/bonfhir/commit/438c8d43fb6a89badf23a527afeede0f028df7cd)), closes [#145](https://github.com/bonfhir/bonfhir/issues/145)
+
+
+
+
+
 # [0.1.0-alpha.4](https://github.com/bonfhir/bonfhir/compare/@bonfhir/fhir-query@0.1.0-alpha.3...@bonfhir/fhir-query@0.1.0-alpha.4) (2023-03-07)
 
 

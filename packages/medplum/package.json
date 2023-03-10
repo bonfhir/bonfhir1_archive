@@ -1,7 +1,7 @@
 {
   "name": "@bonfhir/medplum",
   "description": "Medplum integration package for Bonfhir.",
-  "version": "1.0.0-alpha.12",
+  "version": "1.0.0-alpha.13",
   "repository": "https://github.com/bonfhir/bonfhir.git",
   "license": "APACHE-2.0",
   "type": "module",
@@ -33,7 +33,7 @@
     "typescript": "^4.9.4"
   },
   "dependencies": {
-    "@bonfhir/core": "^1.0.0-alpha.11"
+    "@bonfhir/core": "^1.0.0-alpha.12"
   },
   "peerDependencies": {
     "@medplum/core": "^2.0.0"
