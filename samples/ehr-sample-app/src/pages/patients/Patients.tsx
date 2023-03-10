@@ -7,9 +7,7 @@ import { Link } from "react-router-dom";
 import { Page } from "../../components/Page";
 
 export function Patients(): ReactElement | null {
-  const patientsQuery = useFhirSearch("Patient", (search) =>
-    search.active("true")
-  );
+  const patientsQuery = useFhirSearch("Patient", (search) => search);
 
   if (patientsQuery.isInitialLoading) {
     return <div>Loading...</div>;
@@ -17,7 +15,14 @@ export function Patients(): ReactElement | null {
 
   return (
     <Page>
-      <Typography.Title>Patients</Typography.Title>
+      <Typography.Title>
+        Patients{" "}
+        <FhirValue
+          type="dateTime"
+          value="2023-03-10T07:49:00-05:00"
+          options={{ dateStyle: "relative" }}
+        />
+      </Typography.Title>
       <ul>
         {patientsQuery.data?.nav.type("Patient").map((patient) => (
           <li key={patient.id}>
@@ -25,7 +30,7 @@ export function Patients(): ReactElement | null {
             <FhirValue
               type="date"
               value={patient.birthDate}
-              options={{ dateStyle: "long" }}
+              options={{ dateStyle: "relative" }}
             />
             , Gender:{" "}
             <FhirValue
