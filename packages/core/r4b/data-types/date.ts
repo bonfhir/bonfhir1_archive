@@ -1,4 +1,5 @@
 import { FhirDataTypeAdapter } from "../data-type-adapter";
+import { formatRelativeDateTime } from "./helpers";
 import { fhirDateRegexpFragment } from "./helpers/dateTimeRegexp";
 
 /**
@@ -7,9 +8,16 @@ import { fhirDateRegexpFragment } from "./helpers/dateTimeRegexp";
  * @see https://hl7.org/fhir/datatypes.html#date
  */
 
-export interface FhirDateFormatOptions {
-  dateStyle?: "full" | "long" | "medium" | "short" | null | undefined;
-}
+export type FhirDateFormatOptions =
+  | {
+      dateStyle?: "full" | "long" | "medium" | "short" | null | undefined;
+    }
+  | {
+      dateStyle: "relative";
+      relativeStyle?: "long" | "short" | null | undefined;
+      /** From when the relative computation happen - defaults to now. */
+      relativeTo?: string | number | Date | null | undefined;
+    };
 
 export interface FhirDateTypeAdapter {
   locale?: FhirDataTypeAdapter["locale"];
@@ -125,6 +133,15 @@ export function fhirDateTypeAdapter(
           intlOptions.month = convertDateStyleToMonthStyle(options?.dateStyle);
           break;
         case "full":
+          if (options?.dateStyle === "relative") {
+            return formatRelativeDateTime(
+              locale,
+              fhirDate.date,
+              options.relativeTo,
+              options.relativeStyle,
+              true
+            );
+          }
           intlOptions.dateStyle = options?.dateStyle || undefined;
           break;
         default:

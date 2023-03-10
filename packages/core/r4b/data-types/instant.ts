@@ -1,4 +1,5 @@
 import { FhirDataTypeAdapter } from "../data-type-adapter";
+import { formatRelativeDateTime } from "./helpers";
 import {
   fhirDateRegexpFragment,
   fhirTimeWithZoneRegexpFragment,
@@ -10,10 +11,17 @@ import {
  * @see https://hl7.org/fhir/datatypes.html#instant
  */
 
-export interface FhirInstantFormatOptions {
-  dateStyle?: "full" | "long" | "medium" | "short" | null;
-  timeStyle?: "full" | "long" | "medium" | "short" | null;
-}
+export type FhirInstantFormatOptions =
+  | {
+      dateStyle?: "full" | "long" | "medium" | "short" | null;
+      timeStyle?: "full" | "long" | "medium" | "short" | null;
+    }
+  | {
+      dateStyle: "relative";
+      relativeStyle?: "long" | "short" | null | undefined;
+      /** From when the relative computation happen - defaults to now. */
+      relativeTo?: string | number | Date | null | undefined;
+    };
 
 export interface FhirInstantTypeAdapter {
   locale?: FhirDataTypeAdapter["locale"];
@@ -81,11 +89,20 @@ export function fhirInstantTypeAdapter(
 
       const intlOptions: Intl.DateTimeFormatOptions = {};
 
+      if (options?.dateStyle === "relative") {
+        return formatRelativeDateTime(
+          locale,
+          fhirInstant,
+          options.relativeTo,
+          options.relativeStyle
+        );
+      }
+
       // by default we always show the date
-      intlOptions.dateStyle =
-        typeof options?.dateStyle === "undefined"
-          ? "short"
-          : options.dateStyle || undefined;
+      intlOptions.dateStyle = options?.dateStyle ?? "short";
+      typeof options?.dateStyle === "undefined"
+        ? "short"
+        : options?.dateStyle || undefined;
       // by default we always show the time
       intlOptions.timeStyle =
         typeof options?.timeStyle === "undefined"

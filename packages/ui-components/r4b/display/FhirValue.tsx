@@ -5,7 +5,8 @@ import {
   ValueSetExpandOperationResult,
 } from "@bonfhir/core/r4b";
 import { useFhirExecute } from "@bonfhir/fhir-query/r4b";
-import { ReactElement } from "react";
+import isNil from "lodash/isNil";
+import { ReactElement, useEffect, useState } from "react";
 import { useFhirUIComponentsContext } from "../FhirUIComponentsContext";
 
 export interface FhirValuePropsCombination<TAdapterName, TValue, TOptions> {
@@ -53,6 +54,23 @@ export type HasValueSetExpand = {
   valueSetExpand: ValueSetExpandOperationParameters;
 };
 
+export type FhirValuePropsAdapterRelative<
+  TAdapterName extends keyof Omit<FhirDataTypeAdapter, "locale" | "message">
+> = FhirValuePropsCombination<
+  TAdapterName,
+  Parameters<FhirDataTypeAdapter[TAdapterName]["format"]>[0],
+  Parameters<FhirDataTypeAdapter[TAdapterName]["format"]>[1] &
+    HasRefreshInterval
+>;
+
+export type HasRefreshInterval = {
+  /**
+   * When using a `relative` style, this is the auto-refresh interval to re-render the relative time.
+   * Set to 0 to disable. Defaults to 30 seconds.
+   */
+  refreshInterval?: number | null | undefined;
+};
+
 export type FhirValueProps =
   | FhirValuePropsAdapter<"address">
   | FhirValuePropsAdapter<"age">
@@ -67,15 +85,15 @@ export type FhirValueProps =
   | FhirValuePropsAdapterValueSetExpand<"coding">
   | FhirValuePropsAdapter<"contactPoint">
   | FhirValuePropsAdapter<"count">
-  | FhirValuePropsAdapter<"date">
-  | FhirValuePropsAdapter<"dateTime">
+  | FhirValuePropsAdapterRelative<"date">
+  | FhirValuePropsAdapterRelative<"dateTime">
   | FhirValuePropsAdapter<"decimal">
   | FhirValuePropsAdapter<"distance">
   | FhirValuePropsAdapter<"duration">
   | FhirValuePropsAdapter<"humanName">
   | FhirValuePropsAdapter<"id">
   | FhirValuePropsAdapter<"identifier">
-  | FhirValuePropsAdapter<"instant">
+  | FhirValuePropsAdapterRelative<"instant">
   | FhirValuePropsAdapter<"integer">
   | FhirValuePropsAdapter<"markdown">
   | FhirValuePropsAdapter<"money">
@@ -111,6 +129,7 @@ export type FhirValueProps =
  */
 export function FhirValue(props: FhirValueProps): ReactElement | null {
   const uiContext = useFhirUIComponentsContext();
+  const [, setTimeState] = useState(Date.now());
 
   const { valueSetExpand, ...options } =
     (props.options as HasValueSetExpand) || {};
@@ -126,6 +145,31 @@ export function FhirValue(props: FhirValueProps): ReactElement | null {
       cacheTime: Infinity,
     }
   );
+
+  useEffect(() => {
+    if (
+      (props as FhirValuePropsAdapterRelative<"date">).options?.dateStyle !==
+      "relative"
+    ) {
+      return;
+    }
+
+    const refreshInterval = (props.options as HasRefreshInterval)
+      ?.refreshInterval;
+    const interval = setInterval(
+      () => {
+        setTimeState(Date.now());
+      },
+      isNil(refreshInterval) ? 30000 : refreshInterval
+    );
+    return () => {
+      clearInterval(interval);
+    };
+  }, [
+    props.type,
+    (props as FhirValuePropsAdapterRelative<"date">).options?.dateStyle,
+    (props.options as HasRefreshInterval)?.refreshInterval,
+  ]);
 
   if (uiContext.renderer.value) {
     return uiContext.renderer.value({
