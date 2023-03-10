@@ -386,6 +386,8 @@ adapter.date.format("2023-12-31", { dateStyle: "full" });
 // "Wednesday, February 8, 2023"
 adapter.date.format("2023-12-31", { dateStyle: "medium" });
 // "Feb 8, 2023"
+adapter.date.format("2023-12-31", { dateStyle: "relative" });
+// "3 days ago"
 
 const zhAdapter = intlFhirDataTypeAdapter("zh-Hans-CN-u-nu-hanidec");
 adapter.decimal.format("123456.78900");
