@@ -88,6 +88,11 @@ describe("fhirInstantTypeAdapter", () => {
         { dateStyle: "full" },
         "Saturday, February 7, 2015 at 6:28 PM",
       ],
+      [
+        "2015-02-07T13:28:17-05:00",
+        { dateStyle: "relative", relativeTo: "2015-02-07T13:28:20-05:00" },
+        "3 seconds ago",
+      ],
     ])("format %p %p", (value, style, expected) => {
       expect(adapter.format(value, style)).toEqual(expected);
     });
