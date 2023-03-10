@@ -18,6 +18,8 @@ terminology appropriately.
 Nevertheless, this library provides some out-of-the-box typings for the common [`ValueSets`](https://hl7.org/fhir/terminologies-valuesets.html)
 defined in the FHIR spec.
 
+_[Change Log](https://github.com/bonfhir/bonfhir/blob/main/packages/terminology/CHANGELOG.md)_
+
 ## ValueSet expansion
 
 For a lot of the [`ValueSet` defined in the FHIR Terminology](https://hl7.org/fhir/terminologies-valuesets.html), this provide

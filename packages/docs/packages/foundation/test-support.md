@@ -12,6 +12,8 @@ npm install @bonfhir/test-support
 
 The `test-support` package is dedicated to resources that are useful in the context of automated tests and/or data generation.
 
+_[Change Log](https://github.com/bonfhir/bonfhir/blob/main/packages/test-support/CHANGELOG.md)_
+
 ## Fakes
 
 It is sometime useful to be able to generate random resources with somewhat plausible data.

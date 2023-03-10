@@ -12,6 +12,8 @@ npm install @bonfhir/medplum
 
 This package simply contains an adapter from the [Medplum Client](https://www.medplum.com/docs/sdk/classes/MedplumClient) to the [`FhirRestfulClient` interface present in the `core` package.](/packages/foundation/core#fhir-client-interface)
 
+_[Change Log](https://github.com/bonfhir/bonfhir/blob/main/packages/medplum/CHANGELOG.md)_
+
 ```typescript
 import { buildFhirRestfulClientAdapter } from "@bonfhir/medplum/r4b";
 import { MedplumClient } from "@medplum/core";

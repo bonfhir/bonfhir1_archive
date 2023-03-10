@@ -12,6 +12,8 @@ npm install @bonfhir/nih-nlm
 
 This package regroups features related to the [NIH National Library of Medicine](https://www.nlm.nih.gov/) products & features.
 
+_[Change Log](https://github.com/bonfhir/bonfhir/blob/main/packages/nih-nlm/CHANGELOG.md)_
+
 ## RxNorm
 
 Provides a utility to retrieve information from the [RXNorm API](https://lhncbc.nlm.nih.gov/RxNav/APIs/RxNormAPIs.html).
