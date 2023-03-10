@@ -252,6 +252,14 @@ export function buildFhirRestfulClientAdapter(
     },
 
     get<T = unknown>(url: URL | string): Promise<T> {
+      if (
+        url?.toString().match(/^https?:\/\/|^\/\//i) &&
+        !url.toString().startsWith(client.getBaseUrl())
+      ) {
+        throw new Error(
+          `Invalid get url: the url should be relative, or starts with the base url: ${url}`
+        );
+      }
       return client.get(url);
     },
   };

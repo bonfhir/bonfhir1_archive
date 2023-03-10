@@ -74,4 +74,24 @@ describe("medplum-fhir-restful-client-adapter", () => {
       ).resolves.toBeUndefined();
     });
   });
+
+  describe("get", () => {
+    it("query when url is relative", async () => {
+      await expect(
+        client.get(medplum.fhirUrl("Patient"))
+      ).resolves.not.toThrow();
+    });
+
+    it("query when url is absolute, with the same baseUrl", async () => {
+      await expect(
+        client.get(new URL(medplum.fhirUrl("Patient"), medplum.getBaseUrl()))
+      ).resolves.not.toThrow();
+    });
+
+    it("throw when URL is absolute, with another domain", async () => {
+      await expect(
+        async () => await client.get("https://www.google.com")
+      ).rejects.toThrowError("Invalid");
+    });
+  });
 });
