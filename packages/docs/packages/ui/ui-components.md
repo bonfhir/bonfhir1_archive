@@ -12,4 +12,6 @@ npm install @bonfhir/ui-components
 
 TBD.
 
+_[Change Log](https://github.com/bonfhir/bonfhir/blob/main/packages/ui-components/CHANGELOG.md)_
+
 [View the ladle (Storybook) here](pathname:///ui-components/dist-ladle/index.html)

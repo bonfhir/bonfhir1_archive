@@ -15,6 +15,8 @@ a [React / React Native](https://reactjs.org/) application.
 
 It is based on [TanStack React Query](https://tanstack.com/query/latest).
 
+_[Change Log](https://github.com/bonfhir/bonfhir/blob/main/packages/fhir-query/CHANGELOG.md)_
+
 ## Getting started
 
 _We **strongly** advise that you start by familiarizing yourself with [React Query](https://tanstack.com/query/latest)

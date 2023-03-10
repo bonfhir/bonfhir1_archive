@@ -19,6 +19,8 @@ In order to make it work, you must provide such a mapping, that needs to be revi
 An _example_ of [such mapping using ICD10 codes can be seen here](https://github.com/bonfhir/bonfhir/blob/main/packages/charlson-comorbidity-index/r4b/__fixtures__/icd10-codes-conceptmap.fhir.json).<br/>
 We make absolutely no claim that this is accurate or up-to-date, so you MUST make and review your own mapping.**
 
+_[Change Log](https://github.com/bonfhir/bonfhir/blob/main/packages/charlson-comorbidity-index/CHANGELOG.md)_
+
 ```typescript
 import {
   buildTemplateConceptMapForCCI,

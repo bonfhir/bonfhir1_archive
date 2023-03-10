@@ -12,6 +12,8 @@ npm install @bonfhir/cmsdotgov
 
 This package regroups features related to the [CMS.gov](https://www.cms.gov/) products & features.
 
+_[Change Log](https://github.com/bonfhir/bonfhir/blob/main/packages/cmsdotgov/CHANGELOG.md)_
+
 ## NPPES / NPI Registry
 
 Provides a utility to retrieve information from the [National Plan and Provider Enumeration System (NPPES) National Provider Identifier (NPI) registry](https://npiregistry.cms.hhs.gov/).

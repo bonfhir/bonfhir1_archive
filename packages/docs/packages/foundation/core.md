@@ -13,6 +13,8 @@ npm install @bonfhir/core
 The `core` package provides utilities to easily manipulate FHIR resources.
 It is also used as a common dependency for all other packages to rely on.
 
+_[Change Log](https://github.com/bonfhir/bonfhir/blob/main/packages/core/CHANGELOG.md)_
+
 ## Builders & narrative generators
 
 As specified in the [FHIR `Narrative` description](https://hl7.org/fhir/narrative.html):
