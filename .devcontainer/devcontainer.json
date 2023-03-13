@@ -65,6 +65,7 @@
           "fhir-query",
           "medplum",
           "nih-nlm",
+          "subscriptions",
           "terminology",
           "test-support",
           "ui-components"
