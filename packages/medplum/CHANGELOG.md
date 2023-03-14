@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.14](https://github.com/bonfhir/bonfhir/compare/@bonfhir/medplum@1.0.0-alpha.13...@bonfhir/medplum@1.0.0-alpha.14) (2023-03-14)
+
+
+### Features
+
+* **medplum:** :lock: prevent get to hit other domains than baseUrl ([d00ec8a](https://github.com/bonfhir/bonfhir/commit/d00ec8ac6f324c379e1b650c2cf1a18ec46a3576)), closes [#34](https://github.com/bonfhir/bonfhir/issues/34)
+
+
+
+
+
 # [1.0.0-alpha.13](https://github.com/bonfhir/bonfhir/compare/@bonfhir/medplum@1.0.0-alpha.12...@bonfhir/medplum@1.0.0-alpha.13) (2023-03-10)
 
 **Note:** Version bump only for package @bonfhir/medplum

@@ -1,7 +1,7 @@
 {
   "name": "@bonfhir/fhir-query",
   "description": "React Query FHIR package for Bonfhir.",
-  "version": "0.1.0-alpha.5",
+  "version": "0.1.0-alpha.6",
   "repository": "https://github.com/bonfhir/bonfhir.git",
   "license": "APACHE-2.0",
   "type": "module",
@@ -17,7 +17,7 @@
   "packageManager": "yarn@3.3.1",
   "devDependencies": {
     "@bonfhir/eslint-config": "^1.1.0-alpha.0",
-    "@bonfhir/medplum": "^1.0.0-alpha.13",
+    "@bonfhir/medplum": "^1.0.0-alpha.14",
     "@bonfhir/prettier-config": "^1.0.0",
     "@bonfhir/typescript-config": "^1.0.1-alpha.0",
     "@medplum/core": "^2.0.3",

@@ -1,7 +1,7 @@
 {
   "name": "@bonfhir/medplum",
   "description": "Medplum integration package for Bonfhir.",
-  "version": "1.0.0-alpha.13",
+  "version": "1.0.0-alpha.14",
   "repository": "https://github.com/bonfhir/bonfhir.git",
   "license": "APACHE-2.0",
   "type": "module",
