@@ -1,7 +1,7 @@
 {
   "name": "@bonfhir/subscriptions",
   "description": "Setup and handle FHIR subscriptions.",
-  "version": "0.1.0-alpha.2",
+  "version": "0.1.0-alpha.3",
   "repository": "https://github.com/bonfhir/bonfhir.git",
   "license": "APACHE-2.0",
   "type": "module",

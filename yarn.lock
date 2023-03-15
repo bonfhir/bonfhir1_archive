@@ -2195,7 +2195,7 @@ __metadata:
     "@bonfhir/core": ^1.0.0-alpha.12
     "@bonfhir/eslint-config": ^1.1.0-alpha.0
     "@bonfhir/prettier-config": ^1.0.0
-    "@bonfhir/subscriptions": ^0.1.0-alpha.2
+    "@bonfhir/subscriptions": ^0.1.0-alpha.3
     "@bonfhir/typescript-config": ^1.0.1-alpha.0
     "@koa/router": ^12.0.0
     "@swc/cli": ^0.1.59
@@ -2219,7 +2219,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bonfhir/subscriptions@^0.1.0-alpha.2, @bonfhir/subscriptions@workspace:packages/subscriptions":
+"@bonfhir/subscriptions@^0.1.0-alpha.2, @bonfhir/subscriptions@^0.1.0-alpha.3, @bonfhir/subscriptions@workspace:packages/subscriptions":
   version: 0.0.0-use.local
   resolution: "@bonfhir/subscriptions@workspace:packages/subscriptions"
   dependencies:
