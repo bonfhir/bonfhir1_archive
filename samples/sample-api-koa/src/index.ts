@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-non-null-assertion */
 import { buildFhirRestfulClientAdapter } from "@bonfhir/medplum/r4b";
-import { fhirSubscriptions } from "@bonfhir/subscriptions/r4b";
+import { fhirSubscriptions } from "@bonfhir/subscriptions-koa/r4b";
 import { MedplumClient } from "@medplum/core";
 import Koa from "koa";
 import bodyParser from "koa-bodyparser";

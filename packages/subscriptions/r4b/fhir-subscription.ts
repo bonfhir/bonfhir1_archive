@@ -1,7 +1,6 @@
 import { build, FhirRestfulClient, resourceSearch } from "@bonfhir/core/r4b";
 import { AuditEvent, FhirResource, Subscription } from "fhir/r4";
-import { DefaultContext, DefaultState, ParameterizedContext } from "koa";
-import isFunction from "lodash/isFunction";
+import { createErrorAuditEvent } from "./audit-event";
 
 export interface FhirSubscription<
   TResource extends FhirResource = FhirResource
@@ -16,10 +15,14 @@ export interface FhirSubscription<
   endpoint: string;
 
   /** The subscription handler. */
-  handler: (
-    args: FhirSubscriptionHandlerArgs<TResource>
-  ) => void | Promise<void>;
+  handler: FhirSubscriptionHandler<TResource>;
 }
+
+export type FhirSubscriptionHandler<
+  TResource extends FhirResource = FhirResource
+> = (
+  args: FhirSubscriptionHandlerArgs<TResource>
+) => Promise<FhirSubscriptionHandlerResult>;
 
 export interface FhirSubscriptionHandlerArgs<
   TResource extends FhirResource = FhirResource
@@ -29,14 +32,17 @@ export interface FhirSubscriptionHandlerArgs<
   /** The resource that matches the subscription. */
   resource: TResource;
 
-  /** KOA context. */
-  context: ParameterizedContext<DefaultState, DefaultContext>;
-
   /** The configured logger. */
   logger:
     | Pick<typeof console, "debug" | "info" | "warn" | "error">
     | null
     | undefined;
+}
+
+export interface FhirSubscriptionHandlerResult {
+  status: number;
+  body?: string | object | null | undefined;
+  headers?: Record<string, string> | null | undefined;
 }
 
 export type SubscriptionLogger = Pick<
@@ -155,31 +161,11 @@ export async function registerSubscriptions({
 
       if (auditEvent) {
         try {
-          await fhirClient.create(
-            isFunction(auditEvent)
-              ? auditEvent(error)
-              : build("AuditEvent", {
-                  type: {
-                    code: "subscription-error",
-                    display: "Subscription Processing Error",
-                    system: "http://terminology.bonfhir.dev/audit-event-type",
-                  },
-                  recorded: new Date().toISOString(),
-                  agent: [
-                    {
-                      name: auditEvent,
-                      requestor: true,
-                    },
-                  ],
-                  source: {
-                    observer: {
-                      display: auditEvent,
-                    },
-                  },
-                  outcome: "4",
-                  outcomeDesc: `Error: ${error}`,
-                })
-          );
+          await createErrorAuditEvent({
+            auditEvent,
+            error,
+            fhirClient,
+          });
         } catch (auditEventError) {
           logger.error(auditEventError);
         }

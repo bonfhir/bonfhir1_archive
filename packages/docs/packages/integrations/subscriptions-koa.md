@@ -2,19 +2,19 @@
 sidebar_position: 1
 ---
 
-# Subscriptions
+# Subscriptions (KOA)
 
 [![npm](https://img.shields.io/npm/v/@bonfhir/subscriptions)](https://www.npmjs.com/package/@bonfhir/subscriptions)
 
 ```bash npm2yarn
-npm install @bonfhir/subscriptions
+npm install @bonfhir/subscriptions-koa
 ```
 
 This package contains utilities to build [`Subscription`](https://hl7.org/fhir/subscription.html) handlers using [Koa](https://koajs.com/).
 
 It manages both registration _and_ execution of handlers.
 
-_[Change Log](https://github.com/bonfhir/bonfhir/blob/main/packages/subscriptions/CHANGELOG.md)_
+_[Change Log](https://github.com/bonfhir/bonfhir/blob/main/packages/subscriptions-koa/CHANGELOG.md)_
 
 ## Get Started
 
@@ -24,13 +24,13 @@ _[Change Log](https://github.com/bonfhir/bonfhir/blob/main/packages/subscription
 mkdir api
 cd api
 npm init -y
-npm install koa @koa/router koa-bodyparser
+npm install @bonfhir/core @bonfhir/subscriptions @bonfhir/subscriptions-koa koa @koa/router koa-bodyparser
 ```
 
 ### Server code
 
 ```typescript
-import { fhirSubscriptions } from "@bonfhir/subscriptions/r4b";
+import { fhirSubscriptions } from "@bonfhir/subscriptions-koa/r4b";
 import Koa from "koa";
 import bodyParser from "koa-bodyparser";
 
@@ -74,9 +74,11 @@ export const communicationRequests: FhirSubscription<CommunicationRequest> = {
   criteria: "CommunicationRequest",
   reason: "Process communication requests",
   endpoint: "/fhir/communication-requests",
-  async handler({ resource, context }) {
+  async handler({ resource }) {
     console.log(resource);
-    context.status = 204;
+    return {
+      status: 204,
+    };
   },
 };
 ```
@@ -95,7 +97,7 @@ app.use(
 
 This will create the subscriptions on startup, and invoke the handler when receiving the webhooks.
 
-See the [Sample API code](https://github.com/bonfhir/bonfhir/blob/main/samples/sample-api) for a live
+See the [Sample API code](https://github.com/bonfhir/bonfhir/blob/main/samples/sample-api-koa) for a live
 example.
 
 ## Configuration
