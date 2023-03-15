@@ -1,16 +1,15 @@
+import { FhirRestfulClient } from "@bonfhir/core/r4b";
 import {
-  build,
-  buildReferenceFromResource,
-  FhirRestfulClient,
-} from "@bonfhir/core/r4b";
-import Router from "@koa/router";
-import { AuditEvent, Subscription } from "fhir/r4";
-import isFunction from "lodash/isFunction";
-import {
+  AuditEventConfiguration,
+  createErrorAuditEvent,
+  errorToString,
   FhirSubscription,
   registerSubscriptions,
   SubscriptionLogger,
-} from "./fhir-subscription";
+} from "@bonfhir/subscriptions/r4b";
+import Router from "@koa/router";
+import { Subscription } from "fhir/r4";
+import isFunction from "lodash/isFunction";
 
 export interface FhirSubscriptionsConfig {
   /**
@@ -60,7 +59,7 @@ export interface FhirSubscriptionsConfig {
    * Alternatively, you can build the AuditEvents yourself.
    */
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  auditEvent?: string | ((error: any) => AuditEvent) | null | undefined;
+  auditEvent?: AuditEventConfiguration | null | undefined;
 }
 
 /**
@@ -140,48 +139,39 @@ export async function fhirSubscriptions(config: FhirSubscriptionsConfig) {
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
       const resource = (context.request as any).body;
       try {
-        await subscription.handler({
-          context,
+        const result = await subscription.handler({
           fhirClient: isFunction(config.fhirClient)
             ? await config.fhirClient()
             : config.fhirClient,
           resource,
           logger,
         });
+
+        context.status = result.status;
+        if (result.body) {
+          context.response.body = result.body;
+        }
+
+        if (result.headers) {
+          context.set(result.headers);
+        }
       } catch (error) {
         logger.error(error);
         if (config.auditEvent) {
           try {
-            await fhirClient.create(
-              isFunction(config.auditEvent)
-                ? config.auditEvent(error)
-                : build("AuditEvent", {
-                    type: {
-                      code: "subscription-error",
-                      display: "Subscription Processing Error",
-                      system: "http://terminology.bonfhir.dev/audit-event-type",
-                    },
-                    recorded: new Date().toISOString(),
-                    agent: [
-                      {
-                        name: config.auditEvent,
-                        requestor: false,
-                      },
-                    ],
-                    source: {
-                      observer: buildReferenceFromResource(resource),
-                    },
-                    outcome: "4",
-                    outcomeDesc: `Error when invoking ${subscription.endpoint}: ${error}`,
-                  })
-            );
+            await createErrorAuditEvent({
+              auditEvent: config.auditEvent,
+              error,
+              fhirClient,
+              relatedResource: resource,
+            });
           } catch (auditEventError) {
             logger.error(auditEventError);
           }
         }
 
         context.status = 500;
-        context.response.body = `${error}`;
+        context.response.body = errorToString(error);
       }
     });
   }
