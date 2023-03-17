@@ -17,14 +17,14 @@ describe("fhirTimeTypeAdapter", () => {
         it.each(<
           Array<[string | FhirTime, FhirTimeFormatOptions | undefined, string]>
         >[
-          ["18:30:25.123", undefined, "6:30 PM"],
+          ["18:30:25.123", undefined, "6:30 PM"],
           [
             "18:30:25.123",
             { timeStyle: "full" },
-            "6:30:25 PM Coordinated Universal Time",
+            "6:30:25 PM Coordinated Universal Time",
           ],
-          ["18:30:25.123", { timeStyle: "short" }, "6:30 PM"],
-          ["18:30:25", { timeStyle: "medium" }, "6:30:25 PM"],
+          ["18:30:25.123", { timeStyle: "short" }, "6:30 PM"],
+          ["18:30:25", { timeStyle: "medium" }, "6:30:25 PM"],
         ])("format %p", (value, style, expected) => {
           expect(adapter.format(value, style)).toEqual(expected);
         });

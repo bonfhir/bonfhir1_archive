@@ -25,7 +25,7 @@ describe("fhirDateTimeTypeAdapter", () => {
         });
 
         expect(adapter.format("2015-02-07T13:28:17+05:00")).toEqual(
-          "2/7/15, 8:28 AM"
+          "2/7/15, 8:28 AM"
         );
       });
     });
@@ -129,28 +129,28 @@ describe("fhirDateTimeTypeAdapter", () => {
       [
         "2015-02-07T13:28:17-05:00",
         { dateStyle: "long", timeStyle: "medium" },
-        "February 7, 2015 at 6:28:17 PM",
+        "February 7, 2015 at 6:28:17 PM",
       ],
       [
         "2015-02-07T13:28:17-05:00",
         { dateStyle: "medium", timeStyle: "long" },
-        "Feb 7, 2015, 6:28:17 PM UTC",
+        "Feb 7, 2015, 6:28:17 PM UTC",
       ],
       [
         "2015-02-07T13:28:17-05:00",
         { dateStyle: "medium", timeStyle: "medium" },
-        "Feb 7, 2015, 6:28:17 PM",
+        "Feb 7, 2015, 6:28:17 PM",
       ],
-      ["2015-02-07T13:28:17-05:00", undefined, "2/7/15, 6:28 PM"],
+      ["2015-02-07T13:28:17-05:00", undefined, "2/7/15, 6:28 PM"],
       [
         "2015-02-07T13:28:17-05:00",
         { timeStyle: "full" },
-        "2/7/15, 6:28:17 PM Coordinated Universal Time",
+        "2/7/15, 6:28:17 PM Coordinated Universal Time",
       ],
       [
         "2015-02-07T13:28:17-05:00",
         { dateStyle: "full" },
-        "Saturday, February 7, 2015 at 6:28 PM",
+        "Saturday, February 7, 2015 at 6:28 PM",
       ],
       [
         "2015-02-07T13:28:17-05:00",
