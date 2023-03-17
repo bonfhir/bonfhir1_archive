@@ -37,7 +37,7 @@ describe("fhirPeriodTypeAdapter", () => {
           dateStyle: "short",
           timeStyle: "long",
         },
-        "2/7/15, 6:28:17 PM UTC - 2/8/15, 6:28:17 PM UTC",
+        "2/7/15, 6:28:17 PM UTC - 2/8/15, 6:28:17 PM UTC",
       ],
     ])("parse %p", (value, options, expected) => {
       expect(adapter.format(value, options)).toEqual(expected);
