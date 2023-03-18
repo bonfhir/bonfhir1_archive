@@ -647,7 +647,7 @@ export const Prefix = {
  * A prefix to the parameter value may be used to control the nature of the matching.
  * https://hl7.org/fhir/search.html#prefix
  */
-export type Prefix = typeof Prefix[keyof typeof Prefix];
+export type Prefix = (typeof Prefix)[keyof typeof Prefix];
 
 /**
  * https://hl7.org/fhir/search.html#string
@@ -670,7 +670,8 @@ export const StringModifier = {
   Text: ":text",
 } as const;
 
-export type StringModifier = typeof StringModifier[keyof typeof StringModifier];
+export type StringModifier =
+  (typeof StringModifier)[keyof typeof StringModifier];
 
 /**
  * https://hl7.org/fhir/search.html#token
@@ -730,7 +731,7 @@ export const TokenModifier = {
 /**
  * https://hl7.org/fhir/search.html#token
  */
-export type TokenModifier = typeof TokenModifier[keyof typeof TokenModifier];
+export type TokenModifier = (typeof TokenModifier)[keyof typeof TokenModifier];
 
 /**
  * https://hl7.org/fhir/search.html#uri
@@ -753,4 +754,4 @@ export const UriModifier = {
   Below: ":below",
 } as const;
 
-export type UriModifier = typeof UriModifier[keyof typeof UriModifier];
+export type UriModifier = (typeof UriModifier)[keyof typeof UriModifier];

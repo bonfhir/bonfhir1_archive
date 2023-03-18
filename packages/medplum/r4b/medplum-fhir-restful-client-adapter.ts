@@ -10,7 +10,7 @@ import {
   JSONPatchBody,
   ResourceType,
 } from "@bonfhir/core/r4b";
-import type { MedplumClient } from "@medplum/core";
+import { MedplumClient, OperationOutcomeError } from "@medplum/core";
 import { Bundle, CapabilityStatement, FhirResource } from "fhir/r4";
 import isNil from "lodash/isNil";
 import isString from "lodash/isString";
@@ -41,8 +41,14 @@ export function buildFhirRestfulClientAdapter(
         return await client.readResource(type, id);
       } catch (error) {
         if (
+          error instanceof OperationOutcomeError &&
+          ["not-found", "gone"].includes(error.outcome.id!)
+        ) {
+          return undefined;
+        }
+        if (
           isFhirResource("OperationOutcome", error) &&
-          ["not-found", "gone"].includes(error.id!)
+          ["not-found", "gone", "Not found"].includes(error.id!)
         ) {
           return undefined;
         }
@@ -63,6 +69,12 @@ export function buildFhirRestfulClientAdapter(
       try {
         return await client.readVersion(type, id, vid);
       } catch (error) {
+        if (
+          error instanceof OperationOutcomeError &&
+          ["not-found", "gone"].includes(error.outcome.id!)
+        ) {
+          return undefined;
+        }
         if (
           isFhirResource("OperationOutcome", error) &&
           ["not-found", "gone"].includes(error.id!)
@@ -126,6 +138,12 @@ export function buildFhirRestfulClientAdapter(
       try {
         return await client.deleteResource(type, id);
       } catch (error) {
+        if (
+          error instanceof OperationOutcomeError &&
+          ["not-found", "gone"].includes(error.outcome.id!)
+        ) {
+          return undefined;
+        }
         if (
           isFhirResource("OperationOutcome", error) &&
           ["not-found", "gone"].includes(error.id!)

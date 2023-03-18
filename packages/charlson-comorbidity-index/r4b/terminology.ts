@@ -27,7 +27,7 @@ export const CharlsonComorbidityIndexCode = {
 } as const;
 
 export type CharlsonComorbidityIndexCode =
-  typeof CharlsonComorbidityIndexCode[keyof typeof CharlsonComorbidityIndexCode];
+  (typeof CharlsonComorbidityIndexCode)[keyof typeof CharlsonComorbidityIndexCode];
 
 export const CharlsonComorbidityIndexCodeSystemURI =
   "https://bonfhir.dev/packages/clinical/charlson-comorbidity-index";

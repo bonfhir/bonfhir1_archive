@@ -1,1 +1,0 @@
-{"resourceType":"Bundle","type":"searchset","entry":[],"link":[{"relation":"self","url":"http://localhost:8103/fhir/R4/Organization?_count=20&identifier=urn%3Aietf%3Arfc%3A3986%7Chttps%3A%2F%2Fwww.nlm.nih.gov%2F"},{"relation":"first","url":"http://localhost:8103/fhir/R4/Organization?_count=20&_offset=0&identifier=urn%3Aietf%3Arfc%3A3986%7Chttps%3A%2F%2Fwww.nlm.nih.gov%2F"}]}

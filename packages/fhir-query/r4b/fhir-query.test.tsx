@@ -44,7 +44,7 @@ describe("fhir-query", () => {
     }
     fetch.configure({
       fixturePath,
-      //mode: "record",
+      // mode: "record",
     });
 
     // Uncomment the following lines when re-recording fetches.
