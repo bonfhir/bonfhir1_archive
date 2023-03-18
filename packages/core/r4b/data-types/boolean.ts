@@ -4,8 +4,6 @@
  * @see https://hl7.org/fhir/datatypes.html#boolean
  */
 
-import merge from "lodash/merge";
-
 export interface FhirBooleanFormatOptions {
   labels?: {
     true?: string;
@@ -71,7 +69,10 @@ export function fhirBooleanTypeAdapter(
         typeof value === "boolean" ? value : this.parse(value);
 
       options ||= {};
-      const labels = merge({}, defaultLabels, options.labels || {});
+      const labels = {
+        ...defaultLabels,
+        ...options.labels,
+      };
       switch (fhirBoolean) {
         case true:
           return labels["true"];

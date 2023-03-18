@@ -1,7 +1,5 @@
 import { Address } from "fhir/r4";
 import { formatAddress } from "localized-address-format";
-import compact from "lodash/compact";
-import reduce from "lodash/reduce";
 import { FhirDataTypeAdapter } from "../data-type-adapter";
 import { FhirCodeFormatOptions, fhirCodeTypeAdapter } from "./code";
 import { comparePeriods, removeDoubleSpaces } from "./helpers";
@@ -156,9 +154,10 @@ export function fhirAddressTypeAdapter(
       // add country
       if (options?.includeCountry && country) addressComponents.push(country);
 
-      return compact(addressComponents.map(removeDoubleSpaces)).join(
-        options?.lineSeparator || ", "
-      );
+      return addressComponents
+        .map(removeDoubleSpaces)
+        .filter(Boolean)
+        .join(options?.lineSeparator || ", ");
     },
   };
 }
@@ -168,8 +167,7 @@ const filterAndSortAddresses = (
   options: FhirAddressFormatOptions | null | undefined
 ): Address[] => {
   const useFilterOrder = options?.useFilterOrder || addressUseOrderFilter;
-  const indexedOrder: { [k: string]: number } = reduce(
-    useFilterOrder,
+  const indexedOrder: { [k: string]: number } = useFilterOrder.reduce(
     (indexedValues, currentValue, index) => ({
       ...indexedValues,
       [currentValue || "undefined"]: index,

@@ -1,7 +1,3 @@
-import cloneDeep from "lodash/cloneDeep";
-import isNil from "lodash/isNil";
-import isObject from "lodash/isObject";
-import isString from "lodash/isString";
 import { ResourceType } from "./types";
 
 /**
@@ -29,7 +25,7 @@ export class FhirSearchBuilder {
    */
   public clone(): FhirSearchBuilder {
     const cloned = new FhirSearchBuilder();
-    cloned.searchParams = cloneDeep(this.searchParams);
+    cloned.searchParams = JSON.parse(JSON.stringify(this.searchParams));
     return cloned;
   }
 
@@ -67,7 +63,7 @@ export class FhirSearchBuilder {
           .map(
             (x) =>
               `${prefix || ""}${
-                isString(x) ? encodeURIComponent(x) : x.toISOString()
+                typeof x === "string" ? encodeURIComponent(x) : x.toISOString()
               }`
           )
           .join(","),
@@ -167,12 +163,12 @@ export class FhirSearchBuilder {
     prefix?: Prefix | null | undefined,
     replace?: "replace" | null | undefined
   ): FhirSearchBuilder {
-    if (isNil(number) || number === "") {
+    if (number == null || number === "") {
       return this;
     }
 
     const parameterValues = Array.isArray(number)
-      ? number.filter((x) => !isNil(x) && x !== "")
+      ? number.filter((x) => !(x == null) && x !== "")
       : [number];
 
     if (!parameterValues.length) {
@@ -185,7 +181,7 @@ export class FhirSearchBuilder {
         .map(
           (x) =>
             `${prefix || ""}${
-              isObject(x)
+              x instanceof Object
                 ? [x.number, x.system, x.code]
                     .map((y) => (y ? encodeURIComponent(`${y}`) : ""))
                     .join("|")
@@ -329,7 +325,7 @@ export class FhirSearchBuilder {
     const renderedParameterValues = (
       parameterValues as Array<{ id: string; type: string } | string>
     ).map((x) =>
-      isString(x)
+      typeof x === "string"
         ? encodeURIComponent(x)
         : encodeURIComponent(
             `${x.type}/${
@@ -381,7 +377,7 @@ export class FhirSearchBuilder {
     replace?: "replace" | null | undefined
   ): FhirSearchBuilder {
     if (value?.length) {
-      const parameterValues = isString(value) ? [value] : value;
+      const parameterValues = typeof value === "string" ? [value] : value;
       this.push(
         `${parameter}${modifier || ""}`,
         parameterValues.map((x) => encodeURIComponent(x)).join(","),
@@ -430,7 +426,7 @@ export class FhirSearchBuilder {
     modifier?: TokenModifier | null | undefined,
     replace?: "replace" | null | undefined
   ): FhirSearchBuilder {
-    if (isNil(value)) {
+    if (value == null) {
       return this;
     }
 
@@ -467,13 +463,13 @@ export class FhirSearchBuilder {
   ): string {
     let result = "";
 
-    if (isString(value)) {
+    if (typeof value === "string") {
       result = encodeURIComponent(value);
     } else if (value.system && !value.code && !value.value) {
       result = `${encodeURIComponent(value.system)}|`;
     } else {
       result = [value.system, value.code, value.value]
-        .filter((x) => !isNil(x))
+        .filter((x) => !(x == null))
         .map((x) => (x ? encodeURIComponent(x) : x))
         .join("|");
     }

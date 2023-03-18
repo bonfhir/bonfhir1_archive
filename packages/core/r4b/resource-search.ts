@@ -5,7 +5,6 @@
  * Instead, edit the template file "resource-search.ts.hbs".
  */
 
-import isNil from "lodash/isNil";
 import {
   fhirSearch,
   FhirSearchBuilder,
@@ -348,7 +347,7 @@ class BaseResourceSearchBuilder<TResourceSearchBuilder> {
     }
   ): TResourceSearchBuilder {
     this.builder.string(
-      `_include${isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_include${options?.iterate == null ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`
@@ -370,7 +369,7 @@ class BaseResourceSearchBuilder<TResourceSearchBuilder> {
     }
   ): TResourceSearchBuilder {
     this.builder.string(
-      `_revinclude${isNil(options?.iterate) ? "" : ":iterate"}`,
+      `_revinclude${options?.iterate == null ? "" : ":iterate"}`,
       `${sourceResource}:${String(searchParameter)}${
         options?.targetResourceType ? `:${options.targetResourceType}` : ""
       }`

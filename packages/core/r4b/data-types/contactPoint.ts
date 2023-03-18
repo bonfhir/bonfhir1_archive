@@ -1,5 +1,4 @@
 import { ContactPoint } from "fhir/r4";
-import reduce from "lodash/reduce";
 import { FhirDataTypeAdapter } from "../data-type-adapter";
 import { FhirCodeFormatOptions, fhirCodeTypeAdapter } from "./code";
 import { fhirPeriodTypeAdapter } from "./period";
@@ -125,8 +124,7 @@ const filterAndSortContactPoints = (
   options: FhirContactPointFormatOptions | null | undefined
 ): ContactPoint[] => {
   const useFilterOrder = options?.useFilterOrder || contactPointUseOrderFilter;
-  const indexedOrder: { [k: string]: number } = reduce(
-    useFilterOrder,
+  const indexedOrder: { [k: string]: number } = useFilterOrder.reduce(
     (indexedValues, currentValue, index) => ({
       ...indexedValues,
       [currentValue || "undefined"]: index,

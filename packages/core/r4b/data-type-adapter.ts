@@ -1,11 +1,10 @@
-import flatten from "lodash/flatten";
-import isNil from "lodash/isNil";
-import zip from "lodash/zip";
+import { FhirURITypeAdapter, fhirURITypeAdapter } from "./data-types/URI";
+import { FhirURLTypeAdapter, fhirURLTypeAdapter } from "./data-types/URL";
 import {
   FhirAddressTypeAdapter,
   fhirAddressTypeAdapter,
 } from "./data-types/address";
-import { fhirAgeTypeAdapter, FhirAgeTypeAdapter } from "./data-types/age";
+import { FhirAgeTypeAdapter, fhirAgeTypeAdapter } from "./data-types/age";
 import {
   FhirBooleanTypeAdapter,
   fhirBooleanTypeAdapter,
@@ -14,18 +13,18 @@ import {
   FhirCanonicalTypeAdapter,
   fhirCanonicalTypeAdapter,
 } from "./data-types/canonical";
-import { fhirCodeTypeAdapter, FhirCodeTypeAdapter } from "./data-types/code";
+import { FhirCodeTypeAdapter, fhirCodeTypeAdapter } from "./data-types/code";
 import {
   FhirCodeableConceptTypeAdapter,
   fhirCodeableConceptTypeAdapter,
 } from "./data-types/codeableConcept";
 import {
-  fhirCodingTypeAdapter,
   FhirCodingTypeAdapter,
+  fhirCodingTypeAdapter,
 } from "./data-types/coding";
 import {
-  fhirContactPointTypeAdapter,
   FhirContactPointTypeAdapter,
+  fhirContactPointTypeAdapter,
 } from "./data-types/contactPoint";
 import { FhirCountTypeAdapter, fhirCountTypeAdapter } from "./data-types/count";
 import { FhirDateTypeAdapter, fhirDateTypeAdapter } from "./data-types/date";
@@ -46,8 +45,8 @@ import {
   fhirDurationTypeAdapter,
 } from "./data-types/duration";
 import {
-  fhirHumanNameTypeAdapter,
   FhirHumanNameTypeAdapter,
+  fhirHumanNameTypeAdapter,
 } from "./data-types/humanName";
 import {
   FhirIdentifierTypeAdapter,
@@ -65,45 +64,43 @@ import {
   FhirMarkdownTypeAdapter,
   fhirMarkdownTypeAdapter,
 } from "./data-types/markdown";
-import { fhirMoneyTypeAdapter, FhirMoneyTypeAdapter } from "./data-types/money";
+import { FhirMoneyTypeAdapter, fhirMoneyTypeAdapter } from "./data-types/money";
 import {
-  fhirPeriodTypeAdapter,
   FhirPeriodTypeAdapter,
+  fhirPeriodTypeAdapter,
 } from "./data-types/period";
 import {
-  fhirPositiveIntTypeAdapter,
   FhirPositiveIntTypeAdapter,
-  fhirUnsignedIntTypeAdapter,
   FhirUnsignedIntTypeAdapter,
+  fhirPositiveIntTypeAdapter,
+  fhirUnsignedIntTypeAdapter,
 } from "./data-types/positiveInt";
 import {
   FhirQuantityTypeAdapter,
   fhirQuantityTypeAdapter,
 } from "./data-types/quantity";
-import { fhirRangeTypeAdapter, FhirRangeTypeAdapter } from "./data-types/range";
-import { fhirRatioTypeAdapter, FhirRatioTypeAdapter } from "./data-types/ratio";
+import { FhirRangeTypeAdapter, fhirRangeTypeAdapter } from "./data-types/range";
+import { FhirRatioTypeAdapter, fhirRatioTypeAdapter } from "./data-types/ratio";
 import {
-  fhirRatioRangeTypeAdapter,
   FhirRatioRangeTypeAdapter,
+  fhirRatioRangeTypeAdapter,
 } from "./data-types/ratioRange";
 import {
-  fhirSimpleQuantityTypeAdapter,
   FhirSimpleQuantityTypeAdapter,
+  fhirSimpleQuantityTypeAdapter,
 } from "./data-types/simpleQuantity";
 import {
   FhirBase64BinaryTypeAdapter,
+  FhirIdTypeAdapter,
+  FhirOidTypeAdapter,
+  FhirStringTypeAdapter,
+  FhirUuidTypeAdapter,
   fhirBase64BinaryTypeAdapter,
   fhirIdTypeAdapter,
-  FhirIdTypeAdapter,
   fhirOidTypeAdapter,
-  FhirOidTypeAdapter,
   fhirStringTypeAdapter,
-  FhirStringTypeAdapter,
   fhirUuidTypeAdapter,
-  FhirUuidTypeAdapter,
 } from "./data-types/string";
-import { FhirURITypeAdapter, fhirURITypeAdapter } from "./data-types/URI";
-import { FhirURLTypeAdapter, fhirURLTypeAdapter } from "./data-types/URL";
 
 /**
  * This is used to manipulate FHIR data types, both parsing values and formatting them as localized strings.
@@ -261,12 +258,11 @@ export function intlFhirDataTypeAdapter(
       strings: TemplateStringsArray,
       ...expr: FhirDataTypeAdapterMessageExpression[]
     ) {
-      return flatten(
-        zip(
-          strings,
-          expr.map((x) => renderExpression(this, x))
-        )
-      ).join("");
+      const renderedExpressions = expr.map((x) => renderExpression(this, x));
+      return strings
+        .map((str, idx) => [str, renderedExpressions[idx]])
+        .flat()
+        .join("");
     },
   };
 }
@@ -275,7 +271,7 @@ function renderExpression(
   adapter: FhirDataTypeAdapter,
   value: FhirDataTypeAdapterMessageExpression
 ) {
-  if (isNil(value)) {
+  if (value == null) {
     return "";
   }
 

@@ -1,5 +1,4 @@
 import { ContactPoint, ValueSetExpansionContains } from "fhir/r4";
-import toPairs from "lodash/toPairs";
 import {
   FhirContactPointFormatOptions,
   fhirContactPointTypeAdapter,
@@ -54,7 +53,7 @@ describe("fhirContactPointTypeAdapter", () => {
         },
         "nº42 - 10/11/2020 - ongoing, adresse mail: jack@example.com (domicile)",
       ],
-      ...toPairs({
+      ...Object.entries({
         full: "nº42 - 10/11/2020 - ongoing, email: jack@example.com (home)",
         long: "email: jack@example.com (home)",
         medium: "jack@example.com (home)",

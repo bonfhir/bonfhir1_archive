@@ -1,5 +1,4 @@
 import { Identifier, ValueSetExpansionContains } from "fhir/r4";
-import toPairs from "lodash/toPairs";
 import {
   FhirIdentifierFormatOptions,
   fhirIdentifierTypeAdapter,
@@ -60,7 +59,7 @@ describe("fhirIdentifierTypeAdapter", () => {
         },
         "[10/11/2020 - ongoing]\nnumero de sécurité social: 123:456:789\nusual - list of code. (cat, dog, spider)",
       ],
-      ...toPairs({
+      ...Object.entries({
         full: "[10/11/2020 - ongoing]\nNAS: 123:456:789\nusual - list of code. (0, 1, 2)",
         long: "NAS: 123:456:789\nusual - list of code. (0, 1, 2)",
         medium: "NAS: 123:456:789 (usual)",

@@ -1,5 +1,4 @@
 import { HumanName } from "fhir/r4";
-import reduce from "lodash/reduce";
 import { FhirDataTypeAdapter } from "../data-type-adapter";
 import { FhirCodeFormatOptions, fhirCodeTypeAdapter } from "./code";
 import { removeDoubleSpaces } from "./helpers";
@@ -166,8 +165,7 @@ const filterAndSortHumanNames = (
   options: FhirHumanNameFormatOptions | null | undefined
 ): HumanName[] => {
   const useFilterOrder = options?.useFilterOrder || humanNameUseOrderFilter;
-  const indexedOrder: { [k: string]: number } = reduce(
-    useFilterOrder,
+  const indexedOrder: { [k: string]: number } = useFilterOrder.reduce(
     (indexedValues, currentValue, index) => ({
       ...indexedValues,
       [currentValue || "undefined"]: index,

@@ -1,8 +1,6 @@
 import { Bundle, CapabilityStatement, FhirResource, Identifier } from "fhir/r4";
-import isEqual from "lodash/isEqual";
-import omit from "lodash/omit";
-import { bundleNavigator, BundleNavigator } from "./bundle-navigator";
-import { merge, MergeResult } from "./merge";
+import { BundleNavigator, bundleNavigator } from "./bundle-navigator";
+import { MergeResult, merge } from "./merge";
 import { fhirSearch } from "./search-builder";
 import { ExtractResource, ResourceType, WithRequired } from "./types";
 
@@ -357,7 +355,9 @@ export async function createOr<
   }
 
   if (action === "replace") {
-    if (isEqual(omit(current, ["id"]), resource)) {
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    const { id, ...currentWithoutId } = current;
+    if (JSON.stringify(currentWithoutId) === JSON.stringify(resource)) {
       return [current, false];
     }
     resource.id = current.id;
@@ -365,7 +365,9 @@ export async function createOr<
   }
 
   if (action === "add") {
-    if (isEqual(omit(current, ["id"]), resource)) {
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    const { id, ...currentWithoutId } = current;
+    if (JSON.stringify(currentWithoutId) === JSON.stringify(resource)) {
       return [current, false];
     }
     return [await client.create(resource), true];
