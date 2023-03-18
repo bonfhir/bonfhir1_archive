@@ -1,22 +1,7 @@
-/** @type {import("@swc/core").Config & Record<string, unknown>} */
-const transpilationConfig = {
-  sourceMaps: true,
-  jsc: {
-    parser: {
-      syntax: "typescript",
-      tsx: true,
-    },
-    target: "es2022",
-  },
-  module: {
-    type: "es6",
-  },
-};
-
 /** @type {import('jest').Config} */
 const config = {
   transform: {
-    "^.+\\.(t|j)s?$": ["@swc/jest", transpilationConfig],
+    "^.+\\.tsx?$": "esbuild-jest",
   },
 };
 

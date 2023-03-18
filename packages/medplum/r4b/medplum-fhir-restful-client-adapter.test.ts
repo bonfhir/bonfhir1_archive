@@ -4,8 +4,7 @@ import { MedplumClient } from "@medplum/core";
 import fetch from "fetch-vcr";
 import { existsSync } from "node:fs";
 import { mkdir } from "node:fs/promises";
-import { dirname, join } from "node:path";
-import { fileURLToPath } from "node:url";
+import { join } from "node:path";
 import { buildFhirRestfulClientAdapter } from "./medplum-fhir-restful-client-adapter";
 
 describe("medplum-fhir-restful-client-adapter", () => {
@@ -18,7 +17,7 @@ describe("medplum-fhir-restful-client-adapter", () => {
 
   beforeEach(async () => {
     const fixturePath = join(
-      dirname(fileURLToPath(import.meta.url)),
+      "r4b",
       "__fixtures__",
       "medplum-fhir-restful-client-adapter",
       expect.getState().currentTestName!.replace(/[^a-z0-9]/gi, "_")
