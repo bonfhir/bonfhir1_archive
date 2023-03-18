@@ -160,7 +160,7 @@ export function useFhirRead<TResource extends ResourceType>(
                 ExtractResource<TResource>,
                 unknown,
                 ExtractResource<TResource>,
-                ReturnType<typeof FhirQueryKeys["read"]>
+                ReturnType<(typeof FhirQueryKeys)["read"]>
               >,
               "initialData" | "queryKey" | "queryFn"
             >
@@ -193,7 +193,7 @@ export function useFhirRead<TResource extends ResourceType>(
     ...options?.query,
     queryKey: FhirQueryKeys.read(type, id, options?.fhir),
     queryFn,
-  } as Omit<UseQueryOptions<ExtractResource<TResource>, unknown, ExtractResource<TResource>, ReturnType<typeof FhirQueryKeys["read"]>>, "initialData">);
+  } as Omit<UseQueryOptions<ExtractResource<TResource>, unknown, ExtractResource<TResource>, ReturnType<(typeof FhirQueryKeys)["read"]>>, "initialData">);
 }
 
 /**
@@ -214,7 +214,7 @@ export function useFhirVRead<TResource extends ResourceType>(
                 ExtractResource<TResource>,
                 unknown,
                 ExtractResource<TResource>,
-                ReturnType<typeof FhirQueryKeys["vread"]>
+                ReturnType<(typeof FhirQueryKeys)["vread"]>
               >,
               "initialData" | "queryKey" | "queryFn"
             >
@@ -245,7 +245,7 @@ export function useFhirVRead<TResource extends ResourceType>(
     ...options?.query,
     queryKey: FhirQueryKeys.vread(type, id, vid, options?.fhir),
     queryFn,
-  } as Omit<UseQueryOptions<ExtractResource<TResource>, unknown, ExtractResource<TResource>, ReturnType<typeof FhirQueryKeys["vread"]>>, "initialData">);
+  } as Omit<UseQueryOptions<ExtractResource<TResource>, unknown, ExtractResource<TResource>, ReturnType<(typeof FhirQueryKeys)["vread"]>>, "initialData">);
 }
 
 export type BundleResult<
@@ -273,7 +273,7 @@ export function useFhirHistory<TResource extends ResourceType>(
                 BundleResult<ExtractResource<TResource>>,
                 unknown,
                 BundleResult<ExtractResource<TResource>>,
-                ReturnType<typeof FhirQueryKeys["history"]>
+                ReturnType<(typeof FhirQueryKeys)["history"]>
               >,
               "initialData" | "queryKey" | "queryFn"
             >
@@ -372,7 +372,7 @@ export function useFhirSearch<
                   ExtractResource<TResource>,
                   SecondaryResourceType
                 >,
-                ReturnType<typeof FhirQueryKeys["search"]>
+                ReturnType<(typeof FhirQueryKeys)["search"]>
               >,
               "initialData" | "queryKey" | "queryFn" | "keepPreviousData"
             >
@@ -475,7 +475,7 @@ export function useFhirInfiniteSearch<
                 BundleResult<ExtractResource<TResource>, SecondaryResourceType>,
                 unknown,
                 BundleResult<ExtractResource<TResource>, SecondaryResourceType>,
-                ReturnType<typeof FhirQueryKeys["infiniteSearch"]>
+                ReturnType<(typeof FhirQueryKeys)["infiniteSearch"]>
               >,
               | "initialData"
               | "queryKey"
@@ -564,7 +564,7 @@ export function useFhirCapabilities(
           CapabilityStatement,
           unknown,
           CapabilityStatement,
-          ReturnType<typeof FhirQueryKeys["capabilities"]>
+          ReturnType<(typeof FhirQueryKeys)["capabilities"]>
         >,
         "initialData" | "queryKey" | "queryFn"
       >
@@ -613,7 +613,7 @@ export function useFhirExecute<
           TOperationResult,
           unknown,
           TOperationResult,
-          ReturnType<typeof FhirQueryKeys["execute"]>
+          ReturnType<(typeof FhirQueryKeys)["execute"]>
         >,
         "initialData" | "queryKey" | "queryFn"
       >
@@ -642,7 +642,7 @@ export function useFhirExecute<
       operationOptions?.parameters
     ),
     queryFn,
-  } as Omit<UseQueryOptions<TOperationResult, unknown, TOperationResult, ReturnType<typeof FhirQueryKeys["execute"]>>, "initialData">);
+  } as Omit<UseQueryOptions<TOperationResult, unknown, TOperationResult, ReturnType<(typeof FhirQueryKeys)["execute"]>>, "initialData">);
 }
 
 export type UseFhirUpdateMutationArgs<TResource extends ResourceType> = {

@@ -1,1 +1,0 @@
-{"resourceType":"Bundle","type":"searchset","entry":[],"link":[{"relation":"self","url":"http://localhost:8103/fhir/R4/Practitioner?_count=20&identifier=http%3A%2F%2Fhl7.org%2Ffhir%2Fsid%2Fus-npi%7C1952319329"},{"relation":"first","url":"http://localhost:8103/fhir/R4/Practitioner?_count=20&_offset=0&identifier=http%3A%2F%2Fhl7.org%2Ffhir%2Fsid%2Fus-npi%7C1952319329"}]}

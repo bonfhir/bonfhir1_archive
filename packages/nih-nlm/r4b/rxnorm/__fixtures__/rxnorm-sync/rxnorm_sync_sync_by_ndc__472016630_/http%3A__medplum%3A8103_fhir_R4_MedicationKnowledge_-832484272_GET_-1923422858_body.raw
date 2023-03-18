@@ -1,1 +1,0 @@
-{"resourceType":"Bundle","type":"searchset","entry":[],"link":[{"relation":"self","url":"http://localhost:8103/fhir/R4/MedicationKnowledge?_count=20&code=http%3A%2F%2Fhl7.org%2Ffhir%2Fsid%2Fndc%7C00472016630"},{"relation":"first","url":"http://localhost:8103/fhir/R4/MedicationKnowledge?_count=20&_offset=0&code=http%3A%2F%2Fhl7.org%2Ffhir%2Fsid%2Fndc%7C00472016630"}]}
