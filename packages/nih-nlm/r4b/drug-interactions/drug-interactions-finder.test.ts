@@ -4,8 +4,7 @@ import { CodeSystemURIs } from "@bonfhir/terminology/r4b";
 import fetch from "fetch-vcr";
 import { existsSync } from "node:fs";
 import { mkdir } from "node:fs/promises";
-import { dirname, join } from "node:path";
-import { fileURLToPath } from "node:url";
+import { join } from "node:path";
 import { findDrugInteractionsIssues } from "./drug-interactions-finder";
 
 describe("drug-interactions-finder", () => {
@@ -15,7 +14,8 @@ describe("drug-interactions-finder", () => {
     setSystemTime("2023-01-25T18:34:01.863Z");
 
     const fixturePath = join(
-      dirname(fileURLToPath(import.meta.url)),
+      "r4b",
+      "drug-interactions",
       "__fixtures__",
       "drug-interactions-finder",
       expect.getState().currentTestName!.replace(/[^a-z0-9]/gi, "_")

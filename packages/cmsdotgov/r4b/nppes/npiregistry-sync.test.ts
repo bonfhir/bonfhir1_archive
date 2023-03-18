@@ -6,8 +6,7 @@ import { MedplumClient } from "@medplum/core";
 import fetch from "fetch-vcr";
 import { existsSync } from "node:fs";
 import { mkdir } from "node:fs/promises";
-import { dirname, join } from "node:path";
-import { fileURLToPath } from "node:url";
+import { join } from "node:path";
 import { NPIRegistrySyncSession } from "./npiregistry-sync";
 
 describe("npiregistry-sync", () => {
@@ -22,7 +21,8 @@ describe("npiregistry-sync", () => {
     setSystemTime(new Date(2023, 1, 1));
 
     const fixturePath = join(
-      dirname(fileURLToPath(import.meta.url)),
+      "r4b",
+      "nppes",
       "__fixtures__",
       "npiregistry-sync",
       expect.getState().currentTestName!.replace(/[^a-z0-9]/gi, "_")

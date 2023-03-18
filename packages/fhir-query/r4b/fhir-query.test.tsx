@@ -9,8 +9,7 @@ import { ValueSet } from "fhir/r4";
 import noop from "lodash/noop";
 import { existsSync } from "node:fs";
 import { mkdir } from "node:fs/promises";
-import { dirname, join } from "node:path";
-import { fileURLToPath } from "node:url";
+import { join } from "node:path";
 import React, { PropsWithChildren } from "react";
 import {
   useFhirCreateMutation,
@@ -35,7 +34,7 @@ describe("fhir-query", () => {
 
   beforeEach(async () => {
     const fixturePath = join(
-      dirname(fileURLToPath(import.meta.url)),
+      "r4b",
       "__fixtures__",
       "fhir-query",
       expect.getState().currentTestName!.replace(/[^a-z0-9]/gi, "_")

@@ -13,8 +13,7 @@
     "dev": "ladle serve --stories='./**/*.stories.tsx'",
     "format": "prettier --loglevel warn --write ./**/*.tsx && eslint --fix ./**/*.tsx",
     "package:create": "yarn build && node package.js pack",
-    "package:publish": "yarn build && node package.js publish",
-    "test": "jest"
+    "package:publish": "yarn build && node package.js publish"
   },
   "packageManager": "yarn@3.3.1",
   "devDependencies": {
