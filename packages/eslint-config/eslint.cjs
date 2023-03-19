@@ -5,7 +5,6 @@ module.exports = {
   extends: [
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
-    "plugin:lodash/recommended",
     "eslint-config-prettier",
   ],
   ignorePatterns: [
@@ -13,7 +12,7 @@ module.exports = {
     "**/storybook-static",
   ],
   parser: "@typescript-eslint/parser",
-  plugins: ["@typescript-eslint/eslint-plugin", "lodash"],
+  plugins: ["@typescript-eslint/eslint-plugin"],
   root: true,
   rules: {
     // https://stackoverflow.com/a/64067915/5397051
@@ -42,7 +41,5 @@ module.exports = {
         modifiers: ["unused"],
       },
     ],
-    "lodash/prefer-lodash-method": "off",
-    "lodash/prefer-lodash-typecheck": "off",
   },
 };

@@ -1,6 +1,5 @@
 /* eslint-disable @typescript-eslint/no-non-null-assertion */
 import Listr, { ListrTask } from "listr";
-import chunk from "lodash/chunk";
 import { exec } from "node:child_process";
 import { promisify } from "node:util";
 import { Context } from "./context";
@@ -61,3 +60,17 @@ function CreatePostProcessingAFileTask(filePath: string): ListrTask<Context> {
     },
   };
 }
+
+const chunk = <T>(arr: T[], chunkSize: number) => {
+  return arr.reduce((resultArray, item, index) => {
+    const chunkIndex = Math.floor(index / chunkSize);
+
+    if (!resultArray[chunkIndex]) {
+      resultArray[chunkIndex] = []; // start a new chunk
+    }
+
+    resultArray[chunkIndex]!.push(item);
+
+    return resultArray;
+  }, [] as Array<T[]>);
+};

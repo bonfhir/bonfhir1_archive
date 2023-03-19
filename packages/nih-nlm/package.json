@@ -22,7 +22,6 @@
     "@bonfhir/typescript-config": "^1.0.1-alpha.0",
     "@medplum/core": "^2.0.7",
     "@types/fhir": "^0.0.35",
-    "@types/lodash": "^4.14.191",
     "@types/node": "^18.15.3",
     "esbuild": "^0.17.12",
     "esbuild-jest": "^0.5.0",
@@ -36,8 +35,7 @@
   },
   "dependencies": {
     "@bonfhir/core": "^1.0.0-alpha.12",
-    "@bonfhir/terminology": "^1.0.0-alpha.4",
-    "lodash": "^4.17.21"
+    "@bonfhir/terminology": "^1.0.0-alpha.4"
   },
   "prettier": "@bonfhir/prettier-config"
 }
