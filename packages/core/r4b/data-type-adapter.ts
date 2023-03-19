@@ -1,5 +1,3 @@
-import { FhirURITypeAdapter, fhirURITypeAdapter } from "./data-types/URI";
-import { FhirURLTypeAdapter, fhirURLTypeAdapter } from "./data-types/URL";
 import {
   FhirAddressTypeAdapter,
   fhirAddressTypeAdapter,
@@ -71,8 +69,8 @@ import {
 } from "./data-types/period";
 import {
   FhirPositiveIntTypeAdapter,
-  FhirUnsignedIntTypeAdapter,
   fhirPositiveIntTypeAdapter,
+  FhirUnsignedIntTypeAdapter,
   fhirUnsignedIntTypeAdapter,
 } from "./data-types/positiveInt";
 import {
@@ -91,16 +89,18 @@ import {
 } from "./data-types/simpleQuantity";
 import {
   FhirBase64BinaryTypeAdapter,
-  FhirIdTypeAdapter,
-  FhirOidTypeAdapter,
-  FhirStringTypeAdapter,
-  FhirUuidTypeAdapter,
   fhirBase64BinaryTypeAdapter,
+  FhirIdTypeAdapter,
   fhirIdTypeAdapter,
+  FhirOidTypeAdapter,
   fhirOidTypeAdapter,
+  FhirStringTypeAdapter,
   fhirStringTypeAdapter,
+  FhirUuidTypeAdapter,
   fhirUuidTypeAdapter,
 } from "./data-types/string";
+import { FhirURITypeAdapter, fhirURITypeAdapter } from "./data-types/URI";
+import { FhirURLTypeAdapter, fhirURLTypeAdapter } from "./data-types/URL";
 
 /**
  * This is used to manipulate FHIR data types, both parsing values and formatting them as localized strings.
