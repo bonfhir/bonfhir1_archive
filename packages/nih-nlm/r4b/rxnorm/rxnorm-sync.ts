@@ -6,6 +6,7 @@ import {
   createOr,
   FhirRestfulClient,
   resourceSearch,
+  toMap,
   utcNow,
 } from "@bonfhir/core/r4b";
 import {
@@ -19,15 +20,15 @@ import {
 } from "@bonfhir/terminology/r4b";
 import {
   Bundle,
+  Coding,
   FhirResource,
   Medication,
   MedicationKnowledge,
   Organization,
   Provenance,
   Ratio,
+  Reference,
 } from "fhir/r4";
-import compact from "lodash/compact";
-import keyBy from "lodash/keyBy";
 import { URLSearchParams } from "url";
 import { AllProperties, NDCProperties } from "./rxnorm-models";
 
@@ -137,7 +138,7 @@ export class RxNormSyncSession {
       this.onResourceBuild(
         build("Medication", {
           code: buildCodeableConcept({
-            coding: compact([
+            coding: [
               indexedAllProperties["CODES"]["RxCUI"]
                 ? {
                     system: CodeSystemURIs.RxNorm,
@@ -151,7 +152,7 @@ export class RxNormSyncSession {
                     code: indexedAllProperties["CODES"]["SNOMEDCT"],
                   }
                 : undefined,
-            ]),
+            ].filter(Boolean) as Coding[],
           }),
           status: MedicationStatusCodes.values.Active.code,
           ingredient: indexedAllProperties["ATTRIBUTES"][
@@ -184,7 +185,7 @@ export class RxNormSyncSession {
         })
       ),
       resourceSearch("Medication").code(
-        compact([
+        [
           {
             system: CodeSystemURIs.RxNorm,
             value: indexedAllProperties["CODES"]["RxCUI"],
@@ -195,7 +196,7 @@ export class RxNormSyncSession {
                 value: indexedAllProperties["CODES"]["SNOMEDCT"],
               }
             : undefined,
-        ])
+        ].filter(Boolean) as Array<{ system: string; value: string }>
       ).href
     );
 
@@ -204,9 +205,9 @@ export class RxNormSyncSession {
     let medicationKnowledge: MedicationKnowledge | undefined = undefined;
     if (ndcProperties?.ndcPropertyList?.ndcProperty?.[0]) {
       const ndcProps = ndcProperties.ndcPropertyList.ndcProperty[0];
-      const indexedProps = keyBy(
+      const indexedProps = toMap(
         ndcProps.propertyConceptList.propertyConcept,
-        "propName"
+        (X) => X.propName
       );
       [medicationKnowledge] = await createOr(
         "return",
@@ -223,7 +224,7 @@ export class RxNormSyncSession {
               ],
             }),
             status:
-              indexedProps["MARKETING_STATUS"]?.propValue === "ACTIVE"
+              indexedProps.get("MARKETING_STATUS")?.propValue === "ACTIVE"
                 ? MedicationKnowledgeStatusCodes.values.Active.code
                 : undefined,
             associatedMedication: [buildReferenceFromResource(result)],
@@ -251,12 +252,12 @@ export class RxNormSyncSession {
             agent: [],
             ...provenanceResult.provenance,
             recorded: utcNow().toISOString(),
-            target: compact([
+            target: [
               buildReferenceFromResource(result!),
               medicationKnowledge
                 ? buildReferenceFromResource(medicationKnowledge)
                 : undefined,
-            ]),
+            ].filter(Boolean) as Reference[],
           })
         ),
         resourceSearch("Provenance")
@@ -305,9 +306,9 @@ export class RxNormSyncSession {
         return [{}, ndcProperties];
       }
 
-      rxcuis = compact(
-        ndcProperties.ndcPropertyList.ndcProperty.map((x) => x.rxcui)
-      );
+      rxcuis = ndcProperties.ndcPropertyList.ndcProperty
+        .map((x) => x.rxcui)
+        .filter(Boolean);
     }
 
     for (const rxcui of rxcuis) {
