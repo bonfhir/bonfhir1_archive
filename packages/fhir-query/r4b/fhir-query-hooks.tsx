@@ -2,11 +2,11 @@ import {
   bundleNavigator,
   BundleNavigator,
   ExtractResource,
-  ExtractSearchBuilder,
   FhirRestfulClient,
+  FhirRestfulClientSearchParameters,
   JSONPatchBody,
   linkUrl,
-  resourceSearch,
+  normalizeSearchParameters,
   ResourceType,
 } from "@bonfhir/core/r4b";
 import {
@@ -349,13 +349,7 @@ export function useFhirSearch<
   SecondaryResourceType extends FhirResource = ExtractResource<TResource>
 >(
   type: TResource,
-  parameters?:
-    | ((
-        search: ExtractSearchBuilder<TResource>
-      ) => ExtractSearchBuilder<TResource> | string)
-    | string
-    | null
-    | undefined,
+  parameters?: FhirRestfulClientSearchParameters<TResource> | null | undefined,
   pageUrl?: string | null | undefined,
   options?:
     | {
@@ -385,11 +379,7 @@ export function useFhirSearch<
   PaginatedBundleResult<ExtractResource<TResource>, SecondaryResourceType>
 > {
   const fhirQueryContext = useFhirQueryContext();
-
-  const finalParameters =
-    typeof parameters === "function"
-      ? extractSearchBuilderAsString(parameters(resourceSearch(type)))
-      : parameters;
+  const normalizedParameters = normalizeSearchParameters(type, parameters);
 
   const queryFn = useCallback(async (): Promise<
     PaginatedBundleResult<ExtractResource<TResource>, SecondaryResourceType>
@@ -417,7 +407,7 @@ export function useFhirSearch<
 
     const bundle = await fhirQueryContext.fhirClient.search(
       type,
-      finalParameters,
+      normalizedParameters,
       options?.fhir
     );
     const nextPageUrl = linkUrl(bundle, "next");
@@ -436,7 +426,7 @@ export function useFhirSearch<
   }, [
     fhirQueryContext.fhirClient,
     type,
-    finalParameters,
+    normalizedParameters,
     pageUrl,
     options?.fhir,
   ]);
@@ -445,7 +435,7 @@ export function useFhirSearch<
     ...options?.query,
     queryKey: FhirQueryKeys.search(
       type,
-      finalParameters,
+      normalizedParameters,
       pageUrl,
       options?.fhir
     ),
@@ -459,13 +449,7 @@ export function useFhirInfiniteSearch<
   SecondaryResourceType extends FhirResource = ExtractResource<TResource>
 >(
   type: TResource,
-  parameters?:
-    | ((
-        search: ExtractSearchBuilder<TResource>
-      ) => ExtractSearchBuilder<TResource> | string)
-    | string
-    | null
-    | undefined,
+  parameters?: FhirRestfulClientSearchParameters<TResource> | null | undefined,
   options?:
     | {
         fhir?: Parameters<FhirRestfulClient["search"]>[2];
@@ -492,11 +476,7 @@ export function useFhirInfiniteSearch<
   BundleResult<ExtractResource<TResource>, SecondaryResourceType>
 > {
   const fhirQueryContext = useFhirQueryContext();
-
-  const finalParameters =
-    typeof parameters === "function"
-      ? extractSearchBuilderAsString(parameters(resourceSearch(type)))
-      : parameters;
+  const normalizedParameters = normalizeSearchParameters(type, parameters);
 
   const queryFn = async (data: { pageParam: string }) => {
     if (data?.pageParam) {
@@ -514,7 +494,7 @@ export function useFhirInfiniteSearch<
 
     const bundle = await fhirQueryContext.fhirClient.search(
       type,
-      finalParameters,
+      normalizedParameters,
       options?.fhir
     );
 
@@ -530,7 +510,7 @@ export function useFhirInfiniteSearch<
     ...options?.query,
     queryKey: FhirQueryKeys.infiniteSearch(
       type,
-      finalParameters,
+      normalizedParameters,
       options?.fhir
     ),
     queryFn,
@@ -539,16 +519,6 @@ export function useFhirInfiniteSearch<
     keepPreviousData: true,
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
   } as any);
-}
-
-function extractSearchBuilderAsString<TResourceType extends ResourceType>(
-  search: ExtractSearchBuilder<TResourceType> | string
-): string {
-  if (typeof search === "string") {
-    return search;
-  }
-
-  return search.href;
 }
 
 /**
