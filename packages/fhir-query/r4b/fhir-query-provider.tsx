@@ -4,7 +4,6 @@ import {
   QueryClientConfig,
   QueryClientProvider,
 } from "@tanstack/react-query";
-import isNil from "lodash/isNil";
 import { PropsWithChildren, useMemo } from "react";
 import { FhirQueryContext } from "./fhir-query-context";
 
@@ -41,7 +40,7 @@ export type FhirQueryProviderProps = PropsWithChildren<
  * Should probably be placed near the top of your React app render tree.
  */
 export function FhirQueryProvider(props: FhirQueryProviderProps) {
-  const manageCache = isNil(props.manageCache) || props.manageCache;
+  const manageCache = props.manageCache == null || props.manageCache;
   if (hasQueryClient(props)) {
     return (
       <FhirQueryContext.Provider
