@@ -9,7 +9,6 @@ import {
 } from "@bonfhir/subscriptions/r4b";
 import Router from "@koa/router";
 import { Subscription } from "fhir/r4";
-import isFunction from "lodash/isFunction";
 
 export interface FhirSubscriptionsConfig {
   /**
@@ -68,9 +67,10 @@ export interface FhirSubscriptionsConfig {
 export async function fhirSubscriptions(config: FhirSubscriptionsConfig) {
   const logger = config.logger ?? console;
 
-  const fhirClient = isFunction(config.fhirClient)
-    ? await config.fhirClient()
-    : config.fhirClient;
+  const fhirClient =
+    typeof config.fhirClient === "function"
+      ? await config.fhirClient()
+      : config.fhirClient;
 
   if (config.register === "startup") {
     await registerSubscriptions({
@@ -140,9 +140,10 @@ export async function fhirSubscriptions(config: FhirSubscriptionsConfig) {
       const resource = (context.request as any).body;
       try {
         const result = await subscription.handler({
-          fhirClient: isFunction(config.fhirClient)
-            ? await config.fhirClient()
-            : config.fhirClient,
+          fhirClient:
+            typeof config.fhirClient === "function"
+              ? await config.fhirClient()
+              : config.fhirClient,
           resource,
           logger,
         });
