@@ -204,7 +204,7 @@ const [mergedResource, wasMerged] = createOr("merge", client, resource);
 const [mergedResource, wasMerged] = createOr("add", client, resource);
 
 // The search can be customized (instead of using the default identifiers)
-const [mergedResource, wasMerged] = createOr("merge", client, resource, resourceSearch("Patient").name("John Doe").href);
+const [mergedResource, wasMerged] = createOr("merge", client, resource, search => search.name("John Doe"));
 
 ```
 
@@ -217,10 +217,8 @@ The `searchAllPages` utility can be used to retrieve _all_ pages for a given sea
 ```typescript
 import { searchAllPages, resourceSearch, linkUrl } from "@bonfhir/core/r4b";
 
-const allPatients = await searchAllPages(
-  client,
-  "Patient",
-  resourceSearch("Patient").href
+const allActivePatients = await searchAllPages(client, "Patient", (search) =>
+  search.active("true")
 );
 
 // For paginating yourself
@@ -243,7 +241,7 @@ import { searchByPage } from "@bonfhir/core/r4b";
 await searchByPage(
   client,
   "Patient",
-  resourceSearch("Patient")._count(100)._total("accurate").href,
+  (search) => search._count(100)._total("accurate"),
   async ({ bundle, nav }) => {
     for (const patient of nav.resources) {
       // ...
@@ -300,6 +298,15 @@ If any search parameter is missing from the builder, you can always drop down to
 ```typescript
 resourceSearch("Organization").identifier("12345").builder.string("_count", 20)
   .href;
+```
+
+_The `resourceSearch` builder is integrated in the [`FhirRestfulClient` interface](http://localhost:4000/packages/foundation/core#fhir-client-interface)
+search method, so you can use it inlined:_
+
+```typescript
+const result = await client.search("Organization", (search) =>
+  search.name("IniTech")
+);
 ```
 
 ### Generic search builder

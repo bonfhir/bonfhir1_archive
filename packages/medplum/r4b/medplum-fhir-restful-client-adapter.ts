@@ -4,10 +4,12 @@ import {
   ConditionalSearchParameters,
   ExtractResource,
   FhirRestfulClient,
+  FhirRestfulClientSearchParameters,
   GeneralParameters,
   HistoryParameters,
   isFhirResource,
   JSONPatchBody,
+  normalizeSearchParameters,
   ResourceType,
 } from "@bonfhir/core/r4b";
 import { MedplumClient, OperationOutcomeError } from "@medplum/core";
@@ -190,16 +192,28 @@ export function buildFhirRestfulClientAdapter(
 
     search<TResource extends ResourceType>(
       type?: TResource | null | undefined,
-      parameters?: string | null | undefined,
+      parameters?:
+        | FhirRestfulClientSearchParameters<TResource>
+        | null
+        | undefined,
       options?: GeneralParameters | null | undefined
     ): Promise<Bundle<ExtractResource<TResource>>> {
+      if (!type) {
+        throw new Error(
+          "type is a mandatory argument for search in the MedplumClient."
+        );
+      }
+
       if (options) {
         throw new Error(
           "search#options is not supported by the MedplumClient."
         );
       }
 
-      return client.search(type, parameters || undefined);
+      return client.search(
+        type,
+        normalizeSearchParameters<TResource>(type, parameters)
+      );
     },
 
     capabilities(): Promise<CapabilityStatement> {

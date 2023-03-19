@@ -5,7 +5,6 @@ import {
   buildReferenceFromResource,
   createOr,
   FhirRestfulClient,
-  resourceSearch,
   uniqBy,
   utcNow,
 } from "@bonfhir/core/r4b";
@@ -288,12 +287,13 @@ export class NPIRegistrySyncSession {
                     : undefined,
               })
             ),
-            resourceSearch("HealthcareService")
-              .organization({ type: "Organization", id: result.id! })
-              .servicecategory({
-                system: "https://npidb.org/taxonomy",
-                code: taxonomy.code,
-              }).href
+            (search) =>
+              search
+                .organization({ type: "Organization", id: result!.id! })
+                .servicecategory({
+                  system: "https://npidb.org/taxonomy",
+                  code: taxonomy.code,
+                })
           );
           bundle.entry?.push({
             resource: healthService,
@@ -319,12 +319,11 @@ export class NPIRegistrySyncSession {
             target: [buildReferenceFromResource(result!)],
           })
         ),
-        resourceSearch("Provenance")
-          .target({ type: result!.resourceType, id: result!.id! })
-          .agent({
-            type: provenanceResult.provenance.agent![0]!.who!.type!,
-            id: provenanceResult.provenance.agent![0]!.who!.reference!,
-          }).href
+        (search) =>
+          search.target({ type: result!.resourceType, id: result!.id! }).agent({
+            type: provenanceResult.provenance!.agent![0]!.who!.type!,
+            id: provenanceResult.provenance!.agent![0]!.who!.reference!,
+          })
       );
       bundle.entry?.push({
         resource: provenance,

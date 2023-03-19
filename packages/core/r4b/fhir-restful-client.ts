@@ -1,6 +1,7 @@
 import { Bundle, CapabilityStatement, FhirResource, Identifier } from "fhir/r4";
 import { BundleNavigator, bundleNavigator } from "./bundle-navigator";
 import { merge, MergeResult } from "./merge";
+import { ExtractSearchBuilder, resourceSearch } from "./resource-search";
 import { fhirSearch } from "./search-builder";
 import { ExtractResource, ResourceType, WithRequired } from "./types";
 
@@ -104,7 +105,10 @@ export interface FhirRestfulClient {
    */
   search: <TResource extends ResourceType>(
     type?: TResource | null | undefined,
-    parameters?: string | null | undefined,
+    parameters?:
+      | FhirRestfulClientSearchParameters<TResource>
+      | null
+      | undefined,
     options?: GeneralParameters | null | undefined
   ) => Promise<Bundle<ExtractResource<TResource>>>;
 
@@ -146,6 +150,37 @@ export interface FhirRestfulClient {
    * Execute an HTTP Get and return the parsed body.
    */
   get: <T = unknown>(url: URL | string) => Promise<T>;
+}
+
+export type FhirRestfulClientSearchParameters<TResource extends ResourceType> =
+  | ((
+      search: ExtractSearchBuilder<TResource>
+    ) => ExtractSearchBuilder<TResource> | string)
+  | string;
+
+/**
+ * This is a helper function that take either a function or a string that represents search parameters,
+ * and normalize them as the final FHIR search parameters as a string.
+ */
+export function normalizeSearchParameters<TResource extends ResourceType>(
+  type: TResource,
+  parameters: FhirRestfulClientSearchParameters<TResource> | null | undefined
+): string | undefined {
+  return (
+    (typeof parameters === "function"
+      ? extractSearchBuilderAsString(parameters(resourceSearch(type)))
+      : parameters) ?? undefined
+  );
+}
+
+function extractSearchBuilderAsString<TResourceType extends ResourceType>(
+  search: ExtractSearchBuilder<TResourceType> | string
+): string {
+  if (typeof search === "string") {
+    return search;
+  }
+
+  return search.href;
 }
 
 /**
@@ -314,7 +349,7 @@ export async function createOr<TResource extends FhirResource>(
   action: CreateOrMergeAction,
   client: FhirRestfulClient,
   resource: TResource,
-  search: string
+  search: FhirRestfulClientSearchParameters<TResource["resourceType"]>
 ): Promise<MergeResult<TResource>>;
 export async function createOr<
   TResource extends
@@ -324,7 +359,10 @@ export async function createOr<
   action: CreateOrMergeAction,
   client: FhirRestfulClient,
   resource: TResource,
-  search?: string | null | undefined
+  search?:
+    | FhirRestfulClientSearchParameters<TResource["resourceType"]>
+    | null
+    | undefined
 ): Promise<MergeResult<TResource>> {
   if (
     !search &&
@@ -388,7 +426,7 @@ export async function createOr<
 export async function searchAllPages<TResource extends ResourceType>(
   client: FhirRestfulClient,
   type: TResource | null | undefined,
-  search: string
+  search: FhirRestfulClientSearchParameters<TResource>
 ): Promise<WithRequired<Bundle<ExtractResource<TResource>>, "entry">> {
   const result: WithRequired<Bundle<ExtractResource<TResource>>, "entry"> = {
     resourceType: "Bundle",
@@ -422,7 +460,7 @@ export async function searchAllPages<TResource extends ResourceType>(
 export async function searchByPage<TResource extends ResourceType>(
   client: FhirRestfulClient,
   type: TResource | null | undefined,
-  search: string,
+  search: FhirRestfulClientSearchParameters<TResource>,
   fn: (args: {
     /** The current search page bundle */
     bundle: Bundle<ExtractResource<TResource>>;

@@ -5,7 +5,6 @@ import {
   buildReferenceFromResource,
   createOr,
   FhirRestfulClient,
-  resourceSearch,
   toMap,
   utcNow,
 } from "@bonfhir/core/r4b";
@@ -184,20 +183,21 @@ export class RxNormSyncSession {
             : undefined,
         })
       ),
-      resourceSearch("Medication").code(
-        [
-          {
-            system: CodeSystemURIs.RxNorm,
-            value: indexedAllProperties["CODES"]["RxCUI"],
-          },
-          indexedAllProperties["CODES"]["SNOMEDCT"]
-            ? {
-                system: CodeSystemURIs.SNOMED_CT_INT,
-                value: indexedAllProperties["CODES"]["SNOMEDCT"],
-              }
-            : undefined,
-        ].filter(Boolean) as Array<{ system: string; value: string }>
-      ).href
+      (search) =>
+        search.code(
+          [
+            {
+              system: CodeSystemURIs.RxNorm,
+              value: indexedAllProperties["CODES"]["RxCUI"],
+            },
+            indexedAllProperties["CODES"]["SNOMEDCT"]
+              ? {
+                  system: CodeSystemURIs.SNOMED_CT_INT,
+                  value: indexedAllProperties["CODES"]["SNOMEDCT"],
+                }
+              : undefined,
+          ].filter(Boolean) as Array<{ system: string; value: string }>
+        )
     );
 
     bundle.entry?.push({ resource: result, search: { mode: "match" } });
@@ -231,10 +231,11 @@ export class RxNormSyncSession {
             ingredient: result.ingredient,
           })
         ),
-        resourceSearch("MedicationKnowledge").code({
-          system: CodeSystemURIs.Ndc,
-          value: ndcProps.ndcItem,
-        }).href
+        (search) =>
+          search.code({
+            system: CodeSystemURIs.Ndc,
+            value: ndcProps.ndcItem,
+          })
       );
 
       bundle.entry?.push({
@@ -260,12 +261,11 @@ export class RxNormSyncSession {
             ].filter(Boolean) as Reference[],
           })
         ),
-        resourceSearch("Provenance")
-          .target({ type: result!.resourceType, id: result!.id! })
-          .agent({
-            type: provenanceResult.provenance.agent![0]!.who!.type!,
-            id: provenanceResult.provenance.agent![0]!.who!.reference!,
-          }).href
+        (search) =>
+          search.target({ type: result!.resourceType, id: result!.id! }).agent({
+            type: provenanceResult.provenance!.agent![0]!.who!.type!,
+            id: provenanceResult.provenance!.agent![0]!.who!.reference!,
+          })
       );
       bundle.entry?.push({
         resource: provenance,

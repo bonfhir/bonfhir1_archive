@@ -1,4 +1,4 @@
-import { build, FhirRestfulClient, resourceSearch } from "@bonfhir/core/r4b";
+import { build, FhirRestfulClient } from "@bonfhir/core/r4b";
 import { AuditEvent, FhirResource, Subscription } from "fhir/r4";
 import { createErrorAuditEvent } from "./audit-event";
 
@@ -99,11 +99,8 @@ export async function registerSubscriptions({
   for (const subscription of subscriptions) {
     try {
       const existingSubscription = (
-        await fhirClient.search(
-          "Subscription",
-          resourceSearch("Subscription").url(
-            new URL(subscription.endpoint, baseUrl || undefined).href
-          ).href
+        await fhirClient.search("Subscription", (search) =>
+          search.url(new URL(subscription.endpoint, baseUrl || undefined).href)
         )
       ).entry?.[0]?.resource;
 
