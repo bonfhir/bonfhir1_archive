@@ -1,5 +1,4 @@
 import { UseQueryResult } from "@tanstack/react-query";
-import isEmpty from "lodash/isEmpty";
 import { PropsWithChildren, ReactElement } from "react";
 import { useFhirUIComponentsContext } from "../FhirUIComponentsContext";
 
@@ -56,7 +55,11 @@ export function FhirQueryLoader<
     return renderer.loader({ query, ...loaderProps });
   }
 
-  if (emptyProps && isEmpty(allQueries[0]?.data)) {
+  if (
+    emptyProps &&
+    (allQueries[0]?.data == null ||
+      (Array.isArray(allQueries[0]?.data) && !allQueries[0].data.length))
+  ) {
     return renderer.empty({ query, ...emptyProps });
   }
 
