@@ -11,7 +11,6 @@ import {
   ObservationStatus,
 } from "@bonfhir/terminology/r4b";
 import { Bundle, DetectedIssue, Medication, Reference } from "fhir/r4";
-import compact from "lodash/compact";
 import {
   DrugInteractionListResponse,
   FullInteractionType,
@@ -100,12 +99,14 @@ export async function findDrugInteractionsIssues(
     : undefined;
   if (isFhirResource("Bundle", medicationArgs)) {
     medicationArgs =
-      compact(medicationArgs.entry?.map((x) => x.resource)) || [];
+      (medicationArgs.entry
+        ?.map((x) => x.resource)
+        ?.filter(Boolean) as Medication[]) || [];
   }
 
   return {
-    issues: compact(
-      (response.fullInteractionTypeGroup || []).flatMap((x) =>
+    issues: (response.fullInteractionTypeGroup || [])
+      .flatMap((x) =>
         (x.fullInteractionType || []).flatMap((fullInteractionType) =>
           mapFullInteractionTypeToDetectedIssue(
             fullInteractionType,
@@ -113,7 +114,7 @@ export async function findDrugInteractionsIssues(
           )
         )
       )
-    ),
+      .filter(Boolean),
   };
 }
 
@@ -121,11 +122,11 @@ function getMedicationsByRxcui(
   args: FindDrugInteractionsIssuesArgs
 ): Record<string, Medication | undefined> {
   if (isFindDrugInteractionsIssuesArgsMedications(args)) {
-    const medications = compact(
+    const medications = (
       isFhirResource("Bundle", args.medications)
         ? args.medications.entry?.map((x) => x.resource)
         : args.medications
-    );
+    )?.filter(Boolean) as Medication[];
 
     return medications.reduce((acc, cur) => {
       const rxNormCode = cur.code?.coding?.find(
@@ -148,8 +149,8 @@ function mapFullInteractionTypeToDetectedIssue(
   fullInteractionType: FullInteractionType,
   medicationsByRxcui: Record<string, Medication | undefined>
 ): DetectedIssue[] {
-  const medications = compact(
-    (fullInteractionType.minConcept || []).map((concept) =>
+  const medications = (fullInteractionType.minConcept || [])
+    .map((concept) =>
       concept.rxcui
         ? {
             medication: medicationsByRxcui[concept.rxcui],
@@ -157,7 +158,10 @@ function mapFullInteractionTypeToDetectedIssue(
           }
         : undefined
     )
-  );
+    .filter(Boolean) as Array<{
+    medication: Medication | undefined;
+    display: string;
+  }>;
   return (fullInteractionType.interactionPair || []).map(
     (interactionPair): DetectedIssue =>
       build("DetectedIssue", {

@@ -6,6 +6,7 @@ import {
   createOr,
   FhirRestfulClient,
   resourceSearch,
+  uniqBy,
   utcNow,
 } from "@bonfhir/core/r4b";
 import {
@@ -32,10 +33,6 @@ import {
   PractitionerQualification,
   Provenance,
 } from "fhir/r4";
-import compact from "lodash/compact";
-import flatten from "lodash/flatten";
-import uniq from "lodash/uniq";
-import uniqBy from "lodash/uniqBy";
 import {
   isPractitioner,
   NPIRegistryAddress,
@@ -399,8 +396,11 @@ export class NPIRegistrySyncSession {
   private async syncStatesAsLocation(
     results: NPIRegistryResult[]
   ): Promise<Location[]> {
-    const allStates = compact(
-      uniq(results.flatMap((x) => x.taxonomies).map((x) => x.state))
+    const allStates = new Set(
+      results
+        .flatMap((x) => x.taxonomies)
+        .map((x) => x.state)
+        .filter(Boolean)
     );
 
     const result: Location[] = [];
@@ -433,34 +433,30 @@ export class NPIRegistrySyncSession {
     addresses: NPIRegistryAddress[] | null | undefined
   ): ContactPoint[] {
     return uniqBy(
-      compact(
-        flatten(
-          (addresses || []).map(
-            (address) =>
-              <ContactPoint[]>[
-                address.telephone_number?.trim()
-                  ? {
-                      id: `${
-                        this.stableId
-                      }-${address.telephone_number?.trim()}`,
-                      system: ContactPointSystem.values.Phone.code,
-                      use: ContactPointUse.values.Work.code,
-                      value: address.telephone_number?.trim(),
-                    }
-                  : undefined,
-                address.fax_number?.trim()
-                  ? {
-                      id: `${this.stableId}-${address.fax_number?.trim()}`,
-                      system: ContactPointSystem.values.Fax.code,
-                      use: ContactPointUse.values.Work.code,
-                      value: address.fax_number?.trim(),
-                    }
-                  : undefined,
-              ]
-          )
+      (addresses || [])
+        .flatMap(
+          (address) =>
+            <ContactPoint[]>[
+              address.telephone_number?.trim()
+                ? {
+                    id: `${this.stableId}-${address.telephone_number?.trim()}`,
+                    system: ContactPointSystem.values.Phone.code,
+                    use: ContactPointUse.values.Work.code,
+                    value: address.telephone_number?.trim(),
+                  }
+                : undefined,
+              address.fax_number?.trim()
+                ? {
+                    id: `${this.stableId}-${address.fax_number?.trim()}`,
+                    system: ContactPointSystem.values.Fax.code,
+                    use: ContactPointUse.values.Work.code,
+                    value: address.fax_number?.trim(),
+                  }
+                : undefined,
+            ]
         )
-      ),
-      "id"
+        .filter(Boolean),
+      (x) => x.id
     );
   }
 

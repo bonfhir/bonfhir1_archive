@@ -1,5 +1,4 @@
 import { Identifier } from "fhir/r4";
-import reduce from "lodash/reduce";
 import { FhirDataTypeAdapter } from "../data-type-adapter";
 import { FhirCodeFormatOptions, fhirCodeTypeAdapter } from "./code";
 import { fhirCodeableConceptTypeAdapter } from "./codeableConcept";
@@ -142,8 +141,7 @@ const filterAndSortIdentifiers = (
   options: FhirIdentifierFormatOptions | null | undefined
 ): Identifier[] => {
   const useFilterOrder = options?.useFilterOrder || identifierUseOrder;
-  const useIndexedOrder: { [k: string]: number } = reduce(
-    useFilterOrder,
+  const useIndexedOrder: { [k: string]: number } = useFilterOrder.reduce(
     (indexedValues, currentValue, index) => ({
       ...indexedValues,
       [currentValue || "undefined"]: index,
@@ -154,8 +152,7 @@ const filterAndSortIdentifiers = (
   const systemFilterOrder = options?.systemFilterOrder || null;
   const systemIndexedOrder: { [k: string]: number } | null =
     systemFilterOrder &&
-    reduce(
-      systemFilterOrder,
+    systemFilterOrder.reduce(
       (indexedValues, currentValue, index) => ({
         ...indexedValues,
         [currentValue || "undefined"]: index,

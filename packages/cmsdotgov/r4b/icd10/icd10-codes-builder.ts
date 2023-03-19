@@ -1,7 +1,6 @@
 import { buildCodeableConcept } from "@bonfhir/core/r4b";
 import { CodeSystemURIs } from "@bonfhir/terminology/r4b";
 import { CodeableConcept, Coding } from "fhir/r4";
-import isEmpty from "lodash/isEmpty";
 import { createReadStream } from "node:fs";
 import { createInterface } from "node:readline";
 
@@ -68,7 +67,7 @@ export class ICD10CodesBuilder {
   }
 
   private async ensureDataLoaded() {
-    if (!isEmpty(this._descriptionsByCode)) {
+    if (this._descriptionsByCode.size) {
       return;
     }
 

@@ -12,8 +12,6 @@ import {
 } from "@bonfhir/core/r4b";
 import { MedplumClient, OperationOutcomeError } from "@medplum/core";
 import { Bundle, CapabilityStatement, FhirResource } from "fhir/r4";
-import isNil from "lodash/isNil";
-import isString from "lodash/isString";
 
 /**
  * Create an adapter from a `MedplumClient` to conform to `FhirRestfulClient`.
@@ -332,9 +330,9 @@ function isValidExpandOperationParameters(
 ): parameters is ExpandOperationParameters {
   return (
     isObject(parameters) &&
-    isString(parameters.url) &&
+    typeof parameters.url === "string" &&
     containsNonWhitespace(parameters.url) &&
-    (isNil(parameters.filter) || isString(parameters.filter))
+    (parameters.filter == null || typeof parameters.filter === "string")
   );
 }
 
@@ -359,7 +357,7 @@ function isValidGraphOperationParameter(
 ): parameters is GraphOperationParameters {
   return (
     isObject(parameters) &&
-    isString(parameters.graph) &&
+    typeof parameters.graph === "string" &&
     containsNonWhitespace(parameters.graph)
   );
 }

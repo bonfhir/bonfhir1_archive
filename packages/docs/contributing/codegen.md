@@ -62,7 +62,7 @@ The codegen package injects custom helpers to simplify authorship of templates:
 
 - All the [Built-in Handlebar Helpers](https://handlebarsjs.com/guide/builtin-helpers.html)
 - All the helpers provided by the [handlebars-helpers](https://github.com/helpers/handlebars-helpers) package
-- The following [Lodash](https://lodash.com/) functions:
+- The following Lodash-equivalent functions:
   - [startCase](https://lodash.com/docs/4.17.15#startCase)
   - [uniq](https://lodash.com/docs/4.17.15#uniq)
   - [uniqBy](https://lodash.com/docs/4.17.15#uniqBy)

@@ -25,14 +25,10 @@
     "@commitlint/config-conventional": "^17.4.4",
     "@commitlint/config-lerna-scopes": "^17.4.2",
     "@commitlint/prompt-cli": "^17.4.4",
-    "@types/lodash": "^4.14.191",
     "husky": "^8.0.3",
     "lerna": "^6.5.1",
     "nx": "^15.8.7",
     "process": "^0.11.10"
-  },
-  "dependencies": {
-    "lodash": "^4.17.21"
   },
   "resolutions": {
     "got": ">=11.8.5",

@@ -1,10 +1,8 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { FhirResource } from "fhir/r4";
-import cloneDeep from "lodash/cloneDeep";
-import isEqual from "lodash/isEqual";
-import isNil from "lodash/isNil";
 import { narrative } from "./narratives";
 import { isDomainResource } from "./types";
+import { cloneDeep, isEqual } from "./utils";
 
 /**
  * Recursively deep-merge 2 resources, taking care of duplicating entry elements using their ids.
@@ -57,13 +55,13 @@ export function mergeFhirResources<T>({
   current,
   incoming,
 }: MergeArgs<T>): MergeResult<T> {
-  if (isNil(current)) {
+  if (current == null) {
     return [cloneDeep(incoming) as T, true];
   }
 
   const result: MergeResult<T> = [cloneDeep(current), false];
 
-  if (isNil(incoming)) {
+  if (incoming == null) {
     return result;
   }
 
@@ -87,13 +85,13 @@ export function mergeFhirResourcesArrays<T>({
   current,
   incoming,
 }: MergeArgs<T[]>): MergeResult<T[]> {
-  if (isNil(current)) {
+  if (current == null) {
     return [cloneDeep(incoming) as T[], true];
   }
 
   const result: MergeResult<T[]> = [cloneDeep(current), false];
 
-  if (isNil(incoming)) {
+  if (incoming == null) {
     return result;
   }
 
@@ -119,7 +117,7 @@ export function mergeFhirResourcesArrays<T>({
       incoming: incomingValue,
     });
     result[1] = result[1] || mergeResult[1];
-    if (!isNil(mergeResult[0])) {
+    if (!(mergeResult[0] == null)) {
       result[0].splice(currentEntryIndex, 1, mergeResult[0]);
     } else {
       result[0].splice(currentEntryIndex, 1);
@@ -133,7 +131,7 @@ function mergeFhirValues<T = any>({
   current,
   incoming,
 }: MergeArgs<T>): MergeResult<T> {
-  if (isNil(current)) {
+  if (current == null) {
     return [cloneDeep(incoming) as T, true];
   }
 

@@ -5,7 +5,6 @@ import {
   ValueSetExpandOperationResult,
 } from "@bonfhir/core/r4b";
 import { useFhirExecute } from "@bonfhir/fhir-query/r4b";
-import isNil from "lodash/isNil";
 import { ReactElement, useEffect, useState } from "react";
 import { useFhirUIComponentsContext } from "../FhirUIComponentsContext";
 
@@ -160,7 +159,7 @@ export function FhirValue(props: FhirValueProps): ReactElement | null {
       () => {
         setTimeState(Date.now());
       },
-      isNil(refreshInterval) ? 30000 : refreshInterval
+      refreshInterval == null ? 30000 : refreshInterval
     );
     return () => {
       clearInterval(interval);

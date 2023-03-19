@@ -6,7 +6,6 @@ import { MedplumClient } from "@medplum/core";
 import { renderHook, waitFor } from "@testing-library/react";
 import fetch from "fetch-vcr";
 import { ValueSet } from "fhir/r4";
-import noop from "lodash/noop";
 import { existsSync } from "node:fs";
 import { mkdir } from "node:fs/promises";
 import { join } from "node:path";
@@ -74,7 +73,9 @@ describe("fhir-query", () => {
   });
 
   it("reads a resource and error if not found", async () => {
-    jest.spyOn(console, "error").mockImplementation(noop);
+    jest.spyOn(console, "error").mockImplementation(() => {
+      /*no-op*/
+    });
     const wrapper = ({ children }: PropsWithChildren) => (
       <FhirQueryProvider
         fhirClient={fhirClient}
@@ -120,7 +121,9 @@ describe("fhir-query", () => {
   });
 
   it("vreads a resource and error if not found", async () => {
-    jest.spyOn(console, "error").mockImplementation(noop);
+    jest.spyOn(console, "error").mockImplementation(() => {
+      /*no-op*/
+    });
     const wrapper = ({ children }: PropsWithChildren) => (
       <FhirQueryProvider
         fhirClient={fhirClient}

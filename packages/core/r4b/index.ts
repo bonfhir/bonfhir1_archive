@@ -10,3 +10,4 @@ export * from "./period-calculator";
 export * from "./resource-search";
 export * from "./search-builder";
 export * from "./types";
+export * from "./utils";

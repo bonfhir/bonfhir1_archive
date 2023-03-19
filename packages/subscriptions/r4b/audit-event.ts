@@ -4,9 +4,6 @@ import {
   FhirRestfulClient,
 } from "@bonfhir/core/r4b";
 import { AuditEvent, FhirResource } from "fhir/r4";
-import isError from "lodash/isError";
-import isFunction from "lodash/isFunction";
-import isString from "lodash/isString";
 
 export type AuditEventConfiguration =
   | string
@@ -32,7 +29,7 @@ export async function createErrorAuditEvent({
   relatedResource,
 }: CreateErrorAuditEventArgs): Promise<AuditEvent> {
   return await fhirClient.create(
-    isFunction(auditEvent)
+    typeof auditEvent === "function"
       ? auditEvent(error, relatedResource)
       : build("AuditEvent", {
           type: {
@@ -61,11 +58,11 @@ export async function createErrorAuditEvent({
 }
 
 export function errorToString(error: unknown): string {
-  if (isError(error)) {
+  if (error instanceof Error) {
     return `${error.message} (${error.stack})`;
   }
 
-  if (isString(error)) {
+  if (typeof error === "string") {
     return error;
   }
 
