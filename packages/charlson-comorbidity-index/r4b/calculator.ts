@@ -1,11 +1,5 @@
-import { buildReferenceFromResource } from "@bonfhir/core/r4b";
+import { buildReferenceFromResource, toMap } from "@bonfhir/core/r4b";
 import { ConceptMap, Condition, Patient, Reference } from "fhir/r4";
-import compact from "lodash/compact";
-import isEmpty from "lodash/isEmpty";
-import keyBy from "lodash/keyBy";
-import sum from "lodash/sum";
-import uniq from "lodash/uniq";
-import xor from "lodash/xor";
 
 import { CharlsonComorbidityIndexCode } from "./terminology";
 
@@ -106,29 +100,27 @@ export function computeCharlsonComorbidityIndex({
     };
   }
 
-  const conceptMapElementCodes = uniq(
-    compact(
-      (cciConceptMap.group || [])
-        .flatMap((x) => x.element || [])
-        .flatMap((x) => x.code)
-    )
+  const conceptMapElementCodes = new Set(
+    (cciConceptMap.group || [])
+      .flatMap((x) => x.element || [])
+      .flatMap((x) => x.code)
+      .filter(Boolean) as string[]
   );
 
-  if (
-    !isEmpty(
-      xor(
-        conceptMapElementCodes,
-        Object.values(CharlsonComorbidityIndexCode).filter((x) => x !== "age")
-      )
-    )
-  ) {
+  const mandatoryCodes = Object.values(CharlsonComorbidityIndexCode).filter(
+    (x) => x !== "age"
+  );
+  const missingElementsInConceptMap = mandatoryCodes.filter(
+    (code) => !conceptMapElementCodes.has(code)
+  );
+
+  if (missingElementsInConceptMap.length) {
     return {
       status: "error",
       errorCode: "invalid-conceptmap",
-      errorMessage: `No the concept map is missing the following element codes: ${xor(
-        conceptMapElementCodes,
-        Object.values(CharlsonComorbidityIndexCode).filter((x) => x !== "age")
-      ).join(", ")}.`,
+      errorMessage: `The concept map is missing the following element codes: ${missingElementsInConceptMap.join(
+        ", "
+      )}.`,
     };
   }
 
@@ -139,7 +131,10 @@ export function computeCharlsonComorbidityIndex({
     ...allScoreExceptAge.scores,
   };
 
-  const score = sum(Object.values(detailedScores));
+  const score = Object.values(detailedScores).reduce(
+    (sum, score) => sum + score,
+    0
+  );
   const tenYearSurvivalRate =
     Math.round(
       (Math.pow(0.983, Math.pow(Math.E, score * 0.9)) + Number.EPSILON) * 100
@@ -150,12 +145,12 @@ export function computeCharlsonComorbidityIndex({
     score,
     tenYearSurvivalRate,
     detailedScores,
-    basedOn: compact([
+    basedOn: [
       cciConceptMap.id && cciConceptMap.meta?.versionId
         ? buildReferenceFromResource(cciConceptMap, "version-specific")
         : undefined,
       ...allScoreExceptAge.basedOn,
-    ]),
+    ].filter(Boolean) as Reference[],
   };
 }
 
@@ -193,14 +188,14 @@ function computeScores(
   scores: Record<Exclude<CharlsonComorbidityIndexCode, "age">, number>;
   basedOn: Reference[];
 } {
-  const allConditionsByCodes = keyBy(
+  const allConditionsByCodes = toMap(
     conditions.flatMap((condition) =>
       (condition.code?.coding || []).map((coding) => ({
         condition,
         code: coding.code,
       }))
     ),
-    "code"
+    (x) => x.code
   );
 
   const basedOn: Reference[] = [];
@@ -228,11 +223,11 @@ function computeScores(
     const variableBasedOn: Reference[] = [];
 
     for (const targetElement of cciMapGroupElement.target || []) {
-      if (targetElement.code && allConditionsByCodes[targetElement.code]) {
+      if (targetElement.code && allConditionsByCodes.has(targetElement.code)) {
         variableBasedOn.push(
           buildReferenceFromResource(
             // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-            allConditionsByCodes[targetElement.code]!.condition
+            allConditionsByCodes.get(targetElement.code)!.condition
           )
         );
       }
