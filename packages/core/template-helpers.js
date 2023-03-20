@@ -115,3 +115,45 @@ export function stripTargetProfile(type) {
 
   return type;
 }
+
+export function jsType(type, attributePath, parentType) {
+  if (!type?.[0]?.code) {
+    return "any";
+  }
+
+  switch (type[0].code) {
+    case "code":
+      if (typeof attributePath !== "string") {
+        return "string";
+      }
+
+      if (attributePath.split(".").length > 2) {
+        return "string";
+      }
+
+      if (!attributePath.split(".").at(-1) || !parentType) {
+        return "string";
+      }
+
+      return `${parentType}["${attributePath.split(".").at(-1)}"]`;
+    case "base64Binary":
+    case "canonical":
+    case "http://hl7.org/fhirpath/System.String":
+    case "dateTime":
+    case "date":
+    case "id":
+    case "instant":
+    case "markdown":
+    case "time":
+    case "uri":
+    case "url":
+      return "string";
+    case "decimal":
+    case "integer":
+    case "positiveInt":
+    case "unsignedInt":
+      return "number";
+    default:
+      return type[0].code;
+  }
+}

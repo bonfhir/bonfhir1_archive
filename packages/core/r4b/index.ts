@@ -7,6 +7,7 @@ export * from "./merge";
 export * from "./narratives";
 export * from "./operations-parameters";
 export * from "./period-calculator";
+export * from "./resource-patch";
 export * from "./resource-search";
 export * from "./search-builder";
 export * from "./types";

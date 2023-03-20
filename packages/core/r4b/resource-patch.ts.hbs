@@ -1,0 +1,224 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+{{#each (fhirPath data.[profiles-resources] "Bundle/DomainResources")}}
+import type { {{type}} } from "fhir/r4";
+{{/each}}
+import {
+  Address,
+  Annotation,
+  Attachment,
+  BackboneElement,
+  CodeableConcept,
+  CodeableReference,
+  Coding,
+  ContactDetail,
+  ContactPoint,
+  DataRequirement,
+  Dosage,
+  Duration,
+  ElementDefinition,
+  Expression,
+  Extension,
+  HumanName,
+  Identifier,
+  MarketingStatus,
+  Meta,
+  Money,
+  Narrative,
+  ParameterDefinition,
+  Period,
+  ProdCharacteristic,
+  ProductShelfLife,
+  Quantity,
+  Ratio,
+  Reference,
+  RelatedArtifact,
+  Resource,
+  Signature,
+  Timing,
+  TriggerDefinition,
+  UsageContext,
+} from "fhir/r4";
+import type { ExtractResource, ResourceType } from "./types";
+import { JSONPatchBody } from "./fhir-restful-client";
+
+/**
+ * Return a typed patch builder for a specific resource.
+ * 
+ * @example
+ *  TBD
+ */
+export function resourcePatch<TResource extends ResourceType>(type: TResource): ExtractPatchBuilder<TResource> {
+  switch(type) {
+    {{#each (fhirPath data.[profiles-resources] "Bundle/DomainResources")}}
+    case "{{type}}":
+      return new ResourcePatchBuilder{{type}}() as ExtractPatchBuilder<TResource>;
+    {{/each}}
+    default:
+      throw new Error(`Unsupported resourcePatch for resource type ${type}`);
+  }
+}
+
+export class BaseResourcePatch {
+
+  /**
+   * The underlying {@link JSONPatchBody}, that can be used directly if needed.
+   */
+  public patch: JSONPatchBody = [];
+}
+
+{{#each (fhirPath data.[profiles-resources] "Bundle/DomainResources")}}
+
+class ResourcePatchBuilder{{type}} extends BaseResourcePatch {
+
+  readonly resourceType = "{{type}}";
+
+  /**
+   * Clone the current patch, so that subsequent modifications do not affect the current builder state.
+   * @returns a deep copy of the current builder.
+   */
+  public clone(): ResourcePatchBuilder{{type}} {
+    const cloned = new ResourcePatchBuilder{{type}}();
+    cloned.patch = JSON.parse(JSON.stringify(this.patch));
+    return cloned;
+  }
+
+  {{#each (fhirPath this "StructureDefinition.snapshot.element")}}
+  {{#if (elementImmediatePath path)}}
+  {{#if (notIn (elementImmediatePath path) "id,meta,implicitRules,language,contained,extension,modifierExtension")}}
+  {{#if (eq base.max "*")}}
+  /**
+   * [Adds](https://jsonpatch.com/#add) a value to an object or inserts it into an array.
+   * In the case of an array, the value is inserted before the given index.
+   * The - character can be used instead of an index to insert at the end of an array.
+   *
+   * {{short}}
+   */
+  public add(path: "/{{elementImmediatePath path}}", value: {{jsType type path ../type}}[]): ResourcePatchBuilder{{../type}};
+  /**
+   * [Adds](https://jsonpatch.com/#add) a value to an object or inserts it into an array.
+   * In the case of an array, the value is inserted before the given index.
+   * The - character can be used instead of an index to insert at the end of an array.
+   *
+   * {{short}}
+   */
+  public add(path: `/{{elementImmediatePath path}}/${number | "-"}`, value: {{jsType type path ../type}}): ResourcePatchBuilder{{../type}};
+  {{else}}
+  /**
+   * [Adds](https://jsonpatch.com/#add) a value to an object or inserts it into an array.
+   * In the case of an array, the value is inserted before the given index.
+   * The - character can be used instead of an index to insert at the end of an array.
+   *
+   * {{short}}
+   */
+  public add(path: "/{{elementImmediatePath path}}", value: {{jsType type path ../type}}): ResourcePatchBuilder{{../type}};
+  {{/if}}
+  {{/if}}
+  {{/if}}
+  {{/each}}
+  /**
+   * [Adds](https://jsonpatch.com/#add) a value to an object or inserts it into an array.
+   * In the case of an array, the value is inserted before the given index.
+   * The - character can be used instead of an index to insert at the end of an array.
+   */
+  public add(path: string, value: unknown): ResourcePatchBuilder{{type}};
+  public add(path: string, value: unknown): ResourcePatchBuilder{{type}} {
+    this.patch.push({
+      op: "add",
+      path,
+      value
+    });
+    return this;
+  }
+
+  {{#each (fhirPath this "StructureDefinition.snapshot.element")}}
+  {{#if (elementImmediatePath path)}}
+  {{#if (notIn (elementImmediatePath path) "id,meta,implicitRules,language,contained,extension,modifierExtension")}}
+  {{#if (eq base.max "*")}}
+  /**
+   * [Removes](https://jsonpatch.com/#remove) a value from an object or array.
+   * 
+   * {{short}}
+   */
+  public remove(path: "/{{elementImmediatePath path}}"): ResourcePatchBuilder{{../type}};
+  /**
+   * [Removes](https://jsonpatch.com/#remove) a value from an object or array.
+   * 
+   * {{short}}
+   */
+  public remove(path: `/{{elementImmediatePath path}}/${number}`): ResourcePatchBuilder{{../type}};
+  {{else}}
+  /**
+   * [Removes](https://jsonpatch.com/#remove) a value from an object or array.
+   * 
+   * {{short}}
+   */
+  public remove(path: "/{{elementImmediatePath path}}"): ResourcePatchBuilder{{../type}};
+  {{/if}}
+  {{/if}}
+  {{/if}}
+  {{/each}}
+  /**
+   * [Removes](https://jsonpatch.com/#remove) a value from an object or array.
+   */
+  public remove(path: string): ResourcePatchBuilder{{type}};
+  public remove(path: string): ResourcePatchBuilder{{type}} {
+    this.patch.push({
+      op: "remove",
+      path
+    });
+    return this;
+  }
+
+  {{#each (fhirPath this "StructureDefinition.snapshot.element")}}
+  {{#if (elementImmediatePath path)}}
+  {{#if (notIn (elementImmediatePath path) "id,meta,implicitRules,language,contained,extension,modifierExtension")}}
+  {{#if (eq base.max "*")}}
+  /**
+   * [Replaces](https://jsonpatch.com/#replace) a value. Equivalent to a “remove” followed by an “add”.
+   * 
+   * {{short}}
+   */
+  public replace(path: "/{{elementImmediatePath path}}", value: {{jsType type path ../type}}[]): ResourcePatchBuilder{{../type}};
+  /**
+   * [Replaces](https://jsonpatch.com/#replace) a value. Equivalent to a “remove” followed by an “add”.
+   * 
+   * {{short}}
+   */
+  public replace(path: `/{{elementImmediatePath path}}/${number | "-"}`, value: {{jsType type path ../type}}): ResourcePatchBuilder{{../type}};
+  {{else}}
+  /**
+   * [Replaces](https://jsonpatch.com/#replace) a value. Equivalent to a “remove” followed by an “add”.
+   * 
+   * {{short}}
+   */
+  public replace(path: "/{{elementImmediatePath path}}", value: {{jsType type path ../type}}): ResourcePatchBuilder{{../type}};
+  {{/if}}
+  {{/if}}
+  {{/if}}
+  {{/each}}
+  /**
+   * [Replaces](https://jsonpatch.com/#replace) a value. Equivalent to a “remove” followed by an “add”.
+   */
+  public replace(path: string, value: unknown): ResourcePatchBuilder{{type}};
+  public replace(path: string, value: unknown): ResourcePatchBuilder{{type}} {
+    this.patch.push({
+      op: "replace",
+      path,
+      value
+    });
+    return this;
+  }
+}
+
+{{/each}}
+
+export type ResourcePatchBuilder = 
+  {{#each (fhirPath data.[profiles-resources] "Bundle/DomainResources")}}
+  | ResourcePatchBuilder{{type}}
+  {{/each}};
+
+/**
+ * Allow referencing a patch builder type from its string ResourceType representation.
+ */
+export type ExtractPatchBuilder<TResourceType extends ResourceType> =
+  Extract<ResourcePatchBuilder, { resourceType: TResourceType }>;
