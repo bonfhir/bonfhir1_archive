@@ -374,14 +374,18 @@ export class FhirSearchBuilder {
     parameter: string,
     value: string | string[] | null | undefined,
     modifier?: StringModifier | null | undefined,
-    replace?: "replace" | null | undefined
+    special?: "replace" | "remove" | null | undefined
   ): FhirSearchBuilder {
+    if (special === "remove") {
+      return this.push(`${parameter}${modifier || ""}`, "", "remove");
+    }
+
     if (value?.length) {
       const parameterValues = typeof value === "string" ? [value] : value;
       this.push(
         `${parameter}${modifier || ""}`,
         parameterValues.map((x) => encodeURIComponent(x)).join(","),
-        replace
+        special
       );
     }
     return this;
@@ -545,9 +549,9 @@ export class FhirSearchBuilder {
   private push(
     parameter: string,
     value: string,
-    replace?: "replace" | null | undefined
+    special?: "replace" | "remove" | null | undefined
   ): FhirSearchBuilder {
-    if (replace) {
+    if (special) {
       let foundIndex = 0;
       while (
         (foundIndex = this.searchParams.findIndex(
@@ -558,7 +562,9 @@ export class FhirSearchBuilder {
       }
     }
 
-    this.searchParams.push([parameter, value]);
+    if (special !== "remove") {
+      this.searchParams.push([parameter, value]);
+    }
 
     return this;
   }
