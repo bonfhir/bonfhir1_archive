@@ -121,8 +121,8 @@ class ResourceSearchBuilder{{type}} extends BaseResourceSearchBuilder<ResourceSe
    * 
    * @see https://hl7.org/fhir/search.html#sort
    */
-  _sort(parameters: SortOrder{{type}} | SortOrder{{type}}[]): ResourceSearchBuilder{{type}} {
-    this.builder.string("_sort", parameters, null, "replace");
+  _sort(parameters: SortOrder{{type}} | SortOrder{{type}}[] | null | undefined): ResourceSearchBuilder{{type}} {
+    this.builder.string("_sort", parameters, null, parameters == null ? "remove" : "replace");
     return this;
   }
 {{/if}}

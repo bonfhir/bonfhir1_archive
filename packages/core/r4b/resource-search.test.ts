@@ -30,6 +30,17 @@ describe("resource-search", () => {
       resourceSearch("Organization")._total("estimate")._total("accurate"),
       "_total=accurate",
     ],
+    [
+      resourceSearch("Organization")
+        ._sort("name")
+        .name("IniTech")
+        ._sort(undefined),
+      "name=IniTech",
+    ],
+    [
+      resourceSearch("Organization")._sort("name").name("IniTech")._sort(null),
+      "name=IniTech",
+    ],
   ])("%s", (searchBuilder, expected) => {
     expect(searchBuilder.href).toEqual(expected);
   });

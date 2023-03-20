@@ -408,9 +408,14 @@ class ResourceSearchBuilderAccount extends BaseResourceSearchBuilder<ResourceSea
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderAccount | SortOrderAccount[]
+    parameters: SortOrderAccount | SortOrderAccount[] | null | undefined
   ): ResourceSearchBuilderAccount {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -673,9 +678,18 @@ class ResourceSearchBuilderActivityDefinition extends BaseResourceSearchBuilder<
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderActivityDefinition | SortOrderActivityDefinition[]
+    parameters:
+      | SortOrderActivityDefinition
+      | SortOrderActivityDefinition[]
+      | null
+      | undefined
   ): ResourceSearchBuilderActivityDefinition {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -1097,8 +1111,15 @@ class ResourceSearchBuilderAdministrableProductDefinition extends BaseResourceSe
     parameters:
       | SortOrderAdministrableProductDefinition
       | SortOrderAdministrableProductDefinition[]
+      | null
+      | undefined
   ): ResourceSearchBuilderAdministrableProductDefinition {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -1361,9 +1382,18 @@ class ResourceSearchBuilderAdverseEvent extends BaseResourceSearchBuilder<Resour
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderAdverseEvent | SortOrderAdverseEvent[]
+    parameters:
+      | SortOrderAdverseEvent
+      | SortOrderAdverseEvent[]
+      | null
+      | undefined
   ): ResourceSearchBuilderAdverseEvent {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -1678,9 +1708,18 @@ class ResourceSearchBuilderAllergyIntolerance extends BaseResourceSearchBuilder<
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderAllergyIntolerance | SortOrderAllergyIntolerance[]
+    parameters:
+      | SortOrderAllergyIntolerance
+      | SortOrderAllergyIntolerance[]
+      | null
+      | undefined
   ): ResourceSearchBuilderAllergyIntolerance {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -2156,9 +2195,14 @@ class ResourceSearchBuilderAppointment extends BaseResourceSearchBuilder<Resourc
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderAppointment | SortOrderAppointment[]
+    parameters: SortOrderAppointment | SortOrderAppointment[] | null | undefined
   ): ResourceSearchBuilderAppointment {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -2538,9 +2582,18 @@ class ResourceSearchBuilderAppointmentResponse extends BaseResourceSearchBuilder
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderAppointmentResponse | SortOrderAppointmentResponse[]
+    parameters:
+      | SortOrderAppointmentResponse
+      | SortOrderAppointmentResponse[]
+      | null
+      | undefined
   ): ResourceSearchBuilderAppointmentResponse {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -2790,9 +2843,14 @@ class ResourceSearchBuilderAuditEvent extends BaseResourceSearchBuilder<Resource
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderAuditEvent | SortOrderAuditEvent[]
+    parameters: SortOrderAuditEvent | SortOrderAuditEvent[] | null | undefined
   ): ResourceSearchBuilderAuditEvent {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -3185,9 +3243,14 @@ class ResourceSearchBuilderBasic extends BaseResourceSearchBuilder<ResourceSearc
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderBasic | SortOrderBasic[]
+    parameters: SortOrderBasic | SortOrderBasic[] | null | undefined
   ): ResourceSearchBuilderBasic {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -3571,9 +3634,18 @@ class ResourceSearchBuilderBodyStructure extends BaseResourceSearchBuilder<Resou
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderBodyStructure | SortOrderBodyStructure[]
+    parameters:
+      | SortOrderBodyStructure
+      | SortOrderBodyStructure[]
+      | null
+      | undefined
   ): ResourceSearchBuilderBodyStructure {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -3784,9 +3856,18 @@ class ResourceSearchBuilderCapabilityStatement extends BaseResourceSearchBuilder
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderCapabilityStatement | SortOrderCapabilityStatement[]
+    parameters:
+      | SortOrderCapabilityStatement
+      | SortOrderCapabilityStatement[]
+      | null
+      | undefined
   ): ResourceSearchBuilderCapabilityStatement {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -4403,9 +4484,14 @@ class ResourceSearchBuilderCarePlan extends BaseResourceSearchBuilder<ResourceSe
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderCarePlan | SortOrderCarePlan[]
+    parameters: SortOrderCarePlan | SortOrderCarePlan[] | null | undefined
   ): ResourceSearchBuilderCarePlan {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -4909,9 +4995,14 @@ class ResourceSearchBuilderCareTeam extends BaseResourceSearchBuilder<ResourceSe
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderCareTeam | SortOrderCareTeam[]
+    parameters: SortOrderCareTeam | SortOrderCareTeam[] | null | undefined
   ): ResourceSearchBuilderCareTeam {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -5406,9 +5497,14 @@ class ResourceSearchBuilderChargeItem extends BaseResourceSearchBuilder<Resource
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderChargeItem | SortOrderChargeItem[]
+    parameters: SortOrderChargeItem | SortOrderChargeItem[] | null | undefined
   ): ResourceSearchBuilderChargeItem {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -5788,9 +5884,18 @@ class ResourceSearchBuilderChargeItemDefinition extends BaseResourceSearchBuilde
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderChargeItemDefinition | SortOrderChargeItemDefinition[]
+    parameters:
+      | SortOrderChargeItemDefinition
+      | SortOrderChargeItemDefinition[]
+      | null
+      | undefined
   ): ResourceSearchBuilderChargeItemDefinition {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -6118,9 +6223,14 @@ class ResourceSearchBuilderCitation extends BaseResourceSearchBuilder<ResourceSe
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderCitation | SortOrderCitation[]
+    parameters: SortOrderCitation | SortOrderCitation[] | null | undefined
   ): ResourceSearchBuilderCitation {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -6461,9 +6571,14 @@ class ResourceSearchBuilderClaim extends BaseResourceSearchBuilder<ResourceSearc
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderClaim | SortOrderClaim[]
+    parameters: SortOrderClaim | SortOrderClaim[] | null | undefined
   ): ResourceSearchBuilderClaim {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -6843,9 +6958,18 @@ class ResourceSearchBuilderClaimResponse extends BaseResourceSearchBuilder<Resou
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderClaimResponse | SortOrderClaimResponse[]
+    parameters:
+      | SortOrderClaimResponse
+      | SortOrderClaimResponse[]
+      | null
+      | undefined
   ): ResourceSearchBuilderClaimResponse {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -7147,9 +7271,18 @@ class ResourceSearchBuilderClinicalImpression extends BaseResourceSearchBuilder<
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderClinicalImpression | SortOrderClinicalImpression[]
+    parameters:
+      | SortOrderClinicalImpression
+      | SortOrderClinicalImpression[]
+      | null
+      | undefined
   ): ResourceSearchBuilderClinicalImpression {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -7533,8 +7666,15 @@ class ResourceSearchBuilderClinicalUseDefinition extends BaseResourceSearchBuild
     parameters:
       | SortOrderClinicalUseDefinition
       | SortOrderClinicalUseDefinition[]
+      | null
+      | undefined
   ): ResourceSearchBuilderClinicalUseDefinition {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -7836,9 +7976,14 @@ class ResourceSearchBuilderCodeSystem extends BaseResourceSearchBuilder<Resource
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderCodeSystem | SortOrderCodeSystem[]
+    parameters: SortOrderCodeSystem | SortOrderCodeSystem[] | null | undefined
   ): ResourceSearchBuilderCodeSystem {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -8424,9 +8569,18 @@ class ResourceSearchBuilderCommunication extends BaseResourceSearchBuilder<Resou
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderCommunication | SortOrderCommunication[]
+    parameters:
+      | SortOrderCommunication
+      | SortOrderCommunication[]
+      | null
+      | undefined
   ): ResourceSearchBuilderCommunication {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -8780,9 +8934,18 @@ class ResourceSearchBuilderCommunicationRequest extends BaseResourceSearchBuilde
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderCommunicationRequest | SortOrderCommunicationRequest[]
+    parameters:
+      | SortOrderCommunicationRequest
+      | SortOrderCommunicationRequest[]
+      | null
+      | undefined
   ): ResourceSearchBuilderCommunicationRequest {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -9152,8 +9315,15 @@ class ResourceSearchBuilderCompartmentDefinition extends BaseResourceSearchBuild
     parameters:
       | SortOrderCompartmentDefinition
       | SortOrderCompartmentDefinition[]
+      | null
+      | undefined
   ): ResourceSearchBuilderCompartmentDefinition {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -9626,9 +9796,14 @@ class ResourceSearchBuilderComposition extends BaseResourceSearchBuilder<Resourc
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderComposition | SortOrderComposition[]
+    parameters: SortOrderComposition | SortOrderComposition[] | null | undefined
   ): ResourceSearchBuilderComposition {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -10128,9 +10303,14 @@ class ResourceSearchBuilderConceptMap extends BaseResourceSearchBuilder<Resource
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderConceptMap | SortOrderConceptMap[]
+    parameters: SortOrderConceptMap | SortOrderConceptMap[] | null | undefined
   ): ResourceSearchBuilderConceptMap {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -10794,9 +10974,14 @@ class ResourceSearchBuilderCondition extends BaseResourceSearchBuilder<ResourceS
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderCondition | SortOrderCondition[]
+    parameters: SortOrderCondition | SortOrderCondition[] | null | undefined
   ): ResourceSearchBuilderCondition {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -11310,9 +11495,14 @@ class ResourceSearchBuilderConsent extends BaseResourceSearchBuilder<ResourceSea
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderConsent | SortOrderConsent[]
+    parameters: SortOrderConsent | SortOrderConsent[] | null | undefined
   ): ResourceSearchBuilderConsent {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -11751,9 +11941,14 @@ class ResourceSearchBuilderContract extends BaseResourceSearchBuilder<ResourceSe
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderContract | SortOrderContract[]
+    parameters: SortOrderContract | SortOrderContract[] | null | undefined
   ): ResourceSearchBuilderContract {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -12042,9 +12237,14 @@ class ResourceSearchBuilderCoverage extends BaseResourceSearchBuilder<ResourceSe
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderCoverage | SortOrderCoverage[]
+    parameters: SortOrderCoverage | SortOrderCoverage[] | null | undefined
   ): ResourceSearchBuilderCoverage {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -12349,8 +12549,15 @@ class ResourceSearchBuilderCoverageEligibilityRequest extends BaseResourceSearch
     parameters:
       | SortOrderCoverageEligibilityRequest
       | SortOrderCoverageEligibilityRequest[]
+      | null
+      | undefined
   ): ResourceSearchBuilderCoverageEligibilityRequest {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -12603,8 +12810,15 @@ class ResourceSearchBuilderCoverageEligibilityResponse extends BaseResourceSearc
     parameters:
       | SortOrderCoverageEligibilityResponse
       | SortOrderCoverageEligibilityResponse[]
+      | null
+      | undefined
   ): ResourceSearchBuilderCoverageEligibilityResponse {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -12880,9 +13094,18 @@ class ResourceSearchBuilderDetectedIssue extends BaseResourceSearchBuilder<Resou
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderDetectedIssue | SortOrderDetectedIssue[]
+    parameters:
+      | SortOrderDetectedIssue
+      | SortOrderDetectedIssue[]
+      | null
+      | undefined
   ): ResourceSearchBuilderDetectedIssue {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -13185,9 +13408,14 @@ class ResourceSearchBuilderDevice extends BaseResourceSearchBuilder<ResourceSear
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderDevice | SortOrderDevice[]
+    parameters: SortOrderDevice | SortOrderDevice[] | null | undefined
   ): ResourceSearchBuilderDevice {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -13502,9 +13730,18 @@ class ResourceSearchBuilderDeviceDefinition extends BaseResourceSearchBuilder<Re
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderDeviceDefinition | SortOrderDeviceDefinition[]
+    parameters:
+      | SortOrderDeviceDefinition
+      | SortOrderDeviceDefinition[]
+      | null
+      | undefined
   ): ResourceSearchBuilderDeviceDefinition {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -13702,9 +13939,18 @@ class ResourceSearchBuilderDeviceMetric extends BaseResourceSearchBuilder<Resour
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderDeviceMetric | SortOrderDeviceMetric[]
+    parameters:
+      | SortOrderDeviceMetric
+      | SortOrderDeviceMetric[]
+      | null
+      | undefined
   ): ResourceSearchBuilderDeviceMetric {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -13928,9 +14174,18 @@ class ResourceSearchBuilderDeviceRequest extends BaseResourceSearchBuilder<Resou
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderDeviceRequest | SortOrderDeviceRequest[]
+    parameters:
+      | SortOrderDeviceRequest
+      | SortOrderDeviceRequest[]
+      | null
+      | undefined
   ): ResourceSearchBuilderDeviceRequest {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -14419,9 +14674,18 @@ class ResourceSearchBuilderDeviceUseStatement extends BaseResourceSearchBuilder<
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderDeviceUseStatement | SortOrderDeviceUseStatement[]
+    parameters:
+      | SortOrderDeviceUseStatement
+      | SortOrderDeviceUseStatement[]
+      | null
+      | undefined
   ): ResourceSearchBuilderDeviceUseStatement {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -14666,9 +14930,18 @@ class ResourceSearchBuilderDiagnosticReport extends BaseResourceSearchBuilder<Re
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderDiagnosticReport | SortOrderDiagnosticReport[]
+    parameters:
+      | SortOrderDiagnosticReport
+      | SortOrderDiagnosticReport[]
+      | null
+      | undefined
   ): ResourceSearchBuilderDiagnosticReport {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -15150,9 +15423,18 @@ class ResourceSearchBuilderDocumentManifest extends BaseResourceSearchBuilder<Re
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderDocumentManifest | SortOrderDocumentManifest[]
+    parameters:
+      | SortOrderDocumentManifest
+      | SortOrderDocumentManifest[]
+      | null
+      | undefined
   ): ResourceSearchBuilderDocumentManifest {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -15554,9 +15836,18 @@ class ResourceSearchBuilderDocumentReference extends BaseResourceSearchBuilder<R
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderDocumentReference | SortOrderDocumentReference[]
+    parameters:
+      | SortOrderDocumentReference
+      | SortOrderDocumentReference[]
+      | null
+      | undefined
   ): ResourceSearchBuilderDocumentReference {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -16115,9 +16406,14 @@ class ResourceSearchBuilderEncounter extends BaseResourceSearchBuilder<ResourceS
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderEncounter | SortOrderEncounter[]
+    parameters: SortOrderEncounter | SortOrderEncounter[] | null | undefined
   ): ResourceSearchBuilderEncounter {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -16668,9 +16964,14 @@ class ResourceSearchBuilderEndpoint extends BaseResourceSearchBuilder<ResourceSe
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderEndpoint | SortOrderEndpoint[]
+    parameters: SortOrderEndpoint | SortOrderEndpoint[] | null | undefined
   ): ResourceSearchBuilderEndpoint {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -16907,9 +17208,18 @@ class ResourceSearchBuilderEnrollmentRequest extends BaseResourceSearchBuilder<R
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderEnrollmentRequest | SortOrderEnrollmentRequest[]
+    parameters:
+      | SortOrderEnrollmentRequest
+      | SortOrderEnrollmentRequest[]
+      | null
+      | undefined
   ): ResourceSearchBuilderEnrollmentRequest {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -17120,9 +17430,18 @@ class ResourceSearchBuilderEnrollmentResponse extends BaseResourceSearchBuilder<
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderEnrollmentResponse | SortOrderEnrollmentResponse[]
+    parameters:
+      | SortOrderEnrollmentResponse
+      | SortOrderEnrollmentResponse[]
+      | null
+      | undefined
   ): ResourceSearchBuilderEnrollmentResponse {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -17320,9 +17639,18 @@ class ResourceSearchBuilderEpisodeOfCare extends BaseResourceSearchBuilder<Resou
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderEpisodeOfCare | SortOrderEpisodeOfCare[]
+    parameters:
+      | SortOrderEpisodeOfCare
+      | SortOrderEpisodeOfCare[]
+      | null
+      | undefined
   ): ResourceSearchBuilderEpisodeOfCare {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -17691,9 +18019,18 @@ class ResourceSearchBuilderEventDefinition extends BaseResourceSearchBuilder<Res
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderEventDefinition | SortOrderEventDefinition[]
+    parameters:
+      | SortOrderEventDefinition
+      | SortOrderEventDefinition[]
+      | null
+      | undefined
   ): ResourceSearchBuilderEventDefinition {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -18112,9 +18449,14 @@ class ResourceSearchBuilderEvidence extends BaseResourceSearchBuilder<ResourceSe
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderEvidence | SortOrderEvidence[]
+    parameters: SortOrderEvidence | SortOrderEvidence[] | null | undefined
   ): ResourceSearchBuilderEvidence {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -18416,9 +18758,18 @@ class ResourceSearchBuilderEvidenceReport extends BaseResourceSearchBuilder<Reso
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderEvidenceReport | SortOrderEvidenceReport[]
+    parameters:
+      | SortOrderEvidenceReport
+      | SortOrderEvidenceReport[]
+      | null
+      | undefined
   ): ResourceSearchBuilderEvidenceReport {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -18668,9 +19019,18 @@ class ResourceSearchBuilderEvidenceVariable extends BaseResourceSearchBuilder<Re
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderEvidenceVariable | SortOrderEvidenceVariable[]
+    parameters:
+      | SortOrderEvidenceVariable
+      | SortOrderEvidenceVariable[]
+      | null
+      | undefined
   ): ResourceSearchBuilderEvidenceVariable {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -18985,9 +19345,18 @@ class ResourceSearchBuilderExampleScenario extends BaseResourceSearchBuilder<Res
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderExampleScenario | SortOrderExampleScenario[]
+    parameters:
+      | SortOrderExampleScenario
+      | SortOrderExampleScenario[]
+      | null
+      | undefined
   ): ResourceSearchBuilderExampleScenario {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -19289,9 +19658,18 @@ class ResourceSearchBuilderExplanationOfBenefit extends BaseResourceSearchBuilde
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderExplanationOfBenefit | SortOrderExplanationOfBenefit[]
+    parameters:
+      | SortOrderExplanationOfBenefit
+      | SortOrderExplanationOfBenefit[]
+      | null
+      | undefined
   ): ResourceSearchBuilderExplanationOfBenefit {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -19671,9 +20049,18 @@ class ResourceSearchBuilderFamilyMemberHistory extends BaseResourceSearchBuilder
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderFamilyMemberHistory | SortOrderFamilyMemberHistory[]
+    parameters:
+      | SortOrderFamilyMemberHistory
+      | SortOrderFamilyMemberHistory[]
+      | null
+      | undefined
   ): ResourceSearchBuilderFamilyMemberHistory {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -20050,9 +20437,14 @@ class ResourceSearchBuilderFlag extends BaseResourceSearchBuilder<ResourceSearch
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderFlag | SortOrderFlag[]
+    parameters: SortOrderFlag | SortOrderFlag[] | null | undefined
   ): ResourceSearchBuilderFlag {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -20356,9 +20748,14 @@ class ResourceSearchBuilderGoal extends BaseResourceSearchBuilder<ResourceSearch
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderGoal | SortOrderGoal[]
+    parameters: SortOrderGoal | SortOrderGoal[] | null | undefined
   ): ResourceSearchBuilderGoal {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -20687,9 +21084,18 @@ class ResourceSearchBuilderGraphDefinition extends BaseResourceSearchBuilder<Res
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderGraphDefinition | SortOrderGraphDefinition[]
+    parameters:
+      | SortOrderGraphDefinition
+      | SortOrderGraphDefinition[]
+      | null
+      | undefined
   ): ResourceSearchBuilderGraphDefinition {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -21177,9 +21583,14 @@ class ResourceSearchBuilderGroup extends BaseResourceSearchBuilder<ResourceSearc
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderGroup | SortOrderGroup[]
+    parameters: SortOrderGroup | SortOrderGroup[] | null | undefined
   ): ResourceSearchBuilderGroup {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -21455,9 +21866,18 @@ class ResourceSearchBuilderGuidanceResponse extends BaseResourceSearchBuilder<Re
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderGuidanceResponse | SortOrderGuidanceResponse[]
+    parameters:
+      | SortOrderGuidanceResponse
+      | SortOrderGuidanceResponse[]
+      | null
+      | undefined
   ): ResourceSearchBuilderGuidanceResponse {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -21668,9 +22088,18 @@ class ResourceSearchBuilderHealthcareService extends BaseResourceSearchBuilder<R
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderHealthcareService | SortOrderHealthcareService[]
+    parameters:
+      | SortOrderHealthcareService
+      | SortOrderHealthcareService[]
+      | null
+      | undefined
   ): ResourceSearchBuilderHealthcareService {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -21985,9 +22414,18 @@ class ResourceSearchBuilderImagingStudy extends BaseResourceSearchBuilder<Resour
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderImagingStudy | SortOrderImagingStudy[]
+    parameters:
+      | SortOrderImagingStudy
+      | SortOrderImagingStudy[]
+      | null
+      | undefined
   ): ResourceSearchBuilderImagingStudy {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -22433,9 +22871,18 @@ class ResourceSearchBuilderImmunization extends BaseResourceSearchBuilder<Resour
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderImmunization | SortOrderImmunization[]
+    parameters:
+      | SortOrderImmunization
+      | SortOrderImmunization[]
+      | null
+      | undefined
   ): ResourceSearchBuilderImmunization {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -22890,8 +23337,15 @@ class ResourceSearchBuilderImmunizationEvaluation extends BaseResourceSearchBuil
     parameters:
       | SortOrderImmunizationEvaluation
       | SortOrderImmunizationEvaluation[]
+      | null
+      | undefined
   ): ResourceSearchBuilderImmunizationEvaluation {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -23144,8 +23598,15 @@ class ResourceSearchBuilderImmunizationRecommendation extends BaseResourceSearch
     parameters:
       | SortOrderImmunizationRecommendation
       | SortOrderImmunizationRecommendation[]
+      | null
+      | undefined
   ): ResourceSearchBuilderImmunizationRecommendation {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -23408,9 +23869,18 @@ class ResourceSearchBuilderImplementationGuide extends BaseResourceSearchBuilder
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderImplementationGuide | SortOrderImplementationGuide[]
+    parameters:
+      | SortOrderImplementationGuide
+      | SortOrderImplementationGuide[]
+      | null
+      | undefined
   ): ResourceSearchBuilderImplementationGuide {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -23962,9 +24432,14 @@ class ResourceSearchBuilderIngredient extends BaseResourceSearchBuilder<Resource
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderIngredient | SortOrderIngredient[]
+    parameters: SortOrderIngredient | SortOrderIngredient[] | null | undefined
   ): ResourceSearchBuilderIngredient {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -24227,9 +24702,18 @@ class ResourceSearchBuilderInsurancePlan extends BaseResourceSearchBuilder<Resou
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderInsurancePlan | SortOrderInsurancePlan[]
+    parameters:
+      | SortOrderInsurancePlan
+      | SortOrderInsurancePlan[]
+      | null
+      | undefined
   ): ResourceSearchBuilderInsurancePlan {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -24570,9 +25054,14 @@ class ResourceSearchBuilderInvoice extends BaseResourceSearchBuilder<ResourceSea
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderInvoice | SortOrderInvoice[]
+    parameters: SortOrderInvoice | SortOrderInvoice[] | null | undefined
   ): ResourceSearchBuilderInvoice {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -24900,9 +25389,14 @@ class ResourceSearchBuilderLibrary extends BaseResourceSearchBuilder<ResourceSea
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderLibrary | SortOrderLibrary[]
+    parameters: SortOrderLibrary | SortOrderLibrary[] | null | undefined
   ): ResourceSearchBuilderLibrary {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -25347,9 +25841,14 @@ class ResourceSearchBuilderLinkage extends BaseResourceSearchBuilder<ResourceSea
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderLinkage | SortOrderLinkage[]
+    parameters: SortOrderLinkage | SortOrderLinkage[] | null | undefined
   ): ResourceSearchBuilderLinkage {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -25547,9 +26046,14 @@ class ResourceSearchBuilderList extends BaseResourceSearchBuilder<ResourceSearch
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderList | SortOrderList[]
+    parameters: SortOrderList | SortOrderList[] | null | undefined
   ): ResourceSearchBuilderList {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -25979,9 +26483,14 @@ class ResourceSearchBuilderLocation extends BaseResourceSearchBuilder<ResourceSe
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderLocation | SortOrderLocation[]
+    parameters: SortOrderLocation | SortOrderLocation[] | null | undefined
   ): ResourceSearchBuilderLocation {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -26325,8 +26834,15 @@ class ResourceSearchBuilderManufacturedItemDefinition extends BaseResourceSearch
     parameters:
       | SortOrderManufacturedItemDefinition
       | SortOrderManufacturedItemDefinition[]
+      | null
+      | undefined
   ): ResourceSearchBuilderManufacturedItemDefinition {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -26524,9 +27040,14 @@ class ResourceSearchBuilderMeasure extends BaseResourceSearchBuilder<ResourceSea
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderMeasure | SortOrderMeasure[]
+    parameters: SortOrderMeasure | SortOrderMeasure[] | null | undefined
   ): ResourceSearchBuilderMeasure {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -26945,9 +27466,18 @@ class ResourceSearchBuilderMeasureReport extends BaseResourceSearchBuilder<Resou
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderMeasureReport | SortOrderMeasureReport[]
+    parameters:
+      | SortOrderMeasureReport
+      | SortOrderMeasureReport[]
+      | null
+      | undefined
   ): ResourceSearchBuilderMeasureReport {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -27223,9 +27753,14 @@ class ResourceSearchBuilderMedia extends BaseResourceSearchBuilder<ResourceSearc
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderMedia | SortOrderMedia[]
+    parameters: SortOrderMedia | SortOrderMedia[] | null | undefined
   ): ResourceSearchBuilderMedia {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -27553,9 +28088,14 @@ class ResourceSearchBuilderMedication extends BaseResourceSearchBuilder<Resource
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderMedication | SortOrderMedication[]
+    parameters: SortOrderMedication | SortOrderMedication[] | null | undefined
   ): ResourceSearchBuilderMedication {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -27850,8 +28390,15 @@ class ResourceSearchBuilderMedicationAdministration extends BaseResourceSearchBu
     parameters:
       | SortOrderMedicationAdministration
       | SortOrderMedicationAdministration[]
+      | null
+      | undefined
   ): ResourceSearchBuilderMedicationAdministration {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -28273,9 +28820,18 @@ class ResourceSearchBuilderMedicationDispense extends BaseResourceSearchBuilder<
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderMedicationDispense | SortOrderMedicationDispense[]
+    parameters:
+      | SortOrderMedicationDispense
+      | SortOrderMedicationDispense[]
+      | null
+      | undefined
   ): ResourceSearchBuilderMedicationDispense {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -28726,9 +29282,18 @@ class ResourceSearchBuilderMedicationKnowledge extends BaseResourceSearchBuilder
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderMedicationKnowledge | SortOrderMedicationKnowledge[]
+    parameters:
+      | SortOrderMedicationKnowledge
+      | SortOrderMedicationKnowledge[]
+      | null
+      | undefined
   ): ResourceSearchBuilderMedicationKnowledge {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -29056,9 +29621,18 @@ class ResourceSearchBuilderMedicationRequest extends BaseResourceSearchBuilder<R
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderMedicationRequest | SortOrderMedicationRequest[]
+    parameters:
+      | SortOrderMedicationRequest
+      | SortOrderMedicationRequest[]
+      | null
+      | undefined
   ): ResourceSearchBuilderMedicationRequest {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -29525,9 +30099,18 @@ class ResourceSearchBuilderMedicationStatement extends BaseResourceSearchBuilder
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderMedicationStatement | SortOrderMedicationStatement[]
+    parameters:
+      | SortOrderMedicationStatement
+      | SortOrderMedicationStatement[]
+      | null
+      | undefined
   ): ResourceSearchBuilderMedicationStatement {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -29926,8 +30509,15 @@ class ResourceSearchBuilderMedicinalProductDefinition extends BaseResourceSearch
     parameters:
       | SortOrderMedicinalProductDefinition
       | SortOrderMedicinalProductDefinition[]
+      | null
+      | undefined
   ): ResourceSearchBuilderMedicinalProductDefinition {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -30242,9 +30832,18 @@ class ResourceSearchBuilderMessageDefinition extends BaseResourceSearchBuilder<R
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderMessageDefinition | SortOrderMessageDefinition[]
+    parameters:
+      | SortOrderMessageDefinition
+      | SortOrderMessageDefinition[]
+      | null
+      | undefined
   ): ResourceSearchBuilderMessageDefinition {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -30817,9 +31416,18 @@ class ResourceSearchBuilderMessageHeader extends BaseResourceSearchBuilder<Resou
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderMessageHeader | SortOrderMessageHeader[]
+    parameters:
+      | SortOrderMessageHeader
+      | SortOrderMessageHeader[]
+      | null
+      | undefined
   ): ResourceSearchBuilderMessageHeader {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -31160,9 +31768,18 @@ class ResourceSearchBuilderMolecularSequence extends BaseResourceSearchBuilder<R
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderMolecularSequence | SortOrderMolecularSequence[]
+    parameters:
+      | SortOrderMolecularSequence
+      | SortOrderMolecularSequence[]
+      | null
+      | undefined
   ): ResourceSearchBuilderMolecularSequence {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -31438,9 +32055,18 @@ class ResourceSearchBuilderNamingSystem extends BaseResourceSearchBuilder<Resour
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderNamingSystem | SortOrderNamingSystem[]
+    parameters:
+      | SortOrderNamingSystem
+      | SortOrderNamingSystem[]
+      | null
+      | undefined
   ): ResourceSearchBuilderNamingSystem {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -31963,9 +32589,18 @@ class ResourceSearchBuilderNutritionOrder extends BaseResourceSearchBuilder<Reso
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderNutritionOrder | SortOrderNutritionOrder[]
+    parameters:
+      | SortOrderNutritionOrder
+      | SortOrderNutritionOrder[]
+      | null
+      | undefined
   ): ResourceSearchBuilderNutritionOrder {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -32360,9 +32995,18 @@ class ResourceSearchBuilderNutritionProduct extends BaseResourceSearchBuilder<Re
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderNutritionProduct | SortOrderNutritionProduct[]
+    parameters:
+      | SortOrderNutritionProduct
+      | SortOrderNutritionProduct[]
+      | null
+      | undefined
   ): ResourceSearchBuilderNutritionProduct {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -32547,9 +33191,14 @@ class ResourceSearchBuilderObservation extends BaseResourceSearchBuilder<Resourc
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderObservation | SortOrderObservation[]
+    parameters: SortOrderObservation | SortOrderObservation[] | null | undefined
   ): ResourceSearchBuilderObservation {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -33360,9 +34009,18 @@ class ResourceSearchBuilderOperationDefinition extends BaseResourceSearchBuilder
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderOperationDefinition | SortOrderOperationDefinition[]
+    parameters:
+      | SortOrderOperationDefinition
+      | SortOrderOperationDefinition[]
+      | null
+      | undefined
   ): ResourceSearchBuilderOperationDefinition {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -34113,9 +34771,18 @@ class ResourceSearchBuilderOrganization extends BaseResourceSearchBuilder<Resour
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderOrganization | SortOrderOrganization[]
+    parameters:
+      | SortOrderOrganization
+      | SortOrderOrganization[]
+      | null
+      | undefined
   ): ResourceSearchBuilderOrganization {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -34446,8 +35113,15 @@ class ResourceSearchBuilderOrganizationAffiliation extends BaseResourceSearchBui
     parameters:
       | SortOrderOrganizationAffiliation
       | SortOrderOrganizationAffiliation[]
+      | null
+      | undefined
   ): ResourceSearchBuilderOrganizationAffiliation {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -34791,8 +35465,15 @@ class ResourceSearchBuilderPackagedProductDefinition extends BaseResourceSearchB
     parameters:
       | SortOrderPackagedProductDefinition
       | SortOrderPackagedProductDefinition[]
+      | null
+      | undefined
   ): ResourceSearchBuilderPackagedProductDefinition {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -35094,9 +35775,14 @@ class ResourceSearchBuilderPatient extends BaseResourceSearchBuilder<ResourceSea
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderPatient | SortOrderPatient[]
+    parameters: SortOrderPatient | SortOrderPatient[] | null | undefined
   ): ResourceSearchBuilderPatient {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -35636,9 +36322,18 @@ class ResourceSearchBuilderPaymentNotice extends BaseResourceSearchBuilder<Resou
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderPaymentNotice | SortOrderPaymentNotice[]
+    parameters:
+      | SortOrderPaymentNotice
+      | SortOrderPaymentNotice[]
+      | null
+      | undefined
   ): ResourceSearchBuilderPaymentNotice {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -35891,8 +36586,15 @@ class ResourceSearchBuilderPaymentReconciliation extends BaseResourceSearchBuild
     parameters:
       | SortOrderPaymentReconciliation
       | SortOrderPaymentReconciliation[]
+      | null
+      | undefined
   ): ResourceSearchBuilderPaymentReconciliation {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -36155,9 +36857,14 @@ class ResourceSearchBuilderPerson extends BaseResourceSearchBuilder<ResourceSear
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderPerson | SortOrderPerson[]
+    parameters: SortOrderPerson | SortOrderPerson[] | null | undefined
   ): ResourceSearchBuilderPerson {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -36637,9 +37344,18 @@ class ResourceSearchBuilderPlanDefinition extends BaseResourceSearchBuilder<Reso
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderPlanDefinition | SortOrderPlanDefinition[]
+    parameters:
+      | SortOrderPlanDefinition
+      | SortOrderPlanDefinition[]
+      | null
+      | undefined
   ): ResourceSearchBuilderPlanDefinition {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -37084,9 +37800,18 @@ class ResourceSearchBuilderPractitioner extends BaseResourceSearchBuilder<Resour
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderPractitioner | SortOrderPractitioner[]
+    parameters:
+      | SortOrderPractitioner
+      | SortOrderPractitioner[]
+      | null
+      | undefined
   ): ResourceSearchBuilderPractitioner {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -37543,9 +38268,18 @@ class ResourceSearchBuilderPractitionerRole extends BaseResourceSearchBuilder<Re
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderPractitionerRole | SortOrderPractitionerRole[]
+    parameters:
+      | SortOrderPractitionerRole
+      | SortOrderPractitionerRole[]
+      | null
+      | undefined
   ): ResourceSearchBuilderPractitionerRole {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -37894,9 +38628,14 @@ class ResourceSearchBuilderProcedure extends BaseResourceSearchBuilder<ResourceS
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderProcedure | SortOrderProcedure[]
+    parameters: SortOrderProcedure | SortOrderProcedure[] | null | undefined
   ): ResourceSearchBuilderProcedure {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -38378,9 +39117,14 @@ class ResourceSearchBuilderProvenance extends BaseResourceSearchBuilder<Resource
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderProvenance | SortOrderProvenance[]
+    parameters: SortOrderProvenance | SortOrderProvenance[] | null | undefined
   ): ResourceSearchBuilderProvenance {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -38669,9 +39413,18 @@ class ResourceSearchBuilderQuestionnaire extends BaseResourceSearchBuilder<Resou
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderQuestionnaire | SortOrderQuestionnaire[]
+    parameters:
+      | SortOrderQuestionnaire
+      | SortOrderQuestionnaire[]
+      | null
+      | undefined
   ): ResourceSearchBuilderQuestionnaire {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -39054,8 +39807,15 @@ class ResourceSearchBuilderQuestionnaireResponse extends BaseResourceSearchBuild
     parameters:
       | SortOrderQuestionnaireResponse
       | SortOrderQuestionnaireResponse[]
+      | null
+      | undefined
   ): ResourceSearchBuilderQuestionnaireResponse {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -39360,8 +40120,15 @@ class ResourceSearchBuilderRegulatedAuthorization extends BaseResourceSearchBuil
     parameters:
       | SortOrderRegulatedAuthorization
       | SortOrderRegulatedAuthorization[]
+      | null
+      | undefined
   ): ResourceSearchBuilderRegulatedAuthorization {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -39611,9 +40378,18 @@ class ResourceSearchBuilderRelatedPerson extends BaseResourceSearchBuilder<Resou
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderRelatedPerson | SortOrderRelatedPerson[]
+    parameters:
+      | SortOrderRelatedPerson
+      | SortOrderRelatedPerson[]
+      | null
+      | undefined
   ): ResourceSearchBuilderRelatedPerson {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -40067,9 +40843,18 @@ class ResourceSearchBuilderRequestGroup extends BaseResourceSearchBuilder<Resour
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderRequestGroup | SortOrderRequestGroup[]
+    parameters:
+      | SortOrderRequestGroup
+      | SortOrderRequestGroup[]
+      | null
+      | undefined
   ): ResourceSearchBuilderRequestGroup {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -40410,9 +41195,18 @@ class ResourceSearchBuilderResearchDefinition extends BaseResourceSearchBuilder<
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderResearchDefinition | SortOrderResearchDefinition[]
+    parameters:
+      | SortOrderResearchDefinition
+      | SortOrderResearchDefinition[]
+      | null
+      | undefined
   ): ResourceSearchBuilderResearchDefinition {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -40834,8 +41628,15 @@ class ResourceSearchBuilderResearchElementDefinition extends BaseResourceSearchB
     parameters:
       | SortOrderResearchElementDefinition
       | SortOrderResearchElementDefinition[]
+      | null
+      | undefined
   ): ResourceSearchBuilderResearchElementDefinition {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -41254,9 +42055,18 @@ class ResourceSearchBuilderResearchStudy extends BaseResourceSearchBuilder<Resou
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderResearchStudy | SortOrderResearchStudy[]
+    parameters:
+      | SortOrderResearchStudy
+      | SortOrderResearchStudy[]
+      | null
+      | undefined
   ): ResourceSearchBuilderResearchStudy {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -41584,9 +42394,18 @@ class ResourceSearchBuilderResearchSubject extends BaseResourceSearchBuilder<Res
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderResearchSubject | SortOrderResearchSubject[]
+    parameters:
+      | SortOrderResearchSubject
+      | SortOrderResearchSubject[]
+      | null
+      | undefined
   ): ResourceSearchBuilderResearchSubject {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -41823,9 +42642,18 @@ class ResourceSearchBuilderRiskAssessment extends BaseResourceSearchBuilder<Reso
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderRiskAssessment | SortOrderRiskAssessment[]
+    parameters:
+      | SortOrderRiskAssessment
+      | SortOrderRiskAssessment[]
+      | null
+      | undefined
   ): ResourceSearchBuilderRiskAssessment {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -42213,9 +43041,14 @@ class ResourceSearchBuilderSchedule extends BaseResourceSearchBuilder<ResourceSe
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderSchedule | SortOrderSchedule[]
+    parameters: SortOrderSchedule | SortOrderSchedule[] | null | undefined
   ): ResourceSearchBuilderSchedule {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -42465,9 +43298,18 @@ class ResourceSearchBuilderSearchParameter extends BaseResourceSearchBuilder<Res
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderSearchParameter | SortOrderSearchParameter[]
+    parameters:
+      | SortOrderSearchParameter
+      | SortOrderSearchParameter[]
+      | null
+      | undefined
   ): ResourceSearchBuilderSearchParameter {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -43020,9 +43862,18 @@ class ResourceSearchBuilderServiceRequest extends BaseResourceSearchBuilder<Reso
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderServiceRequest | SortOrderServiceRequest[]
+    parameters:
+      | SortOrderServiceRequest
+      | SortOrderServiceRequest[]
+      | null
+      | undefined
   ): ResourceSearchBuilderServiceRequest {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -43550,9 +44401,14 @@ class ResourceSearchBuilderSlot extends BaseResourceSearchBuilder<ResourceSearch
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderSlot | SortOrderSlot[]
+    parameters: SortOrderSlot | SortOrderSlot[] | null | undefined
   ): ResourceSearchBuilderSlot {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -43815,9 +44671,14 @@ class ResourceSearchBuilderSpecimen extends BaseResourceSearchBuilder<ResourceSe
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderSpecimen | SortOrderSpecimen[]
+    parameters: SortOrderSpecimen | SortOrderSpecimen[] | null | undefined
   ): ResourceSearchBuilderSpecimen {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -44132,9 +44993,18 @@ class ResourceSearchBuilderSpecimenDefinition extends BaseResourceSearchBuilder<
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderSpecimenDefinition | SortOrderSpecimenDefinition[]
+    parameters:
+      | SortOrderSpecimenDefinition
+      | SortOrderSpecimenDefinition[]
+      | null
+      | undefined
   ): ResourceSearchBuilderSpecimenDefinition {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -44332,9 +45202,18 @@ class ResourceSearchBuilderStructureDefinition extends BaseResourceSearchBuilder
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderStructureDefinition | SortOrderStructureDefinition[]
+    parameters:
+      | SortOrderStructureDefinition
+      | SortOrderStructureDefinition[]
+      | null
+      | undefined
   ): ResourceSearchBuilderStructureDefinition {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -45481,9 +46360,18 @@ class ResourceSearchBuilderSubscription extends BaseResourceSearchBuilder<Resour
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderSubscription | SortOrderSubscription[]
+    parameters:
+      | SortOrderSubscription
+      | SortOrderSubscription[]
+      | null
+      | undefined
   ): ResourceSearchBuilderSubscription {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -45867,9 +46755,18 @@ class ResourceSearchBuilderSubscriptionTopic extends BaseResourceSearchBuilder<R
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderSubscriptionTopic | SortOrderSubscriptionTopic[]
+    parameters:
+      | SortOrderSubscriptionTopic
+      | SortOrderSubscriptionTopic[]
+      | null
+      | undefined
   ): ResourceSearchBuilderSubscriptionTopic {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -46145,9 +47042,14 @@ class ResourceSearchBuilderSubstance extends BaseResourceSearchBuilder<ResourceS
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderSubstance | SortOrderSubstance[]
+    parameters: SortOrderSubstance | SortOrderSubstance[] | null | undefined
   ): ResourceSearchBuilderSubstance {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -46410,9 +47312,18 @@ class ResourceSearchBuilderSubstanceDefinition extends BaseResourceSearchBuilder
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderSubstanceDefinition | SortOrderSubstanceDefinition[]
+    parameters:
+      | SortOrderSubstanceDefinition
+      | SortOrderSubstanceDefinition[]
+      | null
+      | undefined
   ): ResourceSearchBuilderSubstanceDefinition {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -46636,9 +47547,18 @@ class ResourceSearchBuilderSupplyDelivery extends BaseResourceSearchBuilder<Reso
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderSupplyDelivery | SortOrderSupplyDelivery[]
+    parameters:
+      | SortOrderSupplyDelivery
+      | SortOrderSupplyDelivery[]
+      | null
+      | undefined
   ): ResourceSearchBuilderSupplyDelivery {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -46928,9 +47848,18 @@ class ResourceSearchBuilderSupplyRequest extends BaseResourceSearchBuilder<Resou
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderSupplyRequest | SortOrderSupplyRequest[]
+    parameters:
+      | SortOrderSupplyRequest
+      | SortOrderSupplyRequest[]
+      | null
+      | undefined
   ): ResourceSearchBuilderSupplyRequest {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -47231,9 +48160,14 @@ class ResourceSearchBuilderTask extends BaseResourceSearchBuilder<ResourceSearch
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderTask | SortOrderTask[]
+    parameters: SortOrderTask | SortOrderTask[] | null | undefined
   ): ResourceSearchBuilderTask {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -48103,9 +49037,14 @@ class ResourceSearchBuilderTestReport extends BaseResourceSearchBuilder<Resource
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderTestReport | SortOrderTestReport[]
+    parameters: SortOrderTestReport | SortOrderTestReport[] | null | undefined
   ): ResourceSearchBuilderTestReport {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -48342,9 +49281,14 @@ class ResourceSearchBuilderTestScript extends BaseResourceSearchBuilder<Resource
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderTestScript | SortOrderTestScript[]
+    parameters: SortOrderTestScript | SortOrderTestScript[] | null | undefined
   ): ResourceSearchBuilderTestScript {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -48685,9 +49629,14 @@ class ResourceSearchBuilderValueSet extends BaseResourceSearchBuilder<ResourceSe
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderValueSet | SortOrderValueSet[]
+    parameters: SortOrderValueSet | SortOrderValueSet[] | null | undefined
   ): ResourceSearchBuilderValueSet {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -49247,9 +50196,18 @@ class ResourceSearchBuilderVerificationResult extends BaseResourceSearchBuilder<
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderVerificationResult | SortOrderVerificationResult[]
+    parameters:
+      | SortOrderVerificationResult
+      | SortOrderVerificationResult[]
+      | null
+      | undefined
   ): ResourceSearchBuilderVerificationResult {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
@@ -49419,9 +50377,18 @@ class ResourceSearchBuilderVisionPrescription extends BaseResourceSearchBuilder<
    * @see https://hl7.org/fhir/search.html#sort
    */
   _sort(
-    parameters: SortOrderVisionPrescription | SortOrderVisionPrescription[]
+    parameters:
+      | SortOrderVisionPrescription
+      | SortOrderVisionPrescription[]
+      | null
+      | undefined
   ): ResourceSearchBuilderVisionPrescription {
-    this.builder.string("_sort", parameters, null, "replace");
+    this.builder.string(
+      "_sort",
+      parameters,
+      null,
+      parameters == null ? "remove" : "replace"
+    );
     return this;
   }
 
