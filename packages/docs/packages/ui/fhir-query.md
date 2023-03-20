@@ -372,10 +372,18 @@ const organizationMutation = useFhirPatchMutation("Organization", {
   }
 );
 
-return <button onClick={() => organizationMutation.mutate({
-  id: "39a43e23-46dd-4f05-948e-2e9d29ece4ab",
-  body: [{ op: "replace", path: "/name", value: "new name" }],
-})}>Update!</button>;
+return (
+  <button
+    onClick={() =>
+      organizationMutation.mutate({
+        id: "39a43e23-46dd-4f05-948e-2e9d29ece4ab",
+        body: (patch) => patch.replace("/name", "new name"),
+      })
+    }
+  >
+    Update!
+  </button>
+);
 ```
 
 If the option to `manageCache` is enabled (default behavior), `useFhirPatchMutation` automatically invalidates all
