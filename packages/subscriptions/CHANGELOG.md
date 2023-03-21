@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.1.0-alpha.4](https://github.com/bonfhir/bonfhir/compare/@bonfhir/subscriptions@0.1.0-alpha.3...@bonfhir/subscriptions@0.1.0-alpha.4) (2023-03-21)
+
+
+### Features
+
+* **core:** :sparkles: add support for `resourceSearch` in `FhirRestfulClient` directly ([6d7a05c](https://github.com/bonfhir/bonfhir/commit/6d7a05cfad72d3e2543fc8c21580959e11e0e644)), closes [#167](https://github.com/bonfhir/bonfhir/issues/167)
+* **subscriptions:** :sparkles: `resource` on `FhirSubscription` now has a required id ([da7c583](https://github.com/bonfhir/bonfhir/commit/da7c58306ad0b24cff017f855c427cad63d3bdd4))
+
+
+
+
+
 # [0.1.0-alpha.3](https://github.com/bonfhir/bonfhir/compare/@bonfhir/subscriptions@0.1.0-alpha.2...@bonfhir/subscriptions@0.1.0-alpha.3) (2023-03-15)
 
 **Note:** Version bump only for package @bonfhir/subscriptions

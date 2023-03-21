@@ -1,7 +1,7 @@
 {
   "name": "@bonfhir/antd",
   "description": "Antd adapter package for Bonfhir.",
-  "version": "0.1.0-alpha.4",
+  "version": "0.1.0-alpha.5",
   "repository": "https://github.com/bonfhir/bonfhir.git",
   "license": "APACHE-2.0",
   "type": "module",
@@ -15,10 +15,10 @@
   },
   "packageManager": "yarn@3.3.1",
   "devDependencies": {
-    "@bonfhir/eslint-config": "^1.1.0-alpha.0",
-    "@bonfhir/medplum": "^1.0.0-alpha.14",
-    "@bonfhir/prettier-config": "^1.0.0",
-    "@bonfhir/typescript-config": "^1.0.1-alpha.0",
+    "@bonfhir/eslint-config": "^1.1.0-alpha.1",
+    "@bonfhir/medplum": "^1.0.0-alpha.15",
+    "@bonfhir/prettier-config": "^1.0.1-alpha.0",
+    "@bonfhir/typescript-config": "^1.0.1-alpha.1",
     "@testing-library/react": "^13.4.0",
     "@types/fhir": "^0.0.35",
     "@types/node": "^18.15.3",
@@ -38,7 +38,7 @@
     "typescript": "^4.9.5"
   },
   "dependencies": {
-    "@bonfhir/ui-components": "^0.1.0-alpha.6"
+    "@bonfhir/ui-components": "^0.1.0-alpha.7"
   },
   "prettier": "@bonfhir/prettier-config",
   "peerDependencies": {

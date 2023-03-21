@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.15](https://github.com/bonfhir/bonfhir/compare/@bonfhir/medplum@1.0.0-alpha.14...@bonfhir/medplum@1.0.0-alpha.15) (2023-03-21)
+
+
+### Features
+
+* **core:** :sparkles: add support for `resourceSearch` in `FhirRestfulClient` directly ([6d7a05c](https://github.com/bonfhir/bonfhir/commit/6d7a05cfad72d3e2543fc8c21580959e11e0e644)), closes [#167](https://github.com/bonfhir/bonfhir/issues/167)
+* **medplum:** :sparkles: add support for `resourcePatch` ([4530800](https://github.com/bonfhir/bonfhir/commit/45308008240898522c1be34de0349e8698138e40)), closes [#160](https://github.com/bonfhir/bonfhir/issues/160)
+
+
+
+
+
 # [1.0.0-alpha.14](https://github.com/bonfhir/bonfhir/compare/@bonfhir/medplum@1.0.0-alpha.13...@bonfhir/medplum@1.0.0-alpha.14) (2023-03-14)
 
 

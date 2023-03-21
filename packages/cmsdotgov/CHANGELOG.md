@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.18](https://github.com/bonfhir/bonfhir/compare/@bonfhir/cmsdotgov@1.0.0-alpha.17...@bonfhir/cmsdotgov@1.0.0-alpha.18) (2023-03-21)
+
+
+### Features
+
+* **core:** :sparkles: add support for `resourceSearch` in `FhirRestfulClient` directly ([6d7a05c](https://github.com/bonfhir/bonfhir/commit/6d7a05cfad72d3e2543fc8c21580959e11e0e644)), closes [#167](https://github.com/bonfhir/bonfhir/issues/167)
+
+
+
+
+
 # [1.0.0-alpha.17](https://github.com/bonfhir/bonfhir/compare/@bonfhir/cmsdotgov@1.0.0-alpha.16...@bonfhir/cmsdotgov@1.0.0-alpha.17) (2023-03-14)
 
 **Note:** Version bump only for package @bonfhir/cmsdotgov

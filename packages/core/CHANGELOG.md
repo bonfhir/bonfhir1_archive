@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.13](https://github.com/bonfhir/bonfhir/compare/@bonfhir/core@1.0.0-alpha.12...@bonfhir/core@1.0.0-alpha.13) (2023-03-21)
+
+
+### Bug Fixes
+
+* :white_check_mark: fix failing unit tests on node 18.15.0 ([0363d66](https://github.com/bonfhir/bonfhir/commit/0363d669b5a9f65c992956e5a0e4561a099ae585))
+
+
+### Features
+
+* **core:** :sparkles: `resourceSearch._sort` delete sort on null | undefined ([9c80200](https://github.com/bonfhir/bonfhir/commit/9c8020070814437462c768720210b8e73d9393e5)), closes [#118](https://github.com/bonfhir/bonfhir/issues/118)
+* **core:** :sparkles: add `resourcePatch` builder ([5c91f02](https://github.com/bonfhir/bonfhir/commit/5c91f02f8c92b875ce4d436115dda64aba32f60d)), closes [#160](https://github.com/bonfhir/bonfhir/issues/160)
+* **core:** :sparkles: add support for `resourceSearch` in `FhirRestfulClient` directly ([6d7a05c](https://github.com/bonfhir/bonfhir/commit/6d7a05cfad72d3e2543fc8c21580959e11e0e644)), closes [#167](https://github.com/bonfhir/bonfhir/issues/167)
+
+
+
+
+
 # [1.0.0-alpha.12](https://github.com/bonfhir/bonfhir/compare/@bonfhir/core@1.0.0-alpha.11...@bonfhir/core@1.0.0-alpha.12) (2023-03-10)
 
 
