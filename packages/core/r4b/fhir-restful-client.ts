@@ -1,6 +1,7 @@
 import { Bundle, CapabilityStatement, FhirResource, Identifier } from "fhir/r4";
 import { BundleNavigator, bundleNavigator } from "./bundle-navigator";
 import { merge, MergeResult } from "./merge";
+import { ExtractPatchBuilder, resourcePatch } from "./resource-patch";
 import { ExtractSearchBuilder, resourceSearch } from "./resource-search";
 import { fhirSearch } from "./search-builder";
 import { ExtractResource, ResourceType, WithRequired } from "./types";
@@ -55,7 +56,7 @@ export interface FhirRestfulClient {
   patch: <TResource extends ResourceType>(
     type: TResource,
     id: string,
-    body: JSONPatchBody,
+    body: FhirRestfulClientPatchBody<TResource>,
     options?:
       | (GeneralParameters &
           ConcurrencyParameters &
@@ -181,6 +182,35 @@ function extractSearchBuilderAsString<TResourceType extends ResourceType>(
   }
 
   return search.href;
+}
+
+export type FhirRestfulClientPatchBody<TResource extends ResourceType> =
+  | ((
+      patch: ExtractPatchBuilder<TResource>
+    ) => ExtractPatchBuilder<TResource> | JSONPatchBody)
+  | JSONPatchBody;
+
+/**
+ * This is a helper function that take either a function or a JSONPatchBody that represents a patch body,
+ * and normalize them as the final FHIR patch body as a JSONPatchBody.
+ */
+export function normalizePatchBody<TResource extends ResourceType>(
+  type: TResource,
+  patch: FhirRestfulClientPatchBody<TResource>
+): JSONPatchBody {
+  return typeof patch === "function"
+    ? extractPatchBuilderAsString(patch(resourcePatch(type)))
+    : patch;
+}
+
+function extractPatchBuilderAsString<TResourceType extends ResourceType>(
+  patch: ExtractPatchBuilder<TResourceType> | JSONPatchBody
+): JSONPatchBody {
+  if (Array.isArray(patch)) {
+    return patch;
+  }
+
+  return patch.patch;
 }
 
 /**

@@ -3,8 +3,8 @@ import {
   BundleNavigator,
   ExtractResource,
   FhirRestfulClient,
+  FhirRestfulClientPatchBody,
   FhirRestfulClientSearchParameters,
-  JSONPatchBody,
   linkUrl,
   normalizeSearchParameters,
   ResourceType,
@@ -678,9 +678,9 @@ export function useFhirUpdateMutation<TResource extends ResourceType>(
   });
 }
 
-export type UseFhirPatchMutationArgs = {
+export type UseFhirPatchMutationArgs<TResource extends ResourceType> = {
   id: string;
-  body: JSONPatchBody;
+  body: FhirRestfulClientPatchBody<TResource>;
   options?: Parameters<FhirRestfulClient["patch"]>[3];
 };
 
@@ -696,7 +696,7 @@ export function useFhirPatchMutation<TResource extends ResourceType>(
         UseMutationOptions<
           ExtractResource<TResource>,
           unknown,
-          UseFhirPatchMutationArgs,
+          UseFhirPatchMutationArgs<TResource>,
           unknown
         >,
         "mutationFn"
@@ -706,13 +706,15 @@ export function useFhirPatchMutation<TResource extends ResourceType>(
 ): UseMutationResult<
   ExtractResource<TResource>,
   unknown,
-  UseFhirPatchMutationArgs,
+  UseFhirPatchMutationArgs<TResource>,
   unknown
 > {
   const fhirQueryContext = useFhirQueryContext();
 
   const mutationFn = useCallback(
-    (args: UseFhirPatchMutationArgs): Promise<ExtractResource<TResource>> => {
+    (
+      args: UseFhirPatchMutationArgs<TResource>
+    ): Promise<ExtractResource<TResource>> => {
       return fhirQueryContext.fhirClient.patch(
         type,
         args.id,

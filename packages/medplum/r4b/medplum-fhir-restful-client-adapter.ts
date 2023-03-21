@@ -4,11 +4,12 @@ import {
   ConditionalSearchParameters,
   ExtractResource,
   FhirRestfulClient,
+  FhirRestfulClientPatchBody,
   FhirRestfulClientSearchParameters,
   GeneralParameters,
   HistoryParameters,
   isFhirResource,
-  JSONPatchBody,
+  normalizePatchBody,
   normalizeSearchParameters,
   ResourceType,
 } from "@bonfhir/core/r4b";
@@ -106,7 +107,7 @@ export function buildFhirRestfulClientAdapter(
     patch<TResource extends ResourceType>(
       type: TResource,
       id: string,
-      body: JSONPatchBody,
+      body: FhirRestfulClientPatchBody<TResource>,
       options?:
         | (GeneralParameters &
             ConcurrencyParameters &
@@ -118,7 +119,11 @@ export function buildFhirRestfulClientAdapter(
         throw new Error("patch#options is not supported by the MedplumClient.");
       }
 
-      return client.patchResource(type, id, body);
+      return client.patchResource(
+        type,
+        id,
+        normalizePatchBody<TResource>(type, body)
+      );
     },
 
     async delete(

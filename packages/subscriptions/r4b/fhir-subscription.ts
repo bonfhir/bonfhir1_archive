@@ -1,4 +1,4 @@
-import { build, FhirRestfulClient } from "@bonfhir/core/r4b";
+import { build, FhirRestfulClient, WithRequired } from "@bonfhir/core/r4b";
 import { AuditEvent, FhirResource, Subscription } from "fhir/r4";
 import { createErrorAuditEvent } from "./audit-event";
 
@@ -30,7 +30,7 @@ export interface FhirSubscriptionHandlerArgs<
   fhirClient: FhirRestfulClient;
 
   /** The resource that matches the subscription. */
-  resource: TResource;
+  resource: WithRequired<TResource, "id">;
 
   /** The configured logger. */
   logger:

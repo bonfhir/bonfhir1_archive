@@ -46,90 +46,6 @@ import { build } from "@bonfhir/core/r4b";
 const organization = build("Organization", { name: "Acme, Inc." });
 ```
 
-## Resources merge
-
-It is sometime convenient to be able to recursively merge 2 resources definitions in a non-destructive fashion.
-This is particularly useful in data-integration scenarios, where the same resource might be ingested at different time
-and we want to add updates to it, without loosing other potential modifications that occur in between.
-
-The `core` package provides a utility function to merge resources together:
-
-```typescript
-import type { Claim } from "fhir/r4";
-import { merge } from "@bonfhir/core/r4b";
-
-const originalClaim: Claim = ...;
-const newClaim: Claim = ...;
-
-const result = merge({
-  current: originalClaim,
-  incoming: newClaim
-});
-
-result.isUpdated; // True if the incoming resource impacted the current, so the result is different that the current
-result.merged; // The final, merged entity.
-```
-
-Merging is deeply recursive. Elements are de-duplicated based on their `id` property (for both [`Resource`](https://hl7.org/fhir/resource-definitions.html#Resource.id) and [`Element`](https://hl7.org/fhir/element-definitions.html#Element.id)).
-If not `id` property is present, a strict attribute compare is used to identify duplicate elements.
-
-If you want a stable deep-merge that will consistently update values, use stable `id` fields on all resources and elements.
-
-The narrative is re-generated automatically for the merged result.
-
-```typescript
-import type { Claim } from "fhir/r4";
-import { build, merge } from "@bonfhir/core/r4b";
-
-const current = build("Person", {
-  name: [
-    {
-      id: "main-id",
-      use: "official",
-      family: "Simpson"
-    },
-  ]
-});
-
-const incoming = build("Person", {
-  name: [
-    {
-      id: "main-id",
-      given: ["Homer"],
-    },
-    {
-      id: "alternate-id",
-      use: "old",
-      family: "Power"
-      given: ["Max"],
-    },
-  ]
-});
-
-const result = merge({ current, incoming: newClaim });
-
-result === {
-  isUpdated: true,
-  merged: {
-    resourceType: "Person",
-    name: [
-    {
-      id: "main-id",
-      use: "official",
-      family: "Simpson"
-      given: ["Homer"],
-    },
-    {
-      id: "alternate-id",
-      use: "old",
-      family: "Power"
-      given: ["Max"],
-    },
-  ]
-  }
-};
-```
-
 ## FHIR Client interface
 
 The `core` package provides the `FhirRestfulClient` interface that matches with the [official FHIR RESTful API](https://hl7.org/fhir/http.html).
@@ -300,8 +216,7 @@ resourceSearch("Organization").identifier("12345").builder.string("_count", 20)
   .href;
 ```
 
-_The `resourceSearch` builder is integrated in the [`FhirRestfulClient` interface](http://localhost:4000/packages/foundation/core#fhir-client-interface)
-search method, so you can use it inlined:_
+_The `resourceSearch` builder is integrated in the [`FhirRestfulClient` interface](http://localhost:4000/packages/foundation/core#fhir-client-interface) search method, so you can use it inlined:_
 
 ```typescript
 const result = await client.search("Organization", (search) =>
@@ -328,6 +243,39 @@ fhirSearch().reference(
   ":identifier"
 ).href;
 ```
+
+## FHIR JSON Patch
+
+The `resourcePatch` helper is a builder that helps create [JSON Patch](https://jsonpatch.com/) used to invoke the
+[FHIR Patch operation](https://hl7.org/fhir/http.html#patch).
+
+```typescript
+import { resourcePatch } from "@bonfhir/core/r4b";
+
+resourcePatch("Organization").replace("/name", "InitRode").patch;
+
+resourcePatch("RiskAssessment")
+  .add("/note/0", { text: "This is a note" })
+  .replace("/status", "amended").patch;
+```
+
+_The `resourcePatch` builder is integrated in the [`FhirRestfulClient` interface](http://localhost:4000/packages/foundation/core#fhir-client-interface) patch method, so you can use it inlined:_
+
+```typescript
+const result = await fhirClient.patch(
+  "Observation",
+  "<observation-id>",
+  (patch) =>
+    patch
+      .replace("/status", "final")
+      .add("/performer/0", buildReferenceFromResource(practitioner))
+);
+```
+
+_For size & performance reasons, the patch type information is not exhaustive and voluntarily addresses a small subset
+of attributes for each resource. This is a compromise between type safety and type-checking/IDE performance.
+The builder allows to specify any path if necessary - the only impact is that it looses type safety for the argument if
+the path is unknown._
 
 ## Bundle navigator
 
@@ -421,6 +369,90 @@ const adapter = intlFhirDataTypeAdapter("en-us");
 adapter.message`Patient ${[patient.name, "humanName", { style: "shorter", max: 1 }]} was born on ${[patient.birthDate, "date", { dateStyle: "long"}]}.`;
 // "Patient John was born on February 2, 1954."
 
+```
+
+## Resources merge
+
+It is sometime convenient to be able to recursively merge 2 resources definitions in a non-destructive fashion.
+This is particularly useful in data-integration scenarios, where the same resource might be ingested at different time
+and we want to add updates to it, without loosing other potential modifications that occur in between.
+
+The `core` package provides a utility function to merge resources together:
+
+```typescript
+import type { Claim } from "fhir/r4";
+import { merge } from "@bonfhir/core/r4b";
+
+const originalClaim: Claim = ...;
+const newClaim: Claim = ...;
+
+const result = merge({
+  current: originalClaim,
+  incoming: newClaim
+});
+
+result.isUpdated; // True if the incoming resource impacted the current, so the result is different that the current
+result.merged; // The final, merged entity.
+```
+
+Merging is deeply recursive. Elements are de-duplicated based on their `id` property (for both [`Resource`](https://hl7.org/fhir/resource-definitions.html#Resource.id) and [`Element`](https://hl7.org/fhir/element-definitions.html#Element.id)).
+If not `id` property is present, a strict attribute compare is used to identify duplicate elements.
+
+If you want a stable deep-merge that will consistently update values, use stable `id` fields on all resources and elements.
+
+The narrative is re-generated automatically for the merged result.
+
+```typescript
+import type { Claim } from "fhir/r4";
+import { build, merge } from "@bonfhir/core/r4b";
+
+const current = build("Person", {
+  name: [
+    {
+      id: "main-id",
+      use: "official",
+      family: "Simpson"
+    },
+  ]
+});
+
+const incoming = build("Person", {
+  name: [
+    {
+      id: "main-id",
+      given: ["Homer"],
+    },
+    {
+      id: "alternate-id",
+      use: "old",
+      family: "Power"
+      given: ["Max"],
+    },
+  ]
+});
+
+const result = merge({ current, incoming: newClaim });
+
+result === {
+  isUpdated: true,
+  merged: {
+    resourceType: "Person",
+    name: [
+    {
+      id: "main-id",
+      use: "official",
+      family: "Simpson"
+      given: ["Homer"],
+    },
+    {
+      id: "alternate-id",
+      use: "old",
+      family: "Power"
+      given: ["Max"],
+    },
+  ]
+  }
+};
 ```
 
 ## Timeline builder
