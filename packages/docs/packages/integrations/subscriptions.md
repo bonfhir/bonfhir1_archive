@@ -2,21 +2,55 @@
 sidebar_position: 1
 ---
 
-# Subscriptions (KOA)
+# Subscriptions
 
 [![npm](https://img.shields.io/npm/v/@bonfhir/subscriptions)](https://www.npmjs.com/package/@bonfhir/subscriptions)
 
 ```bash npm2yarn
-npm install @bonfhir/subscriptions-koa
+npm install @bonfhir/subscriptions
 ```
 
-This package contains utilities to build [`Subscription`](https://hl7.org/fhir/subscription.html) handlers using [Koa](https://koajs.com/).
+This package contains utilities to build [`Subscription`](https://hl7.org/fhir/subscription.html) handlers.
 
 It manages both registration _and_ execution of handlers.
 
-_[Change Log](https://github.com/bonfhir/bonfhir/blob/main/packages/subscriptions-koa/CHANGELOG.md)_
+_[Change Log](https://github.com/bonfhir/bonfhir/blob/main/packages/subscriptions/CHANGELOG.md)_
 
-## Get Started
+## Example subscription code
+
+```typescript
+import { getIdFromReference } from "@bonfhir/core/r4b";
+import { FhirSubscription } from "@bonfhir/subscriptions/r4b";
+import { CommunicationRequest } from "fhir/r4";
+
+export const communicationRequestsSubscription: FhirSubscription<CommunicationRequest> =
+  {
+    criteria: "CommunicationRequest",
+    reason: "Process communication requests",
+    endpoint: "/fhir/communication-requests",
+    async handler({ fhirClient, resource: communicationRequest, logger }) {
+      if (communicationRequest.subject?.reference) {
+        const patient = await fhirClient.read(
+          "Patient",
+          getIdFromReference(communicationRequest.subject)
+        );
+        logger?.debug(`Related patient: ${patient?.id}`);
+        // ...
+
+        return {
+          patient,
+        };
+      }
+    },
+  };
+```
+
+The idea is to abstract some of the boilerplate code around managing subscriptions, and allow writing code that is a bit
+independent from the underlying execution platform, so that we can write re-usable subscription handlers.
+
+## Get Started with KOA
+
+This section shows how to create a [Koa](https://koajs.com/) application to host the subscriptions.
 
 ### Create a new app using KOA
 
@@ -74,11 +108,9 @@ export const communicationRequests: FhirSubscription<CommunicationRequest> = {
   criteria: "CommunicationRequest",
   reason: "Process communication requests",
   endpoint: "/fhir/communication-requests",
-  async handler({ resource }) {
-    console.log(resource);
-    return {
-      status: 204,
-    };
+  async handler({ resource, logger }) {
+    logger?.debug(resource);
+    //
   },
 };
 ```
