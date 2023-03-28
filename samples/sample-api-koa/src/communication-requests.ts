@@ -5,10 +5,7 @@ export const communicationRequests: FhirSubscription<CommunicationRequest> = {
   criteria: "CommunicationRequest",
   reason: "Send communication requests",
   endpoint: "/fhir/communication-requests",
-  async handler({ resource }) {
-    console.log(resource);
-    return {
-      status: 204,
-    };
+  async handler({ resource, logger }) {
+    logger?.info(resource);
   },
 };
