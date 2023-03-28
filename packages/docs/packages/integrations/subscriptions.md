@@ -132,6 +132,25 @@ This will create the subscriptions on startup, and invoke the handler when recei
 See the [Sample API code](https://github.com/bonfhir/bonfhir/blob/main/samples/sample-api-koa) for a live
 example.
 
+## Utilities
+
+### `composeHandlers`
+
+The `composeHandlers` utility allows to execute multiple subscription handlers in the same subscription.
+The execution can be carried out sequentially or in parallel.
+
+```typescript
+import { composeHandlers, FhirSubscription } from "@bonfhir/subscriptions/r4b";
+import { CommunicationRequest } from "fhir/r4";
+
+export const communicationRequests: FhirSubscription<CommunicationRequest> = {
+  criteria: "CommunicationRequest",
+  reason: "Process communication requests",
+  endpoint: "/fhir/communication-requests",
+  handlers: composeHandlers([...], "parallel")
+};
+```
+
 ## Configuration
 
 ### Webhook security
