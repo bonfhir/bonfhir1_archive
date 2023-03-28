@@ -14,7 +14,10 @@ export interface FhirSubscription<
   /** The Subscription endpoint to hit (webhook url). */
   endpoint: string;
 
-  /** The subscription handler. */
+  /**
+   * The subscription handler.
+   * If hosted in an HTTP setting, the returned value might be JSON-serialized back as the response.
+   */
   handler: FhirSubscriptionHandler<TResource>;
 }
 
@@ -22,7 +25,7 @@ export type FhirSubscriptionHandler<
   TResource extends FhirResource = FhirResource
 > = (
   args: FhirSubscriptionHandlerArgs<TResource>
-) => Promise<FhirSubscriptionHandlerResult>;
+) => FhirSubscriptionHandlerResult;
 
 export interface FhirSubscriptionHandlerArgs<
   TResource extends FhirResource = FhirResource
@@ -39,11 +42,11 @@ export interface FhirSubscriptionHandlerArgs<
     | undefined;
 }
 
-export interface FhirSubscriptionHandlerResult {
-  status: number;
-  body?: string | object | null | undefined;
-  headers?: Record<string, string> | null | undefined;
-}
+export type FhirSubscriptionHandlerResult =
+  | void
+  | Promise<void>
+  | object
+  | Promise<object>;
 
 export type SubscriptionLogger = Pick<
   typeof console,

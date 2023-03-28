@@ -148,13 +148,11 @@ export async function fhirSubscriptions(config: FhirSubscriptionsConfig) {
           logger,
         });
 
-        context.status = result.status;
-        if (result.body) {
-          context.response.body = result.body;
-        }
-
-        if (result.headers) {
-          context.set(result.headers);
+        if (result == null) {
+          context.status = 204;
+        } else {
+          context.status = 200;
+          context.response.body = result;
         }
       } catch (error) {
         logger.error(error);
