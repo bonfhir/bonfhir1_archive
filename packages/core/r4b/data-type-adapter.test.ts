@@ -73,6 +73,20 @@ describe("intlFhirDataTypeAdapter", () => {
     });
   });
 
+  describe("options", () => {
+    it("applies global system labels", () => {
+      const adapter = intlFhirDataTypeAdapter("en-us", {
+        systemsLabels: { "http://hl7.org/fhir/sid/us-ssn": "SSN (US)" },
+      });
+      expect(
+        adapter.identifier.format({
+          system: "http://hl7.org/fhir/sid/us-ssn",
+          value: "123456789",
+        })
+      ).toEqual("SSN (US): 123456789");
+    });
+  });
+
   describe("message", () => {
     const adapter = intlFhirDataTypeAdapter("en-us");
 
