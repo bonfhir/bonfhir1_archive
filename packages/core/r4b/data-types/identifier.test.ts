@@ -66,6 +66,11 @@ describe("fhirIdentifierTypeAdapter", () => {
         short: "NAS: 123:456:789",
         value: "123:456:789",
       }).map(([style, expected]) => [identifier, { style }, expected]),
+      [
+        { system: "http://hl7.org/fhir/sid/us-ssn", value: "123456789" },
+        undefined,
+        "SSN: 123456789",
+      ],
     ])("parse %p with %p", (value, options, expected) => {
       expect(adapter.format(value, options)).toEqual(expected);
     });

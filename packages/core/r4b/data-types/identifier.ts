@@ -13,10 +13,11 @@ import { fhirPeriodTypeAdapter } from "./period";
 
 export type FhirIdentifierFormatOptions = {
   style?: "full" | "long" | "medium" | "short" | "value" | null | undefined;
+
   /**
    * A dictionary of system as key, and system labels as value
    */
-  systemsLabels?: { [k: string]: string };
+  systemsLabels?: Record<string, string> | null | undefined;
 
   /**
    * When using a list of identifiers:
@@ -69,7 +70,8 @@ export interface FhirIdentifierTypeAdapter {
  * @param locale - see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl#locales_argument
  */
 export function fhirIdentifierTypeAdapter(
-  locale?: string | undefined
+  locale?: string | undefined,
+  systemsLabels?: FhirIdentifierFormatOptions["systemsLabels"]
 ): FhirIdentifierTypeAdapter {
   // JIT locale check
   Intl.NumberFormat(locale);
@@ -106,8 +108,12 @@ export function fhirIdentifierTypeAdapter(
       const period = fhirPeriodTypeAdapter(locale).format(
         fhirIdentifier.period
       );
+
+      const finalSystemsLabels =
+        options?.systemsLabels ?? systemsLabels ?? DEFAULT_SYSTEMS_LABELS;
+
       const system =
-        options?.systemsLabels?.[fhirIdentifier.system || "undefined"] ||
+        finalSystemsLabels?.[fhirIdentifier.system || "undefined"] ||
         fhirIdentifier.system;
 
       switch (options?.style) {
@@ -140,7 +146,8 @@ const filterAndSortIdentifiers = (
   identifiers: Identifier[],
   options: FhirIdentifierFormatOptions | null | undefined
 ): Identifier[] => {
-  const useFilterOrder = options?.useFilterOrder || identifierUseOrder;
+  const useFilterOrder =
+    options?.useFilterOrder || DEFAULT_IDENTIFIER_USE_ORDER;
   const useIndexedOrder: { [k: string]: number } = useFilterOrder.reduce(
     (indexedValues, currentValue, index) => ({
       ...indexedValues,
@@ -200,7 +207,10 @@ const filterAndSortIdentifiers = (
   return identifiers;
 };
 
-const identifierUseOrder = [
+/**
+ * The default order use to sort identifiers.
+ */
+export const DEFAULT_IDENTIFIER_USE_ORDER = [
   "usual",
   "official",
   "temp",
@@ -208,3 +218,18 @@ const identifierUseOrder = [
   "old",
   undefined,
 ];
+
+/**
+ * Default values for `systemsLabels`.
+ */
+export const DEFAULT_SYSTEMS_LABELS: Required<
+  FhirIdentifierFormatOptions["systemsLabels"]
+> = {
+  "urn:ietf:rfc:3986": "URI",
+  "urn:dicom:uid": "DICOM",
+  "http://hl7.org/fhir/sid/us-ssn": "SSN",
+  "http://hl7.org/fhir/sid/us-medicare": "Medicare Number",
+  "http://hl7.org/fhir/sid/us-mbi": "MBI",
+  "http://hl7.org/fhir/sid/us-npi": "NPI",
+  "https://www.gs1.org/gtin": "GTIN",
+};

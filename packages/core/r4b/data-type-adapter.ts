@@ -47,6 +47,7 @@ import {
   fhirHumanNameTypeAdapter,
 } from "./data-types/humanName";
 import {
+  FhirIdentifierFormatOptions,
   FhirIdentifierTypeAdapter,
   fhirIdentifierTypeAdapter,
 } from "./data-types/identifier";
@@ -203,13 +204,23 @@ export type FhirDataTypeAdapterMessageExpression =
   | null
   | undefined;
 
+export interface IntlFhirDataTypeAdapterOptions {
+  /**
+   * The default labels to use for `identifier.system`.
+   *
+   * @see DEFAULT_SYSTEMS_LABELS for default values if this is not set.
+   */
+  systemsLabels?: FhirIdentifierFormatOptions["systemsLabels"];
+}
+
 /**
  * Return a {@link FhirDataTypeAdapter} that uses the [`Intl` API](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl)
  * (ECMAScript Internationalization API)
  * @param locale - see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl#locales_argument
  */
 export function intlFhirDataTypeAdapter(
-  locale?: string | undefined
+  locale?: string | undefined,
+  options?: IntlFhirDataTypeAdapterOptions | null | undefined
 ): FhirDataTypeAdapter {
   // JIT locale check
   Intl.DateTimeFormat(locale);
@@ -225,7 +236,7 @@ export function intlFhirDataTypeAdapter(
     dateTime: fhirDateTimeTypeAdapter(locale),
     decimal: fhirDecimalTypeAdapter(locale),
     id: fhirIdTypeAdapter(locale),
-    identifier: fhirIdentifierTypeAdapter(locale),
+    identifier: fhirIdentifierTypeAdapter(locale, options?.systemsLabels),
     instant: fhirInstantTypeAdapter(locale),
     integer: fhirIntegerTypeAdapter(locale),
     markdown: fhirMarkdownTypeAdapter(locale),
