@@ -455,7 +455,44 @@ result === {
 };
 ```
 
-## Timeline builder
+## Other utilities
+
+### Miscellaneous builders and utilities
+
+- `buildCodeableConcept` builds a [`CodeableConcept`](https://hl7.org/fhir/datatypes.html#CodeableConcept) by copying the first [`Coding`](https://hl7.org/fhir/datatypes.html#Coding) `display` as its `text`
+- `buildReferenceFromResource` builds a [`Reference`](https://hl7.org/fhir/references.html#Reference) to an existing Resource
+- `getIdFromReference` extract the id portion of a literal reference
+- `isDomainResource` is a type guard that test if a [`Resource`](https://hl7.org/fhir/resource.html) is a [`DomainResource`](https://hl7.org/fhir/domainresource.html)
+- `isFhirResource` is a type guard that test if an object is a FHIR Resource
+
+```typescript
+import { buildCodeableConcept, buildReferenceFromResource, getIdFromReference } from "@bonfhir/core/r4b";
+
+const codeableConcept = buildCodeableConcept({ coding: [...] });
+
+const patient: Patient = { id: "123456", ...};
+const reference = buildReferenceFromResource(patient);
+// { reference: "Patient/123456", type: "Patient" }
+const versionSpecificReference = buildReferenceFromResource(patient, "version-specific");
+// { reference: "Patient/123456/_history/654321", type: "Patient" }
+
+const referenceId = getIdFromReference(reference);
+// "123456"
+```
+
+### Miscellaneous standard lib utilities
+
+Random utilities functions that may be useful to other apps or Bonfhir packages as well.
+Oftentimes, these are available in other libraries (e.g. lodash...).
+They are documented here for reference.
+
+- `cloneDeep` builds a deep clone of an object
+- `isEqual` compares two values and determine if they are equal by performing a deep comparison (all properties equals)
+- `uniqBy` filter values by removing duplicates entries using a specific value
+- `toMap` iterates over an array and build a `Map` given a `key` function
+- `asArray` returns the given `value` as is if it satisfies `Array.isArray` or otherwise wraps the given `value` in an array.
+
+### Timeline builder
 
 The `buildTimelineOfResourcesWithPeriods` can compute blocks of time where resources can be placed, assuming you can project them into a `Period`.
 
