@@ -1,6 +1,6 @@
 import { Bundle, BundleEntry, FhirResource, Reference } from "fhir/r4";
 import { buildReferenceFromResource } from "./builders";
-import { asArray } from "./types";
+import { asArray } from "./utils";
 
 /**
  * Allows easy navigation inside a mixed bundle, principally returned by search operations.
