@@ -50,3 +50,14 @@ export function uniqBy<T>(
     (x, i, self) => i === self.findIndex((y) => iteratee(x) === iteratee(y))
   );
 }
+
+/**
+ * Returns the given `value` as is if it satisfies `Array.isArray` or otherwise
+ * wraps the given `value` in an array.
+ */
+export function asArray<T>(
+  value: T
+): T extends ReadonlyArray<unknown> ? T : [T] {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  return Array.isArray(value) ? (value as any) : [value];
+}
