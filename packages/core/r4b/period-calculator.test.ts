@@ -3,8 +3,8 @@ import { addDays } from "date-fns";
 import { MedicationDispense, Period } from "fhir/r4";
 import { build } from "./builders";
 import {
-  buildTimelineOfResourcesWithPeriods,
   Timeline,
+  buildTimelineOfResourcesWithPeriods,
 } from "./period-calculator";
 import { WithRequired } from "./types";
 
