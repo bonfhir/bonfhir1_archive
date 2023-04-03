@@ -116,6 +116,7 @@
             "url": "./fhir/r4b/definitions/fhir.schema.json"
           }
         ],
+        "nxConsole.enableTelemetry": false,
         "terminal.integrated.defaultProfile.linux": "zsh"
       }
     }
