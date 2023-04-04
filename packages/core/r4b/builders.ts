@@ -2,9 +2,9 @@ import { CodeableConcept, Reference } from "fhir/r4";
 import { narrative } from "./narratives";
 import {
   ExtractResource,
-  isDomainResource,
   ResourceType,
   WithRequired,
+  isDomainResource,
 } from "./types";
 
 /**

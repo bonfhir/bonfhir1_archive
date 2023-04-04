@@ -2,12 +2,12 @@
 import { buildCodeableConcept } from "@bonfhir/core/r4b";
 import { fake } from "@bonfhir/test-support/r4b";
 import { ConceptMap, Patient } from "fhir/r4";
+import icd10CodesConceptmap from "./__fixtures__/icd10-codes-conceptmap.fhir.json";
 import {
   CharlsonComorbidityIndexResultError,
   CharlsonComorbidityIndexResultSuccess,
   computeCharlsonComorbidityIndex,
 } from "./calculator";
-import icd10CodesConceptmap from "./__fixtures__/icd10-codes-conceptmap.fhir.json";
 
 describe("charlson-comorbidity-calculator", () => {
   it("validate missing patient", () => {

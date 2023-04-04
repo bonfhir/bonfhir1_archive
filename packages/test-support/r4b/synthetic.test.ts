@@ -27,4 +27,17 @@ describe("synthetic", () => {
     });
     expect(result2.valueQuantity?.value).toBeGreaterThan(10);
   });
+
+  it("throws an error when no synthetic resources are found matching the requested resourceType", async () => {
+    // We request synthetic of a resource type we know probably doesn't exist
+    // (we made it up) to more-or-less guarantee the function finds no matches,
+    // triggering the error.
+    const requestingAbsentResourceType = () =>
+      // @ts-expect-error as we're deliberately requesting an non-existant resource
+      synthetic("SomeExampleCustomResourceType");
+
+    expect(requestingAbsentResourceType).rejects.toThrowError(
+      /unable to find/i
+    );
+  });
 });

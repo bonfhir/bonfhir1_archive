@@ -1,6 +1,6 @@
 import { Bundle, CapabilityStatement, FhirResource, Identifier } from "fhir/r4";
 import { BundleNavigator, bundleNavigator } from "./bundle-navigator";
-import { merge, MergeResult } from "./merge";
+import { MergeResult, merge } from "./merge";
 import { ExtractPatchBuilder, resourcePatch } from "./resource-patch";
 import { ExtractSearchBuilder, resourceSearch } from "./resource-search";
 import { fhirSearch } from "./search-builder";

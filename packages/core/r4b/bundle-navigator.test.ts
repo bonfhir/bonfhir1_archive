@@ -1,8 +1,8 @@
 /* eslint-disable @typescript-eslint/no-non-null-assertion */
 import { Bundle, Organization, Patient, Provenance } from "fhir/r4";
+import * as patientsListFixture from "./__fixtures__/bundle-navigator.list-patients.test.fhir.json";
 import { buildReferenceFromResource } from "./builders";
 import { bundleNavigator } from "./bundle-navigator";
-import * as patientsListFixture from "./__fixtures__/bundle-navigator.list-patients.test.fhir.json";
 
 describe("BundleNavigator", () => {
   const emptyBundle: Bundle = {
