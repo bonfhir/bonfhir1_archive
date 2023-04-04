@@ -59,6 +59,20 @@ describe("fhirTimeTypeAdapter", () => {
         /Value does not match the fhir time format.*/
       );
     });
+
+    it("returns `undefined` when parsing unless the given value is a non-whitespace-only string", () => {
+      expect(adapter.parse(null)).toBeUndefined();
+      expect(adapter.parse(undefined)).toBeUndefined();
+      expect(adapter.parse("")).toBeUndefined();
+      expect(adapter.parse("\t\n ")).toBeUndefined();
+    });
+
+    it("returns an empty string when formatting unless the given value is a non-whitespace-only string", () => {
+      expect(adapter.format(null)).toStrictEqual("");
+      expect(adapter.format(undefined)).toStrictEqual("");
+      expect(adapter.format("")).toStrictEqual("");
+      expect(adapter.format("\t\n ")).toStrictEqual("");
+    });
   });
 
   describe("with an unknown locale", () => {
