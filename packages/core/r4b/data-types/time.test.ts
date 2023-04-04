@@ -10,7 +10,9 @@ describe("fhirTimeTypeAdapter", () => {
       });
 
       describe("parse", () => {
-        expect(adapter.parse("18:30:25")).toEqual("18:30:25");
+        it("correctly parses hours, minutes and seconds separated by colons", () => {
+          expect(adapter.parse("18:30:25")).toEqual("18:30:25");
+        });
       });
 
       describe("format", () => {
