@@ -10,7 +10,9 @@ describe("fhirTimeTypeAdapter", () => {
       });
 
       describe("parse", () => {
-        expect(adapter.parse("18:30:25")).toEqual("18:30:25");
+        it("correctly parses hours, minutes and seconds separated by colons", () => {
+          expect(adapter.parse("18:30:25")).toEqual("18:30:25");
+        });
       });
 
       describe("format", () => {
@@ -56,6 +58,20 @@ describe("fhirTimeTypeAdapter", () => {
       expect(() => adapter.format(value)).toThrowError(
         /Value does not match the fhir time format.*/
       );
+    });
+
+    it("returns `undefined` when parsing unless the given value is a non-whitespace-only string", () => {
+      expect(adapter.parse(null)).toBeUndefined();
+      expect(adapter.parse(undefined)).toBeUndefined();
+      expect(adapter.parse("")).toBeUndefined();
+      expect(adapter.parse("\t\n ")).toBeUndefined();
+    });
+
+    it("returns an empty string when formatting unless the given value is a non-whitespace-only string", () => {
+      expect(adapter.format(null)).toStrictEqual("");
+      expect(adapter.format(undefined)).toStrictEqual("");
+      expect(adapter.format("")).toStrictEqual("");
+      expect(adapter.format("\t\n ")).toStrictEqual("");
     });
   });
 
