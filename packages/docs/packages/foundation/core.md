@@ -89,7 +89,7 @@ This is a very common occurrence in data integration scenarios / syncing tasks.
 The `core` package provide a utility to help with those operations:
 
 ```typescript
-import { build, createOr, resourceSearch } from "@bonfhir/core/r4b";
+import { build, createOr } from "@bonfhir/core/r4b";
 import { KnownIdentifierSystems } from "@bonfhir/terminology/r4b";
 
 
@@ -131,7 +131,7 @@ The `searchAllPages` utility can be used to retrieve _all_ pages for a given sea
 > Be careful as this may be a very long / very expensive operation.
 
 ```typescript
-import { searchAllPages, resourceSearch, linkUrl } from "@bonfhir/core/r4b";
+import { searchAllPages, linkUrl } from "@bonfhir/core/r4b";
 
 const allActivePatients = await searchAllPages(client, "Patient", (search) =>
   search.active("true")
@@ -294,9 +294,8 @@ import {
   fhirSearch,
 } from "@bonfhir/core/r4b";
 
-const bundle = await client.search(
-  "Patient",
-  resourceSearch("Patient")
+const bundle = await client.search("Patient", (search) =>
+  search
     ._include("Patient", "managingOrganization")
     ._revinclude("Provenance", "target")
     ._include("Provenance", "agent", { iterate: true })
