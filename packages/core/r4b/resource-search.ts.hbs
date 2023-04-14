@@ -150,7 +150,7 @@ export type SortOrder{{type}} =
         | "{{code}}" | "-{{code}}"
       {{/startsWith}}
     {{/if}}
-  {{/each}};
+  {{/each}} | "_lastUpdated" | "-_lastUpdated";
 {{/if}}
 
 {{/each}}
