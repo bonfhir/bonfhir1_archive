@@ -21,7 +21,7 @@
     "@bonfhir/prettier-config": "^1.0.1-alpha.0",
     "@bonfhir/test-support": "^1.0.0-alpha.15",
     "@bonfhir/typescript-config": "^1.0.1-alpha.1",
-    "@medplum/core": "^2.0.7",
+    "@medplum/core": "2.0.14",
     "@types/fhir": "^0.0.35",
     "@types/node": "^18.15.3",
     "esbuild": "^0.17.12",

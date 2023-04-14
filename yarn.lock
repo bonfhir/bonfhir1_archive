@@ -1978,7 +1978,7 @@ __metadata:
     "@bonfhir/prettier-config": ^1.0.1-alpha.0
     "@bonfhir/test-support": ^1.0.0-alpha.15
     "@bonfhir/typescript-config": ^1.0.1-alpha.1
-    "@medplum/core": ^2.0.7
+    "@medplum/core": 2.0.14
     "@types/fhir": ^0.0.35
     "@types/node": ^18.15.3
     esbuild: ^0.17.12
@@ -2003,7 +2003,7 @@ __metadata:
     "@bonfhir/prettier-config": ^1.0.1-alpha.0
     "@bonfhir/terminology": ^1.0.0-alpha.5
     "@bonfhir/typescript-config": ^1.0.1-alpha.1
-    "@medplum/core": ^2.0.7
+    "@medplum/core": 2.0.14
     "@types/fhir": ^0.0.35
     "@types/node": ^18.15.3
     csv-parse: ^5.3.6
@@ -2117,7 +2117,7 @@ __metadata:
     "@bonfhir/terminology": ^1.0.0-alpha.3
     "@bonfhir/typescript-config": ^1.0.1-alpha.0
     "@bonfhir/ui-components": ^0.1.0-alpha.1
-    "@medplum/core": ^2.0.7
+    "@medplum/core": 2.0.14
     "@tanstack/react-query": ^4.24.4
     "@tanstack/react-query-devtools": ^4.24.4
     "@testing-library/react": ^13.4.0
@@ -2168,7 +2168,7 @@ __metadata:
     "@bonfhir/medplum": ^1.0.0-alpha.15
     "@bonfhir/prettier-config": ^1.0.1-alpha.0
     "@bonfhir/typescript-config": ^1.0.1-alpha.1
-    "@medplum/core": ^2.0.7
+    "@medplum/core": 2.0.14
     "@tanstack/react-query": ^4.24.4
     "@testing-library/react": ^13.4.0
     "@types/fhir": ^0.0.35
@@ -2203,7 +2203,7 @@ __metadata:
     "@bonfhir/eslint-config": ^1.1.0-alpha.1
     "@bonfhir/prettier-config": ^1.0.1-alpha.0
     "@bonfhir/typescript-config": ^1.0.1-alpha.1
-    "@medplum/core": ^2.0.7
+    "@medplum/core": 2.0.14
     "@types/node": ^18.15.3
     esbuild: ^0.17.12
     esbuild-jest: ^0.5.0
@@ -2229,7 +2229,7 @@ __metadata:
     "@bonfhir/prettier-config": ^1.0.1-alpha.0
     "@bonfhir/terminology": ^1.0.0-alpha.5
     "@bonfhir/typescript-config": ^1.0.1-alpha.1
-    "@medplum/core": ^2.0.7
+    "@medplum/core": 2.0.14
     "@types/fhir": ^0.0.35
     "@types/node": ^18.15.3
     esbuild: ^0.17.12
@@ -2278,7 +2278,7 @@ __metadata:
     "@bonfhir/subscriptions-koa": ^0.1.0-alpha.1
     "@bonfhir/typescript-config": ^1.0.1-alpha.0
     "@koa/router": ^12.0.0
-    "@medplum/core": ^2.0.7
+    "@medplum/core": 2.0.14
     "@swc/core": ^1.3.41
     "@swc/jest": ^0.2.24
     "@types/fhir": ^0.0.35
@@ -2412,7 +2412,7 @@ __metadata:
     "@bonfhir/prettier-config": ^1.0.1-alpha.0
     "@bonfhir/typescript-config": ^1.0.1-alpha.1
     "@ladle/react": ^2.10.1
-    "@medplum/core": ^2.0.7
+    "@medplum/core": 2.0.14
     "@swc/core": ^1.3.41
     "@swc/jest": ^0.2.24
     "@tanstack/react-query": ^4.24.4
@@ -4555,15 +4555,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@medplum/core@npm:^2.0.7":
-  version: 2.0.7
-  resolution: "@medplum/core@npm:2.0.7"
+"@medplum/core@npm:2.0.14":
+  version: 2.0.14
+  resolution: "@medplum/core@npm:2.0.14"
   peerDependencies:
     pdfmake: ^0.2.5
   peerDependenciesMeta:
     pdfmake:
       optional: true
-  checksum: d01e6fc19e2a3b7dcaf69f5bdd3fc90070a2ea1e7e19a57785f4daca06b599b33ea571ad317b09e1a3607b3d2b605675d1ae8f2ebaac26d117e5b4992109c9ff
+  checksum: 2084a8edc100d3afa9d4263969388b83ad84136e31c63b0678048688775736fc8b8429a903c03d91793cfadbc2fc8d56934d0f6f00b971a2adb5e6082e96774d
   languageName: node
   linkType: hard
 

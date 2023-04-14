@@ -19,7 +19,7 @@ services:
       - devcontainer_command_history:/command_history
 
   medplum:
-    image: ghcr.io/bonfhir/medplum-devbox:v2.0.4
+    image: ghcr.io/bonfhir/medplum-devbox:v2.0.14
     depends_on:
       - postgres
       - redis

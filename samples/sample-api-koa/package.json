@@ -38,7 +38,7 @@
     "@bonfhir/subscriptions": "^0.1.0-alpha.2",
     "@bonfhir/subscriptions-koa": "^0.1.0-alpha.1",
     "@koa/router": "^12.0.0",
-    "@medplum/core": "^2.0.7",
+    "@medplum/core": "2.0.14",
     "koa": "^2.14.1",
     "koa-bodyparser": "^4.4.0"
   },
