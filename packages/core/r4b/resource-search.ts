@@ -6,12 +6,12 @@
  */
 
 import {
-  fhirSearch,
   FhirSearchBuilder,
   Prefix,
   StringModifier,
   TokenModifier,
   UriModifier,
+  fhirSearch,
 } from "./search-builder";
 import type { ExtractResource, ResourceType } from "./types";
 
@@ -667,7 +667,9 @@ export type SortOrderAccount =
   | "subject"
   | "-subject"
   | "type"
-  | "-type";
+  | "-type"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderActivityDefinition extends BaseResourceSearchBuilder<ResourceSearchBuilderActivityDefinition> {
   readonly resourceType = "ActivityDefinition";
@@ -1097,7 +1099,9 @@ export type SortOrderActivityDefinition =
   | "url"
   | "-url"
   | "version"
-  | "-version";
+  | "-version"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderAdministrableProductDefinition extends BaseResourceSearchBuilder<ResourceSearchBuilderAdministrableProductDefinition> {
   readonly resourceType = "AdministrableProductDefinition";
@@ -1371,7 +1375,9 @@ export type SortOrderAdministrableProductDefinition =
   | "route"
   | "-route"
   | "target-species"
-  | "-target-species";
+  | "-target-species"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderAdverseEvent extends BaseResourceSearchBuilder<ResourceSearchBuilderAdverseEvent> {
   readonly resourceType = "AdverseEvent";
@@ -1697,7 +1703,9 @@ export type SortOrderAdverseEvent =
   | "subject"
   | "-subject"
   | "substance"
-  | "-substance";
+  | "-substance"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderAllergyIntolerance extends BaseResourceSearchBuilder<ResourceSearchBuilderAllergyIntolerance> {
   readonly resourceType = "AllergyIntolerance";
@@ -2184,7 +2192,9 @@ export type SortOrderAllergyIntolerance =
   | "type"
   | "-type"
   | "verification-status"
-  | "-verification-status";
+  | "-verification-status"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderAppointment extends BaseResourceSearchBuilder<ResourceSearchBuilderAppointment> {
   readonly resourceType = "Appointment";
@@ -2571,7 +2581,9 @@ export type SortOrderAppointment =
   | "status"
   | "-status"
   | "supporting-info"
-  | "-supporting-info";
+  | "-supporting-info"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderAppointmentResponse extends BaseResourceSearchBuilder<ResourceSearchBuilderAppointmentResponse> {
   readonly resourceType = "AppointmentResponse";
@@ -2832,7 +2844,9 @@ export type SortOrderAppointmentResponse =
   | "patient"
   | "-patient"
   | "practitioner"
-  | "-practitioner";
+  | "-practitioner"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderAuditEvent extends BaseResourceSearchBuilder<ResourceSearchBuilderAuditEvent> {
   readonly resourceType = "AuditEvent";
@@ -3232,7 +3246,9 @@ export type SortOrderAuditEvent =
   | "subtype"
   | "-subtype"
   | "type"
-  | "-type";
+  | "-type"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderBasic extends BaseResourceSearchBuilder<ResourceSearchBuilderBasic> {
   readonly resourceType = "Basic";
@@ -3476,7 +3492,9 @@ export type SortOrderBasic =
   | "patient"
   | "-patient"
   | "subject"
-  | "-subject";
+  | "-subject"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderBiologicallyDerivedProduct extends BaseResourceSearchBuilder<ResourceSearchBuilderBiologicallyDerivedProduct> {
   readonly resourceType = "BiologicallyDerivedProduct";
@@ -3845,7 +3863,9 @@ export type SortOrderBodyStructure =
   | "morphology"
   | "-morphology"
   | "patient"
-  | "-patient";
+  | "-patient"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderCapabilityStatement extends BaseResourceSearchBuilder<ResourceSearchBuilderCapabilityStatement> {
   readonly resourceType = "CapabilityStatement";
@@ -4473,7 +4493,9 @@ export type SortOrderCapabilityStatement =
   | "url"
   | "-url"
   | "version"
-  | "-version";
+  | "-version"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderCarePlan extends BaseResourceSearchBuilder<ResourceSearchBuilderCarePlan> {
   readonly resourceType = "CarePlan";
@@ -4984,7 +5006,9 @@ export type SortOrderCarePlan =
   | "status"
   | "-status"
   | "subject"
-  | "-subject";
+  | "-subject"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderCareTeam extends BaseResourceSearchBuilder<ResourceSearchBuilderCareTeam> {
   readonly resourceType = "CareTeam";
@@ -5339,7 +5363,9 @@ export type SortOrderCareTeam =
   | "status"
   | "-status"
   | "subject"
-  | "-subject";
+  | "-subject"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderCatalogEntry extends BaseResourceSearchBuilder<ResourceSearchBuilderCatalogEntry> {
   readonly resourceType = "CatalogEntry";
@@ -5873,7 +5899,9 @@ export type SortOrderChargeItem =
   | "service"
   | "-service"
   | "subject"
-  | "-subject";
+  | "-subject"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderChargeItemDefinition extends BaseResourceSearchBuilder<ResourceSearchBuilderChargeItemDefinition> {
   readonly resourceType = "ChargeItemDefinition";
@@ -6212,7 +6240,9 @@ export type SortOrderChargeItemDefinition =
   | "url"
   | "-url"
   | "version"
-  | "-version";
+  | "-version"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderCitation extends BaseResourceSearchBuilder<ResourceSearchBuilderCitation> {
   readonly resourceType = "Citation";
@@ -6560,7 +6590,9 @@ export type SortOrderCitation =
   | "url"
   | "-url"
   | "version"
-  | "-version";
+  | "-version"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderClaim extends BaseResourceSearchBuilder<ResourceSearchBuilderClaim> {
   readonly resourceType = "Claim";
@@ -6947,7 +6979,9 @@ export type SortOrderClaim =
   | "subdetail-udi"
   | "-subdetail-udi"
   | "use"
-  | "-use";
+  | "-use"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderClaimResponse extends BaseResourceSearchBuilder<ResourceSearchBuilderClaimResponse> {
   readonly resourceType = "ClaimResponse";
@@ -7260,7 +7294,9 @@ export type SortOrderClaimResponse =
   | "status"
   | "-status"
   | "use"
-  | "-use";
+  | "-use"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderClinicalImpression extends BaseResourceSearchBuilder<ResourceSearchBuilderClinicalImpression> {
   readonly resourceType = "ClinicalImpression";
@@ -7652,7 +7688,9 @@ export type SortOrderClinicalImpression =
   | "subject"
   | "-subject"
   | "supporting-info"
-  | "-supporting-info";
+  | "-supporting-info"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderClinicalUseDefinition extends BaseResourceSearchBuilder<ResourceSearchBuilderClinicalUseDefinition> {
   readonly resourceType = "ClinicalUseDefinition";
@@ -7965,7 +8003,9 @@ export type SortOrderClinicalUseDefinition =
   | "subject"
   | "-subject"
   | "type"
-  | "-type";
+  | "-type"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderCodeSystem extends BaseResourceSearchBuilder<ResourceSearchBuilderCodeSystem> {
   readonly resourceType = "CodeSystem";
@@ -8558,7 +8598,9 @@ export type SortOrderCodeSystem =
   | "supplements"
   | "-supplements"
   | "system"
-  | "-system";
+  | "-system"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderCommunication extends BaseResourceSearchBuilder<ResourceSearchBuilderCommunication> {
   readonly resourceType = "Communication";
@@ -8923,7 +8965,9 @@ export type SortOrderCommunication =
   | "status"
   | "-status"
   | "subject"
-  | "-subject";
+  | "-subject"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderCommunicationRequest extends BaseResourceSearchBuilder<ResourceSearchBuilderCommunicationRequest> {
   readonly resourceType = "CommunicationRequest";
@@ -9301,7 +9345,9 @@ export type SortOrderCommunicationRequest =
   | "status"
   | "-status"
   | "subject"
-  | "-subject";
+  | "-subject"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderCompartmentDefinition extends BaseResourceSearchBuilder<ResourceSearchBuilderCompartmentDefinition> {
   readonly resourceType = "CompartmentDefinition";
@@ -9785,7 +9831,9 @@ export type SortOrderCompartmentDefinition =
   | "code"
   | "-code"
   | "resource"
-  | "-resource";
+  | "-resource"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderComposition extends BaseResourceSearchBuilder<ResourceSearchBuilderComposition> {
   readonly resourceType = "Composition";
@@ -10292,7 +10340,9 @@ export type SortOrderComposition =
   | "subject"
   | "-subject"
   | "title"
-  | "-title";
+  | "-title"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderConceptMap extends BaseResourceSearchBuilder<ResourceSearchBuilderConceptMap> {
   readonly resourceType = "ConceptMap";
@@ -10963,7 +11013,9 @@ export type SortOrderConceptMap =
   | "target-system"
   | "-target-system"
   | "target-uri"
-  | "-target-uri";
+  | "-target-uri"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderCondition extends BaseResourceSearchBuilder<ResourceSearchBuilderCondition> {
   readonly resourceType = "Condition";
@@ -11484,7 +11536,9 @@ export type SortOrderCondition =
   | "subject"
   | "-subject"
   | "verification-status"
-  | "-verification-status";
+  | "-verification-status"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderConsent extends BaseResourceSearchBuilder<ResourceSearchBuilderConsent> {
   readonly resourceType = "Consent";
@@ -11930,7 +11984,9 @@ export type SortOrderConsent =
   | "source-reference"
   | "-source-reference"
   | "status"
-  | "-status";
+  | "-status"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderContract extends BaseResourceSearchBuilder<ResourceSearchBuilderContract> {
   readonly resourceType = "Contract";
@@ -12226,7 +12282,9 @@ export type SortOrderContract =
   | "subject"
   | "-subject"
   | "url"
-  | "-url";
+  | "-url"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderCoverage extends BaseResourceSearchBuilder<ResourceSearchBuilderCoverage> {
   readonly resourceType = "Coverage";
@@ -12535,7 +12593,9 @@ export type SortOrderCoverage =
   | "subscriber"
   | "-subscriber"
   | "type"
-  | "-type";
+  | "-type"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderCoverageEligibilityRequest extends BaseResourceSearchBuilder<ResourceSearchBuilderCoverageEligibilityRequest> {
   readonly resourceType = "CoverageEligibilityRequest";
@@ -12796,7 +12856,9 @@ export type SortOrderCoverageEligibilityRequest =
   | "provider"
   | "-provider"
   | "status"
-  | "-status";
+  | "-status"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderCoverageEligibilityResponse extends BaseResourceSearchBuilder<ResourceSearchBuilderCoverageEligibilityResponse> {
   readonly resourceType = "CoverageEligibilityResponse";
@@ -13083,7 +13145,9 @@ export type SortOrderCoverageEligibilityResponse =
   | "requestor"
   | "-requestor"
   | "status"
-  | "-status";
+  | "-status"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderDetectedIssue extends BaseResourceSearchBuilder<ResourceSearchBuilderDetectedIssue> {
   readonly resourceType = "DetectedIssue";
@@ -13397,7 +13461,9 @@ export type SortOrderDetectedIssue =
   | "identified"
   | "-identified"
   | "implicated"
-  | "-implicated";
+  | "-implicated"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderDevice extends BaseResourceSearchBuilder<ResourceSearchBuilderDevice> {
   readonly resourceType = "Device";
@@ -13719,7 +13785,9 @@ export type SortOrderDevice =
   | "udi-di"
   | "-udi-di"
   | "url"
-  | "-url";
+  | "-url"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderDeviceDefinition extends BaseResourceSearchBuilder<ResourceSearchBuilderDeviceDefinition> {
   readonly resourceType = "DeviceDefinition";
@@ -13928,7 +13996,9 @@ export type SortOrderDeviceDefinition =
   | "parent"
   | "-parent"
   | "type"
-  | "-type";
+  | "-type"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderDeviceMetric extends BaseResourceSearchBuilder<ResourceSearchBuilderDeviceMetric> {
   readonly resourceType = "DeviceMetric";
@@ -14163,7 +14233,9 @@ export type SortOrderDeviceMetric =
   | "source"
   | "-source"
   | "type"
-  | "-type";
+  | "-type"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderDeviceRequest extends BaseResourceSearchBuilder<ResourceSearchBuilderDeviceRequest> {
   readonly resourceType = "DeviceRequest";
@@ -14663,7 +14735,9 @@ export type SortOrderDeviceRequest =
   | "status"
   | "-status"
   | "subject"
-  | "-subject";
+  | "-subject"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderDeviceUseStatement extends BaseResourceSearchBuilder<ResourceSearchBuilderDeviceUseStatement> {
   readonly resourceType = "DeviceUseStatement";
@@ -14919,7 +14993,9 @@ export type SortOrderDeviceUseStatement =
   | "identifier"
   | "-identifier"
   | "subject"
-  | "-subject";
+  | "-subject"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderDiagnosticReport extends BaseResourceSearchBuilder<ResourceSearchBuilderDiagnosticReport> {
   readonly resourceType = "DiagnosticReport";
@@ -15412,7 +15488,9 @@ export type SortOrderDiagnosticReport =
   | "status"
   | "-status"
   | "subject"
-  | "-subject";
+  | "-subject"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderDocumentManifest extends BaseResourceSearchBuilder<ResourceSearchBuilderDocumentManifest> {
   readonly resourceType = "DocumentManifest";
@@ -15825,7 +15903,9 @@ export type SortOrderDocumentManifest =
   | "status"
   | "-status"
   | "subject"
-  | "-subject";
+  | "-subject"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderDocumentReference extends BaseResourceSearchBuilder<ResourceSearchBuilderDocumentReference> {
   readonly resourceType = "DocumentReference";
@@ -16395,7 +16475,9 @@ export type SortOrderDocumentReference =
   | "status"
   | "-status"
   | "subject"
-  | "-subject";
+  | "-subject"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderEncounter extends BaseResourceSearchBuilder<ResourceSearchBuilderEncounter> {
   readonly resourceType = "Encounter";
@@ -16953,7 +17035,9 @@ export type SortOrderEncounter =
   | "status"
   | "-status"
   | "subject"
-  | "-subject";
+  | "-subject"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderEndpoint extends BaseResourceSearchBuilder<ResourceSearchBuilderEndpoint> {
   readonly resourceType = "Endpoint";
@@ -17197,7 +17281,9 @@ export type SortOrderEndpoint =
   | "payload-type"
   | "-payload-type"
   | "status"
-  | "-status";
+  | "-status"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderEnrollmentRequest extends BaseResourceSearchBuilder<ResourceSearchBuilderEnrollmentRequest> {
   readonly resourceType = "EnrollmentRequest";
@@ -17419,7 +17505,9 @@ export type SortOrderEnrollmentRequest =
   | "status"
   | "-status"
   | "subject"
-  | "-subject";
+  | "-subject"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderEnrollmentResponse extends BaseResourceSearchBuilder<ResourceSearchBuilderEnrollmentResponse> {
   readonly resourceType = "EnrollmentResponse";
@@ -17628,7 +17716,9 @@ export type SortOrderEnrollmentResponse =
   | "request"
   | "-request"
   | "status"
-  | "-status";
+  | "-status"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderEpisodeOfCare extends BaseResourceSearchBuilder<ResourceSearchBuilderEpisodeOfCare> {
   readonly resourceType = "EpisodeOfCare";
@@ -18008,7 +18098,9 @@ export type SortOrderEpisodeOfCare =
   | "organization"
   | "-organization"
   | "status"
-  | "-status";
+  | "-status"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderEventDefinition extends BaseResourceSearchBuilder<ResourceSearchBuilderEventDefinition> {
   readonly resourceType = "EventDefinition";
@@ -18438,7 +18530,9 @@ export type SortOrderEventDefinition =
   | "url"
   | "-url"
   | "version"
-  | "-version";
+  | "-version"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderEvidence extends BaseResourceSearchBuilder<ResourceSearchBuilderEvidence> {
   readonly resourceType = "Evidence";
@@ -18747,7 +18841,9 @@ export type SortOrderEvidence =
   | "url"
   | "-url"
   | "version"
-  | "-version";
+  | "-version"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderEvidenceReport extends BaseResourceSearchBuilder<ResourceSearchBuilderEvidenceReport> {
   readonly resourceType = "EvidenceReport";
@@ -19008,7 +19104,9 @@ export type SortOrderEvidenceReport =
   | "status"
   | "-status"
   | "url"
-  | "-url";
+  | "-url"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderEvidenceVariable extends BaseResourceSearchBuilder<ResourceSearchBuilderEvidenceVariable> {
   readonly resourceType = "EvidenceVariable";
@@ -19334,7 +19432,9 @@ export type SortOrderEvidenceVariable =
   | "url"
   | "-url"
   | "version"
-  | "-version";
+  | "-version"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderExampleScenario extends BaseResourceSearchBuilder<ResourceSearchBuilderExampleScenario> {
   readonly resourceType = "ExampleScenario";
@@ -19647,7 +19747,9 @@ export type SortOrderExampleScenario =
   | "url"
   | "-url"
   | "version"
-  | "-version";
+  | "-version"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderExplanationOfBenefit extends BaseResourceSearchBuilder<ResourceSearchBuilderExplanationOfBenefit> {
   readonly resourceType = "ExplanationOfBenefit";
@@ -20038,7 +20140,9 @@ export type SortOrderExplanationOfBenefit =
   | "status"
   | "-status"
   | "subdetail-udi"
-  | "-subdetail-udi";
+  | "-subdetail-udi"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderFamilyMemberHistory extends BaseResourceSearchBuilder<ResourceSearchBuilderFamilyMemberHistory> {
   readonly resourceType = "FamilyMemberHistory";
@@ -20426,7 +20530,9 @@ export type SortOrderFamilyMemberHistory =
   | "sex"
   | "-sex"
   | "status"
-  | "-status";
+  | "-status"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderFlag extends BaseResourceSearchBuilder<ResourceSearchBuilderFlag> {
   readonly resourceType = "Flag";
@@ -20737,7 +20843,9 @@ export type SortOrderFlag =
   | "identifier"
   | "-identifier"
   | "subject"
-  | "-subject";
+  | "-subject"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderGoal extends BaseResourceSearchBuilder<ResourceSearchBuilderGoal> {
   readonly resourceType = "Goal";
@@ -21073,7 +21181,9 @@ export type SortOrderGoal =
   | "subject"
   | "-subject"
   | "target-date"
-  | "-target-date";
+  | "-target-date"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderGraphDefinition extends BaseResourceSearchBuilder<ResourceSearchBuilderGraphDefinition> {
   readonly resourceType = "GraphDefinition";
@@ -21572,7 +21682,9 @@ export type SortOrderGraphDefinition =
   | "version"
   | "-version"
   | "start"
-  | "-start";
+  | "-start"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderGroup extends BaseResourceSearchBuilder<ResourceSearchBuilderGroup> {
   readonly resourceType = "Group";
@@ -21855,7 +21967,9 @@ export type SortOrderGroup =
   | "type"
   | "-type"
   | "value"
-  | "-value";
+  | "-value"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderGuidanceResponse extends BaseResourceSearchBuilder<ResourceSearchBuilderGuidanceResponse> {
   readonly resourceType = "GuidanceResponse";
@@ -22077,7 +22191,9 @@ export type SortOrderGuidanceResponse =
   | "request"
   | "-request"
   | "subject"
-  | "-subject";
+  | "-subject"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderHealthcareService extends BaseResourceSearchBuilder<ResourceSearchBuilderHealthcareService> {
   readonly resourceType = "HealthcareService";
@@ -22403,7 +22519,9 @@ export type SortOrderHealthcareService =
   | "service-type"
   | "-service-type"
   | "specialty"
-  | "-specialty";
+  | "-specialty"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderImagingStudy extends BaseResourceSearchBuilder<ResourceSearchBuilderImagingStudy> {
   readonly resourceType = "ImagingStudy";
@@ -22860,7 +22978,9 @@ export type SortOrderImagingStudy =
   | "status"
   | "-status"
   | "subject"
-  | "-subject";
+  | "-subject"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderImmunization extends BaseResourceSearchBuilder<ResourceSearchBuilderImmunization> {
   readonly resourceType = "Immunization";
@@ -23323,7 +23443,9 @@ export type SortOrderImmunization =
   | "target-disease"
   | "-target-disease"
   | "vaccine-code"
-  | "-vaccine-code";
+  | "-vaccine-code"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderImmunizationEvaluation extends BaseResourceSearchBuilder<ResourceSearchBuilderImmunizationEvaluation> {
   readonly resourceType = "ImmunizationEvaluation";
@@ -23584,7 +23706,9 @@ export type SortOrderImmunizationEvaluation =
   | "status"
   | "-status"
   | "target-disease"
-  | "-target-disease";
+  | "-target-disease"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderImmunizationRecommendation extends BaseResourceSearchBuilder<ResourceSearchBuilderImmunizationRecommendation> {
   readonly resourceType = "ImmunizationRecommendation";
@@ -23858,7 +23982,9 @@ export type SortOrderImmunizationRecommendation =
   | "target-disease"
   | "-target-disease"
   | "vaccine-type"
-  | "-vaccine-type";
+  | "-vaccine-type"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderImplementationGuide extends BaseResourceSearchBuilder<ResourceSearchBuilderImplementationGuide> {
   readonly resourceType = "ImplementationGuide";
@@ -24421,7 +24547,9 @@ export type SortOrderImplementationGuide =
   | "global"
   | "-global"
   | "resource"
-  | "-resource";
+  | "-resource"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderIngredient extends BaseResourceSearchBuilder<ResourceSearchBuilderIngredient> {
   readonly resourceType = "Ingredient";
@@ -24691,7 +24819,9 @@ export type SortOrderIngredient =
   | "substance-code"
   | "-substance-code"
   | "substance-definition"
-  | "-substance-definition";
+  | "-substance-definition"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderInsurancePlan extends BaseResourceSearchBuilder<ResourceSearchBuilderInsurancePlan> {
   readonly resourceType = "InsurancePlan";
@@ -25043,7 +25173,9 @@ export type SortOrderInsurancePlan =
   | "status"
   | "-status"
   | "type"
-  | "-type";
+  | "-type"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderInvoice extends BaseResourceSearchBuilder<ResourceSearchBuilderInvoice> {
   readonly resourceType = "Invoice";
@@ -25378,7 +25510,9 @@ export type SortOrderInvoice =
   | "totalnet"
   | "-totalnet"
   | "type"
-  | "-type";
+  | "-type"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderLibrary extends BaseResourceSearchBuilder<ResourceSearchBuilderLibrary> {
   readonly resourceType = "Library";
@@ -25830,7 +25964,9 @@ export type SortOrderLibrary =
   | "url"
   | "-url"
   | "version"
-  | "-version";
+  | "-version"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderLinkage extends BaseResourceSearchBuilder<ResourceSearchBuilderLinkage> {
   readonly resourceType = "Linkage";
@@ -26035,7 +26171,9 @@ export type SortOrderLinkage =
   | "item"
   | "-item"
   | "source"
-  | "-source";
+  | "-source"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderList extends BaseResourceSearchBuilder<ResourceSearchBuilderList> {
   readonly resourceType = "List";
@@ -26472,7 +26610,9 @@ export type SortOrderList =
   | "subject"
   | "-subject"
   | "title"
-  | "-title";
+  | "-title"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderLocation extends BaseResourceSearchBuilder<ResourceSearchBuilderLocation> {
   readonly resourceType = "Location";
@@ -26820,7 +26960,9 @@ export type SortOrderLocation =
   | "status"
   | "-status"
   | "type"
-  | "-type";
+  | "-type"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderManufacturedItemDefinition extends BaseResourceSearchBuilder<ResourceSearchBuilderManufacturedItemDefinition> {
   readonly resourceType = "ManufacturedItemDefinition";
@@ -27029,7 +27171,9 @@ export type SortOrderManufacturedItemDefinition =
   | "identifier"
   | "-identifier"
   | "ingredient"
-  | "-ingredient";
+  | "-ingredient"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderMeasure extends BaseResourceSearchBuilder<ResourceSearchBuilderMeasure> {
   readonly resourceType = "Measure";
@@ -27455,7 +27599,9 @@ export type SortOrderMeasure =
   | "url"
   | "-url"
   | "version"
-  | "-version";
+  | "-version"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderMeasureReport extends BaseResourceSearchBuilder<ResourceSearchBuilderMeasureReport> {
   readonly resourceType = "MeasureReport";
@@ -27742,7 +27888,9 @@ export type SortOrderMeasureReport =
   | "status"
   | "-status"
   | "subject"
-  | "-subject";
+  | "-subject"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderMedia extends BaseResourceSearchBuilder<ResourceSearchBuilderMedia> {
   readonly resourceType = "Media";
@@ -28077,7 +28225,9 @@ export type SortOrderMedia =
   | "type"
   | "-type"
   | "view"
-  | "-view";
+  | "-view"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderMedication extends BaseResourceSearchBuilder<ResourceSearchBuilderMedication> {
   readonly resourceType = "Medication";
@@ -28376,7 +28526,9 @@ export type SortOrderMedication =
   | "manufacturer"
   | "-manufacturer"
   | "status"
-  | "-status";
+  | "-status"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderMedicationAdministration extends BaseResourceSearchBuilder<ResourceSearchBuilderMedicationAdministration> {
   readonly resourceType = "MedicationAdministration";
@@ -28809,7 +28961,9 @@ export type SortOrderMedicationAdministration =
   | "status"
   | "-status"
   | "subject"
-  | "-subject";
+  | "-subject"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderMedicationDispense extends BaseResourceSearchBuilder<ResourceSearchBuilderMedicationDispense> {
   readonly resourceType = "MedicationDispense";
@@ -29271,7 +29425,9 @@ export type SortOrderMedicationDispense =
   | "whenhandedover"
   | "-whenhandedover"
   | "whenprepared"
-  | "-whenprepared";
+  | "-whenprepared"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderMedicationKnowledge extends BaseResourceSearchBuilder<ResourceSearchBuilderMedicationKnowledge> {
   readonly resourceType = "MedicationKnowledge";
@@ -29610,7 +29766,9 @@ export type SortOrderMedicationKnowledge =
   | "source-cost"
   | "-source-cost"
   | "status"
-  | "-status";
+  | "-status"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderMedicationRequest extends BaseResourceSearchBuilder<ResourceSearchBuilderMedicationRequest> {
   readonly resourceType = "MedicationRequest";
@@ -30088,7 +30246,9 @@ export type SortOrderMedicationRequest =
   | "requester"
   | "-requester"
   | "subject"
-  | "-subject";
+  | "-subject"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderMedicationStatement extends BaseResourceSearchBuilder<ResourceSearchBuilderMedicationStatement> {
   readonly resourceType = "MedicationStatement";
@@ -30495,7 +30655,9 @@ export type SortOrderMedicationStatement =
   | "source"
   | "-source"
   | "subject"
-  | "-subject";
+  | "-subject"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderMedicinalProductDefinition extends BaseResourceSearchBuilder<ResourceSearchBuilderMedicinalProductDefinition> {
   readonly resourceType = "MedicinalProductDefinition";
@@ -30821,7 +30983,9 @@ export type SortOrderMedicinalProductDefinition =
   | "status"
   | "-status"
   | "type"
-  | "-type";
+  | "-type"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderMessageDefinition extends BaseResourceSearchBuilder<ResourceSearchBuilderMessageDefinition> {
   readonly resourceType = "MessageDefinition";
@@ -31405,7 +31569,9 @@ export type SortOrderMessageDefinition =
   | "focus"
   | "-focus"
   | "parent"
-  | "-parent";
+  | "-parent"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderMessageHeader extends BaseResourceSearchBuilder<ResourceSearchBuilderMessageHeader> {
   readonly resourceType = "MessageHeader";
@@ -31757,7 +31923,9 @@ export type SortOrderMessageHeader =
   | "source-uri"
   | "-source-uri"
   | "target"
-  | "-target";
+  | "-target"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderMolecularSequence extends BaseResourceSearchBuilder<ResourceSearchBuilderMolecularSequence> {
   readonly resourceType = "MolecularSequence";
@@ -32044,7 +32212,9 @@ export type SortOrderMolecularSequence =
   | "window-end"
   | "-window-end"
   | "window-start"
-  | "-window-start";
+  | "-window-start"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderNamingSystem extends BaseResourceSearchBuilder<ResourceSearchBuilderNamingSystem> {
   readonly resourceType = "NamingSystem";
@@ -32578,7 +32748,9 @@ export type SortOrderNamingSystem =
   | "type"
   | "-type"
   | "value"
-  | "-value";
+  | "-value"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderNutritionOrder extends BaseResourceSearchBuilder<ResourceSearchBuilderNutritionOrder> {
   readonly resourceType = "NutritionOrder";
@@ -32984,7 +33156,9 @@ export type SortOrderNutritionOrder =
   | "status"
   | "-status"
   | "supplement"
-  | "-supplement";
+  | "-supplement"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderNutritionProduct extends BaseResourceSearchBuilder<ResourceSearchBuilderNutritionProduct> {
   readonly resourceType = "NutritionProduct";
@@ -33180,7 +33354,9 @@ export type SortOrderNutritionProduct =
   | "identifier"
   | "-identifier"
   | "status"
-  | "-status";
+  | "-status"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderObservation extends BaseResourceSearchBuilder<ResourceSearchBuilderObservation> {
   readonly resourceType = "Observation";
@@ -33851,7 +34027,9 @@ export type SortOrderObservation =
   | "value-quantity"
   | "-value-quantity"
   | "value-string"
-  | "-value-string";
+  | "-value-string"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderObservationDefinition extends BaseResourceSearchBuilder<ResourceSearchBuilderObservationDefinition> {
   readonly resourceType = "ObservationDefinition";
@@ -34613,7 +34791,9 @@ export type SortOrderOperationDefinition =
   | "system"
   | "-system"
   | "type"
-  | "-type";
+  | "-type"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderOperationOutcome extends BaseResourceSearchBuilder<ResourceSearchBuilderOperationOutcome> {
   readonly resourceType = "OperationOutcome";
@@ -35099,7 +35279,9 @@ export type SortOrderOrganization =
   | "phonetic"
   | "-phonetic"
   | "type"
-  | "-type";
+  | "-type"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderOrganizationAffiliation extends BaseResourceSearchBuilder<ResourceSearchBuilderOrganizationAffiliation> {
   readonly resourceType = "OrganizationAffiliation";
@@ -35451,7 +35633,9 @@ export type SortOrderOrganizationAffiliation =
   | "specialty"
   | "-specialty"
   | "telecom"
-  | "-telecom";
+  | "-telecom"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderPackagedProductDefinition extends BaseResourceSearchBuilder<ResourceSearchBuilderPackagedProductDefinition> {
   readonly resourceType = "PackagedProductDefinition";
@@ -35764,7 +35948,9 @@ export type SortOrderPackagedProductDefinition =
   | "package-for"
   | "-package-for"
   | "status"
-  | "-status";
+  | "-status"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderPatient extends BaseResourceSearchBuilder<ResourceSearchBuilderPatient> {
   readonly resourceType = "Patient";
@@ -36311,7 +36497,9 @@ export type SortOrderPatient =
   | "phonetic"
   | "-phonetic"
   | "telecom"
-  | "-telecom";
+  | "-telecom"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderPaymentNotice extends BaseResourceSearchBuilder<ResourceSearchBuilderPaymentNotice> {
   readonly resourceType = "PaymentNotice";
@@ -36572,7 +36760,9 @@ export type SortOrderPaymentNotice =
   | "response"
   | "-response"
   | "status"
-  | "-status";
+  | "-status"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderPaymentReconciliation extends BaseResourceSearchBuilder<ResourceSearchBuilderPaymentReconciliation> {
   readonly resourceType = "PaymentReconciliation";
@@ -36846,7 +37036,9 @@ export type SortOrderPaymentReconciliation =
   | "requestor"
   | "-requestor"
   | "status"
-  | "-status";
+  | "-status"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderPerson extends BaseResourceSearchBuilder<ResourceSearchBuilderPerson> {
   readonly resourceType = "Person";
@@ -37333,7 +37525,9 @@ export type SortOrderPerson =
   | "practitioner"
   | "-practitioner"
   | "relatedperson"
-  | "-relatedperson";
+  | "-relatedperson"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderPlanDefinition extends BaseResourceSearchBuilder<ResourceSearchBuilderPlanDefinition> {
   readonly resourceType = "PlanDefinition";
@@ -37789,7 +37983,9 @@ export type SortOrderPlanDefinition =
   | "url"
   | "-url"
   | "version"
-  | "-version";
+  | "-version"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderPractitioner extends BaseResourceSearchBuilder<ResourceSearchBuilderPractitioner> {
   readonly resourceType = "Practitioner";
@@ -38257,7 +38453,9 @@ export type SortOrderPractitioner =
   | "identifier"
   | "-identifier"
   | "name"
-  | "-name";
+  | "-name"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderPractitionerRole extends BaseResourceSearchBuilder<ResourceSearchBuilderPractitionerRole> {
   readonly resourceType = "PractitionerRole";
@@ -38617,7 +38815,9 @@ export type SortOrderPractitionerRole =
   | "service"
   | "-service"
   | "specialty"
-  | "-specialty";
+  | "-specialty"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderProcedure extends BaseResourceSearchBuilder<ResourceSearchBuilderProcedure> {
   readonly resourceType = "Procedure";
@@ -39106,7 +39306,9 @@ export type SortOrderProcedure =
   | "status"
   | "-status"
   | "subject"
-  | "-subject";
+  | "-subject"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderProvenance extends BaseResourceSearchBuilder<ResourceSearchBuilderProvenance> {
   readonly resourceType = "Provenance";
@@ -39402,7 +39604,9 @@ export type SortOrderProvenance =
   | "target"
   | "-target"
   | "when"
-  | "-when";
+  | "-when"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderQuestionnaire extends BaseResourceSearchBuilder<ResourceSearchBuilderQuestionnaire> {
   readonly resourceType = "Questionnaire";
@@ -39793,7 +39997,9 @@ export type SortOrderQuestionnaire =
   | "url"
   | "-url"
   | "version"
-  | "-version";
+  | "-version"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderQuestionnaireResponse extends BaseResourceSearchBuilder<ResourceSearchBuilderQuestionnaireResponse> {
   readonly resourceType = "QuestionnaireResponse";
@@ -40106,7 +40312,9 @@ export type SortOrderQuestionnaireResponse =
   | "status"
   | "-status"
   | "subject"
-  | "-subject";
+  | "-subject"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderRegulatedAuthorization extends BaseResourceSearchBuilder<ResourceSearchBuilderRegulatedAuthorization> {
   readonly resourceType = "RegulatedAuthorization";
@@ -40367,7 +40575,9 @@ export type SortOrderRegulatedAuthorization =
   | "status"
   | "-status"
   | "subject"
-  | "-subject";
+  | "-subject"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderRelatedPerson extends BaseResourceSearchBuilder<ResourceSearchBuilderRelatedPerson> {
   readonly resourceType = "RelatedPerson";
@@ -40832,7 +41042,9 @@ export type SortOrderRelatedPerson =
   | "patient"
   | "-patient"
   | "relationship"
-  | "-relationship";
+  | "-relationship"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderRequestGroup extends BaseResourceSearchBuilder<ResourceSearchBuilderRequestGroup> {
   readonly resourceType = "RequestGroup";
@@ -41184,7 +41396,9 @@ export type SortOrderRequestGroup =
   | "status"
   | "-status"
   | "subject"
-  | "-subject";
+  | "-subject"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderResearchDefinition extends BaseResourceSearchBuilder<ResourceSearchBuilderResearchDefinition> {
   readonly resourceType = "ResearchDefinition";
@@ -41614,7 +41828,9 @@ export type SortOrderResearchDefinition =
   | "url"
   | "-url"
   | "version"
-  | "-version";
+  | "-version"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderResearchElementDefinition extends BaseResourceSearchBuilder<ResourceSearchBuilderResearchElementDefinition> {
   readonly resourceType = "ResearchElementDefinition";
@@ -42044,7 +42260,9 @@ export type SortOrderResearchElementDefinition =
   | "url"
   | "-url"
   | "version"
-  | "-version";
+  | "-version"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderResearchStudy extends BaseResourceSearchBuilder<ResourceSearchBuilderResearchStudy> {
   readonly resourceType = "ResearchStudy";
@@ -42383,7 +42601,9 @@ export type SortOrderResearchStudy =
   | "status"
   | "-status"
   | "title"
-  | "-title";
+  | "-title"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderResearchSubject extends BaseResourceSearchBuilder<ResourceSearchBuilderResearchSubject> {
   readonly resourceType = "ResearchSubject";
@@ -42631,7 +42851,9 @@ export type SortOrderResearchSubject =
   | "status"
   | "-status"
   | "study"
-  | "-study";
+  | "-study"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderRiskAssessment extends BaseResourceSearchBuilder<ResourceSearchBuilderRiskAssessment> {
   readonly resourceType = "RiskAssessment";
@@ -43030,7 +43252,9 @@ export type SortOrderRiskAssessment =
   | "risk"
   | "-risk"
   | "subject"
-  | "-subject";
+  | "-subject"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderSchedule extends BaseResourceSearchBuilder<ResourceSearchBuilderSchedule> {
   readonly resourceType = "Schedule";
@@ -43287,7 +43511,9 @@ export type SortOrderSchedule =
   | "service-type"
   | "-service-type"
   | "specialty"
-  | "-specialty";
+  | "-specialty"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderSearchParameter extends BaseResourceSearchBuilder<ResourceSearchBuilderSearchParameter> {
   readonly resourceType = "SearchParameter";
@@ -43851,7 +44077,9 @@ export type SortOrderSearchParameter =
   | "target"
   | "-target"
   | "type"
-  | "-type";
+  | "-type"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderServiceRequest extends BaseResourceSearchBuilder<ResourceSearchBuilderServiceRequest> {
   readonly resourceType = "ServiceRequest";
@@ -44390,7 +44618,9 @@ export type SortOrderServiceRequest =
   | "status"
   | "-status"
   | "subject"
-  | "-subject";
+  | "-subject"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderSlot extends BaseResourceSearchBuilder<ResourceSearchBuilderSlot> {
   readonly resourceType = "Slot";
@@ -44660,7 +44890,9 @@ export type SortOrderSlot =
   | "start"
   | "-start"
   | "status"
-  | "-status";
+  | "-status"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderSpecimen extends BaseResourceSearchBuilder<ResourceSearchBuilderSpecimen> {
   readonly resourceType = "Specimen";
@@ -44982,7 +45214,9 @@ export type SortOrderSpecimen =
   | "subject"
   | "-subject"
   | "type"
-  | "-type";
+  | "-type"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderSpecimenDefinition extends BaseResourceSearchBuilder<ResourceSearchBuilderSpecimenDefinition> {
   readonly resourceType = "SpecimenDefinition";
@@ -45191,7 +45425,9 @@ export type SortOrderSpecimenDefinition =
   | "identifier"
   | "-identifier"
   | "type"
-  | "-type";
+  | "-type"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderStructureDefinition extends BaseResourceSearchBuilder<ResourceSearchBuilderStructureDefinition> {
   readonly resourceType = "StructureDefinition";
@@ -45866,7 +46102,9 @@ export type SortOrderStructureDefinition =
   | "type"
   | "-type"
   | "valueset"
-  | "-valueset";
+  | "-valueset"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderStructureMap extends BaseResourceSearchBuilder<ResourceSearchBuilderStructureMap> {
   readonly resourceType = "StructureMap";
@@ -46597,7 +46835,9 @@ export type SortOrderSubscription =
   | "type"
   | "-type"
   | "url"
-  | "-url";
+  | "-url"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderSubscriptionStatus extends BaseResourceSearchBuilder<ResourceSearchBuilderSubscriptionStatus> {
   readonly resourceType = "SubscriptionStatus";
@@ -47031,7 +47271,9 @@ export type SortOrderSubscriptionTopic =
   | "url"
   | "-url"
   | "version"
-  | "-version";
+  | "-version"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderSubstance extends BaseResourceSearchBuilder<ResourceSearchBuilderSubstance> {
   readonly resourceType = "Substance";
@@ -47301,7 +47543,9 @@ export type SortOrderSubstance =
   | "status"
   | "-status"
   | "substance-reference"
-  | "-substance-reference";
+  | "-substance-reference"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderSubstanceDefinition extends BaseResourceSearchBuilder<ResourceSearchBuilderSubstanceDefinition> {
   readonly resourceType = "SubstanceDefinition";
@@ -47536,7 +47780,9 @@ export type SortOrderSubstanceDefinition =
   | "identifier"
   | "-identifier"
   | "name"
-  | "-name";
+  | "-name"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderSupplyDelivery extends BaseResourceSearchBuilder<ResourceSearchBuilderSupplyDelivery> {
   readonly resourceType = "SupplyDelivery";
@@ -47837,7 +48083,9 @@ export type SortOrderSupplyDelivery =
   | "status"
   | "-status"
   | "supplier"
-  | "-supplier";
+  | "-supplier"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderSupplyRequest extends BaseResourceSearchBuilder<ResourceSearchBuilderSupplyRequest> {
   readonly resourceType = "SupplyRequest";
@@ -48149,7 +48397,9 @@ export type SortOrderSupplyRequest =
   | "subject"
   | "-subject"
   | "supplier"
-  | "-supplier";
+  | "-supplier"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderTask extends BaseResourceSearchBuilder<ResourceSearchBuilderTask> {
   readonly resourceType = "Task";
@@ -48562,7 +48812,9 @@ export type SortOrderTask =
   | "status"
   | "-status"
   | "subject"
-  | "-subject";
+  | "-subject"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderTerminologyCapabilities extends BaseResourceSearchBuilder<ResourceSearchBuilderTerminologyCapabilities> {
   readonly resourceType = "TerminologyCapabilities";
@@ -49270,7 +49522,9 @@ export type SortOrderTestReport =
   | "tester"
   | "-tester"
   | "testscript"
-  | "-testscript";
+  | "-testscript"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderTestScript extends BaseResourceSearchBuilder<ResourceSearchBuilderTestScript> {
   readonly resourceType = "TestScript";
@@ -49618,7 +49872,9 @@ export type SortOrderTestScript =
   | "url"
   | "-url"
   | "version"
-  | "-version";
+  | "-version"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderValueSet extends BaseResourceSearchBuilder<ResourceSearchBuilderValueSet> {
   readonly resourceType = "ValueSet";
@@ -50185,7 +50441,9 @@ export type SortOrderValueSet =
   | "expansion"
   | "-expansion"
   | "reference"
-  | "-reference";
+  | "-reference"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderVerificationResult extends BaseResourceSearchBuilder<ResourceSearchBuilderVerificationResult> {
   readonly resourceType = "VerificationResult";
@@ -50366,7 +50624,11 @@ class ResourceSearchBuilderVerificationResult extends BaseResourceSearchBuilder<
   }
 }
 
-export type SortOrderVerificationResult = "target" | "-target";
+export type SortOrderVerificationResult =
+  | "target"
+  | "-target"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 class ResourceSearchBuilderVisionPrescription extends BaseResourceSearchBuilder<ResourceSearchBuilderVisionPrescription> {
   readonly resourceType = "VisionPrescription";
@@ -50694,7 +50956,9 @@ export type SortOrderVisionPrescription =
   | "prescriber"
   | "-prescriber"
   | "status"
-  | "-status";
+  | "-status"
+  | "_lastUpdated"
+  | "-_lastUpdated";
 
 export type ResourceSearchBuilder =
   | ResourceSearchBuilderAccount
