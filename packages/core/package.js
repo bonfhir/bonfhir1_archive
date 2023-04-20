@@ -38,9 +38,10 @@ const execAsync = promisify(exec);
     .filter((dirent) => dirent.isDirectory())
     .map((dirent) => dirent.name)) {
     packageJson.exports[`./${packageRootDirName}`] = {
-      types: `./${packageRootDirName}/index.d.ts`,
-      require: `./${packageRootDirName}/index.cjs`,
       import: `./${packageRootDirName}/index.js`,
+      require: `./${packageRootDirName}/index.cjs`,
+      script: `./${packageRootDirName}/index.global.js`,
+      types: `./${packageRootDirName}/index.d.ts`,
       default: `./${packageRootDirName}/index.js`,
     };
   }
