@@ -1,7 +1,7 @@
 {
   "name": "@bonfhir/typescript-config",
   "description": "Shared typescript configuration for Bonfhir packages.",
-  "version": "1.0.1-alpha.1",
+  "version": "1.0.1-alpha.2",
   "repository": "https://github.com/bonfhir/bonfhir.git",
   "license": "APACHE-2.0",
   "packageManager": "yarn@3.3.1",

@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.18](https://github.com/bonfhir/bonfhir/compare/@bonfhir/nih-nlm@1.0.0-alpha.17...@bonfhir/nih-nlm@1.0.0-alpha.18) (2023-04-21)
+
+**Note:** Version bump only for package @bonfhir/nih-nlm
+
+
+
+
+
 # [1.0.0-alpha.17](https://github.com/bonfhir/bonfhir/compare/@bonfhir/nih-nlm@1.0.0-alpha.16...@bonfhir/nih-nlm@1.0.0-alpha.17) (2023-03-21)
 
 

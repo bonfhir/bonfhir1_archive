@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.14](https://github.com/bonfhir/bonfhir/compare/@bonfhir/core@1.0.0-alpha.13...@bonfhir/core@1.0.0-alpha.14) (2023-04-21)
+
+
+### Bug Fixes
+
+* **core:** :adhesive_bandage: add `_lastUpdated` to all sort orders ([c19ec4a](https://github.com/bonfhir/bonfhir/commit/c19ec4a65e6d1e6bbf6fdd225a12a23a4b7576f6)), closes [#193](https://github.com/bonfhir/bonfhir/issues/193)
+
+
+### Features
+
+* **core:** :sparkles: add default `systemLabels` and the ability to set it at the adapter level ([9d527f6](https://github.com/bonfhir/bonfhir/commit/9d527f6cf4ce012ea7724be6574833e5a5fa0a34)), closes [#185](https://github.com/bonfhir/bonfhir/issues/185)
+
+
+
+
+
 # [1.0.0-alpha.13](https://github.com/bonfhir/bonfhir/compare/@bonfhir/core@1.0.0-alpha.12...@bonfhir/core@1.0.0-alpha.13) (2023-03-21)
 
 
