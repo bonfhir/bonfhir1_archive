@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.15](https://github.com/bonfhir/bonfhir/compare/@bonfhir/core@1.0.0-alpha.14...@bonfhir/core@1.0.0-alpha.15) (2023-04-25)
+
+
+### Bug Fixes
+
+* **core:** :bug: fix a bug in merge when merging arrays and null incoming values ([9f482a0](https://github.com/bonfhir/bonfhir/commit/9f482a0fef4bb6bcbf2eb0b27c2607063acb9a07))
+
+
+
+
+
 # [1.0.0-alpha.14](https://github.com/bonfhir/bonfhir/compare/@bonfhir/core@1.0.0-alpha.13...@bonfhir/core@1.0.0-alpha.14) (2023-04-21)
 
 

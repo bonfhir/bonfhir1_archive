@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.20](https://github.com/bonfhir/bonfhir/compare/@bonfhir/cmsdotgov@1.0.0-alpha.19...@bonfhir/cmsdotgov@1.0.0-alpha.20) (2023-04-25)
+
+
+### Bug Fixes
+
+* **cmsdotgov:** :bug: fix a bug when provider taxonoym does not have a description ([b115c01](https://github.com/bonfhir/bonfhir/commit/b115c01ccfb744113cbb65222bef692faf573e8d))
+
+
+
+
+
 # [1.0.0-alpha.19](https://github.com/bonfhir/bonfhir/compare/@bonfhir/cmsdotgov@1.0.0-alpha.18...@bonfhir/cmsdotgov@1.0.0-alpha.19) (2023-04-21)
 
 **Note:** Version bump only for package @bonfhir/cmsdotgov
