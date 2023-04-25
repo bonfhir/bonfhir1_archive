@@ -137,6 +137,12 @@ function mergeFhirValues<T = any>({
 
   if (Array.isArray(current)) {
     if (!Array.isArray(incoming)) {
+      if (incoming == null) {
+        return mergeFhirResourcesArrays({
+          current,
+          incoming: [],
+        }) as MergeResult<T>;
+      }
       throw new Error("Can't merge a non-array value into an array.");
     }
 
