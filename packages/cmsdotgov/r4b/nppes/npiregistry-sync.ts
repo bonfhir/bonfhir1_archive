@@ -168,20 +168,22 @@ export class NPIRegistrySyncSession {
               address: this.mapNPIRegistryAddressesToAddresses(
                 npiResult.addresses
               ),
-              qualification: (npiResult.taxonomies || []).map(
-                (taxonomy): PractitionerQualification => ({
-                  id: `${this.stableId}-${taxonomy.code}`,
-                  code: buildCodeableConcept({
-                    coding: [
-                      {
-                        system: "https://npidb.org/taxonomy",
-                        code: taxonomy.code,
-                        display: taxonomy.desc,
-                      },
-                    ],
-                  }),
-                })
-              ),
+              qualification: (npiResult.taxonomies || [])
+                .filter((taxonomy) => !!taxonomy.code && !!taxonomy.desc)
+                .map(
+                  (taxonomy): PractitionerQualification => ({
+                    id: `${this.stableId}-${taxonomy.code}`,
+                    code: buildCodeableConcept({
+                      coding: [
+                        {
+                          system: "https://npidb.org/taxonomy",
+                          code: taxonomy.code,
+                          display: taxonomy.desc,
+                        },
+                      ],
+                    }),
+                  })
+                ),
             })
           )
         );

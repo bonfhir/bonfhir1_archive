@@ -1,7 +1,7 @@
 {
   "name": "@bonfhir/subscriptions-koa",
   "description": "KOA adapter for bonfhir subscriptions.",
-  "version": "0.1.0-alpha.3",
+  "version": "0.1.0-alpha.5",
   "repository": "https://github.com/bonfhir/bonfhir.git",
   "license": "APACHE-2.0",
   "type": "module",
@@ -15,10 +15,10 @@
   },
   "packageManager": "yarn@3.3.1",
   "devDependencies": {
-    "@bonfhir/codegen": "^1.0.0-alpha.4",
+    "@bonfhir/codegen": "^1.0.0-alpha.5",
     "@bonfhir/eslint-config": "^1.1.0-alpha.1",
-    "@bonfhir/prettier-config": "^1.0.1-alpha.0",
-    "@bonfhir/typescript-config": "^1.0.1-alpha.1",
+    "@bonfhir/prettier-config": "^1.0.1-alpha.1",
+    "@bonfhir/typescript-config": "^1.0.1-alpha.2",
     "@koa/router": "^12.0.0",
     "@types/fhir": "^0.0.35",
     "@types/koa": "^2.13.5",
@@ -33,8 +33,8 @@
     "typescript": "^5.0.3"
   },
   "dependencies": {
-    "@bonfhir/core": "^1.0.0-alpha.13",
-    "@bonfhir/subscriptions": "^0.1.0-alpha.4"
+    "@bonfhir/core": "^1.0.0-alpha.15",
+    "@bonfhir/subscriptions": "^0.1.0-alpha.6"
   },
   "peerDependencies": {
     "@koa/router": ">=12.0.0",
