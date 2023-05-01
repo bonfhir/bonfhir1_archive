@@ -1,5 +1,6 @@
 import { Identifier } from "fhir/r4";
 import { FhirDataTypeAdapter } from "../data-type-adapter";
+import { formatValueWithPattern } from "../utils";
 import { FhirCodeFormatOptions, fhirCodeTypeAdapter } from "./code";
 import { fhirCodeableConceptTypeAdapter } from "./codeableConcept";
 import { comparePeriods } from "./helpers";
@@ -49,6 +50,31 @@ export type FhirIdentifierFormatOptions = {
   listFormatOptions?: Intl.ListFormatOptions | undefined;
 
   valueSetExpansions?: FhirCodeFormatOptions["valueSetExpansions"];
+
+  /**
+   * Optional pattern, or mapping of system and patterns. Formats the value according to the pattern when provided.
+   * When pattern = false, the value is not formatted.
+   * Otherwise, the value is formatted with the provided pattern, or with a default pattern (see {@link DEFAULT_SYSTEMS_PATTERNS}) if not provided.
+   * `#` is the template character. It can be escaped with a double backslash.
+   *
+   * @example
+   * // returns "123-456-7890"
+   * fhirIdentifierTypeAdapter.format(identifier, { pattern: "###-###-####" })
+   * @example
+   * An us-mbi identifier will not be formatted with the default system pattern
+   * // returns "1EG4-TE5-MK73"
+   * fhirIdentifierTypeAdapter.format(identifier)
+   * @example
+   * Identifier with "https://fhir.nhs.uk/Id/nhs-number"  as system using the provided system:pattern mapping
+   * // returns "123 456 7890"
+   * fhirIdentifierTypeAdapter.format(identifier, { pattern: { "https://fhir.nhs.uk/Id/nhs-number": "### ### ####" } })
+   */
+  pattern?: string | Record<string, string> | false | null | undefined;
+
+  /**
+   * A dictionary of system as key, and system patterns as value
+   */
+  systemsPatterns?: Record<string, string> | null | undefined;
 };
 
 export interface FhirIdentifierTypeAdapter {
@@ -95,6 +121,7 @@ export function fhirIdentifierTypeAdapter(
       const use = fhirCodeTypeAdapter(locale).format(fhirIdentifier.use, {
         valueSetExpansions: options?.valueSetExpansions,
       });
+
       const type = fhirCodeableConceptTypeAdapter(locale).format(
         fhirIdentifier.type,
         {
@@ -116,25 +143,42 @@ export function fhirIdentifierTypeAdapter(
         finalSystemsLabels?.[fhirIdentifier.system || "undefined"] ||
         fhirIdentifier.system;
 
+      const pattern =
+        options?.pattern === false
+          ? undefined
+          : options?.pattern == undefined
+          ? options?.systemsPatterns
+            ? options.systemsPatterns[fhirIdentifier.system || ""] || ""
+            : DEFAULT_SYSTEMS_PATTERNS[fhirIdentifier.system || ""] || ""
+          : typeof options?.pattern === "string"
+          ? options.pattern
+          : options?.pattern[system || ""] || "";
+
+      const patternFormattedValue: string | undefined =
+        options?.pattern === false
+          ? undefined
+          : formatValueWithPattern(fhirIdentifier.value, pattern || "");
+
+      const identifierValue: string =
+        patternFormattedValue || fhirIdentifier.value;
+
       switch (options?.style) {
         case "value":
-          return fhirIdentifier.value;
+          return identifierValue;
         case null:
         case undefined:
         case "short":
-          return `${system ? system + ": " : ""}${fhirIdentifier.value}`;
+          return `${system ? system + ": " : ""}${identifierValue}`;
         case "medium":
-          return `${system ? system + ": " : ""}${
-            fhirIdentifier.value
-          } (${use})`;
+          return `${system ? system + ": " : ""}${identifierValue} (${use})`;
         case "long":
-          return `${system ? system + ": " : ""}${
-            fhirIdentifier.value
-          }\n${use} - ${type}`;
+          return `${
+            system ? system + ": " : ""
+          }${identifierValue}\n${use} - ${type}`;
         case "full":
-          return `[${period}]\n${system ? system + ": " : ""}${
-            fhirIdentifier.value
-          }\n${use} - ${type}`;
+          return `[${period}]\n${
+            system ? system + ": " : ""
+          }${identifierValue}\n${use} - ${type}`;
         default:
           throw new Error(`Unknown style option ${options?.style}`);
       }
@@ -232,4 +276,12 @@ export const DEFAULT_SYSTEMS_LABELS: Required<
   "http://hl7.org/fhir/sid/us-mbi": "MBI",
   "http://hl7.org/fhir/sid/us-npi": "NPI",
   "https://www.gs1.org/gtin": "GTIN",
+};
+
+/**
+ * Default values for `systemsPatterns`.
+ */
+export const DEFAULT_SYSTEMS_PATTERNS: Required<Record<string, string>> = {
+  "http://hl7.org/fhir/sid/us-ssn": "###-##-###",
+  "http://hl7.org/fhir/sid/us-mbi": "####-###-####",
 };

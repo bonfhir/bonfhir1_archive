@@ -79,10 +79,13 @@ describe("intlFhirDataTypeAdapter", () => {
         systemsLabels: { "http://hl7.org/fhir/sid/us-ssn": "SSN (US)" },
       });
       expect(
-        adapter.identifier.format({
-          system: "http://hl7.org/fhir/sid/us-ssn",
-          value: "123456789",
-        })
+        adapter.identifier.format(
+          {
+            system: "http://hl7.org/fhir/sid/us-ssn",
+            value: "123456789",
+          },
+          { pattern: false }
+        )
       ).toEqual("SSN (US): 123456789");
     });
   });

@@ -61,3 +61,37 @@ export function asArray<T>(
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   return Array.isArray(value) ? (value as any) : [value];
 }
+
+/**
+ * Returns a formatted value based on the given `pattern` and `value`.
+ * If no pattern is provided, the value is returned as is.
+ * @param value - the value to format
+ * @param pattern - the pattern to use
+ * @returns the formatted value
+ */
+export function formatValueWithPattern(value: string, pattern: string): string {
+  if (!pattern) {
+    return value;
+  }
+
+  const patternChars = pattern.split("");
+  const valueChars = value.split("");
+
+  return patternChars
+    .map((char, i) => {
+      if (char === `\\` && patternChars[i + 1] === "#") {
+        return "#";
+      }
+      if (char === "#") {
+        const valueChar = valueChars.shift();
+        return valueChar;
+      }
+
+      if (char === valueChars[0]) {
+        return valueChars.shift();
+      }
+
+      return char;
+    })
+    .join("");
+}
