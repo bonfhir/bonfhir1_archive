@@ -116,6 +116,54 @@ export class RxNormSyncSession {
         property.propValue;
     }
 
+    const ingredientsAndCode =
+      allProperties.propConceptGroup.propConcept.reduce(
+        (acc, current) => {
+          if (current.propName === "Active_ingredient_name") {
+            acc.names.push(current.propValue);
+          }
+
+          if (current.propName === "Active_ingredient_RxCUI") {
+            acc.codes.push(current.propValue);
+          }
+
+          return acc;
+        },
+        { names: [], codes: [] } as { names: string[]; codes: string[] }
+      );
+
+    const ingredients = ingredientsAndCode.names
+      .map((name, i) => {
+        if (
+          ingredientsAndCode.names.length !== ingredientsAndCode.codes.length
+        ) {
+          throw new Error("Ingredients and codes length mismatch");
+        }
+
+        return {
+          name,
+          code: ingredientsAndCode.codes[i],
+        };
+      })
+      .map((ingredient) => {
+        return {
+          id: this.stableId,
+          itemCodeableConcept: buildCodeableConcept({
+            coding: [
+              {
+                system: CodeSystemURIs.RxNorm,
+                code: ingredient.code,
+                display: ingredient.name,
+              },
+            ],
+          }),
+          isActive: true,
+          strength: this.parseStrength(
+            indexedAllProperties["ATTRIBUTES"]["AVAILABLE_STRENGTH"]
+          ),
+        };
+      });
+
     const bundle = build("Bundle", {
       type: "collection",
       entry: [],
@@ -132,7 +180,7 @@ export class RxNormSyncSession {
     }
 
     const [result] = await createOr(
-      "return",
+      "return", //TODO: could we make this a variable so we can replace? @Julien
       this.client,
       this.onResourceBuild(
         build("Medication", {
@@ -154,33 +202,7 @@ export class RxNormSyncSession {
             ].filter(Boolean) as Coding[],
           }),
           status: MedicationStatusCodes.values.Active.code,
-          ingredient: indexedAllProperties["ATTRIBUTES"][
-            "Active_ingredient_RxCUI"
-          ]
-            ? [
-                {
-                  id: this.stableId,
-                  itemCodeableConcept: buildCodeableConcept({
-                    coding: [
-                      {
-                        system: CodeSystemURIs.RxNorm,
-                        code: indexedAllProperties["ATTRIBUTES"][
-                          "Active_ingredient_RxCUI"
-                        ],
-                        display:
-                          indexedAllProperties["ATTRIBUTES"][
-                            "Active_ingredient_name"
-                          ],
-                      },
-                    ],
-                  }),
-                  isActive: true,
-                  strength: this.parseStrength(
-                    indexedAllProperties["ATTRIBUTES"]["AVAILABLE_STRENGTH"]
-                  ),
-                },
-              ]
-            : undefined,
+          ingredient: ingredients,
         })
       ),
       (search) =>
