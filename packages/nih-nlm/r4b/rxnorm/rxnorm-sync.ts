@@ -4,6 +4,7 @@ import {
   buildCodeableConcept,
   buildReferenceFromResource,
   createOr,
+  CreateOrMergeAction,
   FhirRestfulClient,
   toMap,
   utcNow,
@@ -93,7 +94,8 @@ export class RxNormSyncSession {
   }
 
   public async syncAllProperties(
-    search: SearchAllProperties
+    search: SearchAllProperties,
+    createOrMergeAction: CreateOrMergeAction = "return"
   ): Promise<SyncAllPropertiesResult | undefined> {
     const [allProperties, ndcProperties] = await this.searchAllProperties(
       search
@@ -180,7 +182,7 @@ export class RxNormSyncSession {
     }
 
     const [result] = await createOr(
-      "return", //TODO: could we make this a variable so we can replace? @Julien
+      createOrMergeAction,
       this.client,
       this.onResourceBuild(
         build("Medication", {
