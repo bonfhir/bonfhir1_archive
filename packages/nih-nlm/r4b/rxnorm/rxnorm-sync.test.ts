@@ -58,7 +58,7 @@ describe("rxnorm-sync", () => {
     expect(result).toBeUndefined();
   });
 
-  it.each(["3089421", "472016630", "93505698"])(
+  it.each(["3089421", "472016630", "93505698", "61825030260"])(
     "sync by ndc (%s)",
     async (ndc) => {
       const syncSession = new RxNormSyncSession({
@@ -72,4 +72,64 @@ describe("rxnorm-sync", () => {
       expect(result?.result.resourceType).toEqual("Medication");
     }
   );
+
+  it.only("parse medication properly when multiple ingredients ", async () => {
+    const ndc = "61825030260";
+    const syncSession = new RxNormSyncSession({
+      client,
+    });
+
+    const result = await syncSession.syncAllProperties({
+      ndc,
+    });
+
+    const expected = [
+      {
+        id: "rx-norm",
+        isActive: true,
+        itemCodeableConcept: {
+          coding: [
+            {
+              code: "1191",
+              display: "aspirin",
+              system: "http://www.nlm.nih.gov/research/umls/rxnorm",
+            },
+          ],
+          text: "aspirin",
+        },
+      },
+      {
+        id: "rx-norm",
+        isActive: true,
+        itemCodeableConcept: {
+          coding: [
+            {
+              code: "1886",
+              display: "caffeine",
+              system: "http://www.nlm.nih.gov/research/umls/rxnorm",
+            },
+          ],
+          text: "caffeine",
+        },
+      },
+      {
+        id: "rx-norm",
+        isActive: true,
+        itemCodeableConcept: {
+          coding: [
+            {
+              code: "7716",
+              display: "orphenadrine citrate",
+              system: "http://www.nlm.nih.gov/research/umls/rxnorm",
+            },
+          ],
+          text: "orphenadrine citrate",
+        },
+      },
+    ];
+
+    expect(result?.result.ingredient?.length).toBe(3);
+    expect(result?.result.ingredient).toEqual(expected);
+    expect(result?.result.resourceType).toEqual("Medication");
+  });
 });
