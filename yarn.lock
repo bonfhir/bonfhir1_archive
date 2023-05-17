@@ -1940,10 +1940,10 @@ __metadata:
   resolution: "@bonfhir/antd@workspace:packages/antd"
   dependencies:
     "@bonfhir/eslint-config": ^1.1.0-alpha.1
-    "@bonfhir/medplum": ^1.0.0-alpha.17
+    "@bonfhir/medplum": ^1.0.0-alpha.18
     "@bonfhir/prettier-config": ^1.0.1-alpha.1
     "@bonfhir/typescript-config": ^1.0.1-alpha.2
-    "@bonfhir/ui-components": ^0.1.0-alpha.9
+    "@bonfhir/ui-components": ^0.1.0-alpha.10
     "@testing-library/react": ^13.4.0
     "@types/fhir": ^0.0.35
     "@types/node": ^18.15.3
@@ -1972,11 +1972,11 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@bonfhir/charlson-comorbidity-index@workspace:packages/charlson-comorbidity-index"
   dependencies:
-    "@bonfhir/core": ^1.0.0-alpha.15
+    "@bonfhir/core": ^1.0.0-alpha.16
     "@bonfhir/eslint-config": ^1.1.0-alpha.1
-    "@bonfhir/medplum": ^1.0.0-alpha.17
+    "@bonfhir/medplum": ^1.0.0-alpha.18
     "@bonfhir/prettier-config": ^1.0.1-alpha.1
-    "@bonfhir/test-support": ^1.0.0-alpha.17
+    "@bonfhir/test-support": ^1.0.0-alpha.18
     "@bonfhir/typescript-config": ^1.0.1-alpha.2
     "@medplum/core": 2.0.14
     "@types/fhir": ^0.0.35
@@ -1997,9 +1997,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@bonfhir/cmsdotgov@workspace:packages/cmsdotgov"
   dependencies:
-    "@bonfhir/core": ^1.0.0-alpha.15
+    "@bonfhir/core": ^1.0.0-alpha.16
     "@bonfhir/eslint-config": ^1.1.0-alpha.1
-    "@bonfhir/medplum": ^1.0.0-alpha.17
+    "@bonfhir/medplum": ^1.0.0-alpha.18
     "@bonfhir/prettier-config": ^1.0.1-alpha.1
     "@bonfhir/terminology": ^1.0.0-alpha.6
     "@bonfhir/typescript-config": ^1.0.1-alpha.2
@@ -2056,7 +2056,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bonfhir/core@^1.0.0-alpha.15, @bonfhir/core@^1.0.0-alpha.8, @bonfhir/core@workspace:packages/core":
+"@bonfhir/core@^1.0.0-alpha.16, @bonfhir/core@^1.0.0-alpha.8, @bonfhir/core@workspace:packages/core":
   version: 0.0.0-use.local
   resolution: "@bonfhir/core@workspace:packages/core"
   dependencies:
@@ -2159,13 +2159,13 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bonfhir/fhir-query@^0.1.0-alpha.1, @bonfhir/fhir-query@^0.1.0-alpha.9, @bonfhir/fhir-query@workspace:packages/fhir-query":
+"@bonfhir/fhir-query@^0.1.0-alpha.1, @bonfhir/fhir-query@^0.1.0-alpha.10, @bonfhir/fhir-query@workspace:packages/fhir-query":
   version: 0.0.0-use.local
   resolution: "@bonfhir/fhir-query@workspace:packages/fhir-query"
   dependencies:
-    "@bonfhir/core": ^1.0.0-alpha.15
+    "@bonfhir/core": ^1.0.0-alpha.16
     "@bonfhir/eslint-config": ^1.1.0-alpha.1
-    "@bonfhir/medplum": ^1.0.0-alpha.17
+    "@bonfhir/medplum": ^1.0.0-alpha.18
     "@bonfhir/prettier-config": ^1.0.1-alpha.1
     "@bonfhir/typescript-config": ^1.0.1-alpha.2
     "@medplum/core": 2.0.14
@@ -2195,11 +2195,11 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bonfhir/medplum@^1.0.0-alpha.17, @bonfhir/medplum@^1.0.0-alpha.9, @bonfhir/medplum@workspace:packages/medplum":
+"@bonfhir/medplum@^1.0.0-alpha.18, @bonfhir/medplum@^1.0.0-alpha.9, @bonfhir/medplum@workspace:packages/medplum":
   version: 0.0.0-use.local
   resolution: "@bonfhir/medplum@workspace:packages/medplum"
   dependencies:
-    "@bonfhir/core": ^1.0.0-alpha.15
+    "@bonfhir/core": ^1.0.0-alpha.16
     "@bonfhir/eslint-config": ^1.1.0-alpha.1
     "@bonfhir/prettier-config": ^1.0.1-alpha.1
     "@bonfhir/typescript-config": ^1.0.1-alpha.2
@@ -2223,9 +2223,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@bonfhir/nih-nlm@workspace:packages/nih-nlm"
   dependencies:
-    "@bonfhir/core": ^1.0.0-alpha.15
+    "@bonfhir/core": ^1.0.0-alpha.16
     "@bonfhir/eslint-config": ^1.1.0-alpha.1
-    "@bonfhir/medplum": ^1.0.0-alpha.17
+    "@bonfhir/medplum": ^1.0.0-alpha.18
     "@bonfhir/prettier-config": ^1.0.1-alpha.1
     "@bonfhir/terminology": ^1.0.0-alpha.6
     "@bonfhir/typescript-config": ^1.0.1-alpha.2
@@ -2303,10 +2303,10 @@ __metadata:
   resolution: "@bonfhir/subscriptions-koa@workspace:packages/subscriptions-koa"
   dependencies:
     "@bonfhir/codegen": ^1.0.0-alpha.5
-    "@bonfhir/core": ^1.0.0-alpha.15
+    "@bonfhir/core": ^1.0.0-alpha.16
     "@bonfhir/eslint-config": ^1.1.0-alpha.1
     "@bonfhir/prettier-config": ^1.0.1-alpha.1
-    "@bonfhir/subscriptions": ^0.1.0-alpha.6
+    "@bonfhir/subscriptions": ^0.1.0-alpha.7
     "@bonfhir/typescript-config": ^1.0.1-alpha.2
     "@koa/router": ^12.0.0
     "@types/fhir": ^0.0.35
@@ -2326,12 +2326,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bonfhir/subscriptions@^0.1.0-alpha.2, @bonfhir/subscriptions@^0.1.0-alpha.6, @bonfhir/subscriptions@workspace:packages/subscriptions":
+"@bonfhir/subscriptions@^0.1.0-alpha.2, @bonfhir/subscriptions@^0.1.0-alpha.7, @bonfhir/subscriptions@workspace:packages/subscriptions":
   version: 0.0.0-use.local
   resolution: "@bonfhir/subscriptions@workspace:packages/subscriptions"
   dependencies:
     "@bonfhir/codegen": ^1.0.0-alpha.5
-    "@bonfhir/core": ^1.0.0-alpha.15
+    "@bonfhir/core": ^1.0.0-alpha.16
     "@bonfhir/eslint-config": ^1.1.0-alpha.1
     "@bonfhir/prettier-config": ^1.0.1-alpha.1
     "@bonfhir/typescript-config": ^1.0.1-alpha.2
@@ -2367,12 +2367,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bonfhir/test-support@^1.0.0-alpha.17, @bonfhir/test-support@workspace:packages/test-support":
+"@bonfhir/test-support@^1.0.0-alpha.18, @bonfhir/test-support@workspace:packages/test-support":
   version: 0.0.0-use.local
   resolution: "@bonfhir/test-support@workspace:packages/test-support"
   dependencies:
     "@bonfhir/codegen": ^1.0.0-alpha.5
-    "@bonfhir/core": ^1.0.0-alpha.15
+    "@bonfhir/core": ^1.0.0-alpha.16
     "@bonfhir/eslint-config": ^1.1.0-alpha.1
     "@bonfhir/prettier-config": ^1.0.1-alpha.1
     "@bonfhir/typescript-config": ^1.0.1-alpha.2
@@ -2401,14 +2401,14 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bonfhir/ui-components@^0.1.0-alpha.1, @bonfhir/ui-components@^0.1.0-alpha.9, @bonfhir/ui-components@workspace:packages/ui-components":
+"@bonfhir/ui-components@^0.1.0-alpha.1, @bonfhir/ui-components@^0.1.0-alpha.10, @bonfhir/ui-components@workspace:packages/ui-components":
   version: 0.0.0-use.local
   resolution: "@bonfhir/ui-components@workspace:packages/ui-components"
   dependencies:
-    "@bonfhir/core": ^1.0.0-alpha.15
+    "@bonfhir/core": ^1.0.0-alpha.16
     "@bonfhir/eslint-config": ^1.1.0-alpha.1
-    "@bonfhir/fhir-query": ^0.1.0-alpha.9
-    "@bonfhir/medplum": ^1.0.0-alpha.17
+    "@bonfhir/fhir-query": ^0.1.0-alpha.10
+    "@bonfhir/medplum": ^1.0.0-alpha.18
     "@bonfhir/prettier-config": ^1.0.1-alpha.1
     "@bonfhir/typescript-config": ^1.0.1-alpha.2
     "@ladle/react": ^2.10.1

@@ -1,7 +1,7 @@
 {
   "name": "@bonfhir/ui-components",
   "description": "UI Components package for Bonfhir.",
-  "version": "0.1.0-alpha.9",
+  "version": "0.1.0-alpha.10",
   "repository": "https://github.com/bonfhir/bonfhir.git",
   "license": "APACHE-2.0",
   "type": "module",
@@ -18,7 +18,7 @@
   "packageManager": "yarn@3.3.1",
   "devDependencies": {
     "@bonfhir/eslint-config": "^1.1.0-alpha.1",
-    "@bonfhir/medplum": "^1.0.0-alpha.17",
+    "@bonfhir/medplum": "^1.0.0-alpha.18",
     "@bonfhir/prettier-config": "^1.0.1-alpha.1",
     "@bonfhir/typescript-config": "^1.0.1-alpha.2",
     "@ladle/react": "^2.10.1",
@@ -44,8 +44,8 @@
     "typescript": "^5.0.3"
   },
   "dependencies": {
-    "@bonfhir/core": "^1.0.0-alpha.15",
-    "@bonfhir/fhir-query": "^0.1.0-alpha.9"
+    "@bonfhir/core": "^1.0.0-alpha.16",
+    "@bonfhir/fhir-query": "^0.1.0-alpha.10"
   },
   "prettier": "@bonfhir/prettier-config",
   "peerDependencies": {

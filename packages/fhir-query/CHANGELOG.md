@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.1.0-alpha.10](https://github.com/bonfhir/bonfhir/compare/@bonfhir/fhir-query@0.1.0-alpha.9...@bonfhir/fhir-query@0.1.0-alpha.10) (2023-05-17)
+
+**Note:** Version bump only for package @bonfhir/fhir-query
+
+
+
+
+
 # [0.1.0-alpha.9](https://github.com/bonfhir/bonfhir/compare/@bonfhir/fhir-query@0.1.0-alpha.8...@bonfhir/fhir-query@0.1.0-alpha.9) (2023-04-25)
 
 **Note:** Version bump only for package @bonfhir/fhir-query

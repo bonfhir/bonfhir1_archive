@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.16](https://github.com/bonfhir/bonfhir/compare/@bonfhir/core@1.0.0-alpha.15...@bonfhir/core@1.0.0-alpha.16) (2023-05-17)
+
+
+### Features
+
+* **core:** :sparkles: Enables the formatting of an identifier value ([404aa97](https://github.com/bonfhir/bonfhir/commit/404aa97b4c5013087e81054336fcf9b3dd9a0e28))
+
+
+
+
+
 # [1.0.0-alpha.15](https://github.com/bonfhir/bonfhir/compare/@bonfhir/core@1.0.0-alpha.14...@bonfhir/core@1.0.0-alpha.15) (2023-04-25)
 
 

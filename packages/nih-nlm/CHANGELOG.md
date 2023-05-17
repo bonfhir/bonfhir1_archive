@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.20](https://github.com/bonfhir/bonfhir/compare/@bonfhir/nih-nlm@1.0.0-alpha.19...@bonfhir/nih-nlm@1.0.0-alpha.20) (2023-05-17)
+
+
+### Features
+
+* :rocket: add createOrMergeAction param ([62541ac](https://github.com/bonfhir/bonfhir/commit/62541ac673e05a74307eaa1533a87f6ce265fadf))
+* **nih-nlm:** :sparkles: multiple ingredients ([dc469e5](https://github.com/bonfhir/bonfhir/commit/dc469e5ae524bf4880839f03e6eb1565db6b3bd5))
+
+
+
+
+
 # [1.0.0-alpha.19](https://github.com/bonfhir/bonfhir/compare/@bonfhir/nih-nlm@1.0.0-alpha.18...@bonfhir/nih-nlm@1.0.0-alpha.19) (2023-04-25)
 
 **Note:** Version bump only for package @bonfhir/nih-nlm
