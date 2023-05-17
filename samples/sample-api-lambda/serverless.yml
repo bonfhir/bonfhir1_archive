@@ -1,0 +1,7 @@
+plugins:
+  - serverless-offline
+	
+service: LambdaService
+	
+provider:
+  name: aws
