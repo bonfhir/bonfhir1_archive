@@ -2326,6 +2326,35 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@bonfhir/subscriptions-lambda@workspace:packages/subscriptions-lambda":
+  version: 0.0.0-use.local
+  resolution: "@bonfhir/subscriptions-lambda@workspace:packages/subscriptions-lambda"
+  dependencies:
+    "@bonfhir/codegen": ^1.0.0-alpha.5
+    "@bonfhir/core": ^1.0.0-alpha.15
+    "@bonfhir/eslint-config": ^1.1.0-alpha.1
+    "@bonfhir/prettier-config": ^1.0.1-alpha.1
+    "@bonfhir/subscriptions": ^0.1.0-alpha.6
+    "@bonfhir/typescript-config": ^1.0.1-alpha.2
+    "@koa/router": ^12.0.0
+    "@types/aws-lambda": ^8.10.90
+    "@types/fhir": ^0.0.35
+    "@types/koa": ^2.13.5
+    "@types/koa__router": ^12.0.0
+    "@types/node": ^18.15.3
+    eslint: ^8.36.0
+    jest: ^29.5.0
+    koa: ^2.14.1
+    prettier: ^2.8.4
+    rimraf: ^4.4.0
+    tsup: ^6.7.0
+    typescript: ^5.0.3
+  peerDependencies:
+    "@koa/router": ">=12.0.0"
+    koa: ^2.0.0
+  languageName: unknown
+  linkType: soft
+
 "@bonfhir/subscriptions@^0.1.0-alpha.2, @bonfhir/subscriptions@^0.1.0-alpha.6, @bonfhir/subscriptions@workspace:packages/subscriptions":
   version: 0.0.0-use.local
   resolution: "@bonfhir/subscriptions@workspace:packages/subscriptions"
@@ -6471,6 +6500,13 @@ __metadata:
   version: 5.0.1
   resolution: "@types/aria-query@npm:5.0.1"
   checksum: 69fd7cceb6113ed370591aef04b3fd0742e9a1b06dd045c43531448847b85de181495e4566f98e776b37c422a12fd71866e0a1dfd904c5ec3f84d271682901de
+  languageName: node
+  linkType: hard
+
+"@types/aws-lambda@npm:^8.10.90":
+  version: 8.10.115
+  resolution: "@types/aws-lambda@npm:8.10.115"
+  checksum: 58c924812b0dac2e13118cbda05594f820033d2df572e0e264443cdfdb7ea07ed725614f0d5841b3f3bcf48bca7d3aa0da5b5ad3bf51ae74dadf9962037e23b5
   languageName: node
   linkType: hard
 

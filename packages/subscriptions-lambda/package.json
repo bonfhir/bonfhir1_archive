@@ -20,6 +20,7 @@
     "@bonfhir/prettier-config": "^1.0.1-alpha.1",
     "@bonfhir/typescript-config": "^1.0.1-alpha.2",
     "@koa/router": "^12.0.0",
+    "@types/aws-lambda": "^8.10.90",
     "@types/fhir": "^0.0.35",
     "@types/koa": "^2.13.5",
     "@types/koa__router": "^12.0.0",
