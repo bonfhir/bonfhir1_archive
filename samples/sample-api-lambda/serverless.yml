@@ -1,6 +1,6 @@
 plugins:
-  - serverless-offline
   - serverless-plugin-typescript
+  - serverless-offline
   	
 service: lambdaService
 

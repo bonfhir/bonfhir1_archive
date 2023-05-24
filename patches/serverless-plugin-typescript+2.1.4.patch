@@ -1,0 +1,19 @@
+diff --git a/node_modules/serverless-plugin-typescript/dist/src/typescript.js b/node_modules/serverless-plugin-typescript/dist/src/typescript.js
+index e8145b2..b864c2e 100644
+--- a/node_modules/serverless-plugin-typescript/dist/src/typescript.js
++++ b/node_modules/serverless-plugin-typescript/dist/src/typescript.js
+@@ -81,10 +81,11 @@ function run(fileNames, options) {
+         allDiagnostics.forEach(diagnostic => {
+             if (!diagnostic.file) {
+                 console.log(diagnostic);
++            } else {
++              const { line, character } = diagnostic.file.getLineAndCharacterOfPosition(diagnostic.start);
++              const message = ts.flattenDiagnosticMessageText(diagnostic.messageText, '\n');
++              console.log(`${diagnostic.file.fileName} (${line + 1},${character + 1}): ${message}`);
+             }
+-            const { line, character } = diagnostic.file.getLineAndCharacterOfPosition(diagnostic.start);
+-            const message = ts.flattenDiagnosticMessageText(diagnostic.messageText, '\n');
+-            console.log(`${diagnostic.file.fileName} (${line + 1},${character + 1}): ${message}`);
+         });
+         if (emitResult.emitSkipped) {
+             throw new Error('Typescript compilation failed');
