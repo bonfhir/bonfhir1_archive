@@ -7,11 +7,7 @@ import {
   errorToString,
   registerSubscriptions,
 } from "@bonfhir/subscriptions/r4b";
-import {
-  APIGatewayProxyEvent,
-  APIGatewayProxyResult,
-  Handler,
-} from "aws-lambda";
+import { APIGatewayProxyEvent, APIGatewayProxyResult } from "aws-lambda";
 import { Subscription } from "fhir/r4";
 
 export interface FhirSubscriptionsConfig {
@@ -67,7 +63,7 @@ export interface FhirSubscriptionsConfig {
 
 export async function fhirSubscriptions(
   config: FhirSubscriptionsConfig
-): Promise<Handler<APIGatewayProxyEvent, APIGatewayProxyResult>> {
+): Promise<(event: APIGatewayProxyEvent) => Promise<APIGatewayProxyResult>> {
   const logger = config.logger ?? console;
 
   const fhirClient =
@@ -88,21 +84,19 @@ export async function fhirSubscriptions(
     });
   }
 
-  const lowercaseSecurityHeader = (
-    config.securityHeader || "X-Subscription-Auth"
-  ).toLowerCase();
+  const securityHeader = config.securityHeader || "X-Subscription-Auth";
 
-  async function handler(
+  const handler: (
     event: APIGatewayProxyEvent
-  ): Promise<APIGatewayProxyResult> {
+  ) => Promise<APIGatewayProxyResult> = async (event) => {
     const path = event.path;
     const method = event.httpMethod;
 
     // Comparing the secret in the header to the secret in the config
-    if (event.headers[lowercaseSecurityHeader] !== config.webhookSecret) {
+    if (event.headers[securityHeader] !== config.webhookSecret) {
       // Logging the error
       logger?.warn(
-        `Received unauthorized request for ${event.path} (${lowercaseSecurityHeader}).`
+        `Received unauthorized request for ${event.path} (${securityHeader}).`
       );
       return {
         statusCode: 401,
@@ -164,12 +158,11 @@ export async function fhirSubscriptions(
           statusCode: 204,
           body: "",
         };
-      } else {
-        return {
-          statusCode: 200,
-          body: JSON.stringify(result),
-        };
       }
+      return {
+        statusCode: 200,
+        body: JSON.stringify(result),
+      };
     } catch (error) {
       logger.error(error);
       if (config.auditEvent) {
@@ -189,7 +182,6 @@ export async function fhirSubscriptions(
         body: JSON.stringify(errorToString(error)),
       };
     }
-  }
-
+  };
   return handler;
 }

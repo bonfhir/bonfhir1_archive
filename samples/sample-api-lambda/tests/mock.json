@@ -1,0 +1,10 @@
+{
+  "method": "POST",
+  "hostname": "localhost",
+  "port": 4000,
+  "path": "/fhir/register-subscriptions",
+  "headers": {
+    "X-Subscription-Auth": "thewebhooksecret"
+  },
+  "maxRedirects": 20
+}

@@ -1,6 +1,7 @@
 plugins:
-  - serverless-plugin-typescript
+  - serverless-bundle
   - serverless-offline
+
   	
 service: lambdaService
 
@@ -9,20 +10,32 @@ provider:
   name: aws
   runtime: nodejs18.x
   runtimeManagement: auto # optional, set how Lambda controls all functions runtime. AWS default is auto; this can either be 'auto' or 'onFunctionUpdate'. For 'manual', see example in hello function below (syntax for both is identical)
-  memorySize: 512 # optional, in MB, default is 1024
+  memorySize: 1024 # optional, in MB, default is 1024
   timeout: 10 # optional, in seconds, default is 6
   versionFunctions: false # optional, default is true
   tracing:
     lambda: true
+    apiGateway: true
+  environment:
+    MEDPLUM_CLIENT_ID: f54370de-eaf3-4d81-a17e-24860f667912
+    MEDPLUM_CLIENT_SECRET: 75d8e7d06bf9283926c51d5f461295ccf0b69128e983b6ecdd5a9c07506895de
+    MEDPLUM_SERVER_URL: http://medplum:8103
 
 custom:
   serverless-offline:
     noPrependStageInUrl: true
+    httpPort: 4000
+  bundle:
+    packager: yarn
 
 functions:
   fhir:
-    handler: src/index.main # required, handler set in AWS Lambda
+    handler: src/fhir.handler # required, handler set in AWS Lambda
+    environment:
+      MEDPLUM_CLIENT_ID: f54370de-eaf3-4d81-a17e-24860f667912
+      MEDPLUM_CLIENT_SECRET: 75d8e7d06bf9283926c51d5f461295ccf0b69128e983b6ecdd5a9c07506895de
+      MEDPLUM_SERVER_URL: http://medplum:8103
     events:
       - http:
           method: post
-          path: /cb
+          path: /fhir/register-subscriptions
