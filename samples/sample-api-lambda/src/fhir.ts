@@ -32,7 +32,6 @@ const initPromise = init();
 export const handler: APIGatewayProxyHandler = async (
   event: APIGatewayProxyEvent
 ) => {
-  console.log(event);
   const fhirHandler = await initPromise;
 
   return fhirHandler(event);
