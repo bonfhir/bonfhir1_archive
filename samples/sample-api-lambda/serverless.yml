@@ -1,0 +1,35 @@
+plugins:
+  - serverless-dotenv-plugin
+  - serverless-bundle
+  - serverless-offline
+
+service: lambdaService
+
+	
+provider:
+  name: aws
+  runtime: nodejs18.x
+  runtimeManagement: auto # optional, set how Lambda controls all functions runtime. AWS default is auto; this can either be 'auto' or 'onFunctionUpdate'. For 'manual', see example in hello function below (syntax for both is identical)
+  memorySize: 1024 # optional, in MB, default is 1024
+  timeout: 10 # optional, in seconds, default is 6
+  versionFunctions: false # optional, default is true
+  tracing:
+    lambda: true
+    apiGateway: true
+
+custom:
+  serverless-offline:
+    noPrependStageInUrl: true
+    httpPort: 4000
+  bundle:
+    packager: yarn
+  dotenv:
+    path: ../../.env.development.local
+
+functions:
+  fhir:
+    handler: src/fhir.handler # required, handler set in AWS Lambda
+    events:
+      - http:
+          method: post
+          path: /fhir/register-subscriptions

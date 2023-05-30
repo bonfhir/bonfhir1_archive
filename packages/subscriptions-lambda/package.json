@@ -1,0 +1,37 @@
+{
+  "name": "@bonfhir/subscriptions-lambda",
+  "description": "Lambda adapter for bonfhir subscriptions.",
+  "version": "0.1.0-alpha.5",
+  "repository": "https://github.com/bonfhir/bonfhir.git",
+  "license": "APACHE-2.0",
+  "type": "module",
+  "scripts": {
+    "build": "yarn clean && tsup r4b/index.ts --format esm,cjs --out-dir dist/r4b --shims --dts --tsconfig tsconfig.build.json",
+    "check": "prettier --check ./**/*.ts && eslint ./**/*.ts && tsc --noEmit",
+    "clean": "rimraf dist/",
+    "format": "prettier --loglevel warn --write ./**/*.ts && eslint --fix ./**/*.ts",
+    "package:create": "yarn build && node package.js pack",
+    "package:publish": "yarn build && node package.js publish"
+  },
+  "packageManager": "yarn@3.3.1",
+  "devDependencies": {
+    "@bonfhir/codegen": "^1.0.0-alpha.5",
+    "@bonfhir/eslint-config": "^1.1.0-alpha.1",
+    "@bonfhir/prettier-config": "^1.0.1-alpha.1",
+    "@bonfhir/typescript-config": "^1.0.1-alpha.2",
+    "@types/aws-lambda": "^8.10.90",
+    "@types/fhir": "^0.0.35",
+    "@types/node": "^18.15.3",
+    "eslint": "^8.36.0",
+    "jest": "^29.5.0",
+    "prettier": "^2.8.4",
+    "rimraf": "^4.4.0",
+    "tsup": "^6.7.0",
+    "typescript": "^5.0.3"
+  },
+  "dependencies": {
+    "@bonfhir/core": "^1.0.0-alpha.15",
+    "@bonfhir/subscriptions": "^0.1.0-alpha.6"
+  },
+  "prettier": "@bonfhir/prettier-config"
+}

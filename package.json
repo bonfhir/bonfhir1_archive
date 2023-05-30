@@ -16,7 +16,7 @@
     "commit": "commit",
     "format": "lerna run format",
     "graph": "nx graph",
-    "postinstall": "husky install",
+    "postinstall": "husky install && patch-package",
     "test": "lerna run test",
     "version": "yarn install && git stage yarn.lock"
   },
@@ -28,10 +28,11 @@
     "husky": "^8.0.3",
     "lerna": "^6.5.1",
     "nx": "^15.8.7",
+    "patch-package": "^7.0.0",
     "process": "^0.11.10"
   },
   "resolutions": {
-    "got": ">=11.8.5",
+    "got": "11.8.5",
     "highlight.js": ">=10.4.1",
     "semver-regex": ">=3.1.3",
     "trim": ">=0.0.3"
