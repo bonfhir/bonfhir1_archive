@@ -16,3 +16,7 @@
 *.tsbuildinfo
 *.log
 .parcel-cache/*
+
+# Serverless
+.build
+.webpack
